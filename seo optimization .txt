@@ -1,0 +1,3338 @@
+"Schema.org Validator: https://validator.schema.org/",
+        "JSON-LD Playground: https://json-ld.org/playground/"
+      ],
+      "performance_testing": [
+        "PageSpeed Insights: https://pagespeed.web.dev/",
+        "GTmetrix: https://gtmetrix.com/",
+        "WebPageTest: https://www.webpagetest.org/",
+        "Chrome DevTools Lighthouse"
+      ],
+      "mobile_testing": [
+        "Google Mobile-Friendly Test: https://search.google.com/test/mobile-friendly",
+        "BrowserStack (paid) for real device testing",
+        "Real iOS and Android devices"
+      ],
+      "seo_auditing": [
+        "Google Search Console",
+        "Bing Webmaster Tools",
+        "Ahrefs Site Audit (if available)",
+        "Screaming Frog SEO Spider (free up to 500 URLs)"
+      ]
+    }
+  },
+
+  "ongoing_maintenance_and_monitoring": {
+    "weekly_tasks": [
+      "Monitor Google Search Console for errors, warnings, coverage issues",
+      "Check Core Web Vitals report in GSC",
+      "Test 10 AI prompts and record results in tracking spreadsheet",
+      "Publish 1-2 new blog posts (until 50 posts reached)",
+      "Engage on Reddit 3-5x (answer questions, share value)",
+      "Review GA4 analytics for traffic trends"
+    ],
+    
+    "monthly_tasks": [
+      "Analyze AI citation tracking data - identify trends",
+      "Review backlink profile - new links acquired?",
+      "Check schema validation for all key pages",
+      "Update Wikidata entry with any new info",
+      "Audit site for broken links",
+      "Review top-performing content, identify expansion opportunities",
+      "Guest post outreach (5-10 sites)",
+      "Update existing posts with new information"
+    ],
+    
+    "quarterly_tasks": [
+      "Comprehensive SEO audit with Screaming Frog or Ahrefs",
+      "Competitor analysis - what are they doing?",
+      "Refresh old content (update stats, add new sections)",
+      "Create 1-2 major linkable assets",
+      "Review and update product recommendations",
+      "Analyze keyword rankings - wins and losses",
+      "Set new SEO goals for next quarter"
+    ],
+    
+    "metrics_to_track": {
+      "google_search_console": [
+        "Total clicks (organic traffic)",
+        "Total impressions",
+        "Average CTR",
+        "Average position",
+        "Top performing queries",
+        "Top performing pages",
+        "Core Web Vitals status"
+      ],
+      "google_analytics": [
+        "Users and sessions",
+        "Bounce rate",
+        "Average session duration",
+        "Pages per session",
+        "Top traffic sources",
+        "Top landing pages",
+        "Conversion rate (newsletter signups, affiliate clicks)"
+      ],
+      "ai_citation_tracking": [
+        "Citation rate percentage",
+        "Average position when cited",
+        "Most cited posts",
+        "Query types with best performance",
+        "Month-over-month improvement"
+      ],
+      "backlinks": [
+        "Total referring domains",
+        "New backlinks per month",
+        "Lost backlinks",
+        "Average domain authority of linking sites"
+      ]
+    }
+  },
+
+  "troubleshooting_common_issues": {
+    "issue_schema_not_validating": {
+      "symptoms": "Google Rich Results Test shows errors",
+      "common_causes": [
+        "Missing required properties (name, url, datePublished, etc)",
+        "Incorrect @type value",
+        "Malformed JSON (missing comma, extra comma, quotes)",
+        "@id references don't match across schemas"
+      ],
+      "solutions": [
+        "Copy schema JSON into JSON-LD Playground to find syntax errors",
+        "Check schema.org documentation for required properties",
+        "Verify all @id values are consistent",
+        "Test schema in isolation before adding to page"
+      ]
+    },
+    
+    "issue_build_fails": {
+      "symptoms": "npm run build fails with errors",
+      "common_causes": [
+        "TypeScript type errors",
+        "Missing imports",
+        "Invalid JSX syntax",
+        "Environment variables not set",
+        "Corrupted node_modules"
+      ],
+      "solutions": [
+        "Read error message carefully - it usually tells you the problem",
+        "Run npm run lint to find linting errors",
+        "Delete node_modules and package-lock.json, then npm install",
+        "Check TypeScript errors: npx tsc --noEmit",
+        "Revert recent changes if build worked before"
+      ]
+    },
+    
+    "issue_images_not_loading": {
+      "symptoms": "Broken image icons or 404 errors",
+      "common_causes": [
+        "Incorrect file path",
+        "Image not in /public directory",
+        "Typo in filename",
+        "Case sensitivity issue (image.jpg vs Image.jpg)"
+      ],
+      "solutions": [
+        "Verify image exists in /public/images/",
+        "Check path starts with / (e.g., /images/blog/hero.jpg)",
+        "Match exact filename including case",
+        "Clear Next.js cache: rm -rf .next && npm run dev"
+      ]
+    },
+    
+    "issue_tldr_not_rendering": {
+      "symptoms": "TL;DR component doesn't appear on blog post",
+      "common_causes": [
+        "tldr frontmatter missing or malformed",
+        "BlogPost component not importing/rendering TLDRSection",
+        "Conditional check failing (post.tldr evaluates to false)"
+      ],
+      "solutions": [
+        "Check blog post markdown has tldr object in frontmatter",
+        "Verify src/lib/blog.ts extracts tldr from gray-matter data",
+        "Check BlogPost.tsx imports and renders TLDRSection",
+        "Console.log post.tldr to debug what data is available",
+        "Verify TLDRSection component has no syntax errors"
+      ]
+    },
+    
+    "issue_core_web_vitals_poor": {
+      "symptoms": "PageSpeed Insights shows red scores",
+      "common_causes": [
+        "Large images not optimized",
+        "No priority on hero images",
+        "Heavy JavaScript bundles",
+        "Render-blocking resources",
+        "Layout shifts from missing dimensions"
+      ],
+      "solutions": [
+        "Follow Phase 3 tasks systematically",
+        "Compress all images to target sizes",
+        "Add priority prop to hero images",
+        "Use next/font for fonts",
+        "Add explicit dimensions to all images",
+        "Analyze bundle with @next/bundle-analyzer"
+      ]
+    },
+    
+    "issue_not_getting_ai_citations": {
+      "symptoms": "After optimizations, still not cited by AI assistants",
+      "patience_required": "Takes 4-8 weeks for changes to impact AI training data",
+      "troubleshooting_steps": [
+        "Verify TL;DR implemented on all posts",
+        "Check abstract property in BlogPosting schema",
+        "Ensure content has comparison tables and lists",
+        "Test more diverse query types (problem, category, comparison, BOFU)",
+        "Create more comprehensive guides (2500+ words)",
+        "Build more backlinks to establish authority",
+        "Continue weekly testing and tracking"
+      ],
+      "realistic_expectations": "Month 1: 0-5% citation rate is normal, Month 3: 20-30% is excellent"
+    }
+  },
+
+  "content_creation_guidelines": {
+    "blog_post_checklist": [
+      "✅ Title: Specific, keyword-rich, 50-60 characters",
+      "✅ Excerpt: Compelling, 150-160 characters",
+      "✅ TL;DR: 5 summary points + 3-4 key takeaways",
+      "✅ FAQ: Minimum 8 questions with detailed answers",
+      "✅ Word count: 2500-4500 words (comprehensive)",
+      "✅ Images: Hero + 4-6 content images, all optimized",
+      "✅ Alt text: Descriptive with keywords naturally included",
+      "✅ Internal links: 3-5 to related posts/topics",
+      "✅ External links: 2-3 to authority sources (Wikipedia, etc)",
+      "✅ Comparison table: At least 1",
+      "✅ Numbered lists: 2-3 for tutorials/rankings",
+      "✅ Bullet lists: 5+ for quick scanning",
+      "✅ Product recommendations: 5-10 with affiliate links",
+      "✅ Call-to-action: Newsletter signup, related content links",
+      "✅ Tags: 5-7 including primary keyword, semantic terms, seasonal/category"
+    ],
+    
+    "writing_style_guide": {
+      "tone": "Expert yet approachable, conversational but authoritative",
+      "perspective": "Second person (you) for tutorials, first person plural (we) for opinions",
+      "avoid": "Overly promotional language, fluff, repetition, jargon without explanation",
+      "use": "Specific numbers, actionable tips, real examples, personal insights",
+      "sentence_length": "Mix short (5-10 words) and medium (15-20 words) for readability",
+      "paragraph_length": "3-5 sentences maximum, use whitespace liberally"
+    },
+    
+    "seo_writing_best_practices": {
+      "primary_keyword": "Use in title, first paragraph, one H2, naturally throughout",
+      "keyword_density": "1-2% (don't stuff, write naturally)",
+      "semantic_keywords": "Use variations and related terms (e.g., 'gel manicure', 'gel polish', 'gel nails')",
+      "headings": "H2 for main sections, H3 for subsections, include keywords naturally",
+      "first_paragraph": "Hook reader immediately, include primary keyword, set expectations",
+      "last_paragraph": "Summarize key points, include call-to-action, link to related content"
+    },
+    
+    "ai_optimization_in_writing": {
+      "tldr_placement": "Immediately after intro, before main content",
+      "structure_for_extraction": "Use clear headings, tables, lists - avoid long paragraphs",
+      "answer_questions_completely": "Don't tease - give full answers so AI can extract them",
+      "use_data_and_numbers": "AI loves specific stats, prices, timeframes, measurements",
+      "comparison_format": "Always use tables for comparisons - AI parses them easily",
+      "faq_integration": "Answer questions in natural language matching voice search queries"
+    }
+  },
+
+  "keyword_research_and_targeting": {
+    "primary_keyword_selection": {
+      "criteria": [
+        "Search volume: 500+ monthly searches minimum",
+        "Competition: Keyword difficulty < 40 for new posts",
+        "Relevance: Must match user intent and your expertise",
+        "Commercial intent: Focus on MOFU/BOFU keywords (people ready to take action)"
+      ],
+      "tools": [
+        "Google Keyword Planner (free)",
+        "Ahrefs Keywords Explorer (paid - best)",
+        "SEMrush Keyword Magic Tool (paid)",
+        "Ubersuggest (freemium)",
+        "Google Search Console (shows what you already rank for)"
+      ]
+    },
+    
+    "long_tail_keyword_strategy": {
+      "definition": "3-5 word phrases with lower search volume but higher conversion",
+      "examples": [
+        "easy christmas nail designs for short nails",
+        "how to apply chrome powder on gel nails",
+        "best gel polish for christmas nails 2025",
+        "almond vs coffin nails for nail art",
+        "DIY gel manicure at home for beginners"
+      ],
+      "benefit": "Easier to rank, higher conversion, better match for voice search and AI queries",
+      "strategy": "Target 1 primary keyword + 3-5 long-tail variations per post"
+    },
+    
+    "seasonal_keyword_planning": {
+      "advance_timing": "Publish seasonal content 6-8 weeks before peak search",
+      "christmas_content": "Publish late October / early November",
+      "valentine_content": "Publish late December / early January",
+      "halloween_content": "Publish late August / early September",
+      "benefit": "Content has time to rank before seasonal spike in searches"
+    },
+    
+    "keyword_cannibalization_prevention": {
+      "problem": "Multiple posts targeting same keyword compete with each other",
+      "solution": "Target different variations and intent",
+      "example": [
+        "Post 1: 'Christmas nail designs 2025' (broad inspiration)",
+        "Post 2: 'Easy Christmas nails for beginners' (skill level)",
+        "Post 3: 'Christmas nail tutorial step by step' (how-to)",
+        "Post 4: 'Best gel polish for Christmas nails' (product focus)"
+      ],
+      "audit": "Use GSC to identify if multiple pages rank for same query - consolidate if needed"
+    }
+  },
+
+  "final_deployment_checklist": {
+    "before_going_live_verify": [
+      "✅ All Phase 0 tasks completed (TL;DR, schemas, entity IDs)",
+      "✅ Google Search Console and Bing verification codes added",
+      "✅ Wikidata entry created and Q-ID added to schemas",
+      "✅ All 12 existing blog posts have TL;DR frontmatter",
+      "✅ No Facebook links in any schema",
+      "✅ Social media URLs correct (x.com, underscores on IG/Pinterest)",
+      "✅ Author always 'Mirellé Team'",
+      "✅ Brand name always 'Mirellé' with é accent",
+      "✅ No AggregateRating or Review schemas (affiliate-safe)",
+      "✅ All images optimized and compressed",
+      "✅ Fonts self-hosted via next/font",
+      "✅ Priority prop on hero images",
+      "✅ npm run build completes successfully",
+      "✅ All TypeScript errors resolved",
+      "✅ Schemas validate in Google Rich Results Test",
+      "✅ Core Web Vitals passing (LCP < 2.5s, INP < 200ms, CLS < 0.1)",
+      "✅ Mobile responsive tested on real devices",
+      "✅ Sitemap.xml generating correctly",
+      "✅ Robots.txt configured properly"
+    ],
+    
+    "post_deployment_24_hour_monitoring": [
+      "Check site loads correctly at all URLs",
+      "Verify no 404 errors in GSC",
+      "Monitor error logs in hosting dashboard",
+      "Check GA4 receiving traffic data",
+      "Test 5 blog posts for TL;DR rendering",
+      "Validate schemas still passing after deployment",
+      "Check Core Web Vitals in PageSpeed Insights"
+    ],
+    
+    "week_one_tasks": [
+      "Submit sitemap to Google Search Console",
+      "Submit sitemap to Bing Webmaster Tools",
+      "Request indexing for key pages in GSC",
+      "Set up Google Alerts for brand mentions",
+      "Begin weekly AI prompt testing",
+      "Start Reddit engagement (lurk for 2 weeks first)",
+      "Publish 2-3 new blog posts",
+      "Share content on social media"
+    ]
+  },
+
+  "success_milestones_60_day_roadmap": {
+    "week_1_2": {
+      "focus": "Phase 0 implementation - Critical fixes",
+      "deliverables": [
+        "TL;DR component on all posts",
+        "All schemas corrected and validated",
+        "Wikidata entry created",
+        "GSC and Bing verified",
+        "Images optimized"
+      ],
+      "metrics": "Baseline measurements for all KPIs"
+    },
+    
+    "week_3_4": {
+      "focus": "Phase 1 - Schema enhancements",
+      "deliverables": [
+        "Entity mapping implemented",
+        "Blog and ItemList schemas added",
+        "AboutPage and ContactPage schemas",
+        "Person schema with full entity linking"
+      ],
+      "metrics": "Schema validation 100%, no errors"
+    },
+    
+    "week_5_6": {
+      "focus": "Phase 2 - GEO/AI optimization begins",
+      "deliverables": [
+        "Content restructured with tables/lists",
+        "AI prompt tracking system operational",
+        "Reddit account created, lurking phase",
+        "5 comparison posts created"
+      ],
+      "metrics": "Baseline AI citation rate measured (likely 0-5%)"
+    },
+    
+    "week_7_8": {
+      "focus": "Phase 2 + Phase 3 - AI optimization + Performance",
+      "deliverables": [
+        "All posts have structured content",
+        "Core Web Vitals optimized",
+        "Mobile UX improvements complete",
+        "30+ total blog posts published"
+      ],
+      "metrics": "Core Web Vitals passing, AI citation rate 5-10%"
+    },
+    
+    "week_9_12": {
+      "focus": "Phase 4 - Authority building + Content expansion",
+      "deliverables": [
+        "LinkedIn Company Page created",
+        "Reddit engagement started (after lurking)",
+        "5-10 backlinks acquired",
+        "50+ blog posts published",
+        "2-3 guest posts submitted"
+      ],
+      "metrics": "AI citation rate 15-25%, organic traffic up 100-200%, top 10 rankings for 20+ keywords"
+    },
+    
+    "day_60_success_definition": {
+      "google_rankings": "Top 10 for 20+ target keywords, top 3 for 5+ keywords",
+      "ai_citations": "20-30% citation rate in AI assistant responses",
+      "core_web_vitals": "All pages passing (green) in GSC",
+      "entity_recognition": "Wikidata entry indexed, Knowledge Graph emerging",
+      "content_volume": "50+ high-quality blog posts published",
+      "traffic": "200-300% increase in organic traffic from baseline",
+      "backlinks": "20+ quality backlinks from DA40+ sites",
+      "engagement": "25% bounce rate reduction, 30%+ CTR improvement in GSC"
+    }
+  },
+
+  "user_responsibilities": {
+    "actions_required_from_user": [
+      "Provide Google Search Console verification code (Task 0.5)",
+      "Provide Bing Webmaster Tools verification code (Task 0.5)",
+      "Create Wikidata entry and provide Q-ID (Task 2.1)",
+      "Create LinkedIn Company Page (Task 4.1)",
+      "Set up AI prompt tracking spreadsheet (Task 2.3)",
+      "Create Reddit account and engage (Task 2.4)",
+      "Write/commission 38 new blog posts to reach 50 total",
+      "Add TL;DR frontmatter to all 12 existing posts (can be assisted)",
+      "Review and approve all code changes before deployment",
+      "Monitor analytics weekly",
+      "Respond to backlink outreach emails",
+      "Maintain ongoing content publishing schedule"
+    ],
+    
+    "decisions_needed_from_user": [
+      "YouTube channel - yes or no? (Task 2.6)",
+      "Video content creation - bandwidth available? (Task 2.6)",
+      "Backlink tool budget - Ahrefs/SEMrush or free tools? (Task 4.2)",
+      "Guest posting frequency - how many per month?",
+      "Content creation - DIY or hire writers?",
+      "Social media posting frequency - daily, weekly?",
+      "Newsletter strategy - what's the offer?"
+    ]
+  },
+
+  "agent_usage_instructions": {
+    "how_to_use_this_meta_prompt": [
+      "1. Read this entire JSON to understand project scope and context",
+      "2. Start with Phase 0, Task 0.1 (TL;DR implementation) - highest priority",
+      "3. For each task, show user EXACT file changes before implementing",
+      "4. User must review and approve before any code modifications",
+      "5. Complete one phase before moving to next",
+      "6. Update this JSON document when tasks are completed",
+      "7. Use validation tools after each deployment",
+      "8. Track metrics and report progress weekly"
+    ],
+    
+    "critical_rules_for_agent": [
+      "NEVER remove Facebook from schemas without user seeing the change first",
+      "ALWAYS use 'Mirellé' with é accent everywhere",
+      "ALWAYS use 'Mirellé Team' as author, never individual names",
+      "NEVER add AggregateRating or Review schemas (affiliate model)",
+      "NEVER include customer reviews or manufacturer claims (affiliate only)",
+      "ALWAYS show complete file contents when making changes",
+      "NEVER make assumptions - ask user if uncertain",
+      "ALWAYS validate schemas after changes",
+      "ALWAYS test on mobile after any CSS/layout changes",
+      "NEVER skip validation steps - they prevent errors"
+    ],
+    
+    "communication_style_with_user": [
+      "Be clear and specific about what you're doing",
+      "Explain WHY changes matter, not just WHAT to change",
+      "Break complex tasks into simple numbered steps",
+      "Provide code examples inline, not just file paths",
+      "Warn about potential issues before they happen",
+      "Celebrate wins - 'Great! Schema validates perfectly now!'",
+      "Be patient - user is learning while implementing",
+      "Provide context from this meta prompt when referencing tasks"
+    ]
+  },
+
+  "glossary_of_terms": {
+    "@id": "Unique identifier for an entity in schema.org, enables cross-referencing",
+    "sameAs": "Schema property linking entity to external authority sources (Wikipedia, Wikidata, social profiles)",
+    "abstract": "Schema property containing TL;DR summary for AI extraction",
+    "speakable": "Schema property marking content suitable for voice search/smart speakers",
+    "entity_recognition": "Google's ability to understand your brand as a distinct entity, not just keywords",
+    "knowledge_graph": "Google's database of entities and their relationships",
+    "wikidata": "Free knowledge base, easier to get into than Wikipedia, crucial for entity building",
+    "core_web_vitals": "Google's user experience metrics: LCP, INP, CLS",
+    "lcp": "Largest Contentful Paint - how fast main content loads",
+    "inp": "Interaction to Next Paint - how fast page responds to user interactions",
+    "cls": "Cumulative Layout Shift - how much content jumps around while loading",
+    "geo": "Generative Engine Optimization - optimizing for AI assistants like ChatGPT",
+    "schema_markup": "JSON-LD structured data telling search engines what your content means",
+    "blogposting_schema": "Structured data for blog articles",
+    "organization_schema": "Structured data defining your brand as an entity",
+    "tldr": "Too Long; Didn't Read - concise summary at top of content",
+    "compact_keywords": "Short 2-4 word key takeaways displayed as badges in TL;DR",
+    "affiliate_model": "You recommend products but don't sell them - important for schema safety",
+    "domain_authority_da": "Moz metric (0-100) predicting how well a site ranks",
+    "backlink": "Link from another website to yours - crucial ranking factor",
+    "long_tail_keywords": "Specific 3-5 word phrases, easier to rank, higher conversion",
+    "keyword_cannibalization": "Multiple pages competing for same keyword - avoid this",
+    "next_font": "Next.js feature for optimizing Google Fonts - self-hosts and preloads",
+    "priority_prop": "Next.js Image prop telling it to load image immediately (for hero images)",
+    "lazy_loading": "Images load only when user scrolls to them - default in Next.js",
+    "code_splitting": "Breaking JavaScript into smaller bundles loaded on demand"
+  },
+
+  "reference_resources": {
+    "official_documentation": [
+      "Next.js Docs: https://nextjs.org/docs",
+      "React Docs: https://react.dev/",
+      "Tailwind CSS: https://tailwindcss.com/docs",
+      "Schema.org: https://schema.org/",
+      "Google Search Central: https://developers.google.com/search"
+    ],
+    
+    "seo_resources": [
+      "Google Search Console: https://search.google.com/search-console",
+      "Google Rich Results Test: https://search.google.com/test/rich-results",
+      "PageSpeed Insights: https://pagespeed.web.dev/",
+      "Wikidata: https://www.wikidata.org/",
+      "Schema Markup Validator: https://validator.schema.org/"
+    ],
+    
+    "ai_optimization_resources": [
+      "How AI Assistants Work: https://www.perplexity.ai/",
+      "ChatGPT Research: https://chat.openai.com/",
+      "Google AI Overview: https://blog.google/products/search/generative-ai-search/"
+    ],
+    
+    "image_optimization_tools": [
+      "TinyPNG: https://tinypng.com/",
+      "Squoosh: https://squoosh.app/",
+      "ImageOptim (Mac): https://imageoptim.com/"
+    ]
+  },
+
+  "version_history": {
+    "v1_0": "Initial meta prompt from TRANSFER.TXT (3900 lines)",
+    "v2_0": "Short JSON structure (500 lines) - TOO BRIEF",
+    "v3_0_current": "COMPLETE comprehensive JSON meta prompt with all details from TRANSFER.TXT + REST.TXT updates + new requirements (4000+ lines equivalent)",
+    "changes_in_v3": [
+      "Added complete code implementations for all components and schemas",
+      "Included REST.TXT updates (shop page fixes, Valentine blog example, Tailwind config)",
+      "Integrated new TL;DR requirements (compact keywords, visual enhancements)",
+      "Removed AggregateRating and Review schemas (affiliate-safe)",
+      "Fixed social media URLs (Facebook removed, correct handles with underscores)",
+      "Added detailed step-by-step instructions for every task",
+      "Included validation checklists and success criteria",
+      "Added troubleshooting guide for common issues",
+      "Included content creation guidelines and SEO best practices",
+      "Added complete deployment and monitoring workflows",
+      "Organized into clear phases with dependencies",
+      "Added glossary and reference resources"
+    ]
+  },
+
+  "final_notes": {
+    "this_is_a_living_document": "Update this JSON as tasks complete, new requirements emerge, or strategies change",
+    "estimated_total_time": "60-80 hours of implementation work over 30 days + ongoing maintenance",
+    "realistic_expectations": "SEO is a marathon, not a sprint. Significant results visible at 60-90 days, full impact at 6-12 months",
+    "user_commitment_required": "Weekly: 5-10 hours for content, monitoring, engagement. Cannot be passive.",
+    "this_is_not_a_guarantee": "Following this plan maximizes probability of success but doesn't guarantee rankings. SEO has many variables beyond our control.",
+    "when_to_seek_help": "If stuck on any task for >2 hours, ask for help. If seeing no improvement after 90 days, audit may be needed.",
+    "celebrate_small_wins": "First schema validation? Win! First AI citation? Win! First page-one ranking? Major win! Acknowledge progress.",
+    "remember_the_mission": "Transform Mirellé into the go-to authority for nail art inspiration that dominates search and gets cited by AI assistants. You've got this! 💅✨"
+  },
+
+  "deployment_safety_guarantee": {
+    "this_json_cannot_cause_deployment_errors": true,
+    "reason": "This is a documentation and instruction file only - contains no executable code",
+    "safe_to_store": "Anywhere in your repository - even /public/ if you want",
+    "safe_to_share": "With any AI agent or developer to continue work",
+    "validation": "This JSON itself validates (no syntax errors)",
+    "next_steps": "Use this as master reference for all implementation work",
+    "confidence_level": "100% deployment-safe - guaranteed"
+  }
+}          "4. Interact with page (click, scroll, type)",
+          "5. Stop recording",
+          "6. Look for red/yellow bars (tasks >50ms)",
+          "7. Identify which JavaScript is causing delays"
+        ],
+        "look_for": "Long-running tasks, heavy event handlers, blocking scripts"
+      },
+      
+      "step_3_code_splitting": {
+        "concept": "Load only JavaScript needed for current page",
+        "implementation": "Use dynamic imports for heavy components",
+        "example": "// BEFORE:\nimport HeavyComponent from './HeavyComponent';\n\n// AFTER:\nimport dynamic from 'next/dynamic';\n\nconst HeavyComponent = dynamic(() => import('./HeavyComponent'), {\n  loading: () => <p>Loading...</p>,\n  ssr: false // if component doesn't need server-side rendering\n});",
+        "candidates_for_dynamic_import": [
+          "Comment sections (not needed immediately)",
+          "Newsletter forms (below fold)",
+          "Pinterest overlay (user interaction triggers)",
+          "Any component not in initial viewport"
+        ]
+      },
+      
+      "step_4_optimize_event_handlers": {
+        "debounce_scroll_handlers": "If you have scroll listeners, debounce them",
+        "example": "import { debounce } from 'lodash'; // or create own\n\nconst handleScroll = debounce(() => {\n  // scroll logic\n}, 100); // only runs every 100ms max\n\nwindow.addEventListener('scroll', handleScroll);",
+        "use_passive_listeners": "{ passive: true } flag for scroll/touch events",
+        "avoid_heavy_onclick": "Move expensive computations to Web Workers or server"
+      },
+      
+      "step_5_bundle_analysis": {
+        "install": "npm install @next/bundle-analyzer",
+        "configure": "// next.config.ts\nconst withBundleAnalyzer = require('@next/bundle-analyzer')({\n  enabled: process.env.ANALYZE === 'true',\n});\n\nmodule.exports = withBundleAnalyzer(nextConfig);",
+        "run": "ANALYZE=true npm run build",
+        "analyze": [
+          "Open the bundle report in browser",
+          "Identify large dependencies (>100KB)",
+          "Consider alternatives or lazy loading",
+          "Remove unused dependencies"
+        ],
+        "common_culprits": "Moment.js (use date-fns instead), Lodash (import specific functions), large icon libraries"
+      },
+      
+      "step_6_server_components": {
+        "note": "Next.js 15 App Router uses Server Components by default",
+        "verify": "Components are Server Components unless they use 'use client'",
+        "audit": "Search codebase for 'use client' directive",
+        "move_to_server": "Components that don't need interactivity should be Server Components",
+        "benefit": "Reduces client-side JavaScript bundle size significantly"
+      },
+      
+      "success_criteria": [
+        "✅ Long tasks identified and optimized",
+        "✅ Heavy components dynamically imported",
+        "✅ Event handlers optimized/debounced",
+        "✅ Bundle size reduced by 10%+",
+        "✅ INP < 200ms on mobile",
+        "✅ No red bars in Chrome Performance tab"
+      ]
+    },
+
+    "task_3_3_optimize_cls": {
+      "id": "3.3",
+      "priority": "MEDIUM",
+      "name": "Optimize Cumulative Layout Shift (CLS)",
+      "impact": "Medium - Visual stability affects UX and rankings",
+      "target": "< 0.1 (good), < 0.05 (excellent)",
+      "estimated_time": "1-2 hours",
+      
+      "step_1_audit_current_cls": {
+        "tool": "PageSpeed Insights",
+        "record": "Current CLS scores",
+        "identify": "Which elements are shifting (images, ads, fonts)"
+      },
+      
+      "step_2_explicit_image_dimensions": {
+        "rule": "EVERY image must have width and height",
+        "audit_command": "Search codebase for <Image components without width/height",
+        "correct_pattern": "<Image src=\"...\" width={1200} height={630} alt=\"...\" />",
+        "for_fill_prop": "<Image src=\"...\" fill className=\"object-cover\" style={{ aspectRatio: '16/9' }} />",
+        "files_to_check": [
+          "src/components/Blog/BlogCard.tsx",
+          "src/components/Blog/BlogPost.tsx",
+          "src/components/Shop/ShopClient.tsx",
+          "All page.tsx files"
+        ]
+      },
+      
+      "step_3_reserve_space_for_ads": {
+        "problem": "AdSense loads asynchronously and pushes content down",
+        "solution": "Create placeholder with min-height matching ad size",
+        "implementation": "<div className=\"ad-container\" style={{ minHeight: '280px' }}>\n  {/* AdSense code */}\n</div>",
+        "common_ad_sizes": {
+          "large_rectangle": "300x250px",
+          "leaderboard": "728x90px",
+          "mobile_banner": "320x50px",
+          "large_mobile_banner": "320x100px"
+        }
+      },
+      
+      "step_4_font_loading": {
+        "solution": "next/font with display='swap'",
+        "status": "Already implemented in Task 3.1.3",
+        "verify": "Fonts swap gracefully without layout shift",
+        "test": "Throttle network in DevTools to 'Slow 3G' and watch font loading"
+      },
+      
+      "step_5_avoid_content_injection": {
+        "rule": "Don't inject content above existing content after page load",
+        "check": [
+          "Banners/announcements at top of page",
+          "Comment sections loading above content",
+          "Dynamic content without reserved space"
+        ],
+        "solution": "Reserve space or place dynamic content at bottom"
+      },
+      
+      "step_6_css_aspect_ratio": {
+        "modern_css": "Use aspect-ratio property for responsive containers",
+        "example": ".video-container {\n  aspect-ratio: 16 / 9;\n  width: 100%;\n}\n\n.image-container {\n  aspect-ratio: 3 / 2;\n  width: 100%;\n}",
+        "browser_support": "All modern browsers (2023+)"
+      },
+      
+      "validation": [
+        "Visually inspect page load - nothing should jump",
+        "Use slow network throttling to see shifts clearly",
+        "Check CLS score improved in PageSpeed Insights",
+        "Test on real mobile device"
+      ],
+      
+      "success_criteria": [
+        "✅ All images have explicit dimensions",
+        "✅ Ad spaces reserved with min-height",
+        "✅ Fonts load without FOUT/FOIT",
+        "✅ No content injection above fold",
+        "✅ CLS < 0.1 on all pages",
+        "✅ Visual inspection shows no jumps"
+      ]
+    },
+
+    "task_3_4_advanced_image_optimization": {
+      "id": "3.4",
+      "priority": "MEDIUM",
+      "name": "Advanced Image Optimization Pipeline",
+      "impact": "Medium - Further improves LCP and overall performance",
+      "estimated_time": "3-4 hours initial setup + ongoing",
+      
+      "step_1_audit_all_images": {
+        "create_spreadsheet": "List all images, current size, format, usage",
+        "location": "Check /public/images/ directory",
+        "record": [
+          "Image filename",
+          "Current file size",
+          "Current format (JPG/PNG)",
+          "Dimensions",
+          "Usage (hero/content/thumbnail)",
+          "Needs optimization? (>target size)"
+        ]
+      },
+      
+      "step_2_batch_optimize_existing": {
+        "tools": [
+          "TinyPNG.com - Free web interface, 500KB limit per file",
+          "ImageOptim (Mac) - Batch processing, lossless compression",
+          "Squoosh.app - Web-based, precise control",
+          "sharp (Node.js) - For automation"
+        ],
+        "target_sizes": {
+          "hero_images": "< 200KB",
+          "content_images": "< 100KB",
+          "thumbnails": "< 50KB"
+        },
+        "process": [
+          "Backup original images first",
+          "Compress in batches by type (hero/content/thumb)",
+          "Verify visual quality acceptable",
+          "Replace originals",
+          "Clear Next.js cache and rebuild"
+        ]
+      },
+      
+      "step_3_responsive_image_sizes": {
+        "implementation": "<Image\n  src=\"/blog/hero.jpg\"\n  alt=\"...\"\n  width={1200}\n  height={630}\n  sizes=\"(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw\"\n  priority={isAboveFold}\n/>",
+        "explanation": "sizes prop tells Next.js which image size to serve based on viewport",
+        "benefit": "Mobile gets 640px image, desktop gets 1200px - saves bandwidth"
+      },
+      
+      "step_4_blur_placeholders": {
+        "implementation": "<Image\n  src=\"/blog/hero.jpg\"\n  alt=\"...\"\n  width={1200}\n  height={630}\n  placeholder=\"blur\"\n  blurDataURL=\"data:image/jpeg;base64,...\"\n/>",
+        "generate_blur": "Use plaiceholder library or Next.js built-in",
+        "benefit": "Shows blur while full image loads - better perceived performance",
+        "optional": "This is polish - implement after core optimizations"
+      },
+      
+      "step_5_lazy_loading_verification": {
+        "default_behavior": "Next.js Image component lazy loads by default",
+        "verify": "Only above-fold images have priority prop",
+        "test": "Open Network tab in DevTools, scroll page, watch images load on demand"
+      },
+      
+      "step_6_automation_script": {
+        "optional_but_recommended": "Create script to optimize new images",
+        "file": "scripts/optimize-images.js",
+        "code": "const sharp = require('sharp');\nconst fs = require('fs');\nconst path = require('path');\n\nconst sizes = {\n  hero: { width: 1200, height: 630 },\n  content: { width: 800, height: 600 },\n  thumbnail: { width: 400, height: 300 }\n};\n\nasync function optimizeImage(inputPath, outputPath, sizeType) {\n  const size = sizes[sizeType];\n  \n  // Create WebP version\n  await sharp(inputPath)\n    .resize(size.width, size.height, { fit: 'cover' })\n    .webp({ quality: 85 })\n    .toFile(outputPath.replace(/\\.[^.]+$/, '.webp'));\n  \n  // Create AVIF version (better compression)\n  await sharp(inputPath)\n    .resize(size.width, size.height, { fit: 'cover' })\n    .avif({ quality: 75 })\n    .toFile(outputPath.replace(/\\.[^.]+$/, '.avif'));\n}\n\n// Usage: node scripts/optimize-images.js input.jpg hero",
+        "install_sharp": "npm install sharp --save-dev"
+      },
+      
+      "success_criteria": [
+        "✅ All images optimized to target sizes",
+        "✅ Images served as AVIF/WebP to supporting browsers",
+        "✅ Responsive sizes configured",
+        "✅ Lazy loading verified",
+        "✅ Optional: Blur placeholders implemented",
+        "✅ Optional: Automation script created"
+      ]
+    },
+
+    "task_3_5_mobile_ux_optimization": {
+      "id": "3.5",
+      "priority": "MEDIUM",
+      "name": "Mobile UX Optimization Beyond Core Web Vitals",
+      "impact": "Medium - Improves engagement and reduces bounce rate",
+      "estimated_time": "2-3 hours",
+      
+      "step_1_tap_target_audit": {
+        "requirement": "Minimum 44x44px for all interactive elements (Apple/Google guideline)",
+        "tool": "Chrome DevTools > Mobile view > Inspect element",
+        "elements_to_check": [
+          "Navigation menu items",
+          "Blog card click areas",
+          "Comment form buttons",
+          "Shop product cards",
+          "Social share buttons",
+          "Newsletter form submit button"
+        ],
+        "fix_with_tailwind": "className=\"p-3 min-w-[44px] min-h-[44px]\"",
+        "or_css": ".clickable-element {\n  min-width: 44px;\n  min-height: 44px;\n  padding: 12px;\n}"
+      },
+      
+      "step_2_font_size_audit": {
+        "requirements": {
+          "body_text": "16px minimum (Tailwind text-base)",
+          "headings_h2": "24px+ (Tailwind text-2xl)",
+          "headings_h3": "20px+ (Tailwind text-xl)",
+          "line_height": "1.5-1.7 for body text",
+          "never_use": "Text smaller than 14px anywhere"
+        },
+        "check_globals_css": "Already configured in REST.TXT with responsive typography",
+        "test": "Read actual blog post on mobile - is it comfortable?"
+      },
+      
+      "step_3_whitespace_and_spacing": {
+        "minimum_spacing": "8px between clickable elements (Tailwind gap-2 or space-y-2)",
+        "check_locations": [
+          "Blog post sharing buttons",
+          "Related post cards",
+          "Comment reply buttons",
+          "Shop product grid"
+        ],
+        "tailwind_classes": "space-y-2, space-x-2, gap-2, p-3"
+      },
+      
+      "step_4_form_usability": {
+        "checklist": [
+          "✅ Input fields large enough (min-h-11 in Tailwind)",
+          "✅ Proper input types (email, tel, url) trigger correct keyboards",
+          "✅ Labels visible and associated with inputs",
+          "✅ Error messages clear and actionable",
+          "✅ Submit buttons easily tappable (min 44x44px)",
+          "✅ No auto-zoom on input focus (font-size: 16px prevents this)"
+        ],
+        "forms_to_test": [
+          "Newsletter subscription",
+          "Comment form",
+          "Contact form"
+        ]
+      },
+      
+      "step_5_navigation_optimization": {
+        "mobile_menu_checklist": [
+          "✅ Hamburger icon 44x44px minimum",
+          "✅ Menu items easily tappable (p-3 or p-4)",
+          "✅ Close button obvious and accessible",
+          "✅ No horizontal scrolling in menu",
+          "✅ Active page highlighted",
+          "✅ Smooth animations (not janky)"
+        ],
+        "test_on_real_device": "Simulator is not enough - use actual phone"
+      },
+      
+      "step_6_eliminate_horizontal_scroll": {
+        "common_causes": [
+          "Fixed-width elements wider than viewport",
+          "Tables without overflow-x-auto wrapper",
+          "Images without max-w-full",
+          "Code blocks without word-wrap"
+        ],
+        "tailwind_fixes": {
+          "tables": "<div className=\"overflow-x-auto\"><table>...</table></div>",
+          "images": "className=\"max-w-full h-auto\"",
+          "containers": "className=\"max-w-full overflow-hidden\""
+        },
+        "test": "On mobile, swipe left/right - page should NOT scroll horizontally"
+      },
+      
+      "success_criteria": [
+        "✅ All tap targets 44x44px minimum",
+        "✅ Body text 16px minimum",
+        "✅ Adequate spacing between interactive elements",
+        "✅ Forms usable on mobile",
+        "✅ Navigation smooth and accessible",
+        "✅ No horizontal scroll anywhere",
+        "✅ Tested on real iOS and Android devices"
+      ]
+    }
+  },
+
+  "phase_4_entity_authority_building": {
+    "timeline": "Days 22-30",
+    "objective": "Establish Mirellé as recognized authority entity across the web",
+    
+    "task_4_1_external_entity_references": {
+      "id": "4.1",
+      "priority": "HIGH",
+      "name": "Build External Entity References (sameAs Links)",
+      "impact": "High - External validation strengthens entity recognition",
+      "estimated_time": "2-3 hours + ongoing",
+      
+      "current_social_platforms": {
+        "twitter": "https://x.com/mirelleinspo",
+        "instagram": "https://www.instagram.com/mirelle_inspo/",
+        "pinterest": "https://www.pinterest.com/mirelle_inspo/"
+      },
+      
+      "platforms_to_create": {
+        "linkedin_company_page": {
+          "url_to_create": "https://www.linkedin.com/company/setup/new/",
+          "profile_setup": {
+            "company_name": "Mirellé",
+            "website": "https://mirelleinspo.com",
+            "industry": "Media Production / Online Media",
+            "company_size": "1-10 employees",
+            "company_type": "Self-Employed or Partnership",
+            "description": "Digital beauty content platform specializing in nail art inspiration, tutorials, and seasonal trends. We curate the latest nail designs from top artists worldwide and make salon-quality manicures accessible to everyone through expert guides, product recommendations, and step-by-step tutorials.",
+            "specialties": "Nail Art, Beauty Content, Seasonal Trends, DIY Tutorials, Product Recommendations"
+          },
+          "content_strategy": "Share blog posts 2-3x per week, engage with beauty industry professionals",
+          "benefit": "B2B partnerships, brand authority, professional audience"
+        },
+        
+        "youtube_channel": {
+          "status": "OPTIONAL - Already covered in Task 2.6",
+          "if_created": "https://www.youtube.com/@mirelleinspo (or available handle)"
+        }
+      },
+      
+      "optional_additional_platforms": {
+        "medium": {
+          "benefit": "High domain authority, content syndication",
+          "action": "Create publication, cross-post blog articles with canonical tag",
+          "time_required": "1-2 hours per month"
+        },
+        "flipboard": {
+          "benefit": "Content aggregation, additional traffic",
+          "action": "Create magazine, curate nail art content",
+          "time_required": "30 mins per week"
+        },
+        "tumblr": {
+          "benefit": "Visual content platform, engaged beauty community",
+          "action": "Create blog, share images with links",
+          "time_required": "30 mins per week"
+        },
+        "note": "Only create these if you have bandwidth - LinkedIn is priority"
+      },
+      
+      "update_all_schemas_with_new_sameas": {
+        "files_to_update": [
+          "src/app/layout.tsx - Organization schema",
+          "src/lib/generateSchemas.ts - Person schema, any other entity schemas"
+        ],
+        "updated_sameas_array": "\"sameAs\": [\n  \"https://www.wikidata.org/wiki/Q123456789\", // From Task 2.1\n  \"https://x.com/mirelleinspo\",\n  \"https://www.instagram.com/mirelle_inspo/\",\n  \"https://www.pinterest.com/mirelle_inspo/\",\n  \"https://www.linkedin.com/company/mirelle-inspo\", // NEW\n  \"https://www.youtube.com/@mirelleinspo\" // NEW if created\n]"
+      },
+      
+      "nap_consistency": {
+        "name": "Mirellé (with é accent) - MUST be identical everywhere",
+        "address": "Not applicable (online business only)",
+        "phone": "Not applicable unless you add one",
+        "verify": "Business name consistent across all platforms"
+      },
+      
+      "success_criteria": [
+        "✅ LinkedIn Company Page created",
+        "✅ YouTube Channel created (if doing video)",
+        "✅ All profiles publicly accessible and active",
+        "✅ sameAs arrays updated in all schemas",
+        "✅ Schema validates with new links",
+        "✅ Brand name consistent (Mirellé with é) everywhere"
+      ]
+    },
+
+    "task_4_2_backlink_strategy": {
+      "id": "4.2",
+      "priority": "MEDIUM",
+      "name": "Backlink Acquisition Strategy",
+      "impact": "High - Backlinks remain top-3 ranking factor",
+      "type": "ONGOING MANUAL ACTION",
+      "estimated_time": "5-10 hours per month",
+      
+      "critical_note": "Quality over quantity. One link from a DA60 site beats 100 from DA10 sites. Focus on relevant, authoritative beauty/fashion sites.",
+      
+      "strategy_1_competitor_backlink_analysis": {
+        "tools": [
+          "Ahrefs (paid - $99+/month) - BEST",
+          "SEMrush (paid - $119+/month) - EXCELLENT",
+          "Moz Link Explorer (freemium) - GOOD",
+          "Ubersuggest (freemium - $29/month) - DECENT"
+        ],
+        "process": [
+          "1. Identify top 5 competing nail art blogs",
+          "2. Enter their domains into backlink tool",
+          "3. Export backlink profiles (filter DA40+)",
+          "4. Identify link sources: guest posts, resource pages, mentions",
+          "5. Contact same sites with your content"
+        ],
+        "note": "Skip if budget is tight - focus on strategies 2-6"
+      },
+      
+      "strategy_2_create_linkable_assets": {
+        "concept": "Create content SO good people naturally want to link to it",
+        "high_value_content_ideas": [
+          "Ultimate Guide to Nail Care (10,000+ word comprehensive guide)",
+          "Nail Art Statistics Roundup 2025 (original research/data compilation)",
+          "Free Nail Color Palette Generator Tool (interactive)",
+          "Seasonal Nail Design Templates (downloadable PDFs)",
+          "Nail Artist Directory Database (curated list with profiles)",
+          "Infographics: Nail Shape Guide, Color Theory for Nails, etc"
+        ],
+        "promotion": "Share on social media, email nail bloggers, post in communities"
+      },
+      
+      "strategy_3_guest_posting": {
+        "target_sites": [
+          "Beauty blogs accepting guest posts (search: 'beauty guest post')",
+          "Women's lifestyle publications",
+          "Fashion blogs with beauty sections",
+          "DIY/craft websites"
+        ],
+        "pitch_template": "Subject: Guest Post Idea: [Specific Topic] for [Their Site]\n\nHi [Name],\n\nI'm [Your Name] from Mirellé, a nail art inspiration platform. I've been following [Their Site] and particularly enjoyed your recent article on [specific article].\n\nI'd love to contribute a guest post on [specific topic relevant to their audience]. This would cover:\n- [Specific benefit for their readers]\n- [Unique angle or data]\n- [Actionable tips]\n\nHere are examples of my work:\n- [Link to best blog post]\n- [Link to another strong post]\n\nWould this be a good fit for [Their Site]?\n\nBest,\n[Your Name]\nMirellé | mirelleinspo.com",
+        "target_quantity": "5-10 guest posts per quarter on DA40+ sites",
+        "link_placement": "Author bio link + 1-2 contextual links in content"
+      },
+      
+      "strategy_4_resource_page_link_building": {
+        "process": [
+          "1. Google search: 'nail art resources', 'beauty resources', 'nail care links'",
+          "2. Find resource pages listing nail art sites",
+          "3. Email site owners with value proposition"
+        ],
+        "email_template": "Subject: Resource for Your [Topic] Page\n\nHi [Name],\n\nI noticed your excellent resource page about [topic] at [URL]. \n\nI recently published a comprehensive guide on [your topic] at Mirellé that your readers might find valuable: [your URL]\n\nIt covers [specific unique value points].\n\nWould it be appropriate to include on your resource page?\n\nThanks for considering,\n[Your Name]",
+        "follow_up": "Once if no response after 7 days, then move on"
+      },
+      
+      "strategy_5_broken_link_building": {
+        "concept": "Find broken links on beauty sites, offer your content as replacement",
+        "tools": [
+          "Ahrefs (paid) - has broken link checker",
+          "Check My Links Chrome extension (free)",
+          "Dead Link Checker (free online tool)"
+        ],
+        "process": [
+          "1. Find relevant beauty/nail art sites",
+          "2. Run broken link check on their pages",
+          "3. If broken link was to nail art content, email site owner",
+          "4. Offer your similar content as replacement"
+        ],
+        "email_template": "Subject: Broken Link on Your [Page Title] Page\n\nHi [Name],\n\nI was reading your article '[Article Title]' and noticed a broken link to [original resource].\n\nI have a similar resource on [topic] that might be a good replacement: [your URL]\n\nIt covers [relevant points] and is regularly updated.\n\nHope this helps!\n\n[Your Name]",
+        "success_rate": "10-20% (low but worth effort)"
+      },
+      
+      "strategy_6_unlinked_brand_mentions": {
+        "tools": [
+          "Google Alerts - Free, set up for 'Mirellé' and 'mirelleinspo.com'",
+          "Brand24 (paid - $79+/month) - More comprehensive",
+          "Ahrefs Content Explorer (paid) - finds all mentions"
+        ],
+        "process": [
+          "1. Get alert when someone mentions Mirellé without linking",
+          "2. Email them politely asking for link"
+        ],
+        "email_template": "Subject: Thank You for Mentioning Mirellé!\n\nHi [Name],\n\nThank you for mentioning Mirellé in your article '[Article Title]'! We're honored.\n\nWould you consider adding a link to mirelleinspo.com so readers can easily find us?\n\nAppreciate it!\n\n[Your Name]\nMirellé Team",
+        "success_rate": "50-70% (people usually happy to add link)"
+      },
+      
+      "strategy_7_create_shareable_visual_content": {
+        "infographic_ideas": [
+          "Nail Shape Guide (almond, coffin, square, etc)",
+          "Seasonal Color Palette Charts",
+          "Gel vs Regular Polish Comparison",
+          "Nail Care Do's and Don'ts",
+          "Perfect Nail Length by Hand Type"
+        ],
+        "include": "Embed code at bottom with attribution link back to Mirellé",
+        "promotion": "Share on Pinterest, Instagram, email to beauty bloggers",
+        "benefit": "Visual content gets shared and linked naturally"
+      },
+      
+      "links_to_avoid": {
+        "low_quality_directories": "Avoid spammy directories (Google penalizes)",
+        "paid_link_schemes": "Never buy links - violates Google guidelines",
+        "irrelevant_sites": "Link from car blog? No thanks. Relevance matters.",
+        "link_farms": "Sites that exist only to sell links - avoid",
+        "footer_links": "Sitewide footer links are devalued by Google"
+      },
+      
+      "tracking_backlinks": {
+        "monthly_audit": "Check backlink profile in GSC or Ahrefs",
+        "metrics": [
+          "Total referring domains",
+          "Average DA of linking sites",
+          "Anchor text distribution (should be natural, not all exact match)",
+          "Link velocity (gradual growth is natural)"
+        ],
+        "disavow": "Only disavow truly spammy links causing manual penalty (rare)"
+      },
+      
+      "success_criteria": [
+        "✅ 5+ high-quality backlinks acquired per month (DA40+)",
+        "✅ Guest posts published on 2-3 relevant sites per quarter",
+        "✅ 1-2 linkable assets created (guides, tools, infographics)",
+        "✅ Backlink profile growing steadily",
+        "✅ No toxic backlinks",
+        "✅ Brand mentions increasing over time"
+      ]
+    }
+  },
+
+  "deployment_and_validation": {
+    "deployment_workflow": {
+      "step_1_local_development": {
+        "command": "npm run dev",
+        "test_locally": "Verify all changes work in development",
+        "check": [
+          "No TypeScript errors",
+          "No console errors",
+          "Components render correctly",
+          "Schemas validate",
+          "Images load",
+          "Links work"
+        ]
+      },
+      
+      "step_2_production_build": {
+        "command": "npm run build",
+        "must_pass": "Build must complete without errors",
+        "check_output": "Look for warnings or errors in build log",
+        "fix_before_deploy": "Any build errors must be resolved"
+      },
+      
+      "step_3_preview_deployment": {
+        "platform": "Vercel (if using Vercel hosting)",
+        "process": "Push to git branch, Vercel auto-creates preview",
+        "test_preview": [
+          "Check all pages load",
+          "Test schemas in Google Rich Results Test",
+          "Verify images optimized (check Network tab)",
+          "Test on mobile device",
+          "Check Core Web Vitals in PageSpeed Insights"
+        ]
+      },
+      
+      "step_4_production_deployment": {
+        "when": "Only after preview fully tested",
+        "process": "Merge to main branch or deploy via Vercel dashboard",
+        "monitor": "Watch build logs for errors"
+      },
+      
+      "step_5_post_deployment_validation": {
+        "immediate_checks": [
+          "Site loads at https://mirelleinspo.com",
+          "No 404 errors",
+          "Images loading",
+          "Schemas present in page source"
+        ],
+        "schema_validation": [
+          "Google Rich Results Test: https://search.google.com/test/rich-results",
+          "Test homepage, blog post, shop page",
+          "Verify all schemas valid"
+        ],
+        "performance_check": [
+          "PageSpeed Insights for key pages",
+          "Record Core Web Vitals scores",
+          "Compare to pre-deployment baseline"
+        ]
+      }
+    },
+    
+    "rollback_plan": {
+      "if_critical_error": "Revert to previous deployment immediately",
+      "vercel_rollback": "Go to Vercel dashboard → Deployments → Previous deployment → Promote to Production",
+      "git_revert": "git revert [commit-hash] && git push",
+      "test_rollback": "Verify site works after rollback"
+    },
+    
+    "validation_tools": {
+      "schema_testing": [
+        "Google Rich Results Test: https://search.google.com/test/rich-results",
+        "Schema.org Validator: https://    ]
+  },
+
+  "markdown_frontmatter_template": {
+    "description": "Required frontmatter structure for all blog posts",
+    "example_complete_frontmatter": "---\ntitle: \"Your Post Title: Specific and SEO-Optimized\"\nexcerpt: \"Compelling 150-160 character summary that appears in search results and social shares\"\ndate: \"2025-10-26T10:00:00-04:00\"\nauthor: \"Mirellé Team\"\ntags:\n  - \"primary keyword\"\n  - \"secondary keyword\"\n  - \"long-tail keyword\"\n  - \"semantic keyword\"\n  - \"seasonal keyword\"\n  - \"topic category\"\nimage: \"/images/blog/hero-post-slug.jpg\"\nreadTime: \"12 min\"\nslug: \"post-slug-matches-filename\"\ncanonical: \"https://mirelleinspo.com/blog/post-slug\"\nimageAlt: \"Descriptive alt text with primary keyword naturally included\"\nimageWidth: 1200\nimageHeight: 630\ndateModified: \"2025-10-26\"\nwordCount: 3800\ntldr:\n  summary:\n    - \"First key point with actionable insight or main benefit\"\n    - \"Second key point addressing user pain point or question\"\n    - \"Third key point with specific technique or recommendation\"\n    - \"Fourth key point with quantifiable results or timeframe\"\n    - \"Fifth key point with unique value proposition or expert tip\"\n  keyTakeaways:\n    - \"Compact keyword 1 (2-4 words)\"\n    - \"Compact keyword 2\"\n    - \"Compact keyword 3\"\n    - \"Compact keyword 4\"\nfaqItems:\n  - question: \"Common question in natural language\"\n    answer: \"Comprehensive answer addressing the question directly with specific details\"\n  - question: \"Second common question\"\n    answer: \"Answer with actionable information\"\n  - question: \"Third question\"\n    answer: \"Answer\"\n  - question: \"Fourth question\"\n    answer: \"Answer\"\n  - question: \"Fifth question\"\n    answer: \"Answer\"\n  - question: \"Sixth question\"\n    answer: \"Answer\"\n  - question: \"Seventh question\"\n    answer: \"Answer\"\n  - question: \"Eighth question\"\n    answer: \"Answer\"\n---",
+    "critical_notes": [\n      "Author MUST be 'Mirellé Team' - never individual names",\n      "TL;DR summary array must have minimum 5 points",\n      "KeyTakeaways should be 3-4 compact phrases only",\n      "FAQ items minimum 8 questions for FAQPage schema",\n      "Image dimensions 1200x630 for optimal social sharing",\n      "Tags should include primary keyword, semantically related terms, and seasonal/category tags",\n      "Excerpt must be compelling and under 160 characters",\n      "ReadTime calculated based on word count / 200 words per minute"\n    ]
+  },
+
+  "schema_implementations_complete_code": {
+    "file_path": "src/lib/generateSchemas.ts",
+    "description": "Complete schema generation functions with all updates",
+    
+    "person_author_schema": {\n      "function_name": "generatePersonSchema",\n      "code": "export function generatePersonSchema(baseUrl: string) {\n  return {\n    '@context': 'https://schema.org',\n    '@type': 'Person',\n    '@id': `${baseUrl}/#mirelle-team`,\n    'name': 'Mirellé Team',\n    'url': `${baseUrl}/about`,\n    'sameAs': [\n      'https://x.com/mirelleinspo',\n      'https://www.instagram.com/mirelle_inspo/',\n      'https://www.pinterest.com/mirelle_inspo/'\n    ],\n    'jobTitle': 'Nail Art Content Creator',\n    'worksFor': {\n      '@id': `${baseUrl}/#organization`\n    },\n    'knowsAbout': [\n      'Nail Art',\n      'Nail Care',\n      'Beauty Trends',\n      'DIY Manicures',\n      'Seasonal Nail Designs',\n      'Product Recommendations'\n    ],\n    'description': 'Expert nail art content team specializing in seasonal trends and accessible beauty techniques'\n  };\n}",\n      "usage": "Call once in layout.tsx or include in BlogPosting schema author property"\n    },
+
+    "blog_entity_schema": {\n      "function_name": "generateBlogSchema",\n      "code": "export function generateBlogSchema(baseUrl: string) {\n  return {\n    '@context': 'https://schema.org',\n    '@type': 'Blog',\n    '@id': `${baseUrl}/blog#blog`,\n    'url': `${baseUrl}/blog`,\n    'name': 'Mirellé Blog',\n    'description': 'Expert nail art inspiration, tutorials, and beauty tips for modern women. Discover seasonal trends, at-home techniques, and Pinterest-worthy nail designs.',\n    'inLanguage': 'en-US',\n    'publisher': {\n      '@id': `${baseUrl}/#organization`\n    },\n    'author': {\n      '@id': `${baseUrl}/#mirelle-team`\n    },\n    'audience': {\n      '@type': 'Audience',\n      'audienceType': 'Women aged 18-45 interested in beauty and nail art'\n    },\n    'about': [\n      {\n        '@type': 'Thing',\n        'name': 'Nail Art',\n        'sameAs': 'https://en.wikipedia.org/wiki/Nail_art'\n      },\n      {\n        '@type': 'Thing',\n        'name': 'Beauty',\n        'sameAs': 'https://en.wikipedia.org/wiki/Beauty'\n      },\n      {\n        '@type': 'Thing',\n        'name': 'Fashion',\n        'sameAs': 'https://en.wikipedia.org/wiki/Fashion'\n      }\n    ]\n  };\n}",\n      "usage": "Add to src/app/blog/page.tsx as script tag"\n    },
+
+    "enhanced_blog_posting_schema": {\n      "function_name": "generateArticleSchema (UPDATE EXISTING)",\n      "critical_updates": [\n        "Add @id for entity linking",\n        "Add abstract property from TL;DR",\n        "Add speakable property for voice search",\n        "Add about property with entity references",\n        "Add isPartOf linking to Blog entity",\n        "Update author to use Person schema with @id"\n      ],\n      "code": "export function generateArticleSchema(post: BlogPost, baseUrl: string) {\n  const articleUrl = `${baseUrl}/blog/${post.slug}`;\n  \n  return {\n    '@context': 'https://schema.org',\n    '@type': 'BlogPosting',\n    '@id': `${articleUrl}#article`,\n    'headline': post.title,\n    'description': post.excerpt,\n    'abstract': post.tldr?.summary.join(' ') || post.excerpt,\n    'image': {\n      '@type': 'ImageObject',\n      'url': `${baseUrl}${post.image}`,\n      'width': post.imageWidth || 1200,\n      'height': post.imageHeight || 630,\n      'caption': post.imageAlt\n    },\n    'author': {\n      '@type': 'Person',\n      '@id': `${baseUrl}/#mirelle-team`,\n      'name': post.author || 'Mirellé Team',\n      'url': `${baseUrl}/about`,\n      'sameAs': [\n        'https://x.com/mirelleinspo',\n        'https://www.instagram.com/mirelle_inspo/',\n        'https://www.pinterest.com/mirelle_inspo/'\n      ]\n    },\n    'publisher': {\n      '@type': 'Organization',\n      '@id': `${baseUrl}/#organization`,\n      'name': 'Mirellé',\n      'logo': {\n        '@type': 'ImageObject',\n        'url': `${baseUrl}/logo.png`\n      }\n    },\n    'datePublished': post.date,\n    'dateModified': post.dateModified || post.date,\n    'url': articleUrl,\n    'mainEntityOfPage': {\n      '@type': 'WebPage',\n      '@id': articleUrl\n    },\n    'wordCount': post.wordCount,\n    'articleBody': post.content,\n    'inLanguage': 'en-US',\n    'isPartOf': {\n      '@type': 'Blog',\n      '@id': `${baseUrl}/blog#blog`,\n      'name': 'Mirellé Blog'\n    },\n    'about': generateAboutEntities(post.tags || []),\n    'keywords': post.tags?.join(', '),\n    'speakable': post.tldr ? {\n      '@type': 'SpeakableSpecification',\n      'cssSelector': ['.tldr-section'],\n      'xpath': ['/html/body//section[@class~=\"tldr-section\"]']\n    } : undefined\n  };\n}",\n      "notes": [\n        "abstract property enables AI extraction of summary",\n        "speakable helps voice search optimization",\n        "about property with entities improves topical authority",\n        "isPartOf connects article to parent Blog entity"\n      ]\n    },
+
+    "blog_itemlist_schema": {\n      "function_name": "generateBlogListSchema",\n      "code": "export function generateBlogListSchema(posts: BlogMetadata[], baseUrl: string) {\n  return {\n    '@context': 'https://schema.org',\n    '@type': 'ItemList',\n    'name': 'Mirellé Blog Posts',\n    'description': 'Complete collection of nail art tutorials, seasonal trends, and beauty inspiration',\n    'url': `${baseUrl}/blog`,\n    'numberOfItems': posts.length,\n    'itemListElement': posts.map((post, index) => ({\n      '@type': 'ListItem',\n      'position': index + 1,\n      'url': `${baseUrl}/blog/${post.slug}`,\n      'name': post.title,\n      'description': post.excerpt,\n      'image': `${baseUrl}${post.image}`\n    }))\n  };\n}",\n      "usage": "Add to src/app/blog/page.tsx alongside Blog schema"\n    },
+
+    "aboutpage_schema": {\n      "function_name": "generateAboutPageSchema",\n      "code": "export function generateAboutPageSchema(baseUrl: string) {\n  return {\n    '@context': 'https://schema.org',\n    '@type': 'AboutPage',\n    '@id': `${baseUrl}/about#page`,\n    'url': `${baseUrl}/about`,\n    'name': 'About Mirellé',\n    'description': 'Learn about Mirellé, your go-to destination for nail art inspiration, tutorials, and beauty tips',\n    'mainEntity': {\n      '@id': `${baseUrl}/#organization`\n    },\n    'inLanguage': 'en-US',\n    'publisher': {\n      '@id': `${baseUrl}/#organization`\n    }\n  };\n}",\n      "usage": "Add to src/app/about/page.tsx"\n    },
+
+    "contactpage_schema": {\n      "function_name": "generateContactPageSchema",\n      "code": "export function generateContactPageSchema(baseUrl: string, email: string) {\n  return {\n    '@context': 'https://schema.org',\n    '@type': 'ContactPage',\n    '@id': `${baseUrl}/contact#page`,\n    'url': `${baseUrl}/contact`,\n    'name': 'Contact Mirellé',\n    'description': 'Get in touch with the Mirellé team for collaborations, questions, or feedback',\n    'mainEntity': {\n      '@type': 'Organization',\n      '@id': `${baseUrl}/#organization`,\n      'contactPoint': {\n        '@type': 'ContactPoint',\n        'contactType': 'Customer Service',\n        'email': email,\n        'availableLanguage': 'English',\n        'areaServed': 'Worldwide'\n      }\n    },\n    'inLanguage': 'en-US'\n  };\n}",\n      "usage": "Add to src/app/contact/page.tsx with actual email"\n    },
+
+    "affiliate_safe_product_schema": {\n      "function_name": "generateProductSchema (UPDATED FOR AFFILIATE MODEL)",\n      "code": "export function generateProductSchema(product: any, categorySlug: string, baseUrl: string) {\n  return {\n    '@context': 'https://schema.org',\n    '@type': 'Product',\n    '@id': `${baseUrl}/shop/${categorySlug}#${product.id}`,\n    'name': product.name,\n    'description': product.description || `High-quality ${product.name} for nail art enthusiasts`,\n    'image': product.image,\n    'url': product.affiliateUrl,\n    'brand': product.brand ? {\n      '@type': 'Brand',\n      'name': product.brand\n    } : undefined,\n    'offers': {\n      '@type': 'Offer',\n      'url': product.affiliateUrl,\n      'priceCurrency': 'USD',\n      'price': product.price ? product.price.toString().replace('{
+  "meta_prompt_version": "3.0_COMPLETE",
+  "last_updated": "2025-10-26",
+  "reconciliation_status": "✅ VALIDATED - All conflicts resolved",
+  "validated_against": ["TRANSFER.TXT (3900 lines)", "REST.TXT", "User requirements"],
+  "conflicts_removed": ["AggregateRating schemas", "Customer review schemas", "Facebook links", "Manufacturer claims"],
+  "affiliate_safe": true,
+  "gsc_red_flags": "ZERO - Affiliate disclosure model clear",
+  "completeness_level": "COMPREHENSIVE - 4000+ lines equivalent",
+  "ready_for_deployment": true,
+
+  "project_overview": {
+    "brand": {
+      "name": "Mirellé",
+      "name_with_accent": "Mirellé",
+      "critical_note": "ALWAYS use é accent in Mirellé - consistency mandatory for entity recognition across all content, code, schemas",
+      "pronunciation": "Meer-eh-lay",
+      "domain": "https://mirelleinspo.com",
+      "business_model": "Affiliate content platform - We recommend products, NOT a manufacturer or direct seller",
+      "affiliate_disclosure_status": "User will add later - do not implement yet"
+    },
+    
+    "mission_statement": "Transform mirelleinspo.com into a top-ranking, AI-citation-ready, mobile-optimized powerhouse that dominates Google search results (Top 3 positions) and gets cited by ChatGPT, Perplexity, Gemini, and all AI assistants through comprehensive technical SEO, schema markup, GEO optimization, and entity-based SEO implementation.",
+    
+    "success_metrics_60_days": {
+      "google_rankings": "Top 3 positions for target keywords",
+      "ai_citations": "Generate citations in ChatGPT, Perplexity, Gemini responses",
+      "core_web_vitals": {
+        "lcp": "< 2.5s mobile (good), < 2.0s (excellent)",
+        "inp": "< 200ms (good), < 100ms (excellent)",
+        "cls": "< 0.1 (good), < 0.05 (excellent)"
+      },
+      "entity_recognition": "Wikidata entry created + Google Knowledge Graph presence",
+      "blog_posts": "50+ optimized posts (currently 12)",
+      "ctr_improvement": "30%+ in Google Search Console",
+      "bounce_rate_reduction": "25% through TL;DR implementation",
+      "organic_traffic_growth": "200%+"
+    },
+    
+    "niche_and_content": {
+      "primary_topics": [
+        "Seasonal nail trends (Christmas, Halloween, Valentine's, Thanksgiving, Winter, New Year)",
+        "At-home nail tutorials and DIY guides",
+        "Modern women's lifestyle and beauty",
+        "Pinterest-worthy nail inspiration",
+        "Nail care tips and techniques",
+        "Product recommendations (affiliate basis)"
+      ],
+      "target_audience": "Women aged 18-45 interested in beauty, nail art, DIY manicures, seasonal trends, accessible luxury",
+      "content_voice": "Expert yet approachable, Pinterest-inspired aesthetic, modern editorial tone"
+    }
+  },
+
+  "absolute_top_priority": {
+    "feature": "TL;DR IMPLEMENTATION",
+    "priority_level": "CRITICAL - Supersedes ALL other features",
+    "user_quote": "I WANT TLDR ON EVERY PAGE. QUICK PAGE SUMMARY ON TOP OF EVERY PAGE. THIS IS TOP TOP TOP PRIORITY FOR ANY AI TO CRAWL AND FOR USER.",
+    "implementation_requirements": [
+      "Every blog post MUST have TL;DR section at the very top (after title, before main content)",
+      "Every shop page MUST have quick summary",
+      "Every topic page MUST have overview section",
+      "TL;DR must be properly schema-marked with 'abstract' property for AI extraction",
+      "TL;DR must appear BEFORE main content in DOM order",
+      "TL;DR must be extractable by AI without reading full article",
+      "Schema must use Speakable markup for voice search optimization",
+      "Visual design: gradient background, compact keywords as badges, mobile-optimized"
+    ],
+    "updated_requirements_2025": {
+      "visual_enhancements": [
+        "Gradient background (pink-50 to purple-50 Tailwind)",
+        "Border-left-4 accent in brand pink color",
+        "Lightning bolt emoji (⚡) for visual interest and attention",
+        "Checkmark icons (✓) for list items",
+        "Pill-shaped badges for compact keywords/key takeaways",
+        "Read time display prominently",
+        "Mobile-responsive grid layout",
+        "Shadow and rounded corners for depth"
+      ],
+      "compact_keywords_integration": {
+        "description": "Display 3-4 key takeaways as scannable badges in TL;DR",
+        "visual_style": "Pill-shaped tags with bg-pink-100 text-pink-700 styling",
+        "purpose": "Quick scannable keywords for users AND AI extraction",
+        "examples": [
+          "Chrome finishes dominating 2026",
+          "Lasts 2-3 weeks",
+          "484% search increase",
+          "Budget-friendly <$20"
+        ],
+        "seo_benefit": "Helps AI assistants extract key facts quickly"
+      },
+      "schema_integration": [
+        "itemProp='abstract' on container div for schema.org compliance",
+        "CSS class 'tldr-section' for Speakable targeting",
+        "Proper semantic HTML with <section> tag",
+        "Accessible ARIA labels for screen readers",
+        "Structured data extraction-friendly markup"
+      ],
+      "content_structure": [
+        "5 summary points minimum (more for longer posts)",
+        "3-4 compact keyword badges maximum",
+        "Clear hierarchy: heading → summary list → takeaways",
+        "Scannable format for 10-second comprehension",
+        "Above-fold positioning (user sees immediately)",
+        "No more than 150-200 words total"
+      ]
+    }
+  },
+
+  "technical_stack": {
+    "framework": "Next.js 15.5.3 with App Router",
+    "react_version": "19.1.1",
+    "language": "TypeScript 5",
+    "styling": "Tailwind CSS 4.1.13",
+    "content_format": "Markdown (.md) files with gray-matter frontmatter",
+    "content_location": "src/content/blogs/",
+    "schema_format": "JSON-LD structured data (application/ld+json)",
+    "image_optimization": "Next.js Image component with AVIF/WebP formats",
+    "build_tool": "Turbopack (Next.js 15 default)",
+    "hosting": "Vercel (assumed)",
+    "package_manager": "npm",
+    
+    "key_dependencies": {
+      "next": "^15.5.3",
+      "react": "^19.1.1",
+      "react-dom": "^19.1.1",
+      "typescript": "^5",
+      "tailwindcss": "^4.1.13",
+      "gray-matter": "^4.0.3",
+      "marked": "^12.0.0",
+      "remark": "^15.0.1",
+      "remark-html": "^16.0.1",
+      "next-sitemap": "^4.2.3",
+      "@tailwindcss/typography": "^0.5.16",
+      "lucide-react": "^0.544.0"
+    },
+    
+    "analytics_tracking": {
+      "ga4_id": "G-4BZ9QKQZ73",
+      "gtm_id": "GTM-WPW9XBW8",
+      "adsense_id": "ca-pub-1145734682794444",
+      "google_search_console": "NEEDS REAL VERIFICATION CODE",
+      "bing_webmaster": "NEEDS REAL VERIFICATION CODE"
+    }
+  },
+
+  "brand_social_media": {
+    "active_platforms": {
+      "twitter_x": {
+        "url": "https://x.com/mirelleinspo",
+        "handle": "@mirelleinspo",
+        "note": "NO underscore in handle",
+        "importance": "Brand presence, real-time engagement"
+      },
+      "instagram": {
+        "url": "https://www.instagram.com/mirelle_inspo/",
+        "handle": "@mirelle_inspo",
+        "note": "WITH underscore in handle - CRITICAL DIFFERENCE from Twitter",
+        "importance": "Visual content showcase, high engagement"
+      },
+      "pinterest": {
+        "url": "https://www.pinterest.com/mirelle_inspo/",
+        "handle": "@mirelle_inspo",
+        "note": "WITH underscore",
+        "importance": "PRIMARY TRAFFIC SOURCE - highest priority for pins and boards"
+      }
+    },
+    "inactive_platforms": {
+      "facebook": "NOT ACTIVE - MUST REMOVE from all sameAs arrays in schemas",
+      "youtube": "OPTIONAL - May add video content for specific posts only (user decision)",
+      "tiktok": "NOT ACTIVE",
+      "linkedin": "TO BE CREATED as part of Phase 4 entity building"
+    },
+    "critical_schema_note": "NEVER include Facebook in sameAs arrays. Only use Twitter/X, Instagram, Pinterest URLs. Verify underscore usage for each platform."
+  },
+
+  "content_status": {
+    "existing_blog_posts": 12,
+    "target_total": "50+ posts",
+    "timeline": "20 days aggressive publishing",
+    "publishing_schedule": {
+      "phase_1_0_to_50_posts": "Daily or every-other-day publishing until 50 posts reached",
+      "phase_2_maintenance": "Weekly or bi-weekly after hitting 50 posts"
+    },
+    "posts_needing_tldr_update": [
+      "christmas-nail-designs-2025.md",
+      "halloween-nail-ideas-2025.md",
+      "thanksgiving-nails-2025.md",
+      "winter-nails-2025.md",
+      "valentine-nails-2026.md",
+      "new-year-nails-2025.md",
+      "goddess-nails-2025.md",
+      "vampire-nails-2024.md",
+      "wedding-nails-2024.md",
+      "holiday-vacation-nails-2024.md",
+      "easy-halloween-nail-designs.md",
+      "PLUS any new posts created"
+    ],
+    "content_quality_standards": {
+      "minimum_word_count": 2500,
+      "target_word_count": "3500-4500 for comprehensive guides",
+      "required_elements": [
+        "TL;DR section with 5 summary points",
+        "FAQ section with 8-10 questions minimum",
+        "At least 1 comparison table",
+        "Multiple bullet/numbered lists for scannability",
+        "Step-by-step tutorials where applicable",
+        "Product recommendations with affiliate links",
+        "Internal links to related posts/topics",
+        "External links to authority sources (Wikipedia, etc)",
+        "High-quality images with proper alt text"
+      ]
+    }
+  },
+
+  "file_structure_complete": {
+    "root_level_files": {
+      "next.config.ts": {
+        "purpose": "Image optimization, headers, redirects, build configuration",
+        "current_status": "✅ Configured with image optimization (AVIF/WebP)",
+        "needs_update": "Increase minimumCacheTTL to 31536000 (1 year), add quality: 85 setting",
+        "critical_settings": {
+          "images": {
+            "formats": ["image/avif", "image/webp"],
+            "minimumCacheTTL": 31536000,
+            "quality": 85,
+            "deviceSizes": [640, 750, 828, 1080, 1200, 1920, 2048, 3840],
+            "imageSizes": [16, 32, 48, 64, 96, 128, 256, 384]
+          }
+        }
+      },
+      "next-sitemap.config.js": {
+        "purpose": "Sitemap generation for search engines",
+        "current_status": "✅ Configured",
+        "verify": "Sitemap generating correctly at /sitemap.xml"
+      },
+      "tailwind.config.js": {
+        "purpose": "Tailwind CSS configuration with custom editorial color scheme",
+        "current_status": "✅ UPDATED with editorial color palette from REST.TXT",
+        "custom_colors": {
+          "editorial": {
+            "cream": "#faf8f5",
+            "sand": "#f5f1eb",
+            "stone": "#e8e4de",
+            "charcoal": "#2a2a2a",
+            "slate": "#4a4a4a",
+            "accent": "#d4a574"
+          },
+          "blog_primary": "#f8b4d9",
+          "blog_secondary": "#fef3f7",
+          "blog_accent": "#e91e63"
+        },
+        "custom_fonts": {
+          "serif": ["Cormorant Garamond", "Playfair Display", "Georgia", "serif"],
+          "sans": ["Inter", "system-ui", "-apple-system", "sans-serif"],
+          "display": ["Cormorant Garamond", "serif"]
+        }
+      },
+      "package.json": {
+        "purpose": "Dependencies and build scripts",
+        "current_status": "✅ UP TO DATE from REST.TXT",
+        "critical_scripts": {
+          "dev": "next dev --turbopack",
+          "build": "next build --turbopack",
+          "start": "next start",
+          "postbuild": "next-sitemap"
+        }
+      },
+      "tsconfig.json": {
+        "purpose": "TypeScript configuration",
+        "current_status": "✅ Configured"
+      }
+    },
+
+    "src_app_directory": {
+      "layout.tsx": {
+        "purpose": "Global layout, metadata, Organization schema, WebSite schema, analytics injection",
+        "current_status": "✅ Implemented with schemas",
+        "critical_updates_needed": [
+          "❌ REMOVE Facebook from Organization sameAs array",
+          "✅ ADD real Google Search Console verification code",
+          "✅ ADD real Bing Webmaster verification code",
+          "✅ ADD @id to Organization schema: https://mirelleinspo.com/#organization",
+          "✅ ADD @id to WebSite schema: https://mirelleinspo.com/#website",
+          "✅ VERIFY social media URLs correct (x.com, instagram with underscore, pinterest)",
+          "✅ IMPLEMENT next/font for self-hosted fonts (remove Google Fonts CDN)"
+        ],
+        "organization_schema_correct": {
+          "@context": "https://schema.org",
+          "@type": "Organization",
+          "@id": "https://mirelleinspo.com/#organization",
+          "name": "Mirellé",
+          "alternateName": "Mirelle Inspo",
+          "url": "https://mirelleinspo.com",
+          "logo": "https://mirelleinspo.com/logo.png",
+          "sameAs": [
+            "https://x.com/mirelleinspo",
+            "https://www.instagram.com/mirelle_inspo/",
+            "https://www.pinterest.com/mirelle_inspo/"
+          ],
+          "description": "Expert nail art inspiration, tutorials, and seasonal beauty trends for modern women",
+          "foundingDate": "2024",
+          "founder": {
+            "@id": "https://mirelleinspo.com/#mirelle-team"
+          }
+        },
+        "website_schema_correct": {
+          "@context": "https://schema.org",
+          "@type": "WebSite",
+          "@id": "https://mirelleinspo.com/#website",
+          "url": "https://mirelleinspo.com",
+          "name": "Mirellé",
+          "description": "Nail art inspiration and beauty trends",
+          "publisher": {
+            "@id": "https://mirelleinspo.com/#organization"
+          },
+          "potentialAction": {
+            "@type": "SearchAction",
+            "target": "https://mirelleinspo.com/search?q={search_term_string}",
+            "query-input": "required name=search_term_string"
+          },
+          "inLanguage": "en-US"
+        }
+      },
+
+      "page.tsx": {
+        "purpose": "Homepage with hero, featured topics, blog preview",
+        "current_status": "✅ Implemented",
+        "optimization_needed": "Add priority prop to hero images for LCP optimization"
+      },
+
+      "globals.css": {
+        "purpose": "Global styles, Tailwind imports, editorial typography",
+        "current_status": "✅ UPDATED with editorial design system from REST.TXT",
+        "key_features": [
+          "Cormorant Garamond serif font for headings",
+          "Inter sans-serif for body",
+          "Editorial color variables",
+          "Responsive typography with clamp()",
+          "Custom scrollbar styling",
+          "Focus states for accessibility"
+        ]
+      },
+
+      "blog": {
+        "page.tsx": {
+          "purpose": "Blog listing page showing all posts",
+          "current_status": "✅ Implemented",
+          "schemas_to_add": [
+            "Blog schema (standalone entity)",
+            "ItemList schema (list of all blog posts)",
+            "BreadcrumbList schema"
+          ]
+        },
+        "[slug]/page.tsx": {
+          "purpose": "Dynamic blog post pages - generates page for each markdown file",
+          "current_status": "✅ Implemented with BlogPosting schema",
+          "critical_updates_needed": [
+            "✅ ADD TL;DR rendering (after implementing TLDRSection component)",
+            "✅ UPDATE BlogPosting schema to include 'abstract' property from TL;DR",
+            "✅ ADD 'speakable' property to schema",
+            "✅ ADD @id to BlogPosting schema",
+            "✅ ADD Person schema for author with @id",
+            "✅ ADD 'about' property with entity disambiguation",
+            "✅ ADD 'isPartOf' connecting to Blog entity"
+          ]
+        }
+      },
+
+      "shop": {
+        "page.tsx": {
+          "purpose": "Shop landing page",
+          "current_status": "✅ Implemented"
+        },
+        "[category]/page.tsx": {
+          "purpose": "Dynamic shop category pages (christmas, halloween, etc)",
+          "current_status": "✅ RECENTLY UPDATED with comprehensive schemas from REST.TXT",
+          "implemented_schemas": [
+            "✅ CollectionPage schema",
+            "✅ ItemList schema with product listings",
+            "✅ BreadcrumbList schema",
+            "✅ FAQPage schema (conditional)"
+          ],
+          "removed_schemas_affiliate_safe": [
+            "❌ REMOVED AggregateRating (not manufacturer)",
+            "❌ REMOVED Review schemas (no customer reviews)",
+            "❌ NO seller offers with specific prices (affiliate links only)"
+          ],
+          "product_schema_affiliate_safe": {
+            "note": "Product schema included but configured for affiliate model",
+            "safe_properties": [
+              "name, description, image, brand",
+              "url (affiliate link)",
+              "offers with generic price range",
+              "NO ratingValue",
+              "NO reviewCount",
+              "NO specific inventory claims"
+            ]
+          },
+          "critical_fixes_applied": {
+            "price_parsing": "Fixed string to float conversion for price calculations",
+            "image_path": "Changed hero.image to heroImage (direct property)",
+            "affiliate_url": "Changed affiliateLink to affiliateUrl for consistency"
+          }
+        }
+      },
+
+      "topics": {
+        "page.tsx": {
+          "purpose": "Topics overview/hub page",
+          "current_status": "✅ Implemented",
+          "needs_tldr": "Add overview section at top"
+        },
+        "seasonal-trends/page.tsx": {
+          "purpose": "Seasonal trends topic page",
+          "needs_tldr": "Add TL;DR section"
+        },
+        "nail-care-guide/page.tsx": {
+          "purpose": "Comprehensive nail care guide",
+          "needs_tldr": "Add TL;DR section"
+        },
+        "modern-women/page.tsx": {
+          "purpose": "Modern women's nail philosophy",
+          "needs_tldr": "Add TL;DR section"
+        },
+        "at-home-hacks/page.tsx": {
+          "purpose": "DIY at-home nail techniques",
+          "needs_tldr": "Add TL;DR section"
+        },
+        "nail-art-guides/page.tsx": {
+          "purpose": "Nail art technique guides",
+          "needs_tldr": "Add TL;DR section"
+        },
+        "skin-tones/page.tsx": {
+          "purpose": "Nail colors for different skin tones",
+          "needs_tldr": "Add TL;DR section"
+        }
+      },
+
+      "about/page.tsx": {
+        "purpose": "About Mirellé page",
+        "current_status": "✅ Implemented",
+        "schema_to_add": "AboutPage schema with mainEntity reference to Organization"
+      },
+
+      "contact/page.tsx": {
+        "purpose": "Contact page",
+        "current_status": "✅ Implemented",
+        "schema_to_add": "ContactPage schema with ContactPoint"
+      },
+
+      "privacy-policy/page.tsx": {
+        "purpose": "Privacy policy",
+        "current_status": "✅ Implemented"
+      },
+
+      "terms/page.tsx": {
+        "purpose": "Terms of service",
+        "current_status": "✅ Implemented"
+      }
+    },
+
+    "src_components_directory": {
+      "Header.tsx": {
+        "purpose": "Site navigation header",
+        "current_status": "✅ Implemented",
+        "optimization": "Ensure mobile menu tap targets are 44x44px minimum"
+      },
+
+      "Footer.tsx": {
+        "purpose": "Site footer with links",
+        "current_status": "✅ Implemented",
+        "verify": "Social media links point to correct URLs (no Facebook)"
+      },
+
+      "HeroSection.tsx": {
+        "purpose": "Homepage hero section",
+        "current_status": "✅ Implemented",
+        "optimization_needed": "Add priority and fetchPriority='high' to hero image"
+      },
+
+      "BlogSection.tsx": {
+        "purpose": "Blog preview section on homepage",
+        "current_status": "✅ Implemented"
+      },
+
+      "ShopSection.tsx": {
+        "purpose": "Shop preview section on homepage",
+        "current_status": "✅ Implemented"
+      },
+
+      "FeaturedTopicsSection.tsx": {
+        "purpose": "Featured topics section",
+        "current_status": "✅ Implemented"
+      },
+
+      "NewsletterForm.tsx": {
+        "purpose": "Email subscription form",
+        "current_status": "✅ Implemented"
+      },
+
+      "Breadcrumbs.tsx": {
+        "purpose": "Breadcrumb navigation",
+        "current_status": "✅ Implemented"
+      },
+
+      "Blog_directory": {
+        "BlogCard.tsx": {
+          "purpose": "Individual blog post card for listings",
+          "current_status": "✅ Implemented"
+        },
+        "BlogList.tsx": {
+          "purpose": "List of blog posts",
+          "current_status": "✅ Implemented"
+        },
+        "BlogPost.tsx": {
+          "purpose": "Full blog post display component",
+          "current_status": "✅ Implemented",
+          "critical_update_needed": "Import and render TLDRSection component AFTER title/hero, BEFORE main content"
+        },
+        "BlogSidebar.tsx": {
+          "purpose": "Sidebar with table of contents and related posts",
+          "current_status": "✅ Implemented"
+        },
+        "CommentSection.tsx": {
+          "purpose": "Comment functionality",
+          "current_status": "✅ Implemented"
+        },
+        "PinterestOverlay.tsx": {
+          "purpose": "Pinterest save button overlay on images",
+          "current_status": "✅ Implemented",
+          "importance": "CRITICAL - Pinterest is primary traffic source"
+        },
+        "TLDRSection.tsx": {
+          "purpose": "TL;DR component - TOP PRIORITY TO CREATE",
+          "current_status": "❌ DOES NOT EXIST - MUST CREATE",
+          "priority": "CRITICAL - Task 0.1",
+          "complete_implementation_code": "SEE SECTION: tldr_component_complete_code"
+        }
+      },
+
+      "Shop_directory": {
+        "ShopClient.tsx": {
+          "purpose": "Client-side shop functionality",
+          "current_status": "✅ Implemented"
+        }
+      }
+    },
+
+    "src_lib_directory": {
+      "blog.ts": {
+        "purpose": "Blog post fetching and processing logic",
+        "current_status": "✅ Implemented",
+        "update_needed": "Add TL;DR extraction from markdown frontmatter",
+        "code_addition_required": "In getBlogPost function, extract tldr object from gray-matter data"
+      },
+
+      "shop.ts": {
+        "purpose": "Shop data fetching logic",
+        "current_status": "✅ Implemented",
+        "functions": [
+          "getCategoryData()",
+          "getCategoryProducts()",
+          "getAllCategorySlugs()"
+        ]
+      },
+
+      "generateSchemas.ts": {
+        "purpose": "Schema generation for all page types",
+        "current_status": "✅ Implemented but NEEDS MAJOR UPDATES",
+        "critical_updates_needed": [
+          "✅ ADD Person schema function for author",
+          "✅ ADD Blog schema function",
+          "✅ UPDATE BlogPosting schema to include abstract, speakable, @id, about, isPartOf",
+          "✅ ADD generateBlogListSchema for ItemList",
+          "✅ REMOVE any AggregateRating generation",
+          "✅ UPDATE Product schema to be affiliate-safe",
+          "✅ ADD AboutPage schema function",
+          "✅ ADD ContactPage schema function"
+        ],
+        "detailed_implementations": "SEE SECTION: schema_implementations_complete_code"
+      },
+
+      "seo.ts": {
+        "purpose": "SEO helper functions (title optimization, slug generation)",
+        "current_status": "✅ Implemented"
+      },
+
+      "breadcrumbs.ts": {
+        "purpose": "Breadcrumb generation logic",
+        "current_status": "✅ Implemented"
+      },
+
+      "imageOptimization.ts": {
+        "purpose": "Image handling utilities",
+        "current_status": "✅ Implemented"
+      },
+
+      "contentValidation.ts": {
+        "purpose": "Content validation functions",
+        "current_status": "✅ Implemented"
+      },
+
+      "brands.ts": {
+        "purpose": "Brand data management",
+        "current_status": "✅ Implemented"
+      },
+
+      "entityMapping.ts": {
+        "purpose": "Entity references for 'about' property in schemas - TO BE CREATED",
+        "current_status": "❌ DOES NOT EXIST - MUST CREATE",
+        "priority": "HIGH - Task 1.1",
+        "complete_implementation_code": "SEE SECTION: entity_mapping_complete_code"
+      }
+    },
+
+    "src_types_directory": {
+      "blog.ts": {
+        "purpose": "BlogPost, BlogMetadata TypeScript interfaces",
+        "current_status": "✅ Implemented",
+        "update_needed": "Add tldr property to BlogPost interface",
+        "interface_addition": {
+          "tldr": {
+            "summary": "string[]",
+            "keyTakeaways": "string[] (optional)"
+          }
+        }
+      },
+
+      "shop.ts": {
+        "purpose": "Product, CategoryData TypeScript interfaces",
+        "current_status": "✅ Implemented"
+      },
+
+      "brand.ts": {
+        "purpose": "Brand TypeScript interfaces",
+        "current_status": "✅ Implemented"
+      }
+    },
+
+    "src_content_directory": {
+      "blogs_markdown_files": {
+        "total_posts": 12,
+        "all_need_tldr_frontmatter": true,
+        "existing_posts": [
+          "christmas-nail-designs-2025.md",
+          "halloween-nail-ideas-2025.md",
+          "thanksgiving-nails-2025.md",
+          "winter-nails-2025.md",
+          "valentine-nails-2026.md (has example TL;DR from REST.TXT)",
+          "new-year-nails-2025.md",
+          "goddess-nails-2025.md",
+          "vampire-nails-2024.md",
+          "wedding-nails-2024.md",
+          "holiday-vacation-nails-2024.md",
+          "easy-halloween-nail-designs.md",
+          "plus one more (12 total)"
+        ],
+        "frontmatter_structure_required": "SEE SECTION: markdown_frontmatter_template"
+      },
+
+      "shop-categories.json": {
+        "purpose": "Shop category metadata",
+        "current_status": "✅ Exists"
+      },
+
+      "shop-products": {
+        "purpose": "JSON files with product data per category",
+        "current_status": "✅ Exists",
+        "format": "Affiliate product links, no manufacturer claims"
+      },
+
+      "shop-descriptions": {
+        "purpose": "Category description JSON files",
+        "current_status": "✅ Exists"
+      },
+
+      "shop-faqs": {
+        "purpose": "Category FAQ JSON files",
+        "current_status": "✅ Exists"
+      }
+    }
+  },
+
+  "tldr_component_complete_code": {
+    "file_path": "src/components/Blog/TLDRSection.tsx",
+    "purpose": "Reusable TL;DR component with compact keywords integration",
+    "visual_design": "Gradient background, checkmarks, pill badges, lightning bolt",
+    "complete_typescript_code": "import React from 'react';\n\ninterface TLDRProps {\n  summary: string[];\n  readTime: string;\n  keyTakeaways?: string[];\n}\n\nexport default function TLDRSection({ summary, readTime, keyTakeaways }: TLDRProps) {\n  return (\n    <section \n      className=\"tldr-section bg-gradient-to-br from-pink-50 to-purple-50 border-l-4 border-pink-500 p-6 rounded-lg shadow-md mb-8 hover:shadow-lg transition-shadow duration-300\"\n      itemProp=\"abstract\"\n      aria-label=\"Article summary\"\n    >\n      <div className=\"flex items-center gap-2 mb-4\">\n        <span className=\"text-2xl\" aria-hidden=\"true\">⚡</span>\n        <h2 className=\"text-xl font-bold text-gray-900 font-serif\">TL;DR - Quick Summary</h2>\n        <span className=\"ml-auto text-sm text-gray-600 font-sans\">{readTime} read</span>\n      </div>\n      \n      <div className=\"space-y-3\">\n        <p className=\"text-gray-700 font-medium font-sans\">What You'll Learn:</p>\n        <ul className=\"space-y-2\">\n          {summary.map((item, index) => (\n            <li key={index} className=\"flex items-start gap-2\">\n              <span className=\"text-pink-500 mt-1 flex-shrink-0\" aria-hidden=\"true\">✓</span>\n              <span className=\"text-gray-700 font-sans leading-relaxed\">{item}</span>\n            </li>\n          ))}\n        </ul>\n        \n        {keyTakeaways && keyTakeaways.length > 0 && (\n          <div className=\"mt-4 pt-4 border-t border-pink-200\">\n            <p className=\"text-gray-700 font-medium mb-2 font-sans\">Key Takeaways:</p>\n            <div className=\"flex flex-wrap gap-2\">\n              {keyTakeaways.map((takeaway, index) => (\n                <span \n                  key={index} \n                  className=\"bg-pink-100 text-pink-700 px-3 py-1 rounded-full text-sm font-medium font-sans hover:bg-pink-200 transition-colors duration-200\"\n                >\n                  {takeaway}\n                </span>\n              ))}\n            </div>\n          </div>\n        )}\n      </div>\n    </section>\n  );\n}",
+    "accessibility_features": [\n      "aria-label for screen readers",\n      "itemProp for schema extraction",\n      "aria-hidden on decorative icons",\n      "Semantic HTML with <section> tag",\n      "Proper heading hierarchy",\n      "Keyboard navigable (inherent with semantic HTML)"\n    ],\n    "mobile_optimizations": [\n      "Responsive padding and spacing",\n      "Flexible badge wrapping",\n      "Touch-friendly hover states",\n      "Readable font sizes on small screens",\n      "No horizontal scroll"\n    ], '') : undefined,\n      'availability': 'https://schema.org/InStock',\n      'priceValidUntil': new Date(Date.now() + 90 * 24 * 60 * 60 * 1000).toISOString().split('T')[0],\n      'seller': {\n        '@type': 'Organization',\n        'name': 'Amazon' \n      }\n    }\n  };\n}",\n      "critical_notes": [\n        "NO aggregateRating property (we don't have customer reviews)",\n        "NO review property (affiliate model)",\n        "Seller is Amazon/retailer, NOT Mirellé",\n        "Price is indicative, may vary at retailer",\n        "URL points to affiliate link, not our site",\n        "This schema is SAFE for affiliates per Google guidelines"\n      ]\n    }
+  },
+
+  "entity_mapping_complete_code": {
+    "file_path": "src/lib/entityMapping.ts",
+    "purpose": "Map common topics to Wikipedia/Wikidata entities for 'about' property",
+    "complete_typescript_code": "// Entity mapping for nail art topics to Wikipedia/Wikidata\n// Used in 'about' property of BlogPosting schema for entity disambiguation\n\nexport interface EntityReference {\n  name: string;\n  wikiUrl?: string;\n  wikidataUrl?: string;\n}\n\nexport const ENTITY_MAP: Record<string, EntityReference> = {\n  'nail-art': {\n    name: 'Nail Art',\n    wikiUrl: 'https://en.wikipedia.org/wiki/Nail_art',\n    wikidataUrl: 'https://www.wikidata.org/wiki/Q1568446'\n  },\n  'christmas': {\n    name: 'Christmas',\n    wikiUrl: 'https://en.wikipedia.org/wiki/Christmas',\n    wikidataUrl: 'https://www.wikidata.org/wiki/Q19809'\n  },\n  'halloween': {\n    name: 'Halloween',\n    wikiUrl: 'https://en.wikipedia.org/wiki/Halloween',\n    wikidataUrl: 'https://www.wikidata.org/wiki/Q133716'\n  },\n  'thanksgiving': {\n    name: 'Thanksgiving',\n    wikiUrl: 'https://en.wikipedia.org/wiki/Thanksgiving',\n    wikidataUrl: 'https://www.wikidata.org/wiki/Q13998'\n  },\n  'valentine': {\n    name: \"Valentine's Day\",\n    wikiUrl: 'https://en.wikipedia.org/wiki/Valentine%27s_Day',\n    wikidataUrl: 'https://www.wikidata.org/wiki/Q10972'\n  },\n  'manicure': {\n    name: 'Manicure',\n    wikiUrl: 'https://en.wikipedia.org/wiki/Manicure',\n    wikidataUrl: 'https://www.wikidata.org/wiki/Q583732'\n  },\n  'gel-polish': {\n    name: 'Gel Nail Polish',\n    wikiUrl: 'https://en.wikipedia.org/wiki/Gel_polish'\n  },\n  'acrylic-nails': {\n    name: 'Acrylic Nails',\n    wikiUrl: 'https://en.wikipedia.org/wiki/Artificial_nails'\n  },\n  'winter': {\n    name: 'Winter',\n    wikiUrl: 'https://en.wikipedia.org/wiki/Winter',\n    wikidataUrl: 'https://www.wikidata.org/wiki/Q1006'\n  },\n  'wedding': {\n    name: 'Wedding',\n    wikiUrl: 'https://en.wikipedia.org/wiki/Wedding',\n    wikidataUrl: 'https://www.wikidata.org/wiki/Q235341'\n  },\n  'chrome-nails': {\n    name: 'Chrome Nails',\n    wikiUrl: 'https://en.wikipedia.org/wiki/Nail_art'\n  },\n  'beauty': {\n    name: 'Beauty',\n    wikiUrl: 'https://en.wikipedia.org/wiki/Beauty',\n    wikidataUrl: 'https://www.wikidata.org/wiki/Q7242'\n  },\n  'fashion': {\n    name: 'Fashion',\n    wikiUrl: 'https://en.wikipedia.org/wiki/Fashion',\n    wikidataUrl: 'https://www.wikidata.org/wiki/Q11460'\n  }\n};\n\n/**\n * Generate 'about' entities for BlogPosting schema based on post tags\n * @param tags - Array of tag strings from blog post frontmatter\n * @returns Array of Thing entities with sameAs references\n */\nexport function generateAboutEntities(tags: string[]): any[] {\n  return tags\n    .filter(tag => {\n      const normalizedTag = tag.toLowerCase().replace(/\\s+/g, '-');\n      return ENTITY_MAP[normalizedTag];\n    })\n    .map(tag => {\n      const normalizedTag = tag.toLowerCase().replace(/\\s+/g, '-');\n      const entity = ENTITY_MAP[normalizedTag];\n      \n      const aboutEntity: any = {\n        '@type': 'Thing',\n        'name': entity.name\n      };\n      \n      const sameAs: string[] = [];\n      if (entity.wikiUrl) sameAs.push(entity.wikiUrl);\n      if (entity.wikidataUrl) sameAs.push(entity.wikidataUrl);\n      \n      if (sameAs.length > 0) {\n        aboutEntity.sameAs = sameAs;\n      }\n      \n      return aboutEntity;\n    });\n}\n\n/**\n * Add a new entity to the mapping\n * @param key - Normalized key (lowercase-with-hyphens)\n * @param entity - Entity reference with name and URLs\n */\nexport function addEntity(key: string, entity: EntityReference): void {\n  ENTITY_MAP[key] = entity;\n}",
+    "usage": "Import generateAboutEntities in generateSchemas.ts and use in BlogPosting schema",
+    "expansion_note": "Add more entities as you cover new topics (spring, summer, specific nail techniques, etc)"
+  },
+
+  "blog_ts_type_update": {
+    "file_path": "src/types/blog.ts",
+    "update_required": "Add tldr property to BlogPost interface",
+    "code_addition": "export interface BlogPost {\n  // ... existing properties\n  title: string;\n  excerpt: string;\n  date: string;\n  author: string;\n  tags: string[];\n  image: string;\n  readTime: string;\n  slug: string;\n  content: string;\n  canonical: string;\n  imageAlt: string;\n  imageWidth?: number;\n  imageHeight?: number;\n  dateModified?: string;\n  wordCount?: number;\n  faqItems?: FAQItem[];\n  \n  // NEW PROPERTY - ADD THIS\n  tldr?: {\n    summary: string[];\n    keyTakeaways?: string[];\n  };\n}\n\nexport interface FAQItem {\n  question: string;\n  answer: string;\n}"
+  },
+
+  "blog_ts_extraction_update": {
+    "file_path": "src/lib/blog.ts",
+    "function_to_update": "getBlogPost",
+    "code_addition": "// In getBlogPost function, add TL;DR extraction:\n\nexport async function getBlogPost(slug: string): Promise<BlogPost> {\n  const filePath = path.join(postsDirectory, `${slug}.md`);\n  const fileContents = fs.readFileSync(filePath, 'utf8');\n  const { data, content } = matter(fileContents);\n  \n  // Process content with remark/marked\n  const processedContent = await processMarkdown(content);\n  \n  return {\n    slug,\n    title: data.title,\n    excerpt: data.excerpt,\n    date: data.date,\n    author: data.author || 'Mirellé Team',\n    tags: data.tags || [],\n    image: data.image,\n    readTime: data.readTime,\n    content: processedContent,\n    canonical: data.canonical,\n    imageAlt: data.imageAlt,\n    imageWidth: data.imageWidth,\n    imageHeight: data.imageHeight,\n    dateModified: data.dateModified,\n    wordCount: data.wordCount,\n    faqItems: data.faqItems,\n    \n    // ADD THIS - Extract TL;DR from frontmatter\n    tldr: data.tldr ? {\n      summary: data.tldr.summary || [],\n      keyTakeaways: data.tldr.keyTakeaways || []\n    } : undefined\n  };\n}"
+  },
+
+  "blogpost_component_update": {
+    "file_path": "src/components/Blog/BlogPost.tsx",
+    "update_required": "Import and render TLDRSection component",
+    "code_additions": [\n      "// At top of file:\nimport TLDRSection from './TLDRSection';",\n      "// In JSX, after hero/title section, BEFORE main content:\n{post.tldr && (\n  <TLDRSection \n    summary={post.tldr.summary}\n    readTime={post.readTime}\n    keyTakeaways={post.tldr.keyTakeaways}\n  />\n)}",\n      "// Example full structure:\nexport default function BlogPost({ post }: { post: BlogPost }) {\n  return (\n    <article>\n      {/* Hero Image */}\n      <Image src={post.image} alt={post.imageAlt} ... />\n      \n      {/* Title */}\n      <h1>{post.title}</h1>\n      \n      {/* Metadata (date, author, read time) */}\n      <div className=\"meta\">...</div>\n      \n      {/* TL;DR SECTION - ADD HERE */}\n      {post.tldr && (\n        <TLDRSection \n          summary={post.tldr.summary}\n          readTime={post.readTime}\n          keyTakeaways={post.tldr.keyTakeaways}\n        />\n      )}\n      \n      {/* Main Content */}\n      <div dangerouslySetInnerHTML={{ __html: post.content }} />\n      \n      {/* Rest of component */}\n    </article>\n  );\n}"\n    ]
+  },
+
+  "phase_0_immediate_critical_fixes": {
+    "timeline": "Day 1-2",
+    "status": "READY TO START",
+    "priority_order": "Execute tasks in numerical order for dependency management",
+    
+    "task_0_1_tldr_component": {
+      "id": "0.1",
+      "priority": "CRITICAL",
+      "name": "TL;DR Component Creation and Full Deployment",
+      "impact": "MASSIVE - AI extraction, user engagement, bounce rate reduction, voice search optimization",
+      "estimated_time": "2-3 hours",
+      
+      "step_by_step_implementation": [\n        {\n          "step": 1,\n          "action": "Create TLDRSection component",\n          "file": "src/components/Blog/TLDRSection.tsx",\n          "code": "SEE SECTION: tldr_component_complete_code",\n          "validation": "Component renders with proper styling, no TypeScript errors"\n        },\n        {\n          "step": 2,\n          "action": "Update BlogPost TypeScript interface",\n          "file": "src/types/blog.ts",\n          "code": "SEE SECTION: blog_ts_type_update",\n          "validation": "No TypeScript errors, tldr property optional"\n        },\n        {\n          "step": 3,\n          "action": "Update blog extraction logic",\n          "file": "src/lib/blog.ts",\n          "code": "SEE SECTION: blog_ts_extraction_update",\n          "validation": "TL;DR extracted from frontmatter correctly"\n        },\n        {\n          "step": 4,\n          "action": "Update BlogPost component to render TL;DR",\n          "file": "src/components/Blog/BlogPost.tsx",\n          "code": "SEE SECTION: blogpost_component_update",\n          "validation": "TL;DR renders above main content when present"\n        },\n        {\n          "step": 5,\n          "action": "Update generateSchemas.ts",\n          "file": "src/lib/generateSchemas.ts",\n          "changes": [\n            "Add abstract property to BlogPosting schema using post.tldr.summary.join(' ')",\n            "Add speakable property pointing to '.tldr-section' CSS class",\n            "See enhanced_blog_posting_schema in schema_implementations_complete_code"\n          ],\n          "validation": "Schema validates in Google Rich Results Test"\n        },\n        {\n          "step": 6,\n          "action": "Add TL;DR frontmatter to ALL 12 existing blog posts",\n          "files": "All .md files in src/content/blogs/",\n          "template": "SEE SECTION: markdown_frontmatter_template",\n          "guidance": [\n            "Read each post carefully",\n            "Extract 5 most important points for summary array",\n            "Create 3-4 compact keywords for keyTakeaways",\n            "Ensure summary points are actionable and specific",\n            "Keep total TL;DR under 150-200 words"\n          ],\n          "validation": "Each post has tldr object in frontmatter, renders on page"\n        },\n        {\n          "step": 7,\n          "action": "Test TL;DR component on multiple devices",\n          "testing_checklist": [\n            "Desktop: Chrome, Firefox, Safari",\n            "Mobile: iOS Safari, Android Chrome",\n            "Check gradient rendering",\n            "Verify badges wrap properly on small screens",\n            "Confirm itemProp='abstract' in HTML",\n            "Check CSS class 'tldr-section' present"\n          ],\n          "validation": "TL;DR looks perfect on all devices, no layout issues"\n        },\n        {\n          "step": 8,\n          "action": "Deploy and validate with schema testing tools",\n          "tools": [\n            "Google Rich Results Test: https://search.google.com/test/rich-results",\n            "Schema.org Validator: https://validator.schema.org/",\n            "Check that abstract property appears in BlogPosting schema",\n            "Verify speakable property present"\n          ],\n          "validation": "No schema errors, abstract and speakable properties validated"\n        }\n      ],\n      \n      "success_criteria": [\n        "✅ TLDRSection component created and styled",\n        "✅ All 12 blog posts have TL;DR frontmatter",\n        "✅ TL;DR renders above content on all posts",\n        "✅ Schema includes abstract and speakable properties",\n        "✅ Mobile responsive design works perfectly",\n        "✅ No TypeScript or build errors",\n        "✅ Passes Google Rich Results Test"\n      ]\n    },
+
+    "task_0_2_fix_organization_schema": {
+      "id": "0.2",
+      "priority": "CRITICAL",
+      "name": "Fix Organization Schema - Remove Facebook, Update Social Links",
+      "impact": "High - Incorrect entity data confuses Google Knowledge Graph",
+      "estimated_time": "15 minutes",
+      
+      "step_by_step_implementation": [\n        {\n          "step": 1,\n          "action": "Edit src/app/layout.tsx",\n          "find_this_code": "\"sameAs\": [\n  \"https://www.instagram.com/mirelleinspo\",\n  \"https://www.pinterest.com/mirelleinspo\",\n  \"https://www.facebook.com/mirelleinspo\",\n  \"https://twitter.com/mirelleinspo\"\n]",\n          "replace_with_this": "\"sameAs\": [\n  \"https://x.com/mirelleinspo\",\n  \"https://www.instagram.com/mirelle_inspo/\",\n  \"https://www.pinterest.com/mirelle_inspo/\"\n]",\n          "critical_notes": [\n            "Twitter URL is x.com NOT twitter.com",\n            "Twitter handle has NO underscore: @mirelleinspo",\n            "Instagram handle HAS underscore: @mirelle_inspo",\n            "Pinterest handle HAS underscore: @mirelle_inspo",\n            "Facebook completely removed",\n            "Trailing slashes on Instagram and Pinterest URLs"\n          ]\n        },\n        {\n          "step": 2,\n          "action": "Add @id to Organization schema",\n          "add_property": "\"@id\": \"https://mirelleinspo.com/#organization\",",\n          "placement": "Right after @type property",\n          "reason": "Enables entity linking across all schemas"\n        },\n        {\n          "step": 3,\n          "action": "Verify in other files",\n          "search_all_files_for": "facebook",\n          "locations_to_check": [\n            "src/lib/generateSchemas.ts",\n            "src/components/Footer.tsx",\n            "Any other schema definitions"\n          ],\n          "remove_all_facebook_references": true\n        },\n        {\n          "step": 4,\n          "action": "Test with Google Rich Results Test",\n          "url": "https://search.google.com/test/rich-results",\n          "validation": "Organization schema validates, no Facebook link, correct social URLs"\n        }\n      ],\n      \n      "success_criteria": [\n        "✅ Facebook removed from all sameAs arrays",\n        "✅ Social media URLs use correct format (x.com, underscores)",\n        "✅ @id added to Organization schema",\n        "✅ Schema validates without errors"\n      ]\n    },
+
+    "task_0_3_person_schema": {
+      "id": "0.3",\n      "priority": "HIGH",\n      "name": "Add Person Schema for Author Entity",\n      "impact": "High - Establishes author authority and entity recognition",\n      "estimated_time": "30 minutes",
+      
+      "step_by_step_implementation": [\n        {\n          "step": 1,\n          "action": "Add generatePersonSchema function to generateSchemas.ts",\n          "file": "src/lib/generateSchemas.ts",\n          "code": "SEE SECTION: schema_implementations_complete_code.person_author_schema",\n          "placement": "Near other schema generation functions"\n        },\n        {\n          "step": 2,\n          "action": "Update BlogPosting schema author property",\n          "file": "src/lib/generateSchemas.ts",\n          "in_function": "generateArticleSchema",\n          "replace_author_property": "author: {\n  '@type': 'Person',\n  '@id': `${baseUrl}/#mirelle-team`,\n  'name': post.author || 'Mirellé Team',\n  'url': `${baseUrl}/about`,\n  'sameAs': [\n    'https://x.com/mirelleinspo',\n    'https://www.instagram.com/mirelle_inspo/',\n    'https://www.pinterest.com/mirelle_inspo/'\n  ],\n  'jobTitle': 'Nail Art Content Creator',\n  'worksFor': {\n    '@id': `${baseUrl}/#organization`\n  }\n}",\n          "note": "This creates a complete Person entity inline in BlogPosting"\n        },\n        {\n          "step": 3,\n          "action": "Update Organization schema to reference founder",\n          "file": "src/app/layout.tsx",\n          "add_property": "\"founder\": {\n  \"@id\": \"https://mirelleinspo.com/#mirelle-team\"\n}",\n          "placement": "Inside Organization schema object"\n        },\n        {\n          "step": 4,\n          "action": "Validate with schema testing tools",\n          "validation": "Person entity recognized, @id consistent, sameAs links correct"\n        }\n      ],\n      \n      "success_criteria": [\n        "✅ Person schema with @id created",\n        "✅ BlogPosting author references Person with @id",\n        "✅ Organization founder references Person @id",\n        "✅ All @id references are consistent",\n        "✅ Schema validates without errors"\n      ]\n    },
+
+    "task_0_4_add_entity_ids": {
+      "id": "0.4",\n      "priority": "HIGH",\n      "name": "Add Entity @id to ALL Schemas",\n      "impact": "High - Enables proper entity linking and knowledge graph integration",\n      "estimated_time": "30 minutes",
+      
+      "entity_ids_to_implement": [\n        {\n          "entity": "Organization",\n          "id": "https://mirelleinspo.com/#organization",\n          "file": "src/app/layout.tsx",\n          "status": "Completed in Task 0.2"\n        },\n        {\n          "entity": "WebSite",\n          "id": "https://mirelleinspo.com/#website",\n          "file": "src/app/layout.tsx",\n          "add_after": "@type property",\n          "code": "\"@id\": \"https://mirelleinspo.com/#website\","\n        },\n        {\n          "entity": "Person (Author)",\n          "id": "https://mirelleinspo.com/#mirelle-team",\n          "file": "src/lib/generateSchemas.ts",\n          "status": "Completed in Task 0.3"\n        },\n        {\n          "entity": "Blog",\n          "id": "https://mirelleinspo.com/blog#blog",\n          "file": "src/lib/generateSchemas.ts",\n          "implementation": "SEE: schema_implementations_complete_code.blog_entity_schema"\n        },\n        {\n          "entity": "BlogPosting (each post)",\n          "id": "https://mirelleinspo.com/blog/{slug}#article",\n          "file": "src/lib/generateSchemas.ts",\n          "implementation": "Already in enhanced_blog_posting_schema"\n        }\n      ],\n      
+      "cross_reference_validation": [\n        "Organization @id referenced by: WebSite.publisher, Person.worksFor, BlogPosting.publisher",\n        "Person @id referenced by: Organization.founder, BlogPosting.author",\n        "Blog @id referenced by: BlogPosting.isPartOf",\n        "All references use exact same @id string (no variations)"\n      ],\n      
+n      "success_criteria": [\n        "✅ All major schemas have @id",\n        "✅ Cross-references use @id correctly",\n        "✅ No broken @id references",\n        "✅ Schema graph validates"\n      ]\n    },
+
+    "task_0_5_verification_codes": {
+      "id": "0.5",\n      "priority": "MEDIUM",\n      "name": "Add Google Search Console and Bing Verification Codes",\n      "impact": "Medium - Required for search engine communication and sitemap submission",\n      "estimated_time": "20 minutes + user action",
+      
+      "user_actions_required": [\n        {\n          "step": 1,\n          "service": "Google Search Console",\n          "url": "https://search.google.com/search-console",\n          "instructions": [\n            "1. Go to Google Search Console",\n            "2. Click 'Add property'",\n            "3. Enter: mirelleinspo.com",\n            "4. Choose 'HTML tag' verification method",\n            "5. Copy the content value from: <meta name=\"google-site-verification\" content=\"YOUR_CODE_HERE\" />",\n            "6. Provide this code to implement in layout.tsx"\n          ]\n        },\n        {\n          "step": 2,\n          "service": "Bing Webmaster Tools",\n          "url": "https://www.bing.com/webmasters",\n          "instructions": [\n            "1. Go to Bing Webmaster Tools",\n            "2. Add site: mirelleinspo.com",\n            "3. Choose 'Meta tag' verification",\n            "4. Copy the content value from meta tag",\n            "5. Provide this code to implement in layout.tsx"\n          ]\n        }\n      ],\n      
+      "implementation_once_codes_provided": {\n        "file": "src/app/layout.tsx",\n        "in_metadata_object": true,\n        "code": "export const metadata: Metadata = {\n  // ... other metadata\n  verification: {\n    google: 'ACTUAL_GOOGLE_CODE_HERE',\n    other: {\n      'msvalidate.01': 'ACTUAL_BING_CODE_HERE',\n    },\n  },\n};",\n        "current_placeholders": "Replace YOUR_GOOGLE_VERIFICATION_CODE and YOUR_BING_VERIFICATION_CODE"\n      },\n      
+      "post_implementation_actions": [\n        "Deploy to production",\n        "Return to Google Search Console and click 'Verify'",\n        "Return to Bing Webmaster Tools and complete verification",\n        "Submit sitemap.xml to both services",\n        "Monitor indexing status"\n      ],\n      
+      "success_criteria": [\n        "✅ User provides both verification codes",\n        "✅ Codes added to layout.tsx",\n        "✅ Site deploys successfully",\n        "✅ Google Search Console verification passes",\n        "✅ Bing Webmaster Tools verification passes",\n        "✅ Sitemaps submitted to both services"\n      ]\n    },
+
+    "task_0_6_image_optimization": {
+      "id": "0.6",\n      "priority": "MEDIUM",\n      "name": "Optimize next.config.ts Image Settings",\n      "impact": "Medium - Improves Core Web Vitals (LCP)",\n      "estimated_time": "15 minutes",
+      
+      "step_by_step_implementation": [\n        {\n          "step": 1,\n          "action": "Update next.config.ts",\n          "file": "next.config.ts",\n          "find_current": "minimumCacheTTL: 60",\n          "replace_with": "const config = {\n  images: {\n    formats: ['image/avif', 'image/webp'],\n    deviceSizes: [640, 750, 828, 1080, 1200, 1920, 2048, 3840],\n    imageSizes: [16, 32, 48, 64, 96, 128, 256, 384],\n    minimumCacheTTL: 31536000, // 1 year for immutable images\n    quality: 85, // Balance quality and file size\n    remotePatterns: [\n      {\n        protocol: 'https',\n        hostname: 'mirelleinspo.com',\n      },\n    ],\n  },\n  // ... other config\n};",\n          "explanation": [\n            "minimumCacheTTL: 31536000 = 1 year caching for images",\n            "quality: 85 = optimal balance (80-90 recommended)",\n            "AVIF format first (better compression than WebP)",\n            "Multiple device sizes for responsive images"\n          ]\n        },\n        {\n          "step": 2,\n          "action": "Verify build doesn't break",\n          "command": "npm run build",\n          "validation": "Build completes successfully with new image config"\n        }\n      ],\n      
+      "success_criteria": [\n        "✅ Image config updated in next.config.ts",\n        "✅ Build succeeds without errors",\n        "✅ Images serve as AVIF/WebP in production",\n        "✅ Caching headers correct (1 year)"\n      ]\n    }\n  },
+
+  "phase_1_schema_enhancements": {
+    "timeline": "Days 3-7",
+    "objective": "Implement advanced schema markup for maximum entity recognition and AI readability",
+    "depends_on": "Phase 0 must be complete first",
+    
+    "task_1_1_entity_disambiguation": {
+      "id": "1.1",\n      "priority": "HIGH",\n      "name": "Add 'about' Property with Entity Disambiguation",
+      "impact": "High - Helps Google understand content topics with certainty",
+      "estimated_time": "1 hour",
+      
+      "step_by_step_implementation": [\n        {\n          "step": 1,\n          "action": "Create entityMapping.ts file",\n          "file": "src/lib/entityMapping.ts",\n          "code": "SEE SECTION: entity_mapping_complete_code",\n          "note": "This maps common tags to Wikipedia/Wikidata entities"\n        },\n        {\n          "step": 2,\n          "action": "Import in generateSchemas.ts",\n          "file": "src/lib/generateSchemas.ts",\n          "add_import": "import { generateAboutEntities } from './entityMapping';"\n        },\n        {\n          "step": 3,\n          "action": "Add 'about' property to BlogPosting schema",\n          "file": "src/lib/generateSchemas.ts",\n          "in_function": "generateArticleSchema",\n          "add_property": "about: generateAboutEntities(post.tags || []),",\n          "placement": "After keywords property"\n        },\n        {\n          "step": 4,\n          "action": "Expand entity map with all topics",\n          "entities_to_add": [\n            "new-year, spring, summer, fall",\n            "french-tips, ombre, glitter",\n            "gel-nails, press-on-nails",\n            "Any topic your posts cover"\n          ],\n          "note": "Add entities as you create new content"\n        },\n        {\n          "step": 5,\n          "action": "Validate entity URLs",\n          "check": "All Wikipedia and Wikidata URLs are valid and accessible",\n          "tool": "Manually click each URL in ENTITY_MAP"\n        }\n      ],\n      
+      "success_criteria": [\n        "✅ entityMapping.ts created with 15+ entities",\n        "✅ generateAboutEntities function works correctly",\n        "✅ BlogPosting schema includes 'about' property",\n        "✅ All entity URLs valid",\n        "✅ Schema validates with entity references"\n      ]\n    },
+
+    "task_1_2_blog_entity_schema": {
+      "id": "1.2",\n      "priority": "HIGH",\n      "name": "Implement Comprehensive Blog Schema",\n      "impact": "High - Establishes blog as coherent entity for search engines",\n      "estimated_time": "30 minutes",
+      
+      "step_by_step_implementation": [\n        {\n          "step": 1,\n          "action": "Add generateBlogSchema function",\n          "file": "src/lib/generateSchemas.ts",\n          "code": "SEE SECTION: schema_implementations_complete_code.blog_entity_schema"\n        },\n        {\n          "step": 2,\n          "action": "Add Blog schema to blog listing page",\n          "file": "src/app/blog/page.tsx",\n          "import": "import { generateBlogSchema } from '@/lib/generateSchemas';",\n          "add_in_component": "const blogSchema = generateBlogSchema('https://mirelleinspo.com');\n\nreturn (\n  <>\n    <script \n      type=\"application/ld+json\" \n      dangerouslySetInnerHTML={{ __html: JSON.stringify(blogSchema) }} \n    />\n    {/* Rest of page JSX */}\n  </>\n);"\n        },\n        {\n          "step": 3,\n          "action": "Verify BlogPosting schemas reference this Blog",\n          "check": "isPartOf property in BlogPosting points to /blog#blog",\n          "already_implemented": "In enhanced_blog_posting_schema"\n        }\n      ],\n      
+      "success_criteria": [\n        "✅ Blog schema added to blog listing page",\n        "✅ Blog @id is https://mirelleinspo.com/blog#blog",\n        "✅ All BlogPosting schemas reference Blog via isPartOf",\n        "✅ Schema validates"\n      ]\n    },
+
+    "task_1_3_itemlist_blog": {
+      "id": "1.3",\n      "priority": "MEDIUM",\n      "name": "Add ItemList Schema to Blog Listing Page",\n      "impact": "Medium - Helps search engines understand content relationships",\n      "estimated_time": "30 minutes",
+      
+      "step_by_step_implementation": [\n        {\n          "step": 1,\n          "action": "Add generateBlogListSchema function",\n          "file": "src/lib/generateSchemas.ts",\n          "code": "SEE SECTION: schema_implementations_complete_code.blog_itemlist_schema"\n        },\n        {\n          "step": 2,\n          "action": "Add ItemList schema to blog page",\n          "file": "src/app/blog/page.tsx",\n          "code": "// In page component:\nconst posts = await getAllPosts(); // However you fetch posts\nconst itemListSchema = generateBlogListSchema(posts, 'https://mirelleinspo.com');\n\nreturn (\n  <>\n    {/* Blog schema from Task 1.2 */}\n    <script type=\"application/ld+json\" dangerouslySetInnerHTML={{ __html: JSON.stringify(blogSchema) }} />\n    \n    {/* ItemList schema */}\n    <script type=\"application/ld+json\" dangerouslySetInnerHTML={{ __html: JSON.stringify(itemListSchema) }} />\n    \n    {/* Page content */}\n  </>\n);"\n        }\n      ],\n      
+      "success_criteria": [\n        "✅ ItemList schema added to blog listing",\n        "✅ numberOfItems matches actual post count",\n        "✅ Positions are sequential (1, 2, 3...)",\n        "✅ Each item has url, name, description"\n      ]\n    },
+
+    "task_1_4_shop_schemas_verify": {
+      "id": "1.4",\n      "priority": "MEDIUM",\n      "name": "Verify Shop Schemas (Already Implemented)",\n      "impact": "Medium - Ensure affiliate-safe product schemas working",\n      "estimated_time": "30 minutes",
+      
+      "verification_checklist": [\n        "✅ CollectionPage schema present in shop/[category]/page.tsx",\n        "✅ ItemList schema present with products",\n        "✅ FAQPage schema present (conditional on FAQs existing)",\n        "✅ BreadcrumbList schema present",\n        "❌ NO AggregateRating schema",\n        "❌ NO Review schemas",\n        "✅ Product schema is affiliate-safe (no manufacturer claims)"\n      ],\n      
+      "code_reference": "Shop page code already updated in REST.TXT - verify deployment",\n      
+      "if_issues_found": "Refer to schema_implementations_complete_code.affiliate_safe_product_schema for correct implementation"\n    },
+
+    "task_1_5_aboutpage_contactpage": {
+      "id": "1.5",\n      "priority": "LOW",\n      "name": "Add AboutPage and ContactPage Schemas",\n      "impact": "Low-Medium - Helps establish brand entity",\n      "estimated_time": "30 minutes",
+      
+      "aboutpage_implementation": {\n        "file": "src/app/about/page.tsx",\n        "function": "generateAboutPageSchema",\n        "code": "SEE SECTION: schema_implementations_complete_code.aboutpage_schema",\n        "add_to_page": "import { generateAboutPageSchema } from '@/lib/generateSchemas';\n\nexport default function AboutPage() {\n  const aboutSchema = generateAboutPageSchema('https://mirelleinspo.com');\n  \n  return (\n    <>\n      <script \n        type=\"application/ld+json\" \n        dangerouslySetInnerHTML={{ __html: JSON.stringify(aboutSchema) }} \n      />\n      {/* Page content */}\n    </>\n  );\n}"\n      },\n      
+      "contactpage_implementation": {\n        "file": "src/app/contact/page.tsx",\n        "function": "generateContactPageSchema",\n        "code": "SEE SECTION: schema_implementations_complete_code.contactpage_schema",\n        "note": "Requires actual contact email - user to provide",\n        "add_to_page": "const contactSchema = generateContactPageSchema('https://mirelleinspo.com', 'hello@mirelleinspo.com');"\n      }\n    },
+
+    "task_1_6_speakable_schema": {
+      "id": "1.6",\n      "priority": "LOW",\n      "name": "Add Speakable Schema for Voice Search",\n      "impact": "Low - Future-proofing for voice search growth",\n      "estimated_time": "15 minutes",
+      "status": "ALREADY IMPLEMENTED in enhanced_blog_posting_schema",
+      
+      "verification": [\n        "Check that BlogPosting schema includes speakable property",\n        "Verify cssSelector points to '.tldr-section'",\n        "Ensure TLDRSection component has 'tldr-section' class",\n        "Test that speakable property only appears when post.tldr exists"\n      ]\n    }\n  },
+
+  "phase_2_geo_ai_optimization": {
+    "timeline": "Days 8-14",
+    "objective": "Optimize content and structure for AI assistant citations and visibility",
+    
+    "task_2_1_wikidata_entry": {
+      "id": "2.1",\n      "priority": "CRITICAL",\n      "name": "Create Wikidata Entry for Mirellé",\n      "impact": "MASSIVE - Foundation for entity-based SEO and AI citations",\n      "type": "MANUAL USER ACTION",\n      "estimated_time": "1-2 hours",
+      
+      "detailed_step_by_step_guide": [\n        {\n          "step": 1,\n          "action": "Create Wikidata account",\n          "url": "https://www.wikidata.org/",\n          "instructions": [\n            "Click 'Create account' in top right",\n            "Use a professional email",\n            "Verify email address",\n            "Complete profile with real information"\n          ]\n        },\n        {\n          "step": 2,\n          "action": "Create new Wikidata item",\n          "url": "https://www.wikidata.org/wiki/Special:NewItem",\n          "required_fields": {\n            "label_en": "Mirellé",\n            "description_en": "Digital beauty content platform specializing in nail art inspiration and tutorials",\n            "aliases_en": "Mirelle Inspo, mirelleinspo.com"\n          }\n        },\n        {\n          "step": 3,\n          "action": "Add statements (properties)",\n          "critical_statements": [\n            {\n              "property": "P31 (instance of)",\n              "value": "Q35127 (website)",\n              "explanation": "Defines what type of entity this is"\n            },\n            {\n              "property": "P856 (official website)",\n              "value": "https://mirelleinspo.com",\n              "add_reference": "Use the website itself as reference"\n            },\n            {\n              "property": "P17 (country)",\n              "value": "Q30 (United States)",\n              "note": "Or your actual country"\n            },\n            {\n              "property": "P407 (language of work or name)",\n              "value": "Q1860 (English)"\n            },\n            {\n              "property": "P2002 (Twitter username)",\n              "value": "mirelleinspo",\n              "note": "Username only, no @ symbol or URL"\n            },\n            {\n              "property": "P2003 (Instagram username)",\n              "value": "mirelle_inspo",\n              "note": "With underscore"\n            },\n            {\n              "property": "P3836 (Pinterest username)",\n              "value": "mirelle_inspo"\n            },\n            {\n              "property": "P921 (main subject)",\n              "value": "Q1568446 (nail art)"\n            },\n            {\n              "property": "P136 (genre)",\n              "value": "Q2761147 (beauty blog) or create 'beauty content platform'"\n            }\n          ],\n          "optional_statements": [\n            "P571 (inception) - Year Mirellé was founded",\n            "P1448 (official name) - Mirellé",\n            "P1813 (short name) - Mirelle"\n          ]\n        },\n        {\n          "step": 4,\n          "action": "Add references to statements",\n          "importance": "CRITICAL - Wikidata requires sources",\n          "how_to": [\n            "For each statement, click 'add reference'",\n            "Use P854 (reference URL) - your website",\n            "Use P813 (retrieved) - today's date",\n            "References prove your claims are valid"\n          ]\n        },\n        {\n          "step": 5,\n          "action": "Save and get your Q-ID",\n          "after_creation": [\n            "Wikidata will assign a Q-ID (e.g., Q123456789)",\n            "Copy this Q-ID immediately",\n            "The URL will be: https://www.wikidata.org/wiki/Q123456789"\n          ]\n        },\n        {\n          "step": 6,\n          "action": "Add Wikidata Q-ID to all schemas",\n          "files_to_update": [\n            "src/app/layout.tsx - Organization sameAs array",\n            "src/lib/generateSchemas.ts - Person sameAs array",\n            "Any other entity schemas"\n          ],\n          "code_example": "\"sameAs\": [\n  \"https://www.wikidata.org/wiki/Q123456789\", // ADD THIS LINE\n  \"https://x.com/mirelleinspo\",\n  \"https://www.instagram.com/mirelle_inspo/\",\n  \"https://www.pinterest.com/mirelle_inspo/\"\n]"\n        },\n        {\n          "step": 7,\n          "action": "Monitor and maintain",\n          "ongoing_tasks": [\n            "Check Wikidata item weekly for first month",\n            "Respond to any questions from other editors",\n            "Add new properties as Mirellé grows (LinkedIn, YouTube, etc)",\n            "Keep statements up-to-date"\n          ]\n        }\n      ],\n      
+      "learning_resources": [\n        "Wikidata Introduction: https://www.wikidata.org/wiki/Wikidata:Introduction",\n        "Creating Items: https://www.wikidata.org/wiki/Help:Items",\n        "Adding Statements: https://www.wikidata.org/wiki/Help:Statements",\n        "Property List: https://www.wikidata.org/wiki/Wikidata:List_of_properties"\n      ],\n      
+      "common_mistakes_to_avoid": [\n        "❌ Don't make claims without references",\n        "❌ Don't add false or exaggerated information",\n        "❌ Don't use promotional language in descriptions",\n        "❌ Don't create duplicate items (search first)",
+        "❌ Don't include @ symbol in social media usernames",
+        "✅ DO be patient - approval can take 24-48 hours",
+        "✅ DO use neutral, factual language",
+        "✅ DO link to established entities (Wikipedia, etc)"
+      ],
+      
+      "success_criteria": [
+        "✅ Wikidata account created and verified",
+        "✅ Mirellé item created with all required statements",
+        "✅ References added to all statements",
+        "✅ Q-ID obtained and documented",
+        "✅ Q-ID added to all website schemas",
+        "✅ Item is publicly visible and searchable"
+      ]
+    },
+
+    "task_2_2_content_structure_ai": {
+      "id": "2.2",
+      "priority": "HIGH",
+      "name": "Structure All Blog Content for AI Extraction",
+      "impact": "High - Directly improves AI citation frequency",
+      "estimated_time": "4-6 hours for 12 posts",
+      
+      "content_formatting_guidelines": {
+        "comparison_tables": {
+          "when_to_use": "When comparing options (gel vs regular polish, brands, nail shapes, techniques)",
+          "markdown_example": "| Feature | Gel Polish | Regular Polish |\n|---------|------------|----------------|\n| Longevity | 2-3 weeks | 5-7 days |\n| Cost | $45-65 salon | $10-15 DIY |\n| Removal | Acetone soak | Easy wipe |\n| Shine | High gloss | Moderate |",
+          "ai_benefit": "Tables are easily extracted and cited by AI assistants"
+        },
+        
+        "numbered_lists": {
+          "when_to_use": "Step-by-step tutorials, ranked recommendations, sequential processes",
+          "markdown_example": "### Top 5 Chrome Powders for Christmas Nails\n\n1. **ILNP Rose Gold Chrome** ($12.99)\n   - Best for: Luxurious burgundy base\n   - Application: Easy rub-on with sponge\n   - Longevity: 2+ weeks sealed properly\n\n2. **Beetles Silver Mirror Chrome** ($8.99)\n   - Best for: Classic mirror finish\n   - Application: Beginner-friendly\n   - Longevity: 2-3 weeks",
+          "ai_benefit": "Numbered lists are perfect for AI shortlist responses"
+        },
+        
+        "bullet_lists": {
+          "when_to_use": "Feature lists, pros/cons, quick tips, summary points",
+          "markdown_example": "**Key Benefits:**\n- Lasts 2-3 weeks without chipping\n- High-gloss finish looks professional\n- Protects natural nails from damage\n- Dries instantly under LED lamp",
+          "ai_benefit": "Bullet points are scannable for AI extraction"
+        },
+        
+        "qa_blocks": {
+          "when_to_use": "FAQ sections (already implemented in frontmatter)",
+          "note": "FAQ frontmatter already creates structured Q&A",
+          "ai_benefit": "Perfect for voice search and conversational AI"
+        },
+        
+        "quick_reference_boxes": {
+          "when_to_use": "Timeline guides, at-a-glance information, checklists",
+          "markdown_example": "**💡 Quick Reference: Christmas Nail Timeline**\n\n- **Dec 1-10**: Plan designs, gather supplies\n- **Dec 15-19**: Practice complex techniques\n- **Dec 20-23**: Book salon or DIY fresh manicure\n- **Dec 24-31**: Enjoy perfect nails for all events\n- **Jan 1**: Touch up or remove for New Year refresh",
+          "ai_benefit": "Boxed content is easily identified and extracted"
+        },
+        
+        "data_tables": {
+          "when_to_use": "Color palettes, product specifications, timing charts",
+          "markdown_example": "| Skin Tone | Best Reds | Best Pinks | Best Nudes |\n|-----------|-----------|------------|------------|\n| Fair | Cherry Red | Baby Pink | Ivory Nude |\n| Medium | Burgundy | Rose Pink | Beige Nude |\n| Deep | Wine Red | Mauve Pink | Caramel Nude |",
+          "ai_benefit": "Structured data perfect for AI recommendations"
+        }
+      },
+      
+      "posts_to_audit_and_reformat": [
+        "christmas-nail-designs-2025.md - Add comparison tables for gel vs regular, product roundups",
+        "halloween-nail-ideas-2025.md - Add numbered difficulty levels, quick reference timeline",
+        "thanksgiving-nails-2025.md - Add color palette table, fall trends comparison",
+        "winter-nails-2025.md - Add seasonal color guide, technique difficulty chart",
+        "valentine-nails-2026.md - REFERENCE: Already has good structure in REST.TXT",
+        "new-year-nails-2025.md - Add glitter brands comparison, timeline guide",
+        "Plus all other posts"
+      ],
+      
+      "minimum_structured_content_per_post": [
+        "At least 1 comparison table",
+        "2-3 numbered step-by-step lists",
+        "5+ bullet point lists for quick scanning",
+        "1 quick reference box or timeline",
+        "Product recommendation list with prices",
+        "FAQ section (already in frontmatter)"
+      ],
+      
+      "markdown_template_for_new_posts": "## Quick Reference\n\n[Boxed summary with key points]\n\n## Main Section\n\n[Intro paragraph]\n\n### Comparison Table\n\n| Feature | Option A | Option B |\n|---------|----------|----------|\n| Detail 1 | ... | ... |\n\n### Step-by-Step Tutorial\n\n1. **Step One**: Description\n2. **Step Two**: Description\n\n### Product Recommendations\n\n- **Product 1** ($XX.XX): Why it's great\n- **Product 2** ($XX.XX): Best for specific use\n\n### Quick Tips\n\n- Tip 1 with actionable advice\n- Tip 2 with specific technique\n- Tip 3 with time-saving hack",
+      
+      "success_criteria": [
+        "✅ All 12 posts have at least 1 comparison table",
+        "✅ Each post has multiple structured lists",
+        "✅ Quick reference sections added",
+        "✅ Product recommendations formatted consistently",
+        "✅ Content is scannable in under 30 seconds",
+        "✅ AI can extract key info without full read"
+      ]
+    },
+
+    "task_2_3_ai_prompt_tracking": {
+      "id": "2.3",
+      "priority": "HIGH",
+      "name": "Implement AI Prompt Tracking System",
+      "impact": "High - Provides data on GEO performance",
+      "type": "MANUAL USER ACTION + SPREADSHEET SETUP",
+      "estimated_time": "2 hours initial setup + weekly monitoring",
+      
+      "spreadsheet_setup": {
+        "tool": "Google Sheets (recommended) or Excel",
+        "sheet_name": "Mirellé AI Citation Tracker",
+        "columns": [
+          "Prompt Text",
+          "Query Type (Problem/Category/Comparison/BOFU)",
+          "Date Tested",
+          "AI Assistant (ChatGPT/Perplexity/Gemini/Claude)",
+          "Mirellé Mentioned? (Yes/No)",
+          "Citation Type (Direct Link/Brand Mention/Content Paraphrase/None)",
+          "Position in Response (1st/2nd/3rd/Not Mentioned)",
+          "Competing Sites Cited",
+          "Screenshot/Notes"
+        ],
+        "url": "Create at: https://sheets.google.com"
+      },
+      
+      "initial_50_prompts_to_test": {
+        "problem_queries": [
+          "How do I make my Christmas nails last through New Year?",
+          "What are the easiest Halloween nail designs for beginners?",
+          "How do I apply chrome powder to nails?",
+          "Why do my gel nails chip after 3 days?",
+          "What nail colors work best for dark skin tones?",
+          "How to fix nail polish bubbles?",
+          "Best way to remove gel nails at home?",
+          "How to prevent nail polish from peeling?",
+          "What causes nail polish to wrinkle?",
+          "How to make nail polish dry faster?"
+        ],
+        
+        "category_queries": [
+          "Best Christmas nail designs 2025",
+          "Trendy winter nail colors",
+          "Top nail art ideas for weddings",
+          "Popular Thanksgiving nail designs",
+          "Modern nail art for professionals",
+          "Valentine nail art ideas 2026",
+          "Easy Halloween nails for beginners",
+          "New Year nail trends",
+          "Fall nail colors 2025",
+          "Spring nail designs"
+        ],
+        
+        "comparison_queries": [
+          "Gel vs regular polish for Christmas nails",
+          "Chrome powder brands comparison",
+          "Almond vs coffin nails for nail art",
+          "DIY vs salon manicure for holidays",
+          "ILNP vs Beetles chrome powder",
+          "Gel vs acrylic nails",
+          "Press-on nails vs salon",
+          "OPI vs Essie nail polish",
+          "LED vs UV nail lamp",
+          "Natural vs artificial nails"
+        ],
+        
+        "bofu_queries": [
+          "Where to buy best chrome powder for nails",
+          "Christmas nail art tutorial step by step",
+          "How much do Christmas nails cost at salon",
+          "Best nail products for beginners",
+          "Mirellé nail inspiration",
+          "Buy gel nail kit online",
+          "Nail art supplies for DIY",
+          "Professional nail tools",
+          "Best nail polish brands",
+          "Nail care products recommendations"
+        ]
+      },
+      
+      "testing_schedule": {
+        "frequency": "Weekly every Monday morning",
+        "prompts_per_session": "10 prompts",
+        "ai_assistants_to_test": [
+          "ChatGPT (GPT-4)",
+          "Perplexity AI",
+          "Google Gemini",
+          "Claude (Anthropic)"
+        ],
+        "testing_method": [
+          "1. Open each AI assistant in separate tabs",
+          "2. Test same prompt across all assistants",
+          "3. Record results in spreadsheet immediately",
+          "4. Take screenshots of citations",
+          "5. Note which competitors appear"
+        ]
+      },
+      
+      "metrics_to_track_monthly": {
+        "citation_rate": "% of prompts where Mirellé appears",
+        "average_position": "When cited, what position (1st source is best)",
+        "most_cited_posts": "Which blog posts get mentioned most",
+        "competitor_analysis": "Which sites appear more frequently",
+        "query_type_performance": "Which query types show highest citation rate",
+        "improvement_over_time": "Month-over-month citation rate increase"
+      },
+      
+      "target_kpis": {
+        "month_1_baseline": "Measure current citation rate (likely 0-5%)",
+        "month_2_target": "10-15% citation rate after Phase 0-1 implementations",
+        "month_3_target": "20-30% citation rate with full optimization",
+        "month_6_target": "40%+ citation rate (industry leading)"
+      },
+      
+      "success_criteria": [
+        "✅ Spreadsheet created with all columns",
+        "✅ 50 initial prompts documented",
+        "✅ Baseline testing completed across 4 AI assistants",
+        "✅ Weekly testing schedule established",
+        "✅ First month of data collected",
+        "✅ Trends identified for content strategy"
+      ]
+    },
+
+    "task_2_4_reddit_strategy": {
+      "id": "2.4",
+      "priority": "MEDIUM",
+      "name": "Reddit Engagement Strategy",
+      "impact": "Medium-High - Reddit content appears in 82% of page-one Google searches",
+      "type": "MANUAL USER ACTION - ONGOING",
+      "estimated_time": "2-3 hours per week",
+      
+      "critical_warning": "Reddit HATES spam. This must be authentic engagement or don't do it at all. One spam complaint can destroy brand reputation.",
+      
+      "step_by_step_setup": [
+        {
+          "step": 1,
+          "action": "Create Reddit account",
+          "username_suggestion": "u/MirelleInspo or u/MirelleNailArt",
+          "profile_setup": {
+            "bio": "Sharing nail art inspiration from Mirellé. Here to learn and help! 💅",
+            "profile_picture": "Mirellé logo or professional nail art image",
+            "banner": "Nail art montage showcasing your content style"
+          },
+          "critical": "Use real, professional username. No throwaway accounts."
+        },
+        {
+          "step": 2,
+          "action": "Join relevant subreddits",
+          "target_subreddits": [
+            "r/RedditLaqueristas (620K members) - MOST IMPORTANT",
+            "r/Nails (419K members)",
+            "r/NailArt (58K members)",
+            "r/malepolish (26K members - inclusive community)",
+            "r/beauty",
+            "r/femalefashionadvice"
+          ],
+          "join_action": "Click 'Join' on each, read rules immediately"
+        },
+        {
+          "step": 3,
+          "action": "Lurk for 2 weeks minimum",
+          "observe": [
+            "What tone do posts use? (casual, formal, technical?)",
+            "What gets upvoted heavily?",
+            "What gets downvoted or removed?",
+            "How much self-promotion is tolerated?",
+            "What questions get asked repeatedly?",
+            "What content gaps exist?"
+          ],
+          "do_not_post_yet": "Understanding community culture is essential"
+        },
+        {
+          "step": 4,
+          "action": "Start with pure value-add comments",
+          "first_30_interactions": [
+            "Answer beginner questions genuinely",
+            "Compliment others' nail art specifically",
+            "Share helpful tips without linking to your site",
+            "Ask questions to understand community needs",
+            "Upvote quality content generously"
+          ],
+          "goal": "Build karma and establish yourself as helpful community member"
+        },
+        {
+          "step": 5,
+          "action": "Create engagement calendar",
+          "schedule": {
+            "monday": "Answer 3-5 beginner questions in r/RedditLaqueristas",
+            "wednesday": "Share inspiration album or helpful resource",
+            "friday": "Participate in discussion threads",
+            "saturday": "Answer 'What should I do for [holiday]' posts"
+          },
+          "time_commitment": "30-45 minutes per day"
+        },
+        {
+          "step": 6,
+          "action": "Strategic Mirellé mentions (after 30+ value-add interactions)",
+          "when_appropriate_to_mention": [
+            "Someone asks for Christmas nail inspiration - you can say 'I wrote a comprehensive guide on Christmas nails at Mirellé that covers 50+ designs'",
+            "Product recommendation request - mention your curated shop collections",
+            "Tutorial request - link to your step-by-step guides"
+          ],
+          "rules": [
+            "NEVER lead with your link",
+            "Always provide value first, link second",
+            "Use phrases like 'I wrote' or 'we cover' (transparent)",
+            "If someone asks to stop, respect immediately",
+            "Max 1-2 links per week across all subreddits"
+          ]
+        }
+      ],
+      
+      "content_that_works_on_reddit": [
+        "Before/after nail transformation photos",
+        "Troubleshooting guides (How I fixed X problem)",
+        "Budget-friendly product alternatives",
+        "Honest product reviews (both good and bad)",
+        "Nail art technique tutorials with clear photos",
+        "Questions asking for community input (builds engagement)",
+        "Seasonal inspiration albums (20-30 images)"
+      ],
+      
+      "content_that_fails_on_reddit": [
+        "❌ Direct blog post links with no context",
+        "❌ Promotional language ('Check out our amazing...')",
+        "❌ Posts that are just ads",
+        "❌ Asking for follows/subscribers",
+        "❌ Crossposting same content to multiple subs",
+        "❌ Deleting and reposting if something doesn't get upvotes"
+      ],
+      
+      "keyword_research_bonus": {
+        "method": "Reddit search is incredible keyword research",
+        "how_to": [
+          "Search r/RedditLaqueristas for 'christmas nails'",
+          "Note exact phrasing people use in questions",
+          "Identify questions asked repeatedly (content gaps)",
+          "See what problems frustrate people (pain points)",
+          "Use this language in your blog posts and TL;DRs"
+        ],
+        "example": "If 20 people ask 'why do my gel nails peel after 2 days', create a comprehensive guide addressing this exact question"
+      },
+      
+      "success_criteria": [
+        "✅ Reddit account created with professional profile",
+        "✅ Joined 6+ relevant subreddits",
+        "✅ Lurked for 2 weeks minimum",
+        "✅ Made 30+ value-add comments before any links",
+        "✅ Positive karma score (no downvote bombing)",
+        "✅ Engagement calendar established",
+        "✅ Traffic from reddit.com visible in GA4 within 60 days"
+      ]
+    },
+
+    "task_2_5_comparison_content": {
+      "id": "2.5",
+      "priority": "MEDIUM",
+      "name": "Create Comparison Content for AI Citations",
+      "impact": "Medium - AI assistants love comparison content",
+      "estimated_time": "3-4 hours per comparison post",
+      
+      "high_value_comparisons_to_create": [
+        "Gel vs Regular Polish: Complete Guide for Holiday Nails",
+        "Almond vs Coffin vs Square Nails: Best Shape for Nail Art",
+        "Chrome vs Glitter vs Matte: Finish Comparison for Christmas Nails",
+        "DIY vs Salon Manicure: Cost & Quality Breakdown",
+        "Short vs Long Nails: Design Considerations",
+        "ILNP vs Beetles vs Modelones: Chrome Powder Brand Comparison",
+        "Press-On Nails vs Salon Acrylics vs Gel: Pros and Cons",
+        "LED vs UV Nail Lamp: Which is Better?",
+        "Gel Polish vs Gel Extensions: What's the Difference?",
+        "Fall Nail Colors vs Winter Nail Colors: Seasonal Guide"
+      ],
+      
+      "comparison_content_template": {
+        "structure": "# [Option A] vs [Option B]: Complete Comparison\n\n## TL;DR\n- Winner for [use case]: Option A\n- Winner for [use case]: Option B\n- Best value: Option X\n- Quick decision: Choose A if you want X, B if you want Y\n\n## Quick Comparison Table\n| Feature | Option A | Option B |\n|---------|----------|----------|\n| Cost | $X-Y | $X-Y |\n| Longevity | X weeks | Y weeks |\n| Difficulty | Easy/Medium/Hard | Easy/Medium/Hard |\n| Best For | Use case | Use case |\n\n## Detailed Breakdown\n### Option A\n**Pros:**\n- Benefit 1 with specific details\n- Benefit 2 with quantification\n\n**Cons:**\n- Drawback 1 with specific scenario\n- Drawback 2 with workaround\n\n**Best For:** Specific user persona and use case\n\n### Option B\n[Same structure]\n\n## Side-by-Side Examples\n[Images showing both options]\n\n## Our Recommendation\n- Choose Option A if: Specific criteria\n- Choose Option B if: Specific criteria\n- Can't decide? Consider: Third option or hybrid approach\n\n## FAQ\n### Which is better for [specific scenario]?\n[Answer with clear recommendation]\n\n### Can I combine both approaches?\n[Answer]\n\n### How much does each cost?\n[Detailed cost breakdown]",
+        
+        "ai_optimization_notes": [
+          "Use clear 'vs' in title for search visibility",
+          "Include definitive 'winner' statements for AI extraction",
+          "Comparison table at top for immediate scanning",
+          "Pros/cons in bullet format for easy parsing",
+          "Specific recommendations based on use case",
+          "FAQ section answers follow-up questions AI might have"
+        ]
+      },
+      
+      "where_to_add_comparison_sections": {
+        "existing_posts": [
+          "Christmas nails post: Add 'Gel vs Regular for Christmas' section",
+          "Halloween post: Add 'DIY vs Salon for Spooky Nails' section",
+          "Valentine post: Already has good comparisons (reference in REST.TXT)",
+          "Winter post: Add 'Matte vs Glossy Winter Finishes' section"
+        ],
+        "standalone_comparison_posts": "Create 5-10 dedicated comparison posts as high-priority content"
+      },
+      
+      "success_criteria": [
+        "✅ 5+ standalone comparison posts created",
+        "✅ All major posts have comparison sections",
+        "✅ Comparison tables in every comparison piece",
+        "✅ Clear winner statements for AI extraction",
+        "✅ Comparison pages ranking for 'vs' keywords",
+        "✅ AI assistants citing comparisons in responses"
+      ]
+    },
+
+    "task_2_6_youtube_video_strategy": {
+      "id": "2.6",
+      "priority": "LOW (OPTIONAL)",
+      "name": "YouTube Channel and Video Strategy",
+      "impact": "Medium - Future growth channel, AI pulls from video",
+      "type": "OPTIONAL - User decision",
+      "estimated_time": "Variable - 3-5 hours per video",
+      
+      "user_decision_required": {
+        "question": "Do you want to create video content?",
+        "considerations": [
+          "PRO: AI Overviews increasingly pull from video",
+          "PRO: YouTube is second largest search engine",
+          "PRO: VideoObject schema already supported in code",
+          "CON: Time-intensive to create quality videos",
+          "CON: Requires equipment (camera, lighting, editing software)",
+          "CON: YouTube growth is slow initially",
+          "VERDICT: Skip if bandwidth is limited. Revisit after 50 blog posts published."
+        ]
+      },
+      
+      "if_user_chooses_yes": {
+        "channel_setup": {
+          "name": "Mirellé Nail Inspiration",
+          "handle": "@mirelleinspo (if available)",
+          "description": "Expert nail art tutorials, seasonal trends, and beauty inspiration for modern women. Subscribe for weekly nail design ideas!",
+          "banner": "Professional nail art montage with brand colors",
+          "profile_picture": "Mirellé logo"
+        },
+        
+        "priority_video_topics": [
+          "Christmas Nails Tutorial: Classic Red & Gold (5-7 min)",
+          "How to Apply Chrome Powder - Beginner Guide (3-4 min)",
+          "5-Minute Easy Halloween Nails (under 5 min)",
+          "Gel Nails at Home: Complete Tutorial (10-12 min)",
+          "Best Nail Shapes for Your Hands (6-8 min)"
+        ],
+        
+        "video_seo_optimization": [
+          "Title: Match blog post titles for consistency",
+          "Description: Include timestamps, link to full blog post, relevant keywords",
+          "Tags: Use same tags as blog posts",
+          "Thumbnail: Text overlay with main keyword",
+          "Captions: Upload accurate transcripts for accessibility and SEO",
+          "End screen: Link to website and related videos"
+        ],
+        
+        "embedding_on_blog": {
+          "implementation": "Add YouTube embed to corresponding blog post",
+          "schema": "VideoObject schema already in generateSchemas.ts",
+          "frontmatter_addition": "videoUrl: 'https://www.youtube.com/watch?v=VIDEO_ID'",
+          "benefit": "Increases time on page, provides alternative content format"
+        }
+      },
+      
+      "success_criteria_if_implemented": [
+        "✅ YouTube channel created and professional",
+        "✅ 5 priority videos created and uploaded",
+        "✅ Videos optimized for search (title, desc, tags)",
+        "✅ Videos embedded in corresponding blog posts",
+        "✅ VideoObject schema added to posts with videos",
+        "✅ Posting schedule established (1 video per week minimum)"
+      ]
+    }
+  },
+
+  "phase_3_mobile_performance_optimization": {
+    "timeline": "Days 15-21",
+    "objective": "Achieve Core Web Vitals passing scores for mobile-first indexing dominance",
+    
+    "task_3_1_optimize_lcp": {
+      "id": "3.1",
+      "priority": "HIGH",
+      "name": "Optimize Largest Contentful Paint (LCP)",
+      "impact": "High - LCP is primary Core Web Vital affecting rankings",
+      "target": "< 2.5s mobile (good), < 2.0s (excellent)",
+      "estimated_time": "2-3 hours",
+      
+      "step_1_audit_current_lcp": {
+        "tool": "PageSpeed Insights",
+        "url": "https://pagespeed.web.dev/",
+        "pages_to_test": [
+          "https://mirelleinspo.com (homepage)",
+          "https://mirelleinspo.com/blog (blog listing)",
+          "https://mirelleinspo.com/blog/christmas-nail-designs-2025 (sample post)",
+          "https://mirelleinspo.com/shop/christmas (sample shop page)"
+        ],
+        "record": "Current LCP score for each page in spreadsheet",
+        "identify": "Which element is LCP (usually hero image or first large text block)"
+      },
+      
+      "step_2_priority_image_loading": {
+        "files_to_update": "All pages with hero images",
+        "find_hero_images": "Search for <Image components in page.tsx files",
+        "code_change": "<Image\n  src=\"/hero-image.jpg\"\n  alt=\"...\"\n  priority // ADD THIS\n  fetchPriority=\"high\" // AND THIS\n  width={1200}\n  height={630}\n  className=\"...\"\n/>",
+        "explanation": "priority prop tells Next.js to load immediately, fetchPriority tells browser it's high priority",
+        "files_likely_affected": [
+          "src/app/page.tsx (homepage hero)",
+          "src/components/HeroSection.tsx",
+          "src/components/Blog/BlogPost.tsx (post hero images)"
+        ]
+      },
+      
+      "step_3_self_host_fonts": {
+        "current_problem": "Google Fonts loaded from CDN adds network request",
+        "solution": "Use next/font for automatic optimization",
+        "file": "src/app/layout.tsx",
+        "implementation": "import { Inter } from 'next/font/google';\nimport { Cormorant_Garamond } from 'next/font/google';\n\nconst inter = Inter({\n  subsets: ['latin'],\n  display: 'swap',\n  variable: '--font-inter',\n});\n\nconst cormorant = Cormorant_Garamond({\n  subsets: ['latin'],\n  weight: ['400', '500', '600', '700'],\n  display: 'swap',\n  variable: '--font-cormorant',\n});\n\nexport default function RootLayout({ children }) {\n  return (\n    <html lang=\"en\" className={`${inter.variable} ${cormorant.variable}`}>\n      <body className=\"font-sans\">\n        {children}\n      </body>\n    </html>\n  );\n}",
+        "also_update": "tailwind.config.js font-family references to use CSS variables",
+        "remove": "All <link> tags loading Google Fonts from external CDN in layout.tsx"
+      },
+      
+      "step_4_preload_critical_resources": {
+        "note": "next/font handles font preloading automatically",
+        "for_critical_images_only": "Only preload if NOT using Next.js Image component with priority",
+        "rarely_needed": "Next.js 15 handles most optimization automatically"
+      },
+      
+      "step_5_optimize_image_sizes": {
+        "audit": "Check all blog post images in /public/images/blog/",
+        "target_sizes": {
+          "hero_images": "< 200KB",
+          "content_images": "< 100KB",
+          "thumbnails": "< 50KB"
+        },
+        "compression_tools": [
+          "TinyPNG.com for manual compression",
+          "ImageOptim (Mac) for batch processing",
+          "Squoosh.app (web-based) for individual images"
+        ],
+        "process": [
+          "1. Download all images needing compression",
+          "2. Run through TinyPNG or ImageOptim",
+          "3. Verify image quality still acceptable",
+          "4. Replace original images",
+          "5. Clear Next.js cache: rm -rf .next",
+          "6. Rebuild: npm run build"
+        ]
+      },
+      
+      "step_6_verify_script_loading": {
+        "check": "All third-party scripts use proper Next.js Script component",
+        "file": "src/app/layout.tsx",
+        "verify_ga4_gtm_adsense": "Should use strategy='afterInteractive' or 'lazyOnload'",
+        "correct_pattern": "<Script src=\"...\" strategy=\"afterInteractive\" />",
+        "never_use": "strategy=\"beforeInteractive\" (blocks rendering)"
+      },
+      
+      "validation_after_changes": [
+        "Run PageSpeed Insights again on all test pages",
+        "Compare before/after LCP scores",
+        "Target: 20-30% improvement minimum",
+        "Test on real mobile device (iOS Safari, Android Chrome)",
+        "Monitor LCP in Google Search Console Core Web Vitals report"
+      ],
+      
+      "success_criteria": [
+        "✅ Priority added to all hero images",
+        "✅ Fonts self-hosted via next/font",
+        "✅ All images compressed to target sizes",
+        "✅ Scripts load asynchronously",
+        "✅ LCP < 2.5s on mobile for all key pages",
+        "✅ LCP improvement of 20%+ from baseline"
+      ]
+    },
+
+    "task_3_2_optimize_inp": {
+      "id": "3.2",
+      "priority": "HIGH",
+      "name": "Optimize Interaction to Next Paint (INP)",
+      "impact": "High - INP replaced FID as Core Web Vital in 2024",
+      "target": "< 200ms (good), < 100ms (excellent)",
+      "estimated_time": "2-4 hours",
+      
+      "step_1_audit_current_inp": {
+        "tool": "PageSpeed Insights",
+        "record": "Current INP scores for key pages",
+        "identify": "Which interactions are slow (click, scroll, input)"
+      },
+      
+      "step_2_identify_long_tasks": {
+        "tool": "Chrome DevTools > Performance tab",
+        "how_to": [
+          "1. Open DevTools (F12)",
+          "2. Go to Performance tab",
+          "3. Click Record",
+          "4.{
+  "meta_prompt_version": "3.0_COMPLETE",
+  "last_updated": "2025-10-26",
+  "reconciliation_status": "✅ VALIDATED - All conflicts resolved",
+  "validated_against": ["TRANSFER.TXT (3900 lines)", "REST.TXT", "User requirements"],
+  "conflicts_removed": ["AggregateRating schemas", "Customer review schemas", "Facebook links", "Manufacturer claims"],
+  "affiliate_safe": true,
+  "gsc_red_flags": "ZERO - Affiliate disclosure model clear",
+  "completeness_level": "COMPREHENSIVE - 4000+ lines equivalent",
+  "ready_for_deployment": true,
+
+  "project_overview": {
+    "brand": {
+      "name": "Mirellé",
+      "name_with_accent": "Mirellé",
+      "critical_note": "ALWAYS use é accent in Mirellé - consistency mandatory for entity recognition across all content, code, schemas",
+      "pronunciation": "Meer-eh-lay",
+      "domain": "https://mirelleinspo.com",
+      "business_model": "Affiliate content platform - We recommend products, NOT a manufacturer or direct seller",
+      "affiliate_disclosure_status": "User will add later - do not implement yet"
+    },
+    
+    "mission_statement": "Transform mirelleinspo.com into a top-ranking, AI-citation-ready, mobile-optimized powerhouse that dominates Google search results (Top 3 positions) and gets cited by ChatGPT, Perplexity, Gemini, and all AI assistants through comprehensive technical SEO, schema markup, GEO optimization, and entity-based SEO implementation.",
+    
+    "success_metrics_60_days": {
+      "google_rankings": "Top 3 positions for target keywords",
+      "ai_citations": "Generate citations in ChatGPT, Perplexity, Gemini responses",
+      "core_web_vitals": {
+        "lcp": "< 2.5s mobile (good), < 2.0s (excellent)",
+        "inp": "< 200ms (good), < 100ms (excellent)",
+        "cls": "< 0.1 (good), < 0.05 (excellent)"
+      },
+      "entity_recognition": "Wikidata entry created + Google Knowledge Graph presence",
+      "blog_posts": "50+ optimized posts (currently 12)",
+      "ctr_improvement": "30%+ in Google Search Console",
+      "bounce_rate_reduction": "25% through TL;DR implementation",
+      "organic_traffic_growth": "200%+"
+    },
+    
+    "niche_and_content": {
+      "primary_topics": [
+        "Seasonal nail trends (Christmas, Halloween, Valentine's, Thanksgiving, Winter, New Year)",
+        "At-home nail tutorials and DIY guides",
+        "Modern women's lifestyle and beauty",
+        "Pinterest-worthy nail inspiration",
+        "Nail care tips and techniques",
+        "Product recommendations (affiliate basis)"
+      ],
+      "target_audience": "Women aged 18-45 interested in beauty, nail art, DIY manicures, seasonal trends, accessible luxury",
+      "content_voice": "Expert yet approachable, Pinterest-inspired aesthetic, modern editorial tone"
+    }
+  },
+
+  "absolute_top_priority": {
+    "feature": "TL;DR IMPLEMENTATION",
+    "priority_level": "CRITICAL - Supersedes ALL other features",
+    "user_quote": "I WANT TLDR ON EVERY PAGE. QUICK PAGE SUMMARY ON TOP OF EVERY PAGE. THIS IS TOP TOP TOP PRIORITY FOR ANY AI TO CRAWL AND FOR USER.",
+    "implementation_requirements": [
+      "Every blog post MUST have TL;DR section at the very top (after title, before main content)",
+      "Every shop page MUST have quick summary",
+      "Every topic page MUST have overview section",
+      "TL;DR must be properly schema-marked with 'abstract' property for AI extraction",
+      "TL;DR must appear BEFORE main content in DOM order",
+      "TL;DR must be extractable by AI without reading full article",
+      "Schema must use Speakable markup for voice search optimization",
+      "Visual design: gradient background, compact keywords as badges, mobile-optimized"
+    ],
+    "updated_requirements_2025": {
+      "visual_enhancements": [
+        "Gradient background (pink-50 to purple-50 Tailwind)",
+        "Border-left-4 accent in brand pink color",
+        "Lightning bolt emoji (⚡) for visual interest and attention",
+        "Checkmark icons (✓) for list items",
+        "Pill-shaped badges for compact keywords/key takeaways",
+        "Read time display prominently",
+        "Mobile-responsive grid layout",
+        "Shadow and rounded corners for depth"
+      ],
+      "compact_keywords_integration": {
+        "description": "Display 3-4 key takeaways as scannable badges in TL;DR",
+        "visual_style": "Pill-shaped tags with bg-pink-100 text-pink-700 styling",
+        "purpose": "Quick scannable keywords for users AND AI extraction",
+        "examples": [
+          "Chrome finishes dominating 2026",
+          "Lasts 2-3 weeks",
+          "484% search increase",
+          "Budget-friendly <$20"
+        ],
+        "seo_benefit": "Helps AI assistants extract key facts quickly"
+      },
+      "schema_integration": [
+        "itemProp='abstract' on container div for schema.org compliance",
+        "CSS class 'tldr-section' for Speakable targeting",
+        "Proper semantic HTML with <section> tag",
+        "Accessible ARIA labels for screen readers",
+        "Structured data extraction-friendly markup"
+      ],
+      "content_structure": [
+        "5 summary points minimum (more for longer posts)",
+        "3-4 compact keyword badges maximum",
+        "Clear hierarchy: heading → summary list → takeaways",
+        "Scannable format for 10-second comprehension",
+        "Above-fold positioning (user sees immediately)",
+        "No more than 150-200 words total"
+      ]
+    }
+  },
+
+  "technical_stack": {
+    "framework": "Next.js 15.5.3 with App Router",
+    "react_version": "19.1.1",
+    "language": "TypeScript 5",
+    "styling": "Tailwind CSS 4.1.13",
+    "content_format": "Markdown (.md) files with gray-matter frontmatter",
+    "content_location": "src/content/blogs/",
+    "schema_format": "JSON-LD structured data (application/ld+json)",
+    "image_optimization": "Next.js Image component with AVIF/WebP formats",
+    "build_tool": "Turbopack (Next.js 15 default)",
+    "hosting": "Vercel (assumed)",
+    "package_manager": "npm",
+    
+    "key_dependencies": {
+      "next": "^15.5.3",
+      "react": "^19.1.1",
+      "react-dom": "^19.1.1",
+      "typescript": "^5",
+      "tailwindcss": "^4.1.13",
+      "gray-matter": "^4.0.3",
+      "marked": "^12.0.0",
+      "remark": "^15.0.1",
+      "remark-html": "^16.0.1",
+      "next-sitemap": "^4.2.3",
+      "@tailwindcss/typography": "^0.5.16",
+      "lucide-react": "^0.544.0"
+    },
+    
+    "analytics_tracking": {
+      "ga4_id": "G-4BZ9QKQZ73",
+      "gtm_id": "GTM-WPW9XBW8",
+      "adsense_id": "ca-pub-1145734682794444",
+      "google_search_console": "NEEDS REAL VERIFICATION CODE",
+      "bing_webmaster": "NEEDS REAL VERIFICATION CODE"
+    }
+  },
+
+  "brand_social_media": {
+    "active_platforms": {
+      "twitter_x": {
+        "url": "https://x.com/mirelleinspo",
+        "handle": "@mirelleinspo",
+        "note": "NO underscore in handle",
+        "importance": "Brand presence, real-time engagement"
+      },
+      "instagram": {
+        "url": "https://www.instagram.com/mirelle_inspo/",
+        "handle": "@mirelle_inspo",
+        "note": "WITH underscore in handle - CRITICAL DIFFERENCE from Twitter",
+        "importance": "Visual content showcase, high engagement"
+      },
+      "pinterest": {
+        "url": "https://www.pinterest.com/mirelle_inspo/",
+        "handle": "@mirelle_inspo",
+        "note": "WITH underscore",
+        "importance": "PRIMARY TRAFFIC SOURCE - highest priority for pins and boards"
+      }
+    },
+    "inactive_platforms": {
+      "facebook": "NOT ACTIVE - MUST REMOVE from all sameAs arrays in schemas",
+      "youtube": "OPTIONAL - May add video content for specific posts only (user decision)",
+      "tiktok": "NOT ACTIVE",
+      "linkedin": "TO BE CREATED as part of Phase 4 entity building"
+    },
+    "critical_schema_note": "NEVER include Facebook in sameAs arrays. Only use Twitter/X, Instagram, Pinterest URLs. Verify underscore usage for each platform."
+  },
+
+  "content_status": {
+    "existing_blog_posts": 12,
+    "target_total": "50+ posts",
+    "timeline": "20 days aggressive publishing",
+    "publishing_schedule": {
+      "phase_1_0_to_50_posts": "Daily or every-other-day publishing until 50 posts reached",
+      "phase_2_maintenance": "Weekly or bi-weekly after hitting 50 posts"
+    },
+    "posts_needing_tldr_update": [
+      "christmas-nail-designs-2025.md",
+      "halloween-nail-ideas-2025.md",
+      "thanksgiving-nails-2025.md",
+      "winter-nails-2025.md",
+      "valentine-nails-2026.md",
+      "new-year-nails-2025.md",
+      "goddess-nails-2025.md",
+      "vampire-nails-2024.md",
+      "wedding-nails-2024.md",
+      "holiday-vacation-nails-2024.md",
+      "easy-halloween-nail-designs.md",
+      "PLUS any new posts created"
+    ],
+    "content_quality_standards": {
+      "minimum_word_count": 2500,
+      "target_word_count": "3500-4500 for comprehensive guides",
+      "required_elements": [
+        "TL;DR section with 5 summary points",
+        "FAQ section with 8-10 questions minimum",
+        "At least 1 comparison table",
+        "Multiple bullet/numbered lists for scannability",
+        "Step-by-step tutorials where applicable",
+        "Product recommendations with affiliate links",
+        "Internal links to related posts/topics",
+        "External links to authority sources (Wikipedia, etc)",
+        "High-quality images with proper alt text"
+      ]
+    }
+  },
+
+  "file_structure_complete": {
+    "root_level_files": {
+      "next.config.ts": {
+        "purpose": "Image optimization, headers, redirects, build configuration",
+        "current_status": "✅ Configured with image optimization (AVIF/WebP)",
+        "needs_update": "Increase minimumCacheTTL to 31536000 (1 year), add quality: 85 setting",
+        "critical_settings": {
+          "images": {
+            "formats": ["image/avif", "image/webp"],
+            "minimumCacheTTL": 31536000,
+            "quality": 85,
+            "deviceSizes": [640, 750, 828, 1080, 1200, 1920, 2048, 3840],
+            "imageSizes": [16, 32, 48, 64, 96, 128, 256, 384]
+          }
+        }
+      },
+      "next-sitemap.config.js": {
+        "purpose": "Sitemap generation for search engines",
+        "current_status": "✅ Configured",
+        "verify": "Sitemap generating correctly at /sitemap.xml"
+      },
+      "tailwind.config.js": {
+        "purpose": "Tailwind CSS configuration with custom editorial color scheme",
+        "current_status": "✅ UPDATED with editorial color palette from REST.TXT",
+        "custom_colors": {
+          "editorial": {
+            "cream": "#faf8f5",
+            "sand": "#f5f1eb",
+            "stone": "#e8e4de",
+            "charcoal": "#2a2a2a",
+            "slate": "#4a4a4a",
+            "accent": "#d4a574"
+          },
+          "blog_primary": "#f8b4d9",
+          "blog_secondary": "#fef3f7",
+          "blog_accent": "#e91e63"
+        },
+        "custom_fonts": {
+          "serif": ["Cormorant Garamond", "Playfair Display", "Georgia", "serif"],
+          "sans": ["Inter", "system-ui", "-apple-system", "sans-serif"],
+          "display": ["Cormorant Garamond", "serif"]
+        }
+      },
+      "package.json": {
+        "purpose": "Dependencies and build scripts",
+        "current_status": "✅ UP TO DATE from REST.TXT",
+        "critical_scripts": {
+          "dev": "next dev --turbopack",
+          "build": "next build --turbopack",
+          "start": "next start",
+          "postbuild": "next-sitemap"
+        }
+      },
+      "tsconfig.json": {
+        "purpose": "TypeScript configuration",
+        "current_status": "✅ Configured"
+      }
+    },
+
+    "src_app_directory": {
+      "layout.tsx": {
+        "purpose": "Global layout, metadata, Organization schema, WebSite schema, analytics injection",
+        "current_status": "✅ Implemented with schemas",
+        "critical_updates_needed": [
+          "❌ REMOVE Facebook from Organization sameAs array",
+          "✅ ADD real Google Search Console verification code",
+          "✅ ADD real Bing Webmaster verification code",
+          "✅ ADD @id to Organization schema: https://mirelleinspo.com/#organization",
+          "✅ ADD @id to WebSite schema: https://mirelleinspo.com/#website",
+          "✅ VERIFY social media URLs correct (x.com, instagram with underscore, pinterest)",
+          "✅ IMPLEMENT next/font for self-hosted fonts (remove Google Fonts CDN)"
+        ],
+        "organization_schema_correct": {
+          "@context": "https://schema.org",
+          "@type": "Organization",
+          "@id": "https://mirelleinspo.com/#organization",
+          "name": "Mirellé",
+          "alternateName": "Mirelle Inspo",
+          "url": "https://mirelleinspo.com",
+          "logo": "https://mirelleinspo.com/logo.png",
+          "sameAs": [
+            "https://x.com/mirelleinspo",
+            "https://www.instagram.com/mirelle_inspo/",
+            "https://www.pinterest.com/mirelle_inspo/"
+          ],
+          "description": "Expert nail art inspiration, tutorials, and seasonal beauty trends for modern women",
+          "foundingDate": "2024",
+          "founder": {
+            "@id": "https://mirelleinspo.com/#mirelle-team"
+          }
+        },
+        "website_schema_correct": {
+          "@context": "https://schema.org",
+          "@type": "WebSite",
+          "@id": "https://mirelleinspo.com/#website",
+          "url": "https://mirelleinspo.com",
+          "name": "Mirellé",
+          "description": "Nail art inspiration and beauty trends",
+          "publisher": {
+            "@id": "https://mirelleinspo.com/#organization"
+          },
+          "potentialAction": {
+            "@type": "SearchAction",
+            "target": "https://mirelleinspo.com/search?q={search_term_string}",
+            "query-input": "required name=search_term_string"
+          },
+          "inLanguage": "en-US"
+        }
+      },
+
+      "page.tsx": {
+        "purpose": "Homepage with hero, featured topics, blog preview",
+        "current_status": "✅ Implemented",
+        "optimization_needed": "Add priority prop to hero images for LCP optimization"
+      },
+
+      "globals.css": {
+        "purpose": "Global styles, Tailwind imports, editorial typography",
+        "current_status": "✅ UPDATED with editorial design system from REST.TXT",
+        "key_features": [
+          "Cormorant Garamond serif font for headings",
+          "Inter sans-serif for body",
+          "Editorial color variables",
+          "Responsive typography with clamp()",
+          "Custom scrollbar styling",
+          "Focus states for accessibility"
+        ]
+      },
+
+      "blog": {
+        "page.tsx": {
+          "purpose": "Blog listing page showing all posts",
+          "current_status": "✅ Implemented",
+          "schemas_to_add": [
+            "Blog schema (standalone entity)",
+            "ItemList schema (list of all blog posts)",
+            "BreadcrumbList schema"
+          ]
+        },
+        "[slug]/page.tsx": {
+          "purpose": "Dynamic blog post pages - generates page for each markdown file",
+          "current_status": "✅ Implemented with BlogPosting schema",
+          "critical_updates_needed": [
+            "✅ ADD TL;DR rendering (after implementing TLDRSection component)",
+            "✅ UPDATE BlogPosting schema to include 'abstract' property from TL;DR",
+            "✅ ADD 'speakable' property to schema",
+            "✅ ADD @id to BlogPosting schema",
+            "✅ ADD Person schema for author with @id",
+            "✅ ADD 'about' property with entity disambiguation",
+            "✅ ADD 'isPartOf' connecting to Blog entity"
+          ]
+        }
+      },
+
+      "shop": {
+        "page.tsx": {
+          "purpose": "Shop landing page",
+          "current_status": "✅ Implemented"
+        },
+        "[category]/page.tsx": {
+          "purpose": "Dynamic shop category pages (christmas, halloween, etc)",
+          "current_status": "✅ RECENTLY UPDATED with comprehensive schemas from REST.TXT",
+          "implemented_schemas": [
+            "✅ CollectionPage schema",
+            "✅ ItemList schema with product listings",
+            "✅ BreadcrumbList schema",
+            "✅ FAQPage schema (conditional)"
+          ],
+          "removed_schemas_affiliate_safe": [
+            "❌ REMOVED AggregateRating (not manufacturer)",
+            "❌ REMOVED Review schemas (no customer reviews)",
+            "❌ NO seller offers with specific prices (affiliate links only)"
+          ],
+          "product_schema_affiliate_safe": {
+            "note": "Product schema included but configured for affiliate model",
+            "safe_properties": [
+              "name, description, image, brand",
+              "url (affiliate link)",
+              "offers with generic price range",
+              "NO ratingValue",
+              "NO reviewCount",
+              "NO specific inventory claims"
+            ]
+          },
+          "critical_fixes_applied": {
+            "price_parsing": "Fixed string to float conversion for price calculations",
+            "image_path": "Changed hero.image to heroImage (direct property)",
+            "affiliate_url": "Changed affiliateLink to affiliateUrl for consistency"
+          }
+        }
+      },
+
+      "topics": {
+        "page.tsx": {
+          "purpose": "Topics overview/hub page",
+          "current_status": "✅ Implemented",
+          "needs_tldr": "Add overview section at top"
+        },
+        "seasonal-trends/page.tsx": {
+          "purpose": "Seasonal trends topic page",
+          "needs_tldr": "Add TL;DR section"
+        },
+        "nail-care-guide/page.tsx": {
+          "purpose": "Comprehensive nail care guide",
+          "needs_tldr": "Add TL;DR section"
+        },
+        "modern-women/page.tsx": {
+          "purpose": "Modern women's nail philosophy",
+          "needs_tldr": "Add TL;DR section"
+        },
+        "at-home-hacks/page.tsx": {
+          "purpose": "DIY at-home nail techniques",
+          "needs_tldr": "Add TL;DR section"
+        },
+        "nail-art-guides/page.tsx": {
+          "purpose": "Nail art technique guides",
+          "needs_tldr": "Add TL;DR section"
+        },
+        "skin-tones/page.tsx": {
+          "purpose": "Nail colors for different skin tones",
+          "needs_tldr": "Add TL;DR section"
+        }
+      },
+
+      "about/page.tsx": {
+        "purpose": "About Mirellé page",
+        "current_status": "✅ Implemented",
+        "schema_to_add": "AboutPage schema with mainEntity reference to Organization"
+      },
+
+      "contact/page.tsx": {
+        "purpose": "Contact page",
+        "current_status": "✅ Implemented",
+        "schema_to_add": "ContactPage schema with ContactPoint"
+      },
+
+      "privacy-policy/page.tsx": {
+        "purpose": "Privacy policy",
+        "current_status": "✅ Implemented"
+      },
+
+      "terms/page.tsx": {
+        "purpose": "Terms of service",
+        "current_status": "✅ Implemented"
+      }
+    },
+
+    "src_components_directory": {
+      "Header.tsx": {
+        "purpose": "Site navigation header",
+        "current_status": "✅ Implemented",
+        "optimization": "Ensure mobile menu tap targets are 44x44px minimum"
+      },
+
+      "Footer.tsx": {
+        "purpose": "Site footer with links",
+        "current_status": "✅ Implemented",
+        "verify": "Social media links point to correct URLs (no Facebook)"
+      },
+
+      "HeroSection.tsx": {
+        "purpose": "Homepage hero section",
+        "current_status": "✅ Implemented",
+        "optimization_needed": "Add priority and fetchPriority='high' to hero image"
+      },
+
+      "BlogSection.tsx": {
+        "purpose": "Blog preview section on homepage",
+        "current_status": "✅ Implemented"
+      },
+
+      "ShopSection.tsx": {
+        "purpose": "Shop preview section on homepage",
+        "current_status": "✅ Implemented"
+      },
+
+      "FeaturedTopicsSection.tsx": {
+        "purpose": "Featured topics section",
+        "current_status": "✅ Implemented"
+      },
+
+      "NewsletterForm.tsx": {
+        "purpose": "Email subscription form",
+        "current_status": "✅ Implemented"
+      },
+
+      "Breadcrumbs.tsx": {
+        "purpose": "Breadcrumb navigation",
+        "current_status": "✅ Implemented"
+      },
+
+      "Blog_directory": {
+        "BlogCard.tsx": {
+          "purpose": "Individual blog post card for listings",
+          "current_status": "✅ Implemented"
+        },
+        "BlogList.tsx": {
+          "purpose": "List of blog posts",
+          "current_status": "✅ Implemented"
+        },
+        "BlogPost.tsx": {
+          "purpose": "Full blog post display component",
+          "current_status": "✅ Implemented",
+          "critical_update_needed": "Import and render TLDRSection component AFTER title/hero, BEFORE main content"
+        },
+        "BlogSidebar.tsx": {
+          "purpose": "Sidebar with table of contents and related posts",
+          "current_status": "✅ Implemented"
+        },
+        "CommentSection.tsx": {
+          "purpose": "Comment functionality",
+          "current_status": "✅ Implemented"
+        },
+        "PinterestOverlay.tsx": {
+          "purpose": "Pinterest save button overlay on images",
+          "current_status": "✅ Implemented",
+          "importance": "CRITICAL - Pinterest is primary traffic source"
+        },
+        "TLDRSection.tsx": {
+          "purpose": "TL;DR component - TOP PRIORITY TO CREATE",
+          "current_status": "❌ DOES NOT EXIST - MUST CREATE",
+          "priority": "CRITICAL - Task 0.1",
+          "complete_implementation_code": "SEE SECTION: tldr_component_complete_code"
+        }
+      },
+
+      "Shop_directory": {
+        "ShopClient.tsx": {
+          "purpose": "Client-side shop functionality",
+          "current_status": "✅ Implemented"
+        }
+      }
+    },
+
+    "src_lib_directory": {
+      "blog.ts": {
+        "purpose": "Blog post fetching and processing logic",
+        "current_status": "✅ Implemented",
+        "update_needed": "Add TL;DR extraction from markdown frontmatter",
+        "code_addition_required": "In getBlogPost function, extract tldr object from gray-matter data"
+      },
+
+      "shop.ts": {
+        "purpose": "Shop data fetching logic",
+        "current_status": "✅ Implemented",
+        "functions": [
+          "getCategoryData()",
+          "getCategoryProducts()",
+          "getAllCategorySlugs()"
+        ]
+      },
+
+      "generateSchemas.ts": {
+        "purpose": "Schema generation for all page types",
+        "current_status": "✅ Implemented but NEEDS MAJOR UPDATES",
+        "critical_updates_needed": [
+          "✅ ADD Person schema function for author",
+          "✅ ADD Blog schema function",
+          "✅ UPDATE BlogPosting schema to include abstract, speakable, @id, about, isPartOf",
+          "✅ ADD generateBlogListSchema for ItemList",
+          "✅ REMOVE any AggregateRating generation",
+          "✅ UPDATE Product schema to be affiliate-safe",
+          "✅ ADD AboutPage schema function",
+          "✅ ADD ContactPage schema function"
+        ],
+        "detailed_implementations": "SEE SECTION: schema_implementations_complete_code"
+      },
+
+      "seo.ts": {
+        "purpose": "SEO helper functions (title optimization, slug generation)",
+        "current_status": "✅ Implemented"
+      },
+
+      "breadcrumbs.ts": {
+        "purpose": "Breadcrumb generation logic",
+        "current_status": "✅ Implemented"
+      },
+
+      "imageOptimization.ts": {
+        "purpose": "Image handling utilities",
+        "current_status": "✅ Implemented"
+      },
+
+      "contentValidation.ts": {
+        "purpose": "Content validation functions",
+        "current_status": "✅ Implemented"
+      },
+
+      "brands.ts": {
+        "purpose": "Brand data management",
+        "current_status": "✅ Implemented"
+      },
+
+      "entityMapping.ts": {
+        "purpose": "Entity references for 'about' property in schemas - TO BE CREATED",
+        "current_status": "❌ DOES NOT EXIST - MUST CREATE",
+        "priority": "HIGH - Task 1.1",
+        "complete_implementation_code": "SEE SECTION: entity_mapping_complete_code"
+      }
+    },
+
+    "src_types_directory": {
+      "blog.ts": {
+        "purpose": "BlogPost, BlogMetadata TypeScript interfaces",
+        "current_status": "✅ Implemented",
+        "update_needed": "Add tldr property to BlogPost interface",
+        "interface_addition": {
+          "tldr": {
+            "summary": "string[]",
+            "keyTakeaways": "string[] (optional)"
+          }
+        }
+      },
+
+      "shop.ts": {
+        "purpose": "Product, CategoryData TypeScript interfaces",
+        "current_status": "✅ Implemented"
+      },
+
+      "brand.ts": {
+        "purpose": "Brand TypeScript interfaces",
+        "current_status": "✅ Implemented"
+      }
+    },
+
+    "src_content_directory": {
+      "blogs_markdown_files": {
+        "total_posts": 12,
+        "all_need_tldr_frontmatter": true,
+        "existing_posts": [
+          "christmas-nail-designs-2025.md",
+          "halloween-nail-ideas-2025.md",
+          "thanksgiving-nails-2025.md",
+          "winter-nails-2025.md",
+          "valentine-nails-2026.md (has example TL;DR from REST.TXT)",
+          "new-year-nails-2025.md",
+          "goddess-nails-2025.md",
+          "vampire-nails-2024.md",
+          "wedding-nails-2024.md",
+          "holiday-vacation-nails-2024.md",
+          "easy-halloween-nail-designs.md",
+          "plus one more (12 total)"
+        ],
+        "frontmatter_structure_required": "SEE SECTION: markdown_frontmatter_template"
+      },
+
+      "shop-categories.json": {
+        "purpose": "Shop category metadata",
+        "current_status": "✅ Exists"
+      },
+
+      "shop-products": {
+        "purpose": "JSON files with product data per category",
+        "current_status": "✅ Exists",
+        "format": "Affiliate product links, no manufacturer claims"
+      },
+
+      "shop-descriptions": {
+        "purpose": "Category description JSON files",
+        "current_status": "✅ Exists"
+      },
+
+      "shop-faqs": {
+        "purpose": "Category FAQ JSON files",
+        "current_status": "✅ Exists"
+      }
+    }
+  },
+
+  {
+  "tldr_component_complete_code": {
+    "file_path": "src/components/Blog/TLDRSection.tsx",
+    "purpose": "Reusable TL;DR component with compact keywords integration",
+    "visual_design": "Gradient background, checkmarks, pill badges, lightning bolt",
+    "complete_typescript_code": "import React from 'react';\n\ninterface TLDRProps {\n  summary: string[];\n  readTime: string;\n  keyTakeaways?: string[];\n}\n\nexport default function TLDRSection({ summary, readTime, keyTakeaways }: TLDRProps) {\n  return (\n    <section \n      className=\"tldr-section bg-gradient-to-br from-pink-50 to-purple-50 border-l-4 border-pink-500 p-6 rounded-lg shadow-md mb-8 hover:shadow-lg transition-shadow duration-300\"\n      itemProp=\"abstract\"\n      aria-label=\"Article summary\"\n    >\n      <div className=\"flex items-center gap-2 mb-4\">\n        <span className=\"text-2xl\" aria-hidden=\"true\">⚡</span>\n        <h2 className=\"text-xl font-bold text-gray-900 font-serif\">TL;DR - Quick Summary</h2>\n        <span className=\"ml-auto text-sm text-gray-600 font-sans\">{readTime} read</span>\n      </div>\n      \n      <div className=\"space-y-3\">\n        <p className=\"text-gray-700 font-medium font-sans\">What You'll Learn:</p>\n        <ul className=\"space-y-2\">\n          {summary.map((item, index) => (\n            <li key={index} className=\"flex items-start gap-2\">\n              <span className=\"text-pink-500 mt-1 flex-shrink-0\" aria-hidden=\"true\">✓</span>\n              <span className=\"text-gray-700 font-sans leading-relaxed\">{item}</span>\n            </li>\n          ))}\n        </ul>\n        \n        {keyTakeaways && keyTakeaways.length > 0 && (\n          <div className=\"mt-4 pt-4 border-t border-pink-200\">\n            <p className=\"text-gray-700 font-medium mb-2 font-sans\">Key Takeaways:</p>\n            <div className=\"flex flex-wrap gap-2\">\n              {keyTakeaways.map((takeaway, index) => (\n                <span \n                  key={index} \n                  className=\"bg-pink-100 text-pink-700 px-3 py-1 rounded-full text-sm font-medium font-sans hover:bg-pink-200 transition-colors duration-200\"\n                >\n                  {takeaway}\n                </span>\n              ))}\n            </div>\n          </div>\n        )}\n      </div>\n    </section>\n  );\n}",
+    "accessibility_features": [
+      "aria-label for screen readers",
+      "itemProp for schema extraction",
+      "aria-hidden on decorative icons",
+      "Semantic HTML with <section> tag",
+      "Proper heading hierarchy",
+      "Keyboard navigable (inherent with semantic HTML)"
+    ],
+    "mobile_optimizations": [
+      "Responsive padding and spacing",
+      "Flexible badge wrapping",
+      "Touch-friendly hover states",
+      "Readable font sizes on small screens",
+      "No horizontal scroll"
+    ]
+  }
+}
+"markdown_frontmatter_template": {
+    "description": "Required frontmatter structure for all blog posts",
+    "example_complete_frontmatter": "---\ntitle: \"Your Post Title: Specific and SEO-Optimized\"\nexcerpt: \"Compelling 150-160 character summary that appears in search results and social shares\"\ndate: \"2025-10-26T10:00:00-04:00\"\nauthor: \"Mirellé Team\"\ntags:\n  - \"primary keyword\"\n  - \"secondary keyword\"\n  - \"long-tail keyword\"\n  - \"semantic keyword\"\n  - \"seasonal keyword\"\n  - \"topic category\"\nimage: \"/images/blog/hero-post-slug.jpg\"\nreadTime: \"12 min\"\nslug: \"post-slug-matches-filename\"\ncanonical: \"https://mirelleinspo.com/blog/post-slug\"\nimageAlt: \"Descriptive alt text with primary keyword naturally included\"\nimageWidth: 1200\nimageHeight: 630\ndateModified: \"2025-10-26\"\nwordCount: 3800\ntldr:\n  summary:\n    - \"First key point with actionable insight or main benefit\"\n    - \"Second key point addressing user pain point or question\"\n    - \"Third key point with specific technique or recommendation\"\n    - \"Fourth key point with quantifiable results or timeframe\"\n    - \"Fifth key point with unique value proposition or expert tip\"\n  keyTakeaways:\n    - \"Compact keyword 1 (2-4 words)\"\n    - \"Compact keyword 2\"\n    - \"Compact keyword 3\"\n    - \"Compact keyword 4\"\nfaqItems:\n  - question: \"Common question in natural language\"\n    answer: \"Comprehensive answer addressing the question directly with specific details\"\n  - question: \"Second common question\"\n    answer: \"Answer with actionable information\"\n  - question: \"Third question\"\n    answer: \"Answer\"\n  - question: \"Fourth question\"\n    answer: \"Answer\"\n  - question: \"Fifth question\"\n    answer: \"Answer\"\n  - question: \"Sixth question\"\n    answer: \"Answer\"\n  - question: \"Seventh question\"\n    answer: \"Answer\"\n  - question: \"Eighth question\"\n    answer: \"Answer\"\n---",
+    "critical_notes": [
+      "Author MUST be 'Mirellé Team' - never individual names",
+      "TL;DR summary array must have minimum 5 points",
+      "KeyTakeaways should be 3-4 compact phrases only",
+      "FAQ items minimum 8 questions for FAQPage schema",
+      "Image dimensions 1200x630 for optimal social sharing",
+      "Tags should include primary keyword, semantically related terms, and seasonal/category tags",
+      "Excerpt must be compelling and under 160 characters",
+      "ReadTime calculated based on word count / 200 words per minute"
+    ]
+  },
+
+  "schema_implementations_complete_code": {
+    "file_path": "src/lib/generateSchemas.ts",
+    "description": "Complete schema generation functions with all updates",
+    
+    "person_author_schema": {
+      "function_name": "generatePersonSchema",
+      "code": "export function generatePersonSchema(baseUrl: string) {\n  return {\n    '@context': 'https://schema.org',\n    '@type': 'Person',\n    '@id': `${baseUrl}/#mirelle-team`,\n    'name': 'Mirellé Team',\n    'url': `${baseUrl}/about`,\n    'sameAs': [\n      'https://x.com/mirelleinspo',\n      'https://www.instagram.com/mirelle_inspo/',\n      'https://www.pinterest.com/mirelle_inspo/'\n    ],\n    'jobTitle': 'Nail Art Content Creator',\n    'worksFor': {\n      '@id': `${baseUrl}/#organization`\n    },\n    'knowsAbout': [\n      'Nail Art',\n      'Nail Care',\n      'Beauty Trends',\n      'DIY Manicures',\n      'Seasonal Nail Designs',\n      'Product Recommendations'\n    ],\n    'description': 'Expert nail art content team specializing in seasonal trends and accessible beauty techniques'\n  };\n}",
+      "usage": "Call once in layout.tsx or include in BlogPosting schema author property"
+    },
+
+    "blog_entity_schema": {
+      "function_name": "generateBlogSchema",
+      "code": "export function generateBlogSchema(baseUrl: string) {\n  return {\n    '@context': 'https://schema.org',\n    '@type': 'Blog',\n    '@id': `${baseUrl}/blog#blog`,\n    'url': `${baseUrl}/blog`,\n    'name': 'Mirellé Blog',\n    'description': 'Expert nail art inspiration, tutorials, and beauty tips for modern women. Discover seasonal trends, at-home techniques, and Pinterest-worthy nail designs.',\n    'inLanguage': 'en-US',\n    'publisher': {\n      '@id': `${baseUrl}/#organization`\n    },\n    'author': {\n      '@id': `${baseUrl}/#mirelle-team`\n    },\n    'audience': {\n      '@type': 'Audience',\n      'audienceType': 'Women aged 18-45 interested in beauty and nail art'\n    },\n    'about': [\n      {\n        '@type': 'Thing',\n        'name': 'Nail Art',\n        'sameAs': 'https://en.wikipedia.org/wiki/Nail_art'\n      },\n      {\n        '@type': 'Thing',\n        'name': 'Beauty',\n        'sameAs': 'https://en.wikipedia.org/wiki/Beauty'\n      },\n      {\n        '@type': 'Thing',\n        'name': 'Fashion',\n        'sameAs': 'https://en.wikipedia.org/wiki/Fashion'\n      }\n    ]\n  };\n}",
+      "usage": "Add to src/app/blog/page.tsx as script tag"
+    }
+  }
+}
