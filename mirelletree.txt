@@ -1,0 +1,421 @@
+├── eslint.config.mjs
+├── next-env.d.ts
+├── next-sitemap.config.js
+├── next.config.ts
+├── package-lock.json
+├── package.json
+├── postcss.config.mjs
+├── public
+│   ├── aboutmebanner.jpg
+│   ├── aboutmeblogimg.jpg
+│   ├── ads.txt
+│   ├── apple-touch-icon.png
+│   ├── athome.jpg
+│   ├── athome2.jpg
+│   ├── athomeupdated.jpg
+│   ├── blpage.txt
+│   ├── christmas-colors-2025.jpg
+│   ├── christmas-nails-hero.jpg
+│   ├── christmas-nails-hero.webp
+│   ├── christmas-shapes-2025.jpg
+│   ├── christmas-tutorial-2025.jpg
+│   ├── christmassection.jpg
+│   ├── curator.txt
+│   ├── curatorvoiceprompt.txt
+│   ├── deleteimp.txt
+│   ├── deleting.txt
+│   ├── dfccc015e544b7cebcf4c519d7d55d19.jpg
+│   ├── fall-nails-hero..jpg
+│   ├── fall-nails-heroupdated.jpg
+│   ├── fallnail.jpg
+│   ├── fallsection.jpg
+│   ├── fallshop.txt
+│   ├── favicon-96x96.png
+│   ├── favicon.ico
+│   ├── favicon.svg
+│   ├── featuretopicbanner.jpg
+│   ├── file.svg
+│   ├── folder.txt
+│   ├── globe.svg
+│   ├── goddess-nails-2025-hero.jpg
+│   ├── halloweenbannerimg.jpg
+│   ├── hallshop.txt
+│   ├── hero-holiday-vacation-nails-travel-guide.jpg
+│   ├── hero-valentine-nails-2026.jpg
+│   ├── hero-wedding-nail-designs.jpg
+│   ├── herosectionbg-mobile.jpg
+│   ├── herosectionbg.jpg
+│   ├── images
+│   │   └── blog
+│   │       ├── almond-valentine-nails-chrome-finish.jpg
+│   │       ├── autumn-leaves-halloween-nails-orange.jpg
+│   │       ├── bat-silhouette-halloween-nail-art.jpg
+│   │       ├── black-cat-halloween-nails-simple.jpg
+│   │       ├── black-red-ombre-vampire-nails.png
+│   │       ├── blood-drip-easy-halloween-nails.jpg
+│   │       ├── bold-statement-nye-nails.png
+│   │       ├── bridal-nails-skin-tone-guide.jpg
+│   │       ├── candy-corn-halloween-nail-designs.jpg
+│   │       ├── caribbean-vacation-nails-tropical-designs.jpg
+│   │       ├── celestial-gold-goddess-nails.jpg
+│   │       ├── cherry-valentine-nails-trendy-design.jpg
+│   │       ├── christmas-colors-2025.png
+│   │       ├── christmas-shapes-2025.png
+│   │       ├── christmas-tutorial-2025.png
+│   │       ├── chrome-spider-halloween-nail-art.jpg
+│   │       ├── classic-wedding-nail-designs.jpg
+│   │       ├── cobweb-french-tip-halloween-nails.jpg
+│   │       ├── coffin-shape-halloween-nail-designs.jpg
+│   │       ├── coffin-shape-vampire-nails.png
+│   │       ├── complete-valentine-manicure-cuticle-oil.jpg
+│   │       ├── crystal-ball-halloween-nail-art.jpg
+│   │       ├── diy-wedding-nails-tutorial.jpg
+│   │       ├── dripping-blood-halloween-nails-red.jpg
+│   │       ├── easy-halloween-nail-designs-ghost-simple.jpg
+│   │       ├── easy-halloween-nail-designs-hero.jpg
+│   │       ├── evil-eye-halloween-nail-designs.jpg
+│   │       ├── eyeball-halloween-nails-creepy.jpg
+│   │       ├── frankenstein-halloween-nails-green.jpg
+│   │       ├── full-moon-halloween-nail-art-simple.jpg
+│   │       ├── gel-acrylic-wedding-nails-comparison.jpg
+│   │       ├── gel-vacation-nails-application-tutorial.jpg
+│   │       ├── gel-valentine-nails-application-technique.jpg
+│   │       ├── glitter-gradient-nails.png
+│   │       ├── glitter-pumpkin-halloween-nail-designs.jpg
+│   │       ├── glitter-valentine-nails-accent-nail.jpg
+│   │       ├── goddess-nails-2025-hero.jpg
+│   │       ├── goddess-nails-tutorial-steps.jpg
+│   │       ├── gold-glitter-manicure.png
+│   │       ├── gold-goddess-nails.jpg
+│   │       ├── gothic-vampire-nails-rhinestones.png
+│   │       ├── graveyard-scene-halloween-nail-designs.jpg
+│   │       ├── greek-mythology-nail-art.jpg
+│   │       ├── halloween-nails-2025-hero.png
+│   │       ├── halloween-spider-web-nails-easy.jpg
+│   │       ├── halloweenblog1.png
+│   │       ├── halloweenblog10.png
+│   │       ├── halloweenblog11.png
+│   │       ├── halloweenblog2.png
+│   │       ├── halloweenblog3.png
+│   │       ├── halloweenblog4.png
+│   │       ├── halloweenblog5.png
+│   │       ├── halloweenblog6.png
+│   │       ├── halloweenblog7.png
+│   │       ├── halloweenblog8.png
+│   │       ├── halloweenblog9.png
+│   │       ├── halloweenblogbanner.jpg
+│   │       ├── halloweenhero.png
+│   │       ├── haunted-house-halloween-nails-easy.jpg
+│   │       ├── hero-christmas-nails-2025.jpg
+│   │       ├── hero-holiday-vacation-nails-travel-guide.jpg
+│   │       ├── hero-new-year-nails-2025.jpg
+│   │       ├── hero-thanksgiving-nails-2025.jpg
+│   │       ├── hero-valentine-nails-2026.jpg
+│   │       ├── hero-vampire-nails-2025.jpg
+│   │       ├── hero-wedding-nail-designs.jpg
+│   │       ├── hero-winter-nails-2025.jpg
+│   │       ├── jack-o-lantern-halloween-nail-designs.jpg
+│   │       ├── lightning-bolt-halloween-nails-purple.jpg
+│   │       ├── long-stiletto-goddess-nails.jpg
+│   │       ├── marble-goddess-nails.jpg
+│   │       ├── maximalist-goddess-nails.jpg
+│   │       ├── metallic-polish-application.png
+│   │       ├── minimalist-ghost-halloween-nail-art.jpg
+│   │       ├── modern-bridal-nails-2025.jpg
+│   │       ├── mummy-nails-halloween-easy-design.jpg
+│   │       ├── nail-faq-troubleshooting.png
+│   │       ├── nail-prep-tutorial.png
+│   │       ├── nail-tech-workspace.png
+│   │       ├── og-default.png
+│   │       ├── olive-branch-goddess-nails.jpg
+│   │       ├── ombre-halloween-nails-orange-black.jpg
+│   │       ├── ombre-valentine-nails-pink-gradient.jpg
+│   │       ├── orange-black-swirl-halloween-nails.jpg
+│   │       ├── pearl-embellished-goddess-nails.jpg
+│   │       ├── plaid-halloween-nails-fall-pattern.jpg
+│   │       ├── poison-bottle-halloween-nails-green.jpg
+│   │       ├── press-on-vs-gel-vacation-nails-comparison.jpg
+│   │       ├── pumpkin-nail-art-halloween-orange.jpg
+│   │       ├── purple-witch-halloween-nail-designs.jpg
+│   │       ├── real-wedding-nail-inspiration.jpg
+│   │       ├── short-valentine-nails-simple-hearts.jpg
+│   │       ├── short-vampire-nails-almond-shape.png
+│   │       ├── silver-chrome-nye-nails.png
+│   │       ├── skeleton-hand-halloween-nail-art.jpg
+│   │       ├── ski-resort-winter-vacation-nails-designs.jpg
+│   │       ├── starry-night-halloween-nails-mystical.jpg
+│   │       ├── stiletto-vampire-nails-fangs.png
+│   │       ├── test.jpeg
+│   │       ├── thanksgiving-long-nails-almond.png
+│   │       ├── thanksgiving-nail-colors-2025.jpg
+│   │       ├── thanksgiving-nail-colors-2025.png
+│   │       ├── thanksgiving-nails-tutorial.png
+│   │       ├── thanksgiving-ombre-nails.png
+│   │       ├── thanksgiving-short-nails.png
+│   │       ├── tropical-beach-vacation-nails-designs.jpg
+│   │       ├── vacation-nails-color-palette-seasonal.jpg
+│   │       ├── vacation-nails-travel-kit-essentials-products.jpg
+│   │       ├── valentine-nails-color-palette-pink-red-white.jpg
+│   │       ├── vampire-fang-halloween-nail-art.jpg
+│   │       ├── vampire-nail-colors-blood-red-black.png
+│   │       ├── vampire-nail-designs-dripping-blood.png
+│   │       ├── vampire-nail-tutorial-step-by-step.png
+│   │       ├── vampire-nails-3d-embellishments.png
+│   │       ├── vampire-nails-glitter-sparkle.png
+│   │       ├── wedding-destination-vacation-nails-bridal.jpg
+│   │       ├── wedding-nail-shapes-guide.jpg
+│   │       ├── wedding-nails-dos-donts.jpg
+│   │       ├── wedding-nails-short-long-comparison.png
+│   │       ├── wedding-nails-timing-schedule.jpg
+│   │       ├── winter-holiday-vacation-nails-designs.jpg
+│   │       ├── witch-hat-simple-halloween-nails.jpg
+│   │       └── zombie-nails-halloween-green-grey.jpg
+│   ├── jsonpromp.txt
+│   ├── layout.txt
+│   ├── logo.png
+│   ├── media
+│   │   ├── 04751424-e484-4b8d-973d-68b89b027838.png
+│   │   ├── 0e33e1e07bd8f34a85e998f9dfd41e30.mp4
+│   │   ├── 60eb6c0346c9b844df8f6538bc9f161e.mp4
+│   │   ├── aboutme.png
+│   │   ├── Add a little bit of body text.png
+│   │   ├── beauty-lashes-logo-with-letter-m-gold-gradient-premium-vector.jpg
+│   │   ├── c30675bc-a339-4440-b936-8b55a7b452ed.png
+│   │   ├── center align the bac.png
+│   │   ├── gold-letter-m-logo-design-600nw-2395372691.webp
+│   │   ├── halloweenbannerimg.jpg
+│   │   ├── Mirelle__3_-Picsart-AiImageEnhancer-removebg-preview.png
+│   │   ├── pin guide.docx
+│   │   ├── rehdllcdaqe8osawwppn.png
+│   │   ├── remove the Pinterest.png
+│   │   ├── thumbnail_template.png
+│   │   ├── trendynailbanner.jpg
+│   │   ├── Untitled design.png
+│   │   ├── Untitled_design-removebg-preview (1).png
+│   │   ├── Untitled_design-removebg-preview.png
+│   │   ├── winternailbg.jpg
+│   │   └── youtube_banner_Poppins.png
+│   ├── modern.jpg
+│   ├── modern2.jpg
+│   ├── nailart.jpg
+│   ├── nailart2.jpg
+│   ├── nailcare.jpg
+│   ├── nailcare2.jpg
+│   ├── nailtrends.jpg
+│   ├── nailtrendsupdated.jpg
+│   ├── new-year-nails-hero.jpg
+│   ├── newyearsection.jpeg
+│   ├── newyearshop.txt
+│   ├── next.svg
+│   ├── og-default.png
+│   ├── pinboard1.jpg
+│   ├── pinboard2.jpg
+│   ├── pinboard3.jpg
+│   ├── pinboard4.jpg
+│   ├── pinboard5.jpg
+│   ├── pinboard6.jpg
+│   ├── pinboard7.jpg
+│   ├── pinboard8.jpg
+│   ├── pinboard9.jpg
+│   ├── pinboardbanner.jpg
+│   ├── pinprompt.txt
+│   ├── pinterest
+│   │   └── oauth-callback.html
+│   ├── pinterest-showcase
+│   │   ├── 7879b8b5e87b17e6d570119a23cc7fcf.jpg
+│   │   ├── pin1.jpg
+│   │   ├── pin2.jpg
+│   │   ├── pin3.jpg
+│   │   ├── pin4.jpg
+│   │   ├── pin5.jpg
+│   │   ├── pin6.jpg
+│   │   ├── pin7.jpg
+│   │   ├── pin8.jpg
+│   │   └── xxyyzz.jpg
+│   ├── postgenerator.txt
+│   ├── robots.txt
+│   ├── schem.txt
+│   ├── sho.txt
+│   ├── shopnail.jpg
+│   ├── site.webmanifest
+│   ├── SITEMAP.TXT
+│   ├── skintone.jpg
+│   ├── slupage.txt
+│   ├── springnail.jpg
+│   ├── summernail.jpg
+│   ├── tailwindconfig.txt
+│   ├── topi.txt
+│   ├── TRANSFER.TXT
+│   ├── trendsection.jpg
+│   ├── trendynailbanner.jpg
+│   ├── trendyshop.txt
+│   ├── vercel.svg
+│   ├── web-app-manifest-192x192.png
+│   ├── web-app-manifest-512x512.png
+│   ├── window.svg
+│   ├── winternail.jpg
+│   ├── winternailbg.jpg
+│   ├── wintersection.jpg
+│   ├── wintershop.txt
+│   └── xmasshop.txt
+├── README.md
+├── src
+│   ├── app
+│   │   ├── about
+│   │   │   └── page.tsx
+│   │   ├── api
+│   │   │   └── comments
+│   │   │       └── route.ts
+│   │   ├── blog
+│   │   │   ├── page.tsx
+│   │   │   └── [slug]
+│   │   │       └── page.tsx
+│   │   ├── bloggeneratorprompt.txt
+│   │   ├── brands
+│   │   │   └── page.tsx
+│   │   ├── contact
+│   │   │   └── page.tsx
+│   │   ├── error.tsx
+│   │   ├── favicon.png
+│   │   ├── globals.css
+│   │   ├── layout.tsx
+│   │   ├── loading.tsx
+│   │   ├── media
+│   │   │   ├── 04751424-e484-4b8d-973d-68b89b027838.png
+│   │   │   ├── 0e33e1e07bd8f34a85e998f9dfd41e30.mp4
+│   │   │   ├── 60eb6c0346c9b844df8f6538bc9f161e.mp4
+│   │   │   ├── aboutme.png
+│   │   │   ├── Add a little bit of body text.png
+│   │   │   ├── beauty-lashes-logo-with-letter-m-gold-gradient-premium-vector.jpg
+│   │   │   ├── c30675bc-a339-4440-b936-8b55a7b452ed.png
+│   │   │   ├── center align the bac.png
+│   │   │   ├── gold-letter-m-logo-design-600nw-2395372691.webp
+│   │   │   ├── Mirelle__3_-Picsart-AiImageEnhancer-removebg-preview.png
+│   │   │   ├── pin guide.docx
+│   │   │   ├── rehdllcdaqe8osawwppn.png
+│   │   │   ├── remove the Pinterest.png
+│   │   │   ├── thumbnail_template.png
+│   │   │   ├── Untitled design.png
+│   │   │   ├── Untitled_design-removebg-preview (1).png
+│   │   │   ├── Untitled_design-removebg-preview.png
+│   │   │   └── youtube_banner_Poppins.png
+│   │   ├── not-found.tsx
+│   │   ├── page.tsx
+│   │   ├── pinterest
+│   │   │   ├── halloweenbannerimg.jpg
+│   │   │   ├── page.tsx
+│   │   │   ├── trendynailbanner.jpg
+│   │   │   └── winternailbg.jpg
+│   │   ├── privacy-policy
+│   │   │   └── page.tsx
+│   │   ├── privacy-policy.tsx
+│   │   ├── shop
+│   │   │   ├── page.tsx
+│   │   │   └── [category]
+│   │   │       └── page.tsx
+│   │   ├── subscribe
+│   │   │   └── page.tsx
+│   │   ├── terms
+│   │   │   └── page.tsx
+│   │   ├── terms.tsx
+│   │   └── topics
+│   │       ├── at-home-hacks
+│   │       │   └── page.tsx
+│   │       ├── modern-women
+│   │       │   └── page.tsx
+│   │       ├── nail-art-guides
+│   │       │   └── page.tsx
+│   │       ├── nail-care-guide
+│   │       │   └── page.tsx
+│   │       ├── page.tsx
+│   │       ├── seasonal-trends
+│   │       │   └── page.tsx
+│   │       └── skin-tones
+│   │           └── page.tsx
+│   ├── components
+│   │   ├── AboutSection.tsx
+│   │   ├── Blog
+│   │   │   ├── BlogCard.tsx
+│   │   │   ├── BlogList.tsx
+│   │   │   ├── BlogPost.tsx
+│   │   │   ├── BlogSidebar.tsx
+│   │   │   ├── CommentSection.tsx
+│   │   │   ├── PinterestOverlay.tsx
+│   │   │   └── TLDRSection.tsx
+│   │   ├── BlogSection.tsx
+│   │   ├── Breadcrumbs.tsx
+│   │   ├── FeaturedBrandsSection.tsx
+│   │   ├── FeaturedTopicsSection.tsx
+│   │   ├── Footer.tsx
+│   │   ├── halloweenbannerimg.jpg
+│   │   ├── Header.tsx
+│   │   ├── HeroSection.tsx
+│   │   ├── media
+│   │   │   ├── athome.jpg
+│   │   │   ├── modern.jpg
+│   │   │   ├── nailart.jpg
+│   │   │   ├── nailcare.jpg
+│   │   │   ├── nailtrends.jpg
+│   │   │   └── skintone.jpg
+│   │   ├── NewsletterForm.tsx
+│   │   ├── PinterestShowcaseSection.tsx
+│   │   ├── Shop
+│   │   │   ├── ShopClient.tsx
+│   │   │   └── ShopTLDR.tsx
+│   │   ├── ShopSection.tsx
+│   │   ├── SubscribeSection.tsx
+│   │   ├── trendynailbanner.jpg
+│   │   └── winternailbg.jpg
+│   ├── content
+│   │   ├── blogs
+│   │   │   ├── christmas-nail-designs-2025.md
+│   │   │   ├── easy-halloween-nail-designs.md
+│   │   │   ├── goddess-nails-2025.md
+│   │   │   ├── halloween-nail-ideas-2025.md
+│   │   │   ├── holiday-vacation-nails-travel-guide.md
+│   │   │   ├── new-year-nails-2025.md
+│   │   │   ├── thanksgiving-nails-2025.md
+│   │   │   ├── valentine-nails-2026.md
+│   │   │   ├── vampire-nails-2025.md
+│   │   │   ├── wedding-nail-designs.md
+│   │   │   └── winter-nails-2025.md
+│   │   ├── shop-categories.json
+│   │   ├── shop-descriptions
+│   │   │   ├── christmas.json
+│   │   │   ├── fall.json
+│   │   │   ├── halloween.json
+│   │   │   ├── new-year.json
+│   │   │   ├── trendy.json
+│   │   │   └── winter.json
+│   │   ├── shop-faqs
+│   │   │   ├── christmas.json
+│   │   │   ├── fall.json
+│   │   │   ├── halloween.json
+│   │   │   ├── new-year.json
+│   │   │   ├── trendy.json
+│   │   │   └── winter.json
+│   │   └── shop-products
+│   │       ├── christmas.json
+│   │       ├── fall.json
+│   │       ├── halloween.json
+│   │       ├── new-year.json
+│   │       ├── trendy.json
+│   │       └── winter.json
+│   ├── data
+│   │   └── brands.ts
+│   ├── lib
+│   │   ├── blog.ts
+│   │   ├── brands.ts
+│   │   ├── breadcrumbs.ts
+│   │   ├── contentValidation.ts
+│   │   ├── entityMapping.ts
+│   │   ├── generateSchemas.ts
+│   │   ├── imageOptimization.ts
+│   │   ├── seo.ts
+│   │   └── shop.ts
+│   └── types
+│       ├── blog.ts
+│       ├── brand.ts
+│       └── shop.ts
+├── tailwind.config.js
+└── tsconfig.json
