@@ -1,0 +1,166 @@
+Phase 1: Core Architecture Overhaul
+
+Separate Metadata from Content
+
+Create src/content/metadata/ folder
+Extract all frontmatter to individual JSON files
+Keep markdown as content-only
+Update lib/blog.ts to merge JSON + markdown
+Create migration script to convert existing posts
+
+
+Category System
+
+Create src/app/blog/category/[category]/page.tsx
+Add getPostsByCategory() in lib/blog.ts
+Add category filter UI to blog listing page
+Generate category metadata/SEO
+
+
+Tag System
+
+Create src/app/blog/tag/[tag]/page.tsx
+Add getPostsByTag() and getAllTags() in lib/blog.ts
+Create tag cloud component
+Generate tag metadata/SEO
+
+
+Dynamic Related Posts
+
+Create components/Blog/RelatedPosts.tsx
+Add getRelatedPosts() logic (tag/category matching)
+Replace hardcoded HTML in posts
+Auto-update across all posts
+
+
+Search Functionality
+
+Create components/Blog/BlogSearch.tsx
+Implement Fuse.js for client-side search
+Add search bar to blog listing page
+Index title, excerpt, tags, category
+
+
+
+
+Phase 2: Performance & Scalability
+
+ISR (Incremental Static Regeneration)
+
+Add revalidate: 3600 to blog pages
+Update generateStaticParams() with fallback: 'blocking'
+Configure for optimal rebuild times
+
+
+Metadata Caching Layer
+
+Create in-memory cache for metadata
+Load all JSON files at build time
+Optimize repeated metadata queries
+
+
+Pagination System
+
+Add getPaginatedPosts(page, perPage) in lib/blog.ts
+Create pagination UI component
+Set default to 12 posts per page
+Add page navigation
+
+
+Bundle Size Optimization
+
+Implement lazy loading for blog components
+Optimize metadata loading on listing pages
+Ensure pages stay under 128KB
+
+
+
+
+Phase 3: User Experience
+
+Reading Progress Bar
+
+Create components/Blog/ReadingProgress.tsx
+Track scroll position
+Display at top of post pages
+
+
+Social Share Buttons
+
+Create components/Blog/SocialShare.tsx
+Add Pinterest, Twitter, Facebook share
+Include proper Open Graph tags
+
+
+Dynamic Reading Time
+
+Calculate from wordCount field
+Remove hardcoded readTime
+Update in lib/blog.ts
+
+
+
+
+Phase 4: Content Management
+
+Content Audit System
+
+Add lastReviewed field to metadata schema
+Create script to flag posts >12 months old
+Add admin view for content status
+
+
+Bulk Update Scripts
+
+Script: Add new schema fields to all posts
+Script: Update categories/tags in bulk
+Script: Regenerate metadata
+Script: Update image paths
+
+
+
+
+Phase 5: Analytics & Monitoring
+
+Analytics Integration
+
+Set up Vercel Analytics or Plausible
+Track post views, bounce rate, read time
+Add analytics dashboard view
+
+
+Build Time Optimization
+
+Monitor build performance
+Optimize static generation strategy
+Configure proper caching headers
+
+
+
+
+Phase 6: SEO & Image Optimization
+
+Image Optimization
+
+Ensure all blog images use Next.js <Image>
+Add blur placeholders
+Implement WebP conversion
+Consider CDN integration
+
+
+Enhanced SEO
+
+Validate all schema.org markup
+Add breadcrumbs to all pages
+Implement proper canonical URLs
+Add XML sitemap updates
+
+
+
+
+Total Changes:
+
+18 major features
+~25-30 files created/modified
+4 automation scripts
+Zero features missed
