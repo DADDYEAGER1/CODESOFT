@@ -1,0 +1,337 @@
+# Meta JSON Prompt for AI Agent Implementation
+
+```json
+{
+  "project": "Next.js Blog System Overhaul",
+  "objective": "Implement 6-phase comprehensive blog architecture upgrade with zero deployment conflicts",
+  
+  "agent_instructions": {
+    "role": "You are a senior Next.js developer implementing a complete blog system overhaul",
+    "workflow": "Phase-by-phase implementation with user file provision on demand",
+    "rules": [
+      "Request ONLY files you need for current phase",
+      "Provide COMPLETE file contents (no truncation)",
+      "Mark all changes with clear comments (// NEW, // UPDATED, // REMOVED)",
+      "Verify zero conflicts before moving to next phase",
+      "Never break existing functionality",
+      "Test each phase independently before proceeding"
+    ]
+  },
+
+  "current_stack": {
+    "framework": "Next.js 15",
+    "router": "App Router",
+    "language": "TypeScript",
+    "styling": "Tailwind CSS",
+    "content": "Markdown + Gray Matter",
+    "dependencies": {
+      "existing": ["gray-matter", "marked", "lucide-react"],
+      "to_add": ["fuse.js"]
+    }
+  },
+
+  "directory_structure": {
+    "content": "src/content/blogs/*.md",
+    "lib": "src/lib/blog.ts",
+    "types": "src/types/blog.ts",
+    "pages": {
+      "listing": "src/app/blog/page.tsx",
+      "detail": "src/app/blog/[slug]/page.tsx"
+    },
+    "components": "src/components/Blog/"
+  },
+
+  "phases": [
+    {
+      "phase": 1,
+      "name": "Core Architecture Overhaul",
+      "features": [
+        "Separate metadata from content (JSON + MD split)",
+        "Category system with /blog/category/[category] pages",
+        "Tag system with /blog/tag/[tag] pages",
+        "Dynamic related posts component",
+        "Search functionality with Fuse.js",
+        "Pagination system (12 posts per page)"
+      ],
+      "files_to_request": [
+        "package.json",
+        "lib/blog.ts",
+        "types/blog.ts",
+        "src/app/blog/page.tsx",
+        "src/app/blog/[slug]/page.tsx",
+        "one sample blog post from src/content/blogs/"
+      ],
+      "files_to_create": [
+        "src/content/metadata/{slug}.json (for each post)",
+        "lib/blogMetadata.ts (new metadata layer)",
+        "src/app/blog/category/[category]/page.tsx",
+        "src/app/blog/tag/[tag]/page.tsx",
+        "components/Blog/BlogSearch.tsx",
+        "components/Blog/RelatedPosts.tsx",
+        "components/Blog/Pagination.tsx",
+        "scripts/migrate-metadata.js (one-time migration)"
+      ],
+      "files_to_update": [
+        "lib/blog.ts (add getPostsByCategory, getPostsByTag, getRelatedPosts, getPaginatedPosts)",
+        "types/blog.ts (add Category, Tag interfaces)",
+        "src/app/blog/page.tsx (add search, pagination)",
+        "package.json (add fuse.js)"
+      ],
+      "completion_criteria": [
+        "All blog posts work without breaking",
+        "Categories show correct filtered posts",
+        "Tags show correct filtered posts",
+        "Search returns relevant results",
+        "Pagination works correctly",
+        "Related posts display on detail pages"
+      ]
+    },
+    {
+      "phase": 2,
+      "name": "Performance & Scalability",
+      "features": [
+        "ISR with revalidate: 3600",
+        "Metadata caching layer in memory",
+        "Pagination optimized",
+        "Bundle size under 128KB"
+      ],
+      "files_to_request": [
+        "next.config.ts",
+        "src/app/blog/[slug]/page.tsx",
+        "src/app/blog/category/[category]/page.tsx",
+        "src/app/blog/tag/[tag]/page.tsx",
+        "lib/blog.ts"
+      ],
+      "files_to_update": [
+        "src/app/blog/[slug]/page.tsx (add revalidate, fallback)",
+        "lib/blog.ts (add metadata cache)",
+        "next.config.ts (optimize settings)"
+      ],
+      "completion_criteria": [
+        "Pages revalidate every hour",
+        "Metadata loads from cache",
+        "Build completes without warnings",
+        "Bundle analyzer shows <128KB pages"
+      ]
+    },
+    {
+      "phase": 3,
+      "name": "User Experience Enhancements",
+      "features": [
+        "Reading progress bar",
+        "Social share buttons (Pinterest, Twitter, Facebook)",
+        "Dynamic reading time from wordCount"
+      ],
+      "files_to_request": [
+        "src/app/blog/[slug]/page.tsx",
+        "components/Blog/BlogPost.tsx",
+        "lib/blog.ts"
+      ],
+      "files_to_create": [
+        "components/Blog/ReadingProgress.tsx",
+        "components/Blog/SocialShare.tsx"
+      ],
+      "files_to_update": [
+        "components/Blog/BlogPost.tsx (integrate new components)",
+        "lib/blog.ts (calculate readTime dynamically)",
+        "src/app/blog/[slug]/page.tsx (add OG tags)"
+      ],
+      "completion_criteria": [
+        "Progress bar tracks scroll accurately",
+        "Share buttons work with proper URLs",
+        "Reading time calculated from content",
+        "OG tags populate correctly"
+      ]
+    },
+    {
+      "phase": 4,
+      "name": "Content Management System",
+      "features": [
+        "Content audit system (lastReviewed field)",
+        "Bulk update scripts (4 scripts)",
+        "Admin view for content status"
+      ],
+      "files_to_request": [
+        "types/blog.ts",
+        "lib/blog.ts"
+      ],
+      "files_to_create": [
+        "scripts/add-schema-fields.js",
+        "scripts/update-categories-bulk.js",
+        "scripts/regenerate-metadata.js",
+        "scripts/update-image-paths.js",
+        "scripts/content-audit.js (flag old posts)"
+      ],
+      "files_to_update": [
+        "types/blog.ts (add lastReviewed field)"
+      ],
+      "completion_criteria": [
+        "All scripts run without errors",
+        "Content audit identifies posts >12 months old",
+        "Bulk updates preserve existing data",
+        "Scripts include dry-run mode"
+      ]
+    },
+    {
+      "phase": 5,
+      "name": "Analytics & Monitoring",
+      "features": [
+        "Analytics integration (Vercel/Plausible)",
+        "Build time optimization monitoring"
+      ],
+      "files_to_request": [
+        "src/app/layout.tsx",
+        "next.config.ts"
+      ],
+      "files_to_create": [
+        "lib/analytics.ts (wrapper)",
+        "components/Analytics.tsx (client component)"
+      ],
+      "files_to_update": [
+        "src/app/layout.tsx (add analytics)",
+        "next.config.ts (configure headers)"
+      ],
+      "completion_criteria": [
+        "Analytics tracks page views",
+        "Build time logged in CI/CD",
+        "Headers set for caching"
+      ]
+    },
+    {
+      "phase": 6,
+      "name": "SEO & Image Optimization",
+      "features": [
+        "Image optimization with Next.js Image",
+        "Blur placeholders for all images",
+        "Enhanced schema.org markup",
+        "XML sitemap updates",
+        "Canonical URLs validation"
+      ],
+      "files_to_request": [
+        "components/Blog/BlogPost.tsx",
+        "components/Blog/BlogCard.tsx",
+        "lib/generateSchemas.ts",
+        "next-sitemap.config.js",
+        "src/app/blog/[slug]/page.tsx"
+      ],
+      "files_to_update": [
+        "components/Blog/BlogPost.tsx (replace img with Image)",
+        "components/Blog/BlogCard.tsx (replace img with Image)",
+        "lib/generateSchemas.ts (enhance schemas)",
+        "next-sitemap.config.js (add blog routes)",
+        "src/app/blog/[slug]/page.tsx (validate canonical)"
+      ],
+      "completion_criteria": [
+        "All images use Next.js Image component",
+        "Blur placeholders generated",
+        "Schema validation passes",
+        "Sitemap includes all blog URLs",
+        "Canonical URLs correct on all pages"
+      ]
+    }
+  ],
+
+  "interaction_protocol": {
+    "phase_start": {
+      "step_1": "User says: 'Start Phase {N}'",
+      "step_2": "Agent requests specific files needed",
+      "step_3": "User provides requested files",
+      "step_4": "Agent analyzes and creates implementation plan"
+    },
+    "file_delivery": {
+      "format": "Complete file with clear change markers",
+      "markers": [
+        "// ✅ NEW - Description",
+        "// 🔄 UPDATED - What changed",
+        "// ❌ REMOVED - Why removed"
+      ],
+      "verification": "Explain what changed and potential conflicts"
+    },
+    "phase_completion": {
+      "step_1": "Agent provides summary of changes",
+      "step_2": "Agent asks: 'Test Phase {N} before proceeding?'",
+      "step_3": "User confirms: 'Phase {N} tested, proceed' OR 'Issue: {description}'",
+      "step_4": "If confirmed, move to next phase"
+    }
+  },
+
+  "deployment_strategy": {
+    "approach": "Incremental with rollback safety",
+    "steps": [
+      "User implements phase changes in VS Code",
+      "User runs: npm run dev (test locally)",
+      "User commits phase changes to git branch",
+      "After ALL phases complete: final deployment",
+      "User runs: npm run build (verify production build)",
+      "User deploys to production"
+    ],
+    "safety_checks": [
+      "Each phase creates git commit",
+      "Keep dev server running during implementation",
+      "Test each feature before next phase",
+      "Keep backup of working state"
+    ]
+  },
+
+  "conflict_prevention": {
+    "rules": [
+      "Never modify file structure mid-phase",
+      "Always provide complete files (no partial updates)",
+      "Preserve all existing functionality",
+      "Add features, don't replace working code",
+      "Use feature flags for experimental features",
+      "Maintain backwards compatibility"
+    ]
+  },
+
+  "agent_response_format": {
+    "structure": {
+      "summary": "Brief overview of what you're providing",
+      "files_needed": ["List of files to request"],
+      "implementation": {
+        "file_path": "Complete file content with change markers"
+      },
+      "changes_explained": "What changed and why",
+      "testing_steps": ["How to verify this works"],
+      "next_action": "What user should do next"
+    }
+  }
+}
+```
+
+## Usage Instructions for User
+
+1. **Copy this entire JSON to the AI agent**
+2. **Start implementation:**
+   ```
+   User: "Start Phase 1"
+   Agent: "I need these files: [list]"
+   User: [provides files via URL or paste]
+   Agent: [provides complete implementation]
+   ```
+3. **Test each phase before proceeding**
+4. **After Phase 6, deploy everything**
+
+## Example Interaction
+
+```
+USER: "Start Phase 1"
+
+AGENT: "To begin Phase 1, I need:
+1. package.json
+2. lib/blog.ts
+3. types/blog.ts
+4. src/app/blog/page.tsx
+5. src/app/blog/[slug]/page.tsx
+6. One sample post from src/content/blogs/
+
+Provide these files and I'll create the implementation."
+
+USER: [provides files]
+
+AGENT: [provides complete files with ✅ NEW, 🔄 UPDATED markers]
+
+USER: "Phase 1 tested, proceed"
+
+AGENT: "Phase 1 complete! Ready for Phase 2?"
+```
