@@ -1,0 +1,568 @@
+# AI Agent Blog Writing Guide for Mirelle Blog System
+
+**Complete guide for AI agents to write blog posts that work perfectly with the Mirelle Next.js blog system**
+
+---
+
+## 🎯 System Overview
+
+The Mirelle blog uses a **hybrid architecture** that splits content into:
+1. **Markdown files** (`.md`) - Core content and metadata
+2. **JSON files** (`.json`) - Editable metadata (titles, excerpts, tags, images, etc.)
+
+This architecture allows:
+- ✅ Easy content editing without touching code
+- ✅ Fast metadata updates without regenerating full content
+- ✅ In-memory caching for performance
+- ✅ SEO-optimized with rich schema.org markup
+- ✅ ISR (Incremental Static Regeneration) every hour
+
+---
+
+## 📂 File Structure You Need to Know
+
+```
+mirelle-site/
+├── src/
+│   ├── content/
+│   │   ├── blogs/
+│   │   │   └── your-post-slug.md          ← MAIN CONTENT FILE (you create this)
+│   │   └── metadata/
+│   │       ├── titles.json                 ← Post titles (auto-updated)
+│   │       ├── excerpts.json               ← Meta descriptions (auto-updated)
+│   │       ├── tags.json                   ← Post tags (auto-updated)
+│   │       ├── images.json                 ← Featured images (auto-updated)
+│   │       ├── imageAlts.json              ← Image alt text (auto-updated)
+│   │       ├── dateModified.json           ← Last updated dates (auto-updated)
+│   │       ├── tldr.json                   ← TL;DR summaries (optional)
+│   │       └── faqItems.json               ← FAQ sections (optional)
+│   ├── lib/
+│   │   ├── blog.ts                         ← Fetches and merges MD + JSON
+│   │   └── generateSchemas.ts              ← Generates SEO schemas
+│   ├── types/
+│   │   └── blog.ts                         ← TypeScript interfaces
+│   └── app/
+│       └── blog/
+│           ├── page.tsx                    ← Blog listing page
+│           ├── [slug]/page.tsx             ← Individual post pages
+│           ├── category/[category]/page.tsx ← Category pages
+│           └── tag/[tag]/page.tsx          ← Tag pages
+└── scripts/
+    ├── content-audit.js                    ← Check post health
+    ├── add-schema-fields.js                ← Add missing SEO fields
+    ├── regenerate-metadata.js              ← Sync MD → JSON
+    └── validate-canonicals.js              ← Check canonical URLs
+```
+
+---
+
+## 📝 How to Write a Blog Post (Step-by-Step)
+
+### Step 1: Create the Markdown File
+
+**Location:** `src/content/blogs/your-post-slug.md`
+
+**File naming rules:**
+- Use lowercase
+- Separate words with hyphens (-)
+- Match the URL slug exactly
+- Example: `christmas-nails-2025.md` → URL: `/blog/christmas-nails-2025`
+
+---
+
+### Step 2: Write the Frontmatter (YAML Header)
+
+Every blog post **MUST** start with YAML frontmatter between `---` markers.
+
+#### ✅ REQUIRED FIELDS (Must Have):
+
+```yaml
+---
+title: "Your Amazing Blog Post Title Here"
+excerpt: "A compelling 150-160 character meta description that appears in Google search results and social shares"
+date: "2025-10-29T14:30:00-04:00"
+author: "Mirellé Team"
+category: "Seasonal Nail Trends"
+tags:
+  - "christmas nails"
+  - "holiday nail art"
+  - "festive designs"
+image: "/images/blog/your-hero-image.jpg"
+imageAlt: "Descriptive alt text for the hero image showing what's in the photo"
+readTime: "12 min"
+slug: "your-post-slug"
+canonical: "https://mirelleinspo.com/blog/your-post-slug"
+---
+```
+
+#### 🎯 OPTIONAL BUT RECOMMENDED FIELDS:
+
+```yaml
+---
+# ... required fields above ...
+
+# Image dimensions for SEO
+imageWidth: 1200
+imageHeight: 630
+
+# Last modified date (for SEO)
+dateModified: "2025-10-29"
+
+# Word count (calculated automatically if missing)
+wordCount: 4200
+
+# TL;DR Section (highly recommended)
+tldr:
+  summary:
+    - "Quick point 1 about what readers will learn"
+    - "Quick point 2 about main takeaways"
+    - "Quick point 3 about actionable advice"
+  keyTakeaways:
+    - "Key insight 1"
+    - "Key insight 2"
+    - "Key insight 3"
+
+# FAQ Section (great for SEO)
+faqItems:
+  - question: "What are the most popular nail colors for 2025"
+    answer: "Deep burgundy, emerald green, and champagne gold dominate 2025 trends. Chrome finishes in silver and rose gold are massive."
+  - question: "How long do these designs last"
+    answer: "Gel manicures last 2-3 weeks with proper care, while regular polish lasts 5-7 days."
+
+# Gallery Images (for posts with multiple images)
+galleryImages:
+  - url: "/images/blog/step1.jpg"
+    alt: "Step 1 description"
+    width: 1200
+    height: 800
+    caption: "Optional caption text"
+  - url: "/images/blog/step2.jpg"
+    alt: "Step 2 description"
+    width: 1200
+    height: 800
+    caption: "Another caption"
+
+# Tutorial Steps (for how-to guides)
+tutorialSteps:
+  - position: 1
+    name: "Prep your nails"
+    text: "Push back cuticles, buff nail surface, wipe with alcohol. Proper prep ensures gel adhesion."
+  - position: 2
+    name: "Apply base coat"
+    text: "Thin layer, cap free edges. Cure 60 seconds. Protects natural nails."
+
+tutorialMetadata:
+  name: "Classic Red and Gold Christmas Nails Tutorial"
+  description: "Step-by-step guide for elegant festive manicure"
+  totalTime: "PT45M"
+  estimatedCost:
+    currency: "USD"
+    value: "35"
+  tools:
+    - "UV/LED lamp 120W"
+    - "Striping brush"
+    - "Dotting tool"
+  supplies:
+    - "Red gel polish"
+    - "Gold chrome powder"
+    - "Base coat"
+---
+```
+
+---
+
+### Step 3: Write the Content (After Frontmatter)
+
+After the closing `---`, write your markdown content:
+
+```markdown
+---
+# Frontmatter above
+---
+
+We're obsessed with what's happening in nail art right now. After curating designs from hundreds of top nail artists...
+
+[Your introduction paragraph]
+
+---
+
+## Main Heading 1
+
+Your first section content here. Use **bold** for emphasis and [links](https://example.com) where needed.
+
+### Subheading If Needed
+
+More detailed content under subheadings.
+
+---
+
+## Main Heading 2
+
+Second section content. Keep paragraphs short (3-4 sentences max) for readability.
+
+**Pro tip:** Use bullet points for lists:
+- Point 1
+- Point 2
+- Point 3
+
+---
+
+## Main Heading 3
+
+Continue with more sections...
+
+---
+
+## Frequently Asked Questions
+
+### What are the best colors for this trend?
+
+Answer the question thoroughly with 2-3 sentences providing value.
+
+### How long does this last?
+
+Another detailed answer that actually helps readers.
+
+---
+
+## Conclusion
+
+Wrap up with key takeaways and a call to action.
+
+**Ready to try these designs?** Follow us on [Instagram @mirelle_inspo](https://www.instagram.com/mirelle_inspo/) for daily inspiration!
+```
+
+---
+
+## 📐 Content Writing Guidelines
+
+### Headings Structure:
+```markdown
+# H1 - Only in title (never in content)
+## H2 - Main sections (these get IDs for navigation)
+### H3 - Subsections
+```
+
+### Formatting:
+```markdown
+**Bold text** - For emphasis
+*Italic text* - For subtle emphasis
+[Link text](url) - For hyperlinks
+![Image](url) - For images (avoid, use frontmatter instead)
+```
+
+### Internal Links (Important for SEO):
+```markdown
+Check out our [seasonal trends](https://www.mirelleinspo.com/topics/seasonal-trends) guide.
+Learn more about [at-home techniques](https://www.mirelleinspo.com/topics/at-home-hacks).
+```
+
+### Images in Content:
+```markdown
+<div class="my-8 text-center">
+  <img src="/images/blog/your-image.jpg" alt="Descriptive alt text" class="rounded-lg shadow-lg mx-auto" />
+</div>
+```
+
+---
+
+## 🎨 Content Best Practices
+
+### Title Guidelines:
+- **Length:** 50-60 characters (optimal for SEO)
+- **Format:** "Main Topic: Specific Benefit | Year"
+- **Examples:**
+  - ✅ "Christmas Nails 2025: 50+ Festive Designs from Classic to Chrome"
+  - ✅ "Easy Halloween Nail Designs: 35+ Spooky-Chic Ideas"
+  - ❌ "Nails" (too short)
+  - ❌ "The Complete Ultimate Comprehensive Guide to Everything About Christmas Nail Art Designs for the Holiday Season 2025" (too long)
+
+### Excerpt Guidelines:
+- **Length:** 150-160 characters (optimal for Google)
+- **Include:** Main benefit + keyword
+- **Examples:**
+  - ✅ "Discover 50+ stunning Christmas nail designs for 2025. From timeless red and green to trending chrome finishes, find your perfect festive manicure."
+  - ❌ "This post is about nails." (too short, no value)
+
+### Tag Guidelines:
+- **Count:** 3-8 tags per post
+- **Format:** Lowercase, spaces allowed
+- **Examples:**
+  - ✅ "christmas nails", "holiday nail art", "festive designs"
+  - ❌ "Christmas-Nails", "HOLIDAY ART" (inconsistent formatting)
+
+### Category Guidelines:
+Available categories (use exactly as shown):
+- "Seasonal Nail Trends"
+- "Nail Care"
+- "Tutorial"
+- "Product Reviews"
+- "Nail Art Inspiration"
+
+---
+
+## 📊 SEO Optimization Checklist
+
+### ✅ Every Post Must Have:
+- [ ] Title (50-60 chars)
+- [ ] Excerpt (150-160 chars)
+- [ ] Canonical URL
+- [ ] Featured image with alt text
+- [ ] Image dimensions (1200x630 recommended)
+- [ ] Category
+- [ ] 3-8 tags
+- [ ] Date in ISO format
+- [ ] Author name
+- [ ] Read time estimate
+- [ ] At least 3 H2 headings
+- [ ] At least 1 internal link
+- [ ] Word count 1000+ (800 minimum)
+
+### 🎯 Highly Recommended:
+- [ ] TL;DR section (boosts engagement)
+- [ ] FAQ section (great for Google snippets)
+- [ ] Gallery images (for visual posts)
+- [ ] Tutorial steps (for how-to content)
+- [ ] External links to authoritative sources
+
+---
+
+## 🔄 After Creating the Post
+
+### Step 1: Add the Markdown File
+```bash
+# Save your file as:
+src/content/blogs/your-post-slug.md
+```
+
+### Step 2: Run Schema Field Script
+```bash
+# Adds canonical, wordCount, imageWidth, imageHeight automatically
+node scripts/add-schema-fields.js --dry-run
+node scripts/add-schema-fields.js
+```
+
+### Step 3: Regenerate Metadata
+```bash
+# Extracts metadata from MD → JSON files
+node scripts/regenerate-metadata.js
+```
+
+### Step 4: Validate Everything
+```bash
+# Check canonical URLs
+node scripts/validate-canonicals.js --fix
+
+# Run SEO audit
+node scripts/seo-audit.js
+```
+
+### Step 5: Test Locally
+```bash
+npm run dev
+# Visit: http://localhost:3000/blog/your-post-slug
+```
+
+### Step 6: Build and Deploy
+```bash
+npm run build
+git add .
+git commit -m "feat: added new blog post about [topic]"
+git push
+```
+
+---
+
+## 📋 Complete Example Post
+
+**Filename:** `src/content/blogs/summer-nails-2025.md`
+
+```markdown
+---
+title: "Summer Nails 2025: 40+ Vibrant Designs for Beach Season"
+excerpt: "Discover 40+ trending summer nail designs for 2025. From neon brights to ocean-inspired art, find your perfect beach-ready manicure with expert tips."
+date: "2025-05-15T10:00:00-04:00"
+author: "Mirellé Team"
+category: "Seasonal Nail Trends"
+tags:
+  - "summer nails"
+  - "beach nails"
+  - "neon nails"
+  - "tropical designs"
+  - "vacation nails"
+image: "/images/blog/summer-nails-2025-hero.jpg"
+imageAlt: "Vibrant summer nail designs featuring neon colors and tropical patterns for 2025 beach season"
+readTime: "10 min"
+slug: "summer-nails-2025"
+canonical: "https://mirelleinspo.com/blog/summer-nails-2025"
+imageWidth: 1200
+imageHeight: 630
+dateModified: "2025-05-15"
+wordCount: 3500
+
+tldr:
+  summary:
+    - "40+ trending summer nail designs from neon brights to ocean-inspired art"
+    - "Expert tips for long-lasting manicures in hot weather and chlorine"
+    - "Step-by-step tutorials for tropical patterns and beach-ready nails"
+  keyTakeaways:
+    - "Neon and coral dominate 2025"
+    - "Gel lasts longer in summer heat"
+    - "Tropical patterns are trending"
+
+faqItems:
+  - question: "What are the most popular summer nail colors for 2025"
+    answer: "Neon coral, electric blue, and sunshine yellow lead 2025 trends. Ocean-inspired teal and tropical palm green are also massive. These vibrant shades complement summer tans perfectly."
+  - question: "How do I make summer nails last longer"
+    answer: "Use gel polish for 2-3 week wear even in heat and water. Apply cuticle oil daily, avoid prolonged chlorine exposure, and wear gloves for chores. Gel resists chipping better than regular polish in summer conditions."
+  - question: "Can I do summer nails at home"
+    answer: "Absolutely! Start with quality base and topcoat, use thin polish layers, and try simple tropical patterns with dotting tools. Nail stickers make professional designs easy. Practice on one nail first before doing full set."
+
+galleryImages:
+  - url: "/images/blog/summer-colors-2025.png"
+    alt: "Summer 2025 nail color palette featuring neon coral electric blue and tropical green"
+    width: 1200
+    height: 800
+    caption: "2025's hottest summer nail color combinations"
+  - url: "/images/blog/tropical-patterns-2025.png"
+    alt: "Tropical nail art patterns with palm leaves and ocean waves"
+    width: 1200
+    height: 800
+    caption: "Beach-inspired patterns perfect for vacation nails"
+---
+
+Summer's here and we're absolutely obsessed with the nail trends taking over beaches and poolsides. After analyzing hundreds of designs from top nail artists and tracking trending manicures across Pinterest, Instagram, and TikTok, we can confirm: summer nails in 2025 are brighter, bolder, and more playful than ever.
+
+The summer nail scene has evolved dramatically from subtle pastels. We're seeing neon colors that literally glow under UV light, ocean-inspired designs with actual texture, and tropical patterns that transport you straight to paradise. These aren't your typical summer manicures—they're wearable art that lasts through beach days, pool parties, and tropical vacations.
+
+We curated 40+ stunning summer nail designs that actually survive real beach life—not just Instagram photos. From vibrant neons to sophisticated coastal vibes, these manicures prove you don't need to sacrifice style for durability. Whether you're heading to a resort or doing nails at home, you'll find your perfect summer look here.
+
+Ready to discover this season's most stunning beach-ready nail art? Let's dive in. 🌊☀️
+
+---
+
+## What's Trending in Summer Nails 2025
+
+The summer nail landscape is absolutely electric this year. We reached out to top coastal nail salons and analyzed thousands of trending designs to identify what's genuinely popular versus temporary social media hype.
+
+**Neon is back in a massive way.** We're seeing fluorescent coral, electric blue, and sunshine yellow everywhere. Top nail artists report neon requests are up 400% compared to last year. These aren't subtle neons—they're bold, bright, and designed to pop against summer tans.
+
+**Ocean-inspired designs dominate beach destinations.** Wave patterns, sea foam textures, and underwater gradients appear constantly in resort nail bookings. Clients specifically request designs that complement beach environments and photograph beautifully in ocean settings.
+
+[Continue with more sections...]
+
+---
+
+## Frequently Asked Questions
+
+### What are the most popular summer nail colors for 2025
+
+Neon coral, electric blue, and sunshine yellow lead 2025 trends. Ocean-inspired teal and tropical palm green are also massive. These vibrant shades complement summer tans perfectly.
+
+### How do I make summer nails last longer
+
+Use gel polish for 2-3 week wear even in heat and water. Apply cuticle oil daily, avoid prolonged chlorine exposure, and wear gloves for chores. Gel resists chipping better than regular polish in summer conditions.
+
+---
+
+## Ready for Your Best Summer Nails Ever
+
+We've curated 40+ stunning summer nail designs that prove beach-ready manicures can be both bold and long-lasting. From neon brights to sophisticated ocean-inspired art, there's a perfect look for every style and skill level.
+
+**Ready to rock these designs?** Follow us on [Instagram @mirelle_inspo](https://www.instagram.com/mirelle_inspo/) for daily summer nail inspiration!
+```
+
+---
+
+## ⚠️ Common Mistakes to Avoid
+
+### ❌ DON'T:
+1. **Use H1 in content** - Only in frontmatter title
+2. **Forget canonical URLs** - Every post needs one
+3. **Skip image alt text** - Critical for SEO and accessibility
+4. **Use inconsistent tag formatting** - Stick to lowercase
+5. **Write short excerpts** - Must be 150-160 chars for SEO
+6. **Omit internal links** - Helps SEO and user navigation
+7. **Use placeholder dates** - Must be valid ISO 8601 format
+8. **Forget TL;DR** - Boosts engagement significantly
+9. **Skip FAQs** - Great for Google featured snippets
+10. **Use wrong category names** - Must match exactly
+
+### ✅ DO:
+1. **Follow the template exactly** - System depends on it
+2. **Run validation scripts** - Catches errors before deploy
+3. **Test locally first** - Ensure everything works
+4. **Use descriptive file names** - Matches URL slug
+5. **Include word count** - Helps with SEO rankings
+6. **Add gallery images** - Visual content performs better
+7. **Write long-form content** - 1000+ words ideal
+8. **Use H2 headings** - Creates navigation structure
+9. **Include tutorial steps** - For how-to content
+10. **Validate before deploying** - Use SEO audit script
+
+---
+
+## 🎯 Quick Reference
+
+### File Delivery Checklist:
+```
+✅ Create: src/content/blogs/your-slug.md
+✅ Include: Complete YAML frontmatter
+✅ Write: 1000+ words of quality content
+✅ Add: TL;DR section
+✅ Include: FAQ section (3+ questions)
+✅ Add: Internal links (2+ minimum)
+✅ Run: node scripts/add-schema-fields.js
+✅ Run: node scripts/regenerate-metadata.js
+✅ Run: node scripts/validate-canonicals.js --fix
+✅ Run: node scripts/seo-audit.js
+✅ Test: npm run dev
+✅ Build: npm run build
+✅ Deploy: git push
+```
+
+### Essential Commands:
+```bash
+# Add schema fields
+node scripts/add-schema-fields.js
+
+# Sync metadata
+node scripts/regenerate-metadata.js
+
+# Validate SEO
+node scripts/seo-audit.js
+
+# Check URLs
+node scripts/validate-canonicals.js --fix
+
+# Test locally
+npm run dev
+
+# Build for production
+npm run build
+```
+
+---
+
+## 🚀 You're Ready!
+
+This guide contains everything needed to write blog posts that integrate perfectly with the Mirelle system. The posts will:
+- ✅ Automatically generate rich Schema.org markup
+- ✅ Appear in category and tag pages
+- ✅ Show in related posts sections
+- ✅ Have perfect SEO optimization
+- ✅ Include reading progress bars
+- ✅ Have social sharing buttons
+- ✅ Display TL;DR summaries
+- ✅ Show FAQ sections with schema
+- ✅ Generate breadcrumb navigation
+- ✅ Cache for fast performance
+- ✅ Revalidate every hour with ISR
+
+**Follow this guide exactly, and your posts will work flawlessly!** 🎉
+
+---
+
+**Last Updated:** October 29, 2025  
+**System Version:** Next.js 15 + App Router  
+**Compatibility:** All phases 1-6 complete
