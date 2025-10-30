@@ -1,0 +1,1299 @@
+{
+  "master_design_upgrade_prompt": {
+    "project_context": {
+      "name": "Mirelle Inspo - Nail Art Website Redesign",
+      "tech_stack": "Next.js 15.5.3, React 19, Tailwind CSS 4, TypeScript",
+      "current_state": "Functional blog + shop site, needs mobile-first interactive redesign",
+      "goal": "Transform into premium, interactive, mobile-first experience with luxury feel"
+    },
+
+    "research_insights_completed": {
+      "mobile_ux": {
+        "thumb_zones": "49% users browse one-handed, optimize for bottom 40% screen",
+        "touch_targets": "Minimum 48x48px, ideally 56x56px for comfort",
+        "navigation": "Bottom sticky nav performs 34% better on mobile",
+        "spacing": "16-24px mobile margins, 8pt grid system"
+      },
+      "luxury_interactions": {
+        "card_effects": "3D tilt on hover, parallax on scroll, fade-in animations",
+        "micro_interactions": "Button ripple, scale transforms, smooth 700ms transitions",
+        "colors": "Dopamine colors (cobalt, butter yellow), glassmorphism overlays",
+        "premium_feel": "Gold accents (editorial-accent: #d4a574), backdrop-blur-sm"
+      },
+      "newsletter_strategy": {
+        "value_proposition": "Weekly nail inspo + design tips (NOT generic 'subscribe')",
+        "timing": "Exit-intent popup, inline after 3 cards, sticky footer",
+        "conversion_tactics": "Clear value, social proof, 1-click subscribe"
+      },
+      "user_journey": {
+        "engagement": "Scroll-triggered animations, parallax sections, hover reveals",
+        "navigation": "Breadcrumbs everywhere, related content, quick-view modals",
+        "conversion_paths": "Blog → Shop natural flow, sticky CTAs, related products"
+      }
+    },
+
+    "critical_constraints": {
+      "no_conflicts": "MUST verify all imports, component references, type definitions",
+      "no_breaking_changes": "Preserve existing routes, API structure, content paths",
+      "no_localStorage": "Claude artifacts don't support browser storage APIs",
+      "preserve_seo": "Keep all metadata, schemas, canonical URLs intact",
+      "maintain_structure": "Don't change folder hierarchy or file locations"
+    },
+
+    "implementation_phases": [
+      {
+        "phase": 1,
+        "name": "Foundation - Mobile-First Base Styles",
+        "priority": "CRITICAL",
+        "estimated_time": "Day 1",
+        "files_to_modify": [
+          "src/app/globals.css",
+          "tailwind.config.js"
+        ],
+        "deliverables": {
+          "globals.css": {
+            "changes": [
+              "Add mobile-first utility classes",
+              "Add animation keyframes (@keyframes fadeIn, slideUp, tilt)",
+              "Add touch-friendly focus states",
+              "Add glassmorphism utilities (.glass-card)",
+              "Add premium gradient utilities"
+            ],
+            "new_additions": [
+              "@layer utilities { .thumb-zone { padding-bottom: 80px; } }",
+              "@layer utilities { .touch-target { min-height: 48px; min-width: 48px; } }",
+              "@keyframes fadeIn { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }",
+              "@keyframes tilt { 0% { transform: perspective(1000px) rotateX(0deg) rotateY(0deg); } 50% { transform: perspective(1000px) rotateX(2deg) rotateY(2deg); } 100% { transform: perspective(1000px) rotateX(0deg) rotateY(0deg); } }",
+              ".glass-card { background: rgba(255, 255, 255, 0.7); backdrop-filter: blur(10px); border: 1px solid rgba(255, 255, 255, 0.2); }",
+              ".animate-fade-in { animation: fadeIn 0.6s ease-out; }",
+              ".animate-tilt { animation: tilt 10s ease-in-out infinite; }"
+            ],
+            "validation_checklist": [
+              "✓ No CSS syntax errors",
+              "✓ Animations work on mobile Safari",
+              "✓ Glassmorphism has fallback for older browsers",
+              "✓ All utilities are in @layer to avoid conflicts"
+            ]
+          },
+          "tailwind.config.js": {
+            "changes": [
+              "Add custom animation timings",
+              "Add safelist for dynamic classes used in components",
+              "Add premium color variants"
+            ],
+            "new_additions": [
+              "theme.extend.animation: { 'fade-in': 'fadeIn 0.6s ease-out', 'slide-up': 'slideUp 0.6s ease-out', 'tilt': 'tilt 10s ease-in-out infinite' }",
+              "theme.extend.keyframes: { fadeIn: { '0%': { opacity: 0, transform: 'translateY(20px)' }, '100%': { opacity: 1, transform: 'translateY(0)' } }, slideUp: { '0%': { opacity: 0, transform: 'translateY(40px)' }, '100%': { opacity: 1, transform: 'translateY(0)' } }, tilt: { '0%, 100%': { transform: 'perspective(1000px) rotateX(0deg) rotateY(0deg)' }, '50%': { transform: 'perspective(1000px) rotateX(2deg) rotateY(2deg)' } } }",
+              "safelist: ['from-pink-400', 'via-purple-400', 'to-blue-400', 'from-orange-400', 'to-red-500', 'from-blue-400', 'to-purple-500', 'from-red-500', 'to-green-500', 'from-amber-400', 'to-orange-600', 'from-gold-400', 'to-yellow-500', 'backdrop-blur-sm', 'backdrop-blur-md', 'backdrop-blur-lg']"
+            ],
+            "validation_checklist": [
+              "✓ No Tailwind build errors",
+              "✓ Safelist includes all dynamic gradient classes from shop categories",
+              "✓ Animation keyframes match CSS definitions",
+              "✓ Config extends existing theme without overwriting"
+            ]
+          }
+        },
+        "testing_requirements": [
+          "Run `npm run build` - must succeed with no errors",
+          "Check mobile Safari for animation performance",
+          "Verify glassmorphism fallback in Firefox",
+          "Test on iPhone SE (smallest screen) for touch targets"
+        ]
+      },
+
+      {
+        "phase": 2,
+        "name": "Interactive Component Library",
+        "priority": "HIGH",
+        "estimated_time": "Day 2-3",
+        "files_to_create": [
+          "src/components/ui/AnimatedCard.tsx",
+          "src/components/ui/GlassCard.tsx",
+          "src/components/ui/PremiumButton.tsx",
+          "src/components/ui/ScrollReveal.tsx",
+          "src/components/ui/StickyBottomNav.tsx"
+        ],
+        "deliverables": {
+          "src/components/ui/AnimatedCard.tsx": {
+            "purpose": "Reusable card with hover tilt, fade-in on scroll",
+            "props": "{ children, className?, delay?, enableTilt? }",
+            "code_structure": [
+              "Import: 'use client', useEffect, useRef, useState",
+              "State: isVisible (intersection observer)",
+              "Effect: IntersectionObserver for scroll reveal",
+              "Render: div with conditional classes (animate-fade-in, group, transform transition-transform)",
+              "Hover effect: group-hover:scale-105 group-hover:shadow-2xl",
+              "Tilt: onMouseMove listener calculates rotateX/rotateY based on cursor position"
+            ],
+            "validation_checklist": [
+              "✓ Works without 'use client' errors",
+              "✓ IntersectionObserver cleans up on unmount",
+              "✓ Tilt effect performs well on mobile (conditionally disabled on touch devices)",
+              "✓ No layout shift during animation"
+            ],
+            "dependencies": "None (vanilla React)"
+          },
+
+          "src/components/ui/GlassCard.tsx": {
+            "purpose": "Premium glassmorphism card for hero sections",
+            "props": "{ children, className?, variant? }",
+            "variants": [
+              "default: white/70 backdrop-blur",
+              "dark: black/40 backdrop-blur",
+              "accent: editorial-accent/30 backdrop-blur"
+            ],
+            "code_structure": [
+              "Base classes: 'backdrop-blur-lg bg-white/70 border border-white/20 rounded-2xl p-6 shadow-editorial'",
+              "Variant classes mapped via switch/case",
+              "Fallback: solid background for browsers without backdrop-filter support"
+            ],
+            "validation_checklist": [
+              "✓ Fallback background visible in Firefox <103",
+              "✓ No blur artifacts on Safari",
+              "✓ Border blends naturally with background",
+              "✓ Accessible contrast ratios maintained"
+            ],
+            "dependencies": "None"
+          },
+
+          "src/components/ui/PremiumButton.tsx": {
+            "purpose": "Button with ripple effect, smooth transitions",
+            "props": "{ children, onClick?, variant?, size?, className?, disabled? }",
+            "variants": [
+              "primary: bg-editorial-charcoal hover:bg-editorial-accent",
+              "secondary: border-editorial-charcoal hover:bg-editorial-sand",
+              "ghost: hover:bg-editorial-stone"
+            ],
+            "code_structure": [
+              "'use client' for ripple animation",
+              "onClick handler: create ripple span at click position",
+              "Ripple animation: absolute positioned span with scale/opacity transition",
+              "Cleanup: remove ripple span after 600ms",
+              "Base classes: 'relative overflow-hidden transition-all duration-500 font-sans uppercase tracking-widest'"
+            ],
+            "validation_checklist": [
+              "✓ Ripple effect centers on click point",
+              "✓ Multiple rapid clicks don't stack ripples",
+              "✓ Disabled state prevents ripple",
+              "✓ Works on touch devices"
+            ],
+            "dependencies": "None"
+          },
+
+          "src/components/ui/ScrollReveal.tsx": {
+            "purpose": "Wrapper for scroll-triggered fade-in animations",
+            "props": "{ children, delay?, threshold?, className? }",
+            "code_structure": [
+              "'use client'",
+              "useEffect with IntersectionObserver",
+              "threshold default: 0.2 (20% visible triggers animation)",
+              "Adds 'animate-fade-in' class when visible",
+              "Optional delay via style={{ animationDelay: `${delay}ms` }}"
+            ],
+            "validation_checklist": [
+              "✓ Fires only once per element",
+              "✓ Cleans up observer on unmount",
+              "✓ Delays work correctly for staggered effects",
+              "✓ No performance issues with many elements"
+            ],
+            "dependencies": "None"
+          },
+
+          "src/components/ui/StickyBottomNav.tsx": {
+            "purpose": "Mobile sticky nav for Shop/Blog quick access",
+            "props": "None (reads from pathname)",
+            "code_structure": [
+              "'use client'",
+              "usePathname from 'next/navigation'",
+              "Fixed bottom position: 'fixed bottom-0 left-0 right-0 z-40'",
+              "Show only on mobile: 'lg:hidden'",
+              "3 buttons: Home, Shop, Blog with icons",
+              "Active state highlights current page",
+              "Thumb-zone optimized: 64px height, large touch targets"
+            ],
+            "validation_checklist": [
+              "✓ Doesn't overlap with newsletter popup",
+              "✓ Active state correct on all routes",
+              "✓ Icons load from lucide-react",
+              "✓ Doesn't show on desktop (lg:hidden works)"
+            ],
+            "dependencies": "lucide-react (already in package.json)"
+          }
+        },
+        "testing_requirements": [
+          "Test all components in isolation",
+          "Check mobile Safari for scroll reveal performance",
+          "Verify tilt effect disabled on touch devices",
+          "Test sticky nav on iPhone with safe area insets"
+        ]
+      },
+
+      {
+        "phase": 3,
+        "name": "Newsletter Popup System",
+        "priority": "HIGH",
+        "estimated_time": "Day 3-4",
+        "files_to_create": [
+          "src/components/NewsletterPopup.tsx",
+          "src/hooks/useNewsletterPopup.ts"
+        ],
+        "files_to_modify": [
+          "src/app/layout.tsx"
+        ],
+        "deliverables": {
+          "src/hooks/useNewsletterPopup.ts": {
+            "purpose": "Manages popup timing, dismissal state",
+            "logic": [
+              "Check session storage for 'newsletter_dismissed' (use try-catch, fallback to state)",
+              "Exit-intent: detect mouse leaving viewport (mouseleave on document)",
+              "Scroll trigger: show after 50% scroll depth",
+              "Time delay: show after 30 seconds if neither triggered",
+              "Dismissal: stores in component state (no localStorage due to artifact constraints)",
+              "Returns: { showPopup, dismissPopup, isVisible }"
+            ],
+            "validation_checklist": [
+              "✓ No localStorage errors",
+              "✓ Exit-intent fires only once",
+              "✓ Scroll detection accurate",
+              "✓ Dismissal persists during session"
+            ],
+            "dependencies": "React hooks only"
+          },
+
+          "src/components/NewsletterPopup.tsx": {
+            "purpose": "Value-driven newsletter popup (non-intrusive)",
+            "design": [
+              "Modal overlay: backdrop-blur-sm bg-black/40",
+              "Card: GlassCard component, max-w-md, centered",
+              "Headline: 'Get Weekly Nail Inspo 💅'",
+              "Value prop: '✓ Trending designs ✓ Expert tips ✓ Exclusive finds'",
+              "Form: email input + PremiumButton",
+              "Dismissal: X button (top-right) + click outside overlay",
+              "Animation: slide-up entrance, fade-out exit"
+            ],
+            "code_structure": [
+              "'use client'",
+              "Import: useNewsletterPopup hook, GlassCard, PremiumButton",
+              "State: email, isSubmitting, isSuccess",
+              "Submit handler: prevent default, validate email, POST to API",
+              "AnimatePresence-style exit (use opacity + transform transitions)",
+              "Focus trap: first input auto-focused when visible"
+            ],
+            "validation_checklist": [
+              "✓ Dismissal works (X button + outside click)",
+              "✓ Form submission works",
+              "✓ Success state shows confirmation",
+              "✓ Popup doesn't show again after dismissal",
+              "✓ Accessible (ESC key dismisses, focus trap works)"
+            ],
+            "dependencies": "src/components/ui/GlassCard, src/components/ui/PremiumButton, src/hooks/useNewsletterPopup"
+          },
+
+          "src/app/layout.tsx_modifications": {
+            "changes": [
+              "Import NewsletterPopup component",
+              "Add <NewsletterPopup /> before closing </body> tag (after Footer)",
+              "Ensure no conflicts with existing scripts"
+            ],
+            "validation_checklist": [
+              "✓ Popup renders after full page load",
+              "✓ No hydration errors",
+              "✓ Doesn't interfere with Google Analytics scripts",
+              "✓ Shows on all pages except /subscribe"
+            ]
+          }
+        },
+        "testing_requirements": [
+          "Test exit-intent on desktop (move mouse out of viewport)",
+          "Test scroll trigger on mobile (scroll 50%)",
+          "Test dismissal persistence across page navigations",
+          "Verify popup doesn't show on /subscribe page"
+        ]
+      },
+
+      {
+        "phase": 4,
+        "name": "Homepage Interactive Redesign",
+        "priority": "HIGH",
+        "estimated_time": "Day 4-5",
+        "files_to_modify": [
+          "src/components/HeroSection.tsx",
+          "src/components/AboutSection.tsx",
+          "src/components/FeaturedTopicsSection.tsx",
+          "src/components/ShopSection.tsx",
+          "src/app/page.tsx"
+        ],
+        "deliverables": {
+          "src/components/HeroSection.tsx_redesign": {
+            "changes": [
+              "Add parallax scroll effect to background image",
+              "Add animated gradient overlay that shifts on scroll",
+              "Add floating nail emojis (animated with tilt keyframe)",
+              "Make CTAs use PremiumButton component",
+              "Add scroll indicator animation"
+            ],
+            "code_structure": [
+              "'use client' (for parallax)",
+              "useEffect: scroll listener for parallax (translateY based on scrollY)",
+              "Background: transform: translateY(scrollY * 0.5) for parallax",
+              "Floating emojis: absolute positioned, animate-tilt, staggered delays",
+              "CTAs: import PremiumButton, replace existing buttons",
+              "Scroll indicator: animate-bounce, opacity pulse"
+            ],
+            "validation_checklist": [
+              "✓ Parallax performs well (no jank)",
+              "✓ Background image loads with priority",
+              "✓ Mobile uses different image (herosectionbg-mobile.jpg)",
+              "✓ CTAs maintain existing hrefs"
+            ],
+            "dependencies": "src/components/ui/PremiumButton"
+          },
+
+          "src/components/AboutSection.tsx_redesign": {
+            "changes": [
+              "Wrap content in ScrollReveal for fade-in",
+              "Add tilt effect to image on hover",
+              "Replace decorative circles with animated gradients",
+              "Make CTA use PremiumButton"
+            ],
+            "code_structure": [
+              "Import ScrollReveal, PremiumButton",
+              "Wrap text content in <ScrollReveal delay={100}>",
+              "Wrap image in <ScrollReveal delay={300}>",
+              "Image hover: group-hover:scale-105 group-hover:rotate-2",
+              "Decorative elements: absolute positioned divs with animate-pulse"
+            ],
+            "validation_checklist": [
+              "✓ Scroll reveal triggers at 30% viewport",
+              "✓ Image tilt smooth on hover",
+              "✓ Text remains readable during animations",
+              "✓ No layout shift"
+            ],
+            "dependencies": "src/components/ui/ScrollReveal, src/components/ui/PremiumButton"
+          },
+
+          "src/components/FeaturedTopicsSection.tsx_redesign": {
+            "changes": [
+              "Replace static cards with AnimatedCard components",
+              "Add hover overlay with gradient shift",
+              "Add staggered fade-in (delay: index * 100ms)",
+              "Make CTA underline animate on hover"
+            ],
+            "code_structure": [
+              "Import AnimatedCard",
+              "Map topics → <AnimatedCard delay={index * 100} enableTilt>",
+              "Hover overlay: absolute inset-0, bg-gradient opacity-0 group-hover:opacity-100",
+              "CTA animation: border-b transform origin-left scale-x-0 group-hover:scale-x-100"
+            ],
+            "validation_checklist": [
+              "✓ Cards fade in sequentially (stagger works)",
+              "✓ Tilt effect smooth on desktop",
+              "✓ Tilt disabled on mobile",
+              "✓ Overlay gradient matches topic theme"
+            ],
+            "dependencies": "src/components/ui/AnimatedCard"
+          },
+
+          "src/components/ShopSection.tsx_redesign": {
+            "changes": [
+              "Similar to FeaturedTopics: AnimatedCard wrapper",
+              "Add product count badge animation (scale in)",
+              "Add hover state image zoom",
+              "Staggered reveal for category cards"
+            ],
+            "code_structure": [
+              "Import AnimatedCard",
+              "Map categories → <AnimatedCard delay={index * 100}>",
+              "Image zoom: transform scale-100 group-hover:scale-110 transition-transform duration-700",
+              "Badge: animate-in via opacity + scale"
+            ],
+            "validation_checklist": [
+              "✓ Image zoom smooth (no blur)",
+              "✓ Badge doesn't cause layout shift",
+              "✓ Cards maintain aspect ratio",
+              "✓ Links work correctly"
+            ],
+            "dependencies": "src/components/ui/AnimatedCard"
+          },
+
+          "src/app/page.tsx_modifications": {
+            "changes": [
+              "Add StickyBottomNav component",
+              "Ensure all sections have proper scroll reveal setup"
+            ],
+            "code_structure": [
+              "Import StickyBottomNav",
+              "Add <StickyBottomNav /> before closing div",
+              "Verify all section imports still work"
+            ],
+            "validation_checklist": [
+              "✓ Page builds without errors",
+              "✓ All sections render",
+              "✓ Sticky nav shows on mobile only",
+              "✓ No hydration mismatches"
+            ],
+            "dependencies": "src/components/ui/StickyBottomNav"
+          }
+        },
+        "testing_requirements": [
+          "Test full homepage scroll on mobile Safari",
+          "Check parallax performance (aim for 60fps)",
+          "Verify all animations trigger correctly",
+          "Test on slow 3G connection for image loading"
+        ]
+      },
+
+      {
+        "phase": 5,
+        "name": "Blog Page Interactive Enhancements",
+        "priority": "MEDIUM",
+        "estimated_time": "Day 5-6",
+        "files_to_modify": [
+          "src/components/Blog/BlogCard.tsx",
+          "src/app/blog/page.tsx"
+        ],
+        "deliverables": {
+          "src/components/Blog/BlogCard.tsx_redesign": {
+            "changes": [
+              "Add hover image zoom effect",
+              "Add gradient overlay animation",
+              "Add tag hover effects",
+              "Make card use AnimatedCard wrapper"
+            ],
+            "code_structure": [
+              "Import AnimatedCard (don't use - BlogCard already has animations)",
+              "Image zoom: group-hover:scale-110 transition-transform duration-500",
+              "Overlay: bg-gradient opacity transition from 30% to 50% on hover",
+              "Tags: individual hover:scale-110 hover:bg-white/30 transitions",
+              "Arrow icon: group-hover:translate-x-2 transition"
+            ],
+            "validation_checklist": [
+              "✓ Image zoom doesn't overflow container",
+              "✓ Overlay transition smooth",
+              "✓ Tags individually interactive",
+              "✓ Links maintain functionality"
+            ],
+            "dependencies": "None (keep existing structure)"
+          },
+
+          "src/app/blog/page.tsx_modifications": {
+            "changes": [
+              "Add StickyBottomNav",
+              "Add inline newsletter CTA after 3rd card in grid",
+              "Make hero section more interactive"
+            ],
+            "code_structure": [
+              "Import StickyBottomNav, GlassCard",
+              "In blog grid map: check index === 2, insert inline newsletter <GlassCard>",
+              "Newsletter card: 'Get Weekly Inspo' with email input",
+              "Hero section: add subtle gradient animation"
+            ],
+            "validation_checklist": [
+              "✓ Inline newsletter doesn't break grid layout",
+              "✓ Newsletter CTA looks natural in flow",
+              "✓ Mobile layout remains clean",
+              "✓ Sticky nav works"
+            ],
+            "dependencies": "src/components/ui/StickyBottomNav, src/components/ui/GlassCard"
+          }
+        },
+        "testing_requirements": [
+          "Test blog card hover on touch devices (should work with tap)",
+          "Verify inline newsletter doesn't disrupt reading flow",
+          "Check pagination still works",
+          "Test search functionality remains intact"
+        ]
+      },
+
+      {
+        "phase": 6,
+        "name": "Shop Page Premium Experience",
+        "priority": "MEDIUM",
+        "estimated_time": "Day 6-7",
+        "files_to_modify": [
+          "src/components/Shop/ShopClient.tsx",
+          "src/app/shop/page.tsx"
+        ],
+        "deliverables": {
+          "src/components/Shop/ShopClient.tsx_redesign": {
+            "changes": [
+              "Add product card hover effects (lift + shadow)",
+              "Add quick-view modal on hover (desktop only)",
+              "Add filter button animations",
+              "Add sticky filter bar on scroll"
+            ],
+            "code_structure": [
+              "'use client' already present",
+              "Product cards: group-hover:-translate-y-2 group-hover:shadow-2xl transition-all duration-500",
+              "Quick-view: absolute overlay with opacity-0 group-hover:opacity-100",
+              "Filter bar: useState for isSticky, scroll listener to toggle",
+              "Sticky filter: fixed top-20 transition-all when isSticky true"
+            ],
+            "validation_checklist": [
+              "✓ Card lift smooth without layout shift",
+              "✓ Quick-view doesn't interfere with clicks",
+              "✓ Sticky filter works on mobile",
+              "✓ Filter transitions clean"
+            ],
+            "dependencies": "None"
+          },
+
+          "src/app/shop/page.tsx_modifications": {
+            "changes": [
+              "Add hero section parallax (similar to homepage)",
+              "Add StickyBottomNav",
+              "Make category cards use AnimatedCard wrapper"
+            ],
+            "code_structure": [
+              "Import AnimatedCard, StickyBottomNav",
+              "Hero parallax: same pattern as HeroSection.tsx",
+              "Category cards: map with AnimatedCard wrapper",
+              "Add sticky bottom nav before closing div"
+            ],
+            "validation_checklist": [
+              "✓ Parallax performs well",
+              "✓ Category cards animate in sequence",
+              "✓ Links work correctly",
+              "✓ Mobile layout clean"
+            ],
+            "dependencies": "src/components/ui/AnimatedCard, src/components/ui/StickyBottomNav"
+          }
+        },
+        "testing_requirements": [
+          "Test product card hover on various screen sizes",
+          "Check quick-view modal on desktop only",
+          "Verify sticky filter doesn't overlap header",
+          "Test on iPad for tablet experience"
+        ]
+      },
+
+      {
+        "phase": 7,
+        "name": "Final Polish & Performance",
+        "priority": "CRITICAL",
+        "estimated_time": "Day 7-8",
+        "files_to_modify": [
+          "All modified files",
+          "src/app/layout.tsx"
+        ],
+        "deliverables": {
+          "performance_optimizations": {
+            "tasks": [
+              "Add loading skeletons for async components",
+              "Optimize image loading (add blur placeholders)",
+              "Add preload hints for critical fonts",
+              "Reduce animation complexity on mobile (prefers-reduced-motion)",
+              "Add error boundaries for client components"
+            ],
+            "validation_checklist": [
+              "✓ Lighthouse score >90 on mobile",
+              "✓ No CLS (Cumulative Layout Shift)",
+              "✓ FCP <1.8s, LCP <2.5s",
+              "✓ All images lazy loaded except hero"
+            ]
+          },
+
+          "accessibility_audit": {
+            "tasks": [
+              "Add ARIA labels to all interactive elements",
+              "Ensure keyboard navigation works (tab order)",
+              "Add skip-to-content link",
+              "Check color contrast ratios (WCAG AA)",
+              "Add focus-visible styles to all interactive elements"
+            ],
+            "validation_checklist": [
+              "✓ axe DevTools shows 0 critical issues",
+              "✓ Can navigate entire site with keyboard",
+              "✓ Screen reader announces all content correctly",
+              "✓ Focus indicators visible and clear"
+            ]
+          },
+
+          "cross_browser_testing": {
+            "browsers": [
+              "Chrome (latest)",
+              "Safari (latest + iOS Safari)",
+              "Firefox (latest)",
+              "Edge (latest)",
+              "Samsung Internet (Android)"
+            ],
+            "validation_checklist": [
+              "✓ Animations work in all browsers",
+              "✓ Glassmorphism fallback works",
+              "✓ Touch interactions work on mobile",
+              "✓ No layout breaks in any browser"
+            ]
+          },
+
+          "final_build_test": {
+            "commands": [
+              "npm run build",
+              "npm run start",
+              "Test production build locally"
+            ],
+            "validation_checklist": [
+              "✓ Build succeeds with 0 errors",
+              "✓ All routes accessible",
+              "✓ Images load correctly",
+              "✓ Newsletter popup works",
+              "✓ Shop filters work",
+              "✓ Blog search works",
+              "✓ No console errors"
+            ]
+          }
+        }
+      }
+    ],
+
+    "critical_validation_protocol": {
+      "before_each_phase": [
+        "Create git branch: `git checkout -b phase-{N}-{name}`",
+        "Backup current working files",
+        "Read all files involved in phase",
+        "Map all imports and dependencies",
+        "Check for naming conflicts"
+      ],
+      "during_each_phase": [
+        "Test each file modification in isolation",
+        "Run `npm run build` after each file change",
+        "Check browser console for errors",
+        "Verify no TypeScript errors",
+        "Check mobile responsiveness"
+      ],
+      "after_each_phase": [
+        "Full build test: `npm run build`",
+        "Visual regression test (compare screenshots)",
+        "Test all interactive elements",
+        "Commit changes: `git commit -m 'Phase {N}: {description}'`",
+        "Document any issues encountered"
+      ],
+      "conflict_prevention_checklist": [
+        "✓ All imports use correct paths (@/components, @/lib, etc.)",
+        "✓ No circular dependencies",
+        "✓ All TypeScript types exported/imported correctly",
+        "✓ No duplicate component names",
+        "✓ No conflicting CSS classes",
+        "✓ All new files added to correct directories",
+        "✓ No hardcoded values (use config/constants)",
+        "✓ All event listeners cleaned up in useEffect",
+        "✓ No memory leaks in client components",
+        "✓ All async operations have error handling"
+      ]
+    },
+
+    "agent_instructions": {
+      "role": "You are a senior Next.js developer executing a phased website redesign. You have full context of the project via the 34 files provided.",
+      
+      "execution_protocol": [
+        "1. Read this entire prompt first",
+        "2. Review all 34 provided project files",
+        "3. For each phase:",
+        "   a. Announce: 'Starting Phase {N}: {name}'",
+        "   b. List files you will modify",
+        "   c. Execute changes one file at a time",
+        "   d. After each file, provide:",
+        "      - Full file content (complete, no truncation)",
+        "      - Validation checklist results",
+        "      - Any issues encountered",
+        "   e. After phase complete, provide:",
+        "      - Summary of changes",
+        "      - Testing instructions",
+        "      - Proceed/rollback recommendation",
+        "4. Wait for user confirmation before next phase",
+        "5. If conflicts detected, STOP and report immediately"
+      ],
+
+      "output"output_format": {
+        "for_each_file_modification": {
+          "structure": {
+            "file_path": "exact path (e.g., src/components/ui/AnimatedCard.tsx)",
+            "modification_type": "CREATE | MODIFY | DELETE",
+            "changes_summary": "Brief description of what changed",
+            "full_file_content": "COMPLETE file content - NO TRUNCATION, NO PLACEHOLDERS",
+            "imports_added": ["list of new imports"],
+            "imports_removed": ["list of removed imports"],
+            "dependencies_required": ["list of dependencies this file needs"],
+            "dependencies_provided": ["list of exports this file provides"],
+            "validation_results": {
+              "typescript_check": "PASS | FAIL (with error details)",
+              "import_resolution": "PASS | FAIL (with missing imports)",
+              "no_conflicts": "PASS | FAIL (with conflict details)",
+              "testing_status": "PASS | FAIL (with test results)"
+            },
+            "integration_notes": "How this file integrates with existing codebase"
+          }
+        },
+        
+        "phase_completion_report": {
+          "phase_number": "N",
+          "phase_name": "Name",
+          "status": "COMPLETE | BLOCKED | NEEDS_REVIEW",
+          "files_modified": ["list of all files touched"],
+          "breaking_changes": ["list any breaking changes"],
+          "new_dependencies": ["any new npm packages needed"],
+          "rollback_instructions": "How to undo if needed",
+          "testing_checklist": {
+            "build_test": "PASS | FAIL",
+            "mobile_test": "PASS | FAIL",
+            "desktop_test": "PASS | FAIL",
+            "accessibility_test": "PASS | FAIL"
+          },
+          "proceed_to_next_phase": "YES | NO (with reason if NO)"
+        }
+      },
+
+      "conflict_detection_rules": {
+        "import_conflicts": [
+          "Check: Does imported component exist at specified path?",
+          "Check: Is component exported as default or named?",
+          "Check: Are TypeScript types correctly imported?",
+          "Action if conflict: STOP, report exact import path issue"
+        ],
+        "component_naming_conflicts": [
+          "Check: Does new component name already exist?",
+          "Check: Are there similar names that could cause confusion?",
+          "Action if conflict: Suggest alternative name, wait for approval"
+        ],
+        "css_class_conflicts": [
+          "Check: Do new Tailwind classes conflict with globals.css?",
+          "Check: Are animation names unique?",
+          "Action if conflict: Rename with unique prefix"
+        ],
+        "type_conflicts": [
+          "Check: Are all types properly defined?",
+          "Check: Do type names conflict with existing types?",
+          "Check: Are interfaces properly extended?",
+          "Action if conflict: STOP, report type issue with file locations"
+        ],
+        "dependency_conflicts": [
+          "Check: Are all dependencies in package.json?",
+          "Check: Are version numbers compatible?",
+          "Action if conflict: List missing dependencies with versions"
+        ]
+      },
+
+      "error_handling_protocol": {
+        "on_build_error": [
+          "1. STOP immediately",
+          "2. Paste full error message",
+          "3. Identify file causing error",
+          "4. Propose fix OR suggest rollback",
+          "5. Wait for user decision"
+        ],
+        "on_import_error": [
+          "1. List the import statement causing error",
+          "2. List where it's trying to import from",
+          "3. List what actually exists at that path",
+          "4. Propose corrected import",
+          "5. Apply fix after confirmation"
+        ],
+        "on_type_error": [
+          "1. Show the type error message",
+          "2. Show expected type vs actual type",
+          "3. Show file and line number",
+          "4. Propose type fix",
+          "5. Apply after confirmation"
+        ],
+        "on_runtime_error": [
+          "1. Show error stack trace",
+          "2. Identify component causing error",
+          "3. Check for common issues (hooks, client/server, async)",
+          "4. Propose fix with explanation",
+          "5. Apply after confirmation"
+        ]
+      },
+
+      "quality_gates": {
+        "before_marking_phase_complete": [
+          "✓ All files compile without errors",
+          "✓ npm run build succeeds",
+          "✓ All imports resolve correctly",
+          "✓ No TypeScript errors",
+          "✓ No React hydration errors",
+          "✓ No console errors in browser",
+          "✓ Mobile responsive works",
+          "✓ All links functional",
+          "✓ All forms submit correctly",
+          "✓ Animations perform smoothly"
+        ]
+      }
+    },
+
+    "file_reference_map": {
+      "description": "Complete map of all project files and their relationships",
+      "core_structure": {
+        "app_directory": {
+          "layout.tsx": {
+            "imports": ["Header", "Footer", "metadata"],
+            "exports": ["RootLayout"],
+            "modifiable": "YES - for NewsletterPopup, StickyBottomNav",
+            "critical_sections": [
+              "metadata export (DO NOT MODIFY)",
+              "Script tags for GA4/AdSense (DO NOT MODIFY)",
+              "Structured data schemas (DO NOT MODIFY)"
+            ]
+          },
+          "page.tsx": {
+            "imports": ["All section components"],
+            "exports": ["Home default function", "metadata"],
+            "modifiable": "YES - for StickyBottomNav",
+            "dependencies": [
+              "HeroSection",
+              "AboutSection",
+              "BlogSection",
+              "FeaturedTopicsSection",
+              "ShopSection",
+              "SubscribeSection"
+            ]
+          },
+          "globals.css": {
+            "modifiable": "YES - ADD animations, utilities",
+            "restrictions": "DO NOT remove existing styles",
+            "safe_additions": [
+              "New @keyframes",
+              "New utility classes in @layer",
+              "New CSS custom properties"
+            ]
+          },
+          "blog/page.tsx": {
+            "imports": ["BlogCard", "BlogSearch", "Pagination"],
+            "modifiable": "YES - for inline newsletter",
+            "keep_intact": ["metadata", "pagination logic", "search functionality"]
+          },
+          "shop/page.tsx": {
+            "imports": ["Link", "getAllCategorySlugs", "getCategoryData"],
+            "modifiable": "YES - for animations",
+            "keep_intact": ["metadata", "category mapping"]
+          }
+        },
+        "components_directory": {
+          "Header.tsx": {
+            "modifiable": "NO - unless absolutely necessary",
+            "reason": "Complex dropdown logic, don't risk breaking"
+          },
+          "Footer.tsx": {
+            "modifiable": "NO - unless absolutely necessary",
+            "reason": "Complex accordion logic"
+          },
+          "HeroSection.tsx": {
+            "modifiable": "YES - for parallax, animations",
+            "current_structure": "Static section with background image",
+            "safe_changes": ["Add parallax scroll", "Add animations", "Update CTAs"]
+          },
+          "AboutSection.tsx": {
+            "modifiable": "YES - for scroll reveal, hover effects"
+          },
+          "FeaturedTopicsSection.tsx": {
+            "modifiable": "YES - for AnimatedCard, hover effects"
+          },
+          "ShopSection.tsx": {
+            "modifiable": "YES - for AnimatedCard, hover effects"
+          },
+          "NewsletterForm.tsx": {
+            "modifiable": "NO - this is for /subscribe page",
+            "note": "Create NEW NewsletterPopup component instead"
+          },
+          "Blog/BlogCard.tsx": {
+            "modifiable": "YES - for hover effects",
+            "keep_intact": ["Link functionality", "Image handling", "Tag display"]
+          },
+          "Shop/ShopClient.tsx": {
+            "modifiable": "YES - for hover effects, sticky filters",
+            "keep_intact": ["Filter logic", "Product mapping", "Affiliate links"]
+          }
+        },
+        "lib_directory": {
+          "blog.ts": {
+            "modifiable": "NO - complex caching logic",
+            "reason": "Contains metadata cache, don't risk breaking"
+          },
+          "shop.ts": {
+            "modifiable": "NO - data loading logic",
+            "reason": "Complex type handling, don't risk breaking"
+          }
+        },
+        "types_directory": {
+          "blog.ts": {
+            "modifiable": "ONLY IF NEEDED for new component props",
+            "safe_changes": ["Add optional properties to existing interfaces"]
+          },
+          "shop.ts": {
+            "modifiable": "NO - complex type definitions"
+          }
+        },
+        "config_files": {
+          "tailwind.config.js": {
+            "modifiable": "YES - for animations, safelist",
+            "safe_changes": [
+              "Add to theme.extend.animation",
+              "Add to theme.extend.keyframes",
+              "Add to safelist array",
+              "Add to theme.extend.colors (if needed)"
+            ],
+            "restrictions": "DO NOT remove existing theme config"
+          },
+          "next.config.ts": {
+            "modifiable": "NO - unless absolutely necessary",
+            "reason": "Complex webpack config, optimization settings"
+          },
+          "package.json": {
+            "modifiable": "ONLY IF adding dependencies",
+            "safe_changes": ["Add new dependencies to dependencies object"],
+            "restrictions": "DO NOT change versions of existing packages"
+          }
+        }
+      },
+      "component_dependency_tree": {
+        "page.tsx": [
+          "→ HeroSection",
+          "→ AboutSection",
+          "→ FeaturedTopicsSection",
+          "→ ShopSection",
+          "→ BlogSection",
+          "→ SubscribeSection",
+          "→ [NEW] StickyBottomNav"
+        ],
+        "layout.tsx": [
+          "→ Header",
+          "→ Footer",
+          "→ [NEW] NewsletterPopup"
+        ],
+        "blog/page.tsx": [
+          "→ BlogCard",
+          "→ BlogSearch",
+          "→ Pagination",
+          "→ [NEW] StickyBottomNav",
+          "→ [NEW] GlassCard (for inline newsletter)"
+        ],
+        "HeroSection": [
+          "→ [NEW] PremiumButton"
+        ],
+        "AboutSection": [
+          "→ [NEW] ScrollReveal",
+          "→ [NEW] PremiumButton"
+        ],
+        "FeaturedTopicsSection": [
+          "→ [NEW] AnimatedCard"
+        ],
+        "ShopSection": [
+          "→ [NEW] AnimatedCard"
+        ],
+        "NewsletterPopup": [
+          "→ [NEW] useNewsletterPopup hook",
+          "→ [NEW] GlassCard",
+          "→ [NEW] PremiumButton"
+        ]
+      },
+      "import_path_conventions": {
+        "components": "@/components/ComponentName",
+        "ui_components": "@/components/ui/ComponentName",
+        "lib": "@/lib/fileName",
+        "types": "@/types/fileName",
+        "hooks": "@/hooks/useHookName",
+        "examples": [
+          "import { AnimatedCard } from '@/components/ui/AnimatedCard';",
+          "import { getAllBlogPosts } from '@/lib/blog';",
+          "import type { BlogPost } from '@/types/blog';",
+          "import { useNewsletterPopup } from '@/hooks/useNewsletterPopup';"
+        ]
+      }
+    },
+
+    "new_files_to_create": {
+      "phase_2_files": [
+        {
+          "path": "src/components/ui/AnimatedCard.tsx",
+          "purpose": "Reusable card with scroll reveal and optional tilt",
+          "exports": "default AnimatedCard",
+          "props_interface": "{ children: React.ReactNode; className?: string; delay?: number; enableTilt?: boolean }",
+          "dependencies_imports": ["react (useEffect, useRef, useState)", "client component"]
+        },
+        {
+          "path": "src/components/ui/GlassCard.tsx",
+          "purpose": "Glassmorphism card for premium sections",
+          "exports": "default GlassCard",
+          "props_interface": "{ children: React.ReactNode; className?: string; variant?: 'default' | 'dark' | 'accent' }",
+          "dependencies_imports": ["react"]
+        },
+        {
+          "path": "src/components/ui/PremiumButton.tsx",
+          "purpose": "Button with ripple effect and smooth transitions",
+          "exports": "default PremiumButton",
+          "props_interface": "{ children: React.ReactNode; onClick?: () => void; variant?: 'primary' | 'secondary' | 'ghost'; size?: 'sm' | 'md' | 'lg'; className?: string; disabled?: boolean; href?: string }",
+          "dependencies_imports": ["react", "next/link", "client component"],
+          "note": "Support both button and Link usage"
+        },
+        {
+          "path": "src/components/ui/ScrollReveal.tsx",
+          "purpose": "Wrapper for scroll-triggered animations",
+          "exports": "default ScrollReveal",
+          "props_interface": "{ children: React.ReactNode; delay?: number; threshold?: number; className?: string }",
+          "dependencies_imports": ["react (useEffect, useRef, useState)", "client component"]
+        },
+        {
+          "path": "src/components/ui/StickyBottomNav.tsx",
+          "purpose": "Mobile sticky navigation bar",
+          "exports": "default StickyBottomNav",
+          "props_interface": "none (reads pathname)",
+          "dependencies_imports": ["react", "next/navigation (usePathname)", "next/link", "lucide-react (Home, ShoppingBag, BookOpen)", "client component"]
+        }
+      ],
+      "phase_3_files": [
+        {
+          "path": "src/hooks/useNewsletterPopup.ts",
+          "purpose": "Hook to manage newsletter popup state and timing",
+          "exports": "default useNewsletterPopup",
+          "returns": "{ showPopup: boolean; dismissPopup: () => void; isVisible: boolean }",
+          "dependencies_imports": ["react (useEffect, useState)"]
+        },
+        {
+          "path": "src/components/NewsletterPopup.tsx",
+          "purpose": "Modal popup for newsletter subscription",
+          "exports": "default NewsletterPopup",
+          "props_interface": "none",
+          "dependencies_imports": [
+            "react (useState)",
+            "@/hooks/useNewsletterPopup",
+            "@/components/ui/GlassCard",
+            "@/components/ui/PremiumButton",
+            "lucide-react (X, Mail, CheckCircle)",
+            "client component"
+          ]
+        }
+      ]
+    },
+
+    "common_pitfalls_to_avoid": {
+      "import_errors": [
+        "❌ import AnimatedCard from '@/components/ui/AnimatedCard' (missing .tsx)",
+        "✅ import AnimatedCard from '@/components/ui/AnimatedCard'  (correct - Next.js auto-resolves)",
+        "❌ import { AnimatedCard } from '@/components/ui/AnimatedCard' (when using default export)",
+        "✅ import AnimatedCard from '@/components/ui/AnimatedCard' (correct for default export)"
+      ],
+      "client_component_errors": [
+        "❌ Using hooks without 'use client' directive",
+        "✅ Add 'use client' at top of file before imports",
+        "❌ Importing client component in server component without dynamic import",
+        "✅ Use dynamic import with ssr: false if needed"
+      ],
+      "typescript_errors": [
+        "❌ Props interface not exported or imported incorrectly",
+        "✅ Export interface and import type { PropsType } from '@/...'",
+        "❌ Missing optional chaining on possibly undefined props",
+        "✅ Use prop?.value or prop ?? defaultValue"
+      ],
+      "animation_performance_errors": [
+        "❌ Animating width/height (causes reflow)",
+        "✅ Animate transform, opacity only",
+        "❌ Too many IntersectionObserver instances",
+        "✅ Reuse observer or use single observer for all elements",
+        "❌ Not cleaning up event listeners",
+        "✅ Always return cleanup function in useEffect"
+      ],
+      "mobile_specific_errors": [
+        "❌ Hover effects that don't work on touch",
+        "✅ Use @media (hover: hover) or detect touch",
+        "❌ Fixed positioning that overlaps safe areas (iPhone notch)",
+        "✅ Use env(safe-area-inset-bottom) for bottom elements",
+        "❌ Touch targets smaller than 48px",
+        "✅ Ensure min-h-12 min-w-12 (48px) for all interactive elements"
+      ]
+    },
+
+    "testing_strategy_per_phase": {
+      "phase_1_testing": {
+        "build_test": "npm run build - must pass",
+        "visual_test": "Check new animation keyframes in browser DevTools",
+        "mobile_test": "Test on real iPhone/Android if possible",
+        "checklist": [
+          "✓ Animations defined in globals.css",
+          "✓ Tailwind config includes new animations",
+          "✓ Safelist includes all dynamic classes",
+          "✓ No build errors"
+        ]
+      },
+      "phase_2_testing": {
+        "component_isolation_test": "Test each component in storybook or standalone page",
+        "integration_test": "Import each component into a test page",
+        "mobile_test": "Test tilt effect disabled on touch devices",
+        "checklist": [
+          "✓ AnimatedCard renders without errors",
+          "✓ GlassCard has proper fallback",
+          "✓ PremiumButton ripple works",
+          "✓ ScrollReveal triggers correctly",
+          "✓ StickyBottomNav shows only on mobile"
+        ]
+      },
+      "phase_3_testing": {
+        "popup_trigger_test": "Test exit-intent, scroll trigger, time delay",
+        "dismissal_test": "Test X button, outside click, persistence",
+        "form_test": "Test email validation, submission, success state",
+        "checklist": [
+          "✓ Popup shows after 30 seconds if not triggered earlier",
+          "✓ Exit-intent works (move mouse out of viewport)",
+          "✓ Scroll trigger works (50% scroll depth)",
+          "✓ Dismissal persists during session",
+          "✓ Form submits correctly"
+        ]
+      },
+      "phase_4_testing": {
+        "homepage_scroll_test": "Scroll through entire homepage",
+        "parallax_test": "Check parallax performance (60fps target)",
+        "animation_sequence_test": "Verify staggered reveals work",
+        "checklist": [
+          "✓ Hero parallax smooth",
+          "✓ About section fades in on scroll",
+          "✓ Topic cards stagger correctly",
+          "✓ Shop cards animate",
+          "✓ All CTAs work",
+          "✓ Sticky nav shows on mobile"
+        ]
+      },
+      "phase_5_testing": {
+        "blog_card_test": "Hover each card, check zoom effect",
+        "inline_newsletter_test": "Verify newsletter CTA looks natural",
+        "mobile_blog_test": "Test on mobile device",
+        "checklist": [
+          "✓ Blog cards zoom on hover",
+          "✓ Inline newsletter doesn't break grid",
+          "✓ Pagination works",
+          "✓ Search works",
+          "✓ Sticky nav works"
+        ]
+      },
+      "phase_6_testing": {
+        "product_card_test": "Hover product cards, check lift effect",
+        "filter_test": "Test all filter buttons",
+        "sticky_filter_test": "Scroll to trigger sticky filter bar",
+        "checklist": [
+          "✓ Product cards lift on hover",
+          "✓ Filters work correctly",
+          "✓ Sticky filter activates on scroll",
+          "✓ Category cards animate",
+          "✓ All affiliate links work"
+        ]
+      },
+      "phase_7_testing": {
+        "full_site_test": "Test every page, every interaction",
+        "performance_test": "Run Lighthouse on mobile and desktop",
+        "accessibility_test": "Run axe DevTools",
+        "cross_browser_test": "Test in Chrome, Safari, Firefox, Edge",
+        "checklist": [
+          "✓ Lighthouse score >90",
+          "✓ No accessibility errors",
+          "✓ Works in all browsers",
+          "✓ Mobile responsive everywhere",
+          "✓ All forms work",
+          "✓ All links work",
+          "✓ No console errors"
+        ]
+      }
+    },
+
+    "deployment_checklist": {
+      "pre_deployment": [
+        "✓ All phases complete and tested",
+        "✓ npm run build succeeds with 0 errors/warnings",
+        "✓ All environment variables set (NEXT_PUBLIC_GOOGLE_SCRIPT_URL, etc.)",
+        "✓ Test production build locally: npm run start",
+        "✓ Check all images load correctly",
+        "✓ Verify newsletter popup works",
+        "✓ Test on real mobile device",
+        "✓ Run Lighthouse audit (target: >90 on mobile)",
+        "✓ Backup current production site",
+        "✓ Create rollback plan"
+      ],
+      "post_deployment": [
+        "✓ Verify site loads correctly on production URL",
+        "✓ Test critical user flows (browse blog, filter shop, submit newsletter)",
+        "✓ Check Google Analytics tracking works",
+        "✓ Monitor server logs for errors",
+        "✓ Check Core Web Vitals in Google Search Console",
+        "✓ Test on multiple devices/browsers",
+        "✓ Ask 2-3 users to test and provide feedback",
+        "✓ Monitor for 24 hours for any issues"
+      ]
+    },
+
+    "rollback_procedure": {
+      "if_critical_error_found": [
+        "1. STOP - assess severity (breaks site completely? or minor visual bug?)",
+        "2. If site-breaking: immediately rollback deployment",
+        "3. If minor: create hotfix branch, fix, test, redeploy",
+        "4. Document issue and resolution",
+        "5. Update test suite to catch similar issues"
+      ],
+      "git_rollback_commands": [
+        "git log --oneline (find commit before phase changes)",
+        "git revert <commit-hash> (safer - creates new revert commit)",
+        "OR git reset --hard <commit-hash> (dangerous - rewrites history)",
+        "git push origin main --force (if using reset)"
+      ]
+    },
+
+    "success_criteria": {
+      "phase_completion": "Each phase passes all validation checklists",
+      "project_completion": "All 7 phases complete, all tests pass, deployed successfully",
+      "business_goals": [
+        "Newsletter signup rate increases by 20%+",
+        "Mobile bounce rate decreases by 15%+",
+        "Average session duration increases by 30%+",
+        "Affiliate click-through rate increases by 25%+",
+        "Page load time <2.5s on mobile",
+        "Lighthouse score >90 on mobile"
+      ],
+      "user_experience_goals": [
+        "Site feels premium and polished",
+        "Mobile navigation intuitive and thumb-friendly",
+        "Animations smooth (60fps) on mid-range devices",
+        "Content easy to discover and explore",
+        "No frustrating interactions or broken features"
+      ]
+    },
+
+    "agent_behavior_rules": {
+      "CRITICAL": "READ ALL 34 PROVIDED FILES BEFORE STARTING",
+      "output_completeness": "ALWAYS provide FULL file contents - NEVER truncate with '...' or 'rest of code'",
+      "validation_first": "ALWAYS validate changes before moving to next file",
+      "stop_on_error": "IMMEDIATELY stop if any error detected, report to user",
+      "no_assumptions": "NEVER assume - if unsure, ask user for clarification",
+      "preserve_existing": "NEVER delete or modify code unless explicitly required by phase",
+      "test_incrementally": "Test after each file modification, not just at end of phase",
+      "document_changes": "Clearly explain what each change does and why",
+      "conflict_detection": "Actively look for potential conflicts before they happen",
+      "user_communication": "Keep user informed of progress, ask for confirmation at decision points"
+    },
+
+    "phase_execution_template": {
+      "phase_start_message": "🚀 **Starting Phase {N}: {Name}**\n\nFiles to modify: {list}\nFiles to create: {list}\nEstimated time: {time}\n\nReady to proceed? (Type 'YES' to continue)",
+      
+      "file_modification_message": "📝 **Modifying: {filepath}**\n\nChanges:\n- {change 1}\n- {change 2}\n\nDependencies:\n- Imports: {list}\n- Exports: {list}\n\n**FULL FILE CONTENT:**\n```typescript\n{complete file}\n```\n\n**Validation:**\n✓ TypeScript: PASS\n✓ Imports: PASS\n✓ No Conflicts: PASS\n\nReady for next file? (Type 'NEXT' or 'REVIEW')",
+      
+      "phase_completion_message": "✅ **Phase {N} Complete**\n\n**Summary:**\n- Files modified: {count}\n- New components: {list}\n- Breaking changes: {none/list}\n\n**Testing Results:**\n✓ Build: PASS\n✓ Mobile: PASS\n✓ Desktop: PASS\n\n**Next Steps:**\n{testing instructions}\n\nProceed to Phase {N+1}? (Type 'YES' or 'REVIEW')"
+    }
+  }
+}
+```
+
+**AGENT EXECUTION COMMAND:**
+```
+You are now executing the Mirelle Inspo website redesign project. You have received:
+
+1. This master JSON prompt (your complete instructions)
+2. 34 project files (your complete codebase context)
+
+**YOUR MISSION:**
+Execute all 7 phases sequentially, following the protocols defined in this prompt. After each phase, wait for user confirmation before proceeding.
+
+**START EXECUTION:**
+Type: "I have read the master prompt and all 34 files. Starting Phase 1: Foundation - Mobile-First Base Styles. Ready to proceed?"
+
+**REMEMBER:**
+- FULL file contents only (no truncation)
+- Validate after each change
+- Stop immediately on any error
+- Test incrementally
+- No conflicts allowed
+
+BEGIN NOW.
