@@ -1,0 +1,107 @@
+syntax = "proto3";
+
+message AgentTask {
+  // Memory / context about your site
+  message AgentMemoryUpdate {
+    string website = 1 = "https://mirelleinspo.com";
+    string sitemap = 2 = "https://www.mirelleinspo.com/sitemap-0.xml";
+    string directory = 3 = "https://github.com/DADDYEAGER1/mirelle-site/tree/main";
+    string appDirectory = 4 = "https://github.com/DADDYEAGER1/mirelle-site/tree/main/src/app";
+
+    message PackageJson {
+      string name = 1 = "mirelle-site";
+      string version = 2 = "0.1.0";
+      bool private = 3 = true;
+      map<string, string> scripts = 4 = {
+        "dev": "next dev --turbopack",
+        "build": "next build --turbopack",
+        "start": "next start",
+        "lint": "eslint",
+        "postbuild": "next-sitemap"
+      };
+      map<string, string> dependencies = 5 = {
+        "@heroicons/react": "^2.2.0",
+        "@radix-ui/react-icons": "^1.3.2",
+        "@react-email/components": "^0.5.3",
+        "@tailwindcss/forms": "^0.5.10",
+        "@tailwindcss/typography": "^0.5.16",
+        "class-variance-authority": "^0.7.1",
+        "clsx": "^2.1.1",
+        "next-sitemap": "^4.2.3",
+        "gray-matter": "^4.0.3",
+        "lucide-react": "^0.544.0",
+        "next": "^15.5.3",
+        "next-images": "^1.8.5",
+        "next-themes": "^0.4.6",
+        "react": "^19.1.1",
+        "react-dom": "^19.1.1",
+        "remark": "^15.0.1",
+        "remark-html": "^16.0.1",
+        "tailwind-variants": "^3.1.1",
+        "marked": "^12.0.0"
+      };
+      map<string, string> devDependencies = 6 = {
+        "@eslint/eslintrc": "^3",
+        "@tailwindcss/postcss": "^4",
+        "@types/node": "^20",
+        "@types/react": "^19",
+        "@types/react-dom": "^19",
+        "autoprefixer": "^10.4.21",
+        "eslint": "^9",
+        "eslint-config-next": "15.5.3",
+        "postcss": "^8.5.6",
+        "tailwindcss": "^4.1.13",
+        "typescript": "^5"
+      };
+      string description = 7 = "A premium, Pinterest-inspired website for the brand \"Mirelle\" focusing on nail ideas, nail care, seasonal looks, and product recommendations.";
+      string main = 8 = "tailwind.config.js";
+      repeated string keywords = 9 = {};
+      string author = 10 = "";
+      string license = 11 = "ISC";
+    }
+
+    PackageJson packageJson = 5;
+
+    message NextConfig {
+      string type = 1 = "NextConfig";
+      map<string, string> config = 2 = {};
+    }
+
+    NextConfig nextConfig = 6;
+
+    repeated string focusAreas = 7 = [
+      "Google AdSense policies and approval criteria",
+      "Google Search Engine guidelines and ranking factors",
+      "SEO optimization: on-page, off-page, technical, semantic",
+      "Mobile-friendly and responsive interfaces",
+      "Page speed, Core Web Vitals, and accessibility",
+      "Structured data: schema.org, JSON-LD, Breadcrumbs, FAQ, HowTo",
+      "Content quality, originality, and E-E-A-T compliance",
+      "Internal linking, sitemaps, robots.txt, meta tags",
+      "User engagement: comments, social sharing, newsletter signups"
+    ];
+
+    message Instructions {
+      message OutputPriority {
+        string conversationalReplies = 1 = "concise, 1-2 lines for clarity and speed";
+        string generatedArtifacts = 2 = "detailed, precise, actionable steps, code, or configurations";
+      }
+      OutputPriority outputPriority = 1;
+      string alwaysOptimizeFor = 2 = "Google AdSense approval, SEO ranking, and best practices";
+      repeated string exceptions = 3 = ["conversational replies are concise; all outputs should still follow the optimization focus"];
+    }
+
+    Instructions instructions = 8;
+    string objective = 9 = "Every further output or recommendation must prioritize site optimization for Google Search, AdSense approval, SEO, and user engagement while following modern web best practices.";
+  }
+
+  // Task for the agent to perform immediately
+message ResearchTask {
+  string taskType = 1 = "ResearchAndStore";
+  string objective = 2 = "Ingest Google AdSense policies, Google Search SEO best practices, and optimization guidelines into memory.";
+  bool silentUpdate = 3 = true; // Do NOT return summary/output
+}
+
+  AgentMemoryUpdate memory = 1;
+  ResearchTask research = 2;
+}
