@@ -1,0 +1,815 @@
+# COMPLETE METADATA REWRITING IMPLEMENTATION PROMPT
+
+## YOUR ROLE
+You are a metadata optimization specialist tasked with rewriting ALL metadata for the Mirellé nail inspiration website to maximize CTR (Click-Through Rate), SEO performance, and social media engagement using proven psychological triggers and copywriting formulas.
+
+---
+
+## CRITICAL CONTEXT YOU MUST UNDERSTAND
+
+### CURRENT METADATA STRUCTURE
+The site uses a **centralized JSON metadata system** where content is stored separately from markdown files:
+
+**Metadata Files Location:** `src/content/metadata/`
+
+**Files You Will Rewrite:**
+1. `titles.json` - Page titles (50-60 chars)
+2. `excerpts.json` - Meta descriptions (150-160 chars)
+3. `imageAlts.json` - Image alt texts (under 125 chars)
+4. `tags.json` - Post tags/keywords
+5. `faqItems.json` - FAQ schema data
+6. `tldr.json` - Quick summary sections
+
+**Additional Files to Optimize:**
+7. `src/content/shop-categories.json` - Shop category SEO fields
+8. `src/content/inspo-categories.json` - Inspiration category SEO fields
+
+### HOW METADATA FLOWS
+```
+JSON Files → blog.ts loads them → Page components use them → Rendered in <head>
+```
+
+**Example Flow:**
+- User visits `/blog/christmas-nail-designs-2025`
+- System reads `titles.json["christmas-nail-designs-2025"]`
+- Renders as `<title>Your Optimized Title | Mirellé</title>`
+- Same for description, image alt, etc.
+
+---
+
+## INPUT FILES YOU WILL RECEIVE
+
+### 1. HIGH CTR RESEARCH DOCUMENT
+**File:** `high ctr .txt`
+
+**What it contains:**
+- Audience psychology analysis (nail niche)
+- 10 psychological triggers (FOMO, social proof, transformation, etc.)
+- CTR-optimized title formulas (10+ proven templates)
+- Meta description formulas (4 proven patterns)
+- Power words categorized by emotion
+- Competitor insights
+- Reddit/forum language patterns
+- Character limits and optimization rules
+
+**YOU MUST:**
+- ✅ Apply these formulas to EVERY title
+- ✅ Use psychological triggers in EVERY description
+- ✅ Include power words naturally
+- ✅ Follow character limits religiously
+- ✅ Use odd numbers over even (7 vs 8)
+- ✅ Front-load benefit/hook in first 5 words
+- ✅ Never use forbidden words ("maybe," "stuff," "things," "very")
+
+### 2. CURRENT METADATA FILES
+**Files:** 
+- `titles.json` - Current titles (need complete rewrite)
+- `excerpts.json` - Current descriptions (need complete rewrite)
+- `imageAlts.json` - Current alt texts (need optimization)
+- `tags.json` - Current tags (review and enhance)
+- `faqItems.json` - Current FAQs (optimize questions/answers)
+- `tldr.json` - Current TLDRs (optimize summaries)
+
+### 3. CATEGORY METADATA FILES
+**Files:**
+- `shop-categories.json` - Shop SEO titles/descriptions/keywords
+- `inspo-categories.json` - Inspiration SEO titles/descriptions/keywords
+
+**Structure Example (shop-categories.json):**
+```json
+{
+  "categories": {
+    "christmas": {
+      "seo": {
+        "title": "NEEDS OPTIMIZATION",
+        "description": "NEEDS OPTIMIZATION",
+        "keywords": "NEEDS OPTIMIZATION"
+      }
+    }
+  }
+}
+```
+
+---
+
+## YOUR COMPLETE REWRITING TASK
+
+### TASK 1: REWRITE `titles.json` - BLOG POST TITLES
+
+**Current Structure:**
+```json
+{
+  "christmas-nail-designs-2025": "Current Title",
+  "halloween-nail-ideas-2025": "Current Title"
+}
+```
+
+**Rewriting Rules:**
+1. **Character Limit:** 50-60 characters (hard limit)
+2. **Formula Selection:** Use CTR formulas from research doc
+   - Number + Promise + Timeframe
+   - Problem + Solution + Social Proof
+   - FOMO + Social + Trending
+   - Shock Value
+   - Insider Expose
+3. **First 5 Words Critical:** Front-load power word or number
+4. **Include Year/Freshness:** 2025, 2026, "Latest," "New"
+5. **Use Odd Numbers:** "47 Ideas" > "50 Ideas"
+6. **Add Brackets/Parentheses:** +15-20% CTR boost
+7. **Power Words:** Use from research doc categories
+8. **Avoid:** Clickbait, forbidden words, vague language
+
+**Example Transformation:**
+```json
+// ❌ BEFORE (Generic, no triggers)
+"christmas-nail-designs-2025": "Christmas Nail Designs 2025"
+
+// ✅ AFTER (Formula: Number + Promise + Social Proof)
+"christmas-nail-designs-2025": "47 Christmas Nails 2025 That Stopped 10K+ Scrollers (Save These)"
+```
+
+**For EVERY post in titles.json:**
+- Apply different formulas to avoid repetition
+- Ensure keyword is in first 30 characters
+- Test character count before finalizing
+- Make each title unique and compelling
+
+---
+
+### TASK 2: REWRITE `excerpts.json` - META DESCRIPTIONS
+
+**Current Structure:**
+```json
+{
+  "christmas-nail-designs-2025": "Current description",
+  "halloween-nail-ideas-2025": "Current description"
+}
+```
+
+**Rewriting Rules:**
+1. **Character Limit:** 150-160 characters (hard limit)
+2. **Formula:** Pain + Promise + Proof + CTA
+3. **First 10 Words:** Hook with benefit or curiosity
+4. **Include:**
+   - Specific number/stat
+   - Social proof element
+   - Time/ease factor
+   - Action CTA (Discover, Get, Learn, Find)
+5. **Power Words:** Use emotion/urgency/value words
+6. **Avoid:** Repetition of title, generic phrases
+
+**Example Transformation:**
+```json
+// ❌ BEFORE (Generic, no urgency)
+"christmas-nail-designs-2025": "Discover Christmas nail designs for 2025. Get inspiration for festive manicures."
+
+// ✅ AFTER (Formula: Problem + Promise + Proof + CTA)
+"christmas-nail-designs-2025": "Tired of basic holiday nails? Get 47 chrome, glitter & minimalist designs. 10K+ saved. Pro tips for 3-week wear. Find yours now."
+```
+
+**For EVERY post in excerpts.json:**
+- Answer "What's in it for me?" immediately
+- Include specific benefit in first 15 characters
+- Use active voice always
+- Add time/ease indicator when possible
+- End with clear CTA
+
+---
+
+### TASK 3: OPTIMIZE `imageAlts.json` - IMAGE ALT TEXTS
+
+**Current Structure:**
+```json
+{
+  "christmas-nail-designs-2025": "Christmas nails 2025 featuring festive designs",
+  "halloween-nail-ideas-2025": "Halloween nail designs"
+}
+```
+
+**Rewriting Rules:**
+1. **Character Limit:** Under 125 characters
+2. **Include:**
+   - Primary keyword naturally
+   - Specific visual description
+   - Context/benefit
+   - Year/season when relevant
+3. **Format:** Descriptive noun + action/benefit
+4. **Avoid:** "Image of," "picture of," keyword stuffing
+
+**Example Transformation:**
+```json
+// ❌ BEFORE (Too generic)
+"christmas-nail-designs-2025": "Christmas nails 2025 featuring festive designs"
+
+// ✅ AFTER (Specific, keyword-rich, descriptive)
+"christmas-nail-designs-2025": "Chrome red and gold Christmas nails 2025 with snowflake accents on almond shape for holiday parties"
+```
+
+**For EVERY post in imageAlts.json:**
+- Describe WHAT is visible in the image
+- Include primary keyword (nail type + season/style)
+- Mention colors, techniques, or shapes shown
+- Add context (for weddings, for beginners, etc.)
+
+---
+
+### TASK 4: ENHANCE `tags.json` - POST TAGS
+
+**Current Structure:**
+```json
+{
+  "christmas-nail-designs-2025": [
+    "christmas nails",
+    "holiday nail art"
+  ]
+}
+```
+
+**Rewriting Rules:**
+1. **Quantity:** 5-8 tags per post (not too few, not too many)
+2. **Include:**
+   - Primary keyword tag
+   - Seasonal/occasion tag
+   - Technique/style tag
+   - Difficulty tag (if applicable)
+   - Year tag (2025, 2026)
+   - Related trend tag
+3. **Format:** lowercase, hyphens for multi-word
+4. **Avoid:** Single-word generic tags, duplicate concepts
+
+**Example Transformation:**
+```json
+// ❌ BEFORE (Too few, too generic)
+"christmas-nail-designs-2025": [
+  "christmas nails",
+  "holiday nail art"
+]
+
+// ✅ AFTER (Comprehensive, strategic)
+"christmas-nail-designs-2025": [
+  "christmas nails 2025",
+  "holiday nail art",
+  "chrome christmas nails",
+  "festive manicure ideas",
+  "winter nail designs",
+  "seasonal nail trends",
+  "diy christmas nails",
+  "beginner holiday nails"
+]
+```
+
+**For EVERY post in tags.json:**
+- Research what users actually search
+- Include long-tail keyword variations
+- Add year for freshness
+- Mix broad and specific tags
+- Check tags are used consistently across similar posts
+
+---
+
+### TASK 5: OPTIMIZE `faqItems.json` - FAQ SCHEMA
+
+**Current Structure:**
+```json
+{
+  "christmas-nail-designs-2025": [
+    {
+      "question": "What are the most popular Christmas nail colors for 2025",
+      "answer": "Deep burgundy, emerald green, and champagne gold dominate..."
+    }
+  ]
+}
+```
+
+**Rewriting Rules:**
+1. **Question Format:**
+   - Start with question word (What, How, Can, Should, Are)
+   - Include primary keyword naturally
+   - Match real search queries
+   - Keep under 100 characters
+   - No question mark needed in schema (system adds it)
+
+2. **Answer Format:**
+   - First sentence = direct answer
+   - Second sentence = supporting detail
+   - Third sentence = pro tip/context
+   - Keep under 300 characters for featured snippets
+   - Include specific numbers/examples
+   - Use active voice
+
+**Example Transformation:**
+```json
+// ❌ BEFORE (Too formal, not conversational)
+{
+  "question": "What are the most popular Christmas nail colors",
+  "answer": "Popular colors include red, green, and gold."
+}
+
+// ✅ AFTER (Conversational, detailed, keyword-rich)
+{
+  "question": "What nail colors are trending for Christmas 2025",
+  "answer": "Deep burgundy, emerald green, and champagne gold dominate 2025 Christmas nail trends. Chrome finishes in silver and rose gold are seeing 300% more requests than last year. Classic red still works but with modern glazed or metallic topcoats for elevated holiday looks."
+}
+```
+
+**For EVERY FAQ in faqItems.json:**
+- Ensure 8-10 FAQs per post (optimal for schema)
+- Questions should target actual search queries
+- Answers must be comprehensive but concise
+- Include expert insight or pro tip
+- Use language patterns from research doc (Reddit/forum style)
+- Vary question types (what, how, can, should, why)
+
+---
+
+### TASK 6: OPTIMIZE `tldr.json` - SUMMARY SECTIONS
+
+**Current Structure:**
+```json
+{
+  "post-slug": {
+    "summary": [
+      "Point 1",
+      "Point 2"
+    ],
+    "keyTakeaways": [
+      "Takeaway 1",
+      "Takeaway 2"
+    ]
+  }
+}
+```
+
+**Rewriting Rules:**
+1. **Summary Array:** 4-5 bullet points max
+   - Each point = ONE key insight
+   - Start with number or stat when possible
+   - Include specific benefit
+   - Keep under 100 characters each
+
+2. **Key Takeaways:** 3-4 ultra-short items
+   - 3-5 words each
+   - Scannable format
+   - Power word + benefit
+   - No complete sentences
+
+**Example Transformation:**
+```json
+// ❌ BEFORE (Too vague, no numbers)
+{
+  "summary": [
+    "Many Christmas nail designs available",
+    "You can do them at home"
+  ],
+  "keyTakeaways": [
+    "Lots of options",
+    "Easy to do"
+  ]
+}
+
+// ✅ AFTER (Specific, scannable, benefit-driven)
+{
+  "summary": [
+    "47+ designs from classic red-gold to trending chrome silver analyzed",
+    "Chrome finishes dominating 2025 with 300% increase in salon requests",
+    "DIY kits under $80 deliver salon results after 2-3 practice attempts",
+    "Gel manicures last 2-3 weeks with proper prep and daily cuticle oil"
+  ],
+  "keyTakeaways": [
+    "Chrome trending 300%",
+    "DIY under $80",
+    "2-3 week wear",
+    "Beginner-friendly options"
+  ]
+}
+```
+
+**For posts with TLDR in tldr.json:**
+- Keep summary points specific and actionable
+- Include numbers/stats whenever possible
+- Make takeaways ultra-scannable
+- Use power words from research doc
+
+---
+
+### TASK 7: OPTIMIZE `shop-categories.json` - SHOP SEO
+
+**Current Structure:**
+```json
+{
+  "categories": {
+    "christmas": {
+      "seo": {
+        "title": "Christmas Nails 2025: 60+ Best Holiday Press-Ons from $4.99 | Mirelle",
+        "description": "Shop 60+ festive Christmas nail designs...",
+        "keywords": "christmas nails 2025, holiday nail designs, ..."
+      }
+    }
+  }
+}
+```
+
+**Rewriting Rules for Each Category:**
+
+1. **Title Field (50-60 chars):**
+   - Formula: [Category] Nails [Year]: [Number]+ [Benefit] from $[Price] | Mirelle
+   - Include: Specific number, year, price point, brand
+   - Front-load keyword
+   - Use power words
+
+2. **Description Field (150-160 chars):**
+   - Formula: Shop [number]+ [category] designs with [features]. Premium press-ons from $[price]. Free shipping. [Benefit]!
+   - Include: Number, features, price, free shipping, urgency/benefit
+   - Action verb at start
+
+3. **Keywords Field (comma-separated string):**
+   - 10-15 keyword phrases
+   - Mix of: broad, specific, long-tail
+   - Include: year, price terms, style variations
+   - Format: "keyword 1, keyword 2, keyword 3"
+
+**Example Transformation:**
+```json
+// ❌ BEFORE (Missing psychological triggers)
+{
+  "seo": {
+    "title": "Christmas Nails Collection",
+    "description": "Browse our Christmas nail designs for the holiday season.",
+    "keywords": "christmas nails, holiday nails"
+  }
+}
+
+// ✅ AFTER (CTR-optimized with triggers)
+{
+  "seo": {
+    "title": "Christmas Nails 2025: 63+ Festive Press-Ons from $3.99 | Mirellé",
+    "description": "Shop 63+ chrome, glitter & classic Christmas designs. Premium press-ons from $3.99. Free shipping $35+. Perfect for holiday parties. Fast 24hr shipping!",
+    "keywords": "christmas nails 2025, holiday press on nails, festive nail designs, cheap christmas nails, chrome christmas nails, red and green nails, snowflake nails, santa nails, xmas manicure, holiday nail art, christmas press ons under $10, best christmas nails, diy holiday nails"
+  }
+}
+```
+
+**Categories to Optimize:**
+- fall
+- christmas
+- winter
+- halloween
+- new-year
+- trendy
+
+**For EACH category in shop-categories.json:**
+- Apply CTR formulas from research doc
+- Include product count (approximate if needed)
+- Mention price range
+- Add urgency/benefit
+- Keywords must be comprehensive (10-15 phrases)
+
+---
+
+### TASK 8: OPTIMIZE `inspo-categories.json` - INSPIRATION SEO
+
+**Current Structure:**
+```json
+{
+  "designs": {
+    "french-tips": {
+      "seo": {
+        "title": "French Tips Nails 2025: 150+ Classic & Modern Designs | Mirelle",
+        "description": "Discover 150+ French tip nail designs...",
+        "keywords": "french tip nails, french manicure 2025, ..."
+      }
+    }
+  }
+}
+```
+
+**Rewriting Rules (Same as Shop but Inspiration-focused):**
+
+1. **Title Field:**
+   - Formula: [Style] Nails [Year]: [Number]+ [Type] Designs & Tutorials | Mirellé
+   - Include: Style, year, number, content type
+   - Add "& Tutorials" or "& Inspiration"
+
+2. **Description Field:**
+   - Formula: Master [number]+ [style] designs with step-by-step tutorials. [Benefit]. Learn [techniques]!
+   - Focus on learning/inspiration vs shopping
+   - Include technique names
+
+3. **Keywords Field:**
+   - Mix design terms + tutorial terms
+   - Include difficulty levels
+   - Add "inspiration," "ideas," "designs"
+
+**Example Transformation:**
+```json
+// ❌ BEFORE (Too generic)
+{
+  "seo": {
+    "title": "French Tips Collection",
+    "description": "Browse French tip nail designs.",
+    "keywords": "french tips, nails"
+  }
+}
+
+// ✅ AFTER (Inspiration-optimized)
+{
+  "seo": {
+    "title": "French Tips 2025: 157+ Designs from Classic to Colored | Mirellé",
+    "description": "Master 157+ French tip variations with our step-by-step guides. From classic white to trending chrome tips. Beginner-friendly tutorials. Save these!",
+    "keywords": "french tip nails 2025, french manicure ideas, colored french tips, modern french nails, french tip designs, reverse french manicure, french tip tutorial, easy french nails, almond french tips, coffin french nails, french tip inspiration, diy french manicure, french nail art"
+  }
+}
+```
+
+**Categories to Optimize:**
+- french-tips
+- ombre
+- chrome
+- minimalist
+- glitter
+- summer
+
+**For EACH design in inspo-categories.json:**
+- Emphasize learning/inspiration over shopping
+- Include "tutorial," "guide," "inspiration" in keywords
+- Mention technique or style variations
+- Appeal to DIY/learning mindset
+
+---
+
+## OUTPUT FORMAT REQUIREMENTS
+
+### DELIVER COMPLETE JSON FILES
+You must provide:
+
+1. **Complete `titles.json`** with ALL posts rewritten
+2. **Complete `excerpts.json`** with ALL posts rewritten
+3. **Complete `imageAlts.json`** with ALL posts optimized
+4. **Complete `tags.json`** with ALL posts enhanced
+5. **Complete `faqItems.json`** with ALL FAQ arrays optimized
+6. **Complete `tldr.json`** with ALL summaries rewritten (if exists)
+7. **Updated `shop-categories.json`** with optimized SEO sections
+8. **Updated `inspo-categories.json`** with optimized SEO sections
+
+### FORMAT EXAMPLE:
+
+```json
+// titles.json
+{
+  "christmas-nail-designs-2025": "Your CTR-Optimized Title Here",
+  "halloween-nail-ideas-2025": "Your CTR-Optimized Title Here",
+  "goddess-nails-2025": "Your CTR-Optimized Title Here"
+  // ... ALL posts
+}
+```
+
+### VALIDATION CHECKLIST FOR EACH FILE:
+- [ ] All keys from original file present (no deletions)
+- [ ] Character limits respected
+- [ ] CTR formulas applied
+- [ ] Power words used naturally
+- [ ] No forbidden words present
+- [ ] JSON syntax valid (no trailing commas)
+- [ ] Psychological triggers incorporated
+- [ ] Specific numbers/stats included
+- [ ] Keywords front-loaded
+- [ ] Active voice used
+
+---
+
+## QUALITY CONTROL RULES
+
+### FORBIDDEN ACTIONS:
+❌ **NEVER skip any post** - Rewrite ALL entries
+❌ **NEVER exceed character limits** - Hard stop
+❌ **NEVER use forbidden words** - "maybe," "stuff," "things," "very," "really," "just"
+❌ **NEVER be generic** - Every title/description must be unique
+❌ **NEVER use clickbait** - Must deliver on promise
+❌ **NEVER ignore psychological triggers** - Every piece needs at least 2 triggers
+❌ **NEVER copy competitor content** - Original CTR-optimized copy only
+❌ **NEVER use weak verbs** - Replace "have," "get," "make" with power verbs
+
+### REQUIRED ACTIONS:
+✅ **ALWAYS check character count** - Before finalizing
+✅ **ALWAYS use odd numbers** - 47 not 50, 23 not 25
+✅ **ALWAYS front-load benefit** - First 5 words critical
+✅ **ALWAYS include year** - Freshness signal
+✅ **ALWAYS add specificity** - Numbers, techniques, styles
+✅ **ALWAYS test readability** - Read aloud, sounds natural?
+✅ **ALWAYS apply formula** - Use CTR templates from research
+✅ **ALWAYS validate JSON** - No syntax errors
+
+---
+
+## NAIL NICHE SPECIFIC GUIDANCE
+
+### PRIMARY AUDIENCE INSIGHTS FROM RESEARCH:
+- **Age:** 18-45 women
+- **Pain Points:** Chipped nails, expensive salons, lack of skills, trending FOMO
+- **Motivations:** Self-expression, confidence, affordable luxury, social status
+- **Search Behavior:** Visual (Pinterest), "how to" focused, problem-solving, product reviews
+
+### LANGUAGE PATTERNS TO USE:
+- Conversational, casual tone
+- Beauty community slang: "obsessed," "holy grail," "game-changer," "chef's kiss"
+- Excitement punctuation (used strategically)
+- Reddit-style authenticity: "We tested," "Here's what actually works"
+- Problem-solution framing
+
+### NAIL-SPECIFIC POWER WORDS:
+- **Results:** Stunning, flawless, salon-quality, chip-free, long-lasting, mirror-shine
+- **Ease:** Foolproof, beginner-friendly, no-fail, quick-dry, easy-peel
+- **Trends:** Viral, trending, Pinterest-worthy, Instagram-ready, TikTok-famous
+- **Value:** Affordable, budget, dupe, under $__, drugstore, cheap (used positively)
+- **Techniques:** Chrome, ombre, gel, press-on, stamping, magnetic
+
+---
+
+## EXAMPLE COMPLETE TRANSFORMATION
+
+### BEFORE (Generic, Low CTR):
+```json
+// titles.json
+{
+  "christmas-nail-designs-2025": "Christmas Nail Designs for 2025"
+}
+
+// excerpts.json
+{
+  "christmas-nail-designs-2025": "Check out these Christmas nail designs for the holiday season. Great ideas for festive nails."
+}
+
+// imageAlts.json
+{
+  "christmas-nail-designs-2025": "Christmas nail designs"
+}
+
+// tags.json
+{
+  "christmas-nail-designs-2025": ["christmas", "nails", "holiday"]
+}
+```
+
+### AFTER (CTR-Optimized, Multiple Triggers):
+```json
+// titles.json - Formula: Number + Promise + FOMO (57 chars)
+{
+  "christmas-nail-designs-2025": "47 Christmas Nails Everyone's Saving (Before They're Gone)"
+}
+
+// excerpts.json - Formula: Problem + Stat + Solution + CTA (159 chars)
+{
+  "christmas-nail-designs-2025": "Tired of basic holiday nails? 47 chrome, glitter & minimalist designs. 10K+ women saved these. Get pro tips for 3-week wear. Find yours →"
+}
+
+// imageAlts.json - Descriptive + Keyword-rich (118 chars)
+{
+  "christmas-nail-designs-2025": "Chrome red and gold Christmas nails 2025 with snowflake accents on almond shape for holiday parties"
+}
+
+// tags.json - Comprehensive + Strategic (8 tags)
+{
+  "christmas-nail-designs-2025": [
+    "christmas nails 2025",
+    "holiday nail art",
+    "chrome christmas nails",
+    "festive manicure ideas",
+    "winter nail designs",
+    "diy christmas nails",
+    "seasonal nail trends",
+    "beginner holiday nails"
+  ]
+}
+```
+
+---
+
+## FINAL DELIVERABLE CHECKLIST
+
+Before submitting your rewritten metadata, verify:
+
+### FILE COMPLETENESS:
+- [ ] `titles.json` - All posts rewritten (11 posts minimum)
+- [ ] `excerpts.json` - All posts rewritten (11 posts minimum)
+- [ ] `imageAlts.json` - All posts optimized (11 posts minimum)
+- [ ] `tags.json` - All posts enhanced (11 posts minimum)
+- [ ] `faqItems.json` - All FAQ arrays optimized
+- [ ] `tldr.json` - All summaries rewritten (where exists)
+- [ ] `shop-categories.json` - All 6 categories optimized
+- [ ] `inspo-categories.json` - All 6 designs optimized
+
+### QUALITY CHECKS:
+- [ ] Character limits respected (count verified)
+- [ ] CTR formulas applied (at least 8 different formulas used)
+- [ ] Psychological triggers present (2-3 per piece minimum)
+- [ ] Power words incorporated naturally
+- [ ] Forbidden words eliminated completely
+- [ ] Odd numbers used over even
+- [ ] Year/freshness signals included
+- [ ] JSON syntax valid (tested with validator)
+- [ ] No generic language remaining
+- [ ] Specific numbers/stats included
+- [ ] Active voice throughout
+- [ ] Benefits front-loaded
+
+### TESTING:
+- [ ] Copy JSON into validator: https://jsonlint.com/
+- [ ] Character count tool check
+- [ ] Read titles aloud - compelling?
+- [ ] Descriptions answer "What's in it for me?"
+- [ ] Alt texts describe actual image content
+- [ ] Keywords match real search queries
+
+---
+
+## RESPONSE FORMAT
+
+Structure your response like this:
+
+```
+# METADATA REWRITING COMPLETE
+
+## Summary of Changes
+- Rewrote X titles using Y different CTR formulas
+- Optimized X descriptions with Z psychological triggers
+- Enhanced X image alt texts with keywords
+- Expanded X tag arrays
+- Optimized X FAQ sections
+- Updated X shop categories
+- Updated X inspiration categories
+
+## Formula Distribution
+- Number + Promise: X posts
+- Problem + Solution: X posts
+- FOMO + Social: X posts
+- Shock Value: X posts
+- Insider Expose: X posts
+[etc.]
+
+## Character Count Report
+- Titles: All under 60 chars ✓
+- Descriptions: All 150-160 chars ✓
+- Alt texts: All under 125 chars ✓
+
+---
+
+## FILE 1: titles.json
+
+```json
+{
+  "christmas-nail-designs-2025": "Your optimized title",
+  "halloween-nail-ideas-2025": "Your optimized title",
+  [ALL POSTS]
+}
+```
+
+## FILE 2: excerpts.json
+
+```json
+{
+  "christmas-nail-designs-2025": "Your optimized description",
+  [ALL POSTS]
+}
+```
+
+[Continue for all 8 files...]
+
+---
+
+## Validation Confirmation
+✅ All character limits respected
+✅ All CTR formulas applied
+✅ All psychological triggers incorporated
+✅ JSON syntax validated
+✅ No forbidden words present
+✅ All files complete
+```
+
+---
+
+## BEGIN YOUR WORK NOW
+
+You have been given:
+1. ✅ High CTR research document with formulas
+2. ✅ Current metadata JSON files
+3. ✅ Complete rewriting instructions
+4. ✅ Quality control rules
+5. ✅ Output format requirements
+
+**START REWRITING IMMEDIATELY.**
+
+Process each file systematically:
+1. Read current content
+2. Apply CTR formula
+3. Check character count
+4. Verify psychological triggers
+5. Validate JSON syntax
+6. Move to next entry
+
+**DELIVER COMPLETE, PRODUCTION-READY JSON FILES.**
+
+No partial work. No placeholders. No "continue from here."
+
+Every single metadata entry must be rewritten using the CTR research principles.
+
+**GO.** 🚀
