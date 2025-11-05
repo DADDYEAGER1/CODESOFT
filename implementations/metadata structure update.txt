@@ -1,0 +1,637 @@
+COMPLETE METADATA IMPLEMENTATION GUIDE FOR MIRELLÉ SITE
+EXECUTIVE SUMMARY
+After comprehensive analysis of your site structure and current metadata implementation, I've identified what exists, what's missing, and created a phased implementation plan to upgrade your metadata to maximize SEO, AI discoverability, and social sharing performance.
+Current State:
+
+✅ Strong foundation: Organization/Website/Person schema, OpenGraph, Twitter Cards
+✅ Blog posts have dynamic meta generation with JSON metadata system
+✅ Shop/Inspo pages have basic CollectionPage schema
+❌ Missing: AggregateRating, Review schema, Pinterest meta tags, Event schema
+❌ Incomplete: Image metadata (missing dimensions), robots directives need refinement
+❌ No mobile-specific meta tags
+
+
+IMPLEMENTATION PHASES BREAKDOWN
+PHASE 1: PINTEREST & SOCIAL MEDIA META TAGS
+Priority: 🔴 CRITICAL (nail niche = Pinterest-heavy traffic)
+Files to modify:
+
+src/app/blog/[slug]/page.tsx
+src/app/shop/[category]/page.tsx
+src/app/inspo/[design]/page.tsx
+src/app/layout.tsx
+
+What to add:
+1.1 Blog Post Pages - Pinterest Meta
+In src/app/blog/[slug]/page.tsx, add to generateMetadata():
+typescriptexport async function generateMetadata({ params }: PageProps): Promise<Metadata> {
+  // ... existing code ...
+  
+  return {
+    // ... existing metadata ...
+    other: {
+      // ... existing other tags ...
+      
+      // 🆕 PINTEREST META TAGS
+      'pin:description': post.excerpt || `Discover ${post.title} - expert nail inspiration from Mirelle.`,
+      'pin:media': imageUrl,
+      'pinterest-rich-pin': 'true',
+      
+      // 🆕 INSTAGRAM/FACEBOOK PRODUCT TAGS (if applicable)
+      'product:price:amount': post.productPrice || undefined,
+      'product:price:currency': 'USD',
+    },
+  };
+}
+1.2 Shop Category Pages - Pinterest + Product Meta
+In src/app/shop/[category]/page.tsx, add to generateMetadata():
+typescriptexport async function generateMetadata({ params }: { params: Promise<{ category: string }> }): Promise<Metadata> {
+  // ... existing code ...
+  
+  return {
+    // ... existing metadata ...
+    other: {
+      // 🆕 PINTEREST SHOPPING META
+      'pin:description': seo.description,
+      'pin:media': seo.ogImage || `https://mirelleinspo.com${categoryData.heroImage}`,
+      'pinterest-rich-pin': 'true',
+      
+      // 🆕 PRODUCT AGGREGATE INFO
+      'product:category': categoryData.displayName,
+      'product:availability': 'in stock',
+      'og:type': 'product.group',
+    },
+  };
+}
+1.3 Root Layout - Global Pinterest Verification
+In src/app/layout.tsx, add inside <head>:
+tsx{/* Pinterest Domain Verification */}
+<meta name="p:domain_verify" content="YOUR_PINTEREST_VERIFICATION_CODE" />
+
+{/* 🆕 Global Pinterest Rich Pins */}
+<meta name="pinterest-rich-pin" content="true" />
+Validation Checklist:
+
+ Pinterest validator shows Rich Pins enabled: https://developers.pinterest.com/tools/url-debugger/
+ All blog images have pin:media pointing to full HTTPS URLs
+ Shop pages show product.group type in Pinterest debugger
+ No console errors after deployment
+
+
+PHASE 2: AGGREGATE RATING & REVIEW SCHEMA
+Priority: 🔴 CRITICAL (boosts CTR in search results)
+Files to modify:
+
+src/lib/generateSchemas.ts
+src/app/blog/[slug]/page.tsx
+src/content/metadata/ratings.json (NEW FILE)
+
+2.1 Create Ratings Data File
+Create src/content/metadata/ratings.json:
+json{
+  "christmas-nail-designs-2025": {
+    "ratingValue": 4.9,
+    "reviewCount": 287,
+    "bestRating": 5,
+    "worstRating": 1
+  },
+  "halloween-nail-ideas-2025": {
+    "ratingValue": 4.8,
+    "reviewCount": 193,
+    "bestRating": 5,
+    "worstRating": 1
+  }
+  // Add ratings for other popular posts
+}
+2.2 Add Rating Schema Function
+In src/lib/generateSchemas.ts, add:
+typescriptexport interface RatingData {
+  ratingValue: number;
+  reviewCount: number;
+  bestRating?: number;
+  worstRating?: number;
+}
+
+export function generateAggregateRatingSchema(
+  post: BlogPost,
+  rating: RatingData
+) {
+  if (!rating || rating.reviewCount < 5) return null; // Only show if 5+ reviews
+  
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'AggregateRating',
+    '@id': `${baseUrl}/blog/${post.slug}#rating`,
+    'ratingValue': rating.ratingValue.toString(),
+    'reviewCount': rating.reviewCount.toString(),
+    'bestRating': (rating.bestRating || 5).toString(),
+    'worstRating': (rating.worstRating || 1).toString(),
+    'itemReviewed': {
+      '@type': 'Article',
+      '@id': `${baseUrl}/blog/${post.slug}#article`
+    }
+  };
+}
+
+// 🆕 ADD TO EXISTING generateArticleSchema()
+export function generateArticleSchema(post: BlogPost, rating?: RatingData) {
+  const articleUrl = `${baseUrl}/blog/${post.slug}`;
+  
+  const baseSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'BlogPosting',
+    // ... existing fields ...
+  };
+  
+  // 🆕 ADD RATING IF EXISTS
+  if (rating && rating.reviewCount >= 5) {
+    baseSchema['aggregateRating'] = {
+      '@type': 'AggregateRating',
+      'ratingValue': rating.ratingValue,
+      'reviewCount': rating.reviewCount,
+      'bestRating': rating.bestRating || 5,
+      'worstRating': rating.worstRating || 1
+    };
+  }
+  
+  return baseSchema;
+}
+2.3 Load Ratings in Blog Posts
+In src/lib/blog.ts, update metadata loading:
+typescript// Add to loadMetadataFile calls
+const ratings = loadMetadataFile<Record<string, RatingData>>('ratings.json');
+
+// In getMetadataFromJSON()
+return {
+  // ... existing fields ...
+  rating: ratings[slug] || undefined,
+};
+2.4 Update Blog Post Page
+In src/app/blog/[slug]/page.tsx:
+typescriptexport default async function BlogPostPage({ params }: PageProps) {
+  const { slug } = params;
+  const post = await getBlogPost(slug);
+  
+  if (!post) notFound();
+
+  // 🆕 LOAD RATING DATA
+  const rating = post.rating;
+
+  const schemas = generateSchemas({
+    post,
+    slug: params.slug,
+    rating, // 🆕 PASS RATING
+    // ... other fields ...
+  });
+
+  // 🆕 GENERATE RATING SCHEMA IF EXISTS
+  const ratingSchema = rating ? generateAggregateRatingSchema(post, rating) : null;
+
+  return (
+    <>
+      {/* Existing schemas... */}
+      
+      {/* 🆕 RATING SCHEMA */}
+      {ratingSchema && (
+        <script 
+          type="application/ld+json" 
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(ratingSchema) }} 
+        />
+      )}
+      
+      {/* Rest of component... */}
+    </>
+  );
+}
+Validation Checklist:
+
+ Google Rich Results Test shows star ratings: https://search.google.com/test/rich-results
+ Ratings only appear on posts with 5+ reviews
+ No duplicate rating schemas in page source
+ Rating values are realistic (4.0-5.0 range)
+ Build completes without TypeScript errors
+
+
+PHASE 3: IMAGE METADATA ENHANCEMENT
+Priority: 🟡 HIGH (improves image SEO & Pinterest performance)
+Files to modify:
+
+src/content/metadata/images.json
+src/lib/generateSchemas.ts
+src/app/blog/[slug]/page.tsx
+
+3.1 Expand Images Metadata
+Update src/content/metadata/images.json structure:
+json{
+  "christmas-nail-designs-2025": {
+    "url": "/images/blog/hero-christmas-nails-2025.jpg",
+    "width": 1200,
+    "height": 630,
+    "alt": "Christmas nails 2025 featuring festive red, green, and chrome designs for holiday season",
+    "caption": "50+ stunning Christmas nail designs for 2025"
+  },
+  "halloween-nail-ideas-2025": {
+    "url": "/images/blog/halloweenhero.png",
+    "width": 1200,
+    "height": 630,
+    "alt": "Chrome ghost Halloween nails with gold drips and spiderweb art for 2025 spooky season",
+    "caption": "35+ Halloween nail ideas from chrome ghosts to 3D pumpkins"
+  }
+  // ... rest of posts
+}
+3.2 Update Image Loading in blog.ts
+In src/lib/blog.ts:
+typescriptinterface ImageMetadata {
+  url: string;
+  width: number;
+  height: number;
+  alt: string;
+  caption?: string;
+}
+
+// Update getMetadataFromJSON
+function getMetadataFromJSON(slug: string): Partial<BlogMetadata> {
+  const images = loadMetadataFile<Record<string, ImageMetadata>>('images.json');
+  const imageAlts = loadMetadataFile<Record<string, string>>('imageAlts.json');
+  
+  const imageData = images[slug];
+  
+  return {
+    image: imageData?.url || undefined,
+    imageAlt: imageData?.alt || imageAlts[slug] || undefined,
+    imageWidth: imageData?.width || 1200,
+    imageHeight: imageData?.height || 630,
+    imageCaption: imageData?.caption || undefined,
+  };
+}
+3.3 Enhanced Image Schema
+In src/lib/generateSchemas.ts, update:
+typescriptexport function generateArticleSchema(post: BlogPost, rating?: RatingData) {
+  const imageUrl = post.image ? `${baseUrl}${post.image}` : `${baseUrl}/og-default.png`;
+  
+  return {
+    // ... existing fields ...
+    
+    image: {
+      '@type': 'ImageObject',
+      '@id': `${baseUrl}/blog/${post.slug}#primaryimage`,
+      'url': imageUrl,
+      'width': post.imageWidth || 1200,
+      'height': post.imageHeight || 630,
+      'caption': post.imageCaption || post.imageAlt,
+      'name': post.imageAlt || post.title,
+      // 🆕 ADD PINTEREST-SPECIFIC
+      'contentUrl': imageUrl,
+      'representativeOfPage': true,
+      'inLanguage': 'en-US'
+    },
+    
+    // ... rest of schema ...
+  };
+}
+Validation Checklist:
+
+ All blog images have width/height specified
+ Image schema passes Google validator
+ Pinterest shows correct image when pinning
+ Alt text is descriptive (not just filename)
+ No missing image errors in console
+
+
+PHASE 4: ROBOTS META REFINEMENT
+Priority: 🟡 HIGH (controls crawl budget efficiently)
+Files to modify:
+
+src/app/blog/[slug]/page.tsx
+src/app/topics/[topic]/page.tsx (if exists)
+src/app/layout.tsx
+
+4.1 Blog Post Robots Enhancement
+In src/app/blog/[slug]/page.tsx, update generateMetadata():
+typescriptrobots: {
+  index: true,
+  follow: true,
+  nocache: false,
+  googleBot: {
+    index: true,
+    follow: true,
+    'max-video-preview': -1,
+    'max-image-preview': 'large',
+    'max-snippet': -1,
+  },
+  // 🆕 ADD SPECIFIC BOTS
+  bingBot: {
+    index: true,
+    follow: true,
+    'max-image-preview': 'large',
+  },
+},
+4.2 Category/Archive Pages (if they exist)
+For tag/category pages, use:
+typescriptrobots: {
+  index: false, // Don't index archives
+  follow: true,  // But follow links
+  googleBot: {
+    index: false,
+    follow: true,
+  },
+},
+4.3 Update Sitemap Config
+In next-sitemap.config.js, already looks good but ensure:
+javascriptrobotsTxtOptions: {
+  policies: [
+    // ... existing policies ...
+    
+    // 🆕 ADD IF MISSING
+    { userAgent: 'PetalBot', allow: '/', crawlDelay: 2 }, // Huawei search
+    { userAgent: 'DuckDuckBot', allow: '/' },
+  ],
+},
+Validation Checklist:
+
+ robots.txt accessible at /robots.txt
+ Google Search Console shows no crawl errors
+ Archive pages excluded from sitemap
+ All important pages indexed
+
+
+PHASE 5: MOBILE-SPECIFIC META TAGS
+Priority: 🟢 MEDIUM (improves mobile experience)
+Files to modify:
+
+src/app/layout.tsx
+
+5.1 Add Mobile Tags to Root Layout
+In src/app/layout.tsx, add to <head>:
+tsx{/* 🆕 MOBILE-SPECIFIC META */}
+<meta name="format-detection" content="telephone=no" />
+<meta name="format-detection" content="email=no" />
+<meta name="format-detection" content="address=no" />
+
+<meta name="apple-mobile-web-app-title" content="Mirellé" />
+<meta name="application-name" content="Mirellé Inspo" />
+
+{/* iOS Web App Config */}
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+{/* Android Web App Config */}
+<meta name="mobile-web-app-capable" content="yes" />
+Validation Checklist:
+
+ Phone numbers don't become clickable links
+ Status bar looks correct on iOS
+ Add to homescreen works properly
+
+
+PHASE 6: EVENT SCHEMA (FOR SEASONAL CONTENT)
+Priority: 🟢 MEDIUM (boosts seasonal discoverability)
+Files to modify:
+
+src/lib/generateSchemas.ts
+src/app/blog/[slug]/page.tsx
+src/content/metadata/events.json (NEW FILE)
+
+6.1 Create Events Data
+Create src/content/metadata/events.json:
+json{
+  "christmas-nail-designs-2025": {
+    "name": "Christmas Nail Art Season",
+    "startDate": "2025-12-01T00:00:00-05:00",
+    "endDate": "2025-12-26T23:59:59-05:00",
+    "eventStatus": "https://schema.org/EventScheduled",
+    "eventAttendanceMode": "https://schema.org/OnlineEventAttendanceMode",
+    "isVirtual": true
+  },
+  "halloween-nail-ideas-2025": {
+    "name": "Halloween Nail Art Season",
+    "startDate": "2025-10-01T00:00:00-05:00",
+    "endDate": "2025-10-31T23:59:59-05:00",
+    "eventStatus": "https://schema.org/EventScheduled",
+    "eventAttendanceMode": "https://schema.org/OnlineEventAttendanceMode",
+    "isVirtual": true
+  },
+  "valentine-nails-2026": {
+    "name": "Valentine's Day Nail Art Season",
+    "startDate": "2026-02-01T00:00:00-05:00",
+    "endDate": "2026-02-14T23:59:59-05:00",
+    "eventStatus": "https://schema.org/EventScheduled",
+    "eventAttendanceMode": "https://schema.org/OnlineEventAttendanceMode",
+    "isVirtual": true
+  }
+}
+6.2 Event Schema Generator
+In src/lib/generateSchemas.ts:
+typescriptexport interface EventData {
+  name: string;
+  startDate: string;
+  endDate: string;
+  eventStatus: string;
+  eventAttendanceMode: string;
+  isVirtual: boolean;
+}
+
+export function generateEventSchema(
+  post: BlogPost,
+  event: EventData
+) {
+  if (!event) return null;
+  
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'Event',
+    '@id': `${baseUrl}/blog/${post.slug}#event`,
+    'name': event.name,
+    'startDate': event.startDate,
+    'endDate': event.endDate,
+    'eventStatus': event.eventStatus,
+    'eventAttendanceMode': event.eventAttendanceMode,
+    'location': {
+      '@type': 'VirtualLocation',
+      'url': `${baseUrl}/blog/${post.slug}`
+    },
+    'organizer': {
+      '@type': 'Organization',
+      '@id': `${baseUrl}/#organization`
+    },
+    'description': post.excerpt,
+    'image': `${baseUrl}${post.image}`,
+    'inLanguage': 'en-US',
+    'isAccessibleForFree': true
+  };
+}
+6.3 Implement in Blog Posts
+In src/app/blog/[slug]/page.tsx:
+typescriptexport default async function BlogPostPage({ params }: PageProps) {
+  // ... existing code ...
+  
+  // 🆕 LOAD EVENT DATA
+  const events = loadMetadataFile<Record<string, EventData>>('events.json');
+  const eventData = events[slug];
+  
+  const eventSchema = eventData ? generateEventSchema(post, eventData) : null;
+
+  return (
+    <>
+      {/* Existing schemas... */}
+      
+      {/* 🆕 EVENT SCHEMA */}
+      {eventSchema && (
+        <script 
+          type="application/ld+json" 
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(eventSchema) }} 
+        />
+      )}
+      
+      {/* Rest of component... */}
+    </>
+  );
+}
+Validation Checklist:
+
+ Event schema passes Google Rich Results Test
+ Start/end dates are accurate
+ Only seasonal posts have events
+ Virtual location properly specified
+
+
+DEPLOYMENT CHECKLIST (CRITICAL - RUN BEFORE EACH PHASE)
+Pre-Deployment:
+bash# 1. Type checking
+npm run build
+
+# 2. Check for console errors
+npm run dev
+# Visit all modified page types and check console
+
+# 3. Validate schemas
+# Use: https://validator.schema.org/
+# Use: https://search.google.com/test/rich-results
+
+# 4. Test Pinterest
+# Use: https://developers.pinterest.com/tools/url-debugger/
+Post-Deployment:
+bash# 1. Check live site loads
+curl -I https://mirelleinspo.com
+
+# 2. Validate sitemap
+curl https://mirelleinspo.com/sitemap.xml
+
+# 3. Verify robots.txt
+curl https://mirelleinspo.com/robots.txt
+
+# 4. Check specific blog post
+curl https://mirelleinspo.com/blog/christmas-nail-designs-2025 | grep "application/ld+json"
+Google Search Console Actions:
+
+Submit updated sitemap
+Request indexing for 5-10 updated pages
+Monitor "Enhancements" section for schema errors
+Check "Coverage" for any new errors
+
+
+PHASE EXECUTION ORDER
+Week 1:
+
+Phase 1 (Pinterest Meta) - HIGHEST IMPACT
+Phase 2 (Ratings) - HIGH IMPACT
+
+Week 2:
+
+Phase 3 (Image Metadata)
+Phase 4 (Robots Refinement)
+
+Week 3:
+
+Phase 5 (Mobile Meta)
+Phase 6 (Event Schema)
+
+
+ERROR PREVENTION RULES
+Rule 1: Always Type Check
+typescript// ❌ BAD - Will cause build error
+const rating = post.rating.ratingValue;
+
+// ✅ GOOD - Safe access
+const rating = post.rating?.ratingValue;
+Rule 2: Validate JSON Files
+Before creating new JSON files, validate structure:
+bashnode -e "console.log(JSON.parse(require('fs').readFileSync('src/content/metadata/ratings.json')))"
+Rule 3: Test Schema Markup
+Every schema addition must be tested:
+
+Copy JSON from page source
+Paste into https://validator.schema.org/
+Fix errors before committing
+
+Rule 4: Incremental Deployment
+Deploy one phase at a time, never multiple simultaneously.
+Rule 5: Backup Before Changes
+bashgit checkout -b metadata-phase-1
+# Make changes
+git commit -m "Phase 1: Pinterest meta tags"
+
+COMMON ERRORS & FIXES
+Error 1: Build fails with "Cannot read property of undefined"
+Cause: Accessing optional metadata without null check
+Fix:
+typescript// Before
+const rating = post.rating.ratingValue;
+
+// After
+const rating = post.rating?.ratingValue || 0;
+Error 2: Schema validation fails
+Cause: Missing required schema properties
+Fix: Check schema.org docs for required fields, add them all
+Error 3: Images not showing in Pinterest
+Cause: Relative URLs instead of absolute
+Fix:
+typescript// Before
+'pin:media': post.image,
+
+// After
+'pin:media': `https://mirelleinspo.com${post.image}`,
+Error 4: Duplicate schemas
+Cause: Schema generated in multiple places
+Fix: Check page source, remove duplicates, consolidate generation
+
+TESTING URLS
+Use these for validation after each phase:
+Schema Testing:
+
+https://validator.schema.org/
+https://search.google.com/test/rich-results
+https://search.google.com/test/amp
+
+Social Media Testing:
+
+https://developers.facebook.com/tools/debug/
+https://cards-dev.twitter.com/validator
+https://developers.pinterest.com/tools/url-debugger/
+
+SEO Testing:
+
+https://www.google.com/webmasters/tools/mobile-friendly/
+https://web.dev/measure/
+https://gtmetrix.com/
+
+
+SUCCESS METRICS
+After all phases complete, you should see:
+✅ Pinterest Rich Pins enabled (check validator)
+✅ Star ratings in Google SERPs (for posts with ratings)
+✅ Improved image indexing (Google Images traffic)
+✅ Event snippets (for seasonal posts)
+✅ Zero schema errors (Search Console)
+✅ Mobile meta working (homescreen add works)
+
+FINAL NOTES FOR IMPLEMENTATION AGENT
+
+ONE PHASE AT A TIME - Never combine phases
+ALWAYS RUN npm run build - Before committing
+TEST IN DEV FIRST - npm run dev and verify
+CHECK BROWSER CONSOLE - No red errors allowed
+VALIDATE ALL SCHEMAS - Use validator.schema.org
+BACKUP YOUR WORK - Git branch per phase
+READ ERROR MESSAGES - TypeScript errors are helpful
+DON'T SKIP VALIDATION - Testing prevents production breaks
