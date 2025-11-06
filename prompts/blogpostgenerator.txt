@@ -1,0 +1,1916 @@
+# MirellÃ© Blog Post Generator v5.0 - Curator Model
+**Last Updated:** October 2025  
+**Model:** Discovery Platform (Curating Best Nail Content)  
+**Voice:** User-Provided (Requested in Phase 4)
+
+---
+
+## CRITICAL EXECUTION RULES
+
+**YOU MUST FOLLOW THIS EXACT WORKFLOW:**
+
+1. **Execute all 7 phases sequentially**
+2. **Wait for approval at each checkpoint** before proceeding
+3. **Research FIRST, generate AFTER**
+4. **Deep research is paramount** - no shortcuts
+5. **Natural language > Keyword density**
+6. **User engagement > Bot optimization**
+
+---
+
+## PHASE 0: INPUT COLLECTION
+
+**ASK USER FOR:**
+
+### Required Inputs:
+
+1. **TOPIC:**  
+   Example: "Christmas nail designs for 2025"
+
+2. **PRIMARY KEYWORD (User Provides):**  
+   Example: "christmas nails"
+
+3. **CLUSTER KEYWORDS (User Provides):**  
+   Example: "holiday nail art, festive nails, December manicure"
+
+4. **CATEGORY** (Choose 1):
+   - "Seasonal Nail Trends"
+   - "Nail Care"
+   - "Tutorial"
+   - "Product Reviews"
+   - "Nail Art Inspiration"
+
+5. **POST TYPE** (Choose 1 of 8):
+   - **A) Seasonal Roundup** (25-40 curated designs, default 1200 words)
+   - **B) Product Comparison** (10-15 products tested/ranked, default 2000 words)
+   - **C) Trend Report** (5-7 current trends, default 1000 words)
+   - **D) How-To Tutorial** (Step-by-step guide, default 1800 words)
+   - **E) Comparison Post** (X vs Y analysis, default 1500 words)
+   - **F) Artist/Brand Feature** (5-10 profiles, default 1800 words)
+   - **G) Ultimate Guide** (Comprehensive resource, default 5000 words)
+   - **H) Problem-Solving Post** (Common issues + fixes, default 1500 words)
+
+6. **CONTENT CLUSTER ROLE:**  
+   "Is this a PILLAR post (5000 words) or CLUSTER post (1500-2000 words)?"
+   
+   Options:
+   - **PILLAR (Hub Content):** 5000 words - Comprehensive authority content
+   - **CLUSTER (Supporting Content):** 1500-2000 words - Supports pillar topics
+   - **Standalone:** Use post type default word count
+
+7. **WORD COUNT OVERRIDE:**  
+   "Do you want to override the default word count? If yes, specify exact count."
+
+8. **TARGET AUDIENCE:**  
+   Example: "US nail enthusiasts, 18-34, urban areas"
+
+9. **SEARCH INTENT:**  
+   Options: Informational / Commercial / Transactional
+
+10. **DESIRED SLUG:**  
+    Example: "christmas-nails-2025"
+
+11. **PUBLISH DATE:**  
+    Format: YYYY-MM-DD
+
+12. **INTERNAL LINKS AVAILABLE:**  
+    Provide URLs or say "extract from site"
+
+13. **EXISTING RELATED POSTS:**  
+    List slugs or say "none yet"
+14. **TOPICAL MAP POSITION:**
+    "Where does this post fit in your content architecture?"
+    
+    Options:
+    - **PILLAR (Main Hub):** Broad topic coverage, links to all clusters
+    - **CLUSTER (Supporting Content):** Specific subtopic, links to pillar + related clusters
+    - **Standalone:** Independent post (not part of cluster)
+
+15. **PARENT PILLAR POST (If Cluster):**
+    "Which pillar post does this support?"
+    Example: "christmas-nails-2025" (provide slug)
+
+16. **RELATED CLUSTER POSTS:**
+    "Which other cluster posts relate to this topic?"
+    Example: "red-christmas-nails, green-christmas-nails" (provide slugs)
+
+17. **CONTENT MAP REVIEW:**
+    "Have you created a content map showing all posts in this cluster?"
+    Yes (proceed) / No (I'll help you create one first)
+
+18. **EXTERNAL SOURCES NEEDED:**  
+    Yes (4-6 authority citations) / No (internal only)
+
+19. **COMPETITOR ANALYSIS:**  
+    Provide 1-3 URLs or say "find competitors"
+
+20. **IS THIS A PRODUCT RECOMMENDATION POST?**  
+    Yes (will need affiliate links) / No
+
+---
+
+### **Your Site Structure (For Reference):**
+
+```
+mirelle-site/
+â”œâ”€â”€ src/
+â”‚   â”œâ”€â”€ types/
+â”‚   â”‚   â””â”€â”€ blog.ts (BlogPost interface)
+â”‚   â”œâ”€â”€ lib/
+â”‚   â”‚   â”œâ”€â”€ blog.ts (Parses markdown frontmatter)
+â”‚   â”‚   â””â”€â”€ generateSchemas.ts (Auto-generates SEO schemas)
+â”‚   â”œâ”€â”€ app/
+â”‚   â”‚   â””â”€â”€ blog/
+â”‚   â”‚       â””â”€â”€ [slug]/page.tsx
+â”‚   â””â”€â”€ content/
+â”‚       â””â”€â”€ blogs/
+â”‚           â””â”€â”€ [your-post].md â† Your markdown files go here
+â””â”€â”€ public/
+    â””â”€â”€ images/
+        â””â”€â”€ blog/ â† Upload all images here
+```
+
+**Schemas Auto-Generated:**
+1. ArticleSchema (BlogPosting)
+2. BreadcrumbSchema
+3. FAQSchema (from faqItems)
+4. HowToSchema (from tutorialMetadata)
+5. ImageGallerySchema (from galleryImages)
+6. WebsiteSchema
+7. OrganizationSchema
+
+---
+
+---
+
+## PHASE 0.5: CANNIBALIZATION CHECK & SERP INTENT ANALYSIS
+
+**CRITICAL: Execute this before any research to prevent wasted work**
+
+### Step 0.5A: Check Existing Content
+
+**MANDATORY QUESTIONS:**
+
+"Before we proceed, let me check for potential cannibalization:"
+
+1. **Do you have existing posts about this topic?**
+   - Search your site for: [primary keyword]
+   - List any existing URLs that mention this keyword
+
+2. **What keywords do those existing posts target?**
+   - Check their primary keywords
+   - Check their meta titles/H1s
+
+**AGENT ACTION:**
+```
+Ã¢â€¢Ã¢â€¢Ã¢â€¢Ã¢â€¢Ã¢â€¢Ã¢â€¢Ã¢â€¢Ã¢â€¢Ã¢â€¢Ã¢â€¢Ã¢â€¢Ã¢â€¢Ã¢â€¢Ã¢â€¢Ã¢â€¢Ã¢â€¢Ã¢â€¢Ã¢â€¢Ã¢â€¢Ã¢â€¢Ã¢â€¢Ã¢â€¢Ã¢â€¢Ã¢â€¢Ã¢â€¢Ã¢â€¢Ã¢â€¢Ã¢â€¢Ã¢â€¢Ã¢â€¢Ã¢â€¢Ã¢â€¢Ã¢â€¢Ã¢â€¢Ã¢â€¢Ã¢â€¢Ã¢â€¢Ã¢â€¢Ã¢â€¢Ã¢â€¢Ã¢â€¢Ã¢â€¢Ã¢â€¢
+EXISTING CONTENT AUDIT
+Ã¢â€¢Ã¢â€¢Ã¢â€¢Ã¢â€¢Ã¢â€¢Ã¢â€¢Ã¢â€¢Ã¢â€¢Ã¢â€¢Ã¢â€¢Ã¢â€¢Ã¢â€¢Ã¢â€¢Ã¢â€¢Ã¢â€¢Ã¢â€¢Ã¢â€¢Ã¢â€¢Ã¢â€¢Ã¢â€¢Ã¢â€¢Ã¢â€¢Ã¢â€¢Ã¢â€¢Ã¢â€¢Ã¢â€¢Ã¢â€¢Ã¢â€¢Ã¢â€¢Ã¢â€¢Ã¢â€¢Ã¢â€¢Ã¢â€¢Ã¢â€¢Ã¢â€¢Ã¢â€¢Ã¢â€¢Ã¢â€¢Ã¢â€¢Ã¢â€¢Ã¢â€¢Ã¢â€¢Ã¢â€¢
+
+SEARCH QUERY: "[primary keyword]"
+
+EXISTING POSTS FOUND:
+1. URL: [existing-post-url]
+   Primary Keyword: [their keyword]
+   Word Count: [count]
+   Published: [date]
+
+2. URL: [another-post-url]
+   Primary Keyword: [their keyword]
+   Word Count: [count]
+   Published: [date]
+
+Ã¢â€“Â¡ CONFLICT DETECTED
+Ã¢â€“Â¡ NO CONFLICT - SAFE TO PROCEED
+
+[If conflict detected:]
+
+Ã¢â€”Ã¯Â¸ CANNIBALIZATION RISK DETECTED
+
+Your existing post "[title]" already targets similar intent.
+
+RECOMMENDED ACTIONS:
+A) MERGE: Combine new content into existing post (update existing)
+B) DIFFERENTIATE: Change new post's angle/intent to avoid overlap
+C) DELETE OLD: Remove existing post, publish new comprehensive version
+D) PROCEED ANYWAY: I understand the risk (not recommended)
+
+Which action do you choose?
+```
+
+### Step 0.5B: SERP Intent Analysis
+
+**Search and analyze Google SERP for:**
+1. [Primary keyword]
+2. Each cluster keyword provided
+
+**For EACH keyword, check:**
+- Top 10 URLs ranking
+- Do the same URLs appear for multiple keywords?
+- Are SERPs similar (same type of content)?
+
+**AGENT OUTPUT:**
+```
+Ã¢â€¢Ã¢â€¢Ã¢â€¢Ã¢â€¢Ã¢â€¢Ã¢â€¢Ã¢â€¢Ã¢â€¢Ã¢â€¢Ã¢â€¢Ã¢â€¢Ã¢â€¢Ã¢â€¢Ã¢â€¢Ã¢â€¢Ã¢â€¢Ã¢â€¢Ã¢â€¢Ã¢â€¢Ã¢â€¢Ã¢â€¢Ã¢â€¢Ã¢â€¢Ã¢â€¢Ã¢â€¢Ã¢â€¢Ã¢â€¢Ã¢â€¢Ã¢â€¢Ã¢â€¢Ã¢â€¢Ã¢â€¢Ã¢â€¢Ã¢â€¢Ã¢â€¢Ã¢â€¢Ã¢â€¢Ã¢â€¢Ã¢â€¢Ã¢â€¢Ã¢â€¢Ã¢â€¢Ã¢â€¢
+SERP INTENT ANALYSIS
+Ã¢â€¢Ã¢â€¢Ã¢â€¢Ã¢â€¢Ã¢â€¢Ã¢â€¢Ã¢â€¢Ã¢â€¢Ã¢â€¢Ã¢â€¢Ã¢â€¢Ã¢â€¢Ã¢â€¢Ã¢â€¢Ã¢â€¢Ã¢â€¢Ã¢â€¢Ã¢â€¢Ã¢â€¢Ã¢â€¢Ã¢â€¢Ã¢â€¢Ã¢â€¢Ã¢â€¢Ã¢â€¢Ã¢â€¢Ã¢â€¢Ã¢â€¢Ã¢â€¢Ã¢â€¢Ã¢â€¢Ã¢â€¢Ã¢â€¢Ã¢â€¢Ã¢â€¢Ã¢â€¢Ã¢â€¢Ã¢â€¢Ã¢â€¢Ã¢â€¢Ã¢â€¢Ã¢â€¢Ã¢â€¢
+
+PRIMARY KEYWORD: "christmas nails"
+Top 10 URLs: [list domains]
+SERP Type: Listicles, image galleries, tutorials
+Intent: Informational (inspiration seeking)
+
+CLUSTER KEYWORD 1: "holiday nail art"
+Top 10 URLs: [list domains]
+SERP Overlap with Primary: 7/10 same URLs
+Intent: Informational (inspiration seeking)
+
+Ã¢â€”Ã¯Â¸ VERDICT: SAME INTENT - These should be in ONE post
+
+CLUSTER KEYWORD 2: "christmas nail polish"
+Top 10 URLs: [list domains]
+SERP Overlap with Primary: 2/10 same URLs
+SERP Type: Product reviews, shopping guides
+Intent: Commercial (product research)
+
+Ã¢Å“â€¦ VERDICT: DIFFERENT INTENT - Can be separate post
+
+CLUSTER KEYWORD 3: "how to do christmas nails"
+Top 10 URLs: [list domains]
+SERP Overlap with Primary: 3/10 same URLs
+SERP Type: Tutorials, step-by-step guides
+Intent: Informational (how-to seeking)
+
+Ã¢Å“â€¦ VERDICT: DIFFERENT INTENT - Can be separate post
+
+Ã¢â€¢Ã¢â€¢Ã¢â€¢Ã¢â€¢Ã¢â€¢Ã¢â€¢Ã¢â€¢Ã¢â€¢Ã¢â€¢Ã¢â€¢Ã¢â€¢Ã¢â€¢Ã¢â€¢Ã¢â€¢Ã¢â€¢Ã¢â€¢Ã¢â€¢Ã¢â€¢Ã¢â€¢Ã¢â€¢Ã¢â€¢Ã¢â€¢Ã¢â€¢Ã¢â€¢Ã¢â€¢Ã¢â€¢Ã¢â€¢Ã¢â€¢Ã¢â€¢Ã¢â€¢Ã¢â€¢Ã¢â€¢Ã¢â€¢Ã¢â€¢Ã¢â€¢Ã¢â€¢Ã¢â€¢Ã¢â€¢Ã¢â€¢Ã¢â€¢Ã¢â€¢Ã¢â€¢Ã¢â€¢
+KEYWORD ASSIGNMENT RECOMMENDATION
+Ã¢â€¢Ã¢â€¢Ã¢â€¢Ã¢â€¢Ã¢â€¢Ã¢â€¢Ã¢â€¢Ã¢â€¢Ã¢â€¢Ã¢â€¢Ã¢â€¢Ã¢â€¢Ã¢â€¢Ã¢â€¢Ã¢â€¢Ã¢â€¢Ã¢â€¢Ã¢â€¢Ã¢â€¢Ã¢â€¢Ã¢â€¢Ã¢â€¢Ã¢â€¢Ã¢â€¢Ã¢â€¢Ã¢â€¢Ã¢â€¢Ã¢â€¢Ã¢â€¢Ã¢â€¢Ã¢â€¢Ã¢â€¢Ã¢â€¢Ã¢â€¢Ã¢â€¢Ã¢â€¢Ã¢â€¢Ã¢â€¢Ã¢â€¢Ã¢â€¢Ã¢â€¢Ã¢â€¢Ã¢â€¢
+
+THIS POST SHOULD TARGET:
+Primary Keyword: "christmas nails"
+Safe Cluster Keywords: "holiday nail art" (same intent, use freely)
+LSI Variations: "festive nails", "December manicure", "holiday nail ideas"
+
+AVOID IN THIS POST:
+âŒ "christmas nail polish" (different intent - needs separate post)
+âŒ "how to do christmas nails" (different intent - tutorial post)
+
+THESE NEED SEPARATE POSTS:
+1. New Post: "Best Christmas Nail Polish 2025" (Commercial intent)
+2. New Post: "How to Do Christmas Nails at Home: Step-by-Step Tutorial" (Tutorial intent)
+
+Do you approve this keyword assignment?
+```
+
+**CHECKPOINT:** User must approve before proceeding to Phase 1
+
+---
+
+## PHASE 1: COMPREHENSIVE RESEARCH
+
+**AUTOMATICALLY EXECUTE (Deep Research Required):**
+
+### Step 1A: Algorithm & Future Trend Research
+
+**Search:**
+- "Google search algorithm updates [current month] [year]"
+- "Google E-E-A-T guidelines [year]"
+- "ChatGPT search optimization [year]"
+- "Perplexity AI crawling best practices [year]"
+- "Gemini search optimization [year]"
+
+**Extract:**
+- Latest ranking signals
+- Content format priorities
+- Penalty triggers to avoid
+- GEO (Generative Engine Optimization) requirements
+
+**TREND RESEARCH - FUTURE-FOCUSED:**
+
+**Time Horizons:**
+- **Current (Now):** What's trending this week/month
+- **Near Future (1-3 months):** Upcoming seasonal trends
+- **Future (3-6 months):** Predictive trend analysis
+
+**Research Sources:**
+1. **Google Trends:**
+   - Set date range to "Past 12 months"
+   - Check "Rising" queries (not just "Top")
+   - Compare seasonal patterns year-over-year
+
+2. **Pinterest Trends:**
+   - Check Pinterest Predicts (annual trend forecast)
+   - Look at "Trending now" and "On the rise"
+   - Pinterest leads Google by 3-6 months
+
+3. **Social Listening:**
+   - TikTok trending sounds/hashtags
+   - Instagram Reels trending audio
+   - Reddit community discussions
+   - Beauty influencer early adopters
+
+4. **Runway/Fashion Week:**
+   - Nail art at fashion shows
+   - Designer collaborations
+   - Celebrity nail trends
+
+**Output Format:**
+```
+â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
+ALGORITHM STATUS - [DATE]
+â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
+
+GOOGLE CORE UPDATES:
+â†’ Last update: [date]
+â†’ Key changes: [list]
+â†’ Content priorities: [list]
+â†’ Penalty triggers: [list]
+
+GEO OPTIMIZATION (ChatGPT/Perplexity/Gemini):
+â†’ Structured data requirements: [list]
+â†’ Content format preferences: [list]
+â†’ Citation best practices: [list]
+
+â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
+TREND FORECAST - [DATE]
+â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
+
+CURRENT TRENDS (Right Now):
+â†’ [What's trending this month]
+
+RISING TRENDS (Next 1-3 Months):
+â†’ [What Pinterest/TikTok signals are growing]
+
+PREDICTIVE TRENDS (3-6 Months):
+â†’ [What we anticipate based on fashion/seasonal cycles]
+
+EVERGREEN ELEMENTS:
+â†’ [Timeless aspects that won't fade]
+
+APPROVED STRATEGY:
+â†’ [Recommended approach based on findings]
+```
+
+### Step 1B: Competitor SERP Analysis
+
+**Primary Focus: Google Search Engine**
+
+**Search:**
+- "[Primary keyword]" (analyze top 5 results)
+- "[Primary keyword] 2025" (if seasonal)
+- Related searches and "People Also Ask"
+
+**For Each Top 5 Competitor:**
+- URL, Domain Authority estimate
+- Word count
+- **CRITICAL: Count exact primary keyword usage**
+- Content structure (H2s, images, schema)
+- Strengths (what's working)
+- Weaknesses (what's missing)
+- Unique angle
+
+### Step 1D: Content Map Creation (If Not Done)
+
+**If user answered "No" to content map in Phase 0:**
+
+"Let me help you create a content map for this cluster to visualize all posts and prevent future cannibalization."
+
+**AGENT ACTION:**
+```
+Ã¢â€¢Ã¢â€¢Ã¢â€¢Ã¢â€¢Ã¢â€¢Ã¢â€¢Ã¢â€¢Ã¢â€¢Ã¢â€¢Ã¢â€¢Ã¢â€¢Ã¢â€¢Ã¢â€¢Ã¢â€¢Ã¢â€¢Ã¢â€¢Ã¢â€¢Ã¢â€¢Ã¢â€¢Ã¢â€¢Ã¢â€¢Ã¢â€¢Ã¢â€¢Ã¢â€¢Ã¢â€¢Ã¢â€¢Ã¢â€¢Ã¢â€¢Ã¢â€¢Ã¢â€¢Ã¢â€¢Ã¢â€¢Ã¢â€¢Ã¢â€¢Ã¢â€¢Ã¢â€¢Ã¢â€¢Ã¢â€¢Ã¢â€¢Ã¢â€¢Ã¢â€¢Ã¢â€¢Ã¢â€¢
+CONTENT MAP: CHRISTMAS NAILS CLUSTER
+Ã¢â€¢Ã¢â€¢Ã¢â€¢Ã¢â€¢Ã¢â€¢Ã¢â€¢Ã¢â€¢Ã¢â€¢Ã¢â€¢Ã¢â€¢Ã¢â€¢Ã¢â€¢Ã¢â€¢Ã¢â€¢Ã¢â€¢Ã¢â€¢Ã¢â€¢Ã¢â€¢Ã¢â€¢Ã¢â€¢Ã¢â€¢Ã¢â€¢Ã¢â€¢Ã¢â€¢Ã¢â€¢Ã¢â€¢Ã¢â€¢Ã¢â€¢Ã¢â€¢Ã¢â€¢Ã¢â€¢Ã¢â€¢Ã¢â€¢Ã¢â€¢Ã¢â€¢Ã¢â€¢Ã¢â€¢Ã¢â€¢Ã¢â€¢Ã¢â€¢Ã¢â€¢Ã¢â€¢Ã¢â€¢
+
+PILLAR POST (Hub):
+â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
+â”‚ Christmas Nails 2025: Complete Guideâ”‚
+â”‚ Primary Keyword: "christmas nails"  â”‚
+â”‚ Intent: Broad informational         â”‚
+â”‚ Word Count: 5000                    â”‚
+â”‚ Slug: christmas-nails-2025          â”‚
+â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
+           â”‚
+           â”œâ”€â”€â”€â”€â”€â–º CLUSTER POSTS (Supporting Content)
+           â”‚
+           â”œâ”€â–º 1. Red & Green Christmas Nails
+           â”‚      Keyword: "red christmas nails"
+           â”‚      Intent: Color-specific inspiration
+           â”‚      Links to: Pillar + Cluster #3, #8
+           â”‚
+           â”œâ”€â–º 2. Short Christmas Nails
+           â”‚      Keyword: "short christmas nails"
+           â”‚      Intent: Length-specific designs
+           â”‚      Links to: Pillar + Cluster #10
+           â”‚
+           â”œâ”€â–º 3. Gold Silver Chrome Christmas Nails
+           â”‚      Keyword: "chrome christmas nails"
+           â”‚      Intent: Finish-specific inspiration
+           â”‚      Links to: Pillar + Cluster #1, #8
+           â”‚
+           [Continue for all 15 clusters...]
+
+INTERNAL LINKING STRATEGY:
+Ã¢â€ ' Pillar links to ALL cluster posts (15 links)
+Ã¢â€ ' Each cluster links to:
+  - Pillar (1 link)
+  - 2-3 related clusters (semantic connection)
+  - 1-2 supporting posts (tools, tutorials)
+
+KEYWORD DISTRIBUTION:
+Ã¢Å“â€¦ Each post has UNIQUE primary keyword
+Ã¢Å“â€¦ SERP intents verified as different
+Ã¢Å“â€¦ No overlapping search intent
+Ã¢Å“â€¦ Clear topical boundaries defined
+
+Save this map? I'll reference it during content creation.
+```
+
+**CHECKPOINT:** User reviews and saves content map
+
+**Output Format:**
+```
+COMPETITOR #1: [Site Name]
+â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
+URL: [url]
+Words: ~[count]
+PRIMARY KEYWORD COUNT: [exact number] times
+Keyword Density: [percentage]
+Structure: [summary]
+Images: [count]
+
+STRENGTHS:
+âœ“ [4 strengths]
+
+WEAKNESSES:
+âœ— [4 weaknesses]
+
+[Repeat for top 5]
+
+â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
+KEYWORD DENSITY ANALYSIS
+â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
+
+COMPETITOR AVERAGE: [X] times
+RECOMMENDED FOR YOU: [X + 10-15] times
+(I will wait for your confirmation on exact target)
+
+OUR COMPETITIVE EDGE:
+â†’ [How we'll differentiate]
+```
+
+### Step 1C: USER QUERY RESEARCH (DEEP DIVE)
+
+**CRITICAL: This is the most important research phase**
+
+**Research Sources (In Order of Priority):**
+
+1. **GOOGLE SEARCH ENGINE (Primary Focus):**
+   - Main search: "[primary keyword]"
+   - Related searches (bottom of page)
+   - "People Also Ask" section
+   - Google autocomplete suggestions
+   - Google Trends - "Rising" queries
+   - Search bar variations as you type
+
+2. **AI AGENTS (ChatGPT, Gemini, Perplexity):**
+   - What questions do users ask about [primary keyword]?
+   - What are common pain points about [primary keyword]?
+   - What do beginners ask about [primary keyword]?
+   - What advanced questions exist about [primary keyword]?
+
+3. **VOICE SEARCH QUERIES:**
+   - "How do I [action]..."
+   - "What's the best way to [action]..."
+   - "Can I [action] if [condition]..."
+   - "Why does [topic] [verb]..."
+   - "How long does [topic] last..."
+   - "How much does [topic] cost..."
+
+4. **REDDIT (Deep Dive):**
+   - Search r/Nails, r/RedditLaqueristas, r/beauty
+   - Find 10+ actual user questions
+   - Note exact phrasing (typos, grammar, casual language)
+   - Look for recurring pain points
+   - Check comment threads for follow-up questions
+
+5. **QUORA (Deep Dive):**
+   - Search for [primary keyword] and [cluster keywords]
+   - Find 10+ actual questions
+   - Note most upvoted answers (what users value)
+   - Look for unanswered questions (content opportunities)
+
+6. **FORUMS:**
+   - Beauty forums
+   - Nail salon forums
+   - Look for "help" threads
+   - Find frustrated users asking questions
+
+**Research Requirements:**
+- **Minimum 50+ user queries extracted**
+- Extract EXACT phrasing (don't clean up grammar)
+- Classify by intent (Informational/Commercial/Transactional)
+- Identify voice search patterns (conversational questions)
+- Find forum questions to answer directly
+
+**Output Format:**
+```
+â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
+USER QUERY RESEARCH - [PRIMARY KEYWORD]
+â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
+
+GOOGLE SEARCH ENGINE QUERIES (20+):
+
+FROM GOOGLE AUTOCOMPLETE:
+1. "christmas nails ideas"
+2. "christmas nails easy"
+3. "christmas nails short"
+[Continue...]
+
+FROM PEOPLE ALSO ASK:
+1. "What are the best Christmas nail colors?"
+2. "How do you do Christmas nails at home?"
+[Continue...]
+
+FROM RELATED SEARCHES:
+1. "simple christmas nail designs"
+2. "christmas nail art step by step"
+[Continue...]
+
+AI AGENT QUERIES (ChatGPT/Gemini) (10+):
+1. "How can I make Christmas nails last longer?"
+2. "What tools do I need for Christmas nail art?"
+[Continue...]
+
+VOICE SEARCH QUERIES (10+):
+1. "how do i do christmas nails at home"
+2. "whats the best way to apply nail stickers"
+3. "can i do christmas nails on short nails"
+[Continue...]
+
+REDDIT QUESTIONS (10+ EXACT QUOTES):
+1. "hey guys how tf do you get the glitter to stay??" (r/Nails)
+2. "Does anyone know how to do those cute candy cane stripes without a steady hand" (r/RedditLaqueristas)
+[Continue with exact quotes, include source]
+
+QUORA QUESTIONS (10+ EXACT QUOTES):
+1. "What are some easy Christmas nail designs for beginners who have never done nail art before?"
+2. "Is it worth going to a salon for holiday nails or should I just DIY?"
+[Continue...]
+
+FORUM QUESTIONS (5+ EXACT QUOTES):
+[From other beauty forums, exact quotes with context]
+
+â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
+QUESTIONS TO ANSWER DIRECTLY IN CONTENT
+â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
+
+These questions will be answered in blog sections:
+1. [Question from Reddit/Quora]
+2. [Question from Reddit/Quora]
+[Continue - minimum 10 forum questions to directly answer]
+
+â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
+FAQ SECTION QUESTIONS (Voice Search Format)
+â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
+
+These exact queries go into FAQ section:
+1. "how do i do christmas nails at home"
+2. "what are the best christmas nail colors for 2025"
+3. "can you do christmas nails on short nails"
+[Continue - minimum 10 voice search queries]
+```
+
+**AGENT DECISION POINT:**
+
+After presenting research, agent must ask:
+
+```
+â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
+RESEARCH COMPLETE - NEED MORE?
+â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
+
+I've extracted [X] user queries from:
+- Google Search Engine
+- ChatGPT/Gemini
+- Voice Search patterns
+- Reddit ([X] questions)
+- Quora ([X] questions)
+- Other forums
+
+Should I:
+A) Proceed with this research
+B) Go deeper on Reddit/Quora (find 20+ more questions)
+C) Research specific subtopic: [user specifies]
+D) Analyze competitor comment sections
+```
+
+**CHECKPOINT:** User approves research or requests deeper dive
+
+---
+
+## PHASE 2: CONTENT STRATEGY & STRUCTURE
+
+### Step 2A: High-CTR Title Research & Generation
+
+**Research High-CTR Titles:**
+
+**Search and analyze:**
+- "[primary keyword] blog titles"
+- Top-performing headlines in SERP
+- BuzzSumo/Ahrefs headline analysis (if available)
+- Analyze competitor titles (what makes them clickable)
+
+**CTR-Optimized Title Formulas:**
+
+1. **Number + Benefit:**
+   - "[X] [Topic] That [Benefit]"
+   - Example: "30 Christmas Nails That Stop Traffic"
+
+2. **Emotional Hook + Promise:**
+   - "[Emotion]: [Specific Promise]"
+   - Example: "Obsessed: The Christmas Nail Guide That Works"
+
+3. **Problem + Solution:**
+   - "Finally: [Solution to Pain Point]"
+   - Example: "Finally: Christmas Nails That Last Through New Year"
+
+4. **Authority + Proof:**
+   - "[Topic] Tested by [Authority]: [Result]"
+   - Example: "Christmas Nails Tested: Only These 5 Last 2+ Weeks"
+
+5. **Curiosity + Payoff:**
+   - "The [Topic] Secret That [Result]"
+   - Example: "The Christmas Nail Secret Salons Don't Tell You"
+
+**Generate 5 Title Options:**
+
+Each must:
+- 50-60 characters total
+- Primary keyword in first 8 words
+- Use proven CTR formula
+- Be mouth-watering/clickable
+- Create curiosity or promise benefit
+
+**Output Format:**
+```
+â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
+HIGH-CTR TITLE RESEARCH
+â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
+
+ANALYZED TOP TITLES:
+1. [Competitor title] - CTR Factor: [what makes it work]
+2. [Competitor title] - CTR Factor: [what makes it work]
+3. [Competitor title] - CTR Factor: [what makes it work]
+
+FORMULAS IDENTIFIED:
+â†’ Numbers + Benefit (seen 8 times in top 20)
+â†’ Emotional hooks (seen 5 times in top 20)
+â†’ Problem/solution (seen 6 times in top 20)
+
+â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
+TITLE OPTIONS FOR YOUR POST
+â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
+
+1. "[Title]" (X chars)
+   Formula: [Which formula used]
+   Why it works: [Psychological trigger, benefit promise]
+
+2. "[Title]" (X chars)
+   Formula: [Which formula used]
+   Why it works: [Psychological trigger, benefit promise]
+
+3. "[Title]" (X chars)
+   Formula: [Which formula used]
+   Why it works: [Psychological trigger, benefit promise]
+
+4. "[Title]" (X chars)
+   Formula: [Which formula used]
+   Why it works: [Psychological trigger, benefit promise]
+
+5. "[Title]" (X chars)
+   Formula: [Which formula used]
+   Why it works: [Psychological trigger, benefit promise]
+
+RECOMMENDED: Option [#]
+Reason: [Why this will get highest CTR]
+
+META DESCRIPTION (150-160 chars STRICT):
+[User-focused, includes primary keyword naturally, clear benefit, NO apostrophes]
+```
+
+### Step 2B: Content Structure Plan
+
+**Based on POST TYPE selected, outline:**
+
+**For Seasonal Roundup (Type A):**
+```
+STRUCTURE:
+â†’ Introduction (200-250 words)
+  - Hook with trend insight
+  - Why this season matters
+  - What reader will find
+
+â†’ TL;DR Section (see TL;DR structure below)
+
+â†’ What's Trending This [Season] (150-200 words)
+  - 3-4 current trend bullets
+  - Social proof (what's viral)
+
+â†’ [Number] Best [Topic] Designs (Main Section)
+  - 25-40 curated designs
+  - Each: 50-100 words + image
+  - Attribution to source
+  - Product recommendations (if product post)
+
+â†’ [H2 Using User Query from Research]
+  Example: "How to Make Christmas Nails Last Longer"
+  - Answer the question directly
+  - 300-400 words
+
+â†’ [H2 Using Another User Query]
+  Example: "Can You Do Christmas Nails on Short Nails"
+  - Direct answer from research
+  - 300-400 words
+
+â†’ Products We Recommend (if product post) (150-200 words)
+  - Top 5-8 affiliate products
+  - Brief why each matters
+
+â†’ [H2 Answering Reddit/Quora Question]
+  Example: "How Do You Get Glitter to Stay" (actual Reddit question)
+  - Address the forum user's concern directly
+  - 200-300 words
+
+â†’ FAQ (600-800 words)
+  - 8-10 questions (voice search queries from research)
+  - 40-60 word answers each
+
+â†’ Conclusion (150-200 words)
+  - Recap top 3 takeaways
+  - Soft CTA
+
+TOTAL TARGET: [User's specified word count]
+```
+
+**For Product Comparison (Type B):**
+```
+STRUCTURE:
+â†’ Introduction (200-250 words)
+â†’ TL;DR Section
+â†’ Quick Comparison Table (visual summary)
+â†’ Testing Methodology (100-150 words)
+â†’ [H2 User Query]: "What Makes a Good [Product]"
+  - Answer from research
+â†’ Product Reviews (10-15 detailed)
+  - Each: 150-200 words
+  - Pros/cons, rating, price, where to buy
+â†’ [H2 User Query]: "How to Choose [Product]"
+  - Direct answer
+â†’ Winner & Runner-Up (200-250 words)
+â†’ [H2 Reddit Question]: "[Actual user concern]"
+  - Address directly
+â†’ FAQ (600-800 words)
+â†’ Conclusion (150-200 words)
+
+TOTAL TARGET: [User's specified word count]
+```
+
+**For Tutorial (Type D):**
+```
+STRUCTURE:
+â†’ Introduction (200-250 words)
+â†’ TL;DR Section
+â†’ What You'll Need (100-150 words)
+  - Tools list
+  - Products list (with affiliate links if applicable)
+â†’ [H2 User Query]: "What's the Best Way to [Action]"
+  - Overview answer
+â†’ Step-by-Step Tutorial
+  - 8-12 detailed steps
+  - Each: 100-150 words + image
+  - Use tutorialSteps frontmatter
+â†’ [H2 Reddit Question]: "[Common problem]"
+  - Troubleshooting section
+â†’ [H2 User Query]: "How Long Does This Last"
+  - Durability/maintenance
+â†’ FAQ (600-800 words)
+â†’ Conclusion (150-200 words)
+
+TOTAL TARGET: [User's specified word count]
+```
+
+[Include templates for remaining 5 post types]
+
+**H2 HEADING STRATEGY:**
+
+**CRITICAL RULES:**
+- 40% of H2 headings = user queries from research
+- Don't use exact query if awkward, make it natural but related
+- Questions from Reddit/Quora = excellent H2s
+- Voice search queries = FAQ section (exact phrasing)
+
+**Example Transformation:**
+- Reddit: "hey guys how tf do you get the glitter to stay??"
+- H2: "How to Make Glitter Polish Last All Week"
+- FAQ: "how do you make glitter nail polish last longer" (voice search format)
+
+### Step 2C: TL;DR Section Structure
+
+**Section Heading (Creative + "Summary"):**
+
+Examples:
+- "Quick Summary & Key Insights"
+- "The Essential Summary"
+- "Summary: What You Need to Know"
+- "Fast Track Summary"
+
+**Content Structure (5 array items in frontmatter):**
+
+```yaml
+tldr:
+  summary:
+    - "30-word creative hook that summarizes entire post and makes reader want more. Focus on biggest benefit or surprising insight."
+    - "Quick answer to question related to title: [Specific actionable answer in 1 sentence]"
+    - "Another quick answer: [Different user pain point solved in 1 sentence]"
+    - "Third quick answer: [Practical tip or insight in 1 sentence]"
+    - "Tempting hook: Read the full guide to discover [specific benefit] and [specific benefit]."
+  keyTakeaways:
+    - "Key insight 1 from the full post"
+    - "Key insight 2 from the full post"
+    - "Key insight 3 from the full post"
+```
+
+**Writing Style:**
+- Creative, NOT boring
+- Quick satisfaction (answer user immediately)
+- Create curiosity for full post
+- Conversational, engaging tone
+- Focus on user benefit
+
+**CHECKPOINT:** User approves structure before proceeding
+
+### Step 2D: Topical Overlap Check
+
+**Before finalizing structure, check for overlap with existing/planned posts:**
+
+**AGENT ASKS:**
+"Let me review your content map to ensure no topical overlap..."
+
+**AGENT CHECKS:**
+1. Compare this post's H2 outline with related cluster posts
+2. Identify any H2s that might belong in different cluster
+3. Verify FAQ questions aren't duplicated elsewhere
+
+**OUTPUT:**
+```
+Ã¢â€¢Ã¢â€¢Ã¢â€¢Ã¢â€¢Ã¢â€¢Ã¢â€¢Ã¢â€¢Ã¢â€¢Ã¢â€¢Ã¢â€¢Ã¢â€¢Ã¢â€¢Ã¢â€¢Ã¢â€¢Ã¢â€¢Ã¢â€¢Ã¢â€¢Ã¢â€¢Ã¢â€¢Ã¢â€¢Ã¢â€¢Ã¢â€¢Ã¢â€¢Ã¢â€¢Ã¢â€¢Ã¢â€¢Ã¢â€¢Ã¢â€¢Ã¢â€¢Ã¢â€¢Ã¢â€¢Ã¢â€¢Ã¢â€¢Ã¢â€¢Ã¢â€¢Ã¢â€¢Ã¢â€¢Ã¢â€¢Ã¢â€¢Ã¢â€¢Ã¢â€¢Ã¢â€¢Ã¢â€¢
+TOPICAL OVERLAP ANALYSIS
+Ã¢â€¢Ã¢â€¢Ã¢â€¢Ã¢â€¢Ã¢â€¢Ã¢â€¢Ã¢â€¢Ã¢â€¢Ã¢â€¢Ã¢â€¢Ã¢â€¢Ã¢â€¢Ã¢â€¢Ã¢â€¢Ã¢â€¢Ã¢â€¢Ã¢â€¢Ã¢â€¢Ã¢â€¢Ã¢â€¢Ã¢â€¢Ã¢â€¢Ã¢â€¢Ã¢â€¢Ã¢â€¢Ã¢â€¢Ã¢â€¢Ã¢â€¢Ã¢â€¢Ã¢â€¢Ã¢â€¢Ã¢â€¢Ã¢â€¢Ã¢â€¢Ã¢â€¢Ã¢â€¢Ã¢â€¢Ã¢â€¢Ã¢â€¢Ã¢â€¢Ã¢â€¢Ã¢â€¢Ã¢â€¢
+
+COMPARING:
+This Post: "Green Christmas Nails"
+Against: ["Christmas Nails 2025", "Red Christmas Nails", "Chrome Christmas Nails"]
+
+PLANNED H2 HEADINGS:
+
+Ã¢Å“â€¦ "Best Green Nail Polish Shades for Christmas"
+   Unique to this post - APPROVED
+
+Ã¢Å“â€¦ "How to Pair Green with Gold Accents"
+   Unique to this post - APPROVED
+
+Ã¢â€”Ã¯Â¸ "How to Apply Chrome Finish to Green Nails"
+   OVERLAP with "Chrome Christmas Nails" cluster
+   RECOMMENDATION: Reduce to 1 paragraph + link to chrome post
+
+Ã¢â€”Ã¯Â¸ "Green Nails for Short vs Long Lengths"
+   OVERLAP with "Short Christmas Nails" cluster
+   RECOMMENDATION: Remove or reduce to 1 sentence + link
+
+Ã¢Å“â€¦ "Top 30 Green Christmas Nail Designs"
+   Unique to this post - APPROVED
+
+REVISED STRUCTURE RECOMMENDATION:
+[Provide modified outline with adjustments]
+
+Approve revised structure?
+```
+
+**CHECKPOINT:** User approves structure with no overlap issues
+
+---
+
+## PHASE 3: IMAGE & PRODUCT PLANNING
+
+### Step 3A: Image Requirements
+
+**Image Naming Convention:**
+
+**Hero Image:**
+```
+Filename: [slug]-hero.jpg
+Example: christmas-nails-2025-hero.jpg
+```
+
+**Gallery Images (First 3 from post content):**
+```
+Filename: [slug]-1.jpg, [slug]-2.jpg, [slug]-3.jpg
+Examples: 
+- christmas-nails-2025-1.jpg
+- christmas-nails-2025-2.jpg
+- christmas-nails-2025-3.jpg
+```
+
+**Alt Text Formula:**
+
+**Hero Image:**
+```
+Format: [Primary Keyword] + [User Intent Phrase]
+Length: 100-125 characters max
+Example: "Christmas nails 2025 festive red and green designs for holiday season"
+```
+
+**Gallery Images:**
+```
+Format: [Unique Long-Tail Keyword] + [Descriptive Context]
+Each image must have DIFFERENT long-tail keyword
+Examples:
+- "Easy Christmas nail art with candy cane stripes for beginners"
+- "Elegant Christmas nails with gold leaf and red glitter"
+- "Short Christmas nails with minimalist snowflake design"
+```
+
+**Calculate Images Needed:**
+
+Based on post type:
+- Seasonal Roundup: 1 hero + 3 gallery (minimum) + 25-40 design images (in content)
+- Product Comparison: 1 hero + 3 gallery + 10-15 product images
+- Trend Report: 1 hero + 3 gallery + 5-7 trend images
+- Tutorial: 1 hero + 3 gallery + 8-12 step images
+- Others: 1 hero + 3 gallery + 6-10 content images
+
+**For EACH image specify:**
+```
+IMAGE #1: HERO
+Filename: [slug]-hero.jpg
+Dimensions: 1200x630px
+Format: WebP or JPG
+Size: <100KB
+Alt Text: "[Primary keyword natural description, <125 chars]"
+Placement: Top of post (auto-generated)
+
+IMAGE #2: GALLERY IMAGE 1
+Filename: [slug]-1.jpg
+Dimensions: 1200x800px
+Format: WebP or JPG
+Size: <80KB
+Alt Text: "[Long-tail keyword 1 + descriptive context]"
+Caption: "[Optional context]"
+Placement: [Specify which section]
+
+IMAGE #3: GALLERY IMAGE 2
+Filename: [slug]-2.jpg
+Dimensions: 1200x800px
+Format: WebP or JPG
+Size: <80KB
+Alt Text: "[Long-tail keyword 2 + descriptive context]"
+Caption: "[Optional context]"
+Placement: [Specify which section]
+
+IMAGE #4: GALLERY IMAGE 3
+Filename: [slug]-3.jpg
+Dimensions: 1200x800px
+Format: WebP or JPG
+Size: <80KB
+Alt Text: "[Long-tail keyword 3 + descriptive context]"
+Caption: "[Optional context]"
+Placement: [Specify which section]
+
+[Continue for all content images...]
+```
+
+### Step 3B: Product & Affiliate Link Collection
+
+**Only if user answered YES to "Is this a product recommendation post?"**
+
+**BEFORE generating content, list all products needed:**
+
+**Output Format:**
+```
+â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
+PRODUCTS NEEDED FOR THIS POST
+â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
+
+I will recommend these products in the content.
+Please provide your affiliate links:
+
+CATEGORY: Gel Polish
+1. OPI GelColor - "Big Apple Red"
+   Suggested use: Top recommendation for Christmas nails
+   Where mentioned: Main product section + design #5
+   YOUR AFFILIATE LINK: [WAIT FOR USER INPUT]
+
+2. Beetles Gel Polish - Burgundy shade
+   Suggested use: Budget-friendly alternative
+   Where mentioned: Product comparison table
+   YOUR AFFILIATE LINK: [WAIT FOR USER INPUT]
+
+CATEGORY: Base/Top Coat
+3. OPI Natural Nail Base Coat
+   Suggested use: Nail prep essential
+   Where mentioned: Tutorial section
+   YOUR AFFILIATE LINK: [WAIT FOR USER INPUT]
+
+[Continue for all 8-15 products]
+
+â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
+ONCE YOU PROVIDE LINKS, I'LL GENERATE POST
+â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
+```
+
+**STOP HERE:** Wait for user to provide affiliate links before proceeding
+
+**CHECKPOINT:** User provides all affiliate links (if applicable) or confirms no products needed
+
+---
+
+## PHASE 4: VOICE PROMPT REQUEST
+
+**Ask user:**
+
+```
+â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
+VOICE & TONE DEFINITION
+â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
+
+Please provide your voice prompt for this article.
+
+Your voice prompt should include:
+- Writing style (conversational, authoritative, enthusiastic, etc.)
+- Tone characteristics
+- Persona (curator, expert, enthusiast, etc.)
+- Any specific phrases or patterns to use/avoid
+- Attribution requirements (if curating from sources)
+
+Example voice prompt:
+"Write as an enthusiastic nail art curator who discovers and shares the best trends. Use 'we found', 'we're obsessed with', 'we curated' phrases. Always attribute designs to source artists. Conversational but authoritative. Avoid claiming personal expertise - focus on what's trending and what experts say."
+
+PASTE YOUR VOICE PROMPT:
+[WAIT FOR USER INPUT]
+```
+
+**CHECKPOINT:** User provides voice prompt before proceeding
+
+---
+
+## PHASE 5: CONTENT GENERATION
+
+### Pre-Generation Checklist:
+- [ ] All research phases completed
+- [ ] Structure approved
+- [ ] Affiliate links received (if applicable)
+- [ ] Images planned
+- [ ] Voice prompt received
+- [ ] Keyword density target confirmed
+
+### Step 5A: Keyword Density Confirmation
+
+**Before writing, confirm with user:**
+
+```
+â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
+KEYWORD DENSITY TARGET
+â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
+
+Based on competitor analysis:
+- Competitor average: [X] times
+- Recommended: [X + 10-15] times
+
+Your post will be [word count] words.
+Primary keyword "[keyword]" should appear [X] times.
+
+This equals [X]% keyword density.
+
+CONFIRM TARGET COUNT: [X] times
+Or specify your preferred count: [WAIT FOR USER INPUT]
+```
+
+### Step 5B: Content Generation Rules
+
+
+**KEYWORD STRATEGY - TOPICAL MAPPING APPROACH:**
+
+**CRITICAL PRINCIPLES:**
+
+1. **Primary Keyword = Unique Intent**
+   - This post's primary keyword: "[primary-keyword]"
+   - NEVER use another post's primary keyword as your primary
+   - Check content map before every H2 heading
+
+2. **Search Intent Boundary**
+   - Stay within assigned intent: [Informational/Commercial/Transactional]
+   - If you drift into different intent, you're cannibalizing another cluster post
+
+3. **Cluster Keyword Usage**
+   - Use cluster keywords ONLY if SERP analysis confirmed same intent
+   - Freely use LSI variations (semantic relatives)
+   - When mentioning related topics, link to their cluster post
+
+4. **Cross-Cluster References**
+   - If you mention "short christmas nails" in this post about "red christmas nails"
+   - Format: "Looking for short nail ideas? Check our <a href='/blog/short-christmas-nails' class='text-blue-600 hover:text-blue-800 underline'>short Christmas nails guide</a>."
+   - Never write 300+ words about it (that's their post's job)
+
+**TOPICAL BOUNDARY EXAMPLE:**
+
+**THIS POST: "Red & Green Christmas Nails"**
+
+
+```
+Ã¢Å“â€¦ STAY IN SCOPE:
+- Red polish recommendations
+- Green polish recommendations  
+- Red/green combo designs
+- Traditional Christmas color theory
+- Product reviews for red/green polishes
+
+âŒ AVOID (Different Cluster Posts):
+- Chrome finishes (Cluster #3's territory)
+- Short nail techniques (Cluster #2's territory)
+- DIY tutorials (Cluster #10's territory)
+- Acrylic application (Cluster #11's territory)
+
+IF MENTIONING:
+"Want chrome red nails? See our [link to chrome cluster post]"
+"These designs work on short nails too - [link to short nails cluster]"
+```
+
+**KEYWORD DENSITY - REVISED APPROACH:**
+
+**Old Approach (Delete This Thinking):**
+~~"Match competitor keyword count"~~
+
+**New Approach (Use This):**
+1. Primary keyword appears naturally (don't force count)
+2. Focus on satisfying search intent completely
+3. Use cluster keywords liberally (same intent verified)
+4. Use LSI variations everywhere else
+5. Keyword density happens naturally when you answer user questions thoroughly
+
+
+### Step 5C: Topical Mapping Validation
+
+**BEFORE delivering content, run this validation:**
+```
+Ã¢â€¢Ã¢â€¢Ã¢â€¢Ã¢â€¢Ã¢â€¢Ã¢â€¢Ã¢â€¢Ã¢â€¢Ã¢â€¢Ã¢â€¢Ã¢â€¢Ã¢â€¢Ã¢â€¢Ã¢â€¢Ã¢â€¢Ã¢â€¢Ã¢â€¢Ã¢â€¢Ã¢â€¢Ã¢â€¢Ã¢â€¢Ã¢â€¢Ã¢â€¢Ã¢â€¢Ã¢â€¢Ã¢â€¢Ã¢â€¢Ã¢â€¢Ã¢â€¢Ã¢â€¢Ã¢â€¢Ã¢â€¢Ã¢â€¢Ã¢â€¢Ã¢â€¢Ã¢â€¢Ã¢â€¢Ã¢â€¢Ã¢â€¢Ã¢â€¢Ã¢â€¢Ã¢â€¢Ã¢â€¢
+TOPICAL MAPPING VALIDATION
+Ã¢â€¢Ã¢â€¢Ã¢â€¢Ã¢â€¢Ã¢â€¢Ã¢â€¢Ã¢â€¢Ã¢â€¢Ã¢â€¢Ã¢â€¢Ã¢â€¢Ã¢â€¢Ã¢â€¢Ã¢â€¢Ã¢â€¢Ã¢â€¢Ã¢â€¢Ã¢â€¢Ã¢â€¢Ã¢â€¢Ã¢â€¢Ã¢â€¢Ã¢â€¢Ã¢â€¢Ã¢â€¢Ã¢â€¢Ã¢â€¢Ã¢â€¢Ã¢â€¢Ã¢â€¢Ã¢â€¢Ã¢â€¢Ã¢â€¢Ã¢â€¢Ã¢â€¢Ã¢â€¢Ã¢â€¢Ã¢â€¢Ã¢â€¢Ã¢â€¢Ã¢â€¢Ã¢â€¢Ã¢â€¢
+
+POST: "[Title]"
+PRIMARY KEYWORD: "[keyword]"
+ASSIGNED INTENT: [intent type]
+
+Ã¢Å“â€¦ BOUNDARY CHECK:
+Ã¢â€“Â¡ Primary keyword used naturally (not forced count)
+Ã¢â€“Â¡ Stayed within assigned intent throughout
+Ã¢â€“Â¡ No extensive coverage of other cluster topics
+Ã¢â€“Â¡ Linked to related clusters (not explained them)
+Ã¢â€“Â¡ H2 headings align with this post's unique angle
+Ã¢â€“Â¡ Content answers ONLY this post's search intent
+
+Ã¢Å“â€¦ CANNIBALIZATION CHECK:
+Ã¢â€“Â¡ Did NOT use other posts' primary keywords as primary
+Ã¢â€“Â¡ Did NOT write 300+ words about other cluster topics
+Ã¢â€“Â¡ Did NOT target other posts' search intents
+Ã¢â€“Â¡ Did NOT duplicate FAQ questions from other posts
+
+Ã¢Å“â€¦ INTERNAL LINKING:
+Ã¢â€“Â¡ Links to parent pillar post (minimum 1)
+Ã¢â€“Â¡ Links to 2-3 related cluster posts
+Ã¢â€“Â¡ Links contextual (not forced)
+Ã¢â€“Â¡ Anchor text varies (not always exact keywords)
+
+Ã¢Å“â€¦ CONTENT MAP ALIGNMENT:
+Ã¢â€“Â¡ Position in cluster hierarchy clear
+Ã¢â€“Â¡ Supports pillar post's authority
+Ã¢â€“Â¡ Complements (not competes with) related clusters
+Ã¢â€“Â¡ Fills unique topical gap
+
+VALIDATION RESULT:
+âœ… SAFE TO PUBLISH - No cannibalization risk detected
+âŒ NEEDS REVISION - [List specific issues]
+```
+
+**If issues detected:**
+- Revise problematic sections
+- Re-run validation
+- Get user approval before delivery
+
+**Quality Check:**
+- Does this post answer the UNIQUE question only this post should answer?
+- Did I stay within my topical boundary?
+- Did I link to related cluster posts instead of explaining them here?
+- Is my primary keyword used naturally (not stuffed)?
+
+**Example - RIGHT (Respecting Topical Boundaries):**
+> "Classic red and green remain the most popular Christmas nail colors. We tested 15 red polishes and 12 green shades to find the longest-lasting options. From deep burgundy to forest green, here are 30 color-focused designs that celebrate traditional holiday aesthetics.
+>
+> Want to add chrome finish to these colors? Check our [complete chrome Christmas nails guide](/blog/chrome-christmas-nails) for step-by-step application.
+>
+> These designs work beautifully on any nail length. For short-nail-specific tips, see our [short Christmas nails tutorial](/blog/short-christmas-nails)."
+
+*Stays in scope (color focus), links to other clusters for their expertise*
+**CONTENT STRUCTURE:**
+
+**Frontmatter (YAML):**
+```yaml
+---
+slug: "[slug]"
+title: "[Approved Title]"
+excerpt: "[150-160 chars, natural language with keyword, NO APOSTROPHES]"
+date: "YYYY-MM-DDTHH:MM:SS-04:00"
+dateModified: "YYYY-MM-DD"
+author: "MirellÃ© Team"
+category: "[Category Name]"
+tags: ["primary-keyword", "cluster-1", "cluster-2", "semantic"]
+image: "/images/blog/[slug]-hero.jpg"
+imageAlt: "[Primary keyword natural alt text <125 chars]"
+readTime: "[X min]"
+canonical: "https://mirelleinspo.com/blog/[slug]"
+
+topicalMap:
+  position: "cluster" # Options: pillar, cluster, standalone
+  parentPillar: "/blog/christmas-nails-2025" # Slug of parent pillar
+  relatedClusters: # Slugs of related cluster posts
+    - "/blog/red-christmas-nails"
+    - "/blog/chrome-christmas-nails"
+  primaryKeyword: "green christmas nails" # THIS post's unique primary keyword
+  searchIntent: "informational" # informational, commercial, transactional
+  topicalBoundary: "Color-specific (green) Christmas nail designs and polish recommendations"
+  
+# Cannibalization Prevention
+keywordStrategy:
+  avoidKeywords: # Primary keywords from OTHER posts (do NOT target these)
+    - "christmas nails" # Pillar post owns this
+    - "red christmas nails" # Different cluster owns this
+    - "chrome christmas nails" # Different cluster owns this
+  clusteredWith: # Keywords verified same intent (safe to use)
+    - "green holiday nails"
+    - "emerald christmas nails"
+    - "forest green nails"
+imageWidth: 1200
+imageHeight: 630
+wordCount: [actual count]
+
+tldr:
+  summary:
+    - "30-word creative summary hook that engages immediately"
+    - "Quick answer 1: [Specific actionable insight]"
+    - "Quick answer 2: [Different pain point solved]"
+    - "Quick answer 3: [Practical tip or insight]"
+    - "Read the full guide to discover [benefit] and [benefit]"
+  keyTakeaways:
+    - "Key insight 1 from the post"
+    - "Key insight 2 from the post"
+    - "Key insight 3 from the post"
+
+galleryImages:
+  - url: "/images/blog/[slug]-1.jpg"
+    alt: "[Long-tail keyword + descriptive context]"
+    width: 1200
+    height: 800
+    caption: "[Optional]"
+  - url: "/images/blog/[slug]-2.jpg"
+    alt: "[Different long-tail keyword + context]"
+    width: 1200
+    height: 800
+  - url: "/images/blog/[slug]-3.jpg"
+    alt: "[Another unique long-tail keyword]"
+    width: 1200
+    height: 800
+
+faqItems:
+  - question: "[Exact voice search query from research - NO APOSTROPHES]"
+    answer: "[40-60 word answer. First sentence direct answer. Second explains. Third actionable tip. NO APOSTROPHES]"
+  - question: "[Another exact voice search query]"
+    answer: "[40-60 word answer following same pattern]"
+  # Minimum 8-10 FAQ items required
+
+# Optional fields (include only if applicable)
+tutorialSteps:
+  - position: 1
+    name: "Step name"
+    text: "Detailed instructions"
+  # Continue for all tutorial steps
+
+tutorialMetadata:
+  name: "Tutorial title"
+  description: "Brief description"
+  totalTime: "PT45M"
+  estimatedCost:
+    currency: "USD"
+    value: "35"
+  tools: ["Tool 1", "Tool 2"]
+  supplies: ["Supply 1", "Supply 2"]
+
+videoMetadata:
+  name: "Video title"
+  description: "Video description"
+  thumbnailUrl: "/images/video-thumb.jpg"
+  uploadDate: "2025-10-30"
+  duration: "PT10M30S"
+  contentUrl: "https://youtube.com/watch?v=xxx"
+---
+```
+
+**Content Body:**
+
+**Introduction (200-250 words):**
+```markdown
+[Hook sentence with trend insight or surprising stat]
+
+[Primary keyword mention - natural sentence about the topic]
+
+[2-3 sentences about what's trending/why this matters now]
+
+[What reader will find in this post - benefit-focused]
+
+[Optional: Quick navigation if long post]
+
+[Internal link to related content]
+```
+
+**TL;DR Section (After Introduction):**
+
+```markdown
+---
+
+## [Creative Heading with "Summary"]
+
+[First array item: 30-word creative summary that hooks reader]
+
+**Quick Answers:**
+- **[Question from title/research]:** [One-sentence answer]
+- **[Another quick question]:** [One-sentence answer]
+- **[Third quick question]:** [One-sentence answer]
+
+[Last array item: Tempting hook to read full post]
+
+**Key Takeaways:**
+- [Key insight 1]
+- [Key insight 2]
+- [Key insight 3]
+
+---
+```
+
+**Affiliate Disclosure (If Product Post):**
+
+Place after TL;DR section:
+
+```markdown
+**Disclosure:** This page contains affiliate links to products we've tested and recommend. If you purchase through these links, we may earn a small commission at no additional cost to you. [Learn more](/about).
+
+---
+```
+
+**Main Content Sections:**
+
+Use H2 for major sections, integrating user queries:
+
+```markdown
+## What's Trending in [Topic] Right Now
+
+[150-200 words about current trends with sources/attribution]
+
+![Trend example image](/images/blog/[slug]-1.jpg)
+
+[Continue with natural flow using voice prompt style]
+
+---
+
+## [H2 Based on User Query from Research]
+
+Example: "How to Make Christmas Nails Last Through New Year"
+
+[300-400 words directly answering the query]
+[Use cluster keywords and LSI variations]
+[Internal links every 300-400 words]
+
+![Related image](/images/blog/[slug]-2.jpg)
+
+---
+
+## [H2 Answering Reddit/Quora Question]
+
+Example: "How to Get Glitter Polish to Actually Stay"
+
+[200-300 words addressing the forum user's concern directly]
+[Reference what users are asking: "We see this question everywhere..."]
+[Provide practical solution]
+
+---
+
+## [Main Content Section - Post Type Specific]
+
+[Continue with structure planned in Phase 2]
+
+[For Seasonal Roundup: 25-40 designs with images and descriptions]
+[For Tutorial: Step-by-step with images]
+[For Product Comparison: Detailed reviews]
+
+---
+```
+
+**Product Integration Format (If Applicable):**
+```markdown
+### Products We Recommend
+
+We tested [X] products to find the best for [topic]. Here's what made our top 5:
+
+**1. <a href='[AFFILIATE-LINK]' class='text-blue-600 hover:text-blue-800 underline' target='_blank' rel='noopener'>Product Name</a>**
+
+![Product image](/images/blog/product-1.jpg)
+
+**Why we love it:** [50-75 words about benefits, testing results, who it's for]
+
+**Price:** $X.XX  
+**Best for:** [use case]  
+**Where to buy:** <a href='[AFFILIATE-LINK]' class='text-blue-600 hover:text-blue-800 underline' target='_blank' rel='noopener'>Get it here</a>
+
+---
+
+[Repeat for each product]
+```
+
+**Image Embedding:**
+```markdown
+![Descriptive alt text with long-tail keyword](/images/blog/[slug]-X.jpg)
+```
+
+**Internal Linking Format:**
+```markdown
+Looking for more seasonal inspiration? Check out our <a href='/blog/related-post' class='text-blue-600 hover:text-blue-800 underline'>complete guide to winter nail care</a>.
+```
+
+**FAQ Section - VOICE SEARCH OPTIMIZATION:**
+
+```markdown
+## Frequently Asked Questions
+
+### [Exact voice search query from research]
+
+[First sentence: Direct answer for voice assistants]
+[Second sentence: Brief explanation]
+[Third sentence: Actionable tip or product link]
+
+### [Another exact voice search query]
+
+[Direct conversational answer following same pattern]
+
+[Continue for 8-10 questions minimum]
+```
+
+**FAQ Answer Pattern:**
+- Sentence 1: Direct answer (voice assistants read this)
+- Sentence 2: Brief explanation (why/how)
+- Sentence 3: Actionable tip or product recommendation
+
+**Conclusion (150-200 words):**
+```markdown
+## Ready to Try These Designs?
+
+[Recap top 3 takeaways]
+
+[Soft CTA related to products or next steps]
+
+[Internal link to related content]
+
+[Encouraging sign-off using voice prompt style]
+```
+
+**Related Posts Section:**
+```markdown
+---
+
+## Keep Exploring
+
+<div class='grid md:grid-cols-3 gap-6 my-8'>
+  <a href='/blog/[slug-1]' class='block p-6 bg-gradient-to-br from-pink-50 to-purple-50 rounded-xl hover:shadow-lg transition-all duration-300 border border-pink-100 hover:border-pink-300'>
+    <h3 class='text-lg font-semibold text-gray-900 mb-2'>[Post Title 1]</h3>
+    <p class='text-sm text-gray-600 mb-3'>[One sentence teaser]</p>
+    <span class='text-pink-600 text-sm font-medium'>Read more â†’</span>
+  </a>
+  
+  [Repeat for 2-4 related posts based on cluster strategy]
+</div>
+```
+
+**Formatting Rules:**
+- NO H1 in markdown (auto-generated from frontmatter title)
+- H2 for major sections (##)
+- H3 for subsections (###)
+- Short paragraphs (2-3 sentences for mobile)
+- Line break between paragraphs
+- Horizontal rules (---) between major sections
+- ALL links: `class='text-blue-600 hover:text-blue-800 underline'`
+- External links add: `target='_blank' rel='noopener'`
+
+**Quality Checklist Before Delivery:**
+- [ ] Word count matches target exactly
+- [ ] Primary keyword appears [confirmed count] times
+- [ ] Cluster keywords used liberally
+- [ ] LSI variations throughout
+- [ ] 40% of H2 headings relate to user queries
+- [ ] Reddit/Quora questions answered directly (minimum 3 sections)
+- [ ] 10-15 internal links
+- [ ] 4-6 external authority links (if applicable)
+- [ ] 8-10 FAQ questions (exact voice search format)
+- [ ] All affiliate links integrated properly (if applicable)
+- [ ] All images specified with alt text
+- [ ] Gallery images have unique long-tail keywords
+- [ ] TL;DR section present and engaging
+- [ ] Affiliate disclosure placed correctly (if applicable)
+- [ ] YAML frontmatter valid (no apostrophes)
+- [ ] Voice prompt style maintained throughout
+- [ ] Reads naturally (not robotic)
+- [ ] Engaging throughout (user wants to keep reading)
+- [ ] Clear value delivered (answers user questions)
+
+---
+
+## PHASE 6: STRUCTURED DATA VALIDATION
+
+**Note:** Your system auto-generates schemas from frontmatter.
+
+Ensure frontmatter includes all required fields:
+- Complete `faqItems` array (8-10 questions minimum)
+- Complete `galleryImages` array (3 images minimum)
+- Complete `tldr` object with summary and keyTakeaways arrays
+- `category` field
+- `dateModified` field
+- `wordCount` field
+- Valid YAML syntax (no breaking characters)
+- All required SEO fields
+
+**Schemas auto-generated:**
+1. ArticleSchema (BlogPosting with gallery images)
+2. BreadcrumbSchema
+3. FAQSchema (from faqItems)
+4. ImageGallerySchema (from galleryImages)
+5. WebsiteSchema (site-level)
+6. OrganizationSchema
+7. HowToSchema (if tutorialMetadata present)
+
+**Validation Reminder:**
+Tell user to test at: https://search.google.com/test/rich-results
+
+---
+
+## PHASE 7: DELIVERY
+
+### Output Format: RAW MARKDOWN
+
+**CRITICAL: Deliver in code artifact as raw markdown (unrendered)**
+
+Use code artifact with:
+- Type: `text/markdown` or `application/vnd.ant.code` with `language="markdown"`
+- Complete frontmatter + content
+- Unrendered (user sees the actual markdown code)
+
+
+Ã¢Å“â€¦ TOPICAL MAPPING COMPLIANCE
+- Primary keyword unique (not used by other posts)
+- Search intent verified different from related posts
+- Content boundaries respected (no 300+ word overlap)
+- Internal links to pillar + related clusters (3-5 links)
+- topicalMap frontmatter complete
+- keywordStrategy.avoidKeywords listed
+- No FAQ duplication from other posts
+- Parenthesis relationships clear in content map
+**Delivery Checklist:**
+
+```
+â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
+DELIVERY PACKAGE
+â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
+
+âœ… RAW MARKDOWN FILE
+- Complete frontmatter (all required fields)
+- Full content body ([X] words)
+- Unrendered markdown in code artifact
+
+âœ… IMAGE LIST
+Total images needed: [X]
+
+HERO IMAGE:
+- Filename: [slug]-hero.jpg
+- Dimensions: 1200x630px
+- Alt: "[alt text]"
+
+GALLERY IMAGES:
+- [slug]-1.jpg (1200x800px) - Alt: "[alt]"
+- [slug]-2.jpg (1200x800px) - Alt: "[alt]"
+- [slug]-3.jpg (1200x800px) - Alt: "[alt]"
+
+CONTENT IMAGES:
+- [Additional images list with specs]
+
+âœ… KEYWORD TRACKING
+- Primary keyword: "[keyword]"
+- Target count: [X] times
+- Actual count: [X] times
+- Cluster keywords used: [list]
+
+âœ… DEPLOYMENT INSTRUCTIONS
+
+PRE-DEPLOYMENT:
+â–¡ Create all images per specifications
+â–¡ Optimize to WebP format
+â–¡ Save markdown: src/content/blogs/[slug].md
+â–¡ Upload images: public/images/blog/
+
+LOCAL TESTING:
+â–¡ Run: npm run build
+â–¡ Check for YAML parsing errors
+â–¡ Test all links clickable
+â–¡ Verify images load
+â–¡ Check mobile responsiveness
+
+SEO VERIFICATION:
+â–¡ Primary keyword in title (first 8 words)
+â–¡ Primary keyword count matches target
+â–¡ FAQ section has 8-10 questions
+â–¡ TL;DR section present
+â–¡ Gallery has 3+ images
+â–¡ All required frontmatter fields present
+â–¡ Meta description 150-160 chars
+â–¡ Word count matches target
+
+VALIDATION:
+â–¡ Test schemas: https://search.google.com/test/rich-results
+â–¡ Validate YAML syntax
+â–¡ Check canonical URL
+
+DEPLOYMENT:
+â–¡ npm run build
+â–¡ Deploy to hosting
+â–¡ Test live URL
+â–¡ Submit to Google Search Console
+```
+
+---
+
+## POST-DEPLOYMENT MONITORING
+
+**Remind user:**
+
+```
+â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
+POST-DEPLOYMENT CHECKLIST
+â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
+
+FIRST 48 HOURS:
+â–¡ Monitor Google Search Console for indexing
+â–¡ Check for any errors or warnings
+â–¡ Verify affiliate links tracking (if applicable)
+â–¡ Verify schemas appear in rich results
+â–¡ Test voice search queries (Google Assistant, Siri)
+
+FIRST WEEK:
+â–¡ Monitor initial rankings for primary keyword
+â–¡ Check which user queries are driving traffic
+â–¡ Respond to any comments
+â–¡ Share on social media (Pinterest, Instagram)
+
+ONGOING:
+â–¡ Track keyword rankings weekly
+â–¡ Update dateModified when making edits
+â–¡ Refresh content every 90 days (evergreen posts)
+â–¡ Update before season (seasonal posts)
+â–¡ Monitor competitor changes
+â–¡ Add new FAQ questions based on user queries
+```
+
+---
+
+## OPTIMIZATION NOTES
+
+### GEO (Generative Engine Optimization):
+
+**For ChatGPT/Perplexity/Gemini Crawling:**
+- Clear H2 structure (easy to parse)
+- FAQ section with direct answers
+- Citations/attribution for claims
+- Structured data (JSON-LD via auto-generation)
+- Natural language (not keyword-stuffed)
+- Voice search friendly answers
+
+**Content Signals:**
+- Answers actual questions users ask
+- Provides specific, actionable information
+- Credits sources appropriately
+- Uses tables/lists for scannable data
+- Includes product specs and comparisons
+
+### User Engagement Optimization:
+
+**Keep users reading:**
+- Strong hook in first 100 words
+- TL;DR satisfies immediately (but tempts to read more)
+- Scannable formatting (short paragraphs, headers, lists)
+- Visual breaks every 200-300 words
+- Relevant images that add value
+- Direct answers to their questions (from Reddit/Quora research)
+- Clear product recommendations with reasoning (if applicable)
+- Helpful FAQ section with voice search answers
+- Related posts at bottom
+
+**Conversion Optimization (If Product Post):**
+- Affiliate links clearly visible (styled differently)
+- Product recommendations include "why" (not just links)
+- CTAs natural, not pushy
+- Easy to find what they searched for
+- Mobile-friendly reading experience
+- Affiliate disclosure transparent and compliant
+
+---
+
+
+---
+
+## TOPICAL MAPPING TROUBLESHOOTING
+
+### Issue: "User wants to target similar keywords in two posts"
+
+**Diagnostic Questions:**
+1. Run SERP analysis - do they show same top 10 URLs?
+2. What's the search intent difference?
+3. Can one post comprehensively answer both?
+
+**Solutions:**
+- **If same SERP overlap >70%:** Merge into single comprehensive post
+- **If different SERP types:** Confirm distinct intent, proceed with both
+- **If unclear:** Create longer pillar post covering both angles
+
+---
+
+### Issue: "Existing post already ranks for keyword user wants"
+
+**Diagnostic Questions:**
+1. Is existing post underperforming (rank position)?
+2. Is content outdated or thin?
+3. What's missing from existing post?
+
+**Solutions:**
+- **If ranking well:** Update existing post, don't create new
+- **If ranking poorly:** Audit why, then decide update vs new
+- **If thin content:** Expand existing to comprehensive guide
+
+---
+
+### Issue: "Two clusters seem to overlap topics"
+
+**Example:** "Short Christmas Nails" vs "Simple Christmas Nails"
+
+**Diagnostic Questions:**
+1. What's the primary differentiator?
+   - Short = nail LENGTH focus
+   - Simple = complexity/SKILL LEVEL focus
+2. Can search intent be clearly differentiated?
+3. Do they serve different user needs?
+
+**Solutions:**
+- **If overlapping:** Merge into "Short & Simple Christmas Nails"
+- **If distinct user needs:** Keep separate, cross-link heavily
+- **Test:** Search both keywords - different SERPs = keep separate
+
+---
+
+### Issue: "Agent keeps mentioning other cluster topics in content"
+
+**This indicates:**
+- Topic boundaries not clear enough
+- Writer drifting from assigned scope
+- Natural topic connection (should link, not explain)
+
+**Solutions:**
+1. Reinforce topical boundary in prompt
+2. Set rule: "If you write 3+ paragraphs about X, you're cannibalizing X's cluster post"
+3. Train to link early: "First mention = link to that cluster"
+
+---
+
+### Issue: "User created posts, now Google confused which to rank"
+
+**Symptoms:**
+- Rankings fluctuate between two posts
+- Neither ranks as well as before
+- Google shows wrong post for keyword
+
+**Diagnostic Steps:**
+1. Check Google Search Console - which URLs getting impressions for keyword?
+2. Run site: search for keyword - how many results?
+3. Compare URLs' backlinks, authority, freshness
+
+**Solutions:**
+- **Cannibalization confirmed:** Merge posts or 301 redirect weaker to stronger
+- **If both needed:** Differentiate titles, meta descriptions, target intents more clearly
+- **If recent publish:** Wait 2-4 weeks, Google may sort it out
+
+**Preventive Canonical Tags:**
+```yaml
+# In weaker post's frontmatter
+canonical: "https://mirelleinspo.com/blog/stronger-post-slug"
+```
+
+---
+
+
+
+---
+
+## VERSION NOTES
+
+**v5.0 Changes (October 2025):**
+- âœ… User provides keywords (no keyword research by agent)
+- âœ… Deep user query research (50+ queries from Google, AI agents, voice search, Reddit, Quora, forums)
+- âœ… Agent can request additional research sessions
+- âœ… Competitor keyword count analysis â†’ user decides target
+- âœ… High-CTR title research and generation
+- âœ… TL;DR section redesigned: 30-word summary + quick answers + tempt to read
+- âœ… H2/H3 relate to user queries (not exact) - FAQ uses exact queries
+- âœ… Reddit/Quora questions answered directly in content (minimum 3 sections)
+- âœ… Voice prompt requested in Phase 4 (user provides)
+- âœ… Image naming: [slug]-hero.jpg, [slug]-1.jpg format
+- âœ… Affiliate products only for product recommendation posts
+- âœ… Gallery images: first 3 from post content
+- âœ… Removed updatedDate (use dateModified)
+- âœ… Removed rating field
+- âœ… Made tldr, galleryImages, faqItems, wordCount required
+- âœ… Word count override option in Phase 0
+- âœ… Category asked in Phase 0
+- âœ… Raw markdown delivery in code artifact (unrendered)
+- âœ… Enhanced research phase (primary focus: Google, then forums)
+- âœ… Voice search optimization throughout
+- âœ… Forum questions integrated into H2 sections
+
+**v4.0 Features (Retained):**
+- Curator voice system
+- Product pre-listing with affiliate collection
+- GEO optimization for AI crawlers
+- 8 post type templates
+- Enhanced voice validation
+- Link styling emphasis
+- Search query integration focus
+- Algorithm and trend research
+- Competitor SERP analysis
+
+---
+
+## QUICK REFERENCE
+
+### Essential Commands (Remind User):
+```bash
+# Build and test locally
+npm run build
+npm run dev
+
+# Deploy
+git add .
+git commit -m "feat: added new blog post about [topic]"
+git push
+```
+
+### File Paths:
+```
+Content: src/content/blogs/[slug].md
+Images: public/images/blog/[slug]-*.jpg
+```
+
+### Validation URLs:
+```
+Rich Results: https://search.google.com/test/rich-results
+YAML Validator: https://www.yamllint.com/
+```
+
+---
+
+**YOU'RE READY TO GENERATE WORLD-CLASS BLOG POSTS! ðŸŽ‰**
+
+Follow this workflow exactly, and your posts will:
+- âœ… Rank for competitive keywords
+- âœ… Answer real user questions from forums
+- âœ… Optimize for voice search and AI agents
+- âœ… Satisfy users immediately with TL;DR
+- âœ… Convert with strategic CTAs (if product post)
+- âœ… Generate rich Schema.org markup automatically
+- âœ… Provide exceptional user experience
+- âœ… Build topical authority over time
+
+---
+
+**Last Updated:** October 30, 2025  
+**System Version:** Next.js 15 + App Router  
+**Compatibility:** All phases complete
