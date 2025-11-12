@@ -1,0 +1,384 @@
+# Mirellé Inspo - Complete Setup Guide
+
+## 📋 Overview
+This guide covers setting up all verification codes, online business profiles, and Wikidata entity for your nail art website.
+
+---
+
+## 1️⃣ Google Search Console Verification
+
+### Purpose
+- Monitor search performance
+- Submit sitemaps
+- Fix indexing issues
+- See which keywords bring traffic
+
+### Steps
+1. **Go to:** [Google Search Console](https://search.google.com/search-console)
+2. Click **"Add Property"**
+3. Enter: `https://mirelleinspo.com`
+4. Choose verification method: **"HTML tag"**
+5. Copy the verification code (looks like: `google1234567890abcdef`)
+6. Update `layout.tsx`:
+   ```typescript
+   verification: {
+     google: 'google1234567890abcdef', // ← Paste your code here
+   }
+   ```
+7. Deploy your site
+8. Return to Search Console → Click **"Verify"**
+
+### Post-Setup Tasks
+- Submit sitemap: `https://mirelleinspo.com/sitemap.xml`
+- Request indexing for homepage and key pages
+- Set up email alerts for critical issues
+
+---
+
+## 2️⃣ Bing Webmaster Tools Verification
+
+### Purpose
+- Bing/Yahoo search visibility
+- Additional SEO insights
+- Microsoft search traffic
+
+### Steps
+1. **Go to:** [Bing Webmaster Tools](https://www.bing.com/webmasters)
+2. Sign in with Microsoft account
+3. Click **"Add site"**
+4. Enter: `https://mirelleinspo.com`
+5. Choose: **"Meta tag"** verification
+6. Copy the content value (e.g., `1234567890ABCDEF`)
+7. Update `layout.tsx`:
+   ```typescript
+   verification: {
+     google: 'YOUR_GOOGLE_CODE',
+     other: {
+       'msvalidate.01': '1234567890ABCDEF', // ← Paste Bing code here
+     },
+   }
+   ```
+8. Deploy site
+9. Return to Bing → Click **"Verify"**
+
+### Post-Setup Tasks
+- Import data from Google Search Console (saves time)
+- Submit sitemap
+- Enable URL inspection tool
+
+---
+
+## 3️⃣ Google Business Profile (Online-Only)
+
+### Purpose
+- Appear in Google Search Knowledge Panel
+- Get customer reviews
+- Show business info in search results
+- Build trust and authority
+
+### Steps
+1. **Go to:** [Google Business](https://www.google.com/business/)
+2. Click **"Manage now"**
+3. Sign in with Google account
+4. Enter business name: **"Mirellé Inspo"** or **"Mirellé"**
+5. Select business category: 
+   - Primary: **"Website"**
+   - Secondary: **"Blog"**, **"Beauty Salon"** (virtual)
+6. **CRITICAL:** Check **"I deliver goods and services to my customers"**
+7. Select **"Hide my address"** (since you're online-only)
+8. Choose service area:
+   - Option A: Worldwide (select multiple countries)
+   - Option B: Specific regions (USA, Canada, UK, Australia, etc.)
+9. Add contact details:
+   - **Website:** `https://mirelleinspo.com`
+   - **Phone:** (optional for online business)
+10. Verification:
+    - Google will offer email/phone verification for online businesses
+    - OR send postcard to registered address (1-3 days)
+11. Complete profile:
+    - **Logo:** Upload `apple-touch-icon.png` (512x512px)
+    - **Cover photo:** Use a nail art hero image
+    - **Description:**
+      ```
+      Mirellé Inspo is your go-to online destination for nail art inspiration, 
+      seasonal trends, DIY tutorials, and beauty tips. Discover Pinterest-worthy 
+      nail designs for every mood and occasion, from holiday nails to everyday elegance.
+      ```
+    - **Services:** Blog content, Nail art tutorials, Seasonal guides, Product recommendations
+    - **Attributes:** Women-owned, Online-only
+    - **Hours:** N/A (or 24/7 for online)
+
+### Post-Verification Tasks
+- Add photos (minimum 3-5 nail art images)
+- Create first post
+- Enable messaging (optional)
+- Request reviews from email subscribers
+
+### Note for Online-Only Business
+- You won't have a pin on Google Maps
+- You'll appear in search results for "nail art blog", "mirellé inspo", etc.
+- Can still build reviews and authority
+- Knowledge Panel will show on branded searches
+
+---
+
+## 4️⃣ Wikidata Entity Creation
+
+### Purpose
+- Structured knowledge graph presence
+- Cited by AI bots (ChatGPT, Claude, Perplexity)
+- Increased authority and discoverability
+- Connection to Wikipedia (if you create page later)
+
+### Prerequisites
+- Active website (✅ You have this)
+- Social media presence (✅ Pinterest, Instagram, Twitter)
+- Unique entity (✅ Mirellé Inspo is unique)
+
+### Steps
+
+#### A. Create Wikidata Account
+1. Go to: [Wikidata](https://www.wikidata.org/)
+2. Click **"Create account"** (top right)
+3. Username: Choose something professional (e.g., MirelleInspo)
+4. Complete registration
+
+#### B. Create New Item
+1. Go to: [Create New Item](https://www.wikidata.org/wiki/Special:NewItem)
+2. Fill in the form:
+
+   **Label (English):** `Mirellé Inspo`
+   
+   **Description (English):** `Online nail art and beauty blog`
+   
+   **Aliases (English):** `Mirelle, Mirellé`
+
+3. Click **"Create"**
+
+#### C. Add Statements (Properties)
+
+After creation, add these properties by clicking **"+ add statement"**:
+
+##### Essential Properties
+
+| Property | Value | How to Find |
+|----------|-------|-------------|
+| **instance of (P31)** | `blog` (Q30849) or `website` (Q35127) | Search "blog" or "website" |
+| **official website (P856)** | `https://mirelleinspo.com` | Paste URL |
+| **language of work (P407)** | `English` (Q1860) | Search "English" |
+| **inception (P571)** | `2024` or your launch date | Enter year |
+| **country (P17)** | `United States` (Q30) | Search your country |
+| **topic's main category (P910)** | `beauty` or `nail art` | Search relevant category |
+
+##### Social Media Properties
+
+| Property | Value | Property ID |
+|----------|-------|-------------|
+| **Pinterest username (P3836)** | `mirelle_inspo` | P3836 |
+| **Instagram username (P2003)** | `mirelle_inspo` | P2003 |
+| **X username (P2002)** | `mirelleinspo` | P2002 |
+
+##### Optional but Recommended
+
+| Property | Value | Property ID |
+|----------|-------|-------------|
+| **owned by (P127)** | Create item for yourself/company | P127 |
+| **copyright holder (P3931)** | Same as above | P3931 |
+| **author (P50)** | "Mirellé Team" or your name | P50 |
+
+#### D. Add References
+For each statement, add a reference (makes it credible):
+1. Click **"add reference"**
+2. Use **"reference URL (P854)"**: `https://mirelleinspo.com/about`
+3. Add **"retrieved (P813)"**: Today's date
+
+#### E. Add Identifiers
+These link your entity to other databases:
+- Search for your site on:
+  - [Internet Archive](https://archive.org/) → Get identifier
+  - Social media official databases
+  - Add these as identifiers in Wikidata
+
+#### F. Get Your Wikidata ID
+1. After saving, note your Wikidata ID (looks like `Q123456789`)
+2. Your Wikidata URL will be: `https://www.wikidata.org/wiki/Q123456789`
+
+### Update Your Website
+
+Once you have your Wikidata ID (e.g., `Q123456789`), update `layout.tsx`:
+
+```typescript
+"sameAs": [
+  "https://www.pinterest.com/mirelle_inspo",
+  "https://www.instagram.com/mirelle_inspo",
+  "https://x.com/mirelleinspo",
+  "https://www.wikidata.org/wiki/Q123456789" // ← Your actual Wikidata ID
+],
+```
+
+### Maintenance
+- Update Wikidata when you launch major features
+- Add awards/recognition as you receive them
+- Link to your Wikipedia page if you create one later
+- Add multilingual labels as you expand internationally
+
+### Tips for Approval
+- Use official sources (your website, verified social media)
+- Add references for every claim
+- Keep descriptions neutral and factual
+- Don't add promotional language
+- Follow [Wikidata Guidelines](https://www.wikidata.org/wiki/Wikidata:Introduction)
+
+### Common Mistakes to Avoid
+- ❌ Creating duplicate items (search first!)
+- ❌ Using promotional language
+- ❌ Adding claims without references
+- ❌ Linking to unverified social accounts
+- ✅ Keep it factual, referenced, and neutral
+
+---
+
+## 5️⃣ Final Code Updates
+
+### Remove Placeholder Wikidata
+If you haven't created Wikidata yet, remove this line from `layout.tsx`:
+
+```typescript
+// BEFORE (with placeholder)
+"sameAs": [
+  "https://www.pinterest.com/mirelle_inspo",
+  "https://www.instagram.com/mirelle_inspo",
+  "https://www.wikidata.org/wiki/mirelle_inspo", // ❌ Invalid
+  "https://x.com/mirelleinspo",
+],
+
+// AFTER (without Wikidata)
+"sameAs": [
+  "https://www.pinterest.com/mirelle_inspo",
+  "https://www.instagram.com/mirelle_inspo",
+  "https://x.com/mirelleinspo"
+],
+```
+
+### Add Real Wikidata After Creation
+Once you get your Wikidata ID:
+
+```typescript
+"sameAs": [
+  "https://www.pinterest.com/mirelle_inspo",
+  "https://www.instagram.com/mirelle_inspo",
+  "https://x.com/mirelleinspo",
+  "https://www.wikidata.org/wiki/Q123456789" // ✅ Real ID
+],
+```
+
+---
+
+## 6️⃣ Verification Checklist
+
+### Before Deployment
+- [ ] Google Search Console verification code added
+- [ ] Bing verification code added (or removed if not using)
+- [ ] Invalid Wikidata URL removed (or replaced with real ID)
+- [ ] All social media URLs verified and working
+- [ ] Required images exist:
+  - [ ] `/og-image.jpg` (1200x630px)
+  - [ ] `/twitter-image.jpg`
+  - [ ] `/apple-touch-icon.png` (180x180px & 512x512px)
+  - [ ] Favicons (ico, png, svg)
+
+### After Deployment
+- [ ] Verify Google Search Console
+- [ ] Verify Bing Webmaster Tools
+- [ ] Submit sitemaps to both
+- [ ] Complete Google Business Profile setup
+- [ ] Verify Google Business (postcard/phone)
+- [ ] Create Wikidata entity
+- [ ] Update schema with real Wikidata ID
+- [ ] Test all verification codes work
+
+---
+
+## 7️⃣ Timeline
+
+| Task | Time Required | When to Do |
+|------|---------------|------------|
+| Google Search Console | 5 min + instant verification | Now |
+| Bing Webmaster | 5 min + instant verification | Now |
+| Remove invalid Wikidata | 2 min | Now |
+| Deploy changes | 5 min | After above steps |
+| Google Business setup | 15 min | After deployment |
+| Google Business verification | 1-3 days (postcard) OR instant (email/phone) | Wait for Google |
+| Create Wikidata entity | 20-30 min | After site is live |
+| Update with real Wikidata ID | 5 min | After Wikidata approval |
+
+**Total Active Time:** ~1 hour  
+**Total Calendar Time:** 1-3 days (waiting for verifications)
+
+---
+
+## 8️⃣ Post-Setup Monitoring
+
+### Weekly Tasks
+- Check Google Search Console for errors
+- Monitor search rankings for target keywords
+- Respond to any Google Business questions/reviews
+
+### Monthly Tasks
+- Update Wikidata with new achievements
+- Review and optimize meta descriptions
+- Check for broken links
+- Analyze traffic sources
+
+### Quarterly Tasks
+- Audit structured data with Google Rich Results Test
+- Review and update Google Business photos
+- Create Wikipedia page if you meet notability criteria
+
+---
+
+## 9️⃣ Support Resources
+
+- **Google Search Console Help:** https://support.google.com/webmasters
+- **Bing Webmaster Help:** https://www.bing.com/webmasters/help
+- **Google Business Support:** https://support.google.com/business
+- **Wikidata Help:** https://www.wikidata.org/wiki/Wikidata:Introduction
+- **Schema.org Documentation:** https://schema.org/
+
+---
+
+## 🎯 Success Metrics
+
+After completing all setups, you should see:
+
+**Week 1:**
+- ✅ Site indexed in Google & Bing
+- ✅ Sitemap submitted and processed
+- ✅ No critical errors in Search Console
+
+**Week 2-4:**
+- ✅ Google Business verified
+- ✅ First reviews coming in
+- ✅ Search impressions increasing
+
+**Month 2-3:**
+- ✅ Ranking for branded keywords (Mirellé Inspo)
+- ✅ Traffic from organic search
+- ✅ Wikidata entity active and crawled
+- ✅ Knowledge Panel showing in Google (if enough signals)
+
+---
+
+## ⚠️ Important Notes
+
+1. **Don't rush Wikidata** - Make sure your site is established first
+2. **Be patient with Google Business** - Verification can take time
+3. **Keep verification codes private** - Don't share in public repos
+4. **Test after every deployment** - Use Google Rich Results Test
+5. **Monitor regularly** - SEO is ongoing, not one-time
+
+---
+
+**Last Updated:** November 2025  
+**For:** Mirellé Inspo (mirelleinspo.com)  
+**Contact:** [Your contact email for internal reference]
