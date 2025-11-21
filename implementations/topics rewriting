@@ -1,0 +1,1358 @@
+# 🎯 MASTER IMPLEMENTATION PROMPT: MIRELLÉ TOPIC PAGES TRANSFORMATION v2.0
+
+## 📋 PROJECT OVERVIEW
+You are tasked with transforming Mirellé's 6 topic pages into high-performing, SEO/AEO/GEO-optimized content hubs that achieve ZERO bounce rate through exceptional design and user experience. These pages target nail enthusiasts globally with blog-level SEO sophistication.
+
+---
+
+## 🎨 DESIGN PHILOSOPHY: GEN-Z BEAUTY 2025
+
+### Core Design Principles (Research-Backed)
+Based on 2025 beauty trends and Gen-Z preferences:
+
+**1. Visual Language**
+- **Color Psychology**: Soft pastels (lavender, mint, powder blue) for wellness feel
+- **Typography Hierarchy**: Mix serif headlines (Cormorant Garamond) with clean sans-serif body (Inter)
+- **Dopamine Design**: Bright, saturated accent colors for CTAs and interactive elements
+- **Glassmorphism**: Frosted glass cards with subtle blur effects (backdrop-filter)
+- **Micro-animations**: On-scroll reveals, hover tilts, ripple effects on clicks
+
+**2. Layout Strategy**
+- **Anti-Cluttered**: Abundant white space, max 3 visual elements per viewport
+- **Sticky Navigation**: Table of contents that follows scroll (mobile + desktop)
+- **Progressive Disclosure**: Collapsible sections to prevent overwhelm
+- **Z-Pattern Layout**: Eye-tracking optimized content flow
+- **Thumb-Zone Optimized**: Key CTAs in bottom 20% of mobile screens
+
+**3. Engagement Mechanics**
+- **Interactive Accordions**: FAQ sections with smooth animations
+- **Before/After Sliders**: For visual comparisons (nail art techniques)
+- **Progress Indicators**: Show reading progress with subtle bar
+- **Scroll-Triggered Animations**: Elements fade in as user scrolls
+- **Floating Action Buttons**: Social share, save, back-to-top
+
+**4. Mobile-First Architecture**
+- **<2 Second LCP**: Largest Contentful Paint under 2s
+- **Touch-Friendly**: Minimum 48x48px tap targets
+- **Gesture Support**: Swipe navigation for image galleries
+- **Collapsible Content**: Hide/show sections on mobile
+- **Optimized Media**: WebP images, lazy loading
+
+---
+
+## 🔍 SEO/AEO/GEO OPTIMIZATION FRAMEWORK
+
+### Schema Markup Strategy (Multi-Layer Implementation)
+
+**REQUIRED SCHEMAS (All Pages):**
+1. **Article Schema**
+   - Headline, author, datePublished, dateModified
+   - Image (1200x630px minimum)
+   - Publisher organization reference
+   - Main entity of page
+
+2. **BreadcrumbList Schema**
+   - Home > Topics > [Specific Topic]
+   - JSON-LD format (Google preferred)
+
+3. **FAQPage Schema**
+   - Minimum 10 Q&A pairs per topic
+   - Answer length: 40-60 words (optimal)
+   - Questions map to long-tail keywords
+   - No apostrophes in strings (schema compatibility)
+
+4. **HowTo Schema** (Where Applicable)
+   - Step-by-step guides embedded in content
+   - Each step includes: name, text, image (optional)
+   - Total time, supply list
+
+5. **WebPage Schema**
+   - @type: WebPage
+   - Connects to parent website entity
+
+6. **Organization Schema** (Site-Wide)
+   - Brand identity, logo, social profiles
+   - SameAs: Pinterest, Instagram, Twitter
+
+7. **ItemList Schema** (For Listicles)
+   - Numbered lists ranked by popularity/relevance
+   - Rich snippet eligibility
+
+8. **ImageObject Schema**
+   - Featured images optimized for image search
+   - Alt text, caption, contentUrl
+
+**CRITICAL SCHEMA RULES:**
+- JSON-LD format ONLY (not Microdata/RDFa)
+- Never markup invisible content
+- Validate with Google Rich Results Test
+- Keep schema <10KB per page
+- Update dateModified on content changes
+
+### Semantic SEO Structure
+
+**Content Architecture:**
+```
+H1: Primary Keyword (Single, Above-Fold)
+  └─ H2: Keyword Cluster 1 (Semantic Group)
+      ├─ H3: Long-Tail Variation 1
+      ├─ H3: Long-Tail Variation 2
+      └─ H3: Question-Based Query
+  └─ H2: Keyword Cluster 2
+      ├─ H3: Related Topic
+      └─ H3: User Intent Query
+```
+
+**On-Page SEO Checklist:**
+- [ ] Primary keyword in H1 (once)
+- [ ] Primary keyword in first 100 words
+- [ ] LSI keywords naturally distributed (3-5% density)
+- [ ] Long-tail keywords in H2/H3 headings
+- [ ] Alt text for ALL images (keyword + descriptive)
+- [ ] Internal links to 3-5 related pages
+- [ ] External links to 2-3 authority sources
+- [ ] Meta description 150-160 characters
+- [ ] URL slug contains primary keyword
+
+**Voice Search Optimization:**
+- Conversational question headings ("How do I...", "What are...")
+- Answer boxes format (direct 40-60 word answers)
+- Featured snippet targeting with structured lists
+- Natural language, not keyword-stuffed
+
+**E-E-A-T Signals:**
+- Author byline with expertise statement
+- Updated date prominently displayed
+- Reference to studies/statistics with citations
+- User testimonials/reviews embedded
+- Links to medical/dermatology sources (where relevant)
+
+---
+
+## 🎯 COMPETITOR ANALYSIS & CONTENT GAPS
+
+### PRE-WRITING RESEARCH PROCESS (MANDATORY)
+
+**SERP Analysis (Agent Must Complete First):**
+
+Before writing content, agent analyzes top 5 ranking pages for primary keyword:
+
+**Extract from Competitors:**
+1. **Exact word count** per competitor
+2. **Total images** per competitor  
+3. **H2 structure** and count
+4. **Primary keyword density** percentage
+5. **Content format** (guide, listicle, tutorial, etc.)
+6. **Strengths** (2-3 per competitor)
+7. **Weaknesses/gaps** (2-3 per competitor)
+8. **Unique angles** they use
+9. **Internal linking patterns**
+10. **SERP features** they win (Featured Snippet, PAA, Images)
+
+**Calculate Competitive Benchmarks:**
+- Average word count across top 5
+- Average image count
+- Average H2 sections
+- Common H2 patterns/topics
+- Average keyword density
+
+**Identify Content Opportunities:**
+→ **Content gaps** none of top 5 address  
+→ **Weak sections** in competitors (outdated, thin content)  
+→ **SERP features** not being won  
+→ **User questions** not answered  
+→ **Better angles** possible for our brand voice  
+
+**Your Winning Strategy Formula:**
+```
+Target Word Count = (Competitor Average × 1.15) to (Competitor Average × 1.25)
+Target Images = Competitor Average + 2-3 more
+Target H2 Sections = Match or exceed competitor average
+Unique Angle = Identify in gap analysis
+
+Example:
+If competitors average 2,800 words → Target 3,220-3,500 words
+If competitors average 8 images → Target 10-12 images
+If competitors average 7 H2s → Target 8-10 H2s
+```
+
+**Present to User (Before Writing - <400 Words, Bullets):**
+```
+🔍 COMPETITIVE ANALYSIS: [Primary Keyword]
+
+TOP 5 COMPETITORS:
+1. [Domain] - 2,400w | 6 img | Strength: Detailed steps | Gap: Missing product recs
+2. [Domain] - 3,100w | 10 img | Strength: Great visuals | Gap: No FAQs
+3. [Domain] - 1,800w | 5 img | Strength: Quick tips | Gap: Lacks depth
+4. [Domain] - 2,900w | 8 img | Strength: Expert quotes | Gap: Outdated (2023)
+5. [Domain] - 2,500w | 7 img | Strength: Video embed | Gap: Poor mobile UX
+
+KEY METRICS:
+• Avg word count: 2,540
+• Avg images: 7.2
+• Avg H2 sections: 6.4
+• Common topics: [list 4-5]
+• SERP features: [PAA, Featured Snippet, Images, etc.]
+
+CONTENT GAPS TO EXPLOIT:
+→ No competitor covers [specific subtopic]
+→ All lack comprehensive FAQ section
+→ None target "best for beginners" angle
+→ Missing seasonal/trend updates for 2025
+→ [Additional gaps]
+
+YOUR WINNING STRATEGY:
+→ Target: 3,000 words (18% above average)
+→ Images: 12 (67% more visual)
+→ Win Featured Snippet with comparison table
+→ Target 5 PAA questions: [list]
+→ Unique angle: [your differentiation]
+→ Beat competitors by: [specific tactics]
+```
+
+**Gap-Based H2 Strategy:**
+- 40% of H2 sections = answer user questions found in gaps
+- 30% of H2 sections = match competitor topics (but better)
+- 30% of H2 sections = unique angles/subtopics
+
+This ensures your content is **comprehensively superior** to existing results.
+
+---
+
+## 📱 MOBILE OPTIMIZATION (Zero Bounce Strategy)
+
+### Performance Targets
+- **Lighthouse Score**: 90+ mobile, 95+ desktop
+- **Core Web Vitals**:
+  - LCP: <2.5s
+  - FID (INP): <200ms
+  - CLS: <0.1
+- **Page Weight**: <500KB initial load
+- **Time to Interactive**: <3.5s
+
+### Optimization Tactics
+1. **Image Optimization**
+   - WebP format with JPEG fallback
+   - Responsive images (srcset)
+   - Lazy loading below fold
+   - Compress to <100KB per image
+
+2. **Font Loading**
+   - Font-display: swap
+   - Preload critical fonts
+   - Maximum 2 font families
+
+3. **JavaScript**
+   - Defer non-critical JS
+   - Remove unused code
+   - Code splitting for components
+
+4. **CSS**
+   - Critical CSS inline
+   - Purge unused Tailwind classes
+   - Minify and compress
+
+### Mobile UX Patterns
+```jsx
+// Sticky TOC (Mobile)
+<nav className="lg:sticky lg:top-20 lg:max-h-screen lg:overflow-y-auto">
+  {/* Hidden on mobile, sticky on desktop */}
+</nav>
+
+// Collapsible Sections
+<details className="group">
+  <summary className="cursor-pointer touch-target">
+    Expand Section +
+  </summary>
+  <div className="animate-slideDown">Content</div>
+</details>
+
+// Floating CTAs (Mobile Only)
+<div className="fixed bottom-4 right-4 z-50 lg:hidden">
+  <button className="bg-burgundy-600 text-white rounded-full p-4 shadow-xl">
+    Save Guide
+  </button>
+</div>
+```
+
+---
+
+## ✍️ CONTENT CREATION GUIDELINES
+
+### ADVANCED KEYWORD STRATEGY (Blog Generator Inspired)
+
+**Keyword Density & Natural Integration:**
+
+**Primary Keyword Usage:**
+- ✅ H1 heading (once, naturally)
+- ✅ First 100 words of introduction
+- ✅ First H2 section heading
+- ✅ Hero image alt text
+- ✅ 2-3 content images alt text
+- ✅ URL slug
+- ✅ Meta description (150-160 chars)
+- ⚠️ Total mentions: Natural flow, NOT forced count
+- 🎯 Philosophy: Satisfy search intent > hit density percentage
+
+**Cluster Keywords Distribution:**
+- Scatter throughout H2/H3 headings (40% of headings should contain cluster terms)
+- Use in subheadings naturally
+- Integrate into callout boxes
+- Include in image alt text (vary across images)
+- Minimum 5-8 different cluster keywords used
+- Each cluster keyword appears 2-4 times naturally
+
+**Semantic/LSI Keywords:**
+- Use in body paragraphs for context
+- Support primary keyword meaning
+- Help AI understand topic comprehensively
+- Include synonyms and related concepts
+- Target: 15-20 unique semantic terms throughout page
+
+**Long-Tail Keyword Integration:**
+- Use as H3 subheadings (question format)
+- Answer directly in following paragraph
+- Each long-tail = one image alt text
+- Include in FAQ questions
+- Target voice search queries
+
+**Topical Authority Signals:**
+- Cover related subtopics comprehensively
+- Link to semantically related internal pages
+- Use entity-based language (proper nouns, brands, techniques)
+- Include co-occurring terms found in top SERP results
+
+**Natural Keyword Integration Pattern:**
+```
+❌ BAD (Forced):
+"Nail care is important. Nail care helps nails. For nail care, use nail care products."
+
+✅ GOOD (Natural):
+"Proper nail maintenance keeps your nails healthy and strong. Using quality cuticle oil 
+and gentle filing techniques makes a noticeable difference. These simple practices 
+prevent breakage and promote natural growth."
+```
+
+**AVOID:**
+- ❌ Keyword stuffing (unnatural repetition)
+- ❌ Exact match overuse (vary phrasing)
+- ❌ Forcing keywords into every paragraph
+- ❌ Sacrificing readability for SEO
+- ❌ Generic anchor text for internal links
+
+---
+
+### IMAGE SEO STRATEGY (Advanced)
+
+**Filename Optimization:**
+```
+Format: [topic-slug]-[descriptive-keyword]-[number].webp
+
+✅ GOOD Examples:
+- nail-care-guide-cuticle-oil-application.webp
+- skin-tones-warm-undertone-test.webp
+- seasonal-trends-winter-2025-colors.webp
+
+❌ BAD Examples:
+- image1.jpg
+- IMG_0023.jpg
+- nail_care.png (underscores)
+```
+
+**Filename Rules:**
+1. Lowercase only
+2. Hyphens (not underscores)
+3. Include 1-2 relevant keywords
+4. Descriptive of image content
+5. Unique across all images (no duplicates)
+6. 3-6 words maximum
+7. No special characters
+
+**Alt Text Formula:**
+```
+Format: [Long-tail keyword] + [specific context] (under 125 characters)
+
+Hero Image Alt:
+"[Primary keyword] [user intent phrase]"
+Example: "Complete nail care guide featuring essential tools and techniques for healthy nails"
+
+Content Images Alt (MUST BE UNIQUE):
+Image 1: "Step-by-step cuticle care routine with oil application for beginners"
+Image 2: "Best nail strengthening products recommended by professionals"
+Image 3: "Common nail problems and solutions illustrated guide"
+Image 4: "Proper nail filing technique demonstrated on natural nails"
+```
+
+**Alt Text Rules:**
+- ✅ Start directly with description (NO "image of" prefix)
+- ✅ Under 125 characters strict
+- ✅ Include unique long-tail keyword per image
+- ✅ Describe what's actually visible
+- ✅ Voice search friendly (conversational)
+- ✅ Context-relevant to surrounding text
+- ❌ Never repeat alt text across images
+- ❌ No keyword stuffing
+
+**Image Gallery Strategy:**
+- First 3 content images = featured gallery (schema)
+- Each image targets different long-tail variation
+- Alt text uses semantic keywords from research
+- Filenames incorporate cluster keywords
+- Varied terminology across all images
+
+**Technical Specs:**
+- Hero: 1200x630px, WebP/JPG, <100KB
+- Content: 1200x800px, WebP/JPG, <80KB each
+- Lazy loading: `loading="lazy"` on all below-fold
+- Responsive: Include width/height attributes
+
+---
+
+### Structure Template (All Topics)
+
+**1. Hero Section (Above Fold)**
+- Gradient background with topic-relevant image
+- H1 with power words + primary keyword (naturally integrated)
+- Subheading (value proposition, benefits)
+- Scroll indicator animation
+- Estimated read time badge
+- Quick stats badge (e.g., "12,000+ readers")
+
+**2. Quick Stats/Facts Bar**
+- 3-4 compelling statistics in glass cards
+- Icons for visual interest
+- Sources cited below (external authority links)
+- Animated counters on scroll
+
+**3. Table of Contents (Sticky)**
+- Jump links to H2 sections
+- Progress indicator (% read)
+- "Back to top" functionality
+- Collapses on mobile, sticky on desktop
+
+**4. Introduction Section**
+- Hook (surprising statistic or question)
+- Primary keyword in first 100 words
+- What readers will learn (bullet points)
+- Credibility statement (E-E-A-T signal)
+- Internal link to related content
+- Length: 200-250 words
+
+**5. Main Content Sections (Modular)**
+Each H2 section includes:
+- Numbered heading with emoji icon + cluster keyword
+- 2-3 paragraph intro (2-3 sentences per paragraph)
+- Visual element (image with proper SEO)
+- H3 subsections with long-tail keywords
+- Callout box (pro tip/warning/scientific fact)
+- Internal link naturally integrated
+- Horizontal rule separator (---) between sections
+
+**Image Frequency:** Every 200-300 words
+
+**6. FAQ Section (Structured)**
+- Minimum 10 questions (from voice search research)
+- Accordion format (expand/collapse)
+- Questions = exact long-tail keywords users search
+- Answers = 40-60 words (direct + explanation + tip)
+- No apostrophes in questions/answers (schema compatibility)
+
+**7. E-E-A-T Section**
+- Position: After FAQ, before Related Topics
+- Heading: "## About Mirellé Team"
+- Content: 3 lines maximum describing expertise
+- Link to /about page
+- Example: "We're nail enthusiasts who test and curate designs from artists worldwide. Our mission is bringing you trend-forward inspiration that's actually achievable. <a href='/about' class='text-blue-600 hover:text-blue-800 underline'>Learn more about us</a>."
+
+**8. Related Topics (Internal Linking)**
+- 3 linked topic cards with images
+- Brief descriptions (50-75 words)
+- "Read more" CTAs
+- Grid layout with hover effects
+
+**9. Newsletter CTA**
+- Inline (not popup)
+- Value proposition clear ("Get weekly nail trends")
+- Single field (email)
+- Privacy assurance
+- Glass card design
+
+---
+
+### Content Quality Standards
+
+**Word Count by Topic:**
+- Nail Care Guide: 3,500-4,500 words (competitors average 3,000)
+- Nail Art Guides: 3,000-3,800 words (competitors average 2,500)
+- Seasonal Trends: 2,500-3,200 words (competitors average 2,200)
+- Modern Women: 2,800-3,500 words (competitors average 2,400)
+- At-Home Hacks: 2,500-3,200 words (competitors average 2,100)
+- Skin Tones: 3,000-3,800 words (competitors average 2,600)
+
+**Target: 15-25% above competitor average**
+
+**Readability Standards:**
+- Flesch Reading Ease: 60-70 (8th-9th grade)
+- Average sentence length: 15-20 words
+- Paragraph length: 2-3 sentences max (mobile-friendly)
+- Transition words: 30%+ of sentences
+- Active voice: 80%+ of sentences
+- Vary sentence length (mix short & medium)
+
+**Paragraph Structure:**
+- ✅ One idea per paragraph
+- ✅ Transition words between paragraphs
+- ✅ Short sentences for mobile readability
+- ✅ Use conversational tone (not robotic)
+- ✅ Break complex ideas into steps
+
+**Engagement Elements (Per 500 Words):**
+- 1-2 images/visuals (with SEO alt text)
+- 1 callout box (colored background, icon)
+- 1 internal link (varied anchor text)
+- 1 list (bulleted/numbered)
+
+**Voice Search Optimization:**
+- Write H2/H3 as questions users ask
+- Answer question in first sentence of section
+- Use conversational phrasing
+- Include "how to", "what is", "best way to" patterns
+- FAQ section targets exact voice queries
+
+**Internal Linking Strategy:**
+- Minimum 5 internal links per topic page
+- Link to: Parent topic (1), related topics (2-3), blog posts (1-2)
+- Anchor text variations:
+  - Exact match keyword (1 time)
+  - Partial match (2-3 times)
+  - Branded/natural (1-2 times)
+- Link placement: Naturally within content flow
+- Open in same tab (not new window)
+- Use Tailwind classes: `class='text-blue-600 hover:text-blue-800 underline'`
+
+**External Authority Linking:**
+- Minimum 3-4 authority sources
+- Link to: Studies, brand websites, industry leaders, medical sources
+- Use for: Supporting claims, statistics, product info, dermatology facts
+- Always open in new tab: `target='_blank' rel='noopener'`
+- Cite naturally in content: "According to a 2024 study by [Source]..."
+
+**E-E-A-T Signals Throughout:**
+- Cite specific studies with years
+- Reference expert techniques ("dermatologists recommend...")
+- Show testing/experience ("we tested 15 products over 30 days")
+- Include statistics from research
+- Update dates visible ("Updated: November 2025")
+- Author credibility statement
+
+---
+
+## 🎨 COMPONENT DESIGN SPECIFICATIONS
+
+### Hero Section
+```tsx
+<section className="relative h-[70vh] min-h-[500px] flex items-center justify-center overflow-hidden">
+  <div className="absolute inset-0 z-0">
+    <img 
+      src="/topic-hero.webp" 
+      alt="[Primary keyword hero alt under 125 chars]" 
+      className="w-full h-full object-cover"
+    />
+    <div className="absolute inset-0 bg-gradient-to-b from-black/40 to-black/70" />
+  </div>
+  
+  <div className="relative z-10 text-center text-white max-w-4xl px-6">
+    <div className="inline-flex items-center bg-burgundy-600/80 backdrop-blur-sm px-4 py-2 rounded-full text-sm mb-4">
+      ✨ Expert Guide • 12 min read • 12,000+ readers
+    </div>
+    
+    <h1 className="font-serif text-5xl md:text-7xl font-bold mb-6 animate-fade-in">
+      Complete Nail Care Guide
+    </h1>
+    
+    <p className="text-xl md:text-2xl font-light mb-8 text-gray-100">
+      Science-backed techniques for healthier, stronger nails
+    </p>
+    
+    <div className="flex justify-center gap-4">
+      <a href="#content" className="bg-burgundy-600 hover:bg-burgundy-700 px-8 py-4 rounded-full font-semibold transition-all transform hover:scale-105 shadow-xl">
+        Start Reading
+      </a>
+      <button className="glass-card px-8 py-4 rounded-full font-semibold hover:bg-white/20 transition-all">
+        Save for Later
+      </button>
+    </div>
+  </div>
+  
+  <div className="absolute bottom-8 left-1/2 -translate-x-1/2 animate-bounce">
+    <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 14l-7 7m0 0l-7-7m7 7V3" />
+    </svg>
+  </div>
+</section>
+```
+
+### Interactive Callout Box (4 Variations)
+```tsx
+// Pro Tip
+<div className="bg-gradient-to-br from-burgundy-50 to-pink-50 rounded-2xl p-8 border-l-4 border-burgundy-600 my-8">
+  <div className="flex items-start gap-4">
+    <div className="w-12 h-12 bg-burgundy-600 rounded-xl flex items-center justify-center flex-shrink-0">
+      <span className="text-2xl">💡</span>
+    </div>
+    <div>
+      <h4 className="font-bold text-gray-900 mb-2 text-lg">Pro Tip</h4>
+      <p className="text-gray-700">
+        Professional nail technicians recommend applying cuticle oil before bed 
+        for maximum absorption. This simple habit can transform nail health in 2 weeks.
+      </p>
+    </div>
+  </div>
+</div>
+
+// Scientific Fact
+<div className="bg-gradient-to-br from-blue-50 to-indigo-50 rounded-2xl p-8 border-l-4 border-blue-600 my-8">
+  <div className="flex items-start gap-4">
+    <div className="w-12 h-12 bg-blue-600 rounded-xl flex items-center justify-center flex-shrink-0">
+      <span className="text-2xl">🔬</span>
+    </div>
+    <div>
+      <h4 className="font-bold text-gray-900 mb-2 text-lg">Scientific Fact</h4>
+      <p className="text-gray-700">
+        Nails grow at an average rate of 3.5mm per month. Proper nutrition with biotin 
+        and protein can increase growth rate by 25% according to dermatology studies.
+      </p>
+    </div>
+  </div>
+</div>
+
+// Warning/Caution
+<div className="bg-gradient-to-br from-red-50 to-orange-50 rounded-2xl p-8 border-l-4 border-red-600 my-8">
+  <div className="flex items-start gap-4">
+    <div className="w-12 h-12 bg-red-600 rounded-xl flex items-center justify-center flex-shrink-0">
+      <span className="text-2xl">⚠️</span>
+    </div>
+    <div>
+      <h4 className="font-bold text-gray-900 mb-2 text-lg">Important Warning</h4>
+      <p className="text-gray-700">
+        Never cut your cuticles with scissors or nippers. This can cause infections 
+        and permanent damage. Gently push back with a wooden stick instead.
+      </p>
+    </div>
+  </div>
+</div>
+
+// Quick Summary
+<div className="bg-gradient-to-br from-green-50 to-teal-50 rounded-2xl p-8 border-l-4 border-green-600 my-8">
+  <div className="flex items-start gap-4">
+    <div className="w-12 h-12 bg-green-600 rounded-xl flex items-center justify-center flex-shrink-0">
+      <span className="text-2xl">✅</span>
+    </div>
+    <div>
+      <h4 className="font-bold text-gray-900 mb-2 text-lg">Quick Takeaway</h4>
+      <p className="text-gray-700">
+        The 3 essentials for healthy nails: hydrate cuticles daily, file in one direction, 
+        and use a strengthening base coat before color.
+      </p>
+    </div>
+  </div>
+</div>
+```
+
+### FAQ Accordion
+```tsx
+<div className="space-y-4">
+  {faqs.map((faq, index) => (
+    <details key={index} className="group bg-white rounded-xl border border-gray-200 overflow-hidden hover:border-burgundy-300 transition-colors">
+      <summary className="cursor-pointer px-6 py-5 flex justify-between items-center touch-target">
+        <h3 className="font-semibold text-gray-900 pr-4">{faq.question}</h3>
+        <svg className="w-5 h-5 text-burgundy-600 transform group-open:rotate-45 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 4v16m8-8H4" />
+        </svg>
+      </summary>
+      <div className="px-6 pb-5 text-gray-600 leading-relaxed">
+        {faq.answer}
+      </div>
+    </details>
+  ))}
+</div>
+```
+
+### Step-by-Step Guide (HowTo Schema)
+```tsx
+<div className="space-y-8">
+  {steps.map((step, index) => (
+    <div key={index} className="flex gap-6 items-start">
+      <div className="w-12 h-12 bg-gradient-to-br from-burgundy-600 to-pink-600 rounded-full flex items-center justify-center text-white font-bold text-xl flex-shrink-0">
+        {index + 1}
+      </div>
+      <div className="flex-1">
+        <h3 className="text-xl font-bold text-gray-900 mb-3">{step.title}</h3>
+        <p className="text-gray-600 mb-4 leading-relaxed">{step.description}</p>
+        {step.image && (
+          <img 
+            src={step.image} 
+            alt={`Step ${index + 1}: ${step.title} for nail care technique`}
+            width="1200"
+            height="800"
+            className="rounded-xl shadow-lg w-full max-w-md"
+            loading="lazy"
+          />
+        )}
+        {step.tip && (
+          <div className="mt-4 bg-cream-100 p-4 rounded-lg border-l-4 border-burgundy-400">
+            <p className="text-sm text-gray-700"><strong>💡 Tip:</strong> {step.tip}</p>
+          </div>
+        )}
+      </div>
+    </div>
+  ))}
+</div>
+```
+
+### Image Gallery (Touch-Enabled)
+```tsx
+<div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+  {images.map((image, index) => (
+    <div key={index} className="group relative aspect-square overflow-hidden rounded-xl cursor-pointer" onClick={() => openLightbox(index)}>
+      <img 
+        src={image.src} 
+        alt={image.alt}
+        width="1200"
+        height="800"
+        className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
+        loading="lazy"
+      />
+      <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-4">
+        <p className="text-white text-sm font-medium">{image.caption}</p>
+      </div>
+    </div>
+  ))}
+</div>
+```
+
+### Stats Bar
+```tsx
+<div className="grid grid-cols-1 md:grid-cols-3 gap-6 my-12">
+  <div className="glass-card p-6 rounded-2xl text-center">
+    <div className="w-16 h-16 bg-burgundy-600 rounded-full flex items-center justify-center mx-auto mb-4">
+      <span className="text-3xl">💅</span>
+    </div>
+    <div className="text-3xl font-bold text-burgundy-600 mb-2">85%</div>
+    <p className="text-gray-600 text-sm">Of women report stronger nails in 2 weeks</p>
+    <p className="text-xs text-gray-400 mt-2">Source: Dermatology Journal 2024</p>
+  </div>
+  <div className="glass-card p-6 rounded-2xl text-center">
+    <div className="w-16 h-16 bg-pink-600 rounded-full flex items-center justify-center mx-auto mb-4">
+      <span className="text-3xl">⏱️</span>
+    </div>
+    <div className="text-3xl font-bold text-pink-600 mb-2">3.5mm</div>
+    <p className="text-gray-600 text-sm">Average monthly nail growth rate</p>
+    <p className="text-xs text-gray-400 mt-2">Source: Medical Research 2024</p>
+  </div>
+  <div className="glass-card p-6 rounded-2xl text-center">
+    <div className="w-16 h-16 bg-purple-600 rounded-full flex items-center justify-center mx-auto mb-4">
+      <span className="text-3xl">✨</span>
+    </div>
+    <div className="text-3xl font-bold text-purple-600 mb-2">92%</div>
+    <p className="text-gray-600 text-sm">Success rate with    proper cuticle care routine
+    <p className="text-xs text-gray-400 mt-2">Source: Beauty Industry Survey 2024</p>
+  </div>
+</div>
+
+🔧 IMPLEMENTATION PHASES
+PRE-PHASE: Competitive Research ✅
+Before Phase 1, Agent Must Complete:
+
+SERP Analysis for Primary Keyword
+
+Analyze top 5 ranking pages
+Extract metrics (word count, images, H2s, keyword density)
+Identify content gaps and weaknesses
+Note SERP features present (PAA, Featured Snippet, etc.)
+
+
+Competitive Benchmark Document
+
+Average word count → Our target (+15-25%)
+Average images → Our target (+2-3)
+Common H2 topics → Our H2 plan
+Content gaps → Our unique sections
+User questions unanswered → Our FAQ seeds
+
+
+Deliver to User:
+
+Competitive analysis summary (bullets, <400 words)
+Recommended word count target
+Recommended image count
+H2 section outline (based on gaps + competition)
+Unique angle recommendation
+
+
+
+User Reviews & Approves Before Phase 1 Proceeds
+
+Phase 1: File Preparation ✅
+Agent receives:
+
+Topic page.tsx file (current state)
+Keyword list (primary + 5-10 cluster + 15-20 semantic + 10+ long-tail)
+Voice search queries (5-10 questions)
+Semantic keyword clusters
+Target word count (from competitive analysis)
+Number of images required
+Competitive analysis results
+Current globals.css, tailwind.config.js
+Example blog post for reference (design inspiration only)
+
+Agent provides:
+
+Updated topic page.tsx with new content structure
+Complete content outline (H2/H3 hierarchy)
+List of new components needed (if any)
+Image specifications document (filenames, alt text, descriptions)
+Internal linking recommendations (5+ links with anchor text)
+External authority sources to cite (3-4 sources)
+
+
+Phase 2: Schema Implementation ✅
+Agent receives:
+
+src/lib/generateSchemas.ts
+Approved content from Phase 1
+
+Agent provides:
+
+Schema generation functions for topic
+JSON-LD structured data blocks (all 8 schemas)
+FAQ items array (10+ questions with 40-60 word answers)
+Validation test results (Google Rich Results Test screenshots/URLs)
+Schema size verification (<10KB)
+
+
+Phase 3: Component Creation 🔨
+Agent receives:
+
+Component requirements from Phase 1
+Design system (Tailwind CORE classes only)
+Accessibility requirements (ARIA labels, keyboard nav)
+Mobile-first breakpoints
+
+Agent provides:
+
+New component files (TSX) if needed
+Component documentation with props
+Usage examples with code snippets
+Accessibility notes (screen reader support)
+
+
+Phase 4: Integration & Testing 🧪
+Agent receives:
+
+All previous phase outputs
+Layout.tsx for metadata updates
+Current site structure
+
+Agent provides:
+
+Fully integrated page file (complete page.tsx)
+Metadata configuration (title, description, keywords)
+Breadcrumb schema integration
+Pre-deployment checklist completed
+Mobile responsive verification notes
+
+
+Phase 5: Deployment Verification ✅
+Agent receives:
+
+Deployed URL (staging environment)
+
+Agent validates:
+
+ Lighthouse scores (mobile 90+, desktop 95+)
+ Schema validation (Rich Results Test - all passing)
+ Core Web Vitals (LCP <2.5s, FID <200ms, CLS <0.1)
+ Mobile responsiveness (375px, 768px, 1440px tested)
+ Internal links working (no 404s)
+ Images loading correctly (WebP with fallbacks)
+ No console errors or warnings
+ Accessibility (WAVE tool score 100)
+ SEO validation (all meta tags present)
+ Keyword integration natural (not stuffed)
+
+
+📊 SUCCESS METRICS
+Primary KPIs:
+
+Bounce Rate: <25% (target <15%)
+Avg. Time on Page: >5 minutes
+Pages per Session: >2.5
+Mobile LCP: <2.5s
+Schema Rich Results: 100% eligibility
+Organic Traffic: +30% within 3 months
+
+Secondary KPIs:
+
+Scroll Depth: 75%+ reach end
+Social Shares: >50/month per topic
+Internal Link CTR: >5%
+Email Signups: >3% conversion
+Return Visitor Rate: >30%
+Featured Snippet Wins: 1+ per topic
+Image Search Traffic: +20%
+
+
+🚨 CRITICAL RULES
+CONTENT WRITING RULES (Blog Generator Standards)
+Paragraph Structure:
+
+✅ 2-3 sentences maximum per paragraph (mobile-friendly)
+✅ One idea per paragraph
+✅ Transition words between paragraphs (30% of sentences)
+✅ Short sentences: 15-20 words average
+✅ Active voice: 80%+ of sentences
+✅ Vary sentence length (mix short & medium)
+
+Readability Targets:
+
+Flesch Reading Ease: 60-70 (8th-9th grade level)
+Avoid jargon without explanation
+Use conversational tone (not robotic)
+Break complex ideas into steps
+Use analogies for technical concepts
+
+DO:
+✅ Use research-provided keywords naturally
+✅ Implement ALL 8 required schemas (JSON-LD only)
+✅ Test on real mobile devices
+✅ Follow Tailwind's CORE utility classes only
+✅ Optimize every image (<100KB hero, <80KB content)
+✅ Create accessible components (ARIA labels, keyboard nav)
+✅ Double-check all internal links (no 404s)
+✅ Use semantic HTML5 tags (<article>, <section>, <nav>)
+✅ Add loading states for async content
+✅ Include transition words (30%+ sentences)
+✅ Cite sources naturally in content
+✅ Update date prominently displayed
+DON'T:
+❌ Use localStorage/sessionStorage (not supported in Claude.ai)
+❌ Use custom Tailwind classes (compiler unavailable)
+❌ Exceed 10KB schema per page
+❌ Markup invisible content in schema
+❌ Use Microdata/RDFa (JSON-LD only)
+❌ Ignore mobile breakpoints
+❌ Hard-code content (use props/data)
+❌ Skip alt text on images
+❌ Create >4 nesting levels in components
+❌ Keyword stuff (sacrifice readability)
+❌ Use generic anchor text ("click here")
+
+📝 ENHANCED INPUT FORMAT FOR EACH TOPIC
+markdown## TOPIC: [Topic Name]
+
+### Competitive Analysis Results
+**Top 5 Competitor Metrics:**
+- Average word count: [number]
+- Average images: [number]
+- Average H2 sections: [number]
+- Common H2 topics: [list]
+- SERP features: [PAA, Featured Snippet, etc.]
+- Average keyword density: [percentage]
+
+**Content Gaps Identified:**
+1. [Gap 1 - specific opportunity]
+2. [Gap 2 - missing subtopic]
+3. [Gap 3 - outdated information]
+4. [Gap 4 - unanswered question]
+5. [Gap 5 - weak competitor section]
+
+### Keywords Research (Required)
+**Primary Keyword:** [keyword] (search volume: X, difficulty: Y, intent: informational/commercial)
+
+**Cluster Keywords (5-10 required):**
+1. [keyword] (volume, difficulty)
+2. [keyword] (volume, difficulty)
+3. [keyword] (volume, difficulty)
+4. [keyword] (volume, difficulty)
+5. [keyword] (volume, difficulty)
+[...more]
+
+**Semantic/LSI Keywords (15-20 required):**
+- [related term 1]
+- [related term 2]
+- [synonym 1]
+- [co-occurring term 1]
+- [entity name 1]
+- [related concept 1]
+[...15-20 total]
+
+**Long-Tail Keywords (10+ required):**
+1. "how to [action]" (volume, difficulty)
+2. "best [specific thing] for [use case]" (volume, difficulty)
+3. "[problem] solution" (volume, difficulty)
+4. "what is [concept]" (volume, difficulty)
+5. "[comparison] vs [comparison]" (volume, difficulty)
+[...10+ total]
+
+**Voice Search Queries (10+ required for FAQ):**
+1. "How do I..."
+2. "What are the best..."
+3. "Can you..."
+4. "Why does..."
+5. "When should I..."
+6. "Where can I find..."
+7. "Which is better..."
+8. "Is it safe to..."
+9. "How long does it take..."
+10. "What causes..."
+[...10+ total]
+
+**Topical Map Context:**
+- Position: [Pillar/Cluster/Standalone]
+- Parent Topic: [slug if cluster, or "none"]
+- Related Topics: [list slugs]
+- Avoid Keywords: [other topics' primary keywords - maintain topical boundaries]
+
+### Content Requirements
+- **Word Count Target:** [X words - based on competitor average × 1.15-1.25]
+- **Images Needed:** [X images - competitor average + 2-3]
+- **Image Types:**
+  - Hero: 1 (1200x630px)
+  - Content: [X] (1200x800px each)
+  - Specify: [diagrams, before/after, product shots, technique demos, etc.]
+- **FAQs:** Minimum 10 questions (from voice search queries)
+- **Internal Links:** 
+  - Parent topic: [slug] - Anchor: "[natural phrase]"
+  - Related topic 1: [slug] - Anchor: "[natural phrase]"
+  - Related topic 2: [slug] - Anchor: "[natural phrase]"
+  - Blog post 1: [slug] - Anchor: "[natural phrase]"
+  - Blog post 2: [slug] - Anchor: "[natural phrase]"
+- **External Authority Links (3-4 required):**
+  - Source 1: [URL] - Context: [what to cite]
+  - Source 2: [URL] - Context: [what to cite]
+  - Source 3: [URL] - Context: [what to cite]
+  - Source 4: [URL] - Context: [what to cite]
+
+### Special Features Needed
+- [ ] Step-by-step guide (HowTo schema with 8-12 steps)
+- [ ] Comparison table
+- [ ] Interactive accordion FAQs
+- [ ] Color palette examples (for skin-tones topic)
+- [ ] Before/after visual comparisons
+- [ ] Product recommendations with affiliate links
+- [ ] Video embed (if available)
+- [ ] Tool/technique illustrations
+- [ ] Stats bar with research citations
+
+### Content Gaps to Address (From Analysis)
+1. [Gap from competitor 1 - how we'll address it]
+2. [Gap from competitor 2 - our unique approach]
+3. [Question no competitor answers - our answer]
+4. [Outdated info to update - current 2025 data]
+5. [Missing subtopic - our comprehensive coverage]
+
+### Unique Angle & Differentiation
+**Our Unique Value Proposition:**
+[How will this topic page differentiate from competitors? What makes our approach better/different?]
+
+**Target Differentiators:**
+- [Differentiator 1: e.g., "More visual examples than any competitor"]
+- [Differentiator 2: e.g., "Gen-Z design with interactive elements"]
+- [Differentiator 3: e.g., "Science-backed with dermatology citations"]
+
+### CTA Strategy
+- **Primary CTA:** [action - e.g., "Download Free Guide", "Shop Curated Products"]
+- **Placement:** [Hero, mid-content H2 section, end of page]
+- **Secondary CTA:** [action - e.g., "Read Related Topics", "Join Newsletter"]
+- **Placement:** [Related topics section, sidebar]
+
+### Voice & Tone Guidelines
+- **Style:** [Professional but accessible / Enthusiastic and friendly / Educational expert / etc.]
+- **Audience:** [Demographics - age 18-35, nail enthusiasts, DIY beauty lovers, beginners to intermediate]
+- **Reading Level:** [8th-9th grade / conversational / avoid jargon]
+- **Brand Voice Notes:** 
+  - Use "we" and "you" (conversational)
+  - Encouraging, not prescriptive
+  - Science-backed but not clinical
+  - Trendy but timeless advice
+  - Empowering and confidence-building
+
+🌐 GEO OPTIMIZATION (Global Targeting)
+Language & Localization:
+
+Primary: en-US
+Use inclusive, globally understood terminology
+Avoid region-specific slang (use "nail polish" not "nail varnish")
+Product recommendations: Include international brands
+Currency: USD with note "prices may vary by region"
+Measurements: Include both metric and imperial
+
+Hreflang Tags: (Add to Layout.tsx or page metadata)
+tsx<link rel="alternate" hreflang="en" href="https://mirelleinspo.com/topics/[topic]" />
+<link rel="alternate" hreflang="en-US" href="https://mirelleinspo.com/topics/[topic]" />
+<link rel="alternate" hreflang="en-GB" href="https://mirelleinspo.com/topics/[topic]" />
+<link rel="alternate" hreflang="en-CA" href="https://mirelleinspo.com/topics/[topic]" />
+<link rel="alternate" hreflang="en-AU" href="https://mirelleinspo.com/topics/[topic]" />
+<link rel="alternate" hreflang="x-default" href="https://mirelleinspo.com/topics/[topic]" />
+```
+
+**International SEO:**
+- Use schema.org/Place with "Worldwide" coverage
+- Include metric + imperial measurements (e.g., "3.5mm / 0.14 inches")
+- Reference global events/seasons contextually
+- Cite international studies/sources
+- Time zones: Use "ET" or specify UTC offset
+
+---
+
+## 🎨 DESIGN SYSTEM REFERENCE
+
+### Color Palette (Tailwind Classes)
+```
+Primary: burgundy-600 (#8b1f42) - Main brand color
+Accent: burgundy-700 (#cc2d5c) - Hover states, emphasis
+Light: burgundy-50 - Backgrounds, soft highlights
+Background: cream-100 (#fcfaf5) - Page background
+Text Primary: gray-900 - Body text
+Text Secondary: gray-600 - Muted text, captions
+Border: cream-400 - Dividers, card borders
+Success: green-500 - Positive actions, confirmations
+Warning: amber-500 - Cautions, alerts
+Error: red-500 - Errors, critical warnings
+Info: blue-500 - Informational callouts
+```
+
+### Typography Scale
+```
+H1: text-5xl md:text-7xl font-serif font-bold
+H2: text-3xl md:text-5xl font-serif font-bold
+H3: text-2xl md:text-3xl font-serif font-semibold
+H4: text-xl md:text-2xl font-sans font-semibold
+Body Large: text-lg leading-relaxed
+Body: text-base leading-relaxed
+Body Small: text-sm leading-relaxed
+Caption: text-xs text-gray-500
+```
+
+### Spacing System
+```
+Section Padding: py-16 md:py-24
+Container: max-w-7xl mx-auto px-4 sm:px-6 lg:px-8
+Card Padding: p-6 md:p-8
+Element Gap: gap-6 md:gap-8
+Margin Bottom: mb-8 md:mb-12
+Component Patterns
+tsx// Glass Card
+className="glass-card p-6 rounded-2xl backdrop-blur-md"
+
+// Gradient Button (Primary CTA)
+className="bg-gradient-to-r from-burgundy-600 to-pink-600 hover:from-burgundy-700 hover:to-pink-700 text-white px-8 py-4 rounded-full font-semibold transition-all transform hover:scale-105 shadow-xl"
+
+// Secondary Button
+className="glass-card px-8 py-4 rounded-full font-semibold hover:bg-white/20 transition-all border border-gray-200"
+
+// Section Heading
+className="font-serif text-3xl md:text-5xl font-bold text-gray-900 mb-8 text-center"
+
+// Subsection Heading
+className="font-serif text-2xl md:text-3xl font-semibold text-gray-900 mb-6"
+
+// Callout Box (Pro Tip)
+className="bg-gradient-to-br from-burgundy-50 to-pink-50 rounded-2xl p-8 border-l-4 border-burgundy-600"
+
+// Callout Box (Scientific Fact)
+className="bg-gradient-to-br from-blue-50 to-indigo-50 rounded-2xl p-8 border-l-4 border-blue-600"
+
+// Internal Link
+className="text-blue-600 hover:text-blue-800 underline"
+
+// External Link
+className="text-blue-600 hover:text-blue-800 underline" target="_blank" rel="noopener"
+
+// Horizontal Rule
+<hr className="my-12 border-cream-400" />
+
+📋 ADVANCED SEO VALIDATION CHECKLIST
+Keyword Optimization Validation:
+
+ Primary keyword in H1 (once, naturally)
+ Primary keyword in first 100 words
+ Primary keyword in URL slug
+ Primary keyword in meta description
+ Primary keyword in hero alt text
+ 5-8 cluster keywords distributed naturally (40% in headings)
+ 15-20 semantic/LSI keywords used throughout
+ Long-tail keywords as H3 subheadings
+ No keyword stuffing (reads naturally to humans)
+ Keyword variations used (not exact repeats)
+ Entity-based language (proper nouns, brands)
+
+Image SEO Validation:
+
+ All filenames: lowercase, hyphens, descriptive
+ All filenames include relevant keywords (1-2 per filename)
+ No generic names (IMG_001, image1, photo.jpg, etc.)
+ Hero image: [slug]-hero.webp format
+ Content images: [slug]-[descriptor]-[n].webp format
+ Each image has UNIQUE alt text (no duplicates across page)
+ All alt text under 125 characters strict
+ All alt text includes unique long-tail keywords
+ No alt text starts with "image of" or "picture of"
+ Alt text descriptive and context-relevant
+ First 3 content images = gallery images (schema)
+ All images <100KB (hero) or <80KB (content)
+ WebP format with JPG fallback
+ Lazy loading on below-fold images
+ Width/height attributes specified
+
+Content Structure Validation:
+
+ Word count matches competitive target (15-25% above average)
+ 8-12 H2 major sections
+ H2 headings answer user questions (40% from gaps analysis)
+ H3 subheadings use long-tail keywords naturally
+ Paragraphs 2-3 sentences max (mobile-friendly)
+ Average sentence length 15-20 words
+ Transition words in 30%+ sentences
+ Active voice in 80%+ sentences
+ Flesch Reading Ease: 60-70
+ No walls of text (abundant white space)
+ Horizontal rules between major sections
+ Content addresses all identified gaps from competitors
+
+Link Structure Validation:
+
+ 5+ internal links (varied anchor text)
+ Link to parent topic (1)
+ Link to related topics (2-3)
+ Link to supporting blog posts (1-2)
+ 3-4+ external authority links (studies, brands, experts)
+ External links open in new tab (target="_blank" rel="noopener")
+ All links include proper Tailwind classes
+ No broken links (404 checker)
+ Contextually relevant link placement (natural flow)
+ Anchor text variations (exact, partial, branded)
+
+FAQ Optimization Validation:
+
+ 10+ FAQ questions minimum
+ Questions use exact voice search phrasing
+ Questions target unique long-tail keywords
+ Answers 40-60 words each
+ Answers start with direct response (sentence 1)
+ No apostrophes in FAQ strings (schema compatibility)
+ FAQ section uses accordion component
+ Questions address content gaps from competitors
+ Conversational, natural language
+
+Schema Readiness:
+
+ All 8 required schemas implemented
+ JSON-LD format only (not Microdata/RDFa)
+ FAQ items array populated (10+ questions)
+ BreadcrumbList includes full path
+ ImageObject for featured/gallery images
+ HowTo schema if tutorial present (with steps array)
+ Article schema with author, datePublished, dateModified
+ Organization schema linked
+ Total schema size <10KB
+ Validated in Google Rich Results Test (all passing)
+
+Competitive Edge Validation:
+
+ Word count exceeds competitor average by 15-25%
+ More images than competitor average (+2-3 minimum)
+ Addresses all content gaps identified in analysis
+ Unique angle clearly differentiated
+ More comprehensive than any single competitor
+ Updated/fresh content (2025 references, current trends)
+ Mobile experience superior to competitors
+ Better visual design (Gen-Z optimized)
+ Interactive elements competitors lack
+ Faster load times than competitors
+
+E-E-A-T Signals Validation:
+
+ Author credibility statement present
+ Updated date visible ("Updated: November 2025")
+ 3-4+ external authority citations
+ Specific studies cited with years
+ Expert techniques referenced
+ Testing/experience shown ("we tested 15 products")
+ Statistics from research included
+ Medical/dermatology sources linked (where relevant)
+ About section (3 lines + link to /about page)
+
+Mobile Optimization Validation:
+
+ Touch targets 48x48px minimum
+ Readable text (16px minimum)
+ No horizontal scrolling
+ Collapsible sections on mobile
+ Sticky TOC hidden on mobile, visible on desktop
+ Floating CTAs visible on mobile
+ Images responsive (srcset if applicable)
+ Fast LCP (<2.5s on mobile)
+ No layout shift (CLS <0.1)
+
+
+🚀 READY TO START?
+Confirm you have:
+
+✅ Read entire prompt thoroughly (all sections)
+✅ Understand design philosophy (Gen-Z beauty trends, glassmorphism, dopamine colors)
+✅ Understand schema requirements (8 types, JSON-LD only, <10KB)
+✅ Understand mobile-first approach (Core Web Vitals targets)
+✅ Understand phased implementation (Pre-Phase → Phase 5)
+✅ Understand no localStorage/custom Tailwind rule
+✅ Understand competitive analysis requirement (MANDATORY first step)
+✅ Understand keyword strategy (primary + cluster + semantic + long-tail)
+✅ Understand image SEO (filenames, alt text, optimization)
+✅ Understand content quality standards (readability, structure, E-E-A-T)
+
+Reply with:
+"READY TO IMPLEMENT: [Topic Name]
+Please provide:
+
+Primary keyword for SERP analysis
+Once analysis complete, full keyword research package
+Competitive benchmark approval
+Then I'll proceed with Phase 1"
+
+Implementation Flow:
+
+Agent conducts SERP analysis → Presents findings (<400 words)
+User approves strategy → Provides full keyword research package
+Agent creates content → Phase 1 deliverables
+User reviews → Approves or requests changes
+Agent proceeds → Phases 2-5 sequentially
+Final deployment → Validation checklist completed
+
+
+📚 REFERENCE DOCUMENTS
+Example Blog Post Structure: (For design inspiration only - NOT content approach)
+
+See existing blog posts for component usage
+Note: Topics have DIFFERENT design language (more Gen-Z, interactive)
+Reference: glassmorphism, micro-animations, collapsible sections
+
+Blog Generator Prompt: (For SEO content approach)
+
+Keyword density strategy
+Natural integration patterns
+Image SEO (filenames, alt text)
+FAQ structure
+E-E-A-T signals
+Competitive gap analysis
+
+Current Mirellé Files:
+
+src/app/layout.tsx - Metadata structure
+src/app/globals.css - Design system CSS
+tailwind.config.js - Color palette, typography
+src/lib/generateSchemas.ts - Schema generation functions
+src/types/blog.ts - Type definitions
+
+
+END OF MASTER IMPLEMENTATION PROMPT v2.0
