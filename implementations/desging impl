@@ -1,0 +1,2321 @@
+# 🎨 MASTER IMPLEMENTATION PROMPT: MIRELLÉ INSPO GALLERY TRANSFORMATION v1.0
+
+## 📋 PROJECT OVERVIEW
+Transform Mirellé's Inspo section into a premium, Pinterest-style visual discovery platform that achieves **<15% BOUNCE RATE** through exceptional masonry gallery design, strategic content placement (800+ words per page), and advanced schema implementation. This is a **visual-first showcase** with strategically hidden SEO content that ranks for competitive nail design keywords while maintaining a premium, non-text-heavy aesthetic.
+
+**Mission:** Create an overwhelming, premium visual experience that keeps users engaged for 5+ minutes while achieving top rankings for nail design inspiration keywords.
+
+---
+
+## 🔬 RESEARCH-BACKED DESIGN FOUNDATION
+
+### **Visual Discovery Psychology (2025 Standards)**
+
+**1. Masonry Layout Engagement**
+- Pinterest's masonry grid drives 47% higher engagement than traditional grids by creating natural scanning patterns
+- **Dynamic height variation** reduces visual monotony and encourages 75%+ scroll depth
+- **Waterfall effect** creates anticipation ("what's next?") keeping users scrolling
+- **Asymmetric balance** feels organic and premium vs rigid grids
+
+**2. Premium Visual Hierarchy**
+- Visual aesthetics (simplicity, self-similarity, symmetry, contrast) operate as subliminal factors driving luxury brand engagement
+- **Hero Impact:** 70vh minimum for immediate visual immersion
+- **Progressive Disclosure:** Content reveals on scroll (never all at once)
+- **Image-to-White-Space Ratio:** 60% visuals, 40% breathing room prevents overwhelm
+- Clear visuals reduce cognitive load, allowing users to focus on engagement rather than deciphering content
+
+**3. Bounce Rate Reduction Strategy**
+- Interactive elements transform static websites into engaging experiences, significantly improving user engagement and reducing bounce rates
+- Visual elements aren't just decorative—they're essential components of effective communication that can significantly reduce bounce rates
+- Interactive elements that boost dwell time combined with conversion-focused design can triple engagement
+- **Target Metrics:** <15% bounce rate, 5+ minute dwell time, 75%+ scroll depth
+
+**4. 2025 UX Design Trends**
+- Glassmorphism with translucent surfaces and soft shadows creates polished, futuristic look maintaining sleek aesthetic
+- Strategic color choices increase CTA clicks by up to 34%
+- Microinteractions guide users subtly while adding personality to design
+- **Dopamine Design:** Bright, saturated accent colors for interactive elements
+- **Kinetic Typography:** Animated text for CTAs
+
+---
+
+## 🎯 SEO STRATEGY: HIDDEN POWER
+
+### **Content Placement Philosophy**
+**800+ words per page BUT visually hidden/dispersed:**
+- **NOT text-heavy pages** - content is strategically placed in:
+  - Collapsible "About This Style" accordions (200-250 words)
+  - Design Detail modals/overlays (150-200 words per modal)
+  - FAQs at bottom (300-400 words total, accordion format)
+  - Image alt texts (50-100 words across all images)
+  - Meta descriptions & schema (100+ words)
+
+**Visual Result:** User sees 90% images, 10% text - but crawlers see 800+ words of SEO content.
+
+### **Image SEO Strategy (CRITICAL)**
+
+Google extracts information about the subject matter of images from content of the page, including captions and image titles. Images should be placed near relevant text and on pages relevant to image subject matter
+
+**Image Filename Optimization:**
+```
+Format: [category-slug]-[design-style]-[color/feature]-[number].webp
+
+✅ GOOD Examples:
+- french-tips-classic-white-elegant-01.webp
+- ombre-nails-purple-pink-gradient-03.webp
+- chrome-nails-silver-mirror-finish-05.webp
+- seasonal-winter-snowflake-design-02.webp
+
+❌ BAD Examples:
+- IMG_0234.jpg
+- nail-design-1.png
+- image.webp
+```
+
+**Filename Rules (STRICT):**
+1. Lowercase only
+2. Hyphens (not underscores)
+3. Include 2-3 relevant keywords
+4. Descriptive of visual content
+5. Unique across entire site
+6. 4-7 words maximum
+7. No special characters
+
+**Alt Text Formula:**
+```
+Format: [Long-tail keyword] + [specific visual description] (under 125 chars)
+
+Hero Image:
+"[Primary category keyword] inspiration featuring [style details]"
+Example: "French tip nail designs inspiration featuring elegant white tips with gold accent variations"
+
+Gallery Images (MUST BE UNIQUE per image):
+Image 1: "Classic french manicure with thin white tips perfect for weddings"
+Image 2: "Modern french nail art featuring reverse tips in nude tones"
+Image 3: "Colored french tips in pastel pink for spring nail inspiration"
+Image 4: "Almond shaped nails with gold glitter french tip design"
+```
+
+**Alt Text Rules (MANDATORY):**
+- ✅ Start directly with description (NO "image of" prefix)
+- ✅ Under 125 characters strict
+- ✅ Include unique long-tail keyword per image
+- ✅ Describe what's actually visible
+- ✅ Voice search friendly (conversational)
+- ✅ Context-relevant to design category
+- ❌ Never repeat alt text across images
+- ❌ No keyword stuffing
+
+**Technical Specs:**
+- Hero: 1200x630px, WebP/JPG, <100KB
+- Gallery: Variable heights (800-1200px), WebP, <80KB each
+- Lazy loading: `loading="lazy"` on all below-fold
+- Responsive: Include width/height attributes
+
+ImageGallery schema with associatedMedia array containing ImageObject for each image enables images to appear in Google Image search results and rich snippets
+
+---
+
+## 📐 SCHEMA IMPLEMENTATION: COMPREHENSIVE
+
+### **Required Schemas (8 Types - ALL PAGES)**
+
+ImageGallery schema inherits from CollectionPage and MediaGallery, used to represent collections of images with hasPart property for individual ImageObject items
+
+**1. CollectionPage Schema** (Primary)
+```json
+{
+  "@context": "https://schema.org",
+  "@type": "CollectionPage",
+  "name": "French Tip Nail Designs - Premium Inspiration Gallery",
+  "description": "Curated collection of 40+ french tip nail designs...",
+  "url": "https://mirelleinspo.com/inspo/french-tips",
+  "image": "https://mirelleinspo.com/images/inspo/french-tips-hero.webp",
+  "about": {
+    "@type": "Thing",
+    "name": "French Tip Nail Art"
+  },
+  "mainEntity": {
+    "@type": "ItemList",
+    "numberOfItems": 42,
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "url": "https://mirelleinspo.com/inspo/french-tips/design-1"
+      }
+      // ... more items
+    ]
+  }
+}
+```
+
+**2. ImageGallery Schema** (Nested within CollectionPage)
+```json
+{
+  "@context": "https://schema.org",
+  "@type": "ImageGallery",
+  "name": "French Tip Nail Designs Collection",
+  "description": "Professional gallery of french tip nail art",
+  "associatedMedia": [
+    {
+      "@type": "ImageObject",
+      "contentUrl": "https://cdn.mirelleinspo.com/french-tips-01.webp",
+      "caption": "Classic french manicure with thin white tips",
+      "thumbnail": "https://cdn.mirelleinspo.com/french-tips-01-thumb.webp",
+      "width": "1200",
+      "height": "800",
+      "encodingFormat": "image/webp"
+    }
+    // ... 40+ images
+  ]
+}
+```
+
+**3. BreadcrumbList Schema**
+```json
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "item": {
+        "@id": "https://mirelleinspo.com/",
+        "name": "Home"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "item": {
+        "@id": "https://mirelleinspo.com/inspo",
+        "name": "Inspiration Gallery"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "item": {
+        "@id": "https://mirelleinspo.com/inspo/french-tips",
+        "name": "French Tips"
+      }
+    }
+  ]
+}
+```
+
+**4. FAQPage Schema**
+```json
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What nail shapes work best for french tips?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Almond, oval, and square shapes showcase french tips beautifully. Almond and oval elongate fingers, while square provides a classic, clean look. Choose based on your natural nail shape and lifestyle."
+      }
+    }
+    // ... 8-10 questions minimum
+  ]
+}
+```
+
+**5. WebPage Schema**
+```json
+{
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "name": "French Tip Nail Designs | Mirellé Inspiration",
+  "description": "Discover 40+ stunning french tip nail designs...",
+  "url": "https://mirelleinspo.com/inspo/french-tips",
+  "primaryImageOfPage": {
+    "@type": "ImageObject",
+    "contentUrl": "https://cdn.mirelleinspo.com/french-tips-hero.webp"
+  },
+  "datePublished": "2025-11-23T08:00:00+00:00",
+  "dateModified": "2025-11-23T08:00:00+00:00",
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "Mirellé"
+  }
+}
+```
+
+**6. Organization Schema** (Site-Wide)
+```json
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Mirellé",
+  "url": "https://mirelleinspo.com",
+  "logo": "https://mirelleinspo.com/logo.png",
+  "sameAs": [
+    "https://www.pinterest.com/mirelle",
+    "https://www.instagram.com/mirelle",
+    "https://twitter.com/mirelle"
+  ]
+}
+```
+
+**7. Article Schema** (For Category Pages)
+```json
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "French Tip Nail Designs: Complete Inspiration Guide",
+  "image": "https://cdn.mirelleinspo.com/french-tips-hero.webp",
+  "author": {
+    "@type": "Organization",
+    "name": "Mirellé Team"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Mirellé",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://mirelleinspo.com/logo.png"
+    }
+  },
+  "datePublished": "2025-11-23T08:00:00+00:00",
+  "dateModified": "2025-11-23T08:00:00+00:00",
+  "mainEntityOfPage": "https://mirelleinspo.com/inspo/french-tips"
+}
+```
+
+**8. ItemList Schema** (For Gallery Grid)
+```json
+{
+  "@context": "https://schema.org",
+  "@type": "ItemList",
+  "name": "French Tip Designs Collection",
+  "numberOfItems": 42,
+  "itemListOrder": "Unordered",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "item": {
+        "@type": "ImageObject",
+        "name": "Classic White French Tips",
+        "contentUrl": "https://cdn.mirelleinspo.com/french-tips-01.webp"
+      }
+    }
+    // ... more items
+  ]
+}
+```
+
+**Schema Rules (CRITICAL):**
+- ✅ JSON-LD format ONLY (not Microdata/RDFa)
+- ✅ All schemas combined <10KB per page
+- ✅ Validate with Google Rich Results Test
+- ✅ Update dateModified on content changes
+- ✅ Never markup invisible content
+- ✅ Link schemas together (mainEntity, isPartOf)
+
+---
+
+## 🎨 DESIGN SYSTEM: PREMIUM AESTHETIC
+
+### **Color Psychology & Palette**
+
+Vibrant, intentional palettes capture attention and reduce bounce rates while strategic color choices increase CTA clicks by up to 34%
+
+**Primary Colors:**
+```
+Burgundy-600: #8b1f42 - Premium brand color, trust & luxury
+Burgundy-700: #cc2d5c - Hover states, emphasis, urgency
+Burgundy-50: #fdf2f4 - Soft backgrounds, subtle highlights
+Cream-100: #fcfaf5 - Page background, warmth & elegance
+Gray-900: #111827 - Primary text, high contrast
+Gray-600: #4b5563 - Secondary text, captions
+```
+
+**Accent Colors (Dopamine Design):**
+```
+Pink-500: #ec4899 - Playful, energetic CTAs
+Purple-600: #9333ea - Luxury, creativity badges
+Blue-500: #3b82f6 - Trust, informational elements
+Green-500: #10b981 - Success states, confirmations
+Gold-400: #fbbf24 - Premium features, VIP indicators
+```
+
+**Glassmorphism Effects:**
+```css
+.glass-card {
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.15);
+}
+
+.glass-dark {
+  background: rgba(0, 0, 0, 0.25);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+```
+
+### **Typography Hierarchy**
+
+```css
+/* Headlines */
+H1: font-family: 'Cormorant Garamond', serif; 
+    font-size: 4.5rem; /* 72px */
+    font-weight: 700;
+    line-height: 1.1;
+
+H2: font-family: 'Cormorant Garamond', serif;
+    font-size: 3rem; /* 48px */
+    font-weight: 600;
+
+H3: font-family: 'Inter', sans-serif;
+    font-size: 1.5rem; /* 24px */
+    font-weight: 600;
+
+/* Body */
+Body: font-family: 'Inter', sans-serif;
+      font-size: 1rem; /* 16px */
+      line-height: 1.6;
+
+Small: font-size: 0.875rem; /* 14px */
+
+Caption: font-size: 0.75rem; /* 12px */
+         letter-spacing: 0.05em;
+```
+
+### **Masonry Layout System**
+
+Native CSS masonry with grid-template-rows: masonry creates gapless Pinterest grids increasing engagement by 30%
+
+**Implementation:**
+```css
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  grid-template-rows: masonry; /* Native masonry - Firefox/Safari */
+  gap: 16px;
+  padding: 24px;
+}
+
+/* Fallback for browsers without masonry support */
+@supports not (grid-template-rows: masonry) {
+  .gallery-grid {
+    columns: 4;
+    column-gap: 16px;
+  }
+  
+  .gallery-item {
+    break-inside: avoid;
+    margin-bottom: 16px;
+  }
+}
+
+/* Responsive breakpoints */
+@media (max-width: 1280px) {
+  .gallery-grid {
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  }
+}
+
+@media (max-width: 768px) {
+  .gallery-grid {
+    grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+    gap: 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  .gallery-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 8px;
+  }
+}
+```
+
+**Image Aspect Ratios (Variable Heights):**
+```
+Small: 200-300px height (20% of gallery)
+Medium: 300-450px height (60% of gallery)
+Large: 450-600px height (20% of gallery)
+
+Mix ratios to create organic waterfall effect
+```
+
+### **Interactive Elements**
+
+Interactive elements invite users to participate rather than passively consume content, significantly improving engagement and reducing bounce rates
+
+**1. Image Hover Effects:**
+```css
+.gallery-item {
+  position: relative;
+  overflow: hidden;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.gallery-item:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+}
+
+.gallery-item img {
+  transition: transform 0.5s ease;
+}
+
+.gallery-item:hover img {
+  transform: scale(1.05);
+}
+
+/* Overlay with design details */
+.gallery-item-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(0,0,0,0.8), transparent);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 20px;
+}
+
+.gallery-item:hover .gallery-item-overlay {
+  opacity: 1;
+}
+
+.overlay-tags {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.tag-chip {
+  background: rgba(255,255,255,0.2);
+  backdrop-filter: blur(10px);
+  padding: 4px 12px;
+  border-radius: 16px;
+  font-size: 12px;
+  color: white;
+  font-weight: 500;
+}
+```
+
+**2. Like/Save Heart Animation:**
+```css
+.heart-button {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  width: 40px;
+  height: 40px;
+  background: rgba(255,255,255,0.9);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  z-index: 10;
+}
+
+.heart-button:hover {
+  transform: scale(1.1);
+  background: rgba(255,255,255,1);
+}
+
+.heart-button.liked {
+  background: #ec4899;
+  animation: heartBeat 0.5s ease;
+}
+
+@keyframes heartBeat {
+  0%, 100% { transform: scale(1); }
+  25% { transform: scale(1.3); }
+  50% { transform: scale(1.1); }
+}
+```
+
+**3. Filter Chips (Active State):**
+```css
+.filter-chip {
+  padding: 10px 20px;
+  border-radius: 24px;
+  background: white;
+  border: 2px solid #e5e7eb;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  font-weight: 500;
+}
+
+.filter-chip:hover {
+  border-color: #8b1f42;
+  transform: translateY(-2px);
+}
+
+.filter-chip.active {
+  background: linear-gradient(135deg, #8b1f42 0%, #cc2d5c 100%);
+  color: white;
+  border-color: transparent;
+  box-shadow: 0 4px 12px rgba(139,31,66,0.3);
+}
+
+.filter-chip.active::after {
+  content: "✓";
+  margin-left: 8px;
+}
+```
+
+---
+
+## 🎯 COMPONENT ARCHITECTURE
+
+### **Main Inspo Page (/inspo) - The Hub**
+
+**Structure:**
+```tsx
+<main>
+  {/* 1. Hero Section - Visual Impact */}
+  <HeroSection />
+  
+  {/* 2. Quick Stats Bar */}
+  <StatsBar />
+  
+  {/* 3. Category Grid - Main Navigation */}
+  <CategoryGrid />
+  
+  {/* 4. Featured Designs Carousel */}
+  <FeaturedCarousel />
+  
+  {/* 5. About Inspo Section (SEO content - collapsible) */}
+  <AboutInspo />
+  
+  {/* 6. About This Style (SEO - Collapsible) */}
+  <AboutStyle />
+  
+  {/* 7. Design Tips Section (SEO content) */}
+  <DesignTips />
+  
+  {/* 8. FAQ Section (SEO - Accordion) */}
+  <CategoryFAQ />
+  
+  {/* 9. Related Categories */}
+  <RelatedCategories />
+  
+  {/* 10. Shop Products CTA */}
+  <ShopProductsCTA />
+</main>
+```
+
+**1. Category Hero Component:**
+```tsx
+<section className="relative h-[50vh] min-h-[400 FAQ Section (SEO content - accordion) */}
+  <FAQSection />
+  
+  {/* 7. Newsletter CTA */}
+  <NewsletterInline />
+  
+  {/* 8. Related Content Links */}
+  <RelatedLinks />
+</main>
+```
+
+**1. Hero Section Component:**
+```tsx
+<section className="relative h-[80vh] min-h-[600px] flex items-center justify-center overflow-hidden">
+  {/* Animated background gradient */}
+  <div className="absolute inset-0 bg-gradient-to-br from-burgundy-50 via-pink-50 to-purple-50 animate-gradient" />
+  
+  {/* Floating design elements */}
+  <div className="absolute inset-0 overflow-hidden">
+    <div className="floating-nail nail-1" />
+    <div className="floating-nail nail-2" />
+    <div className="floating-nail nail-3" />
+  </div>
+  
+  {/* Content */}
+  <div className="relative z-10 text-center max-w-4xl px-6">
+    <div className="inline-flex items-center bg-white/80 backdrop-blur-sm px-5 py-2 rounded-full text-sm font-medium mb-6 shadow-lg">
+      <span className="w-2 h-2 bg-green-500 rounded-full mr-2 animate-pulse" />
+      Updated Daily • 500+ Designs
+    </div>
+    
+    <h1 className="font-serif text-6xl md:text-8xl font-bold mb-6 bg-gradient-to-r from-burgundy-600 to-pink-600 bg-clip-text text-transparent animate-fade-in">
+      Nail Design Inspiration
+    </h1>
+    
+    <p className="text-xl md:text-2xl text-gray-600 mb-8 font-light">
+      Curated collections of trending nail art from artists worldwide
+    </p>
+    
+    <div className="flex justify-center gap-4">
+      <a href="#categories" className="btn-primary">
+        Explore Gallery
+      </a>
+      <button className="btn-secondary">
+        Get Weekly Trends
+      </button>
+    </div>
+  </div>
+  
+  {/* Scroll indicator */}
+  <div className="absolute bottom-8 left-1/2 -translate-x-1/2 animate-bounce">
+    <svg className="w-6 h-6 text-gray-400" />
+  </div>
+</section>
+
+<style jsx>{`
+  @keyframes gradient {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+  }
+  
+  .animate-gradient {
+    background-size: 200% 200%;
+    animation: gradient 15s ease infinite;
+  }
+  
+  .floating-nail {
+    position: absolute;
+    width: 80px;
+    height: 120px;
+    background: url('/nail-silhouette.svg');
+    opacity: 0.1;
+    animation: float 20s ease-in-out infinite;
+  }
+  
+  @keyframes float {
+    0%, 100% { transform: translateY(0) rotate(0deg); }
+    50% { transform: translateY(-30px) rotate(5deg); }
+  }
+`}</style>
+```
+
+**2. Stats Bar Component:**
+```tsx
+<section className="py-12 bg-white border-y border-gray-100">
+  <div className="max-w-7xl mx-auto px-6">
+    <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
+      <StatItem 
+        icon="💅" 
+        value="500+" 
+        label="Design Ideas"
+        color="burgundy"
+      />
+      <StatItem 
+        icon="🎨" 
+        value="25+" 
+        label="Style Categories"
+        color="pink"
+      />
+      <StatItem 
+        icon="✨" 
+        value="Daily" 
+        label="New Updates"
+        color="purple"
+      />
+      <StatItem 
+        icon="🌟" 
+        value="100k+" 
+        label="Inspired Users"
+        color="gold"
+      />
+    </div>
+  </div>
+</section>
+
+{/* StatItem Component */}
+<div className="text-center group cursor-pointer">
+  <div className={`w-16 h-16 mx-auto mb-4 bg-gradient-to-br from-${color}-100 to-${color}-200 rounded-2xl flex items-center justify-center text-3xl transform group-hover:scale-110 transition-transform duration-300 shadow-lg group-hover:shadow-xl`}>
+    {icon}
+  </div>
+  <div className={`text-3xl font-bold text-${color}-600 mb-1`}>
+    {value}
+  </div>
+  <div className="text-sm text-gray-600 font-medium">
+    {label}
+  </div>
+</div>
+```
+
+**3. Category Grid Component:**
+```tsx
+<section className="py-20 bg-gradient-to-b from-white to-cream-50">
+  <div className="max-w-7xl mx-auto px-6">
+    <div className="text-center mb-12">
+      <h2 className="font-serif text-5xl font-bold text-gray-900 mb-4">
+        Explore by Style
+      </h2>
+      <p className="text-xl text-gray-600">
+        Find your perfect nail design in our curated collections
+      </p>
+    </div>
+    
+    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+      {categories.map((category) => (
+        <CategoryCard key={category.slug} {...category} />
+      ))}
+    </div>
+  </div>
+</section>
+
+{/* CategoryCard Component */}
+<Link href={`/inspo/${category.slug}`}>
+  <div className="group relative overflow-hidden rounded-3xl bg-white shadow-lg hover:shadow-2xl transition-all duration-500 cursor-pointer h-[400px]">
+    {/* Background Image */}
+    <div className="absolute inset-0">
+      <img 
+        src={category.coverImage}
+        alt={category.name}
+        className="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700"
+      />
+      <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent" />
+    </div>
+    
+    {/* Content */}
+    <div className="absolute inset-0 p-8 flex flex-col justify-end">
+      <div className="mb-4">
+        <span className="inline-block px-4 py-1 bg-white/20 backdrop-blur-sm rounded-full text-white text-sm font-medium">
+          {category.designCount} Designs
+        </span>
+      </div>
+      
+      <h3 className="font-serif text-3xl font-bold text-white mb-2">
+        {category.name}
+      </h3>
+      
+      <p className="text-white/90 mb-4 line-clamp-2">
+        {category.shortDescription}
+      </p>
+      
+      <div className="flex items-center text-white font-medium group-hover:translate-x-2 transition-transform duration-300">
+        Explore Gallery
+        <svg className="w-5 h-5 ml-2" />
+      </div>
+    </div>
+    
+    {/* Trending Badge (if trending) */}
+    {category.isTrending && (
+      <div className="absolute top-4 right-4 bg-gradient-to-r from-pink-500 to-purple-600 text-white px-4 py-2 rounded-full text-sm font-bold shadow-lg animate-pulse">
+        🔥 Trending
+      </div>
+    )}
+  </div>
+</Link>
+```
+
+### **Category Page (/inspo/[category]) - The Gallery**
+
+Filtering narrows down results to only items matching selected criteria, while sorting rearranges order without removing items
+
+**Structure:**
+```tsx
+<main>
+  {/* 1. Category Hero (Smaller) */}
+  <CategoryHero />
+  
+  {/* 2. Sticky Filter/Sort Bar */}
+  <FilterBar />
+  
+  {/* 3. Active Filters Chips */}
+  <ActiveFilters />
+  
+  {/* 4. Masonry Gallery Grid (MAIN CONTENT) */}
+  <MasonryGallery />
+  
+  {/* 5. Load More / Infinite Scroll */}
+  <LoadMore />
+  
+  {/* 6.
+
+<FilterDropdown 
+          label="Color"
+          icon="🎨"
+          options={colorOptions}
+          value={filters.color}
+          onChange={(val) => handleFilterChange('color', val)}
+        />
+        
+        {/* Style Filter */}
+        <FilterDropdown 
+          label="Style"
+          icon="✨"
+          options={styleOptions}
+          value={filters.style}
+          onChange={(val) => handleFilterChange('style', val)}
+        />
+        
+        {/* Length Filter */}
+        <FilterDropdown 
+          label="Nail Length"
+          icon="💅"
+          options={lengthOptions}
+          value={filters.length}
+          onChange={(val) => handleFilterChange('length', val)}
+        />
+        
+        {/* Occasion Filter */}
+        <FilterDropdown 
+          label="Occasion"
+          icon="🎉"
+          options={occasionOptions}
+          value={filters.occasion}
+          onChange={(val) => handleFilterChange('occasion', val)}
+        />
+        
+        {/* Difficulty Filter */}
+        <FilterDropdown 
+          label="Difficulty"
+          icon="⭐"
+          options={difficultyOptions}
+          value={filters.difficulty}
+          onChange={(val) => handleFilterChange('difficulty', val)}
+        />
+      </div>
+      
+      {/* Sort Dropdown */}
+      <div className="flex items-center gap-3">
+        <span className="text-sm text-gray-600 hidden md:block">
+          {filteredCount} designs
+        </span>
+        
+        <select 
+          value={sortBy}
+          onChange={(e) => setSortBy(e.target.value)}
+          className="px-4 py-2 border border-gray-300 rounded-full text-sm font-medium focus:ring-2 focus:ring-burgundy-500 focus:border-transparent cursor-pointer"
+        >
+          <option value="trending">🔥 Trending</option>
+          <option value="newest">🆕 Newest</option>
+          <option value="popular">💖 Most Liked</option>
+          <option value="viewed">👁️ Most Viewed</option>
+        </select>
+        
+        {/* View Toggle */}
+        <div className="hidden lg:flex items-center gap-2 bg-gray-100 rounded-full p-1">
+          <button 
+            onClick={() => setView('grid')}
+            className={`p-2 rounded-full transition-colors ${view === 'grid' ? 'bg-white shadow-sm' : 'hover:bg-gray-200'}`}
+          >
+            <svg className="w-5 h-5" />
+          </button>
+          <button 
+            onClick={() => setView('masonry')}
+            className={`p-2 rounded-full transition-colors ${view === 'masonry' ? 'bg-white shadow-sm' : 'hover:bg-gray-200'}`}
+          >
+            <svg className="w-5 h-5" />
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  {/* Mobile Filter Panel */}
+  {filterOpen && (
+    <div className="lg:hidden border-t border-gray-200 bg-white p-6 space-y-4">
+      <FilterSection label="Color" icon="🎨" options={colorOptions} />
+      <FilterSection label="Style" icon="✨" options={styleOptions} />
+      <FilterSection label="Nail Length" icon="💅" options={lengthOptions} />
+      <FilterSection label="Occasion" icon="🎉" options={occasionOptions} />
+      <FilterSection label="Difficulty" icon="⭐" options={difficultyOptions} />
+      
+      <div className="flex gap-3 pt-4">
+        <button onClick={clearFilters} className="flex-1 btn-secondary">
+          Clear All
+        </button>
+        <button onClick={() => setFilterOpen(false)} className="flex-1 btn-primary">
+          Apply Filters
+        </button>
+      </div>
+    </div>
+  )}
+</div>
+3. Active Filters Chips Component:
+tsx{activeFilters.length > 0 && (
+  <div className="max-w-7xl mx-auto px-6 py-4">
+    <div className="flex flex-wrap items-center gap-2">
+      <span className="text-sm font-medium text-gray-600">Active filters:</span>
+      
+      {activeFilters.map((filter) => (
+        <button
+          key={filter.id}
+          onClick={() => removeFilter(filter.id)}
+          className="inline-flex items-center gap-2 px-4 py-2 bg-burgundy-100 text-burgundy-700 rounded-full text-sm font-medium hover:bg-burgundy-200 transition-colors group"
+        >
+          {filter.icon} {filter.label}
+          <svg className="w-4 h-4 group-hover:rotate-90 transition-transform" />
+        </button>
+      ))}
+      
+      <button
+        onClick={clearAllFilters}
+        className="text-sm text-gray-500 hover:text-gray-700 underline ml-2"
+      >
+        Clear all
+      </button>
+    </div>
+  </div>
+)}
+4. Masonry Gallery Grid (MAIN COMPONENT):
+tsx<section className="py-12">
+  <div className="max-w-7xl mx-auto px-6">
+    {/* Results count */}
+    <div className="mb-6 text-center">
+      <p className="text-gray-600">
+        Showing <span className="font-semibold text-gray-900">{displayedCount}</span> of <span className="font-semibold text-gray-900">{totalCount}</span> designs
+      </p>
+    </div>
+    
+    {/* Masonry Grid */}
+    <div className="gallery-grid">
+      {designs.map((design, index) => (
+        <GalleryCard 
+          key={design.id}
+          design={design}
+          index={index}
+          onLike={handleLike}
+          onSave={handleSave}
+          onClick={() => openDesignModal(design)}
+        />
+      ))}
+    </div>
+    
+    {/* Empty State */}
+    {filteredCount === 0 && (
+      <div className="text-center py-20">
+        <div className="text-6xl mb-4">🔍</div>
+        <h3 className="font-serif text-2xl font-bold text-gray-900 mb-2">
+          No designs found
+        </h3>
+        <p className="text-gray-600 mb-6">
+          Try adjusting your filters or browse other categories
+        </p>
+        <button onClick={clearAllFilters} className="btn-primary">
+          Clear Filters
+        </button>
+      </div>
+    )}
+  </div>
+</section>
+
+{/* GalleryCard Component */}
+<div className="gallery-item group relative">
+  <div className="relative overflow-hidden rounded-2xl bg-gray-100">
+    {/* Image */}
+    <img
+      src={design.imageUrl}
+      alt={design.altText}
+      width={design.width}
+      height={design.height}
+      loading={index < 12 ? 'eager' : 'lazy'}
+      className="w-full h-auto object-cover"
+    />
+    
+    {/* Hover Overlay */}
+    <div className="gallery-item-overlay">
+      {/* Design Info */}
+      <div className="flex flex-col gap-2">
+        <h3 className="text-white font-semibold text-lg line-clamp-2">
+          {design.title}
+        </h3>
+        
+        {/* Tags */}
+        <div className="overlay-tags">
+          {design.tags.slice(0, 3).map((tag) => (
+            <span key={tag} className="tag-chip">
+              {tag}
+            </span>
+          ))}
+        </div>
+        
+        {/* Stats */}
+        <div className="flex items-center gap-4 text-white/80 text-sm">
+          <span className="flex items-center gap-1">
+            <svg className="w-4 h-4" /> {design.likes}
+          </span>
+          <span className="flex items-center gap-1">
+            <svg className="w-4 h-4" /> {design.saves}
+          </span>
+          <span className="flex items-center gap-1">
+            <svg className="w-4 h-4" /> {design.views}
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    {/* Like/Save Button */}
+    <button
+      onClick={(e) => {
+        e.stopPropagation();
+        onLike(design.id);
+      }}
+      className={`heart-button ${design.isLiked ? 'liked' : ''}`}
+      aria-label="Like design"
+    >
+      <svg className="w-5 h-5" fill={design.isLiked ? 'currentColor' : 'none'} />
+    </button>
+    
+    {/* Trending Badge */}
+    {design.isTrending && (
+      <div className="absolute top-3 left-3 bg-gradient-to-r from-orange-500 to-red-500 text-white px-3 py-1 rounded-full text-xs font-bold shadow-lg">
+        🔥 Trending
+      </div>
+    )}
+    
+    {/* New Badge */}
+    {design.isNew && (
+      <div className="absolute top-3 left-3 bg-gradient-to-r from-green-500 to-teal-500 text-white px-3 py-1 rounded-full text-xs font-bold shadow-lg">
+        ✨ New
+      </div>
+    )}
+  </div>
+</div>
+5. Load More / Infinite Scroll Component:
+tsx<div className="py-12 text-center">
+  {hasMore ? (
+    <>
+      {/* Manual Load More Button */}
+      <button
+        onClick={loadMore}
+        disabled={isLoading}
+        className="btn-primary px-8 py-4 text-lg"
+      >
+        {isLoading ? (
+          <>
+            <svg className="animate-spin w-5 h-5 mr-2" />
+            Loading...
+          </>
+        ) : (
+          <>
+            Load More Designs
+            <svg className="w-5 h-5 ml-2" />
+          </>
+        )}
+      </button>
+      
+      {/* Intersection Observer Trigger for Infinite Scroll */}
+      <div ref={loadMoreRef} className="h-10" />
+    </>
+  ) : (
+    <div className="space-y-4">
+      <p className="text-gray-600">
+        You've seen all {totalCount} designs in this category! 🎉
+      </p>
+      <button onClick={scrollToTop} className="btn-secondary">
+        Back to Top ↑
+      </button>
+    </div>
+  )}
+</div>
+6. About This Style Section (SEO Content - Collapsible):
+tsx<section className="py-16 bg-gradient-to-b from-white to-cream-50">
+  <div className="max-w-4xl mx-auto px-6">
+    <details className="group bg-white rounded-3xl shadow-lg overflow-hidden border border-gray-100">
+      <summary className="cursor-pointer px-8 py-6 flex justify-between items-center hover:bg-gray-50 transition-colors">
+        <div className="flex items-center gap-4">
+          <div className="w-12 h-12 bg-burgundy-100 rounded-xl flex items-center justify-center">
+            <span className="text-2xl">💡</span>
+          </div>
+          <div>
+            <h2 className="font-serif text-2xl font-bold text-gray-900">
+              About {category.name}
+            </h2>
+            <p className="text-sm text-gray-600">
+              Everything you need to know about this style
+            </p>
+          </div>
+        </div>
+        
+        <svg className="w-6 h-6 text-burgundy-600 transform group-open:rotate-180 transition-transform" />
+      </summary>
+      
+      <div className="px-8 pb-8 space-y-6 text-gray-700 leading-relaxed">
+        {/* SEO Content - 200-250 words */}
+        <div className="prose prose-lg max-w-none">
+          <p className="text-lg font-medium text-gray-900 mb-4">
+            {category.introText}
+          </p>
+          
+          <p>
+            {category.detailedDescription}
+          </p>
+          
+          <h3 className="font-serif text-xl font-bold text-gray-900 mt-6 mb-3">
+            Key Characteristics
+          </h3>
+          <ul className="space-y-2">
+            {category.characteristics.map((char) => (
+              <li key={char} className="flex items-start gap-2">
+                <span className="text-burgundy-600 mt-1">✓</span>
+                <span>{char}</span>
+              </li>
+            ))}
+          </ul>
+          
+          <h3 className="font-serif text-xl font-bold text-gray-900 mt-6 mb-3">
+            Perfect For
+          </h3>
+          <p>
+            {category.perfectFor}
+          </p>
+        </div>
+      </div>
+    </details>
+  </div>
+</section>
+7. Design Tips Section (SEO Content - 150-200 words):
+tsx<section className="py-16">
+  <div className="max-w-6xl mx-auto px-6">
+    <div className="text-center mb-12">
+      <h2 className="font-serif text-4xl font-bold text-gray-900 mb-4">
+        Pro Tips for {category.name}
+      </h2>
+      <p className="text-xl text-gray-600">
+        Expert advice to achieve the perfect look
+      </p>
+    </div>
+    
+    <div className="grid md:grid-cols-3 gap-6">
+      {category.tips.map((tip, index) => (
+        <div key={index} className="bg-white rounded-2xl p-6 shadow-lg border border-gray-100 hover:shadow-xl transition-shadow">
+          <div className="w-14 h-14 bg-gradient-to-br from-burgundy-100 to-pink-100 rounded-xl flex items-center justify-center mb-4">
+            <span className="text-3xl">{tip.icon}</span>
+          </div>
+          
+          <h3 className="font-bold text-lg text-gray-900 mb-2">
+            {tip.title}
+          </h3>
+          
+          <p className="text-gray-600 leading-relaxed">
+            {tip.description}
+          </p>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>
+8. FAQ Section (SEO Content - 300-400 words, Accordion):
+tsx<section className="py-16 bg-gradient-to-b from-cream-50 to-white">
+  <div className="max-w-4xl mx-auto px-6">
+    <div className="text-center mb-12">
+      <h2 className="font-serif text-4xl font-bold text-gray-900 mb-4">
+        Frequently Asked Questions
+      </h2>
+      <p className="text-xl text-gray-600">
+        Common questions about {category.name}
+      </p>
+    </div>
+    
+    <div className="space-y-4">
+      {category.faqs.map((faq, index) => (
+        <details key={index} className="group bg-white rounded-2xl border border-gray-200 overflow-hidden hover:border-burgundy-300 transition-colors shadow-sm">
+          <summary className="cursor-pointer px-6 py-5 flex justify-between items-center touch-target">
+            <h3 className="font-semibold text-gray-900 pr-4 text-lg">
+              {faq.question}
+            </h3>
+            <svg className="w-5 h-5 text-burgundy-600 transform group-open:rotate-45 transition-transform flex-shrink-0" />
+          </summary>
+          
+          <div className="px-6 pb-5 text-gray-600 leading-relaxed">
+            <p>{faq.answer}</p>
+            
+            {faq.relatedLink && (
+              <a href={faq.relatedLink.url} className="inline-flex items-center gap-2 mt-3 text-burgundy-600 hover:text-burgundy-700 font-medium">
+                {faq.relatedLink.text}
+                <svg className="w-4 h-4" />
+              </a>
+            )}
+          </div>
+        </details>
+      ))}
+    </div>
+  </div>
+</section>
+9. Related Categories Component:
+tsx<section className="py-16">
+  <div className="max-w-7xl mx-auto px-6">
+    <div className="text-center mb-12">
+      <h2 className="font-serif text-4xl font-bold text-gray-900 mb-4">
+        Explore Similar Styles
+      </h2>
+      <p className="text-xl text-gray-600">
+        You might also love these design categories
+      </p>
+    </div>
+    
+    <div className="grid md:grid-cols-3 gap-6">
+      {relatedCategories.map((related) => (
+        <Link key={related.slug} href={`/inspo/${related.slug}`}>
+          <div className="group relative overflow-hidden rounded-3xl bg-white shadow-lg hover:shadow-2xl transition-all duration-500 h-[300px]">
+            <div className="absolute inset-0">
+              <img 
+                src={related.coverImage}
+                alt={related.name}
+                className="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent" />
+            </div>
+            
+            <div className="absolute inset-0 p-6 flex flex-col justify-end">
+              <span className="inline-block w-fit px-3 py-1 bg-white/20 backdrop-blur-sm rounded-full text-white text-xs font-medium mb-2">
+                {related.designCount} Designs
+              </span>
+              
+              <h3 className="font-serif text-2xl font-bold text-white mb-2">
+                {related.name}
+              </h3>
+              
+              <div className="flex items-center text-white font-medium group-hover:translate-x-2 transition-transform duration-300">
+                View Gallery
+                <svg className="w-4 h-4 ml-2" />
+              </div>
+            </div>
+          </div>
+        </Link>
+      ))}
+    </div>
+  </div>
+</section>
+10. Shop Products CTA Component:
+tsx<section className="py-16 bg-gradient-to-br from-burgundy-50 to-pink-50">
+  <div className="max-w-6xl mx-auto px-6">
+    <div className="bg-white rounded-3xl shadow-2xl overflow-hidden">
+      <div className="grid md:grid-cols-2">
+        {/* Image Side */}
+        <div className="relative h-64 md:h-auto">
+          <img 
+            src="/images/shop-cta.webp"
+            alt="Shop nail products"
+            className="w-full h-full object-cover"
+          />
+          <div className="absolute inset-0 bg-gradient-to-r from-burgundy-600/80 to-transparent" />
+        </div>
+        
+        {/* Content Side */}
+        <div className="p-8 md:p-12 flex flex-col justify-center">
+          <span className="inline-block w-fit px-4 py-2 bg-burgundy-100 text-burgundy-700 rounded-full text-sm font-bold mb-4">
+            🛍️ Shop the Look
+          </span>
+          
+          <h2 className="font-serif text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+            Get Everything You Need
+          </h2>
+          
+          <p className="text-lg text-gray-600 mb-6">
+            Shop curated products to recreate these {category.name} at home. Premium quality, verified sellers, worldwide shipping.
+          </p>
+          
+          <div className="flex gap-4">
+            <a href={`/shop?category=${category.shopCategory}`} className="btn-primary">
+              Browse Products
+            </a>
+            <a href="/brands" className="btn-secondary">
+              View Brands
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+Individual Design Page (/inspo/[category]/[designId]) - The Detail View
+Structure:
+tsx<main>
+  {/* 1. Lightbox-Style Modal OR Full Page */}
+  <DesignHero />
+  
+  {/* 2. Design Details Card */}
+  <DesignInfo />
+  
+  {/* 3. Action Buttons (Like, Save, Share) */}
+  <ActionBar />
+  
+  {/* 4. Design Breakdown */}
+  <DesignBreakdown />
+  
+  {/* 5. Products Used/Recommended */}
+  <ProductsSection />
+  
+  {/* 6. Similar Designs Carousel */}
+  <SimilarDesigns />
+  
+  {/* 7. Comments Section (Future) */}
+  {/* <CommentsSection /> */}
+</main>
+1. Design Hero Component:
+tsx<section className="relative min-h-screen flex items-center justify-center bg-black/95 py-20">
+  {/* Close Button */}
+  <button
+    onClick={() => router.back()}
+    className="absolute top-6 left-6 z-50 w-12 h-12 bg-white/10 backdrop-blur-sm rounded-full flex items-center justify-center text-white hover:bg-white/20 transition-colors"
+  >
+    <svg className="w-6 h-6" />
+  </button>
+  
+  {/* Navigation Arrows */}
+  <button
+    onClick={goToPrevious}
+    className="absolute left-6 top-1/2 -translate-y-1/2 z-50 w-12 h-12 bg-white/10 backdrop-blur-sm rounded-full flex items-center justify-center text-white hover:bg-white/20 transition-colors"
+  >
+    <svg className="w-6 h-6" />
+  </button>
+  
+  <button
+    onClick={goToNext}
+    className="absolute right-6 top-1/2 -translate-y-1/2 z-50 w-12 h-12 bg-white/10 backdrop-blur-sm rounded-full flex items-center justify-center text-white hover:bg-white/20 transition-colors"
+  >
+    <svg className="w-6 h-6" />
+  </button>
+  
+  {/* Main Image */}
+  <div className="relative max-w-6xl mx-auto px-6">
+    <img
+      src={design.imageUrl}
+      alt={design.altText}
+      width={1200}
+      height={1600}
+      className="w-full h-auto max-h-[85vh] object-contain rounded-2xl shadow-2xl"
+    />
+    
+    {/* Image Counter */}
+    <div className="absolute bottom-6 left-1/2 -translate-x-1/2 px-4 py-2 bg-black/50 backdrop-blur-sm rounded-full text-white text-sm font-medium">
+      {currentIndex + 1} / {totalDesigns}
+    </div>
+  </div>
+</section>
+2. Design Info Card:
+tsx<section className="py-12">
+  <div className="max-w-5xl mx-auto px-6">
+    <div className="bg-white rounded-3xl shadow-xl p-8 -mt-20 relative z-10">
+      <div className="flex flex-wrap items-start justify-between gap-6 mb-6">
+        <div className="flex-1 min-w-0">
+          <div className="flex items-center gap-3 mb-4">
+            {design.tags.map((tag) => (
+              <span key={tag} className="px-3 py-1 bg-burgundy-100 text-burgundy-700 rounded-full text-sm font-medium">
+                {tag}
+              </span>
+            ))}
+          </div>
+          
+          <h1 className="font-serif text-4xl font-bold text-gray-900 mb-3">
+            {design.title}
+          </h1>
+          
+          <p className="text-lg text-gray-600">
+            {design.description}
+          </p>
+        </div>
+        
+        {/* Stats */}
+        <div className="flex gap-6 text-center">
+          <div>
+            <div className="text-2xl font-bold text-gray-900">{design.likes}</div>
+            <div className="text-sm text-gray-500">Likes</div>
+          </div>
+          <div>
+            <div className="text-2xl font-bold text-gray-900">{design.saves}</div>
+            <div className="text-sm text-gray-500">Saves</div>
+          </div>
+          <div>
+            <div className="text-2xl font-bold text-gray-900">{design.views}</div>
+            <div className="text-sm text-gray-500">Views</div>
+          </div>
+        </div>
+      </div>
+      
+      {/* Meta Info */}
+      <div className="flex flex-wrap items-center gap-4 text-sm text-gray-600 pt-6 border-t border-gray-200">
+        <span className="flex items-center gap-2">
+          <svg className="w-4 h-4" />
+          Updated {design.dateUpdated}
+        </span>
+        <span className="flex items-center gap-2">
+          <svg className="w-4 h-4" />
+          {design.difficulty}
+        </span>
+        <span className="flex items-center gap-2">
+          <svg className="w-4 h-4" />
+          {design.nailLength}
+        </span>
+        {design.source && (
+          <a href={design.source.url} target="_blank" rel="noopener" className="flex items-center gap-2 text-burgundy-600 hover:text-burgundy-700">
+            <svg className="w-4 h-4" />
+            Credit: {design.source.name}
+          </a>
+        )}
+      </div>
+    </div>
+  </div>
+</section>
+3. Action Bar Component:
+tsx<section className="sticky top-0 z-40 bg-white border-b border-gray-200 shadow-sm">
+  <div className="max-w-5xl mx-auto px-6 py-4">
+    <div className="flex items-center justify-between gap-4">
+      <div className="flex items-center gap-3">
+        {/* Like Button */}
+        <button
+          onClick={handleLike}
+          className={`flex items-center gap-2 px-6 py-3 rounded-full font-medium transition-all ${
+            isLiked
+              ? 'bg-pink-100 text-pink-600 hover:bg-pink-200'
+              : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
+          }`}
+        >
+          <svg className="w-5 h-5" fill={isLiked ? 'currentColor' : 'none'} />
+          {design.likes}
+        </button>
+        
+        {/* Save Button */}
+        <button
+          onClick={handleSave}
+          className={`flex items-center gap-2 px-6 py-3 rounded-full font-medium transition-all ${
+            isSaved
+              ? 'bg-burgundy-600 text-white hover:bg-burgundy-700'
+              : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
+          }`}
+        >
+          <svg className="w-5 h-5" />
+          {isSaved ? 'Saved' : 'Save'}
+        </button>
+      </div>
+      
+      <div className="flex items-center gap-3">
+        {/* Share Button */}
+        <button
+          onClick={handleShare}
+          className="flex items-center gap-2 px-6 py-3 bg-gray-100 text-gray-700 rounded-full font-medium hover:bg-gray-200 transition-colors"
+        >
+          <svg className="w-5 h-5" />
+          Share
+        </button>
+        
+        {/* Download Button */}
+        <button
+          onClick={handleDownload}
+          className="flex items-center gap-2 px-6 py-3 bg-gray-100 text-gray-700 rounded-full font-medium hover:bg-gray-200 transition-colors"
+        >
+          <svg className="w-5 h-5" />
+          Download
+        </button>
+      </div>
+    </div>
+  </div>
+</section>
+
+4. Design Breakdown Component:tsx
+<section className="py-16 bg-gradient-to-b from-white to-cream-50">
+  <div className="max-w-5xl mx-auto px-6">
+    <div className="text-center mb-12">
+      <h2 className="font-serif text-4xl font-bold text-gray-900 mb-4">
+        Design Breakdown
+      </h2>
+      <p className="text-xl text-gray-600">
+        Everything you need to know about this look
+      </p>
+    </div>
+    
+    <div className="grid md:grid-cols-2 gap-8">
+      {/* Color Palette */}
+      <div className="bg-white rounded-3xl p-8 shadow-lg border border-gray-100">
+        <div className="flex items-center gap-3 mb-6">
+          <div className="w-12 h-12 bg-gradient-to-br from-purple-100 to-pink-100 rounded-xl flex items-center justify-center">
+            <span className="text-2xl">🎨</span>
+          </div>
+          <h3 className="font-bold text-2xl text-gray-900">Color Palette</h3>
+        </div>
+        
+        <div className="space-y-4">
+          {design.colors.map((color) => (
+            <div key={color.hex} className="flex items-center gap-4">
+              <div 
+                className="w-16 h-16 rounded-xl shadow-md border-2 border-white"
+                style={{ backgroundColor: color.hex }}
+              />
+              <div>
+                <div className="font-semibold text-gray-900">{color.name}</div>
+                <div className="text-sm text-gray-500">{color.hex}</div>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+      
+      {/* Techniques Used */}
+      <div className="bg-white rounded-3xl p-8 shadow-lg border border-gray-100">
+        <div className="flex items-center gap-3 mb-6">
+          <div className="w-12 h-12 bg-gradient-to-br from-blue-100 to-teal-100 rounded-xl flex items-center justify-center">
+            <span className="text-2xl">✨</span>
+          </div>
+          <h3 className="font-bold text-2xl text-gray-900">Techniques</h3>
+        </div>
+        
+        <ul className="space-y-3">
+          {design.techniques.map((technique) => (
+            <li key={technique} className="flex items-start gap-3">
+              <svg className="w-5 h-5 text-burgundy-600 mt-0.5 flex-shrink-0" />
+              <span className="text-gray-700">{technique}</span>
+            </li>
+          ))}
+        </ul>
+      </div>
+      
+      {/* Difficulty & Time */}
+      <div className="bg-white rounded-3xl p-8 shadow-lg border border-gray-100">
+        <div className="flex items-center gap-3 mb-6">
+          <div className="w-12 h-12 bg-gradient-to-br from-green-100 to-emerald-100 rounded-xl flex items-center justify-center">
+            <span className="text-2xl">⭐</span>
+          </div>
+          <h3 className="font-bold text-2xl text-gray-900">Difficulty</h3>
+        </div>
+        
+        <div className="space-y-4">
+          <div>
+            <div className="flex items-center justify-between mb-2">
+              <span className="text-gray-700 font-medium">Skill Level</span>
+              <span className="text-burgundy-600 font-bold">{design.difficulty}</span>
+            </div>
+            <div className="w-full bg-gray-200 rounded-full h-2">
+              <div 
+                className="bg-gradient-to-r from-burgundy-600 to-pink-600 h-2 rounded-full transition-all"
+                style={{ width: `${design.difficultyPercent}%` }}
+              />
+            </div>
+          </div>
+          
+          <div className="pt-4 border-t border-gray-100">
+            <div className="flex items-center justify-between text-sm">
+              <span className="text-gray-600">Estimated Time</span>
+              <span className="font-semibold text-gray-900">{design.estimatedTime}</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      {/* Best For */}
+      <div className="bg-white rounded-3xl p-8 shadow-lg border border-gray-100">
+        <div className="flex items-center gap-3 mb-6">
+          <div className="w-12 h-12 bg-gradient-to-br from-orange-100 to-red-100 rounded-xl flex items-center justify-center">
+            <span className="text-2xl">🎉</span>
+          </div>
+          <h3 className="font-bold text-2xl text-gray-900">Best For</h3>
+        </div>
+        
+        <div className="flex flex-wrap gap-2">
+          {design.occasions.map((occasion) => (
+            <span 
+              key={occasion}
+              className="px-4 py-2 bg-gradient-to-r from-burgundy-50 to-pink-50 text-burgundy-700 rounded-full text-sm font-medium border border-burgundy-200"
+            >
+              {occasion}
+            </span>
+          ))}
+        </div>
+        
+        <div className="mt-6 pt-6 border-t border-gray-100">
+          <div className="text-sm text-gray-600">
+            <strong className="text-gray-900">Season:</strong> {design.season}
+          </div>
+          <div className="text-sm text-gray-600 mt-2">
+            <strong className="text-gray-900">Nail Shape:</strong> {design.nailShape}
+          </div>
+          <div className="text-sm text-gray-600 mt-2">
+            <strong className="text-gray-900">Length:</strong> {design.nailLength}
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+5. Products Section Component:
+tsx<section className="py-16">
+  <div className="max-w-7xl mx-auto px-6">
+    <div className="text-center mb-12">
+      <h2 className="font-serif text-4xl font-bold text-gray-900 mb-4">
+        Products to Recreate This Look
+      </h2>
+      <p className="text-xl text-gray-600">
+        Curated products recommended by nail experts
+      </p>
+    </div>
+    
+    <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
+      {design.products.map((product) => (
+        <a 
+          key={product.id}
+          href={product.affiliateUrl}
+          target="_blank"
+          rel="noopener sponsored"
+          className="group bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden border border-gray-100"
+        >
+          <div className="aspect-square relative overflow-hidden bg-gray-50">
+            <img 
+              src={product.image}
+              alt={product.name}
+              className="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500"
+            />
+            
+            {product.isBestSeller && (
+              <div className="absolute top-3 left-3 bg-gradient-to-r from-orange-500 to-red-500 text-white px-3 py-1 rounded-full text-xs font-bold shadow-lg">
+                🔥 Best Seller
+              </div>
+            )}
+          </div>
+          
+          <div className="p-4">
+            <div className="text-xs text-gray-500 mb-1">{product.brand}</div>
+            <h3 className="font-semibold text-gray-900 mb-2 line-clamp-2 group-hover:text-burgundy-600 transition-colors">
+              {product.name}
+            </h3>
+            
+            <div className="flex items-center justify-between">
+              <div className="flex items-center gap-1">
+                <span className="text-yellow-400 text-sm">★</span>
+                <span className="font-medium text-gray-900">{product.rating}</span>
+                <span className="text-gray-400 text-xs">({product.reviews})</span>
+              </div>
+              
+              <div className="font-bold text-burgundy-600">
+                ${product.price}
+              </div>
+            </div>
+            
+            <button className="w-full mt-3 py-2 bg-burgundy-600 text-white rounded-lg font-medium hover:bg-burgundy-700 transition-colors text-sm">
+              Shop Now →
+            </button>
+          </div>
+        </a>
+      ))}
+    </div>
+    
+    {/* View All Products CTA */}
+    <div className="text-center mt-12">
+      <a href="/shop" className="btn-secondary inline-flex items-center gap-2">
+        View All Nail Products
+        <svg className="w-5 h-5" />
+      </a>
+    </div>
+  </div>
+</section>
+6. Similar Designs Carousel Component:
+tsx<section className="py-16 bg-gradient-to-b from-cream-50 to-white">
+  <div className="max-w-7xl mx-auto px-6">
+    <div className="flex items-center justify-between mb-12">
+      <div>
+        <h2 className="font-serif text-4xl font-bold text-gray-900 mb-2">
+          Similar Designs
+        </h2>
+        <p className="text-lg text-gray-600">
+          More inspiration you'll love
+        </p>
+      </div>
+      
+      <div className="hidden md:flex items-center gap-3">
+        <button
+          onClick={scrollLeft}
+          className="w-12 h-12 bg-white rounded-full shadow-lg flex items-center justify-center hover:bg-gray-50 transition-colors"
+        >
+          <svg className="w-5 h-5 text-gray-700" />
+        </button>
+        <button
+          onClick={scrollRight}
+          className="w-12 h-12 bg-white rounded-full shadow-lg flex items-center justify-center hover:bg-gray-50 transition-colors"
+        >
+          <svg className="w-5 h-5 text-gray-700" />
+        </button>
+      </div>
+    </div>
+    
+    {/* Scrollable Container */}
+    <div 
+      ref={scrollContainerRef}
+      className="flex gap-6 overflow-x-auto scrollbar-hide scroll-smooth snap-x snap-mandatory pb-4"
+    >
+      {similarDesigns.map((similar) => (
+        <Link
+          key={similar.id}
+          href={`/inspo/${similar.categorySlug}/${similar.id}`}
+          className="flex-shrink-0 w-80 snap-start group"
+        >
+          <div className="bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden">
+            <div className="relative aspect-[3/4] overflow-hidden">
+              <img 
+                src={similar.imageUrl}
+                alt={similar.altText}
+                className="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500"
+              />
+              
+              {/* Quick Stats Overlay */}
+              <div className="absolute bottom-0 inset-x-0 bg-gradient-to-t from-black/80 to-transparent p-4">
+                <div className="flex items-center gap-4 text-white text-sm">
+                  <span className="flex items-center gap-1">
+                    <svg className="w-4 h-4" /> {similar.likes}
+                  </span>
+                  <span className="flex items-center gap-1">
+                    <svg className="w-4 h-4" /> {similar.saves}
+                  </span>
+                </div>
+              </div>
+              
+              {/* Heart Button */}
+              <button
+                onClick={(e) => {
+                  e.preventDefault();
+                  handleQuickLike(similar.id);
+                }}
+                className="absolute top-3 right-3 w-10 h-10 bg-white/90 rounded-full flex items-center justify-center hover:bg-white transition-colors"
+              >
+                <svg className="w-5 h-5 text-burgundy-600" />
+              </button>
+            </div>
+            
+            <div className="p-4">
+              <h3 className="font-semibold text-gray-900 mb-2 line-clamp-2 group-hover:text-burgundy-600 transition-colors">
+                {similar.title}
+              </h3>
+              
+              <div className="flex flex-wrap gap-2">
+                {similar.tags.slice(0, 2).map((tag) => (
+                  <span 
+                    key={tag}
+                    className="px-2 py-1 bg-gray-100 text-gray-600 rounded-full text-xs font-medium"
+                  >
+                    {tag}
+                  </span>
+                ))}
+              </div>
+            </div>
+          </div>
+        </Link>
+      ))}
+    </div>
+    
+    {/* Mobile: Show scroll indicators */}
+    <div className="md:hidden flex justify-center gap-2 mt-6">
+      {Array.from({ length: Math.ceil(similarDesigns.length / 2) }).map((_, i) => (
+        <button
+          key={i}
+          onClick={() => scrollToSlide(i)}
+          className={`w-2 h-2 rounded-full transition-all ${
+            currentSlide === i ? 'w-8 bg-burgundy-600' : 'bg-gray-300'
+          }`}
+        />
+      ))}
+    </div>
+  </div>
+</section>
+```
+
+---
+
+## 🎯 **CONTENT PLACEMENT STRATEGY (800+ WORDS SEO)**
+
+### **Distribution Across Page Sections:**
+
+**Main Inspo Hub Page (/inspo):**
+- Hero section: 50-75 words (headline + subheadline)
+- About Inspo collapsible: 250-300 words
+- FAQ section: 400-450 words (8-10 questions × 50 words each)
+- Category descriptions: 30-50 words each × 8 categories = 240-400 words
+- **Total: ~940-1,225 words**
+
+**Category Pages (/inspo/[category]):**
+- Hero section: 30-50 words (description)
+- About This Style collapsible: 200-250 words
+- Design Tips section: 150-200 words (3 tips × 50-70 words)
+- FAQ section: 300-400 words (8-10 questions × 40-50 words)
+- Related categories descriptions: 100-150 words
+- Shop CTA section: 50-75 words
+- Image alt texts: 50-100 words (across all gallery images)
+- **Total: ~880-1,225 words**
+
+**Individual Design Pages (/inspo/[category]/[designId]):**
+- Design description: 75-100 words
+- Design breakdown sections: 200-250 words
+- Products descriptions: 150-200 words
+- Similar designs section: 50-75 words
+- Meta descriptions & schema: 100-150 words
+- **Total: ~575-775 words** (lighter, more visual focus)
+
+### **SEO Content Visibility Strategy:**
+
+**Immediately Visible (10% of content):**
+- Hero headlines & descriptions
+- Category cards descriptions
+- Design titles & tags
+- Stats & badges
+
+**Progressive Disclosure (40% of content):**
+- Collapsible "About" sections (click to expand)
+- FAQ accordions (expand on demand)
+- Design Tips cards (visible but concise)
+
+**Hidden but Crawlable (50% of content):**
+- Image alt texts (invisible to users, visible to crawlers)
+- Schema markup descriptions
+- Meta descriptions
+- OpenGraph descriptions
+- Breadcrumb titles
+
+**Result:** Users see 90% visuals, 10% text. Crawlers see 800+ words of relevant content.
+
+---
+
+## 🔧 **IMPLEMENTATION PHASES**
+
+### **PRE-PHASE: Deep Competitive Research (MANDATORY)**
+
+Before any coding, agent MUST complete comprehensive analysis:
+
+**1. SERP Analysis (Primary Keywords):**
+
+Research top 10 ranking pages for each category keyword:
+```
+Primary Keywords to Analyze:
+- "nail design inspiration"
+- "french tip nail ideas"
+- "ombre nail designs"
+- "chrome nail art"
+- [each category's primary keyword]
+```
+
+**For Each Competitor, Extract:**
+- Exact URL and domain authority
+- Word count on page
+- Number of images in gallery
+- Gallery layout type (grid/masonry/slider)
+- Filter options available
+- SEO content placement strategy
+- Schema types implemented (view source)
+- Page load speed (GTmetrix/PageSpeed)
+- Unique features/interactions
+- Strengths (what they do well)
+- Weaknesses/gaps (what they miss)
+
+**Analyze SERP Features:**
+- Featured Snippets present?
+- People Also Ask questions
+- Image pack results
+- Video carousel
+- Related searches
+- Knowledge panel
+
+**Calculate Competitive Benchmarks:**
+```
+Average word count across top 10: [X words]
+Average images per page: [X images]
+Common filter options: [list]
+Most common schema types: [list]
+Average page speed: [X seconds]
+SERP features being won: [list]
+```
+
+**Identify Opportunities:**
+- Content gaps none of top 10 address
+- Poor user experience patterns
+- Missing filter/sort options
+- Slow load times to beat
+- Schema opportunities (types not being used)
+- SERP features not being won
+- Better design/interaction opportunities
+
+**2. Design Psychology Research:**
+
+Analyze 5-10 top visual gallery sites:
+```
+Sites to Study:
+- Pinterest.com (masonry layout king)
+- Behance.net (portfolio galleries)
+- Dribbble.com (design showcase)
+- Unsplash.com (photo galleries)
+- Awwwards.com (award-winning galleries)
+```
+
+**Extract Design Patterns:**
+- Hover effect styles
+- Like/save interaction patterns
+- Filter UI patterns
+- Loading animations
+- Empty state designs
+- Mobile gesture support
+
+**3. Schema Research:**
+
+Research schema implementation on top competitors:
+- Which schema types are they using?
+- How are they structuring ImageObject?
+- Are they using CollectionPage?
+- FAQ schema patterns
+- Missed schema opportunities
+
+**4. Keyword Research Deep Dive:**
+
+For EACH category, extract:
+
+**Primary Keyword:**
+- Search volume
+- Keyword difficulty
+- Search intent (informational/commercial)
+- Current ranking pages
+
+**Cluster Keywords (5-10 per category):**
+- Related design style terms
+- Color variations
+- Technique names
+- Seasonal variations
+- Example: "french tips" → "colored french tips", "reverse french", "french ombre", "french with glitter"
+
+**Long-Tail Keywords (10-15 per category):**
+- Question-based queries
+- "how to" queries
+- "best for" queries
+- Comparison queries
+- Example: "how to do french tips at home", "best nail shape for french tips", "french tips vs full color"
+
+**Voice Search Queries (10+ per category):**
+- Natural language questions
+- Conversational phrases
+- "What are..." queries
+- "How do I..." queries
+- Example: "What nail polish colors work for french tips?", "How do I make french tips last longer?"
+
+**5. Present Research to User (BEFORE Phase 1):**
+
+Agent delivers comprehensive report (<800 words, bullet format):
+```
+🔍 INSPO SECTION COMPETITIVE ANALYSIS
+
+PRIMARY KEYWORD: [keyword]
+Search Volume: [X] | Difficulty: [X/100] | Intent: [informational]
+
+TOP 10 COMPETITORS ANALYSIS:
+1. [Domain] - [DA score]
+   - Word count: [X words]
+   - Images: [X gallery items]
+   - Layout: [grid/masonry/slider]
+   - Filters: [color, style, length available]
+   - Strengths: [what they do well]
+   - Weaknesses: [what they miss]
+   - Schema: [types used]
+   - Page speed: [X seconds]
+
+2. [Domain] - [DA score]
+   [repeat above metrics]
+
+[...continue for top 10]
+
+KEY METRICS SUMMARY:
+- Avg word count: [X] → OUR TARGET: [+15-25%] = [X words]
+- Avg images: [X] → OUR TARGET: [+20%] = [X images]
+- Common filters: [color, style, length, occasion]
+- Missing filters: [difficulty, season, nail shape] ← OPPORTUNITY
+- Avg page speed: [X]s → OUR TARGET: <2s
+- Schema usage: 40% use ImageGallery, 60% skip CollectionPage ← OPPORTUNITY
+
+SERP FEATURES PRESENT:
+✅ Image Pack (position 2)
+✅ People Also Ask (8 questions)
+❌ Featured Snippet (OPPORTUNITY)
+❌ Video Carousel (not applicable)
+
+PEOPLE ALSO ASK QUESTIONS (Target for FAQ):
+1. "What are the most popular nail designs?"
+2. "How do I choose nail designs for my skin tone?"
+3. "What nail shape is trending?"
+[...list all PAA questions]
+
+CONTENT GAPS TO EXPLOIT:
+→ No competitor offers difficulty filters
+→ None provide estimated time per design
+→ Missing product recommendations integrated with designs
+→ No "design breakdown" feature (colors, techniques)
+→ Poor mobile filter UX across all competitors
+→ Only 2/10 have quality FAQ sections
+
+DESIGN OPPORTUNITIES:
+→ Better hover effects (competitors use basic overlays)
+→ Like/save functionality (only 3/10 have this)
+→ Smoother masonry layout (many use janky JS libraries)
+→ Better filter chip design (most are boring buttons)
+→ Empty state designs (most show nothing)
+
+SCHEMA OPPORTUNITIES:
+→ Use CollectionPage (only 40% use this)
+→ Implement ImageGallery with associatedMedia
+→ Add FAQPage schema (only 30% have this)
+→ ItemList for gallery items
+→ Comprehensive breadcrumbs
+
+YOUR WINNING STRATEGY:
+→ Target: 1,000-1,200 words per category page (vs avg 850)
+→ Target: 50+ images per category (vs avg 40)
+→ Implement 5 filter types (vs avg 3)
+→ Page speed: <2s LCP (vs avg 3.5s)
+→ Win Featured Snippet with comparison table
+→ Win Image Pack with optimized alt texts
+→ Target 10 PAA questions in FAQ
+→ Unique: Design breakdown feature
+→ Unique: Difficulty + time filters
+→ Unique: Integrated product recommendations
+
+KEYWORD STRATEGY:
+Primary: [keyword]
+Clusters: [list 5-10]
+Long-tail: [list 10-15]
+Voice queries: [list 10+]
+Semantic: [list 15-20]
+
+NEXT STEPS:
+✅ User reviews & approves strategy
+✅ Proceed to Phase 1: File preparation
+```
+
+**User MUST review and approve before proceeding to Phase 1.**
+
+---
+
+### **PHASE 1: File Structure & Content Preparation**
+
+**Agent Receives:**
+- Current inspo file structure (from tree.json)
+- Approved competitive analysis
+- Keyword research package (primary, cluster, long-tail, voice, semantic)
+- Content file with SEO juice (category descriptions, FAQs, tips)
+- Brand voice guidelines
+- Design system reference
+
+**Agent Creates:**
+
+**1. Updated File Structure:**
+```
+src/
+├── app/
+│   └── inspo/
+│       ├── page.tsx (Main hub - NEW/UPDATED)
+│       └── [category]/
+│           ├── page.tsx (Category gallery - NEW/UPDATED)
+│           └── [designId]/
+│               └── page.tsx (Individual design - NEW)
+│
+├── components/
+│   └── Inspo/
+│       ├── InspoHero.tsx (NEW)
+│       ├── CategoryGrid.tsx (NEW)
+│       ├── FeaturedCarousel.tsx (NEW)
+│       ├── StatsBar.tsx (NEW)
+│       ├── FilterBar.tsx (NEW)
+│       ├── MasonryGallery.tsx (NEW)
+│       ├── GalleryCard.tsx (NEW)
+│       ├── DesignModal.tsx (NEW)
+│       ├── AboutSection.tsx (NEW - collapsible)
+│       ├── DesignTips.tsx (NEW)
+│       ├── FAQSection.tsx (NEW - accordion)
+│       ├── RelatedCategories.tsx (NEW)
+│       ├── ProductsSection.tsx (NEW)
+│       └── SimilarDesigns.tsx (NEW)
+│
+├── content/
+│   ├── inspo-categories.json (UPDATED - add new categories)
+│   └── inspo-images/
+│       ├── french-tips.json (EXISTS)
+│       ├── ombre-nails.json (NEW)
+│       ├── chrome-nails.json (NEW)
+│       ├── seasonal-designs.json (NEW)
+│       ├── [category].json (NEW for each)
+│       └── metadata/
+│           ├── category-seo.json (NEW - descriptions, FAQs)
+│           ├── keywords.json (NEW - all keyword research)
+│           └── products.json (NEW - recommended products per category)
+│
+├── lib/
+│   ├── inspo.ts (UPDATED - add new helper functions)
+│   ├── inspoSchemas.ts (NEW - schema generation)
+│   └── inspoFilters.ts (NEW - filter logic)
+│
+└── types/
+    └── inspo.ts (UPDATED - add new types)
+2. Content Outline Document:
+markdown# INSPO SECTION CONTENT OUTLINE
+
+## Main Inspo Hub Page (/inspo)
+
+### Hero Section
+- H1: "Nail Design Inspiration Gallery"
+- Subheading: "Discover 500+ curated nail art designs..."
+- CTA buttons: "Explore Gallery", "Get Weekly Trends"
+
+### Stats Bar
+- 500+ Design Ideas
+- 25+ Style Categories
+- Daily New Updates
+- 100k+ Inspired Users
+
+### Category Grid (8-12 categories)
+1. French Tips
+   - Short description (50 words)
+   - Design count: 42
+   - Cover image
+   
+2. Ombre Nails
+   - Short description (50 words)
+   - Design count: 38
+   [... continue for all categories]
+
+### About Inspo Section (Collapsible - 250-300 words)
+- What is nail design inspiration?
+- How to use our gallery
+- Benefits of trying new designs
+- How designs are curated
+
+### FAQ Section (8-10 questions, 400-450 words total)
+Q1: "What are the most popular nail designs in 2025?"
+A: [50 words - cover trending styles, mention specific categories]
+
+Q2: "How do I choose nail designs for my skin tone?"
+A: [50 words - reference skin-tones topic page internally]
+
+[... 8-10 total questions from PAA research]
+
+---
+
+## Category Page: French Tips (/inspo/french-tips)
+
+### Hero Section
+- H1: "French Tip Nail Designs"
+- Description: [75 words - what french tips are, why they're popular]
+- Stats: 42 designs, updated Nov 2025, 15k views
+
+### Filter Options
+- Color: White, Nude, Pink, Red, Colored, Glitter
+- Style: Classic, Modern, Reverse, Ombre, Minimalist
+- Length: Short, Medium, Long, Extra Long
+- Occasion: Everyday, Wedding, Party, Office, Vacation
+- Difficulty: Beginner, Intermediate, Advanced
+
+### Gallery (42 designs)
+[Each image with metadata]:
+- Title: "Classic White French Tips with Gold Accent"
+- Alt text: "Classic french manicure with thin white tips and gold glitter accent on ring finger"
+- Tags: [classic, white, gold, elegant, wedding]
+- Colors: [{name: "Nude Base", hex: "#F5E6D3"}, {name: "White Tip", hex: "#FFFFFF"}]
+- Techniques: ["French tip application", "Gold leaf accent"]
+- Difficulty: Intermediate
+- Time: 45 minutes
+- Occasions: [wedding, formal, everyday]
+
+### About French Tips (Collapsible - 200-250 words)
+- History of french manicure
+- Why french tips are timeless
+- Modern variations
+- Best nail shapes for french tips
+- Keywords naturally integrated
+
+### Design Tips (150-200 words across 3 tips)
+Tip 1: "Perfect White Line" (50-70 words)
+Tip 2: "Choosing the Right Base" (50-70 words)
+Tip 3: "Making It Last" (50-70 words)
+
+### FAQ Section (8-10 questions, 300-400 words)
+Q1: "What nail shapes work best for french tips?"
+A: [40-50 words - almond, oval, square recommendations]
+
+Q2: "How do I make french tips last longer?"
+A: [40-50 words - prep, base coat, top coat tips]
+
+[... 8-10 questions total]
+
+### Related Categories
+- Ombre Nails (50 words)
+- Chrome Nails (50 words)
+- Minimalist Designs (50 words)
+
+---
+
+## Individual Design Page (/inspo/french-tips/design-001)
+
+### Design Details
+- Title: "Classic White French Tips with Gold Accent"
+- Description: [100 words - detailed description]
+- Tags: [classic, white, gold, elegant, wedding]
+
+### Design Breakdown
+- Colors: 2 colors with hex codes
+- Techniques: 3-4 techniques listed
+- Difficulty: Intermediate (70%)
+- Time: 45 minutes
+- Best for: Weddings, formal events
+- Season: All seasons
+- Nail shape: Almond, oval
+- Length: Medium to long
+
+### Products (4-6 products)
+1. [Product name, brand, price, rating, affiliate link]
+2. [Product name, brand, price, rating, affiliate link]
+[... 4-6 total]
+
+### Similar Designs (8-10 designs)
+[Carousel of related french tip designs]
+3. Component Requirements Document:
+markdown# COMPONENT SPECIFICATIONS
+
+## FilterBar Component
+
+### Props:
+- categories: string[]
+- activeFilters: FilterState
+- onFilterChange: (key, value) => void
+- onClearFilters: () => void
+- totalResults: number
+
+### State Management:
+- filterOpen: boolean (mobile panel)
+- activeFilters: object
+- sortBy: string
+
+### Features:
+- Sticky positioning (top: 0)
+- Desktop: horizontal filter chips
+- Mobile: slide-up panel
+- Active filter count badge
+- Clear all button
+- Sort dropdown integration
+
+### Accessibility:
+- ARIA labels on all buttons
+- Keyboard navigation support
+- Focus management
+- Screen reader announcements
+
+---
+
+## MasonryGallery Component
+
+### Props:
+- designs: Design[]
+- onDesignClick: (id) => void
+- onLike: (id) => void
+- onSave: (id) => void
+- view: 'grid' | 'masonry'
+
+### Layout:
+- Native CSS masonry (grid-template-rows: masonry)
+- Fallback: CSS columns for unsupported browsers
+- Responsive breakpoints:
+  - Mobile: 2 columns
+  - Tablet: 3 columns
+  - Desktop: 4 columns
+  - Large: 5 columns
+
+### Features:
+- Lazy loading (intersection observer)
+- Infinite scroll
+- Hover effects with design details
+- Like/save heart animation
