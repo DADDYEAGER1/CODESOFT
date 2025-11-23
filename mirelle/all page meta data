@@ -1,0 +1,1419 @@
+=== ALL EXTRACTED METADATA ===
+
+
+
+----- FILE: src\components\NewsletterForm.tsx -----
+
+export const metadata: Metadata = {
+//   title: "Subscribe to Mirellé Newsletter",
+//   description: "Get exclusive nail art trends, seasonal designs, beauty tips, and product recommendations delivered to your inbox. Join the Mirellé community today!",
+//   openGraph: {
+//     title: "Subscribe to Mirellé Newsletter",
+//     description: "Get exclusive nail art trends, seasonal designs, and beauty tips delivered to your inbox.",
+//   },
+// };
+
+
+
+----- FILE: src\app\layout.tsx -----
+
+export const metadata: Metadata = {
+  metadataBase: new URL('https://mirelleinspo.com'),
+  title: {
+    default: "Mirellé | Nail Art Ideas, Trends & Tutorials 2025",
+    template: "%s | Mirellé"
+  },
+  description: "Explore 2025's top nail art trends, DIY tutorials, seasonal nail designs, and expert tips. Get inspired for Pinterest-worthy nails every mood and occasion.",
+  keywords: [
+    "nail art ideas 2025",
+    "nail trends 2025",
+    "DIY nail tutorials",
+    "seasonal nail designs",
+    "Pinterest nails",
+    "modern nail inspiration",
+    "nail care tips",
+    "winter nails 2025",
+    "Christmas nails",
+    "acrylic nails",
+    "gel nail designs",
+    "nail art for beginners",
+    "salon nail ideas",
+    "at-home manicure"
+  ],
+  authors: [{ name: "Mirellé Team", url: "https://mirelleinspo.com/about" }],
+  creator: "Mirellé Team",
+  publisher: "Mirellé",
+  formatDetection: {
+    telephone: false,
+    email: false,
+    address: false,
+  },
+  
+  other: {
+    'distribution': 'global',
+    'rating': 'general',
+    'coverage': 'worldwide',
+    'target': 'all',
+    'audience': 'all',
+    'language': 'en-US',
+    'classification': 'Beauty, Fashion, Nail Art, Tutorials, DIY, Lifestyle',
+    'referrer': 'always',
+    'revisit-after': '7 days',
+    
+    // Pinterest optimization (removed domain_verify - DNS already handles it)
+    'pinterest-rich-pin': 'true',
+    'pinterest:partner': 'true',
+    
+    // Global Pinterest catalog hints
+    'og:site_name': 'Mirellé',
+    'og:locale': 'en_US',
+    'og:locale:alternate': 'en_GB',
+  },
+  
+  openGraph: {
+    type: "website",
+    locale: "en_US",
+    url: "https://mirelleinspo.com",
+    siteName: "Mirellé",
+    title: "Mirellé | Nail Art Ideas, Trends & Tutorials 2025",
+    description: "Discover the latest nail art trends, creative tutorials, seasonal designs, and Pinterest-inspired nail ideas curated by Mirelle.",
+    images: [
+      {
+        url: "/og-image.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Mirellé Inspo - Nail Art Inspiration",
+      },
+    ],
+  },
+  
+  twitter: {
+    card: "summary_large_image",
+    title: "Mirellé | Nail Art Ideas & Tutorials 2025",
+    description: "Stay ahead with 2025 nail trends, seasonal designs, and Pinterest-worthy tutorials. Expert tips and inspiration for every mood.",
+    images: ["/twitter-image.jpg"],
+    creator: "@mirelleinspo",
+    site: "@mirelleinspo",
+  },
+  
+  robots: {
+    index: true,
+    follow: true,
+    nocache: false,
+    googleBot: {
+      index: true,
+      follow: true,
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1,
+    },
+  },
+  
+  icons: {
+    icon: [
+      { url: "/favicon.ico", sizes: "48x48" },
+      { url: "/favicon.svg", type: "image/svg+xml" },
+      { url: "/favicon-16x16.png", sizes: "16x16", type: "image/png" },
+      { url: "/favicon-32x32.png", sizes: "32x32", type: "image/png" },
+    ],
+    apple: [
+      { url: "/apple-touch-icon.png", sizes: "180x180", type: "image/png" },
+    ],
+  },
+  
+  manifest: "/site.webmanifest",
+  
+  alternates: {
+    canonical: "https://mirelleinspo.com",
+    languages: {
+      'en-US': 'https://mirelleinspo.com',
+      'en-GB': 'https://mirelleinspo.com',
+      'en-CA': 'https://mirelleinspo.com',
+      'en-AU': 'https://mirelleinspo.com',
+      'en': 'https://mirelleinspo.com',
+    },
+  },
+};
+
+
+
+----- FILE: src\app\page.tsx -----
+
+export const metadata: Metadata = {
+  title: 'Mirellé - 500+ Nail Designs & Press-Ons from $3.99',
+  description: 'Get 500+ trending nail designs, premium press-ons from $3.99, and salon secrets. DIY tutorials, seasonal collections, expert tips. Join 50K+ nail lovers!',
+  keywords: 'nail inspiration 2025, press on nails, nail art ideas, trending nail designs, seasonal nails, DIY nail tutorials, cheap press ons, nail care tips, chrome nails, gel nail designs, holiday nails, nail products under $10',
+  alternates: {
+    canonical: 'https://mirelleinspo.com',
+  },
+};
+
+
+
+----- FILE: src\app\about\page.tsx -----
+
+export const metadata: Metadata = {
+  
+//   title: "About Mirellé - 50K+ Nail Lovers Trust Our Expert Tips",
+//   description: "Meet the team behind 1,000+ nail designs, 2.5M Pinterest views, and trusted tips. Our mission: Make salon-quality nails accessible to everyone. Join 50K+ DIY-ers!",
+//   keywords: [
+//     "about Mirellé",
+//     "nail inspiration platform",
+//     "nail art community",
+//     "trusted nail tips",
+//     "DIY nail experts",
+//     "nail design curators",
+//     "Mirellé mission",
+//     "nail care education"
+//   ],
+//   authors: [{ name: "Mirelle" }],
+//   creator: "Mirelle",
+//   publisher: "Mirelle",
+//   alternates: {
+//     canonical: 'https://mirelleinspo.com/about',
+//   },
+//   robots: {
+//     index: true,
+//     follow: true,
+//     googleBot: {
+//       index: true,
+//       follow: true,
+//       "max-video-preview": -1,
+//       "max-image-preview": "large",
+//       "max-snippet": -1,
+//     },
+//   },
+//   openGraph: {
+//     title: "About Mirellé - The Team Behind 1,000+ Nail Designs",
+//     description: "Discover how we curate 1,000+ designs, reach 2.5M on Pinterest, and help 50K+ achieve salon nails at home. Our story, mission, and nail obsession explained!",
+//     url: 'https://mirelleinspo.com/about',
+//     type: 'website',
+//     siteName: "Mirelle",
+//     locale: "en_US",
+//     images: [
+//       {
+//         url: "https://mirelleinspo.com/og-default.png",
+//         width: 1200,
+//         height: 630,
+//         alt: "About Mirellé nail inspiration platform trusted by 50K+ nail enthusiasts for expert DIY tips and trending designs",
+//         type: "image/png",
+//       },
+//     ],
+//   },
+//   twitter: {
+//     card: "summary_large_image",
+//     title: "About Mirellé - 50K+ Trust Our Nail Expertise",
+//     description: "Meet the team behind 1,000+ designs, 2.5M Pinterest views. Our mission: Salon nails for everyone!",
+//     images: ["https://mirelleinspo.com/og-default.png"],
+//     creator: "@mirelleinspo",
+//     site: "@mirelleinspo",
+//   },
+//   other: {
+//     "pin:description": "Learn about Mirellé - trusted by 50K+ for expert nail tips, 1,000+ designs, 2.5M Pinterest views. Our mission: Make salon nails accessible to everyone!",
+//     "pinterest-rich-pin": "true",
+//     "article:publisher": "https://www.pinterest.com/mirelle_inspo",
+//     "og:see_also": "https://mirelleinspo.com/about",
+//   },
+// };
+
+
+
+----- FILE: src\app\blog\page.tsx -----
+
+export const metadata: Metadata = {
+  title: 'Nail Care Blog - Expert Tips, Trends & Tutorials | Mirelle',
+  description: 'Discover 100+ expert nail care articles, seasonal trends, step-by-step tutorials, and professional manicure tips. Your ultimate guide to beautiful, healthy nails.',
+  keywords: 'nail care blog, nail tips 2025, nail trends, nail art tutorials, manicure tips, nail health, professional nail care, seasonal nail designs, nail inspiration, beauty blog',
+  authors: [{ name: 'Mirelle' }],
+  creator: 'Mirelle',
+  publisher: 'Mirelle',
+  alternates: {
+    canonical: 'https://mirelleinspo.com/blog',
+  },
+  robots: {
+    index: true,
+    follow: true,
+    nocache: false,
+    googleBot: {
+      index: true,
+      follow: true,
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1,
+    },
+  },
+  openGraph: {
+    title: 'Nail Care Blog - Expert Tips, Trends & Tutorials | Mirelle',
+    description: 'Discover expert nail care articles, seasonal trends, and step-by-step tutorials. Your ultimate guide to beautiful, healthy nails.',
+    type: 'website',
+    url: 'https://mirelleinspo.com/blog',
+    siteName: 'Mirelle',
+    locale: 'en_US',
+    images: [{
+      url: 'https://mirelleinspo.com/blog-hero.jpg',
+      width: 1200,
+      height: 630,
+      alt: 'Mirelle Nail Care Blog - 100+ Expert Articles & Tutorials',
+      type: 'image/jpeg',
+    }],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Nail Care Blog | Mirelle',
+    description: 'Expert nail care articles, trends & tutorials',
+    images: ['https://mirelleinspo.com/blog-hero.jpg'],
+    creator: '@mirelleinspo',
+    site: '@mirelleinspo',
+  },
+  other: {
+    // 🆕 PINTEREST META FOR BLOG LISTING
+    'pin:description': 'Browse 100+ expert nail care articles, seasonal trends, and tutorials. Get inspired with the latest nail art ideas and professional tips.',
+    'pin:media': 'https://mirelleinspo.com/blog-hero.jpg',
+    'pinterest-rich-pin': 'true',
+    
+    // 🆕 Enhanced image metadata
+    'og:image:width': '1200',
+    'og:image:height': '630',
+    'og:image:alt': 'Mirelle Nail Care Blog - 100+ Expert Articles & Tutorials',
+    'og:image:type': 'image/jpeg',
+    
+    // 🆕 Blog collection metadata
+    'og:type': 'blog',
+    'article:publisher': 'https://www.pinterest.com/mirelle_inspo',
+    
+    // 🆕 Pinterest category targeting
+    'pinterest:category': 'Beauty',
+    'pinterest:board_suggestion': 'Nail Care Tips',
+    
+    // 🆕 Content freshness signals
+    'og:updated_time': new Date().toISOString(),
+    
+    // 🆕 Twitter card enhancements
+    'twitter:label1': 'Articles',
+    'twitter:data1': '100+ posts',
+    'twitter:label2': 'Topics',
+    'twitter:data2': 'Nail Art, Trends, Tutorials',
+  },
+};
+
+
+
+----- FILE: src\app\brands\page.tsx -----
+
+export const metadata: Metadata = {
+  title: 'Featured Brands - Curated Nail Product Partners | Mirellé',
+  description: 'Discover our curated collection of nail care brands. From gel polish to press-ons, tools to treatments—each brand is tested and trusted by Mirellé.',
+  keywords: 'nail brands, gel polish brands, press on nails, nail tools, nail care products, professional nail products',
+  alternates: {
+    canonical: 'https://mirelleinspo.com/brands',
+  },
+  openGraph: {
+    title: 'Featured Brands - Curated Nail Product Partners | Mirellé',
+    description: 'Discover trusted nail brands curated by Mirellé. Quality tested, professionally reviewed.',
+    url: 'https://mirelleinspo.com/brands',
+    type: 'website',
+    siteName: 'Mirellé',
+    images: [{
+      url: 'https://mirelleinspo.com/og-brands.jpg',
+      width: 1200,
+      height: 630,
+      alt: 'Mirellé Featured Brands Collection',
+    }],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Featured Brands | Mirellé',
+    description: 'Curated nail brands tested and trusted by Mirellé.',
+    images: ['https://mirelleinspo.com/og-brands.jpg'],
+    creator: '@mirelleinspo',
+  },
+};
+
+
+
+----- FILE: src\app\contact\layout.tsx -----
+
+export const metadata: Metadata = {
+  title: "Contact Mirellé - Questions? Collaborations? We Reply Fast",
+  description: "Got nail questions or collab ideas? Email team.mirelle@gmail.com. 24-48hr response time. Business inquiries, design requests, partnerships welcome. Let's chat!",
+  keywords: [
+    "contact Mirellé",
+    "nail design inquiries",
+    "brand collaboration nails",
+    "nail blog contact",
+    "partnership opportunities",
+    "nail design requests",
+    "business inquiries nails",
+    "Mirellé email",
+    "nail inspiration contact"
+  ],
+  authors: [{ name: "Mirelle" }],
+  creator: "Mirelle",
+  publisher: "Mirelle",
+  alternates: {
+    canonical: "https://mirelleinspo.com/contact",
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
+  },
+  openGraph: {
+    title: "Contact Mirellé - We Reply Within 24-48 Hours",
+    description: "Questions about nails? Want to collaborate? Email team.mirelle@gmail.com. Business inquiries, design requests, partnerships welcome. Fast response guaranteed!",
+    type: "website",
+    url: "https://mirelleinspo.com/contact",
+    siteName: "Mirelle",
+    locale: "en_US",
+    images: [
+      {
+        url: "https://mirelleinspo.com/og-default.png",
+        width: 1200,
+        height: 630,
+        alt: "Contact Mirellé for nail design inquiries, brand collaborations, and partnership opportunities",
+        type: "image/png",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Contact Mirellé - Fast Response Guaranteed",
+    description: "Questions? Collabs? Design requests? We reply in 24-48hrs. Email team.mirelle@gmail.com",
+    images: ["https://mirelleinspo.com/og-default.png"],
+    creator: "@mirelleinspo",
+    site: "@mirelleinspo",
+  },
+  other: {
+    "pin:description": "Contact Mirellé for nail questions, collaborations, design requests. Fast 24-48hr response. Email team.mirelle@gmail.com",
+    "pinterest-rich-pin": "true",
+    "article:publisher": "https://www.pinterest.com/mirelle_inspo",
+    "og:see_also": "https://mirelleinspo.com/contact",
+  },
+};
+
+
+
+----- FILE: src\app\inspo\page.tsx -----
+
+export const metadata: Metadata = {
+  title: '1,000+ Nail Designs 2025 - French, Chrome, Ombre & More | Mirellé',
+  description: 'Get 1,000+ nail designs with step-by-step tutorials. French tips, chrome, ombre, glitter - every style, every skill level. New designs added weekly. Save yours now!',
+  keywords: [
+    'nail design inspiration 2025',
+    'nail ideas 2025',
+    'trending nail designs',
+    'french tip nails',
+    'ombre nail ideas',
+    'chrome nails tutorial',
+    'minimalist nail art',
+    'glitter nails designs',
+    'summer nail inspiration',
+    'winter nail designs',
+  ],
+  alternates: {
+    canonical: 'https://mirelleinspo.com/inspo',
+  },
+  openGraph: {
+    title: '1,000+ Nail Designs 2025 - French, Chrome, Ombre & More',
+    description: 'Browse 1,000+ nail designs with tutorials. Every style, skill level. New designs weekly!',
+    url: 'https://mirelleinspo.com/inspo',
+    siteName: 'Mirellé',
+    type: 'website',
+    images: [
+      {
+        url: 'https://mirelleinspo.com/images/inspo-hero.jpg',
+        width: 1200,
+        height: 630,
+        alt: 'Gallery of 1000+ nail designs including French tips, chrome, ombre and more',
+      },
+    ],
+  },
+};
+
+
+
+----- FILE: src\app\inspo\[design]\page.tsx -----
+
+export const metadata: Metadata = {
+//   title: 'Winter Nail Designs 2025 | 100+ Trending Ideas & Inspiration',
+//   description: 'Explore 100+ stunning winter nail designs for 2025. From snowflake nails to chrome finishes, burgundy glam & velvet manicures - trending ideas inside!',
+//   keywords: [
+//     'winter nail designs 2025',
+//     'winter nails 2025',
+//     'winter nail ideas',
+//     'winter manicure ideas',
+//     'winter nail art',
+//     'seasonal nail designs',
+//     'snowflake nails',
+//     'chrome winter nails',
+//     'burgundy winter nails',
+//     'mocha nails 2025',
+//     'velvet nail finish',
+//     'minimalist winter nails',
+//     'Pantone 2025 nails',
+//     'festive nail designs',
+//     'holiday nail inspiration'
+//   ],
+//   authors: [{ name: "Mirellé" }],
+//   creator: "Mirellé",
+//   publisher: "Mirellé",
+//   alternates: {
+//     canonical: 'https://mirelleinspo.com/inspo',
+//   },
+//   robots: {
+//     index: true,
+//     follow: true,
+//     googleBot: {
+//       index: true,
+//       follow: true,
+//       "max-video-preview": -1,
+//       "max-image-preview": "large",
+//       "max-snippet": -1,
+//     },
+//   },
+//   openGraph: {
+//     title: 'Winter Nail Designs 2025 | 100+ Trending Ideas & Inspiration',
+//     description: 'Discover 100+ winter nail designs: snowflake art, chrome finishes, burgundy glam & Pantone 2025 mocha nails. Trending styles for every occasion!',
+//     url: 'https://mirelleinspo.com/inspo',
+//     siteName: 'Mirellé',
+//     locale: 'en_US',
+//     type: 'website',
+//     images: [
+//       {
+//         url: 'https://mirelleinspo.com/images/inspo/winter-nails-2025-hero.webp',
+//         width: 1200,
+//         height: 630,
+//         alt: 'Gallery of trending winter nail designs 2025 featuring snowflake art, chrome finishes, burgundy wine red and mocha brown manicures',
+//         type: 'image/webp',
+//       }
+//     ],
+//   },
+//   twitter: {
+//     card: 'summary_large_image',
+//     title: 'Winter Nail Designs 2025: 100+ Trending Ideas',
+//     description: 'Snowflake nails, chrome finishes, burgundy glam & Pantone 2025 mocha. Save these winter nail trends!',
+//     images: ['https://mirelleinspo.com/images/inspo/winter-nails-2025-hero.webp'],
+//     creator: "@mirelleinspo",
+//     site: "@mirelleinspo",
+//   },
+//   other: {
+//     "pin:description": 'Explore 100+ winter nail designs 2025: snowflake art, chrome finishes, burgundy wine red & Pantone mocha nails. Trending styles inside!',
+//     "pin:media": 'https://mirelleinspo.com/images/inspo/winter-nails-2025-hero.webp',
+//     "pinterest-rich-pin": "true",
+//     "og:image:width": "1200",
+//     "og:image:height": "630",
+//     "og:image:alt": 'Gallery of trending winter nail designs 2025 featuring snowflake art, chrome finishes, burgundy wine red and mocha brown manicures',
+//     "og:image:type": "image/webp",
+//     "article:publisher": "https://www.pinterest.com/mirelle_inspo",
+//     "pinterest:category": "winter nail designs 2025",
+//     "pinterest:board_suggestion": "Winter Nail Art Ideas",
+//     "og:see_also": "https://mirelleinspo.com/inspo",
+//   },
+// };
+
+
+
+----- FILE: src\app\pinterest\page.tsx -----
+
+export const metadata: Metadata = {
+  title: "Follow Mirellé on Pinterest - 2.5M+ Monthly Pin Views",
+  description:
+    "Join 50K+ nail lovers on Pinterest! Get 500+ nail designs, seasonal boards, DIY tutorials, and trending inspiration. 2.5M+ monthly views. Follow for daily nail ideas!",
+  keywords:
+    "Mirellé Pinterest, nail art Pinterest, nail design boards, Pinterest nail inspiration, trending nail pins, seasonal nail ideas, DIY nail tutorials Pinterest, nail care pins",
+  authors: [{ name: "Mirelle" }],
+  creator: "Mirelle",
+  publisher: "Mirelle",
+  alternates: {
+    canonical: "https://mirelleinspo.com/pinterest",
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
+  },
+  openGraph: {
+    title: "Follow Mirellé on Pinterest - 2.5M+ Monthly Views",
+    description:
+      "Join 50K+ on Pinterest for 500+ nail designs, seasonal boards, and trending inspiration. 2.5M+ monthly views. Follow for daily nail ideas that actually work!",
+    type: "website",
+    url: "https://mirelleinspo.com/pinterest",
+    siteName: "Mirelle",
+    locale: "en_US",
+    images: [
+      {
+        url: "https://mirelleinspo.com/og-default.png",
+        width: 1200,
+        height: 630,
+        alt: "Mirellé Pinterest profile featuring trending nail designs, seasonal boards, and DIY nail tutorials with 2.5M monthly views",
+        type: "image/png",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Mirellé Pinterest - 2.5M+ Monthly Pin Views",
+    description: "500+ nail boards. Daily trending designs. Seasonal inspiration. Follow 50K+ nail lovers on Pinterest!",
+    images: ["https://mirelleinspo.com/og-default.png"],
+    creator: "@mirelleinspo",
+    site: "@mirelleinspo",
+  },
+  other: {
+    "pin:description": "Follow Mirellé on Pinterest for 500+ nail designs, seasonal boards, DIY tutorials. 2.5M+ monthly views. Join 50K+ nail lovers!",
+    "pinterest-rich-pin": "true",
+    "article:publisher": "https://www.pinterest.com/mirelle_inspo",
+    "pinterest:category": "nail art inspiration",
+    "og:see_also": "https://mirelleinspo.com/pinterest",
+  },
+};
+
+
+
+----- FILE: src\app\shop\page.tsx -----
+
+export const metadata: Metadata = {
+  title: 'Press-On Nails 2025: Chrome, Velvet & Trending Designs | Mirelle',
+  description: 'Salon-quality press-on nails in 10 minutes. Chrome, velvet & glazed 2025 trends last 7-14 days. Reusable 2-10x, zero damage. Shop 200+ designs from fall to festive.',
+  keywords: [
+    'press-on nails',
+    'press on nails 2025',
+    'fake nails',
+    'reusable press-on nails',
+    'chrome nails',
+    'velvet nails',
+    'trendy nail designs',
+    'salon quality press-ons',
+    'best press-on nails',
+    'affordable nail art'
+  ],
+  openGraph: {
+    title: 'Press-On Nails 2025: Chrome, Velvet & Trending Designs | Mirellé ',
+    description: 'Salon-quality press-on nails that last 7-14 days. 200+ trending designs including chrome, velvet, and seasonal collections. Apply in minutes, reusable 2-10 times.',
+    url: 'https://mirelleinspo.com/shop',
+    siteName: 'Mirelle',
+    locale: 'en_US',
+    type: 'website',
+    images: [
+      {
+        url: '/images/shop-hero-press-on-nails.jpg',
+        width: 1200,
+        height: 630,
+        alt: 'Mirelle Press-On Nails Collection 2025 - Chrome, Velvet and Trendy Designs'
+      }
+    ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Press-On Nails 2025: Chrome, Velvet & Trending Designs',
+    description: 'Salon-quality press-on nails in 10 minutes. 200+ designs, lasts 2 weeks, reusable.',
+    images: ['/images/shop-hero-press-on-nails.jpg'],
+  },
+  alternates: {
+    canonical: 'https://mirelleinspo.com/shop',
+  },
+}
+
+export default async function ShopPage() {
+  const categorySlugs = getAllCategorySlugs();
+  const categories = categorySlugs.map(slug => getCategoryData(slug)).filter(Boolean);
+  
+  // Get showcase products and FAQs
+  const showcaseProducts = await getShowcaseProducts();
+  const showcaseImages = showcaseProducts.map(p => p.image);
+  const faqs = await getMainFAQs();
+  
+  const faqSchema = generateFAQSchema(faqs);
+
+  // Category hero images mapping (using showcase images)
+  const categoryHeroImages: { [key: string]: string } = {
+    'fall': showcaseImages[0] || '/fallsection.jpg',
+    'christmas': showcaseImages[1] || '/christmassection.jpg',
+    'winter': showcaseImages[2] || '/wintersection.jpg',
+    'halloween': showcaseImages[3] || '/halloweenbannerimg.jpg',
+    'new-year': showcaseImages[4] || '/newyearsection.jpeg',
+    'trendy': showcaseImages[5] || '/trendsection.jpg',
+  };
+
+
+
+----- FILE: src\app\subscribe\page.tsx -----
+
+export const metadata: Metadata = {
+  title: "Get 50+ Nail Hacks Free - Join 50K+ Nail Lovers Weekly",
+  description: "Join 50K+ getting weekly nail secrets, trending designs, exclusive discounts, and pro tips in their inbox. Free nail care guide + 20% off welcome gift inside!",
+  openGraph: {
+    title: "Free Nail Secrets Every Week - Join 50K+ Subscribers",
+    description: "Get trending designs, salon secrets, and exclusive 20% off code. Free nail care guide when you subscribe. 50K+ nail lovers can't be wrong!",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Get Free Nail Hacks Weekly - 50K+ Already Subscribed",
+    description: "Trending designs, pro secrets, exclusive discounts. Free guide + 20% off inside!",
+    creator: "@mirelleinspo",
+    site: "@mirelleinspo",
+  },
+  other: {
+    "pin:description": "Join 50K+ getting weekly nail secrets, trending designs, exclusive discounts in their inbox. Free nail care guide + 20% off welcome gift!",
+    "pinterest-rich-pin": "true",
+  },
+};
+
+
+
+----- FILE: src\app\topics\page.tsx -----
+
+export const metadata: Metadata = {
+  title: 'Nail Care Topics & Guides - Expert Tips for Every Style | Mirelle',
+  description: 'Explore comprehensive nail care guides covering nail health, art techniques, skin tone matching, seasonal trends, at-home hacks, and modern inspiration. Expert advice for beautiful nails.',
+  keywords: 'nail care guide, nail art tutorials, nails for skin tones, seasonal nail trends, at-home nail hacks, DIY manicure, nail health tips, modern nail designs, nail care basics, professional nail techniques',
+  authors: [{ name: 'Mirelle' }],
+  creator: 'Mirelle',
+  publisher: 'Mirelle',
+  alternates: {
+    canonical: 'https://mirelleinspo.com/topics',
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1,
+    },
+  },
+  openGraph: {
+    title: 'Nail Care Topics & Guides | Mirelle',
+    description: 'Expert nail care guides covering health, art, trends, and techniques for every style.',
+    type: 'website',
+    url: 'https://mirelleinspo.com/topics',
+    siteName: 'Mirelle',
+    locale: 'en_US',
+    images: [{
+      url: 'https://mirelleinspo.com/featuretopicbanner.jpg',
+      width: 1200,
+      height: 630,
+      alt: 'Mirelle Featured Nail Care Topics',
+      type: 'image/jpeg',
+    }],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Nail Care Topics & Guides | Mirelle',
+    description: 'Expert guides for nail health, art & trends',
+    images: ['https://mirelleinspo.com/featuretopicbanner.jpg'],
+    creator: '@mirelleinspo',
+    site: '@mirelleinspo',
+  },
+};
+
+
+
+----- FILE: src\app\topics\at-home-hacks\page.tsx -----
+
+export const metadata: Metadata = {
+  title: 'Easy Nail Hacks at Home: 50+ DIY Tips for Salon Nails | Mirellé',
+  description: 'Discover 50+ easy nail hacks for perfect at-home manicures! From quick-dry tricks to lasting polish, get salon-quality nails without leaving home. Beginner-friendly tips inside.',
+  keywords: [
+    'easy nail hacks at home',
+    'DIY nail hacks',
+    'nail hacks for beginners',
+    'at-home manicure tips',
+    'simple nail tips',
+    'DIY manicure hacks',
+    'nail polish hacks',
+    'home nail care',
+    'salon nails at home',
+    'quick nail fixes',
+    'beginner nail tips',
+    'nail art hacks'
+  ],
+  authors: [{ name: 'Mirellé Team', url: 'https://mirelleinspo.com/about' }],
+  creator: 'Mirellé',
+  publisher: 'Mirellé',
+  alternates: {
+    canonical: 'https://mirelleinspo.com/topics/at-home-hacks',
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1,
+    },
+  },
+  openGraph: {
+    title: 'Easy Nail Hacks at Home: 50+ DIY Tips for Salon Nails',
+    description: 'Transform your DIY manicures with these genius nail hacks! Learn how to make polish last longer, fix mistakes instantly, and create trending designs at home—no salon needed.',
+    type: 'article',
+    url: 'https://mirelleinspo.com/topics/at-home-hacks',
+    siteName: 'Mirellé',
+    locale: 'en_US',
+    images: [{
+      url: 'https://mirelleinspo.com/at-home-nail-hacks-hero-diy-manicure-tools-2025.jpg',
+      width: 1200,
+      height: 630,
+      alt: 'Complete guide to easy nail hacks at home featuring DIY manicure tools and beginner-friendly techniques',
+    }],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Easy Nail Hacks at Home: 50+ DIY Tips for Salon Nails',
+    description: 'Get salon-quality nails at home with these proven DIY hacks and beginner tips',
+    images: ['https://mirelleinspo.com/at-home-nail-hacks-hero-diy-manicure-tools-2025.jpg'],
+    creator: '@mirelleinspo',
+  },
+};
+
+
+
+----- FILE: src\app\topics\modern-women\page.tsx -----
+
+export const metadata: Metadata = {
+  title: 'Professional Nails for Work: 60+ Ideas for Office-Appropriate Manicures | Mirellé',
+  description: 'Discover 60+ professional nail ideas perfect for work! From office-appropriate colors to elegant designs, find manicures for every industry and occasion. Includes 2025 trends, seasonal styles, and expert tips for polished, work-ready nails.',
+  keywords: [
+    'professional nails for work',
+    'office appropriate nails',
+    'work friendly nails',
+    'professional nail colors',
+    'office nails elegant',
+    'business nails professional',
+    'corporate nails designs',
+    'work appropriate nail length',
+    'interview nails professional',
+    'minimalist professional nails'
+  ],
+  authors: [{ name: 'Mirellé Team', url: 'https://mirelleinspo.com/about' }],
+  creator: 'Mirellé',
+  publisher: 'Mirellé',
+  alternates: {
+    canonical: 'https://mirelleinspo.com/topics/modern-women',
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1,
+    },
+  },
+  openGraph: {
+    title: 'Professional Nails for Work: 60+ Office-Appropriate Manicure Ideas',
+    description: 'Complete guide to professional nails: trending 2025 colors, industry-specific tips, seasonal designs, and elegant work manicures',
+    type: 'article',
+    url: 'https://mirelleinspo.com/topics/modern-women',
+    siteName: 'Mirellé',
+    locale: 'en_US',
+    images: [{
+      url: 'https://mirelleinspo.com/professional-nails-work-hero-elegant-office-manicure.jpg',
+      width: 1200,
+      height: 630,
+      alt: 'Professional nails for work showing elegant office appropriate manicure designs for modern women',
+    }],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Professional Nails for Work: 60+ Office-Appropriate Ideas',
+    description: 'Expert guide to work-friendly nails with 2025 trends and seasonal designs',
+    images: ['https://mirelleinspo.com/professional-nails-work-hero-elegant-office-manicure.jpg'],
+    creator: '@mirelleinspo',
+  },
+};
+
+
+
+----- FILE: src\app\topics\nail-care-guide\page.tsx -----
+
+export const metadata: Metadata = {
+  title: 'How to Strengthen Nails Naturally: 15 Expert Tips (2025) | Mirellé',
+  description: 'Discover 15 proven ways to strengthen nails naturally at home. From biotin-rich foods to DIY nail soaks, get stronger, healthier nails without harsh chemicals. Plus trending 2025 nail care tips!',
+  keywords: [
+    'strengthen nails naturally',
+    'how to strengthen nails',
+    'natural nail strengthening',
+    'brittle nails home remedies',
+    'nail care tips',
+    'healthy nail growth',
+    'biotin for nails',
+    'DIY nail care',
+    'weak nails treatment',
+    'nail strengthening routine'
+  ],
+  authors: [{ name: 'Mirellé Team', url: 'https://mirelleinspo.com/about' }],
+  creator: 'Mirellé',
+  publisher: 'Mirellé',
+  alternates: {
+    canonical: 'https://mirelleinspo.com/topics/nail-care-guide',
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1,
+    },
+  },
+  openGraph: {
+    title: 'How to Strengthen Nails Naturally: 15 Expert Tips (2025)',
+    description: 'Proven natural methods to strengthen weak, brittle nails at home. Expert tips, DIY remedies, and 2025 trends.',
+    type: 'article',
+    url: 'https://mirelleinspo.com/topics/nail-care-guide',
+    siteName: 'Mirellé',
+    locale: 'en_US',
+    images: [{
+      url: 'https://mirelleinspo.com/nail-care-hero-healthy-strong-nails-natural.jpg',
+      width: 1200,
+      height: 630,
+      alt: 'Complete guide to strengthening nails naturally with expert tips for healthy nail growth',
+    }],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'How to Strengthen Nails Naturally: 15 Expert Tips (2025)',
+    description: 'Transform weak, brittle nails with these proven natural remedies',
+    images: ['https://mirelleinspo.com/nail-care-hero-healthy-strong-nails-natural.jpg'],
+    creator: '@mirelleinspo',
+  },
+};
+
+
+
+----- FILE: src\app\topics\seasonal-trends\page.tsx -----
+
+export const metadata: Metadata = {
+  title: 'Nail Designs by Season: 2025 Trend Guide for Every Month | Mirellé',
+  description: 'Discover stunning nail designs by season for 2025. From spring pastels to winter velvet nails, find perfect manicure ideas for every month. Trending now!',
+  keywords: [
+    'nail designs by season',
+    'seasonal nail ideas',
+    'nail trends for every season',
+    'seasonal nail art',
+    'nail colors by season',
+    'spring nail designs 2025',
+    'summer nail trends',
+    'fall nail art',
+    'winter manicure ideas',
+    'year round nail designs',
+    'seasonal manicure trends 2025',
+    'nail art for every season'
+  ],
+  authors: [{ name: 'Mirellé Team', url: 'https://mirelleinspo.com/about' }],
+  creator: 'Mirellé',
+  publisher: 'Mirellé',
+  alternates: {
+    canonical: 'https://mirelleinspo.com/topics/seasonal-trends',
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1,
+    },
+  },
+  openGraph: {
+    title: 'Nail Designs by Season: 2025 Trend Guide for Every Month',
+    description: 'Master seasonal nail designs with our complete guide. Spring pastels, summer brights, fall mocha tones & winter glam for 2025.',
+    type: 'article',
+    url: 'https://mirelleinspo.com/topics/seasonal-trends',
+    siteName: 'Mirellé',
+    locale: 'en_US',
+    images: [{
+      url: 'https://mirelleinspo.com/seasonal-nail-designs-hero-four-seasons-2025.jpg',
+      width: 1200,
+      height: 630,
+      alt: 'Complete guide to nail designs by season featuring winter, spring, summer and fall trends for 2025',
+    }],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Nail Designs by Season: 2025 Trend Guide for Every Month',
+    description: 'From spring pastels to winter velvet - your year-round manicure guide',
+    images: ['https://mirelleinspo.com/seasonal-nail-designs-hero-four-seasons-2025.jpg'],
+    creator: '@mirelleinspo',
+  },
+};
+
+
+
+----- FILE: src\app\topics\skin-tones\page.tsx -----
+
+export const metadata: Metadata = {
+  title: 'How to Find Your Skin Undertone: Complete 2025 Guide | Mirellé',
+  description: 'Discover your skin undertone with 5 easy at-home tests. Learn warm vs cool vs neutral undertones, perfect foundation matching, and best nail colors for YOUR skin tone!',
+  keywords: [
+    'find your skin undertone',
+    'skin undertone test',
+    'warm cool neutral undertone',
+    'vein test undertone',
+    'foundation matching guide',
+    'nail colors for skin tone',
+    'undertone vs skin tone',
+    'olive undertone',
+    'jewelry test skin tone',
+    'best nail polish for undertone'
+  ],
+  authors: [{ name: 'Mirellé Team', url: 'https://mirelleinspo.com/about' }],
+  creator: 'Mirellé',
+  publisher: 'Mirellé',
+  alternates: {
+    canonical: 'https://mirelleinspo.com/topics/skin-tones',
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1,
+    },
+  },
+  openGraph: {
+    title: 'How to Find Your Skin Undertone: Complete 2025 Guide',
+    description: 'Master undertone identification with 5 simple tests. Plus discover the best nail colors for warm, cool, neutral, and olive undertones.',
+    type: 'article',
+    url: 'https://mirelleinspo.com/topics/skin-tones',
+    siteName: 'Mirellé',
+    locale: 'en_US',
+    images: [{
+      url: 'https://mirelleinspo.com/skin-undertone-hero-diverse-hands-nail-polish.jpg',
+      width: 1200,
+      height: 630,
+      alt: 'Complete guide to finding skin undertone with diverse hands showing nail polish colors for different undertones',
+    }],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'How to Find Your Skin Undertone: Complete 2025 Guide',
+    description: 'Stop buying wrong makeup! Discover your undertone and perfect nail colors',
+    images: ['https://mirelleinspo.com/skin-undertone-hero-diverse-hands-nail-polish.jpg'],
+    creator: '@mirelleinspo',
+  },
+};
+
+
+
+----- FILE: src\app\work-with-us\page.tsx -----
+
+export const metadata: Metadata = {
+  title: 'Partner With Mirellé - Reach 50K+ Nail Enthusiasts',
+  description: "Collaborate with Mirellé. 50K+ monthly engaged users, 2.5M Pinterest views. Brand partnerships, sponsored content, product features. Let's grow together!",
+  openGraph: {
+    title: 'Partner With Mirellé - Reach 50K+ Nail Lovers',
+    description: 'Join brands getting 50K+ impressions monthly. Sponsored posts, product reviews, Pinterest campaigns. Authentic nail community engagement guaranteed.',
+    type: 'website',
+  },
+};
+
+
+
+=== JSON METADATA FILES ===
+
+
+--- FILE: shop-categories.json ---
+{
+  "categories": {
+    "fall": {
+      "slug": "fall",
+      "name": "Fall Nail Collection",
+      "displayName": "Fall Nails",
+      "season": "Autumn",
+      "year": 2025,
+      "description": "Embrace autumn's warmth with rich, cozy nail colors and seasonal designs",
+      "heroImage": "https://images.unsplash.com/photo-1604991405679-98d08f7fbb08",
+      "gradientFrom": "amber-900",
+      "gradientVia": "orange-800",
+      "gradientTo": "red-900",
+      "emojis": ["🍂", "🍁", "🎃", "🌰"],
+      "ctas": ["Autumn Elegance", "Cozy Vibes", "Fall Glamour", "Harvest Beauty", "Warm Tones"],
+      "tldr": {
+        "summary": [
+          "50+ autumn designs from maple leaves to pumpkin spice",
+          "Premium products starting at $3.99",
+          "Complete kits include everything for salon results",
+          "Ships within 24 hours for seasonal deadlines"
+        ],
+        "keyTakeaways": ["Free shipping $35+", "2-3 week wear", "Easy removal"]
+      },
+      "seo": {
+        "ogImage": "/og-default.png",
+        "title": "Fall Nails 2025: 53+ Autumn Press-Ons from $3.99 | Mirellé",
+        "description": "Shop 53+ fall designs with burgundy, pumpkin & maple leaves. Premium press-ons from $3.99. Free ship $35+. Perfect for autumn. Fast 24hr delivery!",
+        "keywords": "fall nails 2025, autumn nail designs, fall press on nails, maple leaf nails, thanksgiving nails, pumpkin nails, burgundy nails, autumn manicure, fall nail art, best fall press ons, cheap autumn nails, diy fall nails, cozy fall nails"
+      },
+      "relatedCategories": ["christmas", "new-year", "trendy", "winter"],
+      "testimonials": [
+        {
+          "name": "Sarah M.",
+          "review": "The Maple Leaf Design Autumn False Nail are absolutely perfect for fall! Love the seasonal vibes.",
+          "product": "Maple Leaf Design Autumn False Nail"
+        },
+        {
+          "name": "Emily R.",
+          "review": "These fall press-ons are gorgeous! The warm tones are perfect for the season.",
+          "product": "Fall Collection"
+        },
+        {
+          "name": "Jessica L.",
+          "review": "Amazing quality and the autumn designs are so creative. Will definitely order again!",
+          "product": "Autumn Press-On Set"
+        }
+      ]
+    },
+    "christmas": {
+      "slug": "christmas",
+      "name": "Christmas Nail Collection",
+      "displayName": "Christmas Nails",
+      "season": "Winter Holiday",
+      "year": 2025,
+      "description": "Celebrate the holidays with festive nail designs featuring snowflakes, reindeer, and sparkle",
+      "heroImage": "https://images.unsplash.com/photo-1543589077-47d81606c1bf",
+      "gradientFrom": "red-900",
+      "gradientVia": "green-800",
+      "gradientTo": "red-800",
+      "emojis": ["🎄", "🎅", "❄️", "🎁"],
+      "ctas": ["Holiday Sparkle", "Festive Cheer", "Winter Magic", "Joyful Nails", "Merry & Bright"],
+      "tldr": {
+        "summary": [
+          "60+ festive designs from classic to modern trends",
+          "Premium products starting at $4.99",
+          "Complete kits include everything for salon results",
+          "Ships within 24 hours for holiday deadlines"
+        ],
+        "keyTakeaways": ["Free shipping $35+", "2-3 week wear", "Easy removal"]
+      },
+      "seo": {
+        "ogImage": "/og-default.png",
+        "title": "Christmas Nails 2025: 63+ Festive Press-Ons from $3.99 | Mirellé",
+        "description": "Shop 63+ chrome, glitter & classic Christmas designs. Premium press-ons from $3.99. Free ship $35+. Perfect for holiday parties. Fast 24hr shipping!",
+        "keywords": "christmas nails 2025, holiday press on nails, festive nail designs, cheap christmas nails, chrome christmas nails, red and green nails, snowflake nails, santa nails, xmas manicure, holiday nail art, christmas press ons under $10, best christmas nails, diy holiday nails"
+      },
+      "relatedCategories": ["winter", "new-year", "trendy", "fall"],
+      "testimonials": [
+        {
+          "name": "Amanda K.",
+          "review": "Perfect for the holiday season! The snowflake details are stunning.",
+          "product": "Christmas Snowflake Collection"
+        },
+        {
+          "name": "Rachel P.",
+          "review": "These festive nails completed my holiday look. So many compliments!",
+          "product": "Holiday Sparkle Set"
+        },
+        {
+          "name": "Nicole T.",
+          "review": "Quality is amazing and they lasted through all my holiday parties!",
+          "product": "Christmas Press-Ons"
+        }
+      ]
+    },
+    "winter": {
+      "slug": "winter",
+      "name": "Winter Nail Collection",
+      "displayName": "Winter Nails",
+      "season": "Winter",
+      "year": 2025,
+      "description": "Elegant winter nail designs with icy blues, frosted whites, and cozy winter vibes",
+      "heroImage": "https://images.unsplash.com/photo-1516026672322-bc52d61a55d5",
+      "gradientFrom": "blue-900",
+      "gradientVia": "cyan-800",
+      "gradientTo": "slate-900",
+      "emojis": ["❄️", "⛄", "🌨️", "☃️"],
+      "ctas": ["Icy Elegance", "Frosted Beauty", "Winter Wonder", "Snowy Chic", "Cozy Glam"],
+      "tldr": {
+        "summary": [
+          "55+ icy designs from frosted elegance to cozy glam",
+          "Premium products starting at $4.99",
+          "Complete kits include everything for salon results",
+          "Ships within 24 hours for winter season"
+        ],
+        "keyTakeaways": ["Free shipping $35+", "2-3 week wear", "Easy removal"]
+      },
+      "seo": {
+        "ogImage": "/og-default.png",
+        "title": "Winter Nails 2025: 57+ Icy Chrome Press-Ons from $3.99 | Mirellé",
+        "description": "Shop 57+ snowflake, icy blue & mocha mousse designs. Premium press-ons from $3.99. Free ship $35+. Pantone 2025 Color included. Ships 24hrs!",
+        "keywords": "winter nails 2025, icy nail designs, winter press on nails, snowflake nails, frosted nails, mocha mousse nails, blue winter nails, winter manicure, cozy winter nails, best winter press ons, pantone 2025 nails, chrome winter nails"
+      },
+      "relatedCategories": ["christmas", "fall", "trendy", "new-year"],
+      "testimonials": [
+        {
+          "name": "Lauren S.",
+          "review": "The icy blue shades are absolutely gorgeous! Perfect winter vibes.",
+          "product": "Winter Frost Collection"
+        },
+        {
+          "name": "Michelle D.",
+          "review": "These winter designs are so elegant. Love the snowflake details!",
+          "product": "Icy Elegance Set"
+        },
+        {
+          "name": "Sophia G.",
+          "review": "Best winter nails I've found! Quality and design are top-notch.",
+          "product": "Winter Press-Ons"
+        }
+      ]
+    },
+    "halloween": {
+      "slug": "halloween",
+      "name": "Halloween Nail Collection",
+      "displayName": "Halloween Nails",
+      "season": "Fall Holiday",
+      "year": 2025,
+      "description": "Spooky and stylish Halloween nail designs with ghosts, pumpkins, and haunting details",
+      "heroImage": "https://images.unsplash.com/photo-1509557965875-b88c97052f0e",
+      "gradientFrom": "orange-900",
+      "gradientVia": "purple-800",
+      "gradientTo": "black",
+      "emojis": ["🎃", "👻", "🦇", "🕷️"],
+      "ctas": ["Spooky Chic", "Haunting Beauty", "Creepy Cute", "Gothic Glam", "Frightful Fun"],
+      "tldr": {
+        "summary": [
+          "45+ spooky designs from creepy cute to gothic glam",
+          "Premium products starting at $4.99",
+          "Complete kits include everything for Halloween parties",
+          "Ships within 24 hours for costume deadlines"
+        ],
+        "keyTakeaways": ["Free shipping $35+", "2-3 week wear", "Easy removal"]
+      },
+      "seo": {
+        "ogImage": "/og-default.png",
+        "title": "Halloween Nails 2025: 47+ Spooky Press-Ons from $3.99 | Mirellé",
+        "description": "Shop 47+ chrome ghost, pumpkin & gothic designs. Fun press-ons from $3.99. Free ship $35+. Perfect for Halloween parties. Ships in 24hrs!",
+        "keywords": "halloween nails 2025, spooky press on nails, halloween nail designs, pumpkin nails, ghost nails, gothic nails, halloween manicure, creepy nails, best halloween press ons, cheap halloween nails, chrome halloween nails, diy spooky nails"
+      },
+      "relatedCategories": ["fall", "trendy", "christmas", "new-year"],
+      "testimonials": [
+        {
+          "name": "Brittany H.",
+          "review": "These Halloween nails are the perfect mix of spooky and cute!",
+          "product": "Halloween Spooky Collection"
+        },
+        {
+          "name": "Ashley W.",
+          "review": "Got so many compliments at my Halloween party. Love the ghost designs!",
+          "product": "Haunting Beauty Set"
+        },
+        {
+          "name": "Megan C.",
+          "review": "Perfect for Halloween! The orange and black combo is iconic.",
+          "product": "Halloween Press-Ons"
+        }
+      ]
+    },
+    "new-year": {
+      "slug": "new-year",
+      "name": "New Year Nail Collection",
+      "displayName": "New Year Nails",
+      "season": "Winter Holiday",
+      "year": 2025,
+      "description": "Glamorous New Year's Eve nail designs with sparkle, glitter, and midnight magic",
+      "heroImage": "https://images.unsplash.com/photo-1467810563316-b5476525c0f9",
+      "gradientFrom": "yellow-600",
+      "gradientVia": "purple-800",
+      "gradientTo": "pink-900",
+      "emojis": ["🎉", "✨", "🥂", "🎊"],
+      "ctas": ["Midnight Sparkle", "Party Glam", "New Year Magic", "Celebration Style", "Glitter Goals"],
+      "tldr": {
+        "summary": [
+          "40+ glamorous designs from midnight sparkle to party glam",
+          "Premium products starting at $5.99",
+          "Complete kits include everything for NYE celebrations",
+          "Ships within 24 hours for New Year's parties"
+        ],
+        "keyTakeaways": ["Free shipping $35+", "2-3 week wear", "Easy removal"]
+      },
+      "seo": {
+        "ogImage": "/og-default.png",
+        "title": "New Year Nails 2025: 43+ Chrome Glitter Press-Ons from $4.99 | Mirellé",
+        "description": "Shop 43+ silver, gold & glitter NYE designs. Stunning press-ons from $4.99. Free ship $35+. Ring in 2025 with style. Fast 24hr delivery!",
+        "keywords": "new year nails 2025, nye press on nails, new years nail designs, glitter nails, sparkle nails, party press ons, celebration nails, nye manicure, best new year press ons, midnight nails, chrome nye nails, cheap party nails"
+      },
+      "relatedCategories": ["winter", "trendy", "christmas", "fall"],
+      "testimonials": [
+        {
+          "name": "Victoria B.",
+          "review": "Perfect for NYE! The glitter and sparkle were exactly what I needed.",
+          "product": "New Year Sparkle Collection"
+        },
+        {
+          "name": "Olivia M.",
+          "review": "These nails made my New Year's celebration even more special!",
+          "product": "Midnight Magic Set"
+        },
+        {
+          "name": "Taylor J.",
+          "review": "So glamorous! Everyone asked where I got my nails done.",
+          "product": "NYE Press-Ons"
+        }
+      ]
+    },
+    "trendy": {
+      "slug": "trendy",
+      "name": "Trendy Nail Collection",
+      "displayName": "Trendy Nails",
+      "season": "Year-round",
+      "year": 2025,
+      "description": "Latest nail trends and styles that are popular right now across all seasons",
+      "heroImage": "https://images.unsplash.com/photo-1604654894610-df63bc536371",
+      "gradientFrom": "pink-600",
+      "gradientVia": "purple-600",
+      "gradientTo": "blue-600",
+      "emojis": ["💅", "✨", "💖", "🌟"],
+      "ctas": ["Trend Setter", "Modern Chic", "Style Icon", "Fashion Forward", "On Trend"],
+      "tldr": {
+        "summary": [
+          "65+ trending designs from viral styles to modern classics",
+          "Premium products starting at $4.99",
+          "Complete kits include everything for fashion-forward looks",
+          "Ships within 24 hours to stay on trend"
+        ],
+        "keyTakeaways": ["Free shipping $35+", "2-3 week wear", "Easy removal"]
+      },
+      "seo": {
+        "ogImage": "/og-default.png",
+        "title": "Trendy Nails 2025: 67+ Viral Press-On Styles from $3.99 | Mirellé",
+        "description": "Shop 67+ trending designs with viral TikTok & Pinterest styles. Modern press-ons from $3.99. Free ship $35+. Stay ahead of trends. Ships 24hrs!",
+        "keywords": "trendy nails 2025, latest nail designs, trendy press on nails, viral nails, modern press ons, popular nails, fashion nails, 2025 nail trends, best trendy press ons, stylish nails, tiktok nails, pinterest nail trends"
+      },
+      "relatedCategories": ["fall", "winter", "christmas", "new-year"],
+      "testimonials": [
+        {
+          "name": "Isabella F.",
+          "review": "Always on trend! These designs are exactly what's popular right now.",
+          "product": "Trendy Collection"
+        },
+        {
+          "name": "Ava N.",
+          "review": "Love keeping up with the latest nail trends. This collection is perfect!",
+          "product": "Modern Chic Set"
+        },
+        {
+          "name": "Emma R.",
+          "review": "Fashion-forward designs that always get compliments. Highly recommend!",
+          "product": "Trendy Press-Ons"
+        }
+      ]
+    }
+  }
+}
+
+
+
+--- FILE: christmas.json ---
+{
+  "category": "christmas",
+  "html": "<h2>Shop Christmas Press-On Nails 2025</h2><p>Celebrate the festive season with our curated <strong>Christmas press-on nails collection for 2025</strong>. From classic red and green motifs to sparkling glitter, metallic accents, and cozy winter vibes, these designs capture the joy and magic of the holidays. Perfect for parties, family gatherings, or simply adding a festive touch to your everyday look, each set is designed for easy application, long-lasting wear, and Instagram-ready style.</p><p>Whether you're into subtle elegance or full-on holiday glam, our Christmas collection ensures your nails are on point throughout the season. Get ready to shine under the mistletoe and spread festive cheer with nails that wow.</p>",
+  "perfectFor": [
+    "Holiday parties",
+    "Family gatherings",
+    "Festive photoshoots",
+    "Christmas dinners",
+    "Gift-ready manicures"
+  ]
+}
+
+
+
+--- FILE: fall.json ---
+{
+  "category": "fall",
+  "html": "<h2>Shop Fall Press-On Nails 2025</h2><p>Welcome to the ultimate <strong>fall press-on nails collection for 2025</strong> – your destination for stunning autumn nail designs that capture the warmth, mystery, and moodiness of the season. From cozy pumpkin spice tones to deep burgundy, moody chrome, forest greens, latte swirls, and golden metallics, our fall sets are carefully curated to complement every outfit, from chunky sweaters to faux leather fits.</p><p>Whether you’re looking for <strong>Thanksgiving nails, pumpkin patch aesthetics, dark academia vibes, cinnamon caramel latte nails, or Halloween glam</strong>, this collection is where seasonal trends and long-lasting luxe meet. Designed for comfort, confidence, and that instantly polished look – with zero salon time.</p><p>Express your autumn mood with press-ons that look professionally done, stay on securely, and photograph beautifully for your cozy fall content moments. 🍂</p>",
+  "perfectFor": [
+    "Thanksgiving dinners",
+    "Pumpkin patch days",
+    "Fall weddings & events",
+    "Dark academia / cozy aesthetic content",
+    "Everyday autumn outfits"
+  ]
+}
+
+
+
+--- FILE: halloween.json ---
+{
+  "category": "halloween",
+  "html": "<h2>Shop Halloween Press-On Nails 2025</h2><p>Embrace the spooky season with our curated <strong>Halloween press-on nails collection for 2025</strong>. From classic orange and black motifs to glittering accents and eerie designs, these nails capture the essence of Halloween festivities. Whether you're attending a costume party or simply getting into the spirit, our press-ons offer convenience and style without the salon visit.</p><p>Designed for easy application and long-lasting wear, these nails are perfect for those who want to add a touch of Halloween magic to their look effortlessly.</p>",
+  "perfectFor": [
+    "Halloween parties",
+    "Costume events",
+    "Spooky season celebrations",
+    "Photo shoots",
+    "Trick-or-treating"
+  ]
+}
+
+
+
+--- FILE: new-year.json ---
+{
+  "category": "new-year",
+  "html": "<h2>Shop New Year Press-On Nails 2025</h2><p>Ring in the new year with our <strong>New Year press-on nails collection for 2025</strong>. Featuring designs that sparkle and shine, these nails are perfect for welcoming the new year in style. From glittering accents to bold patterns, our collection ensures your nails are as festive as your celebrations.</p><p>Designed for easy application and lasting wear, these press-ons are the perfect accessory for your New Year's Eve look.</p>",
+  "perfectFor": [
+    "New Year's Eve parties",
+    "Celebratory events",
+    "Festive gatherings",
+    "Countdown celebrations",
+    "Holiday photoshoots"
+  ]
+}
+
+
+
+--- FILE: trendy.json ---
+{
+  "category": "trendy",
+  "html": "<h2>Shop Trendy Press-On Nails 2025</h2><p>Stay ahead of the fashion curve with our <strong>trendy press-on nails collection for 2025</strong>. Featuring the latest designs and colors, these nails are perfect for those who want to make a statement. From bold patterns to minimalist chic, our collection caters to every style preference.</p><p>Easy to apply and designed for durability, these press-ons ensure your nails are always on trend.</p>",
+  "perfectFor": [
+    "Fashion-forward individuals",
+    "Social media influencers",
+    "Night outs",
+    "Special events",
+    "Everyday wear"
+  ]
+}
+
+
+
+--- FILE: winter.json ---
+{
+  "category": "winter",
+  "html": "<h2>Shop Winter Press-On Nails 2025</h2><p>Embrace the chill with our <strong>winter press-on nails collection for 2025</strong>. From icy blues to frosty whites, these designs capture the serene beauty of the winter season. Perfect for cozy nights by the fire or festive gatherings, our nails add a touch of elegance to your winter wardrobe.</p><p>Crafted for easy application and long-lasting wear, these press-ons are a must-have for the season.</p>",
+  "perfectFor": [
+    "Winter holidays",
+    "Snowy day outings",
+    "Cozy gatherings",
+    "New Year celebrations",
+    "Seasonal photoshoots"
+  ]
+}
+
+
