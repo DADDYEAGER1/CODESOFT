@@ -1,0 +1,187 @@
+{
+  "cluster_metadata": {
+    "cluster_topic": "Acrylic Nails Cost",
+    "topic_slug": "acrylic-nails-cost",
+    "target_audience": "Global, Tier 1 countries",
+    "total_posts": 5,
+    "intent_breakdown": {
+      "informational": 4,
+      "inspirational": 0,
+      "tutorial": 0,
+      "comparison": 1,
+      "seasonal_trend": 0
+    },
+    "pillar_post_slug": "how-much-do-acrylic-nails-cost",
+    "created_date": "2026-07-04",
+    "cluster_type_override": "HIGH-CPC INFORMATIONAL CONTENT — gallery link disabled, no product recommendations, no transactional intent, ads-only monetization",
+    "notes": "Intent breakdown is informational/comparison-only (no tutorial/inspirational) — expected pattern for a pricing-focused cost cluster where no natural how-to angle exists. Flagged and approved by user."
+  },
+
+  "existing_site_posts_excluded": [],
+
+  "posts": [
+    {
+      "post_id": 1,
+      "role": "pillar",
+      "title": "How Much Do Acrylic Nails Cost? Full Price Breakdown",
+      "slug": "how-much-do-acrylic-nails-cost",
+      "primary_keyword": "acrylic nails cost",
+      "intent": "informational",
+      "search_mode": "inspiration_mode",
+      "suggested_hook_trigger": "Trigger 3 — Specificity/Numbers",
+      "search_demand_signals": [
+        "Extremely high repeat-coverage — 10+ independent sources (Young Nails, StyleSeat, Posh Salon & Boutique, ThePricer, NailsSalonPrices, BTArtbox) all target this exact phrase as their primary article title",
+        "Consistent convergence on the same $30-60 base price range across unrelated sources confirms this is a genuinely high-volume, stable searched query"
+      ],
+      "why_included": "Broadest keyword in the space, confirmed topic from the approved eligible-topics list. Natural umbrella post that every narrower acrylic cost question links back to.",
+      "internal_links": {
+        "links_to": [
+          { "slug": "acrylic-nail-fill-cost", "anchor_text": "how much acrylic nail fills cost", "type": "spoke" },
+          { "slug": "acrylic-nail-removal-cost", "anchor_text": "the cost of removing acrylic nails", "type": "spoke" },
+          { "slug": "acrylic-vs-gel-nails-cost", "anchor_text": "whether acrylic or gel nails cost less", "type": "spoke" },
+          { "slug": "acrylic-nail-kit-cost-at-home", "anchor_text": "the cost of doing acrylic nails at home", "type": "spoke" }
+        ],
+        "receives_links_from": [
+          { "slug": "acrylic-nail-fill-cost", "anchor_text": "the full breakdown of acrylic nail costs" },
+          { "slug": "acrylic-nail-removal-cost", "anchor_text": "how much acrylic nails cost overall" },
+          { "slug": "acrylic-vs-gel-nails-cost", "anchor_text": "the full acrylic nail cost breakdown" },
+          { "slug": "acrylic-nail-kit-cost-at-home", "anchor_text": "salon acrylic nail pricing" }
+        ]
+      },
+      "status": "approved"
+    },
+    {
+      "post_id": 2,
+      "role": "spoke",
+      "title": "Acrylic Nail Fill Cost: What to Expect",
+      "slug": "acrylic-nail-fill-cost",
+      "primary_keyword": "acrylic nail fill cost",
+      "intent": "informational",
+      "search_mode": "decision_mode",
+      "suggested_hook_trigger": "Trigger 3 — Specificity/Numbers",
+      "search_demand_signals": [
+        "Dedicated fill-cost coverage across StyleSeat, TheBeautyFoodie, Poshish Art, and Aaliyah's School of Nails, all independently pricing fills separately from full sets",
+        "Consistent $20-50 fill-price range confirmed across multiple unrelated sources"
+      ],
+      "why_included": "Real, distinct recurring-cost query representing a different searcher moment (maintenance) than the pillar (first-time purchase). NOTE: 'nail fills cost' is a separate topic reserved on the approved eligible-topics list (Tier 4, #7) — this spoke is intentionally kept brief and acrylic-specific to avoid cannibalizing that future standalone cluster's pillar keyword.",
+      "internal_links": {
+        "links_to": [
+          { "slug": "how-much-do-acrylic-nails-cost", "anchor_text": "the full breakdown of acrylic nail costs", "type": "pillar" },
+          { "slug": "acrylic-nail-removal-cost", "anchor_text": "the cost of removing acrylic nails", "type": "spoke" }
+        ],
+        "receives_links_from": [
+          { "slug": "how-much-do-acrylic-nails-cost", "anchor_text": "how much acrylic nail fills cost" },
+          { "slug": "acrylic-nail-removal-cost", "anchor_text": "acrylic nail fill cost" }
+        ]
+      },
+      "status": "approved"
+    },
+    {
+      "post_id": 3,
+      "role": "spoke",
+      "title": "How Much Does It Cost to Remove Acrylic Nails?",
+      "slug": "acrylic-nail-removal-cost",
+      "primary_keyword": "acrylic nail removal cost",
+      "intent": "informational",
+      "search_mode": "decision_mode",
+      "suggested_hook_trigger": "Trigger 3 — Specificity/Numbers",
+      "search_demand_signals": [
+        "Strong, consistent dedicated coverage across StyleSeat, RainyRoses (6 separate articles), and Beauty Courses Online, all converging on a $10-30 price range",
+        "Distinct searcher intent confirmed — consistently framed as its own question separate from application or fill pricing"
+      ],
+      "why_included": "Clearly its own distinct query representing a separate searcher moment (ending a set) from getting one or filling one — high, sustained repeat-coverage confirms real demand.",
+      "internal_links": {
+        "links_to": [
+          { "slug": "how-much-do-acrylic-nails-cost", "anchor_text": "how much acrylic nails cost overall", "type": "pillar" },
+          { "slug": "acrylic-nail-fill-cost", "anchor_text": "acrylic nail fill cost", "type": "spoke" }
+        ],
+        "receives_links_from": [
+          { "slug": "how-much-do-acrylic-nails-cost", "anchor_text": "the cost of removing acrylic nails" },
+          { "slug": "acrylic-nail-fill-cost", "anchor_text": "the cost of removing acrylic nails" }
+        ]
+      },
+      "status": "approved"
+    },
+    {
+      "post_id": 4,
+      "role": "spoke",
+      "title": "Acrylic Nails vs. Gel Nails: Which Is Cheaper?",
+      "slug": "acrylic-vs-gel-nails-cost",
+      "primary_keyword": "acrylic vs gel nails cost",
+      "intent": "comparison",
+      "search_mode": "decision_mode",
+      "suggested_hook_trigger": "Trigger 1 — Curiosity Gap",
+      "search_demand_signals": [
+        "Multiple dedicated comparison articles (TheLocalGem x2, LoveToKnow, Lilac St) directly answer this comparison question with specific side-by-side pricing",
+        "Consistent finding across sources that acrylics are slightly cheaper long-term despite similar upfront cost, confirming a stable, real comparison query"
+      ],
+      "why_included": "Real, validated comparison query distinct from either single-topic cost page. NOTE: since the gel-nails-cost cluster is already built, this spoke should link out to that cluster's pillar for gel-specific pricing depth rather than duplicating it here.",
+      "internal_links": {
+        "links_to": [
+          { "slug": "how-much-do-acrylic-nails-cost", "anchor_text": "the full acrylic nail cost breakdown", "type": "pillar" },
+          { "slug": "gel-nails-cost", "anchor_text": "the full breakdown of gel nail costs", "type": "external_cluster" }
+        ],
+        "receives_links_from": [
+          { "slug": "how-much-do-acrylic-nails-cost", "anchor_text": "whether acrylic or gel nails cost less" }
+        ]
+      },
+      "status": "approved"
+    },
+    {
+      "post_id": 5,
+      "role": "spoke",
+      "title": "How Much Do Acrylic Nails Cost at Home? (DIY Kit Guide)",
+      "slug": "acrylic-nail-kit-cost-at-home",
+      "primary_keyword": "acrylic nail kit cost at home",
+      "intent": "informational",
+      "search_mode": "decision_mode",
+      "suggested_hook_trigger": "Trigger 1 — Curiosity Gap",
+      "search_demand_signals": [
+        "BTArtbox Nails and multiple removal-cost sources independently surface DIY kit pricing ($20-60) as a distinct budget-conscious sub-query separate from salon pricing",
+        "Recurring 'DIY vs professional' framing appears across cost guides as its own decision point"
+      ],
+      "why_included": "Distinct searcher intent (DIY/budget-conscious vs. professional service) — represents a real fork in the road for someone asking the same base cost question with a different constraint.",
+      "internal_links": {
+        "links_to": [
+          { "slug": "how-much-do-acrylic-nails-cost", "anchor_text": "salon acrylic nail pricing", "type": "pillar" }
+        ],
+        "receives_links_from": [
+          { "slug": "how-much-do-acrylic-nails-cost", "anchor_text": "the cost of doing acrylic nails at home" }
+        ]
+      },
+      "status": "approved"
+    }
+  ],
+
+  "keyword_ownership_registry": {
+    "description": "Master list of all primary keywords — one per post, no overlaps",
+    "entries": [
+      { "primary_keyword": "acrylic nails cost", "owned_by_slug": "how-much-do-acrylic-nails-cost", "owned_by_title": "How Much Do Acrylic Nails Cost? Full Price Breakdown", "source": "new post" },
+      { "primary_keyword": "acrylic nail fill cost", "owned_by_slug": "acrylic-nail-fill-cost", "owned_by_title": "Acrylic Nail Fill Cost: What to Expect", "source": "new post" },
+      { "primary_keyword": "acrylic nail removal cost", "owned_by_slug": "acrylic-nail-removal-cost", "owned_by_title": "How Much Does It Cost to Remove Acrylic Nails?", "source": "new post" },
+      { "primary_keyword": "acrylic vs gel nails cost", "owned_by_slug": "acrylic-vs-gel-nails-cost", "owned_by_title": "Acrylic Nails vs. Gel Nails: Which Is Cheaper?", "source": "new post" },
+      { "primary_keyword": "acrylic nail kit cost at home", "owned_by_slug": "acrylic-nail-kit-cost-at-home", "owned_by_title": "How Much Do Acrylic Nails Cost at Home? (DIY Kit Guide)", "source": "new post" }
+    ]
+  },
+
+  "merged_posts_log": [],
+
+  "killed_posts_log": [
+    {
+      "topic": "Shape-based pricing (coffin, stiletto, almond cost upcharges)",
+      "reason": "no demand signal as a standalone query — appears exclusively as a subsection inside broader cost articles across every source checked; never its own article title or independently searched query"
+    },
+    {
+      "topic": "Nail art / design add-on pricing",
+      "reason": "same pattern as shape pricing — universally a subsection within larger cost guides, no standalone query evidence"
+    },
+    {
+      "topic": "Pink-and-white / French tip acrylic cost",
+      "reason": "same pattern — consistently folded into main cost guides rather than existing as its own searched query or dedicated page"
+    },
+    {
+      "topic": "Comprehensive/deep acrylic nail fill cost guide",
+      "reason": "overlap — 'nail fills cost' is reserved as a separate upcoming topic (Tier 4, #7) on the approved eligible-topics list; kept as a brief acrylic-specific spoke here instead of a full standalone treatment to avoid cannibalizing that future cluster's pillar keyword"
+    }
+  ]
+}
