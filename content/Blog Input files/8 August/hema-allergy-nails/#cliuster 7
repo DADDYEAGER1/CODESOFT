@@ -1,0 +1,251 @@
+{
+  "cluster_metadata": {
+    "cluster_topic": "HEMA Allergy Nails",
+    "topic_slug": "hema-allergy-nails",
+    "target_audience": "Global, Tier 1 countries",
+    "total_posts": 7,
+    "intent_breakdown": {
+      "informational": 4,
+      "inspirational": 0,
+      "tutorial": 1,
+      "comparison": 2,
+      "seasonal_trend": 0
+    },
+    "pillar_post_slug": "what-is-hema-nail-products",
+    "created_date": "2026-07-04",
+    "cluster_type_override": "HIGH-CPC INFORMATIONAL CONTENT — gallery link disabled, no product recommendations, no transactional intent, ads-only monetization"
+  },
+
+  "existing_site_posts_excluded": [],
+
+  "posts": [
+    {
+      "post_id": 1,
+      "role": "pillar",
+      "title": "What Is HEMA in Nail Products? (And What HEMA-Free Actually Means)",
+      "slug": "what-is-hema-nail-products",
+      "primary_keyword": "what is HEMA in nail polish",
+      "intent": "informational",
+      "search_mode": "inspiration_mode",
+      "suggested_hook_trigger": "Trigger 3 — Specificity/Numbers",
+      "search_demand_signals": [
+        "Consistent 'what is HEMA' framing repeated verbatim across Diamonds & Gloss, The Nail Hub, Scratch Magazine, and C8 Nail Supply",
+        "Trade press (Scratch Magazine) publishes a dedicated explainer answering this exact question for a general nail-industry audience"
+      ],
+      "why_included": "Broadest, most foundational query in the space — the natural entry point every narrower HEMA question builds from.",
+      "internal_links": {
+        "links_to": [
+          { "slug": "is-hema-banned-eu", "anchor_text": "whether HEMA is actually banned in the EU", "type": "spoke" },
+          { "slug": "hema-allergy-symptoms", "anchor_text": "HEMA allergy symptoms to watch for", "type": "spoke" },
+          { "slug": "is-hema-free-gel-polish-as-good", "anchor_text": "whether HEMA-free gel polish performs as well", "type": "spoke" },
+          { "slug": "hema-free-gel-polish-brands", "anchor_text": "the full list of HEMA-free gel polish brands", "type": "spoke" },
+          { "slug": "hema-vs-tpo-free-gel-polish", "anchor_text": "how HEMA and TPO differ in gel polish", "type": "spoke" },
+          { "slug": "how-to-avoid-hema-allergy", "anchor_text": "how to reduce your risk of a HEMA allergy", "type": "spoke" }
+        ],
+        "receives_links_from": [
+          { "slug": "is-hema-banned-eu", "anchor_text": "what HEMA is and why it's used in nail products" },
+          { "slug": "hema-allergy-symptoms", "anchor_text": "what HEMA is in nail products" },
+          { "slug": "is-hema-free-gel-polish-as-good", "anchor_text": "what HEMA is and why it's used" },
+          { "slug": "hema-free-gel-polish-brands", "anchor_text": "what HEMA is in nail products" },
+          { "slug": "hema-vs-tpo-free-gel-polish", "anchor_text": "what HEMA is in nail products" },
+          { "slug": "how-to-avoid-hema-allergy", "anchor_text": "what HEMA is and how it's used" }
+        ]
+      },
+      "status": "approved"
+    },
+    {
+      "post_id": 2,
+      "role": "spoke",
+      "title": "Is HEMA Actually Banned in the EU? (What's True and What's Not)",
+      "slug": "is-hema-banned-eu",
+      "primary_keyword": "is HEMA banned",
+      "intent": "informational",
+      "search_mode": "decision_mode",
+      "suggested_hook_trigger": "Trigger 1 — Curiosity Gap",
+      "search_demand_signals": [
+        "Trade magazine Scratch directly quotes industry experts (Doug Schoon, CTPA director Caroline Rainsford) explicitly debunking 'HEMA is banned' rumors circulating on social media",
+        "Conflicting claims across dozens of independent brand blogs (some say 'banned', others correctly say 'restricted to professional use') confirms genuine, widespread public confusion and search volume around this exact question"
+      ],
+      "why_included": "Validated real confusion-correction angle — the accurate picture (HEMA restricted to professional-use-only since 2021, not banned like TPO) is being actively mis-reported, creating real demand for a clear, correct answer.",
+      "internal_links": {
+        "links_to": [
+          { "slug": "what-is-hema-nail-products", "anchor_text": "what HEMA is in nail products", "type": "pillar" },
+          { "slug": "hema-vs-tpo-free-gel-polish", "anchor_text": "how HEMA and TPO differ in gel polish", "type": "spoke" }
+        ],
+        "receives_links_from": [
+          { "slug": "what-is-hema-nail-products", "anchor_text": "whether HEMA is actually banned in the EU" },
+          { "slug": "hema-vs-tpo-free-gel-polish", "anchor_text": "is HEMA actually banned in the EU" }
+        ]
+      },
+      "status": "approved"
+    },
+    {
+      "post_id": 3,
+      "role": "spoke",
+      "title": "HEMA Allergy Symptoms: How to Tell If Your Gel Manicure Is the Cause",
+      "slug": "hema-allergy-symptoms",
+      "primary_keyword": "HEMA allergy symptoms",
+      "intent": "informational",
+      "search_mode": "decision_mode",
+      "suggested_hook_trigger": "Trigger 1 — Curiosity Gap",
+      "search_demand_signals": [
+        "Repeated symptom-list framing across Diamonds & Gloss, C8 Nail Supply, Manucurist, and WowBao Nails all targeting the exact same recognition-focused query",
+        "Asthma and Allergy Foundation of America addresses the same query pattern from a general-audience awareness angle"
+      ],
+      "why_included": "Real, recurring pattern-recognition query. Kept strictly at symptom-awareness level (redness, itching, timing) without diagnostic claims, per medical-content boundaries.",
+      "internal_links": {
+        "links_to": [
+          { "slug": "what-is-hema-nail-products", "anchor_text": "what HEMA is in nail products", "type": "pillar" },
+          { "slug": "how-to-avoid-hema-allergy", "anchor_text": "how to reduce your risk of a HEMA allergy", "type": "spoke" }
+        ],
+        "receives_links_from": [
+          { "slug": "what-is-hema-nail-products", "anchor_text": "HEMA allergy symptoms to watch for" },
+          { "slug": "how-to-avoid-hema-allergy", "anchor_text": "recognizing HEMA allergy symptoms" }
+        ]
+      },
+      "status": "approved"
+    },
+    {
+      "post_id": 4,
+      "role": "spoke",
+      "title": "Is HEMA-Free Gel Polish as Good as Regular Gel Polish?",
+      "slug": "is-hema-free-gel-polish-as-good",
+      "primary_keyword": "is HEMA free gel polish as good as regular",
+      "intent": "comparison",
+      "search_mode": "decision_mode",
+      "suggested_hook_trigger": "Trigger 1 — Curiosity Gap",
+      "search_demand_signals": [
+        "Near-verbatim question phrasing repeated as dedicated headers/FAQs across Chroméclair, Nail Polish Direct, and YouGel ('Is it better for you?', 'is it as good')",
+        "MissGel and SusanSay both independently structure entire articles around this exact performance-doubt question"
+      ],
+      "why_included": "Distinct performance/decision-point question, separate from allergy-symptom or brand-listing content — addresses a genuine pre-switch hesitation ('will it chip more/last less').",
+      "internal_links": {
+        "links_to": [
+          { "slug": "what-is-hema-nail-products", "anchor_text": "what HEMA is and why it's used", "type": "pillar" },
+          { "slug": "hema-free-gel-polish-brands", "anchor_text": "the full list of HEMA-free gel polish brands", "type": "spoke" },
+          { "slug": "hema-vs-tpo-free-gel-polish", "anchor_text": "how HEMA and TPO differ in gel polish", "type": "spoke" }
+        ],
+        "receives_links_from": [
+          { "slug": "what-is-hema-nail-products", "anchor_text": "whether HEMA-free gel polish performs as well" },
+          { "slug": "hema-free-gel-polish-brands", "anchor_text": "whether HEMA-free gel polish performs as well as regular gel" },
+          { "slug": "hema-vs-tpo-free-gel-polish", "anchor_text": "whether HEMA-free formulas perform as well" }
+        ]
+      },
+      "status": "approved"
+    },
+    {
+      "post_id": 5,
+      "role": "spoke",
+      "title": "HEMA-Free Gel Polish Brands: The 2026 List",
+      "slug": "hema-free-gel-polish-brands",
+      "primary_keyword": "HEMA free gel polish brands",
+      "intent": "informational",
+      "search_mode": "decision_mode",
+      "suggested_hook_trigger": "Trigger 3 — Specificity/Numbers",
+      "search_demand_signals": [
+        "Multiple independent guides (DTK Nail Supply, The Beauty Box, lotsoflacquer) all publish dedicated 'which brands are HEMA-free' round-ups, continuously updated through 2026",
+        "DTK Nail Supply explicitly states 'the question comes up every week in nail communities, salon owner groups, and supplier conversations'"
+      ],
+      "why_included": "High, sustained repeat-coverage confirming a real recurring buyer question rather than one-off content; brand-list format matches direct query intent.",
+      "internal_links": {
+        "links_to": [
+          { "slug": "what-is-hema-nail-products", "anchor_text": "what HEMA is in nail products", "type": "pillar" },
+          { "slug": "is-hema-free-gel-polish-as-good", "anchor_text": "whether HEMA-free gel polish performs as well as regular gel", "type": "spoke" }
+        ],
+        "receives_links_from": [
+          { "slug": "what-is-hema-nail-products", "anchor_text": "the full list of HEMA-free gel polish brands" },
+          { "slug": "is-hema-free-gel-polish-as-good", "anchor_text": "HEMA-free gel polish brands" }
+        ]
+      },
+      "status": "approved"
+    },
+    {
+      "post_id": 6,
+      "role": "spoke",
+      "title": "HEMA vs. TPO-Free Gel Polish: What's the Difference?",
+      "slug": "hema-vs-tpo-free-gel-polish",
+      "primary_keyword": "HEMA vs TPO free gel polish",
+      "intent": "comparison",
+      "search_mode": "decision_mode",
+      "suggested_hook_trigger": "Trigger 1 — Curiosity Gap",
+      "search_demand_signals": [
+        "Dedicated article titled almost verbatim 'Hema vs TPO Free Nails Gel Polish: Which Is Better?' found directly",
+        "Zurno ('What Are HEMA and TPO in Gel Polish?') and NiceDeco ('Understanding HEMA, TPO, and Optical Brighteners') both independently pair the two ingredients as a single explainer topic"
+      ],
+      "why_included": "Real paired-comparison angle confirmed, though flagged as moderate confidence — much of the corroborating volume comes from B2B/wholesale sourcing content rather than confirmed consumer search behavior, so likely smaller volume than the other spokes.",
+      "internal_links": {
+        "links_to": [
+          { "slug": "what-is-hema-nail-products", "anchor_text": "what HEMA is in nail products", "type": "pillar" },
+          { "slug": "is-hema-banned-eu", "anchor_text": "is HEMA actually banned in the EU", "type": "spoke" },
+          { "slug": "is-hema-free-gel-polish-as-good", "anchor_text": "whether HEMA-free formulas perform as well", "type": "spoke" }
+        ],
+        "receives_links_from": [
+          { "slug": "what-is-hema-nail-products", "anchor_text": "how HEMA and TPO differ in gel polish" },
+          { "slug": "is-hema-banned-eu", "anchor_text": "how HEMA and TPO differ in gel polish" },
+          { "slug": "is-hema-free-gel-polish-as-good", "anchor_text": "HEMA vs TPO-free gel polish" }
+        ]
+      },
+      "status": "approved"
+    },
+    {
+      "post_id": 7,
+      "role": "spoke",
+      "title": "How Nail Techs and DIYers Can Reduce HEMA Allergy Risk",
+      "slug": "how-to-avoid-hema-allergy",
+      "primary_keyword": "how to avoid HEMA allergy",
+      "intent": "tutorial",
+      "search_mode": "how_to_execution_mode",
+      "suggested_hook_trigger": "Trigger 3 — Specificity/Numbers",
+      "search_demand_signals": [
+        "Erica's ATA nail-tech guide and karanailedit both converge on the same prevention checklist (full curing, avoiding skin contact, correct lamp) framed as direct how-to advice",
+        "Consistent 'how to avoid a gel allergy' framing appears independently across salon-safety and nail-tech education content"
+      ],
+      "why_included": "Actionable, prevention-focused tutorial query distinct from symptom-recognition (#3) — stays on routine/technique side (curing, application, gloves) rather than treatment or diagnosis.",
+      "internal_links": {
+        "links_to": [
+          { "slug": "what-is-hema-nail-products", "anchor_text": "what HEMA is and how it's used", "type": "pillar" },
+          { "slug": "hema-allergy-symptoms", "anchor_text": "recognizing HEMA allergy symptoms", "type": "spoke" }
+        ],
+        "receives_links_from": [
+          { "slug": "what-is-hema-nail-products", "anchor_text": "how to reduce your risk of a HEMA allergy" },
+          { "slug": "hema-allergy-symptoms", "anchor_text": "how to reduce your risk of a HEMA allergy" }
+        ]
+      },
+      "status": "approved"
+    }
+  ],
+
+  "keyword_ownership_registry": {
+    "description": "Master list of all primary keywords — one per post, no overlaps",
+    "entries": [
+      { "primary_keyword": "what is HEMA in nail polish", "owned_by_slug": "what-is-hema-nail-products", "owned_by_title": "What Is HEMA in Nail Products? (And What HEMA-Free Actually Means)", "source": "new post" },
+      { "primary_keyword": "is HEMA banned", "owned_by_slug": "is-hema-banned-eu", "owned_by_title": "Is HEMA Actually Banned in the EU? (What's True and What's Not)", "source": "new post" },
+      { "primary_keyword": "HEMA allergy symptoms", "owned_by_slug": "hema-allergy-symptoms", "owned_by_title": "HEMA Allergy Symptoms: How to Tell If Your Gel Manicure Is the Cause", "source": "new post" },
+      { "primary_keyword": "is HEMA free gel polish as good as regular", "owned_by_slug": "is-hema-free-gel-polish-as-good", "owned_by_title": "Is HEMA-Free Gel Polish as Good as Regular Gel Polish?", "source": "new post" },
+      { "primary_keyword": "HEMA free gel polish brands", "owned_by_slug": "hema-free-gel-polish-brands", "owned_by_title": "HEMA-Free Gel Polish Brands: The 2026 List", "source": "new post" },
+      { "primary_keyword": "HEMA vs TPO free gel polish", "owned_by_slug": "hema-vs-tpo-free-gel-polish", "owned_by_title": "HEMA vs. TPO-Free Gel Polish: What's the Difference?", "source": "new post" },
+      { "primary_keyword": "how to avoid HEMA allergy", "owned_by_slug": "how-to-avoid-hema-allergy", "owned_by_title": "How Nail Techs and DIYers Can Reduce HEMA Allergy Risk", "source": "new post" }
+    ]
+  },
+
+  "merged_posts_log": [],
+
+  "killed_posts_log": [
+    {
+      "topic": "HEMA allergy diagnosis, patch testing, dermatologist treatment protocols",
+      "reason": "sourced entirely from peer-reviewed dermatology literature (Contact Dermatitis journal, PubMed case reports) — squarely medical/diagnostic territory requiring a named medical reviewer per site policy"
+    },
+    {
+      "topic": "HEMA cross-reactivity with dental fillings, contact lenses, medical devices",
+      "reason": "sourced entirely from clinical case reports and dermatology journals; also drifts outside nail-content scope into unrelated medical/dental territory"
+    },
+    {
+      "topic": "HEMA allergy prognosis / whether sensitization is permanent",
+      "reason": "medical claim (irreversibility, systemic dermatitis) requiring clinical authority to state responsibly — on hold pending medical reviewer"
+    },
+    {
+      "topic": "General 'nail product ingredients' overview",
+      "reason": "overlap — reserved as the pillar of a separate, already-approved cluster (nail-product-ingredients); targeting it here would cannibalize that cluster's pillar keyword"
+    }
+  ]
+}
