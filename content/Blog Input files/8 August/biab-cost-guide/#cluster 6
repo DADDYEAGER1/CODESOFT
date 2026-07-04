@@ -1,0 +1,234 @@
+{
+  "cluster_metadata": {
+    "cluster_topic": "BIAB Cost",
+    "topic_slug": "biab-cost",
+    "pillar_post_slug": "biab-cost-guide",
+    "target_audience": "Global, Tier 1 countries",
+    "cluster_type": "high_cpc_informational_non_inspo",
+    "total_posts": 6,
+    "intent_breakdown": {
+      "informational": 4,
+      "inspirational": 0,
+      "tutorial": 1,
+      "comparison": 2,
+      "seasonal_trend": 0
+    },
+    "created_date": "2026-07-04",
+    "notes": [
+      "v2 correction: v1 keywords were inferred from editorial subsections, not validated against actual search query shape. 'biab vs gel cost' and 'biab infill cost' were invented narrow keywords — real queries are broader ('biab vs gel', 'biab infill') with cost as one subsection.",
+      "v1 killed 'how to remove biab at home' citing weak signal without properly checking. Re-checked: validated across 6+ independent editorial sites plus TikTok (31.4K likes) and YouTube tutorials. Reinstated as tutorial spoke — this is a real, meaningful correction, not a quota-filler.",
+      "Intent diversity now genuinely 3 types (informational, tutorial, comparison) — not forced.",
+      "biab-vs-gel-x (#6) sits slightly outside pure 'cost' framing (extensions/length territory) but has real independent demand. Included per user approval — monitor for topical drift from the other 5 posts.",
+      "Site cannibalization scan still SKIPPED per user override. User has NOT verified overlap against existing mirelleinspo.com posts (gel-nails-cost, nail-fills-cost, manicure-pricing, acrylic-nails-cost). This risk is unresolved and owned by the user.",
+      "Gallery link disabled cluster-wide per non-inspo override."
+    ]
+  },
+
+  "existing_site_posts_excluded": [],
+
+  "posts": [
+    {
+      "post_id": 1,
+      "role": "pillar",
+      "title": "How Much Do BIAB Nails Cost?",
+      "slug": "biab-cost-guide",
+      "primary_keyword": "biab cost",
+      "intent": "informational",
+      "search_mode": "inspiration_mode",
+      "suggested_hook_trigger": "Trigger 3 — Specificity/Numbers",
+      "search_demand_signals": [
+        "Dedicated ranking article (Necole Bitchie) answering this exact query, citing $40-$90 full set US, £35-£60 UK",
+        "Organic community questions asking this exact thing (Facebook groups: 'how much do you pay for BIAB nails')",
+        "Corroborated by 6+ independent salon price lists across US/UK ($36-$100+)"
+      ],
+      "why_included": "Confirmed real, dedicated search query — not inferred from an editorial subsection. Broadest keyword, becomes the hub.",
+      "internal_links": {
+        "links_to": [
+          { "slug": "biab-vs-gel", "anchor_text": "how BIAB compares to a regular gel manicure", "type": "spoke" },
+          { "slug": "biab-infill-guide", "anchor_text": "what a BIAB infill involves and costs", "type": "spoke" },
+          { "slug": "how-often-biab-infill", "anchor_text": "how often you need BIAB infills", "type": "spoke" },
+          { "slug": "how-to-remove-biab-at-home", "anchor_text": "how to remove BIAB at home safely", "type": "spoke" },
+          { "slug": "biab-vs-gel-x", "anchor_text": "BIAB vs Gel-X for growing out natural nails", "type": "spoke" }
+        ],
+        "receives_links_from": [
+          { "slug": "biab-vs-gel", "anchor_text": "full BIAB cost breakdown" },
+          { "slug": "biab-infill-guide", "anchor_text": "BIAB cost guide" },
+          { "slug": "how-often-biab-infill", "anchor_text": "BIAB cost guide" },
+          { "slug": "how-to-remove-biab-at-home", "anchor_text": "BIAB cost guide" },
+          { "slug": "biab-vs-gel-x", "anchor_text": "BIAB cost guide" }
+        ]
+      },
+      "status": "approved"
+    },
+    {
+      "post_id": 2,
+      "role": "spoke",
+      "title": "BIAB vs Gel Nails: What's the Difference?",
+      "slug": "biab-vs-gel",
+      "primary_keyword": "biab vs gel",
+      "intent": "comparison",
+      "search_mode": "decision_mode",
+      "suggested_hook_trigger": "Trigger 1 — Curiosity Gap",
+      "search_demand_signals": [
+        "Multiple dedicated 'BIAB vs gel' editorial guides (woman&home, Aesthete Beauty, Cosmetics HQ, Belle Beauty) covering durability, feel, colour range, price, appointment length as subsections of one comparison",
+        "Consistent query pattern across 5+ independent sites, all structured the same way — durability/cost/removal/colour as sections under one comparison, confirming this is the actual search shape"
+      ],
+      "why_included": "v1 mistake corrected: original keyword 'biab vs gel cost' was invented by narrowing this into a cost-only angle. The real, validated query is the full comparison; cost is one section, not the whole post.",
+      "internal_links": {
+        "links_to": [
+          { "slug": "biab-cost-guide", "anchor_text": "full BIAB cost breakdown", "type": "pillar" },
+          { "slug": "biab-infill-guide", "anchor_text": "what a BIAB infill involves and costs", "type": "spoke" },
+          { "slug": "biab-vs-gel-x", "anchor_text": "BIAB vs Gel-X for growing out natural nails", "type": "spoke" },
+          { "slug": "how-to-remove-biab-at-home", "anchor_text": "how to remove BIAB at home safely", "type": "spoke" }
+        ],
+        "receives_links_from": [
+          { "slug": "biab-cost-guide", "anchor_text": "how BIAB compares to a regular gel manicure" },
+          { "slug": "biab-vs-gel-x", "anchor_text": "BIAB vs regular gel polish" }
+        ]
+      },
+      "status": "approved"
+    },
+    {
+      "post_id": 3,
+      "role": "spoke",
+      "title": "BIAB Infills: What They Are and What They Cost",
+      "slug": "biab-infill-guide",
+      "primary_keyword": "biab infill",
+      "intent": "informational",
+      "search_mode": "how_to_execution_mode",
+      "suggested_hook_trigger": "Trigger 1 — Curiosity Gap",
+      "search_demand_signals": [
+        "Multiple salon/editorial explainers on what a BIAB infill is and how it's done (Mooeys, Paint Nails, Hush Skin and Beauty)",
+        "YouTube tutorial demand confirmed (Shonagh Scott infill tutorial, dedicated client-infill demo video)",
+        "Cost cited consistently as a subsection across salon pricing pages (£34-£75 range), confirming cost is part of this query, not a separate one"
+      ],
+      "why_included": "v1 mistake corrected: original keyword 'biab infill cost' was too narrow. Real demand is for understanding infills generally (what/how), with cost folded in as a natural subsection — matches how every ranking source actually structures it.",
+      "internal_links": {
+        "links_to": [
+          { "slug": "biab-cost-guide", "anchor_text": "full BIAB cost breakdown", "type": "pillar" },
+          { "slug": "how-often-biab-infill", "anchor_text": "how often you need BIAB infills", "type": "spoke" },
+          { "slug": "biab-vs-gel", "anchor_text": "how BIAB compares to a regular gel manicure", "type": "spoke" },
+          { "slug": "how-to-remove-biab-at-home", "anchor_text": "how to remove BIAB at home safely", "type": "spoke" }
+        ],
+        "receives_links_from": [
+          { "slug": "biab-cost-guide", "anchor_text": "what a BIAB infill involves and costs" },
+          { "slug": "biab-vs-gel", "anchor_text": "what a BIAB infill involves and costs" },
+          { "slug": "how-often-biab-infill", "anchor_text": "what a BIAB infill actually involves" }
+        ]
+      },
+      "status": "approved"
+    },
+    {
+      "post_id": 4,
+      "role": "spoke",
+      "title": "How Often Do You Need BIAB Infills?",
+      "slug": "how-often-biab-infill",
+      "primary_keyword": "how often biab infill",
+      "intent": "informational",
+      "search_mode": "how_to_execution_mode",
+      "suggested_hook_trigger": "Trigger 3 — Specificity/Numbers",
+      "search_demand_signals": [
+        "Dedicated ranking article (Apricot Nails/Ash White) answering this exact query: most clients need infills every 3-4 weeks, some stretch to 5",
+        "Corroborated by independent beauty editorial (woman&home) confirming the same 3-4 week best-practice window"
+      ],
+      "why_included": "Confirmed standalone query with a dedicated ranking article — distinct from both infill-cost and infill-mechanics questions.",
+      "internal_links": {
+        "links_to": [
+          { "slug": "biab-cost-guide", "anchor_text": "full BIAB cost breakdown", "type": "pillar" },
+          { "slug": "biab-infill-guide", "anchor_text": "what a BIAB infill actually involves", "type": "spoke" },
+          { "slug": "how-to-remove-biab-at-home", "anchor_text": "how to remove BIAB at home safely", "type": "spoke" },
+          { "slug": "biab-vs-gel", "anchor_text": "how BIAB compares to a regular gel manicure", "type": "spoke" }
+        ],
+        "receives_links_from": [
+          { "slug": "biab-cost-guide", "anchor_text": "how often you need BIAB infills" },
+          { "slug": "biab-infill-guide", "anchor_text": "how often you need BIAB infills" }
+        ]
+      },
+      "status": "approved"
+    },
+    {
+      "post_id": 5,
+      "role": "spoke",
+      "title": "How to Remove BIAB at Home",
+      "slug": "how-to-remove-biab-at-home",
+      "primary_keyword": "how to remove biab at home",
+      "intent": "tutorial",
+      "search_mode": "how_to_execution_mode",
+      "suggested_hook_trigger": "Trigger 1 — Curiosity Gap",
+      "search_demand_signals": [
+        "Validated across 6+ independent editorial/salon sites with dedicated step-by-step guides (Belle Beauty, The Brookside, Wecasa, Oreate AI, Hanyi Nails, The GelBottle Inc official guide)",
+        "TikTok demand confirmed: dedicated removal tutorial with 31.4K likes and 210 comments",
+        "YouTube tutorial demand confirmed (Shonagh Scott '4 Ways to Remove BIAB at Home')"
+      ],
+      "why_included": "v1 error corrected: this was killed in the first pass citing 'weak signal,' but no proper check was run. Re-verified with strong, convergent, multi-platform demand. Genuinely fixes the cluster's tutorial-intent gap rather than forcing a weak angle to hit a quota. Includes a removal-cost subsection (£28-£40 salon range) rather than a standalone cost post, since salon pricing pages show removal is billed as a line item but not searched as its own primary query.",
+      "internal_links": {
+        "links_to": [
+          { "slug": "biab-cost-guide", "anchor_text": "full BIAB cost breakdown", "type": "pillar" },
+          { "slug": "biab-infill-guide", "anchor_text": "what a BIAB infill involves and costs", "type": "spoke" },
+          { "slug": "how-often-biab-infill", "anchor_text": "how often you need BIAB infills", "type": "spoke" },
+          { "slug": "biab-vs-gel", "anchor_text": "how BIAB compares to a regular gel manicure", "type": "spoke" }
+        ],
+        "receives_links_from": [
+          { "slug": "biab-cost-guide", "anchor_text": "how to remove BIAB at home safely" },
+          { "slug": "biab-vs-gel", "anchor_text": "how to remove BIAB at home safely" },
+          { "slug": "biab-infill-guide", "anchor_text": "how to remove BIAB at home safely" },
+          { "slug": "how-often-biab-infill", "anchor_text": "how to remove BIAB at home safely" }
+        ]
+      },
+      "status": "approved"
+    },
+    {
+      "post_id": 6,
+      "role": "spoke",
+      "title": "BIAB vs Gel-X: Which Is Right for Growing Your Nails?",
+      "slug": "biab-vs-gel-x",
+      "primary_keyword": "biab vs gel-x",
+      "intent": "comparison",
+      "search_mode": "decision_mode",
+      "suggested_hook_trigger": "Trigger 1 — Curiosity Gap",
+      "search_demand_signals": [
+        "Dedicated 2026 comparison guide (The Nail Aesthetic) framing BIAB vs Gel-X as 'the two biggest titans' in the nail-health-focused market shift",
+        "Distinct from BIAB-vs-regular-gel-polish comparison — different competitor product (Aprés Nail's Gel-X extension system), different use case (rehabilitation vs instant length)"
+      ],
+      "why_included": "Real, distinct comparison query separate from 'biab vs gel' — confirmed via a dedicated ranking guide. Included per user approval despite sitting slightly outside pure cost framing; content should stay disciplined and not drift into extension-length/aesthetic territory beyond what's needed to answer the comparison.",
+      "internal_links": {
+        "links_to": [
+          { "slug": "biab-cost-guide", "anchor_text": "full BIAB cost breakdown", "type": "pillar" },
+          { "slug": "biab-vs-gel", "anchor_text": "BIAB vs regular gel polish", "type": "spoke" }
+        ],
+        "receives_links_from": [
+          { "slug": "biab-cost-guide", "anchor_text": "BIAB vs Gel-X for growing out natural nails" },
+          { "slug": "biab-vs-gel", "anchor_text": "BIAB vs Gel-X for growing out natural nails" }
+        ]
+      },
+      "status": "approved"
+    }
+  ],
+
+  "keyword_ownership_registry": {
+    "description": "Master list of all primary keywords — one per post, no overlaps. Existing site posts NOT cross-checked (site scan skipped per user override — user assumes overlap risk).",
+    "entries": [
+      { "primary_keyword": "biab cost", "owned_by_slug": "biab-cost-guide", "owned_by_title": "How Much Do BIAB Nails Cost?", "source": "new post" },
+      { "primary_keyword": "biab vs gel", "owned_by_slug": "biab-vs-gel", "owned_by_title": "BIAB vs Gel Nails: What's the Difference?", "source": "new post" },
+      { "primary_keyword": "biab infill", "owned_by_slug": "biab-infill-guide", "owned_by_title": "BIAB Infills: What They Are and What They Cost", "source": "new post" },
+      { "primary_keyword": "how often biab infill", "owned_by_slug": "how-often-biab-infill", "owned_by_title": "How Often Do You Need BIAB Infills?", "source": "new post" },
+      { "primary_keyword": "how to remove biab at home", "owned_by_slug": "how-to-remove-biab-at-home", "owned_by_title": "How to Remove BIAB at Home", "source": "new post" },
+      { "primary_keyword": "biab vs gel-x", "owned_by_slug": "biab-vs-gel-x", "owned_by_title": "BIAB vs Gel-X: Which Is Right for Growing Your Nails?", "source": "new post" }
+    ]
+  },
+
+  "merged_posts_log": [
+    {
+      "original_topics": ["biab infill cost (v1)", "what is a biab infill / how it's done"],
+      "merged_into": "BIAB Infills: What They Are and What They Cost (biab-infill-guide)",
+      "reason": "v1 treated 'infill cost' as a standalone keyword. Real search behavior bundles cost with the general infill explainer — every ranking source covers both together. Narrowing to cost-only would have targeted a keyword nobody actually searches in isolation."
+    }
+  ],
+
+  "killed_posts_log": [
+    { "topic": "biab vs gel cost (v1 standalone keyword)", "reason": "Invented narrow keyword — real query is 'biab vs gel' as a full comparison, not a cost-specific search. Superseded by biab-vs-gel (post 2)." },
+    { "topic": "biab removal cost (v1 standalone spoke)", "reason": "Removal pricing is billed as a line item at salons but not validated as its own standalone search query. Folded into how-to-remove-biab-at-home as a subsection instead of a dedicated post, since that tutorial query has far stronger, multi-platform validated demand." },
+    { "topic": "best BIAB brand", "reason": "Product-recommendation angle — banned under the non-inspo cluster override (no product recs, no 'best X' posts)." },
+    { "topic": "BIAB nail art cost", "reason": "Real signal exists (£5-150 add-on pricing) but it's an add-on cost modifier, not a standalone searched query. Would cannibalize the pillar's coverage of add-on pricing." }
+  ]
+}
