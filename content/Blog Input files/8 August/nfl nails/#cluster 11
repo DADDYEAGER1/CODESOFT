@@ -1,0 +1,412 @@
+{
+  "cluster_metadata": {
+    "cluster_topic": "NFL Nails",
+    "topic_slug": "nfl-nails",
+    "target_audience": "Global, Tier 1 countries (US, UK, Canada, Australia) — US-heavy skew expected given NFL is a US-centric sport",
+    "total_posts": 11,
+    "intent_breakdown": {
+      "informational": 0,
+      "inspirational": 9,
+      "tutorial": 1,
+      "comparison": 0,
+      "seasonal_trend": 1
+    },
+    "pillar_post_slug": "nfl-nails-ultimate-guide",
+    "inspiration_gallery_url": "https://mirelleinspo.com/inspo/nfl-nails-ultimate-guide-inspiration-gallery",
+    "created_date": "2026-07-05",
+    "notes": "Site cannibalization scan (phase_0b) was skipped per explicit user instruction. User confirmed a separate soccer/FIFA nails cluster already exists on the site — all soccer/World Cup-adjacent keywords and angles were excluded from this NFL-specific cluster to prevent cross-cluster topical overlap."
+  },
+  "existing_site_posts_excluded": [],
+  "posts": [
+    {
+      "post_id": 1,
+      "role": "pillar",
+      "title": "NFL Nails: The Ultimate Game Day Nail Guide",
+      "slug": "nfl-nails-ultimate-guide",
+      "primary_keyword": "nfl nails",
+      "intent": "inspirational",
+      "search_mode": "inspiration_mode",
+      "suggested_hook_trigger": "Trigger 2 — FOMO/Trend",
+      "search_demand_signals": [
+        "Pinterest: multiple dedicated 'NFL Nails' boards with 90+ pins each",
+        "Blog roundups: Bustle, CreativeBooster, Sarah Scoop all publish dedicated 'football nail ideas' roundups with recurring annual updates"
+      ],
+      "why_included": "Broadest keyword with highest aggregate search demand across Pinterest and editorial roundups. Serves as the natural hub linking to every team, style, and occasion spoke in the cluster.",
+      "internal_links": {
+        "links_to": [
+          { "slug": "how-to-do-football-nail-art-at-home", "anchor_text": "step-by-step football nail art tutorial", "type": "spoke" },
+          { "slug": "super-bowl-nail-ideas", "anchor_text": "Super Bowl nail ideas for game day", "type": "spoke" },
+          { "slug": "kansas-city-chiefs-nail-designs", "anchor_text": "Kansas City Chiefs nail designs", "type": "spoke" },
+          { "slug": "philadelphia-eagles-nail-designs", "anchor_text": "Philadelphia Eagles nail designs", "type": "spoke" },
+          { "slug": "dallas-cowboys-nail-designs", "anchor_text": "Dallas Cowboys nail designs", "type": "spoke" },
+          { "slug": "green-bay-packers-nail-designs", "anchor_text": "Green Bay Packers nail designs", "type": "spoke" },
+          { "slug": "nfl-press-on-nails-game-day-ideas", "anchor_text": "NFL press-on nails for game day", "type": "spoke" },
+          { "slug": "nfl-french-tip-nail-ideas", "anchor_text": "NFL French tip nail ideas", "type": "spoke" },
+          { "slug": "jersey-number-nail-art-ideas", "anchor_text": "jersey number nail art ideas", "type": "spoke" },
+          { "slug": "taylor-swift-game-day-nails", "anchor_text": "Taylor Swift-inspired Chiefs game day nails", "type": "spoke" }
+        ],
+        "gallery_link": {
+          "url": "https://mirelleinspo.com/inspo/nfl-nails-ultimate-guide-inspiration-gallery",
+          "anchor_text": "NFL nails inspiration gallery"
+        },
+        "receives_links_from": [
+          { "slug": "how-to-do-football-nail-art-at-home", "anchor_text": "NFL nails ultimate guide" },
+          { "slug": "super-bowl-nail-ideas", "anchor_text": "NFL nails inspiration guide" },
+          { "slug": "kansas-city-chiefs-nail-designs", "anchor_text": "NFL nails ideas guide" },
+          { "slug": "philadelphia-eagles-nail-designs", "anchor_text": "NFL nails ideas guide" },
+          { "slug": "dallas-cowboys-nail-designs", "anchor_text": "NFL nails ideas guide" },
+          { "slug": "green-bay-packers-nail-designs", "anchor_text": "NFL nails ideas guide" },
+          { "slug": "nfl-press-on-nails-game-day-ideas", "anchor_text": "NFL nails ideas guide" },
+          { "slug": "nfl-french-tip-nail-ideas", "anchor_text": "NFL nails ideas guide" },
+          { "slug": "jersey-number-nail-art-ideas", "anchor_text": "NFL nails ideas guide" },
+          { "slug": "taylor-swift-game-day-nails", "anchor_text": "NFL nails ideas guide" }
+        ]
+      },
+      "status": "approved"
+    },
+    {
+      "post_id": 2,
+      "role": "spoke",
+      "title": "How to Do Football Nail Art at Home (Step-by-Step)",
+      "slug": "how-to-do-football-nail-art-at-home",
+      "primary_keyword": "how to do football nails",
+      "intent": "tutorial",
+      "search_mode": "how_to_execution_mode",
+      "suggested_hook_trigger": "Trigger 1 — Curiosity Gap",
+      "search_demand_signals": [
+        "Sarah Scoop: 50-look DIY roundup with explicit step-by-step directions for each design",
+        "Good Morning America: dedicated DIY Super Bowl nail tutorial with named nail artist",
+        "TikTok: 'at-home nail art tutorial' and 'DIY football nail art ideas' recurring hashtag phrasing"
+      ],
+      "why_included": "Real, repeated how-to search behavior distinct from passive browsing — includes helmet, football-lace, and field-stripe technique demand merged in from single-source ideas (not enough alone for standalone posts).",
+      "internal_links": {
+        "links_to": [
+          { "slug": "nfl-nails-ultimate-guide", "anchor_text": "NFL nails ideas guide", "type": "pillar" },
+          { "slug": "nfl-french-tip-nail-ideas", "anchor_text": "NFL French tip nail ideas", "type": "spoke" },
+          { "slug": "nfl-press-on-nails-game-day-ideas", "anchor_text": "NFL press-on nails for game day", "type": "spoke" },
+          { "slug": "super-bowl-nail-ideas", "anchor_text": "Super Bowl nail ideas for game day", "type": "spoke" }
+        ],
+        "receives_links_from": [
+          { "slug": "nfl-nails-ultimate-guide", "anchor_text": "step-by-step football nail art tutorial" },
+          { "slug": "nfl-french-tip-nail-ideas", "anchor_text": "how to paint football nail art at home" },
+          { "slug": "nfl-press-on-nails-game-day-ideas", "anchor_text": "DIY football nail art tutorial" },
+          { "slug": "super-bowl-nail-ideas", "anchor_text": "how to DIY your own Super Bowl nails" }
+        ]
+      },
+      "status": "approved"
+    },
+    {
+      "post_id": 3,
+      "role": "spoke",
+      "title": "Super Bowl Nail Ideas 2027",
+      "slug": "super-bowl-nail-ideas",
+      "primary_keyword": "super bowl nails",
+      "intent": "seasonal_trend",
+      "search_mode": "inspiration_mode",
+      "suggested_hook_trigger": "Trigger 2 — FOMO/Trend",
+      "search_demand_signals": [
+        "Parade, Yahoo, AOL: all published dedicated 'Best Super Bowl Nail Ideas' roundups tied to the specific Super Bowl date each year",
+        "Romper, Good Morning America: recurring annual Super Bowl nail coverage with dedicated tutorials and team pairings"
+      ],
+      "why_included": "Sharp, proven annual seasonal spike distinct from general football nails — tied to a specific calendar event (early February) rather than the full season, warranting its own occasion-based post.",
+      "internal_links": {
+        "links_to": [
+          { "slug": "nfl-nails-ultimate-guide", "anchor_text": "NFL nails ideas guide", "type": "pillar" },
+          { "slug": "kansas-city-chiefs-nail-designs", "anchor_text": "Kansas City Chiefs nail designs", "type": "spoke" },
+          { "slug": "philadelphia-eagles-nail-designs", "anchor_text": "Philadelphia Eagles nail designs", "type": "spoke" },
+          { "slug": "how-to-do-football-nail-art-at-home", "anchor_text": "how to DIY your own Super Bowl nails", "type": "spoke" },
+          { "slug": "taylor-swift-game-day-nails", "anchor_text": "Taylor Swift-inspired Chiefs game day nails", "type": "spoke" }
+        ],
+        "receives_links_from": [
+          { "slug": "nfl-nails-ultimate-guide", "anchor_text": "Super Bowl nail ideas for game day" },
+          { "slug": "kansas-city-chiefs-nail-designs", "anchor_text": "Super Bowl nail ideas for Chiefs fans" },
+          { "slug": "how-to-do-football-nail-art-at-home", "anchor_text": "Super Bowl nail ideas for game day" },
+          { "slug": "taylor-swift-game-day-nails", "anchor_text": "Super Bowl nail ideas for game day" }
+        ]
+      },
+      "status": "approved"
+    },
+    {
+      "post_id": 4,
+      "role": "spoke",
+      "title": "Kansas City Chiefs Nail Designs",
+      "slug": "kansas-city-chiefs-nail-designs",
+      "primary_keyword": "chiefs nails",
+      "intent": "inspirational",
+      "search_mode": "inspiration_mode",
+      "suggested_hook_trigger": "Trigger 3 — Specificity",
+      "search_demand_signals": [
+        "Pinterest: 3+ dedicated 'Chiefs Nails' boards with independent pin counts",
+        "Sarah Scoop, Nerd About Town: dedicated 35+ design roundup articles",
+        "TikTok: recurring 'KC Chiefs nail inspo' videos; Etsy: dedicated Chiefs nail decal listings"
+      ],
+      "why_included": "Highest-volume single-team NFL nail search, amplified further by ongoing Taylor Swift/Travis Kelce cultural relevance that keeps the fandom visible in search year-round.",
+      "internal_links": {
+        "links_to": [
+          { "slug": "nfl-nails-ultimate-guide", "anchor_text": "NFL nails ideas guide", "type": "pillar" },
+          { "slug": "philadelphia-eagles-nail-designs", "anchor_text": "Philadelphia Eagles nail designs", "type": "spoke" },
+          { "slug": "taylor-swift-game-day-nails", "anchor_text": "Taylor Swift-inspired Chiefs game day nails", "type": "spoke" },
+          { "slug": "super-bowl-nail-ideas", "anchor_text": "Super Bowl nail ideas for Chiefs fans", "type": "spoke" }
+        ],
+        "receives_links_from": [
+          { "slug": "nfl-nails-ultimate-guide", "anchor_text": "Kansas City Chiefs nail designs" },
+          { "slug": "philadelphia-eagles-nail-designs", "anchor_text": "Kansas City Chiefs nail designs" },
+          { "slug": "taylor-swift-game-day-nails", "anchor_text": "Kansas City Chiefs nail designs" },
+          { "slug": "super-bowl-nail-ideas", "anchor_text": "Kansas City Chiefs nail designs" }
+        ]
+      },
+      "status": "approved"
+    },
+    {
+      "post_id": 5,
+      "role": "spoke",
+      "title": "Philadelphia Eagles Nail Designs",
+      "slug": "philadelphia-eagles-nail-designs",
+      "primary_keyword": "eagles nails",
+      "intent": "inspirational",
+      "search_mode": "inspiration_mode",
+      "suggested_hook_trigger": "Trigger 3 — Specificity",
+      "search_demand_signals": [
+        "Pinterest: 4+ dedicated 'Philadelphia Eagles Nails' boards",
+        "WhoWhatWear, other team-roundup editorial coverage featuring Eagles-specific designs"
+      ],
+      "why_included": "Second major team cluster with strong, independent Pinterest demand separate from Chiefs — one of the NFL's largest and most vocal fanbases.",
+      "internal_links": {
+        "links_to": [
+          { "slug": "nfl-nails-ultimate-guide", "anchor_text": "NFL nails ideas guide", "type": "pillar" },
+          { "slug": "kansas-city-chiefs-nail-designs", "anchor_text": "Kansas City Chiefs nail designs", "type": "spoke" },
+          { "slug": "dallas-cowboys-nail-designs", "anchor_text": "Dallas Cowboys nail designs", "type": "spoke" },
+          { "slug": "super-bowl-nail-ideas", "anchor_text": "Super Bowl nail ideas for game day", "type": "spoke" }
+        ],
+        "receives_links_from": [
+          { "slug": "nfl-nails-ultimate-guide", "anchor_text": "Philadelphia Eagles nail designs" },
+          { "slug": "kansas-city-chiefs-nail-designs", "anchor_text": "Philadelphia Eagles nail designs" },
+          { "slug": "dallas-cowboys-nail-designs", "anchor_text": "Philadelphia Eagles nail designs" },
+          { "slug": "super-bowl-nail-ideas", "anchor_text": "Philadelphia Eagles nail designs" }
+        ]
+      },
+      "status": "approved"
+    },
+    {
+      "post_id": 6,
+      "role": "spoke",
+      "title": "Dallas Cowboys Nail Designs",
+      "slug": "dallas-cowboys-nail-designs",
+      "primary_keyword": "cowboys nails",
+      "intent": "inspirational",
+      "search_mode": "inspiration_mode",
+      "suggested_hook_trigger": "Trigger 3 — Specificity",
+      "search_demand_signals": [
+        "Pinterest: dedicated 'Dallas Cowboys Nail Art' boards and pins",
+        "WhoWhatWear team roundup coverage; YouTube: dedicated 'Dallas Cowboys Nail Art - Nail Designs for Dallas Cowboys Fans' video"
+      ],
+      "why_included": "One of the most-searched NFL fanbases overall, with independent multi-source demand separate from other team posts.",
+      "internal_links": {
+        "links_to": [
+          { "slug": "nfl-nails-ultimate-guide", "anchor_text": "NFL nails ideas guide", "type": "pillar" },
+          { "slug": "philadelphia-eagles-nail-designs", "anchor_text": "Philadelphia Eagles nail designs", "type": "spoke" },
+          { "slug": "green-bay-packers-nail-designs", "anchor_text": "Green Bay Packers nail designs", "type": "spoke" },
+          { "slug": "jersey-number-nail-art-ideas", "anchor_text": "jersey number nail art ideas", "type": "spoke" }
+        ],
+        "receives_links_from": [
+          { "slug": "nfl-nails-ultimate-guide", "anchor_text": "Dallas Cowboys nail designs" },
+          { "slug": "philadelphia-eagles-nail-designs", "anchor_text": "Dallas Cowboys nail designs" },
+          { "slug": "green-bay-packers-nail-designs", "anchor_text": "Dallas Cowboys nail designs" },
+          { "slug": "jersey-number-nail-art-ideas", "anchor_text": "Dallas Cowboys nail designs" }
+        ]
+      },
+      "status": "approved"
+    },
+    {
+      "post_id": 7,
+      "role": "spoke",
+      "title": "Green Bay Packers Nail Designs",
+      "slug": "green-bay-packers-nail-designs",
+      "primary_keyword": "packers nails",
+      "intent": "inspirational",
+      "search_mode": "inspiration_mode",
+      "suggested_hook_trigger": "Trigger 3 — Specificity",
+      "search_demand_signals": [
+        "Pinterest: dedicated 'Green Bay Packer Nails Design' board with 99 pins",
+        "WhoWhatWear team roundup coverage featuring Packers-specific green marble design"
+      ],
+      "why_included": "Distinct, highly loyal fanbase with standalone Pinterest and editorial demand independent of other team posts.",
+      "internal_links": {
+        "links_to": [
+          { "slug": "nfl-nails-ultimate-guide", "anchor_text": "NFL nails ideas guide", "type": "pillar" },
+          { "slug": "dallas-cowboys-nail-designs", "anchor_text": "Dallas Cowboys nail designs", "type": "spoke" },
+          { "slug": "kansas-city-chiefs-nail-designs", "anchor_text": "Kansas City Chiefs nail designs", "type": "spoke" },
+          { "slug": "nfl-french-tip-nail-ideas", "anchor_text": "NFL French tip nail ideas", "type": "spoke" }
+        ],
+        "receives_links_from": [
+          { "slug": "nfl-nails-ultimate-guide", "anchor_text": "Green Bay Packers nail designs" },
+          { "slug": "dallas-cowboys-nail-designs", "anchor_text": "Green Bay Packers nail designs" },
+          { "slug": "kansas-city-chiefs-nail-designs", "anchor_text": "Green Bay Packers nail designs" },
+          { "slug": "nfl-french-tip-nail-ideas", "anchor_text": "Green Bay Packers nail designs" }
+        ]
+      },
+      "status": "approved"
+    },
+    {
+      "post_id": 8,
+      "role": "spoke",
+      "title": "NFL Press-On Nails: Best Game Day Ideas",
+      "slug": "nfl-press-on-nails-game-day-ideas",
+      "primary_keyword": "nfl press on nails",
+      "intent": "inspirational",
+      "search_mode": "inspiration_mode",
+      "suggested_hook_trigger": "Trigger 3 — Specificity",
+      "search_demand_signals": [
+        "Etsy/Amazon: multiple NFL-licensed and team-specific press-on nail listings with strong review volume",
+        "Glamnetic blog: dedicated 'Best Game Day Press-On Nails and Nail Ideas' feature; Pinterest: dedicated football press-on ideas board"
+      ],
+      "why_included": "Strong product-adjacent informational demand around press-on styles and ideas (not the product purchase itself), scoped specifically to NFL/game-day framing to avoid overlap with the existing soccer nails cluster.",
+      "internal_links": {
+        "links_to": [
+          { "slug": "nfl-nails-ultimate-guide", "anchor_text": "NFL nails ideas guide", "type": "pillar" },
+          { "slug": "how-to-do-football-nail-art-at-home", "anchor_text": "DIY football nail art tutorial", "type": "spoke" },
+          { "slug": "nfl-french-tip-nail-ideas", "anchor_text": "NFL French tip nail ideas", "type": "spoke" },
+          { "slug": "jersey-number-nail-art-ideas", "anchor_text": "jersey number nail art ideas", "type": "spoke" }
+        ],
+        "receives_links_from": [
+          { "slug": "nfl-nails-ultimate-guide", "anchor_text": "NFL press-on nails for game day" },
+          { "slug": "how-to-do-football-nail-art-at-home", "anchor_text": "NFL press-on nails for game day" },
+          { "slug": "nfl-french-tip-nail-ideas", "anchor_text": "NFL press-on nails for game day" },
+          { "slug": "jersey-number-nail-art-ideas", "anchor_text": "NFL press-on nails for game day" }
+        ]
+      },
+      "status": "approved"
+    },
+    {
+      "post_id": 9,
+      "role": "spoke",
+      "title": "NFL French Tip Nail Ideas",
+      "slug": "nfl-french-tip-nail-ideas",
+      "primary_keyword": "nfl french tip nails",
+      "intent": "inspirational",
+      "search_mode": "aesthetic_identity_mode",
+      "suggested_hook_trigger": "Trigger 4 — Identity Mirroring",
+      "search_demand_signals": [
+        "Pinterest: dedicated 'Football French Tip Nails' tag with NFL team-color framing",
+        "Bustle, CreativeBooster: dedicated coverage of elevated/chic French tip football designs as an alternative to bold logo nails"
+      ],
+      "why_included": "Distinct sub-style serving a reader who wants an elevated, wearable look rather than an overt team-logo statement — a different aesthetic identity than the bold fan-pride posts, scoped strictly to NFL team colors.",
+      "internal_links": {
+        "links_to": [
+          { "slug": "nfl-nails-ultimate-guide", "anchor_text": "NFL nails ideas guide", "type": "pillar" },
+          { "slug": "how-to-do-football-nail-art-at-home", "anchor_text": "how to paint football nail art at home", "type": "spoke" },
+          { "slug": "green-bay-packers-nail-designs", "anchor_text": "Green Bay Packers nail designs", "type": "spoke" },
+          { "slug": "nfl-press-on-nails-game-day-ideas", "anchor_text": "NFL press-on nails for game day", "type": "spoke" }
+        ],
+        "receives_links_from": [
+          { "slug": "nfl-nails-ultimate-guide", "anchor_text": "NFL French tip nail ideas" },
+          { "slug": "how-to-do-football-nail-art-at-home", "anchor_text": "NFL French tip nail ideas" },
+          { "slug": "green-bay-packers-nail-designs", "anchor_text": "NFL French tip nail ideas" },
+          { "slug": "nfl-press-on-nails-game-day-ideas", "anchor_text": "NFL French tip nail ideas" }
+        ]
+      },
+      "status": "approved"
+    },
+    {
+      "post_id": 10,
+      "role": "spoke",
+      "title": "Jersey Number Nail Art Ideas",
+      "slug": "jersey-number-nail-art-ideas",
+      "primary_keyword": "jersey number nails",
+      "intent": "inspirational",
+      "search_mode": "aesthetic_identity_mode",
+      "suggested_hook_trigger": "Trigger 4 — Identity Mirroring",
+      "search_demand_signals": [
+        "Pinterest: dedicated 'Nails with Jersey Number' tag with 2.6k+ pins",
+        "TikTok: recurring 'boyfriend's football number nails' and 'getting your boyfriend's football number on nails' trend videos"
+      ],
+      "why_included": "Personal/relationship identity angle distinct from team-pride posts — the reader is expressing connection to a specific person (boyfriend/player), not just fandom, making this a genuinely different search intent.",
+      "internal_links": {
+        "links_to": [
+          { "slug": "nfl-nails-ultimate-guide", "anchor_text": "NFL nails ideas guide", "type": "pillar" },
+          { "slug": "taylor-swift-game-day-nails", "anchor_text": "Taylor Swift-inspired Chiefs game day nails", "type": "spoke" },
+          { "slug": "dallas-cowboys-nail-designs", "anchor_text": "Dallas Cowboys nail designs", "type": "spoke" },
+          { "slug": "nfl-press-on-nails-game-day-ideas", "anchor_text": "NFL press-on nails for game day", "type": "spoke" }
+        ],
+        "receives_links_from": [
+          { "slug": "nfl-nails-ultimate-guide", "anchor_text": "jersey number nail art ideas" },
+          { "slug": "taylor-swift-game-day-nails", "anchor_text": "jersey number nail art ideas" },
+          { "slug": "dallas-cowboys-nail-designs", "anchor_text": "jersey number nail art ideas" },
+          { "slug": "nfl-press-on-nails-game-day-ideas", "anchor_text": "jersey number nail art ideas" }
+        ]
+      },
+      "status": "approved"
+    },
+    {
+      "post_id": 11,
+      "role": "spoke",
+      "title": "Taylor Swift Game Day Nails (Chiefs-Inspired)",
+      "slug": "taylor-swift-game-day-nails",
+      "primary_keyword": "taylor swift game day nails",
+      "intent": "inspirational",
+      "search_mode": "aesthetic_identity_mode",
+      "suggested_hook_trigger": "Trigger 4 — Identity Mirroring",
+      "search_demand_signals": [
+        "Glam.com: dedicated 'We Designed Our Own Taylor Swift & Travis Kelce Game Day Nails' feature",
+        "Bustle, Romper: repeated coverage of Taylor Swift's own game-day manicures worn to Chiefs games"
+      ],
+      "why_included": "Strong, ongoing pop-culture crossover driving unique, non-generic search demand distinct from standard Chiefs fandom content — readers here are identifying with Swift's specific style, not just the team.",
+      "internal_links": {
+        "links_to": [
+          { "slug": "nfl-nails-ultimate-guide", "anchor_text": "NFL nails ideas guide", "type": "pillar" },
+          { "slug": "kansas-city-chiefs-nail-designs", "anchor_text": "Kansas City Chiefs nail designs", "type": "spoke" },
+          { "slug": "super-bowl-nail-ideas", "anchor_text": "Super Bowl nail ideas for game day", "type": "spoke" },
+          { "slug": "jersey-number-nail-art-ideas", "anchor_text": "jersey number nail art ideas", "type": "spoke" }
+        ],
+        "receives_links_from": [
+          { "slug": "nfl-nails-ultimate-guide", "anchor_text": "Taylor Swift-inspired Chiefs game day nails" },
+          { "slug": "kansas-city-chiefs-nail-designs", "anchor_text": "Taylor Swift-inspired Chiefs game day nails" },
+          { "slug": "super-bowl-nail-ideas", "anchor_text": "Taylor Swift-inspired Chiefs game day nails" },
+          { "slug": "jersey-number-nail-art-ideas", "anchor_text": "Taylor Swift-inspired Chiefs game day nails" }
+        ]
+      },
+      "status": "approved"
+    }
+  ],
+  "keyword_ownership_registry": {
+    "description": "Master list of all primary keywords — one per post, no overlaps",
+    "entries": [
+      { "primary_keyword": "nfl nails", "owned_by_slug": "nfl-nails-ultimate-guide", "owned_by_title": "NFL Nails: The Ultimate Game Day Nail Guide", "source": "new post" },
+      { "primary_keyword": "how to do football nails", "owned_by_slug": "how-to-do-football-nail-art-at-home", "owned_by_title": "How to Do Football Nail Art at Home (Step-by-Step)", "source": "new post" },
+      { "primary_keyword": "super bowl nails", "owned_by_slug": "super-bowl-nail-ideas", "owned_by_title": "Super Bowl Nail Ideas 2027", "source": "new post" },
+      { "primary_keyword": "chiefs nails", "owned_by_slug": "kansas-city-chiefs-nail-designs", "owned_by_title": "Kansas City Chiefs Nail Designs", "source": "new post" },
+      { "primary_keyword": "eagles nails", "owned_by_slug": "philadelphia-eagles-nail-designs", "owned_by_title": "Philadelphia Eagles Nail Designs", "source": "new post" },
+      { "primary_keyword": "cowboys nails", "owned_by_slug": "dallas-cowboys-nail-designs", "owned_by_title": "Dallas Cowboys Nail Designs", "source": "new post" },
+      { "primary_keyword": "packers nails", "owned_by_slug": "green-bay-packers-nail-designs", "owned_by_title": "Green Bay Packers Nail Designs", "source": "new post" },
+      { "primary_keyword": "nfl press on nails", "owned_by_slug": "nfl-press-on-nails-game-day-ideas", "owned_by_title": "NFL Press-On Nails: Best Game Day Ideas", "source": "new post" },
+      { "primary_keyword": "nfl french tip nails", "owned_by_slug": "nfl-french-tip-nail-ideas", "owned_by_title": "NFL French Tip Nail Ideas", "source": "new post" },
+      { "primary_keyword": "jersey number nails", "owned_by_slug": "jersey-number-nail-art-ideas", "owned_by_title": "Jersey Number Nail Art Ideas", "source": "new post" },
+      { "primary_keyword": "taylor swift game day nails", "owned_by_slug": "taylor-swift-game-day-nails", "owned_by_title": "Taylor Swift Game Day Nails (Chiefs-Inspired)", "source": "new post" }
+    ]
+  },
+  "merged_posts_log": [
+    {
+      "original_topics": ["helmet nail art tutorial", "football field/turf nail art tutorial"],
+      "merged_into": "How to Do Football Nail Art at Home (Step-by-Step)",
+      "reason": "Single-source demand signals only (not enough independently to clear the 2-source validation bar) — folded in as technique sections within the broader how-to tutorial post."
+    }
+  ],
+  "killed_posts_log": [
+    {
+      "topic": "Soccer / FIFA World Cup football nails",
+      "reason": "Real search demand exists but belongs to a different sport and audience intent (global soccer fandom vs. American NFL). User confirmed a dedicated soccer nails cluster already exists on the site — excluded to prevent cross-cluster topical and keyword overlap."
+    },
+    {
+      "topic": "Generic 'sports nails'",
+      "reason": "Too broad, no specific searched query behind it; would cannibalize both the NFL pillar and team-specific spokes."
+    },
+    {
+      "topic": "Individual nail-design posts for all remaining NFL teams (e.g. Jaguars, Titans, Browns, Bears, etc.)",
+      "reason": "No multi-source demand confirmed at the volume needed to justify standalone posts — only Chiefs, Eagles, Cowboys, and Packers cleared the 2-source validation bar with dedicated Pinterest boards and editorial roundups."
+    },
+    {
+      "topic": "Buy football / NFL press-on nails (product/shopping intent)",
+      "reason": "Transactional intent — explicitly excluded per site content rules. The informational/inspirational angle (ideas and styles) was kept instead as its own spoke."
+    }
+  ]
+}
