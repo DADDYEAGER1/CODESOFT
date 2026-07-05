@@ -1,0 +1,335 @@
+{
+  "cluster_metadata": {
+    "cluster_topic": "Y2K Nails",
+    "topic_slug": "y2k-nails",
+    "target_audience": "Global, Tier 1 countries",
+    "total_posts": 7,
+    "intent_breakdown": {
+      "informational": 2,
+      "inspirational": 4,
+      "tutorial": 1,
+      "comparison": 0,
+      "seasonal_trend": 0
+    },
+    "pillar_post_slug": "y2k-nails",
+    "created_date": "2026-07-05"
+  },
+
+  "existing_site_posts_excluded": [
+    {
+      "url": "https://mirelleinspo.com/blog/chrome-nails/chrome-nails",
+      "title": "Chrome Nails: Every Design, Colour & Style Trending in 2026",
+      "inferred_primary_keyword": "chrome nails",
+      "inferred_intent": "informational",
+      "exclusion_reason": "Already exists on mirelleinspo.com — covers Y2K chrome maximalism in depth. A dedicated 'y2k chrome nails' post was killed for this reason (see killed_posts_log)."
+    },
+    {
+      "url": "https://mirelleinspo.com/blog/chrome-nails/silver-chrome-nails",
+      "title": "Silver Chrome Nails: Mirror Ideas From Minimal to Bold",
+      "inferred_primary_keyword": "silver chrome nails",
+      "inferred_intent": "informational",
+      "exclusion_reason": "Already exists on mirelleinspo.com — contains a full section on 'Y2K silver chrome' and 'CD nail effect'. Keyword reserved."
+    },
+    {
+      "url": "https://mirelleinspo.com/blog/french-nails/french-tip-nail-designs",
+      "title": "French Tip Nail Designs: 40+ Modern Ideas",
+      "inferred_primary_keyword": "french tip nail designs",
+      "inferred_intent": "informational",
+      "exclusion_reason": "Already exists on mirelleinspo.com — includes a 'Y2K reference' black-tip-on-glazed design callout. A dedicated 'y2k french tip nails' post was killed for insufficient standalone demand and overlap risk."
+    }
+  ],
+
+  "posts": [
+    {
+      "post_id": 1,
+      "role": "pillar",
+      "title": "Y2K Nails: The Complete 2026 Trend Guide",
+      "slug": "y2k",
+      "primary_keyword": "y2k",
+      "intent": "informational",
+      "search_mode": "inspiration_mode",
+      "suggested_hook_trigger": "Trigger 2 — FOMO/Trend",
+      "search_demand_signals": [
+        "Google Trends: search interest flat/zero through most of 2025, sharp confirmed spike starting January 2026",
+        "Pinterest: dedicated idea-page at pinterest.com/ideas/y2k-nails/ with active pin volume",
+        "Editorial: independent coverage from Who What Wear, NewBeauty, Global Sources, dazzlemenails, chiquehomeliving — all treating 'y2k nails' as a named, searched trend, not a coined phrase"
+      ],
+      "why_included": "Broadest keyword in the space with a confirmed, dated demand inflection point (Jan 2026). Clear hub for every sub-aesthetic below.",
+      "internal_links": {
+        "links_to": [
+          { "slug": "y2k-butterfly-nails", "anchor_text": "Y2K butterfly nail designs", "type": "spoke" },
+          { "slug": "korean-y2k-nails", "anchor_text": "Korean Y2K nail aesthetic guide", "type": "spoke" },
+          { "slug": "y2k-nail-colors", "anchor_text": "the full Y2K nail colour palette", "type": "spoke" },
+          { "slug": "easy-y2k-nails", "anchor_text": "easy Y2K nail designs for beginners", "type": "spoke" },
+          { "slug": "y2k-nails-short", "anchor_text": "short Y2K nail ideas", "type": "spoke" },
+          { "slug": "y2k-coquette-nails", "anchor_text": "Y2K coquette nail designs", "type": "spoke" },
+          { "slug": "y2k-nail-tutorial", "anchor_text": "step-by-step Y2K nail tutorial", "type": "spoke" }
+        ],
+        "gallery_link": {
+          "url": "https://mirelleinspo.com/inspo/y2k-nails-inspiration-gallery",
+          "anchor_text": "Y2K nails inspiration gallery"
+        },
+        "receives_links_from": [
+          { "slug": "y2k-butterfly-nails", "anchor_text": "the complete Y2K nails trend guide" },
+          { "slug": "korean-y2k-nails", "anchor_text": "the complete Y2K nails trend guide" },
+          { "slug": "y2k-nail-colors", "anchor_text": "the complete Y2K nails trend guide" },
+          { "slug": "easy-y2k-nails", "anchor_text": "the complete Y2K nails trend guide" },
+          { "slug": "y2k-nails-short", "anchor_text": "the complete Y2K nails trend guide" },
+          { "slug": "y2k-coquette-nails", "anchor_text": "the complete Y2K nails trend guide" },
+          { "slug": "y2k-nail-tutorial", "anchor_text": "the complete Y2K nails trend guide" }
+        ]
+      },
+      "status": "approved"
+    },
+    {
+      "post_id": 2,
+      "role": "spoke",
+      "title": "Y2K Butterfly Nails: Every Design Idea",
+      "slug": "y2k-butterfly-nails",
+      "primary_keyword": "y2k butterfly nails",
+      "intent": "inspirational",
+      "search_mode": "inspiration_mode",
+      "suggested_hook_trigger": "Trigger 2 — FOMO/Trend",
+      "search_demand_signals": [
+        "Pinterest: dedicated idea-page at pinterest.com/ideas/butterfly-nails-y2k/",
+        "Editorial: IPSY dedicated a full standalone article to '10 Y2K-Coded Butterfly Nail Art Ideas'; recurring top motif across every Y2K nail listicle found"
+      ],
+      "why_included": "Distinct, high-recurrence motif with its own independent Pinterest query page — not a subtopic invented from prose.",
+      "internal_links": {
+        "links_to": [
+          { "slug": "y2k-nails", "anchor_text": "Y2K nails trend guide", "type": "pillar" },
+          { "slug": "y2k-coquette-nails", "anchor_text": "Y2K coquette nail designs", "type": "spoke" },
+          { "slug": "easy-y2k-nails", "anchor_text": "easy Y2K nail designs for beginners", "type": "spoke" },
+          { "slug": "y2k-nail-tutorial", "anchor_text": "step-by-step Y2K nail tutorial", "type": "spoke" }
+        ],
+        "receives_links_from": [
+          { "slug": "y2k-nails", "anchor_text": "Y2K butterfly nail designs" },
+          { "slug": "y2k-coquette-nails", "anchor_text": "Y2K butterfly nail designs" },
+          { "slug": "y2k-nail-tutorial", "anchor_text": "Y2K butterfly nail designs" }
+        ]
+      },
+      "status": "approved"
+    },
+    {
+      "post_id": 3,
+      "role": "spoke",
+      "title": "Korean Y2K Nails: The Aesthetic Explained",
+      "slug": "korean-y2k-nails",
+      "primary_keyword": "korean y2k nails",
+      "intent": "informational",
+      "search_mode": "aesthetic_identity_mode",
+      "suggested_hook_trigger": "Trigger 4 — Identity Mirroring",
+      "search_demand_signals": [
+        "Pinterest: dedicated idea-page at pinterest.com/ideas/korean-y2k-nails/ with distinct related-search cluster (aespacore, acubi nails, nails kpop) separate from generic Y2K searches",
+        "Related-search data shows independent sub-audience (K-beauty/K-pop nail aesthetic) rather than overlap with generic Y2K queries"
+      ],
+      "why_included": "Named sub-aesthetic with its own dedicated search page and a visibly distinct related-query cluster — genuinely separate reader intent from the generic pillar.",
+      "internal_links": {
+        "links_to": [
+          { "slug": "y2k-nails", "anchor_text": "Y2K nails trend guide", "type": "pillar" },
+          { "slug": "y2k-nail-colors", "anchor_text": "Y2K nail colour palette guide", "type": "spoke" },
+          { "slug": "y2k-coquette-nails", "anchor_text": "Y2K coquette nail designs", "type": "spoke" },
+          { "slug": "y2k-nails-short", "anchor_text": "short Y2K nail ideas", "type": "spoke" }
+        ],
+        "receives_links_from": [
+          { "slug": "y2k-nails", "anchor_text": "Korean Y2K nail aesthetic guide" },
+          { "slug": "y2k-nail-colors", "anchor_text": "Korean Y2K nail aesthetic guide" }
+        ]
+      },
+      "status": "approved"
+    },
+    {
+      "post_id": 4,
+      "role": "spoke",
+      "title": "Y2K Nail Colors: The Complete Palette Guide",
+      "slug": "y2k-nail-colors",
+      "primary_keyword": "y2k nail colors",
+      "intent": "informational",
+      "search_mode": "decision_mode",
+      "suggested_hook_trigger": "Trigger 1 — Curiosity Gap",
+      "search_demand_signals": [
+        "Pinterest: dedicated idea-page at pinterest.com/ideas/y2k-nail-colors/",
+        "Pinterest: multiple standalone colour-specific idea-pages under the same query family (y2k nails hot pink, burgundy nails y2k) confirming colour is a real independent search axis, not just a design detail"
+      ],
+      "why_included": "Standalone informational query distinct from design-idea browsing — confirmed by its own dedicated Pinterest page plus a family of colour-specific variant pages.",
+      "internal_links": {
+        "links_to": [
+          { "slug": "y2k-nails", "anchor_text": "Y2K nails trend guide", "type": "pillar" },
+          { "slug": "korean-y2k-nails", "anchor_text": "Korean Y2K nail aesthetic guide", "type": "spoke" },
+          { "slug": "y2k-coquette-nails", "anchor_text": "Y2K coquette nail designs", "type": "spoke" },
+          { "slug": "y2k-nails-short", "anchor_text": "short Y2K nail ideas", "type": "spoke" }
+        ],
+        "receives_links_from": [
+          { "slug": "y2k-nails", "anchor_text": "the full Y2K nail colour palette" },
+          { "slug": "korean-y2k-nails", "anchor_text": "Y2K nail colour palette guide" }
+        ]
+      },
+      "status": "approved"
+    },
+    {
+      "post_id": 5,
+      "role": "spoke",
+      "title": "Easy Y2K Nails: Beginner-Friendly Designs",
+      "slug": "easy-y2k-nails",
+      "primary_keyword": "easy y2k nails",
+      "intent": "tutorial",
+      "search_mode": "how_to_execution_mode",
+      "suggested_hook_trigger": "Trigger 1 — Curiosity Gap",
+      "search_demand_signals": [
+        "Pinterest: dedicated idea-page at pinterest.com/ideas/easy-y2k-nails/",
+        "Pinterest related-search data: 'Y2k Easy Nails' surfaces independently inside the 'y2k nails without charms' related-search cluster, confirming cross-board recurrence"
+      ],
+      "why_included": "Real, confirmed simplified-execution query — this replaces the fabricated 'diy y2k nails at home' phrase from the first draft with the version people actually search.",
+      "internal_links": {
+        "links_to": [
+          { "slug": "y2k-nails", "anchor_text": "Y2K nails trend guide", "type": "pillar" },
+          { "slug": "y2k-nail-tutorial", "anchor_text": "step-by-step Y2K nail tutorial", "type": "spoke" },
+          { "slug": "y2k-nails-short", "anchor_text": "short Y2K nail ideas", "type": "spoke" },
+          { "slug": "y2k-butterfly-nails", "anchor_text": "Y2K butterfly nail designs", "type": "spoke" }
+        ],
+        "receives_links_from": [
+          { "slug": "y2k-nails", "anchor_text": "easy Y2K nail designs for beginners" },
+          { "slug": "y2k-butterfly-nails", "anchor_text": "easy Y2K nail designs for beginners" },
+          { "slug": "y2k-nail-tutorial", "anchor_text": "easy Y2K nail designs for beginners" }
+        ]
+      },
+      "status": "approved"
+    },
+    {
+      "post_id": 6,
+      "role": "spoke",
+      "title": "Y2K Nails Short: The Best Designs for Short Nails",
+      "slug": "y2k-nails-short",
+      "primary_keyword": "y2k nails short",
+      "intent": "inspirational",
+      "search_mode": "inspiration_mode",
+      "suggested_hook_trigger": "Trigger 3 — Specificity",
+      "search_demand_signals": [
+        "Pinterest: dedicated idea-page at pinterest.com/ideas/y2k-nails-short/",
+        "TikTok: independent discover page (tiktok.com/discover/y2k-nails-short-nails) plus TikTok Shop page for 'y2k nails short square' — cross-platform confirmation, not single-source"
+      ],
+      "why_included": "Length-specific variant confirmed on two independent platforms (Pinterest + TikTok), which is a stronger signal than most spokes in this cluster.",
+      "internal_links": {
+        "links_to": [
+          { "slug": "y2k-nails", "anchor_text": "Y2K nails trend guide", "type": "pillar" },
+          { "slug": "easy-y2k-nails", "anchor_text": "easy Y2K nail designs for beginners", "type": "spoke" },
+          { "slug": "korean-y2k-nails", "anchor_text": "Korean Y2K nail aesthetic guide", "type": "spoke" },
+          { "slug": "y2k-nail-colors", "anchor_text": "Y2K nail colour palette guide", "type": "spoke" }
+        ],
+        "receives_links_from": [
+          { "slug": "y2k-nails", "anchor_text": "short Y2K nail ideas" },
+          { "slug": "korean-y2k-nails", "anchor_text": "short Y2K nail ideas" },
+          { "slug": "easy-y2k-nails", "anchor_text": "short Y2K nail ideas" }
+        ]
+      },
+      "status": "approved"
+    },
+    {
+      "post_id": 7,
+      "role": "spoke",
+      "title": "Y2K Coquette Nails: The Full Aesthetic Guide",
+      "slug": "y2k-coquette-nails",
+      "primary_keyword": "y2k coquette nails",
+      "intent": "inspirational",
+      "search_mode": "aesthetic_identity_mode",
+      "suggested_hook_trigger": "Trigger 4 — Identity Mirroring",
+      "search_demand_signals": [
+        "Pinterest: dedicated idea-page at pinterest.com/ideas/y2k-coquette-nails/",
+        "Cross-reference: 'coquette' recurs as an independent aesthetic tag across unrelated site content (back-to-school post references coquette bow nails separately), confirming coquette is a real, distinct search-driven identity label, not a one-off phrase"
+      ],
+      "why_included": "Named micro-aesthetic with its own dedicated Pinterest page — genuinely distinct identity-driven query, not generic Y2K coverage.",
+      "internal_links": {
+        "links_to": [
+          { "slug": "y2k-nails", "anchor_text": "Y2K nails trend guide", "type": "pillar" },
+          { "slug": "y2k-butterfly-nails", "anchor_text": "Y2K butterfly nail designs", "type": "spoke" },
+          { "slug": "korean-y2k-nails", "anchor_text": "Korean Y2K nail aesthetic guide", "type": "spoke" },
+          { "slug": "y2k-nail-colors", "anchor_text": "Y2K nail colour palette guide", "type": "spoke" }
+        ],
+        "receives_links_from": [
+          { "slug": "y2k-nails", "anchor_text": "Y2K coquette nail designs" },
+          { "slug": "y2k-butterfly-nails", "anchor_text": "Y2K coquette nail designs" },
+          { "slug": "korean-y2k-nails", "anchor_text": "Y2K coquette nail designs" },
+          { "slug": "y2k-nail-colors", "anchor_text": "Y2K coquette nail designs" }
+        ]
+      },
+      "status": "approved"
+    },
+    {
+      "post_id": 8,
+      "role": "spoke",
+      "title": "Y2K Nail Tutorial: Step-by-Step Designs",
+      "slug": "y2k-nail-tutorial",
+      "primary_keyword": "y2k nail tutorial",
+      "intent": "tutorial",
+      "search_mode": "how_to_execution_mode",
+      "suggested_hook_trigger": "Trigger 1 — Curiosity Gap",
+      "search_demand_signals": [
+        "Pinterest: dedicated idea-page at pinterest.com/ideas/y2k-nail-tutorial/",
+        "Pinterest: separate 'DIY Y2K Nail Art' board (2.8k pins) independently referencing tutorial-style related searches (early 2000s nail trends, Y2K nails airbrush)"
+      ],
+      "why_included": "Confirmed execution-intent query distinct from 'easy y2k nails' — this one is about technique/process, the other about difficulty level. Two different real queries, not a duplicate.",
+      "internal_links": {
+        "links_to": [
+          { "slug": "y2k-nails", "anchor_text": "Y2K nails trend guide", "type": "pillar" },
+          { "slug": "easy-y2k-nails", "anchor_text": "easy Y2K nail designs for beginners", "type": "spoke" },
+          { "slug": "y2k-butterfly-nails", "anchor_text": "Y2K butterfly nail designs", "type": "spoke" }
+        ],
+        "receives_links_from": [
+          { "slug": "y2k-nails", "anchor_text": "step-by-step Y2K nail tutorial" },
+          { "slug": "easy-y2k-nails", "anchor_text": "step-by-step Y2K nail tutorial" }
+        ]
+      },
+      "status": "approved"
+    }
+  ],
+
+  "keyword_ownership_registry": {
+    "description": "Master list of all primary keywords — one per post, no overlaps, includes existing site posts",
+    "entries": [
+      { "primary_keyword": "y2k nails", "owned_by_slug": "y2k-nails", "owned_by_title": "Y2K Nails: The Complete 2026 Trend Guide", "source": "new post" },
+      { "primary_keyword": "y2k butterfly nails", "owned_by_slug": "y2k-butterfly-nails", "owned_by_title": "Y2K Butterfly Nails: Every Design Idea", "source": "new post" },
+      { "primary_keyword": "korean y2k nails", "owned_by_slug": "korean-y2k-nails", "owned_by_title": "Korean Y2K Nails: The Aesthetic Explained", "source": "new post" },
+      { "primary_keyword": "y2k nail colors", "owned_by_slug": "y2k-nail-colors", "owned_by_title": "Y2K Nail Colors: The Complete Palette Guide", "source": "new post" },
+      { "primary_keyword": "easy y2k nails", "owned_by_slug": "easy-y2k-nails", "owned_by_title": "Easy Y2K Nails: Beginner-Friendly Designs", "source": "new post" },
+      { "primary_keyword": "y2k nails short", "owned_by_slug": "y2k-nails-short", "owned_by_title": "Y2K Nails Short: The Best Designs for Short Nails", "source": "new post" },
+      { "primary_keyword": "y2k coquette nails", "owned_by_slug": "y2k-coquette-nails", "owned_by_title": "Y2K Coquette Nails: The Full Aesthetic Guide", "source": "new post" },
+      { "primary_keyword": "y2k nail tutorial", "owned_by_slug": "y2k-nail-tutorial", "owned_by_title": "Y2K Nail Tutorial: Step-by-Step Designs", "source": "new post" },
+      { "primary_keyword": "chrome nails", "owned_by_slug": "chrome-nails", "owned_by_title": "Chrome Nails: Every Design, Colour & Style Trending in 2026", "source": "existing site post" },
+      { "primary_keyword": "silver chrome nails", "owned_by_slug": "silver-chrome-nails", "owned_by_title": "Silver Chrome Nails: Mirror Ideas From Minimal to Bold", "source": "existing site post" },
+      { "primary_keyword": "french tip nail designs", "owned_by_slug": "french-tip-nail-designs", "owned_by_title": "French Tip Nail Designs: 40+ Modern Ideas", "source": "existing site post" }
+    ]
+  },
+
+  "merged_posts_log": [],
+
+  "killed_posts_log": [
+    {
+      "topic": "y2k chrome nails",
+      "reason": "Cannibalization — existing site posts chrome-nails and silver-chrome-nails already cover Y2K chrome in depth (Y2K maximalism, CD nail effect, Y2K silver chrome sections). No differentiable angle remained."
+    },
+    {
+      "topic": "y2k acrylic nails / generic y2k nail designs",
+      "reason": "Same query cluster and same reader intent as the pillar keyword 'y2k nails' — would compete with post #1 rather than adding coverage."
+    },
+    {
+      "topic": "y2k nail shapes (square/round comparison)",
+      "reason": "Only 1 demand source found, no independent Pinterest or cross-platform confirmation — killed per 2-source validation rule."
+    },
+    {
+      "topic": "y2k rhinestone nails / y2k bling nails",
+      "reason": "No dedicated Pinterest idea-page found — 'rhinestone' only appears as a tag inside other Y2K boards, not as its own searched query. Initially proposed based on recurrence across editorial listicles, which is topic coverage, not validated demand. Killed on stricter re-validation."
+    },
+    {
+      "topic": "diy y2k nails at home",
+      "reason": "Fabricated phrasing — no evidence anyone searches this exact string. The real, confirmed queries in this space are 'easy y2k nails' and 'y2k nail tutorial', both included as separate spokes instead."
+    },
+    {
+      "topic": "y2k nails vs 90s nails",
+      "reason": "Fabricated comparison keyword — invented from one article's stylistic aside contrasting the two eras. Zero autocomplete, PAA, Pinterest, or Trends evidence that anyone searches this. This was the clearest case of topic-coverage-disguised-as-strategy in the original draft and is killed outright rather than reworked."
+    },
+    {
+      "topic": "y2k french tip nails",
+      "reason": "No dedicated Pinterest idea-page found despite two editorial pieces covering 'chrome French tips' as a design element. Also cannibalization risk against existing french-tip-nail-designs post, which already contains a Y2K callout. Double reason to kill — insufficient demand AND overlap."
+    }
+  ]
+}
