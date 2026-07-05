@@ -1,0 +1,289 @@
+{
+  "cluster_metadata": {
+    "cluster_topic": "Cuticle Care",
+    "topic_slug": "cuticle-care",
+    "target_audience": "Global, Tier 1 countries",
+    "total_posts": 7,
+    "intent_breakdown": {
+      "informational": 3,
+      "inspirational": 0,
+      "tutorial": 2,
+      "comparison": 1,
+      "seasonal_trend": 1
+    },
+    "pillar_post_slug": "what-does-cuticle-oil-do",
+    "created_date": "2026-07-05",
+    "notes": "Site cannibalization scan (phase_0b) was explicitly skipped at user request across this entire project. No existing_posts_registry was built. One researched angle — cuticle damage from gel/acrylic removal — was deliberately excluded from this cluster because it substantially overlaps existing content in the user's nail-strengthening cluster (specifically the 'repair nails after gel/acrylic removal' post, which already covers cuticle oil and hydration as part of its recovery routine). Including it here would risk internal cannibalization. Post 7 (cuticle picking) carries elevated YMYL exposure since top-ranking sources for this query lean into BFRB/dermatillomania/anxiety framing; this post must stay strictly at the behavioral/habit level (triggers, hydration, replacement habits) and avoid psychological diagnosis language or naming clinical conditions."
+  },
+
+  "existing_site_posts_excluded": [],
+
+  "posts": [
+    {
+      "post_id": 1,
+      "role": "pillar",
+      "title": "What Does Cuticle Oil Actually Do? (Benefits, Uses, and How Often)",
+      "slug": "what-does-cuticle-oil-do",
+      "primary_keyword": "cuticle oil benefits how to use",
+      "intent": "informational",
+      "search_mode": "decision_mode",
+      "suggested_hook_trigger": "Trigger 1 — Curiosity Gap",
+      "search_demand_signals": [
+        "Healthline (Cuticle Oil: Benefits, How to Use It, and Nail Growth) - dedicated article, exact query match",
+        "Skin Type Solutions (Cuticle Oil: What It Is, Benefits & How to Use It) - dedicated in-depth guide with references",
+        "LONDONTOWN (How To Apply Cuticle Oil To Your Nails: Step-by-Step) - dedicated how-to guide",
+        "LONDONTOWN (What Does Cuticle Oil Do: Benefits and Uses) - second dedicated article from same brand, confirms sustained demand",
+        "Makeup.com by L'Oreal (Cuticle Oil: What Is It, What Does It Do and Should You Use It?) - dedicated guide with expert quotes",
+        "Nail Company Wholesale Supply (Cuticle Oil: Benefits and How Often To Use It) - dedicated guide",
+        "Subculture Hair Studio (Cuticle Oil and its benefits!) - salon-published guide"
+      ],
+      "why_included": "Broadest, most foundational query in cuticle care, validated across 7 independent sources including Healthline and multiple beauty brands. Every other post in this cluster assumes the reader already understands why cuticle oil matters, making this the natural entry point.",
+      "internal_links": {
+        "links_to": [
+          { "slug": "diy-cuticle-oil-recipes-at-home", "anchor_text": "easy DIY cuticle oil recipes you can make at home", "type": "spoke" },
+          { "slug": "should-you-push-back-or-cut-cuticles", "anchor_text": "whether you should push back or cut your cuticles", "type": "spoke" },
+          { "slug": "overgrown-cuticles-causes-and-fix", "anchor_text": "why cuticles become overgrown and how to fix it", "type": "spoke" },
+          { "slug": "why-do-i-keep-getting-hangnails", "anchor_text": "why hangnails keep coming back and how to prevent them", "type": "spoke" },
+          { "slug": "dry-cracked-cuticles-winter", "anchor_text": "how to fix dry, cracked cuticles in winter", "type": "spoke" },
+          { "slug": "how-to-stop-picking-cuticles", "anchor_text": "how to stop picking at your cuticles", "type": "spoke" }
+        ],
+        "gallery_link": {
+          "url": "https://mirelleinspo.com/inspo/what-does-cuticle-oil-do-inspiration-gallery",
+          "anchor_text": "cuticle care inspiration gallery"
+        },
+        "receives_links_from": [
+          { "slug": "diy-cuticle-oil-recipes-at-home", "anchor_text": "what cuticle oil actually does for your nails" },
+          { "slug": "should-you-push-back-or-cut-cuticles", "anchor_text": "how cuticle oil supports healthy cuticles" },
+          { "slug": "overgrown-cuticles-causes-and-fix", "anchor_text": "how cuticle oil helps prevent overgrowth" },
+          { "slug": "why-do-i-keep-getting-hangnails", "anchor_text": "how cuticle oil helps prevent hangnails" },
+          { "slug": "dry-cracked-cuticles-winter", "anchor_text": "what cuticle oil does for dry, cracked cuticles" },
+          { "slug": "how-to-stop-picking-cuticles", "anchor_text": "using cuticle oil as part of your cuticle care routine" }
+        ]
+      },
+      "status": "approved"
+    },
+    {
+      "post_id": 2,
+      "role": "spoke",
+      "title": "Should You Push Back or Cut Your Cuticles?",
+      "slug": "should-you-push-back-or-cut-cuticles",
+      "primary_keyword": "should you cut or push back cuticles",
+      "intent": "comparison",
+      "search_mode": "decision_mode",
+      "suggested_hook_trigger": "Trigger 1 — Curiosity Gap",
+      "search_demand_signals": [
+        "Healthline (Pushing Back Cuticles: Health Benefits, Precautions, How to Do It) - dedicated guide citing AAD and Mayo Clinic",
+        "Nail Polish Direct (How to push back your cuticles) - dedicated guide, '5 reasons' framing",
+        "MedicineNet (Should You Push Your Cuticles Back?) - exact query match, dedicated Q&A",
+        "MedicineNet (Should you Push Back your Cuticles?) - second dedicated article, confirms sustained demand",
+        "WebMD (Nails: How to Take Care of Your Cuticles) - dedicated guide with dermatologist quotes",
+        "Vital Proteins (The Experts Weigh In On Your Cuticle Questions) - dedicated Q&A with derm quotes",
+        "Easy Nail Tech (5 Reasons Why You Need To Push Back Your Cuticles) - dedicated guide"
+      ],
+      "why_included": "Clear head-to-head decision query validated across 7 sources with consistent expert consensus (push, don't cut) — genuine point of confusion for people getting manicures at home or in salons.",
+      "internal_links": {
+        "links_to": [
+          { "slug": "what-does-cuticle-oil-do", "anchor_text": "how cuticle oil supports healthy cuticles", "type": "pillar" },
+          { "slug": "overgrown-cuticles-causes-and-fix", "anchor_text": "why cuticles become overgrown and how to fix it", "type": "spoke" },
+          { "slug": "why-do-i-keep-getting-hangnails", "anchor_text": "why hangnails keep coming back and how to prevent them", "type": "spoke" },
+          { "slug": "how-to-stop-picking-cuticles", "anchor_text": "how to stop picking at your cuticles", "type": "spoke" }
+        ],
+        "receives_links_from": [
+          { "slug": "what-does-cuticle-oil-do", "anchor_text": "whether you should push back or cut your cuticles" },
+          { "slug": "overgrown-cuticles-causes-and-fix", "anchor_text": "whether to push back or cut overgrown cuticles" },
+          { "slug": "why-do-i-keep-getting-hangnails", "anchor_text": "why cutting your cuticles can lead to hangnails" }
+        ]
+      },
+      "status": "approved"
+    },
+    {
+      "post_id": 3,
+      "role": "spoke",
+      "title": "DIY Cuticle Oil: 6 Easy Recipes You Can Make at Home",
+      "slug": "diy-cuticle-oil-recipes-at-home",
+      "primary_keyword": "DIY cuticle oil recipe",
+      "intent": "tutorial",
+      "search_mode": "how_to_execution_mode",
+      "suggested_hook_trigger": "Trigger 3 — Specificity",
+      "search_demand_signals": [
+        "Lemons, Lavender, & Laundry (Natural DIY Cuticle Oil Recipe) - dedicated recipe with named ingredients",
+        "Savvy Homemade (Simple DIY Cuticle Oil Recipe That Actually Works Wonders) - dedicated recipe guide",
+        "A Life Adjacent (DIY Cuticle Oil Recipe to Nourish Dry Nails and Cuticles) - dedicated recipe with citations",
+        "A Beautiful Mess (Make Your Own Cuticle Oil) - dedicated recipe, high engagement in comments",
+        "Jenni Raincloud (DIY Cuticle Oil) - dedicated recipe",
+        "Progress over Perfect (How to make DIY Cuticle Oil) - dedicated recipe",
+        "Living Well Mom (Nourishing DIY Cuticle Oil with Essential Oils) - dedicated recipe",
+        "VedaOils (6 Best Homemade Cuticle Oil) - multiple recipes in one guide"
+      ],
+      "why_included": "Very strong, highly repeated recipe-seeking demand across 8 dedicated lifestyle/DIY sources — genuinely actionable content with named ingredients and steps, very low YMYL exposure.",
+      "internal_links": {
+        "links_to": [
+          { "slug": "what-does-cuticle-oil-do", "anchor_text": "what cuticle oil actually does for your nails", "type": "pillar" },
+          { "slug": "dry-cracked-cuticles-winter", "anchor_text": "how to fix dry, cracked cuticles in winter", "type": "spoke" },
+          { "slug": "overgrown-cuticles-causes-and-fix", "anchor_text": "why cuticles become overgrown and how to fix it", "type": "spoke" },
+          { "slug": "how-to-stop-picking-cuticles", "anchor_text": "how to stop picking at your cuticles", "type": "spoke" }
+        ],
+        "receives_links_from": [
+          { "slug": "what-does-cuticle-oil-do", "anchor_text": "easy DIY cuticle oil recipes you can make at home" },
+          { "slug": "dry-cracked-cuticles-winter", "anchor_text": "DIY cuticle oil recipes to fix winter dryness" },
+          { "slug": "how-to-stop-picking-cuticles", "anchor_text": "making your own soothing cuticle oil at home" }
+        ]
+      },
+      "status": "approved"
+    },
+    {
+      "post_id": 4,
+      "role": "spoke",
+      "title": "Overgrown Cuticles: Why It Happens and How to Fix It",
+      "slug": "overgrown-cuticles-causes-and-fix",
+      "primary_keyword": "overgrown cuticles how to fix",
+      "intent": "informational",
+      "search_mode": "decision_mode",
+      "suggested_hook_trigger": "Trigger 1 — Curiosity Gap",
+      "search_demand_signals": [
+        "Healthline (Overgrown Cuticles: Causes, Treatment, and Prevention) - exact query match, dedicated guide",
+        "WebMD (Nails: How to Take Care of Your Cuticles) - covers overgrowth prevention with dermatologist quotes",
+        "Global Fashion (How to slow down cuticle growth: 5 simple but effective ways) - dedicated guide",
+        "HowStuffWorks (How to Treat Damaged Cuticles) - covers overgrowth-adjacent damage",
+        "Lemon8 (Effective Ways to Manage and Care for Overgrown Cuticles) - active community engagement confirming demand"
+      ],
+      "why_included": "Distinct symptom-specific query validated across 5 sources including Healthline's dedicated exact-match article — different intent from generic cuticle oil content since it targets a specific visible problem.",
+      "internal_links": {
+        "links_to": [
+          { "slug": "what-does-cuticle-oil-do", "anchor_text": "how cuticle oil helps prevent overgrowth", "type": "pillar" },
+          { "slug": "should-you-push-back-or-cut-cuticles", "anchor_text": "whether to push back or cut overgrown cuticles", "type": "spoke" },
+          { "slug": "diy-cuticle-oil-recipes-at-home", "anchor_text": "DIY cuticle oil recipes to keep cuticles under control", "type": "spoke" },
+          { "slug": "why-do-i-keep-getting-hangnails", "anchor_text": "why hangnails keep coming back and how to prevent them", "type": "spoke" }
+        ],
+        "receives_links_from": [
+          { "slug": "what-does-cuticle-oil-do", "anchor_text": "why cuticles become overgrown and how to fix it" },
+          { "slug": "should-you-push-back-or-cut-cuticles", "anchor_text": "why cuticles become overgrown and how to fix it" },
+          { "slug": "diy-cuticle-oil-recipes-at-home", "anchor_text": "why cuticles become overgrown and how to fix it" }
+        ]
+      },
+      "status": "approved"
+    },
+    {
+      "post_id": 5,
+      "role": "spoke",
+      "title": "Why Do I Keep Getting Hangnails? (Causes and How to Prevent Them)",
+      "slug": "why-do-i-keep-getting-hangnails",
+      "primary_keyword": "why do I get hangnails",
+      "intent": "informational",
+      "search_mode": "decision_mode",
+      "suggested_hook_trigger": "Trigger 1 — Curiosity Gap",
+      "search_demand_signals": [
+        "Harvard Health (Got a hangnail? Here's what to do) - dedicated guide",
+        "Healthline (How to Get Rid of Hangnails) - dedicated guide",
+        "Dr. Dana (Why Do I Keep Getting Hangnails? Causes and Prevention) - exact query match, dedicated guide",
+        "Forefront Dermatology (Why Do We Get Hangnails?) - dedicated dermatologist-authored guide",
+        "Banner Health (How to Get Rid of and Manage Hangnails) - dedicated guide with practitioner quotes",
+        "Cleveland Clinic (Hangnails: Causes and How To Get Rid of Them) - dedicated guide",
+        "GoodRx (How To Get Rid Of Hangnails (and 5 Tips To Prevent Them)) - dedicated guide"
+      ],
+      "why_included": "Extremely well-validated, repeated query across 7 major health and beauty sources including an exact-match title from Dr. Dana — a genuinely common, recurring frustration with strong search demand.",
+      "internal_links": {
+        "links_to": [
+          { "slug": "what-does-cuticle-oil-do", "anchor_text": "how cuticle oil helps prevent hangnails", "type": "pillar" },
+          { "slug": "should-you-push-back-or-cut-cuticles", "anchor_text": "why cutting your cuticles can lead to hangnails", "type": "spoke" },
+          { "slug": "overgrown-cuticles-causes-and-fix", "anchor_text": "why cuticles become overgrown and how to fix it", "type": "spoke" },
+          { "slug": "dry-cracked-cuticles-winter", "anchor_text": "how to fix dry, cracked cuticles in winter", "type": "spoke" }
+        ],
+        "receives_links_from": [
+          { "slug": "what-does-cuticle-oil-do", "anchor_text": "why hangnails keep coming back and how to prevent them" },
+          { "slug": "should-you-push-back-or-cut-cuticles", "anchor_text": "why hangnails keep coming back and how to prevent them" },
+          { "slug": "overgrown-cuticles-causes-and-fix", "anchor_text": "why hangnails keep coming back and how to prevent them" },
+          { "slug": "dry-cracked-cuticles-winter", "anchor_text": "why dry cuticles lead to painful hangnails" },
+          { "slug": "how-to-stop-picking-cuticles", "anchor_text": "why picking at cuticles causes hangnails" }
+        ]
+      },
+      "status": "approved"
+    },
+    {
+      "post_id": 6,
+      "role": "spoke",
+      "title": "Dry, Cracked Cuticles in Winter: How to Fix and Prevent Them",
+      "slug": "dry-cracked-cuticles-winter",
+      "primary_keyword": "dry cracked cuticles winter",
+      "intent": "seasonal_trend",
+      "search_mode": "how_to_execution_mode",
+      "suggested_hook_trigger": "Trigger 2 — FOMO/Trend",
+      "search_demand_signals": [
+        "Healthline (How to Treat Dry Cuticles) - dedicated guide",
+        "OPI UK (How to Treat Dry Cuticles and Nails at Home) - dedicated winter-specific guide from major brand",
+        "Bustle (7 Ways To Heal Dry, Cracked Cuticles This Season) - dedicated seasonal guide",
+        "LeSalon (10 Best Ways To Repair Dry Cuticles) - dedicated seasonal guide",
+        "Blue Heron Botanicals (Dry Cuticles: The Causes & Surprising Natural Cure) - dedicated seasonal guide",
+        "Perfect Nails Spa San Jose (How to take care of your dry nail cuticles in winter) - salon-published seasonal content confirming demand"
+      ],
+      "why_included": "Strong recurring seasonal demand validated across 6 sources with a consistent winter framing — evergreen topic with a reliable seasonal traffic spike, distinct from general dry-cuticle content.",
+      "internal_links": {
+        "links_to": [
+          { "slug": "what-does-cuticle-oil-do", "anchor_text": "what cuticle oil does for dry, cracked cuticles", "type": "pillar" },
+          { "slug": "diy-cuticle-oil-recipes-at-home", "anchor_text": "DIY cuticle oil recipes to fix winter dryness", "type": "spoke" },
+          { "slug": "why-do-i-keep-getting-hangnails", "anchor_text": "why dry cuticles lead to painful hangnails", "type": "spoke" },
+          { "slug": "overgrown-cuticles-causes-and-fix", "anchor_text": "why cuticles become overgrown and how to fix it", "type": "spoke" }
+        ],
+        "receives_links_from": [
+          { "slug": "what-does-cuticle-oil-do", "anchor_text": "how to fix dry, cracked cuticles in winter" },
+          { "slug": "diy-cuticle-oil-recipes-at-home", "anchor_text": "how to fix dry, cracked cuticles in winter" },
+          { "slug": "why-do-i-keep-getting-hangnails", "anchor_text": "how to fix dry, cracked cuticles in winter" }
+        ]
+      },
+      "status": "approved"
+    },
+    {
+      "post_id": 7,
+      "role": "spoke",
+      "title": "How to Stop Picking at Your Cuticles (Without It Becoming a Fixation)",
+      "slug": "how-to-stop-picking-cuticles",
+      "primary_keyword": "how to stop picking cuticles habit",
+      "intent": "tutorial",
+      "search_mode": "how_to_execution_mode",
+      "suggested_hook_trigger": "Trigger 3 — Specificity",
+      "search_demand_signals": [
+        "mindbodygreen (How To Stop Picking & Biting Your Cuticles For Good) - dedicated guide with expert quotes",
+        "Atelier Anaiis (How to Stop Picking Your Nails and Cuticles) - dedicated guide",
+        "Mora (How to Stop Picking Your Cuticles: 4 Helpful Self-Care Tips) - dedicated self-care guide",
+        "WUFT/WYPR/WUSF public radio syndication (Stop picking at your cuticles! 7 ways to keep your nails healthy and strong) - dermatologist-quoted guide syndicated across multiple public radio outlets"
+      ],
+      "why_included": "Real, validated demand across 4+ independent sources. IMPORTANT CAVEAT: top-ranking sources for this query lean into body-focused repetitive behavior (BFRB), dermatillomania, and anxiety-therapy framing, which raises YMYL exposure beyond the rest of this cluster. This post must stay strictly at the behavioral/habit level (identifying physical triggers like dryness and rough edges, replacement habits, moisturizing routines) and must NOT include psychological diagnosis language, name clinical conditions, or offer mental-health advice. If this framing cannot be maintained, this post should be cut.",
+      "internal_links": {
+        "links_to": [
+          { "slug": "what-does-cuticle-oil-do", "anchor_text": "using cuticle oil as part of your cuticle care routine", "type": "pillar" },
+          { "slug": "diy-cuticle-oil-recipes-at-home", "anchor_text": "making your own soothing cuticle oil at home", "type": "spoke" },
+          { "slug": "why-do-i-keep-getting-hangnails", "anchor_text": "why picking at cuticles causes hangnails", "type": "spoke" },
+          { "slug": "should-you-push-back-or-cut-cuticles", "anchor_text": "how to push back your cuticles the right way", "type": "spoke" }
+        ],
+        "receives_links_from": [
+          { "slug": "what-does-cuticle-oil-do", "anchor_text": "how to stop picking at your cuticles" },
+          { "slug": "should-you-push-back-or-cut-cuticles", "anchor_text": "how to stop picking at your cuticles" },
+          { "slug": "diy-cuticle-oil-recipes-at-home", "anchor_text": "how to stop picking at your cuticles" }
+        ]
+      },
+      "status": "approved"
+    }
+  ],
+
+  "keyword_ownership_registry": {
+    "description": "Master list of all primary keywords — one per post, no overlaps. Existing site posts NOT included because phase_0b scan was skipped at user request.",
+    "entries": [
+      { "primary_keyword": "cuticle oil benefits how to use", "owned_by_slug": "what-does-cuticle-oil-do", "owned_by_title": "What Does Cuticle Oil Actually Do? (Benefits, Uses, and How Often)", "source": "new post" },
+      { "primary_keyword": "should you cut or push back cuticles", "owned_by_slug": "should-you-push-back-or-cut-cuticles", "owned_by_title": "Should You Push Back or Cut Your Cuticles?", "source": "new post" },
+      { "primary_keyword": "DIY cuticle oil recipe", "owned_by_slug": "diy-cuticle-oil-recipes-at-home", "owned_by_title": "DIY Cuticle Oil: 6 Easy Recipes You Can Make at Home", "source": "new post" },
+      { "primary_keyword": "overgrown cuticles how to fix", "owned_by_slug": "overgrown-cuticles-causes-and-fix", "owned_by_title": "Overgrown Cuticles: Why It Happens and How to Fix It", "source": "new post" },
+      { "primary_keyword": "why do I get hangnails", "owned_by_slug": "why-do-i-keep-getting-hangnails", "owned_by_title": "Why Do I Keep Getting Hangnails? (Causes and How to Prevent Them)", "source": "new post" },
+      { "primary_keyword": "dry cracked cuticles winter", "owned_by_slug": "dry-cracked-cuticles-winter", "owned_by_title": "Dry, Cracked Cuticles in Winter: How to Fix and Prevent Them", "source": "new post" },
+      { "primary_keyword": "how to stop picking cuticles habit", "owned_by_slug": "how-to-stop-picking-cuticles", "owned_by_title": "How to Stop Picking at Your Cuticles (Without It Becoming a Fixation)", "source": "new post" }
+    ]
+  },
+
+  "merged_posts_log": [],
+
+  "killed_posts_log": [
+    {
+      "topic": "Cuticle damage from gel/acrylic manicure removal",
+      "reason": "Validated real demand (5+ sources: Refinery29, Kirsty Meakin, Hanyinails, Anveya, My Side of 50), but excluded to avoid internal cannibalization — this content substantially overlaps the existing 'repair nails after gel/acrylic removal' post in the user's nail-strengthening cluster, which already covers cuticle oil and hydration as part of its recovery routine."
+    }
+  ]
+}
