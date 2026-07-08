@@ -1,0 +1,176 @@
+{
+  "cluster_metadata": {
+    "cluster_topic": "Pedicure Tipping",
+    "topic_slug": "pedicure-tipping",
+    "target_audience": "Global, Tier 1 countries (US, UK, Canada, Australia)",
+    "total_posts": 3,
+    "intent_breakdown": {
+      "informational": 3,
+      "inspirational": 0,
+      "tutorial": 0,
+      "comparison": 0,
+      "seasonal_trend": 0,
+      "aesthetic_identity": 0
+    },
+    "pillar_post_slug": "how-much-to-tip-for-a-pedicure",
+    "created_date": "2026-07-08"
+  },
+
+  "existing_site_posts_excluded": [
+    {
+      "url": "https://mirelleinspo.com/nail-faqs/how-much-tip-should-you-give-your-nail-technician",
+      "title": "How Much Tip Should You Give Your Nail Technician",
+      "inferred_primary_keyword": "how much to tip nail technician",
+      "inferred_intent": "informational",
+      "exclusion_reason": "Already exists on mirelleinspo.com — high overlap risk with this cluster's pillar. This cluster differentiates by scope: the existing post is a general nail-service tipping FAQ, while this cluster's pillar is a pedicure-specific calculator/guide covering exact dollar amounts. Recommend reviewing the existing post before publishing to confirm no direct duplication; may need to retire or redirect the existing post once this pillar goes live, or sharply narrow this pillar's angle to avoid two posts targeting the same head term."
+    }
+  ],
+
+  "posts": [
+    {
+      "post_id": 1,
+      "role": "pillar",
+      "title": "How Much to Tip for a Pedicure: Complete Guide + Calculator",
+      "slug": "how-much-to-tip-for-a-pedicure",
+      "primary_keyword": "how much to tip for a pedicure",
+      "intent": "informational",
+      "search_mode": "decision_mode",
+      "suggested_hook_trigger": "Trigger 1 — Curiosity Gap",
+      "search_demand_signals": [
+        "Web: 8+ independent dedicated articles (NerdWallet, Reader's Digest, GlossGenius, belliata x2, Erica's ATA, CreditDonkey, Pure Spa Direct) all answering this exact query with a 15-20% rule + dollar breakdowns",
+        "Web: a dedicated local-salon landing page targeting the exact '$40.00 pedicure' phrasing, confirming real query-level search volume down to specific dollar amounts"
+      ],
+      "why_included": "Strongest, most consistently validated demand of the three posts. Absorbs all raw dollar-amount queries ($30/$35/$37/$38/$40/$45/$50/$55/$70/$100/$200) and percentage-reassurance queries (is $5/$10/$15/$20 enough, is 20% right) as one comprehensive guide with a calculator, since every source answers all of these with the same single rule applied to different numbers — publishing them as separate posts would be self-cannibalizing.",
+      "internal_links": {
+        "links_to": [
+          { "slug": "is-it-rude-not-to-tip-pedicure", "anchor_text": "is it rude to skip the tip entirely", "type": "spoke" },
+          { "slug": "pedicure-salon-etiquette", "anchor_text": "full pedicure salon etiquette guide", "type": "spoke" }
+        ],
+        "gallery_link": {
+          "note": "PILLAR ONLY — informational/calculator cluster, no visual inspiration gallery applicable to this topic. Omitting gallery_link as it does not fit a non-visual, non-nail-art content cluster."
+        },
+        "receives_links_from": [
+          { "slug": "is-it-rude-not-to-tip-pedicure", "anchor_text": "how much to tip for a pedicure — full guide and calculator" },
+          { "slug": "pedicure-salon-etiquette", "anchor_text": "how much to tip for a pedicure — full guide and calculator" }
+        ]
+      },
+      "status": "approved"
+    },
+    {
+      "post_id": 2,
+      "role": "spoke",
+      "title": "Is It Rude Not to Tip Your Nail Tech? Pedicure Tipping Etiquette Rules",
+      "slug": "is-it-rude-not-to-tip-pedicure",
+      "primary_keyword": "is it rude not to tip your nail tech",
+      "intent": "informational",
+      "search_mode": "decision_mode",
+      "suggested_hook_trigger": "Trigger 1 — Curiosity Gap",
+      "search_demand_signals": [
+        "Web: dedicated coverage (SNS Pedicure 'Is it bad to not leave a tip', Reader's Digest, VBeautyPure) specifically addressing the social-permission angle of skipping a tip",
+        "Web: multiple sources independently flag tipping-on-discounted-service as a distinct common mistake, confirming this as its own sub-topic rather than a variant of the calculator post"
+      ],
+      "why_included": "Distinct emotional/permission-seeking search intent from the calculator post — searchers here want reassurance or social-rule clarity, not arithmetic. Absorbs 'what happens if you don't tip' and the discounted/coupon-service tipping rule, which multiple sources treat as a recurring distinct mistake worth its own explanation.",
+      "internal_links": {
+        "links_to": [
+          { "slug": "how-much-to-tip-for-a-pedicure", "anchor_text": "how much to tip for a pedicure — full guide and calculator", "type": "pillar" },
+          { "slug": "pedicure-salon-etiquette", "anchor_text": "full pedicure salon etiquette guide", "type": "spoke" }
+        ],
+        "receives_links_from": [
+          { "slug": "how-much-to-tip-for-a-pedicure", "anchor_text": "is it rude to skip the tip entirely" },
+          { "slug": "pedicure-salon-etiquette", "anchor_text": "is it rude to skip the tip entirely" }
+        ]
+      },
+      "status": "approved"
+    },
+    {
+      "post_id": 3,
+      "role": "spoke",
+      "title": "Pedicure Salon Etiquette: What Not to Do During Your Appointment",
+      "slug": "pedicure-salon-etiquette",
+      "primary_keyword": "pedicure salon etiquette",
+      "intent": "informational",
+      "search_mode": "decision_mode",
+      "suggested_hook_trigger": "Trigger 3 — Specificity/Numbers",
+      "search_demand_signals": [
+        "Web: dedicated etiquette guides (Refinery29 'Does My Nail Tech Secretly Hate Me', Crystal Nails Spa, Mimosa Beauty Salon) covering phone use, punctuality, and salon behavior beyond tipping",
+        "AlsoAsked PAA data: 'what should you not do during a pedicure', 'is it rude to use a phone during a pedicure', 'do I need to wear shorts for a pedicure' — distinct behavioral questions separate from tipping amount"
+      ],
+      "why_included": "Genuinely separate topic from tipping — covers in-appointment behavior (phone use, attire, communication with tech) rather than gratuity. Absorbs 'do you tip the salon owner' and 'cash vs card' as FAQ sections within this post, since both are real but too thin on independent demand to justify their own pages.",
+      "internal_links": {
+        "links_to": [
+          { "slug": "how-much-to-tip-for-a-pedicure", "anchor_text": "how much to tip for a pedicure — full guide and calculator", "type": "pillar" },
+          { "slug": "is-it-rude-not-to-tip-pedicure", "anchor_text": "is it rude to skip the tip entirely", "type": "spoke" }
+        ],
+        "receives_links_from": [
+          { "slug": "how-much-to-tip-for-a-pedicure", "anchor_text": "full pedicure salon etiquette guide" },
+          { "slug": "is-it-rude-not-to-tip-pedicure", "anchor_text": "full pedicure salon etiquette guide" }
+        ]
+      },
+      "status": "approved"
+    }
+  ],
+
+  "keyword_ownership_registry": {
+    "description": "Master list of all primary keywords for this cluster — one per post, no overlaps, includes relevant existing site posts",
+    "entries": [
+      { "primary_keyword": "how much to tip for a pedicure", "owned_by_slug": "how-much-to-tip-for-a-pedicure", "owned_by_title": "How Much to Tip for a Pedicure: Complete Guide + Calculator", "source": "new post" },
+      { "primary_keyword": "is it rude not to tip your nail tech", "owned_by_slug": "is-it-rude-not-to-tip-pedicure", "owned_by_title": "Is It Rude Not to Tip Your Nail Tech? Pedicure Tipping Etiquette Rules", "source": "new post" },
+      { "primary_keyword": "pedicure salon etiquette", "owned_by_slug": "pedicure-salon-etiquette", "owned_by_title": "Pedicure Salon Etiquette: What Not to Do During Your Appointment", "source": "new post" },
+      { "primary_keyword": "how much to tip nail technician", "owned_by_slug": "how-much-tip-should-you-give-your-nail-technician", "owned_by_title": "How Much Tip Should You Give Your Nail Technician", "source": "existing site post" }
+    ]
+  },
+
+  "merged_posts_log": [
+    {
+      "original_topics": [
+        "Cluster 6 — Pedicure Tipping by Price Point",
+        "Cluster 7 — Pedicure Tip Amount/Percentage Validation"
+      ],
+      "merged_into": "Pedicure Tipping (single cluster)",
+      "reason": "Research showed both clusters were the same underlying query shape (a fixed 15-20% rule applied to different numbers) framed two ways — 'how much for $X' vs 'is $X enough.' Splitting into two clusters would have meant two pillars competing for the same searcher. Merged into one cluster."
+    },
+    {
+      "original_topics": [
+        "how much do you tip for a $30 pedicure",
+        "how much do you tip for a $35 pedicure",
+        "how much do you tip for a $37 pedicure",
+        "how much do you tip for a $38 pedicure",
+        "how much do you tip for a $40 pedicure",
+        "how much should I tip for $45",
+        "how much should you tip a nail tech for $50 nails",
+        "how much do you tip for a $55 pedicure",
+        "how much should you tip for $70 nails",
+        "how much do I tip for $100 nails",
+        "how much to tip on $200 nails",
+        "is 20% a good tip for a pedicure",
+        "is $5 ok for a tip on a pedicure",
+        "is $10 a good tip for $100 salon",
+        "is $10 a good tip for a $55 pedicure",
+        "is 15 dollars a good tip for a pedicure",
+        "is a $10 tip good for nails",
+        "is a $20 tip good for nails",
+        "is a 15 tip ok"
+      ],
+      "merged_into": "how-much-to-tip-for-a-pedicure (pillar)",
+      "reason": "All 19 raw queries resolve to the same 15-20% rule with different arithmetic. No independent publisher treats these as separate articles; consolidated into one calculator-driven guide to avoid self-cannibalization."
+    },
+    {
+      "original_topics": [
+        "what happens if you don't tip",
+        "tipping on a discounted or coupon service"
+      ],
+      "merged_into": "is-it-rude-not-to-tip-pedicure (spoke)",
+      "reason": "Same permission-seeking/etiquette intent as the core 'is it rude' question; folded in as sections rather than separate posts."
+    },
+    {
+      "original_topics": [
+        "do you tip the salon owner",
+        "cash vs card tipping"
+      ],
+      "merged_into": "pedicure-salon-etiquette (spoke, as FAQ sections)",
+      "reason": "Real, distinct questions with genuine debate/nuance (contested opinions found on Quora and across sources), but too thin on independent standalone demand to justify their own dedicated posts. Best served as FAQ sections within the broader etiquette post."
+    }
+  ],
+
+  "killed_posts_log": []
+}
