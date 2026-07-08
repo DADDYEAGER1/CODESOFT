@@ -1,0 +1,628 @@
+{
+  "file_authority": {
+    "statement": "THIS FILE IS THE SINGLE SOURCE OF TRUTH FOR THE BLOG GEN AGENT. All values in POST_CONSTANTS are hardcoded — Blog Gen Agent does not ask, adjust, or override them. All keywords, H2 structure, audience intelligence, internal links, and tone defined here must be followed exactly."
+  },
+
+  "section_2_post_constants": {
+    "blog_gen_instruction": "Read this section FIRST. Lock every value. Do not ask, adjust, or recalculate anything here.",
+    "slug": "nail-colors-for-hazel-eyes",
+    "topic_slug": "nail-colors-for-eye-color",
+    "canonical": "https://mirelleinspo.com/blog/nail-colors-for-eye-color/nail-colors-for-hazel-eyes",
+    "post_type": "spoke",
+    "intent": "informational",
+    "word_count": 2100,
+    "image_count": 9,
+    "template": "split-left",
+    "hero_dimensions": "800x800",
+    "category": "Nail Colors by Eye Color",
+    "publish_date": "2026-07-01",
+    "author": "Mirellé Team"
+  },
+
+  "section_3_cluster_snapshot": {
+    "note": "CLUSTER MODE — all values from cluster_context.json",
+    "pillar_slug": "nail-colors-for-every-eye-color",
+    "pillar_title": "Best Nail Colors for Every Eye Color: The Complete Guide",
+    "pillar_primary_keyword": "nail colors for eye color",
+    "this_post_slug": "nail-colors-for-hazel-eyes",
+    "this_post_role": "spoke",
+    "keywords_to_avoid": [
+      "nail colors for eye color",
+      "nail colors for blue eyes",
+      "nail colors for brown eyes",
+      "nail colors for green eyes"
+    ]
+  },
+
+  "section_4_serp_analysis": {
+    "blog_gen_instruction": "Use competitor gaps and missing semantic territory to fill what competitors miss. Our strategic approach governs the introduction and conclusion angle.",
+    "top_3_competitor_overview": "Top ranking results for 'nail colors for hazel eyes' are dominated by TikTok discovery pages and Pinterest boards. No dedicated long-form editorial post ranks. The gap is entirely unoccupied by text content. LondonTown articles that rank for blue/green/brown eye queries do NOT appear for hazel — hazel is the least served eye colour in editorial nail content.",
+    "top_3_word_count_estimates": {
+      "result_1": "TikTok discovery page — not a text article, no word count",
+      "result_2": "Pinterest board — not a text article, no word count",
+      "result_3": "Palette Hunt article on neutral undertones + hazel eyes — approx. 1400 words, tangential (skin undertone focus, not nail colour focus)",
+      "floor_note": "No direct competitor exists as a written post. The top 3 are social discovery pages. Floor is set at 1800 words based on the Palette Hunt tangential article and the depth required to cover the full hazel eye logic properly. Ceiling for spokes = 2800. Hard number set at 2100."
+    },
+    "top_3_keyword_density_baseline": "No written competitor posts rank — baseline cannot be extracted from competitors. Density baseline estimated at 8 mentions based on comparable spoke posts in the cluster and Mirellé editorial standard. Hard mention target set at 11 (8 baseline + 3).",
+    "competitor_gaps": [
+      "No editorial post explains WHY certain colours work for hazel eyes via colour theory — TikTok content shows matching but never explains the mechanism",
+      "No content differentiates between green-dominant hazel vs gold-dominant hazel vs brown-dominant hazel — all content treats hazel as one flat category",
+      "No content addresses the 'what colours make hazel look MORE green' vs 'what makes hazel look MORE golden' dual-goal question — confirmed on Quora and Palette Hunt",
+      "No nail-specific content addresses which colours to avoid for hazel eyes — eyeshadow content covers this but no nail post does (confirmed on 2+ sources: Quora + Palette Hunt)",
+      "No content covers the finish dimension — whether a metallic or chrome changes the hazel-enhancing effect (confirmed demand on TikTok: cat eye nails + hazel eyes is a strong signal)"
+    ],
+    "missing_semantic_territory": [
+      "Colour theory explanation (complementary contrast) applied specifically to nail colour for hazel eyes",
+      "The hazel eye variability angle — nails can shift which register (green/gold/brown) reads dominant",
+      "Warm undertone + hazel vs cool undertone + hazel = different nail recommendation frameworks",
+      "Specific shade names (plum, forest green, copper, burgundy) tied to outcomes (amplifies green OR amplifies gold)",
+      "The colours-to-avoid section is absent from all ranking content"
+    ],
+    "our_strategic_approach": "This post owns the colour-theory angle every other nail guide skips. Hazel eyes are not one colour — they are three registers (green, gold, brown) that shift depending on what is near them. This post teaches the reader how to use that knowledge intentionally: which shades amplify the green, which pull out the gold, and which make the whole iris look richer. No other post for this keyword does this.",
+    "recommended_image_count_validation": "No visual competitor exists to set pattern. Standard spoke image count (9) confirmed."
+  },
+
+  "section_5_audience_intelligence": {
+    "blog_gen_instruction": "This is your primary creative brief. Write every paragraph for this exact reader with this exact intent. Satisfy them completely.",
+    "who_they_are": "Women who know they have hazel eyes but feel underserved by beauty content — every guide is for blue, brown, or green eyes, and hazel is treated as a footnote or afterthought. They understand hazel eyes shift colour and are looking for the specific nail logic that works with that variability. They are comfortable with beauty content and curious about colour theory, but not experts. Many come from TikTok having seen the 'match your nail colour to your eye colour' trend and wanting something more explanatory.",
+    "what_they_want_from_this_post": "A clear, specific, reasoned guide to which nail colours work best for hazel eyes — not a generic list, but an answer that accounts for the fact that hazel is green-and-gold-and-brown at the same time. They want to understand WHY a colour works, and they want the option to choose whether they want to bring out the green or the gold in their hazel.",
+    "what_frustrates_them": "Every guide they find is for blue eyes, brown eyes, or green eyes. When hazel is mentioned, it is a line at the bottom of another post, not its own coverage. Guides that say 'neutrals and earthy tones work for hazel' without explaining why or which specific shades feel lazy and unhelpful. The TikTok content shows matching but never explains the mechanism.",
+    "top_5_pain_points": [
+      "Hazel is almost never the primary subject — it is always an afterthought in other eye colour posts",
+      "They cannot tell if they should follow green eye advice or brown eye advice — their eyes are both",
+      "No one explains whether to wear colours that match hazel or contrast hazel to make it pop",
+      "They are told 'earth tones' but not given the specificity of which earthy shades amplify green vs gold",
+      "Colour guides written for skin tone say hazel goes with warm colours but never address the nail-specific application"
+    ],
+    "exact_user_phrases": [
+      "what nail color goes with hazel eyes",
+      "nail colors that make hazel eyes pop",
+      "best nail polish for hazel eyes",
+      "what colour nails for hazel eyes",
+      "nail colors to bring out hazel eyes",
+      "do I follow green eye or brown eye nail advice for hazel",
+      "hazel eyes green or gold what nail color",
+      "nails that complement hazel eyes",
+      "nail colors that make hazel look more green",
+      "hazel eye nails tiktok trend"
+    ],
+    "intent_content_signals": [
+      "Informational — reader wants reasoning, not just a list",
+      "Prefers specific shade names (plum, forest green, copper) over colour families alone (purple, green)",
+      "Responds to the colour theory explanation — knowing WHY gives them confidence to apply the logic beyond the list",
+      "Wants practical everyday options as well as something for a more deliberate look",
+      "Hazel community on TikTok is engaged and trend-aware — they have seen the 'match nails to eye colour' trend",
+      "Wants the answer segmented by outcome: 'if you want green hazel, wear X; if you want golden hazel, wear Y'",
+      "Short-form video audience that then seeks the written depth when TikTok does not explain the reasoning"
+    ]
+  },
+
+  "section_6_semantic_keyword_data": {
+    "blog_gen_instruction": "Primary keyword in strong tags every single mention — all 11 of them. AEO terms trigger direct answer paragraphs. User language woven naturally. No term from keywords_to_avoid used as a focus term anywhere.",
+    "primary_keyword": "nail colors for hazel eyes",
+    "total_mention_target": 11,
+    "first_100_words_rule": "Primary keyword MUST appear TWICE in the first 100 words. Mandatory. No exceptions.",
+    "keyword_variations": [
+      "best nail colors for hazel eyes",
+      "nail polish for hazel eyes",
+      "nail color for hazel eyes",
+      "nail colours for hazel eyes",
+      "nail polish colors for hazel eyes",
+      "what nail color goes with hazel eyes",
+      "nail shades for hazel eyes",
+      "manicure colors for hazel eyes"
+    ],
+    "cluster_keywords": [
+      "hazel eye nail colour guide",
+      "what colours make hazel eyes pop",
+      "nail colours that complement hazel eyes",
+      "enhancing hazel eyes with nail colour",
+      "hazel eye colour theory nails",
+      "nail polish to bring out hazel eyes",
+      "nail colour and eye colour matching",
+      "hazel eye nail pairing",
+      "colour wheel and hazel eyes",
+      "nail colours for green-gold eyes",
+      "flattering nail shades for hazel eyes",
+      "best manicure for hazel eyes"
+    ],
+    "lsi_terms": [
+      "complementary contrast",
+      "colour wheel opposite",
+      "warm copper nails",
+      "deep plum nail polish",
+      "forest green nails",
+      "burgundy nail colour",
+      "copper metallic nails",
+      "warm amber nail shade",
+      "gold-toned nail polish",
+      "green register hazel",
+      "golden register hazel",
+      "earthy nail palette",
+      "dusty violet nails",
+      "warm teal nail colour",
+      "jewel tone nails eye colour",
+      "sage green nails hazel",
+      "terracotta nail hazel eyes",
+      "cat eye nails hazel eyes",
+      "colours to avoid hazel eyes",
+      "nail finish for hazel eyes"
+    ],
+    "aeo_terms": [
+      "What nail color makes hazel eyes pop?",
+      "What are the best nail colors for hazel eyes?",
+      "Do hazel eyes look better with warm or cool nail colors?",
+      "What nail color brings out the green in hazel eyes?",
+      "What nail color brings out the gold in hazel eyes?",
+      "What colors should people with hazel eyes avoid on their nails?",
+      "Do I follow green eye or brown eye nail advice if I have hazel eyes?",
+      "What nail polish shades complement hazel eyes?",
+      "Can hazel eyes wear both warm and cool nail colors?",
+      "What is the best everyday nail color for hazel eyes?",
+      "Do deep plum nails work for hazel eyes?",
+      "What nail colors make hazel eyes look more vivid?"
+    ],
+    "technical_terms": [
+      "complementary colour contrast",
+      "simultaneous contrast (colour theory)",
+      "warm undertone",
+      "cool undertone",
+      "colour register (green-dominant, gold-dominant)",
+      "tonal resonance",
+      "chromatic contrast",
+      "melanin pigmentation in iris"
+    ],
+    "user_language": [
+      "hazel eyes are so hard to shop for",
+      "my eyes change colour depending on what I wear",
+      "I never know if I count as brown eyes or green eyes",
+      "periwinkle has a chokehold on blue-eyed girls but what about us hazel girls",
+      "hazel is literally the most underserved eye color in beauty content",
+      "I want my nails to make my eyes look more green",
+      "my eyes go so golden in autumn and I want nails to match that vibe",
+      "what color should I get at the salon if I have hazel eyes"
+    ]
+  },
+
+  "section_7_voice_and_ai_queries": {
+    "blog_gen_instruction": "Answer every query directly in the relevant H2 section body. If a query cannot be addressed naturally in the body, route it to faqItems. No query left unanswered.",
+    "queries": [
+      "What nail color makes hazel eyes pop?",
+      "What are the best nail colors for hazel eyes?",
+      "Do hazel eyes look better with warm or cool nail colors?",
+      "What nail color brings out the green in hazel eyes?",
+      "What nail color brings out the gold in hazel eyes?",
+      "What colors should I avoid on my nails if I have hazel eyes?",
+      "Do I follow green eye or brown eye nail advice if I have hazel eyes?",
+      "Can hazel eyes wear both warm and cool nail colors?",
+      "What is the best everyday nail color for hazel eyes?",
+      "Do deep plum nails work for hazel eyes?",
+      "What nail colors make hazel eyes look more vivid?",
+      "What nail polish works for green-gold hazel eyes?",
+      "Is copper nail polish good for hazel eyes?",
+      "Should I match my nails to my hazel eye color or contrast it?",
+      "What nail color works for hazel eyes in autumn?",
+      "Can hazel eyes wear burgundy nail polish?",
+      "What everyday neutral nail color is best for hazel eyes?"
+    ]
+  },
+
+  "section_8_hook_and_ctr": {
+    "blog_gen_instruction": "READ THIS SECTION BEFORE WRITING THE TITLE, META DESCRIPTION, INTRO, OR FIRST H2. The title and meta description are hardcoded — use them exactly. The intro hook brief and first H2 hook direction are your creative brief for those specific elements. Do not deviate.",
+    "selected_trigger": "Trigger 1 — Curiosity Gap",
+    "trigger_rationale": "Hazel eye readers actively feel overlooked by beauty content — they know other eye colours get specific guides and they are stuck applying advice not written for them. Curiosity gap ('what most guides get wrong about hazel eyes') matches their exact frustration and search mode: they are in decision mode, looking for content that finally accounts for their specific eye colour complexity.",
+    "title": "Nail Colors for Hazel Eyes: What Actually Works",
+    "title_char_count": 47,
+    "meta_description": "Hazel eyes shift between green, gold, and brown — your nail color should work with that. See which shades amplify each register and which to skip.",
+    "meta_char_count": 143,
+    "intro_hook_brief": "Open by naming the frustration hazel-eye readers know: every nail guide is for blue, brown, or green eyes. Hazel is always the footnote. Then reframe: hazel eyes are actually the most reactive eye colour — which means nail colour choices matter more, not less, and the right shade can do something genuinely striking. Establish immediately that this post is written specifically for hazel, not retrofitted from another eye colour guide.",
+    "first_h2_hook_direction": "Phrase the first H2 as a question the reader already has in their head — something like 'Why does nail colour affect hazel eyes differently?' — positioning the post as the explanation nobody else provides. This is the curiosity payoff on the title hook. Keep it conversational and voice-search natural."
+  },
+
+  "section_9_search_journey": {
+    "blog_gen_instruction": "This is the emotional contract with the reader. Every section of the post must honour the promise made. Read this before writing any section. If a paragraph breaks the journey arc — rewrite it.",
+    "reader_arrival_state": "Slightly frustrated — they have been told 'earth tones and warm shades' before without explanation, and every guide they find is written for blue, brown, or green eyes. They want something specifically for hazel that treats their eye colour as the primary subject, not an afterthought.",
+    "journey_arc": [
+      "1. VALIDATE — immediately confirm they are in the right place and acknowledge the gap in existing content",
+      "2. EXPLAIN — introduce the hazel eye logic: three registers (green, gold, brown), how surrounding colours shift which one reads dominant",
+      "3. EMPOWER — give them the specific nail colours that amplify each outcome (want more green? want more gold? want richness overall?)",
+      "4. CLARIFY — address what to avoid and why, so they leave knowing what to reject as well as what to choose",
+      "5. CLOSE — land on a clear, confident recommendation for everyday wear and a bolder option, so they can book their next appointment"
+    ],
+    "promise_to_deliver": "A complete, reasoned guide to nail colours for hazel eyes that explains the colour logic, differentiates by outcome (green vs gold amplification), and gives specific shade names — not generic families.",
+    "exit_state": "Confident — they understand why certain colours work for their hazel eyes, they have a list of specific shades to try, and they know what to ask for at their next salon appointment."
+  },
+
+  "section_10_content_structure": {
+    "blog_gen_instruction": "This H2 structure is research-driven and must be followed exactly. Do not rename, reorder, or remove H2s without user instruction. Word budget per section is set — follow it. H3s may be added at editorial discretion.",
+    "h1": "Nail Colors for Hazel Eyes: What Actually Works",
+    "h2_structure": [
+      "Why does nail colour affect hazel eyes differently?",
+      "What nail colors bring out the green in hazel eyes?",
+      "What nail colors bring out the gold in hazel eyes?",
+      "The best everyday nail colors for hazel eyes",
+      "Warm vs cool undertones: does it change the nail advice for hazel eyes?",
+      "What nail colors make hazel eyes look more vivid overall?",
+      "What nail colors to avoid if you have hazel eyes",
+      "Nail finishes and hazel eyes: does the finish matter?"
+    ],
+    "word_budget": {
+      "introduction": "220 words",
+      "h2_1_why_nail_color_affects_hazel_differently": "230 words",
+      "h2_2_bring_out_green": "260 words",
+      "h2_3_bring_out_gold": "250 words",
+      "h2_4_everyday_nail_colors": "230 words",
+      "h2_5_warm_vs_cool_undertone": "230 words",
+      "h2_6_most_vivid_overall": "230 words",
+      "h2_7_colors_to_avoid": "220 words",
+      "h2_8_nail_finishes": "190 words",
+      "conclusion": "170 words",
+      "total": "2230 words (within 2100 +/- 50 tolerance)"
+    }
+  },
+
+  "section_11_internal_links": {
+    "blog_gen_instruction": "Every link below must appear in the post. Cluster links use anchor texts verbatim — do not rewrite. Cross-site links use the provided descriptive anchor. Place each link where the placement note says — woven naturally into prose, never as a standalone CTA. Total internal links must not exceed 6.",
+    "all_internal_links": [
+      {
+        "url_or_slug": "/blog/nail-colors-for-eye-color/nail-colors-for-every-eye-color",
+        "title": "Best Nail Colors for Every Eye Color: The Complete Guide",
+        "anchor_text": "nail colors for every eye color",
+        "placement_note": "Introduction or H2_1 — when setting up that hazel is one of five eye colours covered in the broader cluster; natural bridge to the pillar",
+        "link_type": "cluster-pillar"
+      },
+      {
+        "url_or_slug": "/blog/nail-colors-for-eye-color/nail-colors-for-green-eyes",
+        "title": "Nail Colors for Green Eyes",
+        "anchor_text": "nail colors for green eyes",
+        "placement_note": "H2_2 (bring out the green) — when noting that readers with strongly green-dominant hazel may also find the green-eye guide relevant",
+        "link_type": "cluster-spoke"
+      },
+      {
+        "url_or_slug": "/blog/nail-colors-for-eye-color/nail-colors-for-brown-eyes",
+        "title": "Nail Colors for Brown Eyes",
+        "anchor_text": "nail colors for brown eyes",
+        "placement_note": "H2_3 (bring out the gold) or H2_4 (everyday) — when noting that readers with brown-dominant hazel share some palette territory with the brown eyes guide",
+        "link_type": "cluster-spoke"
+      },
+      {
+        "url_or_slug": "/blog/nail-colors-for-eye-color/nail-colors-for-blue-eyes",
+        "title": "Nail Colors for Blue Eyes: What Actually Works",
+        "anchor_text": "nail colors for blue eyes",
+        "placement_note": "H2_5 (warm vs cool undertone) — when referencing that cool undertone readers with hazel follow different logic than the blue-eye guide",
+        "link_type": "cluster-spoke"
+      },
+      {
+        "url_or_slug": "https://mirelleinspo.com/blog/skin-tone/nail-colors-for-every-skin-tone",
+        "title": "Nail Colors for Every Skin Tone: The Real Guide",
+        "anchor_text": "how skin undertone shapes nail colour choices across every complexion",
+        "placement_note": "H2_5 (warm vs cool undertone) — when directing readers who want the full undertone framework beyond eye colour",
+        "link_type": "cross-site"
+      },
+      {
+        "url_or_slug": "https://mirelleinspo.com/blog/cat-eye/green-cat-eye-nails",
+        "title": "Green Cat Eye Nails: Every Shade From Emerald to Sage",
+        "anchor_text": "how a cat eye finish transforms green nail shades for hazel eyes",
+        "placement_note": "H2_8 (nail finishes) — when discussing how cat eye and magnetic finishes interact with hazel's green register; the green cat eye post is directly relevant",
+        "link_type": "cross-site"
+      }
+    ]
+  },
+
+  "section_12_voice_tone": {
+    "blog_gen_instruction": "This is the voice for this specific post. Layer on top of Mirellé editorial framework. Do not default to generic AI tone.",
+    "recommended_voice": "Confident educator with warmth — the knowledgeable friend who finally explains the thing nobody else bothered to explain",
+    "tone_characteristics": [
+      "Validating without being sycophantic — acknowledge the frustration of being overlooked in beauty content, then move on to solving it",
+      "Explanatory not prescriptive — the reader should understand WHY, not just get a list to memorise",
+      "Direct and specific — shade names, not colour families; outcomes, not vague advice",
+      "Warm and inclusive — hazel eyes are common globally; the tone is not niche or exclusive",
+      "Confident without hedging — colour theory applied to nail polish is not complicated; the post should feel authoritative"
+    ],
+    "language_style": "Medium sentence length — varies between punchy single-sentence statements and 2-3 sentence explanations. Uses 'you' and 'your hazel eyes' naturally. No jargon without explanation. Analogy-friendly when explaining the colour-wheel mechanism (e.g. 'the way a plum blouse makes a hazel iris read as vivid green').",
+    "audience_match": "This reader is not a beauty novice — they know what undertones are and they have thought about their eye colour before. But they have not been given the specific nail logic for hazel eyes before. The voice respects their intelligence while delivering genuinely new information."
+  },
+
+  "section_13_external_links": {
+    "blog_gen_instruction": "Include all external links where indicated. Supports E-E-A-T. Use anchor suggestion as guide — write naturally around it.",
+    "links": [
+      {
+        "url": "https://www.palettehunt.com/guide/colors-that-make-hazel-eyes-pop",
+        "context": "H2_1 or H2_2 — when explaining the colour-theory mechanism behind complementary contrast for hazel eyes. Palette Hunt's colour theory explanation is credible and citable.",
+        "anchor_suggestion": "complementary contrast and hazel eyes"
+      },
+      {
+        "url": "https://redapplelipstick.com/blogs/eyes/best-eyeshadow-color-for-hazel-eyes",
+        "context": "H2_2 (bring out the green) — when referencing the red-copper-opposite-green principle. Red Apple Lipstick's explanation is technically credible for the colour theory backstory.",
+        "anchor_suggestion": "how warm reds and coppers activate the green register in hazel eyes"
+      },
+      {
+        "url": "https://www.palettehunt.com/beauty/makeup-for-hazel-eyes",
+        "context": "H2_3 (bring out the gold) — when citing the principle that warm copper and terracotta amplify the amber-gold register in hazel. Palette Hunt's beauty-for-hazel-eyes page is detailed and credible.",
+        "anchor_suggestion": "which colours amplify the golden register in hazel eyes"
+      }
+    ]
+  },
+
+  "section_14_execution_plan": {
+    "purpose": "Blog Gen Agent reads this section FIRST — before frontmatter, before writing a single word. Every value here is pre-calculated from the input file data. Lock all values and execute them exactly. This section eliminates rewrite loops.",
+    "blog_gen_instruction": "READ THIS SECTION FIRST. Lock every value. Execute exactly. Do not recalculate, do not adjust, do not deviate.",
+
+    "block_1_keyword_execution": {
+      "primary_keyword": "nail colors for hazel eyes",
+      "top_3_density_baseline": 8,
+      "total_mention_target": 11,
+      "first_100_words_plan": {
+        "rule": "Primary keyword MUST appear TWICE in the first 100 words. Mandatory. No exceptions.",
+        "mention_1": "Sentence 1-2 of introduction — state the subject directly, e.g. 'nail colors for hazel eyes are one of the most underserved topics in beauty content'",
+        "mention_2": "Sentence 3-5 of introduction — reframe the opportunity, e.g. 'the right nail colors for hazel eyes can do something genuinely striking — once you understand how hazel actually works'"
+      },
+      "first_half_target": "7 mentions in first 1050 words — run denser in first half",
+      "second_half_target": "4 mentions in second 1050 words",
+      "strong_tag_rule": "EVERY single mention of 'nail colors for hazel eyes' — all 11 of them — wrapped in <strong> tags. No exceptions. Scan after every paragraph.",
+      "keywords_to_avoid_active": [
+        "nail colors for eye color",
+        "nail colors for blue eyes",
+        "nail colors for brown eyes",
+        "nail colors for green eyes"
+      ]
+    },
+
+    "block_2_word_budget": {
+      "total_target": "2100 words — +/-50 words tolerance, never exceed",
+      "introduction": "220 words",
+      "conclusion": "170 words",
+      "h2_budgets": [
+        {
+          "heading": "Why does nail colour affect hazel eyes differently?",
+          "budget": "230 words",
+          "complexity": "high — colour theory explanation, AEO answer paragraph required"
+        },
+        {
+          "heading": "What nail colors bring out the green in hazel eyes?",
+          "budget": "260 words",
+          "complexity": "high — specific shade list + mechanism + outcome framing"
+        },
+        {
+          "heading": "What nail colors bring out the gold in hazel eyes?",
+          "budget": "250 words",
+          "complexity": "high — specific shade list + mechanism + outcome framing"
+        },
+        {
+          "heading": "The best everyday nail colors for hazel eyes",
+          "budget": "230 words",
+          "complexity": "medium — practical everyday guidance, cluster link placement"
+        },
+        {
+          "heading": "Warm vs cool undertones: does it change the nail advice for hazel eyes?",
+          "budget": "230 words",
+          "complexity": "medium-high — undertone framework applied to hazel specifically, cross-site link placement"
+        },
+        {
+          "heading": "What nail colors make hazel eyes look more vivid overall?",
+          "budget": "230 words",
+          "complexity": "medium — summary of the most universally vivid choices for hazel regardless of outcome"
+        },
+        {
+          "heading": "What nail colors to avoid if you have hazel eyes",
+          "budget": "220 words",
+          "complexity": "medium — avoidance framework, explains WHY not just what"
+        },
+        {
+          "heading": "Nail finishes and hazel eyes: does the finish matter?",
+          "budget": "190 words",
+          "complexity": "medium — metallic, cat eye, chrome finishes and their interaction with hazel; cross-site link placement"
+        }
+      ],
+      "tracking_rule": "Track running word total at the end of every H2 section. If a section is running over budget — cut before moving to the next section. Do not compensate later."
+    },
+
+    "block_3_image_plan": {
+      "total_images": 9,
+      "hero_image": "frontmatter only — NEVER appears in post body",
+      "body_images": "8 images to place in body",
+      "assignments": [
+        {
+          "image_number": 1,
+          "place_after": "Introduction",
+          "section_context": "Hazel eye close-up OR nails in a deep plum or forest green shade — something atmospheric that captures the richness of hazel as a starting image"
+        },
+        {
+          "image_number": 2,
+          "place_after": "Why does nail colour affect hazel eyes differently?",
+          "section_context": "Nails in a colour that makes green pop — plum, deep violet, or burgundy — alongside a hazel eye reference if possible"
+        },
+        {
+          "image_number": 3,
+          "place_after": "What nail colors bring out the green in hazel eyes?",
+          "section_context": "Deep plum, wine, or forest green nails — showing the green-amplifying shades in practice"
+        },
+        {
+          "image_number": 4,
+          "place_after": "What nail colors bring out the gold in hazel eyes?",
+          "section_context": "Copper, warm bronze, or terracotta nails — the gold-amplifying palette"
+        },
+        {
+          "image_number": 5,
+          "place_after": "The best everyday nail colors for hazel eyes",
+          "section_context": "Everyday wearable shades — dusty mauve, warm nude, or soft sage — showing something polished and daily-appropriate"
+        },
+        {
+          "image_number": 6,
+          "place_after": "Warm vs cool undertones: does it change the nail advice for hazel eyes?",
+          "section_context": "Side-by-side or contrast image — warm copper vs dusty violet showing the undertone split"
+        },
+        {
+          "image_number": 7,
+          "place_after": "What nail colors make hazel eyes look more vivid overall?",
+          "section_context": "Rich jewel tone or saturated shade — deep plum, warm teal, or forest green — something dramatic and vivid"
+        },
+        {
+          "image_number": 8,
+          "place_after": "Nail finishes and hazel eyes: does the finish matter?",
+          "section_context": "Cat eye or metallic finish nails in green or copper — showing how finish affects hazel eye enhancement"
+        }
+      ],
+      "image_type_rule": "ALL body images = inspirational nail design images related to the topic. NO infographics. NO process diagrams. NO comparison charts. NO step-by-step visuals.",
+      "path_rule": "/images/blog/nail-colors-for-eye-color/nail-colors-for-hazel-eyes/filename.webp — topic_slug in path, slug folder, leading slash"
+    },
+
+    "block_4_opening_technique_assignments": {
+      "rule": "No two consecutive sections use the same technique. Conclusion = Technique 1 or 3 only.",
+      "assignments": [
+        {
+          "section": "Introduction",
+          "technique": "Technique 2 — The Problem Statement (name the frustration before solving it)"
+        },
+        {
+          "section": "Why does nail colour affect hazel eyes differently?",
+          "technique": "Technique 4 — The Direct Answer (AEO-first paragraph answering the question immediately)"
+        },
+        {
+          "section": "What nail colors bring out the green in hazel eyes?",
+          "technique": "Technique 3 — The Reframe (reframe: this is not about matching, it is about complementary contrast)"
+        },
+        {
+          "section": "What nail colors bring out the gold in hazel eyes?",
+          "technique": "Technique 1 — The Claim (lead with a specific confident statement about copper and warm amber)"
+        },
+        {
+          "section": "The best everyday nail colors for hazel eyes",
+          "technique": "Technique 2 — The Problem Statement (the everyday dilemma: dramatic options exist but what do you wear on a Tuesday?)"
+        },
+        {
+          "section": "Warm vs cool undertones: does it change the nail advice for hazel eyes?",
+          "technique": "Technique 1 — The Claim (yes, undertone modifies but does not override the eye colour logic)"
+        },
+        {
+          "section": "What nail colors make hazel eyes look more vivid overall?",
+          "technique": "Technique 3 — The Reframe (the question is not which register you want — it is which shades work for all of them at once)"
+        },
+        {
+          "section": "What nail colors to avoid if you have hazel eyes",
+          "technique": "Technique 4 — The Direct Answer (lead immediately with the avoidance list and the reason)"
+        },
+        {
+          "section": "Nail finishes and hazel eyes: does the finish matter?",
+          "technique": "Technique 1 — The Claim (the finish is doing more work than most people realise for hazel eyes specifically)"
+        },
+        {
+          "section": "Conclusion",
+          "technique": "Technique 3 — The Reframe (hazel eyes are not an afterthought — they are the most reactive eye colour, which means the right nail choice has more visible impact than with any other eye colour)"
+        }
+      ],
+      "banned_opener_rule": "Check every opener against banned_opening_approaches in blog gen prompt before writing the second sentence"
+    },
+
+    "block_5_link_placements": {
+      "rule": "Every link placed exactly where specified. Anchor texts used verbatim — never rewritten. Links woven into prose naturally — never standalone CTAs.",
+      "links": [
+        {
+          "anchor_text": "nail colors for every eye color",
+          "full_url": "/blog/nail-colors-for-eye-color/nail-colors-for-every-eye-color",
+          "place_in_section": "Introduction or H2_1",
+          "placement_context": "When establishing that hazel is part of a broader eye colour nail framework — 'if you want the full picture across every eye colour, [nail colors for every eye color] covers the complete guide'",
+          "link_type": "cluster-pillar"
+        },
+        {
+          "anchor_text": "nail colors for green eyes",
+          "full_url": "/blog/nail-colors-for-eye-color/nail-colors-for-green-eyes",
+          "place_in_section": "H2_2 — What nail colors bring out the green in hazel eyes?",
+          "placement_context": "When noting that readers with strongly green-dominant hazel may want to cross-reference",
+          "link_type": "cluster-spoke"
+        },
+        {
+          "anchor_text": "nail colors for brown eyes",
+          "full_url": "/blog/nail-colors-for-eye-color/nail-colors-for-brown-eyes",
+          "place_in_section": "H2_3 or H2_4",
+          "placement_context": "When noting that brown-dominant hazel shares some palette territory with the brown eyes guide",
+          "link_type": "cluster-spoke"
+        },
+        {
+          "anchor_text": "nail colors for blue eyes",
+          "full_url": "/blog/nail-colors-for-eye-color/nail-colors-for-blue-eyes",
+          "place_in_section": "H2_5 — Warm vs cool undertones",
+          "placement_context": "When referencing that cool-toned readers follow different logic than blue-eyed readers",
+          "link_type": "cluster-spoke"
+        },
+        {
+          "anchor_text": "how skin undertone shapes nail colour choices across every complexion",
+          "full_url": "https://mirelleinspo.com/blog/skin-tone/nail-colors-for-every-skin-tone",
+          "place_in_section": "H2_5 — Warm vs cool undertones",
+          "placement_context": "When directing readers who want the full undertone identification and shade framework",
+          "link_type": "cross-site"
+        },
+        {
+          "anchor_text": "how a cat eye finish transforms green nail shades for hazel eyes",
+          "full_url": "https://mirelleinspo.com/blog/cat-eye/green-cat-eye-nails",
+          "place_in_section": "H2_8 — Nail finishes",
+          "placement_context": "When discussing how green cat eye nails interact with hazel's green register specifically",
+          "link_type": "cross-site"
+        }
+      ]
+    },
+
+    "block_6_aeo_geo_plan": {
+      "aeo_assignments": [
+        {
+          "aeo_term": "What nail color makes hazel eyes pop?",
+          "assigned_to_section": "H2_1 — Why does nail colour affect hazel eyes differently?",
+          "execution": "Write a direct 2-3 sentence answer paragraph IMMEDIATELY after the H2 heading — before any elaboration. Example: 'The nail colours that make hazel eyes pop are deep plum, forest green, and warm copper — each one activating a different register of your hazel iris. Plum and violet bring out the green. Copper and terracotta amplify the gold. Rich jewel tones make the whole eye look more vivid and complex.'"
+        },
+        {
+          "aeo_term": "What nail color brings out the green in hazel eyes?",
+          "assigned_to_section": "H2_2 — What nail colors bring out the green in hazel eyes?",
+          "execution": "Write a direct 2-3 sentence answer paragraph immediately after the H2 heading. Example: 'Deep plum, wine, burgundy, and forest green bring out the green in hazel eyes. These shades sit on the red-purple side of the colour wheel, which is directly opposite green — creating complementary contrast that makes the green pigment in the iris appear more vivid and forward.'"
+        },
+        {
+          "aeo_term": "What nail color brings out the gold in hazel eyes?",
+          "assigned_to_section": "H2_3 — What nail colors bring out the gold in hazel eyes?",
+          "execution": "Write a direct 2-3 sentence answer paragraph immediately after the H2 heading. Example: 'Copper, warm bronze, terracotta, and cognac bring out the gold in hazel eyes. These shades share the same warm amber temperature as the golden register in hazel, creating tonal resonance that makes the eye's gold and amber pigments read as richer and more luminous.'"
+        },
+        {
+          "aeo_term": "What colors should people with hazel eyes avoid on their nails?",
+          "assigned_to_section": "H2_7 — What nail colors to avoid if you have hazel eyes",
+          "execution": "Write a direct 2-3 sentence answer paragraph immediately after the H2 heading. Example: 'Icy cool nudes, flat grey, and very pale pastels are the shades that consistently disappoint on hazel eyes. They lack the warmth or contrast to activate any of hazel's registers — the result is that hazel reads as a flat brownish-grey rather than the shifting, complex iris it actually is.'"
+        },
+        {
+          "aeo_term": "Do hazel eyes look better with warm or cool nail colors?",
+          "assigned_to_section": "H2_5 — Warm vs cool undertones",
+          "execution": "Write a direct 2-3 sentence answer paragraph immediately after the H2 heading. Example: 'Both warm and cool nail colours can work for hazel eyes — but which one you choose should depend on your skin undertone and which register of your hazel you want to emphasise. Warm shades (copper, terracotta, cognac) amplify the golden register. Cool-adjacent shades (dusty violet, deep plum) activate the green.'"
+        }
+      ],
+      "geo_entity_statements": [
+        {
+          "entity": "complementary contrast",
+          "assigned_to_section": "H2_1 — Why does nail colour affect hazel eyes differently?",
+          "execution": "Write a clear declarative definition: 'Complementary contrast is the colour theory principle behind why certain nail shades make hazel eyes look more vivid: when you place a colour opposite to a pigment on the colour wheel, that pigment appears more intense and forward.'"
+        },
+        {
+          "entity": "hazel eye colour registers",
+          "assigned_to_section": "H2_1 — Why does nail colour affect hazel eyes differently?",
+          "execution": "Write a clear declarative definition: 'Hazel eyes contain three pigment registers — green, golden-amber, and brown — that shift in dominance depending on the colours near your face. Nail colour, worn on your hands and in your line of sight, participates in that shift.'"
+        }
+      ]
+    },
+
+    "block_7_active_constraints": {
+      "em_dash_banned": "Long em dash does not appear anywhere. If one forms while writing — stop, replace with: comma / new sentence / parentheses / but / restructure.",
+      "banned_vocab_watch": [
+        "stunning",
+        "vibrant",
+        "gorgeous",
+        "perfect",
+        "amazing",
+        "beautiful (used generically)",
+        "pop (use 'read as more vivid' or 'appear more forward' instead)",
+        "complement (overused — use 'work with' or 'amplify' or 'sit alongside')"
+      ],
+      "british_english_active": "colour, recognise, -ise, -our — every instance, no exceptions. 'colour' not 'color' in body text. 'emphasise' not 'emphasize'. Exception: primary keyword must remain 'nail colors for hazel eyes' exactly as locked — do not change the keyword itself to British spelling.",
+      "keyword_density_reminder": "After every 2 H2 sections — count current keyword mentions. Verify running total is on track to hit 11. First half (1050 words) must contain 7 mentions. Adjust if needed.",
+      "image_path_reminder": "/images/blog/nail-colors-for-eye-color/nail-colors-for-hazel-eyes/filename.webp — topic_slug in path always",
+      "internal_link_url_reminder": "Full correct paths only. Cluster links = /blog/nail-colors-for-eye-color/[slug]. Cross-site links = exact URL as listed. Never bare /slug.",
+      "hero_image_reminder": "Hero = frontmatter only. Never place hero image in body.",
+      "strong_tag_reminder": "Every primary keyword mention = <strong> tags. All 11. Scan after every paragraph.",
+      "keyword_exception_note": "The primary keyword 'nail colors for hazel eyes' retains American spelling ('colors') in <strong> tags and all keyword appearances — this is locked. All other uses of 'colour' in body prose use British spelling."
+    }
+  }
+}
