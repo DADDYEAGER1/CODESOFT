@@ -1,0 +1,617 @@
+{
+  "FILE_AUTHORITY": {
+    "statement": "THIS FILE IS THE SINGLE SOURCE OF TRUTH FOR THE BLOG GEN AGENT. All values in POST_CONSTANTS are hardcoded — Blog Gen Agent does not ask, adjust, or override them. All keywords, H2 structure, audience intelligence, internal links, and tone defined here must be followed exactly."
+  },
+
+  "POST_CONSTANTS": {
+    "slug": "nail-colors-for-brown-eyes",
+    "topic_slug": "nail-colors-for-eye-color",
+    "canonical": "https://mirelleinspo.com/blog/nail-colors-for-eye-color/nail-colors-for-brown-eyes",
+    "post_type": "spoke",
+    "intent": "informational",
+    "word_count": 2200,
+    "image_count": 9,
+    "template": "split-left",
+    "hero_dimensions": "800x800",
+    "category": "Nail Colors",
+    "publish_date": "2026-06-27",
+    "author": "Mirellé Team"
+  },
+
+  "CLUSTER_SNAPSHOT": {
+    "pillar_slug": "nail-colors-for-every-eye-color",
+    "pillar_title": "Best Nail Colors for Every Eye Color: The Complete Guide",
+    "pillar_primary_keyword": "nail colors for eye color",
+    "this_post_slug": "nail-colors-for-brown-eyes",
+    "this_post_role": "spoke",
+    "keywords_to_avoid": [
+      "nail colors for eye color",
+      "nail colors for blue eyes",
+      "nail colors for green eyes",
+      "nail colors for hazel eyes"
+    ]
+  },
+
+  "SERP_ANALYSIS": {
+    "blog_gen_instruction": "Use competitor gaps and missing semantic territory to fill what competitors miss. Our strategic approach is the angle for the introduction and conclusion.",
+    "top_3_word_count_estimates": {
+      "note": "Top 3 SERP results for 'nail colors for brown eyes' are primarily skin-tone guides (LondonTown, Dazzle Dry, Ella+Mila) that do NOT address eye-color-specific logic. True eye-color-specific ranking content (palettehunt.com, flavedoandalbedo.com) covers the topic but skews to makeup/eyeshadow. The nearest direct competitor for this exact keyword averages 1800–2000 words.",
+      "floor": 1800,
+      "ceiling_spoke": 2800,
+      "hardcoded_target": 2200
+    },
+    "top_3_keyword_density_baseline": 9,
+    "competitor_gaps": [
+      "No competitor currently addresses the colour wheel explanation for WHY specific shades make brown eyes pop (complementary contrast logic) in a nail-specific context — most apply this logic only to eyeshadow",
+      "No competitor distinguishes between light brown, medium brown, and dark brown eye shades and tailors nail colour advice to each — all treat 'brown eyes' as monolithic (confirmed across palettehunt, ipsy, charlotte tilbury research)",
+      "No competitor addresses the brown-hair-brown-eyes combination that has extremely high TikTok search volume — 'what nail color goes best with brown hair brown eyes' is a top autocomplete (confirmed TikTok + Google autocomplete)",
+      "No competitor addresses the gold/copper/warm metallic logic for brown eyes specifically in a nail context, despite this being confirmed on palettehunt, masterclass, ipsy, charlotte tilbury, flavedo — creates resonance rather than contrast",
+      "No competitor addresses colours to avoid for brown eyes — what makes them look flat or disappear (confirmed missing across all 5+ sources reviewed)"
+    ],
+    "missing_semantic_territory": [
+      "Colour theory specifically applied to nails for brown eyes — not just general brown eye beauty advice",
+      "Shade-specific guidance by brown eye depth (honey/amber vs chocolate/dark brown)",
+      "The distinction between harmonising colours (warm metals) vs complementary contrast colours (purple, forest green, navy) for brown eyes",
+      "Finish guidance — how shimmer/metallic vs matte vs crème lands differently for brown eyes",
+      "Seasonal rotation of the core brown-eye colour palette"
+    ],
+    "our_strategic_approach": "This post is the only guide that applies colour wheel logic specifically to nail colour selection for brown eyes — separating the 'complementary contrast' family (purple/plum, forest green, navy) from the 'warm resonance' family (copper, gold, bronze) and explaining which creates what effect. We also give shade-specific guidance by brown eye depth, addressing the underserved lighter amber/honey brown reader alongside the deep chocolate brown reader. The result: a guide that goes further than any competitor by giving brown-eyed readers a clear framework, not just a colour list.",
+    "recommended_image_count_validation": "Top SERP results for this keyword are text-led guides. 9 images (1 hero + 8 body) is appropriate for a spoke informational post of this type."
+  },
+
+  "AUDIENCE_INTELLIGENCE": {
+    "blog_gen_instruction": "This is your primary creative brief. Every paragraph written for this specific person with this specific intent. Satisfy them completely.",
+    "who_they_are": "Women with brown eyes — the world's most common eye colour — who feel their eye colour is often overlooked in beauty advice. They range from 18–40, largely US/UK/AU/CA, are informed beauty consumers who already understand that undertone matters for skin tone nail colour selection, but have never seen that logic applied specifically to their eye colour. They are curious whether there are actual rules or whether it's just personal taste.",
+    "what_they_want_from_this_post": "A clear, expert framework that tells them which specific nail colour families make their brown eyes look more vivid and striking — and exactly why. They want shade families, not just a list of random colours. They want the colour-theory reasoning so they can apply it independently going forward.",
+    "what_frustrates_them": "Every 'nail colors for brown eyes' search either returns generic skin-tone guides that ignore eye colour entirely, or eyeshadow advice that does not translate to nails. They feel their eye colour is treated as the 'default' that needs no special consideration — despite brown eyes being extremely responsive to colour when chosen correctly.",
+    "top_5_pain_points": [
+      "Being told 'brown eyes go with everything' — technically true, but useless for decision-making at the nail bar",
+      "Not knowing whether to choose shades that contrast their brown eyes (complementary logic) or shades that harmonise with them (resonance logic) — and not knowing that both are valid with different effects",
+      "Uncertainty about whether light brown/honey/amber eyes and dark chocolate brown eyes require different approaches",
+      "Not knowing which shades make brown eyes look more vivid and dimensional vs which make them recede or look flat",
+      "Generic 'jewel tones are great for everyone' advice that fails to explain what specifically makes jewel tones work for brown eyes"
+    ],
+    "exact_user_phrases": [
+      "what nail color goes with brown eyes",
+      "nail colors that make brown eyes pop",
+      "what nail color looks good with brown hair and brown eyes",
+      "do brown eyes go with any nail color",
+      "nail polish for dark brown eyes",
+      "what colors make brown eyes look lighter",
+      "nail color to enhance brown eyes",
+      "purple nails for brown eyes",
+      "copper nails brown eyes",
+      "does green nail polish go with brown eyes",
+      "what nails go with hazel brown eyes",
+      "plum nails brown eyes"
+    ],
+    "intent_content_signals": [
+      "Reader wants explanation-led content — they will not accept 'just try purple' without understanding why purple works",
+      "Organised by colour family, not a flat list — they need a mental model, not 20 disconnected shade names",
+      "Short, confident sentences — they are making a decision at a nail appointment, not doing academic research",
+      "Brown eye shade distinctions (light vs dark) are expected — they know their exact eye shade and want that addressed",
+      "Avoid treating eye colour as secondary to skin tone — they came for an eye-colour guide, not a skin-tone guide",
+      "Practical shade names and real-world examples, not just abstract colour families",
+      "Colours-to-avoid section strongly desired — knowing what not to choose is as valuable as knowing what works"
+    ]
+  },
+
+  "SEMANTIC_KEYWORD_DATA": {
+    "blog_gen_instruction": "Primary keyword in strong tags every mention. AEO terms trigger direct answer paragraphs. User language woven naturally. No term from keywords_to_avoid used as focus term.",
+    "primary_keyword": "nail colors for brown eyes",
+    "total_mention_target": 12,
+    "first_100_words_rule": "Primary keyword MUST appear TWICE in the first 100 words. No exceptions.",
+    "keyword_variations": [
+      "nail colour for brown eyes",
+      "best nail colors for brown eyes",
+      "nail polish for brown eyes",
+      "nail shades for brown eyes",
+      "nail color that suits brown eyes",
+      "nail polish shades for brown eyes",
+      "manicure colors for brown eyes",
+      "polish colors for brown eyes"
+    ],
+    "cluster_keywords": [
+      "brown eye colour theory nails",
+      "complementary nail colour brown eyes",
+      "what nail color makes brown eyes pop",
+      "warm nail tones brown eyes",
+      "cool nail tones brown eyes",
+      "plum nails brown eyes",
+      "copper nails brown eyes",
+      "forest green nails brown eyes",
+      "navy nails brown eyes",
+      "purple nails brown eyes",
+      "gold nails brown eyes",
+      "best nail colour light brown eyes",
+      "best nail colour dark brown eyes",
+      "amber eyes nail colour",
+      "chocolate eyes nail colour"
+    ],
+    "lsi_terms": [
+      "colour wheel",
+      "complementary contrast",
+      "warm resonance",
+      "colour theory nails",
+      "warm pigments in brown irises",
+      "orange-amber flecks",
+      "honey brown eyes",
+      "chocolate brown eyes",
+      "undertone",
+      "jewel tones",
+      "warm metallics",
+      "shimmer finish nails",
+      "plum nail polish",
+      "deep purple nail",
+      "forest green nail polish",
+      "burgundy nail colour",
+      "warm copper nail",
+      "navy nail polish",
+      "neutral nails",
+      "mocha nails"
+    ],
+    "aeo_terms": [
+      "What nail color makes brown eyes pop?",
+      "What is the best nail polish colour for brown eyes?",
+      "Do purple nails go with brown eyes?",
+      "What colours complement brown eyes in nail polish?",
+      "What nail colours should people with brown eyes avoid?",
+      "Do copper nails look good with brown eyes?",
+      "What is the colour theory reason purple makes brown eyes look better?",
+      "Are jewel tones the best nail colours for brown eyes?",
+      "Does the shade of brown eyes affect which nail colour to choose?",
+      "What nail colour makes light brown eyes look more vivid?",
+      "What nail colour suits dark chocolate brown eyes best?",
+      "Do forest green nails make brown eyes pop?"
+    ],
+    "technical_terms": [
+      "complementary colour",
+      "colour wheel contrast",
+      "warm pigment in iris",
+      "split-complementary",
+      "colour resonance",
+      "phototype",
+      "warm undertone iris"
+    ],
+    "user_language": [
+      "nails that make my brown eyes pop",
+      "I have dark brown eyes what nail color should I get",
+      "brown eyes and brown hair nail inspo",
+      "do purple nails actually work for brown eyes",
+      "what nail color goes with my eyes",
+      "nail color that makes my eyes stand out",
+      "I have honey brown eyes what color nails",
+      "nail color for warm brown eyes",
+      "what polish makes chocolate brown eyes look intense",
+      "do copper nails suit brown eyes"
+    ]
+  },
+
+  "VOICE_AND_AI_QUERIES": {
+    "blog_gen_instruction": "Answer every query directly in the relevant H2 section body. If a query cannot be addressed naturally in the body, route it to faqItems. No query left unanswered.",
+    "queries": [
+      "What nail color makes brown eyes pop?",
+      "What is the best nail color for someone with brown eyes?",
+      "Do purple nails look good with brown eyes?",
+      "What nail colours complement brown eyes based on colour theory?",
+      "Should I wear warm or cool nail colours if I have brown eyes?",
+      "What nail colour makes light honey brown eyes look more vivid?",
+      "What nail colour is best for dark chocolate brown eyes?",
+      "Does forest green nail polish complement brown eyes?",
+      "Are copper nails flattering for brown eyes?",
+      "What nail colours should brown-eyed women avoid?",
+      "Do jewel tones work for all shades of brown eyes?",
+      "What is a good everyday neutral nail colour for brown eyes?",
+      "Can navy nail polish make brown eyes stand out?",
+      "What nail colour goes with brown hair and brown eyes?",
+      "Do plum nails suit brown eyes?",
+      "Is burgundy a good nail color for brown eyes?"
+    ]
+  },
+
+  "HOOK_AND_CTR": {
+    "blog_gen_instruction": "READ THIS SECTION BEFORE WRITING THE TITLE, META DESCRIPTION, INTRO, OR FIRST H2. The title and description are hardcoded here — use them exactly. The intro hook brief and first H2 hook direction are your creative brief for those specific elements. Do not deviate.",
+    "selected_trigger": "Trigger 1 — Curiosity Gap",
+    "trigger_rationale": "The reader with brown eyes has been told her eye colour 'goes with everything' her whole life — which feels like a non-answer. Trigger 1 (Curiosity Gap) activates because she suspects there are specific shades that would actually make her brown eyes look more striking, and nobody has ever told her what they are or why they work.",
+    "title": "Nail Colors for Brown Eyes: What Actually Works",
+    "title_char_count": 47,
+    "meta_description": "Brown eyes respond powerfully to colour — but most guides ignore them. See which nail colour families genuinely make brown eyes pop, and exactly why.",
+    "meta_char_count": 152,
+    "intro_hook_brief": "Open by acknowledging that 'brown eyes go with everything' is the least useful beauty advice ever given. Then reframe: brown eyes are actually one of the most colour-responsive eye colours because of their warm pigment — and when you choose with that in mind, the effect is striking. Set up the two frameworks (complementary contrast vs warm resonance) that the whole post is built on.",
+    "first_h2_hook_direction": "Phrase the first H2 as a direct question that reflects what the reader typed: 'Why Do Certain Nail Colors Make Brown Eyes Look More Vivid?' — this signals the post will answer the 'why', not just give a list."
+  },
+
+  "SEARCH_JOURNEY": {
+    "blog_gen_instruction": "This is the emotional contract with the reader. Every section of the post must honour the promise made. Read this before writing any section. If a paragraph breaks the journey arc — rewrite it.",
+    "reader_arrival_state": "Mildly frustrated and curious — she has brown eyes and has never received nail colour advice that specifically addresses her eye colour, only skin-tone advice that ignores her eyes entirely.",
+    "journey_arc": [
+      "Hook: Validate her frustration that 'brown eyes go with everything' is not actionable advice",
+      "Framework: Introduce the two frameworks — complementary contrast (purple, forest green, navy) and warm resonance (copper, gold, bronze) — and explain the colour wheel logic simply",
+      "Application: Walk through each colour family with why it works and which brown eye shades it flatters most",
+      "Nuance: Address light brown/honey vs dark chocolate brown — reader identifies with their specific eye shade",
+      "Decision: Give a clear 'what to avoid' section and a seasonal quick-reference to close with clarity"
+    ],
+    "promise_to_deliver": "A clear colour theory framework — not just a list — that explains which nail colour families make brown eyes look more vivid and why, with specific guidance by brown eye shade.",
+    "exit_state": "She leaves knowing exactly which nail colour families to reach for, which to avoid, and why — with enough colour theory understanding to make the decision herself next time, regardless of what is trending."
+  },
+
+  "CONTENT_STRUCTURE": {
+    "blog_gen_instruction": "This H2 structure is research-driven and must be followed exactly. Do not rename, reorder, or remove H2s without user instruction. Word budget per section is set — follow it. H3s may be added at editorial discretion.",
+    "h1": "Nail Colors for Brown Eyes: What Actually Works",
+    "h2_structure": [
+      "Why Do Certain Nail Colors Make Brown Eyes Look More Vivid?",
+      "The Complementary Contrast Family: Purple, Plum, and Violet Nails",
+      "Forest Green, Teal, and Emerald: The Other Side of the Colour Wheel",
+      "Warm Metallics: Copper, Gold, and Bronze Nails for Brown Eyes",
+      "Navy and Deep Blue: Cool-Warm Contrast Without Competing",
+      "What About Neutral and Nude Nails for Brown Eyes?",
+      "Does It Matter If Your Brown Eyes Are Light or Dark?",
+      "Nail Colors That Make Brown Eyes Look Flat (Avoid These)"
+    ],
+    "word_budget": {
+      "introduction": "220 words",
+      "h2_1_why_certain_colors": "260 words",
+      "h2_2_purple_plum_violet": "240 words",
+      "h2_3_forest_green_teal_emerald": "220 words",
+      "h2_4_warm_metallics_copper_gold": "220 words",
+      "h2_5_navy_deep_blue": "180 words",
+      "h2_6_neutral_nude": "180 words",
+      "h2_7_light_vs_dark_brown_eyes": "230 words",
+      "h2_8_avoid_these": "200 words",
+      "conclusion": "200 words",
+      "total": "2150 words (within ±50 tolerance of 2200 target)"
+    }
+  },
+
+  "INTERNAL_LINKS": {
+    "blog_gen_instruction": "Every link below must appear in the post. Cluster links use anchor texts verbatim — do not rewrite. Cross-site links use the provided descriptive anchor. Place each link where the placement note says — woven naturally into prose, never as a standalone CTA. Total internal links must not exceed 6.",
+    "all_internal_links": [
+      {
+        "url_or_slug": "/blog/nail-colors-for-eye-color/nail-colors-for-every-eye-color",
+        "title": "Best Nail Colors for Every Eye Color: The Complete Guide",
+        "anchor_text": "nail colors for every eye color",
+        "placement_note": "H2-1 (Why Do Certain Nail Colors Make Brown Eyes Look More Vivid?) — reference the broader guide at the end of the framework setup, where it is natural to mention the full eye colour resource",
+        "link_type": "cluster-pillar"
+      },
+      {
+        "url_or_slug": "/blog/nail-colors-for-eye-color/nail-colors-for-green-eyes",
+        "title": "Nail Colors for Green Eyes",
+        "anchor_text": "nail colors for green eyes",
+        "placement_note": "H2-3 (Forest Green, Teal, and Emerald) — natural mention point when explaining that forest green creates cross-eye-colour contrast effects, with a note that green-eyed readers have a slightly different dynamic",
+        "link_type": "cluster-spoke"
+      },
+      {
+        "url_or_slug": "/blog/nail-colors-for-eye-color/nail-colors-for-brown-eyes",
+        "title": "Nail Colors for Brown Eyes",
+        "anchor_text": "nail colors for brown eyes",
+        "placement_note": "N/A — this is the current post's own URL, included for reference only. Do not self-link.",
+        "link_type": "self"
+      },
+      {
+        "url_or_slug": "/blog/nail-colors-for-eye-color/nail-colors-for-hazel-eyes",
+        "title": "Nail Colors for Hazel Eyes",
+        "anchor_text": "nail colors for hazel eyes",
+        "placement_note": "H2-7 (Light vs Dark Brown Eyes) — natural mention when discussing the lighter amber/honey end of brown eyes that overlaps with hazel territory",
+        "link_type": "cluster-spoke"
+      },
+      {
+        "url_or_slug": "/blog/nail-colors-for-eye-color/nail-colors-for-blue-eyes",
+        "title": "Nail Colors for Blue Eyes: What Actually Works",
+        "anchor_text": "nail colors for blue eyes",
+        "placement_note": "H2-4 (Warm Metallics) — when explaining that copper and bronze create contrast for brown eyes, contrast with how the same warm metals work differently for blue eyes",
+        "link_type": "cluster-spoke"
+      },
+      {
+        "url_or_slug": "https://mirelleinspo.com/blog/skin-tone/nail-colors-for-every-skin-tone",
+        "title": "Nail Colors for Every Skin Tone",
+        "anchor_text": "how undertone shapes the best nail colour for your complexion",
+        "placement_note": "H2-6 (Neutral and Nude Nails) — when addressing that the right nude for brown eyes also depends on skin undertone, natural bridge to the skin-tone guide",
+        "link_type": "cross-site"
+      }
+    ]
+  },
+
+  "VOICE_TONE": {
+    "blog_gen_instruction": "This is the voice for this specific post. Layer on top of Mirellé editorial framework. Do not default to generic AI tone.",
+    "recommended_voice": "Confident educator with a warm, explanatory register",
+    "tone_characteristics": [
+      "Explains the 'why' behind every colour recommendation — never just states a preference",
+      "Treats the reader as an intelligent adult who can apply colour theory herself once it is explained simply",
+      "Warm but not gushing — no filler compliments, no 'gorgeous shade for you!'",
+      "Uses direct, second-person ('your brown eyes', 'when you choose') to create a personalised feel without being sycophantic",
+      "Confident on colour theory specifics — no hedging language like 'might work' or 'could be nice'"
+    ],
+    "language_style": "Medium sentence length with occasional short punchy statements for emphasis. Uses 'you' throughout. Analogies from colour theory made accessible (colour wheel logic explained as 'contrast vs harmony', not with technical jargon). British English throughout.",
+    "audience_match": "Brown-eyed readers have been told their eye colour needs no special consideration their whole lives. A confident, explanatory voice that takes their eye colour seriously — and delivers the framework they have never been given — will feel both useful and satisfying."
+  },
+
+  "EXTERNAL_LINKS": {
+    "blog_gen_instruction": "Include all external links where indicated. Supports E-E-A-T. Use anchor suggestion as guide — write naturally around it.",
+    "links": [
+      {
+        "url": "https://www.palettehunt.com/colors/best-colors-for-brown-eyes",
+        "context": "H2-1 (Why Do Certain Nail Colors Make Brown Eyes Look More Vivid?) — when explaining the colour wheel basis for complementary contrast with brown eyes",
+        "anchor_suggestion": "colour wheel analysis for brown eyes"
+      },
+      {
+        "url": "https://www.charlottetilbury.com/us/secrets/best-eyeshadow-colours-brown-eyes",
+        "context": "H2-2 (Purple, Plum, and Violet) — when referencing that the purple-brown-eye pairing is widely validated across colour experts",
+        "anchor_suggestion": "expert-validated purple for brown eyes"
+      },
+      {
+        "url": "https://www.masterclass.com/articles/eyeshadow-for-brown-eyes",
+        "context": "H2-4 (Warm Metallics) — when explaining that gold and copper amplify the warm flecks in brown irises",
+        "anchor_suggestion": "warm metallic colour logic for brown eyes"
+      }
+    ]
+  },
+
+  "EXECUTION_PLAN": {
+    "blog_gen_instruction": "READ THIS SECTION FIRST. Lock every value. Execute exactly. Do not recalculate, do not adjust, do not deviate.",
+
+    "block_1_keyword_execution": {
+      "primary_keyword": "nail colors for brown eyes",
+      "top_3_density_baseline": 9,
+      "total_mention_target": 12,
+      "first_100_words_plan": {
+        "rule": "Primary keyword MUST appear TWICE in the first 100 words. Mandatory. No exceptions.",
+        "mention_1": "Sentence 2-3 of introduction — in the opening statement establishing the post's subject",
+        "mention_2": "Sentence 5-6 of introduction — in the reframe paragraph explaining why the colour theory approach makes this guide different"
+      },
+      "first_half_target": "7 mentions — first 1100 words",
+      "second_half_target": "5 mentions — second 1100 words",
+      "strong_tag_rule": "EVERY single mention of 'nail colors for brown eyes' — all 12 of them — wrapped in <strong> tags. No exceptions. Scan after every paragraph.",
+      "keywords_to_avoid_active": [
+        "nail colors for eye color",
+        "nail colors for blue eyes",
+        "nail colors for green eyes",
+        "nail colors for hazel eyes"
+      ]
+    },
+
+    "block_2_word_budget": {
+      "total_target": "2200 words — +/- 50 words tolerance, never exceed",
+      "introduction": "220 words",
+      "conclusion": "200 words",
+      "h2_budgets": [
+        {
+          "heading": "Why Do Certain Nail Colors Make Brown Eyes Look More Vivid?",
+          "budget": "260 words",
+          "complexity": "high — framework-setting section, most explanation-dense"
+        },
+        {
+          "heading": "The Complementary Contrast Family: Purple, Plum, and Violet Nails",
+          "budget": "240 words",
+          "complexity": "high — most important colour family, most detail needed"
+        },
+        {
+          "heading": "Forest Green, Teal, and Emerald: The Other Side of the Colour Wheel",
+          "budget": "220 words",
+          "complexity": "medium"
+        },
+        {
+          "heading": "Warm Metallics: Copper, Gold, and Bronze Nails for Brown Eyes",
+          "budget": "220 words",
+          "complexity": "medium"
+        },
+        {
+          "heading": "Navy and Deep Blue: Cool-Warm Contrast Without Competing",
+          "budget": "180 words",
+          "complexity": "medium-low"
+        },
+        {
+          "heading": "What About Neutral and Nude Nails for Brown Eyes?",
+          "budget": "180 words",
+          "complexity": "medium-low"
+        },
+        {
+          "heading": "Does It Matter If Your Brown Eyes Are Light or Dark?",
+          "budget": "230 words",
+          "complexity": "high — addresses the underserved light vs dark brown distinction"
+        },
+        {
+          "heading": "Nail Colors That Make Brown Eyes Look Flat (Avoid These)",
+          "budget": "200 words",
+          "complexity": "medium"
+        }
+      ],
+      "tracking_rule": "Track running word total at the end of every H2 section. Cut before moving on if over budget."
+    },
+
+    "block_3_image_plan": {
+      "total_images": 9,
+      "hero_image": "frontmatter only — NEVER appears in post body",
+      "body_images": 8,
+      "assignments": [
+        {
+          "image_number": 1,
+          "place_after": "Introduction",
+          "section_context": "Deep plum or violet nails against a neutral background — establishes the post's strong visual tone immediately"
+        },
+        {
+          "image_number": 2,
+          "place_after": "H2-1: Why Do Certain Nail Colors Make Brown Eyes Look More Vivid?",
+          "section_context": "Colour wheel visual or elegant editorial shot showing a brown-eyed woman with purple nails — visually anchors the colour theory explanation"
+        },
+        {
+          "image_number": 3,
+          "place_after": "H2-2: The Complementary Contrast Family: Purple, Plum, and Violet Nails",
+          "section_context": "Close-up of deep plum or amethyst nail polish on hands — showcases the lead colour recommendation"
+        },
+        {
+          "image_number": 4,
+          "place_after": "H2-3: Forest Green, Teal, and Emerald",
+          "section_context": "Forest green or deep emerald nails — rich, jewel-toned, editorial quality"
+        },
+        {
+          "image_number": 5,
+          "place_after": "H2-4: Warm Metallics: Copper, Gold, and Bronze",
+          "section_context": "Copper or warm gold metallic nails — should catch light, showing the shimmer that amplifies warm eye flecks"
+        },
+        {
+          "image_number": 6,
+          "place_after": "H2-5: Navy and Deep Blue",
+          "section_context": "Deep navy or midnight blue nails — dark and elegant, showing the cool-warm contrast"
+        },
+        {
+          "image_number": 7,
+          "place_after": "H2-6: What About Neutral and Nude Nails",
+          "section_context": "Warm nude or mocha nails — understated but editorial, not clinical"
+        },
+        {
+          "image_number": 8,
+          "place_after": "H2-7: Does It Matter If Your Brown Eyes Are Light or Dark?",
+          "section_context": "Split or contrast shot if possible — lighter amethyst versus deep plum to illustrate light vs dark brown eye recommendations"
+        }
+      ],
+      "image_type_rule": "ALL body images = inspirational nail design images. NO infographics. NO colour wheels as images. NO comparison charts.",
+      "path_rule": "/images/blog/nail-colors-for-eye-color/nail-colors-for-brown-eyes/filename.webp"
+    },
+
+    "block_4_opening_technique_assignments": {
+      "rule": "No two consecutive sections use the same technique. Conclusion = Technique 1 or 3 only.",
+      "assignments": [
+        {
+          "section": "Introduction",
+          "technique": "Technique 2 — The Provocation (challenge the conventional wisdom that brown eyes need no special colour consideration)"
+        },
+        {
+          "section": "Why Do Certain Nail Colors Make Brown Eyes Look More Vivid?",
+          "technique": "Technique 3 — The Reframe (reframe 'brown eyes go with everything' as a missed opportunity, then introduce the two-framework concept)"
+        },
+        {
+          "section": "The Complementary Contrast Family: Purple, Plum, and Violet Nails",
+          "technique": "Technique 1 — The Claim (open with a direct, confident statement: purple is the single most effective nail colour family for brown eyes)"
+        },
+        {
+          "section": "Forest Green, Teal, and Emerald",
+          "technique": "Technique 4 — The Specific Detail (open with a precise colour-theory detail: forest green contrasts with the red-amber register in brown irises)"
+        },
+        {
+          "section": "Warm Metallics: Copper, Gold, and Bronze",
+          "technique": "Technique 2 — The Provocation (copper works for a completely different reason than purple — not contrast, but resonance)"
+        },
+        {
+          "section": "Navy and Deep Blue",
+          "technique": "Technique 1 — The Claim (navy is the understated power move for brown eyes)"
+        },
+        {
+          "section": "What About Neutral and Nude Nails",
+          "technique": "Technique 3 — The Reframe (not all neutrals are equal for brown eyes — the right nude resonates, the wrong one disappears)"
+        },
+        {
+          "section": "Does It Matter If Your Brown Eyes Are Light or Dark?",
+          "technique": "Technique 4 — The Specific Detail (light honey brown and deep chocolate brown eyes have the same colour wheel logic but different intensity thresholds)"
+        },
+        {
+          "section": "Nail Colors That Make Brown Eyes Look Flat (Avoid These)",
+          "technique": "Technique 1 — The Claim (some shades are technically safe but actively make brown eyes less visible)"
+        },
+        {
+          "section": "Conclusion",
+          "technique": "Technique 1 — The Claim (you now have a framework, not just a list)"
+        }
+      ],
+      "banned_opener_rule": "Check every opener against banned_opening_approaches before writing the second sentence"
+    },
+
+    "block_5_link_placements": {
+      "rule": "Every link placed exactly where specified. Anchor texts used verbatim — never rewritten. Links woven into prose naturally — never standalone CTAs.",
+      "links": [
+        {
+          "anchor_text": "nail colors for every eye color",
+          "full_url": "/blog/nail-colors-for-eye-color/nail-colors-for-every-eye-color",
+          "place_in_section": "H2-1: Why Do Certain Nail Colors Make Brown Eyes Look More Vivid?",
+          "placement_context": "After establishing the two-framework concept, reference the pillar as the broader resource covering all eye colours",
+          "link_type": "cluster-pillar"
+        },
+        {
+          "anchor_text": "nail colors for blue eyes",
+          "full_url": "/blog/nail-colors-for-eye-color/nail-colors-for-blue-eyes",
+          "place_in_section": "H2-4: Warm Metallics: Copper, Gold, and Bronze",
+          "placement_context": "When noting that warm copper/bronze works for brown eyes via resonance, but creates opposite effect (complementary contrast) for blue eyes — natural comparison point",
+          "link_type": "cluster-spoke"
+        },
+        {
+          "anchor_text": "nail colors for green eyes",
+          "full_url": "/blog/nail-colors-for-eye-color/nail-colors-for-green-eyes",
+          "place_in_section": "H2-3: Forest Green, Teal, and Emerald",
+          "placement_context": "When noting that green nails work differently for green-eyed readers — natural cross-reference",
+          "link_type": "cluster-spoke"
+        },
+        {
+          "anchor_text": "nail colors for hazel eyes",
+          "full_url": "/blog/nail-colors-for-eye-color/nail-colors-for-hazel-eyes",
+          "place_in_section": "H2-7: Does It Matter If Your Brown Eyes Are Light or Dark?",
+          "placement_context": "When discussing the lighter amber/honey end of brown eyes that can overlap with hazel — natural transition point",
+          "link_type": "cluster-spoke"
+        },
+        {
+          "anchor_text": "how undertone shapes the best nail colour for your complexion",
+          "full_url": "https://mirelleinspo.com/blog/skin-tone/nail-colors-for-every-skin-tone",
+          "place_in_section": "H2-6: What About Neutral and Nude Nails",
+          "placement_context": "When explaining that nude selection for brown eyes also depends on skin undertone — natural bridge to skin-tone guide",
+          "link_type": "cross-site"
+        }
+      ]
+    },
+
+    "block_6_aeo_geo_plan": {
+      "aeo_assignments": [
+        {
+          "aeo_term": "What nail color makes brown eyes pop?",
+          "assigned_to_section": "H2-2: The Complementary Contrast Family: Purple, Plum, and Violet Nails",
+          "execution": "Write a direct 2-3 sentence answer paragraph IMMEDIATELY after the H2 heading — before elaboration. Purple and plum are the nail colour families with the strongest scientific basis for making brown eyes more vivid, because they sit opposite the warm orange-amber pigments in brown irises on the colour wheel."
+        },
+        {
+          "aeo_term": "What is the colour theory reason purple makes brown eyes look better?",
+          "assigned_to_section": "H2-1: Why Do Certain Nail Colors Make Brown Eyes Look More Vivid?",
+          "execution": "Write a direct declarative explanation: brown eyes contain warm orange-red pigments. Purple sits directly opposite the orange-red range on the colour wheel. Complementary colours placed near each other create contrast that makes both appear more vivid."
+        },
+        {
+          "aeo_term": "What nail colours should people with brown eyes avoid?",
+          "assigned_to_section": "H2-8: Nail Colors That Make Brown Eyes Look Flat",
+          "execution": "Open with a direct 2-3 sentence answer: warm beige, greige, and yellow-adjacent nudes sit in the same warmth register as brown eyes — they create a washed-together quality that makes eyes recede rather than pop."
+        },
+        {
+          "aeo_term": "Does the shade of brown eyes affect which nail colour to choose?",
+          "assigned_to_section": "H2-7: Does It Matter If Your Brown Eyes Are Light or Dark?",
+          "execution": "Direct answer: yes. Light honey or amber brown eyes benefit from lighter shades within each colour family (soft amethyst vs deep plum). Dark chocolate brown eyes can carry the deepest, richest versions of the same families for maximum contrast."
+        }
+      ],
+      "geo_entity_statements": [
+        {
+          "entity": "Complementary contrast (colour theory)",
+          "assigned_to_section": "H2-1",
+          "execution": "Complementary contrast is when two colours that sit opposite each other on the colour wheel are placed near each other — the result is that each colour appears more vivid and saturated."
+        },
+        {
+          "entity": "Warm resonance (colour theory applied to eyes)",
+          "assigned_to_section": "H2-4",
+          "execution": "Warm resonance describes the effect when a nail colour shares the same warmth register as the iris — rather than creating contrast, it creates a harmonious, amplified warmth that makes the eye look richer and more intense."
+        }
+      ]
+    },
+
+    "block_7_active_constraints": {
+      "em_dash_banned": "Long em dash does not appear anywhere. Replace with: comma / new sentence / parentheses / but / restructure.",
+      "banned_vocab_watch": [
+        "stunning",
+        "gorgeous",
+        "perfect",
+        "amazing",
+        "absolutely",
+        "incredibly",
+        "magical",
+        "vibrant (use 'vivid' or 'rich' instead)"
+      ],
+      "british_english_active": "colour, recognise, -ise, -our — every instance, no exceptions",
+      "keyword_density_reminder": "After every 2 H2 sections — count current keyword mentions. Verify running total is on track for 12 total. First half (1100 words) must hit 7 mentions. Adjust if needed.",
+      "image_path_reminder": "/images/blog/nail-colors-for-eye-color/nail-colors-for-brown-eyes/filename.webp — topic_slug in path always",
+      "internal_link_url_reminder": "Full correct paths only. Cluster links = /blog/nail-colors-for-eye-color/[slug]. Cross-site links = exact URL as discovered. Never bare /slug.",
+      "hero_image_reminder": "Hero = frontmatter only. Never place hero image in body.",
+      "strong_tag_reminder": "Every primary keyword mention = <strong> tags. Scan after every paragraph."
+    }
+  }
+}
+ENDJSON
