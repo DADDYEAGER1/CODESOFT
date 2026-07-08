@@ -1,0 +1,620 @@
+{
+  "file_authority": {
+    "statement": "THIS FILE IS THE SINGLE SOURCE OF TRUTH FOR THE BLOG GEN AGENT. All values in POST_CONSTANTS are hardcoded — Blog Gen Agent does not ask, adjust, or override them. All keywords, H2 structure, audience intelligence, internal links, and tone defined here must be followed exactly."
+  },
+
+  "section_2_post_constants": {
+    "blog_gen_instruction": "READ THIS SECTION FIRST. Lock every value before writing a single word.",
+    "slug": "nail-colors-for-green-eyes",
+    "topic_slug": "nail-colors-for-eye-color",
+    "canonical": "https://mirelleinspo.com/blog/nail-colors-for-eye-color/nail-colors-for-green-eyes",
+    "post_type": "spoke",
+    "intent": "informational",
+    "word_count": 2200,
+    "image_count": 9,
+    "template": "split-left",
+    "hero_dimensions": "800x800",
+    "category": "Nail Colors",
+    "publish_date": "2026-06-27",
+    "author": "Mirellé Team"
+  },
+
+  "section_3_cluster_snapshot": {
+    "note": "CLUSTER MODE — constraints locked from cluster_context.json",
+    "pillar_slug": "nail-colors-for-every-eye-color",
+    "pillar_title": "Best Nail Colors for Every Eye Color: The Complete Guide",
+    "pillar_primary_keyword": "nail colors for eye color",
+    "this_post_slug": "nail-colors-for-green-eyes",
+    "this_post_role": "spoke",
+    "keywords_to_avoid": [
+      "nail colors for eye color",
+      "nail colors for blue eyes",
+      "nail colors for brown eyes",
+      "nail colors for hazel eyes"
+    ]
+  },
+
+  "section_4_serp_analysis": {
+    "blog_gen_instruction": "Use competitor gaps and missing semantic territory to fill what competitors miss. Our strategic approach is the angle for the introduction and conclusion.",
+    "top_3_ranking_posts_analysis": {
+      "post_1": "LondonTown 'What Nail Color Should I Get' — covers green eyes in 2 sentences only: gold, bronze, olive green, purple/plum. No depth, no skin tone layering, no colour theory explanation. Estimated word count: 900 words (green eyes section ~60 words).",
+      "post_2": "TikTok discover page 'best nail color for green eyes' — UGC content, no editorial. Titles like 'periwinkle on blue-eyed blonde girls' referenced but no dedicated green-eyes nail content confirmed.",
+      "post_3": "Answers.com 'good nail color if you have green eyes' — single answer: 'hot pink'. Negligible depth. ~50 words.",
+      "average_word_count_estimate": 650,
+      "word_count_floor": 650,
+      "word_count_set": 2200,
+      "top_3_keyword_density_baseline": 5
+    },
+    "competitor_gaps": [
+      "No competitor explains WHY certain colours work for green eyes — they list shades without the colour theory logic (complementary contrast: red-family opposites green on the colour wheel)",
+      "No competitor addresses the difference between shade types of green eyes — yellow-green vs emerald vs grey-green — and how this changes the optimal nail colour (validated: palettehunt.com confirms this distinction matters; Pinterest shows dedicated boards by eye shade type)",
+      "No competitor explains which nail colours actively make green eyes look flat or dull — the 'avoid' category is entirely absent (validated: Quora and beauty community searches show 'what colours clash with green eyes')",
+      "No competitor addresses skin tone interaction — how the same nail colour performs differently on fair vs olive skin with green eyes (validated: Mirelleinspo skin tone pages confirm this gap; palettehunt.com confirms the intersection matters)",
+      "No competitor covers the contrast vs harmony framework — the two different approaches (complementary contrast for max eye impact vs warm harmony for a cohesive look) are never explained (validated: colour theory sources confirm both approaches; Quora discussions show reader confusion about which approach to take)",
+      "No competitor addresses which shades to pick if you want to ENHANCE green eyes vs simply complement your overall look — these are different goals with different answers"
+    ],
+    "missing_semantic_territory": [
+      "The colour theory explanation specifically for green eyes (red-family = maximum contrast; warm earthy = harmony and enhancement)",
+      "Green eye subtypes — yellow-green, true emerald, grey-green — and how each responds to different nail colours",
+      "Nail colours that make green eyes look grey or washed out (the avoid list)",
+      "Skin tone modifiers for the green eyes nail colour decision",
+      "Seasonal nail colour guidance specifically mapped to green eyes (not generic seasonal content)"
+    ],
+    "our_strategic_approach": "Every competitor treats nail colours for green eyes as a simple list. We treat it as a colour logic system — first explaining why certain shades work (complementary contrast and warm harmony), then mapping those principles to specific shades by eye shade type and skin tone. The reader leaves knowing the logic, not just the list, which means they can apply it beyond the post.",
+    "recommended_image_count_validation": "Top SERP results are thin text posts with minimal or zero images. 9 images (hero + 8 body) will significantly outperform visually and supports informational depth."
+  },
+
+  "section_5_audience_intelligence": {
+    "blog_gen_instruction": "This is your primary creative brief. Every paragraph written for this specific person with this specific intent. Satisfy them completely.",
+    "who_they_are": "Women aged 18-40 with green eyes (the rarest common eye colour globally), actively seeking a nail colour that works specifically FOR their eye colour — not generic shade advice. They are aware their eye colour is distinctive and want to make the most of it. They often struggle because generic nail content is built around skin tone not eye colour, and eye-colour-specific content is sparse and shallow.",
+    "what_they_want_from_this_post": "A clear, reasoned answer to which nail colours will actually make their green eyes look more vivid and striking — not just a list, but the logic behind why. They want to leave knowing their formula, not just a single recommendation.",
+    "what_frustrates_them": "Current content gives them a 2-sentence answer ('wear gold or bronze') with no explanation, no nuance for different shades of green eyes, and no acknowledgment that their skin tone also matters. They try the recommended shades and sometimes they work, sometimes they don't — and nobody explains why.",
+    "top_5_pain_points": [
+      "Generic advice that applies to everyone and therefore truly helps no one — 'gold and bronze' appears on every list but they don't know if it applies to their specific shade of green eyes or their skin tone",
+      "Nobody explains which nail colours make green eyes look flat, grey, or dull — the 'avoid' category is completely absent from existing content",
+      "They've tried purple (often recommended) and it either worked brilliantly or looked wrong — and they can't figure out why because nobody explains the undertone nuance within the purple family",
+      "Confusion between 'colours that complement green eyes' vs 'colours that make green eyes pop' — these are actually different goals answered by different colour logic",
+      "No explanation of whether their specific shade of green (light yellow-green vs dark emerald vs grey-green) changes what works"
+    ],
+    "exact_user_phrases": [
+      "'what nail color makes green eyes pop'",
+      "'best nail color if you have green eyes'",
+      "'what nail polish goes with green eyes'",
+      "'nail colors that bring out green eyes'",
+      "'nail colors for brown hair green eyes'",
+      "'should I wear purple nails with green eyes'",
+      "'does gold nail polish look good with green eyes'",
+      "'nail color to make green eyes stand out'",
+      "'what colors to avoid with green eyes nails'",
+      "'nail color that complements green eyes and fair skin'"
+    ],
+    "intent_content_signals": [
+      "Informational intent — they want to understand the logic, not just browse looks",
+      "They respond to posts that explain WHY a shade works, not just WHICH shade",
+      "They want specificity — generic 'warm tones' is unhelpful; 'dusty rose and plum create contrast because red sits opposite green on the colour wheel' is what they actually need",
+      "They appreciate the 'avoid' section — nobody tells them what not to wear",
+      "They want to understand how skin tone interacts with eye colour in the nail choice",
+      "They want to leave with a framework they can apply going forward, not just a one-time list",
+      "Short-form social (TikTok, Pinterest) confirms this topic has demand — but the actual informational depth is served by longer editorial content like blog posts"
+    ]
+  },
+
+  "section_6_semantic_keyword_data": {
+    "blog_gen_instruction": "Primary keyword in strong tags every mention. AEO terms trigger direct answer paragraphs. User language woven naturally. No term from keywords_to_avoid used as focus term.",
+    "primary_keyword": "nail colors for green eyes",
+    "total_mention_target": 8,
+    "first_100_words_rule": "Primary keyword MUST appear twice in the first 100 words — mandatory, no exceptions",
+    "keyword_variations": [
+      "best nail colors for green eyes",
+      "nail colour for green eyes",
+      "nail polish for green eyes",
+      "nail shades for green eyes",
+      "nail color green eyes",
+      "flattering nail colors for green eyes",
+      "nail polish that goes with green eyes"
+    ],
+    "cluster_keywords": [
+      "nail colors for eye color",
+      "complement green eyes",
+      "make green eyes pop",
+      "green eye nail shade",
+      "best nail polish for green eyes",
+      "colour theory nails green eyes",
+      "nail color and eye color",
+      "eye-flattering nail colours",
+      "green eyes nail choice",
+      "warm tones for green eyes",
+      "contrast nail color green eyes",
+      "purple nails green eyes",
+      "gold nails green eyes",
+      "plum nails green eyes",
+      "what nail colour suits green eyes"
+    ],
+    "lsi_terms": [
+      "colour wheel complementary",
+      "red opposite green on colour wheel",
+      "warm earthy nail tones",
+      "dusty rose nails",
+      "mauve nail polish",
+      "plum nail colour",
+      "burgundy nails",
+      "wine red nails",
+      "gold nail polish",
+      "bronze nail colour",
+      "terracotta nails",
+      "warm red nails",
+      "copper nails",
+      "deep navy nails",
+      "jewel tone nails",
+      "complementary colour contrast",
+      "split-complementary nails",
+      "skin undertone nail match",
+      "eye colour enhancement",
+      "nail colour that pops"
+    ],
+    "aeo_terms": [
+      "What nail color makes green eyes pop?",
+      "What nail colors go with green eyes?",
+      "What nail polish looks best on green eyes?",
+      "What nail color should I wear if I have green eyes?",
+      "Do purple nails look good with green eyes?",
+      "What colors should you avoid wearing with green eyes on nails?",
+      "Does gold nail polish complement green eyes?",
+      "What is the best nail color for green eyes and fair skin?",
+      "Why do warm earthy nail colors complement green eyes?",
+      "What nail color makes green eyes look more vivid?",
+      "Do red nails make green eyes pop?",
+      "What is the worst nail color for green eyes?"
+    ],
+    "technical_terms": [
+      "complementary contrast",
+      "split-complementary colour scheme",
+      "RYB colour wheel",
+      "colour temperature (warm vs cool)",
+      "colour undertone",
+      "iris pigmentation",
+      "chatoyancy (cat eye nail effect)",
+      "warm-toned vs cool-toned nail polish"
+    ],
+    "user_language": [
+      "'makes my green eyes pop'",
+      "'bring out my eye colour'",
+      "'I have green eyes, what should I wear'",
+      "'my eyes look so green with this'",
+      "'tried purple and loved it'",
+      "'gold looks amazing on me'",
+      "'I want my eyes to stand out'",
+      "'I'm a redhead with green eyes'",
+      "'brown hair and green eyes'",
+      "'pale skin and green eyes'"
+    ]
+  },
+
+  "section_7_voice_and_ai_queries": {
+    "blog_gen_instruction": "Answer every query directly in the relevant H2 section body. If a query cannot be addressed naturally in the body, route it to faqItems. No query left unanswered.",
+    "queries": [
+      "What nail color makes green eyes pop?",
+      "What is the best nail polish for someone with green eyes?",
+      "Do purple nails look good with green eyes?",
+      "What nail colors should I avoid if I have green eyes?",
+      "Why do warm tones complement green eyes?",
+      "Does gold nail polish make green eyes stand out?",
+      "What nail color is best for green eyes and fair skin?",
+      "What nail color works for green eyes and brown hair?",
+      "Do red nails make green eyes look more vivid?",
+      "What is the colour theory reason for nail colors that suit green eyes?",
+      "Do plum nails complement green eyes?",
+      "What is the worst nail color for green eyes?",
+      "Can I wear blue nail polish with green eyes?",
+      "What nail color suits light green eyes vs dark green eyes?",
+      "Do burgundy nails look good with green eyes?",
+      "What is the best nail color for green eyes and olive skin?",
+      "Do terracotta nails work with green eyes?"
+    ]
+  },
+
+  "section_8_hook_and_ctr": {
+    "blog_gen_instruction": "READ THIS SECTION BEFORE WRITING THE TITLE, META DESCRIPTION, INTRO, OR FIRST H2. The title and description are hardcoded here — use them exactly. The intro hook brief and first H2 hook direction are your creative brief for those specific elements. Do not deviate.",
+    "selected_trigger": "Trigger 1 — Curiosity Gap",
+    "trigger_rationale": "The green-eyes nail reader suspects they are missing something because the advice they find online is either too vague ('wear warm tones') or too thin ('hot pink') — the curiosity gap works because the real answer (colour wheel contrast logic plus eye-shade specificity) is genuinely not available in current content, and the reader can sense the gap.",
+    "title": "Nail Colors for Green Eyes: What Actually Works",
+    "title_char_count": 47,
+    "meta_description": "Green eyes respond to colour differently. These are the shades that create real contrast and the ones that make them look flat — with the logic behind each.",
+    "meta_char_count": 147,
+    "intro_hook_brief": "Open by acknowledging that most nail advice for green eyes is either too vague or based on a single rule that doesn't explain itself — then immediately pivot to the promise: this post gives the actual logic (colour wheel contrast + eye shade specificity) so the reader leaves with a framework, not just a list.",
+    "first_h2_hook_direction": "Phrase the first H2 as an audience question phrased in voice-search style — something like 'Why does nail colour affect how green eyes look?' to immediately address the curiosity gap and set up the colour theory explanation that differentiates this post from every competitor."
+  },
+
+  "section_9_search_journey": {
+    "blog_gen_instruction": "This is the emotional contract with the reader. Every section of the post must honour the promise made. Read this before writing any section. If a paragraph breaks the journey arc — rewrite it.",
+    "reader_arrival_state": "Curious and slightly frustrated — they've seen the generic advice before (gold, bronze, maybe purple) and want to know the actual logic behind it so they can make confident nail choices based on their specific green eyes, not just try random recommendations.",
+    "journey_arc": [
+      "Hook: Acknowledge the frustration with generic, unexplained advice → promise the logic-first approach",
+      "Foundation: Explain the colour wheel principle — red sits opposite green, so red-family shades create maximum contrast → this is the 'why' they came for",
+      "Application — the enhancement shades: Map the best nail colours for green eyes with reasoning for each (dusty rose, mauve, plum, burgundy, warm earthy tones, gold/bronze, deep navy as a dark frame)",
+      "Nuance — what to avoid and why: Explain which shades drain green eyes (teal, mint, yellow-greens, flat mid-grey) and why the logic applies",
+      "Personalisation — skin tone and green eye shade: Layer skin tone into the decision so the reader can apply the framework to their specific combination",
+      "Exit: Leave them with a confident, actionable summary — their formula for nail colours based on their green eyes"
+    ],
+    "promise_to_deliver": "The reader will understand the colour logic behind nail colours for green eyes — not just which shades work, but why — so they can make decisions that go beyond this list.",
+    "exit_state": "Informed and confident — the reader has the colour framework they were missing and knows exactly which nail colours to choose for their specific combination of green eye shade and skin tone."
+  },
+
+  "section_10_content_structure": {
+    "blog_gen_instruction": "This H2 structure is research-driven and must be followed exactly. Do not rename, reorder, or remove H2s without user instruction. Word budget per section is set — follow it. H3s may be added at editorial discretion.",
+    "h1": "Nail Colors for Green Eyes: What Actually Works",
+    "h2_structure": [
+      "Why does nail colour affect how green eyes look?",
+      "The nail colours that create the most contrast with green eyes",
+      "Warm earthy tones that enhance rather than contrast green eyes",
+      "The shades to avoid if you want your green eyes to stand out",
+      "Does your shade of green eyes change what works?",
+      "How skin tone changes the nail colour decision for green eyes",
+      "The best nail colour for green eyes: your seasonal guide",
+      "Which finish makes the most of these shades on green eyes?"
+    ],
+    "word_budget": {
+      "introduction": 220,
+      "h2_1_why_nail_colour_affects_green_eyes": 280,
+      "h2_2_contrast_colours": 320,
+      "h2_3_warm_earthy_tones": 260,
+      "h2_4_shades_to_avoid": 220,
+      "h2_5_shade_of_green_eyes": 200,
+      "h2_6_skin_tone": 250,
+      "h2_7_seasonal_guide": 200,
+      "h2_8_finish": 170,
+      "conclusion": 180
+    }
+  },
+
+  "section_11_internal_links": {
+    "blog_gen_instruction": "Every link below must appear in the post. Cluster links use anchor texts verbatim — do not rewrite. Cross-site links use the provided descriptive anchor. Place each link where the placement note says — woven naturally into prose, never as a standalone CTA. Total internal links must not exceed 6.",
+    "all_internal_links": [
+      {
+        "url_or_slug": "/blog/nail-colors-for-eye-color/nail-colors-for-every-eye-color",
+        "title": "Best Nail Colors for Every Eye Color: The Complete Guide",
+        "anchor_text": "nail colors for every eye color",
+        "placement_note": "H2-1 (Why does nail colour affect how green eyes look?) — after establishing the colour logic principle, link out to the pillar as the broader eye-colour guide",
+        "link_type": "cluster-pillar"
+      },
+      {
+        "url_or_slug": "/blog/nail-colors-for-eye-color/nail-colors-for-blue-eyes",
+        "title": "Nail Colors for Blue Eyes: What Actually Works",
+        "anchor_text": "nail colors for blue eyes",
+        "placement_note": "H2-1 or H2-6 (skin tone section) — natural mention when contrasting how cool-toned eyes (blue) use a different logic vs warm-toned eyes (green)",
+        "link_type": "cluster-spoke"
+      },
+      {
+        "url_or_slug": "/blog/nail-colors-for-eye-color/nail-colors-for-brown-eyes",
+        "title": "Nail Colors for Brown Eyes",
+        "anchor_text": "nail colors for brown eyes",
+        "placement_note": "H2-1 or conclusion — natural contrast mention when noting that the green-eye logic (colour wheel complementary) is more specific than the broad palette available to brown eyes",
+        "link_type": "cluster-spoke"
+      },
+      {
+        "url_or_slug": "/blog/nail-colors-for-eye-color/nail-colors-for-hazel-eyes",
+        "title": "Nail Colors for Hazel Eyes",
+        "anchor_text": "nail colors for hazel eyes",
+        "placement_note": "H2-5 (does your shade of green eyes change what works?) — mention naturally when discussing green eyes that lean towards hazel (yellow-green with brown flecks)",
+        "link_type": "cluster-spoke"
+      },
+      {
+        "url_or_slug": "https://mirelleinspo.com/blog/skin-tone/nail-colors-for-every-skin-tone",
+        "title": "Nail Colors for Every Skin Tone: The Real Guide",
+        "anchor_text": "how undertone shapes every nail colour decision regardless of eye colour",
+        "placement_note": "H2-6 (how skin tone changes the nail colour decision for green eyes) — when introducing the skin tone layer, link to the dedicated skin tone resource for readers who want to go deeper on undertone identification",
+        "link_type": "cross-site"
+      },
+      {
+        "url_or_slug": "https://mirelleinspo.com/topics/skin-tones",
+        "title": "Nail Colors for Every Skin Tone: The Ultimate 2026 Matching Guide",
+        "anchor_text": "the complete 2026 guide to nail colours by skin tone",
+        "placement_note": "H2-6 or conclusion — second cross-site option if first is placed in H2-6. If both fit naturally, use both. If only one fits, prioritise the first cross-site link.",
+        "link_type": "cross-site"
+      }
+    ]
+  },
+
+  "section_12_voice_tone": {
+    "blog_gen_instruction": "This is the voice for this specific post. Layer on top of Mirellé editorial framework. Do not default to generic AI tone.",
+    "recommended_voice": "Confident Educator with warmth",
+    "tone_characteristics": [
+      "Authoritative but not clinical — explains colour theory without making it feel like a lecture",
+      "Direct and specific — 'dusty rose works because red sits opposite green on the colour wheel' not 'warm pinks can be flattering'",
+      "Acknowledges the reader's frustration with generic content upfront — validates that they've been underserved by vague advice",
+      "Gives the logic AND the specific shades — doesn't make the reader guess the application",
+      "Warm but not excessive — treats the reader as an intelligent adult who can handle a clear colour logic explanation"
+    ],
+    "language_style": "Second-person direct ('your green eyes', 'if your eyes sit in the grey-green range'). Sentences are medium-length with clear structure. Occasional short declarative statements for impact ('Gold works. Here is why.'). No hedging language ('might', 'could possibly', 'in some cases').",
+    "audience_match": "The green-eyes reader came specifically because they wanted a real answer, not a generic list. This voice delivers the logic they were missing, with the authority to be trusted and the warmth to feel approachable rather than academic."
+  },
+
+  "section_13_external_links": {
+    "blog_gen_instruction": "Include all external links where indicated. Supports E-E-A-T. Use anchor suggestion as guide — write naturally around it.",
+    "links": [
+      {
+        "url": "https://www.londontownusa.com/blogs/londontown-blog/what-nail-color-should-i-get",
+        "context": "H2-2 or H2-3 when referencing the commonly cited recommendation for green eyes (gold, bronze, plum) — can be cited as one source that confirms the basic shades, before we go deeper",
+        "anchor_suggestion": "commonly recommended shades for green eyes"
+      },
+      {
+        "url": "https://nailknowledge.org/blog/colour-wheel-for-nails",
+        "context": "H2-1 (Why does nail colour affect how green eyes look?) — when explaining the colour wheel complementary principle, can reference as an authority source for the colour theory logic",
+        "anchor_suggestion": "colour theory applied to nail polish"
+      },
+      {
+        "url": "https://www.palettehunt.com/colors/best-colors-for-green-eyes",
+        "context": "H2-5 (does your shade of green eyes change what works?) — when discussing how yellow-green vs grey-green eyes respond differently to nail colours, reference this source as confirmation of the eye-shade specificity",
+        "anchor_suggestion": "how your specific shade of green eyes affects which colours work"
+      }
+    ]
+  },
+
+  "section_14_execution_plan": {
+    "blog_gen_instruction": "READ THIS SECTION FIRST. Lock every value. Execute exactly. Do not recalculate, do not adjust, do not deviate.",
+
+    "block_1_keyword_execution": {
+      "primary_keyword": "nail colors for green eyes",
+      "top_3_density_baseline": 5,
+      "total_mention_target": 8,
+      "first_100_words_plan": {
+        "rule": "Primary keyword MUST appear TWICE in the first 100 words. Mandatory. No exceptions.",
+        "mention_1": "Sentence 1 or 2 of introduction — direct statement naming the topic (e.g. 'Most advice on nail colors for green eyes...')",
+        "mention_2": "Sentence 4 or 5 of introduction — reinforcement of the topic in the promise statement (e.g. 'This post explains nail colors for green eyes based on colour logic...')"
+      },
+      "first_half_target": "5 mentions — first 1100 words",
+      "second_half_target": "3 mentions — second 1100 words",
+      "strong_tag_rule": "EVERY single mention of 'nail colors for green eyes' — all 8 of them — wrapped in <strong> tags. No exceptions. Scan after every paragraph.",
+      "keywords_to_avoid_active": [
+        "nail colors for eye color",
+        "nail colors for blue eyes",
+        "nail colors for brown eyes",
+        "nail colors for hazel eyes"
+      ]
+    },
+
+    "block_2_word_budget": {
+      "total_target": "2200 words — +/-50 words tolerance, never exceed",
+      "introduction": "220 words",
+      "conclusion": "180 words",
+      "h2_budgets": [
+        {
+          "heading": "Why does nail colour affect how green eyes look?",
+          "budget": "280 words",
+          "complexity": "high — colour theory explanation, foundational section"
+        },
+        {
+          "heading": "The nail colours that create the most contrast with green eyes",
+          "budget": "320 words",
+          "complexity": "high — core value section, must name and explain multiple shades with reasons"
+        },
+        {
+          "heading": "Warm earthy tones that enhance rather than contrast green eyes",
+          "budget": "260 words",
+          "complexity": "medium — secondary colour logic, names the warm harmony approach"
+        },
+        {
+          "heading": "The shades to avoid if you want your green eyes to stand out",
+          "budget": "220 words",
+          "complexity": "medium — competitor gap territory, clear explanatory list"
+        },
+        {
+          "heading": "Does your shade of green eyes change what works?",
+          "budget": "200 words",
+          "complexity": "medium — nuance layer, 3 eye shade types covered"
+        },
+        {
+          "heading": "How skin tone changes the nail colour decision for green eyes",
+          "budget": "250 words",
+          "complexity": "medium-high — undertone interaction, key personalisation section"
+        },
+        {
+          "heading": "The best nail colour for green eyes: your seasonal guide",
+          "budget": "200 words",
+          "complexity": "medium — seasonal application of the core palette"
+        },
+        {
+          "heading": "Which finish makes the most of these shades on green eyes?",
+          "budget": "170 words",
+          "complexity": "low — practical finish guidance, wraps the recommendation"
+        }
+      ],
+      "tracking_rule": "Track running word total at the end of every H2 section. If a section is running over budget — cut before moving to the next section. Do not compensate later."
+    },
+
+    "block_3_image_plan": {
+      "total_images": 9,
+      "hero_image": "frontmatter only — NEVER appears in post body",
+      "body_images": "8 images to place in body",
+      "assignments": [
+        {
+          "image_number": 1,
+          "place_after": "H2: The nail colours that create the most contrast with green eyes",
+          "section_context": "Inspirational image — dusty rose, mauve, or plum nail set on fair to medium skin, showcasing the contrast palette for green eyes"
+        },
+        {
+          "image_number": 2,
+          "place_after": "H2: The nail colours that create the most contrast with green eyes (mid-section)",
+          "section_context": "Inspirational image — burgundy or wine red nail set, demonstrating the deeper contrast option in the red-family palette"
+        },
+        {
+          "image_number": 3,
+          "place_after": "H2: Warm earthy tones that enhance rather than contrast green eyes",
+          "section_context": "Inspirational image — gold, bronze, or warm terracotta nail set demonstrating the earthy harmony approach"
+        },
+        {
+          "image_number": 4,
+          "place_after": "H2: The shades to avoid if you want your green eyes to stand out",
+          "section_context": "Inspirational nail image — could show navy or deep charcoal (which are acceptable framing darks, as contrast to the avoid category being explained)"
+        },
+        {
+          "image_number": 5,
+          "place_after": "H2: Does your shade of green eyes change what works?",
+          "section_context": "Inspirational image — plum or smoky rose nail set, showing the shade that works across green eye types"
+        },
+        {
+          "image_number": 6,
+          "place_after": "H2: How skin tone changes the nail colour decision for green eyes",
+          "section_context": "Inspirational image — warm gold or copper nail set on olive or medium skin, demonstrating the skin tone intersection"
+        },
+        {
+          "image_number": 7,
+          "place_after": "H2: The best nail colour for green eyes: your seasonal guide",
+          "section_context": "Inspirational image — seasonal nail look, could be berry or deep plum for autumn/winter, or warm coral for spring/summer"
+        },
+        {
+          "image_number": 8,
+          "place_after": "H2: Which finish makes the most of these shades on green eyes?",
+          "section_context": "Inspirational image — glossy finish nail set in a red-family shade (dusty rose or mauve) demonstrating the recommended finish approach"
+        }
+      ],
+      "image_type_rule": "ALL body images = inspirational nail design images related to the topic. NO infographics. NO process diagrams. NO comparison charts. NO step-by-step visuals.",
+      "path_rule": "/images/blog/nail-colors-for-eye-color/nail-colors-for-green-eyes/filename.webp"
+    },
+
+    "block_4_opening_technique_assignments": {
+      "rule": "No two consecutive sections use the same technique. Conclusion = Technique 1 or 3 only.",
+      "assignments": [
+        {
+          "section": "Introduction",
+          "technique": "Technique 1 — The Claim (bold direct statement that reframes the common advice as incomplete)"
+        },
+        {
+          "section": "Why does nail colour affect how green eyes look?",
+          "technique": "Technique 2 — The Question (answer the H2 heading directly with a 2-3 sentence AEO paragraph)"
+        },
+        {
+          "section": "The nail colours that create the most contrast with green eyes",
+          "technique": "Technique 3 — The Reframe (reframe the standard list as a colour-logic system, not just a recommendation)"
+        },
+        {
+          "section": "Warm earthy tones that enhance rather than contrast green eyes",
+          "technique": "Technique 1 — The Claim (state directly what this approach does differently from the contrast approach)"
+        },
+        {
+          "section": "The shades to avoid if you want your green eyes to stand out",
+          "technique": "Technique 2 — The Question (open by addressing the common confusion about which greens/teals to avoid)"
+        },
+        {
+          "section": "Does your shade of green eyes change what works?",
+          "technique": "Technique 3 — The Reframe (reframe: not all green eyes are the same, which is why the standard advice sometimes fails)"
+        },
+        {
+          "section": "How skin tone changes the nail colour decision for green eyes",
+          "technique": "Technique 1 — The Claim (direct: eye colour sets the direction; skin tone sets the register — this is where they interact)"
+        },
+        {
+          "section": "The best nail colour for green eyes: your seasonal guide",
+          "technique": "Technique 2 — The Question (open with what the reader wants to know: which of these shades work in each season?)"
+        },
+        {
+          "section": "Which finish makes the most of these shades on green eyes?",
+          "technique": "Technique 3 — The Reframe (the right shade in the wrong finish can underperform — finish matters more than most guides acknowledge)"
+        },
+        {
+          "section": "Conclusion",
+          "technique": "Technique 1 — The Claim (confident summary statement reinforcing the framework they now have)"
+        }
+      ],
+      "banned_opener_rule": "Check every opener against banned_opening_approaches in blog gen prompt before writing the second sentence"
+    },
+
+    "block_5_link_placements": {
+      "rule": "Every link placed exactly where specified. Anchor texts used verbatim — never rewritten. Links woven into prose naturally — never standalone CTAs.",
+      "links": [
+        {
+          "anchor_text": "nail colors for every eye color",
+          "full_url": "/blog/nail-colors-for-eye-color/nail-colors-for-every-eye-color",
+          "place_in_section": "H2-1: Why does nail colour affect how green eyes look?",
+          "placement_context": "After explaining the colour wheel principle — 'If you want to see how this logic applies across all eye colours, the guide to nail colors for every eye color covers the full picture.'",
+          "link_type": "cluster-pillar"
+        },
+        {
+          "anchor_text": "nail colors for blue eyes",
+          "full_url": "/blog/nail-colors-for-eye-color/nail-colors-for-blue-eyes",
+          "place_in_section": "H2-1 or H2-6",
+          "placement_context": "Natural contrast: 'The logic for nail colors for blue eyes runs in the opposite direction — cool tones echo rather than contrast blue irises, where green eyes need the contrast of the red-family.'",
+          "link_type": "cluster-spoke"
+        },
+        {
+          "anchor_text": "nail colors for brown eyes",
+          "full_url": "/blog/nail-colors-for-eye-color/nail-colors-for-brown-eyes",
+          "place_in_section": "Conclusion or H2-1",
+          "placement_context": "Natural mention: 'Unlike nail colors for brown eyes — where almost any saturated shade works — green eyes respond to a more specific colour logic.'",
+          "link_type": "cluster-spoke"
+        },
+        {
+          "anchor_text": "nail colors for hazel eyes",
+          "full_url": "/blog/nail-colors-for-eye-color/nail-colors-for-hazel-eyes",
+          "place_in_section": "H2-5: Does your shade of green eyes change what works?",
+          "placement_context": "When discussing yellow-green eyes with brown flecks: 'If your eyes sit close to that yellow-green with warmth, you may find the guide on nail colors for hazel eyes equally useful.'",
+          "link_type": "cluster-spoke"
+        },
+        {
+          "anchor_text": "how undertone shapes every nail colour decision regardless of eye colour",
+          "full_url": "https://mirelleinspo.com/blog/skin-tone/nail-colors-for-every-skin-tone",
+          "place_in_section": "H2-6: How skin tone changes the nail colour decision for green eyes",
+          "placement_context": "Introductory sentence of skin tone section: 'For a full breakdown of how undertone shapes every nail colour decision regardless of eye colour, the skin tone guide covers the full spectrum.'",
+          "link_type": "cross-site"
+        }
+      ]
+    },
+
+    "block_6_aeo_geo_plan": {
+      "aeo_assignments": [
+        {
+          "aeo_term": "What nail color makes green eyes pop?",
+          "assigned_to_section": "H2-2: The nail colours that create the most contrast with green eyes",
+          "execution": "Write a direct 2-3 sentence answer paragraph IMMEDIATELY after the H2 heading — before any elaboration. 'The nail colours that make green eyes pop are those in the red-pink family — dusty rose, mauve, plum, burgundy, and wine red. Red sits directly opposite green on the colour wheel, which means these shades create maximum contrast against green irises, making them appear more vivid and intense. Deep navy and charcoal also work as framing darks for the same reason.'"
+        },
+        {
+          "aeo_term": "Why do warm earthy tones complement green eyes?",
+          "assigned_to_section": "H2-3: Warm earthy tones that enhance rather than contrast green eyes",
+          "execution": "Write a direct 2-3 sentence answer paragraph IMMEDIATELY after the H2 heading. 'Gold, bronze, copper, and terracotta work for green eyes through a different mechanism than contrast — they enhance the warm golden flecks that many green irises contain, creating harmony rather than opposition. This is particularly effective on green eyes with yellow or amber undertones, where the warm earthy nail tone picks up and amplifies the warmth already present in the iris.'"
+        },
+        {
+          "aeo_term": "What nail colors should you avoid if you have green eyes?",
+          "assigned_to_section": "H2-4: The shades to avoid if you want your green eyes to stand out",
+          "execution": "Write a direct 2-3 sentence answer paragraph IMMEDIATELY after the H2 heading. 'The nail colours that drain green eyes are those closest to green on the colour wheel — teal, mint, lime, and yellow-green. These shades create a visual echo with the iris rather than contrast against it, which causes green eyes to flatten and appear grey or dull. Flat mid-tone grey does the same thing without the tonal echo.'"
+        },
+        {
+          "aeo_term": "What is the best nail color for green eyes and fair skin?",
+          "assigned_to_section": "H2-6: How skin tone changes the nail colour decision for green eyes",
+          "execution": "Write a direct answer paragraph within the skin tone section specifically addressing fair skin: 'For fair skin and green eyes, dusty rose and mauve are the highest-performing combination — the contrast creates maximum eye impact while the soft register suits the skin depth. Deep plum and burgundy work on fairer skin with cool undertones; warm gold works better on fair skin with warm or peachy undertones.'"
+        }
+      ],
+      "geo_entity_statements": [
+        {
+          "entity": "Complementary colour contrast (as it applies to green eyes and nail colour)",
+          "assigned_to_section": "H2-1: Why does nail colour affect how green eyes look?",
+          "execution": "Write a clear declarative definition sentence: 'Complementary colours are shades that sit directly opposite each other on the colour wheel — and because red sits opposite green, nail colours in the red-pink family create the highest possible contrast against green eyes, making the eye colour appear more intense and vivid.'"
+        },
+        {
+          "entity": "Split-complementary nail colour approach for green eyes",
+          "assigned_to_section": "H2-3: Warm earthy tones that enhance rather than contrast green eyes",
+          "execution": "Define the second approach clearly: 'The split-complementary approach uses colours adjacent to red — warm orange-earthy tones like gold, bronze, and terracotta — which sit near the complementary position without creating the full contrast of true red. These enhance green eyes by amplifying the warm flecks in the iris rather than contrasting against the entire iris colour.'"
+        }
+      ]
+    },
+
+    "block_7_active_constraints": {
+      "em_dash_banned": "Long em dash does not appear anywhere. If one forms while writing — stop, replace with: comma / new sentence / parentheses / but / restructure.",
+      "banned_vocab_watch": [
+        "stunning",
+        "vibrant",
+        "amazing",
+        "beautiful",
+        "gorgeous",
+        "perfect",
+        "captivating",
+        "elevate"
+      ],
+      "british_english_active": "colour, recognise, -ise, -our — every instance, no exceptions. 'Color' only in the locked primary keyword 'nail colors for green eyes' and internal link anchor texts from cluster_context.json. All editorial prose uses British spelling.",
+      "keyword_density_reminder": "After every 2 H2 sections — count current keyword mentions. Verify running total is on track to hit 8. First half (intro + H2-1 through H2-4) should carry 5 mentions. Second half (H2-5 through conclusion) carries 3 mentions. Adjust if needed.",
+      "image_path_reminder": "/images/blog/nail-colors-for-eye-color/nail-colors-for-green-eyes/filename.webp — topic_slug in path always",
+      "internal_link_url_reminder": "Full correct paths only. Cluster links = /blog/nail-colors-for-eye-color/[slug]. Cross-site links = exact discovered URL. Never bare /slug.",
+      "hero_image_reminder": "Hero = frontmatter only. Never place hero image in body.",
+      "strong_tag_reminder": "Every 'nail colors for green eyes' mention = <strong> tags. Scan after every paragraph. Total target = 8 mentions across full post."
+    }
+  }
+}
