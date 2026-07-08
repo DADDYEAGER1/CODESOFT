@@ -1,0 +1,240 @@
+{
+  "cluster_metadata": {
+    "cluster_topic": "Nail Color Psychology & Attraction",
+    "topic_slug": "nail-color-psychology-attraction",
+    "target_audience": "Global, Tier 1 countries (US, UK, Canada, Australia)",
+    "total_posts": 5,
+    "intent_breakdown": {
+      "informational": 2,
+      "inspirational": 1,
+      "tutorial": 0,
+      "comparison": 0,
+      "seasonal_trend": 0,
+      "aesthetic_identity": 2
+    },
+    "pillar_post_slug": "sexiest-nail-color",
+    "created_date": "2026-07-08"
+  },
+
+  "existing_site_posts_excluded": [
+    {
+      "url": "https://mirelleinspo.com/nail-faqs/how-much-tip-should-you-give-your-nail-technician",
+      "title": "How Much Tip Should You Give Your Nail Technician",
+      "inferred_primary_keyword": "how much to tip nail technician",
+      "inferred_intent": "informational",
+      "exclusion_reason": "Already exists on mirelleinspo.com — unrelated cluster (pedicure tipping), no overlap with this cluster's keywords"
+    },
+    {
+      "url": "https://mirelleinspo.com/nails-for-older-women/nail-colors-for-mature-hands",
+      "title": "Nail Colors for Mature Hands",
+      "inferred_primary_keyword": "nail colors for older hands",
+      "inferred_intent": "informational",
+      "exclusion_reason": "Already exists on mirelleinspo.com — different topic (age-appropriate color), no overlap with this cluster's keywords"
+    }
+  ],
+
+  "posts": [
+    {
+      "post_id": 1,
+      "role": "pillar",
+      "title": "The Sexiest Nail Colors, According to What Guys Actually Notice",
+      "slug": "sexiest-nail-color",
+      "primary_keyword": "sexiest nail color",
+      "intent": "aesthetic_identity",
+      "search_mode": "aesthetic_identity_mode",
+      "suggested_hook_trigger": "Trigger 4 — Identity Mirroring",
+      "search_demand_signals": [
+        "Web: multiple dedicated blog posts targeting this exact phrase (LONDONTOWN, NAILELF, BTArtbox Nails, allwomenstalk, GirlsAskGuys/Quora threads)",
+        "TikTok: active hashtag volume around 'nail colors guys find attractive' and 'sexiest nail colors'",
+        "YouTube: dedicated video content ('5 Nail Colors That Make Men Notice Your Hands Instantly')"
+      ],
+      "why_included": "Strong, sustained cross-platform demand for a broad 'sexiest/most attractive to guys' framing, validated on 4+ independent source types. Absorbs 'what color turns a guy on' and 'what color makes you look sexier' — same searcher intent, no standalone demand for those as separate posts.",
+      "internal_links": {
+        "links_to": [
+          { "slug": "red-nail-theory", "anchor_text": "does the red nail theory actually work", "type": "spoke" },
+          { "slug": "white-nail-theory", "anchor_text": "white nail theory explained", "type": "spoke" },
+          { "slug": "blue-nail-theory", "anchor_text": "blue nail theory and what it signals", "type": "spoke" },
+          { "slug": "what-nail-colors-mean-to-guys", "anchor_text": "full guide to what nail colors mean to guys", "type": "spoke" }
+        ],
+        "gallery_link": {
+          "url": "https://mirelleinspo.com/inspo/sexiest-nail-color-inspiration-gallery",
+          "anchor_text": "sexiest nail color inspiration gallery"
+        },
+        "receives_links_from": [
+          { "slug": "red-nail-theory", "anchor_text": "sexiest nail colors guys find attractive" },
+          { "slug": "white-nail-theory", "anchor_text": "sexiest nail colors guys find attractive" },
+          { "slug": "blue-nail-theory", "anchor_text": "sexiest nail colors guys find attractive" },
+          { "slug": "what-nail-colors-mean-to-guys", "anchor_text": "sexiest nail colors guys find attractive" }
+        ]
+      },
+      "status": "approved"
+    },
+    {
+      "post_id": 2,
+      "role": "spoke",
+      "title": "Red Nail Theory: Does Wearing Red Nails Actually Attract Men?",
+      "slug": "red-nail-theory",
+      "primary_keyword": "red nail theory",
+      "intent": "informational",
+      "search_mode": "decision_mode",
+      "suggested_hook_trigger": "Trigger 1 — Curiosity Gap",
+      "search_demand_signals": [
+        "TikTok: viral trend with dedicated hashtag (#rednailtheory) and high-volume video content",
+        "Web: dedicated published articles (YourTango, Glam, NewBeauty 'Every Major Nail Theory Explained'), citing a real 2008 University of Rochester psychology study"
+      ],
+      "why_included": "Currently active viral trend with real cultural momentum and a backing psychology study — distinct enough from the general 'sexiest nail color' post to earn its own page rather than being folded in.",
+      "internal_links": {
+        "links_to": [
+          { "slug": "sexiest-nail-color", "anchor_text": "sexiest nail colors guys find attractive", "type": "pillar" },
+          { "slug": "white-nail-theory", "anchor_text": "white nail theory explained", "type": "spoke" },
+          { "slug": "blue-nail-theory", "anchor_text": "blue nail theory and what it signals", "type": "spoke" },
+          { "slug": "what-nail-colors-mean-to-guys", "anchor_text": "full guide to what nail colors mean to guys", "type": "spoke" }
+        ],
+        "receives_links_from": [
+          { "slug": "sexiest-nail-color", "anchor_text": "does the red nail theory actually work" },
+          { "slug": "white-nail-theory", "anchor_text": "red nail theory explained" },
+          { "slug": "blue-nail-theory", "anchor_text": "red nail theory explained" },
+          { "slug": "what-nail-colors-mean-to-guys", "anchor_text": "red nail theory explained" }
+        ]
+      },
+      "status": "approved"
+    },
+    {
+      "post_id": 3,
+      "role": "spoke",
+      "title": "White Nail Theory: What It Means and Why Men Notice It",
+      "slug": "white-nail-theory",
+      "primary_keyword": "white nail theory",
+      "intent": "informational",
+      "search_mode": "decision_mode",
+      "suggested_hook_trigger": "Trigger 1 — Curiosity Gap",
+      "search_demand_signals": [
+        "TikTok: active trend positioned directly as the counter-theory to red nail theory, own hashtag volume",
+        "Web: dedicated coverage explaining the white-vs-red nail theory debate and single-status signaling"
+      ],
+      "why_included": "Real, distinct trend that pairs naturally against red nail theory as a comparison — searchers actively frame these as competing theories, giving both posts a natural cross-link relationship.",
+      "internal_links": {
+        "links_to": [
+          { "slug": "sexiest-nail-color", "anchor_text": "sexiest nail colors guys find attractive", "type": "pillar" },
+          { "slug": "red-nail-theory", "anchor_text": "does the red nail theory actually work", "type": "spoke" },
+          { "slug": "blue-nail-theory", "anchor_text": "blue nail theory and what it signals", "type": "spoke" },
+          { "slug": "what-nail-colors-mean-to-guys", "anchor_text": "full guide to what nail colors mean to guys", "type": "spoke" }
+        ],
+        "receives_links_from": [
+          { "slug": "sexiest-nail-color", "anchor_text": "white nail theory explained" },
+          { "slug": "red-nail-theory", "anchor_text": "white nail theory explained" },
+          { "slug": "blue-nail-theory", "anchor_text": "white nail theory explained" },
+          { "slug": "what-nail-colors-mean-to-guys", "anchor_text": "white nail theory explained" }
+        ]
+      },
+      "status": "approved"
+    },
+    {
+      "post_id": 4,
+      "role": "spoke",
+      "title": "Blue Nail Theory: What This Viral Color Signal Really Means",
+      "slug": "blue-nail-theory",
+      "primary_keyword": "blue nail theory",
+      "intent": "informational",
+      "search_mode": "decision_mode",
+      "suggested_hook_trigger": "Trigger 1 — Curiosity Gap",
+      "search_demand_signals": [
+        "Web: dedicated L'Officiel article on nail theory and relationship-status signaling specifically covering blue",
+        "TikTok/social: distinct trend volume separate from red/white nail theory, framed around relationship-status signaling"
+      ],
+      "why_included": "Genuinely separate trend from red/white — centers on relationship-status signaling rather than attraction — with its own dedicated press coverage, not a variant of the other two.",
+      "internal_links": {
+        "links_to": [
+          { "slug": "sexiest-nail-color", "anchor_text": "sexiest nail colors guys find attractive", "type": "pillar" },
+          { "slug": "red-nail-theory", "anchor_text": "does the red nail theory actually work", "type": "spoke" },
+          { "slug": "white-nail-theory", "anchor_text": "white nail theory explained", "type": "spoke" },
+          { "slug": "what-nail-colors-mean-to-guys", "anchor_text": "full guide to what nail colors mean to guys", "type": "spoke" }
+        ],
+        "receives_links_from": [
+          { "slug": "sexiest-nail-color", "anchor_text": "blue nail theory and what it signals" },
+          { "slug": "red-nail-theory", "anchor_text": "blue nail theory and what it signals" },
+          { "slug": "white-nail-theory", "anchor_text": "blue nail theory and what it signals" },
+          { "slug": "what-nail-colors-mean-to-guys", "anchor_text": "blue nail theory and what it signals" }
+        ]
+      },
+      "status": "approved"
+    },
+    {
+      "post_id": 5,
+      "role": "spoke",
+      "title": "What Nail Colors Mean to Guys: The Full Theory Guide",
+      "slug": "what-nail-colors-mean-to-guys",
+      "primary_keyword": "what nail colors mean to guys",
+      "intent": "informational",
+      "search_mode": "aesthetic_identity_mode",
+      "suggested_hook_trigger": "Trigger 4 — Identity Mirroring",
+      "search_demand_signals": [
+        "Web: multiple dedicated articles (Nailicy 'The Psychology Of Nail Colors: What Guys Really Think', Del Sol '7 Things Your Fingernails Say About Your Love Life', NewBeauty 'Every Major Nail Theory Explained')",
+        "TikTok: viral 'nail colour meaning' format with hundreds of thousands of likes (e.g. 'White = Single, Pink/Purple = Talking')"
+      ],
+      "why_included": "Broad roundup demand exists for a general 'what nail colors signal to guys' guide covering pink/purple ('talking stage') and short nail theory specifically — explicitly excludes red, white, and blue to avoid duplicating those three dedicated spoke posts, keeping this the connective hub of the cluster.",
+      "internal_links": {
+        "links_to": [
+          { "slug": "sexiest-nail-color", "anchor_text": "sexiest nail colors guys find attractive", "type": "pillar" },
+          { "slug": "red-nail-theory", "anchor_text": "does the red nail theory actually work", "type": "spoke" },
+          { "slug": "white-nail-theory", "anchor_text": "white nail theory explained", "type": "spoke" },
+          { "slug": "blue-nail-theory", "anchor_text": "blue nail theory and what it signals", "type": "spoke" }
+        ],
+        "receives_links_from": [
+          { "slug": "sexiest-nail-color", "anchor_text": "full guide to what nail colors mean to guys" },
+          { "slug": "red-nail-theory", "anchor_text": "full guide to what nail colors mean to guys" },
+          { "slug": "white-nail-theory", "anchor_text": "full guide to what nail colors mean to guys" },
+          { "slug": "blue-nail-theory", "anchor_text": "full guide to what nail colors mean to guys" }
+        ]
+      },
+      "status": "approved"
+    }
+  ],
+
+  "keyword_ownership_registry": {
+    "description": "Master list of all primary keywords for this cluster — one per post, no overlaps, includes relevant existing site posts",
+    "entries": [
+      { "primary_keyword": "sexiest nail color", "owned_by_slug": "sexiest-nail-color", "owned_by_title": "The Sexiest Nail Colors, According to What Guys Actually Notice", "source": "new post" },
+      { "primary_keyword": "red nail theory", "owned_by_slug": "red-nail-theory", "owned_by_title": "Red Nail Theory: Does Wearing Red Nails Actually Attract Men?", "source": "new post" },
+      { "primary_keyword": "white nail theory", "owned_by_slug": "white-nail-theory", "owned_by_title": "White Nail Theory: What It Means and Why Men Notice It", "source": "new post" },
+      { "primary_keyword": "blue nail theory", "owned_by_slug": "blue-nail-theory", "owned_by_title": "Blue Nail Theory: What This Viral Color Signal Really Means", "source": "new post" },
+      { "primary_keyword": "what nail colors mean to guys", "owned_by_slug": "what-nail-colors-mean-to-guys", "owned_by_title": "What Nail Colors Mean to Guys: The Full Theory Guide", "source": "new post" },
+      { "primary_keyword": "how much to tip nail technician", "owned_by_slug": "how-much-tip-should-you-give-your-nail-technician", "owned_by_title": "How Much Tip Should You Give Your Nail Technician", "source": "existing site post" },
+      { "primary_keyword": "nail colors for older hands", "owned_by_slug": "nail-colors-for-mature-hands", "owned_by_title": "Nail Colors for Mature Hands", "source": "existing site post" }
+    ]
+  },
+
+  "merged_posts_log": [
+    {
+      "original_topics": [
+        "Cluster 1 — Seductive/Sexy Nail Colors",
+        "Cluster 2 — Nail Color Meaning to Guys"
+      ],
+      "merged_into": "Nail Color Psychology & Attraction (single cluster)",
+      "reason": "Research surfaced that both clusters draw from the same 'Nail Theory' trend family (color -> meaning/attraction signal) with the same underlying mechanic. Red and White Nail Theory (originally Cluster 1) and Blue Nail Theory plus the general 'meaning to guys' guide (originally Cluster 2) would have competed for the same searcher intent and cannibalized each other as two separate pillars. Merged into one cluster with a single pillar and four topically-linked spokes."
+    },
+    {
+      "original_topics": [
+        "what color turns a guy on",
+        "what color makes you look sexier"
+      ],
+      "merged_into": "sexiest-nail-color (pillar)",
+      "reason": "Same searcher intent as the general 'sexiest nail color' query with no independent demand signal — folded in as sub-angles within the pillar rather than separate posts."
+    },
+    {
+      "original_topics": [
+        "what do nail colors mean to guys",
+        "what is a guy's favorite color on a girl"
+      ],
+      "merged_into": "what-nail-colors-mean-to-guys (spoke)",
+      "reason": "Both fold into the general 'meaning to guys' roundup; 'favorite color on a girl' overlaps fully with the pillar's attraction angle and has no standalone demand."
+    }
+  ],
+
+  "killed_posts_log": [
+    {
+      "topic": "what makes men look sexier",
+      "reason": "No demand — search results are exclusively about men's own grooming, fitness, and style, with zero connection to women's nail polish. Pure noise from an earlier keyword collapse; confirmed dead on research."
+    }
+  ]
+}
