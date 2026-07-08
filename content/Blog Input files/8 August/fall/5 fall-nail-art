@@ -1,0 +1,228 @@
+# INPUT FILE — FALL NAIL ART (post_id: 5)
+CLUSTER MODE — cluster context loaded (fall_file, topic_slug: fall)
+
+## SECTION 1 — FILE AUTHORITY
+This file is the single source of truth for Blog Gen Agent. All POST_CONSTANTS values are hardcoded — do not ask, adjust, or override. All keywords, H2 structure, audience intelligence, internal links, and tone must be followed exactly.
+
+## SECTION 2 — POST_CONSTANTS
+- slug: fall-nail-art
+- topic_slug: fall
+- canonical: https://mirelleinspo.com/blog/fall/fall-nail-art
+- post_type: spoke
+- intent: tutorial
+- word_count: 2000 (top-3 SERP average estimate ~1600-1900 words [listicle+how-to hybrids]; floor set at 2000 to out-depth Byrdie/Maniology/GWS listicle format with real technique instruction. ±50 tolerance)
+- image_count: 5 (rule_3_tutorial — intent=tutorial)
+- template: split-left
+- hero_dimensions: 800x800
+- category: Nail Art & Techniques
+- publish_date: 2026-08-15
+- author: Mirellé Team
+
+## SECTION 3 — CLUSTER SNAPSHOT
+- pillar_slug: fall-nail-ideas
+- pillar_title: Fall Nail Ideas
+- pillar_primary_keyword: fall nail ideas
+- this_post_slug: fall-nail-art
+- this_post_role: spoke
+- keywords_to_avoid: fall nail ideas, fall nail designs, fall nail colors, fall nail trends 2026, short fall nails, burgundy fall nails, brown nails fall, fall ombre nails, fall french tip nails, fall pedicure colors, tortoiseshell nails fall, old money nails fall winter, vampire nails
+
+## SECTION 4 — SERP ANALYSIS
+- competitor_gaps: (1) No competitor gives genuine step-by-step written instructions with household-item tool substitutes (bobby pin, toothpick, eyeshadow-as-pigment) — confirmed on Quora + SalonGeek + HerCampus. (2) No editorial source addresses "what to do when you mess up" / correction technique for beginners — confirmed on Quora + SalonGeek. (3) No single post covers the full technique range (leaf/stamping, plaid, marbling/tortoiseshell effect, dotting-tool patterns, freehand) with actual how-to steps rather than just photo inspiration — confirmed Byrdie/GWS/Maniology (all listicle-only) vs YouTube/NailDesignsJournal (technique-only, no roundup).
+- missing_semantic_territory: "tool substitutes for nail art," "beginner nail art mistakes fall," "how long does fall nail art last," practice-nail-tip technique (SalonGeek-validated but absent from all editorial fall content).
+- our_strategic_approach: Position as the only fall nail art post that teaches the technique, not just shows the photo — every design includes a real how-to with tools AND cheap substitutes, addressing the "I always mess it up" anxiety visible across Quora/SalonGeek. Differentiate hard from pillar (fall-nail-ideas = browse/inspiration) and fall-ombre-nails (single-technique deep dive) by covering 5-6 distinct techniques as a beginner skill-building arc.
+- recommended_image_count_validation: 5 confirmed — tutorial intent rule, aligns with SERP pattern of technique-demo visuals rather than large photo galleries (galleries belong to pillar).
+
+## SECTION 5 — AUDIENCE INTELLIGENCE
+- who_they_are: Nail polish hobbyists (not salon clients), beginner-to-intermediate skill level, already own basic polish, want to DIY rather than pay for a fall set. Searching specifically for technique, not just photos.
+- what_they_want_from_this_post: Confidence they can replicate a specific fall design at home, with clear steps and forgiving tool options (not $40 nail art kits).
+- what_frustrates_them: Existing content is photo-only ("look at this design") with zero explanation of execution; assumes gel/acrylic skill; tutorials that require expensive specialty brushes with no substitute.
+- top_5_pain_points: (1) "I always mess it up" / fear of ruining a manicure — direct Quora language. (2) Cuticle-line precision is hard for beginners (SalonGeek-validated). (3) Uncertainty about which tools are actually needed vs. optional. (4) Designs look complex/intimidating even when technique is simple (leaf art, marbling). (5) Not knowing how to practice without wasting real polish/nails.
+- exact_user_phrases: "I always tried to copy the picture," "definitely beginner-friendly," "super easy to do because they don't have to be perfect," "practice the patterns on a paper," "I'm just crap, no matter how careful I am," "practice makes perfect," "dab your sponge... good luck," "no need to face the cold for a pricey salon appointment," "without having to get them professionally done."
+- intent_content_signals: Step-numbered instructions; explicit tool lists with cheap substitutes flagged; reassurance language before difficulty-implying steps; short techniques (5-8 steps max per design); mix of skill levels (beginner/intermediate) clearly labeled per technique.
+
+## SECTION 6 — SEMANTIC KEYWORD DATA
+- primary_keyword: fall nail art
+- keyword_variations: fall nail art ideas, fall nail art designs, autumn nail art, DIY fall nail art, easy fall nail art, fall nail art at home, cute fall nail art
+- cluster_keywords: nail dotting tool, stamping plate, freehand nail art, nail art brush, leaf nail design, plaid nail design, marbling technique, gel top coat, accent nail, negative space nails
+- lsi_terms: dotting tool technique, striping tape nails, nail stamping plate, water marbling nails, freehand painting nails, gel polish layering, nail art brush sizes, accent nail design, 3D nail embellishments, rhinestone application, tortoiseshell marbling effect, gold foil nail accent, autumn leaf nail art, plaid nail pattern, negative space manicure, beginner nail art tools, nail art top coat sealing, nail prep before art, practice nail tips, DIY nail art kit
+- aeo_terms: "How do you do fall nail art at home?", "What tools do I need for fall nail art?", "Can beginners do fall nail art?", "What are easy fall nail art designs?", "How do you do leaf nail art?", "How do you get the tortoiseshell nail effect?", "What household items can I use for nail art?", "How long does DIY nail art last?"
+- technical_terms: dotting tool, striping tape, stamping plate, gel top coat, accent nail, negative space, water marbling, cuticle line
+- user_language: "I always mess it up," "beginner-friendly," "doesn't have to be perfect," "copy the picture," "practice on paper first," "no salon needed," "pricey salon appointment," "super doable," "easy to recreate at home"
+
+## SECTION 7 — VOICE AND AI QUERIES
+1. How do you do fall nail art at home?
+2. What's the easiest fall nail art design for beginners?
+3. What tools do I need to start nail art?
+4. Can you use household items instead of nail art tools?
+5. How do you do leaf nail art step by step?
+6. How do you get the tortoiseshell (tortoise shell) nail effect?
+7. What is water marbling nail art?
+8. How do you do plaid nails at home?
+9. How do you fix a nail art mistake?
+10. How long does DIY nail art last before chipping?
+11. What's the best base color for fall nail art?
+12. Do I need gel polish for nail art or is regular polish fine?
+13. How do you do dotting tool nail art?
+14. What's an easy way to practice nail art before doing my real nails?
+15. Can you do fall nail art on short nails?
+16. What colors work best for fall nail art?
+17. How do you seal nail art so it doesn't smudge?
+18. Is stamping nail art hard to learn?
+
+## SECTION 8 — HOOK AND CTR
+- selected_trigger: Trigger 1 — Curiosity Gap (reader suspects existing content skips the "how," not just the "what"; matches how-to_execution_mode)
+- trigger_rationale: Tutorial intent + audience frustration data shows the reader isn't short on inspiration (they have 900+ Pinterest boards) — they're short on being told HOW. Curiosity gap ("what everyone gets wrong," "nobody shows you the technique") resolves that specific gap.
+- title: "Fall Nail Art Nobody Shows You How to Actually Do"
+- title_char_count: 51
+- meta_description: "Tired of fall nail art photos with zero instructions? Get real step-by-step techniques anyone can follow — no salon, no expensive tools required."
+- meta_char_count: 152
+- intro_hook_brief: Open by naming the exact frustration validated in research — endless fall nail inspiration exists, but almost none of it explains HOW to actually create the look. Promise this post is different: real technique, real steps, tools you probably already own.
+- first_h2_hook_direction: Frame the first H2 as a direct voice-search-style question resolving the tool anxiety first — e.g., "What Do You Actually Need for Fall Nail Art?" — removing the biggest barrier (cost/gear) before design instruction begins.
+
+## SECTION 9 — SEARCH JOURNEY
+- reader_arrival_state: Motivated to DIY but intimidated — has seen dozens of fall nail photos and doubts she can replicate any of them herself.
+- journey_arc:
+  1. Remove the fear — confirm no salon skill or expensive kit required
+  2. Establish the toolkit (with cheap substitutes) so nothing blocks starting
+  3. Walk through 5-6 fall techniques in rising complexity (simplest first)
+  4. Address the "what if I mess up" anxiety directly with fix/practice guidance
+  5. Close with a confidence payoff — she now has a technique, not just a photo
+- promise_to_deliver: Real, followable instructions for fall nail art — not just another photo roundup.
+- exit_state: Confident and ready to try at least one design tonight, without feeling she needs a salon appointment or a $50 kit.
+
+## SECTION 10 — CONTENT STRUCTURE
+- h1: Fall Nail Art: Easy Step-by-Step Designs You Can Actually Do at Home
+- h2_structure:
+  1. What Do You Actually Need for Fall Nail Art? (tools + cheap substitutes)
+  2. How to Prep Your Nails Before Any Design (foundation, avoids common mistakes)
+  3. Easy Dotting Tool Leaf Nail Art (Beginner)
+  4. How to Get the Tortoiseshell Marbling Effect (Beginner-Intermediate)
+  5. Plaid Nail Art for Fall (Intermediate)
+  6. Nail Stamping for Fall Designs (Beginner, tool-dependent)
+  7. Freehand Gold Accent Nails (Intermediate)
+  8. What to Do When You Mess Up (fix technique + practice tip)
+  9. How to Make Fall Nail Art Last Longer
+- word_budget:
+  - introduction: 220
+  - conclusion: 180
+  - H2-1 (tools): 180
+  - H2-2 (prep): 160
+  - H2-3 (leaf art): 260
+  - H2-4 (tortoiseshell): 260
+  - H2-5 (plaid): 240
+  - H2-6 (stamping): 220
+  - H2-7 (freehand gold): 220
+  - H2-8 (fixes/practice): 180
+  - H2-9 (longevity): 180
+  Total: ~2000
+
+## SECTION 11 — INTERNAL LINKS
+| url_or_slug | title | anchor_text | placement_note | link_type |
+|---|---|---|---|---|
+| /blog/fall/fall-nail-ideas | Fall Nail Ideas | fall nail ideas | Introduction — after establishing this post's how-to angle vs. general inspiration | cluster-pillar |
+| /blog/fall/fall-ombre-nails | Fall Ombre Nails | fall ombre nails tutorial | Within H2-4 (Tortoiseshell) or H2-7 — natural mention when contrasting gradient technique with marbling | cluster-spoke |
+| /blog/fall/short-fall-nails | Short Fall Nails | short fall nails | H2-9 (longevity/short nails hold art better) or wherever short-nail context arises | cluster-spoke |
+| /blog/fall/fall-nail-trends-2026 | Fall Nail Trends 2026 | fall nail trends 2026 | Conclusion — pointing reader to what's trending this year after they've learned technique | cluster-spoke |
+| https://mirelleinspo.com/inspo/fall-nail-ideas-inspiration-gallery | (gallery — pillar only, NOT included here; this post is a spoke) | — | N/A | — |
+
+Note: gallery_link omitted (pillar-only per rule). 4 cluster links used — within 4-6 cap. No cross-site discovery links found meeting strict relevance filter; if desired, run additional site:mirelleinspo.com searches for "nail art tools" or "DIY nails" content before publish.
+
+## SECTION 12 — VOICE AND TONE
+- recommended_voice: Reassuring hands-on teacher
+- tone_characteristics: Patient, encouraging, practical, slightly playful, zero condescension toward beginners
+- language_style: Direct second-person ("you"), short imperative sentences for steps, light humor when acknowledging mess-ups, no jargon without immediate plain-English explanation
+- audience_match: This reader has been failed by photo-only content and fears "ruining" her nails — a teacherly, forgiving voice that normalizes mistakes (echoing "doesn't have to be perfect" sentiment from research) builds the trust generic AI-toned listicles don't.
+
+## SECTION 13 — EXTERNAL LINKS
+| url | context | anchor_suggestion |
+|---|---|---|
+| (nailpro.com fall nail art technique coverage — cite when discussing professional technique validation, e.g. hand-painting/marbling) | H2-4 or H2-7, when referencing professional technique standards | nail industry technique guidance |
+| (byrdie.com fall nail art roundup — cite as trend/idea source, not technique source) | Introduction or H2-9, contrasting inspiration vs. execution | seasonal nail trend coverage |
+
+Note: exact URLs not directly fetchable per site: search protocol — Blog Gen Agent or editor should confirm live URL before publish via direct site search if citation is used.
+
+## SECTION 14 — EXECUTION PLAN
+
+### Block 1 — Keyword Execution
+- primary_keyword: fall nail art
+- top_3_density_baseline: 6 (estimated average mentions across top-ranking listicle/tutorial hybrids)
+- total_mention_target: 9 (baseline 6 + 3)
+- first_100_words_plan:
+  - rule: primary keyword MUST appear twice in first 100 words
+  - mention_1: sentence 1-2 of intro — naming the "fall nail art" search/frustration directly
+  - mention_2: sentence 4-5 of intro — reinforcing this post delivers real fall nail art technique
+- first_half_target: 5 mentions — first ~1000 words (H2-1 through H2-4)
+- second_half_target: 4 mentions — second ~1000 words (H2-5 through conclusion)
+- strong_tag_rule: every one of the 9 mentions wrapped in <strong> tags, no exceptions
+- keywords_to_avoid_active: fall nail ideas, fall nail designs, fall nail colors, fall nail trends 2026, short fall nails, burgundy fall nails, brown nails fall, fall ombre nails, fall french tip nails, fall pedicure colors, tortoiseshell nails fall, old money nails fall winter, vampire nails
+
+### Block 2 — Word Budget
+- total_target: 2000 words (±50)
+- introduction: 220
+- conclusion: 180
+- h2_budgets:
+  1. What Do You Actually Need for Fall Nail Art? — 180 words — low
+  2. How to Prep Your Nails Before Any Design — 160 words — low
+  3. Easy Dotting Tool Leaf Nail Art — 260 words — medium
+  4. How to Get the Tortoiseshell Marbling Effect — 260 words — medium
+  5. Plaid Nail Art for Fall — 240 words — medium
+  6. Nail Stamping for Fall Designs — 220 words — medium
+  7. Freehand Gold Accent Nails — 220 words — high
+  8. What to Do When You Mess Up — 180 words — low
+  9. How to Make Fall Nail Art Last Longer — 180 words — low
+- tracking_rule: check running total after every H2; cut before moving on if over.
+
+### Block 3 — Image Plan
+- total_images: 5 (image_count from POST_CONSTANTS)
+- hero_image: frontmatter only, never in body
+- body_images: 4
+- assignments:
+  1. place_after: H2-3 (Leaf Nail Art) — section_context: finished dotting-tool leaf design, close-up
+  2. place_after: H2-4 (Tortoiseshell) — section_context: marbled tortoiseshell effect on nail
+  3. place_after: H2-5 (Plaid) — section_context: plaid pattern fall manicure
+  4. place_after: H2-7 (Freehand Gold Accent) — section_context: gold freehand accent nail design
+- image_type_rule: all inspirational nail design images only — no diagrams, no process/step graphics
+- path_rule: /images/blog/fall/fall-nail-art/filename.webp
+
+### Block 4 — Opening Technique Assignments
+- Introduction: Technique 1 (The Claim) — state directly that most fall nail art content skips the how
+- H2-1 (tools): Technique 3 (The Reframe) — reframe "you need an expensive kit" as false
+- H2-3 (leaf art): Technique 2 (or equivalent scene-setting opener) — vary from H2-1
+- H2-4 (tortoiseshell): Technique 1 (The Claim) — state the technique looks harder than it is
+- H2-5 (plaid): Technique 3 (The Reframe)
+- H2-6 (stamping): Technique 2
+- H2-7 (freehand): Technique 1
+- H2-8 (fixes): Technique 3 (The Reframe) — reframe mistakes as normal/fixable
+- H2-9 (longevity): Technique 2
+- Conclusion: Technique 3 (The Reframe) — reader now has technique, not just a photo
+- banned_opener_rule: check every opener against Blog Gen Agent's banned_opening_approaches before finalizing second sentence of each section.
+
+### Block 5 — Link Placements
+| anchor_text | full_url | place_in_section | placement_context | link_type |
+|---|---|---|---|---|
+| fall nail ideas | /blog/fall/fall-nail-ideas | Introduction | after framing this post as the "how" companion to browsing inspiration | cluster-pillar |
+| fall ombre nails tutorial | /blog/fall/fall-ombre-nails | H2-4 (Tortoiseshell) | when distinguishing marbling from gradient/ombre technique | cluster-spoke |
+| short fall nails | /blog/fall/short-fall-nails | H2-9 (Longevity) | when noting shorter nails often hold art longer | cluster-spoke |
+| fall nail trends 2026 | /blog/fall/fall-nail-trends-2026 | Conclusion | pointing to what's new this year after mastering technique | cluster-spoke |
+
+### Block 6 — AEO/GEO Plan
+- aeo_assignments:
+  1. "How do you do fall nail art at home?" → Introduction — 2-3 sentence direct answer immediately after H1
+  2. "What tools do I need for fall nail art?" → H2-1 — direct answer paragraph before elaboration
+  3. "How do you get the tortoiseshell nail effect?" → H2-4 — direct answer paragraph
+  4. "How do you fix a nail art mistake?" → H2-8 — direct answer paragraph
+  5. "How long does DIY nail art last?" → H2-9 — direct answer paragraph
+- geo_entity_statements:
+  1. entity: water marbling — H2-4 — clear declarative definition sentence
+  2. entity: dotting tool — H2-3 — clear declarative definition sentence
+  3. entity: nail stamping plate — H2-6 — clear declarative definition sentence
+
+### Block 7 — Active Constraints
+- em_dash_banned: yes, active
+- banned_vocab_watch: "elevate," "effortless," "must-have," "game-changer," "unleash," "stunning," "chic" (highest-risk words for this beauty/tutorial topic — watch closely)
+- british_english_active: colour, recognise, -ise, -our — every instance
+- keyword_density_reminder: check running "fall nail art" count after every 2 H2s; target 9 total, denser in first half (5 vs 4)
+- image_path_reminder: /images/blog/fall/fall-nail-art/filename.webp
+- internal_link_url_reminder: full paths only, /blog/fall/[slug] format
+- hero_image_reminder: frontmatter only, never in body
+- strong_tag_reminder: every primary keyword mention wrapped in <strong>, scan after every paragraph
