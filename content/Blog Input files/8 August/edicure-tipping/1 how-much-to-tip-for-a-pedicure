@@ -1,0 +1,195 @@
+# BLOG GEN INPUT FILE — SINGLE SOURCE OF TRUTH
+This file is the single source of truth for the Blog Gen Agent. All POST_CONSTANTS values are hardcoded — do not ask, adjust, or override. Read section_14 (Execution Plan) FIRST, before frontmatter or writing.
+
+CLUSTER MODE — cluster context loaded (pedicure-tipping, post_id 1, pillar).
+
+## SECTION 2 — POST_CONSTANTS
+- slug: how-much-to-tip-for-a-pedicure
+- topic_slug: pedicure-tipping
+- canonical: https://mirelleinspo.com/blog/pedicure-tipping/how-much-to-tip-for-a-pedicure
+- post_type: pillar
+- intent: informational (decision_mode)
+- word_count: 2400 (top-3 SERP average ~1900-2200 words; set above floor, within 3500 ceiling)
+- image_count: 10 (1 hero + 9 H2s)
+- template: center
+- hero_dimensions: 1200x630
+- category: Nail Costs
+- publish_date: 2026-07-15
+- author: Mirellé Team
+
+## SECTION 3 — CLUSTER SNAPSHOT
+- pillar_slug: how-much-to-tip-for-a-pedicure
+- pillar_title: How Much to Tip for a Pedicure: Complete Guide + Calculator
+- pillar_primary_keyword: how much to tip for a pedicure
+- this_post_slug: how-much-to-tip-for-a-pedicure
+- this_post_role: pillar
+- keywords_to_avoid: "how much to tip nail technician" (existing site post, general/GBP/flat-20%), "is it rude not to tip your nail tech" (spoke), "pedicure salon etiquette" (spoke). This pillar stays USD-first, pedicure-specific, dollar-tier/calculator-driven to avoid duplicating the existing post.
+
+## SECTION 4 — SERP ANALYSIS
+- competitor_gaps: (1) No competitor offers an interactive calculator, only static tables. (2) Weak reassurance framing at low dollar amounts ($5, $10, $15) despite heavy Quora/Facebook demand. (3) Discount/coupon tipping mentioned but never centered with clear examples.
+- missing_semantic_territory: exact-dollar worked examples across $30-$200 in one place; poor-service tipping; multi-technician tipping.
+- our_strategic_approach: Build the only pedicure-specific tipping guide with a live calculator, consolidating the scattered "$40 pedicure" thin-content pages into one definitive resource.
+- recommended_image_count_validation: Competitors are text/table-heavy; 10 images exceeds their visual depth, fitting for pillar status.
+
+## SECTION 5 — AUDIENCE INTELLIGENCE
+- who_they_are: Someone at checkout or about to book, doing quick mental math on a known dollar figure ($30-$200). Decision-mode, not browsing.
+- what_they_want: A fast, exact-dollar answer for their price point, not a percentage lecture.
+- what_frustrates_them: Vague "it depends" answers, conflicting ranges (10-20% vs 15-25% vs flat 20%), having to do their own math.
+- top_5_pain_points: (1) Fear of under-tipping/being judged. (2) Confusion over discount/coupon tipping. (3) Card vs cash uncertainty. (4) Whether poor service still requires a tip. (5) Splitting tips between two technicians.
+- exact_user_phrases: "is $5 ok for a tip on a pedicure", "is 20% a good tip for a pedicure", "how much do you tip for a $40 pedicure", "is 15 dollars a good tip for a pedicure", "what is considered a decent tip for a $30 pedicure", "was a 25% tip okay", "cash is king", "don't be that person who tips on the reduced price".
+- intent_content_signals: Wants a scannable table/calculator over prose; wants the answer within seconds; responds to direct declarative statements over hedging; wants reassurance language ("yes, that's enough").
+
+## SECTION 6 — SEMANTIC KEYWORD DATA
+- primary_keyword: how much to tip for a pedicure
+- keyword_variations: how much do you tip for a pedicure, how much should you tip for a pedicure, pedicure tip amount, how much to tip pedicure, what to tip for a pedicure, tip calculator for pedicure, how much tip for pedicure
+- cluster_keywords: pedicure tipping percentage, tip for a $50 pedicure, tip for a $40 pedicure, tip for a $30 pedicure, tip for a $70 pedicure, tip for a $100 pedicure, nail salon tipping standard, gratuity for pedicure, spa pedicure tip, gel pedicure tip, tipping on discounted pedicure, cash vs card tip pedicure
+- lsi_terms: gratuity, service cost, nail technician income, tip percentage, pre-tax price, tipping etiquette, spa pedicure, deluxe pedicure, tip calculator, tipping norms, industry standard tip, credit card processing fee, tip pooling, minimum tip
+- aeo_terms: "how much should I tip for a $45 pedicure", "is a 15% tip enough for a pedicure", "do you tip on the discounted price of a pedicure", "how much do you tip for a $100 pedicure", "is it rude to tip less than 15% for a pedicure", "how much should I tip if I pay by card", "what's a good tip for a $200 pedicure", "should I tip more for a gel pedicure"
+- technical_terms: gratuity, service subtotal, pre-tax total, tip pooling, card processing fee, soak-off, deluxe/spa tier
+- user_language: "is $5 ok", "am I being cheap", "cash is king", "throw a few extra bucks", "don't be that person", "cutting it close"
+
+## SECTION 7 — VOICE AND AI QUERIES
+1. How much should I tip for a $45 pedicure?
+2. Is a $5 tip okay for a pedicure?
+3. Is 20% a good tip for a pedicure?
+4. How much do you tip for a $30 pedicure?
+5. How much do you tip for a $40 pedicure?
+6. How much should I tip for a $50 pedicure?
+7. How much do you tip for a $70 pedicure?
+8. How much do I tip for $100 nails?
+9. How much should I tip on a $200 pedicure?
+10. Do you tip on the discounted price or the original price?
+11. Is it okay to tip less if the service was rushed or poor?
+12. Should I tip more for a gel or spa pedicure than a basic one?
+13. How much do I tip if I pay by credit card instead of cash?
+14. What if two different technicians did my manicure and pedicure?
+15. Is a 15% tip considered rude at a nail salon?
+16. How much extra should I tip for a really good pedicure?
+17. Is it normal to tip 25% for a pedicure with nail art?
+18. What's the minimum I should ever tip for a pedicure?
+
+## SECTION 8 — HOOK AND CTR
+- selected_trigger: Trigger 1 — Curiosity Gap
+- trigger_rationale: Reader is in decision_mode, uncertain if their specific dollar amount is "enough" — this trigger resolves that exact anxiety.
+- title: How Much to Tip for a Pedicure (Use This Calculator)
+- title_char_count: 57
+- meta_description: Wondering if your tip is enough? Get the exact dollar amount for any pedicure price, plus rules for coupons, cash vs card, and bad service.
+- meta_char_count: 143
+- intro_hook_brief: Open by naming the exact moment of hesitation, standing at the register, tip screen up, unsure if the number feels right. Promise an instant, exact answer rather than another percentage lecture.
+- first_h2_hook_direction: Phrase the first H2 as a direct voice-search question ("How Much Should You Tip for a Pedicure?") and answer it in the first 2-3 sentences with the 15-20% rule stated plainly.
+
+## SECTION 9 — SEARCH JOURNEY
+- reader_arrival_state: Slightly anxious, decision-mode, holding one specific dollar figure and needing quick confirmation.
+- journey_arc:
+  1. Confirm the standard rule immediately (15-20%, 20% is the safe default)
+  2. Let them find their exact price tier fast (calculator + table)
+  3. Resolve edge cases that create hesitation (discounts, card vs cash, bad service, multiple techs)
+  4. Build confidence for future visits
+  5. Close with a clear, no-hedging recommendation
+- promise_to_deliver: An exact dollar tip amount for their specific pedicure price, not a vague percentage range.
+- exit_state: Confident they tipped the right amount, no more second-guessing at the register.
+
+## SECTION 10 — CONTENT STRUCTURE
+- h1: How Much to Tip for a Pedicure: The Complete Guide + Calculator
+- h2_structure:
+  1. How Much Should You Tip for a Pedicure? (250 words)
+  2. Pedicure Tip Calculator (150 words)
+  3. Tip Amounts by Price: $20 to $200 Pedicures (450 words)
+  4. Do You Tip on the Discounted or Original Price? (200 words)
+  5. Should You Tip More for a Gel or Spa Pedicure? (200 words)
+  6. Cash vs Card: Does It Change How Much You Should Tip? (200 words)
+  7. What If the Service Wasn't Good? (200 words)
+  8. Tipping When Two Technicians Worked on You (150 words)
+  9. Pedicure Tipping FAQ (250 words)
+- word_budget: introduction 220, conclusion 180, H2s per above (total ~2400)
+
+## SECTION 11 — INTERNAL LINKS
+1. url: /blog/pedicure-tipping/is-it-rude-not-to-tip-pedicure | title: Is It Rude Not to Tip Your Nail Tech? | anchor: "is it rude to skip the tip entirely" | placement: H2-7 | type: cluster-spoke
+2. url: /blog/pedicure-tipping/pedicure-salon-etiquette | title: Pedicure Salon Etiquette | anchor: "full pedicure salon etiquette guide" | placement: conclusion | type: cluster-spoke
+3. url: https://mirelleinspo.com/blog/nail-costs/pedicure-cost | title: How Much Does a Pedicure Cost? | anchor: "see exact pedicure price tiers by type and salon" | placement: H2-3 | type: cross-site
+Total: 3 links (within 4-6 cap; Blog Gen Agent may add up to 2 more if a natural fit emerges, capped at 6).
+
+## SECTION 12 — VOICE AND TONE
+- recommended_voice: Confident, reassuring educator
+- tone_characteristics: Direct with numbers, no hedging on final recommendation, warm not clinical, permission-giving ("yes, that's enough"), zero judgment about budget
+- language_style: Short declarative sentences for dollar answers, second-person "you", light conversational asides, no jargon
+- audience_match: Reader wants resolution not options, matching direct dollar answers to decision-mode urgency
+
+## SECTION 13 — EXTERNAL LINKS
+1. url: nerdwallet.com/finance/learn/how-much-to-tip-nail-salon | context: cite the 10-20% industry range from a finance-authority source | anchor_suggestion: "industry standard tipping range"
+2. url: rd.com/article/how-much-to-tip-nail-salon | context: cite the 20% standard-tip etiquette-expert quote for E-E-A-T | anchor_suggestion: "etiquette experts recommend"
+
+## SECTION 14 — EXECUTION PLAN
+
+### Block 1 — Keyword Execution
+- primary_keyword: how much to tip for a pedicure
+- top_3_density_baseline: ~5 mentions
+- total_mention_target: 8 total mentions
+- first_100_words_plan: mention 1 in sentence 1-2 of intro; mention 2 in sentence 4-5 of intro
+- first_half_target: 5 mentions in first 1200 words
+- second_half_target: 3 mentions in remaining 1200 words
+- strong_tag_rule: every one of the 8 mentions wrapped in `<strong>` tags, scanned after each paragraph
+- keywords_to_avoid_active: how much to tip nail technician; is it rude not to tip your nail tech; pedicure salon etiquette
+
+### Block 2 — Word Budget
+- total_target: 2400 words (±50)
+- introduction: 220
+- conclusion: 180
+- H2 budgets:
+  1. How Much Should You Tip for a Pedicure? — 250 (low)
+  2. Pedicure Tip Calculator — 150 (low)
+  3. Tip Amounts by Price: $20-$200 — 450 (high)
+  4. Discounted vs Original Price — 200 (medium)
+  5. Gel or Spa Pedicure — 200 (medium)
+  6. Cash vs Card — 200 (medium)
+  7. Poor Service — 200 (medium)
+  8. Two Technicians — 150 (low)
+  9. FAQ — 250 (medium)
+- tracking_rule: check running total after every H2, trim before moving on if over
+
+### Block 3 — Image Plan
+- total_images: 10 (hero + 9 body)
+- hero_image: frontmatter only, never in body
+- body_images: 9, one per H2
+- assignments:
+  1. After H2-1: relaxed pedicure-in-progress, feet in spa bowl
+  2. After H2-2: close-up of neatly finished pedicure
+  3. After H2-3: mid-range spa pedicure chair setting
+  4. After H2-4: card/cash exchange at salon counter, styled
+  5. After H2-5: deluxe spa pedicure with paraffin/hot stone visual
+  6. After H2-6: cash tip in hand, aesthetic close-up
+  7. After H2-7: calm, neutral salon interior
+  8. After H2-8: two technicians working on hands + feet simultaneously
+  9. After H2-9: finished glossy pedicure, closing visual
+- image_type_rule: all inspirational pedicure/salon photography, no charts or infographics
+- path_rule: /images/blog/pedicure-tipping/how-much-to-tip-for-a-pedicure/filename.webp
+
+### Block 4 — Opening Technique Assignments
+- Introduction: Technique 1 (The Claim)
+- H2-1: Technique 3 (The Reframe)
+- H2-3: alternate technique, different from H2-1
+- H2-7: Technique 1 (The Claim) — "Yes, you should still tip."
+- Conclusion: Technique 1 (The Claim)
+- Rule: no two consecutive H2s share a technique; conclusion = T1 or T3 only
+
+### Block 5 — Link Placements
+1. anchor: "is it rude to skip the tip entirely" | url: /blog/pedicure-tipping/is-it-rude-not-to-tip-pedicure | section: H2-7 | type: cluster-spoke
+2. anchor: "full pedicure salon etiquette guide" | url: /blog/pedicure-tipping/pedicure-salon-etiquette | section: Conclusion | type: cluster-spoke
+3. anchor: "see exact pedicure price tiers by type and salon" | url: https://mirelleinspo.com/blog/nail-costs/pedicure-cost | section: H2-3 | type: cross-site
+
+### Block 6 — AEO/GEO Plan
+- AEO: "How much should I tip for a $45 pedicure?" → H2-3 → direct 2-3 sentence answer immediately after heading
+- AEO: "Do you tip on the discounted price of a pedicure?" → H2-4 → direct answer: tip on original price
+- AEO: "Is a 15% tip enough for a pedicure?" → H2-1 → direct answer: 15% is the low end, 20% is safer
+- GEO entity: "15-20% rule" → H2-1 → clear declarative definition sentence
+- GEO entity: "tip pooling" → H2-6 → clear declarative definition sentence
+
+### Block 7 — Active Constraints
+- em_dash_banned: yes, replace with comma/period/parentheses
+- banned_vocab_watch: "elevate", "unlock", "seamless", "journey", "game-changer", "in today's world", "dive into"
+- british_english_active: n/a — this pillar targets a US-first, USD audience; keep American spelling unless Mirellé's global style guide states otherwise, confirm before writing
+- keyword_density_reminder: check after H2-2 and H2-6, verify pacing toward 8 total, denser in first half
+- image_path_reminder: /images/blog/pedicure-tipping/how-much-to-tip-for-a-pedicure/filename.webp
+- internal_link_url_reminder: cluster links = /blog/pedicure-tipping/[slug]; cross-site = full mirelleinspo.com URL
+- hero_image_reminder: frontmatter only
+- strong_tag_reminder: every primary keyword mention wrapped in `<strong>`, scan after every paragraph
