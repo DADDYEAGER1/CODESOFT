@@ -1,0 +1,286 @@
+# INPUT FILE — Blog Gen Agent | MODE: SOLO
+
+## SECTION 1: FILE AUTHORITY
+THIS FILE IS THE SINGLE SOURCE OF TRUTH FOR THE BLOG GEN AGENT. All POST_CONSTANTS values are hardcoded — Blog Gen Agent does not ask, adjust, or override. All keywords, H2 structure, audience intelligence, internal links, and tone defined here must be followed exactly.
+
+## SECTION 2: POST_CONSTANTS
+- slug: nail-colors-that-go-with-everything
+- topic_slug: nails-by-color
+- canonical: https://mirelleinspo.com/blog/nails-by-color/nail-colors-that-go-with-everything
+- post_type: standalone
+- intent: inspirational (with informational decision-framework backbone — "capsule wardrobe" angle, not a pure list-and-scroll piece)
+- word_count: 2600
+- image_count: 9
+- template: center
+- hero_dimensions: 1200x630
+- category: Nails by Color
+- publish_date: 2026-07-10
+- author: Mirellé Team
+
+## SECTION 4: SERP ANALYSIS
+**competitor_gaps** (2+ source validated):
+- No competitor frames this as a "decision fatigue" / capsule-wardrobe problem to solve, despite Refinery29 and WhoWhatWear both opening on exactly that pain point. None turn it into a structured "how many colors do you actually need" system.
+- No competitor addresses the office/interview-safe angle inside a "goes with everything" post specifically (Quora + corporate/interview articles show high demand, but existing "goes with everything" roundups skip work-appropriateness entirely).
+- No competitor differentiates "goes with your clothes" from "flatters your skin tone" — nearly every source conflates the two, confusing readers who came for wardrobe matching, not complexion matching (confirmed via Quora + LONDONTOWN + Purfect Sunday all blending the two questions).
+- Finish/formula versatility (chrome vs. crème vs. jelly performing differently against prints/patterns) is unaddressed anywhere in top results — single-source-adjacent (Refinery29 touches metallics briefly) but genuine gap.
+- No competitor gives a "how many bottles do you actually need" number — WhoWhatWear and Refinery29 both gesture at minimalism/decision fatigue but never resolve it with a concrete system.
+
+**missing_semantic_territory:** capsule wardrobe nails, decision fatigue, one polish for every outfit, versatile nail color system, work-to-weekend nail color, wardrobe-neutral nail shade, print-and-pattern nail pairing.
+
+**our_strategic_approach:** Position this as the "capsule wardrobe" of nail colors — solve decision fatigue with a definitive, ranked shortlist (not an exhaustive scroll-list), explicitly separate "goes with your clothes" from "flatters your skin tone" (cross-link to the skin-tone pillar rather than duplicate it), and close with a concrete "you only need these X colors" system competitors don't offer.
+
+**recommended_image_count_validation:** 9 matches SERP pattern — competitors run 7-13 image-per-shade galleries; 9 aligns with "everything else" rule and keeps pacing tight against a 2600-word count.
+
+## SECTION 5: AUDIENCE INTELLIGENCE
+**who_they_are:** Someone standing in front of a nail polish wall (physically or on Amazon/Google), overwhelmed by choice, who does NOT want to build a 40-bottle collection. Often browsing right before a wardrobe refresh, new job, or season change. Skews slightly more practical/minimalist than pure trend-chaser.
+
+**what_they_want:** A short, decisive, trustworthy shortlist — not 20 options that still leave them stuck. They want permission to stop overthinking.
+
+**what_frustrates_them:** Every existing article gives 9-13 colors with zero prioritization, mixes in skin-tone advice that muddies the actual question, and never says "if you can only own 3, own these."
+
+**top_5_pain_points:**
+1. Decision fatigue at the polish rack / online cart — too many "safe" options presented with no ranking (Refinery29, WhoWhatWear both open on this exact frustration)
+2. Confusion between "matches my clothes" vs. "flatters my skin" — conflated everywhere (Quora, LONDONTOWN)
+3. Wanting a color that survives multiple wardrobes/occasions (office Monday, dinner Friday) without rebuying polish
+4. Uncertainty about whether "goes with everything" has to mean boring/beige (WhoWhatWear editor explicitly rejects "nude" as the only answer)
+5. Not knowing how many actual bottles they need to stop feeling like their nails are the wrong shade for an outfit
+
+**exact_user_phrases:**
+- "nail polish that goes with everything"
+- "what color goes with any outfit"
+- "sick of thinking about what color to wear"
+- "goes with whatever I wear"
+- "I'll even wear the same shade for months"
+- "won't stand out but still look neat/polished"
+- "clashes with nothing"
+- "pairs with literally everything hanging in your closet"
+- "your nails but better"
+- "one shade for every occasion"
+
+**intent_content_signals:** Reader responds to ranked/prioritized lists over exhaustive ones; wants a clear "why this works" logic (not just a name); appreciates permission to be bold (red/cobalt count as "goes with everything" too, not just beige); wants a closing decision framework, not just a gallery.
+
+## SECTION 6: SEMANTIC KEYWORD DATA
+- primary_keyword: nail colors that go with everything
+- keyword_variations: nail color that goes with everything, nail polish that goes with everything, nail colors that match everything, nail color that goes with any outfit, versatile nail colors, nail polish colors that go with everything, colors that go with everything nails
+- cluster_keywords: neutral nail polish, capsule nail wardrobe, wardrobe-neutral nail color, work-to-weekend nail color, decision fatigue nail color, one nail color for every outfit, timeless nail polish shades, classic nail color roundup
+- lsi_terms: nude nail polish, greige nail polish, mauve nail polish, milky white nails, classic red nail polish, taupe nail polish, chocolate brown nails, cobalt blue nails, sheer pink nails, chrome nail finish, gloss finish nails, jelly nail polish, print-and-pattern outfit pairing, crème finish, denim-adjacent nail shade
+- aeo_terms: what nail color goes with every outfit, is there a nail polish that matches everything, how many nail polish colors do you actually need, what color nails go with any dress, does red nail polish go with everything, is nude the only nail color that goes with everything, what nail color is safe for any occasion
+- technical_terms: crème finish, jelly finish, chrome finish, sheer formula, opacity, undertone, cool-toned red, blue-based red, gloss topcoat
+- user_language: goes with whatever I wear, won't clash with anything, my go-to shade for months, don't have to think about it, safe but not boring, works for work and weekends, one bottle does it all, stop overthinking my nails
+
+## SECTION 7: VOICE AND AI QUERIES
+1. What nail color goes with literally every outfit?
+2. Is nude really the only nail color that goes with everything?
+3. What's the most versatile nail polish color to own?
+4. Does red nail polish actually go with everything?
+5. What nail color works for both the office and a night out?
+6. How many nail polish colors do I actually need to own?
+7. What's a good "no-fail" nail color for any occasion?
+8. Can a bold nail color still go with everything?
+9. What nail color pairs with prints and patterns without clashing?
+10. Is a French manicure considered a "goes with everything" nail color?
+11. What's the difference between a nail color that flatters my skin and one that matches my clothes?
+12. What finish (glossy, matte, chrome) works best for a versatile everyday nail color?
+13. What nail color should I get if I only want to book one shade all year?
+14. Is greige or taupe better than beige for a neutral nail color?
+15. What color nails go with a black dress and everything else too?
+
+## SECTION 8: HOOK AND CTR
+- selected_trigger: Trigger 1 — Curiosity Gap ("Nobody Tells You" / "The Real Reason")
+- trigger_rationale: The audience's dominant pain point is decision fatigue and being misled by generic "just wear nude" advice; a curiosity-gap hook ("what nobody explains about the one nail color rule") resolves that specific frustration better than FOMO or identity framing.
+- title: Nail Colors That Go With Everything (Not Just Nude)
+- title_char_count: 43 — under range; revised below
+- title_draft_final: Nail Colors That Go With Everything, Not Just Nude
+- title_char_count_final: 51
+- meta_description: Tired of decision fatigue at the polish rack? These are the only nail colors that genuinely go with everything — ranked, explained, and definitely not just beige.
+- meta_char_count: 158 — trim below
+- meta_description_final: Tired of decision fatigue at the polish rack? These nail colors genuinely go with every outfit, ranked and explained — and it's not just beige.
+- meta_char_count_final: 143
+- intro_hook_brief: Open on the exact moment of overwhelm — standing at the polish wall or scrolling a cart, unable to decide — then reveal that "goes with everything" has quietly become code for "boring" when it doesn't have to be. Promise a short, ranked, decisive list.
+- first_h2_hook_direction: Phrase the first H2 as a direct voice-search question ("What Nail Color Really Goes With Everything?") and answer it immediately with the core logic (neutral undertone + mid-saturation) before diving into the ranked list.
+
+## SECTION 9: SEARCH JOURNEY
+- reader_arrival_state: Mentally worn out by too many nail-color choices, wanting one confident answer instead of another 13-shade scroll list.
+- journey_arc:
+  1. Validate the overwhelm and reframe "goes with everything" away from "boring"
+  2. Deliver the ranked shortlist with the logic behind each pick (not just names)
+  3. Address the wardrobe-vs-skin-tone confusion directly, pointing to the dedicated skin-tone resource
+  4. Solve the "how many do I actually need" question with a concrete capsule system
+  5. Close with permission to stop overthinking and commit
+- promise_to_deliver: A short, decisive, ranked answer to "what nail color goes with everything" — not another exhaustive list that leaves the decision unresolved.
+- exit_state: Reader has picked (or is ready to pick) 1-3 shades and feels done deciding, not more overwhelmed.
+
+## SECTION 10: CONTENT STRUCTURE
+**h1:** Nail Colors That Go With Everything (And Why Nude Isn't the Only Answer)
+
+**h2_structure:**
+1. What Nail Color Really Goes With Everything? (word_budget: 220, complexity: medium — AEO answer paragraph)
+2. Classic Red: The Neutral Nobody Calls a Neutral (word_budget: 240, complexity: low)
+3. Greige and Mauve: The Editor's Secret Weapon (word_budget: 240, complexity: low)
+4. Milky White: Clean, Not Clinical (word_budget: 220, complexity: low)
+5. Chocolate Brown: 2026's Most Versatile Neutral (word_budget: 240, complexity: low)
+6. Cobalt Blue: The Bold Color That Still Goes With Everything (word_budget: 240, complexity: medium)
+7. Sheer Pink: The "Your Nails But Better" Option (word_budget: 200, complexity: low)
+8. Does This Color Match My Clothes or Just Flatter My Skin? (word_budget: 240, complexity: medium — clarifies wardrobe vs. skin-tone confusion, links to skin-tone pillar)
+9. How Many "Goes With Everything" Colors Do You Actually Need? (word_budget: 260, complexity: high — capsule wardrobe system, differentiator section)
+10. Finish Matters as Much as Color (word_budget: 200, complexity: medium)
+
+- introduction: 220 words
+- conclusion: 180 words
+
+## SECTION 11: INTERNAL LINKS
+1. url_or_slug: /blog/skin-tone/nail-colors-that-look-good-on-every-skin-tone
+   title: Nail Colors That Look Good on Every Skin Tone
+   anchor_text: how to find nail colors that flatter your specific skin tone
+   placement_note: Section 8 ("Does This Color Match My Clothes or Just Flatter My Skin?") — natural handoff point when separating the two questions
+   link_type: cross-site
+
+2. url_or_slug: /work-nails/work-appropriate-nail-colors
+   title: Work-Appropriate Nail Colors: What to Wear to the Office
+   anchor_text: which of these shades are safest for a conservative office
+   placement_note: Section 2 (Classic Red) or Section 3 (Greige/Mauve) — where office-safety is relevant to red/neutral picks
+   link_type: cross-site
+
+3. url_or_slug: /blog/nails-by-color/nail-colors
+   title: Nail Colors: The Ultimate Guide to Every Trending Shade in 2026
+   anchor_text: the complete 2026 nail color trend guide by season
+   placement_note: Conclusion — natural next-step link for readers wanting seasonal/trend depth beyond the capsule shortlist
+   link_type: cross-site
+
+4. url_or_slug: /blog/nails-by-color/butter-yellow-nails
+   title: Butter Yellow Nails: The Sunny New Neutral
+   anchor_text: how butter yellow earned its spot as an unexpected new neutral
+   placement_note: Section 5 (Chocolate Brown) or a brief aside — as a contrast example of a trend color that tried to be "the new neutral" and split opinion by skin tone, reinforcing the skin-tone-vs-wardrobe distinction
+   link_type: cross-site
+
+Note: total 4 internal links (within 4-6 cap). No cluster_context.json present, so no verbatim cluster anchors apply — all links are cross-site discovery, relevance-filtered and descriptive per rule.
+
+## SECTION 12: VOICE AND TONE
+- recommended_voice: Confident editor / decisive friend — not a salesperson, not a generic listicle voice
+- tone_characteristics: Direct, slightly wry about "decision fatigue," reassuring without being saccharine, opinionated (ranks rather than just lists), respects the reader's time
+- language_style: Second person ("you"), short declarative sentences mixed with one longer explanatory sentence per section, minimal hedging — state the pick and the reason, move on
+- audience_match: This reader wants permission to stop overthinking; a voice that makes decisive calls (not "it depends") directly serves that need
+
+## SECTION 13: EXTERNAL LINKS
+1. url: (OPI colour theory / shade guide — general reference, already cited internally at mirelleinspo.com; use only if a fresh direct OPI editorial URL is confirmed at write time)
+   context: Supporting citation on undertone-neutral color theory in Section 1 or Section 8
+   anchor_suggestion: OPI's color theory guidance
+2. url: (use only sources independently verified at write time; do not fabricate)
+   context: N/A — no additional external authority links strongly validated in this research pass beyond the site's own prior OPI citation pattern
+   anchor_suggestion: N/A
+
+## SECTION 14: EXECUTION PLAN
+
+### Block 1: Keyword Execution
+- primary_keyword: nail colors that go with everything
+- top_3_density_baseline: 6 (estimated average mentions across Refinery29, Purfect Sunday, LONDONTOWN pieces)
+- total_mention_target: 9 (baseline 6 + 3)
+- first_100_words_plan:
+  - mention_1: sentence 2 of introduction — naming the reader's exact problem ("...standing at the polish wall trying to find nail colors that go with everything...")
+  - mention_2: sentence 4-5 of introduction — transitioning into the promise of the post
+- first_half_target: 5 mentions — words 1-1300
+- second_half_target: 4 mentions — words 1300-2600
+- strong_tag_rule: every mention wrapped in `<strong>` tags, no exceptions
+- keywords_to_avoid_active: none (solo mode, no cluster_context.json)
+
+### Block 2: Word Budget
+- total_target: 2600 words (±50 tolerance)
+- introduction: 220
+- conclusion: 180
+- h2_budgets:
+  1. What Nail Color Really Goes With Everything? — 220 (medium)
+  2. Classic Red — 240 (low)
+  3. Greige and Mauve — 240 (low)
+  4. Milky White — 220 (low)
+  5. Chocolate Brown — 240 (low)
+  6. Cobalt Blue — 240 (medium)
+  7. Sheer Pink — 200 (low)
+  8. Wardrobe vs. Skin Tone — 240 (medium)
+  9. How Many Colors Do You Need — 260 (high)
+  10. Finish Matters — 200 (medium)
+- tracking_rule: Check running total after every 2 H2s; cut before proceeding if over budget.
+
+### Block 3: Image Plan
+- total_images: 9
+- hero_image: frontmatter only, never in body
+- body_images: 8
+- assignments:
+  1. place_after: Introduction — section_context: flat-lay of 4-5 versatile polish bottles/swatches
+  2. place_after: H2-2 (Classic Red) — section_context: manicured hand in classic red against a neutral outfit
+  3. place_after: H2-3 (Greige/Mauve) — section_context: mauve or greige manicure, soft styled shot
+  4. place_after: H2-4 (Milky White) — section_context: milky white manicure, clean background
+  5. place_after: H2-5 (Chocolate Brown) — section_context: chocolate brown manicure against fall-toned outfit
+  6. place_after: H2-6 (Cobalt Blue) — section_context: cobalt blue manicure styled with denim or black
+  7. place_after: H2-7 (Sheer Pink) — section_context: sheer pink "your nails but better" manicure
+  8. place_after: H2-9 (How Many Colors) — section_context: styled flat-lay of the final capsule shortlist (3-5 bottles) as a visual summary
+- image_type_rule: All body images are inspirational nail design/manicure photography. No infographics, no comparison charts, no diagrams.
+- path_rule: /images/blog/nails-by-color/nail-colors-that-go-with-everything/filename.webp
+
+### Block 4: Opening Technique Assignments
+- Introduction: Technique 1 (The Claim) — open with the decisive claim that a "goes with everything" shade doesn't have to mean boring
+- H2-1 (What Really Goes With Everything): Technique 3 (The Reframe)
+- H2-2 (Classic Red): Technique 2 (The Scene) — polish wall / getting dressed moment
+- H2-3 (Greige/Mauve): Technique 1 (The Claim)
+- H2-4 (Milky White): Technique 3 (The Reframe)
+- H2-5 (Chocolate Brown): Technique 2 (The Scene)
+- H2-6 (Cobalt Blue): Technique 1 (The Claim) — bold claim that blue counts as neutral
+- H2-7 (Sheer Pink): Technique 3 (The Reframe)
+- H2-8 (Wardrobe vs. Skin Tone): Technique 1 (The Claim)
+- H2-9 (How Many Colors): Technique 2 (The Scene) or Technique 3 (The Reframe) — differentiator section, needs strong opening
+- H2-10 (Finish Matters): Technique 1 (The Claim)
+- Conclusion: Technique 3 (The Reframe)
+- banned_opener_rule: Check every opener against Blog Gen Agent's banned_opening_approaches list before finalizing second sentence of each section.
+
+### Block 5: Link Placements
+1. anchor_text: how to find nail colors that flatter your specific skin tone
+   full_url: https://mirelleinspo.com/blog/skin-tone/nail-colors-that-look-good-on-every-skin-tone
+   place_in_section: H2-8 (Does This Color Match My Clothes or Just Flatter My Skin?)
+   placement_context: When explicitly telling the reader this post is about wardrobe matching, not complexion matching, and pointing them to the dedicated resource
+   link_type: cross-site
+2. anchor_text: which of these shades are safest for a conservative office
+   full_url: https://mirelleinspo.com/work-nails/work-appropriate-nail-colors
+   place_in_section: H2-2 (Classic Red) or H2-3 (Greige and Mauve)
+   placement_context: Noting that red/greige work in professional settings too, with a link for readers who need office-specific guidance
+   link_type: cross-site
+3. anchor_text: the complete 2026 nail color trend guide by season
+   full_url: https://mirelleinspo.com/blog/nails-by-color/nail-colors
+   place_in_section: Conclusion
+   placement_context: Natural next-step for readers wanting seasonal depth beyond this capsule shortlist
+   link_type: cross-site
+4. anchor_text: how butter yellow earned its spot as an unexpected new neutral
+   full_url: https://mirelleinspo.com/blog/nails-by-color/butter-yellow-nails
+   place_in_section: H2-5 (Chocolate Brown) or H2-8 (Wardrobe vs. Skin Tone)
+   placement_context: As a brief contrast example reinforcing that not every "new neutral" claim survives skin-tone variation, unlike this post's picks
+   link_type: cross-site
+
+### Block 6: AEO/GEO Plan
+- aeo_assignments:
+  1. aeo_term: What nail color goes with every outfit?
+     assigned_to_section: H2-1
+     execution: Direct 2-3 sentence answer immediately after the H2 heading — neutral undertone + mid-saturation logic — before elaboration.
+  2. aeo_term: Is nude really the only nail color that goes with everything?
+     assigned_to_section: H2-2 or Introduction
+     execution: Direct answer stating no, with red/cobalt/brown as counterexamples, before listing.
+  3. aeo_term: How many nail polish colors do I actually need to own?
+     assigned_to_section: H2-9
+     execution: Direct numeric answer (e.g., "three") immediately after heading, then explain the system.
+  4. aeo_term: Does red nail polish actually go with everything?
+     assigned_to_section: H2-2
+     execution: Direct yes + one-sentence mechanism (blue-based red = universal neutral-adjacent) immediately after heading.
+- geo_entity_statements:
+  1. entity: Greige (grey-beige nail shade)
+     assigned_to_section: H2-3
+     execution: Clear declarative definition — "Greige is a grey-beige hybrid nail shade that sits between warm and cool, which is exactly why it doesn't clash with anything."
+  2. entity: Crème finish vs. jelly finish vs. chrome finish
+     assigned_to_section: H2-10
+     execution: Clear declarative definitions of each finish type and how opacity/reflectivity affects versatility.
+
+### Block 7: Active Constraints
+- em_dash_banned: true — replace with comma, new sentence, parentheses, "but," or restructure
+- banned_vocab_watch: "elevate," "effortless," "must-have," "game-changer," "unlock," "seamlessly," "timeless" (most likely to slip into a versatile-nail-color roundup)
+- british_english_active: colour, recognise, -ise, -our — every instance
+- keyword_density_reminder: Count mentions after every 2 H2s; verify pace toward 9 total, denser in first half (5 of 9 by word 1300)
+- image_path_reminder: /images/blog/nails-by-color/nail-colors-that-go-with-everything/filename.webp
+- internal_link_url_reminder: full paths only, https://mirelleinspo.com/... for cross-site links, never bare /slug
+- hero_image_reminder: frontmatter only, never in body
+- strong_tag_reminder: every primary keyword mention wrapped in `<strong>` tags, scan after every paragraph
