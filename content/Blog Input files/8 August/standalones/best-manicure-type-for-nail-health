@@ -1,0 +1,243 @@
+# BLOG GEN AGENT INPUT FILE — SOLO MODE
+
+## SECTION 1 — FILE AUTHORITY
+THIS FILE IS THE SINGLE SOURCE OF TRUTH FOR THE BLOG GEN AGENT. All values in POST_CONSTANTS are hardcoded — do not ask, adjust, or override. All keywords, H2 structure, audience intelligence, internal links, and tone defined here must be followed exactly.
+
+## SECTION 2 — POST_CONSTANTS
+- slug: best-manicure-type-for-nail-health
+- topic_slug: nail-health (assumed — no cluster context; adjust if site taxonomy differs)
+- canonical: https://mirelleinspo.com/blog/nail-health/best-manicure-type-for-nail-health
+- post_type: standalone
+- intent: informational
+- word_count: 2100 (top-3 competitor average ≈1500 words; set above floor for depth/E-E-A-T differentiation, within 3500 ceiling)
+- image_count: 9 (rule 5 — informational standalone, no X+ slug, not pillar/tutorial/comparison)
+- template: center
+- hero_dimensions: 1200x630
+- category: Nail Care / Nail Health
+- publish_date: 2026-07-10
+- author: Mirellé Team
+
+## SECTION 3 — CLUSTER SNAPSHOT
+SOLO MODE — omitted.
+
+## SECTION 4 — SERP ANALYSIS
+**Competitor gaps (2+ source validated):**
+- UV/LED lamp skin cancer + DNA damage risk — confirmed on 8+ authority sources (Cleveland Clinic, MD Anderson, Skin Cancer Foundation, Ohio State, Columbia HICCC, Geisinger, Nebraska Medicine, PMC study) but virtually absent from beauty-blog competitors (only 1 of 9 ranking posts mentions it in passing). **This is the single biggest differentiation opportunity.**
+- "Removal method matters more than product type" framing — present in top competitor (Erica's ATA) but not dermatologist-sourced; we can combine both angles.
+- Bacterial/hygiene risk of shared dip powder containers — mentioned on 3 sources (Purluxe, Mauve, Cleveland Clinic) but never explained mechanically (cross-contamination risk).
+- Biotin dosage specificity (2.5mg) — single strong source (Polish Pops), worth a supporting mention, not a headline claim.
+- No competitor structures content by "which nail condition are you starting with" (weak/thin vs healthy vs recovering) — Polish Pops gestures at this but doesn't organize the full post around it.
+
+**Missing semantic territory:** dermatologist-sourced skin cancer risk, cross-contamination/hygiene mechanics, condition-based decision framework (vs generic "here are 6 types" listicles), biotin evidence-basis.
+
+**Our strategic approach:** Lead with the myth-busting reframe competitors already touch ("it's not the product, it's the process") but back it with dermatologist/medical-authority sourcing on UV exposure that no beauty blog currently cites properly. Organize the post around the reader's actual starting nail condition rather than a flat product-by-product listicle, so it reads as genuinely decision-useful rather than a rehashed comparison table.
+
+**Top 3 word count estimate:** ~1500 words average (Erica's ATA ~1900, Purluxe ~1300, Mauve ~1300)
+**Top 3 keyword density baseline:** ~5 mentions average of "healthiest manicure" / "best manicure for nail health" variants across top 3 posts
+
+## SECTION 5 — AUDIENCE INTELLIGENCE
+**Who they are:** Women, mostly 20s-40s, who already get manicures regularly (not manicure novices) and have noticed damage — thinning, peeling, brittleness — after gel/dip/acrylic cycles. Some are actively recovering from damaged nails and searching defensively; others are prevention-minded before committing to a long-term routine.
+
+**What they want:** A straight answer to "which one won't wreck my nails" — but they're smart enough (per Quora/Reddit-adjacent language) to sense there's nuance. They want the honest mechanism, not just a verdict.
+
+**What frustrates them:** Every competitor post says "any manicure is fine if done correctly" and then fails to explain what "correctly" concretely means, or buries it under salon self-promotion (5 of 9 competitor posts end in a salon booking CTA, weakening trust). They're also frustrated by contradictory advice — gel is praised as "safe" and blamed as "damaging" across different posts with no resolution.
+
+**Top 5 pain points:**
+1. Nails visibly thinner/weaker after repeated gel or acrylic cycles, unsure if it's the product or their technique/tech
+2. Confusion over whether dip, gel, or acrylic is "worse" — every source ranks them differently
+3. Unaware UV lamp exposure has anything to do with skin health, not just nail health
+4. Don't know how to tell a good removal process from a damaging one
+5. Want long-lasting color/durability but keep hearing that means sacrificing nail health
+
+**Exact user phrases (from Quora/Pinterest research):**
+- "which manicure is actually healthiest for my nails"
+- "is gel bad for your nails"
+- "is a gel or dip manicure better for the health of my nails"
+- "what is the safest and healthiest manicure process"
+- "healthiest gel nails"
+- "what is a dry manicure"
+- "what do healthy nails look like"
+- "how to make weak nails stronger"
+- "5 healthiest/safest manicures that won't damage your nails"
+
+**Intent content signals:** Wants a direct verdict up top (not buried), responds to mechanism-based explanations ("it's the acetone, not the gel"), wants condition-specific guidance (weak nails vs healthy nails), skeptical of salon-branded content, receptive to medical/dermatologist citations as trust signal, prefers scannable structure over dense paragraphs.
+
+## SECTION 6 — SEMANTIC KEYWORD DATA
+- **primary_keyword:** best manicure type for nail health
+- **keyword_variations:** healthiest manicure type, best manicure for nail health, healthiest manicure for nails, best manicure for healthy nails, safest manicure type, least damaging manicure, healthiest nail treatment, best type of manicure for nails
+- **cluster_keywords:** gel manicure nail health, dip powder nail health, acrylic nail damage, structured gel builder gel, classic manicure nail health, natural manicure, BIAB nails, Gel-X soft gel tips, nail plate damage, acetone nail damage, UV lamp nail health, nail technician removal process, weak nail recovery, nail overlay
+- **lsi_terms:** nail plate, cuticle care, soak-off removal, over-filing, nail bed damage, chip resistance, biotin nail strength, non-toxic nail polish, 5-free 7-free polish, nail hardener, nail dehydration, keratin, nail thinning, UVA radiation, broad-spectrum sunscreen, subungual damage, nail lifting, MMA monomer, EMA gel, cross-contamination
+- **aeo_terms:** what is the healthiest type of manicure for your nails, is gel bad for your nails, is dip powder healthier than gel, do gel manicures cause skin cancer, how do I stop my nails getting weaker from manicures, what manicure is best for weak or damaged nails, is acrylic worse for nails than gel, how often should you take a break from manicures, can a manicure damage your nails, what's the safest way to remove gel nails
+- **technical_terms:** soak-off gel, builder gel/structured gel, monomer, polymer powder, UVA/UVB, acetone, nail plate, subungual, keratin, LED curing lamp
+- **user_language:** "wrecking my nails", "is gel bad for your nails", "which one is worse", "my nails are so thin now", "won't damage your nails", "healthiest gel nails", "what do healthy nails look like", "how to make weak nails stronger", "nails need a break"
+
+## SECTION 7 — VOICE AND AI QUERIES
+Answer each directly in its H2 body; unaddressed ones route to FAQ.
+1. What is the healthiest type of manicure for your nails?
+2. Is gel bad for your nails?
+3. Is dip powder healthier than gel or acrylic?
+4. Do gel manicures actually cause skin cancer?
+5. What's the least damaging way to remove gel or acrylic?
+6. How often should you take a break between manicures?
+7. What manicure is best if my nails are already weak or peeling?
+8. Is a classic/regular manicure actually the healthiest option?
+9. What's the difference between builder gel and regular gel for nail health?
+10. Does biotin actually help nail strength?
+11. Can you get skin cancer from a UV nail lamp?
+12. How do you know if a manicure is damaging your nails?
+13. Is dip powder unsanitary?
+14. What's the best manicure for nail growth?
+15. Should I switch manicure types to protect my nails?
+
+## SECTION 8 — HOOK AND CTR
+- **selected_trigger:** Trigger 1 — Curiosity Gap
+- **trigger_rationale:** Reader suspects competing sources are all wrong/contradictory and wants the real mechanism, not another ranked list — classic "what everyone gets wrong" territory.
+- **title:** Best Manicure Type for Nail Health: What Actually Matters (2026)
+- **title_char_count:** 59
+- **meta_description:** Gel, dip, or acrylic isn't the real question. Here's what dermatologists say actually damages nails — and the manicure routine that protects them.
+- **meta_char_count:** 148
+- **intro_hook_brief:** Open by naming the contradiction the reader has already noticed (every source ranks gel/dip/acrylic differently) — then reframe: the product was never the variable that mattered. Deliver the real answer (removal + UV exposure) as the promise of the piece.
+- **first_h2_hook_direction:** Phrase as a direct voice-search-style question ("Is It the Manicure Type or the Removal Process That Damages Your Nails?") — subtle curiosity payoff, not a title repeat.
+
+## SECTION 9 — SEARCH JOURNEY
+- **reader_arrival_state:** Slightly frustrated, has read conflicting advice already, wants a resolved answer rather than more ranked options.
+- **journey_arc:**
+  1. Acknowledge the contradiction they've hit elsewhere → reframe the real variable (process, not product)
+  2. Deliver the UV/dermatologist-backed risk info they haven't seen elsewhere (trust-building peak)
+  3. Walk through each manicure type's real risk profile concretely
+  4. Give condition-based guidance (weak nails vs healthy nails vs recovering)
+  5. Close with a simple actionable protocol they can use at their next appointment
+- **promise_to_deliver:** A resolved, dermatologist-informed answer to which manicure protects nail health — not another list that ends in "it depends."
+- **exit_state:** Confident and equipped — they know exactly what to ask their nail tech and what to avoid, regardless of which manicure type they choose.
+
+## SECTION 10 — CONTENT STRUCTURE
+**H1:** Best Manicure Type for Nail Health: What Actually Matters
+
+**H2 structure:**
+1. Is It the Manicure Type or the Removal Process That Damages Your Nails?
+2. Do Gel Manicures Increase Skin Cancer Risk? What Dermatologists Say
+3. Gel Manicures: Nail Health Verdict
+4. Dip Powder: Nail Health Verdict
+5. Acrylics: Nail Health Verdict
+6. Structured Gel (Builder Gel): The Middle Ground Option
+7. Classic Manicures: Still the Gentlest Choice
+8. Best Manicure by Nail Condition (Weak, Recovering, or Healthy Nails)
+9. How to Protect Your Nails No Matter Which Manicure You Choose
+10. Frequently Asked Questions
+
+**Word budget:**
+- Introduction: 220 words
+- H2-1 (curiosity reframe): 200 words
+- H2-2 (UV/skin cancer): 280 words (high complexity — needs careful dermatologist sourcing)
+- H2-3 Gel: 180 words
+- H2-4 Dip: 170 words
+- H2-5 Acrylic: 170 words
+- H2-6 Structured gel: 190 words
+- H2-7 Classic: 150 words
+- H2-8 By condition: 220 words
+- H2-9 Protection protocol: 200 words
+- FAQ: 120 words (unaddressed AEO terms only)
+- Conclusion: 180 words
+- Total: ~2080 words (within tolerance of 2100 target)
+
+## SECTION 11 — INTERNAL LINKS
+No cluster context provided — solo mode. Blog Gen Agent should insert 2-4 relevant internal links from the live site if available (e.g., posts on nail strengthening, gel manicure guides, at-home nail care) using descriptive, authority-passing anchor text. None hardcoded here since no site context was supplied for cross-site discovery.
+
+## SECTION 12 — VOICE AND TONE
+- **recommended_voice:** Confident educator — myth-busting but warm, not clinical
+- **tone_characteristics:** Direct and resolving (not wishy-washy "it depends"), evidence-citing without being dry, reassuring to readers currently anxious about nail damage, avoids salon-sales tone, respects reader's existing manicure knowledge
+- **language_style:** Second person ("your nails"), short declarative sentences for verdicts, slightly longer explanatory sentences for mechanism ("it's not the gel — it's what happens when it comes off"), no hedging filler
+- **audience_match:** This reader has already read vague competitor content; a voice that commits to clear verdicts (while still being accurate) rebuilds the trust generic "any manicure can be safe!" copy has eroded.
+
+## SECTION 13 — EXTERNAL LINKS
+1. url: https://health.clevelandclinic.org/can-ultraviolet-nail-salon-lamps-give-you-skin-cancer — context: UV lamp skin cancer risk section — anchor: "Cleveland Clinic dermatologists"
+2. url: https://www.skincancer.org/blog/ask-the-expert-are-the-uv-lamps-in-the-dryers-at-the-nail-salon-safe-to-use/ — context: sunscreen/protection recommendation — anchor: "The Skin Cancer Foundation"
+3. url: https://www.mdanderson.org/cancerwise/is-your-gel-manicure-safe.h00-159779601.html — context: risk-level context (low but present) — anchor: "MD Anderson Cancer Center"
+
+## SECTION 14 — EXECUTION PLAN
+
+### Block 1 — Keyword Execution
+- primary_keyword: "best manicure type for nail health"
+- top_3_density_baseline: 5
+- total_mention_target: 8 (baseline 5 + 3)
+- first_100_words_plan:
+  - mention_1: sentence 2 of introduction — naming the exact search question the reader typed
+  - mention_2: sentence 5-6 of introduction — reframing into the thesis (process > product)
+- first_half_target: 5 mentions — first ~1040 words
+- second_half_target: 3 mentions — remaining ~1040 words
+- strong_tag_rule: every one of the 8 mentions wrapped in `<strong>` tags, no exceptions
+- keywords_to_avoid_active: none (solo mode, no cluster constraints)
+
+### Block 2 — Word Budget
+- total_target: 2100 words (±50)
+- introduction: 220
+- conclusion: 180
+- h2_budgets:
+  1. Is It the Manicure Type or Removal Process — 200 — medium
+  2. UV/Skin Cancer Risk — 280 — high
+  3. Gel Verdict — 180 — low
+  4. Dip Verdict — 170 — low
+  5. Acrylic Verdict — 170 — low
+  6. Structured Gel — 190 — medium
+  7. Classic Manicure — 150 — low
+  8. Best by Condition — 220 — medium
+  9. Protection Protocol — 200 — medium
+  10. FAQ — 120 — low
+- tracking_rule: check running total after each H2; trim before moving on, don't compensate later
+
+### Block 3 — Image Plan
+- total_images: 9
+- hero_image: frontmatter only, never in body
+- body_images: 8
+- assignments:
+  1. after intro — clean, healthy natural nail close-up, editorial tone (sets "health first" visual thesis)
+  2. after H2-2 (UV section) — hands under LED lamp at salon, well-lit, non-alarming
+  3. after H2-3 (gel) — glossy gel manicure, neutral/nude tone
+  4. after H2-4 (dip) — dip powder manicure, matte or colored finish
+  5. after H2-5 (acrylic) — acrylic set, elegant shape, not overly long/dramatic
+  6. after H2-6 (structured gel) — natural-looking structured gel manicure, short-medium length
+  7. after H2-7 (classic) — bare/classic polish manicure, minimalist
+  8. after H2-8 (by condition) — hands receiving cuticle oil/nail care, recovery-coded image
+- image_type_rule: all body images = inspirational nail photography only. No infographics, no charts.
+- path_rule: /images/blog/nail-health/best-manicure-type-for-nail-health/filename.webp
+
+### Block 4 — Opening Technique Assignments
+(No two consecutive sections same technique; conclusion = Technique 1 or 3)
+- Introduction: Technique 1 — The Claim (state the myth-busting thesis directly)
+- H2-1: Technique 3 — The Reframe (reframe "which type" into "which process")
+- H2-2: Technique 2 — The Stat/Finding (open with the DNA-damage study finding)
+- H2-3 (Gel): Technique 1 — The Claim
+- H2-4 (Dip): Technique 3 — The Reframe
+- H2-5 (Acrylic): Technique 1 — The Claim
+- H2-6 (Structured Gel): Technique 3 — The Reframe
+- H2-7 (Classic): Technique 1 — The Claim
+- H2-8 (By Condition): Technique 2 — The Stat/Finding (open with the "how many manicures average person gets per year" style stat if available, else reader-condition framing)
+- H2-9 (Protection Protocol): Technique 3 — The Reframe
+- Conclusion: Technique 1 — The Claim
+- banned_opener_rule: check every opener against Blog Gen Agent's banned_opening_approaches before finalizing second sentence
+
+### Block 5 — Link Placements
+No cluster links available (solo mode). External links per Section 13, placed as:
+- Cleveland Clinic — inside H2-2, sentence discussing dermatologist quote on UV/cell damage
+- Skin Cancer Foundation — inside H2-2, sentence on sunscreen/fingerless glove protection
+- MD Anderson — inside H2-2, sentence contextualizing risk as "low but not zero"
+
+### Block 6 — AEO/GEO Plan
+- aeo_assignments:
+  1. "What is the healthiest type of manicure for your nails?" → H2-1 → direct 2-3 sentence answer immediately after heading
+  2. "Do gel manicures cause skin cancer?" → H2-2 → direct answer immediately after heading, cite Cleveland Clinic/MD Anderson
+  3. "Is dip powder healthier than gel?" → H2-4 → direct answer after heading
+  4. "What manicure is best for weak or damaged nails?" → H2-8 → direct answer after heading
+- geo_entity_statements:
+  1. entity: "structured gel (builder gel)" → H2-6 → clear declarative definition: what it is, how it differs from standard gel polish
+  2. entity: "UVA radiation" → H2-2 → clear declarative definition distinguishing it from UVB, why nail lamps use it
+
+### Block 7 — Active Constraints
+- em_dash_banned: yes, enforce throughout
+- banned_vocab_watch: "elevate," "unlock," "seamless," "game-changer," "delve," "in today's world," "at the end of the day"
+- british_english_active: colour, recognise, -ise, -our — every instance
+- keyword_density_reminder: check count after every 2 H2s, front-load density in first half
+- image_path_reminder: /images/blog/nail-health/best-manicure-type-for-nail-health/filename.webp
+- internal_link_url_reminder: full paths only, never bare slugs
+- hero_image_reminder: frontmatter only
+- strong_tag_reminder: scan after every paragraph for the 8 primary keyword mentions
