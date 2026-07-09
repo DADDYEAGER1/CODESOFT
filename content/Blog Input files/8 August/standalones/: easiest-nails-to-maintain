@@ -1,0 +1,227 @@
+# BLOG GEN AGENT INPUT FILE
+**MODE: SOLO — no cluster_context.json. No cluster locks apply.**
+
+## SECTION 1 — FILE AUTHORITY
+THIS FILE IS THE SINGLE SOURCE OF TRUTH FOR THE BLOG GEN AGENT. All POST_CONSTANTS are hardcoded — do not ask, adjust, or override. All keywords, H2 structure, audience intelligence, internal links, and tone must be followed exactly.
+
+## SECTION 2 — POST_CONSTANTS
+- slug: `easiest-nails-to-maintain`
+- topic_slug: `nail-care-guide` (solo mode — generated, not cluster-sourced)
+- canonical: `https://mirelleinspo.com/blog/nail-care-guide/easiest-nails-to-maintain`
+- post_type: standalone
+- intent: informational (decision-support subtype)
+- word_count: **2400** (top-3 SERP average ≈2100–2300 words across shape/type guides; set above floor, within 3500 ceiling)
+- image_count: **9** (Rule 5 — everything else; no X+ slug pattern, not pillar, not tutorial, not comparison-labeled)
+- template: center
+- hero_dimensions: 1200x630
+- category: Nail Care Guide
+- publish_date: 2026-07-10
+- author: Mirellé Team
+
+## SECTION 3 — CLUSTER SNAPSHOT
+N/A — solo mode, omitted.
+
+## SECTION 4 — SERP ANALYSIS
+**competitor_gaps** (demand confirmed 2+ sources):
+- No competitor ranks nail TYPE (gel/acrylic/dip/press-on/natural) AND shape AND color in one decisive ranked resource — confirmed via SERP split (GelBottle=shapes only; TheBeautyFoodie/Nagaia=type-durability only; Pinterest/YouTube=visual-only)
+- "Which is actually easiest" comparative ranking absent — most content lists options without ranking effort-to-maintain
+- Soap nails / jelly nails as a *maintenance-hiding* color strategy (not just trend piece) — confirmed on Byrdie-adjacent (Insiderlyfe/Byrdie-credited), Pinterest, Greenweddingshoes
+- Real routine time-cost (minutes/week) missing from all competitor content — confirmed gap via Quora + Purluxe (only vague "quick" claims, no numbers)
+
+**missing_semantic_territory:** "grow-out forgiveness," "chip visibility," "regrowth line," "natural nail vs. enhancement trade-off for busy people" — absent from top results, all demand-validated via Quora/Pinterest phrasing
+
+**our_strategic_approach:** Rank nail types AND shapes by actual upkeep burden (not preference), give real time/frequency numbers, and pair the most forgiving shape+color+type combinations — filling the gap between generic shape lists and vague "busy people" durability posts.
+
+**top_3_word_count_estimates:** ~2150 words average
+**top_3_keyword_density_baseline:** ~7 mentions average
+
+## SECTION 5 — AUDIENCE INTELLIGENCE
+**who_they_are:** Time-constrained women (professionals, parents, students) comparing nail options before committing money/time — not beginners to nails generally, but undecided on *this specific* low-effort angle. Often deciding between natural nails, gel, and press-ons.
+
+**what_they_want:** A clear, decisive answer — not "it depends," but a ranked recommendation with reasoning they can act on same-week.
+
+**what_frustrates_them:** Vague "quick and easy" marketing copy with no real numbers; shape-only or type-only advice that ignores the other half of the decision; being told to "ask your nail tech" instead of getting a real answer.
+
+**top_5_pain_points:**
+1. Nails chip/break within days despite paying for a manicure
+2. Regrowth line makes nails look "done" again within a week
+3. Uncertainty whether to go natural, gel, or press-on for lowest effort
+4. No time for 2-week salon fill schedules
+5. Fear of picking a shape/color that shows wear immediately
+
+**exact_user_phrases:** "which is easier to apply and maintain," "quick and effective ways," "don't have to choose between beauty and convenience," "low maintenance is for rookies," "busy girl," "grows out gracefully," "hides grow-out and chips beautifully," "easy to care for," "less noticeable" (re: chips), "effortless"
+
+**intent_content_signals:** Wants ranked/definitive answers, real time estimates, shape+color+type combined, short skimmable sections, practical over aspirational tone, DIY-friendly options flagged clearly.
+
+## SECTION 6 — SEMANTIC KEYWORD DATA
+**primary_keyword:** easiest nails to maintain (LOCKED)
+**keyword_variations:** low maintenance nails, easiest nail type to maintain, low upkeep nails, nails that require the least maintenance, easy care nail ideas, lowest maintenance manicure, easy to take care of nails, minimal upkeep nail shapes
+**cluster_keywords:** low maintenance nail shapes, low maintenance nail colors, gel vs acrylic vs dip maintenance, round nail shape maintenance, squoval nail shape, soap nails, chip-resistant nails, grow-out forgiving nails, at-home gel nails, press on nails maintenance
+**lsi_terms:** nail chip resistance, regrowth line, nail fill schedule, cuticle oil routine, buffing routine, neutral polish shades, short nail durability, nail bed strength, DIY manicure upkeep, salon fill appointment, nail growth rate, top coat reapplication, gel polish lifespan, acrylic lifting, nail breakage prevention
+**aeo_terms:** "what type of nails are the easiest to maintain," "what nail shape requires the least maintenance," "how often do I need to redo low maintenance nails," "are gel nails or acrylic nails easier to maintain," "what nail colors hide chips best," "can natural nails be low maintenance," "how long do low maintenance nails last," "what is the easiest nail shape to keep neat"
+**technical_terms:** soak-off gel, builder gel, BIAB, dip powder, nail fill, cuticle oil, squoval, free edge
+**user_language:** "busy girl nails," "low maintenance is for rookies," "grows out gracefully," "hides chips beautifully," "quick and effective," "don't have time," "easy to care for," "effortless," "no fuss"
+
+## SECTION 7 — VOICE AND AI QUERIES
+1. What type of nails are the easiest to maintain?
+2. What nail shape requires the least maintenance?
+3. Are gel nails or acrylic nails easier to take care of?
+4. How often do low maintenance nails need to be redone?
+5. What nail colors hide chips the best?
+6. Can natural nails be considered low maintenance?
+7. Is dip powder easier to maintain than gel?
+8. What is the easiest nail shape to keep looking neat?
+9. Do press-on nails count as low maintenance?
+10. How long does a low maintenance manicure actually last?
+11. What nail length is easiest to maintain?
+12. Why do my nails chip so fast even with gel polish?
+13. What is the best low maintenance nail routine for busy people?
+14. Do round nails last longer than square nails?
+15. What's the easiest way to keep nails looking good without a salon?
+
+## SECTION 8 — HOOK AND CTR
+**selected_trigger:** Trigger 1 — Curiosity Gap
+**trigger_rationale:** Reader suspects they're choosing the wrong type/shape and wasting money on manicures that don't survive the week — matches decision-mode search intent exactly.
+**title:** "The Easiest Nails to Maintain (Ranked by Real Upkeep)"
+**title_char_count:** 58
+**meta_description:** "Tired of nails that chip in days? See which nail type and shape actually need the least upkeep, ranked with real timeframes, not vague promises."
+**meta_char_count:** 148
+**intro_hook_brief:** Open by naming the real frustration — paying for a manicure that looks done within a week — then promise a ranked, honest answer instead of another vague "quick and easy" list.
+**first_h2_hook_direction:** Phrase as a direct voice-search-style question resolving the core uncertainty: which nail type is actually lowest effort, answered immediately and definitively.
+
+## SECTION 9 — SEARCH JOURNEY
+**reader_arrival_state:** Frustrated and slightly skeptical — has tried "low maintenance" advice before and it didn't hold up; wants a real, decisive answer this time.
+**journey_arc:**
+- Acknowledge the exact frustration (nails that don't survive the week)
+- Resolve the biggest decision first: nail type ranked by upkeep
+- Narrow into shape (which shapes reduce breakage and visible wear)
+- Narrow into color (which shades hide chips and grow-out)
+- Close with a combined recommendation and simple routine
+**promise_to_deliver:** A definitive, ranked answer for which nail type + shape + color combination requires the least ongoing effort — not another list of vague tips.
+**exit_state:** Confident and decided — knows exactly what to request at their next appointment or do at home.
+
+## SECTION 10 — CONTENT STRUCTURE
+**h1:** The Easiest Nails to Maintain: Ranked by Real Upkeep, Not Guesswork
+**h2_structure:**
+1. What Type of Nails Are Actually the Easiest to Maintain?
+2. Gel vs. Acrylic vs. Dip vs. Press-On: Which Needs the Least Upkeep?
+3. The Easiest Nail Shapes to Keep Looking Neat
+4. Low Maintenance Nail Colors That Hide Chips and Grow-Out
+5. How Long Do Low Maintenance Nails Actually Last?
+6. The Simplest At-Home Routine to Stretch Time Between Appointments
+7. Easiest Nails to Maintain for Specific Lifestyles (Active, Office, Parenting)
+8. Common Low Maintenance Nail Mistakes to Avoid
+
+**word_budget:**
+- introduction: 220
+- H2-1: 320 (high complexity — core answer)
+- H2-2: 380 (high complexity — comparison table territory)
+- H2-3: 300
+- H2-4: 260
+- H2-5: 220
+- H2-6: 280
+- H2-7: 260
+- H2-8: 200
+- conclusion: 180 (Total ≈2420, within ±50 tolerance of 2400)
+
+## SECTION 11 — INTERNAL LINKS
+1. url: /nail-faqs/what-are-the-5-basic-nail-shapes-and-which-is-best-for-me | title: What Are the 5 Basic Nail Shapes and Which Is Best for Me? | anchor: "the complete breakdown of all five nail shapes and how they hold up" | placement: H2-3 | type: cross-site
+2. url: /work-nails/nail-shapes-for-work | title: Nail Shapes for Work: The Professional Guide 2026 | anchor: "which shapes stay neat longest between salon visits" | placement: H2-3 | type: cross-site
+3. url: /nail-faqs/how-often-should-you-trim-your-nails-for-health | title: How Often Should You Trim Your Nails for Health? | anchor: "how often you actually need to trim for healthy growth" | placement: H2-6 | type: cross-site
+4. url: /blog/spring-nail-trends-2026 | title: Spring Nail Trends 2026 | anchor: "the soap nail trend that hides grow-out better than almost anything else" | placement: H2-4 | type: cross-site
+
+(4 links total — within 4–6 cap; all cross-site discovery since solo mode has no cluster links. Descriptive, authority-passing anchors per rule.)
+
+## SECTION 12 — VOICE AND TONE
+**recommended_voice:** Confident, no-nonsense educator
+**tone_characteristics:** Direct, decisive, practical, mildly reassuring, zero fluff or filler enthusiasm
+**language_style:** Short sentences, second person ("you"), concrete numbers over vague claims, occasional dry humor about "quick and easy" marketing overpromises
+**audience_match:** This reader has been burned by vague low-maintenance advice before — a voice that gives real numbers and ranks options builds trust faster than an aspirational or overly warm tone would.
+
+## SECTION 13 — EXTERNAL LINKS
+1. url: (site:nailpro.com nail durability coverage — no specific indexed article surfaced in research; use general nailpro.com reference if written) | context: durability/industry credibility | anchor: "industry testing on nail enhancement durability"
+2. url: (site:byrdie.com soap nails coverage referenced via Insiderlyfe credit) | context: soap nail trend credibility | anchor: "the soap nail trend Byrdie identified as the low-maintenance manicure of the year"
+
+Note: direct byrdie.com/allure.com articles did not surface in indexed search for this exact keyword — flagged as weak/unconfirmed sources per validation_rule. Do not fabricate URLs; verify before publishing or omit.
+
+## SECTION 14 — EXECUTION PLAN
+
+### Block 1 — Keyword Execution
+- primary_keyword: easiest nails to maintain
+- top_3_density_baseline: 7
+- total_mention_target: **9** (7 + 2)
+- first_100_words_plan: mention_1 = sentence 2 of intro (naming the topic directly); mention_2 = sentence 4–5 of intro (setting up the promise)
+- first_half_target: 5 mentions — first 1200 words
+- second_half_target: 4 mentions — remaining 1200 words
+- strong_tag_rule: every one of the 9 mentions wrapped in `<strong>` tags, no exceptions
+- keywords_to_avoid_active: N/A (solo mode, no cluster list)
+
+### Block 2 — Word Budget
+- total_target: 2400 words (±50)
+- introduction: 220
+- conclusion: 180
+- h2_budgets:
+  1. What Type of Nails Are Actually the Easiest to Maintain? — 320 — high
+  2. Gel vs. Acrylic vs. Dip vs. Press-On — 380 — high
+  3. The Easiest Nail Shapes to Keep Looking Neat — 300 — medium
+  4. Low Maintenance Nail Colors — 260 — medium
+  5. How Long Do Low Maintenance Nails Actually Last? — 220 — low
+  6. The Simplest At-Home Routine — 280 — medium
+  7. Easiest Nails for Specific Lifestyles — 260 — medium
+  8. Common Low Maintenance Nail Mistakes to Avoid — 200 — low
+- tracking_rule: check running total after every H2; cut before proceeding if over.
+
+### Block 3 — Image Plan
+- total_images: 9
+- hero_image: frontmatter only, never in body
+- body_images: 8
+- assignments:
+  1. place_after: intro — context: hands with a clean, simple neutral manicure, no props
+  2. place_after: H2-1 — context: close-up of natural short nails, healthy and glossy
+  3. place_after: H2-2 — context: side-by-side hand shots implying gel vs. press-on finish (no text overlay)
+  4. place_after: H2-3 — context: round or squoval short nail shape, clean filing
+  5. place_after: H2-4 — context: soap nail / milky sheer polish manicure
+  6. place_after: H2-5 — context: nails at 2-week grow-out stage still looking neat
+  7. place_after: H2-6 — context: simple at-home routine flatlay (cuticle oil, buffer) — hands only, no product branding
+  8. place_after: H2-7 — context: hands in an active/everyday context (typing, holding a bag) showing durable manicure
+  9. place_after: H2-8 — context: clean, finished low-maintenance manicure as a closing visual
+- image_type_rule: all inspirational nail design images only — no infographics, no charts
+- path_rule: /images/blog/nail-care-guide/easiest-nails-to-maintain/filename.webp
+
+### Block 4 — Opening Technique Assignments
+- Introduction: Technique 1 (The Claim)
+- H2-1: Technique 3 (The Reframe)
+- H2-2: Technique 2 (contrast/comparison open)
+- H2-3: Technique 1 (The Claim)
+- H2-4: Technique 3 (The Reframe)
+- H2-5: Technique 1 (The Claim)
+- H2-6: Technique 2
+- H2-7: Technique 3 (The Reframe)
+- H2-8: Technique 1 (The Claim)
+- Conclusion: Technique 1 (The Claim)
+(No two consecutive sections repeat; conclusion = T1)
+
+### Block 5 — Link Placements
+1. anchor: "the complete breakdown of all five nail shapes and how they hold up" — url: https://mirelleinspo.com/nail-faqs/what-are-the-5-basic-nail-shapes-and-which-is-best-for-me — section: H2-3 — context: when introducing shape comparison — type: cross-site
+2. anchor: "which shapes stay neat longest between salon visits" — url: https://mirelleinspo.com/work-nails/nail-shapes-for-work — section: H2-3 — context: reinforcing durability angle — type: cross-site
+3. anchor: "how often you actually need to trim for healthy growth" — url: https://mirelleinspo.com/nail-faqs/how-often-should-you-trim-your-nails-for-health — section: H2-6 — context: within routine steps — type: cross-site
+4. anchor: "the soap nail trend that hides grow-out better than almost anything else" — url: https://mirelleinspo.com/blog/spring-nail-trends-2026 — section: H2-4 — context: color/trend recommendation — type: cross-site
+
+### Block 6 — AEO/GEO Plan
+- aeo_assignments:
+  1. "What type of nails are actually the easiest to maintain?" → H2-1 → direct 2–3 sentence answer immediately after heading
+  2. "What is the easiest nail shape to keep looking neat?" → H2-3 → direct answer immediately after heading
+  3. "How long do low maintenance nails actually last?" → H2-5 → direct answer immediately after heading
+- geo_entity_statements:
+  1. entity: soap nails — assigned_to: H2-4 — execution: clear declarative definition (sheer, glossy, translucent polish finish that hides regrowth)
+  2. entity: squoval shape — assigned_to: H2-3 — execution: clear declarative definition (square shape with rounded corners, combines structure and softness)
+
+### Block 7 — Active Constraints
+- em_dash_banned: yes, replace with comma/parentheses/restructure
+- banned_vocab_watch: "elevate," "seamless," "game-changer," "unlock," "journey," "effortlessly chic," "must-have," "level up"
+- british_english_active: colour, recognise, -ise, -our — every instance
+- keyword_density_reminder: check count after every 2 H2s, track toward 9 total, denser in first half
+- image_path_reminder: /images/blog/nail-care-guide/easiest-nails-to-maintain/filename.webp
+- internal_link_url_reminder: full https://mirelleinspo.com/... paths only
+- hero_image_reminder: frontmatter only
+- strong_tag_reminder: scan after every paragraph, all 9 mentions tagged
