@@ -1,0 +1,242 @@
+# INPUT FILE — HEMA Allergy Symptoms (Post 3 of 7, HEMA Allergy Cluster)
+CLUSTER MODE — cluster context loaded (cliuster_7). Research executed via live web/site: searches (Google SERP, Quora, SalonGeek, YouTube, NailPro, AAFA, PMC).
+
+## SECTION 1 — FILE AUTHORITY
+This file is the single source of truth for Blog Gen Agent. All POST_CONSTANTS are hardcoded. Nothing overridden except the user's explicit session override below.
+
+**USER OVERRIDE (this session):** image_count = 1 (hero only). Zero body images. This replaces the standard "everything else" rule (would normally be 9). Blog Gen Agent places NO images in the body.
+
+## SECTION 2 — POST_CONSTANTS
+- slug: hema-allergy-symptoms
+- topic_slug: hema-allergy-nails
+- canonical: https://mirelleinspo.com/blog/hema-allergy-nails/hema-allergy-symptoms
+- post_type: spoke
+- intent: informational (decision_mode search behavior — recognition/diagnosis-adjacent)
+- word_count: 1900 (top-3 competitor average ~1750–2000 words; set at 1900, within spoke ceiling of 2800)
+- image_count: **1** (hero only — USER OVERRIDE, hard confirmed, no exceptions)
+- template: split-left
+- hero_dimensions: 800x800
+- category: Nail Health & Safety
+- publish_date: 2026-07-09
+- author: Mirellé Team
+
+## SECTION 3 — CLUSTER SNAPSHOT
+- pillar_slug: what-is-hema-nail-products
+- pillar_title: What Is HEMA in Nail Products? (And What HEMA-Free Actually Means)
+- pillar_primary_keyword: what is HEMA in nail polish
+- this_post_slug: hema-allergy-symptoms
+- this_post_role: spoke
+- keywords_to_avoid: what is HEMA in nail polish; is HEMA banned; is HEMA free gel polish as good as regular; HEMA free gel polish brands; HEMA vs TPO free gel polish; how to avoid HEMA allergy
+
+## SECTION 4 — SERP ANALYSIS
+**Competitor gaps (2+ source validated):**
+- No competitor clearly distinguishes allergy vs. infection vs. simple irritation at symptom level — validated on SalonGeek + NashlyNails + AAFA (readers repeatedly ask "how do I know if it's an allergy or something else").
+- Timeline of onset (hours vs. days vs. weeks after exposure) is mentioned but never laid out clearly step-by-step — validated on Manucurist + NashlyNails.
+- Cross-reactivity risk (HEMA allergy → other methacrylates) rarely explained in consumer-facing symptom content — validated on SalonGeek (multiple threads) + Manucurist.
+- "Is it getting worse each time" progressive pattern — validated on Quora threads + SalonGeek threads.
+
+**Missing semantic territory:** onset window, cross-reactivity/"gateway allergen" framing, subtle/early-stage signs vs. dramatic reaction, distinguishing from fungal/bacterial infection.
+
+**Our strategic approach:** Give readers a clear, validating symptom checklist that takes them from "is this normal irritation or an allergy" to "here's what to do next" — grounded in real patterns reported by sufferers and salon pros, without diagnosing. Fill the gap competitors skip: how to tell allergy apart from infection or simple over-filing irritation.
+
+**Image count validation:** N/A — user has overridden to hero-only; no body visual pattern validation needed.
+
+## SECTION 5 — AUDIENCE INTELLIGENCE
+**Who they are:** Regular gel/BIAB clients or DIYers, mid-reaction or newly post-manicure, noticing something "off" with their cuticles/fingertips and searching to self-identify before deciding whether to see someone.
+
+**What they want:** A clear, recognizable symptom list they can match against their own hands right now, plus reassurance they're not overreacting (or under-reacting).
+
+**What frustrates them:** Product-forward articles that mention symptoms in passing then pivot to a sales pitch; medical-jargon-only sources (AAFA) that don't speak to the gel-manicure context specifically.
+
+**Top 5 pain points:**
+1. Can't tell if it's an allergy, an infection, or just irritation from filing/cuticle work.
+2. Symptoms started subtly (mild itch) and they dismissed it, now it's worse.
+3. Worried the reaction will get worse with each subsequent manicure.
+4. Confused about how fast symptoms should appear (same day? days later?).
+5. Anxious that this means giving up gel manicures forever.
+
+**Exact user phrases (from Quora/SalonGeek):** "itchy fingers, cuticles mainly"; "burning around the nail bed"; "my cuticles feel hot"; "waking up scratching my fingers"; "nails detaching from your skin or falling off"; "severe itching and swelling of my finger tips"; "flu-like symptoms"; "the nails start to feel itchy at the nail bed level."
+
+**Intent content signals:** wants a scannable checklist, not a wall of text; wants timeline context; wants the allergy-vs-infection distinction spelled out; responds to reassurance-first tone rather than alarmist framing; wants a clear next step (not a diagnosis).
+
+## SECTION 6 — SEMANTIC KEYWORD DATA
+- primary_keyword: HEMA allergy symptoms
+- keyword_variations: symptoms of HEMA allergy, gel nail allergy symptoms, signs of a HEMA allergy, HEMA allergic reaction symptoms, gel manicure allergy signs
+- cluster_keywords: allergic contact dermatitis nails, itchy cuticles after gel, nail lifting allergy, gel polish rash fingers, methacrylate allergy signs, swollen fingertips gel manicure, gateway allergen nails, cross-reactivity acrylates
+- lsi_terms: contact dermatitis, sensitization, uncured gel, onycholysis, patch test, immune response, allergen exposure, cuticle irritation, nail plate lifting, blistering fingertips, delayed reaction, methacrylate monomer, gel polish rash, allergy vs infection nails
+- aeo_terms: What are the first signs of a HEMA allergy?; How long after a gel manicure do allergy symptoms appear?; How do I know if my nail reaction is an allergy or an infection?; Can HEMA allergy symptoms get worse over time?; Does a HEMA allergy always cause blistering?; What does a HEMA allergic reaction look like on the skin?; Can you be allergic to HEMA and not know it?
+- technical_terms: 2-Hydroxyethyl Methacrylate, allergic contact dermatitis, sensitization, cross-reactivity, methacrylate, onycholysis, patch testing
+- user_language: itchy fingers cuticles mainly, burning around the nail bed, cuticles feel hot, scratching my fingers at night, nails detaching from skin, swelling of my finger tips, flu-like symptoms, nail bed burns
+
+## SECTION 7 — VOICE & AI QUERIES
+1. What are the first signs of a HEMA allergy?
+2. How long after a gel manicure do HEMA allergy symptoms show up?
+3. Can a HEMA allergy start with just mild itching?
+4. How do I know if my cuticles are itchy from allergy or irritation?
+5. Does a HEMA allergy get worse every time I get gel nails?
+6. What does HEMA allergic contact dermatitis look like?
+7. Can HEMA allergy cause my nail to lift off the nail bed?
+8. Is nail swelling always a sign of allergy?
+9. How do I tell if it's an allergy or an infection?
+10. Can HEMA allergy symptoms spread beyond my fingers?
+11. What is a "gateway allergen" and does HEMA count as one?
+12. Do symptoms disappear if I stop using gel polish?
+13. Can I develop a HEMA allergy after years of no reaction?
+14. What's the difference between irritation and an actual allergic reaction to gel?
+15. Should I see a dermatologist for gel nail allergy symptoms?
+16. Can uncured gel polish cause a delayed reaction days later?
+
+## SECTION 8 — HOOK & CTR
+- selected_trigger: Trigger 1 — Curiosity Gap
+- trigger_rationale: Reader suspects something is wrong with their hands post-manicure but isn't sure what, or whether it's serious — curiosity/uncertainty resolution fits decision_mode perfectly.
+- title: HEMA Allergy Symptoms: The Signs Your Gel Is To Blame
+- title_char_count: 56
+- meta_description: Itchy cuticles or lifting nails after gel? Here's how HEMA allergy symptoms actually show up—and how to tell allergy from irritation.
+- meta_char_count: 134
+- intro_hook_brief: Open by naming the exact subtle sensation readers are Googling mid-reaction (itchy cuticle, warm fingertip) and validate that this is a real, recognized pattern — not an overreaction.
+- first_h2_hook_direction: Phrase the first H2 as a direct voice-search question ("What Does a HEMA Allergic Reaction Actually Look Like?") so it doubles as an AEO-ready answer block.
+
+## SECTION 9 — SEARCH JOURNEY
+- reader_arrival_state: Mildly alarmed, mid-reaction or just post-manicure, trying to self-diagnose before deciding whether to worry.
+- journey_arc:
+  1. Validate the sensation they're already feeling (opening hook)
+  2. Lay out the full symptom picture, from subtle to severe
+  3. Give the onset timeline so they can place themselves in it
+  4. Resolve the allergy-vs-irritation-vs-infection confusion definitively
+  5. Point to what happens next (without diagnosing)
+- promise_to_deliver: A clear, recognizable answer to "is this a HEMA allergy" based on real, documented symptom patterns.
+- exit_state: Reassured and informed — they know what they're looking at and what to do next, without panic.
+
+## SECTION 10 — CONTENT STRUCTURE
+h1: HEMA Allergy Symptoms: The Signs Your Gel Is To Blame
+
+h2_structure:
+1. What Does a HEMA Allergic Reaction Actually Look Like? (300 words)
+2. The Early, Easy-to-Miss Warning Signs (250 words)
+3. How Long After a Gel Manicure Do Symptoms Appear? (250 words)
+4. Allergy, Irritation, or Infection: How to Tell the Difference (300 words)
+5. Why Symptoms Often Get Worse With Each Manicure (200 words)
+6. Can the Reaction Spread Beyond Your Fingertips? (150 words)
+7. What to Do If You Recognize These Symptoms (200 words)
+
+word_budget:
+- introduction: 220 words
+- conclusion: 180 words
+- per_h2: as listed above (total ≈1650) + intro/conclusion ≈ 2050 → trimmed evenly to hit 1900 target (~130 words trimmed across sections 1, 4, 5 proportionally)
+
+## SECTION 11 — INTERNAL LINKS
+blog_gen_instruction: Cluster links verbatim, mandatory. No cross-site links included — this cluster is HIGH-CPC/ads-only with gallery disabled and no product recommendations, and no genuinely relevant non-commercial mirelleinspo.com page was found (all discovered matches were shop/product pages, excluded per cluster monetization rules).
+
+all_internal_links:
+1. url_or_slug: /blog/hema-allergy-nails/what-is-hema-nail-products
+   title: What Is HEMA in Nail Products? (And What HEMA-Free Actually Means)
+   anchor_text: what HEMA is in nail products
+   placement_note: Section 1, when first introducing HEMA as the causative ingredient
+   link_type: cluster-pillar
+2. url_or_slug: /blog/hema-allergy-nails/how-to-avoid-hema-allergy
+   title: How Nail Techs and DIYers Can Reduce HEMA Allergy Risk
+   anchor_text: how to reduce your risk of a HEMA allergy
+   placement_note: Section 7, in the "what to do next" close
+   link_type: cluster-spoke
+
+## SECTION 12 — VOICE & TONE
+- recommended_voice: Warm, calm expert — a knowledgeable friend, not a dermatologist and not a salesperson
+- tone_characteristics: Reassuring first, informative second; validating without alarmism; direct sentence structure; second-person throughout; zero fear-mongering language; confident but never diagnostic
+- language_style: Short, clear sentences. Frequent "you." No hedging like "might possibly." State symptom patterns plainly, then immediately validate the reader's experience.
+- audience_match: This reader is anxious and self-diagnosing mid-symptom — the voice needs to lower anxiety while still being useful and specific, matching the informational/decision_mode arrival state.
+
+## SECTION 13 — EXTERNAL LINKS
+1. url: https://community.aafa.org/db/ask-the-allergist/record/am-i-allergic-to-gel-nails-nail-polish
+   context: When explaining what allergic contact dermatitis is and how it differs from a type 1 allergy
+   anchor_suggestion: Asthma and Allergy Foundation of America's overview of gel nail allergic reactions
+2. url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12318905/
+   context: When citing that 2-HEMA is recognized clinically as the marker allergen for methacrylate contact allergy
+   anchor_suggestion: peer-reviewed research on 2-HEMA contact allergy trends
+3. url: https://www.nailpro.com/health/article/22887614/vb-cosmetics-dazzle-dry-nail-lacquer-concerns-about-nail-allergens
+   context: When discussing rising industry awareness of nail allergens and safe salon practice
+   anchor_suggestion: NailPro's professional insight on nail allergen concerns
+
+## SECTION 14 — EXECUTION PLAN
+
+### Block 1 — Keyword Execution
+- primary_keyword: HEMA allergy symptoms
+- top_3_density_baseline: 9 mentions (estimated average across Tones, Manucurist, NashlyNails articles)
+- total_mention_target: 12 (baseline 9 + 3)
+- first_100_words_plan:
+  - rule: Primary keyword must appear twice in first 100 words
+  - mention_1: sentence 2 of intro — naming the topic directly after the opening validation hook
+  - mention_2: sentence 4–5 of intro — reinforcing what the post will cover
+- first_half_target: 7 mentions — first ~950 words (Sections 1–3)
+- second_half_target: 5 mentions — second ~950 words (Sections 4–7 + conclusion)
+- strong_tag_rule: Every one of the 12 mentions wrapped in `<strong>` tags. Scan after each paragraph.
+- keywords_to_avoid_active: see Section 3 list — never used as focus terms
+
+### Block 2 — Word Budget
+- total_target: 1900 words (±50 tolerance, never exceed 1950)
+- introduction: 220 words
+- conclusion: 180 words
+- h2_budgets:
+  1. What Does a HEMA Allergic Reaction Actually Look Like? — 280 words — medium
+  2. The Early, Easy-to-Miss Warning Signs — 230 words — medium
+  3. How Long After a Gel Manicure Do Symptoms Appear? — 230 words — medium
+  4. Allergy, Irritation, or Infection: How to Tell the Difference — 280 words — high
+  5. Why Symptoms Often Get Worse With Each Manicure — 190 words — low
+  6. Can the Reaction Spread Beyond Your Fingertips? — 140 words — low
+  7. What to Do If You Recognize These Symptoms — 150 words — low
+- tracking_rule: Check running total after every H2. If over, cut before proceeding — never compensate later.
+
+### Block 3 — Image Plan (USER OVERRIDE ACTIVE)
+- total_images: 1
+- hero_image: frontmatter only — never in body
+- body_images: 0 — NO images placed anywhere in the post body. This overrides the standard "everything else" rule of 9 images.
+- assignments: none — body_images is zero by explicit user confirmation
+- image_type_rule: N/A (no body images this post)
+- path_rule: /images/blog/hema-allergy-nails/hema-allergy-symptoms/filename.webp (hero only)
+
+### Block 4 — Opening Technique Assignments
+- Introduction: Technique 1 — The Claim (state plainly what's likely happening, validate immediately)
+- Section 1 (What Does It Look Like): Technique 2 — The Scene (describe the physical sensation in second person)
+- Section 4 (Allergy vs Irritation vs Infection): Technique 3 — The Reframe (challenge the assumption that "it's probably just irritation")
+- Conclusion: Technique 1 — The Claim (restate the clear takeaway)
+
+### Block 5 — Link Placements
+1. anchor_text: what HEMA is in nail products
+   full_url: /blog/hema-allergy-nails/what-is-hema-nail-products
+   place_in_section: Section 1
+   placement_context: When naming HEMA as the ingredient responsible for the reaction
+   link_type: cluster-pillar
+2. anchor_text: how to reduce your risk of a HEMA allergy
+   full_url: /blog/hema-allergy-nails/how-to-avoid-hema-allergy
+   place_in_section: Section 7
+   placement_context: In the closing "what to do next" guidance
+   link_type: cluster-spoke
+
+### Block 6 — AEO/GEO Plan
+aeo_assignments:
+1. aeo_term: What are the first signs of a HEMA allergy?
+   assigned_to_section: Section 2 (Early Warning Signs)
+   execution: Direct 2–3 sentence answer immediately after H2, before elaboration
+2. aeo_term: How long after a gel manicure do HEMA allergy symptoms appear?
+   assigned_to_section: Section 3 (Timeline)
+   execution: Direct 2–3 sentence answer immediately after H2
+3. aeo_term: How do I know if my nail reaction is an allergy or an infection?
+   assigned_to_section: Section 4 (Allergy vs Irritation vs Infection)
+   execution: Direct 2–3 sentence answer immediately after H2
+
+geo_entity_statements:
+1. entity: Allergic contact dermatitis
+   assigned_to_section: Section 1
+   execution: Clear declarative definition sentence — confident, no hedging
+2. entity: 2-HEMA (2-Hydroxyethyl Methacrylate)
+   assigned_to_section: Section 1
+   execution: Clear declarative definition tying the chemical to the reaction
+
+### Block 7 — Active Constraints
+- em_dash_banned: No long em dash anywhere. Replace with comma, new sentence, or restructure if one forms.
+- banned_vocab_watch: "unlock," "elevate," "delve," "seamless," "game-changer," "in today's world," "boasts"
+- british_english_active: colour, recognise, -ise, -our — every instance
+- keyword_density_reminder: After every 2 H2 sections, count mentions. Track toward 12 total, denser in first half.
+- image_path_reminder: N/A this post (hero only, no body images)
+- internal_link_url_reminder: Full paths only — /blog/hema-allergy-nails/[slug]
+- hero_image_reminder: Hero in frontmatter only, never in body
+- strong_tag_reminder: Every primary keyword mention wrapped in `<strong>` tags
