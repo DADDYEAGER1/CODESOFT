@@ -1,0 +1,207 @@
+# INPUT FILE — Post 1 (Pillar) — CLUSTER MODE
+CONFIRMED: hema-allergy-nails cluster, post_id 1. USER OVERRIDE ACTIVE: image_count = 1 (hero only, zero body images — do not assign any body images despite pillar rule).
+
+## SECTION 1 — FILE AUTHORITY
+This file is the single source of truth for Blog Gen Agent. All POST_CONSTANTS are hardcoded. Nothing overridden except the explicit user image override below.
+
+## SECTION 2 — POST_CONSTANTS
+- slug: what-is-hema-nail-products
+- topic_slug: hema-allergy-nails
+- canonical: https://mirelleinspo.com/blog/hema-allergy-nails/what-is-hema-nail-products
+- post_type: pillar
+- intent: informational
+- word_count: 2200 (top-3 SERP average ~1500-1900 words; set above floor, within 3500 ceiling for authority depth)
+- image_count: 1 — HERO ONLY. USER OVERRIDE. No body images anywhere in post.
+- template: center
+- hero_dimensions: 1200x630
+- category: Nail Health & Ingredients
+- publish_date: 2026-07-09
+- author: Mirellé Team
+
+## SECTION 3 — CLUSTER SNAPSHOT
+- pillar_slug: what-is-hema-nail-products (this post)
+- pillar_title: What Is HEMA in Nail Products? (And What HEMA-Free Actually Means)
+- pillar_primary_keyword: what is HEMA in nail polish
+- this_post_role: pillar
+- gallery_link: DISABLED per cluster_type_override (high-CPC informational cluster, no gallery)
+- keywords_to_avoid: is HEMA banned; HEMA allergy symptoms; is HEMA free gel polish as good as regular; HEMA free gel polish brands; HEMA vs TPO free gel polish; how to avoid HEMA allergy
+
+## SECTION 4 — SERP ANALYSIS
+- competitor_gaps: (1) No competitor clearly separates "nail polish" (lacquer — never contains HEMA) from "gel/acrylic products" (where HEMA lives) — confirmed confusion on Quora + NailPolishDirect explicitly correcting this. (2) No competitor gives a clean molecular-size explanation of *why* HEMA specifically (vs other acrylates) penetrates skin so easily, in plain non-clinical language — validated via NashlyNails + NailKnowledge. (3) Few explain the EU "professional-use-only" restriction distinctly from an outright ban — validated via Scratch (expert quotes) + multiple conflicting brand blogs.
+- missing_semantic_territory: "does regular nail polish have HEMA," "HEMA professional-use-only," "HEMA allergy bucket/sensitization" concept, dentistry/medical-adhesive crossover mention as trust signal.
+- our_strategic_approach: Lead with the single clearest, most mythbusting definition on the web — HEMA is a bonding monomer found in gel/acrylic (not classic lacquer), essential for durability, but the same trait that makes it stick well (small molecule size) is what makes it allergenic on uncured skin contact. Position as the calm, correcting foundational explainer the whole cluster hangs off.
+- recommended_image_count_validation: Not applicable — user has overridden to hero-only; no visual pattern validation needed for body.
+
+## SECTION 5 — AUDIENCE INTELLIGENCE
+- who_they_are: Regular gel/acrylic manicure users (DIY and salon-goers) plus nail techs, searching after seeing "HEMA-free" marketing or after a reaction, wanting a plain-language definition before they trust any brand's HEMA-free claim.
+- what_they_want: A clear, neutral, non-salesy explanation of what HEMA actually is and why it's in their nail products at all.
+- what_frustrates_them: Most results are either brand blogs pushing HEMA-free product lines, or dense trade-press language; readers want the "so is it dangerous or not" answer given straight.
+- top_5_pain_points: (1) Confusion over whether "nail polish" and "gel polish" both contain HEMA. (2) Fear driven by NailTok/Instagram without technical grounding. (3) Not knowing if their own reaction is HEMA or something else (glue, acetone, other acrylates). (4) Distrust of brand content that's "explaining" HEMA just to sell HEMA-free product. (5) Uncertainty over whether once sensitized, it's permanent.
+- exact_user_phrases: "is HEMA in nail polish or just gel," "why does HEMA cause allergies," "is HEMA a poison," "HEMA sticky agent," "allergy bucket," "flooding the cuticle," "uncured gel touched my skin," "HEMA banned or restricted," "is HEMA dangerous," "HEMA vs regular polish," "can I still use gel if allergic," "HEMA used in dentistry."
+- intent_content_signals: Wants definition-first structure, plain analogy-driven explanation (not clinical jargon), reassurance without minimizing risk, clear differentiation of nail polish vs gel/acrylic, and expert-sourced credibility (dermatologist/trade press mentions) over brand-voice selling.
+
+## SECTION 6 — SEMANTIC KEYWORD DATA
+- primary_keyword: what is HEMA in nail polish
+- keyword_variations: what is HEMA in gel polish, what does HEMA mean in nail products, HEMA meaning nails, what is HEMA nail ingredient, HEMA definition nails, what is HEMA chemical in nails
+- cluster_keywords: hydroxyethyl methacrylate, HEMA monomer, HEMA in gel nails, HEMA in acrylic nails, HEMA nail allergen, HEMA-free meaning, gel polish adhesion ingredient, HEMA skin contact, professional-use-only HEMA, HEMA sensitization, HEMA molecule size, HEMA dentistry use
+- lsi_terms: monomer, bonding agent, adhesive properties, UV/LED curing, nail plate adhesion, contact dermatitis, allergic sensitization, uncured gel, skin barrier penetration, acrylate family, polymerization, gel polish durability, hard glossy finish, chip resistance, methacrylate compound, film-forming agent, orthopedic and dental adhesives, cosmetic-grade monomer, flooding the cuticle
+- aeo_terms: What is HEMA in nail polish?, What does HEMA stand for in nail products?, Why is HEMA used in gel nails?, Is HEMA the same in nail polish and gel polish?, Why does HEMA cause allergic reactions?, Is HEMA dangerous in nail products?, What happens if HEMA touches your skin uncured?, Is HEMA used outside the nail industry?, What is the difference between HEMA and HEMA-free?, Can you still get gel nails if allergic to HEMA?
+- technical_terms: 2-hydroxyethyl methacrylate, monomer, methacrylate, polymerization, photoinitiator, contact dermatitis, sensitization
+- user_language: sticky agent, allergy bucket, HEMA-free buzzword, NailTok panic, swollen fingers, itchy cuticles, flooding the cuticle, uncured gel touched my skin, is it a toxic villain, misunderstood ingredient
+
+## SECTION 7 — VOICE AND AI QUERIES
+1. What is HEMA in nail polish?
+2. What does HEMA stand for?
+3. Is HEMA used in regular nail polish or only gel?
+4. Why is HEMA added to gel and acrylic nail products?
+5. Is HEMA dangerous to use on nails?
+6. Why does HEMA cause allergic reactions in some people?
+7. What happens if uncured HEMA touches your skin?
+8. Is HEMA the same as HEMA-free gel polish's replacement ingredients?
+9. Can I still get gel nails if I'm allergic to HEMA?
+10. Is HEMA banned in nail products?
+11. Where else is HEMA used besides nails?
+12. How do I know if I'm reacting to HEMA specifically?
+13. Is HEMA safe when properly cured?
+14. What's the difference between HEMA and Bis-HEMA?
+15. Does higher HEMA concentration mean higher allergy risk?
+
+## SECTION 8 — HOOK AND CTR
+- selected_trigger: Trigger 1 — Curiosity Gap
+- trigger_rationale: Readers arrive suspecting they don't fully understand an ingredient they keep seeing warnings about — resolving that confusion is the hook.
+- title: What Is HEMA in Nail Polish? The Honest Truth
+- title_char_count: 41 (adjusted below to hit 55-60 range)
+- title (final, 55-60 chars): What Is HEMA in Nail Polish? The Honest Truth Explained
+- title_char_count (final): 57
+- meta_description: Confused about HEMA warnings on gel polish? Here's exactly what HEMA is, why it's used, and why it causes allergic reactions in some people.
+- meta_char_count: 141
+- intro_hook_brief: Open by naming the exact confusion readers feel — seeing "HEMA-free" everywhere without knowing what HEMA even is — then promise a straight, jargon-free answer.
+- first_h2_hook_direction: Phrase the first H2 as a direct voice-search question ("What Is HEMA, Exactly?") that resolves the core confusion immediately.
+
+## SECTION 9 — SEARCH JOURNEY
+- reader_arrival_state: Mildly anxious and confused, having seen "HEMA-free" marketing or a reaction warning without understanding the underlying ingredient.
+- journey_arc: (1) Land confused about the term → (2) Get the plain definition and purpose → (3) Understand why it causes allergies (molecule size, uncured contact) → (4) Learn it's not universally dangerous, context matters → (5) Leave knowing exactly where to go next (symptoms, brands, avoidance) via internal links.
+- promise_to_deliver: A clear, non-salesy explanation of what HEMA is and why it matters for their nails.
+- exit_state: Informed and reassured, no longer confused by HEMA-free marketing, ready to explore the specific spoke topic relevant to them.
+
+## SECTION 10 — CONTENT STRUCTURE
+- h1: What Is HEMA in Nail Products? (And What HEMA-Free Actually Means)
+- h2_structure:
+  1. What Is HEMA, Exactly?
+  2. Why Is HEMA Used in Gel and Acrylic Nails?
+  3. Is HEMA in Regular Nail Polish Too?
+  4. Why Does HEMA Cause Allergic Reactions?
+  5. Is HEMA Actually Dangerous?
+  6. Is HEMA Banned or Just Restricted?
+  7. What Does HEMA-Free Actually Mean?
+  8. Where Else Is HEMA Used?
+  9. What Should You Do If You Think You're Reacting to HEMA?
+- word_budget:
+  - introduction: 220 words
+  - h2_1: 230 words
+  - h2_2: 230 words
+  - h2_3: 200 words
+  - h2_4: 280 words
+  - h2_5: 250 words
+  - h2_6: 250 words
+  - h2_7: 220 words
+  - h2_8: 150 words
+  - h2_9: 220 words
+  - conclusion: 180 words
+  - total: ~2230 (within tolerance)
+
+## SECTION 11 — INTERNAL LINKS (4-6 max, cluster links verbatim + up to 2 cross-site)
+1. slug: is-hema-banned-eu | anchor: "whether HEMA is actually banned in the EU" | placement: H2-6 (Is HEMA Banned or Just Restricted?) | type: cluster-spoke
+2. slug: hema-allergy-symptoms | anchor: "HEMA allergy symptoms to watch for" | placement: H2-9 (What Should You Do If You Think You're Reacting to HEMA?) | type: cluster-spoke
+3. slug: is-hema-free-gel-polish-as-good | anchor: "whether HEMA-free gel polish performs as well" | placement: H2-7 (What Does HEMA-Free Actually Mean?) | type: cluster-spoke
+4. slug: hema-free-gel-polish-brands | anchor: "the full list of HEMA-free gel polish brands" | placement: H2-7 (What Does HEMA-Free Actually Mean?) | type: cluster-spoke
+5. slug: hema-vs-tpo-free-gel-polish | anchor: "how HEMA and TPO differ in gel polish" | placement: H2-8 (Where Else Is HEMA Used?) | type: cluster-spoke
+6. slug: how-to-avoid-hema-allergy | anchor: "how to reduce your risk of a HEMA allergy" | placement: H2-9 (What Should You Do If You Think You're Reacting to HEMA?) | type: cluster-spoke
+
+Note: all 6 mandatory cluster links used (pillar links to all 6 spokes per cluster_context.json). This meets the cap at 6 — no cross-site links added, per "4-6 maximum" rule. Gallery link disabled per cluster override.
+
+## SECTION 12 — VOICE AND TONE
+- recommended_voice: Confident educator
+- tone_characteristics: Calm and correcting (not alarmist), plain-language over clinical jargon, neutral (not brand-selling), reassuring without minimizing real risk, precise on facts.
+- language_style: Short, direct sentences. Second person ("you"). Simple analogies (e.g., comparing molecule size to explain skin penetration) instead of technical chemistry. No hedging language.
+- audience_match: This reader wants clarity over persuasion — a confident, correcting voice earns trust faster than a salesy or fear-driven one for a foundational, informational pillar post.
+
+## SECTION 13 — EXTERNAL LINKS
+1. url: https://www.scratchmagazine.co.uk/feature/hema-what-is-it-why-is-it-used-in-nail-products-is-it-to-blame-for-allergies/ | context: cite trade-press expert framing on HEMA's role and allergy debate | anchor_suggestion: "industry experts explain why HEMA is used despite the allergy risk"
+2. url: https://www.thenailhub.com/blogs/the-nail-hub-blog/understanding-hema-and-its-role-in-nail-allergies | context: cite explanation of HEMA's dental/medical adhesive use | anchor_suggestion: "HEMA's use in medical and dental adhesives"
+3. url: https://nailknowledge.org/blog/hema-why-is-it-being-demonised | context: cite British Association of Dermatologists 2018 allergy findings | anchor_suggestion: "the 2018 dermatology research naming HEMA a top allergen"
+
+## SECTION 14 — EXECUTION PLAN
+
+### Block 1 — Keyword Execution
+- primary_keyword: what is HEMA in nail polish
+- top_3_density_baseline: ~4 mentions average across top 3 ranking posts
+- total_mention_target: 6-7 total mentions (baseline 4 + 2-3)
+- first_100_words_plan: Mention 1 in sentence 1 of intro (direct definitional opener). Mention 2 by sentence 3-4 of intro (reframing the confusion/promise).
+- first_half_target: 4 mentions — first ~1100 words (denser)
+- second_half_target: 2-3 mentions — second ~1100 words
+- strong_tag_rule: every one of the 6-7 mentions wrapped in `<strong>` tags, no exceptions
+- keywords_to_avoid_active: is HEMA banned; HEMA allergy symptoms; is HEMA free gel polish as good as regular; HEMA free gel polish brands; HEMA vs TPO free gel polish; how to avoid HEMA allergy
+
+### Block 2 — Word Budget
+- total_target: 2200 words (±50)
+- introduction: 220
+- conclusion: 180
+- h2_budgets:
+  - What Is HEMA, Exactly?: 230 (low)
+  - Why Is HEMA Used in Gel and Acrylic Nails?: 230 (low)
+  - Is HEMA in Regular Nail Polish Too?: 200 (low)
+  - Why Does HEMA Cause Allergic Reactions?: 280 (high)
+  - Is HEMA Actually Dangerous?: 250 (medium)
+  - Is HEMA Banned or Just Restricted?: 250 (medium)
+  - What Does HEMA-Free Actually Mean?: 220 (medium)
+  - Where Else Is HEMA Used?: 150 (low)
+  - What Should You Do If You Think You're Reacting to HEMA?: 220 (medium)
+- tracking_rule: check running total after every H2; trim before moving on if over.
+
+### Block 3 — Image Plan (USER OVERRIDE ACTIVE)
+- total_images: 1
+- hero_image: frontmatter only, never in body
+- body_images: 0 — NONE. Do not place any body images despite standard pillar rule (hero + 1 per H2). User has explicitly overridden this for post 1.
+- assignments: none
+- path_rule: /images/blog/hema-allergy-nails/what-is-hema-nail-products/hero.webp
+
+### Block 4 — Opening Technique Assignments
+- Introduction: Technique 1 — The Claim (state plainly what HEMA is, cut through the confusion)
+- What Is HEMA, Exactly?: Technique 3 — The Reframe (reframe "scary ingredient" as "functional bonding agent")
+- Why Is HEMA Used in Gel and Acrylic Nails?: Technique 2 — The Scenario (imagine your gel manicure without it)
+- Is HEMA in Regular Nail Polish Too?: Technique 1 — The Claim (direct correction of common confusion)
+- Why Does HEMA Cause Allergic Reactions?: Technique 3 — The Reframe (molecule size explanation)
+- Is HEMA Actually Dangerous?: Technique 2 — The Scenario
+- Is HEMA Banned or Just Restricted?: Technique 1 — The Claim
+- What Does HEMA-Free Actually Mean?: Technique 3 — The Reframe
+- Where Else Is HEMA Used?: Technique 2 — The Scenario
+- What Should You Do If You Think You're Reacting to HEMA?: Technique 1 — The Claim
+- Conclusion: Technique 3 — The Reframe
+
+### Block 5 — Link Placements
+1. anchor: "whether HEMA is actually banned in the EU" | url: /blog/hema-allergy-nails/is-hema-banned-eu | section: Is HEMA Banned or Just Restricted? | context: after explaining professional-use-only restriction | type: cluster-spoke
+2. anchor: "HEMA allergy symptoms to watch for" | url: /blog/hema-allergy-nails/hema-allergy-symptoms | section: What Should You Do If You Think You're Reacting to HEMA? | context: pointing reader to symptom recognition | type: cluster-spoke
+3. anchor: "whether HEMA-free gel polish performs as well" | url: /blog/hema-allergy-nails/is-hema-free-gel-polish-as-good | section: What Does HEMA-Free Actually Mean? | context: after defining HEMA-free | type: cluster-spoke
+4. anchor: "the full list of HEMA-free gel polish brands" | url: /blog/hema-allergy-nails/hema-free-gel-polish-brands | section: What Does HEMA-Free Actually Mean? | context: pointing to brand roundup | type: cluster-spoke
+5. anchor: "how HEMA and TPO differ in gel polish" | url: /blog/hema-allergy-nails/hema-vs-tpo-free-gel-polish | section: Where Else Is HEMA Used? | context: distinguishing HEMA from other gel ingredients | type: cluster-spoke
+6. anchor: "how to reduce your risk of a HEMA allergy" | url: /blog/hema-allergy-nails/how-to-avoid-hema-allergy | section: What Should You Do If You Think You're Reacting to HEMA? | context: prevention next step | type: cluster-spoke
+
+### Block 6 — AEO/GEO Plan
+- AEO: "What is HEMA in nail polish?" → assigned to H2-1 → direct 2-3 sentence answer immediately after heading
+- AEO: "Why does HEMA cause allergic reactions?" → assigned to H2-4 → direct answer paragraph first
+- AEO: "Is HEMA banned in nail products?" → assigned to H2-6 → direct answer first
+- AEO: "What does HEMA-free actually mean?" → assigned to H2-7 → direct answer first
+- GEO entity: HEMA (2-hydroxyethyl methacrylate) → H2-1 → clear declarative definition sentence
+- GEO entity: sensitization → H2-4 → clear declarative definition sentence
+- GEO entity: professional-use-only restriction → H2-6 → clear declarative definition sentence
+
+### Block 7 — Active Constraints
+- em_dash_banned: yes, replace any formed em dash with comma/new sentence/parentheses
+- banned_vocab_watch: "delve," "unveil," "elevate," "game-changer," "in today's world," "unlock," "boost," "seamless"
+- british_english_active: colour, recognise, -ise, -our — apply throughout
+- keyword_density_reminder: check running HEMA mention count after every 2 H2s; front-load density in first half
+- image_path_reminder: /images/blog/hema-allergy-nails/what-is-hema-nail-products/ — but note only hero image exists per override
+- internal_link_url_reminder: full paths /blog/hema-allergy-nails/[slug] only
+- hero_image_reminder: frontmatter only, never in body
+- strong_tag_reminder: every primary keyword mention wrapped in `<strong>`
