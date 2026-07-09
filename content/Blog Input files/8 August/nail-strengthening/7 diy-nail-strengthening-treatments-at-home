@@ -1,0 +1,208 @@
+# BLOG GEN AGENT INPUT FILE — SINGLE SOURCE OF TRUTH
+
+## SECTION 1: FILE AUTHORITY
+This file is the single source of truth for the Blog Gen Agent. All values in POST_CONSTANTS are hardcoded — Blog Gen Agent does not ask, adjust, or override them. All keywords, H2 structure, audience intelligence, internal links, and tone defined here must be followed exactly.
+
+## SECTION 2: POST_CONSTANTS
+- slug: diy-nail-strengthening-treatments-at-home
+- topic_slug: nail-strengthening
+- canonical: https://mirelleinspo.com/blog/nail-strengthening/diy-nail-strengthening-treatments-at-home
+- post_type: spoke
+- intent: tutorial
+- word_count: 2100 (top-3 SERP average ~1900-2200 words; set at floor+, spoke ceiling 2800 not triggered)
+- image_count: 1 — **USER OVERRIDE CONFIRMED: hero image only, ZERO body images.** Standard tutorial rule (5 images) is overridden per explicit user instruction on this session.
+- template: split-left
+- hero_dimensions: 800x800
+- category: Nail Care
+- publish_date: 2026-08-08
+- author: Mirellé Team
+
+## SECTION 3: CLUSTER SNAPSHOT
+- pillar_slug: why-are-my-nails-weak-and-brittle
+- pillar_title: Why Are My Nails So Weak and Brittle? (And How to Fix It)
+- pillar_primary_keyword: why do my nails keep breaking peeling weak
+- this_post_slug: diy-nail-strengthening-treatments-at-home
+- this_post_role: spoke
+- keywords_to_avoid: why do my nails keep breaking peeling weak; does biotin work for nails; how to repair nails after gel acrylic removal; how to make nails grow faster and stronger; vertical ridges on nails causes; nail hardener vs strengthener; nail slugging
+
+## SECTION 4: SERP ANALYSIS
+- competitor_gaps: (1) Almost no competitor addresses whether these DIY recipes *actually work* vs. just moisturize — especially gelatin/protein soaks, where real sources show genuinely split opinion (confirmed: Byrdie-syndicated recipe roundups, Everything Pretty, People's Pharmacy, Family Savvy all present gelatin without resolving the efficacy debate). (2) Realistic timeline for results ("how long until I see a difference") is only lightly touched by one source (Mr Glamzy: 1-2 weeks reduced peeling, 4 weeks stronger growth) — confirmed demand via multiple recipe FAQs asking this. (3) Storage/shelf-life and food-safety notes (raw egg, dairy spoilage) are inconsistently covered — only Byrdie and Mr Glamzy mention refrigeration/spoilage at all.
+- missing_semantic_territory: "how often to use a nail soak," "DIY vs store-bought nail strengthener," "which DIY recipe for which nail problem" (matching recipe to concern — thin nails vs peeling vs soft nails) — Mr Glamzy is the only source that maps recipe-to-nail-type, confirming demand but leaving room for a cleaner treatment.
+- our_strategic_approach: Frame the post as an honest, tested-feeling recovery kit rather than a random recipe dump — group treatments by the specific problem they solve (peeling, splitting, soft/bendy, dull), give a realistic results timeline, and be upfront about which ingredients (gelatin) have mixed evidence rather than oversell them.
+- recommended_image_count_validation: N/A — image count overridden to 1 (hero only) per user instruction; standard SERP visual-pattern validation does not apply.
+
+## SECTION 5: AUDIENCE INTELLIGENCE
+- who_they_are: Someone with visibly weak, peeling, or splitting nails who has decided against (or can't afford) salon treatments and wants a natural, kitchen-ingredient fix. Likely already tried store-bought strengtheners with limited success. Moderate nail-care knowledge — knows the vocabulary (cuticle oil, biotin) but not formulation science.
+- what_they_want_from_this_post: Clear, ready-to-mix recipes with exact measurements and steps, told which recipe fits their specific nail issue, and reassurance about realistic timelines and safety.
+- what_frustrates_them: Recipe roundups that read like copy-pasted ingredient lists with no guidance on which recipe to pick, no mention of how long to expect results, and no acknowledgment that some popular remedies (gelatin) have questionable evidence.
+- top_5_pain_points: (1) Nails peel/split before reaching desired length. (2) Store-bought strengtheners feel harsh or contain formaldehyde-type chemicals. (3) Uncertainty over whether "kitchen remedies" are just folklore or genuinely work. (4) Not knowing how often or how long to use a treatment before giving up. (5) Concern about food-based ingredients (egg, dairy) spoiling or being unhygienic.
+- exact_user_phrases: "why do my nails keep breaking and peeling"; "do DIY nail strengtheners actually work"; "how long until I see results"; "easy nail soak recipe with stuff I already have"; "natural nail hardener no chemicals"; "gelatin for nails does it really work"; "cheapest way to strengthen nails at home"; "nail soak recipe for splitting nails"; "DIY nail strengthener for thin nails"; "homemade cuticle oil recipe"
+- intent_content_signals: Numbered, ingredient-led recipe cards with clear ratios; short instructional steps (not long prose); FAQ-style efficacy callouts; a "which treatment for your nail problem" style navigation aid; warm, reassuring but honest tone that doesn't oversell.
+
+## SECTION 6: SEMANTIC KEYWORD DATA
+- primary_keyword: DIY nail strengthening treatment at home
+- keyword_variations: DIY nail strengthener; homemade nail strengthener; natural nail strengthening treatment; DIY nail hardener; homemade nail soak for strong nails; DIY nail strengthening recipe; at-home nail strengthening treatment
+- cluster_keywords: nail soak recipe; cuticle oil recipe; olive oil for nails; castor oil nail treatment; vitamin E nail oil; garlic for nail strength; gelatin nail soak; coconut oil nail treatment; lemon juice nail soak; natural nail care routine; kitchen ingredients for nails; homemade cuticle cream
+- lsi_terms: keratin repair; nail bed hydration; brittle nail remedy; nail soak ingredients; protein soak for nails; nourishing nail oil; peeling nail treatment; splitting nail fix; nail moisture barrier; DIY beauty recipe; pantry staples for nails; natural humectant; antifungal nail soak; nail hydration routine; weekly nail treatment; nail strengthening ritual
+- aeo_terms: Do DIY nail strengtheners actually work?; How long does it take for a homemade nail treatment to work?; What is the best DIY nail soak for weak nails?; Can gelatin really strengthen your nails?; How often should you do a nail strengthening soak?; What household ingredients strengthen nails naturally?; Is olive oil good for strengthening nails?; What's a good homemade nail hardener without chemicals?
+- technical_terms: keratin; humectant; occlusive; nail plate; nail bed; onychoschizia (nail splitting); collagen vs. gelatin; patch test
+- user_language: "stuff I already have in my kitchen"; "no harsh chemicals"; "actually works vs just a myth"; "cheap and easy"; "won't hurt to try it"; "my nails stopped splitting"; "takes a few weeks to notice"; "smells a bit but works"
+
+## SECTION 7: VOICE AND AI QUERIES
+- queries:
+  1. Do DIY nail strengtheners actually work?
+  2. What is the best homemade treatment for weak, peeling nails?
+  3. How long does it take to see results from a DIY nail soak?
+  4. Can I make a nail strengthener with things from my kitchen?
+  5. Does gelatin really strengthen nails or is that a myth?
+  6. What is the best natural nail hardener without formaldehyde?
+  7. How often should I use a DIY nail strengthening soak?
+  8. Is olive oil good for strengthening nails?
+  9. What household ingredients help nails grow stronger?
+  10. Can castor oil strengthen brittle nails?
+  11. What's a good DIY treatment for nails that keep splitting?
+  12. Is it safe to soak nails in lemon juice?
+  13. How do I make a DIY cuticle oil at home?
+  14. Do egg and milk soaks really help nail strength?
+  15. What's the difference between a DIY nail strengthener and a store-bought one?
+  16. Can I use vitamin E oil directly on my nails?
+  17. Are DIY nail treatments safe to use every week?
+
+## SECTION 8: HOOK AND CTR
+- selected_trigger: Trigger 3 — Specificity/Numbers
+- trigger_rationale: Reader is in how-to execution mode, motivated but wants a clear, defined set of options rather than vague reassurance — specificity (recipe count, exact ingredients) directly answers that need.
+- title: 7 DIY Nail Strengthening Treatments That Work
+- title_char_count: 41 (well under 55-60 cap; kept tight and clear rather than padded — flagged for Blog Gen Agent, may add a qualifier if needed, but do not exceed 60)
+- meta_description: Weak, peeling nails? These 7 DIY nail strengthening treatments use kitchen staples like olive oil, gelatin, and vitamin E — with real timelines for results.
+- meta_char_count: 152
+- intro_hook_brief: Open by naming the exact frustration (nails that split before they grow) and immediately promise a tested, no-nonsense set of at-home fixes — not vague "try natural remedies" language, but specific recipes matched to specific problems.
+- first_h2_hook_direction: Phrase the first H2 as a direct voice-search question addressing whether DIY treatments work at all, resolving reader skepticism before handing over recipes.
+
+## SECTION 9: SEARCH JOURNEY
+- reader_arrival_state: Motivated but slightly skeptical — has weak or peeling nails, wants a natural fix, but isn't sure if "kitchen remedies" are legitimate or just internet folklore.
+- journey_arc: 1) Resolve the "does this actually work" skepticism upfront. 2) Help them identify which nail problem they have. 3) Deliver clear, numbered recipes matched to specific issues. 4) Set realistic expectations on timeline and frequency. 5) Close with a simple routine they can commit to.
+- promise_to_deliver: Seven real, kitchen-ingredient nail strengthening recipes with honest guidance on what works, how to use it, and how long results take.
+- exit_state: Reassured and equipped — reader has a specific recipe to try tonight and knows exactly what to expect.
+
+## SECTION 10: CONTENT STRUCTURE
+- h1: 7 DIY Nail Strengthening Treatments You Can Make at Home
+- h2_structure:
+  1. Do DIY Nail Strengthening Treatments Actually Work?
+  2. Olive Oil and Lemon Juice Soak for Brittle, Splitting Nails
+  3. Gelatin Nail Soak: Does It Really Strengthen Nails?
+  4. Vitamin E and Argan Oil Blend for Thin, Weak Nails
+  5. Castor Oil Treatment for Daily Nail Strengthening
+  6. Garlic-Infused Oil for Extremely Weak Nails
+  7. Honey, Egg Yolk, and Milk Soak for Peeling Nails
+  8. DIY Cuticle Oil to Support Long-Term Nail Strength
+  9. How Often to Use These Treatments (and How Long Results Take)
+- word_budget:
+  - introduction: 220 words
+  - conclusion: 180 words
+  - per_h2:
+    - Do DIY Treatments Actually Work?: 220 words
+    - Olive Oil and Lemon Juice Soak: 220 words
+    - Gelatin Nail Soak: 260 words
+    - Vitamin E and Argan Oil Blend: 220 words
+    - Castor Oil Treatment: 190 words
+    - Garlic-Infused Oil: 200 words
+    - Honey, Egg Yolk, and Milk Soak: 220 words
+    - DIY Cuticle Oil: 200 words
+    - How Often / Results Timeline: 170 words
+
+## SECTION 11: INTERNAL LINKS
+1. url_or_slug: /blog/nail-strengthening/why-are-my-nails-weak-and-brittle | title: Why Are My Nails So Weak and Brittle? (And How to Fix It) | anchor_text: "the root causes behind weak, brittle nails" | placement_note: In "Do DIY Treatments Actually Work?" section, when acknowledging that persistent brittleness may need a root-cause diagnosis | link_type: cluster-pillar
+2. url_or_slug: /blog/nail-strengthening/does-biotin-work-for-nails | title: Does Biotin Actually Work for Nails? | anchor_text: "whether biotin supplements actually work for nails" | placement_note: In the Vitamin E/Argan Oil section, when discussing internal vs. topical nutrient support | link_type: cluster-spoke
+3. url_or_slug: /blog/nail-strengthening/repair-nails-after-gel-acrylic-removal | title: How to Repair Your Nails After Gel or Acrylic Removal | anchor_text: "repairing nails after gel or acrylic removal" | placement_note: In "How Often to Use These Treatments" section, for readers whose weak nails stem specifically from gel/acrylic damage | link_type: cluster-spoke
+4. url_or_slug: /blog/nail-strengthening/how-to-grow-nails-faster-and-stronger | title: How to Make Your Nails Grow Faster and Stronger | anchor_text: "growing your nails faster and stronger overall" | placement_note: In the conclusion, as a natural next step for readers wanting a broader growth routine | link_type: cluster-spoke
+5. url_or_slug: /blog/nail-strengthening/nail-slugging-tiktok-trend-for-stronger-nails | title: Nail Slugging: The Viral TikTok Trend for Stronger Nails | anchor_text: "other DIY nail strengthening treatments you can try at home" | placement_note: In DIY Cuticle Oil section, as a related overnight-treatment trend link | link_type: cluster-spoke
+
+Note: cross-site discovery searches (site:mirelleinspo.com) were not run in this session since domain is not fetchable via available tools without live site access — Blog Gen Agent/publisher should manually verify 1-2 additional cross-site links if genuinely relevant pages exist. Total links currently: 5 (within 4-6 cap).
+
+## SECTION 12: VOICE AND TONE
+- recommended_voice: Warm, honest DIY expert — like a knowledgeable friend sharing what actually works, not a salesperson
+- tone_characteristics: Direct and specific (exact measurements, not vague suggestions); honest about mixed evidence (especially gelatin); encouraging without overpromising; practical and unfussy; light reassurance without being saccharine
+- language_style: Second person ("you"), short instructional sentences in recipe steps, slightly longer explanatory sentences in the efficacy sections; minimal jargon, defined immediately when used
+- audience_match: This reader wants to trust a kitchen fix but has been burned by hype before — an honest, specific, non-salesy voice builds the credibility needed to get them to actually try the recipes
+
+## SECTION 13: EXTERNAL LINKS
+1. url: https://www.byrdie.com (referenced via search — DIY nail strengthener recipes from spa experts) | context: Use when discussing olive oil/lemon or shea butter recipes for expert credibility | anchor_suggestion: "spa experts recommend"
+2. url: https://www.peoplespharmacy.com (referenced via search — gelatin and nail strength) | context: Use in the gelatin section to cite the 1957 AMA Archives of Dermatology study on gelatin and brittle nails | anchor_suggestion: "a small clinical study from the 1950s"
+
+## SECTION 14: EXECUTION PLAN
+
+### Block 1: Keyword Execution
+- primary_keyword: DIY nail strengthening treatment at home
+- top_3_density_baseline: ~4 mentions (estimated from competitor content depth)
+- total_mention_target: 7 total mentions
+- first_100_words_plan:
+  - mention_1: sentence 2 of introduction — naming the topic directly after opening with the frustration
+  - mention_2: sentence 4-5 of introduction — reinforcing the promise before transitioning to H2s
+- first_half_target: 4 mentions — first ~1050 words
+- second_half_target: 3 mentions — second ~1050 words
+- strong_tag_rule: Every one of the 7 mentions wrapped in `<strong>` tags, no exceptions
+- keywords_to_avoid_active: why do my nails keep breaking peeling weak; does biotin work for nails; how to repair nails after gel acrylic removal; how to make nails grow faster and stronger; vertical ridges on nails causes; nail hardener vs strengthener; nail slugging
+
+### Block 2: Word Budget
+- total_target: 2100 words (±50 tolerance, never exceed 2150)
+- introduction: 220 words
+- conclusion: 180 words
+- h2_budgets:
+  1. Do DIY Treatments Actually Work? — 220 words — medium complexity
+  2. Olive Oil and Lemon Juice Soak — 220 words — low complexity
+  3. Gelatin Nail Soak: Does It Work? — 260 words — high complexity (evidence discussion)
+  4. Vitamin E and Argan Oil Blend — 220 words — low complexity
+  5. Castor Oil Treatment — 190 words — low complexity
+  6. Garlic-Infused Oil — 200 words — low complexity
+  7. Honey, Egg Yolk, and Milk Soak — 220 words — medium complexity (food safety note)
+  8. DIY Cuticle Oil — 200 words — low complexity
+  9. How Often / Results Timeline — 170 words — medium complexity
+- tracking_rule: Track running word total after every H2. If a section runs over, cut before moving on — do not compensate later.
+
+### Block 3: Image Plan
+- total_images: 1 (USER OVERRIDE — hero only)
+- hero_image: frontmatter only — never appears in body
+- body_images: 0 — no body images to place. Blog Gen Agent must NOT insert any body images for this post regardless of default tutorial-intent rules.
+- assignments: none
+- image_type_rule: N/A for this post — hero only
+- path_rule: /images/blog/nail-strengthening/diy-nail-strengthening-treatments-at-home/filename.webp
+
+### Block 4: Opening Technique Assignments
+- Introduction: Technique 3 — The Reframe (reframe "kitchen remedy" skepticism into an honest, tested-feeling promise)
+- Do DIY Treatments Actually Work?: Technique 1 — The Claim (state plainly what works and what's mixed evidence)
+- Olive Oil and Lemon Juice Soak: Technique 2 — The Scenario (splitting nails scenario)
+- Gelatin Nail Soak: Technique 1 — The Claim (direct evidence-based claim)
+- Vitamin E and Argan Oil Blend: Technique 2 — The Scenario
+- Castor Oil Treatment: Technique 3 — The Reframe
+- Garlic-Infused Oil: Technique 2 — The Scenario
+- Honey, Egg Yolk, and Milk Soak: Technique 1 — The Claim
+- DIY Cuticle Oil: Technique 2 — The Scenario
+- How Often / Results Timeline: Technique 3 — The Reframe
+- Conclusion: Technique 1 — The Claim
+- banned_opener_rule: Check every opener against banned_opening_approaches in Blog Gen prompt before writing the second sentence
+
+### Block 5: Link Placements
+1. anchor_text: "the root causes behind weak, brittle nails" | full_url: /blog/nail-strengthening/why-are-my-nails-weak-and-brittle | place_in_section: Do DIY Treatments Actually Work? | placement_context: when noting persistent brittleness may need root-cause diagnosis | link_type: cluster-pillar
+2. anchor_text: "whether biotin supplements actually work for nails" | full_url: /blog/nail-strengthening/does-biotin-work-for-nails | place_in_section: Vitamin E and Argan Oil Blend | placement_context: when contrasting topical vs. ingested nutrient support | link_type: cluster-spoke
+3. anchor_text: "repairing nails after gel or acrylic removal" | full_url: /blog/nail-strengthening/repair-nails-after-gel-acrylic-removal | place_in_section: How Often / Results Timeline | placement_context: for readers whose weakness stems from gel/acrylic damage specifically | link_type: cluster-spoke
+4. anchor_text: "growing your nails faster and stronger overall" | full_url: /blog/nail-strengthening/how-to-grow-nails-faster-and-stronger | place_in_section: Conclusion | placement_context: natural next step for broader growth routine | link_type: cluster-spoke
+5. anchor_text: "other DIY nail strengthening treatments you can try at home" | full_url: /blog/nail-strengthening/nail-slugging-tiktok-trend-for-stronger-nails | place_in_section: DIY Cuticle Oil | placement_context: related overnight-treatment trend | link_type: cluster-spoke
+
+### Block 6: AEO/GEO Plan
+- aeo_assignments:
+  1. "Do DIY nail strengtheners actually work?" → Do DIY Treatments Actually Work? → Write direct 2-3 sentence answer immediately after H2, before elaboration
+  2. "Does gelatin really strengthen nails or is that a myth?" → Gelatin Nail Soak section → Direct answer citing mixed evidence immediately after H2
+  3. "How long does it take to see results from a DIY nail soak?" → How Often / Results Timeline → Direct answer with specific week ranges immediately after H2
+- geo_entity_statements:
+  1. entity: Keratin | assigned_to_section: Do DIY Treatments Actually Work? | execution: Clear declarative definition — nails are made of keratin, a fibrous protein, and treatments work by supporting hydration and the protein structure rather than "hardening" it artificially
+  2. entity: Gelatin vs. collagen | assigned_to_section: Gelatin Nail Soak | execution: Clear declarative definition distinguishing gelatin (cooked collagen) and noting the evidence is mixed, not the confident cure sometimes claimed
+
+### Block 7: Active Constraints
+- em_dash_banned: Long em dash does not appear anywhere. Replace with comma, new sentence, parentheses, "but," or restructure.
+- banned_vocab_watch: "elevate," "unlock," "game-changer," "holy grail," "must-have," "in today's world," "when it comes to"
+- british_english_active: colour, recognise, -ise, -our — every instance, no exceptions
+- keyword_density_reminder: After every 2 H2 sections, count current mentions of "DIY nail strengthening treatment at home." Verify on track for 7 total, denser in first half (4 mentions in first ~1050 words).
+- image_path_reminder: N/A — hero only, no body image paths needed
+- internal_link_url_reminder: Full paths only — /blog/nail-strengthening/[slug] for all cluster links
+- hero_image_reminder: Hero = frontmatter only, never in body
+- strong_tag_reminder: Every primary keyword mention wrapped in `<strong>` tags — scan after every paragraph
