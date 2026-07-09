@@ -1,0 +1,306 @@
+# INPUT FILE — Post 7: Vegan and Cruelty-Free Nail Polish
+CLUSTER MODE | SINGLE SOURCE OF TRUTH FOR BLOG GEN AGENT. All POST_CONSTANTS and section_14 values are hardcoded. Nothing overridden unless user explicitly instructs during the Blog Gen session.
+
+---
+
+## SECTION 2 — POST_CONSTANTS
+- slug: `vegan-nail-polish-ingredients`
+- topic_slug: `nail-product-ingredients`
+- canonical: `https://mirelleinspo.com/blog/nail-product-ingredients/vegan-nail-polish-ingredients`
+- post_type: spoke
+- intent: informational
+- word_count: **2100** (top-3 competitor average ~1900-2200 words for this exact query; set above floor, within spoke ceiling of 2800)
+- image_count: **1** (HERO ONLY — USER OVERRIDE CONFIRMED. Zero body images. Standard rule_5 "everything_else" of 9 images is explicitly overridden per user instruction for this post.)
+- template: split-left
+- hero_dimensions: 800x800
+- category: Nail Product Ingredients
+- publish_date: 2026-07-09
+- author: Mirellé Team
+
+---
+
+## SECTION 3 — CLUSTER SNAPSHOT
+- pillar_slug: `nail-product-ingredients`
+- pillar_title: "What's Actually in Your Nail Polish? A Full Ingredient Breakdown"
+- pillar_primary_keyword: "nail product ingredients"
+- this_post_slug: `vegan-nail-polish-ingredients`
+- this_post_role: spoke
+- keywords_to_avoid: nail product ingredients, 10 free nail polish meaning, nail polish ingredients to avoid, TPO ban gel nail polish, gel vs acrylic nail ingredients, how to tell if salon uses MMA, plus any near-duplicates of these
+
+---
+
+## SECTION 4 — SERP ANALYSIS
+**competitor_gaps** (demand confirmed 2+ sources):
+1. No neutral, non-brand editorial source explains vegan vs. cruelty-free as two *separate, independently verifiable* label systems with a clear side-by-side test — nearly all existing coverage is brand roundups or product-push content (confirmed: Quora, multiple brand blogs, worldofvegan roundup)
+2. "Can vegan nail polish be halal?" is a real, recurring searcher question with no clear editorial (non-religious-niche) answer (confirmed: Quora x2, Mersi Cosmetics)
+3. Confusion around "clean," "natural," and "organic" labels having no legal cosmetic definition vs. "vegan" being verifiable — raised on NAILSAMI and Liberation Nails but not commonly centered as the main hook elsewhere
+4. Squalene's dual sourcing (shark liver oil vs. plant-derived) as a specific ambiguous ingredient shoppers get wrong — appears on 2+ sources but underexplained
+
+**missing_semantic_territory:** entity-level explainer format (What is carmine / What is guanine / What is squalene) is present but scattered across brand pages, not consolidated in one neutral reference; "is vegan gel polish worse in performance" reassurance angle underused outside one source.
+
+**our_strategic_approach:** Position this post as the neutral, non-promotional reference the space is missing — a clear ingredient-identity explainer (not a shopping guide, no brand picks, per cluster override) that resolves the vegan-vs-cruelty-free confusion and gives readers a scannable ingredient checklist they can use on any bottle, regardless of brand.
+
+**recommended_image_count_validation:** N/A — hero-only override active for this post; no body visual pattern validation required.
+
+---
+
+## SECTION 5 — AUDIENCE INTELLIGENCE
+**who_they_are:** Beauty-conscious consumers (largely women, Tier 1 markets) already familiar with general "clean beauty" language, now specifically trying to decode nail polish labels — either newly transitioning to veganism/cruelty-free values, or already vegan and confused about a bottle they own.
+
+**what_they_want_from_this_post:** A direct, honest answer to "does my nail polish contain animal parts, and how would I even know?" — plus clarity on the vegan ≠ cruelty-free confusion that trips up nearly every source they encounter.
+
+**what_frustrates_them:** Existing content is overwhelmingly brand-sponsored listicles ("15 best vegan polishes") rather than an honest, neutral ingredient explainer; conflicting claims about whether "natural" = vegan; uncertainty about where to even find the ingredient list on a bottle.
+
+**top_5_pain_points:**
+1. Doesn't know carmine, guanine, shellac, or oleic acid are even animal-derived — these hide under Latin/INCI names
+2. Can't tell the difference between "vegan" and "cruelty-free" and assumes they're interchangeable
+3. Worried "natural" or "clean" marketing language is being used to mask non-vegan ingredients
+4. Specific to religious practice: wants to know if vegan nail polish is automatically halal/wudu-friendly
+5. Assumes vegan formulas must be lower quality or less long-wearing than standard polish
+
+**exact_user_phrases** (from Quora, brand-page comments, forums):
+- "is it still halal if I only paint the tip of my nails"
+- "does vegan mean the same as cruelty free"
+- "what ingredients should I avoid to make sure it's vegan"
+- "crushed beetle shells and fish scale on your fingernails"
+- "which brands are vegan AND cruelty-free"
+- "does vegan nail polish last as long as regular polish"
+- "how do I know if a polish is really vegan"
+- "why does my shimmer polish have fish scales in it"
+
+**intent_content_signals:** Reader wants a direct answer up top, not a slow build; scannable ingredient lists outperform long prose blocks; readers respond well to "look for this on the label" concrete actionability; avoid product/brand pushing per cluster override — reader trust is highest with neutral, non-commercial framing.
+
+---
+
+## SECTION 6 — SEMANTIC KEYWORD DATA
+**primary_keyword:** vegan nail polish ingredients
+
+**keyword_variations:** vegan nail polish meaning, is nail polish vegan, vegan nail polish ingredients list, what makes nail polish vegan, animal-derived nail polish ingredients, non-vegan nail polish ingredients, vegan vs regular nail polish ingredients
+
+**cluster_keywords:** vegan nail polish, cruelty-free nail polish, animal-derived ingredients nail polish, carmine nail polish, guanine nail polish, plant-based nail polish, vegan gel polish, vegan nail lacquer, ethical nail polish, non-toxic vegan polish, vegan nail polish brands (used only as passing reference, no recommendations), synthetic pigment nail polish, nitrocellulose vegan, vegan nail polish certification
+
+**lsi_terms:** cochineal insects, fish scales pearl essence, keratin animal protein, beeswax cera alba, lanolin wool wax, shellac lac bugs, oleic acid animal fat, squalene shark liver oil, plant-based resin, synthetic mica pigment, Leaping Bunny certification, PETA Beauty Without Bunnies, Vegan Society sunflower logo, INCI ingredient list, film-forming agent, cellulose derivative, mineral pigment, animal testing cosmetics, cruelty-free certification, ethical beauty formulation
+
+**aeo_terms:**
+- "What ingredients make nail polish not vegan?"
+- "Is vegan nail polish the same as cruelty-free nail polish?"
+- "What is carmine made of?"
+- "What is guanine in nail polish?"
+- "Can vegan nail polish be halal?"
+- "Does vegan nail polish last as long as regular polish?"
+- "How do I know if my nail polish is vegan?"
+- "Is squalene in nail polish always animal-derived?"
+
+**technical_terms:** carmine (cochineal extract), guanine (pearl essence), keratin, shellac, oleic acid, nitrocellulose, INCI nomenclature, Leaping Bunny certification
+
+**user_language:** "crushed bugs in my nail polish," "fish scale shimmer," "is this actually vegan or just marketing," "does vegan mean no animal testing too," "which ingredients to avoid," "how to check the label," "vegan doesn't mean natural," "same shine, no cruelty"
+
+---
+
+## SECTION 7 — VOICE & AI QUERIES
+1. What ingredients make nail polish non-vegan?
+2. Is vegan nail polish automatically cruelty-free?
+3. What is carmine and why is it in nail polish?
+4. What is guanine and where does it come from?
+5. Does nail polish contain fish scales?
+6. Are beeswax and shellac vegan?
+7. Is squalene in nail polish always from animals?
+8. How can I tell if a nail polish is vegan from the label?
+9. Does vegan nail polish perform as well as regular polish?
+10. Is vegan nail polish safe for people with allergies?
+11. What certifications confirm a nail polish is vegan?
+12. Is cruelty-free nail polish the same as vegan nail polish?
+13. Can vegan nail polish still be tested on animals?
+14. Is "natural" nail polish always vegan?
+15. Is vegan nail polish halal?
+16. What's the difference between vegan and 10-free nail polish?
+
+---
+
+## SECTION 8 — HOOK AND CTR
+**selected_trigger:** Trigger 1 — Curiosity Gap
+**trigger_rationale:** Reader suspects hidden animal ingredients they don't know about — classic curiosity-gap territory for an informational/decision-mode query.
+
+**title:** "Vegan Nail Polish Ingredients: What's Really Different"
+**title_char_count:** 56
+
+**meta_description:** "Most nail polish hides animal ingredients under names like carmine and guanine. Here's exactly what makes a formula truly vegan — and why cruelty-free isn't the same thing."
+**meta_char_count:** 154
+
+**intro_hook_brief:** Open by naming the assumption most readers walk in with (vegan = cruelty-free = same thing) and immediately flag that it's wrong — then promise the ingredient-level breakdown that resolves the confusion for good.
+
+**first_h2_hook_direction:** Phrase the first H2 as a direct voice-search question ("What Does 'Vegan Nail Polish' Actually Mean?") and answer it in the opening two sentences before elaborating — subtle curiosity payoff, not a title repeat.
+
+---
+
+## SECTION 9 — SEARCH JOURNEY
+**reader_arrival_state:** Mildly suspicious/curious — they've heard "vegan nail polish" as a term but don't trust that it means what they assume, and want to understand what's actually being avoided.
+
+**journey_arc:**
+- Land on the core definition, immediately resolve the vegan ≠ cruelty-free confusion
+- See the specific animal-derived ingredients named and explained (carmine, guanine, keratin, shellac, oleic acid, squalene)
+- Understand what replaces those ingredients in vegan formulas (plant resins, synthetic pigments, mica)
+- Get a practical checklist for reading a label themselves
+- Resolve secondary concerns (performance, halal status, certifications)
+
+**promise_to_deliver:** The reader will leave able to look at any nail polish ingredient list and identify whether it's genuinely vegan, cruelty-free, both, or neither.
+
+**exit_state:** Confident and equipped — no longer relying on marketing claims, now able to self-verify any bottle.
+
+---
+
+## SECTION 10 — CONTENT STRUCTURE
+**h1:** Vegan Nail Polish Ingredients: What's Really Different
+
+**h2_structure:**
+1. What Does "Vegan Nail Polish" Actually Mean?
+2. Vegan vs. Cruelty-Free: Why They're Not the Same Thing
+3. The Animal-Derived Ingredients Hiding in Regular Nail Polish
+4. What Replaces Animal Ingredients in Vegan Formulas
+5. How to Tell If a Nail Polish Is Actually Vegan
+6. Does Vegan Nail Polish Perform Differently?
+7. Common Questions: Halal Status, Certifications, and Natural Claims
+
+**word_budget:**
+- introduction: 220 words
+- H2-1: 260 words
+- H2-2: 280 words
+- H2-3: 400 words
+- H2-4: 300 words
+- H2-5: 280 words
+- H2-6: 180 words
+- H2-7: 180 words
+- conclusion: 180 words
+(Total: ~2100 words)
+
+---
+
+## SECTION 11 — INTERNAL LINKS
+1. **url_or_slug:** /blog/nail-product-ingredients/nail-product-ingredients
+   **title:** What's Actually in Your Nail Polish? A Full Ingredient Breakdown
+   **anchor_text:** nail product ingredients explained
+   **placement_note:** H2-1 (definition section), first mention establishing pillar authority
+   **link_type:** cluster-pillar
+
+2. **url_or_slug:** /blog/nail-product-ingredients/10-free-nail-polish-meaning
+   **title:** What Does "10-Free" Nail Polish Actually Mean?
+   **anchor_text:** 10-free nail polish meaning
+   **placement_note:** H2-5 (label-reading section) — natural fit since 10-free labeling is a related but distinct claim system readers often confuse with vegan
+   **link_type:** cluster-spoke
+
+Total internal links: 2 (within 4-6 cap; no additional cross-site links met the strict relevance filter — cross-site searches for "vegan nail polish" and "nail ingredients" on mirelleinspo.com did not surface genuinely distinct, high-value pages beyond the cluster itself). No gallery link — spoke post, and cluster_type_override disables gallery linking for this entire cluster.
+
+---
+
+## SECTION 12 — VOICE AND TONE
+**recommended_voice:** Confident educator — neutral, non-commercial, myth-resolving
+
+**tone_characteristics:**
+1. Direct and matter-of-fact, never salesy (no brand-pushing, per cluster override)
+2. Calmly authoritative — states ingredient facts plainly without moralizing
+3. Uses "you" to keep it practical and personal, especially in the label-reading section
+4. Slightly wry when naming odd-sounding ingredients (crushed insects, fish scales) without being sensationalist
+5. Reassuring in tone when addressing performance/quality concerns
+
+**language_style:** Short, clear sentences. Concrete nouns over abstract claims. Minimal hedging — state what an ingredient is derived from directly. Use "you" throughout for the label-checking sections.
+
+**audience_match:** This reader wants clarity, not persuasion — she's not being sold a product, she's being handed the tools to evaluate any product herself. A neutral, confident-educator voice earns trust precisely because it isn't pushing a brand.
+
+---
+
+## SECTION 13 — EXTERNAL LINKS
+1. **url:** (source: NAILSAMI vegan gel polish guide — verify live URL at write time via site search)
+   **context:** When explaining specific INCI names to check for on labels
+   **anchor_suggestion:** ingredient names to check for on the label
+
+2. **url:** (source: Liberation Nails — what makes nail polish vegan)
+   **context:** When explaining the plant-based film-forming agent (nitrocellulose) that replaces animal ingredients
+   **anchor_suggestion:** how plant-based film formers work in vegan formulas
+
+*(Blog Gen Agent: confirm both URLs are still live via direct navigation before publishing; do not fabricate URLs.)*
+
+---
+
+## SECTION 14 — EXECUTION PLAN
+
+### Block 1: Keyword Execution
+- primary_keyword: vegan nail polish ingredients
+- top_3_density_baseline: 6 mentions (estimated average across top 3 ranking posts)
+- total_mention_target: **9 mentions** (baseline 6 + 3)
+- first_100_words_plan:
+  - mention_1: sentence 2 of introduction — establishing the topic directly after the curiosity-gap opener
+  - mention_2: sentence 4-5 of introduction — reinforcing before transitioning into the promise of the post
+- first_half_target: 5 mentions — first ~1050 words (intro through H2-3)
+- second_half_target: 4 mentions — second ~1050 words (H2-4 through conclusion)
+- strong_tag_rule: every one of the 9 mentions wrapped in `<strong>` tags, no exceptions
+- keywords_to_avoid_active: nail product ingredients, 10 free nail polish meaning, nail polish ingredients to avoid, TPO ban gel nail polish, gel vs acrylic nail ingredients, how to tell if salon uses MMA — none used as focus terms
+
+### Block 2: Word Budget
+- total_target: 2100 words (±50 tolerance)
+- introduction: 220
+- conclusion: 180
+- h2_budgets:
+  - "What Does 'Vegan Nail Polish' Actually Mean?" — 260 words — low complexity
+  - "Vegan vs. Cruelty-Free: Why They're Not the Same Thing" — 280 words — medium complexity
+  - "The Animal-Derived Ingredients Hiding in Regular Nail Polish" — 400 words — high complexity
+  - "What Replaces Animal Ingredients in Vegan Formulas" — 300 words — medium complexity
+  - "How to Tell If a Nail Polish Is Actually Vegan" — 280 words — medium complexity
+  - "Does Vegan Nail Polish Perform Differently?" — 180 words — low complexity
+  - "Common Questions: Halal Status, Certifications, and Natural Claims" — 180 words — low complexity
+- tracking_rule: track running total after each H2; cut before moving on if over budget
+
+### Block 3: Image Plan — OVERRIDE ACTIVE
+- total_images: **1**
+- hero_image: frontmatter only, never in body
+- body_images: **0** — USER OVERRIDE CONFIRMED. No body images of any kind for this post.
+- assignments: none (no body images to place)
+- image_type_rule: N/A for this post (hero only)
+- path_rule: /images/blog/nail-product-ingredients/vegan-nail-polish-ingredients/filename.webp
+
+### Block 4: Opening Technique Assignments
+- Introduction: Technique 1 — The Claim ("Vegan and cruelty-free are not the same claim, and most nail polish labels count on you not knowing that.")
+- H2-1 (What Does Vegan Mean): Technique 3 — The Reframe
+- H2-2 (Vegan vs Cruelty-Free): Technique 1 — The Claim
+- H2-3 (Animal-Derived Ingredients): Technique 4 — The Specific Scene/Detail (naming carmine's insect origin directly)
+- H2-4 (What Replaces Them): Technique 2 — The Question
+- H2-5 (How to Tell): Technique 3 — The Reframe
+- H2-6 (Performance): Technique 1 — The Claim
+- H2-7 (Common Questions): Technique 2 — The Question
+- Conclusion: Technique 1 — The Claim
+- banned_opener_rule: check every opener against banned_opening_approaches in Blog Gen prompt before writing second sentence
+
+### Block 5: Link Placements
+1. anchor_text: "nail product ingredients explained"
+   full_url: /blog/nail-product-ingredients/nail-product-ingredients
+   place_in_section: H2-1 (What Does Vegan Nail Polish Actually Mean?)
+   placement_context: when referencing the broader ingredient category this post narrows into
+   link_type: cluster-pillar
+
+2. anchor_text: "10-free nail polish meaning"
+   full_url: /blog/nail-product-ingredients/10-free-nail-polish-meaning
+   place_in_section: H2-5 (How to Tell If a Nail Polish Is Actually Vegan)
+   placement_context: when distinguishing "vegan" labeling from other free-from label systems readers may confuse it with
+   link_type: cluster-spoke
+
+### Block 6: AEO/GEO Plan
+**aeo_assignments:**
+1. "Is vegan nail polish the same as cruelty-free nail polish?" → H2-2 → Direct 2-3 sentence answer immediately after heading, before elaboration
+2. "What is carmine made of?" → H2-3 → Direct definition sentence immediately after ingredient is introduced
+3. "How do I know if my nail polish is vegan?" → H2-5 → Direct 2-3 sentence answer immediately after heading
+4. "Can vegan nail polish be halal?" → H2-7 → Direct answer as first sentence under this FAQ-style H2
+
+**geo_entity_statements:**
+1. entity: Carmine → H2-3 → "Carmine is a red pigment made by crushing the dried bodies of female cochineal insects."
+2. entity: Guanine → H2-3 → "Guanine is a shimmer-producing compound extracted from fish scales, sometimes listed as 'pearl essence.'"
+3. entity: Nitrocellulose → H2-4 → "Nitrocellulose is a plant-derived film-forming agent that gives vegan polish its durability and shine."
+4. entity: Leaping Bunny certification → H2-7 → "Leaping Bunny is a third-party certification confirming a brand has not tested its products on animals at any stage."
+
+### Block 7: Active Constraints
+- em_dash_banned: no long em dash anywhere; replace with comma, new sentence, parentheses, "but," or restructure
+- banned_vocab_watch: watch for "elevate," "unlock," "journey," "seamless," "game-changer," "unleash," "embrace" — high-risk terms for this ingredient-education topic
+- british_english_active: colour, recognise, -ise, -our — every instance
+- keyword_density_reminder: count mentions after every 2 H2s; verify on track for 9 total, denser in first half
+- image_path_reminder: /images/blog/nail-product-ingredients/vegan-nail-polish-ingredients/filename.webp
+- internal_link_url_reminder: full paths only, /blog/nail-product-ingredients/[slug]
+- hero_image_reminder: hero = frontmatter only, never in body — and this post has ZERO body images per override
+- strong_tag_reminder: every one of the 9 primary keyword mentions wrapped in `<strong>` tags
