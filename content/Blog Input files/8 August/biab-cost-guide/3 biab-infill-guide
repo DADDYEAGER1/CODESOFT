@@ -1,0 +1,263 @@
+CLUSTER MODE — cluster context loaded (biab-cost cluster, post 3: biab-infill-guide)
+OVERRIDE CONFIRMED: image_count = 1 (hero only, zero body images) — user override, hardcoded, no phase_2 rule applied.
+
+# SECTION 1: FILE AUTHORITY
+THIS FILE IS THE SINGLE SOURCE OF TRUTH FOR THE BLOG GEN AGENT. All POST_CONSTANTS values are hardcoded and not to be adjusted.
+
+# SECTION 2: POST_CONSTANTS
+- slug: biab-infill-guide
+- topic_slug: biab-cost
+- canonical: https://mirelleinspo.com/blog/biab-cost/biab-infill-guide
+- post_type: spoke
+- intent: informational
+- word_count: 1900 (top-3 SERP average ~1700-2000 words; spoke ceiling 2800; set at 1900)
+- image_count: 1 (USER OVERRIDE — hero only, NO body images, NO exceptions)
+- template: split-left
+- hero_dimensions: 800x800
+- category: Nail Care & Maintenance
+- publish_date: 2026-07-10
+- author: Mirellé Team
+
+# SECTION 3: CLUSTER SNAPSHOT
+- pillar_slug: biab-cost-guide
+- pillar_title: How Much Do BIAB Nails Cost?
+- pillar_primary_keyword: biab cost
+- this_post_slug: biab-infill-guide
+- this_post_role: spoke
+- keywords_to_avoid: biab cost, biab vs gel, how often biab infill, how to remove biab at home, biab vs gel-x, gel-nails-cost, nail-fills-cost, manicure-pricing, acrylic-nails-cost
+
+# SECTION 4: SERP ANALYSIS
+competitor_gaps:
+- "How many infills before you need a full soak-off/new set?" — confirmed 3+ sources (SalonGeek forum, DeLuxe Nina Nails "3-4 infills", NailKnowledge). No competitor frames this as a clear numeric answer.
+- "Can I do a BIAB infill myself at home?" — confirmed 2+ sources (TikTok DIY infill tutorials, Lemon8 "real user experience" guide). Editorial sites barely address DIY feasibility/risk honestly.
+- "Infill vs full removal — which do I actually need right now?" — confirmed 2+ sources (NailKnowledge Q&A, GelBottle removal guide) but no consumer-facing post frames it as a simple decision test.
+
+missing_semantic_territory: appointment time/duration expectations (30 min longer than new set), opaque-vs-clear coating removal-check rule, "rebalance" as interchangeable term with infill.
+
+our_strategic_approach: Lead with a plain-English explainer of what a BIAB infill physically is and why it exists (vs starting over), then immediately answer the two things reviewed competitors dodge — cost, and how many infills you can get before you need a fresh set — with concrete numbers, not vague ranges.
+
+top_3_word_count_estimates: ~1700-2000 words (Paint Nails London, Charisma Beauty Lounge, ASH White style explainers)
+top_3_keyword_density_baseline: 7 mentions average
+
+# SECTION 5: AUDIENCE INTELLIGENCE
+who_they_are: Existing or prospective BIAB wearers, mid-cycle, moderate nail-care literacy — not total beginners (they already know what BIAB is broadly) but unclear on the infill process/cadence/cost specifics.
+what_they_want_from_this_post: A clear explanation of what an infill actually involves, what it costs, and reassurance they're not damaging their nails by not doing a full removal every time.
+what_frustrates_them: Competitor content mixes infill info into generic "what is BIAB" overview posts; nobody gives a straight numeric answer on how many infills is safe before requiring a soak-off.
+top_5_pain_points:
+1. Not sure if skipping full removal repeatedly is damaging their nails
+2. Confused about infill vs rebalance vs full removal terminology
+3. Uncertain what a fair price is for an infill vs getting overcharged
+4. Nervous about DIY infill outcomes if they can't get a salon appointment
+5. Don't know how long to expect the appointment to take
+exact_user_phrases: "watch me prep for a much needed BIAB infill", "how many infills before a new set", "to infill or to soak off", "8 week Biab Infill with me", "needed an infill so bad after 6 week retention", "first-time BIAB nails guide", "biab infill process step by step", "can I use poly gel to infill", "how often do you get acrylic nail infills"
+intent_content_signals: wants direct numeric answers (weeks, £/$, number of infills), plain step explanation without jargon, reassurance tone, wants the "am I overdue" self-check.
+
+# SECTION 6: SEMANTIC KEYWORD DATA
+primary_keyword: biab infill
+keyword_variations: biab infills, builder gel infill, biab rebalance, infilling biab, biab fill, biab top up
+cluster_keywords: builder in a bottle infill, biab maintenance, biab appointment, gel infill process, nail infill cost, biab soak off, biab lasting time, biab nail growth gap
+lsi_terms: apex rebalancing, cuticle regrowth gap, nail lifting, nail prep, acetone soak, builder gel, gel polish overlay, natural nail growth, nail technician appointment, infill vs new set, structural integrity, nail bed health, buffing, UV/LED cure
+aeo_terms: "What is a BIAB infill?", "How much does a BIAB infill cost?", "How long does a BIAB infill take?", "Can I do a BIAB infill at home?", "How many BIAB infills can I get before a new set?", "Is BIAB infill the same as a rebalance?", "Does a BIAB infill hurt your natural nails?", "What happens if I skip a BIAB infill?"
+technical_terms: apex, rebalance, soak-off, overlay, cuticle prep, builder gel, e-file
+user_language: "topping up my nails", "filling the gap", "my nails have grown out", "getting my infill done", "the gap near my cuticle", "keeping the same set going", "stretching it to 5 weeks"
+
+# SECTION 7: VOICE AND AI QUERIES
+queries:
+1. What exactly happens during a BIAB infill appointment?
+2. How much does a BIAB infill cost in the UK and US?
+3. How long does a BIAB infill appointment take?
+4. Can I do a BIAB infill myself at home?
+5. How many BIAB infills can I have before I need a full removal?
+6. Is a BIAB infill the same thing as a rebalance?
+7. Does getting an infill instead of a removal actually protect my natural nails?
+8. What does it mean when my BIAB nails have "grown out"?
+9. How do I know if I need an infill or a full soak-off?
+10. Will my nail tech reshape or shorten my nails during an infill?
+11. Can I change my nail colour during a BIAB infill?
+12. What's the difference between BIAB infill and gel infill?
+13. Is a BIAB infill cheaper than a new set?
+14. What tools does a nail tech use for a BIAB infill?
+15. How soon after my last BIAB set should I book an infill?
+
+# SECTION 8: HOOK AND CTR
+selected_trigger: Trigger 1 — Curiosity Gap
+trigger_rationale: Reader suspects there's a "right" cadence/limit they don't know about (how many infills is safe) — classic curiosity-gap territory for informational/how-to-execution intent.
+title: BIAB Infills: What They Are and What They Cost
+title_char_count: 39 (under 55-60 range but locked per cluster_context.json title — do not rewrite)
+meta_description: Confused about BIAB infills? Here's exactly what happens, what it costs, and how many you can get before needing a full new set.
+meta_char_count: 133
+intro_hook_brief: Open by naming the exact confusion point — most people don't know infill ≠ removal, and don't know there's a real limit to how many infills they can safely get.
+first_h2_hook_direction: Phrase the first H2 as a direct voice-search-style question: "What Is a BIAB Infill, Exactly?"
+
+# SECTION 9: SEARCH JOURNEY
+reader_arrival_state: Slightly confused, mid-cycle BIAB wearer wanting a plain-English confirmation they're doing maintenance correctly.
+journey_arc:
+1. Confirm what an infill actually is (vs full removal) — remove confusion
+2. Answer the cost question directly with real numbers
+3. Address the "how many infills before a new set" gap competitors miss
+4. Cover DIY feasibility honestly
+5. Close with a simple self-check for "do I need an infill or a removal right now"
+promise_to_deliver: A complete, numbers-based explanation of BIAB infills — process, cost, and safe frequency — that resolves confusion competitors leave unanswered.
+exit_state: Reader feels confident booking (or doing) their next infill and knows exactly what to expect and pay.
+
+# SECTION 10: CONTENT STRUCTURE
+h1: BIAB Infills: What They Are and What They Cost
+h2_structure:
+1. What Is a BIAB Infill, Exactly?
+2. How Much Does a BIAB Infill Cost?
+3. What Happens During a BIAB Infill Appointment?
+4. How Many BIAB Infills Can You Get Before Needing a New Set?
+5. Can You Do a BIAB Infill at Home?
+6. Infill or Full Removal — How to Know Which You Need
+
+word_budget:
+introduction: 220 words
+conclusion: 180 words
+per_h2:
+- H2-1 (What Is a BIAB Infill): 280 words
+- H2-2 (Cost): 300 words
+- H2-3 (Appointment process): 320 words
+- H2-4 (How many before new set): 320 words
+- H2-5 (DIY at home): 280 words
+- H2-6 (Infill vs removal decision): 200 words
+
+# SECTION 11: INTERNAL LINKS
+all_internal_links:
+1. url_or_slug: /blog/biab-cost/biab-cost-guide
+   title: How Much Do BIAB Nails Cost?
+   anchor_text: full BIAB cost breakdown
+   placement_note: H2-2 (Cost) — natural link out to the pillar for full pricing context
+   link_type: cluster-pillar
+2. url_or_slug: /blog/biab-cost/how-often-biab-infill
+   title: How Often Do You Need BIAB Infills?
+   anchor_text: how often you need BIAB infills
+   placement_note: H2-4 — reinforces cadence question
+   link_type: cluster-spoke
+3. url_or_slug: /blog/biab-cost/biab-vs-gel
+   title: BIAB vs Gel Nails: What's the Difference?
+   anchor_text: how BIAB compares to a regular gel manicure
+   placement_note: H2-1 — when defining BIAB itself
+   link_type: cluster-spoke
+4. url_or_slug: /blog/biab-cost/how-to-remove-biab-at-home
+   title: How to Remove BIAB at Home
+   anchor_text: how to remove BIAB at home safely
+   placement_note: H2-6 — when reader decides they need removal not infill
+   link_type: cluster-spoke
+
+Total: 4 internal links (within 4-6 cap). No cross-site discovery links found meeting the strict relevance filter this round.
+
+# SECTION 12: VOICE AND TONE
+recommended_voice: Confident educator
+tone_characteristics: reassuring, direct with numbers, no hedging on the "how many infills" answer, plain-English over jargon, briskly practical
+language_style: short sentences, second-person "you", answers questions before elaborating, minimal analogy use
+audience_match: This reader wants resolution, not exploration — a confident, numbers-first voice matches their decision-mode mindset.
+
+# SECTION 13: EXTERNAL LINKS
+links:
+1. url: (nail industry infill/rebalance methodology — nailknowledge.org style source)
+   context: When explaining the opaque-vs-clear removal check rule in H2-6
+   anchor_suggestion: industry guidance on when to fully remove gel product
+2. url: (GelBottle-style official removal guide)
+   context: When contrasting infill with full soak-off in H2-6
+   anchor_suggestion: professional soak-off best practices
+
+# SECTION 14: EXECUTION PLAN
+
+## Block 1: Keyword Execution
+primary_keyword: biab infill
+top_3_density_baseline: 7
+total_mention_target: 9-10 total mentions
+first_100_words_plan:
+- mention_1: sentence 2 of introduction — naming the topic directly after the hook
+- mention_2: sentence 4-5 of introduction — reinforcing before transitioning to H2-1
+first_half_target: 6 mentions — first ~950 words (denser)
+second_half_target: 3-4 mentions — second ~950 words
+strong_tag_rule: every mention of "BIAB infill" wrapped in <strong> tags, no exceptions
+keywords_to_avoid_active: biab cost, biab vs gel, how often biab infill, how to remove biab at home, biab vs gel-x, gel-nails-cost, nail-fills-cost, manicure-pricing, acrylic-nails-cost
+
+## Block 2: Word Budget
+total_target: 1900 words (±50)
+introduction: 220
+conclusion: 180
+h2_budgets:
+1. What Is a BIAB Infill, Exactly? — 280 words — low complexity
+2. How Much Does a BIAB Infill Cost? — 300 words — medium complexity
+3. What Happens During a BIAB Infill Appointment? — 320 words — medium complexity
+4. How Many BIAB Infills Can You Get Before Needing a New Set? — 320 words — medium complexity
+5. Can You Do a BIAB Infill at Home? — 280 words — medium complexity
+6. Infill or Full Removal — How to Know Which You Need — 200 words — low complexity
+tracking_rule: Track running word count after each H2. Cut before moving on if over budget.
+
+## Block 3: Image Plan
+total_images: 1 (USER OVERRIDE)
+hero_image: frontmatter only — never in body
+body_images: 0 — NO body images this post, per explicit user override
+assignments: none — image_plan intentionally empty
+image_type_rule: N/A (no body images)
+path_rule: /images/blog/biab-cost/biab-infill-guide/filename.webp (hero only)
+
+## Block 4: Opening Technique Assignments
+- Introduction: Technique 1 — The Claim
+- H2-1: Technique 2 — The Definition Reveal
+- H2-2: Technique 3 — The Reframe
+- H2-3: Technique 4 — The Walkthrough
+- H2-4: Technique 1 — The Claim
+- H2-5: Technique 3 — The Reframe
+- H2-6: Technique 1 — The Claim (conclusion pairing)
+- Conclusion: Technique 1 — The Claim
+banned_opener_rule: Check every opener against banned_opening_approaches list before writing second sentence.
+
+## Block 5: Link Placements
+1. anchor_text: full BIAB cost breakdown
+   full_url: /blog/biab-cost/biab-cost-guide
+   place_in_section: How Much Does a BIAB Infill Cost?
+   placement_context: after stating infill price range, pointing to full pillar cost breakdown
+   link_type: cluster-pillar
+2. anchor_text: how often you need BIAB infills
+   full_url: /blog/biab-cost/how-often-biab-infill
+   place_in_section: How Many BIAB Infills Can You Get Before Needing a New Set?
+   placement_context: linking cadence question to dedicated spoke
+   link_type: cluster-spoke
+3. anchor_text: how BIAB compares to a regular gel manicure
+   full_url: /blog/biab-cost/biab-vs-gel
+   place_in_section: What Is a BIAB Infill, Exactly?
+   placement_context: when distinguishing BIAB from regular gel infill process
+   link_type: cluster-spoke
+4. anchor_text: how to remove BIAB at home safely
+   full_url: /blog/biab-cost/how-to-remove-biab-at-home
+   place_in_section: Infill or Full Removal — How to Know Which You Need
+   placement_context: when reader's answer points to removal not infill
+   link_type: cluster-spoke
+
+## Block 6: AEO/GEO Plan
+aeo_assignments:
+1. aeo_term: "What is a BIAB infill?"
+   assigned_to_section: What Is a BIAB Infill, Exactly?
+   execution: Direct 2-3 sentence answer immediately after H2, before elaboration.
+2. aeo_term: "How much does a BIAB infill cost?"
+   assigned_to_section: How Much Does a BIAB Infill Cost?
+   execution: Direct answer with UK/US figures immediately after H2.
+3. aeo_term: "How many BIAB infills can I get before a new set?"
+   assigned_to_section: How Many BIAB Infills Can You Get Before Needing a New Set?
+   execution: Direct numeric answer (3-4 infills) immediately after H2.
+4. aeo_term: "Can I do a BIAB infill at home?"
+   assigned_to_section: Can You Do a BIAB Infill at Home?
+   execution: Direct yes/with-caveats answer immediately after H2.
+
+geo_entity_statements:
+1. entity: BIAB infill (vs rebalance vs full removal)
+   assigned_to_section: What Is a BIAB Infill, Exactly?
+   execution: One confident declarative sentence distinguishing the three terms.
+2. entity: Apex
+   assigned_to_section: What Happens During a BIAB Infill Appointment?
+   execution: Clear definition sentence — the structural high point of the nail that shifts as nails grow.
+
+## Block 7: Active Constraints
+em_dash_banned: yes — no long em dashes anywhere.
+banned_vocab_watch: "elevate", "seamless", "journey", "unlock", "game-changer", "must-have", "effortless"
+british_english_active: colour, recognise, -ise, -our — every instance
+keyword_density_reminder: Count mentions after every 2 H2s. Track toward 9-10 total, denser in first half.
+image_path_reminder: N/A — hero only, no body image paths needed
+internal_link_url_reminder: full paths only, /blog/biab-cost/[slug] format
+hero_image_reminder: hero = frontmatter only, never in body
+strong_tag_reminder: every "biab infill" mention wrapped in <strong> tags
