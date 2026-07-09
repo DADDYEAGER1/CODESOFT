@@ -1,0 +1,251 @@
+# BLOG GEN AGENT INPUT FILE — SOLO MODE
+**SINGLE SOURCE OF TRUTH.** All values in POST_CONSTANTS and section_14 are hardcoded. Do not ask, adjust, or override.
+
+---
+
+## SECTION 2 — POST_CONSTANTS
+- slug: `dip-vs-gel-which-lasts-longer`
+- canonical: `/blog/dip-vs-gel-which-lasts-longer` (no fixed site domain provided — Blog Gen Agent should prefix the confirmed root domain)
+- post_type: standalone
+- intent: comparison
+- word_count: **2400** (top-3 SERP average ≈2,150–2,400 words; standalone ceiling 3500 — set at floor)
+- image_count: **8** (comparison-intent rule: 8 total incl. hero)
+- template: center
+- hero_dimensions: 1200x630
+- category: Nail Care / Manicure Comparisons
+- publish_date: 2026-07-10
+- author: [Site Team]
+
+---
+
+## SECTION 4 — SERP ANALYSIS
+**Competitor gaps (2+ source validated):**
+- Almost no top result addresses the **dermatologist-confirmed health tradeoff** — that dip is *not* automatically safer or healthier despite lasting longer (confirmed: Cleveland Clinic + HuffPost/derm sourcing). Most competitors imply "longer-lasting = better" without this nuance.
+- Builder gel vs. soft soak-off gel distinction is rarely made clear — many searchers don't realize "gel" can mean two very different durability tiers (2–3wk soft gel vs 3–4wk builder gel, nearly matching dip). Confirmed: Erica's ATA, Quora threads.
+- Cost-over-time math (frequency of visits × price) is mentioned but rarely calculated concretely for the reader.
+- "Dip flu" / cyanoacrylate vapor sensitivity reaction is a real but under-covered angle (found once, single-source — flagged, use cautiously, don't overstate).
+
+**Missing semantic territory:** builder gel vs soft gel distinction, real cost-per-month math, nail-art flexibility angle, "which chips first" reader concern, sensitive/thin nail guidance.
+
+**Our strategic approach:** Most competitors give a flat "dip lasts longer" verdict and stop there. Our angle: confirm dip *does* generally last longer (3–5 weeks vs. gel's 2–3 weeks) but immediately complicate the "so dip wins" assumption with the health tradeoff and the builder-gel exception — giving the reader a genuinely useful decision framework instead of a hollow durability score.
+
+**Image count validation:** Comparison posts across SERP consistently use 6-10 supporting images (before/after, side-by-side finish shots) — 8 aligns well.
+
+---
+
+## SECTION 5 — AUDIENCE INTELLIGENCE
+**Who they are:** Regular manicure-getters (salon or DIY) comparing two specific services before booking or buying supplies — not nail art hobbyists, not beginners to nails in general. Often deciding between rebooking the same service or switching.
+
+**What they want:** A direct, numeric answer (weeks of wear) plus a decision they can act on today — not a generic "it depends" essay.
+
+**What frustrates them:** Vague "both are great!" articles that never actually pick a winner; salon-written content that's clearly upselling one service; conflicting numbers across sites (2 weeks vs 5 weeks) with no explanation of why the range is so wide.
+
+**Top 5 pain points:**
+1. Gel chips within days for some, but articles all promise 2-3 weeks — they want to know what determines this
+2. Confusion over cost — is dip really "worth it" long-term or just more expensive upfront
+3. Worry about nail damage from either, especially from acetone soak-off and filing
+4. Uncertainty about which is actually easier/faster to remove without harming nails
+5. Not realizing "gel" isn't one thing — soft gel vs builder gel have very different lifespans
+
+**Exact user phrases (from Quora/community language):**
+- "which fake nails last the longest"
+- "dip manicure vs gel polish"
+- "it's worse for your nails" (re: dip powder health tradeoff)
+- "my nails don't feel as heavy" (dip vs gel weight comparison)
+- "I almost broke a nail" (durability under real activity)
+- "does dip powder strengthen nails"
+- "how long does a full set... last before chipping and cracking"
+- "is dip or gel better for your nails"
+- "dip powder is just so much cleaner" (perception vs. reality re: chemical smell)
+- "gel often feels lighter and more flexible"
+
+**Intent content signals:** Wants a clear numeric verdict early; responds to direct comparison framing (X vs Y tables/structure); wants "best for you if..." style resolution; skeptical of salon-authored puff pieces; appreciates real-world context (activity level, job type) over lab-perfect claims.
+
+---
+
+## SECTION 6 — SEMANTIC KEYWORD DATA
+- **primary_keyword:** dip vs gel — which lasts longer
+- **keyword_variations:** dip powder vs gel nails, gel vs dip powder, dip nails vs gel nails, does dip or gel last longer, dip or gel which is better, gel or dip powder manicure
+- **cluster_keywords:** dip powder manicure, gel manicure, gel polish durability, dip powder durability, builder gel vs dip, soak-off gel, SNS nails, manicure longevity, chip-resistant manicure, nail enhancement comparison, best long-lasting manicure, dip powder removal, gel nail removal
+- **lsi_terms:** cyanoacrylate resin, UV/LED curing, acrylic powder, soak-off gel polish, builder gel, nail lifting, chip resistance, acetone removal, nail bed damage, bonding agent, top coat, natural nail health, salon manicure cost, nail fill vs reapplication, gel topcoat over dip
+- **aeo_terms:** How long does dip powder last compared to gel? Is dip powder more durable than gel nail polish? Does gel or dip last longer without chipping? Which lasts longer, dip or gel nails? Is dip powder worse for your nails than gel? How much longer does dip last than gel? What is the difference between dip powder and gel in terms of wear time? Why does dip powder last longer than gel polish?
+- **technical_terms:** cyanoacrylate, soak-off gel, builder gel, UV/LED lamp curing, acrylic powder polymer, activator/sealant, nail plate, in-fill
+- **user_language:** "chips within days," "lasts forever," "feels heavy," "feels natural," "worth the extra cost," "salon-worthy at home," "doesn't ruin my nails," "goes the distance," "holds up," "grows out"
+
+---
+
+## SECTION 7 — VOICE AND AI QUERIES
+1. How long does dip powder last compared to gel nails?
+2. Does dip powder really last longer than gel polish?
+3. Which is more durable, dip or gel manicure?
+4. Is dip powder worse for your nails than gel?
+5. Why does dip last longer than gel?
+6. How many weeks does a gel manicure last before chipping?
+7. How many weeks does dip powder last before it needs redoing?
+8. Is gel or dip powder easier to remove?
+9. Does dip powder damage your nails more than gel?
+10. Is dip powder more expensive than gel nails?
+11. Can builder gel last as long as dip powder?
+12. What lasts longer, gel polish or dip powder, for people who work with their hands a lot?
+13. Is dip powder safer than gel because it skips UV light?
+14. Which chips faster, gel or dip?
+15. Do dip nails or gel nails weaken your natural nails over time?
+
+---
+
+## SECTION 8 — HOOK AND CTR
+**selected_trigger:** Trigger 1 — Curiosity Gap
+**trigger_rationale:** Reader is in decision mode, suspects the "obvious" answer (dip wins) is incomplete — perfect fit for a curiosity-gap resolution.
+
+**title:** "Dip vs. Gel: Which Actually Lasts Longer?" *(43 chars — adjust with a qualifier to hit 55-60; suggested: "Dip vs. Gel Nails: Which Actually Lasts Longer in 2026?")*
+**title_char_count:** 57
+**meta_description:** "Dip powder or gel — which really holds up longer? See real wear-time data, the health tradeoff most guides skip, and how to pick for your nails."
+**meta_char_count:** 148
+
+**intro_hook_brief:** Open by naming the assumption most readers already hold (dip lasts longer) and immediately flag that it's not the full story — the real answer depends on which "gel" you're getting and what you're willing to trade for extra wear time.
+
+**first_h2_hook_direction:** Phrase the first H2 as a direct voice-search-style question ("How Long Does Each One Actually Last?") and answer it with hard numbers in the first two sentences.
+
+---
+
+## SECTION 9 — SEARCH JOURNEY
+**reader_arrival_state:** Mid-decision, slightly uncertain, wants a confident resolution rather than more open-ended pros/cons.
+**journey_arc:**
+- Confirm the exact wear-time numbers for both (resolve the core question fast)
+- Explain *why* the gap exists (chemistry/application difference)
+- Complicate the easy "dip wins" take with health, cost, and removal tradeoffs
+- Address the builder-gel exception (nuance that differentiates this post)
+- Close with a clear "choose X if Y" decision framework
+
+**promise_to_deliver:** A definitive, numbers-backed verdict on which lasts longer, plus the tradeoffs that make "lasts longer" not automatically "the better choice."
+**exit_state:** Confident and ready to book/buy — feels like they got a real answer, not a shrug.
+
+---
+
+## SECTION 10 — CONTENT STRUCTURE
+**h1:** Dip vs. Gel: Which Actually Lasts Longer?
+
+**h2_structure:**
+1. How Long Does Each One Actually Last? (direct answer, voice-query phrased)
+2. Why Dip Powder Tends to Outlast Gel Polish
+3. The Builder Gel Exception (Gel That Lasts Almost as Long as Dip)
+4. Is Longer Wear Worth It? The Health Tradeoff Nobody Mentions
+5. Cost Over Time: Does Dip's Extra Durability Save You Money?
+6. Removal: Which Is Actually Harder on Your Nails?
+7. Which Should You Choose? A Simple Decision Framework
+8. FAQ
+
+**word_budget:**
+- introduction: 220
+- conclusion: 180
+- H2-1 (How Long Does Each Last): 350
+- H2-2 (Why Dip Outlasts Gel): 300
+- H2-3 (Builder Gel Exception): 300
+- H2-4 (Health Tradeoff): 380
+- H2-5 (Cost Over Time): 280
+- H2-6 (Removal): 250
+- H2-7 (Decision Framework): 240
+- FAQ: 200 (remaining buffer, distributed across 4-5 Q&As)
+
+---
+
+## SECTION 11 — INTERNAL LINKS
+No cluster context or site provided — no internal links compiled. Blog Gen Agent should insert internal links to any existing site content on: gel nail care guides, dip powder aftercare, nail health/damage articles, or acrylic comparisons, if available on the target site.
+
+---
+
+## SECTION 12 — VOICE AND TONE
+**recommended_voice:** Confident, no-nonsense beauty editor — decisive without being salesy.
+**tone_characteristics:** Direct verdicts (not wishy-washy); numbers-first; empathetic to decision fatigue; skeptical of salon-marketing claims; conversational "you" address.
+**language_style:** Short, declarative sentences for verdicts; slightly longer explanatory sentences for the "why"; second person throughout; avoids jargon without definition.
+**audience_match:** This reader wants resolution, not another list of pros and cons — a confident, editorial voice earns trust faster than a hedging one.
+
+---
+
+## SECTION 13 — EXTERNAL LINKS
+1. **Cleveland Clinic** — "Dip Nails: Side Effects vs. Gel & Acrylic" — use in health tradeoff (H2-4) section for dermatologist-sourced authority on dip powder risks. Anchor suggestion: "dermatologists caution that dip powder isn't automatically the healthier choice"
+2. **Byrdie** — "What's the Difference Between Dip Powder and Gel Nails? Manicurists Explain" (Oct 2024) — use for application/removal process authority (H2-2 or H2-6). Anchor suggestion: "manicurists explain the core application difference"
+3. **HuffPost Life** — "Powder Dip vs. Gel Manicures: Which Is Better For Your Nails?" — use in H2-4 for the "it's worse for your nails" dermatologist quote context. Anchor suggestion: "some dermatologists rate dip as harder on nail health than gel"
+
+---
+
+## SECTION 14 — EXECUTION PLAN
+
+### Block 1: Keyword Execution
+- primary_keyword: "dip vs gel — which lasts longer" (write naturally as "dip vs. gel" / "which lasts longer" — don't force the exact string awkwardly)
+- top_3_density_baseline: ~6 mentions (estimated from competitor analysis)
+- total_mention_target: **8-9 mentions total**
+- first_100_words_plan: Mention 1 in sentence 1-2 of intro (framing the question); Mention 2 in sentence 4-5 of intro (setting up the "not so simple" hook)
+- first_half_target: 5 mentions (first 1200 words — denser, since H2-1 and H2-2 are keyword-core)
+- second_half_target: 3-4 mentions (remaining 1200 words)
+- strong_tag_rule: every mention wrapped in `<strong>`
+- keywords_to_avoid_active: none (solo mode, no cluster constraints)
+
+### Block 2: Word Budget
+- total_target: 2400 words (±50)
+- introduction: 220
+- conclusion: 180
+- h2_budgets:
+  1. How Long Does Each One Actually Last? — 350 words — complexity: low
+  2. Why Dip Powder Tends to Outlast Gel Polish — 300 words — complexity: medium
+  3. The Builder Gel Exception — 300 words — complexity: medium
+  4. Health Tradeoff Nobody Mentions — 380 words — complexity: high
+  5. Cost Over Time — 280 words — complexity: medium
+  6. Removal: Which Is Harder on Nails — 250 words — complexity: low
+  7. Decision Framework — 240 words — complexity: low
+  8. FAQ — 200 words — complexity: low
+- tracking_rule: check running total after every H2; cut before moving on if over.
+
+### Block 3: Image Plan
+- total_images: 8
+- hero_image: frontmatter only, never in body
+- body_images: 7
+- assignments:
+  1. Place after intro — side-by-side gel vs dip manicure finish comparison
+  2. Place after H2-1 — close-up of dip powder manicure showing texture/thickness
+  3. Place after H2-2 — close-up of glossy gel manicure finish
+  4. Place after H2-3 — builder gel manicure example
+  5. Place after H2-4 — natural nail health / bare nail close-up (post-removal healthy nails)
+  6. Place after H2-5 — flat-lay of salon manicure tools/cost context imagery
+  7. Place after H2-7 — final aspirational shot of chosen manicure style
+- image_type_rule: inspirational nail photography only — no infographics, no charts.
+- path_rule: `/images/blog/dip-vs-gel-which-lasts-longer/filename.webp` (no topic_slug since solo mode — Blog Gen Agent adjust to site convention)
+
+### Block 4: Opening Technique Assignments
+- Introduction: Technique 1 (The Claim) — state the "it's not that simple" claim upfront
+- H2-1: Technique 3 (The Reframe) — reframe from vague claims to hard numbers
+- H2-2: Technique 2 (The Question) — "why" framing
+- H2-3: Technique 1 (The Claim) — "here's the exception"
+- H2-4: Technique 3 (The Reframe) — reframe "longer = better"
+- H2-5: Technique 2 (The Question)
+- H2-6: Technique 1 (The Claim)
+- H2-7: Technique 3 (The Reframe)
+- Conclusion: Technique 1 (The Claim)
+- banned_opener_rule: check every opener against banned list before second sentence.
+
+### Block 5: Link Placements
+1. Cleveland Clinic — place in H2-4 (Health Tradeoff) — context: citing dermatologist caution on dip powder risks — link_type: external-authority
+2. Byrdie — place in H2-2 or H2-6 — context: manicurist-sourced application/removal explanation — link_type: external-authority
+3. HuffPost Life — place in H2-4 — context: "worse for your nails" dermatologist framing — link_type: external-authority
+
+### Block 6: AEO/GEO Plan
+- aeo_assignments:
+  - "How long does dip powder last compared to gel?" → H2-1 → direct 2-3 sentence answer immediately after heading
+  - "Does dip powder last longer than gel?" → H2-1 → covered in same direct answer
+  - "Is dip powder worse for your nails than gel?" → H2-4 → direct answer paragraph immediately after heading
+  - "Can builder gel last as long as dip powder?" → H2-3 → direct answer immediately after heading
+  - "Is dip powder more expensive than gel?" → H2-5 → direct answer immediately after heading
+- geo_entity_statements:
+  - "Builder gel" → H2-3 → clear declarative definition distinguishing it from soft soak-off gel
+  - "Cyanoacrylate" → H2-2 → declarative definition of the bonding resin used in dip powder
+  - "Soak-off gel polish" → H2-2 → declarative definition
+
+### Block 7: Active Constraints
+- em_dash_banned: yes, replace with comma/period/parentheses
+- banned_vocab_watch: "elevate," "game-changer," "unlock," "seamless," "journey," "dive into," "delve"
+- british_english_active: colour, recognise, -ise, -our (if site uses British English — confirm; US spelling may be more appropriate for a US-market beauty comparison post, flag to Blog Gen Agent to confirm regional spelling before writing)
+- keyword_density_reminder: check after every 2 H2s, front-load density in first half
+- image_path_reminder: `/images/blog/dip-vs-gel-which-lasts-longer/filename.webp`
+- internal_link_url_reminder: n/a (none compiled, solo mode)
+- hero_image_reminder: frontmatter only
+- strong_tag_reminder: every primary keyword mention wrapped in `<strong>`, scan after every paragraph
