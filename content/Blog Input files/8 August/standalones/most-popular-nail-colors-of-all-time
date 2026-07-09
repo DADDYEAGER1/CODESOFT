@@ -1,0 +1,238 @@
+# INPUT FILE — Blog Gen Agent | SOLO MODE
+
+## SECTION 1: FILE AUTHORITY
+THIS FILE IS THE SINGLE SOURCE OF TRUTH FOR THE BLOG GEN AGENT. All values in POST_CONSTANTS are hardcoded — do not ask, adjust, or override. All keywords, H2 structure, audience intelligence, internal links, and tone defined here must be followed exactly.
+
+## SECTION 2: POST_CONSTANTS
+- slug: most-popular-nail-colors-of-all-time
+- topic_slug: nail-colors (fits existing site taxonomy — nails-by-color)
+- canonical: https://mirelleinspo.com/blog/nail-colors/most-popular-nail-colors-of-all-time
+- post_type: standalone
+- intent: informational
+- word_count: 2400 (±50 tolerance)
+- image_count: 9
+- template: center
+- hero_dimensions: 1200x630
+- category: Nail Colors
+- publish_date: 2026-07-10
+- author: Mirellé Team
+
+## SECTION 3: CLUSTER SNAPSHOT
+SOLO MODE — omitted.
+
+## SECTION 4: SERP ANALYSIS
+**Competitor gaps (2+ source validated):**
+- No competitor uses real sales/longevity data. Essie's Ballet Slippers (a bottle sells every 4 seconds in the US, 14M bottles/year, 40+ year run) is publicly available and unused by any ranking competitor.
+- No competitor builds a real decade-by-decade historical timeline (1920s moon manicure → 2020s clean girl). All "of all time" claims are unsubstantiated vibes.
+- No competitor addresses "which color goes with everything / is safest to pick" — validated on Quora (professional/classy framing) AND Pinterest ("what nail color goes with everything" is an active Pinterest idea board).
+- All competitors are single-brand shills (OPI-only or Essie-only roundups) — no cross-brand, evidence-based ranking exists.
+- Red nail theory / psychology angle (2008 UBC study on red + attraction perception) is mentioned once in passing by one competitor, never explained or cited properly.
+
+**Missing semantic territory:** "best-selling nail polish of all time," "iconic nail colors decade," "nail color psychology," "safest nail color to pick," "nail color that never goes out of style."
+
+**Our strategic approach:** Build the only data-backed, decade-spanning authority piece on this topic — anchor claims in real sales figures and documented cultural history (Marilyn Monroe/red, Chanel Vamp/Uma Thurman, Essie's minute-by-minute sales), not vibes. Resolve the reader's real anxiety: "which color do I pick that won't feel dated and is safe to request."
+
+**Image count validation:** Standard 9-image allocation (hero + 8 body) fits an informational piece of this depth — no infographic/comparison-chart imagery, all inspirational nail photography per image_type_rule.
+
+## SECTION 5: AUDIENCE INTELLIGENCE
+**Who they are:** Broad-appeal searcher — not a trend-chaser. Someone about to book a salon appointment or restock polish who wants a safe, defensible, evidence-backed answer rather than another opinion-only listicle. Likely torn between "what everyone says is classic" and wanting actual proof.
+
+**What they want:** A definitive, authoritative answer — not 15 more options to agonize over. They want to know what's ACTUALLY been popular (backed by something real) vs. what bloggers claim is popular.
+
+**What frustrates them:** Every existing article is a thin, product-shilling listicle with zero evidence. Vague claims ("timeless," "iconic") repeated with no backing. Brand-locked content (all-OPI or all-Essie) that doesn't reflect the real cross-brand landscape.
+
+**Top 5 pain points:**
+1. Can't tell real popularity from marketing copy — every "iconic" claim is unsourced
+2. Wants ONE safe, versatile color recommendation, not an overwhelming list
+3. Confused about whether trendy = popular, or if there's a difference (there is)
+4. Wants to know it'll suit their skin tone without reading a whole separate guide
+5. Wants to sound informed at the salon, not indecisive
+
+**Exact user phrases (from Quora/Pinterest research):**
+- "what nail color goes with everything"
+- "most professional nail color"
+- "classiest nail colors"
+- "which color nail polish do girls love the most"
+- "go-to nail color that always makes you feel luxurious"
+- "colors that never go out of style"
+- "safest nail color to pick"
+- "nail color that works with any outfit"
+
+**Intent content signals:** Wants confident, declarative answers (not "it depends"). Responds to real numbers/proof points. Wants a short, decisive "if you only pick one" moment. Wants historical credibility woven in, not a separate history lesson. Needs a direct link to "which shade for MY skin tone" as a next step, not buried in this piece.
+
+## SECTION 6: SEMANTIC KEYWORD DATA
+- primary_keyword: most popular nail colors of all time
+- keyword_variations: most popular nail color of all time, best selling nail colors of all time, most iconic nail colors, all-time favorite nail colors, timeless nail colors, classic nail polish colors, best-selling nail polish shades, most requested nail colors
+- cluster_keywords: nail polish history, iconic nail shades, best selling nail polish, nail color trends by decade, evergreen nail colors, salon-requested nail colors, red nail polish history, nude nail polish classics, French manicure history, nail color that never goes out of style
+- lsi_terms: Essie Ballet Slippers, OPI Bubble Bath, Chanel Rouge Noir, red nail theory, French manicure origin, moon manicure, nail lacquer history, Revlon nail polish, salon staple color, nail polish longevity, vintage manicure, cult classic polish, best-selling beauty product, nail color psychology, universally flattering nail color, safe nail color choice, wearable nail shade, classic red polish, sheer pink nude, timeless manicure
+- aeo_terms: What is the most popular nail color of all time?, What nail color goes with everything?, What is the best-selling nail polish ever?, Why is red the most popular nail color?, What nail color is considered the most professional?, Has nail polish popularity changed over the decades?, What is the safest nail color to pick?, Is nude or red more popular for nails?, What nail colors have never gone out of style?, Why do people love Essie Ballet Slippers?
+- technical_terms: crème finish, jelly finish, lacquer, top coat, undertone, sheer formula, pigmentation, gel polish, chip-resistant formula
+- user_language: goes with everything, never fails, safe bet, my go-to, can't go wrong with, timeless, my ride-or-die color, classic for a reason, salon staple, works with any outfit
+
+## SECTION 7: VOICE AND AI QUERIES
+1. What is the most popular nail color of all time?
+2. What nail color goes with literally everything?
+3. What is the best-selling nail polish shade ever made?
+4. Why has red nail polish stayed popular for decades?
+5. What nail color is considered the safest or most professional?
+6. Has the most popular nail color changed over time?
+7. What nail color did Marilyn Monroe wear?
+8. Is nude nail polish more popular than red?
+9. What is the history of the French manicure?
+10. How many bottles of nail polish does Essie sell?
+11. What nail color never goes out of style?
+12. What nail color makes hands look the most put-together?
+13. What is red nail theory?
+14. Which nail color is most requested in salons?
+15. What is the number one best-selling Essie shade?
+16. What nail colors were popular in each decade?
+
+## SECTION 8: HOOK AND CTR
+- selected_trigger: Trigger 1 — Curiosity Gap
+- trigger_rationale: Reader suspects existing "popular color" content is just opinion — the hook promises the actual evidence-backed answer, resolving that suspicion directly.
+- title: The Most Popular Nail Colors of All Time (Data-Backed)
+- title_char_count: 55
+- meta_description: Every "iconic" nail color list is a guess. We looked at real sales data and 100 years of history to find out which shades actually earned it.
+- meta_char_count: 148
+- intro_hook_brief: Open by naming the frustration directly — every "most popular" list is unsourced opinion — then promise the piece is different because it's built on actual sales figures and a real decade-by-decade record, not vibes.
+- first_h2_hook_direction: Phrase the first H2 as a direct voice-search question resolving the curiosity gap immediately — "So What IS the Most Popular Nail Color of All Time?" — deliver the single clearest answer (red) with the strongest data point up front before elaborating.
+
+## SECTION 9: SEARCH JOURNEY
+- reader_arrival_state: Skeptical and slightly overwhelmed — has read vague "timeless color" listicles before and wants something they can actually trust.
+- journey_arc:
+  1. Land skeptical of vague "iconic" claims → immediately get a direct, evidence-backed answer (red, with data)
+  2. See the historical record (decade-by-decade) that proves it isn't just an opinion
+  3. Get the full ranked list of all-time colors, each with a real proof point (sales, longevity, or cultural anchor)
+  4. Resolve the "which one is safest for me" anxiety with the goes-with-everything section
+  5. Exit with one confident pick and a clear next step for personalizing it to their skin tone
+- promise_to_deliver: This is the only "most popular nail colors" list built on real data and history, not opinion — you'll leave knowing exactly which color to trust and why.
+- exit_state: Confident and decided — they know which color to book next, and why it's not just trendy but proven.
+
+## SECTION 10: CONTENT STRUCTURE
+**H1:** The Most Popular Nail Colors of All Time (And the Data Behind Them)
+
+**H2 structure:**
+1. So What IS the Most Popular Nail Color of All Time?
+2. How Nail Color Popularity Has Changed Over 100 Years
+3. The Most Popular Nail Colors of All Time, Ranked
+4. Why Red Has Never Lost Its Top Spot
+5. The Nude/Pink Family: Quietly the Real Winner
+6. What Nail Color Goes With Literally Everything?
+7. The Most Popular Nail Colors by Decade (Quick Reference)
+8. Finding Your Most Flattering Version of a Classic Color
+
+**Word budget:**
+- Introduction: 220
+- Conclusion: 180
+- H2-1 (So what IS it): 220
+- H2-2 (100 years history): 340
+- H2-3 (Ranked list): 480
+- H2-4 (Why red): 260
+- H2-5 (Nude/pink family): 260
+- H2-6 (Goes with everything): 240
+- H2-7 (By decade quick reference): 300
+- H2-8 (Flattering version / skin tone bridge): 200 (Total: 2400)
+
+## SECTION 11: INTERNAL LINKS
+1. url: /work-nails/work-appropriate-nail-colors | title: Work-Appropriate Nail Colors | anchor: "our full breakdown of which shades read as professional in different industries" | placement: H2-6 (goes with everything) | type: cross-site
+2. url: /blog/skin-tone/nail-colors-for-every-skin-tone | title: Nail Colors for Every Skin Tone | anchor: "the complete guide to which classic shades actually flatter your undertone" | placement: H2-8 (flattering version) | type: cross-site
+3. url: /blog/skin-tone/nail-colors-that-look-good-on-every-skin-tone | title: Nail Colors That Look Good on Every Skin Tone | anchor: "the shortlist of shades proven to work across every complexion" | placement: H2-6 (goes with everything) | type: cross-site
+4. url: /blog/nails-by-color/nail-colors | title: Nail Colors: The Ultimate Guide to Every Trending Shade in 2026 | anchor: "see what's trending in 2026 if you want something newer" | placement: Conclusion | type: cross-site
+
+(4 links total — within 4-6 cap. All cross-site, descriptive, authority-passing anchors per rule. No gallery link — not a pillar post.)
+
+## SECTION 12: VOICE AND TONE
+- recommended_voice: Confident, evidence-led editor — the friend who actually did the research
+- tone_characteristics: Declarative (not wishy-washy "it depends"), lightly skeptical of hype, precise with numbers, warm but not gushing, resolves debates rather than presenting both sides forever
+- language_style: Direct sentences, second person "you," minimal hedging, uses specific numbers and named sources as authority signals rather than adjectives like "amazing"
+- audience_match: This reader is tired of vague superlatives — a voice that leads with proof and commits to an answer directly respects their intelligence and resolves the exact frustration that brought them here
+
+## SECTION 13: EXTERNAL LINKS
+1. url: https://www.newbeauty.com/view/essie-unveils-best-selling-nail-polishes-of-all-time | context: citing Essie Ballet Slippers sales data (bottle every 4 seconds) | anchor_suggestion: "Essie's own sales figures"
+2. url: https://theeverygirl.com/top-requested-opi-nail-polish-colors/ | context: citing OPI's most-requested salon shades | anchor_suggestion: "OPI's most-requested shades in salons"
+3. url: https://www.livethatglow.com/a-history-of-nail-colour-and-class/ | context: citing the 2008 UBC red nail theory study | anchor_suggestion: "a 2008 University of British Columbia study"
+
+## SECTION 14: EXECUTION PLAN
+
+### Block 1: Keyword Execution
+- primary_keyword: most popular nail colors of all time
+- top_3_density_baseline: 7
+- total_mention_target: 10
+- first_100_words_plan:
+  - mention_1: sentence 1-2 of intro — naming the topic directly in the hook
+  - mention_2: sentence 4-5 of intro — restated when promising the data-backed approach
+- first_half_target: 6 mentions — first 1200 words (H2-1 through H2-4)
+- second_half_target: 4 mentions — second 1200 words (H2-5 through conclusion)
+- strong_tag_rule: every one of the 10 mentions wrapped in `<strong>` tags, no exceptions
+- keywords_to_avoid_active: none (solo mode, no cluster wall)
+
+### Block 2: Word Budget
+- total_target: 2400 words (±50)
+- introduction: 220
+- conclusion: 180
+- h2_budgets:
+  1. So What IS the Most Popular Nail Color of All Time? — 220 words — low complexity
+  2. How Nail Color Popularity Has Changed Over 100 Years — 340 words — high complexity
+  3. The Most Popular Nail Colors of All Time, Ranked — 480 words — high complexity
+  4. Why Red Has Never Lost Its Top Spot — 260 words — medium complexity
+  5. The Nude/Pink Family: Quietly the Real Winner — 260 words — medium complexity
+  6. What Nail Color Goes With Literally Everything? — 240 words — medium complexity
+  7. The Most Popular Nail Colors by Decade (Quick Reference) — 300 words — medium complexity
+  8. Finding Your Most Flattering Version of a Classic Color — 200 words — low complexity
+- tracking_rule: check running total after every H2; cut before advancing if over budget
+
+### Block 3: Image Plan
+- total_images: 9
+- hero_image: frontmatter only, never in body
+- body_images: 8
+- assignments:
+  1. place_after: H2-1 | context: close-up classic red manicure, glossy finish
+  2. place_after: H2-2 | context: split/collage-style red carpet or vintage-inspired red manicure evoking Old Hollywood glamour
+  3. place_after: H2-3 (early) | context: sheer nude/ballet-pink manicure, clean close-up
+  4. place_after: H2-3 (late) | context: French manicure, classic white tip
+  5. place_after: H2-4 | context: bold red manicure on hand, editorial style
+  6. place_after: H2-5 | context: soft milky/nude manicure, minimalist styling
+  7. place_after: H2-6 | context: neutral versatile manicure shown with varied outfit/accessory styling
+  8. place_after: H2-7 | context: manicure grid or seasonal-style flatlay suggesting variety across decades
+- image_type_rule: all inspirational nail photography — no infographics, no timelines-as-charts, no comparison graphics
+- path_rule: /images/blog/nail-colors/most-popular-nail-colors-of-all-time/filename.webp
+
+### Block 4: Opening Technique Assignments
+1. Introduction: Technique 1 (The Claim) — state directly that most "popular color" content is unproven opinion, and this one isn't
+2. H2-1: Technique 3 (The Reframe) — reframe the question from "what's trendy" to "what's actually proven"
+3. H2-2: Technique 2 (The Scene) — open on a specific historical moment (Marilyn Monroe, 1950s red)
+4. H2-3: Technique 1 (The Claim) — state the ranked list is coming, evidence-first framing
+5. H2-4: Technique 3 (The Reframe) — reframe red from "boring default" to "the only color with real data behind it"
+6. H2-5: Technique 2 (The Scene) — open on the sales-figure fact (Ballet Slippers, every 4 seconds)
+7. H2-6: Technique 3 (The Reframe) — reframe from "safe/boring" to "strategically versatile"
+8. H2-7: Technique 1 (The Claim) — direct statement framing the decade table as the proof, not decoration
+9. Conclusion: Technique 1 (The Claim) — restate the single confident recommendation
+
+Banned opener check: no two consecutive sections share a technique — confirmed above.
+
+### Block 5: Link Placements
+1. anchor: "our full breakdown of which shades read as professional in different industries" | url: https://mirelleinspo.com/work-nails/work-appropriate-nail-colors | section: H2-6 | context: when discussing office/versatile use cases | type: cross-site
+2. anchor: "the shortlist of shades proven to work across every complexion" | url: https://mirelleinspo.com/blog/skin-tone/nail-colors-that-look-good-on-every-skin-tone | section: H2-6 | context: when addressing universal flattery claim | type: cross-site
+3. anchor: "the complete guide to which classic shades actually flatter your undertone" | url: https://mirelleinspo.com/blog/skin-tone/nail-colors-for-every-skin-tone | section: H2-8 | context: closing bridge to personalization | type: cross-site
+4. anchor: "see what's trending in 2026 if you want something newer" | url: https://mirelleinspo.com/blog/nails-by-color/nail-colors | section: Conclusion | context: final soft next-step | type: cross-site
+
+### Block 6: AEO/GEO Plan
+- aeo_assignments:
+  1. "What is the most popular nail color of all time?" → H2-1 → direct 2-3 sentence answer immediately after heading, naming red with the strongest single data point
+  2. "What nail color goes with literally everything?" → H2-6 → direct answer naming the nude/red-based universal shade before elaborating
+  3. "What is the best-selling nail polish shade ever made?" → H2-5 → direct answer citing Essie Ballet Slippers sales figures immediately
+  4. "Why has red nail polish stayed popular for decades?" → H2-4 → direct answer citing red nail theory + Hollywood history in first 2-3 sentences
+- geo_entity_statements:
+  1. entity: Red nail theory → H2-4 → confident declarative definition citing the 2008 UBC study, no hedging
+  2. entity: French manicure → H2-2 → clear definition sentence with Jeff Pink/1976 origin story
+  3. entity: Essie Ballet Slippers → H2-5 → declarative sales-data definition sentence, extractable as citation
+
+### Block 7: Active Constraints
+- em_dash_banned: no long em dash anywhere; replace with comma, new sentence, parentheses, or restructure
+- banned_vocab_watch: elevate, effortless, timeless (overused — use sparingly, max 1x), game-changer, must-have, unlock, journey, embrace, seamless
+- british_english_active: colour, recognise, -ise, -our — every instance
+- keyword_density_reminder: check mention count after every 2 H2s; first half must run denser (6 of 10 mentions in first 1200 words)
+- image_path_reminder: /images/blog/nail-colors/most-popular-nail-colors-of-all-time/filename.webp
+- internal_link_url_reminder: full paths only, exact URLs as discovered above
+- hero_image_reminder: frontmatter only, never in body
+- strong_tag_reminder: every primary keyword mention wrapped in `<strong>` tags, scan after every paragraph
