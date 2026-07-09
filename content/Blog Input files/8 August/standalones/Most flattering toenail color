@@ -1,0 +1,153 @@
+# INPUT FILE — SINGLE SOURCE OF TRUTH FOR BLOG GEN AGENT
+Mode: SOLO — no cluster context. All values below are hardcoded. Do not ask, adjust, or override.
+
+## SECTION 2 — POST_CONSTANTS
+- slug: most-flattering-toenail-color
+- topic_slug: n/a (solo mode, no cluster)
+- canonical: https://mirelleinspo.com/blog/most-flattering-toenail-color
+- post_type: standalone
+- intent: informational (skin-tone-match sub-type, decision-leaning)
+- word_count: 2100 (top-3 avg ~900–1400 words but shallow; floor set above ceiling-adjacent competitors to win on depth — standalone ceiling 3500, using 2100 as the correct depth-to-search-intent ratio, not max)
+- image_count: 9 (rule 5 — everything else; not X+ slug, not pillar, not tutorial, not comparison)
+- template: center
+- hero_dimensions: 1200x630
+- category: Nails — Color Guides
+- publish_date: 2026-07-10
+- author: Mirellé Team
+
+## SECTION 4 — SERP ANALYSIS
+**competitor_gaps** (demand-validated 2+ sources):
+1. No competitor merges skin-tone matching WITH toe-shape/foot-specific flattery (short toes, wide toes, self-conscious feet) — validated: truecolors.world, naildesignsjournal, rainyroses.com, Quora toe-length threads
+2. "Universally flattering" / one-size-fits-all color question underserved despite real search demand — validated: Quora ("What nail polish color is universally flattering"), multiple roundups naming red/nude as universal but not explaining why
+3. Toenails ≠ fingernails — feet get more sun exposure, thicker nail beds, different proportions, sandal/shoe context — validated: VITA Daily, Pure Spa Direct, but neither ties this back to skin-tone selection logic
+4. No competitor gives a decisive single answer per skin tone — all hedge with 4-6 options per tone, leaving reader in the same decision paralysis they arrived with
+
+**missing_semantic_territory**: "flattering" framed through contrast theory (not just undertone-matching), toe-elongation color logic, sun-tan seasonal shift for toenails specifically, "safe universal pick when unsure" angle
+
+**our_strategic_approach**: Every competitor treats this as a fingernail-skin-tone article with "toe" swapped in. We treat feet as their own category — flattering toenail color = skin tone + undertone + toe shape + sun exposure. Give one decisive, confident answer per profile instead of a menu of 5 options.
+
+**recommended_image_count_validation**: 9 matches SERP pattern — roundup posts average 8-13 product/style images; we cap at 9 body-relevant inspirational shots since this is decision-guide not idea-roundup.
+
+## SECTION 5 — AUDIENCE INTELLIGENCE
+**who_they_are**: Women deciding on a pedicure color before a specific moment (sandal season, event, salon appointment) who feel mild decision paralysis — not browsing for inspiration, actively trying to choose ONE color they won't regret.
+
+**what_they_want**: A confident, specific answer matched to their exact skin tone/undertone — not a wall of 6 options per category.
+
+**what_frustrates_them**: Current guides give 4-6 "options" per skin tone (decision paralysis persists), never address toe-specific factors (shape, sun tan, thicker nail bed), rarely give ONE default safe answer for people who don't know their undertone.
+
+**top_5_pain_points**:
+1. Don't know their own undertone/skin tone category confidently
+2. Overwhelmed by too many "it depends" options in existing guides
+3. Self-conscious about toe shape/foot appearance, want a color that helps (not just matches skin)
+4. Confused whether toenail color should follow same rules as fingernail color
+5. Want a safe universal answer for last-minute decisions (special occasion panic)
+
+**exact_user_phrases**: "what nail polish color is universally flattering," "does toe nail color have to match skin tone," "what color nail polish is best for pale skin," "toenail color for short toes," "toenail color make feet look better," "best pedicure color if you're not sure," "toenail colors for ugly toes," "do toes and fingers have to match"
+
+**intent_content_signals**: wants a direct recommendation not a buffet; benefits from a quick self-diagnosis step (undertone test) before recommendation; responds to confident, decisive language ("this is your color") over hedged options; short practical justification per pick, not lifestyle fluff.
+
+## SECTION 6 — SEMANTIC KEYWORD DATA
+**primary_keyword**: most flattering toenail color
+**keyword_variations**: most flattering toe nail color, most flattering nail color for toes, best toenail color for skin tone, most universally flattering toenail color, best flattering pedicure color
+**cluster_keywords**: toenail color for skin tone, best pedicure color, universally flattering nail color, toenail color for pale skin, toenail color for dark skin, toenail color for tan skin, nail polish undertone guide, best toe nail color 2026
+**lsi_terms**: warm undertone, cool undertone, neutral undertone, skin tone contrast, nail bed, toe shape, foot proportions, sandal season, sun exposure tan lines, glossy finish, matte finish, French pedicure, nude polish, cherry red pedicure, chrome pedicure
+**aeo_terms**: "what is the most flattering toenail color for my skin tone," "is there a nail color that looks good on everyone," "how do I know what toenail color suits me," "should toenail color match skin tone or contrast it," "what toenail color makes toes look longer," "does toenail color need to match fingernail color"
+**technical_terms**: undertone, cool/warm/neutral classification, contrast theory, jelly finish, crème finish, chrome finish
+**user_language**: "not sure what looks good on me," "washes my feet out," "makes my toes look weird," "safe color," "goes with everything," "foolproof," "can't go wrong with"
+
+## SECTION 7 — VOICE AND AI QUERIES
+1. What is the most flattering toenail color for my skin tone?
+2. Is there one nail color that looks good on every skin tone?
+3. How do I know what toenail color will suit me?
+4. Should toenail color match my skin tone or contrast with it?
+5. What toenail color makes toes look longer or slimmer?
+6. Does toenail color have to match fingernail color?
+7. What's the best toenail color if I have pale/fair skin?
+8. What's the best toenail color if I have tan or olive skin?
+9. What's the best toenail color for dark skin tones?
+10. What color pedicure is safest for a special occasion?
+11. Why does my toenail polish look different than it does on my fingers?
+12. What's a good toenail color if I'm insecure about my feet?
+13. Do cool undertones need different toenail colors than warm undertones?
+14. What's a universally flattering nude for toenails?
+15. Is red really flattering on every skin tone?
+
+## SECTION 8 — HOOK AND CTR
+**selected_trigger**: Trigger 1 — Curiosity Gap
+**trigger_rationale**: Reader suspects existing guides haven't actually solved her decision (too many options = still stuck); "most flattering" signals she wants ONE right answer, not a menu.
+**title**: Most Flattering Toenail Color for Every Skin Tone (2026)
+**title_char_count**: 58
+**meta_description**: Tired of guides giving you 6 options? Find the one toenail color that actually suits your undertone, skin tone, and toe shape — no guesswork.
+**meta_char_count**: 143
+**intro_hook_brief**: Open by naming the real frustration — every guide gives a wall of options and you're still stuck. Promise one decisive answer per skin tone, not a buffet.
+**first_h2_hook_direction**: Frame as a voice-search-style question: "How do I know what toenail color actually suits me?" — direct, diagnostic, not trend-chasing.
+
+## SECTION 9 — SEARCH JOURNEY
+**reader_arrival_state**: Slightly stuck — has browsed pedicure colors before, wants a decisive answer, not more options.
+**journey_arc**:
+- Acknowledge the decision fatigue from generic guides
+- Give a fast undertone self-check
+- Deliver ONE confident recommendation per skin tone/undertone combo
+- Address toe-specific factors (shape, sun exposure) most guides skip
+- Close with a universal safe-pick fallback for total certainty
+**promise_to_deliver**: You will leave knowing exactly which single color to pick — not a list to keep agonizing over.
+**exit_state**: Confident, decided, ready to book/paint without further research.
+
+## SECTION 10 — CONTENT STRUCTURE
+**h1**: The Most Flattering Toenail Color for Every Skin Tone
+**h2_structure**:
+1. How Do You Know What Toenail Color Actually Suits You?
+2. Most Flattering Toenail Colors for Fair or Pale Skin
+3. Most Flattering Toenail Colors for Medium Skin Tones
+4. Most Flattering Toenail Colors for Olive Skin Tones
+5. Most Flattering Toenail Colors for Tan or Deep Skin Tones
+6. Is There a Color That's Flattering on Every Skin Tone?
+7. Do Toenails Follow the Same Color Rules as Fingernails?
+8. Choosing a Toenail Color That Flatters Your Toe Shape
+9. The Safest Flattering Pick When You Can't Decide
+
+**word_budget**:
+- introduction: 220
+- conclusion: 180
+- H2-1 (undertone check): 220
+- H2-2 (fair skin): 240
+- H2-3 (medium skin): 220
+- H2-4 (olive skin): 220
+- H2-5 (tan/deep skin): 240
+- H2-6 (universal color): 220
+- H2-7 (toes vs fingers): 180
+- H2-8 (toe shape): 220
+- H2-9 (safest pick): 180
+
+## SECTION 11 — INTERNAL LINKS
+No cluster context — no mandatory cluster links. Max 2 cross-site links if genuinely relevant pages exist on mirelleinspo.com (not verifiable without site access in this research pass — Blog Gen Agent or editor to confirm live URLs before publish; do not fabricate).
+
+## SECTION 12 — VOICE AND TONE
+**recommended_voice**: Confident, decisive editor — not a menu-giver
+**tone_characteristics**: direct, reassuring, mildly myth-busting toward "just pick whatever" guides, warm but efficient, zero hedging language ("it depends" banned)
+**language_style**: Second person throughout, short declarative sentences for recommendations, one clear verdict per section, minimal qualifiers
+**audience_match**: This reader is decision-fatigued; a voice that commits to an answer respects her time and matches why she searched "most flattering" instead of "toenail color ideas."
+
+## SECTION 13 — EXTERNAL LINKS
+1. url: https://www.whowhatwear.com/beauty/nails/pedicure-colors-2026 — context: citing 2026 pedicure color trend data — anchor: "2026 pedicure color trends"
+2. url: https://www.opi.com/blog/nail-trends/color-theory-for-your-nails — context: undertone/color theory authority backup — anchor: "nail color theory by skin tone"
+
+## SECTION 14 — EXECUTION PLAN
+**block_1_keyword_execution**:
+- primary_keyword: most flattering toenail color
+- top_3_density_baseline: ~3 (thin competitor content, low natural density)
+- total_mention_target: 6 (baseline 3 + 3)
+- first_100_words: mention 1 in sentence 1 (hook), mention 2 by sentence 3-4 (promise statement)
+- first_half_target: 4 mentions (first ~1050 words)
+- second_half_target: 2 mentions (second ~1050 words)
+- strong_tag_rule: every mention wrapped in <strong>
+
+**block_2_word_budget**: total 2100 ±50; per-H2 as listed in section 10
+
+**block_3_image_plan**: 9 total (1 hero + 8 body). Hero = frontmatter only. Body images: after intro (universal flattering pedicure shot), after H2-2/3/4/5 (one per skin-tone section — inspirational toe shots on visibly different skin tones), after H2-6 (universal color close-up), after H2-8 (toe-shape flattering example), after H2-9 (safe neutral pick). All body images = inspirational toenail/pedicure photography only, no diagrams.
+
+**block_4_opening_techniques**: vary by section per standard rule; conclusion = Technique 1 (The Claim) or Technique 3 (The Reframe).
+
+**block_6_aeo_geo_plan**: assign each AEO term from Section 7 to its matching H2; write 2-3 sentence direct-answer paragraph immediately under each heading before elaboration.
+
+**block_7_active_constraints**: no em dash; British English active; banned-vocab watch — avoid "elevate," "unlock," "journey," "game-changer," "must-have" (common overused beauty-blog filler for this topic); hero image never in body; strong tags scanned every paragraph.
