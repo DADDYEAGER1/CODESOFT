@@ -1,0 +1,209 @@
+# BANGLE NAILS — INPUT FILE FOR BLOG GEN AGENT
+Mode: SOLO — no cluster_context.json provided
+Intent locked: INSPIRATIONAL (research-selected — see rationale below)
+
+## SECTION 1: FILE AUTHORITY
+THIS FILE IS THE SINGLE SOURCE OF TRUTH FOR THE BLOG GEN AGENT. All values in POST_CONSTANTS are hardcoded — Blog Gen Agent does not ask, adjust, or override them. All keywords, H2 structure, audience intelligence, internal links, and tone defined here must be followed exactly.
+
+**Intent selection rationale:** Research compared inspirational vs. tutorial framing. Editorial coverage (Refinery29, Bustle, AOL, Autum Love, ModernFashionDiva) is overwhelmingly gallery/inspiration format with 2+ source validation. Multiple sources explicitly flag bangle nails as a "salon situation" — TikTok DIY tutorials exist but are described even by nail creators as producing "lumpy gel" rather than clean results without professional skill. Inspirational intent matches real search behavior (browsing to bring to a salon) and avoids the credibility risk of a confident "easy DIY" tutorial for something editorially established as advanced technique.
+
+## SECTION 2: POST_CONSTANTS
+- slug: bangle-nails
+- topic_slug: bangle-nails
+- canonical: https://mirelleinspo.com/blog/bangle-nails/bangle-nails
+- post_type: standalone
+- intent: inspirational
+- word_count: 2200 (±50 tolerance)
+- image_count: 9 (hero + 8 body)
+- template: center
+- hero_dimensions: 1200x630
+- category: Nail Art Guide
+- publish_date: 2026-07-10
+- author: Mirellé Team
+
+## SECTION 3: CLUSTER SNAPSHOT
+N/A — solo mode, omitted
+
+## SECTION 4: SERP ANALYSIS
+**Competitor gaps (2+ source validated):**
+- No competitor explains how to ASK for bangle nails at a salon so readers get a clean result, not a lumpy one (Refinery29 + Bustle)
+- No competitor addresses press-on/at-home-friendly alternatives for readers told it's salon-only (Etsy volume + Bustle DIY caveat)
+- No competitor gives a clear short-nail scaling framework (Refinery29 Korean-nail example + Lemon8)
+- No competitor maps bangle nails by occasion/everyday vs. event (Refinery29 + Autum Love)
+
+**Missing semantic territory:** salon-ask script language, press-on alternative route, French tip crossover as entry-level version, cost/time expectation setting
+
+**Our strategic approach:** Position as the definitive "what to actually ask for" guide — competitors show pretty photos but nobody translates the trend into a confident salon booking or realistic at-home alternative. Anchor around identity-matched looks (minimalist vs. maximalist) rather than a flat scroll.
+
+**Image count validation:** Confirmed — "everything else" rule applies (not X+ slug, not pillar, not tutorial, not comparison) = 9 images total including hero. Matches SERP pattern of galleries with 8-20 photos.
+
+**Top 3 word count estimates:** Bustle ~500w, Autum Love ~1500w, ModernFashionDiva ~1300w → average ≈1400w (floor, well under our 2200w target)
+
+**Top 3 keyword density baseline:** ≈5 mentions average
+
+## SECTION 5: AUDIENCE INTELLIGENCE
+**Who they are:** Nail-trend-aware women, mid-20s to late-30s, active on Pinterest/TikTok/Instagram, already comfortable booking creative manicures — browsing for their next appointment, not nail-tech beginners.
+
+**What they want:** A curated, identity-sorted set of bangle nail looks they can screenshot and take to a salon, plus reassurance on cost/time/durability and whether an at-home version is realistic.
+
+**What frustrates them:** Existing coverage is either a thin photo dump with no guidance (Bustle) or a gorgeous-but-overwhelming maximalist gallery with no "which one is me" filter. Nobody addresses short nails or DIY viability head-on.
+
+**Top 5 pain points:**
+1. Not knowing which words to use with a nail tech to get the 3D "bangle" effect rather than flat nail art
+2. Fear the look only works on long/acrylic nails, not natural short nails
+3. Uncertainty whether this is realistically DIY-able or an automatic salon trip
+4. Not knowing which metal tone (gold vs. silver vs. chrome) suits their skin tone or existing jewelry
+5. Wanting the look for a specific event/season but not knowing which version reads "everyday" vs. "special occasion"
+
+**Exact user phrases:** "is this DIY-able", "salon situation", "bangle nail trend", "nails as jewelry", "shrunk your bracelet stack", "arm candy for your fingertips", "clean girl base colour then build from there", "bangle baddie", "more is more", "not too overpowering", "suitable for short nails"
+
+**Intent content signals:** Identity-sorted categories (minimalist/maximalist/short-nail/occasion) outperform flat numbered lists. Readers respond to "screenshot and take to your tech" framing. Strong appetite for metal-tone and skin-tone guidance. Captions naming the exact gel/technique used build trust.
+
+## SECTION 6: SEMANTIC KEYWORD DATA
+- **primary_keyword:** bangle nails
+- **total_mention_target:** 8 (baseline 5 + 3)
+- **first_100_words_rule:** primary keyword appears twice in first 100 words — mandatory, no exceptions
+- **keyword_variations:** bangle nail trend, bangle nail design, bangle nail art, nail bangle, bracelet nails, bangle manicure, 3D bangle nails, bangle nails short, bangle nail ideas
+- **cluster_keywords:** 3D sculpted nails, jewelry nails, chrome bangle nails, gold bangle nails, silver bangle nails, French tip bangle nails, bangle nails for short nails, tortoiseshell bangle nails, bracelet stack nails, builder gel nail art, chrome powder nails, nail piercing, midi ring nail art, maximalist manicure, quiet luxury nail jewelry
+- **lsi_terms:** 3D sculpting gel, builder gel bands, chrome powder, raised bands, bracelet-inspired manicure, nail jewelry, mini jewelry stand, fingertip jewelry, gold cuff nails, chunky bangle rings, nail charms, nail chains, Van Cleef-inspired nails, texture mixing nail art, jewelry-inspired manicure
+- **aeo_terms:** "What are bangle nails?", "How do you get bangle nails done?", "Can you DIY bangle nails at home?", "Do bangle nails work on short nails?", "How long do bangle nails last?", "What do you ask for at the salon for bangle nails?", "Are bangle nails hard to do?", "What products are used for bangle nails?"
+- **technical_terms:** 3D sculpting gel, builder gel, L&P acrylic, chrome powder, flash-curing, UV/LED lamp, gem gel
+- **user_language:** "bangle baddie", "arm candy for your fingertips", "nails as jewelry", "more is more", "salon situation", "clean girl base then build from there", "jewelry for your hands", "shrunk your bracelet stack"
+
+## SECTION 7: VOICE AND AI QUERIES
+1. What exactly are bangle nails?
+2. How are bangle nails made/applied?
+3. Can I do bangle nails myself at home?
+4. Do bangle nails work on short nails?
+5. How long do bangle nails last before needing a fill?
+6. What should I say to my nail tech to get bangle nails?
+7. Are bangle nails expensive compared to a regular manicure?
+8. What colors/metals work best for bangle nails?
+9. Can bangle nails be subtle instead of maximalist?
+10. Do bangle nails work with a French tip?
+11. What nail shape works best for bangle nails?
+12. Are press-on bangle nails a good alternative?
+13. What's the difference between bangle nails and nail piercings?
+14. How do I match bangle nails to my jewelry?
+
+## SECTION 8: HOOK AND CTR
+- **selected_trigger:** Trigger 2 — FOMO/Trend Urgency
+- **trigger_rationale:** Audience is trend-aware, browsing Pinterest/TikTok, wants to know what's currently "it" before booking — matches inspiration_mode search behavior exactly.
+- **title (HARDCODED):** Bangle Nails: The Viral 3D Trend Taking Over 2026
+- **title_char_count:** 56
+- **meta_description (HARDCODED):** See the bangle nails trend blowing up salons everywhere: 2026's must-try 3D manicure, from minimalist gold bands to full jewelry stacks.
+- **meta_char_count:** 148
+- **intro_hook_brief:** Open by naming the cultural moment — nails have officially become jewelry, and bangle nails are the manicure translating that shift onto fingertips right now. Lead with the visual payoff, not the definition.
+- **first_h2_hook_direction:** Frame the first H2 as answering "what are bangle nails" the way people actually search it — direct, confident definition up front before the visual gallery begins.
+
+## SECTION 9: SEARCH JOURNEY
+- **reader_arrival_state:** Curious and slightly FOMO-driven — she's seen bangle nails on her feed repeatedly and wants to know if it's worth booking before everyone else catches up.
+- **journey_arc:**
+  1. Confirm she's found the real trend with a strong opening definition + visual proof
+  2. Show the range from minimalist to maximalist so she can self-sort
+  3. Address practical hesitations (short nails, DIY vs. salon, cost/durability)
+  4. Layer in styling specifics (color/metal, French tip crossover, occasion matching)
+  5. Close with a clear "this is what to screenshot and take in" moment
+- **must_avoid:** Generic "10 cute nail ideas" filler tone; skipping the DIY-vs-salon question; assuming all readers wear long acrylics
+- **promise_to_deliver:** Every major bangle nail direction, explained clearly enough to book confidently — not just a photo scroll
+- **exit_state:** Confident and ready to screenshot a specific look and either book an appointment or search a press-on alternative
+
+## SECTION 10: CONTENT STRUCTURE
+**H1:** Bangle Nails: The Viral 3D Trend Everyone's Wearing in 2026
+
+**H2 structure (exact order):**
+1. What Are Bangle Nails? (The 3D Jewelry Trend, Explained)
+2. How Bangle Nails Are Made (Salon Technique, Simplified)
+3. Minimalist Bangle Nails: Subtle Ways to Try the Trend
+4. Maximalist Bangle Nails: Full Bracelet-Stack Looks
+5. Bangle Nails for Short Nails (Yes, It Works)
+6. Best Colors & Metals for Bangle Nails
+7. Bangle Nails with a French Tip
+8. Can You DIY Bangle Nails at Home?
+9. How Long Do Bangle Nails Last & What They Cost
+10. How to Ask Your Nail Tech for Bangle Nails
+
+**Word budget:**
+- Introduction: 220
+- Conclusion: 180
+- What Are Bangle Nails?: 180
+- How Bangle Nails Are Made: 220
+- Minimalist Bangle Nails: 240
+- Maximalist Bangle Nails: 240
+- Bangle Nails for Short Nails: 220
+- Best Colors & Metals: 230
+- French Tip Bangle Nails: 210
+- Can You DIY at Home?: 260
+- How Long They Last & Cost: 220
+- How to Ask Your Nail Tech: 220
+
+## SECTION 11: INTERNAL LINKS (4 total — cross-site only, no cluster context)
+1. **Anchor:** "how to choose a warm gold chrome finish for jewelry-inspired nails" → `/blog/chrome-nails/rose-gold-chrome-nails` — place in "Best Colors & Metals"
+2. **Anchor:** "the full range of silver chrome finishes from subtle to full mirror" → `/blog/chrome-nails/silver-chrome-nails` — place in "Best Colors & Metals"
+3. **Anchor:** "the full range of French tip styles bangle nails pair well with" → `/blog/french-nails/french-tip-nail-designs` — place in "Bangle Nails with a French Tip"
+4. **Anchor:** "why gold jewelry pairs best with warm brown nail tones" → `/blog/nails-by-color/chocolate-brown-nails` — place in "Best Colors & Metals"
+
+## SECTION 12: VOICE & TONE
+- **Recommended voice:** Trend-savvy friend who's already seen every version of this on her FYP
+- **Tone characteristics:** confident and current, visually descriptive, slightly playful without trying too hard, decisive (tells her what to book, doesn't hedge), reassuring on practical concerns
+- **Language style:** Second person "you," short punchy sentences mixed with one longer descriptive sentence per section, light analogy use, zero hedging
+- **Audience match:** This audience wants to feel in-the-know and get a fast, confident answer on whether to book — warmth without over-explaining suits a reader who already knows nail art vocabulary
+
+## SECTION 13: EXTERNAL LINKS
+1. https://www.refinery29.com/en-au/bangle-nails-manicure-trend — anchor: "nail artists say the technique allows near-total creative freedom"
+2. https://www.bustle.com/beauty/bangle-nails — anchor: "the DIY route TikTok keeps attempting"
+3. https://www.scratchmagazine.co.uk/feature/nail-art/bangle-nails-what-how/ — anchor: "industry coverage of the sculpting technique behind the look"
+
+## SECTION 14: EXECUTION PLAN (read this first, lock every value)
+
+### Block 1 — Keyword Execution
+- primary_keyword: bangle nails
+- top_3_density_baseline: 5
+- total_mention_target: 8
+- First 100 words: mention 1 in opening sentence, mention 2 in sentence 3-4 of intro
+- First half target: 5 mentions (first 1100 words) — run denser
+- Second half target: 3 mentions (second 1100 words)
+- EVERY mention wrapped in `<strong>` tags — no exceptions
+
+### Block 2 — Word Budget (numbers, not ranges)
+Total: 2200 words ±50. See Section 10 for per-section breakdown. Track running total after every H2; cut before continuing if over.
+
+### Block 3 — Image Plan
+- Total: 9 (1 hero + 8 body)
+- Hero: frontmatter only, never in body
+- Body image assignments:
+  1. After "What Are Bangle Nails?" — classic gold 3D bangle nail set, establishing shot
+  2. After "How Bangle Nails Are Made" — close-up of sculpted builder gel band/texture
+  3. After "Minimalist Bangle Nails" — subtle single-band or accent-nail look
+  4. After "Maximalist Bangle Nails" — full stacked bracelet-effect set
+  5. After "Bangle Nails for Short Nails" — short square/oval nails, scaled-down bands
+  6. After "Best Colors & Metals" — side-by-side gold vs. silver chrome comparison
+  7. After "Bangle Nails with a French Tip" — French tip base with bangle overlay
+  8. After "How to Ask Your Nail Tech" — polished aspirational closer shot
+- Image type: inspirational nail design photos only. No infographics, no diagrams.
+- Path: /images/blog/bangle-nails/bangle-nails/filename.webp
+
+### Block 4 — Opening Technique Assignments
+Introduction: Technique 2 (Trend Declaration) → What Are Bangle Nails?: Technique 4 (Direct Definition) → How Made: Technique 1 (Claim) → Minimalist: Technique 3 (Reframe) → Maximalist: Technique 2 → Short Nails: Technique 4 → Colors & Metals: Technique 1 → French Tip: Technique 3 → DIY at Home: Technique 2 → Cost & Longevity: Technique 4 → How to Ask: Technique 1 → Conclusion: Technique 3
+(No two consecutive sections repeat; conclusion = Technique 1 or 3 ✓)
+
+### Block 5 — Link Placements
+See Section 11 — all 4 links have exact placement sections noted above.
+
+### Block 6 — AEO/GEO Plan
+- "What are bangle nails?" → answer directly after H2 1
+- "Can you DIY bangle nails at home?" → answer directly after H2 8
+- "Do bangle nails work on short nails?" → answer directly after H2 5
+- "How long do bangle nails last?" → answer directly after H2 9
+- GEO entity: "3D sculpting gel" — clear definition in H2 2
+- GEO entity: "chrome powder finish" — clear definition in H2 6
+
+### Block 7 — Active Constraints
+- Em dash banned — use comma/new sentence/parentheses/"but"/restructure
+- Banned vocab watch: "elevate," "unleash," "boasts," "in the realm of," "game-changer," "must-have," "seamlessly"
+- British English active: colour, recognise, -ise, -our throughout
+- Keyword density check every 2 H2 sections against 8-mention target, front-loaded
+- Image path: /images/blog/bangle-nails/bangle-nails/filename.webp
+- Internal links: full paths only, never bare slugs
+- Hero image: frontmatter only, never in body
+- Strong tags: every "bangle nails" mention, scan after every paragraph
