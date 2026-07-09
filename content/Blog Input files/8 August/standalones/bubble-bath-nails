@@ -1,0 +1,192 @@
+# INPUT FILE — SINGLE SOURCE OF TRUTH FOR BLOG GEN AGENT
+All values below are hardcoded. Do not ask, adjust, or override unless user instructs otherwise this session.
+
+## SECTION 2 — POST_CONSTANTS
+- slug: bubble-bath-nails
+- topic_slug: bubble-bath-nails
+- canonical: /blog/bubble-bath-nails/bubble-bath-nails
+- post_type: standalone
+- intent: inspirational
+- word_count: 2400
+- image_count: 9
+- template: center
+- hero_dimensions: 1200x630
+- category: Nail Trends
+- publish_date: 2026-07-10
+- author: Mirellé Team
+
+## SECTION 4 — SERP ANALYSIS
+- competitor_gaps: (1) Bubble Bath vs Funny Bunny side-by-side comparison — confirmed on 6 sources (Beyond Polish, Lots of Lacquer, Overland Park Nails, TikTok, WhoWhatWear, Woman&Home) but AOL/Maniology/Makeup.com roundups skip it. (2) "Bubble Bunny" layering technique (exact coat ratios) — confirmed Beyond Polish, TikTok, WhoWhatWear. (3) Skin-tone/vein-test shade matching — confirmed The Nail Aesthetic, salon1150. (4) Wedding/bridal-specific guidance — confirmed WhoWhatWear, TheKnot, Selective Nails.
+- missing_semantic_territory: cool vs warm undertone selection logic; coat-count formulas (2+1 ratios); "aura nail" bubble bath variation; toe/pedicure pairing.
+- our_strategic_approach: Lead with the Bubble Bath vs Funny Bunny distinction most roundups skip, give concrete coat-ratio formulas instead of vague "layer them," and close with shape/skin-tone matching so the reader leaves able to order it correctly at the salon or execute at home.
+- recommended_image_count_validation: Competitors run 12–26 image galleries; 9 matches standalone/everything-else rule and keeps density high without diluting each image's SEO weight.
+- top_3_word_count_estimates: AOL ~2200, Maniology ~1900, Makeup.com ~2100 → average ~2070 (floor). Set at 2400 (above floor, under 3500 ceiling).
+- top_3_keyword_density_baseline: ~9 mentions average across top 3.
+
+## SECTION 5 — AUDIENCE INTELLIGENCE
+- who_they_are: Mostly DIY-curious women 20s–40s, some salon clients pre-booking; moderate nail knowledge, know OPI by name, browsing Pinterest/TikTok for the exact color/technique before an appointment or home mani.
+- what_they_want: A clear definition of the shade + how to tell it apart from lookalikes (Funny Bunny) + specific design ideas they can screenshot for their nail tech.
+- what_frustrates_them: Vague "sheer pink" descriptions that don't explain undertone; roundups with pretty photos but no shade/coat guidance; not knowing if it suits their skin tone.
+- top_5_pain_points: (1) Confusing Bubble Bath with Funny Bunny/other sheer pinks. (2) Not knowing how many coats to ask for. (3) Uncertainty if it flatters their skin tone/undertone. (4) Wanting more than "plain pink" — chrome/French/nail art variations. (5) Wondering if it's low-maintenance for regrowth.
+- exact_user_phrases: "one coat bubble bath and white chrome"; "bubble bath vs funny bunny"; "is bubble bath the same as bubble bunny"; "how many coats of bubble bath"; "bubble bath nails almond"; "bubble bath french tip"; "bubble bath nails toes"; "opi bubble bath dupe"; "bubble bath nails for wedding"; "bubble bath square round nails"
+- intent_content_signals: Visual-first (image every 200-300 words), scannable H2s, specific product/shade callouts, shape-pairing advice, comparison table language, aspirational-but-actionable tone.
+
+## SECTION 6 — SEMANTIC KEYWORD DATA
+- primary_keyword: bubble bath nails
+- keyword_variations: bubble bath nail polish, bubble bath manicure, bubble bath nail color, OPI bubble bath nails, bubble bath gel nails, bubble bath nail ideas, bubble bath pink nails
+- cluster_keywords: sheer pink manicure, milky pink nails, quiet luxury nails, Funny Bunny nails, Bubble Bunny nails, glazed donut nails, soap nails, clean girl nails, chrome bubble bath nails, French tip bubble bath, almond bubble bath nails, wedding nails neutral, nude pink manicure
+- lsi_terms: sheer pink base, milky white finish, warm peach undertone, cool pink undertone, buildable coverage, pearl chrome, quiet luxury aesthetic, natural nail look, coat formula, gel polish vs lacquer, squoval nails, coffin nails, skin-tone matching, vein test, longevity/regrowth
+- aeo_terms: "What are bubble bath nails?", "What's the difference between bubble bath and Funny Bunny nails?", "How many coats of bubble bath polish do I need?", "Does bubble bath nail polish suit every skin tone?", "What is a Bubble Bunny manicure?", "Is bubble bath a warm or cool pink?", "What nail shape looks best with bubble bath?", "Can you get bubble bath nails on toes?"
+- technical_terms: OPI Nail Lacquer NL S86, GelColor, Infinite Shine, builder in a bottle (BIAB), soak-off gel, sheer buildable formula, chrome powder topper
+- user_language: "your nails but better," "soapy pink," "barely-there pink," "clean girl nails," "glazed donut effect," "milk bath mani," "quiet luxury," "bubble bunny combo"
+
+## SECTION 7 — VOICE AND AI QUERIES
+1. What are bubble bath nails?
+2. Is bubble bath nail polish the same as Funny Bunny?
+3. How do you get the Bubble Bunny nail look?
+4. How many coats of OPI Bubble Bath should I apply?
+5. Does bubble bath pink suit dark skin tones?
+6. What nail shape looks best with bubble bath nails?
+7. Can I wear bubble bath nails on my toes?
+8. Is bubble bath a good color for wedding nails?
+9. What's a good dupe for OPI Bubble Bath?
+10. Does bubble bath nail polish work with chrome powder?
+11. Is bubble bath warm-toned or cool-toned?
+12. How do I know if bubble bath will look good on me?
+13. What's the difference between bubble bath and other nude pinks like Essie Ballet Slippers?
+14. How long does a bubble bath manicure last?
+15. Can bubble bath nails work with a French tip?
+
+## SECTION 8 — HOOK AND CTR
+- selected_trigger: Trigger 3 — Specificity/Numbers (audience wants clarity on shade ID + concrete formulas, not vague inspiration)
+- trigger_rationale: Readers are confused between near-identical sheer pinks and want a definitive, specific answer plus a number of ideas to browse.
+- title: "Bubble Bath Nails: 20 Ideas + The Shade Guide (2026)"
+- title_char_count: 56
+- meta_description: "Confused between Bubble Bath and Funny Bunny? Get the exact coat formulas, skin-tone matches, and 20 design ideas for the perfect soft pink mani."
+- meta_char_count: 149
+- intro_hook_brief: Open by naming the confusion readers actually have — mistaking Bubble Bath for Funny Bunny or generic "sheer pink" — then promise the specific fix (coat ratios, undertone match, ideas).
+- first_h2_hook_direction: Phrase the first H2 as a direct voice-search question: "What Are Bubble Bath Nails, Exactly?"
+
+## SECTION 9 — SEARCH JOURNEY
+- reader_arrival_state: Curious and slightly confused — she's seen the term everywhere but isn't sure what it actually is or if it's the same as other sheer pinks she's seen.
+- journey_arc: Define the shade clearly → resolve the Funny Bunny/Bubble Bunny confusion → give coat/application specifics → match to skin tone and shape → deliver visual variety (chrome, French, wedding) → close with confidence to book or DIY.
+- promise_to_deliver: A definitive shade guide plus enough design variety to bring to a salon appointment or execute at home.
+- exit_state: Confident she knows exactly what to ask for and which variation fits her.
+
+## SECTION 10 — CONTENT STRUCTURE
+- h1: Bubble Bath Nails: The Complete Shade Guide + 20 Ideas for 2026
+- h2_structure:
+  1. What Are Bubble Bath Nails, Exactly?
+  2. Bubble Bath vs. Funny Bunny: What's the Real Difference?
+  3. The "Bubble Bunny" Combo — How to Layer Them Right
+  4. How Many Coats Do You Actually Need?
+  5. Does Bubble Bath Suit Your Skin Tone?
+  6. Best Nail Shapes for Bubble Bath Nails
+  7. 20 Bubble Bath Nail Ideas to Save
+  8. Bubble Bath Nails for Weddings
+  9. How Long Does a Bubble Bath Manicure Last?
+- word_budget:
+  - introduction: 220
+  - H2-1: 220
+  - H2-2: 320
+  - H2-3: 280
+  - H2-4: 200
+  - H2-5: 220
+  - H2-6: 220
+  - H2-7: 420
+  - H2-8: 220
+  - H2-9: 150
+  - conclusion: 180
+
+## SECTION 11 — INTERNAL LINKS
+(Solo mode — no cluster links. Populate with genuinely relevant Mirellé posts if site search available; otherwise leave for Blog Gen Agent/user to fill.)
+- placeholder: cross-site discovery not run (no site domain specified in solo mode) — Blog Gen Agent or user to supply 2-4 internal links from Mirellé's own catalog (e.g., almond nails, French tip nails, chrome nails, wedding nails posts if they exist).
+
+## SECTION 12 — VOICE AND TONE
+- recommended_voice: Warm expert — confident, specific, slightly editorial (like a knowledgeable friend correcting a common misconception).
+- tone_characteristics: Direct, undertone-savvy, reassuring, mildly opinionated on what "actually" works, visually descriptive.
+- language_style: Second person, short declarative sentences for shade facts, no hedging on the Funny Bunny distinction.
+- audience_match: Matches a reader who wants to sound informed at her next salon visit — precision over fluff.
+
+## SECTION 13 — EXTERNAL LINKS
+1. nailpro.com — context: citing professional coat/technique guidance — anchor: "professional application technique"
+2. whowhatwear.com — context: citing the Bubble Bunny trend naming/origin — anchor: "the Bubble Bunny trend"
+3. theknot.com — context: citing bridal nail shade guidance — anchor: "bridal nail color guide"
+
+## SECTION 14 — EXECUTION PLAN
+
+### Block 1 — Keyword Execution
+- primary_keyword: bubble bath nails
+- top_3_density_baseline: 9
+- total_mention_target: 11-12
+- first_100_words_plan: mention_1 = sentence 2 of intro (defining the trend); mention_2 = sentence 4-5 of intro (naming the confusion promise)
+- first_half_target: 7 mentions — words 1-1200
+- second_half_target: 4-5 mentions — words 1200-2400
+- strong_tag_rule: every mention wrapped in <strong> tags
+- keywords_to_avoid_active: none (solo mode)
+
+### Block 2 — Word Budget
+total_target: 2400 (±50)
+introduction: 220 | conclusion: 180
+h2_budgets:
+1. What Are Bubble Bath Nails, Exactly? — 220 — low
+2. Bubble Bath vs. Funny Bunny — 320 — high
+3. The Bubble Bunny Combo — 280 — medium
+4. How Many Coats Do You Need — 200 — low
+5. Does Bubble Bath Suit Your Skin Tone — 220 — medium
+6. Best Nail Shapes — 220 — medium
+7. 20 Bubble Bath Nail Ideas — 420 — high
+8. Bubble Bath Nails for Weddings — 220 — medium
+9. How Long Does It Last — 150 — low
+tracking_rule: check running total after each H2; cut before proceeding if over.
+
+### Block 3 — Image Plan
+total_images: 9 | hero_image: frontmatter only, never in body | body_images: 8
+1. place_after: intro — sheer pink bubble bath manicure close-up, hands
+2. place_after: H2-2 (Funny Bunny comparison) — side-by-side bubble bath vs funny bunny swatch
+3. place_after: H2-3 (Bubble Bunny combo) — layered bubble bunny finish
+4. place_after: H2-5 (skin tone) — bubble bath on varied skin tones
+5. place_after: H2-6 (shapes) — almond shape bubble bath
+6. place_after: H2-7 first half — chrome bubble bath nails
+7. place_after: H2-7 second half — French tip bubble bath nails
+8. place_after: H2-8 (wedding) — bridal bubble bath manicure with pearl accents
+image_type_rule: all inspirational nail photography, no infographics/charts.
+path_rule: /images/blog/bubble-bath-nails/bubble-bath-nails/filename.webp
+
+### Block 4 — Opening Technique Assignments
+- Introduction: Technique 1 (The Claim)
+- H2-1: Technique 3 (The Reframe)
+- H2-2: Technique 1 (The Claim)
+- H2-3: Technique 2 (The Question)
+- H2-4: Technique 3 (The Reframe)
+- H2-5: Technique 1 (The Claim)
+- H2-6: Technique 2 (The Question)
+- H2-7: Technique 3 (The Reframe)
+- H2-8: Technique 1 (The Claim)
+- H2-9: Technique 2 (The Question)
+- Conclusion: Technique 1 (The Claim)
+
+### Block 5 — Link Placements
+1. anchor: "professional application technique" | full_url: nailpro.com source article | section: How Many Coats Do You Actually Need | context: citing pro coat/dry-time guidance
+2. anchor: "the Bubble Bunny trend" | full_url: whowhatwear.com bubble-bunny article | section: The Bubble Bunny Combo | context: naming/origin of the combo trend
+3. anchor: "bridal nail color guide" | full_url: theknot.com simple-wedding-nails | section: Bubble Bath Nails for Weddings | context: shade-matching for bridal context
+
+### Block 6 — AEO/GEO Plan
+aeo_assignments:
+- "What are bubble bath nails?" → H2-1 → 2-3 sentence direct definition immediately after heading
+- "What's the difference between bubble bath and Funny Bunny?" → H2-2 → direct comparison paragraph before elaboration
+- "How many coats of bubble bath do I need?" → H2-4 → direct numeric answer (2+1 formula) first
+- "Does bubble bath suit dark skin tones?" → H2-5 → direct yes/how paragraph
+geo_entity_statements:
+- "OPI Bubble Bath (NL S86)" → H2-1 → clear declarative definition sentence
+- "Bubble Bunny" → H2-3 → clear declarative definition sentence
+
+### Block 7 — Active Constraints
+- em_dash_banned: yes
+- banned_vocab_watch: elevate, unleash, seamless, effortless (overused), game-changer, must-have, in today's world
+- british_english_active: colour, recognise, -ise, -our
+- keyword_density_reminder: count after every 2 H2s, front-load density
+- image_path_reminder: /images/blog/bubble-bath-nails/bubble-bath-nails/filename.webp
+- internal_link_url_reminder: full paths only
+- hero_image_reminder: frontmatter only
+- strong_tag_reminder: every primary keyword mention wrapped
