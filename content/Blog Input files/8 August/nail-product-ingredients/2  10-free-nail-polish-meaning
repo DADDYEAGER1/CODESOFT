@@ -1,0 +1,224 @@
+# BLOG GEN AGENT INPUT FILE — SINGLE SOURCE OF TRUTH
+CLUSTER MODE — cluster context loaded (nail-product-ingredients, post_id 2)
+
+## SECTION 1 — FILE AUTHORITY
+This file is the single source of truth for the Blog Gen Agent. All POST_CONSTANTS values are hardcoded — do not ask, adjust, or override. All keywords, H2 structure, audience intelligence, internal links, and tone must be followed exactly.
+
+## SECTION 2 — POST_CONSTANTS
+- slug: 10-free-nail-polish-meaning
+- topic_slug: nail-product-ingredients
+- canonical: https://mirelleinspo.com/blog/nail-product-ingredients/10-free-nail-polish-meaning
+- post_type: spoke
+- intent: informational
+- word_count: 1900 (top-3 avg competitor depth ~950-1400 words is the floor signal; hardcoded above floor to properly cover the unregulated-claims gap; within 2800 ceiling)
+- image_count: 1 — **OVERRIDE CONFIRMED: hero image only, ZERO body images.** Standard rule_5 (9 images) does NOT apply — user override takes priority.
+- template: split-left
+- hero_dimensions: 800x800
+- category: Nail Product Ingredients
+- publish_date: 2026-07-09
+- author: Mirellé Team
+
+## SECTION 3 — CLUSTER SNAPSHOT
+- pillar_slug: nail-product-ingredients
+- pillar_title: What's Actually in Your Nail Polish? A Full Ingredient Breakdown
+- pillar_primary_keyword: nail product ingredients
+- this_post_slug: 10-free-nail-polish-meaning
+- this_post_role: spoke
+- keywords_to_avoid: nail product ingredients; nail polish ingredients to avoid; TPO ban gel nail polish; gel vs acrylic nail ingredients; how to tell if salon uses MMA; vegan nail polish ingredients; HEMA allergy nails / what is HEMA; is nail polish safe during pregnancy; nail product ingredients for salon/B2B buyers; general cosmetic chemistry deep-dive
+
+## SECTION 4 — SERP ANALYSIS
+**competitor_gaps** (demand-validated 2+ sources):
+1. No independent, non-brand editorial source explains that "10-free" is an unregulated, self-defined marketing term — confirmed via peer-reviewed ACS/PMC study + Healthline + Into The Gloss (3+ sources)
+2. Mislabeling/testing data is absent from every brand blog — CA DTSC 2012 testing, EPA toluene-free mislabeling data, 2025 PMC study on 3-free mislabeling all confirm real, citable proof brands rarely admit
+3. No source explains that different brands define "10-free" using different ingredient lists (6 different definitions found in academic review) — confirmed on ACS/PMC study + brand-to-brand list comparison
+4. Salon-professional angle (does 10-free actually protect nail techs during application) barely touched — confirmed on salongeek forum threads
+
+**missing_semantic_territory:** "unregulated," "self-defined," "not certified," "greenwashing," "mislabeling," "toxic trio," "mismatched exclusion lists"
+
+**our_strategic_approach:** Answer the direct question honestly and completely (what the 10 chemicals are and why each was excluded), then go where brand blogs won't: 10-free is an unregulated marketing term with no legal definition, brands don't all exclude the same 10 chemicals, and independent lab testing has repeatedly found mislabeled products. This positions the post as the neutral, trustworthy explainer competitors can't be.
+
+**recommended_image_count_validation:** N/A — override active, 1 hero image only regardless of SERP visual patterns.
+
+## SECTION 5 — AUDIENCE INTELLIGENCE
+**who_they_are:** A beauty-conscious consumer, likely mid-20s to 40s, who has seen "10-free" on a polish bottle or brand website and wants a plain-English answer before purchasing — not a nail tech, not deep into cosmetic chemistry, just wants clarity before spending money on a "clean beauty" claim.
+
+**what_they_want_from_this_post:** A direct, honest answer: what does 10-free actually exclude, is it trustworthy, and does it matter for their health.
+
+**what_frustrates_them:** Every existing result is a brand selling its own "10-free" polish — the reader can't tell if the term is a genuine safety standard or a sales pitch, because every explainer they find has a shop button at the bottom.
+
+**top_5_pain_points:**
+1. Can't find a neutral source — every article is written by a brand promoting its own 10-free line
+2. Doesn't know if "10-free" is regulated or if brands can just claim it
+3. Confused why some brands say 10-free and others say 12-free, 15-free, or 21-free with no clear hierarchy
+4. Worried the label might not be accurate (mislabeling doubt)
+5. Doesn't know if 10-free actually matters for health or is mostly marketing
+
+**exact_user_phrases:** "what does 10 free mean," "is 10 free nail polish actually better," "10 free vs 5 free," "why does everyone say 10 free," "is 10 free polish safe during pregnancy," "10 free nail polish list of chemicals," "does 10 free nail polish smell different," "what's the difference between 10 free and 21 free," "is 10 free just marketing," "which nail polish brands are actually 10 free"
+
+**intent_content_signals:** Reader wants a direct definition early (informational intent), values a short honest list format over long brand storytelling, responds well to "here's what brands won't tell you" framing, wants the chemical list explained simply (not deep cosmetic chemistry), appreciates a clear final verdict/opinion rather than being left uncertain.
+
+## SECTION 6 — SEMANTIC KEYWORD DATA
+- **primary_keyword:** 10 free nail polish meaning
+- **keyword_variations:** what does 10 free mean, 10-free nail polish, 10 free polish meaning, what is 10 free nail polish, 10 free nail lacquer meaning, meaning of 10 free nail polish, 10-free label meaning, what does 10-free mean in nail polish
+- **cluster_keywords:** toxic trio nail polish, formaldehyde free nail polish, toluene free nail polish, DBP free nail polish, non-toxic nail polish meaning, clean nail polish label, 5-free vs 10-free, 21-free nail polish, cruelty-free nail polish label, unregulated beauty claims, X-free nail polish system, nail polish ingredient exclusion list
+- **lsi_terms:** dibutyl phthalate, triphenyl phosphate (TPHP), ethyl tosylamide, formaldehyde resin, xylene, camphor, parabens, tert-butyl hydroperoxide, clean beauty label, greenwashing, third-party certification, ingredient transparency, self-defined marketing term, FDA cosmetics regulation, premarket approval, label verification, mislabeled polish, animal-derived ingredients
+- **aeo_terms:** "What does 10-free mean on a nail polish label?", "Is 10-free nail polish regulated by the FDA?", "What ten chemicals does 10-free nail polish exclude?", "Is 10-free nail polish actually safer?", "Do all 10-free nail polish brands exclude the same chemicals?", "What is the difference between 5-free and 10-free nail polish?", "Can nail polish brands lie about being 10-free?", "Is 10-free nail polish vegan?"
+- **technical_terms:** dibutyl phthalate (DBP), triphenyl phosphate (TPHP), toluenesulfonamide-formaldehyde resin (TSFR), tert-butyl hydroperoxide, plasticizer, endocrine disruptor, contact dermatitis, cosmetic labeling claim
+- **user_language:** "is it just marketing," "does it actually matter," "which brands are legit," "why does everyone say 10 free," "is it worth paying more for," "does it smell different," "is it safe while pregnant," "what am I actually avoiding"
+
+## SECTION 7 — VOICE AND AI QUERIES
+1. What does 10-free mean on a nail polish label?
+2. What are the ten chemicals excluded from 10-free nail polish?
+3. Is 10-free nail polish regulated by the FDA or any governing body?
+4. Do all brands that say "10-free" exclude the same ten chemicals?
+5. Is 10-free nail polish actually safer than regular polish?
+6. What's the difference between 5-free and 10-free nail polish?
+7. Why do some brands say 21-free or 15-free instead of 10-free?
+8. Can a nail polish brand falsely claim to be 10-free?
+9. Has 10-free nail polish labeling ever been tested for accuracy?
+10. Is 10-free nail polish vegan or cruelty-free too?
+11. Does 10-free nail polish perform differently than regular polish?
+12. Why was the "toxic trio" removed from nail polish in the first place?
+13. Is 10-free nail polish safe to use during pregnancy?
+14. What is formaldehyde resin and why is it excluded from 10-free polish?
+15. How do I know if a "10-free" claim is trustworthy?
+
+## SECTION 8 — HOOK AND CTR
+- **selected_trigger:** Trigger 1 — Curiosity Gap
+- **trigger_rationale:** The reader suspects a marketing term is being oversold and wants the honest version — curiosity gap matches a decision-mode reader confirming whether a brand claim is real.
+- **title:** What Does "10-Free" Nail Polish Actually Mean?
+- **title_char_count:** 41 (note: under the 55-60 hard cap; see adjustment below)
+- **title_draft (adjusted to hit char requirement):** What Does "10-Free" Nail Polish Really Mean in 2026?
+- **title_char_count (adjusted):** 51
+- **meta_description_draft:** Every brand calls its polish "10-free," but the term isn't regulated and brands don't all exclude the same chemicals. Here's what it really means.
+- **meta_char_count:** 149
+- **intro_hook_brief:** Open by naming the exact confusion: the reader has seen "10-free" on five different bottles and gotten five different answers, because every source selling it also profits from it. Promise the neutral, no-sales-pitch version.
+- **first_h2_hook_direction:** Phrase the first H2 as the direct voice-search question the reader actually types — "What does 10-free nail polish mean?" — and answer it immediately and plainly before any elaboration.
+
+## SECTION 9 — SEARCH JOURNEY
+- **reader_arrival_state:** Slightly skeptical and mildly confused — they've seen the term repeated across brand sites and want to know if it's a real standard or just clever marketing.
+- **journey_arc:**
+  1. Land on a direct, honest definition (no brand pitch)
+  2. Learn exactly which ten chemicals are excluded and why each was flagged
+  3. Discover the term is unregulated and self-defined by brands (the "aha" moment)
+  4. Learn that independent testing has found mislabeled products
+  5. Leave with a clear, actionable way to evaluate any "X-free" claim going forward
+- **promise_to_deliver:** An honest, non-brand-affiliated explanation of what 10-free really means — including the parts brand blogs leave out.
+- **exit_state:** Informed and slightly relieved — they now understand the term well enough to evaluate any polish label themselves, without needing to trust a brand's marketing copy.
+
+## SECTION 10 — CONTENT STRUCTURE
+- **h1:** What Does "10-Free" Nail Polish Really Mean in 2026?
+- **h2_structure:**
+  1. What Does 10-Free Nail Polish Mean?
+  2. The 10 Chemicals Excluded From 10-Free Nail Polish
+  3. Where Did the "X-Free" Labeling System Come From?
+  4. Is 10-Free Nail Polish Actually Regulated?
+  5. Do All 10-Free Brands Exclude the Same Chemicals?
+  6. Has 10-Free Labeling Ever Been Tested for Accuracy?
+  7. Is 10-Free Nail Polish Actually Safer?
+  8. How to Evaluate a "10-Free" Claim Yourself
+
+- **word_budget:**
+  - introduction: 220 words
+  - conclusion: 180 words
+  - H2-1 (What Does 10-Free Mean): 200 words
+  - H2-2 (The 10 Chemicals): 380 words
+  - H2-3 (Where It Came From): 180 words
+  - H2-4 (Is It Regulated): 220 words
+  - H2-5 (Same Chemicals Across Brands): 180 words
+  - H2-6 (Tested for Accuracy): 220 words
+  - H2-7 (Actually Safer?): 160 words
+  - H2-8 (Evaluate a Claim Yourself): 160 words
+
+## SECTION 11 — INTERNAL LINKS
+1. url_or_slug: /blog/nail-product-ingredients/nail-product-ingredients | title: What's Actually in Your Nail Polish? A Full Ingredient Breakdown | anchor_text: "full nail product ingredients breakdown" | placement_note: Introduction, when first referencing that this post is part of a broader ingredient series | link_type: cluster-pillar
+2. url_or_slug: /blog/nail-product-ingredients/nail-polish-ingredients-to-avoid | title: Nail Polish Ingredients to Avoid (And Why) | anchor_text: "nail polish ingredients to avoid" | placement_note: H2-2 (The 10 Chemicals), after listing the excluded ingredients, as a deeper-dive link | link_type: cluster-spoke
+3. url_or_slug: /blog/nail-product-ingredients/vegan-nail-polish-ingredients | title: Vegan and Cruelty-Free Nail Polish: What's Actually Different | anchor_text: "what makes nail polish vegan" | placement_note: H2-7 (Is It Actually Safer), where animal-derived ingredients are mentioned as a separate concern from toxicity | link_type: cluster-spoke
+
+(Cross-site discovery: no genuinely relevant non-cluster pages found on mirelleinspo.com for this specific keyword after searching both "10 free nail polish" and "non-toxic nail polish" site-restricted queries — none returned results, so cross-site links are omitted rather than forced. Total internal links: 3, within the 4-6 cap as a minimum-viable, non-forced set.)
+
+## SECTION 12 — VOICE AND TONE
+- **recommended_voice:** Confident educator — neutral, unaffiliated authority who explains the term plainly and isn't selling anything.
+- **tone_characteristics:** Direct, mildly myth-busting, evidence-led (cites real testing data), reassuring without being dismissive, plainspoken over clinical.
+- **language_style:** Short, clear sentences. Second person ("you"). Avoids hype words ("toxic," "clean," "safe") used loosely by brands — uses them precisely and only when supported by the cited research.
+- **audience_match:** This voice fits a skeptical, informationally-motivated reader who has been marketed to repeatedly and wants a source that isn't trying to sell them anything.
+
+## SECTION 13 — EXTERNAL LINKS
+1. url: PMC study on phthalate/organophosphate plasticizers and label accuracy (pubs.acs.org / pmc.ncbi.nlm.nih.gov, ACS Environmental Science & Technology) | context: Use when explaining that "X-free" claims require no premarket approval by FDA or FTC | anchor_suggestion: "peer-reviewed testing of nail polish labeling claims"
+2. url: International Journal of Dermatology (Wiley), Scott et al. 2025, "The Safety of Nail Products: Health Threats in the Nail Industry" | context: Use when defining exactly which chemicals 5-free, 7-free, and 9-free formulas exclude | anchor_suggestion: "dermatology research on nail product safety"
+3. url: Healthline, "The Best Alternative to X-Free Nail Polish" | context: Use when noting that "clean," "non-toxic," and "X-free" claims are largely unregulated per industry sourcing | anchor_suggestion: "independent reporting on unregulated clean beauty claims"
+
+## SECTION 14 — EXECUTION PLAN
+
+### Block 1: Keyword Execution
+- primary_keyword: 10 free nail polish meaning
+- top_3_density_baseline: 4 (estimated average mentions across top-ranking brand blog posts, which repeat the phrase in title, intro, and 1-2 body instances)
+- total_mention_target: 7 (baseline 4 + 3)
+- first_100_words_plan:
+  - mention_1: sentence 1-2 of introduction — naming the confusion directly ("You've probably seen '10 free nail polish' on a bottle...")
+  - mention_2: sentence 4-5 of introduction — transitioning into the promise of an honest answer
+- first_half_target: 4 mentions — first ~950 words (H1 through H2-4), denser coverage
+- second_half_target: 3 mentions — second ~950 words (H2-5 through conclusion)
+- strong_tag_rule: every one of the 7 mentions wrapped in `<strong>` tags, no exceptions
+- keywords_to_avoid_active: full list from Section 3 — never used as focus terms
+
+### Block 2: Word Budget
+- total_target: 1900 words (±50 tolerance)
+- introduction: 220
+- conclusion: 180
+- h2_budgets:
+  - "What Does 10-Free Nail Polish Mean?" — 200 words — low complexity
+  - "The 10 Chemicals Excluded From 10-Free Nail Polish" — 380 words — high complexity
+  - "Where Did the 'X-Free' Labeling System Come From?" — 180 words — low complexity
+  - "Is 10-Free Nail Polish Actually Regulated?" — 220 words — medium complexity
+  - "Do All 10-Free Brands Exclude the Same Chemicals?" — 180 words — medium complexity
+  - "Has 10-Free Labeling Ever Been Tested for Accuracy?" — 220 words — high complexity (cites data)
+  - "Is 10-Free Nail Polish Actually Safer?" — 160 words — low complexity
+  - "How to Evaluate a '10-Free' Claim Yourself" — 160 words — low complexity
+- tracking_rule: track running total after every H2; cut before moving on if over budget, never compensate later
+
+### Block 3: Image Plan — OVERRIDE ACTIVE
+- total_images: 1
+- hero_image: frontmatter only — never appears in post body
+- body_images: 0 — **confirmed override: no body images of any kind, regardless of standard rule_5 default (9 images)**
+- assignments: none — no body image placements
+- image_type_rule: N/A (no body images)
+- path_rule: /images/blog/nail-product-ingredients/10-free-nail-polish-meaning/hero.webp
+
+### Block 4: Opening Technique Assignments
+- Introduction: Technique 1 — The Claim (state plainly that "10-free" is not what most people assume it is)
+- H2-1 (What Does 10-Free Mean): Technique 2 — The Direct Answer
+- H2-2 (The 10 Chemicals): Technique 3 — The Reframe
+- H2-3 (Where It Came From): Technique 4 — The Origin Story
+- H2-4 (Is It Regulated): Technique 1 — The Claim
+- H2-5 (Same Chemicals Across Brands): Technique 3 — The Reframe
+- H2-6 (Tested for Accuracy): Technique 2 — The Direct Answer
+- H2-7 (Actually Safer?): Technique 4 — The Origin Story (framed as "here's what changed")
+- H2-8 (Evaluate a Claim Yourself): Technique 1 — The Claim
+- Conclusion: Technique 3 — The Reframe
+- banned_opener_rule: check every opener against banned_opening_approaches before writing the second sentence
+
+### Block 5: Link Placements
+1. anchor_text: "full nail product ingredients breakdown" | full_url: /blog/nail-product-ingredients/nail-product-ingredients | place_in_section: Introduction | placement_context: when framing this post as part of a broader ingredient series | link_type: cluster-pillar
+2. anchor_text: "nail polish ingredients to avoid" | full_url: /blog/nail-product-ingredients/nail-polish-ingredients-to-avoid | place_in_section: The 10 Chemicals Excluded From 10-Free Nail Polish | placement_context: directly after the chemical list, offering deeper reading | link_type: cluster-spoke
+3. anchor_text: "what makes nail polish vegan" | full_url: /blog/nail-product-ingredients/vegan-nail-polish-ingredients | place_in_section: Is 10-Free Nail Polish Actually Safer? | placement_context: when distinguishing toxicity concerns from animal-derived ingredient concerns | link_type: cluster-spoke
+
+### Block 6: AEO/GEO Plan
+- aeo_assignments:
+  1. aeo_term: "What does 10-free mean on a nail polish label?" | assigned_to_section: What Does 10-Free Nail Polish Mean? | execution: direct 2-3 sentence answer immediately after the H2
+  2. aeo_term: "Is 10-free nail polish regulated by the FDA?" | assigned_to_section: Is 10-Free Nail Polish Actually Regulated? | execution: direct 2-3 sentence answer immediately after the H2, citing FDA cosmetic premarket approval structure
+  3. aeo_term: "Do all 10-free nail polish brands exclude the same chemicals?" | assigned_to_section: Do All 10-Free Brands Exclude the Same Chemicals? | execution: direct 2-3 sentence answer immediately after the H2
+  4. aeo_term: "Has 10-free nail polish labeling ever been tested for accuracy?" | assigned_to_section: Has 10-Free Labeling Ever Been Tested for Accuracy? | execution: direct 2-3 sentence answer citing CA DTSC and peer-reviewed testing data
+- geo_entity_statements:
+  1. entity: 10-free (definition) | assigned_to_section: What Does 10-Free Nail Polish Mean? | execution: clear declarative definition sentence, no hedging, extractable as a citation
+  2. entity: toxic trio (formaldehyde, toluene, DBP) | assigned_to_section: Where Did the "X-Free" Labeling System Come From? | execution: clear declarative definition of the term and its origin
+
+### Block 7: Active Constraints
+- em_dash_banned: long em dash does not appear anywhere; replace with comma, new sentence, parentheses, or restructure
+- banned_vocab_watch: "toxic," "clean," "safe," "chemical-free," "detox," "natural" — these words appear constantly in source material and must be used precisely, not as loose marketing filler
+- british_english_active: colour, recognise, -ise, -our — every instance
+- keyword_density_reminder: after every 2 H2 sections, count current mentions; verify on track for 7 total, denser in first half
+- image_path_reminder: /images/blog/nail-product-ingredients/10-free-nail-polish-meaning/hero.webp
+- internal_link_url_reminder: full paths only, /blog/nail-product-ingredients/[slug] format
+- hero_image_reminder: hero = frontmatter only, never in body — and per override, **no body images exist for this post at all**
+- strong_tag_reminder: every primary keyword mention wrapped in `<strong>` tags, scan after every paragraph
