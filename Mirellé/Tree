@@ -1,0 +1,2317 @@
+{
+    "name": "mirelle-site",
+    "type": "directory",
+    "children": [
+        {
+            "name": "dev-error.log",
+            "type": "file"
+        },
+        {
+            "name": "eslint.config.mjs",
+            "type": "file"
+        },
+        {
+            "name": "next-env.d.ts",
+            "type": "file"
+        },
+        {
+            "name": "next-sitemap.config.js",
+            "type": "file"
+        },
+        {
+            "name": "next.config.ts",
+            "type": "file"
+        },
+        {
+            "name": "package-lock.json",
+            "type": "file"
+        },
+        {
+            "name": "package.json",
+            "type": "file"
+        },
+        {
+            "name": "postcss.config.mjs",
+            "type": "file"
+        },
+        {
+            "name": "public",
+            "type": "directory",
+            "children": [
+                {
+                    "name": "ads.txt",
+                    "type": "file"
+                },
+                {
+                    "name": "favicon.svg",
+                    "type": "file"
+                },
+                {
+                    "name": "file.svg",
+                    "type": "file"
+                },
+                {
+                    "name": "fonts",
+                    "type": "directory",
+                    "children": [
+                        {
+                            "name": "GeneralSans-Regular.otf",
+                            "type": "file"
+                        },
+                        {
+                            "name": "LarkenDEMO-Regular.otf",
+                            "type": "file"
+                        },
+                        {
+                            "name": "desktop.ini",
+                            "type": "file"
+                        }
+                    ]
+                },
+                {
+                    "name": "globe.svg",
+                    "type": "file"
+                },
+                {
+                    "name": "images",
+                    "type": "directory",
+                    "children": [
+                        {
+                            "type": "image_folder",
+                            "name": "blog",
+                            "summary": "4448 images"
+                        },
+                        {
+                            "name": "spotlights",
+                            "type": "directory",
+                            "children": [
+                                {
+                                    "type": "image_folder",
+                                    "name": "nailsbypeyton",
+                                    "summary": "8 images"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "image_folder",
+                            "name": "team",
+                            "summary": "2 images"
+                        },
+                        {
+                            "type": "image_folder",
+                            "name": "topic",
+                            "summary": "98 images"
+                        },
+                        {
+                            "type": "image_folder",
+                            "name": "work-nails",
+                            "summary": "200 images"
+                        }
+                    ]
+                },
+                {
+                    "name": "inspo",
+                    "type": "directory",
+                    "children": [
+                        {
+                            "type": "image_folder",
+                            "name": "almond-nails-2026",
+                            "summary": "64 images"
+                        }
+                    ]
+                },
+                {
+                    "name": "llms.txt",
+                    "type": "file"
+                },
+                {
+                    "name": "next.svg",
+                    "type": "file"
+                },
+                {
+                    "name": "pinterest",
+                    "type": "directory",
+                    "children": [
+                        {
+                            "name": "oauth-callback.html",
+                            "type": "file"
+                        }
+                    ]
+                },
+                {
+                    "name": "robots.txt",
+                    "type": "file"
+                },
+                {
+                    "name": "site.webmanifest",
+                    "type": "file"
+                },
+                {
+                    "name": "sitemap-0.xml",
+                    "type": "file"
+                },
+                {
+                    "name": "sitemap-authors.xml",
+                    "type": "file"
+                },
+                {
+                    "name": "sitemap-blog.xml",
+                    "type": "file"
+                },
+                {
+                    "name": "sitemap-business-index.xml",
+                    "type": "file"
+                },
+                {
+                    "name": "sitemap-business-root.xml",
+                    "type": "file"
+                },
+                {
+                    "name": "sitemap-business-united-states-georgia.xml",
+                    "type": "file"
+                },
+                {
+                    "name": "sitemap-business-united-states.xml",
+                    "type": "file"
+                },
+                {
+                    "name": "sitemap-images-blog.xml",
+                    "type": "file"
+                },
+                {
+                    "name": "sitemap-images-index.xml",
+                    "type": "file"
+                },
+                {
+                    "name": "sitemap-images-inspo.xml",
+                    "type": "file"
+                },
+                {
+                    "name": "sitemap-images-spotlight.xml",
+                    "type": "file"
+                },
+                {
+                    "name": "sitemap-images-topics.xml",
+                    "type": "file"
+                },
+                {
+                    "name": "sitemap-images-work-nails.xml",
+                    "type": "file"
+                },
+                {
+                    "name": "sitemap-inspo.xml",
+                    "type": "file"
+                },
+                {
+                    "name": "sitemap-nail-faqs.xml",
+                    "type": "file"
+                },
+                {
+                    "name": "sitemap-shop.xml",
+                    "type": "file"
+                },
+                {
+                    "name": "sitemap-spotlight.xml",
+                    "type": "file"
+                },
+                {
+                    "name": "sitemap-topics.xml",
+                    "type": "file"
+                },
+                {
+                    "name": "sitemap-trend-reports.xml",
+                    "type": "file"
+                },
+                {
+                    "name": "sitemap-work-nails.xml",
+                    "type": "file"
+                },
+                {
+                    "name": "sitemap.xml",
+                    "type": "file"
+                },
+                {
+                    "name": "vercel.svg",
+                    "type": "file"
+                },
+                {
+                    "name": "window.svg",
+                    "type": "file"
+                },
+                {
+                    "type": "summary",
+                    "name": "1 .ico file"
+                },
+                {
+                    "type": "summary",
+                    "name": "5 .png files"
+                }
+            ]
+        },
+        {
+            "name": "scripts",
+            "type": "directory",
+            "children": [
+                {
+                    "name": "add-authors.js",
+                    "type": "file"
+                },
+                {
+                    "name": "audit-metadata.js",
+                    "type": "file"
+                },
+                {
+                    "name": "extract-meta-fns.js",
+                    "type": "file"
+                },
+                {
+                    "name": "generate-all-sitemaps.js",
+                    "type": "file"
+                }
+            ]
+        },
+        {
+            "name": "src",
+            "type": "directory",
+            "children": [
+                {
+                    "name": "app",
+                    "type": "directory",
+                    "children": [
+                        {
+                            "name": "about",
+                            "type": "directory",
+                            "children": [
+                                {
+                                    "name": "page.tsx",
+                                    "type": "file"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "api",
+                            "type": "directory",
+                            "children": [
+                                {
+                                    "name": "newsletter",
+                                    "type": "directory",
+                                    "children": [
+                                        {
+                                            "name": "route.ts",
+                                            "type": "file"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "name": "search",
+                                    "type": "directory",
+                                    "children": [
+                                        {
+                                            "name": "route.ts",
+                                            "type": "file"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "name": "timeline",
+                                    "type": "directory",
+                                    "children": [
+                                        {
+                                            "name": "blog-cluster",
+                                            "type": "directory",
+                                            "children": [
+                                                {
+                                                    "name": "route.ts",
+                                                    "type": "file"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "name": "inspo-images",
+                                            "type": "directory",
+                                            "children": [
+                                                {
+                                                    "name": "route.ts",
+                                                    "type": "file"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "name": "authors",
+                            "type": "directory",
+                            "children": [
+                                {
+                                    "name": "[slug]",
+                                    "type": "directory",
+                                    "children": [
+                                        {
+                                            "name": "AuthorPostsList.tsx",
+                                            "type": "file"
+                                        },
+                                        {
+                                            "name": "page.tsx",
+                                            "type": "file"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "name": "page.tsx",
+                                    "type": "file"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "blog",
+                            "type": "directory",
+                            "children": [
+                                {
+                                    "name": "[...slug]",
+                                    "type": "directory",
+                                    "children": [
+                                        {
+                                            "name": "page.tsx",
+                                            "type": "file"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "name": "page.tsx",
+                                    "type": "file"
+                                },
+                                {
+                                    "name": "templates",
+                                    "type": "directory",
+                                    "children": [
+                                        {
+                                            "name": "CenterTemplate.tsx",
+                                            "type": "file"
+                                        },
+                                        {
+                                            "name": "GridTemplate.tsx",
+                                            "type": "file"
+                                        },
+                                        {
+                                            "name": "MDXContent.tsx",
+                                            "type": "file"
+                                        },
+                                        {
+                                            "name": "SplitLeftTemplate.tsx",
+                                            "type": "file"
+                                        },
+                                        {
+                                            "name": "SplitRightTemplate.tsx",
+                                            "type": "file"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "name": "business",
+                            "type": "directory",
+                            "children": [
+                                {
+                                    "name": "[country]",
+                                    "type": "directory",
+                                    "children": [
+                                        {
+                                            "name": "[state]",
+                                            "type": "directory",
+                                            "children": [
+                                                {
+                                                    "name": "[clientType]",
+                                                    "type": "directory",
+                                                    "children": [
+                                                        {
+                                                            "name": "[slug]",
+                                                            "type": "directory",
+                                                            "children": [
+                                                                {
+                                                                    "name": "page.tsx",
+                                                                    "type": "file"
+                                                                }
+                                                            ]
+                                                        },
+                                                        {
+                                                            "name": "page.tsx",
+                                                            "type": "file"
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "name": "page.tsx",
+                                                    "type": "file"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "name": "page.tsx",
+                                            "type": "file"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "name": "page.tsx",
+                                    "type": "file"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "contact",
+                            "type": "directory",
+                            "children": [
+                                {
+                                    "name": "layout.tsx",
+                                    "type": "file"
+                                },
+                                {
+                                    "name": "page.tsx",
+                                    "type": "file"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "disclosures",
+                            "type": "directory",
+                            "children": [
+                                {
+                                    "name": "page.tsx",
+                                    "type": "file"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "editorial-policy",
+                            "type": "directory",
+                            "children": [
+                                {
+                                    "name": "page.tsx",
+                                    "type": "file"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "error.tsx",
+                            "type": "file"
+                        },
+                        {
+                            "name": "globals.css",
+                            "type": "file"
+                        },
+                        {
+                            "name": "inspo",
+                            "type": "directory",
+                            "children": [
+                                {
+                                    "name": "[design]",
+                                    "type": "directory",
+                                    "children": [
+                                        {
+                                            "name": "page.tsx",
+                                            "type": "file"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "name": "page.tsx",
+                                    "type": "file"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "layout.tsx",
+                            "type": "file"
+                        },
+                        {
+                            "name": "loading.tsx",
+                            "type": "file"
+                        },
+                        {
+                            "name": "nail-encyclopedia",
+                            "type": "directory",
+                            "children": [
+                                {
+                                    "name": "EncyclopediaClient.tsx",
+                                    "type": "file"
+                                },
+                                {
+                                    "name": "page.tsx",
+                                    "type": "file"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "nail-faqs",
+                            "type": "directory",
+                            "children": [
+                                {
+                                    "name": "[slug]",
+                                    "type": "directory",
+                                    "children": [
+                                        {
+                                            "name": "page.tsx",
+                                            "type": "file"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "name": "page.tsx",
+                                    "type": "file"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "not-found.tsx",
+                            "type": "file"
+                        },
+                        {
+                            "name": "page.tsx",
+                            "type": "file"
+                        },
+                        {
+                            "name": "pinterest",
+                            "type": "directory",
+                            "children": [
+                                {
+                                    "name": "page.tsx",
+                                    "type": "file"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "press",
+                            "type": "directory",
+                            "children": [
+                                {
+                                    "name": "page.tsx",
+                                    "type": "file"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "privacy-policy",
+                            "type": "directory",
+                            "children": [
+                                {
+                                    "name": "page.tsx",
+                                    "type": "file"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "privacy-policy.tsx",
+                            "type": "file"
+                        },
+                        {
+                            "name": "shop",
+                            "type": "directory",
+                            "children": [
+                                {
+                                    "name": "[...slug]",
+                                    "type": "directory",
+                                    "children": [
+                                        {
+                                            "name": "page.tsx",
+                                            "type": "file"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "name": "page.tsx",
+                                    "type": "file"
+                                },
+                                {
+                                    "name": "templates",
+                                    "type": "directory",
+                                    "children": [
+                                        {
+                                            "name": "ShopTemplate.tsx",
+                                            "type": "file"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "name": "spotlight",
+                            "type": "directory",
+                            "children": [
+                                {
+                                    "name": "[slug]",
+                                    "type": "directory",
+                                    "children": [
+                                        {
+                                            "name": "page.tsx",
+                                            "type": "file"
+                                        },
+                                        {
+                                            "name": "templates",
+                                            "type": "directory",
+                                            "children": [
+                                                {
+                                                    "name": "SplitLeftTemplate.tsx",
+                                                    "type": "file"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "name": "page.tsx",
+                                    "type": "file"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "subscribe",
+                            "type": "directory",
+                            "children": [
+                                {
+                                    "name": "page.tsx",
+                                    "type": "file"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "terms",
+                            "type": "directory",
+                            "children": [
+                                {
+                                    "name": "page.tsx",
+                                    "type": "file"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "terms.tsx",
+                            "type": "file"
+                        },
+                        {
+                            "name": "topics",
+                            "type": "directory",
+                            "children": [
+                                {
+                                    "name": "[slug]",
+                                    "type": "directory",
+                                    "children": [
+                                        {
+                                            "name": "page.tsx",
+                                            "type": "file"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "name": "page.tsx",
+                                    "type": "file"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "trend-reports",
+                            "type": "directory",
+                            "children": [
+                                {
+                                    "name": "[slug]",
+                                    "type": "directory",
+                                    "children": [
+                                        {
+                                            "name": "page.tsx",
+                                            "type": "file"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "name": "page.tsx",
+                                    "type": "file"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "user-agreement",
+                            "type": "directory",
+                            "children": [
+                                {
+                                    "name": "page.tsx",
+                                    "type": "file"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "work-nails",
+                            "type": "directory",
+                            "children": [
+                                {
+                                    "name": "[slug]",
+                                    "type": "directory",
+                                    "children": [
+                                        {
+                                            "name": "page.tsx",
+                                            "type": "file"
+                                        },
+                                        {
+                                            "name": "templates",
+                                            "type": "directory",
+                                            "children": [
+                                                {
+                                                    "name": "CenterTemplate.tsx",
+                                                    "type": "file"
+                                                },
+                                                {
+                                                    "name": "MDXContent.tsx",
+                                                    "type": "file"
+                                                },
+                                                {
+                                                    "name": "SplitLeftTemplate.tsx",
+                                                    "type": "file"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "name": "page.tsx",
+                                    "type": "file"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "work-with-us",
+                            "type": "directory",
+                            "children": [
+                                {
+                                    "name": "WorkWithUsFAQ.tsx",
+                                    "type": "file"
+                                },
+                                {
+                                    "name": "page.tsx",
+                                    "type": "file"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "components",
+                    "type": "directory",
+                    "children": [
+                        {
+                            "name": "AR",
+                            "type": "directory",
+                            "children": [
+                                {
+                                    "name": "ARNailTryOn.tsx",
+                                    "type": "file"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "Blog",
+                            "type": "directory",
+                            "children": [
+                                {
+                                    "name": "AboutEEAT.tsx",
+                                    "type": "file"
+                                },
+                                {
+                                    "name": "AuthorCard.tsx",
+                                    "type": "file"
+                                },
+                                {
+                                    "name": "BlogCategoryNav.tsx",
+                                    "type": "file"
+                                },
+                                {
+                                    "name": "BlogSearchBar.tsx",
+                                    "type": "file"
+                                },
+                                {
+                                    "name": "CarouselSection.tsx",
+                                    "type": "file"
+                                },
+                                {
+                                    "name": "CompactBlogCard.tsx",
+                                    "type": "file"
+                                },
+                                {
+                                    "name": "FeatureBlogCard.tsx",
+                                    "type": "file"
+                                },
+                                {
+                                    "name": "FinalNewsletter.tsx",
+                                    "type": "file"
+                                },
+                                {
+                                    "name": "ImageCarousel.tsx",
+                                    "type": "file"
+                                },
+                                {
+                                    "name": "InlineNewsletter.tsx",
+                                    "type": "file"
+                                },
+                                {
+                                    "name": "LatestStoriesSection.tsx",
+                                    "type": "file"
+                                },
+                                {
+                                    "name": "Lightbox.tsx",
+                                    "type": "file"
+                                },
+                                {
+                                    "name": "MainHeroSection.tsx",
+                                    "type": "file"
+                                },
+                                {
+                                    "name": "MustReadSection.tsx",
+                                    "type": "file"
+                                },
+                                {
+                                    "name": "NextPageButton.tsx",
+                                    "type": "file"
+                                },
+                                {
+                                    "name": "ProductCard.tsx",
+                                    "type": "file"
+                                },
+                                {
+                                    "name": "ProductGrid.tsx",
+                                    "type": "file"
+                                },
+                                {
+                                    "name": "ReadMoreSection.tsx",
+                                    "type": "file"
+                                },
+                                {
+                                    "name": "ShareButton.tsx",
+                                    "type": "file"
+                                },
+                                {
+                                    "name": "TableOfContents.tsx",
+                                    "type": "file"
+                                },
+                                {
+                                    "name": "WrapUp.tsx",
+                                    "type": "file"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "Breadcrumbs.tsx",
+                            "type": "file"
+                        },
+                        {
+                            "name": "ExitIntentPopup.tsx",
+                            "type": "file"
+                        },
+                        {
+                            "name": "Faqs",
+                            "type": "directory",
+                            "children": [
+                                {
+                                    "name": "FaqAbout.tsx",
+                                    "type": "file"
+                                },
+                                {
+                                    "name": "FaqAskQuestion.tsx",
+                                    "type": "file"
+                                },
+                                {
+                                    "name": "FaqFinalNewsletter.tsx",
+                                    "type": "file"
+                                },
+                                {
+                                    "name": "FaqInlineNewsletter.tsx",
+                                    "type": "file"
+                                },
+                                {
+                                    "name": "FaqReadMore.tsx",
+                                    "type": "file"
+                                },
+                                {
+                                    "name": "FaqsGrid.tsx",
+                                    "type": "file"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "Footer.tsx",
+                            "type": "file"
+                        },
+                        {
+                            "name": "FooterClient.tsx",
+                            "type": "file"
+                        },
+                        {
+                            "name": "Header.tsx",
+                            "type": "file"
+                        },
+                        {
+                            "name": "Homepage",
+                            "type": "directory",
+                            "children": [
+                                {
+                                    "name": "BlogCarousel.tsx",
+                                    "type": "file"
+                                },
+                                {
+                                    "name": "BusinessCarousel.tsx",
+                                    "type": "file"
+                                },
+                                {
+                                    "name": "FaqCarousel.tsx",
+                                    "type": "file"
+                                },
+                                {
+                                    "name": "Hero1Section.tsx",
+                                    "type": "file"
+                                },
+                                {
+                                    "name": "Hero2Section.tsx",
+                                    "type": "file"
+                                },
+                                {
+                                    "name": "InspoCategoriesCarousel.tsx",
+                                    "type": "file"
+                                },
+                                {
+                                    "name": "InspoMasonryGrid.tsx",
+                                    "type": "file"
+                                },
+                                {
+                                    "name": "MustReadSection.tsx",
+                                    "type": "file"
+                                },
+                                {
+                                    "name": "SpotlightCarousel.tsx",
+                                    "type": "file"
+                                },
+                                {
+                                    "name": "SubscribeSection.tsx",
+                                    "type": "file"
+                                },
+                                {
+                                    "name": "TrendTimelineHero.tsx",
+                                    "type": "file"
+                                },
+                                {
+                                    "name": "WorkNailsCarousel.tsx",
+                                    "type": "file"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "Inspo",
+                            "type": "directory",
+                            "children": [
+                                {
+                                    "name": "AboutInspo.tsx",
+                                    "type": "file"
+                                },
+                                {
+                                    "name": "AboutSection.tsx",
+                                    "type": "file"
+                                },
+                                {
+                                    "name": "CategoryClient.tsx",
+                                    "type": "file"
+                                },
+                                {
+                                    "name": "CategoryFilterBar.tsx",
+                                    "type": "file"
+                                },
+                                {
+                                    "name": "CategoryGrid.tsx",
+                                    "type": "file"
+                                },
+                                {
+                                    "name": "CategoryHero.tsx",
+                                    "type": "file"
+                                },
+                                {
+                                    "name": "DesignTips.tsx",
+                                    "type": "file"
+                                },
+                                {
+                                    "name": "ExploreSection.tsx",
+                                    "type": "file"
+                                },
+                                {
+                                    "name": "FAQAccordion.tsx",
+                                    "type": "file"
+                                },
+                                {
+                                    "name": "FAQSection.tsx",
+                                    "type": "file"
+                                },
+                                {
+                                    "name": "FeaturedCarousel.tsx",
+                                    "type": "file"
+                                },
+                                {
+                                    "name": "FilterBar.tsx",
+                                    "type": "file"
+                                },
+                                {
+                                    "name": "ImageModal.tsx",
+                                    "type": "file"
+                                },
+                                {
+                                    "name": "InspoClient.tsx",
+                                    "type": "file"
+                                },
+                                {
+                                    "name": "InspoHero.tsx",
+                                    "type": "file"
+                                },
+                                {
+                                    "name": "InspoInlineNewsletter.tsx",
+                                    "type": "file"
+                                },
+                                {
+                                    "name": "InspoRelatedArticles.tsx",
+                                    "type": "file"
+                                },
+                                {
+                                    "name": "LoadingSkeleton.tsx",
+                                    "type": "file"
+                                },
+                                {
+                                    "name": "MasonryGallery.tsx",
+                                    "type": "file"
+                                },
+                                {
+                                    "name": "RelatedContent.tsx",
+                                    "type": "file"
+                                },
+                                {
+                                    "name": "ShopCTA.tsx",
+                                    "type": "file"
+                                },
+                                {
+                                    "name": "StatsBar.tsx",
+                                    "type": "file"
+                                },
+                                {
+                                    "name": "SubmitArtSection.tsx",
+                                    "type": "file"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "NewsletterForm.tsx",
+                            "type": "file"
+                        },
+                        {
+                            "name": "Reports",
+                            "type": "directory",
+                            "children": [
+                                {
+                                    "name": "ReportAbout.tsx",
+                                    "type": "file"
+                                },
+                                {
+                                    "name": "ReportFAQAccordion.tsx",
+                                    "type": "file"
+                                },
+                                {
+                                    "name": "ReportFinalNewsletter.tsx",
+                                    "type": "file"
+                                },
+                                {
+                                    "name": "ReportInlineNewsletter.tsx",
+                                    "type": "file"
+                                },
+                                {
+                                    "name": "ReportPullQuote.tsx",
+                                    "type": "file"
+                                },
+                                {
+                                    "name": "ReportReadMore.tsx",
+                                    "type": "file"
+                                },
+                                {
+                                    "name": "ReportStatCallout.tsx",
+                                    "type": "file"
+                                },
+                                {
+                                    "name": "ReportTakeaway.tsx",
+                                    "type": "file"
+                                },
+                                {
+                                    "name": "ReportsGrid.tsx",
+                                    "type": "file"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "SearchBar.tsx",
+                            "type": "file"
+                        },
+                        {
+                            "name": "Spotlight",
+                            "type": "directory",
+                            "children": [
+                                {
+                                    "name": "SpotlightCard.tsx",
+                                    "type": "file"
+                                },
+                                {
+                                    "name": "SpotlightGrid.tsx",
+                                    "type": "file"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "StickySlideIn.tsx",
+                            "type": "file"
+                        },
+                        {
+                            "name": "WorkNails",
+                            "type": "directory",
+                            "children": [
+                                {
+                                    "name": "WorkNailsReadMoreSection.tsx",
+                                    "type": "file"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "business",
+                            "type": "directory",
+                            "children": [
+                                {
+                                    "name": "BusinessTemplate.tsx",
+                                    "type": "file"
+                                },
+                                {
+                                    "name": "RegionCard.tsx",
+                                    "type": "file"
+                                },
+                                {
+                                    "name": "StateGrid.tsx",
+                                    "type": "file"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "shop",
+                            "type": "directory",
+                            "children": [
+                                {
+                                    "name": "ComparisonTable.tsx",
+                                    "type": "file"
+                                },
+                                {
+                                    "name": "ProsConsBlock.tsx",
+                                    "type": "file"
+                                },
+                                {
+                                    "name": "ShopFAQ.tsx",
+                                    "type": "file"
+                                },
+                                {
+                                    "name": "ShopFinalCTA.tsx",
+                                    "type": "file"
+                                },
+                                {
+                                    "name": "ShopInlineCTA.tsx",
+                                    "type": "file"
+                                },
+                                {
+                                    "name": "ShopProductCard.tsx",
+                                    "type": "file"
+                                },
+                                {
+                                    "name": "ShopProductGrid.tsx",
+                                    "type": "file"
+                                },
+                                {
+                                    "name": "ShopTableOfContents.tsx",
+                                    "type": "file"
+                                },
+                                {
+                                    "name": "WinnerBadge.tsx",
+                                    "type": "file"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "ui",
+                            "type": "directory",
+                            "children": [
+                                {
+                                    "name": "AnimatedCard.tsx",
+                                    "type": "file"
+                                },
+                                {
+                                    "name": "GlassCard.tsx",
+                                    "type": "file"
+                                },
+                                {
+                                    "name": "PremiumButton.tsx",
+                                    "type": "file"
+                                },
+                                {
+                                    "name": "ScrollReveal.tsx",
+                                    "type": "file"
+                                },
+                                {
+                                    "name": "SocialFollowCTA.tsx",
+                                    "type": "file"
+                                },
+                                {
+                                    "name": "StickyBottomNav.tsx",
+                                    "type": "file"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "content",
+                    "type": "directory",
+                    "children": [
+                        {
+                            "name": "blogs",
+                            "type": "directory",
+                            "children": [
+                                {
+                                    "name": "acrylic-nails-cost",
+                                    "type": "directory",
+                                    "children": [
+                                        {
+                                            "type": "summary",
+                                            "name": "5 .md files"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "name": "aesthetic-nails",
+                                    "type": "directory",
+                                    "children": [
+                                        {
+                                            "type": "summary",
+                                            "name": "18 .md files"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "name": "august",
+                                    "type": "directory",
+                                    "children": [
+                                        {
+                                            "type": "summary",
+                                            "name": "4 .md files"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "name": "back-to-school",
+                                    "type": "directory",
+                                    "children": [
+                                        {
+                                            "type": "summary",
+                                            "name": "6 .md files"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "name": "biab-cost",
+                                    "type": "directory",
+                                    "children": [
+                                        {
+                                            "type": "summary",
+                                            "name": "6 .md files"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "name": "carnival",
+                                    "type": "directory",
+                                    "children": [
+                                        {
+                                            "type": "summary",
+                                            "name": "7 .md files"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "name": "cat-eye",
+                                    "type": "directory",
+                                    "children": [
+                                        {
+                                            "type": "summary",
+                                            "name": "8 .md files"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "name": "chrome-nails",
+                                    "type": "directory",
+                                    "children": [
+                                        {
+                                            "type": "summary",
+                                            "name": "10 .md files"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "name": "coffin-nails",
+                                    "type": "directory",
+                                    "children": [
+                                        {
+                                            "type": "summary",
+                                            "name": "11 .md files"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "name": "cuticle-care",
+                                    "type": "directory",
+                                    "children": [
+                                        {
+                                            "type": "summary",
+                                            "name": "7 .md files"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "name": "fall",
+                                    "type": "directory",
+                                    "children": [
+                                        {
+                                            "type": "summary",
+                                            "name": "11 .md files"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "name": "festival-nails",
+                                    "type": "directory",
+                                    "children": [
+                                        {
+                                            "type": "summary",
+                                            "name": "9 .md files"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "name": "french-nails",
+                                    "type": "directory",
+                                    "children": [
+                                        {
+                                            "type": "summary",
+                                            "name": "11 .md files"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "name": "fruit-nails",
+                                    "type": "directory",
+                                    "children": [
+                                        {
+                                            "type": "summary",
+                                            "name": "8 .md files"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "name": "gel-nails-cost",
+                                    "type": "directory",
+                                    "children": [
+                                        {
+                                            "type": "summary",
+                                            "name": "10 .md files"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "name": "goth",
+                                    "type": "directory",
+                                    "children": [
+                                        {
+                                            "type": "summary",
+                                            "name": "9 .md files"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "name": "hema-allergy-nails",
+                                    "type": "directory",
+                                    "children": [
+                                        {
+                                            "type": "summary",
+                                            "name": "6 .md files"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "name": "holiday-nails",
+                                    "type": "directory",
+                                    "children": [
+                                        {
+                                            "type": "summary",
+                                            "name": "8 .md files"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "name": "japanese-nails",
+                                    "type": "directory",
+                                    "children": [
+                                        {
+                                            "type": "summary",
+                                            "name": "8 .md files"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "name": "jelly-nails",
+                                    "type": "directory",
+                                    "children": [
+                                        {
+                                            "type": "summary",
+                                            "name": "7 .md files"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "name": "july-nails",
+                                    "type": "directory",
+                                    "children": [
+                                        {
+                                            "type": "summary",
+                                            "name": "4 .md files"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "name": "korean-nails",
+                                    "type": "directory",
+                                    "children": [
+                                        {
+                                            "type": "summary",
+                                            "name": "7 .md files"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "name": "lgbtq",
+                                    "type": "directory",
+                                    "children": [
+                                        {
+                                            "type": "summary",
+                                            "name": "33 .md files"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "name": "mood-nails",
+                                    "type": "directory",
+                                    "children": [
+                                        {
+                                            "type": "summary",
+                                            "name": "8 .md files"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "name": "nail-color-psychology-attraction",
+                                    "type": "directory",
+                                    "children": [
+                                        {
+                                            "type": "summary",
+                                            "name": "5 .md files"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "name": "nail-colors-for-eye-color",
+                                    "type": "directory",
+                                    "children": [
+                                        {
+                                            "type": "summary",
+                                            "name": "5 .md files"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "name": "nail-costs",
+                                    "type": "directory",
+                                    "children": [
+                                        {
+                                            "type": "summary",
+                                            "name": "10 .md files"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "name": "nail-fungus",
+                                    "type": "directory",
+                                    "children": [
+                                        {
+                                            "type": "summary",
+                                            "name": "8 .md files"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "name": "nail-product-ingredients",
+                                    "type": "directory",
+                                    "children": [
+                                        {
+                                            "type": "summary",
+                                            "name": "7 .md files"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "name": "nail-shape-for-hands",
+                                    "type": "directory",
+                                    "children": [
+                                        {
+                                            "type": "summary",
+                                            "name": "7 .md files"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "name": "nail-strengthening",
+                                    "type": "directory",
+                                    "children": [
+                                        {
+                                            "type": "summary",
+                                            "name": "8 .md files"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "name": "nail-trends-2026",
+                                    "type": "directory",
+                                    "children": [
+                                        {
+                                            "type": "summary",
+                                            "name": "8 .md files"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "name": "nail-trends-2027",
+                                    "type": "directory",
+                                    "children": [
+                                        {
+                                            "type": "summary",
+                                            "name": "8 .md files"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "name": "nails-by-color",
+                                    "type": "directory",
+                                    "children": [
+                                        {
+                                            "type": "summary",
+                                            "name": "17 .md files"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "name": "nails-for-older-women",
+                                    "type": "directory",
+                                    "children": [
+                                        {
+                                            "type": "summary",
+                                            "name": "16 .md files"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "name": "nfl-nails",
+                                    "type": "directory",
+                                    "children": [
+                                        {
+                                            "type": "summary",
+                                            "name": "11 .md files"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "name": "pedicure-tipping",
+                                    "type": "directory",
+                                    "children": [
+                                        {
+                                            "type": "summary",
+                                            "name": "3 .md files"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "name": "print-nails",
+                                    "type": "directory",
+                                    "children": [
+                                        {
+                                            "type": "summary",
+                                            "name": "11 .md files"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "name": "skin-tone",
+                                    "type": "directory",
+                                    "children": [
+                                        {
+                                            "type": "summary",
+                                            "name": "14 .md files"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "name": "soccer",
+                                    "type": "directory",
+                                    "children": [
+                                        {
+                                            "type": "summary",
+                                            "name": "13 .md files"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "name": "toenail-fungus",
+                                    "type": "directory",
+                                    "children": [
+                                        {
+                                            "type": "summary",
+                                            "name": "9 .md files"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "name": "valentine",
+                                    "type": "directory",
+                                    "children": [
+                                        {
+                                            "type": "summary",
+                                            "name": "11 .md files"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "name": "wedding-nails",
+                                    "type": "directory",
+                                    "children": [
+                                        {
+                                            "type": "summary",
+                                            "name": "9 .md files"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "name": "y2k-nails",
+                                    "type": "directory",
+                                    "children": [
+                                        {
+                                            "type": "summary",
+                                            "name": "7 .md files"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "name": "zodiac-nails",
+                                    "type": "directory",
+                                    "children": [
+                                        {
+                                            "type": "summary",
+                                            "name": "15 .md files"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "summary",
+                                    "name": "107 .md files"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "business",
+                            "type": "directory",
+                            "children": [
+                                {
+                                    "name": "united-states",
+                                    "type": "directory",
+                                    "children": [
+                                        {
+                                            "name": "georgia",
+                                            "type": "directory",
+                                            "children": [
+                                                {
+                                                    "name": "nail-salon-seasonal-promo-atlanta-summer",
+                                                    "type": "directory",
+                                                    "children": []
+                                                },
+                                                {
+                                                    "type": "summary",
+                                                    "name": "62 .md files"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "name": "faqs",
+                            "type": "directory",
+                            "children": [
+                                {
+                                    "type": "summary",
+                                    "name": "52 .mdx files"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "inspo-categories.json",
+                            "type": "file"
+                        },
+                        {
+                            "name": "inspo-images",
+                            "type": "directory",
+                            "children": [
+                                {
+                                    "name": "2027-trends-inspiration-gallery.json",
+                                    "type": "file"
+                                },
+                                {
+                                    "name": "aesthetic-nails-inspiration-gallery.json",
+                                    "type": "file"
+                                },
+                                {
+                                    "name": "almond-nails-2026.json",
+                                    "type": "file"
+                                },
+                                {
+                                    "name": "august-inspiration-gallery.json",
+                                    "type": "file"
+                                },
+                                {
+                                    "name": "back-to-school-inspiration-gallery.json",
+                                    "type": "file"
+                                },
+                                {
+                                    "name": "carnival-inspiration-gallery.json",
+                                    "type": "file"
+                                },
+                                {
+                                    "name": "cat-eye-inspiration-gallery.json",
+                                    "type": "file"
+                                },
+                                {
+                                    "name": "chrome-nails-inspiration-gallery.json",
+                                    "type": "file"
+                                },
+                                {
+                                    "name": "coffin-ballerina-nails-2026.json",
+                                    "type": "file"
+                                },
+                                {
+                                    "name": "colourful-nails-inspiration-gallery.json",
+                                    "type": "file"
+                                },
+                                {
+                                    "name": "fall-inspiration-gallery.json",
+                                    "type": "file"
+                                },
+                                {
+                                    "name": "festival-nails-inspiration-gallery.json",
+                                    "type": "file"
+                                },
+                                {
+                                    "name": "french-tip-nails-2026.json",
+                                    "type": "file"
+                                },
+                                {
+                                    "name": "fruit-nails-inspiration-gallery.json",
+                                    "type": "file"
+                                },
+                                {
+                                    "name": "goth-inspiration-gallery.json",
+                                    "type": "file"
+                                },
+                                {
+                                    "name": "holiday-nails-inspiration-gallery.json",
+                                    "type": "file"
+                                },
+                                {
+                                    "name": "japanese-nails-inspiration-gallery.json",
+                                    "type": "file"
+                                },
+                                {
+                                    "name": "jelly-nails-inspiration-gallery.json",
+                                    "type": "file"
+                                },
+                                {
+                                    "name": "korean-nails-inspiration-gallery.json",
+                                    "type": "file"
+                                },
+                                {
+                                    "name": "lgbtq-inspiration-gallery.json",
+                                    "type": "file"
+                                },
+                                {
+                                    "name": "mood-nails-inspiration-gallery.json",
+                                    "type": "file"
+                                },
+                                {
+                                    "name": "mothers-day-nails-2026.json",
+                                    "type": "file"
+                                },
+                                {
+                                    "name": "nail-color-psychology-attraction-inspiration-gallery.json",
+                                    "type": "file"
+                                },
+                                {
+                                    "name": "nail-colors-for-eye-color-inspiration-gallery.json",
+                                    "type": "file"
+                                },
+                                {
+                                    "name": "nail-shape-for-hands-inspiration-gallery.json",
+                                    "type": "file"
+                                },
+                                {
+                                    "name": "nail-trends-2026-inspiration-gallery.json",
+                                    "type": "file"
+                                },
+                                {
+                                    "name": "nail-trends-2027-inspiration-gallery.json",
+                                    "type": "file"
+                                },
+                                {
+                                    "name": "nails-for-older-women-inspiration-gallery.json",
+                                    "type": "file"
+                                },
+                                {
+                                    "name": "nfl-nails-inspiration-gallery.json",
+                                    "type": "file"
+                                },
+                                {
+                                    "name": "print-nails-inspiration-gallery.json",
+                                    "type": "file"
+                                },
+                                {
+                                    "name": "prom-nails-2026.json",
+                                    "type": "file"
+                                },
+                                {
+                                    "name": "soccer-inspiration-gallery.json",
+                                    "type": "file"
+                                },
+                                {
+                                    "name": "spring-nails-2026.json",
+                                    "type": "file"
+                                },
+                                {
+                                    "name": "summer-nails-2026.json",
+                                    "type": "file"
+                                },
+                                {
+                                    "name": "valentine-nails-2026.json",
+                                    "type": "file"
+                                },
+                                {
+                                    "name": "wedding-nails-inspiration-gallery.json",
+                                    "type": "file"
+                                },
+                                {
+                                    "name": "y2k-inspiration-gallery.json",
+                                    "type": "file"
+                                },
+                                {
+                                    "name": "zodiac-nails-inspiration-gallery.json",
+                                    "type": "file"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "reports",
+                            "type": "directory",
+                            "children": [
+                                {
+                                    "type": "summary",
+                                    "name": "1 .mdx file"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "shop",
+                            "type": "directory",
+                            "children": [
+                                {
+                                    "name": "budget",
+                                    "type": "directory",
+                                    "children": [
+                                        {
+                                            "type": "summary",
+                                            "name": "4 .md files"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "name": "fall",
+                                    "type": "directory",
+                                    "children": [
+                                        {
+                                            "type": "summary",
+                                            "name": "3 .md files"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "name": "gel-nail-kits",
+                                    "type": "directory",
+                                    "children": [
+                                        {
+                                            "type": "summary",
+                                            "name": "4 .md files"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "name": "gel-polish",
+                                    "type": "directory",
+                                    "children": [
+                                        {
+                                            "type": "summary",
+                                            "name": "6 .md files"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "name": "gifts",
+                                    "type": "directory",
+                                    "children": [
+                                        {
+                                            "type": "summary",
+                                            "name": "3 .md files"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "name": "halloween",
+                                    "type": "directory",
+                                    "children": [
+                                        {
+                                            "type": "summary",
+                                            "name": "2 .md files"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "name": "instant-nails",
+                                    "type": "directory",
+                                    "children": [
+                                        {
+                                            "type": "summary",
+                                            "name": "2 .md files"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "name": "mothers-day",
+                                    "type": "directory",
+                                    "children": [
+                                        {
+                                            "type": "summary",
+                                            "name": "1 .md file"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "name": "nail-art-tools",
+                                    "type": "directory",
+                                    "children": [
+                                        {
+                                            "type": "summary",
+                                            "name": "4 .md files"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "name": "nail-care-tools",
+                                    "type": "directory",
+                                    "children": [
+                                        {
+                                            "type": "summary",
+                                            "name": "5 .md files"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "name": "nail-drills",
+                                    "type": "directory",
+                                    "children": [
+                                        {
+                                            "type": "summary",
+                                            "name": "6 .md files"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "name": "nail-kits",
+                                    "type": "directory",
+                                    "children": [
+                                        {
+                                            "type": "summary",
+                                            "name": "4 .md files"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "name": "nail-lamps",
+                                    "type": "directory",
+                                    "children": [
+                                        {
+                                            "type": "summary",
+                                            "name": "5 .md files"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "name": "spring",
+                                    "type": "directory",
+                                    "children": [
+                                        {
+                                            "type": "summary",
+                                            "name": "2 .md files"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "name": "summer",
+                                    "type": "directory",
+                                    "children": [
+                                        {
+                                            "type": "summary",
+                                            "name": "9 .md files"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "name": "valentines-day",
+                                    "type": "directory",
+                                    "children": [
+                                        {
+                                            "type": "summary",
+                                            "name": "2 .md files"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "name": "winter",
+                                    "type": "directory",
+                                    "children": [
+                                        {
+                                            "type": "summary",
+                                            "name": "4 .md files"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "name": "spotlights",
+                            "type": "directory",
+                            "children": [
+                                {
+                                    "type": "summary",
+                                    "name": "1 .md file"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "topics",
+                            "type": "directory",
+                            "children": [
+                                {
+                                    "type": "summary",
+                                    "name": "6 .md files"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "work-nails",
+                            "type": "directory",
+                            "children": [
+                                {
+                                    "type": "summary",
+                                    "name": "21 .mdx files"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "data",
+                    "type": "directory",
+                    "children": [
+                        {
+                            "name": "authors.ts",
+                            "type": "file"
+                        }
+                    ]
+                },
+                {
+                    "name": "hooks",
+                    "type": "directory",
+                    "children": [
+                        {
+                            "name": "useNewsletterPopup.ts",
+                            "type": "file"
+                        }
+                    ]
+                },
+                {
+                    "name": "lib",
+                    "type": "directory",
+                    "children": [
+                        {
+                            "name": "authors.ts",
+                            "type": "file"
+                        },
+                        {
+                            "name": "blog.ts",
+                            "type": "file"
+                        },
+                        {
+                            "name": "breadcrumbs.ts",
+                            "type": "file"
+                        },
+                        {
+                            "name": "business.ts",
+                            "type": "file"
+                        },
+                        {
+                            "name": "contentValidation.ts",
+                            "type": "file"
+                        },
+                        {
+                            "name": "encyclopedia.ts",
+                            "type": "file"
+                        },
+                        {
+                            "name": "entityMapping.ts",
+                            "type": "file"
+                        },
+                        {
+                            "name": "faqs.ts",
+                            "type": "file"
+                        },
+                        {
+                            "name": "generateSchemas.ts",
+                            "type": "file"
+                        },
+                        {
+                            "name": "imageOptimization.ts",
+                            "type": "file"
+                        },
+                        {
+                            "name": "inspo.ts",
+                            "type": "file"
+                        },
+                        {
+                            "name": "inspoFilters.ts",
+                            "type": "file"
+                        },
+                        {
+                            "name": "inspoSchemas.ts",
+                            "type": "file"
+                        },
+                        {
+                            "name": "reports.ts",
+                            "type": "file"
+                        },
+                        {
+                            "name": "seo.ts",
+                            "type": "file"
+                        },
+                        {
+                            "name": "shop.ts",
+                            "type": "file"
+                        },
+                        {
+                            "name": "spotlight.ts",
+                            "type": "file"
+                        },
+                        {
+                            "name": "topic.ts",
+                            "type": "file"
+                        },
+                        {
+                            "name": "workNails.ts",
+                            "type": "file"
+                        }
+                    ]
+                },
+                {
+                    "name": "types",
+                    "type": "directory",
+                    "children": [
+                        {
+                            "name": "author.ts",
+                            "type": "file"
+                        },
+                        {
+                            "name": "blog.ts",
+                            "type": "file"
+                        },
+                        {
+                            "name": "business.ts",
+                            "type": "file"
+                        },
+                        {
+                            "name": "faqs.ts",
+                            "type": "file"
+                        },
+                        {
+                            "name": "inspo.ts",
+                            "type": "file"
+                        },
+                        {
+                            "name": "reports.ts",
+                            "type": "file"
+                        },
+                        {
+                            "name": "shop.ts",
+                            "type": "file"
+                        },
+                        {
+                            "name": "topic.ts",
+                            "type": "file"
+                        },
+                        {
+                            "name": "workNails.ts",
+                            "type": "file"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "tailwind.config.js",
+            "type": "file"
+        },
+        {
+            "name": "tsconfig.json",
+            "type": "file"
+        },
+        {
+            "name": "update.js",
+            "type": "file"
+        },
+        {
+            "type": "summary",
+            "name": "1 .md file"
+        }
+    ]
+}
