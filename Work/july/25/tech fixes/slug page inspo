@@ -1,0 +1,274 @@
+// src/app/inspo/[design]/page.tsx
+import { Metadata } from 'next';
+import { notFound } from 'next/navigation';
+import CategoryClient from '@/components/Inspo/CategoryClient';
+import {
+  getDesignData,
+  getDesignImages,
+  getAllDesignSlugs,
+  getRelatedDesigns,
+} from '@/lib/inspo';
+import { getPillarClusterPosts } from '@/lib/blog';
+import {
+  generateOrganizationSchema,
+  generateWebSiteSchema,
+  generateBreadcrumbSchema,
+  generateCategoryCollectionSchema,
+  generateImageGallerySchema,
+  generateArticleSchema,
+  generateFAQSchema,
+  generateWebPageSchema,
+} from '@/lib/inspoSchemas';
+
+export const dynamic = 'force-static'
+export const revalidate = false
+
+
+export async function generateStaticParams() {
+  const slugs = getAllDesignSlugs();
+  return slugs.map((slug) => ({
+    design: slug,
+  }));
+}
+
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ design: string }>;
+}): Promise<Metadata> {
+  const { design } = await params;
+  const designData = getDesignData(design); // sync  no await
+ 
+  if (!designData) {
+    return {
+      title: 'Design Not Found',
+      robots: { index: false, follow: false },
+    };
+  }
+ 
+  const canonicalUrl = `https://mirelleinspo.com/inspo/${design}`;
+  const imageUrl = designData.heroImage
+    ? `https://mirelleinspo.com${designData.heroImage}`
+    : 'https://mirelleinspo.com/logo.png';
+ 
+  return {
+    title: designData.seo.title,
+    description: designData.seo.description,
+    authors: [
+      {
+        name: 'Jyotika Verma',
+        url: 'https://mirelleinspo.com/authors/jyoti-mirelle',
+      },
+    ],
+    creator: 'Jyotika Verma',
+    publisher: 'Mirellé Inspo',
+    alternates: { canonical: canonicalUrl },
+    openGraph: {
+      title: designData.seo.title,
+      description: designData.seo.description,
+      url: canonicalUrl,
+      siteName: 'Mirellé Inspo',
+      type: 'website',
+      locale: 'en_US',
+      images: [
+        {
+          url: imageUrl,
+          width: 1200,
+          height: 630,
+          alt: designData.seo.title,
+        },
+      ],
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title: designData.seo.title,
+      description: designData.seo.description,
+      images: [imageUrl],
+      creator: '@mirelleinspo',
+      site: '@mirelleinspo',
+    },
+    robots: {
+      index: true,
+      follow: true,
+      googleBot: {
+        index: true,
+        follow: true,
+        'max-image-preview': 'large',
+        'max-snippet': -1,
+      },
+    },
+  };
+}
+ 
+
+// Category-specific FAQs
+const categoryFAQs: Record<string, Array<{ question: string; answer: string }>> = {
+  'french-tips': [
+    {
+      question: 'What nail shapes work best for French tips?',
+      answer: 'Almond, oval, and square shapes showcase French tips beautifully. Almond and oval shapes elongate fingers while providing elegant canvas for tip designs, while square nails offer a classic, clean look. Choose based on your natural nail shape and lifestyle - square is more durable for active hands.',
+    },
+    {
+      question: 'How do I make French tips last longer?',
+      answer: 'Use gel polish for 2-3 week wear, apply quality base coat, cap the free edge when painting tips, use cuticle oil daily, and seal with thick top coat. Avoid using nails as tools and wear gloves for household chores. Gel French tips with proper prep can last up to 3 weeks.',
+    },
+    {
+      question: 'Can I do French tips on short nails?',
+      answer: 'Absolutely! Short French tips look chic and professional. Use thinner tip lines (1-2mm) for proportional look, or try micro French with barely-there tips. Nude base with white tips elongates short nails visually. Oval or squoval shapes work best for short French manicures.',
+    },
+    {
+      question: 'What are colored French tips?',
+      answer: 'Colored French tips replace traditional white with vibrant shades - think pink, red, burgundy, chrome, or glitter tips. Try ombre French, rainbow tips, or seasonal colors. Popular 2025 trends include burgundy French, chrome tips, and pastel gradient French manicures.',
+    },
+    {
+      question: 'How much do French tip nails cost at a salon?',
+      answer: 'Regular polish French tips: $25-$45. Gel French manicure: $40-$65. Acrylic French tips with extensions: $50-$80. Prices vary by location and salon tier. Gel lasts 2-3 weeks making it cost-effective. At-home gel kits cost $30-$60 for multiple manicures.',
+    },
+  ],
+  ombre: [
+    {
+      question: 'What is the best technique for ombre nails?',
+      answer: 'The makeup sponge technique delivers the smoothest gradients. Apply polish colors side-by-side on a dense makeup sponge, dab onto nails in bouncing motion, blend where colors meet. Use 2-3 thin layers for opacity, finish with glossy top coat. Practice on paper first to perfect color transition.',
+    },
+    {
+      question: 'How many colors can I use in ombre nails?',
+      answer: 'Most ombre designs use 2-3 colors for smooth transitions. Two colors create classic gradients, three add dimension. More than three colors can look busy on short nails but work for long nail canvases. Stick to colors in same family for harmonious blends.',
+    },
+    {
+      question: 'Can I do ombre nails with regular polish?',
+      answer: 'Yes! Regular polish works great with sponge technique. Use quick-dry formula to prevent smudging during application. Work fast before polish dries on sponge. Set with quick-dry top coat. Regular ombre lasts 5-7 days vs. 2-3 weeks for gel.',
+    },
+    {
+      question: 'What are the trending ombre color combinations for 2025?',
+      answer: 'Sunset ombre (orange to pink to purple), mocha to cream (Pantone 2025), burgundy to nude, icy blue to white, sage green to cream, and galaxy ombre (navy to purple with glitter) are dominating 2025. Chrome ombre and velvet ombre finishes are also trending.',
+    },
+    {
+      question: 'Do ombre nails work on short nails?',
+      answer: 'Yes! Vertical ombre (gradient from cuticle to tip) elongates short nails visually. Use 2 colors maximum for cleaner look. Light to dark gradient makes nails appear longer. Subtle nude to pink ombre looks natural and professional on short lengths.',
+    },
+  ],
+  chrome: [
+    {
+      question: 'How do you apply chrome nail powder?',
+      answer: 'Apply over cured gel base color (no-wipe top coat), rub chrome powder with silicone applicator or eyeshadow brush until mirror finish achieved, dust off excess, seal with no-wipe gel top coat, cure. Use black base for maximum shine, white base for softer chrome effect.',
+    },
+    {
+      question: 'How long do chrome nails last?',
+      answer: 'Chrome nails with proper gel application last 2-3 weeks. Chrome powder itself doesn\'t chip but gel base beneath can lift. Avoid harsh chemicals and excessive water exposure in first 24 hours. Use cuticle oil daily to maintain shine. Reapply top coat weekly for extended wear.',
+    },
+    {
+      question: 'Can you do chrome nails with regular polish?',
+      answer: 'Traditional chrome powder requires gel for proper adhesion and sealing. However, chrome nail polishes and chrome wraps work with regular polish. These alternatives provide metallic finish but less intense mirror shine than powder chrome. Easier for at-home application.',
+    },
+    {
+      question: 'What is the difference between chrome and metallic nails?',
+      answer: 'Chrome creates intense mirror-like reflection with powder application over gel, appears completely reflective. Metallic nails use shimmery polish with metallic particles, provide sparkly finish but not full mirror effect. Chrome is more dramatic, metallics more subtle and everyday-wearable.',
+    },
+    {
+      question: 'What colors work best under chrome powder?',
+      answer: 'Black base creates most intense silver chrome mirror. White base softens chrome for vanilla/pearl effect. Navy creates deep space chrome. Colors affect chrome tone - pink base gives rose gold, purple creates holographic shift. Experiment with base colors for unique chrome finishes.',
+    },
+  ],
+  minimalist: [
+    {
+      question: 'What defines minimalist nail designs?',
+      answer: 'Minimalist nails feature clean lines, negative space, subtle accents, and neutral color palettes. Think single line art, delicate dots, micro French tips, or sheer washes of color. The design is intentionally understated - less is more. Perfect for professional settings and everyday wear.',
+    },
+    {
+      question: 'Are minimalist nails suitable for work?',
+      answer: 'Yes! Minimalist designs are workplace-appropriate across industries. Conservative offices appreciate nude bases with thin line art or simple dots. Even creative fields love elevated minimalism. They\'re professional yet stylish, requiring minimal maintenance, and less likely to chip than bold designs.',
+    },
+    {
+      question: 'How do I create minimalist nail art at home?',
+      answer: 'Use striping tape for perfect lines, dotting tool for clean dots, or thin nail art brush for delicate designs. Start with nude or sheer base, add one simple element per nail. Practice line work on paper first. Minimalist designs are forgiving - imperfections add hand-painted charm.',
+    },
+    {
+      question: 'What colors are best for minimalist nails?',
+      answer: 'Neutral tones dominate: milky white, soft pink, sheer nude, beige, taupe, sage green, soft gray. Black or navy for line art creates contrast. White on nude base is classic. Monochromatic schemes maintain minimalist aesthetic. Avoid neons and brights for true minimalism.',
+    },
+    {
+      question: 'Can minimalist nails still be trendy?',
+      answer: 'Absolutely! Minimalism is major 2025 trend reflecting quiet luxury movement. Glazed donut nails, soap nails, single line art, and negative space designs dominate runways and social media. Minimalist doesn\'t mean boring - it\'s intentional, refined, and timeless.',
+    },
+  ],
+};
+
+export default async function InspoDesignPage({
+  params,
+}: {
+  params: Promise<{ design: string }>;
+}) {
+  const { design } = await params;
+
+  const designData = getDesignData(design);
+  const images = await getDesignImages(design);
+  const relatedDesigns = getRelatedDesigns(design, 3);
+
+  if (!designData) {
+    notFound();
+  }
+
+  // Fetch pillar + cluster posts if this category has a pillarSlug
+  const relatedArticles = designData.pillarSlug
+    ? await getPillarClusterPosts(designData.pillarSlug)
+    : null;
+
+  const faqs = categoryFAQs[design] || [];
+
+  const organizationSchema = generateOrganizationSchema();
+  const websiteSchema = generateWebSiteSchema();
+  const breadcrumbSchema = generateBreadcrumbSchema([
+    { name: 'Home', url: 'https://mirelleinspo.com' },
+    { name: 'Inspiration', url: 'https://mirelleinspo.com/inspo' },
+    { name: designData.displayName, url: `https://mirelleinspo.com/inspo/${design}` },
+  ]);
+  const collectionSchema = generateCategoryCollectionSchema(designData, images.length);
+  const gallerySchema = generateImageGallerySchema(designData, images);
+  const articleSchema = generateArticleSchema(designData);
+  const faqSchema = faqs.length > 0 ? generateFAQSchema(faqs) : null;
+  const webPageSchema = generateWebPageSchema(
+    designData.seo.title,
+    designData.seo.description,
+    `https://mirelleinspo.com/inspo/${design}`,
+    designData.heroImage
+  );
+
+  return (
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(collectionSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(gallerySchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(webPageSchema) }}
+      />
+      {faqSchema && (
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+        />
+      )}
+
+      <CategoryClient
+        designData={designData}
+        initialImages={images}
+        relatedDesigns={relatedDesigns}
+        faqs={faqs}
+        relatedArticles={relatedArticles}
+      />
+    </>
+  );
+}
