@@ -1,0 +1,177 @@
+// src/components/Inspo/MasonryGallery.tsx
+'use client';
+
+import { useState, useEffect, useMemo, useRef } from 'react';
+import type { DesignImage } from '@/types/inspo';
+import InspoInlineNewsletter from './InspoInlineNewsletter';
+
+interface MasonryGalleryProps {
+  images: DesignImage[];
+  onImageClick: (image: DesignImage) => void;
+}
+
+const PER_PAGE = 20;
+const NEWSLETTER_AFTER = 10; // inject after image index 10
+
+function GalleryCard({
+  image,
+  index,
+  onImageClick,
+  onBroken,
+}: {
+  image: DesignImage;
+  index: number;
+  onImageClick: (image: DesignImage) => void;
+  onBroken: (id: string) => void;
+}) {
+  const [loaded, setLoaded] = useState(false);
+
+  return (
+    <div className="break-inside-avoid mb-4">
+      <div
+        className="relative overflow-hidden bg-white cursor-pointer group"
+        onClick={() => onImageClick(image)}
+      >
+        <img
+          src={image.url}
+          alt={image.alt}
+          loading={index < 8 ? 'eager' : 'lazy'}
+          onLoad={() => setLoaded(true)}
+          onError={() => onBroken(image.id)}
+          className="w-full h-auto object-cover transform group-hover:opacity-90 transition-opacity duration-300 cursor-zoom-in"
+          style={{ opacity: loaded ? 1 : 0 }}
+        />
+      </div>
+    </div>
+  );
+}
+
+export default function MasonryGallery({ images, onImageClick }: MasonryGalleryProps) {
+  const [page, setPage] = useState(1);
+  const [brokenIds, setBrokenIds] = useState<Set<string>>(new Set());
+  const topRef = useRef<HTMLDivElement>(null);
+
+  const validImages = useMemo(
+    () => images.filter((img) => !brokenIds.has(img.id)),
+    [images, brokenIds]
+  );
+
+  const totalPages = Math.max(1, Math.ceil(validImages.length / PER_PAGE));
+
+  useEffect(() => {
+    if (page > totalPages) setPage(totalPages);
+  }, [totalPages, page]);
+
+  const handleBroken = (id: string) => {
+    setBrokenIds((prev) => {
+      if (prev.has(id)) return prev;
+      const next = new Set(prev);
+      next.add(id);
+      return next;
+    });
+  };
+
+  const handlePageChange = (next: number) => {
+    const clamped = Math.min(totalPages, Math.max(1, next));
+    setPage(clamped);
+    topRef.current?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  };
+
+  if (!images?.length || validImages.length === 0) {
+    return (
+      <div className="text-center py-20">
+        <h3 className="text-[#252220] mb-4" style={{ fontFamily: 'Larken, serif', fontSize: '24px' }}>No designs found</h3>
+        <p className="text-[#252220] opacity-70" style={{ fontFamily: 'Crimson Text, serif', fontSize: '16px' }}>Browse other categories</p>
+      </div>
+    );
+  }
+
+  const startIdx = (page - 1) * PER_PAGE;
+  const displayedImages = validImages.slice(startIdx, startIdx + PER_PAGE);
+
+  // Show newsletter on odd pages only (1, 3, 5...) and only if there are enough images
+  const showNewsletter = page % 2 !== 0 && displayedImages.length > NEWSLETTER_AFTER;
+
+  const firstSlice = showNewsletter ? displayedImages.slice(0, NEWSLETTER_AFTER) : displayedImages;
+  const secondSlice = showNewsletter ? displayedImages.slice(NEWSLETTER_AFTER) : [];
+
+  return (
+    <section className="py-12 bg-[#f9fafb]" ref={topRef}>
+      <div className="max-w-[1400px] mx-auto px-6 md:px-12">
+
+        {/* First 10 images */}
+        <div className="columns-2 md:columns-3 lg:columns-4 xl:columns-5 gap-4 space-y-4">
+          {firstSlice.map((image, i) => (
+            <GalleryCard
+              key={image.id}
+              image={image}
+              index={i}
+              onImageClick={onImageClick}
+              onBroken={handleBroken}
+            />
+          ))}
+        </div>
+
+        {/* Newsletter after image 10 on odd pages */}
+        {showNewsletter && (
+          <div className="my-10 -mx-6 md:-mx-12">
+            <InspoInlineNewsletter />
+          </div>
+        )}
+
+        {/* Remaining images (11–20) */}
+        {secondSlice.length > 0 && (
+          <div className="columns-2 md:columns-3 lg:columns-4 xl:columns-5 gap-4 space-y-4">
+            {secondSlice.map((image, i) => (
+              <GalleryCard
+                key={image.id}
+                image={image}
+                index={NEWSLETTER_AFTER + i}
+                onImageClick={onImageClick}
+                onBroken={handleBroken}
+              />
+            ))}
+          </div>
+        )}
+
+        {/* Pagination controls */}
+        {totalPages > 1 && (
+          <div className="flex items-center justify-center gap-4 mt-12">
+            <button
+              onClick={() => handlePageChange(page - 1)}
+              disabled={page === 1}
+              className="flex items-center gap-1.5 px-5 py-2.5 rounded-full border border-[#252220]/15 text-[#252220] disabled:opacity-30 disabled:cursor-not-allowed hover:bg-[#252220] hover:text-white transition-all duration-200"
+              style={{ fontFamily: 'General Sans, sans-serif', fontSize: '13px' }}
+              aria-label="Previous page"
+            >
+              <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
+              </svg>
+              Back
+            </button>
+
+            <span
+              className="px-4 py-2 text-[#252220] tabular-nums"
+              style={{ fontFamily: 'General Sans, sans-serif', fontSize: '14px' }}
+            >
+              {page} / {totalPages}
+            </span>
+
+            <button
+              onClick={() => handlePageChange(page + 1)}
+              disabled={page === totalPages}
+              className="flex items-center gap-1.5 px-5 py-2.5 rounded-full border border-[#252220]/15 text-[#252220] disabled:opacity-30 disabled:cursor-not-allowed hover:bg-[#252220] hover:text-white transition-all duration-200"
+              style={{ fontFamily: 'General Sans, sans-serif', fontSize: '13px' }}
+              aria-label="Next page"
+            >
+              Next
+              <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+              </svg>
+            </button>
+          </div>
+        )}
+      </div>
+    </section>
+  );
+}
