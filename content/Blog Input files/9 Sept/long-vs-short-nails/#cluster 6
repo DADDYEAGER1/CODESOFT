@@ -1,0 +1,472 @@
+{
+  "cluster_metadata": {
+    "cluster_topic": "Long vs Short Nails",
+    "topic_slug": "long-vs-short-nails",
+    "target_audience": "Global, Tier 1 countries (US, UK, Canada, Australia)",
+    "total_posts": 6,
+    "intent_breakdown": {
+      "informational": 1,
+      "inspirational": 2,
+      "tutorial": 1,
+      "comparison": 1,
+      "seasonal_trend": 0,
+      "aesthetic_identity": 1
+    },
+    "pillar_post_slug": "long-vs-short-nails",
+    "inspiration_gallery_url": "https://mirelleinspo.com/inspo/long-vs-short-nails-inspiration-gallery",
+    "created_date": "2026-07-26"
+  },
+
+  "existing_site_posts_excluded": [
+    {
+      "url": "https://mirelleinspo.com/blog/short-vs-long-summer-nails",
+      "title": "Short vs Long Summer Nails",
+      "inferred_primary_keyword": "short vs long summer nails",
+      "inferred_intent": "comparison",
+      "exclusion_reason": "Already exists on mirelleinspo.com — keyword reserved (seasonal variant of length comparison)"
+    },
+    {
+      "url": "https://mirelleinspo.com/blog/coffin-nails/long-coffin-nails",
+      "title": "Long Coffin Nails",
+      "inferred_primary_keyword": "long coffin nails",
+      "inferred_intent": "inspirational",
+      "exclusion_reason": "Already exists on mirelleinspo.com — shape+length combination reserved"
+    },
+    {
+      "url": "https://mirelleinspo.com/blog/coffin-nails/short-coffin-nails",
+      "title": "Short Coffin Nails",
+      "inferred_primary_keyword": "short coffin nails",
+      "inferred_intent": "inspirational",
+      "exclusion_reason": "Already exists on mirelleinspo.com — shape+length combination reserved"
+    },
+    {
+      "url": "https://mirelleinspo.com/blog/short-almond-nails",
+      "title": "Short Almond Nails",
+      "inferred_primary_keyword": "short almond nails",
+      "inferred_intent": "inspirational",
+      "exclusion_reason": "Already exists on mirelleinspo.com — shape+length combination reserved"
+    },
+    {
+      "url": "https://mirelleinspo.com/blog/french-nails/short-french-tip-nails",
+      "title": "Short French Tip Nails",
+      "inferred_primary_keyword": "short french tip nails",
+      "inferred_intent": "inspirational",
+      "exclusion_reason": "Already exists on mirelleinspo.com — style+length combination reserved"
+    },
+    {
+      "url": "https://mirelleinspo.com/blog/fall/short-fall-nails",
+      "title": "Short Fall Nails",
+      "inferred_primary_keyword": "short fall nails",
+      "inferred_intent": "seasonal_trend",
+      "exclusion_reason": "Already exists on mirelleinspo.com — seasonal+length combination reserved"
+    },
+    {
+      "url": "https://mirelleinspo.com/blog/short-summer-nails",
+      "title": "Cute Short Summer Nails That Are Actually Practical",
+      "inferred_primary_keyword": "short summer nails",
+      "inferred_intent": "seasonal_trend",
+      "exclusion_reason": "Already exists on mirelleinspo.com (verified live) — links to short-vs-long-summer-nails already; seasonal+length reserved"
+    },
+    {
+      "url": "https://mirelleinspo.com/blog/short-prom-nails",
+      "title": "Short Prom Nails",
+      "inferred_primary_keyword": "short prom nails",
+      "inferred_intent": "seasonal_trend",
+      "exclusion_reason": "Already exists on mirelleinspo.com — occasion+length combination reserved"
+    },
+    {
+      "url": "https://mirelleinspo.com/blog/short-mothers-day-nails",
+      "title": "Short Mother's Day Nails",
+      "inferred_primary_keyword": "short mother's day nails",
+      "inferred_intent": "seasonal_trend",
+      "exclusion_reason": "Already exists on mirelleinspo.com — occasion+length combination reserved"
+    },
+    {
+      "url": "https://mirelleinspo.com/blog/wedding-nails/short-wedding-nails",
+      "title": "Short Wedding Nails",
+      "inferred_primary_keyword": "short wedding nails",
+      "inferred_intent": "seasonal_trend",
+      "exclusion_reason": "Already exists on mirelleinspo.com — occasion+length combination reserved"
+    },
+    {
+      "url": "https://mirelleinspo.com/blog/festival-nails/short-festival-nails",
+      "title": "Short Festival Nails",
+      "inferred_primary_keyword": "short festival nails",
+      "inferred_intent": "seasonal_trend",
+      "exclusion_reason": "Already exists on mirelleinspo.com — occasion+length combination reserved"
+    },
+    {
+      "url": "https://mirelleinspo.com/blog/aesthetic-nails/short-old-money-nails",
+      "title": "Short Old Money Nails",
+      "inferred_primary_keyword": "short old money nails",
+      "inferred_intent": "aesthetic_identity",
+      "exclusion_reason": "Already exists on mirelleinspo.com — aesthetic+length combination reserved"
+    },
+    {
+      "url": "https://mirelleinspo.com/blog/aesthetic-nails/short-quiet-luxury-nails",
+      "title": "Short Quiet Luxury Nails",
+      "inferred_primary_keyword": "short quiet luxury nails",
+      "inferred_intent": "aesthetic_identity",
+      "exclusion_reason": "Already exists on mirelleinspo.com — aesthetic+length combination reserved"
+    },
+    {
+      "url": "https://mirelleinspo.com/work-nails/professional-nail-length-for-work",
+      "title": "Professional Nail Length for Work: The Exact Standard",
+      "inferred_primary_keyword": "professional nail length for work",
+      "inferred_intent": "informational",
+      "exclusion_reason": "Already exists on mirelleinspo.com (verified live) — owns the 2-4mm professional length standard content"
+    },
+    {
+      "url": "https://mirelleinspo.com/blog/nail-shape-for-hands/nails-for-chubby-fingers",
+      "title": "Nails for Chubby Fingers",
+      "inferred_primary_keyword": "nails for chubby fingers",
+      "inferred_intent": "informational",
+      "exclusion_reason": "Already exists on mirelleinspo.com — hand-shape series reserved"
+    },
+    {
+      "url": "https://mirelleinspo.com/blog/nail-shape-for-hands/nails-for-long-fingers",
+      "title": "Nails for Long Fingers",
+      "inferred_primary_keyword": "nails for long fingers",
+      "inferred_intent": "informational",
+      "exclusion_reason": "Already exists on mirelleinspo.com — hand-shape series reserved"
+    },
+    {
+      "url": "https://mirelleinspo.com/blog/nail-shape-for-hands/nails-for-short-fingers",
+      "title": "Nails for Short Fingers",
+      "inferred_primary_keyword": "nails for short fingers",
+      "inferred_intent": "informational",
+      "exclusion_reason": "Already exists on mirelleinspo.com (verified live, referenced by nails-for-wide-nail-beds) — hand-shape series reserved"
+    },
+    {
+      "url": "https://mirelleinspo.com/blog/nail-shape-for-hands/nails-for-small-hands",
+      "title": "Nails for Small Hands",
+      "inferred_primary_keyword": "nails for small hands",
+      "inferred_intent": "informational",
+      "exclusion_reason": "Already exists on mirelleinspo.com — hand-shape series reserved"
+    },
+    {
+      "url": "https://mirelleinspo.com/blog/nail-shape-for-hands/nails-for-wide-nail-beds",
+      "title": "Nails for Wide Nail Beds: Every Shape Worth Knowing",
+      "inferred_primary_keyword": "nails for wide nail beds",
+      "inferred_intent": "informational",
+      "exclusion_reason": "Already exists on mirelleinspo.com (verified live) — hand-shape series reserved"
+    },
+    {
+      "url": "https://mirelleinspo.com/nail-faqs/are-long-nails-bad-for-your-health",
+      "title": "Are Long Nails Bad for Your Health?",
+      "inferred_primary_keyword": "are long nails bad for your health",
+      "inferred_intent": "informational",
+      "exclusion_reason": "Already exists on mirelleinspo.com (verified live) — owns the length+hygiene/health angle in full"
+    },
+    {
+      "url": "https://mirelleinspo.com/nail-faqs/can-you-get-nail-extensions-with-short-nails",
+      "title": "Can You Get Nail Extensions with Short Nails",
+      "inferred_primary_keyword": "can you get nail extensions with short nails",
+      "inferred_intent": "informational",
+      "exclusion_reason": "Already exists on mirelleinspo.com — FAQ reserved"
+    },
+    {
+      "url": "https://mirelleinspo.com/nail-faqs/what-nail-length-is-considered-professional-for-work",
+      "title": "What Nail Length Is Considered Professional for Work",
+      "inferred_primary_keyword": "what nail length is considered professional",
+      "inferred_intent": "informational",
+      "exclusion_reason": "Already exists on mirelleinspo.com — FAQ reserved, overlaps with professional-nail-length-for-work"
+    },
+    {
+      "url": "https://mirelleinspo.com/work-nails/nail-shape-for-wedding",
+      "title": "Nail Shape for Wedding",
+      "inferred_primary_keyword": "nail shape for wedding",
+      "inferred_intent": "inspirational",
+      "exclusion_reason": "Already exists on mirelleinspo.com — occasion+shape reserved"
+    },
+    {
+      "url": "https://mirelleinspo.com/blog/nail-trends-2026/3d-nail-art",
+      "title": "3D Nail Art: 30+ Designs Taking Over 2026",
+      "inferred_primary_keyword": "3d nail art",
+      "inferred_intent": "inspirational",
+      "exclusion_reason": "Verified live via direct content fetch — already owns the 3D nail art category, techniques, mediums, and maximalist framing in full depth. Killed proposed 'beginner 3D nail art tutorial' post from opportunity list for this reason."
+    },
+    {
+      "url": "https://mirelleinspo.com/blog/nail-trends-2026/nail-trends-2026",
+      "title": "Nail Trends 2026: Every Look Dominating This Year",
+      "inferred_primary_keyword": "nail trends 2026",
+      "inferred_intent": "seasonal_trend",
+      "exclusion_reason": "Verified live via direct content fetch — already structurally frames minimalist vs maximalist as one of its five defining 2026 themes. Killed proposed 'minimalist vs maximalist nails' post from opportunity list for this reason."
+    },
+    {
+      "url": "https://mirelleinspo.com/blog/nail-trends-2026/healthy-nail-aesthetic",
+      "title": "Healthy Nail Aesthetic",
+      "inferred_primary_keyword": "healthy nail aesthetic",
+      "inferred_intent": "aesthetic_identity",
+      "exclusion_reason": "Already exists on mirelleinspo.com — minimal/clean aesthetic identity angle reserved"
+    },
+    {
+      "url": "https://mirelleinspo.com/blog/mood-nails/nails-for-confidence",
+      "title": "Nails for Confidence: Designs for Women Who Own the Room",
+      "inferred_primary_keyword": "nails for confidence",
+      "inferred_intent": "aesthetic_identity",
+      "exclusion_reason": "Verified live via direct content fetch — already covers 'short nail theory' identity/confidence framing extensively; new aesthetic_identity post (low-maintenance-nails) intentionally differentiated toward lifestyle/practicality rather than confidence-signaling to avoid overlap"
+    }
+  ],
+
+  "posts": [
+    {
+      "post_id": 1,
+      "role": "pillar",
+      "title": "Long vs Short Nails: Which Is Actually Better for You",
+      "slug": "long-vs-short-nails",
+      "primary_keyword": "long vs short nails",
+      "intent": "comparison",
+      "search_mode": "decision_mode",
+      "suggested_hook_trigger": "Trigger 1 — Curiosity Gap",
+      "search_demand_signals": [
+        "Google: multiple dedicated comparison articles (ShangMeng, PurelyComfy, PolishedByKim) with 'which is actually better' framing",
+        "YouTube/Lemon8: recurring debate-style posts and comment threads asking readers to pick a side",
+        "Reddit/Lemon8: personal anecdote threads on switching between lengths and lifestyle tradeoffs"
+      ],
+      "why_included": "Broadest keyword in the cluster with confirmed decision-mode search demand across multiple independent sources; no existing mirelleinspo.com post owns the general length-comparison angle (only seasonal/occasion-specific length posts exist).",
+      "internal_links": {
+        "links_to": [
+          { "slug": "nail-art-for-short-nails", "anchor_text": "intricate nail art designs that work on short nails", "type": "spoke" },
+          { "slug": "simple-nail-designs-for-long-nails", "anchor_text": "simple nail designs for long nails", "type": "spoke" },
+          { "slug": "negative-space-nails-minimalist", "anchor_text": "negative space nails that look intricate", "type": "spoke" },
+          { "slug": "how-long-does-nail-art-take", "anchor_text": "how long intricate nail art actually takes", "type": "spoke" },
+          { "slug": "low-maintenance-nails-intentional", "anchor_text": "low-maintenance nails that still look intentional", "type": "spoke" }
+        ],
+        "gallery_link": {
+          "url": "https://mirelleinspo.com/inspo/long-vs-short-nails-inspiration-gallery",
+          "anchor_text": "long vs short nails inspiration gallery"
+        },
+        "receives_links_from": [
+          { "slug": "nail-art-for-short-nails", "anchor_text": "long vs short nails full comparison guide" },
+          { "slug": "simple-nail-designs-for-long-nails", "anchor_text": "long vs short nails full comparison guide" },
+          { "slug": "negative-space-nails-minimalist", "anchor_text": "long vs short nails full comparison guide" },
+          { "slug": "how-long-does-nail-art-take", "anchor_text": "long vs short nails full comparison guide" },
+          { "slug": "low-maintenance-nails-intentional", "anchor_text": "long vs short nails full comparison guide" }
+        ]
+      },
+      "status": "approved"
+    },
+    {
+      "post_id": 2,
+      "role": "spoke",
+      "title": "Nail Art for Short Nails: Intricate Designs That Actually Work",
+      "slug": "nail-art-for-short-nails",
+      "primary_keyword": "nail art for short nails",
+      "intent": "tutorial",
+      "search_mode": "how_to_execution_mode",
+      "suggested_hook_trigger": "Trigger 1 — Curiosity Gap",
+      "search_demand_signals": [
+        "Bustle: dedicated 'Nail Art For Short Nail Designs To Play With' feature",
+        "InStyle (AOL syndication): three separate dedicated posts on short nail designs/intricate art on short nails, quoting nail artists directly on proportion and technique",
+        "Expert quotes across multiple outlets (Mazz Hanna, Morgan Dixon) directly addressing the 'can short nails handle intricate art' misconception"
+      ],
+      "why_included": "Validated on 3+ independent major-outlet sources as a dedicated, high-demand query distinct from generic 'short nail ideas' — directly answers whether intricate design is possible on a small canvas.",
+      "internal_links": {
+        "links_to": [
+          { "slug": "long-vs-short-nails", "anchor_text": "long vs short nails comparison", "type": "pillar" },
+          { "slug": "negative-space-nails-minimalist", "anchor_text": "negative space nails for a smaller canvas", "type": "spoke" },
+          { "slug": "how-long-does-nail-art-take", "anchor_text": "how long intricate nail art actually takes", "type": "spoke" },
+          { "slug": "low-maintenance-nails-intentional", "anchor_text": "low-maintenance nails that still look intentional", "type": "spoke" }
+        ],
+        "receives_links_from": [
+          { "slug": "long-vs-short-nails", "anchor_text": "intricate nail art designs that work on short nails" },
+          { "slug": "simple-nail-designs-for-long-nails", "anchor_text": "intricate nail art on short nails" },
+          { "slug": "negative-space-nails-minimalist", "anchor_text": "intricate nail art for short nails" }
+        ]
+      },
+      "status": "approved"
+    },
+    {
+      "post_id": 3,
+      "role": "spoke",
+      "title": "Simple Nail Designs for Long Nails (Because Less Is More)",
+      "slug": "simple-nail-designs-for-long-nails",
+      "primary_keyword": "simple nail designs for long nails",
+      "intent": "inspirational",
+      "search_mode": "inspiration_mode",
+      "suggested_hook_trigger": "Trigger 3 — Specificity/Numbers",
+      "search_demand_signals": [
+        "InStyle: '26 Simple Nail Designs for a Subtly Stunning Manicure' explicitly framing simple-vs-intricate as competing camps",
+        "Elle: 'Clean Girl Mani' simple nail ideas feature discussing minimalism regardless of length",
+        "Cosmopolitan: long acrylic nail ideas feature explicitly contrasting 'simple single-color manicure' against 'intricate floral design' on the same long canvas"
+      ],
+      "why_included": "Validated inverse-angle demand: multiple outlets explicitly discuss simple/minimal designs as a deliberate choice on long nails, not just short — an underserved angle since most 'simple nails' content assumes short length.",
+      "internal_links": {
+        "links_to": [
+          { "slug": "long-vs-short-nails", "anchor_text": "long vs short nails comparison", "type": "pillar" },
+          { "slug": "nail-art-for-short-nails", "anchor_text": "intricate nail art on short nails", "type": "spoke" },
+          { "slug": "negative-space-nails-minimalist", "anchor_text": "negative space nails that look intricate", "type": "spoke" },
+          { "slug": "low-maintenance-nails-intentional", "anchor_text": "low-maintenance nails that still look intentional", "type": "spoke" }
+        ],
+        "receives_links_from": [
+          { "slug": "long-vs-short-nails", "anchor_text": "simple nail designs for long nails" },
+          { "slug": "negative-space-nails-minimalist", "anchor_text": "simple nail designs for long nails" },
+          { "slug": "low-maintenance-nails-intentional", "anchor_text": "simple nail designs for long nails" }
+        ]
+      },
+      "status": "approved"
+    },
+    {
+      "post_id": 4,
+      "role": "spoke",
+      "title": "Negative Space Nails: Minimalist Nail Art That Looks Intricate",
+      "slug": "negative-space-nails-minimalist",
+      "primary_keyword": "negative space nails",
+      "intent": "inspirational",
+      "search_mode": "inspiration_mode",
+      "suggested_hook_trigger": "Trigger 2 — FOMO/Trend",
+      "search_demand_signals": [
+        "The Zoe Report: 'Negative Space Nails Are This Fall's Coolest Manicure' dedicated feature",
+        "Stylist: '13 Negative Space Nail Designs We Can't Get Enough Of' explicitly framing as minimalist-or-maximalist compatible",
+        "Ipsy and Nail Designs Journal: dedicated DIY-focused negative space roundups with strong recurring demand pattern"
+      ],
+      "why_included": "5+ independent dedicated posts validate strong demand; uniquely bridges the length x complexity axis since negative space is explicitly described across sources as looking intricate while being technically minimal — no dedicated mirelleinspo.com post exists on this technique despite passing mentions elsewhere on the site.",
+      "internal_links": {
+        "links_to": [
+          { "slug": "long-vs-short-nails", "anchor_text": "long vs short nails comparison", "type": "pillar" },
+          { "slug": "nail-art-for-short-nails", "anchor_text": "intricate nail art for short nails", "type": "spoke" },
+          { "slug": "simple-nail-designs-for-long-nails", "anchor_text": "simple nail designs for long nails", "type": "spoke" },
+          { "slug": "low-maintenance-nails-intentional", "anchor_text": "low-maintenance nails that still look intentional", "type": "spoke" }
+        ],
+        "receives_links_from": [
+          { "slug": "long-vs-short-nails", "anchor_text": "negative space nails that look intricate" },
+          { "slug": "nail-art-for-short-nails", "anchor_text": "negative space nails for a smaller canvas" },
+          { "slug": "simple-nail-designs-for-long-nails", "anchor_text": "negative space nails that look intricate" }
+        ]
+      },
+      "status": "approved"
+    },
+    {
+      "post_id": 5,
+      "role": "spoke",
+      "title": "How Long Does Intricate Nail Art Actually Take?",
+      "slug": "how-long-does-nail-art-take",
+      "primary_keyword": "how long does nail art take",
+      "intent": "informational",
+      "search_mode": "decision_mode",
+      "suggested_hook_trigger": "Trigger 1 — Curiosity Gap",
+      "search_demand_signals": [
+        "8+ independent salon/beauty sites (BTArtbox, Bela Beauty College, Amoure Nail, Polish Pops, K&J Nails, and others) each running dedicated FAQ-style posts answering this exact question",
+        "Lemon8: nail tech breaking down appointment time by design complexity",
+        "Consistent time-range data (basic manicure 30-45 min vs complex nail art 1-3 hours) repeated across sources, confirming high, stable search demand"
+      ],
+      "why_included": "Unusually high count of independent dedicated sources answering the identical question — strong signal of consistent, evergreen search volume around the time/complexity tradeoff decision point.",
+      "internal_links": {
+        "links_to": [
+          { "slug": "long-vs-short-nails", "anchor_text": "long vs short nails comparison", "type": "pillar" },
+          { "slug": "nail-art-for-short-nails", "anchor_text": "intricate nail art for short nails", "type": "spoke" },
+          { "slug": "negative-space-nails-minimalist", "anchor_text": "negative space nails that look intricate", "type": "spoke" },
+          { "slug": "low-maintenance-nails-intentional", "anchor_text": "low-maintenance nails that still look intentional", "type": "spoke" }
+        ],
+        "receives_links_from": [
+          { "slug": "long-vs-short-nails", "anchor_text": "how long intricate nail art actually takes" },
+          { "slug": "nail-art-for-short-nails", "anchor_text": "how long intricate nail art actually takes" },
+          { "slug": "low-maintenance-nails-intentional", "anchor_text": "how long intricate nail art actually takes" }
+        ]
+      },
+      "status": "approved"
+    },
+    {
+      "post_id": 6,
+      "role": "spoke",
+      "title": "Low-Maintenance Nails That Still Look Intentional",
+      "slug": "low-maintenance-nails-intentional",
+      "primary_keyword": "low maintenance nail designs",
+      "intent": "aesthetic_identity",
+      "search_mode": "aesthetic_identity_mode",
+      "suggested_hook_trigger": "Trigger 4 — Identity Mirroring",
+      "search_demand_signals": [
+        "PurelyComfy and ShangMeng comparison articles repeatedly frame length/complexity choice around lifestyle identity ('match your lifestyle', 'people with active lifestyles')",
+        "Negative space nail sources (pinkladystyle, Ipsy) explicitly market the technique as 'low maintenance' since chips are less noticeable",
+        "Recurring identity-driven language across sources ('practical beauty' vs 'expressive style') distinct from mirelleinspo's existing confidence-focused short-nail-theory post"
+      ],
+      "why_included": "Identity-driven framing repeatedly surfaces across comparison articles as its own decision axis (not just short-vs-long or simple-vs-intricate, but 'which lifestyle am I') — deliberately differentiated from the existing nails-for-confidence post by focusing on practicality/intentionality rather than confidence-signaling.",
+      "internal_links": {
+        "links_to": [
+          { "slug": "long-vs-short-nails", "anchor_text": "long vs short nails comparison", "type": "pillar" },
+          { "slug": "nail-art-for-short-nails", "anchor_text": "intricate nail art for short nails", "type": "spoke" },
+          { "slug": "simple-nail-designs-for-long-nails", "anchor_text": "simple nail designs for long nails", "type": "spoke" },
+          { "slug": "how-long-does-nail-art-take", "anchor_text": "how long intricate nail art actually takes", "type": "spoke" }
+        ],
+        "receives_links_from": [
+          { "slug": "long-vs-short-nails", "anchor_text": "low-maintenance nails that still look intentional" },
+          { "slug": "nail-art-for-short-nails", "anchor_text": "low-maintenance nails that still look intentional" },
+          { "slug": "simple-nail-designs-for-long-nails", "anchor_text": "low-maintenance nails that still look intentional" },
+          { "slug": "how-long-does-nail-art-take", "anchor_text": "low-maintenance nails that still look intentional" }
+        ]
+      },
+      "status": "approved"
+    }
+  ],
+
+  "keyword_ownership_registry": {
+    "description": "Master list of all primary keywords — one per post, no overlaps, includes existing site posts",
+    "entries": [
+      { "primary_keyword": "long vs short nails", "owned_by_slug": "long-vs-short-nails", "owned_by_title": "Long vs Short Nails: Which Is Actually Better for You", "source": "new post" },
+      { "primary_keyword": "nail art for short nails", "owned_by_slug": "nail-art-for-short-nails", "owned_by_title": "Nail Art for Short Nails: Intricate Designs That Actually Work", "source": "new post" },
+      { "primary_keyword": "simple nail designs for long nails", "owned_by_slug": "simple-nail-designs-for-long-nails", "owned_by_title": "Simple Nail Designs for Long Nails (Because Less Is More)", "source": "new post" },
+      { "primary_keyword": "negative space nails", "owned_by_slug": "negative-space-nails-minimalist", "owned_by_title": "Negative Space Nails: Minimalist Nail Art That Looks Intricate", "source": "new post" },
+      { "primary_keyword": "how long does nail art take", "owned_by_slug": "how-long-does-nail-art-take", "owned_by_title": "How Long Does Intricate Nail Art Actually Take?", "source": "new post" },
+      { "primary_keyword": "low maintenance nail designs", "owned_by_slug": "low-maintenance-nails-intentional", "owned_by_title": "Low-Maintenance Nails That Still Look Intentional", "source": "new post" },
+      { "primary_keyword": "short vs long summer nails", "owned_by_slug": "short-vs-long-summer-nails", "owned_by_title": "Short vs Long Summer Nails", "source": "existing site post" },
+      { "primary_keyword": "long coffin nails", "owned_by_slug": "long-coffin-nails", "owned_by_title": "Long Coffin Nails", "source": "existing site post" },
+      { "primary_keyword": "short coffin nails", "owned_by_slug": "short-coffin-nails", "owned_by_title": "Short Coffin Nails", "source": "existing site post" },
+      { "primary_keyword": "short almond nails", "owned_by_slug": "short-almond-nails", "owned_by_title": "Short Almond Nails", "source": "existing site post" },
+      { "primary_keyword": "short french tip nails", "owned_by_slug": "short-french-tip-nails", "owned_by_title": "Short French Tip Nails", "source": "existing site post" },
+      { "primary_keyword": "short fall nails", "owned_by_slug": "short-fall-nails", "owned_by_title": "Short Fall Nails", "source": "existing site post" },
+      { "primary_keyword": "short summer nails", "owned_by_slug": "short-summer-nails", "owned_by_title": "Cute Short Summer Nails That Are Actually Practical", "source": "existing site post" },
+      { "primary_keyword": "short prom nails", "owned_by_slug": "short-prom-nails", "owned_by_title": "Short Prom Nails", "source": "existing site post" },
+      { "primary_keyword": "short mother's day nails", "owned_by_slug": "short-mothers-day-nails", "owned_by_title": "Short Mother's Day Nails", "source": "existing site post" },
+      { "primary_keyword": "short wedding nails", "owned_by_slug": "short-wedding-nails", "owned_by_title": "Short Wedding Nails", "source": "existing site post" },
+      { "primary_keyword": "short festival nails", "owned_by_slug": "short-festival-nails", "owned_by_title": "Short Festival Nails", "source": "existing site post" },
+      { "primary_keyword": "short old money nails", "owned_by_slug": "short-old-money-nails", "owned_by_title": "Short Old Money Nails", "source": "existing site post" },
+      { "primary_keyword": "short quiet luxury nails", "owned_by_slug": "short-quiet-luxury-nails", "owned_by_title": "Short Quiet Luxury Nails", "source": "existing site post" },
+      { "primary_keyword": "professional nail length for work", "owned_by_slug": "professional-nail-length-for-work", "owned_by_title": "Professional Nail Length for Work: The Exact Standard", "source": "existing site post" },
+      { "primary_keyword": "nails for chubby fingers", "owned_by_slug": "nails-for-chubby-fingers", "owned_by_title": "Nails for Chubby Fingers", "source": "existing site post" },
+      { "primary_keyword": "nails for long fingers", "owned_by_slug": "nails-for-long-fingers", "owned_by_title": "Nails for Long Fingers", "source": "existing site post" },
+      { "primary_keyword": "nails for short fingers", "owned_by_slug": "nails-for-short-fingers", "owned_by_title": "Nails for Short Fingers", "source": "existing site post" },
+      { "primary_keyword": "nails for small hands", "owned_by_slug": "nails-for-small-hands", "owned_by_title": "Nails for Small Hands", "source": "existing site post" },
+      { "primary_keyword": "nails for wide nail beds", "owned_by_slug": "nails-for-wide-nail-beds", "owned_by_title": "Nails for Wide Nail Beds: Every Shape Worth Knowing", "source": "existing site post" },
+      { "primary_keyword": "are long nails bad for your health", "owned_by_slug": "are-long-nails-bad-for-your-health", "owned_by_title": "Are Long Nails Bad for Your Health?", "source": "existing site post" },
+      { "primary_keyword": "can you get nail extensions with short nails", "owned_by_slug": "can-you-get-nail-extensions-with-short-nails", "owned_by_title": "Can You Get Nail Extensions with Short Nails", "source": "existing site post" },
+      { "primary_keyword": "what nail length is considered professional", "owned_by_slug": "what-nail-length-is-considered-professional-for-work", "owned_by_title": "What Nail Length Is Considered Professional for Work", "source": "existing site post" },
+      { "primary_keyword": "nail shape for wedding", "owned_by_slug": "nail-shape-for-wedding", "owned_by_title": "Nail Shape for Wedding", "source": "existing site post" },
+      { "primary_keyword": "3d nail art", "owned_by_slug": "nail-trends-2026/3d-nail-art", "owned_by_title": "3D Nail Art: 30+ Designs Taking Over 2026", "source": "existing site post" },
+      { "primary_keyword": "nail trends 2026", "owned_by_slug": "nail-trends-2026/nail-trends-2026", "owned_by_title": "Nail Trends 2026: Every Look Dominating This Year", "source": "existing site post" },
+      { "primary_keyword": "healthy nail aesthetic", "owned_by_slug": "nail-trends-2026/healthy-nail-aesthetic", "owned_by_title": "Healthy Nail Aesthetic", "source": "existing site post" },
+      { "primary_keyword": "nails for confidence", "owned_by_slug": "mood-nails/nails-for-confidence", "owned_by_title": "Nails for Confidence: Designs for Women Who Own the Room", "source": "existing site post" }
+    ]
+  },
+
+  "merged_posts_log": [
+    {
+      "original_topics": ["detailed nail art on short nails", "can short nails have nail art (FAQ framing)"],
+      "merged_into": "Nail Art for Short Nails: Intricate Designs That Actually Work",
+      "reason": "Both were validated queries answering the same underlying question about whether short nails can support intricate design; merging avoids splitting the same search intent across two thin posts."
+    }
+  ],
+
+  "killed_posts_log": [
+    {
+      "topic": "long nails vs short nails for work",
+      "reason": "Overlap — existing post professional-nail-length-for-work and the nails-for-* hand-shape series already cover work/length context in depth."
+    },
+    {
+      "topic": "long nail art ideas (generic)",
+      "reason": "No demand signal — generic angle with no distinct search query behind it, separate from existing site's occasion-based long-nail posts. Coverage-not-demand, killed per core_principle."
+    },
+    {
+      "topic": "acrylic nails intricate designs",
+      "reason": "Single-source signal only — did not meet the 2-source validation minimum on its own; relevant content folded into nail-art-for-short-nails instead."
+    },
+    {
+      "topic": "3D Nail Art for Beginners: How to Do It at Home",
+      "reason": "Cannibalization — verified via direct content fetch that existing post nail-trends-2026/3d-nail-art already owns the 3D nail art category, techniques, and mediums in depth. Killed per user decision after site verification."
+    },
+    {
+      "topic": "Minimalist Nails vs Maximalist Nails: 2026 Trend Guide",
+      "reason": "Cannibalization — verified via direct content fetch that existing pillar post nail-trends-2026/nail-trends-2026 already structurally frames minimalist vs maximalist as one of its five defining 2026 themes. Killed per user decision after site verification."
+    }
+  ]
+}
