@@ -1,0 +1,547 @@
+{
+  "cluster_metadata": {
+    "cluster_topic": "Nail Basics & Definitions",
+    "topic_slug": "nail-basics",
+    "target_audience": "Global, Tier 1 countries",
+    "total_posts": 13,
+    "intent_breakdown": {
+      "informational": 11,
+      "inspirational": 0,
+      "tutorial": 1,
+      "comparison": 1,
+      "seasonal_trend": 0
+    },
+    "pillar_post_slug": "types-of-manicures-explained",
+    "created_date": "2026-07-25"
+  },
+
+  "existing_site_posts_excluded": [
+    {
+      "url": "https://mirelleinspo.com/blog/hema-allergy-nails/what-is-hema-nail-products",
+      "title": "What Is HEMA in Nail Products",
+      "inferred_primary_keyword": "what is hema nail products",
+      "inferred_intent": "informational",
+      "exclusion_reason": "Already exists on mirelleinspo.com — keyword reserved"
+    },
+    {
+      "url": "https://mirelleinspo.com/blog/nail-fungus/what-is-nail-fungus",
+      "title": "What Is Nail Fungus",
+      "inferred_primary_keyword": "what is nail fungus",
+      "inferred_intent": "informational",
+      "exclusion_reason": "Already exists on mirelleinspo.com — keyword reserved"
+    },
+    {
+      "url": "https://mirelleinspo.com/blog/nail-shape-for-hands/best-nail-shape-for-your-hands",
+      "title": "Best Nail Shape for Your Hands",
+      "inferred_primary_keyword": "best nail shape for your hands",
+      "inferred_intent": "informational",
+      "exclusion_reason": "Already exists on mirelleinspo.com — keyword reserved"
+    },
+    {
+      "url": "https://mirelleinspo.com/blog/nail-shape-for-hands/how-to-find-your-nail-shape",
+      "title": "How to Find Your Nail Shape",
+      "inferred_primary_keyword": "how to find your nail shape",
+      "inferred_intent": "tutorial",
+      "exclusion_reason": "Already exists on mirelleinspo.com — keyword reserved"
+    },
+    {
+      "url": "https://mirelleinspo.com/nail-faqs/difference-between-gel-acrylic-and-natural-nails",
+      "title": "Difference Between Gel, Acrylic, and Natural Nails",
+      "inferred_primary_keyword": "difference between gel acrylic and natural nails",
+      "inferred_intent": "comparison",
+      "exclusion_reason": "Already exists on mirelleinspo.com — keyword reserved"
+    },
+    {
+      "url": "https://mirelleinspo.com/nail-faqs/how-do-i-know-what-nail-shape-suits-my-hands",
+      "title": "How Do I Know What Nail Shape Suits My Hands",
+      "inferred_primary_keyword": "how do i know what nail shape suits my hands",
+      "inferred_intent": "informational",
+      "exclusion_reason": "Already exists on mirelleinspo.com — keyword reserved"
+    },
+    {
+      "url": "https://mirelleinspo.com/nail-faqs/what-are-the-5-basic-nail-shapes-and-which-is-best-for-me",
+      "title": "What Are the 5 Basic Nail Shapes and Which Is Best for Me",
+      "inferred_primary_keyword": "5 basic nail shapes",
+      "inferred_intent": "informational",
+      "exclusion_reason": "Already exists on mirelleinspo.com — keyword reserved"
+    },
+    {
+      "url": "https://mirelleinspo.com/nail-faqs/whats-the-difference-between-a-manicure-and-a-pedicure",
+      "title": "What's the Difference Between a Manicure and a Pedicure",
+      "inferred_primary_keyword": "difference between manicure and pedicure",
+      "inferred_intent": "comparison",
+      "exclusion_reason": "Already exists on mirelleinspo.com — keyword reserved"
+    },
+    {
+      "url": "https://mirelleinspo.com/nail-faqs/how-long-do-different-types-of-manicures-last",
+      "title": "How Long Do Different Types of Manicures Last",
+      "inferred_primary_keyword": "how long do different types of manicures last",
+      "inferred_intent": "informational",
+      "exclusion_reason": "Already exists on mirelleinspo.com — keyword reserved"
+    }
+  ],
+
+  "posts": [
+    {
+      "post_id": 1,
+      "role": "pillar",
+      "title": "Types of Manicures Explained",
+      "slug": "types-of-manicures-explained",
+      "primary_keyword": "types of manicures explained",
+      "intent": "informational",
+      "search_mode": "inspiration_mode",
+      "suggested_hook_trigger": "Trigger 3 — Specificity/Numbers",
+      "search_demand_signals": [
+        "WhoWhatWear, HerCampus, NewBeauty, L'Officiel — major beauty publications each with dedicated 2026 roundups",
+        "Erica's ATA independent salon blog confirms consistent cross-source terminology confusion (gel, dip, builder, structured, Gel-X, Russian, dry, French)"
+      ],
+      "why_included": "Broadest, highest-authority validated query in the space. Framed as a pure glossary/translator post (what each term means) rather than a durability/cost comparison, keeping it distinct from the two reserved FAQ posts covering manicure vs pedicure and gel/acrylic/natural differences.",
+      "internal_links": {
+        "links_to": [
+          { "slug": "what-is-a-manicure", "anchor_text": "what a manicure actually is", "type": "spoke" },
+          { "slug": "what-is-gel-polish", "anchor_text": "what gel polish is and how it works", "type": "spoke" },
+          { "slug": "what-is-lacquer-nail-polish", "anchor_text": "what lacquer nail polish means", "type": "spoke" },
+          { "slug": "what-is-a-nail-wrap", "anchor_text": "what a nail wrap is", "type": "spoke" },
+          { "slug": "what-is-nail-stamping", "anchor_text": "how nail stamping works", "type": "spoke" },
+          { "slug": "what-are-acrylic-nails", "anchor_text": "what acrylic nails are and how they work", "type": "spoke" },
+          { "slug": "types-of-nail-polish", "anchor_text": "the different types of nail polish", "type": "spoke" },
+          { "slug": "shellac-vs-gel", "anchor_text": "shellac vs gel nails compared", "type": "spoke" },
+          { "slug": "what-is-a-cuticle", "anchor_text": "what a cuticle actually is", "type": "spoke" },
+          { "slug": "nail-anatomy-parts-of-the-nail", "anchor_text": "the full anatomy of your nail", "type": "spoke" },
+          { "slug": "what-is-the-nail-matrix", "anchor_text": "what the nail matrix is", "type": "spoke" },
+          { "slug": "what-is-an-e-file", "anchor_text": "what an e-file nail drill is", "type": "spoke" }
+        ],
+        "gallery_link": {
+          "url": "https://mirelleinspo.com/inspo/types-of-manicures-explained-inspiration-gallery",
+          "anchor_text": "manicure types inspiration gallery"
+        },
+        "receives_links_from": [
+          { "slug": "what-is-a-manicure", "anchor_text": "types of manicures explained" },
+          { "slug": "what-is-gel-polish", "anchor_text": "types of manicures explained" },
+          { "slug": "what-is-lacquer-nail-polish", "anchor_text": "types of manicures explained" },
+          { "slug": "what-is-a-nail-wrap", "anchor_text": "types of manicures explained" },
+          { "slug": "what-is-nail-stamping", "anchor_text": "types of manicures explained" },
+          { "slug": "what-are-acrylic-nails", "anchor_text": "types of manicures explained" },
+          { "slug": "types-of-nail-polish", "anchor_text": "types of manicures explained" },
+          { "slug": "shellac-vs-gel", "anchor_text": "types of manicures explained" },
+          { "slug": "what-is-a-cuticle", "anchor_text": "types of manicures explained" },
+          { "slug": "nail-anatomy-parts-of-the-nail", "anchor_text": "types of manicures explained" },
+          { "slug": "what-is-the-nail-matrix", "anchor_text": "types of manicures explained" },
+          { "slug": "what-is-an-e-file", "anchor_text": "types of manicures explained" }
+        ]
+      },
+      "status": "approved"
+    },
+    {
+      "post_id": 2,
+      "role": "spoke",
+      "title": "What Is a Manicure?",
+      "slug": "what-is-a-manicure",
+      "primary_keyword": "what is a manicure",
+      "intent": "informational",
+      "search_mode": "inspiration_mode",
+      "suggested_hook_trigger": "Trigger 1 — Curiosity Gap",
+      "search_demand_signals": [
+        "Merriam-Webster, Cambridge, Collins, Dictionary.com — major dictionary sources all show active definitional demand",
+        "LeSalon dedicated editorial 'What is a Manicure' guide confirms real consumer-facing content demand beyond dictionaries"
+      ],
+      "why_included": "Foundational term with zero existing coverage on the site defining the base word itself — every other post in this cluster assumes the reader already knows what a manicure is.",
+      "internal_links": {
+        "links_to": [
+          { "slug": "types-of-manicures-explained", "anchor_text": "types of manicures explained", "type": "pillar" },
+          { "slug": "what-is-a-cuticle", "anchor_text": "what a cuticle actually is", "type": "spoke" },
+          { "slug": "what-is-gel-polish", "anchor_text": "what gel polish is and how it works", "type": "spoke" },
+          { "slug": "what-are-acrylic-nails", "anchor_text": "what acrylic nails are and how they work", "type": "spoke" }
+        ],
+        "receives_links_from": [
+          { "slug": "types-of-manicures-explained", "anchor_text": "what a manicure actually is" },
+          { "slug": "what-is-a-cuticle", "anchor_text": "what a manicure actually is" },
+          { "slug": "what-is-gel-polish", "anchor_text": "what a manicure actually is" }
+        ]
+      },
+      "status": "approved"
+    },
+    {
+      "post_id": 3,
+      "role": "spoke",
+      "title": "What Is Gel Polish? (And How It Works)",
+      "slug": "what-is-gel-polish",
+      "primary_keyword": "what is gel polish how does it work",
+      "intent": "informational",
+      "search_mode": "decision_mode",
+      "suggested_hook_trigger": "Trigger 1 — Curiosity Gap",
+      "search_demand_signals": [
+        "LONDONTOWN, NashlyNails, REFORMA (x2), Beetles, Glitterbels — 6+ independent brand guides on the science and process",
+        "C&EN (American Chemical Society publication) covers the chemistry of gel polish curing, confirming high-authority validated interest beyond beauty blogs"
+      ],
+      "why_included": "Deep, high-authority demand including a real chemistry publication. Scoped strictly to what gel polish is and how curing/polymerization works — distinct from a durability/cost comparison, avoiding overlap with reserved comparison content.",
+      "internal_links": {
+        "links_to": [
+          { "slug": "types-of-manicures-explained", "anchor_text": "types of manicures explained", "type": "pillar" },
+          { "slug": "what-is-lacquer-nail-polish", "anchor_text": "what lacquer nail polish means", "type": "spoke" },
+          { "slug": "shellac-vs-gel", "anchor_text": "shellac vs gel nails compared", "type": "spoke" },
+          { "slug": "types-of-nail-polish", "anchor_text": "the different types of nail polish", "type": "spoke" }
+        ],
+        "receives_links_from": [
+          { "slug": "types-of-manicures-explained", "anchor_text": "what gel polish is and how it works" },
+          { "slug": "what-is-a-manicure", "anchor_text": "what gel polish is and how it works" },
+          { "slug": "what-is-lacquer-nail-polish", "anchor_text": "how gel polish works" },
+          { "slug": "shellac-vs-gel", "anchor_text": "what gel polish is and how it works" },
+          { "slug": "types-of-nail-polish", "anchor_text": "how gel polish works" }
+        ]
+      },
+      "status": "approved"
+    },
+    {
+      "post_id": 4,
+      "role": "spoke",
+      "title": "What Is Lacquer Nail Polish?",
+      "slug": "what-is-lacquer-nail-polish",
+      "primary_keyword": "what is lacquer nail polish",
+      "intent": "informational",
+      "search_mode": "decision_mode",
+      "suggested_hook_trigger": "Trigger 1 — Curiosity Gap",
+      "search_demand_signals": [
+        "OPI, ella+mila, BTArtbox, NotPolish, Beetles, LA Nail Supplies — 6 independent brand guides",
+        "OPI explicitly frames 'nail polish' as a historical misnomer for lacquer, confirming this is a genuine recurring consumer terminology question"
+      ],
+      "why_included": "Real, recurring consumer confusion point across major nail polish brands (OPI itself addresses it); no existing site content clarifies polish vs lacquer vs varnish terminology.",
+      "internal_links": {
+        "links_to": [
+          { "slug": "types-of-manicures-explained", "anchor_text": "types of manicures explained", "type": "pillar" },
+          { "slug": "what-is-gel-polish", "anchor_text": "what gel polish is and how it works", "type": "spoke" },
+          { "slug": "types-of-nail-polish", "anchor_text": "the different types of nail polish", "type": "spoke" },
+          { "slug": "what-is-a-nail-wrap", "anchor_text": "what a nail wrap is", "type": "spoke" }
+        ],
+        "receives_links_from": [
+          { "slug": "types-of-manicures-explained", "anchor_text": "what lacquer nail polish means" },
+          { "slug": "what-is-gel-polish", "anchor_text": "what lacquer nail polish means" },
+          { "slug": "types-of-nail-polish", "anchor_text": "what lacquer nail polish means" }
+        ]
+      },
+      "status": "approved"
+    },
+    {
+      "post_id": 5,
+      "role": "spoke",
+      "title": "What Is a Nail Wrap?",
+      "slug": "what-is-a-nail-wrap",
+      "primary_keyword": "what is a nail wrap",
+      "intent": "informational",
+      "search_mode": "decision_mode",
+      "suggested_hook_trigger": "Trigger 1 — Curiosity Gap",
+      "search_demand_signals": [
+        "Gurl Gone Green, Nails by Aina, PN Selfcare, Oh My Gosh Nails — multiple independent dedicated explainer posts",
+        "Consistent cross-source definition (vinyl/fabric/gel-polish strip) confirms a real, distinct nail product category question"
+      ],
+      "why_included": "Solid multi-source demand for a distinct nail product category with zero existing coverage on the site.",
+      "internal_links": {
+        "links_to": [
+          { "slug": "types-of-manicures-explained", "anchor_text": "types of manicures explained", "type": "pillar" },
+          { "slug": "what-is-lacquer-nail-polish", "anchor_text": "what lacquer nail polish means", "type": "spoke" },
+          { "slug": "what-is-nail-stamping", "anchor_text": "how nail stamping works", "type": "spoke" },
+          { "slug": "types-of-nail-polish", "anchor_text": "the different types of nail polish", "type": "spoke" }
+        ],
+        "receives_links_from": [
+          { "slug": "types-of-manicures-explained", "anchor_text": "what a nail wrap is" },
+          { "slug": "what-is-lacquer-nail-polish", "anchor_text": "what a nail wrap is" }
+        ]
+      },
+      "status": "approved"
+    },
+    {
+      "post_id": 6,
+      "role": "spoke",
+      "title": "What Is Nail Stamping? (How a Nail Stamper Works)",
+      "slug": "what-is-nail-stamping",
+      "primary_keyword": "what is nail stamping",
+      "intent": "tutorial",
+      "search_mode": "how_to_execution_mode",
+      "suggested_hook_trigger": "Trigger 1 — Curiosity Gap",
+      "search_demand_signals": [
+        "L'Oréal Paris covers the viral TikTok silicone nail stamper trend directly",
+        "Maniology (category leader, 3 dedicated resources), Dazzle Dry, NailKnowledge, Nail Capital USA all confirm strong, consistent demand"
+      ],
+      "why_included": "Very strong demand including a major beauty authority (L'Oréal Paris). Provides the cluster's tutorial-intent diversity alongside a clear definitional hook.",
+      "internal_links": {
+        "links_to": [
+          { "slug": "types-of-manicures-explained", "anchor_text": "types of manicures explained", "type": "pillar" },
+          { "slug": "what-is-a-nail-wrap", "anchor_text": "what a nail wrap is", "type": "spoke" },
+          { "slug": "what-is-gel-polish", "anchor_text": "what gel polish is and how it works", "type": "spoke" },
+          { "slug": "what-is-an-e-file", "anchor_text": "what an e-file nail drill is", "type": "spoke" }
+        ],
+        "receives_links_from": [
+          { "slug": "types-of-manicures-explained", "anchor_text": "how nail stamping works" },
+          { "slug": "what-is-a-nail-wrap", "anchor_text": "how nail stamping works" }
+        ]
+      },
+      "status": "approved"
+    },
+    {
+      "post_id": 7,
+      "role": "spoke",
+      "title": "What Are Acrylic Nails? (How They Work)",
+      "slug": "what-are-acrylic-nails",
+      "primary_keyword": "what are acrylic nails how do they work",
+      "intent": "informational",
+      "search_mode": "decision_mode",
+      "suggested_hook_trigger": "Trigger 1 — Curiosity Gap",
+      "search_demand_signals": [
+        "Ipsy, NailKnowledge, Hello Nails, AOL (x2) — multiple independent explainer sources",
+        "Iconix Nail Bar explicitly states in its own local search data that 'what are acrylic nails' and 'how do acrylic nails work' are consistent high-volume queries from first-time clients"
+      ],
+      "why_included": "Direct confirmation from a nail salon's own search data that this exact phrasing is high-volume. Merges the 'how it works' angle in rather than splitting into two thin posts.",
+      "internal_links": {
+        "links_to": [
+          { "slug": "types-of-manicures-explained", "anchor_text": "types of manicures explained", "type": "pillar" },
+          { "slug": "what-is-a-manicure", "anchor_text": "what a manicure actually is", "type": "spoke" },
+          { "slug": "shellac-vs-gel", "anchor_text": "shellac vs gel nails compared", "type": "spoke" },
+          { "slug": "what-is-an-e-file", "anchor_text": "what an e-file nail drill is", "type": "spoke" }
+        ],
+        "receives_links_from": [
+          { "slug": "types-of-manicures-explained", "anchor_text": "what acrylic nails are and how they work" },
+          { "slug": "what-is-a-manicure", "anchor_text": "what acrylic nails are and how they work" }
+        ]
+      },
+      "status": "approved"
+    },
+    {
+      "post_id": 8,
+      "role": "spoke",
+      "title": "Types of Nail Polish Explained",
+      "slug": "types-of-nail-polish",
+      "primary_keyword": "types of nail polish",
+      "intent": "informational",
+      "search_mode": "inspiration_mode",
+      "suggested_hook_trigger": "Trigger 3 — Specificity/Numbers",
+      "search_demand_signals": [
+        "L'Oréal Paris ('8 Types of Nail Polish'), LONDONTOWN, Typology (chemical-engineer authored), LuxeFormula Labs ('13 Types')",
+        "Multiple independent numbered-list formats confirm strong roundup-style search demand"
+      ],
+      "why_included": "Strong glossary-style roundup demand distinct from 'types of manicures' by focusing on polish formulas/chemistry rather than salon service types.",
+      "internal_links": {
+        "links_to": [
+          { "slug": "types-of-manicures-explained", "anchor_text": "types of manicures explained", "type": "pillar" },
+          { "slug": "what-is-gel-polish", "anchor_text": "what gel polish is and how it works", "type": "spoke" },
+          { "slug": "what-is-lacquer-nail-polish", "anchor_text": "what lacquer nail polish means", "type": "spoke" },
+          { "slug": "shellac-vs-gel", "anchor_text": "shellac vs gel nails compared", "type": "spoke" }
+        ],
+        "receives_links_from": [
+          { "slug": "types-of-manicures-explained", "anchor_text": "the different types of nail polish" },
+          { "slug": "what-is-gel-polish", "anchor_text": "the different types of nail polish" },
+          { "slug": "what-is-lacquer-nail-polish", "anchor_text": "the different types of nail polish" },
+          { "slug": "what-is-a-nail-wrap", "anchor_text": "the different types of nail polish" }
+        ]
+      },
+      "status": "approved"
+    },
+    {
+      "post_id": 9,
+      "role": "spoke",
+      "title": "Shellac vs Gel: What's the Difference?",
+      "slug": "shellac-vs-gel",
+      "primary_keyword": "shellac vs gel",
+      "intent": "comparison",
+      "search_mode": "decision_mode",
+      "suggested_hook_trigger": "Trigger 1 — Curiosity Gap",
+      "search_demand_signals": [
+        "Healthline (major health authority) covers this as its own dedicated standalone comparison",
+        "Polish Pops, Amoure Nail, Secret Spa, Ancaster Spa, AOL (x2) — 6+ independent sources confirm consistent demand"
+      ],
+      "why_included": "High-authority validated dedicated comparison. Shellac is a specific branded hybrid product (CND), making this genuinely distinct from the reserved gel/acrylic/natural comparison, which covers broader categories.",
+      "internal_links": {
+        "links_to": [
+          { "slug": "types-of-manicures-explained", "anchor_text": "types of manicures explained", "type": "pillar" },
+          { "slug": "what-is-gel-polish", "anchor_text": "what gel polish is and how it works", "type": "spoke" },
+          { "slug": "what-are-acrylic-nails", "anchor_text": "what acrylic nails are and how they work", "type": "spoke" },
+          { "slug": "types-of-nail-polish", "anchor_text": "the different types of nail polish", "type": "spoke" }
+        ],
+        "receives_links_from": [
+          { "slug": "types-of-manicures-explained", "anchor_text": "shellac vs gel nails compared" },
+          { "slug": "what-is-gel-polish", "anchor_text": "shellac vs gel nails compared" },
+          { "slug": "what-are-acrylic-nails", "anchor_text": "shellac vs gel nails compared" },
+          { "slug": "types-of-nail-polish", "anchor_text": "shellac vs gel nails compared" }
+        ]
+      },
+      "status": "approved"
+    },
+    {
+      "post_id": 10,
+      "role": "spoke",
+      "title": "What Is a Cuticle?",
+      "slug": "what-is-a-cuticle",
+      "primary_keyword": "what is a cuticle",
+      "intent": "informational",
+      "search_mode": "decision_mode",
+      "suggested_hook_trigger": "Trigger 1 — Curiosity Gap",
+      "search_demand_signals": [
+        "Wikipedia, Hand and Wrist Institute, NailKnowledge, Nail Care HQ, Manucurist — 5+ sources including medical/health authorities",
+        "Consistent clarification across sources of cuticle vs eponychium vs proximal nail fold confirms genuine, deep search demand"
+      ],
+      "why_included": "Deep, evergreen definitional demand. Existing site cuticle-care posts cover maintenance (oil, hangnails, picking) but none define what a cuticle structurally is.",
+      "internal_links": {
+        "links_to": [
+          { "slug": "types-of-manicures-explained", "anchor_text": "types of manicures explained", "type": "pillar" },
+          { "slug": "what-is-a-manicure", "anchor_text": "what a manicure actually is", "type": "spoke" },
+          { "slug": "nail-anatomy-parts-of-the-nail", "anchor_text": "the full anatomy of your nail", "type": "spoke" },
+          { "slug": "what-is-the-nail-matrix", "anchor_text": "what the nail matrix is", "type": "spoke" }
+        ],
+        "receives_links_from": [
+          { "slug": "types-of-manicures-explained", "anchor_text": "what a cuticle actually is" },
+          { "slug": "what-is-a-manicure", "anchor_text": "what a cuticle actually is" },
+          { "slug": "nail-anatomy-parts-of-the-nail", "anchor_text": "what a cuticle actually is" },
+          { "slug": "what-is-the-nail-matrix", "anchor_text": "what a cuticle actually is" }
+        ]
+      },
+      "status": "approved"
+    },
+    {
+      "post_id": 11,
+      "role": "spoke",
+      "title": "Nail Anatomy: The Parts of Your Nail Explained",
+      "slug": "nail-anatomy-parts-of-the-nail",
+      "primary_keyword": "nail anatomy parts of the nail",
+      "intent": "informational",
+      "search_mode": "decision_mode",
+      "suggested_hook_trigger": "Trigger 3 — Specificity/Numbers",
+      "search_demand_signals": [
+        "Cleveland Clinic, ScienceDirect, NCBI/StatPearls, TeachMeAnatomy — high-authority medical sources",
+        "Manucurist consumer-facing beauty brand also covers full nail anatomy, confirming cross-audience demand"
+      ],
+      "why_included": "High-authority medical and consumer validation. Clean gap — nothing on the site explains the full nail structure (matrix, lunula, bed, plate, folds) together in one place.",
+      "internal_links": {
+        "links_to": [
+          { "slug": "types-of-manicures-explained", "anchor_text": "types of manicures explained", "type": "pillar" },
+          { "slug": "what-is-a-cuticle", "anchor_text": "what a cuticle actually is", "type": "spoke" },
+          { "slug": "what-is-the-nail-matrix", "anchor_text": "what the nail matrix is", "type": "spoke" },
+          { "slug": "what-is-an-e-file", "anchor_text": "what an e-file nail drill is", "type": "spoke" }
+        ],
+        "receives_links_from": [
+          { "slug": "types-of-manicures-explained", "anchor_text": "the full anatomy of your nail" },
+          { "slug": "what-is-a-cuticle", "anchor_text": "the full anatomy of your nail" },
+          { "slug": "what-is-the-nail-matrix", "anchor_text": "the full anatomy of your nail" }
+        ]
+      },
+      "status": "approved"
+    },
+    {
+      "post_id": 12,
+      "role": "spoke",
+      "title": "What Is the Nail Matrix?",
+      "slug": "what-is-the-nail-matrix",
+      "primary_keyword": "what is the nail matrix",
+      "intent": "informational",
+      "search_mode": "decision_mode",
+      "suggested_hook_trigger": "Trigger 1 — Curiosity Gap",
+      "search_demand_signals": [
+        "Cleveland Clinic dedicated standalone article, ScienceDirect, NCBI/StatPearls",
+        "Manucurist consumer beauty brand also has a dedicated nail-matrix explainer, confirming demand beyond medical audiences"
+      ],
+      "why_included": "Distinct standalone query from general anatomy — the nail matrix specifically has its own dedicated high-authority articles separate from broader nail-anatomy content.",
+      "internal_links": {
+        "links_to": [
+          { "slug": "types-of-manicures-explained", "anchor_text": "types of manicures explained", "type": "pillar" },
+          { "slug": "nail-anatomy-parts-of-the-nail", "anchor_text": "the full anatomy of your nail", "type": "spoke" },
+          { "slug": "what-is-a-cuticle", "anchor_text": "what a cuticle actually is", "type": "spoke" },
+          { "slug": "what-are-acrylic-nails", "anchor_text": "what acrylic nails are and how they work", "type": "spoke" }
+        ],
+        "receives_links_from": [
+          { "slug": "types-of-manicures-explained", "anchor_text": "what the nail matrix is" },
+          { "slug": "what-is-a-cuticle", "anchor_text": "what the nail matrix is" },
+          { "slug": "nail-anatomy-parts-of-the-nail", "anchor_text": "what the nail matrix is" }
+        ]
+      },
+      "status": "approved"
+    },
+    {
+      "post_id": 13,
+      "role": "spoke",
+      "title": "What Is an E-File (Nail Drill)?",
+      "slug": "what-is-an-e-file",
+      "primary_keyword": "what is an e-file",
+      "intent": "informational",
+      "search_mode": "decision_mode",
+      "suggested_hook_trigger": "Trigger 1 — Curiosity Gap",
+      "search_demand_signals": [
+        "Young Nails, DipWell, Medicool, ZS Beauty — multiple dedicated guides explaining the tool and its function",
+        "Consistent explanation of RPM, bits, and safety across sources confirms genuine consumer curiosity about the salon tool"
+      ],
+      "why_included": "Real, validated demand. Angled as a client-curiosity explainer ('what's that drill my nail tech uses') rather than a buyer's guide, keeping it non-transactional and distinct from the existing shop/nail-drills product pages.",
+      "internal_links": {
+        "links_to": [
+          { "slug": "types-of-manicures-explained", "anchor_text": "types of manicures explained", "type": "pillar" },
+          { "slug": "what-are-acrylic-nails", "anchor_text": "what acrylic nails are and how they work", "type": "spoke" },
+          { "slug": "what-is-nail-stamping", "anchor_text": "how nail stamping works", "type": "spoke" },
+          { "slug": "nail-anatomy-parts-of-the-nail", "anchor_text": "the full anatomy of your nail", "type": "spoke" }
+        ],
+        "receives_links_from": [
+          { "slug": "types-of-manicures-explained", "anchor_text": "what an e-file nail drill is" },
+          { "slug": "what-is-nail-stamping", "anchor_text": "what an e-file nail drill is" },
+          { "slug": "what-are-acrylic-nails", "anchor_text": "what an e-file nail drill is" },
+          { "slug": "nail-anatomy-parts-of-the-nail", "anchor_text": "what an e-file nail drill is" }
+        ]
+      },
+      "status": "approved"
+    }
+  ],
+
+  "keyword_ownership_registry": {
+    "description": "Master list of all primary keywords — one per post, no overlaps, includes existing site posts",
+    "entries": [
+      { "primary_keyword": "types of manicures explained", "owned_by_slug": "types-of-manicures-explained", "owned_by_title": "Types of Manicures Explained", "source": "new post" },
+      { "primary_keyword": "what is a manicure", "owned_by_slug": "what-is-a-manicure", "owned_by_title": "What Is a Manicure?", "source": "new post" },
+      { "primary_keyword": "what is gel polish how does it work", "owned_by_slug": "what-is-gel-polish", "owned_by_title": "What Is Gel Polish? (And How It Works)", "source": "new post" },
+      { "primary_keyword": "what is lacquer nail polish", "owned_by_slug": "what-is-lacquer-nail-polish", "owned_by_title": "What Is Lacquer Nail Polish?", "source": "new post" },
+      { "primary_keyword": "what is a nail wrap", "owned_by_slug": "what-is-a-nail-wrap", "owned_by_title": "What Is a Nail Wrap?", "source": "new post" },
+      { "primary_keyword": "what is nail stamping", "owned_by_slug": "what-is-nail-stamping", "owned_by_title": "What Is Nail Stamping? (How a Nail Stamper Works)", "source": "new post" },
+      { "primary_keyword": "what are acrylic nails how do they work", "owned_by_slug": "what-are-acrylic-nails", "owned_by_title": "What Are Acrylic Nails? (How They Work)", "source": "new post" },
+      { "primary_keyword": "types of nail polish", "owned_by_slug": "types-of-nail-polish", "owned_by_title": "Types of Nail Polish Explained", "source": "new post" },
+      { "primary_keyword": "shellac vs gel", "owned_by_slug": "shellac-vs-gel", "owned_by_title": "Shellac vs Gel: What's the Difference?", "source": "new post" },
+      { "primary_keyword": "what is a cuticle", "owned_by_slug": "what-is-a-cuticle", "owned_by_title": "What Is a Cuticle?", "source": "new post" },
+      { "primary_keyword": "nail anatomy parts of the nail", "owned_by_slug": "nail-anatomy-parts-of-the-nail", "owned_by_title": "Nail Anatomy: The Parts of Your Nail Explained", "source": "new post" },
+      { "primary_keyword": "what is the nail matrix", "owned_by_slug": "what-is-the-nail-matrix", "owned_by_title": "What Is the Nail Matrix?", "source": "new post" },
+      { "primary_keyword": "what is an e-file", "owned_by_slug": "what-is-an-e-file", "owned_by_title": "What Is an E-File (Nail Drill)?", "source": "new post" },
+      { "primary_keyword": "what is hema nail products", "owned_by_slug": "hema-allergy-nails/what-is-hema-nail-products", "owned_by_title": "What Is HEMA in Nail Products", "source": "existing site post" },
+      { "primary_keyword": "what is nail fungus", "owned_by_slug": "nail-fungus/what-is-nail-fungus", "owned_by_title": "What Is Nail Fungus", "source": "existing site post" },
+      { "primary_keyword": "best nail shape for your hands", "owned_by_slug": "nail-shape-for-hands/best-nail-shape-for-your-hands", "owned_by_title": "Best Nail Shape for Your Hands", "source": "existing site post" },
+      { "primary_keyword": "how to find your nail shape", "owned_by_slug": "nail-shape-for-hands/how-to-find-your-nail-shape", "owned_by_title": "How to Find Your Nail Shape", "source": "existing site post" },
+      { "primary_keyword": "difference between gel acrylic and natural nails", "owned_by_slug": "difference-between-gel-acrylic-and-natural-nails", "owned_by_title": "Difference Between Gel, Acrylic, and Natural Nails", "source": "existing site post" },
+      { "primary_keyword": "how do i know what nail shape suits my hands", "owned_by_slug": "how-do-i-know-what-nail-shape-suits-my-hands", "owned_by_title": "How Do I Know What Nail Shape Suits My Hands", "source": "existing site post" },
+      { "primary_keyword": "5 basic nail shapes", "owned_by_slug": "what-are-the-5-basic-nail-shapes-and-which-is-best-for-me", "owned_by_title": "What Are the 5 Basic Nail Shapes and Which Is Best for Me", "source": "existing site post" },
+      { "primary_keyword": "difference between manicure and pedicure", "owned_by_slug": "whats-the-difference-between-a-manicure-and-a-pedicure", "owned_by_title": "What's the Difference Between a Manicure and a Pedicure", "source": "existing site post" },
+      { "primary_keyword": "how long do different types of manicures last", "owned_by_slug": "how-long-do-different-types-of-manicures-last", "owned_by_title": "How Long Do Different Types of Manicures Last", "source": "existing site post" }
+    ]
+  },
+
+  "merged_posts_log": [
+    {
+      "original_topics": ["What are acrylic nails", "How does acrylic nails work"],
+      "merged_into": "What Are Acrylic Nails? (How They Work)",
+      "reason": "Research showed near-total source overlap between these two phrasings; a nail salon's own search data explicitly named both as the same high-volume query cluster. Splitting them would produce two thin, duplicative posts competing for the same intent."
+    },
+    {
+      "original_topics": ["Difference between gel polish and regular nail polish", "What is gel polish"],
+      "merged_into": "What Is Gel Polish? (And How It Works)",
+      "reason": "Source research for both queries returned nearly identical results (LONDONTOWN, Revel Nail, REFORMA, etc.), indicating searchers asking 'what is gel polish' and 'gel vs regular polish' are served by the same core explainer content. Kept as one post scoped to definition + mechanism rather than a separate durability comparison, to avoid diluting authority across two overlapping pages."
+    }
+  ],
+
+  "killed_posts_log": [
+    {
+      "topic": "What does 'curing' nail polish mean (standalone post)",
+      "reason": "Thin standalone search demand — most sources were patent filings rather than consumer content. Real demand exists but only as a sub-concept explained within other posts (What Is Gel Polish, What Is Nail Stamping), not as its own dedicated page."
+    },
+    {
+      "topic": "What is the lunula (standalone post)",
+      "reason": "Insufficient standalone demand distinct from nail anatomy and nail matrix coverage. Folded into 'Nail Anatomy' and 'What Is the Nail Matrix' instead of creating a third, thinner anatomy post."
+    },
+    {
+      "topic": "E-file / nail drill buyer's guide (bits, RPM comparisons, which drill to buy)",
+      "reason": "Existing site posts under /shop/nail-drills/ already own commercial/buyer's-guide territory for this tool. Kept the new post strictly as a non-transactional 'what is it' explainer to avoid cannibalizing owned shop content."
+    },
+    {
+      "topic": "Manicure vs pedicure, 5 basic nail shapes, gel/acrylic/natural difference, how long types of manicures last",
+      "reason": "Existing post conflict — all reserved by current mirelleinspo.com FAQ content."
+    }
+  ]
+}
