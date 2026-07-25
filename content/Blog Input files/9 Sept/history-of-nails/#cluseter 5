@@ -1,0 +1,249 @@
+{
+  "cluster_metadata": {
+    "cluster_topic": "Nail History & Origins",
+    "topic_slug": "history-of-nails",
+    "target_audience": "Global, Tier 1 countries (US, UK, Canada, Australia)",
+    "total_posts": 5,
+    "intent_breakdown": {
+      "informational": 4,
+      "inspirational": 0,
+      "tutorial": 0,
+      "comparison": 0,
+      "seasonal_trend": 1
+    },
+    "pillar_post_slug": "who-invented-nail-polish",
+    "inspiration_gallery_url": "https://mirelleinspo.com/inspo/who-invented-nail-polish-inspiration-gallery",
+    "created_date": "2026-07-26"
+  },
+
+  "existing_site_posts_excluded": [
+    {
+      "url": "https://mirelleinspo.com/blog/y2k-nails/y2k-nails",
+      "title": "Y2K Nails",
+      "inferred_primary_keyword": "y2k nails",
+      "inferred_intent": "inspirational",
+      "exclusion_reason": "Existing 7-post y2k-nails sub-cluster already owns all 2000s/Y2K nostalgia keyword space on mirelleinspo.com — history-of-nails cluster's 90s post was scoped to avoid any overlap into 2000s/Y2K territory"
+    },
+    {
+      "url": "https://mirelleinspo.com/blog/y2k-nails/easy-y2k-nails",
+      "title": "Easy Y2K Nails",
+      "inferred_primary_keyword": "easy y2k nails",
+      "inferred_intent": "tutorial",
+      "exclusion_reason": "Part of existing y2k-nails sub-cluster — reserved keyword space"
+    },
+    {
+      "url": "https://mirelleinspo.com/blog/y2k-nails/korean-y2k-nails",
+      "title": "Korean Y2K Nails",
+      "inferred_primary_keyword": "korean y2k nails",
+      "inferred_intent": "inspirational",
+      "exclusion_reason": "Part of existing y2k-nails sub-cluster — reserved keyword space"
+    },
+    {
+      "url": "https://mirelleinspo.com/blog/y2k-nails/y2k-nail-colors",
+      "title": "Y2K Nail Colors",
+      "inferred_primary_keyword": "y2k nail colors",
+      "inferred_intent": "informational",
+      "exclusion_reason": "Part of existing y2k-nails sub-cluster — reserved keyword space"
+    },
+    {
+      "url": "https://mirelleinspo.com/blog/french-nails/french-manicure-vs-american-manicure",
+      "title": "French Manicure vs American Manicure",
+      "inferred_primary_keyword": "french manicure vs american manicure",
+      "inferred_intent": "comparison",
+      "exclusion_reason": "Comparison intent, not history/origin intent — no keyword conflict with 'who invented the french manicure', but noted to confirm no angle drift"
+    },
+    {
+      "url": "https://mirelleinspo.com/blog/french-nail/how-to-do-french-manicure-at-home",
+      "title": "How To Do French Manicure At Home",
+      "inferred_primary_keyword": "how to do french manicure at home",
+      "inferred_intent": "tutorial",
+      "exclusion_reason": "Tutorial intent, not history/origin intent — no keyword conflict with 'who invented the french manicure'"
+    }
+  ],
+
+  "posts": [
+    {
+      "post_id": 1,
+      "role": "pillar",
+      "title": "Who Invented Nail Polish? The Full History Behind Every Bottle",
+      "slug": "who-invented-nail-polish",
+      "primary_keyword": "who invented nail polish",
+      "intent": "informational",
+      "search_mode": "decision_mode",
+      "suggested_hook_trigger": "Trigger 1 — Curiosity Gap",
+      "search_demand_signals": [
+        "Google organic: 8+ independently ranking competitor articles targeting this exact query (Nailboo, Maniology, LONDONTOWN, historyofcosmetics.net, DipWell, sienna.co, nailcompany.com)",
+        "Reference source: Wikipedia-adjacent citations (Hagley Museum library archive) confirm sustained long-tail informational demand, not a fad query"
+      ],
+      "why_included": "Broadest, highest-demand keyword in the cluster with heavy competitor saturation confirming real, sustained search volume. Serves as the natural hub for every other origin-story spoke.",
+      "internal_links": {
+        "links_to": [
+          { "slug": "who-invented-acrylic-nails", "anchor_text": "the dentist who accidentally invented acrylic nails", "type": "spoke" },
+          { "slug": "who-invented-the-french-manicure", "anchor_text": "the true story of who invented the French manicure", "type": "spoke" },
+          { "slug": "history-of-nail-art", "anchor_text": "the full history of nail art from ancient Egypt to today", "type": "spoke" },
+          { "slug": "90s-nail-trends", "anchor_text": "the most popular 90s nail trends making a comeback", "type": "spoke" }
+        ],
+        "gallery_link": {
+          "url": "https://mirelleinspo.com/inspo/who-invented-nail-polish-inspiration-gallery",
+          "anchor_text": "nail polish history inspiration gallery"
+        },
+        "receives_links_from": [
+          { "slug": "who-invented-acrylic-nails", "anchor_text": "who invented nail polish in the first place" },
+          { "slug": "who-invented-the-french-manicure", "anchor_text": "the full history of who invented nail polish" },
+          { "slug": "history-of-nail-art", "anchor_text": "who invented nail polish" },
+          { "slug": "90s-nail-trends", "anchor_text": "who invented nail polish" }
+        ]
+      },
+      "status": "approved"
+    },
+    {
+      "post_id": 2,
+      "role": "spoke",
+      "title": "Who Invented Acrylic Nails? The Dentist Behind the Trend",
+      "slug": "who-invented-acrylic-nails",
+      "primary_keyword": "who invented acrylic nails",
+      "intent": "informational",
+      "search_mode": "decision_mode",
+      "suggested_hook_trigger": "Trigger 1 — Curiosity Gap",
+      "search_demand_signals": [
+        "Google organic: 8+ independently ranking competitor articles (Lilac St., Fairy Glamor, BLAM UK, PlasticRanger, thenailloungegateway, Global Fashion, Loste, Polished Cary Inc)",
+        "Consistent 'accidental dentist invention' narrative repeated across unrelated publishers confirms this is an established, frequently searched query, not a single-source anomaly"
+      ],
+      "why_included": "Extremely specific, high-repeat searched query with a genuinely surprising origin story (Dr. Fred Slack, dental acrylic, broken thumbnail) that drives strong curiosity-gap CTR.",
+      "internal_links": {
+        "links_to": [
+          { "slug": "who-invented-nail-polish", "anchor_text": "who invented nail polish in the first place", "type": "pillar" },
+          { "slug": "who-invented-the-french-manicure", "anchor_text": "the true story of who invented the French manicure", "type": "spoke" },
+          { "slug": "history-of-nail-art", "anchor_text": "the full history of nail art from ancient Egypt to today", "type": "spoke" }
+        ],
+        "receives_links_from": [
+          { "slug": "who-invented-nail-polish", "anchor_text": "the dentist who accidentally invented acrylic nails" },
+          { "slug": "who-invented-the-french-manicure", "anchor_text": "the dentist who accidentally invented acrylic nails" },
+          { "slug": "history-of-nail-art", "anchor_text": "how acrylic nails were accidentally invented by a dentist" }
+        ]
+      },
+      "status": "approved"
+    },
+    {
+      "post_id": 3,
+      "role": "spoke",
+      "title": "Who Invented the French Manicure? The Jeff Pink Story",
+      "slug": "who-invented-the-french-manicure",
+      "primary_keyword": "who invented the french manicure",
+      "intent": "informational",
+      "search_mode": "decision_mode",
+      "suggested_hook_trigger": "Trigger 1 — Curiosity Gap",
+      "search_demand_signals": [
+        "Google organic: 6+ independent sources (southernlysweetnails.com, Goodreads/Story Merchant Books author page, Brit Beauty Blog Substack, two separate AOL/InStyle syndications)",
+        "Reference source: EPFL graphsearch academic citation independently confirms the 1975/1976 Jeff Pink/Orly attribution, validating this as an established fact pattern people actively search to confirm"
+      ],
+      "why_included": "Distinct, well-documented invention story (Jeff Pink, Orly, Hollywood 1975) that is fully separate in intent from the existing on-site comparison and tutorial French manicure posts — zero keyword overlap confirmed.",
+      "internal_links": {
+        "links_to": [
+          { "slug": "who-invented-nail-polish", "anchor_text": "the full history of who invented nail polish", "type": "pillar" },
+          { "slug": "who-invented-acrylic-nails", "anchor_text": "the dentist who accidentally invented acrylic nails", "type": "spoke" },
+          { "slug": "90s-nail-trends", "anchor_text": "the most popular 90s nail trends making a comeback", "type": "spoke" }
+        ],
+        "receives_links_from": [
+          { "slug": "who-invented-nail-polish", "anchor_text": "the true story of who invented the French manicure" },
+          { "slug": "who-invented-acrylic-nails", "anchor_text": "the true story of who invented the French manicure" },
+          { "slug": "90s-nail-trends", "anchor_text": "who really invented the classic French manicure" }
+        ]
+      },
+      "status": "approved"
+    },
+    {
+      "post_id": 4,
+      "role": "spoke",
+      "title": "The History of Nail Art: From Ancient Egypt to Today",
+      "slug": "history-of-nail-art",
+      "primary_keyword": "history of nail art",
+      "intent": "informational",
+      "search_mode": "inspiration_mode",
+      "suggested_hook_trigger": "Trigger 3 — Specificity/Numbers",
+      "search_demand_signals": [
+        "Google organic: 8+ independently ranking competitor articles (ND24 NailDesign, EyeCandys, The Science Survey, A-List Nails, Enchanted Escape Nail Spa, Glitterbels US, historyofnailart.weebly.com)",
+        "Wikipedia 'Nail art' reference article independently confirms the same timeline milestones (Ancient China, Inca Empire, Louis XVI manicure sets), validating this as an evergreen, well-established query"
+      ],
+      "why_included": "Broad 'origin story' query distinct from the narrower invention-specific spokes; works well as a visual timeline post with strong, evergreen, non-seasonal demand.",
+      "internal_links": {
+        "links_to": [
+          { "slug": "who-invented-nail-polish", "anchor_text": "who invented nail polish", "type": "pillar" },
+          { "slug": "who-invented-acrylic-nails", "anchor_text": "how acrylic nails were accidentally invented by a dentist", "type": "spoke" },
+          { "slug": "who-invented-the-french-manicure", "anchor_text": "who really invented the classic French manicure", "type": "spoke" },
+          { "slug": "90s-nail-trends", "anchor_text": "the most popular 90s nail trends making a comeback", "type": "spoke" }
+        ],
+        "receives_links_from": [
+          { "slug": "who-invented-nail-polish", "anchor_text": "the full history of nail art from ancient Egypt to today" },
+          { "slug": "who-invented-acrylic-nails", "anchor_text": "the full history of nail art from ancient Egypt to today" },
+          { "slug": "90s-nail-trends", "anchor_text": "the full history of nail art from ancient Egypt to today" }
+        ]
+      },
+      "status": "approved"
+    },
+    {
+      "post_id": 5,
+      "role": "spoke",
+      "title": "90s Nail Trends That Are Back: The Most Popular Designs of the Decade",
+      "slug": "90s-nail-trends",
+      "primary_keyword": "90s nail trends",
+      "intent": "seasonal_trend",
+      "search_mode": "aesthetic_identity_mode",
+      "suggested_hook_trigger": "Trigger 4 — Identity Mirroring",
+      "search_demand_signals": [
+        "Google organic: 6+ independently ranking competitor articles (BTArtbox Nails, College Fashion, Style Your Occasion, naildesigns.com, NAILPEAK, Byrdie/AOL)",
+        "Recent celebrity news confirms live, ongoing search momentum: Kylie Jenner's 'Deep 90s French' manicure covered by Real Simple/AOL in 2026, showing this is an actively resurging trend query, not a stale one"
+      ],
+      "why_included": "Massive, currently-active nostalgia demand confirmed by both evergreen competitor content and 2026 celebrity-driven news coverage. Explicitly scoped to stay within the 90s decade only, since 2000s/Y2K keyword space is already owned by the existing y2k-nails sub-cluster on mirelleinspo.com.",
+      "internal_links": {
+        "links_to": [
+          { "slug": "who-invented-nail-polish", "anchor_text": "who invented nail polish", "type": "pillar" },
+          { "slug": "who-invented-the-french-manicure", "anchor_text": "who really invented the classic French manicure", "type": "spoke" },
+          { "slug": "history-of-nail-art", "anchor_text": "the full history of nail art from ancient Egypt to today", "type": "spoke" }
+        ],
+        "receives_links_from": [
+          { "slug": "who-invented-nail-polish", "anchor_text": "the most popular 90s nail trends making a comeback" },
+          { "slug": "who-invented-the-french-manicure", "anchor_text": "the most popular 90s nail trends making a comeback" },
+          { "slug": "history-of-nail-art", "anchor_text": "the most popular 90s nail trends making a comeback" }
+        ]
+      },
+      "status": "approved"
+    }
+  ],
+
+  "keyword_ownership_registry": {
+    "description": "Master list of all primary keywords for the history-of-nails cluster — one per post, no overlaps, includes existing site posts flagged during cannibalization scan",
+    "entries": [
+      { "primary_keyword": "who invented nail polish", "owned_by_slug": "who-invented-nail-polish", "owned_by_title": "Who Invented Nail Polish? The Full History Behind Every Bottle", "source": "new post" },
+      { "primary_keyword": "who invented acrylic nails", "owned_by_slug": "who-invented-acrylic-nails", "owned_by_title": "Who Invented Acrylic Nails? The Dentist Behind the Trend", "source": "new post" },
+      { "primary_keyword": "who invented the french manicure", "owned_by_slug": "who-invented-the-french-manicure", "owned_by_title": "Who Invented the French Manicure? The Jeff Pink Story", "source": "new post" },
+      { "primary_keyword": "history of nail art", "owned_by_slug": "history-of-nail-art", "owned_by_title": "The History of Nail Art: From Ancient Egypt to Today", "source": "new post" },
+      { "primary_keyword": "90s nail trends", "owned_by_slug": "90s-nail-trends", "owned_by_title": "90s Nail Trends That Are Back: The Most Popular Designs of the Decade", "source": "new post" },
+      { "primary_keyword": "french manicure vs american manicure", "owned_by_slug": "french-manicure-vs-american-manicure", "owned_by_title": "French Manicure vs American Manicure", "source": "existing site post" },
+      { "primary_keyword": "how to do french manicure at home", "owned_by_slug": "how-to-do-french-manicure-at-home", "owned_by_title": "How To Do French Manicure At Home", "source": "existing site post" },
+      { "primary_keyword": "y2k nails", "owned_by_slug": "y2k-nails", "owned_by_title": "Y2K Nails", "source": "existing site post" },
+      { "primary_keyword": "easy y2k nails", "owned_by_slug": "easy-y2k-nails", "owned_by_title": "Easy Y2K Nails", "source": "existing site post" },
+      { "primary_keyword": "korean y2k nails", "owned_by_slug": "korean-y2k-nails", "owned_by_title": "Korean Y2K Nails", "source": "existing site post" },
+      { "primary_keyword": "y2k nail colors", "owned_by_slug": "y2k-nail-colors", "owned_by_title": "Y2K Nail Colors", "source": "existing site post" }
+    ]
+  },
+
+  "merged_posts_log": [
+    {
+      "original_topics": ["History of gel nails / who invented gel nails"],
+      "merged_into": "Who Invented Acrylic Nails? The Dentist Behind the Trend",
+      "reason": "Gel nail history sources overlapped almost entirely with the acrylic invention narrative (both trace to the same 1950s-80s dental-acrylic lineage per DipWell source) and could not independently clear the 2-source validation threshold as a standalone topic — folded as a brief mention rather than given its own post."
+    }
+  ],
+
+  "killed_posts_log": [
+    {
+      "topic": "2000s nails / Y2K nail history",
+      "reason": "Existing post conflict — mirelleinspo.com already owns this entire keyword space via the 7-post y2k-nails sub-cluster (y2k-nails, easy-y2k-nails, korean-y2k-nails, y2k-butterfly-nails, y2k-coquette-nails, y2k-nail-colors, y2k-nails-short). Killed immediately per cannibalization rule."
+    },
+    {
+      "topic": "History of press-on nails",
+      "reason": "No demand — could not find any query with real, multi-source validated search demand specifically for press-on nail invention/history. Generic topic-coverage angle with no proven traffic behind it; killed per core_principle (topic coverage is not the goal)."
+    }
+  ]
+}
