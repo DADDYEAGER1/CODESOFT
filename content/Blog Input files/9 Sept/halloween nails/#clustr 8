@@ -1,0 +1,338 @@
+{
+  "cluster_metadata": {
+    "cluster_topic": "Halloween Nails",
+    "topic_slug": "halloween",
+    "target_audience": "Global, Tier 1 countries",
+    "total_posts": 8,
+    "intent_breakdown": {
+      "informational": 0,
+      "inspirational": 6,
+      "tutorial": 1,
+      "comparison": 0,
+      "seasonal_trend": 1
+    },
+    "pillar_post_slug": "halloween-nail-designs",
+    "inspiration_gallery_url": "https://mirelleinspo.com/inspo/halloween-nail-designs-inspiration-gallery",
+    "created_date": "2026-07-25"
+  },
+
+  "existing_site_posts_excluded": [
+    {
+      "url": "https://mirelleinspo.com/shop/halloween/best-melodysusie-halloween-nail-products",
+      "title": "Best MelodySusie Halloween Nail Products",
+      "inferred_primary_keyword": "halloween nail products",
+      "inferred_intent": "transactional/shop",
+      "exclusion_reason": "Shop/product page, not blog content — different content type, no keyword conflict with blog cluster"
+    },
+    {
+      "url": "https://mirelleinspo.com/shop/halloween/melodysusie-halloween-nail-accessories",
+      "title": "MelodySusie Halloween Nail Accessories",
+      "inferred_primary_keyword": "halloween nail accessories",
+      "inferred_intent": "transactional/shop",
+      "exclusion_reason": "Shop/product page, not blog content — different content type, no keyword conflict with blog cluster"
+    },
+    {
+      "url": "https://mirelleinspo.com/blog/vampire-nails-2025",
+      "title": "Vampire Nails 2026: The Gothic Trend Coming Back Stronger",
+      "inferred_primary_keyword": "vampire nails",
+      "inferred_intent": "inspirational (year-round gothic aesthetic, explicitly not Halloween-exclusive)",
+      "exclusion_reason": "Positioned as a year-round gothic aesthetic, not a Halloween-specific post — no primary keyword conflict. Related as an internal link opportunity from the Horror Movie Halloween Nails and Black Halloween Nails spokes, not merged."
+    }
+  ],
+
+  "posts": [
+    {
+      "post_id": 1,
+      "role": "pillar",
+      "title": "Halloween Nail Designs",
+      "slug": "halloween-nail-designs",
+      "primary_keyword": "halloween nail designs",
+      "intent": "inspirational",
+      "search_mode": "inspiration_mode",
+      "suggested_hook_trigger": "Trigger 2 — FOMO/Trend",
+      "search_demand_signals": [
+        "Pinterest: dedicated 'Halloween nail designs' search demand, multiple dedicated boards/pages",
+        "Seasonal CSV (30-day/90-day): 'halloween nail designs' rank #48 growing, 'halloween nail inspo' rank #40 seasonal, sharp Oct spike pattern confirmed across 3 years of data",
+        "AnswerSocrates dataset: 'design halloween nails', 'best halloween nail designs', 'halloween designs for your nails', 'halloween nail design ideas' — 31 matching queries, highest-volume theme",
+        "Editorial: multiple outlets (InStyle, AOL, Insiderlyfe) publish dedicated 'Halloween Nail Designs 2026' roundups confirming standing demand"
+      ],
+      "why_included": "Broadest, highest-demand keyword in the entire dataset — validated on Pinterest, Google Trends seasonal data, and 31 distinct AnswerSocrates queries. Serves as the natural hub for all seven spokes.",
+      "internal_links": {
+        "links_to": [
+          { "slug": "disney-halloween-nails", "anchor_text": "Disney Halloween nail ideas", "type": "spoke" },
+          { "slug": "hocus-pocus-nails", "anchor_text": "Hocus Pocus nail designs", "type": "spoke" },
+          { "slug": "black-halloween-nails", "anchor_text": "black Halloween nail designs", "type": "spoke" },
+          { "slug": "cute-halloween-nails", "anchor_text": "cute Halloween nail ideas", "type": "spoke" },
+          { "slug": "short-halloween-nails", "anchor_text": "short Halloween nail designs", "type": "spoke" },
+          { "slug": "diy-halloween-nails-at-home", "anchor_text": "DIY Halloween nails at home tutorial", "type": "spoke" },
+          { "slug": "horror-movie-halloween-nails", "anchor_text": "horror movie Halloween nail designs", "type": "spoke" }
+        ],
+        "gallery_link": {
+          "url": "https://mirelleinspo.com/inspo/halloween-nail-designs-inspiration-gallery",
+          "anchor_text": "Halloween nails inspiration gallery"
+        },
+        "receives_links_from": [
+          { "slug": "disney-halloween-nails", "anchor_text": "Halloween nail designs" },
+          { "slug": "hocus-pocus-nails", "anchor_text": "Halloween nail designs" },
+          { "slug": "black-halloween-nails", "anchor_text": "Halloween nail designs" },
+          { "slug": "cute-halloween-nails", "anchor_text": "Halloween nail designs" },
+          { "slug": "short-halloween-nails", "anchor_text": "Halloween nail designs" },
+          { "slug": "diy-halloween-nails-at-home", "anchor_text": "Halloween nail designs" },
+          { "slug": "horror-movie-halloween-nails", "anchor_text": "Halloween nail designs" }
+        ]
+      },
+      "status": "approved"
+    },
+
+    {
+      "post_id": 2,
+      "role": "spoke",
+      "title": "Disney Halloween Nails",
+      "slug": "disney-halloween-nails",
+      "primary_keyword": "disney halloween nails",
+      "intent": "inspirational",
+      "search_mode": "aesthetic_identity_mode",
+      "suggested_hook_trigger": "Trigger 4 — Identity Mirroring",
+      "search_demand_signals": [
+        "Pinterest: dedicated 'Disney Halloween Nails' ideas page (pinterest.com/ideas/disney-halloween-nails)",
+        "Pinterest autocomplete cluster: 'disney nail ideas', 'disney nails for halloween', 'disney halloween pumpkin nails', 'mickey ghost nails', 'nightmare before christmas nails'",
+        "Growing CSV: 'disney halloween nails' rank #43, 100% yearly change",
+        "AnswerSocrates: 10 matching queries — 'disney halloween nails ideas/short/simple', 'easy disney halloween nails', 'halloween nails mickey'"
+      ],
+      "why_included": "Dedicated Pinterest ideas page plus 10 distinct AnswerSocrates query variants confirm standing, specific demand distinct from general Halloween designs.",
+      "internal_links": {
+        "links_to": [
+          { "slug": "halloween-nail-designs", "anchor_text": "Halloween nail designs", "type": "pillar" },
+          { "slug": "hocus-pocus-nails", "anchor_text": "Hocus Pocus nail designs", "type": "spoke" },
+          { "slug": "cute-halloween-nails", "anchor_text": "cute Halloween nail ideas", "type": "spoke" }
+        ],
+        "receives_links_from": [
+          { "slug": "halloween-nail-designs", "anchor_text": "Disney Halloween nail ideas" },
+          { "slug": "hocus-pocus-nails", "anchor_text": "Disney Halloween nails" },
+          { "slug": "cute-halloween-nails", "anchor_text": "Disney Halloween nails" }
+        ]
+      },
+      "status": "approved"
+    },
+
+    {
+      "post_id": 3,
+      "role": "spoke",
+      "title": "Hocus Pocus Nails",
+      "slug": "hocus-pocus-nails",
+      "primary_keyword": "hocus pocus nails",
+      "intent": "inspirational",
+      "search_mode": "aesthetic_identity_mode",
+      "suggested_hook_trigger": "Trigger 4 — Identity Mirroring",
+      "search_demand_signals": [
+        "Dedicated editorial article: '35 Hocus Pocus Nail Designs' (Jhu Innovations)",
+        "Pinterest: dedicated pins and crossover mentions with Disney Halloween Nails content",
+        "AnswerSocrates: 8 matching queries — 'hocus pocus halloween nails', 'jack skellington halloween nails', 'jack and sally halloween nails', 'oogie boogie halloween nails', 'halloween nail designs jack skellington'"
+      ],
+      "why_included": "Distinct movie-IP demand pocket with its own dedicated articles and 8 AnswerSocrates query variants — separate audience from general Disney-character searches (Nightmare Before Christmas/Hocus Pocus fans specifically).",
+      "internal_links": {
+        "links_to": [
+          { "slug": "halloween-nail-designs", "anchor_text": "Halloween nail designs", "type": "pillar" },
+          { "slug": "disney-halloween-nails", "anchor_text": "Disney Halloween nail ideas", "type": "spoke" }
+        ],
+        "receives_links_from": [
+          { "slug": "halloween-nail-designs", "anchor_text": "Hocus Pocus nail designs" },
+          { "slug": "disney-halloween-nails", "anchor_text": "Hocus Pocus nail designs" }
+        ]
+      },
+      "status": "approved"
+    },
+
+    {
+      "post_id": 4,
+      "role": "spoke",
+      "title": "Black Halloween Nails",
+      "slug": "black-halloween-nails",
+      "primary_keyword": "black halloween nails",
+      "intent": "inspirational",
+      "search_mode": "inspiration_mode",
+      "suggested_hook_trigger": "Trigger 3 — Specificity/Numbers",
+      "search_demand_signals": [
+        "Pinterest: dedicated 'Black Halloween Nails' board (390+ pins)",
+        "Editorial: Bored Panda, Today.com roundups reference black as the dominant Halloween color choice",
+        "AnswerSocrates: 27 matching queries — highest-volume color theme, includes 'black and orange/red/purple/white/green/pink halloween nails', 'black halloween nails short', 'black cat halloween nails'"
+      ],
+      "why_included": "Largest single color-theme demand pocket in the dataset (27 queries) with a dedicated Pinterest board — owns all black-color-combination variants to prevent fragmenting this demand across multiple thin posts.",
+      "internal_links": {
+        "links_to": [
+          { "slug": "halloween-nail-designs", "anchor_text": "Halloween nail designs", "type": "pillar" },
+          { "slug": "short-halloween-nails", "anchor_text": "short Halloween nail designs", "type": "spoke" },
+          { "slug": "cute-halloween-nails", "anchor_text": "cute Halloween nail ideas", "type": "spoke" },
+          { "slug": "horror-movie-halloween-nails", "anchor_text": "horror movie Halloween nail designs", "type": "spoke" }
+        ],
+        "receives_links_from": [
+          { "slug": "halloween-nail-designs", "anchor_text": "black Halloween nail designs" },
+          { "slug": "short-halloween-nails", "anchor_text": "black Halloween nails" },
+          { "slug": "cute-halloween-nails", "anchor_text": "black Halloween nails" },
+          { "slug": "horror-movie-halloween-nails", "anchor_text": "black Halloween nails" }
+        ]
+      },
+      "status": "approved"
+    },
+
+    {
+      "post_id": 5,
+      "role": "spoke",
+      "title": "Cute Halloween Nails",
+      "slug": "cute-halloween-nails",
+      "primary_keyword": "cute halloween nails",
+      "intent": "inspirational",
+      "search_mode": "inspiration_mode",
+      "suggested_hook_trigger": "Trigger 2 — FOMO/Trend",
+      "search_demand_signals": [
+        "Dedicated editorial article: '15 Best Cute Halloween Nail Ideas' (Pedicure Nails)",
+        "Bored Panda: nail artist quoted confirming shift toward 'more uplifting, cute designs... pastel pumpkins and smiling ghosts'",
+        "AnswerSocrates: 20 matching queries — 'cute halloween nails', 'cute easy/simple/fall halloween nails', 'cute nails to do for halloween'"
+      ],
+      "why_included": "Confirmed shift in demand toward non-scary, pastel/soft Halloween designs, validated by a dedicated article, editorial trend commentary, and 20 distinct query variants.",
+      "internal_links": {
+        "links_to": [
+          { "slug": "halloween-nail-designs", "anchor_text": "Halloween nail designs", "type": "pillar" },
+          { "slug": "disney-halloween-nails", "anchor_text": "Disney Halloween nail ideas", "type": "spoke" },
+          { "slug": "short-halloween-nails", "anchor_text": "short Halloween nail designs", "type": "spoke" },
+          { "slug": "diy-halloween-nails-at-home", "anchor_text": "DIY Halloween nails at home tutorial", "type": "spoke" }
+        ],
+        "receives_links_from": [
+          { "slug": "halloween-nail-designs", "anchor_text": "cute Halloween nail ideas" },
+          { "slug": "disney-halloween-nails", "anchor_text": "cute Halloween nail ideas" },
+          { "slug": "short-halloween-nails", "anchor_text": "cute Halloween nails" },
+          { "slug": "diy-halloween-nails-at-home", "anchor_text": "cute Halloween nail ideas" }
+        ]
+      },
+      "status": "approved"
+    },
+
+    {
+      "post_id": 6,
+      "role": "spoke",
+      "title": "Short Halloween Nails",
+      "slug": "short-halloween-nails",
+      "primary_keyword": "short halloween nails",
+      "intent": "inspirational",
+      "search_mode": "inspiration_mode",
+      "suggested_hook_trigger": "Trigger 3 — Specificity/Numbers",
+      "search_demand_signals": [
+        "Dedicated editorial articles: AOL '20 Short Halloween Nails Ideas', Pedicure Nails '15 Best Short Halloween Nail Ideas'",
+        "InStyle: '33 Halloween Nail Ideas' explicitly calls out shape/length as a key styling decision",
+        "AnswerSocrates: 33 matching queries — largest length-based theme, includes 'halloween nails short/almond/coffin/square/stiletto', 'short gel x halloween nails'"
+      ],
+      "why_included": "Two dedicated editorial articles plus 33 AnswerSocrates query variants confirm nail-length is a primary decision factor for Halloween manicures, not a minor modifier.",
+      "internal_links": {
+        "links_to": [
+          { "slug": "halloween-nail-designs", "anchor_text": "Halloween nail designs", "type": "pillar" },
+          { "slug": "black-halloween-nails", "anchor_text": "black Halloween nail designs", "type": "spoke" },
+          { "slug": "cute-halloween-nails", "anchor_text": "cute Halloween nail ideas", "type": "spoke" },
+          { "slug": "diy-halloween-nails-at-home", "anchor_text": "DIY Halloween nails at home tutorial", "type": "spoke" }
+        ],
+        "receives_links_from": [
+          { "slug": "halloween-nail-designs", "anchor_text": "short Halloween nail designs" },
+          { "slug": "black-halloween-nails", "anchor_text": "short Halloween nail designs" },
+          { "slug": "cute-halloween-nails", "anchor_text": "short Halloween nail designs" },
+          { "slug": "diy-halloween-nails-at-home", "anchor_text": "short Halloween nail designs" }
+        ]
+      },
+      "status": "approved"
+    },
+
+    {
+      "post_id": 7,
+      "role": "spoke",
+      "title": "DIY Halloween Nails at Home",
+      "slug": "diy-halloween-nails-at-home",
+      "primary_keyword": "diy halloween nails at home",
+      "intent": "tutorial",
+      "search_mode": "how_to_execution_mode",
+      "suggested_hook_trigger": "Trigger 1 — Curiosity Gap",
+      "search_demand_signals": [
+        "Pinterest: dedicated 'Nail Tutorial for Halloween Nails' pins, recurring guest-post tutorial pattern across nail blogs",
+        "AnswerSocrates: 19 matching queries — 'diy halloween nails', 'diy halloween nails for beginners', 'how to do halloween nails at home', 'halloween nails easy to do at home'"
+      ],
+      "why_included": "Fills the tutorial-intent gap in the cluster — required by the workflow's intent-diversity rule (minimum 3 distinct intent types) — and independently validated by 19 AnswerSocrates queries plus Pinterest tutorial content.",
+      "internal_links": {
+        "links_to": [
+          { "slug": "halloween-nail-designs", "anchor_text": "Halloween nail designs", "type": "pillar" },
+          { "slug": "short-halloween-nails", "anchor_text": "short Halloween nail designs", "type": "spoke" },
+          { "slug": "cute-halloween-nails", "anchor_text": "cute Halloween nail ideas", "type": "spoke" },
+          { "slug": "horror-movie-halloween-nails", "anchor_text": "horror movie Halloween nail designs", "type": "spoke" }
+        ],
+        "receives_links_from": [
+          { "slug": "halloween-nail-designs", "anchor_text": "DIY Halloween nails at home tutorial" },
+          { "slug": "short-halloween-nails", "anchor_text": "DIY Halloween nails at home tutorial" },
+          { "slug": "cute-halloween-nails", "anchor_text": "DIY Halloween nails at home tutorial" },
+          { "slug": "horror-movie-halloween-nails", "anchor_text": "DIY Halloween nails at home tutorial" }
+        ]
+      },
+      "status": "approved"
+    },
+
+    {
+      "post_id": 8,
+      "role": "spoke",
+      "title": "Horror Movie Halloween Nails",
+      "slug": "horror-movie-halloween-nails",
+      "primary_keyword": "horror movie halloween nails",
+      "intent": "inspirational",
+      "search_mode": "aesthetic_identity_mode",
+      "suggested_hook_trigger": "Trigger 4 — Identity Mirroring",
+      "search_demand_signals": [
+        "AnswerSocrates: 17 matching queries — 'halloween nails michael myers/jason/jason voorhees/chucky/ghostface/harley quinn/joker/jigsaw/scream/terrifier'",
+        "Distinct audience from Disney/cute buckets — horror-franchise fans searching by specific character name, consistent modifier pattern across 8+ named characters"
+      ],
+      "why_included": "17 distinct character-specific queries across 8+ named horror-movie characters form a real, cohesive sub-audience distinct from Disney/cute searchers — consolidated into one themed post rather than fragmenting into 8 thin single-character posts.",
+      "internal_links": {
+        "links_to": [
+          { "slug": "halloween-nail-designs", "anchor_text": "Halloween nail designs", "type": "pillar" },
+          { "slug": "black-halloween-nails", "anchor_text": "black Halloween nail designs", "type": "spoke" },
+          { "slug": "diy-halloween-nails-at-home", "anchor_text": "DIY Halloween nails at home tutorial", "type": "spoke" }
+        ],
+        "receives_links_from": [
+          { "slug": "halloween-nail-designs", "anchor_text": "horror movie Halloween nail designs" },
+          { "slug": "black-halloween-nails", "anchor_text": "horror movie Halloween nail designs" },
+          { "slug": "diy-halloween-nails-at-home", "anchor_text": "horror movie Halloween nail designs" }
+        ]
+      },
+      "status": "approved"
+    }
+  ],
+
+  "keyword_ownership_registry": {
+    "description": "Master list of all primary keywords — one per post, no overlaps, includes existing site posts",
+    "entries": [
+      { "primary_keyword": "halloween nail designs", "owned_by_slug": "halloween-nail-designs", "owned_by_title": "Halloween Nail Designs", "source": "new post" },
+      { "primary_keyword": "disney halloween nails", "owned_by_slug": "disney-halloween-nails", "owned_by_title": "Disney Halloween Nails", "source": "new post" },
+      { "primary_keyword": "hocus pocus nails", "owned_by_slug": "hocus-pocus-nails", "owned_by_title": "Hocus Pocus Nails", "source": "new post" },
+      { "primary_keyword": "black halloween nails", "owned_by_slug": "black-halloween-nails", "owned_by_title": "Black Halloween Nails", "source": "new post" },
+      { "primary_keyword": "cute halloween nails", "owned_by_slug": "cute-halloween-nails", "owned_by_title": "Cute Halloween Nails", "source": "new post" },
+      { "primary_keyword": "short halloween nails", "owned_by_slug": "short-halloween-nails", "owned_by_title": "Short Halloween Nails", "source": "new post" },
+      { "primary_keyword": "diy halloween nails at home", "owned_by_slug": "diy-halloween-nails-at-home", "owned_by_title": "DIY Halloween Nails at Home", "source": "new post" },
+      { "primary_keyword": "horror movie halloween nails", "owned_by_slug": "horror-movie-halloween-nails", "owned_by_title": "Horror Movie Halloween Nails", "source": "new post" },
+      { "primary_keyword": "vampire nails", "owned_by_slug": "vampire-nails-2025", "owned_by_title": "Vampire Nails 2026: The Gothic Trend Coming Back Stronger", "source": "existing site post" },
+      { "primary_keyword": "halloween nail products", "owned_by_slug": "shop/halloween/best-melodysusie-halloween-nail-products", "owned_by_title": "Best MelodySusie Halloween Nail Products", "source": "existing site post (shop)" },
+      { "primary_keyword": "halloween nail accessories", "owned_by_slug": "shop/halloween/melodysusie-halloween-nail-accessories", "owned_by_title": "MelodySusie Halloween Nail Accessories", "source": "existing site post (shop)" }
+    ]
+  },
+
+  "merged_posts_log": [],
+
+  "killed_posts_log": [
+    { "topic": "October Nails", "reason": "User instruction — removed from cluster; demand folded into pillar" },
+    { "topic": "Halloween Nail Ideas/Inspo", "reason": "User instruction — removed from cluster; demand folded into pillar" },
+    { "topic": "Halloween nail stickers / press-on halloween nails", "reason": "Product/shopping-adjacent intent, verges on transactional — excluded per no-transactional-intent rule; site already covers via existing shop/halloween pages" },
+    { "topic": "Ghost/spider/pumpkin motif-only queries", "reason": "Recurring motif across every roundup but never its own standalone article or dedicated page — belongs as a subsection within the pillar, not a standalone post" },
+    { "topic": "Halloween nail colors 2025/2026 (as standalone)", "reason": "No standalone dedicated page found across any source — folds into pillar content rather than a separate post" },
+    { "topic": "Halloween nails for work/office", "reason": "Only appears as a subsection inside broader roundups (e.g. BTArtbox, Pedicure Nails); no dedicated standalone query volume found — not a distinct searched query" },
+    { "topic": "Individual horror character posts (Michael Myers Nails, Jason Nails, Chucky Nails, etc. as separate posts)", "reason": "Each individual character query has low standalone volume (1-3 AnswerSocrates mentions); consolidated into one Horror Movie Halloween Nails post to avoid 8 thin, low-demand posts" },
+    { "topic": "Candy corn nails, Japanese/Korean Halloween nails, Y2K Halloween nails, Harry Potter nails, Winnie the Pooh nails, Kawaii Halloween nails", "reason": "Single-digit query counts (1-5 each), single-source (AnswerSocrates only, no Pinterest/editorial corroboration) — fails the 2-source validation rule; retained as potential subsection content within relevant spokes, not standalone posts" },
+    { "topic": "Halloween nails for gel-x/dip/BIAB (format compatibility)", "reason": "Format-compatibility question, not a design search — better suited as an FAQ than a full post; overlaps existing/planned Nail FAQ on gel/dip/BIAB compatibility" },
+    { "topic": "Halloween toe nails/pedicure", "reason": "Real but thin demand (9 queries); insufficient distinct volume to justify a standalone spoke — can be a subsection in the pillar" },
+    { "topic": "French tip / cat eye / chrome / ombre Halloween nails (as separate posts)", "reason": "Each technique already has a dedicated home in existing site clusters (cat-eye/, chrome-nails/, french-nails/) — creating separate Halloween-specific posts would cannibalize those clusters; handled as internal cross-links instead" },
+    { "topic": "Witch / vampire / zombie / gothic Halloween nails (as separate posts)", "reason": "Cannibalization — overlaps existing site posts (witchy-nails, vampire-nails-2025, goth-nails cluster); handled as internal links from pillar and Horror Movie/Black spokes instead" },
+    { "topic": "Halloween Nails for Kids", "reason": "User decision — cluster locked at 8 posts total; kids-specific queries fold into Cute Halloween Nails as a subsection rather than a standalone 9th post" },
+    { "topic": "Halloween Nail FAQs (timing, longevity, no-acrylic angle)", "reason": "User decision — no Halloween-specific FAQ section created for this cluster; candidate questions either duplicated existing planned Nail FAQs (gel/dip/BIAB compatibility) or were too thin/single-source to justify a new FAQ entry" }
+  ]
+}
