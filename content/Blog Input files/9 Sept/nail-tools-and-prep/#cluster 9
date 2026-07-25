@@ -1,0 +1,300 @@
+{
+  "cluster_metadata": {
+    "cluster_topic": "Nail Tools & Prep Knowledge",
+    "topic_slug": "nail-tools-and-prep",
+    "target_audience": "Global, Tier 1 countries",
+    "total_posts": 9,
+    "intent_breakdown": {
+      "informational": 3,
+      "inspirational": 0,
+      "tutorial": 4,
+      "comparison": 2,
+      "seasonal_trend": 0
+    },
+    "pillar_post_slug": "nail-prep-steps",
+    "created_date": "2026-07-26"
+  },
+  "existing_site_posts_excluded": [],
+  "posts": [
+    {
+      "post_id": 1,
+      "role": "pillar",
+      "title": "How to Prep Your Nails Before Any Manicure: The Complete Step-by-Step Guide",
+      "slug": "nail-prep-steps",
+      "primary_keyword": "how to prep nails before gel polish",
+      "intent": "informational",
+      "search_mode": "decision_mode",
+      "suggested_hook_trigger": "Trigger 1 — Curiosity Gap",
+      "search_demand_signals": [
+        "Google: multiple dedicated guides from Mylee, Manucurist, Pink Gellac, Beyond Polish all targeting 'how to prep nails for gel polish' step-by-step",
+        "PAA/related: 'do I need to dehydrate nails', 'why is my gel polish peeling', 'how to make manicure last longer' cluster around this exact query"
+      ],
+      "why_included": "Broadest, highest-demand query in the cluster — every prep-adjacent post (dehydrator, drill bits, files) funnels into this single foundational routine query.",
+      "internal_links": {
+        "links_to": [
+          { "slug": "do-you-need-a-nail-dehydrator", "anchor_text": "whether a nail dehydrator is a necessary prep step", "type": "spoke" },
+          { "slug": "nail-dehydrator-vs-primer", "anchor_text": "the real difference between nail dehydrator and primer", "type": "spoke" },
+          { "slug": "nail-drill-bits-guide", "anchor_text": "complete guide to nail drill bits", "type": "spoke" },
+          { "slug": "nail-file-grit-guide", "anchor_text": "nail file grit guide for shaping and buffing", "type": "spoke" },
+          { "slug": "how-to-use-polygel", "anchor_text": "step-by-step polygel application tutorial", "type": "spoke" }
+        ],
+        "gallery_link": {
+          "url": "https://mirelleinspo.com/inspo/nail-prep-steps-inspiration-gallery",
+          "anchor_text": "nail prep steps inspiration gallery"
+        },
+        "receives_links_from": [
+          { "slug": "do-you-need-a-nail-dehydrator", "anchor_text": "full nail prep steps guide" },
+          { "slug": "nail-dehydrator-vs-primer", "anchor_text": "complete nail prep routine" },
+          { "slug": "how-to-use-polygel", "anchor_text": "nail prep steps before any enhancement" },
+          { "slug": "polygel-vs-acrylic-vs-gel", "anchor_text": "proper nail prep steps" },
+          { "slug": "how-to-remove-polygel-nails-at-home", "anchor_text": "nail prep steps for your next set" },
+          { "slug": "nail-drill-bits-guide", "anchor_text": "nail prep steps routine" },
+          { "slug": "nail-file-grit-guide", "anchor_text": "full nail prep steps guide" },
+          { "slug": "nail-drill-speed-guide", "anchor_text": "complete nail prep steps" }
+        ]
+      },
+      "status": "approved"
+    },
+    {
+      "post_id": 2,
+      "role": "spoke",
+      "title": "Do You Need a Nail Dehydrator? What It Does and When to Use It",
+      "slug": "do-you-need-a-nail-dehydrator",
+      "primary_keyword": "what does a nail dehydrator do",
+      "intent": "informational",
+      "search_mode": "decision_mode",
+      "suggested_hook_trigger": "Trigger 1 — Curiosity Gap",
+      "search_demand_signals": [
+        "Google: dedicated articles from VBP, Beautifully Alive, Pure Spa Direct, Shi Professionals, Erica's ATA all answering 'what does a nail dehydrator do' and 'do you need one'",
+        "Retail listings (Walmart, eBay) show high commercial + informational search volume around 'nail prep dehydrator' bundles"
+      ],
+      "why_included": "Direct, frequently-asked informational query with no existing site coverage — validated on 2+ independent sources plus retail search demand.",
+      "internal_links": {
+        "links_to": [
+          { "slug": "nail-prep-steps", "anchor_text": "full nail prep steps guide", "type": "pillar" },
+          { "slug": "nail-dehydrator-vs-primer", "anchor_text": "nail dehydrator vs primer explained", "type": "spoke" },
+          { "slug": "how-to-use-polygel", "anchor_text": "polygel application tutorial", "type": "spoke" },
+          { "slug": "nail-file-grit-guide", "anchor_text": "nail file grit guide", "type": "spoke" }
+        ],
+        "receives_links_from": [
+          { "slug": "nail-prep-steps", "anchor_text": "whether a nail dehydrator is a necessary prep step" },
+          { "slug": "nail-dehydrator-vs-primer", "anchor_text": "what a nail dehydrator actually does" }
+        ]
+      },
+      "status": "approved"
+    },
+    {
+      "post_id": 3,
+      "role": "spoke",
+      "title": "Nail Dehydrator vs Primer: Do You Really Need Both?",
+      "slug": "nail-dehydrator-vs-primer",
+      "primary_keyword": "nail dehydrator vs primer",
+      "intent": "comparison",
+      "search_mode": "decision_mode",
+      "suggested_hook_trigger": "Trigger 1 — Curiosity Gap",
+      "search_demand_signals": [
+        "Google: F.O.X Nails USA, Nail Style Lab, Artistic Touch Academy, DeEnterprises all publish dedicated 'dehydrator vs primer' comparison content",
+        "Recurring PAA-style question across sources: 'do I need a dehydrator if I use primer' / 'are they interchangeable'"
+      ],
+      "why_included": "Clear comparison/decision-mode query distinct from the standalone 'what does a dehydrator do' informational post — validated on 4+ sources.",
+      "internal_links": {
+        "links_to": [
+          { "slug": "nail-prep-steps", "anchor_text": "complete nail prep routine", "type": "pillar" },
+          { "slug": "do-you-need-a-nail-dehydrator", "anchor_text": "what a nail dehydrator actually does", "type": "spoke" },
+          { "slug": "nail-drill-bits-guide", "anchor_text": "nail drill bits guide", "type": "spoke" }
+        ],
+        "receives_links_from": [
+          { "slug": "do-you-need-a-nail-dehydrator", "anchor_text": "nail dehydrator vs primer explained" },
+          { "slug": "nail-prep-steps", "anchor_text": "the real difference between nail dehydrator and primer" }
+        ]
+      },
+      "status": "approved"
+    },
+    {
+      "post_id": 4,
+      "role": "spoke",
+      "title": "How to Use Polygel: Step-by-Step Application Tutorial for Beginners",
+      "slug": "how-to-use-polygel",
+      "primary_keyword": "how to use polygel",
+      "intent": "tutorial",
+      "search_mode": "how_to_execution_mode",
+      "suggested_hook_trigger": "Trigger 3 — Specificity/Numbers",
+      "search_demand_signals": [
+        "Google: Bustle, Vettsy, Easy Nail Tech, NAILSAMI, Paddie all publish dedicated 'how to do/use polygel at home' tutorials",
+        "YouTube: high-view tutorial titles exact-matching 'polygel nails at home' with dual-form and tip methods"
+      ],
+      "why_included": "High-volume execution-mode tutorial query — validated across blog + video demand signals, no existing site coverage.",
+      "internal_links": {
+        "links_to": [
+          { "slug": "nail-prep-steps", "anchor_text": "nail prep steps before any enhancement", "type": "pillar" },
+          { "slug": "polygel-vs-acrylic-vs-gel", "anchor_text": "how polygel compares to acrylic and gel", "type": "spoke" },
+          { "slug": "how-to-remove-polygel-nails-at-home", "anchor_text": "how to safely remove polygel nails at home", "type": "spoke" },
+          { "slug": "do-you-need-a-nail-dehydrator", "anchor_text": "nail dehydrator basics before applying polygel", "type": "spoke" }
+        ],
+        "receives_links_from": [
+          { "slug": "nail-prep-steps", "anchor_text": "step-by-step polygel application tutorial" },
+          { "slug": "polygel-vs-acrylic-vs-gel", "anchor_text": "how to apply polygel at home" },
+          { "slug": "how-to-remove-polygel-nails-at-home", "anchor_text": "how to apply polygel correctly" }
+        ]
+      },
+      "status": "approved"
+    },
+    {
+      "post_id": 5,
+      "role": "spoke",
+      "title": "Polygel vs Acrylic vs Gel: Which Nail Extension Should You Choose?",
+      "slug": "polygel-vs-acrylic-vs-gel",
+      "primary_keyword": "polygel vs acrylic vs gel",
+      "intent": "comparison",
+      "search_mode": "decision_mode",
+      "suggested_hook_trigger": "Trigger 1 — Curiosity Gap",
+      "search_demand_signals": [
+        "Google: NAILSAMI dedicated comparison guide plus adjacent gel-vs-acrylic comparison content from multiple outlets (AOL, Goodreads-syndicated)",
+        "Recurring forum/PAA framing: 'which lasts longer', 'which is best for beginners', 'which damages nails least'"
+      ],
+      "why_included": "Real three-way decision query distinct from generic gel-vs-acrylic content already covering only two options — validated on 3+ sources.",
+      "internal_links": {
+        "links_to": [
+          { "slug": "how-to-use-polygel", "anchor_text": "how to apply polygel at home", "type": "spoke" },
+          { "slug": "nail-prep-steps", "anchor_text": "proper nail prep steps", "type": "pillar" },
+          { "slug": "how-to-remove-polygel-nails-at-home", "anchor_text": "removing polygel safely at home", "type": "spoke" }
+        ],
+        "receives_links_from": [
+          { "slug": "how-to-use-polygel", "anchor_text": "how polygel compares to acrylic and gel" }
+        ]
+      },
+      "status": "approved"
+    },
+    {
+      "post_id": 6,
+      "role": "spoke",
+      "title": "How to Remove Polygel Nails at Home Without Damaging Your Natural Nails",
+      "slug": "how-to-remove-polygel-nails-at-home",
+      "primary_keyword": "how to remove polygel nails at home",
+      "intent": "tutorial",
+      "search_mode": "how_to_execution_mode",
+      "suggested_hook_trigger": "Trigger 3 — Specificity/Numbers",
+      "search_demand_signals": [
+        "Google: Vettsy, ND Nail Supply, Notpolish, LongHairPrettyNails, AimeiLi all publish dedicated polygel removal tutorials",
+        "Recurring query variants: 'remove polygel without drill', 'remove polygel without damage' across 6+ independent sources"
+      ],
+      "why_included": "Distinct execution-mode query from application tutorial — extremely high source count confirms strong, durable demand.",
+      "internal_links": {
+        "links_to": [
+          { "slug": "how-to-use-polygel", "anchor_text": "how to apply polygel correctly", "type": "spoke" },
+          { "slug": "nail-prep-steps", "anchor_text": "nail prep steps for your next set", "type": "pillar" },
+          { "slug": "polygel-vs-acrylic-vs-gel", "anchor_text": "polygel vs acrylic vs gel comparison", "type": "spoke" }
+        ],
+        "receives_links_from": [
+          { "slug": "how-to-use-polygel", "anchor_text": "how to safely remove polygel nails at home" },
+          { "slug": "polygel-vs-acrylic-vs-gel", "anchor_text": "removing polygel safely at home" }
+        ]
+      },
+      "status": "approved"
+    },
+    {
+      "post_id": 7,
+      "role": "spoke",
+      "title": "The Complete Guide to Nail Drill Bits: Types, Materials, and What Each One Is For",
+      "slug": "nail-drill-bits-guide",
+      "primary_keyword": "nail drill bits guide",
+      "intent": "informational",
+      "search_mode": "decision_mode",
+      "suggested_hook_trigger": "Trigger 1 — Curiosity Gap",
+      "search_demand_signals": [
+        "Google: ZSBeauty, Kiara Sky, BURDENTAL, Medicool, Erica's ATA, LeeNailSupply, NashlyNails all publish dedicated 'nail drill bits guide' content",
+        "Recurring PAA pattern: 'which bit for what', 'carbide vs diamond vs ceramic', 'what bit for natural nails'"
+      ],
+      "why_included": "Explicitly requested topic with exceptionally high source count (7+) — validated, high-authority pillar-adjacent spoke.",
+      "internal_links": {
+        "links_to": [
+          { "slug": "nail-file-grit-guide", "anchor_text": "nail file grit guide", "type": "spoke" },
+          { "slug": "nail-drill-speed-guide", "anchor_text": "correct nail drill speed for each bit", "type": "spoke" },
+          { "slug": "nail-prep-steps", "anchor_text": "nail prep steps routine", "type": "pillar" },
+          { "slug": "nail-dehydrator-vs-primer", "anchor_text": "nail dehydrator vs primer basics", "type": "spoke" }
+        ],
+        "receives_links_from": [
+          { "slug": "nail-prep-steps", "anchor_text": "complete guide to nail drill bits" },
+          { "slug": "nail-dehydrator-vs-primer", "anchor_text": "nail drill bits guide" },
+          { "slug": "nail-file-grit-guide", "anchor_text": "which drill bit to use for each task" },
+          { "slug": "nail-drill-speed-guide", "anchor_text": "choosing the right bit for each RPM range" }
+        ]
+      },
+      "status": "approved"
+    },
+    {
+      "post_id": 8,
+      "role": "spoke",
+      "title": "Nail File Grit Guide: What Each Number Means and When to Use It",
+      "slug": "nail-file-grit-guide",
+      "primary_keyword": "nail file grit guide",
+      "intent": "informational",
+      "search_mode": "decision_mode",
+      "suggested_hook_trigger": "Trigger 1 — Curiosity Gap",
+      "search_demand_signals": [
+        "Google: Maniology, InsightCosmetics, LondonTown, Dynamic Nail Supply, Franklins, TheBeautyFoodie all publish dedicated grit-guide content",
+        "Recurring exact-match query: 'what grit nail file should I use' / 'nail file grit guide'"
+      ],
+      "why_included": "Distinct tool from drill bits (manual files vs. e-file attachments) — high source count confirms real, separate demand; prevents merging two genuinely different tools into one post.",
+      "internal_links": {
+        "links_to": [
+          { "slug": "nail-drill-bits-guide", "anchor_text": "which drill bit to use for each task", "type": "spoke" },
+          { "slug": "nail-prep-steps", "anchor_text": "full nail prep steps guide", "type": "pillar" },
+          { "slug": "do-you-need-a-nail-dehydrator", "anchor_text": "nail dehydrator basics", "type": "spoke" }
+        ],
+        "receives_links_from": [
+          { "slug": "nail-prep-steps", "anchor_text": "nail file grit guide for shaping and buffing" },
+          { "slug": "nail-drill-bits-guide", "anchor_text": "nail file grit guide" }
+        ]
+      },
+      "status": "approved"
+    },
+    {
+      "post_id": 9,
+      "role": "spoke",
+      "title": "Nail Drill Speed Guide: What RPM to Use for Every Step",
+      "slug": "nail-drill-speed-guide",
+      "primary_keyword": "nail drill speed guide RPM",
+      "intent": "tutorial",
+      "search_mode": "how_to_execution_mode",
+      "suggested_hook_trigger": "Trigger 3 — Specificity/Numbers",
+      "search_demand_signals": [
+        "Google: DTK Nail Supply, Professional Beauty UK, F.O.X Nails USA, Katie Barnes Academy, thenailwiki, Daily Hand Tools all publish dedicated RPM/speed guides",
+        "Recurring exact-match query pattern: 'what speed for nail drill' / 'e-file RPM guide' across 6+ sources"
+      ],
+      "why_included": "Distinct execution/safety angle from the bits guide (speed + pressure technique, not bit selection) — validated on 6+ sources, prevents cannibalizing the bits post.",
+      "internal_links": {
+        "links_to": [
+          { "slug": "nail-drill-bits-guide", "anchor_text": "choosing the right bit for each RPM range", "type": "spoke" },
+          { "slug": "nail-prep-steps", "anchor_text": "complete nail prep steps", "type": "pillar" },
+          { "slug": "nail-file-grit-guide", "anchor_text": "nail file grit guide", "type": "spoke" }
+        ],
+        "receives_links_from": [
+          { "slug": "nail-drill-bits-guide", "anchor_text": "correct nail drill speed for each bit" }
+        ]
+      },
+      "status": "approved"
+    }
+  ],
+  "keyword_ownership_registry": {
+    "description": "Master list of all primary keywords — one per post, no overlaps, includes existing site posts",
+    "entries": [
+      { "primary_keyword": "how to prep nails before gel polish", "owned_by_slug": "nail-prep-steps", "owned_by_title": "How to Prep Your Nails Before Any Manicure: The Complete Step-by-Step Guide", "source": "new post" },
+      { "primary_keyword": "what does a nail dehydrator do", "owned_by_slug": "do-you-need-a-nail-dehydrator", "owned_by_title": "Do You Need a Nail Dehydrator? What It Does and When to Use It", "source": "new post" },
+      { "primary_keyword": "nail dehydrator vs primer", "owned_by_slug": "nail-dehydrator-vs-primer", "owned_by_title": "Nail Dehydrator vs Primer: Do You Really Need Both?", "source": "new post" },
+      { "primary_keyword": "how to use polygel", "owned_by_slug": "how-to-use-polygel", "owned_by_title": "How to Use Polygel: Step-by-Step Application Tutorial for Beginners", "source": "new post" },
+      { "primary_keyword": "polygel vs acrylic vs gel", "owned_by_slug": "polygel-vs-acrylic-vs-gel", "owned_by_title": "Polygel vs Acrylic vs Gel: Which Nail Extension Should You Choose?", "source": "new post" },
+      { "primary_keyword": "how to remove polygel nails at home", "owned_by_slug": "how-to-remove-polygel-nails-at-home", "owned_by_title": "How to Remove Polygel Nails at Home Without Damaging Your Natural Nails", "source": "new post" },
+      { "primary_keyword": "nail drill bits guide", "owned_by_slug": "nail-drill-bits-guide", "owned_by_title": "The Complete Guide to Nail Drill Bits: Types, Materials, and What Each One Is For", "source": "new post" },
+      { "primary_keyword": "nail file grit guide", "owned_by_slug": "nail-file-grit-guide", "owned_by_title": "Nail File Grit Guide: What Each Number Means and When to Use It", "source": "new post" },
+      { "primary_keyword": "nail drill speed guide RPM", "owned_by_slug": "nail-drill-speed-guide", "owned_by_title": "Nail Drill Speed Guide: What RPM to Use for Every Step", "source": "new post" }
+    ]
+  },
+  "merged_posts_log": [],
+  "killed_posts_log": [
+    {
+      "topic": "Nail dust collector — worth it / review",
+      "reason": "Real demand confirmed (2+ sources) but overlaps existing site post melodysusie-nail-dust-collector-review and skews product-review/e-commerce rather than tools-and-prep informational content — excluded to avoid cannibalization and keep transactional framing out of cluster."
+    }
+  ]
+}
