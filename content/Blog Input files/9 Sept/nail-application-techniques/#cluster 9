@@ -1,0 +1,423 @@
+{
+  "cluster_metadata": {
+    "cluster_topic": "Nail Application Techniques",
+    "topic_slug": "nail-application-techniques",
+    "target_audience": "Global, Tier 1 countries (US, UK, Canada, Australia)",
+    "total_posts": 9,
+    "intent_breakdown": {
+      "informational": 1,
+      "inspirational": 0,
+      "tutorial": 8,
+      "comparison": 0,
+      "seasonal_trend": 0
+    },
+    "intent_diversity_deviation": {
+      "rule": "cluster_map quality checklist requires at least 3 different intent types",
+      "actual": "This cluster contains 2 intent types (tutorial: 8, informational: 1)",
+      "reason": "Nail Application Techniques is inherently a how-to/execution topic cluster. Every validated keyword opportunity found during research (Phase 1-2) was tutorial/how_to_execution intent by nature of the sub-topic (acrylics, painting, shaping, dotting, stickers, glue, fake nails, homemade polish). The one informational post (nail glue troubleshooting) was the only genuine non-tutorial demand signal found. Forcing inspirational, comparison, or seasonal_trend posts into this cluster would have violated the higher-priority rule: 'NEVER propose a post to cover a topic without real search demand behind it.' Per explicit user instruction, this deviation is logged here rather than manufacturing low-demand posts to satisfy intent-diversity artificially.",
+      "approved_by_user": true
+    },
+    "pillar_post_slug": "how-to-do-acrylic-nails-at-home",
+    "created_date": "2026-07-26"
+  },
+
+  "existing_site_posts_excluded": [
+    {
+      "url": "https://mirelleinspo.com/blog/coffin-nails/coffin-acrylic-nails-tutorial",
+      "title": "How to Do Coffin Acrylic Nails at Home",
+      "inferred_primary_keyword": "how to do coffin acrylic nails at home",
+      "inferred_intent": "tutorial",
+      "exclusion_reason": "Already exists on mirelleinspo.com — keyword reserved (shape-specific acrylic tutorial, does not own the generic 'how to do acrylic nails at home' keyword)"
+    },
+    {
+      "url": "https://mirelleinspo.com/blog/coffin-nails/how-to-shape-coffin-nails",
+      "title": "How to Shape Coffin Nails at Home",
+      "inferred_primary_keyword": "how to shape coffin nails",
+      "inferred_intent": "tutorial",
+      "exclusion_reason": "Already exists on mirelleinspo.com — keyword reserved (shape-specific filing tutorial)"
+    },
+    {
+      "url": "https://mirelleinspo.com/blog/how-to-shape-almond-nails",
+      "title": "How to Shape Almond Nails at Home, No Drill Needed",
+      "inferred_primary_keyword": "how to shape almond nails",
+      "inferred_intent": "tutorial",
+      "exclusion_reason": "Already exists on mirelleinspo.com — keyword reserved (shape-specific filing tutorial)"
+    },
+    {
+      "url": "https://mirelleinspo.com/blog/how-to-do-ombre-nails-at-home",
+      "title": "How to Do Ombre Nails at Home That Last",
+      "inferred_primary_keyword": "how to do ombre nails at home",
+      "inferred_intent": "tutorial",
+      "exclusion_reason": "Already exists on mirelleinspo.com — keyword reserved"
+    },
+    {
+      "url": "https://mirelleinspo.com/blog/french-nail/how-to-do-french-manicure-at-home",
+      "title": "How to Do a French Manicure at Home",
+      "inferred_primary_keyword": "how to do a french manicure at home",
+      "inferred_intent": "tutorial",
+      "exclusion_reason": "Already exists on mirelleinspo.com — keyword reserved"
+    },
+    {
+      "url": "https://mirelleinspo.com/blog/fruit-nails/how-to-do-fruit-nail-art",
+      "title": "How to Do Fruit Nail Art at Home: 2026 Guide",
+      "inferred_primary_keyword": "how to do fruit nail art at home",
+      "inferred_intent": "tutorial",
+      "exclusion_reason": "Already exists on mirelleinspo.com — keyword reserved. Note: this post contains dead internal links to a 'nail art tools guide for beginners' and a 'beginner guide' that do not exist anywhere on the site — confirms real gap filled by post #4 (dotting tool guide) in this cluster."
+    },
+    {
+      "url": "https://mirelleinspo.com/blog/goth/how-to-do-goth-nails",
+      "title": "How to Do Goth Nails at Home: Step-by-Step",
+      "inferred_primary_keyword": "how to do goth nails at home",
+      "inferred_intent": "tutorial",
+      "exclusion_reason": "Already exists on mirelleinspo.com — keyword reserved"
+    },
+    {
+      "url": "https://mirelleinspo.com/blog/korean-nails/how-to-do-korean-nails",
+      "title": "How to Do Korean Nails at Home",
+      "inferred_primary_keyword": "how to do korean nails at home",
+      "inferred_intent": "tutorial",
+      "exclusion_reason": "Already exists on mirelleinspo.com — keyword reserved"
+    },
+    {
+      "url": "https://mirelleinspo.com/blog/jelly-nails/how-to-do-jelly-nails",
+      "title": "How to Do Jelly Nails at Home: Step-by-Step",
+      "inferred_primary_keyword": "how to do jelly nails at home",
+      "inferred_intent": "tutorial",
+      "exclusion_reason": "Already exists on mirelleinspo.com — keyword reserved"
+    },
+    {
+      "url": "https://mirelleinspo.com/topics/nail-art-guides",
+      "title": "Easy Nail Designs for Beginners: 24 Simple Ideas You Can Do (2026)",
+      "inferred_primary_keyword": "easy nail designs for beginners",
+      "inferred_intent": "inspirational",
+      "exclusion_reason": "Already exists on mirelleinspo.com — keyword reserved (design-idea roundup, not a technique-fundamentals post)"
+    },
+    {
+      "url": "https://mirelleinspo.com/blog/y2k-nails/easy-y2k-nails",
+      "title": "Easy Y2K Nails: Simple Designs Beginners Can Do",
+      "inferred_primary_keyword": "easy y2k nails",
+      "inferred_intent": "tutorial",
+      "exclusion_reason": "Already exists on mirelleinspo.com — keyword reserved"
+    }
+  ],
+
+  "posts": [
+    {
+      "post_id": 1,
+      "role": "pillar",
+      "title": "How to Do Acrylic Nails at Home: Complete Beginner's Guide",
+      "slug": "how-to-do-acrylic-nails-at-home",
+      "primary_keyword": "how to do acrylic nails at home",
+      "intent": "tutorial",
+      "search_mode": "how_to_execution_mode",
+      "suggested_hook_trigger": "Trigger 1 — Curiosity Gap",
+      "search_demand_signals": [
+        "Google/multi-blog: Sally Beauty, Naio Nails, RainyRoses, Glazeme, YouHaveStyle all publish dedicated step-by-step guides on this exact query",
+        "Quora: active Q&A thread with detailed multi-answer responses on 'how to do acrylic nails at home'",
+        "Site gap: mirelleinspo.com only owns the coffin-shape-specific acrylic tutorial, never the generic/broad version — zero cannibalization risk"
+      ],
+      "why_included": "Broadest, highest-demand keyword in the entire cluster with proven multi-source demand and zero existing site coverage of the generic technique. Natural pillar: covers the full acrylic process at a high level and can link out to shaping, painting, and glue as component sub-skills.",
+      "internal_links": {
+        "links_to": [
+          { "slug": "how-to-paint-your-nails-perfectly", "anchor_text": "how to paint your nails perfectly once your acrylics are on", "type": "spoke" },
+          { "slug": "how-to-shape-your-nails-at-home", "anchor_text": "how to shape your nails at home before applying tips", "type": "spoke" },
+          { "slug": "dotting-tool-nail-art-guide", "anchor_text": "dotting tool nail art for beginners", "type": "spoke" },
+          { "slug": "how-to-apply-nail-stickers", "anchor_text": "how to apply nail stickers over a finished set", "type": "spoke" },
+          { "slug": "how-to-make-your-own-nail-stickers", "anchor_text": "how to make your own nail stickers at home", "type": "spoke" },
+          { "slug": "nail-glue-alternatives-why-wont-it-dry", "anchor_text": "nail glue troubleshooting guide", "type": "spoke" },
+          { "slug": "how-to-make-fake-nails-at-home", "anchor_text": "how to make fake nails at home without a kit", "type": "spoke" },
+          { "slug": "how-do-you-make-nail-polish", "anchor_text": "how to make your own nail polish at home", "type": "spoke" }
+        ],
+        "gallery_link": {
+          "url": "https://mirelleinspo.com/inspo/how-to-do-acrylic-nails-at-home-inspiration-gallery",
+          "anchor_text": "acrylic nails inspiration gallery"
+        },
+        "receives_links_from": [
+          { "slug": "how-to-paint-your-nails-perfectly", "anchor_text": "how to do acrylic nails at home" },
+          { "slug": "how-to-shape-your-nails-at-home", "anchor_text": "how to do acrylic nails at home" },
+          { "slug": "dotting-tool-nail-art-guide", "anchor_text": "how to do acrylic nails at home" },
+          { "slug": "how-to-apply-nail-stickers", "anchor_text": "how to do acrylic nails at home" },
+          { "slug": "how-to-make-your-own-nail-stickers", "anchor_text": "how to do acrylic nails at home" },
+          { "slug": "nail-glue-alternatives-why-wont-it-dry", "anchor_text": "how to do acrylic nails at home" },
+          { "slug": "how-to-make-fake-nails-at-home", "anchor_text": "how to do acrylic nails at home" },
+          { "slug": "how-do-you-make-nail-polish", "anchor_text": "how to do acrylic nails at home" }
+        ]
+      },
+      "status": "approved"
+    },
+    {
+      "post_id": 2,
+      "role": "spoke",
+      "title": "How to Paint Your Nails Perfectly: The Technique Nobody Teaches",
+      "slug": "how-to-paint-your-nails-perfectly",
+      "primary_keyword": "how to paint your nails perfectly",
+      "intent": "tutorial",
+      "search_mode": "how_to_execution_mode",
+      "suggested_hook_trigger": "Trigger 1 — Curiosity Gap",
+      "search_demand_signals": [
+        "YouTube: multiple high-view tutorials (CutePolish 'HOW TO PAINT YOUR NAILS PERFECTLY | 10 HACKS & TIPS', HowToBasic, others) with repeat-published/updated versions",
+        "Instructables: detailed guide with active reader comments confirming ongoing search demand",
+        "Brand blogs: Young Nails and DeBelle Cosmetix both publish dedicated 'how to paint nails perfectly' guides"
+      ],
+      "why_included": "High-demand foundational query with zero existing coverage on mirelleinspo.com — every design tutorial on the site (fruit nails, goth nails, spring nail art) assumes this skill but never teaches it standalone.",
+      "internal_links": {
+        "links_to": [
+          { "slug": "how-to-do-acrylic-nails-at-home", "anchor_text": "how to do acrylic nails at home", "type": "pillar" },
+          { "slug": "how-to-shape-your-nails-at-home", "anchor_text": "how to shape your nails at home first", "type": "spoke" },
+          { "slug": "dotting-tool-nail-art-guide", "anchor_text": "dotting tool nail art for beginners", "type": "spoke" },
+          { "slug": "how-to-apply-nail-stickers", "anchor_text": "how to apply nail stickers over painted polish", "type": "spoke" }
+        ],
+        "receives_links_from": [
+          { "slug": "how-to-do-acrylic-nails-at-home", "anchor_text": "how to paint your nails perfectly once your acrylics are on" },
+          { "slug": "how-to-shape-your-nails-at-home", "anchor_text": "how to paint your nails perfectly" },
+          { "slug": "dotting-tool-nail-art-guide", "anchor_text": "how to paint your nails perfectly as a base skill" }
+        ]
+      },
+      "status": "approved"
+    },
+    {
+      "post_id": 3,
+      "role": "spoke",
+      "title": "How to Shape Your Nails at Home: A Filing Guide for Every Tool",
+      "slug": "how-to-shape-your-nails-at-home",
+      "primary_keyword": "how to shape your nails at home",
+      "intent": "tutorial",
+      "search_mode": "how_to_execution_mode",
+      "suggested_hook_trigger": "Trigger 1 — Curiosity Gap",
+      "search_demand_signals": [
+        "Site gap analysis: mirelleinspo.com has 8+ shape-specific filing guides (almond, coffin) that all assume generic filing fundamentals never taught in a standalone post",
+        "Multiple existing site posts (nails-for-small-hands, nails-for-wide-nail-beds, what-are-the-5-basic-nail-shapes) reference filing technique fundamentals without a canonical source to link to",
+        "Cross-referenced against grit/tool guidance already validated as real search behavior in existing coffin/almond shaping posts"
+      ],
+      "why_included": "Genuine fundamentals gap: every shape-specific post on the site (almond, coffin) assumes readers already know general filing technique, tool selection, and grit progression, but no post teaches this as its own topic.",
+      "internal_links": {
+        "links_to": [
+          { "slug": "how-to-do-acrylic-nails-at-home", "anchor_text": "how to do acrylic nails at home", "type": "pillar" },
+          { "slug": "how-to-paint-your-nails-perfectly", "anchor_text": "how to paint your nails perfectly", "type": "spoke" },
+          { "slug": "how-to-make-fake-nails-at-home", "anchor_text": "how to make fake nails at home without a kit", "type": "spoke" },
+          { "slug": "nail-glue-alternatives-why-wont-it-dry", "anchor_text": "nail glue troubleshooting guide", "type": "spoke" }
+        ],
+        "receives_links_from": [
+          { "slug": "how-to-do-acrylic-nails-at-home", "anchor_text": "how to shape your nails at home before applying tips" },
+          { "slug": "how-to-paint-your-nails-perfectly", "anchor_text": "how to shape your nails at home first" },
+          { "slug": "how-to-make-fake-nails-at-home", "anchor_text": "how to shape your nails at home" }
+        ]
+      },
+      "status": "approved"
+    },
+    {
+      "post_id": 4,
+      "role": "spoke",
+      "title": "Dotting Tool Nail Art: The Beginner's Guide to Every Design",
+      "slug": "dotting-tool-nail-art-guide",
+      "primary_keyword": "dotting tool nail art",
+      "intent": "tutorial",
+      "search_mode": "how_to_execution_mode",
+      "suggested_hook_trigger": "Trigger 3 — Specificity/Numbers",
+      "search_demand_signals": [
+        "Pinterest: multiple active boards with 180+ pins each specifically on 'dotting tool nail art' technique",
+        "Pink Gellac and Kentdo (brand blogs) both publish dedicated dotting-tool tutorials",
+        "Amazon: dedicated 'Best Sellers: Nail Dotting Tools' category confirms sustained product + technique search interest",
+        "Site gap: mirelleinspo.com's fruit-nails post explicitly links to a 'thorough nail art tools guide for beginners' that does not exist anywhere on the site — confirmed dead/phantom internal link"
+      ],
+      "why_included": "The single most-referenced tool across mirelleinspo.com's existing nail art content (monkey nails, cheetah print, fruit nails, spring florals, goth nails all mention dotting tools) yet the site has zero dedicated post teaching it — highest-leverage internal-link-repair opportunity in the cluster.",
+      "internal_links": {
+        "links_to": [
+          { "slug": "how-to-do-acrylic-nails-at-home", "anchor_text": "how to do acrylic nails at home", "type": "pillar" },
+          { "slug": "how-to-paint-your-nails-perfectly", "anchor_text": "how to paint your nails perfectly", "type": "spoke" },
+          { "slug": "how-to-apply-nail-stickers", "anchor_text": "how to apply nail stickers for precision designs", "type": "spoke" },
+          { "slug": "how-to-make-your-own-nail-stickers", "anchor_text": "how to make your own nail stickers at home", "type": "spoke" }
+        ],
+        "receives_links_from": [
+          { "slug": "how-to-do-acrylic-nails-at-home", "anchor_text": "dotting tool nail art for beginners" },
+          { "slug": "how-to-paint-your-nails-perfectly", "anchor_text": "dotting tool nail art for beginners" },
+          { "slug": "how-to-apply-nail-stickers", "anchor_text": "dotting tool nail art as a freehand alternative" }
+        ]
+      },
+      "status": "approved"
+    },
+    {
+      "post_id": 5,
+      "role": "spoke",
+      "title": "How to Apply Nail Stickers So They Look Hand-Painted",
+      "slug": "how-to-apply-nail-stickers",
+      "primary_keyword": "how to apply nail stickers",
+      "intent": "tutorial",
+      "search_mode": "how_to_execution_mode",
+      "suggested_hook_trigger": "Trigger 1 — Curiosity Gap",
+      "search_demand_signals": [
+        "Site cross-reference: mirelleinspo.com's fruit-nails and spring-floral-nails posts both contain detailed sticker-application technique buried in unrelated content, confirming real reader need for a standalone version",
+        "Multiple retail listings (Walmart semi-cured gel sticker products) include application instructions, confirming this is an active point of purchaser confusion/search",
+        "Distinct from sticker-making: validated as its own application-technique query separate from the DIY-making angle"
+      ],
+      "why_included": "A real, distinct technique query (application vs. making) with proven reader confusion visible in existing site content that currently answers it only as an aside within unrelated posts.",
+      "internal_links": {
+        "links_to": [
+          { "slug": "how-to-do-acrylic-nails-at-home", "anchor_text": "how to do acrylic nails at home", "type": "pillar" },
+          { "slug": "dotting-tool-nail-art-guide", "anchor_text": "dotting tool nail art as a freehand alternative", "type": "spoke" },
+          { "slug": "how-to-make-your-own-nail-stickers", "anchor_text": "how to make your own nail stickers at home", "type": "spoke" },
+          { "slug": "how-to-paint-your-nails-perfectly", "anchor_text": "how to paint your nails perfectly", "type": "spoke" }
+        ],
+        "receives_links_from": [
+          { "slug": "how-to-do-acrylic-nails-at-home", "anchor_text": "how to apply nail stickers over a finished set" },
+          { "slug": "dotting-tool-nail-art-guide", "anchor_text": "how to apply nail stickers for precision designs" },
+          { "slug": "how-to-make-your-own-nail-stickers", "anchor_text": "how to apply nail stickers once you've made your own" },
+          { "slug": "how-to-paint-your-nails-perfectly", "anchor_text": "how to apply nail stickers over painted polish" }
+        ]
+      },
+      "status": "approved"
+    },
+    {
+      "post_id": 6,
+      "role": "spoke",
+      "title": "How to Make Your Own Nail Stickers at Home",
+      "slug": "how-to-make-your-own-nail-stickers",
+      "primary_keyword": "how to make your own nail stickers",
+      "intent": "tutorial",
+      "search_mode": "how_to_execution_mode",
+      "suggested_hook_trigger": "Trigger 3 — Specificity/Numbers",
+      "search_demand_signals": [
+        "TikTok: multiple dedicated tutorial accounts (Nails by Ameya and others) with consistent view/engagement on 'how to make your own nail stickers'",
+        "Mixed Kreations: dedicated long-form blog post with detailed DIY methods and FAQ section",
+        "Walmart: published physical book 'Make Your Own Nail Decals' by Janelle Estep confirms sustained commercial + informational demand for this exact skill"
+      ],
+      "why_included": "Distinct maker/craft intent validated across three independent source types (social video, blog, published book) — clearly differentiated from the application-focused spoke.",
+      "internal_links": {
+        "links_to": [
+          { "slug": "how-to-do-acrylic-nails-at-home", "anchor_text": "how to do acrylic nails at home", "type": "pillar" },
+          { "slug": "how-to-apply-nail-stickers", "anchor_text": "how to apply nail stickers once you've made your own", "type": "spoke" },
+          { "slug": "dotting-tool-nail-art-guide", "anchor_text": "dotting tool nail art for beginners", "type": "spoke" },
+          { "slug": "how-do-you-make-nail-polish", "anchor_text": "how to make your own nail polish at home", "type": "spoke" }
+        ],
+        "receives_links_from": [
+          { "slug": "how-to-do-acrylic-nails-at-home", "anchor_text": "how to make your own nail stickers at home" },
+          { "slug": "dotting-tool-nail-art-guide", "anchor_text": "how to make your own nail stickers at home" },
+          { "slug": "how-to-apply-nail-stickers", "anchor_text": "how to make your own nail stickers at home" }
+        ]
+      },
+      "status": "approved"
+    },
+    {
+      "post_id": 7,
+      "role": "spoke",
+      "title": "Nail Glue: Alternatives, Why It Won't Dry, and What Actually Works",
+      "slug": "nail-glue-alternatives-why-wont-it-dry",
+      "primary_keyword": "nail glue alternatives",
+      "intent": "informational",
+      "search_mode": "decision_mode",
+      "suggested_hook_trigger": "Trigger 1 — Curiosity Gap",
+      "search_demand_signals": [
+        "TikTok: 11.7M+ posts under 'why is my nail glue not drying' discovery topic",
+        "SalonGeek (professional forum): active multi-year thread with detailed troubleshooting from working nail techs",
+        "Healthline and Kiara Sky (brand blog): both publish dedicated informational content on nail glue drying/removal issues"
+      ],
+      "why_included": "The only genuinely informational (non-tutorial) demand signal found in this cluster — massive troubleshooting-intent volume that current site content only mentions in passing (junk-nails, prom-nails posts reference nail glue without addressing failure modes). Framed as informational/troubleshooting rather than a product-comparison shopping guide to respect the no-transactional-intent rule.",
+      "internal_links": {
+        "links_to": [
+          { "slug": "how-to-do-acrylic-nails-at-home", "anchor_text": "how to do acrylic nails at home", "type": "pillar" },
+          { "slug": "how-to-make-fake-nails-at-home", "anchor_text": "how to make fake nails at home without a kit", "type": "spoke" },
+          { "slug": "how-to-shape-your-nails-at-home", "anchor_text": "how to shape your nails at home", "type": "spoke" }
+        ],
+        "receives_links_from": [
+          { "slug": "how-to-do-acrylic-nails-at-home", "anchor_text": "nail glue troubleshooting guide" },
+          { "slug": "how-to-shape-your-nails-at-home", "anchor_text": "nail glue troubleshooting guide" },
+          { "slug": "how-to-make-fake-nails-at-home", "anchor_text": "nail glue alternatives and troubleshooting" }
+        ]
+      },
+      "status": "approved"
+    },
+    {
+      "post_id": 8,
+      "role": "spoke",
+      "title": "How to Make Fake Nails at Home Without a Kit",
+      "slug": "how-to-make-fake-nails-at-home",
+      "primary_keyword": "how to make fake nails at home",
+      "intent": "tutorial",
+      "search_mode": "how_to_execution_mode",
+      "suggested_hook_trigger": "Trigger 2 — FOMO/Trend",
+      "search_demand_signals": [
+        "YouTube: 5+ independently published tutorials (tape nails, paper nails, plastic bottle nails, cotton pad nails) with sustained repeat uploads across multiple years, signaling an ongoing viral craft trend",
+        "RainyRoses: dedicated blog post with detailed steps and brand tie-in",
+        "Pinterest: active pin with click-through demand confirmed"
+      ],
+      "why_included": "A distinct, viral no-kit-required craft trend (household-material fake nails) clearly separate from acrylic application — validated across video and blog with consistently repeated content over time, signaling durable rather than one-off demand.",
+      "internal_links": {
+        "links_to": [
+          { "slug": "how-to-do-acrylic-nails-at-home", "anchor_text": "how to do acrylic nails at home", "type": "pillar" },
+          { "slug": "how-to-shape-your-nails-at-home", "anchor_text": "how to shape your nails at home", "type": "spoke" },
+          { "slug": "nail-glue-alternatives-why-wont-it-dry", "anchor_text": "nail glue alternatives and troubleshooting", "type": "spoke" },
+          { "slug": "how-to-paint-your-nails-perfectly", "anchor_text": "how to paint your nails perfectly", "type": "spoke" }
+        ],
+        "receives_links_from": [
+          { "slug": "how-to-do-acrylic-nails-at-home", "anchor_text": "how to make fake nails at home without a kit" },
+          { "slug": "how-to-shape-your-nails-at-home", "anchor_text": "how to make fake nails at home" },
+          { "slug": "nail-glue-alternatives-why-wont-it-dry", "anchor_text": "how to make fake nails at home without a kit" }
+        ]
+      },
+      "status": "approved"
+    },
+    {
+      "post_id": 9,
+      "role": "spoke",
+      "title": "How Do You Make Nail Polish? A DIY Recipe Guide",
+      "slug": "how-do-you-make-nail-polish",
+      "primary_keyword": "how do you make nail polish",
+      "intent": "tutorial",
+      "search_mode": "how_to_execution_mode",
+      "suggested_hook_trigger": "Trigger 3 — Specificity/Numbers",
+      "search_demand_signals": [
+        "Our Oily House and A Beautiful Mess: both dedicated long-form DIY recipe blog posts with detailed ratios and reader engagement",
+        "Byrdie (via The List): mainstream beauty publication coverage confirming mainstream informational demand",
+        "YouTube and KiwiCo: video tutorial plus a dedicated kids'-craft variant, confirming demand spans both adult DIY and craft/parenting audiences"
+      ],
+      "why_included": "Confirmed niche-but-real craft demand validated across 5+ independent source types (specialty blogs, mainstream beauty press, video, craft/kids brand) — a genuine DIY query with no existing site coverage.",
+      "internal_links": {
+        "links_to": [
+          { "slug": "how-to-do-acrylic-nails-at-home", "anchor_text": "how to do acrylic nails at home", "type": "pillar" },
+          { "slug": "how-to-make-your-own-nail-stickers", "anchor_text": "how to make your own nail stickers at home", "type": "spoke" },
+          { "slug": "how-to-paint-your-nails-perfectly", "anchor_text": "how to paint your nails perfectly", "type": "spoke" }
+        ],
+        "receives_links_from": [
+          { "slug": "how-to-do-acrylic-nails-at-home", "anchor_text": "how to make your own nail polish at home" },
+          { "slug": "how-to-make-your-own-nail-stickers", "anchor_text": "how to make your own nail polish at home" }
+        ]
+      },
+      "status": "approved"
+    }
+  ],
+
+  "keyword_ownership_registry": {
+    "description": "Master list of all primary keywords — one per post, no overlaps, includes existing site posts",
+    "entries": [
+      { "primary_keyword": "how to do acrylic nails at home", "owned_by_slug": "how-to-do-acrylic-nails-at-home", "owned_by_title": "How to Do Acrylic Nails at Home: Complete Beginner's Guide", "source": "new post" },
+      { "primary_keyword": "how to paint your nails perfectly", "owned_by_slug": "how-to-paint-your-nails-perfectly", "owned_by_title": "How to Paint Your Nails Perfectly: The Technique Nobody Teaches", "source": "new post" },
+      { "primary_keyword": "how to shape your nails at home", "owned_by_slug": "how-to-shape-your-nails-at-home", "owned_by_title": "How to Shape Your Nails at Home: A Filing Guide for Every Tool", "source": "new post" },
+      { "primary_keyword": "dotting tool nail art", "owned_by_slug": "dotting-tool-nail-art-guide", "owned_by_title": "Dotting Tool Nail Art: The Beginner's Guide to Every Design", "source": "new post" },
+      { "primary_keyword": "how to apply nail stickers", "owned_by_slug": "how-to-apply-nail-stickers", "owned_by_title": "How to Apply Nail Stickers So They Look Hand-Painted", "source": "new post" },
+      { "primary_keyword": "how to make your own nail stickers", "owned_by_slug": "how-to-make-your-own-nail-stickers", "owned_by_title": "How to Make Your Own Nail Stickers at Home", "source": "new post" },
+      { "primary_keyword": "nail glue alternatives", "owned_by_slug": "nail-glue-alternatives-why-wont-it-dry", "owned_by_title": "Nail Glue: Alternatives, Why It Won't Dry, and What Actually Works", "source": "new post" },
+      { "primary_keyword": "how to make fake nails at home", "owned_by_slug": "how-to-make-fake-nails-at-home", "owned_by_title": "How to Make Fake Nails at Home Without a Kit", "source": "new post" },
+      { "primary_keyword": "how do you make nail polish", "owned_by_slug": "how-do-you-make-nail-polish", "owned_by_title": "How Do You Make Nail Polish? A DIY Recipe Guide", "source": "new post" },
+      { "primary_keyword": "how to do coffin acrylic nails at home", "owned_by_slug": "coffin-acrylic-nails-tutorial", "owned_by_title": "How to Do Coffin Acrylic Nails at Home", "source": "existing site post" },
+      { "primary_keyword": "how to shape coffin nails", "owned_by_slug": "how-to-shape-coffin-nails", "owned_by_title": "How to Shape Coffin Nails at Home", "source": "existing site post" },
+      { "primary_keyword": "how to shape almond nails", "owned_by_slug": "how-to-shape-almond-nails", "owned_by_title": "How to Shape Almond Nails at Home, No Drill Needed", "source": "existing site post" },
+      { "primary_keyword": "how to do ombre nails at home", "owned_by_slug": "how-to-do-ombre-nails-at-home", "owned_by_title": "How to Do Ombre Nails at Home That Last", "source": "existing site post" },
+      { "primary_keyword": "how to do a french manicure at home", "owned_by_slug": "how-to-do-french-manicure-at-home", "owned_by_title": "How to Do a French Manicure at Home", "source": "existing site post" },
+      { "primary_keyword": "how to do fruit nail art at home", "owned_by_slug": "how-to-do-fruit-nail-art", "owned_by_title": "How to Do Fruit Nail Art at Home: 2026 Guide", "source": "existing site post" },
+      { "primary_keyword": "how to do goth nails at home", "owned_by_slug": "how-to-do-goth-nails", "owned_by_title": "How to Do Goth Nails at Home: Step-by-Step", "source": "existing site post" },
+      { "primary_keyword": "how to do korean nails at home", "owned_by_slug": "how-to-do-korean-nails", "owned_by_title": "How to Do Korean Nails at Home", "source": "existing site post" },
+      { "primary_keyword": "how to do jelly nails at home", "owned_by_slug": "how-to-do-jelly-nails", "owned_by_title": "How to Do Jelly Nails at Home: Step-by-Step", "source": "existing site post" },
+      { "primary_keyword": "easy nail designs for beginners", "owned_by_slug": "nail-art-guides", "owned_by_title": "Easy Nail Designs for Beginners: 24 Simple Ideas You Can Do (2026)", "source": "existing site post" },
+      { "primary_keyword": "easy y2k nails", "owned_by_slug": "easy-y2k-nails", "owned_by_title": "Easy Y2K Nails: Simple Designs Beginners Can Do", "source": "existing site post" }
+    ]
+  },
+
+  "merged_posts_log": [],
+
+  "killed_posts_log": [
+    {
+      "topic": "Tips for painting nails / tips for nail art (general nail art tips roundup)",
+      "reason": "No demand signal on 2+ sources for a standalone query — every source found (Egella, Who What Wear, Cameo College, RealShePower) treats 'tips' as a bolt-on section within a broader trends/design post, not as its own searched query with dedicated pages. This would have been a generic 'cover the topic' post with no proven independent searcher behind it, violating the core principle that topic coverage is a byproduct, not the goal. The genuine tip content (base coat, thin coats, top coat, common mistakes) is folded into posts #1 (acrylic pillar) and #2 (painting technique spoke) instead, where it serves real readers without duplicating keyword territory."
+    }
+  ]
+}
