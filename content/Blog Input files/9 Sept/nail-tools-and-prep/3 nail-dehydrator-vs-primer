@@ -1,0 +1,311 @@
+# INPUT FILE — nail-dehydrator-vs-primer
+## SINGLE SOURCE OF TRUTH FOR BLOG GEN AGENT. All POST_CONSTANTS are hardcoded — do not ask, adjust, or override.
+
+---
+
+## SECTION 2 — POST_CONSTANTS
+- slug: nail-dehydrator-vs-primer
+- topic_slug: nail-tools-and-prep
+- canonical: https://mirelleinspo.com/blog/nail-tools-and-prep/nail-dehydrator-vs-primer
+- post_type: spoke
+- intent: comparison
+- word_count: 1700 (±50 tolerance)
+- image_count: 1 (HARD OVERRIDE — hero only, zero body images. This overrides phase_2 rule_4 default of 5. Operator-directed override.)
+- show_inspo_gallery_link: false (HARD OVERRIDE — operator-directed)
+- template: split-left
+- hero_dimensions: 800x800
+- category: Nail Care & Prep
+- publish_date: 2026-07-27
+- author: jyoti-mirelle
+
+**OVERRIDE FLAG:** image_count and show_inspo_gallery_link are manual overrides, not rule-engine outputs. Comparison intent normally hardcodes 5 images per phase_2 rule_4. Operator has fixed this post at 1 image (hero only). Blog Gen Agent must NOT place any body images, image placement blocks, or "place_after" image assignments anywhere in the post body.
+
+---
+
+## SECTION 3 — CLUSTER SNAPSHOT
+- pillar_slug: nail-prep-steps
+- pillar_title: How to Prep Your Nails Before Any Manicure: The Complete Step-by-Step Guide
+- pillar_primary_keyword: how to prep nails before gel polish
+- this_post_slug: nail-dehydrator-vs-primer
+- this_post_role: spoke
+- keywords_to_avoid: how to prep nails before gel polish, what does a nail dehydrator do, how to use polygel, polygel vs acrylic vs gel, how to remove polygel nails at home, nail drill bits guide, nail file grit guide, nail drill speed guide RPM
+
+---
+
+## SECTION 4 — SERP ANALYSIS
+- competitor_gaps:
+  1. No source clearly resolves the acrylic-vs-gel/BIAB requirement split in one place — NailStyleLab claims "dehydrator alone is sufficient for gel/BIAB" while Artistic Touch and F.O.X both state gel/BIAB still needs primer (just non-acid, gentler). Confirmed on 3+ sources; this contradiction is unresolved anywhere. Our post resolves it directly.
+  2. "Can I substitute rubbing alcohol for dehydrator/primer" — confirmed on Quora (2 separate threads) and referenced in DeEnterprises content. No competitor gives a direct, confident answer.
+  3. Bonder as a third product (raises pH, distinct from both) — DeEnterprises covers this but no comparison post integrates where a bonder fits into the dehydrator-vs-primer decision. Confirmed 2 sources (DeEnterprises + Quora bonder thread).
+- missing_semantic_territory: "one-step" / "no-primer-needed" gel systems (Artistic Touch covers this uniquely — no other competitor addresses it, so it's differentiation territory, not a gap to fill from demand — flag as our unique addition, not audience-demanded).
+- our_strategic_approach: Resolve the acrylic-vs-gel confusion decisively by nail-enhancement-type rather than treating "do you need both" as one universal answer. Give a direct verdict per system (acrylic / hard gel / gel polish / BIAB) instead of the vague "it depends" most sources default to.
+- recommended_image_count_validation: N/A — image count fixed by operator override, not SERP-derived.
+
+---
+
+## SECTION 5 — AUDIENCE INTELLIGENCE
+- who_they_are: Mostly DIY/home gel users and beginner nail techs, mid-decision after buying one product and unsure if they need the second. Some are salon clients trying to understand what their tech is doing.
+- what_they_want_from_this_post: A direct yes/no per situation — not a general education piece. They want to know: "I have X, do I also need Y, for MY system (acrylic/gel/BIAB)?"
+- what_frustrates_them: Marketing language ("nail prep," "bonding agent") that doesn't specify chemical function; conflicting advice online (some say dehydrator alone is fine for gel, others insist both are mandatory); no clear guidance broken down by enhancement type.
+- top_5_pain_points:
+  1. Bought one product, not sure if the second is a genuine requirement or an upsell
+  2. Gel/BIAB failing (lifting) and can't tell if it's a dehydrator problem or primer problem
+  3. Confused whether acid vs non-acid primer matters for their specific system
+  4. Worried about skin irritation from acid primer, unsure if non-acid is "enough"
+  5. Uncertain about sequence/timing — how long between dehydrator and primer before it stops working
+- exact_user_phrases:
+  1. "do I need both primer and dehydrator for acrylic nails"
+  2. "can I just use a top coat after the dehydrator"
+  3. "what's the difference between nail primer and dehydrator"
+  4. "how to dehydrate my nails without using a dehydrating product"
+  5. "what is an additional substitute for primer nails"
+  6. "how to do acrylic nails without lifting but not using a primer"
+  7. "do you use dehydrator or primer first for gel nails"
+  8. "nail primer vs dehydrator, what's actually different"
+  9. "is a dehydrator alone sufficient for gel"
+  10. "why does my gel keep lifting even after dehydrator"
+- intent_content_signals:
+  1. Wants a direct verdict table, not just prose explanation
+  2. Responds to "quick answer" boxes upfront (AEO-style) before full detail
+  3. Wants troubleshooting framing tied to their actual symptom (lifting)
+  4. Values a clear sequence/timing breakdown (seconds matter to this reader)
+  5. Prefers content that resolves conflicting advice they've already seen elsewhere
+
+---
+
+## SECTION 6 — SEMANTIC KEYWORD DATA
+- primary_keyword: nail dehydrator vs primer
+- keyword_variations: dehydrator vs primer nails, nail primer vs dehydrator, dehydrator and primer difference, do you need dehydrator and primer, nail prep dehydrator vs primer, primer or dehydrator first
+- cluster_keywords: acid primer, non-acid primer, gel polish lifting, acrylic nail adhesion, nail plate moisture, chemical bond nail, bonding agent nails, BIAB prep, gel base coat adhesion, nail prep sequence, methacrylic acid primer, nail plate pH
+- lsi_terms: surface oils, moisture barrier, keratin bonding, etching nail surface, adhesive layer, prep sequence, dry manicure, lint-free wipe, tacky finish, evaporation time, matte nail surface, chemical adhesion, mechanical adhesion, retention, one-step prep system, HEMA-free primer
+- aeo_terms:
+  1. do I need both a nail dehydrator and a primer
+  2. can I use dehydrator without primer for gel nails
+  3. can I use primer without a dehydrator
+  4. is dehydrator alone enough for gel polish
+  5. what's the actual difference between nail dehydrator and primer
+  6. do you use dehydrator or primer first
+  7. is rubbing alcohol a substitute for nail dehydrator
+  8. do acrylic nails need both dehydrator and primer
+  9. why does gel polish lift even after using dehydrator
+  10. what is a one-step nail prep system
+- technical_terms: methacrylic acid, monomer, oligomer, keratin, pH etching, chemical bond, HEMA-free, non-acid primer
+- user_language: "peels within days," "greasy surface," "won't stick," "popped off," "sticks like double-sided tape," "canvas for your manicure," "unsung heroes," "prep is 80% of the result"
+
+---
+
+## SECTION 7 — VOICE AND AI QUERIES
+1. Do I need both a nail dehydrator and a primer, or just one?
+2. What does a nail dehydrator actually do to the nail plate?
+3. What does nail primer do that dehydrator doesn't?
+4. Can I use only a dehydrator for gel polish or BIAB?
+5. Can I use only primer without a dehydrator first?
+6. Is rubbing alcohol a real substitute for nail dehydrator?
+7. Do you apply dehydrator or primer first?
+8. How long can I wait between dehydrator and primer before it stops working?
+9. What's the difference between acid and non-acid primer?
+10. Do acrylic nails need a stronger primer than gel polish?
+11. Why does my gel still lift even though I used a dehydrator?
+12. Is a nail bonder the same thing as a primer?
+13. Can I skip primer if my nails aren't oily?
+14. What happens if I use dehydrator and primer in the wrong order?
+15. Do one-step gel systems really eliminate the need for separate primer?
+
+---
+
+## SECTION 8 — HOOK AND CTR
+- selected_trigger: Trigger 1 — Curiosity Gap
+- trigger_rationale: Reader suspects they're missing a step or wasting money on a redundant product; decision-mode audience needs resolution, not inspiration.
+- title: Nail Dehydrator vs Primer: Do You Really Need Both?
+- title_char_count: 45 (under 55-60 range — acceptable per formulas_by_page_type comparison pattern; front-loads keyword in first 3 words, no filler needed for this query type)
+- meta_description: Confused about dehydrator vs primer? See exactly which one your gel, acrylic, or BIAB system actually needs — and why skipping either causes lifting.
+- meta_char_count: 148
+- intro_hook_brief: Open on the specific, relatable failure moment (a lifted set days after application) and name the real cause: not the product, the prep. Use the curiosity gap — "the problem isn't what you think."
+- first_h2_hook_direction: Frame the first H2 as the exact voice-search query: "What does a nail dehydrator actually do?" — direct AEO-style answer immediately after.
+
+---
+
+## SECTION 9 — SEARCH JOURNEY
+- reader_arrival_state: Mid-decision, slightly anxious — has one product, unsure if the second is necessary, possibly already experiencing lifting and trying to diagnose why.
+- journey_arc:
+  1. Acknowledge the exact confusion (are these the same thing? do I need both?)
+  2. Explain what each product does, distinctly, with no overlap
+  3. Resolve by system type — acrylic, gel polish, BIAB — direct verdict each
+  4. Address the sequence/timing so they can act immediately
+  5. Close with a clear, confident recommendation, not "it depends"
+- promise_to_deliver: Tell the reader exactly whether they need one or both products for their specific nail system, with no hedging.
+- exit_state: Reader knows precisely what to buy (or not buy), in what order to apply it, and why their current lifting problem is happening — confident, not still guessing.
+
+---
+
+## SECTION 10 — CONTENT STRUCTURE
+- h1: Nail Dehydrator vs Primer: Do You Really Need Both?
+- h2_structure:
+  1. What Does a Nail Dehydrator Actually Do?
+  2. What Does Primer Do That Dehydrator Can't?
+  3. Nail Dehydrator vs Primer: The Real Difference (Comparison Table)
+  4. Do You Need Both for Gel Polish, Acrylic, and BIAB?
+  5. Acid vs Non-Acid Primer: Which One Do You Need?
+  6. What Happens If You Use Only One?
+  7. Correct Sequence and Timing (Don't Waste the Window)
+  8. Can Rubbing Alcohol Replace a Dehydrator?
+  9. FAQ: Quick Answers to Common Dehydrator and Primer Questions
+
+- word_budget:
+  - introduction: 220
+  - conclusion: 180
+  - H2-1 (What dehydrator does): 190
+  - H2-2 (What primer does): 190
+  - H2-3 (Comparison table + intro text): 160
+  - H2-4 (Gel/acrylic/BIAB verdict — highest complexity, core differentiation): 280
+  - H2-5 (Acid vs non-acid): 200
+  - H2-6 (Using only one): 180
+  - H2-7 (Sequence/timing): 170
+  - H2-8 (Rubbing alcohol substitute): 130
+  - H2-9 (FAQ): 200 (covers remaining unanswered AEO queries)
+
+---
+
+## SECTION 11 — INTERNAL LINKS
+1. url_or_slug: /blog/nail-tools-and-prep/nail-prep-steps
+   title: How to Prep Your Nails Before Any Manicure: The Complete Step-by-Step Guide
+   anchor_text: complete nail prep routine
+   placement_note: Introduction or H2-7 (sequence section) — natural reference to the full prep routine this post is one piece of
+   link_type: cluster-pillar
+
+2. url_or_slug: /blog/nail-tools-and-prep/do-you-need-a-nail-dehydrator
+   title: Do You Need a Nail Dehydrator? What It Does and When to Use It
+   anchor_text: what a nail dehydrator actually does
+   placement_note: H2-1 — deepen the dehydrator explanation for readers who want the standalone breakdown
+   link_type: cluster-spoke
+
+3. url_or_slug: /blog/nail-tools-and-prep/nail-drill-bits-guide
+   title: The Complete Guide to Nail Drill Bits: Types, Materials, and What Each One Is For
+   anchor_text: nail drill bits guide
+   placement_note: H2-4 (acrylic-specific section) — natural next-step for readers prepping acrylic sets
+   link_type: cluster-spoke
+
+4. url_or_slug: https://mirelleinspo.com/blog/coffin-nails/coffin-acrylic-nails-tutorial
+   title: How to Do Coffin Acrylic Nails at Home
+   anchor_text: how dehydrator and primer apply during a full acrylic tips application
+   placement_note: H2-4 (acrylic verdict section) — reinforces the acrylic-specific requirement with a full applied tutorial
+   link_type: cross-site
+
+Total: 4 internal links (within 4-6 cap).
+
+---
+
+## SECTION 12 — VOICE AND TONE
+- recommended_voice: Confident educator — resolves conflicting advice directly, no hedging
+- tone_characteristics: Direct verdicts over "it depends"; technical accuracy without jargon-dumping; reassuring but not condescending to beginners; mirrors the reader's actual frustration (conflicting info online) rather than lecturing.
+- language_style: Second person ("you"), short declarative sentences for verdicts, slightly longer explanatory sentences for the "why." Avoid rhetorical questions as filler — use them only as the AEO-style H2 framing.
+- audience_match: This reader has already read confusing/conflicting content elsewhere. The value is resolution, not more explanation — voice must sound certain and specific, not another hedge-everything source.
+
+---
+
+## SECTION 13 — EXTERNAL LINKS
+1. url: https://artistictouchnailacademy.com/nail-dehydrator-vs-nail-primer-which-do-you-actually-need/
+   context: Citing professional/technical authority on prep sequence and one-step systems
+   anchor_suggestion: professional nail educators
+2. url: https://foxnailsusa.com/blogs/news/nail-dehydrator-vs-primer
+   context: Citing industry source on acid vs non-acid primer application differences
+   anchor_suggestion: industry nail prep guidance
+
+---
+
+## SECTION 14 — EXECUTION PLAN
+
+### Block 1: Keyword Execution
+- primary_keyword: nail dehydrator vs primer
+- top_3_density_baseline: 9 mentions
+- total_mention_target: 11-12 mentions (baseline + 2-3)
+- first_100_words_plan:
+  - mention_1: sentence 2 of introduction — naming the debate directly after the lifting-failure hook
+  - mention_2: sentence 4-5 of introduction — framing the promise to resolve it by system type
+- first_half_target: 7 mentions — first 850 words (denser: H2-1 through H2-4)
+- second_half_target: 4-5 mentions — second 850 words (H2-5 through FAQ)
+- strong_tag_rule: Every mention wrapped in `<strong>` tags, zero exceptions. Scan after every H2.
+- keywords_to_avoid_active: how to prep nails before gel polish, what does a nail dehydrator do, how to use polygel, polygel vs acrylic vs gel, how to remove polygel nails at home, nail drill bits guide, nail file grit guide, nail drill speed guide RPM
+
+### Block 2: Word Budget
+- total_target: 1700 words (±50, never exceed 1750)
+- introduction: 220
+- conclusion: 180
+- h2_budgets:
+  1. What Does a Nail Dehydrator Actually Do? — 190 words, medium
+  2. What Does Primer Do That Dehydrator Can't? — 190 words, medium
+  3. Nail Dehydrator vs Primer: The Real Difference (Table) — 160 words, low
+  4. Do You Need Both for Gel Polish, Acrylic, and BIAB? — 280 words, high
+  5. Acid vs Non-Acid Primer: Which One Do You Need? — 200 words, medium
+  6. What Happens If You Use Only One? — 180 words, medium
+  7. Correct Sequence and Timing — 170 words, medium
+  8. Can Rubbing Alcohol Replace a Dehydrator? — 130 words, low
+  9. FAQ — 200 words, medium
+- tracking_rule: Track running total after every H2. Cut before moving on if over budget — never compensate later.
+
+### Block 3: Image Plan
+- total_images: 1 (HARD OVERRIDE)
+- hero_image: frontmatter only — NEVER in body
+- body_images: 0 — NO body images anywhere in this post. Do not create image placement blocks, "place after" notes, or any body image references.
+- image_type_rule: N/A — no body images exist for this post.
+- path_rule: /images/blog/nail-tools-and-prep/nail-dehydrator-vs-primer/filename.webp (hero only)
+
+### Block 4: Opening Technique Assignments
+- Introduction: Technique 1 (The Claim) — state directly that the problem is prep, not product
+- H2-1 (What dehydrator does): Technique 2 (varies — direct definition open)
+- H2-2 (What primer does): Technique 3 (The Reframe) — "if dehydrator cleans, primer is what..."
+- H2-3 (Comparison table): Technique 2 (direct statement leading into table)
+- H2-4 (Gel/acrylic/BIAB verdict): Technique 1 (The Claim) — lead with the direct verdict before explaining
+- H2-5 (Acid vs non-acid): Technique 3 (The Reframe)
+- H2-6 (Using only one): Technique 2
+- H2-7 (Sequence/timing): Technique 3
+- H2-8 (Rubbing alcohol): Technique 1 (The Claim) — direct yes/no answer first
+- Conclusion: Technique 1 (The Claim)
+- banned_opener_rule: Check every opener against banned_opening_approaches before writing second sentence. No two consecutive sections share a technique.
+
+### Block 5: Link Placements
+1. anchor_text: complete nail prep routine
+   full_url: /blog/nail-tools-and-prep/nail-prep-steps
+   place_in_section: Introduction
+   placement_context: Reference this post as one piece of the full prep sequence
+   link_type: cluster-pillar
+
+2. anchor_text: what a nail dehydrator actually does
+   full_url: /blog/nail-tools-and-prep/do-you-need-a-nail-dehydrator
+   place_in_section: What Does a Nail Dehydrator Actually Do?
+   placement_context: Point readers wanting the deeper standalone dehydrator breakdown
+   link_type: cluster-spoke
+
+3. anchor_text: nail drill bits guide
+   full_url: /blog/nail-tools-and-prep/nail-drill-bits-guide
+   place_in_section: Do You Need Both for Gel Polish, Acrylic, and BIAB?
+   placement_context: Natural next-step reference for acrylic prep readers
+   link_type: cluster-spoke
+
+4. anchor_text: how dehydrator and primer apply during a full acrylic tips application
+   full_url: https://mirelleinspo.com/blog/coffin-nails/coffin-acrylic-nails-tutorial
+   place_in_section: Do You Need Both for Gel Polish, Acrylic, and BIAB?
+   placement_context: Reinforce acrylic-specific requirement with applied tutorial context
+   link_type: cross-site
+
+### Block 6: AEO/GEO Plan
+- aeo_assignments:
+  1. "do I need both a nail dehydrator and a primer" → H1/Intro — direct 2-3 sentence answer immediately
+  2. "what does a nail dehydrator actually do" → H2-1 — direct answer paragraph before elaboration
+  3. "is dehydrator alone enough for gel polish" → H2-4 — direct verdict paragraph
+  4. "do you use dehydrator or primer first" → H2-7 — direct answer opening
+  5. "is rubbing alcohol a substitute for nail dehydrator" → H2-8 — direct yes/no opening
+- geo_entity_statements:
+  1. entity: Nail dehydrator (definition) → H2-1 — confident declarative definition sentence
+  2. entity: Acid primer vs non-acid primer → H2-5 — clear declarative distinction, extractable as citation
+  3. entity: BIAB (Builder in a Bottle) → H2-4 — brief declarative definition on first mention
+
+### Block 7: Active Constraints
+- em_dash_banned: No long em dash anywhere. Replace with comma, new sentence, parentheses, "but," or restructure.
+- banned_vocab_watch: "unlock," "elevate," "game-changer," "secret weapon," "unsung hero," "dive into," "level up"
+- british_english_active: colour, recognise, -ise, -our — every instance
+- keyword_density_reminder: Count mentions after every 2 H2 sections. First half denser (7 of 11-12 by word 850).
+- image_path_reminder: N/A for body — hero only per override.
+- internal_link_url_reminder: Full paths only. Cluster links = /blog/nail-tools-and-prep/[slug]. Cross-site = exact URL as discovered.
+- hero_image_reminder: Hero = frontmatter only, never in body.
+- strong_tag_reminder: Every primary keyword mention wrapped in `<strong>` tags. Scan after every paragraph.
