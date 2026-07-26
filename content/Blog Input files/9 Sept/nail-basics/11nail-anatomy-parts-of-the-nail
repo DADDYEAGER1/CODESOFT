@@ -1,0 +1,390 @@
+{
+  "section_1_file_authority": {
+    "statement": "THIS FILE IS THE SINGLE SOURCE OF TRUTH FOR THE BLOG GEN AGENT. All values in POST_CONSTANTS are hardcoded — Blog Gen Agent does not ask, adjust, or override them. All keywords, H2 structure, audience intelligence, internal links, and tone defined here must be followed exactly."
+  },
+
+  "section_2_post_constants": {
+    "slug": "nail-anatomy-parts-of-the-nail",
+    "topic_slug": "nail-basics",
+    "canonical": "https://mirelleinspo.com/blog/nail-basics/nail-anatomy-parts-of-the-nail",
+    "post_type": "spoke",
+    "intent": "informational",
+    "word_count": 1750,
+    "image_count": 1,
+    "show_inspo_gallery_link": false,
+    "template": "split-left",
+    "hero_dimensions": "800x800",
+    "category": "Nail Basics & Definitions",
+    "publish_date": "2026-07-27",
+    "author": "jyoti-mirelle"
+  },
+
+  "section_3_cluster_snapshot": {
+    "pillar_slug": "types-of-manicures-explained",
+    "pillar_title": "Types of Manicures Explained",
+    "pillar_primary_keyword": "types of manicures explained",
+    "this_post_slug": "nail-anatomy-parts-of-the-nail",
+    "this_post_role": "spoke",
+    "keywords_to_avoid": [
+      "what is hema nail products", "what is nail fungus", "best nail shape for your hands",
+      "how to find your nail shape", "difference between gel acrylic and natural nails",
+      "how do i know what nail shape suits my hands", "5 basic nail shapes",
+      "difference between manicure and pedicure", "how long do different types of manicures last",
+      "types of manicures explained", "what is a manicure", "what is gel polish how does it work",
+      "what is lacquer nail polish", "what is a nail wrap", "what is nail stamping",
+      "what are acrylic nails how do they work", "types of nail polish", "shellac vs gel",
+      "what is a cuticle", "what is the nail matrix", "what is an e-file"
+    ]
+  },
+
+  "section_4_serp_analysis": {
+    "blog_gen_instruction": "Use competitor gaps and missing semantic territory to fill what competitors miss. Our strategic approach is the angle for the introduction and conclusion.",
+    "competitor_gaps": [
+      "No competitor connects anatomy to real nail-tech client experience — none explain why cuticle vs eponychium confusion happens or why nail techs/students get conflicting textbook answers (confirmed on SalonGeek + Quora)",
+      "No competitor explains nail anatomy in a way that connects to everyday manicure decisions (why the matrix must never be drilled, why lunula size is genetic not a health signal, why nail bed width shapes flattery) — all treat it as pure biology disconnected from getting a manicure",
+      "Growth-rate specifics (fingernail vs toenail regrowth time) are present in only 1 of 3 competitors — under-covered as a standalone answerable fact"
+    ],
+    "missing_semantic_territory": [
+      "eponychium vs cuticle distinction explained in consumer (not just clinical) language",
+      "connection between nail anatomy and salon manicure practice (why techs avoid the matrix, why cuticle can be trimmed but eponychium can't)",
+      "genetics of the lunula vs health-signal myths, addressed directly and simply"
+    ],
+    "our_strategic_approach": "Cover the full anatomical structure with the same clinical accuracy as the medical sources, but translate every part into what it means for how a reader gets their nails done or cares for them — closing the gap between 'textbook diagram' and 'why my nail tech does what she does.' This differentiates from the purely clinical (MedicalNewsToday, HumanBodyPartsAnatomy) and purely trade-technical (BeautyLaunchpad) competitors by speaking to the everyday reader who searched this out of curiosity, not for nursing school.",
+    "recommended_image_count_validation": "SERP visuals are static labeled diagrams (illustration-only, not photography). Per input gen constraints, this post uses image_count: 1 (hero only) — no body images required; the anatomical explanation is carried by text and the hero image, consistent with an informational non-gallery post."
+  },
+
+  "section_5_audience_intelligence": {
+    "blog_gen_instruction": "This is your primary creative brief. Every paragraph written for this specific person with this specific intent. Satisfy them completely.",
+    "who_they_are": "A mix of two overlapping readers confirmed across sources: (1) nail tech students/apprentices who need to correctly name and distinguish structures for state board exams and client communication, and (2) curious general consumers who saw a term like 'lunula' or 'matrix' mentioned at a salon or online and want a clear, accurate explanation without a full dermatology textbook.",
+    "what_they_want_from_this_post": "A complete, clearly labeled walkthrough of every part of the nail — plate, matrix, lunula, cuticle, eponychium, nail bed, folds, hyponychium, free edge — explained in plain language but anatomically accurate, so they can correctly identify each part and understand what it actually does.",
+    "what_frustrates_them": "Conflicting definitions across sources (confirmed directly on SalonGeek — a student was told her course textbook was wrong about the eponychium/cuticle distinction) and overly clinical language that defines a structure but never explains why it matters day-to-day (e.g. why the matrix must not be damaged, why the eponychium should never be cut).",
+    "top_5_pain_points": [
+      "Confusing the cuticle with the eponychium — the single most repeated confusion across SalonGeek, professional trade sources, and general audience content",
+      "Not understanding why the lunula is visible on some nails and not others, and mistakenly treating an absent lunula as a health problem when it's usually just genetics",
+      "Uncertainty about which parts are living tissue (must never be cut) versus dead tissue (safe to trim) — cuticle vs eponychium again, but also nail plate vs nail bed",
+      "Not knowing why nail techs are careful around certain areas (the matrix specifically) during a manicure or e-file session",
+      "Wanting a single, complete picture of the whole nail unit — most content answers one part at a time and never assembles the full structure end to end"
+    ],
+    "exact_user_phrases": [
+      "what are nail structures and its parts",
+      "which parts of our nails are living",
+      "if our nail is made up of dead cells then how does it grow",
+      "how do nails work",
+      "what is the white part of a fingernail called",
+      "what is the lunula and its function",
+      "how many layers do our nails have",
+      "is the eponychium the cuticle",
+      "what are nail zones and where are they",
+      "blank diagram of a cross section of a nail"
+    ],
+    "intent_content_signals": [
+      "Readers respond to a clear labeled-diagram-style structure even in text form — numbered or clearly headed parts, not a single dense paragraph",
+      "Direct definitional openings work best per section: name the part, say what it is, then what it does",
+      "A living-vs-dead-tissue framing resolves multiple confusions at once and is worth using as a recurring thread",
+      "Genetics vs myth clarifications (lunula, nail strength) land well with this audience — they want myths corrected plainly",
+      "Should connect anatomy to practical manicure/nail-care relevance without becoming a how-to or buying guide"
+    ]
+  },
+
+  "section_6_semantic_keyword_data": {
+    "blog_gen_instruction": "Primary keyword in strong tags every mention. AEO terms trigger direct answer paragraphs. User language woven naturally. No term from keywords_to_avoid used as focus term.",
+    "primary_keyword": "nail anatomy parts of the nail",
+    "keyword_variations": [
+      "parts of the nail", "nail anatomy explained", "anatomy of the nail",
+      "structure of the nail", "nail unit anatomy", "fingernail anatomy",
+      "diagram of nail anatomy", "what makes up a nail"
+    ],
+    "cluster_keywords": [
+      "nail matrix", "nail plate", "nail bed", "lunula", "eponychium", "hyponychium",
+      "proximal nail fold", "lateral nail fold", "free edge", "nail root",
+      "onychodermal band", "perionychium", "nail groove", "keratin"
+    ],
+    "lsi_terms": [
+      "living vs dead nail tissue", "nail growth from the matrix", "half-moon shape at base of nail",
+      "protective seal of the cuticle", "nail plate keratinization", "nail bed blood supply",
+      "why the lunula is visible", "nail plate attachment to nail bed", "onychocytes",
+      "germinal matrix", "sterile matrix", "nail fold protection", "fingernail growth rate",
+      "toenail growth rate", "nail unit structure"
+    ],
+    "aeo_terms": [
+      "what are the main parts of a nail",
+      "what is the difference between the cuticle and the eponychium",
+      "why is the lunula visible on some nails and not others",
+      "which parts of the nail are living tissue",
+      "what does the nail matrix do",
+      "how fast do fingernails grow compared to toenails",
+      "what is the free edge of a nail",
+      "why shouldn't you cut your eponychium",
+      "what is the hyponychium and what does it do",
+      "what is the nail bed and how is it different from the nail plate"
+    ],
+    "technical_terms": [
+      "keratin", "onychocytes", "germinal matrix", "sterile matrix", "onychodermal band", "integumentary system"
+    ],
+    "user_language": [
+      "living parts of the nail", "dead cells growing", "white part of a fingernail",
+      "nail zones", "blank nail diagram", "the moon on your nail", "cuticle vs eponychium",
+      "how nails actually work", "layers of a nail"
+    ]
+  },
+
+  "section_7_voice_and_ai_queries": {
+    "blog_gen_instruction": "Answer every query directly in the relevant H2 section body. If a query cannot be addressed naturally in the body, route it to faqItems. No query left unanswered.",
+    "queries": [
+      "What are the main parts of a nail?",
+      "What is the nail matrix and what does it do?",
+      "Why is the lunula visible on some nails and not others?",
+      "Is the eponychium the same thing as the cuticle?",
+      "Which parts of the nail are living tissue and which are dead?",
+      "What is the nail bed and how is it different from the nail plate?",
+      "What is the free edge of the nail?",
+      "What is the hyponychium and why does it matter?",
+      "How fast do fingernails grow compared to toenails?",
+      "Why shouldn't you cut your eponychium?",
+      "What is the proximal nail fold?",
+      "What causes white spots on nails?",
+      "Can a damaged nail matrix heal?",
+      "What is the perionychium?",
+      "Why do some people have big lunulas and others don't?",
+      "What part of the nail actually grows new cells?",
+      "What is the difference between the nail root and the nail matrix?",
+      "Why do nail techs avoid the matrix area during manicures?"
+    ]
+  },
+
+  "section_8_hook_and_ctr": {
+    "blog_gen_instruction": "READ THIS SECTION BEFORE WRITING THE TITLE, META DESCRIPTION, INTRO, OR FIRST H2. The title and description are hardcoded here — use them exactly. The intro hook brief and first H2 hook direction are your creative brief for those specific elements. Do not deviate.",
+    "selected_trigger": "Trigger 1 — Curiosity Gap",
+    "trigger_rationale": "Audience research (SalonGeek, Quora) shows readers arrive already suspecting they've got a term wrong — cuticle vs eponychium confusion, uncertainty about which parts are alive — so a curiosity-gap hook that names the confusion directly matches their arrival state better than a numbers-led or trend-led angle.",
+    "title_draft": "Nail Anatomy: Parts of the Nail You're Getting Wrong",
+    "title_char_count": 56,
+    "meta_description_draft": "Confused about cuticle vs eponychium? This nail anatomy guide breaks down every part of the nail clearly, from the matrix to the free edge.",
+    "meta_char_count": 141,
+    "intro_hook_brief": "Open by naming the exact confusion the research surfaced — most people (including nail techs) mix up the cuticle and eponychium, and get anatomy explanations that are either too clinical or too vague. Promise a complete, correctly labeled walkthrough of the entire nail unit.",
+    "first_h2_hook_direction": "Frame the first H2 as the foundational orientation question a reader would actually type — something like 'What are the main parts of a nail?' — answered as a direct overview before the post breaks each part down individually."
+  },
+
+  "section_9_search_journey": {
+    "blog_gen_instruction": "This is the emotional contract with the reader. Every section of the post must honour the promise made. Read this before writing any section. If a paragraph breaks the journey arc — rewrite it.",
+    "reader_arrival_state": "Curious but slightly unsure of themselves — they've encountered a nail-anatomy term (often cuticle vs eponychium) that didn't match what they thought they knew, and want a definitive, correctly labeled explanation.",
+    "journey_arc": [
+      "Land on the shared confusion (cuticle/eponychium, living vs dead tissue) so the reader feels seen, not talked down to",
+      "Get oriented with a full overview of the nail unit's parts before any single term is defined in depth",
+      "Move through each structure in a logical distal-to-proximal or plate-to-root order, resolving the living-vs-dead distinction as it recurs",
+      "Land on the matrix and lunula sections, which carry the most 'aha' value (genetics vs myths, why it must be protected)",
+      "Close with the practical payoff: knowing this changes how they see their own manicures and nail care"
+    ],
+    "promise_to_deliver": "A complete, accurately labeled explanation of every part of the nail that resolves the cuticle/eponychium confusion and the living-vs-dead tissue question definitively.",
+    "exit_state": "Confident they can now correctly name and explain every part of their own nail, and understand why certain areas (matrix, eponychium) deserve extra care."
+  },
+
+  "section_10_content_structure": {
+    "blog_gen_instruction": "This H2 structure is research-driven and must be followed exactly. Do not rename, reorder, or remove H2s without user instruction. Word budget per section is set — follow it. H3s may be added at editorial discretion.",
+    "h1": "Nail Anatomy: The Parts of Your Nail Explained",
+    "h2_structure": [
+      "What Are the Main Parts of a Nail?",
+      "The Nail Plate: Your Nail's Hard Outer Shell",
+      "The Nail Matrix: Where Your Nail Actually Grows From",
+      "The Lunula: Why That Little Moon Isn't the Same on Everyone",
+      "Cuticle vs Eponychium: The Confusion, Finally Explained",
+      "The Nail Bed and Nail Folds: The Support System",
+      "The Hyponychium and Free Edge: The Nail's Final Stretch",
+      "Which Parts of Your Nail Are Actually Alive?",
+      "Why Nail Anatomy Actually Matters for Your Manicures"
+    ],
+    "word_budget": {
+      "introduction": "220 words",
+      "conclusion": "180 words",
+      "per_h2": [
+        {"heading": "What Are the Main Parts of a Nail?", "words": 160},
+        {"heading": "The Nail Plate: Your Nail's Hard Outer Shell", "words": 180},
+        {"heading": "The Nail Matrix: Where Your Nail Actually Grows From", "words": 220},
+        {"heading": "The Lunula: Why That Little Moon Isn't the Same on Everyone", "words": 190},
+        {"heading": "Cuticle vs Eponychium: The Confusion, Finally Explained", "words": 230},
+        {"heading": "The Nail Bed and Nail Folds: The Support System", "words": 180},
+        {"heading": "The Hyponychium and Free Edge: The Nail's Final Stretch", "words": 160},
+        {"heading": "Which Parts of Your Nail Are Actually Alive?", "words": 150},
+        {"heading": "Why Nail Anatomy Actually Matters for Your Manicures", "words": 130}
+      ]
+    }
+  },
+
+  "section_11_internal_links": {
+    "blog_gen_instruction": "Every link below must appear in the post. Cluster links use anchor texts verbatim — do not rewrite. Cross-site links use the provided descriptive anchor. Place each link where the placement note says — woven naturally into prose, never as a standalone CTA. Total internal links must not exceed 6.",
+    "all_internal_links": [
+      {
+        "url_or_slug": "/blog/nail-basics/types-of-manicures-explained",
+        "title": "Types of Manicures Explained",
+        "anchor_text": "types of manicures explained",
+        "placement_note": "Introduction or conclusion, as the cluster pillar reference point",
+        "link_type": "cluster-pillar"
+      },
+      {
+        "url_or_slug": "/blog/nail-basics/what-is-a-cuticle",
+        "title": "What Is a Cuticle?",
+        "anchor_text": "what a cuticle actually is",
+        "placement_note": "In the 'Cuticle vs Eponychium' H2, immediately after distinguishing the two, for readers who want the deeper cuticle-specific explainer",
+        "link_type": "cluster-spoke"
+      },
+      {
+        "url_or_slug": "/blog/nail-basics/what-is-the-nail-matrix",
+        "title": "What Is the Nail Matrix?",
+        "anchor_text": "what the nail matrix is",
+        "placement_note": "In the 'Nail Matrix' H2, after the initial definition, linking to the dedicated deep-dive post",
+        "link_type": "cluster-spoke"
+      },
+      {
+        "url_or_slug": "/blog/nail-basics/what-is-an-e-file",
+        "title": "What Is an E-File (Nail Drill)?",
+        "anchor_text": "what an e-file nail drill is",
+        "placement_note": "In the final H2 on manicure relevance, where the post explains why techs are careful near the matrix during filing",
+        "link_type": "cluster-spoke"
+      },
+      {
+        "url_or_slug": "https://mirelleinspo.com/blog/nail-shape-for-hands/nails-for-wide-nail-beds",
+        "title": "Nails for Wide Nail Beds: Every Shape Worth Knowing",
+        "anchor_text": "how nail bed width affects which shapes flatter your hands",
+        "placement_note": "In the 'Nail Bed and Nail Folds' H2, connecting the anatomical nail bed explanation to a practical shape-flattery guide",
+        "link_type": "cross-site"
+      },
+      {
+        "url_or_slug": "https://mirelleinspo.com/blog/french-nails/reverse-french-manicure",
+        "title": "Reverse French Manicure: What It Is and How to Nail It",
+        "anchor_text": "how the reverse french manicure design plays on the lunula's natural shape",
+        "placement_note": "In the 'Lunula' H2, as a real design application of the structure just explained",
+        "link_type": "cross-site"
+      }
+    ]
+  },
+
+  "section_12_voice_tone": {
+    "blog_gen_instruction": "This is the voice for this specific post. Layer on top of Mirellé editorial framework. Do not default to generic AI tone.",
+    "recommended_voice": "Confident educator",
+    "tone_characteristics": [
+      "Clear and precise without being clinical or textbook-dry",
+      "Corrects common misconceptions directly and plainly, without condescension",
+      "Uses 'you' and 'your nail' to keep the anatomy grounded in the reader's own hands",
+      "Draws light connections to real manicure moments without turning into a how-to",
+      "Confident on facts, especially where myths need correcting (lunula size, white spots)"
+    ],
+    "language_style": "Direct declarative sentences for definitions, occasional rhetorical framing to introduce a misconception before correcting it, second person throughout, minimal jargon left unexplained.",
+    "audience_match": "This voice suits both the nail-tech-student reader who needs accurate, exam-ready definitions and the curious consumer who wants clarity without condescension — confident educator tone serves both without alienating either."
+  },
+
+  "section_13_external_links": {
+    "blog_gen_instruction": "Include all external links where indicated. Supports E-E-A-T. Use anchor suggestion as guide — write naturally around it.",
+    "links": [
+      {
+        "url": "https://my.clevelandclinic.org/health/body/nail-anatomy",
+        "context": "When defining the overall nail unit structure or citing a medical authority on nail parts and function",
+        "anchor_suggestion": "Cleveland Clinic's nail anatomy overview"
+      },
+      {
+        "url": "https://www.ncbi.nlm.nih.gov/books/NBK534769/",
+        "context": "When citing matrix/nail bed growth mechanics or matrix contribution percentages",
+        "anchor_suggestion": "a peer-reviewed anatomy reference on nail structure"
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/Lunula_(anatomy)",
+        "context": "When explaining the lunula's visibility variation and genetic basis",
+        "anchor_suggestion": "further reading on the lunula's structure"
+      }
+    ]
+  },
+
+  "section_14_execution_plan": {
+    "blog_gen_instruction": "READ THIS SECTION FIRST. Lock every value. Execute exactly. Do not recalculate, do not adjust, do not deviate.",
+    "block_1_keyword_execution": {
+      "primary_keyword": "nail anatomy parts of the nail",
+      "top_3_density_baseline": 5,
+      "total_mention_target": 7,
+      "first_100_words_plan": {
+        "rule": "Primary keyword MUST appear TWICE in the first 100 words. Mandatory. No exceptions.",
+        "mention_1": "sentence 1-2 of introduction — while naming the cuticle/eponychium confusion the post is about to resolve",
+        "mention_2": "sentence 3-4 of introduction — while promising the complete walkthrough of every part of the nail"
+      },
+      "first_half_target": "4 mentions — first ~875 words. Run denser in first half.",
+      "second_half_target": "3 mentions — second ~875 words",
+      "strong_tag_rule": "EVERY single mention of the primary keyword — all 7 of them — wrapped in <strong> tags. No exceptions. Catch each one as it is written. Scan after every paragraph.",
+      "keywords_to_avoid_active": "Full list from section_3 — never used as focus terms anywhere in the post"
+    },
+    "block_2_word_budget": {
+      "total_target": "1750 words — +/-50 words tolerance, never exceed",
+      "introduction": "220 words",
+      "conclusion": "180 words",
+      "h2_budgets": [
+        {"heading": "What Are the Main Parts of a Nail?", "budget": "160 words", "complexity": "low"},
+        {"heading": "The Nail Plate: Your Nail's Hard Outer Shell", "budget": "180 words", "complexity": "low"},
+        {"heading": "The Nail Matrix: Where Your Nail Actually Grows From", "budget": "220 words", "complexity": "high"},
+        {"heading": "The Lunula: Why That Little Moon Isn't the Same on Everyone", "budget": "190 words", "complexity": "medium"},
+        {"heading": "Cuticle vs Eponychium: The Confusion, Finally Explained", "budget": "230 words", "complexity": "high"},
+        {"heading": "The Nail Bed and Nail Folds: The Support System", "budget": "180 words", "complexity": "medium"},
+        {"heading": "The Hyponychium and Free Edge: The Nail's Final Stretch", "budget": "160 words", "complexity": "low"},
+        {"heading": "Which Parts of Your Nail Are Actually Alive?", "budget": "150 words", "complexity": "medium"},
+        {"heading": "Why Nail Anatomy Actually Matters for Your Manicures", "budget": "130 words", "complexity": "low"}
+      ],
+      "tracking_rule": "Track running word total at the end of every H2 section. If a section is running over budget — cut before moving to the next section. Do not compensate later."
+    },
+    "block_3_image_plan": {
+      "total_images": 1,
+      "hero_image": "frontmatter only — NEVER appears in post body",
+      "body_images": 0,
+      "assignments": [],
+      "image_type_rule": "This post uses hero image only, per locked constraint (show_inspo_gallery_link: false, image_count: 1). No body images are placed. If the hero depicts nail anatomy, it should be a clean labeled cross-section illustration style image, not a manicure/inspiration photo.",
+      "path_rule": "/images/blog/nail-basics/nail-anatomy-parts-of-the-nail/filename.webp — topic_slug in path, slug folder, leading slash"
+    },
+    "block_4_opening_technique_assignments": {
+      "rule": "No two consecutive sections use the same technique. Conclusion = Technique 1 or 3 only.",
+      "assignments": [
+        {"section": "Introduction", "technique": "Technique 1 — The Claim (name the cuticle/eponychium confusion directly as fact)"},
+        {"section": "What Are the Main Parts of a Nail?", "technique": "Technique 2 — The Direct Answer (answer the orientation question immediately)"},
+        {"section": "The Nail Plate: Your Nail's Hard Outer Shell", "technique": "Technique 3 — The Reframe (most people think the nail plate is 'just keratin' — reframe what it actually does)"},
+        {"section": "The Nail Matrix: Where Your Nail Actually Grows From", "technique": "Technique 1 — The Claim (state plainly this is the most important structure in the nail unit)"},
+        {"section": "The Lunula: Why That Little Moon Isn't the Same on Everyone", "technique": "Technique 3 — The Reframe (correct the health-signal myth)"},
+        {"section": "Cuticle vs Eponychium: The Confusion, Finally Explained", "technique": "Technique 1 — The Claim (state the distinction definitively upfront)"},
+        {"section": "The Nail Bed and Nail Folds: The Support System", "technique": "Technique 2 — The Direct Answer"},
+        {"section": "The Hyponychium and Free Edge: The Nail's Final Stretch", "technique": "Technique 3 — The Reframe"},
+        {"section": "Which Parts of Your Nail Are Actually Alive?", "technique": "Technique 1 — The Claim"},
+        {"section": "Conclusion", "technique": "Technique 3 — The Reframe"}
+      ],
+      "banned_opener_rule": "Check every opener against banned_opening_approaches in blog gen prompt before writing the second sentence"
+    },
+    "block_5_link_placements": {
+      "rule": "Every link placed exactly where specified. Anchor texts used verbatim — never rewritten. Links woven into prose naturally — never standalone CTAs.",
+      "links": [
+        {"anchor_text": "types of manicures explained", "full_url": "/blog/nail-basics/types-of-manicures-explained", "place_in_section": "Introduction or Conclusion", "placement_context": "As the cluster's foundational reference point", "link_type": "cluster-pillar"},
+        {"anchor_text": "what a cuticle actually is", "full_url": "/blog/nail-basics/what-is-a-cuticle", "place_in_section": "Cuticle vs Eponychium: The Confusion, Finally Explained", "placement_context": "Immediately after distinguishing cuticle from eponychium, for readers wanting the dedicated deep dive", "link_type": "cluster-spoke"},
+        {"anchor_text": "what the nail matrix is", "full_url": "/blog/nail-basics/what-is-the-nail-matrix", "place_in_section": "The Nail Matrix: Where Your Nail Actually Grows From", "placement_context": "After the initial matrix definition, pointing to the standalone deep dive", "link_type": "cluster-spoke"},
+        {"anchor_text": "what an e-file nail drill is", "full_url": "/blog/nail-basics/what-is-an-e-file", "place_in_section": "Why Nail Anatomy Actually Matters for Your Manicures", "placement_context": "Explaining why nail techs are cautious with drills near the matrix", "link_type": "cluster-spoke"},
+        {"anchor_text": "how nail bed width affects which shapes flatter your hands", "full_url": "https://mirelleinspo.com/blog/nail-shape-for-hands/nails-for-wide-nail-beds", "place_in_section": "The Nail Bed and Nail Folds: The Support System", "placement_context": "Connecting the anatomical nail bed definition to a practical shape guide", "link_type": "cross-site"},
+        {"anchor_text": "how the reverse french manicure design plays on the lunula's natural shape", "full_url": "https://mirelleinspo.com/blog/french-nails/reverse-french-manicure", "place_in_section": "The Lunula: Why That Little Moon Isn't the Same on Everyone", "placement_context": "Real design application of the lunula structure just explained", "link_type": "cross-site"}
+      ]
+    },
+    "block_6_aeo_geo_plan": {
+      "aeo_assignments": [
+        {"aeo_term": "What are the main parts of a nail?", "assigned_to_section": "What Are the Main Parts of a Nail?", "execution": "Write a direct 2-3 sentence answer paragraph IMMEDIATELY after the H2 heading — before any elaboration."},
+        {"aeo_term": "What does the nail matrix do?", "assigned_to_section": "The Nail Matrix: Where Your Nail Actually Grows From", "execution": "Write a direct 2-3 sentence answer paragraph IMMEDIATELY after the H2 heading."},
+        {"aeo_term": "Why is the lunula visible on some nails and not others?", "assigned_to_section": "The Lunula: Why That Little Moon Isn't the Same on Everyone", "execution": "Write a direct 2-3 sentence answer paragraph IMMEDIATELY after the H2 heading."},
+        {"aeo_term": "Is the eponychium the same thing as the cuticle?", "assigned_to_section": "Cuticle vs Eponychium: The Confusion, Finally Explained", "execution": "Write a direct 2-3 sentence answer paragraph IMMEDIATELY after the H2 heading."},
+        {"aeo_term": "What is the nail bed and how is it different from the nail plate?", "assigned_to_section": "The Nail Bed and Nail Folds: The Support System", "execution": "Write a direct 2-3 sentence answer paragraph IMMEDIATELY after the H2 heading."},
+        {"aeo_term": "What is the hyponychium and why does it matter?", "assigned_to_section": "The Hyponychium and Free Edge: The Nail's Final Stretch", "execution": "Write a direct 2-3 sentence answer paragraph IMMEDIATELY after the H2 heading."},
+        {"aeo_term": "Which parts of the nail are living tissue?", "assigned_to_section": "Which Parts of Your Nail Are Actually Alive?", "execution": "Write a direct 2-3 sentence answer paragraph IMMEDIATELY after the H2 heading."}
+      ],
+      "geo_entity_statements": [
+        {"entity": "Nail matrix", "assigned_to_section": "The Nail Matrix: Where Your Nail Actually Grows From", "execution": "Write a clear declarative definition sentence: the nail matrix is the tissue beneath the base of the nail that produces new nail cells and determines nail thickness and growth."},
+        {"entity": "Eponychium", "assigned_to_section": "Cuticle vs Eponychium: The Confusion, Finally Explained", "execution": "Write a clear declarative definition: the eponychium is the living skin at the base of the nail that produces the cuticle and should never be cut."},
+        {"entity": "Lunula", "assigned_to_section": "The Lunula: Why That Little Moon Isn't the Same on Everyone", "execution": "Write a clear declarative definition: the lunula is the visible white crescent at the base of the nail, representing the distal portion of the nail matrix."}
+      ]
+    },
+    "block_7_active_constraints": {
+      "em_dash_banned": "Long em dash does not appear anywhere. If one forms while writing — stop, replace with: comma / new sentence / parentheses / but / restructure.",
+      "banned_vocab_watch": ["elevate", "unlock", "delve", "journey", "unleash", "game-changer", "seamless", "elevated"],
+      "british_english_active": "colour, recognise, -ise, -our — every instance, no exceptions",
+      "keyword_density_reminder": "After every 2 H2 sections — count current keyword mentions. Verify running total is on track to hit the hardcoded mention target (7 total). First half must run denser than second half. Adjust if needed.",
+      "image_path_reminder": "/images/blog/nail-basics/nail-anatomy-parts-of-the-nail/filename.webp — topic_slug in path always",
+      "internal_link_url_reminder": "Full correct paths only. Cluster links = /blog/nail-basics/[slug]. Cross-site links = exact URL as discovered. Never bare /slug.",
+      "hero_image_reminder": "Hero = frontmatter only. Never place hero image in body. This post has NO body images at all (image_count: 1).",
+      "strong_tag_reminder": "Every primary keyword mention = <strong> tags. Scan after every paragraph."
+    }
+  }
+}
