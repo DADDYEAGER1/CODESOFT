@@ -1,0 +1,189 @@
+CLUSTER MODE — cluster context loaded (nail-basics, post_id 2)
+
+# SECTION 1: FILE AUTHORITY
+THIS FILE IS THE SINGLE SOURCE OF TRUTH FOR THE BLOG GEN AGENT. All POST_CONSTANTS are hardcoded — do not ask, adjust, or override.
+
+# SECTION 2: POST_CONSTANTS
+- slug: what-is-a-manicure
+- topic_slug: nail-basics
+- canonical: https://mirelleinspo.com/blog/nail-basics/what-is-a-manicure
+- post_type: spoke
+- intent: informational
+- word_count: 1450
+- image_count: 1 (hero only — no body images)
+- show_inspo_gallery_link: false
+- template: split-left
+- hero_dimensions: 800x800
+- category: Nail Basics & Definitions
+- publish_date: 2026-07-27
+- author: jyoti-mirelle
+
+# SECTION 3: CLUSTER SNAPSHOT
+- pillar_slug: types-of-manicures-explained
+- pillar_title: Types of Manicures Explained
+- pillar_primary_keyword: types of manicures explained
+- this_post_slug: what-is-a-manicure
+- this_post_role: spoke
+- keywords_to_avoid: types of manicures explained, what is gel polish how does it work, what is lacquer nail polish, what is a nail wrap, what is nail stamping, what are acrylic nails how do they work, types of nail polish, shellac vs gel, what is a cuticle, nail anatomy parts of the nail, what is the nail matrix, what is an e-file, what is hema nail products, what is nail fungus, best nail shape for your hands, how to find your nail shape, difference between gel acrylic and natural nails, how do i know what nail shape suits my hands, 5 basic nail shapes, difference between manicure and pedicure, how long do different types of manicures last
+
+# SECTION 4: SERP ANALYSIS (via web_fetch — Wikipedia, LeSalon, Pandora Nail Spa)
+- competitor_gaps: (1) None explain the etymology/word origin in a consumer-friendly way — Wikipedia has it but buried in encyclopedic tone; (2) none address first-timer nervousness directly as its own moment, most bury reassurance inside process steps; (3) none clearly separate "what happens" from "why people get one" as distinct promises; (4) no post gives a clean man-vs-woman inclusivity note despite multiple sources mentioning both.
+- missing_semantic_territory: "manicure meaning," "manicure vs just painting nails," "is a manicure just polish," "history of manicures" (light touch), "what's included in a basic manicure" as a direct scannable list.
+- our_strategic_approach: Frame as the definitive foundational glossary answer — direct definition in first two sentences, then walk through what's actually included, why it's more than polish, and what a first-timer can expect. Written for the reader who has literally never had one and doesn't know the vocabulary yet (this is the entry point to the whole cluster).
+- top_3_word_count_estimates: Wikipedia ~1050w (encyclopedic, no process depth), LeSalon ~1400w (7 H2s, process-heavy), Pandora Nail Spa ~1300w (6 H2s + FAQ, salon-commercial). Average ≈ 1250w.
+- top_3_keyword_density_baseline: "manicure"/"a manicure" appears roughly 18-22 times per post across the three (LeSalon ~20, Pandora ~19, Wikipedia ~14 as "manicure" only). Baseline ≈ 18.
+
+# SECTION 5: AUDIENCE INTELLIGENCE
+- who_they_are: A total beginner — likely never had a professional manicure, unsure of the vocabulary (shellac, cuticle, gel), searching the plain-English question because they feel behind or intimidated. Could be male or female; multiple sources explicitly note manicures aren't gender-specific.
+- what_they_want_from_this_post: A plain definition first, then a clear walkthrough of what actually happens, so they know what to expect and don't feel foolish walking into a salon.
+- what_frustrates_them: Salon-brand posts that pivot to "book with us" too fast, dictionary definitions that are technically correct but give zero practical picture, posts that assume prior knowledge of terms like cuticle/gel/shellac without defining them.
+- top_5_pain_points: (1) Not knowing what to expect at a first appointment, (2) fear of feeling judged or out of place, (3) not knowing manicure = more than polish, (4) not understanding terms used at the salon counter, (5) unsure if it's "worth it" vs. DIY.
+- exact_user_phrases: "what is a manicure and does it actually make a difference", "manicure what is it", "is a manicure just nail polish", "what happens during a manicure", "I was nervous, but they made me feel so cared for", "does a manicure include a massage", "do men get manicures", "how long does a manicure take", "manicure meaning", "what's included in a basic manicure".
+- intent_content_signals: Direct-answer opening paragraph; short digestible sections; a plain-English "what's included" list; reassurance tone for first-timers; no salon upsell language; define jargon inline the first time it's used.
+
+# SECTION 6: SEMANTIC KEYWORD DATA
+- primary_keyword: what is a manicure
+- keyword_variations: manicure meaning, manicure definition, what does a manicure include, what happens during a manicure, what is manicure treatment, basic manicure meaning
+- cluster_keywords: nail shaping, cuticle care, hand massage, base coat, top coat, nail filing, nail buffing, mani-pedi, classic manicure, at-home manicure, professional manicure, salon manicure, nail polish application, manicure process, manicure steps
+- lsi_terms: cuticle pusher, cuticle nipper, nail file, nail buffer, hand soak, exfoliation, nourishing massage, polish application, French manicure, nail technician, manicurist, nail salon, hangnail, nail plate, nail shape, gel polish, dip powder, paraffin wax treatment, sanitised tools, self-care ritual
+- aeo_terms: what is a manicure exactly, what does getting a manicure involve, is a manicure just nail polish, what's included in a basic manicure, do men get manicures too, how long does a typical manicure take, what's the difference between a manicure and just painting your nails, why do people get manicures if they're not painting their nails
+- technical_terms: cuticle, nail plate, base coat, top coat, buffing, French manicure, e-file
+- user_language: does it actually make a difference, feels like a tiny break, I was nervous but they made me feel so cared for, keeps everything clean shaped and comfortable, hands tell little stories about our day, more than just a fresh coat of polish, totally normal to feel a bit nervous, just a little time for care
+
+# SECTION 7: VOICE AND AI QUERIES
+1. What is a manicure exactly?
+2. What does a manicure actually include?
+3. Is a manicure just nail polish?
+4. What happens step by step during a manicure?
+5. Do you need nail polish to get a manicure?
+6. Do men get manicures too?
+7. How long does a manicure take?
+8. What's the difference between a manicure and a pedicure?
+9. What does the word "manicure" mean?
+10. Where does the word manicure come from?
+11. What tools are used during a manicure?
+12. Is a manicure the same as just painting your nails at home?
+13. What's included in a basic/classic manicure?
+14. Why do people get manicures if not for the polish?
+15. Is a manicure relaxing or just cosmetic?
+16. What should a first-timer expect at a manicure appointment?
+
+# SECTION 8: HOOK AND CTR
+- selected_trigger: Trigger 1 — Curiosity Gap
+- trigger_rationale: Reader suspects a manicure is "more" than they think (not just polish) and wants the gap closed before their first appointment.
+- title: What Is a Manicure? The Real Answer, Explained
+- title_char_count: 55
+- meta_description: Think a manicure is just nail polish? Here's what it actually includes, what happens step by step, and what to expect your first time.
+- meta_char_count: 141
+- intro_hook_brief: Open by naming the assumption most beginners make (that a manicure = polish) and immediately signal that's only one small part of it — creates the gap the post then closes.
+- first_h2_hook_direction: Phrase first H2 as a direct voice-search question — "What Exactly Happens During a Manicure?" — answered in 2-3 direct sentences immediately after.
+
+# SECTION 9: SEARCH JOURNEY
+- reader_arrival_state: Curious but slightly unsure — has heard the word constantly but has never had one defined plainly, possibly nervous about a first appointment.
+- journey_arc: 1) Direct definition closes the gap immediately. 2) Walk through what's actually included step by step. 3) Clarify it's not just polish — explain the health/self-care angle. 4) Address who it's for (not just women) and first-timer nerves. 5) Close with a natural next step into the cluster (types of manicures).
+- promise_to_deliver: A plain, complete definition of what a manicure is and what happens during one — no jargon assumed, no salon upsell.
+- exit_state: Reassured and informed — ready to book or try one without feeling out of their depth, and curious to learn about specific manicure types next.
+
+# SECTION 10: CONTENT STRUCTURE
+- h1: What Is a Manicure? The Real Answer, Explained
+- h2_structure:
+  1. What Exactly Happens During a Manicure?
+  2. Is a Manicure Just Nail Polish? (No — Here's Why)
+  3. What's Included in a Basic Manicure?
+  4. Is a Manicure Only for Women?
+  5. What to Expect at Your First Manicure Appointment
+  6. How Long Does a Manicure Take?
+- word_budget:
+  - introduction: 220
+  - H1 (What Exactly Happens): 280
+  - H2 (Just Polish?): 200
+  - H3 (What's Included list): 220
+  - H4 (Only for Women?): 150
+  - H5 (First Appointment): 230
+  - H6 (How Long): 150
+  - conclusion: 180
+  (total ≈ 1450)
+
+# SECTION 11: INTERNAL LINKS (4-6 max)
+1. slug: types-of-manicures-explained | anchor: "types of manicures explained" | placement: conclusion, natural next-step link | type: cluster-pillar
+2. slug: what-is-a-cuticle | anchor: "what a cuticle actually is" | placement: within "What's Included" H2, where cuticle care is mentioned | type: cluster-spoke
+3. slug: what-is-gel-polish | anchor: "what gel polish is and how it works" | placement: within "Is a Manicure Just Nail Polish?" H2, where gel/finish options are mentioned | type: cluster-spoke
+4. slug: what-are-acrylic-nails | anchor: "what acrylic nails are and how they work" | placement: within "What's Included" H2, as a mention of longer-lasting/added-length options | type: cluster-spoke
+
+# SECTION 12: VOICE AND TONE
+- recommended_voice: Warm, reassuring educator
+- tone_characteristics: Plain-spoken, jargon explained on first use, gently reassuring for nervous first-timers, never salesy, confident without being clinical
+- language_style: Short-to-medium sentences, direct "you," no analogies needed for this simple a topic, second person throughout
+- audience_match: Beginner reader needs clarity and reassurance above all else — this voice removes intimidation without talking down to them
+
+# SECTION 13: EXTERNAL LINKS
+1. url: https://en.wikipedia.org/wiki/Manicure | context: etymology/word origin mention | anchor: "the word manicure comes from the Latin for hand care"
+2. url: https://www.aad.org/public/everyday-care/nail-care-secrets/basics/pedicures | context: nail health benefits paragraph | anchor: "American Academy of Dermatology"
+
+# SECTION 14: EXECUTION PLAN
+
+## Block 1 — Keyword Execution
+- primary_keyword: what is a manicure
+- top_3_density_baseline: 18
+- total_mention_target: 21 (18 + 3)
+- first_100_words_plan: mention_1 = sentence 1 of intro (direct definitional opening); mention_2 = sentence 3-4 of intro (reinforcing what it includes)
+- first_half_target: 12 mentions — first 725 words
+- second_half_target: 9 mentions — second 725 words
+- strong_tag_rule: every one of the 21 mentions wrapped in <strong> tags, no exceptions
+- keywords_to_avoid_active: full list from Section 3
+
+## Block 2 — Word Budget
+- total_target: 1450 words (±50)
+- introduction: 220
+- conclusion: 180
+- h2_budgets:
+  1. What Exactly Happens During a Manicure? — 280 words — medium
+  2. Is a Manicure Just Nail Polish? — 200 words — low
+  3. What's Included in a Basic Manicure? — 220 words — medium
+  4. Is a Manicure Only for Women? — 150 words — low
+  5. What to Expect at Your First Manicure Appointment — 230 words — medium
+  6. How Long Does a Manicure Take? — 150 words — low
+- tracking_rule: check running total after each H2; cut before moving on if over.
+
+## Block 3 — Image Plan
+- total_images: 1 (hero only)
+- hero_image: frontmatter only, never in body
+- body_images: 0
+- assignments: none — no body images for this post
+- image_type_rule: n/a (no body images)
+- path_rule: /images/blog/nail-basics/what-is-a-manicure/filename.webp
+
+## Block 4 — Opening Technique Assignments
+- Introduction: Technique 1 — The Claim (state the definitional gap directly)
+- What Exactly Happens: Technique 2 — The Scene (walk into the step-by-step)
+- Is a Manicure Just Nail Polish?: Technique 3 — The Reframe
+- What's Included: Technique 4 — The List Lead
+- Is a Manicure Only for Women?: Technique 3 — The Reframe
+- What to Expect at Your First Appointment: Technique 2 — The Scene
+- How Long Does a Manicure Take?: Technique 1 — The Claim
+- Conclusion: Technique 3 — The Reframe
+
+## Block 5 — Link Placements
+1. anchor: "what a cuticle actually is" | url: /blog/nail-basics/what-is-a-cuticle | section: What's Included in a Basic Manicure? | context: where cuticle care step is described | type: cluster-spoke
+2. anchor: "what gel polish is and how it works" | url: /blog/nail-basics/what-is-gel-polish | section: Is a Manicure Just Nail Polish? | context: where gel finish option is mentioned | type: cluster-spoke
+3. anchor: "what acrylic nails are and how they work" | url: /blog/nail-basics/what-are-acrylic-nails | section: What's Included in a Basic Manicure? | context: where added-length/extension options mentioned | type: cluster-spoke
+4. anchor: "types of manicures explained" | url: /blog/nail-basics/types-of-manicures-explained | section: Conclusion | context: natural next-step for reader now armed with the basics | type: cluster-pillar
+
+## Block 6 — AEO/GEO Plan
+- aeo_assignments:
+  1. "Is a manicure just nail polish?" → H2 "Is a Manicure Just Nail Polish?" → direct 2-3 sentence answer immediately after heading
+  2. "Do men get manicures too?" → H2 "Is a Manicure Only for Women?" → direct answer immediately after heading
+  3. "How long does a manicure take?" → H2 "How Long Does a Manicure Take?" → direct answer immediately after heading
+- geo_entity_statements:
+  1. entity: manicure (core definition) → assigned to intro → confident declarative definition sentence, no hedging
+  2. entity: cuticle → assigned to "What's Included" → one-sentence clear definition on first use
+
+## Block 7 — Active Constraints
+- em_dash_banned: yes, replace with comma/parentheses/new sentence if one forms
+- banned_vocab_watch: "elevate," "unlock," "journey," "game-changer," "must-have," "seamless," "effortless" (watch closely — salon-blog tone tends to drift here)
+- british_english_active: colour, recognise, -ise, -our — every instance
+- keyword_density_reminder: check after every 2 H2s against 21-mention target, denser in first half
+- image_path_reminder: n/a (no body images)
+- internal_link_url_reminder: full /blog/nail-basics/[slug] paths only
+- hero_image_reminder: frontmatter only, never in body
+- strong_tag_reminder: every primary keyword mention wrapped in <strong>, scan after every paragraph
