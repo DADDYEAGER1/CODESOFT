@@ -1,0 +1,216 @@
+# INPUT FILE — Types of Nail Polish Explained
+**MODE: CLUSTER MODE — cluster context loaded (nail-basics, #cluster 13)**
+**THIS FILE IS THE SINGLE SOURCE OF TRUTH FOR THE BLOG GEN AGENT.** All POST_CONSTANTS values are hardcoded. Nothing overridden unless the user instructs otherwise this session.
+
+## SECTION 2 — POST_CONSTANTS
+```
+slug: types-of-nail-polish
+topic_slug: nail-basics
+canonical: https://mirelleinspo.com/blog/nail-basics/types-of-nail-polish
+post_type: spoke
+intent: informational
+word_count: 2200
+image_count: 1
+show_inspo_gallery_link: false
+template: split-left
+hero_dimensions: 800x800
+category: Nail Basics
+publish_date: 2026-07-27
+author: jyoti-mirelle
+```
+**User override applied this session:** image_count locked to 1 (hero only, no body images) and show_inspo_gallery_link forced false, superseding the standard phase_2 "everything else" 4-5 image default. SERP research (phase_3) conducted via web_fetch on top 3 ranking URLs rather than search-snippet-only, per user instruction.
+
+## SECTION 3 — CLUSTER SNAPSHOT
+```
+pillar_slug: types-of-manicures-explained
+pillar_title: Types of Manicures Explained
+pillar_primary_keyword: types of manicures explained
+this_post_slug: types-of-nail-polish
+this_post_role: spoke
+keywords_to_avoid: types of manicures explained, what is a manicure, what is gel polish how does it work, what is lacquer nail polish, what is a nail wrap, what is nail stamping, what are acrylic nails how do they work, shellac vs gel, what is a cuticle, nail anatomy parts of the nail, what is the nail matrix, what is an e-file, what is hema nail products, what is nail fungus, best nail shape for your hands, how to find your nail shape, difference between gel acrylic and natural nails, how do i know what nail shape suits my hands, 5 basic nail shapes, difference between manicure and pedicure, how long do different types of manicures last
+```
+
+## SECTION 4 — SERP ANALYSIS (via web_fetch, top 3: LuxeFormula Labs 2,600w/13 types, L'Oréal Paris 1,750w/8 types, Typology 1,350w/7 types)
+- **competitor_gaps:** (1) No top-3 source clearly separates **formula type** from **finish type** — all conflate "gel" (a formula) with "matte" or "chrome" (a finish), confirmed on Pure Spa Direct, TheBeautyFoodie, and multiple Quora threads. (2) Chrome vs metallic vs holographic distinction is asked repeatedly (Quora, LovingBow) but only LuxeFormula (a manufacturer site) answers it clearly. (3) None of the top 3 give a plain-English "which type is right for me" decision path free of brand/commercial framing.
+- **missing_semantic_territory:** finish vocabulary (satin, jelly, crème, duochrome) barely appears in L'Oréal or Typology; "n-free"/"free-from" clean-formula labeling confirmed as a real confusion point (Typology, Quora) but underexplained everywhere except the manufacturer site.
+- **our_strategic_approach:** Split the post cleanly into two axes — formula (how it's applied/cured/removed) and finish (how it looks) — something no top-3 competitor does, then close with a simple decision framework by lifestyle rather than by brand or purchase intent.
+- **recommended_image_count_validation:** N/A — user has locked image_count to 1 (hero only); no body images regardless of SERP visual density.
+
+## SECTION 5 — AUDIENCE INTELLIGENCE
+- **who_they_are:** Nail-curious but not yet a regular salon client; often confused by overlapping salon/retail vocabulary (gel, shellac, dip, lacquer) and trying to understand the category before choosing a service or product.
+- **what_they_want:** A plain-English map of formula types AND finish types in one place, without a sales pitch.
+- **what_frustrates_them:** Guides that are secretly product catalogs (L'Oréal) or manufacturer pitches (LuxeFormula); finish and formula terms used interchangeably with no clarification.
+- **top_5_pain_points:** 1) Can't tell why "gel" sometimes means a formula and sometimes a look. 2) Doesn't know chrome ≠ metallic ≠ holographic. 3) Unsure if "regular polish" and "lacquer" are the same thing. 4) No clear sense of which type suits their lifestyle (frequent color-changer vs long-wear). 5) Confused by clean-beauty labels (5-free, 10-free, n-free).
+- **exact_user_phrases:** "what's the difference between gel and regular polish", "is chrome the same as metallic", "what does n-free mean on nail polish", "gel vs regular nail varnish", "types of nail polish finishes", "what's satin finish nail polish", "does gel ruin your nails", "regular polish vs shellac", "matte vs satin nails", "how long does each type of polish last"
+- **intent_content_signals:** Wants scannable categories with a one-line definition each; short comparative call-outs (wear time, equipment) welcome; no buying links or brand pushing; plain declarative sentences over hype.
+
+## SECTION 6 — SEMANTIC KEYWORD DATA
+```
+primary_keyword: types of nail polish
+keyword_variations: different types of nail polish, types of nail polish finishes, types of nail varnish, kinds of nail polish, nail polish formulas explained, nail polish categories
+cluster_keywords: nail polish formula, nail polish finish, traditional lacquer, dip powder, builder gel, matte nail polish, glossy finish, chrome finish, holographic finish, cat eye polish, thermochromic polish, breathable polish, n-free polish, clean beauty nail polish, satin finish, jelly polish
+lsi_terms: nitrocellulose, solvent-based polish, photoinitiator, LED cure, air-dry polish, acetone soak, polymer film, top coat, base coat, wear time, chip resistance, nail enhancement, monomer, diffraction particles, metallic pigment, magnetic wand, leuco dye, film-forming resin, formaldehyde-free, 5-free formula
+aeo_terms: What are the different types of nail polish?, What is the difference between gel and regular nail polish?, What is the longest-lasting type of nail polish?, What is the difference between chrome and metallic nail polish?, What does n-free mean on nail polish?, Is shellac a type of gel polish?, What is breathable nail polish?, Do all nail polish types need a UV lamp?, What is the difference between matte and satin nail polish?, How many types of nail polish are there?
+technical_terms: nitrocellulose, photoinitiator polymerization, monomer/polymer acrylic system, diffraction grating pigment, leuco dye microcapsule, film-forming resin, HEMA, plasticizer
+user_language: "regular polish", "chip within a couple days", "lasts forever", "the shiny kind", "the one you don't need a lamp for", "salon polish", "at-home polish", "the stuff that peels off", "clean polish"
+```
+
+## SECTION 7 — VOICE AND AI QUERIES
+1. What are the different types of nail polish?
+2. What's the difference between gel and regular nail polish?
+3. How long does each type of nail polish last?
+4. Is chrome nail polish the same as metallic?
+5. What is breathable nail polish and does it actually help nails?
+6. Do all nail polish types need a UV or LED lamp?
+7. What does "n-free" or "5-free" mean on a nail polish label?
+8. Is shellac just a brand of gel polish?
+9. What's the difference between matte and satin finish?
+10. Which type of nail polish is best for someone who changes color often?
+11. What is dip powder and how is it different from acrylic?
+12. Can nail polish types be mixed, like chrome over gel?
+13. What is holographic nail polish and how does it work?
+14. Why does gel polish need to be soaked off with acetone?
+15. What's the easiest type of nail polish for beginners at home?
+
+## SECTION 8 — HOOK AND CTR
+```
+selected_trigger: Trigger 3 — Specificity/Numbers
+trigger_rationale: Reader is browsing a glossary-style query wanting clear, countable categories rather than resolving a single either/or decision, matching the informational/roundup nature of this spoke.
+title: Types of Nail Polish: 10 Formulas & Finishes Explained
+title_char_count: 55
+meta_description: Confused by gel, dip, chrome and matte? This guide breaks down every type of nail polish — formula and finish — so you know exactly what you're choosing.
+meta_char_count: 152
+intro_hook_brief: Open by naming the exact confusion (gel vs regular vs shellac vs chrome, used interchangeably online) and promise a two-axis breakdown — formula and finish — that untangles it in one read.
+first_h2_hook_direction: Phrase the first H2 as a direct voice-search question, e.g. "What Are the Different Types of Nail Polish?" — answer it in 2-3 sentences immediately before elaborating.
+```
+
+## SECTION 9 — SEARCH JOURNEY
+```
+reader_arrival_state: Mildly confused and slightly overwhelmed by overlapping nail-polish vocabulary, wanting a single clear reference rather than another product roundup.
+journey_arc: 1) Confirm this is the definitive breakdown of types. 2) Deliver the formula-type breakdown first (how it's applied/removed). 3) Deliver the finish-type breakdown second (how it looks). 4) Clarify the most-confused pairs (chrome vs metallic, matte vs satin, gel vs shellac). 5) Close with a simple "which type fits your lifestyle" takeaway.
+promise_to_deliver: A complete, jargon-free map of nail polish types — both formula and finish — so the reader can name and choose confidently.
+exit_state: Reader feels clear, not overwhelmed — able to say out loud what separates gel from regular polish and chrome from metallic.
+```
+
+## SECTION 10 — CONTENT STRUCTURE
+```
+h1: Types of Nail Polish: Every Formula and Finish Explained
+h2_structure:
+1. What Are the Different Types of Nail Polish? (250w)
+2. Traditional (Regular) Nail Polish (200w)
+3. Gel Nail Polish (220w)
+4. Dip Powder and Acrylic (220w)
+5. Builder Gel, Polygel, and Other Long-Wear Formulas (220w)
+6. Breathable and Clean ("Free-From") Nail Polish (200w)
+7. Nail Polish Finishes: Glossy, Matte, and Satin (180w)
+8. Special-Effect Finishes: Chrome, Holographic, and Cat Eye (220w)
+9. Which Type of Nail Polish Is Right for You? (170w)
+word_budget: introduction 220, conclusion 170, H2s as listed above (total ≈2200)
+```
+
+## SECTION 11 — INTERNAL LINKS
+```
+1. slug: types-of-manicures-explained | anchor: "types of manicures explained" | type: cluster-pillar | placement: introduction, when contrasting polish types with full manicure service types
+2. slug: what-is-gel-polish | anchor: "what gel polish is and how it works" | type: cluster-spoke | placement: Gel Nail Polish H2
+3. slug: what-is-lacquer-nail-polish | anchor: "what lacquer nail polish means" | type: cluster-spoke | placement: Traditional (Regular) Nail Polish H2
+4. slug: shellac-vs-gel | anchor: "shellac vs gel nails compared" | type: cluster-spoke | placement: Special-Effect/finish or gel section, when shellac is mentioned as a branded hybrid
+Cross-site links: none included — existing mirelleinspo.com nail-polish content is exclusively shop/buying-guide pages, which fails the strict relevance filter for an informational glossary post. 4 total links, within 4-6 cap.
+```
+
+## SECTION 12 — VOICE AND TONE
+```
+recommended_voice: Warm, clear-eyed educator
+tone_characteristics: Plain declarative sentences; zero brand-pushing; reassuring rather than overwhelming; confident definitions with no hedging; light, not clinical
+language_style: Short to medium sentences, direct address ("you"), minimal jargon — technical terms explained in-line the first time they appear
+audience_match: Matches a reader who wants clarity fast and distrusts anything that feels like a product pitch, consistent with competitor-gap findings
+```
+
+## SECTION 13 — EXTERNAL LINKS
+```
+1. url: https://www.nailpro.com/products/article/21157805/what-is-polygel-by-gelish | context: Polygel/builder gel section, to support the hybrid-formula explanation | anchor: "industry breakdown of how polygel works"
+2. url: https://www.nailpro.com/8-main-ingredients-nail-polish | context: traditional/clean-formula section, to support resin/solvent explanation | anchor: "common nail polish ingredients"
+3. url: https://en.wikipedia.org/wiki/Nail_polish | context: opening H2, general definition/history support | anchor: "nail polish's origins as a lacquer"
+```
+
+## SECTION 14 — EXECUTION PLAN
+### Block 1 — Keyword Execution
+```
+primary_keyword: types of nail polish
+top_3_density_baseline: ~9 mentions average (LuxeFormula ~14, L'Oréal ~6, Typology ~7)
+total_mention_target: 11-12 total
+first_100_words_plan: mention_1 = sentence 2 of intro (naming the confusion); mention_2 = sentence 4-5 of intro (promising the breakdown)
+first_half_target: 7 mentions — first 1100 words
+second_half_target: 4-5 mentions — second 1100 words
+strong_tag_rule: every mention of "types of nail polish" wrapped in <strong> tags, no exceptions
+keywords_to_avoid_active: full list in section_3
+```
+### Block 2 — Word Budget
+```
+total_target: 2200 words (±50)
+introduction: 220
+conclusion: 170
+h2_budgets: [
+  {"heading":"What Are the Different Types of Nail Polish?","budget":250,"complexity":"low"},
+  {"heading":"Traditional (Regular) Nail Polish","budget":200,"complexity":"low"},
+  {"heading":"Gel Nail Polish","budget":220,"complexity":"medium"},
+  {"heading":"Dip Powder and Acrylic","budget":220,"complexity":"medium"},
+  {"heading":"Builder Gel, Polygel, and Other Long-Wear Formulas","budget":220,"complexity":"medium"},
+  {"heading":"Breathable and Clean (\"Free-From\") Nail Polish","budget":200,"complexity":"medium"},
+  {"heading":"Nail Polish Finishes: Glossy, Matte, and Satin","budget":180,"complexity":"low"},
+  {"heading":"Special-Effect Finishes: Chrome, Holographic, and Cat Eye","budget":220,"complexity":"high"},
+  {"heading":"Which Type of Nail Polish Is Right for You?","budget":170,"complexity":"low"}
+]
+tracking_rule: check running total after every H2; cut before moving on if over.
+```
+### Block 3 — Image Plan
+```
+total_images: 1
+hero_image: frontmatter only — never in body
+body_images: 0 — none placed, per user override
+image_type_rule: N/A this post (hero only)
+path_rule: /images/blog/nail-basics/types-of-nail-polish/hero.webp
+```
+### Block 4 — Opening Technique Assignments
+```
+Introduction: Technique 1 — The Claim (state the two-axis confusion directly)
+What Are the Different Types...: Technique 2 — The Direct Answer (AEO-style immediate definition)
+Traditional (Regular) Nail Polish: Technique 3 — The Reframe
+Gel Nail Polish: Technique 2 — The Direct Answer
+Dip Powder and Acrylic: Technique 1 — The Claim
+Builder Gel, Polygel...: Technique 3 — The Reframe
+Breathable and Clean...: Technique 2 — The Direct Answer
+Nail Polish Finishes...: Technique 1 — The Claim
+Special-Effect Finishes: Technique 3 — The Reframe
+Conclusion: Technique 1 — The Claim
+(no two consecutive sections share a technique)
+```
+### Block 5 — Link Placements
+```
+1. anchor: "types of manicures explained" | url: /blog/nail-basics/types-of-manicures-explained | section: Introduction | context: contrasting polish type from full manicure service type | type: cluster-pillar
+2. anchor: "what lacquer nail polish means" | url: /blog/nail-basics/what-is-lacquer-nail-polish | section: Traditional (Regular) Nail Polish | context: first mention of "lacquer" as the technical term | type: cluster-spoke
+3. anchor: "what gel polish is and how it works" | url: /blog/nail-basics/what-is-gel-polish | section: Gel Nail Polish | context: pointing to deeper mechanism explainer | type: cluster-spoke
+4. anchor: "shellac vs gel nails compared" | url: /blog/nail-basics/shellac-vs-gel | section: Special-Effect Finishes or Gel section, wherever shellac is named as a branded hybrid | context: disambiguating shellac from generic gel | type: cluster-spoke
+```
+### Block 6 — AEO/GEO Plan
+```
+aeo_assignments:
+1. "What are the different types of nail polish?" → H2-1 → direct 2-3 sentence answer immediately after heading
+2. "What is the difference between gel and regular nail polish?" → H2-3 (Gel) → direct answer paragraph
+3. "What does n-free mean on nail polish?" → H2-6 (Breathable/Clean) → direct answer paragraph
+4. "What is the difference between chrome and metallic nail polish?" → H2-8 (Special-Effect Finishes) → direct answer paragraph
+geo_entity_statements:
+1. "Gel nail polish" → H2-3 → clear declarative definition (photoinitiator/LED cure)
+2. "Dip powder" → H2-4 → clear declarative definition
+3. "Chrome nail polish" → H2-8 → clear declarative definition distinguishing from metallic/holographic
+```
+### Block 7 — Active Constraints
+```
+em_dash_banned: true — replace with comma, period, or parentheses if one forms
+banned_vocab_watch: "elevate", "unlock", "game-changer", "in the world of", "when it comes to", "boasts", "seamless"
+british_english_active: colour, recognise, -ise, -our — every instance
+keyword_density_reminder: recount after every 2 H2s; front-load mentions in first half
+image_path_reminder: /images/blog/nail-basics/types-of-nail-polish/hero.webp
+internal_link_url_reminder: full /blog/nail-basics/[slug] paths only, never bare slug
+hero_image_reminder: frontmatter only, never in body
+strong_tag_reminder: every "types of nail polish" mention in <strong> tags
+```
