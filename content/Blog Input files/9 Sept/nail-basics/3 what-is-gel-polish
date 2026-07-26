@@ -1,0 +1,206 @@
+# CLUSTER MODE — cluster context loaded
+
+## SECTION 1 — FILE AUTHORITY
+THIS FILE IS THE SINGLE SOURCE OF TRUTH FOR THE BLOG GEN AGENT. All values in POST_CONSTANTS are hardcoded. Do not ask, adjust, or override.
+
+## SECTION 2 — POST_CONSTANTS
+- slug: what-is-gel-polish
+- topic_slug: nail-basics
+- canonical: https://mirelleinspo.com/blog/nail-basics/what-is-gel-polish
+- post_type: spoke
+- intent: informational (decision_mode search behavior)
+- word_count: 1900
+- image_count: 1 (hero only — no body images; user override)
+- show_inspo_gallery_link: false
+- template: split-left
+- hero_dimensions: 800x800
+- category: Nail Basics
+- publish_date: 2026-07-27
+- author: jyoti-mirelle
+
+## SECTION 3 — CLUSTER SNAPSHOT
+- pillar_slug: types-of-manicures-explained
+- pillar_title: Types of Manicures Explained
+- pillar_primary_keyword: types of manicures explained
+- this_post_slug: what-is-gel-polish
+- this_post_role: spoke
+- keywords_to_avoid: what is hema nail products, what is nail fungus, best nail shape for your hands, how to find your nail shape, difference between gel acrylic and natural nails, how do i know what nail shape suits my hands, 5 basic nail shapes, difference between manicure and pedicure, how long do different types of manicures last, what is a manicure, what is lacquer nail polish, what is a nail wrap, what is nail stamping, what are acrylic nails how do they work, types of nail polish, shellac vs gel, what is a cuticle, nail anatomy parts of the nail, what is the nail matrix, what is an e-file
+
+## SECTION 4 — SERP ANALYSIS (via direct web_fetch of top-ranking URLs)
+- competitor_gaps: (1) No top-3 result gives a plain, direct 2-3 sentence "what is gel polish" answer before diving into product-selling or a 4000-word mega-guide — NashlyNails buries the definition inside a shop-focused ultimate guide, OPI's page is a thin product funnel; (2) None clearly explain WHY gel doesn't damage nails when applied/removed correctly vs. common myth it "ruins nails" — confirmed across AOL/Real Simple and Quora threads as a recurring worry; (3) None plainly state the difference between gel polish and shellac inline (only as a separate comparison article) despite user confusion signals.
+- missing_semantic_territory: "photoinitiator," "free radical," "inhibition/tacky layer," "soft gel vs hard gel" explained in plain (non-buyer's-guide) language; "is gel polish bad for your nails" framed as myth-busting rather than buried FAQ.
+- our_strategic_approach: Open with a direct, quotable 2-3 sentence definition (what competitors bury), then explain the curing/polymerization mechanism in accessible terms (backed by C&EN chemistry authority), then resolve the two biggest trust objections — "does it ruin nails" and "gel vs shellac vs regular polish" — before closing. Positions the post as the clear, fast, trustworthy answer competitors don't lead with.
+- recommended_image_count_validation: Top-ranking pages are heavy on product photography (bottles, swatches, application shots) rather than genuine editorial imagery; this is an informational/decision-mode post, not a gallery browse post, so a single hero image is appropriate and consistent with SERP visual patterns for this specific keyword (as opposed to the "types of nail polish" or "manicure types" idea-roundup posts in this cluster).
+- top_3_word_count_estimates: NashlyNails ~4,000+ words (broad shop/product guide, not directly comparable scope); C&EN (ACS) ~1,050 words (editorial chemistry feature); OPI ~300 words (thin product spotlight). Usable floor from genuinely comparable editorial-scope content: ~1,050-1,300 words. Given spoke ceiling and intent depth needed, target set above floor for full coverage.
+- top_3_keyword_density_baseline: Exact-phrase "gel polish" (as concept, not exact "what is gel polish how does it work") appears dense throughout (NashlyNails: 15+; C&EN: 8; OPI: 5). Primary keyword exact-phrase match rarely repeats verbatim as a full phrase — baseline for exact "gel polish" mentions ≈ 10-12 average.
+
+## SECTION 5 — AUDIENCE INTELLIGENCE
+- who_they_are: A nail polish user (likely regular manicure client or DIY at-home painter) who has heard the term "gel polish," "gel mani," or "gel nails" and wants a clear, non-salesy explanation of what it actually is and how it's different from what they're used to — not yet ready to buy, still orienting.
+- what_they_want_from_this_post: A direct, jargon-light definition; understanding of why it needs a lamp; reassurance about safety/nail health; and a clear sense of when gel is worth it vs. regular polish.
+- what_frustrates_them: Brand blogs (NashlyNails, OPI, Beetles) answer the question but wrap it in product promotion within the first few paragraphs; forums and patents are unreadable or irrelevant; no single accessible source explains curing chemistry without either oversimplifying or overwhelming with cosmetic-chemist jargon.
+- top_5_pain_points: (1) Confusion over why it needs a UV/LED lamp at all; (2) Fear that gel polish damages or weakens natural nails; (3) Not understanding the difference between gel polish, shellac, and "regular" gel/hard gel; (4) Uncertainty about how long it actually lasts vs. marketing claims; (5) Concern about removal — worried about pain, damage, or difficulty.
+- exact_user_phrases: "is gel polish bad for your nails," "why does gel need a light," "gel nails vs regular nails," "does gel polish ruin your nails," "how long does gel polish last," "what's the difference between gel and shellac," "is gel polish safe," "does gel polish hurt to remove," "why is my gel polish peeling after one day," "can you do gel nails without a UV lamp."
+- intent_content_signals: Reader responds to a direct answer-first structure (many top sources use an "Answer:" bolded lead); short paragraphs; myth vs. fact framing for safety concerns; comparison callouts (gel vs regular, gel vs shellac) as skimmable contrasts rather than dense tables; reassuring, confident tone rather than alarmist.
+
+## SECTION 6 — SEMANTIC KEYWORD DATA
+- primary_keyword: what is gel polish how does it work
+- keyword_variations: what is gel nail polish, how does gel polish work, what is a gel manicure, what does gel polish mean, gel polish explained, how gel nail polish works, what makes gel polish different, gel polish definition
+- cluster_keywords: UV lamp, LED lamp, curing, polymerization, soak-off gel, hard gel, soft gel, monomers and oligomers, photoinitiator, gel manicure, chip-resistant polish, gel nail lamp, gel top coat, gel base coat, acetone removal
+- lsi_terms: free radicals, cross-linked polymer chains, inhibition layer, tacky layer, acrylic monomers, gel polish formula, gel nail longevity, gel vs regular polish, gel polish removal, chip-free manicure, high-gloss finish, gel polish safety, methacrylates, gel polish chemistry, photopolymerization, gel nail lamp wattage, capping the free edge, gel polish brands
+- aeo_terms: What is gel polish made of?, How does gel polish cure under a lamp?, Is gel polish bad for your nails?, What is the difference between gel polish and regular nail polish?, How long does a gel manicure last?, Can you do gel nails without a UV lamp?, What is the difference between gel polish and shellac?, Why does my gel polish need to be cured?
+- technical_terms: photoinitiator, monomer, oligomer, polymerization, free radical, soak-off gel, hard gel, inhibition layer
+- user_language: "does gel ruin your nails," "why do you need the light thing," "gel vs shellac vs regular polish," "how long does gel actually last," "is it bad to peel off gel polish," "does gel hurt when you remove it," "can I do gel at home without a UV light," "why did my gel chip after one day"
+
+## SECTION 7 — VOICE AND AI QUERIES
+1. What exactly is gel polish?
+2. How does gel nail polish actually work?
+3. Why does gel polish need to be cured under a lamp?
+4. What is the difference between gel polish and regular nail polish?
+5. Is gel polish bad for your nails?
+6. How long does gel polish typically last?
+7. Can you do gel nails at home without a UV lamp?
+8. What is the difference between gel polish and shellac?
+9. What happens chemically when gel polish cures?
+10. Why is my gel polish peeling off after only a day?
+11. Is gel polish safe to use regularly?
+12. What is the sticky layer left after curing gel polish?
+13. Do you need a UV lamp or can LED work too?
+14. How is gel polish removed without damaging nails?
+15. What's the difference between soft gel and hard gel?
+
+## SECTION 8 — HOOK AND CTR
+- selected_trigger: Trigger 1 — Curiosity Gap
+- trigger_rationale: Reader is in decision_mode, mildly skeptical/curious about a product they've heard of but don't fully understand — classic "what am I missing" search behavior, not browsing for ideas.
+- title: What Is Gel Polish? How It Actually Works
+- title_char_count: 40 (short of 55-60 target; expand for SERP optimization)
+- title (revised): What Is Gel Polish? How It Really Works (2026)
+- title_char_count (revised): 48 — still under range; final: "What Is Gel Polish & How Does It Actually Work?"
+- title_char_count (final): 51
+- meta_description: Curious what gel polish actually is? See how curing under a lamp works, how long it lasts, and whether it's really bad for your nails.
+- meta_char_count: 137
+- intro_hook_brief: Open by naming the exact confusion point — everyone's heard of "gel" but few can explain what actually happens under that lamp — then promise a plain-English answer with no product pitch.
+- first_h2_hook_direction: Phrase the first H2 as a direct voice-search-style question ("What Is Gel Polish, Exactly?") and answer it in the first 2-3 sentences, unlike competitors who bury the definition.
+
+## SECTION 9 — SEARCH JOURNEY
+- reader_arrival_state: Curious but slightly wary — has heard "gel polish" repeatedly and wants to understand what it is before deciding to try or continue getting it.
+- journey_arc: Direct definition first → explain the curing/science in plain terms → address "does it damage nails" trust concern → clarify how it differs from regular polish and shellac → close with when gel makes sense for them.
+- promise_to_deliver: A clear, non-salesy explanation of what gel polish is, how it cures, and whether it's safe — answered directly, not buried in a product pitch.
+- exit_state: Reader feels informed and reassured, understands the mechanism and the safety picture, and knows exactly how gel compares to what they're already using.
+
+## SECTION 10 — CONTENT STRUCTURE
+- h1: What Is Gel Polish & How Does It Actually Work?
+- h2_structure:
+  1. What Is Gel Polish, Exactly?
+  2. How Does Gel Polish Actually Cure and Harden?
+  3. Gel Polish vs Regular Nail Polish: What's Different?
+  4. Is Gel Polish Bad for Your Nails?
+  5. How Long Does Gel Polish Really Last?
+  6. Soft Gel vs Hard Gel: Which One Are You Wearing?
+  7. What Is the Sticky Layer After Curing?
+  8. Gel Polish vs Shellac: Are They the Same?
+  9. Should You Choose Gel Polish?
+- word_budget:
+  - introduction: 220
+  - What Is Gel Polish, Exactly?: 230
+  - How Does Gel Polish Actually Cure and Harden?: 280
+  - Gel Polish vs Regular Nail Polish: What's Different?: 220
+  - Is Gel Polish Bad for Your Nails?: 240
+  - How Long Does Gel Polish Really Last?: 180
+  - Soft Gel vs Hard Gel: Which One Are You Wearing?: 180
+  - What Is the Sticky Layer After Curing?: 130
+  - Gel Polish vs Shellac: Are They the Same?: 150
+  - conclusion: 170
+
+## SECTION 11 — INTERNAL LINKS
+1. url_or_slug: /blog/nail-basics/types-of-manicures-explained | title: Types of Manicures Explained | anchor_text: "types of manicures explained" | placement_note: Introduction, framing gel polish as one of several manicure types | link_type: cluster-pillar
+2. url_or_slug: /blog/nail-basics/what-is-lacquer-nail-polish | title: What Is Lacquer Nail Polish? | anchor_text: "what lacquer nail polish means" | placement_note: In "Gel Polish vs Regular Nail Polish" section, when explaining the traditional lacquer alternative | link_type: cluster-spoke
+3. url_or_slug: /blog/nail-basics/shellac-vs-gel | title: Shellac vs Gel: What's the Difference? | anchor_text: "shellac vs gel nails compared" | placement_note: In "Gel Polish vs Shellac" section, for the reader wanting the full durability/cost breakdown | link_type: cluster-spoke
+4. url_or_slug: /blog/nail-basics/types-of-nail-polish | title: Types of Nail Polish Explained | anchor_text: "the different types of nail polish" | placement_note: In "Soft Gel vs Hard Gel" section, pointing to the broader polish-formula roundup | link_type: cluster-spoke
+5. url_or_slug: https://mirelleinspo.com/blog/hema-allergy-nails/what-is-hema-nail-products | title: What Is HEMA in Nail Products | anchor_text: "what HEMA is and why some gel formulas avoid it" | placement_note: In "Is Gel Polish Bad for Your Nails" section, when briefly noting allergy potential without going deep (avoids cannibalizing reserved HEMA post) | link_type: cross-site
+
+## SECTION 12 — VOICE AND TONE
+- recommended_voice: Confident educator
+- tone_characteristics: Direct and answer-first (no throat-clearing); reassuring without being dismissive of real safety concerns; plain-English science explainer; mildly conversational "you" address; zero product-pushing.
+- language_style: Short, declarative sentences for definitions; slightly longer explanatory sentences for the chemistry section; second-person throughout; no forced analogies — clarity over cleverness.
+- audience_match: This reader wants trust and clarity fast, not a sales funnel — a confident, plain-spoken educator voice out-performs the promotional tone found in every top-ranking brand blog.
+
+## SECTION 13 — EXTERNAL LINKS
+1. url: https://cen.acs.org/business/consumer-products/gel-nail-polish-does-create-durable-manicures/101/i18 | context: Use when explaining the photoinitiator/free-radical curing mechanism for scientific credibility | anchor_suggestion: "how nail chemists describe the curing reaction"
+2. url: https://www.healthline.com/health/shellac-vs-gel | context: Use in the Shellac vs Gel section as a health-authority-backed comparison reference | anchor_suggestion: "a closer look at shellac's hybrid formula"
+
+## SECTION 14 — EXECUTION PLAN
+
+### Block 1: Keyword Execution
+- primary_keyword: what is gel polish how does it work
+- top_3_density_baseline: 11 (average concept-level mentions across comparable editorial sources)
+- total_mention_target: 13-14 total mentions of primary keyword or its exact-phrase variant
+- first_100_words_plan:
+  - mention_1: sentence 1-2 of introduction, opening definition line
+  - mention_2: sentence 4-5 of introduction, reinforcing before transition to first H2
+- first_half_target: 8 mentions — first ~950 words
+- second_half_target: 5-6 mentions — remaining ~950 words
+- strong_tag_rule: Every mention wrapped in <strong> tags — no exceptions
+- keywords_to_avoid_active: full list in Section 3
+
+### Block 2: Word Budget
+- total_target: 1900 words (±50 tolerance)
+- introduction: 220
+- conclusion: 170
+- h2_budgets:
+  1. What Is Gel Polish, Exactly? — 230 words — complexity: low
+  2. How Does Gel Polish Actually Cure and Harden? — 280 words — complexity: high
+  3. Gel Polish vs Regular Nail Polish: What's Different? — 220 words — complexity: medium
+  4. Is Gel Polish Bad for Your Nails? — 240 words — complexity: medium
+  5. How Long Does Gel Polish Really Last? — 180 words — complexity: low
+  6. Soft Gel vs Hard Gel: Which One Are You Wearing? — 180 words — complexity: medium
+  7. What Is the Sticky Layer After Curing? — 130 words — complexity: low
+  8. Gel Polish vs Shellac: Are They the Same? — 150 words — complexity: medium
+- tracking_rule: Check running total after every H2; cut before moving on if over budget.
+
+### Block 3: Image Plan
+- total_images: 1
+- hero_image: frontmatter only — never in body
+- body_images: 0 — no body images per hardcoded image_count
+- image_type_rule: N/A (hero only)
+- path_rule: /images/blog/nail-basics/what-is-gel-polish/filename.webp
+
+### Block 4: Opening Technique Assignments
+- Introduction: Technique 1 (The Claim) — state plainly what gel polish is before anything else
+- What Is Gel Polish, Exactly?: Technique 2 (The Direct Answer) — answer-first paragraph
+- How Does Gel Polish Actually Cure and Harden?: Technique 3 (The Reframe) — reframe "magic" as chemistry
+- Gel Polish vs Regular Nail Polish: Technique 2 (The Direct Answer)
+- Is Gel Polish Bad for Your Nails?: Technique 3 (The Reframe) — reframe damage myth vs. removal reality
+- How Long Does Gel Polish Really Last?: Technique 1 (The Claim)
+- Soft Gel vs Hard Gel: Technique 2 (The Direct Answer)
+- What Is the Sticky Layer After Curing?: Technique 1 (The Claim)
+- Gel Polish vs Shellac: Technique 3 (The Reframe)
+- Conclusion: Technique 1 (The Claim)
+- banned_opener_rule: Check every section opener against banned_opening_approaches before finalizing.
+
+### Block 5: Link Placements
+1. anchor_text: "types of manicures explained" | full_url: /blog/nail-basics/types-of-manicures-explained | place_in_section: Introduction | placement_context: framing gel as one manicure type among many | link_type: cluster-pillar
+2. anchor_text: "what lacquer nail polish means" | full_url: /blog/nail-basics/what-is-lacquer-nail-polish | place_in_section: Gel Polish vs Regular Nail Polish | placement_context: when naming lacquer as the technical term for regular polish | link_type: cluster-spoke
+3. anchor_text: "shellac vs gel nails compared" | full_url: /blog/nail-basics/shellac-vs-gel | place_in_section: Gel Polish vs Shellac | placement_context: pointing readers wanting full durability/cost breakdown | link_type: cluster-spoke
+4. anchor_text: "the different types of nail polish" | full_url: /blog/nail-basics/types-of-nail-polish | place_in_section: Soft Gel vs Hard Gel | placement_context: linking to the broader polish-formula roundup | link_type: cluster-spoke
+5. anchor_text: "what HEMA is and why some gel formulas avoid it" | full_url: https://mirelleinspo.com/blog/hema-allergy-nails/what-is-hema-nail-products | place_in_section: Is Gel Polish Bad for Your Nails | placement_context: brief allergy mention routed to reserved HEMA post rather than expanded here | link_type: cross-site
+
+### Block 6: AEO/GEO Plan
+- aeo_assignments:
+  1. "What is gel polish made of?" → What Is Gel Polish, Exactly? → direct 2-3 sentence answer immediately after H2
+  2. "How does gel polish cure under a lamp?" → How Does Gel Polish Actually Cure and Harden? → direct answer paragraph before elaboration
+  3. "Is gel polish bad for your nails?" → Is Gel Polish Bad for Your Nails? → direct myth-vs-fact answer immediately after H2
+  4. "What is the difference between gel polish and shellac?" → Gel Polish vs Shellac → direct comparison answer immediately after H2
+- geo_entity_statements:
+  1. entity: photoinitiator → How Does Gel Polish Actually Cure and Harden? → clear declarative definition sentence
+  2. entity: inhibition layer → What Is the Sticky Layer After Curing? → clear declarative definition sentence
+  3. entity: soak-off gel → Soft Gel vs Hard Gel → clear declarative definition sentence
+
+### Block 7: Active Constraints
+- em_dash_banned: true — replace with comma, period, or restructure
+- banned_vocab_watch: "elevate," "unlock," "journey," "game-changer," "dive into," "seamless," "unleash"
+- british_english_active: colour, recognise, -ise, -our — all instances
+- keyword_density_reminder: Count mentions after every 2 H2s; verify pace toward 13-14 total, denser in first half.
+- image_path_reminder: /images/blog/nail-basics/what-is-gel-polish/filename.webp
+- internal_link_url_reminder: Full paths only, as listed in Block 5
+- hero_image_reminder: Frontmatter only, never in body
+- strong_tag_reminder: Every primary keyword mention in <strong> tags — scan after every paragraph
