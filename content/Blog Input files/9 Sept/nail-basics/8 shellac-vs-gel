@@ -1,0 +1,195 @@
+# INPUT FILE — shellac-vs-gel — SINGLE SOURCE OF TRUTH FOR BLOG GEN AGENT
+All POST_CONSTANTS are hardcoded. Do not ask, adjust, or override. All keywords, H2s, audience intel, links, tone must be followed exactly.
+
+## SECTION 2 — POST_CONSTANTS
+- slug: shellac-vs-gel
+- topic_slug: nail-basics
+- canonical: https://mirelleinspo.com/blog/nail-basics/shellac-vs-gel
+- post_type: spoke
+- intent: comparison
+- word_count: 1450
+- image_count: 1 (HERO ONLY — user override; comparison-intent default of 5 is superseded for this post)
+- show_inspo_gallery_link: false (user override — locked, not research-derived)
+- template: split-left
+- hero_dimensions: 800x800
+- category: Nail Basics & Definitions
+- publish_date: 2026-07-27
+- author: jyoti-mirelle
+
+## SECTION 3 — CLUSTER SNAPSHOT
+- pillar_slug: types-of-manicures-explained
+- pillar_title: Types of Manicures Explained
+- pillar_primary_keyword: types of manicures explained
+- this_post_slug: shellac-vs-gel
+- this_post_role: spoke
+- keywords_to_avoid: types of manicures explained; what is a manicure; what is gel polish how does it work; what is lacquer nail polish; what is a nail wrap; what is nail stamping; what are acrylic nails how do they work; types of nail polish; what is a cuticle; nail anatomy parts of the nail; what is the nail matrix; what is an e-file; what is hema nail products; what is nail fungus; best nail shape for your hands; how to find your nail shape; difference between gel acrylic and natural nails; how do i know what nail shape suits my hands; 5 basic nail shapes; difference between manicure and pedicure; how long do different types of manicures last
+
+## SECTION 4 — SERP ANALYSIS (web_fetch: Healthline, Amoure Nail, PureWow)
+- competitor_gaps: (1) No competitor clearly resolves the pro-side confusion of whether Shellac even IS a gel — SalonGeek threads show working nail techs disputing this outright ("Shellac is not a gel and has a uniquely different formulation"), a genuine tension none of the consumer articles surface. (2) Lifestyle-specific decision framing ("which for a job that involves housecleaning," "which for a first manicure," "which before a honeymoon/trip") appears in real Quora questions but no ranking post organises around it. (3) None directly separates the cost angle from durability in a clean side-by-side despite cost being a top-5 pain point.
+- missing_semantic_territory: "power polish" (CND's own original term for Shellac), "soak-off gel" vs "buff-off gel" distinction, "no-prep vs prep" application difference (strong pro-community signal), "which chips first."
+- our_strategic_approach: Resolve the "are they even different" confusion decisively in the first 100 words, then structure the entire post as a decision framework (this reader is mid-choice, not idly curious) rather than a dry feature-by-feature dump — closing with a direct recommendation matched to lifestyle, which most competitors avoid doing definitively.
+- top_3_word_count_estimates: Healthline ~850 | Amoure Nail ~1900 | PureWow ~1450 → average ≈ 1400
+- top_3_keyword_density_baseline: ≈ 6 direct "Shellac"/"gel" comparative pairings per post (estimated from paired-mention density across the three)
+
+## SECTION 5 — AUDIENCE INTELLIGENCE
+- who_they_are: A woman already standing at the decision point — either booking an appointment or in the chair being asked "Shellac or gel?" — who has heard both terms used interchangeably by salons and wants to know if there's a real difference before she answers.
+- what_they_want_from_this_post: A fast, confident, definitive answer: what's actually different, and which one fits her specific situation (lifestyle, nail health, event on the calendar).
+- what_frustrates_them: Salons using the terms interchangeably ("it's basically the same thing"); competitor posts that list differences but won't commit to a recommendation; not knowing that "Shellac" is a specific CND brand rather than a generic term.
+- top_5_pain_points: (1) Being told by salon staff the two are "basically the same" and not knowing if that's true. (2) Not knowing which lasts longer for their specific lifestyle (job, travel, event). (3) Fear of nail damage from the wrong removal process. (4) Confusion about cost difference and whether it's worth paying more. (5) Not knowing which is gentler for already-weak or thin nails.
+- exact_user_phrases: "are shellac and gel the same thing"; "which is kinder to nails"; "shellac or gel for a first manicure"; "which lasts longer shellac or gel"; "is shellac just a brand of gel"; "shellac vs gel which damages nails more"; "gel or shellac for housecleaning"; "shellac vs gel for honeymoon"; "why does my salon call gel shellac"; "shellac gel mani"
+- intent_content_signals: Wants a table or clear side-by-side, not paragraphs of hedging; wants a "go for X if" framework; responds to expert-quoted authority (nail techs, dermatology-adjacent sources); wants the removal process explained since nail damage is a real fear; wants one clear final recommendation, not "it depends" left unresolved.
+
+## SECTION 6 — SEMANTIC KEYWORD DATA
+- primary_keyword: shellac vs gel
+- keyword_variations: shellac vs gel nails; shellac or gel; gel vs shellac; shellac versus gel; is shellac the same as gel; shellac gel difference; CND Shellac vs gel polish
+- cluster_keywords: CND Shellac; power polish; soak-off gel; hybrid nail polish; hard gel; soft gel; gel polish system; UV/LED cure; acetone removal; nail chip resistance; salon manicure options; semi-permanent polish; gel manicure durability; Shellac manicure; nail enhancement type
+- lsi_terms: hybrid formula; gel polish brand; acrylic monomers and oligomers; soak-off removal; buffing and filing; nail plate damage; UV lamp curing; LED lamp curing; color payoff; chip resistance; nail health impact; manicure longevity; gentle removal; nail bed thinning; salon-safe removal; touch-up schedule; frequent colour changer; sensitive or weak nails; glossy finish; natural nail look
+- aeo_terms: is Shellac the same as gel nail polish; what is the actual difference between Shellac and gel; which lasts longer Shellac or gel; is Shellac gentler on nails than gel; how do you remove Shellac vs gel; which is more expensive Shellac or gel; can I get Shellac at home like gel; why does my salon use Shellac and gel interchangeably; is Shellac technically a type of gel; which should a first-timer choose Shellac or gel
+- technical_terms: CND (Creative Nail Design); soak-off gel; hard gel; power polish; UV curing lamp; LED curing lamp; acetone wrap removal; buffing/filing prep
+- user_language: "basically the same thing"; "shellac gel mani"; "which one chips first"; "which is kinder to my nails"; "not sure if it's worth the extra cost"; "my tech just calls everything shellac"; "will it wreck my nails to remove"; "which one for a first-timer"
+
+## SECTION 7 — VOICE & AI QUERIES
+1. Is Shellac the same as gel nail polish?
+2. What is the actual difference between Shellac and gel?
+3. Which lasts longer, Shellac or gel?
+4. Is Shellac gentler on your natural nails than gel?
+5. How do you remove Shellac compared to gel?
+6. Which is more expensive, Shellac or gel?
+7. Can I get Shellac done at home the way I can with gel kits?
+8. Why do salons use "Shellac" and "gel" interchangeably?
+9. Is Shellac technically a type of gel polish?
+10. Which should a first-timer choose, Shellac or gel?
+11. Which is better for weak or damaged nails, Shellac or gel?
+12. Does Shellac need less nail prep than gel?
+13. Which chips first, Shellac or gel?
+14. Is Shellac better for frequent colour changes than gel?
+15. Do both Shellac and gel need a UV or LED lamp?
+
+## SECTION 8 — HOOK & CTR
+- selected_trigger: Trigger 1 — Curiosity Gap
+- trigger_rationale: This reader suspects she's being misled by salons using the terms interchangeably, and wants the "honest truth" resolved before she commits to a booking.
+- title: Shellac vs Gel: What's the Difference? (58 chars)
+- title_char_count: 58
+- meta_description: Told Shellac and gel are "basically the same"? They're not. See the real differences in wear, cost and nail health before you book. (133 chars)
+- meta_char_count: 133
+- intro_hook_brief: Open on the exact salon moment — asking for gel, being told "we only have Shellac, it's pretty much the same" — then resolve immediately: they are not the same, and here's what actually separates them.
+- first_h2_hook_direction: Phrase the first H2 as the voice-search framing of the core confusion — "Are Shellac and gel actually different?" — answered in a direct 2-3 sentence AEO-style paragraph immediately underneath.
+
+## SECTION 9 — SEARCH JOURNEY
+- reader_arrival_state: Mid-decision and slightly wary — she's either booking or in the chair, has heard the two terms used as if interchangeable, and wants resolution before she commits.
+- journey_arc: (1) Confirm the confusion is real and resolve it immediately — they are different. (2) Give the clean side-by-side on formula, durability, removal, cost. (3) Address the nail-health fear directly with the removal process. (4) Resolve with a clear "choose X if" framework matched to lifestyle. (5) Close with a direct recommendation, not a shrug.
+- promise_to_deliver: A definitive, no-hedging answer to whether Shellac and gel are really different, and which one fits this reader's specific situation.
+- exit_state: Confident and ready to book — she knows exactly which to ask for and why, with no lingering "well it depends" uncertainty.
+
+## SECTION 10 — CONTENT STRUCTURE
+- h1: Shellac vs Gel: What's the Difference?
+- h2_structure:
+  1. Are Shellac and Gel Actually Different?
+  2. What Is Shellac, Exactly?
+  3. What Is Gel Polish, Exactly?
+  4. Shellac vs Gel: Durability and How Long Each Lasts
+  5. Removal: Which Is Gentler on Your Natural Nails?
+  6. Shellac vs Gel: Which Costs More?
+  7. Which Should You Choose?
+  8. Frequently Asked Questions
+- word_budget:
+  - introduction: 220
+  - conclusion: 180
+  - H2-1 (Are they different): 130
+  - H2-2 (What is Shellac): 160
+  - H2-3 (What is gel): 160
+  - H2-4 (Durability): 190
+  - H2-5 (Removal): 190
+  - H2-6 (Cost): 150
+  - H2-7 (Which to choose): 200
+  - H2-8 (FAQ): 250 (5 questions from AEO list not otherwise covered in body)
+
+## SECTION 11 — INTERNAL LINKS (4 total)
+1. url_or_slug: /blog/nail-basics/types-of-manicures-explained | title: Types of Manicures Explained | anchor_text: "types of manicures explained" | placement_note: H2-1, early context link | link_type: cluster-pillar
+2. url_or_slug: /blog/nail-basics/what-is-gel-polish | title: What Is Gel Polish? (And How It Works) | anchor_text: "what gel polish is and how it works" | placement_note: H2-3, deep-dive link | link_type: cluster-spoke
+3. url_or_slug: /blog/nail-basics/what-are-acrylic-nails | title: What Are Acrylic Nails? (How They Work) | anchor_text: "what acrylic nails are and how they work" | placement_note: H2-7, alternative-system mention | link_type: cluster-spoke
+4. url_or_slug: https://mirelleinspo.com/blog/gel-nails-cost/shellac-cost | title: Shellac Cost: What Salons Don't Tell You | anchor_text: "why two salons can charge $10-15 apart for the same Shellac service" | placement_note: H2-6 (Cost), natural fit for the pricing-variation angle | link_type: cross-site
+
+## SECTION 12 — VOICE & TONE
+- recommended_voice: Confident educator
+- tone_characteristics: Direct and decisive (no "it depends" left hanging); reassuring on the nail-damage fear; clear-eyed about salon confusion without blaming the reader; expert-toned but conversational; resolves rather than just informs.
+- language_style: Short, declarative sentences for the comparison facts; second-person "you" throughout; light use of the salon-moment analogy from the hook to keep it relatable; no hedging language ("it might," "could potentially") on settled facts.
+- audience_match: This reader wants resolution, not options restated back at her — a confident, decisive voice matches someone who wants to walk into her next appointment already knowing what to ask for.
+
+## SECTION 13 — EXTERNAL LINKS
+1. url: https://www.healthline.com/health/shellac-vs-gel | context: cite for nail-health/removal-safety framing | anchor_suggestion: "medically reviewed comparison of nail health impact"
+2. url: https://www.cnd.com/ | context: cite when defining Shellac as CND's trademarked system | anchor_suggestion: "CND, the brand behind Shellac"
+
+## SECTION 14 — EXECUTION PLAN
+
+### Block 1 — Keyword Execution
+- primary_keyword: shellac vs gel
+- top_3_density_baseline: 6
+- total_mention_target: 8 (baseline 6 + 2)
+- first_100_words_plan: mention_1 = sentence 2 of intro, inside the salon-moment hook ("you ask for a gel mani and they say Shellac is pretty much the same thing"); mention_2 = sentence 4-5 of intro, the direct resolution ("Here's the honest answer on shellac vs gel")
+- first_half_target: 5 mentions — first 725 words
+- second_half_target: 3 mentions — second 725 words
+- strong_tag_rule: every one of the 8 mentions wrapped in <strong> tags, no exceptions
+- keywords_to_avoid_active: full list from Section 3 — never used as focus terms
+
+### Block 2 — Word Budget
+- total_target: 1450 words (±50 tolerance)
+- introduction: 220
+- conclusion: 180
+- h2_budgets:
+  1. Are Shellac and Gel Actually Different? — 130 words — low complexity
+  2. What Is Shellac, Exactly? — 160 words — medium
+  3. What Is Gel Polish, Exactly? — 160 words — medium
+  4. Durability and How Long Each Lasts — 190 words — medium
+  5. Removal: Which Is Gentler? — 190 words — medium
+  6. Which Costs More? — 150 words — low
+  7. Which Should You Choose? — 200 words — high
+  8. FAQ — 250 words — medium
+- tracking_rule: track running total after each H2; cut before moving on if over budget
+
+### Block 3 — Image Plan
+- total_images: 1
+- hero_image: frontmatter only, never in body
+- body_images: 0
+- assignments: none — hero only per user override
+- image_type_rule: N/A this post (no body images)
+- path_rule: /images/blog/nail-basics/shellac-vs-gel/filename.webp
+
+### Block 4 — Opening Technique Assignments
+- Introduction: Technique 1 — The Claim ("They are not the same, and here's exactly why")
+- H2-1 (Are they different?): Technique 3 — The Reframe
+- H2-2 (What is Shellac?): Technique 2 — The Definition Lead
+- H2-3 (What is gel?): Technique 1 — The Claim
+- H2-4 (Durability): Technique 3 — The Reframe
+- H2-5 (Removal): Technique 2 — The Definition Lead
+- H2-6 (Cost): Technique 1 — The Claim
+- H2-7 (Which to choose): Technique 3 — The Reframe
+- Conclusion: Technique 1 — The Claim
+- banned_opener_rule: check every opener against banned_opening_approaches before writing sentence 2
+
+### Block 5 — Link Placements
+1. anchor_text: "types of manicures explained" | full_url: /blog/nail-basics/types-of-manicures-explained | place_in_section: H2-1 | placement_context: early mention when situating Shellac/gel within the broader manicure landscape | link_type: cluster-pillar
+2. anchor_text: "what gel polish is and how it works" | full_url: /blog/nail-basics/what-is-gel-polish | place_in_section: H2-3 | placement_context: pointing deeper readers to the full mechanism explainer | link_type: cluster-spoke
+3. anchor_text: "what acrylic nails are and how they work" | full_url: /blog/nail-basics/what-are-acrylic-nails | place_in_section: H2-7 | placement_context: mentioning acrylic as the third system when the reader wants extensions rather than colour-only | link_type: cluster-spoke
+4. anchor_text: "why two salons can charge $10-15 apart for the same Shellac service" | full_url: https://mirelleinspo.com/blog/gel-nails-cost/shellac-cost | place_in_section: H2-6 | placement_context: cost variance point, natural handoff to the dedicated cost breakdown | link_type: cross-site
+
+### Block 6 — AEO/GEO Plan
+- aeo_assignments:
+  1. "Is Shellac the same as gel nail polish?" → H2-1 → direct 2-3 sentence answer immediately after heading
+  2. "Which lasts longer, Shellac or gel?" → H2-4 → direct answer paragraph before elaboration
+  3. "Is Shellac gentler on your natural nails than gel?" → H2-5 → direct answer paragraph before elaboration
+  4. "Which is more expensive, Shellac or gel?" → H2-6 → direct answer paragraph before elaboration
+  5. Remaining AEO terms not assigned to a body H2 → FAQ section, one direct answer each
+- geo_entity_statements:
+  1. entity: CND Shellac | assigned_to_section: H2-2 | execution: declarative definition — "CND Shellac is a trademarked hybrid nail polish system combining gel and traditional lacquer, created by Creative Nail Design."
+  2. entity: Gel polish (soak-off) | assigned_to_section: H2-3 | execution: declarative definition — "Gel polish is a broad category of UV/LED-cured nail colour made from acrylic monomers and oligomers, produced by many different brands."
+
+### Block 7 — Active Constraints
+- em_dash_banned: replace any forming em dash with comma / new sentence / parentheses / restructure
+- banned_vocab_watch: "elevate," "unlock," "seamless," "game-changer," "in today's world," "boasts," "delve"
+- british_english_active: colour, recognise, -ise, -our throughout
+- keyword_density_reminder: count mentions after every 2 H2s; confirm on track for 8 total, denser in first half
+- image_path_reminder: N/A — no body images this post
+- internal_link_url_reminder: full paths only, cluster links = /blog/nail-basics/[slug], cross-site = exact discovered URL
+- hero_image_reminder: hero in frontmatter only, never in body
+- strong_tag_reminder: every one of the 8 primary keyword mentions wrapped in <strong> tags
