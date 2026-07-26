@@ -1,0 +1,216 @@
+# BLOG GEN AGENT INPUT FILE — SINGLE SOURCE OF TRUTH
+CLUSTER MODE — cluster: nail-basics (13-post cluster, pillar: types-of-manicures-explained)
+All values below are hardcoded. Blog Gen Agent does not ask, adjust, or override.
+
+## POST_CONSTANTS
+- slug: what-is-a-nail-wrap
+- topic_slug: nail-basics
+- canonical: https://mirelleinspo.com/blog/nail-basics/what-is-a-nail-wrap
+- post_type: spoke
+- intent: informational
+- word_count: 1650 (top-3 competitor average ~1450-1550 words; set above floor, well under 2800 spoke ceiling)
+- image_count: 1 (USER OVERRIDE — hero only, zero body images. Standard phase_2 rule_5 would otherwise apply since show_inspo_gallery_link=false and intent≠tutorial/comparison; overridden per explicit instruction.)
+- show_inspo_gallery_link: false (LOCKED per user instruction — not researched)
+- template: split-left
+- hero_dimensions: 800x800
+- category: Nail Basics & Definitions
+- publish_date: 2026-08-03
+- author: jyoti-mirelle
+
+## CLUSTER SNAPSHOT
+- pillar_slug: types-of-manicures-explained
+- pillar_title: Types of Manicures Explained
+- pillar_primary_keyword: types of manicures explained
+- this_post_slug: what-is-a-nail-wrap
+- this_post_role: spoke
+- keywords_to_avoid (never used as focus terms): types of manicures explained; what is a manicure; what is gel polish how does it work; what is lacquer nail polish; what is nail stamping; what are acrylic nails how do they work; types of nail polish; shellac vs gel; what is a cuticle; nail anatomy parts of the nail; what is the nail matrix; what is an e-file; what is hema nail products; what is nail fungus; best nail shape for your hands; how to find your nail shape; difference between gel acrylic and natural nails; how do i know what nail shape suits my hands; 5 basic nail shapes; difference between manicure and pedicure; how long do different types of manicures last
+
+## SERP ANALYSIS (real fetches: gurlgonegreen.com, nailsbyaina.com, pn-selfcare.com + 20+ search-verified sources)
+- competitor_gaps (demand confirmed on 2+ sources):
+  1. No competitor owns a pure, standalone "what is a nail wrap" definitional post — nearly every top result is a "vs" comparison (wraps vs stickers, vs press-ons, vs polish) or a product/brand page that pivots to selling within 2 paragraphs.
+  2. The word "nail wrap" has two genuinely distinct, unaddressed meanings: (a) modern adhesive polish-strip product (decorative, DIY), and (b) traditional salon silk/fiberglass wrap (nail repair/reinforcement service). Confirmed via Byrdie/AOL, Nailpro, Newport Nails, weheartthis, dyannaspa, Felice — no source explains both meanings side by side to resolve the confusion.
+  3. "Nail wraps vs nail stickers" is searched and written about constantly but always inside a selling context (Nails by Aina, NSI Nails) — no neutral, non-commercial explainer exists.
+  4. Material-type breakdown (vinyl/real-polish/gel-semi-cured/silk-fiberglass) exists but always buried inside brand blogs pushing their own product line.
+- missing_semantic_territory: neutral, non-commercial framing; the "two meanings of nail wrap" disambiguation; clear durability-by-material breakdown without a sales pitch; safety/damage question answered plainly.
+- our_strategic_approach: Position this as the single page that finally answers "what is a nail wrap" honestly and completely — covering both the decorative sticker-wrap and the older salon repair-wrap meanings, disambiguating from stickers/press-ons/polish along the way, without selling a product. This is the neutral reference competitors (who are all selling wraps) cannot credibly write.
+- recommended_image_count_validation: N/A — image_count locked to 1 (hero only) per user override, independent of SERP visual patterns.
+- top_3_word_count_estimates: ~1450-1550 words (Gurl Gone Green ~1450, Nails by Aina wraps-vs-stickers ~950, PN Selfcare ~700 but heavily product-embedded; Gurl Gone Green used as most representative pure-content baseline)
+- top_3_keyword_density_baseline: ~9-10 mentions of "nail wrap(s)" across top 3 posts
+
+## AUDIENCE INTELLIGENCE
+- who_they_are: Nail-curious consumers (overwhelmingly women, DIY-leaning, budget and time-conscious) who have seen "nail wraps" mentioned somewhere (TikTok, a friend, a product listing) and want a plain-English answer before buying anything. Mixed expertise: some are total beginners, some already use press-ons or polish and are comparing.
+- what_they_want_from_this_post: A clear, honest definition — what it actually is, what it's made of, how long it lasts, whether it's safe, and how it's different from stickers/press-ons/polish — without being sold a specific product.
+- what_frustrates_them: Every existing "what is a nail wrap" article is secretly a product page 2-3 paragraphs in; genuine confusion between "nail wrap" (sticker) and "nail wrap" (salon silk repair) is never addressed; durability numbers vary wildly across sources with no explanation why.
+- top_5_pain_points:
+  1. Can't tell if "nail wrap" means the sticker product or the salon nail-repair service when they see the term used differently in different places
+  2. Confusion between nail wraps, nail stickers, and press-on nails — genuinely unsure which one they need
+  3. Distrust of brand blogs' durability claims (7 days? 10 days? 3 weeks? no consistent number)
+  4. Worried wraps will damage natural nails or aren't safe for regular use
+  5. Don't know what nail wraps are actually made of, so can't judge quality when shopping later
+- exact_user_phrases: "what are nail wraps", "are nail wraps the same as stickers", "what is the average lifespan of nail wraps", "are nail wraps bad for your nails", "how long do nail wraps last", "are nail wraps worth it", "what are nail wraps made of", "do nail wraps damage your nails", "nail wraps vs press on nails", "what's the difference between a wrap and a sticker"
+- intent_content_signals: Wants short, direct answers up front (definition first, not a brand story); responds well to a simple materials breakdown; wants a straight durability answer with the "it depends on type" caveat explained, not buried; skeptical of "our brand is the best" framing; appreciates when two meanings/uses of a confusing term are separated clearly.
+
+## SEMANTIC KEYWORD DATA
+- primary_keyword: what is a nail wrap
+- keyword_variations: what are nail wraps, nail wrap definition, nail wraps meaning, what's a nail wrap, nail wrap explained, what do nail wraps do, types of nail wraps
+- cluster_keywords: nail polish strips, gel nail strips, semi-cured gel wraps, vinyl nail wraps, adhesive nail strips, full nail stickers, nail wrap material, silk wrap nails, fiberglass nail wrap, nail wrap application, nail wrap removal, nail wrap durability, DIY nail wraps, salon nail wrap, nail reinforcement wrap
+- lsi_terms: self-adhesive nail strip, polish film, top coat seal, cuticle prep, nail plate, nail wrap sizing, non-UV wrap, semi-cured gel, nail wrap lifespan, nail wrap safety, nail sticker vs wrap, press-on nails, nail wrap sheet, at-home manicure, salon-quality finish, nail wrap trimming, nail wrap brands, nail wrap designs, chip-resistant manicure, nail wrap curing
+- aeo_terms: "What is a nail wrap made of?", "How long do nail wraps last?", "Are nail wraps bad for your nails?", "What's the difference between a nail wrap and a nail sticker?", "Are nail wraps the same as press-on nails?", "Do nail wraps need a UV lamp?", "Are nail wraps safe to use every week?", "What is a silk wrap for nails?", "Can nail wraps damage your natural nails?", "How do you remove a nail wrap?"
+- technical_terms: semi-cured gel, vinyl film, adhesive backing, cuticle prep, top coat, acetone soak-off, silk/fiberglass reinforcement, nail plate bonding
+- user_language: "sticker that looks like polish", "no drying time", "peel and stick", "does it ruin your nails", "lasts about a week right?", "is it basically a fancy sticker", "salon nails without the salon", "why does everyone call different things a wrap"
+
+## VOICE & AI QUERIES (12-18 conversational queries — answer directly in body or route to FAQ)
+1. What is a nail wrap exactly?
+2. What are nail wraps made of?
+3. How long do nail wraps last?
+4. Are nail wraps the same thing as nail stickers?
+5. Are nail wraps bad for your nails?
+6. Do nail wraps damage your natural nails?
+7. Are nail wraps safe to wear every week?
+8. What's the difference between a nail wrap and a press-on nail?
+9. Do you need a UV lamp for nail wraps?
+10. What is a silk wrap for nails?
+11. Is a silk wrap the same as a nail wrap sticker?
+12. How do you remove a nail wrap without damaging your nails?
+13. Are nail wraps better than regular nail polish?
+14. Can nail wraps be reused?
+15. Do nail wraps work on short nails?
+16. Are gel nail wraps different from regular nail wraps?
+17. How do you know what size nail wrap to buy?
+
+## HOOK AND CTR
+- selected_trigger: Trigger 1 — Curiosity Gap (reader suspects they're confusing terms or missing something obvious; informational intent, decision_mode search behavior)
+- trigger_rationale: This reader has seen "nail wrap" used inconsistently (sticker vs salon repair vs press-on) and wants the confusion resolved — curiosity gap framing ("what people get wrong," "the real answer") matches that itch better than hype or numbers framing.
+- title_draft: What Is a Nail Wrap? The Honest, Simple Answer
+- title_char_count: 47 (within cap; no year tag required — informational/definitional page, not trend/seasonal/ideas/color)
+- meta_description_draft: Confused by "nail wrap"? See what it's actually made of, how long it lasts, and how it differs from stickers and press-ons — no product pitch.
+- meta_char_count: 148
+- intro_hook_brief: Open by naming the exact confusion (the term "nail wrap" means two different things depending on where you see it) before defining either — this validates the reader's uncertainty as reasonable rather than something they should already know.
+- first_h2_hook_direction: Phrase the first H2 as the direct voice-search question "What is a nail wrap?" and answer it in 2-3 plain sentences immediately, before any elaboration — subtle curiosity payoff, not a title repeat.
+
+## SEARCH JOURNEY
+- reader_arrival_state: Mildly confused and slightly skeptical — has seen "nail wrap" mean different things in different places and wants a straight, non-salesy definition before doing anything else.
+- journey_arc:
+  1. Confirm they're in the right place — this page defines the term plainly, no product pitch
+  2. Answer the core "what is it" question directly and disambiguate from the older salon-repair meaning
+  3. Cover what it's made of and how that affects durability
+  4. Resolve the wraps-vs-stickers-vs-press-ons confusion definitively
+  5. Close with safety/damage reassurance and a clear next step
+- promise_to_deliver: A plain, complete definition of "nail wrap" — both meanings — with no product pitch, matching the title's promise of an "honest, simple answer."
+- exit_state: Reader feels the term is fully sorted out — confident they know what a nail wrap is, what it's made of, how long it lasts, and which related term (sticker/press-on) actually applies to what they're picturing.
+
+## CONTENT STRUCTURE
+- h1: What Is a Nail Wrap? The Complete, Honest Breakdown
+- h2_structure:
+  1. What Is a Nail Wrap? (direct AEO answer + disambiguation of the two meanings)
+  2. What Are Nail Wraps Made Of?
+  3. How Long Do Nail Wraps Last?
+  4. Nail Wraps vs. Nail Stickers vs. Press-On Nails
+  5. Are Nail Wraps Bad for Your Nails?
+  6. What Is a Silk Wrap? (the salon repair meaning, clearly separated)
+  7. How to Apply and Remove a Nail Wrap (brief, non-tutorial overview)
+- word_budget:
+  - introduction: 220 words
+  - H2-1 (What Is a Nail Wrap?): 220 words
+  - H2-2 (Made Of): 220 words
+  - H2-3 (How Long They Last): 230 words
+  - H2-4 (vs Stickers vs Press-Ons): 260 words
+  - H2-5 (Bad for Nails?): 210 words
+  - H2-6 (Silk Wrap): 180 words
+  - H2-7 (Apply/Remove overview): 130 words
+  - conclusion: 180 words
+  - (total: ~1850, trim ~200 words during writing to land at 1650 target, ±50 tolerance)
+
+## INTERNAL LINKS (4-6 max, cluster links verbatim + cross-site descriptive anchors)
+1. url_or_slug: /blog/nail-basics/types-of-manicures-explained | title: Types of Manicures Explained | anchor_text: "types of manicures explained" | placement_note: introduction, framing this post within the broader manicure-terminology cluster | link_type: cluster-pillar
+2. url_or_slug: /blog/nail-basics/what-is-lacquer-nail-polish | title: What Is Lacquer Nail Polish? | anchor_text: "what lacquer nail polish means" | placement_note: H2-4 (vs stickers/press-ons/polish comparison), natural mention when distinguishing wraps from liquid polish | link_type: cluster-spoke
+3. url_or_slug: /blog/nail-basics/types-of-nail-polish | title: Types of Nail Polish Explained | anchor_text: "the different types of nail polish" | placement_note: H2-2 (materials section), when contrasting wrap materials to polish formulas | link_type: cluster-spoke
+4. url_or_slug: https://mirelleinspo.com/blog/nail-costs/how-much-do-nails-cost | title: How Much Do Nails Cost: Complete Pricing Guide | anchor_text: "what nail wraps cost compared to salon manicures" | placement_note: H2-3 (durability section) or conclusion, when discussing value/cost-per-wear of wraps vs salon visits | link_type: cross-site
+5. url_or_slug: https://mirelleinspo.com/shop/summer/best-summer-press-on-nails-2026 | title: Best Summer Press-On Nails 2026 | anchor_text: "how press-on nails compare for an at-home manicure" | placement_note: H2-4 (vs press-ons comparison), where the reader is actively deciding between wraps and press-ons | link_type: cross-site
+
+## VOICE & TONE
+- recommended_voice: Confident educator — neutral reference-desk clarity, not a brand voice
+- tone_characteristics: Plain-spoken; slightly reassuring; direct answers before elaboration; mildly wry about the "everyone calls something different a wrap" confusion; zero sales language; treats the reader as capable of understanding nuance (material types, durability ranges) without dumbing it down
+- language_style: Short, declarative sentences for definitions; second person ("you'll notice," "you don't need"); no rhetorical questions stacked back to back; analogies used sparingly and only where they clarify (e.g., silk wrap as reinforcement, not decoration)
+- audience_match: This reader wants clarity and completeness over personality — a confident, neutral explainer voice respects that they came for an answer, not a brand story, which is exactly the gap competitors leave open
+
+## EXTERNAL LINKS (E-E-A-T)
+1. url: https://nailpro.com/tips-for-repairing-split-nails-with-wraps | context: cite for the professional silk/fiberglass wrap repair technique (H2-6) | anchor_suggestion: "industry technique for repairing a cracked nail with a fiberglass wrap"
+2. url: https://www.aol.com/articles/silk-wrap-nails-low-maintenance-121000187.html (Byrdie-sourced) | context: cite for silk wrap nails as a low-maintenance nail-strengthening method, expert-quoted | anchor_suggestion: "how silk wrap nails reinforce damaged nails"
+
+## EXECUTION PLAN
+
+### Block 1 — Keyword Execution
+- primary_keyword: what is a nail wrap
+- top_3_density_baseline: 9-10 mentions
+- total_mention_target: 12 mentions total (baseline + 2-3)
+- first_100_words_plan:
+  - mention_1: sentence 2 of introduction — naming the term directly when introducing the confusion ("nail wrap" used inconsistently)
+  - mention_2: sentence 4-5 of introduction — restating the term when promising the plain definition to come
+- first_half_target: 7 mentions — words 1-825 (intro through H2-3)
+- second_half_target: 5 mentions — words 826-1650 (H2-4 through conclusion)
+- strong_tag_rule: every one of the 12 mentions wrapped in <strong> tags — scan after every paragraph
+- keywords_to_avoid_active: full list from cluster snapshot above — never used as focus terms
+
+### Block 2 — Word Budget
+- total_target: 1650 words (±50 tolerance, never exceed 1700)
+- introduction: 220 words
+- conclusion: 180 words
+- h2_budgets:
+  - What Is a Nail Wrap?: 220 words, complexity: low
+  - What Are Nail Wraps Made Of?: 220 words, complexity: medium
+  - How Long Do Nail Wraps Last?: 210 words, complexity: medium
+  - Nail Wraps vs. Nail Stickers vs. Press-On Nails: 260 words, complexity: high
+  - Are Nail Wraps Bad for Your Nails?: 200 words, complexity: medium
+  - What Is a Silk Wrap?: 170 words, complexity: medium
+  - How to Apply and Remove a Nail Wrap: 130 words, complexity: low
+- tracking_rule: track running word total after every H2; if over budget, cut before proceeding — do not compensate later
+
+### Block 3 — Image Plan (USER OVERRIDE: 1 hero only)
+- total_images: 1
+- hero_image: frontmatter only — NEVER appears in post body
+- body_images: 0 — no body images for this post per explicit user instruction
+- assignments: none — hero is the only image
+- image_type_rule: N/A (no body images)
+- path_rule: /images/blog/nail-basics/what-is-a-nail-wrap/hero.webp
+
+### Block 4 — Opening Technique Assignments
+(No two consecutive sections share a technique; conclusion = Technique 1 or 3)
+- Introduction: Technique 1 — The Claim (name the confusion directly: "nail wrap" means two different things)
+- What Is a Nail Wrap?: Technique 3 — The Reframe (answer plainly, reframe away from brand-speak)
+- What Are Nail Wraps Made Of?: Technique 2 — The Specific Detail (open with a concrete material fact)
+- How Long Do Nail Wraps Last?: Technique 1 — The Claim (state the honest range up front)
+- Nail Wraps vs. Stickers vs. Press-Ons: Technique 3 — The Reframe (reframe as "three different products, not synonyms")
+- Are Nail Wraps Bad for Your Nails?: Technique 2 — The Specific Detail
+- What Is a Silk Wrap?: Technique 1 — The Claim (state clearly it's a different, older meaning)
+- How to Apply and Remove: Technique 2 — The Specific Detail
+- Conclusion: Technique 3 — The Reframe (reader now has the full, disambiguated picture)
+- banned_opener_rule: check every opener against banned_opening_approaches in Blog Gen prompt before writing the second sentence
+
+### Block 5 — Link Placements
+1. anchor_text: "types of manicures explained" | full_url: /blog/nail-basics/types-of-manicures-explained | place_in_section: Introduction | placement_context: framing sentence connecting this post to the broader manicure-terminology series | link_type: cluster-pillar
+2. anchor_text: "what lacquer nail polish means" | full_url: /blog/nail-basics/what-is-lacquer-nail-polish | place_in_section: Nail Wraps vs. Nail Stickers vs. Press-On Nails | placement_context: when noting wraps replace liquid polish entirely | link_type: cluster-spoke
+3. anchor_text: "the different types of nail polish" | full_url: /blog/nail-basics/types-of-nail-polish | place_in_section: What Are Nail Wraps Made Of? | placement_context: when contrasting real-polish wraps to bottled polish formulas | link_type: cluster-spoke
+4. anchor_text: "what nail wraps cost compared to salon manicures" | full_url: https://mirelleinspo.com/blog/nail-costs/how-much-do-nails-cost | place_in_section: How Long Do Nail Wraps Last? | placement_context: brief value/cost-per-wear aside | link_type: cross-site
+5. anchor_text: "how press-on nails compare for an at-home manicure" | full_url: https://mirelleinspo.com/shop/summer/best-summer-press-on-nails-2026 | place_in_section: Nail Wraps vs. Nail Stickers vs. Press-On Nails | placement_context: when the reader is weighing wraps against press-ons | link_type: cross-site
+
+### Block 6 — AEO/GEO Plan
+- aeo_assignments:
+  1. "What is a nail wrap made of?" → What Are Nail Wraps Made Of? → direct 2-3 sentence answer immediately after heading naming vinyl/real-polish/gel/silk-fiberglass
+  2. "How long do nail wraps last?" → How Long Do Nail Wraps Last? → direct answer stating 7-10 days classic, 2-3 weeks gel, immediately after heading
+  3. "Are nail wraps the same as nail stickers?" → Nail Wraps vs. Nail Stickers vs. Press-On Nails → direct "no" answer with the core distinction, immediately after heading
+  4. "Are nail wraps bad for your nails?" → Are Nail Wraps Bad for Your Nails? → direct "not inherently" answer with the real risk factor (rushed removal), immediately after heading
+  5. "What is a silk wrap for nails?" → What Is a Silk Wrap? → direct definition distinguishing from decorative wraps, immediately after heading
+- geo_entity_statements:
+  1. entity: semi-cured gel wrap → assigned_to: What Are Nail Wraps Made Of? → clear declarative definition (a gel formula partially cured at the factory, finished under a UV/LED lamp at home)
+  2. entity: silk/fiberglass wrap → assigned_to: What Is a Silk Wrap? → clear declarative definition (a fabric reinforcement adhered with resin to repair or strengthen a cracked natural nail)
+
+### Block 7 — Active Constraints
+- em_dash_banned: long em dash never appears; replace with comma, new sentence, parentheses, "but," or restructure
+- banned_vocab_watch: elevate, unlock, dive in, game-changer, seamless, journey (non-search-journey usage), effortlessly, in today's world
+- british_english_active: colour, recognise, -ise, -our — every instance
+- keyword_density_reminder: after every 2 H2 sections, count mentions; verify on track for 12 total; first half denser than second half
+- image_path_reminder: N/A — no body images this post; hero path only: /images/blog/nail-basics/what-is-a-nail-wrap/hero.webp
+- internal_link_url_reminder: full correct paths only; cluster links = /blog/nail-basics/[slug]; cross-site = exact URL as discovered; never bare /slug
+- hero_image_reminder: hero = frontmatter only, never placed in body
+- strong_tag_reminder: every primary keyword mention = <strong> tags, scan after every paragraph
