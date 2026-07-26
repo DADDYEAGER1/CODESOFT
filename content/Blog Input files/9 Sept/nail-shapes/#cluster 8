@@ -1,0 +1,433 @@
+{
+  "cluster_metadata": {
+    "cluster_topic": "Nail Shapes",
+    "topic_slug": "nail-shapes",
+    "target_audience": "Global, Tier 1 countries (US, UK, Canada, Australia)",
+    "total_posts": 8,
+    "intent_breakdown": {
+      "informational": 3,
+      "inspirational": 0,
+      "tutorial": 0,
+      "comparison": 3,
+      "seasonal_trend": 2
+    },
+    "pillar_post_slug": "nail-shapes-chart",
+    "inspiration_gallery_url": "https://mirelleinspo.com/inspo/nail-shapes-chart-inspiration-gallery",
+    "created_date": "2026-07-26"
+  },
+
+  "existing_site_posts_excluded": [
+    {
+      "url": "https://mirelleinspo.com/nail-faqs/what-are-the-5-basic-nail-shapes-and-which-is-best-for-me",
+      "title": "What Are the 5 Basic Nail Shapes and Which Is Best for Me?",
+      "inferred_primary_keyword": "5 basic nail shapes / best nail shape",
+      "inferred_intent": "informational",
+      "exclusion_reason": "Already exists on mirelleinspo.com — keyword reserved. Short FAQ-format answer covering round/square/oval/almond/coffin; new pillar differentiates by scope (10+ shapes) and chart/visual format."
+    },
+    {
+      "url": "https://mirelleinspo.com/blog/almond-nails-guide",
+      "title": "Almond Nails: The Shapes, Lengths, and Salon Script for 2026",
+      "inferred_primary_keyword": "almond nails / almond nail shape",
+      "inferred_intent": "informational",
+      "exclusion_reason": "Already exists on mirelleinspo.com — keyword reserved. Almond shape fully owned."
+    },
+    {
+      "url": "https://mirelleinspo.com/blog/coffin-nails/coffin-nails-guide",
+      "title": "Coffin Nails: The Complete Guide to Shapes, Designs & Styles",
+      "inferred_primary_keyword": "coffin nails / ballerina nails",
+      "inferred_intent": "informational",
+      "exclusion_reason": "Already exists on mirelleinspo.com — keyword reserved. Coffin/ballerina shape fully owned; ballerina confirmed as regional name-variant, not a separate shape."
+    },
+    {
+      "url": "https://mirelleinspo.com/blog/almond-vs-coffin-nails",
+      "title": "Almond vs Coffin Nails: Which Shape Is Right for You?",
+      "inferred_primary_keyword": "almond vs coffin nails",
+      "inferred_intent": "comparison",
+      "exclusion_reason": "Already exists on mirelleinspo.com — keyword reserved. Comparison angle owned."
+    },
+    {
+      "url": "https://mirelleinspo.com/blog/almond-vs-oval-nails",
+      "title": "Almond vs Oval Nails: Differences & How to Choose",
+      "inferred_primary_keyword": "almond vs oval nails",
+      "inferred_intent": "comparison",
+      "exclusion_reason": "Already exists on mirelleinspo.com — keyword reserved. Discovered mid-research; caused the cluster's oval-shape post to be cut entirely to avoid overlap."
+    },
+    {
+      "url": "https://mirelleinspo.com/blog/nail-shape-for-hands/best-nail-shape-for-your-hands",
+      "title": "Best Nail Shape for Your Hands",
+      "inferred_primary_keyword": "best nail shape for your hands",
+      "inferred_intent": "informational",
+      "exclusion_reason": "Already exists on mirelleinspo.com — keyword reserved. Hand-type-to-shape matching pillar owned."
+    },
+    {
+      "url": "https://mirelleinspo.com/blog/nail-shape-for-hands/classiest-nail-shape",
+      "title": "Classiest Nail Shape",
+      "inferred_primary_keyword": "classiest nail shape",
+      "inferred_intent": "inspirational",
+      "exclusion_reason": "Already exists on mirelleinspo.com — keyword reserved. Identity/aesthetic angle owned."
+    },
+    {
+      "url": "https://mirelleinspo.com/blog/nail-shape-for-hands/nails-for-small-hands",
+      "title": "Nails for Small Hands: Shapes That Flatter Petite Fingers",
+      "inferred_primary_keyword": "nails for small hands",
+      "inferred_intent": "informational",
+      "exclusion_reason": "Already exists on mirelleinspo.com — keyword reserved. Hand-type spoke owned."
+    },
+    {
+      "url": "https://mirelleinspo.com/blog/nail-shape-for-hands/nails-for-wide-nail-beds",
+      "title": "Nails for Wide Nail Beds: Every Shape Worth Knowing",
+      "inferred_primary_keyword": "nails for wide nail beds",
+      "inferred_intent": "informational",
+      "exclusion_reason": "Already exists on mirelleinspo.com — keyword reserved. Hand-type spoke owned."
+    },
+    {
+      "url": "https://mirelleinspo.com/blog/nail-shape-for-hands/nails-for-short-fingers",
+      "title": "Nails for Short Fingers: 7 Shapes That Actually Flatter",
+      "inferred_primary_keyword": "nails for short fingers",
+      "inferred_intent": "informational",
+      "exclusion_reason": "Already exists on mirelleinspo.com — keyword reserved. Hand-type spoke owned."
+    },
+    {
+      "url": "https://mirelleinspo.com/blog/nails-for-older-women/best-nail-shape-for-mature-hands",
+      "title": "Best Nail Shape for Mature Hands: What Actually Works",
+      "inferred_primary_keyword": "best nail shape for mature hands",
+      "inferred_intent": "informational",
+      "exclusion_reason": "Already exists on mirelleinspo.com — keyword reserved. Mature-hands shape angle owned."
+    },
+    {
+      "url": "https://mirelleinspo.com/work-nails/nail-shapes-for-work",
+      "title": "Nail Shapes for Work: Which Ones Actually Read Professional",
+      "inferred_primary_keyword": "nail shapes for work",
+      "inferred_intent": "informational",
+      "exclusion_reason": "Already exists on mirelleinspo.com — keyword reserved. Work-context shape angle owned."
+    },
+    {
+      "url": "https://mirelleinspo.com/blog/wedding-nails/nail-shape-for-wedding",
+      "title": "Nail Shape for Wedding: Guide for Every Hand",
+      "inferred_primary_keyword": "nail shape for wedding",
+      "inferred_intent": "informational",
+      "exclusion_reason": "Already exists on mirelleinspo.com — keyword reserved. Wedding-context shape angle owned."
+    },
+    {
+      "url": "https://mirelleinspo.com/blog/nail-trends-2026/nail-trends-2026",
+      "title": "Nail Trends 2026: Every Look Dominating This Year",
+      "inferred_primary_keyword": "nail trends 2026",
+      "inferred_intent": "seasonal_trend",
+      "exclusion_reason": "Already exists on mirelleinspo.com — keyword reserved. Broad 2026 trends pillar already names short almond/squoval as dominant shapes; new cluster's 'most popular nail shape 2026' post is scoped as a ranked, data-driven breakdown rather than restating this pillar's claims."
+    }
+  ],
+
+  "posts": [
+    {
+      "post_id": 1,
+      "role": "pillar",
+      "title": "Nail Shapes Chart: Every Shape Explained",
+      "slug": "nail-shapes-chart",
+      "primary_keyword": "nail shapes chart",
+      "intent": "informational",
+      "search_mode": "inspiration_mode",
+      "suggested_hook_trigger": "Trigger 3 — Specificity/Numbers",
+      "search_demand_signals": [
+        "Pinterest: 663 searches logged directly on 'nail shaping guide' query cluster",
+        "Multiple dedicated competitor chart-format guides validate query pattern: Mylee ('Definitive Guide to Every Nail Shape'), TheBeautyFoodie ('Nail Shapes Chart'), Semilac ('Nail Shapes Decoded')"
+      ],
+      "why_included": "Comprehensive shape reference in chart/visual comparison format — a format and depth (10+ shapes) Mirellé has zero coverage of. Differentiated from the existing 5-basic-shapes FAQ by scope and visual-chart structure.",
+      "internal_links": {
+        "links_to": [
+          { "slug": "square-nails", "anchor_text": "complete square nails shape guide", "type": "spoke" },
+          { "slug": "round-vs-square-nails", "anchor_text": "round vs square nails comparison", "type": "spoke" },
+          { "slug": "squoval-nails", "anchor_text": "squoval nails explained in full", "type": "spoke" },
+          { "slug": "short-stiletto-nails", "anchor_text": "short stiletto nails trend guide", "type": "spoke" },
+          { "slug": "unconventional-nail-shapes", "anchor_text": "duck, lipstick and flare nail shapes explained", "type": "spoke" },
+          { "slug": "strongest-nail-shape", "anchor_text": "which nail shape is the strongest", "type": "spoke" },
+          { "slug": "most-popular-nail-shape-2026", "anchor_text": "most popular nail shape of 2026 ranked", "type": "spoke" }
+        ],
+        "gallery_link": {
+          "url": "https://mirelleinspo.com/inspo/nail-shapes-chart-inspiration-gallery",
+          "anchor_text": "nail shapes inspiration gallery"
+        },
+        "receives_links_from": [
+          { "slug": "square-nails", "anchor_text": "full nail shapes chart" },
+          { "slug": "round-vs-square-nails", "anchor_text": "complete nail shapes chart" },
+          { "slug": "squoval-nails", "anchor_text": "nail shapes chart for every shape" },
+          { "slug": "short-stiletto-nails", "anchor_text": "full nail shapes chart" },
+          { "slug": "unconventional-nail-shapes", "anchor_text": "complete nail shapes chart" },
+          { "slug": "strongest-nail-shape", "anchor_text": "nail shapes chart covering every shape" },
+          { "slug": "most-popular-nail-shape-2026", "anchor_text": "full nail shapes chart" }
+        ]
+      },
+      "status": "approved"
+    },
+    {
+      "post_id": 2,
+      "role": "spoke",
+      "title": "Square Nails: Complete Shape Guide",
+      "slug": "square-nails",
+      "primary_keyword": "square nails",
+      "intent": "seasonal_trend",
+      "search_mode": "aesthetic_identity_mode",
+      "suggested_hook_trigger": "Trigger 4 — Identity Mirroring",
+      "search_demand_signals": [
+        "NAILSAMI: salons report 40% jump in square nail requests since March 2026",
+        "Vogue / celebrity manicurist Julia Diogo quoted on square nails' 2026 resurgence vs almond fatigue",
+        "Joyee Nails: 'short square nails' confirmed as the second-most-searched keyword within the square cluster — dedicated secondary target inside this post"
+      ],
+      "why_included": "Square nails are having a major, well-documented 2026 comeback (vs almond fatigue narrative) and Mirellé has zero dedicated post despite mentioning square 15+ times across hand-type and work-nails posts.",
+      "internal_links": {
+        "links_to": [
+          { "slug": "nail-shapes-chart", "anchor_text": "full nail shapes chart", "type": "pillar" },
+          { "slug": "round-vs-square-nails", "anchor_text": "round vs square nails comparison", "type": "spoke" },
+          { "slug": "squoval-nails", "anchor_text": "squoval nails, square's softer cousin", "type": "spoke" },
+          { "slug": "strongest-nail-shape", "anchor_text": "which nail shape is the strongest", "type": "spoke" }
+        ],
+        "receives_links_from": [
+          { "slug": "nail-shapes-chart", "anchor_text": "complete square nails shape guide" },
+          { "slug": "round-vs-square-nails", "anchor_text": "full square nails shape guide" },
+          { "slug": "squoval-nails", "anchor_text": "complete square nails guide" },
+          { "slug": "strongest-nail-shape", "anchor_text": "square nails shape guide" }
+        ]
+      },
+      "status": "approved"
+    },
+    {
+      "post_id": 3,
+      "role": "spoke",
+      "title": "Round vs Square Nails: Which Is Actually Right for You",
+      "slug": "round-vs-square-nails",
+      "primary_keyword": "round vs square nails",
+      "intent": "comparison",
+      "search_mode": "decision_mode",
+      "suggested_hook_trigger": "Trigger 1 — Curiosity Gap",
+      "search_demand_signals": [
+        "Dedicated comparison articles found on nailprime.com ('Natural Nails Square vs Round') and artnailnyc.com validating this as its own searched query",
+        "TikTok content specifically addressing round/oval/square shape confusion and differences"
+      ],
+      "why_included": "Genuine, validated comparison query distinct from the site's existing almond-vs-oval and almond-vs-coffin comparisons — round and square have never been directly compared on Mirellé despite both being constantly referenced.",
+      "internal_links": {
+        "links_to": [
+          { "slug": "nail-shapes-chart", "anchor_text": "complete nail shapes chart", "type": "pillar" },
+          { "slug": "square-nails", "anchor_text": "full square nails shape guide", "type": "spoke" },
+          { "slug": "squoval-nails", "anchor_text": "squoval nails, the shape between round and square", "type": "spoke" },
+          { "slug": "strongest-nail-shape", "anchor_text": "which nail shape is the strongest", "type": "spoke" }
+        ],
+        "receives_links_from": [
+          { "slug": "nail-shapes-chart", "anchor_text": "round vs square nails comparison" },
+          { "slug": "square-nails", "anchor_text": "round vs square nails comparison" },
+          { "slug": "squoval-nails", "anchor_text": "round vs square nails comparison" },
+          { "slug": "strongest-nail-shape", "anchor_text": "round vs square durability comparison" }
+        ]
+      },
+      "status": "approved"
+    },
+    {
+      "post_id": 4,
+      "role": "spoke",
+      "title": "Squoval Nails: The Shape No One Explains Properly",
+      "slug": "squoval-nails",
+      "primary_keyword": "squoval nails",
+      "intent": "informational",
+      "search_mode": "decision_mode",
+      "suggested_hook_trigger": "Trigger 1 — Curiosity Gap",
+      "search_demand_signals": [
+        "Joyee Nails: squoval nails receive 12,100 searches/month; short squoval receives 3,500 searches/month — the strongest single data point in the entire cluster",
+        "OPI, Manucurist, and Purluxe Beauty all independently frame squoval as 'the most universally flattering' shape, and it is named explicitly as the default recommendation across 3+ existing Mirellé hand-type/work posts without ever being explained on its own"
+      ],
+      "why_included": "Squoval is name-dropped constantly across Mirellé's existing hand-type and work-nails content as the practical favorite, yet has never had a dedicated explainer — highest-confidence traffic opportunity in the cluster given the confirmed search volume.",
+      "internal_links": {
+        "links_to": [
+          { "slug": "nail-shapes-chart", "anchor_text": "nail shapes chart for every shape", "type": "pillar" },
+          { "slug": "square-nails", "anchor_text": "complete square nails guide", "type": "spoke" },
+          { "slug": "round-vs-square-nails", "anchor_text": "round vs square nails comparison", "type": "spoke" },
+          { "slug": "strongest-nail-shape", "anchor_text": "which nail shape is the strongest", "type": "spoke" }
+        ],
+        "receives_links_from": [
+          { "slug": "nail-shapes-chart", "anchor_text": "squoval nails explained in full" },
+          { "slug": "square-nails", "anchor_text": "squoval nails, square's softer cousin" },
+          { "slug": "round-vs-square-nails", "anchor_text": "squoval nails, the shape between round and square" },
+          { "slug": "strongest-nail-shape", "anchor_text": "squoval nails shape guide" }
+        ]
+      },
+      "status": "approved"
+    },
+    {
+      "post_id": 5,
+      "role": "spoke",
+      "title": "Short Stiletto Nails: The Trend Taking Over",
+      "slug": "short-stiletto-nails",
+      "primary_keyword": "short stiletto nails",
+      "intent": "seasonal_trend",
+      "search_mode": "aesthetic_identity_mode",
+      "suggested_hook_trigger": "Trigger 4 — Identity Mirroring",
+      "search_demand_signals": [
+        "2023 Pinterest Predicts report specifically named short stiletto nails as a rising trend, with sustained momentum through 2025-2026",
+        "InStyle dedicated roundup: '20 Looks' feature specifically on short stiletto nails as a distinct, trending sub-shape solving stiletto's practicality objection"
+      ],
+      "why_included": "The specific long-tail 'short stiletto' — not generic 'stiletto nails' — is where the real, validated 2025-2026 traffic and trend momentum sits. This angle directly solves stiletto's biggest objection (impracticality), which is the real reason people search for it.",
+      "internal_links": {
+        "links_to": [
+          { "slug": "nail-shapes-chart", "anchor_text": "full nail shapes chart", "type": "pillar" },
+          { "slug": "unconventional-nail-shapes", "anchor_text": "duck, lipstick and flare nail shapes explained", "type": "spoke" },
+          { "slug": "most-popular-nail-shape-2026", "anchor_text": "most popular nail shape of 2026 ranked", "type": "spoke" },
+          { "slug": "strongest-nail-shape", "anchor_text": "which nail shape is the strongest", "type": "spoke" }
+        ],
+        "receives_links_from": [
+          { "slug": "nail-shapes-chart", "anchor_text": "short stiletto nails trend guide" },
+          { "slug": "unconventional-nail-shapes", "anchor_text": "short stiletto nails trend guide" },
+          { "slug": "most-popular-nail-shape-2026", "anchor_text": "short stiletto nails trend breakdown" },
+          { "slug": "strongest-nail-shape", "anchor_text": "short stiletto nails durability trade-off" }
+        ]
+      },
+      "status": "approved"
+    },
+    {
+      "post_id": 6,
+      "role": "spoke",
+      "title": "Unconventional Nail Shapes: Duck, Lipstick & Flare Explained",
+      "slug": "unconventional-nail-shapes",
+      "primary_keyword": "duck nails",
+      "intent": "informational",
+      "search_mode": "inspiration_mode",
+      "suggested_hook_trigger": "Trigger 2 — FOMO/Trend",
+      "search_demand_signals": [
+        "NailBold: dedicated 2026 duck nails guide ('7 Stunning Design Ideas For 2026')",
+        "Franklins, L'Oréal Paris, and Diamond Nail Supplies each independently cover duck/lipstick/flare nails as a distinct novelty-shape category"
+      ],
+      "why_included": "Duck, lipstick, and flare nails individually don't clear the bar for separate posts (real but thinner demand each), but combined as a novelty-shapes roundup they form one validated, distinct angle nothing else on the site covers.",
+      "internal_links": {
+        "links_to": [
+          { "slug": "nail-shapes-chart", "anchor_text": "complete nail shapes chart", "type": "pillar" },
+          { "slug": "short-stiletto-nails", "anchor_text": "short stiletto nails trend guide", "type": "spoke" },
+          { "slug": "most-popular-nail-shape-2026", "anchor_text": "most popular nail shape of 2026 ranked", "type": "spoke" },
+          { "slug": "strongest-nail-shape", "anchor_text": "which nail shape is the strongest", "type": "spoke" }
+        ],
+        "receives_links_from": [
+          { "slug": "nail-shapes-chart", "anchor_text": "duck, lipstick and flare nail shapes explained" },
+          { "slug": "short-stiletto-nails", "anchor_text": "duck, lipstick and flare nail shapes explained" },
+          { "slug": "most-popular-nail-shape-2026", "anchor_text": "unconventional nail shapes roundup" },
+          { "slug": "strongest-nail-shape", "anchor_text": "duck and lipstick nails durability trade-offs" }
+        ]
+      },
+      "status": "approved"
+    },
+    {
+      "post_id": 7,
+      "role": "spoke",
+      "title": "What's the Strongest Nail Shape? (Durability Ranked)",
+      "slug": "strongest-nail-shape",
+      "primary_keyword": "strongest nail shape",
+      "intent": "comparison",
+      "search_mode": "decision_mode",
+      "suggested_hook_trigger": "Trigger 1 — Curiosity Gap",
+      "search_demand_signals": [
+        "Revlon FAQ schema directly answers 'what's the strongest nail shape' — confirming it as a recognized PAA-style query",
+        "TikTok Shop content, plus 3+ dedicated competitor guides (almondnails.com, salon1150.com, mobilenailnewyork.com) all built specifically around this question"
+      ],
+      "why_included": "Recurring, cross-source PAA-style question distinct from 'most popular' — a durability-first decision angle nobody on Mirellé currently owns, despite durability being mentioned piecemeal across nearly every existing shape/hand-type post.",
+      "internal_links": {
+        "links_to": [
+          { "slug": "nail-shapes-chart", "anchor_text": "nail shapes chart covering every shape", "type": "pillar" },
+          { "slug": "squoval-nails", "anchor_text": "squoval nails shape guide", "type": "spoke" },
+          { "slug": "round-vs-square-nails", "anchor_text": "round vs square durability comparison", "type": "spoke" },
+          { "slug": "short-stiletto-nails", "anchor_text": "short stiletto nails durability trade-off", "type": "spoke" }
+        ],
+        "receives_links_from": [
+          { "slug": "nail-shapes-chart", "anchor_text": "which nail shape is the strongest" },
+          { "slug": "square-nails", "anchor_text": "which nail shape is the strongest" },
+          { "slug": "round-vs-square-nails", "anchor_text": "which nail shape is the strongest" },
+          { "slug": "squoval-nails", "anchor_text": "which nail shape is the strongest" },
+          { "slug": "short-stiletto-nails", "anchor_text": "which nail shape is the strongest" },
+          { "slug": "unconventional-nail-shapes", "anchor_text": "which nail shape is the strongest" }
+        ]
+      },
+      "status": "approved"
+    },
+    {
+      "post_id": 8,
+      "role": "spoke",
+      "title": "Most Popular Nail Shape of 2026, Ranked",
+      "slug": "most-popular-nail-shape-2026",
+      "primary_keyword": "most popular nail shape 2026",
+      "intent": "seasonal_trend",
+      "search_mode": "decision_mode",
+      "suggested_hook_trigger": "Trigger 1 — Curiosity Gap",
+      "search_demand_signals": [
+        "Byrdie, WhoWhatWear, Marie Claire, and Woman & Home all published dedicated 2026 nail-shape-trend rankings citing salon booking data",
+        "TikTok trending content and PureNailsUK / GinasNailSupplies competitor guides show sustained, seasonally-refreshing editorial consensus around this exact query pattern"
+      ],
+      "why_included": "This is the original requested topic — scoped as a ranked, data-driven trend breakdown (salon booking data, TikTok signals, competing 2026 predictions) rather than restating the existing 5-basic-shapes FAQ's static answer or the nail-trends-2026 pillar's dominant-shape claim.",
+      "internal_links": {
+        "links_to": [
+          { "slug": "nail-shapes-chart", "anchor_text": "full nail shapes chart", "type": "pillar" },
+          { "slug": "square-nails", "anchor_text": "square nails' 2026 comeback explained", "type": "spoke" },
+          { "slug": "short-stiletto-nails", "anchor_text": "short stiletto nails trend breakdown", "type": "spoke" },
+          { "slug": "unconventional-nail-shapes", "anchor_text": "unconventional nail shapes roundup", "type": "spoke" }
+        ],
+        "receives_links_from": [
+          { "slug": "nail-shapes-chart", "anchor_text": "most popular nail shape of 2026 ranked" },
+          { "slug": "short-stiletto-nails", "anchor_text": "most popular nail shape of 2026 ranked" },
+          { "slug": "unconventional-nail-shapes", "anchor_text": "most popular nail shape of 2026 ranked" }
+        ]
+      },
+      "status": "approved"
+    }
+  ],
+
+  "keyword_ownership_registry": {
+    "description": "Master list of all primary keywords — one per post, no overlaps, includes existing site posts",
+    "entries": [
+      { "primary_keyword": "nail shapes chart", "owned_by_slug": "nail-shapes-chart", "owned_by_title": "Nail Shapes Chart: Every Shape Explained", "source": "new post" },
+      { "primary_keyword": "square nails", "owned_by_slug": "square-nails", "owned_by_title": "Square Nails: Complete Shape Guide", "source": "new post" },
+      { "primary_keyword": "round vs square nails", "owned_by_slug": "round-vs-square-nails", "owned_by_title": "Round vs Square Nails: Which Is Actually Right for You", "source": "new post" },
+      { "primary_keyword": "squoval nails", "owned_by_slug": "squoval-nails", "owned_by_title": "Squoval Nails: The Shape No One Explains Properly", "source": "new post" },
+      { "primary_keyword": "short stiletto nails", "owned_by_slug": "short-stiletto-nails", "owned_by_title": "Short Stiletto Nails: The Trend Taking Over", "source": "new post" },
+      { "primary_keyword": "duck nails", "owned_by_slug": "unconventional-nail-shapes", "owned_by_title": "Unconventional Nail Shapes: Duck, Lipstick & Flare Explained", "source": "new post" },
+      { "primary_keyword": "strongest nail shape", "owned_by_slug": "strongest-nail-shape", "owned_by_title": "What's the Strongest Nail Shape? (Durability Ranked)", "source": "new post" },
+      { "primary_keyword": "most popular nail shape 2026", "owned_by_slug": "most-popular-nail-shape-2026", "owned_by_title": "Most Popular Nail Shape of 2026, Ranked", "source": "new post" },
+      { "primary_keyword": "5 basic nail shapes / best nail shape", "owned_by_slug": "what-are-the-5-basic-nail-shapes-and-which-is-best-for-me", "owned_by_title": "What Are the 5 Basic Nail Shapes and Which Is Best for Me?", "source": "existing site post" },
+      { "primary_keyword": "almond nails", "owned_by_slug": "almond-nails-guide", "owned_by_title": "Almond Nails Guide", "source": "existing site post" },
+      { "primary_keyword": "coffin nails / ballerina nails", "owned_by_slug": "coffin-nails-guide", "owned_by_title": "Coffin Nails: The Complete Guide", "source": "existing site post" },
+      { "primary_keyword": "almond vs coffin nails", "owned_by_slug": "almond-vs-coffin-nails", "owned_by_title": "Almond vs Coffin Nails", "source": "existing site post" },
+      { "primary_keyword": "almond vs oval nails", "owned_by_slug": "almond-vs-oval-nails", "owned_by_title": "Almond vs Oval Nails", "source": "existing site post" },
+      { "primary_keyword": "best nail shape for your hands", "owned_by_slug": "best-nail-shape-for-your-hands", "owned_by_title": "Best Nail Shape for Your Hands", "source": "existing site post" },
+      { "primary_keyword": "classiest nail shape", "owned_by_slug": "classiest-nail-shape", "owned_by_title": "Classiest Nail Shape", "source": "existing site post" },
+      { "primary_keyword": "nails for small hands", "owned_by_slug": "nails-for-small-hands", "owned_by_title": "Nails for Small Hands", "source": "existing site post" },
+      { "primary_keyword": "nails for wide nail beds", "owned_by_slug": "nails-for-wide-nail-beds", "owned_by_title": "Nails for Wide Nail Beds", "source": "existing site post" },
+      { "primary_keyword": "nails for short fingers", "owned_by_slug": "nails-for-short-fingers", "owned_by_title": "Nails for Short Fingers", "source": "existing site post" },
+      { "primary_keyword": "best nail shape for mature hands", "owned_by_slug": "best-nail-shape-for-mature-hands", "owned_by_title": "Best Nail Shape for Mature Hands", "source": "existing site post" },
+      { "primary_keyword": "nail shapes for work", "owned_by_slug": "nail-shapes-for-work", "owned_by_title": "Nail Shapes for Work", "source": "existing site post" },
+      { "primary_keyword": "nail shape for wedding", "owned_by_slug": "nail-shape-for-wedding", "owned_by_title": "Nail Shape for Wedding", "source": "existing site post" },
+      { "primary_keyword": "nail trends 2026", "owned_by_slug": "nail-trends-2026", "owned_by_title": "Nail Trends 2026", "source": "existing site post" }
+    ]
+  },
+
+  "merged_posts_log": [
+    {
+      "original_topics": ["duck nails", "lipstick nails", "flare nails"],
+      "merged_into": "Unconventional Nail Shapes: Duck, Lipstick & Flare Explained",
+      "reason": "Each shape individually has real but thin demand (single dedicated guides, niche/novelty search volume). Combined as one 'unconventional shapes' roundup, they form a single validated, higher-traffic post rather than three thin ones."
+    }
+  ],
+
+  "killed_posts_log": [
+    {
+      "topic": "Oval Nails: The Shape Guide",
+      "reason": "Cut by user decision after discovering /blog/almond-vs-oval-nails already exists on mirelleinspo.com. Initial oval angle risked overlapping that existing comparison post; rather than force a workaround angle, the post was removed from the cluster entirely."
+    },
+    {
+      "topic": "Ballerina Nails (standalone)",
+      "reason": "Confirmed via multiple sources (NAILS Magazine, NailKnowledge) to be a regional name-variant of coffin nails, not a structurally distinct shape. Already addressed inside the existing coffin-nails-guide post."
+    },
+    {
+      "topic": "Coffin vs Stiletto Nails",
+      "reason": "Only one clear demand source found distinct from the site's existing almond-vs-coffin comparison; insufficient differentiation and overlapping comparison territory."
+    },
+    {
+      "topic": "Arrowhead / Edge Nails (standalone)",
+      "reason": "Appeared in only one source with no second independent demand signal — fails the 2-source validation rule."
+    },
+    {
+      "topic": "Generic 'Stiletto Nails' (long shape, no length qualifier)",
+      "reason": "Superseded by 'Short Stiletto Nails' after research showed the specific short-stiletto long-tail carries the real, validated 2025-2026 trend momentum (Pinterest Predicts, InStyle dedicated roundup), while generic long stiletto has thinner, more scattered demand."
+    }
+  ]
+}
