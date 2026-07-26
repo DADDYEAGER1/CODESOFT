@@ -1,0 +1,291 @@
+{
+  "section_1_file_authority": "THIS FILE IS THE SINGLE SOURCE OF TRUTH FOR THE BLOG GEN AGENT. All POST_CONSTANTS are hardcoded — do not ask, adjust, or override. All keywords, H2 structure, audience intelligence, internal links, and tone must be followed exactly.",
+
+  "section_2_post_constants": {
+    "slug": "easy-thanksgiving-nails",
+    "topic_slug": "thanksgiving-nails",
+    "canonical": "https://mirelleinspo.com/blog/thanksgiving-nails/easy-thanksgiving-nails",
+    "post_type": "spoke",
+    "intent": "tutorial",
+    "word_count": 2000,
+    "image_count": 5,
+    "show_inspo_gallery_link": false,
+    "template": "split-left",
+    "hero_dimensions": "800x800",
+    "category": "Nail Art Guide",
+    "publish_date": "2026-08-29",
+    "author": "jyoti-mirelle"
+  },
+
+  "section_3_cluster_snapshot": {
+    "pillar_slug": "thanksgiving-nail-ideas",
+    "pillar_title": "Thanksgiving Nail Ideas",
+    "pillar_primary_keyword": "thanksgiving nail ideas",
+    "this_post_slug": "easy-thanksgiving-nails",
+    "this_post_role": "spoke",
+    "keywords_to_avoid": ["thanksgiving nail ideas", "turkey nail art", "thanksgiving nail colors", "short thanksgiving nails", "french tip thanksgiving nails"]
+  },
+
+  "section_4_cannibalization_audit": {
+    "note": "This block is not part of the standard 14-section output — added here because this keyword sits closest in the cluster to two other locked posts and needed explicit boundary enforcement before research began.",
+    "vs_turkey_nail_art": "turkey-nail-art owns ALL figural/animal-shape freehand technique (dotting tool for round shapes, striper brush for feathers, painting an actual turkey). This post excludes any turkey, animal, or figural imagery entirely — every design here is abstract, color-based, or pattern-based (solid color, ombre, color-blocking, accent nail, thin stripe). No overlap possible because the subject matter is structurally different, not just differently worded.",
+    "vs_thanksgiving_nail_colors": "thanksgiving-nail-colors owns the decision layer of WHICH shade/finish to choose and why. This post assumes a color has already been picked and focuses purely on HOW to execute a simple design with it. Color names appear only as instructional examples within a technique step, never as the subject of comparison or recommendation.",
+    "vs_short_thanksgiving_nails": "short-thanksgiving-nails owns nail-length-specific inspiration. This post does not organise content by nail length or claim length as its differentiator; length is mentioned only incidentally if a technique note requires it.",
+    "vs_pillar": "thanksgiving-nail-ideas owns broad idea browsing across all difficulty levels and design types. This post narrows exclusively to low-skill, tool-minimal, beginner execution — a tutorial with a fixed set of techniques, not a scrollable gallery of options."
+  },
+
+  "section_5_word_count_note": "Section numbering below follows output_structure sections 4-14 as defined in the system prompt; the cannibalization audit above is supplementary and does not displace section_4_serp_analysis.",
+
+  "section_4_serp_analysis": {
+    "competitor_gaps": [
+      "No source organises easy Thanksgiving nail techniques by a hosting-vs-attending durability lens — durability content that exists is tied to press-ons/salon gel, not to which freehand DIY techniques actually survive a full day of cooking and dishwashing",
+      "Competitors list many individual finished designs (15-60 items) but rarely group by TECHNIQUE (solid, sponge ombre, accent nail, thin stripe) with a single reusable method per technique — Mirellé's own DIY tutorial format (prom, Mother's Day, spring) already proves a technique-first, difficulty-rated structure outperforms an endless list",
+      "No source gives a clear tools-you-actually-need vs. tools-marketed-to-you breakdown specific to Thanksgiving nails — most push a 4-5 item 'must-have' kit (small brushes, dotting pens, sponge, stickers) when 2-3 of these are genuinely optional for the easiest designs",
+      "No source addresses what to do when a design goes wrong mid-manicure on a time-crunched holiday morning — a real, practical gap for the how_to_execution_mode reader"
+    ],
+    "missing_semantic_territory": ["technique-first structure over design-count structure", "hosting-day durability by technique type (not by product type)", "genuinely optional vs required tools"],
+    "our_strategic_approach": "Structure around 5 named techniques (not open-ended design count), each with a difficulty rating and a tools list, following Mirellé's own proven DIY tutorial format. Add the hosting-durability angle competitors only apply to press-ons, applied here to freehand technique choice, and close with a quick-fix section for time-crunched readers.",
+    "recommended_image_count_validation": "Tutorial intent = 5 images confirmed per phase_2 rule_3. Matches Mirellé's own DIY-at-home post pattern (prom, Mother's Day) which uses one clean finished-look image per technique plus hero."
+  },
+
+  "section_5_audience_intelligence": {
+    "who_they_are": "A beginner-to-casual-DIYer who wants Thanksgiving-appropriate nails but has limited time, limited tools, and limited patience for anything that risks looking messy. She's often the one hosting or cooking, so practicality matters as much as prettiness.",
+    "what_they_want_from_this_post": "A short menu of genuinely simple techniques she can pick from based on her skill level and time, with a clear sense of what tools she actually needs (not a shopping list) and reassurance the design will survive her day.",
+    "what_frustrates_them": "Most 'easy' Thanksgiving nail roundups still assume small art brushes, dotting pens, and steady hands; being told a technique is 'so easy' with zero acknowledgment that a hosting day involves nonstop hand use.",
+    "top_5_pain_points": [
+      "Doesn't own or want to buy a full nail art tool kit for a once-a-year manicure",
+      "Worried the design will smudge or chip halfway through a day of cooking and hosting",
+      "Overwhelmed by 40+ design roundups when she just wants one or two doable options",
+      "Unsure which 'easy' technique is genuinely beginner-proof versus just marketed that way",
+      "Needs the manicure done quickly, often the morning of, with no time for anything requiring drying between many detailed steps"
+    ],
+    "exact_user_phrases": [
+      "easy thanksgiving nails",
+      "simple thanksgiving nail ideas",
+      "thanksgiving nails DIY at home",
+      "quick thanksgiving manicure",
+      "easy fall nails no design skills",
+      "thanksgiving nails for beginners",
+      "thanksgiving nail ideas no fancy brushes",
+      "5 minute thanksgiving nails",
+      "simple thanksgiving nails for hosting",
+      "beginner friendly thanksgiving manicure"
+    ],
+    "intent_content_signals": [
+      "A short, named list of techniques (not an endless scroll) with a clear difficulty label per technique",
+      "Explicit tools-needed list per technique so she isn't guessing what to buy",
+      "Reassurance language repeated across sources ('zero art skills', 'so easy', 'high-impact, low-effort') — beginner anxiety plus time pressure is the dominant signal",
+      "A practical durability note tied to cooking/hosting, not just aesthetics",
+      "A troubleshooting or quick-fix moment for mistakes made under time pressure"
+    ]
+  },
+
+  "section_6_semantic_keyword_data": {
+    "primary_keyword": "easy thanksgiving nails",
+    "keyword_variations": ["easy thanksgiving nail ideas", "simple thanksgiving nails", "thanksgiving nails DIY at home", "quick thanksgiving manicure", "beginner thanksgiving nails"],
+    "cluster_keywords": ["solid color thanksgiving nails", "sponge ombre nails fall", "accent nail thanksgiving", "thanksgiving nails no tools", "5 minute thanksgiving mani", "thanksgiving nail hacks", "at-home thanksgiving manicure", "thanksgiving nails for hosting", "beginner fall nail techniques", "simple thanksgiving nail design"],
+    "lsi_terms": ["base coat", "top coat", "makeup sponge ombre", "toothpick nail art", "accent nail", "color-blocking nails", "solid color manicure", "quick-dry top coat", "nail prep", "cuticle push", "gel polish durability", "regular polish chip time", "polish thinner", "nail dehydrator"],
+    "aeo_terms": [
+      "What are the easiest Thanksgiving nail designs to do at home?",
+      "How do you make easy Thanksgiving nails without nail art tools?",
+      "What's the quickest Thanksgiving manicure I can do myself?",
+      "Can beginners do their own Thanksgiving nails?",
+      "What tools do I actually need for easy Thanksgiving nails?",
+      "How do you do a sponge ombre manicure at home?",
+      "Will easy Thanksgiving nails last through cooking and hosting?",
+      "What's an easy Thanksgiving nail idea if I'm short on time?",
+      "How do you fix a mistake in your Thanksgiving nail design?",
+      "What's the easiest Thanksgiving nail color technique for beginners?"
+    ],
+    "technical_terms": ["base coat", "top coat", "makeup sponge", "quick-dry top coat", "nail dehydrator", "gel polish", "regular polish"],
+    "user_language": ["so easy", "zero art skills", "high-impact low-effort", "no fancy brushes", "quick and easy", "beginner-friendly", "doable at home", "last minute", "foolproof"]
+  },
+
+  "section_7_voice_and_ai_queries": {
+    "queries": [
+      "What are the easiest Thanksgiving nail designs to do at home?",
+      "How do you do easy Thanksgiving nails without special tools?",
+      "What's the quickest Thanksgiving manicure I can do myself?",
+      "Can a complete beginner do their own Thanksgiving nails?",
+      "What tools do I actually need for easy Thanksgiving nails?",
+      "How do you create a sponge ombre effect on your nails?",
+      "Will a simple Thanksgiving manicure survive a full day of cooking?",
+      "What's a fast Thanksgiving nail idea if I'm doing them last minute?",
+      "How do you fix a nail art mistake without redoing the whole manicure?",
+      "What's the easiest technique for Thanksgiving nails if I've never done nail art?",
+      "Do I need a nail art brush for easy Thanksgiving nails?",
+      "What's a good accent nail idea for Thanksgiving?",
+      "How long does an easy Thanksgiving manicure take start to finish?"
+    ]
+  },
+
+  "section_8_hook_and_ctr": {
+    "selected_trigger": "Trigger 1 — Curiosity Gap",
+    "trigger_rationale": "Reader is in how_to_execution_mode assuming she needs skill or tools she doesn't have; curiosity gap framing (what 'easy' guides actually leave out) resolves that doubt directly rather than adding more design options to scroll through.",
+    "title": "Easy Thanksgiving Nails: 5 Techniques Anyone Can DIY",
+    "title_char_count": 55,
+    "meta_description": "Skip the nail art kit. Five genuinely easy Thanksgiving nail techniques using tools you already own, rated by difficulty and built to survive hosting.",
+    "meta_char_count": 153,
+    "intro_hook_brief": "Open by naming what most 'easy Thanksgiving nails' content quietly assumes (small brushes, dotting pens, a steady hand) and promise a shorter, genuinely tool-minimal set of techniques instead, with durability for a hosting day built in.",
+    "first_h2_hook_direction": "Phrase the first H2 as a direct voice-search question about what's actually needed, e.g. 'What Do You Actually Need for Easy Thanksgiving Nails?' — resolving the tools question before any technique begins."
+  },
+
+  "section_9_search_journey": {
+    "reader_arrival_state": "Time-pressed and slightly overwhelmed, wanting a Thanksgiving-appropriate manicure without investing in tools or skill she doesn't have.",
+    "journey_arc": [
+      "Open by naming the real tools she needs (fewer than she thinks) and dismissing the ones she doesn't",
+      "Walk through five named techniques in ascending difficulty, each with a fast, repeatable method",
+      "Address hosting-day durability directly, tying technique choice to how well it survives real wear",
+      "Offer a fast quick-fix path for readers doing this last-minute or short on time",
+      "Close with a troubleshooting note so mistakes don't derail the whole manicure"
+    ],
+    "promise_to_deliver": "A beginner can complete a genuinely easy, Thanksgiving-appropriate manicure using tools she already owns, in a technique matched to her time and confidence level, that will hold up through a day of hosting.",
+    "exit_state": "Confident and unhurried. She has picked a specific technique, knows exactly what to do, and isn't worried about it falling apart by dinner."
+  },
+
+  "section_10_content_structure": {
+    "h1": "Easy Thanksgiving Nails: 5 Simple Techniques Anyone Can Do at Home",
+    "h2_structure": [
+      "What Do You Actually Need for Easy Thanksgiving Nails?",
+      "The Solid Color Manicure (Easiest Option)",
+      "The Sponge Ombre Technique",
+      "The Single Accent Nail",
+      "The Thin Stripe or Color-Block Detail",
+      "Which Easy Thanksgiving Nails Actually Last Through Hosting?",
+      "Fixing a Mistake Without Starting Over",
+      "Short on Time? The 5-Minute Version"
+    ],
+    "word_budget": {
+      "introduction": "220 words",
+      "conclusion": "170 words",
+      "per_h2": [
+        { "heading": "What Do You Actually Need for Easy Thanksgiving Nails?", "words": 180 },
+        { "heading": "The Solid Color Manicure (Easiest Option)", "words": 220 },
+        { "heading": "The Sponge Ombre Technique", "words": 280 },
+        { "heading": "The Single Accent Nail", "words": 220 },
+        { "heading": "The Thin Stripe or Color-Block Detail", "words": 240 },
+        { "heading": "Which Easy Thanksgiving Nails Actually Last Through Hosting?", "words": 220 },
+        { "heading": "Fixing a Mistake Without Starting Over", "words": 180 },
+        { "heading": "Short on Time? The 5-Minute Version", "words": 170 }
+      ]
+    }
+  },
+
+  "section_11_internal_links": {
+    "blog_gen_instruction": "Every link below must appear in the post. Cluster anchors verbatim. Cross-site anchors descriptive. Max 6 total.",
+    "all_internal_links": [
+      { "url_or_slug": "/blog/thanksgiving-nails/thanksgiving-nail-ideas", "title": "Thanksgiving Nail Ideas", "anchor_text": "thanksgiving nail ideas", "placement_note": "Introduction — link out to pillar when framing this as the tool-minimal execution path within the broader holiday nail category", "link_type": "cluster-pillar" },
+      { "url_or_slug": "/blog/thanksgiving-nails/turkey-nail-art", "title": "Turkey Nail Art (How to Do It)", "anchor_text": "turkey nail art tutorial", "placement_note": "The Single Accent Nail section — offered as the figural alternative for readers who want a design with more detail than these abstract techniques", "link_type": "cluster-spoke" },
+      { "url_or_slug": "/blog/thanksgiving-nails/thanksgiving-nail-colors", "title": "Thanksgiving Nail Colors", "anchor_text": "best thanksgiving nail colors", "placement_note": "What Do You Actually Need section — natural link for readers who haven't picked a shade yet before starting a technique", "link_type": "cluster-spoke" },
+      { "url_or_slug": "/blog/thanksgiving-nails/short-thanksgiving-nails", "title": "Short Thanksgiving Nails", "anchor_text": "short thanksgiving nail ideas", "placement_note": "Which Techniques Last Through Hosting section — natural link for readers whose durability concern is tied to shorter, practical nail length", "link_type": "cluster-spoke" },
+      { "url_or_slug": "https://mirelleinspo.com/blog/diy-prom-nails", "title": "DIY Prom Nails at Home: 5 Designs Anyone Can Do", "anchor_text": "the same difficulty-rated approach applied to DIY prom nails", "placement_note": "What Do You Actually Need section — cross-reference to Mirellé's parallel technique-first DIY tutorial format proving the method works across occasions", "link_type": "cross-site" },
+      { "url_or_slug": "https://mirelleinspo.com/topics/nail-art-guides", "title": "Easy Nail Designs for Beginners: 24 Simple Ideas You Can Do", "anchor_text": "the full guide to easy, tool-free nail designs for beginners", "placement_note": "Fixing a Mistake Without Starting Over section — cross-reference to the site's broader beginner nail art resource for readers wanting more technique options beyond Thanksgiving", "link_type": "cross-site" }
+    ]
+  },
+
+  "section_12_voice_tone": {
+    "recommended_voice": "Reassuring, practical educator",
+    "tone_characteristics": ["Names the reader's actual constraints (time, tools, skill) before offering solutions", "Direct and unfussy — no unnecessary embellishment on simple steps", "Practical about real-world durability, not just aesthetics", "Never implies a technique is easy without proving it with a short, concrete method", "Calm under the reader's likely time pressure"],
+    "language_style": "Short, sequential instructional sentences; conversational 'you'; a light acknowledgement of hosting-day chaos without overdoing the humor.",
+    "audience_match": "This reader is pressed for time and slightly anxious about both skill and durability — a calm, practical voice that proves its claims with fast, concrete methods builds trust faster than enthusiasm alone."
+  },
+
+  "section_13_external_links": {
+    "links": []
+  },
+
+  "section_14_execution_plan": {
+    "block_1_keyword_execution": {
+      "primary_keyword": "easy thanksgiving nails",
+      "top_3_density_baseline": 5,
+      "total_mention_target": "5 + 3 = 8 total mentions",
+      "first_100_words_plan": {
+        "rule": "Primary keyword MUST appear twice in the first 100 words.",
+        "mention_1": "sentence 1 of introduction — naming the topic while addressing the tool-kit assumption",
+        "mention_2": "sentence 3-4 of introduction — reinforcing the promise of genuinely simple, tool-minimal techniques"
+      },
+      "first_half_target": "5 mentions — first ~1000 words",
+      "second_half_target": "3 mentions — second ~1000 words",
+      "strong_tag_rule": "EVERY mention of 'easy thanksgiving nails' wrapped in <strong> tags. Scan after every paragraph.",
+      "keywords_to_avoid_active": ["thanksgiving nail ideas", "turkey nail art", "thanksgiving nail colors", "short thanksgiving nails", "french tip thanksgiving nails"]
+    },
+    "block_2_word_budget": {
+      "total_target": "2000 words, +/-50 tolerance",
+      "introduction": "220 words",
+      "conclusion": "170 words",
+      "h2_budgets": [
+        { "heading": "What Do You Actually Need for Easy Thanksgiving Nails?", "budget": "180 words", "complexity": "low" },
+        { "heading": "The Solid Color Manicure (Easiest Option)", "budget": "220 words", "complexity": "low" },
+        { "heading": "The Sponge Ombre Technique", "budget": "280 words", "complexity": "medium" },
+        { "heading": "The Single Accent Nail", "budget": "220 words", "complexity": "low" },
+        { "heading": "The Thin Stripe or Color-Block Detail", "budget": "240 words", "complexity": "medium" },
+        { "heading": "Which Easy Thanksgiving Nails Actually Last Through Hosting?", "budget": "220 words", "complexity": "medium" },
+        { "heading": "Fixing a Mistake Without Starting Over", "budget": "180 words", "complexity": "medium" },
+        { "heading": "Short on Time? The 5-Minute Version", "budget": "170 words", "complexity": "low" }
+      ],
+      "tracking_rule": "Track running word total after every H2. Cut before moving on if over budget."
+    },
+    "block_3_image_plan": {
+      "total_images": 5,
+      "hero_image": "frontmatter only — never in body",
+      "body_images": 4,
+      "assignments": [
+        { "image_number": 1, "place_after": "The Solid Color Manicure (Easiest Option)", "section_context": "Clean, finished solid-color Thanksgiving manicure in a warm fall shade" },
+        { "image_number": 2, "place_after": "The Sponge Ombre Technique", "section_context": "Finished sponge ombre manicure blending two fall colors" },
+        { "image_number": 3, "place_after": "The Single Accent Nail", "section_context": "Manicure with four solid nails and one glitter or contrast accent nail" },
+        { "image_number": 4, "place_after": "The Thin Stripe or Color-Block Detail", "section_context": "Manicure showing a simple thin stripe or two-tone color-block design" }
+      ],
+      "image_type_rule": "ALL body images = inspirational nail design images. No infographics, no diagrams, no charts.",
+      "path_rule": "/images/blog/thanksgiving-nails/easy-thanksgiving-nails/filename.webp"
+    },
+    "block_4_opening_technique_assignments": {
+      "rule": "No two consecutive sections use the same technique. Conclusion = Technique 1 or 3 only.",
+      "assignments": [
+        { "section": "Introduction", "technique": "Technique 1 — The Claim (name the tool-kit assumption directly)" },
+        { "section": "What Do You Actually Need for Easy Thanksgiving Nails?", "technique": "Technique 3 — The Reframe" },
+        { "section": "The Solid Color Manicure (Easiest Option)", "technique": "Technique 2 — Direct Instruction Opener" },
+        { "section": "The Sponge Ombre Technique", "technique": "Technique 3 — The Reframe" },
+        { "section": "The Single Accent Nail", "technique": "Technique 1 — The Claim" },
+        { "section": "The Thin Stripe or Color-Block Detail", "technique": "Technique 2 — Direct Instruction Opener" },
+        { "section": "Which Easy Thanksgiving Nails Actually Last Through Hosting?", "technique": "Technique 1 — The Claim" },
+        { "section": "Fixing a Mistake Without Starting Over", "technique": "Technique 3 — The Reframe" },
+        { "section": "Short on Time? The 5-Minute Version", "technique": "Technique 2 — Direct Instruction Opener" },
+        { "section": "Conclusion", "technique": "Technique 1 — The Claim" }
+      ],
+      "banned_opener_rule": "Check every opener against banned_opening_approaches in Blog Gen prompt before writing the second sentence."
+    },
+    "block_5_link_placements": {
+      "links": [
+        { "anchor_text": "thanksgiving nail ideas", "full_url": "/blog/thanksgiving-nails/thanksgiving-nail-ideas", "place_in_section": "Introduction", "placement_context": "When framing this post as the tool-minimal execution path within the broader holiday nail category", "link_type": "cluster-pillar" },
+        { "anchor_text": "turkey nail art tutorial", "full_url": "/blog/thanksgiving-nails/turkey-nail-art", "place_in_section": "The Single Accent Nail", "placement_context": "Offered as the figural alternative for readers wanting more design detail than these abstract techniques provide", "link_type": "cluster-spoke" },
+        { "anchor_text": "best thanksgiving nail colors", "full_url": "/blog/thanksgiving-nails/thanksgiving-nail-colors", "place_in_section": "What Do You Actually Need for Easy Thanksgiving Nails?", "placement_context": "Natural link for readers who haven't picked a shade before starting a technique", "link_type": "cluster-spoke" },
+        { "anchor_text": "short thanksgiving nail ideas", "full_url": "/blog/thanksgiving-nails/short-thanksgiving-nails", "place_in_section": "Which Easy Thanksgiving Nails Actually Last Through Hosting?", "placement_context": "Link for readers whose durability concern is tied to shorter, practical nail length", "link_type": "cluster-spoke" },
+        { "anchor_text": "the same difficulty-rated approach applied to DIY prom nails", "full_url": "https://mirelleinspo.com/blog/diy-prom-nails", "place_in_section": "What Do You Actually Need for Easy Thanksgiving Nails?", "placement_context": "Cross-reference proving the technique-first, difficulty-rated format works across occasions on-site", "link_type": "cross-site" },
+        { "anchor_text": "the full guide to easy, tool-free nail designs for beginners", "full_url": "https://mirelleinspo.com/topics/nail-art-guides", "place_in_section": "Fixing a Mistake Without Starting Over", "placement_context": "Cross-reference to the site's broader beginner nail art resource for readers wanting more technique options beyond this holiday", "link_type": "cross-site" }
+      ]
+    },
+    "block_6_aeo_geo_plan": {
+      "aeo_assignments": [
+        { "aeo_term": "What tools do I actually need for easy Thanksgiving nails?", "assigned_to_section": "What Do You Actually Need for Easy Thanksgiving Nails?", "execution": "Direct 2-3 sentence answer immediately after the H2: base coat, top coat, 2-3 polish colors, and optionally a makeup sponge, naming what's NOT required (art brushes, dotting pens)." },
+        { "aeo_term": "How do you do a sponge ombre manicure at home?", "assigned_to_section": "The Sponge Ombre Technique", "execution": "Direct answer paragraph immediately after H2 summarising the method (two colors on a sponge, dab onto nail) before the detailed steps follow." },
+        { "aeo_term": "Will easy Thanksgiving nails last through cooking and hosting?", "assigned_to_section": "Which Easy Thanksgiving Nails Actually Last Through Hosting?", "execution": "Direct answer immediately after H2 naming which techniques/finishes hold up best to repeated hand-washing before elaborating." },
+        { "aeo_term": "What's the easiest Thanksgiving nail design to do at home?", "assigned_to_section": "The Solid Color Manicure (Easiest Option)", "execution": "Direct answer immediately after H2 naming the solid color technique as the baseline easiest option before detailing the method." },
+        { "aeo_term": "What's a fast Thanksgiving nail idea if I'm short on time?", "assigned_to_section": "Short on Time? The 5-Minute Version", "execution": "Direct answer immediately after H2 naming the fastest technique and total time before elaborating." }
+      ],
+      "geo_entity_statements": [
+        { "entity": "sponge ombre technique", "assigned_to_section": "The Sponge Ombre Technique", "execution": "Clear declarative definition: the sponge ombre technique blends two or more polish shades by applying them to a makeup sponge and dabbing the color onto the nail for a gradient effect." },
+        { "entity": "accent nail", "assigned_to_section": "The Single Accent Nail", "execution": "Clear declarative definition: an accent nail is a single nail, typically the ring finger, styled differently from the rest of the set to add a focal point without covering every nail in detail." }
+      ]
+    },
+    "block_7_active_constraints": {
+      "em_dash_banned": "Long em dash does not appear anywhere. Replace with comma, new sentence, parentheses, or restructure.",
+      "banned_vocab_watch": ["elevate", "seamless", "effortlessly", "unleash", "game-changer", "must-have", "unlock", "delve"],
+      "british_english_active": "colour, recognise, -ise, -our — every instance, no exceptions",
+      "keyword_density_reminder": "After every 2 H2 sections, count current keyword mentions. Verify running total on track for 8 total. First half denser than second half.",
+      "image_path_reminder": "/images/blog/thanksgiving-nails/easy-thanksgiving-nails/filename.webp — topic_slug in path always",
+      "internal_link_url_reminder": "Full correct paths only. Cluster links = /blog/thanksgiving-nails/[slug]. Cross-site = exact URL as discovered. Never bare /slug.",
+      "hero_image_reminder": "Hero = frontmatter only. Never place hero image in body.",
+      "strong_tag_reminder": "Every primary keyword mention = <strong> tags. Scan after every paragraph."
+    }
+  }
+}
