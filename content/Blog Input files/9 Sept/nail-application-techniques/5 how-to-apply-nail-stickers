@@ -1,0 +1,398 @@
+{
+  "section_1_file_authority": "THIS FILE IS THE SINGLE SOURCE OF TRUTH FOR THE BLOG GEN AGENT. All values in POST_CONSTANTS are hardcoded — Blog Gen Agent does not ask, adjust, or override them. All keywords, H2 structure, audience intelligence, internal links, and tone defined here must be followed exactly. NOTE: image_count and show_inspo_gallery_link were user-overridden for this run (see below) — hero image only, zero body images.",
+
+  "section_2_post_constants": {
+    "slug": "how-to-apply-nail-stickers",
+    "topic_slug": "nail-application-techniques",
+    "canonical": "https://mirelleinspo.com/blog/nail-application-techniques/how-to-apply-nail-stickers",
+    "post_type": "spoke",
+    "intent": "tutorial",
+    "word_count": 1650,
+    "image_count": 1,
+    "show_inspo_gallery_link": false,
+    "template": "split-left",
+    "hero_dimensions": "800x800",
+    "category": "Nail Art Guide",
+    "publish_date": "2026-08-10",
+    "author": "jyoti-mirelle",
+    "user_override_note": "image_count locked to 1 (hero only, ZERO body images) per explicit user instruction — overrides the standard tutorial rule (5 images). show_inspo_gallery_link locked to false per explicit user instruction, consistent with tutorial intent default anyway."
+  },
+
+  "section_3_cluster_snapshot": {
+    "pillar_slug": "how-to-do-acrylic-nails-at-home",
+    "pillar_title": "How to Do Acrylic Nails at Home: Complete Beginner's Guide",
+    "pillar_primary_keyword": "how to do acrylic nails at home",
+    "this_post_slug": "how-to-apply-nail-stickers",
+    "this_post_role": "spoke",
+    "keywords_to_avoid": [
+      "how to do acrylic nails at home", "how to paint your nails perfectly", "how to shape your nails at home",
+      "dotting tool nail art", "how to make your own nail stickers", "nail glue alternatives",
+      "how to make fake nails at home", "how do you make nail polish",
+      "how to do coffin acrylic nails at home", "how to shape coffin nails", "how to shape almond nails",
+      "how to do ombre nails at home", "how to do a french manicure at home", "how to do fruit nail art at home",
+      "how to do goth nails at home", "how to do korean nails at home", "how to do jelly nails at home",
+      "easy nail designs for beginners", "easy y2k nails"
+    ]
+  },
+
+  "section_4_serp_analysis": {
+    "blog_gen_instruction": "Use competitor gaps and missing semantic territory to fill what competitors miss. Our strategic approach is the angle for the introduction and conclusion.",
+    "competitor_gaps": [
+      "Bubble/wrinkle prevention is mentioned everywhere but rarely explained mechanically (why smoothing center-to-edge vs. cuticle-to-tip matters for different sticker shapes) — confirmed on 7+ sources (SoNailicious, Pink Gellac, Glazeme, NSI Nails, HONA, Tensor Nail Art, Nail Company) but always as a one-line tip, never a real troubleshooting section",
+      "Lifting/peeling AFTER a few days (not at application) is a massive confirmed pain point (Quora thread, Felice Beauty x2, Emery Co, Sunday Gel Nails) that most 'how to apply' guides never address — they cover Day 1 application only, not Day 3-14 failure",
+      "Gel polish base vs. regular polish base as a decision point before applying stickers is validated demand (Vinyluxe dedicated comparison post, Glazeme, SLBeauty) but the flagship competitor guides (SoNailicious, L'Oréal) don't address it at all — they assume one base type",
+      "'Making stickers look hand-painted / not obviously fake' — the exact promise in this post's title — is not directly answered by any top competitor; RainyRoses and CVS get close (buffing, thin edges, less-is-more sticker choice) but never frame it as the goal"
+    ],
+    "missing_semantic_territory": [
+      "nail wraps vs nail stickers vs nail decals distinction (SoNailicious raises it but buries it)",
+      "trimming/filing direction after application (most say 'file excess' without specifying downward-only direction, which is confirmed correct technique per Glazeme/Rookie Mag)",
+      "'sealing the free edge' / capping the tip — mentioned on Mirellé's own French manicure and Korean nails posts as a common miss, but not covered by any nail-sticker-specific competitor"
+    ],
+    "our_strategic_approach": "Position this post as the missing middle between 'apply a sticker' (which every brand blog covers in 5 lines) and 'why did it peel by Thursday' (which nobody connects back to application technique). Anchor the entire piece around making stickers pass as hand-painted work — thin edges, correct smoothing direction, correct top coat capping — and use durability/lifting as the proof point that application technique, not the sticker brand, is what separates a 3-day manicure from a 2-week one.",
+    "recommended_image_count_validation": "N/A — image_count fixed at 1 (hero only) per explicit user override, not derived from SERP visual pattern matching."
+  },
+
+  "section_5_audience_intelligence": {
+    "blog_gen_instruction": "This is your primary creative brief. Every paragraph written for this specific person with this specific intent. Satisfy them completely.",
+    "who_they_are": "A DIY at-home manicurist, likely intermediate rather than total beginner (she already paints her own nails or does gel), who has bought nail stickers/wraps and is either about to use them for the first time or has used them before with mixed results (bubbles, obvious edges, early lifting). She is not shopping for stickers — she has them or plans to buy them — she wants the technique right.",
+    "what_they_want_from_this_post": "A precise, sequential application method that prevents the two failure modes she's most afraid of: (1) it looking like a cheap sticker instead of real nail art, and (2) it lifting or peeling within days instead of lasting the full two weeks the packaging promised.",
+    "what_frustrates_them": "Every guide she's found gives the same five bullet points (clean nails, tweezers, smooth it down, top coat) without explaining why her last attempt still bubbled or lifted by day three. Nobody tells her the smoothing direction matters by sticker shape, that gel vs. regular polish changes the outcome, or how to seal the tip so it doesn't look like a strip stuck on top of her nail.",
+    "top_5_pain_points": [
+      "Air bubbles/wrinkles trapped under the sticker despite 'smoothing it down' — confirmed on 7+ independent sources as the #1 complaint",
+      "Stickers lifting or peeling at the edges within days, not at application — a distinct, later-stage failure most guides never address (Quora, Felice Beauty, Emery Co, Sunday Gel Nails all confirm)",
+      "Stickers looking obviously fake / like a strip on top of the nail rather than part of it — the 'hand-painted' promise this post is built around",
+      "Uncertainty about which base to apply over — bare nail, regular polish, or gel/shellac — with no clear answer on which lasts longest (Vinyluxe, Glazeme, SLBeauty all confirm this is a live decision point)",
+      "Not knowing how to trim/file the excess sticker without tearing it or lifting the edge (Glazeme and Rookie Mag both flag directional filing as a commonly botched step)"
+    ],
+    "exact_user_phrases": [
+      "how do I keep my nail stickers from falling off",
+      "nail stickers keep bubbling no matter how much I smooth them",
+      "why is my nail sticker lifting at the edge after a few days",
+      "how to make nail stickers look hand painted not fake",
+      "do nail stickers work better over gel or regular polish",
+      "how to trim nail stickers without tearing them",
+      "nail stickers peeling off after one day",
+      "how to apply nail stickers so they don't wrinkle",
+      "nail wraps vs nail stickers what's the difference",
+      "how long do nail stickers actually last if applied right",
+      "nail stickers won't stick to my nails",
+      "sealing nail stickers with top coat so they don't peel"
+    ],
+    "intent_content_signals": [
+      "Reassuring, encouraging tone — reader is intimidated by a 'failed before' history, not a total novice",
+      "Sequential numbered steps with a clear reason WHY behind each one, not just the instruction",
+      "Explicit troubleshooting callouts (this is where it goes wrong, here's the fix) rather than a single generic 'common mistakes' list at the end",
+      "Direct answers to base-type and durability questions inside the body, not left ambiguous",
+      "Confidence-building language around the 'looks hand-painted' outcome — this is the emotional payoff, not just a technical footnote"
+    ]
+  },
+
+  "section_6_semantic_keyword_data": {
+    "blog_gen_instruction": "Primary keyword in strong tags every mention. AEO terms trigger direct answer paragraphs. User language woven naturally. No term from keywords_to_avoid used as focus term.",
+    "primary_keyword": "how to apply nail stickers",
+    "keyword_variations": [
+      "applying nail stickers", "how to put on nail stickers", "nail sticker application",
+      "how to use nail stickers", "putting nail stickers on nails", "nail sticker technique"
+    ],
+    "cluster_keywords": [
+      "nail stickers vs nail wraps", "nail decals", "smoothing nail stickers", "nail sticker top coat",
+      "nail sticker bubbles", "nail sticker lifting", "nail sticker tweezers", "silicone smoothing tool",
+      "trimming nail stickers", "sealing nail stickers", "semi-cured gel stickers", "nail sticker prep",
+      "capping the free edge", "nail sticker durability"
+    ],
+    "lsi_terms": [
+      "adhesive decal", "backing sheet", "cuticle line", "free edge", "gel top coat", "regular top coat",
+      "buffing the nail surface", "degreasing nails", "lint-free wipe", "air pocket", "sticker sheet",
+      "nail plate", "orange stick", "cuticle pusher", "acetone soak removal", "hot water soak removal"
+    ],
+    "aeo_terms": [
+      "how do you apply nail stickers so they don't bubble",
+      "why do my nail stickers keep lifting after a few days",
+      "can you put nail stickers over gel polish",
+      "how long do nail stickers last if applied correctly",
+      "how do you make nail stickers look hand painted",
+      "what's the difference between nail stickers and nail wraps",
+      "how do you trim nail stickers without tearing them",
+      "do you need a top coat over nail stickers",
+      "how do you remove nail stickers without damaging nails",
+      "why won't my nail stickers stick to my nails"
+    ],
+    "technical_terms": [
+      "semi-cured gel", "vinyl decal", "adhesive layer", "top coat sealing", "capping the free edge",
+      "cure time", "inhibition layer", "acetone soak"
+    ],
+    "user_language": [
+      "they keep bubbling no matter what I do", "it looks like a sticker not real nail art",
+      "mine never lasts past day three", "why does it lift right at the edge",
+      "do I need gel for these to work", "I always tear them when I trim the extra bit",
+      "they looked amazing for like two days then curled up", "how do people get them this smooth"
+    ]
+  },
+
+  "section_7_voice_and_ai_queries": {
+    "blog_gen_instruction": "Answer every query directly in the relevant H2 section body. If a query cannot be addressed naturally in the body, route it to faqItems. No query left unanswered.",
+    "queries": [
+      "How do you apply nail stickers so they don't bubble?",
+      "Why do my nail stickers keep lifting after a few days?",
+      "Can you put nail stickers over gel polish?",
+      "Do nail stickers work on bare nails?",
+      "How long do nail stickers actually last if applied correctly?",
+      "How do you make nail stickers look hand-painted instead of fake?",
+      "What's the difference between nail stickers and nail wraps?",
+      "How do you trim nail stickers without tearing them?",
+      "Do you need a top coat over nail stickers?",
+      "How do you remove nail stickers without damaging your nails?",
+      "Why won't my nail stickers stick properly?",
+      "What tools do you need to apply nail stickers?",
+      "Should you use tweezers or fingers to apply nail stickers?",
+      "How do you smooth out air bubbles under a nail sticker?"
+    ]
+  },
+
+  "section_8_hook_and_ctr": {
+    "blog_gen_instruction": "READ THIS SECTION BEFORE WRITING THE TITLE, META DESCRIPTION, INTRO, OR FIRST H2. The title and description are hardcoded here — use them exactly. The intro hook brief and first H2 hook direction are your creative brief for those specific elements. Do not deviate.",
+    "selected_trigger": "Trigger 1 — Curiosity Gap",
+    "trigger_rationale": "The reader has likely tried nail stickers before and gotten a mediocre result (bubbles, early lifting, obvious edges) without knowing why — she suspects there's a technique she's missing, which is exactly the curiosity-gap emotional state.",
+    "title_draft": "How to Apply Nail Stickers So They Look Hand-Painted",
+    "title_char_count": 51,
+    "meta_description_draft": "Bubbling, lifting after two days, edges that scream 'sticker'? Here's the exact prep, smoothing, and sealing technique pros use for nail stickers that pass as freehand.",
+    "meta_char_count": 154,
+    "intro_hook_brief": "Open by naming the exact frustration: she's applied nail stickers before, followed the five basic steps everyone gives, and still ended up with bubbles or a set that peeled by day three. The angle is that the actual technique nobody explains is in the details competitors skip: smoothing direction, base choice, and capping the tip — not the sticker brand.",
+    "first_h2_hook_direction": "Frame the first H2 as the prep step in the form of a direct question a reader would type — something like 'why the nail underneath matters more than the sticker itself' — subtly setting up the curiosity gap without repeating the title's hook."
+  },
+
+  "section_9_search_journey": {
+    "blog_gen_instruction": "This is the emotional contract with the reader. Every section of the post must honour the promise made. Read this before writing any section. If a paragraph breaks the journey arc — rewrite it.",
+    "reader_arrival_state": "Motivated to try (or retry) nail stickers but quietly anxious that she'll get the same disappointing result as last time — bubbles, obvious edges, early peeling.",
+    "journey_arc": [
+      "Open by naming her exact past frustration and reassuring her the fix is a technique, not a different sticker brand",
+      "Establish the prep and base-choice decisions that determine everything downstream",
+      "Walk through application with the smoothing/direction detail that prevents bubbles",
+      "Cover trimming and sealing as the steps that determine whether it looks hand-painted and lasts",
+      "Address the lifting/peeling failure mode directly as a troubleshooting payoff",
+      "Close with removal done right, so the whole cycle — apply, wear, remove — feels mastered"
+    ],
+    "promise_to_deliver": "A nail sticker application that looks like real hand-painted nail art and survives more than a few days, achieved through technique details competitors skip.",
+    "exit_state": "Confident and ready to try again immediately, with the specific corrections to her past mistakes clearly in mind rather than a vague sense of 'be more careful.'"
+  },
+
+  "section_10_content_structure": {
+    "blog_gen_instruction": "This H2 structure is research-driven and must be followed exactly. Do not rename, reorder, or remove H2s without user instruction. Word budget per section is set — follow it. H3s may be added at editorial discretion.",
+    "h1": "How to Apply Nail Stickers So They Look Hand-Painted",
+    "h2_structure": [
+      "Why What's Underneath Matters More Than the Sticker Itself",
+      "The Prep That Actually Prevents Bubbles and Lifting",
+      "Gel or Regular Polish: Which Base Actually Lasts Longer",
+      "Applying the Sticker Without Trapping a Single Air Bubble",
+      "Trimming and Filing Without Tearing the Edge",
+      "Sealing It So It Passes for Hand-Painted (and Lasts Two Weeks)",
+      "Why Nail Stickers Lift After a Few Days (and the Fix)",
+      "Removing Nail Stickers Without Damaging Your Nails"
+    ],
+    "word_budget": {
+      "introduction": "220 words",
+      "conclusion": "180 words",
+      "per_h2": "see block_2 in section_14 for exact per-heading numbers"
+    }
+  },
+
+  "section_11_internal_links": {
+    "blog_gen_instruction": "Every link below must appear in the post. Cluster links use anchor texts verbatim — do not rewrite. Cross-site links use the provided descriptive anchor. Place each link where the placement note says — woven naturally into prose, never as a standalone CTA. Total internal links must not exceed 6.",
+    "all_internal_links": [
+      {
+        "url_or_slug": "/blog/nail-application-techniques/how-to-do-acrylic-nails-at-home",
+        "title": "How to Do Acrylic Nails at Home: Complete Beginner's Guide",
+        "anchor_text": "how to do acrylic nails at home",
+        "placement_note": "In the intro or 'Why What's Underneath Matters' section, as this spoke's pillar link — natural mention when referencing that stickers can go over acrylics as a base",
+        "link_type": "cluster-pillar"
+      },
+      {
+        "url_or_slug": "/blog/nail-application-techniques/dotting-tool-nail-art-guide",
+        "title": "Dotting Tool Nail Art: The Beginner's Guide to Every Design",
+        "anchor_text": "dotting tool nail art as a freehand alternative",
+        "placement_note": "In 'Why What's Underneath Matters' or the closing section, when contrasting stickers with a freehand precision-design alternative",
+        "link_type": "cluster-spoke"
+      },
+      {
+        "url_or_slug": "/blog/nail-application-techniques/how-to-make-your-own-nail-stickers",
+        "title": "How to Make Your Own Nail Stickers at Home",
+        "anchor_text": "how to make your own nail stickers at home",
+        "placement_note": "In the intro or a brief aside, for readers who want to make rather than buy their stickers",
+        "link_type": "cluster-spoke"
+      },
+      {
+        "url_or_slug": "/blog/nail-application-techniques/how-to-paint-your-nails-perfectly",
+        "title": "How to Paint Your Nails Perfectly: The Technique Nobody Teaches",
+        "anchor_text": "how to paint your nails perfectly",
+        "placement_note": "In 'Gel or Regular Polish' section, when discussing the base coat/polish layer stickers go over",
+        "link_type": "cluster-spoke"
+      },
+      {
+        "url_or_slug": "https://mirelleinspo.com/topics/nail-care-guide",
+        "title": "The Complete Nail Care Guide: Achieve Healthy, Strong Nails in 2026",
+        "anchor_text": "the complete nail care guide for keeping nails healthy between manicures",
+        "placement_note": "In 'Removing Nail Stickers Without Damaging Your Nails' section, as a natural next-step resource for post-removal nail health",
+        "link_type": "cross-site"
+      }
+    ]
+  },
+
+  "section_12_voice_tone": {
+    "blog_gen_instruction": "This is the voice for this specific post. Layer on top of Mirellé editorial framework. Do not default to generic AI tone.",
+    "recommended_voice": "Confident, precise technique-coach — a friend who's clearly done this a hundred times and finally explains the part everyone else skips",
+    "tone_characteristics": [
+      "Direct and instructional but never condescending — assumes she's tried before and just wants the missing detail",
+      "Specific about mechanics (direction of smoothing, degrees of filing angle) rather than vague ('be gentle')",
+      "Validates past frustration briefly, then moves straight to the fix rather than dwelling on the problem",
+      "Confident declarative statements for technique steps — no hedging with 'you could try' or 'maybe'",
+      "Occasional dry acknowledgment of the annoying reality (bubbles happen, editing takes patience) without becoming self-deprecating"
+    ],
+    "language_style": "Second person throughout, short-to-medium sentences, active voice, minimal analogy — this reader wants clarity and precision over creative flourish.",
+    "audience_match": "An intermediate at-home manicurist responds to being treated as capable but under-informed — she doesn't need hand-holding on basic prep, she needs the specific technical correction that's been missing."
+  },
+
+  "section_13_external_links": {
+    "blog_gen_instruction": "Include all external links where indicated. Supports E-E-A-T. Use anchor suggestion as guide — write naturally around it.",
+    "links": [
+      {
+        "url": "https://www.lorealparisusa.com/beauty-magazine/beauty-tips/beauty-trends/how-to-apply-nail-stickers",
+        "context": "When referencing mainstream beauty-brand validation of nail sticker durability timelines (up to two weeks)",
+        "anchor_suggestion": "beauty brands confirm nail stickers can last up to two weeks when sealed properly"
+      },
+      {
+        "url": "https://www.vinyluxenails.com/blogs/your-guide-to-perfect-nails/gel-polish-vs-regular-polish",
+        "context": "When discussing gel vs. regular polish base choice for sticker longevity",
+        "anchor_suggestion": "nail brands generally recommend gel polish as the base for the longest-lasting sticker wear"
+      }
+    ]
+  },
+
+  "section_14_execution_plan": {
+    "blog_gen_instruction": "READ THIS SECTION FIRST. Lock every value. Execute exactly. Do not recalculate, do not adjust, do not deviate.",
+
+    "block_1_keyword_execution": {
+      "primary_keyword": "how to apply nail stickers",
+      "top_3_density_baseline": 5,
+      "total_mention_target": 8,
+      "first_100_words_plan": {
+        "rule": "Primary keyword MUST appear twice in the first 100 words. Mandatory. No exceptions.",
+        "mention_1": "Sentence 1-2 of introduction — naming the exact search/frustration ('you've searched how to apply nail stickers before and still ended up with...')",
+        "mention_2": "Sentence 4-5 of introduction — reframing the promise ('the real technique for how to apply nail stickers so they hold and look intentional')"
+      },
+      "first_half_target": "5 mentions — first ~825 words. Run denser in first half.",
+      "second_half_target": "3 mentions — second ~825 words",
+      "strong_tag_rule": "EVERY single mention of the primary keyword — all 8 of them — wrapped in <strong> tags. No exceptions. Catch each one as it is written. Scan after every paragraph.",
+      "keywords_to_avoid_active": "Full list from section_3 — never used as focus terms anywhere in the post"
+    },
+
+    "block_2_word_budget": {
+      "total_target": "1650 words — +/-50 words tolerance, never exceed",
+      "introduction": "220 words",
+      "conclusion": "180 words",
+      "h2_budgets": [
+        { "heading": "Why What's Underneath Matters More Than the Sticker Itself", "budget": 150, "complexity": "low" },
+        { "heading": "The Prep That Actually Prevents Bubbles and Lifting", "budget": 210, "complexity": "medium" },
+        { "heading": "Gel or Regular Polish: Which Base Actually Lasts Longer", "budget": 180, "complexity": "medium" },
+        { "heading": "Applying the Sticker Without Trapping a Single Air Bubble", "budget": 220, "complexity": "high" },
+        { "heading": "Trimming and Filing Without Tearing the Edge", "budget": 160, "complexity": "medium" },
+        { "heading": "Sealing It So It Passes for Hand-Painted (and Lasts Two Weeks)", "budget": 180, "complexity": "medium" },
+        { "heading": "Why Nail Stickers Lift After a Few Days (and the Fix)", "budget": 170, "complexity": "high" },
+        { "heading": "Removing Nail Stickers Without Damaging Your Nails", "budget": 180, "complexity": "low" }
+      ],
+      "tracking_rule": "Track running word total at the end of every H2 section. If a section is running over budget — cut before moving to the next section. Do not compensate later."
+    },
+
+    "block_3_image_plan": {
+      "total_images": 1,
+      "hero_image": "frontmatter only — NEVER appears in post body",
+      "body_images": 0,
+      "assignments": [],
+      "image_type_rule": "USER OVERRIDE ACTIVE: this post has NO body images. Hero image only, used in frontmatter. Do not insert any body image placeholders, assignments, or markdown image tags anywhere in the post body.",
+      "path_rule": "/images/blog/nail-application-techniques/how-to-apply-nail-stickers/filename.webp — topic_slug in path, slug folder, leading slash (hero image path only, since no body images exist)"
+    },
+
+    "block_4_opening_technique_assignments": {
+      "rule": "No two consecutive sections use the same technique. Conclusion = Technique 1 or 3 only.",
+      "assignments": [
+        { "section": "Introduction", "technique": "Technique 1 — The Claim (names the exact past-failure pattern and asserts the real fix is technique, not product)" },
+        { "section": "Why What's Underneath Matters More Than the Sticker Itself", "technique": "Technique 2 — The Question (opens with the voice-search-style question framing)" },
+        { "section": "The Prep That Actually Prevents Bubbles and Lifting", "technique": "Technique 4 — The Scene (drops reader into the exact moment of prepping nails)" },
+        { "section": "Gel or Regular Polish: Which Base Actually Lasts Longer", "technique": "Technique 1 — The Claim (states which base wins upfront)" },
+        { "section": "Applying the Sticker Without Trapping a Single Air Bubble", "technique": "Technique 3 — The Reframe (reframes bubbles as a smoothing-direction problem, not a sticker-quality problem)" },
+        { "section": "Trimming and Filing Without Tearing the Edge", "technique": "Technique 2 — The Question" },
+        { "section": "Sealing It So It Passes for Hand-Painted (and Lasts Two Weeks)", "technique": "Technique 4 — The Scene" },
+        { "section": "Why Nail Stickers Lift After a Few Days (and the Fix)", "technique": "Technique 3 — The Reframe" },
+        { "section": "Removing Nail Stickers Without Damaging Your Nails", "technique": "Technique 1 — The Claim" },
+        { "section": "Conclusion", "technique": "Technique 3 — The Reframe" }
+      ],
+      "banned_opener_rule": "Check every opener against banned_opening_approaches in blog gen prompt before writing the second sentence"
+    },
+
+    "block_5_link_placements": {
+      "rule": "Every link placed exactly where specified. Anchor texts used verbatim — never rewritten. Links woven into prose naturally — never standalone CTAs.",
+      "links": [
+        {
+          "anchor_text": "how to do acrylic nails at home",
+          "full_url": "/blog/nail-application-techniques/how-to-do-acrylic-nails-at-home",
+          "place_in_section": "Why What's Underneath Matters More Than the Sticker Itself",
+          "placement_context": "When noting stickers work over acrylic bases as well as natural nails",
+          "link_type": "cluster-pillar"
+        },
+        {
+          "anchor_text": "dotting tool nail art as a freehand alternative",
+          "full_url": "/blog/nail-application-techniques/dotting-tool-nail-art-guide",
+          "place_in_section": "Removing Nail Stickers Without Damaging Your Nails",
+          "placement_context": "As a closing aside for readers who want to try freehand precision detail next",
+          "link_type": "cluster-spoke"
+        },
+        {
+          "anchor_text": "how to make your own nail stickers at home",
+          "full_url": "/blog/nail-application-techniques/how-to-make-your-own-nail-stickers",
+          "place_in_section": "Why What's Underneath Matters More Than the Sticker Itself",
+          "placement_context": "Brief aside for readers who'd rather DIY their own sticker sheets",
+          "link_type": "cluster-spoke"
+        },
+        {
+          "anchor_text": "how to paint your nails perfectly",
+          "full_url": "/blog/nail-application-techniques/how-to-paint-your-nails-perfectly",
+          "place_in_section": "Gel or Regular Polish: Which Base Actually Lasts Longer",
+          "placement_context": "When discussing the polish base layer that goes underneath the sticker",
+          "link_type": "cluster-spoke"
+        },
+        {
+          "anchor_text": "the complete nail care guide for keeping nails healthy between manicures",
+          "full_url": "https://mirelleinspo.com/topics/nail-care-guide",
+          "place_in_section": "Removing Nail Stickers Without Damaging Your Nails",
+          "placement_context": "As the natural next step after removal — general nail health maintenance",
+          "link_type": "cross-site"
+        }
+      ]
+    },
+
+    "block_6_aeo_geo_plan": {
+      "aeo_assignments": [
+        { "aeo_term": "How do you apply nail stickers so they don't bubble?", "assigned_to_section": "Applying the Sticker Without Trapping a Single Air Bubble", "execution": "Write a direct 2-3 sentence answer paragraph IMMEDIATELY after the H2 heading — before any elaboration." },
+        { "aeo_term": "Why do my nail stickers keep lifting after a few days?", "assigned_to_section": "Why Nail Stickers Lift After a Few Days (and the Fix)", "execution": "Write a direct 2-3 sentence answer paragraph immediately after the H2 heading." },
+        { "aeo_term": "Can you put nail stickers over gel polish?", "assigned_to_section": "Gel or Regular Polish: Which Base Actually Lasts Longer", "execution": "Write a direct 2-3 sentence answer paragraph immediately after the H2 heading." },
+        { "aeo_term": "How do you make nail stickers look hand-painted instead of fake?", "assigned_to_section": "Sealing It So It Passes for Hand-Painted (and Lasts Two Weeks)", "execution": "Write a direct 2-3 sentence answer paragraph immediately after the H2 heading." },
+        { "aeo_term": "How do you remove nail stickers without damaging your nails?", "assigned_to_section": "Removing Nail Stickers Without Damaging Your Nails", "execution": "Write a direct 2-3 sentence answer paragraph immediately after the H2 heading." }
+      ],
+      "geo_entity_statements": [
+        { "entity": "nail sticker (vs. nail wrap)", "assigned_to_section": "Why What's Underneath Matters More Than the Sticker Itself", "execution": "Write a clear declarative definition distinguishing nail stickers (partial-nail decals) from nail wraps (full-nail coverage) — confident, no hedging." },
+        { "entity": "capping the free edge", "assigned_to_section": "Sealing It So It Passes for Hand-Painted (and Lasts Two Weeks)", "execution": "Write a clear declarative definition of what capping the free edge means and why it prevents lifting." },
+        { "entity": "semi-cured gel sticker", "assigned_to_section": "Gel or Regular Polish: Which Base Actually Lasts Longer", "execution": "Write a clear declarative definition distinguishing semi-cured gel stickers (require UV/LED curing) from standard vinyl/polish stickers (no curing needed)." }
+      ]
+    },
+
+    "block_7_active_constraints": {
+      "em_dash_banned": "Long em dash does not appear anywhere. If one forms while writing — stop, replace with: comma / new sentence / parentheses / but / restructure.",
+      "banned_vocab_watch": ["elevate", "effortless", "seamless", "unleash", "game-changer", "must-have", "vibe", "level up"],
+      "british_english_active": "colour, recognise, -ise, -our — every instance, no exceptions",
+      "keyword_density_reminder": "After every 2 H2 sections — count current keyword mentions. Verify running total is on track to hit 8 total (5 in first half, 3 in second half). Adjust if needed.",
+      "image_path_reminder": "N/A for body — no body images exist in this post per user override. Hero path only: /images/blog/nail-application-techniques/how-to-apply-nail-stickers/filename.webp",
+      "internal_link_url_reminder": "Full correct paths only. Cluster links = /blog/nail-application-techniques/[slug]. Cross-site link = https://mirelleinspo.com/topics/nail-care-guide exactly. Never bare /slug.",
+      "hero_image_reminder": "Hero = frontmatter only. Never place hero image in body. This post has NO other images anywhere.",
+      "strong_tag_reminder": "Every primary keyword mention = <strong> tags. Scan after every paragraph."
+    }
+  }
+}
