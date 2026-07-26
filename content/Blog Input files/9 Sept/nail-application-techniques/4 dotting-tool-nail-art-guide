@@ -1,0 +1,407 @@
+{
+  "section_1_file_authority": {
+    "statement": "THIS FILE IS THE SINGLE SOURCE OF TRUTH FOR THE BLOG GEN AGENT. All values in POST_CONSTANTS are hardcoded — Blog Gen Agent does not ask, adjust, or override them. All keywords, H2 structure, audience intelligence, internal links, and tone defined here must be followed exactly."
+  },
+
+  "section_2_post_constants": {
+    "slug": "dotting-tool-nail-art-guide",
+    "topic_slug": "nail-application-techniques",
+    "canonical": "https://mirelleinspo.com/blog/nail-application-techniques/dotting-tool-nail-art-guide",
+    "post_type": "spoke",
+    "intent": "tutorial",
+    "word_count": 2000,
+    "image_count": 1,
+    "show_inspo_gallery_link": false,
+    "template": "split-left",
+    "hero_dimensions": "800x800",
+    "category": "Nail Art Guide",
+    "publish_date": "2026-07-27",
+    "author": "jyoti-mirelle"
+  },
+
+  "section_3_cluster_snapshot": {
+    "pillar_slug": "how-to-do-acrylic-nails-at-home",
+    "pillar_title": "How to Do Acrylic Nails at Home: Complete Beginner's Guide",
+    "pillar_primary_keyword": "how to do acrylic nails at home",
+    "this_post_slug": "dotting-tool-nail-art-guide",
+    "this_post_role": "spoke",
+    "keywords_to_avoid": [
+      "how to do acrylic nails at home", "how to paint your nails perfectly", "how to shape your nails at home",
+      "how to apply nail stickers", "how to make your own nail stickers", "nail glue alternatives",
+      "how to make fake nails at home", "how do you make nail polish",
+      "how to do coffin acrylic nails at home", "how to shape coffin nails", "how to shape almond nails",
+      "how to do ombre nails at home", "how to do a french manicure at home", "how to do fruit nail art at home",
+      "how to do goth nails at home", "how to do korean nails at home", "how to do jelly nails at home",
+      "easy nail designs for beginners", "easy y2k nails"
+    ]
+  },
+
+  "section_4_serp_analysis": {
+    "blog_gen_instruction": "Use competitor gaps and missing semantic territory to fill what competitors miss. Our strategic approach is the angle for the introduction and conclusion.",
+    "competitor_gaps": [
+      "No competitor page combines: real technique steps + troubleshooting (messy/blobby dots) + tip-size guidance + 6+ named designs in one place — each ranking page does only one of these",
+      "Homemade/DIY dotting tool alternatives confirmed as high-demand angle (L'Oréal Paris, Kentdo, multiple Quora threads) but rarely paired with the actual technique tutorial in the same post",
+      "Nobody explains WHY dots come out uneven or blobby (polish thickening mid-design, too much product on tip, dragging instead of pressing) as a dedicated troubleshooting block — it's scattered as asides",
+      "Tip-size selection (small vs large ball, mm sizing) confirmed as real confusion point across product listings and Quora but absent from tutorial content"
+    ],
+    "missing_semantic_territory": [
+      "\"why are my dots different sizes\" / \"why does my dotting tool polish go blobby\"",
+      "gel polish vs regular polish behaviour with a dotting tool",
+      "cleaning the tool between colours mid-design",
+      "explicit named design roster beyond flowers (leopard/cheetah spots, dotted French tip, hearts, marble effect)"
+    ],
+    "our_strategic_approach": "Position this as the single beginner reference that existing mirelleinspo.com posts (fruit nails, monkey nails, cheetah print, spring florals, Y2K, work nails) all assume readers already know — teach the tool, the technique, the fixes for the top failure modes, and a real design roster in one place, closing the dead-link gap the fruit-nails post already exposed.",
+    "recommended_image_count_validation": "SERP visual patterns show top competitors are heavily photo/video-driven (LadyLife: 20+ step photos, Instructables: image-first). Image_count is deliberately set to 1 (hero only) per explicit override — text must therefore describe dot placement, spacing, and colour layering precisely enough to stand alone without step photos."
+  },
+
+  "section_5_audience_intelligence": {
+    "blog_gen_instruction": "This is your primary creative brief. Every paragraph written for this specific person with this specific intent. Satisfy them completely.",
+    "who_they_are": "A beginner or early-intermediate at-home nail art enthusiast who has painted their nails before but has never used a dotting tool specifically. Often arrives having just bought a cheap dotting tool set (Amazon/beauty supply) or is deciding whether to buy one vs improvise with a bobby pin/toothpick.",
+    "what_they_want_from_this_post": "A straight answer on how to actually use the tool without wasting polish or ending up with lopsided, blobby dots — plus a handful of real designs they can attempt on their first try.",
+    "what_frustrates_them": "Existing content is split between thin, image-only tutorials (Instructables) with almost no explanatory text, and AI-padded pages (Nailicy) full of generic filler that never names a real failure mode or fix.",
+    "top_5_pain_points": [
+      "Dots come out different sizes even when using the same tip — polish thickens on the tool between dips",
+      "Dots blob or spread instead of staying round — too much polish loaded, or pressing instead of dabbing",
+      "Confusion over which tip size to use for which design (flowers vs fine detail vs bold polka dots)",
+      "Not knowing they can make a dotting tool at home (bobby pin, toothpick) before buying one",
+      "Smudging the finished design when adding top coat or a second colour"
+    ],
+    "exact_user_phrases": [
+      "how do I make a dotting tool for my nails",
+      "what is the easiest way to paint polka dots on your nails",
+      "why do my dots come out different sizes",
+      "dotting tool alternatives at home",
+      "how to use a dotting tool for beginners",
+      "what can I use instead of a nail dotting tool",
+      "how to clean a dotting tool between colours",
+      "dotting tool nail art ideas simple",
+      "how to make dots even with a toothpick",
+      "5 minute nail art with dotting tool"
+    ],
+    "intent_content_signals": [
+      "Reader responds to short, numbered, literal steps over long narrative prose",
+      "Wants the failure mode named explicitly, not just 'be careful'",
+      "Wants at least one no-tool-required option acknowledged early, not buried at the end",
+      "Wants named, recognisable design outcomes (flower, French tip, leopard print, heart) rather than vague 'creative patterns'",
+      "Responds well to a specific mm/size recommendation rather than 'choose the right size'"
+    ]
+  },
+
+  "section_6_semantic_keyword_data": {
+    "blog_gen_instruction": "Primary keyword in strong tags every mention. AEO terms trigger direct answer paragraphs. User language woven naturally. No term from keywords_to_avoid used as focus term.",
+    "primary_keyword": "dotting tool nail art",
+    "keyword_variations": [
+      "nail dotting tool", "dotting tool for nails", "how to use a dotting tool", "dotting tool technique",
+      "nail art dotting pen", "dot nail art tool", "dotting tool designs"
+    ],
+    "cluster_keywords": [
+      "polka dot nail art", "dotted flower nails", "dot manicure", "nail art brushes", "gel polish dotting",
+      "nail art tools for beginners", "cheetah print dots", "dotted french tip", "marble nail technique",
+      "nail art tip sizes", "beginner nail art tools", "diy nail dotting tool"
+    ],
+    "lsi_terms": [
+      "ball-tip stylus", "double-ended dotting pen", "dot spacing", "nail polish consistency",
+      "base coat drying time", "top coat sealing", "tip diameter mm", "dot-within-dot technique",
+      "freehand dot placement", "polish palette or foil", "acetone cleanup", "cuticle line precision",
+      "layering colours with dots", "accent nail dotting", "symmetrical vs irregular dot pattern"
+    ],
+    "aeo_terms": [
+      "how do you use a dotting tool for nail art",
+      "what can I use instead of a dotting tool",
+      "why do my dots come out different sizes with a dotting tool",
+      "what size dotting tool should beginners buy",
+      "how do you clean a dotting tool between colours",
+      "can you use a dotting tool with gel polish",
+      "how do you make dotted flowers on nails",
+      "how do you stop dots from smudging",
+      "how do you make a homemade dotting tool",
+      "what nail designs can you make with a dotting tool"
+    ],
+    "technical_terms": [
+      "ball-tip stylus", "double-ended tool", "gel polish cure", "base coat", "top coat",
+      "tip diameter (mm)", "nail plate"
+    ],
+    "user_language": [
+      "get dotty", "dotticure", "blobby dots", "perfect little dots", "salon-worthy at home",
+      "no fancy tools required", "5 minutes or less", "beginner-friendly mani", "just dip and press",
+      "even if you've never done nail art before"
+    ]
+  },
+
+  "section_7_voice_and_ai_queries": {
+    "blog_gen_instruction": "Answer every query directly in the relevant H2 section body. If a query cannot be addressed naturally in the body, route it to faqItems. No query left unanswered.",
+    "queries": [
+      "How do you use a dotting tool for nail art?",
+      "What can I use instead of a dotting tool?",
+      "Why do my dots come out different sizes?",
+      "Why does my dotting tool polish go blobby?",
+      "What size dotting tool should a beginner buy?",
+      "Can you use a dotting tool with gel polish?",
+      "How do you clean a dotting tool between colours?",
+      "How do you make dotted flowers on your nails?",
+      "How do you make a homemade dotting tool?",
+      "What nail designs can you make with a dotting tool?",
+      "How do you stop dots from smudging when you add top coat?",
+      "How do you make leopard or cheetah print with a dotting tool?",
+      "Is a dotting tool good for beginners with no nail art experience?",
+      "How long does dotting tool nail art last?"
+    ]
+  },
+
+  "section_8_hook_and_ctr": {
+    "blog_gen_instruction": "READ THIS SECTION BEFORE WRITING THE TITLE, META DESCRIPTION, INTRO, OR FIRST H2. The title and description are hardcoded here — use them exactly. The intro hook brief and first H2 hook direction are your creative brief for those specific elements. Do not deviate.",
+    "selected_trigger": "Trigger 3 — Specificity/Numbers",
+    "trigger_rationale": "This reader wants a defined promise and clear outcomes (a set number of usable designs), not a curiosity gap — they've already decided to try the tool and want confidence it will work.",
+    "title": "Dotting Tool Nail Art: 7 Designs Anyone Can Do at Home",
+    "title_char_count": 56,
+    "meta_description_draft": "Get perfectly round dots every time. No blobs, no uneven sizes — just 7 beginner-friendly dotting tool nail art designs, step by step.",
+    "meta_char_count": 135,
+    "intro_hook_brief": "Open by naming the exact frustration (dots turning out lopsided or blobby the first time) before promising the fix — specificity trigger means leading with the concrete number of designs and the concrete fix, not a vague promise of ease.",
+    "first_h2_hook_direction": "Phrase the first H2 as a direct voice-search question the reader would actually type, e.g. 'How Do You Use a Dotting Tool for Nail Art?' — answer it in 2-3 direct sentences immediately, no throat-clearing."
+  },
+
+  "section_9_search_journey": {
+    "blog_gen_instruction": "This is the emotional contract with the reader. Every section of the post must honour the promise made. Read this before writing any section. If a paragraph breaks the journey arc — rewrite it.",
+    "reader_arrival_state": "Motivated but slightly unsure — they have or are about to buy a dotting tool and want reassurance the results will look clean, not amateurish.",
+    "journey_arc": [
+      "Open by naming the exact failure mode (blobby, uneven dots) so the reader feels understood, then promise the fix",
+      "Teach the core technique first — how to hold, dip, and press — before any design content",
+      "Address troubleshooting immediately after the technique (why dots go wrong) so confidence is locked in before designs",
+      "Deliver the named design roster (flowers, polka dots, French tip, leopard/cheetah, hearts, marble) as the payoff",
+      "Close with reassurance that a homemade tool works just as well if they don't want to buy one"
+    ],
+    "promise_to_deliver": "That anyone can get clean, even, professional-looking dots on their first attempt and walk away with at least 7 real designs they can execute immediately.",
+    "exit_state": "Confident and ready to pick up a dotting tool (or a bobby pin) right now, with the specific fix for whatever goes wrong already in mind."
+  },
+
+  "section_10_content_structure": {
+    "blog_gen_instruction": "This H2 structure is research-driven and must be followed exactly. Do not rename, reorder, or remove H2s without user instruction. Word budget per section is set — follow it. H3s may be added at editorial discretion.",
+    "h1": "Dotting Tool Nail Art: 7 Designs Anyone Can Do at Home",
+    "h2_structure": [
+      "How Do You Use a Dotting Tool for Nail Art?",
+      "What Size Dotting Tool Should You Buy?",
+      "Why Your Dots Keep Coming Out Different Sizes (And the Fix)",
+      "Can You Make a Dotting Tool at Home? Yes — Here's How",
+      "7 Dotting Tool Nail Art Designs to Try First",
+      "How to Stop Dots From Smudging Under Top Coat",
+      "Dotting Tool With Gel Polish: What Changes"
+    ],
+    "word_budget": {
+      "introduction": "220 words",
+      "conclusion": "180 words",
+      "per_h2": [
+        { "heading": "How Do You Use a Dotting Tool for Nail Art?", "budget": 240 },
+        { "heading": "What Size Dotting Tool Should You Buy?", "budget": 220 },
+        { "heading": "Why Your Dots Keep Coming Out Different Sizes (And the Fix)", "budget": 260 },
+        { "heading": "Can You Make a Dotting Tool at Home? Yes — Here's How", "budget": 240 },
+        { "heading": "7 Dotting Tool Nail Art Designs to Try First", "budget": 460 },
+        { "heading": "How to Stop Dots From Smudging Under Top Coat", "budget": 200 },
+        { "heading": "Dotting Tool With Gel Polish: What Changes", "budget": 180 }
+      ]
+    }
+  },
+
+  "section_11_internal_links": {
+    "blog_gen_instruction": "Every link below must appear in the post. Cluster links use anchor texts verbatim — do not rewrite. Cross-site links use the provided descriptive anchor. Place each link where the placement note says — woven naturally into prose, never as a standalone CTA. Total internal links must not exceed 6.",
+    "all_internal_links": [
+      {
+        "url_or_slug": "/blog/nail-application-techniques/how-to-do-acrylic-nails-at-home",
+        "title": "How to Do Acrylic Nails at Home: Complete Beginner's Guide",
+        "anchor_text": "how to do acrylic nails at home",
+        "placement_note": "Introduction — as the pillar reference for readers building a full acrylic set before adding dot detail",
+        "link_type": "cluster-pillar"
+      },
+      {
+        "url_or_slug": "/blog/nail-application-techniques/how-to-paint-your-nails-perfectly",
+        "title": "How to Paint Your Nails Perfectly: The Technique Nobody Teaches",
+        "anchor_text": "how to paint your nails perfectly",
+        "placement_note": "How Do You Use a Dotting Tool section — as the base-skill prerequisite before adding dot detail",
+        "link_type": "cluster-spoke"
+      },
+      {
+        "url_or_slug": "/blog/nail-application-techniques/how-to-apply-nail-stickers",
+        "title": "How to Apply Nail Stickers So They Look Hand-Painted",
+        "anchor_text": "how to apply nail stickers for precision designs",
+        "placement_note": "7 Dotting Tool Nail Art Designs section — as a precision alternative for readers who want the look without freehand dotting",
+        "link_type": "cluster-spoke"
+      },
+      {
+        "url_or_slug": "/blog/nail-application-techniques/how-to-make-your-own-nail-stickers",
+        "title": "How to Make Your Own Nail Stickers at Home",
+        "anchor_text": "how to make your own nail stickers at home",
+        "placement_note": "Can You Make a Dotting Tool at Home section — natural pairing with the broader DIY-tools mindset",
+        "link_type": "cluster-spoke"
+      },
+      {
+        "url_or_slug": "https://mirelleinspo.com/blog/print-nails/cheetah-print-nails",
+        "title": "23 Cheetah Print Nails That Feel Wild, Not Tacky (2026)",
+        "anchor_text": "how to place irregular dotting tool spots for cheetah print nails that don't look gridded",
+        "placement_note": "7 Dotting Tool Nail Art Designs section — directly under the leopard/cheetah design entry, since that post covers the full design execution this tutorial only introduces",
+        "link_type": "cross-site"
+      },
+      {
+        "url_or_slug": "https://mirelleinspo.com/blog/fruit-nails/how-to-do-fruit-nail-art",
+        "title": "How to Do Fruit Nail Art at Home: 2026 Guide",
+        "anchor_text": "how to use dotting tool dots to build cherries and other fruit nail art from scratch",
+        "placement_note": "7 Dotting Tool Nail Art Designs section — as a follow-on project once the reader is comfortable with basic dots, resolving the dead 'nail art tools guide' link that post already references",
+        "link_type": "cross-site"
+      }
+    ]
+  },
+
+  "section_12_voice_tone": {
+    "blog_gen_instruction": "This is the voice for this specific post. Layer on top of Mirellé editorial framework. Do not default to generic AI tone.",
+    "recommended_voice": "Confident, hands-on educator",
+    "tone_characteristics": [
+      "Direct and instructional — short, literal sentences over narrative build-up",
+      "Names failure modes plainly rather than softening them ('this is why your dots go blobby', not 'sometimes dots can be tricky')",
+      "Reassuring without being saccharine — confidence comes from precision, not cheerleading",
+      "Zero salesy tool-pushing — acknowledges the homemade alternative early and without judgement",
+      "Uses 'you' throughout, second person instructional address"
+    ],
+    "language_style": "Short declarative sentences for steps; slightly longer explanatory sentences only when unpacking why a technique works. Minimal analogy — this reader wants precision, not mood-setting.",
+    "audience_match": "A beginner who has already decided to try this wants confidence and specificity, not inspiration or persuasion — Trigger 3 (Specificity) and this voice reinforce each other throughout."
+  },
+
+  "section_13_external_links": {
+    "blog_gen_instruction": "Include all external links where indicated. Supports E-E-A-T. Use anchor suggestion as guide — write naturally around it.",
+    "links": [
+      {
+        "url": "https://www.lorealparisusa.com/beauty-magazine/beauty-tips/beauty-looks/nail-dotting-tool-alternatives",
+        "context": "Can You Make a Dotting Tool at Home section — citing a recognised beauty brand's confirmation that household alternatives genuinely work",
+        "anchor_suggestion": "L'Oréal Paris's own list of at-home dotting tool alternatives"
+      },
+      {
+        "url": "https://www.amazon.com/Dotting-Tool-Nail-Paint-Manicure/dp/B00ATB1ISS",
+        "context": "What Size Dotting Tool Should You Buy section — as a reference example of a standard dual-ended beginner set",
+        "anchor_suggestion": "a standard dual-ended dotting tool set"
+      }
+    ]
+  },
+
+  "section_14_execution_plan": {
+    "blog_gen_instruction": "READ THIS SECTION FIRST. Lock every value. Execute exactly. Do not recalculate, do not adjust, do not deviate.",
+    "block_1_keyword_execution": {
+      "primary_keyword": "dotting tool nail art",
+      "top_3_density_baseline": 5,
+      "total_mention_target": 8,
+      "first_100_words_plan": {
+        "rule": "Primary keyword MUST appear TWICE in the first 100 words. Mandatory. No exceptions.",
+        "mention_1": "sentence 1-2 of introduction — naming the topic while framing the blobby-dots frustration",
+        "mention_2": "sentence 4-5 of introduction — restating it as the post delivers the promise of clean designs"
+      },
+      "first_half_target": "5 mentions — first 1000 words. Run denser in first half.",
+      "second_half_target": "3 mentions — second 1000 words",
+      "strong_tag_rule": "EVERY single mention of the primary keyword — all 8 of them — wrapped in <strong> tags. No exceptions. Catch each one as it is written. Scan after every paragraph.",
+      "keywords_to_avoid_active": "Full list from section_3 — never used as focus terms anywhere in the post"
+    },
+    "block_2_word_budget": {
+      "total_target": "2000 words — +/-50 words tolerance, never exceed",
+      "introduction": "220 words",
+      "conclusion": "180 words",
+      "h2_budgets": [
+        { "heading": "How Do You Use a Dotting Tool for Nail Art?", "budget": "240 words", "complexity": "low" },
+        { "heading": "What Size Dotting Tool Should You Buy?", "budget": "220 words", "complexity": "low" },
+        { "heading": "Why Your Dots Keep Coming Out Different Sizes (And the Fix)", "budget": "260 words", "complexity": "medium" },
+        { "heading": "Can You Make a Dotting Tool at Home? Yes — Here's How", "budget": "240 words", "complexity": "medium" },
+        { "heading": "7 Dotting Tool Nail Art Designs to Try First", "budget": "460 words", "complexity": "high" },
+        { "heading": "How to Stop Dots From Smudging Under Top Coat", "budget": "200 words", "complexity": "low" },
+        { "heading": "Dotting Tool With Gel Polish: What Changes", "budget": "180 words", "complexity": "low" }
+      ],
+      "tracking_rule": "Track running word total at the end of every H2 section. If a section is running over budget — cut before moving to the next section. Do not compensate later."
+    },
+    "block_3_image_plan": {
+      "total_images": 1,
+      "hero_image": "frontmatter only — NEVER appears in post body",
+      "body_images": 0,
+      "assignments": [],
+      "image_type_rule": "No body images in this post per explicit override. Hero image only, frontmatter placement. If any image reference appears in draft body copy, remove it — this post ships with zero in-body images.",
+      "path_rule": "/images/blog/nail-application-techniques/dotting-tool-nail-art-guide/filename.webp — topic_slug in path, slug folder, leading slash. Applies to hero image only."
+    },
+    "block_4_opening_technique_assignments": {
+      "rule": "No two consecutive sections use the same technique. Conclusion = Technique 1 or 3 only.",
+      "assignments": [
+        { "section": "Introduction", "technique": "Technique 3 — The Reframe (naming the blobby-dots frustration, then reframing it as a fixable technique problem, not a skill problem)" },
+        { "section": "How Do You Use a Dotting Tool for Nail Art?", "technique": "Technique 2 — The Direct Answer (open with a 2-3 sentence direct AEO answer before elaborating)" },
+        { "section": "What Size Dotting Tool Should You Buy?", "technique": "Technique 4 — The Specific Recommendation (lead with a concrete mm figure, not a vague range)" },
+        { "section": "Why Your Dots Keep Coming Out Different Sizes (And the Fix)", "technique": "Technique 1 — The Claim (state the single real cause plainly before explaining it)" },
+        { "section": "Can You Make a Dotting Tool at Home? Yes — Here's How", "technique": "Technique 2 — The Direct Answer" },
+        { "section": "7 Dotting Tool Nail Art Designs to Try First", "technique": "Technique 4 — The Specific Recommendation" },
+        { "section": "How to Stop Dots From Smudging Under Top Coat", "technique": "Technique 1 — The Claim" },
+        { "section": "Dotting Tool With Gel Polish: What Changes", "technique": "Technique 3 — The Reframe" },
+        { "section": "Conclusion", "technique": "Technique 1 — The Claim" }
+      ],
+      "banned_opener_rule": "Check every opener against banned_opening_approaches in blog gen prompt before writing the second sentence"
+    },
+    "block_5_link_placements": {
+      "rule": "Every link placed exactly where specified. Anchor texts used verbatim — never rewritten. Links woven into prose naturally — never standalone CTAs.",
+      "links": [
+        {
+          "anchor_text": "how to do acrylic nails at home",
+          "full_url": "/blog/nail-application-techniques/how-to-do-acrylic-nails-at-home",
+          "place_in_section": "Introduction",
+          "placement_context": "Mentioned as the natural next step for readers who came from the full acrylic set process and now want to add dot detail",
+          "link_type": "cluster-pillar"
+        },
+        {
+          "anchor_text": "how to paint your nails perfectly",
+          "full_url": "/blog/nail-application-techniques/how-to-paint-your-nails-perfectly",
+          "place_in_section": "How Do You Use a Dotting Tool for Nail Art?",
+          "placement_context": "Referenced as the base-skill prerequisite before adding any dot work on top of the polish",
+          "link_type": "cluster-spoke"
+        },
+        {
+          "anchor_text": "how to apply nail stickers for precision designs",
+          "full_url": "/blog/nail-application-techniques/how-to-apply-nail-stickers",
+          "place_in_section": "7 Dotting Tool Nail Art Designs to Try First",
+          "placement_context": "Offered as an alternative for readers who want the visual outcome without freehand dot placement",
+          "link_type": "cluster-spoke"
+        },
+        {
+          "anchor_text": "how to make your own nail stickers at home",
+          "full_url": "/blog/nail-application-techniques/how-to-make-your-own-nail-stickers",
+          "place_in_section": "Can You Make a Dotting Tool at Home? Yes — Here's How",
+          "placement_context": "Paired as another DIY-first-mindset resource for readers already improvising their own tools",
+          "link_type": "cluster-spoke"
+        },
+        {
+          "anchor_text": "how to place irregular dotting tool spots for cheetah print nails that don't look gridded",
+          "full_url": "https://mirelleinspo.com/blog/print-nails/cheetah-print-nails",
+          "place_in_section": "7 Dotting Tool Nail Art Designs to Try First",
+          "placement_context": "Placed directly under the leopard/cheetah print design entry as the deeper execution guide",
+          "link_type": "cross-site"
+        },
+        {
+          "anchor_text": "how to use dotting tool dots to build cherries and other fruit nail art from scratch",
+          "full_url": "https://mirelleinspo.com/blog/fruit-nails/how-to-do-fruit-nail-art",
+          "place_in_section": "7 Dotting Tool Nail Art Designs to Try First",
+          "placement_context": "Offered as a follow-on project once basic dot control is established",
+          "link_type": "cross-site"
+        }
+      ]
+    },
+    "block_6_aeo_geo_plan": {
+      "aeo_assignments": [
+        { "aeo_term": "How do you use a dotting tool for nail art?", "assigned_to_section": "How Do You Use a Dotting Tool for Nail Art?", "execution": "Write a direct 2-3 sentence answer paragraph IMMEDIATELY after the H2 heading — dip, press, lift, re-dip — before any elaboration." },
+        { "aeo_term": "What size dotting tool should beginners buy?", "assigned_to_section": "What Size Dotting Tool Should You Buy?", "execution": "State the specific recommendation directly: a dual-ended set with a small tip around 1-1.5mm and a large tip around 2-3mm covers nearly every beginner design." },
+        { "aeo_term": "Why do my dots come out different sizes with a dotting tool?", "assigned_to_section": "Why Your Dots Keep Coming Out Different Sizes (And the Fix)", "execution": "Direct 2-3 sentence answer naming polish thickening on the tool as the primary cause, immediately after the heading." },
+        { "aeo_term": "How do you make a homemade dotting tool?", "assigned_to_section": "Can You Make a Dotting Tool at Home? Yes — Here's How", "execution": "Direct answer naming bobby pin and toothpick as the two most reliable substitutes, before detailing technique differences." },
+        { "aeo_term": "Can you use a dotting tool with gel polish?", "assigned_to_section": "Dotting Tool With Gel Polish: What Changes", "execution": "Direct yes/no-then-explain answer covering cure timing between dots." }
+      ],
+      "geo_entity_statements": [
+        { "entity": "dotting tool", "assigned_to_section": "How Do You Use a Dotting Tool for Nail Art?", "execution": "A dotting tool is a slim, pen-like nail art implement with a small rounded metal or plastic ball at one or both ends, used to place even, controlled dots of polish onto the nail." },
+        { "entity": "dotticure", "assigned_to_section": "7 Dotting Tool Nail Art Designs to Try First", "execution": "A dotticure is a manicure built primarily from dot-based patterns — polka dots, dotted flowers, or dot clusters — created using a dotting tool rather than a brush." }
+      ]
+    },
+    "block_7_active_constraints": {
+      "em_dash_banned": "Long em dash does not appear anywhere. If one forms while writing — stop, replace with: comma / new sentence / parentheses / but / restructure.",
+      "banned_vocab_watch": ["elevate", "unleash", "game-changer", "must-have", "seamless", "effortless", "unlock", "transform"],
+      "british_english_active": "colour, recognise, -ise, -our — every instance, no exceptions",
+      "keyword_density_reminder": "After every 2 H2 sections — count current keyword mentions. Verify running total is on track to hit 8. First half must run denser than second half. Adjust if needed.",
+      "image_path_reminder": "No body images in this post. Hero only: /images/blog/nail-application-techniques/dotting-tool-nail-art-guide/filename.webp",
+      "internal_link_url_reminder": "Full correct paths only. Cluster links = /blog/nail-application-techniques/[slug]. Cross-site links = exact URL as discovered. Never bare /slug.",
+      "hero_image_reminder": "Hero = frontmatter only. Never place hero image in body. This post has zero body images.",
+      "strong_tag_reminder": "Every primary keyword mention = <strong> tags. Scan after every paragraph."
+    }
+  }
+}
