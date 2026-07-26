@@ -1,0 +1,250 @@
+# Blog Route — AI Agent Reference
+
+Purpose of this doc: give any AI agent full context on the dynamic blog content
+system so it can make edits/additions without needing to read every file.
+Site: mirelleinspo.com (Next.js App Router).
+
+---
+
+## 1. Route Map
+
+| Route | File | Renders |
+|---|---|---|
+| `/blog` | `src/app/blog/page.tsx` | Blog listing/homepage (hero, carousels, must-read, latest, pagination) |
+| `/blog/[slug]` | `src/app/blog/[...slug]/page.tsx` | Single post (standalone or pillar) OR Topic Hub if slug is a pillar |
+| `/blog/[topic]/[slug]` | same catch-all file | Single post nested under a topic |
+
+Single catch-all: `src/app/blog/[...slug]/page.tsx` handles both 1-segment and
+2-segment URLs based on `segments.length`.
+
+---
+
+## 2. Data Source
+
+Posts live as `.md` / `.mdx` files in `src/content/blogs/`, either flat or in
+topic subfolders (e.g. `src/content/blogs/skin-tone/best-nude-nail-color-for-skin-tone.md`).
+
+- `.md` → compiled to HTML at request time via `marked` (in `blog.ts`)
+- `.mdx` → raw source passed to `<MDXRemote>` (rendered via `MDXContent.tsx`)
+
+Frontmatter fields (used across the system): `title, excerpt, date, author,
+category, image, imageAlt, imageWidth, imageHeight, readTime, topic, canonical,
+template, topicalMap, navigationContext, carouselImages, products, tldr,
+faqItems, dateModified, wordCount, tags`.
+
+`template` value picks the render template: `center | split-left | split-right | grid`.
+
+### topicalMap (pillar/cluster system)
+```
+topicalMap: {
+  position: 'pillar' | 'cluster' | 'standalone',
+  parentPillar: string | null   // pillar's slug, for cluster posts
+}
+```
+- A **pillar** post + its **cluster** posts form a "topic family."
+- Visiting `/blog/[pillarSlug]` (1 segment, no matching post slug conflict)
+  renders the **Topic Hub** (`PillarHub` component) instead of a post — a
+  listing of the pillar + all its clusters.
+- Visiting `/blog/[topic]/[slug]` always renders the actual post.
+
+---
+
+## 3. Core Library — `src/lib/blog.ts`
+
+All data-fetching for the blog route lives here. Has an in-memory cache
+(`BlogCache`, 1hr TTL) keyed by function+args — call `clearBlogCache()` after
+bulk content changes if testing locally without restart.
+
+| Function | Purpose |
+|---|---|
+| `getAllBlogPosts()` | Returns all posts as `BlogMetadata[]`, recursively scanned, sorted by date desc |
+| `getBlogPost(slug)` | Returns single full `BlogPost` (with compiled `content` HTML/MDX), resolves slug across subfolders |
+| `getAllBlogSlugs()` | All bare slugs (filenames w/o ext) |
+| `getPostsByCategory(categorySlug)` | Filter by `category` frontmatter |
+| `getAllCategories()` | Hardcoded list: Seasonal, Trends, Tutorial, Nail Care, Nail Art, Editor's Choice |
+| `getRelatedPosts(slug, limit=12)` | Priority: 1) same pillar family 2) same `topic` 3) most recent fallback |
+| `getPaginatedPosts(page, perPage=12)` | Simple pagination over all posts |
+| `getAllClusters()` | Groups all pillar posts with their cluster children → `{pillar, clusters}[]` |
+| `getStandalonePosts()` | Posts with no pillar/cluster `topicalMap.position` |
+| `getPillarClusterPosts(pillarSlug)` | Single pillar + its clusters (used by `PillarHub`) |
+| `extractBodyImages(html, heroImage)` | Pulls `<img>` src list from post HTML, excludes hero image — powers "Download images" button |
+| `injectInspoGalleryLinks(html, topic)` | Auto-inserts a link to `/inspo/{topic}-inspiration-gallery` after every `<img>` in **`.md`** posts only (MDX handled separately via `MDXContent.tsx`'s `img` component override) |
+| `clearBlogCache()` | Wipes the cache |
+
+Slug resolution (`resolveFilePath`): tries flat file first, then recursively
+searches subfolders matching either full relative slug or bare filename.
+Prefers `.mdx` over `.md` if both exist.
+
+---
+
+## 4. Page: `src/app/blog/page.tsx` (listing page)
+
+- `generateStaticParams` not used here (dynamic query params instead: `?page=`, `?category=`)
+- `buildPageAllocation(targetPage)` — the core pagination algorithm:
+  - `CLUSTERS_PER_PAGE = 3` clusters consumed per page (1 → hero, 2 → carousels)
+  - `HERO_TARGET_COUNT = 12` posts in hero section (pillar family topped up with standalone posts if short, overflow queued if long)
+  - `MUST_READ_COUNT = 3`, `LATEST_EDITS_PER_PAGE = 6` — pulled from remaining standalone/overflow pool
+  - Tracks `usedSlugs` to avoid duplicate posts across sections/pages
+  - Returns `hasNextPage` bool for pagination
+- If `?category=` present → separate simpler branch: `getPostsByCategory` + flat 12/page pagination, skips all cluster logic
+- Section order: Hero title → `BlogCategoryNav` → `InlineNewsletter` → `MainHeroSection` → `CarouselSection` (cluster 1) → `MustReadSection` → `InlineNewsletter` → `CarouselSection` (cluster 2) → `LatestStoriesSection` → `NextPageButton`
+
+---
+
+## 5. Page: `src/app/blog/[...slug]/page.tsx` (post / hub page)
+
+### `generateStaticParams`
+Builds static paths for every post: `[topic, slug]` if post has a topic, plus
+`[topic]` alone for pillar posts (registers the hub route). Falls back to
+just `[slug]` if no topic.
+
+### `generateMetadata`
+- 1 segment + matches a pillar → hub metadata (`robots: {index:false, follow:true}` — hub is nav-only, not indexed)
+- 1 segment + matches a post → `buildPostMetadata()`
+- 2 segments → looks up post by `postSlug` (ignores topic in URL for lookup, but 404s later if topic doesn't match), → `buildPostMetadata()`
+
+`buildPostMetadata(post, canonicalUrl, imageUrl, imageAltText)` — builds the
+full Next.js `Metadata` object: OG tags, Twitter card, `article:*` meta,
+resolves author via `resolveAuthor()` from `src/data/authors.ts`.
+
+### Default export `BlogCatchAllPage`
+Routes to `PillarHub` (if segment matches a pillar slug) or `PostPage`
+(otherwise), with 404 via `notFound()` for unmatched/mismatched cases.
+
+### `PostPage({ post, slug })`
+1. Calls `generateSchemas({ post, slug })` from `src/lib/generateSchemas.ts`
+2. Injects JSON-LD `<script>` tags: article, breadcrumb, + conditional faq/howTo/video/imageGallery schemas
+3. Picks template component from map: `{ center, 'split-left', 'split-right', grid }` (default `center`)
+4. Renders `<Template post={postWithCoverImage} />`
+
+### `PillarHub({ topic })`
+Renders topic hub: pillar title/excerpt + grid of `Link` cards (pillar card
+first, then all cluster posts), linking to `/blog/${topic}/${slug}`.
+
+---
+
+## 6. Templates — `src/app/blog/templates/`
+
+All templates take `{ post: BlogPost }`. Each has near-identical structure;
+differ mainly in **hero layout**.
+
+Common structure inside each template:
+1. `DownloadButton`, `ShareButton`, `Lightbox` (fixed/floating UI)
+2. Hero section (title, category, author, date, hero image) — **layout differs per template**
+3. Content branch: if `post.isMDX` → simplified path (no product-grid splitting, renders via `<MDXContent>` directly, no ToC/breadcrumbs/inline newsletters mid-content). If NOT MDX → full path below.
+4. **Non-MDX content flow**: content HTML is split into thirds by `<h2>` boundaries (33%/34%/33%) via `h2Blocks` regex split on `(?=<h2[\s>])`, interleaved with:
+   - Breadcrumbs + mobile ToC + `WrapUp` (tldr) before 1st third
+   - `renderContentWithProducts()` — replaces `{{PRODUCTS:count:indices}}` placeholder tokens in HTML with `<ProductGrid>` components (count must be 1, 2, or 4)
+   - `InlineNewsletter` after 1st third and after 2nd third
+   - `ImageCarousel` after 2nd third if `post.carouselImages` present
+   - `SocialFollowCTA` after 2nd third (varies by template)
+5. Tail (same across all templates): conditional `FAQ` (if `post.faqItems`) → `FinalNewsletter` → `AuthorCard` (via `getAuthor()` from `src/lib/authors.ts`) → `AboutEEAT` → `ReadMoreSection`
+
+### Template-specific hero differences
+- **CenterTemplate**: full-width centered hero text block, then full-width hero image below
+- **SplitLeftTemplate**: desktop = 2-col grid (text left, image right) in a 600px hero; mobile = stacked. Content column capped `max-w-[700px]` for MDX path (narrower than Center's `max-w-7xl`)
+- **SplitRightTemplate**: *(not fetched — mirror of SplitLeft with image/text columns swapped; same prop shape `{ post: BlogPost }`)*
+- **GridTemplate**: *(not fetched — assume grid-style hero layout; same prop shape)*
+
+### `MDXContent.tsx`
+Wraps `<MDXRemote source={source} components={mdxComponents}>`.
+- `ProductGrid` component available inline in MDX bodies
+- `img` component override: auto-appends "Explore {topic} inspiration
+  gallery" link after every image **if** `post.topic` exists (mirrors what
+  `injectInspoGalleryLinks` does for `.md` posts — MDX needs this because MD's
+  version runs on raw HTML string, MDX renders via React tree instead)
+
+**To add a new template**: create `src/app/blog/templates/NewTemplate.tsx`
+with `{ post: BlogPost }` prop, add to the `templates` map object in both
+`[...slug]/page.tsx` render logic, and set `template: 'new-template'` in a
+post's frontmatter.
+
+---
+
+## 7. Schema Generation — `src/lib/generateSchemas.ts`
+
+`generateSchemas({ post, slug, faqItems?, tutorialSteps?, tutorialMetadata?, videoMetadata?, galleryImages?, eventData? })`
+returns `{ articleSchema, breadcrumbSchema, faqSchema, howToSchema, videoSchema, imageGallerySchema, eventSchema, websiteSchema, organizationSchema }`.
+
+Note: `[...slug]/page.tsx` currently only calls this with `{ post, slug }` —
+`faqSchema` is built automatically off `post.faqItems` (frontmatter), not a
+separate param at the call site (the param exists for other routes/future use).
+
+Other exports: `generateOrganizationSchema`, `generateWebsiteSchema`,
+`generateJyotiSchema`, `generateRiSchema`, `resolveAuthorSchema(authorString)`,
+`resolveAuthorId(authorString)`, `generateArticleSchema(post)` (standalone
+version), `generateBlogSchema`, `generateBlogListSchema(posts)`,
+`generateBreadcrumbSchema(items)`, `generateEventSchema(post, event)`,
+`validateSchemaData(post)`.
+
+Author resolution: `resolveAuthor(authorString)` from `src/data/authors.ts`
+maps frontmatter `author` string → full `Author` object. Two fixed Person
+IDs: `JYOTI_ID` (Jyotika Verma, default) and `RI_ID` (Gaurav Verma).
+
+---
+
+## 8. SEO Helper — `src/lib/seo.ts`
+
+`generatePageMetadata(input: PageMetadataInput)` — generic metadata builder
+used by **other** pages (not directly used by the blog post route, which has
+its own `buildPostMetadata` inline in `[...slug]/page.tsx`). Useful if
+standardizing blog metadata generation later.
+
+Also exports: `generateImageAlt`, `calculateReadTime`, `optimizeTitle`,
+`optimizeDescription`, `validateSlug`, `generateSlug`.
+
+---
+
+## 9. Breadcrumbs — `src/lib/breadcrumbs.ts`
+
+`generateBreadcrumbs(pathname)`, `slugToTitle(slug)` (has a `CATEGORY_LABELS`
+map for nicer names), `getBlogBreadcrumbs(postSlug)` (currently just returns
+`[{Blog, /blog}]`), `getTopicBreadcrumbs(topic)`. Note: the actual rendered
+breadcrumb in templates is built inline (`<Breadcrumbs items={[{label:'Blog',href:'/blog'}]} currentPage={post.title}/>`), not via these helpers.
+
+---
+
+## 10. Content Validation — `src/lib/contentValidation.ts`
+
+Not wired into the route at request time — a standalone QA tool.
+`validatePost(content, frontmatter, primaryKeyword, lsiKeywords)` → checks
+word count (min 1500, target 2000-3000), keyword density/count, LSI keyword
+usage, H2 keyword presence, image alt-text keyword coverage, internal/external
+link counts, required frontmatter fields. `generateSEOReport(validation)`
+formats results as text. Likely run manually/via script before publishing.
+
+---
+
+## 11. Types — `src/types/blog.ts`
+
+- `BlogMetadata` — lightweight, used in listings/cards (no `content`)
+- `BlogPost` — full post incl. `content`, `isMDX`, `coverImage` (required)
+- `TopicalMap` — pillar/cluster metadata shape (see §2)
+- `Product` — `{ image, name/title, price, link/url, brand?, details? }`
+- `TLDR` — `{ summary: string[], tldrFaqs?, creativeLine?, keyTakeaways? }`
+- `NavigationContext` — prev/next/pillar post refs (optional, in frontmatter)
+- `FAQ` — `{ question, answer }`
+- Imports `FAQItem, TutorialStep, VideoMetadata` from `generateSchemas.ts`
+
+---
+
+## 12. Common Edit Recipes
+
+- **Add a new post**: drop `.md`/`.mdx` file into `src/content/blogs/` (flat or
+  subfolder), set frontmatter (`title, excerpt, date, author, image, template`
+  at minimum). No code changes needed — `generateStaticParams` picks it up.
+- **Add a new topic/pillar family**: set `topic` on all related posts, mark
+  one post `topicalMap.position: 'pillar'`, others `'cluster'` with
+  `topicalMap.parentPillar` = pillar's slug.
+- **Change hero pagination counts on `/blog`**: edit constants at top of
+  `src/app/blog/page.tsx` (`CLUSTERS_PER_PAGE`, `HERO_TARGET_COUNT`,
+  `MUST_READ_COUNT`, `LATEST_EDITS_PER_PAGE`).
+- **Add/remove a section on post pages**: edit the relevant template file(s)
+  in `src/app/blog/templates/` — remember to mirror changes across all 4
+  templates' shared tail sections if the change should apply universally.
+- **Change product grid embedding syntax**: `renderContentWithProducts()` in
+  each template, regex `{{PRODUCTS:count:indices}}`.
+- **Change JSON-LD output**: `src/lib/generateSchemas.ts`.
+- **Change what counts as "related posts"**: `getRelatedPosts()` in `blog.ts`.
+- **Bug: post 404s**: check `resolveFilePath()` slug matching in `blog.ts`,
+  and confirm topic segment (if 2-segment URL) matches frontmatter `topic`.
