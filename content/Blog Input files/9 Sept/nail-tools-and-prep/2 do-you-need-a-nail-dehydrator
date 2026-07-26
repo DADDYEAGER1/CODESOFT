@@ -1,0 +1,197 @@
+# BLOG GEN AGENT INPUT FILE — SINGLE SOURCE OF TRUTH
+CLUSTER MODE — cluster context loaded (nail-tools-and-prep, post_id 2)
+
+## SECTION 1: FILE AUTHORITY
+This file is the single source of truth for Blog Gen Agent. All POST_CONSTANTS values are hardcoded — do not ask, adjust, or override. All keywords, H2 structure, audience intelligence, internal links, and tone must be followed exactly.
+
+## SECTION 2: POST_CONSTANTS
+- slug: do-you-need-a-nail-dehydrator
+- topic_slug: nail-tools-and-prep
+- canonical: https://mirelleinspo.com/blog/nail-tools-and-prep/do-you-need-a-nail-dehydrator
+- post_type: spoke
+- intent: informational
+- word_count: 1900 (top-3 SERP average: Erica's ATA ~1400w, thenailwiki ~2800w, Pure Spa Direct ~950-1100w → avg ~1750-1900; set at 1900, within spoke ceiling of 2800)
+- image_count: 1 (OVERRIDE — hero only, fixed by user instruction, supersedes phase_2 rule engine)
+- show_inspo_gallery_link: false (OVERRIDE — user instruction; also correct by rule: intent is informational, no browse/explore angle)
+- template: split-left
+- hero_dimensions: 800x800
+- category: Nail Care & Prep
+- publish_date: 2026-07-27
+- author: jyoti-mirelle
+
+## SECTION 3: CLUSTER SNAPSHOT
+- pillar_slug: nail-prep-steps
+- pillar_title: How to Prep Your Nails Before Any Manicure: The Complete Step-by-Step Guide
+- pillar_primary_keyword: how to prep nails before gel polish
+- this_post_slug: do-you-need-a-nail-dehydrator
+- this_post_role: spoke
+- keywords_to_avoid: how to prep nails before gel polish, nail dehydrator vs primer, how to use polygel, polygel vs acrylic vs gel, how to remove polygel nails at home, nail drill bits guide, nail file grit guide, nail drill speed guide RPM
+
+## SECTION 4: SERP ANALYSIS
+- competitor_gaps: (1) Safety/myth-busting — "is it bad for nails," "does it cause permanent white spots/damage" is almost entirely unaddressed by top results except one hazard-ranking listicle; nailknowledge.org briefly debunks the permanent-damage myth but no top-3 competitor builds a dedicated section on it. (2) Home/DIY audience is underserved — Erica's ATA and thenailwiki both write for professional nail techs (system-dependent language, salon workflow); no top result speaks directly to the DIY-at-home searcher who just wants a plain yes/no. (3) "What if I don't have one" — DIY substitute content (alcohol, acetone, vinegar, lemon juice) is validated on 6+ sources but scattered across separate niche articles, not integrated into a single "do you need one" answer post.
+- missing_semantic_territory: plain-language yes/no framing for non-professionals; direct comparison of DIY substitutes ranked by effectiveness; explicit myth-correction language ("does not permanently damage nails," "does not cause white spots")
+- our_strategic_approach: Answer the yes/no question directly and immediately for the DIY home user (not the nail tech), then give a clear decision framework based on nail/polish type, cover the safety myths head-on, and end with validated substitute options — closing the loop competitors leave scattered across separate articles.
+- recommended_image_count_validation: N/A — image_count fixed at 1 (hero only) by explicit override; competitors show heavy product-bottle and diagram imagery, but this post intentionally skips body images since it's an answer-style informational post, not a visual/gallery topic.
+
+## SECTION 5: AUDIENCE INTELLIGENCE
+- who_they_are: DIY at-home nail enthusiasts, largely beginners to intermediate, doing their own gel/acrylic/dip/polish manicures. Not professional nail techs (that audience is well-served by Erica's ATA/thenailwiki already). They've either seen "dehydrator" mentioned in a kit, a YouTube tutorial, or a product listing and don't know if it's essential or upsell.
+- what_they_want_from_this_post: A direct yes/no answer for their specific situation (gel vs regular polish vs acrylic), reassurance it's not risky/damaging, and a cheap workaround if they don't want to buy another product.
+- what_frustrates_them: Competitor content assumes salon/professional context ("your system," "your client"); product-page copy is marketing fluff with no real answer; confusion between dehydrator and primer is never resolved plainly; scattered DIY substitute info across TikTok/blog posts with no single trustworthy source.
+- top_5_pain_points: (1) Manicure lifts/peels within days and they don't know if a missing dehydrator is the cause. (2) Confusion over dehydrator vs primer — do they need both, can one replace the other. (3) Worry that dehydrator "dries out" or permanently damages nails. (4) Don't want to buy a product they might not need for occasional DIY manicures. (5) Don't know if alcohol/acetone they already own can substitute.
+- exact_user_phrases: "do I need both primer and dehydrator", "can I just use a top coat after the dehydrator", "why are my acrylics popping off even though I'm using dehydrator, primer, and filing", "is a nail dehydrator necessary", "what can I use instead of nail dehydrator", "does nail dehydrator ruin your nails", "nail prep dehydrator worth it", "how to dehydrate nails without dehydrator", "rubbing alcohol as nail dehydrator", "nail dehydrator vs just using acetone"
+- intent_content_signals: Wants a direct answer in the first 100 words, not a slow build-up; responds to plain comparison structure (bullet decision points, not narrative); wants reassurance framing (safety myths addressed explicitly); prefers concrete substitute instructions over vague "it depends"; skeptical of product-page marketing tone.
+
+## SECTION 6: SEMANTIC KEYWORD DATA
+- primary_keyword: what does a nail dehydrator do
+- keyword_variations: do you need a nail dehydrator, is a nail dehydrator necessary, nail dehydrator benefits, what is nail dehydrator for, do I need nail dehydrator for gel polish, nail dehydrator purpose
+- cluster_keywords: nail prep dehydrator, dehydrator before gel polish, nail dehydrator for acrylic, remove oils from nail plate, nail plate adhesion, prevent nail lifting, nail dehydrator ingredients, matte nail surface prep, isopropyl alcohol nail prep, acetone nail prep, dehydrator evaporation time, nail dehydrator DIY substitute
+- lsi_terms: nail plate oils, nail plate moisture, adhesion promoter, lifting and peeling prevention, dehydrator vs primer, dehydrator vs cleanser, natural nail prep, gel polish retention, acrylic nail prep, dip powder adhesion, base coat bonding, cuticle prep routine, nail plate surface, matte finish nails, chalky nail texture, evaporation window, product system compatibility, oily nail plate, DIY manicure longevity, salon-quality manicure at home
+- aeo_terms: what does a nail dehydrator actually do to your nails, do you need a nail dehydrator for gel polish, is nail dehydrator the same as primer, can I use alcohol instead of nail dehydrator, does nail dehydrator damage your natural nails, how long does nail dehydrator take to dry, do you need a dehydrator for regular nail polish, what happens if you skip nail dehydrator, is nail dehydrator safe to use every manicure
+- technical_terms: nail plate, isopropyl alcohol (IPA), acetone, acid-free primer, adhesion promoter, sebaceous oils, evaporation window, matte/chalky finish
+- user_language: "keeps lifting no matter what I do", "is this actually necessary or just an upsell", "my nails feel weird after", "does it ruin your nails long term", "can I skip this step", "what's the actual difference from primer", "I don't want to buy another bottle", "my gel chips within days"
+
+## SECTION 7: VOICE AND AI QUERIES
+1. What does a nail dehydrator actually do to your nails?
+2. Do you need a nail dehydrator for gel polish specifically?
+3. Is a nail dehydrator the same thing as a primer?
+4. Can I skip the dehydrator if I'm just doing regular nail polish?
+5. Does a nail dehydrator damage or dry out your natural nails permanently?
+6. Can I use rubbing alcohol instead of a nail dehydrator?
+7. Can I use acetone as a substitute for nail dehydrator?
+8. How long does nail dehydrator take to dry before applying polish?
+9. What happens if you don't dehydrate your nails before gel?
+10. Is nail dehydrator worth buying for occasional DIY manicures?
+11. Why do my nails still lift even though I use a dehydrator?
+12. Do you need both a nail dehydrator and a nail primer?
+13. Is nail dehydrator safe to use on sensitive or thin nails?
+14. What household products can dehydrate nails without buying one?
+15. Does nail dehydrator cause white spots on nails?
+
+## SECTION 8: HOOK AND CTR
+- selected_trigger: Trigger 1 — Curiosity Gap
+- trigger_rationale: This reader suspects their lifting/peeling manicures are a missed-step problem, not a product-quality problem — curiosity gap framing ("the real reason," "what most people get wrong") matches that exact decision-mode uncertainty.
+- title: Do You Need a Nail Dehydrator? The Honest Answer
+- title_char_count: 56
+- meta_description: Manicure keeps lifting? Find out exactly what a nail dehydrator does, whether you actually need one, and what to use if you skip it.
+- meta_char_count: 133
+- intro_hook_brief: Open by naming the exact frustration — gel or polish lifting within days despite doing "everything right" — then reveal that a missing or misunderstood dehydrator step is very often the real cause, not the product brand.
+- first_h2_hook_direction: Phrase the first H2 as a direct voice-search-style question ("What Does a Nail Dehydrator Actually Do?") so it answers the core query immediately, subtly extending the curiosity-gap hook without repeating the title.
+
+## SECTION 9: SEARCH JOURNEY
+- reader_arrival_state: Mildly frustrated and uncertain — has likely experienced lifting/peeling manicures or seen "dehydrator" mentioned somewhere and wants to know if it's genuinely necessary or just another product to buy.
+- journey_arc: (1) Confirm this is the right place — direct answer to "what does it do" in first 100 words. (2) Resolve the primer/dehydrator confusion clearly. (3) Give a decision framework by manicure type (gel/acrylic/dip vs regular polish). (4) Address safety myths directly (does it damage nails). (5) Close with practical substitutes for those who don't want to buy one.
+- promise_to_deliver: A direct, non-salesy answer to whether they personally need a nail dehydrator, with the safety concern resolved and a no-purchase-necessary option included.
+- exit_state: Confident and unconfused — knows exactly whether to use one, what it's actually doing, and what to reach for if they don't have one on hand.
+
+## SECTION 10: CONTENT STRUCTURE
+- h1: Do You Need a Nail Dehydrator? What It Does and When to Use It
+- h2_structure:
+  1. What Does a Nail Dehydrator Actually Do?
+  2. Nail Dehydrator vs Primer: What's the Real Difference?
+  3. Do You Need One for Gel Polish?
+  4. Do You Need One for Regular Polish or Acrylics?
+  5. Is a Nail Dehydrator Bad for Your Nails?
+  6. What Can You Use Instead of a Nail Dehydrator?
+  7. So, Do You Actually Need One?
+- word_budget:
+  - introduction: 220 words
+  - H2-1 (What It Does): 280 words
+  - H2-2 (vs Primer): 260 words
+  - H2-3 (Gel Polish): 240 words
+  - H2-4 (Regular Polish/Acrylics): 240 words
+  - H2-5 (Bad for Nails/Myths): 260 words
+  - H2-6 (Substitutes): 260 words
+  - H2-7 (conclusion/verdict): 180 words
+  - Total: ~1940 words (within ±50 tolerance of 1900 target)
+
+## SECTION 11: INTERNAL LINKS
+1. url_or_slug: /blog/nail-tools-and-prep/nail-prep-steps | title: How to Prep Your Nails Before Any Manicure | anchor_text: "full nail prep steps guide" | placement_note: H2-1, when framing dehydrator as one step within the larger routine | link_type: cluster-pillar
+2. url_or_slug: /blog/nail-tools-and-prep/nail-dehydrator-vs-primer | title: Nail Dehydrator vs Primer: Do You Really Need Both? | anchor_text: "nail dehydrator vs primer explained" | placement_note: H2-2, directly after resolving the basic difference, linking out for the deeper comparison | link_type: cluster-spoke
+3. url_or_slug: /blog/nail-tools-and-prep/how-to-use-polygel | title: How to Use Polygel: Step-by-Step Application Tutorial | anchor_text: "polygel application tutorial" | placement_note: H2-4, when discussing acrylic/enhancement systems that require dehydrator | link_type: cluster-spoke
+4. url_or_slug: /blog/nail-tools-and-prep/nail-file-grit-guide | title: Nail File Grit Guide | anchor_text: "nail file grit guide" | placement_note: H2-1, when mentioning buffing/prep sequence before dehydrator | link_type: cluster-spoke
+5. url_or_slug: https://mirelleinspo.com/blog/korean-nails/how-to-do-korean-nails | title: How to Do Korean Nails at Home | anchor_text: "why Korean gel manicures skip almost no one's lifting complaints thanks to full nail dehydration" | placement_note: H2-3, when discussing gel polish adhesion and lifting prevention | link_type: cross-site
+6. url_or_slug: https://mirelleinspo.com/work-nails/gel-nail-polish-for-work | title: Best Gel Nail Polish for Work | anchor_text: "the three non-negotiables for long-lasting DIY gel at home" | placement_note: H2-3 or H2-7, when reinforcing dehydrator as essential DIY gel kit item | link_type: cross-site
+
+## SECTION 12: VOICE AND TONE
+- recommended_voice: Confident, no-nonsense educator — cuts through product-marketing fluff with plain answers.
+- tone_characteristics: Direct and reassuring; mildly myth-busting; conversational but not chatty; avoids salon-jargon default to professional-tech tone; validates the reader's frustration without being dramatic; concrete over vague ("yes, if X" not "it depends").
+- language_style: Second person throughout ("you," "your nails"); short, declarative sentences for the direct-answer sections; avoids hedging language; light use of contrast structure ("It's not X. It's Y.").
+- audience_match: This reader has been frustrated by vague, salon-jargon-heavy competitor content — a direct, confident, jargon-light voice matches their need for a clear yes/no answer over technical hedging.
+
+## SECTION 13: EXTERNAL LINKS
+1. url: https://ericasata.com/blogs/news/when-should-dehydrating-product-be-applied-nail | context: When explaining professional sequencing/order of application for credibility | anchor_suggestion: "professional nail prep sequencing"
+2. url: https://thenailwiki.com/nail-dehydrator/ | context: When referencing the chemistry of moisture displacement for E-E-A-T | anchor_suggestion: "how nail dehydrators work at a chemical level"
+3. url: https://nailknowledge.org/blog/nail-dehydrators-and-nail-enhancements | context: When debunking the permanent-damage/white-spot myth | anchor_suggestion: "nail dehydration research on permanent damage myths"
+
+## SECTION 14: EXECUTION PLAN
+
+### Block 1: Keyword Execution
+- primary_keyword: what does a nail dehydrator do
+- top_3_density_baseline: 6 (estimated average across Erica's ATA, thenailwiki, Pure Spa Direct)
+- total_mention_target: 8-9 mentions total
+- first_100_words_plan: Mention 1 — sentence 2 of intro, direct definition framing. Mention 2 — sentence 4-5 of intro, tied to the lifting/peeling pain point.
+- first_half_target: 5 mentions — first ~970 words (intro through H2-3)
+- second_half_target: 3-4 mentions — second ~970 words (H2-4 through conclusion)
+- strong_tag_rule: Every mention of "nail dehydrator" / "what does a nail dehydrator do" wrapped in <strong> tags. Scan after every paragraph.
+- keywords_to_avoid_active: how to prep nails before gel polish, nail dehydrator vs primer, how to use polygel, polygel vs acrylic vs gel, how to remove polygel nails at home, nail drill bits guide, nail file grit guide, nail drill speed guide RPM
+
+### Block 2: Word Budget
+- total_target: 1900 words (±50 tolerance)
+- introduction: 220 words
+- conclusion: 180 words
+- h2_budgets:
+  1. What Does a Nail Dehydrator Actually Do? — 280 words — medium complexity
+  2. Nail Dehydrator vs Primer: What's the Real Difference? — 260 words — medium complexity
+  3. Do You Need One for Gel Polish? — 240 words — low complexity
+  4. Do You Need One for Regular Polish or Acrylics? — 240 words — low complexity
+  5. Is a Nail Dehydrator Bad for Your Nails? — 260 words — medium complexity (myth-busting, needs care)
+  6. What Can You Use Instead of a Nail Dehydrator? — 260 words — medium complexity
+  7. So, Do You Actually Need One? (conclusion) — 180 words — low complexity
+- tracking_rule: Track running word total after every H2. If over budget, cut before moving on — never compensate later.
+
+### Block 3: Image Plan
+- total_images: 1 (hero only — OVERRIDE per user instruction)
+- hero_image: frontmatter only, NEVER in body
+- body_images: 0
+- assignments: none — no body images for this post
+- image_type_rule: N/A (no body images)
+- path_rule: /images/blog/nail-tools-and-prep/do-you-need-a-nail-dehydrator/hero.webp
+
+### Block 4: Opening Technique Assignments
+- Introduction: Technique 1 (The Claim) — open by naming the lifting/peeling problem directly as a claim about its real cause
+- H2-1 (What It Does): Technique 3 (The Reframe) — reframe dehydrator away from "extra product" toward "missing step"
+- H2-2 (vs Primer): Technique 2 (The Contrast) — direct contrast structure between the two products
+- H2-3 (Gel Polish): Technique 1 (The Claim)
+- H2-4 (Regular/Acrylics): Technique 3 (The Reframe)
+- H2-5 (Bad for Nails): Technique 2 (The Contrast) — myth vs reality contrast
+- H2-6 (Substitutes): Technique 1 (The Claim)
+- Conclusion: Technique 3 (The Reframe)
+- banned_opener_rule: Check every opener against banned_opening_approaches in Blog Gen prompt before writing the second sentence. No two consecutive sections share a technique (verified above — no repeats back to back).
+
+### Block 5: Link Placements
+1. anchor_text: "full nail prep steps guide" | full_url: /blog/nail-tools-and-prep/nail-prep-steps | place_in_section: H2-1 | placement_context: when noting dehydrator is one step in the larger prep routine | link_type: cluster-pillar
+2. anchor_text: "nail dehydrator vs primer explained" | full_url: /blog/nail-tools-and-prep/nail-dehydrator-vs-primer | place_in_section: H2-2 | placement_context: immediately after resolving the basic dehydrator/primer distinction | link_type: cluster-spoke
+3. anchor_text: "polygel application tutorial" | full_url: /blog/nail-tools-and-prep/how-to-use-polygel | place_in_section: H2-4 | placement_context: when discussing enhancement systems requiring dehydrator | link_type: cluster-spoke
+4. anchor_text: "nail file grit guide" | full_url: /blog/nail-tools-and-prep/nail-file-grit-guide | place_in_section: H2-1 | placement_context: when mentioning buffing as the step before dehydrator | link_type: cluster-spoke
+5. anchor_text: "why Korean gel manicures skip almost no one's lifting complaints thanks to full nail dehydration" | full_url: https://mirelleinspo.com/blog/korean-nails/how-to-do-korean-nails | place_in_section: H2-3 | placement_context: when discussing gel adhesion and lifting prevention | link_type: cross-site
+6. anchor_text: "the three non-negotiables for long-lasting DIY gel at home" | full_url: https://mirelleinspo.com/work-nails/gel-nail-polish-for-work | place_in_section: H2-7 | placement_context: reinforcing dehydrator as essential DIY kit item in the closing verdict | link_type: cross-site
+
+### Block 6: AEO/GEO Plan
+- aeo_assignments:
+  1. "What does a nail dehydrator actually do to your nails?" → H2-1 → Direct 2-3 sentence answer immediately after heading, before elaboration.
+  2. "Is nail dehydrator the same as primer?" → H2-2 → Direct 2-3 sentence answer immediately after heading.
+  3. "Can I use alcohol instead of nail dehydrator?" → H2-6 → Direct 2-3 sentence answer immediately after heading.
+  4. "Does nail dehydrator damage your natural nails?" → H2-5 → Direct 2-3 sentence answer immediately after heading.
+- geo_entity_statements:
+  1. entity: nail dehydrator → H2-1 → Clear declarative definition: a liquid nail-prep solution that removes surface oils and moisture from the nail plate to improve product adhesion.
+  2. entity: nail primer → H2-2 → Clear declarative definition distinguishing it as a bonding agent, not an oil/moisture remover.
+
+### Block 7: Active Constraints
+- em_dash_banned: Long em dash does not appear anywhere. Replace with comma, new sentence, parentheses, "but," or restructure.
+- banned_vocab_watch: "game-changer", "elevate", "unlock", "dive into", "unleash", "seamless", "effortless" (as filler), "must-have"
+- british_english_active: colour, recognise, -ise, -our — every instance, no exceptions
+- keyword_density_reminder: After every 2 H2 sections, count current mentions of "nail dehydrator"/primary keyword. Verify on track for 8-9 total, denser in first half.
+- image_path_reminder: N/A — no body images this post (hero only override)
+- internal_link_url_reminder: Cluster links = /blog/nail-tools-and-prep/[slug]. Cross-site links = exact mirelleinspo.com URLs as discovered above.
+- hero_image_reminder: Hero = frontmatter only. Never placed in body.
+- strong_tag_reminder: Every primary keyword mention wrapped in <strong> tags. Scan after every paragraph.
