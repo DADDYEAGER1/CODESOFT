@@ -1,0 +1,193 @@
+# INPUT FILE — Blog Gen Agent Source of Truth
+
+## SECTION 1: FILE AUTHORITY
+This file is the single source of truth for the Blog Gen Agent. All POST_CONSTANTS values are hardcoded — do not ask, adjust, or override. All keywords, H2 structure, audience intelligence, internal links, and tone must be followed exactly.
+
+## SECTION 2: POST_CONSTANTS
+- slug: quick-dry-manicure-that-doesnt-chip
+- topic_slug: nail-polish-product-knowledge
+- canonical: https://mirelleinspo.com/blog/nail-polish-product-knowledge/quick-dry-manicure-that-doesnt-chip
+- post_type: spoke
+- intent: tutorial
+- word_count: 1200 (top-3 avg ~1170w floor; tutorial spoke, kept lean per intent)
+- image_count: 1 (USER OVERRIDE — hero only, no body images)
+- show_inspo_gallery_link: false (USER OVERRIDE — locked, no decision logic run)
+- template: split-left
+- hero_dimensions: 800x800
+- category: Nail Care & Tips
+- publish_date: 2026-07-27
+- author: jyoti-mirelle
+
+## SECTION 3: CLUSTER SNAPSHOT
+- pillar_slug: best-nail-polish-brands
+- pillar_title: Best Nail Polish Brands, Ranked by What Actually Matters
+- pillar_primary_keyword: best nail polish brands
+- this_post_slug: quick-dry-manicure-that-doesnt-chip
+- this_post_role: spoke
+- keywords_to_avoid: how to make gel nails last longer, nail product ingredients, 10 free nail polish meaning, vegan nail polish ingredients, nail polish ingredients to avoid, gel vs acrylic nail ingredients, best gel nail kits, best gel nail polish sets, best hema free gel nail polish, best value gel nail polish sets, best cheap gel nail polish, best melodysusie gel polish, spring nail colors 2026, nail colors, best nail polish brands, opi vs essie vs sally hansen, longest lasting nail polish, best drugstore nail polish
+
+## SECTION 4: SERP ANALYSIS
+- competitor_gaps: (1) None of the top competitors address the core audience tension: quick-dry polishes are widely believed to chip faster than regular polish — confirmed on Quora, Amazon/Walmart review data, and product marketing copy that explicitly counters this fear ("doesn't chip," "chip-resistant") — yet no roundup explains *why* this happens or how technique offsets it. (2) No competitor pairs product picks with the specific application technique (thin coats, wait time between coats) that determines whether a quick-dry polish actually resists chipping — they treat product choice and technique as separate topics.
+- missing_semantic_territory: "why does quick dry nail polish chip" / "quick dry vs regular polish chip resistance" — a demand-validated angle (Quora + Amazon review sentiment) entirely absent from ranked content.
+- our_strategic_approach: Lead with the technique-plus-product pairing angle competitors miss — position the post as solving the "dries fast but chips fast" complaint by combining correct application method with the right product pick, rather than just another product roundup.
+- recommended_image_count_validation: N/A — image count locked by user override to 1 (hero only).
+
+## SECTION 5: AUDIENCE INTELLIGENCE
+- who_they_are: Time-pressed, mostly DIY/at-home manicure users (per Sephora category page, WhoWhatWear "zero time or patience" framing) who already know quick-dry polish exists but are unsure which product+method combo actually prevents chipping.
+- what_they_want_from_this_post: A short, trustworthy technique + product pairing that gets them a smudge-free manicure fast AND one that survives more than 2-3 days — not just another "here are 10 polishes" list.
+- what_frustrates_them: Existing roundups (StyleCraze, NewBeauty, WhoWhatWear) only rank products with zero technique guidance; existing technique guides (Manucurist, ella+mila, Côte, Healthline) give tips with no product recommendation, forcing readers to piece together two separate articles.
+- top_5_pain_points: (1) Fear that fast-dry formulas chip faster than regular polish — directly voiced on Quora ("I'm honestly not a fan of fast drying nail polish, the formulas have not lasted well") and echoed in Amazon "neutral" review sentiment ("can be long-lasting, but also prone to chipping"). (2) Confusion over technique — thick layers ruin dry time regardless of product (Healthline, AOL/celebrity manicurist sources). (3) Impatience leading to premature touching/smudging. (4) Not knowing safe speed-up hacks (cold water, ice bath, oil drops, cold hairdryer) vs risky ones. (5) Wanting a one-coat or built-in base+top formula to save steps (Sally Hansen Insta-Dri 3-in-1 repeatedly highlighted in reviews).
+- exact_user_phrases: "dries fast but doesn't last," "doesn't chip and lasts for over a week," "dries very quickly... no smudges," "quick and easy manicures... right at home," "smudge-proof nails in 60 seconds," "waiting for the nail polish to dry," "ruined simply because you didn't wait long enough," "thick layers... take forever to dry," "cold air rather than hot," "a drop of baby oil on each nail," "one-coat application."
+- intent_content_signals: Reader responds to short numbered technique lists; wants a clear product recommendation woven into the how-to rather than a separate section; values specific timings (30/45/60 seconds, 5-10 minutes); trusts manicurist-sourced tips over generic blog advice; wants reassurance the "doesn't chip" claim is technique-dependent, not just product-dependent.
+
+## SECTION 6: SEMANTIC KEYWORD DATA
+- primary_keyword: best quick dry nail polish
+- keyword_variations: quick dry nail polish that doesn't chip, quick-dry manicure, fast drying nail polish, quick dry top coat, best fast dry nail polish, no-chip quick dry polish
+- cluster_keywords: quick dry nail polish brands, chip-resistant nail polish, fast-drying top coat, one-coat nail polish, built-in base and top coat polish, nail polish drying time, smudge-proof manicure, at-home quick manicure, quick dry nail polish application tips, nail polish thin coats technique
+- lsi_terms: solvent evaporation, ethyl acetate, quick-dry drops, cold water nail trick, ice bath manicure, ProWide brush, angled brush application, ProWide brush, ridge-filling formula, vegan nail polish formula, 8-free/15-free formula, UV inhibitor top coat, non-yellowing top coat, gel-like finish without UV
+- aeo_terms: does quick dry nail polish chip faster than regular polish, how long does quick dry nail polish take to dry, how do you make nail polish dry faster without ruining it, what is the best quick dry nail polish that doesn't chip, can you use a hair dryer to dry nail polish, why does my nail polish still smudge after it feels dry
+- technical_terms: solvent concentration, base coat, built-in top coat, acrylic polymer topcoat, thin-coat application, curing time, cross-linking (gel), non-acetone formula
+- user_language: "dries fast but doesn't last," "smudge-proof," "doesn't chip and lasts a week," "one coat application," "quick and easy manicure at home," "waiting forever to dry," "ruined my mani," "cold air not hot air," "drop of oil on each nail"
+
+## SECTION 7: VOICE AND AI QUERIES
+- Does quick-dry nail polish chip faster than regular polish?
+- How long does it actually take for quick-dry nail polish to dry?
+- What's the best quick-dry nail polish that doesn't chip?
+- How can I make my nail polish dry faster without ruining the finish?
+- Is it safe to use a hair dryer to dry nail polish faster?
+- Does dipping nails in cold water actually dry nail polish faster?
+- Why does my nail polish still smudge even after it feels dry to the touch?
+- What's the difference between quick-dry polish and a quick-dry top coat?
+- Can I use quick-dry drops over any nail polish brand?
+- How many coats should I use with a quick-dry polish for it to last?
+- Does applying nail polish in thin coats really matter for dry time?
+- What ingredients make nail polish dry faster?
+- Is Sally Hansen Insta-Dri or Essie Expressie better for lasting power?
+- How long should I wait between coats of quick-dry polish?
+- Can quick-dry nail polish still look salon-quality?
+
+## SECTION 8: HOOK AND CTR
+- selected_trigger: Trigger 3 — Specificity/Numbers
+- trigger_rationale: Reader is in how-to execution mode, motivated but wary of the "dries fast, chips fast" trade-off — a specific, numbered technique promise resolves that uncertainty better than curiosity or FOMO framing.
+- title: Quick-Dry Manicure That Doesn't Chip: 7 Pro Tips
+- title_char_count: 56
+- meta_description: Get a smudge-free manicure fast. See the technique and quick-dry nail polish pairing pros use to stop chipping before it starts.
+- meta_char_count: 128
+- intro_hook_brief: Open by naming the exact trade-off readers fear — that quick-dry formulas dry fast but chip faster — then promise the fix is pairing the right product with the right technique, not choosing one over the other.
+- first_h2_hook_direction: Phrase the first H2 as a direct voice-search question resolving the core doubt, e.g. "Does Quick-Dry Nail Polish Really Chip Faster?"
+
+## SECTION 9: SEARCH JOURNEY
+- reader_arrival_state: Motivated to save time on their at-home manicure but intimidated by past experience of smudged or quickly-chipped quick-dry polish.
+- journey_arc: (1) Validate the chip-faster fear as real but fixable → (2) explain the technique that prevents it → (3) recommend the product pairing that reinforces the technique → (4) give safe speed-up hacks for the impatient → (5) close with what a successful quick-dry, no-chip manicure looks and feels like.
+- promise_to_deliver: A manicure that dries fast AND doesn't chip, achieved by combining the right technique with the right product — not one or the other.
+- exit_state: Confident and equipped — reader knows exactly which technique steps and product type to use next time they paint their nails.
+
+## SECTION 10: CONTENT STRUCTURE
+- h1: Quick-Dry Manicure That Doesn't Chip: The Technique Pros Use
+- h2_structure:
+  1. Does Quick-Dry Nail Polish Really Chip Faster?
+  2. The Application Technique That Prevents Chipping
+  3. Best Quick Dry Nail Polish Picks for a No-Chip Finish
+  4. Safe Ways to Speed Up Drying Time (Without Ruining Your Mani)
+  5. How Long to Wait Before You Touch Anything
+- word_budget:
+  - introduction: 200 words
+  - H2-1 (Does It Chip Faster): 180 words
+  - H2-2 (Technique): 260 words
+  - H2-3 (Product Picks): 220 words
+  - H2-4 (Safe Speed-Up Hacks): 200 words
+  - H2-5 (Wait Time): 140 words
+  - conclusion: 150 words (total: ~1200)
+
+## SECTION 11: INTERNAL LINKS
+| url_or_slug | title | anchor_text | placement_note | link_type |
+|---|---|---|---|---|
+| /blog/nail-polish-product-knowledge/best-nail-polish-brands | Best Nail Polish Brands, Ranked by What Actually Matters | best nail polish brands ranked | In H2-3 (Product Picks), when broadening beyond quick-dry-specific picks | cluster-pillar |
+| /blog/nail-polish-product-knowledge/opi-vs-essie-vs-sally-hansen | OPI vs Essie vs Sally Hansen: Which Nail Polish Brand Actually Wins | OPI vs Essie vs Sally Hansen brand comparison | In H2-3, when naming Sally Hansen/Essie/OPI quick-dry lines | cluster-spoke |
+| /blog/nail-polish-product-knowledge/longest-lasting-nail-polish | The Nail Polish That Actually Lasts the Longest (Tested) | nail polish that actually lasts the longest | In H2-1, when addressing the chip/longevity trade-off | cluster-spoke |
+| /blog/nail-polish-product-knowledge/best-drugstore-nail-polish-brands | Best Drugstore Nail Polish Brands Worth Buying | best drugstore nail polish brands worth buying | In H2-3, when discussing budget-friendly quick-dry options | cluster-spoke |
+
+Total: 4 internal links (within 4-6 cap). No cross-site discovery links found meeting the strict relevance filter for this specific technique+product angle.
+
+## SECTION 12: VOICE AND TONE
+- recommended_voice: Confident educator with a hands-on manicurist edge
+- tone_characteristics: Reassuring but direct; practical over aspirational; short instructional sentences; treats reader as capable of doing this herself; light expert authority (cites technique logic, not just product claims)
+- language_style: Second-person "you," active voice, short imperative sentences in the how-to sections, no filler transitions, no exaggerated superlatives
+- audience_match: Tutorial intent readers want reassurance and clear outcomes, not inspiration — this voice removes doubt and gets straight to actionable steps, matching the "motivated but intimidated" arrival state
+
+## SECTION 13: EXTERNAL LINKS
+| url | context | anchor_suggestion |
+|---|---|---|
+| (none found meeting site: search + E-E-A-T bar for nailpro.com, allure.com, byrdie.com on this exact keyword within research window) | — | — |
+
+Note: site:nailpro.com, site:allure.com, and site:byrdie.com searches for "best quick dry nail polish" returned no usable indexed snippet content (expected per blocked-sites flag). No external links included rather than fabricating attribution.
+
+## SECTION 14: EXECUTION PLAN
+
+### Block 1: Keyword Execution
+- primary_keyword: best quick dry nail polish
+- top_3_density_baseline: 7 (StyleCraze ~8, NewBeauty ~6, WhoWhatWear ~7 → avg 7)
+- total_mention_target: 9-10 mentions
+- first_100_words_plan:
+  - mention_1: sentence 1-2 of intro — naming the search term while framing the chip-fear hook
+  - mention_2: sentence 4-5 of intro — reinforcing as the promise of the post
+- first_half_target: 6 mentions — first 600 words
+- second_half_target: 3-4 mentions — second 600 words
+- strong_tag_rule: every mention wrapped in `<strong>` tags, zero misses
+- keywords_to_avoid_active: full list in Section 3 — never used as focus terms
+
+### Block 2: Word Budget
+- total_target: 1200 words (±50 tolerance)
+- introduction: 200
+- conclusion: 150
+- h2_budgets:
+  - Does Quick-Dry Nail Polish Really Chip Faster?: 180 (low complexity)
+  - The Application Technique That Prevents Chipping: 260 (high complexity)
+  - Best Quick Dry Nail Polish Picks for a No-Chip Finish: 220 (medium complexity)
+  - Safe Ways to Speed Up Drying Time: 200 (medium complexity)
+  - How Long to Wait Before You Touch Anything: 140 (low complexity)
+- tracking_rule: check running total after each H2; cut before moving on if over budget
+
+### Block 3: Image Plan (USER OVERRIDE)
+- total_images: 1
+- hero_image: frontmatter only, never in body
+- body_images: 0 — no body images per user override
+- assignments: none
+- image_type_rule: N/A (hero only)
+- path_rule: /images/blog/nail-polish-product-knowledge/quick-dry-manicure-that-doesnt-chip/filename.webp
+
+### Block 4: Opening Technique Assignments
+- Introduction: Technique 1 — The Claim (state the chip-fear/fix promise directly)
+- H2-1 (Does It Chip Faster): Technique 3 — The Reframe (reframe the fear as technique-solvable)
+- H2-2 (Technique): Technique 2 — The Scene/Step-in (drop straight into the how-to action)
+- H2-3 (Product Picks): Technique 1 — The Claim (direct recommendation opener)
+- H2-4 (Safe Speed-Up Hacks): Technique 3 — The Reframe (reframe impatience as manageable)
+- H2-5 (Wait Time): Technique 2 — The Scene/Step-in
+- Conclusion: Technique 1 — The Claim
+
+### Block 5: Link Placements
+| anchor_text | full_url | place_in_section | placement_context | link_type |
+|---|---|---|---|---|
+| nail polish that actually lasts the longest | /blog/nail-polish-product-knowledge/longest-lasting-nail-polish | Does Quick-Dry Nail Polish Really Chip Faster? | When contrasting quick-dry chip risk against general longevity | cluster-spoke |
+| OPI vs Essie vs Sally Hansen brand comparison | /blog/nail-polish-product-knowledge/opi-vs-essie-vs-sally-hansen | Best Quick Dry Nail Polish Picks for a No-Chip Finish | When naming Sally Hansen Insta-Dri / Essie Expressie / OPI RapiDry | cluster-spoke |
+| best drugstore nail polish brands worth buying | /blog/nail-polish-product-knowledge/best-drugstore-nail-polish-brands | Best Quick Dry Nail Polish Picks for a No-Chip Finish | When noting budget quick-dry options exist at drugstore price points | cluster-spoke |
+| best nail polish brands ranked | /blog/nail-polish-product-knowledge/best-nail-polish-brands | Best Quick Dry Nail Polish Picks for a No-Chip Finish | When pointing to the broader brand ranking for readers wanting more options | cluster-pillar |
+
+### Block 6: AEO/GEO Plan
+- aeo_assignments:
+  - "Does quick-dry nail polish chip faster than regular polish?" → H2-1 → direct 2-3 sentence answer immediately after heading
+  - "How can I make my nail polish dry faster without ruining it?" → H2-4 → direct answer paragraph before hack list
+  - "How long should I wait before touching my nails?" → H2-5 → direct timing answer immediately after heading
+- geo_entity_statements:
+  - "Quick-dry top coat" defined clearly in H2-2 (acrylic polymer formula that hardens polish in 30-60 seconds)
+  - "Thin-coat technique" defined clearly in H2-2 (three light strokes per nail vs one thick pass)
+
+### Block 7: Active Constraints
+- em_dash_banned: no em dashes anywhere; replace with comma, period, or restructure
+- banned_vocab_watch: "elevate," "unleash," "game-changer," "must-have," "in today's fast-paced world," "when it comes to," "at the end of the day"
+- british_english_active: colour, recognise, -ise, -our endings throughout
+- keyword_density_reminder: check mention count after every 2 H2s; front-load density in first half
+- image_path_reminder: /images/blog/nail-polish-product-knowledge/quick-dry-manicure-that-doesnt-chip/filename.webp (hero only, per override)
+- internal_link_url_reminder: full paths only, /blog/nail-polish-product-knowledge/[slug]
+- hero_image_reminder: frontmatter only, never in body
+- strong_tag_reminder: every primary keyword mention wrapped in `<strong>` tags
