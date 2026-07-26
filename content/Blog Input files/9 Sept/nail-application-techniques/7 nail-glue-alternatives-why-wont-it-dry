@@ -1,0 +1,229 @@
+MODE: CLUSTER MODE — cluster context loaded (nail-application-techniques, post_id 7)
+
+# SECTION 1 — FILE AUTHORITY
+THIS FILE IS THE SINGLE SOURCE OF TRUTH FOR THE BLOG GEN AGENT. All values in POST_CONSTANTS are hardcoded — Blog Gen Agent does not ask, adjust, or override them. All keywords, H2 structure, audience intelligence, internal links, and tone defined here must be followed exactly.
+
+# SECTION 2 — POST_CONSTANTS
+- slug: nail-glue-alternatives-why-wont-it-dry
+- topic_slug: nail-application-techniques
+- canonical: https://mirelleinspo.com/blog/nail-application-techniques/nail-glue-alternatives-why-wont-it-dry
+- post_type: spoke
+- intent: informational
+- word_count: 2300
+- image_count: 1 (hero only — MANUAL OVERRIDE, see note below)
+- show_inspo_gallery_link: false
+- template: split-left
+- hero_dimensions: 800x800
+- category: Nail Care & Application
+- publish_date: 2026-08-03
+- author: jyoti-mirelle
+
+**OVERRIDE NOTE:** Standard phase_2 rules for informational/non-inspirational intent would call for 4-5 images (1 hero + 3-4 body). Per explicit user instruction for this post, image_count is locked to 1 (hero only, frontmatter use only). Blog Gen Agent places ZERO images in the body. show_inspo_gallery_link is false per user instruction (also consistent with rule: this is troubleshooting/informational content, not a browse/explore-designs post).
+
+# SECTION 3 — CLUSTER SNAPSHOT
+- pillar_slug: how-to-do-acrylic-nails-at-home
+- pillar_title: How to Do Acrylic Nails at Home: Complete Beginner's Guide
+- pillar_primary_keyword: how to do acrylic nails at home
+- this_post_slug: nail-glue-alternatives-why-wont-it-dry
+- this_post_role: spoke
+- keywords_to_avoid: how to do acrylic nails at home; how to paint your nails perfectly; how to shape your nails at home; dotting tool nail art; how to apply nail stickers; how to make your own nail stickers; how to make fake nails at home; how do you make nail polish; how to do coffin acrylic nails at home; how to shape coffin nails; how to shape almond nails; how to do ombre nails at home; how to do a french manicure at home; how to do fruit nail art at home; how to do goth nails at home; how to do korean nails at home; how to do jelly nails at home; easy nail designs for beginners; easy y2k nails
+
+# SECTION 4 — SERP ANALYSIS (via web_fetch on live competitor pages)
+**competitor_gaps** (demand confirmed 2+ sources):
+- Root-cause diagnosis of WHY glue fails to dry/cure (thickening, clumping, clogged nozzle, old/expired glue, humidity) — confirmed via TikTok, Beautylish, Quora, SalonGeek — zero competitors combine this with the alternatives angle
+- Clumpy/clogged tube troubleshooting (opening a glued-shut bottle, restoring flow) — confirmed TikTok + Beautylish + Quora — no competitor covers this at all
+- Super glue vs. nail glue safety distinction — confirmed on 3+ sources (SMUG, Mersi, SHANGMENG) but always as a brief aside, never resolved with real chemistry detail
+- Acrylate sensitivity/contact dermatitis as a reason to seek alternatives — only one competitor (SHANGMENG) covers this, with cited dermatology sources — genuine differentiation opportunity
+- Storage/prevention tips (why glue dries out in the bottle over time) — confirmed on 2+ sources (Lemon8, SalonGeek) — competitors mention in passing only
+
+**missing_semantic_territory:** "why won't my nail glue dry" and "why won't my nail glue come out of the tube" are functionally different problems (curing failure vs. dispensing failure) that no competitor separates clearly — both get lumped as "nail glue problems."
+
+**our_strategic_approach:** Position this post as the only one that treats nail glue trouble as two separate failure modes — the glue not curing on the nail, and the glue not coming out of the bottle at all — then pivots to alternatives for readers who want to sidestep the problem entirely. Competitors pick one lane (alternatives-only, like SHANGMENG/Mersi, or stick-fix-only, like Kiara Sky); none do both with real troubleshooting depth.
+
+**top_3_word_count_estimates:** SHANGMENG ~2,400 words (7 alternatives + FAQ + universal tips); Mersi Cosmetics ~750 words; Kiara Sky ~700 words. Average ≈ 1,280 words. Floor set well above this average given genuine topical depth available (informational spoke, ceiling 2800).
+
+**top_3_keyword_density_baseline:** "nail glue" (parent term) appears very densely (15-25x) but exact-match "nail glue alternatives" appears only 3-5x per page (used mostly in title/H1/intro, then pronoun-referenced as "alternatives" or "these options"). Baseline for exact-phrase mentions ≈ 4.
+
+# SECTION 5 — AUDIENCE INTELLIGENCE
+**who_they_are:** Two overlapping readers hitting this exact keyword: (1) someone mid-manicure whose glue has failed — either it won't cure/dry on the nail, or the tube/bottle itself won't dispense — searching in a moment of frustration; (2) someone proactively looking for a different adhesive method because of allergy, short-term wear needs, or a wish to reuse press-ons. Both range from total beginners to nail techs (confirmed by professional-level SalonGeek threads alongside consumer TikTok/Quora searches).
+
+**what_they_want_from_this_post:** A fast, specific diagnosis of what's actually going wrong (not just "buy new glue") plus real alternative options they can act on immediately, at home, with what's likely already in the house.
+
+**what_frustrates_them:** Existing content picks one narrow angle — either "here are 5 alternatives" (no troubleshooting) or "here's why tips won't stick" (no alternatives, no bottle/tube troubleshooting). Nobody addresses the reader who just wants their glue to work right now, AND the reader planning to avoid glue altogether, in the same piece.
+
+**top_5_pain_points:**
+1. Glue applied to the nail stays tacky/wet and never fully cures
+2. The tube or bottle itself is clogged, clumped, or glued shut and nothing comes out
+3. Uncertainty whether super glue is a safe substitute in a pinch
+4. Skin/nail sensitivity or irritation from cyanoacrylate, wanting a gentler option
+5. Wanting press-ons to be reusable/removable rather than committing to a full glue bond
+
+**exact_user_phrases:**
+- "why is my nail glue not drying"
+- "why won't my nail tips stick"
+- "glue won't stick... has anyone ever experienced this"
+- "tired of my glue drying out cuz it can't stand on its own"
+- "how do I get this glue open"
+- "it's a thick, glommed up mess"
+- "what can I use instead of nail glue"
+- "can I use super glue instead of nail glue"
+- "I have a mild latex allergy and was nervous about the glue"
+- "why isn't my acrylic drying"
+
+**intent_content_signals:** Numbered/stepped fix format performs well (Kiara Sky's 8-point structure, SHANGMENG's rated alternatives); readers respond to plain troubleshooting language over branded product pushes; FAQ blocks are a proven format on every top competitor; direct, first-person problem framing ("why won't my...") converts better than generic "nail glue guide" framing.
+
+# SECTION 6 — SEMANTIC KEYWORD DATA
+- primary_keyword: nail glue alternatives
+- total_mention_target: 6-7 (baseline 4 + 2-3)
+- first_100_words_rule: primary keyword appears twice in first 100 words — mandatory
+- keyword_variations: alternatives to nail glue; what can I use instead of nail glue; nail glue substitutes; nail glue alternative options; substitute for nail glue; no-glue nail alternatives; press-on nail glue alternatives
+- cluster_keywords: why won't my nail glue dry; nail glue not drying; nail glue troubleshooting; nail glue won't come out; clumpy nail glue; nail glue clogged; adhesive tabs for nails; double-sided nail tape; nail glue vs super glue; nail wraps as adhesive; sticky tabs for press-ons; acrylate sensitivity nails; how to fix nail glue; nail glue drying time
+- lsi_terms: cyanoacrylate; pressure-sensitive adhesive; nail dehydrator; contact dermatitis; UV gel base coat; nail primer; press-on nails; acetone soak; nail tabs; adhesive strips; nail plate; cuticle prep; bond strength; hold time; nail wraps; nail decals; acrylic overlay; polygel; nail buffer; humidity and glue cure
+- aeo_terms: "why won't my nail glue dry", "what can I use instead of nail glue", "is nail glue bad for your nails", "can I use super glue instead of nail glue", "how do you fix nail glue that won't come out of the tube", "how long does nail glue take to dry", "what causes nail glue to become clumpy", "are there nail glue alternatives for sensitive skin"
+- technical_terms: cyanoacrylate; monomer; polymerization; pressure-sensitive adhesive (PSA); acetone; nail dehydrator; primer; activator
+- user_language: "glommed up mess"; "glue won't stick"; "tired of my glue drying out"; "why isn't it working"; "popping off"; "in a pinch"; "ran out of glue"; "stuck the lid shut"
+
+# SECTION 7 — VOICE & AI QUERIES
+1. Why won't my nail glue dry once it's on my nail?
+2. Why does my nail glue stay tacky and never fully cure?
+3. What can I use instead of nail glue at home?
+4. Is it safe to use super glue instead of nail glue?
+5. Why is my nail glue tube clogged and nothing comes out?
+6. How do I fix nail glue that's gone thick and clumpy?
+7. How do I open a nail glue bottle that's glued itself shut?
+8. How long should nail glue take to dry?
+9. Why do my press-on nails keep popping off even with glue?
+10. What household items work as a nail glue substitute?
+11. Are nail glue alternatives safe for sensitive skin?
+12. Can nail glue alternatives be used to reuse press-on nails?
+13. Why does nail glue dry out inside the bottle over time?
+14. What's the difference between nail glue and super glue?
+15. Do nail glue alternatives work for swimming or water exposure?
+16. How do I stop my nail glue from drying out between uses?
+
+# SECTION 8 — HOOK & CTR
+- selected_trigger: Trigger 1 — Curiosity Gap
+- trigger_rationale: Reader is mid-frustration (glue failed) or suspects they're missing a better method — classic curiosity/problem-solving state, not browsing for inspiration.
+- title: Nail Glue Alternatives: Why It Won't Dry (and What Works)
+- title_char_count: 57
+- meta_description: Nail glue won't dry or won't come out of the tube? Here's why—plus 5 alternatives that hold press-ons without the mess or the wait.
+- meta_char_count: 133
+- intro_hook_brief: Open by naming the exact frustration moment — glue that stays tacky or a bottle that won't budge — before revealing that most guides only solve half the problem.
+- first_h2_hook_direction: Phrase the first H2 as the literal voice-search query: "Why Won't My Nail Glue Dry?" — direct curiosity-gap framing, no title repeat.
+
+# SECTION 9 — SEARCH JOURNEY
+- reader_arrival_state: Frustrated and slightly stuck — either their glue just failed mid-manicure or they're proactively fed up with glue and want a better system.
+- journey_arc:
+  1. Validate the frustration and split it into the two real problems (won't cure vs. won't dispense)
+  2. Diagnose each failure mode with specific, actionable fixes
+  3. Answer the super-glue-substitute question directly and honestly
+  4. Introduce real alternatives, matched to reader situation (sensitivity, short-term wear, reusability)
+  5. Close with prevention tips so the problem doesn't recur
+- promise_to_deliver: A full diagnosis of why nail glue fails plus genuine working alternatives — not just a product upsell.
+- exit_state: Reader knows exactly what went wrong, has a fix in hand, and has at least one alternative method they feel confident trying.
+
+# SECTION 10 — CONTENT STRUCTURE
+h1: Nail Glue Alternatives: Why It Won't Dry (and What Actually Works)
+
+h2_structure:
+1. Why Won't My Nail Glue Dry?
+2. Why Is My Nail Glue Tube Clogged or Won't Come Out?
+3. Can You Use Super Glue Instead of Nail Glue?
+4. Best Nail Glue Alternatives to Try at Home
+5. Which Alternative Should You Choose?
+6. How to Stop Nail Glue From Drying Out Next Time
+
+word_budget:
+- introduction: 220 words
+- H2-1 (Why Won't My Nail Glue Dry?): 380 words
+- H2-2 (Clogged Tube): 320 words
+- H2-3 (Super Glue vs Nail Glue): 300 words
+- H2-4 (Alternatives): 500 words
+- H2-5 (Which to Choose): 280 words
+- H2-6 (Prevention): 250 words
+- conclusion: 180 words
+(Total ≈ 2,430 — trim ~130 words across longer sections to hit 2,300 target)
+
+# SECTION 11 — INTERNAL LINKS
+1. slug: how-to-do-acrylic-nails-at-home | anchor: "how to do acrylic nails at home" | placement: H2-4 (Alternatives), where acrylic mixture is mentioned as a DIY adhesive option | type: cluster-pillar
+2. slug: how-to-make-fake-nails-at-home | anchor: "how to make fake nails at home without a kit" | placement: H2-4 (Alternatives), alongside double-sided tape/household options | type: cluster-spoke
+3. slug: how-to-shape-your-nails-at-home | anchor: "how to shape your nails at home" | placement: H2-6 (Prevention), where nail prep/buffing is discussed as improving adhesion | type: cluster-spoke
+
+Total: 3 internal links (within 4-6 cap; cross-site discovery yielded no genuinely relevant mirelleinspo.com pages beyond the three cluster links already mandated — no cross-site links added to avoid diluting relevance).
+
+# SECTION 12 — VOICE & TONE
+- recommended_voice: Calm, knowledgeable troubleshooter — a nail tech friend talking you through the fix
+- tone_characteristics: Direct; reassuring without being dismissive of the frustration; plainspoken over technical; confident diagnosis, not hedging; light dry humor acceptable given the "glued shut bottle" frustration is genuinely relatable
+- language_style: Short, clear sentences; second person "you"; occasional rhetorical question mirroring the reader's exact search phrasing; minimal jargon — define cyanoacrylate once, plainly, then move on
+- audience_match: This reader wants resolution, not romance — informational intent means clarity and speed matter more than aspirational language
+
+# SECTION 13 — EXTERNAL LINKS
+1. url: https://pubmed.ncbi.nlm.nih.gov/29266254/ | context: when explaining acrylate/cyanoacrylate contact dermatitis risk | anchor_suggestion: "contact dermatitis from nail adhesives"
+2. url: https://www.aad.org/public/everyday-care/nail-care-secrets/basics/pedicures/reduce-artificial-nail-damage | context: when discussing nail health impact of repeated glue use | anchor_suggestion: "protecting your natural nails from artificial nail damage"
+
+# SECTION 14 — EXECUTION PLAN
+
+## Block 1 — Keyword Execution
+- primary_keyword: nail glue alternatives
+- top_3_density_baseline: 4
+- total_mention_target: 6-7 total
+- first_100_words_plan: mention_1 in sentence 2 of intro (naming the search need directly); mention_2 in sentence 4-5 of intro (transition into what the post covers)
+- first_half_target: 4 mentions — first ~1,150 words (intro through H2-3)
+- second_half_target: 2-3 mentions — second ~1,150 words (H2-4 through conclusion)
+- strong_tag_rule: every mention of "nail glue alternatives" wrapped in `<strong>` tags, zero exceptions
+- keywords_to_avoid_active: full list from Section 3 — never used as focus terms
+
+## Block 2 — Word Budget
+- total_target: 2,300 words (±50 tolerance)
+- introduction: 220
+- conclusion: 180
+- h2_budgets:
+  - Why Won't My Nail Glue Dry?: 380 words, medium complexity
+  - Why Is My Nail Glue Tube Clogged: 320 words, low complexity
+  - Super Glue vs Nail Glue: 300 words, medium complexity
+  - Best Alternatives to Try at Home: 500 words, high complexity
+  - Which Alternative Should You Choose: 280 words, medium complexity
+  - How to Stop Glue From Drying Out: 250 words, low complexity
+- tracking_rule: count running total after each H2; cut before moving on if over budget
+
+## Block 3 — Image Plan
+- total_images: 1 (hero only)
+- hero_image: frontmatter only — NEVER appears in body
+- body_images: 0 — NO body images for this post (manual override per user instruction)
+- image_type_rule: N/A — no body images to place
+- path_rule: /images/blog/nail-application-techniques/nail-glue-alternatives-why-wont-it-dry/hero.webp
+
+## Block 4 — Opening Technique Assignments
+- Introduction: Technique 1 — The Claim (state plainly that most guides only solve half this problem)
+- H2-1 (Why Won't It Dry): Technique 2 — The Direct Answer (AEO-style immediate diagnosis)
+- H2-2 (Clogged Tube): Technique 4 — The Scenario (paint the "stuck lid" moment)
+- H2-3 (Super Glue vs Nail Glue): Technique 1 — The Claim (state the direct answer upfront)
+- H2-4 (Alternatives): Technique 3 — The Reframe (shift from "problem" to "better system")
+- H2-5 (Which to Choose): Technique 2 — The Direct Answer
+- H2-6 (Prevention): Technique 4 — The Scenario
+- Conclusion: Technique 3 — The Reframe
+- banned_opener_rule: check every opener against banned_opening_approaches before writing second sentence
+
+## Block 5 — Link Placements
+1. anchor: "how to do acrylic nails at home" | url: /blog/nail-application-techniques/how-to-do-acrylic-nails-at-home | section: Best Nail Glue Alternatives | context: mentioning acrylic mixture as a DIY adhesive alternative | type: cluster-pillar
+2. anchor: "how to make fake nails at home without a kit" | url: /blog/nail-application-techniques/how-to-make-fake-nails-at-home | section: Best Nail Glue Alternatives | context: alongside household/no-kit adhesive options | type: cluster-spoke
+3. anchor: "how to shape your nails at home" | url: /blog/nail-application-techniques/how-to-shape-your-nails-at-home | section: How to Stop Nail Glue From Drying Out Next Time | context: buffing/prepping the nail plate for better adhesion | type: cluster-spoke
+
+## Block 6 — AEO/GEO Plan
+- aeo_assignments:
+  - "why won't my nail glue dry": H2-1 — direct 2-3 sentence answer immediately after heading (dirty/oily nail surface, expired glue, or insufficient pressure during application)
+  - "how do you fix nail glue that won't come out of the tube": H2-2 — direct answer immediately after heading (warm water soak, needle-clear method, replace if crystallized)
+  - "can I use super glue instead of nail glue": H2-3 — direct answer immediately after heading (technically similar compound, but not formulated/tested for skin contact)
+- geo_entity_statements:
+  - entity: cyanoacrylate | section: Why Won't My Nail Glue Dry? | execution: one clear declarative definition sentence, no hedging
+  - entity: pressure-sensitive adhesive (PSA) tabs | section: Best Nail Glue Alternatives | execution: clear declarative definition distinguishing from chemical-bond glue
+
+## Block 7 — Active Constraints
+- em_dash_banned: replace any formed em dash with comma, new sentence, parentheses, or restructure
+- banned_vocab_watch: "elevate," "unlock," "seamless," "journey," "game-changer," "must-have," "effortlessly"
+- british_english_active: colour, recognise, -ise, -our throughout
+- keyword_density_reminder: count "nail glue alternatives" mentions after every 2 H2s; first half denser than second half
+- image_path_reminder: N/A — no body images this post; hero path only
+- internal_link_url_reminder: full path /blog/nail-application-techniques/[slug] for all three cluster links
+- hero_image_reminder: hero is frontmatter only, never in body — especially critical here since body has zero images
+- strong_tag_reminder: every "nail glue alternatives" mention in `<strong>` tags, scan after every paragraph
