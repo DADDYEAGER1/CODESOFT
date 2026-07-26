@@ -1,0 +1,242 @@
+{
+  "cluster_metadata": {
+    "cluster_topic": "Thanksgiving Nails",
+    "topic_slug": "thanksgiving-nails",
+    "target_audience": "Global, Tier 1 countries",
+    "total_posts": 6,
+    "intent_breakdown": {
+      "informational": 1,
+      "inspirational": 3,
+      "tutorial": 2,
+      "comparison": 0,
+      "seasonal_trend": 0
+    },
+    "pillar_post_slug": "thanksgiving-nail-ideas",
+    "inspiration_gallery_url": "https://mirelleinspo.com/inspo/thanksgiving-nail-ideas-inspiration-gallery",
+    "created_date": "2026-07-26"
+  },
+
+  "existing_site_posts_excluded": [],
+
+  "posts": [
+    {
+      "post_id": 1,
+      "role": "pillar",
+      "title": "Thanksgiving Nail Ideas",
+      "slug": "thanksgiving-nail-ideas",
+      "primary_keyword": "thanksgiving nail ideas",
+      "intent": "inspirational",
+      "search_mode": "inspiration_mode",
+      "suggested_hook_trigger": "Trigger 2 — FOMO/Trend",
+      "search_demand_signals": [
+        "Blogs: dedicated, repeatedly updated roundup articles across GWS, IPSY, Parade, AOL, Refinery29, ClassPop, spanning multiple years (2023-2026)",
+        "Pinterest: dominant broad-match idea board with dense sub-query autocomplete",
+        "YouTube/TikTok: consistent yearly content cadence tied to the holiday"
+      ],
+      "why_included": "Broadest, highest cross-source frequency query in the topic — the umbrella term every other angle nests under.",
+      "internal_links": {
+        "links_to": [
+          { "slug": "turkey-nail-art", "anchor_text": "turkey nail art tutorial", "type": "spoke" },
+          { "slug": "thanksgiving-nail-colors", "anchor_text": "best thanksgiving nail colors", "type": "spoke" },
+          { "slug": "easy-thanksgiving-nails", "anchor_text": "easy thanksgiving nails you can DIY at home", "type": "spoke" },
+          { "slug": "short-thanksgiving-nails", "anchor_text": "short thanksgiving nail ideas", "type": "spoke" },
+          { "slug": "french-tip-thanksgiving-nails", "anchor_text": "french tip thanksgiving nail designs", "type": "spoke" }
+        ],
+        "gallery_link": {
+          "url": "https://mirelleinspo.com/inspo/thanksgiving-nail-ideas-inspiration-gallery",
+          "anchor_text": "thanksgiving nails inspiration gallery"
+        },
+        "receives_links_from": [
+          { "slug": "turkey-nail-art", "anchor_text": "thanksgiving nail ideas" },
+          { "slug": "thanksgiving-nail-colors", "anchor_text": "thanksgiving nail ideas" },
+          { "slug": "easy-thanksgiving-nails", "anchor_text": "thanksgiving nail ideas" },
+          { "slug": "short-thanksgiving-nails", "anchor_text": "thanksgiving nail ideas" },
+          { "slug": "french-tip-thanksgiving-nails", "anchor_text": "thanksgiving nail ideas" }
+        ]
+      },
+      "status": "approved"
+    },
+
+    {
+      "post_id": 2,
+      "role": "spoke",
+      "title": "Turkey Nail Art (How to Do It)",
+      "slug": "turkey-nail-art",
+      "primary_keyword": "turkey nail art",
+      "intent": "tutorial",
+      "search_mode": "how_to_execution_mode",
+      "suggested_hook_trigger": "Trigger 3 — Specificity",
+      "search_demand_signals": [
+        "YouTube: multiple standalone tutorials sustained across 10+ years (2011-2025), consistent yearly re-uploads",
+        "Blogs: dedicated step-by-step tutorial posts (12 Tomatoes, Sammi's Manis, Adventures in Acetone, The Little Canvas)",
+        "TikTok: recurring seasonal nail-art tutorial content tagged to turkey nails"
+      ],
+      "why_included": "Distinct, durable sub-demand — turkey nail art is searched and taught as its own entity, not folded into generic 'ideas' content.",
+      "internal_links": {
+        "links_to": [
+          { "slug": "thanksgiving-nail-ideas", "anchor_text": "thanksgiving nail ideas", "type": "pillar" },
+          { "slug": "easy-thanksgiving-nails", "anchor_text": "easy thanksgiving nails you can DIY at home", "type": "spoke" },
+          { "slug": "short-thanksgiving-nails", "anchor_text": "short thanksgiving nail ideas", "type": "spoke" },
+          { "slug": "french-tip-thanksgiving-nails", "anchor_text": "turkey french tip nail design", "type": "spoke" }
+        ],
+        "receives_links_from": [
+          { "slug": "thanksgiving-nail-ideas", "anchor_text": "turkey nail art tutorial" },
+          { "slug": "easy-thanksgiving-nails", "anchor_text": "turkey nail art tutorial" },
+          { "slug": "short-thanksgiving-nails", "anchor_text": "turkey nail art for short nails" },
+          { "slug": "french-tip-thanksgiving-nails", "anchor_text": "turkey nail art tutorial" }
+        ]
+      },
+      "status": "approved"
+    },
+
+    {
+      "post_id": 3,
+      "role": "spoke",
+      "title": "Thanksgiving Nail Colors",
+      "slug": "thanksgiving-nail-colors",
+      "primary_keyword": "thanksgiving nail colors",
+      "intent": "informational",
+      "search_mode": "decision_mode",
+      "suggested_hook_trigger": "Trigger 1 — Curiosity Gap",
+      "search_demand_signals": [
+        "Blogs: multiple dedicated 2026-dated articles (LONDONTOWN, ND Nails Supply, HeyStyleHey) treating colors as separate query from 'ideas'",
+        "Pinterest: dedicated 'Thanksgiving Nails Color' idea board",
+        "Recurring PAA-style pattern across roundups: 'best thanksgiving nail colors' isolated as its own section"
+      ],
+      "why_included": "Color-only decision queries are validated as a distinct intent from full design ideas — searchers who want palette guidance without design complexity.",
+      "internal_links": {
+        "links_to": [
+          { "slug": "thanksgiving-nail-ideas", "anchor_text": "thanksgiving nail ideas", "type": "pillar" },
+          { "slug": "short-thanksgiving-nails", "anchor_text": "short thanksgiving nail ideas", "type": "spoke" },
+          { "slug": "french-tip-thanksgiving-nails", "anchor_text": "french tip thanksgiving nail designs", "type": "spoke" },
+          { "slug": "easy-thanksgiving-nails", "anchor_text": "easy thanksgiving nails you can DIY at home", "type": "spoke" }
+        ],
+        "receives_links_from": [
+          { "slug": "thanksgiving-nail-ideas", "anchor_text": "best thanksgiving nail colors" },
+          { "slug": "short-thanksgiving-nails", "anchor_text": "best thanksgiving nail colors" },
+          { "slug": "french-tip-thanksgiving-nails", "anchor_text": "best thanksgiving nail colors" },
+          { "slug": "easy-thanksgiving-nails", "anchor_text": "best thanksgiving nail colors" }
+        ]
+      },
+      "status": "approved"
+    },
+
+    {
+      "post_id": 4,
+      "role": "spoke",
+      "title": "Easy Thanksgiving Nails (DIY at Home)",
+      "slug": "easy-thanksgiving-nails",
+      "primary_keyword": "easy thanksgiving nails",
+      "intent": "tutorial",
+      "search_mode": "how_to_execution_mode",
+      "suggested_hook_trigger": "Trigger 1 — Curiosity Gap",
+      "search_demand_signals": [
+        "Blogs: multiple dedicated DIY-focused articles (Hello Glow, Kaveesh, OhMeOhMy Blog, Trends Oraa) all targeting 'easy/DIY at home' specifically",
+        "Recurring beginner-difficulty framing across sources ('no fancy brushes', 'beginner-friendly')",
+        "Distinct from turkey nail art — this covers non-figural, low-skill designs"
+      ],
+      "why_included": "Clear beginner/reassurance-seeking demand distinct from general inspiration browsing — searchers explicitly want low-effort, doable-at-home guidance.",
+      "internal_links": {
+        "links_to": [
+          { "slug": "thanksgiving-nail-ideas", "anchor_text": "thanksgiving nail ideas", "type": "pillar" },
+          { "slug": "turkey-nail-art", "anchor_text": "turkey nail art tutorial", "type": "spoke" },
+          { "slug": "thanksgiving-nail-colors", "anchor_text": "best thanksgiving nail colors", "type": "spoke" },
+          { "slug": "short-thanksgiving-nails", "anchor_text": "short thanksgiving nail ideas", "type": "spoke" }
+        ],
+        "receives_links_from": [
+          { "slug": "thanksgiving-nail-ideas", "anchor_text": "easy thanksgiving nails you can DIY at home" },
+          { "slug": "turkey-nail-art", "anchor_text": "easy thanksgiving nails you can DIY at home" },
+          { "slug": "thanksgiving-nail-colors", "anchor_text": "easy thanksgiving nails you can DIY at home" },
+          { "slug": "short-thanksgiving-nails", "anchor_text": "easy thanksgiving nails you can DIY at home" }
+        ]
+      },
+      "status": "approved"
+    },
+
+    {
+      "post_id": 5,
+      "role": "spoke",
+      "title": "Short Thanksgiving Nails",
+      "slug": "short-thanksgiving-nails",
+      "primary_keyword": "short thanksgiving nails",
+      "intent": "inspirational",
+      "search_mode": "inspiration_mode",
+      "suggested_hook_trigger": "Trigger 3 — Specificity",
+      "search_demand_signals": [
+        "Blogs: dedicated articles sustained across multiple years (2023, 2025, referenced into 2026)",
+        "Pinterest: dedicated 'Short Thanksgiving Nails' idea board",
+        "Recurring length-specific modifier across roundups and shopping listings (press-ons explicitly marketed as 'short square')"
+      ],
+      "why_included": "Length-specific modifier with its own sustained editorial coverage and dedicated Pinterest demand — distinct audience from general idea browsing.",
+      "internal_links": {
+        "links_to": [
+          { "slug": "thanksgiving-nail-ideas", "anchor_text": "thanksgiving nail ideas", "type": "pillar" },
+          { "slug": "french-tip-thanksgiving-nails", "anchor_text": "french tip thanksgiving nail designs", "type": "spoke" },
+          { "slug": "thanksgiving-nail-colors", "anchor_text": "best thanksgiving nail colors", "type": "spoke" },
+          { "slug": "turkey-nail-art", "anchor_text": "turkey nail art tutorial", "type": "spoke" }
+        ],
+        "receives_links_from": [
+          { "slug": "thanksgiving-nail-ideas", "anchor_text": "short thanksgiving nail ideas" },
+          { "slug": "turkey-nail-art", "anchor_text": "turkey nail art for short nails" },
+          { "slug": "thanksgiving-nail-colors", "anchor_text": "short thanksgiving nail ideas" },
+          { "slug": "easy-thanksgiving-nails", "anchor_text": "short thanksgiving nail ideas" },
+          { "slug": "french-tip-thanksgiving-nails", "anchor_text": "short thanksgiving nail ideas" }
+        ]
+      },
+      "status": "approved"
+    },
+
+    {
+      "post_id": 6,
+      "role": "spoke",
+      "title": "French Tip Thanksgiving Nails",
+      "slug": "french-tip-thanksgiving-nails",
+      "primary_keyword": "french tip thanksgiving nails",
+      "intent": "inspirational",
+      "search_mode": "inspiration_mode",
+      "suggested_hook_trigger": "Trigger 3 — Specificity",
+      "search_demand_signals": [
+        "Blogs: dedicated Byrdie article featuring 24 distinct designs, plus mentions across GWS, IPSY, Trends Oraa as standalone design variant",
+        "Pinterest: large dedicated board with dense sub-query variants (Thanksgiving Nail Ideas French Tip, French Nails Thanksgiving, Thanksgiving French Tip Nail Designs)",
+        "Recurring isolation as its own design category across multiple independent roundups"
+      ],
+      "why_included": "French tip is repeatedly treated as its own searched design variant, not a subset of general ideas — strong dedicated editorial and Pinterest backing.",
+      "internal_links": {
+        "links_to": [
+          { "slug": "thanksgiving-nail-ideas", "anchor_text": "thanksgiving nail ideas", "type": "pillar" },
+          { "slug": "short-thanksgiving-nails", "anchor_text": "short thanksgiving nail ideas", "type": "spoke" },
+          { "slug": "thanksgiving-nail-colors", "anchor_text": "best thanksgiving nail colors", "type": "spoke" },
+          { "slug": "turkey-nail-art", "anchor_text": "turkey french tip nail design", "type": "spoke" }
+        ],
+        "receives_links_from": [
+          { "slug": "thanksgiving-nail-ideas", "anchor_text": "french tip thanksgiving nail designs" },
+          { "slug": "turkey-nail-art", "anchor_text": "turkey french tip nail design" },
+          { "slug": "thanksgiving-nail-colors", "anchor_text": "french tip thanksgiving nail designs" },
+          { "slug": "short-thanksgiving-nails", "anchor_text": "french tip thanksgiving nail designs" }
+        ]
+      },
+      "status": "approved"
+    }
+  ],
+
+  "keyword_ownership_registry": {
+    "description": "Master list of all primary keywords — one per post, no overlaps, includes existing site posts",
+    "entries": [
+      { "primary_keyword": "thanksgiving nail ideas", "owned_by_slug": "thanksgiving-nail-ideas", "owned_by_title": "Thanksgiving Nail Ideas", "source": "new post" },
+      { "primary_keyword": "turkey nail art", "owned_by_slug": "turkey-nail-art", "owned_by_title": "Turkey Nail Art (How to Do It)", "source": "new post" },
+      { "primary_keyword": "thanksgiving nail colors", "owned_by_slug": "thanksgiving-nail-colors", "owned_by_title": "Thanksgiving Nail Colors", "source": "new post" },
+      { "primary_keyword": "easy thanksgiving nails", "owned_by_slug": "easy-thanksgiving-nails", "owned_by_title": "Easy Thanksgiving Nails (DIY at Home)", "source": "new post" },
+      { "primary_keyword": "short thanksgiving nails", "owned_by_slug": "short-thanksgiving-nails", "owned_by_title": "Short Thanksgiving Nails", "source": "new post" },
+      { "primary_keyword": "french tip thanksgiving nails", "owned_by_slug": "french-tip-thanksgiving-nails", "owned_by_title": "French Tip Thanksgiving Nails", "source": "new post" }
+    ]
+  },
+
+  "merged_posts_log": [],
+
+  "killed_posts_log": [
+    { "topic": "Thanksgiving press-on nails", "reason": "Only 1 demand source (shopping/product listings only), no organic editorial or Pinterest signal — borderline transactional" },
+    { "topic": "Pumpkin pie nails / cornucopia nails", "reason": "Only appears as single list items within broader roundups — no standalone demand signal on 2+ sources" },
+    { "topic": "Thanksgiving plaid nails", "reason": "Never found as a standalone dedicated article — only ever one entry inside larger roundups; Pinterest board present but no visible search-count signal to confirm standalone demand" },
+    { "topic": "Friendsgiving nails", "reason": "Only one thin dedicated article found (single source); Pinterest showed low visible search count (291); insufficient cross-platform reinforcement vs. other candidates" }
+  ]
+}
