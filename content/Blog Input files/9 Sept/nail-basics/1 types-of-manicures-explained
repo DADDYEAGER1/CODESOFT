@@ -1,0 +1,253 @@
+# BLOG GEN AGENT INPUT FILE — SINGLE SOURCE OF TRUTH
+MODE: CLUSTER MODE — cluster context loaded (nail-basics, cluster #13)
+
+## SECTION 1 — FILE AUTHORITY
+This file is the single source of truth for the Blog Gen Agent. All POST_CONSTANTS values are hardcoded — do not ask, adjust, or override. All keywords, H2 structure, audience intelligence, internal links, and tone must be followed exactly.
+
+## SECTION 2 — POST_CONSTANTS
+- slug: types-of-manicures-explained
+- topic_slug: nail-basics
+- canonical: https://mirelleinspo.com/blog/nail-basics/types-of-manicures-explained
+- post_type: pillar
+- intent: informational
+- word_count: 3200
+- image_count: 1
+- show_inspo_gallery_link: false (user override — see note below)
+- template: center
+- hero_dimensions: 1200x630
+- category: Nail Basics & Definitions
+- publish_date: 2026-07-27
+- author: jyoti-mirelle
+
+**USER OVERRIDES APPLIED (deviate from default rule logic in prompt):**
+- show_inspo_gallery_link forced to `false` (default pillar+inspiration_mode logic would set `true`). Gallery link and its automatic body-image insert are suppressed.
+- image_count forced to `1` (hero only, no body images) — overrides phase_2 pillar rule of hero+1-per-H2 (would have been 9-10).
+- Blog Gen Agent must NOT insert any body images or the gallery-link CTA anywhere in this post.
+
+## SECTION 4 — SERP ANALYSIS (via web_fetch, not search)
+**competitor_gaps** (2+ source validated):
+- No competitor cleanly separates "service type vs. product system vs. technique vs. style" as a mental model before listing types — Erica's ATA is the only source doing this, WhoWhatWear/NewBeauty/AOL all jump straight to a list
+- "Why does terminology feel confusing" / brand-name-as-generic-term confusion (e.g. "acrylics" used like "Kleenex" for Gel-X) — WhoWhatWear + Quora both confirm
+- Cost comparison across manicure types in one place — StyleSeat and AOL mention cost per-type but no source ties cost+duration+strength together in one table AND explains terminology model
+- "Which manicure type is healthiest / least damaging" answered directly and definitively — Erica's ATA covers it but frames as FAQ afterthought, not core content
+
+**missing_semantic_territory:** "product system vs service type" framing, Russian manicure as *technique* not product, French manicure as *style* applicable across product systems, BIAB/BiaB and structured gel terminology
+
+**our_strategic_approach:** Open with the terminology-confusion hook (validated across WhoWhatWear + Quora + Erica's ATA), then use the service/product/technique/style framework as the backbone before running through each named manicure type — positions this as the definitive translator post rather than another flat list.
+
+**top_3_word_count_estimates:** WhoWhatWear ~2400 words (11 H2s), Erica's ATA ~2100 words (9 sections + FAQ), NewBeauty gel-types piece ~1200 words (shorter, narrower scope) → average ≈ 1900; pillar floor set above this per ceiling rule, using 3200 (near ceiling, justified by 12 internal links + comprehensive glossary scope)
+
+**top_3_keyword_density_baseline:** ~4 mentions average of "types of manicures" phrase across top 3 (WhoWhatWear 5, Erica's ATA 4, NewBeauty 3)
+
+## SECTION 5 — AUDIENCE INTELLIGENCE
+**who_they_are:** Someone about to book or considering a salon visit who has heard multiple manicure names (gel, dip, BIAB, Russian, Gel-X, acrylic) thrown around interchangeably and can't map them to what they should actually ask for. Often has been burned once by asking for "gel" and getting something else, or was quoted a confusing price difference.
+
+**what_they_want:** A single page that translates every term they might hear in a salon or see online into plain meaning — not a durability debate, not a shopping guide, a glossary they can screenshot before their appointment.
+
+**what_frustrates_them:** Competitor posts either go too narrow (just gel types) or bury the "why is this confusing" validation and jump straight to a list; nobody clearly says brand names (Gel-X, Shellac, BIAB) are being used as stand-ins for whole categories.
+
+**top_5_pain_points:**
+1. Doesn't know if "gel" "BIAB" "structured gel" are the same thing or different
+2. Confused why price varies so much between what sound like similar services
+3. Unsure whether "Russian manicure" is a material or a technique
+4. Wants to know which type is "healthiest" without a hedge-everything non-answer
+5. Wants to know what to actually say to the nail tech to get what they want
+
+**exact_user_phrases:** "what's the difference between an acrylic, gel, etc. manicure", "why is there a price variation", "gel vs acrylic vs dip", "what do you call nails with the flat end", "is BIAB the same as builder gel", "what type of manicure lasts the longest", "what is nail art", "types of gel nails", "which manicure is least damaging", "what to ask for at the salon"
+
+**intent_content_signals:** Responds to expert-quote-backed claims (celebrity manicurist quotes used across WhoWhatWear/NewBeauty); responds well to short "what materials / how long / who it's for" breakdowns per type; wants direct answers not hedged "it depends" without resolution.
+
+## SECTION 6 — SEMANTIC KEYWORD DATA
+**primary_keyword:** types of manicures explained
+**keyword_variations:** types of manicures, different types of manicures, manicure types explained, kinds of manicures, manicure styles explained, types of nail manicures, manicure options explained
+**cluster_keywords:** basic manicure, gel manicure, structured gel, builder gel, BIAB, Gel-X, soft gel tips, acrylic manicure, dip powder, Russian manicure, French manicure, press-on nails, service type vs product system
+**lsi_terms:** UV/LED lamp curing, soak-off removal, nail enhancement, nail extension, cuticle prep, fill-ins, monomer and polymer, semi-permanent polish, air-dry polish, nail plate, wear time, chip-resistant, nail technician, salon service menu
+**aeo_terms:** "what are the different types of manicures", "how many types of manicures are there", "what is the difference between gel and acrylic manicure", "which type of manicure lasts longest", "what is a structured gel manicure", "is BIAB the same as builder gel", "what is the healthiest type of manicure", "what is a Russian manicure"
+**technical_terms:** soak-off, UV/LED cure, monomer, polymer, apex, overlay, soft gel, hard gel, product system
+**user_language:** "gel vs acrylic vs dip", "what to ask for at the salon", "why the price is so different", "which one lasts longest", "is it bad for your nails", "what do nail techs actually mean by that", "flat end nails", "what's BIAB"
+
+## SECTION 7 — VOICE AND AI QUERIES
+1. What are the different types of manicures?
+2. How many types of manicures are there?
+3. What is the difference between a gel manicure and an acrylic manicure?
+4. What is the difference between gel and dip powder?
+5. What is a structured gel or builder gel manicure?
+6. Is BIAB the same thing as builder gel?
+7. What is a Gel-X manicure?
+8. What is a Russian manicure and how is it different from other manicures?
+9. Which type of manicure lasts the longest?
+10. What is the healthiest or least damaging type of manicure?
+11. What is a basic or regular manicure?
+12. What is the difference between hard gel and soft gel?
+13. Why do manicure prices vary so much between types?
+14. What should I ask for at the salon if I want long-lasting nails?
+15. What is a French manicure and can it be done with any nail type?
+16. What is dip powder made of?
+17. How long does a gel manicure last compared to regular polish?
+18. What is the difference between a service type and a product system in nails?
+
+## SECTION 8 — HOOK AND CTR
+**selected_trigger:** Trigger 1 — Curiosity Gap
+**trigger_rationale:** Reader suspects they're using/hearing terms wrong (confirmed via Quora "why price variation" + WhoWhatWear "acrylics like Kleenex" quote) — classic curiosity-gap territory for an informational glossary pillar.
+**title:** Types of Manicures Explained: The Full 2026 Guide
+**title_char_count:** 51
+**meta_description:** Confused by gel, BIAB, Gel-X, and Russian manicures? This guide breaks down every manicure type so you know exactly what to ask for next time.
+**meta_char_count:** 148
+**intro_hook_brief:** Open by naming the exact confusion moment — sitting in the chair, technician asks what you want, and every option sounds like a different language. Validate that the confusion is real and industry-acknowledged (celebrity manicurists have said as much), then promise this page sorts every term into plain meaning.
+**first_h2_hook_direction:** Frame the first H2 as the reader's "aha" moment — phrase close to a voice query like "why are there so many types of manicures" rather than a flat definition heading.
+
+## SECTION 9 — SEARCH JOURNEY
+**reader_arrival_state:** Slightly overwhelmed, mid-research before a salon visit or online purchase, tired of conflicting terminology.
+**journey_arc:**
+- Confirm the confusion is real and shared, not their fault
+- Give them the mental model (service type / product system / technique / style) so every term afterward has a slot to fall into
+- Walk through each major manicure type with clear "what it is / how long it lasts / who it suits" info
+- Address the head-to-head questions (healthiest, longest-lasting, priciest)
+- Send them off with a clear next step: which spoke post matches what they're now curious about
+**promise_to_deliver:** By the end, the reader can say a manicure name out loud and know exactly what it means, how long it lasts, and whether it's right for them.
+**exit_state:** Confident and equipped — ready to book with the right vocabulary, not overwhelmed by the options anymore.
+
+## SECTION 10 — CONTENT STRUCTURE
+**h1:** Types of Manicures Explained: The Full 2026 Guide
+
+**h2_structure:**
+1. Why Are There So Many Types of Manicures? (mental model: service type / product system / technique / style)
+2. What Is a Basic (Regular Polish) Manicure?
+3. What Is a Gel Manicure?
+4. What Is Structured Gel (Builder Gel / BIAB)?
+5. What Is a Gel-X (Soft Gel Tip) Manicure?
+6. What Are Acrylic Nails?
+7. What Is Dip Powder?
+8. What Is a Russian Manicure?
+9. What Is a French Manicure?
+10. Which Type of Manicure Lasts the Longest?
+11. What Is the Healthiest Type of Manicure?
+12. How to Choose the Right Manicure for You
+
+**word_budget:**
+- introduction: 220
+- H2-1 (why so many types): 260
+- H2-2 (basic): 240
+- H2-3 (gel): 280
+- H2-4 (structured gel/BIAB): 300
+- H2-5 (Gel-X): 260
+- H2-6 (acrylic): 280
+- H2-7 (dip powder): 240
+- H2-8 (Russian): 260
+- H2-9 (French): 220
+- H2-10 (longest-lasting): 240
+- H2-11 (healthiest): 260
+- H2-12 (how to choose): 260
+- conclusion: 180
+(total ≈ 3200)
+
+## SECTION 11 — INTERNAL LINKS (cluster links verbatim; max 6 total; no cross-site added — gallery link suppressed per override)
+1. /blog/nail-basics/what-is-a-manicure — anchor: "what a manicure actually is" — placement: H2-2 (Basic Manicure) — cluster-spoke
+2. /blog/nail-basics/what-is-gel-polish — anchor: "what gel polish is and how it works" — placement: H2-3 (Gel Manicure) — cluster-spoke
+3. /blog/nail-basics/what-is-lacquer-nail-polish — anchor: "what lacquer nail polish means" — placement: H2-2 (Basic Manicure) — cluster-spoke
+4. /blog/nail-basics/what-is-a-nail-wrap — anchor: "what a nail wrap is" — placement: H2-9 (French Manicure) — cluster-spoke
+5. /blog/nail-basics/what-is-nail-stamping — anchor: "how nail stamping works" — placement: H2-9 (French Manicure) — cluster-spoke
+6. /blog/nail-basics/what-are-acrylic-nails — anchor: "what acrylic nails are and how they work" — placement: H2-6 (Acrylic Nails) — cluster-spoke
+
+**Note:** Cluster file lists 12 links_to entries for this post; internal_link_cap of 4-6 forces a subset. Selected the 6 most contextually natural for this specific H2 structure. Remaining 6 (types-of-nail-polish, shellac-vs-gel, what-is-a-cuticle, nail-anatomy-parts-of-the-nail, what-is-the-nail-matrix, what-is-an-e-file) are omitted from body copy to respect the 4-6 cap — Blog Gen Agent may swap selections if a listed link fits a section better, but must stay within 4-6 total and use verbatim anchors only from the links_to list above.
+**gallery_link:** SUPPRESKED per user override (show_inspo_gallery_link = false) — do not include gallery CTA despite this being a pillar post.
+
+## SECTION 12 — VOICE AND TONE
+**recommended_voice:** Warm expert / confident educator
+**tone_characteristics:** Reassuring, plainly explanatory, no jargon left undefined, mildly conversational ("you've probably heard..."), authoritative without being clinical, never hedges without resolving
+**language_style:** Second person ("you"), short declarative sentences for definitions, occasional light analogy (e.g. brand-as-generic-term point), British English throughout
+**audience_match:** This reader wants clarity fast and hates being left with "it depends" — confident, definitive statements per section match that need while the warm tone keeps the glossary from feeling clinical.
+
+## SECTION 13 — EXTERNAL LINKS
+1. url: (Healthline-style medical authority on nail health — Blog Gen Agent to verify current live URL before publishing) — context: use in H2-11 (Healthiest Manicure) to back the "technique and removal matter more than product" claim — anchor_suggestion: "dermatology-backed nail health guidance"
+2. url: (industry publication on gel curing chemistry, e.g. C&EN-style source) — context: H2-3 (Gel Manicure) to back the UV/LED polymerization claim — anchor_suggestion: "how UV curing chemically hardens gel polish"
+3. url: (celebrity manicurist / trade quote source, e.g. WhoWhatWear-style) — context: H2-4 (Structured Gel/BIAB) to support the "people use acrylic like Kleenex" terminology-confusion point — anchor_suggestion: "how nail pros describe the terminology confusion"
+
+## SECTION 14 — EXECUTION PLAN
+
+### Block 1 — Keyword Execution
+- primary_keyword: types of manicures explained
+- top_3_density_baseline: 4
+- total_mention_target: 7 (baseline 4 + 3)
+- first_100_words_plan: mention_1 = sentence 2 of intro (naming the post topic directly after the hook); mention_2 = sentence 5-6 of intro (transition into promise-to-deliver line)
+- first_half_target: 4 mentions — words 1-1600
+- second_half_target: 3 mentions — words 1600-3200
+- strong_tag_rule: every one of the 7 mentions wrapped in `<strong>` tags, no exceptions
+- keywords_to_avoid_active: what is hema nail products, what is nail fungus, best nail shape for your hands, how to find your nail shape, difference between gel acrylic and natural nails, how do i know what nail shape suits my hands, 5 basic nail shapes, difference between manicure and pedicure, how long do different types of manicures last (+ all 12 other cluster spoke primary keywords — never used as this post's focus term)
+
+### Block 2 — Word Budget
+- total_target: 3200 (±50)
+- introduction: 220
+- conclusion: 180
+- h2_budgets:
+  1. Why So Many Types: 260, medium
+  2. Basic Manicure: 240, low
+  3. Gel Manicure: 280, medium
+  4. Structured Gel/BIAB: 300, high
+  5. Gel-X: 260, medium
+  6. Acrylic: 280, medium
+  7. Dip Powder: 240, low
+  8. Russian Manicure: 260, medium
+  9. French Manicure: 220, low
+  10. Longest-Lasting: 240, medium
+  11. Healthiest: 260, medium
+  12. How to Choose: 260, medium
+- tracking_rule: check running total after every H2; cut before proceeding if over
+
+### Block 3 — Image Plan (OVERRIDE: hero only)
+- total_images: 1
+- hero_image: frontmatter only, never in body
+- body_images: 0 — none to place
+- image_type_rule: N/A — no body images per user override
+- path_rule: /images/blog/nail-basics/types-of-manicures-explained/filename.webp
+
+### Block 4 — Opening Technique Assignments
+- Introduction: Technique 1 (The Claim) — state plainly that manicure terminology is genuinely confusing and this page fixes that
+- H2-1 (Why So Many Types): Technique 2 (The Scene/Relatable Moment) — sitting in the chair unsure what to ask for
+- H2-2 (Basic Manicure): Technique 3 (The Reframe) — reframe "basic" as a real category, not "boring"
+- H2-3 (Gel Manicure): Technique 1 (The Claim) — direct definition claim
+- H2-4 (Structured Gel/BIAB): Technique 2 (The Scene) — the "acrylics like Kleenex" moment
+- H2-5 (Gel-X): Technique 1 (The Claim)
+- H2-6 (Acrylic): Technique 3 (The Reframe) — reframe "acrylic" as specific, not generic
+- H2-7 (Dip Powder): Technique 1 (The Claim)
+- H2-8 (Russian Manicure): Technique 2 (The Scene) — the precision/training angle
+- H2-9 (French Manicure): Technique 3 (The Reframe) — reframe as style, not product
+- H2-10 (Longest-Lasting): Technique 1 (The Claim)
+- H2-11 (Healthiest): Technique 3 (The Reframe) — reframe away from "which product" to "which technique"
+- H2-12 (How to Choose): Technique 1 (The Claim)
+- Conclusion: Technique 1 (The Claim)
+- banned_opener_rule: check every opener against banned_opening_approaches before writing second sentence
+
+### Block 5 — Link Placements
+1. anchor: "what a manicure actually is" — url: /blog/nail-basics/what-is-a-manicure — section: H2-2 Basic Manicure — context: when defining basic manicure, link out to the foundational definition — cluster-spoke
+2. anchor: "what gel polish is and how it works" — url: /blog/nail-basics/what-is-gel-polish — section: H2-3 Gel Manicure — context: when explaining UV/LED curing mechanism — cluster-spoke
+3. anchor: "what lacquer nail polish means" — url: /blog/nail-basics/what-is-lacquer-nail-polish — section: H2-2 Basic Manicure — context: contrasting basic/regular polish with lacquer terminology — cluster-spoke
+4. anchor: "what a nail wrap is" — url: /blog/nail-basics/what-is-a-nail-wrap — section: H2-9 French Manicure — context: mentioning alternative nail treatments as style options — cluster-spoke
+5. anchor: "how nail stamping works" — url: /blog/nail-basics/what-is-nail-stamping — section: H2-9 French Manicure — context: mentioning nail art/style techniques adjacent to French — cluster-spoke
+6. anchor: "what acrylic nails are and how they work" — url: /blog/nail-basics/what-are-acrylic-nails — section: H2-6 Acrylic Nails — context: deep-dive link for readers wanting full acrylic mechanism explanation — cluster-spoke
+
+### Block 6 — AEO/GEO Plan
+- aeo_assignments:
+  1. "what are the different types of manicures" → H2-1 → direct 2-3 sentence answer immediately after heading
+  2. "what is the difference between gel and acrylic manicure" → H2-3/H2-6 (split answer) → direct comparison sentence in each section
+  3. "is BIAB the same as builder gel" → H2-4 → direct yes/clarify answer immediately after heading
+  4. "which type of manicure lasts the longest" → H2-10 → direct ranked answer immediately after heading
+  5. "what is the healthiest type of manicure" → H2-11 → direct answer immediately after heading
+  6. "what is a Russian manicure" → H2-8 → direct definition immediately after heading
+- geo_entity_statements:
+  1. entity: Structured gel / BIAB — H2-4 — clear declarative definition distinguishing from soft gel
+  2. entity: Gel-X — H2-5 — clear declarative definition naming Aprés Nail origin
+  3. entity: Russian manicure — H2-8 — clear declarative definition as technique not product
+
+### Block 7 — Active Constraints
+- em_dash_banned: yes, replace with comma/parentheses/restructure
+- banned_vocab_watch: "elevate", "unlock", "journey", "seamless", "game-changer", "must-have", "in today's world"
+- british_english_active: colour, recognise, -ise, -our — every instance
+- keyword_density_reminder: check running total after every 2 H2s, target 7 total, denser in first half
+- image_path_reminder: N/A this post (hero only)
+- internal_link_url_reminder: full path /blog/nail-basics/[slug] only, never bare /slug
+- hero_image_reminder: hero = frontmatter only, never in body
+- strong_tag_reminder: every one of 7 primary keyword mentions wrapped in `<strong>`
+
+---
+END OF FILE
