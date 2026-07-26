@@ -1,0 +1,422 @@
+{
+  "cluster_metadata": {
+    "cluster_topic": "French Pedicure",
+    "topic_slug": "french-pedicure",
+    "target_audience": "Global, Tier 1 countries (US, UK, Canada, Australia)",
+    "total_posts": 9,
+    "intent_breakdown": {
+      "informational": 2,
+      "inspirational": 3,
+      "tutorial": 1,
+      "comparison": 1,
+      "seasonal_trend": 2
+    },
+    "pillar_post_slug": "french-pedicure",
+    "inspiration_gallery_url": "https://mirelleinspo.com/inspo/french-pedicure-inspiration-gallery",
+    "created_date": "2026-07-26"
+  },
+
+  "existing_site_posts_excluded": [
+    {
+      "url": "https://mirelleinspo.com/blog/french-tip-almond-nails",
+      "title": "French Tip Almond Nails",
+      "inferred_primary_keyword": "french tip almond nails",
+      "inferred_intent": "inspirational",
+      "exclusion_reason": "Already exists on mirelleinspo.com — targets fingernail French tips, not pedicure. Different body part, no overlap, kept as reference only."
+    },
+    {
+      "url": "https://mirelleinspo.com/blog/fall/fall-pedicure-colors",
+      "title": "Fall Pedicure Colors",
+      "inferred_primary_keyword": "fall pedicure colors",
+      "inferred_intent": "seasonal_trend",
+      "exclusion_reason": "Already exists on mirelleinspo.com — general seasonal pedicure color post, not French-tip specific. Keyword reserved."
+    },
+    {
+      "url": "https://mirelleinspo.com/blog/nail-costs/pedicure-cost",
+      "title": "Pedicure Cost",
+      "inferred_primary_keyword": "pedicure cost",
+      "inferred_intent": "informational",
+      "exclusion_reason": "Already exists on mirelleinspo.com — general pedicure cost, not French-pedicure-specific. Keyword reserved; new cluster post targets the narrower 'french pedicure cost' query instead."
+    },
+    {
+      "url": "https://mirelleinspo.com/blog/pedicure-tipping/how-much-to-tip-for-a-pedicure",
+      "title": "How Much to Tip for a Pedicure",
+      "inferred_primary_keyword": "how much to tip for a pedicure",
+      "inferred_intent": "informational",
+      "exclusion_reason": "Already exists on mirelleinspo.com — tipping etiquette, unrelated to French design angle. Keyword reserved."
+    },
+    {
+      "url": "https://mirelleinspo.com/blog/pedicure-tipping/is-it-rude-not-to-tip-pedicure",
+      "title": "Is It Rude Not to Tip Pedicure",
+      "inferred_primary_keyword": "is it rude not to tip pedicure",
+      "inferred_intent": "informational",
+      "exclusion_reason": "Already exists on mirelleinspo.com — tipping etiquette, unrelated to French design angle. Keyword reserved."
+    },
+    {
+      "url": "https://mirelleinspo.com/blog/pedicure-tipping/pedicure-salon-etiquette",
+      "title": "Pedicure Salon Etiquette",
+      "inferred_primary_keyword": "pedicure salon etiquette",
+      "inferred_intent": "informational",
+      "exclusion_reason": "Already exists on mirelleinspo.com — general salon etiquette, unrelated to French design angle. Keyword reserved."
+    },
+    {
+      "url": "https://mirelleinspo.com/nail-faqs/whats-the-difference-between-a-manicure-and-a-pedicure",
+      "title": "What's the Difference Between a Manicure and a Pedicure",
+      "inferred_primary_keyword": "difference between a manicure and a pedicure",
+      "inferred_intent": "informational",
+      "exclusion_reason": "Already exists on mirelleinspo.com — generic manicure/pedicure FAQ, not French-specific. Keyword reserved."
+    }
+  ],
+
+  "posts": [
+    {
+      "post_id": 1,
+      "role": "pillar",
+      "title": "French Pedicure: The Complete Guide",
+      "slug": "french-pedicure",
+      "primary_keyword": "french pedicure",
+      "intent": "informational",
+      "search_mode": "inspiration_mode",
+      "suggested_hook_trigger": "Trigger 3 — Specificity/Numbers",
+      "search_demand_signals": [
+        "Glamsquad 'Ultimate Guide to a French Pedicure' — dedicated evergreen guide with FAQ schema (how long it lasts, cost, gel vs regular)",
+        "Vibrant Salon and Spa 'What is a French Pedicure?' — dedicated definitional post",
+        "Groupon 2026 pedicure cost/type guide names French as one of 6 core pedicure types",
+        "Pinterest 'French Pedicure' idea hub — 900+ pin boards, sustained high visual search volume across multiple independent boards"
+      ],
+      "why_included": "Broadest keyword in the cluster with the highest and most consistent demand across definitional, cost, and visual sources. Serves as the natural hub covering what it is, history, process, and linking to every specific variation.",
+      "internal_links": {
+        "links_to": [
+          { "slug": "how-to-do-a-french-pedicure-at-home", "anchor_text": "how to do a french pedicure at home tutorial", "type": "spoke" },
+          { "slug": "milky-french-pedicure", "anchor_text": "milky french pedicure trend", "type": "spoke" },
+          { "slug": "black-french-tip-toes", "anchor_text": "black french tip toes ideas", "type": "spoke" },
+          { "slug": "is-french-pedicure-still-in-style", "anchor_text": "is french pedicure still in style in 2026", "type": "spoke" },
+          { "slug": "french-pedicure-cost", "anchor_text": "how much a french pedicure costs", "type": "spoke" },
+          { "slug": "french-pedicure-short-toenails", "anchor_text": "french pedicure for short toenails", "type": "spoke" },
+          { "slug": "wedding-french-pedicure-ideas", "anchor_text": "wedding french pedicure ideas for brides", "type": "spoke" },
+          { "slug": "french-pedicure-designs", "anchor_text": "french pedicure designs and ideas gallery", "type": "spoke" }
+        ],
+        "gallery_link": {
+          "url": "https://mirelleinspo.com/inspo/french-pedicure-inspiration-gallery",
+          "anchor_text": "french pedicure inspiration gallery"
+        },
+        "receives_links_from": [
+          { "slug": "how-to-do-a-french-pedicure-at-home", "anchor_text": "complete french pedicure guide" },
+          { "slug": "milky-french-pedicure", "anchor_text": "french pedicure guide" },
+          { "slug": "black-french-tip-toes", "anchor_text": "french pedicure guide" },
+          { "slug": "is-french-pedicure-still-in-style", "anchor_text": "french pedicure complete guide" },
+          { "slug": "french-pedicure-cost", "anchor_text": "french pedicure guide" },
+          { "slug": "french-pedicure-short-toenails", "anchor_text": "french pedicure guide" },
+          { "slug": "wedding-french-pedicure-ideas", "anchor_text": "french pedicure complete guide" },
+          { "slug": "french-pedicure-designs", "anchor_text": "french pedicure guide" }
+        ]
+      },
+      "status": "approved"
+    },
+    {
+      "post_id": 2,
+      "role": "spoke",
+      "title": "How to Do a French Pedicure at Home",
+      "slug": "how-to-do-a-french-pedicure-at-home",
+      "primary_keyword": "how to do a french pedicure at home",
+      "intent": "tutorial",
+      "search_mode": "how_to_execution_mode",
+      "suggested_hook_trigger": "Trigger 1 — Curiosity Gap",
+      "search_demand_signals": [
+        "StyleCraze '10 Simple Steps' dedicated tutorial, medically reviewed, high production value signal of real search demand",
+        "PBL Magazine step-by-step nail-tech-focused tutorial",
+        "Own Harmony 'DIY French Pedicure: The Ultimate Guide' dedicated tutorial",
+        "Nailbees dedicated step-by-step tutorial with technique detail"
+      ],
+      "why_included": "Multiple independent dedicated how-to guides confirm strong, sustained DIY search demand distinct from the definitional pillar content.",
+      "internal_links": {
+        "links_to": [
+          { "slug": "french-pedicure", "anchor_text": "french pedicure complete guide", "type": "pillar" },
+          { "slug": "french-pedicure-short-toenails", "anchor_text": "french pedicure for short toenails", "type": "spoke" },
+          { "slug": "french-pedicure-cost", "anchor_text": "french pedicure cost compared to DIY", "type": "spoke" },
+          { "slug": "french-pedicure-designs", "anchor_text": "french pedicure designs and ideas", "type": "spoke" }
+        ],
+        "receives_links_from": [
+          { "slug": "french-pedicure", "anchor_text": "how to do a french pedicure at home tutorial" },
+          { "slug": "french-pedicure-cost", "anchor_text": "how to do a french pedicure at home" },
+          { "slug": "french-pedicure-short-toenails", "anchor_text": "step-by-step french pedicure tutorial" },
+          { "slug": "french-pedicure-designs", "anchor_text": "how to do a french pedicure at home" }
+        ]
+      },
+      "status": "approved"
+    },
+    {
+      "post_id": 3,
+      "role": "spoke",
+      "title": "Milky French Pedicure",
+      "slug": "milky-french-pedicure",
+      "primary_keyword": "milky french pedicure",
+      "intent": "seasonal_trend",
+      "search_mode": "aesthetic_identity_mode",
+      "suggested_hook_trigger": "Trigger 4 — Identity Mirroring",
+      "search_demand_signals": [
+        "WhoWhatWear dedicated feature 'The Milky French Pedicure Is the Chic Trend to Know'",
+        "TikTok dedicated discover page 'Pedicure Milky French' with viral tagged content",
+        "Marie Claire 2026 feature names milky French pedicure as the standout of 'French Tip Toes' trend piece",
+        "AOL '5 Pedicure Trends' roundup names milky French as a top trend pick from nail artists"
+      ],
+      "why_included": "Distinct, heavily-validated 2026 sub-trend with its own dedicated editorial coverage across 4 independent sources — clearly searched and discussed as its own named style, not just a variation mentioned in passing.",
+      "internal_links": {
+        "links_to": [
+          { "slug": "french-pedicure", "anchor_text": "french pedicure guide", "type": "pillar" },
+          { "slug": "black-french-tip-toes", "anchor_text": "black french tip toes", "type": "spoke" },
+          { "slug": "is-french-pedicure-still-in-style", "anchor_text": "is french pedicure still in style in 2026", "type": "spoke" },
+          { "slug": "wedding-french-pedicure-ideas", "anchor_text": "wedding french pedicure ideas", "type": "spoke" },
+          { "slug": "french-pedicure-short-toenails", "anchor_text": "french pedicure for short toenails", "type": "spoke" }
+        ],
+        "receives_links_from": [
+          { "slug": "french-pedicure", "anchor_text": "milky french pedicure trend" },
+          { "slug": "black-french-tip-toes", "anchor_text": "milky white french tip toes" },
+          { "slug": "is-french-pedicure-still-in-style", "anchor_text": "milky french pedicure" },
+          { "slug": "wedding-french-pedicure-ideas", "anchor_text": "milky french pedicure for brides" },
+          { "slug": "french-pedicure-short-toenails", "anchor_text": "milky french pedicure" }
+        ]
+      },
+      "status": "approved"
+    },
+    {
+      "post_id": 4,
+      "role": "spoke",
+      "title": "Black French Tip Toes",
+      "slug": "black-french-tip-toes",
+      "primary_keyword": "black french tip toes",
+      "intent": "inspirational",
+      "search_mode": "aesthetic_identity_mode",
+      "suggested_hook_trigger": "Trigger 4 — Identity Mirroring",
+      "search_demand_signals": [
+        "Parisfy dedicated post 'Black French Tip Toes: Chic Pedicure Ideas' with full styling breakdown",
+        "Pinterest dedicated recurring boards ('French Pedicure Designs' board features black french tip toes prominently across multiple pins)",
+        "Marie Claire 2026 trend piece names colored/black tips as the modern counterpart to classic white"
+      ],
+      "why_included": "Confirmed as its own named, searched style distinct from classic white French — colored/black tip is repeatedly called out as the 'modern twist' across multiple sources with dedicated coverage.",
+      "internal_links": {
+        "links_to": [
+          { "slug": "french-pedicure", "anchor_text": "french pedicure guide", "type": "pillar" },
+          { "slug": "milky-french-pedicure", "anchor_text": "milky french pedicure", "type": "spoke" },
+          { "slug": "french-pedicure-designs", "anchor_text": "french pedicure designs and ideas gallery", "type": "spoke" },
+          { "slug": "french-pedicure-short-toenails", "anchor_text": "french pedicure for short toenails", "type": "spoke" }
+        ],
+        "receives_links_from": [
+          { "slug": "french-pedicure", "anchor_text": "black french tip toes ideas" },
+          { "slug": "milky-french-pedicure", "anchor_text": "black french tip toes" },
+          { "slug": "french-pedicure-designs", "anchor_text": "black french tip toes" },
+          { "slug": "french-pedicure-short-toenails", "anchor_text": "black french tip toes" }
+        ]
+      },
+      "status": "approved"
+    },
+    {
+      "post_id": 5,
+      "role": "spoke",
+      "title": "Is French Pedicure Still in Style in 2026?",
+      "slug": "is-french-pedicure-still-in-style",
+      "primary_keyword": "is french pedicure still in style",
+      "intent": "comparison",
+      "search_mode": "decision_mode",
+      "suggested_hook_trigger": "Trigger 1 — Curiosity Gap",
+      "search_demand_signals": [
+        "WhoWhatWear 'Is the French Pedicure in Style for 2026? We Have Thoughts' — explicitly frames the question as split opinion",
+        "Refinery29 'This Pedicure Is Controversial, But I Wear It Every Summer' — directly addresses the dated-vs-classic debate",
+        "StyleBlueprint 'French Pedicure, Just Say Non' — opposing take, confirms the debate has two real camps actively searched/discussed"
+      ],
+      "why_included": "Clear decision-mode query with genuine two-sided debate confirmed across 3 independent major sources — readers are actively searching to resolve uncertainty before booking, not just browsing ideas.",
+      "internal_links": {
+        "links_to": [
+          { "slug": "french-pedicure", "anchor_text": "french pedicure complete guide", "type": "pillar" },
+          { "slug": "milky-french-pedicure", "anchor_text": "milky french pedicure", "type": "spoke" },
+          { "slug": "french-pedicure-cost", "anchor_text": "french pedicure cost", "type": "spoke" },
+          { "slug": "french-pedicure-designs", "anchor_text": "modern french pedicure designs", "type": "spoke" }
+        ],
+        "receives_links_from": [
+          { "slug": "french-pedicure", "anchor_text": "is french pedicure still in style in 2026" },
+          { "slug": "milky-french-pedicure", "anchor_text": "is french pedicure still in style" },
+          { "slug": "french-pedicure-cost", "anchor_text": "is french pedicure still in style" },
+          { "slug": "french-pedicure-designs", "anchor_text": "is french pedicure still in style in 2026" }
+        ]
+      },
+      "status": "approved"
+    },
+    {
+      "post_id": 6,
+      "role": "spoke",
+      "title": "French Pedicure Cost",
+      "slug": "french-pedicure-cost",
+      "primary_keyword": "how much does a french pedicure cost",
+      "intent": "informational",
+      "search_mode": "decision_mode",
+      "suggested_hook_trigger": "Trigger 1 — Curiosity Gap",
+      "search_demand_signals": [
+        "Groupon 2026 pedicure cost guide breaks out French as a distinct line-item cost add-on",
+        "G-Nail Spa 2025/2026 pricing guide specifies French tip add-on cost ($5-10) separately from base pedicure",
+        "ClassPass 'Ultimate List of Pedicure Types' specifies French pedicure cost premium explicitly",
+        "Yelp Q&A real consumer question asking specifically about French pedicure pricing"
+      ],
+      "why_included": "Cost is consistently broken out as its own line item across multiple pricing-guide sources, and real consumer Q&A confirms people search this specific cost question before booking.",
+      "internal_links": {
+        "links_to": [
+          { "slug": "french-pedicure", "anchor_text": "french pedicure guide", "type": "pillar" },
+          { "slug": "how-to-do-a-french-pedicure-at-home", "anchor_text": "how to do a french pedicure at home", "type": "spoke" },
+          { "slug": "is-french-pedicure-still-in-style", "anchor_text": "is french pedicure still in style", "type": "spoke" },
+          { "slug": "french-pedicure-designs", "anchor_text": "french pedicure designs", "type": "spoke" }
+        ],
+        "receives_links_from": [
+          { "slug": "french-pedicure", "anchor_text": "how much a french pedicure costs" },
+          { "slug": "how-to-do-a-french-pedicure-at-home", "anchor_text": "french pedicure cost compared to DIY" },
+          { "slug": "is-french-pedicure-still-in-style", "anchor_text": "french pedicure cost" },
+          { "slug": "french-pedicure-designs", "anchor_text": "french pedicure cost" }
+        ]
+      },
+      "status": "approved"
+    },
+    {
+      "post_id": 7,
+      "role": "spoke",
+      "title": "French Pedicure for Short Toenails",
+      "slug": "french-pedicure-short-toenails",
+      "primary_keyword": "french pedicure short toenails",
+      "intent": "inspirational",
+      "search_mode": "inspiration_mode",
+      "suggested_hook_trigger": "Trigger 3 — Specificity/Numbers",
+      "search_demand_signals": [
+        "Refinery29 explicitly recommends micro-tip and thinner lines as the fix for shorter/overgrown-looking toes",
+        "Pinterest recurring 'French Tip Toes Short' and 'French Pedicure Short Toenails' pin categories across 4+ independent boards",
+        "Glamsquad FAQ directly answers 'Is a French pedicure suitable for short toenails?' confirming it's a common searched concern"
+      ],
+      "why_included": "Recurring, specific concern that shows up independently across Pinterest categorization, editorial styling advice, and FAQ content — a real sub-audience worried about proportion on shorter nails.",
+      "internal_links": {
+        "links_to": [
+          { "slug": "french-pedicure", "anchor_text": "french pedicure guide", "type": "pillar" },
+          { "slug": "how-to-do-a-french-pedicure-at-home", "anchor_text": "how to do a french pedicure at home", "type": "spoke" },
+          { "slug": "black-french-tip-toes", "anchor_text": "black french tip toes", "type": "spoke" },
+          { "slug": "milky-french-pedicure", "anchor_text": "milky french pedicure", "type": "spoke" }
+        ],
+        "receives_links_from": [
+          { "slug": "french-pedicure", "anchor_text": "french pedicure for short toenails" },
+          { "slug": "how-to-do-a-french-pedicure-at-home", "anchor_text": "french pedicure for short toenails" },
+          { "slug": "black-french-tip-toes", "anchor_text": "french pedicure for short toenails" },
+          { "slug": "milky-french-pedicure", "anchor_text": "french pedicure for short toenails" },
+          { "slug": "wedding-french-pedicure-ideas", "anchor_text": "french pedicure for short toenails" }
+        ]
+      },
+      "status": "approved"
+    },
+    {
+      "post_id": 8,
+      "role": "spoke",
+      "title": "Wedding French Pedicure Ideas",
+      "slug": "wedding-french-pedicure-ideas",
+      "primary_keyword": "french pedicure for wedding",
+      "intent": "inspirational",
+      "search_mode": "aesthetic_identity_mode",
+      "suggested_hook_trigger": "Trigger 4 — Identity Mirroring",
+      "search_demand_signals": [
+        "EVORÉ dedicated bridal mani-pedi guide with a full section on French pedicure proportions and bridal-specific advice",
+        "WeddingForward 'Wedding Toe Nails For 2026 Brides' names French as the most popular bridal toe nail choice",
+        "Pinterest dedicated 'Bridal Pedicure Toenails' and 'Wedding Toe Nails' boards with sustained pin volume"
+      ],
+      "why_included": "Wedding-specific French pedicure content exists as its own dedicated guides across bridal-focused sites, confirming a distinct occasion-based search audience separate from general French pedicure browsing.",
+      "internal_links": {
+        "links_to": [
+          { "slug": "french-pedicure", "anchor_text": "french pedicure complete guide", "type": "pillar" },
+          { "slug": "milky-french-pedicure", "anchor_text": "milky french pedicure", "type": "spoke" },
+          { "slug": "french-pedicure-designs", "anchor_text": "french pedicure designs and ideas", "type": "spoke" },
+          { "slug": "french-pedicure-short-toenails", "anchor_text": "french pedicure for short toenails", "type": "spoke" }
+        ],
+        "receives_links_from": [
+          { "slug": "french-pedicure", "anchor_text": "wedding french pedicure ideas for brides" },
+          { "slug": "milky-french-pedicure", "anchor_text": "milky french pedicure for brides" },
+          { "slug": "french-pedicure-designs", "anchor_text": "wedding french pedicure ideas" },
+          { "slug": "french-pedicure-short-toenails", "anchor_text": "wedding french pedicure ideas" }
+        ]
+      },
+      "status": "approved"
+    },
+    {
+      "post_id": 9,
+      "role": "spoke",
+      "title": "French Pedicure Designs & Ideas",
+      "slug": "french-pedicure-designs",
+      "primary_keyword": "french pedicure designs",
+      "intent": "inspirational",
+      "search_mode": "inspiration_mode",
+      "suggested_hook_trigger": "Trigger 2 — FOMO/Trend",
+      "search_demand_signals": [
+        "AOL '12 French Pedicure Ideas That Will Get You Excited for Sandal Season' — dedicated idea-roundup format",
+        "BeBeautiful 'French Pedicure Designs: Trending 25 French Toe Nail Ideas' — dedicated large-format idea gallery",
+        "Pinterest 'French Pedicure Designs' board — high, sustained pin volume across floral, rhinestone, ombre, ombre-fade variations"
+      ],
+      "why_included": "Broad idea-gallery format confirmed as its own high-volume search behavior distinct from the pillar's definitional content — readers browsing for visual variety (florals, rhinestones, ombre) rather than researching what a French pedicure is.",
+      "internal_links": {
+        "links_to": [
+          { "slug": "french-pedicure", "anchor_text": "french pedicure guide", "type": "pillar" },
+          { "slug": "how-to-do-a-french-pedicure-at-home", "anchor_text": "how to do a french pedicure at home", "type": "spoke" },
+          { "slug": "black-french-tip-toes", "anchor_text": "black french tip toes", "type": "spoke" },
+          { "slug": "wedding-french-pedicure-ideas", "anchor_text": "wedding french pedicure ideas", "type": "spoke" }
+        ],
+        "receives_links_from": [
+          { "slug": "french-pedicure", "anchor_text": "french pedicure designs and ideas gallery" },
+          { "slug": "how-to-do-a-french-pedicure-at-home", "anchor_text": "french pedicure designs and ideas" },
+          { "slug": "black-french-tip-toes", "anchor_text": "french pedicure designs and ideas gallery" },
+          { "slug": "is-french-pedicure-still-in-style", "anchor_text": "modern french pedicure designs" },
+          { "slug": "french-pedicure-cost", "anchor_text": "french pedicure designs" },
+          { "slug": "wedding-french-pedicure-ideas", "anchor_text": "french pedicure designs and ideas" }
+        ]
+      },
+      "status": "approved"
+    }
+  ],
+
+  "keyword_ownership_registry": {
+    "description": "Master list of all primary keywords — one per post, no overlaps, includes existing site posts",
+    "entries": [
+      { "primary_keyword": "french pedicure", "owned_by_slug": "french-pedicure", "owned_by_title": "French Pedicure: The Complete Guide", "source": "new post" },
+      { "primary_keyword": "how to do a french pedicure at home", "owned_by_slug": "how-to-do-a-french-pedicure-at-home", "owned_by_title": "How to Do a French Pedicure at Home", "source": "new post" },
+      { "primary_keyword": "milky french pedicure", "owned_by_slug": "milky-french-pedicure", "owned_by_title": "Milky French Pedicure", "source": "new post" },
+      { "primary_keyword": "black french tip toes", "owned_by_slug": "black-french-tip-toes", "owned_by_title": "Black French Tip Toes", "source": "new post" },
+      { "primary_keyword": "is french pedicure still in style", "owned_by_slug": "is-french-pedicure-still-in-style", "owned_by_title": "Is French Pedicure Still in Style in 2026?", "source": "new post" },
+      { "primary_keyword": "how much does a french pedicure cost", "owned_by_slug": "french-pedicure-cost", "owned_by_title": "French Pedicure Cost", "source": "new post" },
+      { "primary_keyword": "french pedicure short toenails", "owned_by_slug": "french-pedicure-short-toenails", "owned_by_title": "French Pedicure for Short Toenails", "source": "new post" },
+      { "primary_keyword": "french pedicure for wedding", "owned_by_slug": "wedding-french-pedicure-ideas", "owned_by_title": "Wedding French Pedicure Ideas", "source": "new post" },
+      { "primary_keyword": "french pedicure designs", "owned_by_slug": "french-pedicure-designs", "owned_by_title": "French Pedicure Designs & Ideas", "source": "new post" },
+      { "primary_keyword": "french tip almond nails", "owned_by_slug": "french-tip-almond-nails", "owned_by_title": "French Tip Almond Nails", "source": "existing site post" },
+      { "primary_keyword": "fall pedicure colors", "owned_by_slug": "fall-pedicure-colors", "owned_by_title": "Fall Pedicure Colors", "source": "existing site post" },
+      { "primary_keyword": "pedicure cost", "owned_by_slug": "pedicure-cost", "owned_by_title": "Pedicure Cost", "source": "existing site post" },
+      { "primary_keyword": "how much to tip for a pedicure", "owned_by_slug": "how-much-to-tip-for-a-pedicure", "owned_by_title": "How Much to Tip for a Pedicure", "source": "existing site post" },
+      { "primary_keyword": "is it rude not to tip pedicure", "owned_by_slug": "is-it-rude-not-to-tip-pedicure", "owned_by_title": "Is It Rude Not to Tip Pedicure", "source": "existing site post" },
+      { "primary_keyword": "pedicure salon etiquette", "owned_by_slug": "pedicure-salon-etiquette", "owned_by_title": "Pedicure Salon Etiquette", "source": "existing site post" },
+      { "primary_keyword": "difference between a manicure and a pedicure", "owned_by_slug": "whats-the-difference-between-a-manicure-and-a-pedicure", "owned_by_title": "What's the Difference Between a Manicure and a Pedicure", "source": "existing site post" }
+    ]
+  },
+
+  "merged_posts_log": [
+    {
+      "original_topics": ["French pedicure design ideas (florals/rhinestones)", "colored French tip pedicure ideas (non-black colors)"],
+      "merged_into": "French Pedicure Designs & Ideas",
+      "reason": "Colored-tip variations beyond black (gold, lilac, red, cobalt) had demand signal but not enough independent dedicated sources to justify a standalone post — folded into the broader Designs & Ideas gallery spoke to avoid a thin, low-differentiation post."
+    }
+  ],
+
+  "killed_posts_log": [
+    {
+      "topic": "French pedicure for men",
+      "reason": "Only 1 weak demand source (a passing FAQ mention in one Glamsquad guide). Fails the 2-source validation rule."
+    },
+    {
+      "topic": "Gel vs regular French pedicure",
+      "reason": "Real demand signal existed but was insufficient to sustain a standalone post without heavy overlap with french-pedicure-cost and the pillar's own FAQ section. Content folded into the pillar guide instead of spun into a spoke to avoid a near-duplicate comparison post."
+    },
+    {
+      "topic": "Best French pedicure kit / at-home French pedicure kit",
+      "reason": "Transactional intent — explicitly excluded per site rules. This site does not target purchase-intent queries."
+    },
+    {
+      "topic": "French pedicure square vs round toes",
+      "reason": "Appeared only on Pinterest pin labels with no corroborating source (blog, PAA, or trend piece). Fails the 2-source validation rule."
+    }
+  ]
+}
