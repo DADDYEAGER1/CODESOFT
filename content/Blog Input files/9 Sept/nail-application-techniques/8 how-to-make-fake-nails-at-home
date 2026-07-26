@@ -1,0 +1,463 @@
+================================================================
+INPUT FILE — BLOG GEN AGENT SOURCE OF TRUTH
+Post: "How to Make Fake Nails at Home Without a Kit"
+================================================================
+
+SECTION 1: FILE AUTHORITY
+THIS FILE IS THE SINGLE SOURCE OF TRUTH FOR THE BLOG GEN AGENT. All values 
+in POST_CONSTANTS are hardcoded — Blog Gen Agent does not ask, adjust, or 
+override them. All keywords, H2 structure, audience intelligence, internal 
+links, and tone defined here must be followed exactly.
+
+================================================================
+SECTION 2: POST_CONSTANTS
+================================================================
+slug: how-to-make-fake-nails-at-home
+topic_slug: nail-application-techniques
+canonical: https://mirelleinspo.com/blog/nail-application-techniques/how-to-make-fake-nails-at-home
+post_type: spoke
+intent: tutorial
+word_count: 2200
+image_count: 1
+show_inspo_gallery_link: false
+template: split-left
+hero_dimensions: 800x800
+category: Nail Care Guide (or DIY/Tutorial category per site taxonomy)
+publish_date: 2026-07-27
+author: jyoti-mirelle
+
+NOTE ON OVERRIDES (user-locked, not recalculated):
+- image_count = 1 (hero only, zero body images) — overrides prompt's 
+  standard rule_5_everything_else (would have been 4-5). User override 
+  takes precedence per session instruction.
+- show_inspo_gallery_link = false — overrides normal phase_2 decision 
+  process. Consistent with actual fit anyway: intent is tutorial, not 
+  inspirational, so this would have resolved to false regardless.
+
+================================================================
+SECTION 3: CLUSTER SNAPSHOT
+================================================================
+pillar_slug: how-to-do-acrylic-nails-at-home
+pillar_title: How to Do Acrylic Nails at Home: Complete Beginner's Guide
+pillar_primary_keyword: how to do acrylic nails at home
+this_post_slug: how-to-make-fake-nails-at-home
+this_post_role: spoke
+keywords_to_avoid: how to do acrylic nails at home, how to paint your nails 
+perfectly, how to shape your nails at home, dotting tool nail art, how to 
+apply nail stickers, how to make your own nail stickers, nail glue 
+alternatives, how do you make nail polish, how to do coffin acrylic nails 
+at home, how to shape coffin nails, how to shape almond nails, how to do 
+ombre nails at home, how to do a french manicure at home, how to do fruit 
+nail art at home, how to do goth nails at home, how to do korean nails at 
+home, how to do jelly nails at home, easy nail designs for beginners, 
+easy y2k nails
+
+================================================================
+SECTION 4: SERP ANALYSIS
+================================================================
+competitor_gaps (demand-validated 2+ sources):
+- No single competitor covers more than 2 no-kit methods in one page — 
+  RainyRoses runs 4 separate thin posts (cotton pad, paper+tape, generic, 
+  homemade), each single-method (confirmed via direct fetch of 2 pages, 
+  Quora/YouTube cross-refs for tape and plastic bottle methods)
+- "Which method lasts longest / which to pick" comparison — validated on 
+  Quora ("look less fake"), DIYCraftsy FAQ, KISS USA durability content — 
+  no page frames it as a decision matrix
+- Removal guidance per material (tape vs paper vs straw vs plastic vs 
+  cotton) — validated on DIYCraftsy FAQ + grad-programs.info.ncsu.edu 
+  removal hacks page — most competitors give zero removal instructions
+- "Look less fake" / natural-looking finish tips — validated on Quora 
+  (2 separate threads) + DIYCraftsy FAQ — absent from all top-ranking 
+  dedicated tutorials
+- Occasion/duration framing (special event vs multi-day wear, which 
+  method suits which) — validated on Quora + KISS USA — no DIY-specific 
+  competitor addresses this
+missing_semantic_territory: durability comparison, removal-without-damage, 
+natural nail health impact, method-to-occasion matching, troubleshooting 
+(lifting, air bubbles, uneven edges)
+our_strategic_approach: Cover all four validated household methods (straw, 
+tape/paper, plastic bottle, cotton pad) in one page with an honest 
+durability/best-use comparison and per-method removal guidance — the 
+single gap every thin competitor leaves open. Position as the complete 
+answer instead of a single-trick post.
+top_3_word_count_estimates: RainyRoses posts ~250-300 words each (thin); 
+DIYCraftsy ~1450 words (most complete found). Average of realistic 
+top-3 (DIYCraftsy, DIY Joy ~350w, RainyRoses ~280w) ≈ 700 words — but 
+DIYCraftsy alone sets the real competitive bar at ~1450. Floor set above 
+this genuine ceiling to ensure comprehensive coverage.
+top_3_keyword_density_baseline: ~3-4 mentions average across competitor 
+pages (title + 1-2 body mentions each; none use the exact long-tail 
+consistently)
+
+================================================================
+SECTION 5: AUDIENCE INTELLIGENCE
+================================================================
+who_they_are: Budget-conscious or last-minute nail enthusiasts, largely 
+teens/young adults, who want a fake-nail look without buying a kit, glue, 
+or press-ons — often for a specific event or because they're curious/bored 
+(craft-trend audience, TikTok/YouTube-driven)
+what_they_want_from_this_post: A real choice of methods using things 
+already in the house, clear steps, honest expectations on how long it 
+lasts and how it looks
+what_frustrates_them: Competitor posts pushing a single method then 
+pivoting hard into a press-on nails sales pitch; no guidance on making it 
+look less obviously fake; no removal instructions; unclear which material 
+is actually most durable
+top_5_pain_points:
+1. Wants it to not look obviously fake/homemade
+2. Doesn't know which household material lasts longest
+3. Worried about damaging natural nails on removal
+4. Doesn't know if it will survive handwashing/daily activity
+5. Wants an option that doesn't require buying anything (not even glue)
+exact_user_phrases: "make fake nails look less fake", "how to make fake 
+nails with tape", "apply fake nails without nail glue", "how do you make 
+your nails look fake", "DIY fake nails that last", "no nail glue/nail 
+sticker", "nails from home supplies", "waterproof homemade nails", "fake 
+nails without kit", "easy at home 2021" (recurring "easy"/"at home" 
+framing)
+intent_content_signals: Step-by-step numbered format; short paragraphs; 
+material-first organization (readers scan for "which material do I have"); 
+FAQ section performs well (DIYCraftsy's 8-question FAQ is their strongest 
+engagement element); visual/video demand is high even though this post 
+runs image-light per constants
+
+================================================================
+SECTION 6: SEMANTIC KEYWORD DATA
+================================================================
+primary_keyword: how to make fake nails at home
+total_mention_target: 6-7 (baseline 4 + 2-3)
+first_100_words_rule: primary keyword appears twice in first 100 words — 
+mandatory
+keyword_variations: DIY fake nails at home, make your own fake nails, 
+homemade fake nails, fake nails without a kit, fake nails no glue, 
+household fake nails, at-home fake nails, no-kit press-on nails
+cluster_keywords: fake nails with tape, fake nails with paper, plastic 
+bottle nails, straw nails, cotton pad nails, fake nails without glue, 
+DIY press-on nails, nail glue alternative adhesive, temporary fake nails, 
+household nail hacks, no-glue nail application, homemade press-ons
+lsi_terms: nail shape template, clear tape nails, plastic bottle nail tips, 
+cotton pad nails, straw nail method, nail glue alternative, adhesive tab, 
+top coat seal, nail buffer, cuticle prep, removal without damage, natural 
+nail health, waterproof DIY nails, temporary manicure, budget manicure, 
+craft nail trend, event nails DIY, nail file shaping
+aeo_terms: "How do you make fake nails at home without buying anything?", 
+"What household items can be used to make fake nails?", "How long do 
+homemade fake nails last?", "Do homemade fake nails damage your natural 
+nails?", "Which DIY fake nail method is the most durable?", "Can you make 
+fake nails with just tape?", "How do you remove homemade fake nails 
+safely?", "How do you make DIY fake nails look less fake?"
+technical_terms: nail plate, cuticle pusher, base coat, top coat, nail 
+buffer, adhesive tab, nail dehydrator
+user_language: "look less fake", "no glue needed", "stuff I already have", 
+"last through the day", "won't ruin my nails", "quick fix for a broken 
+nail", "waterproof", "for a night out", "impress your friends", "no drill 
+needed"
+
+================================================================
+SECTION 7: VOICE AND AI QUERIES
+================================================================
+queries:
+1. How do you make fake nails at home without buying anything?
+2. Can you make fake nails with just tape?
+3. How do you make fake nails out of paper?
+4. Can plastic bottles really be used to make fake nails?
+5. How long do homemade fake nails actually last?
+6. Do DIY fake nails damage your natural nails?
+7. How do you make homemade fake nails look less fake?
+8. What's the most durable no-kit fake nail method?
+9. How do you remove fake nails made from tape or paper?
+10. Can you shower or wash dishes with homemade fake nails on?
+11. What household items work best for making fake nails?
+12. How do you make fake nails without nail glue?
+13. Can you reuse straw or plastic bottle fake nails?
+14. What's the easiest fake nail method for beginners?
+15. How do you stop homemade fake nails from lifting?
+16. Can cotton pads really work as fake nails?
+
+================================================================
+SECTION 8: HOOK AND CTR
+================================================================
+selected_trigger: Trigger 2 — FOMO/Trend Urgency
+trigger_rationale: This is a viral, sustained craft trend (multi-year 
+repeat YouTube uploads on tape/straw/bottle methods) — the audience is 
+drawn by "everyone's doing this without spending anything" energy rather 
+than uncertainty or aspiration
+title: "How to Make Fake Nails at Home: 4 No-Kit Methods (2026)"
+title_char_count: 57
+meta_description: "Skip the kit and the glue. Learn how to make fake nails at home using tape, paper, straws, or cotton pads — plus what actually lasts."
+meta_char_count: 148
+intro_hook_brief: Open by naming the viral household-material trend 
+directly — readers have seen it on TikTok/YouTube and want to know if it 
+really works and which version to pick. Confirm immediately that yes, it 
+works, and this covers every method plus the parts other guides skip 
+(durability, removal, looking natural).
+first_h2_hook_direction: Frame the first H2 as a direct voice-search style 
+question resolving "does this actually work" before diving into methods — 
+subtle nod to the trend-urgency angle without repeating the title.
+
+================================================================
+SECTION 9: SEARCH JOURNEY
+================================================================
+reader_arrival_state: Motivated and curious but slightly skeptical — 
+they've seen the trend online and want reassurance this isn't a gimmick, 
+plus a clear best option for their situation
+journey_arc:
+- Confirm the trend is real and works (removes skepticism)
+- Present all four methods clearly so reader can pick based on materials 
+  on hand
+- Address durability/comparison honestly (which lasts longest, which 
+  looks most natural)
+- Cover removal and nail health reassurance
+- Close with confidence to try it today
+promise_to_deliver: A complete, honest household-materials guide to 
+making fake nails without buying a kit or glue — including which method 
+actually holds up and how to take it off safely
+exit_state: Confident and ready to try tonight, with a clear method 
+already chosen based on what's in their house
+
+================================================================
+SECTION 10: CONTENT STRUCTURE
+================================================================
+h1: How to Make Fake Nails at Home Without a Kit: 4 Methods That Work
+
+h2_structure:
+1. Does Making Fake Nails at Home Actually Work?
+2. What You'll Need (No Nail Glue Required)
+3. Method 1: Tape Nails (Fastest, No Glue Needed)
+4. Method 2: Paper Nails (Best for Lightweight, Natural Look)
+5. Method 3: Plastic Bottle Nails (Most Durable, Waterproof)
+6. Method 4: Cotton Pad Nails (Softest, Easiest to Shape)
+7. Which Method Lasts the Longest?
+8. How to Make Them Look Less Fake
+9. How to Remove Homemade Fake Nails Safely
+10. Common Mistakes That Ruin DIY Fake Nails
+
+word_budget:
+introduction: 220 words
+conclusion: 180 words
+h2_1_does_it_work: 130 words
+h2_2_what_youll_need: 160 words
+h2_3_tape_method: 260 words
+h2_4_paper_method: 250 words
+h2_5_plastic_bottle_method: 280 words
+h2_6_cotton_pad_method: 230 words
+h2_7_durability_comparison: 220 words
+h2_8_look_less_fake: 160 words
+h2_9_removal: 180 words
+h2_10_common_mistakes: 150 words
+
+================================================================
+SECTION 11: INTERNAL LINKS
+================================================================
+all_internal_links:
+1. url_or_slug: /blog/nail-application-techniques/how-to-do-acrylic-nails-at-home
+   title: How to Do Acrylic Nails at Home: Complete Beginner's Guide
+   anchor_text: "how to do acrylic nails at home"
+   placement_note: Introduction — positioning this post as the no-kit 
+   alternative to the full acrylic pillar
+   link_type: cluster-pillar
+
+2. url_or_slug: /blog/nail-application-techniques/how-to-shape-your-nails-at-home
+   title: How to Shape Your Nails at Home: A Filing Guide for Every Tool
+   anchor_text: "how to shape your nails at home"
+   placement_note: Method sections (tape/paper/straw all involve filing 
+   edges) — natural fit near shaping steps
+   link_type: cluster-spoke
+
+3. url_or_slug: /blog/nail-application-techniques/nail-glue-alternatives-why-wont-it-dry
+   title: Nail Glue: Alternatives, Why It Won't Dry, and What Actually Works
+   anchor_text: "nail glue alternatives and troubleshooting"
+   placement_note: "What You'll Need" or removal section — relevant for 
+   readers deciding whether to add glue for extra hold
+   link_type: cluster-spoke
+
+4. url_or_slug: /blog/nail-application-techniques/how-to-paint-your-nails-perfectly
+   title: How to Paint Your Nails Perfectly: The Technique Nobody Teaches
+   anchor_text: "how to paint your nails perfectly"
+   placement_note: "How to Make Them Look Less Fake" — every method ends 
+   with polish application, natural link to painting technique
+   link_type: cluster-spoke
+
+5. url_or_slug: https://mirelleinspo.com/topics/at-home-hacks
+   title: 73 At-Home Nail Hacks: Professional Results Without the Salon (2026)
+   anchor_text: "73 household nail hacks that replace salon tools entirely"
+   placement_note: "What You'll Need" or conclusion — natural extension 
+   for readers who liked the no-kit approach and want more household 
+   substitutes
+   link_type: cross-site
+
+================================================================
+SECTION 12: VOICE AND TONE
+================================================================
+recommended_voice: Confident, resourceful friend sharing a life hack
+tone_characteristics: Practical and upbeat, zero salesy pivot (direct 
+contrast to competitor pattern of pushing press-on products), honest 
+about limitations/durability, encouraging without overpromising, 
+crafty/DIY energy
+language_style: Direct address ("you"), short punchy sentences for steps, 
+slightly more conversational than a formal tutorial, avoids over-hedging 
+("it might work" → "here's what actually holds up")
+audience_match: This reader is trend-aware, budget-driven, and has been 
+burned by thin content that dead-ends into a product pitch — a voice that 
+delivers real comparative substance and treats their time as valuable 
+builds immediate trust
+
+================================================================
+SECTION 13: EXTERNAL LINKS
+================================================================
+links:
+- url: (none meeting relevance+authority bar found via nailpro/allure/byrdie 
+  site-searches for this specific long-tail — no dedicated coverage located)
+  context: N/A
+  anchor_suggestion: N/A
+note: No qualifying external authority links found for this specific 
+craft/DIY long-tail after site:nailpro.com, site:allure.com, 
+site:byrdie.com searches — these outlets don't cover no-kit household 
+fake nail methods. Proceed without external links rather than force 
+weak ones.
+
+================================================================
+SECTION 14: EXECUTION PLAN
+================================================================
+BLOCK 1 — KEYWORD EXECUTION
+primary_keyword: how to make fake nails at home
+top_3_density_baseline: 4
+total_mention_target: 6-7 total
+first_100_words_plan:
+  mention_1: sentence 2 of introduction — naming the trend directly
+  mention_2: sentence 5-6 of introduction — transitioning into "this guide 
+  covers"
+first_half_target: 4 mentions — first 1100 words (denser, covers intro + 
+methods 1-2)
+second_half_target: 2-3 mentions — second 1100 words (methods 3-4 through 
+conclusion)
+strong_tag_rule: every mention wrapped in <strong> tags, scan after each 
+paragraph
+keywords_to_avoid_active: full list from section 3 — never used as focus 
+terms
+
+BLOCK 2 — WORD BUDGET
+total_target: 2200 words (±50 tolerance)
+introduction: 220
+conclusion: 180
+h2_budgets:
+- "Does Making Fake Nails at Home Actually Work?": 130 words, low complexity
+- "What You'll Need (No Nail Glue Required)": 160 words, low complexity
+- "Method 1: Tape Nails": 260 words, medium complexity
+- "Method 2: Paper Nails": 250 words, medium complexity
+- "Method 3: Plastic Bottle Nails": 280 words, high complexity (multi-step)
+- "Method 4: Cotton Pad Nails": 230 words, medium complexity
+- "Which Method Lasts the Longest?": 220 words, medium complexity
+- "How to Make Them Look Less Fake": 160 words, low complexity
+- "How to Remove Homemade Fake Nails Safely": 180 words, medium complexity
+- "Common Mistakes That Ruin DIY Fake Nails": 150 words, low complexity
+tracking_rule: track running total after every H2; cut before moving on 
+if over budget
+
+BLOCK 3 — IMAGE PLAN
+total_images: 1 (hero only — USER OVERRIDE, no body images)
+hero_image: frontmatter only, never in body
+body_images: 0 — none to place
+assignments: none (no body images per override)
+image_type_rule: N/A for this post (hero only) — if a hero is generated, 
+it should be an inspirational/finished-look nail image, not an 
+infographic or process diagram
+path_rule: /images/blog/nail-application-techniques/how-to-make-fake-nails-at-home/filename.webp
+
+BLOCK 4 — OPENING TECHNIQUE ASSIGNMENTS
+- Introduction: Technique 2 (Trend Confirmation / naming the viral moment)
+- "Does It Actually Work?": Technique 1 (The Claim)
+- "What You'll Need": Technique 4 (Direct List Lead-in)
+- "Method 1: Tape": Technique 3 (The Reframe)
+- "Method 2: Paper": Technique 1 (The Claim)
+- "Method 3: Plastic Bottle": Technique 3 (The Reframe)
+- "Method 4: Cotton Pad": Technique 1 (The Claim)
+- "Which Method Lasts Longest": Technique 4 (Direct comparison lead-in)
+- "Look Less Fake": Technique 3 (The Reframe)
+- "Removal": Technique 1 (The Claim)
+- "Common Mistakes": Technique 4 (Direct list lead-in)
+- Conclusion: Technique 3 (The Reframe)
+banned_opener_rule: check every opener against banned_opening_approaches 
+in blog gen prompt before writing the second sentence
+
+BLOCK 5 — LINK PLACEMENTS
+1. anchor_text: "how to do acrylic nails at home"
+   full_url: /blog/nail-application-techniques/how-to-do-acrylic-nails-at-home
+   place_in_section: Introduction
+   placement_context: positioning this as the no-kit alternative to the 
+   full acrylic pillar process
+   link_type: cluster-pillar
+
+2. anchor_text: "how to shape your nails at home"
+   full_url: /blog/nail-application-techniques/how-to-shape-your-nails-at-home
+   place_in_section: "What You'll Need (No Nail Glue Required)"
+   placement_context: when mentioning filing/shaping tools needed across 
+   methods
+   link_type: cluster-spoke
+
+3. anchor_text: "nail glue alternatives and troubleshooting"
+   full_url: /blog/nail-application-techniques/nail-glue-alternatives-why-wont-it-dry
+   place_in_section: "How to Remove Homemade Fake Nails Safely"
+   placement_context: when discussing optional glue reinforcement or 
+   adhesive troubleshooting
+   link_type: cluster-spoke
+
+4. anchor_text: "how to paint your nails perfectly"
+   full_url: /blog/nail-application-techniques/how-to-paint-your-nails-perfectly
+   place_in_section: "How to Make Them Look Less Fake"
+   placement_context: when discussing polish application as the finishing 
+   step across all methods
+   link_type: cluster-spoke
+
+5. anchor_text: "73 household nail hacks that replace salon tools entirely"
+   full_url: https://mirelleinspo.com/topics/at-home-hacks
+   place_in_section: Conclusion
+   placement_context: offering readers who liked the no-kit approach a 
+   next-step resource for more household substitutes
+   link_type: cross-site
+
+BLOCK 6 — AEO/GEO PLAN
+aeo_assignments:
+1. aeo_term: "How do you make fake nails at home without buying anything?"
+   assigned_to_section: "Does Making Fake Nails at Home Actually Work?"
+   execution: Direct 2-3 sentence answer immediately after H2 confirming 
+   yes and naming the four materials
+2. aeo_term: "How long do homemade fake nails last?"
+   assigned_to_section: "Which Method Lasts the Longest?"
+   execution: Direct answer ranking methods by durability in first 2-3 
+   sentences before elaboration
+3. aeo_term: "Do homemade fake nails damage your natural nails?"
+   assigned_to_section: "How to Remove Homemade Fake Nails Safely"
+   execution: Direct reassurance answer addressing nail health upfront
+4. aeo_term: "Which DIY fake nail method is the most durable?"
+   assigned_to_section: "Method 3: Plastic Bottle Nails"
+   execution: State plastic bottle as most durable/waterproof in opening 
+   sentences of the method
+
+geo_entity_statements:
+1. entity: Tape nails
+   assigned_to_section: "Method 1: Tape Nails"
+   execution: Clear declarative definition — what tape nails are and why 
+   they require no glue
+2. entity: Straw/plastic bottle nails
+   assigned_to_section: "Method 3: Plastic Bottle Nails"
+   execution: Clear declarative definition establishing this as the most 
+   waterproof/durable household method
+
+BLOCK 7 — ACTIVE CONSTRAINTS
+em_dash_banned: no long em dashes anywhere — replace with comma, new 
+sentence, parentheses, "but", or restructure
+banned_vocab_watch: "elevate," "game-changer," "unleash," "seamless," 
+"effortlessly," "must-have," "level up"
+british_english_active: colour, recognise, -ise, -our — every instance
+keyword_density_reminder: check running total after every 2 H2s against 
+6-7 target, denser in first half
+image_path_reminder: /images/blog/nail-application-techniques/how-to-make-fake-nails-at-home/filename.webp
+internal_link_url_reminder: full paths only, cluster links = 
+/blog/nail-application-techniques/[slug], cross-site = exact discovered URL
+hero_image_reminder: hero = frontmatter only, never in body (and this post 
+has NO body images at all per override)
+strong_tag_reminder: every primary keyword mention = <strong> tags
+================================================================
+END OF FILE
+================================================================
