@@ -1,0 +1,378 @@
+{
+  "section_1_file_authority": {
+    "statement": "THIS FILE IS THE SINGLE SOURCE OF TRUTH FOR THE BLOG GEN AGENT. All values in POST_CONSTANTS are hardcoded — Blog Gen Agent does not ask, adjust, or override them. All keywords, H2 structure, audience intelligence, internal links, and tone defined here must be followed exactly."
+  },
+
+  "section_2_post_constants": {
+    "slug": "squoval-nails",
+    "topic_slug": "nail-shapes",
+    "canonical": "https://mirelleinspo.com/blog/nail-shapes/squoval-nails",
+    "post_type": "spoke",
+    "intent": "informational",
+    "word_count": 2200,
+    "image_count": 9,
+    "show_inspo_gallery_link": true,
+    "template": "split-left",
+    "hero_dimensions": "800x800",
+    "category": "Nail Shapes",
+    "publish_date": "2026-08-03",
+    "author": "jyoti-mirelle"
+  },
+
+  "section_2b_show_inspo_gallery_link_note": "User-instructed override: show_inspo_gallery_link = true. Standard rule would default this to false (intent is informational, decision_mode search behaviour, not a browse/explore-designs angle) — flagging this explicitly per protocol. image_count is set to 9 (sub_rule_a) rather than the 4-5 the informational default would produce, per the override.",
+
+  "section_3_cluster_snapshot": {
+    "pillar_slug": "nail-shapes-chart",
+    "pillar_title": "Nail Shapes Chart: Every Shape Explained",
+    "pillar_primary_keyword": "nail shapes chart",
+    "this_post_slug": "squoval-nails",
+    "this_post_role": "spoke",
+    "keywords_to_avoid": [
+      "nail shapes chart", "square nails", "round vs square nails", "short stiletto nails",
+      "duck nails", "strongest nail shape", "most popular nail shape 2026",
+      "5 basic nail shapes / best nail shape", "almond nails", "coffin nails / ballerina nails",
+      "almond vs coffin nails", "almond vs oval nails", "best nail shape for your hands",
+      "classiest nail shape", "nails for small hands", "nails for wide nail beds",
+      "nails for short fingers", "best nail shape for mature hands", "nail shapes for work",
+      "nail shape for wedding", "nail trends 2026"
+    ]
+  },
+
+  "section_4_serp_analysis": {
+    "blog_gen_instruction": "Use competitor gaps and missing semantic territory to fill what competitors miss. Our strategic approach is the angle for the introduction and conclusion.",
+    "competitor_gaps": [
+      "No competitor pairs the search-volume data (12,100/mo squoval, 3,580/mo short squoval, 1,390/mo squoval French tips) with a direct filing tutorial in one place — confirmed 2+ sources (Joyee, multiple filing-guide sites)",
+      "'Soft squoval vs hard squoval' — how much corner-rounding separates squoval from square vs from oval — is raised on TikTok/salon-search language and briefly by Mirellé's own work-nails post, but no competitor defines the spectrum clearly with a simple test the reader can self-diagnose. Confirmed 2+ sources.",
+      "The most common filing mistake — over-rounding into oval, or under-rounding into square — is mentioned piecemeal (NailMuse) but not framed as the #1 reason DIY squoval attempts fail. Confirmed 2+ sources (NailMuse, Nailicy filing guides).",
+      "No competitor directly answers whether squoval works for nail-biters or weak/brittle natural nails as its own dedicated point — Nailpro's Beauty Launchpad source raises it once for round/squoval shapes generally, single-source signal, flagged as weaker but included as a differentiator since it's genuinely absent everywhere else."
+    ],
+    "missing_semantic_territory": [
+      "'is squoval the same as rounded square' — genuine reader confusion confirmed on Quora and via Mirellé's own work-nails post language, not addressed by Who What Wear or Joyee",
+      "wide nail bed nuance — squoval can read 'blocky' if under-rounded — not addressed by any competitor, only surfaced internally on mirelleinspo.com's own work-nails content"
+    ],
+    "our_strategic_approach": "Where Who What Wear leans purely aspirational (gallery of looks, no real how-to depth) and Joyee leans commercial (FAQ + comparison table built to sell press-ons), our post owns the middle: real search-volume-backed authority on squoval as the safe, structural, everyone-flatters-it shape, paired with an honest filing walkthrough and the soft-vs-hard squoval distinction nobody else names clearly. We resolve the nail-bed-width nuance instead of ignoring it.",
+    "top_3_word_count_estimates": "Who What Wear ~950 words (heavy image-to-text ratio); Joyee Nails ~1750 words (FAQ + comparison table lift word count); NailMuse ~1400 words (design roundup + filing steps). Top-3 average ≈ 1370 words.",
+    "top_3_keyword_density_baseline": "Estimated primary keyword ('squoval nails' or 'squoval') mentions: Who What Wear ~9, Joyee ~14, NailMuse ~11. Average ≈ 11."
+  },
+
+  "section_5_audience_intelligence": {
+    "blog_gen_instruction": "This is your primary creative brief. Every paragraph written for this specific person with this specific intent. Satisfy them completely.",
+    "who_they_are": "Someone who has heard or seen the word 'squoval' — at a salon, on Pinterest, or from a nail tech recommending it — and doesn't fully know what it means or whether it's right for her. Often torn between square (which she's worn for years) and oval/almond (which she's curious about) and landed on squoval as the compromise she's been told suits everyone. Decision-mode searcher: not browsing for inspiration first, she wants to understand the shape before committing at her next appointment or DIY filing session.",
+    "what_they_want_from_this_post": "A clear, confident definition of what squoval actually is (not just 'square + oval' as a throwaway line), reassurance that it will suit her specific nail beds/fingers, and either salon-script language to use with her nail tech or a filing walkthrough she can follow herself.",
+    "what_frustrates_them": "Competitor content either shows pretty pictures without explaining the shape (Who What Wear) or buries the real explanation under a shopping funnel (Joyee, Glamnetic, KISS). Nobody clearly explains how much rounding is 'squoval' vs 'basically still square' vs 'accidentally oval' — the exact confusion showing up in Quora questions and salon language.",
+    "top_5_pain_points": [
+      "Doesn't know how to describe squoval precisely enough to a nail tech to avoid getting square or oval instead",
+      "Worried squoval will look 'blocky' or 'boring' rather than polished — needs to see it styled, not just described",
+      "Has wide or narrow nail beds and isn't sure squoval is actually flattering for her specific shape, despite hearing it's 'universal'",
+      "Wants to file her own nails into squoval at home but is afraid of over-rounding into oval or under-rounding into square",
+      "Unsure whether squoval holds up for an active lifestyle (typing, gym, kids) compared to how it looks in salon photos"
+    ],
+    "exact_user_phrases": [
+      "what is a squoval nail shape",
+      "squoval or square or oval",
+      "is squoval the same as rounded square",
+      "does squoval look good on wide nail beds",
+      "square nails with rounded edges",
+      "the safest nail shape if you can't decide",
+      "squoval nails for short nails",
+      "how do you shape nails into squoval",
+      "squoval vs almond which is more practical",
+      "nail shape that doesn't catch on things"
+    ],
+    "intent_content_signals": [
+      "Reader responds to direct, confident definitions over vague 'it's a hybrid' framing",
+      "Wants a self-diagnosis test (nail bed width, lifestyle) rather than being told 'it works for everyone'",
+      "Responds well to before/after or step-based filing explanation, not just prose description",
+      "Wants comparison language she can literally repeat to her nail tech",
+      "Skeptical of 'universally flattering' claims without a concrete why"
+    ]
+  },
+
+  "section_6_semantic_keyword_data": {
+    "blog_gen_instruction": "Primary keyword in strong tags every mention. AEO terms trigger direct answer paragraphs. User language woven naturally. No term from keywords_to_avoid used as focus term.",
+    "primary_keyword": "squoval nails",
+    "keyword_variations": ["squoval nail shape", "squoval shape", "squoval manicure", "square oval nails", "squoval nail", "square-oval hybrid nails"],
+    "cluster_keywords": [
+      "short squoval nails", "medium squoval nails", "squoval french tip nails", "how to file squoval nails",
+      "squoval vs square", "squoval vs oval", "soft squoval", "hard squoval", "squoval for wide nail beds",
+      "squoval press on nails", "squoval nail designs", "squoval acrylic nails"
+    ],
+    "lsi_terms": [
+      "flat top edge", "rounded corners", "free edge", "nail bed width", "45-degree angle filing",
+      "nail file grit", "structured nail shape", "low-maintenance nail shape", "universally flattering shape",
+      "chip-resistant nails", "snag-resistant corners", "salon script", "nail tech request", "durable nail shape",
+      "corner rounding", "flat tip nails", "manicure shape", "everyday nail shape", "practical nail shape",
+      "wide nail bed shape"
+    ],
+    "aeo_terms": [
+      "what is a squoval nail shape",
+      "what does squoval mean in nails",
+      "is squoval the same as rounded square nails",
+      "what is the difference between squoval and square nails",
+      "does squoval work for wide nail beds",
+      "how do you file nails into a squoval shape",
+      "is squoval the most flattering nail shape",
+      "how long should squoval nails be",
+      "can you get squoval nails short",
+      "why do nail techs recommend squoval"
+    ],
+    "technical_terms": ["free edge", "sidewall", "nail plate", "cuticle line", "grit (nail file)", "acrylic enhancement", "press-on nails"],
+    "user_language": [
+      "the safe shape if you can't decide",
+      "square nails but softer",
+      "doesn't catch on everything",
+      "looks good no matter what",
+      "the shape my nail tech always suggests",
+      "not as sharp as square, not as pointy as almond",
+      "easy to keep up with",
+      "works with basically any polish"
+    ]
+  },
+
+  "section_7_voice_and_ai_queries": {
+    "blog_gen_instruction": "Answer every query directly in the relevant H2 section body. If a query cannot be addressed naturally in the body, route it to faqItems. No query left unanswered.",
+    "queries": [
+      "What is a squoval nail shape exactly?",
+      "What does squoval mean?",
+      "Is squoval the same thing as a rounded square nail?",
+      "What's the difference between squoval and square nails?",
+      "What's the difference between squoval and oval nails?",
+      "Does squoval look good on wide nail beds?",
+      "Does squoval work for narrow nail beds too?",
+      "How do I file my nails into a squoval shape at home?",
+      "What angle do you file the corners for squoval nails?",
+      "Is squoval the most flattering nail shape for everyone?",
+      "How short can squoval nails be?",
+      "Can squoval nails be long?",
+      "Is squoval good for people who type a lot or work with their hands?",
+      "Do squoval nails chip or break easily?",
+      "What should I tell my nail tech to get squoval nails?",
+      "Is squoval a good shape for beginners doing their own nails?",
+      "What's the difference between soft squoval and hard squoval?",
+      "Do squoval nails work with French tips?"
+    ]
+  },
+
+  "section_8_hook_and_ctr": {
+    "blog_gen_instruction": "READ THIS SECTION BEFORE WRITING THE TITLE, META DESCRIPTION, INTRO, OR FIRST H2. The title and description are hardcoded here — use them exactly. The intro hook brief and first H2 hook direction are your creative brief for those specific elements. Do not deviate.",
+    "selected_trigger": "Trigger 1 — Curiosity Gap",
+    "trigger_rationale": "This reader is in decision_mode: she suspects squoval is the 'safe' answer but doesn't fully understand why, or whether it applies to her specific hands — that uncertainty is a curiosity gap, not a trend or identity search.",
+    "title": "Squoval Nails: The Shape No One Explains Properly",
+    "title_char_count": 56,
+    "meta_description": "Confused whether squoval means rounded square or something else? Here's the exact shape, who it flatters, and how to file it yourself at home.",
+    "meta_char_count": 146,
+    "intro_hook_brief": "Open by naming the exact confusion — square, oval, or something in between — that sends people searching in the first place. Don't define squoval in sentence one; first validate that most explanations leave the reader more unsure, then deliver the real definition.",
+    "first_h2_hook_direction": "Phrase the first H2 as a direct voice-search question ('What Is a Squoval Nail Shape, Exactly?') and answer it in the first 2-3 sentences with zero hedging — this is the AEO-critical paragraph."
+  },
+
+  "section_9_search_journey": {
+    "blog_gen_instruction": "This is the emotional contract with the reader. Every section of the post must honour the promise made. Read this before writing any section. If a paragraph breaks the journey arc — rewrite it.",
+    "reader_arrival_state": "Mildly uncertain and slightly overwhelmed — she's heard 'squoval' recommended but every explanation she's found so far has been either too vague ('square + oval!') or buried in a shopping page.",
+    "journey_arc": [
+      "Open by naming the exact confusion (square? oval? rounded square?) so she feels immediately understood",
+      "Deliver an unambiguous definition with the flat-top-plus-rounded-corner mechanic, answered directly for AEO",
+      "Resolve the nail-bed-width question honestly (soft vs hard squoval) rather than repeating the generic 'universally flattering' line",
+      "Walk through the filing technique so she can either DIY it or brief her nail tech precisely",
+      "Compare squoval directly against square, oval, and almond so she can confirm it's the right call for her lifestyle",
+      "Close with length and styling reassurance — short squoval as the practical default, longer as the styled option"
+    ],
+    "promise_to_deliver": "A precise, unhedged explanation of what squoval actually is, whether it suits her specific nail beds, and how to get it — either at home or by briefing her nail tech correctly.",
+    "exit_state": "Confident and specific — she can now describe exactly what she wants, to herself or her nail tech, without second-guessing whether she's asking for the right shape."
+  },
+
+  "section_10_content_structure": {
+    "blog_gen_instruction": "This H2 structure is research-driven and must be followed exactly. Do not rename, reorder, or remove H2s without user instruction. Word budget per section is set — follow it. H3s may be added at editorial discretion.",
+    "h1": "Squoval Nails: The Shape No One Explains Properly",
+    "h2_structure": [
+      "What Is a Squoval Nail Shape, Exactly?",
+      "Squoval vs Square vs Oval: What Actually Separates Them",
+      "Does Squoval Work for Your Nail Beds? (Soft vs Hard Squoval)",
+      "How to File Your Nails Into a Squoval Shape at Home",
+      "Is Squoval Really the Most Practical Nail Shape?",
+      "Short, Medium, or Long: What Length Suits Squoval Best",
+      "Squoval Nail Designs Worth Trying"
+    ],
+    "word_budget": {
+      "introduction": "230 words",
+      "conclusion": "180 words",
+      "per_h2": "distributed in section_14 block_2"
+    }
+  },
+
+  "section_11_internal_links": {
+    "blog_gen_instruction": "Every link below must appear in the post. Cluster links use anchor texts verbatim — do not rewrite. Cross-site links use the provided descriptive anchor. Place each link where the placement note says — woven naturally into prose, never as a standalone CTA. Total internal links must not exceed 6.",
+    "all_internal_links": [
+      {
+        "url_or_slug": "/blog/nail-shapes/nail-shapes-chart",
+        "title": "Nail Shapes Chart: Every Shape Explained",
+        "anchor_text": "nail shapes chart for every shape",
+        "placement_note": "Squoval vs Square vs Oval section — link out to the full chart for readers wanting the complete shape reference",
+        "link_type": "cluster-pillar"
+      },
+      {
+        "url_or_slug": "/blog/nail-shapes/square-nails",
+        "title": "Square Nails: Complete Shape Guide",
+        "anchor_text": "complete square nails guide",
+        "placement_note": "Squoval vs Square vs Oval section — link when discussing the square end of the hybrid",
+        "link_type": "cluster-spoke"
+      },
+      {
+        "url_or_slug": "/blog/nail-shapes/round-vs-square-nails",
+        "title": "Round vs Square Nails: Which Is Actually Right for You",
+        "anchor_text": "round vs square nails comparison",
+        "placement_note": "Is Squoval Really the Most Practical Nail Shape section — link for readers still comparing base shapes before landing on squoval",
+        "link_type": "cluster-spoke"
+      },
+      {
+        "url_or_slug": "/blog/nail-shapes/strongest-nail-shape",
+        "title": "What's the Strongest Nail Shape? (Durability Ranked)",
+        "anchor_text": "which nail shape is the strongest",
+        "placement_note": "Is Squoval Really the Most Practical Nail Shape section — link when discussing chip/break resistance",
+        "link_type": "cluster-spoke"
+      },
+      {
+        "url_or_slug": "https://mirelleinspo.com/blog/nail-shape-for-hands/nails-for-wide-nail-beds",
+        "title": "Nails for Wide Nail Beds: Every Shape Worth Knowing",
+        "anchor_text": "how nail bed width actually changes which shapes flatter you",
+        "placement_note": "Does Squoval Work for Your Nail Beds section — directly supports the soft-vs-hard squoval nuance for wide beds",
+        "link_type": "cross-site"
+      },
+      {
+        "url_or_slug": "https://mirelleinspo.com/work-nails/short-nails-for-work",
+        "title": "Short Nails for Work: The Smartest Office Manicure",
+        "anchor_text": "why short squoval has become the default office manicure",
+        "placement_note": "Short, Medium, or Long section — supports the short-squoval-as-practical-default point with existing site authority",
+        "link_type": "cross-site"
+      }
+    ]
+  },
+
+  "section_12_voice_tone": {
+    "blog_gen_instruction": "This is the voice for this specific post. Layer on top of Mirellé editorial framework. Do not default to generic AI tone.",
+    "recommended_voice": "Confident educator",
+    "tone_characteristics": [
+      "Direct and unhedging on definitions — no 'it's basically a mix of...' vagueness",
+      "Reassuring without being saccharine — validates the confusion without dwelling on it",
+      "Practical over aspirational — this reader wants clarity, not mood-board inspiration",
+      "Occasionally conversational ('here's the part most guides skip') to build trust",
+      "Precise with technical detail (filing angles, grit, nail bed width) without turning clinical"
+    ],
+    "language_style": "Second person throughout ('your nail beds', 'your nail tech'). Short, declarative sentences for definitions; slightly longer sentences for nuance and comparison. Minimal analogies — this audience wants precision, not flourish.",
+    "audience_match": "A decision-mode reader wants to feel like the fog has lifted, not like she's being sold a vibe — confident, precise, practical language delivers exactly that."
+  },
+
+  "section_13_external_links": {
+    "blog_gen_instruction": "Include all external links where indicated. Supports E-E-A-T. Use anchor suggestion as guide — write naturally around it.",
+    "links": [
+      {
+        "url": "https://nailpro.com/nail-shapes",
+        "context": "When describing the filing technique (square first, then round the corners) — cite industry-professional confirmation",
+        "anchor_suggestion": "nail industry professionals confirm the technique"
+      },
+      {
+        "url": "https://www.whowhatwear.com/beauty/nails/squoval-nails",
+        "context": "When discussing which lengths look most polished — cite celebrity nail tech guidance on short-to-medium length",
+        "anchor_suggestion": "celebrity nail techs recommend"
+      }
+    ]
+  },
+
+  "section_14_execution_plan": {
+    "blog_gen_instruction": "READ THIS SECTION FIRST. Lock every value. Execute exactly. Do not recalculate, do not adjust, do not deviate.",
+    "block_1_keyword_execution": {
+      "primary_keyword": "squoval nails",
+      "top_3_density_baseline": 11,
+      "total_mention_target": "13-14 total mentions (baseline 11 + 2-3)",
+      "first_100_words_plan": {
+        "rule": "Primary keyword MUST appear TWICE in the first 100 words. Mandatory. No exceptions.",
+        "mention_1": "sentence 2 of introduction — naming the shape while describing the confusion reader arrived with",
+        "mention_2": "sentence 4-5 of introduction — first direct definitional reference before H2 1 begins"
+      },
+      "first_half_target": "8 mentions — first 1100 words. Run denser in first half.",
+      "second_half_target": "5-6 mentions — second 1100 words",
+      "strong_tag_rule": "EVERY single mention of the primary keyword — all 13-14 of them — wrapped in <strong> tags. No exceptions. Catch each one as it is written. Scan after every paragraph.",
+      "keywords_to_avoid_active": "Full list from section_3 — never used as focus terms anywhere in the post"
+    },
+    "block_2_word_budget": {
+      "total_target": "2200 words — +/-50 words tolerance, never exceed",
+      "introduction": "230 words",
+      "conclusion": "180 words",
+      "h2_budgets": [
+        { "heading": "What Is a Squoval Nail Shape, Exactly?", "budget": "260 words", "complexity": "medium" },
+        { "heading": "Squoval vs Square vs Oval: What Actually Separates Them", "budget": "320 words", "complexity": "high" },
+        { "heading": "Does Squoval Work for Your Nail Beds? (Soft vs Hard Squoval)", "budget": "330 words", "complexity": "high" },
+        { "heading": "How to File Your Nails Into a Squoval Shape at Home", "budget": "330 words", "complexity": "high" },
+        { "heading": "Is Squoval Really the Most Practical Nail Shape?", "budget": "260 words", "complexity": "medium" },
+        { "heading": "Short, Medium, or Long: What Length Suits Squoval Best", "budget": "230 words", "complexity": "medium" },
+        { "heading": "Squoval Nail Designs Worth Trying", "budget": "260 words", "complexity": "low" }
+      ],
+      "tracking_rule": "Track running word total at the end of every H2 section. If a section is running over budget — cut before moving to the next section. Do not compensate later."
+    },
+    "block_3_image_plan": {
+      "total_images": 9,
+      "hero_image": "frontmatter only — NEVER appears in post body",
+      "body_images": 8,
+      "assignments": [
+        { "image_number": 1, "place_after": "What Is a Squoval Nail Shape, Exactly?", "section_context": "Close-up of a clean squoval manicure showing the flat top edge and rounded corners clearly" },
+        { "image_number": 2, "place_after": "Squoval vs Square vs Oval: What Actually Separates Them", "section_context": "Side-by-side style shot implying the shape contrast — squoval nails styled simply so the silhouette reads clearly" },
+        { "image_number": 3, "place_after": "Does Squoval Work for Your Nail Beds? (Soft vs Hard Squoval)", "section_context": "Squoval nails on a hand with visibly wider nail beds, softly rounded corners, neutral polish" },
+        { "image_number": 4, "place_after": "How to File Your Nails Into a Squoval Shape at Home", "section_context": "Short natural squoval nails, minimal polish, emphasising the DIY-achievable look" },
+        { "image_number": 5, "place_after": "Is Squoval Really the Most Practical Nail Shape?", "section_context": "Squoval nails in an everyday context (hands typing or holding a coffee cup) to reinforce durability angle" },
+        { "image_number": 6, "place_after": "Short, Medium, or Long: What Length Suits Squoval Best", "section_context": "Short squoval nails, French tip or nude polish, clean and polished" },
+        { "image_number": 7, "place_after": "Short, Medium, or Long: What Length Suits Squoval Best", "section_context": "Medium-length squoval nails in a bolder colour to show the styled-up option" },
+        { "image_number": 8, "place_after": "Squoval Nail Designs Worth Trying", "section_context": "Squoval nails with a design detail — chrome, ombre, or French tip — showing the shape as a design canvas" }
+      ],
+      "image_type_rule": "ALL body images = inspirational nail design images related to the topic. NO infographics. NO process diagrams. NO comparison charts. NO step-by-step visuals.",
+      "path_rule": "/images/blog/nail-shapes/squoval-nails/filename.webp — topic_slug in path, slug folder, leading slash"
+    },
+    "block_4_opening_technique_assignments": {
+      "rule": "No two consecutive sections use the same technique. Conclusion = Technique 1 or 3 only.",
+      "assignments": [
+        { "section": "Introduction", "technique": "Technique 1 — The Claim (name the confusion directly, then promise resolution)" },
+        { "section": "What Is a Squoval Nail Shape, Exactly?", "technique": "Technique 2 — Direct Answer First (AEO-style immediate definition)" },
+        { "section": "Squoval vs Square vs Oval: What Actually Separates Them", "technique": "Technique 3 — The Reframe (most people think it's just 'in-between'; here's the real mechanic)" },
+        { "section": "Does Squoval Work for Your Nail Beds? (Soft vs Hard Squoval)", "technique": "Technique 1 — The Claim (soft vs hard squoval distinction stated upfront)" },
+        { "section": "How to File Your Nails Into a Squoval Shape at Home", "technique": "Technique 2 — Direct Answer First (jump straight into first filing step)" },
+        { "section": "Is Squoval Really the Most Practical Nail Shape?", "technique": "Technique 3 — The Reframe (practicality over 'universally flattering' framing)" },
+        { "section": "Short, Medium, or Long: What Length Suits Squoval Best", "technique": "Technique 1 — The Claim" },
+        { "section": "Squoval Nail Designs Worth Trying", "technique": "Technique 2 — Direct Answer First" },
+        { "section": "Conclusion", "technique": "Technique 3 — The Reframe" }
+      ],
+      "banned_opener_rule": "Check every opener against banned_opening_approaches in blog gen prompt before writing the second sentence"
+    },
+    "block_5_link_placements": {
+      "rule": "Every link placed exactly where specified. Anchor texts used verbatim — never rewritten. Links woven into prose naturally — never standalone CTAs.",
+      "links": [
+        { "anchor_text": "nail shapes chart for every shape", "full_url": "/blog/nail-shapes/nail-shapes-chart", "place_in_section": "Squoval vs Square vs Oval: What Actually Separates Them", "placement_context": "When referring readers to the full shape reference for context beyond the three shapes covered here", "link_type": "cluster-pillar" },
+        { "anchor_text": "complete square nails guide", "full_url": "/blog/nail-shapes/square-nails", "place_in_section": "Squoval vs Square vs Oval: What Actually Separates Them", "placement_context": "Directly after describing square's sharp corners, linking out for readers who want square specifically", "link_type": "cluster-spoke" },
+        { "anchor_text": "round vs square nails comparison", "full_url": "/blog/nail-shapes/round-vs-square-nails", "place_in_section": "Is Squoval Really the Most Practical Nail Shape?", "placement_context": "For readers still deciding between base shapes before considering the squoval hybrid", "link_type": "cluster-spoke" },
+        { "anchor_text": "which nail shape is the strongest", "full_url": "/blog/nail-shapes/strongest-nail-shape", "place_in_section": "Is Squoval Really the Most Practical Nail Shape?", "placement_context": "When making the durability/chip-resistance claim, link out to the full durability ranking", "link_type": "cluster-spoke" },
+        { "anchor_text": "how nail bed width actually changes which shapes flatter you", "full_url": "https://mirelleinspo.com/blog/nail-shape-for-hands/nails-for-wide-nail-beds", "place_in_section": "Does Squoval Work for Your Nail Beds? (Soft vs Hard Squoval)", "placement_context": "When resolving the wide-nail-bed nuance, link to the deeper existing guide on nail bed width and shape", "link_type": "cross-site" },
+        { "anchor_text": "why short squoval has become the default office manicure", "full_url": "https://mirelleinspo.com/work-nails/short-nails-for-work", "place_in_section": "Short, Medium, or Long: What Length Suits Squoval Best", "placement_context": "When making the case for short squoval as the practical default length", "link_type": "cross-site" }
+      ]
+    },
+    "block_6_aeo_geo_plan": {
+      "aeo_assignments": [
+        { "aeo_term": "what is a squoval nail shape", "assigned_to_section": "What Is a Squoval Nail Shape, Exactly?", "execution": "Write a direct 2-3 sentence answer paragraph IMMEDIATELY after the H2 heading — before any elaboration. This is what gets picked up by AI answer engines." },
+        { "aeo_term": "is squoval the same as rounded square nails", "assigned_to_section": "Squoval vs Square vs Oval: What Actually Separates Them", "execution": "Direct 2-sentence clarification distinguishing squoval (rounded corners, flat sides) from rounded square (fully domed tip)" },
+        { "aeo_term": "does squoval work for wide nail beds", "assigned_to_section": "Does Squoval Work for Your Nail Beds? (Soft vs Hard Squoval)", "execution": "Direct answer paragraph immediately after H2 — 'yes, with a caveat' framing, then explain soft vs hard squoval" },
+        { "aeo_term": "how do you file nails into a squoval shape", "assigned_to_section": "How to File Your Nails Into a Squoval Shape at Home", "execution": "Direct numbered/step answer immediately after H2 heading" },
+        { "aeo_term": "how short can squoval nails be", "assigned_to_section": "Short, Medium, or Long: What Length Suits Squoval Best", "execution": "Direct 2-sentence answer on minimum practical length before expanding into medium/long options" }
+      ],
+      "geo_entity_statements": [
+        { "entity": "squoval nail shape", "assigned_to_section": "What Is a Squoval Nail Shape, Exactly?", "execution": "Confident declarative definition: flat top edge filed straight across, corners softened into a rounded curve rather than a sharp angle — extractable as a citation." },
+        { "entity": "soft squoval vs hard squoval", "assigned_to_section": "Does Squoval Work for Your Nail Beds? (Soft vs Hard Squoval)", "execution": "Clear declarative distinction: hard squoval keeps corners closer to a right angle with minimal rounding; soft squoval rounds the corners more generously, closer to oval." }
+      ]
+    },
+    "block_7_active_constraints": {
+      "em_dash_banned": "Long em dash does not appear anywhere. If one forms while writing — stop, replace with: comma / new sentence / parentheses / but / restructure.",
+      "banned_vocab_watch": ["elevate", "effortless", "unleash", "game-changer", "must-have", "elevated", "seamlessly", "timeless"],
+      "british_english_active": "colour, recognise, -ise, -our — every instance, no exceptions",
+      "keyword_density_reminder": "After every 2 H2 sections — count current keyword mentions. Verify running total is on track to hit 13-14 total. First half must run denser than second half. Adjust if needed.",
+      "image_path_reminder": "/images/blog/nail-shapes/squoval-nails/filename.webp — topic_slug in path always",
+      "internal_link_url_reminder": "Full correct paths only. Cluster links = /blog/nail-shapes/[slug]. Cross-site links = exact URL as discovered. Never bare /slug.",
+      "hero_image_reminder": "Hero = frontmatter only. Never place hero image in body.",
+      "strong_tag_reminder": "Every primary keyword mention = <strong> tags. Scan after every paragraph."
+    }
+  }
+}
