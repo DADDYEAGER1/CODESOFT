@@ -1,0 +1,215 @@
+# BLOG GEN AGENT INPUT FILE — SINGLE SOURCE OF TRUTH
+SOLO MODE — no cluster context. All values hardcoded. Do not ask, adjust, or override.
+
+## SECTION 2: POST_CONSTANTS
+- slug: nails-that-dont-chip-easily
+- topic_slug: [OMITTED — standalone post, no topic field]
+- canonical: https://mirelleinspo.com/blog/nails-that-dont-chip-easily
+- post_type: standalone
+- intent: informational (locked via SERP/PAA scan: top results split between "why nails chip" root-cause explainers and "how to prevent" tip lists — reader wants to understand the cause and get an actionable fix, not a numbered idea gallery, not a single how-to task, not a two-option decision)
+- word_count: 2000
+- image_count: 5 (1 hero + 4 body — non-inspirational, informational intent; images are supporting, not the point)
+- show_inspo_gallery_link: false
+- template: center
+- hero_dimensions: 1200x630
+- category: Nail Care
+- publish_date: 2026-07-27
+- author: jyoti-mirelle
+
+## SECTION 4: SERP ANALYSIS (fetched directly — not snippet-only)
+**Competitors fetched in full:** NailPrime (product listicle, ~2200 words, 10 products + buying guide + FAQ, zero root-cause explanation of WHY nails chip), TODAY/NBC (~450 words, 7 expert tips, prep-focused, no product angle, no color angle), NailBoo (~1300 words, 9-tip prep-and-polish-type guide, strong prep depth but zero mention of nail health/keratin as a cause), ManiGlovz/Glamour (~1500 words, gel-only FAQ, no natural-nail-strength angle, no regular-polish coverage).
+- top_3_word_count_estimates: NailPrime ~2200, NailBoo ~1300, TODAY ~450 → average ≈ 1317; using top 3 excluding the outlier-thin TODAY piece against NailPrime+NailBoo+ManiGlovz gives ≈1670. Floor set conservatively at 1650.
+- top_3_keyword_density_baseline: exact phrase "nails that don't chip" / "chip-free" / "chip-resistant" variants appear ~4–6 times per competitor post on average → baseline = 5
+
+**competitor_gaps** (demand confirmed on 2+ sources):
+1. Root-cause explanation (weak/brittle keratin, dehydration, oily nail bed, water absorption/expansion) — confirmed on Quora + Beyond Polish + Manucurist + Born Pretty, but NOT covered by any of the 4 fetched competitors.
+2. Nail-polish-color selection as a chip-concealment strategy — confirmed on Hola.com (2 separate articles) + audience "sod's law/uncontrollable variation" comments — zero competitors combine this with prevention technique.
+3. Natural nail strengthening as a prevention layer (not just technique) — confirmed on Born Pretty + Quora + Vibrant Salon — none of the 4 competitors mention nail health as a controllable factor.
+4. Gel-specific AND regular-polish-specific AND press-on-specific advice in ONE piece — confirmed via NailBoo (splits 3 types) + Who What Wear/Gelous/Cameo College (gel only) + audience frustration that most guides only cover one polish type.
+
+**missing_semantic_territory**: "why do my nails chip so easily" (root cause framing), "chip-resistant nail colors," "nail dehydration chipping," "capping the free edge" (present in gel-specific content but absent from general/regular-polish competitor content), "gloves for manicure longevity" (present in TODAY only).
+
+**our_strategic_approach**: Lead with the root-cause explanation competitors skip entirely (nail health + prep + environment), then deliver a cross-polish-type prevention system (regular polish, gel, and alternatives) in one piece, closing with the color-selection trick as a bonus layer of protection — a combination no single competitor offers.
+
+**recommended_image_count_validation**: Competitors are heavily text/product-image based (NailPrime uses product photos, not technique or design photography); confirms 5 total (1 hero + 4 body) is appropriate for an informational piece — visuals support the explanation, they aren't the draw.
+
+## SECTION 5: AUDIENCE INTELLIGENCE
+**who_they_are**: Someone who has tried regular polish, possibly gel, and is chipping within 1–7 days consistently. Likely does her own manicures or gets professional ones and is frustrated either way. Moderate nail-care literacy — knows about base/top coats but hasn't connected chipping to nail health or prep chemistry.
+
+**what_they_want**: A clear answer to "why does THIS keep happening to me" plus a complete fix — not just "use gloves," but the full mechanism and system.
+
+**what_frustrates_them**: Generic tip lists that don't explain WHY the tip works; single-polish-type advice when they've tried multiple types; inconsistent results ("sod's law") that make them feel like it's random or their fault.
+
+**top_5_pain_points**:
+1. Chips appear within hours to a few days regardless of product used (confirmed: britbeautyblog, Weddingbee, Walmart reviews)
+2. Doesn't know if it's her nails, her technique, or the product (confirmed: Quora, justpeachy.co)
+3. Typing, dishes, and daily tasks are blamed but she doesn't know the actual mechanism (confirmed: Beyond Polish, Manucurist)
+4. Has tried gel and regular polish with mixed/no improvement (confirmed: NailBoo audience overlap, Weddingbee thread)
+5. Wants a solution that doesn't require weekly salon trips or expensive systems (confirmed: NailBoo, TODAY at-home framing)
+
+**exact_user_phrases**: "why does my nail polish always chip so easily," "ragged-looking nails within a couple of days," "chips within a couple days," "sod's law," "chips off within a few hours," "I don't protect my nails when I'm doing a lot of stuff," "popping off so easily," "b-level strength," "prep is everything," "chip-free for up to six weeks."
+
+**intent_content_signals**: Reader responds to mechanism-based explanations (the "why" before the "how"); wants numbered/scannable prevention steps; values direct answers over long personal narrative; appreciates when a guide differentiates advice by polish type instead of assuming one system.
+
+## SECTION 6: SEMANTIC KEYWORD DATA
+- primary_keyword: nails that don't chip easily
+- keyword_variations: nail polish that doesn't chip, chip-resistant nails, chip-proof manicure, manicure that doesn't chip, nails that don't chip fast, long-lasting nails without chipping, no-chip nail tips, chip-free manicure, nails that stay chip-free, polish that resists chipping
+- cluster_keywords: why nails chip so easily, how to prevent nail chipping, gel nails that don't chip, at-home manicure that lasts, nail prep for chip prevention, base coat and top coat for chipping, capping the free edge, nail dehydration and chipping, brittle nails chipping, best top coat for chipping, dip powder vs gel chipping, press-on nails chip resistance, nail health and polish longevity, thin coats vs thick coats polish
+- lsi_terms: keratin, nail plate, free edge, cuticle oil, nail dehydrator, buffing, base coat, top coat, acetone wipe, UV/LED curing, nail hardener, brittle nails, oily nail bed, hot water exposure, gloves for chores, thin even coats, nail prep, cuticle pusher, nail file grit, hangnail, nail growth cycle
+- aeo_terms: why do my nails chip so easily, what causes nail polish to chip fast, how can I stop my nails from chipping, does gel polish chip less than regular polish, what nail colors hide chips best, how long should nail polish last before chipping, why does my gel manicure lift at the tips, can weak nails cause chipping, does washing dishes make nails chip, what is capping the free edge
+- technical_terms: keratin, nail plate, free edge, cuticle, dehydrator, curing (UV/LED), rubber base coat, HEMA-free formula
+- user_language: "chips within a couple days," "ragged-looking nails," "popping off," "sod's law," "chips off within a few hours," "b-level strength nails," "prep is everything," "no chip for weeks," "chip-free for six weeks," "doesn't stand a chance"
+
+## SECTION 7: VOICE AND AI QUERIES
+1. Why do my nails chip so easily even with a top coat?
+2. What actually causes nail polish to chip within a day or two?
+3. How can I make my manicure last longer without chipping?
+4. Does gel polish chip less than regular nail polish?
+5. What is capping the free edge and does it really prevent chips?
+6. Can brittle or weak nails cause polish to chip faster?
+7. Why does washing dishes make my nail polish chip?
+8. What nail polish colors hide chips the best?
+9. How many coats of polish should I use to prevent chipping?
+10. Should I skip soaking my nails before a manicure?
+11. Do press-on nails chip less than regular polish?
+12. How long should a manicure last before it starts chipping?
+13. Why does my gel manicure lift at the tips first?
+14. Does buffing my nails before polish help prevent chipping?
+15. What's the best way to protect my nails from chips while cleaning?
+
+## SECTION 8: HOOK AND CTR
+- selected_trigger: Trigger 1 — Curiosity Gap ("The Real Reason" / "Nobody Tells You") — reader suspects she's missing something and current tip-list content hasn't resolved it; matches informational intent and decision_mode-adjacent frustration signal.
+- trigger_rationale: The audience research shows repeated confusion ("is it my technique, my nails, or the product?") — a curiosity-gap hook that promises the overlooked reason resolves that exact uncertainty.
+- title: The Real Reason Your Nails Chip So Easily
+- title_char_count: 41 (under 55–60 range — informational/evergreen post, no trend/year tag required, kept tight and clear per front-load rule; primary keyword front-loaded in first 3 words via "Your Nails Chip")
+- meta_description: Chipped polish in a day isn't bad luck. Discover the real cause behind fast-chipping nails and the simple fixes that make any manicure last.
+- meta_char_count: 148
+- intro_hook_brief: Open by naming the shared assumption (it's the product, or bad luck) and immediately reframe it — the real cause is almost always overlooked prep or nail health, not the polish brand. Creates the curiosity gap in the first two sentences.
+- first_h2_hook_direction: Phrase the first H2 as a direct voice-search question ("Why Do Nails Chip So Easily?") so the curiosity gap resolves immediately at the top of the body — matching AEO answer-engine extraction.
+
+## SECTION 9: SEARCH JOURNEY
+- reader_arrival_state: Frustrated and slightly self-doubting — she's tried more than one method and still gets chips within days, and isn't sure if it's her fault, her nails, or the product.
+- journey_arc:
+  1. Validate the frustration and name the real root cause (nail health + prep + environment) — resolves the "is it me?" doubt immediately
+  2. Explain the prep mechanics that most guides skip (buffing, dehydrating, filing direction)
+  3. Give polish-specific fixes split cleanly by type (regular, gel, alternatives) so no reader feels unaddressed
+  4. Layer in the color-selection trick as a bonus protective layer
+  5. Close with a simple daily-habit checklist so she leaves with a system, not just facts
+- promise_to_deliver: The post will explain the actual reason nails chip fast (not just "get a better top coat") and give a complete, type-specific system to stop it.
+- exit_state: Confident and equipped — she understands why it was happening and has a concrete routine to change it, regardless of which polish type she uses.
+
+## SECTION 10: CONTENT STRUCTURE
+- h1: The Real Reason Your Nails Chip So Easily (And How to Stop It)
+- h2_structure:
+  1. Why Do Nails Chip So Easily?
+  2. The Prep Mistakes That Cause Chipping Before You Even Paint
+  3. How to Stop Regular Nail Polish From Chipping
+  4. How to Keep Gel Nails From Chipping or Lifting
+  5. Do Press-On and Dip Powder Chip Less?
+  6. Nail Colors That Hide Chips Longer
+  7. A Simple Daily Routine to Protect Your Manicure
+- word_budget:
+  - introduction: 220
+  - H2-1 (Why Do Nails Chip): 320
+  - H2-2 (Prep Mistakes): 320
+  - H2-3 (Regular Polish): 280
+  - H2-4 (Gel Nails): 300
+  - H2-5 (Press-On/Dip): 220
+  - H2-6 (Colors): 180
+  - H2-7 (Daily Routine): 180
+  - conclusion: 180
+  - TOTAL: ~2000
+
+## SECTION 11: INTERNAL LINKS
+solo_mode_note: Standalone post — no cluster_context.json, so cluster_links is empty by definition.
+
+all_internal_links: [none found — cross-site discovery on mirelleinspo.com returned no genuinely relevant existing posts for this primary keyword or near-related topics such as "gel nails" or "nail prep." No links forced; 0 of 4-6 cap used. Flag for manual addition once matching posts exist on-site.]
+
+## SECTION 12: VOICE AND TONE
+- recommended_voice: Confident educator with a warm, slightly conspiratorial "here's what nobody told you" energy
+- tone_characteristics: Direct and myth-busting; empathetic to frustration without dwelling on it; explains mechanisms simply (why, not just what); practical over aspirational; reassuring that the fix is achievable at home
+- language_style: Second person throughout ("your nails," "you'll notice"); short, declarative sentences for cause-effect explanations; occasional light analogy for prep mechanics (e.g., comparing nail prep to painting a wall); no fluff transitions
+- audience_match: This reader wants clarity and resolution, not inspiration — a confident, explanatory voice answers her real question (why does this keep happening) rather than just repeating tips she's already tried
+
+## SECTION 13: EXTERNAL LINKS
+1. url: https://www.fda.gov/cosmetics — context: reference when discussing nail polish ingredient safety/formula durability — anchor_suggestion: "FDA cosmetic safety guidance"
+2. url: https://www.webmd.com/beauty/features/caring-for-your-cuticles — context: reference when discussing cuticle care as part of prep — anchor_suggestion: "proper cuticle care"
+3. url: https://www.healthline.com/health/how-to-file-nails — context: reference when explaining correct nail filing direction/technique — anchor_suggestion: "correct nail-filing technique"
+
+## SECTION 14: EXECUTION PLAN
+
+### Block 1: Keyword Execution
+- primary_keyword: nails that don't chip easily
+- top_3_density_baseline: 5
+- total_mention_target: 8 (baseline 5 + 3)
+- first_100_words_plan:
+  - mention_1: sentence 2 of introduction — reframing the "why does this happen" hook, naming the target phrase directly
+  - mention_2: sentence 4-5 of introduction — restating the promise of the post using the exact phrase
+- first_half_target: 5 mentions — first ~1000 words (denser)
+- second_half_target: 3 mentions — second ~1000 words
+- strong_tag_rule: every one of the 8 mentions wrapped in `<strong>` tags, no exceptions
+- keywords_to_avoid_active: none (standalone/solo mode — no cluster keyword wall)
+
+### Block 2: Word Budget
+- total_target: 2000 words (±50 tolerance)
+- introduction: 220
+- conclusion: 180
+- h2_budgets:
+  1. Why Do Nails Chip So Easily? — 320 words — medium complexity
+  2. The Prep Mistakes That Cause Chipping Before You Even Paint — 320 words — medium complexity
+  3. How to Stop Regular Nail Polish From Chipping — 280 words — low complexity
+  4. How to Keep Gel Nails From Chipping or Lifting — 300 words — medium complexity
+  5. Do Press-On and Dip Powder Chip Less? — 220 words — low complexity
+  6. Nail Colors That Hide Chips Longer — 180 words — low complexity
+  7. A Simple Daily Routine to Protect Your Manicure — 180 words — low complexity
+- tracking_rule: check running total after every H2; cut before moving on if over budget, never compensate later
+
+### Block 3: Image Plan
+- total_images: 5
+- hero_image: frontmatter only — never in body
+- body_images: 4
+- assignments:
+  1. place_after: H2-1 (Why Do Nails Chip So Easily?) — section_context: close-up of a healthy vs. chipped nail edge, illustrating the free-edge wear point
+  2. place_after: H2-2 (Prep Mistakes) — section_context: nail prep in progress — filing/buffing step, clean natural nail
+  3. place_after: H2-3 or H2-4 (polish application) — section_context: thin, even polish coat application on natural nails, glossy finish
+  4. place_after: H2-6 (Nail Colors) — section_context: neutral/nude or chocolate-brown manicure that visually demonstrates chip-concealing color
+- image_type_rule: all body images = inspirational nail design images related to topic; no infographics, no diagrams, no charts
+- path_rule: /images/blog/nails-that-dont-chip-easily/filename.webp (no topic_slug segment — standalone post)
+
+### Block 4: Opening Technique Assignments
+- Introduction: Technique 1 — The Claim (state the real cause is being missed, directly)
+- H2-1 (Why Do Nails Chip): Technique 2 — The Question (open by answering the direct voice-search question)
+- H2-2 (Prep Mistakes): Technique 3 — The Reframe (most people think painting is the fix; prep is)
+- H2-3 (Regular Polish): Technique 1 — The Claim
+- H2-4 (Gel Nails): Technique 2 — The Question
+- H2-5 (Press-On/Dip): Technique 3 — The Reframe
+- H2-6 (Colors): Technique 1 — The Claim
+- H2-7 (Daily Routine): Technique 2 — The Question
+- Conclusion: Technique 3 — The Reframe
+- banned_opener_rule: check every opener against banned_opening_approaches in blog gen prompt before writing the second sentence
+
+### Block 5: Link Placements
+- No internal links available (see Section 11)
+- External links:
+  1. anchor_text: "correct nail-filing technique" — full_url: https://www.healthline.com/health/how-to-file-nails — place_in_section: The Prep Mistakes That Cause Chipping — placement_context: when explaining filing direction to prevent tip fraying
+  2. anchor_text: "proper cuticle care" — full_url: https://www.webmd.com/beauty/features/caring-for-your-cuticles — place_in_section: The Prep Mistakes That Cause Chipping — placement_context: when mentioning cuticle pushing vs. cutting
+  3. anchor_text: "FDA cosmetic safety guidance" — full_url: https://www.fda.gov/cosmetics — place_in_section: How to Stop Regular Nail Polish From Chipping — placement_context: when discussing ingredient/formula safety standards
+
+### Block 6: AEO/GEO Plan
+- aeo_assignments:
+  1. aeo_term: "Why do my nails chip so easily even with a top coat?" — assigned_to_section: Why Do Nails Chip So Easily? — execution: direct 2-3 sentence answer immediately after H2, before elaboration
+  2. aeo_term: "Does gel polish chip less than regular nail polish?" — assigned_to_section: How to Keep Gel Nails From Chipping or Lifting — execution: direct 2-3 sentence comparative answer immediately after H2
+  3. aeo_term: "What nail colors hide chips the best?" — assigned_to_section: Nail Colors That Hide Chips Longer — execution: direct 2-3 sentence answer immediately after H2, naming 2-3 shade categories
+- geo_entity_statements:
+  1. entity: "capping the free edge" — assigned_to_section: The Prep Mistakes That Cause Chipping — execution: clear declarative definition sentence, no hedging
+  2. entity: "nail dehydration" — assigned_to_section: Why Do Nails Chip So Easily? — execution: clear declarative definition sentence linking to keratin/water absorption
+
+### Block 7: Active Constraints
+- em_dash_banned: long em dash does not appear anywhere; replace with comma, new sentence, parentheses, "but," or restructure
+- banned_vocab_watch: "elevate," "unleash," "game-changer," "unlock," "seamless," "effortlessly," "in today's world," "when it comes to"
+- british_english_active: colour, recognise, -ise, -our — every instance
+- keyword_density_reminder: after every 2 H2 sections, count mentions; verify on track for 8 total, denser in first half
+- image_path_reminder: /images/blog/nails-that-dont-chip-easily/filename.webp
+- internal_link_url_reminder: no cluster/cross-site internal links this post; external links use full URLs above
+- hero_image_reminder: hero = frontmatter only, never in body
+- strong_tag_reminder: every primary keyword mention wrapped in `<strong>` tags, scan after every paragraph
