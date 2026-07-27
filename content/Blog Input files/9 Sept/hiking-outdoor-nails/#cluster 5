@@ -1,0 +1,201 @@
+{
+  "cluster_metadata": {
+    "cluster_topic": "Hiking & Outdoor Nails",
+    "topic_slug": "hiking-outdoor-nails",
+    "target_audience": "Global, Tier 1 countries",
+    "total_posts": 4,
+    "intent_breakdown": {
+      "informational": 0,
+      "inspirational": 3,
+      "tutorial": 0,
+      "comparison": 0,
+      "seasonal_trend": 0,
+      "aesthetic_identity": 1
+    },
+    "pillar_post_slug": "hiking-nails",
+    "created_date": "2026-07-27",
+    "additional_instructions": [
+      "inspiration_gallery_link: false — this cluster has NO inspiration gallery page. Do not generate, reference, or link to any /inspo/[pillar-slug]-inspiration-gallery URL anywhere in this cluster. The pillar's internal_links object intentionally omits gallery_link entirely.",
+      "intent_diversity_rule waived by user for this cluster — only 2 distinct intent types present (inspirational, aesthetic_identity) instead of the standard 3-type minimum. This was an explicit user decision, not an oversight."
+    ]
+  },
+  "existing_site_posts_excluded": [
+    {
+      "url": "https://mirelleinspo.com/blog/beach-nails",
+      "title": "Beach Nail Ideas: Best Coastal Manicures for Summer",
+      "inferred_primary_keyword": "beach nails",
+      "inferred_intent": "inspirational",
+      "exclusion_reason": "Already exists on mirelleinspo.com — keyword reserved (checked during earlier scope exploration, not a direct collision with this cluster but logged for reference)"
+    },
+    {
+      "url": "https://mirelleinspo.com/blog/august/august-nails",
+      "title": "August Nails: 40+ Trending Ideas & Colors for 2026",
+      "inferred_primary_keyword": "august nails",
+      "inferred_intent": "inspirational",
+      "exclusion_reason": "Already exists on mirelleinspo.com — keyword reserved (checked during earlier scope exploration, not a direct collision with this cluster but logged for reference)"
+    },
+    {
+      "url": "https://mirelleinspo.com/blog/holiday-nails/tropical-nails",
+      "title": "Tropical Nails: Bold Island Designs for Your Next Getaway",
+      "inferred_primary_keyword": "tropical nails",
+      "inferred_intent": "inspirational",
+      "exclusion_reason": "Already exists on mirelleinspo.com — keyword reserved (checked during earlier scope exploration, not a direct collision with this cluster but logged for reference)"
+    }
+  ],
+  "posts": [
+    {
+      "post_id": 1,
+      "role": "pillar",
+      "title": "Hiking Nails",
+      "slug": "hiking-nails",
+      "primary_keyword": "hiking nails",
+      "intent": "inspirational",
+      "search_mode": "inspiration_mode",
+      "suggested_hook_trigger": "Trigger 3 — Specificity/Numbers",
+      "search_demand_signals": [
+        "Pinterest: multiple dedicated boards ('Hiking Nails', 'Hiking Nails Designs') with 171+ pins combined",
+        "TikTok: dedicated hiking nail art video content and hashtags",
+        "Lemon8: multiple articles on hiking/camping nail art and durability tips"
+      ],
+      "why_included": "Broadest, most consistent cross-platform demand for the umbrella activity-based query; functions as the natural hub for camping, mountain, and national park sub-angles.",
+      "internal_links": {
+        "links_to": [
+          { "slug": "camping-nails", "anchor_text": "camping nail art ideas", "type": "spoke" },
+          { "slug": "mountain-nails", "anchor_text": "mountain-inspired nail designs", "type": "spoke" },
+          { "slug": "national-park-nails", "anchor_text": "national park nail ideas", "type": "spoke" }
+        ],
+        "receives_links_from": [
+          { "slug": "camping-nails", "anchor_text": "hiking nail ideas" },
+          { "slug": "mountain-nails", "anchor_text": "hiking nail ideas" },
+          { "slug": "national-park-nails", "anchor_text": "hiking nail ideas" }
+        ]
+      },
+      "status": "approved"
+    },
+    {
+      "post_id": 2,
+      "role": "spoke",
+      "title": "Camping Nails",
+      "slug": "camping-nails",
+      "primary_keyword": "camping nails",
+      "intent": "inspirational",
+      "search_mode": "inspiration_mode",
+      "suggested_hook_trigger": "Trigger 2 — FOMO/Trend",
+      "search_demand_signals": [
+        "Pinterest: multiple dedicated boards (camping nails, camp nail ideas) with dozens of pins",
+        "TikTok: dedicated #campingnails hashtag with multiple viral videos ('outdoorsy girl but also dig a cute nail set')",
+        "Dedicated blog roundup: '20 Camping Nails Designs That Bring Outdoor Vibes to Your Mani'"
+      ],
+      "why_included": "Distinct sub-trend from hiking — leans campfire, tent, tree, and 's'mores' motifs rather than the broader adventure/trail framing.",
+      "internal_links": {
+        "links_to": [
+          { "slug": "hiking-nails", "anchor_text": "hiking nails", "type": "pillar" },
+          { "slug": "mountain-nails", "anchor_text": "mountain-inspired nail designs", "type": "spoke" },
+          { "slug": "national-park-nails", "anchor_text": "national park nail ideas", "type": "spoke" }
+        ],
+        "receives_links_from": [
+          { "slug": "hiking-nails", "anchor_text": "camping nail art ideas" },
+          { "slug": "mountain-nails", "anchor_text": "camping nail art ideas" },
+          { "slug": "national-park-nails", "anchor_text": "camping nail art ideas" }
+        ]
+      },
+      "status": "approved"
+    },
+    {
+      "post_id": 3,
+      "role": "spoke",
+      "title": "Mountain Nails",
+      "slug": "mountain-nails",
+      "primary_keyword": "mountain nails",
+      "intent": "inspirational",
+      "search_mode": "inspiration_mode",
+      "suggested_hook_trigger": "Trigger 3 — Specificity/Numbers",
+      "search_demand_signals": [
+        "Pinterest: 4+ dedicated boards ('Mountain Nail Designs', 'Mountains Nail Art', 'Mountain Wedding Nails') with extensive pin volume",
+        "TikTok: 'Mountain Peak Nail Ideas' dedicated content and location-tagged videos (Tetons, Jackson Hole)",
+        "Dedicated blog: '12 Creative Mountain Nail Ideas for Unique Nail Art Looks' explicitly defining the design category"
+      ],
+      "why_included": "Distinct visual/technique-based sub-trend — peaks, ridgelines, and alpine ombré landscapes — separate from the broader camping or hiking activity framing.",
+      "internal_links": {
+        "links_to": [
+          { "slug": "hiking-nails", "anchor_text": "hiking nails", "type": "pillar" },
+          { "slug": "camping-nails", "anchor_text": "camping nail art ideas", "type": "spoke" },
+          { "slug": "national-park-nails", "anchor_text": "national park nail ideas", "type": "spoke" }
+        ],
+        "receives_links_from": [
+          { "slug": "hiking-nails", "anchor_text": "mountain-inspired nail designs" },
+          { "slug": "camping-nails", "anchor_text": "mountain-inspired nail designs" },
+          { "slug": "national-park-nails", "anchor_text": "mountain-inspired nail designs" }
+        ]
+      },
+      "status": "approved"
+    },
+    {
+      "post_id": 4,
+      "role": "spoke",
+      "title": "National Park Nails",
+      "slug": "national-park-nails",
+      "primary_keyword": "national park nails",
+      "intent": "aesthetic_identity",
+      "search_mode": "aesthetic_identity_mode",
+      "suggested_hook_trigger": "Trigger 4 — Identity Mirroring",
+      "search_demand_signals": [
+        "Pinterest: named-destination content across 4+ boards (Yellowstone National Park Nails, Grand Teton, Alaska, Colorado, Montana themed nails)",
+        "TikTok: location-specific content ('Uhhh Tetons here I come!' — Jackson Hole / Grand Teton National Park nail inspiration)"
+      ],
+      "why_included": "Distinct identity-driven angle — readers searching by specific destination/park name rather than generic activity, signaling a 'this trip is who I am' aesthetic mirroring intent.",
+      "internal_links": {
+        "links_to": [
+          { "slug": "hiking-nails", "anchor_text": "hiking nails", "type": "pillar" },
+          { "slug": "camping-nails", "anchor_text": "camping nail art ideas", "type": "spoke" },
+          { "slug": "mountain-nails", "anchor_text": "mountain-inspired nail designs", "type": "spoke" }
+        ],
+        "receives_links_from": [
+          { "slug": "hiking-nails", "anchor_text": "national park nail ideas" },
+          { "slug": "camping-nails", "anchor_text": "national park nail ideas" },
+          { "slug": "mountain-nails", "anchor_text": "national park nail ideas" }
+        ]
+      },
+      "status": "approved"
+    }
+  ],
+  "keyword_ownership_registry": {
+    "description": "Master list of all primary keywords — one per post, no overlaps, includes existing site posts",
+    "entries": [
+      { "primary_keyword": "hiking nails", "owned_by_slug": "hiking-nails", "owned_by_title": "Hiking Nails", "source": "new post" },
+      { "primary_keyword": "camping nails", "owned_by_slug": "camping-nails", "owned_by_title": "Camping Nails", "source": "new post" },
+      { "primary_keyword": "mountain nails", "owned_by_slug": "mountain-nails", "owned_by_title": "Mountain Nails", "source": "new post" },
+      { "primary_keyword": "national park nails", "owned_by_slug": "national-park-nails", "owned_by_title": "National Park Nails", "source": "new post" },
+      { "primary_keyword": "beach nails", "owned_by_slug": "beach-nails", "owned_by_title": "Beach Nail Ideas: Best Coastal Manicures for Summer", "source": "existing site post" },
+      { "primary_keyword": "august nails", "owned_by_slug": "august-nails", "owned_by_title": "August Nails: 40+ Trending Ideas & Colors for 2026", "source": "existing site post" },
+      { "primary_keyword": "tropical nails", "owned_by_slug": "tropical-nails", "owned_by_title": "Tropical Nails: Bold Island Designs for Your Next Getaway", "source": "existing site post" }
+    ]
+  },
+  "merged_posts_log": [],
+  "killed_posts_log": [
+    {
+      "topic": "Late Summer Nails",
+      "reason": "User cut this angle after cluster scope pivoted fully away from summer to hiking/outdoor topic"
+    },
+    {
+      "topic": "End of Summer Nails",
+      "reason": "User cut this angle after cluster scope pivoted fully away from summer to hiking/outdoor topic"
+    },
+    {
+      "topic": "Surfside Nails",
+      "reason": "User cut this angle after cluster scope pivoted fully away from summer to hiking/outdoor topic"
+    },
+    {
+      "topic": "Funky Beach Nails",
+      "reason": "No independent demand signal found beyond generic 'beach nails' content already covered by existing site post /blog/beach-nails — fails 2-source validation rule"
+    },
+    {
+      "topic": "Outdoorsy Nails (as a summer-cluster spoke)",
+      "reason": "Real demand exists but is a nature/camping/hiking trend, not late-summer specific — off-topic for the original summer cluster framing; concept absorbed into this hiking-outdoor-nails cluster instead"
+    },
+    {
+      "topic": "Nail durability / breakage-prevention for hikers",
+      "reason": "Real search volume exists around hiking-related toenail/nail damage, but content found is generic nail-health/strengthening advice, not a hiking-specific searched query — insufficient differentiation to justify a standalone post"
+    }
+  ]
+}
