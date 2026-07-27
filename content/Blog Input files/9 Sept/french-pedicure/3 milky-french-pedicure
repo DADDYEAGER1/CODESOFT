@@ -1,0 +1,314 @@
+# INPUT FILE — MILKY FRENCH PEDICURE
+## THIS FILE IS THE SINGLE SOURCE OF TRUTH FOR THE BLOG GEN AGENT. All POST_CONSTANTS values are hardcoded. Nothing overridden unless user instructs Blog Gen Agent directly this session.
+
+---
+
+## SECTION 2 — POST_CONSTANTS
+```
+slug: milky-french-pedicure
+topic_slug: french-pedicure
+canonical: https://mirelleinspo.com/blog/french-pedicure/milky-french-pedicure
+post_type: spoke
+intent: seasonal_trend
+word_count: 1900
+image_count: 9
+show_inspo_gallery_link: true  [OVERRIDE — see note below]
+template: split-left
+hero_dimensions: 800x800
+category: Nail Trends
+publish_date: 2026-07-27
+author: jyoti-mirelle
+```
+**Override note:** Locked intent is `seasonal_trend`, not `inspirational`. Per prompt logic this would default `show_inspo_gallery_link: false` and `image_count: 4-5`. User explicitly instructed `true`/9 for this post — genuine visual-abundance browse behavior is confirmed by real research (Pinterest boards, TikTok discover page, WhoWhatWear photo-dump format), so the override is defensible even though it overrides the default intent-based rule. Flagging clearly so Blog Gen Agent and user both see it's a deliberate exception, not a system error.
+
+---
+
+## SECTION 3 — CLUSTER SNAPSHOT
+```
+pillar_slug: french-pedicure
+pillar_title: French Pedicure: The Complete Guide
+pillar_primary_keyword: french pedicure
+this_post_slug: milky-french-pedicure
+this_post_role: spoke
+keywords_to_avoid: french pedicure, how to do a french pedicure at home, black french tip toes, is french pedicure still in style, how much does a french pedicure cost, french pedicure short toenails, french pedicure for wedding, french pedicure designs, french tip almond nails, fall pedicure colors, pedicure cost, how much to tip for a pedicure, is it rude not to tip pedicure, pedicure salon etiquette, difference between a manicure and a pedicure
+```
+
+---
+
+## SECTION 4 — SERP ANALYSIS (web_fetch verified, not snippet-only)
+**Competitor gaps (2+ source validated):**
+- No competitor gives a salon request script the reader can literally repeat verbatim (TikTok has fragments, no single source packages it) — opportunity for a dedicated "what to say at the salon" block
+- No competitor addresses regrowth/chip visibility as a *decision factor* vs. just a side benefit (WhoWhatWear + AOL mention low-contrast/less-visible regrowth only in passing)
+- No competitor names a clear "milky white vs milky pink vs milky beige" decision framework — Parisfy and W&H list variations but don't help reader choose based on skin tone
+- Gel vs regular polish longevity specific to this look is scattered (Refinery29 mentions gel = 2 weeks) but no competitor consolidates it into a clear answer
+
+**Missing semantic territory:** "quiet luxury" / "clean girl" identity language is present in only one source (Parisfy) despite being the dominant emotional hook across TikTok and Pinterest data; no competitor explicitly ties milky French to skin-tone matching guidance.
+
+**Our strategic approach:** Position milky French pedicure as the "elevated, low-maintenance evolution" of the classic French — lean into the 2026 "quiet luxury toes" framing, give concrete salon-script and skin-tone guidance competitors skip, and resolve the "will it look dated" anxiety the classic French carries (per is-french-pedicure-still-in-style spoke) by showing milky as the modern fix.
+
+**Top 3 word count estimates:** Parisfy (~1,100 words, 9 H2s) / WhoWhatWear (~380 words, thin) / Woman&Home (~950 words, listicle format). Average ≈ 810 words — low because 2 of 3 are shallow. Floor set above average per quality mandate given spoke ceiling headroom.
+
+**Top 3 keyword density baseline:** "milky french pedicure" / "milky French tip toes" mentioned ~6x average across the three (Parisfy 7, WWW 5, W&H 5).
+
+---
+
+## SECTION 5 — AUDIENCE INTELLIGENCE
+**Who they are:** Women already familiar with French pedicures/milky manicures (not first-timers to nails generally), searching mid-decision — comparing this specific variation against the classic French or plain milky pedicure, often pre-booking or pre-DIY.
+
+**What they want:** Confirmation this look is current (not dated like classic French), clear visual variations to choose from, and practical direction — what to ask for at the salon or how to DIY it.
+
+**What frustrates them:** Competitor posts are photo-dumps with weak substance (WhoWhatWear); no source gives them a decision framework for which milky shade suits their skin tone; scattered/incomplete longevity and product info.
+
+**Top 5 pain points:**
+1. Fear the base will look "flat white" or opaque instead of soft/sheer if they don't communicate it right
+2. Uncertainty over milky white vs. milky pink vs. milky beige for their skin tone
+3. Regrowth/chip anxiety carried over from classic French experience
+4. Not knowing exact salon language to avoid getting a generic white pedicure
+5. Confusion about gel vs. regular polish for this specific look's longevity
+
+**Exact user phrases:** "milky white frenchies", "your nails but better", "quiet luxury finish", "soft contrast", "less noticeable regrowth", "sheer milky base, not fully opaque", "milky, slightly milky base", "ask for a milky or sheer nude base", "clean-girl version", "expensive, quiet-luxury feel"
+
+**Intent content signals:** Visual-forward (many images expected), short punchy paragraphs, expert quotes carry authority, practical "ask for this" scripts perform well, skin-tone personalization is an unmet need, gel-vs-regular framed as quick decision not deep dive.
+
+---
+
+## SECTION 6 — SEMANTIC KEYWORD DATA
+```
+primary_keyword: milky french pedicure
+keyword_variations: milky french pedicures, milky french tip pedicure, milky white french pedicure, milky french toe nails, milky french tip toes
+cluster_keywords: milky white pedicure, milky pink pedicure, sheer white base pedicure, French tip toes, classic French pedicure, milky nails trend, quiet luxury pedicure, milky beige pedicure, sandal-ready pedicure, low-maintenance pedicure, 2026 pedicure trends, chip-resistant pedicure, gel pedicure longevity, glass French finish, micro French tip
+lsi_terms: sheer milky base, creamy white polish, soft French tip, translucent nail polish, French tip toe nail, milky glaze finish, opaque white tip, skin-tone matching polish, low-contrast pedicure, sandal season pedicure, glossy top coat, salon nail request, pedicure longevity, gel polish vs regular, regrowth-friendly polish
+aeo_terms: What is a milky French pedicure?, How is a milky French pedicure different from a classic French pedicure?, What do you ask for at the salon for a milky French pedicure?, How long does a milky French pedicure last?, Does a milky French pedicure work on all skin tones?, Can you do a milky French pedicure at home?, What polish colors are used for a milky French pedicure?, Is milky French pedicure trending in 2026?
+technical_terms: sheer base coat, opaque white tip, gel polish, nail lacquer, top coat, French tip line, cuticle prep, polish viscosity
+user_language: milky white frenchies, your nails but better, quiet luxury toes, clean-girl pedicure, sheer not stark, soft contrast tips, less noticeable regrowth, expensive-looking toes, low-key elegant, sandal-ready finish
+```
+
+---
+
+## SECTION 7 — VOICE & AI QUERIES
+1. What exactly is a milky French pedicure?
+2. How is a milky French pedicure different from a regular French pedicure?
+3. What do I ask for at the nail salon to get a milky French pedicure?
+4. How long does a milky French pedicure last with gel polish?
+5. Can I do a milky French pedicure at home without a salon?
+6. What's the best milky polish shade for my skin tone?
+7. Does a milky French pedicure show regrowth less than a classic French?
+8. Is milky French pedicure still trending in 2026?
+9. What's the difference between milky white and milky pink pedicure?
+10. Why do nail artists call this a "quiet luxury" pedicure?
+11. Can you get a milky French pedicure with gel or does it need to be regular polish?
+12. What nail shape works best with a milky French tip?
+13. Is milky French pedicure good for short toenails?
+14. How do I stop my milky French pedicure looking too stark or flat?
+15. What products give the best milky base at home?
+
+---
+
+## SECTION 8 — HOOK AND CTR
+```
+selected_trigger: Trigger 4 — Identity Mirroring
+trigger_rationale: Search mode is aesthetic_identity_mode — the reader is confirming a "quiet luxury, clean-girl" self-image via this specific trend, not just browsing generic ideas.
+title: Milky French Pedicure: The Quiet Luxury Toes for 2026
+title_char_count: 56
+meta_description: Soft, sheer, elevated — see why the milky French pedicure is 2026's chicest toe trend and exactly what to ask for at the salon.
+meta_char_count: 133
+intro_hook_brief: Open by naming the reader's exact self-image — she wants toes that look expensive and refined without trying too hard. Position milky French as the answer to "is classic French too dated" anxiety, immediately establishing this as the modern evolution, not a passing fad.
+first_h2_hook_direction: Frame first H2 as a direct definitional voice-search query — "What Is a Milky French Pedicure?" — answered in 2-3 confident sentences before elaboration.
+```
+
+---
+
+## SECTION 9 — SEARCH JOURNEY
+```
+reader_arrival_state: Trend-aware and self-image-conscious — she's seen this look on Pinterest/TikTok and wants to confirm it fits her aesthetic before booking or DIYing.
+journey_arc:
+- Confirm the trend and name the exact aesthetic identity it signals (quiet luxury, elevated, effortless)
+- Define what makes it different from classic French (the "why" behind the appeal)
+- Show variation options (white/pink/beige) mapped to skin tone so she can self-select
+- Give the practical salon script + at-home method so she can act immediately
+- Close with the identity payoff — this is her signature low-maintenance summer look
+promise_to_deliver: This post will help her identify with the trend AND walk away knowing exactly what to ask for or how to do it herself.
+exit_state: Confident and ready to book or DIY — she knows exactly which milky variation suits her and exactly what words to use to get it right.
+```
+
+---
+
+## SECTION 10 — CONTENT STRUCTURE
+```
+h1: Milky French Pedicure: The Quiet Luxury Toes Trend for 2026
+h2_structure:
+1. What Is a Milky French Pedicure? (220w)
+2. Milky French vs. Classic French Pedicure: What's Different (200w)
+3. Why Nail Artists Are Calling It the "Quiet Luxury" Pedicure (180w)
+4. Milky White vs. Milky Pink vs. Milky Beige: Which Suits Your Skin Tone (280w)
+5. What to Ask for at the Salon (Exact Script) (220w)
+6. Can You DIY a Milky French Pedicure at Home? (240w)
+7. Gel vs. Regular Polish: Which Lasts Longer (180w)
+8. Does It Really Hide Regrowth Better? (150w)
+9. Is the Milky French Pedicure Worth Trying This Season? (Conclusion-adjacent close) (180w)
+
+word_budget:
+introduction: 230
+conclusion: 180 (folded into H2-9 close)
+```
+
+---
+
+## SECTION 11 — INTERNAL LINKS
+```
+1. url: /blog/french-pedicure/french-pedicure
+   anchor: french pedicure guide
+   placement: H2-2 (Milky vs Classic) — natural comparison reference back to pillar
+   type: cluster-pillar
+
+2. url: /blog/french-pedicure/black-french-tip-toes
+   anchor: black french tip toes
+   placement: H2-4 (skin tone variations) — as the bolder color-tip alternative
+   type: cluster-spoke
+
+3. url: /blog/french-pedicure/is-french-pedicure-still-in-style
+   anchor: is french pedicure still in style in 2026
+   placement: H2-3 (quiet luxury framing) — resolves the "dated" anxiety directly
+   type: cluster-spoke
+
+4. url: /blog/french-pedicure/wedding-french-pedicure-ideas
+   anchor: wedding french pedicure ideas for brides
+   placement: H2-5 (salon script) — bridal client crossover mention
+   type: cluster-spoke
+
+5. url: https://parisfy.com/french-tip-toes/ [placeholder — verify live cross-site relevance before publish; excluded from mirelleinspo cross-site search since Parisfy is external competitor, not internal site]
+
+gallery_link:
+   url: https://mirelleinspo.com/inspo/french-pedicure-inspiration-gallery
+   anchor: french pedicure inspiration gallery
+   placement: end of H2-4 or H2-9, natural CTA into visual browsing
+```
+**Note:** Cross-site discovery (site:mirelleinspo.com) could not be executed as a live tool call in this environment — no domain-search capability available for mirelleinspo.com specifically. Blog Gen Agent/user should run `site:mirelleinspo.com milky pedicure` and `site:mirelleinspo.com french pedicure` manually before publish to fill the 2 cross-site slots properly. Total links currently: 4 cluster + gallery = 5, within 4-6 cap; leaves room for up to 2 cross-site if found relevant, but do not force it — 5 is acceptable if no genuine cross-site match exists.
+
+---
+
+## SECTION 12 — VOICE AND TONE
+```
+recommended_voice: Confident insider / aspirational-but-practical guide
+tone_characteristics: warm authority, quietly trend-fluent (not hype-y), reassuring on the "is this still cool" anxiety, precise/practical when giving scripts or steps, never salesy
+language_style: Second-person direct ("you"), short punchy declarative sentences for identity/aspiration beats, slightly longer explanatory sentences for the how-to/decision sections, minimal hedging
+audience_match: This reader wants to feel seen and validated in her aesthetic instincts, then handed the practical tool (script/steps) to execute — voice must earn trust fast then deliver utility, matching the seasonal_trend journey arc exactly.
+```
+
+---
+
+## SECTION 13 — EXTERNAL LINKS
+```
+1. context: Defining the quiet-luxury/elevated positioning
+   anchor_suggestion: nail artists calling it the elevated minimalist pedicure of the season
+   note: reference AOL nail-artist-quoted trend coverage (do not link directly to competitor unless site policy allows external citation; verify with editorial team)
+
+2. context: Longevity/gel polish claim
+   anchor_suggestion: gel polish typically lasting around two weeks
+   note: general industry knowledge, no direct competitor link needed
+```
+
+---
+
+## SECTION 14 — EXECUTION PLAN
+
+### Block 1 — Keyword Execution
+```
+primary_keyword: milky french pedicure
+top_3_density_baseline: 6
+total_mention_target: 8-9
+first_100_words_plan:
+  mention_1: sentence 2 of introduction — establishing the trend name immediately after the identity hook
+  mention_2: sentence 4-5 of introduction — reinforcing before transition into H1/first H2
+first_half_target: 5 mentions — first 950 words (H2 1-4)
+second_half_target: 3-4 mentions — second 950 words (H2 5-9)
+strong_tag_rule: every mention wrapped in <strong> tags, no exceptions
+keywords_to_avoid_active: full list from Section 3
+```
+
+### Block 2 — Word Budget
+```
+total_target: 1900 (+/-50)
+introduction: 230
+conclusion: 180 (within H2-9)
+h2_budgets:
+- "What Is a Milky French Pedicure?": 220w, medium
+- "Milky French vs. Classic French Pedicure": 200w, medium
+- "Why Nail Artists Are Calling It Quiet Luxury": 180w, low
+- "Milky White vs. Pink vs. Beige (Skin Tone Guide)": 280w, high
+- "What to Ask for at the Salon": 220w, medium
+- "Can You DIY at Home?": 240w, high
+- "Gel vs. Regular Polish": 180w, medium
+- "Does It Hide Regrowth Better?": 150w, low
+- "Is It Worth Trying This Season?" (close): 180w, low
+tracking_rule: count running total after every H2; cut before moving on if over.
+```
+
+### Block 3 — Image Plan
+```
+total_images: 9
+hero_image: frontmatter only, never in body
+body_images: 8
+assignments:
+1. place_after: intro — hero-style milky white French pedicure close-up
+2. place_after: H2-1 — classic milky white base + tip detail shot
+3. place_after: H2-2 — side-by-side milky vs. classic French comparison shot
+4. place_after: H2-4 — milky pink variation on warm skin tone
+5. place_after: H2-4 — milky beige variation
+6. place_after: H2-5 — salon-fresh finished pedicure, sandal context
+7. place_after: H2-6 — at-home DIY setup/application shot
+8. place_after: H2-9 — full lifestyle shot, sandals/summer context for close
+image_type_rule: all inspirational nail/pedicure design images only — no infographics, no diagrams
+path_rule: /images/blog/french-pedicure/milky-french-pedicure/filename.webp
+```
+
+### Block 4 — Opening Technique Assignments
+```
+Introduction: Technique 4 (Identity Mirroring hook — name her aesthetic instinct)
+H2-1 (What Is It): Technique 2 (Direct Definition)
+H2-2 (vs Classic): Technique 1 (The Claim — "It's the more elevated version")
+H2-3 (Quiet Luxury): Technique 3 (The Reframe — dated fear reframed as sophistication)
+H2-4 (Skin Tone Guide): Technique 2 (Direct Definition/framework)
+H2-5 (Salon Script): Technique 1 (The Claim — practical promise)
+H2-6 (DIY): Technique 3 (The Reframe — "easier than you think")
+H2-7 (Gel vs Regular): Technique 2 (Direct comparison)
+H2-8 (Regrowth): Technique 1 (The Claim)
+Conclusion (H2-9): Technique 3 (The Reframe — close on identity payoff)
+banned_opener_rule: check every opener against Blog Gen Agent's banned_opening_approaches list before writing second sentence
+```
+
+### Block 5 — Link Placements
+```
+1. anchor: french pedicure guide | url: /blog/french-pedicure/french-pedicure | section: H2-2 | context: comparing back to the classic version defined in pillar | type: cluster-pillar
+2. anchor: black french tip toes | url: /blog/french-pedicure/black-french-tip-toes | section: H2-4 | context: bolder color-tip alternative for those wanting contrast | type: cluster-spoke
+3. anchor: is french pedicure still in style in 2026 | url: /blog/french-pedicure/is-french-pedicure-still-in-style | section: H2-3 | context: directly resolves the "is this dated" debate | type: cluster-spoke
+4. anchor: wedding french pedicure ideas for brides | url: /blog/french-pedicure/wedding-french-pedicure-ideas | section: H2-5 | context: bridal client mention when discussing salon requests | type: cluster-spoke
+5. anchor: french pedicure inspiration gallery | url: https://mirelleinspo.com/inspo/french-pedicure-inspiration-gallery | section: H2-4 or H2-9 | context: visual browsing CTA | type: gallery
+```
+
+### Block 6 — AEO/GEO Plan
+```
+aeo_assignments:
+1. "What is a milky French pedicure?" → H2-1 → direct 2-3 sentence answer immediately after heading
+2. "How is it different from a classic French pedicure?" → H2-2 → direct comparison answer first
+3. "What do you ask for at the salon?" → H2-5 → verbatim script as the direct answer
+4. "How long does a milky French pedicure last?" → H2-7 → direct gel-vs-regular answer upfront
+5. "Does it hide regrowth better?" → H2-8 → direct yes/no + reason as opening
+
+geo_entity_statements:
+1. entity: "milky French pedicure" → H2-1 → clear declarative definition sentence
+2. entity: "sheer base coat" → H2-6 → definition within DIY steps
+3. entity: "quiet luxury" (as applied to nails) → H2-3 → confident declarative definition
+```
+
+### Block 7 — Active Constraints
+```
+em_dash_banned: yes, replace with comma/new sentence/parentheses on formation
+banned_vocab_watch: "elevate/elevated" (overused in this niche — use sparingly), "game-changer", "must-try", "obsessed", "stunning" (used heavily in source material, avoid echoing), "effortlessly chic"
+british_english_active: colour, recognise, -ise, -our — every instance
+keyword_density_reminder: recount after every 2 H2s, front-load density in first half
+image_path_reminder: /images/blog/french-pedicure/milky-french-pedicure/filename.webp
+internal_link_url_reminder: full /blog/french-pedicure/[slug] paths only
+hero_image_reminder: frontmatter only, never in body
+strong_tag_reminder: scan after every paragraph for primary keyword mentions
+```
