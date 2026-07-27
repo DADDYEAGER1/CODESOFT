@@ -1,0 +1,304 @@
+# BLOG GEN AGENT INPUT FILE — long-vs-short-nails (PILLAR)
+
+## SECTION 1 — FILE AUTHORITY
+THIS FILE IS THE SINGLE SOURCE OF TRUTH FOR THE BLOG GEN AGENT. All values in POST_CONSTANTS are hardcoded. Do not ask, adjust, or override. All keywords, H2 structure, audience intelligence, internal links, and tone must be followed exactly.
+
+## SECTION 2 — POST_CONSTANTS
+- slug: `long-vs-short-nails`
+- topic_slug: `long-vs-short-nails`
+- canonical: `https://mirelleinspo.com/blog/long-vs-short-nails/long-vs-short-nails`
+- post_type: `pillar`
+- intent: `comparison`
+- word_count: **2400** (±50)
+- image_count: **9** (1 hero + 8, one per H2 — finalised after Section 10)
+- show_inspo_gallery_link: **false** — [see note below]
+- template: `center`
+- hero_dimensions: `1200x630`
+- category: Nail Comparisons / Nail Guides (confirm exact site taxonomy string)
+- publish_date: 2026-07-27
+- author: `jyoti-mirelle`
+
+**Override note (user-directed):** `show_inspo_gallery_link` is locked false per explicit user instruction. This diverges from the pillar's own `internal_linking_map.gallery_link` entry in cluster_context.json, which mandates a gallery link to `long-vs-short-nails-inspiration-gallery`. That gallery link is still included in Section 11 as a **hard cluster-file requirement**, separate from the phase_2 boolean — Blog Gen Agent should render frontmatter `showInspoGalleryLink: false` but still place the gallery URL as an in-body contextual link per the cluster mandate. If you want the gallery URL suppressed entirely (not just the auto-append flag), say so explicitly.
+
+## SECTION 3 — CLUSTER SNAPSHOT
+- pillar_slug: `long-vs-short-nails`
+- pillar_title: Long vs Short Nails: Which Is Actually Better for You
+- pillar_primary_keyword: `long vs short nails`
+- this_post_slug: `long-vs-short-nails`
+- this_post_role: pillar
+- keywords_to_avoid: nail art for short nails, simple nail designs for long nails, negative space nails, how long does nail art take, low maintenance nail designs, short vs long summer nails, long coffin nails, short coffin nails, short almond nails, short french tip nails, short fall/summer/prom/mother's day/wedding/festival nails, short old money nails, short quiet luxury nails, professional nail length for work, nails for chubby/long/short fingers, nails for small hands, nails for wide nail beds, are long nails bad for your health, can you get nail extensions with short nails, what nail length is considered professional, nail shape for wedding, 3d nail art, nail trends 2026, healthy nail aesthetic, nails for confidence
+
+## SECTION 4 — SERP ANALYSIS
+**competitor_gaps** (2+ source validated):
+1. No competitor connects nail-bed **shape** (not just length) to length flattery in an accessible way — Quora/Refinery29 surface "long nail beds = beauty standard/class signal" as a real emotional undercurrent competitors ignore entirely (Quora, Refinery29 — 2 sources).
+2. No competitor gives a **self-test** to identify your own hand/nail-bed type before recommending a length (SHANGMENG comes closest but stops at generic categories). PolishedByKim and NAGAIA also skip this (PolishedByKim, general pattern across sources).
+3. "Switching lengths without full commitment" (press-ons as a bridge) is owned entirely by SHANGMENG as a product pitch — genuine informational version of this (e.g., growing out safely, medium as a trial length) is underserved elsewhere.
+4. None of the comparison competitors address the credit-card/small-object dexterity friction directly, despite it recurring across Quora threads (Quora x2).
+
+**missing_semantic_territory:** "nail bed" as distinct from "finger length" (Quora, Refinery29, OPI); the interview/job-specific decision point (SHANGMENG has this but buried in FAQ, not structural); aging and nail length perception (SHANGMENG FAQ only).
+
+**our_strategic_approach:** Build the comparison around a clear dimension-by-dimension framework (function, hygiene, health, aesthetics, cost, occasion) like SHANGMENG's proven structure, but resolve it with a **decisive verdict per dimension** rather than "it depends," and add the emotional/identity layer (what your length choice signals) that pure practicality guides skip. Close with a concrete decision framework so the reader leaves with an answer, not more open questions.
+
+**top_3_word_count_estimates:** SHANGMENG ≈2,700 words | PolishedByKim ≈1,400 words | PurelyComfy ≈900 words → average ≈1,650 words (floor)
+
+**top_3_keyword_density_baseline:** ≈3 exact-phrase mentions of "long vs short nails" / "short vs long nails" per top post (comparison pages favor natural "long nails"/"short nails" repetition over exact-phrase stuffing)
+
+## SECTION 5 — AUDIENCE INTELLIGENCE
+**who_they_are:** Women actively deciding their next manicure length — not committed to either camp, genuinely torn, often mid-debate with themselves or friends ("okay girls settle this for real 👀💅"). Range from teens/20s browsing Lemon8/Pinterest for validation to professional women weighing a specific life constraint (new job, new hobby, injury recovery from a broken nail).
+
+**what_they_want_from_this_post:** A real verdict, not "it depends" — but one that accounts for their specific life circumstances (job, hobbies, hand shape) rather than a generic aesthetic take.
+
+**what_frustrates_them:** Existing content (Nagaia, BeautyFrizz, most Lemon8 posts) shrugs and says "it's personal preference," which reads as a non-answer. Readers want someone to actually weigh the tradeoffs and land somewhere.
+
+**top_5_pain_points:**
+1. Broken nails / breakage anxiety with long nails, especially doing manual tasks (Pointless Cafe, SHANGMENG)
+2. Hygiene guilt/uncertainty — "are long nails actually dirtier" is a real recurring anxiety, not settled in their mind (Quora)
+3. Typing and small-object dexterity friction (credit card retrieval, phone use) — treated as a real daily cost (Quora, SHANGMENG)
+4. Identity tension — long nails read as "trying too hard" to some, short nails read as "not put together" to others; readers are aware their choice is being read by others (Quora attractiveness threads, Refinery29)
+5. Wanting both — the "short natural, long for occasions" compromise is a real recurring resolution people land on themselves, but rarely see validated as legitimate (SHANGMENG bridges this with press-ons; our audience needs the natural-nail version)
+
+**exact_user_phrases:**
+- "settle this for real"
+- "short and square" / "short nail girlie" vs "long nail girlie"
+- "flip-flop between long and short depends on my mood or the occasion"
+- "are long nails actually dirtier than short nails"
+- "nails are unrepairable when broken"
+- "it gets annoying typing on computers or phones with long nails"
+- "I don't know how some women do it"
+- "which one do you prefer"
+- "hands with airport-runway-length nail beds" (paraphrased identity-envy language)
+- "I keep them long for the sake of [aesthetic reasons]"
+
+**intent_content_signals:** Wants a structured, skimmable dimension-by-dimension breakdown (not a rambling personal essay); wants a definitive "winner" called per category rather than hedging; responds to real data points (hygiene, breakage) alongside emotional/identity framing; wants a closing decision tool, not just information.
+
+## SECTION 6 — SEMANTIC KEYWORD DATA
+**primary_keyword:** `long vs short nails`
+
+**keyword_variations:** short vs long nails, long nails vs short nails, short nails or long nails, long or short nails, long versus short nails, which nail length is better, short nails vs long nails
+
+**cluster_keywords:** nail length, free edge length, medium length nails, nail bed length, long nail beds, short nail beds, nail length chart, natural nail length, acrylic nail length, professional nail length (context only — do not use as focus), nail breakage, nail hygiene, finger elongation, nail plate health, hand proportions
+
+**lsi_terms:** typing speed nails, nail plate health, onycholysis, subungual hygiene, nail matrix, finger elongation, hand shape nails, active lifestyle nails, low-maintenance nails (context only, not the reserved post's territory), nail canvas for art, statement nails, minimalist nails, dexterity nails, breakage risk, nail leverage, occasion nails, everyday nails
+
+**aeo_terms:**
+- "Are long nails or short nails better?"
+- "Is it healthier to have long or short nails?"
+- "Do long nails make your hands look better?"
+- "What nail length is best for typing?"
+- "Are long nails actually dirtier than short nails?"
+- "What nail length is most professional?"
+- "Can short nails still have nail art?"
+- "Why do my long nails keep breaking?"
+- "What's the most practical nail length?"
+- "Do long nails look better with age?"
+
+**technical_terms:** free edge, nail plate, nail bed, onycholysis, subungual space, nail matrix, hyponychium, squoval
+
+**user_language:** "settle this for real," "short nail girlie," "long nail girlie," "flip-flop," "unrepairable when broken," "annoying to type with," "trying too hard," "put together," "airport-runway nail beds," "the wow factor"
+
+## SECTION 7 — VOICE AND AI QUERIES
+1. Are long nails or short nails actually better?
+2. Is it healthier to have long nails or short nails?
+3. Do long nails make your fingers look longer?
+4. What nail length is easiest for typing?
+5. Are long nails dirtier than short nails?
+6. What's the most professional nail length?
+7. Can you still get detailed nail art with short nails?
+8. Why do long nails break so easily?
+9. What nail length should I get for my first set?
+10. Is medium length a good compromise between long and short?
+11. Do long nails hurt your natural nail health?
+12. What nail length is best for an active lifestyle?
+13. Should I get long or short nails for a job interview?
+14. Do long nails look different on older hands?
+15. What length nails look best on short fingers?
+16. Is it better to keep nails short and switch to press-ons for events?
+17. How do I know if my hands suit long nails?
+18. What's the difference between medium and long nails?
+
+## SECTION 8 — HOOK AND CTR
+**selected_trigger:** Trigger 1 — Curiosity Gap
+**trigger_rationale:** Reader is in decision_mode, torn between two camps, suspects the "it's just preference" answer she keeps finding is a cop-out — curiosity gap resolves that tension by promising an actual verdict.
+
+**title_draft:** Long vs Short Nails: Which Is Actually Better?
+**title_char_count:** 40 — under the 55-60 target; needs a qualifier to hit range. Revised: **"Long vs Short Nails: Which One Actually Wins?"** = 45 chars — still short. Revised: **"Long vs Short Nails: The Honest Answer (2026)"** = 47 chars. Final: **"Long vs Short Nails: Which Is Actually Better in 2026"** = 55 chars ✓
+**title_char_count:** 55
+
+**meta_description_draft:** "Every guide says 'it's personal preference.' We tested 6 real-life factors — hygiene, health, cost, and more — to find an actual winner."
+**meta_char_count:** 137 ✓ (120-155)
+
+**intro_hook_brief:** Open by naming the frustration directly — every existing guide dodges the question with "it depends" or "personal preference." Signal this post is different: it commits to real answers across specific, testable dimensions, then gives the reader a way to apply it to her own life.
+
+**first_h2_hook_direction:** Phrase the first H2 as a direct voice-search-style question the reader is actually asking themselves — something like "Which Nail Length Is Actually Healthier?" — leading with the dimension people feel most guilty/uncertain about (hygiene/health) rather than the most obvious one (aesthetics).
+
+## SECTION 9 — SEARCH JOURNEY
+**reader_arrival_state:** Torn between two camps, mildly frustrated that every article she's read says "it's up to you" without actually resolving anything.
+
+**journey_arc:**
+- Acknowledge the exact "it depends" frustration and promise a real, dimension-by-dimension verdict
+- Resolve the anxiety-driven dimensions first (hygiene, nail health) since those carry guilt/uncertainty
+- Move into function and lifestyle-fit dimensions (typing, sports, cost) where the reader can self-identify
+- Address aesthetics and identity — where each length wins, and what it visually communicates
+- Close with a decision framework that converts all of the above into a specific recommendation for her situation
+
+**promise_to_deliver:** A definitive, tested verdict on long vs short nails — not another "it's personal preference" shrug.
+
+**exit_state:** Confident and unstuck — she knows exactly which length fits her life right now, and feels equipped to explain why to anyone who asks.
+
+## SECTION 10 — CONTENT STRUCTURE
+**h1:** Long vs Short Nails: Which Is Actually Better in 2026?
+
+**h2_structure:**
+1. Which Nail Length Is Actually Healthier?
+2. Long vs Short Nails: Which Is More Hygienic?
+3. Which Nail Length Is Easier to Live With Day to Day?
+4. Long vs Short Nails for Active Lifestyles and Sports
+5. Which Nail Length Wins for Nail Art and Aesthetics?
+6. Long vs Short Nails: Which Costs More to Maintain?
+7. Which Length Is More Professional?
+8. What Your Hand Shape Says About Your Best Length
+9. The Decision Framework: Which Nail Length Is Right for You?
+
+**word_budget:**
+- introduction: 220 words
+- H2-1 (health): 220 words
+- H2-2 (hygiene): 200 words
+- H2-3 (daily function): 260 words
+- H2-4 (active lifestyle): 220 words
+- H2-5 (aesthetics/art): 280 words — internal link section (spokes)
+- H2-6 (cost): 180 words
+- H2-7 (professional): 220 words
+- H2-8 (hand shape): 220 words
+- H2-9 (decision framework): 240 words
+- conclusion: 180 words
+(Total ≈2440, within ±50 tolerance)
+
+## SECTION 11 — INTERNAL LINKS
+**Cluster links (mandatory, verbatim anchors):**
+| Slug | Anchor Text (verbatim) | Placement |
+|---|---|---|
+| nail-art-for-short-nails | intricate nail art designs that work on short nails | H2-5 (Aesthetics) |
+| simple-nail-designs-for-long-nails | simple nail designs for long nails | H2-5 (Aesthetics) |
+| negative-space-nails-minimalist | negative space nails that look intricate | H2-5 (Aesthetics) |
+| how-long-does-nail-art-take | how long intricate nail art actually takes | H2-3 (Daily function) or H2-5 |
+| low-maintenance-nails-intentional | low-maintenance nails that still look intentional | H2-6 (Cost) or H2-3 |
+
+**Gallery link (cluster-mandated, see Section 2 override note):**
+`https://mirelleinspo.com/inspo/long-vs-short-nails-inspiration-gallery` — anchor: "long vs short nails inspiration gallery" — place in H2-5 or conclusion as a soft visual-exploration nudge, not the primary CTA given show_inspo_gallery_link is false.
+
+**Cross-site link (max 2, relevance-filtered):**
+| URL | Anchor Text | Placement | Type |
+|---|---|---|---|
+| https://mirelleinspo.com/nail-faqs/are-long-nails-bad-for-your-health | what the research actually says about long nails and nail health | H2-1 (Which Nail Length Is Actually Healthier?) | cross-site |
+
+Only 1 cross-site link included — second candidate searches (hand-shape/nail-bed-width content) all sit in reserved `nails-for-*` territory per cluster exclusion list; including one there risks cannibalizing that series' intent. H2-8 (hand shape) stays high-level in this pillar and does not link out to a specific hand-shape spoke, since none is genuinely differentiated enough to pass the strict relevance filter without duplicating that series' job.
+
+**Total internal links: 6** (5 cluster + 1 cross-site) — within 4-6 cap.
+
+## SECTION 12 — VOICE AND TONE
+**recommended_voice:** Confident, decisive guide — the friend who actually answers the question instead of shrugging.
+
+**tone_characteristics:** Direct and verdict-driven (not wishy-washy); warm but not fluffy; data-informed without being clinical; validates the reader's frustration with vague existing content before delivering the real answer; confident enough to declare a winner per dimension without hedging.
+
+**language_style:** Second person throughout ("you," "your hands"). Short, declarative sentences for verdicts ("Short wins here."). Occasional rhetorical question to mirror reader's internal debate. No excessive qualifiers ("might," "could potentially") — commit to statements.
+
+**audience_match:** This audience explicitly rejected "it depends" content — a decisive, structured voice directly answers their stated frustration and differentiates from every competitor's hedge.
+
+## SECTION 13 — EXTERNAL LINKS
+| URL | Context | Anchor Suggestion |
+|---|---|---|
+| https://www.cdc.gov/clean-hands/hcp/clinical-safety/index.html | Hygiene/health dimension — subungual bacteria and handwashing guidance | CDC hand hygiene guidance |
+| https://www.aad.org/public/everyday-care/nail-care-secrets/basics/healthy-nail-tips | Nail health dimension — general nail care standards | American Academy of Dermatology's nail care guidance |
+
+## SECTION 14 — EXECUTION PLAN
+
+### Block 1: Keyword Execution
+- primary_keyword: `long vs short nails`
+- top_3_density_baseline: 3
+- total_mention_target: **5-6 total mentions**
+- first_100_words_plan:
+  - mention_1: sentence 1-2 of introduction — in the opening frustration/promise statement
+  - mention_2: sentence 4-5 of introduction — reinforcing the "real answer" framing before the H2s begin
+- first_half_target: 3-4 mentions (intro through H2-5, ~1,200 words)
+- second_half_target: 2 mentions (H2-6 through conclusion, ~1,200 words)
+- strong_tag_rule: every mention of "long vs short nails" (and direct variant "short vs long nails") wrapped in `<strong>` tags — no exceptions
+- keywords_to_avoid_active: full list from Section 3
+
+### Block 2: Word Budget
+- total_target: 2400 words (±50)
+- introduction: 220
+- conclusion: 180
+- h2_budgets:
+  1. Which Nail Length Is Actually Healthier? — 220 words — medium complexity
+  2. Long vs Short Nails: Which Is More Hygienic? — 200 words — low complexity
+  3. Which Nail Length Is Easier to Live With Day to Day? — 260 words — medium complexity
+  4. Long vs Short Nails for Active Lifestyles and Sports — 220 words — low complexity
+  5. Which Nail Length Wins for Nail Art and Aesthetics? — 280 words — high complexity (3 internal links)
+  6. Long vs Short Nails: Which Costs More to Maintain? — 180 words — low complexity
+  7. Which Length Is More Professional? — 220 words — medium complexity
+  8. What Your Hand Shape Says About Your Best Length — 220 words — medium complexity
+  9. The Decision Framework: Which Nail Length Is Right for You? — 240 words — high complexity (synthesis + framework table/list)
+- tracking_rule: check running total after each H2; cut before moving on if over budget.
+
+### Block 3: Image Plan
+- total_images: 9
+- hero_image: frontmatter only, never in body
+- body_images: 8
+- assignments:
+  1. place_after: introduction — split-screen or side-by-side long vs short nail visual, neutral polish
+  2. place_after: H2-1 (health) — close-up healthy nail plate, natural short-to-medium length
+  3. place_after: H2-3 (daily function) — hands mid-task (typing/holding phone) with visible nail length
+  4. place_after: H2-4 (active lifestyle) — short nails in an active/sport context
+  5. place_after: H2-5 (aesthetics) — long nail art design, intricate, showcasing canvas
+  6. place_after: H2-6 (cost) — simple, low-maintenance manicure
+  7. place_after: H2-7 (professional) — polished short-medium nails in workplace context
+  8. place_after: H2-9 (decision framework) — before/after or length-gradient comparison shot
+- image_type_rule: all body images = inspirational nail design images related to the topic. No infographics, no charts, no diagrams.
+- path_rule: `/images/blog/long-vs-short-nails/long-vs-short-nails/filename.webp`
+
+### Block 4: Opening Technique Assignments
+| Section | Technique |
+|---|---|
+| Introduction | Technique 1 — The Claim ("it depends" is a cop-out; here's the real answer) |
+| H2-1 (Health) | Technique 3 — The Reframe (health isn't about length alone, it's about leverage/breakage) |
+| H2-3 (Daily function) | Technique 1 — The Claim (state the winner up front) |
+| H2-5 (Aesthetics) | Technique 3 — The Reframe (short ≠ boring, long ≠ automatically better art) |
+| H2-7 (Professional) | Technique 1 — The Claim |
+| Conclusion | Technique 3 — The Reframe (there's no universal winner, but there is a winner for you) |
+Ensure no two consecutive H2s repeat the same technique; alternate 1/3 or use a distinct opener (question, scenario, stat) elsewhere as needed.
+
+### Block 5: Link Placements
+| Anchor Text | Full URL | Section | Type |
+|---|---|---|---|
+| intricate nail art designs that work on short nails | /blog/long-vs-short-nails/nail-art-for-short-nails | H2-5 | cluster-spoke |
+| simple nail designs for long nails | /blog/long-vs-short-nails/simple-nail-designs-for-long-nails | H2-5 | cluster-spoke |
+| negative space nails that look intricate | /blog/long-vs-short-nails/negative-space-nails-minimalist | H2-5 | cluster-spoke |
+| how long intricate nail art actually takes | /blog/long-vs-short-nails/how-long-does-nail-art-take | H2-3 | cluster-spoke |
+| low-maintenance nails that still look intentional | /blog/long-vs-short-nails/low-maintenance-nails-intentional | H2-6 | cluster-spoke |
+| long vs short nails inspiration gallery | https://mirelleinspo.com/inspo/long-vs-short-nails-inspiration-gallery | H2-5 or conclusion | gallery |
+| what the research actually says about long nails and nail health | https://mirelleinspo.com/nail-faqs/are-long-nails-bad-for-your-health | H2-1 | cross-site |
+
+### Block 6: AEO/GEO Plan
+| AEO Term | Section | Execution |
+|---|---|---|
+| "Are long nails or short nails better?" | Introduction | Direct 2-3 sentence answer immediately after H1, before H2s begin |
+| "Is it healthier to have long or short nails?" | H2-1 | Direct answer paragraph right after heading |
+| "Are long nails actually dirtier than short nails?" | H2-2 | Direct answer paragraph right after heading |
+| "What nail length is best for typing?" | H2-3 | Direct answer paragraph right after heading |
+| "What's the most professional nail length?" | H2-7 | Direct answer paragraph right after heading |
+
+**GEO entity statements:**
+| Entity | Section | Execution |
+|---|---|---|
+| Free edge | H2-1 or intro | Clear declarative definition: "The free edge is the part of the nail extending past the fingertip — this is what's measured when discussing length." |
+| Onycholysis | H2-1 | Declarative definition: "Onycholysis is when the nail plate separates from the nail bed, more common at longer lengths due to increased leverage." |
+
+### Block 7: Active Constraints
+- em_dash_banned: yes — replace with comma, period, parentheses, or restructure
+- banned_vocab_watch: watch for "game-changer," "elevate," "unleash," "effortless" (overused), "in today's world," "when it comes to" — catch as they form
+- british_english_active: colour, recognise, -ise, -our — every instance
+- keyword_density_reminder: check running "long vs short nails" count after H2-2 and H2-5 and H2-9; verify on track for 5-6 total, denser in first half
+- image_path_reminder: `/images/blog/long-vs-short-nails/long-vs-short-nails/filename.webp`
+- internal_link_url_reminder: full paths only, never bare slugs
+- hero_image_reminder: frontmatter only
+- strong_tag_reminder: scan after every paragraph for primary keyword mentions
