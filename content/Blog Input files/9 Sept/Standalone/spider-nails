@@ -1,0 +1,237 @@
+# INPUT FILE — SPIDER NAILS (SOLO MODE / STANDALONE)
+**THIS FILE IS THE SINGLE SOURCE OF TRUTH FOR THE BLOG GEN AGENT.** All POST_CONSTANTS values are hardcoded — do not ask, adjust, or override. All keywords, H2 structure, audience intelligence, internal links, and tone below must be followed exactly.
+
+## SECTION 2 — POST_CONSTANTS
+- slug: `spider-nails`
+- topic_slug: NONE (standalone — omit topic field entirely)
+- canonical: `https://mirelleinspo.com/blog/spider-nails`
+- post_type: `standalone`
+- intent: `inspirational` (seasonal/Halloween ideas-roundup flavor, but format and journey governed by inspirational rules)
+- word_count: **2400** (top-3 competitor average body text is near-zero — pure galleries with captions only; setting above thin floor to genuinely out-serve them with real substance while staying inspirational-paced, not turning into a tutorial)
+- image_count: **9** (rule_5_everything_else → sub_rule_a_inspirational, since show_inspo_gallery_link = true)
+- show_inspo_gallery_link: **true**
+- template: `center`
+- hero_dimensions: `1200x630`
+- category: `Fall/Autumn` (Halloween/seasonal nail art)
+- publish_date: 2026-08-15
+- author: jyoti-mirelle
+
+## SECTION 4 — SERP ANALYSIS
+**competitor_gaps** (demand-validated 2+ sources):
+- No nail-shape pairing guidance (almond/coffin/stiletto/short shown in images but never explained) — confirmed via Pinterest + Nailsblaze category structure
+- No how-long-does-it-last / removal / at-home vs salon cost breakdown — confirmed via Amazon reviews + product listings
+- No FAQ section anywhere (Nailsblaze has an empty FAQ placeholder; Nailspiration/Nerd About Town have none)
+- No beginner-friendly "easiest design to start with" guidance — confirmed via YouTube tutorial demand + autocomplete
+- No skin tone / color-pairing advice for spider web colors
+- No product/tool naming (spider gel vs striping brush vs stamping plate) — confirmed via GMA article + NailSkillz + Insight Cosmetics
+
+**missing_semantic_territory:** "spider gel" as a named technique, nail shape modifiers (almond, coffin, stiletto, short), glow-in-the-dark and 3D as distinct sub-styles, DIY vs professional application, longevity/wear-time.
+
+**our_strategic_approach:** Where every competitor is a pure image dump with one-line captions, this post pairs the same visual abundance with genuinely useful buying/DIY context — nail shape pairing, technique names, longevity, and a real FAQ — so readers get inspiration AND enough practical grounding to actually recreate or request the look.
+
+**recommended_image_count_validation:** Confirmed — all 3 top competitors are 30-50+ image galleries; 9 images (1 hero + 8 body) keeps this post visually rich without competing on raw volume, differentiating instead on depth per image.
+
+**top_3_word_count_estimates:** ~150-400 words of actual prose (rest is captions/nav) across nailspiration.com, nerdabouttown.com, nailsblaze.com. Floor is negligible; word_count set well above floor for real differentiation.
+
+**top_3_keyword_density_baseline:** ~4 mentions average (title + intro + scattered captions/H2 labels).
+
+## SECTION 5 — AUDIENCE INTELLIGENCE
+**who_they_are:** Halloween/fall nail art enthusiasts, mostly browsing Pinterest/Instagram-style, ranging from total beginners wanting press-ons to nail art hobbyists wanting to DIY, plus some booking reference photos for their salon tech.
+
+**what_they_want_from_this_post:** A wide, fresh visual range of spider and spider-web designs across colors/shapes/styles, PLUS enough practical context to know what to ask for or attempt at home.
+
+**what_frustrates_them:** Every existing result is a wall of images with zero explanation — no idea which designs are DIY-easy vs salon-only, no idea what "spider gel" even is, no guidance on their own nail shape/length, no FAQ for basic questions.
+
+**top_5_pain_points:**
+1. Don't know the difference between spider gel, hand-painted, and press-on approaches
+2. Unsure which designs suit short nails vs long/stiletto/coffin shapes
+3. Want to know if it's DIY-doable or requires a salon visit
+4. No idea how long spider nail art actually lasts before chipping/needing removal
+5. Want fresh, non-repetitive designs beyond the standard black/orange web
+
+**exact_user_phrases:** "spider gel," "how to do spider web nails," "easy spider nail art," "spider web nail art tutorial," "3d spider nails," "glow in the dark spider nails," "spider nails press on," "realistic spider nail art," "cat eye spider nails," "spider web nails short nails," "spider nail designs Halloween," "spider web nail art step by step"
+
+**intent_content_signals:** Wants visual variety over volume for volume's sake; responds well to named techniques (spider gel, hand-painted, stamping); appreciates shape/length-specific callouts; wants quick practical notes (DIY vs pro, wear time) woven near images, not buried in a wall of text; FAQ format satisfies leftover questions efficiently.
+
+## SECTION 6 — SEMANTIC KEYWORD DATA
+- **primary_keyword:** spider nails
+- **keyword_variations:** spider nail art, spider nail designs, spider web nails, spider nail ideas, spider manicure, spider nail designs Halloween, spider web nail designs
+- **cluster_keywords:** spider gel nails, 3D spider nails, spider web French tips, glow-in-the-dark spider nails, cat eye spider nails, realistic spider nail art, Halloween spider manicure, black and orange spider nails, negative space spider web, spider web stiletto nails, spider web almond nails, spider web coffin nails, short spider nails, spider nail press-ons, hand-painted spider nails
+- **lsi_terms:** spider gel technique, striping brush, nail stamping plate, negative space French, hyper-realistic spider, chrome spider web, glitter spider web, 3D acrylic spider, cobweb nail art, Halloween nail trend, spooky season manicure, at-home nail art, salon-quality spider design, UV/LED gel cure, spider web accent nail, dotting tool spider body, elastic gel lines, top coat seal, DIY Halloween manicure, spider nail longevity
+- **aeo_terms:** "How do you do spider web nails at home?", "What is spider gel for nails?", "How long do spider nail designs last?", "What nail shape works best for spider web designs?", "Can you get spider nails without acrylics?", "Is spider gel the same as regular nail polish?", "How do you make a spider web nail design easy?", "What colors work best for spider nails besides black and orange?"
+- **technical_terms:** spider gel, striping brush, dotting tool, negative space technique, 3D acrylic sculpting, UV/LED cure, nail stamping plate, no-wipe top coat
+- **user_language:** "spooky season," "creepy crawly," "cute not scary," "goes with my costume," "easy to do myself," "don't want anything too much," "want it to last," "something different than black and orange"
+
+**total_mention_target:** 4 (baseline) + 3 = **7 total mentions**
+**first_100_words_rule:** primary keyword appears twice in first 100 words — mandatory
+
+## SECTION 7 — VOICE & AI QUERIES
+1. How do you do spider web nails at home?
+2. What is spider gel and how is it different from regular polish?
+3. How long do spider nail designs typically last?
+4. What's the easiest spider nail design for a beginner?
+5. Can you get realistic 3D spider nails without acrylics?
+6. What nail shape looks best with spider web designs?
+7. Are spider web nails only for Halloween?
+8. What colors work well for spider nails besides black and orange?
+9. Do spider web nails work on short nails?
+10. How do you make a spider web nail design without smudging it?
+11. What tools do I need for spider gel nail art?
+12. Can I get spider nails done as press-ons instead of at a salon?
+13. How much does a spider nail design cost at a salon?
+14. What's the difference between spider gel and striping gel?
+15. How do you remove 3D spider nail art safely?
+
+## SECTION 8 — HOOK AND CTR
+- **selected_trigger:** Trigger 2 — FOMO/Trend Urgency
+- **trigger_rationale:** Reader is trend-aware, browsing for fresh Halloween nail inspiration and fears missing the freshest/most-saved designs this season.
+- **title:** Spider Nails: 30 Spooky-Chic Designs to Try in 2026
+- **title_char_count:** 57
+- **meta_description:** Spider nails are the spookiest Halloween trend of 2026. See 30 fresh designs, learn spider gel basics, and find the perfect style for your nail shape.
+- **meta_char_count:** 152
+- **intro_hook_brief:** Open by naming spider nails as this season's most-saved Halloween trend, promising a wide range of styles beyond the basic black-and-orange web — then immediately deliver visual proof.
+- **first_h2_hook_direction:** Phrase the first H2 as a voice-search style question that confirms "what even is spider gel" before diving into visuals — reassures the reader they'll understand what they're looking at.
+
+## SECTION 9 — SEARCH JOURNEY
+- **reader_arrival_state:** Curious and browsing, slightly behind on the trend, wants fresh Halloween nail ideas beyond what she's already seen on Pinterest.
+- **journey_arc:**
+  1. Confirm she's in the right place with a strong trend statement about spider nails this season
+  2. Quickly demystify spider gel/technique basics so the visuals make sense
+  3. Show the widest range of styles first (classic, 3D, glow, chrome, negative space)
+  4. Layer in shape/length-specific guidance so she can picture it on her own hands
+  5. Close with practical DIY-vs-salon and longevity info, then the "this is what to save" moment
+- **promise_to_deliver:** 30 fresh, varied spider nail designs for 2026 plus enough practical grounding to actually get the look.
+- **exit_state:** Inspired, informed, and ready to either book a salon reference photo or attempt it herself.
+
+## SECTION 10 — CONTENT STRUCTURE
+**h1:** Spider Nails: 30 Spooky-Chic Designs to Try in 2026
+
+**h2_structure:**
+1. What Is Spider Gel? (The Technique Behind Most Spider Nail Designs)
+2. Classic Black-and-Orange Spider Web Nails
+3. 3D and Realistic Spider Nail Art
+4. Glow-in-the-Dark and Chrome Spider Nails
+5. Negative Space and French Tip Spider Webs
+6. Best Spider Nail Designs by Nail Shape and Length
+7. Spider Nails Beyond Halloween: Colors That Work Year-Round
+8. DIY vs. Salon: Which Spider Nail Look Can You Do at Home?
+9. How Long Do Spider Nails Last? (Wear Time and Removal)
+10. Spider Nails FAQ
+
+**word_budget:**
+- introduction: 220
+- H2-1 (What Is Spider Gel): 220
+- H2-2 (Classic Black-and-Orange): 260
+- H2-3 (3D and Realistic): 260
+- H2-4 (Glow-in-Dark and Chrome): 240
+- H2-5 (Negative Space/French): 240
+- H2-6 (By Shape/Length): 280
+- H2-7 (Beyond Halloween Colors): 240
+- H2-8 (DIY vs Salon): 220
+- H2-9 (Longevity/Removal): 180
+- H2-10 (FAQ): 260
+- conclusion: 180
+
+## SECTION 11 — INTERNAL LINKS
+No cluster_context.json present (solo mode) — cluster_links empty by definition.
+
+**cross_site_discovery (max 2, strict relevance):**
+1. anchor_text: "how to shape almond nails at home without a drill" | placement: H2-6 (By Shape/Length) | link_type: cross-site | note: relevant if a mirelleinspo.com post on almond nail shaping exists — Blog Gen Agent to verify URL exists before publishing; if unconfirmed, omit rather than invent a link
+2. anchor_text: "easy Halloween nail art ideas beyond spiders" | placement: H2-7 or conclusion | link_type: cross-site | note: same verification caveat — only include if a live, relevant mirelleinspo.com Halloween nails post is confirmed
+
+*(Per solo-mode rule, no live site:mirelleinspo.com search was run against a real property in this research pass — Blog Gen Agent must verify or drop these before publishing. Total internal links currently 0-2, within the 4-6 cap.)*
+
+## SECTION 12 — VOICE AND TONE
+- **recommended_voice:** Confident trend guide — an editor who's seen every spider nail design this season and is curating the best of them for you
+- **tone_characteristics:** Enthusiastic but not breathless; specific over vague ("hand-painted 3D spider" not "so cute"); reassuring for DIY-curious readers; a little playful with the spooky-season energy; never condescending about beginner questions
+- **language_style:** Direct second-person ("you"), short punchy sentences for visual transitions, slightly longer sentences for the practical/FAQ sections, no forced puns
+- **audience_match:** This reader wants to feel like she's getting insider trend knowledge, not a generic listicle — the voice should feel like a nail-obsessed friend who also happens to know the technical terms
+
+## SECTION 13 — EXTERNAL LINKS
+1. url: https://www.byrdie.com (referenced via search: "23 Spider Nail Art Ideas for a Subtly Spooky Mani") | context: cite for celebrity spider nail examples (Megan Thee Stallion, Vanessa Hudgens) if discussing trend momentum | anchor_suggestion: "recent celebrity spider nail moments"
+2. url: https://www.goodmorningamerica.com (GMA spider web nail art tutorial feature) | context: cite when referencing professional technique validation for spider gel application | anchor_suggestion: "professional nail technicians recommend"
+
+## SECTION 14 — EXECUTION PLAN
+
+### Block 1: Keyword Execution
+- primary_keyword: spider nails
+- top_3_density_baseline: 4
+- total_mention_target: **7 total mentions**
+- first_100_words_plan:
+  - mention_1: sentence 1-2 of introduction — naming the trend directly
+  - mention_2: sentence 4-5 of introduction — reinforcing before transition to first H2
+- first_half_target: 4 mentions — first ~1200 words
+- second_half_target: 3 mentions — second ~1200 words
+- strong_tag_rule: every one of the 7 mentions wrapped in `<strong>` tags, no exceptions
+- keywords_to_avoid_active: none (solo mode, no cluster file)
+
+### Block 2: Word Budget
+- total_target: 2400 words (±50 tolerance)
+- introduction: 220 | conclusion: 180
+- h2_budgets:
+  1. What Is Spider Gel: 220 words, low complexity
+  2. Classic Black-and-Orange: 260 words, low complexity
+  3. 3D and Realistic: 260 words, medium complexity
+  4. Glow-in-Dark and Chrome: 240 words, low complexity
+  5. Negative Space/French: 240 words, low complexity
+  6. By Shape/Length: 280 words, medium complexity
+  7. Beyond Halloween Colors: 240 words, low complexity
+  8. DIY vs Salon: 220 words, medium complexity
+  9. Longevity/Removal: 180 words, low complexity
+  10. FAQ: 260 words, medium complexity
+- tracking_rule: check running total after every H2; cut before moving on if over budget
+
+### Block 3: Image Plan
+- total_images: 9 (1 hero + 8 body)
+- hero_image: frontmatter only, never in body
+- body_images: 8
+- assignments:
+  1. place_after: H2-1 (What Is Spider Gel) — context: close-up of spider gel technique/tool in action
+  2. place_after: H2-2 (Classic Black-and-Orange) — context: classic web + spider on black nails
+  3. place_after: H2-3 (3D and Realistic) — context: hyper-realistic 3D spider sculpted nail
+  4. place_after: H2-4 (Glow-in-Dark and Chrome) — context: glow-in-dark or chrome spider web design
+  5. place_after: H2-5 (Negative Space/French) — context: negative space French tip with web
+  6. place_after: H2-6 (By Shape/Length) — context: spider web on almond or coffin shape
+  7. place_after: H2-6 (By Shape/Length, second image) — context: spider web on short/round nails
+  8. place_after: H2-7 (Beyond Halloween Colors) — context: non-traditional color spider web (purple, pink, green)
+- image_type_rule: ALL body images = inspirational nail design images only. No infographics, no diagrams, no charts.
+- path_rule: `/images/blog/spider-nails/filename.webp` (no topic_slug segment — standalone post)
+
+### Block 4: Opening Technique Assignments
+- Introduction: Technique 2 (FOMO/Trend statement opener)
+- H2-1 (What Is Spider Gel): Technique 3 (The Reframe — "it's not what you think")
+- H2-2 (Classic Black-and-Orange): Technique 4 (Direct visual promise)
+- H2-3 (3D and Realistic): Technique 1 (The Claim)
+- H2-4 (Glow-in-Dark and Chrome): Technique 3 (The Reframe)
+- H2-5 (Negative Space/French): Technique 4 (Direct visual promise)
+- H2-6 (By Shape/Length): Technique 1 (The Claim)
+- H2-7 (Beyond Halloween Colors): Technique 3 (The Reframe)
+- H2-8 (DIY vs Salon): Technique 1 (The Claim)
+- H2-9 (Longevity/Removal): Technique 4 (Direct visual promise — adapted to practical promise)
+- H2-10 (FAQ): Technique 3 (The Reframe)
+- Conclusion: Technique 1 (The Claim)
+- No two consecutive sections share a technique — verified.
+
+### Block 5: Link Placements
+1. anchor_text: "how to shape almond nails at home without a drill" | full_url: [VERIFY BEFORE USE — mirelleinspo.com] | place_in_section: H2-6 (By Shape/Length) | placement_context: when discussing almond shape pairing | link_type: cross-site
+2. anchor_text: "easy Halloween nail art ideas beyond spiders" | full_url: [VERIFY BEFORE USE — mirelleinspo.com] | place_in_section: H2-7 or conclusion | placement_context: when suggesting other seasonal designs to explore | link_type: cross-site
+
+### Block 6: AEO/GEO Plan
+- aeo_assignments:
+  1. "What is spider gel for nails?" → H2-1 → direct 2-3 sentence answer immediately after heading
+  2. "How long do spider nail designs last?" → H2-9 → direct 2-3 sentence answer immediately after heading
+  3. "What nail shape works best for spider web designs?" → H2-6 → direct 2-3 sentence answer immediately after heading
+  4. "Can you get spider nails without acrylics?" → H2-3 or FAQ → direct answer
+- geo_entity_statements:
+  1. entity: "spider gel" → H2-1 → clear declarative definition sentence, confident, no hedging
+  2. entity: "negative space technique" → H2-5 → clear declarative definition sentence
+
+### Block 7: Active Constraints
+- em_dash_banned: no long em dash anywhere; replace with comma, new sentence, parentheses, "but," or restructure
+- banned_vocab_watch: watch for "elevate," "unleash," "game-changer," "must-have," "stunning" (overused in this niche per competitor research), "effortlessly," "elegance"
+- british_english_active: colour, recognise, -ise, -our — every instance
+- keyword_density_reminder: count mentions after every 2 H2s; verify on track for 7 total, denser in first half
+- image_path_reminder: `/images/blog/spider-nails/filename.webp` — no topic_slug segment
+- internal_link_url_reminder: full paths only; verify cross-site URLs exist before publishing or omit
+- hero_image_reminder: frontmatter only, never in body
+- strong_tag_reminder: every primary keyword mention wrapped in `<strong>` tags
