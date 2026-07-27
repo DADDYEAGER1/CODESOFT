@@ -1,0 +1,155 @@
+{
+  "cluster_metadata": {
+    "cluster_topic": "Aesthetic Core Nails (Boho, Cottagecore, Fairycore)",
+    "topic_slug": "aesthetic-core-nails",
+    "target_audience": "Global, Tier 1 countries",
+    "total_posts": 3,
+    "intent_breakdown": {
+      "informational": 0,
+      "inspirational": 0,
+      "tutorial": 0,
+      "comparison": 0,
+      "seasonal_trend": 0,
+      "aesthetic_identity": 3
+    },
+    "pillar_post_slug": "boho-nails",
+    "created_date": "2026-07-27",
+    "additional_instructions": [
+      "inspiration_gallery_link: false — this cluster has NO inspiration gallery page. Do not generate, reference, or link to any /inspo/[pillar-slug]-inspiration-gallery URL anywhere in this cluster. The pillar's internal_links object intentionally omits gallery_link entirely.",
+      "intent_diversity_rule waived by user for this cluster — all 3 posts share a single intent type (aesthetic_identity) instead of the standard 3-type minimum. This was an explicit user decision, consistent with how the hiking-outdoor-nails cluster was handled."
+    ]
+  },
+  "existing_site_posts_excluded": [
+    {
+      "url": "https://mirelleinspo.com/blog/festival-nails/glastonbury-nails",
+      "title": "Glastonbury Nails: Festival-Ready Looks for 2026",
+      "inferred_primary_keyword": "glastonbury nails",
+      "inferred_intent": "seasonal_trend",
+      "exclusion_reason": "Already exists on mirelleinspo.com — uses 'boho' and 'boho festival nail ideas' descriptively as a sub-element, but does not own the standalone 'boho nails' keyword. Logged to prevent overlap; Boho Nails pillar must differentiate from the festival-first framing used here."
+    },
+    {
+      "url": "https://mirelleinspo.com/blog/zodiac-nails/sagittarius-nails",
+      "title": "Sagittarius Nails: Bold Designs for the Fire Sign",
+      "inferred_primary_keyword": "sagittarius nails",
+      "inferred_intent": "aesthetic_identity",
+      "exclusion_reason": "Already exists on mirelleinspo.com — uses 'boho nail art' descriptively within a zodiac-first framing. Does not own the standalone 'boho nails' keyword. Logged to prevent overlap."
+    },
+    {
+      "url": "https://mirelleinspo.com/blog/aesthetic-nails/quiet-luxury-nails-summer",
+      "title": "Quiet Luxury Nails for Summer 2026",
+      "inferred_primary_keyword": "quiet luxury nails summer",
+      "inferred_intent": "aesthetic_identity",
+      "exclusion_reason": "Already exists on mirelleinspo.com — adjacent aesthetic-identity space, keyword reserved. No direct overlap with boho/cottagecore/fairycore but logged for reference."
+    },
+    {
+      "url": "https://mirelleinspo.com/blog/goth/whimsigoth-nails",
+      "title": "Whimsigoth Nails: Dark, Dreamy Inspo for 2026",
+      "inferred_primary_keyword": "whimsigoth nails",
+      "inferred_intent": "aesthetic_identity",
+      "exclusion_reason": "Already exists on mirelleinspo.com — adjacent aesthetic-identity 'core' space (dark/witchy), keyword reserved. No direct overlap with boho/cottagecore/fairycore but logged for reference."
+    }
+  ],
+  "posts": [
+    {
+      "post_id": 1,
+      "role": "pillar",
+      "title": "Boho Nails",
+      "slug": "boho-nails",
+      "primary_keyword": "boho nails",
+      "intent": "aesthetic_identity",
+      "search_mode": "aesthetic_identity_mode",
+      "suggested_hook_trigger": "Trigger 4 — Identity Mirroring",
+      "search_demand_signals": [
+        "6+ dedicated blog roundups (BTArtbox, Nail Pin, Modern Meets Boho, Nailoria, Shebo Kusiyo, Chase Le Soleil) covering short/long, festival, wedding, and seasonal boho variants",
+        "Pinterest: multiple dedicated boards including a 117+ pin board with named sub-sections",
+        "Lemon8: multiple creator posts with dedicated boho nail hashtags",
+        "PAA-style FAQ content across sources: workplace appropriateness, cost, longevity — signals mature, high-intent search category"
+      ],
+      "why_included": "Broadest, most mature demand of the three — strongest cross-platform validation with clear sub-trend structure (desert boho, crystal boho, dark boho, wedding boho). Distinct from existing site content, which only references boho as a sub-element inside festival and zodiac posts.",
+      "internal_links": {
+        "links_to": [
+          { "slug": "cottagecore-nails", "anchor_text": "cottagecore nail design ideas", "type": "spoke" },
+          { "slug": "fairycore-nails", "anchor_text": "fairycore nail art inspiration", "type": "spoke" }
+        ],
+        "receives_links_from": [
+          { "slug": "cottagecore-nails", "anchor_text": "boho nail ideas" },
+          { "slug": "fairycore-nails", "anchor_text": "boho nail ideas" }
+        ]
+      },
+      "status": "approved"
+    },
+    {
+      "post_id": 2,
+      "role": "spoke",
+      "title": "Cottagecore Nails",
+      "slug": "cottagecore-nails",
+      "primary_keyword": "cottagecore nails",
+      "intent": "aesthetic_identity",
+      "search_mode": "aesthetic_identity_mode",
+      "suggested_hook_trigger": "Trigger 4 — Identity Mirroring",
+      "search_demand_signals": [
+        "Pinterest confirms measurable search volume directly on-platform ('902 people searched this', '113 people searched this' on related boards)",
+        "3+ dedicated blog articles (The Mood Guide x2, The Beauty Pursuit, Trendy Mami, Glam, iGel Beauty) with distinct sub-variants: simple, short, dark, acrylic, Valentine's",
+        "Etsy: dedicated 'cottagecore nails' product/market category"
+      ],
+      "why_included": "Distinct rural/domestic-nostalgia aesthetic identity — mushrooms, gingham, wildflowers, vintage florals — separate from boho's desert/festival/free-spirit framing and fairycore's fantasy framing. No existing site post owns this keyword.",
+      "internal_links": {
+        "links_to": [
+          { "slug": "boho-nails", "anchor_text": "boho nail ideas", "type": "pillar" },
+          { "slug": "fairycore-nails", "anchor_text": "fairycore nail art inspiration", "type": "spoke" }
+        ],
+        "receives_links_from": [
+          { "slug": "boho-nails", "anchor_text": "cottagecore nail design ideas" },
+          { "slug": "fairycore-nails", "anchor_text": "cottagecore nail design ideas" }
+        ]
+      },
+      "status": "approved"
+    },
+    {
+      "post_id": 3,
+      "role": "spoke",
+      "title": "Fairycore Nails",
+      "slug": "fairycore-nails",
+      "primary_keyword": "fairycore nails",
+      "intent": "aesthetic_identity",
+      "search_mode": "aesthetic_identity_mode",
+      "suggested_hook_trigger": "Trigger 4 — Identity Mirroring",
+      "search_demand_signals": [
+        "Pinterest confirms measurable search volume directly on-platform ('217 people searched this' on dedicated fairycore aesthetic board)",
+        "Makeup.com: dedicated '10 Fairycore Nail Ideas to Try' article",
+        "Multiple Pinterest sub-boards: forest fairy, garden fairy, fairy dust, fairy light nail art — each with distinct pin volume"
+      ],
+      "why_included": "Distinct fantasy/magic-driven aesthetic identity — luna moths, iridescent finishes, enchanted forest motifs — separate from cottagecore's grounded rural framing. No existing site post owns this keyword.",
+      "internal_links": {
+        "links_to": [
+          { "slug": "boho-nails", "anchor_text": "boho nail ideas", "type": "pillar" },
+          { "slug": "cottagecore-nails", "anchor_text": "cottagecore nail design ideas", "type": "spoke" }
+        ],
+        "receives_links_from": [
+          { "slug": "boho-nails", "anchor_text": "fairycore nail art inspiration" },
+          { "slug": "cottagecore-nails", "anchor_text": "fairycore nail art inspiration" }
+        ]
+      },
+      "status": "approved"
+    }
+  ],
+  "keyword_ownership_registry": {
+    "description": "Master list of all primary keywords — one per post, no overlaps, includes existing site posts",
+    "entries": [
+      { "primary_keyword": "boho nails", "owned_by_slug": "boho-nails", "owned_by_title": "Boho Nails", "source": "new post" },
+      { "primary_keyword": "cottagecore nails", "owned_by_slug": "cottagecore-nails", "owned_by_title": "Cottagecore Nails", "source": "new post" },
+      { "primary_keyword": "fairycore nails", "owned_by_slug": "fairycore-nails", "owned_by_title": "Fairycore Nails", "source": "new post" },
+      { "primary_keyword": "glastonbury nails", "owned_by_slug": "glastonbury-nails", "owned_by_title": "Glastonbury Nails: Festival-Ready Looks for 2026", "source": "existing site post" },
+      { "primary_keyword": "sagittarius nails", "owned_by_slug": "sagittarius-nails", "owned_by_title": "Sagittarius Nails: Bold Designs for the Fire Sign", "source": "existing site post" },
+      { "primary_keyword": "quiet luxury nails summer", "owned_by_slug": "quiet-luxury-nails-summer", "owned_by_title": "Quiet Luxury Nails for Summer 2026", "source": "existing site post" },
+      { "primary_keyword": "whimsigoth nails", "owned_by_slug": "whimsigoth-nails", "owned_by_title": "Whimsigoth Nails: Dark, Dreamy Inspo for 2026", "source": "existing site post" }
+    ]
+  },
+  "merged_posts_log": [],
+  "killed_posts_log": [
+    {
+      "topic": "Coastal Grandmother Nails",
+      "reason": "Weaker demand signal than the other three — Pinterest boards exist but no dedicated blog roundup found (unlike boho/cottagecore/fairycore, which each have 3+). Also carries real cannibalization risk against existing site posts /blog/beach-nails and /blog/aesthetic-nails/quiet-luxury-nails-summer. User elected to drop it and keep the cluster to the three strongest, cleanest opportunities."
+    }
+  ]
+}
