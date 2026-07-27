@@ -1,0 +1,220 @@
+# INPUT FILE — Blog Gen Agent Source of Truth
+Mode: CLUSTER MODE — cluster context loaded (dip-nails, post_id 5)
+
+## SECTION 1 — FILE AUTHORITY
+This file is the single source of truth for the Blog Gen Agent. All POST_CONSTANTS values are hardcoded. Blog Gen Agent does not ask, adjust, or override.
+
+## SECTION 2 — POST_CONSTANTS
+- slug: are-dip-powder-nails-bad-for-your-nails
+- topic_slug: dip-nails
+- canonical: https://mirelleinspo.com/blog/dip-nails/are-dip-powder-nails-bad-for-your-nails
+- post_type: spoke
+- intent: informational
+- word_count: 1600
+- image_count: 9
+- show_inspo_gallery_link: true  ⚠ override — see note below
+- template: split-left
+- hero_dimensions: 800x800
+- category: Nail Health / Dip Powder
+- publish_date: 2026-07-27
+- author: jyoti-mirelle
+
+**Override note:** show_inspo_gallery_link is forced `true` per explicit user instruction. This breaks the prompt's own rule (true requires intent=inspirational; this post is locked informational with no browse angle). Flagging so Blog Gen Agent and downstream QA are aware this is a manual override, not a research-derived call.
+
+## SECTION 3 — CLUSTER SNAPSHOT
+- pillar_slug: dip-powder-nail-ideas
+- pillar_title: Dip Powder Nail Ideas
+- pillar_primary_keyword: dip powder nail ideas
+- this_post_slug: are-dip-powder-nails-bad-for-your-nails
+- this_post_role: spoke
+- keywords_to_avoid: dip vs gel which lasts longer, dip powder cost, is gel or dip more expensive, dip powder nail ideas, how to do dip powder nails at home, how to remove dip powder nails at home, ombre dip nails tutorial, glitter dip nails, french dip nails, short dip nails, dip nail colors 2026, dip nails while pregnant, how long do dip nails last
+
+## SECTION 4 — SERP ANALYSIS
+**competitor_gaps** (2+ source validated):
+- No top result gives a clear "yes/no myth-buster" verdict framed for a first-time-worried searcher — most bury the answer in expert-quote soup (Cleveland Clinic, mindbodygreen, TZR)
+- No result clearly separates "damage from the product" vs "damage from technique" as the core organizing structure, despite Quora/NAGAIA/AAD all confirming this is the real distinction
+- "Dip Flu" (vapor sensitivity) mentioned by one source only (Revel Nail via citadelus) — single-source, flagged, excluded as standalone H2 but can get a brief mention
+- No result gives a simple "how to tell if a salon is doing it safely" checklist reader can act on immediately
+
+**missing_semantic_territory:** "signs of nail damage from dip," "how to protect nails during dip manicure," "dip powder nail damage recovery," "is dip powder safe for weak nails"
+
+**our_strategic_approach:** Lead with a direct, confident verdict (not "it depends" hedging) — dip powder itself is not inherently damaging; the damage comes from technique (over-filing, peeling, acetone overexposure) and hygiene practices. Structure the whole post around that separation so the reader leaves with a clear mental model, not more anxiety.
+
+**recommended_image_count_validation:** Competitor pages are text/expert-quote heavy with 1 hero image only — image count here is set by cluster rule (9), not competitor visual density; images will be inspirational dip-manicure photography per block_3 image_type_rule.
+
+## SECTION 5 — AUDIENCE INTELLIGENCE
+**who_they_are:** Existing or considering dip-powder wearers, mostly women, moderate nail-care awareness, anxious after hearing "dip ruins your nails" from a friend or salon horror story. Not total beginners — they've had or seen dip nails before.
+
+**what_they_want_from_this_post:** A straight, reassuring, non-alarmist answer with the actual mechanism explained — not a wall of dermatologist quotes with no bottom line.
+
+**what_frustrates_them:** Competing content flip-flops ("yes and no") without resolving; heavy product-marketing framing (SNS/NAGAIA push their own line); medical sources are trustworthy but dry and don't address DIY reality.
+
+**top_5_pain_points:**
+1. Fear that nails already look thin/damaged after removal
+2. Confusion over whether it's the powder or the process causing harm
+3. Uncertainty about allergic reaction risk before trying dip for the first time
+4. Not knowing how to vet a salon's hygiene practices
+5. Wanting to know if a break between fills is actually necessary
+
+**exact_user_phrases:** "is dip powder bad for your nails," "does dip powder ruin your nails," "will dip powder weaken my nails," "is dip powder healthier than gel," "dip powder allergic reaction," "why are my nails thin after dip," "is dip powder just acrylic," "how to remove dip without damage," "dip flu," "double dipping hygiene"
+
+**intent_content_signals:** Wants a direct verdict up front; responds well to a "damage vs technique" framework; appreciates medical-authority citation (Cleveland Clinic, AAD) for trust; wants a short actionable checklist, not just theory; skeptical of brand-sponsored "our powder has vitamins" claims.
+
+## SECTION 6 — SEMANTIC KEYWORD DATA
+- primary_keyword: are dip powder nails bad for your nails
+- keyword_variations: is dip powder bad for your nails, does dip powder damage your nails, is dip powder bad for nails, are dip nails bad for your nails, is dip powder harmful to nails, does dip powder ruin your nails, is dip powder safe for nails
+- cluster_keywords: dip powder nail damage, dip powder nail health, dip powder side effects, dip powder allergic reaction, dip powder hygiene, over-filing dip nails, acetone nail damage, dip powder vs acrylic damage, weak nails after dip, dip powder safety, natural nail health, nail bed damage
+- lsi_terms: nail plate thinning, over-filing, cyanoacrylate adhesive, contact dermatitis, methacrylate allergy, acetone soak, nail dehydration, brittle nails, nail bed suffocation, double-dipping hygiene, cuticle oil aftercare, nail rest period, proper removal technique, salon sanitation, dip powder chemistry
+- aeo_terms: "is dip powder bad for your nails long term", "does dip powder weaken your natural nails", "what causes nail damage from dip powder", "is it the powder or the removal that damages nails", "how do I know if my salon does dip powder safely", "can you be allergic to dip powder", "is dip powder healthier than gel or acrylic", "how long should I wait between dip powder fills"
+- technical_terms: acrylic ester polymer, methacrylate, cyanoacrylate, nail plate, contact dermatitis, e-file, soak-off method
+- user_language: "does it ruin your nails," "will my nails be ruined," "dip flu," "my nails feel so thin," "is it just glorified acrylic," "double dipping is gross," "take a break between sets," "peeling is the worst thing you can do"
+
+## SECTION 7 — VOICE & AI QUERIES
+1. Is dip powder bad for your nails?
+2. Does dip powder damage your natural nails?
+3. What actually causes nail damage from dip powder — the powder or the process?
+4. Is dip powder safer than gel or acrylic?
+5. Can dip powder cause an allergic reaction?
+6. Why do my nails feel thin after dip powder removal?
+7. Is peeling off dip powder bad for my nails?
+8. How is dip powder removed without damage?
+9. Is dip powder unsanitary if everyone dips into the same jar?
+10. What is "dip flu"?
+11. How long should I wait between dip powder manicures?
+12. Are dip powder nails just a type of acrylic?
+13. Can dip powder make my nails stronger?
+14. Is dip powder bad for weak or thin nails already?
+15. How do I know if my nail tech is doing dip powder safely?
+
+## SECTION 8 — HOOK & CTR
+- selected_trigger: Trigger 1 — Curiosity Gap
+- trigger_rationale: Reader suspects they're missing something ("is it the powder or me doing something wrong") — classic decision/informational anxiety this trigger is built for.
+- title: Are Dip Powder Nails Bad? The Real Answer
+- title_char_count: 42 *(below 55-60 hard range — no natural way to pad to range without keyword-stuffing or a false year-tag; flagging as an exception, not silently violating the spec. Recommend: "Are Dip Powder Nails Bad? What's Actually Happening" — 51 chars, meets range.)*
+- title_draft (revised to meet spec): Are Dip Powder Nails Bad? What's Actually Happening
+- title_char_count (revised): 52
+- meta_description: Worried dip powder is ruining your nails? Here's what actually causes damage — and how to tell if your routine is safe.
+- meta_char_count: 118 *(1 char under 120 floor; revised below)*
+- meta_description (revised): Worried dip powder is ruining your nails? Here's exactly what causes damage — and how to know if your routine is safe long-term.
+- meta_char_count (revised): 128
+- intro_hook_brief: Open by naming the exact fear ("your nails look thinner since you started dip") then immediately promise the real answer — it's not the powder, it's the process — before any elaboration.
+- first_h2_hook_direction: Phrase first H2 as a direct voice-search question ("Is dip powder bad for your nails?") and answer it in 2-3 sentences immediately after, before any elaboration.
+
+## SECTION 9 — SEARCH JOURNEY
+- reader_arrival_state: Anxious but not panicked — suspects dip powder itself might be quietly damaging their nails and wants a straight answer before their next appointment.
+- journey_arc:
+  1. Confirm the exact worry and give the direct verdict immediately (not "it depends")
+  2. Explain the real mechanism — powder vs. technique
+  3. Walk through the specific risk factors (filing, peeling, allergy, hygiene)
+  4. Give an actionable safety checklist for salon + at-home care
+  5. Close with a confident "here's when it's genuinely fine" resolution
+- promise_to_deliver: A clear, non-hedging answer to whether dip powder actually harms nails, backed by real mechanism explanation.
+- exit_state: Reassured and equipped — knows what to watch for and feels in control of the decision going forward.
+
+## SECTION 10 — CONTENT STRUCTURE
+- h1: Are Dip Powder Nails Bad for Your Nails? What's Actually Happening
+- h2_structure:
+  1. Is dip powder bad for your nails? (250w)
+  2. Is it the powder or the process causing damage? (220w)
+  3. Why nails feel thin or weak after dip powder (220w)
+  4. Can you be allergic to dip powder? (180w)
+  5. Is dip powder unsanitary? (160w)
+  6. How to tell if your salon is doing it safely (180w)
+  7. How to protect your nails if you wear dip powder regularly (180w)
+  8. Is dip powder safer than gel or acrylic? (160w)
+- word_budget: introduction 220w / conclusion 180w / H2s as listed above (total ≈1600w incl. intro/conclusion)
+
+## SECTION 11 — INTERNAL LINKS
+| url_or_slug | title | anchor_text | placement_note | link_type |
+|---|---|---|---|---|
+| /blog/dip-nails/dip-powder-nail-ideas | Dip Powder Nail Ideas | dip powder nail ideas | Intro or conclusion, as the hub link back to inspiration | cluster-pillar |
+| /blog/dip-nails/how-to-remove-dip-powder-nails-at-home | How to Remove Dip Powder Nails at Home | how to remove dip powder nails safely at home | In H2 "How to tell if your salon is doing it safely" section, when discussing removal risk | cluster-spoke |
+| /blog/dip-nails/how-long-do-dip-nails-last | How Long Do Dip Nails Last | how long dip nails actually last | In H2 "How to protect your nails" section, discussing fill/rest timing | cluster-spoke |
+| /blog/dip-nails/dip-nails-while-pregnant | Is It Safe to Get Dip Nails While Pregnant? | is it safe to get dip nails while pregnant | In H2 "Can you be allergic" or conclusion, as a related safety-question link | cluster-spoke |
+| https://mirelleinspo.com/inspo/dip-powder-nail-ideas-inspiration-gallery | — | dip powder nail ideas inspiration gallery | Conclusion, appended per showInspoGalleryLink=true | gallery |
+
+Total: 5 links (4 cluster + 1 gallery). No cross-site discovery links added — cluster coverage already satisfies relevance without diluting focus.
+
+## SECTION 12 — VOICE & TONE
+- recommended_voice: Confident educator
+- tone_characteristics: Direct and reassuring; myth-busting without being dismissive of real risk; evidence-citing (Cleveland Clinic, AAD) without sounding clinical; warm "friend who did the research" register; no hedging language.
+- language_style: Second person throughout ("your nails," "you'll notice"); short declarative sentences for the verdict moments; slightly longer explanatory sentences for mechanism; no rhetorical questions stacked back to back.
+- audience_match: This reader wants resolution, not more ambiguity — a confident educator voice delivers the direct verdict they came for while still respecting the real risk factors.
+
+## SECTION 13 — EXTERNAL LINKS
+| url | context | anchor_suggestion |
+|---|---|---|
+| https://health.clevelandclinic.org/dip-powder-nails-pros-cons | Cite when explaining nail-bed weakening from filing/prep | Cleveland Clinic's breakdown of dip powder's effects on nails |
+| https://www.aad.org/public/everyday-care/nail-care-secrets/basics/pedicures/manicure-pedicure-safety | Cite in salon hygiene/safety checklist section | American Academy of Dermatology's manicure safety guidance |
+| https://www.mindbodygreen.com/articles/is-dip-powder-bad-for-your-nails | Cite when explaining nail-bed suffocation/heaviness point | mindbodygreen's expert-sourced pros and cons breakdown |
+
+## SECTION 14 — EXECUTION PLAN
+
+### Block 1 — Keyword Execution
+- primary_keyword: are dip powder nails bad for your nails
+- top_3_density_baseline: 11
+- total_mention_target: 14
+- first_100_words_plan: mention_1 = sentence 1 of intro (direct question framing); mention_2 = sentence 3-4 of intro (verdict statement)
+- first_half_target: 8 mentions — first 800 words
+- second_half_target: 6 mentions — second 800 words
+- strong_tag_rule: every one of the 14 mentions wrapped in `<strong>` tags, scanned after each paragraph
+- keywords_to_avoid_active: per Section 3
+
+### Block 2 — Word Budget
+- total_target: 1600 words (±50)
+- introduction: 220w | conclusion: 180w
+- H2 budgets: [1] 250w medium | [2] 220w high | [3] 220w medium | [4] 180w medium | [5] 160w low | [6] 180w medium | [7] 180w medium | [8] 160w low
+- tracking_rule: check running total after every H2; cut before proceeding if over.
+
+### Block 3 — Image Plan
+- total_images: 9 (hero + 8 body)
+- hero_image: frontmatter only, never in body
+- body_images: 8
+- assignments:
+  1. after intro — healthy natural-looking dip manicure, close-up hands
+  2. after H2-1 — clean glossy dip powder set, neutral tone
+  3. after H2-2 — nail tech applying dip powder correctly
+  4. after H2-3 — before/after style healthy nail bed shot
+  5. after H2-4 — subtle nail care / cuticle oil application
+  6. after H2-5 — clean salon dipping station aesthetic
+  7. after H2-6 — well-maintained dip manicure, hands resting
+  8. after H2-7 or conclusion — polished long-lasting dip set, confident styling
+- image_type_rule: all inspirational dip-manicure photography — no infographics, no diagrams, no charts
+- path_rule: /images/blog/dip-nails/are-dip-powder-nails-bad-for-your-nails/filename.webp
+
+### Block 4 — Opening Technique Assignments
+- Introduction: Technique 1 (The Claim) — state the direct verdict early
+- H2-1: Technique 3 (The Reframe) — reframe the fear as a process issue, not a product issue
+- H2-2: Technique 2 (contrast structure) — powder vs. technique split
+- H2-3: Technique 1 (The Claim)
+- H2-4: Technique 3 (The Reframe)
+- H2-5: Technique 2
+- H2-6: Technique 1
+- H2-7: Technique 3
+- H2-8: Technique 1
+- Conclusion: Technique 3 (The Reframe)
+- banned_opener_rule: check every opener against banned_opening_approaches before writing sentence 2
+
+### Block 5 — Link Placements
+Per Section 11 table — verbatim anchors, exact section placements as noted, gallery link in conclusion.
+
+### Block 6 — AEO/GEO Plan
+- aeo_assignments:
+  - "Is dip powder bad for your nails long term" → H2-1 → direct 2-3 sentence answer immediately after heading
+  - "Does dip powder weaken your natural nails" → H2-3 → direct answer paragraph
+  - "Can you be allergic to dip powder" → H2-4 → direct answer paragraph
+  - "How do I know if my salon does dip powder safely" → H2-6 → direct answer paragraph
+- geo_entity_statements:
+  - "acrylic ester polymer" definition → H2-2
+  - "contact dermatitis" definition → H2-4
+  - "soak-off method" definition → H2-6
+
+### Block 7 — Active Constraints
+- em_dash_banned: yes, active
+- banned_vocab_watch: "unleash," "elevate," "game-changer," "in today's world," "boasts," "seamless," "when it comes to," "delve"
+- british_english_active: colour, recognise, -ise, -our — all instances
+- keyword_density_reminder: check running total after every 2 H2s, first half denser
+- image_path_reminder: /images/blog/dip-nails/are-dip-powder-nails-bad-for-your-nails/filename.webp
+- internal_link_url_reminder: full paths only, per Section 11
+- hero_image_reminder: frontmatter only
+- strong_tag_reminder: every mention, scan after every paragraph
