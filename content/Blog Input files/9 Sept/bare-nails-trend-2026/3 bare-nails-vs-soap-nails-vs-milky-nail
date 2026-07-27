@@ -1,0 +1,381 @@
+MODE: CLUSTER MODE — cluster context loaded (bare-nails-trend-2026, 7-post cluster)
+
+# SECTION 1 — FILE AUTHORITY
+THIS FILE IS THE SINGLE SOURCE OF TRUTH FOR THE BLOG GEN AGENT. All values in POST_CONSTANTS are hardcoded. Blog Gen Agent does not ask, adjust, or override them. All keywords, H2 structure, audience intelligence, internal links, and tone defined here must be followed exactly.
+
+# SECTION 2 — POST_CONSTANTS
+```
+slug: bare-nails-vs-soap-nails-vs-milky-nails
+topic_slug: bare-nails-trend-2026
+canonical: https://mirelleinspo.com/blog/bare-nails-trend-2026/bare-nails-vs-soap-nails-vs-milky-nails
+post_type: spoke
+intent: comparison
+word_count: 1900
+image_count: 5
+show_inspo_gallery_link: true   [SEE OVERRIDE NOTE BELOW]
+template: split-left
+hero_dimensions: 800x800
+category: Seasonal Nail Trends
+publish_date: 2026-08-03
+author: jyoti-mirelle
+```
+**OVERRIDE NOTE (user-instructed, deviates from standard phase_2 rule):** Comparison intent normally sets `show_inspo_gallery_link = false` by definition (rule_3/rule_4 apply automatically for comparison intent, bypassing the rule_5 branch entirely). Per explicit user instruction, `show_inspo_gallery_link` is forced to **true** for this post — the gallery link WILL render — but `image_count` stays at the comparison-mandated **5** (not 9). This is a deliberate exception to the standard priority order; Blog Gen Agent should not "correct" this back to false or expand images to 9.
+
+# SECTION 3 — CLUSTER SNAPSHOT
+```
+pillar_slug: bare-nails-trend-2026
+pillar_title: Bare Nails: The 2026 Trend Everyone's Talking About
+pillar_primary_keyword: bare nails trend 2026
+this_post_slug: bare-nails-vs-soap-nails-vs-milky-nails
+this_post_role: spoke
+```
+keywords_to_avoid (hard wall — never used as focus terms): bare nails trend 2026, bare nails meaning, how to get bare nails, bare nails aftercare, are bare nails professional, celebrity bare nails, white nails, quiet luxury nails, quiet luxury nail colors, wedding nail trends 2026, funny bunny nails, neutral nails for work, nails for job interview, clear nail polish at work, japanese nail art, professional nails 2026.
+**Additional wall (discovered in SERP research, not in original cluster file):** "soap nails vs milky nails vs glass nails" / "Korean clean-girl manicure" framing is OWNED by existing post `mirelleinspo.com/blog/korean-nails/soap-nails`. Do not reframe this post as a Korean-technique explainer or reuse its "ultrasheer vs cloudy/ivory" phrasing pattern verbatim — differentiate as instructed in section 4.
+
+# SECTION 4 — SERP ANALYSIS
+**competitor_gaps** (2+ sources): No page frames bare nails as a third, newer tier alongside soap/milky in one decision-oriented comparison (PureWow, Mirellé Korean post, WhoWhatWear all stop at soap-vs-milky). No "what to ask your nail tech" decision framework exists despite recurring salon-script sections across sources. No source uses trend-timeline framing (soap 2025 → milky variants → bare 2026).
+
+**missing_semantic_territory:** "which trend is right for me," salon-request phrasing, timeline framing, three-way (not two-way) comparison structure.
+
+**our_strategic_approach:** Frame as a decision guide, not a technique explainer — bare/soap/milky as three points on one minimalist-nail spectrum, exact salon phrasing for each, close with a "which one is you" resolution. Sidesteps the existing Korean-nails post's technique/skin-tone angle entirely.
+
+**recommended_image_count_validation:** Comparison competitors (NSI, DooNails, La Par) use 1 hero + a few side-by-side swatch/finish shots — 5 total aligns.
+
+**top_3_word_count_estimates:** IPSY ~950, Marie Claire UK ~700, NSI ~500 (product-led). Average ≈700. Floor set at 1900 since this post covers three trends plus a decision framework none of them have.
+
+**top_3_keyword_density_baseline:** Competitors rarely use the full three-way phrase verbatim; baseline ≈3 mentions of closest-matching phrase. Mention target = baseline + 3 = 6 total.
+
+# SECTION 5 — AUDIENCE INTELLIGENCE
+**who_they_are:** Someone already fluent in minimalist/clean-girl nail trends (has tried or seen soap nails and milky nails) who's now hearing "bare nails" everywhere in 2026 and isn't sure if it's the same thing rebranded or genuinely different. Likely deciding what to book next or what to ask for at a salon appointment.
+
+**what_they_want_from_this_post:** A clear, confident answer to "are these actually different" plus a simple way to decide which one fits them — not a technical treatise, not shade-matching (that's covered elsewhere on-site).
+
+**what_frustrates_them:** Every existing source explains soap-vs-milky in isolation and either ignores bare nails or mentions it as a throwaway line ("consider them an elevated version of your bare nails"). No one draws the full three-way picture or tells them what to literally say at the salon.
+
+**top_5_pain_points:**
+1. Confusion that these are three different marketing names for the same manicure — validated across IPSY, NSI, La Par, all of whom open by addressing this exact confusion
+2. Not knowing which one to ask for by name (a recurring "how to ask at the salon" section appears across WhoWhatWear, Cosmopolitan/AOL, Marie Claire UK)
+3. Uncertainty about which reads more "done" vs more "natural" for their comfort level
+4. Not knowing that "bare nails" (2026) is the newest/most minimal evolution — several sources still treat soap nails as the current frontier
+5. Wanting one trend that fits multiple contexts (office, wedding, everyday) without re-explaining the difference each time
+
+**exact_user_phrases** (from real Quora/Pinterest/YouTube/editorial research):
+- "your nails but better"
+- "freshly washed hands"
+- "barely-there"
+- "clean girl nails"
+- "what does the soap nails trend really mean"
+- "soap nails vs milk nails"
+- "is that just bare nails with gloss"
+- "bare nails no polish"
+- "which one is actually me"
+- "quiet luxury manicure"
+
+**intent_content_signals:** Reader responds to short declarative definitions per trend (not paragraphs of backstory), side-by-side contrast structure, a recommendation at the end rather than "it depends," salon-script language they can literally repeat to a nail tech.
+
+# SECTION 6 — SEMANTIC KEYWORD DATA
+```
+primary_keyword: bare nails vs soap nails
+keyword_variations: bare nails vs soap nails vs milky nails, soap nails vs milky nails vs bare nails, bare nails or soap nails, difference between bare soap and milky nails, bare nails soap nails comparison
+cluster_keywords: soap nails trend, milky nails trend, clean girl manicure, minimalist nail trends 2026, your-nails-but-better manicure, sheer nail polish trend, barely-there manicure, quiet luxury nails (GENERIC USE ONLY — never as focus term, reserved), nude nail trend, glossy natural nails, translucent nail polish, no-polish manicure
+lsi_terms: sheer vs opaque finish, translucent nail polish, buffed nail shine, high-gloss top coat, bubble bath nail polish, milky white base coat, nail undertone, clean girl aesthetic, salon request script, minimalist manicure spectrum, natural nail bed, wet-look finish, opacity level, nail trend timeline, low-maintenance manicure, effortless manicure
+aeo_terms: What is the difference between bare nails and soap nails?, Are soap nails and milky nails the same thing?, What should I ask for at the salon for bare nails?, Is bare nails just soap nails without color?, Which is more natural, soap nails or bare nails?, What's the difference between soap nails and milky nails?, Do bare nails require any polish at all?, Which minimalist nail trend lasts longest?
+technical_terms: sheer polish, opaque base, high-gloss top coat, builder gel (BIAB), buffed nail plate, translucent pigment
+user_language: your nails but better, freshly washed hands look, barely-there, clean girl nails, soap nails vs milk nails, is that just bare nails with gloss, which one is actually me, quiet luxury manicure, bare nails no polish, effortless mani
+```
+
+# SECTION 7 — VOICE AND AI QUERIES
+1. What's the actual difference between bare nails and soap nails?
+2. Are soap nails and milky nails the same manicure with different names?
+3. Which minimalist nail trend should I ask for at the salon?
+4. Is the bare nails trend just soap nails without any color?
+5. What do I say to my nail tech to get soap nails specifically?
+6. Do bare nails mean no polish at all, or just very sheer polish?
+7. Which trend looks more natural, bare nails or milky nails?
+8. Is milky nails more opaque than soap nails?
+9. Can I combine bare, soap, and milky in one manicure?
+10. Which of these three trends lasts the longest before chipping shows?
+11. Is bare nails the 2026 version of the soap nails trend?
+12. What's the easiest of the three to do at home?
+13. Which one is best for someone who wants zero maintenance?
+14. How do I know if I actually want bare nails or just a sheer polish?
+15. Is there a trend after milky nails and soap nails?
+
+# SECTION 8 — HOOK AND CTR
+```
+selected_trigger: Trigger 1 — Curiosity Gap
+trigger_rationale: Decision-mode readers already suspect these three trends overlap and want the "actual" answer, not more vague trend coverage — curiosity gap resolves that suspicion directly.
+title: Bare Nails vs Soap Nails: The Real Difference in 2026
+title_char_count: 56
+meta_description: Bare nails, soap nails, milky nails — are they the same? Here's the real difference, plus which one to ask for at your next appointment.
+meta_char_count: 138
+intro_hook_brief: Open by naming the exact confusion (three trend names, one Instagram feed) before resolving it — signal immediately that this post gives the direct answer competitors dodge.
+first_h2_hook_direction: Phrase the first H2 as a voice-search-style direct question ("Are Bare Nails, Soap Nails, and Milky Nails the Same Thing?") and answer it in the first two sentences beneath it.
+```
+
+# SECTION 9 — SEARCH JOURNEY
+```
+reader_arrival_state: Mildly confused and slightly skeptical — suspects these three "trends" might just be one trend with three names, wants a straight answer before booking or buying anything.
+journey_arc:
+- Confirm upfront these are genuinely different, not marketing spin
+- Break down each of the three on its own terms (finish, opacity, vibe)
+- Put them side by side directly against each other
+- Give a simple decision framework / salon script for each
+- Close with permission to pick based on personality, not "correctness"
+promise_to_deliver: A clear, confident answer to what separates bare nails, soap nails, and milky nails — with enough specificity to book the right one.
+exit_state: Reader feels resolved and slightly smarter than before — she knows exactly which term to say out loud at her next appointment.
+```
+
+# SECTION 10 — CONTENT STRUCTURE
+```
+h1: Bare Nails vs Soap Nails vs Milky Nails: What's the Difference
+h2_structure:
+1. Are Bare Nails, Soap Nails, and Milky Nails the Same Thing?
+2. What Are Bare Nails, Exactly?
+3. What Are Soap Nails, Exactly?
+4. What Are Milky Nails, Exactly?
+5. Bare vs Soap vs Milky: Side-by-Side Comparison
+6. Which One Should You Ask For at the Salon?
+7. Which Trend Actually Fits You?
+
+word_budget:
+introduction: 220
+conclusion: 180
+per_h2:
+  - "Are Bare Nails, Soap Nails, and Milky Nails the Same Thing?": 220 (AEO direct-answer section)
+  - "What Are Bare Nails, Exactly?": 260
+  - "What Are Soap Nails, Exactly?": 260
+  - "What Are Milky Nails, Exactly?": 260
+  - "Bare vs Soap vs Milky: Side-by-Side Comparison": 260
+  - "Which One Should You Ask For at the Salon?": 240
+  - "Which Trend Actually Fits You?": 200
+```
+
+# SECTION 11 — INTERNAL LINKS
+```
+all_internal_links:
+1. url_or_slug: /blog/bare-nails-trend-2026/bare-nails-trend-2026
+   title: Bare Nails: The 2026 Trend Everyone's Talking About
+   anchor_text: bare nails trend 2026
+   placement_note: Introduction — establish this post as a spoke off the main trend piece
+   link_type: cluster-pillar
+
+2. url_or_slug: /blog/bare-nails-trend-2026/bare-nails-meaning
+   title: What Are Bare Nails? Meaning, Origin & How to Get the Look
+   anchor_text: what bare nails means and where the trend came from
+   placement_note: "What Are Bare Nails, Exactly?" H2 — sends readers wanting deeper definition/origin
+   link_type: cluster-spoke
+
+3. url_or_slug: /blog/bare-nails-trend-2026/how-to-get-bare-nails-at-home
+   title: How to Get Bare Nails at Home: Buff, Shine, No Polish
+   anchor_text: how to get bare nails at home with buffing
+   placement_note: "Which One Should You Ask For at the Salon?" H2 — natural next step for readers who land on "bare"
+   link_type: cluster-spoke
+
+4. url_or_slug: /blog/bare-nails-trend-2026/celebrity-bare-nails
+   title: Celebrity Bare Nails: Who's Wearing the Trend
+   anchor_text: celebrities wearing bare nails on the red carpet
+   placement_note: "Which Trend Actually Fits You?" H2 — inspirational close-out link
+   link_type: cluster-spoke
+
+5. url_or_slug: https://mirelleinspo.com/work-nails/neutral-nails-for-work
+   title: Neutral Nails for Work: Best Office Shades 2026
+   anchor_text: how soap and milky nails read in an office setting
+   placement_note: "Which One Should You Ask For at the Salon?" H2 — this existing post already distinguishes soap vs milky in a work context, adds real value without competing (reserved keyword, safe to link)
+   link_type: cross-site
+
+6. url_or_slug: https://mirelleinspo.com/blog/milky-pink-nails
+   title: Milky Pink Nails: What They Are & How to Get Them
+   anchor_text: the full guide to milky pink nails and how to get the shade right
+   placement_note: "What Are Milky Nails, Exactly?" H2 — deep-dive shade guide for readers wanting more than the comparison-level detail here
+   link_type: cross-site
+```
+(6 total — at cap. Note: `/blog/korean-nails/soap-nails` deliberately excluded from linking — while relevant, it would pull traffic and framing toward the competing Korean-technique angle this post is explicitly differentiating from.)
+
+# SECTION 12 — VOICE AND TONE
+```
+recommended_voice: Confident educator with a decisive edge
+tone_characteristics: Direct and reassuring; treats the reader as already trend-literate (no over-explaining "what is a manicure"); resolves ambiguity rather than hedging with "it depends"; light, conversational asides; ends each comparison point with a clear takeaway rather than leaving it open
+language_style: Second person throughout ("you," "your salon appointment"); short declarative sentences for definitions; slightly longer sentences for the side-by-side contrasts; no forced enthusiasm
+audience_match: This reader came for resolution, not exploration — a voice that commits to clear answers (rather than presenting "both are valid!" non-answers) directly serves the decision-mode intent and mirrors what's missing from every competitor source.
+```
+
+# SECTION 13 — EXTERNAL LINKS
+```
+links:
+1. url: https://www.purewow.com/beauty/bare-nail-trend
+   context: Cite when establishing bare nails as the 2026 evolution beyond soap nails
+   anchor_suggestion: bare nails trend 2026 explainer
+
+2. url: https://www.marieclaire.co.uk/beauty/soap-nails
+   context: Cite for professional quote distinguishing soap nails' glossier, pinker finish from milky nails
+   anchor_suggestion: professional breakdown of soap vs milky finishes
+
+3. url: https://us.manucurist.com/blogs/journal/trend-alert-soap-nails
+   context: Cite for the three-way positioning of nude/soap/milky on a single spectrum
+   anchor_suggestion: nail trend spectrum analysis
+```
+
+# SECTION 14 — EXECUTION PLAN
+
+## Block 1 — Keyword Execution
+```
+primary_keyword: bare nails vs soap nails
+top_3_density_baseline: 3
+total_mention_target: 6
+first_100_words_plan:
+  mention_1: sentence 2 of introduction — naming the exact three-way confusion
+  mention_2: sentence 4-5 of introduction — framing the promise of the post
+first_half_target: 4 mentions — first ~950 words (denser, per rule)
+second_half_target: 2 mentions — second ~950 words
+strong_tag_rule: Every one of the 6 mentions of "bare nails vs soap nails" (or its locked variations) wrapped in <strong> tags. Scan after every paragraph.
+keywords_to_avoid_active: full list from Section 3 — never used as focus terms anywhere in the post
+```
+
+## Block 2 — Word Budget
+```
+total_target: 1900 words (+/-50 tolerance, never exceed)
+introduction: 220
+conclusion: 180
+h2_budgets:
+  - heading: "Are Bare Nails, Soap Nails, and Milky Nails the Same Thing?"
+    budget: 220
+    complexity: medium (AEO direct-answer section)
+  - heading: "What Are Bare Nails, Exactly?"
+    budget: 260
+    complexity: low
+  - heading: "What Are Soap Nails, Exactly?"
+    budget: 260
+    complexity: low
+  - heading: "What Are Milky Nails, Exactly?"
+    budget: 260
+    complexity: low
+  - heading: "Bare vs Soap vs Milky: Side-by-Side Comparison"
+    budget: 260
+    complexity: high
+  - heading: "Which One Should You Ask For at the Salon?"
+    budget: 240
+    complexity: medium
+  - heading: "Which Trend Actually Fits You?"
+    budget: 200
+    complexity: low
+tracking_rule: Track running word total at the end of every H2. If a section runs over, cut before moving on — do not compensate later.
+```
+
+## Block 3 — Image Plan
+```
+total_images: 5
+hero_image: frontmatter only — NEVER appears in post body
+body_images: 4
+assignments:
+  - image_number: 1
+    place_after: "What Are Bare Nails, Exactly?"
+    section_context: Close-up of sheer, barely-there bare nail finish, natural nail bed visible
+  - image_number: 2
+    place_after: "What Are Soap Nails, Exactly?"
+    section_context: Soap nails finish — sheer pink/nude, high-gloss wet-look top coat
+  - image_number: 3
+    place_after: "What Are Milky Nails, Exactly?"
+    section_context: Milky nails finish — creamy opaque white/ivory base, softer than soap nails
+  - image_number: 4
+    place_after: "Bare vs Soap vs Milky: Side-by-Side Comparison"
+    section_context: Three-hand or three-nail side-by-side comparison shot showing all three finishes together
+image_type_rule: ALL body images = inspirational nail design images related to the topic. NO infographics, NO process diagrams, NO comparison charts as graphics — the "comparison" happens in prose/table, images stay purely visual/inspirational.
+path_rule: /images/blog/bare-nails-trend-2026/bare-nails-vs-soap-nails-vs-milky-nails/filename.webp
+```
+
+## Block 4 — Opening Technique Assignments
+```
+rule: No two consecutive sections use the same technique. Conclusion = Technique 1 or 3 only.
+assignments:
+  - section: Introduction
+    technique: Technique 1 — The Claim
+  - section: "Are Bare Nails, Soap Nails, and Milky Nails the Same Thing?"
+    technique: Technique 3 — The Reframe
+  - section: "What Are Bare Nails, Exactly?"
+    technique: Technique 2 — The Scene
+  - section: "What Are Soap Nails, Exactly?"
+    technique: Technique 1 — The Claim
+  - section: "What Are Milky Nails, Exactly?"
+    technique: Technique 2 — The Scene
+  - section: "Bare vs Soap vs Milky: Side-by-Side Comparison"
+    technique: Technique 3 — The Reframe
+  - section: "Which One Should You Ask For at the Salon?"
+    technique: Technique 1 — The Claim
+  - section: "Which Trend Actually Fits You?"
+    technique: Technique 3 — The Reframe (conclusion)
+banned_opener_rule: Check every opener against banned_opening_approaches in Blog Gen prompt before writing the second sentence.
+```
+
+## Block 5 — Link Placements
+```
+rule: Every link placed exactly where specified. Anchor texts verbatim. Woven into prose naturally — never standalone CTAs.
+links:
+  1. anchor_text: bare nails trend 2026
+     full_url: /blog/bare-nails-trend-2026/bare-nails-trend-2026
+     place_in_section: Introduction
+     placement_context: When establishing this post as part of the broader 2026 trend conversation
+     link_type: cluster-pillar
+  2. anchor_text: what bare nails means and where the trend came from
+     full_url: /blog/bare-nails-trend-2026/bare-nails-meaning
+     place_in_section: "What Are Bare Nails, Exactly?"
+     placement_context: For readers wanting deeper origin/definition than this section covers
+     link_type: cluster-spoke
+  3. anchor_text: how to get bare nails at home with buffing
+     full_url: /blog/bare-nails-trend-2026/how-to-get-bare-nails-at-home
+     place_in_section: "Which One Should You Ask For at the Salon?"
+     placement_context: When reader decides bare nails is the pick and wants the how-to
+     link_type: cluster-spoke
+  4. anchor_text: celebrities wearing bare nails on the red carpet
+     full_url: /blog/bare-nails-trend-2026/celebrity-bare-nails
+     place_in_section: "Which Trend Actually Fits You?"
+     placement_context: Inspirational close, showing bare nails styled on real people
+     link_type: cluster-spoke
+  5. anchor_text: how soap and milky nails read in an office setting
+     full_url: https://mirelleinspo.com/work-nails/neutral-nails-for-work
+     place_in_section: "Which One Should You Ask For at the Salon?"
+     placement_context: For readers deciding based on workplace appropriateness
+     link_type: cross-site
+  6. anchor_text: the full guide to milky pink nails and how to get the shade right
+     full_url: https://mirelleinspo.com/blog/milky-pink-nails
+     place_in_section: "What Are Milky Nails, Exactly?"
+     placement_context: For readers wanting shade-level detail beyond this comparison
+     link_type: cross-site
+```
+
+## Block 6 — AEO/GEO Plan
+```
+aeo_assignments:
+  - aeo_term: "Are soap nails and milky nails the same thing?"
+    assigned_to_section: "Are Bare Nails, Soap Nails, and Milky Nails the Same Thing?"
+    execution: Direct 2-3 sentence answer immediately after the H2 — no, related but distinct, state the core opacity difference before elaborating.
+  - aeo_term: "What is the difference between bare nails and soap nails?"
+    assigned_to_section: "Bare vs Soap vs Milky: Side-by-Side Comparison"
+    execution: Direct 2-3 sentence answer immediately after the H2 — bare nails have the least visible color/product, soap nails add a sheer tinted gloss.
+  - aeo_term: "What should I ask for at the salon for bare nails?"
+    assigned_to_section: "Which One Should You Ask For at the Salon?"
+    execution: Direct 2-3 sentence answer with the literal phrase to say to a nail tech, before further elaboration.
+
+geo_entity_statements:
+  - entity: Bare nails
+    assigned_to_section: "What Are Bare Nails, Exactly?"
+    execution: Confident declarative definition sentence — no hedging — extractable as a citation.
+  - entity: Soap nails
+    assigned_to_section: "What Are Soap Nails, Exactly?"
+    execution: Confident declarative definition sentence.
+  - entity: Milky nails
+    assigned_to_section: "What Are Milky Nails, Exactly?"
+    execution: Confident declarative definition sentence.
+```
+
+## Block 7 — Active Constraints
+```
+em_dash_banned: Long em dash does not appear anywhere. Replace with comma / new sentence / parentheses / "but" / restructure if one forms.
+banned_vocab_watch: "elevate," "effortless," "unlock," "seamless," "game-changer," "journey," "dive into," "in today's world"
+british_english_active: colour, recognise, -ise, -our — every instance, no exceptions
+keyword_density_reminder: After every 2 H2 sections, count current mentions of "bare nails vs soap nails" (or locked variation). Verify running total on track for 6 total, denser in first half.
+image_path_reminder: /images/blog/bare-nails-trend-2026/bare-nails-vs-soap-nails-vs-milky-nails/filename.webp
+internal_link_url_reminder: Full paths only. Cluster links = /blog/bare-nails-trend-2026/[slug]. Cross-site links = exact URL as discovered. Never bare /slug.
+hero_image_reminder: Hero = frontmatter only. Never place hero image in body.
+strong_tag_reminder: Every primary keyword mention = <strong> tags. Scan after every paragraph.
+```
