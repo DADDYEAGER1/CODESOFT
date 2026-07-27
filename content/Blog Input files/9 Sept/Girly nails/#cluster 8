@@ -1,0 +1,314 @@
+{
+  "cluster_metadata": {
+    "cluster_topic": "Girly & Character Nails (Coquette, Sanrio, Barbiecore)",
+    "topic_slug": "girly-icon-nails",
+    "target_audience": "Global, Tier 1 countries",
+    "total_posts": 8,
+    "intent_breakdown": {
+      "informational": 0,
+      "inspirational": 0,
+      "tutorial": 0,
+      "comparison": 0,
+      "seasonal_trend": 0,
+      "aesthetic_identity": 8
+    },
+    "pillar_post_slug": "girly-nails",
+    "created_date": "2026-07-27",
+    "additional_instructions": [
+      "inspiration_gallery_link: true for this cluster — the pillar (Girly Nails) DOES link to an inspiration gallery page, unlike the previous two clusters (hiking-outdoor-nails and aesthetic-core-nails), where it was explicitly disabled. Do not carry the 'no gallery' instruction over from those clusters.",
+      "Spoke-to-spoke linking follows two topical sub-groups rather than a flat pool: the Sanrio/character group (Hello Kitty Nails, Hello Kitty Junk Nails, Kuromi Nails, My Melody Nails, Cinnamoroll Nails) links primarily within itself, while Coquette Nails and Barbiecore Nails link to each other plus 1-2 bridging Sanrio posts each. This grouping was an explicit user decision, not an emergent pattern — preserve it in any future edits to this cluster.",
+      "Barbiecore Nails post targets BOTH 'barbiecore nails' and 'barbie nails' as co-primary keywords per user instruction — 'barbiecore nails' is the stronger/more current term and should anchor the title and H1, with 'barbie nails' woven in as a heavily-weighted secondary throughout the content, not treated as a lesser afterthought.",
+      "intent_diversity_rule waived by user for this cluster — all 8 posts share a single intent type (aesthetic_identity), consistent with how the hiking-outdoor-nails and aesthetic-core-nails clusters were handled."
+    ]
+  },
+  "existing_site_posts_excluded": [],
+  "posts": [
+    {
+      "post_id": 1,
+      "role": "pillar",
+      "title": "Girly Nails",
+      "slug": "girly-nails",
+      "primary_keyword": "girly nails",
+      "intent": "aesthetic_identity",
+      "search_mode": "aesthetic_identity_mode",
+      "suggested_hook_trigger": "Trigger 4 — Identity Mirroring",
+      "search_demand_signals": [
+        "Pinterest: dedicated 710-pin board ('Pretty girly nails') spanning hearts, bows, florals, pastels, pearls",
+        "Dedicated blog roundup: '15 Must-See Girly Nail Ideas 2026' (DreamBundles) explicitly framing girly as its own umbrella aesthetic category"
+      ],
+      "why_included": "Broadest umbrella term for the entire cluster — functions as the natural hub that organizes and links out to every sharper sub-trend (coquette, character IP, Barbiecore) rather than competing with them directly.",
+      "internal_links": {
+        "links_to": [
+          { "slug": "coquette-nails", "anchor_text": "coquette nail design ideas", "type": "spoke" },
+          { "slug": "hello-kitty-nails", "anchor_text": "Hello Kitty nail art ideas", "type": "spoke" },
+          { "slug": "hello-kitty-junk-nails", "anchor_text": "Hello Kitty junk nails with charms", "type": "spoke" },
+          { "slug": "kuromi-nails", "anchor_text": "Kuromi nail design ideas", "type": "spoke" },
+          { "slug": "my-melody-nails", "anchor_text": "My Melody nail art inspiration", "type": "spoke" },
+          { "slug": "cinnamoroll-nails", "anchor_text": "Cinnamoroll nail design ideas", "type": "spoke" },
+          { "slug": "barbiecore-nails", "anchor_text": "Barbiecore nail art ideas", "type": "spoke" }
+        ],
+        "gallery_link": {
+          "url": "https://mirelleinspo.com/inspo/girly-nails-inspiration-gallery",
+          "anchor_text": "girly nails inspiration gallery"
+        },
+        "receives_links_from": [
+          { "slug": "coquette-nails", "anchor_text": "girly nail ideas" },
+          { "slug": "hello-kitty-nails", "anchor_text": "girly nail ideas" },
+          { "slug": "hello-kitty-junk-nails", "anchor_text": "girly nail ideas" },
+          { "slug": "kuromi-nails", "anchor_text": "girly nail ideas" },
+          { "slug": "my-melody-nails", "anchor_text": "girly nail ideas" },
+          { "slug": "cinnamoroll-nails", "anchor_text": "girly nail ideas" },
+          { "slug": "barbiecore-nails", "anchor_text": "girly nail ideas" }
+        ]
+      },
+      "status": "approved"
+    },
+    {
+      "post_id": 2,
+      "role": "spoke",
+      "title": "Coquette Nails",
+      "slug": "coquette-nails",
+      "primary_keyword": "coquette nails",
+      "intent": "aesthetic_identity",
+      "search_mode": "aesthetic_identity_mode",
+      "suggested_hook_trigger": "Trigger 4 — Identity Mirroring",
+      "search_demand_signals": [
+        "The #coquette TikTok hashtag has amassed 18 billion views per BBC coverage",
+        "6+ dedicated blog roundups (Facetune, Joyee Nails, Maniology, Stolen Inspiration, Celebritips, Scribbly Post) with named sub-variants: dark coquette, coquette bow nails, coquette hearts",
+        "Multiple dedicated Pinterest boards with high engagement on bow/pearl/ribbon-specific pin sets"
+      ],
+      "why_included": "The single strongest, most current keyword in the entire cluster — functions as the sharpest, most searched expression of the 'girly' aesthetic (bows, pearls, soft pink, ribbon motifs), distinct from generic girly nails through its specific Victorian-romantic/Y2K-nostalgia visual language.",
+      "internal_links": {
+        "links_to": [
+          { "slug": "girly-nails", "anchor_text": "girly nail ideas", "type": "pillar" },
+          { "slug": "barbiecore-nails", "anchor_text": "Barbiecore nail art ideas", "type": "spoke" },
+          { "slug": "my-melody-nails", "anchor_text": "My Melody nail art inspiration", "type": "spoke" },
+          { "slug": "cinnamoroll-nails", "anchor_text": "Cinnamoroll nail design ideas", "type": "spoke" }
+        ],
+        "receives_links_from": [
+          { "slug": "girly-nails", "anchor_text": "coquette nail design ideas" },
+          { "slug": "my-melody-nails", "anchor_text": "coquette bow nail ideas" },
+          { "slug": "cinnamoroll-nails", "anchor_text": "coquette bow nail ideas" },
+          { "slug": "barbiecore-nails", "anchor_text": "coquette nail design ideas" }
+        ]
+      },
+      "status": "approved"
+    },
+    {
+      "post_id": 3,
+      "role": "spoke",
+      "title": "Hello Kitty Nails",
+      "slug": "hello-kitty-nails",
+      "primary_keyword": "hello kitty nails",
+      "intent": "aesthetic_identity",
+      "search_mode": "aesthetic_identity_mode",
+      "suggested_hook_trigger": "Trigger 4 — Identity Mirroring",
+      "search_demand_signals": [
+        "Pinterest: dedicated board with 61+ pins",
+        "3+ dedicated blog roundups (Sacred Joanne, My True Style, Morovan) covering French tip, decal, and hand-painted variants",
+        "Lemon8: multiple creator tutorials with dedicated Hello Kitty nail hashtags"
+      ],
+      "why_included": "Flagship character in the Sanrio family — broadest, most mature demand of the character-specific posts, spanning minimalist to elaborate execution styles.",
+      "internal_links": {
+        "links_to": [
+          { "slug": "girly-nails", "anchor_text": "girly nail ideas", "type": "pillar" },
+          { "slug": "hello-kitty-junk-nails", "anchor_text": "Hello Kitty junk nails with charms", "type": "spoke" },
+          { "slug": "kuromi-nails", "anchor_text": "Kuromi nail design ideas", "type": "spoke" },
+          { "slug": "my-melody-nails", "anchor_text": "My Melody nail art inspiration", "type": "spoke" },
+          { "slug": "cinnamoroll-nails", "anchor_text": "Cinnamoroll nail design ideas", "type": "spoke" }
+        ],
+        "receives_links_from": [
+          { "slug": "girly-nails", "anchor_text": "Hello Kitty nail art ideas" },
+          { "slug": "hello-kitty-junk-nails", "anchor_text": "Hello Kitty nail art ideas" },
+          { "slug": "kuromi-nails", "anchor_text": "Hello Kitty nail art ideas" },
+          { "slug": "coquette-nails", "anchor_text": "Hello Kitty nail art ideas" },
+          { "slug": "barbiecore-nails", "anchor_text": "Hello Kitty nail art ideas" }
+        ]
+      },
+      "status": "approved"
+    },
+    {
+      "post_id": 4,
+      "role": "spoke",
+      "title": "Hello Kitty Junk Nails",
+      "slug": "hello-kitty-junk-nails",
+      "primary_keyword": "hello kitty junk nails",
+      "intent": "aesthetic_identity",
+      "search_mode": "aesthetic_identity_mode",
+      "suggested_hook_trigger": "Trigger 4 — Identity Mirroring",
+      "search_demand_signals": [
+        "Dedicated Pinterest board ('Hello Kitty Junk Nails')",
+        "Lemon8 dedicated DIY tutorial ('Hello Kitty Junk Glam Nails')",
+        "Etsy and TikTok Shop: dedicated commercial listings including a named product ('Hello Kitty Junk Set') from an established press-on nail seller"
+      ],
+      "why_included": "Distinct maximalist-execution sub-angle within Hello Kitty — charms, rhinestones, and layered embellishments applied specifically within the junk-nails technique, differentiated from the general Hello Kitty roundup by execution style rather than character.",
+      "internal_links": {
+        "links_to": [
+          { "slug": "girly-nails", "anchor_text": "girly nail ideas", "type": "pillar" },
+          { "slug": "hello-kitty-nails", "anchor_text": "Hello Kitty nail art ideas", "type": "spoke" },
+          { "slug": "kuromi-nails", "anchor_text": "Kuromi nail design ideas", "type": "spoke" },
+          { "slug": "barbiecore-nails", "anchor_text": "Barbiecore nail art ideas", "type": "spoke" }
+        ],
+        "receives_links_from": [
+          { "slug": "girly-nails", "anchor_text": "Hello Kitty junk nails with charms" },
+          { "slug": "hello-kitty-nails", "anchor_text": "Hello Kitty junk nails with charms" },
+          { "slug": "kuromi-nails", "anchor_text": "Hello Kitty junk nails with charms" },
+          { "slug": "barbiecore-nails", "anchor_text": "Hello Kitty junk nails with charms" }
+        ]
+      },
+      "status": "approved"
+    },
+    {
+      "post_id": 5,
+      "role": "spoke",
+      "title": "Kuromi Nails",
+      "slug": "kuromi-nails",
+      "primary_keyword": "kuromi nails",
+      "intent": "aesthetic_identity",
+      "search_mode": "aesthetic_identity_mode",
+      "suggested_hook_trigger": "Trigger 4 — Identity Mirroring",
+      "search_demand_signals": [
+        "Pinterest: one dedicated board alone shows 19.6k pins, plus multiple sub-boards (kids, chrome, French tip, almond shapes)",
+        "Lemon8: extensive creator coverage often paired with My Melody",
+        "Etsy/eBay: dedicated Kuromi press-on and sticker product listings"
+      ],
+      "why_included": "Massive standalone demand and a clearly distinct identity — purple/black palette, 'cool girl energy,' goth-adjacent — positioned as the deliberate contrast to Hello Kitty's sweet pink identity within the same Sanrio family.",
+      "internal_links": {
+        "links_to": [
+          { "slug": "girly-nails", "anchor_text": "girly nail ideas", "type": "pillar" },
+          { "slug": "hello-kitty-nails", "anchor_text": "Hello Kitty nail art ideas", "type": "spoke" },
+          { "slug": "my-melody-nails", "anchor_text": "My Melody nail art inspiration", "type": "spoke" },
+          { "slug": "cinnamoroll-nails", "anchor_text": "Cinnamoroll nail design ideas", "type": "spoke" }
+        ],
+        "receives_links_from": [
+          { "slug": "girly-nails", "anchor_text": "Kuromi nail design ideas" },
+          { "slug": "hello-kitty-nails", "anchor_text": "Kuromi nail design ideas" },
+          { "slug": "hello-kitty-junk-nails", "anchor_text": "Kuromi nail design ideas" },
+          { "slug": "my-melody-nails", "anchor_text": "Kuromi nail design ideas" },
+          { "slug": "barbiecore-nails", "anchor_text": "Kuromi nail design ideas" }
+        ]
+      },
+      "status": "approved"
+    },
+    {
+      "post_id": 6,
+      "role": "spoke",
+      "title": "My Melody Nails",
+      "slug": "my-melody-nails",
+      "primary_keyword": "my melody nails",
+      "intent": "aesthetic_identity",
+      "search_mode": "aesthetic_identity_mode",
+      "suggested_hook_trigger": "Trigger 4 — Identity Mirroring",
+      "search_demand_signals": [
+        "Dedicated Pinterest boards, frequently paired with Kuromi as a duo",
+        "Lemon8 coverage describing the look as 'peak soft girl aesthetic'",
+        "Dedicated blog article: 'Super Cute Sanrio Inspired Nails' with a specific My Melody design breakdown"
+      ],
+      "why_included": "Distinct baby-pink, heart-motif, soft-bow identity within the Sanrio family — softer and more romantic than Hello Kitty's bolder pink, and the natural bridge between the Sanrio group and the Coquette aesthetic given shared bow/heart visual language.",
+      "internal_links": {
+        "links_to": [
+          { "slug": "girly-nails", "anchor_text": "girly nail ideas", "type": "pillar" },
+          { "slug": "hello-kitty-nails", "anchor_text": "Hello Kitty nail art ideas", "type": "spoke" },
+          { "slug": "kuromi-nails", "anchor_text": "Kuromi nail design ideas", "type": "spoke" },
+          { "slug": "coquette-nails", "anchor_text": "coquette bow nail ideas", "type": "spoke" }
+        ],
+        "receives_links_from": [
+          { "slug": "girly-nails", "anchor_text": "My Melody nail art inspiration" },
+          { "slug": "hello-kitty-nails", "anchor_text": "My Melody nail art inspiration" },
+          { "slug": "hello-kitty-junk-nails", "anchor_text": "My Melody nail art inspiration" },
+          { "slug": "kuromi-nails", "anchor_text": "My Melody nail art inspiration" },
+          { "slug": "cinnamoroll-nails", "anchor_text": "My Melody nail art inspiration" }
+        ]
+      },
+      "status": "approved"
+    },
+    {
+      "post_id": 7,
+      "role": "spoke",
+      "title": "Cinnamoroll Nails",
+      "slug": "cinnamoroll-nails",
+      "primary_keyword": "cinnamoroll nails",
+      "intent": "aesthetic_identity",
+      "search_mode": "aesthetic_identity_mode",
+      "suggested_hook_trigger": "Trigger 4 — Identity Mirroring",
+      "search_demand_signals": [
+        "Dedicated blog article: 'Adorable Cinnamoroll Nails: 10 Sanrio-Inspired Designs for 2026'",
+        "Multiple dedicated Pinterest boards with length-specific variants (short, long, simple)"
+      ],
+      "why_included": "Distinct blue/pastel palette and 'floppy ears' visual identity — the only Sanrio spoke built around a cool-toned palette rather than pink, giving the cluster genuine colour-family range.",
+      "internal_links": {
+        "links_to": [
+          { "slug": "girly-nails", "anchor_text": "girly nail ideas", "type": "pillar" },
+          { "slug": "hello-kitty-nails", "anchor_text": "Hello Kitty nail art ideas", "type": "spoke" },
+          { "slug": "kuromi-nails", "anchor_text": "Kuromi nail design ideas", "type": "spoke" },
+          { "slug": "coquette-nails", "anchor_text": "coquette bow nail ideas", "type": "spoke" }
+        ],
+        "receives_links_from": [
+          { "slug": "girly-nails", "anchor_text": "Cinnamoroll nail design ideas" },
+          { "slug": "hello-kitty-nails", "anchor_text": "Cinnamoroll nail design ideas" },
+          { "slug": "kuromi-nails", "anchor_text": "Cinnamoroll nail design ideas" },
+          { "slug": "my-melody-nails", "anchor_text": "Cinnamoroll nail design ideas" },
+          { "slug": "coquette-nails", "anchor_text": "Cinnamoroll nail design ideas" }
+        ]
+      },
+      "status": "approved"
+    },
+    {
+      "post_id": 8,
+      "role": "spoke",
+      "title": "Barbiecore Nails",
+      "slug": "barbiecore-nails",
+      "primary_keyword": "barbiecore nails",
+      "secondary_keyword_co_primary": "barbie nails",
+      "intent": "aesthetic_identity",
+      "search_mode": "aesthetic_identity_mode",
+      "suggested_hook_trigger": "Trigger 4 — Identity Mirroring",
+      "search_demand_signals": [
+        "Pinterest: dedicated boards with 130+ pins",
+        "Dedicated blog roundups including a 59-design guide and multiple named 'Barbiecore' trend pieces tied to celebrity red-carpet moments (Margot Robbie, Dua Lipa)",
+        "TikTok: dedicated #barbiecore hashtag content with sustained volume since the 2023 film and continuing through 2026 coverage"
+      ],
+      "why_included": "Co-targets both 'barbiecore nails' (the stronger, more current umbrella term) and 'barbie nails' (the more direct, expected phrasing) per explicit user instruction. Distinct bright-pink, glam, pop-culture-tied identity separate from the softer Sanrio and coquette palettes.",
+      "internal_links": {
+        "links_to": [
+          { "slug": "girly-nails", "anchor_text": "girly nail ideas", "type": "pillar" },
+          { "slug": "coquette-nails", "anchor_text": "coquette nail design ideas", "type": "spoke" },
+          { "slug": "hello-kitty-junk-nails", "anchor_text": "Hello Kitty junk nails with charms", "type": "spoke" },
+          { "slug": "hello-kitty-nails", "anchor_text": "Hello Kitty nail art ideas", "type": "spoke" },
+          { "slug": "kuromi-nails", "anchor_text": "Kuromi nail design ideas", "type": "spoke" }
+        ],
+        "receives_links_from": [
+          { "slug": "girly-nails", "anchor_text": "Barbiecore nail art ideas" },
+          { "slug": "coquette-nails", "anchor_text": "Barbiecore nail art ideas" },
+          { "slug": "hello-kitty-junk-nails", "anchor_text": "Barbiecore nail art ideas" }
+        ]
+      },
+      "status": "approved"
+    }
+  ],
+  "keyword_ownership_registry": {
+    "description": "Master list of all primary keywords — one per post, no overlaps",
+    "entries": [
+      { "primary_keyword": "girly nails", "owned_by_slug": "girly-nails", "owned_by_title": "Girly Nails", "source": "new post" },
+      { "primary_keyword": "coquette nails", "owned_by_slug": "coquette-nails", "owned_by_title": "Coquette Nails", "source": "new post" },
+      { "primary_keyword": "hello kitty nails", "owned_by_slug": "hello-kitty-nails", "owned_by_title": "Hello Kitty Nails", "source": "new post" },
+      { "primary_keyword": "hello kitty junk nails", "owned_by_slug": "hello-kitty-junk-nails", "owned_by_title": "Hello Kitty Junk Nails", "source": "new post" },
+      { "primary_keyword": "kuromi nails", "owned_by_slug": "kuromi-nails", "owned_by_title": "Kuromi Nails", "source": "new post" },
+      { "primary_keyword": "my melody nails", "owned_by_slug": "my-melody-nails", "owned_by_title": "My Melody Nails", "source": "new post" },
+      { "primary_keyword": "cinnamoroll nails", "owned_by_slug": "cinnamoroll-nails", "owned_by_title": "Cinnamoroll Nails", "source": "new post" },
+      { "primary_keyword": "barbiecore nails", "owned_by_slug": "barbiecore-nails", "owned_by_title": "Barbiecore Nails", "source": "new post" },
+      { "primary_keyword": "barbie nails", "owned_by_slug": "barbiecore-nails", "owned_by_title": "Barbiecore Nails", "source": "new post (co-primary keyword)" }
+    ]
+  },
+  "merged_posts_log": [],
+  "killed_posts_log": [
+    {
+      "topic": "Hello Kitty French Tip Nails",
+      "reason": "Real, validated demand found (dedicated Pinterest board, TikTok Shop category, DIY tutorial with nail-foil technique), but user elected to skip this angle and keep only Hello Kitty Nails (general) and Hello Kitty Junk Nails."
+    },
+    {
+      "topic": "Maximalist Nails (as its own cluster, researched earlier in session)",
+      "reason": "Real demand exists as a distinct umbrella query, but the site already has 8 posts touching maximalism from different angles (Junk Nails, Bangle Nails, Carnival Nails, Clown Core Nails, Carousel Nails, Mismatched Nails, plus references in Fruit/Y2K/Kawaii). User paused this topic to pursue Hello Kitty nails research instead; not part of this cluster."
+    }
+  ]
+}
