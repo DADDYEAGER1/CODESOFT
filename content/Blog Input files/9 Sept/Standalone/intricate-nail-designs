@@ -1,0 +1,227 @@
+# INPUT FILE — Blog Gen Agent Source of Truth
+SOLO MODE — standalone post. No cluster_context.json. All values below are hardcoded and final.
+
+## SECTION 1 — FILE AUTHORITY
+This file is the single source of truth for the Blog Gen Agent. Every value in POST_CONSTANTS is hardcoded — do not ask, adjust, or override. All keywords, H2 structure, audience intelligence, internal links, and tone must be followed exactly.
+
+## SECTION 2 — POST_CONSTANTS
+- slug: intricate-nail-designs
+- topic_slug: OMITTED (standalone — no topic field, no topic-based routing)
+- canonical: https://mirelleinspo.com/blog/intricate-nail-designs
+- post_type: standalone
+- intent: inspirational
+- word_count: 2400 (±50 tolerance)
+- image_count: 9 (hero + 8 body — inspirational browse post, show_inspo_gallery_link = true)
+- show_inspo_gallery_link: true
+- template: center
+- hero_dimensions: 1200x630
+- category: Nail Art
+- publish_date: 2026-07-27
+- author: jyoti-mirelle
+
+## SECTION 4 — SERP ANALYSIS
+**competitor_gaps** (2+ source validated):
+- "Is it achievable at home / do I need a salon" — recurring anxiety across Maniology, InStyle, ipsy (achievability gap: readers assume intricate = unattainable without a pro)
+- No competitor pairs technique type (freehand/stamping/3D/decals) with which skill level can realistically execute it — gap between "here are pretty photos" and "here's what's actually involved"
+- Cultural/heritage-inspired intricate art (mehndi-style, Mughal/architectural motifs) is a rising, under-covered angle — only one InStyle piece touches it
+- Longevity/durability of intricate designs (gel vs regular polish) barely addressed despite being a real practical concern once readers commit to a detailed design
+
+**missing_semantic_territory:** "detailed vs intricate" distinction, tool-specific breakdowns (dotting tool, striping tape, thin brush) tied directly to specific looks, occasion-based framing (bridal, editorial-inspired, everyday-wearable intricate)
+
+**our_strategic_approach:** Lead with abundant visual variety (the competitors' strength) but close the achievability gap they all skip — pair every design category with a real signal of how hard it is to recreate or get done, so the reader leaves knowing not just what looks amazing but which one is realistic for them.
+
+**top_3_word_count_estimates:** Maniology ~650, InStyle/AOL gel roundup ~1,100, salon1150 26-idea guide ~1,900. Average ≈ 1,500 (floor).
+
+**top_3_keyword_density_baseline:** ~5 mentions average across top 3 (title + intro + 2-3 body mentions typical of roundup format).
+
+## SECTION 5 — AUDIENCE INTELLIGENCE
+**who_they_are:** Nail art enthusiasts and casual browsers, mostly women 18-35, mid-to-high nail-art literacy (know terms like "3D," "stamping," "chrome") but not necessarily technicians. Browsing Pinterest/Instagram-style, screenshotting for salon visits or attempting select looks at home.
+
+**what_they_want:** Volume and variety of genuinely detailed, photo-worthy designs they haven't already seen a hundred times, sorted in a way that helps them pick one for their skill level or upcoming appointment.
+
+**what_frustrates_them:** Roundups that are all identical florals; no signal on difficulty/time/cost; product-catalog dressed as inspiration (Maniology model); zero guidance on whether it's DIY-feasible or salon-only.
+
+**top_5_pain_points:**
+1. Can't tell if a design is realistically DIY or needs a professional
+2. Repetitive floral/French content across every "intricate" roundup
+3. No sense of how long an intricate set takes or costs at a salon
+4. Wants variety across styles (not just florals) — geometric, 3D, cultural, abstract
+5. Wants something intricate that still looks wearable/elegant, not costume-y
+
+**exact_user_phrases:** "nails that look impossible to recreate," "intricate but still refined," "salon-worthy at home," "detailed but not overdone," "how long does intricate nail art take," "worth the money," "nail art that doesn't look busy," "fine line nail art," "3D nail art ideas," "mehndi inspired nails," "detailed nail art for short nails"
+
+**intent_content_signals:** High image-to-text ratio expectation; short punchy descriptions per design (not essays); categorized/skimmable structure; specific technique or motif named per entry; confidence-building language around DIY attempts.
+
+## SECTION 6 — SEMANTIC KEYWORD DATA
+**primary_keyword:** intricate nail designs
+**keyword_variations:** intricate nail art, intricate nail art designs, detailed nail designs, complex nail designs, intricate manicure designs, elaborate nail designs
+**cluster_keywords:** 3D nail art, freehand nail art, nail stamping designs, filigree nail art, mandala nail art, geometric nail art, floral nail art designs, fine line nail art, lace nail art, textured nail designs, gel nail art ideas, hand-painted nail designs, embellished nail designs, culture-inspired nail art
+**lsi_terms:** dotting tool technique, striping tape nail art, nail art brushes, acrylic 3D embellishments, negative space nail art, marbling technique, encapsulated nail art, nail stamping plates, chrome nail finish, gem and rhinestone nails, ombre gradient nails, mixed media nail art, mehndi-inspired nails, Mughal-pattern nails, nail art stencils, water decals, freehand floral painting, layered nail polish technique, precision nail brush work, salon-quality nail art
+**aeo_terms:** "What are intricate nail designs?", "Can you do intricate nail designs at home?", "How long does intricate nail art take?", "Are intricate nail designs expensive at a salon?", "What tools do you need for intricate nail art?", "What's the difference between simple and intricate nail designs?", "What is the most intricate nail design?", "How do you do detailed nail art without a steady hand?"
+**technical_terms:** stamping plate, dotting tool, gel polish cure, encapsulated design, negative space technique, 3D acrylic sculpting, striping tape
+**user_language:** "looks impossible to recreate," "salon-worthy at home," "detailed but not busy," "worth the splurge," "fine line work," "doesn't look overdone," "takes forever but worth it," "beginner-friendly intricate," "my nail artist recreated this"
+
+## SECTION 7 — VOICE AND AI QUERIES
+1. What are intricate nail designs?
+2. Can you do intricate nail designs at home without a salon?
+3. How long does an intricate manicure take to complete?
+4. What's the difference between simple and intricate nail art?
+5. What tools do I need to try intricate nail designs myself?
+6. Are intricate nail designs more expensive at the salon?
+7. What is the most popular intricate nail design right now?
+8. Can beginners do intricate nail art?
+9. What are 3D intricate nail designs?
+10. How do you keep intricate nail designs from looking too busy?
+11. What's a good intricate nail design for short nails?
+12. How do nail artists create such fine, detailed lines?
+13. What is mehndi-inspired nail art?
+14. Do intricate nail designs last as long as simple manicures?
+15. What's the best intricate nail design for a wedding?
+16. How much do intricate nail designs cost at a salon?
+
+## SECTION 8 — HOOK AND CTR
+**selected_trigger:** Trigger 3 — Specificity/Numbers (roundup format, volume-driven browse intent)
+**trigger_rationale:** Reader is browsing for ideas and wants a defined, generous promise of variety — a specific number signals thoroughness and gives a reason to scroll the whole list.
+**title:** 31 Intricate Nail Designs Worth the Extra Detail in 2026
+**title_char_count:** 56
+**meta_description:** See 31 intricate nail designs — from 3D florals to fine-line art — plus which ones you can actually pull off at home.
+**meta_char_count:** 121
+**intro_hook_brief:** Open by naming the exact tension the reader feels: intricate designs look stunning but also look intimidating and expensive. Promise this list solves both — real variety, plus a read on what's realistic to DIY vs. book with a pro.
+**first_h2_hook_direction:** Phrase the first H2 as a natural voice-search framing of "what actually counts as intricate" so the reader immediately trusts the list is curated, not generic — e.g., addressing what separates intricate from simple before diving into designs.
+
+## SECTION 9 — SEARCH JOURNEY
+**reader_arrival_state:** Curious and visually hungry, slightly intimidated — wants to see stunning detailed nail art but isn't sure what's achievable for her.
+**journey_arc:**
+- Land on the promise of volume + honesty about difficulty
+- Quickly oriented on what "intricate" really means vs simple designs
+- Move through style categories (floral, geometric, 3D, cultural, fine-line) each with fresh visual proof
+- Reassured throughout on DIY-feasibility signals
+- Close on confident next step: which one to try or bring to her nail appointment
+**promise_to_deliver:** A genuinely varied, non-repetitive collection of intricate nail designs, with honest guidance on what's realistic to attempt at home versus book with a professional.
+**exit_state:** Inspired and decisive — she's picked (or shortlisted) a design and knows exactly how to get it.
+
+## SECTION 10 — CONTENT STRUCTURE
+**h1:** 31 Intricate Nail Designs Worth the Extra Detail in 2026
+
+**h2_structure:**
+1. What Makes a Nail Design "Intricate" (Not Just Busy)
+2. Delicate Floral Intricate Nail Designs
+3. Geometric and Fine-Line Intricate Nail Art
+4. 3D and Textured Intricate Nail Designs
+5. Culture-Inspired Intricate Nail Art (Mehndi, Mughal & Beyond)
+6. Intricate Nail Designs for Short Nails
+7. Bridal and Special-Occasion Intricate Nail Designs
+8. Can You Do Intricate Nail Designs at Home? What's Realistic
+9. How Long Intricate Nail Art Really Takes (And What It Costs)
+
+**word_budget:**
+- introduction: 220
+- H2-1 (What makes intricate): 180
+- H2-2 (Floral): 320
+- H2-3 (Geometric/fine-line): 300
+- H2-4 (3D/textured): 300
+- H2-5 (Culture-inspired): 280
+- H2-6 (Short nails): 240
+- H2-7 (Bridal/occasion): 240
+- H2-8 (DIY realism): 220
+- H2-9 (Time/cost): 180
+- conclusion: 170
+(Total ≈ 2450, within tolerance)
+
+## SECTION 11 — INTERNAL LINKS
+1. **url_or_slug:** /blog/almond-nails-40-ideas (or closest existing shape/idea roundup) | **anchor_text:** almond nail shape ideas for your next intricate set | **placement:** H2-6 (Short Nails) | **link_type:** cross-site
+2. **url_or_slug:** /blog/gel-nail-ideas (or closest existing gel-focused post) | **anchor_text:** how gel polish holds up detailed nail art longer | **placement:** H2-9 (Time/Cost) | **link_type:** cross-site
+
+*(Only 2 links found via reasonable topical match — run live site:mirelleinspo.com search before publishing to confirm exact URLs/slugs exist; do not publish placeholder links as-is.)*
+
+## SECTION 12 — VOICE AND TONE
+**recommended_voice:** Aspirational guide with a practical best friend edge
+**tone_characteristics:** Enthusiastic about variety, honest about difficulty, encouraging without overpromising, visually descriptive, never condescending to DIY attempts
+**language_style:** Direct address ("you"), short punchy sentences per design entry, confident declarative statements, light editorializing ("this one's worth the splurge")
+**audience_match:** Matches a browsing, aspiration-led reader who still wants a realistic gut-check before committing time or salon money to a detailed design.
+
+## SECTION 13 — EXTERNAL LINKS
+1. **url:** (verify via site:allure.com search) | **context:** citing a nail artist's take on maximalist/intricate trend rising in 2026 | **anchor_suggestion:** nail artists predicting a maximalist comeback
+2. **url:** (verify via site:byrdie.com search) | **context:** editorial authority on almond/intricate pairing | **anchor_suggestion:** editorial take on intricate almond manicures
+
+## SECTION 14 — EXECUTION PLAN
+
+### Block 1 — Keyword Execution
+- primary_keyword: intricate nail designs
+- top_3_density_baseline: 5
+- total_mention_target: 7-8 (baseline + 2-3)
+- first_100_words_plan: Mention 1 — sentence 1-2 of intro (naming the topic directly). Mention 2 — sentence 4-5 of intro (in the promise/what-this-post-covers line).
+- first_half_target: 5 mentions — first 1,200 words
+- second_half_target: 2-3 mentions — remaining 1,200 words
+- strong_tag_rule: every one of the 7-8 mentions wrapped in `<strong>` tags, scanned after every paragraph
+- keywords_to_avoid_active: none (standalone, no cluster file)
+
+### Block 2 — Word Budget
+- total_target: 2400 words (±50)
+- introduction: 220 | conclusion: 170
+- h2_budgets:
+  1. What Makes It Intricate — 180 (low)
+  2. Floral — 320 (medium)
+  3. Geometric/Fine-Line — 300 (medium)
+  4. 3D/Textured — 300 (medium)
+  5. Culture-Inspired — 280 (high — needs sensitivity/accuracy)
+  6. Short Nails — 240 (low)
+  7. Bridal/Occasion — 240 (low)
+  8. DIY Realism — 220 (medium)
+  9. Time/Cost — 180 (low)
+- tracking_rule: check running total after each H2; cut before moving on if over.
+
+### Block 3 — Image Plan
+- total_images: 9
+- hero_image: frontmatter only, never in body
+- body_images: 8
+- assignments:
+  1. after H2-2 (Floral) — detailed layered floral manicure, dark or bold background
+  2. after H2-2 (Floral) — second floral variation, lighter palette
+  3. after H2-3 (Geometric/Fine-Line) — fine-line geometric pattern close-up
+  4. after H2-4 (3D/Textured) — 3D embellished/textured nail set
+  5. after H2-4 (3D/Textured) — second 3D or encapsulated design
+  6. after H2-5 (Culture-Inspired) — mehndi/Mughal-pattern inspired set
+  7. after H2-6 (Short Nails) — intricate design on short/almond nails
+  8. after H2-7 (Bridal/Occasion) — bridal-appropriate intricate set
+- image_type_rule: all body images = inspirational nail design photos only. No infographics, no diagrams, no charts.
+- path_rule: /images/blog/intricate-nail-designs/filename.webp
+
+### Block 4 — Opening Technique Assignments
+- Introduction: Technique 1 (The Claim)
+- H2-1: Technique 3 (The Reframe)
+- H2-2: Technique 2
+- H2-3: Technique 4
+- H2-4: Technique 1
+- H2-5: Technique 3
+- H2-6: Technique 2
+- H2-7: Technique 4
+- H2-8: Technique 1
+- H2-9: Technique 3
+- Conclusion: Technique 1 (The Claim)
+- banned_opener_rule: check every opener against banned_opening_approaches in Blog Gen prompt before writing the second sentence.
+
+### Block 5 — Link Placements
+1. anchor: "almond nail shape ideas for your next intricate set" | section: H2-6 | context: after discussing short-nail-friendly intricate designs, natural segue to shape guidance | link_type: cross-site (verify URL before publish)
+2. anchor: "how gel polish holds up detailed nail art longer" | section: H2-9 | context: when discussing longevity/cost of intricate designs | link_type: cross-site (verify URL before publish)
+
+### Block 6 — AEO/GEO Plan
+- aeo_assignments:
+  1. "What makes a nail design intricate?" → H2-1 → direct 2-3 sentence answer immediately after heading
+  2. "Can you do intricate nail designs at home?" → H2-8 → direct answer paragraph before elaboration
+  3. "How long does intricate nail art take?" → H2-9 → direct answer paragraph before elaboration
+  4. "What is mehndi-inspired nail art?" → H2-5 → direct definitional answer after heading
+- geo_entity_statements:
+  1. entity: "3D nail art" → H2-4 → clear declarative definition sentence
+  2. entity: "negative space technique" → H2-3 → clear declarative definition sentence
+  3. entity: "encapsulated nail art" → H2-4 → clear declarative definition sentence
+
+### Block 7 — Active Constraints
+- em_dash_banned: yes, replace with comma/new sentence/parentheses/but
+- banned_vocab_watch: "elevate," "unleash," "game-changer," "must-have," "in the world of," "boasts"
+- british_english_active: colour, recognise, -ise, -our — every instance
+- keyword_density_reminder: count mentions after every 2 H2s, verify pace toward 7-8 total, denser in first half
+- image_path_reminder: /images/blog/intricate-nail-designs/filename.webp
+- internal_link_url_reminder: full paths only, verify cross-site URLs exist before publishing
+- hero_image_reminder: frontmatter only
+- strong_tag_reminder: every primary keyword mention wrapped in `<strong>`, scan after every paragraph
