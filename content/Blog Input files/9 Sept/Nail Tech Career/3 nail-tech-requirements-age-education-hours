@@ -1,0 +1,258 @@
+# INPUT FILE — nail-tech-requirements-age-education-hours
+CLUSTER MODE — cluster context loaded (Nail Tech Career, topic_slug: nail-tech-career)
+
+## SECTION 1 — FILE AUTHORITY
+THIS FILE IS THE SINGLE SOURCE OF TRUTH FOR THE BLOG GEN AGENT. All values in POST_CONSTANTS are hardcoded. Blog Gen Agent does not ask, adjust, or override them.
+
+## SECTION 2 — POST_CONSTANTS
+- slug: nail-tech-requirements-age-education-hours
+- topic_slug: nail-tech-career
+- canonical: https://mirelleinspo.com/blog/nail-tech-career/nail-tech-requirements-age-education-hours
+- post_type: spoke
+- intent: informational
+- word_count: 2200
+- image_count: 1 (USER OVERRIDE — hero only, zero body images. Overrides phase_2 default of 4-5 for non-inspirational informational posts.)
+- show_inspo_gallery_link: false (USER OVERRIDE — locked, not research-derived)
+- template: split-left
+- hero_dimensions: 800x800
+- category: Nail Tech Career
+- publish_date: 2026-07-27
+- author: jyoti-mirelle
+
+## SECTION 3 — CLUSTER SNAPSHOT
+- pillar_slug: how-to-become-a-nail-tech
+- pillar_title: How to Become a Nail Tech: Step-by-Step Guide
+- pillar_primary_keyword: how to become a nail tech
+- this_post_slug: nail-tech-requirements-age-education-hours
+- this_post_role: spoke
+- keywords_to_avoid: how to become a nail tech, nail technician license requirements, nail tech school cost, is nail tech school worth it, nail technician salary, nail tech job outlook demand, should i become a nail tech, independent nail tech vs salon
+
+## SECTION 4 — SERP ANALYSIS
+**Method note:** Top competitor URLs analysed via web_fetch (full-page fetch), not search snippets, per session instruction.
+
+- competitor_gaps:
+  - No competitor gives a single clear answer to "how old do I actually need to be" — every source lists 3-5 different state ages (16/17/18) with zero framework for a reader to figure out their own state fast. Confirmed 3+ sources (Milady, Insureon, beautylicenseguide.com).
+  - GED-specific reassurance is buried. Multiple sources confirm GED is accepted almost everywhere, but none frame it as direct reassurance for a reader without a diploma. Confirmed 3+ sources (Zippia, NEXT Insurance, bestgedclasses.org).
+  - No competitor explains WHY hours vary so widely (100-750+) — readers are shown the range with no context on what drives it (state law, theory vs. clinical split, apprenticeship vs. school-based). Confirmed 2+ sources (beautylicenseguide.com, Huckleberry).
+  - Nobody addresses the under-18 pathway as its own concept (parental consent, partial-credit routes, starting before finishing high school) as a distinct reassurance point. Confirmed 2+ sources (Milady AZ example, mirelleinspo/BYU-style real story signal).
+- missing_semantic_territory: "10th grade education" vs "high school diploma" distinction (some states only require 10th grade — this is a genuine surprise point); apprenticeship-hours-vs-school-hours as an alternate path; "clock hours" as the correct technical term competitors use inconsistently.
+- our_strategic_approach: Lead with the fact that requirements are a moving target by state, then immediately hand the reader a resolving framework (age bands, hour bands, GED status) instead of a wall of state examples. Position this post as the "before you even pick a school" checklist — the prerequisite gate, distinct from post 2's licensing-law depth and post 4's cost focus.
+- top_3_word_count_estimates: Milady ~1,950 words | Elaine Sterling ~450 words (thin) | Ogle School ~380 words (thin). Two of three top-ranking pages are shallow school-marketing pages, not genuine guides — real average is misleadingly low (~930w). Target set above this to actually serve informational intent depth (see word_count above).
+- top_3_keyword_density_baseline: "nail tech requirements" (or close variant) appears ~4x average across the three (Milady uses "requirements"/"prerequisites" interchangeably ~5x; ESI ~2x; Ogle ~3x).
+
+## SECTION 5 — AUDIENCE INTELLIGENCE
+- who_they_are: Pre-enrollment researchers — teens (16-18) checking if they're even eligible yet, and career-changing adults confirming they're not locked out by lacking a diploma. Zero industry knowledge yet; this is step zero before choosing a school.
+- what_they_want_from_this_post: A fast, direct answer: "Do I qualify right now?" — age threshold, education threshold, and a realistic hours range for their likely state, without reading 50 state statutes.
+- what_frustrates_them: Every source they find lists 5+ conflicting state examples with no resolution mechanism; nobody says plainly "here's how to check yours in 2 minutes" or reassures GED-holders and under-18s directly.
+- top_5_pain_points:
+  1. Confusion over exact minimum age — sources disagree (16 vs 17 vs 18) with no clear "why"
+  2. Fear that lacking a high school diploma disqualifies them entirely
+  3. Sticker shock at training-hour ranges swinging from 100 to 750+ with no explanation
+  4. Uncertainty whether they can start training before turning 18 or finishing school
+  5. Not knowing the difference between "10th grade education" and "high school diploma" requirements
+- exact_user_phrases: "how old do you have to be to do nails", "do you need a diploma to be a nail tech", "can I start nail school at 16", "nail tech requirements by state", "how many hours is nail school", "do I need a GED for nail tech", "nail tech age requirement", "nail school prerequisites", "can you do nail tech without highschool diploma", "what do you need to become a nail technician"
+- intent_content_signals: Wants scannable structure (age/education/hours as distinct sub-answers, not one long paragraph); wants a direct yes/no framing before nuance; responds to real state examples used as illustration, not exhaustive lists; wants reassurance tone for GED/under-18 readers, not a legal-document tone.
+
+## SECTION 6 — SEMANTIC KEYWORD DATA
+- primary_keyword: nail tech requirements
+- keyword_variations: nail technician requirements, requirements to become a nail tech, nail tech prerequisites, nail school requirements, nail tech eligibility requirements, basic nail tech requirements
+- cluster_keywords: nail tech age requirement, nail tech education requirement, nail tech training hours, GED nail technician, high school diploma nail tech, minimum age nail school, nail tech clock hours, apprenticeship nail tech hours, 10th grade education nail tech, prerequisites nail tech program, nail tech program eligibility
+- lsi_terms: clock hours, theory hours, clinical hours, cosmetology school prerequisites, state-approved program, board-approved school, licensing board, apprenticeship route, entry requirements, eligibility criteria, GED certificate, high school equivalency, parental consent, under 18 nail school, training hour range
+- aeo_terms: "How old do you have to be to become a nail tech?", "Do you need a high school diploma to become a nail tech?", "How many hours does nail tech school require?", "Can you go to nail school at 16?", "Do you need a GED to be a nail technician?", "What are the basic requirements to become a nail tech?", "Is 10th grade enough to start nail school?", "Can you become a nail tech without finishing high school?"
+- technical_terms: clock hours, theory instruction, clinical/practical hours, state board of cosmetology, licensure by examination, apprenticeship hours, GED equivalency
+- user_language: "do I even qualify", "am I too young", "I don't have my diploma yet", "how many hours is that really", "can I start now or do I have to wait", "is nail school hard to get into", "what do I need before I even apply", "does my state require more hours", "I just want a straight answer", "nobody explains this clearly"
+
+## SECTION 7 — VOICE AND AI QUERIES
+1. How old do you have to be to become a nail tech?
+2. Do you need a high school diploma to become a nail tech?
+3. Can you go to nail school at 16?
+4. How many training hours does nail tech school require?
+5. Do you need a GED to become a nail technician?
+6. What is the minimum education needed for nail tech school?
+7. Can you become a nail tech without a high school diploma?
+8. What are the basic requirements to start nail tech school?
+9. Is 10th grade education enough for nail school in some states?
+10. Can you start nail tech training before turning 18?
+11. What is the difference between clock hours and theory hours in nail school?
+12. Do all states require the same number of nail tech training hours?
+13. Can I do an apprenticeship instead of nail school?
+14. What documents do I need to enroll in nail tech school?
+15. Does nail tech school require a background check?
+
+## SECTION 8 — HOOK AND CTR
+- selected_trigger: Trigger 1 — Curiosity Gap
+- trigger_rationale: Reader suspects they might not qualify (age, diploma, hours) and current content leaves that suspicion unresolved — curiosity gap directly targets that anxiety with a promise of clarity.
+- title: Nail Tech Requirements: Age, Education & Hours You Need
+- title_char_count: 56
+- meta_description: Confused about nail tech requirements? See the real age, education, and training-hour rules before you apply — no state-by-state guesswork.
+- meta_char_count: 143
+- intro_hook_brief: Open by naming the exact confusion (conflicting ages, unclear diploma rules) the reader has already hit while researching, then promise a direct, resolved answer instead of another list of state exceptions.
+- first_h2_hook_direction: Frame the first H2 as a direct voice-search-style question the reader is actually typing — "How Old Do You Have to Be to Become a Nail Tech?" — answered plainly in the first two sentences before any state nuance.
+
+## SECTION 9 — SEARCH JOURNEY
+- reader_arrival_state: Anxious and slightly confused — has seen conflicting age/hour numbers across sources and isn't sure if they personally qualify yet.
+- journey_arc:
+  1. Confirm this post will resolve the exact confusion they've hit (conflicting numbers)
+  2. Answer age requirement directly and plainly, then show real state variance as illustration, not overwhelm
+  3. Resolve education requirement — diploma vs GED vs 10th grade — with direct reassurance
+  4. Break down training hours with the "why it varies" explanation competitors skip
+  5. Close with a simple self-check the reader can act on immediately
+- promise_to_deliver: A direct, resolved answer on whether they currently qualify for nail tech training — age, education, and hours — without needing to cross-reference multiple confusing sources.
+- exit_state: Reader knows exactly what box they fall into (age/education-wise) and feels ready to move to choosing a school, not still confused about eligibility.
+
+## SECTION 10 — CONTENT STRUCTURE
+- h1: Nail Tech Requirements: Age, Education & Hours You Need
+- h2_structure:
+  1. How Old Do You Have to Be to Become a Nail Tech?
+  2. Do You Need a High School Diploma or GED?
+  3. Can You Start Nail Tech Training Before You Turn 18?
+  4. How Many Training Hours Does Nail Tech School Require?
+  5. Why Do Training Hours Vary So Much by State?
+  6. What Else Do You Need Before You Apply?
+- word_budget:
+  - introduction: 220 words
+  - H2-1 (Age): 380 words
+  - H2-2 (Diploma/GED): 380 words
+  - H2-3 (Under 18 pathway): 320 words
+  - H2-4 (Training hours): 380 words
+  - H2-5 (Why hours vary): 320 words
+  - H2-6 (What else to prepare): 200 words
+  - conclusion: 180 words
+  - (total: 2200 words)
+
+## SECTION 11 — INTERNAL LINKS
+Total = 4 (within 4-6 cap). No cross-site links qualified — mirelleinspo.com is design/style/local-business editorial, not career-education content; strict relevance filter excluded all results.
+
+all_internal_links:
+1. url_or_slug: /blog/nail-tech-career/how-to-become-a-nail-tech
+   title: How to Become a Nail Tech: Step-by-Step Guide
+   anchor_text: how to become a nail tech
+   placement_note: Introduction — frame this post as the prerequisite check before the full step-by-step pillar journey
+   link_type: cluster-pillar
+
+2. url_or_slug: /blog/nail-tech-career/nail-technician-license-requirements-by-state
+   title: Nail Technician License Requirements by State
+   anchor_text: state license requirements
+   placement_note: H2-5 (Why Hours Vary) — reader wants their exact state's legal hour requirement after understanding why it varies
+   link_type: cluster-spoke
+
+3. url_or_slug: /blog/nail-tech-career/how-much-does-nail-tech-school-cost
+   title: How Much Does Nail Tech School Cost?
+   anchor_text: how much nail tech school costs
+   placement_note: H2-6 (What Else to Prepare) — natural next question once eligibility is confirmed
+   link_type: cluster-spoke
+
+4. url_or_slug: /blog/nail-tech-career/nail-technician-salary-guide
+   title: Nail Technician Salary: What You Can Really Earn
+   anchor_text: what nail technicians really earn
+   placement_note: Conclusion — forward-looking link once reader knows they qualify, natural next-step curiosity
+   link_type: cluster-spoke
+
+(Gallery link omitted — spoke post, not pillar.)
+
+## SECTION 12 — VOICE AND TONE
+- recommended_voice: Reassuring guide — direct answers first, warmth second
+- tone_characteristics: Plainspoken and resolving (states the answer before the caveat); warmly reassuring toward GED-holders and under-18 readers; confident without sounding like a legal disclaimer; scannable and structured over narrative; avoids overwhelming the reader with exhaustive state lists.
+- language_style: Short, direct sentences for core answers ("Most states set the minimum at 16 to 18."), second person throughout ("you," "your state"), light use of real state examples as illustration rather than exhaustive lists, no jargon without a one-line definition attached.
+- audience_match: This reader wants permission and clarity, not a legal document — direct answers reduce their anxiety faster than caveated, hedge-everything prose ever could.
+
+## SECTION 13 — EXTERNAL LINKS
+1. url: https://www.milady.com/career-of-possibilities/how-to-become-a-nail-tech
+   context: When citing typical age/education prerequisite patterns and state variance examples (AZ, MI)
+   anchor_suggestion: state licensing board requirements
+
+2. url: https://beautylicenseguide.com/nail-technician-license/
+   context: When citing the age range (16-18) and hour range (100-750) across states as a credible aggregated source
+   anchor_suggestion: state-by-state licensing guide
+
+3. url: https://www.insureon.com/blog/nail-salon-technician-licensing-requirements
+   context: When citing specific state examples for age + hours (CA, FL, GA) to ground the "why it varies" section
+   anchor_suggestion: state cosmetology board requirements
+
+## SECTION 14 — EXECUTION PLAN
+
+### Block 1 — Keyword Execution
+- primary_keyword: nail tech requirements
+- top_3_density_baseline: 4
+- total_mention_target: 7 (baseline 4 + 3)
+- first_100_words_plan:
+  - rule: Primary keyword MUST appear twice in the first 100 words
+  - mention_1: Sentence 1-2 of introduction — naming the topic directly ("Nail tech requirements aren't the same in every state...")
+  - mention_2: Sentence 4-5 of introduction — reinforcing before the promise line ("...this post breaks down the real nail tech requirements so you know exactly where you stand")
+- first_half_target: 4 mentions — first 1,100 words (intro + H2-1 + H2-2)
+- second_half_target: 3 mentions — second 1,100 words (H2-3 through conclusion)
+- strong_tag_rule: EVERY mention of "nail tech requirements" (all 7) wrapped in `<strong>` tags. Scan after every paragraph.
+- keywords_to_avoid_active: how to become a nail tech, nail technician license requirements, nail tech school cost, is nail tech school worth it, nail technician salary, nail tech job outlook demand, should i become a nail tech, independent nail tech vs salon
+
+### Block 2 — Word Budget
+- total_target: 2200 words (±50 tolerance)
+- introduction: 220 words
+- conclusion: 180 words
+- h2_budgets:
+  1. How Old Do You Have to Be to Become a Nail Tech? — 380 words — medium
+  2. Do You Need a High School Diploma or GED? — 380 words — medium
+  3. Can You Start Nail Tech Training Before You Turn 18? — 320 words — medium
+  4. How Many Training Hours Does Nail Tech School Require? — 380 words — high
+  5. Why Do Training Hours Vary So Much by State? — 320 words — medium
+  6. What Else Do You Need Before You Apply? — 200 words — low
+- tracking_rule: Track running total after every H2; cut before moving on if over, never compensate later.
+
+### Block 3 — Image Plan (USER OVERRIDE: hero only)
+- total_images: 1 | hero_image: frontmatter only, never in body | body_images: 0, none to place
+- path_rule: /images/blog/nail-tech-career/nail-tech-requirements-age-education-hours/hero.webp
+
+### Block 4 — Opening Technique Assignments (no two consecutive same; conclusion = T1 or T3)
+  - Introduction: Technique 1 — The Claim (state plainly that requirements are simpler to resolve than the conflicting sources suggest)
+  - H2-1 (Age): Technique 3 — The Reframe (reframe "conflicting ages" as "a range you can check in seconds")
+  - H2-2 (Diploma/GED): Technique 2 — The Direct Answer (answer GED question in first sentence, no lead-up)
+  - H2-3 (Under 18): Technique 1 — The Claim (state the under-18 pathway exists plainly)
+  - H2-4 (Hours): Technique 3 — The Reframe (reframe wide hour range as state-driven, not arbitrary)
+  - H2-5 (Why hours vary): Technique 2 — The Direct Answer
+  - H2-6 (What else to prepare): Technique 1 — The Claim
+  - Conclusion: Technique 3 — The Reframe (reframe eligibility-checking as the easy first step, not a barrier)
+
+### Block 5 — Link Placements
+1. anchor_text: how to become a nail tech
+   full_url: /blog/nail-tech-career/how-to-become-a-nail-tech
+   place_in_section: Introduction
+   placement_context: Framing sentence positioning this post as step zero before the full pillar guide
+   link_type: cluster-pillar
+
+2. anchor_text: state license requirements
+   full_url: /blog/nail-tech-career/nail-technician-license-requirements-by-state
+   place_in_section: Why Do Training Hours Vary So Much by State?
+   placement_context: Pointing reader to full state-by-state legal detail after explaining the general pattern
+   link_type: cluster-spoke
+
+3. anchor_text: how much nail tech school costs
+   full_url: /blog/nail-tech-career/how-much-does-nail-tech-school-cost
+   place_in_section: What Else Do You Need Before You Apply?
+   placement_context: Natural next-question transition once eligibility is settled
+   link_type: cluster-spoke
+
+4. anchor_text: what nail technicians really earn
+   full_url: /blog/nail-tech-career/nail-technician-salary-guide
+   place_in_section: Conclusion
+   placement_context: Forward-looking link for a reader who now knows they qualify and wants the payoff picture
+   link_type: cluster-spoke
+
+### Block 6 — AEO/GEO Plan
+Each AEO term gets a direct 2-3 sentence answer immediately after its H2, before elaboration:
+1. "How old do you have to be to become a nail tech?" → H2-1: state the 16-18 range + most common threshold first.
+2. "Do you need a high school diploma to become a nail tech?" → H2-2: confirm GED accepted almost everywhere before exceptions.
+3. "How many hours does nail tech school require?" → H2-4: state common range (100-750) + typical band (300-400) before breakdown.
+4. "Can you go to nail school at 16?" → H2-3: yes/depends answer naming parental consent + partial-credit routes.
+
+GEO entity definitions (clear, declarative, no hedging):
+- Clock hours (H2-4): "Clock hours are the exact number of instructional hours a state requires before you're eligible to sit your licensing exam."
+- GED equivalency (H2-2): "A GED is a high school equivalency credential accepted in place of a diploma by nearly every state cosmetology board."
+
+### Block 7 — Active Constraints
+- em_dash_banned: Long em dash does not appear anywhere. Replace with comma, new sentence, parentheses, "but," or restructure.
+- banned_vocab_watch: "journey" (career-cliché risk), "unlock," "elevate," "dive into," "game-changer," "in today's world," "navigate" (overused for state-variance framing)
+- british_english_active: colour, recognise, -ise, -our — every instance
+- keyword_density_reminder: After every 2 H2s, count current mentions of "nail tech requirements." Verify on track for 7 total, denser in first half (4 of 7 by word 1,100).
+- image_path_reminder: /images/blog/nail-tech-career/nail-tech-requirements-age-education-hours/ — topic_slug in path always. Hero only, no body image paths needed.
+- internal_link_url_reminder: Full paths only — /blog/nail-tech-career/[slug]. Never bare /slug.
+- hero_image_reminder: Hero = frontmatter only. Never placed in body. This post has no body images at all per override.
+- strong_tag_reminder: Every "nail tech requirements" mention (all 7) in `<strong>` tags. Scan after every paragraph.
