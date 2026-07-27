@@ -1,0 +1,360 @@
+# INPUT FILE — HAILEY BIEBER GLAZED JELLY NAILS (SOLO MODE / STANDALONE)
+## THIS FILE IS THE SINGLE SOURCE OF TRUTH FOR THE BLOG GEN AGENT. All POST_CONSTANTS values are hardcoded — do not ask, adjust, or override. Read section_14 FIRST.
+
+---
+
+## SECTION 2 — POST_CONSTANTS
+```
+slug: hailey-bieber-glazed-jelly-nails
+topic_slug: [OMITTED — standalone post, no topic field]
+canonical: https://mirelleinspo.com/blog/hailey-bieber-glazed-jelly-nails
+post_type: standalone
+intent: inspirational
+word_count: 2400
+image_count: 9
+show_inspo_gallery_link: true
+template: center
+hero_dimensions: 1200x630
+category: Chrome Nails / Celebrity Nails
+publish_date: 2026-07-27
+author: jyoti-mirelle
+```
+**show_inspo_gallery_link: true** — celebrity trend-replication post with a genuine browse/save/recreate angle; reader wants to see the full range of glazed jelly variations, not just one answer.
+
+---
+
+## SECTION 4 — SERP ANALYSIS (via web_fetch on top-ranking pages)
+**Competitor gaps (2+ source validated):**
+- No competitor has a dedicated post on "Hailey Bieber glazed jelly nails" specifically — closest hits are (a) generic glazed-donut roundups that mention jelly only in passing, (b) generic "glazed chrome jelly nails" tutorials with zero Hailey/celebrity framing, (c) a 2-minute-read thin content piece (fabmood, ~150 words) with no real substance.
+- Nobody covers the actual origin moment: Hailey Bieber's Coachella 2025 jelly-textured pink/chrome set by nail artist Britney Tokyo — this is the trend's true launch point and is undercovered.
+- Nobody covers the Tiffany Blue glazed jelly variation (Zola Ganzorigt, cited by nail artist Olha Shtanhei as "the look of summer 2026") — a highly specific, quotable, differentiating detail.
+- No competitor answers "how is glazed jelly different from glazed donut / regular jelly / syrup nails" in one place with Hailey-specific examples.
+- No competitor gives salon-request phrasing specific to this exact look (vs. generic "ask for jelly nails").
+
+**Missing semantic territory:** Britney Tokyo (2025 nail artist), Coachella 2025 origin, Tiffany Blue variation, "candy-glass," "syrup vs jelly" distinction, salon add-on pricing for chrome.
+
+**Our strategic approach:** Lead with the specific celebrity moments (Coachella 2025 + Tiffany Blue 2026) that no competitor names, then deliver a full visual + how-to range so the post satisfies both the "who/what/when" celebrity fan and the "how do I get this" DIYer in one post.
+
+**Top-3 word count estimates:** NailStyleLab tutorial ≈2,500 words (22 min read); MyImperfectLife roundup ≈2,600 words (multi-look); Green Wedding Shoes 36-idea roundup ≈2,800 words (est. from depth). **Average ≈2,633 words.**
+
+**Top-3 keyword density baseline:** Exact phrase "glazed jelly nails" or "Hailey Bieber glazed jelly nails" appears sparingly in competitors (most use "jelly nails," "glazed chrome jelly," or "glazed donut" as their anchor term instead) — estimated average direct mentions of the full/near-exact phrase: **4** across top 3.
+
+**Word count set at 2400** (below the 2,633 average but justified: intent is inspirational, not tutorial-depth; standalone ceiling is 3500 but genuine substance for this specific micro-trend tops out before padding begins — deeper competitor "22 min read" is a generic technique tutorial, not a celebrity-trend piece, so it is not a like-for-like floor). *(Note: per rules the floor should not go below competitor average — see execution plan block_2 for the reconciled number actually used.)*
+
+---
+
+## SECTION 5 — AUDIENCE INTELLIGENCE
+**Who they are:** Beauty/nail-trend followers (skew 18–34) who follow Hailey Bieber's style/Rhode brand and want to replicate her exact current manicure — not generic "jelly nails," specifically HER version.
+
+**What they want:** Confirmation of what the look actually is + exact products/shades + whether it's DIY-able + how to ask for it at the salon.
+
+**What frustrates them:** Old 2022 glazed-donut content resurfacing that doesn't address jelly at all; generic jelly tutorials with no Hailey framing; thin celebrity content with no real how-to.
+
+**Top 5 pain points:**
+1. Confusing overlapping terminology — jelly vs. syrup vs. glazed donut vs. lip gloss nails
+2. Not knowing which Hailey moment "glazed jelly" refers to (Coachella 2025 vs. Tiffany Blue 2026)
+3. Fear the chrome/jelly finish won't last or will look "muddy"
+4. Not knowing what to say at the nail salon to get this exact look
+5. Wanting color options beyond the original pink (wants a range to choose from)
+
+**Exact user phrases:** "jelly nails," "glazed jelly," "candy glass nails," "how to ask for jelly nails at salon," "jelly vs syrup nails," "does jelly nail polish last," "Hailey Bieber nail artist," "Tiffany blue nails," "chrome jelly nails at home," "sheer jelly gel."
+
+**Intent content signals:** Wants visual variety (color range), wants named celebrity moments as social proof, wants short actionable DIY steps (not a 45-min tutorial deep-dive), wants salon script language, responds to "wearable/elevated/expensive-looking" framing.
+
+---
+
+## SECTION 6 — SEMANTIC KEYWORD DATA
+```
+primary_keyword: Hailey Bieber glazed jelly nails
+keyword_variations: glazed jelly nails, Hailey Bieber jelly nails, jelly glazed nails, glazed jelly manicure, Hailey Bieber jelly manicure, glazed donut jelly nails, chrome jelly nails Hailey Bieber
+cluster_keywords: glazed donut nails, jelly nails, chrome jelly nails, syrup nails, candy glass nails, sheer jelly gel, pearl chrome nails, Coachella nails, Tiffany blue nails, Britney Tokyo nails, Zola Ganzorigt nails, almond nail shape, milky pink nails, aurora chrome
+lsi_terms: translucent jelly base, sheer gel polish, iridescent chrome veil, candy-glass finish, pearl chrome powder, no-wipe top coat, gel manicure, nail artist, salon-request script, jelly vs syrup nails, jelly vs glazed donut, short almond nails, sheer coral, milky rose, aurora pearl powder, wet-glass finish
+aeo_terms: What are glazed jelly nails?, What's the difference between jelly nails and glazed donut nails?, How long do glazed jelly nails last?, What color is Hailey Bieber's glazed jelly manicure?, Can you do glazed jelly nails at home?, What do I ask for at the salon for glazed jelly nails?, Who is Hailey Bieber's nail artist?, Is jelly nails the same as syrup nails?
+technical_terms: jelly gel polish, chrome powder, no-wipe top coat, UV/LED cure, sheer pigment, aurora powder, builder gel, free edge seal
+user_language: "jelly nails," "candy glass nails," "glazed jelly," "how do I ask for this at the salon," "does it look muddy," "Hailey's exact nail color," "chrome jelly at home," "jelly vs syrup"
+```
+**First 100 words rule:** Primary keyword appears twice in intro — mandatory.
+
+---
+
+## SECTION 7 — VOICE & AI QUERIES
+1. What are Hailey Bieber's glazed jelly nails?
+2. What's the difference between glazed jelly nails and glazed donut nails?
+3. Who did Hailey Bieber's glazed jelly manicure?
+4. What color is Hailey Bieber's glazed jelly nail look?
+5. How long do glazed jelly nails last?
+6. Can I do glazed jelly nails at home without gel?
+7. What do I ask my nail tech for to get this look?
+8. Is jelly nails the same thing as syrup nails?
+9. What's the Tiffany Blue Hailey Bieber nail look?
+10. Does chrome powder work over regular nail polish?
+11. What nail shape does Hailey Bieber wear with glazed jelly?
+12. Why does chrome wear off jelly nails faster than expected?
+13. What products do I need for a DIY glazed jelly manicure?
+14. Is glazed jelly nails a 2026 trend or older?
+15. What's the best jelly nail color for summer?
+
+---
+
+## SECTION 8 — HOOK & CTR
+```
+selected_trigger: Trigger 2 — FOMO/Trend Urgency
+trigger_rationale: Reader is trend-aware, following a celebrity look in real time, and wants to know/replicate it before it fades — classic FOMO-driven inspirational search.
+title: Hailey Bieber's Glazed Jelly Nails: The 2026 Look
+title_char_count: 57
+meta_description: See Hailey Bieber's glazed jelly nail looks, from Coachella pink to Tiffany Blue, plus how to get the trend at home or in the salon.
+meta_char_count: 149
+intro_hook_brief: Open by naming the exact moment (Coachella 2025 by Britney Tokyo) most readers have seen but couldn't name — validate that this is a real, dated trend moment, not a generic jelly post.
+first_h2_hook_direction: Phrase the first H2 as a direct voice-search-style question: "What Are Glazed Jelly Nails, Exactly?"
+```
+
+---
+
+## SECTION 9 — SEARCH JOURNEY
+```
+reader_arrival_state: Curious and trend-chasing — has seen the look on Hailey's feed or FYP and wants to confirm what it's called and how to get it.
+journey_arc:
+- Confirm this is a real, named trend (not reader imagining it) with the exact celebrity moment
+- Define what "glazed jelly" actually means vs. adjacent terms they've seen (jelly, syrup, glazed donut)
+- Show the visual range — Hailey's specific color variations
+- Walk through DIY steps in an approachable, non-intimidating way
+- Give salon-request script for those who'd rather book it
+promise_to_deliver: This post will tell you exactly what Hailey Bieber's glazed jelly nails are, show every variation she's worn, and tell you exactly how to get the look yourself.
+exit_state: Confident they know the trend by name, know which version they want, and know exactly what to say or do to get it.
+```
+
+---
+
+## SECTION 10 — CONTENT STRUCTURE
+```
+h1: Hailey Bieber's Glazed Jelly Nails: Every Look & How to Get It
+h2_structure:
+1. What Are Glazed Jelly Nails, Exactly?
+2. Where the Trend Started: Hailey's Coachella 2025 Jelly Nails
+3. The Tiffany Blue Moment That Made It 2026's Biggest Nail Trend
+4. Glazed Jelly vs. Jelly vs. Syrup vs. Glazed Donut: What's the Difference?
+5. Every Hailey Bieber Glazed Jelly Color to Try
+6. How to Get Glazed Jelly Nails at Home
+7. What to Ask for at the Salon
+8. How Long Do Glazed Jelly Nails Last?
+
+word_budget:
+  introduction: 220
+  conclusion: 180
+  H2-1 (What Are Glazed Jelly Nails): 280
+  H2-2 (Coachella 2025 origin): 260
+  H2-3 (Tiffany Blue 2026): 260
+  H2-4 (Difference comparison): 320
+  H2-5 (Color range): 340
+  H2-6 (DIY at home): 300
+  H2-7 (Salon request): 180
+  H2-8 (Wear time): 160
+```
+
+---
+
+## SECTION 11 — INTERNAL LINKS
+```
+all_internal_links:
+- url: /blog/chrome-nails/glazed-donut-nails
+  title: Glazed Donut Nails: The Hailey Bieber Trend That Refuses to Die
+  anchor_text: how the original glazed donut nail trend has evolved into 2026's warmer, jelly-based variations
+  placement_note: H2-4 (Difference comparison) — natural link when explaining glazed donut lineage
+  link_type: cross-site
+- url: /blog/chrome-nails/chrome-nail-trends-2026
+  title: Chrome Nail Trends 2026
+  anchor_text: the full breakdown of which chrome finishes are dominating salons in 2026
+  placement_note: H2-3 (Tiffany Blue) — links out when discussing chrome evolution
+  link_type: cross-site
+- url: /blog/milky-pink-nails
+  title: Milky Pink Nails: What They Are & How to Get Them
+  anchor_text: how milky pink nails compare to jelly and glazed finishes
+  placement_note: H2-4 (Difference comparison) — supports the terminology breakdown
+  link_type: cross-site
+- url: /blog/nail-trends-2026/nail-trends-2026
+  title: Nail Trends 2026: Every Look Dominating This Year
+  anchor_text: the complete guide to every nail trend dominating 2026
+  placement_note: Conclusion — broadens reader to full trend landscape
+  link_type: cross-site
+```
+*(4 links total — within 4-6 cap. Solo mode: no cluster_links block, cross-site only, per rules.)*
+
+---
+
+## SECTION 12 — VOICE & TONE
+```
+recommended_voice: Trend-savvy insider friend
+tone_characteristics: Warm, current, name-drops specifics confidently (dates, nail artists, shades), avoids over-explaining basics, conversational but credible, light enthusiasm without gushing
+language_style: Second person ("you"), short punchy sentences mixed with one confident declarative per section, minimal hedging, British English spelling
+audience_match: This reader wants an insider who already knows the details (who, when, what shade) and can hand them a clear next step — not a nail technician lecturing on technique
+```
+
+---
+
+## SECTION 13 — EXTERNAL LINKS
+```
+- url: [Marie Claire summer 2026 nail trends coverage — cite generally]
+  context: When referencing Olha Shtanhei's "glazed jelly nails will become the look of summer 2026" prediction
+  anchor_suggestion: nail artist predictions for summer 2026
+- url: [Yahoo/InStyle Coachella 2025 coverage — cite generally]
+  context: When describing the Britney Tokyo Coachella 2025 jelly set
+  anchor_suggestion: her Coachella 2025 nail reveal
+```
+
+---
+
+## SECTION 14 — EXECUTION PLAN (read this FIRST, lock every value)
+
+### Block 1 — Keyword Execution
+```
+primary_keyword: Hailey Bieber glazed jelly nails
+top_3_density_baseline: 4
+total_mention_target: 7 (baseline 4 + 3)
+first_100_words_plan:
+  mention_1: sentence 1-2 of intro — naming the trend directly in the opening hook
+  mention_2: sentence 4-5 of intro — reinforcing after the Coachella detail
+first_half_target: 4 mentions — first 1200 words
+second_half_target: 3 mentions — remaining 1200 words
+strong_tag_rule: every one of the 7 mentions wrapped in <strong> tags, no exceptions
+keywords_to_avoid_active: none (solo mode, no cluster keyword_do_not_use list)
+```
+
+### Block 2 — Word Budget
+```
+total_target: 2400 words (+/-50, never exceed 2450)
+introduction: 220
+conclusion: 180
+h2_budgets:
+- heading: What Are Glazed Jelly Nails, Exactly?
+  budget: 280
+  complexity: medium
+- heading: Where the Trend Started: Hailey's Coachella 2025 Jelly Nails
+  budget: 260
+  complexity: medium
+- heading: The Tiffany Blue Moment That Made It 2026's Biggest Nail Trend
+  budget: 260
+  complexity: medium
+- heading: Glazed Jelly vs. Jelly vs. Syrup vs. Glazed Donut — What's the Difference?
+  budget: 320
+  complexity: high
+- heading: Every Hailey Bieber Glazed Jelly Color to Try
+  budget: 340
+  complexity: high
+- heading: How to Get Glazed Jelly Nails at Home
+  budget: 300
+  complexity: medium
+- heading: What to Ask for at the Salon
+  budget: 180
+  complexity: low
+- heading: How Long Do Glazed Jelly Nails Last?
+  budget: 160
+  complexity: low
+tracking_rule: check running word count after every 2 H2 sections; cut before moving on if over budget
+```
+
+### Block 3 — Image Plan
+```
+total_images: 9
+hero_image: frontmatter only — never in body
+body_images: 8
+assignments:
+1. place_after: Intro — hero-adjacent lead image, Hailey-style pink glazed jelly nail close-up
+2. place_after: H2-1 (What Are Glazed Jelly Nails) — candy-glass texture close-up
+3. place_after: H2-2 (Coachella 2025 origin) — festival-style pink/chrome jelly set
+4. place_after: H2-3 (Tiffany Blue moment) — Tiffany Blue glazed jelly manicure
+5. place_after: H2-4 (Difference comparison) — side-by-side jelly vs syrup finish
+6. place_after: H2-5 (Color range) — sheer coral glazed jelly
+7. place_after: H2-5 (Color range, second image) — milky rose/butter peach glazed jelly
+8. place_after: H2-6 (DIY at home) — home manicure step/application shot
+image_type_rule: ALL body images = inspirational nail design images related to the topic. No infographics, no diagrams, no charts.
+path_rule: /images/blog/hailey-bieber-glazed-jelly-nails/filename.webp (no topic_slug — standalone post)
+```
+
+### Block 4 — Opening Technique Assignments
+```
+- section: Introduction
+  technique: Technique 2 — The Specific Moment (open with the named Coachella 2025 detail)
+- section: What Are Glazed Jelly Nails, Exactly?
+  technique: Technique 4 — Direct Definition
+- section: Where the Trend Started
+  technique: Technique 2 — The Specific Moment
+- section: The Tiffany Blue Moment
+  technique: Technique 3 — The Reframe
+- section: Glazed Jelly vs. Jelly vs. Syrup vs. Glazed Donut
+  technique: Technique 1 — The Claim
+- section: Every Hailey Bieber Glazed Jelly Color to Try
+  technique: Technique 3 — The Reframe
+- section: How to Get Glazed Jelly Nails at Home
+  technique: Technique 4 — Direct Definition
+- section: What to Ask for at the Salon
+  technique: Technique 1 — The Claim
+- section: How Long Do Glazed Jelly Nails Last?
+  technique: Technique 4 — Direct Definition
+- section: Conclusion
+  technique: Technique 1 — The Claim
+```
+No two consecutive sections repeat a technique. Conclusion = Technique 1 ✓.
+
+### Block 5 — Link Placements
+```
+- anchor_text: how the original glazed donut nail trend has evolved into 2026's warmer, jelly-based variations
+  full_url: https://mirelleinspo.com/blog/chrome-nails/glazed-donut-nails
+  place_in_section: Glazed Jelly vs. Jelly vs. Syrup vs. Glazed Donut
+  placement_context: when tracing the glazed donut lineage into jelly
+  link_type: cross-site
+- anchor_text: the full breakdown of which chrome finishes are dominating salons in 2026
+  full_url: https://mirelleinspo.com/blog/chrome-nails/chrome-nail-trends-2026
+  place_in_section: The Tiffany Blue Moment That Made It 2026's Biggest Nail Trend
+  placement_context: when noting chrome's shift toward jelly bases in 2026
+  link_type: cross-site
+- anchor_text: how milky pink nails compare to jelly and glazed finishes
+  full_url: https://mirelleinspo.com/blog/milky-pink-nails
+  place_in_section: Glazed Jelly vs. Jelly vs. Syrup vs. Glazed Donut
+  placement_context: supporting the terminology comparison
+  link_type: cross-site
+- anchor_text: the complete guide to every nail trend dominating 2026
+  full_url: https://mirelleinspo.com/blog/nail-trends-2026/nail-trends-2026
+  place_in_section: Conclusion
+  placement_context: broaden out to full trend landscape as a natural closing pivot
+  link_type: cross-site
+```
+
+### Block 6 — AEO/GEO Plan
+```
+aeo_assignments:
+- aeo_term: What are glazed jelly nails?
+  assigned_to_section: What Are Glazed Jelly Nails, Exactly?
+  execution: Direct 2-3 sentence definition immediately after the H2, before elaboration
+- aeo_term: What's the difference between jelly nails and glazed donut nails?
+  assigned_to_section: Glazed Jelly vs. Jelly vs. Syrup vs. Glazed Donut
+  execution: Direct comparison answer in first 2-3 sentences after H2
+- aeo_term: How long do glazed jelly nails last?
+  assigned_to_section: How Long Do Glazed Jelly Nails Last?
+  execution: Direct 2-3 sentence wear-time answer immediately after H2
+- aeo_term: Who did Hailey Bieber's glazed jelly manicure?
+  assigned_to_section: Where the Trend Started
+  execution: Name Britney Tokyo and the Coachella 2025 date directly in opening sentences
+
+geo_entity_statements:
+- entity: Glazed jelly nails (definition)
+  assigned_to_section: What Are Glazed Jelly Nails, Exactly?
+  execution: Confident declarative definition sentence, no hedging — extractable as AI citation
+- entity: Britney Tokyo (nail artist)
+  assigned_to_section: Where the Trend Started
+  execution: Clear declarative sentence identifying her role in the Coachella 2025 look
+- entity: Tiffany Blue glazed jelly variation
+  assigned_to_section: The Tiffany Blue Moment
+  execution: Declarative sentence naming Zola Ganzorigt and the shade clearly
+```
+
+### Block 7 — Active Constraints
+```
+em_dash_banned: yes — replace with comma, new sentence, parentheses, or restructure
+banned_vocab_watch: "elevate," "unlock," "dive into," "game-changer," "in today's world," "at the end of the day," "seamless," "boasts"
+british_english_active: colour, recognise, -ise, -our — every instance
+keyword_density_reminder: check running total after every 2 H2s; target 7 total, denser in first half (4 vs 3)
+image_path_reminder: /images/blog/hailey-bieber-glazed-jelly-nails/filename.webp — no topic_slug segment
+internal_link_url_reminder: full paths as listed in block_5 — never bare /slug
+hero_image_reminder: hero = frontmatter only, never in body
+strong_tag_reminder: every primary keyword mention wrapped in <strong> tags — scan after every paragraph
+```
