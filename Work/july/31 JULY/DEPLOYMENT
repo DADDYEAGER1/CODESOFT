@@ -1,0 +1,472 @@
+#!/usr/bin/env python3
+"""
+Broken Internal Link Checker (DRY RUN)
+========================================
+Scans .md / .mdx content files for internal <a href="..."> links,
+compares them against a canonical list of valid URLs, and reports
+any broken / mismatched links along with a best-guess correct match.
+
+This script is READ-ONLY. It does not modify any content files.
+It only writes a report (CSV + printed summary).
+
+USAGE:
+    python check_links.py
+
+CONFIGURE the variables in the CONFIG section below before running.
+"""
+
+import os
+import re
+import csv
+import difflib
+from pathlib import Path
+from urllib.parse import urlparse
+
+# =========================== CONFIG =================================
+
+# Your site's domain (used to recognize "internal" absolute links like
+# https://yourdomain.com/some/path and to strip it when normalizing).
+# NOTE: your canonical file used "mirellebeauty.com" but you earlier
+# mentioned "mirelleinspo.com" -- double check this before running.
+DOMAIN = "mirellebeauty.com"
+
+# Path to the canonical URLs list (one URL per line).
+CANONICAL_FILE = r"C:\Users\gaurav verma\scripts\canonical_urls.txt"
+
+# Path to the content folder to scan recursively (.md and .mdx files).
+CONTENT_DIR = r"C:\Users\gaurav verma\mirelle baby\mirelle-site\src\content"
+
+# Where to write the dry-run reports.
+REPORT_CSV = "broken_links_report.csv"
+REPORT_MD = "broken_links_report.md"
+
+# Minimum similarity score (0-1) for a "best guess" suggestion to be
+# shown. Below this, we just say "no close match found".
+MIN_SUGGESTION_SCORE = 0.45
+
+# Similarity score at/above which we consider it a confident "near typo".
+HIGH_CONFIDENCE_SCORE = 0.85
+
+# =====================================================================
+
+
+def normalize_path(url_or_path: str) -> str:
+    """
+    Normalize a URL or path down to a comparable "slug path":
+    - strips domain/scheme if present
+    - strips query string and fragment
+    - strips trailing slash
+    - lowercases
+    """
+    if not url_or_path:
+        return ""
+
+    parsed = urlparse(url_or_path)
+
+    if parsed.scheme or parsed.netloc:
+        path = parsed.path
+    else:
+        # root-relative or relative path like "/blog/foo" or "blog/foo"
+        path = url_or_path.split("?")[0].split("#")[0]
+
+    path = path.strip()
+    if not path.startswith("/"):
+        path = "/" + path
+    if len(path) > 1 and path.endswith("/"):
+        path = path[:-1]
+
+    return path.lower()
+
+
+def load_canonicals(canonical_file: str):
+    """
+    Load canonical URLs, return:
+      - canonical_lookup: dict normalized_path -> original_url
+      - canonical_paths: list of normalized paths (for fuzzy matching)
+    """
+    canonical_lookup = {}
+    with open(canonical_file, "r", encoding="utf-8") as f:
+        for line in f:
+            line = line.strip()
+            if not line:
+                continue
+            norm = normalize_path(line)
+            canonical_lookup[norm] = line
+    return canonical_lookup
+
+
+def is_external_domain(href: str, domain: str) -> bool:
+    """
+    Return True if href points to a different domain (external link).
+    Root-relative links (starting with /) are always internal.
+    Protocol-relative / mailto / tel / anchor-only links are treated
+    as "external / skip" (not something we correct against canonicals).
+    """
+    href = href.strip()
+
+    if href.startswith("#"):
+        return True  # pure anchor, not a page link
+    if href.startswith("mailto:") or href.startswith("tel:"):
+        return True
+    if href.startswith("//"):
+        # protocol-relative -- check host
+        host = href[2:].split("/")[0].lower()
+        return domain.lower() not in host
+    if href.startswith("/"):
+        return False  # root-relative -> internal
+
+    parsed = urlparse(href)
+    if parsed.netloc:
+        return domain.lower() not in parsed.netloc.lower()
+
+    # relative path without leading slash, e.g. "acrylic-nails/foo"
+    return False
+
+
+# Matches an entire <a ...>...</a> tag (non-greedy, dotall so it can
+# span lines), capturing the opening tag attributes and inner text.
+A_TAG_RE = re.compile(r"<a\s+([^>]*?)>(.*?)</a>", re.IGNORECASE | re.DOTALL)
+
+# Matches an entire <img ... /> tag (self-closing or not), so we can
+# strip these out before looking for links (images are never links,
+# but this also guards against nested/adjacent weirdness).
+IMG_TAG_RE = re.compile(r"<img\b[^>]*?/?>", re.IGNORECASE | re.DOTALL)
+
+# Extract href='...' or href="..." from an attribute string.
+HREF_RE = re.compile(r"""href\s*=\s*(['"])(.*?)\1""", re.IGNORECASE)
+
+
+def find_links_in_text(text: str):
+    """
+    Yield (href, anchor_text, line_number) for every <a href="..."> in
+    the given text, skipping any that live inside <img> tags (they
+    won't match A_TAG_RE anyway since img tags aren't <a> tags -- this
+    is mainly a safety net for malformed markup).
+    """
+    # Strip out img tags entirely first, just as a safety measure.
+    text_no_img = IMG_TAG_RE.sub("", text)
+
+    for match in A_TAG_RE.finditer(text_no_img):
+        attrs, inner = match.group(1), match.group(2)
+        href_match = HREF_RE.search(attrs)
+        if not href_match:
+            continue
+        href = href_match.group(2)
+        # anchor text: strip any nested tags for a clean label
+        anchor_text = re.sub(r"<[^>]+>", "", inner).strip()
+        line_number = text_no_img.count("\n", 0, match.start()) + 1
+        yield href, anchor_text, line_number
+
+
+def best_guess(norm_broken_path: str, canonical_paths):
+    """
+    Return (best_match_path, score) using difflib fuzzy matching
+    against the list of canonical normalized paths.
+    """
+    if not canonical_paths:
+        return None, 0.0
+
+    matches = difflib.get_close_matches(
+        norm_broken_path, canonical_paths, n=1, cutoff=0.0
+    )
+    if not matches:
+        return None, 0.0
+
+    best = matches[0]
+    score = difflib.SequenceMatcher(None, norm_broken_path, best).ratio()
+    return best, score
+
+
+# Order matters: first matching rule wins.
+CASE_TRAILING_SLASH = "Trailing slash mismatch"
+CASE_YEAR_NUMBER = "Wrong number / year in slug"
+CASE_SECTION_PREFIX = "Wrong section (e.g. /blog/ vs /inspiration/)"
+CASE_NEAR_TYPO = "Near typo / minor spelling difference"
+CASE_MODERATE = "Moderate mismatch (needs manual review)"
+CASE_NO_MATCH = "No close match found"
+
+
+def classify_case(norm_broken: str, norm_guess: str, score: float) -> str:
+    """
+    Classify *why* a broken link is broken, so the markdown report can
+    group similar issues together for faster human review.
+    """
+    if not norm_guess:
+        return CASE_NO_MATCH
+
+    # Trailing slash only difference (should be rare since we normalize
+    # slashes already, but covers cases where everything else is identical
+    # except normalize_path couldn't fully reconcile something odd).
+    if norm_broken.rstrip("/") == norm_guess.rstrip("/") and norm_broken != norm_guess:
+        return CASE_TRAILING_SLASH
+
+    # Section prefix differs but the rest of the path (tail) matches.
+    broken_parts = [p for p in norm_broken.split("/") if p]
+    guess_parts = [p for p in norm_guess.split("/") if p]
+    if (
+        len(broken_parts) == len(guess_parts)
+        and len(broken_parts) >= 2
+        and broken_parts[0] != guess_parts[0]
+        and broken_parts[1:] == guess_parts[1:]
+    ):
+        return CASE_SECTION_PREFIX
+
+    # Same structure, but a number/year differs somewhere in the slug
+    # (e.g. "2027" vs "2026", or "trends-2025" vs "trends-2026").
+    broken_nums = re.findall(r"\d+", norm_broken)
+    guess_nums = re.findall(r"\d+", norm_guess)
+    broken_no_nums = re.sub(r"\d+", "#", norm_broken)
+    guess_no_nums = re.sub(r"\d+", "#", norm_guess)
+    if broken_nums != guess_nums and broken_no_nums == guess_no_nums:
+        return CASE_YEAR_NUMBER
+
+    if score >= HIGH_CONFIDENCE_SCORE:
+        return CASE_NEAR_TYPO
+
+    if score >= MIN_SUGGESTION_SCORE:
+        return CASE_MODERATE
+
+    return CASE_NO_MATCH
+
+
+def scan_content(content_dir: str, domain: str, canonical_lookup: dict):
+    """
+    Walk content_dir for .md/.mdx files, extract internal links, and
+    check each against canonical_lookup. Returns a list of result rows
+    (dicts) -- one per internal link found (both OK and broken), so
+    you get a full picture, plus a separate broken-only list.
+    """
+    canonical_paths = list(canonical_lookup.keys())
+    all_rows = []
+    broken_rows = []
+
+    content_path = Path(content_dir)
+    files = sorted(content_path.rglob("*.md")) + sorted(content_path.rglob("*.mdx"))
+
+    for file_path in files:
+        try:
+            text = file_path.read_text(encoding="utf-8")
+        except Exception as e:
+            print(f"  [WARN] Could not read {file_path}: {e}")
+            continue
+
+        for href, anchor_text, line_no in find_links_in_text(text):
+            if is_external_domain(href, domain):
+                continue  # skip external links, mailto, tel, pure anchors
+
+            norm = normalize_path(href)
+
+            is_ok = norm in canonical_lookup
+            row = {
+                "file": str(file_path.relative_to(content_path)),
+                "line": line_no,
+                "found_href": href,
+                "anchor_text": anchor_text,
+                "status": "OK" if is_ok else "BROKEN",
+                "suggested_fix": "",
+                "confidence": "",
+                "case": "",
+            }
+
+            if not is_ok:
+                guess, score = best_guess(norm, canonical_paths)
+                case = classify_case(norm, guess, score)
+                row["case"] = case
+
+                if guess and score >= MIN_SUGGESTION_SCORE:
+                    row["suggested_fix"] = canonical_lookup[guess]
+                    row["confidence"] = f"{score:.2f}"
+                else:
+                    row["suggested_fix"] = "(no close match found)"
+                    row["confidence"] = f"{score:.2f}" if guess else "0.00"
+                broken_rows.append(row)
+
+            all_rows.append(row)
+
+    return all_rows, broken_rows
+
+
+# Preferred display order for case sections in the markdown report.
+CASE_ORDER = [
+    CASE_TRAILING_SLASH,
+    CASE_YEAR_NUMBER,
+    CASE_SECTION_PREFIX,
+    CASE_NEAR_TYPO,
+    CASE_MODERATE,
+    CASE_NO_MATCH,
+]
+
+CASE_DESCRIPTIONS = {
+    CASE_TRAILING_SLASH: (
+        "The link matches a canonical URL exactly except for a missing or "
+        "extra trailing slash. Safe, mechanical fix."
+    ),
+    CASE_YEAR_NUMBER: (
+        "The link's slug is otherwise identical to a canonical URL but a "
+        "number (often a year, e.g. 2027 vs 2026) differs. Likely an "
+        "outdated year reference or simple typo -- verify the intended year "
+        "before applying."
+    ),
+    CASE_SECTION_PREFIX: (
+        "The link points to the wrong top-level section (e.g. /blog/ vs "
+        "/inspiration/) but the rest of the path matches a canonical URL "
+        "exactly. Likely the content moved to a different section."
+    ),
+    CASE_NEAR_TYPO: (
+        f"High-confidence match (similarity >= {HIGH_CONFIDENCE_SCORE}) -- "
+        "almost certainly a small spelling/formatting typo. Generally safe "
+        "to apply, but do a quick visual check."
+    ),
+    CASE_MODERATE: (
+        f"Medium-confidence match (similarity between {MIN_SUGGESTION_SCORE} "
+        f"and {HIGH_CONFIDENCE_SCORE}). The suggested canonical is a "
+        "plausible guess but not a strong one -- review manually before "
+        "applying."
+    ),
+    CASE_NO_MATCH: (
+        "No canonical URL was found that's even loosely similar to this "
+        "link. This may be a page that no longer exists, was renamed "
+        "beyond recognition, or was never a valid page. Needs manual "
+        "investigation -- do not auto-apply."
+    ),
+}
+
+
+def write_markdown_report(broken_rows, report_path: str, domain: str,
+                           canonical_count: int, total_internal_links: int):
+    """
+    Write a human-readable Markdown report, grouping broken links by
+    the *type* of mismatch (case), so a person can scan through each
+    category and judge the suggested fixes in context.
+    """
+    grouped = {case: [] for case in CASE_ORDER}
+    for row in broken_rows:
+        grouped.setdefault(row["case"], []).append(row)
+
+    lines = []
+    lines.append("# Broken Internal Link Report (Dry Run)")
+    lines.append("")
+    lines.append(
+        "This report was generated by a **read-only dry run**. "
+        "No content files were modified."
+    )
+    lines.append("")
+    lines.append(f"- Domain considered internal: `{domain}`")
+    lines.append(f"- Canonical URLs loaded: **{canonical_count}**")
+    lines.append(f"- Internal links scanned: **{total_internal_links}**")
+    lines.append(f"- Broken internal links found: **{len(broken_rows)}**")
+    lines.append("")
+    lines.append("## Summary by case type")
+    lines.append("")
+    lines.append("| Case type | Count |")
+    lines.append("|---|---|")
+    for case in CASE_ORDER:
+        count = len(grouped.get(case, []))
+        if count:
+            lines.append(f"| {case} | {count} |")
+    lines.append("")
+    lines.append("---")
+    lines.append("")
+
+    for case in CASE_ORDER:
+        rows = grouped.get(case, [])
+        if not rows:
+            continue
+
+        lines.append(f"## {case} ({len(rows)})")
+        lines.append("")
+        lines.append(f"> {CASE_DESCRIPTIONS[case]}")
+        lines.append("")
+
+        for row in rows:
+            lines.append(f"### `{row['file']}` (line {row['line']})")
+            lines.append("")
+            lines.append(f"- **Anchor text:** {row['anchor_text']!r}")
+            lines.append(f"- **Found href:** `{row['found_href']}`")
+            lines.append(f"- **Suggested fix:** `{row['suggested_fix']}`")
+            lines.append(f"- **Confidence:** {row['confidence']}")
+            lines.append(f"- **Approve this fix?** \u2610 yes &nbsp;&nbsp; \u2610 no &nbsp;&nbsp; \u2610 needs a different URL")
+            lines.append("")
+
+        lines.append("---")
+        lines.append("")
+
+    lines.append(
+        "_Tip: fill in the checkboxes above (or just tell me the "
+        "file names / cases you approve), and we'll build a second "
+        "script that applies only the approved fixes -- with a backup "
+        "of every file it touches before making changes._"
+    )
+    lines.append("")
+
+    with open(report_path, "w", encoding="utf-8") as f:
+        f.write("\n".join(lines))
+
+
+def main():
+    print("=" * 70)
+    print("BROKEN INTERNAL LINK CHECKER -- DRY RUN (no files will be changed)")
+    print("=" * 70)
+
+    print(f"\nDomain considered 'internal': {DOMAIN}")
+    print(f"Canonical file: {CANONICAL_FILE}")
+    print(f"Content directory: {CONTENT_DIR}\n")
+
+    if not os.path.exists(CANONICAL_FILE):
+        print(f"[ERROR] Canonical file not found: {CANONICAL_FILE}")
+        return
+    if not os.path.exists(CONTENT_DIR):
+        print(f"[ERROR] Content directory not found: {CONTENT_DIR}")
+        return
+
+    canonical_lookup = load_canonicals(CANONICAL_FILE)
+    print(f"Loaded {len(canonical_lookup)} canonical URLs.\n")
+
+    all_rows, broken_rows = scan_content(CONTENT_DIR, DOMAIN, canonical_lookup)
+
+    total_internal_links = len(all_rows)
+    total_broken = len(broken_rows)
+    total_files_with_broken = len({r["file"] for r in broken_rows})
+
+    print(f"Scanned internal links found: {total_internal_links}")
+    print(f"Broken internal links found:  {total_broken}")
+    print(f"Files containing broken links: {total_files_with_broken}\n")
+
+    if broken_rows:
+        print("-" * 70)
+        print("BROKEN LINKS (with best-guess correct canonical):")
+        print("-" * 70)
+        for row in broken_rows:
+            print(f"\nFile:        {row['file']} (line {row['line']})")
+            print(f"Anchor text: {row['anchor_text']!r}")
+            print(f"Found href:  {row['found_href']}")
+            print(f"Suggested:   {row['suggested_fix']}  (confidence: {row['confidence']})")
+
+    # Write full CSV report (broken links only, since that's the actionable list)
+    with open(REPORT_CSV, "w", newline="", encoding="utf-8") as f:
+        writer = csv.DictWriter(
+            f,
+            fieldnames=["file", "line", "found_href", "anchor_text",
+                        "status", "suggested_fix", "confidence", "case"],
+        )
+        writer.writeheader()
+        for row in broken_rows:
+            writer.writerow(row)
+
+    # Write the human-readable markdown report, grouped by case type.
+    write_markdown_report(
+        broken_rows,
+        REPORT_MD,
+        DOMAIN,
+        canonical_count=len(canonical_lookup),
+        total_internal_links=total_internal_links,
+    )
+
+    print(f"\n\nDry-run CSV report written to: {REPORT_CSV}")
+    print(f"Dry-run Markdown report written to: {REPORT_MD}")
+    print("No content files were modified. Review the reports, then we can")
+    print("build a second script to apply the approved fixes.")
+
+
+if __name__ == "__main__":
+    main()
