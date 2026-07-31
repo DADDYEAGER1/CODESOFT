@@ -1,0 +1,1194 @@
+'use client';
+
+import { useState, useEffect, useRef, useCallback } from 'react';
+import Image from 'next/image';
+import Link from 'next/link';
+
+// ─── TYPE DEFINITIONS ───────────────────────────────────────────────────────
+
+interface BlogPost {
+  slug: string;
+  title: string;
+  excerpt: string;
+  image: string | null;
+  date: string;
+  readTime: string;
+}
+
+interface InspoImage {
+  src: string;
+  alt: string;
+}
+
+interface TimelineEventDef {
+  id: string;
+  name: string;
+  date: string;        // ISO date  used to compute status at runtime
+  seasonLabel: string; // e.g. "Spring '26"
+  isMajor: boolean;
+  desc: string;
+  editSlug: string | null;
+  gallerySlug: string | null;
+}
+
+// Runtime-enriched version with computed status
+interface TimelineEvent extends TimelineEventDef {
+  status: 'past' | 'now' | 'upcoming';
+  season: string;      // alias for seasonLabel kept for JSX compat
+}
+
+type CardType = 'edit' | 'gallery' | null;
+
+// ─── RAW EVENT DEFINITIONS (no hardcoded status) ─────────────────────────────
+
+const EVENT_DEFS: TimelineEventDef[] = [
+  {
+    id: 'nye-recap',
+    name: 'NYE Recap',
+    date: '2026-01-01',
+    seasonLabel: "Winter '26",
+    isMajor: false,
+    desc: 'The glitter has settled. Here are the nail looks that defined the countdown.',
+    editSlug: null,
+    gallerySlug: null,
+  },
+  {
+    id: 'valentines',
+    name: "Valentine's Day",
+    date: '2026-02-14',
+    seasonLabel: "Winter '26",
+    isMajor: false,
+    desc: 'Love in every layer. The softest reds, jelly hearts, and velvet finishes.',
+    editSlug: null,
+    gallerySlug: null,
+  },
+  {
+    id: 'st-patricks',
+    name: "St. Patrick's",
+    date: '2026-03-17',
+    seasonLabel: "Spring '26",
+    isMajor: false,
+    desc: 'Lucky greens, clover art, and the shimmer of something rare.',
+    editSlug: null,
+    gallerySlug: null,
+  },
+  {
+    id: 'easter',
+    name: 'Easter',
+    date: '2026-04-05',
+    seasonLabel: "Spring '26",
+    isMajor: false,
+    desc: 'Pastel eggs, speckled finishes, and the return of soft everything.',
+    editSlug: null,
+    gallerySlug: null,
+  },
+  {
+    id: 'spring',
+    name: 'Spring Season',
+    date: '2026-03-20',
+    seasonLabel: "Spring '26",
+    isMajor: true,
+    desc: 'The season of bloom, soap nails, and everything softly luminous. Spring is having its moment.',
+    editSlug: 'spring-nail-ideas',
+    gallerySlug: 'spring-nails-2026',
+  },
+  {
+    id: 'mothers-day',
+    name: "Mother's Day",
+    date: '2026-05-10',
+    seasonLabel: "Spring '26",
+    isMajor: false,
+    desc: 'Floral, feminine, and forever elegant. Nail looks made for the women who raised us.',
+    editSlug: 'mothers-day-nail-ideas',
+    gallerySlug: 'mothers-day-nails-2026',
+  },
+  {
+    id: 'prom',
+    name: 'Prom / Grad',
+    date: '2026-05-01',
+    seasonLabel: "Spring '26",
+    isMajor: false,
+    desc: 'Your night, your nails. Glamour that photographs perfectly.',
+    editSlug: 'prom-nails-2026',
+    gallerySlug: 'prom-nails-2026',
+  },
+  {
+    id: 'wedding',
+    name: 'Wedding Season',
+    date: '2026-06-01',
+    seasonLabel: "Summer '26",
+    isMajor: false,
+    desc: 'Something borrowed, something blue and nails that make the photos.',
+    editSlug: 'wedding-nail-ideas',
+    gallerySlug: 'wedding-nails-inspiration-gallery',
+  },
+  {
+    id: 'pride',
+    name: 'Pride',
+    date: '2026-06-01',
+    seasonLabel: "Summer '26",
+    isMajor: false,
+    desc: 'Bold, joyful, and unapologetically expressive. Every color has its moment.',
+    editSlug: 'pride-month-nails',
+    gallerySlug: 'lgbtq-inspiration-gallery',
+  },
+  {
+    id: 'summer',
+    name: 'Summer Season',
+    date: '2026-06-21',
+    seasonLabel: "Summer '26",
+    isMajor: true,
+    desc: 'Sun-drenched hues, jelly textures, and the nails that go everywhere this summer.',
+    editSlug: 'summer-nail-trends-2026',
+    gallerySlug: 'summer-nails-2026',
+  },
+  {
+    id: '4th-july',
+    name: '4th of July',
+    date: '2026-07-04',
+    seasonLabel: "Summer '26",
+    isMajor: false,
+    desc: 'Red, white, and glossy. Stars, stripes, and the perfect summer red.',
+    editSlug: '4th-of-july-nails',
+    gallerySlug: null,
+  },
+  {
+    id: 'back-school',
+    name: 'Back to School',
+    date: '2026-08-01',
+    seasonLabel: "Summer '26",
+    isMajor: false,
+    desc: 'Fresh start energy. Clean nails, bold statements, and back-to-basics cool.',
+    editSlug: 'back-to-school-nails',
+    gallerySlug: 'back-to-school-inspiration-gallery',
+  },
+  {
+    id: 'fall',
+    name: 'Fall Season',
+    date: '2026-09-22',
+    seasonLabel: "Fall '26",
+    isMajor: true,
+    desc: 'Burgundy, chocolate, moody plums. The richest season for nail colour has arrived.',
+    editSlug: 'fall-nail-ideas',
+    gallerySlug: 'fall-inspiration-gallery',
+  },
+  {
+    id: 'halloween',
+    name: 'Halloween',
+    date: '2026-10-31',
+    seasonLabel: "Fall '26",
+    isMajor: false,
+    desc: 'Dark, dramatic, and deliciously spooky. The one night nails go all out.',
+    editSlug: null,
+    gallerySlug: null,
+  },
+  {
+    id: 'thanksgiving',
+    name: 'Thanksgiving',
+    date: '2026-11-26',
+    seasonLabel: "Fall '26",
+    isMajor: false,
+    desc: 'Warm tones, harvest hues, and nails as cozy as the season.',
+    editSlug: null,
+    gallerySlug: null,
+  },
+  {
+    id: 'christmas',
+    name: 'Christmas',
+    date: '2026-12-25',
+    seasonLabel: "Winter '26",
+    isMajor: false,
+    desc: 'The most magical nail season of the year. Velvet, plaid, and holiday chrome.',
+    editSlug: null,
+    gallerySlug: null,
+  },
+  {
+    id: 'nye-26',
+    name: "NYE '26",
+    date: '2026-12-31',
+    seasonLabel: "Winter '26",
+    isMajor: false,
+    desc: 'End the year with your best nails yet. Glitter, gold, and midnight magic.',
+    editSlug: null,
+    gallerySlug: null,
+  },
+];
+
+// ─── RUNTIME STATUS COMPUTATION ──────────────────────────────────────────────
+// Status is never hardcoded  computed fresh from today's date every call.
+// "now" = the closest future-or-present major event, or the nearest event overall.
+// Everything before it = 'past', everything after = 'upcoming'.
+
+function computeEvents(): TimelineEvent[] {
+  const now = Date.now();
+  let nowId: string | null = null;
+
+  // Sort a copy by date ascending so we can reason about time ordering
+  const byDate = [...EVENT_DEFS].sort((a, b) =>
+    new Date(a.date).getTime() - new Date(b.date).getTime()
+  );
+
+  // Step 1: Among all events whose date has already passed, find the one that
+  // is most "current"  prefer the most recent MAJOR event first,
+  // then fall back to the single most recent event of any kind.
+  const WINDOW_MS = 90 * 24 * 60 * 60 * 1000; // 90-day lookback window
+  const pastInWindow = byDate.filter((e) => {
+    const t = new Date(e.date).getTime();
+    return t <= now && now - t <= WINDOW_MS;
+  });
+
+  const THREE_DAYS_MS = 3 * 24 * 60 * 60 * 1000;
+
+  // If the very next upcoming event is within 3 days, promote it to "now"
+  // so the timeline switches ahead of time rather than waiting for the date to pass.
+  const nextEvent = byDate.find((e) => new Date(e.date).getTime() > now);
+  const nextIsImminent =
+    nextEvent !== undefined &&
+    new Date(nextEvent.date).getTime() - now <= THREE_DAYS_MS;
+
+  if (nextIsImminent && nextEvent) {
+    nowId = nextEvent.id;
+  } else if (pastInWindow.length > 0) {
+    // Most recent major takes priority; fall back to most recent overall
+    nowId = pastInWindow[pastInWindow.length - 1].id;
+  } else {
+    // Nothing in the lookback window  pick the next upcoming event
+    const future = byDate.filter((e) => new Date(e.date).getTime() > now);
+    nowId = future.length > 0
+      ? future[0].id
+      : EVENT_DEFS[EVENT_DEFS.length - 1].id;
+  }
+
+  // Assign status: everything before nowId in the original array = past,
+  // nowId = now, everything after = upcoming.
+    return EVENT_DEFS.map((def) => {
+      let status: 'past' | 'now' | 'upcoming';
+      if (def.id === nowId) {
+        status = 'now';
+      } else if (new Date(def.date).getTime() <= Date.now()) {
+        status = 'past';
+      } else {
+        status = 'upcoming';
+      }
+      return { ...def, status, season: def.seasonLabel };
+    });
+}
+
+// ─── HELPERS ─────────────────────────────────────────────────────────────────
+
+function getTimeUntil(dateStr: string) {
+  const target = new Date(dateStr).getTime();
+  const now = Date.now();
+  const diff = Math.max(0, target - now);
+  const weeks = Math.floor(diff / (1000 * 60 * 60 * 24 * 7));
+  const days = Math.floor((diff % (1000 * 60 * 60 * 24 * 7)) / (1000 * 60 * 60 * 24));
+  const hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  const mins = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+  const secs = Math.floor((diff % (1000 * 60)) / 1000);
+  return { weeks, days, hours, mins, secs };
+}
+
+// FIX: Past events with slugs are always accessible.
+// Upcoming/now events need content AND be within 30 days.
+function isCardAccessible(event: TimelineEvent): boolean {
+  const hasContent = event.editSlug !== null || event.gallerySlug !== null;
+  if (!hasContent) return false;
+  if (event.status === 'past') return true; // past content is always accessible
+  if (event.status === 'now') return true;
+  // upcoming: only within 30-day window
+  const target = new Date(event.date).getTime();
+  const diff = target - Date.now();
+  const thirtyDays = 30 * 24 * 60 * 60 * 1000;
+  return diff <= thirtyDays;
+}
+
+function getSeasonGroups(events: TimelineEvent[]) {
+  const groups: { season: string; events: TimelineEvent[] }[] = [];
+  events.forEach((ev) => {
+    const last = groups[groups.length - 1];
+    if (last && last.season === ev.season) {
+      last.events.push(ev);
+    } else {
+      groups.push({ season: ev.season, events: [ev] });
+    }
+  });
+  return groups;
+}
+
+// ─── SUB-COMPONENTS ──────────────────────────────────────────────────────────
+
+// FIX: key prop on CountdownTimer forces full remount on event change,
+// so each event gets its own independent interval  no bleed-over, no zeroing out.
+function CountdownTimer({ dateStr, timerKey }: { dateStr: string; timerKey: string }) {
+  const [time, setTime] = useState(() => getTimeUntil(dateStr));
+
+  // Reset immediately when dateStr changes (belt-and-suspenders alongside key)
+  useEffect(() => {
+    setTime(getTimeUntil(dateStr));
+    const id = setInterval(() => setTime(getTimeUntil(dateStr)), 1000);
+    return () => clearInterval(id);
+  }, [dateStr]);
+
+  const units = [
+    { label: 'Weeks', value: time.weeks },
+    { label: 'Days', value: time.days },
+    { label: 'Hours', value: time.hours },
+    { label: 'Min', value: time.mins },
+    { label: 'Sec', value: time.secs },
+  ];
+
+  return (
+    <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '0', marginTop: '28px' }}>
+      {units.map((u, i) => (
+        <div key={u.label} style={{ display: 'flex', alignItems: 'center' }}>
+          <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', padding: '0 16px' }}>
+            <span style={{
+              fontFamily: 'var(--font-ui)',
+              fontSize: 'clamp(22px, 3vw, 36px)',
+              fontWeight: 400,
+              letterSpacing: '-0.02em',
+              color: 'var(--foreground)',
+              fontVariantNumeric: 'tabular-nums',
+              lineHeight: 1,
+            }}>
+              {String(u.value).padStart(2, '0')}
+            </span>
+            <span style={{
+              fontFamily: 'var(--font-ui)',
+              fontSize: '9px',
+              letterSpacing: '0.12em',
+              textTransform: 'uppercase',
+              color: 'var(--foreground)',
+              opacity: 0.35,
+              marginTop: '5px',
+            }}>
+              {u.label}
+            </span>
+          </div>
+          {i < units.length - 1 && (
+            <span style={{ color: 'var(--foreground)', opacity: 0.15, fontSize: '20px', userSelect: 'none' }}>|</span>
+          )}
+        </div>
+      ))}
+    </div>
+  );
+}
+
+function EventCards({
+  event,
+  onCardClick,
+}: {
+  event: TimelineEvent;
+  onCardClick: (type: CardType) => void;
+}) {
+  const accessible = isCardAccessible(event);
+
+  const cards = [
+    { type: 'edit' as CardType, label: 'The Edit', hasSlug: !!event.editSlug },
+    { type: 'gallery' as CardType, label: 'Inspo Gallery', hasSlug: !!event.gallerySlug },
+  ];
+
+  return (
+    <div style={{
+      display: 'flex',
+      gap: '12px',
+      justifyContent: 'center',
+      marginTop: '32px',
+    }}>
+      {cards.map(({ type, label, hasSlug }) => {
+        const clickable = accessible && hasSlug;
+        return (
+          <button
+            key={type}
+            onClick={() => clickable && onCardClick(type)}
+            disabled={!clickable}
+            style={{
+              fontFamily: 'var(--font-ui)',
+              fontSize: '10px',
+              letterSpacing: '0.14em',
+              textTransform: 'uppercase',
+              padding: '11px 28px',
+              border: `1px solid ${clickable ? 'rgba(37,34,32,0.45)' : 'rgba(37,34,32,0.15)'}`,
+              background: 'transparent',
+              color: clickable ? 'var(--foreground)' : 'rgba(37,34,32,0.25)',
+              cursor: clickable ? 'pointer' : 'not-allowed',
+              borderRadius: '2px',
+              transition: 'border-color 220ms ease, background 220ms ease',
+            }}
+            onMouseEnter={(e) => {
+              if (clickable) {
+                (e.currentTarget as HTMLButtonElement).style.borderColor = 'var(--foreground)';
+                (e.currentTarget as HTMLButtonElement).style.background = 'rgba(37,34,32,0.04)';
+              }
+            }}
+            onMouseLeave={(e) => {
+              if (clickable) {
+                (e.currentTarget as HTMLButtonElement).style.borderColor = 'rgba(37,34,32,0.45)';
+                (e.currentTarget as HTMLButtonElement).style.background = 'transparent';
+              }
+            }}
+          >
+            {/* FIX: Past events with content never show "Coming Soon" */}
+            {!accessible ? 'Coming Soon' : label}
+          </button>
+        );
+      })}
+    </div>
+  );
+}
+
+// ─── SHARED PORTRAIT CARD ────────────────────────────────────────────────────
+
+function PortraitCard({
+  href,
+  imageSrc,
+  imageAlt,
+  title,
+  readTime,
+  onClick,
+}: {
+  href?: string;
+  imageSrc: string | null;
+  imageAlt: string;
+  title?: string;
+  readTime?: string;
+  onClick?: () => void;
+}) {
+  const cardStyle: React.CSSProperties = {
+    flexShrink: 0,
+    position: 'relative',
+    overflow: 'hidden',
+    borderRadius: '4px',
+    background: 'rgba(37,34,32,0.05)',
+    border: '1px solid rgba(37,34,32,0.08)',
+    transition: 'border-color 220ms ease, transform 220ms ease',
+    cursor: href || onClick ? 'pointer' : 'default',
+    display: 'block',
+    textDecoration: 'none',
+    color: 'inherit',
+    width: '100%',
+    height: '100%',
+  };
+
+  const inner = (
+    <>
+      {imageSrc && (
+        <Image
+          src={imageSrc}
+          alt={imageAlt}
+          fill
+          style={{ objectFit: 'cover' }}
+          sizes="(max-width: 768px) 45vw, 22vw"
+        />
+      )}
+      {title && (
+        <div style={{
+          position: 'absolute',
+          bottom: 0,
+          left: 0,
+          right: 0,
+          padding: '40px 14px 14px',
+          background: 'linear-gradient(to top, rgba(255,255,255,0.92) 0%, rgba(255,255,255,0.6) 55%, transparent 100%)',
+        }}>
+          <p style={{
+            fontFamily: 'var(--font-body)',
+            fontSize: 'clamp(11px, 1.4vw, 13px)',
+            lineHeight: 1.4,
+            color: '#1a1816',
+            margin: 0,
+            fontWeight: 500,
+          }}>
+            {title}
+          </p>
+          {readTime && (
+            <span style={{
+              fontFamily: 'var(--font-ui)',
+              fontSize: '8px',
+              letterSpacing: '0.1em',
+              textTransform: 'uppercase',
+              color: '#1a1816',
+              opacity: 0.5,
+              marginTop: '4px',
+              display: 'block',
+            }}>
+              {readTime}
+            </span>
+          )}
+        </div>
+      )}
+    </>
+  );
+
+  const hoverHandlers = {
+    onMouseEnter: (e: React.MouseEvent<HTMLElement>) => {
+      (e.currentTarget as HTMLElement).style.borderColor = 'rgba(37,34,32,0.3)';
+      (e.currentTarget as HTMLElement).style.transform = 'translateY(-2px)';
+    },
+    onMouseLeave: (e: React.MouseEvent<HTMLElement>) => {
+      (e.currentTarget as HTMLElement).style.borderColor = 'rgba(37,34,32,0.08)';
+      (e.currentTarget as HTMLElement).style.transform = 'translateY(0)';
+    },
+  };
+
+  if (href) {
+    return (
+      <Link href={href} style={cardStyle} {...hoverHandlers}>
+        {inner}
+      </Link>
+    );
+  }
+
+  return (
+    <div style={cardStyle} onClick={onClick} {...hoverHandlers}>
+      {inner}
+    </div>
+  );
+}
+
+// ─── SHARED CAROUSEL GRID ────────────────────────────────────────────────────
+
+function CarouselGrid({ children }: { children: React.ReactNode }) {
+  const scrollRef = useRef<HTMLDivElement>(null);
+  const isDragging = useRef(false);
+  const startX = useRef(0);
+  const scrollLeft = useRef(0);
+
+  const onMouseDown = (e: React.MouseEvent) => {
+    isDragging.current = true;
+    startX.current = e.pageX - (scrollRef.current?.offsetLeft ?? 0);
+    scrollLeft.current = scrollRef.current?.scrollLeft ?? 0;
+  };
+  const onMouseMove = (e: React.MouseEvent) => {
+    if (!isDragging.current || !scrollRef.current) return;
+    e.preventDefault();
+    const x = e.pageX - scrollRef.current.offsetLeft;
+    scrollRef.current.scrollLeft = scrollLeft.current - (x - startX.current) * 1.2;
+  };
+  const stopDrag = () => { isDragging.current = false; };
+
+  return (
+    <>
+      <style>{`
+        .carousel-scroll {
+          overflow-x: auto;
+          overflow-y: hidden;
+          scrollbar-width: none;
+          cursor: grab;
+          user-select: none;
+          height: 100%;
+          display: flex;
+          align-items: center;
+          padding: 0 48px 0 16px;
+        }
+        .carousel-grid {
+          display: grid;
+          grid-auto-flow: column;
+          grid-template-rows: calc((100vh - 174px) * 0.80);
+          gap: 10px;
+          align-items: center;
+          height: 100%;
+        }
+        .carousel-card-wrap {
+          height: 100%;
+          width: calc((100vh - 174px) * 0.80 * 0.75);
+          flex-shrink: 0;
+        }
+        @media (min-width: 768px) {
+          .carousel-scroll {
+            padding: 0 24px;
+            align-items: stretch;
+          }
+          .carousel-grid {
+            grid-template-rows: 1fr 1fr;
+            align-items: start;
+          }
+          .carousel-card-wrap {
+            height: 100%;
+            width: clamp(140px, 18vw, 220px);
+          }
+        }
+      `}</style>
+      <div
+        ref={scrollRef}
+        className="carousel-scroll"
+        onMouseDown={onMouseDown}
+        onMouseMove={onMouseMove}
+        onMouseUp={stopDrag}
+        onMouseLeave={stopDrag}
+      >
+        <div
+          className="carousel-grid"
+          style={{ minWidth: 'max-content', padding: '8px 0' }}
+        >
+          {children}
+        </div>
+      </div>
+    </>
+  );
+}
+
+// ─── THE EDIT CAROUSEL ───────────────────────────────────────────────────────
+
+function EditCarousel({ editSlug, onBack }: { editSlug: string; onBack: () => void }) {
+  const [posts, setPosts] = useState<BlogPost[]>([]);
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    setLoading(true);
+    fetch(`/api/timeline/blog-cluster?pillar=${editSlug}`)
+      .then((r) => r.json())
+      .then((data) => setPosts(data.posts || []))
+      .catch(() => setPosts([]))
+      .finally(() => setLoading(false));
+  }, [editSlug]);
+
+  return (
+    <div style={{ width: '100%', height: '100%', display: 'flex', flexDirection: 'column', position: 'relative' }}>
+      <div style={{ flexShrink: 0, padding: '14px 24px 10px', display: 'flex', alignItems: 'center' }}>
+        <button
+          onClick={onBack}
+          style={{
+            fontFamily: 'var(--font-ui)', fontSize: '10px', letterSpacing: '0.12em',
+            textTransform: 'uppercase', color: 'var(--foreground)', opacity: 0.5,
+            background: 'none', border: 'none', cursor: 'pointer',
+            display: 'flex', alignItems: 'center', gap: '6px', padding: '4px 0',
+            transition: 'opacity 200ms',
+          }}
+          onMouseEnter={(e) => { (e.currentTarget as HTMLButtonElement).style.opacity = '1'; }}
+          onMouseLeave={(e) => { (e.currentTarget as HTMLButtonElement).style.opacity = '0.5'; }}
+        >
+          ← The Edit
+        </button>
+      </div>
+      <div style={{ flex: 1, minHeight: 0 }}>
+        <CarouselGrid>
+          {loading ? (
+            Array.from({ length: 6 }).map((_, i) => (
+              <div key={i} className="carousel-card-wrap" style={{ borderRadius: '4px', background: 'rgba(37,34,32,0.05)', border: '1px solid rgba(37,34,32,0.06)', opacity: 0.4 }} />
+            ))
+          ) : posts.length === 0 ? (
+            <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', width: '80vw', opacity: 0.35 }}>
+              <span style={{ fontFamily: 'var(--font-ui)', fontSize: '10px', letterSpacing: '0.14em', textTransform: 'uppercase' }}>No posts found</span>
+            </div>
+          ) : (
+            posts.map((post) => (
+              <div key={post.slug} className="carousel-card-wrap">
+                <PortraitCard href={`/blog/${post.slug}`} imageSrc={post.image} imageAlt={post.title} title={post.title} readTime={post.readTime} />
+              </div>
+            ))
+          )}
+        </CarouselGrid>
+      </div>
+    </div>
+  );
+}
+
+// ─── INSPO GALLERY CAROUSEL ──────────────────────────────────────────────────
+
+function InspoGalleryCarousel({ gallerySlug, onBack }: { gallerySlug: string; onBack: () => void }) {
+  const [images, setImages] = useState<InspoImage[]>([]);
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    setLoading(true);
+    fetch(`/api/timeline/inspo-images?slug=${gallerySlug}`)
+      .then((r) => r.json())
+      .then((data) => setImages(data.images || []))
+      .catch(() => setImages([]))
+      .finally(() => setLoading(false));
+  }, [gallerySlug]);
+
+  return (
+    <div style={{ width: '100%', height: '100%', display: 'flex', flexDirection: 'column', position: 'relative' }}>
+      <div style={{ flexShrink: 0, padding: '14px 24px 10px', display: 'flex', alignItems: 'center' }}>
+        <button
+          onClick={onBack}
+          style={{
+            fontFamily: 'var(--font-ui)', fontSize: '10px', letterSpacing: '0.12em',
+            textTransform: 'uppercase', color: 'var(--foreground)', opacity: 0.5,
+            background: 'none', border: 'none', cursor: 'pointer',
+            display: 'flex', alignItems: 'center', gap: '6px', padding: '4px 0',
+            transition: 'opacity 200ms',
+          }}
+          onMouseEnter={(e) => { (e.currentTarget as HTMLButtonElement).style.opacity = '1'; }}
+          onMouseLeave={(e) => { (e.currentTarget as HTMLButtonElement).style.opacity = '0.5'; }}
+        >
+          ← Inspo Gallery
+        </button>
+      </div>
+      <div style={{ flex: 1, minHeight: 0 }}>
+        <CarouselGrid>
+          {loading ? (
+            Array.from({ length: 6 }).map((_, i) => (
+              <div key={i} className="carousel-card-wrap" style={{ borderRadius: '4px', background: 'rgba(37,34,32,0.05)', border: '1px solid rgba(37,34,32,0.06)', opacity: 0.4 }} />
+            ))
+          ) : images.length === 0 ? (
+            <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', width: '80vw', opacity: 0.35 }}>
+              <span style={{ fontFamily: 'var(--font-ui)', fontSize: '10px', letterSpacing: '0.14em', textTransform: 'uppercase' }}>No images found</span>
+            </div>
+          ) : (
+            <>
+              {images.map((img, i) => (
+                <div key={i} className="carousel-card-wrap">
+                  <PortraitCard imageSrc={img.src} imageAlt={img.alt || 'Inspo'} />
+                </div>
+              ))}
+              <div className="carousel-card-wrap">
+                <Link
+                  href={`/inspo/${gallerySlug}`}
+                  style={{
+                    display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center',
+                    width: '100%', height: '100%', border: '1px dashed rgba(37,34,32,0.22)',
+                    borderRadius: '4px', textDecoration: 'none',
+                    transition: 'border-color 220ms ease, background 220ms ease', gap: '8px',
+                  }}
+                  onMouseEnter={(e) => {
+                    (e.currentTarget as HTMLAnchorElement).style.borderColor = 'rgba(37,34,32,0.5)';
+                    (e.currentTarget as HTMLAnchorElement).style.background = 'rgba(37,34,32,0.02)';
+                  }}
+                  onMouseLeave={(e) => {
+                    (e.currentTarget as HTMLAnchorElement).style.borderColor = 'rgba(37,34,32,0.22)';
+                    (e.currentTarget as HTMLAnchorElement).style.background = 'transparent';
+                  }}
+                >
+                  <span style={{ fontFamily: 'var(--font-ui)', fontSize: '16px', opacity: 0.3, color: 'var(--foreground)' }}>→</span>
+                  <span style={{ fontFamily: 'var(--font-ui)', fontSize: '9px', letterSpacing: '0.14em', textTransform: 'uppercase', color: 'var(--foreground)', opacity: 0.4, textAlign: 'center', padding: '0 12px' }}>
+                    View Full Gallery
+                  </span>
+                </Link>
+              </div>
+            </>
+          )}
+        </CarouselGrid>
+      </div>
+    </div>
+  );
+}
+
+// ─── TIMELINE TRACK ──────────────────────────────────────────────────────────
+
+function TimelineTrack({
+  events,
+  selectedId,
+  onSelect,
+}: {
+  events: TimelineEvent[];
+  selectedId: string;
+  onSelect: (ev: TimelineEvent) => void;
+}) {
+  const trackRef = useRef<HTMLDivElement>(null);
+  const isDragging = useRef(false);
+  const startX = useRef(0);
+  const scrollLeft = useRef(0);
+
+  // FIX: scroll to "now" event whenever events array recomputes (e.g. status changes mid-session)
+  useEffect(() => {
+    const nowIdx = events.findIndex((e) => e.status === 'now');
+    if (nowIdx < 0 || !trackRef.current) return;
+    const el = trackRef.current.querySelector(`[data-event-id="${events[nowIdx].id}"]`) as HTMLElement;
+    if (el) {
+      const containerW = trackRef.current.offsetWidth;
+      trackRef.current.scrollLeft = el.offsetLeft - containerW / 2 + el.offsetWidth / 2;
+    }
+  }, [events]);
+
+  const onMouseDown = (e: React.MouseEvent) => {
+    isDragging.current = true;
+    startX.current = e.pageX - (trackRef.current?.offsetLeft ?? 0);
+    scrollLeft.current = trackRef.current?.scrollLeft ?? 0;
+  };
+  const onMouseMove = (e: React.MouseEvent) => {
+    if (!isDragging.current || !trackRef.current) return;
+    e.preventDefault();
+    const x = e.pageX - trackRef.current.offsetLeft;
+    trackRef.current.scrollLeft = scrollLeft.current - (x - startX.current) * 1.2;
+  };
+  const stopDrag = () => { isDragging.current = false; };
+
+  // FIX: nowIdx is derived from computed events, not hardcoded
+  const nowIdx = events.findIndex((e) => e.status === 'now');
+  const progressRatio = nowIdx >= 0 ? (nowIdx + 0.5) / events.length : 0;
+  const seasonGroups = getSeasonGroups(events);
+
+  return (
+    <div style={{
+      position: 'relative',
+      height: '130px',
+      borderTop: '1px solid rgba(37,34,32,0.10)',
+      background: 'var(--background)',
+      overflow: 'hidden',
+    }}>
+      <div style={{ position: 'absolute', left: 0, top: 0, bottom: 0, width: '80px', background: 'linear-gradient(to right, var(--background), transparent)', zIndex: 3, pointerEvents: 'none' }} />
+      <div style={{ position: 'absolute', right: 0, top: 0, bottom: 0, width: '80px', background: 'linear-gradient(to left, var(--background), transparent)', zIndex: 3, pointerEvents: 'none' }} />
+
+      <div
+        ref={trackRef}
+        onMouseDown={onMouseDown}
+        onMouseMove={onMouseMove}
+        onMouseUp={stopDrag}
+        onMouseLeave={stopDrag}
+        style={{
+          overflowX: 'auto', overflowY: 'hidden', height: '100%',
+          scrollbarWidth: 'none', cursor: 'grab', userSelect: 'none', position: 'relative',
+        }}
+      >
+        <div style={{
+          display: 'flex', alignItems: 'center', height: '100%',
+          padding: '0 120px', minWidth: 'max-content', position: 'relative',
+        }}>
+          <div style={{
+            position: 'absolute', top: '50%', transform: 'translateY(-50%)',
+            left: '120px', right: '120px', height: '1px',
+            background: 'rgba(37,34,32,0.15)',
+          }} />
+
+          {seasonGroups.map((group, gIdx) => {
+            const firstIdx = events.findIndex((e) => e.id === group.events[0].id);
+            const lastIdx = events.findIndex((e) => e.id === group.events[group.events.length - 1].id);
+            return (
+              <div
+                key={`${group.season}-${gIdx}`}
+                style={{
+                  position: 'absolute', bottom: '12px',
+                  left: `calc(120px + ${firstIdx * 120}px)`,
+                  width: `${(lastIdx - firstIdx + 1) * 120}px`,
+                  display: 'flex', justifyContent: 'center', pointerEvents: 'none',
+                }}
+              >
+                <span style={{
+                  fontFamily: 'var(--font-ui)', fontSize: '8px',
+                  letterSpacing: '0.14em', textTransform: 'uppercase',
+                  color: 'var(--foreground)', opacity: 0.25,
+                }}>
+                  {group.season}
+                </span>
+              </div>
+            );
+          })}
+
+          {events.map((ev) => {
+            const isSelected = ev.id === selectedId;
+            const isNow = ev.status === 'now';
+            const isPast = ev.status === 'past';
+            const isUpcoming = ev.status === 'upcoming';
+            const dotSize = ev.isMajor ? 10 : 7;
+
+            return (
+              <div
+                key={ev.id}
+                data-event-id={ev.id}
+                onClick={() => onSelect(ev)}
+                style={{
+                  display: 'flex', flexDirection: 'column', alignItems: 'center',
+                  width: '120px', flexShrink: 0, cursor: 'pointer',
+                  position: 'relative', height: '100%', justifyContent: 'center',
+                }}
+              >
+                <div style={{
+                  display: 'flex', flexDirection: 'column', alignItems: 'center',
+                  position: 'absolute', top: '10px', left: 0, right: 0,
+                }}>
+                  <span style={{
+                    fontFamily: 'var(--font-ui)', fontSize: '8px',
+                    letterSpacing: '0.1em', textTransform: 'uppercase',
+                    color: 'var(--foreground)',
+                    opacity: isSelected ? 0.9 : isPast ? 0.35 : isNow ? 0.8 : 0.45,
+                    textAlign: 'center', lineHeight: 1.3, maxWidth: '90px',
+                    fontWeight: isSelected || isNow ? 500 : 400,
+                  }}>
+                    {ev.name}
+                  </span>
+                  <span style={{
+                    fontFamily: 'var(--font-ui)', fontSize: '7px',
+                    letterSpacing: '0.06em', color: 'var(--foreground)',
+                    opacity: 0.25, marginTop: '2px',
+                  }}>
+                    {new Date(ev.date).toLocaleDateString('en-US', { month: 'short', year: '2-digit' })}
+                  </span>
+                </div>
+
+                <div style={{
+                  position: 'relative', display: 'flex', alignItems: 'center',
+                  justifyContent: 'center', zIndex: 1, width: '30px', height: '30px',
+                }}>
+                  {isSelected && (
+                    <>
+                      <div style={{ position: 'absolute', width: '28px', height: '28px', borderRadius: '50%', border: '1px solid rgba(37,34,32,0.15)' }} />
+                      <div style={{ position: 'absolute', width: '20px', height: '20px', borderRadius: '50%', border: '1px solid rgba(37,34,32,0.3)' }} />
+                    </>
+                  )}
+                  {isNow && (
+                    <div style={{
+                      position: 'absolute', width: '18px', height: '18px',
+                      borderRadius: '50%', border: '1px solid rgba(37,34,32,0.3)',
+                      animation: 'timelinePulse 2s ease-in-out infinite',
+                    }} />
+                  )}
+                  <div style={{
+                    width: isSelected ? '14px' : `${dotSize}px`,
+                    height: isSelected ? '14px' : `${dotSize}px`,
+                    borderRadius: '50%',
+                    background: isNow ? 'var(--foreground)' : isPast ? 'rgba(37,34,32,0.25)' : 'transparent',
+                    border: isNow ? 'none' : isUpcoming ? '1px dashed rgba(37,34,32,0.35)' : 'none',
+                    transition: 'width 300ms ease, height 300ms ease',
+                    flexShrink: 0,
+                  }} />
+                </div>
+              </div>
+            );
+          })}
+        </div>
+      </div>
+
+      <div style={{
+        position: 'absolute', bottom: 0, left: 0,
+        height: '1px', width: `${progressRatio * 100}%`,
+        background: 'rgba(37,34,32,0.35)', transition: 'width 500ms ease',
+      }} />
+    </div>
+  );
+}
+
+// ─── EVENT PANEL ─────────────────────────────────────────────────────────────
+
+function EventPanel({
+  event,
+  onCardClick,
+}: {
+  event: TimelineEvent;
+  onCardClick: (type: CardType) => void;
+}) {
+  const isNow = event.status === 'now';
+  const isUpcoming = event.status === 'upcoming';
+  const eyebrow = isNow ? '● Now Trending' : isUpcoming ? 'Coming Up' : 'Season Recap';
+
+  return (
+    <div style={{
+      display: 'flex', flexDirection: 'column', alignItems: 'center',
+      justifyContent: 'center', height: '100%', padding: '32px 24px', textAlign: 'center',
+    }}>
+      <span style={{
+        fontFamily: 'var(--font-ui)', fontSize: '9px', letterSpacing: '0.18em',
+        textTransform: 'uppercase', color: 'var(--foreground)', opacity: 0.45,
+        marginBottom: '20px', display: 'flex', alignItems: 'center', gap: '6px',
+      }}>
+        {isNow ? (
+          <>
+            <span style={{
+              display: 'inline-block', width: '5px', height: '5px', borderRadius: '50%',
+              background: 'var(--foreground)', animation: 'pulse 2s cubic-bezier(0.4,0,0.6,1) infinite',
+            }} />
+            Now Trending
+          </>
+        ) : eyebrow}
+      </span>
+
+      <h1 style={{
+        fontFamily: 'var(--font-heading)', fontSize: 'clamp(32px, 5vw, 64px)',
+        fontWeight: 400, lineHeight: 1.1, letterSpacing: '-0.01em',
+        color: 'var(--foreground)', margin: '0 0 12px', maxWidth: '700px',
+      }}>
+        {event.name}
+      </h1>
+
+      <span style={{
+        fontFamily: 'var(--font-ui)', fontSize: '9px', letterSpacing: '0.14em',
+        textTransform: 'uppercase', color: 'var(--foreground)', opacity: 0.35, marginBottom: '18px',
+      }}>
+        {event.season}
+      </span>
+
+      <p style={{
+        fontFamily: 'var(--font-body)', fontStyle: 'italic',
+        fontSize: 'clamp(14px, 1.5vw, 16px)', lineHeight: 1.7,
+        color: 'var(--foreground)', opacity: 0.6, maxWidth: '540px', margin: 0,
+      }}>
+        {event.desc}
+      </p>
+
+      {/* FIX: give CountdownTimer a key so it fully remounts on event change */}
+      {isUpcoming && new Date(event.date).getTime() > Date.now() && (
+        <CountdownTimer
+          key={event.id}
+          dateStr={event.date}
+          timerKey={event.id}
+        />
+      )}
+
+      <EventCards event={event} onCardClick={onCardClick} />
+    </div>
+  );
+}
+
+// ─── MAIN COMPONENT ──────────────────────────────────────────────────────────
+
+export default function TrendTimelineHero() {
+  // FIX: EVENTS is computed at runtime from today's date  never hardcoded
+  const [EVENTS, setEVENTS] = useState<TimelineEvent[]>(() => computeEvents());
+
+  // Re-derive events at midnight so the component self-updates day-to-day
+  useEffect(() => {
+    const msUntilMidnight = () => {
+      const now = new Date();
+      const midnight = new Date(now);
+      midnight.setHours(24, 0, 0, 0);
+      return midnight.getTime() - now.getTime();
+    };
+
+    let timeout: ReturnType<typeof setTimeout>;
+    const scheduleNextUpdate = () => {
+      timeout = setTimeout(() => {
+        setEVENTS(computeEvents());
+        scheduleNextUpdate(); // schedule next midnight
+      }, msUntilMidnight());
+    };
+    scheduleNextUpdate();
+    return () => clearTimeout(timeout);
+  }, []);
+
+  const nowEvent = EVENTS.find((e) => e.status === 'now') ?? EVENTS[0];
+  const [selectedEvent, setSelectedEvent] = useState<TimelineEvent>(nowEvent);
+  const [activeCard, setActiveCard] = useState<CardType>(null);
+  const [panelVisible, setPanelVisible] = useState(true);
+  const [carouselVisible, setCarouselVisible] = useState(false);
+
+  // FIX: current season derived from the live-computed "now" event  not hardcoded
+  const currentSeason = nowEvent.season;
+
+  // Keep selectedEvent in sync if EVENTS recomputes and changes the selected event's status
+  useEffect(() => {
+    const updated = EVENTS.find((e) => e.id === selectedEvent.id);
+    if (updated) setSelectedEvent(updated);
+  }, [EVENTS]);
+
+  const handleEventSelect = useCallback((ev: TimelineEvent) => {
+    if (ev.id === selectedEvent.id && !activeCard) return;
+    setPanelVisible(false);
+    setCarouselVisible(false);
+    setTimeout(() => {
+      setSelectedEvent(ev);
+      setActiveCard(null);
+      setPanelVisible(true);
+    }, 260);
+  }, [selectedEvent.id, activeCard]);
+
+  const handleCardClick = useCallback((type: CardType) => {
+    setPanelVisible(false);
+    setTimeout(() => {
+      setActiveCard(type);
+      setCarouselVisible(true);
+    }, 260);
+  }, []);
+
+  const handleBack = useCallback(() => {
+    setCarouselVisible(false);
+    setTimeout(() => {
+      setActiveCard(null);
+      setPanelVisible(true);
+    }, 260);
+  }, []);
+
+  return (
+    <>
+      <style>{`
+        @keyframes timelinePulse {
+          0%, 100% { transform: scale(1); opacity: 0.4; }
+          50% { transform: scale(1.6); opacity: 0; }
+        }
+        @keyframes blinkDot {
+          0%, 100% { opacity: 1; }
+          50% { opacity: 0.2; }
+        }
+        @keyframes pulse {
+          0%, 100% { opacity: 1; }
+          50% { opacity: 0.4; }
+        }
+        .panel-enter {
+          animation: panelFadeIn 0.5s cubic-bezier(.22,1,.36,1) forwards;
+        }
+        @keyframes panelFadeIn {
+          from { opacity: 0; transform: translateY(12px); }
+          to { opacity: 1; transform: translateY(0); }
+        }
+        div::-webkit-scrollbar { display: none; }
+      `}</style>
+
+      <section style={{
+        height: '100vh', display: 'flex', flexDirection: 'column',
+        background: 'var(--background)', overflow: 'hidden',
+      }}>
+        {/* TOP BAR */}
+        <div style={{
+          height: '44px', display: 'flex', alignItems: 'center',
+          justifyContent: 'space-between', padding: '0 32px',
+          borderBottom: '1px solid rgba(37,34,32,0.10)', flexShrink: 0,
+        }}>
+          <span style={{
+            fontFamily: 'var(--font-ui)', fontSize: '9px', letterSpacing: '0.16em',
+            textTransform: 'uppercase', color: 'var(--foreground)', opacity: 0.4,
+          }}>
+            Nail Trend Index · 2025–2026
+          </span>
+          <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
+            <span style={{
+              display: 'inline-block', width: '5px', height: '5px', borderRadius: '50%',
+              background: 'var(--foreground)', animation: 'blinkDot 1.8s ease-in-out infinite',
+            }} />
+            <span style={{
+              fontFamily: 'var(--font-ui)', fontSize: '9px', letterSpacing: '0.14em',
+              textTransform: 'uppercase', color: 'var(--foreground)', opacity: 0.5,
+            }}>
+              {/* FIX: derived from live computed nowEvent, not hardcoded */}
+              Now In · {currentSeason}
+            </span>
+          </div>
+        </div>
+
+        {/* CONTENT STAGE */}
+        <div style={{
+          flex: 1, position: 'relative', overflow: 'hidden',
+          display: 'flex', alignItems: 'center', justifyContent: 'center',
+        }}>
+          <div
+            className={panelVisible ? 'panel-enter' : ''}
+            style={{
+              position: 'absolute', inset: 0,
+              display: 'flex', alignItems: 'center', justifyContent: 'center',
+              opacity: panelVisible ? 1 : 0,
+              pointerEvents: panelVisible && !activeCard ? 'auto' : 'none',
+              transition: 'opacity 260ms ease',
+            }}
+          >
+            {!activeCard && (
+              <EventPanel event={selectedEvent} onCardClick={handleCardClick} />
+            )}
+          </div>
+
+          <div
+            className={carouselVisible ? 'panel-enter' : ''}
+            style={{
+              position: 'absolute', inset: 0,
+              opacity: carouselVisible ? 1 : 0,
+              pointerEvents: carouselVisible ? 'auto' : 'none',
+              transition: 'opacity 260ms ease',
+            }}
+          >
+            {activeCard === 'edit' && selectedEvent.editSlug && (
+              <EditCarousel editSlug={selectedEvent.editSlug} onBack={handleBack} />
+            )}
+            {activeCard === 'gallery' && selectedEvent.gallerySlug && (
+              <InspoGalleryCarousel gallerySlug={selectedEvent.gallerySlug} onBack={handleBack} />
+            )}
+          </div>
+        </div>
+
+        {/* TIMELINE TRACK */}
+        <TimelineTrack
+          events={EVENTS}
+          selectedId={selectedEvent.id}
+          onSelect={handleEventSelect}
+        />
+      </section>
+    </>
+  );
+}
