@@ -1,0 +1,169 @@
+import fs from 'fs';
+import path from 'path';
+import matter from 'gray-matter';
+import { Topic, TopicMetadata } from '@/types/topic';
+import { marked } from 'marked';
+
+marked.setOptions({
+  breaks: true,
+  gfm: true,
+});
+
+const TOPIC_DIRECTORY = path.join(process.cwd(), 'src/content/topics');
+
+interface CacheEntry<T> {
+  data: T;
+  timestamp: number;
+}
+
+class TopicCache {
+  private cache = new Map<string, CacheEntry<any>>();
+  private readonly TTL = 3600000; // 1 hour
+
+  get<T>(key: string): T | null {
+    const entry = this.cache.get(key);
+    if (!entry) return null;
+    if (Date.now() - entry.timestamp > this.TTL) {
+      this.cache.delete(key);
+      return null;
+    }
+    return entry.data as T;
+  }
+
+  set<T>(key: string, data: T): void {
+    this.cache.set(key, {
+      data,
+      timestamp: Date.now(),
+    });
+  }
+
+  clear(): void {
+    this.cache.clear();
+  }
+}
+
+const topicCache = new TopicCache();
+
+export async function getAllTopics(): Promise<TopicMetadata[]> {
+  const cacheKey = 'all-topics';
+  
+  const cached = topicCache.get<TopicMetadata[]>(cacheKey);
+  if (cached) return cached;
+
+  try {
+    if (!fs.existsSync(TOPIC_DIRECTORY)) {
+      fs.mkdirSync(TOPIC_DIRECTORY, { recursive: true });
+    }
+
+    const files = fs.readdirSync(TOPIC_DIRECTORY);
+    const topics = files
+      .filter(file => file.endsWith('.md'))
+      .map(file => {
+        const slug = file.replace('.md', '');
+        const filePath = path.join(TOPIC_DIRECTORY, file);
+        const content = fs.readFileSync(filePath, 'utf8');
+        const { data } = matter(content);
+        
+        return {
+          slug,
+          title: data.title || 'Untitled',
+          excerpt: data.excerpt || '',
+          date: data.date || new Date().toISOString(),
+          dateModified: data.dateModified || data.date || new Date().toISOString(),
+          author: data.author || 'Mirellé Team',
+          category: data.category || 'General',
+          image: data.image || null,
+          imageAlt: data.imageAlt,
+          imageWidth: data.imageWidth || 1200,
+          imageHeight: data.imageHeight || 630,
+          readTime: data.readTime || '8 min',
+          canonical: data.canonical || `https://mirelleinspo.com/topics/${slug}`,
+          url: `https://mirelleinspo.com/topics/${slug}`,
+        } as TopicMetadata;
+      })
+      .sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());
+    
+    topicCache.set(cacheKey, topics);
+    return topics;
+  } catch (error) {
+    console.error('Error reading topics:', error);
+    return [];
+  }
+}
+
+export async function getTopic(slug: string): Promise<Topic | null> {
+  const cacheKey = `topic:${slug}`;
+  
+  const cached = topicCache.get<Topic>(cacheKey);
+  if (cached) return cached;
+
+  try {
+    const filePath = path.join(TOPIC_DIRECTORY, `${slug}.md`);
+    const fileContent = fs.readFileSync(filePath, 'utf8');
+    const { data, content: markdownContent } = matter(fileContent);
+    
+    let htmlContent = await marked(markdownContent);
+    
+    // Add IDs to h2 headings for anchor links
+    htmlContent = htmlContent.replace(
+      /<h2>(.*?)<\/h2>/g,
+      (match, text) => {
+        const cleanText = text.replace(/<[^>]*>/g, '');
+        const id = cleanText
+          .toLowerCase()
+          .replace(/[^a-z0-9]+/g, '-')
+          .replace(/^-+|-+$/g, '');
+        return `<h2 id="${id}">${text}</h2>`;
+      }
+    );
+    
+    const topic: Topic = {
+      slug,
+      title: data.title || 'Untitled',
+      excerpt: data.excerpt || '',
+      content: htmlContent,
+      date: data.date || new Date().toISOString(),
+      dateModified: data.dateModified || data.date || new Date().toISOString(),
+      author: data.author || 'Mirellé Team',
+      category: data.category || 'General',
+      image: data.image || null,
+      imageAlt: data.imageAlt,
+      imageWidth: data.imageWidth || 1200,
+      imageHeight: data.imageHeight || 630,
+      readTime: data.readTime || '8 min',
+      canonical: data.canonical || `https://mirelleinspo.com/topics/${slug}`,
+      url: `https://mirelleinspo.com/topics/${slug}`,
+      tutorial: data.tutorial,
+      faqItems: data.faqItems,
+      relatedPosts: data.relatedPosts,
+      sameAs: data.sameAs,
+    };
+    
+    topicCache.set(cacheKey, topic);
+    return topic;
+  } catch (error) {
+    console.error(`Error reading topic ${slug}:`, error);
+    return null;
+  }
+}
+
+export async function getAllTopicSlugs(): Promise<string[]> {
+  try {
+    if (!fs.existsSync(TOPIC_DIRECTORY)) {
+      fs.mkdirSync(TOPIC_DIRECTORY, { recursive: true });
+      return [];
+    }
+
+    const files = fs.readdirSync(TOPIC_DIRECTORY);
+    return files
+      .filter(file => file.endsWith('.md'))
+      .map(file => file.replace('.md', ''));
+  } catch (error) {
+    console.error('Error reading topic slugs:', error);
+    return [];
+  }
+}
+
+export function clearTopicCache() {
+  topicCache.clear();
+}
