@@ -1,0 +1,541 @@
+'use client';
+import { useState } from 'react';
+import Link from 'next/link';
+import SearchBar from '@/components/SearchBar';
+
+const ARTICLES_LINKS = [
+  { label: 'World Cup Nails', href: '/blog/soccer/world-cup-nails' },
+  { label: 'FIFA Country Flag Nails', href: '/blog/soccer/flag-country-nails' },
+  { label: '4th of July Nails', href: '/blog/july-nails/4th-of-july-nails' },
+  { label: 'Younger-Looking Hands', href: '/blog/nail-polish-colors-make-hands-look-younger' },
+  { label: 'Wedding Nail Ideas', href: '/blog/wedding-nails/wedding-nail-ideas' },
+];
+
+const SHOP_LINKS = [
+  { label: 'Best Summer Nail Products', href: '/shop/summer/best-melodysusie-summer-nail-products' },
+  { label: 'Summer Gel Polish Colors', href: '/shop/summer/melodysusie-summer-gel-polish-colors' },
+  { label: 'Summer Nail Art Tools', href: '/shop/summer/melodysusie-summer-nail-art-tools' },
+  { label: 'Summer Pedicure Kit', href: '/shop/summer/melodysusie-summer-pedicure-kit' },
+  { label: 'Shop All', href: '/shop' },
+];
+
+const INSPO_LINKS = [
+  { label: 'Almond Nails 2026', href: '/inspo/almond-nails-2026' },
+  { label: 'Fruit Nails', href: '/inspo/fruit-nails-inspiration-gallery' },
+  { label: 'Nails By Color', href: '/inspo/colourful-nails-inspiration-gallery' },
+  { label: 'Holiday Nails', href: '/inspo/holiday-nails-inspiration-gallery' },
+  { label: 'Wedding Nails', href: '/inspo/wedding-nails-inspiration-gallery' },
+  { label: 'View All Collections', href: '/inspo' },
+];
+
+const LONG_READS_LINKS = [
+  { label: 'Seasonal Trends', href: '/topics/seasonal-trends' },
+  { label: 'Nail Care Guide', href: '/topics/nail-care-guide' },
+  { label: 'Nail Art Guide', href: '/topics/nail-art-guides' },
+  { label: 'Professional Nails', href: '/topics/modern-women' },
+  { label: 'Almond Nails Guide', href: '/blog/almond-nails-beginners-guide' },
+  { label: 'Browse All Long Reads', href: '/topics' },
+];
+
+const NAIL_FAQS_LINKS = [
+  { label: 'How To Grow Stronger Healthier Nails', href: '/nail-faqs/how-to-grow-stronger-healthier-nails-naturally' },
+  { label: 'How To Keep Nails Clean & Professional', href: '/nail-faqs/how-to-keep-nails-clean-and-professional-looking-daily' },
+  { label: 'How To Remove Gel Nail Polish At Home', href: '/nail-faqs/whats-the-best-way-to-remove-gel-nail-polish-at-home' },
+  { label: 'Why Do My Nails Hurt After Acrylics', href: '/nail-faqs/why-do-my-nails-hurt-after-getting-acrylics' },
+  { label: 'Should I Get Nails Done Before a Job Interview', href: '/nail-faqs/should-i-get-my-nails-done-before-a-job-interview' },
+  { label: 'Find Your Answers', href: '/nail-faqs' },
+];
+
+// Mobile Dropdown Component
+function MobileDropdown({ 
+  title, 
+  links,
+  isOpen,
+  onToggle 
+}: { 
+  title: string; 
+  links: Array<{ label: string; href: string }>;
+  isOpen: boolean;
+  onToggle: () => void;
+}) {
+  return (
+    <div className="relative">
+      <button
+        onClick={onToggle}
+        style={{ fontFamily: 'General Sans, sans-serif' }}
+        className="text-xs tracking-wider uppercase text-[#f9fafb] hover:opacity-70 transition-opacity flex items-center gap-1"
+      >
+        {title}
+        <svg
+          className={`w-3 h-3 transition-transform duration-300 ${isOpen ? 'rotate-180' : ''}`}
+          fill="none"
+          stroke="currentColor"
+          viewBox="0 0 24 24"
+        >
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+        </svg>
+      </button>
+      {/* Backdrop */}
+      <div 
+        className={`fixed inset-0 bg-black/50 transition-opacity duration-300 ${
+          isOpen ? 'opacity-100 z-[100]' : 'opacity-0 pointer-events-none -z-10'
+        }`}
+        onClick={onToggle}
+      />
+      {/* Dropdown with Animation */}
+      <div 
+        className={`fixed left-0 right-0 bg-[#252220] border-b border-[#f9fafb]/20 shadow-2xl transition-all duration-500 ease-out ${
+          isOpen 
+            ? 'opacity-100 translate-y-0 z-[101]' 
+            : 'opacity-0 -translate-y-4 pointer-events-none -z-10'
+        }`}
+        style={{ top: '7.5rem' }}
+      >
+        <div className="max-w-7xl mx-auto px-6 py-8">
+          <div className="space-y-1">
+            {links.map((link) => (
+              <Link
+                key={link.href}
+                href={link.href}
+                prefetch={false} // ← dropdown links: only fetch on click
+                onClick={onToggle}
+                style={{ fontFamily: 'General Sans, sans-serif' }}
+                className="block py-3 text-base text-[#f9fafb] hover:opacity-70 hover:pl-2 transition-all duration-300"
+              >
+                {link.label}
+              </Link>
+            ))}
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+// Mobile Search Component (full-width bar)
+function MobileSearch() {
+  const [isOpen, setIsOpen] = useState(false);
+  const [query, setQuery] = useState('');
+  const [results, setResults] = useState<any[]>([]);
+  const [isLoading, setIsLoading] = useState(false);
+  const debounceRef = useState<ReturnType<typeof setTimeout> | null>(null);
+
+  async function handleSearch(q: string) {
+    setQuery(q);
+    if (debounceRef[0]) clearTimeout(debounceRef[0]);
+    if (!q.trim() || q.trim().length < 2) {
+      setResults([]);
+      return;
+    }
+    setIsLoading(true);
+    const timer = setTimeout(async () => {
+      try {
+        const res = await fetch(`/api/search?q=${encodeURIComponent(q)}`);
+        const data = await res.json();
+        setResults(data.results || []);
+      } catch {
+        setResults([]);
+      } finally {
+        setIsLoading(false);
+      }
+    }, 300);
+    // @ts-ignore
+    debounceRef[0] = timer;
+  }
+
+  return (
+    <div className="relative">
+      {!isOpen ? (
+        <button
+          onClick={() => setIsOpen(true)}
+          aria-label="Open search"
+          className="text-[#f9fafb] hover:opacity-70 transition-opacity"
+        >
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={1.8} strokeLinecap="round" strokeLinejoin="round">
+            <circle cx="11" cy="11" r="8" />
+            <line x1="21" y1="21" x2="16.65" y2="16.65" />
+          </svg>
+        </button>
+      ) : (
+        <>
+          {/* Full-width search overlay for mobile */}
+          <div className="fixed inset-0 bg-[#252220] z-[200] flex flex-col">
+            {/* Search Input Row */}
+            <div className="flex items-center gap-3 px-6 h-16 border-b border-[#f9fafb]/20">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={1.8} strokeLinecap="round" strokeLinejoin="round" className="text-[#f9fafb]/50 shrink-0">
+                <circle cx="11" cy="11" r="8" />
+                <line x1="21" y1="21" x2="16.65" y2="16.65" />
+              </svg>
+              <input
+                autoFocus
+                type="text"
+                value={query}
+                onChange={e => handleSearch(e.target.value)}
+                placeholder="Search Mirellé..."
+                style={{ fontFamily: 'General Sans, sans-serif' }}
+                className="flex-1 bg-transparent text-sm text-[#f9fafb] placeholder:text-[#f9fafb]/40 focus:outline-none"
+              />
+              <button
+                onClick={() => { setIsOpen(false); setQuery(''); setResults([]); }}
+                style={{ fontFamily: 'General Sans, sans-serif' }}
+                className="text-[10px] tracking-widest uppercase text-[#f9fafb]/60 hover:text-[#f9fafb] transition-colors shrink-0"
+              >
+                CLOSE
+              </button>
+            </div>
+
+            {/* Results */}
+            <div className="flex-1 overflow-y-auto">
+              {isLoading && (
+                <div style={{ fontFamily: 'General Sans, sans-serif' }} className="px-6 py-4 text-xs tracking-widest uppercase text-[#f9fafb]/40">
+                  Searching...
+                </div>
+              )}
+              {!isLoading && query.trim().length >= 2 && results.length === 0 && (
+                <div style={{ fontFamily: 'General Sans, sans-serif' }} className="px-6 py-5 text-xs tracking-widest uppercase text-[#f9fafb]/40">
+                  No results for &ldquo;{query}&rdquo;
+                </div>
+              )}
+              {!isLoading && results.map((result, i) => (
+                <Link
+                  key={result.url}
+                  href={result.url}
+                  prefetch={false} // ← search results: only fetch on click
+                  onClick={() => { setIsOpen(false); setQuery(''); setResults([]); }}
+                  className="flex flex-col gap-0.5 px-6 py-4 border-b border-[#f9fafb]/10 hover:bg-[#f9fafb]/5 transition-colors"
+                >
+                  <span style={{ fontFamily: 'General Sans, sans-serif' }} className="text-sm text-[#f9fafb]">
+                    {result.title}
+                  </span>
+                  {result.excerpt && (
+                    <span style={{ fontFamily: 'General Sans, sans-serif' }} className="text-xs text-[#f9fafb]/45 line-clamp-1">
+                      {result.excerpt}
+                    </span>
+                  )}
+                </Link>
+              ))}
+            </div>
+          </div>
+        </>
+      )}
+    </div>
+  );
+}
+
+export default function Header() {
+  const [openDropdown, setOpenDropdown] = useState<string | null>(null);
+
+  const toggleDropdown = (name: string) => {
+    setOpenDropdown(openDropdown === name ? null : name);
+  };
+
+  return (
+    <header className="bg-[#252220]">
+      {/* Desktop Header */}
+      <div className="hidden md:block">
+        {/* Top Row */}
+        <div className="border-b border-[#f9fafb]/20">
+          <div className="container-standard mx-auto px-16">
+            <div className="flex justify-center items-center h-16 relative">
+              <Link href="/" prefetch={false} className="flex items-center">
+                <span 
+                  data-logo="true" 
+                  style={{ fontFamily: 'Larken, Georgia, serif' }} 
+                  className="text-3xl font-bold text-[#f9fafb]"
+                >
+                  Mirellé Inspo
+                </span>
+              </Link>
+              <div className="flex items-center gap-6 absolute right-0">
+                {/* Search Bar */}
+                <SearchBar />
+
+                <a 
+                  href="https://mirelleinspo.com/subscribe" 
+                  style={{ fontFamily: 'General Sans, sans-serif' }}
+                  className="text-xs tracking-widest uppercase text-[#f9fafb] hover:opacity-70 transition-opacity border border-[#f9fafb] px-4 py-2"
+                >
+                  NEWSLETTER
+                </a>
+                {/* Keep prefetch default  top-level nav, likely clicked */}
+                <Link 
+                  href="/work-with-us"
+                  prefetch={false}
+                  style={{ fontFamily: 'General Sans, sans-serif' }}
+                  className="text-xs tracking-widest uppercase text-[#f9fafb] hover:opacity-70 transition-opacity"
+                >
+                  WORK WITH US
+                </Link>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* Bottom Row - Nav */}
+        <nav className="border-b border-[#f9fafb]/20">
+          <div className="container-standard mx-auto px-16">
+            <div className="flex justify-center items-center h-12 gap-10">
+              
+              <Link 
+                href="/about"
+                prefetch={false}
+                style={{ fontFamily: 'General Sans, sans-serif' }}
+                className="text-sm tracking-wider uppercase text-[#f9fafb] hover:opacity-70 transition-opacity"
+              >
+                ABOUT
+              </Link>
+
+              {/* Edits Dropdown */}
+              <div className="relative group">
+                <Link 
+                  href="/blog"
+                  prefetch={false}
+                  style={{ fontFamily: 'General Sans, sans-serif' }}
+                  className="text-sm tracking-wider uppercase text-[#f9fafb] hover:opacity-70 transition-opacity"
+                >
+                  EDITS
+                </Link>
+                <div className="fixed left-0 right-0 top-[7.5rem] opacity-0 invisible translate-y-2 group-hover:opacity-100 group-hover:visible group-hover:translate-y-0 transition-all duration-500 ease-out z-50">
+                  <div className="bg-[#252220] border-b border-[#f9fafb]/20 shadow-2xl">
+                    <div className="max-w-7xl mx-auto px-16 py-12">
+                      <div className="space-y-1">
+                        {ARTICLES_LINKS.map((link) => (
+                          <Link
+                            key={link.href}
+                            href={link.href}
+                            prefetch={false} // ← dropdown: only fetch on click
+                            style={{ fontFamily: 'General Sans, sans-serif' }}
+                            className="block py-3 text-lg text-[#f9fafb] hover:opacity-70 hover:pl-2 transition-all duration-300"
+                          >
+                            {link.label}
+                          </Link>
+                        ))}
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              {/* Shop Dropdown */}
+              <div className="relative group">
+                <Link 
+                  href="/shop"
+                  prefetch={false}
+                  style={{ fontFamily: 'General Sans, sans-serif' }}
+                  className="text-sm tracking-wider uppercase text-[#f9fafb] hover:opacity-70 transition-opacity"
+                >
+                  SHOP
+                </Link>
+                <div className="fixed left-0 right-0 top-[7.5rem] opacity-0 invisible translate-y-2 group-hover:opacity-100 group-hover:visible group-hover:translate-y-0 transition-all duration-500 ease-out z-50">
+                  <div className="bg-[#252220] border-b border-[#f9fafb]/20 shadow-2xl">
+                    <div className="max-w-7xl mx-auto px-16 py-12">
+                      <div className="space-y-1">
+                        {SHOP_LINKS.map((link) => (
+                          <Link
+                            key={link.href}
+                            href={link.href}
+                            prefetch={false} // ← dropdown: only fetch on click
+                            style={{ fontFamily: 'General Sans, sans-serif' }}
+                            className="block py-3 text-lg text-[#f9fafb] hover:opacity-70 hover:pl-2 transition-all duration-300"
+                          >
+                            {link.label}
+                          </Link>
+                        ))}
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              {/* Inspo Dropdown */}
+              <div className="relative group">
+                <Link 
+                  href="/inspo"
+                  prefetch={false}
+                  style={{ fontFamily: 'General Sans, sans-serif' }}
+                  className="text-sm tracking-wider uppercase text-[#f9fafb] hover:opacity-70 transition-opacity"
+                >
+                  INSPO
+                </Link>
+                <div className="fixed left-0 right-0 top-[7.5rem] opacity-0 invisible translate-y-2 group-hover:opacity-100 group-hover:visible group-hover:translate-y-0 transition-all duration-500 ease-out z-50">
+                  <div className="bg-[#252220] border-b border-[#f9fafb]/20 shadow-2xl">
+                    <div className="max-w-7xl mx-auto px-16 py-12">
+                      <div className="space-y-1">
+                        {INSPO_LINKS.map((link) => (
+                          <Link
+                            key={link.href}
+                            href={link.href}
+                            prefetch={false} // ← dropdown: only fetch on click
+                            style={{ fontFamily: 'General Sans, sans-serif' }}
+                            className="block py-3 text-lg text-[#f9fafb] hover:opacity-70 hover:pl-2 transition-all duration-300"
+                          >
+                            {link.label}
+                          </Link>
+                        ))}
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              {/* Long Reads Dropdown */}
+              <div className="relative group">
+                <Link 
+                  href="/topics"
+                  prefetch={false}
+                  style={{ fontFamily: 'General Sans, sans-serif' }}
+                  className="text-sm tracking-wider uppercase text-[#f9fafb] hover:opacity-70 transition-opacity"
+                >
+                  LONG READS
+                </Link>
+                <div className="fixed left-0 right-0 top-[7.5rem] opacity-0 invisible translate-y-2 group-hover:opacity-100 group-hover:visible group-hover:translate-y-0 transition-all duration-500 ease-out z-50">
+                  <div className="bg-[#252220] border-b border-[#f9fafb]/20 shadow-2xl">
+                    <div className="max-w-7xl mx-auto px-16 py-12">
+                      <div className="space-y-1">
+                        {LONG_READS_LINKS.map((link) => (
+                          <Link
+                            key={link.href}
+                            href={link.href}
+                            prefetch={false} // ← dropdown: only fetch on click
+                            style={{ fontFamily: 'General Sans, sans-serif' }}
+                            className="block py-3 text-lg text-[#f9fafb] hover:opacity-70 hover:pl-2 transition-all duration-300"
+                          >
+                            {link.label}
+                          </Link>
+                        ))}
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              {/* Nail FAQs Dropdown */}
+              <div className="relative group">
+                <Link 
+                  href="/nail-faqs"
+                  prefetch={false}
+                  style={{ fontFamily: 'General Sans, sans-serif' }}
+                  className="text-sm tracking-wider uppercase text-[#f9fafb] hover:opacity-70 transition-opacity"
+                >
+                  NAIL FAQS
+                </Link>
+                <div className="fixed left-0 right-0 top-[7.5rem] opacity-0 invisible translate-y-2 group-hover:opacity-100 group-hover:visible group-hover:translate-y-0 transition-all duration-500 ease-out z-50">
+                  <div className="bg-[#252220] border-b border-[#f9fafb]/20 shadow-2xl">
+                    <div className="max-w-7xl mx-auto px-16 py-12">
+                      <div className="space-y-1">
+                        {NAIL_FAQS_LINKS.map((link) => (
+                          <Link
+                            key={link.href}
+                            href={link.href}
+                            prefetch={false} // ← dropdown: only fetch on click
+                            style={{ fontFamily: 'General Sans, sans-serif' }}
+                            className="block py-3 text-lg text-[#f9fafb] hover:opacity-70 hover:pl-2 transition-all duration-300"
+                          >
+                            {link.label}
+                          </Link>
+                        ))}
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </nav>
+      </div>
+
+      {/* Mobile Header */}
+      <div className="md:hidden">
+        <div className="border-b border-[#f9fafb]/20">
+          <div className="px-6 h-16 flex items-center justify-between">
+            <Link href="/" prefetch={false} className="flex items-center">
+              <span style={{ fontFamily: 'Larken, Georgia, serif' }} className="text-2xl font-bold text-[#f9fafb]">
+                Mirellé Inspo
+              </span>
+            </Link>
+            <div className="flex items-center gap-4">
+              {/* Mobile Search Icon */}
+              <MobileSearch />
+
+              <a 
+                href="https://mirelleinspo.com/subscribe"
+                style={{ fontFamily: 'General Sans, sans-serif' }}
+                className="text-[10px] tracking-wider uppercase text-[#f9fafb] hover:opacity-70 transition-opacity border border-[#f9fafb] px-3 py-1.5"
+              >
+                NEWSLETTER
+              </a>
+              <Link 
+                href="/work-with-us"
+                prefetch={false}
+                style={{ fontFamily: 'General Sans, sans-serif' }}
+                className="text-[10px] tracking-wider uppercase text-[#f9fafb] hover:opacity-70 transition-opacity"
+              >
+                WORK WITH US
+              </Link>
+            </div>
+          </div>
+        </div>
+
+        <div className="border-b border-[#f9fafb]/20 overflow-x-auto scrollbar-hide">
+          <div className="flex gap-8 px-6 h-12 items-center whitespace-nowrap">
+            <Link 
+              href="/about"
+              prefetch={false}
+              style={{ fontFamily: 'General Sans, sans-serif' }}
+              className="text-xs tracking-wider uppercase text-[#f9fafb] hover:opacity-70 transition-opacity"
+            >
+              ABOUT
+            </Link>
+            
+            {/* All mobile dropdowns pass prefetch={false} via MobileDropdown component */}
+            <MobileDropdown
+              title="EDITS"
+              links={ARTICLES_LINKS}
+              isOpen={openDropdown === 'articles'}
+              onToggle={() => toggleDropdown('articles')}
+            />
+
+            <MobileDropdown
+              title="SHOP"
+              links={SHOP_LINKS}
+              isOpen={openDropdown === 'shop'}
+              onToggle={() => toggleDropdown('shop')}
+            />
+            
+            <MobileDropdown
+              title="INSPO"
+              links={INSPO_LINKS}
+              isOpen={openDropdown === 'inspo'}
+              onToggle={() => toggleDropdown('inspo')}
+            />
+            
+            <MobileDropdown
+              title="LONG READS"
+              links={LONG_READS_LINKS}
+              isOpen={openDropdown === 'longreads'}
+              onToggle={() => toggleDropdown('longreads')}
+            />
+
+            <MobileDropdown
+              title="NAIL FAQS"
+              links={NAIL_FAQS_LINKS}
+              isOpen={openDropdown === 'nailfaqs'}
+              onToggle={() => toggleDropdown('nailfaqs')}
+            />
+          </div>
+        </div>
+      </div>
+
+      <style jsx>{`
+        .scrollbar-hide::-webkit-scrollbar {
+          display: none;
+        }
+        .scrollbar-hide {
+          -ms-overflow-style: none;
+          scrollbar-width: none;
+        }
+      `}</style>
+    </header>
+  );
+}
