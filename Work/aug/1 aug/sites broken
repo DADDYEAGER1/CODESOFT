@@ -1,0 +1,886 @@
+// src/app/layout.tsx
+
+import type { Metadata, Viewport } from 'next';
+import './globals.css';
+import Header from '@/components/Header';
+import Footer from '@/components/Footer';
+import Script from 'next/script';
+import {
+  generateOrganizationSchema,
+  generateWebsiteSchema,
+  generateJyotiSchema,
+  generateRiSchema,
+} from '@/lib/generateSchemas';
+
+import ExitIntentPopup from '@/components/ExitIntentPopup';
+import StickySlideIn from '@/components/StickySlideIn';
+
+// ── Viewport (separate export  required in Next.js 14+) ──────────────────────
+
+export const viewport: Viewport = {
+  themeColor: '#252220',
+  width: 'device-width',
+  initialScale: 1,
+  minimumScale: 1,
+  maximumScale: 5,
+};
+ 
+export const metadata: Metadata = {
+  metadataBase: new URL('https://mirelleinspo.com'),
+  title: {
+    default: "Nail Designs, Trends & Tutorials  Mirellé Inspo",
+    template: '%s | Mirellé Inspo',
+  },
+  description:
+    'Browse 5,000+ nail designs across every shape, finish, and season. Research-backed trend reports, editorial guides, and weekly inspiration for people who take their nails seriously.',
+  keywords: [
+    'nail designs 2026',
+    'nail art inspiration',
+    'nail trends 2026',
+    'chrome nails',
+    'cat claw nails',
+    'milky nail trends',
+    'gel nail ideas',
+    'seasonal nail designs',
+    'nail art tutorials',
+    'trending nail ideas',
+  ],
+  authors: [
+    { name: 'Jyotika Verma', url: 'https://mirelleinspo.com/authors/jyoti-mirelle' },
+    { name: 'Gaurav Verma', url: 'https://mirelleinspo.com/authors/ri-mirelle' },
+  ],
+  creator: 'Mirellé Inspo',
+  publisher: 'Mirellé Inspo',
+  formatDetection: { telephone: false, email: false, address: false },
+  other: {
+    'distribution': 'global',
+    'rating': 'general',
+    'language': 'en-US',
+    'classification': 'Beauty, Nail Art, Fashion, Lifestyle, DIY Tutorials',
+    'referrer': 'always',
+    'revisit-after': '7 days',
+    'mobile-web-app-capable': 'yes',
+    'apple-mobile-web-app-capable': 'yes',
+    'apple-mobile-web-app-status-bar-style': 'black-translucent',
+    'apple-mobile-web-app-title': 'Mirellé',
+    'application-name': 'Mirellé',
+  },
+  openGraph: {
+    type: 'website',
+    locale: 'en_US',
+    url: 'https://mirelleinspo.com',
+    siteName: 'Mirellé Inspo',
+    title: "Nail Designs, Trends & Tutorials  Mirellé Inspo",
+    description:
+      'Browse 5,000+ nail designs across every shape, finish, and season. Research-backed trends and editorial guides updated weekly.',
+    images: [{ url: '/og-image.jpg', width: 1200, height: 630, alt: 'Mirellé Inspo  Nail Designs, Trends & Tutorials' }],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: "Nail Designs, Trends & Tutorials  Mirellé Inspo",
+    description: 'Browse 5,000+ nail designs. Research-backed trends and editorial guides updated weekly.',
+    images: ['/og-image.jpg'],
+    creator: '@mirelleinspo',
+    site: '@mirelleinspo',
+  },
+  robots: {
+    index: true,
+    follow: true,
+    nocache: false,
+    googleBot: { index: true, follow: true, 'max-video-preview': -1, 'max-image-preview': 'large', 'max-snippet': -1 },
+  },
+  icons: {
+    icon: [
+      { url: '/favicon.ico', sizes: '48x48' },
+      { url: '/favicon.svg', type: 'image/svg+xml' },
+      { url: '/favicon-16x16.png', sizes: '16x16', type: 'image/png' },
+      { url: '/favicon-32x32.png', sizes: '32x32', type: 'image/png' },
+    ],
+    apple: [{ url: '/apple-touch-icon.png', sizes: '180x180', type: 'image/png' }],
+  },
+  manifest: '/site.webmanifest',
+  alternates: {
+    languages: {
+      'en-US': 'https://mirelleinspo.com',
+      'en-GB': 'https://mirelleinspo.com',
+      'en-CA': 'https://mirelleinspo.com',
+      'en-AU': 'https://mirelleinspo.com',
+      'en': 'https://mirelleinspo.com',
+    },
+  },
+};
+
+// ── Root Layout ───────────────────────────────────────────────────────────────
+
+export default function RootLayout({ children }: { children: React.ReactNode }) {
+  // Build schema graph  all entities in one JSON-LD block
+  const schemaGraph = {
+    '@context': 'https://schema.org',
+    '@graph': [
+      generateOrganizationSchema(),
+      generateWebsiteSchema(),
+      generateJyotiSchema(),
+      generateRiSchema(),
+    ],
+  };
+
+  return (
+    <html lang="en-US">
+      <head>
+        {/* Performance: preconnect for critical third-party origins */}
+        <link rel="preconnect" href="https://scripts.scriptwrapper.com" />
+        <link rel="preconnect" href="https://res.cloudinary.com" crossOrigin="anonymous" />
+        <link rel="dns-prefetch" href="https://www.googletagmanager.com" />
+        <link rel="dns-prefetch" href="https://res.cloudinary.com" />
+
+      </head>
+
+      <body className="antialiased" suppressHydrationWarning>
+        {/* Google Tag Manager (noscript fallback) */}
+        <noscript>
+          <iframe
+            src="https://www.googletagmanager.com/ns.html?id=GTM-WPW9XBW8"
+            height="0"
+            width="0"
+            style={{ display: 'none', visibility: 'hidden' }}
+            title="Google Tag Manager"
+          />
+        </noscript>
+
+        {/* Google Tag Manager */}
+        <Script id="gtm-init" strategy="afterInteractive">
+          {`(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+          new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+          j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+          'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+          })(window,document,'script','dataLayer','GTM-WPW9XBW8');`}
+        </Script>
+
+        {/* GA4 */}
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=G-4BZ9QKQZ73"
+          strategy="afterInteractive"
+        />
+        <Script id="ga4-init" strategy="afterInteractive">
+          {`window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-4BZ9QKQZ73', { page_path: window.location.pathname, send_page_view: true });`}
+        </Script>
+
+        {/* Core Web Vitals tracking */}
+        <Script id="web-vitals" strategy="afterInteractive">
+          {`(function(){
+            function send(m){if(window.gtag)window.gtag('event',m.name,{value:Math.round(m.name==='CLS'?m.value*1000:m.value),event_category:'Web Vitals',event_label:m.id,non_interaction:true});}
+            if('PerformanceObserver' in window){
+              try{const o=new PerformanceObserver(l=>{const e=l.getEntries(),last=e[e.length-1];send({name:'LCP',value:last.renderTime||last.loadTime,id:'v1-'+Date.now()});});o.observe({entryTypes:['largest-contentful-paint']});}catch(e){}
+              try{const o=new PerformanceObserver(l=>{l.getEntries().forEach(e=>{send({name:'INP',value:e.duration,id:'v1-'+Date.now()});});});o.observe({type:'event',buffered:true,durationThreshold:40});}catch(e){}
+              try{let v=0;const o=new PerformanceObserver(l=>{l.getEntries().forEach(e=>{if(!e.hadRecentInput)v+=e.value;});});o.observe({entryTypes:['layout-shift']});addEventListener('visibilitychange',()=>{if(document.visibilityState==='hidden')send({name:'CLS',value:v,id:'v1-'+Date.now()});});}catch(e){}
+            }
+          })();`}
+        </Script>
+
+        {/* Structured Data  full entity graph */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaGraph) }}
+        />
+
+        <Header />
+
+        <div className="w-full max-w-[1600px] mx-auto">
+          <main className="min-h-screen" id="main-content" role="main">
+            {children}
+          </main>
+        </div>
+
+        <Footer />
+        <ExitIntentPopup />
+        <StickySlideIn />
+
+        {/* Google AdSense -enabled mediavine faliure*/}
+        <Script
+          id="google-adsense"
+          async
+          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1145734682794444"
+          crossOrigin="anonymous"
+          strategy="afterInteractive"
+        />
+      
+
+        {/* Mediavine Journey ads script*/}
+        {/* <Script
+          id="mediavine-journey"
+          src="https://scripts.scriptwrapper.com/tags/d965deec-2fc5-4c1b-86c5-8c7c99848f4a.js"
+          strategy="beforeInteractive"
+          data-noptimize="1"
+          data-cfasync="false"
+        />
+          */}
+        {/* Grow by Mediavine 
+        <Script
+          id="grow-mediavine"
+          strategy="afterInteractive"
+          data-grow-initializer=""
+          dangerouslySetInnerHTML={{
+            __html: `!(function(){window.growMe||((window.growMe=function(e){window.growMe._.push(e);}),(window.growMe._=[]));var e=document.createElement("script");(e.type="text/javascript"),(e.src="https://faves.grow.me/main.js"),(e.defer=!0),e.setAttribute("data-grow-faves-site-id","U2l0ZTpkOTY1ZGVlYy0yZmM1LTRjMWItODZjNS04YzdjOTk4NDhmNGE=");var t=document.getElementsByTagName("script")[0];t.parentNode.insertBefore(e,t);})();`,
+          }}
+        />*/}
+        
+      </body>
+    </html>
+  );
+}
+
+
+
+
+
+
+
+
+////////////////////////
+
+
+/* @import url('https://fonts.googleapis.com/css2?family=Crimson+Text:wght@400;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ============================================
+   FONT FACE DECLARATIONS
+   ============================================ */
+
+/* Larken - Headings & Titles */
+/* @font-face {
+  font-family: 'Larken';
+  src: url('/fonts/LarkenDEMO-Regular.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+} */
+
+/* Recia - not in use for now, kept for quick re-enable */
+/* @font-face {
+  font-family: 'Recia';
+  src: url('/fonts/Recia-Variable.woff2') format('woff2');
+  font-weight: 300 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Recia';
+  src: url('/fonts/Recia-VariableItalic.woff2') format('woff2');
+  font-weight: 300 700;
+  font-style: italic;
+  font-display: swap;
+} */
+
+@font-face {
+  font-family: 'Erode';
+  src: url('/fonts/Erode-Variable.woff2') format('woff2');
+  font-weight: 300 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Erode';
+  src: url('/fonts/Erode-VariableItalic.woff2') format('woff2');
+  font-weight: 300 700;
+  font-style: italic;
+  font-display: swap;
+}
+
+/* General Sans - UI Elements (categories, nav, labels) */
+@font-face {
+  font-family: 'General Sans';
+  src: url('/fonts/GeneralSans-Regular.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+
+/* ============================================
+   CSS VARIABLES
+   ============================================ */
+
+:root {
+  /* Fonts */
+  --font-heading: 'Erode', 'Georgia', serif;
+  --font-body: 'Crimson Text', 'Georgia', serif;
+  --font-ui: 'General Sans', system-ui, sans-serif;
+  --font-brand: 'Erode', 'Georgia', serif;
+  
+  /* BRAND COLORS -- only 2 in use sitewide */
+  --background: #f9fafb;
+  --foreground: #252220;
+}
+
+/* ============================================
+   GLOBAL RESETS & BASE STYLES
+   ============================================ */
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+  font-family: var(--font-body);
+  font-weight: normal;
+  /* Prevents AdSense and mobile browsers from auto-adjusting
+     text size, which causes the "zoomed in" layout distortion */
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* ============================================
+   REMOVE ALL LINK UNDERLINES
+   ============================================ */
+
+a {
+  color: inherit;
+  text-decoration: none;
+  font-weight: normal;
+}
+
+/* ============================================
+   REMOVE BOLD FROM ALL HEADINGS & ELEMENTS
+   ============================================ */
+
+/* h1, h2, h3, h4, h5, h6,
+strong, b,
+.font-bold {
+  font-weight: normal !important;
+} */
+
+/* Exception: Logo in header can be bold */
+.logo-text,
+[data-logo="true"] {
+  font-weight: bold !important;
+}
+
+/* ============================================
+   UTILITY CLASSES
+   ============================================ */
+
+.font-heading {
+  font-family: var(--font-heading);
+}
+
+.font-body {
+  font-family: var(--font-body);
+}
+
+.font-ui {
+  font-family: var(--font-ui);
+}
+
+.font-brand {
+  font-family: var(--font-brand);
+}
+
+/* ============================================
+   ANIMATIONS
+   ============================================ */
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes pulse {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+}
+
+.animate-fadeIn {
+  animation: fadeIn 0.6s ease-out;
+}
+
+.animate-slideIn {
+  animation: slideIn 0.6s ease-out;
+}
+
+.animate-pulse {
+  animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+/* ============================================
+   SCROLLBAR STYLING
+   ============================================ */
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--background);
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+/* ============================================
+   SELECTION STYLING
+   ============================================ */
+
+::selection {
+  background-color: var(--foreground);
+  color: var(--background);
+}
+
+::-moz-selection {
+  background-color: var(--foreground);
+  color: var(--background);
+}
+
+
+/* ============================================
+   center blog template styles
+   ============================================ */
+
+   /* Blog Post Prose Styles */
+.prose-content p {
+  font-family: var(--font-body);
+  font-size: 18px;
+  line-height: 1.7;
+  color: var(--foreground);
+  margin-bottom: 24px;
+}
+
+.prose-content a {
+  color: var(--foreground);
+  text-decoration: none;
+}
+
+.prose-content a:hover {
+  color: #666;
+}
+
+.prose-content strong {
+  font-weight: 600;
+}
+
+.prose-content h2 {
+  font-family: var(--font-heading);
+  font-size: 36px;
+  margin-top: 48px;
+  margin-bottom: 24px;
+}
+
+.prose-content h3 {
+  font-family: var(--font-heading);
+  font-size: 28px;
+  margin-top: 36px;
+  margin-bottom: 20px;
+}
+
+.prose-content img {
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin: 48px 0;
+}
+
+@media (max-width: 768px) {
+  .prose-content p {
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+  
+  .prose-content h2 {
+    font-size: 26px;
+    margin-top: 32px;
+  }
+  
+  .prose-content h3 {
+    font-size: 22px;
+    margin-top: 24px;
+  }
+  
+  .prose-content img {
+    margin: 32px 0;
+  }
+}
+/* ============================================
+   STANDARDIZED TYPOGRAPHY CLASSES
+   USE THESE IN ALL NEW COMPONENTS
+   ============================================ */
+
+/* Heading Classes - Responsive */
+.heading-1 {
+  @apply text-h1-mobile md:text-h1 font-heading;
+}
+
+.heading-2 {
+  @apply text-h2-mobile md:text-h2 font-heading;
+}
+
+.heading-3 {
+  @apply text-h3-mobile md:text-h3 font-heading;
+}
+
+.heading-4 {
+  @apply text-h4-mobile md:text-h4 font-heading;
+}
+
+/* Body Text Classes */
+.body-text {
+  @apply text-body font-body;
+}
+
+.body-large {
+  @apply text-body-lg font-body;
+}
+
+.body-small {
+  @apply text-body-sm font-body;
+}
+
+/* UI Element Classes */
+.ui-text {
+  @apply text-ui font-ui;
+}
+
+.ui-text-small {
+  @apply text-ui-xs font-ui;
+}
+
+/* Context-Specific Classes */
+.nav-link {
+  @apply text-ui font-ui;
+}
+
+.button-text {
+  @apply text-ui font-ui;
+}
+
+.card-title {
+  @apply text-h3-mobile md:text-h3 font-heading;
+}
+
+.card-body {
+  @apply text-body-sm font-body;
+}
+
+.label-text {
+  @apply text-ui-xs font-ui;
+}
+
+/* ============================================
+   UPDATE EXISTING BLOG PROSE TO MATCH
+   ============================================ */
+.prose-content-magazine h2 {
+  font-family: 'Erode', 'Georgia', serif !important;
+  font-size: 32px !important;
+  line-height: 1.3 !important;
+  margin-top: 3rem !important;
+  margin-bottom: 1.5rem !important;
+  font-weight: 400 !important;
+  text-align: left !important;
+}
+
+.prose-content-magazine div h2,
+.prose-content-magazine h2 {
+  font-family: 'Erode', 'Georgia', serif !important;
+  font-size: 32px !important;
+  line-height: 1.3 !important;
+  margin-top: 3rem !important;
+  margin-bottom: 1.5rem !important;
+  font-weight: 400 !important;
+  text-align: left !important;
+}
+
+.prose-content-magazine div h3,
+.prose-content-magazine h3 {
+  font-family: 'Erode', 'Georgia', serif !important;
+  font-size: 24px !important;
+  line-height: 1.4 !important;
+  margin-top: 2.5rem !important;
+  margin-bottom: 1rem !important;
+  font-weight: 400 !important;
+  text-align: left !important;
+}
+
+.prose-content p {
+  font-family: var(--font-body);
+  font-size: 20px;  /* Updated from 18px */
+  line-height: 1.7;
+  color: var(--foreground);
+  margin-bottom: 24px;
+}
+
+.prose-content h2 {
+  font-family: var(--font-heading);
+  font-size: 32px;  /* Updated from 36px */
+  line-height: 1.3;
+  margin-top: 48px;
+  margin-bottom: 24px;
+}
+
+.prose-content h3 {
+  font-family: var(--font-heading);
+  font-size: 24px;  /* Updated from 28px */
+  line-height: 1.4;
+  margin-top: 36px;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+  .prose-content p {
+    font-size: 20px;  /* Updated from 16px */
+  }
+  
+  .prose-content h2 {
+    font-size: 28px;  /* Updated from 26px */
+    margin-top: 32px;
+  }
+  
+  .prose-content h3 {
+    font-size: 22px;
+    margin-top: 24px;
+  }
+}
+
+
+/* Magazine-style prose */
+.prose {
+  @apply text-gray-900;
+  font-family: Georgia, 'Times New Roman', serif;
+  font-size: 18px;
+  line-height: 1.8;
+}
+
+.prose h2 {
+  @apply text-3xl font-serif font-bold mt-12 mb-6 text-black;
+}
+
+.prose h3 {
+  @apply text-2xl font-serif font-semibold mt-8 mb-4 text-black;
+}
+
+.prose p {
+  @apply mb-6 text-gray-900;
+}
+
+.prose strong {
+  @apply font-semibold text-black;
+}
+
+.prose a {
+  @apply text-black underline decoration-1 hover:no-underline;
+}
+
+.prose ul, .prose ol {
+  @apply ml-6 mb-6 space-y-2;
+}
+
+.prose li {
+  @apply leading-relaxed;
+}
+
+.prose img {
+  @apply w-full h-auto my-8;
+}
+
+/* ... keep all existing styles above ... */
+
+/* ============================================
+   MAGAZINE STYLE PROSE - NO JUSTIFY, 20px font
+   Add this to your globals.css
+   ============================================ */
+
+.prose-content-magazine {
+  font-family: var(--font-body);
+  color: var(--foreground);
+}
+
+/* Paragraphs - 20px on all devices, LEFT aligned */
+.prose-content-magazine p {
+  font-size: 20px;
+  line-height: 1.7;
+  margin-bottom: 1.5rem;
+  color: var(--foreground);
+  text-align: left; /* Left aligned, NOT justified */
+}
+
+/* H2 - Responsive: 28px mobile → 32px desktop */
+.prose-content-magazine h2 {
+  font-family: var(--font-heading);
+  font-size: 28px;
+  line-height: 1.3;
+  margin-top: 3rem;
+  margin-bottom: 1.5rem;
+  font-weight: normal;
+  text-align: left;
+}
+
+@media (min-width: 768px) {
+  .prose-content-magazine h2 {
+    font-size: 32px;
+  }
+}
+
+/* H3 - Responsive: 20px mobile → 24px desktop */
+.prose-content-magazine h3 {
+  font-family: var(--font-heading);
+  font-size: 20px;
+  line-height: 1.4;
+  margin-top: 2.5rem;
+  margin-bottom: 1rem;
+  font-weight: normal;
+  text-align: left;
+}
+
+@media (min-width: 768px) {
+  .prose-content-magazine h3 {
+    font-size: 24px;
+  }
+}
+
+/* H4 - Responsive: 18px mobile → 20px desktop */
+.prose-content-magazine h4 {
+  font-family: var(--font-heading);
+  font-size: 18px;
+  line-height: 1.4;
+  margin-top: 2rem;
+  margin-bottom: 0.75rem;
+  font-weight: normal;
+  text-align: left;
+}
+
+@media (min-width: 768px) {
+  .prose-content-magazine h4 {
+    font-size: 20px;
+  }
+}
+
+/* Links */
+.prose-content-magazine a {
+  color: var(--foreground);
+  text-decoration: underline;
+  text-decoration-color: rgba(0, 0, 0, 0.3);
+  text-underline-offset: 2px;
+}
+
+.prose-content-magazine a:hover {
+  text-decoration-color: rgba(0, 0, 0, 0.6);
+}
+
+/* Strong/Bold */
+.prose-content-magazine strong {
+  font-weight: 600;
+  color: var(--foreground);
+}
+
+/* Images */
+.prose-content-magazine img {
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin: 3rem 0;
+  width: 100%;
+  height: auto;
+}
+
+/* Lists */
+.prose-content-magazine ul,
+.prose-content-magazine ol {
+  margin: 1.5rem 0;
+  padding-left: 2rem;
+}
+
+.prose-content-magazine li {
+  margin-bottom: 0.75rem;
+  line-height: 1.7;
+  font-size: 20px;
+}
+
+/* ============================================
+   NEW ADDITIONS  blog route update (June 18)
+   Append this entire block to the end of globals.css
+   ============================================ */
+
+/* Cursor pointer on clickable body images (lightbox trigger) */
+.prose-content-magazine img {
+  cursor: pointer;
+}
+
+/* Inspo gallery link, shown below body images when topic exists */
+.inspo-gallery-link {
+  margin-top: -2.25rem;
+  margin-bottom: 3rem;
+  text-align: center;
+  width: 100%;
+}
+ 
+.inspo-gallery-link a {
+  font-family: var(--font-ui);
+  font-size: 13px;
+  text-decoration: underline;
+  text-decoration-color: rgba(37, 99, 235, 0.4);
+  text-underline-offset: 3px;
+  color: #2563eb;
+}
+ 
+.inspo-gallery-link a:hover {
+  text-decoration-color: #2563eb;
+}
+ 
+
+
+
+/* ============================================
+   AdSense Auto Ads - CLS fix
+   Reserves space for auto-injected ad slots
+   so layout doesn't shift when ads load late
+   ============================================ */
+
+.google-auto-placed {
+  min-height: 100px;
+}
+
+@media (min-width: 768px) {
+  .google-auto-placed {
+    min-height: 250px;
+  }
+}
