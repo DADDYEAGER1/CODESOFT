@@ -1,0 +1,630 @@
+// src/app/blog/[...slug]/page.tsx
+
+import { notFound } from 'next/navigation';
+import { getBlogPost, getAllBlogPosts, getPillarClusterPosts } from '@/lib/blog';
+import type { Metadata } from 'next';
+import { generateSchemas } from '@/lib/generateSchemas';
+import { resolveAuthor } from '@/data/authors';
+import Link from 'next/link';
+
+import CenterTemplate from '../templates/CenterTemplate';
+import SplitLeftTemplate from '../templates/SplitLeftTemplate';
+import SplitRightTemplate from '../templates/SplitRightTemplate';
+import GridTemplate from '../templates/GridTemplate';
+
+export const dynamic = 'force-static';
+export const revalidate = false;
+
+interface PageProps {
+  params: Promise<{ slug?: string[] }>;
+}
+
+// ─── Static Params ────────────────────────────────────────────────────────────
+
+export async function generateStaticParams() {
+  const allPosts = await getAllBlogPosts();
+  const paths: { slug: string[] }[] = [];
+  const registeredTopics = new Set<string>();
+
+  for (const post of allPosts) {
+    if (post.topic) {
+      paths.push({ slug: [post.topic, post.slug] });
+      if (post.topicalMap?.position === 'pillar' && !registeredTopics.has(post.topic)) {
+        paths.push({ slug: [post.topic] });
+        registeredTopics.add(post.topic);
+      }
+    } else {
+      paths.push({ slug: [post.slug] });
+    }
+  }
+
+  return paths;
+}
+
+// ─── Metadata ─────────────────────────────────────────────────────────────────
+
+export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
+  const { slug: segments } = await params;
+
+  if (!segments || segments.length === 0) return { title: 'Not Found' };
+
+  if (segments.length === 1) {
+    const [segment] = segments;
+    const allPosts = await getAllBlogPosts();
+
+    const pillar = allPosts.find(
+      (p) => p.topic === segment && p.topicalMap?.position === 'pillar'
+    );
+
+    if (pillar) {
+      // This is the navigational Topic Hub (pillar + children listing).
+      // It should NOT be indexed  it's just a nav shell, not unique content.
+      // `follow: true` still lets link equity pass through to child posts.
+      return {
+        title: pillar.title,
+        description: pillar.excerpt,
+        alternates: { canonical: `https://mirelleinspo.com/blog/${segment}` },
+        robots: { index: false, follow: true },
+      };
+    }
+
+    const post = await getBlogPost(segment);
+    if (!post) return { title: 'Not Found', robots: { index: false, follow: false } };
+
+    const canonicalUrl = post.canonical || `https://mirelleinspo.com/blog/${segment}`;
+    const imageUrl = post.image
+      ? `https://mirelleinspo.com${post.image}`
+      : 'https://mirelleinspo.com/logo.png';
+
+    return buildPostMetadata(post, canonicalUrl, imageUrl, post.imageAlt || post.title);
+  }
+
+  if (segments.length === 2) {
+    const [topic, postSlug] = segments;
+    const post = await getBlogPost(postSlug);
+    if (!post) return { title: 'Not Found', robots: { index: false, follow: false } };
+
+    const canonicalUrl =
+      post.canonical || `https://mirelleinspo.com/blog/${topic}/${postSlug}`;
+    const imageUrl = post.image
+      ? `https://mirelleinspo.com${post.image}`
+      : 'https://mirelleinspo.com/logo.png';
+
+    return buildPostMetadata(post, canonicalUrl, imageUrl, post.imageAlt || post.title);
+  }
+
+  return { title: 'Not Found', robots: { index: false, follow: false } };
+}
+
+// ─── Page ─────────────────────────────────────────────────────────────────────
+
+export default async function BlogCatchAllPage({ params }: PageProps) {
+  const { slug: segments } = await params;
+
+  if (!segments || segments.length === 0) notFound();
+
+  if (segments.length === 1) {
+    const [segment] = segments;
+    const allPosts = await getAllBlogPosts();
+
+    const pillarPost = allPosts.find(
+      (p) => p.topic === segment && p.topicalMap?.position === 'pillar'
+    );
+
+    if (pillarPost) return <PillarHub topic={segment} />;
+
+    const post = await getBlogPost(segment);
+    if (!post) notFound();
+
+    return <PostPage post={post} slug={segment} />;
+  }
+
+  if (segments.length === 2) {
+    const [topic, postSlug] = segments;
+    const post = await getBlogPost(postSlug);
+    if (!post) notFound();
+    if (post.topic && post.topic !== topic) notFound();
+
+    return <PostPage post={post} slug={postSlug} />;
+  }
+
+  notFound();
+}
+
+// ─── Post Renderer ────────────────────────────────────────────────────────────
+
+async function PostPage({ post, slug }: { post: any; slug: string }) {
+  const schemas = generateSchemas({ post, slug });
+
+  const templates: Record<string, any> = {
+    center: CenterTemplate,
+    'split-left': SplitLeftTemplate,
+    'split-right': SplitRightTemplate,
+    grid: GridTemplate,
+  };
+
+  const Template = templates[post.template || 'center'];
+
+  const postWithCoverImage = {
+    ...post,
+    coverImage: post.image || '/images/default-blog.jpg',
+  };
+
+  return (
+    <>
+      {/* Article schema */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(schemas.articleSchema) }}
+      />
+      {/* Breadcrumb schema */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(schemas.breadcrumbSchema) }}
+      />
+      {/* Optional schemas  only render if they exist */}
+      {schemas.faqSchema && (
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(schemas.faqSchema) }}
+        />
+      )}
+      {schemas.howToSchema && (
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(schemas.howToSchema) }}
+        />
+      )}
+      {schemas.videoSchema && (
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(schemas.videoSchema) }}
+        />
+      )}
+      {schemas.imageGallerySchema && (
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(schemas.imageGallerySchema) }}
+        />
+      )}
+      <Template post={postWithCoverImage} />
+    </>
+  );
+}
+
+// ─── Pillar Hub Renderer ──────────────────────────────────────────────────────
+
+async function PillarHub({ topic }: { topic: string }) {
+  const allPosts = await getAllBlogPosts();
+  const pillar = allPosts.find(
+    (p) => p.topic === topic && p.topicalMap?.position === 'pillar'
+  );
+
+  if (!pillar) notFound();
+
+  const data = await getPillarClusterPosts(pillar.slug);
+  if (!data) notFound();
+
+  const { clusters } = data;
+
+  return (
+    <main className="max-w-4xl mx-auto px-4 py-12">
+      <div className="mb-12">
+        <p className="text-sm uppercase tracking-widest text-gray-400 mb-2">Topic Hub</p>
+        <h1 className="text-4xl font-bold mb-4">{pillar.title}</h1>
+        {pillar.excerpt && <p className="text-lg text-gray-600">{pillar.excerpt}</p>}
+      </div>
+
+      <section>
+        <h2 className="text-xl font-semibold mb-6 border-b pb-2">
+          All Posts in This Topic
+        </h2>
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+          {/* Pillar post card  shown first, alongside its children */}
+          <Link
+            key={pillar.slug}
+            href={`/blog/${topic}/${pillar.slug}`}
+            className="group block border rounded-xl p-5 hover:shadow-md transition-shadow"
+          >
+            <p className="text-xs text-gray-400 mb-1">{pillar.readTime}</p>
+            <h3 className="font-semibold text-lg group-hover:underline">{pillar.title}</h3>
+            {pillar.excerpt && (
+              <p className="text-sm text-gray-500 mt-2 line-clamp-2">{pillar.excerpt}</p>
+            )}
+          </Link>
+
+          {clusters.map((post) => (
+            <Link
+              key={post.slug}
+              href={`/blog/${topic}/${post.slug}`}
+              className="group block border rounded-xl p-5 hover:shadow-md transition-shadow"
+            >
+              <p className="text-xs text-gray-400 mb-1">{post.readTime}</p>
+              <h3 className="font-semibold text-lg group-hover:underline">{post.title}</h3>
+              {post.excerpt && (
+                <p className="text-sm text-gray-500 mt-2 line-clamp-2">{post.excerpt}</p>
+              )}
+            </Link>
+          ))}
+        </div>
+      </section>
+    </main>
+  );
+}
+
+// ─── Metadata Helper ──────────────────────────────────────────────────────────
+
+function buildPostMetadata(post: any, canonicalUrl: string, imageUrl: string, imageAltText: string): Metadata {
+  const resolvedAuthor = resolveAuthor(post.author || '');
+  const authorFullName = resolvedAuthor?.fullName || 'Jyotika Verma';
+  const authorUrl = resolvedAuthor?.authorPageUrl || 'https://mirelleinspo.com/authors/jyoti-mirelle';
+ 
+  return {
+    title: post.title,
+    description:
+      post.excerpt ||
+      `${post.title}  nail art inspiration, tutorials, and trend analysis from Mirellé Inspo.`,
+    authors: [{ name: authorFullName, url: authorUrl }],
+    creator: authorFullName,
+    publisher: 'Mirellé Inspo',
+    alternates: { canonical: canonicalUrl },
+    robots: {
+      index: true,
+      follow: true,
+      nocache: false,
+      googleBot: { index: true, follow: true, 'max-video-preview': -1, 'max-image-preview': 'large', 'max-snippet': -1 },
+    },
+    openGraph: {
+      title: post.title,
+      description: post.excerpt || `${post.title}  nail inspiration from Mirellé Inspo.`,
+      type: 'article',
+      url: canonicalUrl,
+      siteName: 'Mirellé Inspo',
+      locale: 'en_US',
+      images: [{ url: imageUrl, width: post.imageWidth || 1200, height: post.imageHeight || 630, alt: imageAltText, type: 'image/jpeg' }],
+      publishedTime: post.date,
+      modifiedTime: post.dateModified || post.date,
+      authors: [authorUrl],
+      section: post.category || 'Nail Art',
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title: post.title,
+      description: post.excerpt || `${post.title}  nail inspiration from Mirellé Inspo.`,
+      images: [imageUrl],
+      creator: '@mirelleinspo',
+      site: '@mirelleinspo',
+    },
+    other: {
+      'article:published_time': post.date,
+      'article:modified_time': post.dateModified || post.date,
+      'article:author': authorUrl,
+      'article:section': post.category || 'Nail Art',
+      ...(post.readTime && { 'twitter:label1': 'Reading time', 'twitter:data1': post.readTime }),
+    },
+  };
+}
+
+
+
+// src/app/blog/templates/SplitLeftTemplate.tsx
+import { BlogPost } from '@/types/blog';
+import MDXContent from './MDXContent';
+import Breadcrumbs from '@/components/Breadcrumbs';
+import ImageCarousel from '@/components/Blog/ImageCarousel';
+import ProductGrid from '@/components/Blog/ProductGrid';
+import InlineNewsletter from '@/components/Blog/InlineNewsletter';
+import AboutEEAT from '@/components/Blog/AboutEEAT';
+import FinalNewsletter from '@/components/Blog/FinalNewsletter';
+import ReadMoreSection from '@/components/Blog/ReadMoreSection';
+import WrapUp from '@/components/Blog/WrapUp';
+import TableOfContents from '@/components/Blog/TableOfContents';
+import AuthorCard from '@/components/Blog/AuthorCard';
+import { getAuthor } from '@/lib/authors';
+import { extractBodyImages } from '@/lib/blog';
+import ShareButton from '@/components/Blog/ShareButton';
+import DownloadButton from '@/components/Blog/DownloadButton';
+import FAQ from '@/components/Blog/FAQ';
+import Lightbox from '@/components/Blog/Lightbox';
+import SocialFollowCTA from '@/components/ui/SocialFollowCTA';
+
+interface SplitLeftTemplateProps {
+  post: BlogPost;
+}
+
+function renderContentWithProducts(html: string, products: BlogPost['products']): React.ReactNode {
+  if (!products || products.length === 0) return <div dangerouslySetInnerHTML={{ __html: html }} />;
+  const parts = html.split(/({{PRODUCTS:\d+:[\d,]+}})/g);
+  if (parts.length === 1) return <div dangerouslySetInnerHTML={{ __html: html }} />;
+  return (
+    <>
+      {parts.map((part, index) => {
+        const match = part.match(/^{{PRODUCTS:(\d+):([\d,]+)}}$/);
+        if (match) {
+          const count = parseInt(match[1]) as 1 | 2 | 4;
+          const indices = match[2].split(',').map((i) => parseInt(i.trim()));
+          if (![1, 2, 4].includes(count)) return null;
+          return <ProductGrid key={index} products={products} count={count} indices={indices} />;
+        }
+        return <div key={index} dangerouslySetInnerHTML={{ __html: part }} />;
+      })}
+    </>
+  );
+}
+
+export default function SplitLeftTemplate({ post }: SplitLeftTemplateProps) {
+  const postProducts = post.products ?? [];
+  const author = post.author ? getAuthor(post.author) : null;
+  const bodyImages = extractBodyImages(post.content || '', post.image);
+
+  // Split content into thirds
+  const h2Blocks = (post.content || '').split(/(?=<h2[\s>])/);
+  const total = h2Blocks.length;
+  const cut1 = Math.max(1, Math.floor(total * 0.33));
+  const cut2 = Math.max(cut1 + 1, Math.floor(total * 0.67));
+  const firstThird  = h2Blocks.slice(0, cut1).join('');
+  const secondThird = h2Blocks.slice(cut1, cut2).join('');
+  const lastThird   = h2Blocks.slice(cut2).join('');
+
+  if (post.isMDX) {
+    return (
+      <div className="min-h-screen bg-background">
+        <DownloadButton slug={post.slug} title={post.title} bodyImages={bodyImages} />
+        <ShareButton url={post.canonical} title={post.title} />
+        <Lightbox />
+
+        {/* Hero */}
+        <div className="w-full">
+          <div className="hidden md:grid md:grid-cols-2 h-[600px]">
+            <div className="flex items-center justify-center px-16 py-12" style={{ backgroundColor: '#f9fafb' }}>
+              <div className="text-center max-w-[420px] w-full">
+                {post.category && <p className="font-ui text-sm uppercase tracking-wider text-gray-600 mb-4">{post.category}</p>}
+                <h1 className="font-heading text-[36px] md:text-[42px] leading-tight mb-4" style={{ color: '#252220' }}>{post.title}</h1>
+                <p className="font-ui text-sm uppercase tracking-wide mb-2" style={{ color: '#252220' }}>BY {post.author}</p>
+                <p className="font-ui text-sm text-gray-600">{new Date(post.date).toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}</p>
+              </div>
+            </div>
+            <div className="flex items-center justify-center p-12 overflow-hidden" style={{ backgroundColor: '#f9fafb' }}>
+              {post.image && <img src={post.image} alt={post.imageAlt || post.title} className="w-full h-full object-contain" />}
+            </div>
+          </div>
+          <div className="md:hidden w-full">
+            <div className="text-center py-8 px-6" style={{ backgroundColor: '#f9fafb' }}>
+              {post.category && <p className="font-ui text-xs uppercase tracking-wider text-gray-600 mb-3">{post.category}</p>}
+              <h1 className="font-heading text-[36px] mb-3" style={{ color: '#252220' }}>{post.title}</h1>
+              <p className="font-ui text-xs uppercase tracking-wide mb-2" style={{ color: '#252220' }}>BY {post.author}</p>
+              <p className="font-ui text-xs text-gray-600">{new Date(post.date).toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}</p>
+            </div>
+            {post.image && <img src={post.image} alt={post.imageAlt || post.title} className="w-full h-auto" />}
+          </div>
+        </div>
+
+        <div className="w-full flex flex-col items-start">
+          <div className="w-full max-w-[700px] px-6 md:px-12 lg:px-16 mt-12">
+            <article className="prose-content-magazine">
+              <MDXContent source={post.content} products={postProducts} topic={post.topic} showInspoGalleryLink={post.showInspoGalleryLink} />
+            </article>
+          </div>
+        </div>
+
+        {post.faqItems && post.faqItems.length > 0 && (
+          <div className="w-full flex justify-center">
+            <div className="w-full max-w-7xl px-6 md:px-12 lg:px-16">
+              <FAQ faqs={post.faqItems} />
+            </div>
+          </div>
+        )}
+        <div className="w-full flex justify-center">
+          <div className="w-full max-w-7xl px-6 md:px-12 lg:px-16">
+            <FinalNewsletter />
+          </div>
+        </div>
+        <div className="w-full flex justify-center">
+          <div className="w-full max-w-7xl px-6 md:px-12 lg:px-16">
+            {author && <AuthorCard author={author} />}
+          </div>
+        </div>
+        <AboutEEAT />
+        <ReadMoreSection currentSlug={post.slug} />
+      </div>
+    );
+  }
+
+  return (
+    <div className="min-h-screen bg-background">
+      <DownloadButton slug={post.slug} title={post.title} bodyImages={bodyImages} />
+      <ShareButton url={post.canonical} title={post.title} />
+      <Lightbox />
+
+      {/* Hero */}
+      <div className="w-full">
+        <div className="hidden md:grid md:grid-cols-2 h-[600px]">
+          <div className="flex items-center justify-center px-16 py-12" style={{ backgroundColor: '#f9fafb' }}>
+            <div className="text-center max-w-[420px] w-full">
+              {post.category && <p className="font-ui text-sm uppercase tracking-wider text-gray-600 mb-4">{post.category}</p>}
+              <h1 className="font-heading text-[36px] md:text-[42px] leading-tight mb-4" style={{ color: '#252220' }}>{post.title}</h1>
+              <p className="font-ui text-sm uppercase tracking-wide mb-2" style={{ color: '#252220' }}>BY {post.author}</p>
+              <p className="font-ui text-sm text-gray-600">{new Date(post.date).toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}</p>
+            </div>
+          </div>
+          <div className="flex items-center justify-center p-12 overflow-hidden" style={{ backgroundColor: '#f9fafb' }}>
+            {post.image && <img src={post.image} alt={post.imageAlt || post.title} className="w-full h-full object-contain" />}
+          </div>
+        </div>
+        <div className="md:hidden w-full">
+          <div className="text-center py-8 px-6" style={{ backgroundColor: '#f9fafb' }}>
+            {post.category && <p className="font-ui text-xs uppercase tracking-wider text-gray-600 mb-3">{post.category}</p>}
+            <h1 className="font-heading text-[36px] mb-3" style={{ color: '#252220' }}>{post.title}</h1>
+            <p className="font-ui text-xs uppercase tracking-wide mb-2" style={{ color: '#252220' }}>BY {post.author}</p>
+            <p className="font-ui text-xs text-gray-600">{new Date(post.date).toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}</p>
+          </div>
+          {post.image && <img src={post.image} alt={post.imageAlt || post.title} className="w-full h-auto" />}
+        </div>
+      </div>
+
+      <div className="w-full flex justify-center mt-12">
+        <div className="w-full max-w-7xl px-6 md:px-12 lg:px-16">
+          <div className="mb-8">
+            <Breadcrumbs items={[{ label: 'Blog', href: '/blog' }]} currentPage={post.title} includeSchema={false} />
+          </div>
+          <div className="block lg:hidden mb-8">
+            <TableOfContents content={post.content} />
+          </div>
+
+          <div>
+            {post.tldr && <WrapUp tldr={post.tldr} />}
+            <article className="prose-content-magazine">
+              {/* First third ~33% */}
+              {renderContentWithProducts(firstThird, post.products)}
+            </article>
+          </div>
+        </div>
+      </div>
+
+      <div className="w-full"><SocialFollowCTA platforms={['instagram', 'pinterest', 'twitter', 'facebook', 'youtube']} /></div>
+
+      {/* Inline newsletter 1  at ~33% */}
+      <div className="w-full my-10">
+        <InlineNewsletter />
+      </div>
+
+      <div className="w-full flex justify-center">
+        <div className="w-full max-w-7xl px-6 md:px-12 lg:px-16">
+          <article className="prose-content-magazine">
+            {/* Second third ~33–67% */}
+            {renderContentWithProducts(secondThird, post.products)}
+
+            {post.carouselImages && post.carouselImages.length > 0 && (
+              <div className="my-12"><ImageCarousel images={post.carouselImages} /></div>
+            )}
+          </article>
+        </div>
+      </div>
+
+      {/* Inline newsletter 2  at ~67% */}
+      <div className="w-full my-10">
+        <InlineNewsletter />
+      </div>
+
+      <div className="w-full flex justify-center">
+        <div className="w-full max-w-7xl px-6 md:px-12 lg:px-16">
+          <article className="prose-content-magazine">
+            {/* Last third ~67–100% */}
+            {renderContentWithProducts(lastThird, post.products)}
+          </article>
+        </div>
+      </div>
+
+      <div className="w-full"><SocialFollowCTA platforms={['instagram', 'pinterest', 'twitter', 'facebook', 'youtube']} /></div>
+
+      {post.faqItems && post.faqItems.length > 0 && (
+        <div className="w-full flex justify-center">
+          <div className="w-full max-w-7xl px-6 md:px-12 lg:px-16">
+            <FAQ faqs={post.faqItems} />
+          </div>
+        </div>
+      )}
+      <div className="w-full flex justify-center">
+        <div className="w-full max-w-7xl px-6 md:px-12 lg:px-16">
+          <FinalNewsletter />
+        </div>
+      </div>
+      <div className="w-full flex justify-center">
+        <div className="w-full max-w-7xl px-6 md:px-12 lg:px-16">
+          {author && <AuthorCard author={author} />}
+        </div>
+      </div>
+      <AboutEEAT />
+      <ReadMoreSection currentSlug={post.slug} />
+    </div>
+  );
+}
+
+
+
+
+
+
+
+
+
+
+// src/components/Header.tsx
+// Server component — fetches the latest 5 posts per dynamic dropdown at
+// build time, zero runtime cost. Mirrors the Footer.tsx / FooterClient.tsx
+// server/client split so nav data stays auto-generated the same way.
+
+import { getAllBlogPosts } from '@/lib/blog';
+import { getAllShopPosts } from '@/lib/shop';
+import { getAllTopics } from '@/lib/topic';
+import { getAllFaqs } from '@/lib/faqs';
+import HeaderClient, { NavLink } from './HeaderClient';
+
+const MIRELLE_DOMAIN = 'https://mirelleinspo.com';
+
+// Strips the absolute domain some lib functions bake into `url`/`canonical`,
+// since internal <Link> hrefs need to be relative paths, not full URLs.
+function toRelativePath(url: string): string {
+  return url.replace(MIRELLE_DOMAIN, '');
+}
+
+// Wraps a single getAllX() call so one failing category can't take down
+// the rest of the header via Promise.all's all-or-nothing rejection.
+// Same defensive pattern as Footer.tsx's safeFetch().
+async function safeFetch<T>(label: string, fn: () => Promise<T[]>): Promise<T[]> {
+  try {
+    return await fn();
+  } catch (error) {
+    console.error(`[Header] Failed to load "${label}" — showing empty dropdown instead.`, error);
+    return [];
+  }
+}
+
+async function getHeaderData() {
+  const [allBlogs, allShop, allTopics, allFaqs] = await Promise.all([
+    safeFetch('blog', getAllBlogPosts),
+    safeFetch('shop', getAllShopPosts),
+    safeFetch('topics', getAllTopics),
+    safeFetch('faqs', getAllFaqs),
+  ]);
+
+  // Every getAllX() already sorts newest-first — just take the top 5 and
+  // shape each into { label, href }. No date-window filtering here (unlike
+  // the footer's "last 15 days"): the header always wants exactly 5 links,
+  // regardless of how recently they were published.
+
+  const edits: NavLink[] = allBlogs.slice(0, 5).map((p) => ({
+    label: p.title,
+    href: toRelativePath(p.url),
+  }));
+
+  const shop: NavLink[] = allShop.slice(0, 5).map((p) => ({
+    label: p.title,
+    href: `/shop/${p.productType}/${p.slug}`,
+  }));
+
+  const longReads: NavLink[] = allTopics.slice(0, 5).map((t) => ({
+    label: t.title,
+    href: toRelativePath(t.url),
+  }));
+
+  const nailFaqs: NavLink[] = allFaqs.slice(0, 5).map((f) => ({
+    label: f.title,
+    href: `/nail-faqs/${f.slug}`,
+  }));
+
+  return { edits, shop, longReads, nailFaqs };
+}
+
+export default async function Header() {
+  const { edits, shop, longReads, nailFaqs } = await getHeaderData();
+
+  return (
+    <HeaderClient
+      editsLinks={edits}
+      shopLinks={shop}
+      longReadsLinks={longReads}
+      nailFaqsLinks={nailFaqs}
+    />
+  );
+}
