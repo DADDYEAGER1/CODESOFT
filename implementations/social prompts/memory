@@ -1,0 +1,201 @@
+# MEMORY HANDOFF — SOCIAL MEDIA CONTENT AGENT BUILDS
+## Context for whichever agent builds the next platform's system prompt (Instagram, TikTok, etc.)
+
+You are being asked to build a subordinate-facing daily content prompt for a 
+new social media platform, for the same underlying operator (Gaurav) who 
+already has one working for Pinterest. This document is not the new prompt — 
+it's what the Pinterest build actually taught, so you don't repeat the same 
+mistakes or skip the same steps. Read this fully before doing anything else.
+
+---
+
+## THE GOAL, STATED PLAINLY
+
+Gaurav runs a content operation. He has a subordinate (a real person, no prior 
+platform/SEO/marketing knowledge) who executes a fixed daily workflow with zero 
+strategic decisions. Every decision — what to post, where, in what format, 
+linking to what — is made once, locked into the prompt, and never re-decided 
+daily. The subordinate's only job is: open chat, get output, copy-paste, post.
+
+The end target is a numeric outbound-traffic goal (Pinterest's was 500k 
+clicks/month). Everything in the prompt should trace back to that number — if 
+a design choice, a board, or a rule doesn't plausibly move that number, it's 
+decoration and should be cut or deprioritized.
+
+**You must become "a living algorithm of that platform."** That means before 
+writing a single rule, you research deeply and current: how the platform's 
+recommendation/discovery system actually works right now, what content formats 
+are winning right now, what's changed recently, and what the platform's own 
+stated best practices are. Do not build from pre-trained assumptions about how 
+the platform "generally" works — platforms change their algorithms often, and 
+stale assumptions produce a strategy that's already obsolete on day one.
+
+---
+
+## THE METHOD THAT ACTUALLY WORKED (follow this order)
+
+1. **Understand the content supply first, not the platform second.** Before 
+   any platform strategy was built, we audited the actual website content 
+   (900+ URLs) to see what existed, how deep each topic cluster went, and 
+   what was sustainable for months of daily output — not just what sounded 
+   good. Board/theme selection was driven by content depth data, not vibes. 
+   Do this same audit for whatever content pool feeds the new platform.
+
+2. **Test the smallest real unit before scaling.** We did not write "the 
+   Nano Banana prompt" as a whole system on paper and trust it. We generated 
+   ONE test pin, looked at the actual rendered result, found a real bug (text 
+   contrast failure — light text landed on a same-color background), and only 
+   then generalized the fix into a rule. Every format (Direct Inspo, 
+   Infographic, Informational) was proven on one real output before it became 
+   a repeatable rule. If the new platform has an equivalent generative step 
+   (image, video, caption), test it the same way — one real unit, inspect 
+   the actual result, generalize only after it's proven.
+
+3. **When something breaks, fix the root cause, not the instance.** The 
+   contrast bug wasn't fixed by rewriting one prompt — it was fixed by adding 
+   a standing rule ("text must never match the color of the surface behind 
+   it") that now applies to every future generation, on every template, 
+   forever. Look for the general rule behind every specific failure.
+
+4. **Lock things in this order: content pool → format → volume/cadence → 
+   platform-specific mechanics → wording.** We did NOT start with "what 
+   should the caption say." We started with what content exists, then what 
+   format best serves it, then how much/how often is sustainable and safe 
+   per the platform's own norms, and only at the end did we touch exact 
+   phrasing/templates. Wording is the last mile, not the starting point.
+
+5. **Research safe volume/frequency limits from the platform itself before 
+   fixing a daily number.** We did not guess "18 pins a day is fine." We 
+   researched Pinterest's actual posting-frequency norms (3-7 pins/week/board 
+   was the research finding) and only then negotiated a number with Gaurav 
+   that balanced his desired volume against real platform risk (getting 
+   flagged, suppressed, or diluted). Do the same research step for the new 
+   platform — every platform has different safe-volume norms and different 
+   penalties for over-posting.
+
+---
+
+## MISTAKES I MADE — DO NOT REPEAT THESE
+
+1. **I generated content from generic/imagined ideas instead of the actual 
+   source material Gaurav provided.** Twice, I wrote a "test prompt" pulling 
+   from general knowledge instead of the specific canonical link/page he'd 
+   shared. He caught it both times and was right to be annoyed. **Rule: if 
+   real source material exists, use it — never substitute invented content 
+   because fetching the real thing is inconvenient.**
+
+2. **I did basic arithmetic wrong out loud and had to be corrected.** Twice — 
+   once on a pin-count total (12+6=24 instead of 18), once on a link-count 
+   total (claimed 315 when the real number, after a silent data-loss bug in 
+   my own file edit, was 256). **Rule: verify counts programmatically, not by 
+   eyeballing or mental math, especially after any file edit — and always 
+   re-check a total before stating it as fact.**
+
+3. **I silently dropped real data during a file edit and reported a wrong 
+   number confidently.** When inserting new content into the link-rotation 
+   file, an entire 59-link block vanished and I didn't notice until asked to 
+   verify. **Rule: after any structural edit to a data file (insertions, 
+   renumbering, merges), run an explicit verification pass — check for gaps, 
+   duplicates, and correct sequential order — before presenting it as done.**
+
+4. **I over-explained prompts instead of matching the lean style the operator 
+   actually wanted.** Gaurav explicitly modeled the tone he wanted (a 
+   reference prompt written in short, tight, non-repetitive sentences) and I 
+   initially kept writing padded, over-instructed prompts anyway. **Rule: 
+   when the person shows you a reference example of the style they want, 
+   match that style's density exactly — don't default to maximal explicitness 
+   if they've signaled they want lean.**
+
+5. **I built a structural decision (e.g. "match template to board mood") that 
+   the operator explicitly didn't want, because I was solving a problem more 
+   complex than the one asked.** He wanted true random template selection, 
+   not curated matching. **Rule: don't add sophistication the person didn't 
+   ask for — confirm scope before building a more elaborate mechanism than 
+   requested.**
+
+6. **I initially treated a "reference/inspiration" instruction as license to 
+   loosely reinterpret a template, when the operator meant strict, pixel-level 
+   reuse.** This produced a visibly worse result (a Halloween pin that changed 
+   hand poses, badge shapes, and proportions instead of just the design). The 
+   fix was reframing the instruction as an EDIT task ("modify this exact 
+   file, do not create a new composition") rather than a "generate inspired 
+   by this" task. **Rule: when an operator wants an existing asset reused 
+   precisely, the generation instruction must say "edit this file, keep X/Y/Z 
+   unchanged" — not "use this as a reference/inspiration," which gives the 
+   generation model too much room to drift.**
+
+7. **I misread pin-count instructions once (thought "3 boards daily" meant 
+   3 pins, not 3 pins per board).** **Rule: when a volume/cadence instruction 
+   is even slightly ambiguous, restate your interpretation back before 
+   building on it, rather than assuming and having to redo work downstream.**
+
+---
+
+## WHAT ACTUALLY MATTERED MOST (in order of impact)
+
+1. **A hardcoded weekly schedule so the subordinate never makes a judgment 
+   call.** This was the single most important structural decision — every 
+   board, every format, every day of the week is pre-decided. Nothing is 
+   "ask the subordinate" or "let the model decide fresh each day" once locked.
+
+2. **Deterministic, date-based rotation formulas for anything with too many 
+   options to hardcode a fixed shortlist (e.g. 256 informational links).** 
+   Rather than asking the model to "pick a good one" daily (which risks 
+   drift, repetition, or mismatch), we used `(days since a fixed start date) 
+   mod pool size` — fully reproducible, auditable, and requires zero judgment 
+   from anyone, including the AI.
+
+3. **A locked, tested visual/generation template library with explicit 
+   "keep unchanged" and "change only" lists** — built from real reference 
+   examples the operator provided, catalogued by structure (not theme, since 
+   theme is disposable and gets overwritten daily).
+
+4. **Truthfulness as a hard constraint on links** — every piece of content 
+   must genuinely match where its outbound link goes. This wasn't just an 
+   ethics nicety; it's what made the deterministic link-rotation mechanism 
+   necessary in the first place (content gets built to match the day's 
+   assigned link, not the other way around).
+
+5. **A single, unambiguous output format the subordinate can mechanically 
+   copy-paste** — every field (Title, Description, Prompt, Link, etc.) in 
+   its own separate code block, label outside the block, nothing extra 
+   inside it. This came from direct visual feedback (a screenshot of messy 
+   output) — always sanity-check what the ACTUAL rendered output looks like 
+   to a real, non-technical user, not just whether the instructions are 
+   theoretically clear.
+
+6. **A plain-language "how do I use this" walkthrough embedded directly in 
+   the prompt**, written as numbered steps a first-time user follows exactly, 
+   so the subordinate never has to guess at the workflow even before asking 
+   a single question.
+
+---
+
+## HOW TO START THE NEW PLATFORM BUILD
+
+1. Research the platform's current algorithm/discovery mechanics, current 
+   best-performing formats, current safe posting frequency, and any recent 
+   platform changes — don't assume anything is still true from training data.
+2. Ask Gaurav for the content source/hub he wants to drive traffic to (same 
+   as the Pinterest content-hub audit) — don't assume it's the same website 
+   unless confirmed.
+3. Propose a small number of focus content clusters/categories based on 
+   content depth, same way Pinterest's evergreen boards were chosen — don't 
+   spread thin across everything.
+4. Test the platform's actual generative/creative unit (whatever the 
+   equivalent of "one pin" is — one Reel script, one carousel, one video 
+   concept) on a single real example before building the full daily system.
+5. Only after the above is proven, build the fixed daily schedule, the 
+   deterministic rotation mechanisms, the output format, and the plain- 
+   language usage guide — in that order.
+6. Confirm ambiguous instructions back to Gaurav before building on them, 
+   especially anything involving volume, counts, or "how many/how often."
+7. Verify any generated data file (link lists, schedules, rotations) 
+   programmatically for gaps/duplicates/correct sequencing before presenting 
+   it as final.
+
+---
+
+**This document is reference material, not a prompt to run.** Read it, absorb 
+the method and the failure patterns, then go research the new platform 
+thoroughly before writing anything.
