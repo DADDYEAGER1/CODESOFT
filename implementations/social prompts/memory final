@@ -1,0 +1,547 @@
+# MEMORY HANDOFF v2 — MULTI-PLATFORM SOCIAL PROMPT BUILD (Mirellé Inspo)
+## Continuation document for the next agent. Read fully before doing anything.
+## This supersedes/extends the original memory doc — treat this as the current state of truth.
+
+---
+
+## OPERATOR & PROJECT CONTEXT
+
+Operator: Gaurav. Brand: **Mirellé Inspo** — research-driven nail editorial platform
+(nails/beauty niche, exact same brand across every property). Website:
+https://mirelleinspo.com. Live since Sept 2024. ~30K monthly readers, 1.3M+
+monthly Pinterest visitors, 63% engagement rate, 60% organic search traffic.
+Tagline: "We curate so you don't have to."
+
+**Overall goal:** Build one aggregate system of daily-use subordinate-facing
+prompts covering **Pinterest, Facebook, Instagram, X/Twitter, and YouTube** —
+all same brand, same niche, same subordinate operator (no prior
+platform/SEO/marketing knowledge) executing a fixed daily workflow with zero
+strategic decisions per day. Every decision is made once, locked into the
+prompt, never re-decided daily.
+
+**Content source model (applies to all platforms):** Gaurav does NOT want new
+content created for these new platforms. Everything is **repurposed** from
+existing pipelines:
+- Pinterest daily pins/infographics (nail images) — already produced daily
+- Website blog posts (already published daily, all article types)
+- Two affiliate products: MetaNail Complex (nail strengthening serum) and
+  AppaNail (nail/foot health supplement, biotin-based) — both already added
+  to FB Page "Offers" section with affiliate links
+- Assets are static images only (no native video production) — any "video"
+  content is an image + background music infographic-style clip
+
+**Operator communication style (apply throughout, always follow):**
+- Maximally token-efficient. Short, direct chat replies. No filler, no
+  unrequested summaries/recaps unless explicitly asked (like this doc).
+- Step-by-step: one step at a time, wait for confirmation before advancing.
+- All substantial content (prompts, data, code) goes in artifacts, not
+  inline chat walls of text.
+- Push back directly (with reasoning, briefly) when a request conflicts with
+  researched best practice — operator responds well to this, don't just
+  comply silently with something known to be suboptimal.
+- Verify all counts/data programmatically before stating them as fact.
+- **Research must be genuine, not generic AI text.** For any post/caption
+  content, actually research the specific topic/slug (web search, or
+  site:mirelleinspo.com + slug to find the real published page) before
+  writing copy. Operator has caught and corrected generic AI-sounding
+  content multiple times in this build — this is a recurring, explicit
+  standing instruction, not a one-off note.
+- When operator gives real source material (links, screenshots, actual site
+  content), use it directly — never substitute invented/generic content.
+- Confirm ambiguous instructions back to operator briefly, then proceed —
+  don't over-ask, but don't silently guess on anything substantial either.
+
+---
+
+## METHOD BEING FOLLOWED (proven across all platforms so far)
+
+1. Understand content supply first (audit real content) before platform
+   strategy.
+2. Lock order: **content pool → format → volume/cadence → platform-specific
+   mechanics → wording/output format** — never start with caption wording.
+3. Research each platform's actual current safe volume/frequency and
+   algorithm behavior before fixing any daily number — never guess, never
+   reuse one platform's numbers for another without fresh research (each
+   platform's norms differ significantly — proven true every time so far:
+   Facebook 3x/day, Instagram 1x/day, X 4x/day, YouTube 3x/day, all
+   different).
+4. Verify any generated/sorted data file programmatically (counts, dupes,
+   gaps) before presenting it as final — use bash_tool, never eyeball large
+   lists.
+5. When a research finding contradicts something already assumed or stated,
+   correct it plainly and immediately — don't bury the correction.
+6. Site is blocked for direct AI fetches (web_fetch on mirelleinspo.com URLs
+   fails with PERMISSIONS_ERROR unless the URL surfaced via search first).
+   Workaround: `site:mirelleinspo.com [exact-slug]` via web_search often
+   surfaces the real page or close related pages. This is inconsistent —
+   some pages index, some don't (appears tied to how new/low-authority the
+   page is). When the exact slug doesn't surface, the fallback is: infer
+   the topic from the slug name, then research it properly on the open web
+   (not generic knowledge) — same rigor either way, confirmed explicitly by
+   operator as the acceptable fallback method.
+
+---
+
+## PLATFORM STATUS SUMMARY
+
+- **Pinterest** — prompt already exists and works (operator has it, will
+  attach separately). Uses a `date mod pool size` deterministic rotation
+  formula for its Nail Care Tips link pool (see link_rotation_file_ in
+  project files — 256 links, Day 1 = Aug 4 2026). This formula is the
+  proven pattern reused for other platforms' link rotations.
+- **Facebook** — planning/research complete, locked. Prompt NOT yet
+  written. Full details below.
+- **Instagram** — fully locked, planning complete. Prompt NOT yet written.
+  Full details below.
+- **X/Twitter** — fully locked, planning complete. Prompt NOT yet written.
+  Full details below. One open gap: no day-to-link rotation formula locked
+  yet for its content pools (see X section).
+- **YouTube** — IN PROGRESS, not finished. This is the next agent's
+  primary focus. Full details and open items below.
+
+**Aggregate prompt:** NOT started. Per operator's plan: (1) finish YouTube
+strategy/content funnel with the next agent, (2) operator will then share
+the Pinterest prompt + Pinterest link file, (3) upgrade/merge everything
+into one all-social prompt that behaves differently per platform based on
+which platform is selected, (4) build a final supporting links file
+(equivalent to link_rotation_file_) covering all platforms' link pools for
+date-based rotation and any other mechanics.
+
+---
+
+## FACEBOOK — FULLY LOCKED
+
+### Content system
+**Daily volume:** 3 posts/day, spaced **8+ hours apart**, via Meta Business
+Suite native scheduler (free, up to 75 days ahead, timezone-aware). IG
+cross-post box must stay UNCHECKED (Instagram has its own system).
+
+**Daily content pool — exactly one of each per day, every day:**
+1. Nail image (single or carousel) — from that day's **seasonal** Pinterest
+   board only (not evergreen). No link, ever.
+2. Website article + link — caption references it, link goes to it. Pulled
+   from the link pool (see below).
+3. Infographic + BGM video — image + background music, manually produced by
+   Gaurav. No link.
+
+**Slot order (AM/Midday/PM) rotates across the week** — locked table:
+
+| Day | AM | Midday | PM |
+|---|---|---|---|
+| Mon | Website + link | Nail image | Infographic video |
+| Tue | Infographic video | Website + link | Nail image |
+| Wed | Nail image | Infographic video | Website + link |
+| Thu | Website + link | Infographic video | Nail image |
+| Fri | Nail image | Website + link | Infographic video |
+| Sat | Infographic video | Nail image | Website + link |
+| Sun | Website + link | Nail image | Infographic video |
+
+**No colorful text posts** — explicitly removed, do not reintroduce.
+
+### Facebook SEO / per-post spec
+
+| Format | Caption length | Hashtags | Alt text | Link |
+|---|---|---|---|---|
+| Nail image/carousel | 40–80 chars, punchy | 3–5, specific to that day's design/topic | Yes — real description, not generic | None |
+| Website + link | 80–150 chars, hook | 2–3, specific | Not required (auto-preview) | Yes, native auto-preview |
+| Infographic+BGM video | 40–80 chars, search-intent phrasing | 3–5, specific | No manual field — caption + accurate thumbnail | None |
+
+Hashtags always specific to that day's actual topic — never generic filler.
+
+**Output format:** Caption / Hashtags / Alt text / Link each in own separate
+labeled copy-paste box — same principle as Pinterest prompt.
+
+### Link pool
+- **Evergreen: 735 links** — defined as "full 918-link source minus the 183
+  seasonal links below." NOT separately saved as its own file yet — needs
+  re-derivation (full list minus seasonal, then verify count = 735
+  programmatically) if/when needed.
+- **Seasonal: 183 links** — full verified list exists in the original
+  memory doc (not reproduced here for length; available in project files
+  under the original `memory` file, or re-fetchable from the source below).
+  Use ONLY when that season/event is currently active; otherwise pull from
+  evergreen.
+- **Original source file:** https://raw.githubusercontent.com/DADDYEAGER1/Mirelle_Inspo/refs/heads/main/Mirell%C3%A9/1%20aug%20content
+  (this is the FULL 918-link site inventory — same file used to build all
+  the X pools below. Re-fetch this if any platform needs more link
+  material.)
+  -**183 seasonal fixed links Url** = https://raw.githubusercontent.com/DADDYEAGER1/Mirelle_Inspo/refs/heads/main/implementations/social%20prompts/seasonal%20links
+- **Rotation formula (matches Pinterest's proven pattern):**
+  `day_index = (today's date − Day 1 start date) in days`
+  `evergreen_link = evergreen_list[day_index mod 735]`
+
+### OPEN ITEMS for Facebook
+1. **Day 1 trigger date** — operator said this will be set "when we
+   finalize the prompt creation ready to use," i.e. decide this at the very
+   end, right before the prompt goes live. Do not guess.
+2. Seasonal-window trigger logic (exact start/end dates per season/event)
+   not explicitly re-confirmed for Facebook specifically — Pinterest's
+   existing seasonal activation logic (see Pinterest prompt, already in
+   operator's possession) is the reference pattern to reuse/adapt.
+3. Evergreen 735-link file not yet separately generated/saved.
+4. Actual Facebook prompt text not yet written.
+
+---
+
+## INSTAGRAM — FULLY LOCKED
+
+### Content system
+**Daily volume:** 1 post/day, 7 days/week. **Informational carousels ONLY**
+— no nail-image carousels on Instagram at all (operator explicitly chose
+this over alternating or mixing).
+
+**Format:** 5-slide carousel, **1:1 square ratio** (not 4:5 — operator
+explicitly locked 1:1 after I raised 4:5 as the research-favored option;
+operator's call stands), **arrow swipe-cue on ALL 5 slides** (including
+slide 5, alongside its CTA badge).
+
+**Link/topic source:** Reuses the SAME daily link rotation as Pinterest's
+Nail Care Tips board — same link, same day, same topic across both
+platforms. Formula: Day 1 = Aug 4 2026, `day_index = (days since Aug 4
+2026) mod 256`, link at position `(day_index + 1)` in the master 256-link
+list (see link_rotation_file_ in project files).
+
+### Slide content rules — CRITICAL, caught and fixed during this build
+- **Exact final copy must be written into every image-generation prompt,
+  word-for-word, with an explicit "no rephrasing" instruction.** This was a
+  hard lesson: writing prompts that let the image generator phrase its own
+  text produces grammatical errors (e.g. "protects your nail as grows"
+  instead of "as it grows"). Never let the generator improvise final
+  wording.
+- **Watermark (mirelleinspo.com) must be explicitly instructed to appear
+  EXACTLY ONCE per slide.** Caught a duplicate-watermark bug on slide 5
+  during testing — always state this explicitly in the prompt.
+- Keep all text within upper 75-85% of canvas (bottom ~250px often
+  obscured by mobile UI/caption).
+- Slide 1 carries ~80% of the "hook" weight — bold headline (5-8 words),
+  curiosity gap. Slide 2 must independently hook too (Instagram's
+  "re-serve" mechanism shows slide 2 to people who scrolled past slide 1).
+  One idea per slide. Consistent visual system (palette/fonts/layout)
+  across all 5 slides.
+- Last slide = single clear CTA badge/pill (e.g. "Read full guide ↓")
+
+### Caption structure
+- Hook line (mirrors slide 1) + literal arrow (↓) + "Read full guide" +
+  the link as plain text (NOT clickable on IG — caption links are not
+  clickable for feed posts/carousels except in a limited paid Meta Verified
+  beta, not something to build a daily system around)
+- FAQ-style: a direct question in the user's real search language, then a
+  short direct answer
+- Main long-tail keyword + one supporting query, each repeated naturally
+  3-4 times across the caption
+- No hashtags, ever
+- Target length: 300-500 chars normal day, up to 800 if genuinely needed
+  (first ~125 chars are what shows before "...more" — front-load the hook)
+- Primary CTA mechanism is **bio link** (up to 5 links allowed on IG in
+  2026), since caption links aren't reliably clickable — the "link in bio"
+  phrase in the CTA badge/caption is intentional, not a placeholder.
+
+### Research method (locked, confirmed by operator)
+Use `site:mirelleinspo.com [exact-slug]` first. If the exact page doesn't
+index (happens — confirmed inconsistent), infer the topic from the slug
+name and research it properly on the open web — same depth of rigor,
+never fall back to generic/invented content.
+
+### OPEN ITEMS for Instagram
+1. Actual Instagram daily-use prompt not yet written (all planning/research
+   locked, ready to write).
+2. No aspect-ratio conflict remains — 1:1 is final, operator's call, do not
+   re-raise 4:5.
+
+---
+
+## X / TWITTER — FULLY LOCKED (except one rotation-formula gap)
+
+### Audience & positioning — IMPORTANT, differs from every other platform
+X's beauty/consumer engagement is functionally dead (median beauty brand
+post frequency on X in 2026 is literally zero; beauty engagement rate
+rounds to 0.00%). Nail/beauty consumer content does NOT work here. Instead,
+**X targets nail INDUSTRY professionals** (salon owners, nail techs, brand
+reps) — this is a lead-generation / authority-building channel, not a
+traffic-to-website or consumer-inspo channel like the others.
+
+**Critical mechanic — the link penalty:** X algorithmically suppresses
+posts with links in the main post body (30-90% reach cut; near-zero median
+engagement for non-Premium accounts as of March 2026). Standing rule:
+**NEVER put a link in the main post.** For content that needs to cite a
+source, the link goes in the FIRST REPLY instead. For lead-gen/business
+posts, there is NO link at all anywhere (see below — intentional, not an
+oversight).
+
+### Daily volume: 4 posts/day (operator's final number, upgraded from
+initial 3 after adding visual content — see below)
+
+### Content pools — 4 pools, 78 links total, verified 0 duplicates:
+1. **Trend reports (16 links)** — single-topic industry insight/data posts.
+   Daily default filler.
+2. **Business/lead-gen (14 links)** — "get featured," press features,
+   brand collabs, salon spotlights, directory listings, media kit, awards.
+   Posts open with the REAL query language a salon/brand would search
+   (e.g. "how do I get my nail salon featured") and answer directly
+   in-post. **NO LINK AT ALL** — this is lead generation, not
+   traffic-driving; the goal is the prospect DMs/contacts Mirellé, not
+   clicks a link. CTA is mixed (DM us / reply to inquire / link in bio),
+   not fixed to one phrasing. Runs **2x/week** (operator upgraded from
+   1x/week).
+3. **Expanded industry pool (27 links)** — nail-tech-career (8: salary,
+   licensing by state, school cost, job outlook, etc.), product ingredients
+   (7: MMA detection, HEMA, TPO ban — professional-grade knowledge),
+   nail-costs (10: pricing benchmarks/state comparisons), spotlight (1:
+   /spotlight/nailsbypeyton, an existing creator feature), modern-women (1:
+   topic hub). Fills remaining daily link-pool slots.
+4. **Roundup source material (21 links)** — NOT a link-to-post pool like
+   the others; this is raw material for a MULTI-ITEM weekly digest format
+   ("3 nail trends defining 2027 so far," etc.), pulling from several items
+   at once rather than 1 link = 1 post. Source: nail-trends-2026 cluster
+   (8), nail-trends-2027 cluster (8), both trend inspiration galleries (2),
+   3 topic hubs (nail-art-guides, nail-care-guide, seasonal-trends). Runs
+   **1x/week**.
+
+All 4 pool link lists are verified (bash_tool, 0 duplicates confirmed) but
+were only written to /tmp/ scratch files during this session — NOT saved
+to a persistent project file yet. **Next agent: these lists exist only in
+this handoff doc's text below or need to be re-derived from the source
+918-link file using the category logic described above — re-verify counts
+programmatically before use.**
+
+### 4 daily post slots (operator's final structure):
+1. **Infographic** — reused from that day's Pinterest infographic, **WITH
+   a link to the source article** (operator explicitly corrected — infographic
+   posts DO carry a link, unlike lead-gen posts)
+2. **Image carousel** — multiple images from that day's active seasonal
+   Pinterest board
+3. **From the 78-link pool** — trend report / expanded pool / business /
+   roundup, per the weekly table below
+4. **Wildcard** — randomly lands on any of the above 3 categories for
+   variety, EXCEPT should probably exclude business/lead-gen to avoid
+   doubling lead-gen asks in one day (flagged, not fully forced — operator
+   said "that's fine" when this was raised, meaning duplication risk is
+   accepted, not that it must be prevented)
+
+### Weekly slot table (Slot 3 rotation; Slots 1/2/4 are daily-default/random):
+
+| Day | Slot 3 |
+|---|---|
+| Mon | Trend report |
+| Tue | Trend report |
+| Wed | **Business/lead-gen** |
+| Thu | Trend report |
+| Fri | **Trend roundup** |
+| Sat | **Business/lead-gen** |
+| Sun | Trend report |
+
+(Expanded pool links fill in as additional trend-report-style daily
+content — exact sub-rotation between "trend report" and "expanded pool"
+within Slot 3 was not separately locked; treat as interchangeable
+same-tier content for now, or ask operator.)
+
+### Output format (locked)
+- **Infographic/carousel posts (visual):** Post text box + Image prompt box
+  + Link box (infographic only — carousel posts have no link)
+- **Trend report/expanded/roundup posts (informational):** Post text box +
+  First reply box (contains the link)
+- **Business/lead-gen posts:** Post text box + CTA note box (no link field
+  at all)
+- Every field in its own separate labeled copy-paste box, same principle as
+  Pinterest/Instagram.
+
+### Scheduling
+Native X scheduling either requires X Pro ($8/month) or a third-party tool
+(Buffer free tier, Metricool free tier) — sources conflicted on whether
+free-tier native scheduling still exists in 2026; don't assume it's free.
+Best posting windows: Tue-Thu 9am-12pm and 2-5pm (audience timezone), 2+
+hour minimum spacing between same-day posts.
+
+### Research method
+Same as Instagram — genuine research per post/slug, `site:mirelleinspo.com`
+first, open-web fallback if it doesn't index. Confirmed explicitly during
+this build (operator caught generic-AI-text posts and required a redo with
+real research — e.g. the "24/7 booking retention" and "nail tech licensing
+by state" posts were rewritten with real sourced stats after this
+correction).
+
+### OPEN ITEMS for X
+1. **No day-to-link rotation formula locked** for the trend-report/expanded
+   pool content (unlike Pinterest/Instagram's clean `date mod pool size`
+   formula). This was flagged twice during the build and not resolved —
+   next agent should lock this (likely same `date mod pool size` pattern
+   applied to the relevant pool) before finalizing the X prompt.
+2. The 4 pool link lists (78 total) need to be saved to a persistent file
+   — currently only verified in a scratch /tmp/ location during this
+   session, will not persist.
+3. Sub-rotation logic between "trend report" pool and "expanded pool"
+   within Slot 3 on non-business/non-roundup days not explicitly locked.
+4. Actual X daily-use prompt not yet written.
+
+---
+
+## YOUTUBE — IN PROGRESS, NEXT AGENT'S PRIMARY FOCUS
+
+### What's locked so far:
+
+**Monetization goal (the stated target to build the whole strategy around):**
+- Path A (relevant to us): **1,000 subscribers + 10,000,000 valid Shorts
+  views within a trailing 90-day window**
+- Path B (long-form, not our model): 1,000 subs + 4,000 watch hours/12mo
+- Must accept the "Shorts Monetization Module" once eligible — NOT
+  retroactive, views before acceptance don't count
+- Must be in a YPP-supported country/region
+- Content must be original (non-original/reposted/compilation content is
+  excluded from eligible "engaged views")
+
+**⚠️ CRITICAL UNRESOLVED PROBLEM — surfaced right before this handoff:**
+YouTube's new (2026) native Shorts "image carousel + music" post format
+(up to 10 images, 15 sec audio, lives in the Shorts feed) — which matches
+our entire no-video content model — **does NOT count toward the
+monetization view threshold.** Confirmed via research: <cite>"Even though
+the views are counted, the upgrade will not impact earnings... it fails to
+meet the YPP or Shorts ads revenue share policies."</cite> This format is
+also still described as a rolling **test/experiment** in some sources, not
+universally available.
+
+This means: **our entire planned content model (image carousels + music,
+no filmed video) may not be able to hit the monetization goal at all**,
+since that goal requires real "Shorts" (filmed/motion video) views, not
+image-post views. This directly conflicts with the "no new content
+production" constraint that governs every other platform in this project.
+
+I asked the operator how to resolve this (three options: stay image-only
+and treat monetization as secondary/long-term; explore adding real
+filmed/motion video; or drop the monetization goal and focus on reach/
+branding only) — **conversation ended before the operator answered.**
+**This is the first and most important question for the next agent to
+resolve with the operator before building anything further on YouTube.**
+
+**Other YouTube settings locked:**
+- Channel country: **United States** (matches actual target market: US
+  nail/beauty consumers — same logic as the rest of the brand)
+- Channel keywords: 5-10 targeted keywords covering niche, sub-niche,
+  content format, and channel name (Settings → Channel → Basic info) — not
+  yet drafted, just the setting itself confirmed as needed
+- EXIF/image metadata stripping: explicitly NOT needed per operator
+  ("images are already clean") — don't add this as a rule
+- Note: operator asked about geo-privacy/OPSEC concerns (not wanting their
+  real location exposed) — clarified this is separate from the "channel
+  country" audience-targeting setting, which doesn't disclose real
+  location. Operator seemed satisfied with this distinction; no further
+  action requested beyond the EXIF question above.
+
+**Daily volume: 3 Shorts/day** (operator's locked number, chosen from
+research showing 1-3/day is the realistic sweet spot with diminishing
+returns above 3, and given growth-per-frequency data is unusually strong
+on YouTube compared to other platforms — more volume reliably = more
+growth here, unlike Instagram/X where excess volume plateaus/hurts).
+
+**3 daily content slots — partially locked:**
+1. Infographic + music (reused Pinterest/FB infographic asset)
+2. Image carousel + music (that day's seasonal Pinterest board images)
+3. Third slot — operator said "infographics as content funnel and inspo
+   images carousel and can we do instagram carousel here as well" — this
+   reads as wanting to ALSO reuse Instagram's carousel content as a third
+   distinct option, but this was not fully clarified/locked before the
+   conversation ended. Needs explicit confirmation: is slot 3 literally
+   "reuse that day's Instagram informational carousel content," or
+   something else?
+
+**Music/audio rule:** Use royalty-free tracks or YouTube's own Audio
+Library — NOT licensed/popular tracks — because music licensing directly
+reduces the creator's revenue share from the pooled Shorts ad-revenue
+model (rights holders take a cut before the creator's percentage is
+calculated). This rule stands regardless of how the monetization-format
+question above resolves.
+
+**Link/button mechanism: confirmed NONE EXISTS.** No clickable
+link/button on Shorts (image or video) — consistent with every other
+short-form platform researched in this project (Instagram, X). If a link
+mechanism is needed, it would be bio link only, same pattern as Instagram.
+Operator asked about this directly; this is the confirmed answer — don't
+re-research, it's settled.
+
+### OPEN ITEMS for YouTube — next agent starts here
+1. **PRIMARY: Resolve the monetization-format conflict above with the
+   operator first**, before locking anything else. This determines whether
+   YouTube's whole content strategy needs to change (e.g. does Gaurav want
+   to introduce real video content just for YouTube, breaking the
+   no-new-content rule that applies everywhere else? Or accept slower/no
+   ad monetization and treat YouTube as a reach/brand channel instead?).
+2. Clarify slot 3's exact content source (Instagram carousel reuse vs.
+   something else).
+3. No link pool locked yet for YouTube (unclear if one is even needed,
+   given no clickable mechanism exists — may just need bio link content
+   strategy instead, or captions/descriptions with plain-text links similar
+   to Instagram's approach).
+4. No weekly slot-rotation table built yet (only daily volume + slot
+   *types* are locked, not which type appears when across a week).
+5. Caption/description format, hashtag rules (if any), and title
+   conventions not yet researched or locked.
+6. Actual YouTube daily-use prompt not yet written — furthest platform
+   from completion.
+7. Draft the 5-10 channel keywords.
+
+---
+
+## FILES THAT EXIST IN THE PROJECT (read-only, available to next agent)
+- `/mnt/project/link_rotation_file_` — Pinterest's 256-link Nail Care Tips
+  rotation, Day 1 = Aug 4 2026, `date mod 256` formula. ALSO used as-is for
+  Instagram's daily topic/link (same day = same link, same topic, both
+  platforms).
+- `/mnt/project/memory` — the ORIGINAL handoff doc (predates this one).
+  Contains the full 183-link Facebook seasonal list verbatim (not
+  reproduced here for length) and more granular Facebook page-setup notes
+  (bio text, links section, category selection, etc.) that weren't
+  repeated in this v2 doc since they're static/already-done and unlikely
+  to need revisiting.
+- `/mnt/project/pinterst_prompt` — the full, working Pinterest prompt
+  (v5.0). This is the reference pattern for HOW to write a subordinate-
+  facing daily prompt: activation logic, research step, output formatting
+  rule (separate code block per field), Nano Banana image-prompt rules,
+  critical rules list. Use this as the structural template when writing
+  Facebook/Instagram/X/YouTube's own prompts and eventually the aggregate.
+
+## SOURCE FILE FOR ALL LINK POOLS
+https://raw.githubusercontent.com/DADDYEAGER1/Mirelle_Inspo/refs/heads/main/Mirell%C3%A9/1%20aug%20content
+— the full 918-URL site inventory. Every link pool built for X (trend
+reports, business, expanded, roundup source) was derived from this file by
+category/path matching. Re-fetch this if any platform needs additional
+link material, and always verify counts/dupes programmatically after
+deriving a sub-list.
+
+---
+
+## NEXT STEPS FOR THE NEXT AGENT, IN ORDER
+1. Read this doc fully, plus the original `memory` file and the Pinterest
+   prompt in project files.
+2. Resolve YouTube's monetization-format conflict with the operator FIRST
+   — this is the single biggest open question and changes the shape of
+   everything else on this platform.
+3. Finish locking YouTube's content funnel: slot 3 clarification, weekly
+   slot-rotation table, caption/title/description format, any link
+   strategy (bio-link based, following Instagram's pattern).
+4. Once YouTube is fully locked (matching the depth of Facebook/Instagram/X
+   above), write YouTube's actual daily-use prompt.
+5. Wait for operator to share the Pinterest prompt (already exists,
+   separate from what's in project files? — confirm, since a Pinterest
+   prompt IS already in project files at `/mnt/project/pinterst_prompt` —
+   possibly operator means re-sharing it fresh, or sharing an updated
+   version, or the project file version is already sufficient. Ask.) plus
+   the Pinterest link file (also likely already in project files at
+   `/mnt/project/link_rotation_file_` — same ambiguity, confirm with
+   operator rather than assume).
+6. Merge everything into ONE aggregate prompt that behaves differently
+   depending on which platform the subordinate operator selects/is working
+   on that day — content pool, format, cadence, and output structure all
+   differ per platform as locked above, but the operator wants a single
+   coherent system, not 5 separate documents.
+7. Build the final supporting links file — the multi-platform equivalent
+   of `link_rotation_file_` — covering every platform's link pools in one
+   place, with rotation formulas for each, for the date-based content
+   rotation mechanic that powers the whole system.
+8. Lock any remaining Day-1 trigger dates (Facebook's was explicitly
+   deferred to "whenever we finalize the prompt" — likely all platforms'
+   Day-1 dates get set together at the very end, right before go-live).
+
+**Do not skip the research-first method for anything still open above.**
+This has been the single most consistently enforced rule across the entire
+build — every platform's cadence, format, and content rules came from
+actual 2026 research, never assumption or reused numbers from a different
+platform.
