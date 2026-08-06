@@ -1,0 +1,443 @@
+# MEMORY HANDOFF — MULTI-PLATFORM SOCIAL PROMPT BUILD (Mirellé Inspo)
+## Continuation document for the next agent. Read fully before doing anything.
+
+---
+
+## OPERATOR & PROJECT CONTEXT
+
+Operator: Gaurav. Brand: **Mirellé Inspo** — research-driven nail editorial platform
+(nails/beauty niche, exact same brand across every property). Website:
+https://mirelleinspo.com. Live since Sept 2024. ~30K monthly readers, 1.3M+
+monthly Pinterest visitors, 63% engagement rate, 60% organic search traffic.
+Tagline: "We curate so you don't have to."
+
+**Overall goal:** Build one aggregate system of daily-use subordinate-facing
+prompts covering **Pinterest, Facebook, Instagram, X/Twitter, and YouTube** —
+all same brand, same niche, same subordinate operator (no prior
+platform/SEO/marketing knowledge) executing a fixed daily workflow with zero
+strategic decisions per day. Every decision is made once, locked into the
+prompt, never re-decided daily.
+
+**Status of each platform:**
+- **Pinterest** — prompt already exists and works (operator will attach it to
+  the project separately; not built in this thread).
+- **Facebook** — planning/research phase is essentially complete (see below).
+  Final prompt itself has NOT been written yet — that's the next step.
+- **Instagram, X/Twitter, YouTube** — not started. Explicitly deferred until
+  Facebook's actual prompt is finished. Each needs the SAME rigorous
+  research-first method as Facebook and Pinterest before any cadence/format
+  decisions are made — no assumptions from training data, platforms change
+  algorithms often.
+
+**Content source model (applies to all platforms):** Gaurav does NOT want new
+content created for these new platforms. Everything is **repurposed** from
+existing pipelines:
+- Pinterest daily pins/infographics (nail images) — already produced daily
+- Website blog posts (already published daily, all article types)
+- Two affiliate products: MetaNail Complex (nail strengthening serum) and
+  AppaNail (nail/foot health supplement, biotin-based) — both already added
+  to FB Page "Offers" section with affiliate links
+- Assets are static images only (no native video production) — any "video"
+  content is an image + background music infographic-style clip, made
+  manually by Gaurav (no in-platform editing/music-choosing available)
+
+---
+
+## METHOD BEING FOLLOWED (inherited from Pinterest build — proven to work)
+
+1. Understand content supply first (audit real content) before platform
+   strategy.
+2. Test the smallest real unit before scaling to a full system.
+3. Fix root causes with standing rules, not one-off patches.
+4. Lock order: **content pool → format → volume/cadence → platform-specific
+   mechanics → wording** — never start with caption wording.
+5. Research each platform's actual current safe volume/frequency and
+   algorithm behavior before fixing any daily number — never guess.
+6. Verify any generated/sorted data file programmatically (counts, dupes,
+   gaps) before presenting it as final — never eyeball large lists.
+7. Confirm ambiguous volume/cadence instructions back to the operator before
+   building on them.
+8. When operator gives real source material (links, screenshots, actual site
+   content), use it directly — never substitute invented/generic content.
+9. Match the operator's preferred lean, low-filler communication style
+   (confirmed explicitly in this thread: short, precise, step-by-step, no
+   recaps, no walls of text, separate copy-paste boxes per output field).
+
+---
+
+## FACEBOOK — WHAT'S FULLY LOCKED SO FAR
+
+### Page setup (in progress, subordinate walking through it live)
+- Page name change submitted: **Mirelleinspo → Mirellé Inspo** (pending
+  Meta review, up to 3 days; cannot rename again for 60 days after approval)
+- Page type: **Creator** (not Business — content-creator/monetization fit)
+- Category: **Beauty, cosmetic & personal care · Health/beauty ·
+  Editorial/Opinion** (confirmed correct, no change needed)
+- Bio/About text (finalized, already pasted in):
+  > Research-driven nail editorial. We curate so you don't have to — nail
+  > art inspo, trends, and tutorials that actually mean something. 💅
+- Links section (10 slots) — finalized list includes: Official Website,
+  Inspo gallery, Shop, Blog/Edits, Nail FAQs, Pinterest, Instagram, X,
+  Newsletter, Work With Us
+- Offers section — 2 affiliate links added: MetaNail Complex (nail
+  strengthening serum) and AppaNail (nail/foot supplement)
+- Skipped intentionally (confirmed with operator, do not revisit): Personal
+  details, Services, Work, Education, Hobbies, Interests, Travel, Name
+  pronunciation/Other names, Communities/Favorite groups (no Group exists
+  yet), Media kit (revisit once FB has real follower numbers), Impressum,
+  Data sharing toggle, Political/Taiwan ads, Branded content (not yet
+  relevant), Advanced Messaging developer settings (accidentally opened
+  once, nothing submitted, harmless)
+- Facebook Group: explicitly deferred. Don't build until Page has ~100-300
+  organic followers to seed it with — an empty Group + empty Page looks
+  abandoned twice over.
+- Vanity URL (/mirelleinspo): unlocks only after 100 followers via Page
+  Settings → Username.
+
+### Content system (fully locked — ready to become the actual prompt)
+
+**Daily volume:** 3 posts/day, spaced **8+ hours apart** (not 6 — operator
+explicitly corrected this), scheduled via **Meta Business Suite native
+scheduler** (free, built-in, supports up to 75 days ahead, timezone-aware,
+can crosspost to Instagram from the same composer — but IG box must stay
+UNCHECKED until Instagram's own system is built, to avoid identical
+cross-posted content hurting reach on both platforms).
+
+**Daily content pool — exactly one of each per day, every day:**
+1. **Nail image (single or carousel)** — sourced ONLY from that day's
+   **seasonal Pinterest board** (not any Pinterest board, not evergreen
+   boards). No link attached to this post type, ever.
+2. **Website article + link** — caption references the article, link goes
+   to it. Pulled from the link pool below (see rotation logic).
+3. **Infographic + BGM video** — same asset class as the YouTube Shorts
+   plan (image + background music, manually produced by Gaurav, no in-app
+   editing). No "cover frame" instruction needed in the prompt (removed per
+   operator). No link attached.
+
+**Slot order (AM/Midday/PM) rotates across the week, not fixed per day** —
+locked table:
+
+| Day | AM | Midday | PM |
+|---|---|---|---|
+| Mon | Website + link | Nail image | Infographic video |
+| Tue | Infographic video | Website + link | Nail image |
+| Wed | Nail image | Infographic video | Website + link |
+| Thu | Website + link | Infographic video | Nail image |
+| Fri | Nail image | Website + link | Infographic video |
+| Sat | Infographic video | Nail image | Website + link |
+| Sun | Website + link | Nail image | Infographic video |
+
+**No colorful text posts** — operator explicitly removed this format
+entirely. Do not reintroduce it.
+
+### Facebook SEO / per-post spec (researched, locked)
+
+Facebook ranking = page metadata + keyword-aligned captions + early
+engagement (shares/saves > comments > likes) + native-format content
+(Reels > Video > Image > Text > Link). Native uploads only — cross-posted/
+watermarked content gets suppressed. Facebook now surfaces public posts in
+Google search too, so captions double as light SEO copy.
+
+| Format | Caption length | Hashtags | Alt text | Link |
+|---|---|---|---|---|
+| Nail image/carousel | 40–80 chars, punchy | 3–5, **specific to that day's actual design/topic, never generic** | Yes — real description of the specific nail design shown (not AI's generic auto-suggestion) | None |
+| Website + link | 80–150 chars, hook included | 2–3, specific to topic | Not required (link preview auto-pulls site's own meta) | Yes, native auto-preview |
+| Infographic+BGM video | 40–80 chars, written to match real search intent/query phrasing (e.g. "fall nails 2026" style, matches how the website's own blog titles are already phrased) | 3–5, specific to topic | No manual alt-text field exists for video on FB — caption + accurate cover/thumbnail frame is the practical equivalent | None |
+
+Hashtags must always be pulled from the actual day's specific nail
+design/topic — never generic filler tags like #beauty.
+
+**Output format requirement (operator explicit correction):** Each field —
+Caption, Hashtags, Alt text, Link — goes in its **own separate copy-paste
+box**, clearly labeled outside the box. Do NOT merge everything into one
+combined block. This mirrors the Pinterest prompt's "single unambiguous
+output format the subordinate can mechanically copy-paste" principle.
+
+### Link pool — sorted, verified, ready to embed into the prompt
+
+Source: full site link list (918 URLs total, fetched from operator's GitHub
+raw file, one URL per line). Verified programmatically (not eyeballed) —
+**918 total, 0 duplicates, 0 gaps.** Sorted into two pools:
+
+- **Evergreen: 735 links** — not reproduced in full here (too long); these
+  are simply **"everything in the original 918-link list that is NOT in the
+  seasonal list below."** This full evergreen set is the Facebook link
+  content funnel for the "Website + link" daily post slot on ordinary days.
+- **Seasonal/dated: 183 links** — tied to a specific calendar window or
+  one-time event (Halloween, Valentine's, Christmas/Winter, Mother's Day,
+  Fall/Spring/Summer seasonal collections, back-to-school, prom, wedding,
+  graduation, festivals/carnival, NFL/soccer/World Cup, July 4th, Thanksgiving,
+  September/August monthly content, Black Friday). Full verified list below —
+  use ONLY when that specific season/event is currently active; otherwise
+  pull from the evergreen pool.
+
+**Full seasonal link list (183 links, verified count):**
+
+```
+https://mirelleinspo.com/blog/acrylic-vs-gel-vs-press-on-prom-nails
+https://mirelleinspo.com/blog/almond-spring-nails
+https://mirelleinspo.com/blog/august/august-birthday-nails
+https://mirelleinspo.com/blog/august/august-nail-trends-2026
+https://mirelleinspo.com/blog/august/august-nails
+https://mirelleinspo.com/blog/august/peridot-nails
+https://mirelleinspo.com/blog/bachelorette-nail-ideas
+https://mirelleinspo.com/blog/back-to-school/back-to-school-nails
+https://mirelleinspo.com/blog/back-to-school/back-to-school-nails-for-teachers
+https://mirelleinspo.com/blog/back-to-school/college-nails
+https://mirelleinspo.com/blog/back-to-school/first-day-of-school-nails
+https://mirelleinspo.com/blog/back-to-school/high-school-nails
+https://mirelleinspo.com/blog/back-to-school/simple-back-to-school-nails
+https://mirelleinspo.com/blog/best-press-on-nails-for-prom
+https://mirelleinspo.com/blog/best-summer-nail-polish-sets-2026
+https://mirelleinspo.com/blog/carnival/carnival-nail-art
+https://mirelleinspo.com/blog/carnival/carnival-nails
+https://mirelleinspo.com/blog/carnival/carousel-nails
+https://mirelleinspo.com/blog/carnival/circus-nails
+https://mirelleinspo.com/blog/carnival/clown-core-nails
+https://mirelleinspo.com/blog/carnival/county-fair-nails
+https://mirelleinspo.com/blog/carnival/summer-carnival-nails
+https://mirelleinspo.com/blog/cinco-de-mayo-nails
+https://mirelleinspo.com/blog/diy-prom-nails
+https://mirelleinspo.com/blog/end-of-summer-nails
+https://mirelleinspo.com/blog/fall/brown-nails-fall
+https://mirelleinspo.com/blog/fall/burgundy-fall-nails
+https://mirelleinspo.com/blog/fall/fall-french-tip-nails
+https://mirelleinspo.com/blog/fall/fall-nail-art
+https://mirelleinspo.com/blog/fall/fall-nail-colors
+https://mirelleinspo.com/blog/fall/fall-nail-ideas
+https://mirelleinspo.com/blog/fall/fall-nail-trends-2026
+https://mirelleinspo.com/blog/fall/fall-ombre-nails
+https://mirelleinspo.com/blog/fall/fall-pedicure-colors
+https://mirelleinspo.com/blog/fall/short-fall-nails
+https://mirelleinspo.com/blog/fall/tortoiseshell-nails-fall
+https://mirelleinspo.com/blog/festival-nails/boho-festival-nails
+https://mirelleinspo.com/blog/festival-nails/coachella-nails
+https://mirelleinspo.com/blog/festival-nails/diy-festival-nails-at-home
+https://mirelleinspo.com/blog/festival-nails/festival-nails-ideas
+https://mirelleinspo.com/blog/festival-nails/festival-nails-last-weekend
+https://mirelleinspo.com/blog/festival-nails/glastonbury-nails
+https://mirelleinspo.com/blog/festival-nails/rave-nails
+https://mirelleinspo.com/blog/festival-nails/short-festival-nails
+https://mirelleinspo.com/blog/festival-nails/tie-dye-festival-nails
+https://mirelleinspo.com/blog/floral-mothers-day-nails
+https://mirelleinspo.com/blog/gel-acrylic-biab-mothers-day-nails
+https://mirelleinspo.com/blog/graduation-nails
+https://mirelleinspo.com/blog/halloween/black-halloween-nails
+https://mirelleinspo.com/blog/halloween/cute-halloween-nails
+https://mirelleinspo.com/blog/halloween/disney-halloween-nails
+https://mirelleinspo.com/blog/halloween/diy-halloween-nails-at-home
+https://mirelleinspo.com/blog/halloween/halloween-nail-designs
+https://mirelleinspo.com/blog/halloween/hocus-pocus-nails
+https://mirelleinspo.com/blog/halloween/horror-movie-halloween-nails
+https://mirelleinspo.com/blog/halloween/short-halloween-nails
+https://mirelleinspo.com/blog/holiday-nails/beach-nails
+https://mirelleinspo.com/blog/holiday-nails/gel-nails-for-holiday
+https://mirelleinspo.com/blog/holiday-nails/holiday-nail-colors
+https://mirelleinspo.com/blog/holiday-nails/holiday-nails
+https://mirelleinspo.com/blog/holiday-nails/italian-summer-nails
+https://mirelleinspo.com/blog/holiday-nails/simple-holiday-nails
+https://mirelleinspo.com/blog/holiday-nails/tropical-nails
+https://mirelleinspo.com/blog/holiday-nails/vacation-nails
+https://mirelleinspo.com/blog/holiday-vacation-nails-travel-guide
+https://mirelleinspo.com/blog/july-nails/4th-of-july-nails
+https://mirelleinspo.com/blog/july-nails/firework-nail-art
+https://mirelleinspo.com/blog/july-nails/july-birthday-nails
+https://mirelleinspo.com/blog/july-nails/july-nails
+https://mirelleinspo.com/blog/mothers-day-nail-colors
+https://mirelleinspo.com/blog/mothers-day-nail-gift
+https://mirelleinspo.com/blog/mothers-day-nail-ideas
+https://mirelleinspo.com/blog/mothers-day-nail-trends-2026
+https://mirelleinspo.com/blog/mothers-day-nails-diy-tutorial
+https://mirelleinspo.com/blog/neon-summer-nails
+https://mirelleinspo.com/blog/nfl-nails/dallas-cowboys-nail-designs
+https://mirelleinspo.com/blog/nfl-nails/green-bay-packers-nail-designs
+https://mirelleinspo.com/blog/nfl-nails/how-to-do-football-nail-art-at-home
+https://mirelleinspo.com/blog/nfl-nails/jersey-number-nail-art-ideas
+https://mirelleinspo.com/blog/nfl-nails/kansas-city-chiefs-nail-designs
+https://mirelleinspo.com/blog/nfl-nails/nfl-french-tip-nail-ideas
+https://mirelleinspo.com/blog/nfl-nails/nfl-nails-ultimate-guide
+https://mirelleinspo.com/blog/nfl-nails/nfl-press-on-nails-game-day-ideas
+https://mirelleinspo.com/blog/nfl-nails/philadelphia-eagles-nail-designs
+https://mirelleinspo.com/blog/nfl-nails/super-bowl-nail-ideas
+https://mirelleinspo.com/blog/nfl-nails/taylor-swift-game-day-nails
+https://mirelleinspo.com/blog/pink-lavender-mothers-day-nails
+https://mirelleinspo.com/blog/prom-nail-ideas
+https://mirelleinspo.com/blog/prom-nails-2026
+https://mirelleinspo.com/blog/prom-nails-by-dress-color
+https://mirelleinspo.com/blog/september/september-birthday-nails
+https://mirelleinspo.com/blog/september/september-birthstone-nails
+https://mirelleinspo.com/blog/september/september-nail-colors
+https://mirelleinspo.com/blog/september/september-nails
+https://mirelleinspo.com/blog/september/short-september-nails
+https://mirelleinspo.com/blog/short-mothers-day-nails
+https://mirelleinspo.com/blog/short-prom-nails
+https://mirelleinspo.com/blog/short-summer-nails
+https://mirelleinspo.com/blog/short-vs-long-summer-nails
+https://mirelleinspo.com/blog/simple-mothers-day-nails
+https://mirelleinspo.com/blog/soccer/argentina-nails
+https://mirelleinspo.com/blog/soccer/brazil-nails
+https://mirelleinspo.com/blog/soccer/colombia-nails
+https://mirelleinspo.com/blog/soccer/england-nails
+https://mirelleinspo.com/blog/soccer/flag-country-nails
+https://mirelleinspo.com/blog/soccer/france-nails
+https://mirelleinspo.com/blog/soccer/germany-nails
+https://mirelleinspo.com/blog/soccer/ronaldo-nails
+https://mirelleinspo.com/blog/soccer/soccer-club-nails
+https://mirelleinspo.com/blog/soccer/soccer-nails
+https://mirelleinspo.com/blog/soccer/soccer-player-nails
+https://mirelleinspo.com/blog/soccer/spain-nails
+https://mirelleinspo.com/blog/soccer/world-cup-nails
+https://mirelleinspo.com/blog/spring-nail-art-at-home
+https://mirelleinspo.com/blog/spring-nail-colors-2026
+https://mirelleinspo.com/blog/spring-nail-ideas
+https://mirelleinspo.com/blog/spring-nail-trends-2026
+https://mirelleinspo.com/blog/summer-nail-art-designs
+https://mirelleinspo.com/blog/summer-nail-colors
+https://mirelleinspo.com/blog/summer-nail-ideas
+https://mirelleinspo.com/blog/summer-nail-trends-2026
+https://mirelleinspo.com/blog/thanksgiving-nails/easy-thanksgiving-nails
+https://mirelleinspo.com/blog/thanksgiving-nails/french-tip-thanksgiving-nails
+https://mirelleinspo.com/blog/thanksgiving-nails/short-thanksgiving-nails
+https://mirelleinspo.com/blog/thanksgiving-nails/thanksgiving-nail-colors
+https://mirelleinspo.com/blog/thanksgiving-nails/thanksgiving-nail-ideas
+https://mirelleinspo.com/blog/thanksgiving-nails/turkey-nail-art
+https://mirelleinspo.com/blog/valentine/jelly-valentine-nails
+https://mirelleinspo.com/blog/valentine/lace-valentine-nails
+https://mirelleinspo.com/blog/valentine/mismatched-valentine-nails
+https://mirelleinspo.com/blog/valentine/pink-cat-eye-valentine-nails
+https://mirelleinspo.com/blog/valentine/red-chrome-valentine-nails
+https://mirelleinspo.com/blog/valentine/tomato-red-valentine-nails
+https://mirelleinspo.com/blog/valentine/valentine-french-tip-nails
+https://mirelleinspo.com/blog/valentine/valentine-nail-kits-2026
+https://mirelleinspo.com/blog/valentine/valentine-nails-2026
+https://mirelleinspo.com/blog/valentine/valentines-day-nails
+https://mirelleinspo.com/blog/valentine/velvet-cat-eye-valentine-nails
+https://mirelleinspo.com/blog/wedding-nails/bridal-nail-colors
+https://mirelleinspo.com/blog/wedding-nails/diy-wedding-nails
+https://mirelleinspo.com/blog/wedding-nails/french-tip-wedding-nails
+https://mirelleinspo.com/blog/wedding-nails/gel-vs-acrylic-wedding-nails
+https://mirelleinspo.com/blog/wedding-nails/nail-shape-for-wedding
+https://mirelleinspo.com/blog/wedding-nails/short-wedding-nails
+https://mirelleinspo.com/blog/wedding-nails/wedding-guest-nails
+https://mirelleinspo.com/blog/wedding-nails/wedding-nail-ideas
+https://mirelleinspo.com/blog/wedding-nails/wedding-nail-trends-2026
+https://mirelleinspo.com/business/nail-salon-featured-seasonal-promotion
+https://mirelleinspo.com/inspiration/carnival-inspiration-gallery/
+https://mirelleinspo.com/inspiration/festival-nails-inspiration-gallery/
+https://mirelleinspo.com/inspiration/holiday-nails-inspiration-gallery/
+https://mirelleinspo.com/inspiration/mothers-day-nails-2026/
+https://mirelleinspo.com/inspiration/nfl-nails-inspiration-gallery/
+https://mirelleinspo.com/inspiration/prom-nails-2026/
+https://mirelleinspo.com/inspiration/spring-nails-2026/
+https://mirelleinspo.com/inspiration/summer-nails-2026/
+https://mirelleinspo.com/inspiration/valentine-nails-2026/
+https://mirelleinspo.com/inspiration/wedding-nails-inspiration-gallery/
+https://mirelleinspo.com/nail-faqs/what-color-nails-should-i-get-for-halloween
+https://mirelleinspo.com/shop/fall/best-melodysusie-fall-nail-products
+https://mirelleinspo.com/shop/fall/melodysusie-fall-gel-polish-colors
+https://mirelleinspo.com/shop/fall/melodysusie-fall-nail-starter-kit
+https://mirelleinspo.com/shop/gel-polish/melodysusie-valentines-gel-polish-colors
+https://mirelleinspo.com/shop/halloween/best-melodysusie-halloween-nail-products
+https://mirelleinspo.com/shop/halloween/melodysusie-halloween-nail-accessories
+https://mirelleinspo.com/shop/mothers-day/best-melodysusie-mothers-day-nail-gifts
+https://mirelleinspo.com/shop/spring/melodysusie-spring-gel-polish-colors
+https://mirelleinspo.com/shop/spring/melodysusie-spring-nail-starter-kit
+https://mirelleinspo.com/shop/summer/beach-mania-press-on-nails-review
+https://mirelleinspo.com/shop/summer/best-melodysusie-summer-nail-products
+https://mirelleinspo.com/shop/summer/best-portable-nail-drill-travel
+https://mirelleinspo.com/shop/summer/best-portable-uv-nail-lamp-summer-travel
+https://mirelleinspo.com/shop/summer/best-press-on-nail-glue-summer
+https://mirelleinspo.com/shop/summer/best-summer-press-on-nails-2026
+https://mirelleinspo.com/shop/summer/melodysusie-summer-gel-polish-colors
+https://mirelleinspo.com/shop/summer/melodysusie-summer-nail-art-tools
+https://mirelleinspo.com/shop/summer/melodysusie-summer-pedicure-kit
+https://mirelleinspo.com/shop/valentines-day/best-melodysusie-valentines-nail-products
+https://mirelleinspo.com/shop/valentines-day/melodysusie-valentines-nail-gift-set
+https://mirelleinspo.com/shop/winter/best-melodysusie-holiday-nail-products
+https://mirelleinspo.com/shop/winter/melodysusie-black-friday-deals
+https://mirelleinspo.com/shop/winter/melodysusie-christmas-nail-gift-sets
+https://mirelleinspo.com/shop/winter/melodysusie-holiday-gel-polish-colors
+```
+
+**Evergreen pool = the remaining 735 links** — i.e., every URL from the
+original 918-link source file (operator's GitHub raw file, path noted below)
+that is NOT in the seasonal list above. Do not re-derive this by guessing;
+if the original 918-link source is available again, the correct method is:
+full list minus the seasonal list above = evergreen pool, then verify the
+resulting count is exactly 735 programmatically before using it.
+
+**Original source file (re-fetch if the full 918 list is needed again):**
+https://raw.githubusercontent.com/DADDYEAGER1/Mirelle_Inspo/refs/heads/main/Mirell%C3%A9/1%20aug%20content
+
+**Rotation mechanism (matches Pinterest's proven `date mod pool size`
+approach — deterministic, reproducible, zero daily judgment call needed):**
+
+```
+day_index = (today's date − Day 1 start date) in days
+evergreen_link = evergreen_list[day_index mod 735]
+```
+
+Seasonal links are pulled instead of evergreen only when the current date
+falls inside that season/event's active window (e.g. Halloween content in
+October, Valentine's in Feb) — exact trigger logic and Day 1 date were NOT
+finalized before this handoff (see "Open items" below).
+
+---
+
+## OPEN ITEMS — NOT YET DECIDED, DO THESE NEXT
+
+1. **Day 1 trigger date for the Facebook rotation.** Operator will supply
+   this themselves (the date the Facebook prompt actually goes live) — do
+   not guess or assume "today." Ask for it explicitly, then track forward
+   from it using simple day-count math (verify programmatically, not by
+   eyeballing calendar dates).
+2. **Seasonal-window trigger logic** — exact start/end dates for each
+   season/event category (e.g. when does "Fall" start/end, when does
+   "Halloween" content window open/close) were not explicitly locked with
+   the operator. Confirm before building the seasonal-selection rule into
+   the prompt.
+3. **The actual Facebook subordinate-facing prompt has not been written
+   yet.** Everything above is the planning/research layer. Next concrete
+   step for Facebook specifically: write the real daily-use prompt
+   (identical spirit to the existing Pinterest prompt) incorporating all
+   locked decisions above — content pool, format, 3-posts/day @ 8hr cadence,
+   slot-rotation table, link rotation formula, per-format caption/hashtag/
+   alt-text rules, and the separate-copy-box output format.
+4. **Instagram, X/Twitter, YouTube** — none of these have started. Each
+   needs the full research method applied fresh (current algorithm,
+   current best formats, current safe posting frequency, recent platform
+   changes) — do not reuse Facebook's numbers/cadence for these platforms
+   without re-researching, since each platform's norms differ.
+5. Aggregate structure — operator's stated end goal is one coherent set of
+   prompts across all 5 platforms, sharing the same underlying content pool
+   (Pinterest images/infographics + website posts + 2 affiliate offers) but
+   each with its own platform-native cadence, format rules, and output
+   structure, built one platform at a time in this same rigorous order.
+
+---
+
+## OPERATOR COMMUNICATION STYLE (apply throughout, confirmed via explicit
+user preferences — always follow, not situational)
+
+- Maximally token-efficient. Short, direct chat replies. No filler, no
+  unrequested summaries/recaps.
+- Step-by-step: one step at a time, wait for confirmation before advancing.
+- All substantial content (prompts, data, code) goes in artifacts, not
+  inline chat walls of text.
+- When operator's instruction is ambiguous, restate the interpretation
+  briefly and proceed — don't over-ask.
+- Push back directly (with reasoning, briefly) when a request conflicts
+  with researched best practice (e.g. the 4-posts/day pushback that led to
+  the 3/day compromise) — operator responds well to this, don't just comply
+  silently with something known to be suboptimal.
+- Verify all counts/data programmatically before stating them as fact —
+  this operator has caught arithmetic/data-loss errors before (see Pinterest
+  build mistakes) and cares about it.
+
+---
+
+**This document is reference material for the next agent, not a prompt to
+run as-is.** Read fully, then resume by: (1) confirming Day 1 trigger date
+with the operator, (2) writing the actual Facebook daily-use prompt using
+everything locked above, (3) moving to Instagram/X/YouTube research one at a
+time, in that order, before attempting any aggregate cross-platform prompt.
