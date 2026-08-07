@@ -1,0 +1,268 @@
+// src/lib/authors.ts
+
+import 'server-only';
+import fs from 'fs';
+import path from 'path';
+import matter from 'gray-matter';
+import { authors } from '@/data/authors';
+import { Author, AuthorWithStats } from '@/types/author';
+
+// ─── Cache ───────────────────────────────────────────────────────────────────
+
+interface CacheEntry<T> {
+  data: T;
+  timestamp: number;
+}
+
+class AuthorCache {
+  private cache = new Map<string, CacheEntry<any>>();
+  private readonly TTL = 3600000; // 1 hour
+
+  get<T>(key: string): T | null {
+    const entry = this.cache.get(key);
+    if (!entry) return null;
+    if (Date.now() - entry.timestamp > this.TTL) {
+      this.cache.delete(key);
+      return null;
+    }
+    return entry.data as T;
+  }
+
+  set<T>(key: string, data: T): void {
+    this.cache.set(key, { data, timestamp: Date.now() });
+  }
+
+  clear(): void {
+    this.cache.clear();
+  }
+}
+
+const authorCache = new AuthorCache();
+
+// ─── Content directories to scan ─────────────────────────────────────────────
+
+const CONTENT_DIRS: { dir: string; type: string; urlBase: string }[] = [
+  { dir: 'src/content/blogs',       type: 'blog',      urlBase: '/blog'          },
+  { dir: 'src/content/faqs',        type: 'faq',       urlBase: '/nail-faqs'     },
+  { dir: 'src/content/work-nails',  type: 'work-nail', urlBase: '/work-nails'    },
+  { dir: 'src/content/spotlights',  type: 'spotlight', urlBase: '/spotlight'     },
+  { dir: 'src/content/topics',      type: 'topic',     urlBase: '/topics'        },
+  { dir: 'src/content/reports',     type: 'report',    urlBase: '/trend-reports' },
+  { dir: 'src/content/business',    type: 'business',  urlBase: '/business'      },
+];
+
+// ─── Helpers ─────────────────────────────────────────────────────────────────
+
+function getAllFilesRecursive(dir: string): string[] {
+  let results: string[] = [];
+  let entries: fs.Dirent[];
+
+  try {
+    entries = fs.readdirSync(dir, { withFileTypes: true });
+  } catch {
+    return [];
+  }
+
+  for (const entry of entries) {
+    const fullPath = path.join(dir, entry.name);
+    if (entry.isDirectory()) {
+      results = results.concat(getAllFilesRecursive(fullPath));
+    } else if (
+      entry.isFile() &&
+      (entry.name.endsWith('.md') || entry.name.endsWith('.mdx'))
+    ) {
+      results.push(fullPath);
+    }
+  }
+
+  return results;
+}
+
+// ─── Types ────────────────────────────────────────────────────────────────────
+
+export interface AuthorPost {
+  slug: string;
+  title: string;
+  excerpt: string;
+  date: string;
+  image?: string;
+  type: string;
+  url: string;
+}
+
+// ─── Public API ───────────────────────────────────────────────────────────────
+
+export function getAuthor(slug: string): Author | null {
+  return authors.find(a => a.slug === slug) ?? null;
+}
+
+export function getAllAuthors(): Author[] {
+  return authors;
+}
+
+export async function getPostsByAuthor(authorSlug: string): Promise<AuthorPost[]> {
+  const cacheKey = `author-posts:${authorSlug}`;
+
+  const cached = authorCache.get<AuthorPost[]>(cacheKey);
+  if (cached) return cached;
+
+  const posts: AuthorPost[] = [];
+
+  for (const { dir, type, urlBase } of CONTENT_DIRS) {
+    const absDir = path.join(process.cwd(), dir);
+    const files = getAllFilesRecursive(absDir);
+
+    for (const filePath of files) {
+      try {
+        const raw = fs.readFileSync(filePath, 'utf8');
+        const { data } = matter(raw);
+
+        if (data.author !== authorSlug) continue;
+
+        // Use relative path from content dir to preserve subfolder structure
+        const relativePath = path.relative(absDir, filePath);
+        const urlPath = relativePath.replace(/\.mdx?$/, '').replace(/\\/g, '/');
+        const slug = path.basename(filePath).replace(/\.mdx?$/, '');
+
+        // Business URLs are built from frontmatter fields
+        const url = type === 'business'
+          ? `/business/${data.countrySlug}/${data.stateSlug}/${data.clientType}/${slug}`
+          : `${urlBase}/${urlPath}`;
+
+        posts.push({
+          slug,
+          title:   data.title   || 'Untitled',
+          excerpt: data.excerpt || '',
+          date:    data.date    || new Date().toISOString(),
+          image:   data.image   || undefined,
+          type,
+          url,
+        });
+      } catch {
+        // skip unreadable files
+      }
+    }
+  }
+
+  // Sort newest first
+  posts.sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());
+
+  authorCache.set(cacheKey, posts);
+  return posts;
+}
+
+export async function getAllAuthorsWithStats(): Promise<AuthorWithStats[]> {
+  const cacheKey = 'all-authors-with-stats';
+
+  const cached = authorCache.get<AuthorWithStats[]>(cacheKey);
+  if (cached) return cached;
+
+  const result: AuthorWithStats[] = await Promise.all(
+    authors.map(async author => {
+      const posts = await getPostsByAuthor(author.slug);
+      return { ...author, postCount: posts.length };
+    })
+  );
+
+  authorCache.set(cacheKey, result);
+  return result;
+}
+
+export function clearAuthorCache(): void {
+  authorCache.clear();
+}
+
+
+
+
+
+///////////////////
+
+// src/data/authors.ts
+
+import { Author } from '@/types/author';
+
+export const authors: Author[] = [
+  {
+    slug: 'ri-mirelle',
+    fullName: 'Gaurav Verma',
+    displayName: 'Ri',
+    role: 'Co-Founder & Editorial Director',
+    bio: 'Ri is the co-founder of Mirellé Inspo. He leads nail industry research, editorial strategy, and every technical layer that powers the publication  from trend data to site infrastructure.',
+    longBio: 'Ri is the co-founder of Mirellé Inspo and the driving force behind its research, strategy, and operations. He specialises in nail industry analysis, tracking what people are actually searching for, pinning, and demanding, then uses that data to shape the editorial direction of the publication. He handles content planning, SEO and GEO strategy, AEO, business development, client onboarding, trend reports, and everything that keeps the site running. Ri built Mirellé on a simple idea: the nail industry deserved a publication built on real demand, not guesswork.',
+    image: '/images/team/ri-mirelle.webp',
+    authorPageUrl: 'https://mirelleinspo.com/authors/ri-mirelle',
+    instagram: 'https://www.instagram.com/ri.atm1relle',
+    linkedin: 'https://www.linkedin.com/in/gaurav-verma-042519268/',
+    knowsAbout: [
+      'Nail Trend Forecasting',
+      'Beauty Industry Research',
+      'Audience Intelligence',
+      'SEO Strategy',
+      'GEO  Generative Engine Optimisation',
+      'AEO  Answer Engine Optimisation',
+      'Editorial Planning',
+      'Content Strategy',
+      'Client Onboarding',
+      'Nail Art Industry Analysis',
+    ],
+  },
+  {
+    slug: 'jyoti-mirelle',
+    fullName: 'Jyotika Verma',
+    displayName: 'Jyoti',
+    role: 'Co-Founder, Content Writer & Social Media Manager',
+    bio: 'Jyoti is the co-founder of Mirellé Inspo. She writes all editorial content across the publication and manages Mirellé\'s social presence, turning research into writing the nail community actually wants to read.',
+    longBio: 'Jyoti is the co-founder of Mirellé Inspo and leads all content writing and social media management. She writes the blogs, FAQs, work-nail guides, spotlight features, and topic pieces published on the site, bringing research to life in a voice that resonates with the nail community. She manages Mirellé\'s social presence across Instagram and Pinterest, and stays closely connected to the audience the publication is built for.',
+    image: '/images/team/jyoti-mirellee.webp',
+    authorPageUrl: 'https://mirelleinspo.com/authors/jyoti-mirelle',
+    instagram: 'https://www.instagram.com/jyoti.atm1relle',
+    linkedin: 'https://www.linkedin.com/in/jyotika-verma-b11435372/',
+    knowsAbout: [
+      'Nail Art Content Writing',
+      'Beauty Blogging',
+      'Social Media Management',
+      'Community Management',
+      'Nail Care',
+      'DIY Manicures',
+      'Press-On Nails',
+      'Seasonal Nail Trends',
+      'Nail Art Inspiration',
+    ],
+  },
+];
+
+// ── Helpers ────────────────────────────────────────────────────────────────────
+
+export function getAuthorBySlug(slug: string): Author | undefined {
+  return authors.find((a) => a.slug === slug);
+}
+
+export function getAuthorByName(name: string): Author | undefined {
+  return authors.find(
+    (a) =>
+      a.fullName.toLowerCase() === name.toLowerCase() ||
+      a.displayName.toLowerCase() === name.toLowerCase()
+  );
+}
+
+// Maps content frontmatter author strings to the correct Author object.
+// Handles "Jyoti", "Jyotika Verma", "Ri", "Gaurav Verma" etc.
+export function resolveAuthor(authorString: string): Author | undefined {
+  if (!authorString) return undefined;
+  const lower = authorString.toLowerCase().trim();
+
+  if (
+    lower.includes('jyoti') ||
+    lower.includes('jyotika')
+  ) return authors.find((a) => a.slug === 'jyoti-mirelle');
+
+  if (
+    lower.includes('ri') ||
+    lower.includes('gaurav')
+  ) return authors.find((a) => a.slug === 'ri-mirelle');
+
+  return undefined;
+}
+
+//////////////////////
