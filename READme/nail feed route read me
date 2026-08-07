@@ -1,0 +1,300 @@
+# Nail Feed (`/nail-feed`) — Route Reference
+
+This document is for whoever writes the content-generation prompts that
+produce Nail Feed posts. It describes every frontmatter field, what happens
+if you omit one, how the page renders top to bottom, and the hard
+technical constraints (Discover eligibility) the content must satisfy.
+
+Nail Feed is **not** `/blog`. It is a separate, purpose-built route for
+Google Discover traffic — fast, opinionated, short-form posts, distinct
+from `/blog`'s SEO-depth pillar/cluster content. Do not reuse `/blog`
+frontmatter conventions or word-count targets here; several are
+deliberately different, noted below.
+
+---
+
+## 1. File location & slug
+
+Posts are `.md` (or `.mdx`) files in:
+
+```
+src/content/nailfeed/{slug}.md
+```
+
+The **filename (without extension) is the slug**, and it is used directly
+in the URL: `src/content/nailfeed/chrome-french-tips-are-back.md` →
+`https://mirelleinspo.com/nail-feed/chrome-french-tips-are-back`.
+
+Routing is **flat** — there is no topic-folder nesting like `/blog`'s
+`/blog/[topic]/[slug]`. Do not create subfolders per topic; `topic` is a
+frontmatter field only (see below), not a URL segment.
+
+---
+
+## 2. Frontmatter field reference
+
+### Required
+
+| Field | Type | Notes |
+|---|---|---|
+| `title` | string | Falls back to `"Untitled"` if omitted — **always set this.** |
+| `date` | string (ISO date) | Falls back to the current date/time if omitted — **always set this**, posts are sorted newest-first by this field. |
+
+Nothing else is strictly required by the code (everything else has a
+fallback), but omitting the fields below produces a visibly broken or
+Discover-ineligible page. Treat the table below as required in practice.
+
+### Strongly expected (fallbacks exist but will look wrong/broken if skipped)
+
+| Field | Type | Fallback if omitted | Notes |
+|---|---|---|---|
+| `excerpt` | string | `''` (empty) | Used as meta description, OG/Twitter description, and listing-page card text. Write one — don't skip it. |
+| `author` | string | `'Mirellé Team'` | **Must be exactly `"Jyotika Verma"` or `"Gaurav Verma"`** (or a string containing `"jyoti"`/`"jyotika"`, or `"gaurav"`). See §6 — this is name-matched, not slug-matched, and the match logic is loose substring matching. Do not invent new author names; only these two authors currently resolve to a real profile (headshot, bio, socials). Anything else silently renders **no author card at all.** |
+| `image` | string (path) | `null` — hero renders broken | Hero image path, e.g. `/images/nailfeed/chrome-french-tips.jpg`. See §5 for the hard size/aspect requirement. |
+| `imageAlt` | string | falls back to `title` | Always write real alt text — accessibility + image SEO. |
+| `imageWidth` | number | `1200` | Should always be `1200` — see §5. |
+| `imageHeight` | number | `675` | Should always be `675` — **not** 630 (that's `/blog`'s ratio). See §5. |
+| `category` | string | `undefined` | Free text, used for the listing-page filter (`/nail-feed?category=...`) and shown as a small label above the H1. No fixed enum — but stay consistent with existing values in use (e.g. `"Trends"`). |
+| `readTime` | string or number | `'4 min'` | Nail Feed posts are short — realistic values are usually `"2 min"`–`"5 min"`. |
+| `canonical` | string (full URL) | auto-built as `https://mirelleinspo.com/nail-feed/{slug}` | Only set this manually if the canonical URL needs to differ from the default (rare — e.g. syndicated content). |
+
+### Optional — content structure
+
+| Field | Type | Purpose |
+|---|---|---|
+| `tldr` | object | Powers the `WrapUp` card rendered directly under the hero, before the body. See §3 for its full shape (`summary`, `keyTakeaways`, `tldrFaqs`). Highly recommended — this is the "direct-answer intro" the whole Discover strategy depends on. |
+| `faqItems` | array of `{question, answer}` | Powers a separate, fuller **FAQ section** further down the page (after the body, before the final newsletter). **Distinct from `tldr.tldrFaqs`** — do not duplicate the same Q&As in both; `tldrFaqs` should be short teasers, `faqItems` the fuller answers. See §3. |
+
+### Optional — topic/relational (SEO structure, not required per-post)
+
+| Field | Type | Purpose |
+|---|---|---|
+| `topic` | string (slug-like) | Links this post conceptually to a `/blog` pillar topic (e.g. `"chrome-nails"`) and groups related Nail Feed posts on the listing page (`/nail-feed?topic=...`). Use the **same slug** as the corresponding `/blog` pillar topic where one exists. |
+| `topicalMap.parentPillar` | string (path) | The `/blog` pillar URL this post should link back to editorially, e.g. `"/blog/chrome-nails"`. This is data only — nothing auto-injects the link into body content; if the post should link back, write that link into the Markdown body yourself. |
+| `topicalMap.relatedClusters` | string[] | Slugs of **other Nail Feed posts** (not `/blog` posts) that are siblings on the same topic. Used by the "Read More" rail as the *first* priority match — see §4. |
+| `topicalMap.primaryKeyword` | string | Free-text SEO note, not rendered anywhere currently — informational for planning only. |
+| `topicalMap.secondaryKeywords` | string[] | Same — informational only. |
+| `topicalMap.topicalBoundary` | string | Free-text note describing what this post does/doesn't cover, useful for keeping a topic cluster non-overlapping. Informational only, not rendered. |
+
+Do **not** add: `position`, `hierarchyLevel`, `childClusters`,
+`contentType`, `semanticRelationships`, `contentMetrics`,
+`showInspoGalleryLink`, `template`, `tutorialMetadata`, `videoMetadata`,
+`eventData`, `carouselImages`, `products`, `heroImages` (plural). These
+are `/blog`-only concepts (pillar/cluster hub pages, multiple templates,
+inspo gallery links, tutorial/video/event schema, product grids/carousels)
+that Nail Feed deliberately does not support. Setting them does nothing —
+no code reads them.
+
+---
+
+## 3. `tldr` and `faqItems` — full shapes
+
+```yaml
+tldr:
+  summary:
+    - "**Bolded** text is supported via simple markdown-bold syntax."
+    - "Each line is a bullet in the Wrap Up card's Summary section."
+  keyTakeaways:
+    - "Optional second bullet list, labeled 'Key Takeaways'."
+  tldrFaqs:
+    - question: "Short, teaser-style question"
+      answer: "Short answer — a sentence or two, not the full FAQ answer."
+faqItems:
+  - question: "Fuller question, same or different from tldrFaqs"
+    answer: "Fuller answer — this is the real FAQ section, further down the page."
+```
+
+- `tldr.summary` and `tldr.keyTakeaways` support inline `**bold**` markdown
+  (rendered as real `<strong>` tags, not literal asterisks).
+- `tldr.tldrFaqs` renders as a small accordion **inside** the Wrap Up card,
+  near the top of the page.
+- `faqItems` renders as its own full **FAQ section**, positioned after the
+  body content, before the final newsletter.
+- These two FAQ fields are intentionally separate content, not the same
+  data reused twice. Write different Q&As for each.
+
+---
+
+## 4. Page structure (top to bottom)
+
+This is what a Nail Feed post actually renders, in order:
+
+1. **Share button** (floating, fixed position)
+2. **Hero** — category label, title (H1), byline, date, then the hero image (16:9)
+3. **Breadcrumbs** (`Home / Nail Feed / {title}`)
+4. **Table of Contents** (mobile only, auto-built from `<h2>` headings in the body)
+5. **Wrap Up card** (`tldr` — summary / key takeaways / short FAQ accordion) — only if `tldr` is set
+6. **Body, first half** — content up to the nearest `<h2>` at/after the midpoint
+7. **Inline newsletter bar** + **social follow icons (5 platforms)** — only if there's a second half to show (i.e. skipped entirely on posts with 0–1 `<h2>` headings)
+8. **Body, second half** — remaining content
+9. **FAQ section** (`faqItems`) — only if present
+10. **Final newsletter** (larger, name+email form) — always shown
+11. **Author card** — only if `author` resolves to a known author (see §6)
+12. **About Mirellé Inspo** (static, same on every post)
+13. **Read More** (related posts rail, see below)
+
+### How body content splits into "first half" / "second half"
+
+The compiled HTML is split at the **`<h2>` heading closest to the
+midpoint** of all `<h2>` blocks — not an exact 50/50 character split, and
+not `/blog`'s 33/34/33 pattern. A post needs **at least 2 `<h2>` headings**
+for the mid-content newsletter/social block to appear at all; with 0 or 1
+`<h2>`, all content renders as one block and that middle newsletter+social
+section is skipped entirely (there's no "middle" to break at).
+
+**Practical implication for prompt-writing: structure every post with at
+least 2–3 `<h2>` sections**, both so the Table of Contents is useful and so
+the mid-content engagement block actually shows up.
+
+### Read More / related posts logic
+
+Priority order, capped at 6 posts, no duplicates:
+1. Posts listed explicitly in `topicalMap.relatedClusters`
+2. Other posts with the same `topic`
+3. Most recent posts (fallback filler)
+
+---
+
+## 5. Hero image — hard requirement (Discover eligibility)
+
+- **1200×675 minimum, 16:9 aspect ratio.** This is not a style preference —
+  it's a Google Discover technical gate. Google requires ≥1200px width,
+  16:9 ratio, >300,000 total pixels for large-image Discover eligibility.
+  `/blog` uses 1200×630 — **do not reuse that ratio here.**
+- Only the hero image needs this spec. Body images can be whatever fits
+  the content.
+- `imageWidth`/`imageHeight` in frontmatter should match the actual file
+  dimensions — these values also feed the OG/Twitter card image metadata
+  and the BlogPosting schema's image object.
+- The site-wide `max-image-preview:large` robots directive is already
+  correctly set in `src/app/layout.tsx` (under `robots.googleBot`) —
+  nothing needed per-post for that part.
+
+---
+
+## 6. Author field — exact matching required
+
+`author` in frontmatter is matched by **`resolveAuthor()`** in
+`src/data/authors.ts`, using **case-insensitive substring matching**, not
+an exact-match lookup:
+
+- Contains `"jyoti"` or `"jyotika"` → resolves to Jyotika Verma
+- Contains `"ri"` or `"gaurav"` → resolves to Gaurav Verma
+- Anything else → resolves to nothing, and **the entire Author Card section
+  silently does not render** (no error, no placeholder — it just isn't there)
+
+**Use one of these two exact strings:** `"Jyotika Verma"` or
+`"Gaurav Verma"`. Don't invent a third author or get creative with
+formatting (initials, nicknames not listed above, etc.) — there is
+currently no way to add a new author without also updating
+`src/data/authors.ts`, which is out of scope for a content-only workflow.
+
+Note the substring match is loose by design in the original code (not
+something introduced for Nail Feed) — e.g. any string containing "ri"
+matches Gaurav. Stick to the two exact full names above and this isn't a
+practical issue.
+
+---
+
+## 7. Word count & body image targets
+
+Deliberately **different from `/blog`**, which targets 2200–3500 words
+(pillar/spoke SEO depth). Nail Feed is scroll-driven, fast-consumption
+content:
+
+- **Target: 900–1300 words.**
+- **Body images: 2–5**, light — scale up toward the higher end only for
+  roundup-style posts, fewer for opinion/Q&A-style posts. Don't force a
+  gallery structure; there is no gallery/carousel component wired into
+  this template.
+
+---
+
+## 8. Headline guidance
+
+- Negative-angle-plus-solution titles (e.g. *"your gel keeps lifting —
+  here's why"*) and "trending now" style titles are fine, **but the post
+  must actually deliver on the promise in the title.** Google's Discover
+  ranking includes a classifier comparing headline promise against actual
+  content — a title that overpromises and underdelivers gets suppressed,
+  not rewarded, regardless of how good the headline itself reads.
+- **~60–65 characters** is roughly where Discover truncates titles in the
+  feed (not a hard platform limit, just where display starts clipping) —
+  keep titles inside that if possible.
+
+---
+
+## 9. What NOT to carry over from `/blog`
+
+If the agent generating prompts has also seen `/blog`'s content
+conventions, explicitly avoid porting these over:
+
+- `/blog`'s word count (2200–3500) — too long for Discover's format
+- `/blog`'s topic-folder URL nesting — Nail Feed is flat
+- `/blog`'s "inspo gallery" auto-linking after body images — doesn't exist
+  in this route, don't reference `/inspo/...` URLs
+- `/blog`'s multiple templates (`center`/`split-left`/`split-right`/`grid`)
+  — Nail Feed has exactly one template, no `template` field
+- `/blog`'s two-inline-newsletter-plus-final pattern at fixed 33/34/33
+  splits — Nail Feed uses one mid-content break (position varies by `<h2>`
+  count) plus the final newsletter
+- Product grids, carousels, download buttons, affiliate banners, lightbox
+  galleries — none of these are wired into the Nail Feed template
+
+---
+
+## 10. Minimal working example
+
+```yaml
+---
+title: "Your Title Here (aim for ~60-65 characters)"
+excerpt: "One or two sentences — used for meta description and listing cards."
+date: "2026-08-08"
+author: "Jyotika Verma"
+category: "Trends"
+image: "/images/nailfeed/your-image.jpg"
+imageAlt: "Descriptive alt text of what's in the hero image"
+imageWidth: 1200
+imageHeight: 675
+readTime: "3 min"
+topic: "some-blog-pillar-topic-slug"
+topicalMap:
+  parentPillar: "/blog/some-blog-pillar-topic-slug"
+  relatedClusters:
+    - "another-nailfeed-post-slug"
+  primaryKeyword: "your primary keyword"
+  secondaryKeywords:
+    - "secondary keyword one"
+  topicalBoundary: "One sentence on what this post covers vs. doesn't."
+tldr:
+  summary:
+    - "**Bolded key point** in plain language."
+    - "Second summary bullet."
+  keyTakeaways:
+    - "Actionable takeaway one."
+  tldrFaqs:
+    - question: "Short teaser question?"
+      answer: "Short teaser answer."
+faqItems:
+  - question: "Fuller FAQ question?"
+    answer: "Fuller FAQ answer, different content from tldrFaqs above."
+---
+
+## First section heading
+
+Body content here.
+
+## Second section heading
+
+More body content — this is roughly where the mid-content newsletter
+and social block will land, since it's the h2 closest to the midpoint.
+
+## Third section heading
+
+Closing content.
+```
+
+See `src/content/nailfeed/chrome-french-tips-are-back.md` in this same
+route folder for a complete, validated real example (frontmatter has been
+tested end-to-end: parses correctly, TLDR/FAQ counts correct, H2→TOC id
+generation confirmed working).
