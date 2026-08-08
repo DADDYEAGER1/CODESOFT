@@ -1,0 +1,466 @@
+# Nail Feed — Content Authoring & Component Reference
+
+Route: `/nail-feed` (hyphenated URL; files/folders internally use `nailfeed`,
+no hyphen — this split is intentional, not a bug).
+
+This README covers **everything** needed to write a Nail Feed post and
+understand how the page renders it: every frontmatter field, every widget,
+where things appear on the page, and what happens if a field is missing.
+
+---
+
+## 1. Quick Start — Minimal Post
+
+```yaml
+---
+title: "Your Post Title"
+excerpt: "One-sentence summary shown in listings and social previews."
+date: "2026-08-08"
+author: "jyoti-mirelle"
+category: "Trends"
+image: "/images/nailfeed/your-image.jpg"
+imageAlt: "Descriptive alt text"
+imageWidth: 1200
+imageHeight: 675
+readTime: "3 min"
+topic: "your-topic-slug"
+canonical: "https://mirelleinspo.com/nail-feed/your-slug"
+---
+
+## Your First Section
+
+Body content here.
+
+## Your Second Section
+
+More content.
+```
+
+This alone is a valid, publishable post. Everything else in this file is
+optional enhancement.
+
+**Author field takes several accepted formats** — recommend the slug
+(`"ri-mirelle"` / `"jyoti-mirelle"`) for consistency — see [Author
+Matching](#7-author-matching) for why.
+
+---
+
+## 2. Full Frontmatter Field Reference
+
+| Field | Required | Type | Notes |
+|---|---|---|---|
+| `title` | yes | string | H1, also page `<title>` |
+| `excerpt` | yes | string | Listing cards, meta description, OG/Twitter description |
+| `date` | yes | string (`YYYY-MM-DD`) | Published date |
+| `author` | yes | string | `"ri-mirelle"` or `"jyoti-mirelle"` (recommended) — see §7 for all accepted formats |
+| `category` | yes | string | Shown above H1, used for `?category=` filtering |
+| `image` | yes | string (path) | Hero image. **Must be 1200×675 (16:9)** — Discover hero spec, do NOT use /blog's 1200×630 |
+| `imageAlt` | yes | string | Alt text |
+| `imageWidth` / `imageHeight` | yes | number | Should be `1200` / `675` |
+| `readTime` | yes | string | e.g. `"3 min"` |
+| `topic` | yes | string | Data field only — **never** a URL segment. URLs are flat: `/nail-feed/[slug]` |
+| `canonical` | yes | string | Full canonical URL |
+| `dateModified` | no | string | Defaults to `date` if omitted |
+| `tldr` | no | object | See §3 |
+| `faqItems` | no | array | See §4 |
+| `topicalMap` | no | object | See §5 (trimmed shape — 5 fields only) |
+| `reaction` | no | object | See §6.1 |
+| `poll` | no | object | See §6.2 |
+| `quiz` | no | object | See §6.3 |
+
+---
+
+## 3. `tldr` — Direct-Answer Intro
+
+Renders as a "WrapUp" card right at the top of the article, before body
+content. Discover rewards content that pays off the headline immediately —
+this is that payoff.
+
+```yaml
+tldr:
+  summary:
+    - "**Bold key point** as a bullet."
+    - "Second bullet, markdown bold supported."
+  keyTakeaways:
+    - "Actionable takeaway one."
+    - "Actionable takeaway two."
+  tldrFaqs:
+    - question: "Quick question?"
+      answer: "Quick answer."
+```
+
+If `tldr` is omitted, the WrapUp card simply doesn't render — no gap, no
+placeholder.
+
+---
+
+## 4. `faqItems` — End-of-Article FAQ
+
+```yaml
+faqItems:
+  - question: "Full question here?"
+    answer: "Full answer here."
+  - question: "Another question?"
+    answer: "Another answer."
+```
+
+Renders near the end of the post (after body content, after the mid-content
+widgets, **after ReactionBar**, before FinalNewsletter). Omit entirely to
+skip — no empty section renders.
+
+---
+
+## 5. `topicalMap` — SEO/Content Cluster Metadata
+
+**Trimmed shape** — only 5 fields (deliberately cut from /blog's fuller
+version; the cut fields have zero application-code consumers, confirmed via
+grep). Don't add the cut fields back without a real, named reason.
+
+```yaml
+topicalMap:
+  parentPillar: "/blog/your-pillar-page"
+  relatedClusters:
+    - "related-cluster-slug"
+  primaryKeyword: "main target keyword"
+  secondaryKeywords:
+    - "secondary keyword one"
+    - "secondary keyword two"
+  topicalBoundary: "One sentence describing what this post does/doesn't cover"
+```
+
+This is metadata for the content funnel model (Nail Feed spokes link back
+to /blog pillars via `parentPillar`) — not currently read by any rendering
+logic, purely organizational/for future tooling.
+
+---
+
+## 6. Engagement Widgets
+
+Three optional widgets: **Reaction Bar**, **Poll**, **Quiz**. All three are
+controlled entirely through frontmatter — no code changes needed to author
+new instances of any of them. Visual design (colors, borders, animation) is
+fixed in the components; frontmatter only controls text content and (for
+quiz) scoring logic.
+
+### 6.1 Reaction Bar
+
+**Always renders on every post — even with zero `reaction` frontmatter.**
+There is no "off" state. If you don't write a `reaction` block, it falls
+back to a hardcoded default:
+
+```
+✨ Obsessed   😐 Meh   😑 Hard pass
+```
+
+To customize the wording/emoji:
+
+```yaml
+reaction:
+  options:
+    - id: "love"
+      label: "😍 Obsessed"
+    - id: "meh"
+      label: "😐 Meh"
+    - id: "skip"
+      label: "❌ Hard pass"
+```
+
+- `id` — stored as the Sheet column value, keep stable once a post is live
+- `label` — emoji + text shown on the button (component splits on the
+  first space: emoji becomes the large glyph, rest becomes the caption)
+- 2–4 options supported
+
+**Position**: end of post, immediately before FAQ (not mid-content —
+moved here from an earlier position, see Decisions Log in the handoff
+memory if you're wondering why).
+
+**Design**: dark header band (`#252220`) with a pulse-line icon, "REACT"
+label, live reader count on the right. White card body below with the
+option buttons.
+
+### 6.2 Poll
+
+**Only renders if `post.poll` is set.** No default — a poll needs an
+authored question, there's no sensible fallback.
+
+```yaml
+poll:
+  id: "unique-poll-id"
+  question: "Your poll question?"
+  options:
+    - id: "option-a"
+      label: "First option text"
+    - id: "option-b"
+      label: "Second option text"
+```
+
+- `id` — Sheet dedup key, must be unique per post
+- `question` — shown as the card heading
+- `options[].id` / `.label` — 2–4 options, `id` is the stored vote value
+
+**Position**: ~50% mark, shares its slot with Quiz — **mutually
+exclusive**. If a post has `quiz` set, quiz wins that slot and poll is
+ignored even if also present. A post should only ever define one of the
+two, not both.
+
+**Design**: dark header band with a bar-chart icon, glowing red "LIVE"
+dot (animated ping), "LIVE POLL" label, live vote count. After voting,
+selected option's bar fills solid dark with white text; unselected options
+get a faint fill. Long option labels truncate instead of colliding with
+the % badge.
+
+### 6.3 Quiz
+
+**Only renders if `post.quiz` is set.** Fully author-defined — any number
+of questions, any number of results, scoring logic entirely from your
+`weights` values. One component handles both "which look are you"
+(recommendation) and "is this right for you" (diagnostic) style endgames —
+the difference is just how you write `results`, not a different component.
+
+```yaml
+quiz:
+  id: "unique-quiz-id"
+  title: "Quiz title shown at the top"
+  questions:
+    - id: "q1"
+      question: "First question text?"
+      options:
+        - id: "q1_a"
+          label: "Answer option A"
+          weights: { result_id_1: 2 }
+        - id: "q1_b"
+          label: "Answer option B"
+          weights: { result_id_2: 2 }
+    - id: "q2"
+      question: "Second question text?"
+      options:
+        - id: "q2_a"
+          label: "Answer option A"
+          weights: { result_id_1: 1, result_id_2: 1 }
+        - id: "q2_b"
+          label: "Answer option B"
+          weights: { result_id_2: 2 }
+  results:
+    - id: "result_id_1"
+      title: "Result One Title"
+      description: "Full description shown on the result card."
+      image: "/images/optional-result-image.jpg"
+      ctaLabel: "Optional button text"
+      ctaHref: "/optional/link"
+    - id: "result_id_2"
+      title: "Result Two Title"
+      description: "Full description shown on the result card."
+```
+
+**How scoring works** (fully your control, nothing hardcoded):
+1. Each answer option carries `weights: { resultId: number }` — how many
+   points that answer contributes toward each result.
+2. As the user answers, weights are summed per result id across all
+   questions.
+3. After the last question, the **highest-scoring result id wins**.
+4. **Tiebreak**: if scores tie, the first result listed in your `results`
+   array wins — array order = tiebreak priority.
+5. An answer can contribute to multiple results at once (partial credit),
+   e.g. `weights: { milky: 2, neutral: 1 }`.
+6. Every `resultId` used in any `weights` object **must** match a real
+   `id` in `results`, or that weight silently does nothing (no error).
+
+**Position**: ~50% mark, same shared slot as Poll (quiz wins if both are
+somehow set on the same post).
+
+**Design**: dark header band with a sparkle icon, "QUIZ" label (switches
+to "YOUR RESULT" once finished), question counter (`1 / 2`), animated
+white progress bar that fills as questions are answered. Card height
+auto-measures actual rendered content on every question/result change —
+no hardcoded pixel value, so any number of questions/labels/description
+lengths work without layout jitter.
+
+---
+
+## 7. Author Matching
+
+`resolveAuthor()` in `src/data/authors.ts` does **case-insensitive
+substring matching** against the `author` frontmatter string:
+
+```ts
+if (lower.includes('jyoti') || lower.includes('jyotika'))
+  return authors.find((a) => a.slug === 'jyoti-mirelle');
+
+if (lower.includes('ri') || lower.includes('gaurav'))
+  return authors.find((a) => a.slug === 'ri-mirelle');
+```
+
+**Confirmed working values** (all resolve correctly):
+- `"ri-mirelle"` (slug)
+- `"jyoti-mirelle"` (slug)
+- `"Ri"` / `"Jyoti"` (display name)
+- `"Gaurav Verma"` / `"Jyotika Verma"` (full name)
+
+Any of these are safe to use in frontmatter — recommend `"ri-mirelle"` /
+`"jyoti-mirelle"` (the slugs) for consistency with `authorPageUrl` and
+image paths, which are also slug-keyed.
+
+**⚠️ Real risk, not slug-vs-name**: the `"ri"` match is a **bare
+substring**, not a whole-word match. Any author string containing "ri"
+anywhere — `"Maria"`, `"Christina"`, `"Henri"`, etc. — will silently
+misattribute to Ri. This isn't about which format you use; it'll happen
+with slugs, display names, or full names alike if a future author's name
+happens to contain "ri". If a third author is ever added, `resolveAuthor`
+needs a tighter match (exact slug/name comparison, not `.includes()|`)
+before that author is used in frontmatter.
+
+**Silent failure**: if `author` doesn't match any known pattern,
+`resolveAuthor` returns `undefined` and **AuthorCard simply doesn't
+render** — no error, no warning, no visible gap. This already caused one
+real bug in this build (an earlier version matched by slug against
+full-name frontmatter and always returned nothing) — worth double-checking
+after any change to this function.
+
+### 7.1 Two separate `authors.ts` files — don't confuse them
+
+- **`src/data/authors.ts`** — the static author array + `resolveAuthor()`
+  (substring matching, described above). This is what
+  `NailFeedTemplate.tsx` uses to decide whether/what to render in
+  AuthorCard.
+- **`src/lib/authors.ts`** — a *different* file. Builds author profile
+  pages (`/authors/[slug]`) by scanning content directories for posts
+  where `data.author === authorSlug`, using **exact string equality
+  against the slug**, not substring matching.
+
+**⚠️ Known gap**: `src/lib/authors.ts`'s `CONTENT_DIRS` list currently
+covers `/blog`, `/nail-faqs`, `/work-nails`, `/spotlight`, `/topics`,
+`/trend-reports`, `/business` — **it does not include
+`src/content/nailfeed`**. This means Nail Feed posts render correctly on
+their own page (via `resolveAuthor`'s substring match) but are currently
+**invisible on author profile pages** — they won't count toward an
+author's post list/count at `/authors/jyoti-mirelle` until Nail Feed is
+added to `CONTENT_DIRS`. Not yet fixed as of this README.
+
+Also note `getPostsByAuthor` requires an **exact** match on the slug
+(`data.author === authorSlug`) — unlike `resolveAuthor`'s forgiving
+substring match. This is a second, independent reason to always write the
+slug (`"ri-mirelle"` / `"jyoti-mirelle"`) in frontmatter rather than a
+full name: once the `CONTENT_DIRS` gap above is fixed, only the exact
+slug will correctly attribute posts on author pages.
+
+---
+
+## 8. Page Structure — Full Render Order
+
+Current, confirmed order top to bottom:
+
+1. ShareButton (floating)
+2. Hero — category, H1, byline, date, 16:9 image
+3. Breadcrumbs (`Home / Nail Feed / {title}`)
+4. TableOfContents (mobile/tablet only — `block lg:hidden`, disappears at
+   desktop widths; no desktop TOC exists)
+5. WrapUp card (`tldr`) — only if set
+6. Body, **part 1** (~33%)
+7. **InlineNewsletter** — only if a second content part exists
+8. Body, **part 2** (~33–67%)
+9. **Poll or Quiz** (mutually exclusive, quiz wins) — only if a second
+   content part exists and one of `poll`/`quiz` is set
+10. **SocialFollowCTA** (all 5 platforms) — only if a third content part
+    exists
+11. Body, **part 3** (~67–100%) — only if it exists
+12. **ReactionBar** — always renders
+13. FAQ (`faqItems`) — only if present
+14. FinalNewsletter (larger, name+email — distinct component from #7's
+    compact InlineNewsletter)
+15. AuthorCard — only if `author` resolves (see §7)
+16. AboutEEAT
+17. ReadMoreSection (related posts, capped at 6)
+
+### How content splits into parts
+
+Compiled HTML is split at `<h2>` boundaries closest to the 1/3 and 2/3
+marks — **not** exact character/word math, and not /blog's exact 33/34/33.
+
+- **3+ `<h2>`s**: full 3-part split, all mid-content slots render
+  (newsletter → part 2 → poll/quiz → social → part 3)
+- **Exactly 2 `<h2>`s**: only 2 parts exist — newsletter and poll/quiz
+  both get their breaks, but the social CTA slot is skipped (there's no
+  third break point for it to sit at without colliding)
+- **0–1 `<h2>`s**: everything renders as one block — only the newsletter
+  fallback logic applies, poll/quiz/social are all skipped since there's
+  no break point at all
+
+**Always write 3+ `<h2>` sections** per post — needed for full widget
+placement (newsletter/poll-quiz/social all showing), a useful mobile TOC,
+and even body pacing. Fewer than 3 headings means some mid-content slots
+silently won't appear, which can look like a bug to whoever's reviewing
+the post but isn't one.
+
+---
+
+## 9. File Map
+
+### Core route + data
+- `src/types/nailfeed.ts` — `NailFeedPost`, `NailFeedMetadata`, trimmed
+  `NailFeedTopicalMap`, `TLDR`, `FAQ` types; re-exposes widget config
+  types (`reaction?`, `poll?`, `quiz?` fields)
+- `src/lib/nailfeed.ts` — data layer (get/list/paginate/related posts)
+- `src/lib/generateNailFeedSchemas.ts` — JSON-LD schema generation
+  (article/breadcrumb/FAQ only — no HowTo/Video/etc.)
+- `src/app/nail-feed/[slug]/page.tsx` — post route, static generation
+- `src/app/nail-feed/page.tsx` — listing page (`?category=` / `?topic=`
+  filters, pagination)
+- `src/app/nail-feed/templates/NailFeedTemplate.tsx` — the one template,
+  full render order and content-splitting logic
+
+### Widget components
+- `src/components/NailFeed/ReactionBar.tsx`
+- `src/components/NailFeed/PollWidget.tsx`
+- `src/components/NailFeed/QuizWidget.tsx`
+- `src/types/nailfeedWidgets.ts` — all widget/API payload types
+
+### Widget backend
+- `src/lib/nailfeedSession.ts` — anonymous cookie (`nf_uid`, 1yr,
+  httpOnly) for cross-visit dedup
+- `src/lib/nailfeedAppsScript.ts` — Apps Script fetch client
+  (`NAILFEED_APPS_SCRIPT_URL` env var required)
+- `src/app/api/nailfeed/react/route.ts`
+- `src/app/api/nailfeed/poll/route.ts`
+- `src/app/api/nailfeed/quiz/route.ts`
+- `appsscript/NailFeedWidgets.gs` — Google Apps Script backend (lives in
+  the Google Sheet, not the Next.js codebase)
+
+### Other forked components (padding fixes vs. /blog originals)
+- `src/components/NailFeed/AboutEEAT.tsx`
+- `src/components/NailFeed/AuthorCard.tsx` — also has mobile `flex-col`
+  stacking fix (was fixed `flex-row`, squeezed headshot+bio on narrow
+  screens)
+- `src/components/NailFeed/ReadMoreSection.tsx`
+
+---
+
+## 10. What NOT to Carry Over From /blog
+
+These fields/components exist on `/blog` but are deliberately excluded
+here. Don't re-add without a real, named scope change:
+
+**Fields**: `showInspoGalleryLink`, full `topicalMap` (trimmed version
+kept, see §5), `template` (one template only), `tutorialMetadata`,
+`videoMetadata`, `eventData`, `carouselImages`, `products`, `heroImages`
+(plural — Nail Feed has one hero image).
+
+**Components**: `DownloadButton`, `AffiliateBanner`, `ImageCarousel`,
+`ProductGrid`, `ProductCard`, `Lightbox`.
+
+**URL structure**: flat only — `/nail-feed/[slug]`, never
+`/nail-feed/[topic]/[slug]`. `topic` is frontmatter data, never a URL
+segment.
+
+---
+
+## 11. Known Open Items
+
+- **Nail Feed posts don't show on author profile pages.**
+  `src/lib/authors.ts`'s `CONTENT_DIRS` doesn't include
+  `src/content/nailfeed` — see §7.1. Posts render fine on their own page
+  but won't appear in an author's post list/count at `/authors/[slug]`
+  until this is added.
+- Quiz auto-height fix is live (no more magic-number `minHeight`), but
+  confirm on real long-question/long-result posts once a few exist.
+- `googleapis` npm package may still be installed from an abandoned
+  direct-Sheets-API approach — safe to remove, not currently used.
