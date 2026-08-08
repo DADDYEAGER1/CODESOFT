@@ -1,0 +1,274 @@
+==================================================
+INPUT FILE — Blog Gen Agent
+==================================================
+
+SECTION 1 — FILE AUTHORITY
+This file is the single source of truth for Blog Gen Agent. All POST_CONSTANTS values are hardcoded. Do not ask, adjust, or override.
+
+SECTION 2 — POST_CONSTANTS
+slug: pistachio-nails
+canonical: https://mirelleinspo.com/blog/pistachio-nails
+post_type: standalone
+intent: inspirational
+word_count: 2200
+image_count: 9
+show_inspo_gallery_link: true
+template: center
+hero_dimensions: 1200x630
+category: Nail Polish
+publish_date: 2026-08-08
+author: jyoti-mirelle
+
+SECTION 3 — CLUSTER SNAPSHOT
+N/A — solo mode.
+
+SECTION 4 — SERP ANALYSIS
+competitor_gaps:
+- No competitor gives skin-tone-specific guidance beyond "flatters everyone" — that claim is asserted, never earned with undertone/finish logic (validated: WhoWhatWear, RainyRoses, Bangstyle all repeat it uncredited)
+- No competitor explains WHY pistachio reads as quiet luxury (Prada/Miu Miu tie exists but isn't connected to finish/base choice)
+- No competitor addresses longevity/staining risk of a pale sheer shade on natural nails — real gap, validated via forum chatter on pale-shade upkeep
+- No competitor gives a "what to say at the salon" / polish-name shortcut (Byrdie and WWW list products but not salon-order language)
+- No competitor connects pistachio to nail SHAPE pairing systematically (mentions are scattered: almond in one post, squoval in another)
+
+missing_semantic_territory: "pistachio nails vs mint vs sage" differentiation (searchers conflate these — autocomplete/Pinterest show cross-contamination), "pistachio nail polish dupes," gel vs regular polish behavior for this specific shade
+
+our_strategic_approach: Position as the definitive styling guide, not just a design roundup — competitors show the trend, we show how to wear it (skin tone, shape, finish, salon language, longevity). Anchor to the Dubai-chocolate/quiet-luxury cultural narrative already established in press coverage, then deliver the practical layer nobody else has.
+
+top_3_word_count_estimates: ~950-1400 words (Byrdie roundup, WhoWhatWear trend piece, Bangstyle styling post) — light, image-led content
+top_3_keyword_density_baseline: ~5 mentions average across top 3
+
+SECTION 5 — AUDIENCE INTELLIGENCE
+who_they_are: Trend-aware women, primarily Gen Z/young millennial, who found this via TikTok/Pinterest/Instagram discovery (Dubai chocolate/gourmand beauty crossover), now searching to confirm the trend and find a version that suits them before booking
+what_they_want: Visual proof this looks good on their skin tone + a clear "what to ask for" before a salon appointment
+what_frustrates_them: Every article says "flatters everyone" with zero specifics; roundups show 15+ images with no guidance on which one fits short nails, which fits their skin, which will hold up
+top_5_pain_points:
+1. Can't tell if pistachio will look sickly/washed-out on their specific skin tone
+2. Don't know the difference between pistachio, mint, sage, matcha — worried they'll ask for the wrong one
+3. Uncertain if a pale/sheer green shows dirt or stains easily on natural nails
+4. Don't know what finish (matte/gloss/chrome/jelly) suits their nail shape or vibe
+5. Want a name/reference to show their nail tech, not just a Pinterest screenshot with no context
+exact_user_phrases: "pistachio girl summer," "is pistachio green flattering," "pistachio vs sage nails," "pistachio nails aesthetic," "creamy green nails," "gelato nails," "pistachio nail polish dupe," "chrome pistachio," "matcha pistachio nails," "pistachio milk nails"
+intent_content_signals: Wants abundant visual variety early, short punchy sections over dense paragraphs, direct verdicts not hedging, practical booking/shopping language woven in, aspirational tone matching the "it-girl summer" cultural moment
+
+SECTION 6 — SEMANTIC KEYWORD DATA
+primary_keyword: pistachio manicure
+keyword_variations: pistachio nails, pistachio green nails, pistachio nail polish, pistachio green manicure, pistachio nail color, pistachio mani, creamy pistachio nails
+cluster_keywords: pistachio green trend 2026, gourmand nail trend, quiet luxury nail color, sage vs pistachio nails, matcha nails, pistachio jelly nails, chrome pistachio nails, pistachio french tip, pistachio nail shape, summer green manicure, pistachio milk nails, Dubai chocolate nail trend
+lsi_terms: creamy green, milky green, sage undertone, gourmand beauty trend, quiet luxury aesthetic, negative space nail, jelly finish, chrome powder, French tip variation, glazed nail finish, nail shape pairing, undertone matching, salon polish request, gel vs regular polish, nail longevity
+aeo_terms: "what is a pistachio manicure," "does pistachio nail polish suit every skin tone," "what's the difference between pistachio and sage nails," "how do I ask for pistachio nails at the salon," "does pistachio nail polish stain natural nails," "what finish works best for pistachio nails," "is pistachio still trending in 2026," "what shape looks best with pistachio nails"
+technical_terms: sheer jelly finish, glazed topcoat, chrome powder application, negative space technique, micro French tip, gel polish opacity, builder gel
+user_language: "pistachio girl summer," "gelato nails," "is this too green for me," "will this look sickly," "what do I even ask for," "creamy not neon," "not too matcha not too mint," "expensive-looking green"
+
+SECTION 7 — VOICE AND AI QUERIES
+queries:
+1. What is a pistachio manicure exactly?
+2. Does pistachio nail polish suit every skin tone?
+3. What's the difference between pistachio and sage green nails?
+4. Is pistachio green still trending in 2026?
+5. How do I ask for pistachio nails at the salon?
+6. What nail shape looks best with pistachio green?
+7. Does pale green nail polish stain your natural nails?
+8. What finish is best for pistachio nails — matte or glossy?
+9. Can pistachio nails work for short nails?
+10. Is pistachio nail polish considered quiet luxury?
+11. What colors pair well with pistachio nails?
+12. Why is pistachio nail polish suddenly everywhere?
+13. Is pistachio green nail polish flattering on deep skin tones?
+14. What's a good pistachio nail polish dupe?
+15. Can you do a French tip with pistachio green?
+16. Does pistachio nail polish work in gel or only regular polish?
+
+SECTION 8 — HOOK AND CTR
+selected_trigger: Trigger 2 — FOMO/Trend Urgency
+trigger_rationale: Reader is trend-aware, arriving via TikTok/Pinterest discovery of a viral, culturally-tied moment (Dubai chocolate, quiet luxury runway) — she wants confirmation she's not late and a clear way in.
+title: Pistachio Nails: 2026's Creamy Green Trend Everyone Wants
+title_char_count: 56
+meta_description: Everyone's wearing pistachio nails this year. See which shades, shapes, and finishes actually flatter — plus what to say at the salon.
+meta_char_count: 141
+intro_hook_brief: Open with the cultural moment (Dubai chocolate to runway to nails) to confirm she's found the right trend at the right time, then immediately promise the practical payoff competitors skip — which version is hers.
+first_h2_hook_direction: Phrase as a voice-search-style question resolving the "does it suit me" anxiety directly — subtle FOMO undertone, not a title repeat.
+
+SECTION 9 — SEARCH JOURNEY
+reader_arrival_state: Curious and trend-aware, already sold on the aesthetic from social feeds, but unsure which specific version suits her and nervous about getting it wrong at the salon
+journey_arc:
+- Confirm she's in the right place with the trend's cultural credibility (Dubai chocolate, runway, 171% search growth)
+- Immediately address the "will this suit me" anxiety with real skin-tone guidance
+- Show visual abundance across shapes and finishes so she can picture her own hands
+- Layer in practical booking/longevity info she can't find elsewhere
+- Close with the identity payoff — this is her sign to book
+must_avoid: Turning into a dry color-theory lecture; losing the aspirational, visual-forward energy; over-hedging on "it depends"
+promise_to_deliver: You'll leave knowing exactly which pistachio look is yours and how to ask for it
+exit_state: Confident and ready to book — she has a specific look in mind, not just a vague trend name
+
+SECTION 10 — CONTENT STRUCTURE
+h1: Pistachio Nails: 2026's Creamy Green Trend Everyone Wants
+h2_structure:
+1. Is Pistachio Green Actually Flattering on Every Skin Tone?
+2. Pistachio vs Sage vs Matcha: Which Green Are You Actually Seeing?
+3. The Best Pistachio Nail Shades to Try Right Now
+4. Matte, Glossy, Chrome, or Jelly: Which Finish Is Yours?
+5. Pistachio Nails by Shape: Almond, Square, Oval, Squoval
+6. Pistachio French Tips and Design Ideas Worth Saving
+7. What to Say at the Salon (So You Get the Right Green)
+8. Will Pistachio Nail Polish Stain or Fade Fast?
+9. How to Make Pistachio Nails Feel Quiet Luxury, Not Basic
+
+word_budget:
+introduction: 220
+conclusion: 180
+H2-1 (skin tone): 280
+H2-2 (pistachio vs sage/matcha): 230
+H2-3 (best shades): 260
+H2-4 (finish): 260
+H2-5 (shape): 260
+H2-6 (French tip/designs): 260
+H2-7 (salon language): 180
+H2-8 (staining/longevity): 180
+H2-9 (quiet luxury): 190
+
+SECTION 11 — INTERNAL LINKS
+all_internal_links:
+1. url_or_slug: /blog/nails-by-color/green-nails
+   title: Green Nails: Every Shade From Pistachio to Forest
+   anchor_text: the full green nails shade guide, from pistachio to forest
+   placement_note: H2-2 (pistachio vs sage vs matcha) — natural handoff for readers who want the complete green spectrum
+   link_type: cross-site
+
+2. url_or_slug: /blog/jelly-nails/jelly-french-tip-nails
+   title: Jelly French Tip Nails: 30+ Ideas That Make the Classic Manicure Look Brand New
+   anchor_text: how a sheer jelly French tip changes a classic manicure
+   placement_note: H2-6 (French tips/designs) — pistachio jelly is a named design variant in research, direct technique overlap
+   link_type: cross-site
+
+3. url_or_slug: /blog/aesthetic-nails/quiet-luxury-nails
+   title: Quiet Luxury Nails: The Expensive-Looking Almond Manicure
+   anchor_text: the quiet luxury nail guide for the full expensive-looking almond breakdown
+   placement_note: H2-9 (quiet luxury close) — direct aesthetic tie already established in competitor research (Prada/Miu Miu)
+   link_type: cross-site
+
+(cluster_links: N/A — solo mode, no cluster_context.json)
+Total: 3 internal links — within 4-6 cap, no forced padding.
+
+SECTION 12 — VOICE AND TONE
+recommended_voice: Aspirational trend guide with a practical edge
+tone_characteristics: Confident verdicts (not "it depends"), visually descriptive language, culturally fluent (references Dubai chocolate/quiet luxury without over-explaining), warm and encouraging, zero hedging on styling advice
+language_style: Direct address ("you"), short punchy sentences mixed with one longer descriptive sentence per section, sensory/food-adjacent imagery (creamy, gelato, milky) used sparingly not constantly
+audience_match: This reader wants permission and specificity, not caution — she's already decided she likes the trend, she needs the guide to close the gap between liking it and booking it
+
+SECTION 13 — EXTERNAL LINKS
+links:
+1. url: https://www.whowhatwear.com/beauty/nails/pistachio-nail-polish-trend
+   context: Citing the 171% search growth stat and trend credibility in intro
+   anchor_suggestion: search interest in pistachio green has climbed sharply this year
+2. url: https://www.byrdie.com (Pistachio Milk Nails piece — via aol.com syndication, verify live Byrdie URL before publish)
+   context: E-E-A-T support for design variety claims in H2-6
+   anchor_suggestion: editorial nail coverage of pistachio design variations
+
+SECTION 14 — EXECUTION PLAN
+
+BLOCK 1 — KEYWORD EXECUTION
+primary_keyword: pistachio manicure
+top_3_density_baseline: 5
+total_mention_target: 8 (5 + 3)
+first_100_words_plan:
+  mention_1: sentence 2 of intro — establishing the trend within the cultural hook
+  mention_2: sentence 5-6 of intro — transitioning into the promise of practical guidance
+first_half_target: 5 mentions — first 1100 words
+second_half_target: 3 mentions — second 1100 words
+strong_tag_rule: every mention wrapped in <strong> — scan after each paragraph
+keywords_to_avoid_active: N/A — solo mode, no cluster reserved list
+
+BLOCK 2 — WORD BUDGET
+total_target: 2200 words (±50)
+introduction: 220
+conclusion: 180
+h2_budgets:
+- Is Pistachio Green Actually Flattering on Every Skin Tone?: 280 (high complexity — needs real undertone logic, not assertion)
+- Pistachio vs Sage vs Matcha: Which Green Are You Actually Seeing?: 230 (medium)
+- The Best Pistachio Nail Shades to Try Right Now: 260 (medium — image-led)
+- Matte, Glossy, Chrome, or Jelly: Which Finish Is Yours?: 260 (medium)
+- Pistachio Nails by Shape: Almond, Square, Oval, Squoval: 260 (medium)
+- Pistachio French Tips and Design Ideas Worth Saving: 260 (medium — image-led)
+- What to Say at the Salon (So You Get the Right Green): 180 (low — practical/short)
+- Will Pistachio Nail Polish Stain or Fade Fast?: 180 (low — factual)
+- How to Make Pistachio Nails Feel Quiet Luxury, Not Basic: 190 (medium — closing payoff)
+tracking_rule: Check running total after every 2 H2s. Cut before moving on if over. Never compensate later.
+
+BLOCK 3 — IMAGE PLAN
+total_images: 9
+hero_image: frontmatter only, never in body
+body_images: 8
+assignments:
+1. place_after: H2-1 (skin tone) — section_context: pistachio on a range of skin tones side by side, plain manicure
+2. place_after: H2-3 (best shades) — section_context: 2-3 shade variations (chrome pistachio, milky pistachio, deep pistachio) grid-style
+3. place_after: H2-4 (finish) — section_context: matte vs glossy pistachio side by side comparison
+4. place_after: H2-4 continued or H2-5 start — section_context: chrome pistachio close-up, high shine
+5. place_after: H2-5 (shape) — section_context: pistachio on almond nails
+6. place_after: H2-5 continued — section_context: pistachio on short squoval/square nails
+7. place_after: H2-6 (French tip/designs) — section_context: pistachio French tip, micro line
+8. place_after: H2-6 continued — section_context: pistachio jelly or negative space design
+image_type_rule: All body images = inspirational nail design photography. No infographics, no charts.
+path_rule: /images/blog/pistachio-nails/filename.webp (no topic_slug — standalone post)
+
+BLOCK 4 — OPENING TECHNIQUE ASSIGNMENTS
+- Introduction: Technique 2 — Trend/Cultural Hook
+- H2-1 (skin tone): Technique 1 — The Claim
+- H2-2 (pistachio vs sage/matcha): Technique 4 — The Reframe
+- H2-3 (best shades): Technique 3 — Direct Address
+- H2-4 (finish): Technique 1 — The Claim
+- H2-5 (shape): Technique 4 — The Reframe
+- H2-6 (French tip/designs): Technique 3 — Direct Address
+- H2-7 (salon language): Technique 1 — The Claim
+- H2-8 (staining/longevity): Technique 4 — The Reframe
+- Conclusion: Technique 1 — The Claim
+banned_opener_rule: Check every opener against banned_opening_approaches before writing the second sentence.
+
+BLOCK 5 — LINK PLACEMENTS
+1. anchor_text: the full green nails shade guide, from pistachio to forest
+   full_url: /blog/nails-by-color/green-nails
+   place_in_section: H2-2
+   placement_context: after differentiating pistachio from sage/matcha, hand off readers wanting the broader green spectrum
+   link_type: cross-site
+2. anchor_text: how a sheer jelly French tip changes a classic manicure
+   full_url: /blog/jelly-nails/jelly-french-tip-nails
+   place_in_section: H2-6
+   placement_context: when covering jelly-finish pistachio French tip variation
+   link_type: cross-site
+3. anchor_text: the quiet luxury nail guide for the full expensive-looking almond breakdown
+   full_url: /blog/aesthetic-nails/quiet-luxury-nails
+   place_in_section: H2-9
+   placement_context: closing section tying pistachio to the quiet luxury aesthetic
+
+BLOCK 6 — AEO/GEO PLAN
+aeo_assignments:
+1. aeo_term: "Does pistachio nail polish suit every skin tone?"
+   assigned_to_section: H2-1
+   execution: Direct 2-3 sentence answer immediately after heading — real undertone logic, not blanket "yes"
+2. aeo_term: "What's the difference between pistachio and sage green nails?"
+   assigned_to_section: H2-2
+   execution: Direct definitional contrast in first 2-3 sentences after heading
+3. aeo_term: "How do I ask for pistachio nails at the salon?"
+   assigned_to_section: H2-7
+   execution: Direct answer with specific request language in first 2-3 sentences
+4. aeo_term: "Does pale green nail polish stain your natural nails?"
+   assigned_to_section: H2-8
+   execution: Direct factual answer with base-coat prevention tip immediately after heading
+
+geo_entity_statements:
+1. entity: Pistachio manicure (definition)
+   assigned_to_section: H2-1 or intro
+   execution: Clear declarative definition — a creamy, milky-toned pastel green nail color sitting between sage and mint, distinct from brighter or neon greens
+2. entity: Quiet luxury nail aesthetic
+   assigned_to_section: H2-9
+   execution: Clear declarative definition connecting restraint, finish, and tone — no hedging
+
+BLOCK 7 — ACTIVE CONSTRAINTS
+em_dash_banned: yes — replace with comma, new sentence, parentheses, or restructure
+banned_vocab_watch: "elevate," "unleash," "in today's world," "game-changer," "must-have," "stunning," "boasts"
+british_english_active: colour, favourite, personalise — every instance
+keyword_density_reminder: check running total after every 2 H2s against target of 8, denser in first half
+image_path_reminder: /images/blog/pistachio-nails/filename.webp — no topic_slug segment
+internal_link_url_reminder: full paths only, never bare slugs
+hero_image_reminder: frontmatter only, never in body
+strong_tag_reminder: every primary keyword mention wrapped in <strong>, scan after every paragraph
+==================================================
