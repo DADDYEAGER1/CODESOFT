@@ -1,0 +1,179 @@
+==================================================
+INPUT FILE — Blog Gen Agent (UPDATED)
+==================================================
+
+SECTION 1 — FILE AUTHORITY
+This file is the single source of truth for Blog Gen Agent. All POST_CONSTANTS values are hardcoded. Do not ask, adjust, or override.
+
+SECTION 2 — POST_CONSTANTS
+slug: nail-art-ideas
+canonical: https://mirelleinspo.com/blog/nail-art-ideas
+post_type: standalone
+intent: inspirational
+word_count: 2800 [UPDATED from 2200]
+image_count: 21 [OVERRIDE — 1 hero + 20 body, per explicit instruction]
+show_inspo_gallery_link: false [UPDATED — was true, now off per explicit instruction]
+template: center
+hero_dimensions: 1200x630
+category: Nail Art
+publish_date: 2026-08-08
+author: jyoti-mirelle
+
+EDITORIAL_FRAMING_NOTE (read before writing):
+Evergreen editorial curation. No year in title/H1/H2/body. No "trending now" or "this year" framing.
+
+MANDATORY EDITORIAL LINE:
+"we curate so you don't have to" (or natural variant) must appear once, ideally in the intro.
+
+FORMAT_STRUCTURE_NOTE (new — critical, overrides default body flow):
+This post is a numbered listicle, not flowing prose under each H2. Structure per H2 group is:
+
+  H2 (technique family heading)
+  → intro line or two for the group (optional, short)
+  → then repeating per-item units, each as:
+      1. [Design Name] — bolded or H3-level, short punchy name for the look
+      [Image]
+      [2-4 sentences on this specific design: what it is, why it works, who it suits, or how to ask for it]
+  → repeat for every design in that H2 group
+  → move to next H2
+
+Every one of the 20 body images gets: a name, then the image, then its own short write-up. This replaces the earlier "short framing per design" instruction — now each design gets a proper standalone block, not a caption-length line, since word count has grown to 2800 to accommodate this. Do not group multiple images under one shared paragraph. One name, one image, one write-up, per design, no exceptions.
+
+SECTION 3 — CLUSTER SNAPSHOT
+N/A — solo mode.
+
+SECTION 4 — SERP ANALYSIS
+(unchanged from prior version — competitor_gaps, missing_semantic_territory, our_strategic_approach, word count/density baselines all still apply as previously researched)
+
+SECTION 5 — AUDIENCE INTELLIGENCE
+(unchanged — who_they_are, pain points, user language, content signals all still apply)
+
+SECTION 6 — SEMANTIC KEYWORD DATA
+(unchanged — primary_keyword, variations, LSI, AEO terms all still apply)
+
+SECTION 7 — VOICE AND AI QUERIES
+(unchanged — same 12 conversational queries apply)
+
+SECTION 8 — HOOK AND CTR
+selected_trigger: Trigger 3 — Specificity/Numbers
+title: 20 Nail Art Ideas We're Obsessed With Right Now
+title_char_count: 46
+meta_description: Mirellé Inspo curated 20 nail art designs so you don't have to scroll for hours. Every style, every vibe, one edit worth saving.
+meta_char_count: 128
+intro_hook_brief: Name the scroll-overwhelm directly, then position this as a curated, numbered edit — worth flagging in the intro copy that this is a specific, countable list (20 designs) since the listicle format is now the structural backbone, not just a stylistic choice.
+first_h2_hook_direction: Unchanged — confident, direct-address opener rather than generic heading.
+
+SECTION 9 — SEARCH JOURNEY
+(unchanged — arrival state, journey arc, must_avoid, promise, exit state all still apply)
+
+SECTION 10 — CONTENT STRUCTURE
+h1: 20 Nail Art Ideas We're Obsessed With Right Now
+h2_structure (each now a listicle group of 2-3 named, numbered designs):
+1. Minimalist and Clean-Girl Nail Art Worth Saving (3 designs)
+2. French Tip Nail Art, Reimagined (3 designs)
+3. Chrome and Metallic Nail Art That Still Feels Wearable (3 designs)
+4. Abstract and Artistic Nail Art for the Bold (3 designs)
+5. Floral and Nature-Inspired Nail Art (2 designs)
+6. Negative Space and Graphic Nail Art (2 designs)
+7. Print and Pattern Nail Art (Animal, Marble, and Beyond) (2 designs)
+8. Dimensional and Embellished Nail Art (1 design)
+9. The Nail Art Idea You Haven't Thought to Search For (1 design)
+(total: 20 named designs, matching 20 body images exactly — 1:1, no orphaned images, no design without an image)
+
+word_budget:
+introduction: 260 [+20]
+conclusion: 200 [+10]
+H2-1 (minimalist, 3 designs): 330 [~110 words/design + short group intro]
+H2-2 (French tip, 3 designs): 330
+H2-3 (chrome/metallic, 3 designs): 340
+H2-4 (abstract, 3 designs): 340
+H2-5 (floral/nature, 2 designs): 240
+H2-6 (negative space, 2 designs): 240
+H2-7 (print/pattern, 2 designs): 250
+H2-8 (dimensional, 1 design): 140
+H2-9 (closing/unexpected, 1 design): 130
+Total: 2800 (260+200+330+330+340+340+240+240+250+140+130 = 2800 ✓)
+
+Per-design budget note: ~100-120 words each (name + 2-4 sentence write-up), enough room for real substance — what it is, why it works, who it suits, or how to ask for it at the salon — not caption-length filler. This is the direct effect of the word count increase to 2800.
+
+SECTION 11 — INTERNAL LINKS
+(unchanged — same 4 cross-site links, same placements: minimalist-nail-ideas in H2-1, french-tip-nail-ideas in H2-2, chrome-nails in H2-3, green-nails in H2-5 or H2-7)
+
+SECTION 12 — VOICE AND TONE
+(unchanged — confident editorial curator, decisive, brief per design, no hedging)
+Additional note: with each design now getting a full 100-120 word write-up instead of a caption, resist the urge to pad with generic filler ("this look is so pretty and versatile") — use the space for one concrete, specific detail per design (a technique note, a styling pairing, a "who this suits" call) that a caption-length version couldn't fit.
+
+SECTION 13 — EXTERNAL LINKS
+None required — unchanged.
+
+SECTION 14 — EXECUTION PLAN
+
+BLOCK 1 — KEYWORD EXECUTION
+primary_keyword: nail art ideas
+top_3_density_baseline: 6
+total_mention_target: 9
+first_100_words_plan: unchanged (mentions 1-2 in intro)
+first_half_target: 5 mentions — first 1400 words [recalculated for 2800 total]
+second_half_target: 4 mentions — second 1400 words
+strong_tag_rule: unchanged
+
+BLOCK 2 — WORD BUDGET
+total_target: 2800 words (±50) [UPDATED from 2200]
+(full breakdown as shown in Section 10 above)
+tracking_rule: Check running total after every 2 H2 groups. With 20 discrete design write-ups now in play, also verify no single design write-up balloons past ~150 words at the expense of others later in the list — keep the per-design length consistent across all 20, first design to last.
+
+BLOCK 3 — IMAGE PLAN
+total_images: 21 (1 hero + 20 body) — unchanged
+hero_image: frontmatter only, never in body
+body_images: 20, now explicitly mapped 1:1 to the 20 named designs below
+
+assignments (name + image + placement, listicle order):
+1. "The Single Line" — H2-1, design 1 — minimalist single-line design
+2. "Bare Canvas" — H2-1, design 2 — negative space minimalist look
+3. "Tone on Tone" — H2-1, design 3 — monochromatic minimalist, subtle finish variation
+4. "The Color-Dipped Tip" — H2-2, design 1 — classic French reimagined with color tip
+5. "Barely-There French" — H2-2, design 2 — micro French line variation
+6. "Graphic French" — H2-2, design 3 — colorful/graphic French tip twist
+7. "Champagne Chrome" — H2-3, design 1 — soft chrome design
+8. "Mirror Moment" — H2-3, design 2 — bold mirror chrome statement look
+9. "The Chrome Accent" — H2-3, design 3 — chrome accent nail on minimal set
+10. "Brushstroke" — H2-4, design 1 — bold abstract brushstroke design
+11. "Color Block" — H2-4, design 2 — color-blocked abstract look
+12. "Off-Center" — H2-4, design 3 — asymmetrical artistic design
+13. "Hand-Painted Bloom" — H2-5, design 1 — hand-painted floral design
+14. "Botanical Line Work" — H2-5, design 2 — nature-inspired linework motif
+15. "The Cutout" — H2-6, design 1 — negative space graphic design
+16. "Clean Geometry" — H2-6, design 2 — geometric line-based design
+17. "Marble Effect" — H2-7, design 1 — marble effect design
+18. "Wild Print" — H2-7, design 2 — animal print design
+19. "The Charm Nail" — H2-8, design 1 — 3D embellished/charm-topped design
+20. "The One Nobody's Searching For Yet" — H2-9, design 1 — standout/unexpected closing design
+
+(Design names above are working titles for Blog Gen Agent's reference — can be refined during writing as long as each stays short, punchy, and listicle-appropriate.)
+
+image_type_rule: All body images = inspirational nail design photography. No infographics, no charts, no step-by-step diagrams.
+path_rule: /images/blog/nail-art-ideas/filename.webp
+
+BLOCK 4 — OPENING TECHNIQUE ASSIGNMENTS
+(unchanged — same 9 H2 + intro/conclusion technique assignments as before; techniques apply to the group intro line, not to each individual numbered design, since 20 individual opener-technique assignments would be excessive)
+
+BLOCK 5 — LINK PLACEMENTS
+(unchanged — same 4 links, same placements)
+
+BLOCK 6 — AEO/GEO PLAN
+(unchanged — same AEO assignments and GEO entity statements, same placements)
+
+BLOCK 7 — ACTIVE CONSTRAINTS
+em_dash_banned: yes
+banned_vocab_watch: unchanged, still includes "trending this year" given no-year-lock
+british_english_active: yes
+keyword_density_reminder: check after every 2 H2 groups against target of 9
+image_path_reminder: /images/blog/nail-art-ideas/filename.webp
+internal_link_url_reminder: full paths only
+hero_image_reminder: frontmatter only, never in body
+strong_tag_reminder: every primary keyword mention wrapped in <strong>
+year_lock_reminder: unchanged, still active
+mandatory_line_reminder: unchanged, still required
+gallery_link_reminder: showInspoGalleryLink is FALSE for this post — do not render the "Explore nail art ideas inspiration gallery" link anywhere in frontmatter or body, despite this being an inspirational-intent post. This is an explicit override of the normal true-by-default behavior for gallery-worthy browse content.
+listicle_structure_reminder: every one of the 20 body images must follow name → image → write-up, in that order, with no exceptions. Do not revert to flowing prose with images dropped in as illustration. This is the core structural instruction for this post and the main thing to verify before delivery.
+==================================================
