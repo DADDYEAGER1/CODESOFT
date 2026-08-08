@@ -1,0 +1,237 @@
+# MIRELLÉ INSPO — SYSTEM README
+## Read this alongside MAIN_PROMPT.md and ALL_PLATFORM_LINKS.md before making any update.
+
+---
+
+## WHAT THIS SYSTEM IS
+
+One aggregate content prompt covering **Pinterest, Facebook, Instagram,
+X/Twitter, and YouTube** for Mirellé Inspo (nails/beauty editorial
+brand, https://mirelleinspo.com). Jyotika runs it daily — she has zero
+strategic/marketing/SEO background, so every decision is pre-locked
+into the prompt. She only picks the order of the 4 non-Pinterest
+platforms; nothing else.
+
+**2 files run the whole system:**
+1. `MAIN_PROMPT.md` — the full instruction set, all 5 platforms
+2. `ALL_PLATFORM_LINKS.md` — every link pool, sectioned by platform,
+   with rotation formulas
+
+Both files are self-contained. A fresh agent with no other context
+should be able to run either file correctly on its own.
+
+---
+
+## HOW TO REQUEST AN UPDATE (for Gaurav, next session)
+
+Share both files plus a plain description of what's wrong or what you
+want changed. Point to the specific platform/slot/field if you can —
+"Facebook nail carousel isn't giving prompts" is more useful than
+"Facebook is broken." Screenshots of actual bad output are the fastest
+way to get an accurate fix, same as this session.
+
+If something feels off in real output but you're not sure why, just
+paste the output and ask — don't diagnose it yourself first.
+
+---
+
+## THE DAILY FLOW (how the prompt behaves)
+
+1. Pinterest always runs first, fully automatically. No choice, no
+   asking.
+2. After Pinterest, the remaining 4 platforms (Facebook, Instagram, X,
+   YouTube) are offered as a choice. Jyotika picks one.
+3. That platform runs fully, delivers output.
+4. Remaining platforms are offered again (list shrinks).
+5. Repeats until all 5 are done. No stopping early — all 5 must be
+   completed every day.
+
+**Day 1 anchor for every rotation formula across every platform:
+August 6, 2026.** `day_index = (today − Aug 6, 2026) in days`.
+
+---
+
+## PLATFORM-BY-PLATFORM SUMMARY
+
+### Pinterest (runs first, always)
+- 18 pins/day: 4 evergreen boards (Almond, Work Nails, Older Women,
+  Nail Care Tips) + 1 seasonal board, fixed weekly format table
+- Nail Care Tips uses the 256-link shared rotation (Links File Section
+  1) — same link/topic as Instagram and YouTube that day
+- Seasonal board rotates through full pools now (Links File Section 8),
+  not fixed 3-link lists — only Back to School, Fall, Halloween are
+  built out so far; other seasons will need their pools built when
+  their window is about to open
+- Every pin: Template (Infographic only) + Title + Description +
+  Prompt + Link, each its own copy-paste box
+- Inspiration Infographic overlay numbers = real researched stats
+  ("50+", "44%"), never sequential ("1", "2", "3")
+
+### Facebook
+- 3 posts/day, 8+ hrs apart, via Meta Business Suite
+- Daily pool: Nail image carousel (fixed count, rotates 3/4/5 by
+  weekday) + Website article/link (evergreen 735 or seasonal 183 pool)
+  + Infographic+BGM video (mobile 9:16 image, Gaurav adds music after)
+- Slot order (AM/Midday/PM) rotates across the week, fixed table
+- Nail carousel and Infographic both require **Prompt fields** (one
+  per image) — this was missing originally, fixed this session
+- Schedule: 8:00 AM / 1:00 PM / 8:00 PM
+
+### Instagram
+- 1 post/day, 5-slide informational carousel, 1:1 ratio only
+- Same day_index/link as Pinterest and YouTube (Links File Section 1)
+- Swipe arrow on slides 1-4 only — slide 5 has NO swipe arrow, just
+  the down-arrow "Read full guide" CTA badge (fixed this session,
+  was showing on all 5 slides including the last one)
+- Caption must include the actual article link written out in full,
+  directly after "Read full guide" — no separate "link in bio" line
+  (fixed this session, link was missing from output)
+- No hashtags, ever
+
+### X / Twitter
+- 4 posts/day, 2+ hrs apart, targets nail INDUSTRY professionals (not
+  consumer traffic like other platforms)
+- Only the Infographic slot carries a link — every other slot (Image
+  carousel, Trend Report, Expanded, Roundup, Business/lead-gen) has NO
+  link anywhere, no First Reply field exists in this system at all
+  (major rebuild this session — First Reply was fully removed)
+- Weekly Slot 3 rotation: Trend report (default) / Business (Wed, Sat)
+  / Roundup (Fri)
+- Business posts fold the CTA directly into post text — no separate
+  CTA note field
+- Roundup posts never say "below" or reference an attachment — X has
+  no reply/thread structure in this system anymore, post text stands
+  alone
+
+### YouTube
+- 3 Shorts/day, all Infographic+music, no exceptions (no filmed video,
+  no carousel slot)
+- Same day_index/link as Pinterest and Instagram
+- **Does not count toward YPP/Shorts monetization** — that requires
+  real filmed video, which this system doesn't produce. Channel runs
+  for reach/branding only unless Gaurav revisits this later.
+- 4 fields per Short: Prompt (mobile 9:16, text-heavy) + Title +
+  Description (hashtags embedded) + Pinned Comment (fixed this
+  session — Prompt field was missing originally)
+- No tags field, no thumbnail field
+- Schedule: 8:00 AM / 12:30 PM / 8:00 PM
+
+---
+
+## GLOBAL RULES (apply across all 5 platforms)
+
+- **No em dashes ("—") anywhere in any written content, any platform,
+  any field.** Added this session after being caught in Instagram
+  output — use a period, comma, or rephrase instead.
+- Every field goes in its own separate copy-paste code block — never
+  combined into one paragraph.
+- Genuine research required daily for every platform — never generic
+  AI-sounding content. `site:mirelleinspo.com [slug]` first, open-web
+  fallback if it doesn't index.
+- Never invent a link — always pull from `ALL_PLATFORM_LINKS.md` using
+  that platform's exact rotation formula.
+
+---
+
+## KNOWN OPEN ITEMS — NOT YET RESOLVED
+
+1. **Pinterest seasonal pools beyond Back to School/Fall/Halloween**
+   are not built. If the seasonal activation table triggers
+   Thanksgiving, Christmas, New Year, Valentine's, St. Patrick's,
+   Spring, Mother's Day, or Summer before their link pools are added
+   to Links File Section 8, the prompt is instructed to stop and flag
+   it rather than guess — this will need addressing before each of
+   those windows opens.
+2. **X's Trend Report vs Expanded Pool sub-rotation** is still loosely
+   defined ("whichever pool fits today's research best") rather than a
+   clean deterministic formula. Works, but isn't as precise as
+   Pinterest's `mod` formulas.
+3. **Facebook's seasonal activation window logic** references
+   Pinterest's peak-date table as the reference pattern rather than
+   having its own explicitly re-confirmed dates — functionally fine
+   since they share the same seasonal concept, but worth flagging if
+   Facebook and Pinterest ever need to diverge (e.g. different
+   platforms emphasizing different seasons).
+4. **One known duplicate link** in the Pinterest/Instagram/YouTube
+   shared 256-link rotation (position 87 and 134 are the same URL) —
+   confirmed with Gaurav to leave as-is, not a bug to fix.
+5. **X scheduling tool** (Buffer/Metricool free tier vs X Pro paid) —
+   noted as needing verification at time of use since free-tier
+   availability was unconfirmed as of this build.
+
+---
+
+## FIXES MADE THIS SESSION (chronological, for reference)
+
+1. Merged the full real Pinterest prompt into MAIN_PROMPT.md (was a
+   placeholder reference before, agents couldn't run it standalone)
+2. Removed 2 closer lines from Pinterest's description rotation that
+   falsely claimed "No AI" / "100% Real Nail Art" — images are AI-edited
+   from source photos, so those lines were factually false
+3. Located and locked Back to School's 6 links, expanded Fall (12+3
+   shop) and Halloween (9+2 shop) from fixed 3-link lists to full
+   rotating pools (Links File Section 8)
+4. Fixed Facebook: added missing Image Prompt fields for Nail carousel
+   (count rotates 3/4/5 by weekday) and Infographic+BGM (mobile 9:16)
+5. Fixed Instagram: slide 5 no longer gets a swipe arrow (was showing
+   incorrectly on the last slide); caption now requires the real
+   article link written out, removed contradictory "link in bio" line
+6. Added global "no em dash" rule across all platforms
+7. Rebuilt X entirely: removed First Reply field system-wide, only
+   Infographic slot keeps a link, Roundup posts no longer reference
+   "below," Business posts fold CTA into post text instead of a
+   separate field
+8. Fixed YouTube: added missing Prompt field (mobile 9:16) — was
+   generating Title/Description/Pinned Comment only, no way to
+   actually create the Short's image
+9. Made Pinterest's auto-run truly unconditional — added explicit
+   instruction that no structural critique, question, or discussion
+   may block the first Pinterest output; any concerns get raised AFTER
+   delivering it
+10. Added a same-day restart check: since a new chat session has no
+    memory of an earlier session that day, the prompt now asks once
+    ("have you already posted anything today?") before running
+    Pinterest, so it doesn't blindly re-offer already-completed
+    platforms if Jyotika reopens mid-day
+11. Rebuilt Pinterest's Inspiration Infographic prompt format entirely:
+    title pattern is now [Number] [Adjective] [Topic]
+    [Ideas/Inspo/Designs] [Year] with a variety-count number (25-75
+    range), not a claimed research stat; Prompt field is now
+    structured labeled edit instructions (not prose) requiring
+    explicit hex-coded template color, explicit hex-coded text color
+    with a light/dark contrast rule, a separate nail-surface
+    description, and a mandatory distinct photo backdrop per pin
+    (never reused across pins in the same day's batch). Same
+    hex-coded background/text-color rule added to Facebook's and
+    YouTube's Infographic prompts (text-card format, no nail photo, so
+    only the color-contrast part applies there, not backdrop/nail
+    design).
+12. Rebuilt the Informational Infographic format (Pinterest Nail Care
+    Tips pins, shared by reference with Facebook's Infographic+BGM and
+    YouTube's Shorts) — was producing flat, sparse text-card output
+    (one headline + one short line, lots of empty space, looked like
+    an Instagram carousel slide instead of a real infographic).
+    Corrected to require: multiple labeled content sections (not a
+    single headline), a small relevant icon per section, colored
+    accent-badge labels per section, real content density built from
+    that day's actual research, plus the same explicit hex-coded
+    background/text/accent color rules. Confirmed and approved by
+    Gaurav via test output before being locked into the file.
+13. Merged Facebook's Caption/Hashtags/Link (and Alt text, now
+    dropped entirely) into a single combined "Post block" per post,
+    instead of 3-4 separate copy-paste boxes. Merged X's Infographic
+    slot Post text + Link into one combined block the same way.
+
+---
+
+## FILE LOCATIONS
+
+- `MAIN_PROMPT.md` — the full prompt, ~820 lines
+- `ALL_PLATFORM_LINKS.md` — all link pools, ~1410 lines, 8 sections
+- Master site inventory source (re-fetch if pools need expanding):
+  https://raw.githubusercontent.com/DADDYEAGER1/Mirelle_Inspo/refs/heads/main/Mirell%C3%A9/1%20aug%20content
+
+Always verify any new/derived link list programmatically (count, zero
+unintended duplicates, every link exists in the real site inventory)
+before adding it to the Links File — this has caught real errors every
+single time it's been done in this build.
