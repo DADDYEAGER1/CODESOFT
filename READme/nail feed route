@@ -1,0 +1,533 @@
+# HANDOFF MEMORY — /nail-feed Route (Google Discover initiative)
+
+Site: mirelleinspo.com (Next.js App Router). This picks up from an earlier
+handoff (goal/naming/research history below) and covers everything BUILT
+since then. Read this whole file before touching anything — it corrects
+some naming/decisions from the original handoff and documents real bugs
+found and fixed along the way.
+
+## GOAL (unchanged from original handoff)
+
+Build `/nail-feed` (note: hyphenated — see NAMING below), a route
+purpose-built for Google Discover traffic: trending, opinionated,
+fast-consumption nail posts. `/blog` continues as-is for SEO/evergreen
+content. Most new content production shifts to `/nail-feed` going forward.
+Full original research (Feb 2026 Discover Core Update, hero image specs,
+word count targets, headline guidance, GSC content-gap audit idea, content
+funnel model) is preserved unchanged — see "ORIGINAL RESEARCH" section
+near the bottom of this file. Don't re-derive it from training data.
+
+## NAMING — CORRECTED FROM ORIGINAL HANDOFF
+
+- **Route is `/nail-feed` (hyphenated), NOT `/nailfeed`.** The original
+  handoff locked in `/nailfeed` (no hyphen); the user corrected this
+  explicitly mid-build. All actual code uses `/nail-feed`.
+- **File/folder naming inside the codebase still uses `nailfeed` (no
+  hyphen)** — e.g. `src/lib/nailfeed.ts`, `src/types/nailfeed.ts`,
+  `src/components/NailFeed/`, `src/content/nailfeed/`. Only the URL path
+  and route folder (`src/app/nail-feed/`) are hyphenated. This split is
+  intentional (file/variable names can't contain hyphens cleanly in JS
+  import paths) — don't try to "fix" this inconsistency, it's correct as-is.
+- **URL structure is FLAT**: `/nail-feed/[slug]` — confirmed explicitly by
+  the user. NOT `/nail-feed/[topic]/[slug]`. `topic` is a frontmatter data
+  field only, never a URL segment. This was an open question in the
+  original handoff — it is now RESOLVED, do not reopen it.
+
+## WHAT'S BEEN BUILT — FULL FILE LIST
+
+All files below exist and are current as of this handoff. Verified via
+`diff` immediately before writing this document — no drift between what
+was built and what's described here.
+
+### Core route + data layer
+- `src/types/nailfeed.ts` — `NailFeedPost`, `NailFeedMetadata`,
+  `NailFeedTopicalMap` (trimmed — see TOPICALMAP section), `TLDR`, `FAQ`
+  types. Also imports and re-exposes the 3 widget config types from
+  `nailfeedWidgets.ts` (`reaction?`, `poll?`, `quiz?` fields on
+  `NailFeedPost`).
+- `src/lib/nailfeed.ts` — forked from `blog.ts`, trimmed. Functions:
+  `getAllNailFeedPosts`, `getNailFeedPost`, `getAllNailFeedSlugs`,
+  `getNailFeedPostsByCategory`, `getNailFeedPostsByTopic`,
+  `getRelatedNailFeedPosts`, `getPaginatedNailFeedPosts`,
+  `clearNailFeedCache`. Reads from `src/content/nailfeed/*.md`. H2 auto-ID
+  injection KEPT (powers TableOfContents) — this was a deliberate decision,
+  not an oversight, see DECISIONS LOG.
+- `src/lib/generateNailFeedSchemas.ts` — separate from (not merged into)
+  `src/lib/generateSchemas.ts`, by explicit user decision. Produces
+  `articleSchema` (BlogPosting), `breadcrumbSchema`, `faqSchema` only — no
+  HowTo/Video/ImageGallery/Event schemas, because `NailFeedPost` doesn't
+  carry the fields those need (deliberately cut, see CUT FIELDS). Hero
+  image dims in schema are 1200x675 (16:9), correctly NOT /blog's 1200x630.
+- `src/app/nail-feed/[slug]/page.tsx` — flat single-segment static route.
+  `generateStaticParams`, `generateMetadata`, main page component. Full
+  metadata parity confirmed against /blog's `buildPostMetadata` (verified
+  field-by-field, nothing missing).
+- `src/app/nail-feed/page.tsx` — listing page. Supports `?category=` and
+  `?topic=` filters, plain pagination (no pillar/cluster allocation logic
+  like /blog's `buildPageAllocation` — Nail Feed doesn't need that).
+- `src/app/nail-feed/templates/NailFeedTemplate.tsx` — the ONE template
+  (SplitLeftTemplate explicitly ruled out per original handoff). See PAGE
+  STRUCTURE below for exact render order — this has changed multiple times
+  during the build, the section below is the CURRENT correct order.
+
+### Forked components (padding-fixed / logic-fixed versions of /blog components)
+- `src/components/NailFeed/AboutEEAT.tsx` — forked from
+  `Blog/AboutEEAT.tsx` SOLELY to fix a padding bug: original uses
+  `px-[6px] md:px-3 lg:px-[12px]` (broken raw-px scale), this uses
+  `px-6 md:px-12 lg:px-16` to match the rest of the page. Content otherwise
+  identical.
+- `src/components/NailFeed/AuthorCard.tsx` — same padding fix, forked from
+  `Blog/AuthorCard.tsx` (had the identical `px-[6px] md:px-3 lg:px-[12px]`
+  bug). Content/props otherwise identical.
+- `src/components/NailFeed/ReadMoreSection.tsx` — forked from
+  `Blog/ReadMoreSection.tsx`. Two changes: (1) links rewritten to flat
+  `/nail-feed/${slug}` instead of /blog's topic-nested links, (2) calls
+  `getRelatedNailFeedPosts` instead of `getRelatedPosts`, capped at 6 not
+  12. Padding also normalized to `px-6 md:px-12 lg:px-16` (was
+  `px-6 md:px-8`, missing the `lg:` step).
+
+### Widget system (reaction bar, poll, quiz) — the newest work
+- `src/types/nailfeedWidgets.ts` — all types for the 3 widgets:
+  `ReactionConfig`/`ReactionOption`, `PollConfig`/`PollOption`,
+  `QuizConfig`/`QuizQuestion`/`QuizAnswerOption`/`QuizResult`, plus API
+  payload types (`ReactionSubmitBody`, `PollSubmitBody`, `QuizSubmitBody`,
+  and their `*Counts` response types).
+- `src/lib/nailfeedSession.ts` — first-party anonymous session cookie
+  (`nf_uid`, 1yr expiry, httpOnly). Used for cross-visit dedup on all 3
+  widgets (user explicitly required real dedup, not just in-session).
+- `src/lib/nailfeedAppsScript.ts` — thin fetch client for the Apps Script
+  backend (see BACKEND ARCHITECTURE below). Two functions:
+  `callAppsScriptGet(params)`, `callAppsScriptPost(body)`. Requires env var
+  `NAILFEED_APPS_SCRIPT_URL`.
+- `src/app/api/nailfeed/react/route.ts`,
+  `src/app/api/nailfeed/poll/route.ts`,
+  `src/app/api/nailfeed/quiz/route.ts` — Next.js API routes, all
+  `dynamic = 'force-dynamic'`. Each is a thin proxy: reads/creates the
+  session cookie, forwards GET (read counts) / POST (submit) to the Apps
+  Script URL via `nailfeedAppsScript.ts`, returns its JSON response as-is.
+- `src/components/NailFeed/ReactionBar.tsx` — client component. Has a
+  built-in DEFAULT set of 3 reactions (🔥 Obsessed / 😐 Meh / ❌ Hard pass)
+  used when a post has no `reaction` frontmatter — so this widget ALWAYS
+  renders, unlike poll/quiz which only render if frontmatter is present.
+  Optimistic UI update on click, reconciles with server response.
+- `src/components/NailFeed/PollWidget.tsx` — client component. Only
+  renders if `post.poll` exists in frontmatter (no sensible default for a
+  poll question). Shows live % bars after voting, before that just shows
+  the question + options.
+- `src/components/NailFeed/QuizWidget.tsx` — client component. Only
+  renders if `post.quiz` exists. Multi-question flow, weighted scoring
+  (`computeResult` — verified correct via standalone test, see DECISIONS
+  LOG), ends on a result card with optional image/CTA. Has a "take it
+  again" reset. **Has a `minHeight: '420px'` fix on both the
+  question-view and result-view wrapper divs — see KNOWN OPEN ISSUES,
+  this is a workaround, not a complete fix.**
+
+### Backend (Google Apps Script, NOT a database)
+- `appsscript/NailFeedWidgets.gs` — lives in a separate Google Sheet, NOT
+  part of the Next.js codebase (it's provided as a reference copy in this
+  project's output only). Deployed as a Web App (`doGet`/`doPost` entry
+  points). Handles all 3 widgets via an `action` parameter
+  (`getReactionCounts`, `submitReaction`, `getPollCounts`,
+  `submitPollVote`, `getQuizCounts`, `submitQuizResult`). Uses
+  `LockService.getScriptLock()` to prevent race conditions on concurrent
+  writes. Full setup instructions are in the file's header comment.
+  **This script has ALREADY been deployed by the user** — see DEPLOYMENT
+  STATE below for the live URL and current status.
+
+### Content
+- `src/content/nailfeed/chrome-french-tips-are-back.md` — the one real
+  test post. Has `tldr` (with `tldrFaqs`), `faqItems`, `topicalMap`, AND
+  now `poll` + `quiz` frontmatter (added specifically so there was
+  something to test the widgets against — the post originally had no
+  poll/quiz, which meant those two widgets correctly rendered nothing,
+  which looked like a bug but wasn't). Frontmatter has been validated via
+  a standalone Node parse test (gray-matter) — parses clean, all
+  `topicalMap` fields round-trip, quiz answer weights all map to real
+  result ids (verified, no dangling references).
+- `src/content/nailfeed/README.md` — full content-authoring reference for
+  whoever writes post-generation prompts. Documents every frontmatter
+  field (required/expected/optional), defaults, the author-matching gotcha
+  (see AUTHOR MATCHING below), hero image spec, word count target, and
+  what NOT to carry over from /blog. **This does NOT yet document the 3
+  widget frontmatter fields (`reaction`/`poll`/`quiz`) — written before
+  those existed. NEEDS AN UPDATE, flagged in NEXT STEPS.**
+
+## PAGE STRUCTURE — CURRENT, VERIFIED RENDER ORDER
+
+This has changed multiple times during the build (bugs were found and
+fixed). This is the CURRENT correct order, verified directly against
+`NailFeedTemplate.tsx` source immediately before writing this handoff:
+
+1. ShareButton (floating)
+2. Hero — category, title (H1), byline, date, then 16:9 image
+3. Breadcrumbs (`Home / Nail Feed / {title}`)
+4. TableOfContents (mobile only, built from `<h2>` ids)
+5. WrapUp card (`tldr`) — only if `post.tldr` set
+6. Body, FIRST HALF (split at nearest `<h2>` to content midpoint)
+7. **ReactionBar** — always renders (has a default config)
+8. *(only if there's a second half of content:)*
+   - InlineNewsletter (compact bar)
+   - **PollWidget** — only if `post.poll` set
+   - SocialFollowCTA (all 5 platforms: instagram, pinterest, twitter,
+     facebook, youtube)
+9. Body, SECOND HALF — only rendered if it exists
+10. FAQ section (`faqItems`) — only if present
+11. **QuizWidget** — only if `post.quiz` set
+12. FinalNewsletter (larger, name+email — NOT the same component as #8's
+    InlineNewsletter, this distinction was a bug fix, see DECISIONS LOG)
+13. AuthorCard — only if `author` resolves (see AUTHOR MATCHING)
+14. AboutEEAT
+15. ReadMoreSection (related posts rail)
+
+### How body content splits into first/second half
+Compiled HTML is split at the `<h2>` closest to the midpoint of all `<h2>`
+blocks in the post — NOT an exact 50/50 split, NOT /blog's 33/34/33
+pattern. A post needs **at least 2 `<h2>` headings** for a second half to
+exist at all; with 0-1 headings, everything renders as one block and the
+mid-content newsletter/poll/social section is skipped entirely (nothing to
+break at). This directly affects whether PollWidget can ever show up —
+even with `post.poll` set, it won't render if the post has fewer than 2
+`<h2>`s, because it's nested inside the `{secondHalf && (...)}` block.
+**This is worth flagging to whoever writes posts: always use 2+ `<h2>`
+sections, both for TOC usefulness and so the poll/mid-content block
+actually appears.**
+
+## WIDGET SYSTEM — HOW IT WORKS END TO END
+
+### Architecture decision: Apps Script, NOT a database, NOT direct Sheets API
+
+Two paths were considered. Direct Google Sheets API access via a service
+account was built FIRST, then explicitly abandoned when the user asked
+"why not Apps Script" — Apps Script is simpler (no GCP console, no service
+account JSON key, no `googleapis` npm package needed) and fits how the
+user already works with Sheets elsewhere in this project. **The
+`googleapis` npm package was installed by the user but is no longer
+needed** — dead weight, not harmful, just flagged for cleanup awareness.
+
+The abandoned direct-Sheets-API file (`src/lib/nailfeedSheets.ts`) was
+DELETED — if you see any reference to it anywhere (there shouldn't be,
+verified clean via grep), that's stale.
+
+### Why one row per event, not an incrementing cell
+Google Sheets has no atomic increment. Two simultaneous "+1" writes to the
+same cell can race and lose a vote. Design instead: every reaction/vote/
+quiz-completion is its OWN ROW (append-only), and counts are computed by
+reading + filtering rows on demand. The Apps Script backend ALSO uses
+`LockService` around each write as a second layer of safety (belt and
+suspenders — the row-per-event pattern avoids most races on its own,
+locking prevents the remaining "two people click submit in the exact same
+instant" edge case from creating duplicate dedup-check false negatives).
+
+### Dedup — real, cookie-based, cross-visit
+User explicitly required this (initial version was in-memory/session-only,
+meaning a page refresh let someone vote again — user said this was not
+acceptable). Fix: `nf_uid` cookie (1yr, httpOnly), sent with every widget
+request. Server checks `(postSlug, widgetId, sessionId)` combination
+against existing rows before writing — if a match exists, the write is
+skipped and current counts are returned with `alreadySubmitted: true`.
+**Quiz dedup is intentionally SOFTER than reaction/poll**: retaking a quiz
+is a reasonable thing to want to do, so QuizWidget does NOT block
+re-submission client-side — it just avoids double-counting the exact same
+result from a rapid double-click server-side.
+
+### Sheet schema (3 tabs, exact names matter)
+```
+NailFeed_Reactions:   timestamp | post_slug | reaction | session_id
+NailFeed_PollVotes:   timestamp | post_slug | poll_id | option_id | session_id
+NailFeed_QuizResults: timestamp | post_slug | quiz_id | answers | result_id | session_id
+```
+`answers` in QuizResults is a JSON-stringified array of chosen option ids,
+e.g. `["q1_brunch","q2_soft"]` — stored as a string, not exploded into
+columns, so the schema doesn't need to change if a quiz's question count
+changes.
+
+### Quiz scoring logic
+Each answer option carries `weights: Record<resultId, number>`. On the
+final question, `computeResult()` sums weights across all chosen answers
+per result id, and the highest-scoring result id wins (first result in
+`config.results` is the tiebreak default if scores are equal). This was
+VERIFIED via a standalone Node test with a 2-question/2-result mock —
+clean wins, mixed-answer tiebreaking, and equal-weight ties all resolved
+correctly. The test post's real quiz frontmatter was also validated: all
+weight keys in every question's options correctly map to a real result id
+in the `results` array (checked via script, zero mismatches).
+
+## DEPLOYMENT STATE — WHAT'S ALREADY LIVE
+
+- User has created the Google Sheet with all 3 tabs + header rows.
+- User has pasted `NailFeedWidgets.gs` into the Sheet's Apps Script editor
+  and deployed it as a Web App (Execute as: Me, Who has access: Anyone).
+- **Live Apps Script URL** (already deployed, already working per Google's
+  deploy flow — NOT yet confirmed working end-to-end from the Next.js side):
+  `https://script.google.com/macros/s/AKfycbzKh4cCh0A82lqlXvBKml8OPmMJNa4gO4Ui2nO2rxX9Lq3W7gBepmGc1fvxrbsMTVhiHQ/exec`
+- User was instructed to add this to `.env.local` as
+  `NAILFEED_APPS_SCRIPT_URL=<that url>` and restart the dev server.
+  **Status of that step is unconfirmed at handoff time** — next agent
+  should verify this env var is actually set before assuming the widgets
+  work.
+- I could NOT test the Apps Script URL myself — my web_fetch tool is
+  blocked by `script.google.com`'s robots.txt (`ROBOTS_DISALLOWED` error).
+  This is a tooling limitation on my end, NOT a sign anything is broken —
+  the user's own Next.js server calling it via plain `fetch()` is not
+  subject to that restriction. **No agent has yet confirmed a real,
+  successful round-trip through the deployed Apps Script from the actual
+  Next.js app.** Treat this as unverified until proven otherwise.
+
+## KNOWN OPEN ISSUES
+
+### 1. Quiz layout shift (jitter) — WORKAROUND APPLIED, NOT FULLY SOLVED
+User reported the page "shaking up and down a little, constantly" — after
+investigation (see DECISIONS LOG for the false start), root cause was:
+different quiz questions/the result card have different natural content
+heights, so switching between them via React state causes a real layout
+reflow, nudging content below the quiz widget up/down. This is NOT an
+animation loop — it happens once per click, then stops, which is why it
+was initially hard to diagnose (first theory — SocialFollowCTA's icon
+resize interval — was WRONG, user correctly pushed back on it).
+
+**Current fix**: hardcoded `minHeight: '420px'` on both the question-view
+and result-view wrapper divs in `QuizWidget.tsx`. This works for the
+CURRENT test post's quiz (2 questions, short labels, short result
+descriptions) but is a magic number — a future quiz with more questions,
+longer option labels, or a longer result description could exceed 420px
+and the jitter would return. **User was asked whether to build a more
+robust version (auto-measures actual content, no magic number) and had
+not yet answered when this handoff was written — this is an explicit
+open decision, not a forgotten task.**
+
+### 2. README.md not yet updated for widget frontmatter
+`src/content/nailfeed/README.md` documents `tldr`/`faqItems`/`topicalMap`/
+etc. in full, but was written before `reaction`/`poll`/`quiz` frontmatter
+existed. Whoever writes post-generation prompts next will need those
+fields documented — they exist in `src/types/nailfeedWidgets.ts` with full
+JSDoc-equivalent comments, but that's not the same as the reader-friendly
+README format the rest of the file uses. **Needs an update pass**, ideally
+using the same "field reference table + minimal working example" format
+already established in that file.
+
+### 3. End-to-end widget test not yet performed
+Per DEPLOYMENT STATE above — nobody has clicked through the reaction bar,
+poll, and quiz on a real running dev server and confirmed the Sheet
+actually receives rows and counts come back correctly. This is the
+immediate next step once env setup is confirmed.
+
+## DECISIONS LOG (things that were tried, reconsidered, or corrected — so they aren't re-litigated)
+
+- **`topicalMap` full shape vs. trimmed**: User initially pushed back on
+  trimming `position`/`hierarchyLevel`/`childClusters`/`contentType`/
+  `semanticRelationships`/`contentMetrics` out of `NailFeedTopicalMap`,
+  asking "are they helpful?" Investigation showed NONE of these 6 fields
+  are read by ANY application code, even in /blog (verified via grep
+  across `blog.ts`, `generateSchemas.ts`, the route file) — they're inert
+  frontmatter with no current consumer, not blog-only logic being
+  actively used. User confirmed no external tool/pipeline reads them
+  either. Final decision: TRIMMED. `NailFeedTopicalMap` only has
+  `parentPillar`, `relatedClusters`, `primaryKeyword`, `secondaryKeywords`,
+  `topicalBoundary`. Don't re-add the other 6 without a real, named reason.
+- **Inspo gallery link injection**: Explicitly cut per user instruction
+  ("remove that logic and also remove show gallery link logic... cut them
+  out but ask me before confirming"). `humanizeTopic()` also cut (existed
+  solely to feed gallery link text). Confirmed cut, not an oversight.
+- **`max-image-preview:large` in layout.tsx**: Original handoff claimed
+  this tag was "confirmed absent" from `src/app/layout.tsx` and needed
+  adding. This was WRONG — verified the actual file already has
+  `googleBot: { 'max-image-preview': 'large', ... }` correctly set, and
+  confirmed via web search that Next.js's `googleBot`-nested metadata
+  field IS the correct/standard way to emit this directive (no separate
+  Discover-specific tag exists). **layout.tsx was NOT edited** — an
+  initial edit attempt was made and then explicitly reverted after this
+  was discovered. If you see any suggestion elsewhere that this tag is
+  missing, that's the stale/incorrect claim from the original handoff —
+  ignore it.
+- **AuthorCard silently not rendering — root cause found and fixed**: User
+  reported no author card was showing at the end of posts. Root cause:
+  `NailFeedTemplate.tsx` was calling `getAuthor(post.author)` from
+  `@/lib/authors`, which matches by SLUG (`'jyoti-mirelle'`) — but
+  frontmatter `author` fields hold full names (`"Jyotika Verma"`), so it
+  always returned null/undefined and the card silently didn't render (no
+  error). Fixed by switching to `resolveAuthor(post.author)` from
+  `@/data/authors`, which does loose name-matching and is what
+  `generateNailFeedSchemas.ts` was already correctly using. **This fix is
+  live in the current `NailFeedTemplate.tsx`.**
+- **AuthorCard/AboutEEAT padding bug**: Both `Blog/AuthorCard.tsx` and
+  `Blog/AboutEEAT.tsx` (the original, un-forked /blog versions) use
+  `px-[6px] md:px-3 lg:px-[12px]` — raw pixel values, a much tighter scale
+  than every other section's `px-6 md:px-12 lg:px-16`, almost certainly a
+  typo in the original /blog code (mixing up Tailwind's numeric spacing
+  scale with literal pixels). Both were forked into `NailFeed/` versions
+  with padding corrected — NOT edited in place, since editing the
+  original `Blog/` components would affect `/blog` too, which was out of
+  scope.
+- **End-of-article newsletter was wrong component**: Template was
+  initially using `InlineNewsletter` (compact bar) at BOTH the
+  mid-content position AND the end position. This didn't match
+  `CenterTemplate.tsx`'s convention, which uses `InlineNewsletter`
+  mid-content and reserves the larger `FinalNewsletter` (name+email form)
+  for the actual end-of-article slot. Fixed — end position now correctly
+  uses `FinalNewsletter`.
+- **SocialFollowCTA was missing entirely, then added back**: Originally
+  cut from the default Nail Feed flow per the ORIGINAL handoff's decision
+  ("unnecessary weight"). User later explicitly asked to add it back with
+  all 5 platforms — this REVERSES that original cut. It's now wired in at
+  the mid-content position (see PAGE STRUCTURE above). Don't re-remove it
+  citing the original handoff — that decision was superseded.
+- **50%-of-content newsletter was missing entirely**: Original template
+  only had ONE newsletter (at the end). User pointed out they expected one
+  at ~50% of content too, matching how `CenterTemplate.tsx` breaks content
+  into thirds with newsletters between. Nail Feed doesn't do exact
+  thirds (see PAGE STRUCTURE — it's a midpoint `<h2>` split, not 33/34/33),
+  but the mid-content newsletter placement was added to address this.
+- **First jitter diagnosis was WRONG, corrected by user pushback**: Before
+  correctly identifying the quiz layout-shift issue (see KNOWN OPEN ISSUES
+  #1), the first theory was that `SocialFollowCTA`'s icon-rotation
+  `setInterval` (resizes the active icon every 2.5s) was the cause. User
+  correctly said "I don't see any animation though" — this was taken
+  seriously rather than re-asserted, follow-up questions narrowed it to
+  "only happens when interacting with the quiz," which led to the correct
+  diagnosis. **Do not resurrect the SocialFollowCTA theory** — it was
+  investigated and ruled out by the user's direct observation.
+- **Quiz endgame is per-post, not fixed**: User did not want a single
+  hardcoded quiz "personality" format. `QuizConfig`/`QuizResult` types
+  support both a recommendation-style endgame (result = a specific
+  look/product, with optional CTA link) and a diagnostic-style endgame
+  (result = yes/no-ish verdict) from the SAME schema — the difference is
+  authored per-post in frontmatter (`results` array content), not in code.
+  Don't build a second quiz component type for "diagnostic vs.
+  recommendation" — one component handles both by design.
+
+## AUTHOR MATCHING — IMPORTANT, EASY TO GET WRONG AGAIN
+
+`resolveAuthor()` in `src/data/authors.ts` does CASE-INSENSITIVE SUBSTRING
+matching, not exact matching:
+- Contains `"jyoti"` or `"jyotika"` → Jyotika Verma
+- Contains `"ri"` or `"gaurav"` → Gaurav Verma (note: `"ri"` as a bare
+  substring is broad — any future author name containing "ri" would
+  misattribute to Gaurav)
+- Anything else → resolves to nothing, AuthorCard silently doesn't render
+
+Always use the exact strings `"Jyotika Verma"` or `"Gaurav Verma"` in
+frontmatter. This is documented in the README but repeating it here since
+it already caused one real, silent bug in this build.
+
+## CUT FIELDS — DO NOT ADD BACK WITHOUT A NAMED REASON
+
+These exist on `/blog`'s `BlogPost`/`BlogMetadata` but were deliberately
+excluded from `NailFeedPost`/`NailFeedMetadata`:
+`showInspoGalleryLink`, full `topicalMap` (see DECISIONS LOG — trimmed
+version kept), `template` (Nail Feed has exactly one template, no
+selector needed), `tutorialMetadata`, `videoMetadata`, `eventData`,
+`carouselImages`, `products`, `heroImages` (plural). Corresponding cut
+components: `DownloadButton`, `AffiliateBanner`, `ImageCarousel`,
+`ProductGrid`, `ProductCard`, `Lightbox`. None of these are wired into
+`NailFeedTemplate.tsx`. If a future request seems to need one of these
+back, that's a real scope change — flag it explicitly rather than quietly
+re-adding.
+
+## IMMEDIATE NEXT STEPS (in likely priority order)
+
+1. Confirm `NAILFEED_APPS_SCRIPT_URL` is actually set in the user's
+   `.env.local` and their dev server was restarted after adding it.
+2. Do a real end-to-end test: load `/nail-feed/chrome-french-tips-are-back`,
+   click through reaction/poll/quiz, confirm rows actually appear in the
+   Google Sheet and counts come back correctly on refresh (and that
+   dedup correctly blocks a second reaction/poll vote from the same
+   browser, per the cookie).
+3. Resolve the open question on KNOWN OPEN ISSUES #1 (quiz jitter) — does
+   the user want the more robust auto-sizing fix, or is the 420px
+   workaround acceptable long-term?
+4. Update `src/content/nailfeed/README.md` to document the 3 widget
+   frontmatter fields (`reaction`, `poll`, `quiz`) — currently undocumented
+   there, only exists in the TypeScript types.
+5. Consider whether `googleapis` npm package should be uninstalled (dead
+   weight from the abandoned direct-Sheets-API path).
+
+## USER STYLE / WORKING PREFERENCES (unchanged from original handoff, still applies)
+
+- Precise, no-filler answers. Doesn't want recaps of what was just done.
+- Wants step-by-step confirmation before moving forward on ambiguous
+  decisions — but also explicitly says "go easy, don't overwhelm me" when
+  a task is procedural/sequential (e.g. deployment steps) — for that kind
+  of task, give ONE step at a time, wait for confirmation, don't dump the
+  whole sequence at once.
+- Takes correction seriously and expects the agent to actually
+  investigate rather than defend a prior theory — see the jitter
+  misdiagnosis in DECISIONS LOG for how that should go: when the user
+  says "I don't see that," treat it as a real signal and re-investigate,
+  don't re-assert.
+- Cares about claims being research-backed with real, current sources —
+  pushed back hard on this for the original Discover research, and it
+  applies equally to technical claims (e.g. the layout.tsx correction
+  above came from actually re-reading the file + verifying via search,
+  not assuming the original handoff was right).
+- Direct/terse texting style; match it, don't over-explain.
+- Wants to review/confirm before big structural changes, but has also
+  shown willingness to say "yes" to batches of confirmed small decisions
+  at once (e.g. the padding normalization pass) — doesn't always need
+  one-at-a-time treatment, use judgment based on how procedural vs.
+  judgment-based the decision is.
+
+---
+
+## ORIGINAL RESEARCH (unchanged, carried over from the first handoff)
+
+### Feb 2026 Google Discover Core Update (first-ever Discover-only core update)
+- 3 levers: (1) local relevance by country, (2) reduced clickbait/sensationalism,
+  (3) more in-depth/original/timely content from sites with topic-level
+  expertise (not domain-level).
+- Google deployed an ML classifier comparing headline promise vs. actual
+  content delivery — headline-engineering-without-substance is actively
+  suppressed, not rewarded.
+- Content clusters (pillar + spokes) are a structural requirement for
+  Discover now, not just an SEO nicety.
+
+### Technical eligibility (hard gates, from Google's own docs)
+- Hero image: ≥1200px wide, 16:9 aspect ratio, >300,000 total pixels.
+  Nail Feed uses 1200x675 — CORRECT, do not change to /blog's 1200x630.
+- `max-image-preview:large` required — CONFIRMED ALREADY PRESENT in
+  layout.tsx (see DECISIONS LOG — this corrects the original handoff's
+  claim that it was absent).
+- Only the hero image needs the size spec — body images are unconstrained.
+
+### Content behavior
+- Discover traffic comes in short bursts: ~24-72hrs typical, up to 7-14
+  days for content reinforced by a strong topic cluster.
+- No official Discover CTR benchmark exists — track via Search Console's
+  Discover tab, don't quote invented numbers.
+- Lifestyle/beauty is an explicitly named durable Discover category.
+- Ranking is NOT keyword-first — matches predicted interest/behavior
+  profiles (entities/interest clusters, not keywords — John Shehata/
+  NewzDash is the most-cited practitioner source on this).
+- Early engagement (click → stay/scroll) creates a feedback loop; bad
+  early engagement kills reach fast. **This is the actual justification
+  for the widget system built in this handoff** — reaction/poll/quiz
+  exist to increase early on-page engagement signal, not as generic
+  "fun features."
+- Optimizing for Discover does not hurt Search — measured separately in
+  GSC, and Discover best practices overlap with SEO best practices anyway.
+
+### Headline guidance
+- Negative-angle-plus-solution and "trending now" titles are fine ONLY if
+  the post delivers on the promise — Google's classifier actively
+  suppresses overpromising, this isn't just a style guideline.
+- ~60-65 characters is roughly where Discover truncates titles.
+
+### Word count / image count
+- Target: 900-1300 words (not /blog's 2200-3500).
+- Body images: 2-5, light — scale toward the higher end for roundups,
+  fewer for opinion/Q&A pieces.
+
+### GSC content-gap audit (flagged as a process to formalize, not yet built)
+- Standing monthly input: pull GSC queries with impressions where the
+  ranking page is only adjacent/related, not a direct match — that gap
+  list becomes new Nail Feed topics. **Still not built** — this is
+  unrelated to the widget work in this handoff, remains open from the
+  original handoff.
+
+### Content funnel model (unchanged)
+```
+LAYER 1 — existing /blog topic pillars
+LAYER 2 — Nail Feed spokes: fast, timely posts tied to a real moment,
+          link back to their /blog topic pillar via topicalMap.parentPillar
+LAYER 3 — refresh loop: best-performing posts get periodically refreshed
+          to re-enter Discover rotation
+```
