@@ -1,0 +1,357 @@
+# Nail Feed Prompt System — Read Me
+
+Covers two files:
+- **Nail Feed Input Gen Agent** (`nailfeed_input_file_gen.json`) — research agent
+- **Nail Feed Post Gen Agent** (`nailfeed_post_gen_prompt.json`) — writing agent
+
+They are a strict pipeline: Input Gen researches and outputs a data file. Post Gen
+reads that file and writes the post. Post Gen does zero research of its own — it
+only executes what Input Gen already decided. Same one-way handoff pattern as
+your existing blog system.
+
+This doc has two purposes:
+1. Explain what every part of both prompts actually does, so nothing is a black box.
+2. Give you a fill-in template (bottom of this file) to hand back when you want
+   something changed — fill it in, send it, and it becomes a precise change request
+   instead of a vague "make it better."
+
+---
+
+## Part 1 — How the two prompts relate
+
+```
+YOU → Input Gen Agent → input file (JSON-shaped data, ~1000-1500 words)
+                              ↓
+                        Post Gen Agent → .md post (frontmatter + body)
+```
+
+Input Gen never writes prose. Post Gen never researches. If something is wrong
+with the *content* of a post (wrong facts, wrong angle, wrong entities) — that's
+an Input Gen problem. If something is wrong with the *writing* (voice, structure,
+banned words slipping through, wrong H2 count) — that's a Post Gen problem. This
+matters for the change-request template later: knowing which file owns the
+problem makes the fix faster and more precise.
+
+---
+
+## Part 2 — Foundational rule both prompts share
+
+**`discover_mechanism_lock`** appears in both files, worded almost identically:
+
+> Google Discover does not rank on keyword match. It matches content to a
+> reader's existing interest/entity graph, gated on click-through (title + hero
+> image — nothing else is visible before the tap) and dwell time (does the
+> reader actually stay and read).
+
+Every other rule in both files exists downstream of this one sentence. If you
+ever want to change something and it feels like it's fighting this principle,
+that's a sign the change needs more thought, not that the principle is wrong.
+
+---
+
+## Part 3 — Input Gen Agent, phase by phase
+
+The agent runs these in order. Each phase's output feeds the next, and
+everything eventually lands in the final `output_structure` (Part 5).
+
+### `mode_detection`
+Two entry points:
+- **Mode A** — you give a topic directly → skips straight to Phase 1.
+- **Mode B** — you ask it to find topics, or give nothing → runs `phase_0_trend_scan`
+  first, shows you a 5-8 topic shortlist, **stops and waits** for your pick.
+
+### `phase_0_trend_scan` (Mode B only)
+Searches: Google Trends (7-day and 30-day rising/breakout), Google search for
+"[month] [year] nail trends," Quora, best-effort Pinterest/YouTube. A topic
+only qualifies if it's confirmed on 2+ sources, is specific (not just "nails"),
+has a genuine why-now reason, and isn't already covered on your site. Outputs
+a numbered shortlist and stops — this is the one deliberate exception to "never
+show research to the user mid-process."
+
+### `phase_1_sentiment_and_emotion_research`
+**The primary phase of the entire pipeline.** Not entity research with sentiment
+as an afterthought — sentiment IS the research goal here. Searches Quora (main
+source), Google search, Google PAA, Google Trends. Extracts:
+- `sentiment_read` — positive / negative / mixed. This one field drives
+  everything downstream (trigger choice, voice, sometimes widget choice).
+- `the_specific_frustration_or_desire` — close to the audience's actual words,
+  not a paraphrase.
+- `named_entities` — the exact technique/product/aesthetic/colour name(s).
+- `trend_velocity`, `why_now_rationale`, `saturation_check`.
+
+### `phase_2_engagement_widget_research`
+Decides three things, all judgment calls grounded in Phase 1's findings, never
+defaults:
+- **Reaction Bar wording** — stays as the route's hardcoded default (Obsessed /
+  Meh / Hard pass) unless the topic genuinely earns sharper wording. This is
+  the exception, not the rule.
+- **Poll vs. Quiz vs. neither** — mutually exclusive. Poll needs a real
+  binary/either-or debate actually present in the research. Quiz needs genuine
+  branching (multiple distinct outcomes a reader could land on). If neither
+  genuinely fits, both are skipped — this is a valid, expected outcome, not a
+  gap to apologize for.
+- **If Quiz is chosen** — the style (diagnostic "is this right for you" vs.
+  recommendation "which look are you"), the questions, the options, and the
+  results all have to trace back to real audience findings from Phase 1. Never
+  invented, never templated.
+
+### `phase_3_word_count_and_image_count`
+No research — fixed by editorial decision:
+- **Word count: 1500, ±50 tolerance.** Never padded to reach; if the topic
+  can't genuinely support 1500 words of substance, that's a sign to go back
+  and research deeper, not to pad.
+- **Image count: 4 total, always** — 1 hero + 3 body. No scaling logic
+  anymore (an earlier draft had 3-5 scaling by post type; this was fixed to a
+  flat 4 per your instruction).
+
+### `phase_4_emotion_trigger_and_hook_research`
+Picks exactly ONE of four triggers, matched to Phase 1's real `sentiment_read`
+— never a reflexive default to negative angle:
+
+| Trigger | When it fits |
+|---|---|
+| Curiosity gap | Reader suspects they're missing something / doing it wrong |
+| Negative angle + solution | Real, common frustration confirmed in research |
+| FOMO / trend urgency | Genuine rising trend velocity + positive sentiment |
+| Identity mirroring | Topic is an aesthetic/identity label (e.g. "old money nails") |
+
+Locks: **title** (40-60 chars target, 60 hard cap, sentence case), **excerpt**
+(120-155 chars), **intro hook brief**. These get hardcoded — Post Gen uses them
+exactly as given, never rewrites.
+
+### `phase_5_hero_image_brief`
+**Deliberately narrow scope.** Produces only:
+- `imageAlt` (120-125 chars, leads with the specific visual detail)
+- `image_filename_brief` (descriptive, 80-90 chars)
+- A tag confirming it's for Discover (high contrast, thumbnail-style)
+
+**No visual concept, mood, or styling direction is written here.** That's
+handled by a separate image-generation prompt you run independently — this
+phase only hands off what the post is about, in a form that system can use.
+
+### `phase_6_content_structure`
+Builds the H2 list. **Minimum 3 H2s — hard technical requirement.** (Originally
+2, changed to 3 after your updated read_me confirmed the route needs a 3rd
+break point for the social CTA slot to render — see Part 6 for the full
+render-order logic.) 4-7 H2s typical for 1500 words. Sets word budget per
+section.
+
+### `phase_7_linking`
+**The most bug-prone phase historically — read this one carefully if you ever
+touch linking.** Total cap: 2-3 internal + 2-3 external, hard ceiling.
+
+The critical rule (`link_location_hard_rule`): an internal link's URL is
+whatever route the live search *actually* found it on — `/nail-feed/{slug}`
+if found via `site:mirelleinspo.com/nail-feed`, `/blog/{topic}/{slug}` if
+found via `site:mirelleinspo.com/blog`. **Never assumed, never constructed
+from a pattern, never based on which route the current post is on.** This
+exists because an earlier draft of this system nearly shipped broken links by
+assuming a post's route instead of confirming it.
+
+External links: Quora is reliable. Everything else (Pinterest, YouTube,
+Twitter/X, Byrdie, Allure, NailPro, Reddit) is best-effort — try once, if it
+fails move on, never retry, never cite a source that returned nothing.
+
+### `phase_8_topical_map_and_relational_fields`
+Only populated if a genuine `/blog` pillar relationship exists. If not, `topic`
+and `topicalMap` are omitted entirely from the post — never invented, never
+forced.
+
+### `phase_9_voice_tone`
+`recommended_voice` and `tone_characteristics` aren't a free guess — they have
+to trace back to Phase 1's `sentiment_read` and Phase 4's `selected_trigger`.
+A frustrated-sentiment negative-angle post gets a sharper register; a
+genuinely-excited FOMO post gets a warmer, faster one. Always layered on top
+of the fixed editorial voice (Part 4) — never a departure from it.
+
+### `phase_10_output`
+Compiles everything into `output_structure` (see Part 5) and delivers. No
+commentary except the Mode B shortlist and any cannibalization flag.
+
+---
+
+## Part 4 — Post Gen Agent, what it actually does
+
+Post Gen has no phases — it's execution, not research. Five real steps:
+
+1. **Receive** the input file.
+2. **Confirm slug** — replies only `"This Nail Feed post is for slug: [slug].
+   Proceed?"` — nothing else. This is a hard stop; it will not write until you
+   confirm.
+3. **You confirm.**
+4. **Read `section_11_execution_plan` first**, before anything else. Locks
+   every value — word budgets, opening technique per section, link placements,
+   widget content. Zero recalculation.
+5. **Write in one pass, deliver as `.md`.** No rewrite loop, no self-correction
+   pass afterward.
+
+### The rules governing the writing itself
+
+**`core_priorities`** — three, in order of authority:
+1. Input file is pure source of truth — zero agentic override of anything
+   already locked.
+2. Click-and-stay is the entire mission — title + hero image earn the tap,
+   everything after earns the read-to-the-end.
+3. Zero manual edit standard — a live, continuous self-check while writing:
+   "would this sentence work in any other post with the nouns swapped? If
+   yes, it's too generic, rewrite it specific to this topic."
+
+**`editorial_writing_mandate` + `opening_engine`** — ported verbatim from your
+blog system, unchanged by design. Same banned vocabulary, same 7 opening
+techniques (Claim, Specific Detail, Reframe, Tension, Observation, For-the-
+Reader, Earned Fragment), same sentence rhythm rules, same em-dash ban, same
+British English. If you ever want Nail Feed's *voice* to diverge from blog's,
+this is the section to touch — right now it's intentionally identical.
+
+**`content_body_structure`** — intro 120-160 words (shorter than blog's
+200-250, because Discover readers already got hooked by the title, they want
+payoff fast, not a runway). First sentence must deliver the title's exact
+promise. Conclusion 80-120 words, editorializes, never summarizes.
+
+**`frontmatter_rules`** — every field Post Gen writes, and the widget fields
+(`reaction`, `poll`, `quiz`) added when Nail Feed's widgets were wired in.
+Full field list in Part 5.
+
+---
+
+## Part 5 — The exact data handoff (every field, both sides)
+
+### What Input Gen outputs → what Post Gen consumes
+
+| Input Gen section | Post Gen reads it as | Feeds into |
+|---|---|---|
+| `section_1_file_authority` | (governing statement, not data) | — |
+| `section_2_post_constants` | `POST_CONSTANTS` | slug, canonical, category, publish_date, `author` (always `"jyoti-mirelle"`), `image_count` (always 4), `word_count` (always 1500) |
+| `section_3_sentiment_and_entity_brief` | `SENTIMENT_AND_ENTITY_BRIEF` | primary creative context — sentiment, frustration/desire, entities, trend info |
+| `section_4_engagement_widgets` | `ENGAGEMENT_WIDGETS` | `reaction`/`poll`/`quiz` frontmatter — exactly one of poll/quiz, or neither |
+| `section_5_hook_and_ctr` | `HOOK_AND_CTR` | title, excerpt, intro hook brief — all hardcoded, used verbatim |
+| `section_6_hero_image_brief` | `HERO_IMAGE_BRIEF` | `imageAlt`, filename brief — used verbatim, no invention |
+| `section_7_content_structure` | `CONTENT_STRUCTURE` | H2 list, word budget per section |
+| `section_8_links` | `LINKS` | every internal/external link, verbatim URL and anchor |
+| `section_9_topical_map` | `TOPICAL_MAP` | `topic`/`topicalMap` fields, or omitted entirely |
+| `section_10_voice_tone` | `VOICE_TONE` | register layered on top of the fixed mandate |
+| `section_11_execution_plan` | `EXECUTION_PLAN` | **read first** — pre-locked word budgets, opening technique assignments, link placements, widget content, active constraints |
+
+### Full frontmatter field list Post Gen writes
+
+```
+title, excerpt, date, author (fixed "jyoti-mirelle"), category, image,
+imageAlt, imageWidth (1200), imageHeight (675), readTime, canonical,
+topic (omit if none), topicalMap (omit if topic absent),
+tldr { summary, tldrFaqs },   ← no keyTakeaways, deliberately removed
+faqItems,
+reaction (omit unless custom wording genuinely earned),
+poll (omit unless selected — mutually exclusive with quiz),
+quiz (omit unless selected — mutually exclusive with poll)
+```
+
+Never written: `position`, `hierarchyLevel`, `childClusters`, `contentType`,
+`semanticRelationships`, `contentMetrics`, `showInspoGalleryLink`, `template`,
+`tutorialMetadata`, `videoMetadata`, `eventData`, `carouselImages`, `products`,
+`heroImages` — all blog-only, do nothing on this route.
+
+---
+
+## Part 6 — The route mechanics both prompts are built around
+
+This isn't in either prompt file directly — it's the *reason* several rules
+exist, worth knowing so a future change doesn't accidentally break something
+invisible.
+
+**Full page render order:**
+```
+ShareButton → Hero → Breadcrumbs → TableOfContents (mobile only) →
+WrapUp (tldr) → Body part 1 → InlineNewsletter → Body part 2 →
+Poll/Quiz (mutually exclusive) → SocialFollowCTA → Body part 3 →
+ReactionBar (always) → FAQ → FinalNewsletter → AuthorCard → AboutEEAT →
+ReadMoreSection
+```
+
+**Why 3+ H2s is mandatory:** content splits into parts at H2 boundaries near
+the 1/3 and 2/3 marks.
+- 3+ H2s → all mid-content slots render (newsletter, poll/quiz, social)
+- exactly 2 H2s → social CTA slot silently skipped (no 3rd break point)
+- 0-1 H2s → everything mid-content skipped
+
+This is a real, silent failure mode if H2 count ever gets loosened — nothing
+errors, the widgets just don't appear.
+
+**Hard technical gates** (non-negotiable, not stylistic):
+- Hero image: 1200×675, 16:9, >300,000 total pixels
+- Author must be exactly `"jyoti-mirelle"` — anything else, or a typo, silently
+  drops the entire AuthorCard with no error
+- URLs are flat: `/nail-feed/[slug]`, never `/nail-feed/[topic]/[slug]`
+
+**Known open site-level gaps** (not fixable in either prompt — code/template
+work only):
+- `max-image-preview:large` meta tag still missing from `layout.tsx`
+- `CONTENT_DIRS` in `src/lib/authors.ts` doesn't include the nailfeed content
+  folder, so Nail Feed posts don't show on `/authors/[slug]` profile pages yet
+
+---
+
+## Part 7 — Fixed decisions (won't change without you explicitly overriding)
+
+These are locked, not defaults — a future change request needs to explicitly
+name and override one of these, otherwise assume it stays as-is:
+
+- Word count: 1500, ±50
+- Image count: 4 (1 hero + 3 body), no scaling
+- Author: `"jyoti-mirelle"` on every post, no exceptions
+- Links: 2-3 internal + 2-3 external, hard ceiling
+- Minimum H2s: 3
+- Title: 40-60 char target, 60 hard cap
+- `tldr`: `summary` + `tldrFaqs` only, no `keyTakeaways`
+- Voice/craft mandate: identical to blog, not a lighter/faster version
+- Hero image creative direction: out of scope for Input Gen, handled by a
+  separate downstream prompt
+- Poll/Quiz: judgment call per post, skip entirely if neither genuinely fits
+  — never forced
+
+---
+
+## Part 8 — Change Request Template
+
+Fill this in and send it (with this read_me attached) to request an update.
+The more precisely you fill it in, the more surgical the resulting edit —
+vague requests get vague, over-broad edits.
+
+```
+CHANGE REQUEST
+
+1. Which file does this affect?
+   [ ] Input Gen Agent (research/data side)
+   [ ] Post Gen Agent (writing side)
+   [ ] Both
+
+2. Which part of this read_me is closest to what you're changing?
+   (e.g. "Part 3 → phase_4_emotion_trigger_and_hook_research" or
+   "Part 5 → frontmatter fields" or "Part 7 → fixed decisions")
+
+3. What's the CURRENT behavior?
+   (What does the prompt do today — quote or describe it)
+
+4. What do you want it to do INSTEAD?
+   (Be as specific as possible — a number, a rule, a new field, a removed
+   rule, etc.)
+
+5. Does this override a "fixed decision" from Part 7?
+   [ ] Yes — which one: ___________
+   [ ] No — this is a new/different area
+
+6. Any downstream effects you already know about?
+   (e.g. "this also needs to update the execution plan numbering" or
+   "this affects the frontmatter fields Post Gen writes" — if unsure, leave
+   blank, I'll trace the dependencies)
+
+7. Anything that should explicitly NOT change while doing this?
+```
+
+---
+
+*This read_me reflects the state of both prompts as of the most recent update
+(author fixed to `"jyoti-mirelle"`, widgets wired in, H2 minimum at 3, image
+count fixed at 4). If you've made changes directly to the JSON files since
+then without updating this doc, tell me before submitting a change request so
+I can re-sync against the actual current file state rather than this
+description.*
