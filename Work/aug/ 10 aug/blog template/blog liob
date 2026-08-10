@@ -1,0 +1,500 @@
+import 'server-only';
+import fs from 'fs';
+import path from 'path';
+import matter from 'gray-matter';
+import { BlogPost, BlogMetadata } from '@/types/blog';
+import { marked } from 'marked';
+
+// Configure marked to handle HTML properly
+marked.setOptions({
+  breaks: true,
+  gfm: true,
+});
+
+// Custom renderer to preserve HTML and fix image paths
+const renderer = new marked.Renderer();
+
+renderer.html = (html: string) => {
+  return html.replace(/src="images\//g, 'src="/images/');
+};
+
+renderer.image = (href: string, title: string | null, text: string) => {
+  const fixedHref = href.startsWith('images/') ? `/${href}` : href;
+  const titleAttr = title ? ` title="${title}"` : '';
+  return `<img src="${fixedHref}" alt="${text}"${titleAttr} loading="lazy" />`;
+};
+
+marked.use({ renderer });
+
+const BLOG_DIRECTORY = path.join(process.cwd(), 'src/content/blogs');
+
+// ─── Helpers ─────────────────────────────────────────────────────────────────
+
+/**
+ * Recursively returns all .md and .mdx files under a directory.
+ * Returns paths relative to BLOG_DIRECTORY (e.g. "skin-tone/best-nude-nail-color-for-skin-tone.md").
+ */
+function getAllBlogFilesRecursive(dir: string, base: string = ''): string[] {
+  let results: string[] = [];
+  let entries: fs.Dirent[];
+
+  try {
+    entries = fs.readdirSync(dir, { withFileTypes: true });
+  } catch {
+    return [];
+  }
+
+  for (const entry of entries) {
+    const relativePath = base ? `${base}/${entry.name}` : entry.name;
+
+    if (entry.isDirectory()) {
+      results = results.concat(getAllBlogFilesRecursive(path.join(dir, entry.name), relativePath));
+    } else if (entry.isFile() && (entry.name.endsWith('.md') || entry.name.endsWith('.mdx'))) {
+      results.push(relativePath);
+    }
+  }
+
+  return results;
+}
+
+/**
+ * Strips the extension (.md or .mdx) from a relative file path to get the slug.
+ * e.g. "skin-tone/best-nude-nail-color-for-skin-tone.md" → "skin-tone/best-nude-nail-color-for-skin-tone"
+ */
+function fileToSlug(relativePath: string): string {
+  return relativePath.replace(/\.mdx?$/, '');
+}
+
+/**
+ * Given a bare slug (e.g. "best-nude-nail-color-for-skin-tone"), finds the file
+ * anywhere in the blog directory tree. Checks flat first, then subdirectories.
+ * Prefers .mdx over .md.
+ */
+function resolveFilePath(slug: string): { filePath: string; isMDX: boolean } | null {
+  // 1. Try flat (original behaviour)
+  const flatMdx = path.join(BLOG_DIRECTORY, `${slug}.mdx`);
+  const flatMd  = path.join(BLOG_DIRECTORY, `${slug}.md`);
+  if (fs.existsSync(flatMdx)) return { filePath: flatMdx, isMDX: true };
+  if (fs.existsSync(flatMd))  return { filePath: flatMd,  isMDX: false };
+
+  // 2. Search recursively  slug may live inside a subfolder
+  const allFiles = getAllBlogFilesRecursive(BLOG_DIRECTORY);
+  const basename = slug.includes('/') ? slug : null; // if slug already has a path component
+
+  for (const relativePath of allFiles) {
+    const relativeSlug = fileToSlug(relativePath);
+
+    // Match by full relative slug (e.g. "skin-tone/best-nude-nail-color-for-skin-tone")
+    if (relativeSlug === slug) {
+      const filePath = path.join(BLOG_DIRECTORY, relativePath);
+      return { filePath, isMDX: relativePath.endsWith('.mdx') };
+    }
+
+    // Match by filename only (e.g. "best-nude-nail-color-for-skin-tone")
+    const fileBasename = path.basename(relativeSlug);
+    if (!basename && fileBasename === slug) {
+      const filePath = path.join(BLOG_DIRECTORY, relativePath);
+      return { filePath, isMDX: relativePath.endsWith('.mdx') };
+    }
+  }
+
+  return null;
+}
+
+/**
+ * Humanizes a topic slug for display: replaces dashes with spaces.
+ * e.g. "almond-nails" -> "almond nails"
+ */
+function humanizeTopic(topic: string): string {
+  return topic.replace(/-/g, ' ');
+}
+
+/**
+ * Injects an inspo gallery link after every <img> tag in compiled HTML,
+ * when a topic is present. Runs automatically on every MD post at build
+ * time  no manual work needed per post, and works for all future posts
+ * that include a `topic` field in frontmatter.
+ *
+ * Links to /inspo/{topic}-inspiration-gallery (raw topic slug in the URL),
+ * with humanized display text (dashes -> spaces).
+ *
+ * Set `showInspoGalleryLink: false` in a post's frontmatter to opt that
+ * post out of this link even when `topic` is present. Defaults to true.
+ */
+export function injectInspoGalleryLinks(
+  html: string,
+  topic?: string,
+  showInspoGalleryLink: boolean = true
+): string {
+  if (!topic || !showInspoGalleryLink) return html;
+
+  const galleryHref = `/inspo/${topic}-inspiration-gallery`;
+  const displayTopic = humanizeTopic(topic);
+  const linkMarkup = `<p class="inspo-gallery-link"><a href="${galleryHref}">Explore ${displayTopic} inspiration gallery</a></p>`;
+
+  return html.replace(/(<img\b[^>]*>)/g, `$1${linkMarkup}`);
+}
+
+// ─── Cache ───────────────────────────────────────────────────────────────────
+
+interface CacheEntry<T> {
+  data: T;
+  timestamp: number;
+}
+
+class BlogCache {
+  private cache = new Map<string, CacheEntry<any>>();
+  private readonly TTL = 3600000;
+
+  get<T>(key: string): T | null {
+    const entry = this.cache.get(key);
+    if (!entry) return null;
+    if (Date.now() - entry.timestamp > this.TTL) {
+      this.cache.delete(key);
+      return null;
+    }
+    return entry.data as T;
+  }
+
+  set<T>(key: string, data: T): void {
+    this.cache.set(key, { data, timestamp: Date.now() });
+  }
+
+  clear(): void {
+    this.cache.clear();
+  }
+}
+
+const blogCache = new BlogCache();
+
+// ─── Public API ──────────────────────────────────────────────────────────────
+
+export async function getAllBlogPosts(): Promise<BlogMetadata[]> {
+  const cacheKey = 'all-blog-posts';
+
+  const cached = blogCache.get<BlogMetadata[]>(cacheKey);
+  if (cached) return cached;
+
+  try {
+    const files = getAllBlogFilesRecursive(BLOG_DIRECTORY);
+
+    const posts = files
+      .map(relativePath => {
+        const relativeSlug = fileToSlug(relativePath);
+        // The bare slug is the filename without extension (for getBlogPost lookups)
+        const slug     = path.basename(relativeSlug);
+        const filePath = path.join(BLOG_DIRECTORY, relativePath);
+        const content  = fs.readFileSync(filePath, 'utf8');
+        const { data } = matter(content);
+
+        return {
+          slug,
+          title:             data.title      || 'Untitled',
+          excerpt:           data.excerpt    || '',
+          date:              data.date       || new Date().toISOString(),
+          author:            data.author     || 'Mirellé Team',
+          category:          data.category,
+          image:             data.image      || null,
+          imageAlt:          data.imageAlt,
+          imageWidth:        data.imageWidth  || 1200,
+          imageHeight:       data.imageHeight || 630,
+          readTime:          data.readTime   || '5 min',
+          topic:             data.topic,
+          canonical: data.canonical || (data.topic ? `https://mirelleinspo.com/blog/${data.topic}/${slug}` : `https://mirelleinspo.com/blog/${slug}`),
+          template:          data.template   || 'center',
+          topicalMap:        data.topicalMap,
+          navigationContext: data.navigationContext,
+          showInspoGalleryLink: data.showInspoGalleryLink !== false,
+          url: data.topic ? `https://mirelleinspo.com/blog/${data.topic}/${slug}` : `https://mirelleinspo.com/blog/${slug}`,
+        } as BlogMetadata;
+      })
+      .sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());
+
+    blogCache.set(cacheKey, posts);
+    return posts;
+  } catch (error) {
+    console.error('Error reading blog posts:', error);
+    return [];
+  }
+}
+
+export async function getBlogPost(slug: string): Promise<BlogPost | null> {
+  const cacheKey = `blog-post:${slug}`;
+
+  const cached = blogCache.get<BlogPost>(cacheKey);
+  if (cached) return cached;
+
+  try {
+    const resolved = resolveFilePath(slug);
+    if (!resolved) {
+      console.error(`Blog post not found: ${slug}`);
+      return null;
+    }
+
+    const { filePath, isMDX } = resolved;
+    const fileContent = fs.readFileSync(filePath, 'utf8');
+    const { data, content: rawContent } = matter(fileContent);
+
+    const showInspoGalleryLink = data.showInspoGalleryLink !== false;
+
+    let htmlContent: string;
+
+    if (isMDX) {
+      htmlContent = rawContent;
+    } else {
+      let compiled = await marked(rawContent);
+
+      compiled = compiled.replace(
+        /<h2>(.*?)<\/h2>/g,
+        (_match, text) => {
+          const cleanText = text.replace(/<[^>]*>/g, '');
+          const id = cleanText
+            .toLowerCase()
+            .replace(/[^a-z0-9]+/g, '-')
+            .replace(/^-+|-+$/g, '');
+          return `<h2 id="${id}">${text}</h2>`;
+        }
+      );
+
+      htmlContent = injectInspoGalleryLinks(compiled, data.topic, showInspoGalleryLink);
+    }
+
+    // Bare slug = filename without extension (consistent with getAllBlogPosts)
+    const bareSlug = path.basename(slug.replace(/\.mdx?$/, ''));
+
+    const post: BlogPost = {
+      slug:              bareSlug,
+      title:             data.title      || 'Untitled',
+      excerpt:           data.excerpt    || '',
+      content:           htmlContent,
+      isMDX,
+      date:              data.date       || new Date().toISOString(),
+      author:            data.author     || 'Mirellé Team',
+      category:          data.category,
+      image:             data.image      || null,
+      imageAlt:          data.imageAlt,
+      imageWidth:        data.imageWidth  || 1200,
+      imageHeight:       data.imageHeight || 630,
+      readTime:          data.readTime   || '5 min',
+      topic:             data.topic,
+      canonical: data.canonical || (data.topic ? `https://mirelleinspo.com/blog/${data.topic}/${bareSlug}` : `https://mirelleinspo.com/blog/${bareSlug}`),
+      template:          data.template   || 'center',
+      topicalMap:        data.topicalMap,
+      navigationContext: data.navigationContext,
+      carouselImages:    data.carouselImages,
+      products:          data.products,
+      coverImage:        data.image      || '/images/default-blog.jpg',
+      tldr:              data.tldr,
+      faqItems:          data.faqItems,
+      showInspoGalleryLink,
+    };
+
+    blogCache.set(cacheKey, post);
+    return post;
+  } catch (error) {
+    console.error(`Error reading blog post ${slug}:`, error);
+    return null;
+  }
+}
+
+export async function getAllBlogSlugs(): Promise<string[]> {
+  try {
+    return getAllBlogFilesRecursive(BLOG_DIRECTORY).map(f => path.basename(fileToSlug(f)));
+  } catch (error) {
+    console.error('Error reading blog slugs:', error);
+    return [];
+  }
+}
+
+export async function getPostsByCategory(categorySlug: string): Promise<BlogMetadata[]> {
+  const allPosts = await getAllBlogPosts();
+  return allPosts.filter(post => post.category === categorySlug);
+}
+
+export async function getAllCategories() {
+  return [
+    { name: 'Seasonal',        slug: 'seasonal' },
+    { name: 'Trends',          slug: 'trends' },
+    { name: 'Tutorial',        slug: 'tutorial' },
+    { name: 'Nail Care',       slug: 'nail care' },
+    { name: 'Nail Art',        slug: 'nail art' },
+    { name: "Editor's Choice", slug: "editor's choice" },
+  ];
+}
+
+/**
+ * UPDATED getRelatedPosts  priority order:
+ *   1. Cluster siblings   other posts sharing the same pillar
+ *      (if current post IS the pillar, its own cluster children;
+ *       if current post is a cluster post, its sibling cluster posts)
+ *   2. Same topic          posts with the same `topic` field, not already included
+ *   3. Fallback            most recent posts, not already included
+ *
+ * Capped at `limit` (default 12), no duplicates.
+ */
+export async function getRelatedPosts(
+  currentSlug: string,
+  limit: number = 12
+): Promise<BlogMetadata[]> {
+  const currentPost = await getBlogPost(currentSlug);
+  if (!currentPost) return [];
+
+  const allPosts = await getAllBlogPosts();
+  const seen = new Set<string>([currentSlug]);
+  const result: BlogMetadata[] = [];
+
+  let pillarKey: string | null = null;
+  if (currentPost.topicalMap?.position === 'pillar') {
+    pillarKey = currentPost.slug;
+  } else if (currentPost.topicalMap?.position === 'cluster' && currentPost.topicalMap?.parentPillar) {
+    pillarKey = currentPost.topicalMap.parentPillar;
+  }
+
+  function matchesPillar(post: BlogMetadata, key: string): boolean {
+    return (
+      post.topicalMap?.parentPillar === key ||
+      post.topicalMap?.parentPillar === `/blog/${key}` ||
+      post.slug === key
+    );
+  }
+
+  // ── 1. Cluster siblings ──────────────────────────────────────────────
+  if (pillarKey) {
+    const siblings = allPosts.filter(
+      post => !seen.has(post.slug) && matchesPillar(post, pillarKey!)
+    );
+    for (const post of siblings) {
+      if (result.length >= limit) break;
+      result.push(post);
+      seen.add(post.slug);
+    }
+  }
+
+  // ── 2. Same topic ─────────────────────────────────────────────────────
+  if (result.length < limit && currentPost.topic) {
+    const sameTopic = allPosts.filter(
+      post => !seen.has(post.slug) && post.topic === currentPost.topic
+    );
+    for (const post of sameTopic) {
+      if (result.length >= limit) break;
+      result.push(post);
+      seen.add(post.slug);
+    }
+  }
+
+  // ── 3. Fallback: most recent posts ──────────────────────────────────
+  if (result.length < limit) {
+    const remaining = allPosts.filter(post => !seen.has(post.slug));
+    for (const post of remaining) {
+      if (result.length >= limit) break;
+      result.push(post);
+      seen.add(post.slug);
+    }
+  }
+
+  return result;
+}
+
+export async function getPaginatedPosts(
+  page: number = 1,
+  perPage: number = 12
+): Promise<{
+  posts: BlogMetadata[];
+  totalPages: number;
+  currentPage: number;
+  totalPosts: number;
+}> {
+  const allPosts   = await getAllBlogPosts();
+  const totalPosts = allPosts.length;
+  const totalPages = Math.ceil(totalPosts / perPage);
+  const startIndex = (page - 1) * perPage;
+  const posts      = allPosts.slice(startIndex, startIndex + perPage);
+
+  return { posts, totalPages, currentPage: page, totalPosts };
+}
+
+export interface ClusterGroup {
+  pillar:   BlogMetadata;
+  clusters: BlogMetadata[];
+}
+
+export async function getAllClusters(): Promise<ClusterGroup[]> {
+  const cacheKey = 'all-clusters';
+
+  const cached = blogCache.get<ClusterGroup[]>(cacheKey);
+  if (cached) return cached;
+
+  const allPosts    = await getAllBlogPosts();
+  const pillarPosts = allPosts.filter(post => post.topicalMap?.position === 'pillar');
+
+  const clusterGroups: ClusterGroup[] = pillarPosts.map(pillar => {
+    const clusterPosts = allPosts.filter(post =>
+      post.topicalMap?.position === 'cluster' &&
+      (
+        post.topicalMap?.parentPillar === `/blog/${pillar.slug}` ||
+        post.topicalMap?.parentPillar === pillar.slug
+      )
+    );
+    return { pillar, clusters: clusterPosts };
+  });
+
+  blogCache.set(cacheKey, clusterGroups);
+  return clusterGroups;
+}
+
+export async function getStandalonePosts(): Promise<BlogMetadata[]> {
+  const cacheKey = 'standalone-posts';
+
+  const cached = blogCache.get<BlogMetadata[]>(cacheKey);
+  if (cached) return cached;
+
+  const allPosts   = await getAllBlogPosts();
+  const standalone = allPosts.filter(post =>
+    !post.topicalMap?.position ||
+    (post.topicalMap.position !== 'pillar' && post.topicalMap.position !== 'cluster')
+  );
+
+  blogCache.set(cacheKey, standalone);
+  return standalone;
+}
+
+export function clearBlogCache() {
+  blogCache.clear();
+}
+
+export async function getPillarClusterPosts(
+  pillarSlug: string
+): Promise<{ pillar: BlogMetadata; clusters: BlogMetadata[] } | null> {
+  const cacheKey = `pillar-clusters:${pillarSlug}`;
+  const cached = blogCache.get<{ pillar: BlogMetadata; clusters: BlogMetadata[] }>(cacheKey);
+  if (cached) return cached;
+
+  const allPosts = await getAllBlogPosts();
+
+  const pillar = allPosts.find(post => post.slug === pillarSlug);
+  if (!pillar) return null;
+
+  const clusters = allPosts.filter(post =>
+    post.topicalMap?.position === 'cluster' &&
+    (
+      post.topicalMap?.parentPillar === `/blog/${pillarSlug}` ||
+      post.topicalMap?.parentPillar === pillarSlug
+    )
+  );
+
+  const result = { pillar, clusters };
+  blogCache.set(cacheKey, result);
+  return result;
+}
+
+/**
+ * Extracts all body <img> src URLs from compiled post HTML, excluding
+ * the hero/cover image (post.image). Used to power the "Download images"
+ * button  which should only appear when the post body itself has images.
+ */
+export function extractBodyImages(html: string, heroImage?: string | null): string[] {
+  if (!html) return [];
+  const matches = [...html.matchAll(/<img[^>]*src=["']([^"']+)["']/gi)];
+  const urls = matches.map((m) => m[1]);
+  return heroImage ? urls.filter((u) => u !== heroImage) : urls;
+}
