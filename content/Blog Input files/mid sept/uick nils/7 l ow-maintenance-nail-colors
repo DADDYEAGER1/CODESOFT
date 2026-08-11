@@ -1,0 +1,258 @@
+# INPUT FILE — Low-Maintenance Nail Colors That Hide Regrowth
+CLUSTER MODE — cluster context loaded (Quick & Last-Minute Nails)
+
+## SECTION 1 — FILE AUTHORITY
+THIS FILE IS THE SINGLE SOURCE OF TRUTH FOR THE BLOG GEN AGENT. All values in POST_CONSTANTS are hardcoded. Blog Gen Agent does not ask, adjust, or override them. All keywords, H2 structure, audience intelligence, internal links, and tone defined here must be followed exactly.
+
+## SECTION 2 — POST_CONSTANTS
+- slug: low-maintenance-nail-colors
+- topic_slug: quick-last-minute-nails
+- canonical: https://mirelleinspo.com/blog/quick-last-minute-nails/low-maintenance-nail-colors
+- post_type: spoke
+- intent: seasonal_trend
+- word_count: 1800
+- image_count: 5 (1 hero + 4 body — see override note below)
+- show_inspo_gallery_link: false
+- **template: center — MANUAL OVERRIDE, applied per explicit user instruction. Default derivation for role=spoke is "split-left." This post is being forced to "center" (hero_dimensions 1200x630) against the cluster's standard pattern. All 11 other spokes in this cluster use split-left/800x800. FLAGGING: no content-based justification found in research for this exception — it breaks visual consistency with sibling posts. Proceed only if intentional.**
+- hero_dimensions: 1200x630 (derived from center override, not from spoke default)
+- category: Nail Care Guide
+- publish_date: 2026-08-12
+- author: jyoti-mirelle
+
+## show_inspo_gallery_link reasoning
+False. Intent is seasonal_trend, not inspirational, and the content answers a specific question (which colors/shapes/types resist regrowth) rather than inviting open browsing. Cluster metadata also confirms this cluster has no inspiration gallery at all (`inspiration_gallery_included: false`) — gallery link would be invalid regardless.
+
+## image_count override note
+Rule 5 (everything else) applies: show_inspo_gallery_link = false → sub_rule_b → 4-5 images (1 hero + 3-4 body). Locking at 5 total (1 hero + 4 body) since the post covers 4 genuinely distinct visual categories (color swatches, shape comparison, soap-nail finish, cost/type comparison) — each earns one image, not padded.
+
+---
+
+## SECTION 3 — CLUSTER SNAPSHOT
+- pillar_slug: 5-minute-nail-art-ideas
+- pillar_title: 5-Minute Nail Art Ideas
+- pillar_primary_keyword: 5 minute nail art
+- this_post_slug: low-maintenance-nail-colors
+- this_post_role: spoke
+- keywords_to_avoid (hard wall — full registry): 5 minute nail art, quick manicure, manicure that lasts 3 weeks, easy nail art for beginners, nail art non dominant hand, how long does a gel manicure take, last minute halloween nail art, last minute valentine's nail art, last minute christmas nails, quick nye nails, date night nails, last minute wedding guest nails, nails for a job interview, press-on nails for work
+
+---
+
+## SECTION 4 — SERP ANALYSIS
+**competitor_gaps** (demand-validated on 2+ sources):
+1. No competitor combines color + shape + product-type (gel/acrylic/regular polish) in one resource — each covers exactly one dimension. Confirmed via hola.com (colors only), GelBottle/OPI/Maniology (shapes only), L'Oréal/Glitterbels (product-type only).
+2. "What to actually tell your nail tech" — a literal script for requesting the look — is absent from every color-focused competitor. Confirmed demand via Soap Nails guides (WhoWhatWear, LONDONTOWN) where readers explicitly ask this for a specific trend; same pattern transfers to the low-maintenance category broadly.
+3. Cost/economic framing ("nail privilege," reducing salon frequency, at-home stretch techniques) is present in lifestyle press (Refinery29, Yahoo) but entirely absent from beauty-editorial color roundups — a distinct angle none of the direct SERP competitors touch.
+
+**missing_semantic_territory:** "grows out gracefully" (confirmed high-frequency phrase across 3 sources), "salon-fresh," "regrowth line," "cuticle gap," squoval/round shape specificity, gel-vs-acrylic-vs-polish fill cadence numbers.
+
+**our_strategic_approach:** Cover color + shape + finish + product-type as one unified low-maintenance framework (not just a color list like hola.com), and close with a direct nail-tech script plus real cost math — the two angles zero direct competitors currently combine.
+
+**top_3_word_count_estimates:** hola.com (~700 words), Scratch Magazine (~900 words), Bangstyle (~600 words). Average ≈ 733 words. This is the floor; 1800 is set well above it, justified by covering 4 validated content angles competitors treat separately.
+
+**top_3_keyword_density_baseline:** "low maintenance" / "low-maintenance" variants appear ~5x average across top 3 posts.
+
+---
+
+## SECTION 5 — AUDIENCE INTELLIGENCE
+**who_they_are:** Someone who already gets manicures (not a nail-art beginner) but is trying to stretch time and money between salon visits — confirmed by "clients asking for low maintenance nails... manicures that grow out gracefully" (nail tech quoted in Today's Woman, June 2026) and the economic framing in Refinery29's "nail privilege" piece.
+
+**what_they_want_from_this_post:** A concrete, actionable answer to "what do I pick so my next manicure doesn't look bad in week 2" — spanning color, shape, and product type, not just one variable.
+
+**what_frustrates_them:** Existing content picks ONE lever (just color, or just shape, or just gel-vs-acrylic) and leaves the other two unaddressed, forcing them to read 3 separate articles to make one decision.
+
+**top_5_pain_points:**
+1. Bold/opaque colors show a hard regrowth line within days — confirmed across hola.com, Women.com, Scratch Magazine.
+2. Sharp-edged shapes (coffin, stiletto, sharp square) snag, chip, and look "grown out" faster than soft shapes — confirmed GelBottle, OPI, Maniology.
+3. Not knowing the real fill/redo cadence difference between gel, acrylic, and regular polish before booking — confirmed L'Oréal, Glitterbels, thelocalgem.com.
+4. Not knowing how to phrase the request to a nail tech without a trend name — confirmed via soap nails audience research (WhoWhatWear: "you don't need to know the trend name, just describe it").
+5. Underlying cost/time frustration with frequent redos — confirmed Refinery29 "nail privilege" and TikTok "high maintenance to be low maintenance" trend (493M+ views cited).
+
+**exact_user_phrases:** "grows out gracefully," "salon-fresh," "doesn't show regrowth immediately," "hide the gap near the cuticle," "just-washed look," "I woke up like this," "low-maintenance is for rookies" (ironic Pinterest usage — worth avoiding as unironic phrasing), "clients going a bit longer between appointments," "quiet luxury," "your-nails-but-better."
+
+**intent_content_signals:** Reader wants concrete recommendations, not abstract trend talk. Responds to specific color names, exact shape names, and clear numbers (fill cadence in weeks/days). Format should move fast — short paragraphs, scannable structure, real answers up front.
+
+---
+
+## SECTION 6 — SEMANTIC KEYWORD DATA
+- **primary_keyword:** low maintenance nails
+- **keyword_variations:** low-maintenance nail colors, low maintenance manicure, low maintenance nail colors that hide regrowth, low maintenance nail ideas, low maintenance nail styles, easy-to-maintain nail colors
+- **cluster_keywords:** grow out gracefully, regrowth line, salon-fresh manicure, minimal upkeep manicure, effortless manicure, quiet luxury nails, soap nails, milky nails, squoval nail shape, gel fill cadence, at-home manicure stretch
+- **lsi_terms:** cuticle gap, chip resistance, sheer polish, translucent finish, neutral nail shades, nude nail colors, gel polish longevity, acrylic fill schedule, natural nail health, glossy top coat, ombré regrowth camouflage, French tip regrowth, jelly nail finish, blooming gel, milky nude, glazed finish
+- **aeo_terms:** "what nail colors hide regrowth the longest?", "what nail shape is the most low maintenance?", "how often do I need to get my nails filled?", "do gel nails or acrylics grow out better?", "what do I ask my nail tech for a low maintenance manicure?", "why do some nail colors show regrowth faster than others?", "what is a soap nail manicure?", "is round or square more low maintenance?"
+- **technical_terms:** fill/infill, soak-off, cuticle line, free edge, base coat, ridge filler, ombré, ballerina/coffin shape
+- **user_language:** "grows out gracefully," "salon-fresh for days," "hide the gap," "just-washed look," "your-nails-but-better," "doesn't show regrowth immediately," "going longer between appointments," "low-key neutrals"
+
+---
+
+## SECTION 7 — VOICE AND AI QUERIES
+1. What nail colors hide regrowth the best?
+2. Is a lighter or darker nail color more low maintenance?
+3. What nail shape lasts the longest without looking grown out?
+4. How often do gel nails need to be filled?
+5. How often do acrylic nails need to be filled?
+6. Is regular polish more low maintenance than gel?
+7. What is a soap nail manicure and how do I ask for it?
+8. What's the difference between soap nails and milky nails?
+9. Do French tips hide regrowth better than solid color?
+10. What nail shape is easiest to maintain at home?
+11. Can I make my manicure last longer between salon visits?
+12. What should I tell my nail tech if I want a low-maintenance look?
+13. Are neutral nail colors always more low maintenance than bold ones?
+14. Does nail shape affect how fast a manicure looks worn out?
+15. How much does it cost to maintain gel nails vs acrylics per year?
+
+---
+
+## SECTION 8 — HOOK AND CTR
+- **selected_trigger:** Trigger 4 — Identity Mirroring (per cluster_context.json suggested_hook_trigger for this post)
+- **trigger_rationale:** This reader isn't just picking a color — she's confirming a lifestyle choice (less salon time, more practical beauty), so "for women who..." framing mirrors that identity directly.
+- **title:** Low-Maintenance Nails for Women Who Skip Weekly Salon Trips
+- **title_char_count:** 58
+- **meta_description:** Tired of your manicure looking grown-out by day 5? These low-maintenance nail colors, shapes, and finishes actually last — no weekly touch-ups required.
+- **meta_char_count:** 148
+- **intro_hook_brief:** Open by naming the real frustration directly — the gap between a fresh manicure and a "needs redoing" manicure closing faster than it should — then promise this covers the three levers (color, shape, product type) that actually control that timeline, not just one.
+- **first_h2_hook_direction:** Phrase the first H2 as a direct voice-search-style question the reader is actually asking, e.g. "What nail colors hide regrowth the longest?" — answer it immediately and concretely.
+
+---
+
+## SECTION 9 — SEARCH JOURNEY
+- **reader_arrival_state:** Slightly frustrated with how fast her last manicure started looking dated, and looking to fix the pattern going forward rather than just get through this one manicure.
+- **journey_arc:**
+  1. Validate the frustration (regrowth showing faster than expected) and promise a real fix
+  2. Deliver the color answer first — most concrete, most searched lever
+  3. Layer in shape — the second lever most people don't know matters
+  4. Resolve the product-type question (gel vs acrylic vs polish) with real numbers
+  5. Close with the practical payoff: how to actually ask for this at her next appointment
+- **promise_to_deliver:** A complete, three-lever framework (color + shape + product type) for a manicure that stays presentable well past the usual 1-2 week mark — not just another color list.
+- **exit_state:** Confident she knows exactly what to pick and say at her next appointment, with no more guesswork.
+
+---
+
+## SECTION 10 — CONTENT STRUCTURE
+**h1:** Low-Maintenance Nails: Colors, Shapes & Finishes That Grow Out Gracefully
+
+**h2_structure:**
+1. What Nail Colors Hide Regrowth the Longest? (word_budget: 320)
+2. The Nail Shape That Actually Matters More Than Color (word_budget: 250)
+3. Soap Nails and Milky Finishes: The Lowest-Maintenance Trend Right Now (word_budget: 260)
+4. Gel vs Acrylic vs Regular Polish: Which Grows Out Best? (word_budget: 320)
+5. What to Actually Tell Your Nail Tech (word_budget: 220)
+6. How Much You're Really Saving by Going Low Maintenance (word_budget: 200)
+
+**word_budget:**
+- introduction: 230
+- conclusion: 180
+- H2s: 1570 (distributed above)
+- Total: 1980 → trim ~180 words across sections to land at 1800 target during drafting
+
+---
+
+## SECTION 11 — INTERNAL LINKS
+Cluster links (verbatim anchors, mandatory):
+1. slug: 5-minute-nail-art-ideas | anchor_text: "5-minute nail art ideas" | type: cluster-pillar | placement: intro or conclusion, natural mention of the broader cluster
+2. slug: nails-that-last-3-weeks | anchor_text: "nails that last 3 weeks without chipping" | type: cluster-spoke | placement: H2 4 (gel vs acrylic vs polish) — durability tie-in
+3. slug: nail-art-shaky-hands-non-dominant | anchor_text: "nail art techniques for shaky or non-dominant hands" | type: cluster-spoke | placement: H2 2 (shape section) — accessibility tie-in
+4. slug: quick-date-night-nails | anchor_text: "quick date night nail ideas" | type: cluster-spoke | placement: conclusion — light occasion tie-in
+
+Cross-site links (max 2, descriptive anchors, relevance-filtered):
+5. url: https://mirelleinspo.com/blog/long-vs-short-nails/negative-space-nails-minimalist | anchor_text: "how negative space nail designs hide regrowth without a solid color line" | type: cross-site | placement: H2 1 (colors section) — this post is already pre-linking here with matching phrase "low-maintenance nails that still look intentional," confirming reader relevance
+6. url: https://mirelleinspo.com/work-nails/nail-shapes-for-work | anchor_text: "which nail shapes read the most professional and low-effort at work" | type: cross-site | placement: H2 2 (shape section) — direct topical overlap on shape + low-maintenance framing
+
+Total: 6 links (within 4-6 cap).
+
+---
+
+## SECTION 12 — VOICE AND TONE
+- **recommended_voice:** Practical, slightly wry realist — a friend who's done the math on salon visits, not a trend reporter.
+- **tone_characteristics:** Direct and unfussy; confident without being preachy; acknowledges the cost/time reality openly; concrete over aspirational; light dry humor is welcome, never precious.
+- **language_style:** Short, declarative sentences. Second person throughout. Real numbers over vague claims ("two to three weeks," not "a while"). Minimal metaphor — this reader wants the answer, not the mood board.
+- **audience_match:** This reader has already decided low-maintenance is the priority; she doesn't need to be sold on the aesthetic, she needs the specifics. A tone that respects her time matches the exact promise of the post.
+
+---
+
+## SECTION 13 — EXTERNAL LINKS
+1. url: (Women.com nail trends 2026 feature, exact URL not confirmed via direct fetch — site:women.com search only) | context: cite the "clients gravitating toward manicures that look polished for weeks without constant upkeep" trend statement | anchor_suggestion: "nail industry trend data"
+2. url: (thelocalgem.com gel vs acrylic guide, confirmed via search) | context: cite real cost/cadence figures for gel vs acrylic fills | anchor_suggestion: "average cost comparison"
+
+Note: only 2 external links located with sufficient confidence during site: and direct search — third source (nailpro.com) returned no usable results in this research pass, consistent with the best-effort flag on that domain.
+
+---
+
+## SECTION 14 — EXECUTION PLAN
+
+### Block 1 — Keyword Execution
+- primary_keyword: low maintenance nails
+- top_3_density_baseline: 5
+- total_mention_target: 8 (baseline 5 + 3)
+- first_100_words_plan:
+  - mention_1: sentence 2 of introduction — framing the core problem/promise
+  - mention_2: sentence 4-5 of introduction — transitioning into what the post covers
+- first_half_target: 5 mentions — first 900 words
+- second_half_target: 3 mentions — second 900 words
+- strong_tag_rule: every one of the 8 mentions wrapped in `<strong>` tags, no exceptions
+- keywords_to_avoid_active: full list from Section 3 — never used as focus terms
+
+### Block 2 — Word Budget
+- total_target: 1800 words (±50 tolerance)
+- introduction: 230
+- conclusion: 180
+- h2_budgets:
+  1. What Nail Colors Hide Regrowth the Longest? — 320 words — complexity: medium
+  2. The Nail Shape That Actually Matters More Than Color — 250 words — complexity: low
+  3. Soap Nails and Milky Finishes — 260 words — complexity: medium
+  4. Gel vs Acrylic vs Regular Polish — 320 words — complexity: high
+  5. What to Actually Tell Your Nail Tech — 220 words — complexity: low
+  6. How Much You're Really Saving — 200 words — complexity: medium
+- tracking_rule: check running total after each H2; cut before moving on if over budget, don't compensate later
+
+### Block 3 — Image Plan
+- total_images: 5
+- hero_image: frontmatter only, never in body
+- body_images: 4
+- assignments:
+  1. place_after: H2 1 (colors) — section_context: swatch-style shot of 3-4 low-maintenance neutral/sheer shades on hand
+  2. place_after: H2 2 (shape) — section_context: squoval or round shape close-up, clean short-to-medium length
+  3. place_after: H2 3 (soap nails) — section_context: glossy soap-nail finish, wet-look close-up
+  4. place_after: H2 4 (gel/acrylic/polish) — section_context: side-by-side or single clean gel manicure showing minimal regrowth line
+- image_type_rule: all body images = inspirational nail design images related to topic. No infographics, no comparison charts.
+- path_rule: /images/blog/quick-last-minute-nails/low-maintenance-nail-colors/filename.webp
+
+### Block 4 — Opening Technique Assignments
+- Introduction: Technique 1 (The Claim) — open with the direct frustration/promise
+- H2 1 (Colors): Technique 2 (varies — direct answer per AEO rule)
+- H2 2 (Shape): Technique 3 (The Reframe) — "it's not just color"
+- H2 3 (Soap nails): Technique 2
+- H2 4 (Gel/acrylic/polish): Technique 3
+- H2 5 (Nail tech script): Technique 1
+- H2 6 (Cost): Technique 3
+- Conclusion: Technique 1 (The Claim)
+- banned_opener_rule: check every opener against banned_opening_approaches in Blog Gen prompt before writing the second sentence
+
+### Block 5 — Link Placements
+1. anchor: "5-minute nail art ideas" | url: /blog/quick-last-minute-nails/5-minute-nail-art-ideas | section: Intro or Conclusion | context: natural cluster mention | type: cluster-pillar
+2. anchor: "nails that last 3 weeks without chipping" | url: /blog/quick-last-minute-nails/nails-that-last-3-weeks | section: H2 4 | context: durability cross-reference | type: cluster-spoke
+3. anchor: "nail art techniques for shaky or non-dominant hands" | url: /blog/quick-last-minute-nails/nail-art-shaky-hands-non-dominant | section: H2 2 | context: accessibility cross-reference | type: cluster-spoke
+4. anchor: "quick date night nail ideas" | url: /blog/quick-last-minute-nails/quick-date-night-nails | section: Conclusion | context: light occasion mention | type: cluster-spoke
+5. anchor: "how negative space nail designs hide regrowth without a solid color line" | url: https://mirelleinspo.com/blog/long-vs-short-nails/negative-space-nails-minimalist | section: H2 1 | context: alternate regrowth-hiding technique | type: cross-site
+6. anchor: "which nail shapes read the most professional and low-effort at work" | url: https://mirelleinspo.com/work-nails/nail-shapes-for-work | section: H2 2 | context: workplace shape overlap | type: cross-site
+
+### Block 6 — AEO/GEO Plan
+- aeo_assignments:
+  1. "What nail colors hide regrowth the longest?" → H2 1 → direct 2-3 sentence answer immediately after heading
+  2. "What nail shape is the most low maintenance?" → H2 2 → direct answer immediately after heading
+  3. "What is a soap nail manicure?" → H2 3 → direct definition immediately after heading
+  4. "Do gel nails or acrylics grow out better?" → H2 4 → direct comparative answer immediately after heading
+  5. "What do I ask my nail tech for a low-maintenance manicure?" → H2 5 → direct script immediately after heading
+- geo_entity_statements:
+  1. entity: Soap nails → H2 3 → "Soap nails are a sheer, milky-finish manicure using translucent pink or nude polish with a high-gloss top coat, designed to look like freshly washed, bare nails."
+  2. entity: Squoval shape → H2 2 → "Squoval is a nail shape combining a squared tip with softened, rounded corners, reducing snag points and giving a more forgiving grow-out line than sharp square or pointed shapes."
+
+### Block 7 — Active Constraints
+- em_dash_banned: yes, replace with comma/new sentence/parentheses/but/restructure
+- banned_vocab_watch: elevate, journey, unleash, seamless, dive in, game-changer, effortlessly (overused in source material — use sparingly if at all)
+- british_english_active: colour, recognise, -ise, -our — every instance
+- keyword_density_reminder: check running total after every 2 H2s against 8-mention target, front-load density
+- image_path_reminder: /images/blog/quick-last-minute-nails/low-maintenance-nail-colors/filename.webp
+- internal_link_url_reminder: full paths only, cluster links = /blog/quick-last-minute-nails/[slug], cross-site = exact URL discovered
+- hero_image_reminder: frontmatter only, never in body
+- strong_tag_reminder: every primary keyword mention wrapped in strong tags, scan after every paragraph
