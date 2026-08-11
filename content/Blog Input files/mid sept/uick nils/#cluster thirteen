@@ -1,0 +1,506 @@
+{
+  "cluster_metadata": {
+    "cluster_topic": "Quick & Last-Minute Nails",
+    "topic_slug": "quick-last-minute-nails",
+    "target_audience": "Global, Tier 1 countries",
+    "total_posts": 13,
+    "intent_breakdown": {
+      "informational": 0,
+      "inspirational": 3,
+      "tutorial": 8,
+      "comparison": 2,
+      "seasonal_trend": 1
+    },
+    "pillar_post_slug": "5-minute-nail-art-ideas",
+    "created_date": "2026-08-12",
+    "inspiration_gallery_included": false,
+    "inspiration_gallery_instructions": "This cluster does NOT have an inspiration gallery page. Do not create, reference, or link to any /inspo/[pillar-slug]-inspiration-gallery URL for this cluster. The pillar post's internal_links object omits gallery_link entirely. Input Gen Agent and Blog Gen Agent must NOT insert a gallery link into the pillar post content for this cluster, even though the standard workflow normally includes one."
+  },
+
+  "existing_site_posts_excluded": [
+    {
+      "url": "https://mirelleinspo.com/work-nails/nails-for-job-interview",
+      "title": "Nails for a Job Interview: Colours & Styles That Work",
+      "inferred_primary_keyword": "nails for a job interview",
+      "inferred_intent": "tutorial",
+      "exclusion_reason": "Already exists on mirelleinspo.com — keyword reserved"
+    },
+    {
+      "url": "https://mirelleinspo.com (sibling post referenced, exact URL not confirmed)",
+      "title": "Press-On Nails for Work",
+      "inferred_primary_keyword": "press-on nails for work",
+      "inferred_intent": "informational",
+      "exclusion_reason": "Already exists on mirelleinspo.com (referenced as sibling post inside the job-interview article) — keyword reserved"
+    }
+  ],
+
+  "posts": [
+    {
+      "post_id": 1,
+      "role": "pillar",
+      "title": "5-Minute Nail Art Ideas",
+      "slug": "5-minute-nail-art-ideas",
+      "primary_keyword": "5 minute nail art",
+      "intent": "inspirational",
+      "search_mode": "inspiration_mode",
+      "suggested_hook_trigger": "Trigger 3 — Specificity/Numbers",
+      "search_demand_signals": [
+        "DIY Joy: dedicated '37 Quick but Awesome 5 Minute Nail Art Ideas' roundup",
+        "Pinterest: dedicated pin category and boards for the exact phrase",
+        "YouTube: sustained tutorial ecosystem built around single-color, dotting-tool, and sticker techniques under 5 minutes"
+      ],
+      "why_included": "Broadest, highest-demand keyword in the topic — proven multi-source, evergreen search volume anchoring the entire cluster.",
+      "internal_links": {
+        "links_to": [
+          { "slug": "quick-manicure-guide", "anchor_text": "the fastest legitimate at-home manicure routine", "type": "spoke" },
+          { "slug": "nails-that-last-3-weeks", "anchor_text": "nails that last 3 weeks without chipping", "type": "spoke" },
+          { "slug": "easy-nail-art-for-beginners", "anchor_text": "easy nail art tutorials for beginners", "type": "spoke" },
+          { "slug": "nail-art-shaky-hands-non-dominant", "anchor_text": "nail art techniques for shaky or non-dominant hands", "type": "spoke" },
+          { "slug": "gel-vs-press-on-vs-polish-time", "anchor_text": "gel vs press-on vs regular polish time comparison", "type": "spoke" },
+          { "slug": "low-maintenance-nail-colors", "anchor_text": "low-maintenance nail colors that hide regrowth", "type": "spoke" },
+          { "slug": "last-minute-halloween-nails", "anchor_text": "last-minute Halloween nail art ideas", "type": "spoke" },
+          { "slug": "last-minute-valentines-nails", "anchor_text": "last-minute Valentine's Day nail ideas", "type": "spoke" },
+          { "slug": "last-minute-christmas-nails", "anchor_text": "last-minute Christmas nails to do the night before", "type": "spoke" },
+          { "slug": "quick-nye-nails", "anchor_text": "New Year's Eve nails you can do in 10 minutes", "type": "spoke" },
+          { "slug": "quick-date-night-nails", "anchor_text": "quick date night nail ideas", "type": "spoke" },
+          { "slug": "last-minute-wedding-guest-nails", "anchor_text": "last-minute wedding guest nail ideas", "type": "spoke" }
+        ],
+        "receives_links_from": [
+          { "slug": "quick-manicure-guide", "anchor_text": "5-minute nail art ideas" },
+          { "slug": "nails-that-last-3-weeks", "anchor_text": "5-minute nail art ideas" },
+          { "slug": "easy-nail-art-for-beginners", "anchor_text": "5-minute nail art ideas" },
+          { "slug": "nail-art-shaky-hands-non-dominant", "anchor_text": "5-minute nail art ideas" },
+          { "slug": "gel-vs-press-on-vs-polish-time", "anchor_text": "5-minute nail art ideas" },
+          { "slug": "low-maintenance-nail-colors", "anchor_text": "5-minute nail art ideas" },
+          { "slug": "last-minute-halloween-nails", "anchor_text": "5-minute nail art ideas" },
+          { "slug": "last-minute-valentines-nails", "anchor_text": "5-minute nail art ideas" },
+          { "slug": "last-minute-christmas-nails", "anchor_text": "5-minute nail art ideas" },
+          { "slug": "quick-nye-nails", "anchor_text": "5-minute nail art ideas" },
+          { "slug": "quick-date-night-nails", "anchor_text": "5-minute nail art ideas" },
+          { "slug": "last-minute-wedding-guest-nails", "anchor_text": "5-minute nail art ideas" }
+        ]
+      },
+      "status": "approved"
+    },
+
+    {
+      "post_id": 2,
+      "role": "spoke",
+      "title": "Quick Manicure Guide: The Fastest Legit At-Home Routine",
+      "slug": "quick-manicure-guide",
+      "primary_keyword": "quick manicure",
+      "intent": "tutorial",
+      "search_mode": "how_to_execution_mode",
+      "suggested_hook_trigger": "Trigger 1 — Curiosity Gap",
+      "search_demand_signals": [
+        "Patch.com '10-Minute Manicure' editorial guide with full step-by-step routine",
+        "Walmart branded product category: Elegant Touch 'Express 3 Minute Manicure' product line confirms sustained commercial + search demand"
+      ],
+      "why_included": "Real branded product category plus editorial tutorials confirm sustained search behavior around a legitimate fast routine, not just product marketing.",
+      "internal_links": {
+        "links_to": [
+          { "slug": "5-minute-nail-art-ideas", "anchor_text": "5-minute nail art ideas", "type": "pillar" },
+          { "slug": "easy-nail-art-for-beginners", "anchor_text": "easy nail art tutorials for beginners", "type": "spoke" },
+          { "slug": "gel-vs-press-on-vs-polish-time", "anchor_text": "gel vs press-on vs regular polish time comparison", "type": "spoke" },
+          { "slug": "nails-that-last-3-weeks", "anchor_text": "nails that last 3 weeks without chipping", "type": "spoke" }
+        ],
+        "receives_links_from": [
+          { "slug": "5-minute-nail-art-ideas", "anchor_text": "the fastest legitimate at-home manicure routine" },
+          { "slug": "easy-nail-art-for-beginners", "anchor_text": "the fastest legit at-home manicure routine" },
+          { "slug": "gel-vs-press-on-vs-polish-time", "anchor_text": "the fastest at-home manicure routine" }
+        ]
+      },
+      "status": "approved"
+    },
+
+    {
+      "post_id": 3,
+      "role": "spoke",
+      "title": "Nails That Last 3 Weeks Without Chipping",
+      "slug": "nails-that-last-3-weeks",
+      "primary_keyword": "manicure that lasts 3 weeks",
+      "intent": "comparison",
+      "search_mode": "decision_mode",
+      "suggested_hook_trigger": "Trigger 1 — Curiosity Gap",
+      "search_demand_signals": [
+        "TimeOut Chicago 'No-Chip Ahoy' longevity feature comparing salon results over 3 weeks",
+        "CND Vinylux and Sally Hansen product review clusters repeatedly citing '10 days / 2-4 weeks without chipping'"
+      ],
+      "why_included": "Strong longevity-comparison demand across both salon editorial and product-review content — distinct from the time-cost angle in post 6.",
+      "internal_links": {
+        "links_to": [
+          { "slug": "5-minute-nail-art-ideas", "anchor_text": "5-minute nail art ideas", "type": "pillar" },
+          { "slug": "gel-vs-press-on-vs-polish-time", "anchor_text": "gel vs press-on vs regular polish time comparison", "type": "spoke" },
+          { "slug": "low-maintenance-nail-colors", "anchor_text": "low-maintenance nail colors that hide regrowth", "type": "spoke" },
+          { "slug": "quick-manicure-guide", "anchor_text": "the fastest legitimate at-home manicure routine", "type": "spoke" }
+        ],
+        "receives_links_from": [
+          { "slug": "5-minute-nail-art-ideas", "anchor_text": "nails that last 3 weeks without chipping" },
+          { "slug": "gel-vs-press-on-vs-polish-time", "anchor_text": "nails that last 3 weeks without chipping" },
+          { "slug": "low-maintenance-nail-colors", "anchor_text": "nails that last 3 weeks without chipping" },
+          { "slug": "quick-manicure-guide", "anchor_text": "nails that last 3 weeks without chipping" }
+        ]
+      },
+      "status": "approved"
+    },
+
+    {
+      "post_id": 4,
+      "role": "spoke",
+      "title": "Easy Nail Art for Beginners",
+      "slug": "easy-nail-art-for-beginners",
+      "primary_keyword": "easy nail art for beginners",
+      "intent": "tutorial",
+      "search_mode": "how_to_execution_mode",
+      "suggested_hook_trigger": "Trigger 1 — Curiosity Gap",
+      "search_demand_signals": [
+        "Dedicated YouTube playlists spanning years ('Easy Nail Art for Beginners!' series)",
+        "WonderHowTo dedicated hub page aggregating beginner tutorials",
+        "Standalone guide sites (The Curiously Creative) built entirely around this exact query"
+      ],
+      "why_included": "Persistent, proven exact-phrase query with a multi-year tutorial ecosystem behind it across at least 3 independent sources.",
+      "internal_links": {
+        "links_to": [
+          { "slug": "5-minute-nail-art-ideas", "anchor_text": "5-minute nail art ideas", "type": "pillar" },
+          { "slug": "nail-art-shaky-hands-non-dominant", "anchor_text": "nail art techniques for shaky or non-dominant hands", "type": "spoke" },
+          { "slug": "quick-manicure-guide", "anchor_text": "the fastest legit at-home manicure routine", "type": "spoke" },
+          { "slug": "quick-date-night-nails", "anchor_text": "quick date night nail ideas", "type": "spoke" }
+        ],
+        "receives_links_from": [
+          { "slug": "5-minute-nail-art-ideas", "anchor_text": "easy nail art tutorials for beginners" },
+          { "slug": "nail-art-shaky-hands-non-dominant", "anchor_text": "easy nail art for beginners" },
+          { "slug": "quick-manicure-guide", "anchor_text": "easy nail art tutorials for beginners" },
+          { "slug": "quick-date-night-nails", "anchor_text": "easy nail art for beginners" }
+        ]
+      },
+      "status": "approved"
+    },
+
+    {
+      "post_id": 5,
+      "role": "spoke",
+      "title": "Nail Art for Shaky Hands or Your Non-Dominant Hand",
+      "slug": "nail-art-shaky-hands-non-dominant",
+      "primary_keyword": "nail art non dominant hand",
+      "intent": "tutorial",
+      "search_mode": "how_to_execution_mode",
+      "suggested_hook_trigger": "Trigger 4 — Identity Mirroring",
+      "search_demand_signals": [
+        "TikTok hashtag cluster: #nondominanthand, #southpaw, #lefty with dedicated tutorial videos",
+        "AOL '8 Easy Nail Art Designs That Even Shaky Hands Can Do' editorial feature",
+        "Byrdie 'Ultimate Guide to Painting Your Nails' explicitly addressing non-dominant hand technique"
+      ],
+      "why_included": "Real accessibility-driven query missed by generic 'easy nails' roundups — proven cross-platform (TikTok + 2 editorial sources) with low existing competition.",
+      "internal_links": {
+        "links_to": [
+          { "slug": "5-minute-nail-art-ideas", "anchor_text": "5-minute nail art ideas", "type": "pillar" },
+          { "slug": "easy-nail-art-for-beginners", "anchor_text": "easy nail art tutorials for beginners", "type": "spoke" },
+          { "slug": "quick-manicure-guide", "anchor_text": "the fastest legit at-home manicure routine", "type": "spoke" },
+          { "slug": "low-maintenance-nail-colors", "anchor_text": "low-maintenance nail colors that hide regrowth", "type": "spoke" }
+        ],
+        "receives_links_from": [
+          { "slug": "5-minute-nail-art-ideas", "anchor_text": "nail art techniques for shaky or non-dominant hands" },
+          { "slug": "easy-nail-art-for-beginners", "anchor_text": "nail art techniques for shaky or non-dominant hands" }
+        ]
+      },
+      "status": "approved"
+    },
+
+    {
+      "post_id": 6,
+      "role": "spoke",
+      "title": "Gel vs Press-On vs Regular Polish: Which Takes Less Time",
+      "slug": "gel-vs-press-on-vs-polish-time",
+      "primary_keyword": "how long does a gel manicure take",
+      "intent": "comparison",
+      "search_mode": "decision_mode",
+      "suggested_hook_trigger": "Trigger 1 — Curiosity Gap",
+      "search_demand_signals": [
+        "Multiple editorial time-comparison breakdowns (AOL 'How Long Each Type of Manicure Should Last', Byrdie, spa-guide sites) all structured around this exact question",
+        "WSJ-reported 10% year-over-year rise in press-on nail searches, explicitly tied to time/effort tradeoffs vs salon visits"
+      ],
+      "why_included": "Distinct decision-stage query cluster targeting time-cost specifically — differentiates from post 3, which targets durability/chip-resistance rather than time investment.",
+      "internal_links": {
+        "links_to": [
+          { "slug": "5-minute-nail-art-ideas", "anchor_text": "5-minute nail art ideas", "type": "pillar" },
+          { "slug": "nails-that-last-3-weeks", "anchor_text": "nails that last 3 weeks without chipping", "type": "spoke" },
+          { "slug": "quick-manicure-guide", "anchor_text": "the fastest legitimate at-home manicure routine", "type": "spoke" },
+          { "slug": "quick-date-night-nails", "anchor_text": "quick date night nail ideas", "type": "spoke" }
+        ],
+        "receives_links_from": [
+          { "slug": "5-minute-nail-art-ideas", "anchor_text": "gel vs press-on vs regular polish time comparison" },
+          { "slug": "nails-that-last-3-weeks", "anchor_text": "gel vs press-on vs regular polish time comparison" },
+          { "slug": "quick-manicure-guide", "anchor_text": "gel vs press-on vs regular polish time comparison" }
+        ]
+      },
+      "status": "approved"
+    },
+
+    {
+      "post_id": 7,
+      "role": "spoke",
+      "title": "Low-Maintenance Nail Colors That Hide Regrowth",
+      "slug": "low-maintenance-nail-colors",
+      "primary_keyword": "low maintenance nails",
+      "intent": "seasonal_trend",
+      "search_mode": "aesthetic_identity_mode",
+      "suggested_hook_trigger": "Trigger 4 — Identity Mirroring",
+      "search_demand_signals": [
+        "Vogue Scandinavia 2026 trend coverage confirming 'refined simplicity' and restraint as the dominant 2026 nail direction",
+        "nailtrail.com 2026 trend roundup explicitly framing sheer, effortless finishes as 'quiet luxury' and low-effort by design"
+      ],
+      "why_included": "Rides the confirmed 2026 'effortless / quiet luxury' trend wave — distinct from post 3 by focusing on color/finish choice (regrowth camouflage) rather than product durability.",
+      "internal_links": {
+        "links_to": [
+          { "slug": "5-minute-nail-art-ideas", "anchor_text": "5-minute nail art ideas", "type": "pillar" },
+          { "slug": "nails-that-last-3-weeks", "anchor_text": "nails that last 3 weeks without chipping", "type": "spoke" },
+          { "slug": "nail-art-shaky-hands-non-dominant", "anchor_text": "nail art techniques for shaky or non-dominant hands", "type": "spoke" },
+          { "slug": "quick-date-night-nails", "anchor_text": "quick date night nail ideas", "type": "spoke" }
+        ],
+        "receives_links_from": [
+          { "slug": "5-minute-nail-art-ideas", "anchor_text": "low-maintenance nail colors that hide regrowth" },
+          { "slug": "nails-that-last-3-weeks", "anchor_text": "low-maintenance nail colors that hide regrowth" },
+          { "slug": "nail-art-shaky-hands-non-dominant", "anchor_text": "low-maintenance nail colors that hide regrowth" }
+        ]
+      },
+      "status": "approved"
+    },
+
+    {
+      "post_id": 8,
+      "role": "spoke",
+      "title": "Last-Minute Halloween Nail Art (5-Minute Ideas)",
+      "slug": "last-minute-halloween-nails",
+      "primary_keyword": "last minute halloween nail art",
+      "intent": "tutorial",
+      "search_mode": "how_to_execution_mode",
+      "suggested_hook_trigger": "Trigger 1 — Curiosity Gap",
+      "search_demand_signals": [
+        "Dedicated YouTube video: 'Last Minute Halloween Nail Art ANYONE Can Do'",
+        "sonailicious editorial explicitly describing its design as 'a perfect last minute Halloween nail art'",
+        "Multiple Pinterest board categories using the exact phrase 'Easy Last Minute Halloween Nail Arts Inspo'"
+      ],
+      "why_included": "Exact-phrase demand confirmed across 3 independent sources; owns the time-crunch angle specifically, distinct from generic Halloween nail content.",
+      "internal_links": {
+        "links_to": [
+          { "slug": "5-minute-nail-art-ideas", "anchor_text": "5-minute nail art ideas", "type": "pillar" },
+          { "slug": "last-minute-christmas-nails", "anchor_text": "last-minute Christmas nails to do the night before", "type": "spoke" },
+          { "slug": "last-minute-valentines-nails", "anchor_text": "last-minute Valentine's Day nail ideas", "type": "spoke" },
+          { "slug": "easy-nail-art-for-beginners", "anchor_text": "easy nail art tutorials for beginners", "type": "spoke" }
+        ],
+        "receives_links_from": [
+          { "slug": "5-minute-nail-art-ideas", "anchor_text": "last-minute Halloween nail art ideas" },
+          { "slug": "last-minute-christmas-nails", "anchor_text": "last-minute Halloween nail art ideas" },
+          { "slug": "last-minute-valentines-nails", "anchor_text": "last-minute Halloween nail art ideas" }
+        ]
+      },
+      "status": "approved"
+    },
+
+    {
+      "post_id": 9,
+      "role": "spoke",
+      "title": "Last-Minute Valentine's Day Nails",
+      "slug": "last-minute-valentines-nails",
+      "primary_keyword": "last minute valentine's nail art",
+      "intent": "tutorial",
+      "search_mode": "how_to_execution_mode",
+      "suggested_hook_trigger": "Trigger 1 — Curiosity Gap",
+      "search_demand_signals": [
+        "Dedicated blog post titled 'Some Quick and Easy DIY Valentine's Nail Art Ideas...last minute nail art ideas'",
+        "Dedicated Pinterest pin titled 'Last Minute Nail Art - Valentine's Day Special'",
+        "Editorial (livingaftermidnite.com) explicitly describing searching for V-day nail inspo 'until the very very last minute'"
+      ],
+      "why_included": "Recurring seasonal query with proven editorial and Pinterest coverage; the single-accent-nail technique is a distinct low-effort angle within the holiday.",
+      "internal_links": {
+        "links_to": [
+          { "slug": "5-minute-nail-art-ideas", "anchor_text": "5-minute nail art ideas", "type": "pillar" },
+          { "slug": "last-minute-halloween-nails", "anchor_text": "last-minute Halloween nail art ideas", "type": "spoke" },
+          { "slug": "quick-date-night-nails", "anchor_text": "quick date night nail ideas", "type": "spoke" },
+          { "slug": "quick-nye-nails", "anchor_text": "New Year's Eve nails you can do in 10 minutes", "type": "spoke" }
+        ],
+        "receives_links_from": [
+          { "slug": "5-minute-nail-art-ideas", "anchor_text": "last-minute Valentine's Day nail ideas" },
+          { "slug": "last-minute-halloween-nails", "anchor_text": "last-minute Valentine's Day nail ideas" },
+          { "slug": "quick-date-night-nails", "anchor_text": "last-minute Valentine's Day nail ideas" }
+        ]
+      },
+      "status": "approved"
+    },
+
+    {
+      "post_id": 10,
+      "role": "spoke",
+      "title": "Last-Minute Christmas Nails You Can Do the Night Before",
+      "slug": "last-minute-christmas-nails",
+      "primary_keyword": "last minute christmas nails",
+      "intent": "tutorial",
+      "search_mode": "how_to_execution_mode",
+      "suggested_hook_trigger": "Trigger 3 — Specificity/Numbers",
+      "search_demand_signals": [
+        "Stolen Inspiration roundup explicitly targeting readers who want holiday nails 'you can achieve last minute'",
+        "High-volume, sustained holiday nail content ecosystem (44+ designs roundups, dedicated seasonal traffic)"
+      ],
+      "why_included": "Highest-volume holiday in the set; explicit 'last minute' framing confirmed directly in live editorial content targeting this exact use case.",
+      "internal_links": {
+        "links_to": [
+          { "slug": "5-minute-nail-art-ideas", "anchor_text": "5-minute nail art ideas", "type": "pillar" },
+          { "slug": "last-minute-halloween-nails", "anchor_text": "last-minute Halloween nail art ideas", "type": "spoke" },
+          { "slug": "quick-nye-nails", "anchor_text": "New Year's Eve nails you can do in 10 minutes", "type": "spoke" },
+          { "slug": "last-minute-wedding-guest-nails", "anchor_text": "last-minute wedding guest nail ideas", "type": "spoke" }
+        ],
+        "receives_links_from": [
+          { "slug": "5-minute-nail-art-ideas", "anchor_text": "last-minute Christmas nails to do the night before" },
+          { "slug": "last-minute-halloween-nails", "anchor_text": "last-minute Christmas nails to do the night before" },
+          { "slug": "quick-nye-nails", "anchor_text": "last-minute Christmas nails to do the night before" }
+        ]
+      },
+      "status": "approved"
+    },
+
+    {
+      "post_id": 11,
+      "role": "spoke",
+      "title": "New Year's Eve Nails You Can Do in 10 Minutes",
+      "slug": "quick-nye-nails",
+      "primary_keyword": "quick nye nails",
+      "intent": "inspirational",
+      "search_mode": "inspiration_mode",
+      "suggested_hook_trigger": "Trigger 2 — FOMO/Trend",
+      "search_demand_signals": [
+        "Dedicated NYE/party press-on product category lines (Walmart 'Party Night' collection) confirming commercial + search demand",
+        "Consistent same-day/same-night party-nail search pattern matching the confirmed Halloween/Valentine's/Christmas 'last minute' demand cluster"
+      ],
+      "why_included": "Completes the major-holiday-emergency set; NYE is inherently a same-day/same-night decision occasion, matching the validated pattern from the other 3 holidays.",
+      "internal_links": {
+        "links_to": [
+          { "slug": "5-minute-nail-art-ideas", "anchor_text": "5-minute nail art ideas", "type": "pillar" },
+          { "slug": "last-minute-christmas-nails", "anchor_text": "last-minute Christmas nails to do the night before", "type": "spoke" },
+          { "slug": "quick-date-night-nails", "anchor_text": "quick date night nail ideas", "type": "spoke" },
+          { "slug": "last-minute-valentines-nails", "anchor_text": "last-minute Valentine's Day nail ideas", "type": "spoke" }
+        ],
+        "receives_links_from": [
+          { "slug": "5-minute-nail-art-ideas", "anchor_text": "New Year's Eve nails you can do in 10 minutes" },
+          { "slug": "last-minute-christmas-nails", "anchor_text": "New Year's Eve nails you can do in 10 minutes" },
+          { "slug": "last-minute-valentines-nails", "anchor_text": "New Year's Eve nails you can do in 10 minutes" }
+        ]
+      },
+      "status": "approved"
+    },
+
+    {
+      "post_id": 12,
+      "role": "spoke",
+      "title": "Quick Date Night Nails",
+      "slug": "quick-date-night-nails",
+      "primary_keyword": "date night nails",
+      "intent": "inspirational",
+      "search_mode": "inspiration_mode",
+      "suggested_hook_trigger": "Trigger 2 — FOMO/Trend",
+      "search_demand_signals": [
+        "RainyRoses editorial explicitly framing press-ons as 'perfect for last-minute date preparations'",
+        "Maniology and Nail Designs Daily dedicated 'Date Night Nails' content categories with sustained roundup coverage"
+      ],
+      "why_included": "Validated real occasion-driven demand with a genuine time-pressure angle (preparing before a date with limited notice), distinct from generic occasion-nail content.",
+      "internal_links": {
+        "links_to": [
+          { "slug": "5-minute-nail-art-ideas", "anchor_text": "5-minute nail art ideas", "type": "pillar" },
+          { "slug": "easy-nail-art-for-beginners", "anchor_text": "easy nail art tutorials for beginners", "type": "spoke" },
+          { "slug": "last-minute-valentines-nails", "anchor_text": "last-minute Valentine's Day nail ideas", "type": "spoke" },
+          { "slug": "quick-nye-nails", "anchor_text": "New Year's Eve nails you can do in 10 minutes", "type": "spoke" }
+        ],
+        "receives_links_from": [
+          { "slug": "5-minute-nail-art-ideas", "anchor_text": "quick date night nail ideas" },
+          { "slug": "easy-nail-art-for-beginners", "anchor_text": "quick date night nail ideas" },
+          { "slug": "last-minute-valentines-nails", "anchor_text": "quick date night nail ideas" },
+          { "slug": "gel-vs-press-on-vs-polish-time", "anchor_text": "quick date night nail ideas" },
+          { "slug": "low-maintenance-nail-colors", "anchor_text": "quick date night nail ideas" }
+        ]
+      },
+      "status": "approved"
+    },
+
+    {
+      "post_id": 13,
+      "role": "spoke",
+      "title": "Last-Minute Wedding Guest Nails",
+      "slug": "last-minute-wedding-guest-nails",
+      "primary_keyword": "last minute wedding guest nails",
+      "intent": "tutorial",
+      "search_mode": "how_to_execution_mode",
+      "suggested_hook_trigger": "Trigger 1 — Curiosity Gap",
+      "search_demand_signals": [
+        "Dedicated YouTube video titled 'Quick Last Minute Wedding Guest Nails. ONLY $7'",
+        "Patch.com '10-Minute Manicure' editorial explicitly framed around forgetting a wedding-day manicure appointment",
+        "Walmart verified product review: 'These worked well for me for a last minute wedding'"
+      ],
+      "why_included": "Exact-phrase YouTube title match plus editorial and verified-purchase confirmation of the specific last-minute-wedding use case — distinct from evergreen 'wedding guest nails' inspiration content.",
+      "internal_links": {
+        "links_to": [
+          { "slug": "5-minute-nail-art-ideas", "anchor_text": "5-minute nail art ideas", "type": "pillar" },
+          { "slug": "quick-manicure-guide", "anchor_text": "the fastest legitimate at-home manicure routine", "type": "spoke" },
+          { "slug": "last-minute-christmas-nails", "anchor_text": "last-minute Christmas nails to do the night before", "type": "spoke" },
+          { "slug": "nails-that-last-3-weeks", "anchor_text": "nails that last 3 weeks without chipping", "type": "spoke" }
+        ],
+        "receives_links_from": [
+          { "slug": "5-minute-nail-art-ideas", "anchor_text": "last-minute wedding guest nail ideas" },
+          { "slug": "last-minute-christmas-nails", "anchor_text": "last-minute wedding guest nail ideas" }
+        ]
+      },
+      "status": "approved"
+    }
+  ],
+
+  "keyword_ownership_registry": {
+    "description": "Master list of all primary keywords — one per post, no overlaps, includes existing site posts",
+    "entries": [
+      { "primary_keyword": "5 minute nail art", "owned_by_slug": "5-minute-nail-art-ideas", "owned_by_title": "5-Minute Nail Art Ideas", "source": "new post" },
+      { "primary_keyword": "quick manicure", "owned_by_slug": "quick-manicure-guide", "owned_by_title": "Quick Manicure Guide: The Fastest Legit At-Home Routine", "source": "new post" },
+      { "primary_keyword": "manicure that lasts 3 weeks", "owned_by_slug": "nails-that-last-3-weeks", "owned_by_title": "Nails That Last 3 Weeks Without Chipping", "source": "new post" },
+      { "primary_keyword": "easy nail art for beginners", "owned_by_slug": "easy-nail-art-for-beginners", "owned_by_title": "Easy Nail Art for Beginners", "source": "new post" },
+      { "primary_keyword": "nail art non dominant hand", "owned_by_slug": "nail-art-shaky-hands-non-dominant", "owned_by_title": "Nail Art for Shaky Hands or Your Non-Dominant Hand", "source": "new post" },
+      { "primary_keyword": "how long does a gel manicure take", "owned_by_slug": "gel-vs-press-on-vs-polish-time", "owned_by_title": "Gel vs Press-On vs Regular Polish: Which Takes Less Time", "source": "new post" },
+      { "primary_keyword": "low maintenance nails", "owned_by_slug": "low-maintenance-nail-colors", "owned_by_title": "Low-Maintenance Nail Colors That Hide Regrowth", "source": "new post" },
+      { "primary_keyword": "last minute halloween nail art", "owned_by_slug": "last-minute-halloween-nails", "owned_by_title": "Last-Minute Halloween Nail Art (5-Minute Ideas)", "source": "new post" },
+      { "primary_keyword": "last minute valentine's nail art", "owned_by_slug": "last-minute-valentines-nails", "owned_by_title": "Last-Minute Valentine's Day Nails", "source": "new post" },
+      { "primary_keyword": "last minute christmas nails", "owned_by_slug": "last-minute-christmas-nails", "owned_by_title": "Last-Minute Christmas Nails You Can Do the Night Before", "source": "new post" },
+      { "primary_keyword": "quick nye nails", "owned_by_slug": "quick-nye-nails", "owned_by_title": "New Year's Eve Nails You Can Do in 10 Minutes", "source": "new post" },
+      { "primary_keyword": "date night nails", "owned_by_slug": "quick-date-night-nails", "owned_by_title": "Quick Date Night Nails", "source": "new post" },
+      { "primary_keyword": "last minute wedding guest nails", "owned_by_slug": "last-minute-wedding-guest-nails", "owned_by_title": "Last-Minute Wedding Guest Nails", "source": "new post" },
+      { "primary_keyword": "nails for a job interview", "owned_by_slug": "nails-for-job-interview", "owned_by_title": "Nails for a Job Interview: Colours & Styles That Work", "source": "existing site post" },
+      { "primary_keyword": "press-on nails for work", "owned_by_slug": "press-on-nails-for-work", "owned_by_title": "Press-On Nails for Work", "source": "existing site post" }
+    ]
+  },
+
+  "merged_posts_log": [
+    {
+      "original_topics": ["Nails You Don't Have to Redo Every Week (durable color and finish picks)", "Low-Maintenance Nails That Last 3 Weeks"],
+      "merged_into": "Nails That Last 3 Weeks Without Chipping",
+      "reason": "Near-identical intent and keyword overlap — both targeted durability/longevity with no distinct search query separating them."
+    },
+    {
+      "original_topics": ["One Hand Nail Art", "Nail Art with Non-Dominant Hand"],
+      "merged_into": "Nail Art for Shaky Hands or Your Non-Dominant Hand",
+      "reason": "Same underlying query cluster confirmed via TikTok hashtag research — 'one hand' and 'non-dominant hand' phrasing map to the same searcher intent."
+    }
+  ],
+
+  "killed_posts_log": [
+    {
+      "topic": "Lazy girl nails",
+      "reason": "Only 1 weak signal found — a mood/aesthetic tag rather than a distinct, measurable search query. Failed the 2-source validation rule."
+    },
+    {
+      "topic": "Exam nails / finals week nails",
+      "reason": "No demand — 'finals week' search and social content is entirely study-stress/academic in nature with zero nail-related crossover found across TikTok or web search."
+    },
+    {
+      "topic": "Nails for a job interview",
+      "reason": "Existing post conflict — already live on mirelleinspo.com at /work-nails/nails-for-job-interview, keyword reserved."
+    },
+    {
+      "topic": "Press-on nails for work",
+      "reason": "Existing post conflict — referenced as a live sibling post inside the job-interview article, keyword reserved."
+    }
+  ]
+}
