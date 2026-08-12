@@ -1,0 +1,103 @@
+# Stories Route
+
+Route: `/stories` (listing), `/stories/[slug]` (single story)
+
+## Purpose
+
+Nail community interviews/features. Two-way conversation format — a Mirellé
+author writes the piece, but it's typically built around a **featured**
+person (the nail artist/tech being interviewed) who gets their own credit
+section.
+
+## Files
+
+```
+src/app/stories/page.tsx              — listing page (grid, pagination, category filter)
+src/app/stories/[slug]/page.tsx       — single story page
+src/lib/stories.ts                    — markdown loader + query helpers
+src/types/stories.ts                  — Story, StoryBodyImage, StoryFeaturedPerson types
+src/components/Stories/
+  StoriesGrid.tsx                     — card grid (listing page)
+  StoryFeatured.tsx                   — featured/interviewee card
+  StoryAbout.tsx                      — "About Mirellé" section
+  StoryFinalNewsletter.tsx            — end-of-page newsletter signup
+  StoryInlineNewsletter.tsx           — thin banner variant (not used by
+                                          default — SocialFollowCTA is used
+                                          at the 50% body break instead)
+  StoryReadMore.tsx                   — related stories grid, up to 9
+src/content/stories/*.md              — story content files
+```
+
+Content type is plain **Markdown** (`.md`), not MDX — no JSX inside content.
+
+## Content file format
+
+```yaml
+---
+title: "Story title"
+excerpt: "One-line summary for cards/meta"
+date: "2026-08-01"
+author: "author-slug"                 # must match a slug in src/data/authors.ts
+category: "Nail Stories"
+image: "/images/stories/hero.jpg"     # hero, 16:9 (1200x675 min, Discover spec)
+imageAlt: "Alt text for hero"
+creditBodyImages: true                # master on/off switch for all body image credit lines
+readTime: 6
+canonical: "https://mirelleinspo.com/stories/slug"
+tags: ["tag1", "tag2"]
+
+bodyImages:                           # optional, images placed inside the article body
+  - src: "/images/stories/img1.jpg"
+    alt: "Alt text"
+    creditSocialLink: "https://instagram.com/handle"   # optional
+    creditDisplayText: "Photo: @handle"                # optional — if omitted, no credit line renders
+    afterHeading: 0                    # renders after the Nth <h2> (0 = before the first h2, i.e. right after the intro)
+
+featured:                             # optional — the interviewee/source, shown above AuthorCard
+  name: "Person Name"
+  image: "/images/stories/person.jpg"
+  bio: "Short bio / role"
+  social: "https://instagram.com/handle"   # optional
+---
+
+Article body in plain markdown. Use `## Heading` for section breaks —
+bodyImages and the SocialFollowCTA break are positioned relative to these
+h2 boundaries.
+```
+
+## Page layout (top to bottom)
+
+1. Breadcrumbs — Home / Stories / [title]
+2. Category label
+3. H1 title
+4. Byline — author + date
+5. Hero image (16:9, left-aligned with title, can extend wider than the text column)
+6. Article body — markdown content, with:
+   - body images (from `bodyImages` frontmatter) inserted after their specified heading
+   - `SocialFollowCTA` inserted automatically at the halfway point of the article
+7. `StoryFeatured` — only renders if `featured` is set in frontmatter
+8. `AuthorCard` — only renders if `author` slug resolves
+9. `StoryAbout`
+10. `StoryFinalNewsletter`
+11. `StoryReadMore` — up to 9 related stories (same category first, then others)
+
+## Layout notes
+
+- Title/byline/body/AuthorCard column: max-width `800px`
+- Hero image: max-width `1000px`, left-aligned to the same edge as the title (not centered independently)
+- Body images: max-width `560px`, centered within the text column, `4:5` aspect on mobile / `3:4` on larger screens — intentionally narrower than both hero and text column width
+- All widths responsive; no fixed pixel widths outside these max-widths
+
+## Known dependencies (not part of this route, must already exist)
+
+- `@/lib/authors` → `getAuthor(slug)`
+- `@/components/Breadcrumbs`
+- `@/components/Blog/AuthorCard`
+- `@/components/ui/SocialFollowCTA`
+- `remark`, `remark-gfm`, `remark-html`, `gray-matter` (npm packages)
+
+## Open items / assumptions
+
+- `StoryReadMore` groups by exact `category` string match — categories should be entered consistently across story files.
+- No pagination inside a single story; `StoryReadMore` caps at 9 regardless of how many related stories exist.
+- `creditBodyImages: false` in frontmatter suppresses all credit lines for that story, even if individual `bodyImages` entries have `creditDisplayText` set.
