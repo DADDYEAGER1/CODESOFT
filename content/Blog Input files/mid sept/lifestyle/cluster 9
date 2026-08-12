@@ -1,0 +1,344 @@
+{
+  "cluster_metadata": {
+    "cluster_topic": "Nails by Lifestyle",
+    "topic_slug": "nails-by-lifestyle",
+    "target_audience": "Global, Tier 1 countries",
+    "total_posts": 9,
+    "intent_breakdown": {
+      "informational": 4,
+      "inspirational": 1,
+      "tutorial": 4,
+      "comparison": 0,
+      "seasonal_trend": 0
+    },
+    "pillar_post_slug": "gym-nails",
+    "gallery_exists": false,
+    "template": "centered",
+    "default_image_count_per_post": 7,
+    "created_date": "2026-08-13"
+  },
+
+  "site_scan_note": "Full site:mirelleinspo.com cannibalization scan was skipped per user instruction. A partial conflict was discovered incidentally during external research and is logged below. No formal existing_posts_registry was built — user should independently verify no other overlaps exist before publishing.",
+
+  "existing_site_posts_excluded": [
+    {
+      "url": "https://mirelleinspo.com/work-nails/professional-nail-length-for-work",
+      "title": "Professional Nail Length for Work",
+      "inferred_primary_keyword": "professional nail length",
+      "inferred_intent": "informational",
+      "exclusion_reason": "Already exists on mirelleinspo.com — keyword reserved. Discovered incidentally during research for 'typing all day' spoke, not via formal site scan."
+    },
+    {
+      "url": "https://mirelleinspo.com/work-nails/nail-shapes-for-work",
+      "title": "Nail Shapes for Work",
+      "inferred_primary_keyword": "nail shapes for work",
+      "inferred_intent": "informational",
+      "exclusion_reason": "Already exists on mirelleinspo.com — keyword reserved. Discovered incidentally during research for 'typing all day' spoke, not via formal site scan."
+    },
+    {
+      "url": "https://mirelleinspo.com/blog/hiking-outdoor-nails/camping-nails",
+      "title": "Camping Nails: 20 Outdoor Looks Everyone's Wearing in 2026",
+      "inferred_primary_keyword": "camping nails",
+      "inferred_intent": "inspirational",
+      "exclusion_reason": "Site already owns hiking/outdoor/camping nails space, including references to 'hiking nails' and 'national park nails' as existing content. Caused the Hikers/Outdoor lifestyle idea to be killed entirely."
+    }
+  ],
+
+  "posts": [
+    {
+      "post_id": 1,
+      "role": "pillar",
+      "title": "Nails for Gym Goers: Durable Shapes That Survive Lifting",
+      "slug": "gym-nails",
+      "primary_keyword": "gym nails",
+      "intent": "informational",
+      "search_demand_signals": [
+        "Pinterest: dedicated boards '50+ Best Sporty Nails Designs for Gym and Home Workouts'",
+        "TikTok/Lemon8: #gymnails, #bluecollarwoman-adjacent fitness nail content",
+        "Multiple dedicated blogs: mobilenailtech.ca, transvitae.com (coach-authored), c-livia.com"
+      ],
+      "why_included": "Recurring cross-platform niche term with proven demand and no site overlap. Broadest keyword in the cluster, natural hub for durability/shape guidance.",
+      "image_count": 7,
+      "internal_links": {
+        "links_to": [
+          { "slug": "swimming-nails", "anchor_text": "chlorine resistant nails", "type": "spoke" },
+          { "slug": "manual-labor-nails", "anchor_text": "nails for manual labor", "type": "spoke" },
+          { "slug": "press-on-nails-active-lifestyle", "anchor_text": "press-on nails for active lifestyle", "type": "spoke" },
+          { "slug": "gardener-nails", "anchor_text": "nails for gardeners", "type": "spoke" },
+          { "slug": "typing-nails", "anchor_text": "best nail shape for typing", "type": "spoke" },
+          { "slug": "travel-nails", "anchor_text": "travel nail care", "type": "spoke" },
+          { "slug": "new-mom-nails", "anchor_text": "non-toxic nails for moms", "type": "spoke" },
+          { "slug": "musician-nails", "anchor_text": "nails for piano players", "type": "spoke" }
+        ],
+        "receives_links_from": [
+          { "slug": "swimming-nails", "anchor_text": "gym nails" },
+          { "slug": "manual-labor-nails", "anchor_text": "gym nails" },
+          { "slug": "typing-nails", "anchor_text": "gym nails" },
+          { "slug": "gardener-nails", "anchor_text": "gym nails" },
+          { "slug": "press-on-nails-active-lifestyle", "anchor_text": "gym nails" },
+          { "slug": "travel-nails", "anchor_text": "gym nails" },
+          { "slug": "new-mom-nails", "anchor_text": "gym nails" },
+          { "slug": "musician-nails", "anchor_text": "gym nails" }
+        ]
+      },
+      "status": "approved"
+    },
+    {
+      "post_id": 2,
+      "role": "spoke",
+      "title": "Nails That Survive Swimming: Chlorine-Proof Prep & Products",
+      "slug": "swimming-nails",
+      "primary_keyword": "chlorine resistant nails",
+      "intent": "tutorial",
+      "search_demand_signals": [
+        "Multiple dedicated 'ultimate guide' posts from mycleannails.com (2 separate guides)",
+        "Salon/expert blogs: Glam, Enchanted Escape Nail Spa, Pretty Designs"
+      ],
+      "why_included": "High volume of standalone how-to content proves consistent search intent around a specific pain point (chlorine damage).",
+      "image_count": 7,
+      "internal_links": {
+        "links_to": [
+          { "slug": "gym-nails", "anchor_text": "gym nails", "type": "pillar" },
+          { "slug": "press-on-nails-active-lifestyle", "anchor_text": "press-on nails for active lifestyle", "type": "spoke" },
+          { "slug": "travel-nails", "anchor_text": "travel nail care", "type": "spoke" },
+          { "slug": "manual-labor-nails", "anchor_text": "nails for manual labor", "type": "spoke" }
+        ],
+        "receives_links_from": [
+          { "slug": "gym-nails", "anchor_text": "chlorine resistant nails" },
+          { "slug": "press-on-nails-active-lifestyle", "anchor_text": "chlorine resistant nails" },
+          { "slug": "travel-nails", "anchor_text": "chlorine resistant nails" }
+        ]
+      },
+      "status": "approved"
+    },
+    {
+      "post_id": 3,
+      "role": "spoke",
+      "title": "Nails for Manual Labor Jobs: Short, Reinforced Options",
+      "slug": "manual-labor-nails",
+      "primary_keyword": "nails for manual labor",
+      "intent": "informational",
+      "search_demand_signals": [
+        "TikTok: #bluecollarwoman / #bluecollarbabe hashtag community (1.2M posts on 'Nails for Manual Labor' discover page)",
+        "Dedicated expert guides: Clivia (c-livia.com), Nailstiq"
+      ],
+      "why_included": "Dedicated hashtag community plus expert-authored guides validate a distinct, underserved niche.",
+      "image_count": 7,
+      "internal_links": {
+        "links_to": [
+          { "slug": "gym-nails", "anchor_text": "gym nails", "type": "pillar" },
+          { "slug": "gardener-nails", "anchor_text": "nails for gardeners", "type": "spoke" },
+          { "slug": "typing-nails", "anchor_text": "best nail shape for typing", "type": "spoke" },
+          { "slug": "swimming-nails", "anchor_text": "chlorine resistant nails", "type": "spoke" }
+        ],
+        "receives_links_from": [
+          { "slug": "gym-nails", "anchor_text": "nails for manual labor" },
+          { "slug": "gardener-nails", "anchor_text": "nails for manual labor" },
+          { "slug": "swimming-nails", "anchor_text": "nails for manual labor" }
+        ]
+      },
+      "status": "approved"
+    },
+    {
+      "post_id": 4,
+      "role": "spoke",
+      "title": "Nail Shapes for Typing All Day: Comfort & No-Snag Guide",
+      "slug": "typing-nails",
+      "primary_keyword": "best nail shape for typing",
+      "intent": "tutorial",
+      "search_demand_signals": [
+        "TikTok: #techbaddies keyboard/typing nail content",
+        "Dedicated experiment post: moonleehome.com tested 4 shapes over 8 hours",
+        "reallywellthanks.com dedicated typing-nails guide"
+      ],
+      "why_included": "Differentiated angle (comfort/ergonomics/no-snag mechanics) from existing site posts, which cover dress-code professionalism. Avoids cannibalization while capturing distinct search intent.",
+      "differentiation_note": "MUST stay focused on physical typing mechanics (keycap snagging, speed, RSI, silicone keyboard covers) — NOT office dress-code or professionalism framing, which is already covered by /work-nails/professional-nail-length-for-work and /work-nails/nail-shapes-for-work.",
+      "image_count": 7,
+      "internal_links": {
+        "links_to": [
+          { "slug": "gym-nails", "anchor_text": "gym nails", "type": "pillar" },
+          { "slug": "musician-nails", "anchor_text": "nails for piano players", "type": "spoke" },
+          { "slug": "manual-labor-nails", "anchor_text": "nails for manual labor", "type": "spoke" }
+        ],
+        "receives_links_from": [
+          { "slug": "gym-nails", "anchor_text": "best nail shape for typing" },
+          { "slug": "musician-nails", "anchor_text": "best nail shape for typing" },
+          { "slug": "manual-labor-nails", "anchor_text": "best nail shape for typing" }
+        ]
+      },
+      "status": "approved"
+    },
+    {
+      "post_id": 5,
+      "role": "spoke",
+      "title": "Nails for Gardeners: Protective Routines That Hide Soil Stains",
+      "slug": "gardener-nails",
+      "primary_keyword": "nails for gardeners",
+      "intent": "informational",
+      "search_demand_signals": [
+        "6+ dedicated blog posts: gardening.org, Nails by Paris, Radiant Rose Beauty Room, Oh Lala Nail Bar, Dérmica MedEsthetics, HereSpa",
+        "Consistent recurring topic across salon and niche gardening sites"
+      ],
+      "why_included": "Very strong, repeated demand signal — one of the most densely covered lifestyle niches found in research.",
+      "image_count": 7,
+      "internal_links": {
+        "links_to": [
+          { "slug": "gym-nails", "anchor_text": "gym nails", "type": "pillar" },
+          { "slug": "manual-labor-nails", "anchor_text": "nails for manual labor", "type": "spoke" },
+          { "slug": "travel-nails", "anchor_text": "travel nail care", "type": "spoke" }
+        ],
+        "receives_links_from": [
+          { "slug": "gym-nails", "anchor_text": "nails for gardeners" },
+          { "slug": "manual-labor-nails", "anchor_text": "nails for gardeners" }
+        ]
+      },
+      "status": "approved"
+    },
+    {
+      "post_id": 6,
+      "role": "spoke",
+      "title": "Press-On Nails for Active Lifestyles: Fitness-Friendly Picks",
+      "slug": "press-on-nails-active-lifestyle",
+      "primary_keyword": "press-on nails for active lifestyle",
+      "intent": "inspirational",
+      "search_demand_signals": [
+        "Glamnetic dedicated product line and blog content",
+        "Forbes editorial roundup of tested press-on nails",
+        "LKEnail and Eleglara dedicated active-lifestyle press-on guides"
+      ],
+      "why_included": "Product-adjacent but non-transactional angle (curated picks + on-the-go repair tips rather than a straight buy-now roundup).",
+      "special_content_instructions": {
+        "research_source": "MelodySusie (melodysusie.com) — research and select press-on nail picks/products from this site specifically for this post",
+        "affiliate_links": "User will supply affiliate links for the selected MelodySusie picks before/during writing. Do not fabricate links.",
+        "image_rule": "NO general body/lifestyle images for this post. Only the hero image plus one product image per featured pick. Do not include lifestyle/gym/inspiration photography in the body.",
+        "image_count_override": "Hero + 1 image per product pick (does NOT follow the default 7-image rule — count depends on number of picks selected)"
+      },
+      "image_count": "variable — hero + 1 per product pick, see special_content_instructions",
+      "internal_links": {
+        "links_to": [
+          { "slug": "gym-nails", "anchor_text": "gym nails", "type": "pillar" },
+          { "slug": "swimming-nails", "anchor_text": "chlorine resistant nails", "type": "spoke" },
+          { "slug": "travel-nails", "anchor_text": "travel nail care", "type": "spoke" }
+        ],
+        "receives_links_from": [
+          { "slug": "gym-nails", "anchor_text": "press-on nails for active lifestyle" },
+          { "slug": "swimming-nails", "anchor_text": "press-on nails for active lifestyle" },
+          { "slug": "travel-nails", "anchor_text": "press-on nails for active lifestyle" }
+        ]
+      },
+      "status": "approved"
+    },
+    {
+      "post_id": 7,
+      "role": "spoke",
+      "title": "Travel Nails: How to Keep a Manicure Flawless on Long-Haul Trips",
+      "slug": "travel-nails",
+      "primary_keyword": "travel nail care",
+      "intent": "tutorial",
+      "search_demand_signals": [
+        "6+ dedicated guides: Pommie Travels, SNS Nails, TravelFashionGirl, The W Nail Bar, Elite Nail Spa, My Clean Nails",
+        "TSA-compliance and long-haul specific content clusters"
+      ],
+      "why_included": "Well-documented, evergreen demand with seasonal (vacation season) spikes; broad Tier 1 audience relevance.",
+      "image_count": 7,
+      "internal_links": {
+        "links_to": [
+          { "slug": "gym-nails", "anchor_text": "gym nails", "type": "pillar" },
+          { "slug": "swimming-nails", "anchor_text": "chlorine resistant nails", "type": "spoke" },
+          { "slug": "press-on-nails-active-lifestyle", "anchor_text": "press-on nails for active lifestyle", "type": "spoke" },
+          { "slug": "gardener-nails", "anchor_text": "nails for gardeners", "type": "spoke" }
+        ],
+        "receives_links_from": [
+          { "slug": "gym-nails", "anchor_text": "travel nail care" },
+          { "slug": "swimming-nails", "anchor_text": "travel nail care" },
+          { "slug": "press-on-nails-active-lifestyle", "anchor_text": "travel nail care" },
+          { "slug": "gardener-nails", "anchor_text": "travel nail care" }
+        ]
+      },
+      "status": "approved"
+    },
+    {
+      "post_id": 8,
+      "role": "spoke",
+      "title": "Nails for New Moms: Non-Toxic, Baby-Safe Manicure Routine",
+      "slug": "new-mom-nails",
+      "primary_keyword": "non-toxic nails for moms",
+      "intent": "informational",
+      "search_demand_signals": [
+        "Multiple dedicated blogs: New Mom List, Nurtured9, MotherToBaby, blog.dearsundays.com",
+        "TikTok: #momnails, #newborntips manicure-safety content"
+      ],
+      "why_included": "Real safety-driven search intent (baby ingestion risk with chipped polish/chemicals) — genuine informational need, not just aesthetic.",
+      "content_note": "Keep strictly informational/safety-focused (non-toxic formulas, chip prevention, baby-handling precautions). Do NOT frame as a product roundup or transactional buying guide.",
+      "image_count": 7,
+      "internal_links": {
+        "links_to": [
+          { "slug": "gym-nails", "anchor_text": "gym nails", "type": "pillar" },
+          { "slug": "travel-nails", "anchor_text": "travel nail care", "type": "spoke" },
+          { "slug": "manual-labor-nails", "anchor_text": "nails for manual labor", "type": "spoke" }
+        ],
+        "receives_links_from": [
+          { "slug": "gym-nails", "anchor_text": "non-toxic nails for moms" }
+        ]
+      },
+      "status": "approved"
+    },
+    {
+      "post_id": 9,
+      "role": "spoke",
+      "title": "Nails for Musicians: The Right Length for Piano & Guitar Without Sacrificing Style",
+      "slug": "musician-nails",
+      "primary_keyword": "nails for piano players",
+      "intent": "tutorial",
+      "search_demand_signals": [
+        "Pinterest: dedicated 'Nails for Piano Players' board",
+        "TikTok: 46.1M posts under related discover tag",
+        "Dedicated guides: TsukiNails ('Silent Manicure'), tonebase Guitar, Piano Central Studios, classical guitar forum discussion"
+      ],
+      "why_included": "Extremely strong cross-platform signal with a unique functional constraint (playing technique/sound) rarely covered by general nail content.",
+      "image_count": 7,
+      "internal_links": {
+        "links_to": [
+          { "slug": "gym-nails", "anchor_text": "gym nails", "type": "pillar" },
+          { "slug": "typing-nails", "anchor_text": "best nail shape for typing", "type": "spoke" }
+        ],
+        "receives_links_from": [
+          { "slug": "gym-nails", "anchor_text": "nails for piano players" },
+          { "slug": "typing-nails", "anchor_text": "nails for piano players" }
+        ]
+      },
+      "status": "approved"
+    }
+  ],
+
+  "keyword_ownership_registry": {
+    "description": "Master list of all primary keywords — one per post, no overlaps, includes existing site posts",
+    "entries": [
+      { "primary_keyword": "gym nails", "owned_by_slug": "gym-nails", "owned_by_title": "Nails for Gym Goers: Durable Shapes That Survive Lifting", "source": "new post" },
+      { "primary_keyword": "chlorine resistant nails", "owned_by_slug": "swimming-nails", "owned_by_title": "Nails That Survive Swimming: Chlorine-Proof Prep & Products", "source": "new post" },
+      { "primary_keyword": "nails for manual labor", "owned_by_slug": "manual-labor-nails", "owned_by_title": "Nails for Manual Labor Jobs: Short, Reinforced Options", "source": "new post" },
+      { "primary_keyword": "best nail shape for typing", "owned_by_slug": "typing-nails", "owned_by_title": "Nail Shapes for Typing All Day: Comfort & No-Snag Guide", "source": "new post" },
+      { "primary_keyword": "nails for gardeners", "owned_by_slug": "gardener-nails", "owned_by_title": "Nails for Gardeners: Protective Routines That Hide Soil Stains", "source": "new post" },
+      { "primary_keyword": "press-on nails for active lifestyle", "owned_by_slug": "press-on-nails-active-lifestyle", "owned_by_title": "Press-On Nails for Active Lifestyles: Fitness-Friendly Picks", "source": "new post" },
+      { "primary_keyword": "travel nail care", "owned_by_slug": "travel-nails", "owned_by_title": "Travel Nails: How to Keep a Manicure Flawless on Long-Haul Trips", "source": "new post" },
+      { "primary_keyword": "non-toxic nails for moms", "owned_by_slug": "new-mom-nails", "owned_by_title": "Nails for New Moms: Non-Toxic, Baby-Safe Manicure Routine", "source": "new post" },
+      { "primary_keyword": "nails for piano players", "owned_by_slug": "musician-nails", "owned_by_title": "Nails for Musicians: The Right Length for Piano & Guitar Without Sacrificing Style", "source": "new post" },
+      { "primary_keyword": "professional nail length", "owned_by_slug": "professional-nail-length-for-work", "owned_by_title": "Professional Nail Length for Work", "source": "existing site post" },
+      { "primary_keyword": "nail shapes for work", "owned_by_slug": "nail-shapes-for-work", "owned_by_title": "Nail Shapes for Work", "source": "existing site post" },
+      { "primary_keyword": "camping nails", "owned_by_slug": "camping-nails", "owned_by_title": "Camping Nails: 20 Outdoor Looks Everyone's Wearing in 2026", "source": "existing site post" }
+    ]
+  },
+
+  "merged_posts_log": [],
+
+  "killed_posts_log": [
+    {
+      "topic": "Nails for Hikers / Outdoor Adventure",
+      "reason": "Existing post conflict — mirelleinspo.com already owns 'Camping Nails' and references 'hiking nails' and 'national park nails' as existing site content under /blog/hiking-outdoor-nails/. Direct cannibalization risk."
+    },
+    {
+      "topic": "Nurse Nails / Healthcare Worker Nails",
+      "reason": "User-requested kill despite strong validated demand (Lemon8, Pinterest, CDC policy angle, multiple dedicated blogs). No overlap or demand issue — removed by explicit user decision."
+    }
+  ]
+}
