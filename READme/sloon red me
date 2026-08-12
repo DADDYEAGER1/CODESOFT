@@ -1,0 +1,155 @@
+# Salons Route
+
+Route: `/salons` (city index), `/salons/[city]` (city listicle)
+
+## Purpose
+
+"Best nail salons in [city]" listicle pages, built to rank for near-me and
+city-specific search intent. Editorially curated, not pay-to-play — salons
+earn placement on genuine reviews and verified work, never by paying for it.
+The page also serves as a discovery channel for salon owners, via a
+"nominate a salon" CTA rather than a paid listing offer.
+
+## Why this structure (research-backed)
+
+Google's Helpful Content guidelines explicitly flag a "best" listicle based
+on other people's reviews with little/no added value as low-quality. What
+ranks: original research, transparent selection criteria, and genuine
+first-hand verification — not a scraped aggregation of Yelp/Google data.
+That's why every city page includes:
+- A visible **"How We Picked"** criteria block (methodology transparency)
+- No pay-to-play language anywhere, explicit denial of paid placement
+- `ItemList` JSON-LD schema (structured, not just a rendered list)
+
+## Files
+
+```
+src/app/salons/page.tsx               — city index page (grid of all cities)
+src/app/salons/[city]/page.tsx        — single city listicle page
+src/lib/salons.ts                     — markdown loader + query helpers
+src/types/salons.ts                   — CityListicle, SalonListing types
+src/components/Salons/
+  SalonsCityGrid.tsx                  — city card grid (index page)
+  SalonListingCard.tsx                — numbered salon entry (rank, name, details)
+  SalonFeatureCTA.tsx                 — dual-audience CTA (mid + end variants)
+src/content/salons/*.md               — city listicle content files
+```
+
+Content type is plain **Markdown** (`.md`).
+
+## Content file format
+
+```yaml
+---
+slug: "austin-tx"                     # REQUIRED — must match the filename exactly
+title: "12 Best Nail Salons in Austin, TX (2026)"
+excerpt: "One-line summary for cards/meta, 140 chars"
+date: "2026-08-01"
+author: "author-slug"                 # must match a slug in src/data/authors.ts
+category: "Nail Salons"
+cityName: "Austin, TX"                # display name used in H1 area, breadcrumbs, CTA copy
+image: "/images/salons/city-hero.jpg" # hero, 16:9 (1200x675 min, Discover spec)
+imageAlt: "Alt text for hero"
+readTime: "8 min"
+canonical: "https://mirelleinspo.com/salons/austin-tx"
+tags: ["nail salons austin", "best nail salons austin tx"]
+
+criteriaNote: "Plain-language methodology statement — how salons were
+  evaluated. Required for E-E-A-T credibility; renders as a visible
+  'How We Picked' block on the page."
+
+listings:                             # structured data, NOT written in the markdown body
+  - rank: 1
+    name: "Salon Name"
+    address: "123 Congress Ave, Austin, TX 78701"
+    phone: "(512) 555-0100"           # optional
+    ratingNote: "4.9 stars, 300+ Google reviews"   # optional, must be sourced/real
+    priceRange: "$$"                  # optional
+    specialty: "Hand-painted nail art, Gel-X extensions"  # optional
+    whyPicked: "Editorial blurb — the real reason this salon made the list"
+    hours: "Tue-Sat 10am-7pm"         # optional
+    website: "https://..."            # optional
+    instagram: "https://..."          # optional
+    featured: true                    # optional — shows "Editor's Pick" tag. Earned only, never paid.
+  - rank: 2
+    name: "..."
+    address: "..."
+    whyPicked: "..."
+---
+
+Editorial intro paragraph(s) go here — sets up the city, the scene, why this
+list matters. Plain markdown.
+
+---LISTINGS---
+
+Closing paragraph(s) go here — optional. Renders after the salon list, before
+the final CTA and AuthorCard.
+```
+
+**Important:** the `---LISTINGS---` marker on its own line splits the markdown
+body into `intro` (before) and `closing` (after). The actual salon entries are
+never written in the markdown body — they come entirely from the `listings`
+array in frontmatter, since it's structured data (address, phone, etc.), not
+prose.
+
+## Page layout (top to bottom)
+
+1. Breadcrumbs — Home / Salons / [city name]
+2. Category label
+3. H1 title
+4. Byline — author + date
+5. Hero image (16:9, left-aligned with title, can extend wider than the text column)
+6. Editorial intro (markdown)
+7. "How We Picked" criteria block (if `criteriaNote` present)
+8. First half of numbered listings
+9. `SalonFeatureCTA` (mid variant) — "get featured" pitch, editorial framing
+10. Second half of numbered listings
+11. Closing content (markdown, if present)
+12. `SalonFeatureCTA` (end variant) — "nominate a salon" pitch
+13. `AuthorCard` — only renders if author slug resolves
+
+## Layout notes
+
+- Title/byline/intro/CTA column: max-width `800px`
+- Hero image: max-width `1000px`, left-aligned to the same edge as the title
+- Listing cards: max-width `900px` (slightly wider than the text column, since
+  each card has more horizontal content: rank number, name, tag, contact grid)
+- Listings render in two halves (`Math.ceil(length / 2)` split) so the mid
+  CTA lands roughly halfway down the list regardless of list length
+- All widths responsive; no fixed pixel widths outside these max-widths
+
+## SalonListingCard behavior
+
+- `rank` renders as a large faint number to the left, editorial-listicle style
+- `featured: true` adds a border highlight and an "Editor's Pick" tag —
+  this must only be set for genuinely vetted salons, never as a paid tier
+- Optional fields (`phone`, `hours`, `priceRange`, `specialty`, `ratingNote`,
+  `website`, `instagram`) render conditionally — omit any field not available
+  rather than leaving it blank
+
+## SalonFeatureCTA behavior
+
+- `variant="mid"`: shorter framing, "Didn't see your salon?"
+- `variant="end"`: fuller framing, "Nominate a Nail Salon in [city]"
+- Copy explicitly states no payment for placement — this is a brand promise,
+  not just microcopy, and should not be edited to soften or remove that line
+- Both link to `/nominate-a-salon` — that intake page does not exist yet and
+  needs to be built separately
+
+## Known dependencies (not part of this route, must already exist)
+
+- `@/lib/authors` → `getAuthor(slug)`
+- `@/components/Breadcrumbs`
+- `@/components/Blog/AuthorCard`
+- `remark`, `remark-gfm`, `remark-html`, `gray-matter` (npm packages)
+
+## Open items / assumptions
+
+- `/nominate-a-salon` destination page does not exist yet — CTA links will
+  404 until it's built.
+- No pagination on the city index page — assumes city count stays manageable
+  in a single grid for now.
+- `ratingNote` is manually entered from research, not pulled live from any
+  API — must be re-verified periodically so it doesn't go stale.
+- Listings count per city is not fixed (e.g. not strictly "Top 10") — decided
+  per city based on how many salons genuinely earned a spot.
