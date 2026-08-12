@@ -1,0 +1,287 @@
+{
+  "cluster_metadata": {
+    "cluster_topic": "October Nails",
+    "topic_slug": "october-nails",
+    "target_audience": "Global, Tier 1 countries",
+    "total_posts": 8,
+    "intent_breakdown": {
+      "informational": 1,
+      "inspirational": 4,
+      "tutorial": 2,
+      "comparison": 0,
+      "seasonal_trend": 1
+    },
+    "pillar_post_slug": "october-nails",
+    "gallery_exists": false,
+    "template": "centered",
+    "default_image_count_per_post": 7,
+    "created_date": "2026-08-13"
+  },
+
+  "site_scan_note": "Full site:mirelleinspo.com cannibalization scan was skipped per user instruction. One conflict was discovered incidentally during external research and is logged below. User should independently verify no other overlaps exist before publishing.",
+
+  "existing_site_posts_excluded": [
+    {
+      "url": "https://mirelleinspo.com/blog/zodiac-nails/scorpio-nails",
+      "title": "Scorpio Nails: Dark Designs for Every Intensity",
+      "inferred_primary_keyword": "scorpio nails",
+      "inferred_intent": "inspirational",
+      "exclusion_reason": "Existing post already covers October-birthday/opal-birthstone content in detail through a zodiac/astrology lens, including explicit discussion of the October-birthday-vs-Halloween overlap. Caused the 'October Birthday Nails' spoke to be deliberately scoped away from zodiac framing (cake/confetti/celebration motifs only, no astrology) to avoid cannibalization."
+    }
+  ],
+
+  "posts": [
+    {
+      "post_id": 1,
+      "role": "pillar",
+      "title": "October Nails",
+      "slug": "october-nails",
+      "primary_keyword": "october nails",
+      "intent": "inspirational",
+      "search_demand_signals": [
+        "Dense Pinterest board coverage across multiple pins/boards",
+        "Major outlet roundups: Byrdie/AOL (multiple), styleyouroccasion.com, hervibeedit.com, stoleninspiration.com",
+        "Consistent monthly-seasonal search pattern with high volume"
+      ],
+      "why_included": "Broadest keyword in the cluster with the highest and most consistent search demand. Natural hub linking to all narrower design, color, tutorial, and occasion-based spokes.",
+      "image_count": 7,
+      "internal_links": {
+        "links_to": [
+          { "slug": "candy-corn-nails", "anchor_text": "candy corn nails tutorial", "type": "spoke" },
+          { "slug": "pumpkin-nail-art", "anchor_text": "pumpkin nail art tutorial", "type": "spoke" },
+          { "slug": "short-october-nails", "anchor_text": "short october nails", "type": "spoke" },
+          { "slug": "october-nail-colors", "anchor_text": "october nail colors", "type": "spoke" },
+          { "slug": "october-birthstone-nails", "anchor_text": "october birthstone nails", "type": "spoke" },
+          { "slug": "october-nail-trends", "anchor_text": "october nail trends", "type": "spoke" },
+          { "slug": "october-birthday-nails", "anchor_text": "october birthday nails", "type": "spoke" }
+        ],
+        "receives_links_from": [
+          { "slug": "candy-corn-nails", "anchor_text": "october nails" },
+          { "slug": "pumpkin-nail-art", "anchor_text": "october nails" },
+          { "slug": "short-october-nails", "anchor_text": "october nails" },
+          { "slug": "october-nail-colors", "anchor_text": "october nails" },
+          { "slug": "october-birthstone-nails", "anchor_text": "october nails" },
+          { "slug": "october-nail-trends", "anchor_text": "october nails" },
+          { "slug": "october-birthday-nails", "anchor_text": "october nails" }
+        ]
+      },
+      "status": "approved"
+    },
+    {
+      "post_id": 2,
+      "role": "spoke",
+      "title": "Candy Corn Nails",
+      "slug": "candy-corn-nails",
+      "primary_keyword": "candy corn nails tutorial",
+      "intent": "tutorial",
+      "search_demand_signals": [
+        "8+ dedicated step-by-step tutorials spanning over a decade (PETA, Pretty Prudent, Swatch and Learn, Mom Fabulous, threesixtynails, Peek and Ponder, Unblushing)",
+        "Sustained YouTube and blog coverage still actively published each October"
+      ],
+      "why_included": "Iconic, evergreen October/Halloween-adjacent design with proven long-term, recurring tutorial search demand independent of general Halloween content.",
+      "image_count": 7,
+      "internal_links": {
+        "links_to": [
+          { "slug": "october-nails", "anchor_text": "october nails", "type": "pillar" },
+          { "slug": "pumpkin-nail-art", "anchor_text": "pumpkin nail art tutorial", "type": "spoke" },
+          { "slug": "short-october-nails", "anchor_text": "short october nails", "type": "spoke" }
+        ],
+        "receives_links_from": [
+          { "slug": "october-nails", "anchor_text": "candy corn nails tutorial" },
+          { "slug": "pumpkin-nail-art", "anchor_text": "candy corn nails tutorial" }
+        ]
+      },
+      "status": "approved"
+    },
+    {
+      "post_id": 3,
+      "role": "spoke",
+      "title": "Pumpkin Nail Art",
+      "slug": "pumpkin-nail-art",
+      "primary_keyword": "pumpkin nail art tutorial",
+      "intent": "tutorial",
+      "search_demand_signals": [
+        "8+ dedicated step-by-step tutorials (Beauty Bay, Green Wedding Shoes, Scratch Magazine, Katie Barnes Academy, threesixtynails, One Nail to Rule Them All)",
+        "Active TikTok tutorial content (@nailtechsecrets and others)"
+      ],
+      "why_included": "Dense, recurring seasonal tutorial demand distinct from general pumpkin-themed inspiration content — specifically how-to intent.",
+      "image_count": 7,
+      "internal_links": {
+        "links_to": [
+          { "slug": "october-nails", "anchor_text": "october nails", "type": "pillar" },
+          { "slug": "candy-corn-nails", "anchor_text": "candy corn nails tutorial", "type": "spoke" },
+          { "slug": "october-nail-colors", "anchor_text": "october nail colors", "type": "spoke" }
+        ],
+        "receives_links_from": [
+          { "slug": "october-nails", "anchor_text": "pumpkin nail art tutorial" },
+          { "slug": "candy-corn-nails", "anchor_text": "pumpkin nail art tutorial" }
+        ]
+      },
+      "status": "approved"
+    },
+    {
+      "post_id": 4,
+      "role": "spoke",
+      "title": "Short October Nails",
+      "slug": "short-october-nails",
+      "primary_keyword": "short october nails",
+      "intent": "inspirational",
+      "search_demand_signals": [
+        "Dedicated roundups: Byrdie/AOL '25 Short Nail Ideas for October', mynailgallery.com, booksy.com",
+        "Consistent length-constrained search cluster distinct from general October designs"
+      ],
+      "why_included": "Distinct length-constrained angle with its own dedicated content cluster, serving a different practical need than long/extension-based designs.",
+      "image_count": 7,
+      "internal_links": {
+        "links_to": [
+          { "slug": "october-nails", "anchor_text": "october nails", "type": "pillar" },
+          { "slug": "candy-corn-nails", "anchor_text": "candy corn nails tutorial", "type": "spoke" },
+          { "slug": "october-nail-colors", "anchor_text": "october nail colors", "type": "spoke" }
+        ],
+        "receives_links_from": [
+          { "slug": "october-nails", "anchor_text": "short october nails" }
+        ]
+      },
+      "status": "approved"
+    },
+    {
+      "post_id": 5,
+      "role": "spoke",
+      "title": "October Nail Colors",
+      "slug": "october-nail-colors",
+      "primary_keyword": "october nail colors",
+      "intent": "informational",
+      "search_demand_signals": [
+        "Pinterest 2026 Nail Color Forecast (NewBeauty)",
+        "styleyouroccasion.com dedicated 'October Nail Color Trends' post",
+        "classpop.com fall nail color roundup"
+      ],
+      "why_included": "Color-specific informational intent distinct from full-design inspiration — readers researching which shades to choose before selecting a design.",
+      "image_count": 7,
+      "internal_links": {
+        "links_to": [
+          { "slug": "october-nails", "anchor_text": "october nails", "type": "pillar" },
+          { "slug": "pumpkin-nail-art", "anchor_text": "pumpkin nail art tutorial", "type": "spoke" },
+          { "slug": "short-october-nails", "anchor_text": "short october nails", "type": "spoke" },
+          { "slug": "october-nail-trends", "anchor_text": "october nail trends", "type": "spoke" }
+        ],
+        "receives_links_from": [
+          { "slug": "october-nails", "anchor_text": "october nail colors" },
+          { "slug": "pumpkin-nail-art", "anchor_text": "october nail colors" },
+          { "slug": "short-october-nails", "anchor_text": "october nail colors" }
+        ]
+      },
+      "status": "approved"
+    },
+    {
+      "post_id": 6,
+      "role": "spoke",
+      "title": "October Birthstone Nails",
+      "slug": "october-birthstone-nails",
+      "primary_keyword": "october birthstone nails",
+      "intent": "inspirational",
+      "search_demand_signals": [
+        "Multiple major-outlet dedicated roundups: Byrdie (20 ideas), Parade (35 ideas), AOL (35 ideas) — all published as standalone birthstone-specific content",
+        "Consistent framing around opal and tourmaline, October's two birthstones"
+      ],
+      "why_included": "Very strong, multi-outlet validated demand for gemstone-aesthetic content (opal iridescence, tourmaline color range) distinct from general color or birthday content.",
+      "differentiation_note": "Focus strictly on opal/tourmaline gemstone aesthetic and color-changing/iridescent techniques. Do NOT frame around zodiac signs or astrology — that angle is owned by the existing mirelleinspo.com Scorpio Nails post.",
+      "image_count": 7,
+      "internal_links": {
+        "links_to": [
+          { "slug": "october-nails", "anchor_text": "october nails", "type": "pillar" },
+          { "slug": "october-nail-colors", "anchor_text": "october nail colors", "type": "spoke" },
+          { "slug": "october-birthday-nails", "anchor_text": "october birthday nails", "type": "spoke" }
+        ],
+        "receives_links_from": [
+          { "slug": "october-nails", "anchor_text": "october birthstone nails" },
+          { "slug": "october-birthday-nails", "anchor_text": "october birthstone nails" }
+        ]
+      },
+      "status": "approved"
+    },
+    {
+      "post_id": 7,
+      "role": "spoke",
+      "title": "October Nail Trends",
+      "slug": "october-nail-trends",
+      "primary_keyword": "october nail trends",
+      "intent": "seasonal_trend",
+      "search_demand_signals": [
+        "Nails Magazine 'Nail Trends Taking Over in 2026' industry coverage",
+        "IPSY 2026 nail trend roundup",
+        "SHANGMENG monthly nail-trend calendar content specifically addressing October"
+      ],
+      "why_included": "Explicitly time-sensitive, forward-looking trend-report intent distinct from both the pillar (broad evergreen style guide) and the colors spoke (shade-specific picks).",
+      "differentiation_note": "Must focus on what's new/rising in 2026 specifically — techniques, textures, finishes, shape movements (e.g. abstract art, metallics, bare-nail movement) — NOT a color list (owned by october-nail-colors) and NOT general design inspiration (owned by pillar).",
+      "image_count": 7,
+      "internal_links": {
+        "links_to": [
+          { "slug": "october-nails", "anchor_text": "october nails", "type": "pillar" },
+          { "slug": "october-nail-colors", "anchor_text": "october nail colors", "type": "spoke" },
+          { "slug": "october-birthstone-nails", "anchor_text": "october birthstone nails", "type": "spoke" }
+        ],
+        "receives_links_from": [
+          { "slug": "october-nails", "anchor_text": "october nail trends" },
+          { "slug": "october-nail-colors", "anchor_text": "october nail trends" }
+        ]
+      },
+      "status": "approved"
+    },
+    {
+      "post_id": 8,
+      "role": "spoke",
+      "title": "October Birthday Nails",
+      "slug": "october-birthday-nails",
+      "primary_keyword": "october birthday nails",
+      "intent": "inspirational",
+      "search_demand_signals": [
+        "Dedicated celebration-motif roundups: Maniology, LA Nail Supplies, eleganceechoes.com, AOL (multiple)",
+        "Consistent references to cake, confetti, balloon, sparkler, and personalized-date nail art as a distinct birthday-nail category"
+      ],
+      "why_included": "Well-validated demand for the general party/celebration-motif birthday-nail angle, kept deliberately distinct from zodiac framing to avoid overlap with the existing site's Scorpio Nails post.",
+      "differentiation_note": "Scope strictly to celebration motifs: cake, candles, confetti, balloons, sparklers, numbers/age, personalized dates. Do NOT use zodiac sign or astrology framing (Libra/Scorpio) — that ground is owned by the existing mirelleinspo.com Scorpio Nails post.",
+      "image_count": 7,
+      "internal_links": {
+        "links_to": [
+          { "slug": "october-nails", "anchor_text": "october nails", "type": "pillar" },
+          { "slug": "october-birthstone-nails", "anchor_text": "october birthstone nails", "type": "spoke" },
+          { "slug": "short-october-nails", "anchor_text": "short october nails", "type": "spoke" }
+        ],
+        "receives_links_from": [
+          { "slug": "october-nails", "anchor_text": "october birthday nails" },
+          { "slug": "october-birthstone-nails", "anchor_text": "october birthday nails" }
+        ]
+      },
+      "status": "approved"
+    }
+  ],
+
+  "keyword_ownership_registry": {
+    "description": "Master list of all primary keywords — one per post, no overlaps, includes existing site posts",
+    "entries": [
+      { "primary_keyword": "october nails", "owned_by_slug": "october-nails", "owned_by_title": "October Nails", "source": "new post" },
+      { "primary_keyword": "candy corn nails tutorial", "owned_by_slug": "candy-corn-nails", "owned_by_title": "Candy Corn Nails", "source": "new post" },
+      { "primary_keyword": "pumpkin nail art tutorial", "owned_by_slug": "pumpkin-nail-art", "owned_by_title": "Pumpkin Nail Art", "source": "new post" },
+      { "primary_keyword": "short october nails", "owned_by_slug": "short-october-nails", "owned_by_title": "Short October Nails", "source": "new post" },
+      { "primary_keyword": "october nail colors", "owned_by_slug": "october-nail-colors", "owned_by_title": "October Nail Colors", "source": "new post" },
+      { "primary_keyword": "october birthstone nails", "owned_by_slug": "october-birthstone-nails", "owned_by_title": "October Birthstone Nails", "source": "new post" },
+      { "primary_keyword": "october nail trends", "owned_by_slug": "october-nail-trends", "owned_by_title": "October Nail Trends", "source": "new post" },
+      { "primary_keyword": "october birthday nails", "owned_by_slug": "october-birthday-nails", "owned_by_title": "October Birthday Nails", "source": "new post" },
+      { "primary_keyword": "scorpio nails", "owned_by_slug": "scorpio-nails", "owned_by_title": "Scorpio Nails: Dark Designs for Every Intensity", "source": "existing site post" }
+    ]
+  },
+
+  "merged_posts_log": [],
+
+  "killed_posts_log": [
+    {
+      "topic": "Halloween Nails 2026 (Spooky-Chic Trend Report)",
+      "reason": "User-requested kill. Strong validated demand existed (DTK Nail Supply trend report, Pinterest Predicts spike data) but removed by explicit user decision."
+    },
+    {
+      "topic": "Tortoiseshell Nails (Step-by-Step Tutorial)",
+      "reason": "User-requested kill. Strong validated demand existed (7+ dedicated tutorial blogs/YouTube channels) but removed by explicit user decision."
+    }
+  ]
+}
