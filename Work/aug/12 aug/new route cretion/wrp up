@@ -1,0 +1,160 @@
+'use client';
+
+import { useState, Fragment } from 'react';
+
+interface FAQItem {
+  question: string;
+  answer: string;
+}
+
+interface TLDR {
+  summary: string[];
+  keyTakeaways?: string[];
+  tldrFaqs?: FAQItem[];
+}
+
+interface WrapUpProps {
+  tldr: TLDR;
+}
+
+// Renders simple **bold** markdown syntax as JSX <strong> tags.
+// tldr fields are plain text written with markdown bold, but this
+// component previously rendered them as raw strings.
+function renderBoldText(text: string): React.ReactNode {
+  const parts = text.split(/(\*\*[^*]+\*\*)/g);
+  return parts.map((part, i) => {
+    const match = part.match(/^\*\*([^*]+)\*\*$/);
+    if (match) {
+      return <strong key={i}>{match[1]}</strong>;
+    }
+    return <Fragment key={i}>{part}</Fragment>;
+  });
+}
+
+function FAQRow({ question, answer }: FAQItem) {
+  const [open, setOpen] = useState(false);
+
+  return (
+    <li className="border-b last:border-b-0" style={{ borderColor: '#e5e7eb' }}>
+      <button
+        onClick={() => setOpen(!open)}
+        className="w-full text-left py-3 flex items-start justify-between gap-4 group"
+        style={{ background: 'none', border: 'none', cursor: 'pointer' }}
+      >
+        <span
+          className="text-base leading-snug"
+          style={{
+            fontFamily: 'var(--font-body)',
+            color: '#252220',
+            textDecoration: 'underline',
+            textUnderlineOffset: '3px',
+            textDecorationColor: '#c0b8b0',
+          }}
+        >
+          {question}
+        </span>
+        <span
+          className="flex-shrink-0 mt-0.5 text-sm transition-transform duration-200"
+          style={{
+            color: '#252220',
+            transform: open ? 'rotate(180deg)' : 'rotate(0deg)',
+            display: 'inline-block',
+          }}
+        >
+          ↓
+        </span>
+      </button>
+
+      {open && (
+        <p
+          className="pb-3 text-sm leading-relaxed"
+          style={{ fontFamily: 'var(--font-body)', color: '#555' }}
+        >
+          {answer}
+        </p>
+      )}
+    </li>
+  );
+}
+
+export default function WrapUp({ tldr }: WrapUpProps) {
+  if (!tldr) return null;
+
+  const { summary, keyTakeaways, tldrFaqs } = tldr;
+
+  return (
+    <nav className="bg-white p-6 mb-10" style={{ border: '1px solid #e5e7eb' }}>
+      <h2
+        className="font-heading text-xl mb-6 text-center"
+        style={{ color: '#252220' }}
+      >
+        Wrap Up
+      </h2>
+
+      {/* Summary */}
+      {summary && summary.length > 0 && (
+        <div className="mb-6">
+          <p
+            className="text-xs uppercase tracking-wider mb-3"
+            style={{ fontFamily: 'var(--font-ui)', color: '#888' }}
+          >
+            Summary
+          </p>
+          <ul className="space-y-2">
+            {summary.map((item, i) => (
+              <li
+                key={i}
+                className="flex items-start gap-2 text-sm leading-relaxed"
+                style={{ fontFamily: 'var(--font-body)', color: '#252220' }}
+              >
+                <span className="mt-1 flex-shrink-0" style={{ color: '#c0b8b0' }}>•</span>
+                {renderBoldText(item)}
+              </li>
+            ))}
+          </ul>
+        </div>
+      )}
+
+      {/* Key Takeaways */}
+      {keyTakeaways && keyTakeaways.length > 0 && (
+        <div className="mb-6">
+          <p
+            className="text-xs uppercase tracking-wider mb-3"
+            style={{ fontFamily: 'var(--font-ui)', color: '#888' }}
+          >
+            Key Takeaways
+          </p>
+          <ul className="space-y-2">
+            {keyTakeaways.map((item, i) => (
+              <li
+                key={i}
+                className="flex items-start gap-2 text-sm leading-relaxed"
+                style={{ fontFamily: 'var(--font-body)', color: '#252220' }}
+              >
+                <span className="mt-1 flex-shrink-0" style={{ color: '#c0b8b0' }}>•</span>
+                {renderBoldText(item)}
+              </li>
+            ))}
+          </ul>
+        </div>
+      )}
+
+      {/* FAQs */}
+      {tldrFaqs && tldrFaqs.length > 0 && (
+        <div>
+          <p
+            className="text-xs uppercase tracking-wider mb-3"
+            style={{ fontFamily: 'var(--font-ui)', color: '#888' }}
+          >
+            Quick Questions
+          </p>
+          <ul className="divide-y" style={{ borderColor: '#e5e7eb' }}>
+            {tldrFaqs.map((faq, i) => (
+              <FAQRow key={i} question={faq.question} answer={faq.answer} />
+            ))}
+          </ul>
+        </div>
+      )}
+    </nav>
+  );
+}
