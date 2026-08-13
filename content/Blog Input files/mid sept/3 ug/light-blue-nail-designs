@@ -1,0 +1,359 @@
+# INPUT FILE — SINGLE SOURCE OF TRUTH FOR BLOG GEN AGENT
+Mode: SOLO — no cluster context. Standalone post. Template: posts.
+All values below are hardcoded. Do not ask, adjust, or override.
+
+---
+
+## SECTION 2 — POST_CONSTANTS
+```
+slug: light-blue-nail-designs
+topic_slug: [OMITTED — standalone, no topic field]
+canonical: https://mirelleinspo.com/blog/light-blue-nail-designs
+post_type: standalone
+template: posts
+intent: inspirational
+word_count: 2600
+image_count: 7  [SESSION OVERRIDE — hardcoded by user instruction, supersedes phase_2 rule_5_sub_rule_a default of 9]
+show_inspo_gallery_link: true
+hero_dimensions: 1200x630 (template=posts, treated as center)
+category: Nail Colors
+publish_date: 2026-08-13
+author: jyoti-mirelle
+```
+
+---
+
+## SECTION 4 — SERP ANALYSIS
+**competitor_gaps** (demand-confirmed 2+ sources: PAA-style content + Pinterest/autocomplete/YouTube):
+- No competitor ties nail SHAPE (almond/square/coffin/short) to which light blue design suits it — confirmed gap via shape-guide research + Pinterest shape-tagged boards + NewBeauty's shape-specific captions scattered but never systematised
+- No competitor addresses occasion-specific light blue (prom/hoco/quinceañera) as a structured section — strong standalone Pinterest signal (quinceañera light blue boards, hoco tags) but zero dedicated competitor coverage
+- Skin tone matching is asserted ("universally flattering") by Kbeauty Addiction but never explained with sub-shade logic — thin, one-line treatment only
+- No competitor mentions the DIY/at-home angle with product specificity — YouTube tutorials confirm strong at-home demand but blog competitors assume salon-only
+
+**missing_semantic_territory**: shade-family vocabulary (powder blue, robin's egg, cornflower, denim blue, Tiffany blue) exists scattered across competitors but never organized as a chooser; "milky manicure" trend connection under-linked to light blue specifically.
+
+**our_strategic_approach**: Lead with the sheer scale of the trend (TikTok's #lightbluenails at 8.8M+ views, described in one summary line, not detailed) and immediately organize by decision points competitors skip — shape, skin tone, occasion — before the visual roundup. This turns a scroll-and-screenshot post into one that also helps the reader choose, which is the functional gap every top-10 result leaves open.
+
+**recommended_image_count_validation**: Competitors run large galleries (30–45 images) but Jy's session-level image_count override (7 incl. hero) is intentional and locked; content structure below is written to support a curated 7-image post rather than a mega-gallery, leaning on prose description for designs that don't get a dedicated photo.
+
+**top_3_word_count_estimates**: The Pink Issue (~45 entries, est. 2800–3200w by entry depth), Kreafolk (30 entries + 5 FAQ sections, est. 3000–3400w), The Charm Issue (45 entries, est. 2700–3000w). Average ≈ 2950w. Standalone ceiling = 3500w. **Floor set at top-3 average; hardcoded word_count = 2600 reflects Jy's 7-image constraint decision (fewer visual anchors = tighter prose scope) — flagged as a deliberate sub-floor call tied to the image override, not a research gap.**
+
+**top_3_keyword_density_baseline**: "light blue nails" / "light blue nail" variants appear approx. 22–28 times across the three references (title, headers, captions, intro/outro). Average ≈ 25.
+
+---
+
+## SECTION 5 — AUDIENCE INTELLIGENCE
+**who_they_are**: Primarily Gen Z / young millennial women, actively trend-aware (TikTok-sourced), browsing for their next manicure inspo before a salon visit or DIY session. Overlaps with prom/hoco/quinceañera-age searchers (confirmed via Pinterest occasion tagging) and spring/summer seasonal browsers.
+
+**what_they_want_from_this_post**: Volume of fresh, screenshot-worthy designs plus enough guidance to know which one is actually right for their nail shape, skin tone, and occasion — not just a wall of images.
+
+**what_frustrates_them**: Competitor galleries are visually generous but functionally flat — no help narrowing 45 options down to "my one." Skin-tone claims are asserted, not explained. No DIY-vs-salon distinction.
+
+**top_5_pain_points**:
+1. Can't tell which light blue sub-shade (powder/baby/sky/Tiffany) suits their undertone
+2. Overwhelmed by volume with no filtering logic (shape, occasion, length)
+3. Wants to know if it works for a specific event (prom, hoco, quinceañera) but can't find dedicated coverage
+4. Wants DIY options, not just salon-only inspo
+5. Wants to know if it reads as too juvenile/too plain for their context (office vs. going out)
+
+**exact_user_phrases**: "baby blue or light blue acrylic nails," "does light blue work on my skin tone," "light blue nails for [occasion]," "simple light blue nails," "light blue nails short nails," "light blue nail ideas for beginners," "milky light blue," "light blue chrome," "light blue nails everyday," "light blue nails DIY at home"
+
+**intent_content_signals**: Visual-first with short punchy captions per design (confirmed pattern across all 3 competitors); light editorial voice welcomed but not essay-length per entry; grouping/subheadings help navigation; strong appetite for "which shade for me" decision content layered into a gallery format.
+
+---
+
+## SECTION 6 — SEMANTIC KEYWORD DATA
+```
+primary_keyword: light blue nails
+keyword_variations: light blue nail designs, light blue nail ideas, baby blue nails, light blue manicure, light blue nail art, powder blue nails, sky blue nail designs
+cluster_keywords: pastel blue nails, blue nail designs, light blue French tips, light blue chrome nails, milky blue nails, light blue ombre nails, cornflower blue nails, Tiffany blue nails, denim blue nails, robin's egg blue nails, light blue acrylic nails, light blue gel nails
+lsi_terms: nail shape, almond nails, coffin nails, square nails, skin tone matching, spring nail trends, summer nail colours, French manicure twist, glitter accent nail, marble nail effect, aura nails, negative space nails, floral nail art, chrome finish, DIY nail tutorial, occasion nails, prom nails, quiet luxury manicure, undertone, gel polish
+aeo_terms: "does light blue nail polish suit every skin tone", "what shade of light blue is most flattering", "what nail shape works best with light blue polish", "is light blue nail polish good for short nails", "how do I do light blue nails at home", "what's the difference between baby blue and sky blue nails", "are light blue nails in style right now", "what occasions suit light blue nails"
+technical_terms: gel polish, acrylic overlay, chrome powder, aura technique, negative space, French tip, skittle manicure, top coat, base coat
+user_language: "cute short acrylic nails," "simple but pretty," "goes with everything," "so easy to DIY," "screenshot this for your nail tech," "low-maintenance and straightforward," "elevated without trying too hard," "your next obsession"
+```
+
+---
+
+## SECTION 7 — VOICE AND AI QUERIES
+1. Does light blue nail polish suit every skin tone?
+2. What's the most flattering shade of light blue for fair skin?
+3. What's the most flattering shade of light blue for deep skin tones?
+4. What nail shape works best with light blue polish?
+5. Can I do light blue nails on short nails?
+6. How do I create light blue nails at home without a salon?
+7. What's the difference between baby blue, sky blue, and powder blue nails?
+8. Is light blue nail polish in style right now?
+9. What occasions suit light blue nails best?
+10. Do light blue nails work for a professional or office setting?
+11. What colours pair well with light blue nail designs?
+12. What's the easiest light blue nail design for beginners?
+13. Can light blue nails look elegant rather than childish?
+14. What finish looks best with light blue — matte, glossy, or chrome?
+15. How long does a light blue manicure typically last?
+
+---
+
+## SECTION 8 — HOOK AND CTR
+```
+selected_trigger: Trigger 3 — Specificity/Numbers
+trigger_rationale: Reader is in inspiration_mode (browsing/scrolling for volume), and specificity signals a defined, scannable promise that matches proven competitor title patterns (all three top performers use numbered "X ideas" formats).
+title: "35 Light Blue Nail Ideas You'll Screenshot in 2026"
+title_char_count: 51
+meta_description: "Craving fresh light blue nails? See 35 stunning ideas, shade picks for every skin tone, and easy DIY looks worth saving now."
+meta_char_count: 132
+intro_hook_brief: Open by naming the sheer scale of the light blue moment (trend-volume framing) rather than a generic colour description — establish immediately that this is THE shade of the season, then pivot to the promise that this post also helps narrow it down, not just admire it.
+first_h2_hook_direction: Phrase the first H2 as a voice-search-style question anchored to the audience's most common uncertainty — "Which Light Blue Shade Suits Your Skin Tone?" — delivering the specificity trigger applied to the very first navigational choice a browsing reader needs to make.
+```
+
+---
+
+## SECTION 9 — SEARCH JOURNEY
+```
+reader_arrival_state: Curious and visually hungry, mid-scroll for her next manicure, drawn in by the trend-volume promise of the title but privately unsure which specific light blue is "hers."
+journey_arc:
+- Confirm she's in the right place with a strong trend statement (volume + cultural momentum)
+- Immediately resolve her first real uncertainty: which shade suits her skin tone
+- Layer in shape and occasion filters so the gallery feels curated, not random
+- Deliver the visual abundance she came for, grouped logically
+- Close with DIY/salon guidance so she can act on what she's chosen
+exit_state: Confident she's identified her specific light blue — shade, shape, and occasion — with a clear next step to get it done, either DIY or in the chair.
+```
+
+---
+
+## SECTION 10 — CONTENT STRUCTURE
+```
+h1: 35 Light Blue Nail Ideas You'll Screenshot in 2026
+
+h2_structure:
+1. Which Light Blue Shade Suits Your Skin Tone?
+2. The Best Nail Shapes for Light Blue Designs
+3. Minimalist and Everyday Light Blue Nail Ideas
+4. Light Blue French Tips and Chrome Finishes
+5. Light Blue Nails for Prom, Hoco, and Special Occasions
+6. Glitter, Marble, and Statement Light Blue Designs
+7. How to Do Light Blue Nails at Home
+
+word_budget:
+  introduction: 220
+  h2_1_shade_skin_tone: 380
+  h2_2_shapes: 320
+  h2_3_minimalist: 340
+  h2_4_french_chrome: 340
+  h2_5_occasions: 320
+  h2_6_statement_designs: 340
+  h2_7_diy_home: 260
+  conclusion: 180
+  [total: 2700 — trim ~100w across H2s during write to land at 2600 target, ±50 tolerance]
+```
+
+---
+
+## SECTION 11 — INTERNAL LINKS
+```
+all_internal_links:
+  - url_or_slug: /blog/nails-by-color/sky-blue-nails
+    title: "Sky Blue Nails: The Dreamy Shade That Goes With Everything"
+    anchor_text: "how sky blue differs from baby blue and powder blue"
+    placement_note: "H2-1 (shade/skin tone section) — natural fit when distinguishing sub-shades within the light blue family"
+    link_type: cross-site
+
+  - url_or_slug: /blog/nails-by-color/blue-nails
+    title: "Blue Nails: Every Shade from Sky to Midnight"
+    anchor_text: "the full spectrum of blue nail shades from sheer to midnight chrome"
+    placement_note: "Introduction or conclusion — positions this post within the wider blue nail colour family for topical authority"
+    link_type: cross-site
+
+  - url_or_slug: /blog/nail-color-psychology-attraction/blue-nail-theory
+    title: "Blue Nail Theory: Does It Actually Mean You're Taken?"
+    anchor_text: "the viral theory behind why so many women are choosing this exact shade"
+    placement_note: "H2-5 (occasions) or conclusion — cultural-relevance aside, not the focus of this post, links out to the dedicated deep-dive"
+    link_type: cross-site
+
+note: Only 3 links included (within 4–6 cap) — cross-site discovery was strict on relevance; a 4th candidate (icy-blue-chrome-nails) was considered for H2-4 but excluded as borderline redundant with the French/chrome section's own coverage. Standalone posts carry no cluster_links by definition.
+```
+
+---
+
+## SECTION 12 — VOICE AND TONE
+```
+recommended_voice: Aspirational girlfriend-guide — warm, trend-fluent, decisive
+tone_characteristics: Confident and current (not tentative "you could try..."), inclusive across skin tones and skill levels, light editorial personality without excessive slang, decisive shade/shape recommendations rather than "it depends"
+language_style: Second person throughout, short punchy sentences for gallery captions, slightly longer explanatory sentences for shade/shape guidance sections, minimal hedging
+audience_match: Matches a browsing-but-uncertain Gen Z/young millennial reader who wants both inspiration and enough authority to commit to a choice
+```
+
+---
+
+## SECTION 13 — EXTERNAL LINKS
+```
+links:
+  - url: [none meeting E-E-A-T bar found in this research pass — Byrdie/Allure/Nailpro site: searches not yet run in this session]
+    context: "Recommend Blog Gen Agent proceed without external links for this post, or flag back to Input Gen Agent if E-E-A-T citation becomes a requirement — none locked in this file to avoid inventing unverified sources."
+    anchor_suggestion: n/a
+```
+
+---
+
+## SECTION 14 — EXECUTION PLAN
+
+### Block 1 — Keyword Execution
+```
+primary_keyword: light blue nails
+top_3_density_baseline: 25
+total_mention_target: 27–28
+first_100_words_plan:
+  mention_1: sentence 1–2 of intro — trend-volume opening statement
+  mention_2: sentence 4–5 of intro — pivot into the shade-picking promise
+first_half_target: 15 mentions — first 1300 words (denser: intro + H2-1 + H2-2 + H2-3)
+second_half_target: 12–13 mentions — second 1300 words
+strong_tag_rule: Every one of the 27–28 mentions wrapped in <strong> tags. Scan after every paragraph.
+keywords_to_avoid_active: [none — solo mode, no cluster_context.json, no reserved list]
+```
+
+### Block 2 — Word Budget
+```
+total_target: 2600 words (±50)
+introduction: 220
+conclusion: 180
+h2_budgets:
+  - heading: "Which Light Blue Shade Suits Your Skin Tone?"
+    budget: 380
+    complexity: high
+  - heading: "The Best Nail Shapes for Light Blue Designs"
+    budget: 320
+    complexity: medium
+  - heading: "Minimalist and Everyday Light Blue Nail Ideas"
+    budget: 340
+    complexity: medium
+  - heading: "Light Blue French Tips and Chrome Finishes"
+    budget: 340
+    complexity: medium
+  - heading: "Light Blue Nails for Prom, Hoco, and Special Occasions"
+    budget: 320
+    complexity: medium
+  - heading: "Glitter, Marble, and Statement Light Blue Designs"
+    budget: 340
+    complexity: medium
+  - heading: "How to Do Light Blue Nails at Home"
+    budget: 260
+    complexity: low
+tracking_rule: Track running total after every H2. Trim the two highest-complexity sections first if running over.
+```
+
+### Block 3 — Image Plan
+```
+total_images: 7  [SESSION OVERRIDE — hardcoded]
+hero_image: frontmatter only — never in body
+body_images: 6
+assignments:
+  - image_number: 1
+    place_after: H2-1 (shade/skin tone)
+    section_context: Split or side-by-side comparison shot — 2-3 light blue sub-shades (powder/baby/sky) on different skin tones
+  - image_number: 2
+    place_after: H2-2 (shapes)
+    section_context: Light blue on almond or coffin shape — clean shape-focused shot
+  - image_number: 3
+    place_after: H2-3 (minimalist)
+    section_context: Solid/simple light blue manicure, glossy finish, minimal design
+  - image_number: 4
+    place_after: H2-4 (French/chrome)
+    section_context: Light blue chrome or glazed French tip design
+  - image_number: 5
+    place_after: H2-5 (occasions)
+    section_context: Dressier light blue look — rhinestone French or pearl-accented design suited to prom/event styling
+  - image_number: 6
+    place_after: H2-6 (statement designs)
+    section_context: Marble, glitter swirl, or aura-effect light blue design — maximalist visual anchor
+image_type_rule: All body images = inspirational nail design images related to light blue nails. No infographics, no process diagrams, no comparison charts.
+path_rule: /images/blog/light-blue-nail-designs/filename.webp — standalone post, no topic_slug segment in path
+```
+
+### Block 4 — Opening Technique Assignments
+```
+rule: No two consecutive sections use the same technique. Conclusion = Technique 1 or 3.
+assignments:
+  - section: Introduction
+    technique: "Technique 3 — The Reframe (trend-volume framing, then reframe into 'this post helps you choose')"
+  - section: "H2-1 Shade/Skin Tone"
+    technique: "Technique 1 — The Claim (direct answer-first: does it suit every skin tone)"
+  - section: "H2-2 Shapes"
+    technique: "Technique 2 — The Scene (visualising the shape on the hand)"
+  - section: "H2-3 Minimalist"
+    technique: "Technique 4 — The Contrast (minimalist vs. maximalist framing)"
+  - section: "H2-4 French/Chrome"
+    technique: "Technique 1 — The Claim"
+  - section: "H2-5 Occasions"
+    technique: "Technique 2 — The Scene"
+  - section: "H2-6 Statement Designs"
+    technique: "Technique 4 — The Contrast"
+  - section: "H2-7 DIY at Home"
+    technique: "Technique 1 — The Claim"
+  - section: Conclusion
+    technique: "Technique 3 — The Reframe"
+banned_opener_rule: Check every opener against banned_opening_approaches in Blog Gen prompt before writing the second sentence.
+```
+
+### Block 5 — Link Placements
+```
+links:
+  - anchor_text: "how sky blue differs from baby blue and powder blue"
+    full_url: https://mirelleinspo.com/blog/nails-by-color/sky-blue-nails
+    place_in_section: "H2-1 Shade/Skin Tone"
+    placement_context: When distinguishing sub-shades within the light blue family, mid-paragraph
+    link_type: cross-site
+
+  - anchor_text: "the full spectrum of blue nail shades from sheer to midnight chrome"
+    full_url: https://mirelleinspo.com/blog/nails-by-color/blue-nails
+    place_in_section: Conclusion
+    placement_context: Positioning this post within the wider blue colour family as a natural next-read
+    link_type: cross-site
+
+  - anchor_text: "the viral theory behind why so many women are choosing this exact shade"
+    full_url: https://mirelleinspo.com/blog/nail-color-psychology-attraction/blue-nail-theory
+    place_in_section: "H2-5 Occasions"
+    placement_context: Cultural-relevance aside when discussing why light blue resonates right now, not the section's main focus
+    link_type: cross-site
+```
+
+### Block 6 — AEO/GEO Plan
+```
+aeo_assignments:
+  - aeo_term: "does light blue nail polish suit every skin tone"
+    assigned_to_section: "H2-1 Shade/Skin Tone"
+    execution: Direct 2-3 sentence answer immediately after H2, before elaboration
+  - aeo_term: "what nail shape works best with light blue polish"
+    assigned_to_section: "H2-2 Shapes"
+    execution: Direct 2-3 sentence answer immediately after H2
+  - aeo_term: "how do I do light blue nails at home"
+    assigned_to_section: "H2-7 DIY at Home"
+    execution: Direct 2-3 sentence answer immediately after H2, step logic follows
+
+geo_entity_statements:
+  - entity: "milky manicure"
+    assigned_to_section: "H2-3 Minimalist"
+    execution: Clear declarative definition sentence, no hedging
+  - entity: "skittle manicure"
+    assigned_to_section: "H2-6 Statement Designs"
+    execution: Clear declarative definition sentence, no hedging
+  - entity: "aura nails technique"
+    assigned_to_section: "H2-6 Statement Designs"
+    execution: Clear declarative definition sentence, no hedging
+```
+
+### Block 7 — Active Constraints
+```
+em_dash_banned: Long em dash does not appear anywhere. Replace with comma / new sentence / parentheses / but / restructure.
+banned_vocab_watch: [Jy — no cluster banned vocabulary list supplied for this standalone post; flag to Blog Gen Agent to apply site-wide banned list if one exists outside cluster_context.json]
+british_english_active: colour, recognise, -ise, -our — every instance, no exceptions
+keyword_density_reminder: After every 2 H2 sections, count current keyword mentions. Verify running total on track for 27–28 total. First half denser than second half.
+image_path_reminder: /images/blog/light-blue-nail-designs/filename.webp — no topic_slug segment, standalone path
+internal_link_url_reminder: Full correct paths only — all 3 links are cross-site, full https://mirelleinspo.com/... URLs, never bare slugs
+hero_image_reminder: Hero = frontmatter only. Never in body.
+strong_tag_reminder: Every primary keyword mention = <strong> tags. Scan after every paragraph.
+```
+
+---
+
+**GAP FLAGGED**: Section 13 (external links) intentionally left empty this pass — Byrdie/Allure/Nailpro site: searches for E-E-A-T citations were not executed in this research session. If external authority links are required, flag back for a follow-up phase_10 pass rather than inventing unverified sources.
