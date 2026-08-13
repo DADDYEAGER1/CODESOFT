@@ -1,0 +1,172 @@
+# NAIL FEED INPUT FILE — SOURCE OF TRUTH FOR POST GEN AGENT
+MODE B — trend scan, topic selected by user from shortlist. Cannibalization flag was raised and user chose to proceed anyway; angle below is built specifically to differentiate rather than duplicate.
+
+## SECTION 1 — FILE AUTHORITY
+This file is the single source of truth for the Nail Feed Post Gen Agent. All values in POST_CONSTANTS are hardcoded. Every entity, sentiment/trend rationale, emotion trigger, structure, and link defined here must be followed exactly.
+
+## SECTION 2 — POST_CONSTANTS
+- slug: is-mocha-really-the-1-fall-nail-color
+- canonical: https://mirelleinspo.com/nail-feed/is-mocha-really-the-1-fall-nail-color
+- word_count: 1500 (fixed, ±50 tolerance)
+- image_count: 4 (fixed: 1 hero + 3 body)
+- category: Nail Colors
+- publish_date: 2026-08-20
+- author: jyoti-mirelle
+
+## SECTION 3 — SENTIMENT AND ENTITY BRIEF
+**post_gen_instruction:** Named entity (mocha mousse) must appear clearly in the first 100 words. This post answers a real, dominant search question directly — it is a verification piece, not another roundup.
+
+- **sentiment_read:** mixed-to-curious. The dominant emotional register isn't frustration, it's a genuine open question people want answered plainly: "is this actually still the one, or has everyone moved on." There's also a subtle skepticism layer — readers have seen "mocha mousse" attached to every season since it launched as Pantone's 2025 Color of the Year, and some are wondering if it's stale by fall 2026.
+- **the_specific_frustration_or_desire:** People don't want another 10-shade roundup that name-drops mocha alongside nine other colors. They want a direct yes/no answer, backed by real evidence, plus the practical mechanics existing roundups skip — exact salon language, formula choice (crème vs. gel vs. dip), and finish (matte vs. glossy vs. chrome) because getting those wrong is the difference between "expensive-looking" and "muddy."
+- **named_entities:** Mocha mousse, Pantone Color of the Year 2025, Cloud Dancer (Pantone's actual 2026 pick, for contrast), espresso brown, "double neutral French," velvet-matte finish, chocolate glazed donut nail
+- **trend_velocity:** Sustained, unusually so. Named Color of the Year for 2025, and independent coverage from Pantone-adjacent sources through mid-2026 confirms it is still the most-requested neutral shade, even though Pantone's 2026 pick (Cloud Dancer, a white) has technically superseded it. This "outlived its own year" status is the genuine story.
+- **why_now_rationale:** This is the single most-repeated question across PAA/autocomplete data for fall nails right now (dozens of near-duplicate variants of "what's the most popular/hottest fall nail color"), and multiple independent fall 2026 trend roundups name mocha/chocolate brown as the leading answer, making this the moment to answer it directly rather than bury it in a list.
+- **saturation_check:** SATURATED on the /blog side — mirelleinspo.com already has dedicated coverage of chocolate brown nails (/blog/nails-by-color/chocolate-brown-nails), a winter mocha piece (/inspo/chocolate-brown-winter-nails), and mocha is named the #1 shade inside both /blog/fall/fall-nail-colors and /blog/fall/fall-nail-trends-2026. Differentiation angle: this post is framed as direct verification of the specific "is it #1 right now" question (not a color spectrum guide, not a roundup entry), and goes deeper into formula/finish mechanics and the "outlived its official year" tension than any existing post touches. If overlap still reads as too close post-draft, recommend collapsing this with chocolate-brown-nails rather than publishing both.
+
+## SECTION 4 — ENGAGEMENT WIDGETS
+**post_gen_instruction:** Reaction Bar: default applies, omit frontmatter. Poll/Quiz: neither selected — see rationale.
+
+- reaction_bar: default
+- poll_or_quiz_selected: neither
+- selection_rationale: Phase_1 research surfaced a genuine curiosity/verification question, not a real either/or split or a set of distinct branching outcomes. Quora search returned no usable sentiment thread on this specific entity (searched, came back off-topic/nail-health noise — noted honestly rather than forced). There isn't a real audience divide to poll (nobody is debating "mocha vs. X"), and there's no genuine multi-outcome branch to quiz. Forcing either would be inventing content not present in the research.
+
+## SECTION 5 — HOOK AND CTR
+**post_gen_instruction:** Read before writing title, excerpt, intro, or first H2. Title and excerpt are hardcoded — use exactly.
+
+- selected_trigger: Trigger 1 — Curiosity Gap
+- trigger_rationale: Sentiment_read is mixed-to-curious, not frustrated or purely excited — readers suspect they might be missing whether this trend has actually moved on, which is a knowledge-gap trigger, not a negative-angle or FOMO one.
+- title: Is mocha really the #1 fall nail color? Here's the real answer
+- title_char_count: 58
+- excerpt: It's been trending since 2025. Here's the proof it's still the top fall pick, plus the exact salon words to get it right.
+- excerpt_char_count: 124
+- intro_hook_brief: Open by naming the tension directly — mocha mousse was named Color of the Year for 2025, and Pantone has since moved on to Cloud Dancer for 2026, so the honest question is whether mocha is still leading or just coasting on old momentum. Answer it fast (yes, with receipts) before moving into why and how.
+
+## SECTION 6 — HERO IMAGE BRIEF
+**post_gen_instruction:** Use imageAlt exactly as given. No visual concept/mood description here — that's a separate downstream prompt.
+
+- imageAlt: Glossy mocha mousse brown manicure on almond nails, warm creamy chocolate finish against neutral background, fall 2026
+- image_filename_brief: mocha-mousse-fall-nails-glossy-brown-manicure-2026.webp
+- tag_for_downstream_prompt: This brief is for a Google Discover hero image — high contrast, thumbnail-style, click-optimised.
+- spec_reminder: 1200x675, 16:9 — hard Discover technical gate, non-negotiable.
+
+## SECTION 7 — CONTENT STRUCTURE
+**post_gen_instruction:** H2 structure followed exactly — no renaming, no reordering without user instruction.
+
+- h1 (working reference): Is Mocha Really the #1 Fall Nail Color?
+- h2_structure:
+  1. Wait, isn't Cloud Dancer the 2026 color of the year?
+  2. The actual evidence mocha is still winning this fall
+  3. What "mocha mousse" nails actually look like (it's not just brown)
+  4. The exact words to use at the salon
+  5. Gel, crème, or dip — which formula gets the finish right
+  6. Who this shade actually flatters
+- word_budget:
+  - intro: 140 words
+  - Wait, isn't Cloud Dancer the 2026 color of the year?: 180 words
+  - The actual evidence mocha is still winning this fall: 220 words
+  - What "mocha mousse" nails actually look like: 240 words
+  - The exact words to use at the salon: 260 words
+  - Gel, crème, or dip: 250 words
+  - Who this shade actually flatters: 180 words
+  - conclusion: 100 words
+
+## SECTION 8 — LINKS
+**post_gen_instruction:** Every link below appears in the post, woven naturally, verbatim URLs and anchors exactly as discovered. Route reflects where each page was actually confirmed live.
+
+- all_links:
+  1. url: https://mirelleinspo.com/blog/nails-by-color/chocolate-brown-nails
+     anchor_text: the full spectrum of chocolate brown nails, from latte to espresso
+     placement_section: "What mocha mousse nails actually look like"
+     link_type: blog-page
+  2. url: https://mirelleinspo.com/blog/fall/fall-nail-colors
+     anchor_text: the complete fall nail colors lineup beyond mocha
+     placement_section: conclusion
+     link_type: blog-page
+  3. url: https://mirelleinspo.com/blog/fall/fall-nail-trends-2026
+     anchor_text: this season's other validated fall nail trends
+     placement_section: "Wait, isn't Cloud Dancer the 2026 color of the year?"
+     link_type: blog-page
+  4. url: https://www.opi.com/blog/nail-trends/this-years-must-try-trend-mocha-mousse-manis
+     anchor_text: OPI's own mocha mousse shade lineup
+     placement_section: "Gel, crème, or dip"
+     link_type: external
+  5. url: https://reforma.eu/blogs/news/mocha-mousse-earth-tones-nail-trends-2026
+     anchor_text: nail professionals confirming mocha as 2026's dominant neutral
+     placement_section: "The actual evidence mocha is still winning this fall"
+     link_type: external
+
+Note: no genuinely relevant Nail Feed sibling post was found via live search (site:mirelleinspo.com/nail-feed did not surface a mocha- or brown-specific fall-nail-feed post distinct from the /blog coverage already linked above), so only 2 internal + 3 external links are included rather than forcing a weak match to hit 3 internal. This is within the 2-3 range and is the honest result of the search.
+
+## SECTION 9 — TOPICAL MAP
+**post_gen_instruction:** Omit entirely from frontmatter if this section is empty/absent.
+
+- topic: fall-nail-colors (same kebab-case as the existing /blog pillar, relationship confirmed via phase_7 search)
+- parentPillar: https://mirelleinspo.com/blog/fall/fall-nail-colors
+- relatedClusters: chocolate-brown-nails
+- primaryKeyword: mocha mousse nails fall 2026
+- secondaryKeywords: mocha mousse nail color, fall nail colors 2026, chocolate brown nails, most popular fall nail color
+- topicalBoundary: This post verifies and explains one specific shade's #1 status with salon/formula mechanics; it does not attempt to cover the full fall palette (that's fall-nail-colors) or the full brown spectrum (that's chocolate-brown-nails).
+
+## SECTION 10 — VOICE/TONE
+**post_gen_instruction:** Layer on top of the fixed editorial voice mandate already in the Post Gen Agent prompt (British English, no em dash, existing rhythm rules).
+
+- recommended_voice: Confident and direct, with a slight myth-busting edge
+- tone_characteristics: Matter-of-fact rather than breathless (mixed/curious sentiment, not pure excitement); willing to state a plain verdict early rather than hedge; practical and specific in the how-to sections rather than aspirational
+- audience_match: The reader is genuinely unsure whether mocha has staying power and wants a straight answer plus the practical detail to act on it immediately, not more persuasion that it's trendy.
+
+## SECTION 11 — EXECUTION PLAN
+
+### Block 1 — Entity and keyword execution
+- named_entities_to_surface_early: mocha mousse, Pantone Color of the Year 2025
+- primary_keyword_if_any: mocha mousse nails fall 2026
+- strong_tag_note: only apply if it appears naturally in the intro or first H2, never forced
+
+### Block 2 — Word and image plan
+- total_word_target: 1500, ±50
+- introduction: 140 words
+- conclusion: 100 words
+- h2_budgets:
+  - Wait, isn't Cloud Dancer the 2026 color of the year?: 180 words
+  - The actual evidence mocha is still winning this fall: 220 words
+  - What "mocha mousse" nails actually look like (it's not just brown): 240 words
+  - The exact words to use at the salon: 260 words
+  - Gel, crème, or dip — which formula gets the finish right: 250 words
+  - Who this shade actually flatters: 180 words
+- image_assignments:
+  1. image_number: 1, place_after: intro, section_context: hero — glossy mocha mousse manicure, inspirational shot only
+  2. image_number: 2, place_after: "What mocha mousse nails actually look like", section_context: close-up of mocha finish variation (matte vs. glossy), inspirational nail design shot only
+  3. image_number: 3, place_after: "The exact words to use at the salon", section_context: mocha mousse on almond or squoval shape, salon-appointment styled shot
+  4. image_number: 4, place_after: "Who this shade actually flatters", section_context: mocha mousse on a different skin tone than image 2/3 for visual range, inspirational shot only
+
+### Block 3 — Opening technique assignments
+- rule: no two consecutive sections same technique. Conclusion = Technique 1 or 3 only.
+- assignments:
+  - Introduction: Technique 1 — direct answer/statement opening
+  - Wait, isn't Cloud Dancer the 2026 color of the year?: Technique 2 — question reframe
+  - The actual evidence mocha is still winning this fall: Technique 3 — evidence/data lead
+  - What "mocha mousse" nails actually look like: Technique 1 — direct statement
+  - The exact words to use at the salon: Technique 2 — direct address/instruction
+  - Gel, crème, or dip: Technique 3 — comparison lead
+  - Who this shade actually flatters: Technique 1 — direct statement
+  - Conclusion: Technique 3
+
+### Block 4 — Link placements
+- links:
+  1. anchor_text: this season's other validated fall nail trends, full_url: https://mirelleinspo.com/blog/fall/fall-nail-trends-2026, place_in_section: "Wait, isn't Cloud Dancer the 2026 color of the year?", link_type: blog-page
+  2. anchor_text: nail professionals confirming mocha as 2026's dominant neutral, full_url: https://reforma.eu/blogs/news/mocha-mousse-earth-tones-nail-trends-2026, place_in_section: "The actual evidence mocha is still winning this fall", link_type: external
+  3. anchor_text: the full spectrum of chocolate brown nails, from latte to espresso, full_url: https://mirelleinspo.com/blog/nails-by-color/chocolate-brown-nails, place_in_section: "What mocha mousse nails actually look like", link_type: blog-page
+  4. anchor_text: OPI's own mocha mousse shade lineup, full_url: https://www.opi.com/blog/nail-trends/this-years-must-try-trend-mocha-mousse-manis, place_in_section: "Gel, crème, or dip", link_type: external
+  5. anchor_text: the complete fall nail colors lineup beyond mocha, full_url: https://mirelleinspo.com/blog/fall/fall-nail-colors, place_in_section: conclusion, link_type: blog-page
+
+### Block 5 — Active constraints
+- em_dash_banned: confirmed active
+- british_english_active: confirmed active
+- min_h2_reminder: 6 H2s present, clears the 3-minimum requirement
+- word_count_reminder: 1500 target, depth not padding
+- image_count_reminder: 4 total, 1 hero + 3 body, fixed
+- hero_image_reminder: frontmatter only, never in body; alt text and filename only, visual concept comes from separate downstream prompt
+
+### Block 6 — Widget execution
+- reaction_bar: omit frontmatter entirely, default applies
+- poll_or_quiz: neither — omit both from frontmatter
+- reminder: mutually exclusive at template level, not applicable here since neither was selected
