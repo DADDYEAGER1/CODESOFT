@@ -1,0 +1,236 @@
+{
+  "cluster_metadata": {
+    "cluster_topic": "Beyoncé Nails",
+    "topic_slug": "beyonce-nails",
+    "show_inspo_gallery_link_cluster_default": false,
+    "target_audience": "Global, Tier 1 countries (US, UK, Canada, Australia)",
+    "total_posts": 6,
+    "intent_breakdown": {
+      "informational": 0,
+      "inspirational": 6,
+      "tutorial": 0,
+      "comparison": 0,
+      "seasonal_trend": 0
+    },
+    "pillar_post_slug": "beyonce-nail-ideas",
+    "created_date": "2026-08-14"
+  },
+
+  "existing_site_posts_excluded": [],
+
+  "posts": [
+    {
+      "post_id": 1,
+      "role": "pillar",
+      "title": "Beyoncé Nails: Iconic Manicure Ideas Through the Years",
+      "slug": "beyonce-nail-ideas",
+      "primary_keyword": "beyonce nails",
+      "intent": "inspirational",
+      "search_mode": "inspiration_mode",
+      "suggested_hook_trigger": "Trigger 2 — FOMO/Trend",
+      "search_demand_signals": [
+        "Editorial: TheZoeReport published a dedicated retrospective of her most iconic manicures across eras",
+        "Editorial: BTArtbox and a dedicated 65-idea roundup (The Beauty Pursuit) both cover the full span of her nail aesthetic",
+        "Pinterest: multiple dedicated boards spanning her entire career, including Lemonade-era throwback content"
+      ],
+      "why_included": "Broadest, highest-demand keyword in the space, validated across retrospective editorial coverage, Pinterest, and dedicated multi-era roundups. Serves as the natural hub, including a retrospective nod to earlier eras like Lemonade that don't have standalone current demand.",
+      "internal_links": {
+        "links_to": [
+          { "slug": "cowboy-carter-nails", "anchor_text": "Cowboy Carter Western-inspired nail ideas", "type": "spoke" },
+          { "slug": "denim-nails-beyonce", "anchor_text": "denim nails from her Cowboy Carter era", "type": "spoke" },
+          { "slug": "renaissance-tour-silver-nails", "anchor_text": "Renaissance Tour silver nail ideas", "type": "spoke" },
+          { "slug": "queen-bee-nails", "anchor_text": "Queen Bee gold and honeycomb nail ideas", "type": "spoke" },
+          { "slug": "beyonce-concert-nails", "anchor_text": "Beyoncé concert nails for your next show", "type": "spoke" }
+        ],
+        "receives_links_from": [
+          { "slug": "cowboy-carter-nails", "anchor_text": "Beyoncé nail ideas through the years" },
+          { "slug": "denim-nails-beyonce", "anchor_text": "Beyoncé nail ideas through the years" },
+          { "slug": "renaissance-tour-silver-nails", "anchor_text": "Beyoncé nail ideas through the years" },
+          { "slug": "queen-bee-nails", "anchor_text": "Beyoncé nail ideas through the years" },
+          { "slug": "beyonce-concert-nails", "anchor_text": "Beyoncé nail ideas through the years" }
+        ]
+      },
+      "status": "approved"
+    },
+    {
+      "post_id": 2,
+      "role": "spoke",
+      "title": "Cowboy Carter Nails: Western-Inspired Manicure Ideas",
+      "slug": "cowboy-carter-nails",
+      "primary_keyword": "cowboy carter nails",
+      "intent": "inspirational",
+      "search_mode": "inspiration_mode",
+      "suggested_hook_trigger": "Trigger 2 — FOMO/Trend",
+      "search_demand_signals": [
+        "Editorial: Blavity published a dedicated 9-design roundup specifically for this era",
+        "TikTok: active hashtag activity (#cowboycarternails, #rodeo) tied to specific tour dates",
+        "Editorial: Essence quoted a professional nail artist describing a distinct 'Black cowgirl chic' aesthetic for this exact trend"
+      ],
+      "why_included": "Distinct, expert-validated aesthetic tied to a major current album/tour era, with cross-confirmed demand across TikTok and two independent beauty editorial outlets.",
+      "internal_links": {
+        "links_to": [
+          { "slug": "beyonce-nail-ideas", "anchor_text": "Beyoncé nail ideas through the years", "type": "pillar" },
+          { "slug": "denim-nails-beyonce", "anchor_text": "denim nails from her Cowboy Carter era", "type": "spoke" },
+          { "slug": "beyonce-concert-nails", "anchor_text": "Beyoncé concert nails for your next show", "type": "spoke" }
+        ],
+        "receives_links_from": [
+          { "slug": "beyonce-nail-ideas", "anchor_text": "Cowboy Carter Western-inspired nail ideas" },
+          { "slug": "denim-nails-beyonce", "anchor_text": "Cowboy Carter Western-inspired nail ideas" },
+          { "slug": "beyonce-concert-nails", "anchor_text": "Cowboy Carter Western-inspired nail ideas" }
+        ]
+      },
+      "status": "approved"
+    },
+    {
+      "post_id": 3,
+      "role": "spoke",
+      "title": "Denim Nails: Beyoncé's Cowboy Carter Trend",
+      "slug": "denim-nails-beyonce",
+      "primary_keyword": "denim nails",
+      "intent": "inspirational",
+      "search_mode": "inspiration_mode",
+      "suggested_hook_trigger": "Trigger 3 — Specificity/Numbers",
+      "search_demand_signals": [
+        "Editorial: Bangstyle published a dedicated feature naming this as its own distinct trend, separate from general Cowboy Carter coverage",
+        "Editorial: Essence's expert nail artist gave a specific technique breakdown for this exact look"
+      ],
+      "why_included": "Named as a standalone trend by dedicated editorial coverage rather than being folded into general Cowboy Carter content, indicating independent search behavior around this specific technique.",
+      "internal_links": {
+        "links_to": [
+          { "slug": "beyonce-nail-ideas", "anchor_text": "Beyoncé nail ideas through the years", "type": "pillar" },
+          { "slug": "cowboy-carter-nails", "anchor_text": "Cowboy Carter Western-inspired nail ideas", "type": "spoke" },
+          { "slug": "beyonce-concert-nails", "anchor_text": "Beyoncé concert nails for your next show", "type": "spoke" }
+        ],
+        "receives_links_from": [
+          { "slug": "beyonce-nail-ideas", "anchor_text": "denim nails from her Cowboy Carter era" },
+          { "slug": "cowboy-carter-nails", "anchor_text": "denim nails from her Cowboy Carter era" }
+        ]
+      },
+      "status": "approved"
+    },
+    {
+      "post_id": 4,
+      "role": "spoke",
+      "title": "Renaissance Tour Silver Nail Ideas",
+      "slug": "renaissance-tour-silver-nails",
+      "primary_keyword": "renaissance tour nails",
+      "intent": "inspirational",
+      "search_mode": "inspiration_mode",
+      "suggested_hook_trigger": "Trigger 2 — FOMO/Trend",
+      "search_demand_signals": [
+        "Editorial: xoNecole and deavita.net both published dedicated 10-20 idea roundups for this exact era",
+        "Cultural: Andscape documented the widespread real-world adoption of silver as the tour's unofficial dress code",
+        "Social: Lemon8 shows active fan-generated content tagged specifically to tour dates"
+      ],
+      "why_included": "One of the most extensively documented fan-driven nail trends in the research, with a confirmed cultural dress-code phenomenon (silver for 'Virgo season') driving sustained, dedicated editorial and social coverage.",
+      "internal_links": {
+        "links_to": [
+          { "slug": "beyonce-nail-ideas", "anchor_text": "Beyoncé nail ideas through the years", "type": "pillar" },
+          { "slug": "queen-bee-nails", "anchor_text": "Queen Bee gold and honeycomb nail ideas", "type": "spoke" },
+          { "slug": "beyonce-concert-nails", "anchor_text": "Beyoncé concert nails for your next show", "type": "spoke" }
+        ],
+        "receives_links_from": [
+          { "slug": "beyonce-nail-ideas", "anchor_text": "Renaissance Tour silver nail ideas" },
+          { "slug": "queen-bee-nails", "anchor_text": "Renaissance Tour silver nail ideas" },
+          { "slug": "beyonce-concert-nails", "anchor_text": "Renaissance Tour silver nail ideas" }
+        ]
+      },
+      "status": "approved"
+    },
+    {
+      "post_id": 5,
+      "role": "spoke",
+      "title": "Queen Bee Nails: Gold & Honeycomb Manicure Ideas",
+      "slug": "queen-bee-nails",
+      "primary_keyword": "queen bee nails",
+      "intent": "inspirational",
+      "search_mode": "aesthetic_identity_mode",
+      "suggested_hook_trigger": "Trigger 4 — Identity Mirroring",
+      "search_demand_signals": [
+        "Pinterest: three independent dedicated boards for 'queen bee nails', 'gold bee nails', and 'honeycomb nail art'",
+        "Commercial: active Etsy product listings specifically for bee and honeycomb press-on nail sets, confirming real purchase-driven demand",
+        "Editorial: BTArtbox and Bustle both feature this as a distinct design category separate from era-specific content"
+      ],
+      "why_included": "Identity-driven aesthetic tied to her 'Queen Bey' persona rather than any single album era, validated by both organic Pinterest demand and real commercial product listings on Etsy.",
+      "internal_links": {
+        "links_to": [
+          { "slug": "beyonce-nail-ideas", "anchor_text": "Beyoncé nail ideas through the years", "type": "pillar" },
+          { "slug": "renaissance-tour-silver-nails", "anchor_text": "Renaissance Tour silver nail ideas", "type": "spoke" },
+          { "slug": "beyonce-concert-nails", "anchor_text": "Beyoncé concert nails for your next show", "type": "spoke" }
+        ],
+        "receives_links_from": [
+          { "slug": "beyonce-nail-ideas", "anchor_text": "Queen Bee gold and honeycomb nail ideas" },
+          { "slug": "renaissance-tour-silver-nails", "anchor_text": "Queen Bee gold and honeycomb nail ideas" },
+          { "slug": "beyonce-concert-nails", "anchor_text": "Queen Bee gold and honeycomb nail ideas" }
+        ]
+      },
+      "status": "approved"
+    },
+    {
+      "post_id": 6,
+      "role": "spoke",
+      "title": "Beyoncé Concert Nails: What to Wear to the Show",
+      "slug": "beyonce-concert-nails",
+      "primary_keyword": "beyonce concert nails",
+      "intent": "inspirational",
+      "search_mode": "inspiration_mode",
+      "suggested_hook_trigger": "Trigger 3 — Specificity/Numbers",
+      "search_demand_signals": [
+        "Editorial: The Beauty Pursuit published a dedicated 65-idea roundup framed explicitly around 'your next tour manicure'",
+        "Social: Lemon8 and xoNecole both show sustained concert-specific content tied to real tour dates and cities"
+      ],
+      "why_included": "Concert-specific search intent distinct from general Beyoncé nails, validated by a dedicated large-scale roundup and consistent social content framed specifically around 'what to wear to the show' across multiple tour eras.",
+      "internal_links": {
+        "links_to": [
+          { "slug": "beyonce-nail-ideas", "anchor_text": "Beyoncé nail ideas through the years", "type": "pillar" },
+          { "slug": "cowboy-carter-nails", "anchor_text": "Cowboy Carter Western-inspired nail ideas", "type": "spoke" },
+          { "slug": "renaissance-tour-silver-nails", "anchor_text": "Renaissance Tour silver nail ideas", "type": "spoke" },
+          { "slug": "queen-bee-nails", "anchor_text": "Queen Bee gold and honeycomb nail ideas", "type": "spoke" }
+        ],
+        "receives_links_from": [
+          { "slug": "beyonce-nail-ideas", "anchor_text": "Beyoncé concert nails for your next show" },
+          { "slug": "cowboy-carter-nails", "anchor_text": "Beyoncé concert nails for your next show" },
+          { "slug": "denim-nails-beyonce", "anchor_text": "Beyoncé concert nails for your next show" },
+          { "slug": "renaissance-tour-silver-nails", "anchor_text": "Beyoncé concert nails for your next show" },
+          { "slug": "queen-bee-nails", "anchor_text": "Beyoncé concert nails for your next show" }
+        ]
+      },
+      "status": "approved"
+    }
+  ],
+
+  "keyword_ownership_registry": {
+    "description": "Master list of all primary keywords — one per post, no overlaps, includes existing site posts",
+    "entries": [
+      { "primary_keyword": "beyonce nails", "owned_by_slug": "beyonce-nail-ideas", "owned_by_title": "Beyoncé Nails: Iconic Manicure Ideas Through the Years", "source": "new post" },
+      { "primary_keyword": "cowboy carter nails", "owned_by_slug": "cowboy-carter-nails", "owned_by_title": "Cowboy Carter Nails: Western-Inspired Manicure Ideas", "source": "new post" },
+      { "primary_keyword": "denim nails", "owned_by_slug": "denim-nails-beyonce", "owned_by_title": "Denim Nails: Beyoncé's Cowboy Carter Trend", "source": "new post" },
+      { "primary_keyword": "renaissance tour nails", "owned_by_slug": "renaissance-tour-silver-nails", "owned_by_title": "Renaissance Tour Silver Nail Ideas", "source": "new post" },
+      { "primary_keyword": "queen bee nails", "owned_by_slug": "queen-bee-nails", "owned_by_title": "Queen Bee Nails: Gold & Honeycomb Manicure Ideas", "source": "new post" },
+      { "primary_keyword": "beyonce concert nails", "owned_by_slug": "beyonce-concert-nails", "owned_by_title": "Beyoncé Concert Nails: What to Wear to the Show", "source": "new post" }
+    ]
+  },
+
+  "merged_posts_log": [
+    {
+      "original_topics": ["Lemonade-era yellow/fierce nails"],
+      "merged_into": "Beyoncé Nails: Iconic Manicure Ideas Through the Years (pillar)",
+      "reason": "Only nostalgic/scattered Pinterest signal found, no current dedicated editorial coverage distinct from general retrospective content. Folded into the pillar as a retrospective section rather than cannibalizing with a thin standalone page."
+    }
+  ],
+
+  "killed_posts_log": [
+    {
+      "topic": "How to Do Chrome Nails at Home: Beyoncé-Inspired Tutorial",
+      "reason": "Removed by user decision after opportunity table review — not a demand failure, a scope cut."
+    },
+    {
+      "topic": "Almond Nails Inspired by Beyoncé's Signature Shape",
+      "reason": "Removed by user decision after opportunity table review — not a demand failure, a scope cut."
+    },
+    {
+      "topic": "Wedding/Jay-Z anniversary red-carpet nail moments",
+      "reason": "No search demand signal found on any of the 8 mandatory sources checked during research. Speculative angle with no real searcher behind it."
+    }
+  ]
+}
