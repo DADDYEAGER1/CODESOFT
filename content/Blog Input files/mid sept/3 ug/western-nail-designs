@@ -1,0 +1,207 @@
+# INPUT FILE — SINGLE SOURCE OF TRUTH FOR BLOG GEN AGENT
+All POST_CONSTANTS values are hardcoded. Do not ask, adjust, or override.
+
+## SECTION 2 — POST_CONSTANTS
+- slug: western-nail-designs
+- topic_slug: NONE (standalone — no topic field, no topic routing)
+- canonical: https://mirelleinspo.com/blog/western-nail-designs
+- post_type: standalone
+- intent: inspirational
+- word_count: 2400
+- image_count: 7 (including hero)
+- show_inspo_gallery_link: false — user hardcoded image_count to 7, overriding the standard true=9/false=4-5 branching; gallery link omitted since no topic_slug exists to route it
+- template: center
+- hero_dimensions: 1200x630
+- category: Nail Art Guide
+- publish_date: 2026-08-13
+- author: jyoti-mirelle
+
+## SECTION 4 — SERP ANALYSIS
+**competitor_gaps** (2+ source validated):
+- No competitor pairs shape guidance with specific western motifs (which shape suits cow print vs bandana vs turquoise-stone accents) — confirmed via kreafolk.com + itsnailinspo.com + nailzinbloom.com
+- Occasion-specific direction (concert/rodeo vs everyday vs wedding-adjacent) is thin — only itsnailinspo touches it briefly; Quora/Pinterest show real search intent split by occasion
+- "How not to overdo it" restraint guidance — nailzinbloom + itsnailinspo both flag overcrowding as the #1 mistake, but no roundup post leads with this
+- Short-nail western designs are underserved — most galleries default to long acrylic/coffin imagery despite squoval/short-almond being named as most-requested by a working nail tech source
+
+**missing_semantic_territory:** "quiet western" / minimalist western nails (restraint-led, not costume-led); French-tip western hybrids; western nails for short/natural nails specifically; seasonal palette shifts within the western aesthetic (not just "summer festival")
+
+**our_strategic_approach:** Lead with the current cultural moment (Beyoncé/Cowboy Carter/Morgan Wallen tour effect driving searches) but differentiate from the site's existing single-motif posts (Cow Print Nails, Morgan Wallen Nails) by covering the full western design vocabulary — motifs, colors, shapes, and restraint — as the entry-point guide, then routing deeper interest to those dedicated spokes.
+
+**recommended_image_count_validation:** Competitor galleries run 21-90 images; our locked 7 (1 hero + 6 body) is intentionally light — this post functions as an overview/guide, not a scroll-heavy idea dump, so image count is deliberately below competitor volume by design (see Section 2 note).
+
+## SECTION 5 — AUDIENCE INTELLIGENCE
+**who_they_are:** Trend-aware women, primarily searching post-Beyoncé/Cowboy Carter and country-music-tour driven (Morgan Wallen tour cited repeatedly). Mix of festival/concert-goers and everyday stylers wanting a western touch without costume energy. Comfortable with DIY gel polish but not necessarily advanced nail art.
+
+**what_they_want_from_this_post:** A clear map of the western nail vocabulary (motifs, colors, shapes) so they can pick their own combination rather than copy one exact design — validated by "how do I not overdo it" language in real content.
+
+**what_frustrates_them:** Existing content either dumps 30-90 unsorted images with no guidance, or over-explains history/culture nobody asked for (BTArtbox, Kreafolk both bury usable info under fluff). Nobody clearly says which shapes/lengths suit which motifs.
+
+**top_5_pain_points:**
+1. Fear of looking "costume-y" rather than intentionally styled
+2. Not knowing which nail shape suits cow print vs bandana vs turquoise-stone designs
+3. Wanting it for a specific event (concert, rodeo, wedding) but finding only generic roundups
+4. Uncertainty about DIY feasibility vs needing a salon
+5. Overwhelm from too many motifs (cow print + cactus + horseshoe + turquoise all competing for attention)
+
+**exact_user_phrases:** "yeehaw", "giddy up", "saddle up your manicure", "cowgirl era", "ranch-ready manicure", "full-blown rodeo glam", "subtle nod to the Wild West", "your inner cowgirl", "western vibe without going full cowboy", "not overdoing it"
+
+**intent_content_signals:** Visual-first with light categorization; short punchy motif descriptions over long history lessons; explicit "pick 2-3 elements max" restraint framing; occasion-based groupings resonate; DIY-friendly notes valued.
+
+## SECTION 6 — SEMANTIC KEYWORD DATA
+- primary_keyword: western nail designs
+- keyword_variations: western nails, western nail ideas, western nail art, cowgirl nails, country western nails, western style nails, western manicure
+- cluster_keywords: cow print nails, turquoise nail accents, cowboy boot nail art, horseshoe nails, cactus nail art, bandana print nails, rodeo nails, desert sunset nails, denim nails, western french tips, fringe nail texture, chrome western nails
+- lsi_terms: cowgirl aesthetic, Wild West manicure, ranch-inspired nails, Americana nail art, southwestern nail patterns, Native American-inspired nail motifs, earthy nail tones, rustic nail design, festival nails, country music nail trend, cowboy core beauty, saddle-tan nails, dusty rose western nails, matte western manicure, western accent nail
+- aeo_terms: "what are western nail designs", "how do you do western nails at home", "what nail shape is best for western nails", "what colors are used in western nail designs", "are western nails still trendy in 2026", "can you do western nails on short nails", "what's the difference between western nails and cow print nails", "how many western motifs should be on one set"
+- technical_terms: dotting tool, accent nail, matte top coat, freehand nail art, gel polish, acrylic overlay, nail stencil/decal, French tip
+- user_language: "yeehaw", "giddy up", "saddle up", "cowgirl era", "ranch-ready", "full rodeo glam", "not going full cowboy", "western vibe without the costume", "your inner cowgirl"
+
+## SECTION 7 — VOICE AND AI QUERIES
+1. What are western nail designs exactly?
+2. How do I do western nails at home without a salon?
+3. What nail shape works best for western nail designs?
+4. What colors are traditionally used in western nail art?
+5. Are western nails still trending in 2026?
+6. Can I do western nail designs on short nails?
+7. What's the difference between cow print nails and western nails?
+8. How many western motifs should I put on one set of nails?
+9. What tools do I need for DIY western nail art?
+10. What western nail design is best for a concert or rodeo?
+11. Do western nails work for everyday wear or just special occasions?
+12. What's the most popular western nail motif right now?
+13. How do I keep western nail designs from looking costume-y?
+14. What length is best for western nail designs?
+15. Can western nail designs be subtle instead of bold?
+
+## SECTION 8 — HOOK AND CTR
+- selected_trigger: Trigger 2 — FOMO/Trend Urgency
+- trigger_rationale: Reader is trend-aware, arriving off the Beyoncé/Cowboy Carter/Morgan Wallen tour cultural wave and wants to catch the look before/during peak relevance.
+- title: Western Nail Designs: The 2026 Cowgirl Trend Guide
+- title_char_count: 56
+- meta_description: Western nail designs are having a real moment. See the motifs, colors, and shapes that read as intentional, not costume, for your next manicure.
+- meta_char_count: 148
+- intro_hook_brief: Open by naming the current cultural surge (tour season, country crossover) driving the search, then immediately promise clarity over chaos — this reader doesn't want another 90-image dump, she wants to know what actually works.
+- first_h2_hook_direction: Phrase the first H2 as a direct voice-search-style question establishing what western nail designs actually are, before diving into motifs.
+
+## SECTION 9 — SEARCH JOURNEY
+- reader_arrival_state: Trend-aware and a little overwhelmed, wanting to join the western nail moment without looking like a costume.
+- journey_arc:
+  1. Confirm she's in the right place — western nails are trending, here's the real breakdown
+  2. Establish the core visual vocabulary (motifs) so she has a mental map
+  3. Guide her to the right shape and length for her chosen motif
+  4. Walk through color palette so the look reads intentional, not random
+  5. Close with restraint guidance and occasion-matching so she leaves confident, not overwhelmed
+- promise_to_deliver: A clear, non-overwhelming map of western nail design options — motifs, shapes, colors — so she can build her own intentional look.
+- exit_state: Confident and ready to book or DIY, with a specific combination in mind rather than a vague "cowgirl vibes" idea.
+
+## SECTION 10 — CONTENT STRUCTURE
+**h1:** Western Nail Designs: The 2026 Cowgirl Trend Guide
+
+**h2_structure:**
+1. What Are Western Nail Designs? (150 words)
+2. The Western Nail Motifs Everyone's Wearing Right Now (400 words)
+3. Best Nail Shapes and Lengths for Western Designs (350 words)
+4. The Western Nail Color Palette That Actually Works (350 words)
+5. How to Do Western Nails at Home (300 words)
+6. Matching Your Western Nails to the Occasion (300 words)
+7. How to Keep Western Nails From Looking Costume-y (250 words)
+
+**word_budget:**
+- introduction: 220
+- conclusion: 180
+- H2s: as listed above (total 2050) — sums to 2450, trim ~50 words across longest sections to land at 2400 target
+
+## SECTION 11 — INTERNAL LINKS
+1. url: /blog/print-nails/cow-print-nails | title: Cow Print Nails: 25 Trend Looks You Need in 2026 | anchor: "25 cow print nail looks, from classic black-and-white to elegant" | placement: H2-2 (motifs section), where cow print is introduced | link_type: cross-site
+2. url: /blog/print-nails/how-to-do-cow-print-nails | title: How to Do Cow Print Nails at Home | anchor: "the full at-home cow print tutorial with a dotting tool" | placement: H2-5 (DIY section) | link_type: cross-site
+3. url: /blog/morgan-wallen-nails | title: Morgan Wallen Nails: 14 Designs That Nail the Still the Problem Vibe | anchor: "14 concert-ready western nail designs built for tour season" | placement: H2-6 (occasion section, concert/tour) | link_type: cross-site
+4. url: /blog/turquoise-nails-summer | title: Turquoise Nails Summer 2026 | anchor: "how to pick the right turquoise shade for your skin tone" | placement: H2-4 (color palette section) | link_type: cross-site
+
+(4 links total — within 4-6 cap; solo mode so no cluster links exist)
+
+## SECTION 12 — VOICE AND TONE
+- recommended_voice: Confident trend guide — knowledgeable friend, not a costume-shop clerk
+- tone_characteristics: Playful without cliché-heavy ("yeehaw" used sparingly, not per-sentence), direct and organizing (map-not-dump structure), reassuring on the "costume-y" fear, practical over historical
+- language_style: Second person throughout, short declarative sentences, minimal Western slang stacking, restraint-focused analogies (e.g. "two motifs max" framed as styling logic not a rule)
+- audience_match: This reader wants to feel in-the-know, not taught a history lesson — voice mirrors a stylish friend giving the real breakdown, matching the FOMO trigger and inspirational intent without tipping into gimmick.
+
+## SECTION 13 — EXTERNAL LINKS
+1. url: byrdie.com western nail ideas coverage | context: cite as evidence of the trend's current media coverage in intro | anchor_suggestion: "recent coverage of the trend"
+2. url: refinery29.com Cowboy Carter tour styling coverage | context: cite when connecting nails to broader western fashion moment | anchor_suggestion: "the wider Western fashion resurgence"
+
+## SECTION 14 — EXECUTION PLAN
+
+### Block 1 — Keyword Execution
+- primary_keyword: western nail designs
+- top_3_density_baseline: ~6 mentions (estimated from BTArtbox, Kreafolk, itsnailinspo top-ranking posts)
+- total_mention_target: 9 mentions
+- first_100_words_plan: mention 1 in sentence 1-2 (naming the trend); mention 2 by sentence 4 (framing the post's promise)
+- first_half_target: 5 mentions — first 1200 words
+- second_half_target: 4 mentions — remaining 1200 words
+- strong_tag_rule: every one of the 9 mentions wrapped in `<strong>` tags
+- keywords_to_avoid_active: none (solo mode, no cluster file)
+
+### Block 2 — Word Budget
+- total_target: 2400 words (±50)
+- introduction: 220
+- conclusion: 180
+- H2 budgets:
+  1. What Are Western Nail Designs? — 150 words — low complexity
+  2. The Western Nail Motifs Everyone's Wearing Right Now — 380 words — high complexity
+  3. Best Nail Shapes and Lengths for Western Designs — 340 words — medium complexity
+  4. The Western Nail Color Palette That Actually Works — 340 words — medium complexity
+  5. How to Do Western Nails at Home — 290 words — medium complexity
+  6. Matching Your Western Nails to the Occasion — 290 words — medium complexity
+  7. How to Keep Western Nails From Looking Costume-y — 210 words — low complexity
+- tracking_rule: check running total after every H2; cut before proceeding if over.
+
+### Block 3 — Image Plan
+- total_images: 7
+- hero_image: frontmatter only, never in body
+- body_images: 6
+- assignments:
+  1. after H2-2 (motifs) — cow print + turquoise accent combo shot
+  2. after H2-2 (motifs) — bandana/paisley print nail set
+  3. after H2-3 (shapes) — short squoval western set showing shape suitability
+  4. after H2-4 (colors) — earthy palette (rust/taupe/bone) full set
+  5. after H2-5 (DIY) — simple horseshoe accent nail, DIY-achievable
+  6. after H2-6 (occasion) — concert/rodeo-ready bold set with chrome/turquoise
+- image_type_rule: all inspirational nail design photos, no infographics/diagrams
+- path_rule: /images/blog/western-nail-designs/filename.webp (no topic_slug — standalone post)
+
+### Block 4 — Opening Technique Assignments
+- Introduction: Technique 2 — Trend Statement
+- H2-1: Technique 4 — Direct Question
+- H2-2: Technique 1 — The Claim
+- H2-3: Technique 3 — The Reframe
+- H2-4: Technique 1 — The Claim
+- H2-5: Technique 4 — Direct Question
+- H2-6: Technique 3 — The Reframe
+- H2-7: Technique 1 — The Claim
+- Conclusion: Technique 3 — The Reframe
+
+### Block 5 — Link Placements
+1. anchor: "25 cow print nail looks, from classic black-and-white to elegant" | url: /blog/print-nails/cow-print-nails | section: H2-2 | context: when cow print motif is introduced
+2. anchor: "the full at-home cow print tutorial with a dotting tool" | url: /blog/print-nails/how-to-do-cow-print-nails | section: H2-5 | context: DIY technique reference
+3. anchor: "14 concert-ready western nail designs built for tour season" | url: /blog/morgan-wallen-nails | section: H2-6 | context: concert/tour occasion
+4. anchor: "how to pick the right turquoise shade for your skin tone" | url: /blog/turquoise-nails-summer | section: H2-4 | context: turquoise color discussion
+
+### Block 6 — AEO/GEO Plan
+- aeo_assignments:
+  1. "what are western nail designs" → H2-1 → direct 2-3 sentence answer immediately after heading
+  2. "how do you do western nails at home" → H2-5 → direct answer paragraph before elaboration
+  3. "what nail shape is best for western nail designs" → H2-3 → direct answer paragraph
+  4. "can you do western nail designs on short nails" → H2-3 → addressed within same section
+- geo_entity_statements:
+  1. entity: cow print nails — H2-2 — clear declarative definition sentence
+  2. entity: dotting tool — H2-5 — clear declarative definition
+
+### Block 7 — Active Constraints
+- em_dash_banned: yes, active
+- banned_vocab_watch: "elevate", "unleash", "boost", "seamless", "journey", "delve"
+- british_english_active: colour, recognise, -ise, -our — all instances
+- keyword_density_reminder: check count after every 2 H2s, target 9 total, denser in first half
+- image_path_reminder: /images/blog/western-nail-designs/filename.webp
+- internal_link_url_reminder: full paths as listed in Block 5, never bare slugs
+- hero_image_reminder: frontmatter only
+- strong_tag_reminder: all 9 keyword mentions wrapped in `<strong>`
