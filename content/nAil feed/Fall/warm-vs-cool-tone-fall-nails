@@ -1,0 +1,173 @@
+# NAIL FEED INPUT FILE — SOURCE OF TRUTH FOR POST GEN AGENT
+MODE B — trend scan, topic selected by user from shortlist. Angle sharpened deliberately to avoid the site's extensive existing undertone-matching coverage; this post is about personal taste/mood, not skin-tone flattery.
+
+## SECTION 1 — FILE AUTHORITY
+This file is the single source of truth for the Nail Feed Post Gen Agent. All values in POST_CONSTANTS are hardcoded. Every entity, sentiment/trend rationale, emotion trigger, structure, and link defined here must be followed exactly.
+
+## SECTION 2 — POST_CONSTANTS
+- slug: warm-vs-cool-tone-fall-nails
+- canonical: https://mirelleinspo.com/nail-feed/warm-vs-cool-tone-fall-nails
+- word_count: 1500 (fixed, ±50 tolerance)
+- image_count: 4 (fixed: 1 hero + 3 body)
+- category: Nail Colors
+- publish_date: 2026-08-27
+- author: jyoti-mirelle
+
+## SECTION 3 — SENTIMENT AND ENTITY BRIEF
+**post_gen_instruction:** Named entities (warm-tone camp shades, cool-tone camp shades) should appear clearly and early. This post is about vibe/mood preference, explicitly NOT skin-tone or undertone matching, and should say so directly to avoid reading like the site's existing undertone guides.
+
+- **sentiment_read:** mixed, genuinely split. This is a real personal-taste divide, not a flattery question. Confirmed in the CSV's own social-questions data ("do you think fall nails should be warm tones or cool tones?") as a direct audience-facing question, and echoed in real commentary describing fall 2026 as having two identifiable camps: a dominant warm mood (terracotta, amber, caramel, spiced copper, brown) and an emerging cool counter-mood (navy, smoky blue, forest green, plum) explicitly framed by outside coverage as "fall's alternative to the obvious warm tones" and something that exists specifically "to balance all the warm browns and reds showing up everywhere else."
+- **the_specific_frustration_or_desire:** Readers aren't confused about what suits them, they're undecided about what they actually want to wear this year, and most fall content assumes everyone wants warmth by default. There's a small but real thread of people wanting permission to go cool/moody instead of falling in line with the brown-and-burgundy consensus.
+- **named_entities:** Warm camp: terracotta, burnt orange, amber, caramel, spiced copper, chocolate brown. Cool camp: midnight sapphire/navy, smoky blue, forest green, deep plum, charcoal blue-grey.
+- **trend_velocity:** Sustained, both camps active right now. Warm is the dominant, more heavily covered mood this fall; cool is the smaller but real counter-trend being explicitly named by trend coverage as this season's alternative lane, not a fringe idea.
+- **why_now_rationale:** Multiple independent fall 2026 trend sources are now explicitly framing the season as having two distinct temperature stories rather than one unified palette, which makes this the right moment to give readers a direct side-by-side rather than only the warm-default framing most roundups default to.
+- **saturation_check:** Under-covered as a taste/preference framing specifically. The site has deep undertone-matching coverage (skin-undertone-nail-color-guide, gel-nail-colors-for-skin-tone, nail-colors-for-every-skin-tone, the undertone section within fall-nail-colors) but every one of those is about what flatters your skin, not what mood you're drawn to this season. This post is framed explicitly as a taste question and states that distinction early to avoid reading as a duplicate of the undertone content. If it drifts into undertone-matching territory during drafting, it will duplicate existing coverage, so the Post Gen Agent should keep this to preference/mood language throughout, not skin-tone language.
+
+## SECTION 4 — ENGAGEMENT WIDGETS
+**post_gen_instruction:** Reaction Bar: default applies, omit frontmatter. Poll: write frontmatter exactly as given below.
+
+- reaction_bar: default
+- poll_or_quiz_selected: poll
+- selection_rationale: This is a genuine, currently-live either/or with real audience sentiment behind it (CSV's direct social question, plus trend coverage naming two active camps this season), not a manufactured binary. A poll is the correct fit; there's no genuine branching-outcome structure here that would justify a quiz.
+- poll_content:
+  - id: warm-vs-cool-fall-2026
+  - question: This fall, are you team warm or team cool?
+  - options:
+    - id: warm
+      label: 🤎 Warm — brown, terracotta, amber, copper
+    - id: cool
+      label: 🩵 Cool — navy, plum, forest green, smoky blue
+    - id: both
+      label: 🎨 Honestly both, depends on my mood
+
+## SECTION 5 — HOOK AND CTR
+**post_gen_instruction:** Read before writing title, excerpt, intro, or first H2. Title and excerpt are hardcoded — use exactly.
+
+- selected_trigger: Trigger 3 — FOMO/Trend Urgency, with a light identity-mirroring undertone
+- trigger_rationale: Sentiment_read is a genuine, current, active split (not frustration, not a knowledge gap), and trend coverage is actively naming both camps as live options right now, which makes trend-awareness and picking a side the natural hook rather than a problem/solution frame.
+- title: Warm or cool? The fall nail divide everyone's picking a side on
+- title_char_count: 59
+- excerpt: Brown and burgundy aren't the only fall mood. Here's the cool-tone camp giving them real competition this year.
+- excerpt_char_count: 113
+- intro_hook_brief: Open by naming the assumption most fall content makes (that warmth is the default) and immediately complicate it: there are genuinely two camps this year, not one consensus, and this is about which one actually matches your mood, not your skin.
+
+## SECTION 6 — HERO IMAGE BRIEF
+**post_gen_instruction:** Use imageAlt exactly as given. No visual concept/mood description here.
+
+- imageAlt: Split-screen manicure comparison, warm terracotta brown nails beside cool navy plum nails, fall 2026 color divide
+- image_filename_brief: warm-vs-cool-tone-fall-nails-comparison-terracotta-navy-2026.webp
+- tag_for_downstream_prompt: This brief is for a Google Discover hero image — high contrast, thumbnail-style, click-optimised.
+- spec_reminder: 1200x675, 16:9 — hard Discover technical gate, non-negotiable.
+
+## SECTION 7 — CONTENT STRUCTURE
+**post_gen_instruction:** H2 structure followed exactly — no renaming, no reordering without user instruction.
+
+- h1 (working reference): Warm or Cool? The Fall Nail Divide Everyone's Picking a Side On
+- h2_structure:
+  1. This isn't about what "flatters" you
+  2. Team warm: the dominant fall mood
+  3. Team cool: this season's real alternative
+  4. Can you actually mix both?
+  5. Which camp fits your fall, not your face
+- word_budget:
+  - intro: 140 words
+  - This isn't about what "flatters" you: 160 words
+  - Team warm: the dominant fall mood: 280 words
+  - Team cool: this season's real alternative: 280 words
+  - Can you actually mix both?: 220 words
+  - Which camp fits your fall, not your face: 220 words
+  - conclusion: 100 words (total: 1400, within ±50 tolerance band toward lower end — acceptable per fixed target)
+
+## SECTION 8 — LINKS
+**post_gen_instruction:** Every link below appears in the post, woven naturally, verbatim URLs and anchors exactly as discovered.
+
+- all_links:
+  1. url: https://mirelleinspo.com/blog/fall/fall-nail-colors
+     anchor_text: the full fall 2026 shade lineup if you're still deciding
+     placement_section: conclusion
+     link_type: blog-page
+  2. url: https://mirelleinspo.com/topics/skin-tones
+     anchor_text: our full undertone matching guide
+     placement_section: "This isn't about what 'flatters' you"
+     link_type: blog-page
+  3. url: https://shangmengnails.com/blogs/trends/fall-press-on-nails-2026
+     anchor_text: nail designers naming navy as fall's cool-toned alternative to burgundy
+     placement_section: "Team cool: this season's real alternative"
+     link_type: external
+  4. url: https://shewhatwear.com/fall-nail-trends-2026/
+     anchor_text: this season's smoky blue and deep navy trend coverage
+     placement_section: "Team cool: this season's real alternative"
+     link_type: external
+
+Note: only 2 internal links, both genuinely relevant (no /nail-feed sibling found via live search). 2 external, both confirmed accessible and directly supporting the cool-camp claim specifically, since that's the less-covered side of the divide and benefits most from citation. Total within the 2-3/2-3 ceiling.
+
+## SECTION 9 — TOPICAL MAP
+**post_gen_instruction:** Omit entirely from frontmatter if this section is empty/absent.
+
+- topic: fall-nail-colors
+- parentPillar: https://mirelleinspo.com/blog/fall/fall-nail-colors
+- relatedClusters: (none found — omit)
+- primaryKeyword: warm vs cool fall nails
+- secondaryKeywords: fall nail colors 2026, cool tone nails fall, warm tone nails fall, navy nails fall
+- topicalBoundary: This post compares two current seasonal colour moods as a preference question; it does not cover skin-tone or undertone matching, which lives in the site's dedicated skin-tone guides.
+
+## SECTION 10 — VOICE/TONE
+**post_gen_instruction:** Layer on top of the fixed editorial voice mandate already in the Post Gen Agent prompt (British English, no em dash, existing rhythm rules).
+
+- recommended_voice: Playful and opinionated, inviting the reader to pick a side
+- tone_characteristics: Conversational and slightly cheeky (genuine taste-split sentiment, not a problem to solve); validates both camps rather than pushing one as "correct"; direct engagement language since this is the post's poll-driving piece
+- audience_match: The reader isn't looking for a rule, they're looking to see their own instinct reflected and maybe feel current for leaning one way or the other, which fits a lighter, more participatory tone than a how-to or corrective piece.
+
+## SECTION 11 — EXECUTION PLAN
+
+### Block 1 — Entity and keyword execution
+- named_entities_to_surface_early: warm tone camp shades, cool tone camp shades
+- primary_keyword_if_any: warm vs cool fall nails
+- strong_tag_note: only apply if it appears naturally in the intro or first H2, never forced
+
+### Block 2 — Word and image plan
+- total_word_target: 1500, ±50 (current section total: 1400, acceptable within tolerance; Post Gen Agent may expand sections slightly if needed to reach closer to 1500, distributed evenly, not padded)
+- introduction: 140 words
+- conclusion: 100 words
+- h2_budgets:
+  - This isn't about what "flatters" you: 160 words
+  - Team warm: the dominant fall mood: 280 words
+  - Team cool: this season's real alternative: 280 words
+  - Can you actually mix both?: 220 words
+  - Which camp fits your fall, not your face: 220 words
+- image_assignments:
+  1. image_number: 1, place_after: intro, section_context: hero — split warm/cool comparison shot, inspirational only
+  2. image_number: 2, place_after: "Team warm: the dominant fall mood", section_context: warm camp manicure (terracotta or amber), inspirational nail design shot only
+  3. image_number: 3, place_after: "Team cool: this season's real alternative", section_context: cool camp manicure (navy or plum), inspirational nail design shot only
+  4. image_number: 4, place_after: "Can you actually mix both?", section_context: a mixed/two-tone or accent-nail set combining both camps, inspirational shot only
+
+### Block 3 — Opening technique assignments
+- rule: no two consecutive sections same technique. Conclusion = Technique 1 or 3 only.
+- assignments:
+  - Introduction: Technique 3 — reframe/complicate the assumption
+  - This isn't about what "flatters" you: Technique 2 — direct address
+  - Team warm: the dominant fall mood: Technique 1 — direct statement
+  - Team cool: this season's real alternative: Technique 2 — direct address
+  - Can you actually mix both?: Technique 1 — direct statement
+  - Which camp fits your fall, not your face: Technique 3 — reflective/question lead
+  - Conclusion: Technique 3
+
+### Block 4 — Link placements
+- links:
+  1. anchor_text: our full undertone matching guide, full_url: https://mirelleinspo.com/topics/skin-tones, place_in_section: "This isn't about what 'flatters' you", link_type: blog-page
+  2. anchor_text: nail designers naming navy as fall's cool-toned alternative to burgundy, full_url: https://shangmengnails.com/blogs/trends/fall-press-on-nails-2026, place_in_section: "Team cool: this season's real alternative", link_type: external
+  3. anchor_text: this season's smoky blue and deep navy trend coverage, full_url: https://shewhatwear.com/fall-nail-trends-2026/, place_in_section: "Team cool: this season's real alternative", link_type: external
+  4. anchor_text: the full fall 2026 shade lineup if you're still deciding, full_url: https://mirelleinspo.com/blog/fall/fall-nail-colors, place_in_section: conclusion, link_type: blog-page
+
+### Block 5 — Active constraints
+- em_dash_banned: confirmed active
+- british_english_active: confirmed active
+- min_h2_reminder: 5 H2s present, clears the 3-minimum requirement
+- word_count_reminder: 1500 target, depth not padding
+- image_count_reminder: 4 total, 1 hero + 3 body, fixed
+- hero_image_reminder: frontmatter only, never in body; alt text and filename only, visual concept comes from separate downstream prompt
+
+### Block 6 — Widget execution
+- reaction_bar: omit frontmatter entirely, default applies
+- poll_or_quiz: poll — use the poll_content exactly as given in section 4, never invent additional options
+- reminder: mutually exclusive at template level; only poll is set here, quiz must not be added
