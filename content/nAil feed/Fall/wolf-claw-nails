@@ -1,0 +1,163 @@
+# NAIL FEED INPUT FILE — SOURCE OF TRUTH FOR POST GEN AGENT
+MODE A — topic given directly by user (wolf claw nails). Confirmed as a genuine content gap: named repeatedly across the site's own nav menus, homepage, and promo copy ("Chrome, cat claw, milky pastels taking over 2026") but with no dedicated post anywhere on the site.
+
+## SECTION 1 — FILE AUTHORITY
+This file is the single source of truth for the Nail Feed Post Gen Agent. All values in POST_CONSTANTS are hardcoded. Every entity, sentiment/trend rationale, emotion trigger, structure, and link defined here must be followed exactly.
+
+## SECTION 2 — POST_CONSTANTS
+- slug: wolf-claw-nails
+- canonical: https://mirelleinspo.com/nail-feed/wolf-claw-nails
+- word_count: 1500 (fixed, ±50 tolerance)
+- image_count: 4 (fixed: 1 hero + 3 body)
+- category: Nail Trends
+- publish_date: 2026-08-20
+- author: jyoti-mirelle
+
+## SECTION 3 — SENTIMENT AND ENTITY BRIEF
+**post_gen_instruction:** Named entity (wolf claw, also called cat claw) must appear clearly in the first 100 words, with the alternate name given early since both terms are in active use.
+
+- **sentiment_read:** mixed, with a genuine curiosity gap at the centre. Real coverage (WWD, quoting practicing nail artists) confirms the shape genuinely delivers on its visual promise, long, slender-looking hands, bold self-expression, but comes with a specific, named practical cost: an artist directly cites washing hair and inserting contact lenses as concrete daily-life friction points. Readers are drawn to the look but do not yet know whether they can actually live with it, which is a knowledge gap, not a frustration or pure excitement.
+- **the_specific_frustration_or_desire:** People want the dramatic, edgy silhouette (repeatedly described as "bold," "theatrical," pushing boundaries) but need a straight answer on what daily life actually looks like with them on, since existing coverage names the problem but does not solve it with real guidance.
+- **named_entities:** Wolf claw nails, cat claw nails (interchangeable names for the same shape), the curved stiletto/extreme apex structure, encapsulation technique, hyperrealistic nail art (as the design style most associated with the shape)
+- **trend_velocity:** Rising and genuinely current. Confirmed by real editorial coverage (WWD, Yahoo, MSN) published within the last three months, over 11,000 Instagram Reels on the term, millions of TikTok views, and visibility at events like the Met Gala. This is validated trend velocity, not a manufactured angle.
+- **why_now_rationale:** The shape has crossed from a niche nail-art subculture into mainstream beauty press coverage within the past few months, and demand is outpacing supply of nail techs who can execute it well, according to artists quoted in the WWD piece, making this the right moment for a reader-facing explainer.
+- **saturation_check:** Under-covered, genuinely. The phrase "cat claw" appears repeatedly across this site's own navigation, homepage promo copy, and encyclopedia cross-links as though a dedicated post exists, but no standalone explainer or how-to was found via live search. This is a confirmed content gap, not a saturated topic requiring a sharpened angle.
+
+## SECTION 4 — ENGAGEMENT WIDGETS
+**post_gen_instruction:** Reaction Bar: default applies, omit frontmatter. Poll/Quiz: neither selected — see rationale.
+
+- reaction_bar: default
+- poll_or_quiz_selected: neither
+- selection_rationale: Quora returned no usable sentiment thread on this specific entity (searched, results were entirely about animal claw anatomy and pet nail trimming, noted honestly rather than forced). The real research finding is a knowledge gap about daily-life practicality, not a genuine either/or split or a set of distinct branching outcomes, so neither poll nor quiz fits without inventing content the research does not support.
+
+## SECTION 5 — HOOK AND CTR
+**post_gen_instruction:** Read before writing title, excerpt, intro, or first H2. Title and excerpt are hardcoded — use exactly.
+
+- selected_trigger: Trigger 1 — Curiosity Gap
+- trigger_rationale: Sentiment_read centres on a genuine, named knowledge gap (can you actually live with these) rather than frustration or pure excitement, which is precisely what the curiosity-gap trigger is built for.
+- title: Wolf claw nails are everywhere. Can you actually live with them?
+- title_char_count: 60
+- excerpt: The shape behind 11,000+ Instagram reels looks incredible and comes with a real catch. Here's what nail techs won't tell you upfront.
+- excerpt_char_count: 130
+- intro_hook_brief: Open by naming the shape and its visual appeal directly (long, slender, dramatic), then immediately introduce the tension named by real nail artists: it is genuinely difficult to live with day to day, and most coverage stops at "impractical" without explaining what that actually means in practice.
+
+## SECTION 6 — HERO IMAGE BRIEF
+**post_gen_instruction:** Use imageAlt exactly as given. No visual concept/mood description here — that is a separate downstream prompt.
+
+- imageAlt: Dramatic curved wolf claw acrylic nails, sharp pointed tips, black ombre gothic manicure close-up
+- image_filename_brief: wolf-claw-nails-curved-stiletto-black-ombre-gothic-2026.webp
+- tag_for_downstream_prompt: This brief is for a Google Discover hero image — high contrast, thumbnail-style, click-optimised.
+- spec_reminder: 1200x675, 16:9 — hard Discover technical gate, non-negotiable.
+
+## SECTION 7 — CONTENT STRUCTURE
+**post_gen_instruction:** H2 structure followed exactly — no renaming, no reordering without user instruction.
+
+- h1 (working reference): Wolf Claw Nails Are Everywhere. Can You Actually Live With Them?
+- h2_structure:
+  1. What wolf claw nails actually are (and why cat claw means the same thing)
+  2. The real daily-life trade-off nail artists are honest about
+  3. Who this shape is actually built for
+  4. Getting it done: technique, time, and finding the right tech
+  5. A shorter version exists if you want the look without the risk
+- word_budget:
+  - intro: 140 words
+  - What wolf claw nails actually are (and why cat claw means the same thing): 200 words
+  - The real daily-life trade-off nail artists are honest about: 260 words
+  - Who this shape is actually built for: 220 words
+  - Getting it done: technique, time, and finding the right tech: 260 words
+  - A shorter version exists if you want the look without the risk: 220 words
+  - conclusion: 100 words
+
+## SECTION 8 — LINKS
+**post_gen_instruction:** Every link below appears in the post, woven naturally, verbatim URLs and anchors exactly as discovered.
+
+- all_links:
+  1. url: https://mirelleinspo.com/blog/nail-shapes/short-stiletto-nails
+     anchor_text: how the nail world solved this exact problem for regular stiletto shapes
+     placement_section: "A shorter version exists if you want the look without the risk"
+     link_type: blog-page
+  2. url: https://mirelleinspo.com/work-nails/nail-shapes-for-work
+     anchor_text: our guide to which nail shapes actually read as professional
+     placement_section: "Who this shape is actually built for"
+     link_type: blog-page
+  3. url: https://wwd.com/beauty-industry-news/beauty-features/wolf-claw-nail-art-1238955791/
+     anchor_text: nail artists who specialise in the technique, speaking to WWD
+     placement_section: "Getting it done: technique, time, and finding the right tech"
+     link_type: external
+  4. url: https://www.whoopsee.it/en/wolf-claw-nails-are-officially-the-boldest-manicure-of-2026/
+     anchor_text: coverage confirming the shape's reach from Instagram to red carpet events
+     placement_section: "What wolf claw nails actually are (and why cat claw means the same thing)"
+     link_type: external
+
+Note: only 2 internal links, both genuinely relevant (no /nail-feed sibling found via live search, and no other /blog post covers this shape specifically to link to). 2 external, both confirmed accessible and directly sourced from the research. Within the 2-3/2-3 ceiling on both sides.
+
+## SECTION 9 — TOPICAL MAP
+**post_gen_instruction:** Omit entirely from frontmatter if this section is empty/absent.
+
+- topic: nail-shapes (light relationship to the site's general shape-guide content, no single confirmed /blog pillar specific to this shape)
+- parentPillar: (none found specific enough to link as a true pillar — omit)
+- relatedClusters: short-stiletto-nails
+- primaryKeyword: wolf claw nails
+- secondaryKeywords: cat claw nails, curved stiletto nails, extreme nail shape 2026, wolf claw manicure
+- topicalBoundary: This post explains what wolf claw nails are, the real practical trade-offs, and who the shape suits; it does not cover general nail shape guidance for hand type or general stiletto nail care, which live elsewhere on the site.
+
+## SECTION 10 — VOICE/TONE
+**post_gen_instruction:** Layer on top of the fixed editorial voice mandate already in the Post Gen Agent prompt (British English, no em dash, existing rhythm rules).
+
+- recommended_voice: Honest and direct, like a friend giving you the real talk before you book it
+- tone_characteristics: Straightforward rather than salesy (the trigger is a knowledge gap, so the job is to close it plainly, not oversell the trend); respectful of the aesthetic and the people drawn to it, never mocking the shape's edgy appeal; practical and specific once it gets into the trade-offs and technique sections
+- audience_match: The reader is genuinely excited by the look but wants someone to tell them the truth before they commit two to three weeks and real money to a shape they might not be able to live with, so the voice should earn trust through candour rather than pure hype.
+
+## SECTION 11 — EXECUTION PLAN
+
+### Block 1 — Entity and keyword execution
+- named_entities_to_surface_early: wolf claw nails, cat claw nails
+- primary_keyword_if_any: wolf claw nails
+- strong_tag_note: only apply if it appears naturally in the intro or first H2, never forced
+
+### Block 2 — Word and image plan
+- total_word_target: 1500, ±50
+- introduction: 140 words
+- conclusion: 100 words
+- h2_budgets:
+  - What wolf claw nails actually are (and why cat claw means the same thing): 200 words
+  - The real daily-life trade-off nail artists are honest about: 260 words
+  - Who this shape is actually built for: 220 words
+  - Getting it done: technique, time, and finding the right tech: 260 words
+  - A shorter version exists if you want the look without the risk: 220 words
+- image_assignments:
+  1. image_number: 1, place_after: intro, section_context: hero — dramatic curved wolf claw set, inspirational shot only
+  2. image_number: 2, place_after: "What wolf claw nails actually are (and why cat claw means the same thing)", section_context: close-up of the curved apex and sharp point structure, inspirational nail design shot only
+  3. image_number: 3, place_after: "Getting it done: technique, time, and finding the right tech", section_context: hyperrealistic or encapsulated wolf claw design showing the art style associated with the shape, inspirational shot only
+  4. image_number: 4, place_after: "A shorter version exists if you want the look without the risk", section_context: a shorter, more moderate curved-claw set for comparison, inspirational shot only
+
+### Block 3 — Opening technique assignments
+- rule: no two consecutive sections same technique. Conclusion = Technique 1 or 3 only.
+- assignments:
+  - Introduction: Technique 3 — name the tension directly
+  - What wolf claw nails actually are (and why cat claw means the same thing): Technique 1 — direct statement
+  - The real daily-life trade-off nail artists are honest about: Technique 2 — direct address
+  - Who this shape is actually built for: Technique 1 — direct statement
+  - Getting it done: technique, time, and finding the right tech: Technique 2 — practical/instruction lead
+  - A shorter version exists if you want the look without the risk: Technique 3 — reveal/reframe
+  - Conclusion: Technique 3
+
+### Block 4 — Link placements
+- links:
+  1. anchor_text: coverage confirming the shape's reach from Instagram to red carpet events, full_url: https://www.whoopsee.it/en/wolf-claw-nails-are-officially-the-boldest-manicure-of-2026/, place_in_section: "What wolf claw nails actually are (and why cat claw means the same thing)", link_type: external
+  2. anchor_text: nail artists who specialise in the technique, speaking to WWD, full_url: https://wwd.com/beauty-industry-news/beauty-features/wolf-claw-nail-art-1238955791/, place_in_section: "Getting it done: technique, time, and finding the right tech", link_type: external
+  3. anchor_text: our guide to which nail shapes actually read as professional, full_url: https://mirelleinspo.com/work-nails/nail-shapes-for-work, place_in_section: "Who this shape is actually built for", link_type: blog-page
+  4. anchor_text: how the nail world solved this exact problem for regular stiletto shapes, full_url: https://mirelleinspo.com/blog/nail-shapes/short-stiletto-nails, place_in_section: "A shorter version exists if you want the look without the risk", link_type: blog-page
+
+### Block 5 — Active constraints
+- em_dash_banned: confirmed active
+- british_english_active: confirmed active
+- min_h2_reminder: 5 H2s present, clears the 3-minimum requirement
+- word_count_reminder: 1500 target, depth not padding
+- image_count_reminder: 4 total, 1 hero + 3 body, fixed
+- hero_image_reminder: frontmatter only, never in body; alt text and filename only, visual concept comes from separate downstream prompt
+
+### Block 6 — Widget execution
+- reaction_bar: omit frontmatter entirely, default applies
+- poll_or_quiz: neither — omit both from frontmatter
+- reminder: mutually exclusive at template level, not applicable here since neither was selected
