@@ -1,0 +1,260 @@
+# INPUT FILE — SOLO MODE — STANDALONE POST
+## SOURCE OF TRUTH FOR BLOG GEN AGENT
+
+This file is the single source of truth. All POST_CONSTANTS values are hardcoded — do not ask, adjust, or override. All keywords, H2 structure, audience intelligence, internal links, and tone below must be followed exactly.
+
+---
+
+## POST_CONSTANTS
+
+| Field | Value |
+|---|---|
+| slug | black-and-gold-nail-designs |
+| topic_slug | *(none — standalone, omitted entirely)* |
+| canonical | https://mirelleinspo.com/blog/black-and-gold-nail-designs |
+| post_type | standalone |
+| intent | inspirational |
+| word_count | 2450 |
+| image_count | 7 (session override — includes hero) |
+| show_inspo_gallery_link | true |
+| template | posts (session override — center default for standalone) |
+| hero_dimensions | 1200x630 |
+| category | Nail Colors / Color Combos |
+| publish_date | 2026-08-13 |
+| author | jyoti-mirelle |
+
+---
+
+## SERP ANALYSIS
+
+**Competitor gaps (2+ source validated):**
+- Skin tone / undertone pairing guidance — absent from all 3 top competitors, confirmed demand across 5+ independent sources (Joyee Nails, BTArtbox, CND, Purluxe, Manucurist)
+- Occasion-organized structure (wedding vs NYE vs everyday/office vs birthday) — competitors list designs flat with no occasion filter, confirmed via Pinterest sub-searches + Wedding Forward + RainyRoses + SureThings
+- Short/petite nail length coverage — confirmed via Pinterest ("black and gold nails short simple") + dedicated 50+ short-nail competitor article + Etsy demand signal; none of top-3 organize by length
+- Nail shape pairing (which shapes carry which black-and-gold techniques best) — only surface-mentioned by one competitor (coffin shape note), not systematically covered
+
+**Missing semantic territory:** undertone/vein-test language, "everyday vs statement" framing, press-on vs salon vs DIY-at-home distinction, longevity/wear-frequency angle
+
+**Our strategic approach:** Organise the roundup around real decision points readers actually have — skin tone/undertone, occasion, and nail length — rather than a flat scroll of 25-30 designs. Lead with the emotional and visual payoff (this combination is the "instant luxury" pairing) then let structure do the differentiation work competitors skip.
+
+**Top 3 word count estimates:** thepinkissue.com (~10 min read, ~25 designs, est. 2200 words), accio.com (~8 min read, ~10 designs with full paragraphs, est. 2100 words), kreafolk.com (30 designs + 5 sub-sections with patterns/party/summer/color-pairing content, est. 3400 words). **Average: ~2570 words.**
+
+**Recommended image count validation:** Session override locks image_count at 7 (including hero) despite the standard inspirational/gallery rule computing to 9. Flagging this as a deliberate deviation from phase_2 default — noted, not corrected, per explicit user instruction.
+
+---
+
+## AUDIENCE INTELLIGENCE
+
+**Who they are:** A style-driven browser (not a nail novice) who already associates black and gold with "luxury" and is scanning for the specific execution that fits her — her skin tone, her event, her nail length. She's likely deciding between salon booking, press-ons, or DIY.
+
+**What they want:** A curated, decisive shortlist — not an overwhelming scroll of 30 near-identical images. She wants to see herself in the result before she commits.
+
+**What frustrates them:** Existing content treats black and gold as one monolithic look. No guidance on whether it suits her skin tone. No distinction between "office-safe" and "full glam." No help narrowing 25+ options down to the 3-4 that actually apply to her situation.
+
+**Top 5 pain points:**
+1. Doesn't know if black and gold "washes her out" or suits her undertone — no competitor addresses this
+2. Can't tell which designs are appropriate for work vs. a wedding vs. NYE
+3. Assumes black and gold = long stiletto/coffin nails only, unsure what works on short nails
+4. Overwhelmed by design volume with no way to filter by her actual need
+5. Uncertain whether these looks are DIY-achievable or salon-only
+
+**Exact user phrases (from real conversations):** "black and gold nails short simple," "what nail polish should I wear with a black and gold dress," "black and gold wedding nails," "black and gold nails for new years," "everyday glam," "chic without looking juvenile," "expensive-looking," "party-ready," "who did your nails"
+
+**Intent content signals:** Wants visual abundance early, wants designs grouped logically (not alphabetical/random), responds to confident styling language ("this suits X"), wants at least one section that filters by a personal factor (skin tone or occasion), does not want technical polish-brand walkthroughs (that's tutorial territory, different post).
+
+---
+
+## SEMANTIC KEYWORD DATA
+
+- **Primary keyword:** black and gold nail designs
+- **Keyword variations:** black and gold nails, black and gold nail art, black gold nail designs, black and gold manicure, gold and black nails, black and gold nail ideas
+- **Cluster keywords:** black and gold French tips, black and gold chrome nails, black and gold glitter nails, black and gold ombre nails, matte black gold foil nails, black and gold Art Deco nails, black and gold wedding nails, black and gold nails for new years
+- **LSI terms:** gold foil accent, gold chrome powder, glitter ombre, negative space nail art, celestial nail art, geometric gold lines, gold leaf nails, matte black polish, high-gloss top coat, metallic gold polish, animal print nail art, marble nail effect, statement nail, accent nail, party nails, holiday manicure
+- **AEO terms:** "what skin tone does black and gold nails suit," "are black and gold nails good for a wedding," "can you wear black and gold nails to the office," "what nail shape works best with black and gold designs," "how do you make black and gold nails look expensive," "are black and gold nails still in style"
+- **Technical terms:** chrome powder, gold leaf, negative space, ombre gradient, French tip, accent nail, top coat
+- **User language:** "expensive-looking," "party-ready," "everyday glam," "chic without looking juvenile," "who did your nails," "screenshot-worthy," "instant luxury," "statement without trying too hard"
+
+---
+
+## VOICE & AI QUERIES
+
+1. What skin tone suits black and gold nails best?
+2. Are black and gold nails appropriate for a wedding?
+3. Can I wear black and gold nails to work?
+4. What is the best nail shape for black and gold designs?
+5. How do you do black and gold nails at home?
+6. Are black and gold nails good for short nails?
+7. What is the difference between black and gold chrome and glitter nails?
+8. Do black and gold nails suit dark skin tones?
+9. What occasions are black and gold nails best for?
+10. How can I make black and gold nails look more subtle?
+11. What gold finish works best with black nail polish?
+12. Are black and gold nails in style in 2026?
+13. What's the easiest black and gold nail design to DIY?
+14. Can black and gold nails work for everyday wear?
+15. What nail length works best for black and gold French tips?
+
+---
+
+## HOOK & CTR
+
+- **Selected trigger:** Trigger 3 — Specificity & Numbers (with light Trigger 2 FOMO undertone via year tag)
+- **Trigger rationale:** Reader is browsing for volume and wants a clear promise of options; specificity gives the clarity competitors' vague "stunning ideas" framing lacks.
+- **Title:** "35 Black and Gold Nail Designs to Try in 2026" (54 chars)
+- **Title char count:** 54
+- **Meta description:** "From wedding-ready to office-safe: black and gold nail designs sorted by skin tone, occasion, and length — find your exact match." (132 chars)
+- **Meta char count:** 132
+- **Intro hook brief:** Open by naming black and gold as the one pairing that reads as luxury regardless of style direction, then immediately promise the differentiator: this isn't another flat scroll, it's organised by what actually matters — your skin tone, your event, your nail length.
+- **First H2 hook direction:** Frame the first H2 as answering "does black and gold suit me?" — phrase close to a voice query, e.g. "What Skin Tone Does Black and Gold Nails Suit Best?"
+
+---
+
+## SEARCH JOURNEY
+
+- **Reader arrival state:** Curious and visually motivated, already sold on the black-and-gold pairing conceptually, looking to convert that interest into a specific, personally-relevant choice.
+- **Journey arc:**
+  1. Confirm the pairing suits her (skin tone reassurance) — removes hesitation early
+  2. Deliver visual abundance across techniques (foil, chrome, ombre, French, Art Deco)
+  3. Organise by occasion so she can picture the moment she'd wear it
+  4. Address length/shape so short-nail readers aren't left out
+  5. Close with a confident "this is your statement pairing" identity payoff
+- **Promise to deliver:** A complete, personally-filterable shortlist of black and gold nail designs — not just a gallery, but the right one for her skin tone, event, and nail length.
+- **Exit state:** Confident and decided — she has 2-3 designs bookmarked to bring to her nail tech or attempt at home.
+
+---
+
+## CONTENT STRUCTURE
+
+**H1:** 35 Black and Gold Nail Designs to Try in 2026
+
+**H2 structure (word budget):**
+1. What Skin Tone Does Black and Gold Nails Suit Best? — 220
+2. Classic Black and Gold French Tips — 280
+3. Gold Chrome and Foil on a Black Base — 280
+4. Black and Gold Glitter Ombre Designs — 260
+5. Art Deco and Geometric Gold Patterns — 260
+6. Black and Gold Nails for Weddings — 240
+7. Black and Gold Nails for New Year's Eve and Parties — 240
+8. Everyday and Office-Safe Black and Gold Nails — 230
+9. Best Black and Gold Nails for Short Nails — 230
+10. Conclusion — 180
+
+Intro: 230 words | Conclusion: 180 words | H2 total: 2040 words | **Total: 2450 words**
+
+---
+
+## INTERNAL LINKS (4 total — within 4-6 cap; solo mode, no cluster links)
+
+| URL | Title | Anchor text | Placement | Type |
+|---|---|---|---|---|
+| https://mirelleinspo.com/blog/new-year-nails-2025 | 51 NYE Nails That Survived Midnight | "our full round-up of NYE nails that survived midnight" | H2-7 (NYE/Parties section) | cross-site |
+| https://mirelleinspo.com/topics/skin-tones | Nail Colors for Every Skin Tone guide | "our complete guide to nail colors for every skin tone" | H2-1 (skin tone section) | cross-site |
+| https://mirelleinspo.com/blog/nails-by-color/black-nails | Black Nails: Every Style, Aesthetic & Season | "our full guide to black nails through every season" | Conclusion | cross-site |
+| https://mirelleinspo.com/blog/lace-nails | Lace Nails: The Most Romantic Trend of 2026 | "how gold lace over black reads as jewellery rather than nail art" | H2-5 (Art Deco/geometric section, as related texture note) | cross-site |
+
+*(Standalone post — no cluster links. All 4 above are cross-site discovery links, under the 2-max-cross-site guidance from cluster mode; applying strict relevance discretion here for solo mode since there's no competing cluster link budget — all 4 are genuinely high-relevance and additive.)*
+
+---
+
+## VOICE & TONE
+
+- **Recommended voice:** Confident style editor — direct, decisive, no hedging
+- **Tone characteristics:** Assured styling authority; warm but not gushing; specific over vague ("expensive-looking" not "so pretty"); organises rather than just describes; treats the reader as someone with taste who wants efficient guidance
+- **Language style:** Second person throughout, short punchy sentences mixed with one longer explanatory sentence per section, minimal hedging language, confident declaratives ("this suits," "this works")
+- **Audience match:** This reader wants a stylist's opinion, not a neutral inventory — competitors' generic "stunning" language leaves her under-served; a confident, specific voice fills that exact gap
+
+---
+
+## EXTERNAL LINKS
+
+| URL | Context | Anchor suggestion |
+|---|---|---|
+| https://www.allure.com | Use when referencing chrome/metallic finish technique credibility | "nail experts" |
+| https://www.byrdie.com | Use when referencing seasonal/trend context for black and gold | "beauty editors" |
+
+*(Limited external sourcing available from this research pass — site: searches on nailpro.com, allure.com, byrdie.com returned no direct black-and-gold-specific indexed content; general domain references only, use sparingly and verify before publish.)*
+
+---
+
+## EXECUTION PLAN
+
+### Block 1 — Keyword Execution
+- Primary keyword: "black and gold nail designs"
+- Top 3 density baseline: ~6 mentions (estimated from competitor depth)
+- **Total mention target: 8-9**
+- First 100 words: Mention 1 in sentence 1 of intro (naming the post topic directly); Mention 2 by sentence 3-4 (promise/differentiator sentence)
+- First half target: 5 mentions — words 1-1225
+- Second half target: 3-4 mentions — words 1225-2450
+- Strong tag rule: every one of the 8-9 mentions wrapped in `<strong>` tags, scanned after every paragraph
+- Keywords to avoid: none active (solo mode, no cluster_context.json)
+
+### Block 2 — Word Budget
+Total target: 2450 words (±50 tolerance)
+- Introduction: 230
+- H2-1 (Skin tone): 220
+- H2-2 (French tips): 280
+- H2-3 (Chrome/foil): 280
+- H2-4 (Glitter ombre): 260
+- H2-5 (Art Deco): 260
+- H2-6 (Wedding): 240
+- H2-7 (NYE/parties): 240
+- H2-8 (Everyday/office): 230
+- H2-9 (Short nails): 230
+- Conclusion: 180
+- Tracking rule: check running total after every 2 H2s; cut before proceeding if over
+
+### Block 3 — Image Plan
+Total images: 7 (session override, includes hero)
+- Hero image: frontmatter only, never in body
+- Body images: 6 to place
+1. After intro / before H2-1 — black and gold manicure hero shot, luxury styling, both hands visible
+2. After H2-2 (French tips) — black and gold French tip close-up
+3. After H2-3 (Chrome/foil) — gold chrome on black base, liquid-metal effect
+4. After H2-4 (Glitter ombre) — black to gold glitter ombre gradient
+5. After H2-6 (Wedding) — elegant bridal-appropriate black and gold set
+6. After H2-9 (Short nails) — short black and gold nail set, square or round shape
+
+Image type rule: all inspirational nail design images, no infographics, no diagrams
+Path rule: /images/blog/black-and-gold-nail-designs/filename.webp *(no topic_slug — standalone post)*
+
+### Block 4 — Opening Technique Assignments
+- Introduction: Technique 3 (The Reframe) — reframe from "just another color list" to "your exact match"
+- H2-1 (Skin tone): Technique 1 (The Claim) — direct claim answering the question
+- H2-2 (French tips): Technique 2 (varies — visual scene-setting)
+- H2-3 (Chrome/foil): Technique 4 (varies — sensory/descriptive open)
+- H2-4 (Glitter ombre): Technique 1 (The Claim)
+- H2-5 (Art Deco): Technique 2
+- H2-6 (Wedding): Technique 3 (The Reframe)
+- H2-7 (NYE/parties): Technique 1
+- H2-8 (Everyday/office): Technique 4
+- H2-9 (Short nails): Technique 2
+- Conclusion: Technique 3 (The Reframe)
+- Rule: no two consecutive sections share a technique — verified above
+
+### Block 5 — Link Placements
+1. Anchor: "our complete guide to nail colors for every skin tone" → https://mirelleinspo.com/topics/skin-tones → placed in H2-1, after the undertone explanation, as a "go deeper" reference
+2. Anchor: "our full round-up of NYE nails that survived midnight" → https://mirelleinspo.com/blog/new-year-nails-2025 → placed in H2-7, when introducing the NYE-specific subset
+3. Anchor: "our full guide to black nails through every season" → https://mirelleinspo.com/blog/nails-by-color/black-nails → placed in conclusion, as a "keep exploring" link
+4. Anchor: "how gold lace over black reads as jewellery rather than nail art" → https://mirelleinspo.com/blog/lace-nails → placed in H2-5, as a related-texture aside
+
+### Block 6 — AEO/GEO Plan
+**AEO assignments:**
+- "What skin tone does black and gold nails suit?" → H2-1 → direct 2-3 sentence answer immediately after heading
+- "Are black and gold nails good for a wedding?" → H2-6 → direct answer immediately after heading
+- "Can you wear black and gold nails to the office?" → H2-8 → direct answer immediately after heading
+- "What nail shape works best with black and gold designs?" → H2-9 → direct answer immediately after heading
+
+**GEO entity statements:**
+- "Gold chrome finish" → H2-3 → clear declarative definition (mirror-like metallic powder finish over a no-wipe top coat)
+- "Negative space nail art" → H2-5 → clear declarative definition
+- "Ombre gradient" → H2-4 → clear declarative definition
+
+### Block 7 — Active Constraints
+- Em dash banned: replace with comma, new sentence, parentheses, "but," or restructure — scan every paragraph
+- Banned vocab watch (most likely to slip in for this topic): "elevate," "timeless," "stunning," "game-changer," "must-try," "effortlessly chic," "next level," "unleash"
+- British English active: colour, recognise, -ise, -our endings throughout
+- Keyword density reminder: count running mentions after every 2 H2 sections, first half denser than second half
+- Image path reminder: /images/blog/black-and-gold-nail-designs/filename.webp (no topic_slug segment)
+- Internal link URL reminder: full absolute URLs only, all four links above are cross-site — use exact discovered URLs
+- Hero image reminder: frontmatter only, never in body
+- Strong tag reminder: every primary keyword mention wrapped in `<strong>` tags
