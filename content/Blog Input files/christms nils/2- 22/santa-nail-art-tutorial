@@ -1,0 +1,424 @@
+═══════════════════════════════════════════════
+BLOG GEN AGENT INPUT FILE
+Santa Nail Art Tutorial
+═══════════════════════════════════════════════
+
+
+SECTION 1: FILE AUTHORITY
+
+THIS FILE IS THE SINGLE SOURCE OF TRUTH FOR THE BLOG GEN AGENT. All values in POST_CONSTANTS are hardcoded — Blog Gen Agent does not ask, adjust, or override them. All keywords, H2 structure, audience intelligence, internal links, and tone defined here must be followed exactly.
+
+SECTION 2: POST_CONSTANTS
+yaml
+slug: santa-nail-art-tutorial
+topic_slug: christmas-nails
+canonical: https://mirelleinspo.com/blog/christmas-nails/santa-nail-art-tutorial
+post_type: spoke
+intent: tutorial
+word_count: 1450
+image_count: 4
+show_inspo_gallery_link: false  # cluster default — read verbatim from cluster (tutorial intent, no browse angle)
+template: split-left
+hero_dimensions: 800x800
+category: Christmas Nails
+publish_date: 2026-08-13
+author: jyoti-mirelle
+SECTION 3: CLUSTER SNAPSHOT
+yaml
+pillar_slug: christmas-nail-ideas
+pillar_title: Christmas Nail Ideas
+pillar_primary_keyword: christmas nails
+this_post_slug: santa-nail-art-tutorial
+this_post_role: spoke
+show_inspo_gallery_link_cluster_default: false
+keywords_to_avoid:
+  - christmas nails (pillar-owned)
+  - gingerbread santa gnome nails (christmas-character-nails)
+  - christmas tree nail art tutorial
+  - reindeer nail art tutorial
+  - gingerbread man nail art tutorial
+  - gnome nail art tutorial
+  - mistletoe nail art tutorial
+  - how to do christmas nail art at home
+  - old money christmas nails
+  - christmas nail trends 2026
+  - christmas nails for kids
+  - simple christmas nails
+  - christmas nails for older women
+  - christmas nail colors for skin tone
+  - matching christmas nails
+  - red / green / pink / gold / blue christmas nails (all color-spoke owned)
+  - almond / short / coffin / french tip christmas nails (all shape-spoke owned)
+  - candy cane nail designs / plaid christmas nails / christmas wreath nail art
+  - non-traditional christmas nail colors / christmas nail colors (guide)
+  - holiday nails (vacation meaning) / old money nails fall winter / nails for older women / nail colors for fair skin (existing site posts)
+SECTION 4: SERP ANALYSIS
+yaml
+competitor_gaps:
+  - "No competitor combines the easy Santa hat accent AND the full Santa face design in one tutorial — 4 of 5 top pages cover the hat only"
+  - "No dotting-tool-free method offered alongside the standard tool method (confirmed demand: L'Oréal Paris, Beromt, nailstrending.com, YouTube toothpick tutorials)"
+  - "No mistake-fixing / troubleshooting guidance specific to Santa nail art (confirmed demand: multiple nail-mistake guides + TikTok, none Santa-specific)"
+  - "No clear regular-polish vs gel guidance embedded directly in a Santa tutorial (confirmed demand: SalonGeek pro thread + multiple gel-vs-acrylic guides)"
+missing_semantic_territory:
+  - "santa face nail art (vs. santa hat only)"
+  - "santa nail art without dotting tool"
+  - "how to fix santa nail art mistakes"
+  - "santa nail art for short nails"
+our_strategic_approach: "Every one of the 5 real fetched competitors covers only the simple Santa hat accent nail (triangle + white trim) — none attempt the full bearded Santa face except Scratch Magazine's 9-step trade guide, which is behind thin free-text and lacks a true beginner walkthrough. This post owns the gap by teaching BOTH designs in one place: the fast hat accent for beginners short on time, and the full face for anyone who wants the showstopper look. It adds two demand-validated angles the average competitor page (315 words, no real H2s) entirely skips: a no-dotting-tool method using a toothpick/bobby pin, and a troubleshooting section for the single biggest confirmed frustration (smudged detail work on the non-dominant hand). Structural edge: real numbered step-by-step H2s (matching Scratch's proven 9-step pattern) rather than Revel Nail's bare product-list format or Butter London's product-first copy.
+top_5_fetched_pages_summary:
+  - url: https://www.revelnail.com/blogs/revel-nail-blog/how-to-santa-hat-nail-art
+    word_count: 130
+    h2_count: 0
+    keyword_mentions: 1
+    note: "Bare 12-step numbered list, dip-powder product-specific, no real prose or context — weakest of the 5"
+  - url: https://www.butterlondon.com/blogs/news/santa-nail-art
+    word_count: 480
+    h2_count: 5
+    keyword_mentions: 2
+    note: "Well-structured 5-step format with real H2-style headers, but hat-only and heavily product-linked"
+  - url: https://www.makeup.com/nails/nail-art/holiday-nail-art-tutorial
+    word_count: 350
+    h2_count: 4
+    keyword_mentions: 1
+    note: "Clean editorial 4-step format, good beginner tone, hat-only, no troubleshooting"
+  - url: https://www.warpaintmag.com/2022/12/14/santa-hat-nails-step-by-step/
+    word_count: 300
+    h2_count: 4
+    keyword_mentions: 2
+    note: "Trade-press expert-attributed, but UK-priced gel-specific products limit US/global usability, hat-only"
+  - url: https://www.scratchmagazine.co.uk/nail_art/santa-claus-christmas-nail-tutorial/
+    word_count: 550 (estimated from step density; page blocked full fetch)
+    h2_count: 9 (numbered steps)
+    keyword_mentions: 2 (estimated)
+    note: "Only competitor covering the FULL Santa face; strong trade credibility but thin explanatory text between steps"
+recommended_image_count_validation: "4 images (hero + 3 body) matches tutorial-intent visual pacing seen across competitors — hero shot, one mid-process shot, one finished-look shot covers the two-design structure without padding"
+SECTION 5: AUDIENCE INTELLIGENCE
+yaml
+who_they_are: "DIY-inclined, mostly beginner-to-intermediate nail art hobbyists (confirmed by 'for beginners' language dominating YouTube titles) searching in the 2-3 weeks before Christmas, wanting a specific, achievable design rather than general Christmas nail inspiration. Some segment is nail techs/salon pros (SalonGeek, WarpaintMag, Scratch signals) seeking a polished reference, but the primary volume is home users."
+what_they_want_from_this_post: "A genuinely followable, step-numbered walkthrough that tells them exactly what tools and polish to use, in what order, with a fallback for when they don't own a dotting tool"
+what_frustrates_them: "Competitor pages either dump a bare numbered list with zero context (Revel Nail) or focus so heavily on branded products that non-owners of that brand are stuck; almost none address what to do when the design smudges or the second hand goes wrong"
+top_5_pain_points:
+  - "Painting detail work on the non-dominant hand is genuinely hard (BTArtbox confirms this explicitly) — no competitor addresses it"
+  - "Not owning specialty tools (dotting tool, detail brush) blocks them from starting — validated across 4+ independent sources"
+  - "Uncertainty about gel vs. regular polish for this specific design"
+  - "Fear of ruining a mostly-finished manicure on the final detail step"
+  - "Wanting the 'wow' full-face Santa but assuming it's too advanced, when a simplified version is achievable"
+exact_user_phrases:
+  - "easy santa nail art tutorial for beginners"
+  - "santa hat nail art"
+  - "no dotting tool"
+  - "what can I use instead of a dotting tool"
+  - "santa nail art step by step"
+  - "how to fix nail art mistakes"
+  - "santa face nail art"
+  - "quick and easy santa nail art"
+  - "santa nail art without brushes"
+intent_content_signals:
+  - "Numbered, sequential steps outperform prose-heavy tutorials for this keyword (matches WarpaintMag/Scratch pattern)"
+  - "Beginner reassurance language ('doesn't need to be clean', 'have fun with it, it can be messy') resonates — seen in Makeup.com and nailbees"
+  - "Readers respond to explicit tool substitutions (toothpick/bobby pin) rather than being told to buy new tools"
+  - "A troubleshooting or 'if it smudges' note reduces abandonment mid-tutorial"
+SECTION 6: SEMANTIC KEYWORD DATA
+yaml
+primary_keyword: "santa nail art tutorial"
+keyword_variations:
+  - santa nail art
+  - santa hat nail art tutorial
+  - how to paint santa nails
+  - santa nail design tutorial
+  - santa nail art step by step
+keyword_variations_note: "santa nail art tutorial (exact) reserved as primary; do not let 'santa nail art' alone dominate mention count"
+cluster_keywords:
+  - santa hat nails
+  - santa face nail art
+  - christmas nail art tutorial
+  - diy santa nails
+  - beginner nail art tutorial
+  - santa claus nail design
+  - festive nail art tutorial
+  - accent nail santa design
+  - red and white nail art
+  - dotting tool nail art
+lsi_terms:
+  - detail brush
+  - french tip
+  - white pom-pom / fur trim
+  - accent nail
+  - base coat and top coat
+  - gel polish vs regular polish
+  - non-dominant hand
+  - nail art brush
+  - toothpick nail art
+  - bobby pin dotting tool
+  - beard shading
+  - almond or square nail shape
+  - cure under UV/LED light
+  - freehand nail art
+  - short nails nail art
+aeo_terms:
+  - "how do you paint santa on your nails"
+  - "what polish do you need for santa nail art"
+  - "can you do santa nail art without a dotting tool"
+  - "how long does santa nail art take"
+  - "is santa nail art hard for beginners"
+  - "what's the easiest santa nail design"
+  - "how do you fix a mistake in nail art"
+  - "gel or regular polish for nail art"
+technical_terms:
+  - detail/liner brush
+  - dotting tool
+  - base coat
+  - top coat
+  - cure time (gel)
+  - accent nail
+  - freehand technique
+user_language:
+  - "doesn't have to be perfect"
+  - "it can get a little messy"
+  - "easy for beginners"
+  - "no fancy tools needed"
+  - "quick and easy"
+  - "steady hand"
+  - "salon-worthy at home"
+  - "the tricky part is your other hand"
+SECTION 7: VOICE AND AI QUERIES
+yaml
+queries:
+  - "How do I paint a Santa hat on my nails?"
+  - "What do I need for Santa nail art?"
+  - "Can I do Santa nail art without a dotting tool?"
+  - "How long does Santa nail art take to do at home?"
+  - "Is Santa nail art hard for beginners?"
+  - "What's the easiest Santa nail design to try?"
+  - "How do you paint a full Santa face on your nail?"
+  - "What polish colors do I need for Santa nails?"
+  - "Should I use gel or regular polish for Santa nail art?"
+  - "How do I fix a mistake in my nail art?"
+  - "What can I use instead of a nail dotting tool?"
+  - "How do you make the white fur trim on a Santa hat nail?"
+  - "Can you do Santa nail art on short nails?"
+  - "What's the difference between Santa hat nails and full Santa face nails?"
+  - "How do I paint nail art on my non-dominant hand?"
+  - "What brush do I need for detailed nail art?"
+SECTION 8: HOOK AND CTR
+yaml
+real_serp_findings_summary: "All 5 real fetched competitor titles skip the exact primary keyword and skew toward the simple hat-only design; only Scratch Magazine uses a number-led format ('9 steps'), and it's also the only page attempting the full Santa face. No title currently combines a number-led promise with explicit two-design coverage."
+selected_option_rationale: "A number-led title front-loads the keyword, sets a concrete expectation the reader can trust (a defined number of steps, not a vague 'easy tutorial'), and mirrors the one competitor pattern (Scratch) that already proves this angle works for trade credibility — while this post out-executes it with fuller beginner-friendly prose."
+title: "Santa Nail Art Tutorial: 9 Easy Steps for 2026"
+title_char_count: 47
+meta_description: "Want festive nails everyone will ask about? This santa nail art tutorial breaks it into 9 simple steps, plus a no-tools-needed shortcut."
+meta_char_count: 143
+intro_hook_brief: "Open by naming the exact fear the reader has (painting a face on your own nail sounds impossible) and immediately defuse it with the promise that this is broken into 9 small, doable steps, no art degree required"
+first_h2_hook_direction: "The first H2 (tools/supplies) should reassure early that no specialty kit is mandatory — bridge straight into the toothpick/bobby pin alternative so nobody bounces before starting"
+SECTION 9: SEARCH JOURNEY
+yaml
+reader_arrival_state: "Motivated to try Santa nail art for the first time but quietly convinced it's beyond their skill level"
+journey_arc:
+  - "Hook removes the fear by promising a numbered, doable process"
+  - "Tools section confirms they don't need to buy anything new to start"
+  - "Step-by-step walkthrough builds confidence one small win at a time"
+  - "A dedicated troubleshooting moment removes the fear of ruining it"
+  - "Close with the full-face upgrade option once they've built confidence on the simple version"
+promise_to_deliver: "That Santa nail art is achievable in 9 clear steps, with a real option for readers who don't own dotting tools"
+exit_state: "Confident they can sit down right now and paint Santa nails successfully, with a backup plan if something smudges"
+SECTION 10: CONTENT STRUCTURE
+yaml
+h1: "Santa Nail Art Tutorial: 9 Easy Steps Anyone Can Follow"
+h2_structure:
+  - "What You'll Need for This Santa Nail Art Tutorial"
+  - "Step 1–3: Prep Your Nails and Paint the Base"
+  - "Step 4–6: Painting Santa's Hat"
+  - "Step 7–9: Adding the Fur Trim and Final Details"
+  - "No Dotting Tool? Here's Your Workaround"
+  - "How to Fix Santa Nail Art Mistakes Mid-Design"
+  - "Leveling Up: Painting a Full Santa Face"
+  - "Gel Polish vs Regular Polish for This Design"
+word_budget:
+  introduction: 220
+  conclusion: 180
+  per_h2:
+    "What You'll Need for This Santa Nail Art Tutorial": 150
+    "Step 1–3: Prep Your Nails and Paint the Base": 180
+    "Step 4–6: Painting Santa's Hat": 200
+    "Step 7–9: Adding the Fur Trim and Final Details": 180
+    "No Dotting Tool? Here's Your Workaround": 140
+    "How to Fix Santa Nail Art Mistakes Mid-Design": 130
+    "Leveling Up: Painting a Full Santa Face": 190
+    "Gel Polish vs Regular Polish for This Design": 100
+SECTION 11: INTERNAL LINKS
+yaml
+all_internal_links:
+  - url_or_slug: /blog/christmas-nails/christmas-nail-ideas
+    title: Christmas Nail Ideas
+    anchor_text: "christmas nail ideas"
+    placement_note: "Introduction — orienting link back to pillar for readers browsing broader inspiration"
+    link_type: cluster-pillar
+  - url_or_slug: /blog/christmas-nails/christmas-character-nails
+    title: Christmas Character Nails
+    anchor_text: "how to paint santa nail art"
+    placement_note: "Leveling Up section — cross-reference to the combined character roundup"
+    link_type: cluster-spoke
+  - url_or_slug: /blog/christmas-nails/how-to-christmas-nail-art-at-home
+    title: How to Do Christmas Nail Art at Home
+    anchor_text: "santa nail art tutorial"
+    placement_note: "What You'll Need section — links back to the general tutorial hub for readers wanting other designs first"
+    link_type: cluster-spoke
+  - url_or_slug: /blog/christmas-nails/christmas-nails-for-kids
+    title: Christmas Nails for Kids
+    anchor_text: "christmas nails for kids"
+    placement_note: "Conclusion — natural next step for parents who tried this design"
+    link_type: cluster-spoke
+SECTION 12: VOICE AND TONE
+yaml
+recommended_voice: "Encouraging, patient friend walking you through it in person"
+tone_characteristics:
+  - "Reassuring about imperfection ('it doesn't need to be flawless')"
+  - "Concrete and specific, never vague about steps or timing"
+  - "Confident but not condescending toward true beginners"
+  - "Light, festive energy without overdoing exclamation points"
+language_style: "Short, direct sentences. Frequent 'you'. Step numbers stated plainly. Minimal jargon, and any technical term (detail brush, cure) defined in-line on first use."
+audience_match: "This reader is anxious about a specific skill gap, not looking for aspiration or inspiration — plain, confidence-building instruction beats stylized copy"
+SECTION 13: EXTERNAL LINKS
+yaml
+links: []
+# None of the 5 fetched pages qualified as genuinely citation-worthy (mostly brand blogs promoting their own products); no external links forced.
+SECTION 14: EXECUTION PLAN
+yaml
+block_1_keyword_execution:
+  primary_keyword: "santa nail art tutorial"
+  top_5_density_baseline: 2
+  total_mention_target: 5
+  first_100_words_plan:
+    mention_1: "sentence 1 of introduction — in the opening hook sentence naming the tutorial"
+    mention_2: "sentence 3-4 of introduction — reinforcing the 9-step promise"
+  first_half_target: "3 mentions — first 725 words"
+  second_half_target: "2 mentions — second 725 words"
+  strong_tag_rule: "Every one of the 5 mentions wrapped in <strong> tags, no exceptions"
+  keywords_to_avoid_active: "Full list in section_3 — never used as focus terms"
+
+block_2_word_budget:
+  total_target: 1450
+  introduction: 220
+  conclusion: 180
+  h2_budgets:
+    - heading: "What You'll Need for This Santa Nail Art Tutorial"
+      budget: 150
+      complexity: low
+    - heading: "Step 1–3: Prep Your Nails and Paint the Base"
+      budget: 180
+      complexity: medium
+    - heading: "Step 4–6: Painting Santa's Hat"
+      budget: 200
+      complexity: high
+    - heading: "Step 7–9: Adding the Fur Trim and Final Details"
+      budget: 180
+      complexity: high
+    - heading: "No Dotting Tool? Here's Your Workaround"
+      budget: 140
+      complexity: medium
+    - heading: "How to Fix Santa Nail Art Mistakes Mid-Design"
+      budget: 130
+      complexity: low
+    - heading: "Leveling Up: Painting a Full Santa Face"
+      budget: 190
+      complexity: high
+    - heading: "Gel Polish vs Regular Polish for This Design"
+      budget: 100
+      complexity: low
+  tracking_rule: "Track running word total after every H2. Cut before moving on if over budget."
+
+block_3_image_plan:
+  total_images: 4
+  hero_image: "frontmatter only — never in body"
+  body_images: 3
+  assignments:
+    - image_number: 1
+      place_after: "What You'll Need for This Santa Nail Art Tutorial"
+      image_type: standard_inspiration
+      section_context: "Finished simple Santa hat accent nail, red/white, clean beginner-friendly styling"
+    - image_number: 2
+      place_after: "Step 7–9: Adding the Fur Trim and Final Details"
+      image_type: standard_inspiration
+      section_context: "Close-up of the completed hat design on a full manicured hand, short-to-medium nail length"
+    - image_number: 3
+      place_after: "Leveling Up: Painting a Full Santa Face"
+      image_type: standard_inspiration
+      section_context: "Finished full Santa face design (bearded) accent nail, showing the upgraded/advanced look"
+  image_type_rule_note: "No tool/hands-at-work shots, no photo-style comparison images — all standard finished-look inspiration shots"
+  path_rule: "/images/blog/christmas-nails/santa-nail-art-tutorial/filename.webp"
+
+block_4_opening_technique_assignments:
+  assignments:
+    - section: Introduction
+      technique: "Technique 3 — The Reframe (defuse the 'too hard' assumption)"
+    - section: "What You'll Need for This Santa Nail Art Tutorial"
+      technique: "Technique 2 — Direct Address"
+    - section: "Step 1–3: Prep Your Nails and Paint the Base"
+      technique: "Technique 1 — The Claim"
+    - section: "Step 4–6: Painting Santa's Hat"
+      technique: "Technique 4 — Scene Setting"
+    - section: "Step 7–9: Adding the Fur Trim and Final Details"
+      technique: "Technique 2 — Direct Address"
+    - section: "No Dotting Tool? Here's Your Workaround"
+      technique: "Technique 1 — The Claim"
+    - section: "How to Fix Santa Nail Art Mistakes Mid-Design"
+      technique: "Technique 3 — The Reframe"
+    - section: "Leveling Up: Painting a Full Santa Face"
+      technique: "Technique 4 — Scene Setting"
+    - section: "Gel Polish vs Regular Polish for This Design"
+      technique: "Technique 1 — The Claim"
+    - section: Conclusion
+      technique: "Technique 1 — The Claim"
+  banned_opener_rule: "Check every opener against banned_opening_approaches before writing the second sentence"
+
+block_5_link_placements:
+  links:
+    - anchor_text: "christmas nail ideas"
+      full_url: /blog/christmas-nails/christmas-nail-ideas
+      place_in_section: Introduction
+      placement_context: "One sentence acknowledging this is one design within the broader christmas nail ideas collection"
+      link_type: cluster-pillar
+    - anchor_text: "santa nail art tutorial"
+      full_url: /blog/christmas-nails/how-to-christmas-nail-art-at-home
+      place_in_section: "What You'll Need for This Santa Nail Art Tutorial"
+      placement_context: "Note pointing to the general at-home tutorial hub for readers wanting other designs first"
+      link_type: cluster-spoke
+    - anchor_text: "how to paint santa nail art"
+      full_url: /blog/christmas-nails/christmas-character-nails
+      place_in_section: "Leveling Up: Painting a Full Santa Face"
+      placement_context: "Cross-reference sentence pointing to the combined gingerbread/santa/gnome roundup for more character ideas"
+      link_type: cluster-spoke
+    - anchor_text: "christmas nails for kids"
+      full_url: /blog/christmas-nails/christmas-nails-for-kids
+      place_in_section: Conclusion
+      placement_context: "Closing suggestion for parents who enjoyed this tutorial"
+      link_type: cluster-spoke
+
+block_6_aeo_geo_plan:
+  aeo_assignments:
+    - aeo_term: "Can you do Santa nail art without a dotting tool?"
+      assigned_to_section: "No Dotting Tool? Here's Your Workaround"
+      execution: "Direct 2-3 sentence yes-and-how answer immediately after the H2, before elaboration"
+    - aeo_term: "Should I use gel or regular polish for Santa nail art?"
+      assigned_to_section: "Gel Polish vs Regular Polish for This Design"
+      execution: "Direct 2-3 sentence comparison answer immediately after the H2"
+    - aeo_term: "Is Santa nail art hard for beginners?"
+      assigned_to_section: Introduction
+      execution: "Answered directly within the reframe hook in the opening lines"
+  geo_entity_statements:
+    - entity: "Dotting tool"
+      assigned_to_section: "No Dotting Tool? Here's Your Workaround"
+      execution: "Clear declarative definition sentence: what it is and what it's normally used for"
+    - entity: "Accent nail"
+      assigned_to_section: "What You'll Need for This Santa Nail Art Tutorial"
+      execution: "Clear declarative definition sentence on first use"
+
+block_7_active_constraints:
+  em_dash_banned: true
+  banned_vocab_watch: ["elevate", "unleash", "seamless", "effortlessly chic", "game-changer", "must-have", "elevated", "level up (only allowed as this post's own H2 title, not repeated in body)"]
+  american_english_active: true
+  keyword_density_reminder: "Count mentions after every 2 H2s — verify pace toward 5 total, denser in first half"
+  image_path_reminder: "/images/blog/christmas-nails/santa-nail-art-tutorial/filename.webp"
+  internal_link_url_reminder: "Full paths only — /blog/christmas-nails/[slug], never bare /slug"
+  hero_image_reminder: "Hero in frontmatter only, never in body"
+  strong_tag_reminder: "Every primary keyword mention wrapped in <strong> tags — sca
