@@ -1,0 +1,253 @@
+# BLOG GEN AGENT INPUT FILE — SINGLE SOURCE OF TRUTH
+
+SOLO MODE — no cluster context. All values below are hardcoded. Blog Gen Agent does not ask, adjust, or override anything except where the user overrode research defaults (image_count — noted in POST_CONSTANTS).
+
+---
+
+## SECTION 2 — POST_CONSTANTS
+
+| Field | Value |
+|---|---|
+| slug | nail-designs-for-little-girls-8-10 |
+| topic_slug | — (omitted, standalone) |
+| canonical | https://mirelleinspo.com/blog/nail-designs-for-little-girls-8-10 |
+| post_type | standalone |
+| intent | inspirational |
+| word_count | 2400 |
+| image_count | 7 (including hero) — **USER OVERRIDE**, bypasses standard phase_2 rule (which would set 9 under sub_rule_a_inspirational). Applied as instructed. |
+| show_inspo_gallery_link | false — no topic_slug exists for a standalone post, so the gallery link cannot render regardless of intent |
+| template | center |
+| hero_dimensions | 1200x630 |
+| category | Kids Nails |
+| publish_date | 2026-08-13 |
+| author | jyoti-mirelle |
+
+**Intent lock rationale:** Top-10 SERP + PAA scan shows near-total dominance of listicle/idea-roundup format ("10 Adorable...", "11 Cute Nail Designs...", "15 Best Little Girl Nail Ideas") plus Pinterest board data (524+ monthly searches on adjacent "Cute Nails for Girls 8-10" board) confirming a browse-for-ideas search mode, not a single-answer or tutorial mode.
+
+---
+
+## SECTION 4 — SERP ANALYSIS
+
+**Competitor gaps (2+ source validated):**
+- No competitor organizes designs by *safe application method* (peel-off/water-based vs. press-on vs. gel vs. acrylic) — safety and designs are always separate, disconnected sections. Our structural gap to fill.
+- Acrylic/gel safety is actively contested (HubPages: "yes, safe"; AAP-citing sources: "no salon acrylics under 16"; RainyRoses: gel fully safe) — no post resolves this clearly. Validated across 5 sources.
+- Birthday/nail-party occasion angle appears in real audience data (Salon Geek threads, Mommy Poppins, Honeybear Lane) but almost no ranking post ties designs to party-planning. Validated across 4 sources.
+
+**Missing semantic territory:** "preppy nails for kids," "smiley face nails," coquette/bow motifs — high-frequency current Pinterest terms for this bracket, absent from every competitor (all still lead with mermaid/unicorn as if it's 2021).
+
+**Our strategic approach:** Lead with real, current 2026 design trends (preppy, smiley face, coquette bows — not just mermaid/unicorn defaults), but anchor every design idea to a safe application method so parents get both the inspiration and the "how do I actually do this safely" answer in one post — the gap nobody else closes.
+
+**Image count validation:** SERP visual density supports a high-image inspirational post; 7 (user-set) is workable — front-load the strongest, most current designs since fewer image slots exist.
+
+---
+
+## SECTION 5 — AUDIENCE INTELLIGENCE
+
+**Who they are:** Mostly mums searching on behalf of their 8-10 year old daughter, not the child herself. Secondary searcher: mums planning a birthday/sleepover nail party for a group of same-age girls.
+
+**What they want:** A visual idea dump to show her daughter, plus quiet reassurance nothing chosen will damage tiny nails or look "too old."
+
+**What frustrates them:** Design lists that skip the safety question entirely (forcing a second-tab search); outdated defaults (unicorn, mermaid) that miss what girls actually pin now (preppy, smiley, coquette).
+
+**Top 5 pain points:**
+1. Uncertainty over whether gel/acrylic/UV lamp is safe at this age (actively debated even among "experts")
+2. Wanting the look to feel "grown up enough" for a 9-10 year old without tipping into inappropriate/too-mature territory
+3. Needing something that survives active play — sport, school, swimming — not just looks pretty in a photo
+4. Not knowing what's actually trending right now vs. dated kids'-nail clichés
+5. Planning for a specific occasion (birthday, party, back-to-school) and wanting designs matched to that moment
+
+**Exact user phrases (from real Pinterest/forum/Lemon8 language):**
+- "age appropriate"
+- "mom-approved"
+- "gave my 8 y/o nail tips"
+- "9 & 10 year olds getting their nails done"
+- "totally age-appropriate"
+- "short nail inspo"
+- "preppy nails for kids"
+- "kid nail ideas"
+- "cute and safe"
+- "non-toxic, water-based"
+
+**Intent content signals:** Strong preference for short, scannable numbered lists; visual-first browsing behavior (Pinterest board format, not long paragraphs); parents want the safety note built in, not a separate FAQ they have to hunt for; occasion-tagging (birthday, back-to-school, holiday) increases relevance.
+
+---
+
+## SECTION 6 — SEMANTIC KEYWORD DATA
+
+| Field | Values |
+|---|---|
+| primary_keyword | **nail designs for little girl 8-10** |
+| keyword_variations | nail ideas for girls 8-10, cute nails for 8-10 year olds, nail designs for 9 year old girl, nail ideas for 10 year old, kids nail designs 8-10, little girl nail art ideas |
+| cluster_keywords | age-appropriate nail designs, safe nail designs for kids, nail ideas for tweens, short nail designs for kids, easy nail designs for little girls, non-toxic nail polish for kids, press-on nails for kids, kids nail party ideas, birthday nail designs for girls, back-to-school nails for kids |
+| lsi_terms | non-toxic polish, water-based nail polish, peel-off polish, press-on nails for kids, gel polish for kids, acrylic nails for kids safety, nail dotting tool, polka dot nails, French tip nails for kids, glitter nail tips, smiley face nails, preppy nails, coquette bow nails, animal print nails, pastel nail colors, short rounded nail shape, kid-safe manicure, mother-daughter manicure, kids nail salon |
+| aeo_terms | is it safe for a 9 year old to get gel nails, what age can kids get acrylic nails, what nail designs are appropriate for an 8 year old, how do I do nail art on my daughter's short nails, what's the safest nail polish for kids, can a 10 year old get press-on nails, what nail colors are age-appropriate for tweens, how long do kids nail designs last |
+| technical_terms | water-based polish, peel-off formula, LED/UV cure lamp, monomer/polymer (acrylic), nail bed, dotting tool, base coat, top coat |
+| user_language | age appropriate, mom-approved, safe and cute, non-toxic, easy for beginners, short nail inspo, cute and simple, totally age-appropriate, kid-friendly, mess-free |
+
+---
+
+## SECTION 7 — VOICE AND AI QUERIES
+
+1. Is it safe for a 9 year old to get gel nails?
+2. What nail designs are appropriate for an 8 year old girl?
+3. Can a 10 year old get acrylic nails?
+4. What's the safest nail polish to use on kids?
+5. How do you do simple nail art for a little girl at home?
+6. What nail colors are best for an 8-10 year old?
+7. Are press-on nails safe for kids?
+8. What's a good nail design for a 9 year old's birthday party?
+9. How long do kids' nail designs typically last?
+10. What nail shape is best for a little girl's short nails?
+11. Can you get gel polish removed without damaging a child's nails?
+12. What are trending nail designs for tweens right now?
+13. Is nail polish remover safe for young kids?
+14. What's a good first nail design to try with a beginner?
+15. How do you keep a little girl's nail polish from chipping fast?
+
+---
+
+## SECTION 8 — HOOK AND CTR
+
+| Field | Value |
+|---|---|
+| selected_trigger | Trigger 3 — Specificity & Numbers |
+| trigger_rationale | This reader wants a defined, scannable set of ideas she can act on immediately, not a mystery to solve — specificity signals "this will actually give me what I need" faster than curiosity or FOMO framing would. |
+| title | 25 Nail Designs for Little Girls 8-10 (Safe & Cute 2026) |
+| title_char_count | 56 |
+| meta_description | Looking for age-appropriate nail ideas your 8-10 year old will love? See 25 safe, cute designs plus which polish types are actually kid-safe. |
+| meta_char_count | 144 |
+| intro_hook_brief | Open by naming the exact tension the parent feels — wanting something cute and current for her daughter without worrying it'll damage tiny nails or look too grown-up. Promise both the idea list and the safety answer in one place. |
+| first_h2_hook_direction | Phrase the first H2 as a direct voice-search style question resolving the safety debate first, before any design ideas — this earns trust before asking the reader to keep scrolling. |
+
+---
+
+## SECTION 9 — SEARCH JOURNEY
+
+- **Reader arrival state:** Slightly unsure parent, browsing ideas while wondering if her pick will actually be safe for such young nails.
+- **Journey arc:** Resolve the safety worry first → deliver current design abundance fast → layer in occasion-specific ideas (birthday, back-to-school) → close with at-home encouragement.
+- **Promise to deliver:** A genuinely current, cute idea set for this exact age group AND a resolved answer on what's safe to use.
+- **Exit state:** Confident — has a shortlist of designs and knows exactly which polish type to reach for.
+
+---
+
+## SECTION 10 — CONTENT STRUCTURE
+
+**H1:** 25 Nail Designs for Little Girls 8-10 That Are Safe, Cute & On-Trend
+
+**H2 structure (word budget in parentheses):**
+1. Is Gel or Acrylic Safe for an 8-10 Year Old? (250)
+2. Cute & Simple Nail Designs for Everyday Wear (350)
+3. Preppy and Smiley Face Nails Girls Are Loving Right Now (300)
+4. Sweet Animal Print & Pastel Designs (300)
+5. Birthday and Nail Party Ideas for Girls (300)
+6. Back-to-School Nail Designs Kids Can Do at Home (300)
+7. Easy At-Home Nail Art Tips for Beginners (250)
+
+Introduction: 220 words
+Conclusion: 180 words
+
+(Total: 220 + 250 + 350 + 300 + 300 + 300 + 300 + 250 + 180 = 2450 — within +/-50 tolerance of 2400 target)
+
+---
+
+## SECTION 11 — INTERNAL LINKS
+
+Standalone post — no cluster_links (expected). Cross-site discovery capped at 2.
+
+**UNRESOLVED:** `site:mirelleinspo.com` was not queryable in this session. Run `site:mirelleinspo.com nail designs for kids` + `site:mirelleinspo.com kids nail art` before publish, filter by relevance, populate here and in Block 5. Do not publish with zero internal links if suitable pages exist.
+
+---
+
+## SECTION 12 — VOICE AND TONE
+
+| Field | Value |
+|---|---|
+| recommended_voice | Warm, reassuring parent-to-parent guide |
+| tone_characteristics | Reassuring on safety without alarmism; genuinely current, not generic filler; practical over precious; encouraging toward DIY; never lecturing |
+| language_style | Second person ("your daughter"), short direct sentences, jargon always paired with a plain-English explainer |
+| audience_match | Time-pressed, slightly anxious about the safety call — a voice that resolves it quickly and warmly, then moves to fun ideas, matches exactly what she came for |
+
+---
+
+## SECTION 13 — EXTERNAL LINKS
+
+**UNRESOLVED:** `site:nailpro.com`, `site:allure.com`, `site:byrdie.com` for this exact keyword were not run as isolated queries this session. Run before publish and populate with confirmed URLs — do not publish with placeholder links.
+
+---
+
+## SECTION 14 — EXECUTION PLAN
+
+### Block 1 — Keyword Execution
+- primary_keyword: **nail designs for little girl 8-10**
+- top_3_density_baseline: 4 (estimated from indexed competitor content depth — no post exceeded ~4 exact-match mentions of an equivalently specific keyword)
+- total_mention_target: 6-7 total
+- first_100_words_plan: mention 1 in sentence 1 of intro (naming the exact search); mention 2 by sentence 3-4, tied to the safety promise
+- first_half_target: 4 mentions — first ~1200 words
+- second_half_target: 2-3 mentions — remaining ~1200 words
+- strong_tag_rule: every one of the 6-7 mentions wrapped in `<strong>` tags, no exceptions
+- keywords_to_avoid_active: none (standalone, no cluster keyword_do_not_use list exists)
+
+### Block 2 — Word Budget
+- total_target: 2400 words (±50)
+- introduction: 220
+- conclusion: 180
+- H2 budgets: as listed in Section 10 table above
+- tracking_rule: check running total after every H2; cut before moving forward if over, never compensate later
+
+### Block 3 — Image Plan
+- total_images: 7 (hero + 6 body — **user override applied**)
+- hero_image: frontmatter only, never in body
+- body_images: 6
+- assignments:
+  1. After H2-2 — bright everyday design, short rounded nails
+  2. After H2-3 — preppy or smiley-face design (2026 trend focus)
+  3. After H2-3 (second, trend section carries the weight) — coquette bow or pastel accent
+  4. After H2-4 — soft animal-print or pastel gradient
+  5. After H2-5 — party-ready sparkle/glitter-tip design
+  6. After H2-6 — simple polka-dot or French-tip, daily-wear suited
+- image_type_rule: all body images = inspirational nail design photos only. No infographics, no charts, no step-by-step diagrams.
+- path_rule: /images/blog/nail-designs-for-little-girls-8-10/filename.webp (no topic_slug segment — standalone post)
+
+### Block 4 — Opening Technique Assignments
+- Introduction: Technique 1 (The Claim)
+- H2-1 (Safety): Technique 2 (contrast/reassurance framing — resolve the debate directly)
+- H2-2 (Everyday designs): Technique 3 (The Reframe)
+- H2-3 (Preppy/Smiley): Technique 1 (The Claim)
+- H2-4 (Animal/Pastel): Technique 3 (The Reframe)
+- H2-5 (Birthday/Party): Technique 2
+- H2-6 (Back-to-School): Technique 1
+- H2-7 (At-home tips): Technique 3
+- Conclusion: Technique 1 (The Claim)
+- No two consecutive sections repeat a technique — verified against the sequence above.
+
+### Block 5 — Link Placements
+Blocked on Section 11 resolution — populate once cross-site links are confirmed. Do not fabricate URLs.
+
+### Block 6 — AEO/GEO Plan
+| aeo_term | assigned_to_section | execution |
+|---|---|---|
+| Is it safe for a 9 year old to get gel nails? | H2-1 | Direct 2-3 sentence answer immediately after the H2, before elaboration |
+| Can a 10 year old get acrylic nails? | H2-1 | Direct 2-3 sentence answer in same section, addressing the acrylic-specific question separately from gel |
+| What's the safest nail polish for kids? | H2-7 | Direct answer paragraph naming water-based/peel-off formulas explicitly |
+| What's a good nail design for a 9 year old's birthday party? | H2-5 | Direct answer opening the section before design ideas follow |
+
+GEO entity statements:
+| entity | assigned_to_section | execution |
+|---|---|---|
+| Water-based/peel-off polish | H2-1 or H2-7 | Clear declarative definition: what it is, why it's the safer default for this age |
+| Gel polish (LED/UV cure) | H2-1 | Clear declarative definition distinguishing it from acrylic |
+| Acrylic nails | H2-1 | Clear declarative definition, named directly as the higher-caution category for this age |
+
+### Block 7 — Active Constraints
+- em_dash_banned: yes, active
+- banned_vocab_watch: "unleash," "elevate," "game-changer," "must-have," "in today's world," "when it comes to"
+- british_english_active: colour, recognise, -ise, -our — every instance
+- keyword_density_reminder: check count after every 2 H2s, confirm on track for 6-7 total, front-load density
+- image_path_reminder: /images/blog/nail-designs-for-little-girls-8-10/filename.webp
+- internal_link_url_reminder: full paths only once Section 11 is resolved
+- hero_image_reminder: frontmatter only, never in body
+- strong_tag_reminder: scan after every paragraph for missed keyword mentions
+
+---
+
+**END OF FILE**
