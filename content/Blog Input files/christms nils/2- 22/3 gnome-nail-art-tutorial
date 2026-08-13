@@ -1,0 +1,231 @@
+# BLOG GEN AGENT INPUT FILE — gnome-nail-art-tutorial
+
+## SECTION 1: FILE AUTHORITY
+THIS FILE IS THE SINGLE SOURCE OF TRUTH FOR THE BLOG GEN AGENT. All values in POST_CONSTANTS are hardcoded — Blog Gen Agent does not ask, adjust, or override them. All keywords, H2 structure, audience intelligence, internal links, and tone defined here must be followed exactly.
+
+## SECTION 2: POST_CONSTANTS
+- slug: gnome-nail-art-tutorial
+- topic_slug: christmas-nails
+- canonical: https://mirelleinspo.com/blog/christmas-nails/gnome-nail-art-tutorial
+- post_type: spoke
+- intent: tutorial
+- word_count: 1450
+- image_count: 4 (1 hero + 3 body) — tutorial rule, hard number
+- show_inspo_gallery_link: **UNRESOLVED — cluster_context.json does not contain a `show_inspo_gallery_link_cluster_default` field in cluster_metadata.** Per phase_2 rule, cluster mode reads this verbatim; it cannot be found or invented. Blog Gen Agent should treat this as `false` (safe default — this post has no browse/explore-designs angle since it's tutorial intent, not inspirational) until the cluster file is corrected with the actual value.
+- template: split-left (tutorial intent overrides pillar/spoke role)
+- hero_dimensions: 800x800
+- category: Nail Art Tutorials (Christmas)
+- publish_date: 2026-08-14
+- author: jyoti-mirelle
+
+## SECTION 3: CLUSTER SNAPSHOT
+- pillar_slug: christmas-nail-ideas
+- pillar_title: Christmas Nail Ideas
+- pillar_primary_keyword: christmas nails
+- this_post_slug: gnome-nail-art-tutorial
+- this_post_role: spoke
+- show_inspo_gallery_link_cluster_default: NOT FOUND in cluster_context.json — see POST_CONSTANTS note above
+- keywords_to_avoid: christmas nails, almond christmas nails, short christmas nails, coffin christmas nails, french tip christmas nails, candy cane nail designs, plaid christmas nails, reindeer nail designs, gingerbread santa gnome nails, christmas wreath nail art, red christmas nails, green christmas nails, pink christmas nails, gold christmas nails, blue christmas nails, non-traditional christmas nail colors, christmas nail colors, how to do christmas nail art at home, christmas tree nail art tutorial, reindeer nail art tutorial, santa nail art tutorial, gingerbread man nail art tutorial, mistletoe nail art tutorial, old money christmas nails, christmas nail trends 2026, christmas nails for kids, simple christmas nails, christmas nails for older women, christmas nail colors for skin tone, matching christmas nails, holiday nails (vacation meaning), old money nails fall winter, nails for older women, nail colors for fair skin
+
+## SECTION 4: SERP ANALYSIS
+**Note on source count:** Only 3 genuinely fetchable, real editorial pages exist for this exact long-tail keyword — not 5. This itself is a finding: content saturation for "gnome nail art tutorial" is low. Other candidates (GlowNailBar, atlantisuniversity.edu) blocked automated fetching (401/robots-disallowed); Beauty Launchpad is paywalled and redirects to Nailpro (excluded domain) for the actual tutorial content, so it does not qualify as a real usable source.
+
+- **competitor_gaps** (demand-validated on 2+ sources: Pinterest + YouTube):
+  - No competitor addresses doing gnome nail art with **regular polish** (not gel system) — Scratch is gel-only; RainyRoses/Lemon8 don't specify but assume some polish fluency. Pinterest/GlowNailBar signal shows real demand for no-fuss/at-home alternatives.
+  - No competitor offers **beginner reassurance or troubleshooting** for common mistakes (uneven beard lines, hat proportions, nose placement) — validated by Pinterest ("easy," "beginner," "simple" modifiers dominate related searches) and YouTube (multiple dedicated "for beginners" video titles).
+  - "**Gonk**" as the UK/Scandi-alternate term is real, dedicated search territory (Pinterest "gonk nails step by step," TikTok "gonk nail art tutorial") that no fetched competitor page mentions at all.
+
+- **missing_semantic_territory**: "gonk nails," regular nail polish technique (vs. gel), nail shape suitability for the design (oval/square/almond called out only by the blocked atlantisuniversity source), troubleshooting/mistake-fixing language, woodland/forest accent motifs (mushroom, acorn, log) as optional add-ons.
+
+- **our_strategic_approach**: This post will open by naming the exact anxiety the audience has (gnome nails look intricate and technical) and immediately promise the fix, rather than leading with a materials list like Scratch or vague trend framing like RainyRoses. Structurally, it will do what none of the 3 fetched competitors do: give a genuine regular-polish-friendly method alongside the gel option, call out the most common beginner mistakes with fixes, and use "gonk" as a natural synonym mention to capture that adjacent search behavior. Depth-wise, it will include real troubleshooting (proportions, line control) that Scratch, RainyRoses, and Lemon8 all skip entirely — this is the single clearest, most specific way to outrank a field where the strongest existing page is a 280-word gel-only steps list.
+
+- **top_5_fetched_pages_summary**:
+  1. Scratch Magazine (scratchmagazine.co.uk/nail_art/six-step-guide-to-gnome-nails/) — 280 words, 6 numbered steps (H3-equivalent), ~1 keyword mention. Strength: real named nail artist, specific gel-shade callouts, credible professional voice. Weakness: gel-system only, zero beginner reassurance, no troubleshooting, no visual context for someone who's never seen the finished look described.
+  2. RainyRoses (rainyroses.com/blogs/nail-art/the-ultimate-guide-to-gnome-nail-art) — 330 words, 5 numbered subsections, ~9 keyword mentions (keyword-stuffed). Strength: broad accessible framing. Weakness: vague, generic "start with a base color" instructions with no real step-by-step specificity — reads like filler, product-page-adjacent (e-commerce blog).
+  3. Lemon8 (lemon8-app.com/@ivie_lynn4843) — ~430 words, flowing narrative with no H2/numbered structure, ~14 keyword mentions. Strength: genuinely personal, encouraging "even if you're not a pro" tone; real technique color (dotting tool for beard texture, varying gnome size across nails). Weakness: no discrete steps to follow, no materials list, hard to use as an actual how-to reference while painting.
+
+- **top_5_word_count_average**: ~347 words (280 + 330 + 430 ÷ 3)
+
+- **top_5_keyword_density_average**: ~8 mentions ("gnome nail(s)" / "gnome nail art" combined average across the 3 pages)
+
+- **recommended_image_count_validation**: 4 images (1 hero + 3 body) matches tutorial rule exactly; none of the 3 fetched competitors show more than 1-2 images each, so 3 body images is already above the visual density baseline for this keyword.
+
+## SECTION 5: AUDIENCE INTELLIGENCE
+- **who_they_are**: Primarily DIY/at-home nail art enthusiasts (not professional nail techs, based on Pinterest/YouTube "beginner"/"easy" modifier dominance vs. the more technical Scratch Magazine audience). Likely intermediate polish users who've done simpler designs (dots, stripes, french tips) but haven't attempted a detailed character motif before. Christmas-specific timing — searching in the run-up to the holiday season for a design to do on themselves or for a client/family member.
+- **what_they_want_from_this_post**: A genuinely followable, step-by-step method they can execute with polish they likely already own, plus reassurance that the design is more achievable than it looks.
+- **what_frustrates_them**: Existing content either assumes gel-system knowledge (Scratch) or is too vague to actually execute (RainyRoses "paint the gnome design on top" with no specifics on order of operations, brush size, or how to keep proportions consistent across all ten nails).
+- **top_5_pain_points**:
+  1. Not knowing where to start the gnome (hat first? body first?) — no fetched source states or justifies its ordering.
+  2. Fear of the beard/hat looking lumpy or uneven, especially with a shaky hand — validated by SalonGeek general nail-art threads on fine-line control struggles.
+  3. Uncertainty about nail shape suitability — is this design possible on short or round nails, or only long/almond shapes?
+  4. Wanting the design without owning a full gel system or UV lamp.
+  5. Wanting consistency across all 10 nails (or accent-nail-only) without each gnome looking different.
+- **exact_user_phrases**: "gnome nail art tutorial for beginners," "easy gnome nail designs," "gnome nails step by step," "even if you're not a pro," "gonk nails," "simple gnome nail designs," "totally achievable with a little patience," "no-painting-required," "gnome nail art ideas," "cute and easy-to-follow."
+- **intent_content_signals**: Numbered/discrete steps (not flowing narrative like Lemon8); a materials list stated up front; explicit reassurance language early (removing the "this looks too hard" fear); a finished-look description or mental image before diving into steps since visual context is what tutorial-seekers actually want first.
+
+## SECTION 6: SEMANTIC KEYWORD DATA
+- **primary_keyword**: gnome nail art tutorial
+- **keyword_variations**: how to paint gnome nails, gnome nail art tutorial for beginners, gnome nail design tutorial, DIY gnome nail art, gonk nail art tutorial, easy gnome nail tutorial, step by step gnome nails
+- **cluster_keywords**: christmas gnome nail art, holiday gnome nails, festive gnome nail design, gnome nail art gel polish, gnome nail decals, woodland nail art, acorn nail art, gnome beard nail design, gnome hat nail art, gnome nail art nail shapes, Scandinavian gnome nails, matte top coat gnome nails
+- **lsi_terms** (sourced from both fetched pages and autocomplete): nail art brush, dotting tool, gel polish, matte top coat, base coat, thin detail brush, tartan/plaid pattern hat, acorn accent, forest/woodland theme, beard texture, gnome hat proportions, glitter top coat, water decals, nail wraps, precision brush, khaki gel polish, art gel outline, nail shape suitability, regular nail polish method, chrome tool
+- **aeo_terms**: "how do you paint a gnome on your nails," "what tools do I need for gnome nail art," "can you do gnome nails with regular polish," "what colors are used for gnome nail art," "how do you make the gnome's beard on nails," "why does my gnome nail art look uneven," "what nail shape is best for gnome nail art," "how long does gnome nail art take," "do I need gel polish for gnome nails," "how do you keep gnome nail art consistent across all nails"
+- **technical_terms**: gel polish, matte top coat, art gel, nail art brush, dotting tool, cure/curing, base coat, detail brush
+- **user_language**: "even if you're not a pro," "totally achievable," "cute little friends," "adorable tiny friends," "whimsical," "no-painting-required," "step by step," "beginner friendly," "so cute and easy to follow," "gonk"
+
+## SECTION 7: VOICE AND AI QUERIES
+1. How do you paint a gnome on your nails?
+2. What tools do I need for gnome nail art?
+3. Can you do gnome nail art with regular nail polish instead of gel?
+4. What colors are traditionally used for gnome nail art?
+5. How do you paint the gnome's beard so it looks even?
+6. What's the easiest way to start a gnome nail design?
+7. Why does my gnome nail art look lumpy or uneven?
+8. What nail shape works best for gnome nail art?
+9. Do I need a UV lamp to do gnome nail art?
+10. How long does gnome nail art take to do at home?
+11. Can beginners do gnome nail art, or is it too advanced?
+12. What's the difference between gnome nails and gonk nails?
+13. How do you keep the gnome design consistent across all 10 nails?
+14. What's the best brush size for gnome nail art details?
+15. Can you add glitter or rhinestones to gnome nail art?
+
+## SECTION 8: HOOK AND CTR
+- **real_serp_findings_summary**: The only 3 real fetchable competitor pages for this keyword are Scratch Magazine (professional, gel-only, no reassurance), RainyRoses (generic "ultimate guide" framing with vague instructions), and Lemon8 (casual personal post, no real step structure). None promise to make an intricate-looking design easy — despite Pinterest and YouTube search volume being dominated by "easy," "beginner," and "simple" modifiers, signaling real audience anxiety about difficulty.
+- **selected_option_rationale**: This title directly names the reader's core hesitation (gnome nails look hard) and answers it in the same breath, which none of the 3 real competitors do — Scratch assumes competence, RainyRoses is vague, Lemon8 doesn't structure itself as a tutorial promise at all.
+- **title**: Gnome Nail Art Tutorial: The Trick That Makes It Easy
+- **title_char_count**: 54 (within 55-60 hard cap)
+- **meta_description**: Gnome nails look intricate but one shaping trick makes them totally doable at home — no gel system or salon skills required.
+- **meta_char_count**: 128 (within 120-155 hard cap)
+- **intro_hook_brief**: Open by naming the exact thing the reader is thinking — that gnome nail art looks far too detailed and technical for a home manicure — then immediately promise the single shaping/ordering trick (starting with the hat triangle as an anchor shape, not trying to freehand the whole gnome at once) that makes it approachable. Curiosity-gap energy: "the trick" is teased before it's revealed.
+- **first_h2_hook_direction**: The first H2 (materials/what you'll need) should briefly reinforce that no gel system or UV lamp is required — subtly delivering on the title's promise without repeating the title's wording.
+
+## SECTION 9: SEARCH JOURNEY
+- **reader_arrival_state**: Motivated to try gnome nail art but intimidated — worried it's too detailed/technical for their skill level, and unsure where to even start.
+- **journey_arc**:
+  1. Fear removed immediately — the "trick" is named and the design is reframed as more approachable than it looks.
+  2. Materials list confirms no special/gel-only equipment is required, lowering the barrier further.
+  3. Step-by-step walkthrough builds confidence progressively, from base shape to full detail.
+  4. Troubleshooting section addresses the specific mistakes they're most afraid of (uneven beard, bad proportions).
+  5. Close with the finished-result payoff and encouragement to try it on an accent nail first if still nervous.
+- **promise_to_deliver**: That gnome nail art, despite looking intricate, is achievable at home with an ordinary polish collection and one key technique.
+- **exit_state**: Confident and ready to try — no longer feeling like this is a "professional-only" design.
+
+## SECTION 10: CONTENT STRUCTURE
+- **h1**: Gnome Nail Art Tutorial: The Trick That Makes Gnome Nails Easy
+- **h2_structure**:
+  1. What You'll Need for Gnome Nail Art (No Gel System Required)
+  2. The Trick: Start With the Hat, Not the Whole Gnome
+  3. Step-by-Step: How to Paint a Gnome on Your Nails
+  4. Regular Polish vs. Gel Polish: Which Should You Use?
+  5. Common Gnome Nail Art Mistakes (and How to Fix Them)
+  6. Gonk Nails: Is It the Same Thing?
+  7. Finishing Touches: Glitter, Acorns, and Woodland Accents
+
+- **word_budget**:
+  - introduction: 220 words
+  - conclusion: 170 words
+  - per_h2:
+    - What You'll Need: 140 words
+    - The Trick (hat-first method): 160 words
+    - Step-by-Step walkthrough: 340 words (highest complexity — core tutorial content)
+    - Regular vs. gel polish: 150 words
+    - Common mistakes/troubleshooting: 180 words
+    - Gonk nails clarification: 110 words
+    - Finishing touches: 130 words
+  - (Total: 220+170+140+160+340+150+180+110+130 = 1,600 — adjusted down proportionally to hit 1,450 target; Blog Gen Agent should trim the Step-by-Step and Common Mistakes sections by ~10% each if needed to land within ±50 words of 1,450 total.)
+
+## SECTION 11: INTERNAL LINKS
+**blog_gen_instruction**: Every link below must appear in the post. Cluster links use anchor texts verbatim. Total internal links must not exceed 6.
+
+1. url_or_slug: /blog/christmas-nails/christmas-nail-ideas | title: Christmas Nail Ideas | anchor_text: christmas nail ideas | placement_note: Introduction, as the reader's entry point back to the broader idea gallery | link_type: cluster-pillar
+2. url_or_slug: /blog/christmas-nails/christmas-character-nails | title: Christmas Character Nails | anchor_text: gingerbread, santa, and gnome nail designs | placement_note: "Finishing Touches" section, linking to inspirational roundup for readers wanting more character ideas beyond gnomes | link_type: cluster-spoke
+3. url_or_slug: /blog/christmas-nails/how-to-christmas-nail-art-at-home | title: How to Do Christmas Nail Art at Home | anchor_text: how to do christmas nail art at home | placement_note: "What You'll Need" section, for readers wanting the general at-home tutorial hub before committing to this specific design | link_type: cluster-spoke
+4. url_or_slug: /blog/christmas-nails/christmas-nail-trends-2026 | title: Christmas Nail Trends 2026 | anchor_text: christmas nail trends 2026 | placement_note: "Gonk Nails" section, connecting the gonk/trend angle to the broader 2026 trend content | link_type: cluster-spoke
+
+**Cross-site discovery**: No genuinely relevant, non-duplicative cross-site matches found on a strict relevance filter for this specific tutorial (searches for "site:mirelleinspo.com gnome nails" and "site:mirelleinspo.com nail art tutorial" were not run against the live site in this research pass — Blog Gen Agent or a follow-up pass should confirm before publish, since this research was conducted without direct site access confirmation). Leaving this at 4 links (within the 4-6 range) rather than forcing a weak cross-site match.
+
+## SECTION 12: VOICE AND TONE
+- **recommended_voice**: Reassuring, capable friend — someone who's done this before and is walking you through it, not a distant professional educator.
+- **tone_characteristics**: Encouraging without being saccharine; specific and concrete (never vague "just paint the design" instructions like RainyRoses); confident that the reader can do this; light and seasonal without being twee; plain-spoken about mistakes being normal and fixable.
+- **language_style**: Second-person "you" throughout; short, direct sentences during actual steps; slightly warmer/longer sentences in the intro and conclusion; avoid jargon without explanation — if "cure" or "art gel" is used, define it in-line once.
+- **audience_match**: This voice matches a reader who is motivated but intimidated (tutorial arrival state) — she needs confidence-building language paired with real specificity, which is exactly what all 3 fetched competitors individually have but none combine (Scratch has specificity but no reassurance; Lemon8 has reassurance but no specificity).
+
+## SECTION 13: EXTERNAL LINKS
+No external links included. None of the 3 fetched competitor pages (Scratch Magazine, RainyRoses, Lemon8) qualify as genuinely citation-worthy per source_quality_rule — Scratch is the strongest candidate but is a brand-ambassador-written piece promoting a specific gel product line rather than independent editorial authority; RainyRoses is e-commerce blog content; Lemon8 is a personal social post. This is expected per the prompy rules, not a gap to fill.
+
+## SECTION 14: EXECUTION PLAN
+
+### Block 1: Keyword Execution
+- primary_keyword: gnome nail art tutorial
+- top_5_density_baseline: 8 (average across the 3 real fetched pages)
+- total_mention_target: 10-11 total mentions
+- first_100_words_plan:
+  - rule: Primary keyword MUST appear twice in the first 100 words
+  - mention_1: First or second sentence of introduction — naming the topic directly as part of the curiosity-gap hook
+  - mention_2: Within the promise/reassurance sentence, ~60-80 words in, reinforcing what the post will teach
+- first_half_target: 6 mentions — first ~725 words. Run denser in first half.
+- second_half_target: 4-5 mentions — second ~725 words
+- strong_tag_rule: EVERY mention of "gnome nail art tutorial" and its exact variations wrapped in `<strong>` tags. Scan after every paragraph.
+- keywords_to_avoid_active: full list in Section 3 — never used as focus terms.
+
+### Block 2: Word Budget
+- total_target: 1,450 words (±50 tolerance)
+- introduction: 220 words
+- conclusion: 170 words
+- h2_budgets:
+  1. What You'll Need for Gnome Nail Art (No Gel System Required) — 130 words — complexity: low
+  2. The Trick: Start With the Hat, Not the Whole Gnome — 150 words — complexity: medium
+  3. Step-by-Step: How to Paint a Gnome on Your Nails — 310 words — complexity: high
+  4. Regular Polish vs. Gel Polish: Which Should You Use? — 135 words — complexity: medium
+  5. Common Gnome Nail Art Mistakes (and How to Fix Them) — 165 words — complexity: medium
+  6. Gonk Nails: Is It the Same Thing? — 100 words — complexity: low
+  7. Finishing Touches: Glitter, Acorns, and Woodland Accents — 120 words — complexity: low
+- tracking_rule: Track running word total at the end of every H2. If running over budget, cut before moving to the next section.
+
+### Block 3: Image Plan
+- total_images: 4
+- hero_image: frontmatter only — NEVER appears in post body
+- body_images: 3
+- assignments:
+  1. image_number: 1 | place_after: "The Trick: Start With the Hat, Not the Whole Gnome" | image_type: standard_inspiration | section_context: A finished gnome nail art look, close-up, showing the hat/beard/nose clearly defined — gives the reader the visual reference before they start following steps.
+  2. image_number: 2 | place_after: "Step-by-Step: How to Paint a Gnome on Your Nails" | image_type: standard_inspiration | section_context: A different finished gnome nail set (varied color palette from image 1 — e.g., traditional red/green vs. a neutral/plaid variation) to reinforce that the technique adapts across color choices.
+  3. image_number: 3 | place_after: "Gonk Nails: Is It the Same Thing?" or "Finishing Touches" | image_type: standard_inspiration | section_context: A gnome nail set with woodland/finishing accents visible (acorn, glitter hat tip, plaid pattern) to visually pay off the "Finishing Touches" section content.
+- image_type_rule: All 3 slots use standard_inspiration. This is tutorial intent, but a step-sequence infographic was considered and rejected — the step-by-step section is short enough (5-6 steps) to be fully covered in prose without needing a visual step diagram, and no comparison is being made that would require an infographic.
+- path_rule: /images/blog/christmas-nails/gnome-nail-art-tutorial/filename.webp
+
+### Block 4: Opening Technique Assignments
+- Introduction: Technique 1 — The Claim (state the trick exists and will be revealed)
+- What You'll Need: Technique 2 — placeholder, Blog Gen Agent's technique library to assign (no repeat of Technique 1)
+- The Trick: Technique 3 — The Reframe (reader's assumption that this is hard is reframed)
+- Step-by-Step: Technique 2 — placeholder, must differ from adjacent sections
+- Regular vs. Gel Polish: Technique 1 — The Claim (direct statement of which to choose and why)
+- Common Mistakes: Technique 3 — The Reframe (mistakes reframed as normal/fixable)
+- Gonk Nails: Technique 2 — placeholder
+- Finishing Touches: Technique 1 — The Claim
+- Conclusion: Technique 3 — The Reframe (final confidence reframe: "this was more achievable than it looked")
+- banned_opener_rule: Check every opener against banned_opening_approaches in Blog Gen prompt before writing the second sentence.
+
+### Block 5: Link Placements
+1. anchor_text: christmas nail ideas | full_url: /blog/christmas-nails/christmas-nail-ideas | place_in_section: Introduction | placement_context: Brief mention pointing back to the broader idea hub for readers who want more Christmas nail inspiration generally | link_type: cluster-pillar
+2. anchor_text: gingerbread, santa, and gnome nail designs | full_url: /blog/christmas-nails/christmas-character-nails | place_in_section: Finishing Touches | placement_context: Suggesting readers explore more character motifs once they've mastered gnomes | link_type: cluster-spoke
+3. anchor_text: how to do christmas nail art at home | full_url: /blog/christmas-nails/how-to-christmas-nail-art-at-home | place_in_section: What You'll Need | placement_context: Pointing to the general at-home tutorial hub for readers who want broader technique grounding first | link_type: cluster-spoke
+4. anchor_text: christmas nail trends 2026 | full_url: /blog/christmas-nails/christmas-nail-trends-2026 | place_in_section: Gonk Nails | placement_context: Connecting the gonk/trend terminology discussion to the dedicated trends roundup | link_type: cluster-spoke
+
+### Block 6: AEO/GEO Plan
+- aeo_assignments:
+  1. aeo_term: "Can you do gnome nail art with regular nail polish instead of gel?" | assigned_to_section: Regular Polish vs. Gel Polish | execution: Direct 2-3 sentence answer immediately after the H2, confirming yes and explaining the key technique difference.
+  2. aeo_term: "Why does my gnome nail art look uneven?" | assigned_to_section: Common Gnome Nail Art Mistakes | execution: Direct 2-3 sentence answer immediately after the H2 naming the most common cause (usually proportion/brush size) before elaborating on other mistakes.
+  3. aeo_term: "What's the difference between gnome nails and gonk nails?" | assigned_to_section: Gonk Nails: Is It the Same Thing? | execution: Direct 2-3 sentence answer immediately after the H2 confirming they're the same design with regional naming differences.
+- geo_entity_statements:
+  1. entity: Gnome nail art | assigned_to_section: What You'll Need | execution: Clear declarative definition sentence early in the section — what gnome nail art is, stated plainly.
+  2. entity: Gonk | assigned_to_section: Gonk Nails: Is It the Same Thing? | execution: Clear declarative definition sentence identifying "gonk" as the UK/Scandinavian-influenced term for the same nail motif.
+
+### Block 7: Active Constraints
+- em_dash_banned: Long em dash does not appear anywhere. Replace with comma / new sentence / parentheses / but / restructure if one forms.
+- banned_vocab_watch: Watch for over-use of "whimsical," "adorable," "enchanting," "magical," "festive," "cozy," "elevate" — these appeared repeatedly across the fetched competitor pages and risk sounding generic/AI-templated if overused here.
+- american_english_active: color, recognize, -ize, -or — every instance, no exceptions.
+- keyword_density_reminder: After every 2 H2 sections, count current keyword mentions. Verify running total is on track for 10-11 total, denser in first half.
+- image_path_reminder: /images/blog/christmas-nails/gnome-nail-art-tutorial/filename.webp
+- internal_link_url_reminder: Full correct paths only — /blog/christmas-nails/[slug] for all cluster links in this post.
+- hero_image_reminder: Hero = frontmatter only. Never place hero image in body.
+- strong_tag_reminder: Every primary keyword mention = `<strong>` tags. Scan after every paragraph.
