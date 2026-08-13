@@ -1,0 +1,1155 @@
+{
+  "cluster_metadata": {
+    "cluster_topic": "Christmas Nails",
+    "topic_slug": "christmas-nails",
+    "target_audience": "Global, Tier 1 countries (US, UK, Canada, Australia)",
+    "total_posts": 31,
+    "intent_breakdown": {
+      "informational": 2,
+      "inspirational": 21,
+      "tutorial": 6,
+      "comparison": 1,
+      "seasonal_trend": 1
+    },
+    "pillar_post_slug": "christmas-nail-ideas",
+    "created_date": "2026-08-13"
+  },
+
+  "existing_site_posts_excluded": [
+    {
+      "url": "https://mirelleinspo.com/blog/holiday-nails/holiday-nails",
+      "title": "Holiday Nails",
+      "inferred_primary_keyword": "holiday nails (vacation/travel meaning)",
+      "inferred_intent": "inspirational",
+      "exclusion_reason": "Site uses 'holiday' in UK vacation sense (beach, tropical, Italian summer nails) - not the festive Christmas/party season sense. Zero keyword conflict with this cluster."
+    },
+    {
+      "url": "https://mirelleinspo.com/blog/aesthetic-nails/old-money-nails-fall-winter",
+      "title": "Old Money Nails Fall/Winter",
+      "inferred_primary_keyword": "old money nails fall winter",
+      "inferred_intent": "aesthetic_identity",
+      "exclusion_reason": "Generic seasonal aesthetic post, not Christmas-specific. This cluster's 'old-money-christmas-nails' post is differentiated and cross-links to this existing post rather than competing with it."
+    },
+    {
+      "url": "https://mirelleinspo.com/blog/nails-for-older-women/nails-for-older-women",
+      "title": "Nails for Older Women",
+      "inferred_primary_keyword": "nails for older women",
+      "inferred_intent": "aesthetic_identity",
+      "exclusion_reason": "Existing full cluster covering shape/color/finish fundamentals for mature hands. This cluster's christmas-nails-for-older-women post is narrowly scoped to Christmas motifs/colors only and links back heavily to this existing cluster rather than repeating fundamentals."
+    },
+    {
+      "url": "https://mirelleinspo.com/blog/skin-tone/nail-colors-for-fair-skin",
+      "title": "Nail Colors for Fair Skin",
+      "inferred_primary_keyword": "nail colors for fair skin",
+      "inferred_intent": "informational",
+      "exclusion_reason": "Existing full skin-tone cluster covering color-matching fundamentals. This cluster's christmas-nail-colors-skin-tone post is narrowly scoped to Christmas palette only and links back to this existing cluster."
+    }
+  ],
+
+  "posts": [
+    {
+      "post_id": 1,
+      "role": "pillar",
+      "title": "Christmas Nail Ideas",
+      "slug": "christmas-nail-ideas",
+      "primary_keyword": "christmas nails",
+      "intent": "inspirational",
+      "search_mode": "inspiration_mode",
+      "suggested_hook_trigger": "Trigger 3 — Specificity/Numbers",
+      "search_demand_signals": [
+        "Pinterest: 520+ boards under 'christmas nails'",
+        "6+ major outlet 2026 roundups (Green Wedding Shoes, InStyle, Marie Claire, Sweet Magnolia, A Beautiful Mess, Style Meets Story)"
+      ],
+      "why_included": "Broadest keyword with highest search demand across every source checked; serves as cluster hub linking to all shape, motif, color, and tutorial spokes.",
+      "internal_links": {
+        "links_to": [
+          { "slug": "almond-christmas-nails", "anchor_text": "almond christmas nails", "type": "spoke" },
+          { "slug": "short-christmas-nails", "anchor_text": "short christmas nails", "type": "spoke" },
+          { "slug": "coffin-christmas-nails", "anchor_text": "coffin christmas nails", "type": "spoke" },
+          { "slug": "french-tip-christmas-nails", "anchor_text": "french tip christmas nails", "type": "spoke" },
+          { "slug": "candy-cane-nails", "anchor_text": "candy cane nail designs", "type": "spoke" },
+          { "slug": "plaid-christmas-nails", "anchor_text": "plaid christmas nails", "type": "spoke" },
+          { "slug": "reindeer-nails", "anchor_text": "reindeer nail designs", "type": "spoke" },
+          { "slug": "christmas-character-nails", "anchor_text": "gingerbread, santa, and gnome nail designs", "type": "spoke" },
+          { "slug": "christmas-wreath-nails", "anchor_text": "christmas wreath nail art", "type": "spoke" },
+          { "slug": "red-christmas-nails", "anchor_text": "red christmas nails", "type": "spoke" },
+          { "slug": "green-christmas-nails", "anchor_text": "green christmas nails", "type": "spoke" },
+          { "slug": "pink-christmas-nails", "anchor_text": "pink christmas nails", "type": "spoke" },
+          { "slug": "gold-christmas-nails", "anchor_text": "gold christmas nails", "type": "spoke" },
+          { "slug": "blue-christmas-nails", "anchor_text": "blue christmas nails", "type": "spoke" },
+          { "slug": "christmas-nails-not-red", "anchor_text": "non-traditional christmas nail colors", "type": "spoke" },
+          { "slug": "christmas-nail-colors", "anchor_text": "best christmas nail colors guide", "type": "spoke" },
+          { "slug": "how-to-christmas-nail-art-at-home", "anchor_text": "how to do christmas nail art at home", "type": "spoke" },
+          { "slug": "christmas-tree-nail-art-tutorial", "anchor_text": "christmas tree nail art tutorial", "type": "spoke" },
+          { "slug": "reindeer-nail-art-tutorial", "anchor_text": "reindeer nail art tutorial", "type": "spoke" },
+          { "slug": "santa-nail-art-tutorial", "anchor_text": "santa nail art tutorial", "type": "spoke" },
+          { "slug": "gingerbread-man-nail-art-tutorial", "anchor_text": "gingerbread man nail art tutorial", "type": "spoke" },
+          { "slug": "gnome-nail-art-tutorial", "anchor_text": "gnome nail art tutorial", "type": "spoke" },
+          { "slug": "mistletoe-nail-art-tutorial", "anchor_text": "mistletoe nail art tutorial", "type": "spoke" },
+          { "slug": "old-money-christmas-nails", "anchor_text": "old money christmas nails", "type": "spoke" },
+          { "slug": "christmas-nail-trends-2026", "anchor_text": "christmas nail trends 2026", "type": "spoke" },
+          { "slug": "christmas-nails-for-kids", "anchor_text": "christmas nails for kids", "type": "spoke" },
+          { "slug": "simple-christmas-nails", "anchor_text": "simple christmas nail designs", "type": "spoke" },
+          { "slug": "christmas-nails-for-older-women", "anchor_text": "christmas nails for older women", "type": "spoke" },
+          { "slug": "christmas-nail-colors-skin-tone", "anchor_text": "christmas nail colors by skin tone", "type": "spoke" },
+          { "slug": "matching-christmas-nails", "anchor_text": "matching christmas nails for couples and family", "type": "spoke" }
+        ],
+        "gallery_link": {
+          "url": "https://mirelleinspo.com/inspo/christmas-nail-ideas-inspiration-gallery",
+          "anchor_text": "christmas nails inspiration gallery"
+        },
+        "receives_links_from": [
+          { "slug": "almond-christmas-nails", "anchor_text": "christmas nail ideas" },
+          { "slug": "short-christmas-nails", "anchor_text": "christmas nail ideas" },
+          { "slug": "coffin-christmas-nails", "anchor_text": "christmas nail ideas" },
+          { "slug": "french-tip-christmas-nails", "anchor_text": "christmas nail ideas" },
+          { "slug": "candy-cane-nails", "anchor_text": "christmas nail ideas" },
+          { "slug": "plaid-christmas-nails", "anchor_text": "christmas nail ideas" },
+          { "slug": "reindeer-nails", "anchor_text": "christmas nail ideas" },
+          { "slug": "christmas-character-nails", "anchor_text": "christmas nail ideas" },
+          { "slug": "christmas-wreath-nails", "anchor_text": "christmas nail ideas" },
+          { "slug": "red-christmas-nails", "anchor_text": "christmas nail ideas" },
+          { "slug": "green-christmas-nails", "anchor_text": "christmas nail ideas" },
+          { "slug": "pink-christmas-nails", "anchor_text": "christmas nail ideas" },
+          { "slug": "gold-christmas-nails", "anchor_text": "christmas nail ideas" },
+          { "slug": "blue-christmas-nails", "anchor_text": "christmas nail ideas" },
+          { "slug": "christmas-nails-not-red", "anchor_text": "christmas nail ideas" },
+          { "slug": "christmas-nail-colors", "anchor_text": "christmas nail ideas" },
+          { "slug": "how-to-christmas-nail-art-at-home", "anchor_text": "christmas nail ideas" },
+          { "slug": "christmas-tree-nail-art-tutorial", "anchor_text": "christmas nail ideas" },
+          { "slug": "reindeer-nail-art-tutorial", "anchor_text": "christmas nail ideas" },
+          { "slug": "santa-nail-art-tutorial", "anchor_text": "christmas nail ideas" },
+          { "slug": "gingerbread-man-nail-art-tutorial", "anchor_text": "christmas nail ideas" },
+          { "slug": "gnome-nail-art-tutorial", "anchor_text": "christmas nail ideas" },
+          { "slug": "mistletoe-nail-art-tutorial", "anchor_text": "christmas nail ideas" },
+          { "slug": "old-money-christmas-nails", "anchor_text": "christmas nail ideas" },
+          { "slug": "christmas-nail-trends-2026", "anchor_text": "christmas nail ideas" },
+          { "slug": "christmas-nails-for-kids", "anchor_text": "christmas nail ideas" },
+          { "slug": "simple-christmas-nails", "anchor_text": "christmas nail ideas" },
+          { "slug": "christmas-nails-for-older-women", "anchor_text": "christmas nail ideas" },
+          { "slug": "christmas-nail-colors-skin-tone", "anchor_text": "christmas nail ideas" },
+          { "slug": "matching-christmas-nails", "anchor_text": "christmas nail ideas" }
+        ]
+      },
+      "status": "approved"
+    },
+
+    {
+      "post_id": 2,
+      "role": "spoke",
+      "title": "Almond Christmas Nails",
+      "slug": "almond-christmas-nails",
+      "primary_keyword": "almond christmas nails",
+      "intent": "inspirational",
+      "search_mode": "inspiration_mode",
+      "suggested_hook_trigger": "Trigger 2 — FOMO/Trend",
+      "search_demand_signals": [
+        "Pinterest heavy volume across multiple dedicated boards",
+        "Amazon/Etsy press-on product listings specifically for almond shape"
+      ],
+      "why_included": "Shape-specific query with consistent cross-source demand; almond is the most searched nail shape modifier for Christmas.",
+      "internal_links": {
+        "links_to": [
+          { "slug": "christmas-nail-ideas", "anchor_text": "christmas nail ideas", "type": "pillar" },
+          { "slug": "short-christmas-nails", "anchor_text": "short christmas nails", "type": "spoke" },
+          { "slug": "coffin-christmas-nails", "anchor_text": "coffin christmas nails", "type": "spoke" },
+          { "slug": "red-christmas-nails", "anchor_text": "red christmas nails", "type": "spoke" }
+        ],
+        "receives_links_from": [
+          { "slug": "christmas-nail-ideas", "anchor_text": "almond christmas nails" },
+          { "slug": "short-christmas-nails", "anchor_text": "almond christmas nail shapes" },
+          { "slug": "simple-christmas-nails", "anchor_text": "almond shape for easy christmas designs" }
+        ]
+      },
+      "status": "approved"
+    },
+
+    {
+      "post_id": 3,
+      "role": "spoke",
+      "title": "Short Christmas Nails",
+      "slug": "short-christmas-nails",
+      "primary_keyword": "short christmas nails",
+      "intent": "inspirational",
+      "search_mode": "inspiration_mode",
+      "suggested_hook_trigger": "Trigger 3 — Specificity/Numbers",
+      "search_demand_signals": [
+        "Byrdie dedicated 23-item roundup",
+        "InStyle dedicated 18-item roundup"
+      ],
+      "why_included": "Major outlets run dedicated short-nail-specific Christmas roundups distinct from general shape content.",
+      "internal_links": {
+        "links_to": [
+          { "slug": "christmas-nail-ideas", "anchor_text": "christmas nail ideas", "type": "pillar" },
+          { "slug": "almond-christmas-nails", "anchor_text": "almond christmas nail shapes", "type": "spoke" },
+          { "slug": "french-tip-christmas-nails", "anchor_text": "french tip christmas nails", "type": "spoke" },
+          { "slug": "simple-christmas-nails", "anchor_text": "simple christmas nail designs", "type": "spoke" }
+        ],
+        "receives_links_from": [
+          { "slug": "christmas-nail-ideas", "anchor_text": "short christmas nails" },
+          { "slug": "almond-christmas-nails", "anchor_text": "short christmas nails" },
+          { "slug": "simple-christmas-nails", "anchor_text": "short christmas nail ideas" }
+        ]
+      },
+      "status": "approved"
+    },
+
+    {
+      "post_id": 4,
+      "role": "spoke",
+      "title": "Coffin Christmas Nails",
+      "slug": "coffin-christmas-nails",
+      "primary_keyword": "coffin christmas nails",
+      "intent": "inspirational",
+      "search_mode": "inspiration_mode",
+      "suggested_hook_trigger": "Trigger 3 — Specificity/Numbers",
+      "search_demand_signals": [
+        "Pinterest dedicated boards",
+        "Amazon/product listings for coffin-shape press-ons"
+      ],
+      "why_included": "Consistent shape-specific demand across Pinterest and product marketplaces.",
+      "internal_links": {
+        "links_to": [
+          { "slug": "christmas-nail-ideas", "anchor_text": "christmas nail ideas", "type": "pillar" },
+          { "slug": "almond-christmas-nails", "anchor_text": "almond christmas nails", "type": "spoke" },
+          { "slug": "old-money-christmas-nails", "anchor_text": "old money christmas nails", "type": "spoke" },
+          { "slug": "gold-christmas-nails", "anchor_text": "gold christmas nails", "type": "spoke" }
+        ],
+        "receives_links_from": [
+          { "slug": "christmas-nail-ideas", "anchor_text": "coffin christmas nails" },
+          { "slug": "almond-christmas-nails", "anchor_text": "coffin christmas nails" },
+          { "slug": "old-money-christmas-nails", "anchor_text": "coffin shape old money christmas nails" }
+        ]
+      },
+      "status": "approved"
+    },
+
+    {
+      "post_id": 5,
+      "role": "spoke",
+      "title": "French Tip Christmas Nails",
+      "slug": "french-tip-christmas-nails",
+      "primary_keyword": "french tip christmas nails",
+      "intent": "inspirational",
+      "search_mode": "inspiration_mode",
+      "suggested_hook_trigger": "Trigger 3 — Specificity/Numbers",
+      "search_demand_signals": [
+        "InStyle and AOL dedicated roundups",
+        "Multiple mentions as a top format across nearly every general roundup checked"
+      ],
+      "why_included": "French tip is a consistently named standalone format across major outlet Christmas coverage.",
+      "internal_links": {
+        "links_to": [
+          { "slug": "christmas-nail-ideas", "anchor_text": "christmas nail ideas", "type": "pillar" },
+          { "slug": "short-christmas-nails", "anchor_text": "short christmas nails", "type": "spoke" },
+          { "slug": "simple-christmas-nails", "anchor_text": "simple christmas nail designs", "type": "spoke" },
+          { "slug": "red-christmas-nails", "anchor_text": "red christmas nails", "type": "spoke" }
+        ],
+        "receives_links_from": [
+          { "slug": "christmas-nail-ideas", "anchor_text": "french tip christmas nails" },
+          { "slug": "short-christmas-nails", "anchor_text": "french tip christmas nails" },
+          { "slug": "simple-christmas-nails", "anchor_text": "french tip christmas nail idea" }
+        ]
+      },
+      "status": "approved"
+    },
+
+    {
+      "post_id": 6,
+      "role": "spoke",
+      "title": "Candy Cane Nails",
+      "slug": "candy-cane-nails",
+      "primary_keyword": "candy cane nail designs",
+      "intent": "inspirational",
+      "search_mode": "inspiration_mode",
+      "suggested_hook_trigger": "Trigger 3 — Specificity/Numbers",
+      "search_demand_signals": [
+        "Scratch Magazine (nail trade press) dedicated 26-item roundup",
+        "Pinterest heavy volume"
+      ],
+      "why_included": "Trade press validation plus strong consumer search signal makes this one of the most-requested individual motifs.",
+      "internal_links": {
+        "links_to": [
+          { "slug": "christmas-nail-ideas", "anchor_text": "christmas nail ideas", "type": "pillar" },
+          { "slug": "plaid-christmas-nails", "anchor_text": "plaid christmas nails", "type": "spoke" },
+          { "slug": "red-christmas-nails", "anchor_text": "red christmas nails", "type": "spoke" },
+          { "slug": "simple-christmas-nails", "anchor_text": "simple christmas nail designs", "type": "spoke" }
+        ],
+        "receives_links_from": [
+          { "slug": "christmas-nail-ideas", "anchor_text": "candy cane nail designs" },
+          { "slug": "how-to-christmas-nail-art-at-home", "anchor_text": "candy cane nail art" },
+          { "slug": "red-christmas-nails", "anchor_text": "candy cane red christmas nails" }
+        ]
+      },
+      "status": "approved"
+    },
+
+    {
+      "post_id": 7,
+      "role": "spoke",
+      "title": "Plaid Christmas Nails",
+      "slug": "plaid-christmas-nails",
+      "primary_keyword": "plaid christmas nails",
+      "intent": "inspirational",
+      "search_mode": "inspiration_mode",
+      "suggested_hook_trigger": "Trigger 2 — FOMO/Trend",
+      "search_demand_signals": [
+        "Green Wedding Shoes named as a top 2025/2026 trend",
+        "Yahoo/AOL dedicated roundup coverage"
+      ],
+      "why_included": "Named repeatedly as a leading trending motif for the current season across multiple outlets.",
+      "internal_links": {
+        "links_to": [
+          { "slug": "christmas-nail-ideas", "anchor_text": "christmas nail ideas", "type": "pillar" },
+          { "slug": "candy-cane-nails", "anchor_text": "candy cane nail designs", "type": "spoke" },
+          { "slug": "christmas-nail-trends-2026", "anchor_text": "christmas nail trends 2026", "type": "spoke" },
+          { "slug": "old-money-christmas-nails", "anchor_text": "old money christmas nails", "type": "spoke" }
+        ],
+        "receives_links_from": [
+          { "slug": "christmas-nail-ideas", "anchor_text": "plaid christmas nails" },
+          { "slug": "christmas-nail-trends-2026", "anchor_text": "plaid christmas nails" },
+          { "slug": "old-money-christmas-nails", "anchor_text": "plaid christmas nail pattern" }
+        ]
+      },
+      "status": "approved"
+    },
+
+    {
+      "post_id": 8,
+      "role": "spoke",
+      "title": "Reindeer Nails",
+      "slug": "reindeer-nails",
+      "primary_keyword": "reindeer nail designs",
+      "intent": "inspirational",
+      "search_mode": "inspiration_mode",
+      "suggested_hook_trigger": "Trigger 3 — Specificity/Numbers",
+      "search_demand_signals": [
+        "BTArtbox dedicated standalone guide with internal cross-links",
+        "Strong Etsy and Pinterest product/board presence"
+      ],
+      "why_included": "Reindeer validated as a strong enough standalone motif for its own dedicated guide, distinct from the merged character post.",
+      "internal_links": {
+        "links_to": [
+          { "slug": "christmas-nail-ideas", "anchor_text": "christmas nail ideas", "type": "pillar" },
+          { "slug": "reindeer-nail-art-tutorial", "anchor_text": "reindeer nail art tutorial", "type": "spoke" },
+          { "slug": "christmas-character-nails", "anchor_text": "gingerbread, santa, and gnome nail designs", "type": "spoke" },
+          { "slug": "christmas-nails-for-kids", "anchor_text": "christmas nails for kids", "type": "spoke" }
+        ],
+        "receives_links_from": [
+          { "slug": "christmas-nail-ideas", "anchor_text": "reindeer nail designs" },
+          { "slug": "reindeer-nail-art-tutorial", "anchor_text": "reindeer nail designs" },
+          { "slug": "christmas-nails-for-kids", "anchor_text": "reindeer nail designs" }
+        ]
+      },
+      "status": "approved"
+    },
+
+    {
+      "post_id": 9,
+      "role": "spoke",
+      "title": "Christmas Character Nails",
+      "slug": "christmas-character-nails",
+      "primary_keyword": "gingerbread santa gnome nails",
+      "intent": "inspirational",
+      "search_mode": "inspiration_mode",
+      "suggested_hook_trigger": "Trigger 3 — Specificity/Numbers",
+      "search_demand_signals": [
+        "Etsy and Pinterest catalog presence across gingerbread, santa, elf, gnome motifs",
+        "nailsblaze design catalog groups these motifs together consistently"
+      ],
+      "why_included": "Gingerbread, Santa, and Gnome individually did not clear the bar for separate inspirational posts but validate well as one combined character roundup; each still gets its own dedicated tutorial spoke.",
+      "internal_links": {
+        "links_to": [
+          { "slug": "christmas-nail-ideas", "anchor_text": "christmas nail ideas", "type": "pillar" },
+          { "slug": "santa-nail-art-tutorial", "anchor_text": "santa nail art tutorial", "type": "spoke" },
+          { "slug": "gingerbread-man-nail-art-tutorial", "anchor_text": "gingerbread man nail art tutorial", "type": "spoke" },
+          { "slug": "gnome-nail-art-tutorial", "anchor_text": "gnome nail art tutorial", "type": "spoke" }
+        ],
+        "receives_links_from": [
+          { "slug": "christmas-nail-ideas", "anchor_text": "gingerbread, santa, and gnome nail designs" },
+          { "slug": "reindeer-nails", "anchor_text": "gingerbread, santa, and gnome nail designs" },
+          { "slug": "christmas-nails-for-kids", "anchor_text": "christmas character nail designs" }
+        ]
+      },
+      "status": "approved"
+    },
+
+    {
+      "post_id": 10,
+      "role": "spoke",
+      "title": "Christmas Wreath Nails",
+      "slug": "christmas-wreath-nails",
+      "primary_keyword": "christmas wreath nail art",
+      "intent": "inspirational",
+      "search_mode": "inspiration_mode",
+      "suggested_hook_trigger": "Trigger 3 — Specificity/Numbers",
+      "search_demand_signals": [
+        "Nailz in Bloom dedicated 27-item roundup",
+        "Consistent appearance across nearly every general Christmas nail roundup plus dedicated Etsy/Pinterest presence"
+      ],
+      "why_included": "Wreath motif validated as strong enough for a standalone dedicated article, distinct from general character/motif content.",
+      "internal_links": {
+        "links_to": [
+          { "slug": "christmas-nail-ideas", "anchor_text": "christmas nail ideas", "type": "pillar" },
+          { "slug": "green-christmas-nails", "anchor_text": "green christmas nails", "type": "spoke" },
+          { "slug": "simple-christmas-nails", "anchor_text": "simple christmas nail designs", "type": "spoke" },
+          { "slug": "christmas-nail-trends-2026", "anchor_text": "christmas nail trends 2026", "type": "spoke" }
+        ],
+        "receives_links_from": [
+          { "slug": "christmas-nail-ideas", "anchor_text": "christmas wreath nail art" },
+          { "slug": "green-christmas-nails", "anchor_text": "christmas wreath nail art" },
+          { "slug": "simple-christmas-nails", "anchor_text": "easy christmas wreath accent nail" }
+        ]
+      },
+      "status": "approved"
+    },
+
+    {
+      "post_id": 11,
+      "role": "spoke",
+      "title": "Red Christmas Nails",
+      "slug": "red-christmas-nails",
+      "primary_keyword": "red christmas nails",
+      "intent": "inspirational",
+      "search_mode": "inspiration_mode",
+      "suggested_hook_trigger": "Trigger 3 — Specificity/Numbers",
+      "search_demand_signals": [
+        "InStyle dedicated 21-item roundup",
+        "Maniology dedicated roundup"
+      ],
+      "why_included": "Red is the most iconic Christmas color with dedicated single-color coverage across major beauty outlets.",
+      "internal_links": {
+        "links_to": [
+          { "slug": "christmas-nail-ideas", "anchor_text": "christmas nail ideas", "type": "pillar" },
+          { "slug": "christmas-nail-colors", "anchor_text": "best christmas nail colors guide", "type": "spoke" },
+          { "slug": "candy-cane-nails", "anchor_text": "candy cane red christmas nails", "type": "spoke" },
+          { "slug": "old-money-christmas-nails", "anchor_text": "old money christmas nails", "type": "spoke" }
+        ],
+        "receives_links_from": [
+          { "slug": "christmas-nail-ideas", "anchor_text": "red christmas nails" },
+          { "slug": "christmas-nail-colors", "anchor_text": "red christmas nails" },
+          { "slug": "almond-christmas-nails", "anchor_text": "red christmas nails" },
+          { "slug": "french-tip-christmas-nails", "anchor_text": "red christmas nails" }
+        ]
+      },
+      "status": "approved"
+    },
+
+    {
+      "post_id": 12,
+      "role": "spoke",
+      "title": "Green Christmas Nails",
+      "slug": "green-christmas-nails",
+      "primary_keyword": "green christmas nails",
+      "intent": "inspirational",
+      "search_mode": "inspiration_mode",
+      "suggested_hook_trigger": "Trigger 3 — Specificity/Numbers",
+      "search_demand_signals": [
+        "InStyle/AOL dedicated 22-item roundup",
+        "The Pink Issue dedicated 30-item roundup"
+      ],
+      "why_included": "Second core Christmas color with strong dedicated single-color coverage.",
+      "internal_links": {
+        "links_to": [
+          { "slug": "christmas-nail-ideas", "anchor_text": "christmas nail ideas", "type": "pillar" },
+          { "slug": "christmas-nail-colors", "anchor_text": "best christmas nail colors guide", "type": "spoke" },
+          { "slug": "christmas-wreath-nails", "anchor_text": "christmas wreath nail art", "type": "spoke" },
+          { "slug": "old-money-christmas-nails", "anchor_text": "old money christmas nails", "type": "spoke" }
+        ],
+        "receives_links_from": [
+          { "slug": "christmas-nail-ideas", "anchor_text": "green christmas nails" },
+          { "slug": "christmas-nail-colors", "anchor_text": "green christmas nails" },
+          { "slug": "christmas-wreath-nails", "anchor_text": "green christmas nails" }
+        ]
+      },
+      "status": "approved"
+    },
+
+    {
+      "post_id": 13,
+      "role": "spoke",
+      "title": "Pink Christmas Nails",
+      "slug": "pink-christmas-nails",
+      "primary_keyword": "pink christmas nails",
+      "intent": "inspirational",
+      "search_mode": "inspiration_mode",
+      "suggested_hook_trigger": "Trigger 3 — Specificity/Numbers",
+      "search_demand_signals": [
+        "Byrdie dedicated 17-item roundup"
+      ],
+      "why_included": "Dedicated single-color coverage from a major beauty outlet validates standalone demand beyond generic color roundups.",
+      "internal_links": {
+        "links_to": [
+          { "slug": "christmas-nail-ideas", "anchor_text": "christmas nail ideas", "type": "pillar" },
+          { "slug": "christmas-nail-colors", "anchor_text": "best christmas nail colors guide", "type": "spoke" },
+          { "slug": "christmas-nails-not-red", "anchor_text": "non-traditional christmas nail colors", "type": "spoke" },
+          { "slug": "christmas-nails-for-kids", "anchor_text": "christmas nails for kids", "type": "spoke" }
+        ],
+        "receives_links_from": [
+          { "slug": "christmas-nail-ideas", "anchor_text": "pink christmas nails" },
+          { "slug": "christmas-nail-colors", "anchor_text": "pink christmas nails" },
+          { "slug": "christmas-nails-not-red", "anchor_text": "pink christmas nails" }
+        ]
+      },
+      "status": "approved"
+    },
+
+    {
+      "post_id": 14,
+      "role": "spoke",
+      "title": "Gold Christmas Nails",
+      "slug": "gold-christmas-nails",
+      "primary_keyword": "gold christmas nails",
+      "intent": "inspirational",
+      "search_mode": "inspiration_mode",
+      "suggested_hook_trigger": "Trigger 3 — Specificity/Numbers",
+      "search_demand_signals": [
+        "Consistent dedicated single-color mentions across multiple major roundups",
+        "Strong product listing presence for gold-themed press-ons and polish sets"
+      ],
+      "why_included": "Gold validated as a top festive metallic with consistent standalone coverage across sources.",
+      "internal_links": {
+        "links_to": [
+          { "slug": "christmas-nail-ideas", "anchor_text": "christmas nail ideas", "type": "pillar" },
+          { "slug": "christmas-nail-colors", "anchor_text": "best christmas nail colors guide", "type": "spoke" },
+          { "slug": "old-money-christmas-nails", "anchor_text": "old money christmas nails", "type": "spoke" },
+          { "slug": "coffin-christmas-nails", "anchor_text": "coffin christmas nails", "type": "spoke" }
+        ],
+        "receives_links_from": [
+          { "slug": "christmas-nail-ideas", "anchor_text": "gold christmas nails" },
+          { "slug": "christmas-nail-colors", "anchor_text": "gold christmas nails" },
+          { "slug": "christmas-nails-not-red", "anchor_text": "gold christmas nails" }
+        ]
+      },
+      "status": "approved"
+    },
+
+    {
+      "post_id": 15,
+      "role": "spoke",
+      "title": "Blue Christmas Nails",
+      "slug": "blue-christmas-nails",
+      "primary_keyword": "blue christmas nails",
+      "intent": "inspirational",
+      "search_mode": "inspiration_mode",
+      "suggested_hook_trigger": "Trigger 2 — FOMO/Trend",
+      "search_demand_signals": [
+        "The Pink Issue dedicated 30-item roundup",
+        "Faculty of Fashion dedicated 29-item roundup"
+      ],
+      "why_included": "Two independent dedicated roundups validate blue as a strong non-traditional color choice with real standalone search demand.",
+      "internal_links": {
+        "links_to": [
+          { "slug": "christmas-nail-ideas", "anchor_text": "christmas nail ideas", "type": "pillar" },
+          { "slug": "christmas-nails-not-red", "anchor_text": "non-traditional christmas nail colors", "type": "spoke" },
+          { "slug": "christmas-nail-trends-2026", "anchor_text": "christmas nail trends 2026", "type": "spoke" },
+          { "slug": "christmas-nail-colors", "anchor_text": "best christmas nail colors guide", "type": "spoke" }
+        ],
+        "receives_links_from": [
+          { "slug": "christmas-nail-ideas", "anchor_text": "blue christmas nails" },
+          { "slug": "christmas-nails-not-red", "anchor_text": "blue christmas nails" },
+          { "slug": "christmas-nail-trends-2026", "anchor_text": "blue christmas nails" }
+        ]
+      },
+      "status": "approved"
+    },
+
+    {
+      "post_id": 16,
+      "role": "spoke",
+      "title": "Christmas Nails That Aren't Red",
+      "slug": "christmas-nails-not-red",
+      "primary_keyword": "non-traditional christmas nail colors",
+      "intent": "comparison",
+      "search_mode": "decision_mode",
+      "suggested_hook_trigger": "Trigger 1 — Curiosity Gap",
+      "search_demand_signals": [
+        "The Everygirl dedicated 25-item roundup",
+        "Naileditbylily dedicated 25-item roundup"
+      ],
+      "why_included": "Distinct decision-mode query pattern (reader has already decided against red, wants alternatives) rather than inspiration for any single color.",
+      "internal_links": {
+        "links_to": [
+          { "slug": "christmas-nail-ideas", "anchor_text": "christmas nail ideas", "type": "pillar" },
+          { "slug": "blue-christmas-nails", "anchor_text": "blue christmas nails", "type": "spoke" },
+          { "slug": "pink-christmas-nails", "anchor_text": "pink christmas nails", "type": "spoke" },
+          { "slug": "gold-christmas-nails", "anchor_text": "gold christmas nails", "type": "spoke" }
+        ],
+        "receives_links_from": [
+          { "slug": "christmas-nail-ideas", "anchor_text": "non-traditional christmas nail colors" },
+          { "slug": "christmas-nail-colors", "anchor_text": "christmas nails that aren't red" },
+          { "slug": "blue-christmas-nails", "anchor_text": "more non-traditional christmas colors" }
+        ]
+      },
+      "status": "approved"
+    },
+
+    {
+      "post_id": 17,
+      "role": "spoke",
+      "title": "Christmas Nail Colors (Best Shades Guide)",
+      "slug": "christmas-nail-colors",
+      "primary_keyword": "christmas nail colors",
+      "intent": "informational",
+      "search_mode": "inspiration_mode",
+      "suggested_hook_trigger": "Trigger 2 — FOMO/Trend",
+      "search_demand_signals": [
+        "LA Nail Supplies dedicated monthly/seasonal color guide",
+        "Manucurist and Chaylor & Mads dedicated 2026 color guides"
+      ],
+      "why_included": "Broad umbrella 'which colors should I even consider' guide, distinct query intent from any single-color inspiration page; answers the decision before the reader picks a specific shade.",
+      "internal_links": {
+        "links_to": [
+          { "slug": "christmas-nail-ideas", "anchor_text": "christmas nail ideas", "type": "pillar" },
+          { "slug": "red-christmas-nails", "anchor_text": "red christmas nails", "type": "spoke" },
+          { "slug": "green-christmas-nails", "anchor_text": "green christmas nails", "type": "spoke" },
+          { "slug": "pink-christmas-nails", "anchor_text": "pink christmas nails", "type": "spoke" },
+          { "slug": "gold-christmas-nails", "anchor_text": "gold christmas nails", "type": "spoke" },
+          { "slug": "blue-christmas-nails", "anchor_text": "blue christmas nails", "type": "spoke" },
+          { "slug": "christmas-nails-not-red", "anchor_text": "christmas nails that aren't red", "type": "spoke" },
+          { "slug": "christmas-nail-colors-skin-tone", "anchor_text": "christmas nail colors by skin tone", "type": "spoke" }
+        ],
+        "receives_links_from": [
+          { "slug": "christmas-nail-ideas", "anchor_text": "best christmas nail colors guide" },
+          { "slug": "red-christmas-nails", "anchor_text": "christmas nail colors guide" },
+          { "slug": "green-christmas-nails", "anchor_text": "christmas nail colors guide" },
+          { "slug": "christmas-nail-colors-skin-tone", "anchor_text": "full christmas nail colors guide" }
+        ]
+      },
+      "status": "approved"
+    },
+
+    {
+      "post_id": 18,
+      "role": "spoke",
+      "title": "How to Do Christmas Nail Art at Home",
+      "slug": "how-to-christmas-nail-art-at-home",
+      "primary_keyword": "how to do christmas nail art at home",
+      "intent": "tutorial",
+      "search_mode": "how_to_execution_mode",
+      "suggested_hook_trigger": "Trigger 1 — Curiosity Gap",
+      "search_demand_signals": [
+        "Strong YouTube tutorial volume",
+        "Multiple dedicated DIY blog step-by-step guides (DIY Cuteness, Nail Designs Journal)"
+      ],
+      "why_included": "General entry-point tutorial for readers who want to DIY without committing to one specific motif; hub post linking to all specific character/motif tutorials.",
+      "internal_links": {
+        "links_to": [
+          { "slug": "christmas-nail-ideas", "anchor_text": "christmas nail ideas", "type": "pillar" },
+          { "slug": "christmas-tree-nail-art-tutorial", "anchor_text": "christmas tree nail art tutorial", "type": "spoke" },
+          { "slug": "reindeer-nail-art-tutorial", "anchor_text": "reindeer nail art tutorial", "type": "spoke" },
+          { "slug": "santa-nail-art-tutorial", "anchor_text": "santa nail art tutorial", "type": "spoke" }
+        ],
+        "receives_links_from": [
+          { "slug": "christmas-nail-ideas", "anchor_text": "how to do christmas nail art at home" },
+          { "slug": "christmas-tree-nail-art-tutorial", "anchor_text": "more christmas nail art tutorials" },
+          { "slug": "simple-christmas-nails", "anchor_text": "how to do christmas nail art at home" }
+        ]
+      },
+      "status": "approved"
+    },
+
+    {
+      "post_id": 19,
+      "role": "spoke",
+      "title": "How to Paint Christmas Tree Nail Art",
+      "slug": "christmas-tree-nail-art-tutorial",
+      "primary_keyword": "christmas tree nail art tutorial",
+      "intent": "tutorial",
+      "search_mode": "how_to_execution_mode",
+      "suggested_hook_trigger": "Trigger 1 — Curiosity Gap",
+      "search_demand_signals": [
+        "YouTube dedicated tutorials",
+        "DIY Cuteness and Dipwell dedicated step-by-step guides"
+      ],
+      "why_included": "Christmas tree is the single most iconic motif with dedicated tutorial demand distinct from general roundups.",
+      "internal_links": {
+        "links_to": [
+          { "slug": "christmas-nail-ideas", "anchor_text": "christmas nail ideas", "type": "pillar" },
+          { "slug": "how-to-christmas-nail-art-at-home", "anchor_text": "how to do christmas nail art at home", "type": "spoke" },
+          { "slug": "green-christmas-nails", "anchor_text": "green christmas nails", "type": "spoke" },
+          { "slug": "simple-christmas-nails", "anchor_text": "simple christmas nail designs", "type": "spoke" }
+        ],
+        "receives_links_from": [
+          { "slug": "christmas-nail-ideas", "anchor_text": "christmas tree nail art tutorial" },
+          { "slug": "how-to-christmas-nail-art-at-home", "anchor_text": "christmas tree nail art tutorial" },
+          { "slug": "green-christmas-nails", "anchor_text": "how to paint a christmas tree on your nails" }
+        ]
+      },
+      "status": "approved"
+    },
+
+    {
+      "post_id": 20,
+      "role": "spoke",
+      "title": "How to Paint Reindeer Nail Art",
+      "slug": "reindeer-nail-art-tutorial",
+      "primary_keyword": "reindeer nail art tutorial",
+      "intent": "tutorial",
+      "search_mode": "how_to_execution_mode",
+      "suggested_hook_trigger": "Trigger 1 — Curiosity Gap",
+      "search_demand_signals": [
+        "BTArtbox dedicated step-by-step guide",
+        "Consistent tutorial-specific demand across Pinterest and blog content"
+      ],
+      "why_included": "Reindeer has dedicated standalone tutorial demand distinct from the inspirational reindeer post.",
+      "internal_links": {
+        "links_to": [
+          { "slug": "christmas-nail-ideas", "anchor_text": "christmas nail ideas", "type": "pillar" },
+          { "slug": "reindeer-nails", "anchor_text": "reindeer nail designs", "type": "spoke" },
+          { "slug": "how-to-christmas-nail-art-at-home", "anchor_text": "how to do christmas nail art at home", "type": "spoke" },
+          { "slug": "christmas-nails-for-kids", "anchor_text": "christmas nails for kids", "type": "spoke" }
+        ],
+        "receives_links_from": [
+          { "slug": "christmas-nail-ideas", "anchor_text": "reindeer nail art tutorial" },
+          { "slug": "reindeer-nails", "anchor_text": "how to paint reindeer nail art" },
+          { "slug": "how-to-christmas-nail-art-at-home", "anchor_text": "reindeer nail art tutorial" }
+        ]
+      },
+      "status": "approved"
+    },
+
+    {
+      "post_id": 21,
+      "role": "spoke",
+      "title": "How to Paint Santa Nail Art",
+      "slug": "santa-nail-art-tutorial",
+      "primary_keyword": "santa nail art tutorial",
+      "intent": "tutorial",
+      "search_mode": "how_to_execution_mode",
+      "suggested_hook_trigger": "Trigger 1 — Curiosity Gap",
+      "search_demand_signals": [
+        "Scratch Magazine (nail trade press) dedicated 9-step guide",
+        "Six+ independent standalone tutorials (Creative Nails, L'Oreal Makeup.com, Revel Nail, Nail Enclave, Swatch and Learn, NailBees)"
+      ],
+      "why_included": "One of the most extensively and independently tutorial-covered motifs found in this entire research; clears the bar easily for standalone treatment.",
+      "internal_links": {
+        "links_to": [
+          { "slug": "christmas-nail-ideas", "anchor_text": "christmas nail ideas", "type": "pillar" },
+          { "slug": "christmas-character-nails", "anchor_text": "gingerbread, santa, and gnome nail designs", "type": "spoke" },
+          { "slug": "how-to-christmas-nail-art-at-home", "anchor_text": "how to do christmas nail art at home", "type": "spoke" },
+          { "slug": "christmas-nails-for-kids", "anchor_text": "christmas nails for kids", "type": "spoke" }
+        ],
+        "receives_links_from": [
+          { "slug": "christmas-nail-ideas", "anchor_text": "santa nail art tutorial" },
+          { "slug": "christmas-character-nails", "anchor_text": "how to paint santa nail art" },
+          { "slug": "how-to-christmas-nail-art-at-home", "anchor_text": "santa nail art tutorial" }
+        ]
+      },
+      "status": "approved"
+    },
+
+    {
+      "post_id": 22,
+      "role": "spoke",
+      "title": "How to Paint Gingerbread Man Nail Art",
+      "slug": "gingerbread-man-nail-art-tutorial",
+      "primary_keyword": "gingerbread man nail art tutorial",
+      "intent": "tutorial",
+      "search_mode": "how_to_execution_mode",
+      "suggested_hook_trigger": "Trigger 1 — Curiosity Gap",
+      "search_demand_signals": [
+        "Deep, repeated coverage across YouTube, trade tutorials (Light Elegance, Creative Nails), and blogs spanning multiple years"
+      ],
+      "why_included": "One of the most tutorial-searched Christmas motifs found; long-standing consistent demand.",
+      "internal_links": {
+        "links_to": [
+          { "slug": "christmas-nail-ideas", "anchor_text": "christmas nail ideas", "type": "pillar" },
+          { "slug": "christmas-character-nails", "anchor_text": "gingerbread, santa, and gnome nail designs", "type": "spoke" },
+          { "slug": "how-to-christmas-nail-art-at-home", "anchor_text": "how to do christmas nail art at home", "type": "spoke" },
+          { "slug": "christmas-nails-for-kids", "anchor_text": "christmas nails for kids", "type": "spoke" }
+        ],
+        "receives_links_from": [
+          { "slug": "christmas-nail-ideas", "anchor_text": "gingerbread man nail art tutorial" },
+          { "slug": "christmas-character-nails", "anchor_text": "how to paint gingerbread man nail art" },
+          { "slug": "christmas-nails-for-kids", "anchor_text": "gingerbread man nail art tutorial" }
+        ]
+      },
+      "status": "approved"
+    },
+
+    {
+      "post_id": 23,
+      "role": "spoke",
+      "title": "How to Paint Gnome Nail Art",
+      "slug": "gnome-nail-art-tutorial",
+      "primary_keyword": "gnome nail art tutorial",
+      "intent": "tutorial",
+      "search_mode": "how_to_execution_mode",
+      "suggested_hook_trigger": "Trigger 1 — Curiosity Gap",
+      "search_demand_signals": [
+        "Scratch Magazine dedicated six-step guide",
+        "Nailpro (nail trade press) dedicated how-to feature"
+      ],
+      "why_included": "Two independent nail-industry trade publications ran dedicated step-by-step guides, confirming standalone tutorial demand.",
+      "internal_links": {
+        "links_to": [
+          { "slug": "christmas-nail-ideas", "anchor_text": "christmas nail ideas", "type": "pillar" },
+          { "slug": "christmas-character-nails", "anchor_text": "gingerbread, santa, and gnome nail designs", "type": "spoke" },
+          { "slug": "how-to-christmas-nail-art-at-home", "anchor_text": "how to do christmas nail art at home", "type": "spoke" },
+          { "slug": "christmas-nail-trends-2026", "anchor_text": "christmas nail trends 2026", "type": "spoke" }
+        ],
+        "receives_links_from": [
+          { "slug": "christmas-nail-ideas", "anchor_text": "gnome nail art tutorial" },
+          { "slug": "christmas-character-nails", "anchor_text": "how to paint gnome nail art" },
+          { "slug": "how-to-christmas-nail-art-at-home", "anchor_text": "gnome nail art tutorial" }
+        ]
+      },
+      "status": "approved"
+    },
+
+    {
+      "post_id": 24,
+      "role": "spoke",
+      "title": "How to Paint Mistletoe Nail Art",
+      "slug": "mistletoe-nail-art-tutorial",
+      "primary_keyword": "mistletoe nail art tutorial",
+      "intent": "tutorial",
+      "search_mode": "how_to_execution_mode",
+      "suggested_hook_trigger": "Trigger 1 — Curiosity Gap",
+      "search_demand_signals": [
+        "Multiple independent TikTok tutorials (Tino Vo, NAILS-LUXE, Attain Cosmetics)",
+        "Dedicated 'Nailmas' tutorial series plus standalone YouTube tutorials spanning multiple years"
+      ],
+      "why_included": "Validated standalone tutorial demand with a distinct romantic/flirty angle ('meet me under the mistletoe') separate from other character motifs.",
+      "internal_links": {
+        "links_to": [
+          { "slug": "christmas-nail-ideas", "anchor_text": "christmas nail ideas", "type": "pillar" },
+          { "slug": "how-to-christmas-nail-art-at-home", "anchor_text": "how to do christmas nail art at home", "type": "spoke" },
+          { "slug": "red-christmas-nails", "anchor_text": "red christmas nails", "type": "spoke" },
+          { "slug": "matching-christmas-nails", "anchor_text": "matching christmas nails for couples and family", "type": "spoke" }
+        ],
+        "receives_links_from": [
+          { "slug": "christmas-nail-ideas", "anchor_text": "mistletoe nail art tutorial" },
+          { "slug": "how-to-christmas-nail-art-at-home", "anchor_text": "mistletoe nail art tutorial" },
+          { "slug": "matching-christmas-nails", "anchor_text": "mistletoe nail art for date night" }
+        ]
+      },
+      "status": "approved"
+    },
+
+    {
+      "post_id": 25,
+      "role": "spoke",
+      "title": "Old Money Christmas Nails",
+      "slug": "old-money-christmas-nails",
+      "primary_keyword": "old money christmas nails",
+      "intent": "inspirational",
+      "search_mode": "aesthetic_identity_mode",
+      "suggested_hook_trigger": "Trigger 4 — Identity Mirroring",
+      "search_demand_signals": [
+        "TikTok trending hashtag",
+        "Three independent dedicated blog posts (styleyouroccasion, prettygirlythings, yournailguide)"
+      ],
+      "why_included": "Strong aesthetic-identity crossover with the site's existing old-money content; Christmas-specific angle is unduplicated white space that bridges naturally to existing seasonal old-money posts.",
+      "internal_links": {
+        "links_to": [
+          { "slug": "christmas-nail-ideas", "anchor_text": "christmas nail ideas", "type": "pillar" },
+          { "slug": "red-christmas-nails", "anchor_text": "red christmas nails", "type": "spoke" },
+          { "slug": "coffin-christmas-nails", "anchor_text": "coffin christmas nails", "type": "spoke" },
+          { "slug": "simple-christmas-nails", "anchor_text": "simple christmas nail designs", "type": "spoke" }
+        ],
+        "receives_links_from": [
+          { "slug": "christmas-nail-ideas", "anchor_text": "old money christmas nails" },
+          { "slug": "red-christmas-nails", "anchor_text": "old money christmas nails" },
+          { "slug": "christmas-nail-trends-2026", "anchor_text": "old money christmas nails" }
+        ]
+      },
+      "status": "approved"
+    },
+
+    {
+      "post_id": 26,
+      "role": "spoke",
+      "title": "Christmas Nail Trends 2026",
+      "slug": "christmas-nail-trends-2026",
+      "primary_keyword": "christmas nail trends 2026",
+      "intent": "seasonal_trend",
+      "search_mode": "inspiration_mode",
+      "suggested_hook_trigger": "Trigger 2 — FOMO/Trend",
+      "search_demand_signals": [
+        "Accio and PNB Shop dedicated 2026 forecast articles",
+        "Multiple outlets running '2026 Christmas nail trends' as a distinct content category"
+      ],
+      "why_included": "Time-sensitive forward-looking trend content distinct from evergreen inspiration posts; matches the site's existing pattern of dedicated year-specific trend posts across other clusters.",
+      "internal_links": {
+        "links_to": [
+          { "slug": "christmas-nail-ideas", "anchor_text": "christmas nail ideas", "type": "pillar" },
+          { "slug": "plaid-christmas-nails", "anchor_text": "plaid christmas nails", "type": "spoke" },
+          { "slug": "blue-christmas-nails", "anchor_text": "blue christmas nails", "type": "spoke" },
+          { "slug": "old-money-christmas-nails", "anchor_text": "old money christmas nails", "type": "spoke" }
+        ],
+        "receives_links_from": [
+          { "slug": "christmas-nail-ideas", "anchor_text": "christmas nail trends 2026" },
+          { "slug": "plaid-christmas-nails", "anchor_text": "christmas nail trends 2026" },
+          { "slug": "gnome-nail-art-tutorial", "anchor_text": "christmas nail trends 2026" }
+        ]
+      },
+      "status": "approved"
+    },
+
+    {
+      "post_id": 27,
+      "role": "spoke",
+      "title": "Christmas Nails for Kids",
+      "slug": "christmas-nails-for-kids",
+      "primary_keyword": "christmas nails for kids",
+      "intent": "inspirational",
+      "search_mode": "inspiration_mode",
+      "suggested_hook_trigger": "Trigger 3 — Specificity/Numbers",
+      "search_demand_signals": [
+        "TikTok trending hashtags",
+        "MomJunction and MyKidsTime dedicated roundups"
+      ],
+      "why_included": "Strong validated cross-platform demand; user-approved despite no existing kids content elsewhere on the site.",
+      "internal_links": {
+        "links_to": [
+          { "slug": "christmas-nail-ideas", "anchor_text": "christmas nail ideas", "type": "pillar" },
+          { "slug": "reindeer-nails", "anchor_text": "reindeer nail designs", "type": "spoke" },
+          { "slug": "christmas-character-nails", "anchor_text": "christmas character nail designs", "type": "spoke" },
+          { "slug": "matching-christmas-nails", "anchor_text": "matching christmas nails for couples and family", "type": "spoke" }
+        ],
+        "receives_links_from": [
+          { "slug": "christmas-nail-ideas", "anchor_text": "christmas nails for kids" },
+          { "slug": "reindeer-nails", "anchor_text": "christmas nails for kids" },
+          { "slug": "matching-christmas-nails", "anchor_text": "christmas nails for kids" }
+        ]
+      },
+      "status": "approved"
+    },
+
+    {
+      "post_id": 28,
+      "role": "spoke",
+      "title": "Simple/Easy Christmas Nails",
+      "slug": "simple-christmas-nails",
+      "primary_keyword": "simple christmas nails",
+      "intent": "inspirational",
+      "search_mode": "inspiration_mode",
+      "suggested_hook_trigger": "Trigger 3 — Specificity/Numbers",
+      "search_demand_signals": [
+        "InStyle dedicated 15-item roundup",
+        "Stolen Inspiration (44-item), Girl Shares Tips (37-item), and The Pink Issue (25-item) dedicated roundups"
+      ],
+      "why_included": "One of the most heavily validated angles in this entire research; multiple major outlets run large dedicated simple/minimalist Christmas nail roundups.",
+      "internal_links": {
+        "links_to": [
+          { "slug": "christmas-nail-ideas", "anchor_text": "christmas nail ideas", "type": "pillar" },
+          { "slug": "french-tip-christmas-nails", "anchor_text": "french tip christmas nails", "type": "spoke" },
+          { "slug": "short-christmas-nails", "anchor_text": "short christmas nails", "type": "spoke" },
+          { "slug": "christmas-nails-for-older-women", "anchor_text": "christmas nails for older women", "type": "spoke" }
+        ],
+        "receives_links_from": [
+          { "slug": "christmas-nail-ideas", "anchor_text": "simple christmas nail designs" },
+          { "slug": "short-christmas-nails", "anchor_text": "simple christmas nail designs" },
+          { "slug": "christmas-nails-for-older-women", "anchor_text": "simple christmas nail designs" }
+        ]
+      },
+      "status": "approved"
+    },
+
+    {
+      "post_id": 29,
+      "role": "spoke",
+      "title": "Christmas Nails for Older Women",
+      "slug": "christmas-nails-for-older-women",
+      "primary_keyword": "christmas nails for older women",
+      "intent": "inspirational",
+      "search_mode": "aesthetic_identity_mode",
+      "suggested_hook_trigger": "Trigger 4 — Identity Mirroring",
+      "search_demand_signals": [
+        "Women.com dedicated 'Holiday Nail Ideas For Women Over 50' article",
+        "TikTok trending 'elegant christmas nails for older woman' content"
+      ],
+      "why_included": "Validated Christmas-specific demand; narrowly scoped to Christmas motifs/colors filtered through the mature-hands lens rather than repeating shape/finish fundamentals already covered by the existing site cluster.",
+      "internal_links": {
+        "links_to": [
+          { "slug": "christmas-nail-ideas", "anchor_text": "christmas nail ideas", "type": "pillar" },
+          { "slug": "simple-christmas-nails", "anchor_text": "simple christmas nail designs", "type": "spoke" },
+          { "slug": "christmas-nail-colors-skin-tone", "anchor_text": "christmas nail colors by skin tone", "type": "spoke" },
+          { "slug": "red-christmas-nails", "anchor_text": "red christmas nails", "type": "spoke" }
+        ],
+        "receives_links_from": [
+          { "slug": "christmas-nail-ideas", "anchor_text": "christmas nails for older women" },
+          { "slug": "simple-christmas-nails", "anchor_text": "christmas nails for older women" },
+          { "slug": "christmas-nail-colors-skin-tone", "anchor_text": "christmas nails for older women" }
+        ]
+      },
+      "external_links": {
+        "note": "Links out to the site's existing nails-for-older-women cluster for shape/finish/fundamentals rather than repeating that content",
+        "links_to": [
+          { "url": "https://mirelleinspo.com/blog/nails-for-older-women/nails-for-older-women", "anchor_text": "full guide to nails for older women" },
+          { "url": "https://mirelleinspo.com/blog/nails-for-older-women/best-nail-shape-for-mature-hands", "anchor_text": "best nail shape for mature hands" },
+          { "url": "https://mirelleinspo.com/blog/nails-for-older-women/elegant-nail-art-for-mature-hands", "anchor_text": "elegant nail art for mature hands" }
+        ]
+      },
+      "status": "approved"
+    },
+
+    {
+      "post_id": 30,
+      "role": "spoke",
+      "title": "Christmas Nail Colors by Skin Tone",
+      "slug": "christmas-nail-colors-skin-tone",
+      "primary_keyword": "christmas nail colors for skin tone",
+      "intent": "informational",
+      "search_mode": "decision_mode",
+      "suggested_hook_trigger": "Trigger 1 — Curiosity Gap",
+      "search_demand_signals": [
+        "Essence dedicated 'Holiday Nail Colors for Dark Skin Tones' article",
+        "Consistent skin-tone x holiday crossover coverage across OPI, Purluxe Beauty, NAILSAMI"
+      ],
+      "why_included": "Validated Christmas-specific demand; narrowly scoped to Christmas palette only, linking back to the existing site skin-tone cluster rather than repeating undertone/color-matching fundamentals.",
+      "internal_links": {
+        "links_to": [
+          { "slug": "christmas-nail-ideas", "anchor_text": "christmas nail ideas", "type": "pillar" },
+          { "slug": "christmas-nail-colors", "anchor_text": "best christmas nail colors guide", "type": "spoke" },
+          { "slug": "red-christmas-nails", "anchor_text": "red christmas nails", "type": "spoke" },
+          { "slug": "christmas-nails-for-older-women", "anchor_text": "christmas nails for older women", "type": "spoke" }
+        ],
+        "receives_links_from": [
+          { "slug": "christmas-nail-ideas", "anchor_text": "christmas nail colors by skin tone" },
+          { "slug": "christmas-nail-colors", "anchor_text": "christmas nail colors by skin tone" },
+          { "slug": "christmas-nails-for-older-women", "anchor_text": "christmas nail colors by skin tone" }
+        ]
+      },
+      "external_links": {
+        "note": "Links out to the site's existing skin-tone cluster for undertone fundamentals rather than repeating that content",
+        "links_to": [
+          { "url": "https://mirelleinspo.com/blog/skin-tone/nail-colors-for-fair-skin", "anchor_text": "nail colors for fair skin" },
+          { "url": "https://mirelleinspo.com/blog/skin-tone/nail-colors-for-dark-skin", "anchor_text": "nail colors for dark skin" },
+          { "url": "https://mirelleinspo.com/blog/skin-tone/skin-undertone-nail-color-guide", "anchor_text": "skin undertone nail color guide" }
+        ]
+      },
+      "status": "approved"
+    },
+
+    {
+      "post_id": 31,
+      "role": "spoke",
+      "title": "Matching Christmas Nails (Couples, Family & Besties)",
+      "slug": "matching-christmas-nails",
+      "primary_keyword": "matching christmas nails",
+      "intent": "inspirational",
+      "search_mode": "inspiration_mode",
+      "suggested_hook_trigger": "Trigger 3 — Specificity/Numbers",
+      "search_demand_signals": [
+        "Pinterest dedicated boards for besties, couples, and mommy-and-me variants",
+        "TikTok dedicated hashtags ('matching christmas nails for 2', 'matching mom and child christmas nails')"
+      ],
+      "why_included": "One cohesive search behavior spanning couples, friends, and family matching sets rather than three separate thin queries; covers all three angles in one well-supported post.",
+      "internal_links": {
+        "links_to": [
+          { "slug": "christmas-nail-ideas", "anchor_text": "christmas nail ideas", "type": "pillar" },
+          { "slug": "christmas-nails-for-kids", "anchor_text": "christmas nails for kids", "type": "spoke" },
+          { "slug": "simple-christmas-nails", "anchor_text": "simple christmas nail designs", "type": "spoke" },
+          { "slug": "mistletoe-nail-art-tutorial", "anchor_text": "mistletoe nail art for date night", "type": "spoke" }
+        ],
+        "receives_links_from": [
+          { "slug": "christmas-nail-ideas", "anchor_text": "matching christmas nails for couples and family" },
+          { "slug": "christmas-nails-for-kids", "anchor_text": "matching christmas nails for couples and family" },
+          { "slug": "mistletoe-nail-art-tutorial", "anchor_text": "matching christmas nails for couples and family" }
+        ]
+      },
+      "status": "approved"
+    }
+  ],
+
+  "keyword_ownership_registry": {
+    "description": "Master list of all primary keywords - one per post, no overlaps, includes existing site posts",
+    "entries": [
+      { "primary_keyword": "christmas nails", "owned_by_slug": "christmas-nail-ideas", "owned_by_title": "Christmas Nail Ideas", "source": "new post" },
+      { "primary_keyword": "almond christmas nails", "owned_by_slug": "almond-christmas-nails", "owned_by_title": "Almond Christmas Nails", "source": "new post" },
+      { "primary_keyword": "short christmas nails", "owned_by_slug": "short-christmas-nails", "owned_by_title": "Short Christmas Nails", "source": "new post" },
+      { "primary_keyword": "coffin christmas nails", "owned_by_slug": "coffin-christmas-nails", "owned_by_title": "Coffin Christmas Nails", "source": "new post" },
+      { "primary_keyword": "french tip christmas nails", "owned_by_slug": "french-tip-christmas-nails", "owned_by_title": "French Tip Christmas Nails", "source": "new post" },
+      { "primary_keyword": "candy cane nail designs", "owned_by_slug": "candy-cane-nails", "owned_by_title": "Candy Cane Nails", "source": "new post" },
+      { "primary_keyword": "plaid christmas nails", "owned_by_slug": "plaid-christmas-nails", "owned_by_title": "Plaid Christmas Nails", "source": "new post" },
+      { "primary_keyword": "reindeer nail designs", "owned_by_slug": "reindeer-nails", "owned_by_title": "Reindeer Nails", "source": "new post" },
+      { "primary_keyword": "gingerbread santa gnome nails", "owned_by_slug": "christmas-character-nails", "owned_by_title": "Christmas Character Nails", "source": "new post" },
+      { "primary_keyword": "christmas wreath nail art", "owned_by_slug": "christmas-wreath-nails", "owned_by_title": "Christmas Wreath Nails", "source": "new post" },
+      { "primary_keyword": "red christmas nails", "owned_by_slug": "red-christmas-nails", "owned_by_title": "Red Christmas Nails", "source": "new post" },
+      { "primary_keyword": "green christmas nails", "owned_by_slug": "green-christmas-nails", "owned_by_title": "Green Christmas Nails", "source": "new post" },
+      { "primary_keyword": "pink christmas nails", "owned_by_slug": "pink-christmas-nails", "owned_by_title": "Pink Christmas Nails", "source": "new post" },
+      { "primary_keyword": "gold christmas nails", "owned_by_slug": "gold-christmas-nails", "owned_by_title": "Gold Christmas Nails", "source": "new post" },
+      { "primary_keyword": "blue christmas nails", "owned_by_slug": "blue-christmas-nails", "owned_by_title": "Blue Christmas Nails", "source": "new post" },
+      { "primary_keyword": "non-traditional christmas nail colors", "owned_by_slug": "christmas-nails-not-red", "owned_by_title": "Christmas Nails That Aren't Red", "source": "new post" },
+      { "primary_keyword": "christmas nail colors", "owned_by_slug": "christmas-nail-colors", "owned_by_title": "Christmas Nail Colors (Best Shades Guide)", "source": "new post" },
+      { "primary_keyword": "how to do christmas nail art at home", "owned_by_slug": "how-to-christmas-nail-art-at-home", "owned_by_title": "How to Do Christmas Nail Art at Home", "source": "new post" },
+      { "primary_keyword": "christmas tree nail art tutorial", "owned_by_slug": "christmas-tree-nail-art-tutorial", "owned_by_title": "How to Paint Christmas Tree Nail Art", "source": "new post" },
+      { "primary_keyword": "reindeer nail art tutorial", "owned_by_slug": "reindeer-nail-art-tutorial", "owned_by_title": "How to Paint Reindeer Nail Art", "source": "new post" },
+      { "primary_keyword": "santa nail art tutorial", "owned_by_slug": "santa-nail-art-tutorial", "owned_by_title": "How to Paint Santa Nail Art", "source": "new post" },
+      { "primary_keyword": "gingerbread man nail art tutorial", "owned_by_slug": "gingerbread-man-nail-art-tutorial", "owned_by_title": "How to Paint Gingerbread Man Nail Art", "source": "new post" },
+      { "primary_keyword": "gnome nail art tutorial", "owned_by_slug": "gnome-nail-art-tutorial", "owned_by_title": "How to Paint Gnome Nail Art", "source": "new post" },
+      { "primary_keyword": "mistletoe nail art tutorial", "owned_by_slug": "mistletoe-nail-art-tutorial", "owned_by_title": "How to Paint Mistletoe Nail Art", "source": "new post" },
+      { "primary_keyword": "old money christmas nails", "owned_by_slug": "old-money-christmas-nails", "owned_by_title": "Old Money Christmas Nails", "source": "new post" },
+      { "primary_keyword": "christmas nail trends 2026", "owned_by_slug": "christmas-nail-trends-2026", "owned_by_title": "Christmas Nail Trends 2026", "source": "new post" },
+      { "primary_keyword": "christmas nails for kids", "owned_by_slug": "christmas-nails-for-kids", "owned_by_title": "Christmas Nails for Kids", "source": "new post" },
+      { "primary_keyword": "simple christmas nails", "owned_by_slug": "simple-christmas-nails", "owned_by_title": "Simple/Easy Christmas Nails", "source": "new post" },
+      { "primary_keyword": "christmas nails for older women", "owned_by_slug": "christmas-nails-for-older-women", "owned_by_title": "Christmas Nails for Older Women", "source": "new post" },
+      { "primary_keyword": "christmas nail colors for skin tone", "owned_by_slug": "christmas-nail-colors-skin-tone", "owned_by_title": "Christmas Nail Colors by Skin Tone", "source": "new post" },
+      { "primary_keyword": "matching christmas nails", "owned_by_slug": "matching-christmas-nails", "owned_by_title": "Matching Christmas Nails (Couples, Family & Besties)", "source": "new post" },
+      { "primary_keyword": "holiday nails (vacation meaning)", "owned_by_slug": "holiday-nails", "owned_by_title": "Holiday Nails (existing)", "source": "existing site post" },
+      { "primary_keyword": "old money nails fall winter", "owned_by_slug": "old-money-nails-fall-winter", "owned_by_title": "Old Money Nails Fall/Winter (existing)", "source": "existing site post" },
+      { "primary_keyword": "nails for older women", "owned_by_slug": "nails-for-older-women", "owned_by_title": "Nails for Older Women (existing)", "source": "existing site post" },
+      { "primary_keyword": "nail colors for fair skin", "owned_by_slug": "nail-colors-for-fair-skin", "owned_by_title": "Nail Colors for Fair Skin (existing)", "source": "existing site post" }
+    ]
+  },
+
+  "merged_posts_log": [
+    {
+      "original_topics": ["gingerbread man nails (inspo)", "santa nails (inspo)", "gnome nails (inspo)", "elf nails (inspo)"],
+      "merged_into": "Christmas Character Nails",
+      "reason": "None individually validated strong enough standalone inspirational demand beyond the combined roundup, though each validated strongly enough for its own dedicated tutorial spoke."
+    },
+    {
+      "original_topics": ["burgundy christmas nails"],
+      "merged_into": "Christmas Nails That Aren't Red",
+      "reason": "Distinct query pattern from single-color inspiration pages; burgundy is one of several alternatives featured within the non-traditional-colors decision-mode post rather than a standalone search term."
+    },
+    {
+      "original_topics": ["couples christmas nails", "family christmas nails", "mommy and me christmas nails", "bestie christmas nails"],
+      "merged_into": "Matching Christmas Nails (Couples, Family & Besties)",
+      "reason": "One cohesive 'matching nails' search behavior across Pinterest and TikTok spans all these relationship angles rather than representing separate distinct queries."
+    }
+  ],
+
+  "killed_posts_log": [
+    {
+      "topic": "Snowman Nails (inspirational + tutorial)",
+      "reason": "User-directed removal - snowman is a season-driven (winter) motif, not Christmas-specific; reserved for the future Winter Nails cluster."
+    },
+    {
+      "topic": "Snowflake Nails (inspirational + tutorial)",
+      "reason": "User-directed removal - snowflake is a season-driven (winter) motif, not Christmas-specific; reserved for the future Winter Nails cluster."
+    },
+    {
+      "topic": "Holly/berries nail art (standalone)",
+      "reason": "No demand - appears only as a component within broader roundups; no dedicated standalone article or tutorial found anywhere in research."
+    },
+    {
+      "topic": "Ornaments/bauble nail art (standalone)",
+      "reason": "No demand - appears only as a component within broader roundups; no dedicated standalone article or tutorial found."
+    },
+    {
+      "topic": "Christmas lights nail art (standalone)",
+      "reason": "No demand - appears only as a component within broader roundups; no dedicated standalone article or tutorial found."
+    },
+    {
+      "topic": "Bow nail art (standalone, Christmas-specific)",
+      "reason": "No demand - appears only as a component within broader roundups and general bow-nail content (not Christmas-exclusive); no dedicated standalone Christmas-specific article found."
+    },
+    {
+      "topic": "How long do holiday-season manicures last (press-on vs gel vs acrylic)",
+      "reason": "User directive - overlaps existing site comparison content (gel-nails-cost, dip-vs-gel); reserved for future New Year's Eve/Holiday Party cluster to keep this cluster strictly Christmas-only."
+    },
+    {
+      "topic": "UK vs US Christmas nail trends (geographic)",
+      "reason": "No demand - research found general UK vs US Christmas culture/tradition content, but no distinct geographic nail-art search behavior; audience_context's Tier-1 English-language coverage is already served by existing posts."
+    },
+    {
+      "topic": "Christmas nails for men / nail designs for men (Christmas-specific)",
+      "reason": "Not researched in this pass - no signal surfaced during demand discovery; can be revisited in a future cluster refresh if requested."
+    }
+  ]
+}
