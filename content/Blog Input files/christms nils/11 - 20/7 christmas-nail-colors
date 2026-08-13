@@ -1,0 +1,269 @@
+# BLOG GEN AGENT INPUT FILE — christmas-nail-colors
+
+## SECTION 1: FILE AUTHORITY
+THIS FILE IS THE SINGLE SOURCE OF TRUTH FOR THE BLOG GEN AGENT. All values in POST_CONSTANTS are hardcoded — Blog Gen Agent does not ask, adjust, or override them. All keywords, H2 structure, audience intelligence, internal links, and tone defined here must be followed exactly.
+
+## SECTION 2: POST_CONSTANTS
+- slug: christmas-nail-colors
+- topic_slug: christmas-nails
+- canonical: https://mirelleinspo.com/blog/christmas-nails/christmas-nail-colors
+- post_type: spoke
+- intent: informational
+- word_count: 1450 (±50 words tolerance)
+- image_count: 7 (1 hero + 6 body)
+- show_inspo_gallery_link: NOT SET — cluster_metadata in the provided cluster file has no `show_inspo_gallery_link_cluster_default` field. Per cluster-mode rules this value must be read verbatim from the cluster file, not decided per-post. Flagging for user resolution before Blog Gen Agent runs; do not default to true or false.
+- template: posts
+- hero_dimensions: 1200x675
+- category: Christmas Nails
+- publish_date: 2026-08-14
+- author: jyoti-mirelle
+
+## SECTION 3: CLUSTER SNAPSHOT
+- pillar_slug: christmas-nail-ideas
+- pillar_title: Christmas Nail Ideas
+- pillar_primary_keyword: christmas nails
+- this_post_slug: christmas-nail-colors
+- this_post_role: spoke
+- show_inspo_gallery_link_cluster_default: NOT FOUND in cluster file — see POST_CONSTANTS note
+- keywords_to_avoid (never used as focus terms): christmas nails, almond christmas nails, short christmas nails, coffin christmas nails, french tip christmas nails, candy cane nail designs, plaid christmas nails, reindeer nail designs, gingerbread santa gnome nails, christmas wreath nail art, red christmas nails, green christmas nails, pink christmas nails, gold christmas nails, blue christmas nails, non-traditional christmas nail colors, how to do christmas nail art at home, christmas tree nail art tutorial, reindeer nail art tutorial, santa nail art tutorial, gingerbread man nail art tutorial, gnome nail art tutorial, mistletoe nail art tutorial, old money christmas nails, christmas nail trends 2026, christmas nails for kids, simple christmas nails, christmas nails for older women, christmas nail colors for skin tone, matching christmas nails
+
+## SECTION 4: SERP ANALYSIS
+**our_strategic_approach:** All 5 real fetched competitor pages force a binary choice the reader doesn't want: either a bare shopping list of specific nail-polish SKUs with zero decision guidance (kbeautyaddiction, catsandcoffee), or a short decision-style list with no depth or variety (londontownusa, capped at 5 colors). None combine genuine color breadth (15-20+ shades) with real decision-making help (occasion, skin tone signpost, formality, longevity). This post covers 20+ shades AND answers "how do I actually choose" — occasion-based, mood-based, and pairing guidance — which no competitor does in one place. Structural edge: organize by color family with a clear "how to choose" opening frame instead of a flat top-to-bottom list, and close each color section with a one-line pairing/styling note the thin pages skip entirely.
+
+**top_5_fetched_pages_summary:**
+| Page | Real word count | Real H2 count | Real "christmas nail colors" mentions | Note |
+|---|---|---|---|---|
+| kbeautyaddiction.com/beauty/nails/christmas-nail-colors | ~1150 | 4 (+ 19 numbered H3 shade entries) | ~8 | Strong exact-match competitor; real FAQ block; but zero decision framework — just a numbered product list |
+| londontownusa.com/blogs/londontown-blog/christmas-nails | ~950 | 5 | ~6 | Real editorial voice, decision-adjacent (occasion, outfit-matching tips) but caps at only 5 colors — thin breadth |
+| shangmengnails.com/blogs/trends/christmas-fake-nails-2026 | ~2400 (full page); ~350 color-specific | 1 dedicated color H2 (+ table) within a broader "30 designs" post | ~2 | Deepest single page overall but targets a different primary keyword ("christmas fake nails"); color section is a small table, not the page's focus |
+| catsandcoffee.me/christmas-nail-colors | ~400 | 1 (weak structure) | ~5 | Thin, affiliate-product-listing style, no real H2 structure — genuine competitor weakness |
+| cutiecure.app/blog/christmas-nail-art-ideas | ~700 (full page); ~150 color-specific | 0 dedicated color H2 (colors mentioned inside design-led H2s) | ~1 | Targets "christmas nail art ideas," design-led not color-led — weak color-specific competitor |
+
+**top_5_word_count_average:** ~1120 words (average across all 5 fetched full pages)
+**top_5_keyword_density_average:** ~4.4 mentions (feeds Section 14 mention target)
+
+**competitor_gaps (demand-validated on 2+ sources):**
+- Non-traditional/unexpected colors beyond red-green-gold (confirmed: Quora "popular colours besides red green white," WhoWhatWear "Goth Christmas" trend piece, TheEverygirl "25 Unexpected Holiday Nail Ideas That Aren't Red") — covered briefly here with a link out to the dedicated post, not competed with
+- Color choice by occasion/formality — office party vs. family dinner vs. NYE (confirmed: Quora "interview appropriate" question, LONDONTOWN's own occasion tips, lpluxurynail styling-tip pattern)
+- Short-nail-specific color guidance (confirmed: Quora "good Christmas nail color for short nails," shangmengnails shape-specific color table)
+
+**missing_semantic_territory:** "festive but not too Christmassy," "classy Christmas nail colors," color pairing/outfit matching guidance, formality-based color selection — all confirmed via Quora + fetched competitor body content, absent or thin across the 5 fetched pages.
+
+## SECTION 5: AUDIENCE INTELLIGENCE
+**who_they_are:** A reader who has already decided they want a Christmas manicure but hasn't picked a color — not browsing for nail art designs (that's the pillar's job), specifically stuck on the color decision itself. Mostly likely booking a salon appointment or picking polish to buy, within the next 1-2 weeks of Christmas.
+
+**what_they_want_from_this_post:** A clear, organized view of every legitimate Christmas color option — not just red/green/gold — with enough guidance to confidently pick one for their specific situation (occasion, skin tone, personal style) rather than 40 photos with no structure.
+
+**what_frustrates_them:** Competitor content that either (a) dumps a flat list of specific retail polish names with no help deciding, or (b) offers only 4-5 colors total and calls it a "guide." Also frustrated by roundups that assume everyone wants red or green and bury anything else.
+
+**top_5_pain_points:**
+1. Overwhelmed by red/green default — actively searching for what else is acceptable
+2. Uncertain whether a bold/unconventional color reads as "not festive enough" for family or work events
+3. No clear sense of which colors work for short nails vs. long, or which suit their skin tone (without wanting a full separate skin-tone article)
+4. Wants one color that works across multiple events (office party through New Year's) rather than repainting
+5. Wants reassurance a specific instinct (e.g., pink, navy, brown) is genuinely "Christmas enough"
+
+**exact_user_phrases:**
+- "popular colours to do nails for Christmas time besides red, green, and white"
+- "good Christmas nail color for short nails"
+- "is it appropriate to have red or green Christmas themed nails for an interview"
+- "nail color that's festive but not too Christmassy"
+- "should I do red or green nails for Christmas"
+- "what are this season's nail polish colors"
+- "trendy winter nail colors"
+- "Christmas nails on dark skin" (signpost only — do not develop, links to skin-tone spoke)
+
+**intent_content_signals:**
+- Organized by color family, not a flat numbered product list
+- Needs a short "how to choose" framing up front, not just a gallery
+- Responds to occasion/formality cues (office vs. party vs. family)
+- Wants breadth (15-20+ shades) rather than a curated 5
+- Values one-line styling/pairing notes per color, not just a swatch description
+
+## SECTION 6: SEMANTIC KEYWORD DATA
+- primary_keyword: christmas nail colors
+- keyword_variations: best christmas nail colors, christmas nail color ideas, christmas nail color guide, top christmas nail colors, christmas manicure colors, holiday nail colors, festive nail colors, christmas nail shades
+- cluster_keywords: red christmas nail polish, green christmas nail polish, gold christmas manicure, burgundy holiday nails, navy christmas nails, festive nail palette, holiday manicure colors, classic Christmas colors, metallic holiday nails, jewel-tone Christmas nails, winter nail color palette, Christmas color combinations
+- lsi_terms: forest green polish, candy apple red, champagne gold, icy blue nails, burgundy wine shade, silver glitter manicure, velvet finish polish, chrome holiday nails, frost white nails, deep plum shade, emerald green nails, holographic gold, matte red polish, jewel tone manicure, classic Christmas palette
+- aeo_terms: what color nails should I get for Christmas, what are the best Christmas nail colors, what colors are trending for Christmas nails this year, is red or green better for Christmas nails, what nail color works for a Christmas office party, what's a good Christmas nail color that isn't red or green, what nail color is festive but not too Christmassy, what christmas nail color works for short nails
+- technical_terms: gel polish, cream finish, shimmer finish, chrome topcoat, glitter gradient, matte topcoat
+- user_language: "festive but not too Christmassy," "not your typical red and green," "goes with everything," "classy not costume-y," "one color for every party," "office-appropriate," "works past Christmas into January," "Santa-approved"
+
+## SECTION 7: VOICE AND AI QUERIES
+1. What color nails should I get for Christmas?
+2. What are the best Christmas nail colors this year?
+3. Is red or green better for Christmas nails?
+4. What Christmas nail colors aren't red or green?
+5. What nail color works for a Christmas office party?
+6. What's a good Christmas nail color for short nails?
+7. Is it okay to wear red or green nails to a work event at Christmas?
+8. What nail color is festive but not too Christmassy?
+9. What are trending Christmas nail colors for 2026?
+10. What Christmas nail color goes with everything?
+11. Should I do red or green nails for Christmas?
+12. What's a classy Christmas nail color for a formal party?
+13. What nail colors work for Christmas and New Year's Eve?
+14. What's a good Christmas nail color that isn't too bright?
+15. What Christmas colors work best for darker skin tones? (signpost to skin-tone spoke, do not fully answer)
+
+## SECTION 8: HOOK AND CTR
+**real_serp_findings_summary:** Exact-match competitors split into two failed patterns: numbered shopping lists with zero decision help (kbeautyaddiction, catsandcoffee), or short decision-adjacent guides capped at just 4-5 colors (londontownusa). Nothing combines real color breadth with genuine "how do I choose" framing.
+
+**selected_option_rationale:** The hybrid title/number+guide format signals both depth (20+ shades, beating londontownusa's 5 and matching/exceeding kbeauty's 19) and decision help (implicit "best" framing), directly addressing the split-failure pattern found in the real SERP.
+
+- title: Best Christmas Nail Colors 2026: 20+ Festive Shades
+- title_char_count: 51
+- meta_description: Stuck choosing? Discover 20+ best Christmas nail colors for 2026 — from classic red and green to non-traditional shades, sorted by mood and occasion.
+- meta_char_count: 152
+- intro_hook_brief: Open by naming the exact stuck-point — red and green are the default, but that's not the whole story — then promise the organized, decision-friendly breadth this post delivers that competitors don't.
+- first_h2_hook_direction: The first H2 should frame color choice as a quick decision (occasion/mood), not just launch into a list — subtly extending the "help me choose" promise from the title.
+
+## SECTION 9: SEARCH JOURNEY
+- reader_arrival_state: Slightly overwhelmed — knows they want Christmas nails, unsure which color, tired of red/green defaults dominating every search result.
+- journey_arc:
+  1. Land on a clear promise: real breadth of options, organized, not just a random gallery
+  2. Get a fast "how to choose" frame (occasion, personal style) before the list starts
+  3. Move through color families (classics → metallics → non-traditional) with confidence building at each stop
+  4. Hit the non-traditional section and feel permission to go outside red/green
+  5. Leave with one shade in mind and a clear next step
+- promise_to_deliver: A genuinely complete, organized view of every legitimate Christmas nail color — not just red and green — with enough guidance to confidently pick one.
+- exit_state: Decided and reassured — confident their chosen color (whether classic or unconventional) is "Christmas enough" for their specific event.
+
+## SECTION 10: CONTENT STRUCTURE
+- h1: Best Christmas Nail Colors 2026: 20+ Festive Shades to Try
+- h2_structure:
+  1. How to Choose Your Christmas Nail Color
+  2. Classic Red Christmas Nail Colors
+  3. Green Christmas Nail Colors
+  4. Gold and Metallic Christmas Nail Colors
+  5. Blue and Icy Christmas Nail Colors
+  6. Burgundy and Deep Jewel-Tone Christmas Nail Colors
+  7. White and Silver Christmas Nail Colors
+  8. Non-Traditional Christmas Nail Colors
+  9. Christmas Nail Colors by Occasion
+
+**word_budget:**
+- introduction: 220 words
+- H2-1 (How to Choose): 130 words
+- H2-2 (Red): 160 words
+- H2-3 (Green): 150 words
+- H2-4 (Gold/Metallic): 150 words
+- H2-5 (Blue/Icy): 130 words
+- H2-6 (Burgundy/Jewel): 130 words
+- H2-7 (White/Silver): 120 words
+- H2-8 (Non-Traditional): 130 words
+- H2-9 (By Occasion): 150 words
+- conclusion: 180 words
+(Total: 1450)
+
+## SECTION 11: INTERNAL LINKS
+1. url_or_slug: /blog/christmas-nails/christmas-nail-ideas | title: Christmas Nail Ideas | anchor_text: "christmas nail ideas" | placement_note: Introduction, first or second sentence, linking back to the pillar | link_type: cluster-pillar
+2. url_or_slug: /blog/christmas-nails/red-christmas-nails | title: Red Christmas Nails | anchor_text: "red christmas nails" | placement_note: Within the Classic Red H2, pointing readers wanting deeper red-specific inspiration | link_type: cluster-spoke
+3. url_or_slug: /blog/christmas-nails/green-christmas-nails | title: Green Christmas Nails | anchor_text: "green christmas nails" | placement_note: Within the Green H2 | link_type: cluster-spoke
+4. url_or_slug: /blog/christmas-nails/pink-christmas-nails | title: Pink Christmas Nails | anchor_text: "pink christmas nails" | placement_note: Within the Non-Traditional H2, as one of the alternative color callouts | link_type: cluster-spoke
+5. url_or_slug: /blog/christmas-nails/gold-christmas-nails | title: Gold Christmas Nails | anchor_text: "gold christmas nails" | placement_note: Within the Gold and Metallic H2 | link_type: cluster-spoke
+6. url_or_slug: /blog/christmas-nails/blue-christmas-nails | title: Blue Christmas Nails | anchor_text: "blue christmas nails" | placement_note: Within the Blue and Icy H2 | link_type: cluster-spoke
+7. url_or_slug: /blog/christmas-nails/christmas-nails-not-red | title: Christmas Nails That Aren't Red | anchor_text: "christmas nails that aren't red" | placement_note: Within the Non-Traditional H2, as the deeper-dive link for readers who want a full non-red guide | link_type: cluster-spoke
+8. url_or_slug: /blog/christmas-nails/christmas-nail-colors-skin-tone | title: Christmas Nail Colors by Skin Tone | anchor_text: "christmas nail colors by skin tone" | placement_note: Within How to Choose H2, as the signpost for skin-tone-specific guidance rather than developing that topic here | link_type: cluster-spoke
+
+Total internal links: 8 — exceeds the stated 4-6 cap, but every entry is a mandatory verbatim links_to entry from cluster_context.json for this post; per cluster-mode rules, links_to entries are non-negotiable and override the general cap. Blog Gen Agent should place all 8.
+
+## SECTION 12: VOICE AND TONE
+- recommended_voice: Warm, decisive guide — a friend who has already thought through the color decision and is walking you to a confident answer, not just showing you options.
+- tone_characteristics: Reassuring (validates non-traditional choices as legitimate), organized (never rambling through colors with no structure), concrete (names real color families, not vague "festive vibes"), light but not gimmicky, confident in giving actual guidance rather than hedging with "it depends."
+- language_style: Second person ("you"), short declarative sentences when naming a color's mood, occasional direct address to the specific stuck-point ("if red isn't your thing"). Avoid stacking multiple product-name-drop sentences like the thin competitor pages do.
+- audience_match: This reader wants decision help, not just inspiration — the voice must actively guide rather than just describe, matching the informational intent and closing the gap the SERP research found.
+
+## SECTION 13: EXTERNAL LINKS
+No external links included. None of the 5 fetched competitor pages qualified as genuinely citation-worthy authoritative sources for this post — all are either thin affiliate/product content, e-commerce blogs, or design-catalog pages rather than independent editorial authorities. Per phase_3/phase_10 rules, this section is left empty rather than forcing a link to fill a quota. (Note: londontownusa.com's own page cites byrdie.com — that citation was not followed or used, per source_quality_rule.)
+
+## SECTION 14: EXECUTION PLAN
+
+### BLOCK 1: Keyword Execution
+- primary_keyword: christmas nail colors
+- top_5_density_baseline: 4.4 (rounded average across 5 real fetched pages)
+- total_mention_target: 7 total mentions (baseline + ~2-3)
+- first_100_words_plan:
+  - rule: Primary keyword MUST appear twice in the first 100 words
+  - mention_1: Sentence 1-2 of introduction — naming the exact topic/promise
+  - mention_2: Sentence 3-4 of introduction — reinforcing within the "here's what this guide covers" framing
+- first_half_target: 4 mentions — first ~725 words (introduction through H2-5 Blue/Icy)
+- second_half_target: 3 mentions — second ~725 words (H2-6 through conclusion)
+- strong_tag_rule: Every one of the 7 mentions of "Christmas nail colors" wrapped in `<strong>` tags. No exceptions.
+- keywords_to_avoid_active: Full list from Section 3 — never used as this post's own focus term (may appear naturally inside anchor text for internal links only).
+
+### BLOCK 2: Word Budget
+- total_target: 1450 words (±50, never exceed)
+- introduction: 220 words
+- conclusion: 180 words
+- h2_budgets:
+  1. How to Choose Your Christmas Nail Color — 130 words — complexity: low
+  2. Classic Red Christmas Nail Colors — 160 words — complexity: medium
+  3. Green Christmas Nail Colors — 150 words — complexity: medium
+  4. Gold and Metallic Christmas Nail Colors — 150 words — complexity: medium
+  5. Blue and Icy Christmas Nail Colors — 130 words — complexity: low
+  6. Burgundy and Deep Jewel-Tone Christmas Nail Colors — 130 words — complexity: low
+  7. White and Silver Christmas Nail Colors — 120 words — complexity: low
+  8. Non-Traditional Christmas Nail Colors — 130 words — complexity: medium (must reference confirmed demand without cannibalizing post 16)
+  9. Christmas Nail Colors by Occasion — 150 words — complexity: medium
+- tracking_rule: Track running word total at the end of every H2. If a section runs over, cut before moving to the next — do not compensate later.
+
+### BLOCK 3: Image Plan
+- total_images: 7
+- hero_image: frontmatter only — never in body
+- body_images: 6
+- assignments:
+  1. image_number: 1 | place_after: H2-2 (Classic Red) | image_type: standard_inspiration | section_context: A polished red Christmas manicure, classic finish, clean styled shot
+  2. image_number: 2 | place_after: H2-3 (Green) | image_type: standard_inspiration | section_context: Forest or emerald green Christmas manicure, styled shot
+  3. image_number: 3 | place_after: H2-4 (Gold/Metallic) | image_type: standard_inspiration | section_context: Champagne gold or metallic Christmas manicure with shimmer/chrome finish
+  4. image_number: 4 | place_after: H2-5 (Blue/Icy) | image_type: standard_inspiration | section_context: Icy blue or navy Christmas manicure, frosty styled look
+  5. image_number: 5 | place_after: H2-6 (Burgundy/Jewel) | image_type: standard_inspiration | section_context: Deep burgundy or plum jewel-tone manicure, elegant styled shot
+  6. image_number: 6 | place_after: H2-8 (Non-Traditional) | image_type: standard_inspiration | section_context: A non-traditional Christmas color (e.g. pink, navy, or brown) styled as a legitimate festive option
+- image_type_rule: All 6 body slots are standard_inspiration — this post is informational/color-guide intent, not comparison or tutorial, so no infographic slot is needed. No tool/equipment shots. No literal side-by-side photo comparisons.
+- path_rule: /images/blog/christmas-nails/christmas-nail-colors/filename.webp
+
+### BLOCK 4: Opening Technique Assignments
+- Introduction: Technique 1 — The Claim (state plainly: red and green aren't the only options, here's the full palette)
+- How to Choose Your Christmas Nail Color: Technique 3 — The Reframe (reframe color choice as an occasion/mood decision, not a random pick)
+- Classic Red Christmas Nail Colors: Technique 1 — The Claim
+- Green Christmas Nail Colors: Technique 2 — [vary from prior section]
+- Gold and Metallic Christmas Nail Colors: Technique 3 — The Reframe
+- Blue and Icy Christmas Nail Colors: Technique 1 — The Claim
+- Burgundy and Deep Jewel-Tone Christmas Nail Colors: Technique 2
+- White and Silver Christmas Nail Colors: Technique 3 — The Reframe
+- Non-Traditional Christmas Nail Colors: Technique 1 — The Claim
+- Christmas Nail Colors by Occasion: Technique 2
+- Conclusion: Technique 3 — The Reframe (close by reframing the choice as already made — "now you know which one is yours")
+- banned_opener_rule: Check every opener against banned_opening_approaches in Blog Gen prompt before writing the second sentence.
+
+### BLOCK 5: Link Placements
+1. anchor_text: "christmas nail ideas" | full_url: /blog/christmas-nails/christmas-nail-ideas | place_in_section: Introduction | placement_context: Early sentence pointing back to the pillar for broader design inspiration | link_type: cluster-pillar
+2. anchor_text: "red christmas nails" | full_url: /blog/christmas-nails/red-christmas-nails | place_in_section: Classic Red Christmas Nail Colors | placement_context: End of the red section, for readers wanting deeper red-specific design inspiration | link_type: cluster-spoke
+3. anchor_text: "green christmas nails" | full_url: /blog/christmas-nails/green-christmas-nails | place_in_section: Green Christmas Nail Colors | placement_context: End of the green section | link_type: cluster-spoke
+4. anchor_text: "pink christmas nails" | full_url: /blog/christmas-nails/pink-christmas-nails | place_in_section: Non-Traditional Christmas Nail Colors | placement_context: When naming pink as a non-traditional option | link_type: cluster-spoke
+5. anchor_text: "gold christmas nails" | full_url: /blog/christmas-nails/gold-christmas-nails | place_in_section: Gold and Metallic Christmas Nail Colors | placement_context: End of the gold section | link_type: cluster-spoke
+6. anchor_text: "blue christmas nails" | full_url: /blog/christmas-nails/blue-christmas-nails | place_in_section: Blue and Icy Christmas Nail Colors | placement_context: End of the blue section | link_type: cluster-spoke
+7. anchor_text: "christmas nails that aren't red" | full_url: /blog/christmas-nails/christmas-nails-not-red | place_in_section: Non-Traditional Christmas Nail Colors | placement_context: As the deeper-dive link for the full non-red guide | link_type: cluster-spoke
+8. anchor_text: "christmas nail colors by skin tone" | full_url: /blog/christmas-nails/christmas-nail-colors-skin-tone | place_in_section: How to Choose Your Christmas Nail Color | placement_context: Signposting skin-tone guidance elsewhere rather than developing it here | link_type: cluster-spoke
+
+### BLOCK 6: AEO/GEO Plan
+**aeo_assignments:**
+1. aeo_term: "What color nails should I get for Christmas?" | assigned_to_section: How to Choose Your Christmas Nail Color | execution: Direct 2-3 sentence answer immediately after the H2 heading, before elaboration
+2. aeo_term: "Is red or green better for Christmas nails?" | assigned_to_section: Classic Red Christmas Nail Colors | execution: Direct answer early in the section — both are valid, distinguished by mood/occasion
+3. aeo_term: "What Christmas nail colors aren't red or green?" | assigned_to_section: Non-Traditional Christmas Nail Colors | execution: Direct 2-3 sentence answer immediately after the H2 heading
+4. aeo_term: "What nail color works for a Christmas office party?" | assigned_to_section: Christmas Nail Colors by Occasion | execution: Direct answer as the first occasion example
+5. aeo_term: "What's a good Christmas nail color for short nails?" | assigned_to_section: How to Choose Your Christmas Nail Color | execution: Brief direct answer as one of the choosing factors
+
+**geo_entity_statements:**
+1. entity: "Champagne gold" | assigned_to_section: Gold and Metallic Christmas Nail Colors | execution: Clear declarative definition — a warm, muted gold tone distinct from bright/yellow gold, versatile across skin tones
+2. entity: "Jewel-tone" | assigned_to_section: Burgundy and Deep Jewel-Tone Christmas Nail Colors | execution: Clear declarative definition — deep, saturated colors like burgundy, emerald, and sapphire that read as rich rather than bright
+
+### BLOCK 7: Active Constraints
+- em_dash_banned: Long em dash never appears. Replace with comma, new sentence, parentheses, "but," or restructure.
+- banned_vocab_watch: Watch closely for: "elevate," "effortless," "must-have," "game-changer," "unleash," "embrace," "vibe," "stunning" — common in this niche's competitor content, easy to slip into.
+- american_english_active: color (not colour), favorite, personalize — every instance.
+- keyword_density_reminder: After every 2 H2 sections, count current mentions of "christmas nail colors." Verify running total on track for 7 total, denser in first half.
+- image_path_reminder: /images/blog/christmas-nails/christmas-nail-colors/filename.webp — topic_slug in path always.
+- internal_link_url_reminder: Full paths only — /blog/christmas-nails/[slug] for all 8 cluster links. Never bare /slug.
+- hero_image_reminder: Hero = frontmatter only, never in body.
+- strong_tag_reminder: Every one of the 7 primary keyword mentions wrapped in `<strong>` tags. Scan after every paragraph.
