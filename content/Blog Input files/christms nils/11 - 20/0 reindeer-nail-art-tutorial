@@ -1,0 +1,257 @@
+# BLOG GEN AGENT INPUT FILE — reindeer-nail-art-tutorial
+
+## SECTION 1: FILE AUTHORITY
+THIS FILE IS THE SINGLE SOURCE OF TRUTH FOR THE BLOG GEN AGENT. All values in POST_CONSTANTS are hardcoded — Blog Gen Agent does not ask, adjust, or override them. All keywords, H2 structure, audience intelligence, internal links, and tone defined here must be followed exactly.
+
+## SECTION 2: POST_CONSTANTS
+- slug: reindeer-nail-art-tutorial
+- topic_slug: christmas-nails
+- canonical: https://mirelleinspo.com/blog/christmas-nails/reindeer-nail-art-tutorial
+- post_type: spoke
+- intent: tutorial
+- word_count: 950 (±50 tolerance)
+- image_count: 4 (1 hero + 3 body — tutorial hard rule)
+- show_inspo_gallery_link: false (cluster default from cluster_context.json cluster_metadata — applied verbatim)
+- template: split-left (tutorial intent overrides role)
+- hero_dimensions: 800x800
+- category: Christmas Nails
+- publish_date: 2026-11-02
+- author: jyoti-mirelle
+
+## SECTION 3: CLUSTER SNAPSHOT
+- pillar_slug: christmas-nail-ideas
+- pillar_title: Christmas Nail Ideas
+- pillar_primary_keyword: christmas nails
+- this_post_slug: reindeer-nail-art-tutorial
+- this_post_role: spoke
+- show_inspo_gallery_link_cluster_default: false
+- keywords_to_avoid: christmas nails, almond christmas nails, short christmas nails, coffin christmas nails, french tip christmas nails, candy cane nail designs, plaid christmas nails, reindeer nail designs, gingerbread santa gnome nails, christmas wreath nail art, red christmas nails, green christmas nails, pink christmas nails, gold christmas nails, blue christmas nails, non-traditional christmas nail colors, christmas nail colors, how to do christmas nail art at home, christmas tree nail art tutorial, santa nail art tutorial, gingerbread man nail art tutorial, gnome nail art tutorial, mistletoe nail art tutorial, old money christmas nails, christmas nail trends 2026, christmas nails for kids, simple christmas nails, christmas nails for older women, christmas nail colors for skin tone, matching christmas nails, holiday nails (vacation meaning), old money nails fall winter, nails for older women, nail colors for fair skin
+
+## SECTION 4: SERP ANALYSIS
+**competitor_gaps** (demand-validated on 2+ sources):
+1. No-brush / dotting-tool-and-toothpick-only method as the CORE promise (not a footnote). Validated: ilovemypolish.com dotting-tool tutorial, L'Oréal Paris DIY dotting tool alternatives, Beautylish forum thread, thelittlecanvas.com — all independently confirm strong demand for a brush-free method, but none of the 5 fetched competitor pages make this the headline approach.
+2. Beginner-failure reassurance / "what if my first attempt looks bad" — validated on thelittlecanvas ("my first attempt turned out awful") and Beautylish forum (multiple beginners asking dotting-tool vs. brush). None of the 5 fetched pages address the fear of messing it up or offer a fix-mistakes tip.
+3. Gel/builder-gel version vs. regular polish version — validated on HONA (full gel/builder-gel tutorial) and Scratch Magazine (gel polish, professional/trade). Regular-polish pages (BTArtbox, Dollar Store Crafts, Nailbees) don't address gel readers at all, and gel pages don't address polish readers. A dual-method note is a real gap.
+
+**missing_semantic_territory:** "no nail art brush needed," "toothpick method," "beginner-friendly reindeer nails," "fix mistakes nail art," "how long does reindeer nail art take," "minimalist reindeer nails" (TikTok-validated simple/minimalist angle), "reindeer french tip" (kreafolk.com validated variant).
+
+**our_strategic_approach:** None of the 5 fetched competitor pages lead with a genuinely brush-free method — most assume a nail art brush is available, with dotting tools mentioned only as an aside. This post leads with the toothpick/dotting-tool method as the primary technique, explicitly removing the "I don't own the right tools" barrier that surfaced independently across three unrelated sources. Second, this post directly names and defuses the beginner fear ("my first attempt looked messy") that competitors never acknowledge, with a dedicated mistake-fixing step. Third, this post is the only one to structurally separate a regular-polish method from a gel-polish method in one place, serving both audiences competitors split across separate niche pages. Structural edge: fetched pages average under 4 real steps with no troubleshooting section — this post uses 6 numbered steps plus a fix-mistakes callout and FAQ, deeper than any single fetched page.
+
+**top_5_fetched_pages_summary:**
+1. btartboxnails.com/blogs/btartbox-official-guides/reindeer-nail-designs — ~950 words, 5 H2s, 1 keyword mention ("reindeer nail designs" variant, not exact phrase) — strong FAQ block and product tie-ins, but shallow 6-bullet tutorial with no troubleshooting.
+2. dollarstorecrafts.com/2014/12/tutorial-reindeer-nail-polish — ~430 words, 0 H2s (flat post), 0 exact keyword mentions — real 9-step numbered tutorial with supply list, dated (2014) but structurally solid.
+3. hona.us (Christmas Reindeer Nail Art Tutorial) — ~700 words, 0 H2s, 0 exact keyword mentions — video-transcript style, gel/builder-gel technique, strong brand authority but hard to follow as text-only steps.
+4. nailbees.com/easy-reindeer-nails — ~250 words, 0 H2s, 0 exact keyword mentions — thin 9-step list, casual blog voice, no troubleshooting or FAQ.
+5. scratchmagazine.co.uk/nail_art/rudolph-reindeer-nail-christmas-tutorial — ~150 words, 0 H2s, 0 exact keyword mentions — trade-press credibility (nail industry publication), gel-polish steps, very thin.
+
+**top_5_word_count_average:** 496 words
+**top_5_keyword_density_average:** 0 exact "reindeer nail art tutorial" mentions across all 5 fetched pages (all use variant phrasing like "reindeer nail designs" or no keyword phrase at all) — mention target below is deliberately built up from this near-zero baseline.
+**recommended_image_count_validation:** 4 images (hero + 3 body) matches tutorial pattern; fetched pages average 3-6 step photos, consistent with 3 body images covering base/face, antlers+eyes, finished look.
+
+## SECTION 5: AUDIENCE INTELLIGENCE
+**who_they_are:** A DIY-nail beginner or intermediate hobbyist, most without a dedicated nail art brush, searching in the run-up to Christmas for a specific, achievable design (not a general "Christmas nails" browse). They want to replicate ONE design correctly, not browse options.
+
+**what_they_want_from_this_post:** A clear, literal step order they can follow in real time, using tools they likely already own (toothpick, bobby pin, regular polish) rather than a shopping list of nail art supplies.
+
+**what_frustrates_them:** Tutorials that assume a nail art brush and detail brush are already owned; tutorials with only 3-4 vague steps and no mention of what happens if the first attempt looks bad; tutorials split entirely into gel-only or polish-only with no acknowledgment of the other method.
+
+**top_5_pain_points:**
+1. Doesn't own a nail art brush or dotting tool and doesn't want to buy one for one manicure.
+2. Worried the reindeer will look "off" or lopsided compared to Pinterest photos.
+3. Doesn't know if this design works with regular polish or requires gel/builder gel.
+4. Unsure how long the full look realistically takes before a party or event.
+5. Doesn't know how to clean up smudges without ruining the whole nail.
+
+**exact_user_phrases:**
+- "you don't have to be Michael Angelo to do good quick effective nail art"
+- "my first attempt turned out awful"
+- "I hit the pointer finger with the q-tip while cleaning them"
+- "for a beginner, the dotting tools are a good start"
+- "keep on dipping the end of a toothpick into a nail polish bottle"
+- "easy reindeer nails and its tutorial"
+- "minimalist reindeer nails tutorial"
+- "how she creates these deer inspired nails"
+- "cute & easy sparkle rudolph nails"
+- "diy christmas nails easy step by step"
+
+**intent_content_signals:**
+1. Numbered, literal steps (not narrative prose) — every fetched high-performing page used a numbered list.
+2. A supply list up front, using plain names (not brand-locked products) so readers can substitute what they own.
+3. At least one brush-free/toothpick alternative stated explicitly, not buried.
+4. A short troubleshooting or fix-mistakes note — validated real need, zero competitor coverage.
+5. Confirmation of both regular-polish and gel-polish paths in one place.
+
+## SECTION 6: SEMANTIC KEYWORD DATA
+- primary_keyword: reindeer nail art tutorial
+- keyword_variations: reindeer nail tutorial, how to do reindeer nail art, reindeer nail art step by step, reindeer nail design tutorial, easy reindeer nail tutorial, DIY reindeer nail art, reindeer manicure tutorial
+- cluster_keywords: reindeer nails, christmas nail art at home, DIY christmas nail art, rudolph nail art, easy christmas nail designs, nail art for beginners christmas, christmas nail tutorial, festive nail art tutorial, holiday nail art step by step, beginner nail art christmas
+- lsi_terms: dotting tool, nail art brush, toothpick nail art, base coat, top coat, brown nail polish, antlers, Rudolph nose, gel polish, builder gel, freehand nail art, nail art for beginners, French tip reindeer, minimalist reindeer nails, accent nail, glitter nail polish
+- aeo_terms: "How do you do reindeer nail art without a brush?", "What supplies do I need for reindeer nail art?", "How long does reindeer nail art take?", "Can I do reindeer nails with just regular polish?", "How do I fix a mistake in nail art?", "What's the easiest way to draw antlers on nails?", "Do I need gel polish for reindeer nail art?", "How do you make reindeer eyes on nails?"
+- technical_terms: dotting tool, base coat, top coat, gel polish, builder gel, detail brush, cuticle prep, nail art brush
+- user_language: "you don't have to be Michael Angelo," "my first attempt turned out awful," "a good start for a beginner," "easy reindeer nails," "cute reindeer inspo," "no fuss," "quick and easy," "step by step," "anyone can do this," "at home"
+
+## SECTION 7: VOICE AND AI QUERIES
+1. How do I do reindeer nail art without owning a nail art brush?
+2. What household items can I use instead of a dotting tool for nail art?
+3. What supplies do I need to do reindeer nail art at home?
+4. How long does a full set of reindeer nail art take?
+5. Can I do reindeer nail art with regular nail polish, or do I need gel?
+6. What's the easiest way to draw reindeer antlers on nails?
+7. How do you make the reindeer's nose stand out on the nail?
+8. What do I do if I mess up while painting nail art?
+9. How do I clean up smudged nail polish without ruining the design?
+10. Is reindeer nail art hard to do for a beginner?
+11. What colors do I need for reindeer nail art?
+12. Can kids do reindeer nail art too?
+13. How do I make reindeer nails look neat and not messy?
+14. What's a simple way to add glitter to reindeer nail art?
+15. Do I need a top coat for reindeer nail art to last?
+
+## SECTION 8: HOOK AND CTR
+**real_serp_findings_summary:** The 5 fetched competitor titles cluster around blogger-name-led or generic "Tutorial: [Topic]" labels (e.g. "Reindeer Nail Art Tutorial | Samantha Beauty," "Tutorial: Reindeer Nail Art"), or roundup-style titles ("Best Reindeer Nail Designs to Try This Christmas Season"). None address the beginner's fear of getting it wrong or promise a brush-free method, despite that pain point surfacing independently across four unrelated sources in audience research.
+
+**selected_option_rationale:** "Reindeer Nail Art Tutorial Anyone Can Do at Home" front-loads the exact primary keyword phrase in the first four words, then directly answers the dominant unmet audience fear (not having the right tools/skill) with "anyone can do" — a promise no fetched competitor title makes.
+
+- title: Reindeer Nail Art Tutorial Anyone Can Do at Home
+- title_char_count: 48
+- meta_description: Never held a nail art brush? This reindeer nail art tutorial uses a toothpick and dotting tool, so anyone can nail Rudolph at home.
+- meta_char_count: 131
+- intro_hook_brief: Open by naming the exact fear the reader has walking in — that they'll mess it up or that they need supplies they don't own — then immediately promise this method uses things already in a junk drawer (toothpick, bobby pin) or a basic dotting tool, no nail art brush required.
+- first_h2_hook_direction: The first H2 (supplies section) should reinforce the "anyone can do this" promise by listing plain substitutable items first, saving optional/nice-to-have tools for last.
+
+## SECTION 9: SEARCH JOURNEY
+- reader_arrival_state: Motivated to try reindeer nail art for Christmas but intimidated, unsure if they own the right tools, and worried their first attempt will look messy compared to Pinterest photos.
+- journey_arc:
+  1. Reassurance up front — this doesn't require a nail art brush or professional skill.
+  2. Plain supply list using substitutable household items.
+  3. Numbered steps walked through with encouragement at each stage, not just instruction.
+  4. A dedicated fix-mistakes moment that normalizes imperfection mid-process.
+  5. Close with what a finished, "good enough to post" result looks like — plus the gel-polish alternative for readers who asked.
+- promise_to_deliver: That literally anyone, regardless of tools owned or experience level, can finish this tutorial with reindeer nails they're happy with.
+- exit_state: Confident and ready to try it — not just informed, but reassured that mistakes are normal and fixable.
+
+## SECTION 10: CONTENT STRUCTURE
+- h1: Reindeer Nail Art Tutorial Anyone Can Do at Home
+- h2_structure:
+  1. What You Need for Reindeer Nail Art (No Brush Required)
+  2. Step-by-Step: How to Paint Reindeer Nail Art
+  3. Fixing Mistakes as You Go
+  4. Reindeer Nail Art With Gel Polish Instead
+  5. FAQ: Reindeer Nail Art Tutorial
+
+**word_budget:**
+- introduction: 220 words
+- conclusion: 170 words
+- H2-1 (What You Need): 110 words
+- H2-2 (Step-by-Step): 280 words
+- H2-3 (Fixing Mistakes): 90 words
+- H2-4 (Gel Polish Version): 80 words
+- H2-5 (FAQ): supports 4-5 of the AEO queries in short answer-paragraph form, using remaining ~0-30 words of budget flexibly within the 950 total
+
+## SECTION 11: INTERNAL LINKS
+1. url_or_slug: /blog/christmas-nails/christmas-nail-ideas
+   title: Christmas Nail Ideas
+   anchor_text: christmas nail ideas
+   placement_note: Introduction — orienting the reader to the wider cluster hub for more designs.
+   link_type: cluster-pillar
+
+2. url_or_slug: /blog/christmas-nails/reindeer-nails
+   title: Reindeer Nails
+   anchor_text: reindeer nail designs
+   placement_note: H2-1 (What You Need) — linking to the inspirational reindeer roundup for readers who want to see more looks before committing.
+   link_type: cluster-spoke
+
+3. url_or_slug: /blog/christmas-nails/how-to-christmas-nail-art-at-home
+   title: How to Do Christmas Nail Art at Home
+   anchor_text: how to do christmas nail art at home
+   placement_note: Conclusion — routing readers who want the general tutorial hub for other motifs.
+   link_type: cluster-spoke
+
+4. url_or_slug: /blog/christmas-nails/christmas-nails-for-kids
+   title: Christmas Nails for Kids
+   anchor_text: christmas nails for kids
+   placement_note: FAQ ("Can kids do reindeer nail art too?") — natural link opportunity answering that exact question.
+   link_type: cluster-spoke
+
+## SECTION 12: VOICE AND TONE
+- recommended_voice: Warm, patient beginner-friendly coach
+- tone_characteristics: Reassuring without being condescending; literal and instructional in step language; encouraging at friction points (not just neutral); confident that mistakes are normal and fixable; avoids assuming prior nail art experience.
+- language_style: Short, direct sentences during steps. Frequent direct address ("you"). No jargon without a plain-language explanation alongside it (e.g. define "dotting tool" the first time it's used).
+- audience_match: This voice matches a reader who is motivated but nervous — she needs permission to try without expecting salon-quality results on the first attempt, and needs literal instructions she can follow in real time rather than inspirational prose.
+
+## SECTION 13: EXTERNAL LINKS
+(Empty — none of the 5 fetched competitor pages qualified as genuinely citation-worthy per source_quality_rule; all were either thin blog posts, product-driven brand content, or a trade-press page too short to cite meaningfully. No external links forced to fill a quota.)
+
+## SECTION 14: EXECUTION PLAN
+
+### Block 1: Keyword Execution
+- primary_keyword: reindeer nail art tutorial
+- top_5_density_baseline: 0 exact mentions (all 5 fetched pages used variant phrasing only)
+- total_mention_target: 3 total (baseline 0 + 3, since baseline is effectively zero — using the low end of the +2-3 rule since a higher count would feel unnatural given zero competitor precedent for the exact phrase)
+- first_100_words_plan:
+  - mention_1: Sentence 1-2 of introduction — naming the tutorial by its full keyword phrase as part of the opening reassurance line.
+  - mention_2: Sentence 4-5 of introduction — reinforcing the promise ("this reindeer nail art tutorial only needs...") before transitioning into the supply list.
+- first_half_target: 2 mentions — first ~475 words (introduction + H2-1 + start of H2-2)
+- second_half_target: 1 mention — second ~475 words (remainder of H2-2 through FAQ)
+- strong_tag_rule: Every one of the 3 mentions wrapped in `<strong>` tags. No exceptions.
+- keywords_to_avoid_active: full list from Section 3 — never used as a focus term anywhere in this post.
+
+### Block 2: Word Budget
+- total_target: 950 words (±50, never exceed 1000)
+- introduction: 220 words
+- conclusion: 170 words
+- h2_budgets:
+  1. What You Need for Reindeer Nail Art (No Brush Required) — 110 words — complexity: low
+  2. Step-by-Step: How to Paint Reindeer Nail Art — 280 words — complexity: high
+  3. Fixing Mistakes as You Go — 90 words — complexity: low
+  4. Reindeer Nail Art With Gel Polish Instead — 80 words — complexity: medium
+  5. FAQ: Reindeer Nail Art Tutorial — remainder (~0-30 words framing + short Q&A pairs sized to fit total budget) — complexity: medium
+- tracking_rule: Track running word total after every H2. If a section runs over, cut before moving to the next — do not compensate later.
+
+### Block 3: Image Plan
+- total_images: 4
+- hero_image: frontmatter only — never appears in body
+- body_images: 3
+- assignments:
+  1. image_number: 1 — place_after: H2-1 (What You Need) — image_type: standard_inspiration — section_context: finished reindeer nail art look on a hand, base coat/color visible, festive but not cluttered, to show the achievable end result before steps begin.
+  2. image_number: 2 — place_after: H2-2, mid-steps (after antlers/face step) — image_type: standard_inspiration — section_context: close-up of a single nail mid-design showing the brown face shape and antlers clearly, so readers can compare their in-progress work.
+  3. image_number: 3 — place_after: H2-4 (Gel Polish Version) — image_type: standard_inspiration — section_context: finished gel-polish version of the same design for visual comparison with the regular-polish result shown in image 1.
+- image_type_rule note: No infographic needed — this is a straightforward tutorial with clear step-by-step photos; a comparison infographic isn't warranted since the gel-vs-polish difference is visual, not data-driven.
+- path_rule: /images/blog/christmas-nails/reindeer-nail-art-tutorial/filename.webp
+
+### Block 4: Opening Technique Assignments
+- Introduction: Technique 1 (The Claim) — direct reassurance statement that this is achievable without special tools.
+- H2-1 (What You Need): Technique 2 (The List Frame) — direct transition into supply list.
+- H2-2 (Step-by-Step): Technique 3 (The Reframe) — reframing "step-by-step" as approachable rather than technical.
+- H2-3 (Fixing Mistakes): Technique 1 (The Claim) — direct statement that mistakes are normal and fixable.
+- H2-4 (Gel Polish Version): Technique 2 (The List Frame) — transitional, comparative framing.
+- Conclusion: Technique 3 (The Reframe) — reframe the finished result as a personal win, not a perfect replica.
+- banned_opener_rule: Check every opener against banned_opening_approaches in blog gen prompt before writing the second sentence.
+
+### Block 5: Link Placements
+1. anchor_text: christmas nail ideas — full_url: /blog/christmas-nails/christmas-nail-ideas — place_in_section: Introduction — placement_context: brief mention that more Christmas nail inspiration lives on the hub post — link_type: cluster-pillar
+2. anchor_text: reindeer nail designs — full_url: /blog/christmas-nails/reindeer-nails — place_in_section: H2-1 (What You Need) — placement_context: noting readers can browse more reindeer looks before picking one to recreate — link_type: cluster-spoke
+3. anchor_text: how to do christmas nail art at home — full_url: /blog/christmas-nails/how-to-christmas-nail-art-at-home — place_in_section: Conclusion — placement_context: pointing toward the general tutorial hub for other Christmas motifs — link_type: cluster-spoke
+4. anchor_text: christmas nails for kids — full_url: /blog/christmas-nails/christmas-nails-for-kids — place_in_section: FAQ (kids question) — placement_context: directly answering whether kids can do this, linking to the dedicated post — link_type: cluster-spoke
+
+### Block 6: AEO/GEO Plan
+**aeo_assignments:**
+1. aeo_term: "How do I do reindeer nail art without owning a nail art brush?" — assigned_to_section: H2-1 (What You Need) — execution: Direct 2-3 sentence answer immediately after the H2 heading confirming a toothpick or bobby pin works as a substitute.
+2. aeo_term: "What do I do if I mess up while painting nail art?" — assigned_to_section: H2-3 (Fixing Mistakes) — execution: Direct 2-3 sentence answer immediately after the H2 heading with the cotton-swab/remover fix method.
+3. aeo_term: "Can I do reindeer nail art with regular nail polish, or do I need gel?" — assigned_to_section: H2-4 (Gel Polish Version) — execution: Direct 2-3 sentence answer immediately after the H2 heading confirming both methods work, this section covers the gel alternative.
+4. aeo_term: "How long does reindeer nail art take?" — assigned_to_section: FAQ — execution: Direct 2-3 sentence answer pairing time investment with skill level.
+5. aeo_term: "Is reindeer nail art hard to do for a beginner?" — assigned_to_section: FAQ — execution: Direct 2-3 sentence answer reinforcing the beginner-friendly promise from the intro.
+
+**geo_entity_statements:**
+1. entity: dotting tool — assigned_to_section: H2-1 — execution: Clear declarative definition sentence (a small ball-tipped tool used to place precise dots of polish) on first use.
+2. entity: gel polish / builder gel — assigned_to_section: H2-4 — execution: Clear declarative definition distinguishing gel polish (cured under UV/LED light) from regular air-dry polish.
+
+### Block 7: Active Constraints
+- em_dash_banned: Long em dash does not appear anywhere. If one forms while writing, stop and replace with comma / new sentence / parentheses / but / restructure.
+- banned_vocab_watch: elevate, effortless, magical, whimsical, cozy, stunning, festive (in every sentence — use sparingly), unleash, elevate your holiday, must-try — catch as they form.
+- american_english_active: color, favorite, personalize (not colour/favourite/personalise) — every instance, no exceptions.
+- keyword_density_reminder: After every 2 H2 sections, count current keyword mentions. Running total must track toward 3 total mentions, denser in first half (2 of 3 mentions before H2-2 completes).
+- image_path_reminder: /images/blog/christmas-nails/reindeer-nail-art-tutorial/filename.webp — topic_slug in path always.
+- internal_link_url_reminder: Full paths only, e.g. /blog/christmas-nails/christmas-nail-ideas. Never bare /reindeer-nails.
+- hero_image_reminder: Hero image is frontmatter only. Never placed in body.
+- strong_tag_reminder: Every one of the 3 primary keyword mentions wrapped in `<strong>` tags. Scan after every paragraph.
