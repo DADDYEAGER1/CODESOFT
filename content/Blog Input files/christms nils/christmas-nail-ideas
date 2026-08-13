@@ -1,0 +1,235 @@
+# INPUT FILE — CHRISTMAS NAIL IDEAS (PILLAR)
+CLUSTER MODE — cluster context loaded (christmas-nails)
+
+## SECTION 1 — FILE AUTHORITY
+THIS FILE IS THE SINGLE SOURCE OF TRUTH FOR THE BLOG GEN AGENT. All POST_CONSTANTS values are hardcoded. Blog Gen Agent does not ask, adjust, or override them.
+
+## SECTION 2 — POST_CONSTANTS
+- slug: christmas-nail-ideas
+- topic_slug: christmas-nails
+- canonical: https://mirelleinspo.com/blog/christmas-nails/christmas-nail-ideas
+- post_type: pillar
+- intent: inspirational
+- word_count: 3200 (top_5 fetched average ≈2450 words; pillar role + 29-link cluster hub requires deeper coverage than baseline average)
+- image_count: 12 (1 hero + 1 per H2; 11 H2s — see Section 10)
+- show_inspo_gallery_link: false (per cluster_metadata; user-confirmed)
+- template: center
+- hero_dimensions: 1200x630
+- category: Nails
+- publish_date: 2026-11-02
+- author: jyoti-mirelle
+
+## SECTION 3 — CLUSTER SNAPSHOT
+- pillar_slug: christmas-nail-ideas
+- pillar_title: Christmas Nail Ideas
+- pillar_primary_keyword: christmas nails
+- this_post_slug: christmas-nail-ideas
+- this_post_role: pillar
+- show_inspo_gallery_link_cluster_default: false
+- keywords_to_avoid: almond christmas nails, short christmas nails, coffin christmas nails, french tip christmas nails, candy cane nail designs, plaid christmas nails, reindeer nail designs, gingerbread santa gnome nails, christmas wreath nail art, red christmas nails, green christmas nails, pink christmas nails, gold christmas nails, blue christmas nails, non-traditional christmas nail colors, christmas nail colors, how to do christmas nail art at home, christmas tree nail art tutorial, reindeer nail art tutorial, santa nail art tutorial, gingerbread man nail art tutorial, gnome nail art tutorial, mistletoe nail art tutorial, old money christmas nails, christmas nail trends 2026, christmas nails for kids, simple christmas nails, christmas nails for older women, christmas nail colors for skin tone, matching christmas nails, holiday nails (vacation meaning), old money nails fall winter, nails for older women, nail colors for fair skin
+
+## SECTION 4 — SERP ANALYSIS
+- competitor_gaps: (1) "When to get Christmas nails done" — timing/longevity planning so the mani survives through NYE — confirmed on 2+ independent sources (Fresha/PopSugar UK, AOL/Curvy Fashionista), absent from all 5 fetched pages. (2) Color decision-paralysis beyond red/green/white — repeated distinct Quora query, only partially answered by competitors (most just list colors, don't resolve the "which one is right for me" anxiety). (3) Workplace-appropriate / "not too Christmassy" angle — cross-validated Quora + Salongeek professional thread, zero competitor coverage.
+- missing_semantic_territory: "christmas nails not cheesy," "office-appropriate christmas nails," "nail math" / appointment timing, "festive but subtle," decision-fatigue framing ("which christmas nail color is right for me")
+- our_strategic_approach: Competitors split into two failure modes: mega-listicles with zero organizing logic (Chaylor & Mads, 95 items, no decision help) or thin trend pieces with no depth (Marie Claire, PNBShop). None solve the reader's actual problem — too many options, no way to choose. This post organizes 120+ ideas by decision axis (color family → motif → formality level) rather than a flat scroll, closes with the timing gap (when to book so it lasts through NYE) that zero fetched competitors address, and opens with the "not cheesy" reframe Marie Claire's title implies but never delivers on structurally. Structural edge: every fetched competitor buries color/motif under generic H2 labels ("Classic," "Modern," "Subtle") — this post uses query-exact H2s so it captures both the browse-intent reader and the specific-color/motif searcher in one page.
+- top_5_fetched_pages_summary:
+  - marieclaire.com/beauty/nails/best-christmas-nail-ideas — 950 words, 20 H2s (each a named look), ~6 keyword mentions. Strong: named/expert-quoted designs. Weak: no organization, no practical info, thin per-section.
+  - chaylorandmads.com/christmas-nails — 4,700 words, ~30 H2s/H3s + FAQ. Strong: comprehensive, ranks for everything via sheer volume, has FAQ schema. Weak: bloated, no visual hierarchy, numbered 1-95 with no logic, heavy Amazon affiliate padding.
+  - thenailbuffet.com/christmas-nails-2026 — 1,450 words, 28 H2s. Strong: clean single-look-per-H2 format, good scannability. Weak: no depth per look, no practical/timing info, generic copy ("This look suits anyone who...").
+  - moyou.co.uk/blogs/nail-art/christmas-nail-ideas — 1,650 words, 15 numbered + 3 thematic H2s. Strong: organized into Classic/Modern/Subtle categories, covers Party vs Day nails distinction, technique info (stamping). Weak: product-push heavy, UK-centric.
+  - refinery29.com/en-us/short-christmas-nails-manicure-ideas — 450 words, 14 H2s (short-nail specific). Strong: real named nail artists/Instagram credit, authentic voice. Weak: narrow scope (short nails only, not primary-keyword-exact), thin per-item.
+- top_5_word_count_average: 1840 words
+- recommended_image_count_validation: 12 images (hero + 11 H2s) matches SERP visual density — all 5 fetched pages are majority-visual with 1+ image per named look/section; pillar role justifies going beyond the flat 7-image default.
+
+## SECTION 5 — AUDIENCE INTELLIGENCE
+- who_they_are: Broad-intent browsers, mostly women 18-45, searching in Oct-Dec, ranging from total beginners ("how do you do your own Christmas nails") to enthusiasts who redo their nails multiple times per season. Many are actively deciding between DIY and salon.
+- what_they_want_from_this_post: A complete, organized menu of ideas they can scroll and screenshot/save — but with enough structure to actually narrow down a choice, not just scroll forever.
+- what_frustrates_them: Endless unorganized listicles (Chaylor & Mads: 95 items, no logic); pages that assume red/green/white are the only options; no guidance on timing (when to book) or appropriateness (office vs party); generic one-line captions with no real styling info.
+- top_5_pain_points: (1) Decision fatigue from too many options with no filter. (2) Not knowing what's appropriate for work vs a party. (3) Wanting a color beyond red/green/white but not knowing where to start. (4) Uncertainty about when to book so the mani lasts through Christmas AND New Year's. (5) Feeling their manicure choice looks "cheesy" or dated rather than chic.
+- exact_user_phrases: "besides red, green, and white", "festive but not too Christmassy", "is it appropriate to have red or green Christmas themed nails for an interview", "should I do red or green nails for Christmas", "nails christmas nails", "christmas nail ideas", "easy christmas nail designs", "cute but simple christmas nails", "classy christmas nails", "christmas nails not red", "short christmas nails simple"
+- intent_content_signals: Numbered/counted format performs consistently (14-95 item listicles all rank); visual-first with minimal text per idea; year-tag (2026) expected; organization by color AND by motif both searched — needs both; "easy"/"simple"/"classy" are the most common modifying searches, signaling the audience skews toward achievable-at-home over elaborate salon art.
+
+## SECTION 6 — SEMANTIC KEYWORD DATA
+- primary_keyword: christmas nails
+- keyword_variations: christmas nail ideas, christmas nail designs, christmas manicure, holiday christmas nails, festive christmas nails, christmas nail art, xmas nails, christmas nail inspo, christmas nail looks
+- cluster_keywords: red and green christmas nails, christmas nail colors, easy christmas nails, simple christmas nails, classy christmas nails, short christmas nails, christmas nail trends 2026, festive nail designs, holiday manicure ideas, DIY christmas nails, christmas nail art ideas, cute christmas nails, christmas nails for party
+- lsi_terms: candy cane nails, plaid christmas nails, reindeer nails, snowflake nail art, gold french tips, chrome finish nails, velvet matte nails, holographic nails, gel strips, press-on nails, stamping plate, nail art design, accent nail, festive manicure, holiday nail trends, party nails vs day nails, minimalist christmas nails, 3D nail art, nail longevity
+- aeo_terms: what is the best color for christmas nails, how do you do your own christmas nails at home, what christmas nail colors go with red and green, when should you get your nails done for christmas, are christmas nails appropriate for work, what nail shape is best for christmas nail art, how long do christmas nails last, what christmas nail designs are trending in 2026
+- technical_terms: gel polish, acrylic nails, gel strips, stamping plate, chrome powder, French tip, accent nail, nail art brush, top coat, press-on nails
+- user_language: "not too Christmassy," "classy not cheesy," "easy to DIY," "lasts through New Year's," "office-appropriate," "goes with everything," "not just red and green," "actually wearable," "screenshot-worthy," "salon-quality at home"
+
+## SECTION 7 — VOICE AND AI QUERIES
+- queries: What is the best color for Christmas nails? What Christmas nail colors go besides red and green? How do you do Christmas nails at home? Are Christmas nails appropriate for work? When should you get your nails done for Christmas so they last? What Christmas nail designs are trending in 2026? What nail shape works best for Christmas nail art? How long do Christmas gel nails last? What's a classy Christmas nail color that isn't red? Can I wear glitter Christmas nails to the office? What's the easiest Christmas nail design to DIY? Do Christmas nails work for short nails? What colors pair well with gold Christmas nails? How do I make my Christmas nails look expensive, not cheap? What's a good Christmas nail idea for someone who hates traditional red and green? How far in advance should I book my Christmas manicure?
+
+## SECTION 8 — HOOK AND CTR
+- real_serp_findings_summary: 4 of 5 fetched titles are number-led and/or year-tagged with the keyword front-loaded (Chaylor & Mads, The Nail Buffet, MoYou, PNBShop); all rely on generic superlatives ("festive," "trendiest," "best") with no differentiating promise beyond volume.
+- selected_option_rationale: "120+ Christmas Nails 2026: Ideas For Every Style" out-numbers every fetched competitor (max was 95) while "For Every Style" signals the organizational promise competitors lack — directly answers the confirmed decision-fatigue pain point.
+- title: 120+ Christmas Nails 2026: Ideas For Every Style
+- title_char_count: 47
+- meta_description: Overwhelmed by christmas nails options? Browse 120+ ideas organized by color, motif, and vibe — plus when to book so your mani lasts through NYE.
+- meta_char_count: 148
+- intro_hook_brief: Open by naming the decision-fatigue problem directly (too many options, no filter) before delivering the promise of organization — mirrors the title's "for every style" angle.
+- first_h2_hook_direction: First H2 (colors) should immediately deliver on "every style" by going beyond red/green/white in the first few sentences, subtly proving the promise rather than restating it.
+
+## SECTION 9 — SEARCH JOURNEY
+- reader_arrival_state: Curious but slightly overwhelmed — knows they want festive nails, hasn't landed on a specific idea yet.
+- journey_arc: Land amid decision fatigue → get oriented via color-first framing (broadest filter) → move into motif-specific ideas (narrower filter) → hit format/formality guidance (short/easy/classy) → close with practical timing payoff (when to book) that resolves the last bit of anxiety.
+- promise_to_deliver: A complete but organized set of Christmas nail ideas that resolves decision fatigue rather than adding to it.
+- exit_state: Reader has a shortlist in mind (or several saved ideas) and knows exactly when to book their appointment.
+
+## SECTION 10 — CONTENT STRUCTURE
+- h1: 120+ Christmas Nail Ideas for Every Style This Holiday Season
+- h2_structure:
+  1. Christmas Nail Colors: Beyond Red, Green, and White
+  2. Classic Red and Green Christmas Nails
+  3. Gold and Metallic Christmas Nail Ideas
+  4. Christmas Nails That Aren't Red (Blue, Pink, and Beyond)
+  5. Candy Cane, Plaid, and Festive Pattern Nails
+  6. Reindeer, Santa, and Character Christmas Nails
+  7. Christmas Wreath and Nature-Inspired Nail Art
+  8. Easy and Simple Christmas Nails You Can DIY
+  9. Short Christmas Nails That Still Make a Statement
+  10. Classy Christmas Nails for Work and Formal Events
+  11. When to Get Your Christmas Nails Done (So They Last)
+- word_budget:
+  - introduction: 220 words
+  - conclusion: 180 words
+  - per_h2 (11 sections, 2800 words remaining):
+    1. Colors overview: 280 (high complexity — sets up whole post)
+    2. Red/Green: 240
+    3. Gold/Metallic: 240
+    4. Not-Red colors: 260
+    5. Patterns: 280
+    6. Characters: 280
+    7. Wreath/Nature: 220
+    8. Easy DIY: 280
+    9. Short nails: 240
+    10. Work/Formal: 260
+    11. Timing: 220
+
+## SECTION 11 — INTERNAL LINKS
+blog_gen_instruction: Every link below appears in the post, verbatim anchors, woven into prose. 29 cluster links total (mandatory, per internal_linking_map) — this exceeds the standard 4-6 cap by cluster-hub design; pillar posts are exempt from the cap since they must link every spoke. Gallery link omitted (show_inspo_gallery_link: false).
+
+| slug | anchor_text | placement |
+|---|---|---|
+| almond-christmas-nails | almond christmas nails | H2-9 (short nails, shape contrast) |
+| short-christmas-nails | short christmas nails | H2-9 |
+| coffin-christmas-nails | coffin christmas nails | H2-9 |
+| french-tip-christmas-nails | french tip christmas nails | H2-2 |
+| candy-cane-nails | candy cane nail designs | H2-5 |
+| plaid-christmas-nails | plaid christmas nails | H2-5 |
+| reindeer-nails | reindeer nail designs | H2-6 |
+| christmas-character-nails | gingerbread, santa, and gnome nail designs | H2-6 |
+| christmas-wreath-nails | christmas wreath nail art | H2-7 |
+| red-christmas-nails | red christmas nails | H2-2 |
+| green-christmas-nails | green christmas nails | H2-2 |
+| pink-christmas-nails | pink christmas nails | H2-4 |
+| gold-christmas-nails | gold christmas nails | H2-3 |
+| blue-christmas-nails | blue christmas nails | H2-4 |
+| christmas-nails-not-red | non-traditional christmas nail colors | H2-4 |
+| christmas-nail-colors | best christmas nail colors guide | H2-1 |
+| how-to-christmas-nail-art-at-home | how to do christmas nail art at home | H2-8 |
+| christmas-tree-nail-art-tutorial | christmas tree nail art tutorial | H2-7 |
+| reindeer-nail-art-tutorial | reindeer nail art tutorial | H2-6 |
+| santa-nail-art-tutorial | santa nail art tutorial | H2-6 |
+| gingerbread-man-nail-art-tutorial | gingerbread man nail art tutorial | H2-6 |
+| gnome-nail-art-tutorial | gnome nail art tutorial | H2-6 |
+| mistletoe-nail-art-tutorial | mistletoe nail art tutorial | H2-7 |
+| old-money-christmas-nails | old money christmas nails | H2-10 |
+| christmas-nail-trends-2026 | christmas nail trends 2026 | H2-1 |
+| christmas-nails-for-kids | christmas nails for kids | H2-6 |
+| simple-christmas-nails | simple christmas nail designs | H2-8 |
+| christmas-nails-for-older-women | christmas nails for older women | H2-10 |
+| christmas-nail-colors-skin-tone | christmas nail colors by skin tone | H2-1 |
+| matching-christmas-nails | matching christmas nails for couples and family | H2-10 |
+
+link_type: cluster-pillar (all entries — this post links out to every spoke)
+
+## SECTION 12 — VOICE AND TONE
+- recommended_voice: Warm, organized guide — think "the friend who actually has a system" rather than a generic trend-chaser.
+- tone_characteristics: Reassuring (defuses decision fatigue), specific (names real colors/finishes, not vague "festive vibes"), lightly opinionated (has a POV on what's classy vs dated), practical (includes real timing/appropriateness guidance), inclusive of DIY and salon readers equally.
+- language_style: Direct address ("you"), short declarative sentences for scanning, occasional light humor, no forced trend-jargon.
+- audience_match: The audience is overwhelmed by volume, not lacking ideas — so the voice should feel like it's doing the sorting for them, not adding to the pile.
+
+## SECTION 13 — EXTERNAL LINKS
+(none — none of the 5 fetched competitor pages qualify as genuinely citation-worthy: all are either thin trend-copy, affiliate-heavy listicles, or product-brand blogs. Empty per rule; no links forced.)
+
+## SECTION 14 — EXECUTION PLAN
+
+### Block 1 — Keyword Execution
+- primary_keyword: christmas nails
+- top_5_density_baseline: 6 mentions (average across 5 fetched pages)
+- total_mention_target: 9 (baseline 6 + 3)
+- first_100_words_plan:
+  - mention_1: sentence 1-2 of intro — naming the topic directly ("finding the right christmas nails")
+  - mention_2: sentence 4-5 of intro — reinforcing via the organizational promise ("this christmas nails guide is organized by...")
+- first_half_target: 6 mentions — first 1600 words (intro + H2 1-5)
+- second_half_target: 3 mentions — second 1600 words (H2 6-11 + conclusion)
+- strong_tag_rule: every one of the 9 mentions wrapped in `<strong>` tags, no exceptions
+- keywords_to_avoid_active: full list from Section 3 — never used as focus terms
+
+### Block 2 — Word Budget
+- total_target: 3200 words (±50)
+- introduction: 220
+- conclusion: 180
+- h2_budgets: (see Section 10 — all 11 listed with word counts and complexity)
+- tracking_rule: track running total after each H2; cut before moving on if over budget
+
+### Block 3 — Image Plan
+- total_images: 12
+- hero_image: frontmatter only, never in body
+- body_images: 11 (one per H2)
+- assignments:
+  1. place_after: H2-1 (Colors) — image_type: standard_inspiration — a spread/flat-lay of 3-4 different colored manicures side by side to visually establish "beyond red/green"
+  2. place_after: H2-2 (Red/Green) — standard_inspiration — classic red and green manicure, glossy finish
+  3. place_after: H2-3 (Gold/Metallic) — standard_inspiration — gold chrome or metallic French tip look
+  4. place_after: H2-4 (Not-Red) — standard_inspiration — blue or pink Christmas manicure
+  5. place_after: H2-5 (Patterns) — standard_inspiration — plaid or candy cane nail art close-up
+  6. place_after: H2-6 (Characters) — standard_inspiration — reindeer or santa hat nail art
+  7. place_after: H2-7 (Wreath/Nature) — standard_inspiration — wreath or holly nail art
+  8. place_after: H2-8 (Easy DIY) — standard_inspiration — simple dot/stripe minimalist design achievable at home
+  9. place_after: H2-9 (Short Nails) — standard_inspiration — short nail set with festive design
+  10. place_after: H2-10 (Work/Formal) — standard_inspiration — understated, elegant French or solid-color set
+  11. place_after: H2-11 (Timing) — standard_inspiration — close-up glossy finished manicure (evokes "long-lasting" payoff visually)
+- image_type_rule: all 11 slots are standard_inspiration — this post is inspirational intent, no comparison or step-sequence content requiring an infographic
+- path_rule: /images/blog/christmas-nails/christmas-nail-ideas/filename.webp
+
+### Block 4 — Opening Technique Assignments
+- Introduction: Technique 1 (The Claim) — open by naming the decision-fatigue problem as fact
+- H2-1 (Colors): Technique 3 (The Reframe) — reframe "just red and green" as outdated
+- H2-2 (Red/Green): Technique 2 — concede the classic still works, then pivot to how
+- H2-3 (Gold/Metallic): Technique 1
+- H2-4 (Not-Red): Technique 3
+- H2-5 (Patterns): Technique 1
+- H2-6 (Characters): Technique 2
+- H2-7 (Wreath/Nature): Technique 1
+- H2-8 (Easy DIY): Technique 3
+- H2-9 (Short Nails): Technique 2
+- H2-10 (Work/Formal): Technique 1
+- H2-11 (Timing): Technique 3
+- Conclusion: Technique 1 (The Claim)
+- banned_opener_rule: check every opener against banned_opening_approaches before writing the second sentence
+
+### Block 5 — Link Placements
+(full 29-link table — see Section 11 for anchor/URL/placement; all link_type: cluster-pillar, full_url = /blog/christmas-nails/[slug])
+
+### Block 6 — AEO/GEO Plan
+- aeo_assignments:
+  - "What is the best color for Christmas nails?" → H2-1 — direct 2-3 sentence answer immediately after heading
+  - "Are Christmas nails appropriate for work?" → H2-10 — direct answer immediately after heading
+  - "When should you get your nails done for Christmas so they last?" → H2-11 — direct answer immediately after heading
+  - "What's the easiest Christmas nail design to DIY?" → H2-8 — direct answer immediately after heading
+- geo_entity_statements:
+  - "French tip" → H2-2 — clear declarative definition
+  - "Chrome finish" → H2-3 — clear declarative definition
+  - "Press-on nails" → H2-8 — clear declarative definition
+
+### Block 7 — Active Constraints
+- em_dash_banned: yes, replace with comma/new sentence/parentheses/but
+- banned_vocab_watch: elevate, effortless, must-have, game-changer, unleash, seamless, indulge, treat yourself
+- american_english_active: color, favorite, personalize — every instance
+- keyword_density_reminder: count after every 2 H2s, verify on track for 9 total, front-load density
+- image_path_reminder: /images/blog/christmas-nails/christmas-nail-ideas/filename.webp
+- internal_link_url_reminder: full paths /blog/christmas-nails/[slug], never bare /slug
+- hero_image_reminder: frontmatter only
+- strong_tag_reminder: every primary keyword mention wrapped, scan after every paragraph
