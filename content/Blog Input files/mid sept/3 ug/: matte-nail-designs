@@ -1,0 +1,197 @@
+# INPUT FILE — SINGLE SOURCE OF TRUTH FOR BLOG GEN AGENT
+Mode: SOLO — no cluster context. All values below are hardcoded. Blog Gen Agent does not ask, adjust, or override.
+
+## SECTION 2 — POST_CONSTANTS
+- slug: matte-nail-designs
+- topic_slug: OMITTED (standalone)
+- canonical: https://mirelleinspo.com/blog/matte-nail-designs
+- post_type: standalone
+- intent: inspirational
+- word_count: 2400
+- image_count: 7
+- show_inspo_gallery_link: true
+- template: center
+- hero_dimensions: 1200x630
+- category: Nail Designs
+- publish_date: 2026-08-13
+- author: jyoti-mirelle
+
+## SECTION 4 — SERP ANALYSIS
+- competitor_gaps: (1) No competitor directly addresses matte vs glossy durability myth — most just say "matte chips faster," none explain the surface-science reason or give a definitive fix (2+ sources: Alibaba science piece, NAGAIA, Glowsly). (2) Skin-tone/undertone pairing for matte shades specifically (not glossy) is thin — general nail-shape guides exist but not matte-specific tone matching. (3) "Matte + glossy combo/accent nail" technique is trending but under-explained step-by-step (verylookgood, BTArtbox). (4) Nail shape + matte finish pairing (which shapes matte flatters most) is scattered, not consolidated.
+- missing_semantic_territory: "matte top coat vs matte polish" distinction, at-home application mistakes specific to matte finish, how to revive faded matte mid-wear.
+- our_strategic_approach: Lead with 2026's biggest matte moment (matte-and-gloss combo, clean-girl matte shift per Google Trends growth) while closing the gap competitors leave open — real durability truth, shape/tone pairing, and easy at-home fixes — so the post reads as both a visual lookbook and the most useful matte guide available.
+- recommended_image_count_validation: Top competitors (Parade, Who What Wear, BTArtbox) run 15-65 image-heavy listicles. 7 total (1 hero + 6 body) is lighter by design per hardcoded image_count — curated, not exhaustive.
+
+## SECTION 5 — AUDIENCE INTELLIGENCE
+- who_they_are: Women 20-40 already comfortable with regular manicures, browsing for their next nail look rather than learning nail basics from scratch. Pinterest/TikTok-driven, aesthetic-conscious.
+- what_they_want_from_this_post: Fresh, current (2026) matte designs to screenshot/save for their next salon visit or at-home mani, organized by color/shape so they can find "their" look fast.
+- what_frustrates_them: Generic listicles padded with 50+ near-duplicate images; no real answer on whether matte actually chips faster or how to fix it; no guidance on which shape or color suits their skin tone.
+- top_5_pain_points: (1) Uncertain if matte is "worth it" given durability rumors (2) Can't tell which matte shade suits their undertone (3) Bored of plain solid matte, want a design that still reads sophisticated not busy (4) Don't know how to revive a matte mani once it starts looking satin/patchy (5) Want salon-quality matte results at home but unsure of technique differences.
+- exact_user_phrases: "does matte nail polish last longer", "how to make matte nails last longer", "matte nail polish keeps chipping", "matte vs glossy which is better", "matte and gloss combo nails", "matte nails looking shiny after a few days", "best matte nail colors for fall/spring", "matte nails for short nails", "how to fix matte nails going shiny", "matte nail designs for almond shape".
+- intent_content_signals: Visual-first with short scannable captions per look; color/shape groupings over generic "look 1, look 2"; one clear myth-busting section; one practical care section woven in, not tutorial-heavy; confident, aspirational captions ("editorial," "quiet luxury," "clean girl").
+
+## SECTION 6 — SEMANTIC KEYWORD DATA
+- primary_keyword: matte nail designs
+- keyword_variations: matte nail ideas, matte nail art, matte manicure designs, matte nails designs, matte nail looks, matte finish nails, matte nail styles, matte nail polish designs
+- cluster_keywords: matte black nails, matte nude nails, matte nail colors, matte and glossy combo nails, matte almond nails, matte coffin nails, matte square nails, short matte nails, matte nail trends 2026, matte gel nails, matte top coat, velvet nail finish
+- lsi_terms: non-shiny nail finish, flat finish manicure, matte top coat application, satin nail finish, chrome vs matte, clean girl aesthetic nails, quiet luxury nails, editorial nail look, texture manicure, nail undertone matching, matte accent nail, hybrid matte gloss manicure, matte nail longevity, matte polish chipping, velvety nail texture, sophisticated nail look
+- aeo_terms: How long do matte nails last?, Does matte nail polish chip faster than glossy?, How do you make matte nails last longer?, What is the difference between matte and glossy nail polish?, How do you fix matte nails that turned shiny?, What nail shapes look best with matte polish?, Are matte nails in style in 2026?, Can you put matte top coat over any nail polish?, What colors look best in matte finish?, Is matte nail polish easier to apply than glossy?
+- technical_terms: matte top coat, gel matte finish, dip powder matte, base coat, cured gel, buffing, cuticle prep, flash finish
+- user_language: "does matte last longer", "keeps looking shiny after a day", "matte or glossy which is better", "obsessed with matte black rn", "matte nails but not boring", "easy matte design at home", "matte nails for short nails", "matte finish over gel", "matte nails aesthetic", "velvety finish nails"
+
+## SECTION 7 — VOICE AND AI QUERIES
+1. How long do matte nails actually last compared to glossy?
+2. Why does my matte manicure start looking shiny after a few days?
+3. How can I make matte nail polish last longer?
+4. What's the real difference between matte and glossy nail polish?
+5. Can I put a matte top coat over any nail color?
+6. What nail shapes look best with a matte finish?
+7. Are matte nails still trending in 2026?
+8. What is the matte-and-gloss combo nail trend?
+9. What colors look most expensive in matte finish?
+10. Is matte nail polish harder to apply than glossy?
+11. Do matte nails chip more easily than regular polish?
+12. What's the best way to fix matte nails that have gone patchy?
+13. Are matte nails good for short nails?
+14. What's a good matte color for fall vs spring?
+15. Can you do matte nails with nail art or is it only solid colors?
+
+## SECTION 8 — HOOK AND CTR
+- selected_trigger: Trigger 2 — FOMO/Trend Urgency
+- trigger_rationale: Reader is trend-aware, browsing what's current for matte in 2026 (Google Trends growth cited by verylookgood), wants volume and freshness, not a decision to resolve.
+- title: Matte Nail Designs: 23 Looks Everyone's Wearing in 2026
+- title_char_count: 56
+- meta_description: See the matte nail looks taking over 2026 — plus the truth about how long matte polish really lasts and how to keep it flawless.
+- meta_char_count: 137
+- intro_hook_brief: Open on the shift from high-shine chrome to soft matte dominating 2026 feeds — position matte as the current "it" finish, not a fallback to gloss, then promise a curated edit of the best looks plus the durability answer nobody gives straight.
+- first_h2_hook_direction: Phrase first H2 as a voice-search-style question resolving the FOMO — confirms the reader is in the right place before showing the first design cluster.
+
+## SECTION 9 — SEARCH JOURNEY
+- reader_arrival_state: Trend-aware and mid-scroll, comparing matte against the glossy/chrome manicures she's used to, wanting to know if matte is worth trying now.
+- journey_arc: Confirm matte is having a real 2026 moment → show the most popular/versatile looks first (black, nude, color-blocked) → layer in the matte-and-gloss combo and shape-specific pairings → answer the durability question honestly mid-post → close with the "this is what to ask for/buy" moment.
+- promise_to_deliver: A current, curated set of matte nail looks for 2026 plus a straight answer on how long they last and how to keep them looking fresh.
+- exit_state: Confident on which matte look to try next and reassured that durability concerns are manageable, not a dealbreaker.
+
+## SECTION 10 — CONTENT STRUCTURE
+- h1: Matte Nail Designs: 23 Looks Everyone's Wearing in 2026
+- h2_structure:
+  1. Is Matte Still Trending in 2026? (Yes, and Here's Why)
+  2. Matte Black Nail Designs That Never Miss
+  3. Matte Nude & Neutral Looks for an Elevated Everyday Mani
+  4. Bold Matte Color Ideas Worth the Switch
+  5. The Matte-and-Gloss Combo Everyone's Copying
+  6. Best Nail Shapes for a Matte Finish
+  7. Do Matte Nails Really Chip Faster? The Honest Answer
+  8. How to Keep Your Matte Manicure Looking Fresh Longer
+  9. Which Matte Nail Look Should You Try Next?
+- word_budget:
+  - introduction: 220
+  - H2-1: 180
+  - H2-2: 320
+  - H2-3: 300
+  - H2-4: 300
+  - H2-5: 280
+  - H2-6: 260
+  - H2-7: 260
+  - H2-8: 220
+  - conclusion: 180
+  (total ≈ 2400, +/-50 tolerance)
+
+## SECTION 11 — INTERNAL LINKS
+cluster_links: none (standalone, no cluster_context.json)
+
+cross_site_discovery (max 2, relevance-filtered):
+1. anchor_text: "how to shape almond nails at home without a drill" | url_or_slug: [Blog Gen Agent to confirm exact URL via site:mirelleinspo.com almond nails at write time — not independently verifiable outside site search] | placement_note: Section 6 (Best Nail Shapes for a Matte Finish), when almond shape is discussed | link_type: cross-site
+2. anchor_text: "our full guide to nail shapes and which one suits you" | url_or_slug: [Blog Gen Agent to confirm exact URL via site:mirelleinspo.com nail shapes at write time] | placement_note: Section 6, general shape-pairing discussion | link_type: cross-site
+
+NOTE: Cross-site URLs could not be verified — mirelleinspo.com did not return indexed results in this research session. Blog Gen Agent must run site:mirelleinspo.com almond nails / site:mirelleinspo.com nail shapes before placing these two links; if no genuinely relevant page exists, drop both rather than invent a URL. Total internal links may be 0-2, within the 4-6 cap ceiling (standalone post, no cluster links).
+
+## SECTION 12 — VOICE AND TONE
+- recommended_voice: Aspirational guide with a confident-editor edge
+- tone_characteristics: Trend-fluent without being breathless; visually descriptive captions; straight-talking on the durability myth (no hedging); warm second-person address; light, never salesy
+- language_style: Short, punchy sentences for captions; slightly longer sentences in the myth-busting and care sections; frequent "you"; occasional sensory/texture language (velvety, soft-focus, editorial)
+- audience_match: This reader wants to feel ahead of the trend curve and trusts a source that gives her the real answer on durability rather than just more pretty pictures — the voice balances both.
+
+## SECTION 13 — EXTERNAL LINKS
+1. url: https://www.marieclaire.com/beauty/nails/spring-2026-nail-trends/ | context: cite matte as part of 2026 seasonal nail trend shift | anchor_suggestion: "2026 nail trend forecasts"
+2. url: https://theindustry.beauty/from-pastels-to-polka-dots-top-nail-trends-for-spring-summer-2026/ | context: cite the 250% YoY rise in minimal/matte-adjacent manicures | anchor_suggestion: "industry data on minimalist manicure growth"
+3. url: https://verylookgood.com/matte-nails/ | context: cite Google Trends growth in matte nail search terms | anchor_suggestion: "search trend data on matte nails"
+
+## SECTION 14 — EXECUTION PLAN
+
+### Block 1: Keyword Execution
+- primary_keyword: matte nail designs
+- top_3_density_baseline: 6 mentions (estimated average across Kiara Sky, Who What Wear, Parade top-ranking pieces)
+- total_mention_target: 9 total mentions
+- first_100_words_plan: mention_1 = sentence 2 of intro (establishing the trend hook); mention_2 = sentence 4-5 of intro (transitioning into the promise of the post)
+- first_half_target: 6 mentions — first 1200 words
+- second_half_target: 3 mentions — second 1200 words
+- strong_tag_rule: all 9 mentions wrapped in `<strong>` tags, no exceptions
+- keywords_to_avoid_active: none (standalone, no cluster file)
+
+### Block 2: Word Budget
+- total_target: 2400 words (+/-50)
+- introduction: 220
+- conclusion: 180
+- h2_budgets:
+  1. Is Matte Still Trending in 2026? — 180 — low
+  2. Matte Black Nail Designs That Never Miss — 320 — medium
+  3. Matte Nude & Neutral Looks — 300 — medium
+  4. Bold Matte Color Ideas — 300 — medium
+  5. The Matte-and-Gloss Combo — 280 — medium
+  6. Best Nail Shapes for a Matte Finish — 260 — medium
+  7. Do Matte Nails Really Chip Faster? — 260 — high
+  8. How to Keep Your Matte Manicure Fresh — 220 — medium
+- tracking_rule: check running total after every H2; cut before moving on if over budget
+
+### Block 3: Image Plan
+- total_images: 7
+- hero_image: frontmatter only, never in body
+- body_images: 6
+- assignments:
+  1. place_after: H2-2 (Matte Black) — section_context: matte black nail design, solid or with subtle accent
+  2. place_after: H2-3 (Matte Nude/Neutral) — section_context: matte nude/neutral mani, elevated everyday look
+  3. place_after: H2-4 (Bold Color) — section_context: bold matte color (jewel tone or vivid), editorial styling
+  4. place_after: H2-5 (Matte-and-Gloss Combo) — section_context: matte base with glossy accent nail, high contrast
+  5. place_after: H2-6 (Nail Shapes) — section_context: matte finish on almond or coffin shape, close-up
+  6. place_after: H2-8 (Care section) — section_context: final aspirational matte mani, close-out visual
+- image_type_rule: all body images = inspirational nail design photos only. No infographics, no diagrams, no charts.
+- path_rule: /images/blog/matte-nail-designs/filename.webp (no topic_slug — standalone post)
+
+### Block 4: Opening Technique Assignments
+- Introduction: Technique 2 (FOMO/Trend statement)
+- H2-1 (Is Matte Still Trending): Technique 1 (The Claim)
+- H2-2 (Matte Black): Technique 3 (The Reframe)
+- H2-3 (Matte Nude): Technique 1 (The Claim)
+- H2-4 (Bold Color): Technique 3 (The Reframe)
+- H2-5 (Matte-Gloss Combo): Technique 1 (The Claim)
+- H2-6 (Nail Shapes): Technique 3 (The Reframe)
+- H2-7 (Chip Myth): Technique 1 (The Claim — direct myth statement)
+- H2-8 (Care Tips): Technique 3 (The Reframe)
+- Conclusion: Technique 1 (The Claim)
+- banned_opener_rule: check every opener against banned_opening_approaches before writing sentence two
+
+### Block 5: Link Placements
+- Cross-site links (2, conditional — see Section 11 note): both placed in H2-6 (Best Nail Shapes for a Matte Finish); verify URLs via site search before publishing; drop if not genuinely relevant
+- External links (3): Marie Claire trend link in H2-1; TheIndustry.beauty data link in H2-1 or intro; verylookgood Trends-data link in H2-7 (chip myth / trend longevity discussion)
+
+### Block 6: AEO/GEO Plan
+- aeo_assignments:
+  1. "Is matte still trending in 2026?" → H2-1 → direct 2-3 sentence answer immediately after heading
+  2. "Do matte nails chip faster than glossy?" → H2-7 → direct 2-3 sentence answer immediately after heading
+  3. "How do you make matte nails last longer?" → H2-8 → direct 2-3 sentence answer immediately after heading
+  4. "What nail shapes look best with matte polish?" → H2-6 → direct 2-3 sentence answer immediately after heading
+- geo_entity_statements:
+  1. entity: matte top coat → H2-7 or H2-8 → clear declarative definition sentence
+  2. entity: matte-and-gloss combo → H2-5 → clear declarative definition sentence
+
+### Block 7: Active Constraints
+- em_dash_banned: yes, replace with comma/period/parenthesis/restructure
+- banned_vocab_watch: elevate/elevated (overused already in research), unleash, dive in, game-changer, in today's world, boasts, seamless, testament
+- british_english_active: colour, recognise, -ise, -our — every instance
+- keyword_density_reminder: check count after every 2 H2s, target 9 total, denser in first half
+- image_path_reminder: /images/blog/matte-nail-designs/filename.webp — no topic_slug segment
+- internal_link_url_reminder: full paths only, verify cross-site URLs before use
+- hero_image_reminder: frontmatter only, never in body
+- strong_tag_reminder: every primary keyword mention wrapped in `<strong>`, scan after every paragraph
+- strong_tag_reminder: every primary keyword mention wrapped in `<strong>`, scan after every paragraph
