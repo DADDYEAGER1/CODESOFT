@@ -1,0 +1,232 @@
+# INPUT FILE — mermaid nail designs (SOLO MODE / STANDALONE)
+
+## SECTION 1 — FILE AUTHORITY
+THIS FILE IS THE SINGLE SOURCE OF TRUTH FOR THE BLOG GEN AGENT. All values in POST_CONSTANTS are hardcoded — Blog Gen Agent does not ask, adjust, or override them. All keywords, H2 structure, audience intelligence, internal links, and tone defined here must be followed exactly.
+
+## SECTION 2 — POST_CONSTANTS
+- slug: mermaid-nail-designs
+- topic_slug: OMITTED (standalone/solo mode)
+- canonical: https://mirelleinspo.com/blog/mermaid-nail-designs
+- post_type: standalone
+- intent: inspirational (locked via SERP + PAA scan — dominant content is visual idea-roundups; audience is browsing to save/replicate looks, not solving a problem)
+- word_count: 2400 (top-3 average ~1500-1900 words; set above floor to accommodate a genuine depth gap competitors leave — nail shape/skin tone guidance, aftercare, at-home technique — while intent stays firmly inspirational, not tutorial-heavy)
+- image_count: 7 (SESSION OVERRIDE from user — including hero. Overrides standard phase_2 rule_5_sub_rule_a which would set 9)
+- show_inspo_gallery_link: true — see one-line note after file
+- template: center
+- hero_dimensions: 1200x630
+- category: Theme / Nail Art
+- publish_date: 2026-08-13
+- author: jyoti-mirelle
+
+## SECTION 4 — SERP ANALYSIS
+**competitor_gaps** (demand confirmed 2+ sources):
+- Nail shape/length guidance for mermaid designs (short vs almond vs stiletto) — confirmed via RainyRoses, solarnaildesign, Gloss And Vibes FAQ, glamnaildesigns image captions
+- Skin tone/undertone matching for mermaid palettes — confirmed via glamnaildesigns captions + solarnaildesign
+- Durability/aftercare guidance for chrome and 3D elements — confirmed via Gloss And Vibes FAQ + Woman & Home expert quotes
+- "Grown-up"/non-costume positioning vs kids' Little Mermaid theme — confirmed via Woman & Home + Pinterest kids/toenail signal cluster
+- Quick at-home technique explainer folded into an ideas post (competitors separate "how to" from "ideas" entirely) — confirmed via Semilac, DTK, GlamrDip, Country & Townhouse
+
+**missing_semantic_territory:** pedicure/toe variant (strong Pinterest signal, zero competitor coverage), mermaid-effect powder vs. hand-painted scale technique distinction, wedding/formal occasion framing (present in one competitor only — Nailustrous)
+
+**our_strategic_approach:** Lead with an aspirational, browsable roundup like competitors, but fold in the two things every top-3 result skips: a fast "which mermaid nails suit you" shape/tone/vibe framework up front, and a short at-home technique note so the post satisfies both the pure browser and the DIY-curious reader without breaking the inspirational arc.
+
+**recommended_image_count_validation:** SERP pattern is heavily visual (1 image per idea); 7-image override is light relative to competitor norm (10-27 images) but workable — image slots concentrated on the highest-differentiation looks (chrome, 3D shell, pastel, gothic/dark, short-nail proof point).
+
+## SECTION 5 — AUDIENCE INTELLIGENCE
+**who_they_are:** Primarily women 18-35 browsing for their next manicure inspiration ahead of summer/beach season or a specific occasion (vacation, wedding, festival); mix of DIY nail art hobbyists and salon-goers screenshotting references for their tech. Moderate nail art fluency — comfortable with terms like chrome, ombré, French tip, but not necessarily technical execution.
+
+**what_they_want_from_this_post:** A wide, well-organised visual buffet of mermaid looks they can screenshot or save, with enough guidance to pick one that suits their nail length, skin tone, and how "loud" they want the look — without being talked down to.
+
+**what_frustrates_them:** Competitor posts recycle the same 10-15 looks; captions are Instagram-credit-only with no real guidance; almost nothing addresses whether a design will work on short nails or their skin tone; "Little Mermaid" framing skews younger than they want, no adult/elegant positioning; zero mention of how long it lasts or how to look after 3D/chrome elements.
+
+**top_5_pain_points:**
+1. Can't tell which mermaid style suits short nails vs long
+2. Unsure which mermaid colour palette suits their skin tone
+3. Everything reads either "too kiddy" (Ariel-themed) or "too complex" (elaborate 3D)
+4. No guidance on durability — will chrome/3D last through a beach holiday
+5. Wants an at-home option, not just salon-only looks
+
+**exact_user_phrases:** "mermaid nails for short nails", "mermaid nail ideas simple", "cute mermaid nails", "mermaid nails grown up", "mermaid effect nails at home", "mermaid nails for beach vacation", "aesthetic mermaid nails", "mermaid nails not too kiddy", "simple mermaid nails design"
+
+**intent_content_signals:** Visual-first with a photo per idea; short punchy captions (50-80 words) naming the vibe + who it flatters; light structural signposting (shape/tone framework) rather than heavy prose blocks; avoid step-by-step tutorial tone throughout the idea section.
+
+## SECTION 6 — SEMANTIC KEYWORD DATA
+- primary_keyword: mermaid nail designs
+- keyword_variations: mermaid nails, mermaid nail art, mermaid nail ideas, mermaid manicure, mermaid inspired nails, mermaid theme nails, mermaid nail designs 2026
+- cluster_keywords: mermaidcore nails, ocean nails, chrome mermaid nails, iridescent nails, mermaid gel nails, mermaid glitter nails, seashell nails, mermaid scale nails, siren nails, under the sea nails, beach vacation nails, summer nail trends
+- lsi_terms: iridescent finish, chrome powder, colour-shifting polish, mermaid scales, seashell accents, starfish charm, pearl accents, ombré technique, holographic top coat, 3D shell nail art, aquamarine, seafoam green, lagoon blue, duochrome, mermaid effect powder, flakie polish, opalescent finish
+- aeo_terms: what are mermaid nails, how do you do mermaid nails at home, what colours are used for mermaid nails, do mermaid nails work on short nails, what's the best nail shape for mermaid designs, how long do mermaid chrome nails last, can you do mermaid nails without acrylics, what's the difference between mermaid and ocean nails
+- technical_terms: chrome powder, BIAB (Builder in a Bottle), gel top coat, 3D gel, duochrome pigment, flakie polish, sculpted gel, cuticle oil
+- user_language: cute mermaid nails, simple mermaid nails, grown-up mermaid nails, mermaid nails not too kiddy, easy mermaid nails at home, mermaid nails for beach vacation, aesthetic mermaid nails, mermaid nails for short nails
+
+## SECTION 7 — VOICE AND AI QUERIES
+1. What are mermaid nail designs?
+2. How do you create mermaid nails at home?
+3. What colours work best for mermaid nails?
+4. Do mermaid nails suit short nails?
+5. What's the best nail shape for a mermaid manicure?
+6. How long do mermaid chrome nails last?
+7. Can you do mermaid nails without a salon visit?
+8. What's the difference between mermaid nails and ocean nails?
+9. Are mermaid nails only for summer?
+10. What skin tones suit mermaid nail colours?
+11. Do mermaid nails work for a wedding?
+12. How do you make mermaid nails look grown-up rather than costume-y?
+13. What products do I need for mermaid nail art?
+14. Can mermaid nails be done on natural nails?
+15. How do you keep 3D mermaid nail details from breaking?
+
+## SECTION 8 — HOOK AND CTR
+- selected_trigger: Trigger 3 — Specificity/Numbers (with light Trigger 2 FOMO undertone)
+- trigger_rationale: Reader is in browse-and-save mode wanting volume and clarity, not resolving a decision or fixing a mistake — a numbered, specific promise outperforms curiosity or identity framing here.
+- title: "Mermaid Nail Designs: 25 Dreamy Looks for 2026" (54 chars)
+- title_char_count: 54
+- meta_description: "Browse 25 mermaid nail designs from chrome scales to seashell tips, plus the shape and colour picks that suit short nails and every skin tone." (146 chars)
+- meta_char_count: 146
+- intro_hook_brief: Open on the visual pull of mermaid nails as this season's defining ocean-inspired manicure, then promise a browsable range that goes further than the usual chrome-and-glitter repeats — specific enough in shape and tone guidance that she can pick her exact look, not just admire someone else's.
+- first_h2_hook_direction: Frame the first H2 as a quick-answer voice query ("What Are Mermaid Nail Designs?") that orients the reader before the visual browsing begins.
+
+## SECTION 9 — SEARCH JOURNEY
+- reader_arrival_state: Curious and visually motivated, mid-browse for her next manicure, open to being surprised but wary of seeing the same handful of looks again.
+- journey_arc:
+  1. Confirm she's in the right place with a clear definition + trend context
+  2. Quick shape/skin tone framework so she can filter what follows to herself
+  3. Move through idea categories building visual variety and aspiration (chrome → 3D shell → pastel → bold/gothic → short-nail proof)
+  4. Fold in a short at-home technique note without breaking the browsing flow
+  5. Close with durability/aftercare reassurance and a clear "this is the one to save" moment
+- promise_to_deliver: A genuinely wide, well-organised set of mermaid nail looks with enough shape/tone/practical guidance that she leaves knowing exactly which one is hers.
+- exit_state: Inspired and equipped — she has saved a specific look, knows it suits her, and knows roughly how to get it.
+
+## SECTION 10 — CONTENT STRUCTURE
+**h1:** Mermaid Nail Designs: 25 Dreamy Looks for 2026
+
+**h2_structure:**
+1. What Are Mermaid Nail Designs?
+2. Which Mermaid Nail Style Suits You? (shape + skin tone framework)
+3. Chrome and Iridescent Mermaid Nails
+4. 3D Shell and Pearl Mermaid Nails
+5. Pastel and Soft Mermaid Nails
+6. Bold, Dark and Gothic Mermaid Nails
+7. Mermaid Nails for Short Nails
+8. How to Get the Mermaid Effect at Home
+9. How Long Mermaid Nails Last (and How to Look After Them)
+
+**word_budget:**
+- introduction: 220
+- conclusion: 180
+- H2-1 (What Are Mermaid Nail Designs): 180
+- H2-2 (Which Style Suits You): 280
+- H2-3 (Chrome/Iridescent): 320
+- H2-4 (3D Shell/Pearl): 300
+- H2-5 (Pastel/Soft): 260
+- H2-6 (Bold/Dark/Gothic): 280
+- H2-7 (Short Nails): 240
+- H2-8 (At-Home Technique): 260
+- H2-9 (Longevity/Aftercare): 180
+
+## SECTION 11 — INTERNAL LINKS
+| URL | Title | Anchor Text | Placement | Type |
+|---|---|---|---|---|
+| /blog/chrome-nails/mermaid-chrome-nails | Mermaid Chrome Nails: Iridescent Designs for 2026 | the full mermaid chrome nails edit | H2-3 (Chrome/Iridescent) — natural deep-dive link for readers wanting the chrome-specific version | cross-site |
+| /blog/beach-nails | Beach Nail Ideas: Best Coastal Manicures for Summer | our full guide to coastal manicure ideas | H2-1 or intro — broader seasonal context link | cross-site |
+| /inspo/chrome-nails-inspiration-gallery | Chrome Nails: 91+ Stunning Designs & Inspiration | the chrome nails inspiration gallery | Gallery link (see show_inspo_gallery_link note) | gallery |
+
+Note: only 2 cross-site links selected (cap: 2) from strongest relevance matches; zodiac/turquoise posts excluded as too tangential to serve as primary link value for this exact keyword. Total links: 3 (within 4-6 cap, light due to standalone/no-cluster status).
+
+## SECTION 12 — VOICE AND TONE
+- recommended_voice: Aspirational guide with a knowledgeable edge
+- tone_characteristics: Warm and visually descriptive; confident naming of techniques (not hedgy); inclusive across skin tones and nail lengths; avoids costume/kids framing; light editorial authority (trend context) without being salesy
+- language_style: Second person ("you"), short punchy sentences in idea captions, slightly longer explanatory sentences in framework sections, minimal jargon left unexplained
+- audience_match: Matches a reader who wants to feel seen as sophisticated rather than twee, while still fully indulging the fantasy/aspiration of the mermaid aesthetic
+
+## SECTION 13 — EXTERNAL LINKS
+| URL | Context | Anchor Suggestion |
+|---|---|---|
+| (none sourced — byrdie/allure/nailpro site: searches returned no usable indexed content this session, one-attempt protocol applied) | — | — |
+
+Gap flagged: external authority links could not be sourced from mandated sites this session. Blog Gen Agent should proceed without external links or Jy can supply an alternative source.
+
+## SECTION 14 — EXECUTION PLAN
+
+### Block 1: Keyword Execution
+- primary_keyword: mermaid nail designs
+- top_3_density_baseline: ~4 mentions (estimated from glamnaildesigns, maniology, nailustrous)
+- total_mention_target: 7 (baseline 4 + 3)
+- first_100_words_plan:
+  - mention_1: sentence 1-2 of intro — opening definition/trend hook
+  - mention_2: sentence 4-5 of intro — transitioning into the promise of the roundup
+- first_half_target: 4 mentions — words 1-1200
+- second_half_target: 3 mentions — words 1200-2400
+- strong_tag_rule: every one of the 7 mentions wrapped in `<strong>` tags, no exceptions
+- keywords_to_avoid_active: none (standalone/solo mode — no cluster_context.json, no reserved list)
+
+### Block 2: Word Budget
+- total_target: 2400 words (±50 tolerance)
+- introduction: 220
+- conclusion: 180
+- h2_budgets:
+  1. What Are Mermaid Nail Designs? — 180 words — low complexity
+  2. Which Mermaid Nail Style Suits You? — 280 words — medium complexity
+  3. Chrome and Iridescent Mermaid Nails — 320 words — medium complexity
+  4. 3D Shell and Pearl Mermaid Nails — 300 words — medium complexity
+  5. Pastel and Soft Mermaid Nails — 260 words — low complexity
+  6. Bold, Dark and Gothic Mermaid Nails — 280 words — medium complexity
+  7. Mermaid Nails for Short Nails — 240 words — medium complexity
+  8. How to Get the Mermaid Effect at Home — 260 words — high complexity
+  9. How Long Mermaid Nails Last — 180 words — low complexity
+- tracking_rule: check running total after every 2 H2 sections; cut before moving on if over budget
+
+### Block 3: Image Plan
+- total_images: 7
+- hero_image: frontmatter only, never in body
+- body_images: 6
+- assignments:
+  1. place_after: H2-3 (Chrome and Iridescent) — chrome/iridescent scale-effect mermaid nail set
+  2. place_after: H2-4 (3D Shell and Pearl) — sculpted 3D shell + pearl accent mermaid design
+  3. place_after: H2-5 (Pastel and Soft) — pastel ombré mermaid look
+  4. place_after: H2-6 (Bold/Dark/Gothic) — deep-tone gothic mermaid design
+  5. place_after: H2-7 (Short Nails) — short-nail mermaid manicure proof point
+  6. place_after: H2-2 (Which Style Suits You) — mixed grid/collage showing shape+tone variety
+- image_type_rule: ALL body images = inspirational mermaid nail design photography. No infographics, no process diagrams, no step-by-step visuals.
+- path_rule: /images/blog/mermaid-nail-designs/filename.webp (no topic_slug segment — standalone post)
+
+### Block 4: Opening Technique Assignments
+- Introduction: Technique 2 (Trend Statement)
+- H2-1 (What Are Mermaid Nail Designs): Technique 4 (Direct Definition)
+- H2-2 (Which Style Suits You): Technique 1 (The Claim)
+- H2-3 (Chrome/Iridescent): Technique 3 (The Reframe)
+- H2-4 (3D Shell/Pearl): Technique 2 (Trend Statement)
+- H2-5 (Pastel/Soft): Technique 1 (The Claim)
+- H2-6 (Bold/Dark/Gothic): Technique 4 (Direct Definition)
+- H2-7 (Short Nails): Technique 3 (The Reframe)
+- H2-8 (At-Home Technique): Technique 2 (Trend Statement)
+- H2-9 (Longevity/Aftercare): Technique 1 (The Claim)
+- Conclusion: Technique 3 (The Reframe)
+- banned_opener_rule: check every opener against banned_opening_approaches before writing the second sentence
+
+### Block 5: Link Placements
+| Anchor Text | Full URL | Section | Context | Type |
+|---|---|---|---|---|
+| the full mermaid chrome nails edit | /blog/chrome-nails/mermaid-chrome-nails | H2-3 | after describing chrome/iridescent looks, point deeper for readers wanting that specific direction | cross-site |
+| our full guide to coastal manicure ideas | /blog/beach-nails | H2-1 or intro | when establishing mermaid nails within the broader summer/beach nail context | cross-site |
+| the chrome nails inspiration gallery | /inspo/chrome-nails-inspiration-gallery | after body images (auto-appended) | gallery link, auto-rendered per showInspoGalleryLink flag | gallery |
+
+### Block 6: AEO/GEO Plan
+- aeo_assignments:
+  1. "What are mermaid nail designs?" → H2-1 → direct 2-3 sentence answer immediately after heading
+  2. "Do mermaid nails work on short nails?" → H2-7 → direct answer paragraph before elaboration
+  3. "How do you do mermaid nails at home?" → H2-8 → direct answer opening the section
+  4. "How long do mermaid chrome nails last?" → H2-9 → direct answer opening the section
+- geo_entity_statements:
+  1. entity: chrome powder — assigned_to: H2-3 — clear declarative definition of what chrome powder is and how it creates the mermaid iridescent effect
+  2. entity: mermaid nail designs (core term) — assigned_to: H2-1 — confident declarative definition, no hedging
+
+### Block 7: Active Constraints
+- em_dash_banned: no long em dash anywhere; replace with comma/new sentence/parentheses/but/restructure
+- banned_vocab_watch: [elevate, effortless, seamless, dive into (ironic overuse risk given ocean theme), unleash, must-have, game-changer]
+- british_english_active: colour, recognise, -ise, -our — every instance
+- keyword_density_reminder: count mentions after every 2 H2s; verify on track for 7 total, denser in first half
+- image_path_reminder: /images/blog/mermaid-nail-designs/filename.webp — no topic_slug segment
+- internal_link_url_reminder: full paths only, /blog/[slug] format, never bare slug
+- hero_image_reminder: hero = frontmatter only, never in body
+- strong_tag_reminder: every primary keyword mention wrapped in `<strong>` tags, scan after every paragraph
