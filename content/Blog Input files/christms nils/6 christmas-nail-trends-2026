@@ -1,0 +1,254 @@
+CLUSTER MODE — cluster context loaded (Christmas Nails cluster, post_id 26)
+
+# SECTION 1: FILE AUTHORITY
+THIS FILE IS THE SINGLE SOURCE OF TRUTH FOR THE BLOG GEN AGENT. All values in POST_CONSTANTS are hardcoded — Blog Gen Agent does not ask, adjust, or override them. All keywords, H2 structure, audience intelligence, internal links, and tone defined here must be followed exactly.
+
+# SECTION 2: POST_CONSTANTS
+- slug: christmas-nail-trends-2026
+- topic_slug: christmas-nails
+- canonical: https://mirelleinspo.com/blog/christmas-nails/christmas-nail-trends-2026
+- post_type: spoke
+- intent: seasonal_trend
+- word_count: 1900 (±50 tolerance)
+- image_count: 7 (1 hero + 6 body) — seasonal_trend does not match rules 1–4 (not a X+ slug, not pillar, not tutorial, not comparison); flat default applies
+- show_inspo_gallery_link: false — **flagged decision, see note below**
+- template: posts
+- hero_dimensions: 1200x675
+- category: Christmas Nails
+- publish_date: 2026-08-14
+- author: jyoti-mirelle
+
+**NOTE ON show_inspo_gallery_link:** cluster_context.json's cluster_metadata block does not contain a `show_inspo_gallery_link_cluster_default` field for this cluster. Per the rule, cluster mode must read this value verbatim rather than re-deciding it — but no value exists to read. Defaulted to `false` since this post's intent is seasonal_trend, not inspirational-with-browse-angle, so the underlying trigger logic (had it applied) would also resolve to false. Recommend the cluster_context.json be updated with this field before running remaining 30 posts in this cluster, since several of them ARE inspirational/browse-angle and will hit this same gap.
+
+# SECTION 3: CLUSTER SNAPSHOT
+- pillar_slug: christmas-nail-ideas
+- pillar_title: Christmas Nail Ideas
+- pillar_primary_keyword: christmas nails
+- this_post_slug: christmas-nail-trends-2026
+- this_post_role: spoke
+- show_inspo_gallery_link_cluster_default: NOT PRESENT in source file — see note above
+- keywords_to_avoid: christmas nails; almond christmas nails; short christmas nails; coffin christmas nails; french tip christmas nails; candy cane nail designs; plaid christmas nails; reindeer nail designs; gingerbread santa gnome nails; christmas wreath nail art; red christmas nails; green christmas nails; pink christmas nails; gold christmas nails; blue christmas nails; non-traditional christmas nail colors; christmas nail colors; how to do christmas nail art at home; christmas tree nail art tutorial; reindeer nail art tutorial; santa nail art tutorial; gingerbread man nail art tutorial; gnome nail art tutorial; mistletoe nail art tutorial; old money christmas nails; christmas nails for kids; simple christmas nails; christmas nails for older women; christmas nail colors for skin tone; matching christmas nails; holiday nails (vacation meaning); old money nails fall winter; nails for older women; nail colors for fair skin. Also avoid drifting into the SITE'S EXISTING "nail trends 2026" post territory (general, non-Christmas) — this post must stay locked to the Christmas-specific angle of trend forecasting, never the general 2026 nail trend story.
+
+# SECTION 4: SERP ANALYSIS
+**competitor_gaps** (demand-validated on 2+ sources):
+- Aura nails / pink-cherry aura as a Christmas-to-New Year's crossover trend — confirmed on TikTok (Her Campus "12 New Year's Nails 2026" roundup) + NailTrail "25 Nail Trends 2026" + Accio TikTok trend data. None of the 5 fetched competitor pages mention aura nails at all.
+- Glitter bow nail art + disco/gemstone party nails as a specific 2026 TikTok-driven Christmas motif — confirmed on TikTok (Her Campus) + Pinterest search results. Chaylor & Mads mentions "bows" generically but not the glitter-bow/disco-ball specific 2026 framing.
+- Explicit navy-replacing-green shift in "dark Christmas" — confirmed on SHANGMENG (single source) + cross-referenced against Vogue Scandinavia's broader "cool blue" 2026 color forecast and Glossify's "cool blue dominates 2026" prediction. Two independent sources confirm blue/navy is rising as a Christmas-adjacent dark-tone alternative to green.
+- Burgundy outperforming red in "classy Christmas" search behavior — confirmed on SHANGMENG + Quora ("festive but not too Christmassy" thread explicitly seeking red alternatives) + AOL/Cosmopolitan burgundy-vs-red trend piece.
+
+**missing_semantic_territory:**
+- No fetched competitor page frames Christmas nails through a genuine month-by-month or year-over-year "what's different from last year" trend lens — they are either static product roundups (Manucurist, SHANGMENG's design list) or generic design listicles (Chaylor & Mads, CutieCure). This post's forecast framing is the differentiator.
+- "Jelly plaid" and "argyle" as the specific 2026 evolution of Christmas plaid (vs. plain tartan) — validated via Who What Wear's plaid trend piece and the site's own existing plaid-nails post, but NOT covered by any of the 5 competitor pages, which mention plaid only as a static generic pattern.
+- Chrome gold vs. champagne shimmer vs. jewel emerald as three distinct December 2026 metallic directions (not just "gold is festive") — SHANGMENG's monthly calendar covers this but not their own Christmas-specific piece.
+
+**our_strategic_approach:** None of the 5 fetched competitor pages actually deliver on "trends" as a forecast — they default to static product/design roundups dressed in a trend headline. This post's edge is treating 2026 as a genuine year-over-year shift: naming what's replacing what (navy replacing deep green, burgundy outperforming red, aura nails entering the Christmas-to-NYE crossover window that none of the 5 fetched pages discuss). Structurally, this post opens with the shift statement (what's different this year) rather than a static "here are colors," uses real cross-referenced signals (TikTok + Pinterest + Quora demand) to justify each trend claim rather than presenting opinion as fact, and closes each trend section with a concrete "how to wear it" application — closer to WWW's/Vogue's authoritative trend-piece format than to the competitor set's product-roundup format. This also cleanly differentiates the post from the site's own broader "Nail Trends 2026" post by staying strictly Christmas-scoped.
+
+**top_5_fetched_pages_summary:**
+| URL | Real word count | Real H2 count | Real keyword mentions | Note |
+|---|---|---|---|---|
+| shangmengnails.com/.../christmas-fake-nails-2026 | ~2,950 | 6 H2s | 3 | Strongest structural depth; genuine color-palette trend table; heavily product-CTA driven |
+| chaylorandmads.com/christmas-nails | ~3,400 | 20+ H2s (listicle) | 2 | Massive breadth (95 designs) but shallow per-design; no real "trend" analysis, pure roundup |
+| cutiecure.app/blog/christmas-nail-art-ideas | ~750 | 10 H2s (numbered) | 2 | Short, AI-app-promotional; thin on genuine trend reasoning |
+| us.manucurist.com/.../collection-holiday | ~1,450 | 4 H2s | 1 | Strong editorial voice, real product-story depth, but colors are brand-specific not industry-wide |
+| refinery29.com/short-christmas-nails | ~480 | 0 (image-caption format) | 0 | High authority (major outlet) but shortest, weakest on the "2026" or "trend" framing specifically |
+
+**recommended_image_count_validation:** 7 images (1 hero + 6 body) aligns with SERP pattern — SHANGMENG uses ~7 section images, Manucurist uses ~9 lifestyle/product shots, Chaylor & Mads uses far more but at much lower individual depth. 6 body images comfortably covers: hero trend statement, color palette visual, pattern/plaid visual, metallic/gold visual, aura/NYE-crossover visual, and a closing "how to wear it" visual.
+
+**best_external_sources_found:** SHANGMENG's two pieces (christmas-fake-nails-2026 and nail-trends-by-month-2026-calendar) are the most genuinely citation-worthy — real trend reasoning, real color-cycle logic, named data sources (WGSN, Pantone, Mintel). Manucurist has real editorial voice but is brand-promotional. Selected below in Section 13.
+
+# SECTION 5: AUDIENCE INTELLIGENCE
+**who_they_are:** Someone already comfortable with Christmas nails as a category (they're not asking "what IS a Christmas nail") who wants to know what's NEW this year specifically — trend-aware, likely follows nail content on Pinterest/TikTok already, checking before booking a salon appointment or ordering press-ons so they don't show up with "last year's" look.
+
+**what_they_want_from_this_post:** A confident, specific answer to "what's actually different in 2026" — not another 50-design static roundup (that's the pillar's job). They want named shifts (navy vs. green, burgundy vs. red, aura nails entering the mix) they can repeat to a nail tech or search for confidently.
+
+**what_frustrates_them:** Nearly every "2026 Christmas nail trends" result is either a disguised product listicle (SHANGMENG, Manucurist) or a generic "red, green, gold" roundup with a 2026 label slapped on with no real reasoning for why anything is trending. Direct Quora evidence: people are explicitly asking for "festive but not too Christmassy" and alternatives to the standard palette, showing frustration with same-old default coverage.
+
+**top_5_pain_points:**
+1. Can't tell what's genuinely new vs. recycled year-old content with a "2026" title swapped in
+2. Wants a specific reason/data point behind each trend claim, not just "this is trending"
+3. Worried about looking dated at a specific event (office party vs. Christmas Eve vs. NYE crossover)
+4. Confused about how plaid/tartan has evolved (jelly plaid, argyle) vs. the traditional pattern they already know
+5. Wants to know if their preferred non-red color (from prior browsing on the color-alternatives spoke) is trend-current or falling off
+
+**exact_user_phrases:** "festive but not too Christmassy," "what nail colors are trending right now in 2026," "besides red, green, and white," "classy not festive nails," "navy paired with gold," "burgundy over red," "aura nails," "jelly plaid," "chrome gold coffin nails," "glitter bow nail art"
+
+**intent_content_signals:** Reader responds to confident, named claims (a real forecast voice, not hedging); short trend-per-section format with a clear color/pattern name as each H2; visual anchoring per trend (they want to see the color, not just read it); a closing "how to wear it" or "where this shows up" application per section rather than pure description; year-over-year comparison language ("this is replacing X") performs strongly per the SERP data.
+
+# SECTION 6: SEMANTIC KEYWORD DATA
+- primary_keyword: christmas nail trends 2026
+- total_mention_target: 4 (top_5 average of 1.6 + 2–3)
+- first_100_words_rule: primary keyword must appear twice in first 100 words — mandatory
+- keyword_variations: christmas nail trends, 2026 christmas nails, trending christmas nail colors 2026, christmas manicure trends, holiday nail trends 2026, what's trending for christmas nails, christmas nail color trends
+- cluster_keywords: navy christmas nails, burgundy christmas nails, jelly plaid nails, argyle christmas nails, chrome gold nails, aura nails christmas, champagne shimmer nails, jewel emerald nails, glitter bow nails, december nail trends, holiday nail color forecast, 2026 nail color of the season, cat-eye christmas nails, velvet finish christmas nails
+- lsi_terms: dark Christmas nails, classy Christmas nails, festive but not too Christmassy, non-traditional Christmas colors, cool-toned holiday nails, warm metallic finish, jelly finish nails, Christmas-to-New-Year crossover nails, nail color forecast, seasonal palette shift, tartan nail pattern, micro French tip, disco nails, gemstone nail art, holographic gold nails
+- aeo_terms: "What nail colors are trending for Christmas 2026?", "What is replacing green in Christmas nail trends?", "Is burgundy or red more trendy for Christmas 2026?", "What are aura nails and are they trending for Christmas?", "What's the difference between plaid and jelly plaid nails?", "What Christmas nail colors work for New Year's Eve too?", "Are chrome nails still trending for Christmas 2026?", "What's the most requested Christmas nail color this year?"
+- technical_terms: chrome finish, jelly polish, cat-eye gel, holographic topcoat, velvet matte finish, French tip, negative space nail art, gel overlay
+- user_language: "not too Christmassy," "classy not festive," "besides red, green, and white," "trending right now," "what's everyone getting this year," "office party appropriate," "goes into New Year's too," "on trend but not costumey"
+
+# SECTION 7: VOICE AND AI QUERIES
+1. What nail colors are trending for Christmas 2026?
+2. What Christmas nail color is replacing traditional dark green this year?
+3. Is burgundy more popular than red for Christmas nails in 2026?
+4. What are aura nails and do they work for Christmas?
+5. What's the difference between plaid and jelly plaid Christmas nails?
+6. What Christmas nail trends also work for New Year's Eve?
+7. Are chrome Christmas nails still trending in 2026?
+8. What's a classy Christmas nail color that isn't red or green?
+9. What nail pattern is trending for Christmas 2026 besides plaid?
+10. What's the most requested Christmas nail color this year?
+11. How has the Christmas nail color palette changed from last year?
+12. What metallic finish is trending for Christmas nails 2026?
+13. Are gold Christmas nails still in style for 2026?
+14. What Christmas nail trend works for both office parties and Christmas Eve?
+15. Is navy blue a Christmas nail color now?
+
+# SECTION 8: HOOK AND CTR
+**real_serp_findings_summary:** All 5 fetched competitor titles are either generic ("Christmas Nails 2026: Colors, Polishes & Festive Nail Art Ideas," "10 Stunning Christmas Nail Art Ideas for 2026") or number-led design roundups (SHANGMENG's "30 Festive Press-On Designs," Chaylor & Mads' "95 Fun & Festive Christmas Nails"). None front-load a genuine "trends" promise with a forecast angle — they all promise designs/ideas, not trend analysis. This is the clear title gap.
+
+**selected_option_rationale:** Option 2 was selected because it names the specific shift (navy/burgundy replacing the expected default) rather than a generic "trends" claim, which directly answers the SERP gap and matches the audience's demonstrated Quora/search behavior of actively seeking alternatives to red/green.
+
+**title:** "Christmas Nail Trends 2026: What's Actually New This Year" (56 chars)
+**title_char_count:** 56
+**meta_description:** "Navy is replacing green, burgundy is beating red. Here's exactly what's trending for christmas nail trends 2026 — and how to wear it." (135 chars)
+**meta_char_count:** 135
+**intro_hook_brief:** Open by naming the shift directly — don't lead with "it's Christmas nail season again." Lead with what's different: navy is edging out the expected dark green, burgundy is quietly outperforming red in the "classy Christmas" search behavior, and aura nails are crossing over from New Year's content into Christmas week for the first time. Establish immediately that this post is a forecast, not another design roundup.
+**first_h2_hook_direction:** Apply the same "naming the shift" energy to the first H2 — don't open with "here are the colors," open with the specific claim (e.g., what's replacing what) so the pattern set in the intro carries through immediately.
+
+# SECTION 9: SEARCH JOURNEY
+**reader_arrival_state:** Trend-aware and slightly ahead of the curve already, checking to confirm they're not about to book or buy something dated.
+**journey_arc:**
+- Land on a confident shift statement (not a generic color list) that confirms this is forecast content, not a roundup
+- Move through named trend directions in order of confidence/demand (color shift → pattern evolution → metallic/finish shift → crossover trend)
+- Each section resolves with a concrete "how to wear/ask for this" application
+- Close with a clear "if you only take one thing" recommendation that feels like a confident final call, not a hedge
+**promise_to_deliver:** That this post will tell them specifically what's different in 2026 versus prior years — named shifts with reasoning, not a repackaged design list.
+**exit_state:** Confident and ready to book or order — they know exactly what to ask for and why it's current.
+
+# SECTION 10: CONTENT STRUCTURE
+**h1:** Christmas Nail Trends 2026: What's Actually New This Year
+
+**h2_structure:**
+1. The Big Shift: What's Different About Christmas Nails in 2026
+2. Navy Is Replacing Green in Dark Christmas Manicures
+3. Burgundy Is Quietly Outperforming Red
+4. Jelly Plaid and Argyle: Christmas Pattern Nails Have Evolved
+5. Chrome Gold, Champagne, and Jewel Emerald: The Three Metallic Directions
+6. Aura Nails Are Crossing Over From New Year's Into Christmas Week
+7. How to Choose Your Christmas Nail Trend for Your Event
+
+**word_budget:**
+- introduction: 220 words
+- H2-1 (The Big Shift): 240 words
+- H2-2 (Navy replacing green): 260 words
+- H2-3 (Burgundy vs red): 260 words
+- H2-4 (Jelly plaid/argyle): 250 words
+- H2-5 (Metallic directions): 260 words
+- H2-6 (Aura nails crossover): 230 words
+- H2-7 (How to choose): 200 words
+- conclusion: 180 words
+(Total: 1900)
+
+# SECTION 11: INTERNAL LINKS
+**all_internal_links:**
+1. url_or_slug: /blog/christmas-nails/christmas-nail-ideas | title: Christmas Nail Ideas | anchor_text: "christmas nail trends 2026" | placement_note: Introduction, first mention, linking back to pillar | link_type: cluster-pillar
+2. url_or_slug: /blog/christmas-nails/plaid-christmas-nails | title: Plaid Christmas Nails | anchor_text: "plaid christmas nails" | placement_note: H2-4 (Jelly Plaid and Argyle), when introducing the pattern before pivoting to its 2026 evolution | link_type: cluster-spoke
+3. url_or_slug: /blog/christmas-nails/blue-christmas-nails | title: Blue Christmas Nails | anchor_text: "blue christmas nails" | placement_note: H2-2 (Navy Is Replacing Green), when the navy trend is introduced | link_type: cluster-spoke
+4. url_or_slug: /blog/christmas-nails/old-money-christmas-nails | title: Old Money Christmas Nails | anchor_text: "old money christmas nails" | placement_note: H2-3 (Burgundy vs Red) or H2-5 (Metallic directions), as the aesthetic-identity crossover for the elevated/classy angle | link_type: cluster-spoke
+5. url_or_slug: https://mirelleinspo.com/blog/nail-trends-2026/nail-trends-2026 | title: Nail Trends 2026: Every Look Dominating This Year | anchor_text: "the full 2026 nail trend forecast across every season" | placement_note: H2-1 (The Big Shift), as a pointer for readers who want trend context beyond Christmas specifically | link_type: cross-site
+6. url_or_slug: https://mirelleinspo.com/blog/aesthetic-nails/quiet-luxury-nails-winter | title: Quiet Luxury Nails for Winter | anchor_text: "how to keep a Christmas manicure elegant instead of costumey" | placement_note: H2-3 (Burgundy vs Red) or H2-7 (How to Choose), where the classy/restrained angle is discussed | link_type: cross-site
+
+(5 internal links total — within the 4–6 cap)
+
+# SECTION 12: VOICE AND TONE
+**recommended_voice:** Confident trend forecaster — closer to a beauty editor delivering a forecast than an inspiration blogger presenting options.
+**tone_characteristics:** Declarative and specific (names the shift, doesn't hedge); slightly editorial/authoritative without being cold; forward-looking ("this year," "this is replacing"); concrete over vague (names actual color/pattern terms, not "festive vibes"); confident closer per section rather than open-ended.
+**language_style:** Short, direct sentences for trend claims; second person "you" when giving application advice; avoids stacking adjectives — one precise descriptor beats three vague ones; light use of contrast structure ("X is out, Y is in") since that's the native shape of trend content.
+**audience_match:** This reader already knows Christmas nails as a category and wants signal, not exploration — the confident, named-shift voice respects that they're trend-literate and directly answers their demonstrated frustration with generic recycled content.
+
+# SECTION 13: EXTERNAL LINKS
+1. url: https://shangmengnails.com/blogs/trends/christmas-fake-nails-2026 | context: Citing the specific 2026 color palette table (navy replacing green, burgundy outperforming red) when making the core trend claims in H2-2/H2-3 | anchor_suggestion: "this year's Christmas color palette data"
+2. url: https://shangmengnails.com/blogs/trends/nail-trends-by-month-2026-calendar | context: Citing the December metallic-direction breakdown (chrome gold, champagne shimmer, jewel emerald) in H2-5 | anchor_suggestion: "December's three metallic nail directions"
+
+# SECTION 14: EXECUTION PLAN
+
+## Block 1: Keyword Execution
+- primary_keyword: christmas nail trends 2026
+- top_5_density_baseline: 1.6 (rounded reference; real counts were 3, 2, 2, 1, 0)
+- total_mention_target: 4
+- first_100_words_plan:
+  - mention_1: sentence 1–2 of introduction — in the opening shift statement itself
+  - mention_2: sentence 4–5 of introduction — reinforcing after the specific navy/burgundy claim
+- first_half_target: 3 mentions — first ~950 words (intro through H2-4)
+- second_half_target: 1 mention — second ~950 words (H2-5 through conclusion)
+- strong_tag_rule: every one of the 4 mentions wrapped in `<strong>` tags, no exceptions
+- keywords_to_avoid_active: full list from Section 3 — never used as focus terms
+
+## Block 2: Word Budget
+- total_target: 1900 words (±50, never exceed)
+- introduction: 220
+- conclusion: 180
+- h2_budgets:
+  - The Big Shift: 240 words, complexity: medium
+  - Navy Replacing Green: 260 words, complexity: medium
+  - Burgundy vs Red: 260 words, complexity: medium
+  - Jelly Plaid and Argyle: 250 words, complexity: high (requires careful differentiation from sibling plaid-christmas-nails post)
+  - Metallic Directions: 260 words, complexity: medium
+  - Aura Nails Crossover: 230 words, complexity: medium
+  - How to Choose: 200 words, complexity: low
+- tracking_rule: track running word total after every H2; cut before moving on if over budget
+
+## Block 3: Image Plan
+- total_images: 7
+- hero_image: frontmatter only, never in body
+- body_images: 6
+- assignments:
+  1. place_after: H2-1 (The Big Shift) | image_type: standard_inspiration | section_context: a single striking 2026 Christmas manicure that visually signals "new" — ideally navy or burgundy toned, setting the forecast tone immediately
+  2. place_after: H2-2 (Navy Replacing Green) | image_type: standard_inspiration | section_context: navy Christmas nail look, coffin or almond shape, paired with gold or silver accent per SERP data
+  3. place_after: H2-3 (Burgundy vs Red) | image_type: standard_inspiration | section_context: burgundy/wine-toned Christmas manicure, elegant finish, office-appropriate styling
+  4. place_after: H2-4 (Jelly Plaid and Argyle) | image_type: standard_inspiration | section_context: jelly plaid or argyle Christmas nail set showing the sheer/milky finish evolution distinct from traditional bold tartan
+  5. place_after: H2-5 (Metallic Directions) | image_type: infographic | section_context: clean graphic layout comparing the three December metallic directions side by side (chrome gold vs. champagne shimmer vs. jewel emerald) — labeled swatches or clean color blocks, not a photo comparison
+  6. place_after: H2-6 (Aura Nails Crossover) | image_type: standard_inspiration | section_context: soft aura/gradient manicure in a Christmas-appropriate colorway (red-to-pink or gold-to-white), positioned as the Christmas-to-New-Year crossover look
+- image_type_rule: only slot 5 is an infographic (comparison-style content genuinely needs it); all others are standard_inspiration photography. No tool/equipment or hands-at-work shots. No literal photo comparison for the metallic slot — must be a clean graphic layout.
+- path_rule: /images/blog/christmas-nails/christmas-nail-trends-2026/filename.webp
+
+## Block 4: Opening Technique Assignments
+- Introduction: Technique 2 — The Shift Statement (naming what's different immediately)
+- The Big Shift: Technique 4 — The Direct Claim
+- Navy Replacing Green: Technique 1 — The Claim
+- Burgundy vs Red: Technique 3 — The Reframe
+- Jelly Plaid and Argyle: Technique 1 — The Claim
+- Metallic Directions: Technique 4 — The Direct Claim
+- Aura Nails Crossover: Technique 3 — The Reframe
+- How to Choose: Technique 1 — The Claim
+- Conclusion: Technique 3 — The Reframe
+(No two consecutive sections repeat; conclusion uses Technique 3 per rule)
+- banned_opener_rule: check every opener against banned_opening_approaches in Blog Gen prompt before writing the second sentence
+
+## Block 5: Link Placements
+1. anchor_text: "christmas nail trends 2026" | full_url: /blog/christmas-nails/christmas-nail-ideas | place_in_section: Introduction | placement_context: first mention, linking back to pillar naturally within the opening shift statement | link_type: cluster-pillar
+2. anchor_text: "blue christmas nails" | full_url: /blog/christmas-nails/blue-christmas-nails | place_in_section: Navy Is Replacing Green | placement_context: when introducing navy as a rising Christmas color choice | link_type: cluster-spoke
+3. anchor_text: "old money christmas nails" | full_url: /blog/christmas-nails/old-money-christmas-nails | place_in_section: Burgundy Is Quietly Outperforming Red | placement_context: when discussing the elevated/classy positioning of burgundy | link_type: cluster-spoke
+4. anchor_text: "plaid christmas nails" | full_url: /blog/christmas-nails/plaid-christmas-nails | place_in_section: Jelly Plaid and Argyle | placement_context: referencing the base pattern before explaining its 2026 evolution | link_type: cluster-spoke
+5. anchor_text: "the full 2026 nail trend forecast across every season" | full_url: https://mirelleinspo.com/blog/nail-trends-2026/nail-trends-2026 | place_in_section: The Big Shift | placement_context: pointing readers who want broader context beyond Christmas | link_type: cross-site
+6. anchor_text: "how to keep a Christmas manicure elegant instead of costumey" | full_url: https://mirelleinspo.com/blog/aesthetic-nails/quiet-luxury-nails-winter | place_in_section: How to Choose Your Christmas Nail Trend for Your Event | placement_context: for readers wanting the restrained/office-appropriate direction | link_type: cross-site
+
+## Block 6: AEO/GEO Plan
+- aeo_assignments:
+  1. "What nail colors are trending for Christmas 2026?" → The Big Shift → direct 2–3 sentence answer immediately after H2
+  2. "Is burgundy or red more trendy for Christmas 2026?" → Burgundy Is Quietly Outperforming Red → direct answer immediately after H2
+  3. "What are aura nails and are they trending for Christmas?" → Aura Nails Are Crossing Over → direct answer immediately after H2
+  4. "What's the difference between plaid and jelly plaid nails?" → Jelly Plaid and Argyle → direct answer immediately after H2
+- geo_entity_statements:
+  1. entity: Jelly plaid | assigned_to_section: Jelly Plaid and Argyle | execution: clear declarative definition distinguishing it from traditional bold tartan plaid
+  2. entity: Aura nails | assigned_to_section: Aura Nails Are Crossing Over | execution: clear declarative definition of the gradient/halo technique
+  3. entity: Chrome gold finish | assigned_to_section: Metallic Directions | execution: clear declarative definition distinguishing chrome from standard metallic polish
+
+## Block 7: Active Constraints
+- em_dash_banned: no long em dashes anywhere; replace with comma, new sentence, parentheses, "but," or restructure
+- banned_vocab_watch: elevate, effortless, must-have, game-changer, timeless, chic (overused in this specific competitor set — watch closely), stunning, gorgeous
+- american_english_active: color, favorite, personalize — throughout, no British spellings
+- keyword_density_reminder: after every 2 H2 sections, count running mentions against the 4-mention target; first half must run denser (3 of 4 mentions by H2-4)
+- image_path_reminder: /images/blog/christmas-nails/christmas-nail-trends-2026/filename.webp
+- internal_link_url_reminder: cluster links = /blog/christmas-nails/[slug]; cross-site links = full exact URL as discovered
+- hero_image_reminder: hero is frontmatter only, never in body
+- strong_tag_reminder: all 4 primary keyword mentions wrapped in `<strong>` tags, scanned after every paragraph
