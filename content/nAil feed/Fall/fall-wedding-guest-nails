@@ -1,0 +1,163 @@
+# NAIL FEED INPUT FILE — SOURCE OF TRUTH FOR POST GEN AGENT
+MODE B — trend scan, topic selected by user from shortlist. Scope narrowed during research: original "fall occasion guide" (Thanksgiving + wedding guest + harvest dinner) collapsed to fall wedding guest nails only, since Thanksgiving is already covered by three existing posts on this site and "harvest dinner" is not a distinct searched entity. Wedding guest specifically (not bridal) is a genuine, confirmed gap.
+
+## SECTION 1 — FILE AUTHORITY
+This file is the single source of truth for the Nail Feed Post Gen Agent. All values in POST_CONSTANTS are hardcoded. Every entity, sentiment/trend rationale, emotion trigger, structure, and link defined here must be followed exactly.
+
+## SECTION 2 — POST_CONSTANTS
+- slug: fall-wedding-guest-nails
+- canonical: https://mirelleinspo.com/nail-feed/fall-wedding-guest-nails
+- word_count: 1500 (fixed, ±50 tolerance)
+- image_count: 4 (fixed: 1 hero + 3 body)
+- category: Nail Trends
+- publish_date: 2026-09-03
+- author: jyoti-mirelle
+
+## SECTION 3 — SENTIMENT AND ENTITY BRIEF
+**post_gen_instruction:** Named entity (fall wedding guest, not bride) must be clear from the first sentence. This is explicitly NOT bridal content, and should be framed against the site's existing bridal coverage rather than duplicating it.
+
+- **sentiment_read:** mixed, with a specific real anxiety underneath. The core tension is genuine and named directly in outside coverage: guests want to look good and put-together, but there's real, specific social pressure not to "outshine the bride," which is a distinct worry from anything a bride herself faces. There's also a secondary, more practical worry about matching formality level correctly, since a wedding guest doesn't get to set the dress code, they have to read it.
+- **the_specific_frustration_or_desire:** Guests want a clear, confident answer to "what's actually appropriate here," calibrated to how formal or casual the wedding is, and specifically want reassurance that fall's rich colour palette (burgundy, chocolate, terracotta) is not automatically "too much" the way a bright colour might be, since deep fall tones read as elegant rather than attention-seeking.
+- **named_entities:** Deep burgundy, plum, warm taupe, chocolate brown, gold metallic accents, navy (as the most common fall wedding-guest dress colour and a specific nail-pairing consideration)
+- **trend_velocity:** Sustained and seasonal-cyclical, but genuinely active right now, since wedding season through fall (September to November) is when this specific question gets searched most.
+- **why_now_rationale:** Fall wedding season is actively underway from this publish date through November, and the CSV's own data confirms "fall nails for wedding" and "fall nails for wedding guest" as real, repeated Long Tail search terms, distinct from general fall nail interest.
+- **saturation_check:** Under-covered specifically. The site has five dedicated bridal posts (wedding-nail-designs, wedding-nail-trends-2026, nail-shape-for-wedding, french-tip-wedding-nails, diy-wedding-nails) but all are written for the bride. A brief guest-specific mention exists only in passing inside pedicure-nail-art-ideas (toenails, not fingernails, and not fall-specific). This post fills a genuine, confirmed gap: fingernail guidance for the guest, not the bride, calibrated to fall specifically.
+
+## SECTION 4 — ENGAGEMENT WIDGETS
+**post_gen_instruction:** Reaction Bar: default applies, omit frontmatter. Poll/Quiz: neither selected — see rationale.
+
+- reaction_bar: default
+- poll_or_quiz_selected: neither
+- selection_rationale: The research surfaced a genuine anxiety and a practical calibration question (how formal is this wedding, what does my outfit need), not a real either/or split or a set of distinct branching outcomes that would support a quiz. A poll asking something like "warm or cool for a fall wedding" would be arbitrary here since the real answer depends on the individual wedding's formality and the guest's own outfit, not a general preference. Forcing either would invent content the research does not support.
+
+## SECTION 5 — HOOK AND CTR
+**post_gen_instruction:** Read before writing title, excerpt, intro, or first H2. Title and excerpt are hardcoded — use exactly.
+
+- selected_trigger: Trigger 1 — Curiosity Gap
+- trigger_rationale: Sentiment_read centres on genuine uncertainty (what's actually appropriate, will this read as too much) rather than pure frustration or excitement, which fits a knowledge-gap trigger: readers suspect they might get this wrong without a clear framework.
+- title: Fall wedding guest nails: what to wear without overdoing it
+- title_char_count: 56
+- excerpt: Rich fall colours can read as elegant or as trying too hard. Here's how to get the balance right as a guest.
+- excerpt_char_count: 108
+- intro_hook_brief: Open by naming the real, specific worry directly, that a guest's nails need to look put-together without competing with the bride or clashing with an unknown dress code, then promise a clear framework based on formality level rather than a vague colour list.
+
+## SECTION 6 — HERO IMAGE BRIEF
+**post_gen_instruction:** Use imageAlt exactly as given. No visual concept/mood description here.
+
+- imageAlt: Elegant deep burgundy manicure on almond nails, fall wedding guest look, warm gold ring accent
+- image_filename_brief: fall-wedding-guest-nails-burgundy-elegant-manicure-2026.webp
+- tag_for_downstream_prompt: This brief is for a Google Discover hero image — high contrast, thumbnail-style, click-optimised.
+- spec_reminder: 1200x675, 16:9 — hard Discover technical gate, non-negotiable.
+
+## SECTION 7 — CONTENT STRUCTURE
+**post_gen_instruction:** H2 structure followed exactly — no renaming, no reordering without user instruction.
+
+- h1 (working reference): Fall Wedding Guest Nails: What to Wear Without Overdoing It
+- h2_structure:
+  1. The real guest rule (it's not about the bride's colour)
+  2. Match your nails to the wedding's formality, not just the season
+  3. The safest fall shades for any dress code
+  4. What to do if you're wearing navy, black, or a jewel tone
+  5. Timing and upkeep so they still look fresh by the reception
+- word_budget:
+  - intro: 140 words
+  - The real guest rule (it's not about the bride's colour): 180 words
+  - Match your nails to the wedding's formality, not just the season: 260 words
+  - The safest fall shades for any dress code: 280 words
+  - What to do if you're wearing navy, black, or a jewel tone: 260 words
+  - Timing and upkeep so they still look fresh by the reception: 220 words
+  - conclusion: 100 words
+
+## SECTION 8 — LINKS
+**post_gen_instruction:** Every link below appears in the post, woven naturally, verbatim URLs and anchors exactly as discovered.
+
+- all_links:
+  1. url: https://mirelleinspo.com/blog/wedding-nails/wedding-nail-trends-2026
+     anchor_text: what brides themselves are wearing this year, if you want to coordinate without matching
+     placement_section: "The real guest rule (it's not about the bride's colour)"
+     link_type: blog-page
+  2. url: https://mirelleinspo.com/blog/fall/fall-nail-colors
+     anchor_text: the full fall 2026 shade lineup beyond the wedding-safe picks here
+     placement_section: conclusion
+     link_type: blog-page
+  3. url: https://theevore.com/wedding-guest-nails/
+     anchor_text: a detailed breakdown of nail colour against specific guest dress colours
+     placement_section: "What to do if you're wearing navy, black, or a jewel tone"
+     link_type: external
+  4. url: https://www.whowhatwear.com/beauty/nails/wedding-guest-nail-ideas
+     anchor_text: this season's elegant wedding guest manicure roundup
+     placement_section: "The safest fall shades for any dress code"
+     link_type: external
+
+Note: only 2 internal links, both genuinely relevant (no /nail-feed sibling found via live search, confirmed via site:mirelleinspo.com/nail-feed wedding). 2 external, both confirmed accessible. Within the 2-3/2-3 ceiling on both sides.
+
+## SECTION 9 — TOPICAL MAP
+**post_gen_instruction:** Omit entirely from frontmatter if this section is empty/absent.
+
+- topic: wedding-nails (relationship confirmed via phase_7 search, existing /blog/wedding-nails/ pillar cluster)
+- parentPillar: https://mirelleinspo.com/blog/wedding-nails/wedding-nail-trends-2026
+- relatedClusters: (none found on /nail-feed — omit)
+- primaryKeyword: fall wedding guest nails
+- secondaryKeywords: wedding guest nail colors, fall wedding nails, autumn wedding guest manicure, what nail color for wedding guest
+- topicalBoundary: This post covers guest-specific nail guidance for fall weddings; it does not cover bridal nails, which live in the site's dedicated wedding-nails bridal cluster.
+
+## SECTION 10 — VOICE/TONE
+**post_gen_instruction:** Layer on top of the fixed editorial voice mandate already in the Post Gen Agent prompt (British English, no em dash, existing rhythm rules).
+
+- recommended_voice: Reassuring and practical, like a friend talking you down from overthinking it
+- tone_characteristics: Calm and direct rather than anxious (the reader is uncertain, not upset, so the voice should resolve the uncertainty rather than dramatise it); specific and actionable in the formality-calibration sections; validating of the underlying worry without amplifying it
+- audience_match: The reader wants permission to feel confident in a genuinely uncertain social situation, so the tone should settle the question plainly rather than list options and leave the decision unresolved.
+
+## SECTION 11 — EXECUTION PLAN
+
+### Block 1 — Entity and keyword execution
+- named_entities_to_surface_early: fall wedding guest, burgundy, chocolate brown
+- primary_keyword_if_any: fall wedding guest nails
+- strong_tag_note: only apply if it appears naturally in the intro or first H2, never forced
+
+### Block 2 — Word and image plan
+- total_word_target: 1500, ±50
+- introduction: 140 words
+- conclusion: 100 words
+- h2_budgets:
+  - The real guest rule (it's not about the bride's colour): 180 words
+  - Match your nails to the wedding's formality, not just the season: 260 words
+  - The safest fall shades for any dress code: 280 words
+  - What to do if you're wearing navy, black, or a jewel tone: 260 words
+  - Timing and upkeep so they still look fresh by the reception: 220 words
+- image_assignments:
+  1. image_number: 1, place_after: intro, section_context: hero — elegant burgundy guest manicure, inspirational only
+  2. image_number: 2, place_after: "The safest fall shades for any dress code", section_context: chocolate brown or taupe manicure, formal-appropriate styling, inspirational shot only
+  3. image_number: 3, place_after: "What to do if you're wearing navy, black, or a jewel tone", section_context: plum or deep jewel-tone manicure paired with an evening-appropriate look, inspirational shot only
+  4. image_number: 4, place_after: "Timing and upkeep so they still look fresh by the reception", section_context: close-up of a clean, glossy finish nail, salon-appointment styled shot
+
+### Block 3 — Opening technique assignments
+- rule: no two consecutive sections same technique. Conclusion = Technique 1 or 3 only.
+- assignments:
+  - Introduction: Technique 2 — direct address of the worry
+  - The real guest rule (it's not about the bride's colour): Technique 1 — direct statement
+  - Match your nails to the wedding's formality, not just the season: Technique 2 — direct instruction
+  - The safest fall shades for any dress code: Technique 1 — direct statement
+  - What to do if you're wearing navy, black, or a jewel tone: Technique 2 — direct address
+  - Timing and upkeep so they still look fresh by the reception: Technique 3 — practical/checklist lead
+  - Conclusion: Technique 3
+
+### Block 4 — Link placements
+- links:
+  1. anchor_text: what brides themselves are wearing this year, if you want to coordinate without matching, full_url: https://mirelleinspo.com/blog/wedding-nails/wedding-nail-trends-2026, place_in_section: "The real guest rule (it's not about the bride's colour)", link_type: blog-page
+  2. anchor_text: this season's elegant wedding guest manicure roundup, full_url: https://www.whowhatwear.com/beauty/nails/wedding-guest-nail-ideas, place_in_section: "The safest fall shades for any dress code", link_type: external
+  3. anchor_text: a detailed breakdown of nail colour against specific guest dress colours, full_url: https://theevore.com/wedding-guest-nails/, place_in_section: "What to do if you're wearing navy, black, or a jewel tone", link_type: external
+  4. anchor_text: the full fall 2026 shade lineup beyond the wedding-safe picks here, full_url: https://mirelleinspo.com/blog/fall/fall-nail-colors, place_in_section: conclusion, link_type: blog-page
+
+### Block 5 — Active constraints
+- em_dash_banned: confirmed active
+- british_english_active: confirmed active
+- min_h2_reminder: 5 H2s present, clears the 3-minimum requirement
+- word_count_reminder: 1500 target, depth not padding
+- image_count_reminder: 4 total, 1 hero + 3 body, fixed
+- hero_image_reminder: frontmatter only, never in body; alt text and filename only, visual concept comes from separate downstream prompt
+
+### Block 6 — Widget execution
+- reaction_bar: omit frontmatter entirely, default applies
+- poll_or_quiz: neither — omit both from frontmatter
+- reminder: mutually exclusive at template level, not applicable here since neither was selected
