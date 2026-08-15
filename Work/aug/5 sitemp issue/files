@@ -1,0 +1,755 @@
+const fs = require('fs');
+const path = require('path');
+const matter = require('gray-matter');
+
+const SITE_URL = 'https://mirelleinspo.com';
+const PUBLIC_DIR = path.join(process.cwd(), 'public');
+
+// ─── HELPERS ─────────────────────────────────────────────────────────────────
+
+function getCurrentSeason() {
+  const month = new Date().getMonth();
+  if (month >= 2 && month <= 4) return 'spring';
+  if (month >= 5 && month <= 7) return 'summer';
+  if (month >= 8 && month <= 10) return 'fall';
+  return 'winter';
+}
+
+function formatLastmod(dateStr) {
+  if (!dateStr) return new Date().toISOString().split('T')[0];
+  const d = new Date(dateStr);
+  if (isNaN(d.getTime())) return new Date().toISOString().split('T')[0];
+  return d.toISOString().split('T')[0];
+}
+
+function createSitemap(urls) {
+  return `<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+${urls.map(url => `  <url>
+    <loc>${url.loc}</loc>
+    <lastmod>${url.lastmod || new Date().toISOString()}</lastmod>
+    <changefreq>${url.changefreq || 'weekly'}</changefreq>
+    <priority>${url.priority || 0.7}</priority>
+  </url>`).join('\n')}
+</urlset>`;
+}
+
+function createSitemapIndex(sitemaps) {
+  return `<?xml version="1.0" encoding="UTF-8"?>
+<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+${sitemaps.map(sitemap => `  <sitemap>
+    <loc>${SITE_URL}/${sitemap}</loc>
+    <lastmod>${new Date().toISOString()}</lastmod>
+  </sitemap>`).join('\n')}
+</sitemapindex>`;
+}
+
+function createImageSitemap(images) {
+  return `<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+${images.map(img => `  <url>
+    <loc>${img.pageUrl}</loc>
+    <image:image>
+      <image:loc>${img.imageUrl}</image:loc>
+      <image:title>${escapeXml(img.title)}</image:title>
+      ${img.caption ? `<image:caption>${escapeXml(img.caption)}</image:caption>` : ''}
+    </image:image>
+  </url>`).join('\n')}
+</urlset>`;
+}
+
+function escapeXml(str) {
+  if (!str) return '';
+  return str
+    .replace(/&/g, '&amp;')
+    .replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;')
+    .replace(/"/g, '&quot;')
+    .replace(/'/g, '&apos;');
+}
+
+function readContentFiles(dir) {
+  if (!fs.existsSync(dir)) return [];
+  return fs.readdirSync(dir).filter(f => f.endsWith('.md') || f.endsWith('.mdx'));
+}
+
+function resolveImageUrl(imageUrl, baseImagePath) {
+  if (!imageUrl) return null;
+  if (imageUrl.startsWith('http')) return imageUrl;
+  if (imageUrl.startsWith('/')) return `${SITE_URL}${imageUrl}`;
+  return `${SITE_URL}${baseImagePath}/${imageUrl}`;
+}
+
+function extractImagesFromContent(content, slug, frontmatter, baseImagePath) {
+  const images = [];
+  const seen = new Set();
+
+  const addImage = (imageUrl, alt, type) => {
+    const url = resolveImageUrl(imageUrl, baseImagePath);
+    if (url && !seen.has(url)) {
+      images.push({ url, alt, type });
+      seen.add(url);
+    }
+  };
+
+  if (frontmatter.image) {
+    addImage(frontmatter.image, frontmatter.imageAlt || `${slug.replace(/-/g, ' ')} featured image`, 'hero');
+  }
+
+  (frontmatter.galleryImages || []).forEach(img => {
+    addImage(img.url || img.src || img, img.alt || `${slug.replace(/-/g, ' ')} gallery image`, 'gallery');
+  });
+
+  (frontmatter.carouselImages || []).forEach(img => {
+    addImage(img.src || img.url || img, img.alt || `${slug.replace(/-/g, ' ')} carousel image`, 'carousel');
+  });
+
+  const mdImageRegex = /!\[([^\]]*)\]\(([^)]+)\)/g;
+  let match;
+  while ((match = mdImageRegex.exec(content)) !== null) {
+    addImage(match[2], match[1] || `${slug.replace(/-/g, ' ')} image`, 'markdown');
+  }
+
+  const htmlMatches = content.match(/<img[^>]+>/gi) || [];
+  htmlMatches.forEach(imgTag => {
+    const srcMatch = imgTag.match(/src=["']([^"']+)["']/i);
+    const altMatch = imgTag.match(/alt=["']([^"']*)["']/i);
+    if (srcMatch) {
+      addImage(srcMatch[1], altMatch ? altMatch[1] : `${slug.replace(/-/g, ' ')} image`, 'html');
+    }
+  });
+
+  return images.filter(img => img.url.startsWith(`${SITE_URL}/images/`));
+}
+
+// ─── PAGE SITEMAP (flat) ──────────────────────────────────────────────────────
+
+function generatePageSitemap(label, dir, urlPrefix, listPagePriority, itemPriority) {
+  console.log(`📄 Generating ${label} sitemap...`);
+  try {
+    const files = readContentFiles(dir);
+    if (files.length === 0) {
+      console.warn(`⚠️  No files found in ${dir}  generating listing page only`);
+    }
+
+    const urls = [
+      {
+        loc: `${SITE_URL}/${urlPrefix}`,
+        changefreq: 'daily',
+        priority: listPagePriority,
+        lastmod: new Date().toISOString(),
+      },
+      ...files.map(file => {
+        const slug = file.replace(/\.mdx?$/, '');
+        const filePath = path.join(dir, file);
+        const fileContent = fs.readFileSync(filePath, 'utf8');
+        const { data } = matter(fileContent);
+        return {
+          loc: `${SITE_URL}/${urlPrefix}/${slug}`,
+          changefreq: 'weekly',
+          priority: itemPriority,
+          lastmod: formatLastmod(data.dateModified || data.date),
+        };
+      }),
+    ];
+
+    const xml = createSitemap(urls);
+    fs.writeFileSync(path.join(PUBLIC_DIR, `sitemap-${urlPrefix}.xml`), xml);
+    console.log(`✅ sitemap-${urlPrefix}.xml created (${files.length} items)`);
+  } catch (error) {
+    console.error(`❌ Error generating ${label} sitemap:`, error.message);
+  }
+}
+
+// ─── IMAGE SITEMAP (flat) ─────────────────────────────────────────────────────
+
+function generateImageSitemapForCategory(label, dir, urlPrefix, baseImagePath) {
+  console.log(`📸 Generating ${label} image sitemap...`);
+  try {
+    const files = readContentFiles(dir);
+    if (files.length === 0) {
+      console.warn(`⚠️  No files found in ${dir}`);
+      return null;
+    }
+
+    const allImages = [];
+    const currentYear = new Date().getFullYear();
+    const season = getCurrentSeason();
+
+    files.forEach(file => {
+      const slug = file.replace(/\.mdx?$/, '');
+      const filePath = path.join(dir, file);
+      const fileContent = fs.readFileSync(filePath, 'utf8');
+      const { data, content } = matter(fileContent);
+      const images = extractImagesFromContent(content, slug, data, `${baseImagePath}/${slug}`);
+
+      if (images.length > 0) {
+        const cleanTitle = data.title || slug.replace(/-/g, ' ');
+        images.forEach(img => {
+          allImages.push({
+            pageUrl: `${SITE_URL}/${urlPrefix}/${slug}`,
+            imageUrl: img.url,
+            title: `${cleanTitle} - ${img.type} image`,
+            caption: img.alt || `${cleanTitle} - nail art inspiration for ${season} ${currentYear}`,
+          });
+        });
+        console.log(`   ✔ ${slug}: ${images.length} image(s)`);
+      }
+    });
+
+    if (allImages.length === 0) {
+      console.warn(`⚠️  No images found for ${label}`);
+      return null;
+    }
+
+    const sitemapFileName = `sitemap-images-${urlPrefix}.xml`;
+    fs.writeFileSync(path.join(PUBLIC_DIR, sitemapFileName), createImageSitemap(allImages));
+    console.log(`✅ ${sitemapFileName} created (${allImages.length} images)`);
+    return sitemapFileName;
+  } catch (error) {
+    console.error(`❌ Error generating ${label} image sitemap:`, error.message);
+    return null;
+  }
+}
+
+// ─── AUTHORS SITEMAP ──────────────────────────────────────────────────────────
+
+function generateAuthorsSitemap() {
+  console.log('📄 Generating authors sitemap...');
+  try {
+    const authorSlugs = ['ri-mirelle', 'jyoti-mirelle'];
+
+    const urls = [
+      {
+        loc: `${SITE_URL}/authors`,
+        changefreq: 'monthly',
+        priority: 0.7,
+        lastmod: new Date().toISOString(),
+      },
+      ...authorSlugs.map(slug => ({
+        loc: `${SITE_URL}/authors/${slug}`,
+        changefreq: 'monthly',
+        priority: 0.6,
+        lastmod: new Date().toISOString(),
+      })),
+    ];
+
+    fs.writeFileSync(path.join(PUBLIC_DIR, 'sitemap-authors.xml'), createSitemap(urls));
+    console.log(`✅ sitemap-authors.xml created (${authorSlugs.length} author profiles)`);
+  } catch (error) {
+    console.error('❌ Error generating authors sitemap:', error.message);
+  }
+}
+
+// ─── BLOG SITEMAP (frontmatter-aware, recursive) ─────────────────────────────
+//
+// NOTE (Aug 2026 update): /blog/[topic] hub pages are navigational only —
+// they are set to noindex in the page component and must NOT be listed in
+// the sitemap. Only individual posts (/blog/[topic]/[slug]) are included.
+// The `registeredHubs` bookkeeping is kept (for the console summary / dedup
+// logic) but hub URLs are no longer pushed into `urls`.
+
+function generateBlogSitemap() {
+  console.log('📄 Generating blog sitemap (frontmatter-aware)...');
+  try {
+    const blogsDir = path.join(process.cwd(), 'src/content/blogs');
+    if (!fs.existsSync(blogsDir)) {
+      console.warn('⚠️  src/content/blogs not found');
+      return;
+    }
+
+    const urls = [
+      {
+        loc: `${SITE_URL}/blog`,
+        changefreq: 'daily',
+        priority: 0.9,
+        lastmod: new Date().toISOString(),
+      },
+    ];
+
+    const registeredHubs = new Set();
+    let pillarCount = 0;
+    let clusterCount = 0;
+    let flatCount = 0;
+
+    const processFile = (filePath) => {
+      const fileContent = fs.readFileSync(filePath, 'utf8');
+      const { data } = matter(fileContent);
+      const slug = data.slug || path.basename(filePath).replace(/\.mdx?$/, '');
+      const topic = data.topic || null;
+      const isPillar = data.topicalMap?.position === 'pillar';
+      const lastmod = formatLastmod(data.dateModified || data.date);
+
+      if (topic) {
+        // /blog/[topic] hub pages are navigational-only and noindexed —
+        // do NOT add them to the sitemap. We still track them in
+        // registeredHubs purely for the summary log below.
+        if (isPillar && !registeredHubs.has(topic)) {
+          registeredHubs.add(topic);
+          pillarCount++;
+        }
+
+        urls.push({
+          loc: `${SITE_URL}/blog/${topic}/${slug}`,
+          changefreq: 'weekly',
+          priority: isPillar ? 0.8 : 0.7,
+          lastmod,
+        });
+
+        if (!isPillar) clusterCount++;
+      } else {
+        urls.push({
+          loc: `${SITE_URL}/blog/${slug}`,
+          changefreq: 'weekly',
+          priority: 0.7,
+          lastmod,
+        });
+        flatCount++;
+      }
+    };
+
+    const entries = fs.readdirSync(blogsDir);
+
+    entries.forEach(entry => {
+      const entryPath = path.join(blogsDir, entry);
+      const stat = fs.statSync(entryPath);
+
+      if (stat.isDirectory()) {
+        readContentFiles(entryPath).forEach(file =>
+          processFile(path.join(entryPath, file))
+        );
+      } else if (entry.endsWith('.md') || entry.endsWith('.mdx')) {
+        processFile(entryPath);
+      }
+    });
+
+    fs.writeFileSync(path.join(PUBLIC_DIR, 'sitemap-blog.xml'), createSitemap(urls));
+    console.log(`✅ sitemap-blog.xml created (${registeredHubs.size} hub pages excluded [noindex], ${pillarCount} pillars, ${clusterCount} clusters, ${flatCount} flat posts)`);
+  } catch (error) {
+    console.error('❌ Error generating blog sitemap:', error.message);
+  }
+}
+
+// ─── BLOG IMAGE SITEMAP (frontmatter-aware, recursive) ───────────────────────
+
+function generateBlogImageSitemap() {
+  console.log('📸 Generating blog image sitemap (frontmatter-aware)...');
+  try {
+    const blogsDir = path.join(process.cwd(), 'src/content/blogs');
+    if (!fs.existsSync(blogsDir)) return null;
+
+    const allImages = [];
+    const currentYear = new Date().getFullYear();
+    const season = getCurrentSeason();
+
+    const processFile = (filePath) => {
+      const fileContent = fs.readFileSync(filePath, 'utf8');
+      const { data, content } = matter(fileContent);
+      const slug = data.slug || path.basename(filePath).replace(/\.mdx?$/, '');
+      const topic = data.topic || null;
+
+      const pageUrl = topic
+        ? `${SITE_URL}/blog/${topic}/${slug}`
+        : `${SITE_URL}/blog/${slug}`;
+
+      const imageBasePath = topic
+        ? `/images/blog/${topic}/${slug}`
+        : `/images/blog/${slug}`;
+
+      const images = extractImagesFromContent(content, slug, data, imageBasePath);
+      const cleanTitle = data.title || slug.replace(/-/g, ' ');
+
+      images.forEach(img => {
+        allImages.push({
+          pageUrl,
+          imageUrl: img.url,
+          title: `${cleanTitle} - ${img.type} image`,
+          caption: img.alt || `${cleanTitle} - nail art inspiration for ${season} ${currentYear}`,
+        });
+      });
+
+      if (images.length > 0) {
+        console.log(`   ✔ ${pageUrl.replace(SITE_URL, '')}: ${images.length} image(s)`);
+      }
+    };
+
+    const entries = fs.readdirSync(blogsDir);
+
+    entries.forEach(entry => {
+      const entryPath = path.join(blogsDir, entry);
+      const stat = fs.statSync(entryPath);
+
+      if (stat.isDirectory()) {
+        readContentFiles(entryPath).forEach(file =>
+          processFile(path.join(entryPath, file))
+        );
+      } else if (entry.endsWith('.md') || entry.endsWith('.mdx')) {
+        processFile(entryPath);
+      }
+    });
+
+    if (allImages.length === 0) {
+      console.warn('⚠️  No images found for blog');
+      return null;
+    }
+
+    fs.writeFileSync(path.join(PUBLIC_DIR, 'sitemap-images-blog.xml'), createImageSitemap(allImages));
+    console.log(`✅ sitemap-images-blog.xml created (${allImages.length} images)`);
+    return 'sitemap-images-blog.xml';
+  } catch (error) {
+    console.error('❌ Error generating blog image sitemap:', error.message);
+    return null;
+  }
+}
+
+// ─── SHOP SITEMAP (frontmatter-aware: productType + slug from frontmatter) ──
+
+function generateShopSitemap() {
+  console.log('📄 Generating shop sitemap (frontmatter-aware)...');
+  try {
+    const shopDir = path.join(process.cwd(), 'src/content/shop');
+    if (!fs.existsSync(shopDir)) {
+      console.warn('⚠️  src/content/shop not found');
+      return;
+    }
+
+    const urls = [
+      {
+        loc: `${SITE_URL}/shop`,
+        changefreq: 'daily',
+        priority: 0.9,
+        lastmod: formatLastmod(),
+      },
+    ];
+
+    const registeredProductTypes = new Set();
+    let itemCount = 0;
+    let skippedCount = 0;
+
+    const processFile = (filePath, folderName) => {
+      const fileContent = fs.readFileSync(filePath, 'utf8');
+      const { data } = matter(fileContent);
+
+      const productType = data.productType || folderName;
+      const slug = data.slug || path.basename(filePath).replace(/\.mdx?$/, '');
+      const lastmod = formatLastmod(data.dateModified || data.date);
+
+      if (!productType || !slug) {
+        console.warn(`   ⚠️  Skipping ${filePath}  missing productType or slug in frontmatter`);
+        skippedCount++;
+        return;
+      }
+
+      if (!registeredProductTypes.has(productType)) {
+        urls.push({
+          loc: `${SITE_URL}/shop/${productType}`,
+          changefreq: 'weekly',
+          priority: 0.8,
+          lastmod,
+        });
+        registeredProductTypes.add(productType);
+      }
+
+      urls.push({
+        loc: `${SITE_URL}/shop/${productType}/${slug}`,
+        changefreq: 'weekly',
+        priority: 0.7,
+        lastmod,
+      });
+      itemCount++;
+    };
+
+    const entries = fs.readdirSync(shopDir);
+
+    entries.forEach(entry => {
+      const entryPath = path.join(shopDir, entry);
+      const stat = fs.statSync(entryPath);
+
+      if (stat.isDirectory()) {
+        readContentFiles(entryPath).forEach(file =>
+          processFile(path.join(entryPath, file), entry)
+        );
+      } else if (entry.endsWith('.md') || entry.endsWith('.mdx')) {
+        processFile(entryPath, null);
+      }
+    });
+
+    fs.writeFileSync(path.join(PUBLIC_DIR, 'sitemap-shop.xml'), createSitemap(urls));
+    console.log(`✅ sitemap-shop.xml created (${registeredProductTypes.size} product types, ${itemCount} products${skippedCount ? `, ${skippedCount} skipped` : ''})`);
+  } catch (error) {
+    console.error('❌ Error generating shop sitemap:', error.message);
+  }
+}
+
+// ─── INSPO SITEMAPS (JSON based) ──────────────────────────────────────────────
+
+function generateInspoSitemap() {
+  console.log('📄 Generating inspo sitemap...');
+  try {
+    const inspoDir = path.join(process.cwd(), 'src/content/inspo-images');
+    const files = fs.readdirSync(inspoDir).filter(f => f.endsWith('.json'));
+
+    const urls = [
+      { loc: `${SITE_URL}/inspo`, changefreq: 'daily', priority: 0.9, lastmod: new Date().toISOString() },
+      ...files.map(file => ({
+        loc: `${SITE_URL}/inspo/${file.replace('.json', '')}`,
+        changefreq: 'weekly',
+        priority: 0.8,
+        lastmod: new Date().toISOString(),
+      })),
+    ];
+
+    fs.writeFileSync(path.join(PUBLIC_DIR, 'sitemap-inspo.xml'), createSitemap(urls));
+    console.log(`✅ sitemap-inspo.xml created (${files.length} categories)`);
+  } catch (error) {
+    console.error('❌ Error generating inspo sitemap:', error.message);
+  }
+}
+
+function generateInspoImageSitemap() {
+  console.log('📸 Generating inspo image sitemap...');
+  try {
+    const inspoJsonDir = path.join(process.cwd(), 'src/content/inspo-images');
+    if (!fs.existsSync(inspoJsonDir)) return null;
+
+    const jsonFiles = fs.readdirSync(inspoJsonDir).filter(f => f.endsWith('.json'));
+    const inspoImages = [];
+    const currentYear = new Date().getFullYear();
+    const season = getCurrentSeason();
+
+    jsonFiles.forEach(jsonFile => {
+      const category = jsonFile.replace('.json', '');
+      const jsonPath = path.join(inspoJsonDir, jsonFile);
+      try {
+        const data = JSON.parse(fs.readFileSync(jsonPath, 'utf8'));
+        const images = Array.isArray(data) ? data : data.images ? data.images : Object.values(data);
+
+        images.forEach((image, index) => {
+          let imageUrl = typeof image === 'string' ? image : image.url || image.src || image.image;
+          if (!imageUrl) return;
+          if (imageUrl.startsWith('/')) imageUrl = `${SITE_URL}${imageUrl}`;
+          else if (!imageUrl.startsWith('http')) imageUrl = `${SITE_URL}/inspo/${category}/${imageUrl}`;
+
+          const altText = typeof image === 'object' ? (image.alt || image.altText || image.description) : null;
+          inspoImages.push({
+            pageUrl: `${SITE_URL}/inspo/${category}`,
+            imageUrl,
+            title: `${category.replace(/-/g, ' ')} nail inspiration ${index + 1}`,
+            caption: altText || `${category.replace(/-/g, ' ')} nail art design - trending style for ${season} ${currentYear}`,
+          });
+        });
+      } catch (error) {
+        console.error(`   ❌ ${category}:`, error.message);
+      }
+    });
+
+    if (inspoImages.length === 0) return null;
+
+    fs.writeFileSync(path.join(PUBLIC_DIR, 'sitemap-images-inspo.xml'), createImageSitemap(inspoImages));
+    console.log(`✅ sitemap-images-inspo.xml created (${inspoImages.length} images)`);
+    return 'sitemap-images-inspo.xml';
+  } catch (error) {
+    console.error('❌ Error generating inspo image sitemap:', error.message);
+    return null;
+  }
+}
+
+// ─── BUSINESS SITEMAP ─────────────────────────────────────────────────────────
+//
+// NOTE (Aug 2026 update): business structure flattened to /business/[slug] —
+// the old /business/[country]/[state]/[clientType]/[slug] nesting no longer
+// exists, so this is now a single flat sitemap (same pattern as shop/blog)
+// instead of a country/state index-of-indexes.
+
+function generateBusinessSitemap() {
+  console.log('📄 Generating business sitemap...');
+  try {
+    const businessDir = path.join(process.cwd(), 'src/content/business');
+
+    const urls = [
+      { loc: `${SITE_URL}/business`, changefreq: 'daily', priority: 0.9, lastmod: new Date().toISOString() },
+    ];
+
+    if (!fs.existsSync(businessDir)) {
+      console.warn('⚠️  src/content/business not found  generating listing page only');
+      fs.writeFileSync(path.join(PUBLIC_DIR, 'sitemap-business.xml'), createSitemap(urls));
+      console.log('✅ sitemap-business.xml created (0 items)');
+      return;
+    }
+
+    const files = readContentFiles(businessDir);
+
+    files.forEach(file => {
+      const slug = file.replace(/\.mdx?$/, '');
+      const filePath = path.join(businessDir, file);
+      const fileContent = fs.readFileSync(filePath, 'utf8');
+      const { data } = matter(fileContent);
+      urls.push({
+        loc: `${SITE_URL}/business/${slug}`,
+        changefreq: 'weekly',
+        priority: 0.7,
+        lastmod: formatLastmod(data.dateModified || data.date),
+      });
+    });
+
+    fs.writeFileSync(path.join(PUBLIC_DIR, 'sitemap-business.xml'), createSitemap(urls));
+    console.log(`✅ sitemap-business.xml created (${files.length} items)`);
+  } catch (error) {
+    console.error('❌ Error generating business sitemap:', error.message);
+  }
+}
+
+// ─── MAIN ─────────────────────────────────────────────────────────────────────
+
+async function main() {
+  console.log('🚀 Starting sitemap generation...\n');
+
+  if (!fs.existsSync(PUBLIC_DIR)) {
+    fs.mkdirSync(PUBLIC_DIR, { recursive: true });
+  }
+
+  generateBlogSitemap();
+  generateShopSitemap();
+  generatePageSitemap('topics',        path.join(process.cwd(), 'src/content/topics'),     'topics',        0.8, 0.7);
+  generatePageSitemap('spotlights',    path.join(process.cwd(), 'src/content/spotlights'), 'spotlight',     0.8, 0.7);
+  generatePageSitemap('work-nails',    path.join(process.cwd(), 'src/content/work-nails'), 'work-nails',    0.8, 0.7);
+  generatePageSitemap('nail-faqs',     path.join(process.cwd(), 'src/content/faqs'),       'nail-faqs',     0.8, 0.7);
+  generatePageSitemap('trend-reports', path.join(process.cwd(), 'src/content/reports'),    'trend-reports', 0.8, 0.7);
+  generateInspoSitemap();
+  generateAuthorsSitemap();
+  generateBusinessSitemap();
+
+  const imageSitemaps = [];
+
+  const blogImgs      = generateBlogImageSitemap();
+  const topicsImgs    = generateImageSitemapForCategory('topics',     path.join(process.cwd(), 'src/content/topics'),     'topics',     '/images/topic');
+  const spotlightImgs = generateImageSitemapForCategory('spotlights', path.join(process.cwd(), 'src/content/spotlights'), 'spotlight',  '/images/spotlights');
+  const workNailsImgs = generateImageSitemapForCategory('work-nails', path.join(process.cwd(), 'src/content/work-nails'), 'work-nails', '/images/work-nails');
+  const inspoImgs     = generateInspoImageSitemap();
+
+  if (blogImgs)        imageSitemaps.push(blogImgs);
+  if (topicsImgs)      imageSitemaps.push(topicsImgs);
+  if (spotlightImgs)   imageSitemaps.push(spotlightImgs);
+  if (workNailsImgs)   imageSitemaps.push(workNailsImgs);
+  if (inspoImgs)       imageSitemaps.push(inspoImgs);
+
+  if (imageSitemaps.length > 0) {
+    fs.writeFileSync(path.join(PUBLIC_DIR, 'sitemap-images-index.xml'), createSitemapIndex(imageSitemaps));
+    console.log('✅ sitemap-images-index.xml created');
+  }
+
+  console.log('\n✅ All sitemaps generated!');
+}
+
+main().catch(error => {
+  console.error('❌ Fatal error:', error);
+  process.exit(1);
+});
+
+
+
+////////////////////////////
+
+/** @type {import('next-sitemap').IConfig} */
+module.exports = {
+  siteUrl: 'https://mirelleinspo.com',
+  generateRobotsTxt: true,
+  sitemapSize: 5000,
+  changefreq: 'daily',
+  priority: 0.7,
+
+  exclude: [
+    '/api/*',
+    '/admin/*',
+    '/server-sitemap.xml',
+    '/_next/*',
+    '/static/*',
+    '/404',
+    '/500',
+    '/blog/*',
+    '/topics/*',
+    '/inspo/*',
+    '/spotlight/*',
+    '/work-nails/*',
+    '/nail-faqs/*',
+    '/trend-reports/*',
+    '/business/*',
+    '/authors/*',
+    '/shop/*',
+  ],
+
+  robotsTxtOptions: {
+    policies: [
+      {
+        userAgent: '*',
+        allow: '/',
+        disallow: ['/api/', '/admin/', '/_next/', '/static/'],
+      },
+      { userAgent: 'GPTBot',               allow: '/', crawlDelay: 1 },
+      { userAgent: 'ChatGPT-User',         allow: '/' },
+      { userAgent: 'Claude-Web',           allow: '/', crawlDelay: 1 },
+      { userAgent: 'ClaudeBot',            allow: '/', crawlDelay: 1 },
+      { userAgent: 'anthropic-ai',         allow: '/' },
+      { userAgent: 'Googlebot',            allow: '/' },
+      { userAgent: 'Bingbot',              allow: '/' },
+      { userAgent: 'CCBot',                allow: '/', crawlDelay: 2 },
+      { userAgent: 'PerplexityBot',        allow: '/', crawlDelay: 1 },
+      { userAgent: 'YouBot',               allow: '/' },
+      { userAgent: 'Pinterestbot',         allow: '/' },
+      { userAgent: 'facebookexternalhit',  allow: '/' },
+      { userAgent: 'PetalBot',             allow: '/', crawlDelay: 2 },
+      { userAgent: 'DuckDuckBot',          allow: '/' },
+      { userAgent: 'Slurp',               allow: '/' },
+      { userAgent: 'Baiduspider',          allow: '/', crawlDelay: 2 },
+      { userAgent: 'SemrushBot',           disallow: '/' },
+      { userAgent: 'AhrefsBot',            disallow: '/' },
+      { userAgent: 'MJ12bot',              disallow: '/' },
+      { userAgent: 'DotBot',              disallow: '/' },
+    ],
+    additionalSitemaps: [
+      'https://mirelleinspo.com/sitemap-blog.xml',
+      'https://mirelleinspo.com/sitemap-shop.xml',
+      'https://mirelleinspo.com/sitemap-topics.xml',
+      'https://mirelleinspo.com/sitemap-inspo.xml',
+      'https://mirelleinspo.com/sitemap-spotlight.xml',
+      'https://mirelleinspo.com/sitemap-work-nails.xml',
+      'https://mirelleinspo.com/sitemap-nail-faqs.xml',
+      'https://mirelleinspo.com/sitemap-trend-reports.xml',
+      'https://mirelleinspo.com/sitemap-business.xml',
+      'https://mirelleinspo.com/sitemap-authors.xml',
+      'https://mirelleinspo.com/sitemap-images-index.xml',
+    ],
+  },
+
+  transform: async (config, path) => {
+    let priority = config.priority;
+    let changefreq = config.changefreq;
+    let lastmod = config.autoLastmod ? new Date().toISOString() : undefined;
+
+    if (path === '/') {
+      priority = 1.0;
+      changefreq = 'daily';
+    } else if (['/blog', '/inspo', '/shop'].includes(path)) {
+      priority = 0.9;
+      changefreq = 'daily';
+    } else if (['/topics', '/spotlight', '/work-nails', '/nail-faqs', '/trend-reports', '/business'].includes(path)) {
+      priority = 0.8;
+      changefreq = 'weekly';
+    } else if (['/about', '/contact', '/pinterest', '/work-with-us', '/authors'].includes(path)) {
+      priority = 0.7;
+      changefreq = 'monthly';
+    } else if (['/privacy-policy', '/terms', '/subscribe'].includes(path)) {
+      priority = 0.5;
+      changefreq = 'yearly';
+    }
+
+    return {
+      loc: path,
+      changefreq,
+      priority,
+      lastmod,
+      alternateRefs: config.alternateRefs ?? [],
+    };
+  },
+};
