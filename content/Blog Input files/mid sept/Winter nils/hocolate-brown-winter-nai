@@ -1,0 +1,557 @@
+{
+  "section_1_file_authority": {
+    "statement": "THIS FILE IS THE SINGLE SOURCE OF TRUTH FOR THE BLOG GEN AGENT. All values in POST_CONSTANTS are hardcoded — Blog Gen Agent does not ask, adjust, or override them. All keywords, H2 structure, audience intelligence, internal links, and tone defined here must be followed exactly."
+  },
+
+  "section_2_post_constants": {
+    "slug": "chocolate-brown-winter-nails",
+    "topic_slug": "winter-nails",
+    "canonical": "https://mirelleinspo.com/blog/winter-nails/chocolate-brown-winter-nails",
+    "post_type": "spoke",
+    "intent": "inspirational",
+    "word_count": 2100,
+    "image_count": 7,
+    "show_inspo_gallery_link": false,
+    "template": "posts",
+    "hero_dimensions": "1200x675",
+    "category": "Winter Nails",
+    "publish_date": "2026-08-16",
+    "author": "jyoti-mirelle"
+  },
+
+  "section_3_cluster_snapshot": {
+    "pillar_slug": "winter-nail-colors-2026",
+    "pillar_title": "Winter Nail Colors 2026: The Complete Guide",
+    "pillar_primary_keyword": "winter nail colors",
+    "this_post_slug": "chocolate-brown-winter-nails",
+    "this_post_role": "spoke",
+    "show_inspo_gallery_link_cluster_default": false,
+    "keywords_to_avoid": [
+      "winter nail colors", "winter nail ideas", "winter nail trends 2026", "short winter nails",
+      "almond winter nails", "winter nails for dark skin", "old money winter nails",
+      "dark academia nails winter", "why do nails crack in winter", "easy winter nail art at home",
+      "navy blue winter nails", "snowflake nail art", "matte winter nails", "winter wedding nails",
+      "coffin nails winter", "winter chrome nails"
+    ]
+  },
+
+  "section_4_serp_analysis": {
+    "blog_gen_instruction": "our_strategic_approach is a specific, evidence-based outperform strategy, not a vague gap-fill statement. Use it as the concrete angle for the introduction and conclusion, and to guide depth/coverage decisions in relevant H2 sections.",
+    "cannibalization_flag_critical": "An existing live post at mirelleinspo.com/blog/nails-by-color/chocolate-brown-nails already targets 'chocolate brown nails' as an evergreen, all-season, all-skin-tone color guide. This was not caught in cluster_context.json's existing_site_posts_excluded list (which is empty) — Input Gen Agent is flagging it here. This post MUST stay strictly winter-seasonal: cold-weather styling, winter finishes (velvet, chrome, matte, cat eye), winter pairings (sweaters, coats, holiday-adjacent but non-Christmas occasions), and winter-specific sub-shades (espresso, deep cocoa, cinnamon). It must NOT become a general skin-tone-matching or all-season color guide — that territory belongs to the existing evergreen post. Blog Gen Agent must not write undertone-matching content as a main section (a brief one-line mention is fine); the existing post already owns that exact angle in depth.",
+    "competitor_gaps": [
+      "None of the 5 fetched pages front-load 'winter' AND 'chocolate brown' together as a combined seasonal-specific angle — all either go broad-brown-all-season (NailMuse, thepinkissue, Bangstyle) or fall-specific (Marie Claire) or winter-but-generic-brown (Who What Wear)",
+      "None of the 5 fetched pages organize content around coffee-drink sub-shade naming (latte/mocha/cocoa/espresso) AS the primary navigational structure for a winter-specific piece — NailMuse does this but for all seasons, not winter alone",
+      "Winter-specific finish guidance (velvet, chrome, matte, cat eye specifically recommended for winter's low light) is present in fragments across sources but never consolidated into one clear 'best finishes for winter' section",
+      "Pairing chocolate brown nails with winter wardrobe elements (sweaters, coats, boots) beyond a single passing line is under-covered — sources mention it in one sentence, never develop it"
+    ],
+    "missing_semantic_territory": [
+      "chocolate brown nails for the office in winter",
+      "chocolate brown nail pairings with winter jewelry (gold vs silver)",
+      "how long chocolate brown gel manicures last through winter dryness",
+      "chocolate brown French tips for winter specifically"
+    ],
+    "our_strategic_approach": "Own the exact-phrase 'chocolate brown winter nails' territory that no fetched competitor claims outright — organize the post by coffee-family sub-shade (latte, mocha, cocoa, espresso) the way NailMuse does, but keep every example and pairing explicitly winter-seasonal rather than year-round, which none of the 5 fetched pages do consistently. Cover winter-specific finishes (velvet, chrome, matte, cat eye) as a dedicated section, since competitors only mention these in passing. Close gaps around winter wardrobe pairing and how brown gel holds up through cold, dry months — genuinely useful specifics the fetched pages skip. This structural + seasonal specificity, combined with the number-led '40+' format matching the site's own naming convention (rule_1_slug_contains_number_plus), differentiates this post from both the broad-brown competitors and the site's own existing evergreen chocolate-brown post.",
+    "top_5_fetched_pages_summary": [
+      {
+        "url": "https://nailmuse.org/blog/brown-nail-designs",
+        "word_count": 2400,
+        "h2_count": 6,
+        "keyword_mention_count": 0,
+        "note": "Most comprehensive and structurally strongest (25 designs, FAQ, how-to, skin-tone guide) but covers all-season brown, not chocolate/winter specifically — 'chocolate brown winter nails' as exact phrase never appears"
+      },
+      {
+        "url": "https://thepinkissue.com/brown-nails/",
+        "word_count": 1650,
+        "h2_count": 30,
+        "keyword_mention_count": 0,
+        "note": "High-volume idea list (30 items) with punchy Gen-Z voice, strong Instagram sourcing, but shallow per-item depth and no seasonal focus"
+      },
+      {
+        "url": "https://www.marieclaire.com/beauty/nails/best-chocolate-nail-ideas/",
+        "word_count": 1150,
+        "h2_count": 15,
+        "keyword_mention_count": 1,
+        "note": "Strong celebrity hooks (Khloé Kardashian, JLo) and front-loads 'chocolate' in title, but explicitly fall-framed, not winter, and heavily product-shopping-oriented"
+      },
+      {
+        "url": "https://www.whowhatwear.com/beauty/nails/brown-nail-ideas",
+        "word_count": 750,
+        "h2_count": 11,
+        "keyword_mention_count": 0,
+        "note": "Owns 'winter' in the title/angle ('expensive-looking winter neutral') but very thin per-item coverage and never uses 'chocolate brown' as the primary phrase — mostly just 'brown'"
+      },
+      {
+        "url": "https://www.bangstyle.com/posts/chocolate-brown-nail-color-trend-2025-5543",
+        "word_count": 650,
+        "h2_count": 4,
+        "keyword_mention_count": 2,
+        "note": "Shortest and thinnest of the 5; useful for confirming chocolate brown as one of only 4 named trend categories that season, but minimal depth per trend"
+      }
+    ],
+    "top_5_word_count_average": 1320,
+    "top_5_keyword_density_average": 0.6,
+    "best_external_sources_found": [
+      {
+        "url": "https://www.marieclaire.com/beauty/nails/best-chocolate-nail-ideas/",
+        "why": "Established beauty authority (Future PLC/Marie Claire), real editorial voice, named celebrity examples with specific styling detail, genuine expertise from a named senior beauty writer"
+      },
+      {
+        "url": "https://www.whowhatwear.com/beauty/nails/brown-nail-ideas",
+        "why": "Established beauty authority (Future PLC/Who What Wear), named deputy beauty editor byline, credible seasonal trend framing with named nail artist sourcing"
+      }
+    ]
+  },
+
+  "section_5_audience_intelligence": {
+    "blog_gen_instruction": "This is your primary creative brief. Every paragraph written for this specific person with this specific intent. Satisfy them completely.",
+    "who_they_are": "A reader who already knows they want brown nails for winter and is browsing for the right shade, finish, and pairing rather than being introduced to the trend cold. She follows nail-adjacent Instagram/Pinterest accounts, recognizes shade names like 'mocha mousse' and 'espresso' from beauty coverage, and wants curated, screenshot-able options rather than a beginner explainer.",
+    "what_they_want_from_this_post": "A wide, well-organized set of chocolate brown looks specifically suited to winter — shade options from light to dark, finish options (matte, chrome, cat eye, velvet), and enough variety that she can bring a specific photo to her nail appointment rather than a vague color name.",
+    "what_frustrates_them": "Competitor content that calls itself 'winter' but is really generic all-season brown content, or that calls itself 'chocolate' but is really fall-only content — she wants the two things combined and specific. She's also frustrated by roundups that are 80% product-shopping links with almost no real styling guidance between images.",
+    "top_5_pain_points": [
+      "Can't tell which brown shade (latte vs mocha vs cocoa vs espresso) actually suits winter versus fall or spring",
+      "Unsure which finish (matte, glossy, chrome, velvet, cat eye) works best in winter's low natural light",
+      "Wants shade options across the full skin-tone range but existing chocolate-brown content on the same site already covers deep skin-tone matching in detail, so she needs winter-specific styling rather than a repeat of that",
+      "Doesn't know how chocolate brown pairs with winter wardrobe pieces (sweaters, coats, gold vs silver jewelry)",
+      "Worried a dark, saturated color like chocolate brown will look flat or boring rather than rich, especially in winter's shorter daylight hours"
+    ],
+    "exact_user_phrases": [
+      "chocolate brown nails winter",
+      "mocha mousse nails",
+      "espresso brown nails",
+      "chocolate brown nails for winter",
+      "brown nails that look expensive",
+      "chocolate glazed donut nails",
+      "cozy winter manicure",
+      "brown nails dark skin winter",
+      "chocolate brown coffin nails",
+      "chocolate brown short almond nails",
+      "brown chrome nails winter",
+      "velvet brown nails"
+    ],
+    "intent_content_signals": [
+      "Wants a large, browsable number of distinct looks (36+ signaled by the site's own '40+' slug convention) rather than 5-10 thin examples",
+      "Responds to sub-shade specificity (latte, mocha, cocoa, espresso, tortoiseshell) as organizing structure, not just 'brown'",
+      "Wants finish variety called out explicitly (matte, chrome, cat eye, velvet, glossy) since finish is as important to this reader as color",
+      "Wants a strong opening trend/authority statement (why brown, why now, why winter) before the visual browsing begins",
+      "Responds well to short, punchy captions per look rather than long paragraphs — confirmed by both thepinkissue and NailMuse's per-item structure"
+    ]
+  },
+
+  "section_6_semantic_keyword_data": {
+    "blog_gen_instruction": "Primary keyword in strong tags every mention. AEO terms trigger direct answer paragraphs. User language woven naturally. No term from keywords_to_avoid used as focus term.",
+    "primary_keyword": "chocolate brown winter nails",
+    "keyword_variations": [
+      "chocolate brown nails winter",
+      "chocolate brown nails for winter",
+      "winter chocolate brown manicure",
+      "chocolate brown winter manicure",
+      "chocolate brown nails 2026",
+      "brown winter nails chocolate",
+      "chocolate brown mani winter"
+    ],
+    "cluster_keywords": [
+      "mocha mousse nails",
+      "espresso brown nails",
+      "cocoa brown nails",
+      "latte brown nails",
+      "chocolate brown French tips",
+      "brown chrome nails",
+      "brown cat eye nails",
+      "velvet brown nails",
+      "chocolate brown coffin nails",
+      "chocolate brown almond nails",
+      "brown nail polish shades",
+      "expensive-looking brown nails",
+      "chocolate glazed donut nails winter"
+    ],
+    "lsi_terms": [
+      "cocoa gel polish", "mocha manicure", "espresso mirror finish", "tortoiseshell brown nails",
+      "brown French manicure", "chestnut brown nails", "cinnamon brown nails", "chocolate fudge nail polish",
+      "milk chocolate nails", "dark chocolate nails", "brown nail chrome powder", "velvet magnetic powder brown",
+      "brown nail cat-eye polish", "toffee brown nails", "hot chocolate nails", "brown tortoise nail art",
+      "chocolate ombre nails", "warm brown undertone nails", "deep cocoa nail color", "matte brown top coat"
+    ],
+    "aeo_terms": [
+      "what is the best chocolate brown for winter nails",
+      "what shade of brown looks best in winter",
+      "is chocolate brown nail polish good for winter",
+      "what finish is best for brown nails in winter",
+      "how long do chocolate brown gel nails last",
+      "what nail shape looks best with chocolate brown polish",
+      "how do you make chocolate brown nails look expensive",
+      "what colors pair with chocolate brown nails in winter",
+      "is mocha mousse the same as chocolate brown",
+      "does chocolate brown nail polish stain natural nails",
+      "what jewelry goes with chocolate brown nails"
+    ],
+    "technical_terms": [
+      "gel base coat", "no-wipe top coat", "cat-eye magnetic polish", "chrome powder finish",
+      "velvet magnetic powder", "LED cure time", "opacity/coverage coats"
+    ],
+    "user_language": [
+      "looks so expensive", "cozy winter manicure", "rich and warm", "goes with everything",
+      "looks good enough to eat", "chocolate box mani", "hot cocoa vibes", "screenshot before your appointment",
+      "brown is the new black"
+    ]
+  },
+
+  "section_7_voice_and_ai_queries": {
+    "blog_gen_instruction": "Answer every query directly in the relevant H2 section body. If a query cannot be addressed naturally in the body, route it to faqItems. No query left unanswered.",
+    "queries": [
+      "What shade of chocolate brown works best for winter nails?",
+      "Is chocolate brown nail polish good for winter?",
+      "What's the difference between mocha and espresso brown nail polish?",
+      "What finish looks best on brown nails in winter — matte or glossy?",
+      "Do chocolate brown nails look good on every skin tone?",
+      "How long do chocolate brown gel nails last?",
+      "What nail shape pairs best with chocolate brown polish?",
+      "Can you wear chocolate brown nails to the office in winter?",
+      "What jewelry goes with chocolate brown nails?",
+      "Are chocolate brown nails still trending in 2026?",
+      "What's the difference between chocolate brown and mocha mousse nails?",
+      "How do you keep brown nail polish from looking flat?",
+      "What colors pair well with chocolate brown nails for winter outfits?",
+      "Is chocolate brown a good color for short nails?",
+      "Do chocolate brown nails stain your natural nails?"
+    ]
+  },
+
+  "section_8_hook_and_ctr": {
+    "blog_gen_instruction": "READ THIS SECTION BEFORE WRITING THE TITLE, META DESCRIPTION, INTRO, OR FIRST H2. The title and description here are the option the USER SELECTED from real, evidence-based choices during phase_6 — use them exactly. The intro hook brief and first H2 hook direction are your creative brief for those specific elements, matching the selected option's angle. Do not deviate.",
+    "real_serp_findings_summary": "The 5 fetched competitor titles split into two camps: number-led broad-brown roundups (NailMuse, thepinkissue, Bangstyle) that never say 'winter,' and identity/curiosity-led single pieces (Who What Wear) that say 'winter' but never front-load 'chocolate brown' as an exact phrase. None combine a number, 'chocolate brown,' and 'winter' together up front — that combination was the identified gap.",
+    "selected_option_rationale": "The specificity-and-numbers angle matches this audience's browsing intent directly — she wants a large, screenshot-able set of options, and the site's own '40+' slug convention (image_count rule_1) reinforces that a comprehensive-gallery framing is the right promise to make and deliver on.",
+    "title": "40+ Chocolate Brown Winter Nails to Try in 2026",
+    "title_char_count": 47,
+    "meta_description": "From mocha to espresso, see how chocolate brown works through winter cold, cozy looks all season. 40+ shades and pairings to save now.",
+    "meta_char_count": 134,
+    "intro_hook_brief": "Open with the specificity/numbers angle: confirm the reader is in the right place with a strong volume promise (40+ real looks), then immediately signal the coffee-family organizing structure (latte to espresso) that sets this post apart from generic 'brown nails' roundups.",
+    "first_h2_hook_direction": "Apply the specificity angle subtly to the first H2 by naming the exact sub-shade spectrum (not just 'shades of brown') as the entry point into browsing — let the reader immediately see the range rather than a single generic brown."
+  },
+
+  "section_9_search_journey": {
+    "blog_gen_instruction": "This is the emotional contract with the reader. Every section of the post must honour the promise made. Read this before writing any section. If a paragraph breaks the journey arc — rewrite it.",
+    "reader_arrival_state": "Curious and already sold on brown for winter, browsing to find the specific shade, finish, and pairing that feels right for her.",
+    "journey_arc": [
+      "Confirm she's in the right place with a strong volume + trend statement (40+ looks, why brown owns winter)",
+      "Deliver early visual abundance organized by sub-shade family (latte through espresso) so she can self-sort fast",
+      "Build into finish variety (matte, chrome, cat eye, velvet) as a second browsing axis",
+      "Layer in styling specifics — shape pairings, winter wardrobe/jewelry pairings — that add real utility beyond images",
+      "Close with an identity payoff: this is the sophisticated, expensive-looking neutral that's hers to own this winter"
+    ],
+    "promise_to_deliver": "A genuinely large, well-organized set of chocolate brown looks built specifically for winter, spanning shade and finish, that she can screenshot and bring straight to her appointment.",
+    "exit_state": "Confident and decided — she has landed on a specific shade, finish, and styling direction rather than still deciding 'brown or not.'"
+  },
+
+  "section_10_content_structure": {
+    "blog_gen_instruction": "This H2 structure is research-driven and must be followed exactly. Do not rename, reorder, or remove H2s without user instruction. Word budget per section is set — follow it. H3s may be added at editorial discretion.",
+    "h1": "40+ Chocolate Brown Winter Nails to Try in 2026",
+    "h2_structure": [
+      "Why Chocolate Brown Is Winter's Most Expensive-Looking Neutral",
+      "Latte and Caramel Brown: The Softest Winter Chocolate Shades",
+      "Mocha Mousse Nails: 2026's Most-Requested Winter Brown",
+      "Cocoa and Chestnut: Rich Mid-Tone Winter Browns",
+      "Espresso Brown: The Moodiest Winter Chocolate Shade",
+      "Best Finishes for Chocolate Brown Nails in Winter",
+      "Chocolate Brown French Tips and Nail Art for Winter",
+      "Chocolate Brown Nail Shapes That Work Best in Winter",
+      "Styling Chocolate Brown Nails With Your Winter Wardrobe",
+      "How to Keep Chocolate Brown Winter Nails Looking Fresh"
+    ],
+    "word_budget": {
+      "introduction": "230 words",
+      "conclusion": "180 words",
+      "per_h2": [
+        {"heading": "Why Chocolate Brown Is Winter's Most Expensive-Looking Neutral", "words": 190},
+        {"heading": "Latte and Caramel Brown: The Softest Winter Chocolate Shades", "words": 220},
+        {"heading": "Mocha Mousse Nails: 2026's Most-Requested Winter Brown", "words": 230},
+        {"heading": "Cocoa and Chestnut: Rich Mid-Tone Winter Browns", "words": 210},
+        {"heading": "Espresso Brown: The Moodiest Winter Chocolate Shade", "words": 210},
+        {"heading": "Best Finishes for Chocolate Brown Nails in Winter", "words": 220},
+        {"heading": "Chocolate Brown French Tips and Nail Art for Winter", "words": 190},
+        {"heading": "Chocolate Brown Nail Shapes That Work Best in Winter", "words": 150},
+        {"heading": "Styling Chocolate Brown Nails With Your Winter Wardrobe", "words": 160},
+        {"heading": "How to Keep Chocolate Brown Winter Nails Looking Fresh", "words": 110}
+      ]
+    }
+  },
+
+  "section_11_internal_links": {
+    "blog_gen_instruction": "Every link below must appear in the post. Cluster links use anchor texts verbatim — do not rewrite. Cross-site links use the provided descriptive anchor. Place each link where the placement note says — woven naturally into prose, never as a standalone CTA. Total internal links must not exceed 6.",
+    "all_internal_links": [
+      {
+        "url_or_slug": "/blog/winter-nails/winter-nail-colors-2026",
+        "title": "Winter Nail Colors 2026: The Complete Guide",
+        "anchor_text": "winter nail colors 2026",
+        "placement_note": "Introduction — establishing chocolate brown's place within the broader winter color story",
+        "link_type": "cluster-pillar"
+      },
+      {
+        "url_or_slug": "/blog/winter-nails/old-money-winter-nails",
+        "title": "Old Money Winter Nails: Quiet Luxury Manicure Ideas",
+        "anchor_text": "old money winter nail ideas",
+        "placement_note": "'Why Chocolate Brown Is Winter's Most Expensive-Looking Neutral' — natural tie-in to the quiet-luxury aesthetic angle",
+        "link_type": "cluster-spoke"
+      },
+      {
+        "url_or_slug": "/blog/winter-nails/dark-academia-winter-nails",
+        "title": "Dark Academia Winter Nails",
+        "anchor_text": "dark academia winter nail looks",
+        "placement_note": "'Espresso Brown: The Moodiest Winter Chocolate Shade' — natural tie-in to the moodier, deeper aesthetic",
+        "link_type": "cluster-spoke"
+      },
+      {
+        "url_or_slug": "/blog/winter-nails/winter-nails-dark-skin-tones",
+        "title": "Winter Nail Colors for Dark Skin Tones",
+        "anchor_text": "winter nail colors for dark skin tones",
+        "placement_note": "'Espresso Brown: The Moodiest Winter Chocolate Shade' — routes skin-tone-specific questions to the dedicated post rather than duplicating that content here",
+        "link_type": "cluster-spoke"
+      },
+      {
+        "url_or_slug": "https://mirelleinspo.com/blog/nails-by-color/chocolate-brown-nails",
+        "title": "Chocolate Brown Nails: Why This Neutral Is Suddenly Huge",
+        "anchor_text": "the full guide to every chocolate brown shade and how to match it to your skin tone",
+        "placement_note": "'Latte and Caramel Brown' section, first mention of undertone/skin-tone matching — routes the reader to the site's existing evergreen color-matching post instead of duplicating that content here, directly resolving the cannibalization risk flagged in section_4",
+        "link_type": "cross-site"
+      }
+    ]
+  },
+
+  "section_12_voice_tone": {
+    "blog_gen_instruction": "This is the voice for this specific post. Layer on top of Mirellé editorial framework. Do not default to generic AI tone.",
+    "recommended_voice": "Confident style-insider — warm but not gushing",
+    "tone_characteristics": [
+      "Specific and visual rather than vague ('deep cocoa with a chrome finish,' not 'a nice brown')",
+      "Trend-fluent — comfortable naming Pantone Mocha Mousse, celebrity manicures, and finish terminology without over-explaining",
+      "Efficient per-item captions — one strong sentence of styling insight, not padded description",
+      "Quietly aspirational rather than loud — 'expensive-looking' and 'sophisticated' over exclamation-heavy hype",
+      "Practical asides woven in naturally (finish choice, longevity, pairing) rather than siloed into a separate tips dump"
+    ],
+    "language_style": "Second person, direct address ('you'), short-to-medium sentences, occasional coffee-menu metaphor (latte, mocha, espresso) used consistently as the organizing device rather than as one-off flourish.",
+    "audience_match": "This reader already trusts the brown-nails trend and wants curation, not convincing — the voice should read like a stylish friend narrowing down options for her, not an editor introducing the color for the first time."
+  },
+
+  "section_13_external_links": {
+    "blog_gen_instruction": "Include all external links where indicated. Supports E-E-A-T. Use anchor suggestion as guide — write naturally around it. Sourced from phase_3's best_external_sources_found (real fetched competitor pages), not from separate searches.",
+    "links": [
+      {
+        "url": "https://www.marieclaire.com/beauty/nails/best-chocolate-nail-ideas/",
+        "context": "Use when referencing celebrity chocolate-brown manicures (Khloé Kardashian, Jennifer Lopez) as trend validation in the opening section",
+        "anchor_suggestion": "celebrities like Khloé Kardashian have made chocolate brown their go-to seasonal manicure"
+      },
+      {
+        "url": "https://www.whowhatwear.com/beauty/nails/brown-nail-ideas",
+        "context": "Use when discussing why brown reads as 'expensive' compared to black or beige in winter light",
+        "anchor_suggestion": "nail artists have called brown the most expensive-looking neutral for winter"
+      }
+    ]
+  },
+
+  "section_14_execution_plan": {
+    "purpose": "Blog Gen Agent reads this section FIRST — before frontmatter, before writing a single word. Every value here is pre-calculated from the input file data. Blog Gen Agent locks all values and executes them exactly.",
+    "blog_gen_instruction": "READ THIS SECTION FIRST. Lock every value. Execute exactly. Do not recalculate, do not adjust, do not deviate.",
+    "calculated_by": "Input Gen Agent",
+
+    "block_1_keyword_execution": {
+      "primary_keyword": "chocolate brown winter nails",
+      "top_5_density_baseline": 0.6,
+      "total_mention_target": "6 total mentions (baseline rounds to ~1, +2-3 per rule, adjusted up to 6 to ensure natural distribution across a 2100-word, 10-H2 post)",
+      "first_100_words_plan": {
+        "rule": "Primary keyword MUST appear TWICE in the first 100 words. Mandatory. No exceptions.",
+        "mention_1": "sentence 1 of introduction — establishing the post's exact subject in the opening line",
+        "mention_2": "sentence 3-4 of introduction — reinforcing within the volume/trend promise before transitioning into the shade breakdown"
+      },
+      "first_half_target": "4 mentions — first ~1050 words. Run denser in first half.",
+      "second_half_target": "2 mentions — second ~1050 words",
+      "strong_tag_rule": "EVERY single mention of the primary keyword — all 6 of them — wrapped in <strong> tags. No exceptions. Catch each one as it is written. Scan after every paragraph.",
+      "keywords_to_avoid_active": [
+        "winter nail colors", "winter nail ideas", "winter nail trends 2026", "short winter nails",
+        "almond winter nails", "winter nails for dark skin", "old money winter nails",
+        "dark academia nails winter", "why do nails crack in winter", "easy winter nail art at home",
+        "navy blue winter nails", "snowflake nail art", "matte winter nails", "winter wedding nails",
+        "coffin nails winter", "winter chrome nails"
+      ]
+    },
+
+    "block_2_word_budget": {
+      "total_target": "2100 words — +/-50 words tolerance, never exceed",
+      "introduction": "230 words",
+      "conclusion": "180 words",
+      "h2_budgets": [
+        {"heading": "Why Chocolate Brown Is Winter's Most Expensive-Looking Neutral", "budget": "190 words", "complexity": "low"},
+        {"heading": "Latte and Caramel Brown: The Softest Winter Chocolate Shades", "budget": "220 words", "complexity": "medium"},
+        {"heading": "Mocha Mousse Nails: 2026's Most-Requested Winter Brown", "budget": "230 words", "complexity": "medium"},
+        {"heading": "Cocoa and Chestnut: Rich Mid-Tone Winter Browns", "budget": "210 words", "complexity": "medium"},
+        {"heading": "Espresso Brown: The Moodiest Winter Chocolate Shade", "budget": "210 words", "complexity": "medium"},
+        {"heading": "Best Finishes for Chocolate Brown Nails in Winter", "budget": "220 words", "complexity": "high"},
+        {"heading": "Chocolate Brown French Tips and Nail Art for Winter", "budget": "190 words", "complexity": "medium"},
+        {"heading": "Chocolate Brown Nail Shapes That Work Best in Winter", "budget": "150 words", "complexity": "low"},
+        {"heading": "Styling Chocolate Brown Nails With Your Winter Wardrobe", "budget": "160 words", "complexity": "low"},
+        {"heading": "How to Keep Chocolate Brown Winter Nails Looking Fresh", "budget": "110 words", "complexity": "low"}
+      ],
+      "tracking_rule": "Track running word total at the end of every H2 section. If a section is running over budget — cut before moving to the next section. Do not compensate later."
+    },
+
+    "block_3_image_plan": {
+      "total_images": 36,
+      "hero_image": "frontmatter only — NEVER appears in post body",
+      "body_images": 35,
+      "assignments": [
+        {"image_number": 1, "place_after": "Why Chocolate Brown Is Winter's Most Expensive-Looking Neutral", "image_type": "standard_inspiration", "section_context": "Classic solid chocolate brown gloss manicure, short-to-medium almond, establishing the baseline look"},
+        {"image_number": 2, "place_after": "Latte and Caramel Brown: The Softest Winter Chocolate Shades", "image_type": "standard_inspiration", "section_context": "Latte-brown short oval, soft glossy finish"},
+        {"image_number": 3, "place_after": "Latte and Caramel Brown: The Softest Winter Chocolate Shades", "image_type": "standard_inspiration", "section_context": "Caramel brown ombre gradient on almond shape"},
+        {"image_number": 4, "place_after": "Latte and Caramel Brown: The Softest Winter Chocolate Shades", "image_type": "standard_inspiration", "section_context": "Cream-to-caramel two-tone French on short almond"},
+        {"image_number": 5, "place_after": "Latte and Caramel Brown: The Softest Winter Chocolate Shades", "image_type": "standard_inspiration", "section_context": "Soft latte with single gold foil accent nail"},
+        {"image_number": 6, "place_after": "Mocha Mousse Nails: 2026's Most-Requested Winter Brown", "image_type": "standard_inspiration", "section_context": "Classic Pantone-inspired mocha mousse solid on short almond"},
+        {"image_number": 7, "place_after": "Mocha Mousse Nails: 2026's Most-Requested Winter Brown", "image_type": "standard_inspiration", "section_context": "Mocha mousse with glazed chrome overlay"},
+        {"image_number": 8, "place_after": "Mocha Mousse Nails: 2026's Most-Requested Winter Brown", "image_type": "standard_inspiration", "section_context": "Mocha mousse matte finish on short squoval"},
+        {"image_number": 9, "place_after": "Mocha Mousse Nails: 2026's Most-Requested Winter Brown", "image_type": "standard_inspiration", "section_context": "Mocha mousse with tiny pearl cuticle accent"},
+        {"image_number": 10, "place_after": "Cocoa and Chestnut: Rich Mid-Tone Winter Browns", "image_type": "standard_inspiration", "section_context": "Deep cocoa solid gloss on long coffin"},
+        {"image_number": 11, "place_after": "Cocoa and Chestnut: Rich Mid-Tone Winter Browns", "image_type": "standard_inspiration", "section_context": "Chestnut brown with tiny hand-painted leaf accent"},
+        {"image_number": 12, "place_after": "Cocoa and Chestnut: Rich Mid-Tone Winter Browns", "image_type": "standard_inspiration", "section_context": "Cocoa brown with gold foil flakes scattered"},
+        {"image_number": 13, "place_after": "Cocoa and Chestnut: Rich Mid-Tone Winter Browns", "image_type": "standard_inspiration", "section_context": "Cocoa and cream two-tone chocolate design"},
+        {"image_number": 14, "place_after": "Espresso Brown: The Moodiest Winter Chocolate Shade", "image_type": "standard_inspiration", "section_context": "Espresso mirror-glossy finish on short almond"},
+        {"image_number": 15, "place_after": "Espresso Brown: The Moodiest Winter Chocolate Shade", "image_type": "standard_inspiration", "section_context": "Espresso brown long coffin, dramatic length"},
+        {"image_number": 16, "place_after": "Espresso Brown: The Moodiest Winter Chocolate Shade", "image_type": "standard_inspiration", "section_context": "Espresso brown on deep skin tone, mirror finish"},
+        {"image_number": 17, "place_after": "Espresso Brown: The Moodiest Winter Chocolate Shade", "image_type": "standard_inspiration", "section_context": "Espresso brown French tip on nude base"},
+        {"image_number": 18, "place_after": "Best Finishes for Chocolate Brown Nails in Winter", "image_type": "standard_inspiration", "section_context": "Brown chrome finish, bronze dimensional shimmer"},
+        {"image_number": 19, "place_after": "Best Finishes for Chocolate Brown Nails in Winter", "image_type": "standard_inspiration", "section_context": "Brown cat-eye magnetic polish with visible light beam"},
+        {"image_number": 20, "place_after": "Best Finishes for Chocolate Brown Nails in Winter", "image_type": "standard_inspiration", "section_context": "Velvet magnetic-powder brown finish, matte-textured"},
+        {"image_number": 21, "place_after": "Best Finishes for Chocolate Brown Nails in Winter", "image_type": "standard_inspiration", "section_context": "Glossy solid brown for comparison against matte/chrome/velvet"},
+        {"image_number": 22, "place_after": "Best Finishes for Chocolate Brown Nails in Winter", "image_type": "standard_inspiration", "section_context": "Matte brown on short squoval, architectural look"},
+        {"image_number": 23, "place_after": "Chocolate Brown French Tips and Nail Art for Winter", "image_type": "standard_inspiration", "section_context": "Classic brown French tip on nude base"},
+        {"image_number": 24, "place_after": "Chocolate Brown French Tips and Nail Art for Winter", "image_type": "standard_inspiration", "section_context": "Tortoiseshell brown marble pattern on long almond"},
+        {"image_number": 25, "place_after": "Chocolate Brown French Tips and Nail Art for Winter", "image_type": "standard_inspiration", "section_context": "Brown and gold swirl French tip"},
+        {"image_number": 26, "place_after": "Chocolate Brown French Tips and Nail Art for Winter", "image_type": "standard_inspiration", "section_context": "Brown polka dot accent nail on cream base"},
+        {"image_number": 27, "place_after": "Chocolate Brown French Tips and Nail Art for Winter", "image_type": "standard_inspiration", "section_context": "Chocolate glazed donut chrome-over-brown look"},
+        {"image_number": 28, "place_after": "Chocolate Brown Nail Shapes That Work Best in Winter", "image_type": "standard_inspiration", "section_context": "Short almond brown, everyday wearable shape"},
+        {"image_number": 29, "place_after": "Chocolate Brown Nail Shapes That Work Best in Winter", "image_type": "standard_inspiration", "section_context": "Long coffin brown, dramatic winter shape"},
+        {"image_number": 30, "place_after": "Chocolate Brown Nail Shapes That Work Best in Winter", "image_type": "standard_inspiration", "section_context": "Short squoval brown, office-friendly shape"},
+        {"image_number": 31, "place_after": "Styling Chocolate Brown Nails With Your Winter Wardrobe", "image_type": "standard_inspiration", "section_context": "Brown manicure styled against a cream sweater and gold jewelry"},
+        {"image_number": 32, "place_after": "Styling Chocolate Brown Nails With Your Winter Wardrobe", "image_type": "standard_inspiration", "section_context": "Brown manicure styled against a wool coat and silver jewelry"},
+        {"image_number": 33, "place_after": "Styling Chocolate Brown Nails With Your Winter Wardrobe", "image_type": "standard_inspiration", "section_context": "Brown manicure holding a warm drink, cozy lifestyle shot"},
+        {"image_number": 34, "place_after": "How to Keep Chocolate Brown Winter Nails Looking Fresh", "image_type": "standard_inspiration", "section_context": "Fresh, glossy brown manicure close-up emphasizing healthy shine"},
+        {"image_number": 35, "place_after": "Conclusion", "image_type": "standard_inspiration", "section_context": "Final aspirational full-hand shot, richest deep chocolate shade, closing image"}
+      ],
+      "image_type_rule_note": "This post is inspirational intent, not comparison or tutorial — every slot is standard_inspiration per the default rule. No infographic slot is needed; a finish or shape comparison could theoretically use one, but images 18-22 (finishes) and 28-30 (shapes) are better served as real styled looks the reader can screenshot, matching this audience's stated preference for browsable, savable images over instructional graphics.",
+      "path_rule": "/images/blog/winter-nails/chocolate-brown-winter-nails/filename.webp"
+    },
+
+    "block_4_opening_technique_assignments": {
+      "rule": "No two consecutive sections use the same technique. Conclusion = Technique 1 or 3 only.",
+      "assignments": [
+        {"section": "Introduction", "technique": "Technique 3 — The Reframe (open by reframing brown from 'safe neutral' to 'winter's most expensive-looking color')"},
+        {"section": "Why Chocolate Brown Is Winter's Most Expensive-Looking Neutral", "technique": "Technique 1 — The Claim"},
+        {"section": "Latte and Caramel Brown: The Softest Winter Chocolate Shades", "technique": "Technique 2 — The Scene"},
+        {"section": "Mocha Mousse Nails: 2026's Most-Requested Winter Brown", "technique": "Technique 1 — The Claim"},
+        {"section": "Cocoa and Chestnut: Rich Mid-Tone Winter Browns", "technique": "Technique 2 — The Scene"},
+        {"section": "Espresso Brown: The Moodiest Winter Chocolate Shade", "technique": "Technique 3 — The Reframe"},
+        {"section": "Best Finishes for Chocolate Brown Nails in Winter", "technique": "Technique 1 — The Claim"},
+        {"section": "Chocolate Brown French Tips and Nail Art for Winter", "technique": "Technique 2 — The Scene"},
+        {"section": "Chocolate Brown Nail Shapes That Work Best in Winter", "technique": "Technique 1 — The Claim"},
+        {"section": "Styling Chocolate Brown Nails With Your Winter Wardrobe", "technique": "Technique 2 — The Scene"},
+        {"section": "How to Keep Chocolate Brown Winter Nails Looking Fresh", "technique": "Technique 1 — The Claim"},
+        {"section": "Conclusion", "technique": "Technique 3 — The Reframe"}
+      ],
+      "banned_opener_rule": "Check every opener against banned_opening_approaches in blog gen prompt before writing the second sentence"
+    },
+
+    "block_5_link_placements": {
+      "rule": "Every link placed exactly where specified. Anchor texts used verbatim — never rewritten. Links woven into prose naturally — never standalone CTAs.",
+      "links": [
+        {
+          "anchor_text": "winter nail colors 2026",
+          "full_url": "/blog/winter-nails/winter-nail-colors-2026",
+          "place_in_section": "Introduction",
+          "placement_context": "When situating chocolate brown as one color within the broader winter palette story",
+          "link_type": "cluster-pillar"
+        },
+        {
+          "anchor_text": "old money winter nail ideas",
+          "full_url": "/blog/winter-nails/old-money-winter-nails",
+          "place_in_section": "Why Chocolate Brown Is Winter's Most Expensive-Looking Neutral",
+          "placement_context": "When drawing the connection between brown's 'expensive' read and the quiet-luxury aesthetic",
+          "link_type": "cluster-spoke"
+        },
+        {
+          "anchor_text": "the full guide to every chocolate brown shade and how to match it to your skin tone",
+          "full_url": "https://mirelleinspo.com/blog/nails-by-color/chocolate-brown-nails",
+          "place_in_section": "Latte and Caramel Brown: The Softest Winter Chocolate Shades",
+          "placement_context": "First moment undertone/skin-tone matching would naturally come up — route to the existing evergreen post instead of duplicating that content",
+          "link_type": "cross-site"
+        },
+        {
+          "anchor_text": "dark academia winter nail looks",
+          "full_url": "/blog/winter-nails/dark-academia-winter-nails",
+          "place_in_section": "Espresso Brown: The Moodiest Winter Chocolate Shade",
+          "placement_context": "When describing espresso's moodier, gothic-adjacent register",
+          "link_type": "cluster-spoke"
+        },
+        {
+          "anchor_text": "winter nail colors for dark skin tones",
+          "full_url": "/blog/winter-nails/winter-nails-dark-skin-tones",
+          "place_in_section": "Espresso Brown: The Moodiest Winter Chocolate Shade",
+          "placement_context": "When noting espresso reads especially striking on deeper skin tones — route detailed skin-tone guidance to the dedicated post",
+          "link_type": "cluster-spoke"
+        }
+      ]
+    },
+
+    "block_6_aeo_geo_plan": {
+      "aeo_assignments": [
+        {
+          "aeo_term": "Is chocolate brown nail polish good for winter?",
+          "assigned_to_section": "Why Chocolate Brown Is Winter's Most Expensive-Looking Neutral",
+          "execution": "Write a direct 2-3 sentence answer paragraph IMMEDIATELY after the H2 heading — before any elaboration."
+        },
+        {
+          "aeo_term": "What's the difference between mocha and espresso brown nail polish?",
+          "assigned_to_section": "Mocha Mousse Nails: 2026's Most-Requested Winter Brown",
+          "execution": "Write a direct 2-3 sentence answer paragraph immediately after the H2 heading."
+        },
+        {
+          "aeo_term": "What finish looks best on brown nails in winter — matte or glossy?",
+          "assigned_to_section": "Best Finishes for Chocolate Brown Nails in Winter",
+          "execution": "Write a direct 2-3 sentence answer paragraph immediately after the H2 heading."
+        },
+        {
+          "aeo_term": "What nail shape pairs best with chocolate brown polish?",
+          "assigned_to_section": "Chocolate Brown Nail Shapes That Work Best in Winter",
+          "execution": "Write a direct 2-3 sentence answer paragraph immediately after the H2 heading."
+        },
+        {
+          "aeo_term": "How long do chocolate brown gel nails last?",
+          "assigned_to_section": "How to Keep Chocolate Brown Winter Nails Looking Fresh",
+          "execution": "Write a direct 2-3 sentence answer paragraph immediately after the H2 heading."
+        }
+      ],
+      "geo_entity_statements": [
+        {
+          "entity": "Mocha mousse",
+          "assigned_to_section": "Mocha Mousse Nails: 2026's Most-Requested Winter Brown",
+          "execution": "Write a clear declarative definition sentence: Mocha mousse is Pantone's 2025 Color of the Year, a soft creamy brown with warm undertones."
+        },
+        {
+          "entity": "Cat-eye nail polish",
+          "assigned_to_section": "Best Finishes for Chocolate Brown Nails in Winter",
+          "execution": "Write a clear declarative definition sentence describing the magnetic polish technique and its velvety light-beam effect."
+        },
+        {
+          "entity": "Tortoiseshell nail art",
+          "assigned_to_section": "Chocolate Brown French Tips and Nail Art for Winter",
+          "execution": "Write a clear declarative definition sentence describing the multi-toned amber-and-brown marbled pattern."
+        }
+      ]
+    },
+
+    "block_7_active_constraints": {
+      "em_dash_banned": "Long em dash does not appear anywhere. If one forms while writing — stop, replace with: comma / new sentence / parentheses / but / restructure.",
+      "banned_vocab_watch": ["elevate", "unleash", "delve", "tapestry", "boasts", "seamlessly", "game-changer", "must-have"],
+      "american_english_active": "color, recognize, -ize, -or — every instance, no exceptions. This post uses American English, not British.",
+      "keyword_density_reminder": "After every 2 H2 sections — count current keyword mentions. Verify running total is on track to hit 6 total. First half must run denser than second half. Adjust if needed.",
+      "image_path_reminder": "/images/blog/winter-nails/chocolate-brown-winter-nails/filename.webp — topic_slug in path always",
+      "internal_link_url_reminder": "Full correct paths only. Cluster links = /blog/winter-nails/[slug]. Cross-site link = full external URL as discovered. Never bare /slug.",
+      "hero_image_reminder": "Hero = frontmatter only. Never place hero image in body.",
+      "strong_tag_reminder": "Every primary keyword mention = <strong> tags. Scan after every paragraph."
+    }
+  }
+}
