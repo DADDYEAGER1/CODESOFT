@@ -1,0 +1,345 @@
+{
+  "section_1_file_authority": {
+    "statement": "THIS FILE IS THE SINGLE SOURCE OF TRUTH FOR THE BLOG GEN AGENT. All values in POST_CONSTANTS are hardcoded — Blog Gen Agent does not ask, adjust, or override them. All keywords, H2 structure, audience intelligence, internal links, and tone defined here must be followed exactly."
+  },
+
+  "section_2_post_constants": {
+    "slug": "gardener-nails",
+    "topic_slug": "nails-by-lifestyle",
+    "canonical": "https://mirelleinspo.com/blog/nails-by-lifestyle/gardener-nails",
+    "post_type": "spoke",
+    "intent": "informational",
+    "word_count": 1900,
+    "image_count": 7,
+    "show_inspo_gallery_link": false,
+    "template": "posts",
+    "hero_dimensions": "1200x675",
+    "category": "Nails by Lifestyle",
+    "publish_date": "2026-09-15",
+    "author": "jyoti-mirelle"
+  },
+
+  "section_3_cluster_snapshot": {
+    "pillar_slug": "gym-nails",
+    "pillar_title": "Nails for Gym Goers: Durable Shapes That Survive Lifting",
+    "pillar_primary_keyword": "gym nails",
+    "this_post_slug": "gardener-nails",
+    "this_post_role": "spoke",
+    "show_inspo_gallery_link_cluster_default": false,
+    "keywords_to_avoid": [
+      "gym nails", "chlorine resistant nails", "nails for manual labor", "best nail shape for typing",
+      "press-on nails for active lifestyle", "travel nail care", "non-toxic nails for moms",
+      "nails for piano players", "professional nail length", "nail shapes for work", "camping nails"
+    ]
+  },
+
+  "section_4_serp_analysis": {
+    "blog_gen_instruction": "our_strategic_approach is a specific, evidence-based outperform strategy, not a vague gap-fill statement. Use it as the concrete angle for the introduction and conclusion, and to guide depth/coverage decisions in relevant H2 sections.",
+    "competitor_gaps": [
+      "None of the 5 fetched pages address gel/acrylic/builder-gel nail compatibility with gardening specifically — all treat 'nails' as natural nails only, despite strong Quora demand from gardeners with acrylics/gel asking how to protect them",
+      "No fetched page names a specific best nail shape/length for gardening (round/squoval vs. square/almond) — durability-by-shape guidance is absent despite being directly relevant and validated by outside sources",
+      "Only 1 of 5 pages (Nails by Paris) offers a seasonal care breakdown — none give a simple before/during/after structured routine a reader can actually follow start to finish"
+    ],
+    "missing_semantic_territory": [
+      "gel manicure gardening durability",
+      "acrylic nails while gardening",
+      "best nail shape for gardening",
+      "builder gel overlay for gardeners",
+      "nail hardener vs strengthener for gardening"
+    ],
+    "our_strategic_approach": "Competitors split into two thin camps: quick hack-list posts (gardening.org, HereSpa, Dérmica) that give scattered tips with no structure, and one long salon-service page (Nails by Paris) padded with local SEO and booking CTAs rather than genuine depth. None resolve the reader's real fork in the road — 'do I keep my nails natural or can I still get gel/acrylic done and garden' — despite this being a validated, recurring Quora question. This post wins by opening with a clear before/during/after framework (matching what readers responded well to in Nails by Paris's structure, without the salon-ad padding), then adding a dedicated nail-shape-and-enhancement-type section that directly answers the gel/acrylic/builder-gel question no competitor tackles head-on. Real stain-removal methods (bicarbonate paste, lemon-baking soda scrub) are consolidated into one clear section instead of scattered as isolated tips.",
+    "top_5_fetched_pages_summary": [
+      {"url": "https://gardening.org/hand-and-nail-care-hacks-for-gardeners/", "word_count": 2650, "h2_count": 18, "keyword_mentions": 9, "note": "Comprehensive 16-hack listicle, strong on DIY scrubs, weak on structure — reads as a long unordered list"},
+      {"url": "https://www.radiantrosebeautyroom.co.uk/post/nail-care-for-gardeners-protecting-your-hands-while-doing-what-you-love", "word_count": 950, "h2_count": 6, "keyword_mentions": 11, "note": "Good before/after structure, includes biotin/nutrition angle, but thin per-section depth"},
+      {"url": "https://www.herespa.com/blogs/best-nail-care-tips-for-gardeners", "word_count": 650, "h2_count": 7, "keyword_mentions": 8, "note": "Clean pre/post split but very shallow, ends in a service pitch"},
+      {"url": "https://dermica.ca/gardening-nails/", "word_count": 450, "h2_count": 4, "keyword_mentions": 4, "note": "Thinnest page, mostly a manicure-service upsell with minimal actionable tips"},
+      {"url": "https://www.nailsbyparis.co.uk/hand-and-nail-care-for-gardeners-in-chichester/", "word_count": 3400, "h2_count": 32, "keyword_mentions": 22, "note": "Most comprehensive by far (seasonal tweaks, FAQs, myths), but heavily padded with local-salon CTAs and repetitive sections"}
+    ],
+    "top_5_word_count_average": 1620,
+    "top_5_keyword_density_average": 11,
+    "best_external_sources_found": []
+  },
+
+  "section_5_audience_intelligence": {
+    "blog_gen_instruction": "This is your primary creative brief. Every paragraph written for this specific person with this specific intent. Satisfy them completely.",
+    "who_they_are": "A woman who gardens regularly (weekly or more) — as a genuine hobby, not landscaping work — who also cares about how her hands and nails look. She likely already gets manicures or wears polish/gel and is trying to reconcile that upkeep with dirt, water, and physical strain rather than choosing one over the other.",
+    "what_they_want_from_this_post": "A clear, doable routine — not a random list of scattered hacks — that tells her exactly what to do before, during, and after gardening, plus a straight answer on whether her gel or acrylic manicure can survive it.",
+    "what_frustrates_them": "Existing content is either a disorganized hack dump (16+ unrelated tips with no order) or a thinly disguised salon ad. Nobody addresses artificial nails directly, and nobody tells her which nail shape actually holds up.",
+    "top_5_pain_points": [
+      "Dirt and soil packing under the nail no matter how careful she is, even wearing gloves",
+      "Not knowing if her gel or acrylic manicure will survive regular gardening or if she should just skip it during gardening season",
+      "Nails snagging, bending backward, or breaking mid-task while weeding or pulling",
+      "Stubborn green/brown soil and sap stains that don't come off with normal washing",
+      "Dry, cracked cuticles and rough hands that make even a fresh manicure look neglected within days"
+    ],
+    "exact_user_phrases": [
+      "how to maintain nice nails while gardening",
+      "keep dirt out of fingernails when gardening",
+      "gardening and fingernails a terrible combo",
+      "how do gardeners avoid getting dirt under their fingernails",
+      "keep my acrylic nails clean while gardening",
+      "bent my fingernail backwards pulling weeds",
+      "mulch dye underneath my nails",
+      "dirt thumbed strummer",
+      "green thumbed ladies",
+      "garden mechanic hands"
+    ],
+    "intent_content_signals": [
+      "Responds to a clear ordered routine (before/during/after) over a flat tip list",
+      "Wants a direct answer, not hedging, on artificial nails and gardening",
+      "Appreciates natural/DIY stain remedies (bicarb, lemon) over product pushes",
+      "Wants nail-shape guidance framed practically, not just aesthetically",
+      "Skeptical of anything that reads as a thinly veiled salon booking page"
+    ]
+  },
+
+  "section_6_semantic_keyword_data": {
+    "blog_gen_instruction": "Primary keyword in strong tags every mention. AEO terms trigger direct answer paragraphs. User language woven naturally. No term from keywords_to_avoid used as focus term.",
+    "primary_keyword": "nails for gardeners",
+    "keyword_variations": ["nail care for gardeners", "gardening nails", "nails while gardening", "protecting your nails while gardening", "garden nail care routine"],
+    "cluster_keywords": ["gardening gloves nails", "soil stain removal nails", "cuticle care gardening", "nail hardener for gardening", "protective nail routine outdoors", "hands and nails after gardening", "dirt under nails fix", "nail shape for hands-on work", "builder gel gardening", "gel manicure durability outdoors"],
+    "lsi_terms": ["soap under nails trick", "petroleum jelly cuticle barrier", "nitrile coated gardening gloves", "bicarbonate of soda stain paste", "cuticle oil jojoba", "nail strengthener vs hardener", "squoval nail shape", "builder gel overlay", "keratin nail bed", "biotin supplement nails", "barrier cream gardening", "hangnail prevention", "sap and soil stains", "gel polish chipping", "acrylic nail durability", "hand cream urea", "nail brush cleanup", "cracked cuticles remedy", "SPF hand protection", "post garden hand routine"],
+    "aeo_terms": [
+      "can I garden with gel nails on",
+      "what nail shape is best for gardening",
+      "how do I stop getting dirt under my nails when gardening",
+      "why do my nails break so much when I garden",
+      "how do I remove soil stains from my nails",
+      "should I wear acrylic nails while gardening",
+      "what gloves protect nails best for gardening",
+      "how often should I moisturize my nails after gardening",
+      "does gardening ruin a gel manicure",
+      "what is the soap trick for gardening nails"
+    ],
+    "technical_terms": ["builder gel", "nitrile-coated gloves", "cuticle oil", "nail hardener", "barrier cream", "keratin", "acetone-free remover", "squoval shape"],
+    "user_language": ["dirt thumbed", "garden mechanic hands", "green thumbed ladies", "mulch dye under nails", "bent my nail backwards", "gardening and fingernails a terrible combo", "keep dirt out of my nails", "nails snag on plant stems"]
+  },
+
+  "section_7_voice_and_ai_queries": {
+    "blog_gen_instruction": "Answer every query directly in the relevant H2 section body. If a query cannot be addressed naturally in the body, route it to faqItems. No query left unanswered.",
+    "queries": [
+      "Can I garden with gel nails on without ruining them?",
+      "What nail shape holds up best when you garden a lot?",
+      "How do I stop dirt from getting stuck under my nails while gardening?",
+      "Why do my nails keep breaking when I garden?",
+      "How do I get soil and grass stains out from under my nails?",
+      "Should I wear acrylic nails if I garden every week?",
+      "What kind of gloves actually protect my nails while gardening?",
+      "How do I stop my cuticles from cracking after gardening?",
+      "Does regular gardening ruin a fresh manicure?",
+      "What is the soap-under-the-nails trick and does it actually work?",
+      "How often should I moisturize my hands if I garden a lot?",
+      "Is a nail hardener or a nail strengthener better for gardeners?",
+      "Can builder gel survive weeding and digging?",
+      "What should I do before I start gardening to protect my nails?",
+      "What's the best after-gardening nail routine?"
+    ]
+  },
+
+  "section_8_hook_and_ctr": {
+    "blog_gen_instruction": "READ THIS SECTION BEFORE WRITING THE TITLE, META DESCRIPTION, INTRO, OR FIRST H2. The title and description here are the option the USER SELECTED from 2-3 real, evidence-based choices during phase_6 — use them exactly. The intro hook brief and first H2 hook direction are your creative brief for those specific elements, matching the selected option's angle. Do not deviate.",
+    "real_serp_findings_summary": "Fetched competitor titles split into two patterns: DIY-hack framing (\"16 Hand and Nail Care Hacks,\" \"Nail Care Tips\") and salon-service framing (\"Hand and Nail Care for Gardeners in Chichester\"). None front-load an outcome-based promise — they describe the topic, not the payoff. None mention stain removal or soil stains directly in the title despite it being a top pain point across every fetched page's body content.",
+    "selected_option_rationale": "Leads with the specific, visible frustration (soil stains) rather than a generic 'tips' framing, differentiating from every fetched competitor title while staying informational and non-hyped — matches this audience's preference for a direct, non-salesy answer.",
+    "title": "Nails for Gardeners: Protective Routines That Hide Soil Stains",
+    "title_char_count": 64,
+    "meta_description": "Dirt-caked cuticles and cracked tips don't have to be part of the deal. Here's the pre, during, and post-garden nail routine that actually holds up.",
+    "meta_char_count": 151,
+    "intro_hook_brief": "Open by naming the real trade-off the reader feels — loving the garden but dreading what it does to her hands — then immediately promise this isn't another scattered hack list but an actual routine broken into before/during/after.",
+    "first_h2_hook_direction": "Ground the first H2 in the specific physical reasons nails suffer from gardening (moisture, friction, soil chemistry) before moving into solutions — establishes credibility before the routine begins."
+  },
+
+  "section_9_search_journey": {
+    "blog_gen_instruction": "This is the emotional contract with the reader. Every section of the post must honour the promise made. Read this before writing any section. If a paragraph breaks the journey arc — rewrite it.",
+    "reader_arrival_state": "Mildly frustrated but not desperate — she loves gardening and isn't willing to give it up, but she's tired of picking soil out from under her nails or watching a fresh manicure fall apart within days.",
+    "journey_arc": [
+      "Acknowledge the real tension between loving the garden and wanting nice hands",
+      "Explain briefly why gardening is specifically hard on nails (moisture, friction, soil microbes)",
+      "Deliver the before-gardening prep routine as a clear, ordered checklist",
+      "Cover in-garden protection (gloves, the soap trick, breaking up repetitive strain)",
+      "Resolve the artificial-nails question directly — gel, acrylic, builder gel — since no competitor answers this",
+      "Give the after-gardening cleanup and stain-removal routine",
+      "Close with a simple maintenance rhythm she can actually stick to"
+    ],
+    "promise_to_deliver": "A real, usable before/during/after routine that protects nails through gardening — including a direct answer for readers with gel or acrylic manicures — not just a list of disconnected tips.",
+    "exit_state": "Reassured and equipped — she now has an actual system to follow next time she gardens, and she knows exactly what to do about her manicure instead of guessing."
+  },
+
+  "section_10_content_structure": {
+    "blog_gen_instruction": "This H2 structure is research-driven and must be followed exactly. Do not rename, reorder, or remove H2s without user instruction. Word budget per section is set — follow it. H3s may be added at editorial discretion.",
+    "h1": "Nails for Gardeners: Protective Routines That Hide Soil Stains",
+    "h2_structure": [
+      "Why Gardening Is So Hard on Your Nails",
+      "The Best Nail Shape and Length for Gardening",
+      "Can You Garden With Gel or Acrylic Nails?",
+      "Your Before-Gardening Protection Routine",
+      "Protecting Your Nails While You Work",
+      "How to Remove Soil and Sap Stains From Your Nails",
+      "Your After-Gardening Recovery Routine",
+      "A Simple Weekly Maintenance Rhythm"
+    ],
+    "word_budget": {
+      "introduction": 230,
+      "conclusion": 180,
+      "per_h2": {
+        "Why Gardening Is So Hard on Your Nails": 180,
+        "The Best Nail Shape and Length for Gardening": 210,
+        "Can You Garden With Gel or Acrylic Nails?": 260,
+        "Your Before-Gardening Protection Routine": 220,
+        "Protecting Your Nails While You Work": 190,
+        "How to Remove Soil and Sap Stains From Your Nails": 210,
+        "Your After-Gardening Recovery Routine": 220,
+        "A Simple Weekly Maintenance Rhythm": 200
+      }
+    }
+  },
+
+  "section_11_internal_links": {
+    "blog_gen_instruction": "Every link below must appear in the post. Cluster links use anchor texts verbatim — do not rewrite. Cross-site links use the provided descriptive anchor. Place each link where the placement note says — woven naturally into prose, never as a standalone CTA. Total internal links must not exceed 6.",
+    "all_internal_links": [
+      {
+        "url_or_slug": "/blog/nails-by-lifestyle/gym-nails",
+        "title": "Nails for Gym Goers: Durable Shapes That Survive Lifting",
+        "anchor_text": "gym nails",
+        "placement_note": "In 'The Best Nail Shape and Length for Gardening' — natural comparison point since both are durability-driven, hands-on lifestyle needs",
+        "link_type": "cluster-pillar"
+      },
+      {
+        "url_or_slug": "/blog/nails-by-lifestyle/manual-labor-nails",
+        "title": "Nails for Manual Labor Jobs: Short, Reinforced Options",
+        "anchor_text": "nails for manual labor",
+        "placement_note": "In 'Can You Garden With Gel or Acrylic Nails?' — relevant to readers whose gardening is heavier/more frequent than hobbyist level",
+        "link_type": "cluster-spoke"
+      },
+      {
+        "url_or_slug": "/blog/nails-by-lifestyle/travel-nails",
+        "title": "Travel Nails: How to Keep a Manicure Flawless on Long-Haul Trips",
+        "anchor_text": "travel nail care",
+        "placement_note": "In 'A Simple Weekly Maintenance Rhythm' — natural link between two lifestyle contexts requiring manicure upkeep and protection",
+        "link_type": "cluster-spoke"
+      }
+    ]
+  },
+
+  "section_12_voice_tone": {
+    "blog_gen_instruction": "This is the voice for this specific post. Layer on top of Mirellé editorial framework. Do not default to generic AI tone.",
+    "recommended_voice": "Warm, practical expert — a friend who gardens and gets her nails done and has actually solved this problem, not a salon pitching services",
+    "tone_characteristics": ["Direct and reassuring, not alarmist about nail damage", "Practical over aspirational — solutions-first", "Down-to-earth language, avoids overly clinical or salon-brochure phrasing", "Validates the reader's frustration without dwelling on it", "Confident, declarative answers rather than hedged 'it depends' framing"],
+    "language_style": "Conversational second-person, short-to-medium sentences, plain-English explanations of any technical terms (e.g. what a builder gel overlay actually is) the first time they're used",
+    "audience_match": "This reader wants to be told clearly what to do, not sold a service or buried in disconnected trivia — a warm, practical, no-fluff voice respects both her time and her intelligence"
+  },
+
+  "section_13_external_links": {
+    "blog_gen_instruction": "Include all external links where indicated. Supports E-E-A-T. Use anchor suggestion as guide — write naturally around it. Sourced from phase_3's best_external_sources_found (real fetched competitor pages), not from separate searches. May be empty (0-2 links) if none of the fetched pages qualified as genuinely citation-worthy — that is expected, not a gap to fill.",
+    "links": []
+  },
+
+  "section_14_execution_plan": {
+    "calculated_by": "Input Gen Agent — calculated last, after all other sections are complete",
+    "blog_gen_instruction": "READ THIS SECTION FIRST. Lock every value. Execute exactly. Do not recalculate, do not adjust, do not deviate.",
+
+    "block_1_keyword_execution": {
+      "primary_keyword": "nails for gardeners",
+      "top_5_density_baseline": 11,
+      "total_mention_target": 13,
+      "first_100_words_plan": {
+        "rule": "Primary keyword MUST appear TWICE in the first 100 words. Mandatory. No exceptions.",
+        "mention_1": "sentence 1-2 of introduction — naming the post topic directly while framing the trade-off",
+        "mention_2": "sentence 4-5 of introduction — reinforcing the promise of an actual routine"
+      },
+      "first_half_target": "7 mentions — first ~950 words. Run denser in first half.",
+      "second_half_target": "6 mentions — second ~950 words",
+      "strong_tag_rule": "EVERY single mention of the primary keyword — all 13 of them — wrapped in <strong> tags. No exceptions. Catch each one as it is written. Scan after every paragraph.",
+      "keywords_to_avoid_active": ["gym nails", "chlorine resistant nails", "nails for manual labor", "best nail shape for typing", "press-on nails for active lifestyle", "travel nail care", "non-toxic nails for moms", "nails for piano players", "professional nail length", "nail shapes for work", "camping nails"]
+    },
+
+    "block_2_word_budget": {
+      "total_target": "1900 words — +/-50 words tolerance, never exceed",
+      "introduction": 230,
+      "conclusion": 180,
+      "h2_budgets": [
+        {"heading": "Why Gardening Is So Hard on Your Nails", "budget": 180, "complexity": "low"},
+        {"heading": "The Best Nail Shape and Length for Gardening", "budget": 210, "complexity": "medium"},
+        {"heading": "Can You Garden With Gel or Acrylic Nails?", "budget": 260, "complexity": "high"},
+        {"heading": "Your Before-Gardening Protection Routine", "budget": 220, "complexity": "medium"},
+        {"heading": "Protecting Your Nails While You Work", "budget": 190, "complexity": "low"},
+        {"heading": "How to Remove Soil and Sap Stains From Your Nails", "budget": 210, "complexity": "medium"},
+        {"heading": "Your After-Gardening Recovery Routine", "budget": 220, "complexity": "medium"},
+        {"heading": "A Simple Weekly Maintenance Rhythm", "budget": 200, "complexity": "low"}
+      ],
+      "tracking_rule": "Track running word total at the end of every H2 section. If a section is running over budget — cut before moving to the next section. Do not compensate later."
+    },
+
+    "block_3_image_plan": {
+      "total_images": 7,
+      "hero_image": "frontmatter only — NEVER appears in post body",
+      "body_images": 6,
+      "assignments": [
+        {"image_number": 1, "place_after": "Why Gardening Is So Hard on Your Nails", "image_type": "standard_inspiration", "section_context": "Well-manicured hand resting near garden soil/plants, natural short-to-medium nails, healthy-looking cuticles"},
+        {"image_number": 2, "place_after": "The Best Nail Shape and Length for Gardening", "image_type": "standard_inspiration", "section_context": "Close-up of a clean squoval or short round manicure — practical shape emphasis, neutral polish"},
+        {"image_number": 3, "place_after": "Can You Garden With Gel or Acrylic Nails?", "image_type": "standard_inspiration", "section_context": "Neat short gel or builder gel overlay manicure in a natural/neutral tone, styled to look garden-appropriate yet polished"},
+        {"image_number": 4, "place_after": "Your Before-Gardening Protection Routine", "image_type": "standard_inspiration", "section_context": "Hands with cuticle oil sheen, healthy nail finish, styled in a fresh 'ready to garden' aesthetic — no tools or hands mid-action"},
+        {"image_number": 5, "place_after": "How to Remove Soil and Sap Stains From Your Nails", "image_type": "standard_inspiration", "section_context": "Clean bright manicure emphasizing stain-free result, soft natural lighting"},
+        {"image_number": 6, "place_after": "Your After-Gardening Recovery Routine", "image_type": "standard_inspiration", "section_context": "Moisturized hands with rich cream/oil finish, soft styled shot, healthy glow"}
+      ],
+      "image_type_rule": {
+        "default": "standard_inspiration",
+        "infographic_allowed_when": "not applicable — this post is informational intent with no comparison or step-sequence need severe enough to require an infographic",
+        "how_many_infographics": 0,
+        "banned_absolutely": "NEVER a tool/equipment image (hands holding a file, tools laid out, application/process shots showing hands or tools at work). NEVER a photo-style side-by-side nail-to-nail comparison image.",
+        "note_for_blog_gen": "Blog Gen Agent follows the image_type flagged here exactly per slot — it does not decide standard vs infographic on its own mid-write."
+      },
+      "path_rule": "/images/blog/nails-by-lifestyle/gardener-nails/filename.webp — topic_slug in path, slug folder, leading slash"
+    },
+
+    "block_4_opening_technique_assignments": {
+      "rule": "No two consecutive sections use the same technique. Conclusion = Technique 1 or 3 only.",
+      "assignments": [
+        {"section": "Introduction", "technique": "Technique 2 — The Scene (open on the felt tension between garden joy and nail frustration)"},
+        {"section": "Why Gardening Is So Hard on Your Nails", "technique": "Technique 1 — The Claim (state plainly why nails suffer)"},
+        {"section": "The Best Nail Shape and Length for Gardening", "technique": "Technique 4 — The Direct Answer"},
+        {"section": "Can You Garden With Gel or Acrylic Nails?", "technique": "Technique 3 — The Reframe (challenge the assumption you must choose)"},
+        {"section": "Your Before-Gardening Protection Routine", "technique": "Technique 1 — The Claim"},
+        {"section": "Protecting Your Nails While You Work", "technique": "Technique 4 — The Direct Answer"},
+        {"section": "How to Remove Soil and Sap Stains From Your Nails", "technique": "Technique 2 — The Scene"},
+        {"section": "Your After-Gardening Recovery Routine", "technique": "Technique 1 — The Claim"},
+        {"section": "A Simple Weekly Maintenance Rhythm", "technique": "Technique 4 — The Direct Answer"},
+        {"section": "Conclusion", "technique": "Technique 3 — The Reframe"}
+      ],
+      "banned_opener_rule": "Check every opener against banned_opening_approaches in blog gen prompt before writing the second sentence"
+    },
+
+    "block_5_link_placements": {
+      "rule": "Every link placed exactly where specified. Anchor texts used verbatim — never rewritten. Links woven into prose naturally — never standalone CTAs.",
+      "links": [
+        {"anchor_text": "gym nails", "full_url": "/blog/nails-by-lifestyle/gym-nails", "place_in_section": "The Best Nail Shape and Length for Gardening", "placement_context": "When drawing the parallel between durability needs across active/hands-on lifestyles", "link_type": "cluster-pillar"},
+        {"anchor_text": "nails for manual labor", "full_url": "/blog/nails-by-lifestyle/manual-labor-nails", "place_in_section": "Can You Garden With Gel or Acrylic Nails?", "placement_context": "When noting heavier/more frequent gardening workloads share needs with manual labor", "link_type": "cluster-spoke"},
+        {"anchor_text": "travel nail care", "full_url": "/blog/nails-by-lifestyle/travel-nails", "place_in_section": "A Simple Weekly Maintenance Rhythm", "placement_context": "When mentioning that a maintenance rhythm applies across other lifestyle contexts too", "link_type": "cluster-spoke"}
+      ]
+    },
+
+    "block_6_aeo_geo_plan": {
+      "aeo_assignments": [
+        {"aeo_term": "can I garden with gel nails on", "assigned_to_section": "Can You Garden With Gel or Acrylic Nails?", "execution": "Write a direct 2-3 sentence answer paragraph IMMEDIATELY after the H2 heading — before any elaboration."},
+        {"aeo_term": "what nail shape is best for gardening", "assigned_to_section": "The Best Nail Shape and Length for Gardening", "execution": "Write a direct 2-3 sentence answer paragraph IMMEDIATELY after the H2 heading."},
+        {"aeo_term": "how do I remove soil stains from my nails", "assigned_to_section": "How to Remove Soil and Sap Stains From Your Nails", "execution": "Write a direct 2-3 sentence answer paragraph IMMEDIATELY after the H2 heading."},
+        {"aeo_term": "why do my nails break so much when I garden", "assigned_to_section": "Why Gardening Is So Hard on Your Nails", "execution": "Write a direct 2-3 sentence answer paragraph IMMEDIATELY after the H2 heading."}
+      ],
+      "geo_entity_statements": [
+        {"entity": "builder gel overlay", "assigned_to_section": "Can You Garden With Gel or Acrylic Nails?", "execution": "Write a clear declarative definition sentence — confident, no hedging. Extractable by AI as a citation."},
+        {"entity": "the soap-under-the-nails trick", "assigned_to_section": "Your Before-Gardening Protection Routine", "execution": "Write a clear declarative definition sentence explaining exactly what the technique is and why it works."},
+        {"entity": "squoval nail shape", "assigned_to_section": "The Best Nail Shape and Length for Gardening", "execution": "Write a clear declarative definition sentence."}
+      ]
+    },
+
+    "block_7_active_constraints": {
+      "em_dash_banned": "Long em dash does not appear anywhere. If one forms while writing — stop, replace with: comma / new sentence / parentheses / but / restructure.",
+      "banned_vocab_watch": ["elevate", "unleash", "game-changer", "must-have", "seamlessly", "elevate your routine", "transform", "unlock"],
+      "american_english_active": "color, recognize, -ize, -or — every instance, no exceptions. This post uses American English, not British.",
+      "keyword_density_reminder": "After every 2 H2 sections — count current keyword mentions. Verify running total is on track to hit 13 total. First half must run denser than second half. Adjust if needed.",
+      "image_path_reminder": "/images/blog/nails-by-lifestyle/gardener-nails/filename.webp — topic_slug in path always",
+      "internal_link_url_reminder": "Full correct paths only. Cluster links = /blog/nails-by-lifestyle/[slug]. Never bare /slug.",
+      "hero_image_reminder": "Hero = frontmatter only. Never place hero image in body.",
+      "strong_tag_reminder": "Every primary keyword mention = <strong> tags. Scan after every paragraph."
+    }
+  }
+}
