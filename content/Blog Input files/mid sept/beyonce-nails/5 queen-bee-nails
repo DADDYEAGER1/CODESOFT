@@ -1,0 +1,550 @@
+{
+  "section_1_file_authority": {
+    "statement": "THIS FILE IS THE SINGLE SOURCE OF TRUTH FOR THE BLOG GEN AGENT. All values in POST_CONSTANTS are hardcoded — Blog Gen Agent does not ask, adjust, or override them. All keywords, H2 structure, audience intelligence, internal links, and tone defined here must be followed exactly."
+  },
+
+  "section_2_post_constants": {
+    "slug": "queen-bee-nails",
+    "topic_slug": "beyonce-nails",
+    "canonical": "https://mirelleinspo.com/blog/beyonce-nails/queen-bee-nails",
+    "post_type": "spoke",
+    "intent": "inspirational",
+    "word_count": 2350,
+    "image_count": 7,
+    "show_inspo_gallery_link": false,
+    "template": "posts",
+    "hero_dimensions": "1200x675",
+    "category": "Nail Art",
+    "publish_date": "2026-09-15",
+    "author": "jyoti-mirelle"
+  },
+
+  "section_3_cluster_snapshot": {
+    "pillar_slug": "beyonce-nail-ideas",
+    "pillar_title": "Beyoncé Nails: Iconic Manicure Ideas Through the Years",
+    "pillar_primary_keyword": "beyonce nails",
+    "this_post_slug": "queen-bee-nails",
+    "this_post_role": "spoke",
+    "show_inspo_gallery_link_cluster_default": false,
+    "keywords_to_avoid": [
+      "beyonce nails",
+      "cowboy carter nails",
+      "denim nails",
+      "renaissance tour nails",
+      "beyonce concert nails"
+    ]
+  },
+
+  "section_4_serp_analysis": {
+    "blog_gen_instruction": "our_strategic_approach is a specific, evidence-based outperform strategy, not a vague gap-fill statement. Use it as the concrete angle for the introduction and conclusion, and to guide depth/coverage decisions in relevant H2 sections.",
+    "competitor_gaps": [
+      "Zero fetched competitor pages connect bee/honeycomb nail art to Beyoncé's 'Queen Bey' persona at all — confirmed across all 5 real fetched pages (girlsharestips.com, eleganceechoes.com, kreafolk.com, thatprettynail.com, and the general btartboxnails.com Beyoncé roundup, which only gives the theme one short subsection with no dedicated depth). Demand for the Beyoncé/Queen Bey connection is confirmed on 2+ sources: real Etsy product listings named explicitly 'Queen Bee' with crown + honeycomb + gold motifs, and thebeautypursuit.com's 65-idea Beyoncé roundup explicitly groups 'cute bumble bee Queen Bee nail looks' as a named sub-category.",
+      "No fetched competitor addresses nail shape guidance specific to bee/honeycomb designs (which shapes hold hexagon patterns best) — Kreafolk covers this generically for 'bee nail design' but not with any identity/persona framing.",
+      "None of the 5 fetched pages discuss how to translate the trend for short or workplace-appropriate nails — all lean maximalist/festival-style examples only."
+    ],
+    "missing_semantic_territory": [
+      "'crown' and royalty-coded design elements (gold crown charms, 'Q' monogram details) — confirmed via real Etsy listings, absent from all 5 fetched editorial pages",
+      "'queen bey' as a direct phrase — present in search demand (Pinterest boards, Etsy titles) but absent from fetched editorial competitor content",
+      "Identity-driven framing ('which bee nail style is your Queen Bey era') — none of the fetched pages use audience-identity language; all are pure visual roundups"
+    ],
+    "our_strategic_approach": "None of the 5 real fetched competitor pages make any connection between bee/honeycomb nail art and Beyoncé's Queen Bey persona — this post owns that intersection outright, which real product demand (Etsy 'Queen Bee' press-on sets with crowns and gold honeycomb) confirms readers are already shopping for. Where competitors default to generic garden/summer framing (daisies, ladybugs, sunflowers layered onto bee motifs), this post stays locked to the gold/honeycomb/royalty visual language that maps specifically to the Queen Bey identity, avoiding floral dilution. Structurally, this post will organize by aesthetic intensity (subtle gold accent through full 3D honeycomb glam) rather than the undifferentiated single-scroll list format all 5 competitors use, giving readers a clearer way to match a look to their own boldness level — a structural edge grounded in what the fetched pages visibly lack.",
+    "top_5_fetched_pages_summary": [
+      {
+        "url": "https://www.girlsharestips.com/bee-nail-designs/",
+        "word_count": 2450,
+        "h2_count": 0,
+        "keyword_mentions": 0,
+        "note": "Uses H3-style bolded category headers (Cute/Bumble/Honey/Gold/Black bee nails, Honeycomb Nails) not true H2s; strong on breadth, zero celebrity/identity framing, no primary keyword usage at all."
+      },
+      {
+        "url": "https://eleganceechoes.com/bee-nail-designs/",
+        "word_count": 2100,
+        "h2_count": 46,
+        "keyword_mentions": 0,
+        "note": "Numbered single-design format (46 individual H2-level entries), each 2-3 sentences; strong Instagram sourcing but no thematic grouping or celebrity tie-in."
+      },
+      {
+        "url": "https://kreafolk.com/blogs/inspirations/bee-nail-design",
+        "word_count": 2600,
+        "h2_count": 5,
+        "keyword_mentions": 0,
+        "note": "Best structural model of the 5 — real H2s (minimalist ideas, honeycomb patterns, color palettes, summer themes, nail shapes); thorough but entirely generic, no identity or celebrity angle."
+      },
+      {
+        "url": "https://thatprettynail.com/28-trendy-bee-nail-designs-to-love-this-summer/",
+        "word_count": 2300,
+        "h2_count": 32,
+        "keyword_mentions": 0,
+        "note": "Numbered Instagram-sourced roundup (32 entries); heavy on florals/daisies diluting the bee theme, no gold/honeycomb focus, no celebrity tie-in."
+      },
+      {
+        "url": "https://btartboxnails.com/blogs/btartbox-official-guides/beyonce-nails",
+        "word_count": 1450,
+        "h2_count": 7,
+        "keyword_mentions": 0,
+        "note": "General 'Beyoncé Nails' pillar-level page (competes with this cluster's own pillar, not this spoke) — gives Queen Bee nail designs only one short paragraph with zero depth; confirms the specific gap this spoke post fills."
+      }
+    ],
+    "top_5_word_count_average": 2180,
+    "top_5_keyword_density_average": 0,
+    "best_external_sources_found": [
+      {
+        "url": "https://kreafolk.com/blogs/inspirations/bee-nail-design",
+        "reason": "Most substantive, genuinely editorial real-technique breakdown of honeycomb pattern types, color palettes, and nail shapes among the 5 fetched pages — real expertise, not thin content."
+      }
+    ]
+  },
+
+  "section_5_audience_intelligence": {
+    "blog_gen_instruction": "This is your primary creative brief. Every paragraph written for this specific person with this specific intent. Satisfy them completely.",
+    "who_they_are": "A Beyoncé fan and nail-art enthusiast, likely already familiar with the 'Queen Bey' nickname, browsing for a manicure that signals fandom without being as literal as a face or logo nail. Comfortable with gold/metallic finishes and open to 3D nail art (charms, chrome, encapsulated elements) based on real Etsy product demand for hand-painted 3D bee and crown details.",
+    "what_they_want_from_this_post": "A curated, gold-and-honeycomb-specific set of ideas that reads as 'inspired by Queen Bey' without requiring a literal Beyoncé image on the nail — real product demand shows people want crown + bee + honeycomb symbolism, not portraiture.",
+    "what_frustrates_them": "Every fetched competitor page dilutes the bee theme with unrelated florals (daisies, ladybugs, strawberries) rather than staying in the gold/honeycomb/royalty lane this reader actually wants; none connect the trend back to why it's called 'Queen Bee' in the first place.",
+    "top_5_pain_points": [
+      "Can't find bee nail roundups that stay focused on gold/honeycomb without drifting into generic garden florals",
+      "Wants the Beyoncé/Queen Bey connection made explicit, not left implicit",
+      "Struggles to find guidance on translating a maximalist 3D honeycomb look into something wearable for everyday or short nails",
+      "Wants to know which nail shape actually holds a honeycomb hexagon pattern well before booking",
+      "Wants a look that reads as 'confident fan homage' rather than costume-y literal Beyoncé imagery"
+    ],
+    "exact_user_phrases": [
+      "queen bee nails design",
+      "gold bee nail designs",
+      "honeycomb nail art",
+      "bee almond nails",
+      "rule the hive",
+      "queen bee gifts",
+      "honey bee nails acrylic",
+      "bee inspired nails",
+      "3D bee nail art",
+      "gold honeycomb nails"
+    ],
+    "intent_content_signals": [
+      "Visual-first, scannable idea format with clear design-to-design variety (per fetched competitor formats)",
+      "Responds to grouped/thematic organization over undifferentiated numbered lists (a gap all 5 competitors leave open)",
+      "Wants specific finish/technique language (chrome, 3D, encapsulated, hand-painted) as seen in real Etsy listings",
+      "Engages with identity-driven framing ('which look matches your Queen Bey energy') more than plain design description",
+      "Expects gold and honey-toned color specificity, not generic 'yellow and black'"
+    ]
+  },
+
+  "section_6_semantic_keyword_data": {
+    "blog_gen_instruction": "Primary keyword in strong tags every mention. AEO terms trigger direct answer paragraphs. User language woven naturally. No term from keywords_to_avoid used as focus term.",
+    "primary_keyword": "queen bee nails",
+    "keyword_variations": [
+      "queen bee nail designs",
+      "queen bee nail art",
+      "queen bee manicure",
+      "gold queen bee nails",
+      "queen bee nail ideas"
+    ],
+    "cluster_keywords": [
+      "honeycomb nails",
+      "bee nail art",
+      "gold honeycomb nails",
+      "honey bee nails",
+      "bee almond nails",
+      "3D bee nail art",
+      "gold bee nails",
+      "honeycomb nail design",
+      "bee inspired nails",
+      "Queen Bey nails"
+    ],
+    "lsi_terms": [
+      "hexagon nail pattern",
+      "honey drip nail art",
+      "gold chrome bee accent",
+      "honeycomb hexagon manicure",
+      "3D bee charm nails",
+      "gold foil honeycomb",
+      "crown nail art accent",
+      "bee and honeycomb press-ons",
+      "metallic gold nail art",
+      "bumblebee stripe manicure",
+      "honeycomb linework nails",
+      "gold leaf nail accent",
+      "bee gel nail design",
+      "royal bee manicure",
+      "honeycomb texture nail gel"
+    ],
+    "aeo_terms": [
+      "what are queen bee nails",
+      "how do you do honeycomb nail art",
+      "what color is queen bee nails",
+      "why is it called queen bee nails",
+      "are queen bee nails the same as bumblebee nails",
+      "what nail shape is best for honeycomb nails",
+      "how long does honeycomb nail art last",
+      "can you do queen bee nails at home",
+      "what gel polish is used for honeycomb nails",
+      "is honeycomb nail art in style"
+    ],
+    "technical_terms": [
+      "encapsulated nail art",
+      "3D gel sculpting",
+      "chrome powder",
+      "gold foil application",
+      "hand-painted nail art",
+      "builder gel texture",
+      "negative space manicure"
+    ],
+    "user_language": [
+      "rule the hive",
+      "sweet as honey",
+      "buzzing with style",
+      "bee-utiful",
+      "queen bey energy",
+      "royal bee vibes",
+      "honey-dipped nails",
+      "bee kind nails"
+    ]
+  },
+
+  "section_7_voice_and_ai_queries": {
+    "blog_gen_instruction": "Answer every query directly in the relevant H2 section body. If a query cannot be addressed naturally in the body, route it to faqItems. No query left unanswered.",
+    "queries": [
+      "What are queen bee nails?",
+      "Why are they called queen bee nails?",
+      "What colors are used in queen bee nail designs?",
+      "How do you do honeycomb nail art at home?",
+      "What's the difference between queen bee nails and regular bee nails?",
+      "What nail shape works best for honeycomb patterns?",
+      "Can you get queen bee nails with short nails?",
+      "What gel polish colors work for a honeycomb manicure?",
+      "How long does honeycomb nail art take to do?",
+      "Are gold bee nails still trending in 2026?",
+      "What's the easiest queen bee nail design for beginners?",
+      "How do you make honeycomb nails look 3D?",
+      "What's a subtle way to wear queen bee nails to work?",
+      "Do queen bee nails work on natural nails or only acrylics?"
+    ]
+  },
+
+  "section_8_hook_and_ctr": {
+    "blog_gen_instruction": "READ THIS SECTION BEFORE WRITING THE TITLE, META DESCRIPTION, INTRO, OR FIRST H2. The title and description here are the option the USER SELECTED from 2-3 real, evidence-based choices during phase_6 — use them exactly. The intro hook brief and first H2 hook direction are your creative brief for those specific elements, matching the selected option's angle. Do not deviate.",
+    "real_serp_findings_summary": "All 5 real fetched competitor titles/pages are generic 'bee nail design' roundups with zero Beyoncé or Queen Bey framing — the identity connection exists only in scattered Pinterest board names and real Etsy product titles, never in long-form editorial content. This is a clear, evidence-based content gap: readers are already shopping for the identity-driven version of this trend but no competitor editorial content serves it directly.",
+    "selected_option_rationale": "Option 2 names the Beyoncé/Queen Bey connection directly in the title itself — the exact gap confirmed empty across all 5 fetched competitors — while framing it as aspirational ('Bey Would Wear') rather than literal, matching what real Etsy demand shows readers actually want (symbolic gold/crown/bee elements, not portrait nails).",
+    "title": "Queen Bee Nails: Gold Honeycomb Ideas Bey Would Wear",
+    "title_char_count": 53,
+    "meta_description": "Queen bee nails inspired by Beyoncé's alter ego. Gold, honeycomb, and bee nail art ideas for your next royal-worthy manicure.",
+    "meta_char_count": 127,
+    "intro_hook_brief": "Open by naming the Queen Bey nickname directly and the gap: everyone does bee nails, nobody connects them to the persona they're actually named after. Establish this post as the one that closes that gap — gold, honeycomb, and crown-coded designs that read as an intentional homage, not a costume.",
+    "first_h2_hook_direction": "Apply the 'Bey would wear it' angle subtly to the first H2 by opening with what makes a design read as 'Queen Bey' specifically (gold + honeycomb + royalty cues) rather than generic bumblebee nail art — set the visual vocabulary before diving into individual ideas."
+  },
+
+  "section_9_search_journey": {
+    "blog_gen_instruction": "This is the emotional contract with the reader. Every section of the post must honour the promise made. Read this before writing any section. If a paragraph breaks the journey arc — rewrite it.",
+    "reader_arrival_state": "Curious and already primed by the 'Queen Bey' nickname, browsing for a manicure that feels like an intentional nod to Beyoncé's persona rather than a literal fan-art nail.",
+    "journey_arc": [
+      "Hook with the gold/honeycomb/royalty visual vocabulary that separates 'Queen Bee' from generic bumblebee nail art",
+      "Deliver early visual variety across intensity levels — subtle gold accent through full 3D honeycomb glam",
+      "Build aspiration through grouped design categories (identity payoff: 'this one is your Queen Bey era')",
+      "Address practical concerns (shape, longevity, at-home vs. salon) so the reader can act on the idea, not just admire it",
+      "Close with the identity payoff — this is a manicure that says Queen Bey without saying a word"
+    ],
+    "promise_to_deliver": "Gold, honeycomb, and bee nail art ideas that read as an intentional Queen Bey homage — the one thing no competitor content currently delivers.",
+    "exit_state": "Confident and ready to book or DIY a specific look, feeling like they've found the one bee-nail roundup that actually understands why it's called 'Queen Bee' in the first place."
+  },
+
+  "section_10_content_structure": {
+    "blog_gen_instruction": "This H2 structure is research-driven and must be followed exactly. Do not rename, reorder, or remove H2s without user instruction. Word budget per section is set — follow it. H3s may be added at editorial discretion.",
+    "fields": {
+      "h1": "Queen Bee Nails: Gold Honeycomb Ideas Bey Would Wear",
+      "h2_structure": [
+        "What Makes a Manicure Read as \"Queen Bee\"",
+        "Gold Chrome & Honeycomb: The Core Queen Bee Look",
+        "3D Bee Charms and Statement Accent Nails",
+        "Subtle Queen Bee Nails for Work or Short Nails",
+        "Honeycomb Nail Shapes That Hold the Pattern Best",
+        "How to Get Honeycomb Nail Art at Home",
+        "Queen Bee Nails FAQ"
+      ],
+      "word_budget": {
+        "introduction": "220 words",
+        "conclusion": "180 words",
+        "per_h2": [
+          { "heading": "What Makes a Manicure Read as \"Queen Bee\"", "budget": 260 },
+          { "heading": "Gold Chrome & Honeycomb: The Core Queen Bee Look", "budget": 420 },
+          { "heading": "3D Bee Charms and Statement Accent Nails", "budget": 360 },
+          { "heading": "Subtle Queen Bee Nails for Work or Short Nails", "budget": 320 },
+          { "heading": "Honeycomb Nail Shapes That Hold the Pattern Best", "budget": 280 },
+          { "heading": "How to Get Honeycomb Nail Art at Home", "budget": 210 },
+          { "heading": "Queen Bee Nails FAQ", "budget": 100 }
+        ]
+      }
+    }
+  },
+
+  "section_11_internal_links": {
+    "blog_gen_instruction": "Every link below must appear in the post. Cluster links use anchor texts verbatim — do not rewrite. Cross-site links use the provided descriptive anchor. Place each link where the placement note says — woven naturally into prose, never as a standalone CTA. Total internal links must not exceed 6.",
+    "all_internal_links": [
+      {
+        "url_or_slug": "/blog/beyonce-nails/beyonce-nail-ideas",
+        "title": "Beyoncé Nails: Iconic Manicure Ideas Through the Years",
+        "anchor_text": "Beyoncé nail ideas through the years",
+        "placement_note": "Introduction — natural mention when establishing the Queen Bey persona context",
+        "link_type": "cluster-pillar"
+      },
+      {
+        "url_or_slug": "/blog/beyonce-nails/renaissance-tour-silver-nails",
+        "title": "Renaissance Tour Silver Nail Ideas",
+        "anchor_text": "Renaissance Tour silver nail ideas",
+        "placement_note": "\"3D Bee Charms and Statement Accent Nails\" section — natural contrast point between silver tour-era nails and gold Queen Bee nails",
+        "link_type": "cluster-spoke"
+      },
+      {
+        "url_or_slug": "/blog/beyonce-nails/beyonce-concert-nails",
+        "title": "Beyoncé Concert Nails: What to Wear to the Show",
+        "anchor_text": "Beyoncé concert nails for your next show",
+        "placement_note": "Conclusion — natural next-step link for readers wanting a broader tour-manicure angle",
+        "link_type": "cluster-spoke"
+      },
+      {
+        "url_or_slug": "https://mirelleinspo.com/blog/chrome-nails/chrome-nails",
+        "title": "Chrome Nails: Every Design, Colour & Style Trending in 2026",
+        "anchor_text": "the full guide to gold and metallic chrome finishes",
+        "placement_note": "\"Gold Chrome & Honeycomb: The Core Queen Bee Look\" section — directly relevant to the gold chrome technique being described",
+        "link_type": "cross-site"
+      },
+      {
+        "url_or_slug": "https://mirelleinspo.com/blog/sunflower-nails-summer",
+        "title": "Sunflower Nails: The Summer Trend Going Viral Right Now",
+        "anchor_text": "how bee accents work in sunflower-themed nail art",
+        "placement_note": "\"Subtle Queen Bee Nails for Work or Short Nails\" section — relevant crossover for readers wanting a softer, floral-adjacent bee accent",
+        "link_type": "cross-site"
+      }
+    ]
+  },
+
+  "section_12_voice_tone": {
+    "blog_gen_instruction": "This is the voice for this specific post. Layer on top of Mirellé editorial framework. Do not default to generic AI tone.",
+    "recommended_voice": "Confident aspirational guide",
+    "tone_characteristics": [
+      "Identity-affirming — frames each design choice as a statement, not just a look",
+      "Specific and visual, never vague ('gold chrome' not 'shiny gold')",
+      "Warmly knowledgeable — speaks like someone who already tracks both nail trends and Beyoncé's aesthetic choices",
+      "Confident, not gushing — avoids overused fan-girl language while still communicating genuine enthusiasm",
+      "Practical undertone — always circles back to real wearability (shape, longevity, DIY feasibility)"
+    ],
+    "language_style": "Direct address using \"you,\" short punchy sentences mixed with richer descriptive ones for the visual design entries, minimal hedging language, confident declarative statements about what each look communicates.",
+    "audience_match": "This voice matches a reader who is both a nail-art enthusiast and a genuine Beyoncé fan — she wants to be told clearly which look is the move, not offered wishy-washy options without a point of view."
+  },
+
+  "section_13_external_links": {
+    "blog_gen_instruction": "Include all external links where indicated. Supports E-E-A-T. Use anchor suggestion as guide — write naturally around it. Sourced from phase_3's best_external_sources_found (real fetched competitor pages), not from separate searches. May be empty (0-2 links) if none of the fetched pages qualified as genuinely citation-worthy — that is expected, not a gap to fill.",
+    "links": [
+      {
+        "url": "https://kreafolk.com/blogs/inspirations/bee-nail-design",
+        "context": "When discussing honeycomb pattern techniques and nail shape guidance in the 'Honeycomb Nail Shapes That Hold the Pattern Best' section",
+        "anchor_suggestion": "detailed breakdown of honeycomb pattern styles"
+      }
+    ]
+  },
+
+  "section_14_execution_plan": {
+    "purpose": "Blog Gen Agent reads this section FIRST — before frontmatter, before writing a single word. Every value here is pre-calculated from the input file data. Blog Gen Agent locks all values and executes them exactly. This section exists to eliminate rewrite loops — every constraint is pre-decided here so there are zero surprises mid-write.",
+    "blog_gen_instruction": "READ THIS SECTION FIRST. Lock every value. Execute exactly. Do not recalculate, do not adjust, do not deviate.",
+    "calculated_by": "Input Gen Agent — calculated last, after all other sections are complete",
+
+    "block_1_keyword_execution": {
+      "primary_keyword": "queen bee nails",
+      "top_5_density_baseline": 0,
+      "total_mention_target": "0 + 3 = 3 total. This is the hard target (baseline was 0 across all 5 fetched competitors, since none used the exact primary keyword phrase — using the rule's minimum-viable floor of +3 to still satisfy the mandatory first-100-words rule).",
+      "first_100_words_plan": {
+        "rule": "Primary keyword MUST appear TWICE in the first 100 words. Mandatory. No exceptions.",
+        "mention_1": "sentence 1 of introduction — opening line naming 'queen bee nails' directly against the Queen Bey persona hook",
+        "mention_2": "sentence 3-4 of introduction — reinforcing the term when framing the gold/honeycomb/royalty visual vocabulary promise"
+      },
+      "first_half_target": "2 mentions — first 1175 words. Run denser in first half.",
+      "second_half_target": "1 mention — second 1175 words",
+      "strong_tag_rule": "EVERY single mention of the primary keyword — all 3 of them — wrapped in <strong> tags. No exceptions. Catch each one as it is written. Scan after every paragraph.",
+      "keywords_to_avoid_active": [
+        "beyonce nails",
+        "cowboy carter nails",
+        "denim nails",
+        "renaissance tour nails",
+        "beyonce concert nails"
+      ]
+    },
+
+    "block_2_word_budget": {
+      "total_target": "2350 words — +/-50 words tolerance, never exceed",
+      "introduction": "220 words",
+      "conclusion": "180 words",
+      "h2_budgets": [
+        { "heading": "What Makes a Manicure Read as \"Queen Bee\"", "budget": 260, "complexity": "medium" },
+        { "heading": "Gold Chrome & Honeycomb: The Core Queen Bee Look", "budget": 420, "complexity": "high" },
+        { "heading": "3D Bee Charms and Statement Accent Nails", "budget": 360, "complexity": "medium" },
+        { "heading": "Subtle Queen Bee Nails for Work or Short Nails", "budget": 320, "complexity": "medium" },
+        { "heading": "Honeycomb Nail Shapes That Hold the Pattern Best", "budget": 280, "complexity": "medium" },
+        { "heading": "How to Get Honeycomb Nail Art at Home", "budget": 210, "complexity": "low" },
+        { "heading": "Queen Bee Nails FAQ", "budget": 100, "complexity": "low" }
+      ],
+      "tracking_rule": "Track running word total at the end of every H2 section. If a section is running over budget — cut before moving to the next section. Do not compensate later."
+    },
+
+    "block_3_image_plan": {
+      "total_images": 7,
+      "hero_image": "frontmatter only — NEVER appears in post body",
+      "body_images": 6,
+      "assignments": [
+        {
+          "image_number": 1,
+          "place_after": "What Makes a Manicure Read as \"Queen Bee\"",
+          "image_type": "standard_inspiration",
+          "section_context": "A gold chrome manicure with subtle honeycomb accent nail — establishes the core visual vocabulary of the post"
+        },
+        {
+          "image_number": 2,
+          "place_after": "Gold Chrome & Honeycomb: The Core Queen Bee Look",
+          "image_type": "standard_inspiration",
+          "section_context": "Full gold honeycomb hexagon pattern manicure, glossy finish, almond or coffin shape"
+        },
+        {
+          "image_number": 3,
+          "place_after": "Gold Chrome & Honeycomb: The Core Queen Bee Look",
+          "image_type": "standard_inspiration",
+          "section_context": "Honey-drip effect nail art paired with honeycomb texture, warm gold tones"
+        },
+        {
+          "image_number": 4,
+          "place_after": "3D Bee Charms and Statement Accent Nails",
+          "image_type": "standard_inspiration",
+          "section_context": "3D gold bee charm as an accent nail on a nude or black base, statement-nail styling"
+        },
+        {
+          "image_number": 5,
+          "place_after": "Subtle Queen Bee Nails for Work or Short Nails",
+          "image_type": "standard_inspiration",
+          "section_context": "Short/almond nails with a minimal single gold honeycomb accent nail, workplace-appropriate styling"
+        },
+        {
+          "image_number": 6,
+          "place_after": "Honeycomb Nail Shapes That Hold the Pattern Best",
+          "image_type": "standard_inspiration",
+          "section_context": "Square or coffin-shaped nails showing full honeycomb geometric pattern coverage, highlighting how the flat nail surface holds hexagon linework"
+        }
+      ],
+      "image_type_rule": {
+        "default": "standard_inspiration — an actual nail look, styled and shot, related to the topic. This is the default for the large majority of image slots in nearly every post.",
+        "infographic_allowed_when": "Not applicable to this post — inspirational intent with no comparison or step-sequence need. All 6 body image slots are standard_inspiration.",
+        "banned_absolutely": "NEVER a tool/equipment image (hands holding a file, tools laid out, application shots) in any slot. NEVER a photo-style side-by-side comparison image.",
+        "note_for_blog_gen": "All 6 body slots are standard_inspiration per the rule above — no infographic needed for this inspirational-intent post."
+      },
+      "path_rule": "/images/blog/beyonce-nails/queen-bee-nails/filename.webp — topic_slug in path, slug folder, leading slash"
+    },
+
+    "block_4_opening_technique_assignments": {
+      "rule": "No two consecutive sections use the same technique. Conclusion = Technique 1 or 3 only.",
+      "assignments": [
+        { "section": "Introduction", "technique": "Technique 2 — The Gap Callout (naming what no one else has connected: bee nails and Queen Bey)" },
+        { "section": "What Makes a Manicure Read as \"Queen Bee\"", "technique": "Technique 4 — The Definition Frame" },
+        { "section": "Gold Chrome & Honeycomb: The Core Queen Bee Look", "technique": "Technique 1 — The Claim" },
+        { "section": "3D Bee Charms and Statement Accent Nails", "technique": "Technique 3 — The Reframe" },
+        { "section": "Subtle Queen Bee Nails for Work or Short Nails", "technique": "Technique 2 — The Gap Callout" },
+        { "section": "Honeycomb Nail Shapes That Hold the Pattern Best", "technique": "Technique 4 — The Definition Frame" },
+        { "section": "How to Get Honeycomb Nail Art at Home", "technique": "Technique 1 — The Claim" },
+        { "section": "Conclusion", "technique": "Technique 3 — The Reframe" }
+      ],
+      "banned_opener_rule": "Check every opener against banned_opening_approaches in blog gen prompt before writing the second sentence"
+    },
+
+    "block_5_link_placements": {
+      "rule": "Every link placed exactly where specified. Anchor texts used verbatim — never rewritten. Links woven into prose naturally — never standalone CTAs.",
+      "links": [
+        {
+          "anchor_text": "Beyoncé nail ideas through the years",
+          "full_url": "/blog/beyonce-nails/beyonce-nail-ideas",
+          "place_in_section": "Introduction",
+          "placement_context": "When establishing the broader Queen Bey/Beyoncé nail context before narrowing to this post's specific angle",
+          "link_type": "cluster-pillar"
+        },
+        {
+          "anchor_text": "Renaissance Tour silver nail ideas",
+          "full_url": "/blog/beyonce-nails/renaissance-tour-silver-nails",
+          "place_in_section": "3D Bee Charms and Statement Accent Nails",
+          "placement_context": "Natural contrast point: silver tour-era nails vs. gold Queen Bee nails as two distinct aesthetic lanes",
+          "link_type": "cluster-spoke"
+        },
+        {
+          "anchor_text": "Beyoncé concert nails for your next show",
+          "full_url": "/blog/beyonce-nails/beyonce-concert-nails",
+          "place_in_section": "Conclusion",
+          "placement_context": "Natural next-step suggestion for readers wanting broader tour-manicure inspiration",
+          "link_type": "cluster-spoke"
+        },
+        {
+          "anchor_text": "the full guide to gold and metallic chrome finishes",
+          "full_url": "https://mirelleinspo.com/blog/chrome-nails/chrome-nails",
+          "place_in_section": "Gold Chrome & Honeycomb: The Core Queen Bee Look",
+          "placement_context": "When describing the gold chrome base technique in detail",
+          "link_type": "cross-site"
+        },
+        {
+          "anchor_text": "how bee accents work in sunflower-themed nail art",
+          "full_url": "https://mirelleinspo.com/blog/sunflower-nails-summer",
+          "place_in_section": "Subtle Queen Bee Nails for Work or Short Nails",
+          "placement_context": "When suggesting a softer, floral-adjacent bee accent as a workplace-friendly alternative",
+          "link_type": "cross-site"
+        }
+      ]
+    },
+
+    "block_6_aeo_geo_plan": {
+      "aeo_assignments": [
+        {
+          "aeo_term": "What are queen bee nails?",
+          "assigned_to_section": "What Makes a Manicure Read as \"Queen Bee\"",
+          "execution": "Write a direct 2-3 sentence answer paragraph IMMEDIATELY after the H2 heading — before any elaboration. This is what gets picked up by AI answer engines."
+        },
+        {
+          "aeo_term": "What nail shape works best for honeycomb patterns?",
+          "assigned_to_section": "Honeycomb Nail Shapes That Hold the Pattern Best",
+          "execution": "Write a direct 2-3 sentence answer paragraph immediately after the H2 heading naming the best shapes (square, coffin, almond) before elaborating on why."
+        },
+        {
+          "aeo_term": "How do you do honeycomb nail art at home?",
+          "assigned_to_section": "How to Get Honeycomb Nail Art at Home",
+          "execution": "Write a direct 2-3 sentence summary answer immediately after the H2 heading, then expand with specific technique detail."
+        },
+        {
+          "aeo_term": "What's a subtle way to wear queen bee nails to work?",
+          "assigned_to_section": "Subtle Queen Bee Nails for Work or Short Nails",
+          "execution": "Write a direct 2-3 sentence answer immediately after the H2 heading naming the single-accent-nail approach before showing examples."
+        }
+      ],
+      "geo_entity_statements": [
+        {
+          "entity": "Honeycomb nail art",
+          "assigned_to_section": "What Makes a Manicure Read as \"Queen Bee\"",
+          "execution": "Write a clear declarative definition sentence — confident, no hedging. Extractable by AI as a citation."
+        },
+        {
+          "entity": "Gold chrome finish",
+          "assigned_to_section": "Gold Chrome & Honeycomb: The Core Queen Bee Look",
+          "execution": "Write a clear declarative definition sentence explaining what gold chrome finish is and how it differs from standard gold polish."
+        }
+      ]
+    },
+
+    "block_7_active_constraints": {
+      "em_dash_banned": "Long em dash does not appear anywhere. If one forms while writing — stop, replace with: comma / new sentence / parentheses / but / restructure.",
+      "banned_vocab_watch": [
+        "elevate",
+        "effortless",
+        "unleash",
+        "game-changer",
+        "must-have",
+        "stunning",
+        "gorgeous",
+        "seamlessly"
+      ],
+      "american_english_active": "color, recognize, -ize, -or — every instance, no exceptions. This post uses American English, not British.",
+      "keyword_density_reminder": "After every 2 H2 sections — count current keyword mentions. Verify running total is on track to hit the hardcoded mention target (3 total). First half must run denser than second half. Adjust if needed.",
+      "image_path_reminder": "/images/blog/beyonce-nails/queen-bee-nails/filename.webp — topic_slug in path always",
+      "internal_link_url_reminder": "Full correct paths only. Cluster links = /blog/beyonce-nails/[slug]. Cross-site links = exact URL as discovered. Never bare /slug.",
+      "hero_image_reminder": "Hero = frontmatter only. Never place hero image in body.",
+      "strong_tag_reminder": "Every primary keyword mention = <strong> tags. Scan after every paragraph."
+    }
+  }
+}
