@@ -1,0 +1,558 @@
+{
+  "section_1_file_authority": {
+    "statement": "THIS FILE IS THE SINGLE SOURCE OF TRUTH FOR THE BLOG GEN AGENT. All values in POST_CONSTANTS are hardcoded — Blog Gen Agent does not ask, adjust, or override them. All keywords, H2 structure, audience intelligence, internal links, and tone defined here must be followed exactly."
+  },
+
+  "section_2_post_constants": {
+    "slug": "blue-silver-hanukkah-nails",
+    "topic_slug": "hanukkah-nails",
+    "canonical": "https://mirelleinspo.com/blog/hanukkah-nails/blue-silver-hanukkah-nails",
+    "post_type": "spoke",
+    "intent": "inspirational",
+    "word_count": 2350,
+    "image_count": 7,
+    "show_inspo_gallery_link": false,
+    "template": "posts",
+    "hero_dimensions": "1200x675",
+    "category": "Nail Art",
+    "publish_date": "2026-09-15",
+    "author": "jyoti-mirelle"
+  },
+
+  "section_3_cluster_snapshot": {
+    "pillar_slug": "hanukkah-nail-ideas",
+    "pillar_title": "Hanukkah Nail Ideas",
+    "pillar_primary_keyword": "hanukkah nails",
+    "this_post_slug": "blue-silver-hanukkah-nails",
+    "this_post_role": "spoke",
+    "show_inspo_gallery_link_cluster_default": false,
+    "keywords_to_avoid": [
+      "hanukkah nails",
+      "menorah nails",
+      "star of david nail design",
+      "dreidel nail art",
+      "blue and silver hanukkah nails",
+      "easy hanukkah nail designs",
+      "hanukkah press on nails",
+      "how to do hanukkah nail art"
+    ]
+  },
+
+  "section_4_serp_analysis": {
+    "blog_gen_instruction": "our_strategic_approach is a specific, evidence-based outperform strategy, not a vague gap-fill statement. Use it as the concrete angle for the introduction and conclusion, and to guide depth/coverage decisions in relevant H2 sections.",
+    "competitor_gaps": [
+      "No fetched competitor explains WHY blue and silver specifically (not blue/white, not blue/gold) is the color pairing — generic color-meaning sites (color-meanings.com, rd.com) cover Hanukkah colors broadly but never tie it to nails specifically. Confirmed on 2+ sources (Quora threads on Hanukkah colors + dedicated color-meaning articles) as real demand separate from nail content.",
+      "No fetched page organizes designs by finish/technique (glitter ombré vs. marble vs. French vs. chrome) as a skimmable framework — Kreafolk and Jambli Naka mention techniques scattered through prose, DipWell organizes by product-collection (not useful to non-dip-powder readers).",
+      "No fetched page addresses which shade of blue (navy vs. royal vs. sky vs. cobalt) pairs best with silver for different skin tones or occasions — Kreafolk covers blue shades generally (not paired with silver specifically) and covers Hanukkah colors broadly, not this specific combo's shade-pairing logic.",
+      "No fetched page addresses long-lasting or at-home application specifically for this exact color pairing — Montessori Expert has generic tip lists but nothing color-pairing specific."
+    ],
+    "missing_semantic_territory": [
+      "'navy and silver hanukkah nails' — distinct shade-specific long-tail confirmed via Pinterest ('Navy Silver Nails Design', 'Midnight Blue And Silver Nails' as repeated autocomplete terms) and NewBeauty's 'Navy Nights' section",
+      "'blue and silver french tip hanukkah nails' — confirmed via NewBeauty ('Double Tips' — midnight blue and silver glitter French), YouTube ('Chanukah Ready | Blue and Silver French Nails'), and Kreafolk's dedicated French-tip section",
+      "'blue and silver ombre hanukkah nails' — confirmed via Parade ('Ombre Dreidel' — blue/silver glitter ombre) and Jambli Naka ('glitter tips... ombre effect')",
+      "'blue and silver marble hanukkah nails' — confirmed via Jambli Naka's dedicated marble section and Colaba Market's minimalist marble coverage"
+    ],
+    "our_strategic_approach": "None of the 5 fetched competitors organize blue-and-silver Hanukkah nails as a dedicated, structured guide — they bury this color pairing as 2-4 entries inside broader 18-30 idea listicles, or (DipWell) organize by product line rather than by look. This post will own the pairing outright: open with the real cultural/color-symbolism reason blue and silver specifically (not blue/white) has become the dominant combo — grounded in the Israeli flag and menorah-candlelight association found across sources — then structure the entire body around finish/technique (glitter ombré, marble, French tip, chrome, solid glossy, matte) so a reader can find their exact vibe fast. This gives genuine differentiation competitors don't offer: a technique-organized, single-color-story guide instead of a scattered mixed-color listicle entry.",
+    "top_5_fetched_pages_summary": [
+      {
+        "url": "https://parade.com/beauty/hanukkah-nails",
+        "word_count": 1450,
+        "h2_count": 3,
+        "keyword_mention_count": 0,
+        "note": "Strong Instagram-sourced visual variety (19 looks) but zero direct 'blue and silver' framing as its own concept — color pairing is incidental, not the organizing principle."
+      },
+      {
+        "url": "https://www.newbeauty.com/view/hanukkah-nails",
+        "word_count": 1200,
+        "h2_count": 6,
+        "keyword_mention_count": 0,
+        "note": "Organizes by finish (Glitzy Glitters, Fun and French, Chromes and Metallics) — closest structural model found, but still spans all Hanukkah colors, not blue/silver specifically."
+      },
+      {
+        "url": "https://kreafolk.com/blogs/inspirations/hanukkah-nail-designs",
+        "word_count": 2900,
+        "h2_count": 6,
+        "keyword_mention_count": 0,
+        "note": "Deepest AEO-style Q&A structure found (symbols, colors, blue hues, accessories, French tips) — strong for informational depth but a gallery-first listicle, not built around blue+silver as a pairing."
+      },
+      {
+        "url": "https://www.dipwell.co/blogs/hanukkah-nail-designs",
+        "word_count": 2100,
+        "h2_count": 8,
+        "keyword_mention_count": 0,
+        "note": "Real cultural context (Maccabees history, blue/white origin) plus product-organized sections — good depth but locked to DipWell's own dip powder SKUs, not broadly useful technique guidance."
+      },
+      {
+        "url": "https://montessoriexpert.com/hanukkah-nails/",
+        "word_count": 1550,
+        "h2_count": 2,
+        "keyword_mention_count": 0,
+        "note": "Casual/humorous tone with a genuinely useful 'Tips for Best Hanukkah Nails' section at the end — but jokey voice undercuts authority and zero color-pairing focus."
+      }
+    ],
+    "top_5_word_count_average": 1840,
+    "top_5_keyword_density_average": 0,
+    "best_external_sources_found": []
+  },
+
+  "section_5_audience_intelligence": {
+    "blog_gen_instruction": "This is your primary creative brief. Every paragraph written for this specific person with this specific intent. Satisfy them completely.",
+    "who_they_are": "A woman (skewing 20s-40s, US/UK/Canada/Australia) planning her Hanukkah manicure, who already knows she wants blue and silver specifically — not still deciding between color options. She's past the 'what colors are Hanukkah' stage and into 'show me the actual designs.' Likely has some Hanukkah connection (celebrating, has Jewish family/partner, or attending a Hanukkah gathering) and wants her nails to read as intentional and put-together, not costume-y.",
+    "what_they_want_from_this_post": "A focused, scrollable set of blue-and-silver-specific looks organized in a way she can quickly match to her own style (glam vs. subtle, DIY vs. salon) — plus just enough 'why blue and silver' context to feel like she understands the choice, not just copies it.",
+    "what_frustrates_them": "Existing content buries blue/silver looks inside long lists that also include gold, green, and mismatched Christmas-crossover designs she has to scroll past. Several competitor pages are product-catalog dressed as inspiration (DipWell) or padded with unrelated affiliate shopping links (NewBeauty), making it harder to actually see the nail looks.",
+    "top_5_pain_points": [
+      "Has to sift through generic 'Hanukkah nails' listicles to find the blue-and-silver-specific looks she actually wants",
+      "Unsure which shade of blue (navy vs. royal vs. sky) pairs best with silver for her desired vibe (subtle vs. statement)",
+      "Wants to know if this combo works for a salon ask or is realistic to DIY at home",
+      "Wants the color pairing to feel intentional/elegant, not like a random blue manicure that happens to have some silver on it",
+      "Wants options across formality — everyday glam vs. dressed-up party look for a Hanukkah gathering"
+    ],
+    "exact_user_phrases": [
+      "blue and silver nails",
+      "navy and silver nails",
+      "blue nails with silver accent",
+      "blue and silver ombre",
+      "hanukkah nail ideas blue",
+      "blue and silver french tip",
+      "blue and silver glitter nails",
+      "midnight blue and silver nails",
+      "blue and silver marble nails",
+      "royal blue and silver nails",
+      "blue and silver nails for hanukkah",
+      "hanukkah colors blue and silver meaning"
+    ],
+    "intent_content_signals": [
+      "Wants strong visual density early — image-led scrolling behavior, not paragraphs of text before the first look",
+      "Responds well to techniques she can actually replicate (base color + accent + finish, described in plain steps)",
+      "Wants variety across intensity — a full-glam glitter look sits next to a subtle single-accent-nail option in the same post",
+      "Appreciates when a 'why this pairing' cultural note is short and confident rather than a long history lesson",
+      "Wants to feel like the post 'gets' the aesthetic she's going for, not just listing every blue+silver photo found on Instagram"
+    ]
+  },
+
+  "section_6_semantic_keyword_data": {
+    "blog_gen_instruction": "Primary keyword in strong tags every mention. AEO terms trigger direct answer paragraphs. User language woven naturally. No term from keywords_to_avoid used as focus term.",
+    "primary_keyword": "blue and silver hanukkah nails",
+    "keyword_variations": [
+      "blue and silver hanukkah nail ideas",
+      "blue silver hanukkah manicure",
+      "hanukkah nails blue and silver",
+      "blue and silver nails for hanukkah",
+      "silver and blue hanukkah nails",
+      "blue and silver hanukkah nail designs",
+      "blue and silver hanukkah nail art"
+    ],
+    "cluster_keywords": [
+      "navy and silver hanukkah nails",
+      "royal blue and silver nails",
+      "blue and silver glitter nails",
+      "blue and silver ombre nails",
+      "blue and silver french tip nails",
+      "blue and silver marble nails",
+      "blue and silver chrome nails",
+      "midnight blue and silver manicure",
+      "cobalt blue and silver nails",
+      "blue silver holiday nails",
+      "sky blue and silver nails",
+      "blue and silver nail polish combo"
+    ],
+    "lsi_terms": [
+      "glitter ombre manicure",
+      "water marble technique",
+      "silver glitter accent nail",
+      "holographic top coat",
+      "chrome nail powder",
+      "metallic blue polish",
+      "double French tip",
+      "navy polish base",
+      "cat eye manicure",
+      "silver foil accent",
+      "gradient fade nails",
+      "statement accent nail",
+      "cobalt blue polish",
+      "silver chrome powder",
+      "sapphire French manicure",
+      "matte topcoat finish",
+      "royal blue polish",
+      "candlelight-inspired sparkle"
+    ],
+    "aeo_terms": [
+      "why are blue and silver the colors for hanukkah nails",
+      "what shade of blue goes best with silver nails",
+      "can you do blue and silver nails at home",
+      "how do you get a blue and silver ombre effect on nails",
+      "what is the easiest blue and silver hanukkah nail design",
+      "does blue and silver nail polish work for a French manicure",
+      "how long does a glitter ombre manicure last",
+      "what silver polish works best over navy nails",
+      "is blue and silver a Hanukkah tradition or just popular",
+      "what's the difference between blue and white vs blue and silver hanukkah nails"
+    ],
+    "technical_terms": [
+      "glitter ombre",
+      "water marble technique",
+      "chrome powder",
+      "holographic top coat",
+      "cat eye gel",
+      "French tip",
+      "accent nail",
+      "gradient fade"
+    ],
+    "user_language": [
+      "blue and silver nails",
+      "navy and silver nails",
+      "blue nails with silver accent",
+      "blue and silver ombre",
+      "blue and silver french tip",
+      "blue and silver glitter nails",
+      "midnight blue and silver nails",
+      "royal blue and silver nails",
+      "blue and silver marble nails"
+    ]
+  },
+
+  "section_7_voice_and_ai_queries": {
+    "blog_gen_instruction": "Answer every query directly in the relevant H2 section body. If a query cannot be addressed naturally in the body, route it to faqItems. No query left unanswered.",
+    "queries": [
+      "Why are blue and silver the colors for Hanukkah nails?",
+      "What shade of blue pairs best with silver for Hanukkah nails?",
+      "Can I do blue and silver Hanukkah nails at home?",
+      "How do you create a blue and silver ombre nail effect?",
+      "What's the easiest blue and silver Hanukkah nail design for beginners?",
+      "Does a blue and silver French manicure work for Hanukkah?",
+      "What silver polish looks best over navy blue nails?",
+      "Is blue and silver more traditional than blue and white for Hanukkah?",
+      "How do you make blue and silver nails look elegant, not costumey?",
+      "What's the difference between blue and white vs blue and silver Hanukkah nails?",
+      "How long does a glitter ombre Hanukkah manicure last?",
+      "What tools do I need for a blue and silver marble nail design?",
+      "Can blue and silver Hanukkah nails work for a formal party?",
+      "What's a good subtle blue and silver Hanukkah nail idea?",
+      "How do you do a blue and silver chrome manicure?"
+    ]
+  },
+
+  "section_8_hook_and_ctr": {
+    "blog_gen_instruction": "READ THIS SECTION BEFORE WRITING THE TITLE, META DESCRIPTION, INTRO, OR FIRST H2. The title and description here are the option the USER SELECTED from 2-3 real, evidence-based choices during phase_6 — use them exactly. The intro hook brief and first H2 hook direction are your creative brief for those specific elements, matching the selected option's angle. Do not deviate.",
+    "real_serp_findings_summary": "Fetched competitor titles skew toward broad number-led listicles ('19 Best Hanukkah Nail Ideas', '23 Hanukkah Nail Ideas', '30 Best Hanukkah Nail Design Ideas') covering all colors — none front-load 'blue and silver' as the subject. None of the 5 fetched titles promise a specific color-pairing focus or a beginner-friendly angle; they promise volume/variety instead.",
+    "selected_option_rationale": "Option 2 leads with a number + 'blue and silver hanukkah nails' front-loaded, matching the proven number-led pattern competitors use successfully, while differentiating with an explicit techniques (ombré, French, marble) + at-home-friendly angle that none of the 5 fetched competitors promise directly.",
+    "title": "15+ Blue and Silver Hanukkah Nails to Try in 2026",
+    "title_char_count": 51,
+    "meta_description": "From glitter ombré to marble French tips — real blue and silver Hanukkah nail looks, plus the easiest way to get the combo right at home.",
+    "meta_char_count": 140,
+    "intro_hook_brief": "Open on specificity/numbers: skip past the 'what are Hanukkah colors' preamble entirely and drop straight into why this exact pairing (not blue/white, not blue/gold) has become the go-to — then promise the reader a real, technique-organized set of looks rather than another scattered mixed-color list.",
+    "first_h2_hook_direction": "Apply the specificity angle subtly: the first H2 should immediately deliver on the 'techniques' promise from the title rather than restating the color-meaning hook — start showing looks fast."
+  },
+
+  "section_9_search_journey": {
+    "blog_gen_instruction": "This is the emotional contract with the reader. Every section of the post must honour the promise made. Read this before writing any section. If a paragraph breaks the journey arc — rewrite it.",
+    "reader_arrival_state": "Decided on the color pairing already, browsing eagerly for the specific look that matches her personal style and skill level.",
+    "journey_arc": [
+      "Hook with quick confirmation she's in the right place + the real reason blue and silver dominates Hanukkah nail art",
+      "Deliver visual variety fast, organized by technique so she can self-select toward her vibe (bold glitter vs. subtle marble vs. classic French)",
+      "Build confidence that this is achievable at home, not salon-only, with light how-to detail woven into each look",
+      "Layer in shade-pairing guidance (navy vs. royal vs. sky blue + silver) so she can fine-tune to her exact preference",
+      "Close with the identity payoff — this pairing is elegant and intentional, not a costume, and she now has her pick"
+    ],
+    "promise_to_deliver": "A real, technique-organized set of blue and silver Hanukkah nail looks that's easier to browse than a generic mixed-color listicle, with enough guidance to recreate her favorite at home.",
+    "exit_state": "Confident and decided — she has a specific look in mind, understands why the pairing works, and feels equipped to either DIY it or describe it precisely to her nail tech."
+  },
+
+  "section_10_content_structure": {
+    "blog_gen_instruction": "This H2 structure is research-driven and must be followed exactly. Do not rename, reorder, or remove H2s without user instruction. Word budget per section is set — follow it. H3s may be added at editorial discretion.",
+    "h1": "15+ Blue and Silver Hanukkah Nails to Try in 2026",
+    "h2_structure": [
+      "Why Blue and Silver Is the Ultimate Hanukkah Nail Pairing",
+      "Bold Blue and Silver Glitter Looks",
+      "Blue and Silver Ombré Nails",
+      "Blue and Silver French Tip Ideas",
+      "Marble and Chrome Blue and Silver Designs",
+      "Subtle Blue and Silver Looks for Everyday Wear",
+      "Which Shade of Blue Pairs Best With Silver?",
+      "How to Get Blue and Silver Hanukkah Nails to Last"
+    ],
+    "word_budget": {
+      "introduction": "230 words",
+      "conclusion": "180 words",
+      "per_h2": {
+        "Why Blue and Silver Is the Ultimate Hanukkah Nail Pairing": "270 words",
+        "Bold Blue and Silver Glitter Looks": "320 words",
+        "Blue and Silver Ombré Nails": "300 words",
+        "Blue and Silver French Tip Ideas": "290 words",
+        "Marble and Chrome Blue and Silver Designs": "300 words",
+        "Subtle Blue and Silver Looks for Everyday Wear": "260 words",
+        "Which Shade of Blue Pairs Best With Silver?": "150 words",
+        "How to Get Blue and Silver Hanukkah Nails to Last": "150 words"
+      }
+    }
+  },
+
+  "section_11_internal_links": {
+    "blog_gen_instruction": "Every link below must appear in the post. Cluster links use anchor texts verbatim — do not rewrite. Cross-site links use the provided descriptive anchor. Place each link where the placement note says — woven naturally into prose, never as a standalone CTA. Total internal links must not exceed 6.",
+    "all_internal_links": [
+      {
+        "url_or_slug": "/blog/hanukkah-nails/hanukkah-nail-ideas",
+        "title": "Hanukkah Nail Ideas",
+        "anchor_text": "Hanukkah nail ideas",
+        "placement_note": "Introduction — linking back to the pillar as the broader resource for readers wanting non-blue/silver options too",
+        "link_type": "cluster-pillar"
+      },
+      {
+        "url_or_slug": "/blog/hanukkah-nails/star-of-david-nail-designs",
+        "title": "Star of David Nail Designs",
+        "anchor_text": "Star of David nail designs",
+        "placement_note": "Marble and Chrome Blue and Silver Designs — natural fit since Star of David accents commonly appear over blue/silver marble bases",
+        "link_type": "cluster-spoke"
+      },
+      {
+        "url_or_slug": "/blog/hanukkah-nails/easy-hanukkah-nail-designs",
+        "title": "Easy Hanukkah Nail Designs",
+        "anchor_text": "easy Hanukkah nail designs for beginners",
+        "placement_note": "Subtle Blue and Silver Looks for Everyday Wear — routes beginner-leaning readers to the dedicated tutorial-intent spoke",
+        "link_type": "cluster-spoke"
+      },
+      {
+        "url_or_slug": "/blog/hanukkah-nails/hanukkah-press-on-nails",
+        "title": "Hanukkah Press-On Nails",
+        "anchor_text": "Hanukkah press-on nails",
+        "placement_note": "How to Get Blue and Silver Hanukkah Nails to Last — natural mention as a no-DIY alternative for achieving the same look",
+        "link_type": "cluster-spoke"
+      }
+    ]
+  },
+
+  "section_12_voice_tone": {
+    "blog_gen_instruction": "This is the voice for this specific post. Layer on top of Mirellé editorial framework. Do not default to generic AI tone.",
+    "recommended_voice": "Confident style guide — warm expert with a slight aspirational edge",
+    "tone_characteristics": [
+      "Decisive and specific — names exact shades, finishes, and techniques rather than vague descriptors",
+      "Encouraging toward DIY without being condescending about salon options",
+      "Light cultural confidence when explaining the color symbolism — brief, assured, not a history lecture",
+      "Visually descriptive language that helps the reader picture the look before any image loads",
+      "Warm but not overly casual — matches a reader who already has taste and wants to refine it, not be sold to"
+    ],
+    "language_style": "Second person throughout ('your nails', 'you'll love'), short punchy sentences mixed with slightly longer descriptive ones for the visual payoff moments, minimal hedging language",
+    "audience_match": "This voice fits a reader who has already made her color decision and wants a confident guide, not a beginner's introduction to what Hanukkah is — respects her existing intent while still being genuinely useful on technique."
+  },
+
+  "section_13_external_links": {
+    "blog_gen_instruction": "Include all external links where indicated. Supports E-E-A-T. Use anchor suggestion as guide — write naturally around it. Sourced from phase_3's best_external_sources_found (real fetched competitor pages), not from separate searches. May be empty (0-2 links) if none of the fetched pages qualified as genuinely citation-worthy — that is expected, not a gap to fill.",
+    "links": []
+  },
+
+  "section_14_execution_plan": {
+    "purpose": "Blog Gen Agent reads this section FIRST — before frontmatter, before writing a single word. Every value here is pre-calculated from the input file data. Blog Gen Agent locks all values and executes them exactly.",
+    "blog_gen_instruction": "READ THIS SECTION FIRST. Lock every value. Execute exactly. Do not recalculate, do not adjust, do not deviate.",
+    "calculated_by": "Input Gen Agent",
+
+    "block_1_keyword_execution": {
+      "primary_keyword": "blue and silver hanukkah nails",
+      "top_5_density_baseline": 0,
+      "total_mention_target": "0 + 3 = 3 total mentions (baseline was 0 across all 5 fetched pages since none targeted this exact phrase as a focus keyword; using the minimum practical target of 3 to satisfy on-page SEO without stuffing a phrase competitors never needed)",
+      "first_100_words_plan": {
+        "rule": "Primary keyword MUST appear TWICE in the first 100 words. Mandatory. No exceptions.",
+        "mention_1": "sentence 1-2 of introduction — establishing the post's subject immediately",
+        "mention_2": "sentence 3-4 of introduction — reinforced within the color-symbolism hook"
+      },
+      "first_half_target": "2 mentions — first ~1175 words. Run denser in first half.",
+      "second_half_target": "1 mention — second ~1175 words",
+      "strong_tag_rule": "EVERY single mention of the primary keyword — all 3 of them — wrapped in <strong> tags. No exceptions. Catch each one as it is written. Scan after every paragraph.",
+      "keywords_to_avoid_active": [
+        "hanukkah nails",
+        "menorah nails",
+        "star of david nail design",
+        "dreidel nail art",
+        "easy hanukkah nail designs",
+        "hanukkah press on nails",
+        "how to do hanukkah nail art"
+      ]
+    },
+
+    "block_2_word_budget": {
+      "total_target": "2350 words — +/-50 words tolerance, never exceed",
+      "introduction": "230 words",
+      "conclusion": "180 words",
+      "h2_budgets": [
+        { "heading": "Why Blue and Silver Is the Ultimate Hanukkah Nail Pairing", "budget": 270, "complexity": "medium" },
+        { "heading": "Bold Blue and Silver Glitter Looks", "budget": 320, "complexity": "medium" },
+        { "heading": "Blue and Silver Ombré Nails", "budget": 300, "complexity": "medium" },
+        { "heading": "Blue and Silver French Tip Ideas", "budget": 290, "complexity": "medium" },
+        { "heading": "Marble and Chrome Blue and Silver Designs", "budget": 300, "complexity": "medium" },
+        { "heading": "Subtle Blue and Silver Looks for Everyday Wear", "budget": 260, "complexity": "low" },
+        { "heading": "Which Shade of Blue Pairs Best With Silver?", "budget": 150, "complexity": "low" },
+        { "heading": "How to Get Blue and Silver Hanukkah Nails to Last", "budget": 150, "complexity": "low" }
+      ],
+      "tracking_rule": "Track running word total at the end of every H2 section. If a section is running over budget — cut before moving to the next section. Do not compensate later."
+    },
+
+    "block_3_image_plan": {
+      "total_images": 7,
+      "hero_image": "frontmatter only — NEVER appears in post body",
+      "body_images": 6,
+      "assignments": [
+        {
+          "image_number": 1,
+          "place_after": "Why Blue and Silver Is the Ultimate Hanukkah Nail Pairing",
+          "image_type": "standard_inspiration",
+          "section_context": "A bold, glossy blue and silver glitter manicure — the archetypal look that establishes the pairing visually right after the concept is introduced"
+        },
+        {
+          "image_number": 2,
+          "place_after": "Bold Blue and Silver Glitter Looks",
+          "image_type": "standard_inspiration",
+          "section_context": "Chunky silver glitter over bright blue base, full-glam statement look, all nails"
+        },
+        {
+          "image_number": 3,
+          "place_after": "Blue and Silver Ombré Nails",
+          "image_type": "standard_inspiration",
+          "section_context": "Blue to silver glitter ombré fade, gradient effect clearly visible tip-to-base"
+        },
+        {
+          "image_number": 4,
+          "place_after": "Blue and Silver French Tip Ideas",
+          "image_type": "standard_inspiration",
+          "section_context": "Midnight blue and silver glitter double French manicure, clean tip lines"
+        },
+        {
+          "image_number": 5,
+          "place_after": "Marble and Chrome Blue and Silver Designs",
+          "image_type": "standard_inspiration",
+          "section_context": "Blue and silver water-marble swirl effect on one or two accent nails against solid base"
+        },
+        {
+          "image_number": 6,
+          "place_after": "Subtle Blue and Silver Looks for Everyday Wear",
+          "image_type": "standard_inspiration",
+          "section_context": "Pale/sky blue base with a single silver glitter or chrome accent nail, understated everyday-wearable look"
+        }
+      ],
+      "image_type_rule": {
+        "default": "standard_inspiration — an actual nail look, styled and shot, related to the topic. This is the default for the large majority of image slots in nearly every post.",
+        "infographic_allowed_when": "Not applicable for this post — inspirational intent with no comparison or step-sequence need identified in section_10's H2 structure.",
+        "how_many_infographics": 0,
+        "banned_absolutely": "NEVER a tool/equipment image (hands holding a file, tools laid out, application/process shots showing hands or tools at work) in any slot. NEVER a photo-style side-by-side nail-to-nail comparison image.",
+        "note_for_blog_gen": "All 6 body image slots are standard_inspiration per the analysis above — Blog Gen Agent follows this exactly, no mid-write reclassification."
+      },
+      "path_rule": "/images/blog/hanukkah-nails/blue-silver-hanukkah-nails/filename.webp — topic_slug in path, slug folder, leading slash"
+    },
+
+    "block_4_opening_technique_assignments": {
+      "rule": "No two consecutive sections use the same technique. Conclusion = Technique 1 or 3 only.",
+      "assignments": [
+        { "section": "Introduction", "technique": "Technique 3 — The Reframe (skip past generic Hanukkah color intro, go straight to why THIS pairing specifically)" },
+        { "section": "Why Blue and Silver Is the Ultimate Hanukkah Nail Pairing", "technique": "Technique 1 — The Claim (state confidently why this is the dominant pairing)" },
+        { "section": "Bold Blue and Silver Glitter Looks", "technique": "Technique 2 — The Scene (paint the visual of the look before naming it)" },
+        { "section": "Blue and Silver Ombré Nails", "technique": "Technique 4 — The Question (open with what makes ombré different from a solid look)" },
+        { "section": "Blue and Silver French Tip Ideas", "technique": "Technique 2 — The Scene" },
+        { "section": "Marble and Chrome Blue and Silver Designs", "technique": "Technique 1 — The Claim" },
+        { "section": "Subtle Blue and Silver Looks for Everyday Wear", "technique": "Technique 4 — The Question" },
+        { "section": "Which Shade of Blue Pairs Best With Silver?", "technique": "Technique 1 — The Claim (direct AEO-style answer opening)" },
+        { "section": "How to Get Blue and Silver Hanukkah Nails to Last", "technique": "Technique 2 — The Scene" },
+        { "section": "Conclusion", "technique": "Technique 3 — The Reframe" }
+      ],
+      "banned_opener_rule": "Check every opener against banned_opening_approaches in blog gen prompt before writing the second sentence"
+    },
+
+    "block_5_link_placements": {
+      "rule": "Every link placed exactly where specified. Anchor texts used verbatim — never rewritten. Links woven into prose naturally — never standalone CTAs.",
+      "links": [
+        {
+          "anchor_text": "Hanukkah nail ideas",
+          "full_url": "/blog/hanukkah-nails/hanukkah-nail-ideas",
+          "place_in_section": "Introduction",
+          "placement_context": "Mentioned as the broader resource for readers who want the full range of Hanukkah nail colors and symbols beyond this specific blue/silver focus",
+          "link_type": "cluster-pillar"
+        },
+        {
+          "anchor_text": "Star of David nail designs",
+          "full_url": "/blog/hanukkah-nails/star-of-david-nail-designs",
+          "place_in_section": "Marble and Chrome Blue and Silver Designs",
+          "placement_context": "Referenced when describing how a Star of David accent often finishes a blue/silver marble look",
+          "link_type": "cluster-spoke"
+        },
+        {
+          "anchor_text": "easy Hanukkah nail designs for beginners",
+          "full_url": "/blog/hanukkah-nails/easy-hanukkah-nail-designs",
+          "place_in_section": "Subtle Blue and Silver Looks for Everyday Wear",
+          "placement_context": "Routed to for readers wanting simpler, beginner-friendly execution beyond just the subtle color palette",
+          "link_type": "cluster-spoke"
+        },
+        {
+          "anchor_text": "Hanukkah press-on nails",
+          "full_url": "/blog/hanukkah-nails/hanukkah-press-on-nails",
+          "place_in_section": "How to Get Blue and Silver Hanukkah Nails to Last",
+          "placement_context": "Mentioned as a no-DIY, no-chip-risk alternative for readers who want the same blue/silver look without painting it themselves",
+          "link_type": "cluster-spoke"
+        }
+      ]
+    },
+
+    "block_6_aeo_geo_plan": {
+      "aeo_assignments": [
+        {
+          "aeo_term": "Why are blue and silver the colors for Hanukkah nails?",
+          "assigned_to_section": "Why Blue and Silver Is the Ultimate Hanukkah Nail Pairing",
+          "execution": "Write a direct 2-3 sentence answer paragraph IMMEDIATELY after the H2 heading — before any elaboration. This is what gets picked up by AI answer engines."
+        },
+        {
+          "aeo_term": "What shade of blue pairs best with silver for Hanukkah nails?",
+          "assigned_to_section": "Which Shade of Blue Pairs Best With Silver?",
+          "execution": "Write a direct 2-3 sentence answer paragraph immediately after the H2 heading naming specific shades (navy, royal, sky, cobalt) and their pairing logic."
+        },
+        {
+          "aeo_term": "Can I do blue and silver Hanukkah nails at home?",
+          "assigned_to_section": "Subtle Blue and Silver Looks for Everyday Wear",
+          "execution": "Write a direct 2-3 sentence answer confirming DIY feasibility before describing the specific look."
+        },
+        {
+          "aeo_term": "How do you get a blue and silver ombré effect on nails?",
+          "assigned_to_section": "Blue and Silver Ombré Nails",
+          "execution": "Write a direct 2-3 sentence answer describing the sponge/gradient technique immediately after the H2 heading."
+        },
+        {
+          "aeo_term": "How long does a glitter ombré Hanukkah manicure last?",
+          "assigned_to_section": "How to Get Blue and Silver Hanukkah Nails to Last",
+          "execution": "Write a direct 2-3 sentence answer with a realistic wear-time estimate and top coat guidance immediately after the H2 heading."
+        }
+      ],
+      "geo_entity_statements": [
+        {
+          "entity": "Glitter ombré",
+          "assigned_to_section": "Blue and Silver Ombré Nails",
+          "execution": "Write a clear declarative definition sentence — confident, no hedging. Extractable by AI as a citation."
+        },
+        {
+          "entity": "Water marble technique",
+          "assigned_to_section": "Marble and Chrome Blue and Silver Designs",
+          "execution": "Write a clear declarative definition sentence explaining the marbling process at a high level."
+        },
+        {
+          "entity": "Chrome powder",
+          "assigned_to_section": "Marble and Chrome Blue and Silver Designs",
+          "execution": "Write a clear declarative definition sentence describing what chrome powder does to a manicure's finish."
+        }
+      ]
+    },
+
+    "block_7_active_constraints": {
+      "em_dash_banned": "Long em dash does not appear anywhere. If one forms while writing — stop, replace with: comma / new sentence / parentheses / but / restructure.",
+      "banned_vocab_watch": [
+        "elevate",
+        "stunning",
+        "must-have",
+        "game-changer",
+        "effortlessly",
+        "unleash",
+        "dive into",
+        "unlock"
+      ],
+      "american_english_active": "color, recognize, -ize, -or — every instance, no exceptions. This post uses American English, not British.",
+      "keyword_density_reminder": "After every 2 H2 sections — count current keyword mentions. Verify running total is on track to hit the hardcoded mention target (3 total). First half must run denser than second half. Adjust if needed.",
+      "image_path_reminder": "/images/blog/hanukkah-nails/blue-silver-hanukkah-nails/filename.webp — topic_slug in path always",
+      "internal_link_url_reminder": "Full correct paths only. Cluster links = /blog/hanukkah-nails/[slug]. Never bare /slug.",
+      "hero_image_reminder": "Hero = frontmatter only. Never place hero image in body.",
+      "strong_tag_reminder": "Every primary keyword mention = <strong> tags. Scan after every paragraph."
+    }
+  }
+}
