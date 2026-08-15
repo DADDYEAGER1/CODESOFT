@@ -1,0 +1,258 @@
+# INPUT FILE — Red NYE Nails (Post 4 of 13, NYE Cluster)
+## THIS FILE IS THE SINGLE SOURCE OF TRUTH FOR THE BLOG GEN AGENT. All POST_CONSTANTS are hardcoded. All keywords, H2 structure, audience intelligence, internal links, and tone must be followed exactly.
+
+---
+
+## SECTION 2 — POST_CONSTANTS
+- slug: `red-nye-nails`
+- topic_slug: `new-year-nails`
+- canonical: `https://mirelleinspo.com/blog/new-year-nails/red-nye-nails`
+- post_type: spoke
+- intent: inspirational
+- word_count: **1650** (±50 tolerance) — set from real top-5 fetched competitor average (1446 words), pushed above baseline because the topic genuinely supports more (shade/undertone guidance, red nail theory, design variety, pairing) — no ceiling applied
+- image_count: **7** (1 hero + 6 body) — Rule 5, flat default (not pillar, not tutorial, not comparison, not 40+ slug)
+- show_inspo_gallery_link: **false** — read verbatim from cluster_context.json `show_inspo_gallery_link_cluster_default`
+- template: **posts** — not pillar, not tutorial intent
+- hero_dimensions: 1200x675
+- category: Nails
+- publish_date: 2026-08-15
+- author: jyoti-mirelle
+
+---
+
+## SECTION 3 — CLUSTER_SNAPSHOT
+- pillar_slug: `nye-nails-ideas`
+- pillar_title: New Year's Eve Nails: 40+ Party-Ready Ideas
+- pillar_primary_keyword: new years eve nails
+- this_post_slug: `red-nye-nails`
+- this_post_role: spoke
+- show_inspo_gallery_link_cluster_default: false
+- keywords_to_avoid (full keyword_do_not_use / ownership registry — never used as focus terms): new years eve nails, black and gold new years eve nails, chrome nails new years eve, silver new years eve nails, easy new years eve nails at home, last minute new years eve nails, champagne nails new years, short new years eve nails, stiletto nails new years eve, new years eve nail trends 2027, glitter nails new years eve, minimalist new years eve nails
+
+---
+
+## SECTION 4 — SERP_ANALYSIS
+**competitor_gaps** (demand-validated on 2+ sources):
+- "Red nail theory" for NYE specifically — validated on TikTok (420M+ views on #rednailtheory per site's own coverage), Quora, and LA Nail Supplies — zero of the 5 fetched competitors explain the theory or connect it to NYE confidence/attention framing.
+- Which red shade/undertone to actually pick (bright cherry vs. deep wine/burgundy vs. blue-based) — validated via Quora ("what nail color with a red dress") and thepinkissue.com ("bright reds can feel too Santa's-workshop for NYE, burgundy is more luxurious") — competitors name shades but don't resolve the choice.
+- Outfit/dress pairing for red nails at a party — validated on TikTok (#outfitinspo, #blackdress) and sparrowrefashion.com — none of the 5 fetched pages address pairing red nails with NYE outfits.
+
+**missing_semantic_territory**: "red nail theory new years," "wet look red nails," "cherry vs wine red nails NYE," "red nails with black dress NYE," "red French tip new years."
+
+**our_strategic_approach**: None of the 5 real competitors is a dedicated red-NYE resource with real depth — RainyRoses is dedicated but thin (330 words, product-pitch, no shade guidance); the rest bury red in one paragraph inside broad 30+ idea roundups. This post wins by being the first genuinely dedicated, complete resource: pairing the trending "red nail theory" hook (validated massive demand, zero competitor coverage) with concrete shade/undertone guidance the audience is actively asking for, then real design variety (glossy classic, red and gold, matte, French, chrome-tipped) so it reads as authoritative rather than a single product pitch. Structural edge: open with the red nail theory hook (curiosity + trend relevance neither RainyRoses nor the roundups use), then move to decision-making (shade selection) before design inspiration — this order matches what competitors skip (decision support) rather than just listing looks.
+
+**top_5_fetched_pages_summary**:
+1. RainyRoses.com/blogs/nail-art/elevate-your-new-years-eve-look-with-durable-red-luxury-pointed-breathable-nails — 330 words, 5 H2s, "red" mentioned 9x. Fully dedicated to red NYE nails but thin, product-first, no shade guidance.
+2. THE WED (thewed.com/magazine/nail-designs-for-new-years-eve-2024) — ~1400 words, 8 H2s, red section ~120 words, "red" mentioned 6x total. Strong editorial voice; red is one of 8 trends, no depth on shade selection.
+3. Manucurist (us.manucurist.com .../new-years-nails-our-color-and-nail-art-ideas) — ~1450 words, 7 H2s + FAQ, red section names 3 specific polish shades (Anemone, Red Hibiscus, Bohème) but is a product blog, no design/theory depth.
+4. accio-ai.com (11 Must-Try New Year's Nail Inspo Ideas to Ring in 2027) — ~1550 words, 11 H2s, dedicated "Red Luck Lacquer" section (~210 words) introduces the "red nail theory" by name but doesn't explain or expand it.
+5. Stolen Inspiration (stoleninspiration.com/new-years-nails) — ~2500 words, 10 H2s, dedicated "Dark Cherry Nails" section (~230 words) distinguishes bright cherry vs. cherry mocha — best shade differentiation of the 5, but no theory/attention angle and no outfit pairing.
+
+**top_5_word_count_average**: 1446 words → feeds phase_3b
+**top_5_keyword_density_average**: ~4 mentions (red + NYE-adjacent phrasing) → feeds phase_5 mention target
+**best_external_sources_found**: None of the 5 qualify as genuinely citation-worthy (RainyRoses is a product blog; the others are aggregative roundups without unique authoritative data). Section 13 is empty.
+
+---
+
+## SECTION 5 — AUDIENCE_INTELLIGENCE
+**who_they_are**: Women planning their NYE party look, already decided on red (or strongly leaning red) and now refining the specific shade, finish, and design — not starting from zero on color choice. Mid-funnel decision stage, not top-of-funnel browsing.
+
+**what_they_want_from_this_post**: Confirmation red is the right call for this occasion + help picking the exact right red for their skin tone + 1-2 design ideas beyond a flat coat, so the look feels intentional rather than default.
+
+**what_frustrates_them**: Competitor content either just shows red nail photos with zero shade guidance, or is a product pitch (RainyRoses) with no real styling help. Nobody resolves "which red" or connects red nails to the NYE-specific confidence/attention angle that's clearly trending (red nail theory).
+
+**top_5_pain_points**:
+1. Not sure if bright cherry red reads as "too Christmas" this late in the season vs. a deeper wine/burgundy.
+2. Wants to know if red nail theory is real or just TikTok hype before caring about it for a party where they might meet someone new.
+3. Uncertain which red undertone (blue-based vs. warm/tomato) actually suits their skin tone.
+4. Wants the manicure to photograph well under party lighting/flash, not just look good in daylight.
+5. Needs it to pair cleanly with a black dress, gold jewelry, or whatever they're already wearing — doesn't want to re-plan the outfit around the nails.
+
+**exact_user_phrases**: "does the red nail theory work," "red nails or burgundy for NYE," "what red goes with a black dress," "cherry red vs wine red nails," "red nails main character energy," "red nails that don't look too Christmas," "classic red mani for New Year's," "red nails passion and celebration," "red French tip for New Year's," "wet look red nails."
+
+**intent_content_signals**: Reader responds to confident, decisive guidance (not "it depends" hedging); wants a short trend/theory hook up top before practical shade advice; visual variety across 4-6 concrete looks, not 20+ thin options; short, scannable sections over long prose blocks.
+
+---
+
+## SECTION 6 — SEMANTIC_KEYWORD_DATA
+- primary_keyword: **red nails new years eve** (LOCKED)
+- keyword_variations: red New Year's Eve nails, red NYE nails, red nails for New Year's, red manicure New Year's Eve, red nail designs New Year's Eve, New Year's Eve red nails, red new years nails
+- cluster_keywords: red nail polish NYE, cherry red nails, wine red nails, burgundy NYE nails, glossy red manicure, matte red nails, red and gold nail design, red French tip nails, classic red manicure, party nails red, red chrome nails, red nail shade guide
+- lsi_terms: red nail theory, wet-look finish, blue-based red, warm-toned red, tomato red, cherry red vs wine red, high-shine top coat, statement manicure, festive red polish, red lacquer, ruby red, crimson nails, holiday red, red accent nail, midnight manicure
+- aeo_terms: "does the red nail theory work for New Year's Eve," "what shade of red is best for New Year's Eve nails," "is red or gold better for New Year's Eve nails," "what red nail polish goes with a black dress," "should I get bright red or dark red nails for NYE," "how do I choose a red that matches my skin tone," "what does wearing red nails on New Year's Eve mean," "can red nails be too Christmassy for New Year's"
+- technical_terms: undertone, blue-based red, warm-toned red, high-gloss top coat, gel polish, cream finish, French tip, matte top coat
+- user_language: "main character energy," "too Santa's-workshop," "classic and sultry," "turns heads," "camera-flash ready," "put-together," "statement mani," "goes with everything," "confidence boost"
+
+---
+
+## SECTION 7 — VOICE_AND_AI_QUERIES
+1. Does the red nail theory actually work for New Year's Eve?
+2. What shade of red is best for New Year's Eve nails?
+3. Is bright red or dark red better for a New Year's party?
+4. What red nail polish goes with a black dress for NYE?
+5. How do I know if a red will suit my skin tone?
+6. Can red nails look too Christmassy for New Year's Eve?
+7. What's the difference between cherry red and wine red nails?
+8. Should I do a glossy or matte finish for red NYE nails?
+9. What nail shape works best with red polish for a party?
+10. How long will a red gel manicure last through New Year's celebrations?
+11. What jewelry or accessories pair well with red nails on NYE?
+12. Is a red French tip a good option for New Year's Eve?
+13. What's the red nail theory and where did it come from?
+14. Are red nails still trendy for New Year's or has it moved to other colors?
+
+---
+
+## SECTION 8 — HOOK_AND_CTR
+**real_serp_findings_summary**: Of 5 fetched competitors, only RainyRoses is fully dedicated to red NYE nails, and it's thin/product-first. accio-ai names "red nail theory" in passing without explaining it. None resolve shade selection or connect red to the NYE-specific confidence angle currently trending on TikTok — this is the clearest, most demand-validated gap.
+
+**selected_option_rationale**: Leads with "2027" year-tag (mandatory for trend content) and keeps the primary keyword front-loaded, while the meta promises the two things competitors skip — shade decision-making and the red nail theory hook — without repeating the title.
+
+- **title**: `Red Nails New Year's Eve 2027 Ideas` (35 characters)
+- **meta_description**: `Classic red isn't one shade. Find the exact NYE red for your skin tone, the red nail theory behind why it works, and designs beyond a solid coat.` (145 characters)
+
+**intro_hook_brief**: Open by naming the red nail theory trend directly — establish it as the reason red is having a specific NYE moment this year, not just a generic "red is classic" claim. Creates curiosity-driven momentum into the practical shade guidance that follows.
+
+**first_h2_hook_direction**: First H2 should resolve the theory itself briefly (what it is, why it's trending for NYE specifically) before pivoting into actionable shade selection — deliver on the meta's promise immediately rather than making the reader scroll.
+
+---
+
+## SECTION 9 — SEARCH_JOURNEY
+- reader_arrival_state: Already leaning toward red for NYE, seeking validation plus the specific shade/style guidance to commit confidently.
+- journey_arc: Hook with the red nail theory trend → resolve shade/undertone decision → show design variety (classic, French, chrome-tipped, matte) → address outfit pairing → close with a confident, ready-to-book/DIY note.
+- promise_to_deliver: A decisive, complete answer on which red and which look — not just another gallery of red nail photos.
+- exit_state: Confident and decided — knows their exact shade and design, ready to book or DIY without further searching.
+
+---
+
+## SECTION 10 — CONTENT_STRUCTURE
+- h1: Red Nails for New Year's Eve: The 2027 Shade & Style Guide
+- h2_structure:
+  1. The Red Nail Theory: Why Red Is Having a Moment This NYE
+  2. How to Pick Your Perfect Red (By Skin Tone)
+  3. Classic Glossy Red: The No-Fail NYE Manicure
+  4. Red and Gold: The Luxe Party Pairing
+  5. Matte Red Nails for a Modern Twist
+  6. Red French Tips for Understated Glam
+  7. What to Wear With Red Nails on NYE
+  8. Making Your Red Manicure Last Through Midnight
+
+- word_budget:
+  - introduction: 220 words
+  - conclusion: 180 words
+  - H2-1 (Red Nail Theory): 220 words
+  - H2-2 (Skin Tone Guide): 220 words
+  - H2-3 (Classic Glossy Red): 180 words
+  - H2-4 (Red and Gold): 170 words
+  - H2-5 (Matte Red): 150 words
+  - H2-6 (Red French Tips): 150 words
+  - H2-7 (Outfit Pairing): 180 words
+  - H2-8 (Longevity): 180 words
+
+---
+
+## SECTION 11 — INTERNAL_LINKS
+1. url_or_slug: `/blog/new-year-nails/nye-nails-ideas` | title: New Year's Eve Nails: 40+ Party-Ready Ideas | anchor_text: "40+ party-ready NYE nail ideas" | placement: Introduction, first mention of NYE nails broadly | link_type: cluster-pillar
+2. url_or_slug: `/blog/new-year-nails/glitter-nye-nails` | title: Glitter NYE Nails | anchor_text: "glitter NYE nail ideas" | placement: H2-3 (Classic Glossy Red), as a sparkle alternative | link_type: cluster-spoke
+3. url_or_slug: `/blog/new-year-nails/stiletto-nye-nails` | title: Long & Stiletto NYE Nails | anchor_text: "long stiletto NYE nail designs" | placement: H2-3 or H2-6, shape variation mention | link_type: cluster-spoke
+4. url_or_slug: `/blog/new-year-nails/short-nye-nails` | title: Short NYE Nails | anchor_text: "short New Year's Eve nails" | placement: H2-6 (Red French Tips), shape alternative | link_type: cluster-spoke
+5. url: `https://mirelleinspo.com/blog/nail-color-psychology-attraction/red-nail-theory` | title: Red Nail Theory: What TikTok's Viral Trend Actually Claims | anchor_text: "where the red nail theory trend actually came from" | placement: H2-1, deep-dive for readers wanting the full theory explainer | link_type: cross-site
+6. url: `https://mirelleinspo.com/blog/skin-tone/best-red-nail-colour-for-skin-tone` | title: Best Red Nail Color for Your Skin Tone, By Undertone | anchor_text: "the exact red shade that flatters your undertone" | placement: H2-2, deep-dive for shade/undertone matching | link_type: cross-site
+
+(6 total internal links — within the 4-6 cap.)
+
+---
+
+## SECTION 12 — VOICE_TONE
+- recommended_voice: Confident girlfriend who's already decided and is handing you the shortcut
+- tone_characteristics: Decisive (no "it depends" hedging), warm but direct, trend-literate without over-explaining slang, celebratory without being breathless, practical under the glamour
+- language_style: Second person ("you"), short punchy sentences mixed with one longer explanatory sentence per section, confident declaratives over qualifiers
+- audience_match: This reader has already chosen red and wants permission plus precision, not persuasion — the voice should validate the choice fast and then deliver specifics, matching their mid-funnel decision stage rather than top-of-funnel browsing energy
+
+---
+
+## SECTION 13 — EXTERNAL_LINKS
+(Empty — none of the 5 fetched competitor pages qualified as genuinely citation-worthy per phase_3 best_external_sources_found. No external links forced.)
+
+---
+
+## SECTION 14 — EXECUTION_PLAN
+
+### Block 1 — Keyword Execution
+- primary_keyword: red nails new years eve
+- top_5_density_baseline: 4 mentions
+- total_mention_target: **7** (4 + 3)
+- first_100_words_plan:
+  - mention_1: sentence 1-2 of introduction, naming the post topic directly alongside the red nail theory hook
+  - mention_2: sentence 4-5 of introduction, reinforcing before the H2 transition
+- first_half_target: 4 mentions — first ~825 words (Intro + H2-1 through H2-4)
+- second_half_target: 3 mentions — second ~825 words (H2-5 through conclusion)
+- strong_tag_rule: Every one of the 7 mentions wrapped in `<strong>` tags — scan after every paragraph
+- keywords_to_avoid_active: full list from Section 3 — never used as focus terms
+
+### Block 2 — Word Budget
+- total_target: 1650 words (±50, never exceed)
+- introduction: 220 | conclusion: 180
+- h2_budgets:
+  1. Red Nail Theory — 220 words — complexity: medium (explains trend + pivots to NYE relevance)
+  2. Skin Tone Guide — 220 words — complexity: high (undertone logic)
+  3. Classic Glossy Red — 180 words — complexity: low
+  4. Red and Gold Pairing — 170 words — complexity: low
+  5. Matte Red — 150 words — complexity: low
+  6. Red French Tips — 150 words — complexity: low
+  7. Outfit Pairing — 180 words — complexity: medium
+  8. Longevity — 180 words — complexity: medium
+- tracking_rule: Check running total after each H2; cut before moving on if over budget, never compensate later
+
+### Block 3 — Image Plan
+- total_images: 7 (1 hero, frontmatter only, never in body + 6 body images)
+- assignments:
+  1. place_after: Introduction | type: standard_inspiration | context: close-up glossy classic red manicure, festive setting (champagne glass or party backdrop)
+  2. place_after: H2-2 (Skin Tone Guide) | type: standard_inspiration | context: two contrasting red shades side by side on different skin tones (real nail photography, not a swatch chart)
+  3. place_after: H2-3 (Classic Glossy Red) | type: standard_inspiration | context: high-shine wet-look red manicure, almond or round shape
+  4. place_after: H2-4 (Red and Gold) | type: standard_inspiration | context: red base with gold foil or fine gold linework accent nail
+  5. place_after: H2-5 (Matte Red) | type: standard_inspiration | context: matte red finish, square or coffin shape, modern styling
+  6. place_after: H2-6 (Red French Tips) | type: standard_inspiration | context: red French tip on nude or sheer base, elegant close-up
+- image_type_rule: All 6 body slots use standard_inspiration — this post's intent (inspirational, color-focused) doesn't call for a comparison or step-sequence infographic. No tool/equipment shots, no literal side-by-side photo comparisons.
+- path_rule: `/images/blog/new-year-nails/red-nye-nails/filename.webp`
+
+### Block 4 — Opening Technique Assignments
+- Introduction: Technique 2 — The Hook Question (red nail theory framing)
+- H2-1 (Red Nail Theory): Technique 1 — The Claim
+- H2-2 (Skin Tone Guide): Technique 3 — The Reframe
+- H2-3 (Classic Glossy Red): Technique 4 — The Scene-Set
+- H2-4 (Red and Gold): Technique 2 — The Hook Question
+- H2-5 (Matte Red): Technique 1 — The Claim
+- H2-6 (Red French Tips): Technique 3 — The Reframe
+- H2-7 (Outfit Pairing): Technique 4 — The Scene-Set
+- H2-8 (Longevity): Technique 2 — The Hook Question
+- Conclusion: Technique 1 — The Claim
+- banned_opener_rule: Check every opener against banned_opening_approaches in Blog Gen prompt before writing the second sentence; no two consecutive sections repeat a technique (verified above).
+
+### Block 5 — Link Placements
+1. anchor: "40+ party-ready NYE nail ideas" | url: /blog/new-year-nails/nye-nails-ideas | section: Introduction | context: first reference to the broader NYE nails topic | type: cluster-pillar
+2. anchor: "glitter NYE nail ideas" | url: /blog/new-year-nails/glitter-nye-nails | section: H2-3 | context: mentioning sparkle as an alternative finish | type: cluster-spoke
+3. anchor: "long stiletto NYE nail designs" | url: /blog/new-year-nails/stiletto-nye-nails | section: H2-3 or H2-6 | context: shape variation aside | type: cluster-spoke
+4. anchor: "short New Year's Eve nails" | url: /blog/new-year-nails/short-nye-nails | section: H2-6 | context: shape alternative for French tip styling | type: cluster-spoke
+5. anchor: "where the red nail theory trend actually came from" | url: https://mirelleinspo.com/blog/nail-color-psychology-attraction/red-nail-theory | section: H2-1 | context: deep-dive offer after theory intro | type: cross-site
+6. anchor: "the exact red shade that flatters your undertone" | url: https://mirelleinspo.com/blog/skin-tone/best-red-nail-colour-for-skin-tone | section: H2-2 | context: deep-dive offer after undertone guidance | type: cross-site
+
+### Block 6 — AEO/GEO Plan
+- aeo_assignments:
+  - "Does the red nail theory work for New Year's Eve?" → H2-1 → direct 2-3 sentence answer immediately after heading
+  - "What shade of red is best for New Year's Eve nails?" → H2-2 → direct answer immediately after heading
+  - "What red nail polish goes with a black dress?" → H2-7 → direct answer immediately after heading
+- geo_entity_statements:
+  - "red nail theory" → H2-1 → clear declarative definition sentence, no hedging
+  - "blue-based red" vs "warm-toned red" → H2-2 → clear declarative definition
+  - "wet-look finish" → H2-3 → clear declarative definition
+
+### Block 7 — Active Constraints
+- em_dash_banned: no long em dashes anywhere; replace with comma, new sentence, parentheses, or restructure
+- banned_vocab_watch: elevate, unleash, embrace, journey, boasts, seamlessly, game-changer
+- american_english_active: color, favorite, personalize — throughout
+- keyword_density_reminder: after every 2 H2s, count running mentions against the 7-mention target; front half denser
+- image_path_reminder: `/images/blog/new-year-nails/red-nye-nails/filename.webp` always
+- internal_link_url_reminder: cluster links = `/blog/new-year-nails/[slug]`; cross-site = full mirelleinspo.com URL
+- hero_image_reminder: frontmatter only, never in body
+- strong_tag_reminder: every one of the 7 primary keyword mentions wrapped in `<strong>` tags
