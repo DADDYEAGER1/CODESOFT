@@ -1,0 +1,510 @@
+{
+  "section_1_file_authority": {
+    "statement": "THIS FILE IS THE SINGLE SOURCE OF TRUTH FOR THE BLOG GEN AGENT. All values in POST_CONSTANTS are hardcoded — Blog Gen Agent does not ask, adjust, or override them. All keywords, H2 structure, audience intelligence, internal links, and tone defined here must be followed exactly."
+  },
+
+  "section_2_post_constants": {
+    "slug": "last-minute-nye-nails",
+    "topic_slug": "new-year-nails",
+    "canonical": "https://mirelleinspo.com/blog/new-year-nails/last-minute-nye-nails",
+    "post_type": "spoke",
+    "intent": "tutorial",
+    "word_count": 2100,
+    "image_count": 4,
+    "show_inspo_gallery_link": false,
+    "template": "split-left",
+    "hero_dimensions": "800x800",
+    "category": "Nail Ideas",
+    "publish_date": "2026-12-15",
+    "author": "jyoti-mirelle"
+  },
+
+  "section_3_cluster_snapshot": {
+    "pillar_slug": "nye-nails-ideas",
+    "pillar_title": "New Year's Eve Nails: 40+ Party-Ready Ideas",
+    "pillar_primary_keyword": "new years eve nails",
+    "this_post_slug": "last-minute-nye-nails",
+    "this_post_role": "spoke",
+    "show_inspo_gallery_link_cluster_default": false,
+    "keywords_to_avoid": [
+      "new years eve nails", "black and gold new years eve nails", "chrome nails new years eve",
+      "red nails new years eve", "silver new years eve nails", "easy new years eve nails at home",
+      "champagne nails new years", "short new years eve nails", "stiletto nails new years eve",
+      "new years eve nail trends 2027", "glitter nails new years eve", "minimalist new years eve nails"
+    ]
+  },
+
+  "section_4_serp_analysis": {
+    "blog_gen_instruction": "our_strategic_approach is a specific, evidence-based outperform strategy, not a vague gap-fill statement. Use it as the concrete angle for the introduction and conclusion, and to guide depth/coverage decisions in relevant H2 sections.",
+    "competitor_gaps": [
+      "No fetched competitor fuses genuine NYE-specific styling (color, mood, occasion) with genuine time-crunch execution technique in one piece — confirmed on 2+ sources (EyeCandys press-on speed content has zero NYE styling; NewBeauty/Glamnetic NYE press-on content has zero technique/timing depth)",
+      "No fetched page gives a real step-by-step timed technique specifically for polish (not just press-ons) under time pressure for NYE — confirmed via Marie Claire (product-only, no steps) and sonailicious tutorial (real technique but not framed as 'last minute' problem-solution)",
+      "No fetched page addresses the specific emotional problem named by NewBeauty itself — 'floating in that liminal holiday space,' losing track of time between Christmas and NYE — with an actual solution structure (checklist, timed options); NewBeauty raises the problem but pivots straight to a product list"
+    ],
+    "missing_semantic_territory": [
+      "'liminal holiday space' / holiday time-blur framing — named by NewBeauty, unused as an actual content structure anywhere",
+      "specific timed categories (5-minute / 10-minute / 20-minute options) — confirmed pattern across EyeCandys and Purluxe (busy-people content) but never applied to NYE nails specifically",
+      "quick-dry polish + press-on combination approach — most sources pick one method only; combining both as a full toolkit is unaddressed"
+    ],
+    "our_strategic_approach": "Structure the post around actual time budgets (5, 10, 20 minutes) rather than a flat idea list — this is the structural gap no fetched competitor uses for this keyword. Open by naming the exact emotional beat NewBeauty identified (holiday time-blur, forgetting to book a salon slot) since no source builds a full post around it. Own the underlying execution mechanics fetched from EyeCandys (press-on prep, sizing, adhesive timing) and Marie Claire (quick-dry polish specifics) and translate them into NYE-specific looks with real color/finish direction, something neither source does. This closes the exact gap: NYE styling sources are style-deep/technique-shallow, technique sources are technique-deep/NYE-shallow.",
+    "top_5_fetched_pages_summary": [
+      {
+        "url": "https://www.newbeauty.com/view/new-years-eve-nails-press-ons",
+        "word_count": 350,
+        "h2_count": 1,
+        "keyword_mentions": 3,
+        "note": "Direct NYE + time-crunch framing in intro but pivots immediately to a 7-item shoppable product list with zero technique depth"
+      },
+      {
+        "url": "https://eyecandys.com/blogs/news/10-minute-manicure-press-on-nails",
+        "word_count": 1520,
+        "h2_count": 10,
+        "keyword_mentions": 0,
+        "note": "Deepest real technique content found (prep, sizing, adhesive, removal) but zero NYE-specific styling or keyword presence"
+      },
+      {
+        "url": "https://nghianippersusa.com/blogs/news/25-super-easy-nail-designs-for-a-quick-manicure",
+        "word_count": 900,
+        "h2_count": 30,
+        "keyword_mentions": 0,
+        "note": "Real quick-design listicle with genuine technique notes per design; zero holiday/NYE framing anywhere"
+      },
+      {
+        "url": "https://www.marieclaire.co.uk/beauty/nails/best-fast-drying-nail-polishes",
+        "word_count": 750,
+        "h2_count": 8,
+        "keyword_mentions": 0,
+        "note": "'last minute' mentioned once re: holiday-readiness; real product-tested depth on quick-dry formulas but no NYE styling or steps"
+      },
+      {
+        "url": "https://www.glamnetic.com/blogs/news/new-years-eve-glam-with-press-on-nails",
+        "word_count": 450,
+        "h2_count": 3,
+        "keyword_mentions": 2,
+        "note": "Names convenience/speed as a selling point for NYE press-ons but stays promotional, no real technique steps"
+      }
+    ],
+    "top_5_word_count_average": 794,
+    "top_5_keyword_density_average": 1,
+    "recommended_image_count_validation": "Tutorial intent locks image_count to 4 (hero + 3 body) per phase_2 rule — consistent with SERP pattern; fetched pages lean product-shot/step-shot light rather than heavy gallery-style, supporting a lower image count for this post."
+  },
+
+  "section_5_audience_intelligence": {
+    "blog_gen_instruction": "This is your primary creative brief. Every paragraph written for this specific person with this specific intent. Satisfy them completely.",
+    "who_they_are": "Someone already deep in the holiday season — plans for NYE are set or nearly set, but their nails are not. Often coming off Christmas-week manicure neglect. Not a nail novice necessarily, but time-poor right now specifically, not generally. May be deciding between salon vs DIY only because the salon window has closed, not by preference.",
+    "what_they_want_from_this_post": "A fast, reliable, low-failure-risk path to presentable NYE nails tonight or within a very short window — real time estimates, real technique they can trust, not just inspiration to scroll past.",
+    "what_frustrates_them": "NYE nail content that's all photos and zero instruction, or all product-pushing (press-on brand roundups) with no technique for people using regular polish. Also frustrated by generic 'quick manicure' content that ignores the specific NYE mood — they still want it to look like a party mani, not just 'neat.'",
+    "top_5_pain_points": [
+      "Ran out of time to book a salon appointment during the NYE rush window",
+      "Polish chipped or nails look bare with only hours left before the party",
+      "Doesn't trust themselves to do intricate NYE nail art fast without ruining it",
+      "Needs the look to still read as 'special occasion,' not just 'clean and done'",
+      "Uncertain whether press-ons or quick-dry polish is the faster/safer choice tonight"
+    ],
+    "exact_user_phrases": [
+      "last minute new years eve nails",
+      "no time for a manicure before the party",
+      "quick nails for NYE tonight",
+      "10 minute manicure",
+      "press-ons or polish which is faster",
+      "nails for people who don't have time",
+      "quick party mani",
+      "ran out of time to book a salon appointment",
+      "floating in that liminal holiday space",
+      "nail ideas that work in under 20 minutes"
+    ],
+    "intent_content_signals": [
+      "Wants explicit time estimates attached to each option, not vague 'quick and easy' language",
+      "Responds to a removes-the-fear opening (tutorial-intent pattern) — reassurance that this is achievable tonight",
+      "Prefers options sorted by time available rather than by aesthetic category",
+      "Wants both press-on and polish paths covered since readers are split on which they have on hand",
+      "Step-by-step format outperforms pure inspiration format for this specific keyword and intent"
+    ]
+  },
+
+  "section_6_semantic_keyword_data": {
+    "blog_gen_instruction": "Primary keyword in strong tags every mention. AEO terms trigger direct answer paragraphs. User language woven naturally. No term from keywords_to_avoid used as focus term.",
+    "primary_keyword": "last minute new years eve nails",
+    "keyword_variations": [
+      "last minute NYE nails",
+      "last minute new years nails",
+      "quick new years eve nails",
+      "last minute nail ideas for new years eve",
+      "fast new years eve manicure",
+      "new years eve nails in a hurry"
+    ],
+    "cluster_keywords": [
+      "10 minute manicure",
+      "quick dry nail polish",
+      "press-on nails for NYE",
+      "easy party nails",
+      "quick nail designs",
+      "no time for the salon",
+      "NYE nail ideas at home",
+      "fast manicure tips",
+      "beginner nail art NYE",
+      "party ready nails fast"
+    ],
+    "lsi_terms": [
+      "liminal holiday space",
+      "sticky tabs",
+      "adhesive prep",
+      "buff and wipe",
+      "one-coat polish",
+      "glitter accent nail",
+      "quick-dry top coat",
+      "press-on sizing",
+      "cuticle prep",
+      "salon appointment fell through",
+      "no-chip mani",
+      "60-second dry time",
+      "sparkle in seconds",
+      "single-nail statement look",
+      "polish chipped before plans",
+      "5 minute nail trick",
+      "party-ready fast",
+      "at-home NYE manicure"
+    ],
+    "aeo_terms": [
+      "How can I do my nails fast for New Year's Eve?",
+      "What is the quickest way to do New Year's Eve nails at home?",
+      "Are press-on nails faster than polish for last minute NYE nails?",
+      "How long does a quick New Year's Eve manicure take?",
+      "What nail polish dries the fastest for a last minute manicure?",
+      "Can I do NYE nail art in 10 minutes?",
+      "What do I do if my nails aren't ready for a New Year's Eve party?",
+      "How do I make my nails look festive fast?"
+    ],
+    "technical_terms": [
+      "quick-dry top coat",
+      "semi-cured gel strips",
+      "adhesive tabs",
+      "base coat",
+      "buffing",
+      "one-coat formula"
+    ],
+    "user_language": [
+      "no time for a manicure",
+      "ran out of time",
+      "polish chipped right before I left",
+      "didn't book a salon slot in time",
+      "need something quick that still looks like effort",
+      "press-ons or paint, which is faster",
+      "party in an hour and my nails are bare",
+      "quick sparkle for tonight"
+    ]
+  },
+
+  "section_7_voice_and_ai_queries": {
+    "blog_gen_instruction": "Answer every query directly in the relevant H2 section body. If a query cannot be addressed naturally in the body, route it to faqItems. No query left unanswered.",
+    "queries": [
+      "How can I do my nails fast for New Year's Eve?",
+      "What's the quickest way to get NYE-ready nails at home?",
+      "Are press-on nails faster than painting for last minute NYE nails?",
+      "How long does a 'last minute' NYE manicure actually take?",
+      "What nail polish dries the fastest?",
+      "Can I still do nail art if I only have 10 minutes?",
+      "What do I do if I forgot to book a NYE nail appointment?",
+      "How do I make plain nails look festive fast?",
+      "What's the fastest way to add glitter to nails without a mess?",
+      "Do quick-dry top coats actually work?",
+      "How do I stop my nails from smudging right before I leave?",
+      "What's a 5 minute nail idea for New Year's Eve?",
+      "Can I do last minute NYE nails without any nail art skills?",
+      "What tools do I need for a fast at-home NYE manicure?",
+      "How do I choose between press-ons and polish when I'm short on time?"
+    ]
+  },
+
+  "section_8_hook_and_ctr": {
+    "blog_gen_instruction": "READ THIS SECTION BEFORE WRITING THE TITLE, META DESCRIPTION, INTRO, OR FIRST H2. The title and description here are the option the USER SELECTED from 2-3 real, evidence-based choices during phase_6 — use them exactly. The intro hook brief and first H2 hook direction are your creative brief for those specific elements, matching the selected option's angle. Do not deviate.",
+    "real_serp_findings_summary": "Fetched titles split into two disconnected camps: NYE-specific pages (NewBeauty, Glamnetic) skip real technique and go straight to product lists, while technique-deep pages (EyeCandys, Marie Claire, Nghia Nippers) never mention NYE at all. None of the 5 fetched titles front-load a number promise combined with a genuine time-crunch angle for this specific keyword.",
+    "selected_option_rationale": "The number-led, specificity-driven option ('12 Last Minute New Years Eve Nail Ideas That Work') tests the gap directly — it promises a defined quantity plus a credibility qualifier ('That Work') that no fetched competitor title uses, and the meta pairs it with a concrete time promise (under 20 minutes) and a low-barrier claim (tools you likely already own) that directly answers the audience's top pain point about trusting untested techniques under time pressure.",
+    "title": "12 Last Minute New Years Eve Nail Ideas That Work",
+    "title_char_count": 51,
+    "meta_description": "Out of time before the party? These 12 last minute New Years Eve nail ideas use tools you likely already own — sparkle, shine, done in under 20 minutes.",
+    "meta_char_count": 155,
+    "intro_hook_brief": "Open by naming the exact moment: holiday time-blur has eaten the window they meant to use for salon booking or a leisurely mani, and now the party is close. Reassure immediately that 'last minute' does not mean 'bad' — every idea here is tested for real time constraints. Set the number promise (12 ideas) and the credibility qualifier (That Work) up front.",
+    "first_h2_hook_direction": "Apply the reassurance angle subtly to the first H2 by opening it with a fast orientation move — sorting the reader into a time budget (5/10/20 minutes) rather than repeating the title's hook. This should feel like a practical next step, not a second hook."
+  },
+
+  "section_9_search_journey": {
+    "blog_gen_instruction": "This is the emotional contract with the reader. Every section of the post must honour the promise made. Read this before writing any section. If a paragraph breaks the journey arc — rewrite it.",
+    "reader_arrival_state": "Motivated but intimidated and slightly anxious — they want NYE-worthy nails but are convinced they've run out of time to do it properly.",
+    "journey_arc": [
+      "Open by removing the fear — confirm 'last minute' is a solvable problem, not a lost cause",
+      "Sort the reader into a time budget immediately so they know exactly which section applies to them",
+      "Walk through press-on and polish paths with real step-by-step technique, not just inspiration",
+      "Layer in genuine NYE styling direction (color, finish, one statement detail) so results still feel occasion-appropriate",
+      "Close with a clear 'you'll be ready' payoff and a fast final-check moment before they head out the door"
+    ],
+    "promise_to_deliver": "12 real, tested last-minute NYE nail ideas that take under 20 minutes using tools the reader likely already has.",
+    "exit_state": "Confident and unrushed — reader feels like they solved the problem efficiently rather than settling for a rushed compromise."
+  },
+
+  "section_10_content_structure": {
+    "blog_gen_instruction": "This H2 structure is research-driven and must be followed exactly. Do not rename, reorder, or remove H2s without user instruction. Word budget per section is set — follow it. H3s may be added at editorial discretion.",
+    "h1": "12 Last Minute New Years Eve Nail Ideas That Work",
+    "h2_structure": [
+      "How Much Time Do You Actually Have? (Pick Your Path)",
+      "5-Minute Fixes: When the Party Starts Now",
+      "10-Minute Looks: Press-Ons Done Right",
+      "20-Minute Looks: Quick-Dry Polish Techniques",
+      "The Fastest Way to Add NYE Sparkle Without the Mess",
+      "Press-Ons or Polish: Which Is Actually Faster?",
+      "Your Last-Minute NYE Nail Kit (What to Keep On Hand)",
+      "Final Touches Before You Walk Out the Door"
+    ],
+    "word_budget": {
+      "introduction": "230 words",
+      "conclusion": "180 words",
+      "per_h2": [
+        { "heading": "How Much Time Do You Actually Have? (Pick Your Path)", "budget": "180 words" },
+        { "heading": "5-Minute Fixes: When the Party Starts Now", "budget": "300 words" },
+        { "heading": "10-Minute Looks: Press-Ons Done Right", "budget": "320 words" },
+        { "heading": "20-Minute Looks: Quick-Dry Polish Techniques", "budget": "320 words" },
+        { "heading": "The Fastest Way to Add NYE Sparkle Without the Mess", "budget": "220 words" },
+        { "heading": "Press-Ons or Polish: Which Is Actually Faster?", "budget": "180 words" },
+        { "heading": "Your Last-Minute NYE Nail Kit (What to Keep On Hand)", "budget": "170 words" },
+        { "heading": "Final Touches Before You Walk Out the Door", "budget": "180 words" }
+      ]
+    }
+  },
+
+  "section_11_internal_links": {
+    "blog_gen_instruction": "Every link below must appear in the post. Cluster links use anchor texts verbatim — do not rewrite. Cross-site links use the provided descriptive anchor. Place each link where the placement note says — woven naturally into prose, never as a standalone CTA. Total internal links must not exceed 6.",
+    "all_internal_links": [
+      {
+        "url_or_slug": "/blog/new-year-nails/nye-nails-ideas",
+        "title": "New Year's Eve Nails: 40+ Party-Ready Ideas",
+        "anchor_text": "40+ party-ready NYE nail ideas",
+        "placement_note": "Introduction — as the broader inspiration hub for readers who want to browse full NYE styling after solving the time problem",
+        "link_type": "cluster-pillar"
+      },
+      {
+        "url_or_slug": "/blog/new-year-nails/easy-diy-nye-nails",
+        "title": "Easy DIY NYE Nails at Home",
+        "anchor_text": "easy DIY NYE nails you can do at home",
+        "placement_note": "10-Minute Looks: Press-Ons Done Right — natural link for readers who have a bit more time and want the fuller DIY walkthrough",
+        "link_type": "cluster-spoke"
+      },
+      {
+        "url_or_slug": "/blog/new-year-nails/short-nye-nails",
+        "title": "Short NYE Nails",
+        "anchor_text": "short New Year's Eve nails",
+        "placement_note": "The Fastest Way to Add NYE Sparkle Without the Mess — short nails are faster to execute under time pressure, natural crossover mention",
+        "link_type": "cluster-spoke"
+      },
+      {
+        "url_or_slug": "/blog/new-year-nails/minimalist-nye-nails",
+        "title": "Minimalist NYE Nails",
+        "anchor_text": "minimalist New Year's Eve nail looks",
+        "placement_note": "20-Minute Looks: Quick-Dry Polish Techniques — minimalist designs are naturally faster to execute, relevant crossover for time-pressed readers",
+        "link_type": "cluster-spoke"
+      }
+    ]
+  },
+
+  "section_12_voice_tone": {
+    "blog_gen_instruction": "This is the voice for this specific post. Layer on top of Mirellé editorial framework. Do not default to generic AI tone.",
+    "recommended_voice": "Calm, capable friend talking you through it in real time",
+    "tone_characteristics": [
+      "Reassuring without being saccharine — acknowledges the stress but doesn't dwell on it",
+      "Direct and practical — leads with time estimates and concrete steps over mood-setting",
+      "Confident, not apologetic — never frames DIY or press-ons as a lesser option than a salon visit",
+      "Encouraging in a get-it-done way, matching tutorial intent's arrival state of motivated-but-intimidated",
+      "Light urgency without panic — pace matches the reader's actual clock"
+    ],
+    "language_style": "Short, clear sentences. Frequent direct address ('you'). Minimal metaphor — this reader wants instructions, not atmosphere. Time references used concretely (minutes, not 'in a flash').",
+    "audience_match": "This voice matches a reader who is stressed but capable — she doesn't need to be sold on wanting nice nails, she needs to be shown, fast, that it's still achievable tonight."
+  },
+
+  "section_13_external_links": {
+    "blog_gen_instruction": "Include all external links where indicated. Supports E-E-A-T. Use anchor suggestion as guide — write naturally around it. Sourced from phase_3's best_external_sources_found (real fetched competitor pages), not from separate searches. May be empty (0-2 links) if none of the fetched pages qualified as genuinely citation-worthy — that is expected, not a gap to fill.",
+    "links": [
+      {
+        "url": "https://eyecandys.com/blogs/news/10-minute-manicure-press-on-nails",
+        "context": "When explaining real press-on prep and sizing technique in the 10-Minute Looks section",
+        "anchor_suggestion": "press-on prep technique that actually holds up"
+      }
+    ]
+  },
+
+  "section_14_execution_plan": {
+    "purpose": "Blog Gen Agent reads this section FIRST — before frontmatter, before writing a single word. Every value here is pre-calculated from the input file data. Blog Gen Agent locks all values and executes them exactly. This section exists to eliminate rewrite loops — every constraint is pre-decided here so there are zero surprises mid-write.",
+    "blog_gen_instruction": "READ THIS SECTION FIRST. Lock every value. Execute exactly. Do not recalculate, do not adjust, do not deviate.",
+    "calculated_by": "Input Gen Agent — calculated last, after all other sections are complete",
+
+    "block_1_keyword_execution": {
+      "primary_keyword": "last minute new years eve nails",
+      "top_5_density_baseline": 1,
+      "total_mention_target": "1 + 2 to 3 = 4 total mentions",
+      "first_100_words_plan": {
+        "rule": "Primary keyword MUST appear TWICE in the first 100 words. Mandatory. No exceptions.",
+        "mention_1": "sentence 1-2 of introduction — naming the exact reader problem (holiday time-blur eating the window for last minute new years eve nails)",
+        "mention_2": "sentence 4-5 of introduction — reinforcing the promise of the post as the solution for last minute new years eve nails"
+      },
+      "first_half_target": "3 mentions — first 1050 words. Run denser in first half.",
+      "second_half_target": "1 mention — second 1050 words",
+      "strong_tag_rule": "EVERY single mention of the primary keyword — all 4 of them — wrapped in <strong> tags. No exceptions. Catch each one as it is written. Scan after every paragraph.",
+      "keywords_to_avoid_active": "Full list from section_3 — never used as focus terms anywhere in the post"
+    },
+
+    "block_2_word_budget": {
+      "total_target": "2100 words — +/-50 words tolerance, never exceed",
+      "introduction": "230 words",
+      "conclusion": "180 words",
+      "h2_budgets": [
+        { "heading": "How Much Time Do You Actually Have? (Pick Your Path)", "budget": "180 words", "complexity": "low" },
+        { "heading": "5-Minute Fixes: When the Party Starts Now", "budget": "300 words", "complexity": "medium" },
+        { "heading": "10-Minute Looks: Press-Ons Done Right", "budget": "320 words", "complexity": "high" },
+        { "heading": "20-Minute Looks: Quick-Dry Polish Techniques", "budget": "320 words", "complexity": "high" },
+        { "heading": "The Fastest Way to Add NYE Sparkle Without the Mess", "budget": "220 words", "complexity": "medium" },
+        { "heading": "Press-Ons or Polish: Which Is Actually Faster?", "budget": "180 words", "complexity": "low" },
+        { "heading": "Your Last-Minute NYE Nail Kit (What to Keep On Hand)", "budget": "170 words", "complexity": "low" },
+        { "heading": "Final Touches Before You Walk Out the Door", "budget": "180 words", "complexity": "low" }
+      ],
+      "tracking_rule": "Track running word total at the end of every H2 section. If a section is running over budget — cut before moving to the next section. Do not compensate later."
+    },
+
+    "block_3_image_plan": {
+      "total_images": 4,
+      "hero_image": "frontmatter only — NEVER appears in post body",
+      "body_images": 3,
+      "assignments": [
+        {
+          "image_number": 1,
+          "place_after": "5-Minute Fixes: When the Party Starts Now",
+          "image_type": "standard_inspiration",
+          "section_context": "A real styled nail look achievable in 5 minutes — single glitter accent nail or quick metallic tip, festive but clearly simple/fast to execute"
+        },
+        {
+          "image_number": 2,
+          "place_after": "10-Minute Looks: Press-Ons Done Right",
+          "image_type": "standard_inspiration",
+          "section_context": "Styled press-on NYE look — sparkling or metallic finish, shown as a finished manicure, not an application/process shot"
+        },
+        {
+          "image_number": 3,
+          "place_after": "20-Minute Looks: Quick-Dry Polish Techniques",
+          "image_type": "standard_inspiration",
+          "section_context": "Styled polish-based NYE look with a bit more detail than the 5-minute option (e.g. glitter gradient or accent nail), finished manicure only"
+        }
+      ],
+      "image_type_rule": {
+        "default": "standard_inspiration — an actual nail look, styled and shot, related to the topic. This is the default for the large majority of image slots in nearly every post.",
+        "infographic_allowed_when": "Not applicable here — this tutorial post's structure (time-budget sorting) is text-navigable via H2 headings; no slot requires a comparison or step-sequence infographic given only 3 body image slots available.",
+        "how_many_infographics": 0,
+        "banned_absolutely": "NEVER a tool/equipment image (hands holding a file, tools laid out, application/process shots showing hands or tools at work) in any slot. NEVER a photo-style side-by-side nail-to-nail comparison image.",
+        "note_for_blog_gen": "Blog Gen Agent follows the image_type flagged here exactly per slot — it does not decide standard vs infographic on its own mid-write."
+      },
+      "path_rule": "/images/blog/new-year-nails/last-minute-nye-nails/filename.webp — topic_slug in path, slug folder, leading slash"
+    },
+
+    "block_4_opening_technique_assignments": {
+      "rule": "No two consecutive sections use the same technique. Conclusion = Technique 1 or 3 only.",
+      "assignments": [
+        { "section": "Introduction", "technique": "Technique 3 — The Reframe (last minute doesn't mean bad, it means a different plan)" },
+        { "section": "How Much Time Do You Actually Have? (Pick Your Path)", "technique": "Technique 4 — The Direct Address" },
+        { "section": "5-Minute Fixes: When the Party Starts Now", "technique": "Technique 2 — The Scene Set" },
+        { "section": "10-Minute Looks: Press-Ons Done Right", "technique": "Technique 1 — The Claim" },
+        { "section": "20-Minute Looks: Quick-Dry Polish Techniques", "technique": "Technique 4 — The Direct Address" },
+        { "section": "The Fastest Way to Add NYE Sparkle Without the Mess", "technique": "Technique 2 — The Scene Set" },
+        { "section": "Press-Ons or Polish: Which Is Actually Faster?", "technique": "Technique 1 — The Claim" },
+        { "section": "Your Last-Minute NYE Nail Kit (What to Keep On Hand)", "technique": "Technique 4 — The Direct Address" },
+        { "section": "Final Touches Before You Walk Out the Door", "technique": "Technique 2 — The Scene Set" },
+        { "section": "Conclusion", "technique": "Technique 3 — The Reframe" }
+      ],
+      "banned_opener_rule": "Check every opener against banned_opening_approaches in blog gen prompt before writing the second sentence"
+    },
+
+    "block_5_link_placements": {
+      "rule": "Every link placed exactly where specified. Anchor texts used verbatim — never rewritten. Links woven into prose naturally — never standalone CTAs.",
+      "links": [
+        {
+          "anchor_text": "40+ party-ready NYE nail ideas",
+          "full_url": "/blog/new-year-nails/nye-nails-ideas",
+          "place_in_section": "Introduction",
+          "placement_context": "Mentioned as the fuller browsing option after the reader solves tonight's immediate time problem",
+          "link_type": "cluster-pillar"
+        },
+        {
+          "anchor_text": "easy DIY NYE nails you can do at home",
+          "full_url": "/blog/new-year-nails/easy-diy-nye-nails",
+          "place_in_section": "10-Minute Looks: Press-Ons Done Right",
+          "placement_context": "Offered to readers who have a little more time than 10 minutes and want the fuller DIY walkthrough",
+          "link_type": "cluster-spoke"
+        },
+        {
+          "anchor_text": "short New Year's Eve nails",
+          "full_url": "/blog/new-year-nails/short-nye-nails",
+          "place_in_section": "The Fastest Way to Add NYE Sparkle Without the Mess",
+          "placement_context": "Noted that shorter nails are faster to execute cleanly under time pressure",
+          "link_type": "cluster-spoke"
+        },
+        {
+          "anchor_text": "minimalist New Year's Eve nail looks",
+          "full_url": "/blog/new-year-nails/minimalist-nye-nails",
+          "place_in_section": "20-Minute Looks: Quick-Dry Polish Techniques",
+          "placement_context": "Mentioned as a naturally faster style direction for readers who want elegant over elaborate",
+          "link_type": "cluster-spoke"
+        },
+        {
+          "anchor_text": "press-on prep technique that actually holds up",
+          "full_url": "https://eyecandys.com/blogs/news/10-minute-manicure-press-on-nails",
+          "place_in_section": "10-Minute Looks: Press-Ons Done Right",
+          "placement_context": "Cited when explaining proper press-on sizing/adhesive prep so the look lasts through the party",
+          "link_type": "external"
+        }
+      ]
+    },
+
+    "block_6_aeo_geo_plan": {
+      "aeo_assignments": [
+        {
+          "aeo_term": "How can I do my nails fast for New Year's Eve?",
+          "assigned_to_section": "How Much Time Do You Actually Have? (Pick Your Path)",
+          "execution": "Write a direct 2-3 sentence answer paragraph IMMEDIATELY after the H2 heading — before any elaboration. This is what gets picked up by AI answer engines."
+        },
+        {
+          "aeo_term": "Are press-on nails faster than polish for last minute NYE nails?",
+          "assigned_to_section": "Press-Ons or Polish: Which Is Actually Faster?",
+          "execution": "Write a direct 2-3 sentence answer paragraph immediately after the H2 heading, giving a clear resolution rather than 'it depends'"
+        },
+        {
+          "aeo_term": "What nail polish dries the fastest for a last minute manicure?",
+          "assigned_to_section": "20-Minute Looks: Quick-Dry Polish Techniques",
+          "execution": "Write a direct 2-3 sentence answer paragraph naming quick-dry top coat formulas and realistic dry times immediately after the H2 heading"
+        },
+        {
+          "aeo_term": "Can I do NYE nail art in 10 minutes?",
+          "assigned_to_section": "10-Minute Looks: Press-Ons Done Right",
+          "execution": "Write a direct 2-3 sentence answer paragraph confirming yes with press-ons specifically, immediately after the H2 heading"
+        }
+      ],
+      "geo_entity_statements": [
+        {
+          "entity": "quick-dry top coat",
+          "assigned_to_section": "20-Minute Looks: Quick-Dry Polish Techniques",
+          "execution": "Write a clear declarative definition sentence — confident, no hedging. Extractable by AI as a citation."
+        },
+        {
+          "entity": "press-on nail sizing",
+          "assigned_to_section": "10-Minute Looks: Press-Ons Done Right",
+          "execution": "Write a clear declarative definition sentence explaining what proper sizing means and why it matters for hold time."
+        }
+      ]
+    },
+
+    "block_7_active_constraints": {
+      "em_dash_banned": "Long em dash does not appear anywhere. If one forms while writing — stop, replace with: comma / new sentence / parentheses / but / restructure.",
+      "banned_vocab_watch": ["elevate", "effortless", "must-have", "game-changer", "unleash", "seamless", "elegant", "stunning"],
+      "american_english_active": "color, recognize, -ize, -or — every instance, no exceptions. This post uses American English, not British.",
+      "keyword_density_reminder": "After every 2 H2 sections — count current keyword mentions. Verify running total is on track to hit the hardcoded mention target (4 total). First half must run denser than second half. Adjust if needed.",
+      "image_path_reminder": "/images/blog/new-year-nails/last-minute-nye-nails/filename.webp — topic_slug in path always",
+      "internal_link_url_reminder": "Full correct paths only. Cluster links = /blog/new-year-nails/[slug]. Cross-site links = exact URL as discovered. Never bare /slug.",
+      "hero_image_reminder": "Hero = frontmatter only. Never place hero image in body.",
+      "strong_tag_reminder": "Every primary keyword mention = <strong> tags. Scan after every paragraph."
+    }
+  }
+}
