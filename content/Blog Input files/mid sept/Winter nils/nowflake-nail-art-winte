@@ -1,0 +1,534 @@
+{
+  "section_1_file_authority": {
+    "statement": "THIS FILE IS THE SINGLE SOURCE OF TRUTH FOR THE BLOG GEN AGENT. All values in POST_CONSTANTS are hardcoded — Blog Gen Agent does not ask, adjust, or override them. All keywords, H2 structure, audience intelligence, internal links, and tone defined here must be followed exactly."
+  },
+
+  "section_2_post_constants": {
+    "slug": "snowflake-nail-art-winter",
+    "topic_slug": "winter-nails",
+    "canonical": "https://mirelleinspo.com/blog/winter-nails/snowflake-nail-art-winter",
+    "post_type": "spoke",
+    "intent": "tutorial",
+    "word_count": 2350,
+    "image_count": 4,
+    "show_inspo_gallery_link": false,
+    "template": "split-left",
+    "hero_dimensions": "800x800",
+    "category": "Nail Art",
+    "publish_date": "2026-08-16",
+    "author": "jyoti-mirelle"
+  },
+
+  "section_3_cluster_snapshot": {
+    "pillar_slug": "winter-nail-colors-2026",
+    "pillar_title": "Winter Nail Colors 2026: The Complete Guide",
+    "pillar_primary_keyword": "winter nail colors",
+    "this_post_slug": "snowflake-nail-art-winter",
+    "this_post_role": "spoke",
+    "show_inspo_gallery_link_cluster_default": false,
+    "keywords_to_avoid": [
+      "winter nail colors", "winter nail ideas", "winter nail trends 2026", "short winter nails",
+      "almond winter nails", "winter nails for dark skin", "old money winter nails",
+      "dark academia nails winter", "why do nails crack in winter", "easy winter nail art at home",
+      "navy blue winter nails", "chocolate brown winter nails", "matte winter nails",
+      "winter wedding nails", "coffin nails winter", "winter chrome nails"
+    ]
+  },
+
+  "section_4_serp_analysis": {
+    "blog_gen_instruction": "our_strategic_approach is a specific, evidence-based outperform strategy, not a vague gap-fill statement. Use it as the concrete angle for the introduction and conclusion, and to guide depth/coverage decisions in relevant H2 sections.",
+    "competitor_gaps": [
+      "No single fetched competitor organizes techniques by skill/tool level (freehand vs. dotting tool vs. stamping vs. stencil) as a clear decision path — confirmed across StyleCraze, Maniology, DTK (all idea-first, technique-second) vs. Nail Designs Journal and Creative Nails (technique-first but no skill-level framing). Demand confirmed on 2+ sources: YouTube ('beginner friendly', 'zero artistic skill') and Pinterest ('how to' + 'easy' autocomplete-style results).",
+      "No competitor explicitly reassures the reader that snowflakes are the easiest winter nail art to freehand, despite looking intricate — this exact anxiety ('I don't have a steady hand') appears across YouTube titles ('zero artistic skill required') and All Things Beautiful XO's freehand tutorial. Demand confirmed on 2+ sources.",
+      "No competitor pairs technique with nail length/shape considerations (short nails vs. long nails need different snowflake scale) in the same piece — Maniology mentions short nails once in passing (idea #9) but doesn't tie it to technique choice. Woman & Home separately confirms shorter nails need adjusted snowflake sizing. Demand confirmed on 2+ sources (Maniology + Woman & Home)."
+    ],
+    "missing_semantic_territory": [
+      "'freehand snowflake nails' as an explicit standalone angle — found in demand (YouTube, All Things Beautiful XO) but not structured as a core technique option in any of the 5 fetched pages",
+      "'symmetrical snowflake' / 'even snowflake' pain point — repeatedly surfaces in comments and tutorial copy (sonailicious explicitly tells readers 'don't fight it' if symmetry is hard) but no competitor addresses it as a named problem with a fix",
+      "'snowflake nails not just for Christmas' framing — explicitly confirmed by InStyle per cluster research notes as wearable through February, but StyleCraze, Maniology, DTK, and NDJ all lean heavily Christmas-coded in their copy and captions"
+    ],
+    "our_strategic_approach": "Structure the post as a genuine skill-level decision path (dotting tool → toothpick/no-tools → freehand → stamping/stencil) rather than a flat idea list, since every fetched competitor defaults to idea-dump format even when nominally a 'tutorial.' Explicitly validate the reader's fear that snowflakes look too intricate to freehand, directly countering the intimidation signal seen across YouTube search demand, then prove it wrong with a genuinely simple 5-line method (3 intersecting lines + 2 branch lines, confirmed as the core technique across sonailicious, Creative Nails, and Nail Designs Journal). Explicitly position snowflakes as a winter-long design that outlasts the Christmas season, which no competitor states clearly despite being a confirmed differentiator. Include a short-nails-specific sizing note, since Maniology and Woman & Home both signal real reader concern here but neither resolves it clearly.",
+    "top_5_fetched_pages_summary": [
+      {
+        "url": "https://www.stylecraze.com/articles/snowflake-nail-art/",
+        "word_count": 2450,
+        "h2_count": 1,
+        "keyword_mentions": 6,
+        "note": "Strong E-E-A-T (licensed nail tech reviewer, fact-checker), but pure idea-gallery format with zero technique instruction — 35 numbered looks, no how-to steps at all."
+      },
+      {
+        "url": "https://maniology.com/blogs/maniology-blog/snowflake-nails",
+        "word_count": 950,
+        "h2_count": 10,
+        "keyword_mentions": 4,
+        "note": "Idea-format with H2 per design (10 total), commerce-driven (pushes stamping plates), thin on actual technique detail."
+      },
+      {
+        "url": "https://naildesignsjournal.com/snowflake-nails-designs-tutorial/",
+        "word_count": 1850,
+        "h2_count": 19,
+        "keyword_mentions": 3,
+        "note": "Strongest true tutorial competitor — 19 distinct techniques with real numbered steps, but zero framing for skill level or which technique to pick first, so it reads as an unstructured wall of steps."
+      },
+      {
+        "url": "https://dtknailsupply.com/blogs/articles/best-pretty-snowflake-nail-design-ideas",
+        "word_count": 900,
+        "h2_count": 12,
+        "keyword_mentions": 5,
+        "note": "Idea-only format (12 designs), light on technique, heavy product linking; weak standalone editorial value."
+      },
+      {
+        "url": "https://creativenails.uk/snowflake-nail-art-tutorial.html",
+        "word_count": 550,
+        "h2_count": 5,
+        "keyword_mentions": 3,
+        "note": "Genuine 5-step tutorial with real technique and product callouts, but covers only one single design — no variety or skill-level options."
+      }
+    ],
+    "top_5_word_count_average": 1340,
+    "top_5_keyword_density_average": 4.2,
+    "best_external_sources_found": [
+      {
+        "url": "https://www.stylecraze.com/articles/snowflake-nail-art/",
+        "why": "Reviewed by a licensed nail technician/esthetician with 30+ years experience and fact-checked editorially — genuine E-E-A-T, citation-worthy for a technique or safety claim."
+      }
+    ]
+  },
+
+  "section_5_audience_intelligence": {
+    "blog_gen_instruction": "This is your primary creative brief. Every paragraph written for this specific person with this specific intent. Satisfy them completely.",
+    "who_they_are": "A winter nail-art enthusiast, mostly DIY/at-home, ranging from true beginner to intermediate skill — searching specifically for snowflake nail art because it feels like the signature winter design, but many arrive intimidated, assuming the intricate lace-like patterns require professional skill or expensive tools they don't own.",
+    "what_they_want_from_this_post": "A clear technique they can actually follow with tools they likely already have (a toothpick, a striping/detail brush, a dotting tool), broken down step by step, with reassurance that imperfect or asymmetrical snowflakes still look good.",
+    "what_frustrates_them": "Competitor content that shows 35 beautiful finished photos but never explains how to actually paint one; tutorials that assume a skill level (steady hand, expensive nail art brush set) the reader doesn't have; content so Christmas-coded it makes them feel the design has an expiration date in late December.",
+    "top_5_pain_points": [
+      "Fear that snowflakes are too intricate/symmetrical to freehand without a steady, trained hand",
+      "Not owning specialty nail art tools (dotting tools, striping brushes) and not knowing if a toothpick or bobby pin actually works",
+      "Uncertainty about which technique to start with when tutorials show 10-19 different methods with no beginner starting point",
+      "Wanting the design to last beyond the Christmas week without it reading as 'leftover holiday nails'",
+      "Uncertainty about scaling the design down for short nails without it looking cramped or messy"
+    ],
+    "exact_user_phrases": [
+      "easy snowflake nail art",
+      "beginner friendly nail art",
+      "zero artistic skill required",
+      "how to make snowflake nail art",
+      "how to do a snowflake on nails easy",
+      "super easy way to draw a snowflake",
+      "requires zero artistic skill",
+      "no nail art tools needed",
+      "don't fight it if symmetry is hard",
+      "quickest winter nail design you can do",
+      "deceptively easy",
+      "takes about 20 minutes to do on both hands"
+    ],
+    "intent_content_signals": [
+      "Numbered, sequential step format is strongly preferred over prose paragraphs",
+      "Readers respond to explicit tool call-outs (dotting tool vs. toothpick vs. striping brush) so they know what they need before starting",
+      "Reassurance language ('deceptively easy', 'zero skill required') performs well and should be echoed honestly, not oversold",
+      "A visual reference point per step (or clear verbal description of hand position/line direction) is expected given the technical nature",
+      "Readers want a beginner-safe starting technique named explicitly, not buried in a list of 10+ equal options"
+    ]
+  },
+
+  "section_6_semantic_keyword_data": {
+    "blog_gen_instruction": "Primary keyword in strong tags every mention. AEO terms trigger direct answer paragraphs. User language woven naturally. No term from keywords_to_avoid used as focus term.",
+    "primary_keyword": "snowflake nail art",
+    "keyword_variations": [
+      "snowflake nails",
+      "snowflake nail design",
+      "snowflake manicure",
+      "snowflake nail art tutorial",
+      "how to do snowflake nails",
+      "easy snowflake nail art",
+      "snowflake nail art designs",
+      "freehand snowflake nails"
+    ],
+    "cluster_keywords": [
+      "winter nail art",
+      "winter manicure ideas",
+      "dotting tool nail art",
+      "nail art for beginners",
+      "DIY nail art at home",
+      "winter nail design tutorial",
+      "hand-painted nail art",
+      "nail art brush technique",
+      "gel nail art winter",
+      "silver and white nail art",
+      "icy nail design",
+      "frosty nail art"
+    ],
+    "lsi_terms": [
+      "dotting tool",
+      "striping brush",
+      "detailer brush",
+      "toothpick nail art",
+      "base coat top coat",
+      "negative space nail design",
+      "stamping plate",
+      "nail stencil",
+      "gel polish cure",
+      "accent nail",
+      "French tip snowflake",
+      "holographic snowflake",
+      "geometric snowflake nails",
+      "nail art for short nails",
+      "symmetrical nail design",
+      "winter wonderland manicure",
+      "icy metallic nail finish",
+      "hand-drawn manicure"
+    ],
+    "aeo_terms": [
+      "how do you paint a snowflake on your nails",
+      "what tools do I need for snowflake nail art",
+      "can you do snowflake nails without a dotting tool",
+      "how do you make a symmetrical snowflake on nails",
+      "what is the easiest way to draw a snowflake nail design",
+      "how long does snowflake nail art take",
+      "can you do snowflake nail art on short nails",
+      "is snowflake nail art hard to do",
+      "what colors work best for snowflake nails",
+      "how do you do snowflake nails without stencils"
+    ],
+    "technical_terms": [
+      "base coat",
+      "top coat",
+      "gel polish",
+      "dotting tool",
+      "striping brush",
+      "negative space technique",
+      "nail stamping plate"
+    ],
+    "user_language": [
+      "deceptively easy",
+      "zero artistic skill required",
+      "don't fight it if symmetry is hard",
+      "beginner friendly",
+      "no nail art tools needed",
+      "quickest winter nail design",
+      "takes about 20 minutes",
+      "steady hand",
+      "elegant even without being perfect"
+    ]
+  },
+
+  "section_7_voice_and_ai_queries": {
+    "blog_gen_instruction": "Answer every query directly in the relevant H2 section body. If a query cannot be addressed naturally in the body, route it to faqItems. No query left unanswered.",
+    "queries": [
+      "How do you paint a snowflake on your nails?",
+      "What tools do I need for snowflake nail art?",
+      "Can you do snowflake nail art without a dotting tool?",
+      "How do you make a snowflake look symmetrical on your nails?",
+      "What is the easiest snowflake nail art design for beginners?",
+      "How long does snowflake nail art take to do?",
+      "Can you do snowflake nails on short nails?",
+      "Is snowflake nail art hard to do at home?",
+      "What colors go best with snowflake nail art?",
+      "How do you draw a snowflake freehand on nails?",
+      "Can you use a toothpick instead of a dotting tool for nail art?",
+      "How do you stop nail art from smudging while you work?",
+      "Do snowflake nails only work for Christmas?",
+      "What is the difference between stamped and hand-painted snowflake nails?",
+      "How do you make snowflake nails last longer?",
+      "Can beginners do snowflake nail art without practice?"
+    ]
+  },
+
+  "section_8_hook_and_ctr": {
+    "blog_gen_instruction": "READ THIS SECTION BEFORE WRITING THE TITLE, META DESCRIPTION, INTRO, OR FIRST H2. The title and description here are the option the USER SELECTED from 2-3 real, evidence-based choices during phase_6 — use them exactly. The intro hook brief and first H2 hook direction are your creative brief for those specific elements, matching the selected option's angle. Do not deviate.",
+    "real_serp_findings_summary": "Fetched competitor titles split into two camps: idea-gallery numbers-led titles (StyleCraze '35 Easy Winter Manicure Ideas', DTK '12 Best Pretty Snowflake Nail Design Ideas') and plain how-to titles with no differentiation (Creative Nails, Nail Designs Journal). None frame the post around skill-level accessibility or explicitly promise a followable tutorial path for any experience level — the gap is a title that leads with 'tutorial' credibility while still signaling ease.",
+    "selected_option_rationale": "Leads with the primary keyword immediately, uses 'Easy Tutorials' to directly answer the dominant demand signal (beginner-friendly, zero-skill-required framing confirmed across YouTube and Pinterest), and 'Anyone Can Follow' promises accessibility without relying on a number-led format every competitor already uses.",
+    "title": "Snowflake Nail Art: Easy Tutorials Anyone Can Follow",
+    "title_char_count": 54,
+    "meta_description": "Nervous about freehanding snowflakes? These easy, step-by-step snowflake nail art tutorials work for total beginners — no fancy tools or steady hands required.",
+    "meta_char_count": 163,
+    "intro_hook_brief": "Open by naming the exact intimidation the reader feels (snowflakes look too intricate and symmetrical to freehand), then immediately undercut it with the reassurance that this is actually one of the simplest winter nail art styles to learn — setting up the tutorial-path structure that follows.",
+    "first_h2_hook_direction": "The first H2 should introduce the tool/technique decision (what you actually need before you start) as the natural next step after the reassurance in the intro — not repeating the hook, but applying it practically: 'here's what's in your reach right now.'"
+  },
+
+  "section_9_search_journey": {
+    "blog_gen_instruction": "This is the emotional contract with the reader. Every section of the post must honour the promise made. Read this before writing any section. If a paragraph breaks the journey arc — rewrite it.",
+    "reader_arrival_state": "Motivated to try snowflake nail art but intimidated, worried it requires professional skill or tools they don't own.",
+    "journey_arc": [
+      "Open by naming and dissolving the intimidation directly — snowflakes look harder than they are",
+      "Establish what tools are actually needed (most already owned), removing the barrier-to-entry excuse",
+      "Walk through the easiest technique first (3-line/5-line freehand method) with full confidence-building detail",
+      "Layer in 2-3 more technique options (dotting tool, stamping, negative space) so the reader can level up once comfortable",
+      "Address the short-nails sizing question and the 'not just for Christmas' reframe as practical, real reassurance",
+      "Close with the payoff: a finished look that reads as intentional and polished, not amateur, even on a first attempt"
+    ],
+    "promise_to_deliver": "That snowflake nail art is genuinely achievable at home with no special skill or tools, through clear step-by-step tutorials rather than just inspiration photos.",
+    "exit_state": "Confident and ready to actually attempt the design tonight, not just inspired to look at more photos."
+  },
+
+  "section_10_content_structure": {
+    "blog_gen_instruction": "This H2 structure is research-driven and must be followed exactly. Do not rename, reorder, or remove H2s without user instruction. Word budget per section is set — follow it. H3s may be added at editorial discretion.",
+    "fields": {
+      "h1": "Snowflake Nail Art: Easy Tutorials Anyone Can Follow",
+      "h2_structure": [
+        "What You Need for Snowflake Nail Art (Probably Already in Your Kit)",
+        "The Easiest Snowflake Nail Art Technique for Beginners",
+        "How to Freehand a Snowflake Without a Steady Hand",
+        "Dotting Tool Snowflake Nail Art: A Simple Alternative",
+        "Snowflake Nail Art for Short Nails",
+        "More Ways to Wear Snowflake Nail Art (Stamping, Stencils & Negative Space)",
+        "Snowflake Nails Aren't Just for Christmas"
+      ],
+      "word_budget": {
+        "introduction": "220",
+        "conclusion": "170",
+        "per_h2": [
+          { "heading": "What You Need for Snowflake Nail Art (Probably Already in Your Kit)", "words": 280 },
+          { "heading": "The Easiest Snowflake Nail Art Technique for Beginners", "words": 420 },
+          { "heading": "How to Freehand a Snowflake Without a Steady Hand", "words": 320 },
+          { "heading": "Dotting Tool Snowflake Nail Art: A Simple Alternative", "words": 300 },
+          { "heading": "Snowflake Nail Art for Short Nails", "words": 260 },
+          { "heading": "More Ways to Wear Snowflake Nail Art (Stamping, Stencils & Negative Space)", "words": 260 },
+          { "heading": "Snowflake Nails Aren't Just for Christmas", "words": 220 }
+        ]
+      }
+    }
+  },
+
+  "section_11_internal_links": {
+    "blog_gen_instruction": "Every link below must appear in the post. Cluster links use anchor texts verbatim — do not rewrite. Cross-site links use the provided descriptive anchor. Place each link where the placement note says — woven naturally into prose, never as a standalone CTA. Total internal links must not exceed 6.",
+    "all_internal_links": [
+      {
+        "url_or_slug": "/blog/winter-nails/winter-nail-colors-2026",
+        "title": "Winter Nail Colors 2026: The Complete Guide",
+        "anchor_text": "winter nail colors 2026",
+        "placement_note": "Introduction — natural mention when framing snowflakes as one design choice within the broader winter color palette conversation",
+        "link_type": "cluster-pillar"
+      },
+      {
+        "url_or_slug": "/blog/winter-nails/easy-winter-nail-art-diy",
+        "title": "Easy Winter Nail Art You Can Do at Home",
+        "anchor_text": "easy winter nail art you can do at home",
+        "placement_note": "What You Need for Snowflake Nail Art — link when mentioning other beginner-friendly winter designs beyond snowflakes",
+        "link_type": "cluster-spoke"
+      },
+      {
+        "url_or_slug": "/blog/winter-nails/winter-nail-ideas-designs",
+        "title": "36 Winter Nail Ideas & Designs",
+        "anchor_text": "more winter nail ideas and designs",
+        "placement_note": "Conclusion — link when directing readers who want broader winter inspiration beyond the snowflake motif",
+        "link_type": "cluster-spoke"
+      },
+      {
+        "url_or_slug": "/blog/winter-nails/winter-chrome-nails",
+        "title": "Winter Chrome Nails: Icy Metallic Ideas",
+        "anchor_text": "winter chrome nail ideas",
+        "placement_note": "More Ways to Wear Snowflake Nail Art — natural mention when discussing holographic/metallic snowflake finishes as a variation",
+        "link_type": "cluster-spoke"
+      }
+    ]
+  },
+
+  "section_12_voice_tone": {
+    "blog_gen_instruction": "This is the voice for this specific post. Layer on top of Mirellé editorial framework. Do not default to generic AI tone.",
+    "recommended_voice": "Encouraging, hands-on instructor — a patient friend walking you through it, not a gallery curator",
+    "tone_characteristics": [
+      "Directly reassuring without being saccharine — acknowledges the fear, then dismantles it with specifics, not just cheerleading",
+      "Concrete and instructional — favors precise, actionable phrasing ('paint three lines that cross at the center') over vague description",
+      "Warm but not childish — avoids over-exclamation and forced enthusiasm despite the topic's cozy season",
+      "Confidence-building through permission to be imperfect — echoes the real 'don't fight it' sentiment found in audience research",
+      "Practical realism about tools and time, not aspirational fantasy"
+    ],
+    "language_style": "Second person throughout, short instructional sentences during technique steps, slightly longer conversational sentences in framing paragraphs. Minimal jargon; any technical term (e.g. negative space, dotting tool) is defined in-line on first use.",
+    "audience_match": "This voice matches a reader who wants to be walked through something new without feeling condescended to or overwhelmed — the instructor tone builds the exact confidence this specific audience is missing when they arrive intimidated by the perceived intricacy of snowflake designs."
+  },
+
+  "section_13_external_links": {
+    "blog_gen_instruction": "Include all external links where indicated. Supports E-E-A-T. Use anchor suggestion as guide — write naturally around it. Sourced from phase_3's best_external_sources_found (real fetched competitor pages), not from separate searches. May be empty (0-2 links) if none of the fetched pages qualified as genuinely citation-worthy — that is expected, not a gap to fill.",
+    "links": [
+      {
+        "url": "https://www.stylecraze.com/articles/snowflake-nail-art/",
+        "context": "Use when citing a professional tip about polish application technique or nail art longevity — the piece is reviewed by a licensed nail technician",
+        "anchor_suggestion": "tips from a licensed nail technician"
+      }
+    ]
+  },
+
+  "section_14_execution_plan": {
+    "purpose": "Blog Gen Agent reads this section FIRST — before frontmatter, before writing a single word. Every value here is pre-calculated from the input file data. Blog Gen Agent locks all values and executes them exactly. This section exists to eliminate rewrite loops — every constraint is pre-decided here so there are zero surprises mid-write.",
+    "blog_gen_instruction": "READ THIS SECTION FIRST. Lock every value. Execute exactly. Do not recalculate, do not adjust, do not deviate.",
+    "calculated_by": "Input Gen Agent — calculated last, after all other sections are complete",
+
+    "block_1_keyword_execution": {
+      "primary_keyword": "snowflake nail art",
+      "top_5_density_baseline": 4.2,
+      "total_mention_target": "7 total (baseline 4.2 rounded to 4, + 3 additional mentions)",
+      "first_100_words_plan": {
+        "rule": "Primary keyword MUST appear TWICE in the first 100 words. Mandatory. No exceptions.",
+        "mention_1": "sentence 1 of introduction — naming the topic directly as the intimidation is introduced",
+        "mention_2": "sentence 3-4 of introduction — reinforced when the reassurance/promise is made"
+      },
+      "first_half_target": "4 mentions — first ~1175 words. Run denser in first half (intro + first two H2s carry the technique payoff).",
+      "second_half_target": "3 mentions — second ~1175 words",
+      "strong_tag_rule": "EVERY single mention of the primary keyword — all 7 of them — wrapped in <strong> tags. No exceptions. Catch each one as it is written. Scan after every paragraph.",
+      "keywords_to_avoid_active": [
+        "winter nail colors", "winter nail ideas", "winter nail trends 2026", "short winter nails",
+        "almond winter nails", "winter nails for dark skin", "old money winter nails",
+        "dark academia nails winter", "why do nails crack in winter", "easy winter nail art at home",
+        "navy blue winter nails", "chocolate brown winter nails", "matte winter nails",
+        "winter wedding nails", "coffin nails winter", "winter chrome nails"
+      ]
+    },
+
+    "block_2_word_budget": {
+      "total_target": "2350 words — +/-50 words tolerance, never exceed",
+      "introduction": "220 words",
+      "conclusion": "170 words",
+      "h2_budgets": [
+        { "heading": "What You Need for Snowflake Nail Art (Probably Already in Your Kit)", "budget": 280, "complexity": "low" },
+        { "heading": "The Easiest Snowflake Nail Art Technique for Beginners", "budget": 420, "complexity": "high" },
+        { "heading": "How to Freehand a Snowflake Without a Steady Hand", "budget": 320, "complexity": "medium" },
+        { "heading": "Dotting Tool Snowflake Nail Art: A Simple Alternative", "budget": 300, "complexity": "medium" },
+        { "heading": "Snowflake Nail Art for Short Nails", "budget": 260, "complexity": "low" },
+        { "heading": "More Ways to Wear Snowflake Nail Art (Stamping, Stencils & Negative Space)", "budget": 260, "complexity": "medium" },
+        { "heading": "Snowflake Nails Aren't Just for Christmas", "budget": 220, "complexity": "low" }
+      ],
+      "tracking_rule": "Track running word total at the end of every H2 section. If a section is running over budget — cut before moving to the next section. Do not compensate later."
+    },
+
+    "block_3_image_plan": {
+      "total_images": 4,
+      "hero_image": "frontmatter only — NEVER appears in post body",
+      "body_images": 3,
+      "assignments": [
+        {
+          "image_number": 1,
+          "place_after": "The Easiest Snowflake Nail Art Technique for Beginners",
+          "image_type": "standard_inspiration",
+          "section_context": "Close-up finished manicure showing the simple 3-line/5-line freehand snowflake technique on a clean color base — reinforces that the easiest method still looks polished."
+        },
+        {
+          "image_number": 2,
+          "place_after": "Dotting Tool Snowflake Nail Art: A Simple Alternative",
+          "image_type": "standard_inspiration",
+          "section_context": "Styled nail look showing a dotted-style snowflake design, contrasting visually from image 1's hand-painted line style."
+        },
+        {
+          "image_number": 3,
+          "place_after": "More Ways to Wear Snowflake Nail Art (Stamping, Stencils & Negative Space)",
+          "image_type": "standard_inspiration",
+          "section_context": "Styled nail look showing a stamped or negative-space snowflake design for visual variety, ideally on a different base color than images 1 and 2."
+        }
+      ],
+      "image_type_rule": {
+        "default": "standard_inspiration — an actual nail look, styled and shot, related to the topic.",
+        "infographic_allowed_when": "Not used in this post — tutorial intent here is served better by finished-look photography that proves the technique works, not a step-diagram infographic, since the written steps already carry the instructional weight.",
+        "banned_absolutely": "NEVER a tool/equipment image (hands holding a file, tools laid out, application/process shots showing hands or tools at work) in any slot. NEVER a photo-style side-by-side nail-to-nail comparison image.",
+        "note_for_blog_gen": "All 3 body image slots are standard_inspiration — no infographic slot used for this post."
+      },
+      "path_rule": "/images/blog/winter-nails/snowflake-nail-art-winter/filename.webp — topic_slug in path, slug folder, leading slash"
+    },
+
+    "block_4_opening_technique_assignments": {
+      "rule": "No two consecutive sections use the same technique. Conclusion = Technique 1 or 3 only.",
+      "assignments": [
+        { "section": "Introduction", "technique": "Technique 1 — The Claim (name the intimidation, then flatly counter it)" },
+        { "section": "What You Need for Snowflake Nail Art (Probably Already in Your Kit)", "technique": "Technique 2 — The Direct Address (speak to what the reader is picturing they'll need)" },
+        { "section": "The Easiest Snowflake Nail Art Technique for Beginners", "technique": "Technique 3 — The Reframe (this looks harder than it is — reframe complexity as simplicity)" },
+        { "section": "How to Freehand a Steady Snowflake Without a Steady Hand", "technique": "Technique 1 — The Claim" },
+        { "section": "Dotting Tool Snowflake Nail Art: A Simple Alternative", "technique": "Technique 2 — The Direct Address" },
+        { "section": "Snowflake Nail Art for Short Nails", "technique": "Technique 3 — The Reframe" },
+        { "section": "More Ways to Wear Snowflake Nail Art (Stamping, Stencils & Negative Space)", "technique": "Technique 1 — The Claim" },
+        { "section": "Snowflake Nails Aren't Just for Christmas", "technique": "Technique 2 — The Direct Address" },
+        { "section": "Conclusion", "technique": "Technique 3 — The Reframe" }
+      ],
+      "banned_opener_rule": "Check every opener against banned_opening_approaches in blog gen prompt before writing the second sentence"
+    },
+
+    "block_5_link_placements": {
+      "rule": "Every link placed exactly where specified. Anchor texts used verbatim — never rewritten. Links woven into prose naturally — never standalone CTAs.",
+      "links": [
+        {
+          "anchor_text": "winter nail colors 2026",
+          "full_url": "/blog/winter-nails/winter-nail-colors-2026",
+          "place_in_section": "Introduction",
+          "placement_context": "When framing snowflakes as one option among the season's broader color and design choices",
+          "link_type": "cluster-pillar"
+        },
+        {
+          "anchor_text": "easy winter nail art you can do at home",
+          "full_url": "/blog/winter-nails/easy-winter-nail-art-diy",
+          "place_in_section": "What You Need for Snowflake Nail Art (Probably Already in Your Kit)",
+          "placement_context": "When acknowledging that snowflakes are one of several beginner-friendly winter designs worth trying",
+          "link_type": "cluster-spoke"
+        },
+        {
+          "anchor_text": "winter chrome nail ideas",
+          "full_url": "/blog/winter-nails/winter-chrome-nails",
+          "place_in_section": "More Ways to Wear Snowflake Nail Art (Stamping, Stencils & Negative Space)",
+          "placement_context": "When mentioning holographic or metallic snowflake finishes as a variation on the core technique",
+          "link_type": "cluster-spoke"
+        },
+        {
+          "anchor_text": "more winter nail ideas and designs",
+          "full_url": "/blog/winter-nails/winter-nail-ideas-designs",
+          "place_in_section": "Conclusion",
+          "placement_context": "When directing readers toward broader winter nail inspiration beyond the snowflake motif",
+          "link_type": "cluster-spoke"
+        }
+      ]
+    },
+
+    "block_6_aeo_geo_plan": {
+      "aeo_assignments": [
+        {
+          "aeo_term": "What tools do I need for snowflake nail art?",
+          "assigned_to_section": "What You Need for Snowflake Nail Art (Probably Already in Your Kit)",
+          "execution": "Write a direct 2-3 sentence answer paragraph IMMEDIATELY after the H2 heading — before any elaboration. This is what gets picked up by AI answer engines."
+        },
+        {
+          "aeo_term": "How do you paint a snowflake on your nails?",
+          "assigned_to_section": "The Easiest Snowflake Nail Art Technique for Beginners",
+          "execution": "Write a direct 2-3 sentence answer paragraph immediately after the H2 heading, summarizing the core line-and-branch method before the detailed steps follow."
+        },
+        {
+          "aeo_term": "How do you make a snowflake look symmetrical on your nails?",
+          "assigned_to_section": "How to Freehand a Snowflake Without a Steady Hand",
+          "execution": "Write a direct 2-3 sentence answer paragraph immediately after the H2 heading, addressing symmetry expectations honestly."
+        },
+        {
+          "aeo_term": "Can you do snowflake nail art without a dotting tool?",
+          "assigned_to_section": "Dotting Tool Snowflake Nail Art: A Simple Alternative",
+          "execution": "Write a direct 2-3 sentence answer paragraph immediately after the H2 heading, confirming toothpick/bobby pin substitutes."
+        },
+        {
+          "aeo_term": "Can you do snowflake nails on short nails?",
+          "assigned_to_section": "Snowflake Nail Art for Short Nails",
+          "execution": "Write a direct 2-3 sentence answer paragraph immediately after the H2 heading, answering the sizing question directly."
+        },
+        {
+          "aeo_term": "Do snowflake nails only work for Christmas?",
+          "assigned_to_section": "Snowflake Nails Aren't Just for Christmas",
+          "execution": "Write a direct 2-3 sentence answer paragraph immediately after the H2 heading, stating the winter-long wearability claim clearly."
+        }
+      ],
+      "geo_entity_statements": [
+        {
+          "entity": "negative space nail design",
+          "assigned_to_section": "More Ways to Wear Snowflake Nail Art (Stamping, Stencils & Negative Space)",
+          "execution": "Write a clear declarative definition sentence — confident, no hedging. Extractable by AI as a citation."
+        },
+        {
+          "entity": "dotting tool",
+          "assigned_to_section": "Dotting Tool Snowflake Nail Art: A Simple Alternative",
+          "execution": "Write a clear declarative definition sentence on first use, before demonstrating the technique."
+        }
+      ]
+    },
+
+    "block_7_active_constraints": {
+      "em_dash_banned": "Long em dash does not appear anywhere. If one forms while writing — stop, replace with: comma / new sentence / parentheses / but / restructure.",
+      "banned_vocab_watch": ["elevate", "unleash", "game-changer", "must-have", "effortlessly chic", "delve", "tapestry", "unlock"],
+      "american_english_active": "color, recognize, -ize, -or — every instance, no exceptions. This post uses American English, not British.",
+      "keyword_density_reminder": "After every 2 H2 sections — count current keyword mentions. Verify running total is on track to hit the hardcoded mention target of 7. First half must run denser than second half. Adjust if needed.",
+      "image_path_reminder": "/images/blog/winter-nails/snowflake-nail-art-winter/filename.webp — topic_slug in path always",
+      "internal_link_url_reminder": "Full correct paths only. Cluster links = /blog/winter-nails/[slug]. Never bare /slug.",
+      "hero_image_reminder": "Hero = frontmatter only. Never place hero image in body.",
+      "strong_tag_reminder": "Every primary keyword mention = <strong> tags. Scan after every paragraph."
+    }
+  }
+}
