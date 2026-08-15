@@ -1,0 +1,229 @@
+# INPUT FILE — press-on-nails-active-lifestyle
+## SECTION 1: FILE AUTHORITY
+THIS FILE IS THE SINGLE SOURCE OF TRUTH FOR THE BLOG GEN AGENT. All values in POST_CONSTANTS are hardcoded — Blog Gen Agent does not ask, adjust, or override them. All keywords, H2 structure, audience intelligence, internal links, and tone defined here must be followed exactly.
+
+## SECTION 2: POST_CONSTANTS
+- slug: press-on-nails-active-lifestyle
+- topic_slug: nails-by-lifestyle
+- canonical: https://mirelleinspo.com/blog/nails-by-lifestyle/press-on-nails-active-lifestyle
+- post_type: spoke
+- intent: inspirational
+- word_count: 2350 (top_5_fetched_average 1980 + buffer; topic genuinely supports curated-picks + durability education depth)
+- image_count: variable — hero + 1 per featured product pick (5 picks selected) = 6 images total. Per special_content_instructions: NO general lifestyle/gym body images, only hero + 1 product image per pick.
+- show_inspo_gallery_link: false (cluster default — gallery_exists is false for this cluster; no gallery to link)
+- template: posts
+- hero_dimensions: 1200x675
+- category: Lifestyle Nails
+- publish_date: 2026-09-15
+- author: jyoti-mirelle
+
+## SECTION 3: CLUSTER_SNAPSHOT
+- pillar_slug: gym-nails
+- pillar_title: Nails for Gym Goers: Durable Shapes That Survive Lifting
+- pillar_primary_keyword: gym nails
+- this_post_slug: press-on-nails-active-lifestyle
+- this_post_role: spoke
+- show_inspo_gallery_link_cluster_default: false
+- keywords_to_avoid: gym nails, chlorine resistant nails, nails for manual labor, best nail shape for typing, nails for gardeners, travel nail care, non-toxic nails for moms, nails for piano players, professional nail length, nail shapes for work, camping nails
+
+## SECTION 4: SERP_ANALYSIS
+- competitor_gaps: (1) No fetched competitor explains WHICH specific press-on adhesive method (tabs vs. glue) is right for which activity level — sources mention both but don't map method to workout intensity. (2) No fetched page addresses the "workout-to-work transition" test (can nails survive a morning gym session into a professional setting) despite this being a real recurring reader concern. (3) No competitor gives concrete emergency-fix guidance (what to do when a nail pops mid-workout) beyond vague reassurance.
+- missing_semantic_territory: "grip strength and press-ons," "gym bag nail kit," "sweat-proof adhesive," "deadlift nail casualties," "workout gloves and nail lifting" — specific mechanical/activity language absent or only lightly touched across the fetched set.
+- our_strategic_approach: Competitors split into two camps — brand blog fluff (Glamnetic toenail page, mostly product listings dressed as advice) and one genuinely useful first-person account (Eleglara) that is candid but not organized as a buying guide. None combine real product recommendations with an activity-specific durability framework. This post will lead with the specific mechanical reasons press-ons fail during workouts (sweat, grip friction, glove pressure) — territory none of the 4 fetched pages cover with real specificity — then pair that framework directly with 5 real, purchasable MelodySusie picks chosen for shape/durability fit, closing the gap between "here's why this works" and "here's what to actually buy" that no competitor bridges in one piece.
+- top_5_fetched_pages_summary:
+  - URL: thedivinemagazine.com/fitness-friendly-press-on-nails-durable-styles-that-stay-in-place — Word count: ~620 — H2 count: 3 (plus FAQ as H2) — Keyword mentions ("press-on nails" + "active lifestyle(s)" combined): 6 — Note: Polished editorial voice but thin on real mechanics; strong on almond-shape rationale, weak on adhesive science.
+  - URL: eleglara.com/blog/monthly-suggestions/press-on-nails-for-fitness-lovers-designs-that-withstand-workouts — Word count: ~1450 — H2 count: 7 — Keyword mentions: 9 — Note: Genuinely useful first-person testing detail (sweat test, gym-bag kit, pregnancy angle) but rambling structure, no clear buying guide.
+  - URL: runwanderwear.com/wear/best-press-on-nail-review — Word count: ~2050 — H2 count: 9 — Keyword mentions (activity-adjacent: "runner," "travel," "active"): 14 — Note: Strong real brand-by-brand comparison (Glamnetic, BTARTBOX, Kiss) with genuine pros/cons, runner-specific angle; best structural model found but not press-on-specific to "active lifestyle" as a phrase.
+  - URL: glamnetic.com/blogs/news/press-on-toenails-active-lifestyles — Word count: ~950 (body text) — H2 count: 5 — Keyword mentions: 7 — Note: Toenail-focused (not the fingernail angle this post needs) and heavily product-listing; useful only for confirming brand positioning language, not used as a structural model.
+  - top_5_word_count_average: 1770 words (calculated from the 4 substantively-editorial pages; Glamnetic toenail page weighted down for being product-listing heavy, not a true content comparator)
+  - top_5_keyword_density_average: 9 mentions
+- recommended_image_count_validation: Confirmed against special_content_instructions override — this post does NOT follow the cluster's flat 7-image rule. Hero + 1 image per MelodySusie pick (5 picks) = 6 total, no general lifestyle/gym photography in body, per explicit cluster_context instruction.
+
+## SECTION 5: AUDIENCE_INTELLIGENCE
+- who_they_are: Women who already have a regular fitness routine (gym, running, yoga, boxing) and refuse to give up polished nails for it. Mid-experience with press-ons — not total beginners, but not fully confident their set will survive a real workout. Often juggling gym + work + parenting in the same week (real thread: mother doing prenatal yoga, gym-goer typing right after a workout).
+- what_they_want_from_this_post: Direct reassurance ("yes, this actually works") backed by real activity-specific mechanics, plus a short, curated list of specific sets to buy — not a generic 20-item roundup.
+- what_frustrates_them: Content that either oversells durability with vague marketing language ("built to withstand your toughest workouts!") or panics them with worst-case damage stories. They want the honest middle: what fails, why, and how to prevent it.
+- top_5_pain_points:
+  1. Nails lifting or popping mid-workout, specifically during grip-heavy moves (deadlifts, pull-ups, kettlebell swings) — validated across Eleglara, transvitae.com, and Threads/social sources.
+  2. Sweat breaking down adhesive faster than expected — validated on Eleglara and Nail Pop Studio.
+  3. Choosing the wrong shape (stiletto/coffin catching on gym equipment or snagging fabric) — validated across thenailsgirl.com, Nailicy, and Divine Magazine.
+  4. Not knowing what to do in the moment a nail comes loose mid-session — validated on Eleglara and general Quora/how-to threads.
+  5. Workout-to-work transition anxiety — needing nails presentable enough to go straight from a 7am class into a 9am meeting — validated on runwanderwear.com and Eleglara.
+- exact_user_phrases:
+  1. "the answer is YES" (re: do press-ons survive workouts)
+  2. "a nail says 'I'm out'"
+  3. "sweaty hands... won't stick properly"
+  4. "deadlift session left me with two casualties"
+  5. "smooth finishes are your friend"
+  6. "workout-to-work transition"
+  7. "grip on barbells"
+  8. "tight gloves put pressure on your nails"
+  9. "don't panic... don't try to reattach immediately"
+  10. "stay put through the most violent fitness routines" (brand copy, useful as tone contrast reference)
+- intent_content_signals: Reader responds to specific, testable claims over marketing superlatives; wants named shapes (almond, squoval, short) not vague "durable" claims; appreciates a real "what happens when it fails" section rather than pretending failure never occurs; wants product recommendations that come with a clear reason (shape/adhesive/durability), not just a photo and a price; casual, been-there tone (Eleglara-style) outperforms polished brand copy (Glamnetic-style) on trust signals.
+
+## SECTION 6: SEMANTIC_KEYWORD_DATA
+- primary_keyword: press-on nails for active lifestyle
+- keyword_variations: press-on nails for an active lifestyle, active lifestyle press-ons, fitness-friendly press-on nails, press-ons for active women, workout-friendly press-on nails, durable press-on nails for the gym, press-on nails that survive workouts
+- cluster_keywords: press-on nails for the gym, press-on nail shapes for working out, how to keep press-on nails on during exercise, best press-on nail glue for sweat, short almond press-on nails, squoval press-on nails, press-on nails for runners, gym bag nail kit, press-on nail adhesive tabs vs glue, workout-to-work manicure, press-on nails that don't snag, sweat-proof nail adhesive
+- lsi_terms: nail lifting, adhesive tabs, nail glue, grip strength, sweat resistance, almond shape, squoval shape, short nail length, gym gloves, HIIT training, weightlifting nails, deadlift grip, cuticle prep, nail dehydrator, reusable press-ons, workout gloves, nail casualty, gym bag essentials, prenatal-safe nails, VOC-free adhesive
+- aeo_terms: do press-on nails stay on during a workout, can you lift weights with press-on nails, what shape press-on nails are best for the gym, how long do press-on nails last during exercise, do press-on nails come off when you sweat, can you wear press-on nails while running, what happens if a press-on nail pops off during a workout, are press-on nails safe for the gym, how do you keep press-on nails on during exercise, what's the best press-on nail glue for sweaty hands
+- technical_terms: adhesive tabs, nail glue (cyanoacrylate), soft gel vs. ABS resin, nail dehydrator, squoval shape, almond shape, cuticle prep, jelly glue
+- user_language: "the answer is YES," "nail casualties," "sweaty hands won't stick," "workout-to-work transition," "smooth finishes are your friend," "don't panic," "gym bag essentials," "two weeks with proper prep," "grip on barbells," "stay put"
+
+## SECTION 7: VOICE_AND_AI_QUERIES
+- queries:
+  1. Do press-on nails actually stay on during a workout?
+  2. Can you lift weights with press-on nails without them popping off?
+  3. What's the best press-on nail shape for the gym?
+  4. How long do press-on nails last if you work out regularly?
+  5. Do press-on nails come off when you sweat?
+  6. Can you wear press-on nails while running or doing cardio?
+  7. What should I do if a press-on nail comes loose during a workout?
+  8. Are press-on nails safe to wear at the gym?
+  9. How do you keep press-on nails on during exercise?
+  10. What's the best glue for press-on nails if you sweat a lot?
+  11. Should I use glue or adhesive tabs for workout-friendly press-ons?
+  12. Do press-on nails interfere with gripping weights?
+  13. Can press-on nails go from the gym straight to work?
+  14. What length press-on nails are best for an active lifestyle?
+  15. Do workout gloves make press-on nails lift?
+
+## SECTION 8: HOOK_AND_CTR
+- real_serp_findings_summary: The four fetched pages split into over-polished brand copy (Glamnetic, Divine Magazine) that oversells durability with vague language, and one genuinely candid first-person account (Eleglara) that undersells itself with no clear structure. None ask the direct, skeptical question a searcher actually has: does this really work, or is it marketing?
+- selected_option_rationale: The question-format title mirrors the exact skepticism found in real audience language ("the answer is YES," reassurance-seeking posts on Threads/TikTok) — it meets the reader where her actual doubt is, rather than assuming she's already sold, which is where all 4 competitor titles start.
+- title: Do Press-On Nails Survive the Gym? Active Lifestyle Picks
+- title_char_count: 57
+- meta_description: The honest answer on press-on nails for active lifestyle wear: what actually holds through lifting and sweat, plus 5 durable picks to try.
+- meta_char_count: 143
+- intro_hook_brief: Open by naming the exact doubt the reader has — not "here's why press-ons are great" but "here's whether they actually survive what you put your hands through." Answer the title's question directly and quickly (yes, with the right shape/adhesive), then pivot into what actually determines success.
+- first_h2_hook_direction: The first H2 should tackle the mechanical "why" (sweat, grip, friction) before any product mention — deliver the skeptic's answer with real specificity, not reassurance-only language.
+
+## SECTION 9: SEARCH_JOURNEY
+- reader_arrival_state: Skeptical but hopeful — she's heard press-ons can work for an active lifestyle but has been burned before (or fears being burned) and wants proof before she buys anything.
+- journey_arc:
+  1. Direct answer to the skepticism (yes, with caveats) — builds immediate trust
+  2. The real mechanics of why press-ons fail during workouts (sweat, grip, shape) — establishes expertise
+  3. Shape and adhesive guidance mapped to activity type — practical decision framework
+  4. Five real product picks with clear reasoning — the payoff
+  5. What to do when a nail does come loose — closes the loop on her original fear
+- promise_to_deliver: An honest, mechanically-grounded answer to whether press-ons hold up to an active lifestyle, plus specific products to buy instead of vague reassurance.
+- exit_state: Confident and equipped — she knows exactly which shape/adhesive to choose and has a specific set in mind to buy, with a backup plan if something goes wrong.
+
+## SECTION 10: CONTENT_STRUCTURE
+- h1: Do Press-On Nails Survive the Gym? Active Lifestyle Picks
+- h2_structure:
+  1. Why Press-On Nails Fail During Workouts (And How to Stop It)
+  2. The Best Nail Shape and Length for an Active Lifestyle
+  3. Glue vs. Adhesive Tabs: Which Holds Up to Sweat?
+  4. 5 Press-On Nail Sets Built for an Active Lifestyle
+  5. What to Do When a Nail Comes Loose Mid-Workout
+  6. Gym Bag Nail Kit: What to Keep On Hand
+- word_budget:
+  - introduction: 220 words
+  - conclusion: 180 words
+  - per_h2:
+    - Why Press-On Nails Fail During Workouts: 380 words (high complexity — mechanical/educational)
+    - Best Nail Shape and Length: 320 words (medium)
+    - Glue vs. Adhesive Tabs: 350 words (medium-high — direct-answer AEO content)
+    - 5 Press-On Nail Sets (product section): 620 words (high — 5 picks x ~120 words each + intro line)
+    - What to Do When a Nail Comes Loose: 180 words (low)
+    - Gym Bag Nail Kit: 100 words (low)
+
+## SECTION 11: INTERNAL_LINKS
+- all_internal_links:
+  1. url_or_slug: /blog/nails-by-lifestyle/gym-nails | title: Nails for Gym Goers: Durable Shapes That Survive Lifting | anchor_text: gym nails | placement_note: H2 "Why Press-On Nails Fail During Workouts" — naturally referencing the pillar's durability framework | link_type: cluster-pillar
+  2. url_or_slug: /blog/nails-by-lifestyle/swimming-nails | title: Nails That Survive Swimming: Chlorine-Proof Prep & Products | anchor_text: chlorine resistant nails | placement_note: H2 "Glue vs. Adhesive Tabs" — when discussing waterproof/sweatproof adhesive crossover | link_type: cluster-spoke
+  3. url_or_slug: /blog/nails-by-lifestyle/travel-nails | title: Travel Nails: How to Keep a Manicure Flawless on Long-Haul Trips | anchor_text: travel nail care | placement_note: H2 "Gym Bag Nail Kit" — natural crossover to on-the-go nail maintenance | link_type: cluster-spoke
+  4. url_or_slug: https://mirelleinspo.com/blog/press-on-nails/press-on-nail-tips-last-longer | title: Press-On Nail Tips: 9 Ways to Make Them Last in 2026 | anchor_text: the full routine for making press-on nails last two weeks | placement_note: H2 "Why Press-On Nails Fail During Workouts" — supporting deep-dive for general longevity mechanics beyond the active-lifestyle-specific content here | link_type: cross-site
+  5. url_or_slug: https://mirelleinspo.com/blog/press-on-almond-nails | title: Best Press-On Almond Nails 2026: Six Sets Worth It | anchor_text: our full breakdown of MelodySusie's almond press-on sets by lifestyle | placement_note: H2 "The Best Nail Shape and Length for an Active Lifestyle" — direct crossover since almond is the recommended shape here | link_type: cross-site
+
+## SECTION 12: VOICE_TONE
+- recommended_voice: Candid, been-there friend who happens to know the mechanics — not a polished brand voice, not a clinical how-to.
+- tone_characteristics: Direct answers before elaboration; confident but not oversold; acknowledges real failure points instead of pretending they don't happen; specific over vague ("almond shape distributes pressure evenly" not "durable and stylish"); warm humor without being try-hard.
+- language_style: Second person throughout ("your grip," "your gym bag"), short declarative sentences for mechanical explanations, occasional first-person-adjacent asides for relatability without inventing a persona; avoid marketing superlatives.
+- audience_match: This reader has been burned by vague reassurance before — she needs the "why" behind every claim, delivered plainly, which is exactly what the top-performing competitor content (Eleglara) did well and what brand copy (Glamnetic) did poorly.
+
+## SECTION 13: EXTERNAL_LINKS
+- links: (none — of the 4 fetched competitor pages, none qualified as genuinely citation-worthy authoritative sources per source_quality_rule; Divine Magazine and Glamnetic are brand/lifestyle content rather than independent authorities, and Eleglara/RunWanderWear are personal blogs rather than E-E-A-T citation sources. Empty per rule — not filled to meet a quota.)
+
+## SECTION 14: EXECUTION_PLAN
+
+### Block 1: Keyword Execution
+- primary_keyword: press-on nails for active lifestyle
+- top_5_density_baseline: 9 mentions
+- total_mention_target: 11-12 total mentions
+- first_100_words_plan:
+  - rule: Primary keyword MUST appear twice in the first 100 words
+  - mention_1: sentence 1-2 of introduction — directly answering the title's question using the full phrase
+  - mention_2: sentence 4-5 of introduction — reinforcing the promise/scope of the post
+- first_half_target: 7 mentions — first ~1175 words (denser: intro, mechanics H2, shape H2)
+- second_half_target: 4-5 mentions — second ~1175 words (product picks, troubleshooting, gym bag, conclusion)
+- strong_tag_rule: EVERY mention of "press-on nails for active lifestyle" (and the primary variant "active lifestyle press-ons") wrapped in `<strong>` tags. No exceptions.
+- keywords_to_avoid_active: gym nails, chlorine resistant nails, nails for manual labor, best nail shape for typing, nails for gardeners, travel nail care, non-toxic nails for moms, nails for piano players, professional nail length, nail shapes for work, camping nails
+
+### Block 2: Word Budget
+- total_target: 2350 words (+/-50 tolerance)
+- introduction: 220 words
+- conclusion: 180 words
+- h2_budgets:
+  1. Why Press-On Nails Fail During Workouts (And How to Stop It) — 380 words — complexity: high
+  2. The Best Nail Shape and Length for an Active Lifestyle — 320 words — complexity: medium
+  3. Glue vs. Adhesive Tabs: Which Holds Up to Sweat? — 350 words — complexity: medium-high
+  4. 5 Press-On Nail Sets Built for an Active Lifestyle — 620 words — complexity: high
+  5. What to Do When a Nail Comes Loose Mid-Workout — 180 words — complexity: low
+  6. Gym Bag Nail Kit: What to Keep On Hand — 100 words — complexity: low
+- tracking_rule: Track running word total after every H2. If over budget, cut before moving on — never compensate later.
+
+### Block 3: Image Plan
+- total_images: 6 (hero + 5 product images — OVERRIDE per special_content_instructions, does not follow cluster's flat 7-image default)
+- hero_image: frontmatter only — never in post body
+- body_images: 5 (one per featured MelodySusie pick)
+- assignments:
+  1. image_number: 1 | place_after: Pick 1 in "5 Press-On Nail Sets" H2 | image_type: standard_inspiration (product-style shot) | section_context: MelodySusie Short Square Nail Tips / short square everyday-durable set — clean product-style image of the nail set itself, no hands/tools
+  2. image_number: 2 | place_after: Pick 2 | image_type: standard_inspiration | section_context: MelodySusie Short Almond Cat Eye or comparable short almond set — product-style image
+  3. image_number: 3 | place_after: Pick 3 | image_type: standard_inspiration | section_context: MelodySusie Short Almond French Tips (natural/everyday) — product-style image
+  4. image_number: 4 | place_after: Pick 4 | image_type: standard_inspiration | section_context: MelodySusie Short Square White French or comparable minimal set — product-style image
+  5. image_number: 5 | place_after: Pick 5 | image_type: standard_inspiration | section_context: MelodySusie Short Square Pure White / solid minimalist set — product-style image
+- image_type_rule note: standard_inspiration used for all 5 — no infographic needed (this post is inspirational intent with a curated-picks structure, not comparison/tutorial). Per special_content_instructions: absolutely no gym/lifestyle/hands-at-work photography in any slot — product-only images.
+- path_rule: /images/blog/nails-by-lifestyle/press-on-nails-active-lifestyle/filename.webp
+
+### Block 4: Opening Technique Assignments
+- Introduction: Technique 1 (The Claim) — direct answer to the title's implied question
+- Why Press-On Nails Fail During Workouts: Technique 2 (The Mechanism) — explain the "why" before any reassurance
+- Best Nail Shape and Length: Technique 3 (The Reframe) — reframes shape choice as a mechanical decision, not aesthetic
+- Glue vs. Adhesive Tabs: Technique 2 (The Mechanism)
+- 5 Press-On Nail Sets: Technique 1 (The Claim) — direct pick statement per product
+- What to Do When a Nail Comes Loose: Technique 3 (The Reframe) — reframes failure as manageable, not catastrophic
+- Gym Bag Nail Kit: Technique 1 (The Claim)
+- Conclusion: Technique 3 (The Reframe)
+- banned_opener_rule: Check every opener against banned_opening_approaches in Blog Gen prompt before writing the second sentence.
+
+### Block 5: Link Placements
+1. anchor_text: gym nails | full_url: /blog/nails-by-lifestyle/gym-nails | place_in_section: Why Press-On Nails Fail During Workouts | placement_context: when referencing the broader durability framework covered in the pillar post | link_type: cluster-pillar
+2. anchor_text: chlorine resistant nails | full_url: /blog/nails-by-lifestyle/swimming-nails | place_in_section: Glue vs. Adhesive Tabs | placement_context: noting overlap between sweatproof and waterproof adhesive needs | link_type: cluster-spoke
+3. anchor_text: travel nail care | full_url: /blog/nails-by-lifestyle/travel-nails | place_in_section: Gym Bag Nail Kit | placement_context: natural crossover between gym-bag and travel nail maintenance kits | link_type: cluster-spoke
+4. anchor_text: the full routine for making press-on nails last two weeks | full_url: https://mirelleinspo.com/blog/press-on-nails/press-on-nail-tips-last-longer | place_in_section: Why Press-On Nails Fail During Workouts | placement_context: pointing to deeper general-longevity content beyond this post's activity-specific scope | link_type: cross-site
+5. anchor_text: our full breakdown of MelodySusie's almond press-on sets by lifestyle | full_url: https://mirelleinspo.com/blog/press-on-almond-nails | place_in_section: The Best Nail Shape and Length for an Active Lifestyle | placement_context: direct crossover since almond is a recommended shape here | link_type: cross-site
+
+### Block 6: AEO/GEO Plan
+- aeo_assignments:
+  1. aeo_term: Do press-on nails stay on during a workout? | assigned_to_section: Introduction | execution: Direct 2-3 sentence answer immediately after the H1, before elaboration.
+  2. aeo_term: Can you lift weights with press-on nails? | assigned_to_section: Why Press-On Nails Fail During Workouts | execution: Direct answer paragraph immediately after the H2.
+  3. aeo_term: What shape press-on nails are best for the gym? | assigned_to_section: The Best Nail Shape and Length for an Active Lifestyle | execution: Direct answer immediately after the H2 (almond/squoval, short-to-medium).
+  4. aeo_term: Do press-on nails come off when you sweat? | assigned_to_section: Glue vs. Adhesive Tabs | execution: Direct answer immediately after the H2.
+  5. aeo_term: What should I do if a press-on nail comes loose during a workout? | assigned_to_section: What to Do When a Nail Comes Loose Mid-Workout | execution: Direct step-by-step answer immediately after the H2.
+- geo_entity_statements:
+  1. entity: Adhesive tabs vs. nail glue | assigned_to_section: Glue vs. Adhesive Tabs | execution: Clear declarative definition distinguishing wear-time and bond strength of each method.
+  2. entity: Almond shape | assigned_to_section: The Best Nail Shape and Length | execution: Clear declarative definition of why the tapered shape distributes grip pressure more evenly than square/stiletto.
+
+### Block 7: Active Constraints
+- em_dash_banned: Long em dash does not appear anywhere. Replace with comma / new sentence / parentheses / "but" / restructure if one forms.
+- banned_vocab_watch: "elevate," "game-changer," "seamless," "effortless," "unlock," "journey" (fitness-content cliché overlap), "dive into"
+- american_english_active: color, recognize, -ize, -or — every instance.
+- keyword_density_reminder: After every 2 H2 sections, count current mentions. Verify running total on track for 11-12 total, denser in first half.
+- image_path_reminder: /images/blog/nails-by-lifestyle/press-on-nails-active-lifestyle/filename.webp
+- internal_link_url_reminder: Full correct paths only. Cluster links = /blog/nails-by-lifestyle/[slug]. Cross-site links = exact URL as discovered.
+- hero_image_reminder: Hero = frontmatter only. Never in body.
+- strong_tag_reminder: Every primary keyword mention = `<strong>` tags. Scan after every paragraph.
+- special_content_reminder: This post requires affiliate links for the 5 MelodySusie picks, to be supplied by the user before/during writing — do NOT fabricate links. No general lifestyle/gym body photography anywhere in this post — product images only.
