@@ -1,0 +1,536 @@
+{
+  "section_1_file_authority": {
+    "statement": "THIS FILE IS THE SINGLE SOURCE OF TRUTH FOR THE BLOG GEN AGENT. All values in POST_CONSTANTS are hardcoded — Blog Gen Agent does not ask, adjust, or override them. All keywords, H2 structure, audience intelligence, internal links, and tone defined here must be followed exactly."
+  },
+
+  "section_2_post_constants": {
+    "slug": "typing-nails",
+    "topic_slug": "nails-by-lifestyle",
+    "canonical": "https://mirelleinspo.com/blog/nails-by-lifestyle/typing-nails",
+    "post_type": "spoke",
+    "intent": "tutorial",
+    "word_count": 1850,
+    "image_count": 4,
+    "show_inspo_gallery_link": false,
+    "template": "split-left",
+    "hero_dimensions": "800x800",
+    "category": "Nails by Lifestyle",
+    "publish_date": "2026-09-15",
+    "author": "jyoti-mirelle"
+  },
+
+  "section_3_cluster_snapshot": {
+    "pillar_slug": "gym-nails",
+    "pillar_title": "Nails for Gym Goers: Durable Shapes That Survive Lifting",
+    "pillar_primary_keyword": "gym nails",
+    "this_post_slug": "typing-nails",
+    "this_post_role": "spoke",
+    "show_inspo_gallery_link_cluster_default": false,
+    "keywords_to_avoid": [
+      "professional nail length",
+      "nail shapes for work",
+      "camping nails",
+      "gym nails",
+      "chlorine resistant nails",
+      "nails for manual labor",
+      "nails for gardeners",
+      "press-on nails for active lifestyle",
+      "travel nail care",
+      "non-toxic nails for moms",
+      "nails for piano players"
+    ],
+    "differentiation_lock": "This post stays on physical typing mechanics (keycap snagging, WPM/accuracy, RSI/finger fatigue, silicone keyboard covers, finger-pad technique) — NEVER office dress-code or professionalism framing. That angle is owned by /work-nails/professional-nail-length-for-work and /work-nails/nail-shapes-for-work on the live site and must not be duplicated."
+  },
+
+  "section_4_serp_analysis": {
+    "blog_gen_instruction": "our_strategic_approach is a specific, evidence-based outperform strategy, not a vague gap-fill statement. Use it as the concrete angle for the introduction and conclusion, and to guide depth/coverage decisions in relevant H2 sections.",
+    "competitor_gaps": [
+      "No fetched page connects nail shape to RSI/wrist or forearm strain in a substantive way — YouTube demand (\"The Hidden Cause of Arm and Elbow Pain\") and Nailstiq's posture section confirm reader interest in the ergonomics angle, but no competitor builds a dedicated section around it (confirmed 2+ sources: YouTube + Nailstiq passing mention).",
+      "No fetched page gives a concrete WPM/accuracy comparison across shapes with real numbers — moonleehome is the only one with actual test data (5% WPM drop for short almond, ~50% drop for stiletto), but frames it as a product-testing diary, not a structured shape-by-shape reference. Quora and TikTok both show readers explicitly asking for hard shape comparisons (confirmed 2+ sources: Quora + moonleehome).",
+      "No fetched page addresses keyboard/hardware-side solutions (silicone covers, low-profile mechanical switches) in the same piece as nail shape guidance — this lives only in separate keyboard-review content (TAPÉ, keyblink) never integrated into a nail-shape guide. Confirmed demand via reallywellthanks (keyboard section) + TikTok #siliconekeyboard tag (2+ sources)."
+    ],
+    "missing_semantic_territory": [
+      "\"finger pad technique\" / \"typing with finger pads\" — used by nailstiq and nailsalonarcadia but never given a dedicated how-to walkthrough with the specific hand-flattening mechanics",
+      "\"3mm rule\" / nail length in millimeters past the fingertip — moonleehome and nailstiq both reference the 3-5mm range but neither makes it the organizing structure of the piece",
+      "\"keycap snagging\" — used descriptively across sources but never defined as a named, explainable mechanism"
+    ],
+    "our_strategic_approach": "None of the 5 fetched competitors combine three things this post will combine: (1) a clear, ranked shape verdict backed by real comparative data (borrowing the rigor of moonleehome's test format but structured as a scannable reference rather than a diary), (2) the biomechanics of WHY shapes fail at the keyboard — keycap contact geometry, the finger-pad vs fingertip distinction — which nailstiq gestures at but never fully explains, and (3) hardware-side fixes (silicone covers, keyboard choice) folded into the same piece instead of siloed into separate keyboard-review content. The structural edge: open with the mechanism (why nail shape affects typing at all — contact geometry, not vibes), rank shapes by real functional criteria, then close with the technique + hardware combo that lets a reader keep a longer or sharper shape if they want one. This is deeper and more actionable than beyoungaholic's 20-shape filler list or nailsalonarcadia's short salon-promo piece, and more structured than reallywellthanks' casual blog-diary format.",
+    "top_5_fetched_pages_summary": [
+      {
+        "url": "https://reallywellthanks.com/best-nail-length-for-typing/",
+        "word_count": 950,
+        "h2_count": 3,
+        "keyword_mention_count": 2,
+        "note": "Casual personal-blog voice, recommends medium squoval; good keyboard-cover product tips but thin on shape mechanics."
+      },
+      {
+        "url": "https://moonleehome.com/blogs/experience-with-press-on-nails/i-tested-4-nail-shapes-for-typing-8-hours",
+        "word_count": 1450,
+        "h2_count": 5,
+        "keyword_mention_count": 4,
+        "note": "Strongest real data (WPM/error testing across 4 shapes, cited research); ends in a product-sales push and is press-on specific."
+      },
+      {
+        "url": "https://nailstiq.com/the-best-nail-shape-for-typing-and-office-work/",
+        "word_count": 2400,
+        "h2_count": 9,
+        "keyword_mention_count": 6,
+        "note": "Deepest and most comprehensive fetched page; strong on shape-by-shape breakdown and technique, but drifts heavily into office-culture/professionalism territory this post must avoid."
+      },
+      {
+        "url": "https://beyoungaholic.com/best-nail-shape-for-typing/",
+        "word_count": 3100,
+        "h2_count": 20,
+        "keyword_mention_count": 9,
+        "note": "Longest page by far but heavily templated/repetitive (20 near-identical shape micro-entries); reads as AI-padded, weak genuine insight per section."
+      },
+      {
+        "url": "https://nailsalonarcadia.com/nail-extensions-for-people-who-type-all-day/",
+        "word_count": 950,
+        "h2_count": 5,
+        "keyword_mention_count": 3,
+        "note": "Salon-promo piece; useful extension-material angle (Gel-X/BIAB/dip) but shallow on shape mechanics and ends in a hard CTA."
+      }
+    ],
+    "top_5_word_count_average": 1770,
+    "top_5_keyword_density_average": 4.8,
+    "best_external_sources_found": [
+      {
+        "url": "https://moonleehome.com/blogs/experience-with-press-on-nails/i-tested-4-nail-shapes-for-typing-8-hours",
+        "why_qualifies": "Genuine first-person experimental testing across 4 shapes with real WPM/error tracking and a cited peer-reviewed source (Jansen et al., J Hand Ther 2000) — real editorial authority, not thin content."
+      }
+    ]
+  },
+
+  "section_5_audience_intelligence": {
+    "blog_gen_instruction": "This is your primary creative brief. Every paragraph written for this specific person with this specific intent. Satisfy them completely.",
+    "who_they_are": "Someone who types for hours daily for work or school (remote workers, writers, programmers, students, admins) and already wears longer or shaped nails — acrylic, gel-X, BIAB, or well-grown natural sets — who is not willing to give up the look but is actively frustrated by real friction at the keyboard: mis-hits, snagging, noise, or nail damage. Not a beginner to nails; a beginner to solving this specific conflict.",
+    "what_they_want_from_this_post": "A direct, confidence-giving verdict on which shape and length actually works for heavy typing, backed by something more concrete than opinion — plus practical technique and hardware fixes so they don't have to sacrifice style for function.",
+    "what_frustrates_them": "Generic 'just get short nails' advice that ignores that they don't want short nails. Content that either buries the answer in fluff (beyoungaholic's 20-near-identical-entries format) or pivots into dress-code/professionalism territory they didn't ask about (nailstiq). A lack of real before/after data — most posts assert a shape is 'better' without ever explaining why at a mechanical level.",
+    "top_5_pain_points": [
+      "Nails audibly clacking or catching on keycaps mid-sentence, breaking typing flow and causing typos",
+      "Genuine fear of chipping or cracking an expensive fresh set during a normal workday",
+      "Not knowing how much length is 'too much' before typing becomes genuinely harder, not just different",
+      "Wanting a shape that still looks elegant/on-trend (almond, coffin) and being told to default to boring short square/round instead",
+      "Wrist, finger, or forearm fatigue by end of day that they suspect but haven't confirmed is nail-related"
+    ],
+    "exact_user_phrases": [
+      "what nail shape is the easiest to type with",
+      "best nail shape and length if you spend a lot of time typing",
+      "I only lasted 2 hours on stiletto before switching back",
+      "nails hitting the keys at weird angles",
+      "click, click, CLACK",
+      "type with the pads of your fingers, not the tips",
+      "I don't love square nails or coffin nails for this reason",
+      "keyboard condoms" ,
+      "long nails + typing = chaos",
+      "for people that wonder how we type with 'those nails'"
+    ],
+    "intent_content_signals": [
+      "Reader responds to real tested comparisons (moonleehome's format resonates) over generic advice",
+      "Wants a definitive ranked answer, not 'it depends on preference' with no resolution",
+      "Responds to concrete numbers: mm of length, WPM change, hours before fatigue",
+      "Wants the fix, not just the diagnosis — pairs technique + product/hardware guidance",
+      "Casual, slightly wry tone lands better than clinical salon-copy tone for this specific audience"
+    ]
+  },
+
+  "section_6_semantic_keyword_data": {
+    "blog_gen_instruction": "Primary keyword in strong tags every mention. AEO terms trigger direct answer paragraphs. User language woven naturally. No term from keywords_to_avoid used as focus term.",
+    "primary_keyword": "best nail shape for typing",
+    "keyword_variations": [
+      "nail shape for typing",
+      "typing nails",
+      "best nails for typing",
+      "typing-friendly nail shape",
+      "nail shape and length for typing",
+      "typing with long nails",
+      "keyboard-friendly nail shape",
+      "nails that don't interfere with typing"
+    ],
+    "cluster_keywords": [
+      "short almond nails",
+      "squoval nails for typing",
+      "oval nails for typing",
+      "nail length for typing",
+      "typing with acrylic nails",
+      "typing with gel nails",
+      "finger pad typing technique",
+      "silicone keyboard cover for nails",
+      "keycap snagging",
+      "nails hitting keyboard",
+      "typing speed and nail shape",
+      "no-snag nail shape"
+    ],
+    "lsi_terms": [
+      "WPM (words per minute)",
+      "keystroke accuracy",
+      "fingertip pads",
+      "nail contact geometry",
+      "3mm past the fingertip",
+      "home row",
+      "keyboard ergonomics",
+      "finger fatigue",
+      "touch typing",
+      "nail taper",
+      "flat tip surface area",
+      "Gel-X extensions",
+      "BIAB (builder in a bottle)",
+      "dip powder overlay",
+      "coffin/ballerina shape",
+      "stiletto shape",
+      "low-profile mechanical keyboard",
+      "keycap dish"
+    ],
+    "aeo_terms": [
+      "what is the best nail shape for typing",
+      "what nail length is best for typing all day",
+      "can you type with long acrylic nails",
+      "why do my nails hit the keys when I type",
+      "how do you type with long nails without breaking them",
+      "what nail shape doesn't catch on keyboard keys",
+      "is short almond good for typing",
+      "how many millimeters of nail is too long for typing",
+      "does nail shape affect typing speed",
+      "what keyboard is best for long nails"
+    ],
+    "technical_terms": [
+      "Gel-X",
+      "BIAB",
+      "acrylic overlay",
+      "squoval",
+      "free edge",
+      "nail bed",
+      "key travel",
+      "actuation force"
+    ],
+    "user_language": [
+      "click, click, CLACK",
+      "keyboard condoms",
+      "chaos",
+      "those nails",
+      "type with the pads not the tips",
+      "I gave up on style",
+      "crush your deadlines",
+      "corporate baddie",
+      "deadline-heavy writing day"
+    ]
+  },
+
+  "section_7_voice_and_ai_queries": {
+    "blog_gen_instruction": "Answer every query directly in the relevant H2 section body. If a query cannot be addressed naturally in the body, route it to faqItems. No query left unanswered.",
+    "queries": [
+      "What is the best nail shape for typing?",
+      "What nail length is best if I type all day?",
+      "Can you type with long acrylic nails?",
+      "Why do my nails keep hitting the wrong keys?",
+      "How do I type with long nails without breaking them?",
+      "What nail shape doesn't snag on keyboard keys?",
+      "Is short almond a good shape for typing?",
+      "How many millimeters of nail is too long for comfortable typing?",
+      "Does nail shape actually affect typing speed?",
+      "What keyboard is best for people with long nails?",
+      "Are stiletto nails bad for typing?",
+      "Are coffin nails hard to type with?",
+      "How do I type using my finger pads instead of my nail tips?",
+      "Can typing with long nails cause wrist or arm pain?",
+      "What's the difference between round and oval nails for typing?",
+      "Is squoval a good shape for heavy typists?",
+      "How long does it take to adjust to typing with a new nail shape?",
+      "Do silicone keyboard covers actually help with long nails?"
+    ]
+  },
+
+  "section_8_hook_and_ctr": {
+    "blog_gen_instruction": "READ THIS SECTION BEFORE WRITING THE TITLE, META DESCRIPTION, INTRO, OR FIRST H2. The title and description here are the option the USER SELECTED from 2-3 real, evidence-based choices during phase_6 — use them exactly. The intro hook brief and first H2 hook direction are your creative brief for those specific elements, matching the selected option's angle. Do not deviate.",
+    "real_serp_findings_summary": "None of the 5 fetched titles lead with the reader's actual moment of frustration (the mis-typed word, the audible clack) — they lead with the shape list itself (nailstiq, beyoungaholic) or a testing-diary framing (moonleehome). The gap: a title/meta that opens on the specific failure moment (typos, snagging) rather than the solution category signals a sharper, more relatable hook than any of the 5 competitors use.",
+    "selected_option_rationale": "This option leads with the reader's exact frustration ('No More Typos') rather than a generic shape-list promise, which no fetched competitor title does — it matches the tutorial intent's 'remove the fear, promise the outcome' arrival pattern and speaks directly to the top pain point (typos from mis-hit keys) identified in phase_4.",
+    "title": "Best Nail Shape for Typing All Day (No More Typos)",
+    "title_char_count": 52,
+    "meta_description": "Stop fighting your keyboard. The exact shapes and lengths that let you type fast without breaking a nail.",
+    "meta_char_count": 108,
+    "intro_hook_brief": "Open on the exact frustrating moment: mid-sentence, a nail catches a keycap, a typo lands, the flow breaks. Name it as a solvable mechanical problem, not a style sacrifice — promise a real, tested answer, not vibes.",
+    "first_h2_hook_direction": "The first H2 should explain the mechanism (why this happens — contact geometry between nail and keycap) before naming any shape, so the ranked shape verdict that follows feels earned rather than asserted."
+  },
+
+  "section_9_search_journey": {
+    "blog_gen_instruction": "This is the emotional contract with the reader. Every section of the post must honour the promise made. Read this before writing any section. If a paragraph breaks the journey arc — rewrite it.",
+    "reader_arrival_state": "Motivated to keep their current nail style but intimidated and slightly frustrated — they've already experienced real typing friction and want reassurance plus a real fix, not a lecture to go shorter.",
+    "journey_arc": [
+      "Open by naming the exact friction moment and confirming it's a solvable mechanical problem, not a personal failing",
+      "Explain the mechanism (contact geometry) so the reader understands WHY shape matters before being told WHAT to pick",
+      "Deliver a clear, ranked shape verdict with real comparative detail, resolving the 'which shape' question definitively",
+      "Cover length as the second lever (the 3-5mm range) so the reader can keep more length if they choose",
+      "Walk through the finger-pad technique and hardware fixes (keyboard covers, keyboard choice) so nothing is left half-solved",
+      "Close with the outcome: a reader who kept their preferred aesthetic AND fixed the typing problem"
+    ],
+    "promise_to_deliver": "That the reader does not have to choose between having the nails they want and typing comfortably and accurately all day — this post gives them the specific shape, length, and technique to have both.",
+    "exit_state": "Confident and unblocked — they know exactly which shape/length to book next, plus two backup techniques (finger pads, keyboard cover) if they want to keep more length or a sharper shape than the top recommendation."
+  },
+
+  "section_10_content_structure": {
+    "blog_gen_instruction": "This H2 structure is research-driven and must be followed exactly. Do not rename, reorder, or remove H2s without user instruction. Word budget per section is set — follow it. H3s may be added at editorial discretion.",
+    "h1": "Best Nail Shape for Typing All Day (No More Typos)",
+    "h2_structure": [
+      "Why Nail Shape Actually Affects How You Type",
+      "The Best Nail Shape for Typing: Ranked",
+      "Nail Shapes to Avoid (Or Modify) for Heavy Typing",
+      "How Long Is Too Long? The 3-5mm Rule",
+      "How to Type With Long Nails Without Breaking Them",
+      "Keyboard Fixes That Make Any Shape Easier to Type With"
+    ],
+    "word_budget": {
+      "introduction": "220 words",
+      "conclusion": "180 words",
+      "per_h2": [
+        { "heading": "Why Nail Shape Actually Affects How You Type", "budget": 220, "complexity": "medium" },
+        { "heading": "The Best Nail Shape for Typing: Ranked", "budget": 420, "complexity": "high" },
+        { "heading": "Nail Shapes to Avoid (Or Modify) for Heavy Typing", "budget": 280, "complexity": "medium" },
+        { "heading": "How Long Is Too Long? The 3-5mm Rule", "budget": 220, "complexity": "medium" },
+        { "heading": "How to Type With Long Nails Without Breaking Them", "budget": 200, "complexity": "low" },
+        { "heading": "Keyboard Fixes That Make Any Shape Easier to Type With", "budget": 210, "complexity": "low" }
+      ]
+    }
+  },
+
+  "section_11_internal_links": {
+    "blog_gen_instruction": "Every link below must appear in the post. Cluster links use anchor texts verbatim — do not rewrite. Cross-site links use the provided descriptive anchor. Place each link where the placement note says — woven naturally into prose, never as a standalone CTA. Total internal links must not exceed 6.",
+    "all_internal_links": [
+      {
+        "url_or_slug": "/blog/nails-by-lifestyle/gym-nails",
+        "title": "Nails for Gym Goers: Durable Shapes That Survive Lifting",
+        "anchor_text": "gym nails",
+        "placement_note": "Introduction or conclusion, where durability-for-daily-use context bridges naturally to the pillar",
+        "link_type": "cluster-pillar"
+      },
+      {
+        "url_or_slug": "/blog/nails-by-lifestyle/musician-nails",
+        "title": "Nails for Musicians: The Right Length for Piano & Guitar Without Sacrificing Style",
+        "anchor_text": "nails for piano players",
+        "placement_note": "'Nail Shapes to Avoid (Or Modify) for Heavy Typing' section — natural bridge since both posts solve a functional-constraint-vs-style tradeoff",
+        "link_type": "cluster-spoke"
+      },
+      {
+        "url_or_slug": "/blog/nails-by-lifestyle/manual-labor-nails",
+        "title": "Nails for Manual Labor Jobs: Short, Reinforced Options",
+        "anchor_text": "nails for manual labor",
+        "placement_note": "'How to Type With Long Nails Without Breaking Them' section — durability/reinforcement parallel",
+        "link_type": "cluster-spoke"
+      },
+      {
+        "url": "https://mirelleinspo.com/blog/why-almond-nails-keep-breaking",
+        "title": "Why Do My Almond Nails Keep Breaking?",
+        "anchor_text": "why the almond tip is more prone to breaking than square or oval",
+        "placement_note": "'The Best Nail Shape for Typing: Ranked' section, in the short almond entry — adds real value on the durability tradeoff of the top-recommended shape without touching the excluded dress-code territory",
+        "link_type": "cross-site"
+      }
+    ]
+  },
+
+  "section_12_voice_tone": {
+    "blog_gen_instruction": "This is the voice for this specific post. Layer on top of Mirellé editorial framework. Do not default to generic AI tone.",
+    "recommended_voice": "Confident, slightly wry problem-solver",
+    "tone_characteristics": [
+      "Direct and resolving — gives a real verdict rather than hedging with 'it depends'",
+      "Grounded in mechanism, not just opinion — explains the why before the what",
+      "Casual, dry humor where it lands (echoing the audience's own 'click click CLACK' register) without becoming jokey filler",
+      "Encouraging — never implies the reader should just cut their nails short and move on",
+      "Practical to the point of being checklist-usable, without turning into a dry spec sheet"
+    ],
+    "language_style": "Short, punchy sentences mixed with slightly longer explanatory ones for mechanism. Direct address ('you'). Light analogy use (e.g., contact-point/lever framing) kept concrete, never abstract. No corporate-office register — this is a home-desk, deadline-day voice.",
+    "audience_match": "This reader already made an aesthetic choice and wants it defended, not corrected — a confident, mechanism-first voice respects that choice while still delivering a real, resolving answer, matching the tutorial intent's 'remove the fear, promise the outcome' arc."
+  },
+
+  "section_13_external_links": {
+    "blog_gen_instruction": "Include all external links where indicated. Supports E-E-A-T. Use anchor suggestion as guide — write naturally around it. Sourced from phase_3's best_external_sources_found (real fetched competitor pages), not from separate searches. May be empty (0-2 links) if none of the fetched pages qualified as genuinely citation-worthy — that is expected, not a gap to fill.",
+    "links": [
+      {
+        "url": "https://moonleehome.com/blogs/experience-with-press-on-nails/i-tested-4-nail-shapes-for-typing-8-hours",
+        "context": "Use when citing real comparative WPM/error-rate data across nail shapes in the 'Ranked' section",
+        "anchor_suggestion": "one independent 8-hour typing test across four shapes"
+      }
+    ]
+  },
+
+  "section_14_execution_plan": {
+    "purpose": "Blog Gen Agent reads this section FIRST — before frontmatter, before writing a single word. Every value here is pre-calculated from the input file data. Blog Gen Agent locks all values and executes them exactly.",
+    "blog_gen_instruction": "READ THIS SECTION FIRST. Lock every value. Execute exactly. Do not recalculate, do not adjust, do not deviate.",
+    "calculated_by": "Input Gen Agent — calculated last, after all other sections are complete",
+
+    "block_1_keyword_execution": {
+      "primary_keyword": "best nail shape for typing",
+      "top_5_density_baseline": 4.8,
+      "total_mention_target": "4.8 + 2 = 7 total mentions (rounded from baseline average; hard target, not a percentage)",
+      "first_100_words_plan": {
+        "rule": "Primary keyword MUST appear TWICE in the first 100 words. Mandatory. No exceptions.",
+        "mention_1": "sentence 2 of introduction — naming the topic directly after the frustration hook",
+        "mention_2": "sentence 4-5 of introduction — reinforcing the promise before transitioning into the first H2"
+      },
+      "first_half_target": "4 mentions — first ~925 words. Run denser in first half.",
+      "second_half_target": "3 mentions — second ~925 words",
+      "strong_tag_rule": "EVERY single mention of the primary keyword — all 7 of them — wrapped in <strong> tags. No exceptions. Catch each one as it is written. Scan after every paragraph.",
+      "keywords_to_avoid_active": [
+        "professional nail length",
+        "nail shapes for work",
+        "camping nails",
+        "gym nails",
+        "chlorine resistant nails",
+        "nails for manual labor",
+        "nails for gardeners",
+        "press-on nails for active lifestyle",
+        "travel nail care",
+        "non-toxic nails for moms",
+        "nails for piano players"
+      ]
+    },
+
+    "block_2_word_budget": {
+      "total_target": "1850 words — +/-50 words tolerance, never exceed",
+      "introduction": "220 words",
+      "conclusion": "180 words",
+      "h2_budgets": [
+        { "heading": "Why Nail Shape Actually Affects How You Type", "budget": 220, "complexity": "medium" },
+        { "heading": "The Best Nail Shape for Typing: Ranked", "budget": 420, "complexity": "high" },
+        { "heading": "Nail Shapes to Avoid (Or Modify) for Heavy Typing", "budget": 280, "complexity": "medium" },
+        { "heading": "How Long Is Too Long? The 3-5mm Rule", "budget": 220, "complexity": "medium" },
+        { "heading": "How to Type With Long Nails Without Breaking Them", "budget": 200, "complexity": "low" },
+        { "heading": "Keyboard Fixes That Make Any Shape Easier to Type With", "budget": 210, "complexity": "low" }
+      ],
+      "tracking_rule": "Track running word total at the end of every H2 section. If a section is running over budget — cut before moving to the next section. Do not compensate later."
+    },
+
+    "block_3_image_plan": {
+      "total_images": 4,
+      "hero_image": "frontmatter only — NEVER appears in post body",
+      "body_images": 3,
+      "assignments": [
+        {
+          "image_number": 1,
+          "place_after": "Why Nail Shape Actually Affects How You Type",
+          "image_type": "standard_inspiration",
+          "section_context": "Close-up of hands typing on a keyboard showing a short almond or squoval set mid-keystroke — establishes the real-world context before the ranked list."
+        },
+        {
+          "image_number": 2,
+          "place_after": "The Best Nail Shape for Typing: Ranked",
+          "image_type": "infographic",
+          "section_context": "Clean graphic layout ranking the shapes discussed (short almond, squoval, oval, round) with a simple visual scale or ordering — NOT a photo comparison. Communicates the ranked verdict at a glance for skimmers and AI extraction."
+        },
+        {
+          "image_number": 3,
+          "place_after": "How to Type With Long Nails Without Breaking Them",
+          "image_type": "standard_inspiration",
+          "section_context": "Styled shot of a manicured hand in typing position (fingers flattened, pads toward keys) demonstrating the technique described in the section — hands only, no visible tools or equipment."
+        }
+      ],
+      "image_type_rule_note": "This is a tutorial-intent post, so one infographic slot is used for the shape ranking per the image_type_rule guidance — the remaining two body slots are standard_inspiration. No literal side-by-side photo comparison used anywhere; the comparison lives in the infographic only. No tool/equipment/hands-with-tools imagery in any slot.",
+      "path_rule": "/images/blog/nails-by-lifestyle/typing-nails/filename.webp — topic_slug in path, slug folder, leading slash"
+    },
+
+    "block_4_opening_technique_assignments": {
+      "rule": "No two consecutive sections use the same technique. Conclusion = Technique 1 or 3 only.",
+      "assignments": [
+        { "section": "Introduction", "technique": "Technique 2 — The Scene/Micro-moment (open on the exact typo/snag moment)" },
+        { "section": "Why Nail Shape Actually Affects How You Type", "technique": "Technique 4 — The Mechanism/Explainer" },
+        { "section": "The Best Nail Shape for Typing: Ranked", "technique": "Technique 1 — The Claim (state the verdict up front)" },
+        { "section": "Nail Shapes to Avoid (Or Modify) for Heavy Typing", "technique": "Technique 3 — The Reframe (these aren't 'bad,' they need modification)" },
+        { "section": "How Long Is Too Long? The 3-5mm Rule", "technique": "Technique 1 — The Claim (state the rule up front)" },
+        { "section": "How to Type With Long Nails Without Breaking Them", "technique": "Technique 4 — The Mechanism/Explainer (finger-pad technique walkthrough)" },
+        { "section": "Keyboard Fixes That Make Any Shape Easier to Type With", "technique": "Technique 2 — The Scene/Micro-moment (a workday made easier)" },
+        { "section": "Conclusion", "technique": "Technique 3 — The Reframe" }
+      ],
+      "banned_opener_rule": "Check every opener against banned_opening_approaches in blog gen prompt before writing the second sentence"
+    },
+
+    "block_5_link_placements": {
+      "rule": "Every link placed exactly where specified. Anchor texts used verbatim — never rewritten. Links woven into prose naturally — never standalone CTAs.",
+      "links": [
+        {
+          "anchor_text": "gym nails",
+          "full_url": "/blog/nails-by-lifestyle/gym-nails",
+          "place_in_section": "Conclusion",
+          "placement_context": "Closing line bridging to durability-focused nails for other high-activity daily contexts",
+          "link_type": "cluster-pillar"
+        },
+        {
+          "anchor_text": "nails for piano players",
+          "full_url": "/blog/nails-by-lifestyle/musician-nails",
+          "place_in_section": "Nail Shapes to Avoid (Or Modify) for Heavy Typing",
+          "placement_context": "When noting that some functional-constraint problems (typing) have parallels in other precision hand-use contexts",
+          "link_type": "cluster-spoke"
+        },
+        {
+          "anchor_text": "nails for manual labor",
+          "full_url": "/blog/nails-by-lifestyle/manual-labor-nails",
+          "place_in_section": "How to Type With Long Nails Without Breaking Them",
+          "placement_context": "When discussing reinforcement/durability strategies that parallel other hands-on daily-wear contexts",
+          "link_type": "cluster-spoke"
+        },
+        {
+          "anchor_text": "why the almond tip is more prone to breaking than square or oval",
+          "full_url": "https://mirelleinspo.com/blog/why-almond-nails-keep-breaking",
+          "place_in_section": "The Best Nail Shape for Typing: Ranked",
+          "placement_context": "Inside the short almond entry, when acknowledging the shape's structural tradeoff despite being the top pick",
+          "link_type": "cross-site"
+        }
+      ]
+    },
+
+    "block_6_aeo_geo_plan": {
+      "aeo_assignments": [
+        {
+          "aeo_term": "What is the best nail shape for typing?",
+          "assigned_to_section": "The Best Nail Shape for Typing: Ranked",
+          "execution": "Write a direct 2-3 sentence answer paragraph IMMEDIATELY after the H2 heading — before any elaboration. This is what gets picked up by AI answer engines."
+        },
+        {
+          "aeo_term": "How many millimeters of nail is too long for comfortable typing?",
+          "assigned_to_section": "How Long Is Too Long? The 3-5mm Rule",
+          "execution": "Write a direct 2-3 sentence answer paragraph immediately after the H2 heading, stating the 3-5mm range plainly before explaining why."
+        },
+        {
+          "aeo_term": "How do I type with long nails without breaking them?",
+          "assigned_to_section": "How to Type With Long Nails Without Breaking Them",
+          "execution": "Write a direct 2-3 sentence answer paragraph immediately after the H2 heading naming the finger-pad technique as the core answer."
+        },
+        {
+          "aeo_term": "Does nail shape actually affect typing speed?",
+          "assigned_to_section": "Why Nail Shape Actually Affects How You Type",
+          "execution": "Write a direct 2-3 sentence answer paragraph immediately after the H2 heading confirming yes, with the contact-geometry reason stated plainly."
+        }
+      ],
+      "geo_entity_statements": [
+        {
+          "entity": "Squoval (nail shape)",
+          "assigned_to_section": "The Best Nail Shape for Typing: Ranked",
+          "execution": "Write a clear declarative definition sentence: squoval is a square nail shape with softened, rounded corners — confident, no hedging."
+        },
+        {
+          "entity": "Finger-pad typing technique",
+          "assigned_to_section": "How to Type With Long Nails Without Breaking Them",
+          "execution": "Write a clear declarative definition sentence describing the technique as striking keys with the fleshy pad of the fingertip rather than the nail tip, by flattening finger angle slightly."
+        }
+      ]
+    },
+
+    "block_7_active_constraints": {
+      "em_dash_banned": "Long em dash does not appear anywhere. If one forms while writing — stop, replace with: comma / new sentence / parentheses / but / restructure.",
+      "banned_vocab_watch": [
+        "elevate",
+        "unleash",
+        "game-changer",
+        "seamless",
+        "effortlessly chic",
+        "elevated",
+        "must-have",
+        "in today's world"
+      ],
+      "american_english_active": "color, recognize, -ize, -or — every instance, no exceptions. This post uses American English, not British.",
+      "keyword_density_reminder": "After every 2 H2 sections — count current keyword mentions. Verify running total is on track to hit the hardcoded mention target (7 total). First half must run denser than second half. Adjust if needed.",
+      "image_path_reminder": "/images/blog/nails-by-lifestyle/typing-nails/filename.webp — topic_slug in path always",
+      "internal_link_url_reminder": "Full correct paths only. Cluster links = /blog/nails-by-lifestyle/[slug]. Cross-site links = exact URL as discovered. Never bare /slug.",
+      "hero_image_reminder": "Hero = frontmatter only. Never place hero image in body.",
+      "strong_tag_reminder": "Every primary keyword mention = <strong> tags. Scan after every paragraph."
+    }
+  }
+}
