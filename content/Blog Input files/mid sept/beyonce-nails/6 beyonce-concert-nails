@@ -1,0 +1,286 @@
+# BLOG GEN AGENT INPUT FILE — beyonce-concert-nails
+
+## SECTION 1: FILE AUTHORITY
+THIS FILE IS THE SINGLE SOURCE OF TRUTH FOR THE BLOG GEN AGENT. All values in POST_CONSTANTS are hardcoded — Blog Gen Agent does not ask, adjust, or override them. All keywords, H2 structure, audience intelligence, internal links, and tone defined here must be followed exactly.
+
+## SECTION 2: POST_CONSTANTS
+- slug: beyonce-concert-nails
+- topic_slug: beyonce-nails
+- canonical: https://mirelleinspo.com/blog/beyonce-nails/beyonce-concert-nails
+- post_type: spoke
+- intent: inspirational
+- word_count: 2400 (±50)
+- image_count: 7 (1 hero + 6 body — flat default rule, intent = inspirational, not tutorial/comparison/pillar/40+ slug)
+- show_inspo_gallery_link: false (cluster default, verbatim from cluster_context.json)
+- template: posts
+- hero_dimensions: 1200x675
+- category: Nail Inspiration
+- publish_date: 2026-09-15
+- author: jyoti-mirelle
+
+## SECTION 3: CLUSTER SNAPSHOT
+- pillar_slug: beyonce-nail-ideas
+- pillar_title: Beyoncé Nails: Iconic Manicure Ideas Through the Years
+- pillar_primary_keyword: beyonce nails
+- this_post_slug: beyonce-concert-nails
+- this_post_role: spoke
+- show_inspo_gallery_link_cluster_default: false
+- keywords_to_avoid: beyonce nails, cowboy carter nails, denim nails, renaissance tour nails, queen bee nails (all owned by sibling posts — never used as focus terms)
+
+## SECTION 4: SERP ANALYSIS
+
+**competitor_gaps** (demand-validated 2+ sources):
+- No single page organizes Beyoncé nail ideas BY ERA specifically for concert-prep purposes (Pinterest + YouTube + editorial all show era-segmented demand: Cowboy Carter/denim, Renaissance/silver, Queen Bee/gold — but no one page structures a full concert-nails guide this way)
+- No competitor gives practical "how long will this last through a 3-hour show" / longevity advice specific to concert conditions (confirmed gap vs. on-site Benson Boone Nails precedent, which readers respond to; also validated by general "concert nails" content universally covering durability)
+- No competitor pairs nail ideas with what to actually wear/outfit context, despite Pinterest showing "concert nails" and "concert outfit" searched together constantly (2+ sources: Pinterest boards, general concert-nail blogs)
+- DIY vs. salon timing guidance (how many days before the show to get nails done) is present in general concert-nail content and the Benson Boone template but absent from every Beyoncé-specific competitor page
+
+**missing_semantic_territory**: "what to wear to a Beyoncé concert" (nails angle), era-specific pairing language (Cowboy Carter/denim/western, Renaissance/silver/chrome, Queen Bee/gold/honeycomb), concert-longevity terms (gel base, sealed tips, cuticle oil), DIY press-on vs. salon gel framing — all present in adjacent content (general concert-nail blogs, on-site Benson Boone template) but absent from Beyoncé-specific competitor pages.
+
+**our_strategic_approach**: The five real competitor pages fetched are either thin image galleries with almost no editorial substance (The Beauty Pursuit: ~250 words, zero H2 structure, just an Instagram-sourced image dump) or era-locked single-topic pieces (Bustle/xoNecole: Renaissance-only; Bangstyle: denim-only) — none actually organizes a full, multi-era "what to wear to the show" concert guide the way search and social demand clearly calls for. This post will structure content explicitly by era (Cowboy Carter/denim-western, Renaissance/silver-chrome, Queen Bee/gold-honeycomb, plus a "classic/any era" catch-all), give real DIY-vs-salon and longevity guidance the competitors skip entirely, and front-load the practical "what to wear to the show" framing that Pinterest and YouTube demand data validates but no fetched competitor delivers in full. This directly mirrors the successful on-site format (Benson Boone Nails, Bruno Mars Nails) already proven to work for this exact content type.
+
+**top_5_fetched_pages_summary**:
+| Page | Word count | H2 count | Keyword mentions | Note |
+|---|---|---|---|---|
+| thebeautypursuit.com/beyonce-nails/ | ~250 | 0 | 1 (in meta only) | Pure image gallery, zero editorial substance, no real structure |
+| bangstyle.com (denim nails) | ~520 | 3 | 1 ("Beyoncé concert nails selfies") | Real editorial but denim-only, not concert-focused |
+| bustle.com (Renaissance tour) | ~260 | 12 (one per idea) | 0 exact-phrase | Renaissance-era only, light captions per idea |
+| btartboxnails.com (Beyoncé nails guide) | ~1050 | 6 + FAQ | 0 exact-phrase | Strong real content but general "beyonce nails," not concert-specific |
+| xonecole.com (silver nail styles) | ~230 | 10 (one per idea) | 0 exact-phrase | Renaissance/silver-only, uses "concert" once in body |
+
+**top_5_word_count_average**: ~462 words
+**top_5_keyword_density_average**: ~0.4 exact-phrase mentions (essentially none of the 5 use "beyonce concert nails" as an exact phrase in body copy more than once, if at all)
+
+**recommended_image_count_validation**: 7 images (1 hero + 6 body) matches SERP visual density patterns — competitor pages are image-heavy (Beauty Pursuit uses 65 images, Bustle uses 12), confirming inspirational-intent readers expect strong visual density; 6 body images (one per era section + 1 extra) is proportionate without over-indexing into gallery-dump territory.
+
+**best_external_sources_found**: None of the 5 fetched pages qualify as genuinely citation-worthy authoritative sources for this specific post — all are either thin galleries or narrowly single-era pieces. Section 13 is empty.
+
+## SECTION 5: AUDIENCE INTELLIGENCE
+
+**who_they_are**: Beyoncé fans (Beyhive) who have a ticket to an upcoming show or are attending soon, searching same-week or within days of the concert. Mostly not professional nail artists — DIY-curious or planning a salon visit, wanting a concrete, screenshot-able direction rather than abstract inspiration.
+
+**what_they_want_from_this_post**: A clear, era-organized answer to "what nails should I get for the show" — not a random scroll of 65 unstructured images. They want to match their manicure to whichever Beyoncé era/tour they're attending or feel connects to, with enough practical detail (how long before the show, DIY vs salon) to actually act on it before the concert date.
+
+**what_frustrates_them**: Existing content is either a giant unstructured image dump (The Beauty Pursuit's 65-image gallery with zero guidance) or locked to just one era (Renaissance-only, denim-only) with no acknowledgment that Beyoncé has multiple distinct nail aesthetics fans might want to choose between.
+
+**top_5_pain_points**:
+1. Can't find nail ideas organized by which Beyoncé era/tour they're actually attending
+2. No guidance on how many days before the show to book the appointment
+3. Uncertain whether press-ons/DIY will hold up through a full concert (dancing, phone-holding, crowd contact)
+4. Overwhelmed by unstructured image galleries with no context or how-to
+5. Want the look to pair with their outfit but content treats nails and outfit as separate topics
+
+**exact_user_phrases** (from Pinterest, YouTube, editorial research):
+- "what to wear to Beyoncé concert"
+- "nails for Beyonce concert"
+- "concert-ready vibe"
+- "Beyoncé concert nails selfies"
+- "queen b concert nails"
+- "cute nail designs for concerts"
+- "Beyhive-approved"
+- "your next tour manicure"
+- "concert nail inspo"
+- "nails I wore to [tour]"
+- "easy Beyonce tour nails"
+- "Beyonce concert nail ideas — choose your perfect nail look"
+
+**intent_content_signals**: Strong preference for era/aesthetic-segmented content over flat lists; visual density expected (multiple images per section); DIY tutorial-adjacent language ("how-to," "easy") alongside pure inspiration; DIY vs. salon distinction valued; DIY timing before an event matters to this reader (confirmed via the Benson Boone on-site template's strong emphasis on "book 3-5 days before").
+
+## SECTION 6: SEMANTIC KEYWORD DATA
+
+**primary_keyword**: beyonce concert nails
+
+**total_mention_target**: 3 (top_5_keyword_density_average of ~0.4, rounded to 1, + 2-3 additional mentions per rule = 3-4; locking at 3 given natural density for a phrase this specific — over-repeating "beyonce concert nails" verbatim reads unnaturally, so the target stays conservative while satisfying the first-100-words rule)
+
+**keyword_variations**: Beyoncé concert nails, Beyonce concert nail ideas, nails for a Beyoncé concert, Beyoncé concert manicure, Beyoncé show nails, nails to wear to Beyoncé's concert
+
+**cluster_keywords** (cleared against keyword_do_not_use — none overlap with cowboy carter nails / denim nails / renaissance tour nails / queen bee nails / beyonce nails as primary focus): concert-ready nails, tour manicure, Beyhive nail inspo, era-specific nail ideas, what to wear to a concert, DIY concert nails, press-on nails for concerts, salon nails before a show, nail longevity for events, concert outfit nails, Queen Bey manicure, show-ready manicure
+
+**lsi_terms** (from autocomplete + real competitor page content): chrome finish, gel base, sealed tips, cuticle oil, rhinestone accent, press-on nails, salon gel manicure, acrylic set, matte top coat, glazed finish, French tip, stiletto shape, almond shape, coffin nails, accent nail, nail longevity, arena lighting, dancing durability, concert-ready manicure, tour-ready nails
+
+**aeo_terms**: What nails should I get for a Beyoncé concert? / How far in advance should I get concert nails done? / Do press-on nails last through a whole concert? / What color nails go with a Cowboy Carter outfit? / What's the best nail shape for Beyoncé-inspired nails? / How do I make my nails last all night at a concert? / What nail ideas match the Renaissance tour aesthetic? / Can I DIY Beyoncé concert nails at home? / What nails did Beyoncé wear on tour? / How do I choose which Beyoncé era to match my nails to?
+
+**technical_terms**: chrome powder, gel polish, acrylic extension, dotting tool, nail tape, topcoat seal, cure time, dip powder
+
+**user_language**: "concert-ready vibe," "Beyhive-approved," "your next tour manicure," "nails I wore to the show," "easy tour nails," "choose your perfect nail look," "queen b nails," "show-stopper nails," "screenshot-able"
+
+## SECTION 7: VOICE & AI QUERIES
+
+1. What nails should I get for a Beyoncé concert?
+2. How far in advance should I book my nails before a Beyoncé show?
+3. Do press-on nails last through a whole concert?
+4. What color nails go best with a Cowboy Carter tour outfit?
+5. What nail shape works best for Beyoncé-inspired concert nails?
+6. How do I make my manicure last all night at a concert?
+7. What nail ideas match the Renaissance tour aesthetic?
+8. Can I do Beyoncé concert nails myself at home?
+9. What nails did Beyoncé wear during her tours?
+10. How do I pick which Beyoncé era to base my nails on?
+11. Are rhinestone nails practical for a concert?
+12. What's the difference between DIY press-ons and salon gel for concert nails?
+13. What gold nail designs match the Queen Bee aesthetic?
+14. How do I keep my nail tips from chipping during a show?
+15. What silver nail ideas work for the Renaissance tour?
+
+## SECTION 8: HOOK AND CTR (LOCKED FROM USER SELECTION)
+
+**real_serp_findings_summary**: Fetched competitor titles either lean heavily on raw idea-count with no organizing structure ("65 Beyonce nail inspiration ideas," "12 Nail Art Designs") or lock to a single era (Renaissance-only, denim-only), with none framing the content around "which era are you attending" as an organizing principle. The clearest opportunity is a title that promises era-by-era organization plus a practical "what to wear to the show" angle, since no fetched competitor combines both.
+
+**selected_option_rationale**: This option front-loads the primary keyword in the first 3 words, uses the number/specificity trigger (20 ideas) paired with the "every era" framing that directly addresses the #1 confirmed pain point (lack of era-organized content), and signals comprehensiveness without resorting to an overwhelming raw count like "65."
+
+**title**: Beyoncé Concert Nails: 20 Ideas For Every Era Of The Show
+**title_char_count**: 58
+**meta_description**: Heading to a show? Match your manicure to her era — Cowboy Carter denim, Renaissance silver, or Queen Bee gold — plus tips to make it last all night.
+**meta_char_count**: 154
+
+**intro_hook_brief**: Open by naming the exact frustration validated in research — the overwhelming, unstructured image-dump problem (65 photos, no organization) — then immediately promise the era-by-era fix. Emotional angle: relief/clarity for someone tabs-deep in Pinterest boards the week of a show.
+
+**first_h2_hook_direction**: Apply the "pick your era" framing directly — first H2 should help the reader identify which era/tour they're attending or vibing with before diving into specific looks, subtly extending the title's organizing promise without repeating it.
+
+## SECTION 9: SEARCH JOURNEY
+
+**reader_arrival_state**: Slightly overwhelmed and short on time — has a show coming up soon, has been scrolling scattered Pinterest boards and image dumps, wants a fast, clear answer.
+
+**journey_arc**:
+- Hook: acknowledge the scattered-content frustration, promise era-organized clarity
+- Deliver: help reader identify their era/tour first (orientation before options)
+- Build: move through each era's nail ideas with visual abundance
+- Practical: DIY vs. salon and longevity guidance (the confirmed gap competitors skip)
+- Close: reader feels equipped and confident walking into their appointment or DIY session
+
+**promise_to_deliver**: A complete, era-organized answer to "what nails should I get for the show" plus the practical logistics (timing, DIY vs salon, longevity) that no competitor page currently provides in one place.
+
+**exit_state**: Confident and ready — knows exactly which look to bring to their nail tech or recreate at home, with zero lingering uncertainty about timing or durability.
+
+## SECTION 10: CONTENT STRUCTURE
+
+**h1**: Beyoncé Concert Nails: 20 Ideas For Every Era Of The Show
+
+**h2_structure**:
+1. Which Beyoncé Era Are You Seeing?
+2. Cowboy Carter & Western Concert Nail Ideas
+3. Renaissance Tour Silver & Chrome Nail Ideas
+4. Queen Bee Gold & Honeycomb Nail Ideas
+5. Classic Beyoncé Nails For Any Era
+6. DIY vs. Salon: How To Get These Nails Done
+7. How To Make Concert Nails Last All Night
+
+**word_budget**:
+- introduction: 220 words
+- H2-1 (Which Era): 200 words
+- H2-2 (Cowboy Carter): 400 words
+- H2-3 (Renaissance): 400 words
+- H2-4 (Queen Bee): 380 words
+- H2-5 (Classic): 300 words
+- H2-6 (DIY vs Salon): 280 words
+- H2-7 (Longevity): 250 words
+- conclusion: 170 words
+(Total: ~2400 words)
+
+## SECTION 11: INTERNAL LINKS
+
+| URL/Slug | Title | Anchor Text | Placement | Type |
+|---|---|---|---|---|
+| /blog/beyonce-nails/beyonce-nail-ideas | Beyoncé Nails: Iconic Manicure Ideas Through the Years | Beyoncé nail ideas through the years | H2-1 (Which Era) | cluster-pillar |
+| /blog/beyonce-nails/cowboy-carter-nails | Cowboy Carter Nails: Western-Inspired Manicure Ideas | Cowboy Carter Western-inspired nail ideas | H2-2 (Cowboy Carter) | cluster-spoke |
+| /blog/beyonce-nails/denim-nails-beyonce | Denim Nails: Beyoncé's Cowboy Carter Trend | denim nails from her Cowboy Carter era | H2-2 (Cowboy Carter) | cluster-spoke |
+| /blog/beyonce-nails/renaissance-tour-silver-nails | Renaissance Tour Silver Nail Ideas | Renaissance Tour silver nail ideas | H2-3 (Renaissance) | cluster-spoke |
+| /blog/beyonce-nails/queen-bee-nails | Queen Bee Nails: Gold & Honeycomb Manicure Ideas | Queen Bee gold and honeycomb nail ideas | H2-4 (Queen Bee) | cluster-spoke |
+| https://mirelleinspo.com/blog/benson-boone-nails | Benson Boone Nails: 20 Concert-Ready Ideas for 2026 | 20 concert-ready ideas for another artist's tour | H2-6 (DIY vs Salon) | cross-site |
+
+(5 internal links total — within the 4-6 cap; no gallery_link since show_inspo_gallery_link is false)
+
+## SECTION 12: VOICE & TONE
+
+**recommended_voice**: Warm, in-the-know friend — enthusiastic Beyhive insider giving practical, no-fluff advice
+
+**tone_characteristics**: Excited but organized (not breathless); practical and specific (real timing/technique advice, not vague inspiration); inclusive of both DIY and salon readers; confident in structure (era-first organization signals expertise); light pop-culture fluency without over-explaining who Beyoncé is
+
+**language_style**: Second person ("you"), short punchy sentences mixed with longer explanatory ones, direct address of the reader's specific situation ("if your show is this weekend...")
+
+**audience_match**: This voice matches a reader who is a genuine fan (doesn't need Beyoncé explained) but is time-pressed and wants actionable clarity — friendly authority rather than distant editorial tone.
+
+## SECTION 13: EXTERNAL LINKS
+(Empty — no fetched competitor page qualified as genuinely citation-worthy per phase_3 findings)
+
+## SECTION 14: EXECUTION PLAN
+
+### Block 1: Keyword Execution
+- primary_keyword: beyonce concert nails
+- top_5_density_baseline: ~0.4 (rounds to near-zero across fetched competitors)
+- total_mention_target: 3 total mentions
+- first_100_words_plan:
+  - mention_1: sentence 2 of introduction — naming the post's core promise
+  - mention_2: sentence 5-6 of introduction — reinforcing before transitioning to H2-1
+- first_half_target: 2 mentions — first 1200 words
+- second_half_target: 1 mention — second 1200 words
+- strong_tag_rule: All 3 mentions wrapped in `<strong>` tags, no exceptions
+- keywords_to_avoid_active: beyonce nails, cowboy carter nails, denim nails, renaissance tour nails, queen bee nails
+
+### Block 2: Word Budget
+- total_target: 2400 words (±50)
+- introduction: 220
+- conclusion: 170
+- h2_budgets:
+  - Which Beyoncé Era Are You Seeing?: 200 words, low complexity
+  - Cowboy Carter & Western Concert Nail Ideas: 400 words, medium complexity
+  - Renaissance Tour Silver & Chrome Nail Ideas: 400 words, medium complexity
+  - Queen Bee Gold & Honeycomb Nail Ideas: 380 words, medium complexity
+  - Classic Beyoncé Nails For Any Era: 300 words, low complexity
+  - DIY vs. Salon: How To Get These Nails Done: 280 words, medium complexity
+  - How To Make Concert Nails Last All Night: 250 words, medium complexity
+- tracking_rule: Track running word total after every H2; cut before moving on if over budget.
+
+### Block 3: Image Plan
+- total_images: 7
+- hero_image: frontmatter only, never in body
+- body_images: 6
+- assignments:
+  1. place_after: H2-2 (Cowboy Carter) — image_type: standard_inspiration — denim/western-toned nail set, cowboy-era styling
+  2. place_after: H2-2 (Cowboy Carter), second image — image_type: standard_inspiration — alternate western nail look (e.g. star/stitch motif)
+  3. place_after: H2-3 (Renaissance) — image_type: standard_inspiration — silver/chrome nail set
+  4. place_after: H2-3 (Renaissance), second image — image_type: standard_inspiration — alternate chrome/holographic look
+  5. place_after: H2-4 (Queen Bee) — image_type: standard_inspiration — gold/honeycomb bee-themed nail set
+  6. place_after: H2-5 (Classic) — image_type: standard_inspiration — versatile gold-accent or nude-chrome look suited to any era
+- image_type_rule: All 6 slots are standard_inspiration — no infographic needed (inspirational intent, no comparison/tutorial content requiring a diagram)
+- path_rule: /images/blog/beyonce-nails/beyonce-concert-nails/filename.webp
+
+### Block 4: Opening Technique Assignments
+- Introduction: Technique 2 (relatable frustration naming)
+- Which Beyoncé Era Are You Seeing?: Technique 4 (direct question)
+- Cowboy Carter & Western: Technique 3 (the reframe)
+- Renaissance Tour Silver & Chrome: Technique 1 (the claim)
+- Queen Bee Gold & Honeycomb: Technique 4 (direct question)
+- Classic Beyoncé Nails: Technique 3 (the reframe)
+- DIY vs. Salon: Technique 1 (the claim)
+- How To Make Concert Nails Last: Technique 4 (direct question)
+- Conclusion: Technique 3 (the reframe)
+- banned_opener_rule: Check every opener against banned_opening_approaches in Blog Gen prompt before writing the second sentence
+
+### Block 5: Link Placements
+1. anchor: "Beyoncé nail ideas through the years" | url: /blog/beyonce-nails/beyonce-nail-ideas | section: H2-1 | context: referencing the full retrospective for readers wanting more history | type: cluster-pillar
+2. anchor: "Cowboy Carter Western-inspired nail ideas" | url: /blog/beyonce-nails/cowboy-carter-nails | section: H2-2 | context: pointing to the dedicated deep-dive on this era | type: cluster-spoke
+3. anchor: "denim nails from her Cowboy Carter era" | url: /blog/beyonce-nails/denim-nails-beyonce | section: H2-2 | context: referencing the specific denim-technique breakdown | type: cluster-spoke
+4. anchor: "Renaissance Tour silver nail ideas" | url: /blog/beyonce-nails/renaissance-tour-silver-nails | section: H2-3 | context: pointing to the dedicated silver/chrome deep-dive | type: cluster-spoke
+5. anchor: "Queen Bee gold and honeycomb nail ideas" | url: /blog/beyonce-nails/queen-bee-nails | section: H2-4 | context: pointing to the dedicated gold/bee deep-dive | type: cluster-spoke
+6. anchor: "20 concert-ready ideas for another artist's tour" | url: https://mirelleinspo.com/blog/benson-boone-nails | section: H2-6 | context: cross-referencing the site's proven concert-nails format for readers who like this structure | type: cross-site
+
+### Block 6: AEO/GEO Plan
+- aeo_assignments:
+  - "What nails should I get for a Beyoncé concert?" → H2-1 → direct 2-3 sentence answer immediately after heading
+  - "How far in advance should I get concert nails done?" → H2-6 → direct answer paragraph
+  - "Do press-on nails last through a whole concert?" → H2-7 → direct answer paragraph
+  - "What color nails go with a Cowboy Carter outfit?" → H2-2 → direct answer paragraph
+- geo_entity_statements:
+  - entity: "chrome finish" → H2-3 → clear declarative definition
+  - entity: "gel base" → H2-7 → clear declarative definition tied to longevity
+
+### Block 7: Active Constraints
+- em_dash_banned: no long em dashes anywhere; replace with comma/new sentence/parentheses/but/restructure
+- banned_vocab_watch: "elevate," "unleash," "must-have," "game-changer," "in today's world," "when it comes to"
+- american_english_active: color, honeycomb-colored (not colour), favorite, jewelry — every instance
+- keyword_density_reminder: after every 2 H2 sections, count mentions; verify pace toward 3 total, denser in first half
+- image_path_reminder: /images/blog/beyonce-nails/beyonce-concert-nails/filename.webp
+- internal_link_url_reminder: full paths only, never bare /slug
+- hero_image_reminder: frontmatter only, never in body
+- strong_tag_reminder: all 3 primary keyword mentions wrapped in `<strong>` tags
