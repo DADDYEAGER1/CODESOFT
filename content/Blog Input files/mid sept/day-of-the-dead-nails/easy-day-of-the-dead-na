@@ -1,0 +1,577 @@
+{
+  "section_1_file_authority": {
+    "statement": "THIS FILE IS THE SINGLE SOURCE OF TRUTH FOR THE BLOG GEN AGENT. All values in POST_CONSTANTS are hardcoded — Blog Gen Agent does not ask, adjust, or override them. All keywords, H2 structure, audience intelligence, internal links, and tone defined here must be followed exactly."
+  },
+
+  "section_2_post_constants": {
+    "slug": "easy-day-of-the-dead-nails",
+    "topic_slug": "day-of-the-dead-nails",
+    "canonical": "https://mirelleinspo.com/blog/day-of-the-dead-nails/easy-day-of-the-dead-nails",
+    "post_type": "spoke",
+    "intent": "tutorial",
+    "word_count": 2350,
+    "image_count": 4,
+    "show_inspo_gallery_link": false,
+    "template": "split-left",
+    "hero_dimensions": "800x800",
+    "category": "Halloween Nails",
+    "publish_date": "2026-09-18",
+    "author": "jyoti-mirelle"
+  },
+
+  "section_3_cluster_snapshot": {
+    "pillar_slug": "day-of-the-dead-nail-ideas",
+    "pillar_title": "Day of the Dead Nail Ideas",
+    "pillar_primary_keyword": "day of the dead nails",
+    "this_post_slug": "easy-day-of-the-dead-nails",
+    "this_post_role": "spoke",
+    "show_inspo_gallery_link_cluster_default": false,
+    "keywords_to_avoid": [
+      "day of the dead nails",
+      "sugar skull nails",
+      "catrina nails",
+      "marigold nails",
+      "cempasuchil nails",
+      "cempasuchil flower nails",
+      "day of the dead press on nails",
+      "day of the dead nail symbolism",
+      "book of life nails"
+    ]
+  },
+
+  "section_4_serp_analysis": {
+    "blog_gen_instruction": "our_strategic_approach is a specific, evidence-based outperform strategy, not a vague gap-fill statement. Use it as the concrete angle for the introduction and conclusion, and to guide depth/coverage decisions in relevant H2 sections.",
+    "competitor_gaps": [
+      "No fetched competitor page breaks down WHY beginner sugar skull attempts go wrong (uneven dots, thick lines) or gives a fix — they show finished looks or a single loose step list, never a troubleshooting angle. Confirmed via general 'easy nail art for beginners' research showing this is a real, answerable pain point.",
+      "No competitor explains tool substitutions (bobby pin / toothpick as DIY dotting tools) specifically in a Day of the Dead context, despite this being standard practice in adjacent beginner nail art content (confirmed on 2+ sources: L'Oréal Paris DIY dotting tool alternatives, multiple beginner nail art guides).",
+      "No competitor gives a genuinely simplified sugar skull method building from single elements (dots → eyes → nose → mouth) as a repeatable formula; isabelnailedit gestures at 'an easier alternative' in one sentence but doesn't build it into a teachable sequence.",
+      "None of the 5 fetched pages address short-nail-specific sizing/placement, despite 'short nails' + Day of the Dead nail art appearing as a real search modifier (TikTok 'Day of The Dead Nails Design Short' — 319.6K posts) and Pinterest boards for 'Easy Skull Nail Art' / 'Simple Sugar Skull Nails' confirming beginner + simple + short is a genuine audience cluster, not a single-source guess."
+    ],
+    "missing_semantic_territory": [
+      "'dotting tool' as a named, explained technique (only Her Vogue Life mentions it in passing under a generic beginner H2 without technique detail)",
+      "'DIY dotting tool' / bobby pin and toothpick substitutes — absent from every fetched Day of the Dead page",
+      "'short nails' pairing with easy/simple Day of the Dead design — confirmed demand (TikTok + Pinterest) but zero competitor coverage",
+      "'press-on alternative' as an explicit fallback framing for readers who try DIY first — mentioned generically in Huesthetic but never built out as a real decision point"
+    ],
+    "our_strategic_approach": "None of the 5 fetched competitor pages actually teach the beginner reader how to execute a simple design step by step with troubleshooting built in — they either show galleries (isabelnailedit, NailDesignsSavvy, nailhow, livingyourtwenties) or bury one generic 'beginner' H2 inside a much larger 25-design roundup (Her Vogue Life). This post's edge is treating 'easy' as an actual teaching promise: a real dotting-tool technique explanation (why dots go uneven and the fix), genuine tool substitutes using household items, and a repeatable simplified skull-building formula — all things zero competitors currently do for this keyword. Structurally, this post stays tighter and more actionable than the 1250–2600 word galleries it's up against, trading design-count for real how-to depth, and closes the short-nails gap that TikTok and Pinterest both validate but no competitor page addresses at all.",
+    "top_5_fetched_pages_summary": [
+      {
+        "url": "https://isabelnailedit.wordpress.com/2015/11/02/day-of-the-dead-el-dia-de-los-muertos-skull-nails/",
+        "word_count": 450,
+        "h2_count": 0,
+        "keyword_mentions": 1,
+        "note": "Real single-design tutorial with genuine step sequence; mentions an 'easier alternative' in one sentence but never develops it. No headings at all — pure prose flow."
+      },
+      {
+        "url": "https://hervoguelife.com/dia-de-los-muertos-nail-ideas/",
+        "word_count": 2600,
+        "h2_count": 8,
+        "keyword_mentions": 2,
+        "note": "Comprehensive 25-design roundup with a dedicated 'Easy DIY Techniques for Beginners' H2, but it's one section out of eight — beginner content is diluted, not the focus."
+      },
+      {
+        "url": "https://naildesignssavvy.com/dia-de-los-muertos-nails/",
+        "word_count": 1250,
+        "h2_count": 20,
+        "keyword_mentions": 0,
+        "note": "Pure numbered gallery, no technique instruction; FAQ section names 'easy' design types (sugar skull accents, floral, colorful tips) but gives zero how-to detail."
+      },
+      {
+        "url": "https://nailhow.com/day-of-the-dead-nail-designs-vibrant-souls-on-your-nails/",
+        "word_count": 450,
+        "h2_count": 6,
+        "keyword_mentions": 0,
+        "note": "Has a genuine 'DIY Day of the Dead Nail Art Ideas' H2 with a real basic-technique paragraph, but it's four sentences total inside a much larger 98-image gallery page."
+      },
+      {
+        "url": "https://livingyourtwenties.com/day-of-the-dead-nails/",
+        "word_count": 250,
+        "h2_count": 1,
+        "keyword_mentions": 0,
+        "note": "Thinnest of the five — pure Instagram-embed gallery with almost no original text or technique guidance."
+      }
+    ],
+    "top_5_word_count_average": 1000,
+    "top_5_keyword_density_average": 0.6,
+    "best_external_sources_found": [
+      {
+        "url": "https://hervoguelife.com/dia-de-los-muertos-nail-ideas/",
+        "why": "Genuinely comprehensive editorial piece (2600 words, 8 H2s, real FAQ section) with a dedicated beginner-technique section — the strongest, most citation-worthy of the five fetched pages."
+      }
+    ]
+  },
+
+  "section_5_audience_intelligence": {
+    "blog_gen_instruction": "This is your primary creative brief. Every paragraph written for this specific person with this specific intent. Satisfy them completely.",
+    "who_they_are": "Someone who wants to participate in Day of the Dead nail art but has little to no nail art experience and no salon budget or appointment time — likely painting their own nails at home the night before or day of. Distinct from the pillar's browsing-for-inspiration reader: this person has already decided they're doing it themselves and needs to know they can actually pull it off.",
+    "what_they_want_from_this_post": "A real, followable technique — not another gallery of finished looks they have no idea how to recreate. They want tool guidance (what to actually buy or improvise), a simplified design they can realistically finish, and reassurance that mistakes are fixable.",
+    "what_frustrates_them": "Every competitor page shows beautiful finished sugar skulls with zero instruction on how a beginner gets there — the gap between 'inspiration photo' and 'my actual attempt' is never addressed. Vague advice like 'use a dotting tool' with no explanation of technique, sizing, or what to do when dots come out uneven.",
+    "top_5_pain_points": [
+      "Doesn't own nail art tools and doesn't want to buy a full kit for one design",
+      "Worried freehand skull painting is beyond their skill level",
+      "Uncertain how to simplify a sugar skull without it looking unfinished or lazy",
+      "Has short nails and assumes intricate designs won't fit or work",
+      "No point of reference for how long this should realistically take"
+    ],
+    "exact_user_phrases": [
+      "easy day of the dead skeleton nail art",
+      "simple day of the dead nails short",
+      "easy skull nail art",
+      "simple sugar skull nails",
+      "an easier alternative for this design",
+      "you don't need to be a professional to pull them off",
+      "start with simple dotting tools and brushes",
+      "no prior nail art experience required",
+      "DIY dotting tool",
+      "easiest day of the dead skeleton"
+    ],
+    "intent_content_signals": [
+      "Wants numbered, sequential steps rather than a design gallery",
+      "Responds to explicit reassurance ('no prior experience required')",
+      "Wants tool substitutes (bobby pin, toothpick) called out explicitly, not assumed",
+      "Prefers one or two clearly explained designs over dozens of uninstructed photos",
+      "Values troubleshooting content (why something goes wrong, how to fix it) over pure aspiration"
+    ]
+  },
+
+  "section_6_semantic_keyword_data": {
+    "blog_gen_instruction": "Primary keyword in strong tags every mention. AEO terms trigger direct answer paragraphs. User language woven naturally. No term from keywords_to_avoid used as focus term.",
+    "primary_keyword": "easy day of the dead nails",
+    "keyword_variations": [
+      "simple day of the dead nails",
+      "easy day of the dead nail designs",
+      "beginner day of the dead nails",
+      "easy day of the dead nail art",
+      "quick day of the dead nails",
+      "simple day of the dead nail ideas",
+      "day of the dead nails for beginners"
+    ],
+    "cluster_keywords": [
+      "sugar skull nail art for beginners",
+      "simple skull nail design",
+      "DIY nail art tools",
+      "dotting tool technique",
+      "short nail sugar skull",
+      "at-home nail art",
+      "beginner nail art tutorial",
+      "Halloween nail art for beginners",
+      "no salon nail art",
+      "simple floral nail accent"
+    ],
+    "lsi_terms": [
+      "dotting tool",
+      "DIY dotting tool",
+      "bobby pin dotting tool",
+      "toothpick nail art",
+      "liner brush",
+      "base coat",
+      "top coat",
+      "white base color",
+      "acrylic paint nail art",
+      "negative space skull",
+      "single accent nail",
+      "step-by-step nail tutorial",
+      "beginner-friendly nail design",
+      "fresh polish dip",
+      "press straight down",
+      "short nail design",
+      "simplified sugar skull",
+      "nail art for first-timers",
+      "cuticle oil aftercare"
+    ],
+    "aeo_terms": [
+      "what is the easiest day of the dead nail design to do at home",
+      "how do you make simple sugar skull nails",
+      "what tools do I need for day of the dead nail art",
+      "can you do day of the dead nails without a dotting tool",
+      "how long does it take to do easy day of the dead nails",
+      "what colors are used for day of the dead nail art",
+      "how do you simplify a sugar skull nail design",
+      "are day of the dead nails hard to do yourself",
+      "what can I use instead of a dotting tool",
+      "how do you keep sugar skull nail dots even"
+    ],
+    "technical_terms": [
+      "dotting tool",
+      "liner brush",
+      "base coat",
+      "top coat",
+      "acrylic paint",
+      "negative space technique",
+      "accent nail"
+    ],
+    "user_language": [
+      "easier alternative",
+      "no prior nail art experience required",
+      "you don't need to be a professional",
+      "simple dotting tools and brushes",
+      "easiest day of the dead skeleton",
+      "start with a basic sugar skull design",
+      "even if you don't have a dotting tool"
+    ]
+  },
+
+  "section_7_voice_and_ai_queries": {
+    "blog_gen_instruction": "Answer every query directly in the relevant H2 section body. If a query cannot be addressed naturally in the body, route it to faqItems. No query left unanswered.",
+    "queries": [
+      "What is the easiest Day of the Dead nail design for a beginner?",
+      "How do you paint a simple sugar skull on your nails?",
+      "What tools do I actually need for easy Day of the Dead nails?",
+      "Can I do Day of the Dead nail art without a dotting tool?",
+      "What can I use instead of a dotting tool?",
+      "How long does an easy Day of the Dead manicure take?",
+      "Do I need acrylic paint or is regular nail polish fine?",
+      "How do you keep sugar skull dots from looking uneven?",
+      "What's a good Day of the Dead design for short nails?",
+      "How do you simplify a sugar skull design?",
+      "What colors work best for an easy Day of the Dead look?",
+      "Is Day of the Dead nail art hard to do at home?",
+      "How do you fix a nail art mistake while it's still wet?",
+      "What's a one-nail accent option for Day of the Dead?",
+      "Do you need a liner brush for Day of the Dead nails?"
+    ]
+  },
+
+  "section_8_hook_and_ctr": {
+    "blog_gen_instruction": "READ THIS SECTION BEFORE WRITING THE TITLE, META DESCRIPTION, INTRO, OR FIRST H2. The title and description here are the option the USER SELECTED from 2-3 real, evidence-based choices during phase_6 — use them exactly. The intro hook brief and first H2 hook direction are your creative brief for those specific elements, matching the selected option's angle. Do not deviate.",
+    "real_serp_findings_summary": "All 5 fetched competitor pages present finished designs with little to no real technique instruction — even the pages with a nominal 'beginner' or 'DIY' H2 (Her Vogue Life, nailhow) treat it as one small section inside a much larger gallery, not the actual promise of the page. None front-load 'easy' as a genuine teaching commitment in the title/meta the way the audience's Pinterest and TikTok language ('easy skull nail art,' 'simple day of the dead nails short') suggests they want.",
+    "selected_option_rationale": "This option leads with the specific gap found in step_2 — that no competitor actually delivers on 'easy' as a real, doable-at-home promise — and sets up the dotting-tool troubleshooting angle as proof the post follows through where others don't.",
+    "title": "15 Easy Day of the Dead Nails You Can Actually Do at Home",
+    "title_char_count": 57,
+    "meta_description": "Most Day of the Dead nail tutorials skip the beginner step. This one starts there — 15 easy designs with the tool tricks that make skulls foolproof.",
+    "meta_char_count": 151,
+    "intro_hook_brief": "Open by naming the specific gap: every gallery shows a finished sugar skull, none show how a beginner actually gets there. Promise this post closes that gap with a real technique, not just more photos.",
+    "first_h2_hook_direction": "Apply the 'actually doable' angle concretely — open the first H2 by naming the exact tool (dotting tool) and the one habit (fresh polish per dot) that separates a clean attempt from a messy one, echoing the title's promise immediately."
+  },
+
+  "section_9_search_journey": {
+    "blog_gen_instruction": "This is the emotional contract with the reader. Every section of the post must honour the promise made. Read this before writing any section. If a paragraph breaks the journey arc — rewrite it.",
+    "reader_arrival_state": "Motivated to try Day of the Dead nail art themselves but intimidated, worried their first attempt will look messy or amateurish compared to the polished designs they've seen online",
+    "journey_arc": [
+      "Open by removing the fear — name the exact reason beginner sugar skulls go wrong (not skill, technique) and promise a fix",
+      "Deliver the tool reality check early: what's actually needed, plus free household substitutes, so cost/access isn't a blocker",
+      "Walk through the simplified sugar skull method as a repeatable formula, building confidence design by design",
+      "Address short nails and single-accent options so readers with less nail real estate still feel served, not like an afterthought",
+      "Close with what a finished, genuinely home-done look feels like — proof the promise was kept"
+    ],
+    "promise_to_deliver": "That a first-timer with basic tools (or household substitutes) can finish a genuinely good-looking Day of the Dead design at home, because the real obstacle was never explained clearly until now",
+    "exit_state": "Confident and ready to actually start, not just inspired to keep scrolling for more ideas"
+  },
+
+  "section_10_content_structure": {
+    "blog_gen_instruction": "This H2 structure is research-driven and must be followed exactly. Do not rename, reorder, or remove H2s without user instruction. Word budget per section is set — follow it. H3s may be added at editorial discretion.",
+    "fields": {
+      "h1": "15 Easy Day of the Dead Nails You Can Actually Do at Home",
+      "h2_structure": [
+        "Why Beginner Sugar Skull Nails Go Wrong (And the One Fix That Matters)",
+        "What You Actually Need — No Full Kit Required",
+        "The Simplified Sugar Skull: A Repeatable Step-by-Step Method",
+        "Easy Marigold and Floral Accents for Non-Skull Days",
+        "The Best Easy Day of the Dead Designs for Short Nails",
+        "One-Nail Accent Ideas When You're Short on Time",
+        "Common Mistakes and Quick Fixes While the Polish Is Still Wet",
+        "Making It Last: Simple Aftercare for Your First Attempt"
+      ],
+      "word_budget": {
+        "introduction": "230 words",
+        "conclusion": "180 words",
+        "per_h2": [
+          {"heading": "Why Beginner Sugar Skull Nails Go Wrong (And the One Fix That Matters)", "words": 280},
+          {"heading": "What You Actually Need — No Full Kit Required", "words": 310},
+          {"heading": "The Simplified Sugar Skull: A Repeatable Step-by-Step Method", "words": 420},
+          {"heading": "Easy Marigold and Floral Accents for Non-Skull Days", "words": 260},
+          {"heading": "The Best Easy Day of the Dead Designs for Short Nails", "words": 260},
+          {"heading": "One-Nail Accent Ideas When You're Short on Time", "words": 220},
+          {"heading": "Common Mistakes and Quick Fixes While the Polish Is Still Wet", "words": 250},
+          {"heading": "Making It Last: Simple Aftercare for Your First Attempt", "words": 200}
+        ]
+      }
+    }
+  },
+
+  "section_11_internal_links": {
+    "blog_gen_instruction": "Every link below must appear in the post. Cluster links use anchor texts verbatim — do not rewrite. Cross-site links use the provided descriptive anchor. Place each link where the placement note says — woven naturally into prose, never as a standalone CTA. Total internal links must not exceed 6.",
+    "all_internal_links": [
+      {
+        "url_or_slug": "/blog/day-of-the-dead-nails/day-of-the-dead-nail-ideas",
+        "title": "Day of the Dead Nail Ideas",
+        "anchor_text": "Day of the Dead nail ideas",
+        "placement_note": "Introduction — pointing readers who want a broader design gallery to the pillar before this post narrows into technique",
+        "link_type": "cluster-pillar"
+      },
+      {
+        "url_or_slug": "/blog/day-of-the-dead-nails/day-of-the-dead-nail-symbolism",
+        "title": "What Day of the Dead Nail Symbols Mean",
+        "anchor_text": "what Day of the Dead nail symbols mean",
+        "placement_note": "In the simplified sugar skull H2 — brief nod to the meaning behind the skull motif before the how-to continues",
+        "link_type": "cluster-spoke"
+      },
+      {
+        "url_or_slug": "/blog/day-of-the-dead-nails/day-of-the-dead-press-on-nails",
+        "title": "Day of the Dead Press-On Nails",
+        "anchor_text": "Day of the Dead press-on nails",
+        "placement_note": "In the 'One-Nail Accent Ideas When You're Short on Time' H2 — offering press-ons as the no-DIY fallback for readers who decide freehand isn't for them",
+        "link_type": "cluster-spoke"
+      },
+      {
+        "url_or_slug": "/blog/day-of-the-dead-nails/marigold-nail-art",
+        "title": "Marigold Nail Art Ideas",
+        "anchor_text": "marigold nail art ideas",
+        "placement_note": "In the 'Easy Marigold and Floral Accents' H2 — linking out for readers who want more floral design variety beyond the simplified version taught here",
+        "link_type": "cluster-spoke"
+      },
+      {
+        "url_or_slug": "https://mirelleinspo.com/blog/nail-application-techniques/dotting-tool-nail-art-guide",
+        "title": "Dotting Tool Nail Art: 7 Designs Anyone Can Do at Home",
+        "anchor_text": "the full breakdown of dotting tool technique, including how to fix uneven dots",
+        "placement_note": "In 'What You Actually Need' H2 — deepens the tool-technique explanation for readers who want more than the Day of the Dead-specific version covered here",
+        "link_type": "cross-site"
+      },
+      {
+        "url_or_slug": "https://mirelleinspo.com/blog/halloween/diy-halloween-nails-at-home",
+        "title": "DIY Halloween Nails at Home (No Salon Skills Needed)",
+        "anchor_text": "the complete DIY Halloween nails at home tutorial for base prep through top coat",
+        "placement_note": "In 'Common Mistakes and Quick Fixes' H2 — points to the broader no-salon-skills tutorial for readers who want the full base-to-top-coat process, not just troubleshooting",
+        "link_type": "cross-site"
+      }
+    ]
+  },
+
+  "section_12_voice_tone": {
+    "blog_gen_instruction": "This is the voice for this specific post. Layer on top of Mirellé editorial framework. Do not default to generic AI tone.",
+    "recommended_voice": "Patient, hands-on instructor — the friend who's done this before and tells you the one thing nobody else mentions",
+    "tone_characteristics": [
+      "Reassuring without being condescending — treats the reader as capable, not fragile",
+      "Concrete and specific over vague encouragement ('re-dip after every dot,' not 'take your time')",
+      "Names the real cause of mistakes rather than hand-waving ('polish thickens,' not 'practice makes perfect')",
+      "Direct, second-person instruction — 'you' throughout, imperative verbs in steps",
+      "Light warmth, no forced enthusiasm — confidence comes from clarity, not cheerleading"
+    ],
+    "language_style": "Short, direct sentences for instructions; slightly longer sentences when reassuring or explaining the 'why' behind a technique. Heavy use of 'you.' Minimal metaphor — this reader wants clarity, not flourish.",
+    "audience_match": "A tutorial-intent, beginner reader responds to competence and specificity, not aspiration. This voice mirrors what actually worked in the research (isabelnailedit's plain step-by-step, the dotting tool guide's 'fix the polish, fix the dots' directness) rather than the generic inspirational tone used across the inspiration-mode spokes in this cluster."
+  },
+
+  "section_13_external_links": {
+    "blog_gen_instruction": "Include all external links where indicated. Supports E-E-A-T. Use anchor suggestion as guide — write naturally around it. Sourced from phase_3's best_external_sources_found (real fetched competitor pages), not from separate searches. May be empty (0-2 links) if none of the fetched pages qualified as genuinely citation-worthy — that is expected, not a gap to fill.",
+    "links": [
+      {
+        "url": "https://hervoguelife.com/dia-de-los-muertos-nail-ideas/",
+        "context": "When acknowledging the range of Day of the Dead nail art beyond the simplified designs this post teaches, as a jumping-off point for readers who want to see more advanced or varied looks",
+        "anchor_suggestion": "a wider gallery of Dia de los Muertos nail designs"
+      }
+    ]
+  },
+
+  "section_14_execution_plan": {
+    "purpose": "Blog Gen Agent reads this section FIRST — before frontmatter, before writing a single word. Every value here is pre-calculated from the input file data. Blog Gen Agent locks all values and executes them exactly.",
+    "blog_gen_instruction": "READ THIS SECTION FIRST. Lock every value. Execute exactly. Do not recalculate, do not adjust, do not deviate.",
+    "calculated_by": "Input Gen Agent",
+
+    "block_1_keyword_execution": {
+      "primary_keyword": "easy day of the dead nails",
+      "top_5_density_baseline": 0.6,
+      "total_mention_target": 3,
+      "first_100_words_plan": {
+        "rule": "Primary keyword MUST appear TWICE in the first 100 words. Mandatory. No exceptions.",
+        "mention_1": "sentence 1 of introduction — naming the promise directly in the opening line",
+        "mention_2": "sentence 3-4 of introduction — reinforcing the promise as the post's angle is set up against competitor gaps"
+      },
+      "first_half_target": "2 mentions — first 1175 words. Run denser in first half.",
+      "second_half_target": "1 mention — second 1175 words",
+      "strong_tag_rule": "EVERY single mention of the primary keyword — all 3 of them — wrapped in <strong> tags. No exceptions. Catch each one as it is written. Scan after every paragraph.",
+      "keywords_to_avoid_active": [
+        "day of the dead nails",
+        "sugar skull nails",
+        "catrina nails",
+        "marigold nails",
+        "cempasuchil nails",
+        "cempasuchil flower nails",
+        "day of the dead press on nails",
+        "day of the dead nail symbolism",
+        "book of life nails"
+      ]
+    },
+
+    "block_2_word_budget": {
+      "total_target": "2350 words — +/-50 words tolerance, never exceed",
+      "introduction": "230 words",
+      "conclusion": "180 words",
+      "h2_budgets": [
+        {"heading": "Why Beginner Sugar Skull Nails Go Wrong (And the One Fix That Matters)", "budget": "280 words", "complexity": "medium"},
+        {"heading": "What You Actually Need — No Full Kit Required", "budget": "310 words", "complexity": "low"},
+        {"heading": "The Simplified Sugar Skull: A Repeatable Step-by-Step Method", "budget": "420 words", "complexity": "high"},
+        {"heading": "Easy Marigold and Floral Accents for Non-Skull Days", "budget": "260 words", "complexity": "low"},
+        {"heading": "The Best Easy Day of the Dead Designs for Short Nails", "budget": "260 words", "complexity": "medium"},
+        {"heading": "One-Nail Accent Ideas When You're Short on Time", "budget": "220 words", "complexity": "low"},
+        {"heading": "Common Mistakes and Quick Fixes While the Polish Is Still Wet", "budget": "250 words", "complexity": "medium"},
+        {"heading": "Making It Last: Simple Aftercare for Your First Attempt", "budget": "200 words", "complexity": "low"}
+      ],
+      "tracking_rule": "Track running word total at the end of every H2 section. If a section is running over budget — cut before moving to the next section. Do not compensate later."
+    },
+
+    "block_3_image_plan": {
+      "total_images": 4,
+      "hero_image": "frontmatter only — NEVER appears in post body",
+      "body_images": 3,
+      "assignments": [
+        {
+          "image_number": 1,
+          "place_after": "The Simplified Sugar Skull: A Repeatable Step-by-Step Method",
+          "image_type": "infographic",
+          "section_context": "Step-sequence infographic showing the simplified sugar skull build order: base dot placement → eyes → nose → mouth → petal accents → top coat. Clean graphic layout, not a photo, per banned_absolutely rule."
+        },
+        {
+          "image_number": 2,
+          "place_after": "The Best Easy Day of the Dead Designs for Short Nails",
+          "image_type": "standard_inspiration",
+          "section_context": "An actual short-nail manicure styled with a simplified sugar skull or single floral accent nail, showing the design works at shorter lengths."
+        },
+        {
+          "image_number": 3,
+          "place_after": "One-Nail Accent Ideas When You're Short on Time",
+          "image_type": "standard_inspiration",
+          "section_context": "A finished manicure using a single accent nail (one sugar skull or marigold nail, rest in a solid base color) to visually reinforce the low-effort, high-impact option."
+        }
+      ],
+      "image_type_rule": {
+        "default": "standard_inspiration",
+        "infographic_allowed_when": "This post is tutorial intent with a genuine step sequence (the simplified sugar skull method) that benefits from a clean visual breakdown — qualifies for exactly one infographic slot.",
+        "banned_absolutely": "NEVER a tool/equipment image (hands holding a file, tools laid out, application shots showing hands or tools at work). NEVER a literal photo comparison — the step sequence must be a clean infographic, not process photography.",
+        "note_for_blog_gen": "Blog Gen Agent follows the image_type flagged here exactly per slot — it does not decide standard vs infographic on its own mid-write."
+      },
+      "path_rule": "/images/blog/day-of-the-dead-nails/easy-day-of-the-dead-nails/filename.webp — topic_slug in path, slug folder, leading slash"
+    },
+
+    "block_4_opening_technique_assignments": {
+      "rule": "No two consecutive sections use the same technique. Conclusion = Technique 1 or 3 only.",
+      "assignments": [
+        {"section": "Introduction", "technique": "Technique 1 — The Claim"},
+        {"section": "Why Beginner Sugar Skull Nails Go Wrong (And the One Fix That Matters)", "technique": "Technique 3 — The Reframe"},
+        {"section": "What You Actually Need — No Full Kit Required", "technique": "Technique 2 — The Direct Answer"},
+        {"section": "The Simplified Sugar Skull: A Repeatable Step-by-Step Method", "technique": "Technique 4 — The Instruction Open"},
+        {"section": "Easy Marigold and Floral Accents for Non-Skull Days", "technique": "Technique 2 — The Direct Answer"},
+        {"section": "The Best Easy Day of the Dead Designs for Short Nails", "technique": "Technique 3 — The Reframe"},
+        {"section": "One-Nail Accent Ideas When You're Short on Time", "technique": "Technique 1 — The Claim"},
+        {"section": "Common Mistakes and Quick Fixes While the Polish Is Still Wet", "technique": "Technique 4 — The Instruction Open"},
+        {"section": "Making It Last: Simple Aftercare for Your First Attempt", "technique": "Technique 2 — The Direct Answer"},
+        {"section": "Conclusion", "technique": "Technique 1 — The Claim"}
+      ],
+      "banned_opener_rule": "Check every opener against banned_opening_approaches in blog gen prompt before writing the second sentence"
+    },
+
+    "block_5_link_placements": {
+      "rule": "Every link placed exactly where specified. Anchor texts used verbatim — never rewritten. Links woven into prose naturally — never standalone CTAs.",
+      "links": [
+        {
+          "anchor_text": "Day of the Dead nail ideas",
+          "full_url": "/blog/day-of-the-dead-nails/day-of-the-dead-nail-ideas",
+          "place_in_section": "Introduction",
+          "placement_context": "One sentence acknowledging readers who want the broader gallery before this post narrows into how-to territory",
+          "link_type": "cluster-pillar"
+        },
+        {
+          "anchor_text": "what Day of the Dead nail symbols mean",
+          "full_url": "/blog/day-of-the-dead-nails/day-of-the-dead-nail-symbolism",
+          "place_in_section": "The Simplified Sugar Skull: A Repeatable Step-by-Step Method",
+          "placement_context": "Brief aside on what the skull motif represents before continuing the technical steps",
+          "link_type": "cluster-spoke"
+        },
+        {
+          "anchor_text": "Day of the Dead press-on nails",
+          "full_url": "/blog/day-of-the-dead-nails/day-of-the-dead-press-on-nails",
+          "place_in_section": "One-Nail Accent Ideas When You're Short on Time",
+          "placement_context": "Offered as the fallback for readers who decide freehand painting isn't for them after all",
+          "link_type": "cluster-spoke"
+        },
+        {
+          "anchor_text": "marigold nail art ideas",
+          "full_url": "/blog/day-of-the-dead-nails/marigold-nail-art",
+          "place_in_section": "Easy Marigold and Floral Accents for Non-Skull Days",
+          "placement_context": "Pointing to fuller floral design variety after teaching the simplified version",
+          "link_type": "cluster-spoke"
+        },
+        {
+          "anchor_text": "the full breakdown of dotting tool technique, including how to fix uneven dots",
+          "full_url": "https://mirelleinspo.com/blog/nail-application-techniques/dotting-tool-nail-art-guide",
+          "place_in_section": "What You Actually Need — No Full Kit Required",
+          "placement_context": "After introducing the dotting tool as the core required item, linking out for readers who want the deeper technique guide",
+          "link_type": "cross-site"
+        },
+        {
+          "anchor_text": "the complete DIY Halloween nails at home tutorial for base prep through top coat",
+          "full_url": "https://mirelleinspo.com/blog/halloween/diy-halloween-nails-at-home",
+          "place_in_section": "Common Mistakes and Quick Fixes While the Polish Is Still Wet",
+          "placement_context": "Pointing readers who want the full base-to-top-coat process to the broader tutorial after this section's troubleshooting focus",
+          "link_type": "cross-site"
+        }
+      ]
+    },
+
+    "block_6_aeo_geo_plan": {
+      "aeo_assignments": [
+        {
+          "aeo_term": "what is the easiest day of the dead nail design to do at home",
+          "assigned_to_section": "Why Beginner Sugar Skull Nails Go Wrong (And the One Fix That Matters)",
+          "execution": "Write a direct 2-3 sentence answer paragraph IMMEDIATELY after the H2 heading — before any elaboration."
+        },
+        {
+          "aeo_term": "what tools do I need for day of the dead nail art",
+          "assigned_to_section": "What You Actually Need — No Full Kit Required",
+          "execution": "Write a direct 2-3 sentence answer paragraph immediately after the H2 heading listing the minimum tool set."
+        },
+        {
+          "aeo_term": "can you do day of the dead nails without a dotting tool",
+          "assigned_to_section": "What You Actually Need — No Full Kit Required",
+          "execution": "Direct answer paragraph confirming bobby pin / toothpick substitutes work, placed after the tool list."
+        },
+        {
+          "aeo_term": "how do you simplify a sugar skull nail design",
+          "assigned_to_section": "The Simplified Sugar Skull: A Repeatable Step-by-Step Method",
+          "execution": "Direct 2-3 sentence answer immediately after the H2 heading, summarizing the simplification principle before the numbered steps."
+        },
+        {
+          "aeo_term": "what's a good day of the dead design for short nails",
+          "assigned_to_section": "The Best Easy Day of the Dead Designs for Short Nails",
+          "execution": "Direct answer paragraph immediately after the H2 heading naming the 2-3 best short-nail-friendly designs."
+        },
+        {
+          "aeo_term": "how do you keep sugar skull nail dots even",
+          "assigned_to_section": "Common Mistakes and Quick Fixes While the Polish Is Still Wet",
+          "execution": "Direct answer paragraph explaining the fresh-dip-per-dot fix immediately after the H2 heading."
+        }
+      ],
+      "geo_entity_statements": [
+        {
+          "entity": "dotting tool",
+          "assigned_to_section": "What You Actually Need — No Full Kit Required",
+          "execution": "Write a clear declarative definition sentence: what a dotting tool is and what it's used for — confident, no hedging."
+        },
+        {
+          "entity": "negative space technique",
+          "assigned_to_section": "The Best Easy Day of the Dead Designs for Short Nails",
+          "execution": "Clear declarative definition sentence explaining negative space nail art as leaving bare nail visible as part of the design."
+        }
+      ]
+    },
+
+    "block_7_active_constraints": {
+      "em_dash_banned": "Long em dash does not appear anywhere. If one forms while writing — stop, replace with: comma / new sentence / parentheses / but / restructure.",
+      "banned_vocab_watch": [
+        "elevate",
+        "unleash",
+        "delve",
+        "embark",
+        "showcase",
+        "boasts",
+        "unlock",
+        "seamless"
+      ],
+      "american_english_active": "color, recognize, -ize, -or — every instance, no exceptions. This post uses American English, not British.",
+      "keyword_density_reminder": "After every 2 H2 sections — count current keyword mentions. Verify running total is on track to hit the hardcoded mention target (0.6 baseline + 2-3 = 3 total). First half must run denser than second half. Adjust if needed.",
+      "image_path_reminder": "/images/blog/day-of-the-dead-nails/easy-day-of-the-dead-nails/filename.webp — topic_slug in path always",
+      "internal_link_url_reminder": "Full correct paths only. Cluster links = /blog/day-of-the-dead-nails/[slug]. Cross-site links = exact URL as discovered. Never bare /slug.",
+      "hero_image_reminder": "Hero = frontmatter only. Never place hero image in body.",
+      "strong_tag_reminder": "Every primary keyword mention = <strong> tags. Scan after every paragraph."
+    }
+  }
+}
