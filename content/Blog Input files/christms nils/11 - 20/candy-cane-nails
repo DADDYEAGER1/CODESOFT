@@ -1,0 +1,392 @@
+{
+  "section_1_file_authority": {
+    "statement": "THIS FILE IS THE SINGLE SOURCE OF TRUTH FOR THE BLOG GEN AGENT. All values in POST_CONSTANTS are hardcoded — Blog Gen Agent does not ask, adjust, or override them. All keywords, H2 structure, audience intelligence, internal links, and tone defined here must be followed exactly."
+  },
+
+  "section_2_post_constants": {
+    "slug": "candy-cane-nails",
+    "topic_slug": "christmas-nails",
+    "canonical": "https://mirelleinspo.com/blog/christmas-nails/candy-cane-nails",
+    "post_type": "spoke",
+    "intent": "inspirational",
+    "word_count": 1650,
+    "image_count": 7,
+    "show_inspo_gallery_link": true,
+    "template": "posts",
+    "hero_dimensions": "1200x675",
+    "category": "Christmas Nails",
+    "publish_date": "2026-08-15",
+    "author": "jyoti-mirelle"
+  },
+
+  "section_3_cluster_snapshot": {
+    "pillar_slug": "christmas-nail-ideas",
+    "pillar_title": "Christmas Nail Ideas",
+    "pillar_primary_keyword": "christmas nails",
+    "this_post_slug": "candy-cane-nails",
+    "this_post_role": "spoke",
+    "show_inspo_gallery_link_cluster_default": true,
+    "keywords_to_avoid": [
+      "christmas nails", "almond christmas nails", "short christmas nails", "coffin christmas nails",
+      "french tip christmas nails", "plaid christmas nails", "reindeer nail designs",
+      "gingerbread santa gnome nails", "christmas wreath nail art", "red christmas nails",
+      "green christmas nails", "pink christmas nails", "gold christmas nails", "blue christmas nails",
+      "non-traditional christmas nail colors", "christmas nail colors", "how to do christmas nail art at home",
+      "christmas tree nail art tutorial", "reindeer nail art tutorial", "santa nail art tutorial",
+      "gingerbread man nail art tutorial", "gnome nail art tutorial", "mistletoe nail art tutorial",
+      "old money christmas nails", "christmas nail trends 2026", "christmas nails for kids",
+      "simple christmas nails", "christmas nails for older women", "christmas nail colors for skin tone",
+      "matching christmas nails", "holiday nails (vacation meaning)", "old money nails fall winter",
+      "nails for older women", "nail colors for fair skin"
+    ],
+    "flag_for_user": "Search surfaced a live indexed page at mirelleinspo.com/blog/candy-cane-christmas-nails-2025-sweet-holiday-designs targeting the same core keyword territory (Nov 2025). Direct fetch of that exact URL redirected to the blog homepage rather than resolving as a live article — it did not confirm as a currently-active page. Flagging for manual verification before publish; if it is live, this new post needs either a merge decision or a differentiation pass against it before going out."
+  },
+
+  "section_4_serp_analysis": {
+    "blog_gen_instruction": "our_strategic_approach is a specific, evidence-based outperform strategy. Use it as the concrete angle for the introduction and conclusion, and to guide depth/coverage decisions in relevant H2 sections.",
+    "competitor_gaps": [
+      "No fetched page organizes designs by nail shape/length compatibility as a structured decision aid (short vs almond vs stiletto vs coffin) — Kreafolk touches shapes broadly but not shape-by-shape recommendation paired with specific candy cane looks. Confirmed on 2+ sources (Kreafolk shape section + Pinterest/MyFashionLife short-nail-specific demand).",
+      "No page directly answers 'how do I ask my nail tech for this' in a copy-paste-able way — Country & Town House gestures at it ('bespoke creation, bring reference photos') but doesn't give a concrete phrase-for-phrase script. Confirmed on 2+ sources (C&TH + strong Pinterest/YouTube 'how to do' search volume).",
+      "No page addresses gel/lacquer/dip-powder choice specifically for the tape-stripe technique's needs (which formula holds a clean line best) — DTK covers the three systems generally but not the technique-specific angle. Confirmed on 2+ sources (DTK comparison section + recurring audience question in YouTube/Pinterest around technique)."
+    ],
+    "missing_semantic_territory": [
+      "'reverse french candy cane' — appears on Pinterest (68 Best Candy Cane Nails board) but not in any of the 5 fetched pages",
+      "'candy cane nails for kids' / kid-safe execution — appears in Pinterest signal but absent from all 5 fetched pages",
+      "'candy cane nail tape technique' as a named, dedicated how-to step — Bustle and C&TH both describe it but neither names or anchors it as a distinct skill worth its own subsection"
+    ],
+    "our_strategic_approach": "Every fetched competitor treats candy cane nails as either a pure photo roundup (MyFashionLife, Kreafolk, DTK) or a pure tutorial (Bustle, Country & Town House) — none combines a genuinely shape-organized idea gallery with a real, nameable at-home technique in one post. This post covers both: 20 ideas organized so a reader can jump straight to designs that fit their nail length and shape, paired with the specific tape-striping technique named and broken into repeatable steps (not just described in passing like Bustle and C&TH do). It also closes two gaps no fetched page owns — a copy-paste script for the salon conversation, and a direct formula recommendation (gel vs lacquer) for the stripe technique specifically. Structural edge: shorter, punchier idea blurbs than MyFashionLife's 1585-word version (which runs long per-item) paired with genuine technique depth Kreafolk and DTK lack entirely.",
+    "top_5_fetched_pages_summary": [
+      {"url": "https://www.myfashionlife.com/archives/2026/08/12/candy-cane-nails/", "word_count": 1585, "h2_count": 18, "keyword_mentions": 32, "note": "Freshest (Aug 2026), 18 distinct named designs with strong first-person voice; no technique/how-to content at all."},
+      {"url": "https://www.countryandtownhouse.com/style/health-and-beauty/candy-cane-nails/", "word_count": 518, "h2_count": 3, "keyword_mentions": 10, "note": "Strong trend context (Hailey Bieber) and a real 5-step how-to; thin on idea volume (only 15 photo-only entries, no per-design copy)."},
+      {"url": "https://www.bustle.com/style/candy-cane-nails", "word_count": 647, "h2_count": 4, "keyword_mentions": 6, "note": "Expert-sourced (Amy Lin, Sundays founder), genuinely useful 4-step tutorial; zero idea/gallery content, single design only."},
+      {"url": "https://dtknailsupply.com/blogs/articles/candy-cane-nails-ideas", "word_count": 958, "h2_count": 12, "keyword_mentions": 16, "note": "11 named designs plus a genuinely useful gel-vs-lacquer-vs-dip comparison section; product-linked (commerce site) so tone is salesy in places."},
+      {"url": "https://kreafolk.com/blogs/inspirations/candy-cane-nail-design", "word_count": 2531, "h2_count": 7, "keyword_mentions": 63, "note": "Longest and most thorough (colors, variations, shapes, standout techniques); 30 photos with zero per-photo captions, all value is in the thematic H2 sections."}
+    ],
+    "top_5_word_count_average": 1248,
+    "top_5_keyword_density_average": 25.4,
+    "best_external_sources_found": [
+      {"url": "https://www.countryandtownhouse.com/style/health-and-beauty/candy-cane-nails/", "why": "Genuine editorial voice (Charlie Colville, named author), real trend sourcing (Hailey Bieber popularization), UK-based beauty magazine with real reporting — citation-worthy for trend context."}
+    ]
+  },
+
+  "section_5_audience_intelligence": {
+    "blog_gen_instruction": "This is your primary creative brief. Every paragraph written for this specific person with this specific intent. Satisfy them completely.",
+    "who_they_are": "A reader actively planning a Christmas manicure who already knows she wants the red-and-white candy cane look specifically (not general Christmas nails) — she's past the broad-browsing stage. She's checking Pinterest and Instagram for the exact variation that fits her nail length/shape, and she's genuinely deciding between doing it herself or asking a nail tech for it.",
+    "what_they_want_from_this_post": "A shape-appropriate set of real design options (not a generic 20-nail dump) plus the confidence to either DIY it with a clean technique or communicate exactly what she wants at a salon appointment.",
+    "what_frustrates_them": "Roundups that show 20-30 photos with zero technique guidance (Kreafolk, MyFashionLife) — she loves the ideas but has no path to actually get them; OR tutorials that show one single technique and no design variety (Bustle, C&TH) — she gets the how but has to hunt elsewhere for the what.",
+    "top_5_pain_points": [
+      "Doesn't know if candy cane nails will look good on her specific nail length/shape (short vs almond vs stiletto) before committing",
+      "Wants a clean, straight stripe but worries her freehand line skills aren't good enough",
+      "Doesn't know how to describe 'candy cane nails' to a nail tech beyond showing a photo",
+      "Unsure whether gel, regular polish, or dip powder gives the cleanest stripe result",
+      "Wants something that reads festive without looking childish or overly literal (candy shapes vs. stripe pattern)"
+    ],
+    "exact_user_phrases": [
+      "how to do candy cane nails",
+      "easy candy cane nails",
+      "candy cane nails short nails",
+      "simple candy cane nails",
+      "candy cane nails stiletto",
+      "candy cane nail tutorial",
+      "under 10 minute candy cane nails",
+      "beginner acrylic candy cane nail",
+      "reverse french candy cane",
+      "candy cane nails for kids"
+    ],
+    "intent_content_signals": [
+      "Strong preference for named, specific design labels (not vague 'holiday nail #3') — MyFashionLife's per-design naming pattern performs well",
+      "Responds to short-nail-specific reassurance ('you don't need long nails for this')",
+      "Wants speed signals — YouTube titles lean heavily on 'under 10 minutes' and 'beginner'",
+      "Responds to a named technique (e.g. tape-stripe method) rather than vague 'use a brush'",
+      "Wants to know it can be requested at a salon, not just DIYed"
+    ]
+  },
+
+  "section_6_semantic_keyword_data": {
+    "blog_gen_instruction": "Primary keyword in strong tags every mention. AEO terms trigger direct answer paragraphs. User language woven naturally. No term from keywords_to_avoid used as focus term.",
+    "primary_keyword": "candy cane nail designs",
+    "keyword_variations": [
+      "candy cane nails",
+      "candy cane manicure",
+      "candy cane nail art",
+      "candy cane stripe nails",
+      "candy cane French tips"
+    ],
+    "cluster_keywords": [
+      "peppermint nails",
+      "peppermint stripe nails",
+      "red and white striped nails",
+      "candy cane French manicure",
+      "reverse French candy cane",
+      "candy cane accent nail",
+      "candy cane nails tutorial",
+      "candy cane nail tape technique",
+      "peppermint swirl nails",
+      "candy cane nails short nails"
+    ],
+    "lsi_terms": [
+      "diagonal stripe technique",
+      "nail art tape",
+      "striping tape",
+      "detail brush",
+      "dotting tool",
+      "base coat and top coat",
+      "gel polish vs regular polish",
+      "French tip manicure",
+      "holiday manicure",
+      "festive nail art",
+      "almond shape nails",
+      "square shape nails",
+      "coffin shape nails",
+      "stiletto nails",
+      "glitter top coat",
+      "negative space nail design",
+      "ombre stripe effect",
+      "accent nail",
+      "peppermint candy motif",
+      "at-home manicure"
+    ],
+    "aeo_terms": [
+      "how do you do candy cane nails at home",
+      "what colors are used for candy cane nails",
+      "how long do candy cane nails take to do",
+      "can you get candy cane nails on short nails",
+      "what nail shape works best for candy cane nails",
+      "how do you ask for candy cane nails at the salon",
+      "is gel or regular polish better for candy cane stripes",
+      "how do you make candy cane nail stripes straight",
+      "what tools do you need for candy cane nail art",
+      "can you do candy cane nails with dip powder"
+    ],
+    "technical_terms": [
+      "base coat",
+      "top coat",
+      "striping tape",
+      "gel polish",
+      "cuticle pusher",
+      "dotting tool",
+      "cure time",
+      "French tip line"
+    ],
+    "user_language": [
+      "so cute",
+      "seriously evolved",
+      "screenshot before your appointment",
+      "ridiculously easy",
+      "under 10 minutes",
+      "beginner friendly",
+      "doesn't feel childish",
+      "actually doable at home",
+      "clean and polished",
+      "not the same tired stripe"
+    ]
+  },
+
+  "section_7_voice_and_ai_queries": {
+    "blog_gen_instruction": "Answer every query directly in the relevant H2 section body. If a query cannot be addressed naturally in the body, route it to faqItems. No query left unanswered.",
+    "queries": [
+      "How do you do candy cane nails at home?",
+      "What colors do you need for candy cane nails?",
+      "Can you get candy cane nails on short nails?",
+      "What nail shape looks best with candy cane stripes?",
+      "How do you keep candy cane nail stripes straight?",
+      "How do you ask a nail tech for candy cane nails?",
+      "Is gel polish or regular polish better for candy cane nails?",
+      "Can you do candy cane nails with dip powder?",
+      "How long does a candy cane manicure take to do at home?",
+      "What is a reverse French candy cane nail?",
+      "Do candy cane nails have to be red and white?",
+      "Can kids get candy cane nail designs?",
+      "What tools do you need for candy cane nail art?",
+      "How do you make candy cane nails look less busy?",
+      "What's the easiest candy cane nail design for beginners?"
+    ]
+  },
+
+  "section_8_hook_and_ctr": {
+    "blog_gen_instruction": "READ THIS SECTION BEFORE WRITING THE TITLE, META DESCRIPTION, INTRO, OR FIRST H2. The title and description here are the option the USER SELECTED from evidence-based choices during phase_6 — use them exactly. The intro hook brief and first H2 hook direction are your creative brief for those specific elements, matching the selected option's angle. Do not deviate.",
+    "real_serp_findings_summary": "Across the 5 fetched pages, titles split into two patterns: pure-number roundup titles (MyFashionLife '18 ideas', implied volume in Kreafolk's '30 Best') and pure-tutorial titles (Bustle '4 Ridiculously Easy Steps', C&TH 'Trend'). None of the 5 titles signal that the roundup will be curated against sameness or repetition — every title implies 'here are some', not 'here are the ones that are actually different'.",
+    "selected_option_rationale": "The chosen option directly names the exact fatigue point real Pinterest/YouTube signal shows this audience has — endless repeats of the same basic stripe — while still delivering the number-led format (20) that performs across every fetched competitor. It sets up a differentiation promise no fetched title makes.",
+    "title": "20 Candy Cane Nail Designs That Aren't Basic Stripes",
+    "title_char_count": 52,
+    "meta_description": "Tired of the same candy cane nail designs everywhere? This edit covers 20 fresh takes by shape and skill level, plus how to nail the stripes yourself.",
+    "meta_char_count": 150,
+    "intro_hook_brief": "Open by naming the exact fatigue the title promises to solve — every candy cane roundup online repeats the same handful of stripe patterns. Position this post as the one that sorts designs by what actually fits the reader's nails and skill level, not just another scroll of red-and-white photos.",
+    "first_h2_hook_direction": "The first H2 (design-led, likely 'Classic Candy Cane Stripes, Done Right' or similar) should open by acknowledging the classic stripe is still valid — this isn't an anti-tradition post — but immediately pivot into the specific detail (shape, finish, or twist) that keeps it from reading as basic. Subtle callback to the title's promise, not a repeat of it."
+  },
+
+  "section_9_search_journey": {
+    "blog_gen_instruction": "This is the emotional contract with the reader. Every section of the post must honour the promise made. Read this before writing any section. If a paragraph breaks the journey arc — rewrite it.",
+    "reader_arrival_state": "Mildly fatigued by how repetitive candy cane content looks online, but still genuinely wants this specific design for the season — she's not looking to be talked out of it, just shown a better version of it.",
+    "journey_arc": [
+      "Hook validates her fatigue with generic candy cane content without dismissing the design itself",
+      "Early designs organized by shape/length so she can immediately locate the ones relevant to her own nails",
+      "Middle section builds toward the differentiated ideas (reverse French, negative space, textured stripes) that answer the 'not basic' promise directly",
+      "Technique section delivers the practical payoff — a real, nameable method (tape-stripe) she can actually execute, addressing the DIY-vs-salon fork",
+      "Close with the salon-request script and a confident closing statement that she now has both the look and the way to get it"
+    ],
+    "promise_to_deliver": "That this roundup will show real variety beyond the basic red-and-white diagonal stripe, and that the reader will leave knowing exactly how to get her chosen look, whether DIY or salon.",
+    "exit_state": "Confident and decided — she has a specific design in mind, knows it suits her nails, and knows exactly what to do next (pick up tape and polish, or what to say at her appointment)."
+  },
+
+  "section_10_content_structure": {
+    "blog_gen_instruction": "This H2 structure is research-driven and must be followed exactly. Do not rename, reorder, or remove H2s without user instruction. Word budget per section is set — follow it. H3s may be added at editorial discretion.",
+    "fields": {
+      "h1": "20 Candy Cane Nail Designs That Aren't Basic Stripes",
+      "h2_structure": [
+        "Classic Candy Cane Stripes, Done Right",
+        "Candy Cane Nails for Short and Almond Shapes",
+        "Candy Cane French Tips and Reverse French",
+        "Candy Cane Nails for Coffin and Stiletto Shapes",
+        "Non-Traditional Candy Cane Colors (Pink, Blue, Green)",
+        "Candy Cane Accent Nails and Negative Space Looks",
+        "How to Do Candy Cane Nails at Home (Step by Step)",
+        "How to Ask for Candy Cane Nails at the Salon"
+      ],
+      "word_budget": {
+        "introduction": 225,
+        "conclusion": 175,
+        "per_h2": [
+          {"heading": "Classic Candy Cane Stripes, Done Right", "budget": 170, "complexity": "low"},
+          {"heading": "Candy Cane Nails for Short and Almond Shapes", "budget": 165, "complexity": "medium"},
+          {"heading": "Candy Cane French Tips and Reverse French", "budget": 155, "complexity": "medium"},
+          {"heading": "Candy Cane Nails for Coffin and Stiletto Shapes", "budget": 150, "complexity": "medium"},
+          {"heading": "Non-Traditional Candy Cane Colors (Pink, Blue, Green)", "budget": 150, "complexity": "low"},
+          {"heading": "Candy Cane Accent Nails and Negative Space Looks", "budget": 145, "complexity": "medium"},
+          {"heading": "How to Do Candy Cane Nails at Home (Step by Step)", "budget": 220, "complexity": "high"},
+          {"heading": "How to Ask for Candy Cane Nails at the Salon", "budget": 95, "complexity": "low"}
+        ]
+      }
+    }
+  },
+
+  "section_11_internal_links": {
+    "blog_gen_instruction": "Every link below must appear in the post. Cluster links use anchor texts verbatim — do not rewrite. Cross-site links use the provided descriptive anchor. Place each link where the placement note says — woven naturally into prose, never as a standalone CTA. Total internal links must not exceed 6.",
+    "all_internal_links": [
+      {"url_or_slug": "/blog/christmas-nails/christmas-nail-ideas", "title": "Christmas Nail Ideas", "anchor_text": "christmas nail ideas", "placement_note": "Introduction — link back to the pillar as the broader Christmas nail hub", "link_type": "cluster-pillar"},
+      {"url_or_slug": "/inspo/christmas-nail-ideas-inspiration-gallery", "title": "Christmas Nails Inspiration Gallery", "anchor_text": "christmas nails inspiration gallery", "placement_note": "Conclusion — send readers who want more visual browsing to the gallery", "link_type": "gallery"},
+      {"url_or_slug": "/blog/christmas-nails/plaid-christmas-nails", "title": "Plaid Christmas Nails", "anchor_text": "plaid christmas nails", "placement_note": "Non-Traditional Candy Cane Colors section — natural pairing for readers exploring pattern-based Christmas nails beyond stripes", "link_type": "cluster-spoke"},
+      {"url_or_slug": "/blog/christmas-nails/red-christmas-nails", "title": "Red Christmas Nails", "anchor_text": "red christmas nails", "placement_note": "Classic Candy Cane Stripes section — natural link for readers who want pure red without the stripe pattern", "link_type": "cluster-spoke"},
+      {"url_or_slug": "/blog/simple-nail-designs/simple-french-tip-nail-designs", "title": "Simple French Tip Designs: 2026's Easiest Mani", "anchor_text": "restrained French tip designs that skip the freehand work", "placement_note": "Candy Cane French Tips section — links readers who want an even simpler French option to the dedicated simple French tip post", "link_type": "cross-site"},
+      {"url_or_slug": "/blog/nail-shapes/short-stiletto-nails", "title": "Short Stiletto Nails: 2026's Boldest Trend Right Now", "anchor_text": "short stiletto shape guide if length isn't the goal", "placement_note": "Candy Cane Nails for Coffin and Stiletto Shapes section — links readers deciding on stiletto shape specifics to the dedicated shape guide", "link_type": "cross-site"}
+    ]
+  },
+
+  "section_12_voice_tone": {
+    "blog_gen_instruction": "This is the voice for this specific post. Layer on top of Mirellé editorial framework. Do not default to generic AI tone.",
+    "recommended_voice": "Confident, opinionated friend with real technique know-how — closer to MyFashionLife's first-person warmth than Kreafolk's generic enthusiasm",
+    "tone_characteristics": [
+      "Direct opinions on what does/doesn't work (\"this is the one to skip if you want something different\")",
+      "Reassuring but not condescending about DIY skill level",
+      "Specific over vague — names shapes, finishes, and techniques rather than saying \"so pretty\"",
+      "Light, seasonal warmth without leaning into forced cheer",
+      "Confident closing statements, not wishy-washy \"there's something for everyone\" hedging"
+    ],
+    "language_style": "Short-to-medium sentences, frequent direct address (\"you\"), minimal hedging language, concrete visual description over abstract praise",
+    "audience_match": "This reader has already decided on candy cane nails and wants a confident guide, not a persuasion piece — the voice should assume her interest and reward it with real specificity and technique payoff."
+  },
+
+  "section_13_external_links": {
+    "blog_gen_instruction": "Include all external links where indicated. Supports E-E-A-T. Use anchor suggestion as guide — write naturally around it. Sourced from phase_3's best_external_sources_found, not from separate searches.",
+    "links": [
+      {"url": "https://www.countryandtownhouse.com/style/health-and-beauty/candy-cane-nails/", "context": "When referencing the trend's recent popularity surge, particularly the celebrity-driven moment", "anchor_suggestion": "the look's recent surge in popularity"}
+    ]
+  },
+
+  "section_14_execution_plan": {
+    "calculated_by": "Input Gen Agent — calculated last, after all other sections are complete",
+    "block_1_keyword_execution": {
+      "primary_keyword": "candy cane nail designs",
+      "top_5_density_baseline": 25,
+      "total_mention_target": "27 to 28 total mentions",
+      "first_100_words_plan": {
+        "rule": "Primary keyword MUST appear TWICE in the first 100 words. Mandatory. No exceptions.",
+        "mention_1": "sentence 1 or 2 of introduction — establishing the post topic directly after the fatigue hook",
+        "mention_2": "sentence 4 or 5 of introduction — reinforcing the differentiation promise before transitioning into the H2 structure"
+      },
+      "first_half_target": "15 mentions — first ~825 words. Run denser in first half.",
+      "second_half_target": "12-13 mentions — second ~825 words",
+      "strong_tag_rule": "EVERY single mention of the primary keyword — all 27-28 of them — wrapped in <strong> tags. No exceptions. Catch each one as it is written. Scan after every paragraph.",
+      "keywords_to_avoid_active": "Full list in section_3 — never used as focus terms anywhere in the post."
+    },
+    "block_2_word_budget": {
+      "total_target": "1650 words — +/-50 words tolerance, never exceed",
+      "introduction": 225,
+      "conclusion": 175,
+      "h2_budgets": [
+        {"heading": "Classic Candy Cane Stripes, Done Right", "budget": 170, "complexity": "low"},
+        {"heading": "Candy Cane Nails for Short and Almond Shapes", "budget": 165, "complexity": "medium"},
+        {"heading": "Candy Cane French Tips and Reverse French", "budget": 155, "complexity": "medium"},
+        {"heading": "Candy Cane Nails for Coffin and Stiletto Shapes", "budget": 150, "complexity": "medium"},
+        {"heading": "Non-Traditional Candy Cane Colors (Pink, Blue, Green)", "budget": 150, "complexity": "low"},
+        {"heading": "Candy Cane Accent Nails and Negative Space Looks", "budget": 145, "complexity": "medium"},
+        {"heading": "How to Do Candy Cane Nails at Home (Step by Step)", "budget": 220, "complexity": "high"},
+        {"heading": "How to Ask for Candy Cane Nails at the Salon", "budget": 95, "complexity": "low"}
+      ],
+      "tracking_rule": "Track running word total at the end of every H2 section. If a section is running over budget — cut before moving to the next section. Do not compensate later."
+    },
+    "block_3_image_plan": {
+      "total_images": 7,
+      "hero_image": "frontmatter only — NEVER appears in post body",
+      "body_images": 6,
+      "assignments": [
+        {"image_number": 1, "place_after": "Classic Candy Cane Stripes, Done Right", "image_type": "standard_inspiration", "section_context": "Classic diagonal red-and-white stripe manicure, clean traditional execution, almond or square shape"},
+        {"image_number": 2, "place_after": "Candy Cane Nails for Short and Almond Shapes", "image_type": "standard_inspiration", "section_context": "Short, rounded-square nails with a mini candy cane accent design — proving the look works on short length"},
+        {"image_number": 3, "place_after": "Candy Cane French Tips and Reverse French", "image_type": "standard_inspiration", "section_context": "Candy cane striped French tip or reverse French, sheer pink base, elegant finish"},
+        {"image_number": 4, "place_after": "Candy Cane Nails for Coffin and Stiletto Shapes", "image_type": "standard_inspiration", "section_context": "Long coffin or stiletto shape with bold, glossy candy cane stripes, dramatic angle"},
+        {"image_number": 5, "place_after": "Non-Traditional Candy Cane Colors (Pink, Blue, Green)", "image_type": "standard_inspiration", "section_context": "Pink or blue candy cane stripe variation on square or almond nails"},
+        {"image_number": 6, "place_after": "Candy Cane Accent Nails and Negative Space Looks", "image_type": "standard_inspiration", "section_context": "Nude/negative-space base with candy cane pattern isolated to one or two accent nails"}
+      ],
+      "image_type_rule": "All 6 body images are standard_inspiration — this post's intent is inspirational with a light tutorial component, not comparison or full tutorial intent, so no infographic slot is needed. No tool/hands-at-work shots in any slot.",
+      "path_rule": "/images/blog/christmas-nails/candy-cane-nails/filename.webp"
+    },
+    "block_4_opening_technique_assignments": {
+      "rule": "No two consecutive sections use the same technique. Conclusion = Technique 1 or 3 only.",
+      "assignments": [
+        {"section": "Introduction", "technique": "Technique 1 — The Claim (name the fatigue with generic candy cane content directly)"},
+        {"section": "Classic Candy Cane Stripes, Done Right", "technique": "Technique 2 — The Scene (open on a specific visual detail of the classic look)"},
+        {"section": "Candy Cane Nails for Short and Almond Shapes", "technique": "Technique 3 — The Reframe (reframe 'short nails can't do this' assumption)"},
+        {"section": "Candy Cane French Tips and Reverse French", "technique": "Technique 2 — The Scene"},
+        {"section": "Candy Cane Nails for Coffin and Stiletto Shapes", "technique": "Technique 1 — The Claim"},
+        {"section": "Non-Traditional Candy Cane Colors (Pink, Blue, Green)", "technique": "Technique 3 — The Reframe"},
+        {"section": "Candy Cane Accent Nails and Negative Space Looks", "technique": "Technique 2 — The Scene"},
+        {"section": "How to Do Candy Cane Nails at Home (Step by Step)", "technique": "Technique 1 — The Claim (state the outcome upfront before the steps)"},
+        {"section": "How to Ask for Candy Cane Nails at the Salon", "technique": "Technique 3 — The Reframe"},
+        {"section": "Conclusion", "technique": "Technique 1 — The Claim"}
+      ],
+      "banned_opener_rule": "Check every opener against banned_opening_approaches in blog gen prompt before writing the second sentence"
+    },
+    "block_5_link_placements": {
+      "links": [
+        {"anchor_text": "christmas nail ideas", "full_url": "/blog/christmas-nails/christmas-nail-ideas", "place_in_section": "Introduction", "placement_context": "First or second sentence, linking back to the pillar as the broader hub", "link_type": "cluster-pillar"},
+        {"anchor_text": "christmas nails inspiration gallery", "full_url": "/inspo/christmas-nail-ideas-inspiration-gallery", "place_in_section": "Conclusion", "placement_context": "Final paragraph, inviting further visual browsing", "link_type": "gallery"},
+        {"anchor_text": "plaid christmas nails", "full_url": "/blog/christmas-nails/plaid-christmas-nails", "place_in_section": "Non-Traditional Candy Cane Colors (Pink, Blue, Green)", "placement_context": "When mentioning pattern-based alternatives to stripes", "link_type": "cluster-spoke"},
+        {"anchor_text": "red christmas nails", "full_url": "/blog/christmas-nails/red-christmas-nails", "place_in_section": "Classic Candy Cane Stripes, Done Right", "placement_context": "When mentioning solid red as a simpler alternative", "link_type": "cluster-spoke"},
+        {"anchor_text": "restrained French tip designs that skip the freehand work", "full_url": "/blog/simple-nail-designs/simple-french-tip-nail-designs", "place_in_section": "Candy Cane French Tips and Reverse French", "placement_context": "When suggesting a simpler French-only option for low-confidence DIYers", "link_type": "cross-site"},
+        {"anchor_text": "short stiletto shape guide if length isn't the goal", "full_url": "/blog/nail-shapes/short-stiletto-nails", "place_in_section": "Candy Cane Nails for Coffin and Stiletto Shapes", "placement_context": "When discussing stiletto as a dramatic but shorter-length option", "link_type": "cross-site"}
+      ]
+    },
+    "block_6_aeo_geo_plan": {
+      "aeo_assignments": [
+        {"aeo_term": "How do you do candy cane nails at home?", "assigned_to_section": "How to Do Candy Cane Nails at Home (Step by Step)", "execution": "Write a direct 2-3 sentence answer paragraph immediately after the H2 heading — before any elaboration."},
+        {"aeo_term": "Can you get candy cane nails on short nails?", "assigned_to_section": "Candy Cane Nails for Short and Almond Shapes", "execution": "Write a direct 2-3 sentence answer paragraph immediately after the H2 heading."},
+        {"aeo_term": "How do you ask a nail tech for candy cane nails?", "assigned_to_section": "How to Ask for Candy Cane Nails at the Salon", "execution": "Write a direct 2-3 sentence answer paragraph immediately after the H2 heading, including the copy-paste-able phrase."},
+        {"aeo_term": "Is gel polish or regular polish better for candy cane nails?", "assigned_to_section": "How to Do Candy Cane Nails at Home (Step by Step)", "execution": "Address directly within the materials/steps portion of the section."}
+      ],
+      "geo_entity_statements": [
+        {"entity": "Reverse French manicure", "assigned_to_section": "Candy Cane French Tips and Reverse French", "execution": "Write a clear declarative definition sentence — confident, no hedging. Extractable by AI as a citation."},
+        {"entity": "Striping tape (nail art tape)", "assigned_to_section": "How to Do Candy Cane Nails at Home (Step by Step)", "execution": "Write a clear declarative definition sentence explaining what it is and why it's used for this technique."}
+      ]
+    },
+    "block_7_active_constraints": {
+      "em_dash_banned": "Long em dash does not appear anywhere. If one forms while writing — stop, replace with: comma / new sentence / parentheses / but / restructure.",
+      "banned_vocab_watch": ["elevate", "must-have", "game-changer", "effortlessly chic", "unleash", "next level", "picture perfect"],
+      "american_english_active": "color, recognize, -ize, -or — every instance, no exceptions. This post uses American English, not British.",
+      "keyword_density_reminder": "After every 2 H2 sections — count current keyword mentions. Verify running total is on track to hit 27-28. First half must run denser than second half.",
+      "image_path_reminder": "/images/blog/christmas-nails/candy-cane-nails/filename.webp — topic_slug in path always",
+      "internal_link_url_reminder": "Full correct paths only. Cluster links = /blog/christmas-nails/[slug]. Cross-site links = exact URL as discovered. Never bare /slug.",
+      "hero_image_reminder": "Hero = frontmatter only. Never place hero image in body.",
+      "strong_tag_reminder": "Every primary keyword mention = <strong> tags. Scan after every paragraph."
+    }
+  }
+}
