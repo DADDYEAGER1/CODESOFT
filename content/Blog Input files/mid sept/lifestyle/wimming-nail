@@ -1,0 +1,390 @@
+{
+  "section_1_file_authority": {
+    "statement": "THIS FILE IS THE SINGLE SOURCE OF TRUTH FOR THE BLOG GEN AGENT. All values in POST_CONSTANTS are hardcoded — Blog Gen Agent does not ask, adjust, or override them. All keywords, H2 structure, audience intelligence, internal links, and tone defined here must be followed exactly."
+  },
+
+  "section_2_post_constants": {
+    "slug": "swimming-nails",
+    "topic_slug": "nails-by-lifestyle",
+    "canonical": "https://mirelleinspo.com/blog/nails-by-lifestyle/swimming-nails",
+    "post_type": "spoke",
+    "intent": "tutorial",
+    "word_count": 1650,
+    "image_count": 4,
+    "show_inspo_gallery_link": false,
+    "template": "split-left",
+    "hero_dimensions": "800x800",
+    "category": "Nails by Lifestyle",
+    "publish_date": "2026-09-15",
+    "author": "jyoti-mirelle"
+  },
+
+  "section_3_cluster_snapshot": {
+    "pillar_slug": "gym-nails",
+    "pillar_title": "Nails for Gym Goers: Durable Shapes That Survive Lifting",
+    "pillar_primary_keyword": "gym nails",
+    "this_post_slug": "swimming-nails",
+    "this_post_role": "spoke",
+    "show_inspo_gallery_link_cluster_default": false,
+    "keywords_to_avoid": [
+      "professional nail length", "nail shapes for work", "camping nails",
+      "gym nails", "nails for manual labor", "best nail shape for typing",
+      "nails for gardeners", "press-on nails for active lifestyle",
+      "travel nail care", "non-toxic nails for moms", "nails for piano players"
+    ]
+  },
+
+  "section_4_serp_analysis": {
+    "blog_gen_instruction": "our_strategic_approach is a specific, evidence-based outperform strategy, not a vague gap-fill statement. Use it as the concrete angle for the introduction and conclusion, and to guide depth/coverage decisions in relevant H2 sections.",
+    "competitor_gaps": [
+      "No fetched competitor segments durability by swim frequency (casual vs. daily vs. competitive/instructor-level) — validated on Quora (swimmer doing 12hrs/week asking about acrylics), SalonGeek (swim instructor at 20hrs/week, bride swimming daily before wedding), and cross-referenced against non-nail-authority source coachslava.com and Bustle, both of which found this gap worth addressing.",
+      "No fetched competitor covers press-on nails as a swimming-specific option in depth — validated on YouTube ('How to Wear Press-On Nails While Swimming Without Them Popping Off') and Pinterest saves for swimmer-specific boards.",
+      "No fetched competitor explains WHY gel lifts under chlorine (the mechanism) beyond one-line mentions — validated across 4 separate SalonGeek professional threads debating chlorine's actual effect on gel bond strength.",
+      "No fetched competitor names specific swimmer-tested product categories professionals actually reach for (e.g. buff-off hard gel vs. soak-off gel polish as a durability choice) — validated on SalonGeek (Brisa, OPI Axxium, Bio Sculpture, Calgel, Iz Gel discussions) and Quora."
+    ],
+    "missing_semantic_territory": [
+      "competitive swimmer nails / swim team nails",
+      "how long do gel nails last swimming daily",
+      "acrylic nails lifting chlorine",
+      "swim instructor nails",
+      "press-on nails swimming pool"
+    ],
+    "our_strategic_approach": "Structure the post around swim frequency as the organizing decision point (casual pool days vs. daily swimmer vs. competitive/instructor) since this is the exact segmentation real swimmers search for and no fetched competitor provides it. Include a short mechanism explanation of why chlorine causes lifting (oxidizer breaking down adhesive bond) sourced from real professional-forum consensus, which out-depths every fetched page's one-line mention. Cover press-on nails as a legitimate swimming option — a angle entirely absent from the fetched set — and cross-link to the cluster's press-on spoke. Name buff-off gel vs. soak-off gel polish as a durability distinction professionals actually discuss, rather than generic 'use gel' advice.",
+    "top_5_fetched_pages_summary": [
+      { "url": "https://enchantedescapenailspa.com/nail-care-for-swimmers-protecting-your-nails-from-chlorine-and-water-damage/", "word_count": 1050, "h2_count": 6, "keyword_mentions": 9, "note": "Solid structure (pre-swim/during/post-swim/long-term) but generic product advice, no frequency segmentation." },
+      { "url": "https://maniology.com/blogs/maniology-blog/how-to-protect-nails-when-swimming", "word_count": 1250, "h2_count": 7, "keyword_mentions": 11, "note": "Strong PAA-style H2s (Does swimming damage nails? Can you swim with acrylics?) but product-promotional (own brand), no professional depth." },
+      { "url": "https://mycleannails.com/the-ultimate-guide-to-nail-care-for-swimmers-and-water-sports-enthusiasts-2025/", "word_count": 4200, "h2_count": 6, "keyword_mentions": 15, "note": "Bloated AI-mill content, dozens of thin nested subheadings, unverifiable stats ('68% of swimmers'). Not citation-worthy despite length." },
+      { "url": "https://mintpolish.com/nail-care-for-swimmers-preventing-chlorine-damage/", "word_count": 1000, "h2_count": 5, "keyword_mentions": 8, "note": "Clean first-person salon-voice structure, good mechanism explanation of chlorine effect, no frequency segmentation." },
+      { "url": "https://www.prettydesigns.com/tips-for-your-manicure-and-nail-art-ideas/", "word_count": 750, "h2_count": 7, "keyword_mentions": 6, "note": "Numbered-tips format, includes some unique tactics (ice water dip) but thin, dated (2022), no real depth on damage mechanism." }
+    ],
+    "top_5_word_count_average": 1650,
+    "top_5_keyword_density_average": 10,
+    "best_external_sources_found": []
+  },
+
+  "section_5_audience_intelligence": {
+    "blog_gen_instruction": "This is your primary creative brief. Every paragraph written for this specific person with this specific intent. Satisfy them completely.",
+    "who_they_are": "A woman who swims regularly — ranging from a few pool sessions a week to a daily swimmer, swim instructor, or competitive/masters swimmer — who wants a manicure that survives real, repeated chlorine exposure, not a single pool party. She already knows chlorine is 'bad for nails' in a vague sense; she wants the specific, actionable version: what actually holds up, and how to prep and maintain it.",
+    "what_they_want_from_this_post": "A direct, frequency-matched answer: what nail type/formula to choose based on how often she swims, plus the exact pre-swim and post-swim routine that extends wear. Tutorial intent — she wants to follow steps, not just read theory.",
+    "what_frustrates_them": "Generic 'use a top coat' advice that doesn't distinguish between someone swimming twice a month and someone swimming daily for training. Vague claims about gel 'lasting two weeks' that don't hold up once she's actually in the pool five days a week. Product-promotional content disguised as advice.",
+    "top_5_pain_points": [
+      "Gel or acrylic lifting at the edges after repeated pool sessions, even when it 'shouldn't'",
+      "Not knowing whether daily swimming makes gel simply not worth it",
+      "Uncertainty about whether press-ons are a viable, more practical alternative",
+      "Discoloration/yellowing of nails or polish from chlorine over time",
+      "Wanting a manicure ready before a trip or event (e.g. a wedding) but worried swimming will ruin it"
+    ],
+    "exact_user_phrases": [
+      "will the constant exposure to chlorine ruin them or make them lift",
+      "does anyone know what effect chlorine from swimming pools can have on gel nails and lifting",
+      "I am a swimming instructor and am in the water for 20hrs a week",
+      "I need a set of gels on a bride who swims daily and am worried about lifting",
+      "will wearing gel nail extensions in chlorine 4hrs per week ruin them",
+      "chlorine made nails dull looking",
+      "how to avoid my nail polish from chipping if I swim competitively",
+      "does chlorine wreck gel nails",
+      "the chlorine is stripping my nails",
+      "her gel polish didn't hold up to a couple of hours in the pool, three days per week"
+    ],
+    "intent_content_signals": [
+      "Wants clear, step-based guidance (tutorial), not a general essay",
+      "Responds to frequency-based framing (casual/regular/daily-competitive) over one-size-fits-all advice",
+      "Values real professional/salon-sourced input over generic blog claims",
+      "Wants a specific recommended routine, not just 'it depends'",
+      "Appreciates being told what genuinely doesn't work, not just what to buy"
+    ]
+  },
+
+  "section_6_semantic_keyword_data": {
+    "blog_gen_instruction": "Primary keyword in strong tags every mention. AEO terms trigger direct answer paragraphs. User language woven naturally. No term from keywords_to_avoid used as focus term.",
+    "primary_keyword": "chlorine resistant nails",
+    "keyword_variations": [
+      "chlorine proof nails", "nails that survive chlorine", "swimmer nails",
+      "pool proof nails", "chlorine resistant nail polish", "nails for swimmers"
+    ],
+    "cluster_keywords": [
+      "swim nails", "swimming pool nails", "competitive swimmer nails",
+      "swim team nails", "gel nails swimming", "acrylic nails swimming",
+      "press-on nails swimming", "chlorine damaged nails", "nail care for swimmers",
+      "does chlorine ruin gel nails", "swim instructor nails"
+    ],
+    "lsi_terms": [
+      "gel polish lifting", "buff-off gel", "soak-off gel", "nail plate dehydration",
+      "cuticle oil barrier", "water-resistant base coat", "chlorine discoloration",
+      "acrylic nail lifting", "nail bond breakdown", "top coat reapplication",
+      "post-swim nail routine", "swim gloves nails", "gel nail durability",
+      "chip-resistant polish", "hard gel system", "pool chemical exposure",
+      "nail hydration swimmer", "yellowing nails chlorine"
+    ],
+    "aeo_terms": [
+      "do chlorine resistant nails actually exist",
+      "how long do gel nails last if you swim every day",
+      "will chlorine ruin acrylic nails",
+      "can you swim with gel nails without them lifting",
+      "what nail polish is best for daily swimmers",
+      "why does chlorine make nails yellow",
+      "are press-on nails good for swimming",
+      "how often should swimmers reapply top coat",
+      "does swimming make gel nails peel faster",
+      "what's the difference between buff-off gel and soak-off gel for swimmers",
+      "how do competitive swimmers protect their nails",
+      "can you wear nail polish in a chlorinated pool"
+    ],
+    "technical_terms": [
+      "buff-off gel", "soak-off gel", "hard gel system", "free edge", "nail plate",
+      "cross-linking (gel cure)", "oxidizer (chlorine)"
+    ],
+    "user_language": [
+      "will it ruin them or make them lift", "chlorine is stripping my nails",
+      "went dull looking", "didn't hold up to a couple hours in the pool",
+      "swim daily and worried about lifting", "in the water 20hrs a week",
+      "does chlorine wreck gel nails", "chipping if I swim competitively",
+      "constant exposure to chlorine"
+    ]
+  },
+
+  "section_7_voice_and_ai_queries": {
+    "blog_gen_instruction": "Answer every query directly in the relevant H2 section body. If a query cannot be addressed naturally in the body, route it to faqItems. No query left unanswered.",
+    "queries": [
+      "Do chlorine resistant nails actually exist or is that a myth?",
+      "How long do gel nails last if I swim every day?",
+      "Will chlorine ruin my acrylic nails?",
+      "Can I swim with gel nails without them lifting?",
+      "What's the best nail polish for someone who swims daily?",
+      "Why does chlorine turn nails yellow?",
+      "Are press-on nails a good option for swimming?",
+      "How often should I reapply top coat if I swim regularly?",
+      "Does swimming make gel nails peel faster than normal?",
+      "What's the difference between buff-off gel and soak-off gel for swimmers?",
+      "How do competitive swimmers and swim instructors protect their nails?",
+      "Can you wear regular nail polish in a chlorinated pool?",
+      "What should I do to my nails before I go swimming?",
+      "What's the best post-swim nail care routine?",
+      "Is it worth getting gel nails if I'm a swim instructor?",
+      "How do I stop my nails from lifting at the pool?"
+    ]
+  },
+
+  "section_8_hook_and_ctr": {
+    "blog_gen_instruction": "READ THIS SECTION BEFORE WRITING THE TITLE, META DESCRIPTION, INTRO, OR FIRST H2. The title and description here are the option the USER SELECTED from 2-3 real, evidence-based choices during phase_6 — use them exactly. The intro hook brief and first H2 hook direction are your creative brief for those specific elements, matching the selected option's angle. Do not deviate.",
+    "real_serp_findings_summary": "All 5 fetched competitor titles use a generic 'protect/prevent chlorine damage' framing with no differentiation by swim frequency. None front-load a comparative promise (gel vs. acrylic vs. press-on). The identified opportunity: title around what genuinely survives daily/frequent chlorine exposure, backed by real swimmer-tested routines, since every competitor stays at the generic protection-tips level.",
+    "selected_option_rationale": "Option 2 leads with a direct comparative promise (gel vs. acrylic vs. press-ons) and cites swim-instructor-tested routines, directly answering the frequency-segmented gap found in step_1/step_2 — no fetched competitor makes this specific comparative claim in-title.",
+    "title": "Chlorine Resistant Nails: What Actually Survives the Pool",
+    "title_char_count": 55,
+    "meta_description": "Regular polish chips in days. Here's the real breakdown of gel vs. acrylic vs. press-ons under daily chlorine exposure, backed by swim-instructor tested routines.",
+    "meta_char_count": 163,
+    "intro_hook_brief": "Open by naming the exact frustration validated across Quora/SalonGeek — swimmers doing everything 'right' and still watching gel lift or acrylics dull after repeated pool sessions — then promise the frequency-based answer (casual/daily/competitive) that no generic guide gives.",
+    "first_h2_hook_direction": "First H2 should immediately address the core question ('does chlorine actually ruin nails, or is it about frequency') rather than opening with generic pre-swim tips — this delivers on the comparative promise from the title before anything else."
+  },
+
+  "section_9_search_journey": {
+    "blog_gen_instruction": "This is the emotional contract with the reader. Every section of the post must honour the promise made. Read this before writing any section. If a paragraph breaks the journey arc — rewrite it.",
+    "reader_arrival_state": "Motivated but slightly anxious — she wants to keep her manicure through regular swimming and isn't sure if that's realistic for her specific routine.",
+    "journey_arc": [
+      "Open by removing the fear: chlorine resistant nails are achievable, it's about matching format to frequency, not finding one miracle product",
+      "Explain the real mechanism (why chlorine causes lifting/discoloration) so she understands the 'why' behind every recommendation",
+      "Walk through format choice by swim frequency: gel vs. acrylic vs. press-ons, matched to casual/daily/competitive swimmer",
+      "Give the exact pre-swim and post-swim routine step by step",
+      "Close with what success looks like: a manicure that holds through her actual swim schedule, not a generic best-case claim"
+    ],
+    "promise_to_deliver": "A clear, frequency-matched answer for what nail format survives real chlorine exposure, plus the specific routine that makes it work.",
+    "exit_state": "Confident and equipped — she knows exactly which format to choose for her swim frequency and the routine to make it last."
+  },
+
+  "section_10_content_structure": {
+    "blog_gen_instruction": "This H2 structure is research-driven and must be followed exactly. Do not rename, reorder, or remove H2s without user instruction. Word budget per section is set — follow it. H3s may be added at editorial discretion.",
+    "h1": "Chlorine Resistant Nails: What Actually Survives the Pool",
+    "h2_structure": [
+      "Does Chlorine Actually Ruin Your Nails? The Real Mechanism",
+      "Chlorine Resistant Nails by Swim Frequency: Which Format Wins",
+      "Gel vs. Acrylic vs. Press-Ons for Swimmers: The Honest Breakdown",
+      "The Pre-Swim Routine That Actually Works",
+      "The Post-Swim Recovery Routine",
+      "Signs Your Nails Are Taking Real Chlorine Damage"
+    ],
+    "word_budget": {
+      "introduction": "230",
+      "conclusion": "180",
+      "per_h2": {
+        "Does Chlorine Actually Ruin Your Nails? The Real Mechanism": 220,
+        "Chlorine Resistant Nails by Swim Frequency: Which Format Wins": 320,
+        "Gel vs. Acrylic vs. Press-Ons for Swimmers: The Honest Breakdown": 280,
+        "The Pre-Swim Routine That Actually Works": 220,
+        "The Post-Swim Recovery Routine": 200,
+        "Signs Your Nails Are Taking Real Chlorine Damage": 0
+      }
+    }
+  },
+
+  "section_11_internal_links": {
+    "blog_gen_instruction": "Every link below must appear in the post. Cluster links use anchor texts verbatim — do not rewrite. Cross-site links use the provided descriptive anchor. Place each link where the placement note says — woven naturally into prose, never as a standalone CTA. Total internal links must not exceed 6.",
+    "all_internal_links": [
+      {
+        "url_or_slug": "/blog/nails-by-lifestyle/gym-nails",
+        "title": "Nails for Gym Goers: Durable Shapes That Survive Lifting",
+        "anchor_text": "gym nails",
+        "placement_note": "Chlorine Resistant Nails by Swim Frequency section — natural mention when discussing durability needs for active/athletic routines beyond just swimming",
+        "link_type": "cluster-pillar"
+      },
+      {
+        "url_or_slug": "/blog/nails-by-lifestyle/press-on-nails-active-lifestyle",
+        "title": "Press-On Nails for Active Lifestyles: Fitness-Friendly Picks",
+        "anchor_text": "press-on nails for active lifestyle",
+        "placement_note": "Gel vs. Acrylic vs. Press-Ons section — direct link when covering press-ons as a swimming-viable option",
+        "link_type": "cluster-spoke"
+      },
+      {
+        "url_or_slug": "/blog/nails-by-lifestyle/manual-labor-nails",
+        "title": "Nails for Manual Labor Jobs: Short, Reinforced Options",
+        "anchor_text": "nails for manual labor",
+        "placement_note": "Signs Your Nails Are Taking Real Chlorine Damage / conclusion area — natural mention for readers whose nails face daily wear beyond water exposure",
+        "link_type": "cluster-spoke"
+      },
+      {
+        "url_or_slug": "/blog/nails-by-lifestyle/travel-nails",
+        "title": "Travel Nails: How to Keep a Manicure Flawless on Long-Haul Trips",
+        "anchor_text": "travel nail care",
+        "placement_note": "Pre-Swim Routine section — natural mention for readers prepping a manicure before a swim-heavy vacation or trip",
+        "link_type": "cluster-spoke"
+      },
+      {
+        "url_or_slug": "https://mirelleinspo.com/blog/nail-polish-product-knowledge/longest-lasting-nail-polish",
+        "title": "The Nail Polish That Actually Lasts the Longest",
+        "anchor_text": "how to tell if a nail polish formula is actually built to resist chipping",
+        "placement_note": "Gel vs. Acrylic vs. Press-Ons section — supports the formula-durability discussion with deeper product-knowledge context",
+        "link_type": "cross-site"
+      }
+    ]
+  },
+
+  "section_12_voice_tone": {
+    "blog_gen_instruction": "This is the voice for this specific post. Layer on top of Mirellé editorial framework. Do not default to generic AI tone.",
+    "recommended_voice": "Confident educator with salon-insider credibility",
+    "tone_characteristics": [
+      "Direct and practical — matches the tutorial intent and the audience's frustration with vague advice",
+      "Explains mechanism, not just instruction (the 'why' behind the 'what')",
+      "Frequency-aware — never gives one-size-fits-all claims",
+      "Honest about trade-offs (e.g. gel isn't a miracle fix for daily swimmers)",
+      "Warm but not fluffy — respects that this reader wants to get to the actionable part quickly"
+    ],
+    "language_style": "Second person throughout ('your nails', 'if you swim daily'). Short, clear sentences for instructional steps. No hedging filler ('it depends' without resolution) — every claim resolves to a concrete recommendation.",
+    "audience_match": "This reader has usually already tried the generic advice and found it insufficient — she needs specificity and mechanism, which this voice delivers without becoming overly technical or salon-jargon-heavy."
+  },
+
+  "section_13_external_links": {
+    "blog_gen_instruction": "Include all external links where indicated. Supports E-E-A-T. Use anchor suggestion as guide — write naturally around it. Sourced from phase_3's best_external_sources_found (real fetched competitor pages), not from separate searches. May be empty (0-2 links) if none of the fetched pages qualified as genuinely citation-worthy — that is expected, not a gap to fill.",
+    "links": []
+  },
+
+  "section_14_execution_plan": {
+    "purpose": "Blog Gen Agent reads this section FIRST — before frontmatter, before writing a single word. Every value here is pre-calculated from the input file data. Blog Gen Agent locks all values and executes them exactly. This section exists to eliminate rewrite loops — every constraint is pre-decided here so there are zero surprises mid-write.",
+    "blog_gen_instruction": "READ THIS SECTION FIRST. Lock every value. Execute exactly. Do not recalculate, do not adjust, do not deviate.",
+    "calculated_by": "Input Gen Agent — calculated last, after all other sections are complete",
+
+    "block_1_keyword_execution": {
+      "primary_keyword": "chlorine resistant nails",
+      "top_5_density_baseline": 10,
+      "total_mention_target": "10 + 3 = 13 total mentions",
+      "first_100_words_plan": {
+        "rule": "Primary keyword MUST appear TWICE in the first 100 words. Mandatory. No exceptions.",
+        "mention_1": "sentence 1 of introduction — opening line naming the reader's exact frustration around chlorine resistant nails",
+        "mention_2": "sentence 3-4 of introduction — restated when promising the frequency-based breakdown"
+      },
+      "first_half_target": "7 mentions — first ~825 words. Run denser in first half.",
+      "second_half_target": "6 mentions — second ~825 words",
+      "strong_tag_rule": "EVERY single mention of the primary keyword — all 13 of them — wrapped in <strong> tags. No exceptions. Catch each one as it is written. Scan after every paragraph.",
+      "keywords_to_avoid_active": [
+        "professional nail length", "nail shapes for work", "camping nails",
+        "gym nails", "nails for manual labor", "best nail shape for typing",
+        "nails for gardeners", "press-on nails for active lifestyle",
+        "travel nail care", "non-toxic nails for moms", "nails for piano players"
+      ]
+    },
+
+    "block_2_word_budget": {
+      "total_target": "1650 words — +/-50 words tolerance, never exceed",
+      "introduction": "230 words",
+      "conclusion": "180 words",
+      "h2_budgets": [
+        { "heading": "Does Chlorine Actually Ruin Your Nails? The Real Mechanism", "budget": 220, "complexity": "medium" },
+        { "heading": "Chlorine Resistant Nails by Swim Frequency: Which Format Wins", "budget": 320, "complexity": "high" },
+        { "heading": "Gel vs. Acrylic vs. Press-Ons for Swimmers: The Honest Breakdown", "budget": 280, "complexity": "high" },
+        { "heading": "The Pre-Swim Routine That Actually Works", "budget": 220, "complexity": "medium" },
+        { "heading": "The Post-Swim Recovery Routine", "budget": 200, "complexity": "low" },
+        { "heading": "Signs Your Nails Are Taking Real Chlorine Damage", "budget": 0, "complexity": "low" }
+      ],
+      "tracking_rule": "Track running word total at the end of every H2 section. If a section is running over budget — cut before moving to the next section. Do not compensate later."
+    },
+
+    "block_3_image_plan": {
+      "total_images": 4,
+      "hero_image": "frontmatter only — NEVER appears in post body",
+      "body_images": 3,
+      "assignments": [
+        { "image_number": 1, "place_after": "Chlorine Resistant Nails by Swim Frequency: Which Format Wins", "image_type": "standard_inspiration", "section_context": "A gel or hard-gel manicure on natural-looking nails, styled to read as durable/active rather than delicate — supports the frequency-format discussion." },
+        { "image_number": 2, "place_after": "Gel vs. Acrylic vs. Press-Ons for Swimmers: The Honest Breakdown", "image_type": "infographic", "section_context": "Simple comparison graphic: Gel vs. Acrylic vs. Press-Ons across durability, lifting risk, and best-for-frequency — a clean graphic layout, not a photo comparison, per banned_absolutely rule." },
+        { "image_number": 3, "place_after": "The Pre-Swim Routine That Actually Works", "image_type": "standard_inspiration", "section_context": "A short, practical nail look (clean gel manicure, no elaborate art) evoking 'ready for the pool' — no hands-with-tools or application shots." }
+      ],
+      "image_type_rule": {
+        "default": "standard_inspiration",
+        "infographic_allowed_when": "This post's tutorial intent with a genuine 3-way comparison justifies one infographic slot for the gel/acrylic/press-on breakdown.",
+        "how_many_infographics": "One — the comparison slot. Remaining slots are standard_inspiration.",
+        "banned_absolutely": "NEVER a tool/equipment image. NEVER a photo-style side-by-side nail comparison — the comparison is the infographic slot only.",
+        "note_for_blog_gen": "Blog Gen Agent follows the image_type flagged here exactly per slot."
+      },
+      "path_rule": "/images/blog/nails-by-lifestyle/swimming-nails/filename.webp"
+    },
+
+    "block_4_opening_technique_assignments": {
+      "rule": "No two consecutive sections use the same technique. Conclusion = Technique 1 or 3 only.",
+      "assignments": [
+        { "section": "Introduction", "technique": "Technique 2 — The Frustration Naming (opens with the exact validated pain point: doing everything right and still watching nails lift)" },
+        { "section": "Does Chlorine Actually Ruin Your Nails? The Real Mechanism", "technique": "Technique 1 — The Claim (states the direct mechanism answer upfront)" },
+        { "section": "Chlorine Resistant Nails by Swim Frequency: Which Format Wins", "technique": "Technique 4 — The Reader Address (directly addresses 'if you swim X times a week...')" },
+        { "section": "Gel vs. Acrylic vs. Press-Ons for Swimmers: The Honest Breakdown", "technique": "Technique 1 — The Claim" },
+        { "section": "The Pre-Swim Routine That Actually Works", "technique": "Technique 3 — The Reframe (reframes prep from an afterthought into the actual determining factor)" },
+        { "section": "The Post-Swim Recovery Routine", "technique": "Technique 4 — The Reader Address" },
+        { "section": "Signs Your Nails Are Taking Real Chlorine Damage", "technique": "Technique 1 — The Claim" },
+        { "section": "Conclusion", "technique": "Technique 3 — The Reframe" }
+      ],
+      "banned_opener_rule": "Check every opener against banned_opening_approaches in blog gen prompt before writing the second sentence"
+    },
+
+    "block_5_link_placements": {
+      "rule": "Every link placed exactly where specified. Anchor texts used verbatim — never rewritten. Links woven into prose naturally — never standalone CTAs.",
+      "links": [
+        { "anchor_text": "gym nails", "full_url": "/blog/nails-by-lifestyle/gym-nails", "place_in_section": "Chlorine Resistant Nails by Swim Frequency: Which Format Wins", "placement_context": "When noting that durability needs echo other active-lifestyle demands", "link_type": "cluster-pillar" },
+        { "anchor_text": "press-on nails for active lifestyle", "full_url": "/blog/nails-by-lifestyle/press-on-nails-active-lifestyle", "place_in_section": "Gel vs. Acrylic vs. Press-Ons for Swimmers: The Honest Breakdown", "placement_context": "When recommending press-ons as a legitimate swim-friendly format", "link_type": "cluster-spoke" },
+        { "anchor_text": "nails for manual labor", "full_url": "/blog/nails-by-lifestyle/manual-labor-nails", "place_in_section": "Signs Your Nails Are Taking Real Chlorine Damage", "placement_context": "When noting nails under repeated physical/chemical stress generally, drawing the parallel", "link_type": "cluster-spoke" },
+        { "anchor_text": "travel nail care", "full_url": "/blog/nails-by-lifestyle/travel-nails", "place_in_section": "The Pre-Swim Routine That Actually Works", "placement_context": "When mentioning prepping a manicure ahead of a swim-heavy trip or vacation", "link_type": "cluster-spoke" },
+        { "anchor_text": "how to tell if a nail polish formula is actually built to resist chipping", "full_url": "https://mirelleinspo.com/blog/nail-polish-product-knowledge/longest-lasting-nail-polish", "place_in_section": "Gel vs. Acrylic vs. Press-Ons for Swimmers: The Honest Breakdown", "placement_context": "When discussing formula durability claims and what actually signals a chip-resistant product", "link_type": "cross-site" }
+      ]
+    },
+
+    "block_6_aeo_geo_plan": {
+      "aeo_assignments": [
+        { "aeo_term": "do chlorine resistant nails actually exist", "assigned_to_section": "Does Chlorine Actually Ruin Your Nails? The Real Mechanism", "execution": "Write a direct 2-3 sentence answer paragraph IMMEDIATELY after the H2 heading — before any elaboration." },
+        { "aeo_term": "how long do gel nails last if you swim every day", "assigned_to_section": "Chlorine Resistant Nails by Swim Frequency: Which Format Wins", "execution": "Write a direct 2-3 sentence answer paragraph immediately after the H2 heading." },
+        { "aeo_term": "what's the difference between buff-off gel and soak-off gel for swimmers", "assigned_to_section": "Gel vs. Acrylic vs. Press-Ons for Swimmers: The Honest Breakdown", "execution": "Write a direct 2-3 sentence answer paragraph immediately after the H2 heading, before elaborating on press-ons." },
+        { "aeo_term": "are press-on nails good for swimming", "assigned_to_section": "Gel vs. Acrylic vs. Press-Ons for Swimmers: The Honest Breakdown", "execution": "Direct answer within the press-on subsection." },
+        { "aeo_term": "how often should swimmers reapply top coat", "assigned_to_section": "The Pre-Swim Routine That Actually Works", "execution": "Direct answer as part of the routine steps." }
+      ],
+      "geo_entity_statements": [
+        { "entity": "buff-off gel", "assigned_to_section": "Gel vs. Acrylic vs. Press-Ons for Swimmers: The Honest Breakdown", "execution": "Write a clear declarative definition sentence — confident, no hedging." },
+        { "entity": "soak-off gel", "assigned_to_section": "Gel vs. Acrylic vs. Press-Ons for Swimmers: The Honest Breakdown", "execution": "Write a clear declarative definition sentence distinguishing it from buff-off gel." },
+        { "entity": "chlorine as an oxidizer", "assigned_to_section": "Does Chlorine Actually Ruin Your Nails? The Real Mechanism", "execution": "Write a clear declarative sentence explaining the oxidizing mechanism that breaks down adhesive bonds — extractable by AI as a citation." }
+      ]
+    },
+
+    "block_7_active_constraints": {
+      "em_dash_banned": "Long em dash does not appear anywhere. If one forms while writing — stop, replace with: comma / new sentence / parentheses / but / restructure.",
+      "banned_vocab_watch": ["elevate", "unlock", "game-changer", "seamlessly", "delve", "boasts", "in today's world"],
+      "american_english_active": "color, recognize, -ize, -or — every instance, no exceptions. This post uses American English, not British.",
+      "keyword_density_reminder": "After every 2 H2 sections — count current keyword mentions. Verify running total is on track to hit 13. First half must run denser than second half. Adjust if needed.",
+      "image_path_reminder": "/images/blog/nails-by-lifestyle/swimming-nails/filename.webp — topic_slug in path always",
+      "internal_link_url_reminder": "Full correct paths only. Cluster links = /blog/nails-by-lifestyle/[slug]. Cross-site link = exact URL as discovered. Never bare /slug.",
+      "hero_image_reminder": "Hero = frontmatter only. Never place hero image in body.",
+      "strong_tag_reminder": "Every primary keyword mention = <strong> tags. Scan after every paragraph."
+    }
+  }
+}
