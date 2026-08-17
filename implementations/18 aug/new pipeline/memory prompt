@@ -1,0 +1,123 @@
+# Mirellé Content Pipeline — Project Memory
+
+**Purpose of this doc:** reference for building the review/QA system discussed. Read this before building anything.
+
+---
+
+## The Core Problem We're Solving
+
+Site has AI-generated content (up to ~2,000 pages planned) built via a two-agent pipeline:
+- **Ri's system** (`input_file_gen.json`) — research phase: SERP analysis, competitor fetch, audience/semantic data
+- **Jyoti's system** (`blog_gen_prompt.json`) — writing phase: takes Ri's research file, generates the final .md post
+
+Both agents run **fully unattended**. Zero human review currently happens on either side.
+
+**The actual goal is not "sound human."** It's: **earn genuine Google trust (E-E-A-T)** so the site isn't flagged as low-quality AI-mass-production. Sounding human is a small part of that — most of the real leverage is elsewhere (see below).
+
+---
+
+## What We Found Wrong (Diagnosed From a Real Sample Page)
+
+Reviewed `nail-polish-colors-make-hands-look-younger.md` — confirmed AI-written, and confirmed it **violates the pipeline's own rules**:
+- Forced exact-match keyword repeated 3x verbatim (bolded)
+- Identical "for the full breakdown, see our guide to X" link template repeated 6x
+- Same section skeleton repeated across every H2 (claim → because X → contrast Y)
+- **Zero citations** on real physiological claims (vein visibility, collagen, fat pad loss, skin aging)
+
+This means either the prompt wasn't v11.5 yet, or v11.5 is silently failing its own rules in production — **and nothing currently checks which.**
+
+---
+
+## What Actually Drives Google Trust (E-E-A-T) — Ranked
+
+1. **Real, verifiable author identity with matching expertise claim** — done. Jyoti's bio is accurate: "Co-founder, Content Writer & Social Media Manager," not falsely claiming technician/practitioner status.
+2. **Content demonstrating the expertise actually claimed** — gap. Research claim isn't visibly backed in the content (no citations, no visible sourcing).
+3. **Site-level trust signals** — About/methodology page drafted, needs 3 fixes (see below).
+4. **Content depth matching real intent**, not padded to a competitor-average word count.
+5. **Sentence-pattern variation / non-templated writing** — real, but the **smallest** lever of all of these. Don't over-invest here relative to the others.
+
+**Key correction made mid-conversation:** not all content needs scientific citation. Only pages making an actual physiological/scientific claim (skin, veins, aging, collagen) need dermatology/clinical sourcing. Trend, inspiration, and style content need zero citations — their trust signals are editorial point of view, accuracy of trend claims, and original visual judgment instead.
+
+---
+
+## Citation Gap — Specific and Confirmed
+
+`section_13_external_links` in the current pipeline pulls links from **competitor content pages** (other blogs ranking for the same keyword) — this is SERP research reused as "citation," which doesn't work for factual/scientific claims. It can also be empty ("may be empty, that's expected"), and on the sample page, it was.
+
+**Fix needed (not yet built):** a separate, conditional research phase that:
+- Only fires when `searchIntent` / content type indicates a factual/scientific claim is being made (not on `seasonal_trend` or `inspirational` content)
+- Searches specifically for authoritative sources (dermatology, clinical, .edu/.gov/health-authority sites) — not competitor blogs
+- Feeds into a real in-text citation next to the specific claim it backs
+
+---
+
+## The Editorial Policy Page — Status
+
+Full draft was written (positioning: "research-driven editorial platform," Ri = research, Jyoti = writing, not technicians/practitioners). Good foundation. **Three fixes required before publishing:**
+
+1. Must acknowledge that factual/health-adjacent claims are sourced from authoritative external references — separate from trend/demand research — otherwise the policy exposes the citation gap rather than covering it.
+2. **"Nothing goes live without passing through both of them"** — currently **not true** in the way a reader would assume (implies manual review; actual review = zero). Must either become true (build real review gate) or be reworded to describe the *systems* Ri/Jyoti built, not implied manual checking.
+3. Add a short, confident line disclosing that tools/AI support the research and writing systems — silence here is a bigger risk than disclosure, especially once a real review gate exists to back it up.
+
+**Reframe established:** Ri's research process and Jyoti's writing process are legitimately *systematized* into the two pipelines — this isn't "fake personas," it's their real methodology encoded into tools. This is defensible IF backed by a real review gate. Without one, it's an accuracy problem in the policy.
+
+---
+
+## The Fix We Landed On: Batch Review Gate
+
+This is the single highest-leverage fix — higher priority than more prompt engineering, higher than citations, higher than the policy wording itself.
+
+**Why:** prompt improvements reduce *how often* something goes wrong. They can't catch it *when* it does — no self-check exists in the current pipeline. A "review" step that reads but can't block/change anything is theater, not review, and shouldn't be claimed in the policy.
+
+### The Pipeline (Plain Version)
+
+```
+AI generates a batch (50-100 pages)
+        ↓
+Pages sit in "pending review" — NOT published yet
+        ↓
+Human samples 10% of the batch against a fixed checklist
+        ↓
+   PASS all 6 checks → whole batch publishes
+   FAIL any check    → NOTHING in the batch publishes;
+                        fix the prompt; re-run the batch
+        ↓
+Log result: batch #, reviewer, date, pass/fail, what failed
+```
+
+### The Checklist (6 items, ~2-3 min per sampled page)
+
+1. **Not templated** — no repeated opener style section-to-section, no forced exact-match keyword phrase repeated 3+ times
+2. **No overclaimed expertise** — nothing implying "I'm a licensed nail tech" / "I tested this myself" when untrue
+3. **Citation present where required** — if the page makes a health/skin/science claim, is there a real authoritative source linked? (Skip this check if no such claim exists on the page.)
+4. **Matches actual site positioning** — nothing contradicting the editorial policy page (no fake personal testing, no overstated research claims)
+5. **Reads distinct from recent samples** — not the same rhythm/structure/trick as the last few pages checked (cross-page uniformity check)
+6. **No obvious factual error** — plain human eyeball check
+
+**Why this makes the policy true:** this is literally what turns "Ri and Jyoti stand behind every piece" from aspirational into demonstrable — and the log is the proof if it's ever questioned.
+
+**Cost reality:** ~20-30 minutes checking 10 pages decides whether 100 pages publish. Not full manual editing — a gate, not a rewrite step.
+
+---
+
+## What Still Needs Building (Next Steps, In Order)
+
+1. **The review gate itself** — was about to be scoped as either a fillable checklist doc or a lightweight interactive tool (click through sample pages, get pass/fail per batch, logs results). User confirmed: build to support real E-E-A-T/trust/policy backing — needs to be a genuine gate, not a formality.
+2. **The citation-research phase** — new conditional phase in `input_file_gen.json`, gated by content type, sourcing real authoritative references for factual claims only.
+3. **Prompt-rotation for cross-page variation** — 3-4 prompt variants (different banned-transition lists, opener pools, voice calibration) rotated across batches, so 2,000 pages don't all solve "sound human" the same identical way.
+4. **Publish the fixed editorial policy page** — only after the review gate is real, so the claims in it are true.
+5. **Unresolved/unchecked (flagged, not yet addressed):** backlinks/external recognition signals, basic site trust infrastructure (About page, contact info, HTTPS, privacy policy) — E-E-A-T signals not yet audited in this conversation.
+
+---
+
+## Cost Reference (For Context, Already Established)
+
+- Hiring human writers for full rewrites at scale: **$67,500–$90,000** for ~1,000 pages at 1,500-3,000 words/page — rejected in favor of the AI pipeline approach.
+- Running pages through Claude Opus for an AI humanize/edit pass: **~$90–180 total** for 1,000–2,000 pages (API cost only; excludes engineering/setup time and human QA time).
+- The real cost center now is **not generation** — it's building the review gate and citation phase, which are one-time engineering builds, not per-page costs.
+
+---
+
+## One-Line Summary
+
+**Don't claim more human involvement than actually exists. Build a real, cheap review gate that can block bad batches — that single fix is what makes the trust claims, the policy page, and the E-E-A-T goal all become true at the same time.**
