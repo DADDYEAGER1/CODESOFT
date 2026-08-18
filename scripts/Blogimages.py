@@ -1,0 +1,825 @@
+"""
+Blog Images — Extract & Organize
+----------------------------------
+Two modes:
+  1. Extract  — scan .md/.mdx files → output merged JSON
+               Sub-modes: Topic folder (scan all) | Individual files (pick paths)
+  2. Organize — load merged JSON, drop images one by one → convert & save
+               Sub-modes: All images (hero + body) | Single file
+
+JSON structure:
+  {
+    "topic": {
+      "slug": {
+        "hero_image"  : "filename-no-ext",
+        "imageAlt"    : "...",
+        "imageWidth"  : 800,
+        "imageHeight" : 800,
+        "ratio"       : "1:1",
+        "url"         : "/images/blog/topic/slug/filename.webp",
+        "body_images" : [
+          {
+            "filename"   : "body-image-name",
+            "imageAlt"   : "...",
+            "imageWidth" : 800,
+            "imageHeight": 800,
+            "ratio"      : "1:1",
+            "url"        : "/images/blog/topic/slug/body-image-name.webp"
+          }
+        ]
+      }
+    }
+  }
+
+Output path: OUTPUT_BASE / topic / slug / filename.webp
+
+Requirements:
+    pip install Pillow
+
+Usage:
+    python blog_images.py
+"""
+
+import json
+import re
+import time
+import threading
+from math import gcd
+from pathlib import Path
+from PIL import Image
+
+
+# ── CONFIG ────────────────────────────────────────────────────────────────────
+WATCH_FOLDER  = Path(r"C:\Users\gaurav verma\Downloads\drop here")
+OUTPUT_BASE   = Path(r"C:\Users\gaurav verma\mirelle baby\mirelle-site\public\images\blog")
+JSON_DIR      = Path(r"C:\Users\gaurav verma\Downloads\images json")
+POLL_INTERVAL = 1
+MAX_KB        = 100
+TARGET_SIZE   = (800, 800)
+# ─────────────────────────────────────────────────────────────────────────────
+
+IMAGE_EXTENSIONS = {".jpg", ".jpeg", ".png", ".webp", ".gif", ".bmp", ".tiff"}
+
+# FIX 3: lock for thread-safe printing
+print_lock = threading.Lock()
+
+def safe_print(*args, **kwargs):
+    with print_lock:
+        print(*args, **kwargs)
+
+
+# ══════════════════════════════════════════════════════════════════════════════
+#  SHARED UTILITIES
+# ══════════════════════════════════════════════════════════════════════════════
+
+def load_json(path: Path) -> dict:
+    with open(path, "r", encoding="utf-8") as f:
+        return json.load(f)
+
+
+def get_ratio(width, height) -> str:
+    try:
+        w, h = int(width), int(height)
+        g = gcd(w, h)
+        return f"{w // g}:{h // g}"
+    except Exception:
+        return "unknown"
+
+
+def pick_main_mode() -> str:
+    print("\n" + "═" * 60)
+    print("  Blog Images — Extract & Organize")
+    print("═" * 60)
+    print("\n  What do you want to do?")
+    print("  1. Extract images  (scan .md/.mdx → output JSON)")
+    print("  2. Organize images (drop images → convert & save)")
+    print("─" * 60)
+    while True:
+        choice = input("  Enter 1 or 2: ").strip()
+        if choice == "1":
+            return "extract"
+        elif choice == "2":
+            return "organize"
+        print("  ❌ Invalid. Enter 1 or 2.")
+
+
+# ══════════════════════════════════════════════════════════════════════════════
+#  MODE 1 — EXTRACT
+# ══════════════════════════════════════════════════════════════════════════════
+
+def parse_frontmatter(text: str) -> dict:
+    match = re.match(r"^---\s*\n(.*?)\n---", text, re.DOTALL)
+    if not match:
+        return {}
+    fm = {}
+    for line in match.group(1).splitlines():
+        # FIX 5: use regex so everything after the first colon is kept as the value
+        m = re.match(r'^(\w+)\s*:\s*(.*)', line)
+        if m:
+            key = m.group(1).strip()
+            val = m.group(2).strip().strip('"').strip("'")
+            fm[key] = val
+    return fm
+
+
+def extract_body_images(text: str, topic: str, slug: str) -> list:
+    """Extract body images with all metadata from <img> tags in MDX body."""
+    body = re.sub(r"^---\s*\n.*?\n---\s*\n", "", text, count=1, flags=re.DOTALL)
+    images = []
+    seen_filenames = set()  # FIX 7: track duplicates
+
+    for img_block in re.finditer(r"<img\b([^>]*?)/>", body, re.DOTALL):
+        attrs_raw = img_block.group(1)
+
+        # FIX 2: use default arg to capture attrs_raw per iteration, not by closure
+        def get_attr(name, _attrs=attrs_raw):
+            m = re.search(rf"""{name}=['"]([^'"]+)['"]""", _attrs)
+            return m.group(1).strip() if m else ""
+
+        src    = get_attr("src")
+        alt    = get_attr("alt")
+        width  = get_attr("width")
+        height = get_attr("height")
+
+        if not src:
+            continue
+
+        filename = Path(src.split("/")[-1]).stem
+        if not filename:
+            continue
+
+        # FIX 7: warn and skip duplicate filenames within same slug
+        if filename in seen_filenames:
+            print(f"  ⚠️  Duplicate body image filename [{filename}] in [{slug}] — skipping second occurrence.")
+            continue
+        seen_filenames.add(filename)
+
+        images.append({
+            "filename"   : filename,
+            "imageAlt"   : alt,
+            "imageWidth" : int(width)  if width.isdigit()  else width,
+            "imageHeight": int(height) if height.isdigit() else height,
+            "ratio"      : get_ratio(width, height),
+            "url"        : src,
+        })
+
+    return images
+
+
+def prompt_topic_folder() -> Path:
+    print("\n" + "─" * 60)
+    while True:
+        raw = input("  Path to topic folder (e.g. C:\\Users\\gaurav verma\\blogs\\carnival): ").strip().strip('"')
+        if not raw:
+            print("  ❌ Path cannot be empty.")
+            continue
+        p = Path(raw)
+        if p.exists() and p.is_dir():
+            return p
+        print(f"  ⚠️  Directory not found: {p}")
+
+
+def prompt_topic_folders() -> list:
+    """Collect multiple topic folder paths, one at a time. Leave blank to finish.
+    Each path's own last folder name will later be used as its topic name."""
+    print("\n" + "─" * 60)
+    print("  Enter topic folder paths one at a time. Leave blank when done.")
+    print("  (Each folder's name will be used as its topic name, e.g.")
+    print("   '...\\blogs\\toenail-shapes' → topic 'toenail-shapes')")
+    print("─" * 60)
+    folders = []
+    while True:
+        raw = input(f"  Folder {len(folders) + 1} (or Enter to finish): ").strip().strip('"')
+        if not raw:
+            if folders:
+                return folders
+            print("  ❌ Add at least one folder.")
+            continue
+        p = Path(raw)
+        if p.exists() and p.is_dir():
+            folders.append(p)
+        else:
+            print(f"  ⚠️  Directory not found: {p}")
+
+
+def prompt_individual_files() -> list:
+    print("\n" + "─" * 60)
+    print("  Enter file paths one at a time. Leave blank when done.")
+    print("─" * 60)
+    files = []
+    while True:
+        raw = input(f"  File {len(files) + 1} (or Enter to finish): ").strip().strip('"')
+        if not raw:
+            if files:
+                return files
+            print("  ❌ Add at least one file.")
+            continue
+        p = Path(raw)
+        if p.exists() and p.is_file() and p.suffix.lower() in (".md", ".mdx"):
+            files.append(p)
+        else:
+            print(f"  ⚠️  File not found or not .md/.mdx: {p}")
+
+
+def pick_extract_submode() -> str:
+    print("\n" + "─" * 60)
+    print("  1. Topic folder      (scan all .md/.mdx in a folder)")
+    print("  2. Individual files  (enter file paths one by one)")
+    print("─" * 60)
+    while True:
+        choice = input("  Enter 1 or 2: ").strip()
+        if choice == "1":
+            return "folder"
+        elif choice == "2":
+            return "files"
+        print("  ❌ Invalid. Enter 1 or 2.")
+
+
+def extract_and_save_topic(topic: str, matched: list) -> None:
+    """Extract images from a list of .md/.mdx files belonging to a single topic,
+    then save (merging with any existing file) to JSON_DIR / images_<topic>.json."""
+    results = {}
+
+    for md_file in matched:
+        text = md_file.read_text(encoding="utf-8")
+        fm   = parse_frontmatter(text)
+        slug = md_file.stem
+
+        image      = fm.get("image", "")
+        image_alt  = fm.get("imageAlt", "")
+        width      = fm.get("imageWidth", "")
+        height     = fm.get("imageHeight", "")
+        hero_name  = Path(image.split("/")[-1]).stem if image else ""
+
+        body_images = extract_body_images(text, topic, slug)
+
+        if topic not in results:
+            results[topic] = {}
+
+        results[topic][slug] = {
+            "hero_image" : hero_name,
+            "imageAlt"   : image_alt,
+            "imageWidth" : int(width)  if str(width).isdigit()  else width,
+            "imageHeight": int(height) if str(height).isdigit() else height,
+            "ratio"      : get_ratio(width, height),
+            "url"        : image,
+            "body_images": body_images,
+        }
+
+        total_body = len(body_images)
+        print(f"  {slug}")
+        print(f"    Hero : {hero_name}  ({width}x{height}, {get_ratio(width, height)})")
+        print(f"    Body : {total_body} image(s)\n")
+
+    # ── Save ─────────────────────────────────────────────────────
+    JSON_DIR.mkdir(parents=True, exist_ok=True)
+    out_file = JSON_DIR / f"images_{topic}.json"
+
+    if out_file.exists():
+        existing = load_json(out_file)
+        # FIX 8: deep merge — preserve existing slugs within the same topic
+        for t, slugs in results.items():
+            if t not in existing:
+                existing[t] = {}
+            existing[t].update(slugs)
+        results = existing
+        print(f"  ℹ️  Merged with existing {out_file.name}")
+
+    out_file.write_text(json.dumps(results, indent=2, ensure_ascii=False), encoding="utf-8")
+    print(f"  💾 Saved → {out_file}")
+    print(f"\n  ✅ Done! {len(matched)} slug(s) extracted for topic [{topic}]\n")
+
+
+def run_extract_mode():
+    print("\n" + "─" * 60)
+    print("  EXTRACT MODE")
+    print("─" * 60)
+
+    submode = pick_extract_submode()
+
+    if submode == "folder":
+        topic_folders = prompt_topic_folders()
+
+        print(f"\n  📂 Topic folders selected : {len(topic_folders)}\n")
+
+        for i, topic_folder in enumerate(topic_folders, 1):
+            topic   = topic_folder.name
+            matched = sorted([*topic_folder.glob("*.md"), *topic_folder.glob("*.mdx")])
+
+            print("─" * 60)
+            print(f"  [{i}/{len(topic_folders)}] Topic : {topic}")
+            print(f"  📂 Found : {len(matched)} .md/.mdx file(s)\n")
+
+            if not matched:
+                print(f"  ❌ No files to process for [{topic}] — skipping.\n")
+                continue
+
+            extract_and_save_topic(topic, matched)
+
+        print("─" * 60)
+        print(f"  🎉 All done! Processed {len(topic_folders)} topic folder(s).\n")
+        return
+
+    # ── Individual files submode (unchanged: one shared topic + label) ──
+    matched = prompt_individual_files()
+    print(f"\n  📂 Found : {len(matched)} file(s)\n")
+
+    print("─" * 60)
+    while True:
+        topic = input("  Topic name (used for output grouping): ").strip()
+        if topic:
+            break
+        print("  ❌ Topic cannot be empty.")
+
+    if not matched:
+        print("  ❌ No files to process.")
+        return
+
+    print("─" * 60)
+    label = input("  Output label (e.g. 'recipe' → images_recipe.json): ").strip().lower()
+    if not label:
+        print("  ❌ No label entered.")
+        return
+
+    # ── Extract ──────────────────────────────────────────────────
+    results = {}
+
+    for md_file in matched:
+        text = md_file.read_text(encoding="utf-8")
+        fm   = parse_frontmatter(text)
+        slug = md_file.stem
+
+        image      = fm.get("image", "")
+        image_alt  = fm.get("imageAlt", "")
+        width      = fm.get("imageWidth", "")
+        height     = fm.get("imageHeight", "")
+        hero_name  = Path(image.split("/")[-1]).stem if image else ""
+
+        body_images = extract_body_images(text, topic, slug)
+
+        if topic not in results:
+            results[topic] = {}
+
+        results[topic][slug] = {
+            "hero_image" : hero_name,
+            "imageAlt"   : image_alt,
+            "imageWidth" : int(width)  if str(width).isdigit()  else width,
+            "imageHeight": int(height) if str(height).isdigit() else height,
+            "ratio"      : get_ratio(width, height),
+            "url"        : image,
+            "body_images": body_images,
+        }
+
+        total_body = len(body_images)
+        print(f"  {slug}")
+        print(f"    Hero : {hero_name}  ({width}x{height}, {get_ratio(width, height)})")
+        print(f"    Body : {total_body} image(s)\n")
+
+    # ── Save ─────────────────────────────────────────────────────
+    JSON_DIR.mkdir(parents=True, exist_ok=True)
+    out_file = JSON_DIR / f"images_{label}.json"
+
+    if out_file.exists():
+        existing = load_json(out_file)
+        # FIX 8: deep merge — preserve existing slugs within the same topic
+        for t, slugs in results.items():
+            if t not in existing:
+                existing[t] = {}
+            existing[t].update(slugs)
+        results = existing
+        print(f"  ℹ️  Merged with existing {out_file.name}")
+
+    out_file.write_text(json.dumps(results, indent=2, ensure_ascii=False), encoding="utf-8")
+    print(f"  💾 Saved → {out_file}")
+    print(f"\n  ✅ Done! {len(matched)} slug(s) extracted for topic [{topic}]\n")
+
+
+# ══════════════════════════════════════════════════════════════════════════════
+#  MODE 2 — ORGANIZE
+# ══════════════════════════════════════════════════════════════════════════════
+
+def get_new_images(folder: Path) -> list:
+    files = [
+        f for f in folder.iterdir()
+        if f.is_file()
+        and f.suffix.lower() in IMAGE_EXTENSIONS
+        and not f.name.startswith("_converting_")
+    ]
+    files.sort(key=lambda f: f.stat().st_mtime)
+    return files
+
+
+def center_crop_and_resize(img: Image.Image, size=(800, 800)) -> Image.Image:
+    w, h    = img.size
+    min_dim = min(w, h)
+    left    = (w - min_dim) // 2
+    top     = (h - min_dim) // 2
+    right   = left + min_dim
+    bottom  = top  + min_dim
+    img = img.crop((left, top, right, bottom))
+    img = img.resize(size, Image.LANCZOS)
+    return img
+
+
+def convert_to_webp(src: Path, dest: Path, max_kb: int = 100, crop: bool = True, compress_only: bool = False) -> bool:
+    max_bytes = max_kb * 1024
+    try:
+        img = Image.open(src).convert("RGB")
+        if compress_only:
+            pass  # keep original dimensions
+        elif crop:
+            img = center_crop_and_resize(img, TARGET_SIZE)
+
+        for quality in range(85, 9, -5):
+            img.save(dest, "WEBP", quality=quality, method=6)
+            if dest.stat().st_size <= max_bytes:
+                safe_print(f"    🔄 WebP @ quality={quality} → {dest.stat().st_size // 1024}KB")
+                return True
+
+        scale = 0.9
+        while scale > 0.2:
+            w, h    = img.size
+            resized = img.resize((int(w * scale), int(h * scale)), Image.LANCZOS)
+            resized.save(dest, "WEBP", quality=10, method=6)
+            if dest.stat().st_size <= max_bytes:
+                safe_print(f"    🔄 WebP @ scale={scale:.1f} → {dest.stat().st_size // 1024}KB")
+                return True
+            scale -= 0.1
+
+        safe_print(f"    ⚠️  Best effort, could not reach under {max_kb}KB")
+        return True
+    except Exception as e:
+        safe_print(f"    ❌ Conversion error: {e}")
+        return False
+
+
+def process_image(temp_path: Path, dest_folder: Path, target_name: str, crop: bool = True, compress_only: bool = False) -> threading.Thread:
+    def _run():
+        final_name = target_name + ".webp"
+        final_path = dest_folder / final_name
+        convert_to_webp(temp_path, final_path, MAX_KB, crop=crop, compress_only=compress_only)
+        try:
+            temp_path.unlink()
+        except Exception:
+            pass
+        safe_print(f"  ✓  Saved: {dest_folder.parent.name}/{dest_folder.name}/{final_name}\n")
+
+    t = threading.Thread(target=_run, daemon=True)
+    t.start()
+    return t
+
+
+def wait_for_image(label: str, index: int, total: int) -> Path:
+    # Wait until folder is empty (previous image was picked up / renamed)
+    while get_new_images(WATCH_FOLDER):
+        time.sleep(POLL_INTERVAL)
+
+    # Now wait for the next drop
+    while True:
+        new_images = get_new_images(WATCH_FOLDER)
+        if new_images:
+            f = new_images[0]
+            # Wait until file size is stable (not still being written by browser)
+            try:
+                size1 = f.stat().st_size
+                time.sleep(0.5)
+                size2 = f.stat().st_size
+                if size1 == size2 and size2 > 0:
+                    return f
+            except Exception:
+                pass
+        print(f"\r  ⏳ Drop image {index}/{total}: {label}   ", end="", flush=True)
+        time.sleep(POLL_INTERVAL)
+
+
+def pick_organize_submode() -> str:
+    print("\n" + "─" * 60)
+    print("  ORGANIZE MODE")
+    print("─" * 60)
+    print("  1. All images  (hero + body from JSON)")
+    print("  2. Single file")
+    print("─" * 60)
+    while True:
+        choice = input("  Enter 1 or 2: ").strip()
+        if choice == "1":
+            return "all"
+        elif choice == "2":
+            return "single"
+        print("  ❌ Invalid. Enter 1 or 2.")
+
+
+def pick_json_path() -> Path:
+    print("\n" + "─" * 60)
+    while True:
+        raw = input("  Full path to JSON file: ").strip().strip('"')
+        p   = Path(raw)
+        if p.exists() and p.suffix == ".json":
+            return p
+        print(f"  ❌ File not found or not a .json: {p}")
+
+
+def ask_topic_mode() -> bool:
+    """Ask the user whether this JSON's slugs should be organized under a
+    topic folder or written straight to OUTPUT_BASE/slug with no topic level.
+    Returns True if this is a NO-TOPIC case."""
+    print("\n" + "─" * 60)
+    print("  Is this a NO-TOPIC case or a TOPIC case?")
+    print("  1. Topic case      → OUTPUT_BASE / topic / slug")
+    print("  2. No-topic case   → OUTPUT_BASE / slug   (topic folder skipped)")
+    print("─" * 60)
+    while True:
+        choice = input("  Enter 1 or 2: ").strip()
+        if choice == "1":
+            return False
+        elif choice == "2":
+            return True
+        print("  ❌ Invalid. Enter 1 or 2.")
+
+
+def pick_topic(data: dict) -> str | None:
+    topics = list(data.keys())
+    print("\n" + "─" * 60)
+    print("  Available topics:")
+    for i, t in enumerate(topics, 1):
+        slug_count = len(data[t])
+        print(f"  {i}. {t}  ({slug_count} slug{'s' if slug_count != 1 else ''})")
+    print("─" * 60)
+    while True:
+        choice = input("  Pick a topic number (or 'q' to quit): ").strip()
+        if choice.lower() == "q":
+            return "quit"
+        if choice.isdigit() and 1 <= int(choice) <= len(topics):
+            return topics[int(choice) - 1]
+        print("  ❌ Invalid choice.")
+
+
+def count_slug_images(entry: dict) -> int:
+    """Count how many images (hero + body) a slug entry has."""
+    count = 1 if entry.get("hero_image", "") else 0
+    count += len(entry.get("body_images", []))
+    return count
+
+
+def pick_slug(slugs: list, done: set, topic_data: dict) -> str | None:
+    remaining = [s for s in slugs if s not in done]
+    if not remaining:
+        return None
+
+    print("\n" + "─" * 60)
+    print("  Available slugs:")
+    for i, slug in enumerate(remaining, 1):
+        img_count = count_slug_images(topic_data.get(slug, {}))
+        print(f"  {i}. {slug}  ({img_count} image{'s' if img_count != 1 else ''})")
+    print("─" * 60)
+
+    while True:
+        choice = input("  Pick a slug number (or 'b' to go back, 'q' to quit): ").strip()
+        if choice.lower() == "q":
+            return "quit"
+        if choice.lower() == "b":
+            return "back"
+        if choice.isdigit() and 1 <= int(choice) <= len(remaining):
+            return remaining[int(choice) - 1]
+        print("  ❌ Invalid choice.")
+
+
+def watch_slug_all(topic: str, slug: str, entry: dict, no_topic: bool = False):
+    """Process hero then body images for a slug.
+    If no_topic is True, the topic folder level is skipped entirely and
+    images are written straight to OUTPUT_BASE / slug."""
+    dest_folder = (OUTPUT_BASE / slug) if no_topic else (OUTPUT_BASE / topic / slug)
+    dest_folder.mkdir(parents=True, exist_ok=True)
+    print(f"\n  📁 Output folder: {dest_folder}")
+
+    # ── Build full image queue ────────────────────────────────────
+    queue = []  # list of (target_name, crop, compress_only, img_type)
+
+    # Hero
+    hero_name = entry.get("hero_image", "")
+    if hero_name:
+        w = entry.get("imageWidth", 0)
+        h = entry.get("imageHeight", 0)
+        # FIX 6: if dimensions missing or zero, always crop+resize instead of compress_only
+        if not w or not h:
+            compress_only = False
+        else:
+            compress_only = not (w == 800 and h == 800)
+        queue.append((hero_name, True, compress_only, "HERO"))
+
+    # Body
+    for img in entry.get("body_images", []):
+        filename = img.get("filename", "")
+        if filename:
+            queue.append((filename, True, False, "BODY"))
+
+    total = len(queue)
+    if total == 0:
+        print("  ⚠️  No images found for this slug.")
+        return
+
+    hero_count = 1 if hero_name else 0
+    body_count = total - hero_count
+    print(f"\n  📋 {total} image(s) to process  [{hero_count} hero + {body_count} body]\n")
+
+    active_threads = []
+    skipped        = 0
+
+    for i, (target_name, crop, compress_only, img_type) in enumerate(queue, 1):
+        active_threads = [t for t in active_threads if t.is_alive()]
+
+        # FIX 1: pass adjusted index accounting for skips so prompt stays accurate
+        display_index = i - skipped
+        display_total = total - skipped
+        img_path = wait_for_image(target_name, display_index, display_total)
+        print(f"\n  📥 Received : {img_path.name}")
+        print(f"     Type     : {img_type}")
+        print(f"     → Rename : {target_name}.webp")
+
+        # Rename to _converting_ in main thread; retry if file still locked by OS/browser
+        temp_path = img_path.parent / ("_converting_" + img_path.name)
+        for attempt in range(10):
+            try:
+                img_path.rename(temp_path)
+                break
+            except PermissionError:
+                time.sleep(0.5)
+        else:
+            print(f"  ❌ Could not lock {img_path.name} after retries, skipping.")
+            skipped += 1
+            continue
+
+        t = process_image(temp_path, dest_folder, target_name, crop=crop, compress_only=compress_only)
+        active_threads.append(t)
+
+        if i < total:
+            next_name = queue[i][0]
+            next_type = queue[i][3]
+            print(f"  ⏳ Next ({i - skipped + 1}/{display_total}): [{next_type}] {next_name}")
+
+    for t in active_threads:
+        t.join()
+
+    done_count = total - skipped
+    print(f"\n  ✅ {done_count}/{total} image(s) done for [{slug}]")
+    if skipped:
+        print(f"  ⚠️  {skipped} image(s) skipped due to lock errors.\n")
+    else:
+        print()
+
+
+def pick_single_topic_slug() -> tuple[str, str]:
+    """For single mode — pick or type topic + slug."""
+    existing_topics = sorted([d.name for d in OUTPUT_BASE.iterdir() if d.is_dir()]) if OUTPUT_BASE.exists() else []
+
+    print("\n" + "─" * 60)
+    if existing_topics:
+        print("  Existing topics:")
+        for i, t in enumerate(existing_topics, 1):
+            print(f"  {i}. {t}")
+        print("  (Enter number or type a new topic name)")
+    else:
+        print("  No existing topics. Type a topic name:")
+    print("─" * 60)
+
+    while True:
+        raw = input("  Topic: ").strip()
+        if not raw:
+            print("  ❌ Cannot be empty.")
+            continue
+        if raw.isdigit() and existing_topics and 1 <= int(raw) <= len(existing_topics):
+            topic = existing_topics[int(raw) - 1]
+        else:
+            topic = raw
+        break
+
+    topic_path     = OUTPUT_BASE / topic
+    existing_slugs = sorted([d.name for d in topic_path.iterdir() if d.is_dir()]) if topic_path.exists() else []
+
+    print("\n" + "─" * 60)
+    if existing_slugs:
+        print(f"  Existing slugs in [{topic}]:")
+        for i, s in enumerate(existing_slugs, 1):
+            print(f"  {i}. {s}")
+        print("  (Enter number or type a new slug name)")
+    else:
+        print(f"  No existing slugs in [{topic}]. Type a slug name:")
+    print("─" * 60)
+
+    while True:
+        raw = input("  Slug: ").strip()
+        if not raw:
+            print("  ❌ Cannot be empty.")
+            continue
+        if raw.isdigit() and existing_slugs and 1 <= int(raw) <= len(existing_slugs):
+            slug = existing_slugs[int(raw) - 1]
+        else:
+            slug = raw
+        break
+
+    return topic, slug
+
+
+def run_single_mode():
+    print("\n" + "─" * 60)
+    target_name = input("  Target filename (no extension): ").strip()
+    if not target_name:
+        print("  ❌ No filename entered.")
+        return
+
+    topic, slug  = pick_single_topic_slug()
+    dest_folder  = OUTPUT_BASE / topic / slug
+    dest_folder.mkdir(parents=True, exist_ok=True)
+
+    print(f"\n  📁 Output folder: {dest_folder}")
+    print(f"  ⏳ Drop the image for [{target_name}.webp] into the watch folder...\n")
+
+    img_path = wait_for_image(target_name, 1, 1)
+    print(f"\n  📥 Received : {img_path.name}")
+    print(f"     → Rename : {target_name}.webp")
+
+    temp_path = img_path.parent / ("_converting_" + img_path.name)
+    for attempt in range(10):
+        try:
+            img_path.rename(temp_path)
+            break
+        except PermissionError:
+            time.sleep(0.5)
+    else:
+        print(f"  ❌ Could not lock {img_path.name} after retries.")
+        return
+
+    t = process_image(temp_path, dest_folder, target_name, crop=True, compress_only=False)
+    t.join()
+    print(f"  ✅ Done!\n")
+
+
+def run_organize_mode():
+    submode = pick_organize_submode()
+
+    if submode == "single":
+        run_single_mode()
+        return
+
+    json_path = pick_json_path()
+    data      = load_json(json_path)
+    no_topic  = ask_topic_mode()
+
+    topic_count = len(data)
+    print(f"\n  ✅ Loaded {json_path.name} — {topic_count} topic(s) found")
+    if no_topic:
+        print("  ℹ️  No-topic mode: images will be saved to OUTPUT_BASE / slug (topic folder skipped)")
+
+    while True:
+        topic = pick_topic(data)
+        if topic == "quit":
+            print("\n  👋 Exiting.")
+            break
+
+        topic_data = data[topic]
+        slugs      = list(topic_data.keys())
+        done       = set()
+
+        while True:
+            slug = pick_slug(slugs, done, topic_data)
+
+            if slug is None:
+                print(f"\n  🎉 All slugs done for [{topic}]!")
+                break
+            if slug == "quit":
+                print("\n  👋 Exiting.")
+                return
+            if slug == "back":
+                break
+
+            entry = topic_data[slug]
+            watch_slug_all(topic, slug, entry, no_topic=no_topic)
+            done.add(slug)
+
+            remaining = len(slugs) - len(done)
+            if remaining == 0:
+                print(f"\n  🎉 All slugs done for [{topic}]!")
+                break
+            print(f"  {remaining} slug(s) remaining in [{topic}].")
+
+
+# ══════════════════════════════════════════════════════════════════════════════
+#  MAIN
+# ══════════════════════════════════════════════════════════════════════════════
+
+def main():
+    WATCH_FOLDER.mkdir(parents=True, exist_ok=True)
+
+    print(f"\n  📂 Watch folder : {WATCH_FOLDER}")
+    print(f"  💾 Output base  : {OUTPUT_BASE}")
+    print(f"  📄 JSON dir     : {JSON_DIR}")
+
+    mode = pick_main_mode()
+
+    if mode == "extract":
+        run_extract_mode()
+    elif mode == "organize":
+        run_organize_mode()
+
+
+if __name__ == "__main__":
+    main()
