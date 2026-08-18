@@ -18,7 +18,7 @@ project_path = r"C:\Users\gaurav verma\mirelle baby\mirelle-site"
 # ========================
 # OUTPUT FILE
 # ========================
-output_file = r"C:\Users\gaurav verma\scripts\exported files.json"
+output_file = r"C:\Users\gaurav verma\codesoft\scripts\exported files.json"
 
 # ========================
 # ENSURE OUTPUT FOLDER EXISTS
