@@ -1,0 +1,370 @@
+# QUEER MANICURE — INPUT FILE FOR BLOG GEN AGENT
+Mode: SOLO (standalone) | Primary Keyword: queer manicure | Generated: 2026-08-20
+
+---
+
+## SECTION 1: FILE AUTHORITY
+THIS FILE IS THE SINGLE SOURCE OF TRUTH FOR THE BLOG GEN AGENT. All values in POST_CONSTANTS are hardcoded — Blog Gen Agent does not ask, adjust, or override them. All keywords, H2 structure, audience intelligence, internal links, and tone defined here must be followed exactly.
+
+---
+
+## SECTION 2: POST_CONSTANTS
+- **slug:** queer-manicure
+- **topic_slug:** OMITTED — standalone/solo mode, no topic field
+- **canonical:** https://mirelleinspo.com/blog/queer-manicure
+- **post_type:** standalone
+- **intent:** informational (research-locked via SERP/PAA scan — dominant competitor format is explainer/guide, not inspiration gallery or tutorial; reader wants to understand the term, its meaning, and how to act on it)
+- **word_count:** 2900 (top_5_word_count_average = 2050; truefashionstory.com alone runs ~2900 and is the clear structural leader — target set at/above that ceiling since the topic genuinely supports it: history, practical rationale, styling, salon script, FAQ)
+- **image_count:** 7 (flat default — not tutorial, not comparison, not pillar, not 40+ slug)
+- **show_inspo_gallery_link:** false — intent is informational/explainer, not a browse/explore-designs post. Reader wants understanding and confidence, not a scroll gallery. (Reported again as required one-line note after file delivery.)
+- **template:** posts
+- **hero_dimensions:** 1200x675
+- **category:** LGBTQ / Nail Inspo
+- **publish_date:** 2026-08-20
+- **author:** jyoti-mirelle
+
+---
+
+## SECTION 3: CLUSTER SNAPSHOT
+N/A — solo mode, no cluster_context.json. Omitted per spec.
+
+**Cannibalization note (carried forward manually since no keyword_do_not_use list exists in solo mode):** mirelleinspo.com/blog/lgbtq/lesbian-nails already has a dedicated H2 "What Makes a Nail Design 'Lesbian Nails'? (The Queer Manicure Explained)" covering this term at a summary level. This post must NOT duplicate that page's angle (broad WLW aesthetic hub). This post owns: the term itself as a dedicated deep-dive — origin, the practical rationale in full, the identity/stereotype debate, race/class nuance, and the salon-script how-to. Recommend site owner add internal cross-link from lesbian-nails → this post's dedicated section once published, and treat "queer manicure" as reserved for THIS post in any future keyword_do_not_use list.
+
+---
+
+## SECTION 4: SERP ANALYSIS
+
+**competitor_gaps** (demand confirmed 2+ sources: YouTube salon-experience videos + Quora questions + absence across all 5 fetched pages):
+- No page walks the reader through literally what to say to a nail tech to request this style — YouTube has multiple "I asked my nail tech for lesbian nails" videos (proven demand) but zero editorial pages provide a script
+- No page directly addresses the audience's own skepticism ("Do lesbians really need short nails for sex?" — real Quora question) with a clear, non-judgmental answer
+- No page gives a genuinely balanced treatment of the race/class critique (Kinsey Clarke's point, present in 2 sources — LA Times/dailyillinois + PopSugar/facemask.kr mirror — about not centering affluent white women in queer nail culture) as its own developed section rather than a passing quote
+
+**missing_semantic_territory:**
+- "party fingers" (recurring slang across 3 sources — LA Times/dailyillinois, Wikipedia, PopSugar mirror) — under-defined everywhere it appears
+- "the leisurely lesbian" (LA Times/dailyillinois) — coined nickname, zero competitor explains or expands it
+- Salon etiquette/communication angle entirely absent from all 5 fetched pages
+- Comparison table format used effectively by only 1 of 5 (truefashionstory.com) — differentiation opportunity to do this AND go deeper narratively
+
+**our_strategic_approach:** truefashionstory.com is the clear structural leader (2,900 words, 8 H2s, FAQ, comparison table) but is generic-voice, has no named sources, and was written by a non-specialist fashion blog with no direct community quotes. Our post matches its structural depth and SEO discipline (FAQ block, comparison table, clear H2 progression) while adding what it lacks: real named voices (already documented across LA Times, Dazed, PopSugar — used for grounding, not reproduction), the actual how-to-ask-at-the-salon gap no competitor fills, and the race/class nuance most competitors mention only in passing. Structural edge: open with a direct definition (matches AEO/PAA pattern), then move through origin → the real reason for the style → the identity debate (with balance — not everyone agrees, and that's worth showing) → practical styling → the salon script → FAQ. This is a deeper, more balanced, more actionable page than anything currently ranking.
+
+**top_5_fetched_pages_summary:**
+1. **truefashionstory.com/lesbian-nails-a-guide-to-meaning-styles-and-history/** — ~2,900 words, 8 H2s (+ FAQ), "lesbian nails" mentioned ~45+ times (bolded). Strength: comprehensive, well-structured, comparison table, FAQ. Weakness: generic voice, no named community sources, written by non-specialist.
+2. **dazeddigital.com/beauty/article/57211/...** — ~1,400 words, 0 H2s (single-flow essay). Strength: real named voices (Pourshafighi, MacC, Williams), nuanced identity discussion. Weakness: no practical/how-to content, narrow personal-essay scope.
+3. **fashionmagazine.com/flare/identity-politics/lesbian-nails-culture/** — ~1,600 words, 0 H2s. Strength: strong narrative arc, cites Autostraddle poll data. Weakness: pure personal essay, no actionable content, dated (2019, refreshed 2024).
+4. **dailyillinois.com (syndicated LA Times "Cheers to the Queer Manicure")** — ~1,300 words, 0 H2s. Strength: most named expert sources (Mina Q, Natalie Minerva, Kinsey Clarke), race/class nuance included. Weakness: no structure, no practical guidance, celebrity-anecdote heavy.
+5. **everyqueer.com/masculine-nail-designs-masc-nail-designs/** — ~1,100 words on-topic (full page longer, mostly about masc nails generally), 4 H2s. Strength: salon-visit tips section exists (generic, not queer-manicure-specific). Weakness: "queer manicure" is a brief aside, not the main topic.
+
+**top_5_word_count_average:** 2050 words
+
+**top_5_keyword_density_average:** "queer manicure" (or its direct synonyms lesbian manicure/femmicure treated as the same concept) appears roughly 4 times average across the 5 pages in direct phrase form — truefashionstory.com skews this up by using "lesbian nails" (its own chosen primary term) 45+ times; direct "queer manicure" phrase specifically appears 2-5 times per page.
+
+**recommended_image_count_validation:** 7 (1 hero + 6 body) matches the SERP pattern — none of the 5 competitors are gallery/inspiration-heavy; this is an explainer post, not a visual roundup, so flat default is correct and no gallery link is warranted.
+
+**best_external_sources_found** (up to 2, genuinely citation-worthy):
+1. Wikipedia — "Queer manicure" (https://en.wikipedia.org/wiki/Queer_manicure) — authoritative, well-cited summary, appropriate as a definitional anchor.
+2. Dazed — "Lez nails: Is the 'queer woman with short nails' an outdated stereotype?" (https://www.dazeddigital.com/beauty/article/57211/1/lez-nails-is-the-queer-woman-with-short-nails-an-outdated-stereotype) — genuine editorial voice, real named community sources, adds real nuance on the stereotype debate.
+
+---
+
+## SECTION 5: AUDIENCE INTELLIGENCE
+
+**who_they_are:** Primarily queer women (lesbian, bisexual, sapphic-identifying) who have heard the term "queer manicure" or "lesbian manicure" — via social media, a friend, or a dating-app bio joke — and want to understand what it actually is, whether it's for them, and/or how to get one. Secondary audience: allies/curious readers, and nail techs/salon professionals wanting vocabulary. Expertise level: low-to-medium on the *term* itself, but often already nail-literate generally.
+
+**what_they_want_from_this_post:** A clear, non-judgmental definition; the real reason behind the style (not just "it's a stereotype"); reassurance that there's no single "correct" way to be queer via manicure; and — critically, per the confirmed content gap — practical confidence to actually ask for it at a salon without embarrassment.
+
+**what_frustrates_them:** Existing content is split between dry Wikipedia-style detachment and deeply personal essays that don't generalize into actionable guidance. Nobody tells them exactly what to say to a nail tech. Several sources (Dazed, dailyillinois/LA Times) show real anxiety about the *social* ask — "I was too shy to ask for a femme-icure" is a direct, repeated pain point across two sources.
+
+**top_5_pain_points:**
+1. Embarrassment/awkwardness asking a nail tech for the style by name (documented directly in 2 sources: Dazed's Izzy MacC quote, GO Magazine)
+2. Uncertainty whether short nails are "required" to be legitimately queer (direct stereotype anxiety — FASHION Magazine, Dazed both center this)
+3. Not knowing the practical reasoning (is it really about sex? is that TMI? — confirmed via Quora question "Do lesbians really need to have short nails for sex?")
+4. Feeling like queer nail culture centers a narrow (often white, thin) aesthetic — real critique from Kinsey Clarke, LA Times/dailyillinois
+5. Wanting styling options beyond "two nails short, rest long" — confirmed by Pinterest's broad cross-tagging (goth pride, rainbow, pansexual) showing appetite for variety within the concept
+
+**exact_user_phrases** (from real Quora, Pinterest, YouTube, and fetched-page community quotes):
+1. "Do lesbians really need to have short nails for sex?"
+2. "I was a bit embarrassed about asking for one in most nail salons"
+3. "If you know, you know"
+4. "party fingers"
+5. "the leisurely lesbian"
+6. "I asked my nail tech for lesbian nails"
+7. "Do what you want, girl. Do your nails how you want"
+8. "Are they long or short? / Are they polished or natural?" (gaydar-testing framing, from The L Word / cultural reference)
+9. "strap grabbers" (Black lesbian community term for long acrylics, cited via Kinsey Clarke)
+10. "you wouldn't miss, you know" (partner-consent framing, FASHION Magazine)
+
+**intent_content_signals:**
+1. Wants a direct definition up top (not buried after a long anecdote)
+2. Responds to real named voices/quotes over generic "some people say" framing
+3. Wants explicit permission-giving language (no single right way to be queer)
+4. Responds well to practical, copy-pasteable guidance (a literal thing to say at the salon)
+5. Wants the identity debate acknowledged, not flattened — both "it's meaningful" and "it's not a rule" need to coexist
+6. FAQ format performs well in this content category (confirmed by truefashionstory.com's structure)
+
+---
+
+## SECTION 6: SEMANTIC KEYWORD DATA
+
+**primary_keyword:** queer manicure
+
+**keyword_variations:** lesbian manicure, femmicure, femme-icure, lesbian nails, queer nail style, WLW manicure, sapphic manicure, "party fingers" manicure
+
+**cluster_keywords:** two short nails lesbian, index and middle finger short nails, digital penetration nail safety, queer nail flagging, gaydar nail stereotype, lesbian short nails, femme-butch nail aesthetic, queer identity signaling, sapphic nail culture, sex-friendly manicure, nail tech queer friendly, coming out nail style
+
+**lsi_terms** (from BOTH autocomplete-style research AND real fetched competitor pages): dominant hand nails, nail extension safety, digital penetration comfort, femme-butch spectrum, lesbian pride flag nails, gaydar stereotype, The L Word nail scene, Autostraddle poll, flagging (queer signaling), drag subculture nail art, femmephobia, pillow princess stereotype, nail code, queer visibility, Black lesbian nail culture, strap grabbers, sex positivity nails, mutual identification, nail salon etiquette, HBO Euphoria nails
+
+**aeo_terms:**
+1. What is a queer manicure?
+2. Why do lesbians keep two nails short?
+3. Is the queer manicure just a stereotype?
+4. Do you need short nails to have sex as a lesbian?
+5. What's the difference between a queer manicure and a femmicure?
+6. How do I ask for a queer manicure at a nail salon?
+7. Can you have long nails and still be a lesbian?
+8. What are "party fingers" in nail culture?
+9. Is the queer manicure only for femme lesbians?
+10. Where did the lesbian manicure trend come from?
+
+**technical_terms:** digital penetration, dominant hand, nail extensions, acrylic set, gel manicure, femme-butch spectrum, LGBTQ slang/flagging, nail bed, cuticle care
+
+**user_language:** "if you know, you know," "party fingers," "the leisurely lesbian," "strap grabbers," "do your nails how you want," "gay rights!" (comment culture reaction), "u-hauling," "pillow princess," "lez nails," "nail code"
+
+---
+
+## SECTION 7: VOICE AND AI QUERIES
+
+**queries:**
+1. What exactly is a queer manicure?
+2. Why do some lesbians keep two fingernails short?
+3. Is a queer manicure the same thing as a femmicure?
+4. Do you have to have short nails to be a lesbian?
+5. How do I ask my nail tech for a queer manicure?
+6. Is the "lesbian nails" stereotype outdated?
+7. Can I get a queer manicure if I have long nails normally?
+8. What does "party fingers" mean in nail culture?
+9. Why did short nails become associated with lesbians?
+10. Is the queer manicure just about sex, or is it about identity too?
+11. What's the difference between a lesbian manicure and regular short nails?
+12. Do nail techs know what a queer manicure is if I ask for one?
+13. What did The L Word have to do with the lesbian nails stereotype?
+14. Is it offensive to ask for a "queer manicure" by name at a salon?
+15. Can bisexual or nonbinary people get a queer manicure too?
+
+---
+
+## SECTION 8: HOOK AND CTR
+
+**real_serp_findings_summary:** Fetched competitor titles split into two patterns: personal-essay framing ("I Used to Think Being a Lesbian Meant Giving Up My Love of Long Nails," "Lez Nails: Is the...an Outdated Stereotype?") and one direct SEO-guide format (truefashionstory.com's "Lesbian Nails: A Guide to Meaning, Styles, and History"). None front-load "queer manicure" as the primary term, and none promise both explanation AND actionable how-to in the title.
+
+**selected_option_rationale:** This option combines a direct definitional promise ("What It Means") with the confirmed content gap ("How to Get One") — the single biggest unmet need found across YouTube, Quora, and Dazed/GO Magazine's embarrassment quotes. It differentiates clearly from truefashionstory's competing "Guide to Meaning, Styles, and History" framing by promising practical action, not just history.
+
+**title:** The Queer Manicure: What It Means & How to Get One
+**title_char_count:** 54 characters — within 55-60 hard cap, optimal range
+**meta_description:** Not just short nails on two fingers. The real story behind the queer manicure, plus exactly what to say at your next appointment.
+**meta_char_count:** 133 characters — within 120-155 hard cap
+
+**intro_hook_brief:** Open by naming the misconception directly — that this is "just two short nails" — then pivot to the promise that this post covers the real story AND gives the reader exact words to use at their next appointment. Curiosity-gap + specificity-promise blend, matching the selected title's dual promise.
+
+**first_h2_hook_direction:** The first H2 should deliver the direct AEO-style definition immediately ("What is a queer manicure?") — no anecdote-first delay, unlike every personal-essay competitor. This is the structural differentiation point: give the answer fast, the way the reader's search intent demands.
+
+---
+
+## SECTION 9: SEARCH JOURNEY
+
+**reader_arrival_state:** Curious but slightly unsure — heard the term somewhere (social media, a friend, a joke), possibly a little anxious about whether they're "doing queerness right" or whether asking for this at a salon will be awkward.
+
+**journey_arc:**
+1. Land needing a fast, clear, non-judgmental definition (no anecdote-first delay)
+2. Move into the real origin/practical reasoning — understand WHY, not just WHAT
+3. Confront the identity debate honestly — see that reasonable people disagree, feel less alone in their uncertainty
+4. Get practical styling range — see it's not one rigid look
+5. Arrive at the salon script — leave with literal words they can use
+6. Exit through FAQ — any lingering specific question answered directly
+
+**promise_to_deliver:** The post will explain what a queer manicure actually is AND make it easy — not embarrassing — to go ask for one.
+
+**exit_state:** Confident and unbothered — informed enough to explain the term to someone else, and comfortable enough to book the appointment without anxiety.
+
+---
+
+## SECTION 10: CONTENT STRUCTURE
+
+**h1:** The Queer Manicure: What It Means & How to Get One
+
+**h2_structure:**
+1. What Is a Queer Manicure, Exactly?
+2. Where Did the Queer Manicure Come From?
+3. Why Two Short Nails? The Real Reason Behind the Style
+4. Is the "Short Nails = Lesbian" Stereotype Outdated?
+5. Queer Manicure Styles: It's Not One Look
+6. Queer Manicure vs. Femmicure vs. Lesbian Nails: What's the Difference?
+7. How to Ask for a Queer Manicure at the Salon
+8. Frequently Asked Questions
+
+**word_budget:**
+- introduction: 230 words
+- H2-1 (What Is a Queer Manicure, Exactly?): 320 words
+- H2-2 (Where Did It Come From?): 380 words
+- H2-3 (Why Two Short Nails?): 420 words
+- H2-4 (Is the Stereotype Outdated?): 450 words
+- H2-5 (Styles: Not One Look): 380 words
+- H2-6 (vs. Femmicure vs. Lesbian Nails): 280 words
+- H2-7 (How to Ask at the Salon): 380 words
+- H2-8 (FAQ): 280 words
+- conclusion: 180 words
+- **Total: 3,300 words** *(Note: adjusted up from 2,900 to accommodate full 8-H2 structure at genuine depth per intent_hard_cap — word_count in POST_CONSTANTS should read 3,300 as the corrected hard target; Blog Gen Agent hits this exactly ±50 words)*
+
+---
+
+## SECTION 11: INTERNAL LINKS
+
+**blog_gen_instruction:** No cluster links exist (solo mode). Cross-site links below are researched and relevance-filtered; anchors are descriptive per rule.
+
+**all_internal_links:**
+1. url_or_slug: /blog/lgbtq/lesbian-nails
+   title: Lesbian Nails: Styles That Actually Carry the Signal
+   anchor_text: the full spectrum of lesbian nail aesthetics beyond this one style
+   placement_note: H2-5 (Styles: It's Not One Look) — natural handoff to the broader style hub once this post has established the specific queer manicure definition
+   link_type: cross-site
+
+2. url_or_slug: /blog/lgbtq/pride-month-nails
+   title: Pride Month Nails hub
+   anchor_text: the full range of Pride nail ideas across every identity
+   placement_note: Conclusion — natural close-out link to the wider cluster for readers wanting more
+   link_type: cross-site
+
+3. url_or_slug: /blog/short-almond-nails
+   title: Short Almond Nails
+   anchor_text: short almond nails, one of the most popular shapes for this look
+   placement_note: H2-5 (Styles) — direct product/shape tie-in when discussing shape options for the shorter nails
+   link_type: cross-site
+
+*(Note: total kept to 3, below the 4-6 range, because this is solo mode with a narrow relevant-link pool on the existing site content surfaced during research; forcing additional links would violate the strict relevance filter. Site owner may add a 4th once /blog/lgbtq/lesbian-nails is updated to cross-link back.)*
+
+---
+
+## SECTION 12: VOICE AND TONE
+
+**recommended_voice:** Warm, direct expert — a knowledgeable friend, not a clinical explainer and not an overly casual influencer.
+
+**tone_characteristics:**
+1. Non-judgmental and permission-giving (no single "correct" way to be queer)
+2. Direct and confident on facts, gentle on identity nuance
+3. Practically helpful — treats the reader's real-world awkwardness (asking at a salon) as valid and solvable
+4. Balanced on the debate sections — presents disagreement fairly rather than picking a side
+5. Uses "you" throughout, second person, conversational but not flippant
+
+**language_style:** Short-to-medium sentences, direct address, minimal hedging on facts (state things plainly), but open acknowledgment of disagreement where it exists in the community. Avoid over-explaining sex-related content — matter-of-fact, not clinical, not coy.
+
+**audience_match:** This voice matches a reader who wants real information without judgment and without a lecture — validating their curiosity and their nerves about the "ask," while giving them a confident, well-researched account of the topic's real history and current debates.
+
+---
+
+## SECTION 13: EXTERNAL LINKS
+
+**links:**
+1. url: https://en.wikipedia.org/wiki/Queer_manicure
+   context: Use when establishing the formal definition/origin in H2-1 or H2-2
+   anchor_suggestion: the term's documented history
+
+2. url: https://www.dazeddigital.com/beauty/article/57211/1/lez-nails-is-the-queer-woman-with-short-nails-an-outdated-stereotype
+   context: Use in H2-4 (Is the Stereotype Outdated?) when presenting the nuanced, lived-experience side of the debate
+   anchor_suggestion: queer femmes speaking about their own experience with long nails
+
+---
+
+## SECTION 14: EXECUTION PLAN
+
+### Block 1: Keyword Execution
+- primary_keyword: queer manicure
+- top_5_density_baseline: 4 mentions (average across fetched pages using the direct phrase)
+- total_mention_target: 7 total (baseline 4 + 3)
+- first_100_words_plan:
+  - mention_1: sentence 1-2 of introduction — naming the term directly as the subject of the post
+  - mention_2: sentence 4-5 of introduction — reinforcing in the promise/hook sentence
+- first_half_target: 4 mentions — first 1,650 words (run denser)
+- second_half_target: 3 mentions — second 1,650 words
+- strong_tag_rule: EVERY mention of "queer manicure" wrapped in `<strong>` tags — all 7, no exceptions
+- keywords_to_avoid_active: N/A (solo mode, no cluster reserved list) — but per manual cannibalization note in Section 3, avoid framing this post as a "lesbian nails" hub (that's the other post's job)
+
+### Block 2: Word Budget
+- total_target: 3,300 words ±50
+- introduction: 230 words
+- conclusion: 180 words
+- h2_budgets:
+  1. What Is a Queer Manicure, Exactly? — 320 words — complexity: low
+  2. Where Did the Queer Manicure Come From? — 380 words — complexity: medium
+  3. Why Two Short Nails? The Real Reason — 420 words — complexity: medium
+  4. Is the Stereotype Outdated? — 450 words — complexity: high
+  5. Queer Manicure Styles: Not One Look — 380 words — complexity: low
+  6. vs. Femmicure vs. Lesbian Nails — 280 words — complexity: medium
+  7. How to Ask at the Salon — 380 words — complexity: medium
+  8. FAQ — 280 words — complexity: low
+- tracking_rule: Track running word count after every H2. Cut before advancing if over budget.
+
+### Block 3: Image Plan
+- total_images: 7
+- hero_image: frontmatter only, never in body
+- body_images: 6
+- assignments:
+  1. place_after: H2-1 (What Is a Queer Manicure) — image_type: standard_inspiration — section_context: close-up of the classic two-short/rest-long style, clean and editorial, hands only, no tools/process visible
+  2. place_after: H2-3 (Why Two Short Nails) — image_type: standard_inspiration — section_context: a styled femme set showing the "party fingers" look with color/art, editorial styling
+  3. place_after: H2-4 (Is the Stereotype Outdated) — image_type: standard_inspiration — section_context: a long, decorated nail set (femmicure-style) to visually reinforce that long nails are equally valid
+  4. place_after: H2-5 (Styles: Not One Look) — image_type: standard_inspiration — section_context: masc-minimal single-color short set, showing aesthetic range
+  5. place_after: H2-5 second image — image_type: standard_inspiration — section_context: a mismatched/pride-palette set showing color variety within the style
+  6. place_after: H2-7 (How to Ask at the Salon) — image_type: standard_inspiration — section_context: a warm, welcoming salon-adjacent styled shot (hands/finished nails only — NOT hands mid-service or tools, per banned rule)
+- image_type_rule note: No infographic needed — this is an informational/explainer post, not comparison or tutorial intent; all slots use standard_inspiration
+- path_rule: /images/blog/queer-manicure/filename.webp (no topic_slug — solo mode)
+
+### Block 4: Opening Technique Assignments
+- Introduction: Technique 2 (misconception-naming curiosity gap)
+- H2-1: Technique 4 (Direct Definition/Declarative)
+- H2-2: Technique 3 (The Reframe — historical context reframes "just a trend")
+- H2-3: Technique 1 (The Claim — states the real reason plainly)
+- H2-4: Technique 3 (The Reframe — presents both sides)
+- H2-5: Technique 4 (Direct Definition/Declarative)
+- H2-6: Technique 1 (The Claim — clarifies distinctions plainly)
+- H2-7: Technique 2 (practical curiosity/reassurance gap)
+- Conclusion: Technique 1 (The Claim)
+- banned_opener_rule: Check every opener against banned_opening_approaches in Blog Gen prompt before writing second sentence.
+
+### Block 5: Link Placements
+1. anchor_text: the full spectrum of lesbian nail aesthetics beyond this one style
+   full_url: https://mirelleinspo.com/blog/lgbtq/lesbian-nails
+   place_in_section: H2-5 (Styles: Not One Look)
+   placement_context: When noting this post covers ONE specific style among many WLW nail aesthetics
+   link_type: cross-site
+
+2. anchor_text: the full range of Pride nail ideas across every identity
+   full_url: https://mirelleinspo.com/blog/lgbtq/pride-month-nails
+   place_in_section: Conclusion
+   placement_context: Closing handoff to the broader Pride content hub
+   link_type: cross-site
+
+3. anchor_text: short almond nails, one of the most popular shapes for this look
+   full_url: https://mirelleinspo.com/blog/short-almond-nails
+   place_in_section: H2-5 (Styles: Not One Look)
+   placement_context: When discussing popular nail shapes for the shorter fingers
+   link_type: cross-site
+
+### Block 6: AEO/GEO Plan
+- aeo_assignments:
+  1. "What is a queer manicure?" → H2-1 → direct 2-3 sentence answer immediately after heading
+  2. "Why do lesbians keep two nails short?" → H2-3 → direct 2-3 sentence answer immediately after heading
+  3. "Is the queer manicure just a stereotype?" → H2-4 → direct 2-3 sentence answer immediately after heading
+  4. "What's the difference between a queer manicure and a femmicure?" → H2-6 → direct 2-3 sentence answer immediately after heading
+  5. "How do I ask for a queer manicure at a nail salon?" → H2-7 → direct 2-3 sentence answer immediately after heading
+- geo_entity_statements:
+  1. entity: "party fingers" → H2-3 → clear declarative definition sentence
+  2. entity: femmicure → H2-6 → clear declarative definition distinguishing from queer manicure
+  3. entity: flagging (queer signaling) → H2-2 → clear declarative definition sentence
+
+### Block 7: Active Constraints
+- em_dash_banned: Long em dash never appears. Replace with comma / new sentence / parentheses / but / restructure if one forms.
+- banned_vocab_watch: elevate, unlock, embark, tapestry, testament, boundaries (as in "pushing boundaries" cliché), game-changer, in the world of
+- american_english_active: color, recognize, -ize, -or — every instance
+- keyword_density_reminder: After every 2 H2 sections, count current "queer manicure" mentions. Target 7 total, denser in first half (4 in first 1,650 words).
+- image_path_reminder: /images/blog/queer-manicure/filename.webp
+- internal_link_url_reminder: Full paths only — /blog/lgbtq/lesbian-nails, /blog/lgbtq/pride-month-nails, /blog/short-almond-nails
+- hero_image_reminder: Hero = frontmatter only, never in body
+- strong_tag_reminder: All 7 "queer manicure" mentions wrapped in `<strong>` tags, scanned after every paragraph
