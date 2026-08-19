@@ -1,0 +1,405 @@
+{
+  "section_1_file_authority": {
+    "statement": "THIS FILE IS THE SINGLE SOURCE OF TRUTH FOR THE BLOG GEN AGENT. All values in POST_CONSTANTS are hardcoded — Blog Gen Agent does not ask, adjust, or override them. All keywords, H2 structure, audience intelligence, internal links, and tone defined here must be followed exactly."
+  },
+  "section_2_post_constants": {
+    "slug": "best-nail-colors-for-pale-skin-pink-undertones",
+    "canonical": "https://mirelleinspo.com/blog/best-nail-colors-for-pale-skin-pink-undertones",
+    "post_type": "standalone",
+    "intent": "informational",
+    "word_count": 2350,
+    "image_count": 7,
+    "show_inspo_gallery_link": false,
+    "template": "posts",
+    "hero_dimensions": "1200x675",
+    "category": "Nail Color Guides",
+    "publish_date": "2026-08-20",
+    "author": "jyoti-mirelle"
+  },
+  "section_4_serp_analysis": {
+    "competitor_gaps": [
+      "No fetched top-5 page addresses 'pink undertones' as a distinct sub-category of cool undertones with its own shade logic (rose gold vs silver metallics, why blush pink can wash out vs read as flattering) — every page treats 'cool undertone' as one bucket and lumps pink in with blue/purple. Confirmed via PAA cross-check and Pinterest signal ('Pale Skin With Pink Undertones', 'Nail Colors for Pink Undertones' boards each independently searched/pinned).",
+      "No fetched page explains WHY certain 'safe' cool shades (baby pink, pale lilac) can specifically wash out pink-undertone skin rather than just cool skin generally — palettehunt notes baby/sheer pink 'can blend into pale skin too much' but doesn't tie this specifically to pink-undertone skin's own natural flush cancelling out the polish.",
+      "Rose gold metallic specificity for pink undertones (vs gold for warm/neutral) is only mentioned once across all 5 pages (palettehunt), never expanded into a full shade family with product-style guidance — demand confirmed via palettehunt + nailclosethk (silver/rose gold vs gold split by undertone)."
+    ],
+    "missing_semantic_territory": [
+      "'blush pink washes me out' / 'pink undertone nails washed out' — audience pain point confirmed via palettehunt FAQ ('choose a pink with warmth or saturation... baby pink can blend into pale skin too much') and thebeautyfoodie ('very light shades can disappear completely')",
+      "'rose gold vs gold for pale pink undertone skin' — confirmed via palettehunt (rose gold specifically flattering for pink undertones) + nailclosethk (gold works better for neutral/warm)",
+      "'mauve vs dusty rose vs blush pink' differentiation for pink-undertone skin specifically — none of the 5 fetched pages differentiate these three closely-related shades by name in one place"
+    ],
+    "our_strategic_approach": "Every fetched competitor treats 'pale skin' as the primary axis and undertone as a secondary filter buried mid-article, which means a reader who already knows she has pink undertones has to read past generic pale-skin content to get her answer. This post inverts that structure: pink undertone is the organizing axis from the H1 down, so every shade recommendation is pre-filtered for this exact reader rather than making her filter it herself. It also owns the 'washed out' failure mode explicitly — no competitor page explains why pink-undertone skin specifically risks disappearing under pale pink polish (the polish and the natural flush cancel each other out), which is the single most common frustration signal in the audience research. Structurally, this post front-loads a short, opinionated 'best overall' answer (matching AEO-style direct-answer behavior) before the full shade breakdown, which none of the 5 competitors do — they all open with undertone-identification theory before any color recommendation.",
+    "top_5_fetched_pages_summary": [
+      {
+        "url": "https://www.ellamila.com/blogs/articles/fair-and-fabulous-nail-shades-that-flatter-pale-skin-tones",
+        "word_count": 950,
+        "h2_count": 3,
+        "keyword_mentions": 2,
+        "note": "Strong undertone-test section (vein/paper/jewelry) but treats pink as part of generic 'cool' bucket; heavy product-catalog framing dilutes editorial usefulness."
+      },
+      {
+        "url": "https://dazzledry.com/blogs/journal/best-nail-polish-color-for-pale-skin",
+        "word_count": 900,
+        "h2_count": 4,
+        "keyword_mentions": 1,
+        "note": "Good undertone definitions with sourced citations (Healthline), but color sections are organized by boldness (light/bold/bright) not undertone, so pink-undertone guidance is scattered."
+      },
+      {
+        "url": "https://lovecnd.com/blogs/news/which-nail-polish-suits-pale-skin",
+        "word_count": 420,
+        "h2_count": 2,
+        "keyword_mentions": 3,
+        "note": "Thin (short-form brand blog) but clean 'why it works' format per shade is a useful structural cue; conflates pale skin generally with cool/pink undertone by default."
+      },
+      {
+        "url": "https://nailclosethk.com/en/blogs/news/whitening-nail-colors-2026-skin-tone-guide",
+        "word_count": 1450,
+        "h2_count": 9,
+        "keyword_mentions": 4,
+        "note": "Most thorough undertone-test section (3 methods) and the only page distinguishing rose gold vs gold by undertone, but heavily product-catalog driven (2026 trend hook, individual SKU pushes) at the expense of general advice."
+      },
+      {
+        "url": "https://www.poorlittleitgirl.com/best-nail-polish-colors-for-fair-skin/",
+        "word_count": 1550,
+        "h2_count": 4,
+        "keyword_mentions": 5,
+        "note": "Best FAQ section of the five (5 direct Q&A pairs matching real search queries) and a genuine 10-shade breakdown, but organized as a personal product listicle (specific store-bought polish names) rather than shade-family education."
+      },
+      {
+        "url": "https://www.palettehunt.com/beauty/best-nail-colors-for-pale-skin",
+        "word_count": 1650,
+        "h2_count": 8,
+        "keyword_mentions": 6,
+        "note": "Deepest and most current (2026) treatment — explicitly separates pink-undertone vs yellow/neutral-undertone guidance in its opening framing, has a dedicated 'clash' section and a smart color-swap table. Closest existing page to this post's angle; sets the competitive bar."
+      }
+    ],
+    "top_5_word_count_average": 1187,
+    "top_5_keyword_density_average": 3.5,
+    "best_external_sources_found": [
+      {
+        "url": "https://www.palettehunt.com/beauty/best-nail-colors-for-pale-skin",
+        "why": "Genuinely authoritative, current (2026), most directly relevant to pink-undertone framing of the 5 fetched pages"
+      }
+    ]
+  },
+  "section_5_audience_intelligence": {
+    "who_they_are": "Someone who has already identified (via vein test, jewelry test, or being told by a makeup counter/colorist) that she has pale skin with pink undertones specifically — she is past the 'what's my undertone' stage and wants a direct answer for her exact combination, not a generic 'pale skin' or 'cool undertone' roundup she has to filter herself.",
+    "what_they_want_from_this_post": "A short, confident, direct answer near the top (best overall pick), followed by a real shade-family breakdown she can screenshot or reference at the salon/drugstore, plus a clear list of what to avoid so she stops guessing and getting washed-out results.",
+    "what_frustrates_them": "Generic 'pale skin' guides that never separate pink undertones from yellow/warm pale skin; being told to 'pick cool tones' without being told WHY certain pale pinks specifically disappear on her rather than looking pretty; product-listicle content (specific bottle names from one brand) instead of shade-family education she can apply anywhere.",
+    "top_5_pain_points": [
+      "Pale pink or baby pink polish disappearing into her skin instead of looking soft and pretty",
+      "Not knowing whether to go rose gold or gold for metallics",
+      "Confusing mauve, dusty rose, and blush pink as interchangeable when they read differently on her",
+      "Reds looking wrong (too orange/warm) and not knowing it's an undertone mismatch",
+      "Generic 'cool undertone' advice that doesn't specifically address pink undertones vs blue undertones"
+    ],
+    "exact_user_phrases": [
+      "pale skin pink undertones",
+      "washed out nails pale skin",
+      "what nail color for pink undertone",
+      "cool vs warm undertone nail polish",
+      "rose gold or gold for pale skin",
+      "best red for pink undertones",
+      "pink undertones aesthetic",
+      "nails for cool undertone skin",
+      "baby pink nails pale skin",
+      "mauve vs dusty rose nails"
+    ],
+    "intent_content_signals": [
+      "Direct-answer opener (best overall pick stated plainly) before the full breakdown",
+      "Shade-family organization (not brand/product listicle organization)",
+      "Explicit 'why it works' reasoning per shade tied to pink undertone specifically",
+      "A dedicated 'what to avoid and why' section, not just a buried caveat",
+      "FAQ section answering direct comparison questions (rose gold vs gold, mauve vs dusty rose)"
+    ]
+  },
+  "section_6_semantic_keyword_data": {
+    "primary_keyword": "best nail color for pale skin with pink undertones",
+    "keyword_variations": [
+      "nail colors for pale skin with pink undertones",
+      "best nail polish for pink undertones",
+      "nail color for cool pink undertone skin",
+      "pale skin pink undertone nail polish",
+      "flattering nail colors pink undertones",
+      "nail shades for pink undertone skin"
+    ],
+    "cluster_keywords": [
+      "cool undertone nail polish",
+      "rose gold nails pale skin",
+      "mauve nail polish pale skin",
+      "dusty rose nail color",
+      "blue-based red nail polish",
+      "lavender nails cool undertone",
+      "vein test nail color",
+      "silver vs gold jewelry undertone",
+      "berry nail polish pale skin",
+      "blush pink nails"
+    ],
+    "lsi_terms": [
+      "washed out nail polish",
+      "cool-toned polish",
+      "blue-based red",
+      "rose gold metallic",
+      "sheer jelly finish",
+      "cream finish polish",
+      "icy pastel",
+      "contrast on pale skin",
+      "true red vs orange red",
+      "silver chrome nails",
+      "dusty mauve",
+      "berry shade nail polish",
+      "pink-toned nude",
+      "cool white paper test",
+      "skin undertone identification"
+    ],
+    "aeo_terms": [
+      "what nail color looks best on pale skin with pink undertones",
+      "what nail colors should you avoid with pink undertones",
+      "is rose gold or gold better for pink undertones",
+      "do light pink nails work on pale skin",
+      "what red nail polish is best for pink undertones",
+      "how do I know if I have pink undertones",
+      "what is the difference between mauve and dusty rose nails",
+      "can pale skin with pink undertones wear dark nail colors",
+      "why does my nail polish look washed out",
+      "what nail colors clash with pink undertones"
+    ],
+    "technical_terms": [
+      "undertone",
+      "cool-toned",
+      "vein test",
+      "sheer finish",
+      "cream finish",
+      "chrome finish",
+      "blue-based red"
+    ],
+    "user_language": [
+      "washes me out",
+      "makes my hands disappear",
+      "ghostly effect",
+      "my go-to everyday color",
+      "looks chalky",
+      "reads as sophisticated",
+      "pops against my skin",
+      "my nails but better"
+    ]
+  },
+  "section_7_voice_and_ai_queries": {
+    "blog_gen_instruction": "Answer every query directly in the relevant H2 section body. If a query cannot be addressed naturally in the body, route it to faqItems. No query left unanswered.",
+    "queries": [
+      "What nail color looks best on pale skin with pink undertones?",
+      "How do I know if I have pink undertones?",
+      "What nail colors should I avoid with pink undertones?",
+      "Is rose gold or gold better for pink undertones?",
+      "Do light pink nails work on pale skin?",
+      "What red nail polish is best for pink undertones?",
+      "What is the difference between mauve and dusty rose nails?",
+      "Can pale skin with pink undertones wear dark nail colors?",
+      "Why does my nail polish look washed out on pale skin?",
+      "What finish looks best on pale skin, matte or glossy?",
+      "Are pastel nails good for pink undertones?",
+      "What nail color makes pale skin look brighter?",
+      "Should nail polish match my skin tone?",
+      "What is the best everyday nail color for pale pink undertone skin?",
+      "Can I wear orange or coral nails with pink undertones?"
+    ]
+  },
+  "section_8_hook_and_ctr": {
+    "real_serp_findings_summary": "Of the 5 fetched titles, 4 use a generic 'Best Nail Colors/Polish for Pale/Fair Skin' pattern with the primary keyword front-loaded but no undertone specificity, and 1 (nailclosethk) leads with a trend hook (2026 Pantone color) rather than the reader's actual need. None front-load 'pink undertones' specifically in the title, despite it being the exact search term — this is the clearest title-level gap in the SERP.",
+    "selected_option_rationale": "This option is the only one of the three that reads as a direct answer to the searcher's literal query rather than a generic pale-skin roundup, which is exactly the gap step_2 identified in the competitor titles.",
+    "title": "12 Best Nail Colors for Pale Skin & Pink Undertones",
+    "title_char_count": 51,
+    "meta_description": "Overwhelmed by pink undertones? Here are 12 shades—from mauve to rose gold—proven to make pale skin glow, plus 4 colors worth skipping.",
+    "meta_char_count": 138,
+    "intro_hook_brief": "Open by naming the exact frustration (pale pink polish that disappears or looks chalky on pink-undertone skin) as a curiosity-gap/relief hook, then promise the 12-shade breakdown plus the 4 to skip as the specific payoff — this matches the 'overwhelmed' framing of the selected meta.",
+    "first_h2_hook_direction": "Lead the first H2 with the single best-overall answer stated plainly and confidently before any theory, echoing the meta's direct-answer promise rather than opening with undertone-test theory the way every competitor does."
+  },
+  "section_9_search_journey": {
+    "reader_arrival_state": "She already knows she has pale skin with pink undertones and wants a direct, confident answer — not undertone theory she has to sit through first.",
+    "journey_arc": [
+      "Immediate relief: a clear best-overall pick stated right away, confirming she's in the right place",
+      "Validation: a short explanation of why pink undertones behave differently than other cool undertones, so she trusts the rest of the list",
+      "Build-out: the full 12-shade breakdown grouped by family (pinks/mauves, reds, metallics, pastels, deeper shades) with a one-line 'why it works' each",
+      "Protection: a clear 'colors to avoid and why' section so she stops guessing",
+      "Confidence: FAQ section resolving her specific comparison questions (rose gold vs gold, mauve vs dusty rose)"
+    ],
+    "promise_to_deliver": "A direct, undertone-specific answer plus a full usable shade list and a skip list — not a generic pale-skin roundup she has to filter herself.",
+    "exit_state": "Confident and ready to pick a polish at the store or salon without second-guessing, with a specific shade name in mind rather than a vague color family."
+  },
+  "section_10_content_structure": {
+    "h1": "12 Best Nail Colors for Pale Skin with Pink Undertones",
+    "h2_structure": [
+      "The Best Nail Color for Pale Skin with Pink Undertones (Quick Answer)",
+      "How to Know If You Have Pink Undertones",
+      "Soft Pinks, Mauves & Dusty Rose",
+      "Reds That Actually Flatter Pink Undertones",
+      "Metallics: Rose Gold vs Silver vs Gold",
+      "Pastels That Work (and the Ones That Don't)",
+      "Deeper Shades for Contrast: Berry, Wine & Navy",
+      "Nail Colors to Avoid with Pink Undertones",
+      "Frequently Asked Questions"
+    ],
+    "word_budget": {
+      "introduction": "220",
+      "conclusion": "180",
+      "per_h2": [
+        {"heading": "The Best Nail Color for Pale Skin with Pink Undertones (Quick Answer)", "budget": 150},
+        {"heading": "How to Know If You Have Pink Undertones", "budget": 220},
+        {"heading": "Soft Pinks, Mauves & Dusty Rose", "budget": 320},
+        {"heading": "Reds That Actually Flatter Pink Undertones", "budget": 260},
+        {"heading": "Metallics: Rose Gold vs Silver vs Gold", "budget": 240},
+        {"heading": "Pastels That Work (and the Ones That Don't)", "budget": 260},
+        {"heading": "Deeper Shades for Contrast: Berry, Wine & Navy", "budget": 260},
+        {"heading": "Nail Colors to Avoid with Pink Undertones", "budget": 240},
+        {"heading": "Frequently Asked Questions", "budget": 200}
+      ]
+    }
+  },
+  "section_11_internal_links": {
+    "blog_gen_instruction": "Every link below must appear in the post. Cross-site links use the provided descriptive anchor. Place each link where the placement note says — woven naturally into prose, never as a standalone CTA. Total internal links must not exceed 6.",
+    "fields": {
+      "all_internal_links": [
+        {
+          "url_or_slug": "https://mirelleinspo.com/blog/skin-tone/skin-undertone-nail-color-guide",
+          "title": "Skin Undertone Nail Color: The Real Guide",
+          "anchor_text": "the full four-test method for finding your undertone",
+          "placement_note": "In 'How to Know If You Have Pink Undertones' section — links out for readers who want the complete testing framework beyond the quick version given here",
+          "link_type": "cross-site"
+        },
+        {
+          "url_or_slug": "https://mirelleinspo.com/blog/skin-tone/best-red-nail-colour-for-skin-tone",
+          "title": "Best Red Nail Color for Your Skin Tone, By Undertone",
+          "anchor_text": "how to pick the right red for your specific undertone across every skin depth",
+          "placement_note": "In 'Reds That Actually Flatter Pink Undertones' section — links to the deeper, dedicated red-by-undertone guide for readers who want more red-specific detail",
+          "link_type": "cross-site"
+        }
+      ]
+    }
+  },
+  "section_12_voice_tone": {
+    "recommended_voice": "Confident friend with a good eye — direct and reassuring, not clinical",
+    "tone_characteristics": [
+      "Leads with confident, direct statements rather than hedged 'it depends' language",
+      "Explains the 'why' briefly but never lectures or over-explains color theory",
+      "Validates the specific frustration (washed-out polish) before solving it",
+      "Uses concrete shade language (dusty rose, blue-based red) over vague adjectives",
+      "Warm but efficient — no filler transitions"
+    ],
+    "language_style": "Second person ('you'), short-to-medium sentences, minimal hedging, concrete color descriptors over abstract ones.",
+    "audience_match": "This reader wants to be told plainly what works and why, then get on with her day — a confident, efficient voice respects that she already did the undertone-identification work and just needs the payoff."
+  },
+  "section_13_external_links": {
+    "blog_gen_instruction": "Include all external links where indicated. Supports E-E-A-T. Use anchor suggestion as guide — write naturally around it.",
+    "links": [
+      {
+        "url": "https://www.palettehunt.com/beauty/best-nail-colors-for-pale-skin",
+        "context": "When discussing the general clash/contrast principle for pale skin, as a supporting outside reference on color-clash mechanics",
+        "anchor_suggestion": "color analysis research on pale skin and contrast"
+      }
+    ]
+  },
+  "section_14_execution_plan": {
+    "block_1_keyword_execution": {
+      "primary_keyword": "best nail color for pale skin with pink undertones",
+      "top_5_density_baseline": 3.5,
+      "total_mention_target": 6,
+      "first_100_words_plan": {
+        "rule": "Primary keyword MUST appear TWICE in the first 100 words. Mandatory. No exceptions.",
+        "mention_1": "sentence 1 of introduction — naming the exact search intent directly",
+        "mention_2": "sentence 3-4 of introduction — restating as the promise of the post"
+      },
+      "first_half_target": "4 mentions — first ~1175 words. Run denser in first half.",
+      "second_half_target": "2 mentions — second ~1175 words",
+      "strong_tag_rule": "EVERY single mention of the primary keyword — all 6 of them — wrapped in <strong> tags. No exceptions. Scan after every paragraph.",
+      "keywords_to_avoid_active": "N/A — solo mode, no cluster keyword reservation list exists"
+    },
+    "block_2_word_budget": {
+      "total_target": "2350 words — +/-50 words tolerance, never exceed",
+      "introduction": "220",
+      "conclusion": "180",
+      "h2_budgets": [
+        {"heading": "The Best Nail Color for Pale Skin with Pink Undertones (Quick Answer)", "budget": "150", "complexity": "low"},
+        {"heading": "How to Know If You Have Pink Undertones", "budget": "220", "complexity": "low"},
+        {"heading": "Soft Pinks, Mauves & Dusty Rose", "budget": "320", "complexity": "medium"},
+        {"heading": "Reds That Actually Flatter Pink Undertones", "budget": "260", "complexity": "medium"},
+        {"heading": "Metallics: Rose Gold vs Silver vs Gold", "budget": "240", "complexity": "medium"},
+        {"heading": "Pastels That Work (and the Ones That Don't)", "budget": "260", "complexity": "medium"},
+        {"heading": "Deeper Shades for Contrast: Berry, Wine & Navy", "budget": "260", "complexity": "medium"},
+        {"heading": "Nail Colors to Avoid with Pink Undertones", "budget": "240", "complexity": "medium"},
+        {"heading": "Frequently Asked Questions", "budget": "200", "complexity": "low"}
+      ],
+      "tracking_rule": "Track running word total at the end of every H2 section. If a section is running over budget — cut before moving to the next section. Do not compensate later."
+    },
+    "block_3_image_plan": {
+      "total_images": 7,
+      "hero_image": "frontmatter only — NEVER appears in post body",
+      "body_images": 6,
+      "assignments": [
+        {"image_number": 1, "place_after": "The Best Nail Color for Pale Skin with Pink Undertones (Quick Answer)", "image_type": "standard_inspiration", "section_context": "Close-up manicure shot of the best-overall pick (a dusty rose or mauve) on visibly pale, pink-undertone hands"},
+        {"image_number": 2, "place_after": "Soft Pinks, Mauves & Dusty Rose", "image_type": "standard_inspiration", "section_context": "Manicure in a soft mauve or dusty rose shade, styled naturally"},
+        {"image_number": 3, "place_after": "Reds That Actually Flatter Pink Undertones", "image_type": "standard_inspiration", "section_context": "Blue-based cherry or true red manicure on pale skin"},
+        {"image_number": 4, "place_after": "Metallics: Rose Gold vs Silver vs Gold", "image_type": "standard_inspiration", "section_context": "Rose gold or silver chrome manicure look"},
+        {"image_number": 5, "place_after": "Pastels That Work (and the Ones That Don't)", "image_type": "standard_inspiration", "section_context": "Soft lavender or icy pastel manicure"},
+        {"image_number": 6, "place_after": "Deeper Shades for Contrast: Berry, Wine & Navy", "image_type": "standard_inspiration", "section_context": "Deep berry or wine-toned manicure showing contrast against pale skin"}
+      ],
+      "path_rule": "/images/blog/best-nail-colors-for-pale-skin-pink-undertones/filename.webp — slug folder, leading slash, no topic_slug segment (standalone post)"
+    },
+    "block_4_opening_technique_assignments": {
+      "rule": "No two consecutive sections use the same technique. Conclusion = Technique 1 or 3 only.",
+      "assignments": [
+        {"section": "Introduction", "technique": "Technique 1 — The Claim (state the direct answer/promise upfront)"},
+        {"section": "The Best Nail Color for Pale Skin with Pink Undertones (Quick Answer)", "technique": "Technique 2 — The Direct Statement"},
+        {"section": "How to Know If You Have Pink Undertones", "technique": "Technique 4 — The Question"},
+        {"section": "Soft Pinks, Mauves & Dusty Rose", "technique": "Technique 3 — The Reframe"},
+        {"section": "Reds That Actually Flatter Pink Undertones", "technique": "Technique 2 — The Direct Statement"},
+        {"section": "Metallics: Rose Gold vs Silver vs Gold", "technique": "Technique 4 — The Question"},
+        {"section": "Pastels That Work (and the Ones That Don't)", "technique": "Technique 3 — The Reframe"},
+        {"section": "Deeper Shades for Contrast: Berry, Wine & Navy", "technique": "Technique 2 — The Direct Statement"},
+        {"section": "Nail Colors to Avoid with Pink Undertones", "technique": "Technique 1 — The Claim"},
+        {"section": "Frequently Asked Questions", "technique": "Technique 4 — The Question"},
+        {"section": "Conclusion", "technique": "Technique 3 — The Reframe"}
+      ],
+      "banned_opener_rule": "Check every opener against banned_opening_approaches in blog gen prompt before writing the second sentence"
+    },
+    "block_5_link_placements": {
+      "links": [
+        {
+          "anchor_text": "the full four-test method for finding your undertone",
+          "full_url": "https://mirelleinspo.com/blog/skin-tone/skin-undertone-nail-color-guide",
+          "place_in_section": "How to Know If You Have Pink Undertones",
+          "placement_context": "After giving the quick vein-test version, offer this as the deeper resource",
+          "link_type": "cross-site"
+        },
+        {
+          "anchor_text": "how to pick the right red for your specific undertone across every skin depth",
+          "full_url": "https://mirelleinspo.com/blog/skin-tone/best-red-nail-colour-for-skin-tone",
+          "place_in_section": "Reds That Actually Flatter Pink Undertones",
+          "placement_context": "After covering blue-based reds for this reader, point to the fuller red-specific guide",
+          "link_type": "cross-site"
+        }
+      ]
+    },
+    "block_6_aeo_geo_plan": {
+      "aeo_assignments": [
+        {"aeo_term": "What nail color looks best on pale skin with pink undertones?", "assigned_to_section": "The Best Nail Color for Pale Skin with Pink Undertones (Quick Answer)", "execution": "Write a direct 2-3 sentence answer paragraph IMMEDIATELY after the H2 heading — before any elaboration."},
+        {"aeo_term": "How do I know if I have pink undertones?", "assigned_to_section": "How to Know If You Have Pink Undertones", "execution": "Write a direct 2-3 sentence answer paragraph IMMEDIATELY after the H2 heading — before any elaboration."},
+        {"aeo_term": "Is rose gold or gold better for pink undertones?", "assigned_to_section": "Metallics: Rose Gold vs Silver vs Gold", "execution": "Write a direct 2-3 sentence answer paragraph IMMEDIATELY after the H2 heading — before any elaboration."},
+        {"aeo_term": "What nail colors should I avoid with pink undertones?", "assigned_to_section": "Nail Colors to Avoid with Pink Undertones", "execution": "Write a direct 2-3 sentence answer paragraph IMMEDIATELY after the H2 heading — before any elaboration."}
+      ],
+      "geo_entity_statements": [
+        {"entity": "pink undertone", "assigned_to_section": "How to Know If You Have Pink Undertones", "execution": "Write a clear declarative definition sentence — confident, no hedging."},
+        {"entity": "blue-based red", "assigned_to_section": "Reds That Actually Flatter Pink Undertones", "execution": "Write a clear declarative definition sentence distinguishing it from orange-based/warm red."},
+        {"entity": "rose gold finish", "assigned_to_section": "Metallics: Rose Gold vs Silver vs Gold", "execution": "Write a clear declarative definition sentence on what makes it distinct from gold and silver."}
+      ]
+    },
+    "block_7_active_constraints": {
+      "em_dash_banned": "Long em dash does not appear anywhere. If one forms while writing — stop, replace with: comma / new sentence / parentheses / but / restructure.",
+      "banned_vocab_watch": ["elevate", "unleash", "game-changer", "must-have", "in today's world", "when it comes to", "delve", "boasts"],
+      "american_english_active": "color, recognize, -ize, -or — every instance, no exceptions. This post uses American English, not British.",
+      "keyword_density_reminder": "After every 2 H2 sections — count current keyword mentions. Verify running total is on track to hit 6 total. First half must run denser than second half.",
+      "image_path_reminder": "/images/blog/best-nail-colors-for-pale-skin-pink-undertones/filename.webp — no topic_slug segment, standalone post",
+      "internal_link_url_reminder": "Cross-site links use exact full URL as discovered. Never bare /slug.",
+      "hero_image_reminder": "Hero = frontmatter only. Never place hero image in body.",
+      "strong_tag_reminder": "Every primary keyword mention = <strong> tags. Scan after every paragraph."
+    }
+  }
+}
