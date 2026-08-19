@@ -1,0 +1,323 @@
+{
+  "section_1_file_authority": {
+    "statement": "THIS FILE IS THE SINGLE SOURCE OF TRUTH FOR THE BLOG GEN AGENT. All values in POST_CONSTANTS are hardcoded — Blog Gen Agent does not ask, adjust, or override them. All keywords, H2 structure, audience intelligence, internal links, and tone defined here must be followed exactly."
+  },
+  "section_2_post_constants": {
+    "slug": "pearl-nails",
+    "canonical": "https://mirelleinspo.com/blog/pearl-nails",
+    "post_type": "standalone",
+    "intent": "inspirational",
+    "word_count": 1850,
+    "image_count": 7,
+    "show_inspo_gallery_link": true,
+    "template": "posts",
+    "hero_dimensions": "1200x675",
+    "category": "Nails",
+    "publish_date": "2026-08-20",
+    "author": "jyoti-mirelle"
+  },
+  "section_4_serp_analysis": {
+    "blog_gen_instruction": "our_strategic_approach is a specific, evidence-based outperform strategy. Use it as the concrete angle for introduction and conclusion, and to guide depth/coverage in relevant H2 sections.",
+    "competitor_gaps": [
+      "No fetched competitor names the 2026 runway/red-carpet momentum (NYFW pearl accents, Oscars mother-of-pearl on multiple celebrities) — confirmed on 2+ sources (Marie Claire/Cosmopolitan spring runway coverage, Oscars celebrity roundup) yet zero of the 5 fetched pages open with it",
+      "No fetched competitor clearly explains 'what is pearl nails' as a direct definitional answer — confirmed demand on 2+ sources (LA Nail Supplies, Manucurist definitional framing) but only shangmengnails.com addresses it with real depth, and it's chrome-brand-adjacent, not nail-media",
+      "Durability/chip-resistance is a real, demand-validated pain point (salongeek professional thread + YouTube tutorial titled around 'doesn't chip') that only nailsami's chrome-vs-glazed piece (off-target keyword) addresses in depth",
+      "None of the 5 fetched pages clearly disambiguate pearl nails vs. chrome vs. glazed donut in one place with a simple comparison — shangmengnails does this well but is a press-on product page, not neutral editorial"
+    ],
+    "missing_semantic_territory": [
+      "'pearl nails vs chrome vs glazed donut' comparison framing — validated via search behavior and multiple single-purpose comparison articles existing for pairs of these terms, but not as a 3-way in one pearl-focused piece",
+      "'what does pearl nails mean' / definitional intent — validated on LA Nail Supplies + Manucurist",
+      "Runway/celebrity 2026 momentum as a trend-legitimacy hook — validated on Marie Claire + Cosmopolitan/Oscars coverage",
+      "Professional application terminology (no-wipe top coat, tacky layer timing, silicone applicator vs sponge) — validated across enails.eu and salongeek pro threads"
+    ],
+    "our_strategic_approach": "Open with the runway-to-red-carpet momentum (NYFW spring 2026 shows plus multiple Oscars looks) that zero fetched competitors currently lead with — this earns immediate trend credibility none of the top 5 claims first. Include a compact 'what are pearl nails' direct-answer definition early (AEO-ready) since two fetched-adjacent sources confirm this is genuinely searched but underserved in dedicated pearl content. Structurally differentiate with a short pearl-vs-chrome-vs-glazed clarity section — the single most-repeated confusion point across research — before the idea gallery, so readers aren't just shown looks but understand what they're asking for at the salon. Close the how-to section with the no-wipe top coat and pressure/timing details that separate real technique guidance from the vaguer 'apply chrome powder' instructions competitors give.",
+    "top_5_fetched_pages_summary": [
+      {
+        "url": "https://thepinkissue.com/pearl-nails/",
+        "word_count": 950,
+        "h2_count": 0,
+        "keyword_mentions": 9,
+        "note": "Strong visual variety (20 numbered looks, real Instagram sourcing) but zero definitional/technique content — pure gallery, no H2 structure at all (uses H3-style numbered items only)."
+      },
+      {
+        "url": "https://btartboxnails.com/blogs/btartbox-official-guides/pearl-nail-ideas",
+        "word_count": 1450,
+        "h2_count": 3,
+        "keyword_mentions": 22,
+        "note": "Good occasion-based organization (school/party/wedding/holiday) and a real FAQ block, but is a press-on sales page — thin on genuine technique depth, keyword-stuffed."
+      },
+      {
+        "url": "https://enails.eu/blogs/news/pearl-nails-9-looks-and-how-to-do-them-at-home",
+        "word_count": 1150,
+        "h2_count": 9,
+        "keyword_mentions": 26,
+        "note": "Best real how-to technique detail of the 5 (no-wipe top coat, tacky-layer timing, silicone vs sponge applicator) — strongest structural model for the DIY section, but no visual gallery depth and no trend/celebrity hook."
+      },
+      {
+        "url": "https://shangmengnails.com/blogs/trends/pearl-ombre-nails-designs",
+        "word_count": 2900,
+        "h2_count": 6,
+        "keyword_mentions": 31,
+        "note": "By far the deepest and most authoritative — real comparison table (pearl vs chrome vs glazed), entity-level definitions, FAQ, shape guidance. Weakness: narrowly focused on ombré variant and press-on product, not general pearl nails."
+      },
+      {
+        "url": "https://chromenails.info/pearl-chrome-nails-design-ideas/",
+        "word_count": 1350,
+        "h2_count": 2,
+        "keyword_mentions": 34,
+        "note": "Wide color/finish variety (30 numbered designs) but shallow per-entry description, heavy keyword repetition, no real technique or trend content."
+      }
+    ],
+    "top_5_word_count_average": 1560,
+    "top_5_keyword_density_average": 24,
+    "best_external_sources_found": [
+      {
+        "url": "https://shangmengnails.com/blogs/trends/pearl-ombre-nails-designs",
+        "reason": "Genuinely authoritative comparison table and entity definitions (pearl vs chrome vs glazed) — real editorial depth, citation-worthy for the disambiguation section."
+      }
+    ]
+  },
+  "section_5_audience_intelligence": {
+    "blog_gen_instruction": "This is your primary creative brief. Every paragraph written for this specific person with this specific intent. Satisfy them completely.",
+    "who_they_are": "A nail-trend-aware reader, likely mid-teens to 30s, who has seen 'pearl nails' on Pinterest/TikTok/Instagram or heard the term used at a salon and wants to understand the look and find a style to bring in as reference — some are DIY-curious, most are gathering inspiration before a salon visit.",
+    "what_they_want_from_this_post": "A genuine range of pearl nail looks to browse and save, clear enough explanation of what 'pearl nails' actually means so they can ask for it confidently (at a salon or when shopping products), and real confirmation the trend is current, not dated.",
+    "what_frustrates_them": "Numbered gallery posts that show 20-30 nearly identical white/pearl images with one-line captions and zero explanation of what pearl actually is, how it differs from chrome/glazed donut, or how it's actually applied — leaving readers unable to communicate what they want at a salon.",
+    "top_5_pain_points": [
+      "Confusion over what 'pearl nails' specifically means vs. chrome, glazed donut, or generic shimmer polish",
+      "Uncertainty whether the trend is still current or already fading (2026-specific reassurance needed)",
+      "Not knowing which pearl finish suits their skin tone or occasion (bridal vs. everyday vs. editorial)",
+      "Salon communication gap — professionals report clients using vague or unclear terms for what they want",
+      "Durability concerns — will it chip faster than a regular manicure"
+    ],
+    "exact_user_phrases": [
+      "pearl nails",
+      "pearl chrome nails",
+      "pearlescent nails",
+      "mother of pearl nails",
+      "what does pearl nails mean",
+      "how to do pearl nails at home",
+      "pearl vs chrome nails",
+      "glazed donut nails",
+      "pearl nail powder",
+      "does pearl nail polish chip"
+    ],
+    "intent_content_signals": [
+      "Numbered, browsable idea format performs consistently across all 5 fetched competitors — readers expect a visual list, not a single deep-dive essay",
+      "Occasion-based grouping (bridal, everyday, party) adds genuine navigability per btartboxnails' structure",
+      "A short, clear definition early in the post is under-served and would differentiate this post immediately",
+      "Real technique specifics (no-wipe top coat, application pressure) build trust with the DIY-curious segment without alienating the browse-only majority",
+      "2026 trend-currency signals (runway, red carpet) matter to this audience and are absent from every fetched competitor"
+    ]
+  },
+  "section_6_semantic_keyword_data": {
+    "blog_gen_instruction": "Primary keyword in strong tags every mention. AEO terms trigger direct answer paragraphs. User language woven naturally.",
+    "primary_keyword": "pearl nails",
+    "keyword_variations": ["pearl nail designs", "pearl nail art", "pearly nails", "pearl manicure", "pearl nail ideas", "pearl-effect nails"],
+    "cluster_keywords": ["pearl chrome nails", "pearlescent nails", "mother of pearl nails", "glazed donut nails", "pearl french tips", "pearl ombre nails", "pearl wedding nails", "pearl nail polish", "oyster nails", "chrome pearl powder"],
+    "lsi_terms": ["iridescent finish", "no-wipe top coat", "chrome powder", "pearlescent polish", "silicone applicator", "milky white base", "3D pearl accents", "flatback pearls", "opalescent sheen", "nacre-like shine", "pearl flakes", "gel polish base coat", "tacky layer", "mirror-like finish", "shell swirl technique"],
+    "aeo_terms": [
+      "What are pearl nails?",
+      "How do you do pearl nails at home?",
+      "What is the difference between pearl nails and chrome nails?",
+      "Are pearl nails the same as glazed donut nails?",
+      "What color is used for pearl nails?",
+      "Do pearl nails chip easily?",
+      "What products do you need for pearl nails?",
+      "Are pearl nails good for a wedding?"
+    ],
+    "technical_terms": ["chrome powder", "no-wipe top coat", "gel base coat", "silicone applicator", "cured gel", "pigment buffing"],
+    "user_language": ["that soft glowy look", "expensive-looking nails", "your nails but shinier", "quiet luxury manicure", "doesn't scream for attention", "clean girl nails but shinier", "salon-quality at home", "catches the light"]
+  },
+  "section_7_voice_and_ai_queries": {
+    "blog_gen_instruction": "Answer every query directly in the relevant H2 section body. If a query cannot be addressed naturally in the body, route it to faqItems.",
+    "queries": [
+      "What are pearl nails?",
+      "What does pearl nails mean at the salon?",
+      "How do you get the pearl nail effect at home?",
+      "What is the difference between pearl nails and chrome nails?",
+      "Are pearl nails and glazed donut nails the same thing?",
+      "What color polish do you use for pearl nails?",
+      "Do pearl nails chip faster than regular polish?",
+      "Can you do pearl nails with regular nail polish or do you need gel?",
+      "Are pearl nails good for a wedding manicure?",
+      "What is mother of pearl nail art?",
+      "How long do pearl nails last?",
+      "What nail shape looks best with pearl nails?",
+      "Can you add real pearls to your nails?",
+      "Is the pearl nail trend still popular in 2026?",
+      "What products do I need for pearl nails at home?"
+    ]
+  },
+  "section_8_hook_and_ctr": {
+    "blog_gen_instruction": "READ THIS SECTION BEFORE WRITING THE TITLE, META DESCRIPTION, INTRO, OR FIRST H2. The title and description here are the option the USER SELECTED — use them exactly. Do not deviate.",
+    "real_serp_findings_summary": "All 5 fetched competitor titles are number-led idea-gallery formats ('20 Classy Pearl Nail Designs', '7 Stunning Pearl Nail Ideas', '9 Looks and How to Do Them', '30 Stunning Designs') with none referencing 2026 currency or trend momentum in the title itself, and none front-loading a clear year tag.",
+    "selected_option_rationale": "Matches the dominant, proven-competitive numbered-idea pattern (which the audience clearly responds to) while adding the year tag and 'everyone's wearing' framing that taps the runway/celebrity momentum gap none of the 5 fetched competitors currently claim.",
+    "title": "Pearl Nails: 20 Designs Everyone's Wearing in 2026",
+    "title_char_count": 50,
+    "meta_description": "Pearl nails are the manicure trend celebrities and runways can't stop wearing. See 20 designs, real techniques, and how to get the look at home.",
+    "meta_char_count": 147,
+    "intro_hook_brief": "Open on the trend-currency angle — pearl nails moving from spring runways to red-carpet moments in 2026 — before transitioning into the promise of a real, browsable idea range plus genuine technique guidance, not just a photo dump.",
+    "first_h2_hook_direction": "Apply the currency/legitimacy angle subtly to the first H2 by grounding the 'what are pearl nails' definition in why the look is having a real 2026 moment, rather than opening with a dry dictionary-style definition."
+  },
+  "section_9_search_journey": {
+    "blog_gen_instruction": "This is the emotional contract with the reader. Every section must honour the promise made.",
+    "reader_arrival_state": "Curious and visually motivated, having seen 'pearl nails' somewhere online or heard it at a salon, wanting both inspiration and enough understanding to ask for it confidently.",
+    "journey_arc": [
+      "Confirm the trend is real and current with the runway/celebrity hook",
+      "Deliver a clear, quick definition of what pearl nails actually are",
+      "Disambiguate from chrome and glazed donut so the reader can communicate clearly",
+      "Move into the visual idea gallery, organized for easy browsing",
+      "Close with real at-home technique steps for the DIY-curious segment"
+    ],
+    "promise_to_deliver": "A genuinely current, well-organized set of pearl nail designs plus the real understanding needed to get the look, whether at a salon or at home.",
+    "exit_state": "Confident and inspired — clear on what pearl nails means, which look fits their style or occasion, and how to move forward with it."
+  },
+  "section_10_content_structure": {
+    "blog_gen_instruction": "This H2 structure is research-driven and must be followed exactly. Do not rename, reorder, or remove H2s without user instruction.",
+    "h1": "Pearl Nails: 20 Designs Everyone's Wearing in 2026",
+    "h2_structure": [
+      "What Are Pearl Nails?",
+      "Pearl Nails vs. Chrome vs. Glazed Donut Nails",
+      "White and Milky Pearl Nail Ideas",
+      "Pearl Chrome and Ombré Designs",
+      "Pearl French Tips and Wedding-Ready Looks",
+      "Colorful and Editorial Pearl Nail Designs",
+      "How to Do Pearl Nails at Home"
+    ],
+    "word_budget": {
+      "introduction": "220 words",
+      "conclusion": "180 words",
+      "per_h2": {
+        "What Are Pearl Nails?": "180 words",
+        "Pearl Nails vs. Chrome vs. Glazed Donut Nails": "220 words",
+        "White and Milky Pearl Nail Ideas": "260 words",
+        "Pearl Chrome and Ombré Designs": "260 words",
+        "Pearl French Tips and Wedding-Ready Looks": "230 words",
+        "Colorful and Editorial Pearl Nail Designs": "230 words",
+        "How to Do Pearl Nails at Home": "270 words"
+      }
+    }
+  },
+  "section_11_internal_links": {
+    "blog_gen_instruction": "Every link below must appear in the post. Cross-site links use the provided descriptive anchor. Place each link where the placement note says. Total internal links must not exceed 6.",
+    "all_internal_links": []
+  },
+  "section_12_voice_tone": {
+    "blog_gen_instruction": "This is the voice for this specific post. Layer on top of Mirellé editorial framework. Do not default to generic AI tone.",
+    "recommended_voice": "Aspirational guide with a knowledgeable edge",
+    "tone_characteristics": ["Warm and visually enthusiastic", "Confident and specific rather than vague trend-speak", "Light, current cultural awareness (runway/celebrity references used naturally, not name-dropped for its own sake)", "Reassuring for DIY-curious readers without being overly technical", "Never salesy or press-on-brand-adjacent in tone"],
+    "language_style": "Second person ('you'), short punchy sentences mixed with slightly longer descriptive ones for the visual sections, minimal jargon — technical terms explained in plain language on first use.",
+    "audience_match": "This voice matches a reader who wants to feel like a savvy friend is walking them through a trend — confident enough to trust the recommendations, warm enough to feel like browsing rather than being sold to."
+  },
+  "section_13_external_links": {
+    "blog_gen_instruction": "Include all external links where indicated. Supports E-E-A-T. Use anchor suggestion as guide — write naturally around it.",
+    "links": [
+      {
+        "url": "https://shangmengnails.com/blogs/trends/pearl-ombre-nails-designs",
+        "context": "Use when disambiguating pearl vs. chrome vs. glazed donut finishes, to support the technical distinction with an authoritative comparison",
+        "anchor_suggestion": "a detailed breakdown of how pearl, chrome, and glazed finishes actually differ"
+      }
+    ]
+  },
+  "section_14_execution_plan": {
+    "purpose": "Blog Gen Agent reads this section FIRST — before frontmatter, before writing a single word.",
+    "blog_gen_instruction": "READ THIS SECTION FIRST. Lock every value. Execute exactly.",
+    "block_1_keyword_execution": {
+      "primary_keyword": "pearl nails",
+      "top_5_density_baseline": 24,
+      "total_mention_target": 27,
+      "first_100_words_plan": {
+        "rule": "Primary keyword MUST appear TWICE in the first 100 words.",
+        "mention_1": "sentence 1 of introduction — establishing the trend hook",
+        "mention_2": "sentence 3-4 of introduction — transitioning into the post's promise"
+      },
+      "first_half_target": "15 mentions — first ~925 words. Run denser in first half.",
+      "second_half_target": "12 mentions — second ~925 words",
+      "strong_tag_rule": "EVERY mention of the primary keyword — all 27 of them — wrapped in <strong> tags. No exceptions.",
+      "keywords_to_avoid_active": []
+    },
+    "block_2_word_budget": {
+      "total_target": "1850 words — +/-50 words tolerance, never exceed",
+      "introduction": "220 words",
+      "conclusion": "180 words",
+      "h2_budgets": [
+        {"heading": "What Are Pearl Nails?", "budget": "180 words", "complexity": "low"},
+        {"heading": "Pearl Nails vs. Chrome vs. Glazed Donut Nails", "budget": "220 words", "complexity": "medium"},
+        {"heading": "White and Milky Pearl Nail Ideas", "budget": "260 words", "complexity": "medium"},
+        {"heading": "Pearl Chrome and Ombré Designs", "budget": "260 words", "complexity": "medium"},
+        {"heading": "Pearl French Tips and Wedding-Ready Looks", "budget": "230 words", "complexity": "medium"},
+        {"heading": "Colorful and Editorial Pearl Nail Designs", "budget": "230 words", "complexity": "medium"},
+        {"heading": "How to Do Pearl Nails at Home", "budget": "270 words", "complexity": "high"}
+      ],
+      "tracking_rule": "Track running word total at the end of every H2 section. If running over budget — cut before moving to the next section."
+    },
+    "block_3_image_plan": {
+      "total_images": 7,
+      "hero_image": "frontmatter only — NEVER appears in post body",
+      "body_images": 6,
+      "assignments": [
+        {"image_number": 1, "place_after": "What Are Pearl Nails?", "image_type": "standard_inspiration", "section_context": "close-up shot of a classic white/milky pearlescent manicure showing the soft iridescent glow"},
+        {"image_number": 2, "place_after": "Pearl Nails vs. Chrome vs. Glazed Donut Nails", "image_type": "infographic", "section_context": "clean side-by-side comparison graphic of pearl finish vs. chrome finish vs. glazed donut finish — visual texture/reflectivity differences, not a photo comparison"},
+        {"image_number": 3, "place_after": "White and Milky Pearl Nail Ideas", "image_type": "standard_inspiration", "section_context": "milky white pearl manicure on almond or oval shape"},
+        {"image_number": 4, "place_after": "Pearl Chrome and Ombré Designs", "image_type": "standard_inspiration", "section_context": "pearl chrome ombré gradient nail look, cream-to-pearl transition"},
+        {"image_number": 5, "place_after": "Pearl French Tips and Wedding-Ready Looks", "image_type": "standard_inspiration", "section_context": "pearl French tip manicure, bridal styling context"},
+        {"image_number": 6, "place_after": "Colorful and Editorial Pearl Nail Designs", "image_type": "standard_inspiration", "section_context": "colored pearl finish (pink or blue pearl) on a statement nail shape"}
+      ],
+      "image_type_rule": {
+        "default": "standard_inspiration",
+        "infographic_allowed_when": "genuinely needed for comparison — used once here for the pearl vs. chrome vs. glazed section",
+        "banned_absolutely": "NEVER a tool/equipment image. NEVER a literal photo-style side-by-side comparison — the comparison slot must be a clean infographic.",
+        "note_for_blog_gen": "Follow the image_type flagged here exactly per slot."
+      },
+      "path_rule": "/images/blog/pearl-nails/filename.webp — slug folder, leading slash (no topic_slug — standalone post)"
+    },
+    "block_4_opening_technique_assignments": {
+      "rule": "No two consecutive sections use the same technique. Conclusion = Technique 1 or 3 only.",
+      "assignments": [
+        {"section": "Introduction", "technique": "Technique 2 — The Trend Statement"},
+        {"section": "What Are Pearl Nails?", "technique": "Technique 4 — The Direct Answer"},
+        {"section": "Pearl Nails vs. Chrome vs. Glazed Donut Nails", "technique": "Technique 3 — The Reframe"},
+        {"section": "White and Milky Pearl Nail Ideas", "technique": "Technique 1 — The Claim"},
+        {"section": "Pearl Chrome and Ombré Designs", "technique": "Technique 4 — The Direct Answer"},
+        {"section": "Pearl French Tips and Wedding-Ready Looks", "technique": "Technique 2 — The Trend Statement"},
+        {"section": "Colorful and Editorial Pearl Nail Designs", "technique": "Technique 1 — The Claim"},
+        {"section": "How to Do Pearl Nails at Home", "technique": "Technique 3 — The Reframe"},
+        {"section": "Conclusion", "technique": "Technique 1 — The Claim"}
+      ],
+      "banned_opener_rule": "Check every opener against banned_opening_approaches in blog gen prompt before writing the second sentence"
+    },
+    "block_5_link_placements": {
+      "rule": "Every link placed exactly where specified. Anchor texts used verbatim. Links woven into prose naturally.",
+      "links": [
+        {
+          "anchor_text": "a detailed breakdown of how pearl, chrome, and glazed finishes actually differ",
+          "full_url": "https://shangmengnails.com/blogs/trends/pearl-ombre-nails-designs",
+          "place_in_section": "Pearl Nails vs. Chrome vs. Glazed Donut Nails",
+          "placement_context": "When elaborating on the technical distinction between the three finishes, after the core comparison is made in-post",
+          "link_type": "cross-site-external"
+        }
+      ]
+    },
+    "block_6_aeo_geo_plan": {
+      "aeo_assignments": [
+        {"aeo_term": "What are pearl nails?", "assigned_to_section": "What Are Pearl Nails?", "execution": "Write a direct 2-3 sentence answer paragraph IMMEDIATELY after the H2 heading."},
+        {"aeo_term": "What is the difference between pearl nails and chrome nails?", "assigned_to_section": "Pearl Nails vs. Chrome vs. Glazed Donut Nails", "execution": "Direct 2-3 sentence comparison answer immediately after the heading, before the fuller breakdown."},
+        {"aeo_term": "How do you do pearl nails at home?", "assigned_to_section": "How to Do Pearl Nails at Home", "execution": "Direct 2-3 sentence overview answer immediately after the heading, before the detailed steps."}
+      ],
+      "geo_entity_statements": [
+        {"entity": "chrome powder", "assigned_to_section": "How to Do Pearl Nails at Home", "execution": "Clear declarative definition: what chrome powder is and how it creates the pearl effect when buffed onto tacky gel."},
+        {"entity": "no-wipe top coat", "assigned_to_section": "How to Do Pearl Nails at Home", "execution": "Clear declarative definition: why a no-wipe formula is required for the powder to adhere, vs. a regular top coat."}
+      ]
+    },
+    "block_7_active_constraints": {
+      "em_dash_banned": "Long em dash does not appear anywhere. If one forms while writing — stop, replace with: comma / new sentence / parentheses / but / restructure.",
+      "banned_vocab_watch": ["elevate", "unleash", "game-changer", "must-have", "stunning", "effortlessly", "seamlessly", "delve"],
+      "american_english_active": "color, recognize, -ize, -or — every instance, no exceptions.",
+      "keyword_density_reminder": "After every 2 H2 sections — count current keyword mentions. Verify running total is on track to hit 27. First half must run denser than second half.",
+      "image_path_reminder": "/images/blog/pearl-nails/filename.webp",
+      "internal_link_url_reminder": "No internal links for this post (standalone, no cluster). External link uses exact discovered URL.",
+      "hero_image_reminder": "Hero = frontmatter only. Never place hero image in body.",
+      "strong_tag_reminder": "Every primary keyword mention = <strong> tags. Scan after every paragraph."
+    }
+  }
+}
