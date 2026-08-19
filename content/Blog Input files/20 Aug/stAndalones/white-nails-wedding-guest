@@ -1,0 +1,361 @@
+{
+  "section_1_file_authority": {
+    "statement": "THIS FILE IS THE SINGLE SOURCE OF TRUTH FOR THE BLOG GEN AGENT. All values in POST_CONSTANTS are hardcoded — Blog Gen Agent does not ask, adjust, or override them."
+  },
+  "section_2_post_constants": {
+    "slug": "white-nails-wedding-guest",
+    "canonical": "https://mirelleinspo.com/blog/white-nails-wedding-guest",
+    "post_type": "standalone",
+    "intent": "informational",
+    "word_count": 2350,
+    "image_count": 7,
+    "show_inspo_gallery_link": false,
+    "template": "posts",
+    "hero_dimensions": "1200x675",
+    "category": "Wedding Nails",
+    "publish_date": "2026-08-20",
+    "author": "jyoti-mirelle"
+  },
+  "section_4_serp_analysis": {
+    "competitor_gaps": [
+      "None of the 5 fetched pages give a direct, upfront yes/no answer in the first 100 words — all bury the verdict under intros, navigation, or unrelated color guides first",
+      "No page addresses the specific overlap case: guest is ALSO wearing white/ivory — only theevore.com covers this, briefly, deep in the article",
+      "No page addresses what to do if the guest will be in many close group photos beside the bride specifically",
+      "No page cites a named etiquette authority by name while also giving the counter-argument — most either fully dismiss etiquette concern (weddingbee, weddingforward) or fully endorse it (medium/Emily Post citation) without reconciling both"
+    ],
+    "missing_semantic_territory": [
+      "'white nails vs white dress etiquette' — distinction rarely made explicit and early",
+      "'milky white' as a distinct, lower-risk subcategory of 'white nails' for guests specifically (competitors use 'milky white' mostly in BRIDAL context, not guest-specific)",
+      "'when to skip white nails as a guest' — a decision framework, not just a blanket yes"
+    ],
+    "our_strategic_approach": "Every fetched competitor either (a) buries the yes/no answer under an unrelated color-guide roundup, or (b) states a blanket 'yes' without addressing the two real edge cases readers actually search for: being in the bridal party's close photos, and also wearing white/ivory yourself. This post leads with the direct answer in the first 100 words — matching the locked title's promise — then immediately gives the two genuine exception cases (found on theevore.com but buried far down), before moving into practical shade guidance. Structurally this post is shorter and more direct than the 30-idea gallery posts (weddingforward, matchedhearts) which spend most of their word count on unrelated nail-color roundups; it stays locked to the etiquette question itself, which is what the primary keyword is actually asking.",
+    "top_5_fetched_pages_summary": [
+      {"url": "https://theevore.com/wedding-guest-nails/", "word_count": 3400, "h2_count": 9, "keyword_mention_count": 6, "note": "Strongest fetched page — dedicated H2 'Can Wedding Guests Wear White Nails?' with direct yes + 2 real exception cases + FAQ restating it. Buried ~70% down a much broader guide."},
+      {"url": "https://www.weddingforward.com/wedding-guests-nails/", "word_count": 900, "h2_count": 10, "keyword_mention_count": 3, "note": "Gallery-first post; 'White Nails For A Wedding' is one of 10 color sections, thin text, FAQ gives the clearest one-line yes."},
+      {"url": "https://www.whowhatwear.com/beauty/nails/wedding-guest-nail-ideas", "word_count": 1050, "h2_count": 27, "keyword_mention_count": 0, "note": "Pure visual-idea gallery, never directly addresses the etiquette question at all — a real content gap."},
+      {"url": "https://matchedhearts.com/wedding-guest-nails-ideas/", "word_count": 850, "h2_count": 17, "keyword_mention_count": 0, "note": "Gallery of bridal-style looks mislabeled as 'guest' ideas; never answers the etiquette question — thin, image-led."},
+      {"url": "https://medium.com/@nailfeminine275/introduction-e809691f357e", "word_count": 650, "h2_count": 0, "keyword_mention_count": 4, "note": "Only fetched page arguing caution/against, citing Emily Post Institute by name — useful as the counter-perspective to address, but no structure, no H2s, thin overall."}
+    ],
+    "top_5_word_count_average": 1370,
+    "top_5_keyword_density_average": 3,
+    "best_external_sources_found": [
+      {"url": "https://theevore.com/wedding-guest-nails/", "why": "Real editorial depth, dedicated section with genuine reasoning and exception cases — most citation-worthy of the 5"}
+    ]
+  },
+  "section_5_audience_intelligence": {
+    "who_they_are": "A wedding guest (not the bride) in the final 1-2 weeks before a wedding, actively booking or planning a manicure, who has heard the general 'don't wear white' etiquette rule and is unsure if it extends to nail polish specifically. Not a nail-art enthusiast browsing for inspiration — this is an anxiety/permission-seeking search.",
+    "what_they_want_from_this_post": "A direct, confident yes-or-no answer within the first few lines, delivered with enough reasoning that they feel safe acting on it — plus the rare edge cases where they should reconsider.",
+    "what_frustrates_them": "Being handed a 30-photo gallery of bridal or guest nail ideas when they just want a straight etiquette answer; conflicting takes across sources (some say fine, some say risky) with no reconciliation; being told 'it depends' with no concrete guidance on what it depends on.",
+    "top_5_pain_points": [
+      "Anxiety about being seen as 'trying to be the bride' or disrespectful",
+      "Having already booked a white/milky manicure and now second-guessing it close to the date",
+      "Conflicting advice online — some sources say it's a hard no, others say it's a non-issue",
+      "Uncertainty specifically when they are also wearing a white or ivory outfit",
+      "Not knowing if being in close bridal-party photos changes the answer"
+    ],
+    "exact_user_phrases": [
+      "can I wear white nails to a wedding as a guest",
+      "is it disrespectful to have white nails at a wedding",
+      "white nails wedding guest etiquette",
+      "white nails are fine, white dress is not",
+      "is white nail polish no go for a guest",
+      "no one is going to notice your nails",
+      "can you wear white nail polish to a wedding",
+      "will white nails upstage the bride",
+      "milky white nails wedding guest",
+      "what nail color is best for a wedding guest"
+    ],
+    "intent_content_signals": [
+      "Wants the direct answer stated within the first 1-2 sentences, not buried",
+      "Responds well to a named etiquette-authority mention paired with the practical counter-view (builds trust via balance, not blanket dismissal)",
+      "Wants concrete 'when to reconsider' guidance, not just reassurance",
+      "Short, scannable H2s outperform long narrative paragraphs for this anxious, time-pressed searcher",
+      "A quick FAQ block restating the core answer performs well (seen replicated across weddingforward and theevore)"
+    ]
+  },
+  "section_6_semantic_keyword_data": {
+    "primary_keyword": "white nails wedding guest",
+    "keyword_variations": [
+      "can you wear white nails as a wedding guest",
+      "white nail polish wedding guest",
+      "wedding guest white nails",
+      "is white nails ok for wedding guest",
+      "can I wear white nails to a wedding as a guest",
+      "white nails for a wedding guest etiquette"
+    ],
+    "cluster_keywords": [
+      "wedding guest nail etiquette",
+      "wedding guest nail colors",
+      "milky white nails for weddings",
+      "what not to wear as a wedding guest",
+      "white nail polish etiquette",
+      "wedding guest manicure ideas",
+      "nail colors for wedding guests",
+      "can guests wear white to a wedding",
+      "best nail color for wedding guest",
+      "white nails vs white dress wedding"
+    ],
+    "lsi_terms": [
+      "upstage the bride",
+      "bridal territory",
+      "milky white polish",
+      "off-white nail shade",
+      "close-up ring photos",
+      "wedding party photos",
+      "traditional wedding etiquette",
+      "modern wedding guest etiquette",
+      "soft blush alternative",
+      "French tip guest nails",
+      "ivory dress guest",
+      "wedding dress code nails",
+      "guest manicure appropriate",
+      "nail polish reads as bridal",
+      "differentiate from the bride"
+    ],
+    "aeo_terms": [
+      "can you wear white nails as a wedding guest",
+      "is it disrespectful to wear white nails to a wedding",
+      "will white nails upstage the bride",
+      "do wedding guests have to avoid white nail polish",
+      "is white nail polish the same rule as a white dress",
+      "what nail color should a wedding guest avoid",
+      "can I wear milky white nails to a wedding",
+      "should I change my nail color if I'm in the bridal party photos",
+      "is white nail polish appropriate for a formal wedding",
+      "what nail colors are safest for wedding guests"
+    ],
+    "technical_terms": [
+      "milky white polish",
+      "opaque white gel",
+      "sheer white finish",
+      "off-white shade",
+      "French tip manicure",
+      "gel manicure",
+      "nail etiquette"
+    ],
+    "user_language": [
+      "no one is going to notice your nails",
+      "white nails are fine, white dress is not",
+      "just nails, nothing compared to the dress",
+      "don't want to look like I'm trying to upstage her",
+      "is this a hard rule or just old-fashioned advice",
+      "my SIL picked white nails for me, is that a no-go",
+      "does it matter if my dress isn't white",
+      "will it look bad in the ring photos"
+    ]
+  },
+  "section_7_voice_and_ai_queries": {
+    "queries": [
+      "Can you wear white nails as a wedding guest?",
+      "Is it disrespectful to have white nails at a wedding?",
+      "Will white nails upstage the bride?",
+      "Is the no-white rule about dresses or nail polish too?",
+      "Can I wear white nail polish if I'm not the bride?",
+      "Do wedding guests have to avoid white nail polish?",
+      "Is milky white nail polish okay for a wedding guest?",
+      "What's the difference between wearing a white dress and white nails as a guest?",
+      "Should I avoid white nails if I'm in a lot of photos with the bride?",
+      "Can I wear white nails if my dress is also white or ivory?",
+      "What nail color should I choose instead of white for a wedding?",
+      "Is there an actual etiquette rule against guest white nails?",
+      "Does a formal or traditional wedding change the white nails rule?",
+      "What do etiquette experts say about white nail polish for guests?",
+      "Are milky nails different from white nails for wedding etiquette?",
+      "Can bridesmaids wear white nails?",
+      "What's a safe alternative to white nails for a wedding guest?",
+      "Will the bride notice or care about a guest's white nails?"
+    ]
+  },
+  "section_8_hook_and_ctr": {
+    "real_serp_findings_summary": "Fetched competitor titles cluster into two patterns: broad 'X wedding guest nail ideas' gallery titles that never state a direct answer (whowhatwear, matchedhearts, weddingforward), and one etiquette-cautious title (medium) that leans toward discouraging it while citing Emily Post. None front-load a direct yes/no answer in the title itself — the searcher has to click through and scroll to find the actual verdict.",
+    "selected_option_rationale": "The chosen title states the answer directly in the title itself ('Yes'), which no fetched competitor does — this matches the searcher's real intent (a fast, confident answer) better than any gallery-style or vague etiquette title found in research.",
+    "title": "Can You Wear White Nails as a Wedding Guest? Yes",
+    "title_char_count": 50,
+    "meta_description": "Wondering if white nails break wedding etiquette? Here's the real answer, plus when to pick a different shade instead.",
+    "meta_char_count": 121,
+    "intro_hook_brief": "Open by naming the exact anxiety directly — the searcher has heard 'don't wear white' and is unsure if it applies to nails — then answer it immediately and plainly: yes, with the one-line reason why (nails aren't the dress). Confident, reassuring, no hedging in the opening lines.",
+    "first_h2_hook_direction": "The first H2 should immediately separate the dress rule from the nail rule explicitly — this is the core distinction competitors bury, and it's the natural next beat after the title's direct 'yes.'"
+  },
+  "section_9_search_journey": {
+    "reader_arrival_state": "Mildly anxious and seeking quick permission/reassurance before finalizing a manicure decision close to a wedding date.",
+    "journey_arc": [
+      "Immediate direct answer: yes, delivered with confidence",
+      "Explain why: the etiquette rule is about the dress, not the nails",
+      "Address the real exception cases: also wearing white/ivory, or in close bridal-party photos",
+      "Give practical shade guidance (milky white vs. stark white) for anyone still hesitant",
+      "Close with a clear final takeaway they can act on immediately"
+    ],
+    "promise_to_deliver": "A direct, confidently-answered yes on white nails for wedding guests, with the real exceptions clearly flagged so the reader can make a fully informed final call.",
+    "exit_state": "Reassured and decisive — confident in their manicure choice, or clear on the one alternative to pick if their situation is an exception."
+  },
+  "section_10_content_structure": {
+    "h1": "Can You Wear White Nails as a Wedding Guest? Yes — Here's What to Know",
+    "h2_structure": [
+      "The Real Rule: It's About the Dress, Not the Nails",
+      "Why White Nails Don't Upstage the Bride",
+      "When You Should Reconsider (2 Real Exceptions)",
+      "Milky White vs. Stark White: Which Reads Safer",
+      "Best White Nail Styles for Wedding Guests",
+      "What to Avoid With White Guest Nails",
+      "Quick Answers to Common Questions"
+    ],
+    "word_budget": {
+      "introduction": "220",
+      "conclusion": "180",
+      "per_h2": [
+        {"heading": "The Real Rule: It's About the Dress, Not the Nails", "budget": 260},
+        {"heading": "Why White Nails Don't Upstage the Bride", "budget": 280},
+        {"heading": "When You Should Reconsider (2 Real Exceptions)", "budget": 380},
+        {"heading": "Milky White vs. Stark White: Which Reads Safer", "budget": 340},
+        {"heading": "Best White Nail Styles for Wedding Guests", "budget": 360},
+        {"heading": "What to Avoid With White Guest Nails", "budget": 220},
+        {"heading": "Quick Answers to Common Questions", "budget": 110}
+      ]
+    }
+  },
+  "section_11_internal_links": {
+    "blog_gen_instruction": "Solo mode — no cluster_context.json, so cluster_links is empty by definition. Cross-site links below are the full internal link set.",
+    "all_internal_links": [
+      {
+        "url_or_slug": "https://mirelleinspo.com/blog/wedding-guest-nail-ideas",
+        "title": "Wedding Guest Nail Ideas",
+        "anchor_text": "browse more wedding guest nail ideas by dress code and season",
+        "placement_note": "Best Styles H2 — natural next-step link for a reader who now wants visual inspiration after getting the etiquette answer",
+        "link_type": "cross-site"
+      },
+      {
+        "url_or_slug": "https://mirelleinspo.com/blog/milky-white-nails",
+        "title": "Milky White Nails",
+        "anchor_text": "see how to get the milky white nail look at home or in the salon",
+        "placement_note": "Milky White vs. Stark White H2 — directly supports the shade recommendation with a dedicated how-to",
+        "link_type": "cross-site"
+      }
+    ]
+  },
+  "section_12_voice_tone": {
+    "recommended_voice": "Confident, reassuring friend with etiquette know-how",
+    "tone_characteristics": [
+      "Direct and decisive — answers first, explains second",
+      "Warm, not clinical — this is a real anxiety, treated with empathy",
+      "Balanced — acknowledges the cautious etiquette view without adopting it as the final word",
+      "Practical over theoretical — every section ends in something actionable",
+      "Zero hedging language ('maybe,' 'it depends,' 'some say') in the core answer sections"
+    ],
+    "language_style": "Short, clear sentences. Direct address ('you'). No jargon. Light use of rhetorical reassurance ('you're not the problem here — the confusion is').",
+    "audience_match": "This reader wants permission and clarity fast, not options to browse — a confident, warm, non-judgmental voice matches an anxious, time-pressed searcher looking for a fast, trustworthy verdict."
+  },
+  "section_13_external_links": {
+    "links": [
+      {
+        "url": "https://theevore.com/wedding-guest-nails/",
+        "context": "When explaining the two real exception cases (bridal party close photos, also wearing white)",
+        "anchor_suggestion": "one detailed etiquette guide breaks down exactly when to reconsider"
+      }
+    ]
+  },
+  "section_14_execution_plan": {
+    "block_1_keyword_execution": {
+      "primary_keyword": "white nails wedding guest",
+      "top_5_density_baseline": 3,
+      "total_mention_target": 6,
+      "first_100_words_plan": {
+        "rule": "Primary keyword MUST appear TWICE in the first 100 words. Mandatory.",
+        "mention_1": "sentence 1 of introduction — direct answer stating white nails wedding guest question is a yes",
+        "mention_2": "sentence 3-4 of introduction — reinforcing the direct answer with the dress-vs-nails distinction"
+      },
+      "first_half_target": "4 mentions — first ~1175 words. Run denser in first half.",
+      "second_half_target": "2 mentions — second ~1175 words",
+      "strong_tag_rule": "EVERY single mention of the primary keyword — all 6 of them — wrapped in <strong> tags. No exceptions.",
+      "keywords_to_avoid_active": "None — solo mode, no cluster_context.json, no reserved keyword list applies."
+    },
+    "block_2_word_budget": {
+      "total_target": "2350 words — +/-50 words tolerance, never exceed",
+      "introduction": "220 words",
+      "conclusion": "180 words",
+      "h2_budgets": [
+        {"heading": "The Real Rule: It's About the Dress, Not the Nails", "budget": 260, "complexity": "low"},
+        {"heading": "Why White Nails Don't Upstage the Bride", "budget": 280, "complexity": "low"},
+        {"heading": "When You Should Reconsider (2 Real Exceptions)", "budget": 380, "complexity": "medium"},
+        {"heading": "Milky White vs. Stark White: Which Reads Safer", "budget": 340, "complexity": "medium"},
+        {"heading": "Best White Nail Styles for Wedding Guests", "budget": 360, "complexity": "medium"},
+        {"heading": "What to Avoid With White Guest Nails", "budget": 220, "complexity": "low"},
+        {"heading": "Quick Answers to Common Questions", "budget": 110, "complexity": "low"}
+      ],
+      "tracking_rule": "Track running word total at the end of every H2 section. If a section is running over budget, cut before moving to the next section."
+    },
+    "block_3_image_plan": {
+      "total_images": 7,
+      "hero_image": "frontmatter only — NEVER appears in post body",
+      "body_images": 6,
+      "assignments": [
+        {"image_number": 1, "place_after": "The Real Rule: It's About the Dress, Not the Nails", "image_type": "standard_inspiration", "section_context": "Clean milky-white manicure on hand, neutral elegant styling, no wedding dress in frame"},
+        {"image_number": 2, "place_after": "Why White Nails Don't Upstage the Bride", "image_type": "standard_inspiration", "section_context": "White manicure paired with a colorful or patterned outfit detail to visually reinforce nails-vs-dress distinction"},
+        {"image_number": 3, "place_after": "When You Should Reconsider (2 Real Exceptions)", "image_type": "standard_inspiration", "section_context": "Soft blush/nude manicure as the alternative option for the exception case"},
+        {"image_number": 4, "place_after": "Milky White vs. Stark White: Which Reads Safer", "image_type": "standard_inspiration", "section_context": "Side-by-side styling of milky sheer white finish vs opaque stark white — as two separate styled shots, not a literal comparison graphic"},
+        {"image_number": 5, "place_after": "Best White Nail Styles for Wedding Guests", "image_type": "standard_inspiration", "section_context": "White French tip manicure, elegant, short-to-medium length"},
+        {"image_number": 6, "place_after": "Best White Nail Styles for Wedding Guests", "image_type": "standard_inspiration", "section_context": "White chrome or pearl-finish manicure for evening/formal wedding styling"}
+      ],
+      "image_type_rule": {
+        "default": "standard_inspiration — an actual nail look, styled and shot, related to the topic.",
+        "infographic_allowed_when": "Not applicable to this post — informational intent, no comparison/tutorial structure requiring an infographic.",
+        "how_many_infographics": 0,
+        "banned_absolutely": "NEVER a tool/equipment image. NEVER a literal photo-style side-by-side nail comparison — image 4 uses two separately styled shots, not a composited comparison.",
+        "note_for_blog_gen": "All 6 body image slots are standard_inspiration — follow exactly, no infographic substitution."
+      },
+      "path_rule": "/images/blog/white-nails-wedding-guest/filename.webp — no topic_slug segment (standalone post)"
+    },
+    "block_4_opening_technique_assignments": {
+      "rule": "No two consecutive sections use the same technique. Conclusion = Technique 1 or 3 only.",
+      "assignments": [
+        {"section": "Introduction", "technique": "Technique 1 — The Claim (direct answer stated immediately)"},
+        {"section": "The Real Rule: It's About the Dress, Not the Nails", "technique": "Technique 2 — The Distinction"},
+        {"section": "Why White Nails Don't Upstage the Bride", "technique": "Technique 3 — The Reframe"},
+        {"section": "When You Should Reconsider (2 Real Exceptions)", "technique": "Technique 4 — The Direct Address"},
+        {"section": "Milky White vs. Stark White: Which Reads Safer", "technique": "Technique 2 — The Distinction"},
+        {"section": "Best White Nail Styles for Wedding Guests", "technique": "Technique 1 — The Claim"},
+        {"section": "What to Avoid With White Guest Nails", "technique": "Technique 4 — The Direct Address"},
+        {"section": "Conclusion", "technique": "Technique 1 — The Claim"}
+      ],
+      "banned_opener_rule": "Check every opener against banned_opening_approaches in blog gen prompt before writing the second sentence"
+    },
+    "block_5_link_placements": {
+      "links": [
+        {
+          "anchor_text": "browse more wedding guest nail ideas by dress code and season",
+          "full_url": "https://mirelleinspo.com/blog/wedding-guest-nail-ideas",
+          "place_in_section": "Best White Nail Styles for Wedding Guests",
+          "placement_context": "After covering white-specific styles, point the reader onward to broader guest nail inspiration by dress code",
+          "link_type": "cross-site"
+        },
+        {
+          "anchor_text": "see how to get the milky white nail look at home or in the salon",
+          "full_url": "https://mirelleinspo.com/blog/milky-white-nails",
+          "place_in_section": "Milky White vs. Stark White: Which Reads Safer",
+          "placement_context": "When recommending milky white as the safer shade option, link to the dedicated how-to",
+          "link_type": "cross-site"
+        }
+      ]
+    },
+    "block_6_aeo_geo_plan": {
+      "aeo_assignments": [
+        {"aeo_term": "Can you wear white nails as a wedding guest?", "assigned_to_section": "Introduction", "execution": "Write a direct 2-3 sentence yes answer immediately after the H1/intro opening — before any elaboration."},
+        {"aeo_term": "Is it disrespectful to have white nails at a wedding?", "assigned_to_section": "Why White Nails Don't Upstage the Bride", "execution": "Direct 2-3 sentence answer immediately after the H2 heading — no is disrespectful, then explain why briefly."},
+        {"aeo_term": "Should I avoid white nails if I'm in a lot of photos with the bride?", "assigned_to_section": "When You Should Reconsider (2 Real Exceptions)", "execution": "Direct answer addressing the close-photos exception immediately after the H2 heading."}
+      ],
+      "geo_entity_statements": [
+        {"entity": "milky white nail polish", "assigned_to_section": "Milky White vs. Stark White: Which Reads Safer", "execution": "Clear declarative definition: a sheer, translucent white finish rather than a fully opaque white — confident, no hedging."},
+        {"entity": "wedding guest etiquette", "assigned_to_section": "The Real Rule: It's About the Dress, Not the Nails", "execution": "Clear declarative statement distinguishing the dress-code rule from nail polish choices."}
+      ]
+    },
+    "block_7_active_constraints": {
+      "em_dash_banned": "Long em dash does not appear anywhere. If one forms while writing, stop and replace with comma / new sentence / parentheses / but / restructure.",
+      "banned_vocab_watch": ["elevate", "seamless", "in the realm of", "unleash", "game-changer", "look no further", "when it comes to"],
+      "american_english_active": "color, recognize, -ize, -or — every instance, no exceptions.",
+      "keyword_density_reminder": "After every 2 H2 sections, count current keyword mentions. Verify running total is on track to hit 6 total. First half must run denser than second half.",
+      "image_path_reminder": "/images/blog/white-nails-wedding-guest/filename.webp — no topic_slug segment, standalone post.",
+      "internal_link_url_reminder": "Full correct paths only. Cross-site links = exact URL as discovered. Never bare /slug.",
+      "hero_image_reminder": "Hero = frontmatter only. Never place hero image in body.",
+      "strong_tag_reminder": "Every primary keyword mention = <strong> tags. Scan after every paragraph."
+    }
+  }
+}
