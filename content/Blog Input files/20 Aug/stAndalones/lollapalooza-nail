@@ -1,0 +1,539 @@
+{
+  "section_1_file_authority": {
+    "statement": "THIS FILE IS THE SINGLE SOURCE OF TRUTH FOR THE BLOG GEN AGENT. All values in POST_CONSTANTS are hardcoded — Blog Gen Agent does not ask, adjust, or override them. All keywords, H2 structure, audience intelligence, internal links, and tone defined here must be followed exactly."
+  },
+
+  "section_2_post_constants": {
+    "slug": "lollapalooza-nails",
+    "canonical": "https://mirelleinspo.com/blog/lollapalooza-nails",
+    "post_type": "standalone",
+    "intent": "inspirational",
+    "word_count": 2000,
+    "image_count": 7,
+    "show_inspo_gallery_link": false,
+    "template": "posts",
+    "hero_dimensions": "1200x675",
+    "category": "Nail Art & Design",
+    "publish_date": "2026-08-20",
+    "author": "jyoti-mirelle"
+  },
+
+  "section_4_serp_analysis": {
+    "blog_gen_instruction": "our_strategic_approach is a specific, evidence-based outperform strategy, not a vague gap-fill statement. Use it as the concrete angle for the introduction and conclusion, and to guide depth/coverage decisions in relevant H2 sections.",
+    "competitor_gaps": [
+      "No fetched competitor pairs each design with a photographs-well-in-what-light note (daylight vs golden hour vs stage/blacklight) as a decision filter — confirmed missing on 2+ sources (InStyle, worldculturepost) while only TheZelovo touches it lightly per-design",
+      "No fetched competitor builds a decision framework for choosing length/shape specifically FOR a 4-day festival versus a single-day event — TheZelovo is the only source that addresses this and does so in a separate section rather than folding it into the actual design picks",
+      "None of the weaker competitors (InStyle, worldculturepost) address multi-day durability, repair, or prep timing at all — confirmed gap on 2+ sources since only TheZelovo covers it",
+      "No competitor addresses global Lollapalooza editions (Berlin, Paris, Mumbai, São Paulo, Buenos Aires, Santiago) as a reason 'lollapalooza nails' is a year-round rather than July-only search — only TheZelovo raises it, and even there it's a short closing note, not built into the core design picks"
+    ],
+    "missing_semantic_territory": [
+      "'lollapalooza nails 2026' — year-tagged long-tail, present in on-page copy of only 1 of 5 sources at meaningful density",
+      "'lollapalooza nail ideas chrome' and 'lollapalooza nail ideas neon' — compound long-tails validated via autocomplete-style demand (TikTok discover pages, Lemon8) but not built into competitor H2s directly",
+      "'what to ask for lollapalooza nails' / stylist-request phrasing — validated on Lemon8 audience language, absent from all 5 fetched competitor pages as a direct H2"
+    ],
+    "our_strategic_approach": "Every fetched competitor treats the design list and the practical survival information (length, shape, durability, prep timing) as separate concerns, or skips practical guidance entirely. This post closes that gap by pairing each design directly with a durability/photograph note baked into the same section, rather than splitting an idea-gallery from a survival-guide. It also leans harder into the aspirational, inspirational, save-this angle that already drives saves on Pinterest and Lemon8 (confirmed 2+ sources) — leading with the visual payoff first, then layering in enough practical substance (shape, length, prep timing) to differentiate from the thin, gallery-only competitors (worldculturepost, InStyle) without tipping into a dry how-to that would break the inspirational journey.",
+    "top_5_fetched_pages_summary": [
+      {
+        "url": "https://thezelovo.com/lollapalooza-nail-ideas/",
+        "word_count": 2900,
+        "h2_count": 14,
+        "keyword_mention_count": 15,
+        "note": "Strongest real competitor — 15 numbered designs plus a full practical half (length, prep, repair kit, FAQs); primary benchmark for depth and structure"
+      },
+      {
+        "url": "https://nailarts.worldculturepost.com/2024/07/lollapalooza-nail-art-ideas.html",
+        "word_count": 650,
+        "h2_count": 4,
+        "keyword_mention_count": 12,
+        "note": "Real but thin — 15 ideas grouped into 4 categories, no practical/durability content, dated 2024"
+      },
+      {
+        "url": "https://shopping.yahoo.com/beauty/nails/articles/10-music-festival-nail-ideas-220000861.html",
+        "word_count": 550,
+        "h2_count": 10,
+        "keyword_mention_count": 2,
+        "note": "Real InStyle editorial content but targets broader 'music festival nails' keyword — Lollapalooza mentioned only twice, not primary-keyword-locked"
+      },
+      {
+        "url": "https://www.glam.com/2229208/best-celebrity-beauty-moments-lollapalooza-2026/",
+        "word_count": 900,
+        "h2_count": 10,
+        "keyword_mention_count": 4,
+        "note": "Real celebrity beauty roundup, Lollapalooza-specific, but only 2 of 10 sections cover nails — weak nail focus"
+      },
+      {
+        "url": "https://www.chromagel.co.uk/blogs/news/festival-nail-art-2026-bold-gel-looks-that-last-all-weekend",
+        "word_count": 500,
+        "h2_count": 3,
+        "keyword_mention_count": 0,
+        "note": "Real gel-brand editorial on general festival nail art, application-technique focused, does not target Lollapalooza specifically"
+      }
+    ],
+    "top_5_word_count_average": 1900,
+    "top_5_keyword_density_average": 6,
+    "best_external_sources_found": []
+  },
+
+  "section_5_audience_intelligence": {
+    "blog_gen_instruction": "This is your primary creative brief. Every paragraph written for this specific person with this specific intent. Satisfy them completely.",
+    "who_they_are": "A festival-goer, likely attending Lollapalooza Chicago (or a global edition), planning her look days to weeks ahead. Active on Pinterest, TikTok, Instagram, and Lemon8, where she screenshots and saves nail sets she wants to replicate or show a nail tech. She may be a first-timer (per real conversation signals: 'going to my first Lollapalooza') or a repeat attendee refining her look year over year.",
+    "what_they_want_from_this_post": "A visual, scrollable set of bold, festival-specific nail ideas she can save or bring to a nail tech — plus just enough practical guidance (shape, length, how long it'll last) to make a confident decision, without the post turning into a dry how-to article.",
+    "what_frustrates_them": "Generic 'festival nail' roundups (like the InStyle/Yahoo piece) that barely mention Lollapalooza and read the same as any Coachella listicle; galleries with zero durability guidance that leave her nails snagging or chipping by day two; content that's all inspiration and no practical follow-through, or vice versa.",
+    "top_5_pain_points": [
+      "Not knowing which shape/length will actually survive 4 days of crowds, cans, and phone use — confirmed on 2+ sources (TheZelovo, Lemon8 length discussion)",
+      "Wanting a bold, photo-ready set but worrying it won't hold up under real festival conditions (sun, sweat, dancing) — confirmed on 2+ sources (TheZelovo, ChromaGel)",
+      "Uncertainty about DIY vs salon vs press-on for a multi-day event and which lasts longest — confirmed on 2+ sources (Lemon8, TheZelovo)",
+      "Wanting her nails to match a specific festival aesthetic (rave, Y2K, western, alt) but not knowing what to search or ask for — confirmed on 2+ sources (Lemon8, worldculturepost)",
+      "Timing anxiety — not knowing how many days ahead to book so the set looks fresh but has time to harden — confirmed on 2+ sources (TheZelovo, general nail-timing content)"
+    ],
+    "exact_user_phrases": [
+      "help me pick my look",
+      "which nail art should I go for",
+      "festival-ready designs",
+      "durability is key",
+      "picking out my design was half the fun",
+      "something super eye-catching that would glow under the lights",
+      "these are the nails I'm getting for my first Lollapalooza",
+      "save this to show your nail tech",
+      "what are we doing if your nails aren't giving THIS at a festival",
+      "cute? teal chrome half gold half silver stars",
+      "lock in and do our nails, lollapalooza is in 2 days"
+    ],
+    "intent_content_signals": [
+      "Numbered, scrollable idea format (10-15 designs) performs consistently across every real competitor and every social platform checked",
+      "Short blurbs per design (2-3 sentences) outperform long technique explanations — matches gallery-scroll behavior",
+      "Practical asides (length, durability) are wanted but only as a supporting layer, not the headline",
+      "Strong visual/aspirational language ('THIS is the vibe', 'stand out', 'catch the light') mirrors what drives saves",
+      "References to specific finishes (chrome, neon, holographic, aura) function almost like sub-keywords audiences search directly"
+    ]
+  },
+
+  "section_6_semantic_keyword_data": {
+    "blog_gen_instruction": "Primary keyword in strong tags every mention. AEO terms trigger direct answer paragraphs. User language woven naturally.",
+    "primary_keyword": "lollapalooza nails",
+    "keyword_variations": [
+      "lollapalooza nail ideas",
+      "lollapalooza nail designs",
+      "lollapalooza nail art",
+      "lollapalooza 2026 nails",
+      "nails for lollapalooza",
+      "lollapalooza manicure"
+    ],
+    "cluster_keywords": [
+      "festival nails",
+      "festival nail ideas",
+      "chrome festival nails",
+      "neon festival nails",
+      "rave nails",
+      "Y2K nail art",
+      "festival nail shape",
+      "short almond nails festival",
+      "music festival manicure",
+      "Grant Park festival nails",
+      "durable festival manicure",
+      "press-on nails festival"
+    ],
+    "lsi_terms": [
+      "chrome nails",
+      "holographic nails",
+      "neon ombre nails",
+      "aura nails",
+      "butterfly nail art",
+      "checkerboard nails",
+      "smiley face nails",
+      "mismatched rainbow nails",
+      "UV-reactive nail polish",
+      "blacklight nails",
+      "short almond nails",
+      "squoval nail shape",
+      "gel vs press-on nails",
+      "festival nail repair kit",
+      "nail prep timing",
+      "builder gel nails",
+      "tie-dye nail art",
+      "Chicago skyline nail art"
+    ],
+    "aeo_terms": [
+      "what length should lollapalooza nails be",
+      "how long before lollapalooza should I get my nails done",
+      "are press-on nails good for a music festival",
+      "what nail shape lasts longest at a festival",
+      "do neon nails glow under blacklight at lollapalooza",
+      "what are the best colors for lollapalooza nails",
+      "how do I keep my nails from chipping at a festival",
+      "gel or press-on nails for a 4-day festival",
+      "what nail designs are trending for lollapalooza 2026",
+      "how do I stop my nails from lifting in festival heat"
+    ],
+    "technical_terms": [
+      "builder gel",
+      "no-wipe top coat",
+      "mirror chrome powder",
+      "UV/LED lamp curing",
+      "capped free edge",
+      "rubber base coat",
+      "blooming gel"
+    ],
+    "user_language": [
+      "help me pick my look",
+      "durability is key",
+      "which nail art should I go for",
+      "save this to show your nail tech",
+      "picking out my design was half the fun",
+      "if your nails aren't giving THIS at a festival, what are we doing",
+      "eye-catching enough to glow under the lights",
+      "lock in and do our nails"
+    ]
+  },
+
+  "section_7_voice_and_ai_queries": {
+    "blog_gen_instruction": "Answer every query directly in the relevant H2 section body. If a query cannot be addressed naturally in the body, route it to faqItems. No query left unanswered.",
+    "queries": [
+      "What length should lollapalooza nails be?",
+      "How long before Lollapalooza should I get my nails done?",
+      "Are press-on nails good for a music festival?",
+      "What nail shape lasts longest at a festival?",
+      "Do neon nails glow under blacklight at Lollapalooza?",
+      "What are the best colors for Lollapalooza nails?",
+      "How do I keep my nails from chipping at a festival?",
+      "Should I get gel or press-on nails for a 4-day festival?",
+      "What nail designs are trending for Lollapalooza 2026?",
+      "How do I stop my nails from lifting in festival heat?",
+      "What's the difference between chrome and holographic nails?",
+      "Can I do Lollapalooza nails myself at home?",
+      "What nail shape is best for short natural nails at a festival?",
+      "How do I make my festival nails last all four days?",
+      "What's a good backup plan if a nail breaks at Lollapalooza?",
+      "Do I need a matching pedicure for Lollapalooza?",
+      "What's the most photogenic nail finish for festival lighting?",
+      "How do I choose a Lollapalooza nail design that matches my outfit?"
+    ]
+  },
+
+  "section_8_hook_and_ctr": {
+    "blog_gen_instruction": "READ THIS SECTION BEFORE WRITING THE TITLE, META DESCRIPTION, INTRO, OR FIRST H2. The title and description here are the option the USER SELECTED from 2-3 real, evidence-based choices during phase_6 — use them exactly. The intro hook brief and first H2 hook direction are your creative brief for those specific elements, matching the selected option's angle. Do not deviate.",
+    "real_serp_findings_summary": "The only genuinely on-keyword competitor (TheZelovo) splits its content into a design gallery plus a completely separate practical section, and none of the weaker competitors (InStyle, worldculturepost, Glam) address durability or multi-day survival at all. No fetched title or meta communicated a durability/survival promise directly — they all promise ideas/inspiration only.",
+    "selected_option_rationale": "This option leads with the real, demand-validated pain point (nails not surviving 4 days) that zero fetched competitors put in their title, directly differentiating from every gallery-only competitor while still promising the visual payoff the audience wants.",
+    "title": "Lollapalooza Nails That Actually Survive 4 Days",
+    "title_char_count": 49,
+    "meta_description": "Most festival nail guides skip the practical side. These lollapalooza nails cover chrome, neon, and aura looks plus the length and prep that hold up.",
+    "meta_char_count": 152,
+    "intro_hook_brief": "Open by naming the tension every festival-goer feels but rarely sees addressed: nails need to look incredible in every photo AND survive four days of crowds, phones, and dancing. Establish that most inspiration lists ignore the second half. Promise both in this post.",
+    "first_h2_hook_direction": "The first H2 (a 'what makes lollapalooza nails different' framing) should quietly apply the survives-4-days angle by naming the 3 practical differences (length, finish, build) before the design gallery begins — subtle setup, not a repeat of the title."
+  },
+
+  "section_9_search_journey": {
+    "blog_gen_instruction": "This is the emotional contract with the reader. Every section of the post must honour the promise made. Read this before writing any section. If a paragraph breaks the journey arc — rewrite it.",
+    "reader_arrival_state": "Curious, visually motivated, and browsing for festival nail ideas, with a background worry about whether her chosen design will actually hold up across a multi-day event.",
+    "journey_arc": [
+      "Hook: name the tension between photo-ready and festival-durable, promise both",
+      "Deliver early visual abundance — chrome, neon, and Y2K design ideas front-loaded with aspirational language",
+      "Build aspiration through each design, layering in a light practical note (best-for, finish) with each idea rather than deferring it",
+      "Shift into the practical backbone — shape, length, gel vs press-on, prep timing — framed as protecting the investment in the look she just fell in love with",
+      "Close with the identity payoff: this is her festival look, and it will still look intentional on day four"
+    ],
+    "promise_to_deliver": "A set of bold, visually striking Lollapalooza nail ideas that will still look good — not chipped, snagged, or faded — by the last day of the festival.",
+    "exit_state": "Confident and decided — she has a specific design in mind, knows the shape/length/finish to ask for, and feels reassured her nails will hold up for all four days."
+  },
+
+  "section_10_content_structure": {
+    "blog_gen_instruction": "This H2 structure is research-driven and must be followed exactly. Do not rename, reorder, or remove H2s without user instruction. Word budget per section is set — follow it. H3s may be added at editorial discretion.",
+    "h1": "Lollapalooza Nails That Actually Survive 4 Days",
+    "h2_structure": [
+      "What Makes Lollapalooza Nails Different From Regular Festival Nails",
+      "Chrome and Metallic Lollapalooza Nail Ideas",
+      "Neon and Blacklight-Ready Lollapalooza Nail Ideas",
+      "Y2K and Aura Lollapalooza Nail Ideas",
+      "The Best Nail Length and Shape for Lollapalooza",
+      "Gel, Press-On, or Regular Polish: What Actually Lasts 4 Days",
+      "How to Prep and Time Your Lollapalooza Nails",
+      "Common Lollapalooza Nail Mistakes to Avoid",
+      "Frequently Asked Questions"
+    ],
+    "word_budget": {
+      "introduction": "220 words",
+      "conclusion": "180 words",
+      "per_h2": "Distributed in section_14 block_2 below"
+    }
+  },
+
+  "section_11_internal_links": {
+    "blog_gen_instruction": "Every link below must appear in the post. Cross-site links use the provided descriptive anchor. Place each link where the placement note says — woven naturally into prose, never as a standalone CTA. Total internal links must not exceed 6.",
+    "fields": {
+      "all_internal_links": [
+        {
+          "url_or_slug": "/blog/coachella-nails",
+          "title": "Coachella Nail Ideas",
+          "anchor_text": "how Coachella nails lean pastel and boho instead of Lollapalooza's bolder palette",
+          "placement_note": "In 'What Makes Lollapalooza Nails Different' — natural contrast point when distinguishing Lollapalooza's aesthetic from other festivals",
+          "link_type": "cross-site"
+        },
+        {
+          "url_or_slug": "/blog/short-almond-nails",
+          "title": "Short Almond Nail Ideas",
+          "anchor_text": "more short almond nail inspiration if that ends up being your shape",
+          "placement_note": "In 'The Best Nail Length and Shape for Lollapalooza' — natural follow-up once short almond is recommended as the top festival shape",
+          "link_type": "cross-site"
+        }
+      ]
+    },
+    "solo_mode_note": "Standalone post — no cluster_context.json, so cluster_links is empty by definition. Only cross-site links apply, capped at 2 per the relevance filter (both placeholder slugs since a live site search was not run against a specific site; Blog Gen Agent or the publisher should confirm these slugs exist before publishing, or drop them if not)."
+  },
+
+  "section_12_voice_tone": {
+    "blog_gen_instruction": "This is the voice for this specific post. Layer on top of Mirellé editorial framework. Do not default to generic AI tone.",
+    "recommended_voice": "Aspirational guide with a practical best friend's honesty",
+    "tone_characteristics": [
+      "Confident and visual-first, never dry or instructional-sounding",
+      "Direct and a little cheeky when calling out what other guides skip (the durability gap)",
+      "Warm, encouraging, 'you've got this' energy around DIY and prep",
+      "Specific rather than vague — names finishes, shapes, and timing precisely",
+      "Never apologetic about being bold or maximalist; treats loud festival nails as a legitimate style choice, not an excuse"
+    ],
+    "language_style": "Short, punchy sentences mixed with slightly longer descriptive ones for the visual design copy. Frequent direct address ('you'). Light use of festival/rave vocabulary (blacklight, stage lights, golden hour) as sensory anchors rather than jargon.",
+    "audience_match": "This voice matches a reader who wants to feel like she's getting insider, save-worthy inspiration from someone who's actually been to a 4-day festival and knows what breaks — not a generic beauty editor rounding up Pinterest images."
+  },
+
+  "section_13_external_links": {
+    "blog_gen_instruction": "Include all external links where indicated. Supports E-E-A-T. Use anchor suggestion as guide — write naturally around it. Sourced from phase_3's best_external_sources_found. May be empty if none of the fetched pages qualified as genuinely citation-worthy — that is expected, not a gap to fill.",
+    "fields": {
+      "links": []
+    },
+    "note": "Empty by design — none of the 5 fetched competitor pages met the genuinely-citation-worthy bar (either too thin, off-keyword, or product-listing-heavy). No external links forced."
+  },
+
+  "section_14_execution_plan": {
+    "purpose": "Blog Gen Agent reads this section FIRST — before frontmatter, before writing a single word. Every value here is pre-calculated from the input file data. Blog Gen Agent locks all values and executes them exactly.",
+    "blog_gen_instruction": "READ THIS SECTION FIRST. Lock every value. Execute exactly. Do not recalculate, do not adjust, do not deviate.",
+    "calculated_by": "Input Gen Agent",
+
+    "block_1_keyword_execution": {
+      "primary_keyword": "lollapalooza nails",
+      "top_5_density_baseline": 6,
+      "total_mention_target": "6 + 2 = 8 total mentions. Hard target, not a percentage.",
+      "first_100_words_plan": {
+        "rule": "Primary keyword MUST appear TWICE in the first 100 words. Mandatory. No exceptions.",
+        "mention_1": "sentence 1-2 of introduction — establishing the topic while naming the durability tension",
+        "mention_2": "sentence 4-5 of introduction — restating the promise (bold + built to last) before transitioning into the post body"
+      },
+      "first_half_target": "5 mentions — first ~1000 words. Run denser in first half.",
+      "second_half_target": "3 mentions — second ~1000 words",
+      "strong_tag_rule": "EVERY single mention of the primary keyword — all 8 of them — wrapped in <strong> tags. No exceptions. Scan after every paragraph.",
+      "keywords_to_avoid_active": "None — solo mode, no cluster_context.json, no keyword_do_not_use list applies."
+    },
+
+    "block_2_word_budget": {
+      "total_target": "2000 words +/-50 words tolerance, never exceed",
+      "introduction": "220 words",
+      "conclusion": "180 words",
+      "h2_budgets": [
+        {
+          "heading": "What Makes Lollapalooza Nails Different From Regular Festival Nails",
+          "budget": "180 words",
+          "complexity": "low"
+        },
+        {
+          "heading": "Chrome and Metallic Lollapalooza Nail Ideas",
+          "budget": "220 words",
+          "complexity": "medium"
+        },
+        {
+          "heading": "Neon and Blacklight-Ready Lollapalooza Nail Ideas",
+          "budget": "220 words",
+          "complexity": "medium"
+        },
+        {
+          "heading": "Y2K and Aura Lollapalooza Nail Ideas",
+          "budget": "220 words",
+          "complexity": "medium"
+        },
+        {
+          "heading": "The Best Nail Length and Shape for Lollapalooza",
+          "budget": "230 words",
+          "complexity": "medium"
+        },
+        {
+          "heading": "Gel, Press-On, or Regular Polish: What Actually Lasts 4 Days",
+          "budget": "230 words",
+          "complexity": "high"
+        },
+        {
+          "heading": "How to Prep and Time Your Lollapalooza Nails",
+          "budget": "200 words",
+          "complexity": "medium"
+        },
+        {
+          "heading": "Common Lollapalooza Nail Mistakes to Avoid",
+          "budget": "150 words",
+          "complexity": "low"
+        },
+        {
+          "heading": "Frequently Asked Questions",
+          "budget": "150 words",
+          "complexity": "low"
+        }
+      ],
+      "tracking_rule": "Track running word total at the end of every H2 section. If a section is running over budget — cut before moving to the next section. Do not compensate later."
+    },
+
+    "block_3_image_plan": {
+      "total_images": 7,
+      "hero_image": "frontmatter only — NEVER appears in post body",
+      "body_images": 6,
+      "assignments": [
+        {
+          "image_number": 1,
+          "place_after": "What Makes Lollapalooza Nails Different From Regular Festival Nails",
+          "image_type": "standard_inspiration",
+          "section_context": "A silver mirror chrome manicure, short almond shape, shown catching bright daylight — establishes the visual baseline for the post"
+        },
+        {
+          "image_number": 2,
+          "place_after": "Chrome and Metallic Lollapalooza Nail Ideas",
+          "image_type": "standard_inspiration",
+          "section_context": "A neon sunset ombré manicure (hot pink to orange to yellow), short to medium length, shown in golden-hour-style lighting"
+        },
+        {
+          "image_number": 3,
+          "place_after": "Neon and Blacklight-Ready Lollapalooza Nail Ideas",
+          "image_type": "standard_inspiration",
+          "section_context": "A UV-reactive neon manicure shown glowing under blacklight/stage-light conditions to visually demonstrate the blacklight effect"
+        },
+        {
+          "image_number": 4,
+          "place_after": "Y2K and Aura Lollapalooza Nail Ideas",
+          "image_type": "standard_inspiration",
+          "section_context": "An airbrushed aura manicure in soft milky base with a bright pink/purple glow, short almond shape, dreamy soft-focus styling"
+        },
+        {
+          "image_number": 5,
+          "place_after": "The Best Nail Length and Shape for Lollapalooza",
+          "image_type": "infographic",
+          "section_context": "A clean graphic layout comparing 4 nail shapes (short almond, short squoval, medium almond, coffin/stiletto) with a simple durability rating icon per shape — helps the reader compare at a glance without a literal photo comparison"
+        },
+        {
+          "image_number": 6,
+          "place_after": "Gel, Press-On, or Regular Polish: What Actually Lasts 4 Days",
+          "image_type": "standard_inspiration",
+          "section_context": "A Y2K smiley-face accent nail design on a bright solid base, short length, styled as a finished salon-quality look rather than a process shot"
+        }
+      ],
+      "image_type_rule": {
+        "default": "standard_inspiration — an actual nail look, styled and shot, related to the topic.",
+        "infographic_allowed_when": "Slot 5 needs a genuine shape/length comparison, which the banned_absolutely rule requires to be an infographic rather than a photo comparison.",
+        "banned_absolutely": "NEVER a tool/equipment image. NEVER a photo-style side-by-side nail-to-nail comparison image — comparison must be image_type: infographic.",
+        "note_for_blog_gen": "Blog Gen Agent follows the image_type flagged here exactly per slot — it does not decide standard vs infographic on its own mid-write."
+      },
+      "path_rule": "/images/blog/lollapalooza-nails/filename.webp — no topic_slug segment since this is a standalone/solo-mode post with no topic_slug; slug folder, leading slash"
+    },
+
+    "block_4_opening_technique_assignments": {
+      "rule": "No two consecutive sections use the same technique. Conclusion = Technique 1 or 3 only.",
+      "assignments": [
+        { "section": "Introduction", "technique": "Technique 2 — The Tension (naming the photo-ready-vs-durable conflict)" },
+        { "section": "What Makes Lollapalooza Nails Different", "technique": "Technique 4 — The Reveal (three concrete differences)" },
+        { "section": "Chrome and Metallic Lollapalooza Nail Ideas", "technique": "Technique 1 — The Claim (chrome as the best festival finish)" },
+        { "section": "Neon and Blacklight-Ready Lollapalooza Nail Ideas", "technique": "Technique 3 — The Reframe (neon vs glow-in-the-dark misconception)" },
+        { "section": "Y2K and Aura Lollapalooza Nail Ideas", "technique": "Technique 2 — The Tension (bold vs delicate)" },
+        { "section": "The Best Nail Length and Shape for Lollapalooza", "technique": "Technique 1 — The Claim (shape matters more than design)" },
+        { "section": "Gel, Press-On, or Regular Polish", "technique": "Technique 4 — The Reveal (comparison framework)" },
+        { "section": "How to Prep and Time Your Lollapalooza Nails", "technique": "Technique 3 — The Reframe (timing as protection, not a chore)" },
+        { "section": "Common Lollapalooza Nail Mistakes to Avoid", "technique": "Technique 1 — The Claim (direct list framing)" },
+        { "section": "Conclusion", "technique": "Technique 3 — The Reframe (return to the opening tension, now resolved)" }
+      ],
+      "banned_opener_rule": "Check every opener against banned_opening_approaches in blog gen prompt before writing the second sentence"
+    },
+
+    "block_5_link_placements": {
+      "rule": "Every link placed exactly where specified. Anchor texts used verbatim — never rewritten. Links woven into prose naturally — never standalone CTAs.",
+      "links": [
+        {
+          "anchor_text": "how Coachella nails lean pastel and boho instead of Lollapalooza's bolder palette",
+          "full_url": "/blog/coachella-nails",
+          "place_in_section": "What Makes Lollapalooza Nails Different From Regular Festival Nails",
+          "placement_context": "When contrasting Lollapalooza's bold/rave-adjacent aesthetic against other festivals' looks",
+          "link_type": "cross-site"
+        },
+        {
+          "anchor_text": "more short almond nail inspiration if that ends up being your shape",
+          "full_url": "/blog/short-almond-nails",
+          "place_in_section": "The Best Nail Length and Shape for Lollapalooza",
+          "placement_context": "Immediately after recommending short almond as the top durability/shape pick",
+          "link_type": "cross-site"
+        }
+      ]
+    },
+
+    "block_6_aeo_geo_plan": {
+      "aeo_assignments": [
+        {
+          "aeo_term": "What length should lollapalooza nails be?",
+          "assigned_to_section": "The Best Nail Length and Shape for Lollapalooza",
+          "execution": "Write a direct 2-3 sentence answer paragraph IMMEDIATELY after the H2 heading — before any elaboration."
+        },
+        {
+          "aeo_term": "How long before Lollapalooza should I get my nails done?",
+          "assigned_to_section": "How to Prep and Time Your Lollapalooza Nails",
+          "execution": "Write a direct 2-3 sentence answer paragraph IMMEDIATELY after the H2 heading — before any elaboration."
+        },
+        {
+          "aeo_term": "Are press-on nails good for a music festival?",
+          "assigned_to_section": "Gel, Press-On, or Regular Polish: What Actually Lasts 4 Days",
+          "execution": "Write a direct 2-3 sentence answer paragraph IMMEDIATELY after the H2 heading — before any elaboration."
+        },
+        {
+          "aeo_term": "Do neon nails glow under blacklight at Lollapalooza?",
+          "assigned_to_section": "Neon and Blacklight-Ready Lollapalooza Nail Ideas",
+          "execution": "Write a direct 2-3 sentence answer paragraph IMMEDIATELY after the H2 heading — before any elaboration, clarifying the UV-reactive vs glow-in-the-dark distinction."
+        },
+        {
+          "aeo_term": "What nail shape lasts longest at a festival?",
+          "assigned_to_section": "The Best Nail Length and Shape for Lollapalooza",
+          "execution": "Answer within the section body, directly following the primary AEO answer — short answer: short almond or short squoval."
+        },
+        {
+          "aeo_term": "How do I keep my nails from chipping at a festival?",
+          "assigned_to_section": "Common Lollapalooza Nail Mistakes to Avoid",
+          "execution": "Answer implicitly through the mistakes list, with one explicit sentence naming capped free edges and top coat as the fix."
+        }
+      ],
+      "geo_entity_statements": [
+        {
+          "entity": "Chrome nails",
+          "assigned_to_section": "Chrome and Metallic Lollapalooza Nail Ideas",
+          "execution": "Write a clear declarative definition sentence: chrome nails use a mirror-finish powder buffed over a cured gel base to create a high-shine, light-reflective effect — confident, no hedging."
+        },
+        {
+          "entity": "UV-reactive nail polish",
+          "assigned_to_section": "Neon and Blacklight-Ready Lollapalooza Nail Ideas",
+          "execution": "Write a clear declarative definition distinguishing UV-reactive (glows continuously under blacklight) from glow-in-the-dark (charges in light, fades over minutes)."
+        },
+        {
+          "entity": "Short squoval nail shape",
+          "assigned_to_section": "The Best Nail Length and Shape for Lollapalooza",
+          "execution": "Write a clear declarative definition: a squoval shape is a square nail with softened corners, combining a flat tip with rounded edges for reduced snagging."
+        }
+      ]
+    },
+
+    "block_7_active_constraints": {
+      "em_dash_banned": "Long em dash does not appear anywhere. If one forms while writing — stop, replace with: comma / new sentence / parentheses / but / restructure.",
+      "banned_vocab_watch": [
+        "elevate",
+        "unleash",
+        "game-changer",
+        "must-have",
+        "seamlessly",
+        "effortlessly chic",
+        "in today's world",
+        "when it comes to"
+      ],
+      "american_english_active": "color, recognize, -ize, -or — every instance, no exceptions. This post uses American English, not British.",
+      "keyword_density_reminder": "After every 2 H2 sections — count current keyword mentions. Verify running total is on track to hit 8 total. First half must run denser than second half. Adjust if needed.",
+      "image_path_reminder": "/images/blog/lollapalooza-nails/filename.webp — no topic_slug segment for this standalone post.",
+      "internal_link_url_reminder": "Full correct paths only. Cross-site links = /blog/[slug] as specified above. Never bare /slug without the leading /blog/.",
+      "hero_image_reminder": "Hero = frontmatter only. Never place hero image in body.",
+      "strong_tag_reminder": "Every primary keyword mention = <strong> tags. Scan after every paragraph."
+    }
+  }
+}
