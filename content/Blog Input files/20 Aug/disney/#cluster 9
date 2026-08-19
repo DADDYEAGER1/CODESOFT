@@ -1,0 +1,363 @@
+{
+  "cluster_metadata": {
+    "cluster_topic": "Disney Nails",
+    "topic_slug": "disney-nails",
+    "show_inspo_gallery_link_cluster_default": false,
+    "target_audience": "Global, Tier 1 countries",
+    "total_posts": 9,
+    "intent_breakdown": {
+      "informational": 0,
+      "inspirational": 8,
+      "tutorial": 1,
+      "comparison": 0,
+      "seasonal_trend": 0
+    },
+    "pillar_post_slug": "disney-nails",
+    "created_date": "2026-08-20"
+  },
+
+  "existing_site_posts_excluded": [
+    {
+      "url": "https://mirelleinspo.com/blog/halloween/disney-halloween-nails",
+      "title": "Disney Halloween Nails: 25 Cute & Villain Ideas 2026",
+      "inferred_primary_keyword": "disney halloween nails",
+      "inferred_intent": "inspirational",
+      "exclusion_reason": "Already exists on mirelleinspo.com — keyword reserved. Owns: Mickey/Minnie ghost & pumpkin nails, Disney villains (Maleficent, Ursula, Evil Queen, Cruella), Nightmare Before Christmas, Disney park Halloween events (Not-So-Scary/Oogie Boogie Bash), short Disney Halloween nails, glow-in-the-dark/chrome Disney Halloween nails."
+    }
+  ],
+
+  "posts": [
+    {
+      "post_id": 1,
+      "role": "pillar",
+      "title": "Disney Nails: The Complete Guide to Every Style",
+      "slug": "disney-nails",
+      "primary_keyword": "disney nails",
+      "intent": "inspirational",
+      "search_mode": "inspiration_mode",
+      "suggested_hook_trigger": "Trigger 3 — Specificity/Numbers",
+      "search_demand_signals": [
+        "Amazon: dedicated 'disney nails' product/search category",
+        "Etsy: 'disneyworld nails' market category with bestseller data",
+        "Pinterest: multiple boards with 900+ and 2,113 pins on 'Disney Nails'",
+        "Target: dedicated 'disney nails' shopping category",
+        "Major roundups ranking for this exact term: Green Wedding Shoes (35 designs), Scratch Magazine (44 designs)"
+      ],
+      "why_included": "Broadest, highest search-volume keyword in the topic with demand confirmed across shopping, Pinterest, and editorial sources. Serves as the cluster hub covering technique/style variety at a high level.",
+      "internal_links": {
+        "links_to": [
+          { "slug": "disney-princess-nails", "anchor_text": "Disney princess nail ideas for every character", "type": "spoke" },
+          { "slug": "mickey-mouse-nails", "anchor_text": "Mickey Mouse nail designs beyond the classic silhouette", "type": "spoke" },
+          { "slug": "disney-world-trip-nails", "anchor_text": "Disney World and Disneyland vacation nail ideas", "type": "spoke" },
+          { "slug": "easy-disney-nails-for-beginners", "anchor_text": "easy Disney nails for beginners tutorial", "type": "spoke" },
+          { "slug": "frozen-nails", "anchor_text": "Frozen nails inspired by Elsa, Anna, and Olaf", "type": "spoke" },
+          { "slug": "short-disney-nails", "anchor_text": "short and subtle Disney nail designs", "type": "spoke" },
+          { "slug": "disney-cruise-nails", "anchor_text": "Disney cruise nail ideas for your sailing", "type": "spoke" },
+          { "slug": "stitch-nails", "anchor_text": "Stitch nail art ideas from Lilo & Stitch", "type": "spoke" }
+        ],
+        "receives_links_from": [
+          { "slug": "disney-princess-nails", "anchor_text": "disney nails" },
+          { "slug": "mickey-mouse-nails", "anchor_text": "disney nails" },
+          { "slug": "disney-world-trip-nails", "anchor_text": "disney nails" },
+          { "slug": "easy-disney-nails-for-beginners", "anchor_text": "disney nails" },
+          { "slug": "frozen-nails", "anchor_text": "disney nails" },
+          { "slug": "short-disney-nails", "anchor_text": "disney nails" },
+          { "slug": "disney-cruise-nails", "anchor_text": "disney nails" },
+          { "slug": "stitch-nails", "anchor_text": "disney nails" }
+        ]
+      },
+      "status": "approved"
+    },
+    {
+      "post_id": 2,
+      "role": "spoke",
+      "title": "Disney Princess Nails: Ideas for Every Princess",
+      "slug": "disney-princess-nails",
+      "primary_keyword": "disney princess nails",
+      "intent": "inspirational",
+      "search_mode": "inspiration_mode",
+      "suggested_hook_trigger": "Trigger 3 — Specificity/Numbers",
+      "search_demand_signals": [
+        "Picture the Magic: dedicated '30+ Disney Princess Nail Designs' roundup",
+        "The Catalog by Celine: '25 Disney Princess Nail Ideas' roundup",
+        "Kreafolk: dedicated princess color-palette breakdown by character",
+        "disneywithdavesdaughters.com: '35 Classy Disney Princess Nails' roundup",
+        "Pinterest: dedicated 'princess nail art' boards with per-princess sub-tags (Jasmine, Moana, Pocahontas, Mulan)"
+      ],
+      "why_included": "Standalone, high-volume demand validated on 4+ independent editorial sources plus Pinterest. Not covered by the existing Halloween post (which only covers villains, not princesses).",
+      "internal_links": {
+        "links_to": [
+          { "slug": "disney-nails", "anchor_text": "the complete Disney nails guide", "type": "pillar" },
+          { "slug": "frozen-nails", "anchor_text": "Frozen nails inspired by Elsa and Anna", "type": "spoke" },
+          { "slug": "disney-world-trip-nails", "anchor_text": "Disney World vacation nail ideas", "type": "spoke" },
+          { "slug": "short-disney-nails", "anchor_text": "short and subtle Disney nail designs", "type": "spoke" }
+        ],
+        "receives_links_from": [
+          { "slug": "disney-nails", "anchor_text": "Disney princess nail ideas for every character" },
+          { "slug": "frozen-nails", "anchor_text": "Disney princess nail ideas" },
+          { "slug": "disney-world-trip-nails", "anchor_text": "Disney princess nail ideas" }
+        ]
+      },
+      "status": "approved"
+    },
+    {
+      "post_id": 3,
+      "role": "spoke",
+      "title": "Mickey Mouse Nails: Ideas Beyond the Classic Silhouette",
+      "slug": "mickey-mouse-nails",
+      "primary_keyword": "mickey mouse nails",
+      "intent": "inspirational",
+      "search_mode": "inspiration_mode",
+      "suggested_hook_trigger": "Trigger 3 — Specificity/Numbers",
+      "search_demand_signals": [
+        "Kreafolk: dedicated '30 Best Mickey Mouse Nail Design Ideas' roundup",
+        "NailDesignsJournal: dedicated Mickey/Minnie tutorial roundup",
+        "Picture the Magic: '30+ Awesome Mickey Mouse Nail Designs' roundup",
+        "Scratch Magazine: dedicated Mickey & Minnie nail art feature",
+        "Pinterest: 87+ pin dedicated 'MICKEY NAILS' board"
+      ],
+      "why_included": "Character-specific evergreen demand validated across 4+ sources. Existing site post only covers Mickey within a Halloween ghost/pumpkin context — this post covers the character year-round across non-Halloween palettes and occasions.",
+      "internal_links": {
+        "links_to": [
+          { "slug": "disney-nails", "anchor_text": "the complete Disney nails guide", "type": "pillar" },
+          { "slug": "easy-disney-nails-for-beginners", "anchor_text": "easy Disney nails for beginners tutorial", "type": "spoke" },
+          { "slug": "short-disney-nails", "anchor_text": "short and subtle Disney nail designs", "type": "spoke" },
+          { "slug": "disney-world-trip-nails", "anchor_text": "Disney World vacation nail ideas", "type": "spoke" }
+        ],
+        "receives_links_from": [
+          { "slug": "disney-nails", "anchor_text": "Mickey Mouse nail designs beyond the classic silhouette" },
+          { "slug": "easy-disney-nails-for-beginners", "anchor_text": "Mickey Mouse nail ideas" },
+          { "slug": "short-disney-nails", "anchor_text": "Mickey Mouse nail designs" }
+        ]
+      },
+      "status": "approved"
+    },
+    {
+      "post_id": 4,
+      "role": "spoke",
+      "title": "Disney World & Disneyland Trip Nails: What to Wear on Your Vacation",
+      "slug": "disney-world-trip-nails",
+      "primary_keyword": "disney world nails",
+      "intent": "inspirational",
+      "search_mode": "inspiration_mode",
+      "suggested_hook_trigger": "Trigger 2 — FOMO/Trend",
+      "search_demand_signals": [
+        "JustBrightIdeas: two dedicated roundups ('18 Disney Nails Ideas' and 'Magical Nail Ideas for Disney World')",
+        "Lifestyle with Leah: '27 Easy Disney Nail Ideas for Your Next Disney Inspired Nail Designs' (trip-framed)",
+        "Moms with Mouse Ears: 'Best Disney World Nail Designs' dedicated roundup",
+        "TikTok: multiple trip-prep videos ('cute simple Disney nails in preparation to my Disneyworld trip')"
+      ],
+      "why_included": "Clear occasion-based search demand tied to trip planning, validated across 4+ sources. Distinct from the existing Halloween post's park-event coverage (Not-So-Scary/Oogie Boogie Bash), which is seasonal and costume-specific rather than general trip prep.",
+      "internal_links": {
+        "links_to": [
+          { "slug": "disney-nails", "anchor_text": "the complete Disney nails guide", "type": "pillar" },
+          { "slug": "mickey-mouse-nails", "anchor_text": "Mickey Mouse nail designs beyond the classic silhouette", "type": "spoke" },
+          { "slug": "disney-princess-nails", "anchor_text": "Disney princess nail ideas for every character", "type": "spoke" },
+          { "slug": "disney-cruise-nails", "anchor_text": "Disney cruise nail ideas for your sailing", "type": "spoke" }
+        ],
+        "receives_links_from": [
+          { "slug": "disney-nails", "anchor_text": "Disney World and Disneyland vacation nail ideas" },
+          { "slug": "mickey-mouse-nails", "anchor_text": "Disney World vacation nail ideas" },
+          { "slug": "disney-princess-nails", "anchor_text": "Disney World vacation nail ideas" }
+        ]
+      },
+      "status": "approved"
+    },
+    {
+      "post_id": 5,
+      "role": "spoke",
+      "title": "Easy Disney Nails for Beginners: Step-by-Step at Home",
+      "slug": "easy-disney-nails-for-beginners",
+      "primary_keyword": "easy disney nails for beginners",
+      "intent": "tutorial",
+      "search_mode": "how_to_execution_mode",
+      "suggested_hook_trigger": "Trigger 1 — Curiosity Gap",
+      "search_demand_signals": [
+        "Pinterest: dedicated 'Easy Disney Nails for Beginners' idea board",
+        "TikTok: multiple beginner tutorials (Tinker Bell short-nail tutorial, Buzz Lightyear step-by-step)",
+        "YouTube: 'EASY DISNEY NAIL ART TUTORIAL | SHORT NAILS' dedicated video",
+        "Mommy Travels: dedicated step-by-step Mickey Mouse nail tutorial blog post",
+        "NailDesignsJournal: dedicated beginner tutorial roundup with numbered steps"
+      ],
+      "why_included": "Clear how-to search intent validated across YouTube, TikTok, Pinterest, and blog tutorial content — real people searching for step-by-step execution, not just inspiration.",
+      "internal_links": {
+        "links_to": [
+          { "slug": "disney-nails", "anchor_text": "the complete Disney nails guide", "type": "pillar" },
+          { "slug": "mickey-mouse-nails", "anchor_text": "Mickey Mouse nail design ideas", "type": "spoke" },
+          { "slug": "short-disney-nails", "anchor_text": "short and subtle Disney nail designs", "type": "spoke" },
+          { "slug": "stitch-nails", "anchor_text": "Stitch nail art ideas from Lilo & Stitch", "type": "spoke" }
+        ],
+        "receives_links_from": [
+          { "slug": "disney-nails", "anchor_text": "easy Disney nails for beginners tutorial" },
+          { "slug": "mickey-mouse-nails", "anchor_text": "easy Disney nails for beginners tutorial" },
+          { "slug": "stitch-nails", "anchor_text": "easy Disney nail tutorial for beginners" }
+        ]
+      },
+      "status": "approved"
+    },
+    {
+      "post_id": 6,
+      "role": "spoke",
+      "title": "Frozen Nails: Elsa, Anna & Olaf Ideas",
+      "slug": "frozen-nails",
+      "primary_keyword": "frozen nails",
+      "intent": "inspirational",
+      "search_mode": "aesthetic_identity_mode",
+      "suggested_hook_trigger": "Trigger 4 — Identity Mirroring",
+      "search_demand_signals": [
+        "Sarah Scoop: dedicated '55+ Best Frozen Nail Ideas' roundup",
+        "EverythingMouse: 'Top 10 Disney Frozen Nail Art Ideas' dedicated post",
+        "iwantthosenails.com: '50 Frozen Inspired Nail Design Ideas' roundup",
+        "Etsy: dedicated 'elsa frozen nails' product category",
+        "Pinterest: dedicated Frozen nails boards with character-specific sub-tags (Anna, Elsa, Olaf)"
+      ],
+      "why_included": "Massive standalone sub-franchise demand validated across 4+ independent sources plus a dedicated Etsy product category. Distinct character set, color palette (icy blue/purple), and aesthetic identity from core Disney content.",
+      "internal_links": {
+        "links_to": [
+          { "slug": "disney-nails", "anchor_text": "the complete Disney nails guide", "type": "pillar" },
+          { "slug": "disney-princess-nails", "anchor_text": "Disney princess nail ideas for every character", "type": "spoke" },
+          { "slug": "disney-world-trip-nails", "anchor_text": "Disney World vacation nail ideas", "type": "spoke" },
+          { "slug": "short-disney-nails", "anchor_text": "short and subtle Disney nail designs", "type": "spoke" }
+        ],
+        "receives_links_from": [
+          { "slug": "disney-nails", "anchor_text": "Frozen nails inspired by Elsa, Anna, and Olaf" },
+          { "slug": "disney-princess-nails", "anchor_text": "Frozen nails inspired by Elsa and Anna" }
+        ]
+      },
+      "status": "approved"
+    },
+    {
+      "post_id": 7,
+      "role": "spoke",
+      "title": "Short & Subtle Disney Nails",
+      "slug": "short-disney-nails",
+      "primary_keyword": "short disney nails",
+      "intent": "inspirational",
+      "search_mode": "inspiration_mode",
+      "suggested_hook_trigger": "Trigger 3 — Specificity/Numbers",
+      "search_demand_signals": [
+        "Pinterest: multiple dedicated boards (Short Coffin Disney Nails, Short Almond Disney Nails, Almond Disney Nails, Disney Nails Short)",
+        "TikTok: 'Easy Disney Nail Ideas for Short Nails' dedicated content with tutorial breakdown",
+        "TikTok: 'Disneyland Nail Vlog | Nail Inspo for Disney | Simple Disney Nails | Short Acrylic Square Nails'"
+      ],
+      "why_included": "Distinct shape/length-driven demand validated on multiple Pinterest boards and TikTok. The existing Halloween post's short-nails coverage is scoped specifically to Halloween silhouettes (Mickey ghost, pumpkin) — this post covers short Disney nails across all non-Halloween occasions and characters.",
+      "internal_links": {
+        "links_to": [
+          { "slug": "disney-nails", "anchor_text": "the complete Disney nails guide", "type": "pillar" },
+          { "slug": "mickey-mouse-nails", "anchor_text": "Mickey Mouse nail design ideas", "type": "spoke" },
+          { "slug": "easy-disney-nails-for-beginners", "anchor_text": "easy Disney nails for beginners tutorial", "type": "spoke" },
+          { "slug": "frozen-nails", "anchor_text": "Frozen nails inspired by Elsa and Anna", "type": "spoke" }
+        ],
+        "receives_links_from": [
+          { "slug": "disney-nails", "anchor_text": "short and subtle Disney nail designs" },
+          { "slug": "mickey-mouse-nails", "anchor_text": "short and subtle Disney nail designs" },
+          { "slug": "easy-disney-nails-for-beginners", "anchor_text": "short and subtle Disney nail designs" },
+          { "slug": "frozen-nails", "anchor_text": "short and subtle Disney nail designs" },
+          { "slug": "disney-princess-nails", "anchor_text": "short and subtle Disney nail designs" }
+        ]
+      },
+      "status": "approved"
+    },
+    {
+      "post_id": 8,
+      "role": "spoke",
+      "title": "Disney Cruise Nails: Nautical & Character Looks for Your Sailing",
+      "slug": "disney-cruise-nails",
+      "primary_keyword": "disney cruise nails",
+      "intent": "inspirational",
+      "search_mode": "inspiration_mode",
+      "suggested_hook_trigger": "Trigger 2 — FOMO/Trend",
+      "search_demand_signals": [
+        "Melissa Jane Lee: dedicated '20 Disney Cruise Nails Perfect for Your Vacation at Sea' roundup",
+        "TikTok: multiple dedicated cruise nail videos (couples, mother-daughter, first-cruise prep)",
+        "Etsy: dedicated 'Disney Cruise Nails' press-on and decal product listings",
+        "Pinterest: dedicated Disney Cruise Nails and Disney Cruise Pedicure boards"
+      ],
+      "why_included": "Clear occasion-based demand distinct from general park trips — nautical motifs (anchors, ship-specific theming) and cruise-specific durability/pedicure angles validated across 4+ sources.",
+      "internal_links": {
+        "links_to": [
+          { "slug": "disney-nails", "anchor_text": "the complete Disney nails guide", "type": "pillar" },
+          { "slug": "disney-world-trip-nails", "anchor_text": "Disney World and Disneyland vacation nail ideas", "type": "spoke" },
+          { "slug": "mickey-mouse-nails", "anchor_text": "Mickey Mouse nail design ideas", "type": "spoke" },
+          { "slug": "stitch-nails", "anchor_text": "Stitch nail art ideas from Lilo & Stitch", "type": "spoke" }
+        ],
+        "receives_links_from": [
+          { "slug": "disney-nails", "anchor_text": "Disney cruise nail ideas for your sailing" },
+          { "slug": "disney-world-trip-nails", "anchor_text": "Disney cruise nail ideas for your sailing" }
+        ]
+      },
+      "status": "approved"
+    },
+    {
+      "post_id": 9,
+      "role": "spoke",
+      "title": "Stitch Nails: Lilo & Stitch Nail Art Ideas",
+      "slug": "stitch-nails",
+      "primary_keyword": "stitch nails",
+      "intent": "inspirational",
+      "search_mode": "inspiration_mode",
+      "suggested_hook_trigger": "Trigger 2 — FOMO/Trend",
+      "search_demand_signals": [
+        "Pinterest: dedicated 'Stitch Nail Ideas' board with '2k people searched' recency signal",
+        "TikTok: high volume of dedicated tutorials (gel, press-on, kid-friendly, beginner) across multiple creators",
+        "Pinterest: dedicated 'Lilo and Stitch Nail Art' and 'Lilo and Stitch Nails Easy' boards"
+      ],
+      "why_included": "Currently-rising character-specific demand with strong tutorial and inspiration content validated across Pinterest and TikTok. Not covered anywhere on the existing site.",
+      "internal_links": {
+        "links_to": [
+          { "slug": "disney-nails", "anchor_text": "the complete Disney nails guide", "type": "pillar" },
+          { "slug": "easy-disney-nails-for-beginners", "anchor_text": "easy Disney nails for beginners tutorial", "type": "spoke" },
+          { "slug": "disney-cruise-nails", "anchor_text": "Disney cruise nail ideas for your sailing", "type": "spoke" },
+          { "slug": "short-disney-nails", "anchor_text": "short and subtle Disney nail designs", "type": "spoke" }
+        ],
+        "receives_links_from": [
+          { "slug": "disney-nails", "anchor_text": "Stitch nail art ideas from Lilo & Stitch" },
+          { "slug": "easy-disney-nails-for-beginners", "anchor_text": "Stitch nail art ideas from Lilo & Stitch" },
+          { "slug": "disney-cruise-nails", "anchor_text": "Stitch nail art ideas from Lilo & Stitch" }
+        ]
+      },
+      "status": "approved"
+    }
+  ],
+
+  "keyword_ownership_registry": {
+    "description": "Master list of all primary keywords — one per post, no overlaps, includes existing site posts",
+    "entries": [
+      { "primary_keyword": "disney halloween nails", "owned_by_slug": "disney-halloween-nails", "owned_by_title": "Disney Halloween Nails: 25 Cute & Villain Ideas 2026", "source": "existing site post" },
+      { "primary_keyword": "disney nails", "owned_by_slug": "disney-nails", "owned_by_title": "Disney Nails: The Complete Guide to Every Style", "source": "new post" },
+      { "primary_keyword": "disney princess nails", "owned_by_slug": "disney-princess-nails", "owned_by_title": "Disney Princess Nails: Ideas for Every Princess", "source": "new post" },
+      { "primary_keyword": "mickey mouse nails", "owned_by_slug": "mickey-mouse-nails", "owned_by_title": "Mickey Mouse Nails: Ideas Beyond the Classic Silhouette", "source": "new post" },
+      { "primary_keyword": "disney world nails", "owned_by_slug": "disney-world-trip-nails", "owned_by_title": "Disney World & Disneyland Trip Nails: What to Wear on Your Vacation", "source": "new post" },
+      { "primary_keyword": "easy disney nails for beginners", "owned_by_slug": "easy-disney-nails-for-beginners", "owned_by_title": "Easy Disney Nails for Beginners: Step-by-Step at Home", "source": "new post" },
+      { "primary_keyword": "frozen nails", "owned_by_slug": "frozen-nails", "owned_by_title": "Frozen Nails: Elsa, Anna & Olaf Ideas", "source": "new post" },
+      { "primary_keyword": "short disney nails", "owned_by_slug": "short-disney-nails", "owned_by_title": "Short & Subtle Disney Nails", "source": "new post" },
+      { "primary_keyword": "disney cruise nails", "owned_by_slug": "disney-cruise-nails", "owned_by_title": "Disney Cruise Nails: Nautical & Character Looks for Your Sailing", "source": "new post" },
+      { "primary_keyword": "stitch nails", "owned_by_slug": "stitch-nails", "owned_by_title": "Stitch Nails: Lilo & Stitch Nail Art Ideas", "source": "new post" }
+    ]
+  },
+
+  "merged_posts_log": [],
+
+  "killed_posts_log": [
+    {
+      "topic": "Disney villain nails (general, non-Halloween)",
+      "reason": "Existing post conflict — already owned by disney-halloween-nails (Maleficent, Ursula, Evil Queen, Cruella covered there)"
+    },
+    {
+      "topic": "Nightmare Before Christmas nails",
+      "reason": "Existing post conflict — already owned by disney-halloween-nails"
+    },
+    {
+      "topic": "Disney park Halloween event nails (Mickey's Not-So-Scary, Oogie Boogie Bash)",
+      "reason": "Existing post conflict — already owned by disney-halloween-nails"
+    },
+    {
+      "topic": "Best Disney nail decals/stickers products roundup",
+      "reason": "Transactional intent — this site does not target purchase-intent queries"
+    },
+    {
+      "topic": "General Pixar character nails (Toy Story, Finding Nemo) as standalone post",
+      "reason": "No demand signal distinct enough from existing angles to justify a standalone post on 2+ independent sources; insufficient to clear the generic-angle-with-no-specific-query kill rule as its own post"
+    }
+  ]
+}
