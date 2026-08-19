@@ -1,0 +1,387 @@
+{
+  "cluster_metadata": {
+    "cluster_topic": "Stiletto Nails",
+    "topic_slug": "stiletto-nails",
+    "show_inspo_gallery_link_cluster_default": false,
+    "target_audience": "Global, Tier 1 countries",
+    "total_posts": 10,
+    "intent_breakdown": {
+      "informational": 2,
+      "inspirational": 5,
+      "tutorial": 1,
+      "comparison": 2,
+      "seasonal_trend": 0
+    },
+    "pillar_post_slug": "stiletto-nails-guide",
+    "created_date": "2026-08-20"
+  },
+
+  "existing_site_posts_excluded": [
+    {
+      "url": "https://mirelleinspo.com/blog/nail-shapes/short-stiletto-nails",
+      "title": "Short Stiletto Nails: 2026's Boldest Trend Right Now",
+      "inferred_primary_keyword": "short stiletto nails",
+      "inferred_intent": "seasonal_trend",
+      "exclusion_reason": "Already exists on mirelleinspo.com — keyword reserved"
+    }
+  ],
+
+  "posts": [
+    {
+      "post_id": 1,
+      "role": "pillar",
+      "title": "Stiletto Nails: The Complete Guide to Shapes, Lengths & Ideas",
+      "slug": "stiletto-nails-guide",
+      "primary_keyword": "stiletto nails ideas",
+      "intent": "inspirational",
+      "search_mode": "inspiration_mode",
+      "suggested_hook_trigger": "Trigger 3 — Specificity/Numbers",
+      "search_demand_signals": [
+        "Pinterest: multiple boards with 900+ to 3,800+ pins on 'Stiletto Nails'",
+        "NailBold/NewBeauty: dedicated 2026 roundup guides with shape comparisons and skin-tone matches",
+        "YouTube: multiple high-view tutorial and inspiration videos"
+      ],
+      "why_included": "Broadest, highest-volume query in the cluster; existing site post only covers the short variant, leaving the general/comprehensive stiletto nails term unclaimed.",
+      "internal_links": {
+        "links_to": [
+          { "slug": "stiletto-vs-almond-nails", "anchor_text": "stiletto vs almond nails comparison", "type": "spoke" },
+          { "slug": "coffin-vs-stiletto-nails", "anchor_text": "coffin vs stiletto nails differences", "type": "spoke" },
+          { "slug": "how-to-do-stiletto-nails-at-home", "anchor_text": "how to do stiletto nails at home", "type": "spoke" },
+          { "slug": "stiletto-nails-keep-breaking", "anchor_text": "why stiletto nails keep breaking and how to stop it", "type": "spoke" },
+          { "slug": "stiletto-wedding-nails", "anchor_text": "stiletto nails for your wedding day", "type": "spoke" },
+          { "slug": "halloween-stiletto-nails", "anchor_text": "halloween stiletto nail designs", "type": "spoke" },
+          { "slug": "stiletto-french-tip-nails", "anchor_text": "stiletto french tip nail designs", "type": "spoke" },
+          { "slug": "gothic-stiletto-nails", "anchor_text": "gothic and dark stiletto nail designs", "type": "spoke" },
+          { "slug": "stiletto-nails-dark-skin-tones", "anchor_text": "stiletto nail colors for deeper skin tones", "type": "spoke" }
+        ],
+        "receives_links_from": [
+          { "slug": "stiletto-vs-almond-nails", "anchor_text": "stiletto nails ideas" },
+          { "slug": "coffin-vs-stiletto-nails", "anchor_text": "stiletto nails ideas" },
+          { "slug": "how-to-do-stiletto-nails-at-home", "anchor_text": "stiletto nails ideas" },
+          { "slug": "stiletto-nails-keep-breaking", "anchor_text": "stiletto nails ideas" },
+          { "slug": "stiletto-wedding-nails", "anchor_text": "stiletto nails ideas" },
+          { "slug": "halloween-stiletto-nails", "anchor_text": "stiletto nails ideas" },
+          { "slug": "stiletto-french-tip-nails", "anchor_text": "stiletto nails ideas" },
+          { "slug": "gothic-stiletto-nails", "anchor_text": "stiletto nails ideas" },
+          { "slug": "stiletto-nails-dark-skin-tones", "anchor_text": "stiletto nails ideas" }
+        ]
+      },
+      "status": "approved"
+    },
+    {
+      "post_id": 2,
+      "role": "spoke",
+      "title": "Stiletto vs Almond Nails: Which Shape Actually Fits You",
+      "slug": "stiletto-vs-almond-nails",
+      "primary_keyword": "stiletto vs almond nails",
+      "intent": "comparison",
+      "search_mode": "decision_mode",
+      "suggested_hook_trigger": "Trigger 1 — Curiosity Gap",
+      "search_demand_signals": [
+        "TikTok Shop: two separate AI-generated comparison panels for 'stiletto nails vs almond nails' and 'stiletto vs almond shaped nails'",
+        "Lemon8: dedicated guide 'Stiletto vs. Almond Nails: My Guide to Choosing Your Perfect Pink Shape'",
+        "stilettowoman.com: dedicated comparison article"
+      ],
+      "why_included": "High-frequency decision-stage comparison query validated across 4 independent sources; no existing post covers this pairing.",
+      "internal_links": {
+        "links_to": [
+          { "slug": "stiletto-nails-guide", "anchor_text": "stiletto nails ideas", "type": "pillar" },
+          { "slug": "coffin-vs-stiletto-nails", "anchor_text": "coffin vs stiletto nails differences", "type": "spoke" },
+          { "slug": "stiletto-nails-keep-breaking", "anchor_text": "why stiletto nails keep breaking", "type": "spoke" },
+          { "slug": "how-to-do-stiletto-nails-at-home", "anchor_text": "how to do stiletto nails at home", "type": "spoke" }
+        ],
+        "receives_links_from": [
+          { "slug": "stiletto-nails-guide", "anchor_text": "stiletto vs almond nails comparison" },
+          { "slug": "coffin-vs-stiletto-nails", "anchor_text": "stiletto vs almond nails" },
+          { "slug": "stiletto-nails-keep-breaking", "anchor_text": "stiletto vs almond nails durability comparison" }
+        ]
+      },
+      "status": "approved"
+    },
+    {
+      "post_id": 3,
+      "role": "spoke",
+      "title": "Coffin vs Stiletto Nails: The Real Differences",
+      "slug": "coffin-vs-stiletto-nails",
+      "primary_keyword": "coffin vs stiletto nails",
+      "intent": "comparison",
+      "search_mode": "decision_mode",
+      "suggested_hook_trigger": "Trigger 1 — Curiosity Gap",
+      "search_demand_signals": [
+        "nailark.com: dedicated side-by-side comparison page with 480+ design photos",
+        "stilettowoman.com: dedicated 'Coffin vs Stiletto Nails — Differences and When To Wear Them' article",
+        "Lemon8: dedicated guide 'Coffin Nails vs Stiletto Nails: Key Differences, Pros/Cons'"
+      ],
+      "why_included": "Distinct comparison pair from almond, validated on 3+ dedicated comparison pages with real search demand.",
+      "internal_links": {
+        "links_to": [
+          { "slug": "stiletto-nails-guide", "anchor_text": "stiletto nails ideas", "type": "pillar" },
+          { "slug": "stiletto-vs-almond-nails", "anchor_text": "stiletto vs almond nails comparison", "type": "spoke" },
+          { "slug": "stiletto-nails-keep-breaking", "anchor_text": "why stiletto nails keep breaking", "type": "spoke" },
+          { "slug": "how-to-do-stiletto-nails-at-home", "anchor_text": "how to do stiletto nails at home", "type": "spoke" }
+        ],
+        "receives_links_from": [
+          { "slug": "stiletto-nails-guide", "anchor_text": "coffin vs stiletto nails differences" },
+          { "slug": "stiletto-vs-almond-nails", "anchor_text": "coffin vs stiletto nails differences" }
+        ]
+      },
+      "status": "approved"
+    },
+    {
+      "post_id": 4,
+      "role": "spoke",
+      "title": "How to Get Stiletto Nails at Home (No Salon Required)",
+      "slug": "how-to-do-stiletto-nails-at-home",
+      "primary_keyword": "how to do stiletto nails at home",
+      "intent": "tutorial",
+      "search_mode": "how_to_execution_mode",
+      "suggested_hook_trigger": "Trigger 3 — Specificity",
+      "search_demand_signals": [
+        "Bustle: dedicated tutorial 'How To Do Stiletto Nails & Create Your Perfect Nail Look'",
+        "SheKnows: dedicated DIY guide 'DIY stiletto nails without acrylic'",
+        "YouTube: multiple high-view step-by-step tutorials; TikTok shaping tutorials from professional nail accounts"
+      ],
+      "why_included": "Clear how-to execution demand across blogs and video platforms; distinct scope from existing short-stiletto post, which doesn't teach shaping technique.",
+      "internal_links": {
+        "links_to": [
+          { "slug": "stiletto-nails-guide", "anchor_text": "stiletto nails ideas", "type": "pillar" },
+          { "slug": "stiletto-nails-keep-breaking", "anchor_text": "why stiletto nails keep breaking", "type": "spoke" },
+          { "slug": "stiletto-vs-almond-nails", "anchor_text": "stiletto vs almond nails comparison", "type": "spoke" },
+          { "slug": "coffin-vs-stiletto-nails", "anchor_text": "coffin vs stiletto nails differences", "type": "spoke" }
+        ],
+        "receives_links_from": [
+          { "slug": "stiletto-nails-guide", "anchor_text": "how to do stiletto nails at home" },
+          { "slug": "stiletto-vs-almond-nails", "anchor_text": "how to do stiletto nails at home" },
+          { "slug": "coffin-vs-stiletto-nails", "anchor_text": "how to do stiletto nails at home" }
+        ]
+      },
+      "status": "approved"
+    },
+    {
+      "post_id": 5,
+      "role": "spoke",
+      "title": "Why Your Stiletto Nails Keep Breaking (And How to Stop It)",
+      "slug": "stiletto-nails-keep-breaking",
+      "primary_keyword": "stiletto nails keep breaking",
+      "intent": "informational",
+      "search_mode": "decision_mode",
+      "suggested_hook_trigger": "Trigger 1 — Curiosity Gap",
+      "search_demand_signals": [
+        "TheNailDrop: dedicated troubleshooting post 'Stuck on Your Stiletto Nails Tutorial? Try This Reframe'",
+        "latestnailideas.com: dedicated strength guide 'How to Keep Long Stiletto Nails from Breaking'",
+        "Nailicy: dedicated risk/durability article 'Stiletto Nails: Stylish Or Unsafe?'"
+      ],
+      "why_included": "Real recurring frustration query with dedicated troubleshooting articles on 3+ independent sites.",
+      "internal_links": {
+        "links_to": [
+          { "slug": "stiletto-nails-guide", "anchor_text": "stiletto nails ideas", "type": "pillar" },
+          { "slug": "how-to-do-stiletto-nails-at-home", "anchor_text": "how to do stiletto nails at home", "type": "spoke" },
+          { "slug": "stiletto-vs-almond-nails", "anchor_text": "stiletto vs almond nails durability comparison", "type": "spoke" },
+          { "slug": "coffin-vs-stiletto-nails", "anchor_text": "coffin vs stiletto nails differences", "type": "spoke" }
+        ],
+        "receives_links_from": [
+          { "slug": "stiletto-nails-guide", "anchor_text": "why stiletto nails keep breaking and how to stop it" },
+          { "slug": "stiletto-vs-almond-nails", "anchor_text": "why stiletto nails keep breaking" },
+          { "slug": "coffin-vs-stiletto-nails", "anchor_text": "why stiletto nails keep breaking" },
+          { "slug": "how-to-do-stiletto-nails-at-home", "anchor_text": "why stiletto nails keep breaking" }
+        ]
+      },
+      "status": "approved"
+    },
+    {
+      "post_id": 6,
+      "role": "spoke",
+      "title": "Stiletto Nails for Your Wedding Day: Bridal Design Ideas",
+      "slug": "stiletto-wedding-nails",
+      "primary_keyword": "stiletto wedding nails",
+      "intent": "inspirational",
+      "search_mode": "inspiration_mode",
+      "suggested_hook_trigger": "Trigger 2 — FOMO/Trend",
+      "search_demand_signals": [
+        "Bridesmaid for Hire: dedicated page 'Stiletto Nails for Your Special Day' with 25 curated bridal designs",
+        "WeddingForward: dedicated guide 'Stiletto Wedding Nails: Trendy Designs for a Chic Bridal Look'",
+        "Etsy: dedicated 'stiletto wedding nails' market category with strong listing volume"
+      ],
+      "why_included": "Distinct occasion-based demand validated across dedicated bridal-nail guides and marketplace category volume.",
+      "internal_links": {
+        "links_to": [
+          { "slug": "stiletto-nails-guide", "anchor_text": "stiletto nails ideas", "type": "pillar" },
+          { "slug": "stiletto-french-tip-nails", "anchor_text": "stiletto french tip nail designs", "type": "spoke" },
+          { "slug": "stiletto-nails-dark-skin-tones", "anchor_text": "stiletto nail colors for deeper skin tones", "type": "spoke" }
+        ],
+        "receives_links_from": [
+          { "slug": "stiletto-nails-guide", "anchor_text": "stiletto nails for your wedding day" },
+          { "slug": "stiletto-french-tip-nails", "anchor_text": "stiletto wedding nails" }
+        ]
+      },
+      "status": "approved"
+    },
+    {
+      "post_id": 7,
+      "role": "spoke",
+      "title": "Halloween Stiletto Nail Designs That Aren't Basic",
+      "slug": "halloween-stiletto-nails",
+      "primary_keyword": "halloween stiletto nails",
+      "intent": "inspirational",
+      "search_mode": "inspiration_mode",
+      "suggested_hook_trigger": "Trigger 2 — FOMO/Trend",
+      "search_demand_signals": [
+        "BTArtbox: dedicated product collection plus blog post 'Spooktacular Halloween Stiletto Nail Designs'",
+        "RainyRoses: dedicated post '5 Short Stiletto Halloween Nail Designs'",
+        "TikTok: dedicated discover page 'Halloween Stiletto Nail Designs' with high-engagement videos"
+      ],
+      "why_included": "Strong seasonal spike demand confirmed across blog and TikTok discover-page signals.",
+      "internal_links": {
+        "links_to": [
+          { "slug": "stiletto-nails-guide", "anchor_text": "stiletto nails ideas", "type": "pillar" },
+          { "slug": "gothic-stiletto-nails", "anchor_text": "gothic and dark stiletto nail designs", "type": "spoke" },
+          { "slug": "stiletto-french-tip-nails", "anchor_text": "stiletto french tip nail designs", "type": "spoke" }
+        ],
+        "receives_links_from": [
+          { "slug": "stiletto-nails-guide", "anchor_text": "halloween stiletto nail designs" },
+          { "slug": "gothic-stiletto-nails", "anchor_text": "halloween stiletto nail designs" }
+        ]
+      },
+      "status": "approved"
+    },
+    {
+      "post_id": 8,
+      "role": "spoke",
+      "title": "Stiletto French Tip Nails: The Sharpest Way to Wear a Classic",
+      "slug": "stiletto-french-tip-nails",
+      "primary_keyword": "stiletto french tip nails",
+      "intent": "inspirational",
+      "search_mode": "inspiration_mode",
+      "suggested_hook_trigger": "Trigger 3 — Specificity",
+      "search_demand_signals": [
+        "Accio: dedicated 2026 trend piece '11 Stunning Stiletto French Tip Nail Designs You'll See Everywhere in 2026' covering the V-cut silhouette shift",
+        "Salon 1150: dedicated 'V-Cut French Tip Nail Designs' guide referencing stiletto shape explicitly",
+        "latestnailideas.com: dedicated guide '30+ Cute Long Stiletto Nails Trendy French Tip Nail Designs'"
+      ],
+      "why_included": "Technique-specific angle with strong, dated 2026 trend coverage (V-cut silhouette, chrome French) distinct from generic French tip content.",
+      "internal_links": {
+        "links_to": [
+          { "slug": "stiletto-nails-guide", "anchor_text": "stiletto nails ideas", "type": "pillar" },
+          { "slug": "stiletto-wedding-nails", "anchor_text": "stiletto wedding nails", "type": "spoke" },
+          { "slug": "stiletto-nails-dark-skin-tones", "anchor_text": "stiletto nail colors for deeper skin tones", "type": "spoke" },
+          { "slug": "halloween-stiletto-nails", "anchor_text": "halloween stiletto nail designs", "type": "spoke" }
+        ],
+        "receives_links_from": [
+          { "slug": "stiletto-nails-guide", "anchor_text": "stiletto french tip nail designs" },
+          { "slug": "stiletto-wedding-nails", "anchor_text": "stiletto french tip nail designs" },
+          { "slug": "halloween-stiletto-nails", "anchor_text": "stiletto french tip nail designs" }
+        ]
+      },
+      "status": "approved"
+    },
+    {
+      "post_id": 9,
+      "role": "spoke",
+      "title": "Gothic & Dark Stiletto Nail Designs",
+      "slug": "gothic-stiletto-nails",
+      "primary_keyword": "gothic stiletto nails",
+      "intent": "inspirational",
+      "search_mode": "aesthetic_identity_mode",
+      "suggested_hook_trigger": "Trigger 4 — Identity Mirroring",
+      "search_demand_signals": [
+        "Polish and Pearls: dedicated guide '25 Striking Stiletto Nail Designs for the Dark and Daring Gothic Glam'",
+        "naildesignsjournal.com: dedicated post 'Black Stiletto Nails Are Hot Trend'",
+        "TikTok: multiple dedicated discover pages ('Gothic Black Stiletto Nails', 'Gothic Black Stiletto Vampire Nail Aesthetic')"
+      ],
+      "why_included": "Clear identity/aesthetic search cluster distinct from mainstream stiletto content, validated on 3+ dedicated sources.",
+      "internal_links": {
+        "links_to": [
+          { "slug": "stiletto-nails-guide", "anchor_text": "stiletto nails ideas", "type": "pillar" },
+          { "slug": "halloween-stiletto-nails", "anchor_text": "halloween stiletto nail designs", "type": "spoke" },
+          { "slug": "stiletto-nails-dark-skin-tones", "anchor_text": "stiletto nail colors for deeper skin tones", "type": "spoke" }
+        ],
+        "receives_links_from": [
+          { "slug": "stiletto-nails-guide", "anchor_text": "gothic and dark stiletto nail designs" },
+          { "slug": "halloween-stiletto-nails", "anchor_text": "gothic and dark stiletto nail designs" }
+        ]
+      },
+      "status": "approved"
+    },
+    {
+      "post_id": 10,
+      "role": "spoke",
+      "title": "Stiletto Nails on Deeper Skin Tones: Colors That Pop",
+      "slug": "stiletto-nails-dark-skin-tones",
+      "primary_keyword": "stiletto nails for dark skin",
+      "intent": "informational",
+      "search_mode": "inspiration_mode",
+      "suggested_hook_trigger": "Trigger 3 — Specificity",
+      "search_demand_signals": [
+        "RainyRoses: dedicated post 'Stiletto Nails on Dark Skin: The Ultimate Fashion Statement'",
+        "Coils and Glory: dedicated post '30 Stiletto Nail Designs on Black Women That Are Stunning'",
+        "TikTok: dedicated discover page 'Stiletto Nail Designs for Dark Skinned'"
+      ],
+      "why_included": "Real, recurring skin-tone-suitability query with dedicated articles on 3+ independent sites.",
+      "internal_links": {
+        "links_to": [
+          { "slug": "stiletto-nails-guide", "anchor_text": "stiletto nails ideas", "type": "pillar" },
+          { "slug": "stiletto-french-tip-nails", "anchor_text": "stiletto french tip nail designs", "type": "spoke" },
+          { "slug": "gothic-stiletto-nails", "anchor_text": "gothic and dark stiletto nail designs", "type": "spoke" },
+          { "slug": "stiletto-wedding-nails", "anchor_text": "stiletto wedding nails", "type": "spoke" }
+        ],
+        "receives_links_from": [
+          { "slug": "stiletto-nails-guide", "anchor_text": "stiletto nail colors for deeper skin tones" },
+          { "slug": "stiletto-french-tip-nails", "anchor_text": "stiletto nail colors for deeper skin tones" },
+          { "slug": "gothic-stiletto-nails", "anchor_text": "stiletto nail colors for deeper skin tones" },
+          { "slug": "stiletto-wedding-nails", "anchor_text": "stiletto nail colors for deeper skin tones" }
+        ]
+      },
+      "status": "approved"
+    }
+  ],
+
+  "keyword_ownership_registry": {
+    "description": "Master list of all primary keywords — one per post, no overlaps, includes existing site posts",
+    "entries": [
+      { "primary_keyword": "short stiletto nails", "owned_by_slug": "short-stiletto-nails", "owned_by_title": "Short Stiletto Nails: 2026's Boldest Trend Right Now", "source": "existing site post" },
+      { "primary_keyword": "stiletto nails ideas", "owned_by_slug": "stiletto-nails-guide", "owned_by_title": "Stiletto Nails: The Complete Guide to Shapes, Lengths & Ideas", "source": "new post" },
+      { "primary_keyword": "stiletto vs almond nails", "owned_by_slug": "stiletto-vs-almond-nails", "owned_by_title": "Stiletto vs Almond Nails: Which Shape Actually Fits You", "source": "new post" },
+      { "primary_keyword": "coffin vs stiletto nails", "owned_by_slug": "coffin-vs-stiletto-nails", "owned_by_title": "Coffin vs Stiletto Nails: The Real Differences", "source": "new post" },
+      { "primary_keyword": "how to do stiletto nails at home", "owned_by_slug": "how-to-do-stiletto-nails-at-home", "owned_by_title": "How to Get Stiletto Nails at Home (No Salon Required)", "source": "new post" },
+      { "primary_keyword": "stiletto nails keep breaking", "owned_by_slug": "stiletto-nails-keep-breaking", "owned_by_title": "Why Your Stiletto Nails Keep Breaking (And How to Stop It)", "source": "new post" },
+      { "primary_keyword": "stiletto wedding nails", "owned_by_slug": "stiletto-wedding-nails", "owned_by_title": "Stiletto Nails for Your Wedding Day: Bridal Design Ideas", "source": "new post" },
+      { "primary_keyword": "halloween stiletto nails", "owned_by_slug": "halloween-stiletto-nails", "owned_by_title": "Halloween Stiletto Nail Designs That Aren't Basic", "source": "new post" },
+      { "primary_keyword": "stiletto french tip nails", "owned_by_slug": "stiletto-french-tip-nails", "owned_by_title": "Stiletto French Tip Nails: The Sharpest Way to Wear a Classic", "source": "new post" },
+      { "primary_keyword": "gothic stiletto nails", "owned_by_slug": "gothic-stiletto-nails", "owned_by_title": "Gothic & Dark Stiletto Nail Designs", "source": "new post" },
+      { "primary_keyword": "stiletto nails for dark skin", "owned_by_slug": "stiletto-nails-dark-skin-tones", "owned_by_title": "Stiletto Nails on Deeper Skin Tones: Colors That Pop", "source": "new post" }
+    ]
+  },
+
+  "merged_posts_log": [],
+
+  "killed_posts_log": [
+    {
+      "topic": "Short stiletto nails (any framing: trend, length, practicality)",
+      "reason": "existing post conflict — /blog/nail-shapes/short-stiletto-nails already owns this exact keyword and scope"
+    },
+    {
+      "topic": "Stiletto nails cost / price / how much",
+      "reason": "overlaps with existing post's salon-prices section; also skews transactional/shopping intent — killed per no-transactional rule"
+    },
+    {
+      "topic": "Old money / quiet luxury stiletto nails",
+      "reason": "existing site post 'Old Money Nail Colors' explicitly states stiletto is not an old-money shape; no genuine search demand pairing these two concepts positively"
+    },
+    {
+      "topic": "Chrome stiletto nails (standalone)",
+      "reason": "existing site post 'Chrome Nail Trends 2026' already covers chrome across shapes including stiletto in depth; would cannibalize that post's keyword ownership"
+    },
+    {
+      "topic": "Press-on / fake stiletto nails buying guide",
+      "reason": "demand signal overwhelmingly commerce/product-listing driven (Etsy, Walmart, Target, brand sites) — transactional intent, killed per rule"
+    },
+    {
+      "topic": "Medium-length stiletto nails (standalone)",
+      "reason": "no independent demand signal distinct from long or short stiletto on 2+ sources — folds into pillar instead"
+    },
+    {
+      "topic": "Stiletto nails for men / unisex angle",
+      "reason": "no meaningful demand signal surfaced in any search — generic angle with no real query behind it"
+    }
+  ]
+}
