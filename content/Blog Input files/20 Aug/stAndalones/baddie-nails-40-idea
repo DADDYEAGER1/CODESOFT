@@ -1,0 +1,404 @@
+{
+  "section_1_file_authority": {
+    "statement": "THIS FILE IS THE SINGLE SOURCE OF TRUTH FOR THE BLOG GEN AGENT. All values in POST_CONSTANTS are hardcoded — Blog Gen Agent does not ask, adjust, or override them. All keywords, H2 structure, audience intelligence, internal links, and tone defined here must be followed exactly."
+  },
+  "section_2_post_constants": {
+    "slug": "baddie-nails-40-ideas",
+    "canonical": "https://mirelleinspo.com/blog/baddie-nails-40-ideas",
+    "post_type": "standalone",
+    "intent": "inspirational",
+    "word_count": 2900,
+    "image_count": 36,
+    "show_inspo_gallery_link": true,
+    "template": "posts",
+    "hero_dimensions": "1200x675",
+    "category": "Nail Ideas",
+    "publish_date": "2026-08-20",
+    "author": "jyoti-mirelle"
+  },
+  "section_4_serp_analysis": {
+    "blog_gen_instruction": "our_strategic_approach is a specific, evidence-based outperform strategy. Use it as the concrete angle for the introduction and conclusion, and to guide depth/coverage decisions in relevant H2 sections.",
+    "competitor_gaps": [
+      "No fetched page gives a real decision framework for nail SHAPE matched to hand type specifically within the baddie aesthetic (general nail-shape guides exist off-topic, but no baddie-specific page connects shape choice to hand/finger type) — confirmed on 2 sources (whatisbuildergel.com shape sections + general nail-shape guide search cluster)",
+      "No fetched page directly and confidently answers whether baddie nails work on short natural nails without hedging — confirmed demand on 2 sources (whatisbuildergel.com 'myth-busting' short section + thebaddiehun.com FAQ block)",
+      "No fetched page gives a real cost/time/durability comparison specific to baddie looks (press-on vs salon gel vs acrylic) — confirmed demand on 2 sources (nails.bilalmania.com comparison table exists but is generic, not baddie-specific in framing; whatisbuildergel.com acrylic vs builder gel table is materials-only, not full cost/time picture)"
+    ],
+    "missing_semantic_territory": [
+      "'baddie nails for short natural nails' — confirmed demand (whatisbuildergel.com + thebaddiehun.com FAQ)",
+      "'baddie nails at home vs salon' decision language — confirmed demand (nails.bilalmania.com DIY vs salon table + whatisbuildergel.com 'At the Salon / DIY Essentials' section)",
+      "'how long do baddie nails last' — confirmed demand (nails.bilalmania.com FAQ + general audience question pattern)"
+    ],
+    "our_strategic_approach": "Every fetched competitor page is either a pure photo-caption list (pureglamguide.com, trendsbydesigners.com) or a maximalist SEO-stuffed mega-guide (nails.bilalmania.com) with no real point of view. whatisbuildergel.com comes closest with personal narrative and expert quotes but still treats shape and short-nail viability as afterthoughts. This post wins by opening with genuine idea density (40 real looks, organized by shape rather than a flat scroll) while also being the only page that gives a confident, direct answer on short-nail viability and a real shape-to-hand decision layer — both demand-validated gaps none of the 5 competitors resolve. Structural edge: organize by nail shape (almond/coffin/square/short) rather than a flat numbered list, which no competitor does — this also naturally serves the AEO shape-decision queries no one else answers directly.",
+    "top_5_fetched_pages_summary": [
+      {
+        "url": "https://pureglamguide.com/baddie-nail-ideas/",
+        "word_count": 1050,
+        "h2_count": 33,
+        "keyword_mention_count": 2,
+        "note": "Pure photo-caption list, 33 idea-H2s, near-zero primary keyword usage in body — weak SEO structure despite decent visual variety"
+      },
+      {
+        "url": "https://www.trendsbydesigners.com/10-baddie-nail-ideas-fierce-confident-gel-nail-designs-for-a-luxury-look/",
+        "word_count": 1100,
+        "h2_count": 12,
+        "keyword_mention_count": 3,
+        "note": "Slightly more developed per-idea copy but thin overall depth, no shape/practical guidance, generic 'perfect for' closers"
+      },
+      {
+        "url": "https://whatisbuildergel.com/baddie-nails-2026/",
+        "word_count": 2600,
+        "h2_count": 16,
+        "keyword_mention_count": 15,
+        "note": "Strongest competitor — personal narrative, expert quotes, comparison table, maintenance section — but shape coverage is shallow and short-nail viability treated as a footnote myth-bust rather than a real answer"
+      },
+      {
+        "url": "https://www.accio-ai.com/blog/baddie-nail-designs-set-to-dominate",
+        "word_count": 1750,
+        "h2_count": 11,
+        "keyword_mention_count": 4,
+        "note": "High-concept trend-forward editorial voice, strong for 2026 trend names, but ends in a B2B sourcing CTA irrelevant to consumer readers and weak on practical/shape guidance"
+      },
+      {
+        "url": "https://nails.bilalmania.com/posts/baddie-nails.html",
+        "word_count": 2500,
+        "h2_count": 9,
+        "keyword_mention_count": 42,
+        "note": "Most comprehensive structurally (shape matrix table, DIY vs salon comparison, maintenance checklist, FAQ) but severely keyword-stuffed and title/meta duplicated verbatim in body — reads as AI-generated SEO filler despite good bones"
+      }
+    ],
+    "top_5_word_count_average": 1800,
+    "top_5_keyword_density_average": 13,
+    "best_external_sources_found": []
+  },
+  "section_5_audience_intelligence": {
+    "blog_gen_instruction": "This is your primary creative brief. Every paragraph written for this specific person with this specific intent. Satisfy them completely.",
+    "who_they_are": "Primarily Gen Z / young millennial women browsing for nail inspiration ahead of a salon visit or DIY session — heavily Pinterest/TikTok-native, screenshotting looks to bring to a nail tech or attempt themselves. Comfortable with nail terminology (coffin, chrome, French tip) but wants curated, categorized inspiration rather than raw endless scroll.",
+    "what_they_want_from_this_post": "A large, genuinely varied set of baddie nail looks organized in a way that helps them choose — not just scroll past. They want to land on 2-3 favorites they can screenshot or describe to their nail tech.",
+    "what_frustrates_them": "Competitor pages are either too thin (10-15 ideas, repetitive captions) or bloated with keyword-stuffed filler that reads like AI wrote it without care. Several pages assume the reader already has long nails or is going to a salon — no page speaks confidently to someone with short natural nails who still wants the aesthetic.",
+    "top_5_pain_points": [
+      "Feeling like every 'baddie nails' roundup shows the same 10 designs reskinned",
+      "Not knowing which shape (almond vs coffin vs square) will actually suit their hands before committing at the salon",
+      "Uncertainty whether the look is achievable with short/natural nails or requires extensions",
+      "Wanting genuinely 2026-current designs, not evergreen filler dressed up with a year tag",
+      "Wanting enough visual density to actually find 'the one' design rather than 5 mediocre options"
+    ],
+    "exact_user_phrases": [
+      "baddie nails inspo",
+      "basic baddie nails",
+      "simple baddie nails",
+      "baddie nails almond",
+      "baddie nails square",
+      "baddie nails short",
+      "short baddie nails",
+      "soft baddie nails",
+      "baddie nails acrylic",
+      "birthday baddie nails",
+      "baddie nail designs 2026",
+      "baddie nails for black women",
+      "minimalist baddie nails"
+    ],
+    "intent_content_signals": [
+      "Numbered, scannable idea format performs best (every competitor uses it)",
+      "Short punchy per-idea copy (2-4 sentences) outperforms long paragraphs for a browse-intent reader",
+      "Grouping by a clear axis (shape, color, occasion) is under-used by competitors and is a real differentiation opportunity",
+      "A confident, personal voice (whatisbuildergel.com's narrative asides) reads as more trustworthy than a flat catalog tone",
+      "Readers respond to 'perfect for [occasion]' framing at the end of each idea — signals demand-validated across 4 of 5 fetched pages"
+    ]
+  },
+  "section_6_semantic_keyword_data": {
+    "blog_gen_instruction": "Primary keyword in strong tags every mention. AEO terms trigger direct answer paragraphs. User language woven naturally.",
+    "primary_keyword": "baddie nails",
+    "keyword_variations": [
+      "baddie nail ideas",
+      "baddie nail designs",
+      "baddie nails 2026",
+      "baddie manicure",
+      "baddie nail inspo",
+      "baddie nail art"
+    ],
+    "cluster_keywords": [
+      "coffin nails",
+      "almond nails",
+      "square nails",
+      "chrome nails",
+      "French tip nails",
+      "acrylic nails",
+      "stiletto nails",
+      "rhinestone nails",
+      "matte black nails",
+      "short baddie nails"
+    ],
+    "lsi_terms": [
+      "high-gloss gel finish",
+      "chrome powder",
+      "3D nail art",
+      "milky nude nails",
+      "animal print nails",
+      "gel-x extensions",
+      "builder gel",
+      "cuticle oil aftercare",
+      "nail fill schedule",
+      "salon-quality manicure",
+      "press-on nails",
+      "soak-off gel",
+      "nail shape compatibility",
+      "long coffin nail shape",
+      "glossy topcoat"
+    ],
+    "aeo_terms": [
+      "what makes nails look baddie",
+      "what nail shape is best for baddie nails",
+      "can you get baddie nails with short natural nails",
+      "how long do baddie nails last",
+      "what colors are popular for baddie nails",
+      "are baddie nails only long nails",
+      "how much do baddie nails cost at a salon",
+      "what is the difference between baddie nails and regular nails"
+    ],
+    "technical_terms": [
+      "coffin shape",
+      "almond shape",
+      "squoval",
+      "chrome powder application",
+      "soak-off gel polish",
+      "acrylic overlay",
+      "builder gel"
+    ],
+    "user_language": [
+      "basic baddie",
+      "soft baddie",
+      "simple baddie nails that still pack a punch",
+      "baddie energy",
+      "unapologetically extra",
+      "turn heads",
+      "on fleek",
+      "instantly elevate your look",
+      "steal the spotlight"
+    ]
+  },
+  "section_7_voice_and_ai_queries": {
+    "blog_gen_instruction": "Answer every query directly in the relevant H2 section body. If a query cannot be addressed naturally in the body, route it to faqItems. No query left unanswered.",
+    "queries": [
+      "What actually makes nails look 'baddie'?",
+      "What nail shape is best for baddie nails?",
+      "Can you get baddie nails with short natural nails?",
+      "How long do baddie nails typically last?",
+      "What colors are trending for baddie nails in 2026?",
+      "Are baddie nails always long and dramatic?",
+      "What's the difference between almond and coffin baddie nails?",
+      "How much do baddie nails cost at a salon versus doing them at home?",
+      "What's the best base color for baddie nail art?",
+      "Can baddie nails be simple and still look bold?",
+      "What shapes work best for square baddie nails?",
+      "How do I keep baddie nails looking fresh longer?",
+      "What's a good baddie nail design for a birthday?",
+      "Are chrome nails still a baddie trend in 2026?",
+      "What's the most popular baddie nail shape right now?"
+    ]
+  },
+  "section_8_hook_and_ctr": {
+    "blog_gen_instruction": "READ THIS SECTION BEFORE WRITING THE TITLE, META DESCRIPTION, INTRO, OR FIRST H2. The title and description here are the option the USER SELECTED. Use them exactly. Do not deviate.",
+    "real_serp_findings_summary": "All 5 fetched competitor titles lead with a number + 'Baddie Nail(s) Ideas/Designs' pattern (33, 10+, 51, 11, 35+) with almost no differentiation in angle — purely volume-led. None promise organization or a decision-making angle; all imply 'more of the same, just more of it.'",
+    "selected_option_rationale": "This option keeps the proven number-led pattern (matches demonstrated competitive baseline) while adding 'that actually slay' — a specificity/quality signal none of the 5 fetched titles use — and pairs it with a meta that explicitly promises shape/color guidance, directly addressing the demand-validated gap around shape decision-making.",
+    "title": "40 Baddie Nails Ideas That Actually Slay in 2026",
+    "title_char_count": 49,
+    "meta_description": "From chrome coffin to soft almond, 40 baddie nails ideas with real shape and color guidance — not just a photo dump.",
+    "meta_char_count": 119,
+    "intro_hook_brief": "Open by naming the exact frustration validated in research: every baddie nails roundup shows the same handful of looks reskinned. Promise genuine range and organization (by shape) as the differentiator, then move straight into abundance.",
+    "first_h2_hook_direction": "First H2 should open with the shape-decision angle (what actually makes nails read as 'baddie') as a confident, declarative statement — not a repeat of the title's numeric hook."
+  },
+  "section_9_search_journey": {
+    "blog_gen_instruction": "This is the emotional contract with the reader. Every section of the post must honour the promise made.",
+    "reader_arrival_state": "Curious, visually hungry, mildly fatigued from scrolling near-identical baddie nail roundups, hoping this one actually helps her decide.",
+    "journey_arc": [
+      "Hook: acknowledge the sameness fatigue and promise real range + organization",
+      "Deliver an immediate, confident answer on what makes nails read as 'baddie' (definition/identity payoff)",
+      "Move through shape-organized sections (almond, coffin, square, short) each front-loaded with visual abundance",
+      "Layer in color/trend variety within each shape group to sustain novelty",
+      "Address the short-nails-viability gap directly and confidently mid-post",
+      "Close with a decisive, identity-affirming 'this is your era' moment"
+    ],
+    "promise_to_deliver": "That this is the baddie nails post that actually organizes and helps her choose, not just another endless scroll of the same 10 designs.",
+    "exit_state": "Decisive and excited — she has 2-3 specific looks in mind and the shape/color language to describe them to a nail tech or attempt them herself."
+  },
+  "section_10_content_structure": {
+    "blog_gen_instruction": "This H2 structure is research-driven and must be followed exactly. Do not rename, reorder, or remove H2s without user instruction.",
+    "h1": "40 Baddie Nails Ideas That Actually Slay in 2026",
+    "h2_structure": [
+      "What Actually Makes Nails Look 'Baddie'?",
+      "Almond Baddie Nails: Soft Edge, Full Impact",
+      "Coffin Baddie Nails: The Bold Classic",
+      "Square Baddie Nails: Clean and Architectural",
+      "Short Baddie Nails: Proof Length Isn't Everything",
+      "2026's Hottest Baddie Nail Colors and Finishes",
+      "Baddie Nails for Every Occasion",
+      "How to Choose Your Baddie Nail Look"
+    ],
+    "word_budget": {
+      "introduction": "220",
+      "conclusion": "180",
+      "per_h2": [
+        {"heading": "What Actually Makes Nails Look 'Baddie'?", "words": 220},
+        {"heading": "Almond Baddie Nails: Soft Edge, Full Impact", "words": 480},
+        {"heading": "Coffin Baddie Nails: The Bold Classic", "words": 480},
+        {"heading": "Square Baddie Nails: Clean and Architectural", "words": 420},
+        {"heading": "Short Baddie Nails: Proof Length Isn't Everything", "words": 420},
+        {"heading": "2026's Hottest Baddie Nail Colors and Finishes", "words": 250},
+        {"heading": "Baddie Nails for Every Occasion", "words": 130},
+        {"heading": "How to Choose Your Baddie Nail Look", "words": 100}
+      ]
+    }
+  },
+  "section_11_internal_links": {
+    "blog_gen_instruction": "Every link below must appear in the post. Total internal links must not exceed 6.",
+    "fields": {
+      "all_internal_links": []
+    }
+  },
+  "section_12_voice_tone": {
+    "blog_gen_instruction": "This is the voice for this specific post. Layer on top of Mirellé editorial framework. Do not default to generic AI tone.",
+    "recommended_voice": "Confident girlfriend with great taste — aspirational guide",
+    "tone_characteristics": [
+      "Direct and declarative, never hedging on recommendations",
+      "Warm but never saccharine — confidence over cuteness",
+      "Uses 'you' constantly to keep it personal and browse-friendly",
+      "Short, punchy sentences for scannability, occasional longer sentence for rhythm",
+      "Zero apologetic or uncertain framing around bold choices"
+    ],
+    "language_style": "Second-person direct address, contemporary beauty-editorial vocabulary (not clinical), confident imperatives ('go bold', 'own it') used sparingly, no filler qualifiers",
+    "audience_match": "This reader wants permission to be bold and a clear decision path — a voice that is certain and specific (not wishy-washy 'it depends') matches both her inspirational intent and her stated fatigue with generic content."
+  },
+  "section_13_external_links": {
+    "blog_gen_instruction": "May be empty if none of the fetched pages qualified as genuinely citation-worthy — that is expected, not a gap to fill.",
+    "fields": {
+      "links": []
+    }
+  },
+  "section_14_execution_plan": {
+    "purpose": "Blog Gen Agent reads this section FIRST — before frontmatter, before writing a single word.",
+    "blog_gen_instruction": "READ THIS SECTION FIRST. Lock every value. Execute exactly.",
+    "calculated_by": "Input Gen Agent",
+    "block_1_keyword_execution": {
+      "primary_keyword": "baddie nails",
+      "top_5_density_baseline": 13,
+      "total_mention_target": 16,
+      "first_100_words_plan": {
+        "rule": "Primary keyword MUST appear TWICE in the first 100 words.",
+        "mention_1": "sentence 1 of introduction — naming the fatigue with generic 'baddie nails' roundups",
+        "mention_2": "sentence 3-4 of introduction — promising this post's organized approach to baddie nails"
+      },
+      "first_half_target": "9 mentions — first ~1450 words. Run denser in first half.",
+      "second_half_target": "7 mentions — second ~1450 words",
+      "strong_tag_rule": "EVERY single mention of the primary keyword — all 16 of them — wrapped in <strong> tags. No exceptions.",
+      "keywords_to_avoid_active": []
+    },
+    "block_2_word_budget": {
+      "total_target": "2900 words — +/-50 words tolerance, never exceed",
+      "introduction": "220 words",
+      "conclusion": "180 words",
+      "h2_budgets": [
+        {"heading": "What Actually Makes Nails Look 'Baddie'?", "budget": "220 words", "complexity": "low"},
+        {"heading": "Almond Baddie Nails: Soft Edge, Full Impact", "budget": "480 words", "complexity": "high"},
+        {"heading": "Coffin Baddie Nails: The Bold Classic", "budget": "480 words", "complexity": "high"},
+        {"heading": "Square Baddie Nails: Clean and Architectural", "budget": "420 words", "complexity": "medium"},
+        {"heading": "Short Baddie Nails: Proof Length Isn't Everything", "budget": "420 words", "complexity": "medium"},
+        {"heading": "2026's Hottest Baddie Nail Colors and Finishes", "budget": "250 words", "complexity": "medium"},
+        {"heading": "Baddie Nails for Every Occasion", "budget": "130 words", "complexity": "low"},
+        {"heading": "How to Choose Your Baddie Nail Look", "budget": "100 words", "complexity": "low"}
+      ],
+      "tracking_rule": "Track running word total at the end of every H2 section. If a section is running over budget — cut before moving to the next section."
+    },
+    "block_3_image_plan": {
+      "total_images": 36,
+      "hero_image": "frontmatter only — NEVER appears in post body",
+      "body_images": 35,
+      "assignments": [
+        {"image_number": 1, "place_after": "What Actually Makes Nails Look 'Baddie'?", "image_type": "standard_inspiration", "section_context": "Confident hand pose showing a signature baddie look (glossy chrome coffin) as the definitional visual anchor"},
+        {"image_number": 2, "place_after": "Almond Baddie Nails: Soft Edge, Full Impact (idea 1)", "image_type": "standard_inspiration", "section_context": "Chrome nude almond nails"},
+        {"image_number": 3, "place_after": "Almond Baddie Nails: Soft Edge, Full Impact (idea 2)", "image_type": "standard_inspiration", "section_context": "Milky white almond nails with pearl accent"},
+        {"image_number": 4, "place_after": "Almond Baddie Nails: Soft Edge, Full Impact (idea 3)", "image_type": "standard_inspiration", "section_context": "Tortoiseshell almond nails glossy finish"},
+        {"image_number": 5, "place_after": "Almond Baddie Nails: Soft Edge, Full Impact (idea 4)", "image_type": "standard_inspiration", "section_context": "Black almond nails with silver micro-dots"},
+        {"image_number": 6, "place_after": "Almond Baddie Nails: Soft Edge, Full Impact (idea 5)", "image_type": "standard_inspiration", "section_context": "Ombre pink-to-white almond nails"},
+        {"image_number": 7, "place_after": "Almond Baddie Nails: Soft Edge, Full Impact (idea 6)", "image_type": "standard_inspiration", "section_context": "Leopard print accent on nude almond base"},
+        {"image_number": 8, "place_after": "Almond Baddie Nails: Soft Edge, Full Impact (idea 7)", "image_type": "standard_inspiration", "section_context": "Gold foil almond nails"},
+        {"image_number": 9, "place_after": "Almond Baddie Nails: Soft Edge, Full Impact (idea 8)", "image_type": "standard_inspiration", "section_context": "Burgundy glossy almond nails"},
+        {"image_number": 10, "place_after": "Almond Baddie Nails: Soft Edge, Full Impact (idea 9)", "image_type": "standard_inspiration", "section_context": "Rhinestone cuticle-line almond nails"},
+        {"image_number": 11, "place_after": "Coffin Baddie Nails: The Bold Classic (idea 1)", "image_type": "standard_inspiration", "section_context": "Silver chrome coffin nails"},
+        {"image_number": 12, "place_after": "Coffin Baddie Nails: The Bold Classic (idea 2)", "image_type": "standard_inspiration", "section_context": "Matte black coffin nails with glossy tips"},
+        {"image_number": 13, "place_after": "Coffin Baddie Nails: The Bold Classic (idea 3)", "image_type": "standard_inspiration", "section_context": "Deep cherry red glossy coffin nails"},
+        {"image_number": 14, "place_after": "Coffin Baddie Nails: The Bold Classic (idea 4)", "image_type": "standard_inspiration", "section_context": "Black and gold luxury coffin nails"},
+        {"image_number": 15, "place_after": "Coffin Baddie Nails: The Bold Classic (idea 5)", "image_type": "standard_inspiration", "section_context": "Emerald green coffin nails with gold accents"},
+        {"image_number": 16, "place_after": "Coffin Baddie Nails: The Bold Classic (idea 6)", "image_type": "standard_inspiration", "section_context": "Nude coffin nails with 3D bow charm"},
+        {"image_number": 17, "place_after": "Coffin Baddie Nails: The Bold Classic (idea 7)", "image_type": "standard_inspiration", "section_context": "Crystal-encrusted nude ombre coffin nails"},
+        {"image_number": 18, "place_after": "Coffin Baddie Nails: The Bold Classic (idea 8)", "image_type": "standard_inspiration", "section_context": "Chocolate brown abstract swirl coffin nails"},
+        {"image_number": 19, "place_after": "Coffin Baddie Nails: The Bold Classic (idea 9)", "image_type": "standard_inspiration", "section_context": "Zebra print monochrome coffin nails"},
+        {"image_number": 20, "place_after": "Square Baddie Nails: Clean and Architectural (idea 1)", "image_type": "standard_inspiration", "section_context": "Checkerboard pattern square nails"},
+        {"image_number": 21, "place_after": "Square Baddie Nails: Clean and Architectural (idea 2)", "image_type": "standard_inspiration", "section_context": "French tip with rhinestone line square nails"},
+        {"image_number": 22, "place_after": "Square Baddie Nails: Clean and Architectural (idea 3)", "image_type": "standard_inspiration", "section_context": "Neon matte square nails"},
+        {"image_number": 23, "place_after": "Square Baddie Nails: Clean and Architectural (idea 4)", "image_type": "standard_inspiration", "section_context": "Milky white V-cut French square nails"},
+        {"image_number": 24, "place_after": "Square Baddie Nails: Clean and Architectural (idea 5)", "image_type": "standard_inspiration", "section_context": "Electric blue crocodile print square nails"},
+        {"image_number": 25, "place_after": "Square Baddie Nails: Clean and Architectural (idea 6)", "image_type": "standard_inspiration", "section_context": "Abstract black line art on nude square nails"},
+        {"image_number": 26, "place_after": "Short Baddie Nails: Proof Length Isn't Everything (idea 1)", "image_type": "standard_inspiration", "section_context": "Glossy black squoval short nails"},
+        {"image_number": 27, "place_after": "Short Baddie Nails: Proof Length Isn't Everything (idea 2)", "image_type": "standard_inspiration", "section_context": "Chrome-tipped short almond nails"},
+        {"image_number": 28, "place_after": "Short Baddie Nails: Proof Length Isn't Everything (idea 3)", "image_type": "standard_inspiration", "section_context": "Micro rhinestone cuticle accent on short nude nails"},
+        {"image_number": 29, "place_after": "Short Baddie Nails: Proof Length Isn't Everything (idea 4)", "image_type": "standard_inspiration", "section_context": "Matte burgundy short square nails"},
+        {"image_number": 30, "place_after": "Short Baddie Nails: Proof Length Isn't Everything (idea 5)", "image_type": "standard_inspiration", "section_context": "Neon French tip on short nude nails"},
+        {"image_number": 31, "place_after": "2026's Hottest Baddie Nail Colors and Finishes", "image_type": "infographic", "section_context": "Color palette grid: chrome silver, glossy black, deep red, butter yellow, sage green, lavender chrome — swatch-style layout labeling each finish, no hands/tools shown"},
+        {"image_number": 32, "place_after": "2026's Hottest Baddie Nail Colors and Finishes", "image_type": "standard_inspiration", "section_context": "Butter yellow glossy nails, 2026 trend color in action"},
+        {"image_number": 33, "place_after": "Baddie Nails for Every Occasion", "image_type": "standard_inspiration", "section_context": "Birthday-themed baddie nail set with gold accents"},
+        {"image_number": 34, "place_after": "Baddie Nails for Every Occasion", "image_type": "standard_inspiration", "section_context": "Night-out glossy black stiletto-adjacent look"},
+        {"image_number": 35, "place_after": "How to Choose Your Baddie Nail Look", "image_type": "standard_inspiration", "section_context": "Confident closing hand shot, glossy chrome finish, editorial styling"},
+        {"image_number": 36, "place_after": "Conclusion", "image_type": "standard_inspiration", "section_context": "Final aspirational full-hand shot summarizing the aesthetic"}
+      ],
+      "image_type_rule": {
+        "default": "standard_inspiration — an actual nail look, styled and shot",
+        "infographic_allowed_when": "One slot only — the color/finish grid in the trends section, which genuinely benefits from a labeled swatch layout over a single photo",
+        "banned_absolutely": "NEVER a tool/equipment image. NEVER a literal photo side-by-side comparison — the one comparison-adjacent slot uses infographic swatch grid, not photos of two hands."
+      },
+      "path_rule": "/images/blog/baddie-nails-40-ideas/filename.webp — slug folder, leading slash (no topic_slug, standalone post)"
+    },
+    "block_4_opening_technique_assignments": {
+      "rule": "No two consecutive sections use the same technique. Conclusion = Technique 1 or 3 only.",
+      "assignments": [
+        {"section": "Introduction", "technique": "Technique 2 — The Shared Frustration"},
+        {"section": "What Actually Makes Nails Look 'Baddie'?", "technique": "Technique 1 — The Claim"},
+        {"section": "Almond Baddie Nails: Soft Edge, Full Impact", "technique": "Technique 4 — The Scene-Set"},
+        {"section": "Coffin Baddie Nails: The Bold Classic", "technique": "Technique 1 — The Claim"},
+        {"section": "Square Baddie Nails: Clean and Architectural", "technique": "Technique 3 — The Reframe"},
+        {"section": "Short Baddie Nails: Proof Length Isn't Everything", "technique": "Technique 2 — The Shared Frustration"},
+        {"section": "2026's Hottest Baddie Nail Colors and Finishes", "technique": "Technique 1 — The Claim"},
+        {"section": "Baddie Nails for Every Occasion", "technique": "Technique 4 — The Scene-Set"},
+        {"section": "How to Choose Your Baddie Nail Look", "technique": "Technique 3 — The Reframe"},
+        {"section": "Conclusion", "technique": "Technique 1 — The Claim"}
+      ],
+      "banned_opener_rule": "Check every opener against banned_opening_approaches in blog gen prompt before writing the second sentence"
+    },
+    "block_5_link_placements": {
+      "rule": "No internal links available — standalone/solo mode post with no cluster context and no relevance-qualifying cross-site matches found.",
+      "links": []
+    },
+    "block_6_aeo_geo_plan": {
+      "aeo_assignments": [
+        {"aeo_term": "What actually makes nails look 'baddie'?", "assigned_to_section": "What Actually Makes Nails Look 'Baddie'?", "execution": "Write a direct 2-3 sentence answer paragraph IMMEDIATELY after the H2 heading — before any elaboration."},
+        {"aeo_term": "What nail shape is best for baddie nails?", "assigned_to_section": "What Actually Makes Nails Look 'Baddie'?", "execution": "Direct answer noting almond, coffin, and square all work — sets up the following three shape-organized H2s."},
+        {"aeo_term": "Can you get baddie nails with short natural nails?", "assigned_to_section": "Short Baddie Nails: Proof Length Isn't Everything", "execution": "Direct, confident 2-3 sentence yes-answer immediately after the H2 heading, before the idea list."},
+        {"aeo_term": "How long do baddie nails typically last?", "assigned_to_section": "How to Choose Your Baddie Nail Look", "execution": "Direct 2-3 sentence answer covering gel/acrylic typical wear window."},
+        {"aeo_term": "What colors are trending for baddie nails in 2026?", "assigned_to_section": "2026's Hottest Baddie Nail Colors and Finishes", "execution": "Direct answer paragraph immediately after H2 heading naming the top trending shades before the detailed list."}
+      ],
+      "geo_entity_statements": [
+        {"entity": "Coffin nail shape", "assigned_to_section": "Coffin Baddie Nails: The Bold Classic", "execution": "Clear declarative definition: coffin nails taper at the sides with a flat, squared-off tip, resembling a ballet slipper or coffin silhouette."},
+        {"entity": "Chrome powder finish", "assigned_to_section": "2026's Hottest Baddie Nail Colors and Finishes", "execution": "Clear declarative definition: chrome powder is a fine metallic pigment buffed onto gel or acrylic to create a mirror-like, light-reflective finish."}
+      ]
+    },
+    "block_7_active_constraints": {
+      "em_dash_banned": "Long em dash does not appear anywhere. If one forms while writing — stop, replace with: comma / new sentence / parentheses / but / restructure.",
+      "banned_vocab_watch": ["elevate", "unleash", "game-changer", "must-have", "vibe", "slay (used only in title, avoid overuse in body)", "unapologetic"],
+      "american_english_active": "color, recognize, -ize, -or — every instance, no exceptions.",
+      "keyword_density_reminder": "After every 2 H2 sections — count current keyword mentions. Verify running total is on track to hit 16. First half must run denser than second half.",
+      "image_path_reminder": "/images/blog/baddie-nails-40-ideas/filename.webp",
+      "internal_link_url_reminder": "No internal links in this post — do not invent any.",
+      "hero_image_reminder": "Hero = frontmatter only. Never place hero image in body.",
+      "strong_tag_reminder": "Every primary keyword mention = <strong> tags. Scan after every paragraph."
+    }
+  }
+}
