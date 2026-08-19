@@ -1,0 +1,257 @@
+# INPUT FILE — SINGLE SOURCE OF TRUTH FOR BLOG GEN AGENT
+Mode: SOLO (no cluster_context.json). All values below are hardcoded. Blog Gen Agent does not ask, adjust, or override.
+
+---
+
+## SECTION 2 — POST_CONSTANTS
+- slug: clean-girl-nail-inspo
+- topic_slug: OMITTED (solo/standalone — no topic field)
+- canonical: https://mirelleinspo.com/blog/clean-girl-nail-inspo
+- post_type: standalone
+- intent: inspirational (research-locked — SERP/PAA is dominated by "X ideas to try/save" gallery-style posts with a browse/save angle; zero comparison or how-to framing in the top 5)
+- word_count: 2450 (top_5_fetched average 2180 + margin — intent supports depth; see block below)
+- image_count: 7 (hero + 6 body — flat default rule; not X+ slug, not pillar, not tutorial, not comparison)
+- show_inspo_gallery_link: true — intent is inspirational AND the post has a genuine browse/explore-designs angle (reader is scrolling for looks to save/replicate). Reported per solo-mode rule below.
+- template: posts (not pillar, not tutorial intent)
+- hero_dimensions: 1200x675
+- category: Nails
+- publish_date: 2026-08-20
+- author: jyoti-mirelle
+
+---
+
+## SECTION 4 — SERP ANALYSIS
+**competitor_gaps** (demand confirmed 2+ sources: PAA/autocomplete cross-checked against fetched pages):
+- No fetched page directly resolves the "short vs long nails" debate for this specific aesthetic — general nail-shape content exists but not filtered through the clean-girl lens
+- No fetched page addresses budget/drugstore product picks — all lean editorial-only or press-on-brand-only (Shangmeng), leaving a real gap for a brand-neutral at-home shade guide
+- Skin-tone-specific shade matching is thin — only skinscarelab.com covers it, and briefly; no page gives a genuinely deep breakdown
+
+**missing_semantic_territory**: "clean girl nails vs quiet luxury nails" distinction (only hanyinails.com covers this, and it's a B2B nail-supplier blog, weak audience fit); "clean girl nails for weddings/events" angle absent from all 5; nail health/prep routine covered shallowly everywhere except skinscarelab.com
+
+**our_strategic_approach**: Competitors split into two camps — pure inspiration galleries with thin one-paragraph-per-look copy (gracefullystyled, thepinkissue) and a single deep authority piece optimized for press-on sales (shangmengnails, 2200+ words but commerce-driven). None combine genuine editorial depth with zero product-push framing. This post's edge: match shangmengnails' structural depth (categorized shade/shape breakdown) while keeping the pure-inspiration tone and specificity of thepinkissue's per-look format, and close the skin-tone-matching gap that only one competitor touches lightly. Structurally, this post uses named look categories (not just numbered items) so it reads as authoritative reference, not a listicle skim.
+
+**top_5_fetched_pages_summary**:
+| URL | Word count | H2 count | Keyword mentions | Note |
+|---|---|---|---|---|
+| gracefullystyled.com/21-clean-girl-nails-ideas-for-2026 | ~1350 | 5 | 11 | Thin per-item copy (4 short lines each), generic "How to Choose"/"Mistakes" sections add little |
+| shangmengnails.com (25 minimalist looks) | ~3800 | 9 | 9 | Deepest, most authoritative — but commerce-driven (press-on CTAs every 400 words), cites Allure/Byrdie/Vogue as authority signals |
+| skinscarelab.com (30 minimal nails) | ~2900 | 7 | 14 | Strong FAQ + skin-tone section, best keyword density, but per-look copy is short and repetitive |
+| hanyinails.com (clean girl vs quiet luxury) | ~2100 | 9 | 8 | Good comparative framework (clean girl vs quiet luxury) but B2B tone, weak for consumer audience |
+| thepinkissue.com (25 clean-girl manicure ideas) | ~1750 | 25 (per-look H3s, not H2s) | 16 | Best voice/personality, real Instagram-sourced examples, but shallow structurally |
+
+top_5_word_count_average: 2380 words
+top_5_keyword_density_average: 11.6 mentions
+
+**best_external_sources_found**: 
+1. shangmengnails.com/blogs/trends/minimalist-nail-designs-press-on — genuinely deep trend reporting with cited sourcing (Allure, Vogue, Byrdie references), real editorial structure
+2. skinscarelab.com/minimal-clean-girl-nails-2026 — strong skin-tone-matching framework, real FAQ depth
+(Note: neither is byrdie/allure/nailpro directly — both are secondary sources citing those outlets, which is fine per source_quality_rule)
+
+---
+
+## SECTION 5 — AUDIENCE INTELLIGENCE
+**who_they_are**: Primarily young women (late teens–early 30s) who follow the broader "clean girl" beauty aesthetic (skin, makeup, hair) and are now extending it to nails. Pinterest/TikTok-native, browsing for a specific vibe rather than a specific technique. Not necessarily DIY-focused — many will take images to a salon.
+
+**what_they_want_from_this_post**: A visually rich, scannable set of real look options they can screenshot or describe to a nail tech — organized clearly enough to narrow down a personal favorite fast, not a wall of identical beige swatches.
+
+**what_frustrates_them**: Existing content repeats the same 5-6 shades (milky white, sheer pink, glazed donut) across every "25 ideas" post with near-identical one-line descriptions; nothing helps them choose based on skin tone, nail length, or occasion; heavy commerce push (press-on ads) breaks immersion.
+
+**top_5_pain_points**:
+1. Can't tell milky white / sheer pink / glazed donut apart from a thumbnail — needs clearer visual + verbal distinction
+2. Doesn't know which "clean girl" shade suits her specific skin tone
+3. Worried short nails will look "boring" rather than intentional
+4. Confused whether "clean girl" and "quiet luxury" nails are the same thing
+5. Wants inspiration that still feels current for 2026, not recycled 2023 TikTok-era images
+
+**exact_user_phrases**: "your nails but better," "effortless expensive," "glazed donut nails," "your nails but healthier version," "milky vs sheer white," "clean girl manicure at home," "does clean girl nails work on short nails," "clean girl nails without looking boring," "quiet luxury vs clean girl nails," "nails that look expensive"
+
+**intent_content_signals**: Named, categorized look groupings (not flat numbered lists) perform better structurally per shangmengnails; skin-tone-specific guidance is a genuine differentiator; short personal/editorial voice (thepinkissue) outperforms clinical tone; visual density expected — reader is browsing, not reading dense paragraphs.
+
+---
+
+## SECTION 6 — SEMANTIC KEYWORD DATA
+- primary_keyword: clean girl nail inspo
+- keyword_variations: clean girl nails, clean girl manicure, clean girl nail ideas, clean girl nail designs, clean girl aesthetic nails, minimalist clean girl nails, clean girl nails 2026
+- cluster_keywords: milky white nails, sheer pink nails, glazed donut nails, micro french tips, quiet luxury nails, soap nails, jelly nails, negative space nails, sheer nude nails, barely-there nails, your-nails-but-better manicure, minimalist manicure
+- lsi_terms: chrome finish, glazed nails, single-tone glazed, micro french tip, negative space nail art, sheer jelly finish, milky opal white, cuticle care, glossy top coat, short square nails, squoval nails, short almond nails, translucent polish, nail health routine, well-groomed cuticles, quiet luxury aesthetic, invisible french manicure, hydrated cuticles
+- aeo_terms: what are clean girl nails, what colors are clean girl nails, is clean girl nails the same as quiet luxury nails, what nail shape works best for clean girl nails, do clean girl nails work on short nails, how do you get clean girl nails at home, what is the most popular clean girl nail color, how long do clean girl nails last, are clean girl nails still trending in 2026
+- technical_terms: sheer gel polish, glazed finish, chrome powder, buildable sheer color, negative space technique, micro french tip, soft gel press-on, cuticle oil, high-gloss top coat
+- user_language: "your nails but better," "effortless expensive," "your nails but healthier," "clean girl mani," "barely-there nails," "nails that look intentional," "quiet luxury nails," "your-nails-but-better manicure," "expensive-looking nails," "low-maintenance luxury"
+
+---
+
+## SECTION 7 — VOICE AND AI QUERIES
+1. What exactly are clean girl nails?
+2. What's the difference between clean girl nails and quiet luxury nails?
+3. What nail colors count as clean girl nails?
+4. Do clean girl nails work on short nails?
+5. What's the best nail shape for the clean girl aesthetic?
+6. How do I get clean girl nails at home without a salon?
+7. What's the most popular clean girl nail color right now?
+8. Are clean girl nails still trending in 2026?
+9. How long does a clean girl manicure last?
+10. What's a glazed donut nail and is it the same as clean girl nails?
+11. Can clean girl nails have any nail art or do they have to be plain?
+12. What's the difference between milky white and sheer white nails?
+13. Do clean girl nails suit every skin tone?
+14. What top coat gives that glassy clean girl finish?
+15. Is the clean girl nail trend just neutral colors?
+
+---
+
+## SECTION 8 — HOOK AND CTR (LOCKED)
+**real_serp_findings_summary**: Fetched titles split into two patterns — numbered "X Ideas for 2026" listicle titles (gracefullystyled, skinscarelab) which front-load the number and year, and descriptive/personality-led titles (thepinkissue's "Fresh and Polished Look," hanyinails' "Minimalist Manicure Movement") which promise a vibe rather than a count. None promised differentiation from the flood of near-identical "25 ideas" content already saturating this space.
+
+**selected_option_rationale**: This option breaks from the numbered-listicle pattern entirely (no "X ideas" framing) and instead promises differentiation from the repetitive competitor field itself — directly addressing the audience's top pain point (repeated, indistinguishable content) while still front-loading the primary keyword.
+
+**title**: Clean Girl Nails: 25 Looks That Are Anything But Boring
+**title_char_count**: 50 chars
+**meta_description**: Simple doesn't mean basic. From glazed nudes to negative-space French, here's how to nail (literally) the trend without looking like everyone else.
+**meta_char_count**: 148 chars
+
+**intro_hook_brief**: Open by naming the exact frustration the audience has — every "clean girl nails" post looks the same, five shades recycled with different names. Promise this one is organized to actually help pick a look, not just scroll past. Confident, slightly wry tone, not apologetic.
+
+**first_h2_hook_direction**: Apply the "anything but boring" angle to the first category (likely single-tone glazed) by immediately establishing that "simple" here means precise, not default — set the bar for the rest of the post's categorization structure.
+
+---
+
+## SECTION 9 — SEARCH JOURNEY
+**reader_arrival_state**: Curious and mildly fatigued — she's already seen several "clean girl nails" roundups and is looking for one that actually helps her decide, not just more of the same milky-white swatches.
+
+**journey_arc**:
+- Hook confirms this post is organized differently — categorized, not just numbered
+- Early section delivers immediate visual abundance across shade families (glazed, French, negative space)
+- Mid-post builds toward personalization — skin tone matching, shape guidance — that competitors skip
+- Later sections address her real uncertainty (is this the same as quiet luxury? does this work on short nails?)
+- Close with a clear "pick two or three, here's how to actually get them" payoff — identity confirmed, decision made easy
+
+**promise_to_deliver**: A clean girl nail guide organized well enough, and differentiated enough, that she doesn't need to open five more tabs to actually choose a look.
+
+**exit_state**: Confident and decided — she has 2-3 specific looks in mind and knows exactly what to search or show her nail tech.
+
+---
+
+## SECTION 10 — CONTENT STRUCTURE
+**h1**: Clean Girl Nails: 25 Looks That Are Anything But Boring
+
+**h2_structure**:
+1. What Are Clean Girl Nails, Really?
+2. Single-Tone Glazed Nails (The Foundation)
+3. Micro French Tips, Reinvented
+4. Negative Space and Sheer Nails
+5. Line Art and Minimal Accents
+6. Best Clean Girl Nail Colors by Skin Tone
+7. Best Nail Shapes for the Clean Girl Look
+8. Clean Girl Nails vs. Quiet Luxury Nails — What's the Difference?
+9. How to Get Clean Girl Nails at Home
+10. FAQ: Your Clean Girl Nail Questions, Answered
+
+**word_budget**:
+- introduction: 220 words
+- H2-1 (What Are Clean Girl Nails): 150 words
+- H2-2 (Single-Tone Glazed): 320 words
+- H2-3 (Micro French): 280 words
+- H2-4 (Negative Space/Sheer): 280 words
+- H2-5 (Line Art/Accents): 220 words
+- H2-6 (Skin Tone Colors): 320 words
+- H2-7 (Best Shapes): 260 words
+- H2-8 (vs Quiet Luxury): 220 words
+- H2-9 (At Home How-To): 200 words
+- H2-10 (FAQ): 200 words
+- conclusion: 180 words
+(Total: 2450 words)
+
+---
+
+## SECTION 11 — INTERNAL LINKS
+Solo mode — no cluster_links (no cluster_context.json). Cross-site discovery not run against mirelleinspo.com in this session (agent has no verified access to confirm live site structure/URLs for this domain — flagging rather than fabricating placeholder links per mandatory_tool_use_rule). Blog Gen Agent or a follow-up cross-site discovery pass should populate 2-4 relevant internal links from mirelleinspo.com's existing nail content library before publish.
+
+all_internal_links: []
+
+---
+
+## SECTION 12 — VOICE AND TONE
+**recommended_voice**: Confident girlfriend-editor — knowledgeable but never clinical, slightly wry about trend fatigue without being cynical about the trend itself.
+
+**tone_characteristics**: Direct opinions stated plainly (not hedged with "some prefer..."); short punchy sentences mixed with one longer explanatory sentence per section; second-person "you" throughout; zero salesy language; confident category-naming instead of vague adjectives.
+
+**language_style**: Short declarative sentences for impact, occasional rhetorical question to mirror reader's internal voice, no jargon without immediate plain-English translation, light wit permitted in intro/conclusion only — not in instructional sections.
+
+**audience_match**: This reader is trend-literate and slightly skeptical of recycled content — she responds to a voice that acknowledges the saturation ("yes, another clean girl nails post — but here's why this one's actually useful") rather than pretending this is a novel discovery.
+
+---
+
+## SECTION 13 — EXTERNAL LINKS
+| URL | Context | Anchor suggestion |
+|---|---|---|
+| https://shangmengnails.com/blogs/trends/minimalist-nail-designs-press-on | Cite when discussing why minimalist nails are dominating 2026 trend reporting | "trend data on the rise of minimalist manicures" |
+| https://skinscarelab.com/minimal-clean-girl-nails-2026 | Cite in skin-tone matching section as supporting reference | "shade-matching guidance by skin tone" |
+
+---
+
+## SECTION 14 — EXECUTION PLAN
+
+### Block 1: Keyword Execution
+- primary_keyword: clean girl nail inspo
+- top_5_density_baseline: 11.6
+- total_mention_target: 14 (baseline + ~2-3)
+- first_100_words_plan:
+  - mention_1: Sentence 1-2 of intro — naming the trend directly in the hook
+  - mention_2: Sentence 4-5 of intro — reinforcing before transition into "what this post covers"
+- first_half_target: 8 mentions — first ~1225 words (denser)
+- second_half_target: 6 mentions — second ~1225 words
+- strong_tag_rule: every one of the 14 mentions wrapped in `<strong>` tags, scanned after each paragraph
+- keywords_to_avoid_active: none (solo mode, no cluster keyword list)
+
+### Block 2: Word Budget
+- total_target: 2450 words (±50 tolerance)
+- introduction: 220 | conclusion: 180
+- H2 budgets: see Section 10 table above
+- tracking_rule: check running total after each H2; cut before moving on if over, never compensate later
+
+### Block 3: Image Plan
+- total_images: 7
+- hero_image: frontmatter only, never in body
+- body_images: 6
+- assignments:
+  1. place_after: H2-2 (Single-Tone Glazed) — standard_inspiration — glazed nude/milky white manicure, short square shape, glossy finish
+  2. place_after: H2-3 (Micro French) — standard_inspiration — ultra-thin white or beige micro French tip on sheer nude base
+  3. place_after: H2-4 (Negative Space/Sheer) — standard_inspiration — negative space French or sheer jelly nude, showing visible nail bed
+  4. place_after: H2-5 (Line Art) — standard_inspiration — single thin gold or white line accent on nude base, one accent nail
+  5. place_after: H2-6 (Skin Tone Colors) — standard_inspiration — two-tone side-by-side of warm vs cool nude shades on different skin tones
+  6. place_after: H2-7 (Best Shapes) — standard_inspiration — short squoval or almond shape, clean glossy nude, showing shape clearly
+- image_type_rule: all 6 slots = standard_inspiration; this is an inspirational-intent gallery post, no comparison/tutorial infographic need identified
+- path_rule: /images/blog/clean-girl-nail-inspo/[filename].webp (no topic_slug — standalone post)
+
+### Block 4: Opening Technique Assignments
+- Introduction: Technique 2 — The Direct Address (naming reader's exact frustration with existing content)
+- H2-2 (Single-Tone Glazed): Technique 4 — The Definition Lead
+- H2-6 (Skin Tone Colors): Technique 3 — The Reframe
+- H2-8 (vs Quiet Luxury): Technique 2 — The Direct Address (naming the confusion directly)
+- Conclusion: Technique 3 — The Reframe
+(No two consecutive H2s share a technique; conclusion is Technique 3 per rule)
+
+### Block 5: Link Placements
+No internal links locked this session — see Section 11 note. External links per Section 13 table, placed at: shangmengnails source in H2-1 (What Are Clean Girl Nails, trend context), skinscarelab source in H2-6 (Skin Tone Colors).
+
+### Block 6: AEO/GEO Plan
+- aeo_assignments:
+  - "What are clean girl nails?" → H2-1 → direct 2-3 sentence definition immediately after heading
+  - "What's the difference between clean girl nails and quiet luxury nails?" → H2-8 → direct comparative answer immediately after heading
+  - "Do clean girl nails work on short nails?" → H2-7 → direct yes/no + reasoning immediately after heading
+  - "How do I get clean girl nails at home?" → H2-9 → direct numbered-step summary immediately after heading
+- geo_entity_statements:
+  - "Glazed donut nail" → H2-2 → clear declarative definition sentence
+  - "Micro French tip" → H2-3 → clear declarative definition sentence
+  - "Negative space nails" → H2-4 → clear declarative definition sentence
+  - "Quiet luxury nails" → H2-8 → clear declarative definition sentence, contrasted against clean girl
+
+### Block 7: Active Constraints
+- em_dash_banned: yes, replace with comma/period/parenthetical if one forms
+- banned_vocab_watch: "elevate," "effortless" (used sparingly, max once), "game-changer," "unlock," "seamless," "journey," "curated," "must-have"
+- american_english_active: color, personalize, favorite, gray — throughout
+- keyword_density_reminder: check count after every 2 H2s against 14-mention target, denser in first half
+- image_path_reminder: /images/blog/clean-girl-nail-inspo/filename.webp
+- internal_link_url_reminder: N/A this session — flagged in Section 11
+- hero_image_reminder: frontmatter only, never in body
+- strong_tag_reminder: every keyword mention wrapped, scan after every paragraph
