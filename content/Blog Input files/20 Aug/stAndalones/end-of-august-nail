@@ -1,0 +1,411 @@
+{
+  "section_1_file_authority": {
+    "statement": "THIS FILE IS THE SINGLE SOURCE OF TRUTH FOR THE BLOG GEN AGENT. All values in POST_CONSTANTS are hardcoded — Blog Gen Agent does not ask, adjust, or override them. All keywords, H2 structure, audience intelligence, internal links, and tone defined here must be followed exactly."
+  },
+
+  "section_2_post_constants": {
+    "slug": "end-of-august-nails",
+    "canonical": "https://mirelleinspo.com/blog/end-of-august-nails",
+    "post_type": "standalone",
+    "intent": "seasonal_trend",
+    "word_count": 2750,
+    "image_count": 7,
+    "show_inspo_gallery_link": false,
+    "template": "posts",
+    "hero_dimensions": "1200x675",
+    "category": "Nail Ideas by Month",
+    "publish_date": "2026-08-21",
+    "author": "jyoti-mirelle"
+  },
+
+  "section_4_serp_analysis": {
+    "blog_gen_instruction": "our_strategic_approach is a specific, evidence-based outperform strategy. Use it as the concrete angle for the introduction and conclusion, and to guide depth/coverage decisions in relevant H2 sections. Critical: this post must stay in the FINAL-WEEK-OF-AUGUST lane specifically, not drift into general 'august nails' territory — that is a different post on this same site (mirelleinspo.com/blog/august/august-nails) and cannibalization must be avoided.",
+    "competitor_gaps": [
+      "No fetched competitor gives a durability/formula answer specific to the actual transition window (gel vs regular polish surviving the shift from AC to first cool evenings) — livinggorgeous and greenweddingshoes mention finishes but not wear-time logic for this exact 1-2 week window",
+      "No competitor addresses the 'what to actually ask your nail tech for right now' framing — all are pure visual roundups with no salon-conversation guidance",
+      "None directly answer 'is it OK to wear bright summer colors at the end of August' — a real anxiety signal from Quora/forum-style content — competitors imply the answer but never state it directly",
+      "No competitor covers toe/pedicure crossover for this specific window despite Labor Day travel relevance"
+    ],
+    "missing_semantic_territory": [
+      "\"last week of August nails\" / \"final week of summer manicure\" phrasing — none of the 5 fetched pages use this framing despite it matching the actual search intent",
+      "\"nails for Labor Day weekend AND still summer\" dual-purpose framing — livinggorgeous splits this into two separate posts (late-summer + Labor Day) rather than merging",
+      "Direct color-swap guidance (\"replace X summer shade with Y\") is present in nailinspoideas but not tied to specific end-of-month occasions (last beach day vs back-to-school vs Labor Day)"
+    ],
+    "our_strategic_approach": "Competitors treat 'August nails' as one long flat month and 'Labor Day nails' as a separate, disconnected post — nobody owns the specific final-week-of-August transition moment as its own topic. This post claims that exact gap: the reader who is not asking 'what's trending in August' (broad) but 'what do I do right now, this week, before summer actually ends.' Structure content around real end-of-month occasions — last beach trip, back-to-school week, Labor Day — rather than a flat color list, and give a direct, confident answer to the 'can I still wear bright colors' anxiety that competitors leave implicit. Differentiate hard from the site's own broader 'August Nails' post by never covering birthstone/early-August/general summer color content — everything here is filtered through 'the clock is running out' urgency.",
+    "top_5_fetched_pages_summary": [
+      {
+        "url": "https://greenweddingshoes.com/august-nails/",
+        "word_count": 2400,
+        "h2_count": 7,
+        "keyword_mentions": 3,
+        "note": "Strong trend-naming (jelly, glazed chrome) but zero real differentiation between early vs late August — treats the whole month as one moment."
+      },
+      {
+        "url": "https://nailinspoideas.com/articles/august-nails-2026",
+        "word_count": 1600,
+        "h2_count": 6,
+        "keyword_mentions": 2,
+        "note": "Explicitly uses 'end-of-summer' framing and a useful late-summer-vs-early-fall split, but thin per-idea depth (2-3 sentences each) and heavy interactive-tool self-promotion."
+      },
+      {
+        "url": "https://www.livinggorgeous.com/august-nail-ideas-late-summer/",
+        "word_count": 3800,
+        "h2_count": 25,
+        "keyword_mentions": 4,
+        "note": "Deep, personal, well-written per-idea descriptions; genuinely acknowledges the summer/fall bridge mood but is a flat 25-idea list with no occasion-based structure."
+      },
+      {
+        "url": "https://www.livinggorgeous.com/labor-day-weekend-nails/",
+        "word_count": 4400,
+        "h2_count": 25,
+        "keyword_mentions": 2,
+        "note": "Best occasion-specific writing of any fetched page (denim, cabana stripes, gingham picnic tied to real Labor Day activities) but keyword-locked to 'Labor Day' only, ignores the broader end-of-August window."
+      },
+      {
+        "url": "https://maniology.com/blogs/maniology-blog/august-nail-designs",
+        "word_count": 1400,
+        "h2_count": 13,
+        "keyword_mentions": 3,
+        "note": "Explicitly frames itself as 'mark the end of summer' in title, oldest/thinnest content (2024), heavy product-plug structure limits editorial depth."
+      }
+    ],
+    "top_5_word_count_average": 2720,
+    "top_5_keyword_density_average": 3,
+    "best_external_sources_found": []
+  },
+
+  "section_5_audience_intelligence": {
+    "blog_gen_instruction": "This is your primary creative brief. Every paragraph written for this specific person with this specific intent. Satisfy them completely.",
+    "who_they_are": "Someone in the actual final stretch of August — not planning a summer trip months out, but deciding on a manicure for this week: a last beach weekend, the first week back at school or work, or the Labor Day holiday itself. Mid-to-late 20s through 40s, already has a color point of view from earlier in summer, checking whether it still holds up or needs a swap.",
+    "what_they_want_from_this_post": "A direct, current answer: what to actually book or paint on right now, in the exact narrow window between full summer brights and full fall darks, without redoing the whole set again in three weeks.",
+    "what_frustrates_them": "Generic 'August nail' roundups that read like they were written in June with the date changed, or trend lists that don't say whether a color/finish will still look intentional past Labor Day — leaving them to guess if a choice is about to look dated.",
+    "top_5_pain_points": [
+      "Uncertain whether bright summer colors still 'work' this late or read as out of season",
+      "Wants a manicure that survives the specific stretch from now through Labor Day without an awkward growing-out phase",
+      "Torn between one last vacation/beach set and something more back-to-routine appropriate",
+      "Doesn't want anything that reads as 'costume' seasonal (literal pumpkins, literal fall leaves) this early",
+      "Wants practical durability guidance (gel vs regular polish) for a specific short but eventful window, not generic care tips"
+    ],
+    "exact_user_phrases": [
+      "end of summer nails that transition into fall",
+      "last of summer nails",
+      "late August nail colors",
+      "nails for the end of August beginning of September",
+      "what nail colors work into September",
+      "can I still wear bright nails in late August",
+      "nails for last beach trip",
+      "Labor Day weekend nail ideas",
+      "August into September nails",
+      "nails that survive through Labor Day"
+    ],
+    "intent_content_signals": [
+      "Responds to specific named occasions (last beach day, back-to-school week, Labor Day) over abstract color theory",
+      "Wants confident, direct styling verdicts, not hedged 'it depends' framing",
+      "Prefers short/medium practical shapes (square, almond, oval) called out explicitly over long editorial extensions",
+      "Wants finish (jelly, chrome, milky) discussed as a durability/mood decision, not just aesthetic",
+      "Responds well to explicit 'still works' vs 'starting to feel off' framing for specific shades"
+    ]
+  },
+
+  "section_6_semantic_keyword_data": {
+    "blog_gen_instruction": "Primary keyword in strong tags every mention. AEO terms trigger direct answer paragraphs. User language woven naturally.",
+    "primary_keyword": "end of august nails",
+    "keyword_variations": [
+      "end of august nail ideas",
+      "end of august nail colors",
+      "late august nails",
+      "nails for the end of august",
+      "end of summer nails",
+      "last of summer nails",
+      "August into September nails"
+    ],
+    "cluster_keywords": [
+      "Labor Day weekend nails",
+      "back to school nail colors",
+      "summer to fall transition nails",
+      "late summer nail ideas",
+      "early fall nail colors",
+      "September nail colors",
+      "final week of summer manicure",
+      "nails before fall",
+      "last beach trip nails",
+      "transitional nail colors"
+    ],
+    "lsi_terms": [
+      "jelly nail finish",
+      "milky white nails",
+      "glazed chrome",
+      "terracotta nail polish",
+      "muted olive nails",
+      "deep cherry nails",
+      "pool blue nails",
+      "short almond nails",
+      "gel manicure longevity",
+      "copper metallic tips",
+      "denim blue nails",
+      "cabana stripe nails",
+      "sheer coral polish",
+      "warm neutral manicure",
+      "micro French tips"
+    ],
+    "aeo_terms": [
+      "what nail colors are best for the end of august",
+      "can you still wear bright nail colors in late august",
+      "what nail colors transition from summer to fall",
+      "how do I make my end of august manicure last through labor day",
+      "is gel or regular polish better for late august nails",
+      "what's a good nail color for the last week of summer",
+      "what nail shapes work best for late august",
+      "should back to school nails be different from vacation nails",
+      "what colors are too summery for late august"
+    ],
+    "technical_terms": [
+      "jelly finish",
+      "glazed chrome",
+      "milky finish",
+      "gel polish",
+      "cat-eye magnetic polish",
+      "micro French tip",
+      "aura nails",
+      "squoval shape"
+    ],
+    "user_language": [
+      "last chance for summer nails",
+      "nails that won't look dated in two weeks",
+      "one last beach mani",
+      "back to routine nails",
+      "still feels like summer but not for long",
+      "something that carries into fall",
+      "not ready to give up bright color yet",
+      "nails for the final stretch"
+    ]
+  },
+
+  "section_7_voice_and_ai_queries": {
+    "blog_gen_instruction": "Answer every query directly in the relevant H2 section body. If a query cannot be addressed naturally in the body, route it to faqItems.",
+    "queries": [
+      "What nail colors work best for the end of August?",
+      "Can I still wear bright summer nail colors in late August?",
+      "What nail colors transition well from summer into fall?",
+      "What's a good nail color for the last week of summer?",
+      "How do I make my manicure last through Labor Day weekend?",
+      "Is gel or regular polish better for the end of summer?",
+      "What nail shapes hold up best in late August heat?",
+      "Should my nails look different for back to school versus a last vacation?",
+      "What's the difference between August nails and end of August nails?",
+      "Are jelly nails still in style at the end of summer?",
+      "What nail colors are too bright for late August?",
+      "What nail designs work for both a beach trip and back to school?",
+      "How far in advance should I book end of August nails before Labor Day?",
+      "What nail finish lasts longest in late-summer humidity?"
+    ]
+  },
+
+  "section_8_hook_and_ctr": {
+    "blog_gen_instruction": "READ THIS SECTION BEFORE WRITING THE TITLE, META DESCRIPTION, INTRO, OR FIRST H2. The title and description here are the option the USER SELECTED from real, evidence-based choices during phase_6 — use them exactly. Do not deviate.",
+    "real_serp_findings_summary": "Fetched competitor titles cluster around two patterns: numbered-list-plus-'end of summer' framing (nailinspoideas, greenweddingshoes) and 'mark/close out the season' language (maniology). None front-load a hard deadline feeling or name 'end of august' as its own distinct phrase — all treat it as a subset of 'August nails' generally, which is the exact gap this post's title exploits.",
+    "selected_option_rationale": "Names the deadline directly ('before fall hits') rather than the vaguer 'end of summer' phrasing competitors default to, which matches the exact-match search term and the reader's real urgency, while '20 looks' front-loads the concrete promise competitors bury.",
+    "title": "End of August Nails: 20 Looks Before Fall Hits",
+    "title_char_count": 47,
+    "meta_description": "Bright still works but richer tones are creeping in. Browse 20 end of august nails ideas that bridge the final week of summer into early fall.",
+    "meta_char_count": 145,
+    "intro_hook_brief": "Open on the specific, felt tension of this exact week — not summer anymore in mood, not fall yet in weather — and name that the reader is not looking for generic August content but the narrow final-stretch window. Promise a direct, confident answer rather than a hedge.",
+    "first_h2_hook_direction": "Lead the first H2 with the direct yes/no the reader is anxious about (can bright still work right now) before moving into specific colors — mirrors the title's confident, deadline-aware tone without repeating it."
+  },
+
+  "section_9_search_journey": {
+    "blog_gen_instruction": "This is the emotional contract with the reader. Every section of the post must honour the promise made.",
+    "reader_arrival_state": "Trend-aware and slightly time-pressured — aware summer is ending very soon and wants to make one confident, current decision rather than research indefinitely.",
+    "journey_arc": [
+      "Open by validating the specific in-between feeling and confirming this post answers 'right now,' not 'sometime in August'",
+      "Resolve the core anxiety directly: yes, bright can still work, here is how to tell what still reads as current versus dated",
+      "Move through color and finish territory organized by what's actually happening this week, not a flat list",
+      "Layer in the real occasions (last beach day, back-to-school, Labor Day) so the reader can map directly to their own week",
+      "Close with a clear, confident 'this is what to book' moment and a durability note so the choice holds through the transition"
+    ],
+    "promise_to_deliver": "A confident, current answer to what to wear on your nails in the exact final stretch of August, with enough occasion-specific range to match whatever this week actually holds.",
+    "exit_state": "Decisive and reassured — has one clear pick in mind (or two, split between vacation and back-to-routine) and knows it will hold up past Labor Day without looking dated."
+  },
+
+  "section_10_content_structure": {
+    "blog_gen_instruction": "This H2 structure is research-driven and must be followed exactly. Do not rename, reorder, or remove H2s without user instruction. Word budget per section is set — follow it. H3s may be added at editorial discretion.",
+    "h1": "End of August Nails: 20 Looks Before Fall Hits",
+    "h2_structure": [
+      "Can You Still Wear Bright Nails at the End of August?",
+      "The Best End of August Nail Colors Right Now",
+      "Transitional Finishes: Jelly, Chrome, and Milky",
+      "One Last Beach Trip Nail Ideas",
+      "Back to School and Back to Routine Nails",
+      "Labor Day Weekend Nail Ideas",
+      "Shapes That Hold Up Through the Transition",
+      "How to Make Your End of August Manicure Last"
+    ],
+    "word_budget": {
+      "introduction": "230 words",
+      "conclusion": "180 words",
+      "per_h2": {
+        "Can You Still Wear Bright Nails at the End of August?": 260,
+        "The Best End of August Nail Colors Right Now": 420,
+        "Transitional Finishes: Jelly, Chrome, and Milky": 340,
+        "One Last Beach Trip Nail Ideas": 320,
+        "Back to School and Back to Routine Nails": 340,
+        "Labor Day Weekend Nail Ideas": 320,
+        "Shapes That Hold Up Through the Transition": 230,
+        "How to Make Your End of August Manicure Last": 250
+      }
+    }
+  },
+
+  "section_11_internal_links": {
+    "blog_gen_instruction": "Every link below must appear in the post. Cross-site links use the provided descriptive anchor. Place each link where the placement note says — woven naturally into prose, never as a standalone CTA. Total internal links must not exceed 6.",
+    "fields": {
+      "all_internal_links": [
+        {
+          "url_or_slug": "https://mirelleinspo.com/blog/august/august-nail-trends-2026",
+          "title": "August Nail Trends 2026: Colors & Finishes to Wear Now",
+          "anchor_text": "the full color and finish breakdown for August overall",
+          "placement_note": "In 'The Best End of August Nail Colors Right Now' — for the reader who wants the broader month's palette beyond this final-week focus",
+          "link_type": "cross-site"
+        },
+        {
+          "url_or_slug": "https://mirelleinspo.com/blog/september/september-nails",
+          "title": "September Nails: 48 Trending Ideas for 2026",
+          "anchor_text": "where the palette goes next once September actually arrives",
+          "placement_note": "In 'How to Make Your End of August Manicure Last' — natural forward-looking link as the post closes out the transition window",
+          "link_type": "cross-site"
+        }
+      ]
+    }
+  },
+
+  "section_12_voice_tone": {
+    "blog_gen_instruction": "This is the voice for this specific post. Layer on top of Mirellé editorial framework. Do not default to generic AI tone.",
+    "recommended_voice": "Confident, time-aware guide",
+    "tone_characteristics": [
+      "Direct and decisive — resolves uncertainty rather than hedging with 'it depends'",
+      "Slightly urgent without being anxious — acknowledges the clock without manufacturing panic",
+      "Specific and occasion-grounded rather than abstractly trend-forecasty",
+      "Warm, editorial 'I'd pick this' confidence similar to the livinggorgeous voice, but tighter and less meandering"
+    ],
+    "language_style": "Second person throughout, short-to-medium sentences, direct verdicts ('this still works,' 'this is starting to feel off') rather than qualified statements.",
+    "audience_match": "This reader wants permission and clarity, not more options to weigh — a confident, slightly time-pressured voice matches exactly what they came for."
+  },
+
+  "section_13_external_links": {
+    "blog_gen_instruction": "Include all external links where indicated. May be empty if none of the fetched pages qualified as genuinely citation-worthy.",
+    "fields": {
+      "links": []
+    }
+  },
+
+  "section_14_execution_plan": {
+    "blog_gen_instruction": "READ THIS SECTION FIRST. Lock every value. Execute exactly. Do not recalculate, do not adjust, do not deviate.",
+    "calculated_by": "Input Gen Agent",
+    "block_1_keyword_execution": {
+      "primary_keyword": "end of august nails",
+      "top_5_density_baseline": 3,
+      "total_mention_target": "3 + 3 = 6 total mentions",
+      "first_100_words_plan": {
+        "rule": "Primary keyword MUST appear TWICE in the first 100 words. Mandatory.",
+        "mention_1": "sentence 1-2 of introduction — naming the exact in-between feeling this post addresses",
+        "mention_2": "sentence 4-5 of introduction — stating the post's direct promise"
+      },
+      "first_half_target": "4 mentions — first 1375 words. Run denser in first half.",
+      "second_half_target": "2 mentions — second 1375 words",
+      "strong_tag_rule": "EVERY single mention of the primary keyword — all 6 of them — wrapped in <strong> tags. No exceptions.",
+      "keywords_to_avoid_active": []
+    },
+    "block_2_word_budget": {
+      "total_target": "2750 words — +/-50 words tolerance, never exceed",
+      "introduction": "230 words",
+      "conclusion": "180 words",
+      "h2_budgets": [
+        {"heading": "Can You Still Wear Bright Nails at the End of August?", "budget": 260, "complexity": "low"},
+        {"heading": "The Best End of August Nail Colors Right Now", "budget": 420, "complexity": "high"},
+        {"heading": "Transitional Finishes: Jelly, Chrome, and Milky", "budget": 340, "complexity": "medium"},
+        {"heading": "One Last Beach Trip Nail Ideas", "budget": 320, "complexity": "medium"},
+        {"heading": "Back to School and Back to Routine Nails", "budget": 340, "complexity": "medium"},
+        {"heading": "Labor Day Weekend Nail Ideas", "budget": 320, "complexity": "medium"},
+        {"heading": "Shapes That Hold Up Through the Transition", "budget": 230, "complexity": "low"},
+        {"heading": "How to Make Your End of August Manicure Last", "budget": 250, "complexity": "low"}
+      ],
+      "tracking_rule": "Track running word total at the end of every H2 section. If a section is running over budget — cut before moving to the next section."
+    },
+    "block_3_image_plan": {
+      "total_images": 7,
+      "hero_image": "frontmatter only — NEVER appears in post body",
+      "body_images": 6,
+      "assignments": [
+        {"image_number": 1, "place_after": "The Best End of August Nail Colors Right Now", "image_type": "standard_inspiration", "section_context": "A terracotta or deep coral manicure on short almond nails, editorial flatlay style"},
+        {"image_number": 2, "place_after": "Transitional Finishes: Jelly, Chrome, and Milky", "image_type": "standard_inspiration", "section_context": "Close-up of a jelly-finish manicure showing translucent depth, e.g. berry or cherry jelly on short square nails"},
+        {"image_number": 3, "place_after": "One Last Beach Trip Nail Ideas", "image_type": "standard_inspiration", "section_context": "Pool-blue or seafoam manicure styled with a beachy context, short to medium almond shape"},
+        {"image_number": 4, "place_after": "Back to School and Back to Routine Nails", "image_type": "standard_inspiration", "section_context": "Milky white or muted neutral micro-French set on short squoval nails, clean and classroom/office-appropriate"},
+        {"image_number": 5, "place_after": "Labor Day Weekend Nail Ideas", "image_type": "standard_inspiration", "section_context": "Denim blue chrome or cabana-stripe manicure styled with casual Labor Day weekend context"},
+        {"image_number": 6, "place_after": "Shapes That Hold Up Through the Transition", "image_type": "standard_inspiration", "section_context": "Side-by-side shape reference feel but as a single styled hand shot — short square vs short almond in a neutral shade"}
+      ],
+      "image_type_rule": {
+        "default": "standard_inspiration",
+        "infographic_allowed_when": "Not applicable — this post's intent is seasonal_trend, not comparison or tutorial, so no infographic slot is used",
+        "banned_absolutely": "NEVER a tool/equipment image. NEVER a literal photo-style side-by-side comparison image."
+      },
+      "path_rule": "/images/blog/end-of-august-nails/filename.webp — no topic_slug segment (standalone/solo mode), slug folder, leading slash"
+    },
+    "block_4_opening_technique_assignments": {
+      "rule": "No two consecutive sections use the same technique. Conclusion = Technique 1 or 3 only.",
+      "assignments": [
+        {"section": "Introduction", "technique": "Technique 2 — The Scene/Feeling"},
+        {"section": "Can You Still Wear Bright Nails at the End of August?", "technique": "Technique 4 — The Direct Question"},
+        {"section": "The Best End of August Nail Colors Right Now", "technique": "Technique 1 — The Claim"},
+        {"section": "Transitional Finishes: Jelly, Chrome, and Milky", "technique": "Technique 3 — The Reframe"},
+        {"section": "One Last Beach Trip Nail Ideas", "technique": "Technique 2 — The Scene/Feeling"},
+        {"section": "Back to School and Back to Routine Nails", "technique": "Technique 1 — The Claim"},
+        {"section": "Labor Day Weekend Nail Ideas", "technique": "Technique 2 — The Scene/Feeling"},
+        {"section": "Shapes That Hold Up Through the Transition", "technique": "Technique 4 — The Direct Question"},
+        {"section": "How to Make Your End of August Manicure Last", "technique": "Technique 3 — The Reframe"},
+        {"section": "Conclusion", "technique": "Technique 1 — The Claim"}
+      ],
+      "banned_opener_rule": "Check every opener against banned_opening_approaches in blog gen prompt before writing the second sentence"
+    },
+    "block_5_link_placements": {
+      "rule": "Every link placed exactly where specified. Anchor texts used verbatim — never rewritten. Links woven into prose naturally — never standalone CTAs.",
+      "links": [
+        {
+          "anchor_text": "the full color and finish breakdown for August overall",
+          "full_url": "https://mirelleinspo.com/blog/august/august-nail-trends-2026",
+          "place_in_section": "The Best End of August Nail Colors Right Now",
+          "placement_context": "As a natural aside for readers wanting the broader month's palette, not just this final-week angle",
+          "link_type": "cross-site"
+        },
+        {
+          "anchor_text": "where the palette goes next once September actually arrives",
+          "full_url": "https://mirelleinspo.com/blog/september/september-nails",
+          "place_in_section": "How to Make Your End of August Manicure Last",
+          "placement_context": "As a forward-looking pointer while discussing longevity into the following month",
+          "link_type": "cross-site"
+        }
+      ]
+    },
+    "block_6_aeo_geo_plan": {
+      "aeo_assignments": [
+        {"aeo_term": "Can you still wear bright nail colors in late August?", "assigned_to_section": "Can You Still Wear Bright Nails at the End of August?", "execution": "Write a direct 2-3 sentence yes/how answer immediately after the H2 heading, before elaboration."},
+        {"aeo_term": "What nail colors transition well from summer into fall?", "assigned_to_section": "The Best End of August Nail Colors Right Now", "execution": "Direct 2-3 sentence answer naming the specific shade families immediately after the heading."},
+        {"aeo_term": "Is gel or regular polish better for the end of summer?", "assigned_to_section": "How to Make Your End of August Manicure Last", "execution": "Direct 2-3 sentence comparison answer immediately after the heading."},
+        {"aeo_term": "How do I make my manicure last through Labor Day weekend?", "assigned_to_section": "Labor Day Weekend Nail Ideas", "execution": "Direct 2-3 sentence practical answer woven near the top of the section."}
+      ],
+      "geo_entity_statements": [
+        {"entity": "jelly finish", "assigned_to_section": "Transitional Finishes: Jelly, Chrome, and Milky", "execution": "Clear declarative definition sentence — confident, no hedging, extractable as a citation."},
+        {"entity": "glazed chrome", "assigned_to_section": "Transitional Finishes: Jelly, Chrome, and Milky", "execution": "Clear declarative definition distinguishing it from mirror chrome."}
+      ]
+    },
+    "block_7_active_constraints": {
+      "em_dash_banned": "Long em dash does not appear anywhere. If one forms while writing — stop, replace with: comma / new sentence / parentheses / but / restructure.",
+      "banned_vocab_watch": ["elevate", "effortless", "must-have", "game-changer", "unleash", "elegant", "seamless"],
+      "american_english_active": "color, recognize, -ize, -or — every instance, no exceptions.",
+      "keyword_density_reminder": "After every 2 H2 sections — count current keyword mentions. Verify running total is on track to hit 6 total. First half denser than second half.",
+      "image_path_reminder": "/images/blog/end-of-august-nails/filename.webp — no topic_slug segment, standalone post.",
+      "internal_link_url_reminder": "Cross-site links = exact URL as discovered. Never bare /slug.",
+      "hero_image_reminder": "Hero = frontmatter only. Never place hero image in body.",
+      "strong_tag_reminder": "Every primary keyword mention = <strong> tags. Scan after every paragraph."
+    }
+  }
+}
