@@ -1,0 +1,290 @@
+{
+  "section_1_file_authority": {
+    "statement": "THIS FILE IS THE SINGLE SOURCE OF TRUTH FOR THE BLOG GEN AGENT. All values in POST_CONSTANTS are hardcoded — Blog Gen Agent does not ask, adjust, or override them. All keywords, H2 structure, audience intelligence, internal links, and tone defined here must be followed exactly."
+  },
+  "section_2_post_constants": {
+    "slug": "japanese-manicure-cost",
+    "topic_slug": null,
+    "canonical": "https://mirelleinspo.com/blog/japanese-manicure-cost",
+    "post_type": "standalone",
+    "intent": "informational",
+    "word_count": 1700,
+    "image_count": 7,
+    "show_inspo_gallery_link": false,
+    "template": "posts",
+    "hero_dimensions": "1200x675",
+    "category": "Nail Care Guide",
+    "publish_date": "2026-08-20",
+    "author": "jyoti-mirelle"
+  },
+  "section_3_cluster_snapshot": "OMITTED — solo mode, no cluster_context.json",
+  "section_4_serp_analysis": {
+    "competitor_gaps": [
+      "No fetched competitor page clearly separates 'traditional Japanese manicure' (P.Shine paste/powder buff method, no polish, $40-80) from 'Japanese gel manicure' (Japanese gel polish brands like Kokoist/Leafgel, $75-160+) as two entirely different services with different price tiers — readers searching this term are conflating both, and every top result picks one meaning and ignores the other",
+      "No competitor gives a real side-by-side cost table comparing Japanese manicure to a regular manicure, gel manicure, and Russian manicure in one place — readers are left cross-referencing multiple articles",
+      "No competitor addresses 'is it worth the extra cost' with an actual cost-per-wear or value framing — Copenhagen Fashion Summit asserts 'worth it' without justifying it numerically",
+      "None of the 5 fetched pages mention DIY kit cost with a real price point beyond a vague range; only Almond Nails and Copenhagen give a number ($25-40 DIY), but neither compares it to salon cost per use over time"
+    ],
+    "missing_semantic_territory": [
+      "'japanese manicure vs japanese gel cost' — confirmed demand via Parade and WhoWhatWear both drawing this distinction but not on the cost angle specifically",
+      "'japanese manicure price NYC' — city-specific figure ($80) confirmed only in Parade, a real gap for a broader city breakdown",
+      "'is japanese manicure worth it' — confirmed pain point across Copenhagen, WhoWhatWear, and Business Insider source, but no competitor resolves it with numbers"
+    ],
+    "our_strategic_approach": "Every fetched competitor treats 'Japanese manicure' as a single, single-priced service, but real pricing data shows two genuinely different services hiding under the same search term: the traditional paste-and-powder P.Shine-style treatment ($40-80, no polish) and the Japanese gel manicure using imported gel brands ($75-160+, full color). This post's central differentiator is naming and pricing both clearly in one place, something no fetched competitor does. It will also be the first to show a real comparison table against regular and gel manicure cost (an internal-linking asset the site already has strong cost data for), and to resolve the 'is it worth it' question with an actual cost-per-wear calculation rather than a vague reassurance. This gives the post a genuine reason to outrank pages that only vaguely gesture at 'it costs more, but it's worth it.'",
+    "top_5_fetched_pages_summary": [
+      {"url": "https://parade.com/beauty/japanese-manicure", "word_count": 1420, "h2_count": 7, "keyword_mention_count": 6, "note": "Deep expert-sourced page but cost is a single buried sentence ($80 NYC gel vs $60 regular gel) inside a benefits H2, not a dedicated section"},
+      {"url": "https://www.copenhagenfashionsummit.com/what-is-a-japanese-manicure-benefits-process/", "word_count": 1680, "h2_count": 9, "keyword_mention_count": 11, "note": "Has a real dedicated cost H2 with a comparison table (Japanese vs gel), strongest cost treatment of the five, but ranges are vague ($40-80) with no city or service-type breakdown"},
+      {"url": "https://www.almondnails.com/what-is-a-japanese-manicure/", "word_count": 1180, "h2_count": 5, "keyword_mention_count": 9, "note": "Credentialed author, dedicated 'How Much Is A Japanese Manicure' H2, gives DIY vs salon split but no city-level or gel-vs-traditional distinction"},
+      {"url": "https://www.refinery29.com/en-us/japanese-manicure-nails-trend", "word_count": 1050, "h2_count": 4, "keyword_mention_count": 3, "note": "Two named experts, strong process detail, but cost coverage is a single vague paragraph with no real number given at all"},
+      {"url": "https://www.whowhatwear.com/beauty/nails/japanese-gel", "word_count": 1750, "h2_count": 5, "keyword_mention_count": 4, "note": "First-person review format with two celebrity nail artists quoted, real price point ($110-160 across a related AOL-sourced comparison), but frames only the gel variant and never addresses the traditional P.Shine treatment at all"}
+    ],
+    "top_5_word_count_average": 1416,
+    "top_5_keyword_density_average": 6.6,
+    "best_external_sources_found": [
+      {"url": "https://parade.com/beauty/japanese-manicure", "why": "Two named, credentialed nail industry experts (international championship judge, beauty educator/studio founder) directly quoted on cost and technique — genuine editorial authority"},
+      {"url": "https://www.whowhatwear.com/beauty/nails/japanese-gel", "why": "Two celebrity manicurists quoted, first-person tested review with real salon pricing context — genuine editorial authority and E-E-A-T signal"}
+    ]
+  },
+  "section_5_audience_intelligence": {
+    "who_they_are": "Someone who has seen 'Japanese manicure' mentioned online (TikTok/Instagram) or on a salon menu and wants a straight answer on price before booking — likely comparing it mentally to a regular or gel manicure they already get. Mixed expertise: some know it's the paste-and-buff treatment, many are actually thinking of 'Japanese gel' and don't yet realize these are different things.",
+    "what_they_want_from_this_post": "A clear number (or range) they can trust, a fast way to tell which version they're actually being quoted for, and reassurance on whether the extra cost is justified versus what they already pay",
+    "what_frustrates_them": "Every article they've found either gives a vague 'it costs more' statement with no real number, or covers only one of the two services (traditional OR gel) without flagging that there are two different things with two different price tags",
+    "top_5_pain_points": [
+      "Can't tell if a salon's 'Japanese manicure' listing means the paste treatment or Japanese gel polish, and the price difference is significant",
+      "No clear number to sanity-check against — worried about being overcharged or quoted a tourist-trap price",
+      "Doesn't know if DIY kits ($25-40) are actually cheaper long-term than salon visits",
+      "Uncertain whether the extra cost over a regular manicure ($20-35) is justified by anything measurable, not just vague nail-health claims",
+      "Confused by wildly different figures seen online ($30 DIY vs $160 gel version) with no explanation for the gap"
+    ],
+    "exact_user_phrases": [
+      "is japanese manicure worth it",
+      "japanese manicure vs gel manicure cost",
+      "how much is japanese gel manicure",
+      "japanese manicure near me price",
+      "japanese manicure price NYC",
+      "japanese manicure vs regular manicure",
+      "japanese manicure how long does it last",
+      "japanese manicure DIY kit cost",
+      "why is japanese manicure so expensive",
+      "japanese gel vs regular gel price difference"
+    ],
+    "intent_content_signals": [
+      "Wants a number in the first 100 words, not buried at the bottom",
+      "Responds well to a direct comparison table format over prose-only price ranges",
+      "Expects the traditional-vs-gel distinction addressed explicitly, since that's the actual point of confusion",
+      "Wants city or region context (NYC-specific price cited repeatedly across sources) not just a flat national number",
+      "Appreciates a definitive 'worth it' verdict with reasoning, not a hedge"
+    ]
+  },
+  "section_6_semantic_keyword_data": {
+    "primary_keyword": "japanese manicure cost",
+    "keyword_variations": ["cost of a japanese manicure", "japanese manicure price", "japanese manicure prices", "how much is a japanese manicure", "how much does a japanese manicure cost", "price of japanese manicure"],
+    "cluster_keywords": ["japanese gel manicure cost", "japanese manicure vs regular manicure", "japanese manicure vs gel manicure", "P.Shine manicure cost", "traditional japanese manicure price", "japanese manicure DIY kit cost", "japanese manicure NYC price", "japanese gel nails cost", "is japanese manicure worth it", "japanese manicure salon price"],
+    "lsi_terms": ["P.Shine method", "Japanese gel polish", "paste and powder manicure", "beeswax nail treatment", "Kokoist gel", "Leafgel", "ceramic nail file", "chamois buffer", "nail health treatment cost", "specialty manicure pricing", "certified Japanese gel technician", "pot-based gel system", "ceramic file manicure", "natural nail strengthening treatment", "salon menu pricing"],
+    "aeo_terms": [
+      "How much does a Japanese manicure cost?",
+      "Is a Japanese manicure more expensive than a regular manicure?",
+      "What is the difference between Japanese manicure and Japanese gel cost?",
+      "How much does a Japanese gel manicure cost in NYC?",
+      "Is a Japanese manicure worth the price?",
+      "Can I do a Japanese manicure at home to save money?",
+      "Why is Japanese manicure more expensive than a regular manicure?",
+      "How much does a Japanese manicure DIY kit cost?"
+    ],
+    "technical_terms": ["P.Shine paste", "mineral powder seal", "soft-hard gel hybrid", "soak-off removal", "gel pot system", "keratin-bonding gel"],
+    "user_language": ["it's pricier but worth it", "not sure if I'm getting the real thing", "my salon quoted me way more than that", "worth the extra cost", "elevated manicure experience", "way more expensive than my usual gel", "certified technician", "pot-based Japanese soft gel"]
+  },
+  "section_7_voice_and_ai_queries": {
+    "queries": [
+      "How much does a Japanese manicure cost?",
+      "Is a Japanese manicure more expensive than a regular manicure?",
+      "What's the difference between a Japanese manicure and Japanese gel cost-wise?",
+      "How much does a Japanese gel manicure cost in New York?",
+      "Is a Japanese manicure worth the extra money?",
+      "Can I do a Japanese manicure myself to save money?",
+      "How much does a Japanese manicure DIY kit cost?",
+      "Why is a Japanese manicure more expensive than a regular one?",
+      "How long does a Japanese manicure last compared to gel?",
+      "Do I tip extra for a Japanese manicure?",
+      "What should I expect to pay for a Japanese manicure near me?",
+      "Is Japanese gel the same price as a regular gel manicure?",
+      "How much does it cost to remove a Japanese gel manicure?",
+      "What makes a Japanese manicure cost more than a Western one?"
+    ]
+  },
+  "section_8_hook_and_ctr": {
+    "real_serp_findings_summary": "None of the 5 fetched top-ranking pages lead with cost in the title; all frame the article as a general 'what is it' explainer, with pricing buried mid-article as a single paragraph or short table. Only Copenhagen Fashion Summit gives cost its own H2, and none distinguish DIY vs salon vs traditional vs gel pricing in a front-loaded, scannable way.",
+    "selected_option_rationale": "This option directly names the reader's actual question in the title (a direct cost-question format none of the 5 competitors use), front-loads the primary keyword, and the meta promises the exact three things the audience research shows they're missing: salon numbers, the DIY option, and the 'why more than a regular manicure' justification — filling the precise gap phase_4 and phase_3 both confirmed.",
+    "title": "How Much Does a Japanese Manicure Cost? Real 2026 Prices",
+    "title_char_count": 58,
+    "meta_description": "Salon prices, DIY kit costs, and why this treatment runs more than a basic manicure, broken down clearly.",
+    "meta_char_count": 108,
+    "intro_hook_brief": "Open by naming the confusion directly: two people can be quoted wildly different prices for a 'Japanese manicure' because they're not actually being quoted for the same service. Promise clarity on both the traditional and gel version's real cost before the reader keeps scrolling other vague pages.",
+    "first_h2_hook_direction": "First H2 should immediately split the term into its two real meanings (traditional P.Shine-style vs Japanese gel) before giving any number, since every pain point traces back to this unresolved ambiguity."
+  },
+  "section_9_search_journey": {
+    "reader_arrival_state": "Slightly confused and price-conscious, having seen conflicting numbers online or a salon menu listing they don't fully understand, wanting a fast, trustworthy answer before booking",
+    "journey_arc": [
+      "Land on the post feeling uncertain about which 'Japanese manicure' they even mean",
+      "Get the traditional-vs-gel distinction resolved immediately, removing the core confusion",
+      "See real salon price ranges for both versions, plus a direct comparison to regular/gel manicure cost",
+      "Get the DIY kit option costed out with an honest cost-per-use comparison",
+      "Leave with a clear, numbers-backed verdict on whether the extra cost is justified for their situation"
+    ],
+    "promise_to_deliver": "A precise, no-hedging answer to what a Japanese manicure actually costs, split correctly by service type, backed with real 2026 figures",
+    "exit_state": "Confident and ready to book — knows exactly which service to ask for by name and what a fair price looks like for it"
+  },
+  "section_10_content_structure": {
+    "h1": "How Much Does a Japanese Manicure Cost? Real 2026 Prices",
+    "h2_structure": [
+      "Traditional Japanese Manicure vs. Japanese Gel: Two Different Prices",
+      "Traditional Japanese Manicure Cost at a Salon",
+      "Japanese Gel Manicure Cost at a Salon",
+      "Japanese Manicure vs. Regular and Gel Manicure Cost",
+      "Doing a Japanese Manicure at Home: DIY Kit Cost",
+      "Why a Japanese Manicure Costs More Than a Basic Manicure",
+      "Is a Japanese Manicure Worth the Extra Cost?",
+      "Tipping and Extra Fees to Expect"
+    ],
+    "word_budget": {
+      "introduction": "220 words",
+      "conclusion": "180 words",
+      "per_h2": "H2-1 (180w), H2-2 (200w), H2-3 (220w), H2-4 (220w), H2-5 (180w), H2-6 (180w), H2-7 (240w), H2-8 (140w) — remaining 1560 words distributed by complexity, H2-7 heaviest as the resolving payoff section"
+    }
+  },
+  "section_11_internal_links": {
+    "blog_gen_instruction": "Every link below must appear in the post. Cross-site links use the provided descriptive anchor. Place each link where the placement note says — woven naturally into prose, never as a standalone CTA. Total internal links must not exceed 6.",
+    "all_internal_links": [
+      {
+        "url_or_slug": "/blog/gel-nails-cost/gel-manicure-cost",
+        "title": "Gel Manicure Cost: What's Actually Normal to Pay",
+        "anchor_text": "what a regular gel manicure costs by comparison",
+        "placement_note": "In 'Japanese Manicure vs. Regular and Gel Manicure Cost' H2, when introducing the gel comparison figures",
+        "link_type": "cross-site"
+      },
+      {
+        "url_or_slug": "/blog/nail-costs/manicure-cost",
+        "title": "Manicure Cost: What You're Actually Paying For in 2026",
+        "anchor_text": "why basic manicure prices vary so much between salons",
+        "placement_note": "In 'Why a Japanese Manicure Costs More Than a Basic Manicure' H2, when contrasting against baseline manicure pricing",
+        "link_type": "cross-site"
+      }
+    ]
+  },
+  "section_12_voice_tone": {
+    "recommended_voice": "Confident, numbers-first educator",
+    "tone_characteristics": ["Direct — leads with the answer, not a tease", "Clarifying rather than promotional", "Money-conscious but not cynical about the treatment's value", "Plainly organized — scannable over lyrical", "Reassuring without hedging on the final verdict"],
+    "language_style": "Short, declarative sentences. Uses 'you' throughout. Leads each section with the number or fact, then explains it. Minimal metaphor — this reader wants clarity, not atmosphere.",
+    "audience_match": "This reader is price-comparing before booking, not browsing for inspiration — they need fast, trustworthy, well-organized numbers, which this direct, no-fluff voice delivers better than an aspirational or storytelling tone would."
+  },
+  "section_13_external_links": {
+    "links": [
+      {
+        "url": "https://parade.com/beauty/japanese-manicure",
+        "context": "When citing expert commentary on why Japanese manicures cost more (technician training, product cost)",
+        "anchor_suggestion": "nail industry experts note"
+      },
+      {
+        "url": "https://www.whowhatwear.com/beauty/nails/japanese-gel",
+        "context": "When referencing real-world Japanese gel manicure pricing and technician commentary on the elevated cost",
+        "anchor_suggestion": "one beauty editor's firsthand review"
+      }
+    ]
+  },
+  "section_14_execution_plan": {
+    "block_1_keyword_execution": {
+      "primary_keyword": "japanese manicure cost",
+      "top_5_density_baseline": 6.6,
+      "total_mention_target": "9 total (baseline 6.6 rounded to 7, + 2)",
+      "first_100_words_plan": {
+        "rule": "Primary keyword MUST appear TWICE in the first 100 words. Mandatory. No exceptions.",
+        "mention_1": "sentence 1 of introduction — naming the confusion directly ('Japanese manicure cost varies wildly because...')",
+        "mention_2": "sentence 3-4 of introduction — when promising the two-service breakdown"
+      },
+      "first_half_target": "6 mentions — first 850 words. Run denser in first half.",
+      "second_half_target": "3 mentions — second 850 words",
+      "strong_tag_rule": "EVERY single mention of the primary keyword — all 9 of them — wrapped in <strong> tags. No exceptions. Catch each one as it is written. Scan after every paragraph.",
+      "keywords_to_avoid_active": "N/A — solo mode, no cluster keyword_do_not_use list. Avoid drifting into 'manicure cost' or 'gel manicure cost' as focus terms since those are separate site posts; use them only as comparison references via internal links."
+    },
+    "block_2_word_budget": {
+      "total_target": "1700 words +/-50 words tolerance, never exceed",
+      "introduction": "220 words",
+      "conclusion": "180 words",
+      "h2_budgets": [
+        {"heading": "Traditional Japanese Manicure vs. Japanese Gel: Two Different Prices", "budget": 180, "complexity": "medium"},
+        {"heading": "Traditional Japanese Manicure Cost at a Salon", "budget": 200, "complexity": "low"},
+        {"heading": "Japanese Gel Manicure Cost at a Salon", "budget": 220, "complexity": "medium"},
+        {"heading": "Japanese Manicure vs. Regular and Gel Manicure Cost", "budget": 220, "complexity": "medium"},
+        {"heading": "Doing a Japanese Manicure at Home: DIY Kit Cost", "budget": 180, "complexity": "low"},
+        {"heading": "Why a Japanese Manicure Costs More Than a Basic Manicure", "budget": 180, "complexity": "medium"},
+        {"heading": "Is a Japanese Manicure Worth the Extra Cost?", "budget": 240, "complexity": "high"},
+        {"heading": "Tipping and Extra Fees to Expect", "budget": 140, "complexity": "low"}
+      ],
+      "tracking_rule": "Track running word total at the end of every H2 section. If a section is running over budget — cut before moving to the next section. Do not compensate later."
+    },
+    "block_3_image_plan": {
+      "total_images": 7,
+      "hero_image": "frontmatter only — NEVER appears in post body",
+      "body_images": 6,
+      "assignments": [
+        {"image_number": 1, "place_after": "Traditional Japanese Manicure vs. Japanese Gel: Two Different Prices", "image_type": "infographic", "section_context": "Simple two-column comparison graphic: Traditional Japanese Manicure ($40-80, no polish, paste/powder) vs Japanese Gel Manicure ($75-160+, full color, gel pot system) — clean layout, no photo comparison"},
+        {"image_number": 2, "place_after": "Traditional Japanese Manicure Cost at a Salon", "image_type": "standard_inspiration", "section_context": "Natural, buffed, glossy unpolished nails showing the traditional Japanese manicure finish"},
+        {"image_number": 3, "place_after": "Japanese Gel Manicure Cost at a Salon", "image_type": "standard_inspiration", "section_context": "A finished Japanese gel manicure in a natural pink or milky shade"},
+        {"image_number": 4, "place_after": "Japanese Manicure vs. Regular and Gel Manicure Cost", "image_type": "infographic", "section_context": "Simple price-range bar comparison: regular manicure, gel manicure, traditional Japanese manicure, Japanese gel manicure — four bars, dollar ranges labeled"},
+        {"image_number": 5, "place_after": "Doing a Japanese Manicure at Home: DIY Kit Cost", "image_type": "standard_inspiration", "section_context": "Clean, natural buffed nails styled to suggest an at-home result"},
+        {"image_number": 6, "place_after": "Is a Japanese Manicure Worth the Extra Cost?", "image_type": "standard_inspiration", "section_context": "Polished, healthy-looking natural nails, hands styled elegantly to convey the 'worth it' payoff"}
+      ],
+      "image_type_rule": {
+        "default": "standard_inspiration",
+        "infographic_allowed_when": "Two slots genuinely need direct numeric/visual comparison (service-type split, price-range bar chart) — both flagged above",
+        "banned_absolutely": "NEVER a tool/equipment image. NEVER a literal photo-style side-by-side comparison — both comparison slots above are flagged as infographic for this reason.",
+        "note_for_blog_gen": "Blog Gen Agent follows the image_type flagged here exactly per slot"
+      },
+      "path_rule": "/images/blog/japanese-manicure-cost/filename.webp — slug folder, leading slash, no topic_slug segment since this is a standalone post"
+    },
+    "block_4_opening_technique_assignments": {
+      "rule": "No two consecutive sections use the same technique. Conclusion = Technique 1 or 3 only.",
+      "assignments": [
+        {"section": "Introduction", "technique": "Technique 1 — The Claim (state the price confusion directly)"},
+        {"section": "Traditional Japanese Manicure vs. Japanese Gel: Two Different Prices", "technique": "Technique 2 — The Question"},
+        {"section": "Traditional Japanese Manicure Cost at a Salon", "technique": "Technique 3 — The Reframe"},
+        {"section": "Japanese Gel Manicure Cost at a Salon", "technique": "Technique 1 — The Claim"},
+        {"section": "Japanese Manicure vs. Regular and Gel Manicure Cost", "technique": "Technique 2 — The Question"},
+        {"section": "Doing a Japanese Manicure at Home: DIY Kit Cost", "technique": "Technique 3 — The Reframe"},
+        {"section": "Why a Japanese Manicure Costs More Than a Basic Manicure", "technique": "Technique 1 — The Claim"},
+        {"section": "Is a Japanese Manicure Worth the Extra Cost?", "technique": "Technique 2 — The Question"},
+        {"section": "Tipping and Extra Fees to Expect", "technique": "Technique 3 — The Reframe"},
+        {"section": "Conclusion", "technique": "Technique 1 — The Claim"}
+      ],
+      "banned_opener_rule": "Check every opener against banned_opening_approaches in blog gen prompt before writing the second sentence"
+    },
+    "block_5_link_placements": {
+      "rule": "Every link placed exactly where specified. Anchor texts used verbatim. Links woven into prose naturally.",
+      "links": [
+        {"anchor_text": "what a regular gel manicure costs by comparison", "full_url": "/blog/gel-nails-cost/gel-manicure-cost", "place_in_section": "Japanese Manicure vs. Regular and Gel Manicure Cost", "placement_context": "When introducing the gel manicure comparison figures mid-section", "link_type": "cross-site"},
+        {"anchor_text": "why basic manicure prices vary so much between salons", "full_url": "/blog/nail-costs/manicure-cost", "place_in_section": "Why a Japanese Manicure Costs More Than a Basic Manicure", "placement_context": "When contrasting the baseline manicure price against the Japanese manicure premium", "link_type": "cross-site"}
+      ]
+    },
+    "block_6_aeo_geo_plan": {
+      "aeo_assignments": [
+        {"aeo_term": "How much does a Japanese manicure cost?", "assigned_to_section": "Traditional Japanese Manicure vs. Japanese Gel: Two Different Prices", "execution": "Write a direct 2-3 sentence answer paragraph immediately after the H2 heading giving both price ranges before any elaboration"},
+        {"aeo_term": "Is a Japanese manicure worth the extra money?", "assigned_to_section": "Is a Japanese Manicure Worth the Extra Cost?", "execution": "Write a direct 2-3 sentence verdict immediately after the H2 heading, no hedging"},
+        {"aeo_term": "What's the difference between a Japanese manicure and Japanese gel cost-wise?", "assigned_to_section": "Japanese Manicure vs. Regular and Gel Manicure Cost", "execution": "Direct 2-3 sentence answer comparing the two price points immediately after the heading"}
+      ],
+      "geo_entity_statements": [
+        {"entity": "Traditional Japanese manicure (P.Shine method)", "assigned_to_section": "Traditional Japanese Manicure Cost at a Salon", "execution": "Clear declarative definition: a paste-and-powder buffing treatment using no polish, priced by the treatment not the color"},
+        {"entity": "Japanese gel manicure", "assigned_to_section": "Japanese Gel Manicure Cost at a Salon", "execution": "Clear declarative definition: a full-color gel manicure using premium Japanese gel brands like Kokoist or Leafgel, priced like an elevated gel service"}
+      ]
+    },
+    "block_7_active_constraints": {
+      "em_dash_banned": "Long em dash does not appear anywhere. If one forms while writing — stop, replace with: comma / new sentence / parentheses / but / restructure.",
+      "banned_vocab_watch": ["elevate/elevated", "journey", "unleash", "game-changer", "must-have", "seamless", "in today's world"],
+      "american_english_active": "color, recognize, -ize, -or — every instance, no exceptions.",
+      "keyword_density_reminder": "After every 2 H2 sections — count current keyword mentions. Verify running total is on track to hit 9. First half must run denser than second half.",
+      "image_path_reminder": "/images/blog/japanese-manicure-cost/filename.webp",
+      "internal_link_url_reminder": "Cross-site links use exact full path as given. Never bare /slug.",
+      "hero_image_reminder": "Hero = frontmatter only. Never place hero image in body.",
+      "strong_tag_reminder": "Every primary keyword mention = <strong> tags. Scan after every paragraph."
+    }
+  }
+}
