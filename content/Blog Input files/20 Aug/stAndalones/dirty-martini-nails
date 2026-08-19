@@ -1,0 +1,288 @@
+# INPUT FILE — dirty-martini-nails (SOLO MODE / STANDALONE)
+
+## SECTION 1: FILE AUTHORITY
+THIS FILE IS THE SINGLE SOURCE OF TRUTH FOR THE BLOG GEN AGENT. All values in POST_CONSTANTS are hardcoded — Blog Gen Agent does not ask, adjust, or override them. All keywords, H2 structure, audience intelligence, internal links, and tone defined here must be followed exactly.
+
+## SECTION 2: POST_CONSTANTS
+- slug: dirty-martini-nails
+- topic_slug: OMITTED (standalone/solo mode — no topic field)
+- canonical: https://mirelleinspo.com/blog/dirty-martini-nails
+- post_type: standalone
+- intent: inspirational (research-locked — SERP is dominated by idea galleries/roundups, not tutorials; audience signal is browse/save behavior on Pinterest, birthday/bachelorette occasion angles, "best of" framing across all 5 fetched pages)
+- word_count: 2350 (top_5 fetched average ≈ 2100 words; set above baseline — topic supports it given breadth of confirmed sub-angles: color variations, occasion angles, technique variations)
+- image_count: 7 (hero + 6 body — flat default rule; not tutorial, not comparison, not pillar, no X+ slug pattern)
+- show_inspo_gallery_link: true — intent is inspirational AND the post genuinely carries a browse/explore-designs angle (reader scrolling for looks to save/replicate, confirmed by Pinterest "get inspired and try out new things" framing and gallery-style structure of all 5 competitor pages)
+- template: posts (not pillar, not tutorial intent)
+- hero_dimensions: 1200x675
+- category: Nails
+- publish_date: 2026-08-20
+- author: jyoti-mirelle
+
+## SECTION 3: CLUSTER SNAPSHOT
+N/A — solo mode, no cluster context.
+
+## SECTION 4: SERP ANALYSIS
+**competitor_gaps** (demand confirmed 2+ sources):
+- No fetched competitor explains WHY it's called "dirty" (the vermouth/olive-brine cloudiness) in the title/intro hook itself, despite this being a common curiosity point raised in-body (lavisnails, women.com) and implied by search behavior around "what is a dirty martini nail" — confirmed via 2 competitor pages explaining the etymology.
+- No fetched competitor addresses cool-undertone skin tone matching for olive green as a dedicated angle — only lavisnails raises it in passing. Confirmed as a real concern via that page + recurring "which shade of olive" language across WhoWhatWear/product pages (2+ sources: lavisnails + shade-selection emphasis across WhoWhatWear and product retailers).
+- No fetched competitor covers non-green interpretations (blue base, nude/milky base, "does it have to be green") as a clearly labeled section — lavisnails touches it but buries it; lemon8/Pinterest confirm real demand for non-literal, non-green versions (2+ sources: lavisnails + Pinterest angle diversity).
+- Occasion-specific styling (birthday, bachelorette/Vegas, holiday party) is a strong Pinterest-confirmed demand signal (21st/25th birthday nails, Vegas bachelorette nails, NYE nails tags) that NO fetched competitor organizes content around — all treat it as generic trend coverage, not occasion-driven.
+
+**missing_semantic_territory:**
+- "olive martini nails," "martini olive nail art," "filthy martini nails" — confirmed alternate naming in the wild (product pages, Pinterest) that competitors don't use as on-page variant language.
+- Non-green base color language (baby blue, milky nude) — present in examples shown but not used as searchable/labeled subheadings by competitors.
+- Food-adjacent crossover nail trend framing (pickle nails, olive nails as standalone) — Pinterest confirms adjacency demand but no competitor connects the dots explicitly.
+
+**our_strategic_approach:** Structure the post as a browsable gallery of specific, nameable variations (not just "here are 7 examples" as most competitors do) organized loosely by application method and occasion, since occasion-driven demand (birthday, bachelorette, holiday) is confirmed but unclaimed. Open by naming the "dirty" etymology in the first 100 words as a hook none of the 5 competitors use up front — this doubles as a natural, non-forced first primary-keyword placement. Include a dedicated, skin-tone-aware color guidance section (cool vs. warm undertone shade selection) since this is a real, confirmed reader pain point that only one weak competitor source addresses. Cover non-literal/non-green interpretations as its own explicit section rather than a buried aside, capturing the "does it have to be green" search territory competitors leave open.
+
+**top_5_fetched_pages_summary:**
+| URL | Word Count | H2 Count | Keyword Mentions | Note |
+|---|---|---|---|---|
+| newbeauty.com/view/dirty-martini-nails | ~750 | 7 (gallery captions as H2s) | 6 | Strong visual gallery format, thin body copy per section, good variety of finishes (chrome, aura, gradient) |
+| whowhatwear.com/beauty/nails/dirty-martini-nails | ~900 | 0 (no true H2s, image-caption driven) | 9 | Strong celebrity hook (Hailey Bieber, Kendall Jenner), personal-essay tone, weak structure for SEO, heavy shopping CTAs |
+| refinery29.com (dirty-martini-manicure) | ~650 | 0 (single-flow narrative) | 5 | Best origin-story depth (direct Betina Goldstein quotes), thin on variety/alternatives, most authoritative technique detail |
+| lavisnails.com/blogs/nail-trends/dirty-martini-nails | ~1850 | 7 | 14 | Longest, most comprehensive — covers technique, undertone problem, non-green bases, "in a hurry" simple version; weakest editorial polish, product-page tone |
+| women.com (70s-inspired-green-manicure-trend) | ~700 | 3 | 4 | Good styling breadth (gold accents, graphic dots), oldest (2023) so pre-dates Bieber/Goldstein peak coverage, dated framing |
+
+top_5_word_count_average: ~970 words
+top_5_keyword_density_average: ~7.6 mentions
+
+**recommended_image_count_validation:** 7 images (hero + 6 body) aligns with SERP visual density — NewBeauty runs 7 gallery images, WhoWhatWear runs 8+, confirming gallery-style posts in this space typically show 6-9 distinct looks.
+
+**best_external_sources_found:**
+1. refinery29.com/en-us/2024/12/11825009/dirty-martini-manicure — genuinely authoritative: direct original-source quotes from creator Betina Goldstein, real technique detail, strong editorial voice.
+2. lavisnails.com/blogs/nail-trends/dirty-martini-nails — most comprehensive technique/undertone coverage, though weaker editorial voice (borderline product-blog); included for depth, not prestige.
+
+## SECTION 5: AUDIENCE INTELLIGENCE
+**who_they_are:** Beauty-engaged women, primarily Instagram/TikTok/Pinterest active, who already track celebrity nail trends (Hailey Bieber, Selena Gomez, Kendall Jenner are recognized reference points). Mid-to-high nail engagement — get manicures done professionally OR do elaborate at-home gel/dip work, not nail-art beginners. Searching to either book/request the look at a salon or browse for inspiration before an occasion.
+
+**what_they_want_from_this_post:** A wide enough range of dirty martini nail variations that they can pick the one that fits their skin tone, nail length, and occasion — not just "here's the trend," but "here's MY version of the trend."
+
+**what_frustrates_them:** Current competitor content is thin (NewBeauty, Refinery29 average under 1,000 words), heavily photo-driven with minimal actual guidance, and doesn't address the practical undertone-matching problem or offer enough non-green alternatives for people who like the concept but not solid olive polish.
+
+**top_5_pain_points:**
+1. Not sure if olive green will suit their skin's undertone (cool undertones clash with yellow-based olive — confirmed pain point)
+2. Want the look for a specific event (birthday, bachelorette, holiday party) but find generic trend roundups, not occasion-matched inspo
+3. Want a version that isn't literally solid olive polish (confirmed appetite for blue-base, nude-base, marbled interpretations)
+4. Curious about the actual technique (3D olive charms, chrome rims) but most content is caption-only, not instructional
+5. Confused about naming — "dirty martini," "olive martini," "filthy martini" all describe overlapping looks, causing search/request confusion at the salon
+
+**exact_user_phrases:**
+- "shaken, not stirred"
+- "dirty 30th" / "aries season, dirty martini"
+- "olive girl nails"
+- "does it have to be green"
+- "what's your pick" (espresso vs. dirty martini)
+- "my martini order is dirty martini, extra dirty extra olive + lemon"
+- "olive dirty martini nails"
+- "serving olives and attitude"
+- "nail inspo for dirty martini lovers"
+
+**intent_content_signals:**
+- Strong response to numbered/count-based gallery formats ("20 olive nail ideas," "23 chrome manicures")
+- Celebrity-anchored credibility signals (Hailey Bieber, Selena Gomez, Kendall Jenner) drive click interest
+- Visual variety across finish types (chrome, 3D sculptural, 2D painted, aura, gradient) matters more than depth on any single technique
+- Occasion-tagging (birthday, bachelorette, NYE, holiday) is a real Pinterest search behavior pattern
+- Product/shade recommendations are expected as a supporting element, not the core draw
+
+## SECTION 6: SEMANTIC KEYWORD DATA
+**primary_keyword:** dirty martini nails
+
+**keyword_variations:** dirty martini manicure, dirty martini nail art, olive martini nails, martini olive nail art, filthy martini nails, dirty martini mani
+
+**cluster_keywords:** olive nails, olive green manicure, olive nail ideas, cocktail nail art, cocktail-inspired nails, martini nails, 3D olive nail art, chrome olive nails, olive aura nails, olive French tip, espresso martini nails (adjacent, not core), olive nail polish, holiday nail trends, fall/winter nail trends
+
+**lsi_terms:** olive brine, vermouth, cloudy/frosted finish, 3D nail charm, chrome powder, matte top coat, olive pit/pimento accent, Spanish olive, reverse French manicure, aura nails, gradient manicure, cool undertone vs warm undertone, milky base, baby blue base, gel polish, Shellac
+
+**aeo_terms:**
+- "What are dirty martini nails?"
+- "Why are they called dirty martini nails?"
+- "Do dirty martini nails have to be green?"
+- "What color polish do you use for dirty martini nails?"
+- "How do you make 3D olive nail art?"
+- "Does olive green nail polish suit cool undertones?"
+- "What's the difference between dirty martini nails and regular olive nails?"
+- "How long does the dirty martini nail trend last?"
+
+**technical_terms:** gel polish, Shellac base coat, chrome powder, hard gel sculpting, no-wipe top coat, dip powder, cat eye gel, matte top coat
+
+**user_language:** "shaken not stirred," "extra dirty extra olive," "olive girl nails," "dirty 30th," "does it have to be green," "serving olives and attitude," "nail inspo for dirty martini lovers," "olive dirty martini nails"
+
+## SECTION 7: VOICE AND AI QUERIES
+1. What are dirty martini nails?
+2. Why is it called a "dirty martini" manicure?
+3. Do dirty martini nails have to be olive green?
+4. What nail polish color is closest to a dirty martini?
+5. How do you make 3D olive nail art at home?
+6. Can I get dirty martini nails with a chrome finish?
+7. Does olive green nail polish work for cool skin undertones?
+8. What's the difference between dirty martini nails and regular olive nails?
+9. How do I ask my nail salon for dirty martini nails?
+10. What's a good alternative to solid olive polish for this trend?
+11. Are dirty martini nails still trendy in 2026?
+12. What nail shape works best with dirty martini nails?
+13. Can dirty martini nails work for a wedding or formal event?
+14. What's the difference between dirty martini nails and espresso martini nails?
+15. How do you keep 3D nail art from lifting?
+16. What gold accents pair well with olive nail polish?
+
+## SECTION 8: HOOK AND CTR
+**real_serp_findings_summary:** Of the 5 fetched competitor titles, 3 front-load "Dirty Martini Nails" followed by a broad trend claim (taking over the internet / deliciously trendy / chic yet polarizing). None combine a specific count/number with the trend claim, and none explicitly promise technique guidance in the title despite confirmed reader demand for exact colors/methods.
+
+**selected_option_rationale:** This option keeps the front-loaded primary keyword and mirrors the proven "trend claim" pattern already validated by 3 of 5 competitors, while adding the specific 2026 year-tag (required for trend content) and naming concrete visual proof points (3D charms, chrome) in the meta to differentiate from competitors' vaguer descriptions.
+
+**title:** Dirty Martini Nails Are 2026's Chicest Manicure Trend
+**title_char_count:** 49 characters
+
+**meta_description:** From 3D olive charms to chrome finishes, dirty martini nails are the olive-toned manicure trend taking over Pinterest and TikTok. See the best ways to wear it.
+**meta_char_count:** 155 characters
+
+**intro_hook_brief:** Open by naming the trend claim immediately, then use the "dirty" etymology (vermouth + olive brine cloudiness) as the specific, non-obvious detail that earns trust in the first 100 words — this is the angle none of the 5 competitors use up front.
+
+**first_h2_hook_direction:** Apply the "chic trend" angle by opening the first H2 with the celebrity-anchored credibility point (Hailey Bieber/Selena Gomez) before moving into visual variety — subtle continuation of the title's authority claim, not a repeat of it.
+
+## SECTION 9: SEARCH JOURNEY
+**reader_arrival_state:** Curious and visually primed — she's seen the look on a celebrity or on Pinterest/TikTok and wants to confirm it's a real, current trend worth trying, then see enough variety to find her version.
+
+**journey_arc:**
+- Hook confirms she's found the real, current trend (celebrity + 2026 relevance)
+- Early visual variety across finish types builds aspiration fast
+- Practical guidance (undertone matching, non-green options) resolves her hesitation points
+- Occasion-specific framing helps her picture wearing it somewhere specific
+- Close with the "this is your look" identity payoff
+
+**promise_to_deliver:** That this is THE current, celebrity-validated version of the trend, shown across enough variety (finish, base color, occasion) that she'll find her exact version.
+
+**exit_state:** Confident and ready to screenshot a specific look to bring to her nail appointment (or attempt at home).
+
+## SECTION 10: CONTENT STRUCTURE
+**h1:** Dirty Martini Nails: The Olive Manicure Trend Everyone's Wearing in 2026
+
+**h2_structure:**
+1. What Are Dirty Martini Nails? (word_budget: 220)
+2. Why Everyone's Obsessed With This Trend Right Now (word_budget: 240)
+3. Classic Olive: The Original Dirty Martini Look (word_budget: 260)
+4. 3D Olive Nail Art (For the Bold) (word_budget: 260)
+5. Chrome and Aura Finishes (word_budget: 240)
+6. Does It Have to Be Green? Non-Literal Takes (word_budget: 260)
+7. Finding Your Shade: Olive for Cool vs. Warm Undertones (word_budget: 260)
+8. Dirty Martini Nails for Every Occasion (word_budget: 260)
+9. How to Ask Your Nail Tech for This Look (word_budget: 210)
+
+**word_budget:**
+- introduction: 220
+- conclusion: 180
+- per_h2: as listed above (total 2150 across H2s + 220 intro + 180 conclusion ≈ 2350 target)
+
+## SECTION 11: INTERNAL LINKS
+Solo mode — no cluster_context.json, so cluster_links is empty by definition.
+
+**cross-site discovery:** Not run — no site domain was provided/confirmed for this standalone post (no cluster_context.json means no known site to search against via site: operator). This is expected in solo mode without a confirmed site; if mirelleinspo.com is the live site, a follow-up cross-site discovery pass can be run on request.
+
+**all_internal_links:** [] (empty — flagged, not a gap given solo-mode constraints)
+
+## SECTION 12: VOICE AND TONE
+**recommended_voice:** Aspirational girlfriend-expert — confident, in-the-know, a little playful with the cocktail conceit, never dry or clinical.
+
+**tone_characteristics:**
+- Celebrity-literate without being gossipy
+- Specific and visual (names actual finishes, colors, techniques) rather than vague ("gorgeous," "stunning")
+- Light, knowing humor around the cocktail theme (shaken not stirred, etc.) used sparingly, not forced into every paragraph
+- Reassuring on the undertone/skin-tone concern — practical, not preachy
+- Direct address ("you," "your nail tech") to keep it feeling like personal advice, not a press release
+
+**language_style:** Short-to-medium sentences, conversational but polished, second-person direct address, minimal jargon (technical terms explained in-line when used), analogies to the actual cocktail used sparingly as connective tissue between sections.
+
+**audience_match:** This voice matches a reader who already follows celebrity beauty trends and wants to feel like she's getting insider guidance from someone as trend-fluent as she is — not a technical manual, not an impersonal listicle.
+
+## SECTION 13: EXTERNAL LINKS
+**links:**
+1. url: https://www.refinery29.com/en-us/2024/12/11825009/dirty-martini-manicure
+   context: When discussing the trend's origin story / creator technique
+   anchor_suggestion: "nail artist Betina Goldstein, who originated the look"
+2. url: https://lavisnails.com/blogs/nail-trends/dirty-martini-nails
+   context: When discussing undertone matching or non-green base alternatives
+   anchor_suggestion: "ways to adapt the look if olive doesn't suit your undertone"
+
+## SECTION 14: EXECUTION PLAN
+
+### Block 1: Keyword Execution
+- primary_keyword: dirty martini nails
+- top_5_density_baseline: 7.6 (average across 5 fetched pages)
+- total_mention_target: 10 (baseline + ~2-3)
+- first_100_words_plan:
+  - mention_1: sentence 1-2 of introduction — establishing the trend name directly
+  - mention_2: sentence 4-5 of introduction — tied to the "dirty" etymology hook
+- first_half_target: 6 mentions — first ~1175 words (intro + H2s 1-4)
+- second_half_target: 4 mentions — second ~1175 words (H2s 5-9 + conclusion)
+- strong_tag_rule: every one of the 10 mentions wrapped in `<strong>` tags, scanned after each paragraph
+- keywords_to_avoid_active: N/A (solo mode, no cluster keyword_do_not_use list)
+
+### Block 2: Word Budget
+- total_target: 2350 words (±50 tolerance)
+- introduction: 220
+- conclusion: 180
+- h2_budgets:
+  1. What Are Dirty Martini Nails? — 220 words — low complexity
+  2. Why Everyone's Obsessed With This Trend Right Now — 240 words — low complexity
+  3. Classic Olive: The Original Dirty Martini Look — 260 words — medium complexity
+  4. 3D Olive Nail Art (For the Bold) — 260 words — medium complexity
+  5. Chrome and Aura Finishes — 240 words — low complexity
+  6. Does It Have to Be Green? Non-Literal Takes — 260 words — medium complexity
+  7. Finding Your Shade: Olive for Cool vs. Warm Undertones — 260 words — high complexity (practical guidance)
+  8. Dirty Martini Nails for Every Occasion — 260 words — medium complexity
+  9. How to Ask Your Nail Tech for This Look — 210 words — medium complexity
+- tracking_rule: track running total after each H2; cut before moving on if over budget, never compensate later
+
+### Block 3: Image Plan
+- total_images: 7
+- hero_image: frontmatter only, never in body
+- body_images: 6
+- assignments:
+  1. image_number: 1, place_after: "Classic Olive: The Original Dirty Martini Look", image_type: standard_inspiration, section_context: solid olive polish manicure, square or almond shape, glossy finish
+  2. image_number: 2, place_after: "3D Olive Nail Art (For the Bold)", image_type: standard_inspiration, section_context: sculptural 3D olive charm nail art on 1-2 accent fingers
+  3. image_number: 3, place_after: "Chrome and Aura Finishes", image_type: standard_inspiration, section_context: chrome-finish olive manicure with metallic sheen
+  4. image_number: 4, place_after: "Does It Have to Be Green? Non-Literal Takes", image_type: standard_inspiration, section_context: baby blue or milky nude base with tiny painted olive accents
+  5. image_number: 5, place_after: "Finding Your Shade: Olive for Cool vs. Warm Undertones", image_type: infographic, section_context: simple visual comparing 2-3 olive shade options against warm vs. cool undertone swatches — helps reader self-identify the right shade
+  6. image_number: 6, place_after: "Dirty Martini Nails for Every Occasion", image_type: standard_inspiration, section_context: dressier holiday/formal-event version with gold accents or black French tips
+- image_type_rule note: only one infographic slot used (shade-matching guide), justified by genuine reader need identified in phase_4 research; all other slots are standard_inspiration per default rule
+- path_rule: /images/blog/dirty-martini-nails/filename.webp (no topic_slug — standalone post)
+
+### Block 4: Opening Technique Assignments
+- Introduction: Technique 1 (The Claim) — open with the direct trend statement
+- What Are Dirty Martini Nails?: Technique 2 (The Question) — mirrors the H2 itself
+- Why Everyone's Obsessed: Technique 3 (The Reframe) — recontextualize why this isn't just "olive nails"
+- Classic Olive: Technique 1 (The Claim)
+- 3D Olive Nail Art: Technique 2 (The Question)
+- Chrome and Aura Finishes: Technique 3 (The Reframe)
+- Does It Have to Be Green?: Technique 2 (The Question) — directly poses the reader's own doubt
+- Finding Your Shade: Technique 3 (The Reframe)
+- Dirty Martini Nails for Every Occasion: Technique 1 (The Claim)
+- How to Ask Your Nail Tech: Technique 2 (The Question)
+- Conclusion: Technique 1 (The Claim)
+- banned_opener_rule: check every opener against banned_opening_approaches in Blog Gen prompt before writing the second sentence
+
+### Block 5: Link Placements
+- No internal links (solo mode, no cluster context, no cross-site discovery run — see Section 11)
+- External link 1: anchor "nail artist Betina Goldstein, who originated the look" → https://www.refinery29.com/en-us/2024/12/11825009/dirty-martini-manicure — place in "What Are Dirty Martini Nails?" or "Why Everyone's Obsessed" section, when crediting the trend's origin
+- External link 2: anchor "ways to adapt the look if olive doesn't suit your undertone" → https://lavisnails.com/blogs/nail-trends/dirty-martini-nails — place in "Finding Your Shade" section, as a supporting resource
+
+### Block 6: AEO/GEO Plan
+- aeo_assignments:
+  1. "What are dirty martini nails?" → assigned to "What Are Dirty Martini Nails?" → direct 2-3 sentence answer immediately after H2
+  2. "Do dirty martini nails have to be green?" → assigned to "Does It Have to Be Green? Non-Literal Takes" → direct answer immediately after H2
+  3. "Does olive green nail polish suit cool undertones?" → assigned to "Finding Your Shade" → direct answer immediately after H2
+  4. "How do you make 3D olive nail art?" → assigned to "3D Olive Nail Art (For the Bold)" → direct answer immediately after H2
+- geo_entity_statements:
+  1. entity: "dirty martini manicure" → assigned to "What Are Dirty Martini Nails?" → clear declarative definition sentence, no hedging
+  2. entity: "3D olive nail art" → assigned to "3D Olive Nail Art" section → clear declarative definition of the technique
+
+### Block 7: Active Constraints
+- em_dash_banned: yes, replace with comma/new sentence/parentheses/but/restructure if one forms
+- banned_vocab_watch: elevate, unleash, embark, dive into, delve, whimsical, boasts, treasure trove, testament
+- american_english_active: color, favorite, recognize — yes, throughout
+- keyword_density_reminder: check running total after every 2 H2s against the 10-mention target, first half denser than second half
+- image_path_reminder: /images/blog/dirty-martini-nails/filename.webp (no topic_slug)
+- internal_link_url_reminder: N/A this post (no internal links)
+- hero_image_reminder: frontmatter only, never in body
+- strong_tag_reminder: every primary keyword mention wrapped in `<strong>` tags, scanned after every paragraph
