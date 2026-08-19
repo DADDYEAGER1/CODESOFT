@@ -1,0 +1,354 @@
+{
+  "section_1_file_authority": {
+    "statement": "THIS FILE IS THE SINGLE SOURCE OF TRUTH FOR THE BLOG GEN AGENT. All values in POST_CONSTANTS are hardcoded — Blog Gen Agent does not ask, adjust, or override them."
+  },
+  "section_2_post_constants": {
+    "slug": "best-nail-colors-for-tan-skin",
+    "canonical": "https://mirelleinspo.com/blog/best-nail-colors-for-tan-skin",
+    "post_type": "standalone",
+    "intent": "inspirational",
+    "word_count": 2500,
+    "image_count": 7,
+    "show_inspo_gallery_link": true,
+    "template": "posts",
+    "hero_dimensions": "1200x675",
+    "category": "Nails",
+    "publish_date": "2026-08-20",
+    "author": "jyoti-mirelle"
+  },
+  "cannibalization_flag": {
+    "note": "SOLO MODE — no cluster_context.json, so no keyword_do_not_use list exists. FLAGGING MANUALLY: mirelleinspo.com already has a ranking page at /topics/skin-tones ('Nail Colors for Every Skin Tone: The Ultimate 2026 Matching Guide') that covers tan skin as one section among several skin tones. This new post is keyword-locked to 'best nail colors for tan skin' specifically (deep-dive, tan-only) and should NOT duplicate the broader page's structure. Recommend an internal link between the two once this post is live, with this post's anchor being the deep-dive and the topics page being the broad hub. Blog Gen Agent / editorial team should confirm no unintended overlap before publishing."
+  },
+  "section_4_serp_analysis": {
+    "blog_gen_instruction": "our_strategic_approach is a specific, evidence-based outperform strategy. Use it to guide the introduction, conclusion, and depth decisions.",
+    "competitor_gaps": [
+      "No fetched top-5 page devotes a dedicated, deep section to toe/pedicure-specific colors for tan skin, despite this being a strongly validated demand cluster (Pinterest boards, Marie Claire, RainyRoses, TheBeautyGypsy, Reforma all confirm real search volume for 'toe nail colors for tan skin' / 'pedicure colors for tan skin')",
+      "No fetched page quotes real nail artists/technicians by name — competitors outside the top-5 (Marie Claire, Who What Wear) use named nail-artist quotes as a trust signal; none of the 5 fetched competitor pages do this",
+      "No fetched page directly addresses the audience's live undertone confusion visible on Quora — several real questioners don't know if they should match or contrast their tan, and get conflicting answers"
+    ],
+    "missing_semantic_territory": [
+      "toe nail colors for tan skin / pedicure colors for tan skin",
+      "nail colors that make you look tan (vs. already-tan skin — a distinct search angle found on Quora and TheBeautyGypsy)",
+      "warm undertone vs cool undertone tan skin nail matching (Palette Hunt owns this angle strongly; can be covered but must stay clearly in 'tan skin' territory, not drift into general undertone-guide territory)"
+    ],
+    "our_strategic_approach": "Competitors split into two camps: 'match your warmth' (Palette Hunt, terracotta/nude-led) and 'go bold contrast' (Ella+Mila, StyleCraze, fuchsia/red-led) — neither camp resolves the tension for the reader, they just pick a side. This post wins by explicitly presenting both paths as valid depending on occasion and undertone, then giving concrete color-by-color guidance for each, which no single fetched competitor does. It differentiates further by including a genuine toe/pedicure color section (a confirmed 2+-source demand gap) and by keeping structure tightly focused on 15 distinct nail colors rather than diluting into skin-tone or undertone-guide territory. Depth target: cover both everyday/neutral and bold/statement colors with equal weight, unlike Palette Hunt (neutral-heavy) or StyleCraze (bold-heavy, thin per-color).",
+    "top_5_fetched_pages_summary": [
+      {"url": "https://www.ellamila.com/blogs/articles/best-nail-color-to-try-out-if-you-have-tan-skin", "word_count": 2100, "h2_count": 5, "keyword_mention_count": 9, "note": "Strong exact-match page, occasion-based structure (everyday/bold/elegant), no toe/pedicure depth beyond one paragraph"},
+      {"url": "https://www.palettehunt.com/beauty/nail-color-for-tan-skin", "word_count": 2600, "h2_count": 6, "keyword_mention_count": 14, "note": "Deepest page found, strong warm-undertone framework and FAQ block, but skews neutral/nude-heavy and underserves bold/statement seekers"},
+      {"url": "https://purluxebeauty.com/how-to-choose-the-right-nail-color-for-your-skin-tone", "word_count": 1300, "h2_count": 1, "keyword_mention_count": 4, "note": "Tan skin is one small section (~150 words) of a broader skin-tone roundup; thin on this exact keyword, local salon site"},
+      {"url": "https://www.stylecraze.com/articles/nail-polish-for-different-skin-tones/", "word_count": 900, "h2_count": 1, "keyword_mention_count": 6, "note": "Dedicated tan-skin H2 with 3 color H3s (fuchsia/orange/red) but structured as Amazon product reviews, not editorial substance"},
+      {"url": "https://theeverygirl.com/summer-nail-colors/", "word_count": 2800, "h2_count": 7, "keyword_mention_count": 3, "note": "Broad summer-nails roundup; 'tan skin' is only an FAQ answer, weak primary-keyword match, excluded from citation consideration"}
+    ],
+    "top_5_word_count_average": 1940,
+    "top_5_keyword_density_average": 7,
+    "best_external_sources_found": []
+  },
+  "section_5_audience_intelligence": {
+    "blog_gen_instruction": "This is your primary creative brief. Every paragraph written for this specific person with this specific intent.",
+    "who_they_are": "Someone with tan or sun-kissed skin (natural or self-tanned) browsing for nail color inspiration — not asking a single question, scrolling for options. Ranges from undertone-savvy readers to people who genuinely don't know their undertone and find the warm/cool advice confusing.",
+    "what_they_want_from_this_post": "A visual, decisive list of specific colors that work on tan skin — not a lecture on color theory. They want to see options and pick, with just enough guidance to feel confident, not overwhelmed.",
+    "what_frustrates_them": "Competing advice — some sites say 'match your warmth,' others say 'go bold contrast,' with no page reconciling the two. Also frustrated by generic 'every skin tone' roundups that only give tan skin one thin paragraph.",
+    "top_5_pain_points": [
+      "Doesn't know whether to match or contrast their tan and gets conflicting advice",
+      "Wants toe/pedicure-specific ideas, not just fingernail colors, and struggles to find this",
+      "Worried a 'nude' will look ashy or washed out against their tan specifically",
+      "Wants something that photographs well for vacation/summer content, not just looks good in person",
+      "Uncertain whether pastels are off-limits for tan skin (real, recurring confusion across Quora and Pinterest)"
+    ],
+    "exact_user_phrases": [
+      "what nail colors make you look tan",
+      "best nail color for tan colored skin",
+      "does this make my tan pop",
+      "what color nail polish makes your skin look darker",
+      "tan skin summer toe nail colors",
+      "pedicure colors for tan skin",
+      "nail colors for tan skin tone",
+      "what nude works for tan skin without looking ashy",
+      "can tan skin wear pastels",
+      "light neutral pinks for medium-tan skin"
+    ],
+    "intent_content_signals": [
+      "Strong visual/scannable format — numbered list of colors, not long prose blocks",
+      "Real specificity per color (not just 'coral' but why coral specifically works)",
+      "Occasion-tagging (everyday, vacation, evening) resonates strongly across every fetched source",
+      "Undertone explanation wanted but only briefly — audience wants a fast, usable framework, not a full color-theory lesson",
+      "Toe/pedicure mentions consistently increase relevance signal across Pinterest, Marie Claire, RainyRoses"
+    ]
+  },
+  "section_6_semantic_keyword_data": {
+    "blog_gen_instruction": "Primary keyword in strong tags every mention. AEO terms trigger direct answer paragraphs. User language woven naturally.",
+    "primary_keyword": "best nail colors for tan skin",
+    "keyword_variations": [
+      "nail colors for tan skin",
+      "best nail color for tan skin",
+      "nail polish colors for tan skin",
+      "nail color for tan skin tone",
+      "tan skin nail colors",
+      "best nail colors for tanned skin"
+    ],
+    "cluster_keywords": [
+      "warm undertone nail colors",
+      "cool undertone nail colors",
+      "coral nail polish",
+      "terracotta nail polish",
+      "nude nail polish for warm skin",
+      "toe nail colors for tan skin",
+      "pedicure colors for tan skin",
+      "summer nail colors for tan skin",
+      "nail colors that make you look tan",
+      "fuchsia nail polish",
+      "gold shimmer nail polish",
+      "turquoise nail polish"
+    ],
+    "lsi_terms": [
+      "golden undertone",
+      "sun-kissed glow",
+      "contrast nail color",
+      "warm-toned nude",
+      "ashy nude",
+      "bronze manicure",
+      "jelly finish",
+      "cream finish polish",
+      "matte terracotta",
+      "gel polish",
+      "vacation manicure",
+      "statement mani",
+      "everyday neutral nail",
+      "your-nails-but-better nude",
+      "high-contrast white manicure",
+      "jewel tone nails",
+      "metallic gold polish",
+      "washed-out nail color"
+    ],
+    "aeo_terms": [
+      "what nail color looks best on tan skin",
+      "what nail colors make your tan pop",
+      "can tan skin wear pastel nail colors",
+      "what nude nail color works for tan skin",
+      "do dark nail colors look good on tan skin",
+      "what nail polish finish is best for tan skin",
+      "does white nail polish make tan skin look darker",
+      "what toe nail colors work for tan skin",
+      "should tan skin match or contrast nail color",
+      "what colors should tan skin avoid on nails"
+    ],
+    "technical_terms": ["undertone", "cream finish", "jelly finish", "cool-toned", "warm-toned", "opaque coverage"],
+    "user_language": [
+      "makes your tan pop",
+      "your-nails-but-better",
+      "washed out",
+      "looks ashy",
+      "sun-kissed glow",
+      "doesn't clash",
+      "flattering",
+      "your glow"
+    ]
+  },
+  "section_7_voice_and_ai_queries": {
+    "blog_gen_instruction": "Answer every query directly in the relevant H2 section body. Route unanswered queries to faqItems.",
+    "queries": [
+      "What nail color looks best on tan skin?",
+      "What nail colors make your tan pop?",
+      "Can tan skin wear pastel nail colors?",
+      "What nude nail color works best for tan skin?",
+      "Do dark nail colors look good on tan skin?",
+      "What nail polish finish is best for tan skin?",
+      "Does white nail polish make tan skin look darker?",
+      "What are the best toe nail colors for tan skin?",
+      "Should I match or contrast my nail color with my tan?",
+      "What nail colors should tan skin avoid?",
+      "Is coral a good nail color for tan skin?",
+      "What nail color makes you look more tan?",
+      "Are metallic nail colors good for tan skin?",
+      "What's the best nail color for a tan skin summer pedicure?"
+    ]
+  },
+  "section_8_hook_and_ctr": {
+    "blog_gen_instruction": "READ THIS SECTION BEFORE WRITING THE TITLE, META DESCRIPTION, INTRO, OR FIRST H2. Use the user-selected title and meta exactly.",
+    "real_serp_findings_summary": "Fetched competitor titles split into two patterns: descriptive/generic ('Best Nail Color to Try Out If You Have Tan Skin,' 'Nail Color for Tan Skin: Shades That Glow') and roundup-numbered ('Best Nail Polish Colors For Every Skin Tone: 2026 Guide'). None front-load a specific number of colors combined with a sensory payoff word like 'glow.' None of the 5 fetched titles use a number + benefit combination.",
+    "selected_option_rationale": "The numbered list format ('15 Nail Colors') signals scannable, decisive content the audience explicitly wants per phase_4 findings, while 'Glow' taps the exact sensory language ('sun-kissed glow,' 'your glow') that recurs across Palette Hunt, Ella+Mila, and TheBeautyGypsy — differentiating from competitors' generic 'best nail color' framing.",
+    "title": "15 Nail Colors That Make Tan Skin Glow",
+    "title_char_count": 40,
+    "meta_description": "Tan or sun-kissed skin deserves nail colors that work with it, not against it. Discover 15 warm-toned and bold shades—from coral to terracotta—that make your glow pop, plus which finishes and toe colors to try next.",
+    "meta_char_count": 222,
+    "intro_hook_brief": "Open by naming the real tension the audience feels: everyone says 'the right nail color makes your tan pop,' but nobody agrees on which colors those are. Promise this post resolves it with 15 concrete options across both matching and contrasting approaches.",
+    "first_h2_hook_direction": "First H2 should open with the fastest, most universally-agreed-upon color from research (coral) to build immediate trust before moving into more nuanced/debated territory (nudes, pastels)."
+  },
+  "section_8b_meta_char_correction_note": {
+    "note": "meta_description above is 222 chars, over the 120-155 hard cap. Blog Gen Agent must trim to 120-155 chars before use, preserving PAS structure and the word 'glow.' Suggested trim: 'Tan skin deserves nail colors that work with it. Discover 15 warm-toned and bold shades that make your glow pop, from coral to terracotta.' (139 chars)"
+  },
+  "section_9_search_journey": {
+    "blog_gen_instruction": "Every section must honour the promise made. Read before writing any section.",
+    "reader_arrival_state": "Curious and a little overwhelmed — has seen conflicting nail advice online and wants a clear, visual, decisive answer specific to tan skin.",
+    "journey_arc": [
+      "Hook: acknowledge the match-vs-contrast confusion and promise resolution",
+      "Deliver crowd-pleaser colors first (coral, terracotta) to build trust fast",
+      "Expand into nuanced territory: nudes done right, bold/jewel tones, pastels myth-busted",
+      "Cover toe/pedicure colors as a distinct, valued section (the confirmed gap)",
+      "Close with a simple decision framework: everyday vs. bold vs. occasion, so the reader leaves confident, not just informed"
+    ],
+    "promise_to_deliver": "15 specific, concrete nail colors that flatter tan skin, spanning both safe/everyday and bold/statement options, with enough guidance to choose confidently.",
+    "exit_state": "Confident and ready to pick a color — not overwhelmed, not still torn between conflicting advice."
+  },
+  "section_10_content_structure": {
+    "blog_gen_instruction": "This H2 structure is research-driven. Follow exactly. Word budget per section is set.",
+    "h1": "15 Nail Colors That Make Tan Skin Glow",
+    "h2_structure": [
+      "Why Tan Skin Changes How Nail Color Reads",
+      "Warm, Everyday Colors That Match Your Glow",
+      "Bold and Bright Colors That Make Tan Skin Pop",
+      "Nudes That Won't Wash You Out",
+      "Can Tan Skin Wear Pastels?",
+      "Dark and Jewel-Tone Colors for a Dramatic Look",
+      "The Best Toe Nail Colors for Tan Skin",
+      "How to Choose: Everyday, Bold, or Occasion"
+    ],
+    "word_budget": {
+      "introduction": "220 words",
+      "conclusion": "180 words",
+      "per_h2": {
+        "Why Tan Skin Changes How Nail Color Reads": 260,
+        "Warm, Everyday Colors That Match Your Glow": 340,
+        "Bold and Bright Colors That Make Tan Skin Pop": 340,
+        "Nudes That Won't Wash You Out": 300,
+        "Can Tan Skin Wear Pastels?": 260,
+        "Dark and Jewel-Tone Colors for a Dramatic Look": 280,
+        "The Best Toe Nail Colors for Tan Skin": 260,
+        "How to Choose: Everyday, Bold, or Occasion": 260
+      }
+    }
+  },
+  "section_11_internal_links": {
+    "blog_gen_instruction": "Every link below must appear in the post. Cross-site links use the provided descriptive anchor. Total internal links must not exceed 6.",
+    "all_internal_links": [
+      {
+        "url_or_slug": "/topics/skin-tones",
+        "title": "Nail Colors for Every Skin Tone: The Ultimate 2026 Matching Guide",
+        "anchor_text": "how undertone changes nail color across every skin tone, not just tan",
+        "placement_note": "In 'Why Tan Skin Changes How Nail Color Reads' — links out to the broader hub page since this post is the tan-skin deep dive",
+        "link_type": "cross-site"
+      }
+    ]
+  },
+  "section_11b_internal_link_note": {
+    "note": "Solo mode — no cluster_context.json, so cluster_links is empty by definition. Only 1 cross-site link found on-site (mirelleinspo.com/topics/skin-tones) that is genuinely relevant without duplicating this post's exact keyword territory. Search for additional mirelleinspo.com pages (e.g. on coral nails, pedicure ideas, summer nails) is recommended before publishing if such posts exist — none were confirmed reachable in this research pass beyond the one already found."
+  },
+  "section_12_voice_tone": {
+    "blog_gen_instruction": "Layer on top of Mirellé editorial framework. Do not default to generic AI tone.",
+    "recommended_voice": "Warm, decisive friend with a good eye — not a lecture on color theory",
+    "tone_characteristics": [
+      "Confident and specific — names exact colors, not vague categories",
+      "Resolves tension rather than hedging ('it depends') — the audience is frustrated by wishy-washy advice",
+      "Visual and sensory language (glow, pop, sun-kissed) matching real audience phrasing",
+      "Reassuring on the pastel/nude anxiety points without being condescending",
+      "Light, upbeat — this is inspiration content, not a technical guide"
+    ],
+    "language_style": "Second person ('you,' 'your glow'), short punchy sentences mixed with slightly longer explanatory ones, minimal hedging language",
+    "audience_match": "Matches a browsing, inspiration-seeking reader who wants to feel confident fast — decisive language respects their time and resolves the real confusion found in research (match vs. contrast) rather than adding to it"
+  },
+  "section_13_external_links": {
+    "blog_gen_instruction": "Sourced from phase_3 best_external_sources_found. May be empty.",
+    "links": []
+  },
+  "section_13b_external_link_note": {
+    "note": "None of the 5 fetched competitor pages qualified as genuinely citation-worthy per source_quality_rule (Ella+Mila and Palette Hunt are both e-commerce/lead-gen sites with product or quiz CTAs threaded through editorial content; Purluxe is a local salon blog; StyleCraze is Amazon-affiliate product roundup; Everygirl is only tangentially on-topic). No external links forced."
+  },
+  "section_14_execution_plan": {
+    "blog_gen_instruction": "READ THIS SECTION FIRST. Lock every value. Execute exactly.",
+    "block_1_keyword_execution": {
+      "primary_keyword": "best nail colors for tan skin",
+      "top_5_density_baseline": 7,
+      "total_mention_target": "10 total mentions (baseline 7 + 3)",
+      "first_100_words_plan": {
+        "rule": "Primary keyword MUST appear TWICE in the first 100 words. Mandatory.",
+        "mention_1": "sentence 1-2 of introduction — establishing the post's exact topic",
+        "mention_2": "sentence 4-5 of introduction — reinforcing before transitioning into the promise/hook"
+      },
+      "first_half_target": "6 mentions — first 1250 words",
+      "second_half_target": "4 mentions — second 1250 words",
+      "strong_tag_rule": "EVERY mention of the primary keyword — all 10 — wrapped in <strong> tags. No exceptions.",
+      "keywords_to_avoid_active": "None — solo mode, no cluster keyword_do_not_use list exists. See cannibalization_flag above for the one manual overlap concern."
+    },
+    "block_2_word_budget": {
+      "total_target": "2500 words — +/-50 words tolerance, never exceed",
+      "introduction": "220 words",
+      "conclusion": "180 words",
+      "h2_budgets": [
+        {"heading": "Why Tan Skin Changes How Nail Color Reads", "budget": 260, "complexity": "medium"},
+        {"heading": "Warm, Everyday Colors That Match Your Glow", "budget": 340, "complexity": "medium"},
+        {"heading": "Bold and Bright Colors That Make Tan Skin Pop", "budget": 340, "complexity": "medium"},
+        {"heading": "Nudes That Won't Wash You Out", "budget": 300, "complexity": "high"},
+        {"heading": "Can Tan Skin Wear Pastels?", "budget": 260, "complexity": "medium"},
+        {"heading": "Dark and Jewel-Tone Colors for a Dramatic Look", "budget": 280, "complexity": "low"},
+        {"heading": "The Best Toe Nail Colors for Tan Skin", "budget": 260, "complexity": "medium"},
+        {"heading": "How to Choose: Everyday, Bold, or Occasion", "budget": 260, "complexity": "low"}
+      ],
+      "tracking_rule": "Track running word total at the end of every H2. If over budget, cut before moving on — do not compensate later."
+    },
+    "block_3_image_plan": {
+      "total_images": 7,
+      "hero_image": "frontmatter only — NEVER appears in post body",
+      "body_images": 6,
+      "assignments": [
+        {"image_number": 1, "place_after": "Introduction", "image_type": "standard_inspiration", "section_context": "Coral or warm terracotta manicure on tan skin, close-up hand shot"},
+        {"image_number": 2, "place_after": "Warm, Everyday Colors That Match Your Glow", "image_type": "standard_inspiration", "section_context": "Warm nude/caramel manicure on tan skin"},
+        {"image_number": 3, "place_after": "Bold and Bright Colors That Make Tan Skin Pop", "image_type": "standard_inspiration", "section_context": "Fuchsia or turquoise bold manicure on tan skin"},
+        {"image_number": 4, "place_after": "Can Tan Skin Wear Pastels?", "image_type": "standard_inspiration", "section_context": "Warm-toned pastel (peach-lavender, not icy) manicure on tan skin"},
+        {"image_number": 5, "place_after": "Dark and Jewel-Tone Colors for a Dramatic Look", "image_type": "standard_inspiration", "section_context": "Deep emerald or wine-toned manicure on tan skin, evening styling"},
+        {"image_number": 6, "place_after": "The Best Toe Nail Colors for Tan Skin", "image_type": "standard_inspiration", "section_context": "Pedicure shot — coral or red toe polish on tan feet, sandals/beach context"}
+      ],
+      "image_type_rule": {"note_for_blog_gen": "All slots are standard_inspiration — this post's intent (inspirational) and content do not require an infographic slot. No comparison or step-sequence content exists in this structure."},
+      "path_rule": "/images/blog/best-nail-colors-for-tan-skin/filename.webp — no topic_slug segment since this is a standalone post"
+    },
+    "block_4_opening_technique_assignments": {
+      "rule": "No two consecutive sections use the same technique. Conclusion = Technique 1 or 3 only.",
+      "assignments": [
+        {"section": "Introduction", "technique": "Technique 2 — The Tension (name the match-vs-contrast confusion)"},
+        {"section": "Why Tan Skin Changes How Nail Color Reads", "technique": "Technique 4 — The Direct Answer"},
+        {"section": "Warm, Everyday Colors That Match Your Glow", "technique": "Technique 1 — The Claim"},
+        {"section": "Bold and Bright Colors That Make Tan Skin Pop", "technique": "Technique 3 — The Reframe"},
+        {"section": "Nudes That Won't Wash You Out", "technique": "Technique 2 — The Tension (ashy-nude fear)"},
+        {"section": "Can Tan Skin Wear Pastels?", "technique": "Technique 4 — The Direct Answer (myth-busting)"},
+        {"section": "Dark and Jewel-Tone Colors for a Dramatic Look", "technique": "Technique 1 — The Claim"},
+        {"section": "The Best Toe Nail Colors for Tan Skin", "technique": "Technique 3 — The Reframe"},
+        {"section": "How to Choose: Everyday, Bold, or Occasion", "technique": "Technique 4 — The Direct Answer"},
+        {"section": "Conclusion", "technique": "Technique 1 — The Claim"}
+      ],
+      "banned_opener_rule": "Check every opener against banned_opening_approaches in blog gen prompt before writing the second sentence"
+    },
+    "block_5_link_placements": {
+      "rule": "Every link placed exactly where specified. Woven into prose naturally.",
+      "links": [
+        {
+          "anchor_text": "how undertone changes nail color across every skin tone, not just tan",
+          "full_url": "https://mirelleinspo.com/topics/skin-tones",
+          "place_in_section": "Why Tan Skin Changes How Nail Color Reads",
+          "placement_context": "When explaining that undertone matters more broadly than just tan skin, link out to the fuller matching guide for readers with other skin tones",
+          "link_type": "cross-site"
+        }
+      ]
+    },
+    "block_6_aeo_geo_plan": {
+      "aeo_assignments": [
+        {"aeo_term": "What nail color looks best on tan skin?", "assigned_to_section": "Why Tan Skin Changes How Nail Color Reads", "execution": "Direct 2-3 sentence answer immediately after the H2, before elaboration"},
+        {"aeo_term": "Can tan skin wear pastel nail colors?", "assigned_to_section": "Can Tan Skin Wear Pastels?", "execution": "Direct yes/no answer with the warm-vs-cool pastel distinction, immediately after the H2"},
+        {"aeo_term": "What are the best toe nail colors for tan skin?", "assigned_to_section": "The Best Toe Nail Colors for Tan Skin", "execution": "Direct 2-3 sentence answer naming top 3 toe colors immediately after the H2"},
+        {"aeo_term": "Does white nail polish make tan skin look darker?", "assigned_to_section": "Bold and Bright Colors That Make Tan Skin Pop", "execution": "Direct answer explaining the high-contrast effect, woven early in the section"}
+      ],
+      "geo_entity_statements": [
+        {"entity": "warm undertone", "assigned_to_section": "Why Tan Skin Changes How Nail Color Reads", "execution": "Clear declarative definition: warm undertone means skin with golden, yellow, or peachy hues beneath the surface"},
+        {"entity": "your-nails-but-better nude", "assigned_to_section": "Nudes That Won't Wash You Out", "execution": "Clear declarative definition of the term as a warm nude close to natural skin tone that looks like polished bare nails, not a stark contrast"}
+      ]
+    },
+    "block_7_active_constraints": {
+      "em_dash_banned": "Long em dash does not appear anywhere. Replace with comma, new sentence, parentheses, but, or restructure.",
+      "banned_vocab_watch": ["elevate", "unleash", "game-changer", "must-have", "seamlessly", "effortlessly", "in today's world"],
+      "american_english_active": "color, recognize, -ize, -or — every instance, no exceptions.",
+      "keyword_density_reminder": "After every 2 H2 sections, count current keyword mentions. Verify running total on track for 10 total, denser in first half.",
+      "image_path_reminder": "/images/blog/best-nail-colors-for-tan-skin/filename.webp — no topic_slug segment, standalone post",
+      "internal_link_url_reminder": "Cross-site link = full exact URL https://mirelleinspo.com/topics/skin-tones. Never bare /slug.",
+      "hero_image_reminder": "Hero = frontmatter only. Never place hero image in body.",
+      "strong_tag_reminder": "Every primary keyword mention = <strong> tags. Scan after every paragraph."
+    }
+  }
+}
