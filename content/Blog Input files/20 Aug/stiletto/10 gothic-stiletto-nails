@@ -1,0 +1,256 @@
+# INPUT FILE — gothic-stiletto-nails
+This file is the single source of truth for the Blog Gen Agent. All POST_CONSTANTS values are hardcoded — do not ask, adjust, or override. All keywords, H2 structure, audience intelligence, internal links, and tone defined here must be followed exactly.
+
+## SECTION 2 — POST_CONSTANTS
+- slug: gothic-stiletto-nails
+- topic_slug: stiletto-nails
+- canonical: https://mirelleinspo.com/blog/stiletto-nails/gothic-stiletto-nails
+- post_type: spoke
+- intent: inspirational
+- word_count: 2600 (±50 words)
+- image_count: 7 (1 hero + 6 body — flat rule, intent = inspirational, not tutorial/comparison/pillar/40+ slug)
+- show_inspo_gallery_link: false (cluster default, verbatim from cluster_metadata.show_inspo_gallery_link_cluster_default)
+- template: posts
+- hero_dimensions: 1200x675
+- category: Nail Shapes
+- publish_date: 2026-08-20
+- author: jyoti-mirelle
+
+## SECTION 3 — CLUSTER SNAPSHOT
+- pillar_slug: stiletto-nails-guide
+- pillar_title: Stiletto Nails: The Complete Guide to Shapes, Lengths & Ideas
+- pillar_primary_keyword: stiletto nails ideas
+- this_post_slug: gothic-stiletto-nails
+- this_post_role: spoke
+- show_inspo_gallery_link_cluster_default: false
+- keywords_to_avoid: short stiletto nails, stiletto nails ideas, stiletto vs almond nails, coffin vs stiletto nails, how to do stiletto nails at home, stiletto nails keep breaking, stiletto wedding nails, halloween stiletto nails, stiletto french tip nails, stiletto nails for dark skin
+
+## SECTION 4 — SERP ANALYSIS
+**competitor_gaps** (2+ source confirmed):
+- No fetched page addresses professional/workplace wearability of gothic stiletto specifically (confirmed: Quora threads on stiletto + job interviews/healthcare, plus mirelleinspo.com's own "Nail Shapes for Work" and "Professional Nails in 2026" posts flagging stiletto as least work-appropriate) — an honest, brief wearability note is a real gap none of the 5 fetched pages address for the gothic angle specifically.
+- No fetched page separates "year-round gothic" from "Halloween-only gothic" for the stiletto shape specifically (SHANGMENG does this for goth nails broadly, not stiletto-specific; Pinterest confirms huge Halloween-crossover search volume alongside genuine year-round witchy/dark-romance searches) — a clear year-round vs. seasonal framing is under-covered for this exact keyword.
+- No fetched page discusses nail-length/breakage practicality specific to gothic stiletto styling choices (e.g., how motif complexity should scale down on shorter gothic stiletto sets) — GloomyGirlz and Polish&Pearls both assume full-length canvases throughout.
+
+**missing_semantic_territory**: "year-round goth vs Halloween goth" framing; "gothic stiletto short nails" (practical length variant); "gothic stiletto nails at work" wearability angle; occult/witchy crossover terms (sigil, pentagram, moon phase, spiderweb, memento mori) paired specifically with stiletto rather than generic goth.
+
+**our_strategic_approach**: Competitors split into two camps — pure inspo galleries (Polish&Pearls, GloomyGirlz, NailDesignsJournal) with zero practical framing, and a practical/technical piece (SHANGMENG) that treats stiletto as one of three shapes rather than the focus. None combine a genuinely deep, named-look idea gallery with the two demand-validated gaps above: year-round vs. Halloween framing and a brief, honest wearability note. This post's structural edge: organize idea sections by mood/motif (occult symbolism, blood & velvet reds, lace & romance, chrome & metal) rather than by color-only buckets like competitors do, since Pinterest and YouTube both show motif-driven search behavior (witchy, vampire, spiderweb, skull) outpacing plain color searches. Depth edge: name specific named "looks" (following GloomyGirlz's successful named-idea format, which is the most-detailed real page found) while adding the practical honesty layer (short-length adaptation, workplace note) that no fetched competitor includes.
+
+**top_5_fetched_pages_summary**:
+1. polishandpearls.com/stiletto-goth-nail-designs — ~1,450 words, 8 H2-level named sections (Black Lace Elegance, Mysterious Dark Ombre, Skull and Crossbones Glam, Gothic Rose Garden, Spiderweb Accents, Moonlit Serenade, Blood Red Velvet, Cursed Elegance, Haunting Holographics, Witchy Elegance, Phantom Feather Flourish), 0 direct keyword mentions in body beyond title/first line, decorative Instagram-credit format. Strength: genuinely dedicated to this exact keyword with named motifs. Weakness: zero practical content, no depth beyond a sentence per design.
+2. naildesignsjournal.com/black-stiletto-nails-combinations — ~2,100 words total (broader "black stiletto" scope), 13 H2 sections with one ("Gothic Stiletto Nails") specifically on-topic, ~2 keyword mentions. Strength: strong domain authority, FAQ schema present. Weakness: gothic angle is a minor subsection of a broader black-stiletto piece, not a dedicated treatment.
+3. gloomygirlz.com/goth-stiletto-nail-ideas — ~2,600 words, 30 individually named H2-style looks (Bats in the Night, Vampire Veins, Skeletal Whisper, etc.), ~3 keyword mentions in intro. Strength: most detailed and highest-volume named-idea format found; strong motif variety (occult, celestial, floral, insect). Weakness: no images described beyond alt text references, no structure beyond a flat list of 30, no practical or seasonal framing.
+4. fayona.org/black-stiletto-nails-trends-2025 — ~2,900 words total (broader black-stiletto guide), 1 dedicated "Gothic and Edgy Black Stiletto Nail Art" H2 (~180 words), ~4 keyword mentions across the piece. Strength: comprehensive supporting FAQ schema, strong on-page structure. Weakness: gothic treatment is thin and generic within a much broader piece.
+5. shangmengnails.com/blogs/trends/goth-nails-press-on-designs — ~2,850 words, 20 named designs across 4 categories plus dedicated "Best Nail Shapes for Goth" section naming stiletto as "the most committed goth shape," plus a genuinely useful "Year-Round Goth vs Halloween Goth" framework. Strength: only fetched page with the seasonal framing gap covered (though for goth nails broadly, not stiletto specifically) — this is the most structurally sophisticated page found. Weakness: stiletto is one of three shapes discussed, not the focus; heavy commercial/product framing throughout.
+
+**top_5_word_count_average**: ~2,380 words (across the on-topic portions of the 5 fetched pages)
+**top_5_keyword_density_average**: ~2.5 mentions of "gothic stiletto nails" or very close variant per page
+**recommended_image_count_validation**: 7 images (1 hero + 6 body) matches SERP visual density — all 5 fetched pages are heavily visual/gallery-format with one image roughly per named look or subsection; 6 body images comfortably covers 4-5 motif-grouped H2s plus intro/closing visual interest without overreaching into a 30-photo gallery format that would break the 2,600-word budget.
+
+**best_external_sources_found**: None of the 5 fetched pages qualify as genuinely citation-worthy external authorities for this post — all are competitor gallery/listicle content in the same content category (nail inspo blogs), not independent authoritative sources. section_13_external_links is empty.
+
+## SECTION 5 — AUDIENCE INTELLIGENCE
+**who_they_are**: Alternative-style or goth-adjacent nail enthusiasts (also witchy/dark-academia/alt-fashion crossover audiences per Pinterest signals), moderate-to-high nail-art familiarity, browsing for a specific-aesthetic manicure rather than a general nail idea. Many already wear the broader gothic aesthetic in clothing/makeup and are matching their nails to it.
+
+**what_they_want_from_this_post**: A genuinely dark, motif-rich idea gallery specific to the stiletto shape (not folded into a broader "black stiletto" or generic "goth nails" piece), organized enough to browse by mood (occult, romantic, vampiric, celestial) rather than scroll 30 unsorted photos.
+
+**what_frustrates_them**: Existing content either buries the gothic angle inside broader black-stiletto or general-goth pieces (Fayona, NailDesignsJournal), or delivers a flat unstructured wall of 25-30 near-identical black looks with no organizing logic (Polish&Pearls, GloomyGirlz) and zero acknowledgment that a stiletto set has different practical considerations than coffin or almond.
+
+**top_5_pain_points**:
+1. Can't find gothic stiletto content that isn't either Halloween-only or drowned in generic goth-nails coverage
+2. No guidance on adapting elaborate gothic designs (lace, skulls, spiderwebs) to shorter/more practical stiletto lengths
+3. Uncertainty about whether gothic stiletto reads as "everyday alt style" vs. "costume-y," especially for work or daily life (confirmed via Quora + mirelleinspo's own work-nails content flagging stiletto as least work-friendly)
+4. Overwhelm from unsorted galleries with no motif logic to browse by
+5. Wanting reassurance the aesthetic works year-round, not just in October
+
+**exact_user_phrases** (from real Quora, Pinterest, YouTube, SalonGeek research):
+- "gothic themed wedding" nails request (SalonGeek)
+- "matt black with glossy black tips" (SalonGeek pro-favorite combo)
+- "black lace over red or pearly colour, crosses, pearls, crowns, studs, roses" (SalonGeek ideas list)
+- "witchy nails stiletto" (Pinterest, high search volume)
+- "dark romance nail inspo" (Pinterest)
+- "vampy nails" / "vampire stiletto nails" (YouTube titles)
+- "cosmic molten chrome" / "dark iridescent aurora" (YouTube title language)
+- "gothic transparent lace nail" (YouTube)
+- "would it be advisable to wear stiletto styled nails at a professional job interview" (Quora — practicality concern)
+- "gothic tracery stiletto nails in matte black & silver" (Pinterest board title)
+- "spooky stiletto nails" / "goth fall nails" (Pinterest, seasonal crossover)
+- "clean girl goth aesthetic" (TikTok — softer/wearable gothic framing)
+
+**intent_content_signals**: Named, specific look titles outperform generic color-only headers (GloomyGirlz's 30-named-look format is the deepest real content found); motif-grouping (occult/romantic/vampiric/celestial) matches how the audience actually searches and pins rather than plain color; a brief practical note (length, wearability) is a genuine differentiator no competitor includes; strong visual density expected — this audience scrolls for aesthetic confirmation more than reads for information.
+
+## SECTION 6 — SEMANTIC KEYWORD DATA
+- primary_keyword: gothic stiletto nails
+- keyword_variations: goth stiletto nails, gothic stiletto nail designs, gothic stiletto nail ideas, dark stiletto nails, gothic black stiletto nails, stiletto goth nails, gothic stiletto manicure
+- cluster_keywords: black stiletto nails, matte black stiletto, stiletto nail art, dark romance nails, witchy stiletto nails, vampire stiletto nails, occult nail art, gothic nail designs, alt nail aesthetic, stiletto nail shape, dark aesthetic nails, gothic manicure ideas
+- lsi_terms: spiderweb nail art, skull nail design, gothic lace nails, blood red stiletto, chrome gothic nails, moon phase nails, pentagram nail art, cursed elegance nails, gothic rose nails, gunmetal chrome stiletto, oxblood nails, gothic ombre nails, negative space gothic nails, sigil nail art, dark academia nails, celestial goth nails, memento mori nails, Victorian gothic nails
+- aeo_terms: what makes stiletto nails look gothic, are gothic stiletto nails appropriate for work, what colors work for gothic stiletto nails besides black, can gothic stiletto nails be worn year round, how do you make gothic nails look elegant not costumey, what nail shape is most gothic, are gothic stiletto nails high maintenance, what's the difference between gothic and regular black stiletto nails
+- technical_terms: matte finish, chrome powder, negative space technique, gel-x extension, acrylic overlay, ombre gradient, French tip inversion
+- user_language: "vampy nails," "witchy nails," "dark romance," "clean girl goth," "spooky stiletto," "gothic tracery," "cosmic aurora finish," "cursed elegance," "dark academia vibes," "alt girl nails"
+
+## SECTION 7 — VOICE AND AI QUERIES
+1. What makes stiletto nails look gothic instead of just black?
+2. Can I wear gothic stiletto nails to work?
+3. What colors work for gothic nails besides black?
+4. How do I keep gothic stiletto designs from looking like a Halloween costume?
+5. What's the difference between gothic stiletto nails and regular black stiletto nails?
+6. Are gothic stiletto nails high maintenance?
+7. What nail art symbols are considered gothic?
+8. Can short stiletto nails still look gothic?
+9. What's the most elegant gothic stiletto nail design?
+10. How do I ask my nail tech for gothic stiletto nails?
+11. Do gothic stiletto nails work in spring and summer?
+12. What's the difference between gothic and witchy nail aesthetics?
+13. Are matte or glossy finishes more gothic?
+14. What nail shape is considered the most gothic?
+15. How long do gothic stiletto nail designs last?
+16. Can I do gothic stiletto nails at home?
+17. What's a good gothic stiletto design for a first-timer?
+
+## SECTION 8 — HOOK AND CTR
+**real_serp_findings_summary**: The 5 fetched competitor titles split into two patterns — numbered gallery titles with no urgency signal ("25 Striking Stiletto Nail Designs," "30 Goth Stiletto Nail Ideas") and broader black-stiletto titles where gothic is a subsection, not the headline focus. None front-load a specificity/numbers hook combined with a clear promise of what's *inside* beyond "designs." The genuine gap: no title signals depth, organization, or a same-2026 currency angle — all read as generic listicle titles from a reader's perspective.
+
+**selected_option_rationale**: "30+ Dark, Daring Designs for 2026" front-loads the primary keyword in the first 3 words, uses the specificity/numbers trigger (proven pattern across all 5 fetched competitors), and the year tag signals current relevance — while the meta description's promise of what competitors "miss" (organization, real motif variety) directly targets the audience's top pain point: unsorted, generic galleries.
+
+- title: Gothic Stiletto Nails: 30+ Dark, Daring Designs for 2026
+- title_char_count: 54
+- meta_description: Bored of the same 5 black looks? Get 30+ gothic stiletto nail ideas — occult symbols, blood reds, lace and chrome — organized by mood, not just color.
+- meta_char_count: 153
+- intro_hook_brief: Open by naming the exact frustration the audience feels (scrolling the same handful of black-lace-and-skull looks recycled across every gallery), then promise genuine range organized by mood rather than another flat list.
+- first_h2_hook_direction: Apply the "organized by mood, not color" angle directly — the first H2 should open on the occult/symbolic category (the most search-validated motif cluster per Pinterest and YouTube) rather than starting with plain black, subtly signaling from the first heading that this post thinks differently than the flat galleries it's outperforming.
+
+## SECTION 9 — SEARCH JOURNEY
+- reader_arrival_state: Scrolling for a specific aesthetic match, slightly fatigued by generic black-nail content, wanting confirmation this exact style (gothic + stiletto) is fully realized somewhere
+- journey_arc:
+  - Hook confirms this is a dedicated, organized gothic-stiletto resource, not a generic black-nails piece
+  - Early section delivers immediate visual abundance across a genuinely varied motif (occult first, establishing range beyond "just skulls")
+  - Middle sections build aspiration through romantic/vampiric/celestial variety, showing the aesthetic's full range
+  - A brief, honest practicality note (length, year-round wearability) earns trust without breaking the aspirational mood
+  - Close delivers the identity payoff: this is a style, not a costume
+- promise_to_deliver: 30+ genuinely varied, mood-organized gothic stiletto designs that go beyond what the flat, repetitive galleries currently ranking for this term offer
+- exit_state: Confident they've found their exact aesthetic match, with a specific look (or several) already picked out to bring to their nail tech or attempt at home
+
+## SECTION 10 — CONTENT STRUCTURE
+- h1: Gothic Stiletto Nails: 30+ Dark, Daring Designs for 2026
+- h2_structure:
+  1. What Makes Stiletto the Most Gothic Nail Shape
+  2. Occult and Symbolic Gothic Stiletto Designs
+  3. Blood, Wine, and Velvet Red Gothic Stiletto Looks
+  4. Lace, Roses, and Dark Romance Designs
+  5. Chrome, Metal, and Futuristic Gothic Stiletto Nails
+  6. Celestial and Witchy Gothic Stiletto Ideas
+  7. Wearing Gothic Stiletto Nails Year-Round (Not Just Halloween)
+  8. Short Gothic Stiletto Nails That Still Read Dark
+- word_budget:
+  - introduction: 230 words
+  - conclusion: 180 words
+  - per_h2:
+    1. What Makes Stiletto the Most Gothic Nail Shape — 220 words (low complexity, foundational/AEO-heavy)
+    2. Occult and Symbolic Gothic Stiletto Designs — 400 words (high complexity, most search-validated motif cluster)
+    3. Blood, Wine, and Velvet Red Gothic Stiletto Looks — 320 words (medium)
+    4. Lace, Roses, and Dark Romance Designs — 340 words (medium-high)
+    5. Chrome, Metal, and Futuristic Gothic Stiletto Nails — 320 words (medium)
+    6. Celestial and Witchy Gothic Stiletto Ideas — 320 words (medium)
+    7. Wearing Gothic Stiletto Nails Year-Round (Not Just Halloween) — 240 words (competitor gap section, low-medium)
+    8. Short Gothic Stiletto Nails That Still Read Dark — 250 words (competitor gap section, low-medium)
+
+## SECTION 11 — INTERNAL LINKS
+1. url_or_slug: /blog/stiletto-nails/stiletto-nails-guide | title: Stiletto Nails: The Complete Guide to Shapes, Lengths & Ideas | anchor_text: stiletto nails ideas | placement_note: Section 1 (What Makes Stiletto the Most Gothic Nail Shape) — natural reference back to the pillar when establishing shape fundamentals | link_type: cluster-pillar
+2. url_or_slug: /blog/stiletto-nails/halloween-stiletto-nails | title: Halloween Stiletto Nail Designs That Aren't Basic | anchor_text: halloween stiletto nail designs | placement_note: Section 7 (Year-Round vs Halloween) — direct, natural link when distinguishing year-round gothic from seasonal Halloween content | link_type: cluster-spoke
+3. url_or_slug: /blog/stiletto-nails/stiletto-nails-keep-breaking | title: Why Your Stiletto Nails Keep Breaking (And How to Stop It) | anchor_text: why stiletto nails keep breaking and how to stop it | placement_note: Section 8 (Short Gothic Stiletto Nails) — natural fit when discussing practicality/durability tradeoffs of length | link_type: cluster-spoke
+4. url_or_slug: https://mirelleinspo.com/blog/goth/goth-nails | title: Goth Nails: The Complete Dark Aesthetic Guide | anchor_text: the complete guide to every gothic nail shape and aesthetic | placement_note: Section 1 (What Makes Stiletto the Most Gothic Nail Shape) — genuinely relevant broader-context link for readers wanting other gothic shape options | link_type: cross-site
+5. url_or_slug: https://mirelleinspo.com/blog/vampire-nails-2025 | title: Vampire Nails 2026: The Gothic Trend Coming Back Stronger | anchor_text: blood-red vampire nail designs with dripping and 3D effects | placement_note: Section 3 (Blood, Wine, and Velvet Red) — directly relevant crossover aesthetic with strong stiletto overlap | link_type: cross-site
+
+(4 total — within the 4-6 cap. Cross-site capped at 2 as required. Cyber Goth Nails post was considered for section 5 but excluded on relevance-strictness grounds: its focus is chrome/industrial across multiple shapes, not gothic-stiletto specifically, and section 5 already has adequate coverage without it.)
+
+## SECTION 12 — VOICE AND TONE
+- recommended_voice: Confident insider — a stylist who's fluent in the aesthetic, not an outsider explaining goth culture to a curious tourist
+- tone_characteristics: Direct and specific (names real techniques and motifs rather than vague "dark and edgy" language), quietly confident rather than try-hard edgy, respects the audience's existing fluency with the aesthetic, avoids over-explaining subculture basics, lets the visuals and specificity do the persuading rather than hype language
+- language_style: Second person, short-to-medium sentences, concrete sensory detail over abstract mood-words, minimal exclamation points (this audience responds to confidence, not enthusiasm)
+- audience_match: This reader already knows what gothic means to them — they need curation and specificity, not an introduction to the aesthetic. A voice that explains too much reads as condescending; a voice that's specific and organized reads as trustworthy.
+
+## SECTION 13 — EXTERNAL LINKS
+(Empty — none of the 5 fetched competitor pages qualified as genuinely citation-worthy external authorities. All were same-category competitor gallery content.)
+
+## SECTION 14 — EXECUTION PLAN
+
+### Block 1 — Keyword Execution
+- primary_keyword: gothic stiletto nails
+- top_5_density_baseline: 2.5 mentions (average across fetched pages)
+- total_mention_target: 5 mentions total (baseline 2.5 rounded to 3, +2 = 5)
+- first_100_words_plan:
+  - mention_1: sentence 1-2 of introduction — establishing the exact aesthetic being covered, front-loaded
+  - mention_2: sentence 3-4 of introduction — reinforcing while setting up the "organized by mood" promise
+- first_half_target: 3 mentions — first 1,300 words (denser, covers intro + sections 1-3)
+- second_half_target: 2 mentions — second 1,300 words (sections 4-8 + conclusion)
+- strong_tag_rule: All 5 mentions of "gothic stiletto nails" (or exact variant) wrapped in `<strong>` tags — scan after every paragraph
+- keywords_to_avoid_active: short stiletto nails, stiletto nails ideas, stiletto vs almond nails, coffin vs stiletto nails, how to do stiletto nails at home, stiletto nails keep breaking, stiletto wedding nails, halloween stiletto nails, stiletto french tip nails, stiletto nails for dark skin
+
+### Block 2 — Word Budget
+- total_target: 2600 words (±50)
+- introduction: 230 words
+- conclusion: 180 words
+- h2_budgets:
+  1. What Makes Stiletto the Most Gothic Nail Shape — 220 words — low complexity
+  2. Occult and Symbolic Gothic Stiletto Designs — 400 words — high complexity
+  3. Blood, Wine, and Velvet Red Gothic Stiletto Looks — 320 words — medium complexity
+  4. Lace, Roses, and Dark Romance Designs — 340 words — medium-high complexity
+  5. Chrome, Metal, and Futuristic Gothic Stiletto Nails — 320 words — medium complexity
+  6. Celestial and Witchy Gothic Stiletto Ideas — 320 words — medium complexity
+  7. Wearing Gothic Stiletto Nails Year-Round (Not Just Halloween) — 240 words — low-medium complexity
+  8. Short Gothic Stiletto Nails That Still Read Dark — 250 words — low-medium complexity
+- tracking_rule: Track running word total at the end of every H2. If over budget, cut before moving on — never compensate later.
+
+### Block 3 — Image Plan
+- total_images: 7
+- hero_image: frontmatter only — never in post body
+- body_images: 6
+- assignments:
+  1. image_number: 1 | place_after: Section 1 (What Makes Stiletto the Most Gothic Nail Shape) | image_type: standard_inspiration | section_context: A clean, elegant matte-black gothic stiletto set establishing baseline shape/aesthetic before motif variety begins
+  2. image_number: 2 | place_after: Section 2 (Occult and Symbolic) | image_type: standard_inspiration | section_context: An occult-motif stiletto set — spiderweb or moon-phase detailing on a dark base, per the most search-validated motif cluster
+  3. image_number: 3 | place_after: Section 3 (Blood, Wine, and Velvet Red) | image_type: standard_inspiration | section_context: A glossy crimson or oxblood stiletto set with dark detailing, vampiric mood
+  4. image_number: 4 | place_after: Section 4 (Lace, Roses, and Dark Romance) | image_type: standard_inspiration | section_context: A black-lace-over-red or gothic rose floral stiletto design, romantic-dark mood
+  5. image_number: 5 | place_after: Section 5 (Chrome, Metal, and Futuristic) | image_type: standard_inspiration | section_context: A gunmetal chrome stiletto set showing the metallic/futuristic gothic variant
+  6. image_number: 6 | place_after: Section 6 (Celestial and Witchy) | image_type: standard_inspiration | section_context: A deep purple/midnight blue stiletto set with celestial (moon, stars) detailing
+  - image_type_rule note: All 6 slots are standard_inspiration — this post's intent (inspirational, motif-gallery format) does not call for infographic/comparison slots; no tool/equipment or literal side-by-side comparison images at any point.
+- path_rule: /images/blog/stiletto-nails/gothic-stiletto-nails/filename.webp
+
+### Block 4 — Opening Technique Assignments
+- Introduction: Technique 1 — The Claim (states directly that most gothic stiletto galleries recycle the same handful of looks, setting up the differentiation promise)
+- Section 1 (What Makes Stiletto the Most Gothic Nail Shape): Technique 2 — The Question (opens on why stiletto specifically reads as the most gothic shape)
+- Section 2 (Occult and Symbolic): Technique 3 — The Reframe (reframes "gothic" away from just skulls toward the fuller occult symbol vocabulary)
+- Section 3 (Blood, Wine, and Velvet Red): Technique 1 — The Claim
+- Section 4 (Lace, Roses, and Dark Romance): Technique 2 — The Question
+- Section 5 (Chrome, Metal, and Futuristic): Technique 3 — The Reframe
+- Section 6 (Celestial and Witchy): Technique 1 — The Claim
+- Section 7 (Wearing Year-Round): Technique 2 — The Question
+- Section 8 (Short Gothic Stiletto): Technique 3 — The Reframe
+- Conclusion: Technique 1 — The Claim
+- banned_opener_rule: Check every opener against banned_opening_approaches in Blog Gen prompt before writing the second sentence.
+
+### Block 5 — Link Placements
+1. anchor_text: stiletto nails ideas | full_url: /blog/stiletto-nails/stiletto-nails-guide | place_in_section: Section 1 | placement_context: When referencing the broader shape guide while establishing gothic-specific context | link_type: cluster-pillar
+2. anchor_text: halloween stiletto nail designs | full_url: /blog/stiletto-nails/halloween-stiletto-nails | place_in_section: Section 7 | placement_context: When explicitly distinguishing year-round gothic wear from seasonal Halloween-specific designs | link_type: cluster-spoke
+3. anchor_text: why stiletto nails keep breaking and how to stop it | full_url: /blog/stiletto-nails/stiletto-nails-keep-breaking | place_in_section: Section 8 | placement_context: When discussing durability tradeoffs of longer gothic stiletto designs vs shorter adaptations | link_type: cluster-spoke
+4. anchor_text: the complete guide to every gothic nail shape and aesthetic | full_url: https://mirelleinspo.com/blog/goth/goth-nails | place_in_section: Section 1 | placement_context: When acknowledging stiletto is one of several gothic-compatible shapes, pointing readers to the full-aesthetic guide | link_type: cross-site
+5. anchor_text: blood-red vampire nail designs with dripping and 3D effects | full_url: https://mirelleinspo.com/blog/vampire-nails-2025 | place_in_section: Section 3 | placement_context: When covering the blood-red/vampiric motif cluster, pointing to the deeper vampire-specific resource | link_type: cross-site
+
+### Block 6 — AEO/GEO Plan
+- aeo_assignments:
+  1. aeo_term: What makes stiletto nails look gothic instead of just black? | assigned_to_section: Section 1 | execution: Direct 2-3 sentence answer paragraph immediately after the H2 heading, before elaboration
+  2. aeo_term: Can I wear gothic stiletto nails to work? | assigned_to_section: Section 7 | execution: Direct 2-3 sentence answer paragraph immediately after the H2 heading, honest and brief
+  3. aeo_term: Can short stiletto nails still look gothic? | assigned_to_section: Section 8 | execution: Direct 2-3 sentence answer paragraph immediately after the H2 heading
+  4. aeo_term: Do gothic stiletto nails work in spring and summer? | assigned_to_section: Section 7 | execution: Folded into the year-round answer paragraph as a second beat
+- geo_entity_statements:
+  1. entity: Gothic stiletto nails (core definition) | assigned_to_section: Section 1 | execution: Clear declarative definition sentence — confident, no hedging, extractable as a standalone citation
+  2. entity: Negative space technique | assigned_to_section: Section 2 | execution: Clear declarative definition sentence when the technique is first named
+  3. entity: Chrome powder finish | assigned_to_section: Section 5 | execution: Clear declarative definition sentence when first introducing the chrome/metal category
+
+### Block 7 — Active Constraints
+- em_dash_banned: Long em dash never appears anywhere. Replace with comma / new sentence / parentheses / but / restructure.
+- banned_vocab_watch: elevate, unleash, journey, realm, delve, embrace, unlock, game-changer
+- american_english_active: color, recognize, -ize, -or — every instance, no exceptions
+- keyword_density_reminder: After every 2 H2 sections, count current keyword mentions. Verify running total on track for 5 total. First half denser than second half.
+- image_path_reminder: /images/blog/stiletto-nails/gothic-stiletto-nails/filename.webp — topic_slug in path always
+- internal_link_url_reminder: Full correct paths only. Cluster links = /blog/stiletto-nails/[slug]. Cross-site links = exact URL as discovered. Never bare /slug.
+- hero_image_reminder: Hero = frontmatter only. Never place hero image in body.
+- strong_tag_reminder: Every primary keyword mention = `<strong>` tags. Scan after every paragraph.
