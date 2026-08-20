@@ -1,0 +1,346 @@
+# SECTION 1 — FILE AUTHORITY
+
+THIS FILE IS THE SINGLE SOURCE OF TRUTH FOR THE BLOG GEN AGENT. All values in POST_CONSTANTS are hardcoded — Blog Gen Agent does not ask, adjust, or override them. All keywords, H2 structure, audience intelligence, internal links, and tone defined here must be followed exactly.
+
+---
+
+# SECTION 2 — POST_CONSTANTS
+
+| Field | Value |
+|---|---|
+| slug | disney-princess-nails |
+| topic_slug | disney-nails |
+| canonical | https://mirelleinspo.com/blog/disney-nails/disney-princess-nails |
+| post_type | spoke |
+| intent | inspirational |
+| word_count | 2700 (±50 tolerance) |
+| image_count | 7 (1 hero + 6 body) — flat "everything else" rule, spoke/inspirational, no X+ slug pattern |
+| show_inspo_gallery_link | false — read verbatim from cluster_context.json `show_inspo_gallery_link_cluster_default` |
+| template | posts |
+| hero_dimensions | 1200x675 |
+| category | Disney Nails |
+| publish_date | 2026-08-20 |
+| author | jyoti-mirelle |
+
+---
+
+# SECTION 3 — CLUSTER SNAPSHOT
+
+| Field | Value |
+|---|---|
+| pillar_slug | disney-nails |
+| pillar_title | Disney Nails: The Complete Guide to Every Style |
+| pillar_primary_keyword | disney nails |
+| this_post_slug | disney-princess-nails |
+| this_post_role | spoke |
+| show_inspo_gallery_link_cluster_default | false |
+
+**keywords_to_avoid (never used as focus terms):** disney halloween nails, disney nails, mickey mouse nails, disney world nails, easy disney nails for beginners, frozen nails, short disney nails, disney cruise nails, stitch nails.
+
+---
+
+# SECTION 4 — SERP ANALYSIS
+
+**top_5_fetched_pages_summary**
+
+| URL | Real word count | Real H2 count | Real "disney princess nails"-phrase mentions | Note |
+|---|---|---|---|---|
+| thecatalogbyceline.com/blog/25-disney-princess-nail-ideas... | ~950 | 25 (one per princess, H3-weight) | ~3 | Pure listicle, no shape/color/occasion guidance, no FAQ |
+| picturethemagic.com/disney-princess-nails/ | ~530 | 7 covered + 14 only linked, never written | ~5 | Thinnest page fetched; links out to Snow White, Aurora, Tiana, Rapunzel, Merida, Mirabel, Pocahontas without ever covering them |
+| disneywithdavesdaughters.com/disney-princess-nail-designs/ | ~1650 | 35 (H3-weight) | ~4 | Deepest sidekick/companion coverage (Meeko, Mushu, Rajah, Pascal) but skips Moana, Snow White, Merida entirely; dated 2024/refreshed 2025 |
+| kreafolk.com/blogs/inspirations/disney-nail-design | ~2850 | 6 (shape, color, decal mechanics) | 0 exact-phrase (keyword is "disney nail design") | Deepest mechanics content (shapes, pastels, decals) but only 1 of 6 H2s is princess-specific, and that H2 covers just 5 princesses |
+| greenweddingshoes.com/disney-nails-designs/ | ~2700 | 35 (mixed Disney, only ~3 are princess-specific) | ~2 | Broadest "Disney nails" scope; princess content is a minority of the piece |
+
+**top_5_word_count_average:** 1,736 words → feeds word_count baseline.
+**top_5_keyword_density_average:** ~3 mentions → feeds mention target.
+
+**competitor_gaps (demand-validated on 2+ sources):**
+- No page distinguishes "official" Disney Princesses (the 12-character franchise) from unofficial-but-commonly-included characters (Elsa, Anna, Moana pre-2019, Tinker Bell) — validated via Quora (4 separate threads defining/listing official vs. unofficial) and audience confusion signals.
+- No page addresses that "princess nails" is also a distinct, currently-trending non-Disney concept (short, sheer, "quiet luxury" manicures associated with Kate Middleton and Princess Diana) — validated via a dedicated trend Substack post and confirmed as active content on Mirellé's own site (`old-money-nails`).
+- No page frames designs as adult/elegant rather than kid-oriented — validated via Amazon/Etsy/Walmart product skew toward kids AND Pinterest "Princess Manicure Kids" boards existing alongside separate "Classy Nails" / "Prom Nails" adjacent boards, showing two distinct audience segments competitors don't separate.
+- Almond nail shape as the go-to princess-nail shape is validated on 3+ independent sources (two distinct Pinterest boards, a TikTok discover page, a dedicated RainyRoses blog post) but no fetched competitor weaves shape guidance per-princess.
+
+**missing_semantic_territory:** "almond disney princess nails," "which princess nail shape," "official disney princess nails," "princess nails vs disney princess nails," per-princess color palette pairings for Moana/Tiana/Rapunzel specifically (validated via Lemon8 real-time content and Disney Fashionista's polish-color roundup, but absent from all 5 fetched competitor pages in combined-post form).
+
+**our_strategic_approach:** Open by resolving real audience confusion no competitor addresses — official vs. unofficial princesses, and Disney princess nails vs. the unrelated quiet-luxury "princess nails" trend — which doubles as a natural, non-cannibalizing link to Mirellé's existing `old-money-nails` post. Structure content in thematic princess trios (Classic, '90s era, Warrior, Modern) rather than a flat A-to-Z or arbitrary-numbered list, which lets the post go deeper per princess than the thin picturethemagic page while staying more organized than the exhausting 35-entry disneywithdavesdaughters and greenweddingshoes pages. Own the two structural gaps zero competitors cover as full sections: nail shape/length guidance (almond-focused, validated demand) and sidekick/companion detailing (validated real interest, but only one competitor covers it, thinly and without shape or color guidance attached).
+
+**recommended_image_count_validation:** 7 images (1 hero + 6 body) matches SERP visual density — all 5 fetched competitors are image-heavy listicles; 6 body images across 8 princess-grouping and mechanics H2s is proportionate without needing one photo per individual princess (25+ images), which no single hero-image-budget post needs to match since Pinterest/Instagram already serves that granular need.
+
+**best_external_sources_found:** None of the 5 fetched pages qualify as genuinely citation-worthy (all are affiliate-driven lifestyle listicles, not authoritative/expert sources). Section 13 is empty by design — no external links forced.
+
+---
+
+# SECTION 5 — AUDIENCE INTELLIGENCE
+
+**who_they_are:** Adults (not children, despite heavy product-market skew toward kids) planning a manicure around a specific favorite Disney princess or a Disney-themed occasion — a trip, a party, or simply wanting a subtle nod to a character they love. Nail-art literate enough to search by shape (almond) and finish (subtle vs. bold), not first-time nail art searchers.
+
+**what_they_want_from_this_post:** A way to find "their" princess quickly, see her validated color palette, and get a shape/length recommendation that reads elegant rather than costume-like — confirmed via the "classy," "elegant," "regal" language repeated organically across every fetched competitor page, and the Pinterest "Classy Nails" adjacency to princess-nail boards.
+
+**what_frustrates_them:** Competitor pages either drown them in 25-35 largely repetitive entries (thecatalogbyceline, disneywithdavesdaughters, greenweddingshoes) or leave half the princesses as bare links with zero actual content (picturethemagic). None help a reader confidently pick a shape, and none clarify whether "princess nails" search results will even be about Disney.
+
+**top_5_pain_points:**
+1. Can't tell if Elsa/Anna/Moana "count" as princesses for this kind of post — sourced from 4 independent Quora threads asking exactly this.
+2. Overwhelmed by 25+ nearly-identical entries with no organizing logic — sourced from the structure (or lack of it) in 4 of 5 fetched pages.
+3. Wants an adult-appropriate look, worried "princess nails" reads as juvenile — sourced from kid-skewed product results contrasted with "classy"/"regal" language in the editorial content itself.
+4. Unsure what shape suits detailed character art — sourced from Pinterest almond-shape boards and RainyRoses' dedicated almond-shape guide.
+5. Doesn't know whether to DIY or book a salon visit — sourced from momswithmouseears, greenweddingshoes, and lifestylewithleah all raising the question but never resolving it clearly.
+
+**exact_user_phrases:**
+- "classy and subtle" (recurring across Pinterest board names and disneywithdavesdaughters copy)
+- "which princess is your favorite" (recurring content-format hook on Lemon8/TikTok)
+- "subtle disney princess nails" (Pinterest board name, verbatim)
+- "almond disney nails designs" (Pinterest board name, verbatim)
+- "not childish" (implied via adult-framing search pattern)
+- "at home or salon" (momswithmouseears phrasing, near-verbatim)
+- "her signature color scheme" (kreafolk phrasing, near-verbatim, reflects how audience mentally sorts princesses)
+- "which Disney princess do you think is the prettiest" (Quora thread title, reflects character-ranking mental model)
+- "official disney princesses" (Quora, recurring)
+- "unofficial disney princesses" (Quora, recurring)
+
+**intent_content_signals:** Grouped/organized content outperforms flat numbered lists for this audience (validated by the fact that the only two pages readers can meaningfully navigate — kreafolk's thematic H2s and the color-palette section specifically — are also the deepest, non-listicle sections found). Real color names beat vague description. Shape callouts are a genuine value-add, not filler. Sidekick/companion mentions read as bonus depth, not primary content.
+
+---
+
+# SECTION 6 — SEMANTIC KEYWORD DATA
+
+**primary_keyword:** disney princess nails (LOCKED)
+
+**keyword_variations:** disney princess nail designs, disney princess nail ideas, disney princess nail art, disney princess manicure, disney princess nails almond, official disney princess nails, disney princess nails for adults, disney princess nail inspo
+
+**cluster_keywords:** princess nail colors, princess nail shape, princess-themed manicure, character nail art, fairy tale nails, princess nail palette, almond princess nails, subtle princess nails, princess nail sidekick details, princess nail trio, royal manicure inspiration, princess nail occasion, classic Disney princess, modern Disney princess, warrior princess nails
+
+**lsi_terms:** almond nail shape, signature color palette, official Disney Princess franchise, unofficial princess, press-on nails, gel manicure, nail decal, sidekick nail art, glass slipper nail art, mermaid scale nails, cherry blossom nail art, tiara accent nail, rose accent nail, ombre base coat, accent nail, matte top coat, glitter gradient, character-face decal, water slide decal, quiet luxury nails
+
+**aeo_terms:**
+1. Which Disney princesses are considered "official"?
+2. Is Elsa a Disney princess for nail art purposes?
+3. What nail shape works best for Disney princess nail art?
+4. What color nails should I get for Ariel?
+5. What color nails should I get for Belle?
+6. What color nails should I get for Moana?
+7. What color nails should I get for Tiana?
+8. What color nails should I get for Rapunzel?
+9. Can adults wear Disney princess nails without it looking childish?
+10. Should I get Disney princess nails done at a salon or at home?
+11. How long do Disney princess press-on nails last?
+12. What's the difference between princess nails and Disney princess nails?
+
+**technical_terms:** press-on nails, gel polish, acrylic extension, nail decal, water slide decal, matte top coat, ombre technique, French tip
+
+**user_language:** classy and subtle, which princess is your favorite, at home or salon, her signature colors, not childish, official princess, unofficial princess, almond shape, easy to recreate, feel like royalty
+
+---
+
+# SECTION 7 — VOICE AND AI QUERIES
+
+**queries (12):**
+1. Which Disney princesses are officially part of the Disney Princess franchise?
+2. Does Elsa count as a Disney princess?
+3. Does Moana count as a Disney princess?
+4. What's the best nail shape for Disney princess nail art?
+5. What color nails should I get for an Ariel-inspired manicure?
+6. What color nails go with a Belle-inspired look?
+7. What's a good color palette for Moana nails?
+8. What color scheme works for Tiana-inspired nails?
+9. How do I do Rapunzel nails without it looking too literal?
+10. Are Disney princess nails only for kids?
+11. Can I get Disney princess nails done at a regular nail salon?
+12. What's the difference between "princess nails" and "Disney princess nails"?
+
+---
+
+# SECTION 8 — HOOK AND CTR
+
+**real_serp_findings_summary:** All 5 fetched competitor titles are number-led with no year tag despite covering an evergreen/inspirational topic; only 2 of 5 front-load the primary keyword; every title leans on a generic hype adjective (Awesome, Classy, Perfection, Best, Cute) rather than a specific structural promise, and none signal organization by princess grouping — the one real differentiator this post's fetched-page research supports.
+
+**selected_option_rationale:** "Disney Princess Nails: 25 Ideas for Every Princess" front-loads the exact primary keyword in the first three words, matches the number-led format every competitor already uses (so it doesn't look out of place in the SERP), and "for Every Princess" signals the trio-organized completeness that no fetched competitor's title communicates — directly answering the validated pain point of readers unsure whether thin, character-skipping roundups (like picturethemagic) will actually cover their favorite.
+
+**title:** Disney Princess Nails: 25 Ideas for Every Princess
+**title_char_count:** 50
+
+**meta_description:** Not sure which shade fits your favorite princess? These Disney princess nails cover Ariel, Belle, Moana, Tiana, and more, matched by shape and color.
+**meta_char_count:** 154
+
+**intro_hook_brief:** Open by naming the real, validated confusion this exact reader has — not sure if her favorite counts as "official," not sure if "princess nails" search results will even be about Disney — then promise the trio-organized, shape-and-color-matched structure the title implies.
+
+**first_h2_hook_direction:** Apply the same disambiguation angle from the intro directly to the first H2 heading, resolving official-vs-unofficial status and the Disney-vs-quiet-luxury "princess nails" confusion before any character-specific content begins.
+
+---
+
+# SECTION 9 — SEARCH JOURNEY
+
+**reader_arrival_state:** Curious and mildly uncertain — she has a favorite Disney princess in mind but isn't sure the post will actually cover that character in depth, and isn't fully sure "Disney princess nails" is even the right search term for what she wants.
+
+**journey_arc:**
+1. Resolve confusion (official/unofficial, Disney vs. quiet-luxury "princess nails") so she trusts the post understands her exact intent
+2. Deliver visual/color abundance immediately across the four princess trios so she finds her favorite fast
+3. Build toward practical confidence (shape, sidekick details) so the look feels achievable, not just aspirational
+4. Close with the DIY-vs-salon decision so she leaves with a concrete next action, not just inspiration
+
+**promise_to_deliver:** Every reader finds her specific favorite princess covered in real depth, color-matched and shape-matched, not just linked out to or buried in an undifferentiated 35-entry scroll.
+
+**exit_state:** Confident and ready to act — she knows her princess's colors, the shape to ask for (or DIY), and whether to book a salon visit or do it herself.
+
+---
+
+# SECTION 10 — CONTENT STRUCTURE
+
+**h1:** Disney Princess Nails: 25 Ideas for Every Princess
+
+**h2_structure:**
+1. Which Disney Princesses Actually Count as "Official"?
+2. Cinderella, Snow White & Aurora: The Classic Trio
+3. Ariel, Jasmine & Belle: The '90s Princess Era
+4. Mulan, Pocahontas & Merida: The Warrior Princesses
+5. Tiana, Rapunzel & Moana: The Modern Princesses
+6. The Best Nail Shape and Length for Princess Nail Art
+7. Sidekick and Companion Details Worth Adding
+8. DIY at Home or Book a Nail Tech?
+
+**word_budget:**
+| Section | Words |
+|---|---|
+| Introduction | 225 |
+| H2-1 (Official princesses) | 320 |
+| H2-2 (Classic Trio) | 300 |
+| H2-3 ('90s Era) | 300 |
+| H2-4 (Warrior Princesses) | 300 |
+| H2-5 (Modern Princesses) | 300 |
+| H2-6 (Shape & length) | 260 |
+| H2-7 (Sidekicks) | 240 |
+| H2-8 (DIY or salon) | 280 |
+| Conclusion | 175 |
+| **Total** | **2700** |
+
+---
+
+# SECTION 11 — INTERNAL LINKS
+
+| Anchor text | URL | Placement | Type |
+|---|---|---|---|
+| the complete Disney nails guide | /blog/disney-nails/disney-nails | Introduction | cluster-pillar |
+| Frozen nails inspired by Elsa and Anna | /blog/disney-nails/frozen-nails | H2-1 (Official princesses) | cluster-spoke |
+| the quiet-luxury "princess nails" trend inspired by Kate Middleton and Princess Diana | https://mirelleinspo.com/blog/aesthetic-nails/old-money-nails | H2-1 (Official princesses) | cross-site |
+| short and subtle Disney nail designs | /blog/disney-nails/short-disney-nails | H2-6 (Shape & length) | cluster-spoke |
+| shorter, kid-safe nail lengths and designs | https://mirelleinspo.com/blog/nail-designs-for-kids | H2-6 (Shape & length) | cross-site |
+| Disney World vacation nail ideas | /blog/disney-nails/disney-world-trip-nails | H2-8 (DIY or salon) | cluster-spoke |
+
+Total: 6 internal links (within the 4-6 cap).
+
+---
+
+# SECTION 12 — VOICE AND TONE
+
+**recommended_voice:** Warm, organized friend — not a breathless superfan (the tone every fetched competitor defaults to with phrases like "Bibbidi-Bobbidi-Boo" and "my fellow princesses")
+
+**tone_characteristics:** Confident and specific rather than gushing; treats the reader as an adult making a real styling decision; organizes rather than overwhelms; earns "magical"-type language rather than opening with it, since every competitor over-uses it from sentence one.
+
+**language_style:** Direct address ("you"), short declarative color/shape guidance, minimal exclamation points, no baby-talk or forced puns.
+
+**audience_match:** This reader wants efficient discovery of her favorite princess's look, not a themed narrative voice — a calmer, more organized register differentiates from every fetched competitor's over-the-top fairy-tale narration and matches the "classy," "elegant," "regal" language the audience itself uses.
+
+---
+
+# SECTION 13 — EXTERNAL LINKS
+
+Empty — no external links. None of the 5 fetched competitor pages met the citation-worthy bar (see Section 4).
+
+---
+
+# SECTION 14 — EXECUTION PLAN
+
+## Block 1: Keyword Execution
+- **primary_keyword:** disney princess nails
+- **top_5_density_baseline:** 3
+- **total_mention_target:** 6 (baseline 3 + 3)
+- **first_100_words_plan:**
+  - Mention 1: sentence 1 of introduction — the confusion-naming opening line
+  - Mention 2: sentence 3 of introduction — transitioning into the trio-organized promise
+- **first_half_target:** 4 mentions — first 1,350 words (denser: intro + H2-1 through H2-3)
+- **second_half_target:** 2 mentions — second 1,350 words (H2-4 through conclusion)
+- **strong_tag_rule:** Every one of the 6 mentions wrapped in `<strong>` tags. No exceptions.
+- **keywords_to_avoid_active:** disney halloween nails, disney nails, mickey mouse nails, disney world nails, easy disney nails for beginners, frozen nails, short disney nails, disney cruise nails, stitch nails.
+
+## Block 2: Word Budget
+- **total_target:** 2700 words (±50, never exceed)
+- **introduction:** 225 | **conclusion:** 175
+- **h2_budgets:**
+  | Heading | Budget | Complexity |
+  |---|---|---|
+  | Which Disney Princesses Actually Count as "Official"? | 320 | medium |
+  | Cinderella, Snow White & Aurora: The Classic Trio | 300 | medium |
+  | Ariel, Jasmine & Belle: The '90s Princess Era | 300 | medium |
+  | Mulan, Pocahontas & Merida: The Warrior Princesses | 300 | medium |
+  | Tiana, Rapunzel & Moana: The Modern Princesses | 300 | medium |
+  | The Best Nail Shape and Length for Princess Nail Art | 260 | low |
+  | Sidekick and Companion Details Worth Adding | 240 | low |
+  | DIY at Home or Book a Nail Tech? | 280 | medium |
+- **tracking_rule:** Track running word total after every H2. If over budget, cut before continuing — never compensate later.
+
+## Block 3: Image Plan
+- **total_images:** 7 | **hero_image:** frontmatter only, never in body | **body_images:** 6
+- **assignments:**
+  | # | Place after | Type | Context |
+  |---|---|---|---|
+  | 1 | Introduction | standard_inspiration | Flatlay/spread of several princess-themed manicures together, setting visual variety |
+  | 2 | H2-2 (Classic Trio) | standard_inspiration | Cinderella or Aurora-inspired look — blue/silver or pink/gold palette |
+  | 3 | H2-3 ('90s Era) | standard_inspiration | Ariel or Belle-inspired look — ocean teal/purple or rose/gold palette |
+  | 4 | H2-4 (Warrior Princesses) | standard_inspiration | Mulan-inspired look — cherry blossom, red/gold |
+  | 5 | H2-5 (Modern Princesses) | standard_inspiration | Moana or Tiana-inspired look — turquoise/ocean or bayou green/gold |
+  | 6 | H2-6 (Shape & length) | standard_inspiration | Close-up of an almond-shaped princess nail set |
+- **image_type_rule note:** Inspirational intent — zero infographics. No tool/equipment or hands-at-work images in any slot; no literal photo-comparison images.
+- **path_rule:** /images/blog/disney-nails/disney-princess-nails/filename.webp
+
+## Block 4: Opening Technique Assignments
+No two consecutive sections share a technique. Conclusion uses Technique 1 or 3 only.
+| Section | Technique |
+|---|---|
+| Introduction | Technique 2 — The Question |
+| H2-1 (Official princesses) | Technique 1 — The Claim |
+| H2-2 (Classic Trio) | Technique 4 — The Scene |
+| H2-3 ('90s Era) | Technique 3 — The Reframe |
+| H2-4 (Warrior Princesses) | Technique 5 — The Contrast |
+| H2-5 (Modern Princesses) | Technique 4 — The Scene |
+| H2-6 (Shape & length) | Technique 1 — The Claim |
+| H2-7 (Sidekicks) | Technique 2 — The Question |
+| H2-8 (DIY or salon) | Technique 3 — The Reframe |
+| Conclusion | Technique 1 — The Claim |
+
+*(Technique labels above are directional — Blog Gen Agent's own numbered framework is authoritative if numbering differs.)*
+
+**banned_opener_rule:** Check every opener against banned_opening_approaches in the Blog Gen prompt before writing the second sentence.
+
+## Block 5: Link Placements
+| Anchor text | Full URL | Section | Placement context | Type |
+|---|---|---|---|---|
+| the complete Disney nails guide | /blog/disney-nails/disney-nails | Introduction | Framing this post as one style within the broader Disney nails universe | cluster-pillar |
+| Frozen nails inspired by Elsa and Anna | /blog/disney-nails/frozen-nails | H2-1 | Naming Elsa and Anna as "unofficial" princesses, pointing to their own dedicated post | cluster-spoke |
+| the quiet-luxury "princess nails" trend inspired by Kate Middleton and Princess Diana | https://mirelleinspo.com/blog/aesthetic-nails/old-money-nails | H2-1 | Disambiguating from the non-Disney "princess nails" search meaning | cross-site |
+| short and subtle Disney nail designs | /blog/disney-nails/short-disney-nails | H2-6 | Pointing readers who want shorter length than almond to the dedicated post | cluster-spoke |
+| shorter, kid-safe nail lengths and designs | https://mirelleinspo.com/blog/nail-designs-for-kids | H2-6 | Serving parent-readers with children's shorter nail beds | cross-site |
+| Disney World vacation nail ideas | /blog/disney-nails/disney-world-trip-nails | H2-8 | Trip-timing context when discussing booking a salon appointment ahead of a park visit | cluster-spoke |
+
+## Block 6: AEO / GEO Plan
+**aeo_assignments:**
+| AEO term | Section | Execution |
+|---|---|---|
+| Which Disney princesses are officially part of the Disney Princess franchise? | H2-1 | Direct 2-3 sentence answer immediately after the H2 heading |
+| Does Elsa count as a Disney princess? | H2-1 | Direct 2-3 sentence answer, same paragraph block |
+| What's the best nail shape for Disney princess nail art? | H2-6 | Direct 2-3 sentence answer immediately after the H2 heading |
+| Are Disney princess nails only for kids? | H2-8 | Direct 2-3 sentence answer, framing the adult/elegant angle |
+
+**geo_entity_statements:**
+| Entity | Section | Execution |
+|---|---|---|
+| Official Disney Princess (franchise term) | H2-1 | Clear declarative definition: the 12-character marketed franchise vs. characters commonly included but not official |
+| Almond nail shape | H2-6 | Clear declarative definition of the shape and why it suits detailed character art |
+
+## Block 7: Active Constraints
+- **em_dash_banned:** No long em dash anywhere. Replace with comma, new sentence, parentheses, "but," or restructure.
+- **banned_vocab_watch:** enchanting, magical (unless specifically earned), whimsical, unleash, elevate, delve, embark, unlock — these dominate every fetched competitor's copy and risk becoming filler here.
+- **american_english_active:** color, favorite, personalize — American spelling throughout, no British variants.
+- **keyword_density_reminder:** After every 2 H2 sections, count running mentions against the target of 6. First half (through H2-3) must run denser than second half.
+- **image_path_reminder:** /images/blog/disney-nails/disney-princess-nails/filename.webp
+- **internal_link_url_reminder:** Cluster links = /blog/disney-nails/[slug]. Cross-site links = exact URL as discovered above. Never bare /slug.
+- **hero_image_reminder:** Hero = frontmatter only, never in body.
+- **strong_tag_reminder:** Every primary keyword mention wrapped in `<strong>` tags. Scan after every paragraph.
