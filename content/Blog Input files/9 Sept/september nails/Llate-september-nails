@@ -1,0 +1,263 @@
+# SECTION 1 — FILE AUTHORITY
+This file is the single source of truth for Blog Gen Agent. All POST_CONSTANTS values are hardcoded. All keywords, H2 structure, audience intelligence, internal links, and tone must be followed exactly.
+
+# SECTION 2 — POST_CONSTANTS
+- slug: late-september-nails
+- topic_slug: september
+- canonical: https://mirelleinspo.com/blog/september/late-september-nails
+- post_type: spoke
+- intent: seasonal_trend
+- word_count: 2350
+- image_count: 7 (1 hero + 6 body)
+- show_inspo_gallery_link: true (cluster default, verbatim)
+- template: posts
+- hero_dimensions: 1200x675
+- category: September Nails
+- publish_date: 2026-08-27
+- author: jyoti-mirelle
+
+# SECTION 3 — CLUSTER SNAPSHOT
+- pillar_slug: september-nails
+- pillar_title: September Nail Ideas
+- pillar_primary_keyword: september nails
+- this_post_slug: late-september-nails
+- this_post_role: spoke
+- show_inspo_gallery_link_cluster_default: true
+- keywords_to_avoid: september nails, september nail colors, september birthday nails, september birthstone nails, short september nails, september nail shapes, september nail art, short vs long september nails, virgo nails, libra nails
+
+# SECTION 4 — SERP ANALYSIS
+**competitor_gaps** (2+ source validated):
+- No fetched page structures content around the early-vs-late September split. jullysplace.com and beyoungaholic.com both mention "late September" only as a passing phrase inside an early-month roundup, never as its own section (2 sources).
+- No fetched page explains WHY late September nails differ from full fall nails (equinox timing, lingering warmth vs. commitment to depth) — confirmed absent across all 5, while whowhatwear.com and insponstylish.com (independent sources) treat "fall transition" as a distinct enough concept to build entire articles around (2+ sources).
+- None of the 5 answer "when should I switch to fall colors" as a direct, dated question — beyoungaholic.com implies it ("late September... move into darker browns") but never states a trigger point; nailzinbloom.com (external, non-fetched) explicitly names late September as the fall-color switch moment (2 sources).
+**missing_semantic_territory**: "equinox," "fall transition," "summer-to-fall transition nails," "last week of September," "September to October," "end of month manicure" — present in independent search results (whowhatwear, insponstylish, women.com) but absent from every fetched September-nails competitor page.
+**our_strategic_approach**: All 5 top-ranking pages are flat "N September nail ideas" galleries that treat the whole month as one undifferentiated palette, front-loading early-month soft neutrals and only gesturing at deeper tones near the end of a long list. This post owns the back half of the month specifically: it opens by naming the exact moment (post-equinox, cooling air, last-of-summer light fading) that makes late September feel different, then delivers looks organized around that specific mood rather than a generic 30-idea dump. Structurally this post is shorter and sharper than the 2150-word average bloat of idea-listicles — it uses fewer, denser sections built around the transition itself (why late Sept ≠ early Sept ≠ full fall, what colors earn their place specifically now, textures that read as "just arrived" rather than recycled fall content) rather than 25-30 repetitive numbered items. This is real differentiated territory none of the 5 fetched competitors is built to serve.
+**top_5_fetched_pages_summary**:
+1. jullysplace.com/september-nails — ~1750 words, 25 H2s (idea headers) + 3 FAQ H3s, ~45 "September" mentions. Strength: personable voice, FAQ block. Weakness: zero late-month structure, "late September nails" used once as a throwaway phrase.
+2. stoleninspiration.com/september-nails — ~2450 words, 27 H2s + 1 closing H2. Strength: long, SEO-dense, strong internal linking. Weakness: no early/late split at all, pure color-and-design list.
+3. thepinkissue.com/september-nails — ~1900 words, 30 H2s (numbered). Strength: trendy DIY-voice, strong internal link web. Weakness: no seasonal-shift narrative, reads as generic "30 ideas" template reused monthly.
+4. yourgirlknows.com/september-nails — ~1050 words, 24 H2s. Strength: shortest load, high shareability captions. Weakness: thinnest per-item text, no informational or transition framing at all.
+5. beyoungaholic.com/september-nail-ideas — ~3600 words, 30 H2s + 25-question FAQ + comparison tables. Strength: most AEO-optimized, real answer-engine structure, does mention "late September, move into darker browns" once. Weakness: buries the late-month distinction as a single sentence inside a "how to choose" section rather than building around it.
+**top_5_word_count_average**: 2150 words
+**top_5_keyword_density_average**: "late september nails" as an exact phrase appears 0–2 times per fetched page (jullysplace: 2 instances; beyoungaholic: 0 exact-phrase, uses "late September" as a modifier). Effective baseline average: 2 mentions.
+**recommended_image_count_validation**: 7 images (1 hero + 6 body) matches the visual density of all 5 fetched pages, none of which uses infographics — pure styled-nail photography throughout.
+**best_external_sources_found**: None of the 5 fetched pages qualify as genuinely citation-worthy for E-E-A-T (no named expert quotes, no dermatological or nail-health sourcing beyond generic blog voice). Section 13 is empty.
+
+# SECTION 5 — AUDIENCE INTELLIGENCE
+- **who_they_are**: Someone already past the "what are September nails" stage — she's had at least one September manicure already or has been browsing all month, and she specifically wants to know what changes as the month ends. Fashion/beauty-engaged, checks Pinterest and TikTok regularly, likely booking a fresh set for the first week of October or a back-to-fall event.
+- **what_they_want_from_this_post**: Confirmation that it's "time" to go deeper/darker, plus a curated set of looks that read as genuinely late-month rather than recycled early-September content she's already seen.
+- **what_frustrates_them**: Every "September nails" roundup she finds treats the whole month identically — she can't tell which of the 25-30 ideas are actually meant for right now (late month) vs. three weeks ago.
+- **top_5_pain_points**:
+  1. Can't tell when "September nails" content stops being early-month appropriate
+  2. Existing roundups don't explain the equinox/weather-shift logic, just list colors
+  3. Wants to avoid looking "try-hard early fall" or "stuck in summer" at the same time
+  4. Struggles to find looks distinct from the generic burgundy-and-orange every fall list repeats
+  5. Uncertain whether to fully commit to fall darks or ease in
+- **exact_user_phrases**: "is it too early for burgundy," "when does fall start for nails," "end of September mani," "still hot out but I want fall nails," "September nails but make it fall," "transitioning my nails from summer to fall," "what nail color for the last week of September," "fall nails but not pumpkin yet," "September nails 2026 last week," "nails for equinox weather"
+- **intent_content_signals**: Wants a short, confident "here's what's different now" framing up top before any list; responds to specific color-name callouts (not just "warm tones"); wants texture variety (chrome, tortoiseshell) not just color; prefers content that acknowledges the reader already knows September nails broadly and is looking for the late-month layer specifically; skews toward almond/coffin shape imagery in saved late-Sept content.
+
+# SECTION 6 — SEMANTIC KEYWORD DATA
+- primary_keyword: late september nails
+- keyword_variations: late september nail ideas, late september manicure, end of september nails, september to october nails, late september nail colors, nails for late september, late september nail designs
+- cluster_keywords: fall transition nails, summer to fall transition nails, september nails full fall energy, equinox nails, early fall nails, fall nail colors 2026, september nail trends, back to fall nails, autumn transition manicure, end of month nails, september nail palette shift, cozy fall nails, last week of september nails, deep fall colors
+- lsi_terms: burgundy nails, espresso brown nails, olive green nails, tortoiseshell nails, chrome nails, forest green nails, plum nails, equinox, cooler weather nails, autumn palette, warm neutrals, cat-eye nails, matte finish, jewel tones, sweater weather manicure, dark academia nails, moody manicure, seasonal nail shift, richer tones, layered polish
+- aeo_terms: when should you switch to fall nail colors in september, what makes late september nails different from early september nails, what nail colors are best for the end of september, are burgundy nails too early for late september, what's the difference between september nails and fall nails, when does fall officially start for nail trends, what colors work for september to october transition, how do you know when to go darker with your nail polish
+- technical_terms: cat-eye gel, tortoiseshell technique, chrome powder, matte top coat, aura nail technique, blooming gel, negative space manicure
+- user_language: "is it too early for burgundy", "when does fall start for nails", "still hot out but want fall nails", "September nails but make it fall", "transitioning my nails from summer to fall", "fall nails but not pumpkin yet", "end of September mani", "nails for the last week of September", "going deeper with my nail color", "ready for cozy season nails"
+
+# SECTION 7 — VOICE AND AI QUERIES
+1. When should I switch from summer nail colors to fall nail colors in September?
+2. What makes late September nails different from early September nails?
+3. Is burgundy too dark to wear in late September?
+4. What nail colors are best for the last week of September?
+5. Can I still wear light colors in late September?
+6. What's the best manicure for the September to October transition?
+7. Do nail trends actually change partway through September?
+8. What colors should I ask for at the salon in late September?
+9. Is tortoiseshell nail art appropriate for September?
+10. When does fall nail season really start?
+11. What's a good nail color for cooler September weather?
+12. How do I know if my nails look too summery for the season?
+13. What finish works best for late September, matte or glossy?
+14. Are dark green nails good for late September?
+15. What's the most popular late September nail color right now?
+16. How do I transition my nails from September into October?
+17. What nail shapes pair best with deep fall colors?
+18. Should I go darker with my nails once it starts feeling like fall?
+
+# SECTION 8 — HOOK AND CTR
+real_serp_findings_summary: All 5 fetched competitor titles use the flat "[N] September Nail Ideas" pattern with no month-phase distinction — number-led or benefit-led, primary keyword front-loaded in 4 of 5. None signal "late" or "end of month" anywhere in title or meta despite mentioning it briefly in body copy. The clear opportunity: no competitor title acknowledges the reader is past the early-September stage and specifically wants the late-month palette shift — that's the gap this post's title can own.
+
+selected_option_rationale: The "full fall energy" framing directly matches this post's own title/slug and taps the FOMO/trend trigger validated by GSC demand — it signals confident arrival at the deeper palette rather than hedging, which fits seasonal_trend intent better than a cautious "when to switch" framing.
+title: Late September Nails 2026: Full Fall Energy Ideas
+title_char_count: 52
+meta_description: Late September nails go deeper than early-month neutrals. Browse the burgundies, olives, and chrome looks worth booking now.
+meta_char_count: 126
+intro_hook_brief: Open by naming the exact sensory moment (equinox air, first real chill) that separates late September from the rest of the month — confirm the reader is in the right place, then promise the deeper palette immediately, matching the "full fall energy" title promise.
+first_h2_hook_direction: Frame the first H2 around what specifically changes once the equinox lands — not just "colors get darker" but why this exact week is different from three weeks ago.
+
+# SECTION 9 — SEARCH JOURNEY
+- reader_arrival_state: Trend-aware and slightly impatient — she's ready to commit to fall but unsure if late September is "too early" or exactly on time.
+- journey_arc:
+  1. Confirm she's in the right place with a strong, specific trend statement about late September's shift
+  2. Show the deepest, most popular late-month colors first (burgundy, olive, espresso) to reward the click immediately
+  3. Layer in texture and finish variety (chrome, tortoiseshell, cat-eye) so it doesn't read as a flat color list
+  4. Address the practical decision points (shape, transition timing, what to ask for at the salon)
+  5. Close with the "this is what to get" moment — a clear, confident recommendation, not a hedge
+- promise_to_deliver: This post will show exactly which nail colors and looks mark late September's shift into full fall energy, and why now is the right time to wear them.
+- exit_state: Confident and ready to book — she knows exactly what to ask for and feels like she's exactly on trend, not early or late.
+
+# SECTION 10 — CONTENT STRUCTURE
+h1: Late September Nails 2026: Full Fall Energy Ideas
+h2_structure:
+1. Why Late September Nails Look Different From the Rest of the Month
+2. Burgundy: The Late September Color Everyone Reaches For
+3. Deep Olive and Espresso: The Quiet Alternatives to Burgundy
+4. Chrome and Cat-Eye Finishes for Late September
+5. Tortoiseshell Nails for the September-to-October Shift
+6. Best Nail Shapes for Full Fall Energy
+7. When to Make the Switch (and What to Ask For at the Salon)
+
+word_budget:
+  introduction: 220
+  conclusion: 180
+  per_h2:
+    - heading: "Why Late September Nails Look Different From the Rest of the Month"
+      budget: 320
+    - heading: "Burgundy: The Late September Color Everyone Reaches For"
+      budget: 340
+    - heading: "Deep Olive and Espresso: The Quiet Alternatives to Burgundy"
+      budget: 320
+    - heading: "Chrome and Cat-Eye Finishes for Late September"
+      budget: 320
+    - heading: "Tortoiseshell Nails for the September-to-October Shift"
+      budget: 310
+    - heading: "Best Nail Shapes for Full Fall Energy"
+      budget: 280
+    - heading: "When to Make the Switch (and What to Ask For at the Salon)"
+      budget: 260
+
+# SECTION 11 — INTERNAL LINKS
+all_internal_links:
+  - url_or_slug: /blog/september/september-nails
+    title: September Nail Ideas
+    anchor_text: september nail ideas
+    placement_note: Introduction — orienting link back to the pillar for readers who want the full-month view
+    link_type: cluster-pillar
+  - url_or_slug: /blog/september/september-nail-art-textures
+    title: Trending September Nail Art and Textures
+    anchor_text: trending september nail art and textures
+    placement_note: "Tortoiseshell Nails for the September-to-October Shift" H2 — natural link for readers wanting more texture-led ideas
+    link_type: cluster-spoke
+  - url_or_slug: /blog/september/short-vs-long-september-nails
+    title: Short vs Long: Which September Nails Should You Get
+    anchor_text: short vs long september nails
+    placement_note: "Best Nail Shapes for Full Fall Energy" H2 — direct decision-support link
+    link_type: cluster-spoke
+  - url_or_slug: /blog/september/september-nail-colors
+    title: September Nail Colors
+    anchor_text: september nail colors
+    placement_note: "Burgundy: The Late September Color Everyone Reaches For" H2 — sends readers wanting the full color roundup to the dedicated colors spoke
+    link_type: cluster-spoke
+  - url_or_slug: https://mirelleinspo.com/blog/fall/fall-nail-colors
+    title: Fall Nail Colors 2026: 10 Shades Everyone's Wearing
+    anchor_text: the full fall nail colors guide for shade-by-shade skin tone matching
+    placement_note: "Deep Olive and Espresso" H2 — reader ready to commit fully to fall gets routed to the broader fall colors resource
+    link_type: cross-site
+  - url_or_slug: https://mirelleinspo.com/blog/fall/tortoiseshell-nails-fall
+    title: Tortoiseshell Nails: The Fall 2026 Trend Everyone Wants
+    anchor_text: how to get the tortoiseshell nail technique right at the salon or at home
+    placement_note: "Tortoiseshell Nails for the September-to-October Shift" H2 — deep-dive link for the specific technique named in that section
+    link_type: cross-site
+gallery_link: /inspo/september-inspiration-gallery (show_inspo_gallery_link: true — render per cluster default)
+
+# SECTION 12 — VOICE AND TONE
+recommended_voice: Confident trend guide
+tone_characteristics: Assured and specific (not hedging on "maybe try"), slightly urgent without being pushy, warm and conversational, decisive in recommendations, avoids generic seasonal filler
+language_style: Second person throughout, short punchy sentences mixed with one longer explanatory sentence per section, minimal hedging language ("might," "could" used sparingly), no rhetorical questions stacked back to back
+audience_match: This reader already knows the September nails basics and wants someone to confidently tell her what's next — a hedging or overly educational tone would frustrate her; a decisive trend-guide voice matches her FOMO-driven, ready-to-book mindset
+
+# SECTION 13 — EXTERNAL LINKS
+links: []
+
+# SECTION 14 — EXECUTION PLAN
+
+## Block 1 — Keyword Execution
+- primary_keyword: late september nails
+- top_5_density_baseline: 2
+- total_mention_target: 5 (baseline 2 + 3)
+- first_100_words_plan:
+  - mention_1: sentence 2 of introduction — naming the post topic directly after the equinox/sensory hook
+  - mention_2: sentence 4 of introduction — reinforcing the promise of "full fall energy" looks
+- first_half_target: 3 mentions — first ~1175 words (intro + H2s 1-3)
+- second_half_target: 2 mentions — second ~1175 words (H2s 4-7 + conclusion)
+- strong_tag_rule: Every one of the 5 mentions of "late september nails" wrapped in `<strong>` tags. Scan after every paragraph.
+- keywords_to_avoid_active: september nails, september nail colors, september birthday nails, september birthstone nails, short september nails, september nail shapes, september nail art, short vs long september nails, virgo nails, libra nails
+
+## Block 2 — Word Budget
+- total_target: 2350 words (±50)
+- introduction: 220
+- conclusion: 180
+- h2_budgets:
+  - heading: "Why Late September Nails Look Different From the Rest of the Month" | budget: 320 | complexity: medium
+  - heading: "Burgundy: The Late September Color Everyone Reaches For" | budget: 340 | complexity: medium
+  - heading: "Deep Olive and Espresso: The Quiet Alternatives to Burgundy" | budget: 320 | complexity: medium
+  - heading: "Chrome and Cat-Eye Finishes for Late September" | budget: 320 | complexity: low
+  - heading: "Tortoiseshell Nails for the September-to-October Shift" | budget: 310 | complexity: medium
+  - heading: "Best Nail Shapes for Full Fall Energy" | budget: 280 | complexity: low
+  - heading: "When to Make the Switch (and What to Ask For at the Salon)" | budget: 260 | complexity: low
+- tracking_rule: Track running word total after every H2. Cut before moving on if over budget — never compensate later.
+
+## Block 3 — Image Plan
+- total_images: 7
+- hero_image: frontmatter only, never in body
+- body_images: 6
+- assignments:
+  1. place_after: "Why Late September Nails Look Different From the Rest of the Month" | image_type: standard_inspiration | section_context: A styled manicure that visually bridges warm and deep tones — half-warm, half-cool undertone to echo the transition theme
+  2. place_after: "Burgundy: The Late September Color Everyone Reaches For" | image_type: standard_inspiration | section_context: Glossy deep burgundy manicure, almond or coffin shape, salon-quality finish
+  3. place_after: "Deep Olive and Espresso: The Quiet Alternatives to Burgundy" | image_type: standard_inspiration | section_context: Espresso brown or olive green solid manicure, matte or glossy finish, short-to-medium length
+  4. place_after: "Chrome and Cat-Eye Finishes for Late September" | image_type: standard_inspiration | section_context: Cat-eye gel manicure in a deep jewel tone showing the light-shift effect
+  5. place_after: "Tortoiseshell Nails for the September-to-October Shift" | image_type: standard_inspiration | section_context: Classic tortoiseshell nail art on almond or coffin nails, amber-caramel-black layered effect
+  6. place_after: "Best Nail Shapes for Full Fall Energy" | image_type: standard_inspiration | section_context: Close-up comparison-friendly shot of one almond and one coffin shape both in a deep fall shade, styled as two separate photographed hands (not a graphic comparison)
+- image_type_rule note: All 6 slots are standard_inspiration — this is seasonal_trend intent with no comparison or tutorial requirement, so no infographic slot is needed.
+- path_rule: /images/blog/september/late-september-nails/filename.webp
+
+## Block 4 — Opening Technique Assignments
+- Introduction: Technique 1 — The Claim (states the trend fact directly: late September nails commit to fall)
+- H2-1 (Why Late September Looks Different): Technique 3 — The Reframe (reframes "it's the same as early September" into "it's actually a distinct moment")
+- H2-2 (Burgundy): Technique 2 — The Scene (opens on the sensory/seasonal moment before naming the color)
+- H2-3 (Olive/Espresso): Technique 1 — The Claim
+- H2-4 (Chrome/Cat-Eye): Technique 3 — The Reframe
+- H2-5 (Tortoiseshell): Technique 2 — The Scene
+- H2-6 (Shapes): Technique 1 — The Claim
+- H2-7 (When to Switch): Technique 3 — The Reframe
+- Conclusion: Technique 1 — The Claim
+- banned_opener_rule: Check every opener against banned_opening_approaches before writing the second sentence; no two consecutive sections share a technique (verified above).
+
+## Block 5 — Link Placements
+- anchor_text: "september nail ideas" | full_url: /blog/september/september-nails | place_in_section: Introduction | placement_context: after establishing the late-month framing, point back to full-month pillar | link_type: cluster-pillar
+- anchor_text: "september nail colors" | full_url: /blog/september/september-nail-colors | place_in_section: Burgundy H2 | placement_context: reader wanting the broader color roundup | link_type: cluster-spoke
+- anchor_text: "trending september nail art and textures" | full_url: /blog/september/september-nail-art-textures | place_in_section: Tortoiseshell H2 | placement_context: reader wanting more texture/art ideas | link_type: cluster-spoke
+- anchor_text: "short vs long september nails" | full_url: /blog/september/short-vs-long-september-nails | place_in_section: Best Nail Shapes H2 | placement_context: reader deciding on length before committing to a fall look | link_type: cluster-spoke
+- anchor_text: "the full fall nail colors guide for shade-by-shade skin tone matching" | full_url: https://mirelleinspo.com/blog/fall/fall-nail-colors | place_in_section: Deep Olive and Espresso H2 | placement_context: reader ready to go beyond September into full fall palette | link_type: cross-site
+- anchor_text: "how to get the tortoiseshell nail technique right at the salon or at home" | full_url: https://mirelleinspo.com/blog/fall/tortoiseshell-nails-fall | place_in_section: Tortoiseshell H2 | placement_context: reader wanting the technique deep-dive | link_type: cross-site
+
+## Block 6 — AEO/GEO Plan
+- aeo_assignments:
+  1. aeo_term: "When should I switch from summer nail colors to fall nail colors in September?" | assigned_to_section: Why Late September Nails Look Different | execution: Direct 2-3 sentence answer immediately after the H2 naming the equinox/late-month trigger point.
+  2. aeo_term: "Is burgundy too dark to wear in late September?" | assigned_to_section: Burgundy H2 | execution: Direct answer paragraph confirming no, naming why it works specifically now.
+  3. aeo_term: "What's the best manicure for the September to October transition?" | assigned_to_section: When to Make the Switch H2 | execution: Direct answer paragraph immediately after heading.
+  4. aeo_term: "Is tortoiseshell nail art appropriate for September?" | assigned_to_section: Tortoiseshell H2 | execution: Direct 2-3 sentence confirmation before elaborating on technique.
+- geo_entity_statements:
+  1. entity: Tortoiseshell nail technique | assigned_to_section: Tortoiseshell H2 | execution: Clear declarative definition sentence — layered amber/caramel/black polish built to mimic natural tortoiseshell marbling.
+  2. entity: Cat-eye gel finish | assigned_to_section: Chrome and Cat-Eye H2 | execution: Clear declarative definition — magnetic pigment in gel polish pulled into alignment with a magnet before curing.
+
+## Block 7 — Active Constraints
+- em_dash_banned: true — replace with comma, new sentence, parentheses, or restructure
+- banned_vocab_watch: "elevate," "must-have," "game-changer," "unleash," "embrace," "boost," "seamless"
+- american_english_active: true — color, favorite, favorable, -ize spellings throughout
+- keyword_density_reminder: Count mentions after every 2 H2s; verify on track for 5 total, denser in first half
+- image_path_reminder: /images/blog/september/late-september-nails/filename.webp
+- internal_link_url_reminder: Cluster links = /blog/september/[slug]. Cross-site = full mirelleinspo.com URL. Never bare /slug.
+- hero_image_reminder: Hero is frontmatter only, never placed in body
+- strong_tag_reminder: Every primary keyword mention wrapped in `<strong>` tags, scan after every paragraph
