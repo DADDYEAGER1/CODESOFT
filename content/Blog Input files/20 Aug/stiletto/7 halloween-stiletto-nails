@@ -1,0 +1,495 @@
+{
+  "section_1_file_authority": {
+    "statement": "THIS FILE IS THE SINGLE SOURCE OF TRUTH FOR THE BLOG GEN AGENT. All values in POST_CONSTANTS are hardcoded — Blog Gen Agent does not ask, adjust, or override them. All keywords, H2 structure, audience intelligence, internal links, and tone defined here must be followed exactly."
+  },
+
+  "section_2_post_constants": {
+    "slug": "halloween-stiletto-nails",
+    "topic_slug": "stiletto-nails",
+    "canonical": "https://mirelleinspo.com/blog/stiletto-nails/halloween-stiletto-nails",
+    "post_type": "spoke",
+    "intent": "inspirational",
+    "word_count": 1250,
+    "image_count": 7,
+    "show_inspo_gallery_link": false,
+    "template": "posts",
+    "hero_dimensions": "1200x675",
+    "category": "Halloween Nails",
+    "publish_date": "2026-08-20",
+    "author": "jyoti-mirelle"
+  },
+
+  "section_3_cluster_snapshot": {
+    "pillar_slug": "stiletto-nails-guide",
+    "pillar_title": "Stiletto Nails: The Complete Guide to Shapes, Lengths & Ideas",
+    "pillar_primary_keyword": "stiletto nails ideas",
+    "this_post_slug": "halloween-stiletto-nails",
+    "this_post_role": "spoke",
+    "show_inspo_gallery_link_cluster_default": false,
+    "keywords_to_avoid": [
+      "short stiletto nails",
+      "stiletto nails ideas",
+      "stiletto vs almond nails",
+      "coffin vs stiletto nails",
+      "how to do stiletto nails at home",
+      "stiletto nails keep breaking",
+      "stiletto wedding nails",
+      "stiletto french tip nails",
+      "gothic stiletto nails",
+      "stiletto nails for dark skin"
+    ]
+  },
+
+  "section_4_serp_analysis": {
+    "blog_gen_instruction": "our_strategic_approach is a specific, evidence-based outperform strategy, not a vague gap-fill statement. Use it as the concrete angle for the introduction and conclusion, and to guide depth/coverage decisions in relevant H2 sections.",
+    "competitor_gaps": [
+      "No fetched competitor addresses stiletto-specific durability/breakage risk in a Halloween context (costume handling, trick-or-treating, party knocks) — BTArtbox mentions breakage only in passing, general breakage guides (Nailicy, latestnailideas) exist but are not Halloween-framed. Confirmed on 2+ sources (BTArtbox + salongeek professional thread on stiletto impracticality).",
+      "No fetched competitor organizes designs by aesthetic lane (vampire/gothic vs. glam/chrome vs. cute/playful) — all either list generically (HubPages, nailsforconfidence) or go all-in on one theme (fabmood single-look, RainyRoses short-only). Confirmed via YouTube tutorial title clustering (glitter, gothic/vampire, XL/glam as distinct recurring categories) + salongeek professional/practical split.",
+      "No fetched competitor addresses short vs. long stiletto specifically for Halloween wear despite RainyRoses being short-only and others being long-only — no page compares the two for the reader deciding which to get for the holiday."
+    ],
+    "missing_semantic_territory": [
+      "\"stiletto nails halloween\" as a discrete phrase variant (confirmed used by thefreshstyle.com as deliberate SEO phrasing)",
+      "vampire fang / fang-tip framing specific to stiletto's natural point (confirmed BTArtbox FAQ + Bustle/kreafolk vampire-nail pages naming stiletto as the \"fang-inspired\" shape)",
+      "\"XL\" / extra-long stiletto Halloween framing (confirmed via multiple YouTube tutorial titles)",
+      "press-on vs. acrylic decision framing for a one-holiday commitment (confirmed via BTArtbox press-on emphasis + Etsy/Amazon marketplace volume signaling strong press-on purchase intent, though marketplace itself excluded as a source)"
+    ],
+    "our_strategic_approach": "None of the 5 real fetched pages organizes Halloween stiletto looks by aesthetic identity (gothic/vampire vs. glam vs. playful) — they either dump 20-50 generic Halloween designs with stiletto as an afterthought (HubPages, nailsforconfidence) or go deep on one single look with no range (fabmood, RainyRoses). This post's structural edge is organizing by reader aesthetic so the reader self-selects fast, mirroring how the YouTube tutorial landscape already naturally clusters (gothic/vampire, glitter/glam, XL/dramatic). It also owns two angles zero competitors cover credibly: durability specific to stiletto's structural weak point during a high-contact holiday, and a short-vs-long decision point for readers unsure which length to commit to for one night. This differentiates cleanly from mirelleinspo's own Vampire Nails 2026 and Spider Nails posts, which cover those motifs across all shapes — this post is stiletto-first, motif-second.",
+    "top_5_fetched_pages_summary": [
+      {
+        "url": "https://btartboxnails.com/blogs/fashion-and-beauty/halloween-stiletto-nail-designs",
+        "word_count": 1350,
+        "h2_count": 9,
+        "keyword_mentions": 8,
+        "note": "Deepest real competitor — strong FAQ block and technique detail, but heavily product-plug interspersed, no clear visual/aesthetic organization"
+      },
+      {
+        "url": "https://www.rainyroses.com/blogs/nail-art/5-short-stiletto-halloween-nail-designs-that-will-give-you-a-hauntingly-glamorous-look",
+        "word_count": 330,
+        "h2_count": 0,
+        "keyword_mentions": 3,
+        "note": "Thin 5-item list, short-length only, heavy ecommerce chrome, no real depth per idea"
+      },
+      {
+        "url": "https://www.fabmood.com/inspiration/festive-halloween-stiletto-nails-with-spooky-icons/",
+        "word_count": 280,
+        "h2_count": 0,
+        "keyword_mentions": 2,
+        "note": "Single-look microsite page, decent descriptive writing but zero range or structure"
+      },
+      {
+        "url": "https://nailsforconfidence.com/20-halloween-nail-designs-for-a-dramatic-and-bold-look/",
+        "word_count": 420,
+        "h2_count": 0,
+        "keyword_mentions": 4,
+        "note": "Generic Halloween nails roundup; only 2 of 20 items are stiletto-specific, weak keyword relevance"
+      },
+      {
+        "url": "https://discover.hubpages.com/style/awesome-halloween-nail-art-designs",
+        "word_count": 2800,
+        "h2_count": 50,
+        "keyword_mentions": 2,
+        "note": "Very comprehensive on Halloween motifs generally but only 2 of 50 designs mention stiletto explicitly — dilutes relevance despite depth"
+      }
+    ],
+    "top_5_word_count_average": 1036,
+    "top_5_keyword_density_average": 4,
+    "best_external_sources_found": []
+  },
+
+  "section_5_audience_intelligence": {
+    "blog_gen_instruction": "This is your primary creative brief. Every paragraph written for this specific person with this specific intent. Satisfy them completely.",
+    "who_they_are": "Someone who already wears or wants dramatic, pointed stiletto nails and is specifically looking to theme them for Halloween — not a generic Halloween-nails browser who happens to see stiletto in results. Mid-to-advanced comfort with nail art or press-ons; browsing Pinterest/TikTok for inspiration 2-6 weeks before Halloween.",
+    "what_they_want_from_this_post": "A visually organized set of stiletto-specific Halloween looks she can screenshot and either DIY or bring to a nail tech/order as press-ons — sorted by vibe (scary/gothic vs. glam vs. playful) rather than one long undifferentiated scroll.",
+    "what_frustrates_them": "Generic 'Halloween nails' roundups where stiletto is one shape lost among coffin, almond, and square — she has to hunt for the 2-3 relevant designs in a 50-item list (directly observed in nailsforconfidence and HubPages fetches).",
+    "top_5_pain_points": [
+      "Can't find a roundup that's actually stiletto-first, not stiletto-included",
+      "Worried sharp stiletto tips will snap or catch on costume fabric/candy bags during the actual holiday",
+      "Unsure whether to go short or long stiletto for just one night of wear",
+      "Wants something more elevated than the generic pumpkin/ghost default but isn't sure how to ask for that at a salon",
+      "Torn between horror-gore and glam/chic interpretations of the same shape"
+    ],
+    "exact_user_phrases": [
+      "halloween stiletto nail designs",
+      "stiletto nails halloween",
+      "spooky season nail ideas",
+      "nail inspo halloween",
+      "vampire stiletto nails",
+      "gothic stiletto nails tutorial",
+      "XL stiletto halloween",
+      "long stiletto acrylic halloween",
+      "halloween nails stiletto short",
+      "glitter stiletto halloween nails"
+    ],
+    "intent_content_signals": [
+      "Strong pull toward visual variety over single-look depth — reader wants to browse, not commit early",
+      "Aesthetic self-identification matters (gothic vs. glam vs. cute) — organize, don't just list",
+      "Responds to specificity in design naming (not just \"spider web nails\" but \"black and gold spiderweb\")",
+      "Wants proof a look is achievable at home or via press-on, not just salon-only",
+      "2026 year-tagging and freshness signals matter given how saturated this seasonal query is"
+    ]
+  },
+
+  "section_6_semantic_keyword_data": {
+    "blog_gen_instruction": "Primary keyword in strong tags every mention. AEO terms trigger direct answer paragraphs. User language woven naturally. No term from keywords_to_avoid used as focus term.",
+    "primary_keyword": "halloween stiletto nails",
+    "keyword_variations": [
+      "stiletto nails halloween",
+      "halloween stiletto nail designs",
+      "halloween stiletto nail ideas",
+      "stiletto halloween nail art",
+      "halloween stiletto manicure",
+      "spooky stiletto nails"
+    ],
+    "cluster_keywords": [
+      "gothic stiletto nail designs",
+      "vampire stiletto nails",
+      "spider web stiletto nails",
+      "black stiletto nails halloween",
+      "XL stiletto halloween nails",
+      "press-on stiletto halloween nails",
+      "long stiletto halloween nails",
+      "glitter stiletto halloween nails",
+      "halloween nail art stiletto shape",
+      "stiletto halloween press-ons"
+    ],
+    "lsi_terms": [
+      "blood drip nails",
+      "spider web nail art",
+      "chrome halloween nails",
+      "vampire fang tips",
+      "pumpkin stiletto nails",
+      "bat silhouette nails",
+      "matte black stiletto",
+      "graveyard nail art",
+      "ombre glitter tips",
+      "acrylic stiletto extension",
+      "press-on nail application",
+      "high-gloss top coat",
+      "3D nail art halloween",
+      "negative space nail design",
+      "eyeball nail art",
+      "gel-X stiletto",
+      "coffin vs stiletto shape",
+      "nail breakage prevention"
+    ],
+    "aeo_terms": [
+      "what nail shape is best for halloween",
+      "are stiletto nails good for halloween",
+      "how do you do stiletto nails for halloween",
+      "what colors are best for halloween stiletto nails",
+      "how long do stiletto press-ons last",
+      "will stiletto nails break easily on halloween",
+      "what is a stiletto nail shape",
+      "how do you make halloween nails not look basic",
+      "what's trending for halloween nails 2026",
+      "how do you keep stiletto nails from breaking"
+    ],
+    "technical_terms": [
+      "acrylic extension",
+      "gel-X",
+      "press-on tabs",
+      "chrome powder",
+      "striping brush",
+      "top coat seal",
+      "dotting tool"
+    ],
+    "user_language": [
+      "spooky season",
+      "nail inspo",
+      "spooktacular",
+      "fang-inspired",
+      "vamp vibes",
+      "extra af",
+      "goth glam",
+      "not basic"
+    ]
+  },
+
+  "section_7_voice_and_ai_queries": {
+    "blog_gen_instruction": "Answer every query directly in the relevant H2 section body. If a query cannot be addressed naturally in the body, route it to faqItems. No query left unanswered.",
+    "queries": [
+      "What nail shape works best for Halloween?",
+      "Are stiletto nails a good choice for Halloween?",
+      "How do I make my Halloween nails look less basic?",
+      "What colors should I use for Halloween stiletto nails?",
+      "How do you do a vampire look on stiletto nails?",
+      "Can I get spider web nail art on a stiletto shape?",
+      "Will stiletto nails break easily during Halloween?",
+      "Should I get short or long stiletto nails for Halloween?",
+      "How do I apply press-on stiletto nails for Halloween?",
+      "What's a gothic stiletto nail design?",
+      "How long do Halloween press-on nails last?",
+      "What's the difference between coffin and stiletto for Halloween looks?",
+      "How do I keep stiletto nails from snapping during Halloween?",
+      "What are the most popular Halloween nail designs for 2026?",
+      "Can you do glitter and matte finishes together on stiletto nails?"
+    ]
+  },
+
+  "section_8_hook_and_ctr": {
+    "blog_gen_instruction": "READ THIS SECTION BEFORE WRITING THE TITLE, META DESCRIPTION, INTRO, OR FIRST H2. The title and description here are the option the USER SELECTED from 2-3 real, evidence-based choices during phase_6 — use them exactly. The intro hook brief and first H2 hook direction are your creative brief for those specific elements, matching the selected option's angle. Do not deviate.",
+    "real_serp_findings_summary": "Fetched titles skew two ways: product-collection framing (BTArtbox, dominated by press-on sales language) or generic Halloween-nails-with-stiletto-included framing (HubPages, nailsforconfidence) where stiletto is buried among 20-50 unrelated shapes. None front-load a promise of range across aesthetic styles (gothic vs. glam vs. cute) specifically for stiletto.",
+    "selected_option_rationale": "Leads with the primary keyword front-loaded, names the specific gap (gore-default fatigue, mirrored in mirelleinspo's own Cute Halloween Nails post finding), and promises organized range (vampire to glam) that no fetched competitor structurally delivers.",
+    "title": "Halloween Stiletto Nails: 25+ Sharp Ideas for 2026",
+    "title_char_count": 51,
+    "meta_description": "Halloween stiletto nails don't have to mean gore. From vampire drips to glam webs — 25+ sharp, editor-picked looks for every spooky style in 2026.",
+    "meta_char_count": 148,
+    "intro_hook_brief": "Open by naming the gore-default fatigue directly (most Halloween stiletto content defaults to blood/gore or buries stiletto in a generic shape list) then promise the organized range this post delivers instead — aesthetic-first, not motif-dump.",
+    "first_h2_hook_direction": "Apply the 'organized by aesthetic' angle immediately — first H2 should be the gothic/vampire lane (highest search-confirmed demand cluster from YouTube + BTArtbox + mirelleinspo's own Vampire Nails post performance) so the post proves its organizing promise right away."
+  },
+
+  "section_9_search_journey": {
+    "blog_gen_instruction": "This is the emotional contract with the reader. Every section of the post must honour the promise made. Read this before writing any section. If a paragraph breaks the journey arc — rewrite it.",
+    "reader_arrival_state": "Curious and mildly fatigued by generic Halloween nail content, specifically hunting for stiletto-shaped inspiration and hoping to avoid the default gore/pumpkin cliché.",
+    "journey_arc": [
+      "Hook: name the gore-default problem and promise organized range",
+      "Deliver gothic/vampire lane first — highest-demand, most stiletto-native aesthetic",
+      "Move to glam/chrome lane — proves range beyond horror",
+      "Cover playful/cute lane — completes the aesthetic spread",
+      "Address practical concerns (short vs. long, durability) — resolves real hesitation before closing",
+      "Close with identity payoff: reader has found her exact stiletto Halloween look"
+    ],
+    "promise_to_deliver": "That this post organizes Halloween stiletto looks by aesthetic identity so the reader finds her specific style fast, instead of scrolling a generic 50-item Halloween nails list.",
+    "exit_state": "Confident and ready to screenshot or book — she has landed on one specific look that matches her vibe, and knows it will hold up for the night."
+  },
+
+  "section_10_content_structure": {
+    "blog_gen_instruction": "This H2 structure is research-driven and must be followed exactly. Do not rename, reorder, or remove H2s without user instruction. Word budget per section is set — follow it. H3s may be added at editorial discretion.",
+    "h1": "Halloween Stiletto Nails: 25+ Sharp Ideas for 2026",
+    "h2_structure": [
+      "Gothic & Vampire Stiletto Looks That Actually Look Fang-Ready",
+      "Glam & Chrome Stiletto Nails for a Less-Literal Halloween",
+      "Cute & Playful Stiletto Designs That Skip the Gore",
+      "Short vs. Long: Which Stiletto Length Works for Halloween",
+      "How to Keep Halloween Stiletto Nails From Snapping"
+    ],
+    "word_budget": {
+      "introduction": "220 words",
+      "conclusion": "170 words",
+      "per_h2": [
+        { "heading": "Gothic & Vampire Stiletto Looks That Actually Look Fang-Ready", "budget": 240 },
+        { "heading": "Glam & Chrome Stiletto Nails for a Less-Literal Halloween", "budget": 210 },
+        { "heading": "Cute & Playful Stiletto Designs That Skip the Gore", "budget": 200 },
+        { "heading": "Short vs. Long: Which Stiletto Length Works for Halloween", "budget": 105 },
+        { "heading": "How to Keep Halloween Stiletto Nails From Snapping", "budget": 105 }
+      ]
+    }
+  },
+
+  "section_11_internal_links": {
+    "blog_gen_instruction": "Every link below must appear in the post. Cluster links use anchor texts verbatim — do not rewrite. Cross-site links use the provided descriptive anchor. Place each link where the placement note says — woven naturally into prose, never as a standalone CTA. Total internal links must not exceed 6.",
+    "all_internal_links": [
+      {
+        "url_or_slug": "/blog/stiletto-nails/stiletto-nails-guide",
+        "title": "Stiletto Nails: The Complete Guide to Shapes, Lengths & Ideas",
+        "anchor_text": "stiletto nails ideas",
+        "placement_note": "Introduction — establish this post as a spoke of the broader stiletto guide",
+        "link_type": "cluster-pillar"
+      },
+      {
+        "url_or_slug": "/blog/stiletto-nails/gothic-stiletto-nails",
+        "title": "Gothic & Dark Stiletto Nail Designs",
+        "anchor_text": "gothic and dark stiletto nail designs",
+        "placement_note": "Gothic & Vampire H2 — natural fit for readers who want to go deeper into the gothic aesthetic beyond Halloween",
+        "link_type": "cluster-spoke"
+      },
+      {
+        "url_or_slug": "/blog/stiletto-nails/stiletto-nails-keep-breaking",
+        "title": "Why Your Stiletto Nails Keep Breaking (And How to Stop It)",
+        "anchor_text": "why stiletto nails keep breaking and how to stop it",
+        "placement_note": "How to Keep Halloween Stiletto Nails From Snapping H2 — direct relevance to durability concern",
+        "link_type": "cluster-spoke"
+      },
+      {
+        "url_or_slug": "https://mirelleinspo.com/blog/vampire-nails-2025",
+        "title": "Vampire Nails 2026: The Gothic Trend Coming Back Stronger",
+        "anchor_text": "the full vampire nails trend guide, including the blood-drip technique",
+        "placement_note": "Gothic & Vampire H2 — reader wanting the vampire motif across all shapes, not just stiletto",
+        "link_type": "cross-site"
+      },
+      {
+        "url_or_slug": "https://mirelleinspo.com/blog/nail-shapes/short-stiletto-nails",
+        "title": "Short Stiletto Nails: 2026's Boldest Trend Right Now",
+        "anchor_text": "everything to know about wearing short stiletto nails day to day",
+        "placement_note": "Short vs. Long H2 — direct decision-support link for readers leaning short",
+        "link_type": "cross-site"
+      }
+    ]
+  },
+
+  "section_12_voice_tone": {
+    "blog_gen_instruction": "This is the voice for this specific post. Layer on top of Mirellé editorial framework. Do not default to generic AI tone.",
+    "recommended_voice": "Confident trend editor with a slight edge — knowing, not costume-y",
+    "tone_characteristics": [
+      "Direct and opinionated about what looks dated vs. current",
+      "Assumes reader already likes stiletto shape — no need to sell the shape itself",
+      "Playful with Halloween language without leaning into camp or cheesiness",
+      "Specific and visual in design descriptions, never vague ('bold' alone is banned — name the actual colors/technique)",
+      "Slight insider tone — like a nail tech friend giving the real picks, not a generic listicle voice"
+    ],
+    "language_style": "Second person, short punchy sentences mixed with longer descriptive ones for the visual payoff moments. Uses \"you\" throughout. Avoids clichés like \"spooky season is here\" as an opener.",
+    "audience_match": "This reader already has taste and confidence (she's committed to stiletto shape) — the voice should match that, treating her as someone refining a choice, not discovering the shape for the first time."
+  },
+
+  "section_13_external_links": {
+    "blog_gen_instruction": "Include all external links where indicated. Supports E-E-A-T. Use anchor suggestion as guide — write naturally around it. Sourced from phase_3's best_external_sources_found (real fetched competitor pages), not from separate searches. May be empty (0-2 links) if none of the fetched pages qualified as genuinely citation-worthy — that is expected, not a gap to fill.",
+    "links": []
+  },
+
+  "section_14_execution_plan": {
+    "purpose": "Blog Gen Agent reads this section FIRST — before frontmatter, before writing a single word. Every value here is pre-calculated from the input file data. Blog Gen Agent locks all values and executes them exactly.",
+    "blog_gen_instruction": "READ THIS SECTION FIRST. Lock every value. Execute exactly. Do not recalculate, do not adjust, do not deviate.",
+    "calculated_by": "Input Gen Agent",
+
+    "block_1_keyword_execution": {
+      "primary_keyword": "halloween stiletto nails",
+      "top_5_density_baseline": 4,
+      "total_mention_target": "6-7 total mentions (baseline 4 + 2-3)",
+      "first_100_words_plan": {
+        "rule": "Primary keyword MUST appear TWICE in the first 100 words. Mandatory. No exceptions.",
+        "mention_1": "sentence 1 of introduction — naming the post topic directly in the gore-fatigue hook",
+        "mention_2": "sentence 3-4 of introduction — reinforcing in the promise/range statement"
+      },
+      "first_half_target": "4 mentions — first ~625 words. Run denser in first half.",
+      "second_half_target": "2-3 mentions — second ~625 words",
+      "strong_tag_rule": "EVERY single mention of the primary keyword — all 6-7 of them — wrapped in <strong> tags. No exceptions. Catch each one as it is written. Scan after every paragraph.",
+      "keywords_to_avoid_active": [
+        "short stiletto nails", "stiletto nails ideas", "stiletto vs almond nails",
+        "coffin vs stiletto nails", "how to do stiletto nails at home",
+        "stiletto nails keep breaking", "stiletto wedding nails",
+        "stiletto french tip nails", "gothic stiletto nails", "stiletto nails for dark skin"
+      ]
+    },
+
+    "block_2_word_budget": {
+      "total_target": "1250 words — +/-50 words tolerance, never exceed",
+      "introduction": "220 words",
+      "conclusion": "170 words",
+      "h2_budgets": [
+        { "heading": "Gothic & Vampire Stiletto Looks That Actually Look Fang-Ready", "budget": 240, "complexity": "high" },
+        { "heading": "Glam & Chrome Stiletto Nails for a Less-Literal Halloween", "budget": 210, "complexity": "medium" },
+        { "heading": "Cute & Playful Stiletto Designs That Skip the Gore", "budget": 200, "complexity": "medium" },
+        { "heading": "Short vs. Long: Which Stiletto Length Works for Halloween", "budget": 105, "complexity": "low" },
+        { "heading": "How to Keep Halloween Stiletto Nails From Snapping", "budget": 105, "complexity": "low" }
+      ],
+      "tracking_rule": "Track running word total at the end of every H2 section. If a section is running over budget — cut before moving to the next section. Do not compensate later."
+    },
+
+    "block_3_image_plan": {
+      "total_images": 7,
+      "hero_image": "frontmatter only — NEVER appears in post body",
+      "body_images": 6,
+      "assignments": [
+        { "image_number": 1, "place_after": "Gothic & Vampire Stiletto Looks That Actually Look Fang-Ready", "image_type": "standard_inspiration", "section_context": "Black/red vampire-drip stiletto set, glossy finish, fang-point emphasis" },
+        { "image_number": 2, "place_after": "Gothic & Vampire Stiletto Looks That Actually Look Fang-Ready", "image_type": "standard_inspiration", "section_context": "Matte black stiletto with spiderweb accent nail, gothic styling" },
+        { "image_number": 3, "place_after": "Glam & Chrome Stiletto Nails for a Less-Literal Halloween", "image_type": "standard_inspiration", "section_context": "Chrome/metallic stiletto set with subtle Halloween color palette (deep purple or burnt orange chrome)" },
+        { "image_number": 4, "place_after": "Cute & Playful Stiletto Designs That Skip the Gore", "image_type": "standard_inspiration", "section_context": "Pastel or orange-based stiletto set with playful pumpkin/ghost motif, not gory" },
+        { "image_number": 5, "place_after": "Short vs. Long: Which Stiletto Length Works for Halloween", "image_type": "standard_inspiration", "section_context": "Side-by-side styled shot showing a short stiletto Halloween look (not a literal comparison photo — a single styled short-stiletto set)" },
+        { "image_number": 6, "place_after": "How to Keep Halloween Stiletto Nails From Snapping", "image_type": "standard_inspiration", "section_context": "Long dramatic stiletto set to close visually strong, reinforcing the durability tip just given" }
+      ],
+      "image_type_rule": {
+        "default": "standard_inspiration — an actual nail look, styled and shot, related to the topic.",
+        "banned_absolutely": "NEVER a tool/equipment image. NEVER a literal photo-style side-by-side comparison — the short-vs-long slot uses one styled short-stiletto photo, not a split comparison image."
+      },
+      "path_rule": "/images/blog/stiletto-nails/halloween-stiletto-nails/filename.webp"
+    },
+
+    "block_4_opening_technique_assignments": {
+      "rule": "No two consecutive sections use the same technique. Conclusion = Technique 1 or 3 only.",
+      "assignments": [
+        { "section": "Introduction", "technique": "Technique 1 — The Claim (naming the gore-default problem directly)" },
+        { "section": "Gothic & Vampire Stiletto Looks That Actually Look Fang-Ready", "technique": "Technique 2 — The Scene (opening on a specific styled look)" },
+        { "section": "Glam & Chrome Stiletto Nails for a Less-Literal Halloween", "technique": "Technique 3 — The Reframe (repositioning chrome as Halloween-appropriate)" },
+        { "section": "Cute & Playful Stiletto Designs That Skip the Gore", "technique": "Technique 2 — The Scene" },
+        { "section": "Short vs. Long: Which Stiletto Length Works for Halloween", "technique": "Technique 1 — The Claim (direct decision statement)" },
+        { "section": "How to Keep Halloween Stiletto Nails From Snapping", "technique": "Technique 3 — The Reframe" },
+        { "section": "Conclusion", "technique": "Technique 1 — The Claim" }
+      ],
+      "banned_opener_rule": "Check every opener against banned_opening_approaches in blog gen prompt before writing the second sentence"
+    },
+
+    "block_5_link_placements": {
+      "rule": "Every link placed exactly where specified. Anchor texts used verbatim — never rewritten. Links woven into prose naturally — never standalone CTAs.",
+      "links": [
+        {
+          "anchor_text": "stiletto nails ideas",
+          "full_url": "/blog/stiletto-nails/stiletto-nails-guide",
+          "place_in_section": "Introduction",
+          "placement_context": "Reference to the broader stiletto shape guide when framing this post as Halloween-specific",
+          "link_type": "cluster-pillar"
+        },
+        {
+          "anchor_text": "gothic and dark stiletto nail designs",
+          "full_url": "/blog/stiletto-nails/gothic-stiletto-nails",
+          "place_in_section": "Gothic & Vampire Stiletto Looks That Actually Look Fang-Ready",
+          "placement_context": "Pointing readers who want the gothic aesthetic year-round, not just for Halloween",
+          "link_type": "cluster-spoke"
+        },
+        {
+          "anchor_text": "why stiletto nails keep breaking and how to stop it",
+          "full_url": "/blog/stiletto-nails/stiletto-nails-keep-breaking",
+          "place_in_section": "How to Keep Halloween Stiletto Nails From Snapping",
+          "placement_context": "Deeper durability resource linked directly from the practical-concerns section",
+          "link_type": "cluster-spoke"
+        },
+        {
+          "anchor_text": "the full vampire nails trend guide, including the blood-drip technique",
+          "full_url": "https://mirelleinspo.com/blog/vampire-nails-2025",
+          "place_in_section": "Gothic & Vampire Stiletto Looks That Actually Look Fang-Ready",
+          "placement_context": "Cross-reference to the site's broader vampire nail content for readers wanting the motif beyond stiletto shape",
+          "link_type": "cross-site"
+        },
+        {
+          "anchor_text": "everything to know about wearing short stiletto nails day to day",
+          "full_url": "https://mirelleinspo.com/blog/nail-shapes/short-stiletto-nails",
+          "place_in_section": "Short vs. Long: Which Stiletto Length Works for Halloween",
+          "placement_context": "Direct support link for readers deciding on the short-stiletto route",
+          "link_type": "cross-site"
+        }
+      ]
+    },
+
+    "block_6_aeo_geo_plan": {
+      "aeo_assignments": [
+        {
+          "aeo_term": "Are stiletto nails a good choice for Halloween?",
+          "assigned_to_section": "Gothic & Vampire Stiletto Looks That Actually Look Fang-Ready",
+          "execution": "Write a direct 2-3 sentence answer paragraph IMMEDIATELY after the H2 heading — before any elaboration."
+        },
+        {
+          "aeo_term": "Should I get short or long stiletto nails for Halloween?",
+          "assigned_to_section": "Short vs. Long: Which Stiletto Length Works for Halloween",
+          "execution": "Write a direct 2-3 sentence answer paragraph IMMEDIATELY after the H2 heading."
+        },
+        {
+          "aeo_term": "How do you keep stiletto nails from breaking?",
+          "assigned_to_section": "How to Keep Halloween Stiletto Nails From Snapping",
+          "execution": "Write a direct 2-3 sentence answer paragraph IMMEDIATELY after the H2 heading."
+        }
+      ],
+      "geo_entity_statements": [
+        {
+          "entity": "stiletto nail shape",
+          "assigned_to_section": "Gothic & Vampire Stiletto Looks That Actually Look Fang-Ready",
+          "execution": "Write a clear declarative definition sentence — confident, no hedging. Extractable by AI as a citation."
+        },
+        {
+          "entity": "press-on stiletto nails",
+          "assigned_to_section": "Short vs. Long: Which Stiletto Length Works for Halloween",
+          "execution": "Write a clear declarative definition sentence distinguishing press-on from acrylic extension for one-night wear."
+        }
+      ]
+    },
+
+    "block_7_active_constraints": {
+      "em_dash_banned": "Long em dash does not appear anywhere. If one forms while writing — stop, replace with: comma / new sentence / parentheses / but / restructure.",
+      "banned_vocab_watch": ["elevate", "unleash", "spooktacular", "must-have", "game-changer", "boo-tiful", "look no further", "little did"],
+      "american_english_active": "color, recognize, -ize, -or — every instance, no exceptions. This post uses American English, not British.",
+      "keyword_density_reminder": "After every 2 H2 sections — count current keyword mentions. Verify running total is on track to hit 6-7 total. First half must run denser than second half.",
+      "image_path_reminder": "/images/blog/stiletto-nails/halloween-stiletto-nails/filename.webp — topic_slug in path always",
+      "internal_link_url_reminder": "Full correct paths only. Cluster links = /blog/stiletto-nails/[slug]. Cross-site links = exact URL as discovered. Never bare /slug.",
+      "hero_image_reminder": "Hero = frontmatter only. Never place hero image in body.",
+      "strong_tag_reminder": "Every primary keyword mention = <strong> tags. Scan after every paragraph."
+    }
+  }
+}
