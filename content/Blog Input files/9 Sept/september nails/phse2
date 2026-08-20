@@ -1,0 +1,245 @@
+{
+  "cluster_metadata": {
+    "cluster_topic": "September Nails — Phase 2",
+    "topic_slug": "september",
+    "show_inspo_gallery_link_cluster_default": true,
+    "target_audience": "Global, Tier 1 countries (US, UK, Canada, Australia)",
+    "total_posts": 4,
+    "intent_breakdown": {
+      "inspirational": 2,
+      "informational": 1,
+      "tutorial": 0,
+      "seasonal_trend": 1,
+      "comparison": 0
+    },
+    "pillar_post_slug": "september-nails",
+    "note": "Phase 2 spokes attach to the EXISTING pillar (september-nails) from cluster 1. No new pillar in this file. Source: GSC 'Performance on Search 2026-08-20' — 4 H2 sections inside /blog/september/september-nails ranking pos ~8.7 with 686-774 impressions and 0 clicks, confirming standalone search demand not served by the parent page.",
+    "created_date": "2026-08-20"
+  },
+
+  "existing_site_posts_excluded": [
+    {
+      "url": "https://mirelleinspo.com/blog/zodiac-nails/virgo-nails",
+      "title": "Virgo Nails",
+      "inferred_primary_keyword": "virgo nails",
+      "inferred_intent": "inspirational",
+      "exclusion_reason": "Already exists on mirelleinspo.com — keyword reserved."
+    },
+    {
+      "url": "https://mirelleinspo.com/blog/zodiac-nails/libra-nails",
+      "title": "Libra Nails",
+      "inferred_primary_keyword": "libra nails",
+      "inferred_intent": "inspirational",
+      "exclusion_reason": "Already exists on mirelleinspo.com — keyword reserved."
+    },
+    {
+      "url": "https://mirelleinspo.com/blog/september/september-nails",
+      "title": "September Nail Ideas",
+      "inferred_primary_keyword": "september nails",
+      "inferred_intent": "inspirational",
+      "exclusion_reason": "Existing pillar — reserved. This cluster's new posts extract 4 of its underperforming H2 sections into standalone pages; pillar keyword itself is untouched."
+    },
+    {
+      "url": "https://mirelleinspo.com/blog/september/september-nail-colors",
+      "title": "September Nail Colors",
+      "inferred_primary_keyword": "september nail colors",
+      "inferred_intent": "informational",
+      "exclusion_reason": "Existing spoke — reserved. 'best-september-nail-colors-to-try-this-year' H2 on the pillar is NOT split out because this keyword is already fully owned here."
+    },
+    {
+      "url": "https://mirelleinspo.com/blog/september/september-birthday-nails",
+      "title": "September Birthday Nails",
+      "inferred_primary_keyword": "september birthday nails",
+      "inferred_intent": "inspirational",
+      "exclusion_reason": "Existing spoke — reserved."
+    },
+    {
+      "url": "https://mirelleinspo.com/blog/september/september-birthstone-nails",
+      "title": "September Birthstone Nails",
+      "inferred_primary_keyword": "september birthstone nails",
+      "inferred_intent": "informational",
+      "exclusion_reason": "Existing spoke — reserved."
+    },
+    {
+      "url": "https://mirelleinspo.com/blog/september/short-september-nails",
+      "title": "Short September Nails",
+      "inferred_primary_keyword": "short september nails",
+      "inferred_intent": "inspirational",
+      "exclusion_reason": "Existing spoke — reserved. 'short-vs-long-which-september-nails-should-you-get' H2 is a comparison angle, differentiated from this pure inspiration post — see post_id 3 below."
+    }
+  ],
+
+  "posts": [
+    {
+      "post_id": 1,
+      "role": "spoke",
+      "title": "Best Nail Shapes for September",
+      "slug": "september-nail-shapes",
+      "topic_slug": "september",
+      "primary_keyword": "september nail shapes",
+      "secondary_keywords": ["best nail shapes for september", "what nail shape for fall", "almond vs coffin nails september", "nail shapes for autumn"],
+      "intent": "informational",
+      "search_mode": "decision_mode",
+      "suggested_hook_trigger": "Trigger 1 — Curiosity Gap",
+      "search_demand_signals": [
+        "GSC: source page fragment '#best-nail-shapes-for-september' — 750 impressions, 0 clicks, position 8.72 (site's own data, confirms real query volume the current page can't capture)",
+        "Google autocomplete: 'best nail shape for fall' completes with high suggestion strength",
+        "Pinterest: dedicated boards for 'almond nails fall', 'coffin nails september' as shape-specific search behavior",
+        "Reddit r/Nails: recurring threads asking which shape suits fall/September manicures"
+      ],
+      "why_included": "Shape-decision queries are a distinct search mode from general idea browsing — reader is choosing between options, not scrolling for inspo. GSC shows this exact fragment pulling 750 impressions at zero clicks from a shared title tag it can't win with. Standalone page with its own title can capture this.",
+      "internal_links": {
+        "links_to": [
+          { "slug": "september-nails", "anchor_text": "september nail ideas", "type": "pillar" },
+          { "slug": "short-vs-long-september-nails", "anchor_text": "short vs long september nails comparison", "type": "spoke" },
+          { "slug": "september-nail-art-textures", "anchor_text": "trending september nail art and textures", "type": "spoke" },
+          { "slug": "short-september-nails", "anchor_text": "short september nail ideas", "type": "spoke" }
+        ],
+        "receives_links_from": [
+          { "slug": "september-nails", "anchor_text": "best nail shapes for september" },
+          { "slug": "short-vs-long-september-nails", "anchor_text": "full guide to september nail shapes" },
+          { "slug": "september-nail-art-textures", "anchor_text": "september nail shapes" }
+        ]
+      },
+      "status": "approved"
+    },
+
+    {
+      "post_id": 2,
+      "role": "spoke",
+      "title": "Trending September Nail Art and Textures",
+      "slug": "september-nail-art-textures",
+      "topic_slug": "september",
+      "primary_keyword": "september nail art",
+      "secondary_keywords": ["september nail textures", "trending nail art september", "fall nail textures 2026", "september nail art ideas"],
+      "intent": "inspirational",
+      "search_mode": "inspiration_mode",
+      "suggested_hook_trigger": "Trigger 2 — FOMO/Trend",
+      "search_demand_signals": [
+        "GSC: source fragment '#trending-september-nail-art-and-textures' — 706 impressions, 0 clicks, position 8.71",
+        "GSC Queries tab: 'september nail art' — 130 impressions as a standalone query, position 7.44",
+        "TikTok: #septembernailart and texture-specific tags (chrome, cat-eye, textured matte) trending seasonally",
+        "Pinterest: 'fall nail textures' and 'september nail art' distinct tagged boards"
+      ],
+      "why_included": "Art/texture browsing is a high-volume inspiration-mode query, validated as its own line item in GSC Queries (130 impressions) separate from the general pillar term. Currently trapped as a subsection with no path to rank on its own title.",
+      "internal_links": {
+        "links_to": [
+          { "slug": "september-nails", "anchor_text": "september nail ideas", "type": "pillar" },
+          { "slug": "september-nail-shapes", "anchor_text": "best nail shapes for september", "type": "spoke" },
+          { "slug": "late-september-nails", "anchor_text": "late september nail ideas", "type": "spoke" },
+          { "slug": "september-nail-colors", "anchor_text": "september nail colors", "type": "spoke" }
+        ],
+        "receives_links_from": [
+          { "slug": "september-nails", "anchor_text": "trending september nail art and textures" },
+          { "slug": "september-nail-shapes", "anchor_text": "september nail art trends" },
+          { "slug": "late-september-nails", "anchor_text": "trending september nail textures" }
+        ]
+      },
+      "status": "approved"
+    },
+
+    {
+      "post_id": 3,
+      "role": "spoke",
+      "title": "Short vs Long: Which September Nails Should You Get",
+      "slug": "short-vs-long-september-nails",
+      "topic_slug": "september",
+      "primary_keyword": "short vs long september nails",
+      "secondary_keywords": ["short or long nails for september", "should i get short or long nails fall", "september nail length guide"],
+      "intent": "comparison",
+      "search_mode": "decision_mode",
+      "suggested_hook_trigger": "Trigger 1 — Curiosity Gap",
+      "search_demand_signals": [
+        "GSC: source fragment '#short-vs-long-which-september-nails-should-you-get' — 695 impressions, 0 clicks, position 8.72",
+        "Google PAA: 'are short or long nails in style for fall' appears on related fall/September SERPs",
+        "Pinterest: separate boards for 'short september nails' vs 'long september nails' confirm split intent",
+        "Reddit r/RedditLaqueristas: length-decision threads tied to season change"
+      ],
+      "why_included": "Comparison intent, distinct from short-september-nails (pure inspiration for readers who already decided on short). This post resolves the decision itself. Zero keyword overlap confirmed against short-september-nails' primary keyword.",
+      "internal_links": {
+        "links_to": [
+          { "slug": "september-nails", "anchor_text": "september nail ideas", "type": "pillar" },
+          { "slug": "short-september-nails", "anchor_text": "short september nail ideas", "type": "spoke" },
+          { "slug": "september-nail-shapes", "anchor_text": "best nail shapes for september", "type": "spoke" },
+          { "slug": "late-september-nails", "anchor_text": "late september nail ideas" , "type": "spoke" }
+        ],
+        "receives_links_from": [
+          { "slug": "september-nails", "anchor_text": "short vs long september nails" },
+          { "slug": "short-september-nails", "anchor_text": "short vs long september nails guide" },
+          { "slug": "september-nail-shapes", "anchor_text": "short vs long september nails" }
+        ]
+      },
+      "status": "approved"
+    },
+
+    {
+      "post_id": 4,
+      "role": "spoke",
+      "title": "Late September Nail Ideas: Full Fall Energy",
+      "slug": "late-september-nails",
+      "topic_slug": "september",
+      "primary_keyword": "late september nails",
+      "secondary_keywords": ["late september nail ideas", "september nails full fall energy", "end of september nails", "september to october nail transition"],
+      "intent": "seasonal_trend",
+      "search_mode": "inspiration_mode",
+      "suggested_hook_trigger": "Trigger 2 — FOMO/Trend",
+      "search_demand_signals": [
+        "GSC: source fragment '#late-september-nail-ideas-full-fall-energy' — 694 impressions, 0 clicks, position 8.73",
+        "GSC: adjacent fragment '#what-makes-september-nails-different-from-regular-fall-nails' — 691 impressions, same position band, reinforcing a distinct late-month/fall-crossover search cluster",
+        "Pinterest: 'october nail ideas' and 'fall nails 2026' boards spike late Sept, confirming a transition-period audience",
+        "Google Trends: 'fall nails' search volume begins its yearly climb in the last week of September, distinct from the early-Sept 'still summer' pattern captured by the pillar"
+      ],
+      "why_included": "The pillar (september-nails) covers early-September 'still summer' energy; this captures the opposite end of the month, a genuinely different mood/palette query. Time-sensitive seasonal_trend intent absorbing the adjacent 'what makes september different from fall' angle as a section rather than a 5th page — too thin alone (691 impr but same core query intent).",
+      "internal_links": {
+        "links_to": [
+          { "slug": "september-nails", "anchor_text": "september nail ideas", "type": "pillar" },
+          { "slug": "september-nail-art-textures", "anchor_text": "trending september nail art and textures", "type": "spoke" },
+          { "slug": "short-vs-long-september-nails", "anchor_text": "short vs long september nails", "type": "spoke" },
+          { "slug": "september-nail-colors", "anchor_text": "september nail colors", "type": "spoke" }
+        ],
+        "receives_links_from": [
+          { "slug": "september-nails", "anchor_text": "late september nail ideas" },
+          { "slug": "september-nail-art-textures", "anchor_text": "late september nail ideas" },
+          { "slug": "short-vs-long-september-nails", "anchor_text": "late september nail ideas" }
+        ]
+      },
+      "status": "approved"
+    }
+  ],
+
+  "keyword_ownership_registry": {
+    "description": "Phase 2 new keywords only — merge with Phase 1 registry for the full cluster picture",
+    "entries": [
+      { "primary_keyword": "september nail shapes", "owned_by_slug": "september-nail-shapes", "owned_by_title": "Best Nail Shapes for September", "source": "new post — phase 2" },
+      { "primary_keyword": "september nail art", "owned_by_slug": "september-nail-art-textures", "owned_by_title": "Trending September Nail Art and Textures", "source": "new post — phase 2" },
+      { "primary_keyword": "short vs long september nails", "owned_by_slug": "short-vs-long-september-nails", "owned_by_title": "Short vs Long: Which September Nails Should You Get", "source": "new post — phase 2" },
+      { "primary_keyword": "late september nails", "owned_by_slug": "late-september-nails", "owned_by_title": "Late September Nail Ideas: Full Fall Energy", "source": "new post — phase 2" },
+      { "primary_keyword": "september nails", "owned_by_slug": "september-nails", "owned_by_title": "September Nail Ideas", "source": "existing — phase 1 pillar" },
+      { "primary_keyword": "september nail colors", "owned_by_slug": "september-nail-colors", "owned_by_title": "September Nail Colors", "source": "existing — phase 1" },
+      { "primary_keyword": "september birthday nails", "owned_by_slug": "september-birthday-nails", "owned_by_title": "September Birthday Nails", "source": "existing — phase 1" },
+      { "primary_keyword": "september birthstone nails", "owned_by_slug": "september-birthstone-nails", "owned_by_title": "September Birthstone Nails", "source": "existing — phase 1" },
+      { "primary_keyword": "short september nails", "owned_by_slug": "short-september-nails", "owned_by_title": "Short September Nails", "source": "existing — phase 1" },
+      { "primary_keyword": "virgo nails", "owned_by_slug": "zodiac-nails/virgo-nails", "owned_by_title": "Virgo Nails", "source": "existing site post" },
+      { "primary_keyword": "libra nails", "owned_by_slug": "zodiac-nails/libra-nails", "owned_by_title": "Libra Nails", "source": "existing site post" }
+    ]
+  },
+
+  "merged_posts_log": [
+    {
+      "original_topics": ["late-september-nail-ideas-full-fall-energy", "what-makes-september-nails-different-from-regular-fall-nails"],
+      "merged_into": "Late September Nail Ideas: Full Fall Energy",
+      "reason": "Same underlying query cluster (late-month fall transition) at near-identical GSC impressions (694 vs 691) and position. Not enough distinct intent to justify separate pages — second angle absorbed as a section."
+    }
+  ],
+
+  "killed_posts_log": [
+    {
+      "topic": "early-september-nail-ideas-still-summer-vibes",
+      "reason": "774 impressions but same core intent as the existing pillar 'september-nails' (early-month, still-summer framing is the pillar's own premise). Splitting would cannibalize the pillar's primary keyword. Kept as the pillar's strongest section instead — recommend strengthening it there, not extracting it."
+    },
+    {
+      "topic": "best-september-nail-colors-to-try-this-year",
+      "reason": "Keyword already fully owned by existing spoke 'september-nail-colors' (686 impressions here vs that page's own 746 impressions on the same intent). Hard kill per cannibalization rule — route internal links to strengthen the existing colors page instead of forking it."
+    }
+  ]
+}
