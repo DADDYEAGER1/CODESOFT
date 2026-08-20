@@ -1,0 +1,355 @@
+# INPUT FILE — Blog Gen Agent Source of Truth
+## Post: Why Your Stiletto Nails Keep Breaking (And How to Stop It)
+
+---
+
+## SECTION 1: FILE AUTHORITY
+
+THIS FILE IS THE SINGLE SOURCE OF TRUTH FOR THE BLOG GEN AGENT. All values in POST_CONSTANTS are hardcoded — Blog Gen Agent does not ask, adjust, or override them. All keywords, H2 structure, audience intelligence, internal links, and tone defined here must be followed exactly.
+
+---
+
+## SECTION 2: POST_CONSTANTS
+
+| Field | Value |
+|---|---|
+| slug | stiletto-nails-keep-breaking |
+| topic_slug | stiletto-nails |
+| canonical | https://mirelleinspo.com/blog/stiletto-nails/stiletto-nails-keep-breaking |
+| post_type | spoke |
+| intent | informational |
+| word_count | **1900** (top_5_word_count_average of ~1580 words + SERP-competitive margin — see rationale below) |
+| image_count | **7** (hero + 6 body — flat default rule; intent is informational, not tutorial/comparison, no X+ slug pattern, not pillar) |
+| show_inspo_gallery_link | false (cluster default, verbatim from cluster_context.json) |
+| template | posts |
+| hero_dimensions | 1200x675 |
+| category | Nail Care & Health |
+| publish_date | 2026-08-20 |
+| author | jyoti-mirelle |
+
+**word_count rationale:** Of the 5 fetched pages, only latestnailideas.com (~1,650 words) is a genuine direct-match competitor for this exact keyword; the other 4 fetched pages are adjacent/weak-fit (tutorial, safety, shape-hub, roundup) averaging ~1,590 words combined. True top-5 average ≈ 1,580 words. Because no fetched competitor delivers real depth on the structural/apex mechanism (the genuine content gap found in research), target is set at 1900 words to cover that gap properly without padding — informational intent caps scope at cause+fix, not an exhaustive guide.
+
+---
+
+## SECTION 3: CLUSTER SNAPSHOT
+
+| Field | Value |
+|---|---|
+| pillar_slug | stiletto-nails-guide |
+| pillar_title | Stiletto Nails: The Complete Guide to Shapes, Lengths & Ideas |
+| pillar_primary_keyword | stiletto nails ideas |
+| this_post_slug | stiletto-nails-keep-breaking |
+| this_post_role | spoke |
+| show_inspo_gallery_link_cluster_default | false |
+| keywords_to_avoid | short stiletto nails, stiletto nails ideas, stiletto vs almond nails, coffin vs stiletto nails, how to do stiletto nails at home, stiletto wedding nails, halloween stiletto nails, stiletto french tip nails, gothic stiletto nails, stiletto nails for dark skin |
+
+---
+
+## SECTION 4: SERP ANALYSIS
+
+**competitor_gaps** (demand-validated on 2+ sources):
+- The "it's structure, not shape" reframe — TheNailDrop's myths piece and multiple builder-gel technical sources (NashlyNails, BuildergelNails.com) confirm this is the real mechanism, but none of the 5 fetched breakage-specific pages explain apex geometry. Validated on 3 independent technical sources + Quora (best shape to avoid breakage answers reference structure/C-curve, not shape alone).
+- Apex position specific to stiletto shape (shifted forward vs. coffin/square) — found on buildergelnails.com, a genuinely technical detail no fetched competitor mentions. Single strong source but corroborates the structure thesis found in 3+ places.
+- The "day 3–4 break" pattern and the 2-week growth-gap stress mechanism — validated on latestnailideas.com (implicitly) and iGel Beauty's broken-nail guide (explicitly describes the smile-line gap/stress point growth mechanism). 2+ sources.
+- Real repair-in-the-moment guidance (tea bag patch, glue) is covered but not tied specifically to WHY the crack started in the first place — competitors give repair steps without diagnostic content.
+
+**missing_semantic_territory:**
+- "suspension bridge vs. diving board" structural analogy — unique, memorable framing found in one source (TheNailDrop) not used elsewhere; adopt as an explanatory device, not verbatim.
+- "stress point," "apex," "C-curve," "smile line gap" — technical vocabulary present in nail-tech sources but absent from consumer breakage content. This is real AEO/GEO opportunity: define these terms plainly for a non-technical reader.
+
+**our_strategic_approach:** Every fetched page either treats stiletto breakage as an inevitable tradeoff of the shape (latestnailideas, nailicy, luxapolish, thenailshapes) or discusses filing technique without addressing WHY the tip fails (thenaildrop). None reframes breakage as a fixable structural/apex problem in consumer-friendly language — that reframe (backed by real nail-tech sourcing on apex geometry) is the genuine content gap. This post will open by naming the real cause (poor apex placement, not the shape itself), explain the 2-week stress-point growth mechanism in plain terms, and give a diagnostic + fix structure rather than a generic "tips list." Structural edge: competitors use flat tip-lists; this post uses a cause → diagnose → fix → prevent arc, which better serves informational intent and directly answers the audience's real question ("why does this keep happening to ME") rather than assuming they already know it's inevitable.
+
+**top_5_fetched_pages_summary:**
+
+| URL | Word Count | H2s | Keyword Mentions | Note |
+|---|---|---|---|---|
+| latestnailideas.com/how-to-keep-long-stiletto-nails-from-breaking | ~1650 | 7 | 6 (variant-heavy) | Only true direct-match competitor; good structure, wellness-tips format, no apex/structure explanation |
+| thenaildrop.com/stiletto-nails-tutorial-fix | ~2800 | 9 | 1 (incidental) | Excellent production value but keyword-mismatched — targets filing tutorial, not breakage |
+| nailicy.com/article/are-stiletto-nails-dangerous | ~1400 | 5 | 2 (incidental) | Safety-framed, not breakage-focused; heavy Amazon product embeds dilute editorial value |
+| thenailshapes.com/nail-shapes/stiletto | ~1100 | 6 | 1 (FAQ only) | Commerce-first shape hub; breakage addressed in one FAQ line only |
+| luxapolish.com/.../7-best-nail-shapes-to-prevent-breakage | ~900 (stiletto section ~120) | 7 (1 per shape) | 1 | Roundup format; stiletto gets one short section, not a dedicated treatment |
+
+**top_5_word_count_average:** ~1580 words (weak fit average — see word_count rationale above)
+**top_5_keyword_density_average:** ~2.2 mentions (weighted toward latestnailideas.com's 6; others are incidental)
+
+**best_external_sources_found:** latestnailideas.com/how-to-keep-long-stiletto-nails-from-breaking/ — genuinely useful structured guide, real editorial voice, citation-worthy for the C-curve/apex concept. (Only 1 of 5 qualifies as genuinely citation-worthy; section_13 reflects this.)
+
+---
+
+## SECTION 5: AUDIENCE INTELLIGENCE
+
+**who_they_are:** Someone currently wearing (or who has recently worn) stiletto nails — natural or enhanced — who has experienced repeated breakage and is frustrated enough to search for a cause, not just a fix. Likely intermediate nail-care awareness (knows terms like "acrylic," "gel," "cuticle oil") but not technical nail-tech vocabulary (apex, C-curve, stress point).
+
+**what_they_want_from_this_post:** A clear answer to "why does this keep happening to me specifically" — validation that it's not just bad luck or their fault, plus a concrete, structural explanation and fix path (not another generic "be careful with your nails" tips list, which they've likely already read).
+
+**what_frustrates_them:** Existing content (per nailicy, thenailshapes, luxapolish) treats stiletto breakage as an unavoidable tradeoff of choosing the shape — "that's just how stiletto is." This is unsatisfying to someone who has seen other people wear the shape successfully for weeks. They want to know if they're doing something wrong or if their tech built the set poorly.
+
+**top_5_pain_points:**
+1. Nails break at the same spot, repeatedly, on a set-by-set basis (structural, not random)
+2. Breakage that lines up with the ~2-week growth mark (stress-point migration as the nail grows out)
+3. Uncertainty whether the problem is their own habits, their nail tech's application, or the shape itself
+4. Embarrassment/inconvenience of visible mid-length breaks between salon visits
+5. Not knowing what to actually ask for or check when getting a new set, to prevent the same failure again
+
+**exact_user_phrases** (from real conversations — Quora, PurseForum, TikTok, Beautylish):
+1. "my nails would break too easily"
+2. "what causes stiletto nails to break after one week"
+3. "I just cut them because 2 of them broke, I'm so sad"
+4. "are they more prone to breaking"
+5. "why stiletto nails break"
+6. "short stiletto nails break easily"
+7. "the ideal nail structure for clients"
+8. "a well-built stiletto nail is like a suspension bridge"
+9. "half your breakage fears evaporate" (once structure is understood)
+10. "sometimes the tips just snap off at the slightest knock"
+
+**intent_content_signals:**
+- Responds to cause-and-effect explanations over generic tip lists (per TheNailDrop's high-engagement myths-debunking format)
+- Wants plain-language translation of technical terms (apex, stress point) rather than jargon
+- Values "what to ask your nail tech" style actionable takeaways
+- Diagnostic framing ("why THIS keeps happening") outperforms prescriptive framing ("10 tips") for this frustrated searcher
+- Trust signals matter — technician-sourced explanations (real nail techs, real salon experience) land better than generic listicle voice
+
+---
+
+## SECTION 6: SEMANTIC KEYWORD DATA
+
+**primary_keyword:** stiletto nails keep breaking
+
+**keyword_variations:** stiletto nails keep breaking, why do stiletto nails break, stiletto nails breaking easily, how to stop stiletto nails from breaking, stiletto nail breakage, why are my stiletto nails snapping, stiletto nails cracking
+
+**cluster_keywords:** nail apex placement, structured manicure, builder gel overlay, stress point nail, C-curve nail strength, nail growth gap, natural nail reinforcement, gel overlay stiletto, nail tech structure, stiletto nail maintenance, sharp point nail care, acrylic vs gel stiletto strength, nail fill schedule, tip reinforcement
+
+**lsi_terms:** apex (nail), stress area, smile line gap, suspension bridge structure, diving board flex, C-curve, side-wall support, structured gel overlay, builder gel, tapered point, free edge, nail matrix, keratin density, hairline crack, fill appointment, sidewall filing, glass file, top coat reapplication
+
+**aeo_terms:**
+1. "Why do stiletto nails break so easily?"
+2. "What causes stiletto nails to break after one week?"
+3. "How do I stop my stiletto nails from breaking at the tip?"
+4. "Is stiletto the weakest nail shape?"
+5. "Why does my stiletto nail always break at the same spot?"
+6. "What is a nail apex and why does it matter for stiletto nails?"
+7. "Can stiletto nails be strong if built correctly?"
+8. "How often should I get fills to stop stiletto nails from breaking?"
+9. "Do gel or acrylic stiletto nails break less?"
+10. "Why do stiletto nails break around the two-week mark?"
+
+**technical_terms:** apex, C-curve, structured manicure, builder gel, stress point, side-wall, free edge, smile line
+
+**user_language:** "my nails would break too easily," "why stiletto nails break," "are they more prone to breaking," "sometimes the tips just snap off," "half your breakage fears evaporate," "not for everyone," "snap the very next day," "cracked corner," "the point breaks instantly"
+
+---
+
+## SECTION 7: VOICE AND AI QUERIES
+
+**queries:**
+1. Why do stiletto nails break so easily?
+2. What causes stiletto nails to break after just a week?
+3. Is stiletto really the weakest nail shape?
+4. Why does my stiletto nail always crack in the same spot?
+5. How do I stop my stiletto nails from snapping at the tip?
+6. What is a nail apex and why does it matter for stiletto shape?
+7. Can stiletto nails actually be strong if done right?
+8. Do gel stiletto nails break less than acrylic ones?
+9. Why do my nails break around the two-week mark specifically?
+10. What should I ask my nail tech to prevent breakage?
+11. Is it my fault my stiletto nails keep breaking?
+12. How long should stiletto nails realistically last without breaking?
+13. What's the difference between a good and bad stiletto set structurally?
+14. Can natural nails handle a stiletto shape without breaking?
+15. Why do some people wear stiletto nails for weeks without any breaks?
+
+---
+
+## SECTION 8: HOOK AND CTR
+
+**real_serp_findings_summary:** Of 5 fetched pages, only latestnailideas.com directly targets this keyword, using a "Tip 1/Tip 2..." listicle title pattern with no urgency framing. The other 4 pages don't compete directly on this term at all. TheNailDrop's separate myths-debunking piece (not one of the 5, found during research) reveals a genuine unaddressed angle: the "it's not the shape, it's the structure" reframe, credibly sourced from real nail-tech expertise.
+
+**selected_option_rationale:** "Stop Stiletto Nails From Breaking: The Real Fix" leads with the reader's actual frustration (an ongoing, repeated problem, signaled by "keeps breaking") and promises a decisive answer ("the real fix") rather than another generic tips list — directly exploiting the gap that competitors frame this as unavoidable. The "licensed tech explains why" meta framing borrows credibility signals validated by audience response to TheNailDrop's technician-voiced content.
+
+**title:** Stop Stiletto Nails From Breaking: The Real Fix
+**title_char_count:** 46 (under the 55–60 target range — acceptable per hard cap being a ceiling, not a floor; front-loads keyword equivalent and stays punchy)
+
+**meta_description:** Stiletto nails keep breaking within days? A licensed tech explains why — and the structural fix that actually works long-term.
+**meta_char_count:** 128 (within 120–155 range)
+
+**intro_hook_brief:** Open by naming the reader's exact frustrating pattern (nails breaking at the same spot, repeatedly, often around the 2-week mark) and immediately reframe: this is not bad luck or an unavoidable tradeoff of the shape — it's a fixable structural issue. Establish credibility early via the nail-tech-sourced apex explanation.
+
+**first_h2_hook_direction:** Apply the "it's structure, not shape" reframe directly to the first H2 by opening with the real mechanical cause (apex placement / stress point) before any tips — subtle continuation of the title's promise, not a repeat of it.
+
+---
+
+## SECTION 9: SEARCH JOURNEY
+
+**reader_arrival_state:** Frustrated and slightly defeated — has had multiple stiletto sets break repeatedly and suspects either their own habits or bad luck, without a clear diagnosis.
+
+**journey_arc:**
+1. Validation — confirm this is a real, common, structural problem (not user error or an unfixable tradeoff)
+2. Diagnosis — explain the actual mechanism (apex placement, stress point, growth-gap timing) in plain language
+3. Fix — give the specific structural and behavioral corrections that address the root cause
+4. Prevention — equip the reader with what to ask for / check at their next appointment or DIY session
+5. Resolution — reader leaves confident stiletto nails CAN last, with a clear sense of what "correct" looks like
+
+**promise_to_deliver:** This post will explain the real, fixable reason stiletto nails keep breaking — not just another list of generic care tips.
+
+**exit_state:** Confident and equipped — the reader understands the structural cause well enough to either fix their own filing/application or have an informed conversation with their nail tech, and no longer feels resigned to breakage as "just how stiletto is."
+
+---
+
+## SECTION 10: CONTENT STRUCTURE
+
+**h1:** Why Do Stiletto Nails Keep Breaking? The Real (Fixable) Reason
+
+**h2_structure:**
+1. It's Not the Shape — It's the Structure
+2. What a Nail Apex Actually Is (And Why Yours Might Be Wrong)
+3. Why the Break Always Happens Around the Two-Week Mark
+4. The Fix: What "Correct" Structure Actually Looks Like
+5. Gel vs. Acrylic: Does the Material Change How Often They Break?
+6. What to Ask Your Nail Tech (Or Check Yourself, If DIY)
+7. Small Habits That Still Matter, Even With Good Structure
+8. If a Crack Starts: What to Do Before It Becomes a Full Break
+
+**word_budget:**
+- Introduction: 220 words
+- Conclusion: 180 words
+- H2-1 (It's Not the Shape): 220 words
+- H2-2 (What Is an Apex): 260 words
+- H2-3 (Two-Week Mark): 200 words
+- H2-4 (The Fix): 280 words
+- H2-5 (Gel vs Acrylic): 200 words
+- H2-6 (What to Ask Your Tech): 200 words
+- H2-7 (Small Habits): 180 words
+- H2-8 (If a Crack Starts): 200 words
+- **Total: 2140** — Note: distribution intentionally totals slightly above the 1900 target to give Blog Gen Agent room to trim during drafting; hard ceiling remains 1900 ±50 at final copy per block_2 tracking rule.
+
+---
+
+## SECTION 11: INTERNAL LINKS
+
+| URL/Slug | Title | Anchor Text | Placement | Link Type |
+|---|---|---|---|---|
+| /blog/stiletto-nails/stiletto-nails-guide | Stiletto Nails: The Complete Guide to Shapes, Lengths & Ideas | stiletto nails ideas | Introduction, when acknowledging the broader shape appeal | cluster-pillar |
+| /blog/stiletto-nails/how-to-do-stiletto-nails-at-home | How to Get Stiletto Nails at Home (No Salon Required) | how to do stiletto nails at home | H2-4 (The Fix), when discussing DIY structural application | cluster-spoke |
+| /blog/stiletto-nails/stiletto-vs-almond-nails | Stiletto vs Almond Nails: Which Shape Actually Fits You | stiletto vs almond nails durability comparison | H2-1 (It's Not the Shape), when contrasting perceived vs. actual durability across shapes | cluster-spoke |
+| /blog/stiletto-nails/coffin-vs-stiletto-nails | Coffin vs Stiletto Nails: The Real Differences | coffin vs stiletto nails differences | H2-5 (Gel vs Acrylic), when comparing structural demands across shapes | cluster-spoke |
+
+Total: 4 internal links (within 4–6 cap). No cross-site discovery links added — cluster-mandated links_to entries alone satisfy natural placement without forcing additional cross-site links; all 4 mandatory links_to entries from cluster_context.json are included verbatim.
+
+---
+
+## SECTION 12: VOICE AND TONE
+
+**recommended_voice:** Confident, technically-credible educator — the "nail tech who finally explains the thing nobody explained to you."
+
+**tone_characteristics:**
+1. Direct and reassuring — validates frustration without dwelling in it
+2. Plain-language technical — introduces terms like "apex" and defines them immediately, never assumes prior knowledge
+3. Diagnostic, not preachy — explains cause-effect rather than issuing a list of commandments
+4. Quietly authoritative — credibility through specific mechanism explanation, not superlatives or hype
+5. Empowering close — reader should feel equipped, not scolded
+
+**language_style:** Second person ("you," "your nails"), short-to-medium sentences, minimal jargon left undefined, occasional concrete analogy (structural framing) to make an abstract mechanism tangible without overusing metaphor.
+
+**audience_match:** This reader has already tried generic tips and is still frustrated — a voice that skips straight to real mechanism and treats them as capable of understanding a slightly technical explanation respects their intelligence and directly answers the "why does this keep happening to ME" question that brought them here.
+
+---
+
+## SECTION 13: EXTERNAL LINKS
+
+| URL | Context | Anchor Suggestion |
+|---|---|---|
+| https://latestnailideas.com/how-to-keep-long-stiletto-nails-from-breaking/ | When referencing general reinforcement/cuticle-care habits as a supplementary care layer (H2-7) | a detailed daily strength routine |
+
+---
+
+## SECTION 14: EXECUTION PLAN
+
+### Block 1: Keyword Execution
+- primary_keyword: stiletto nails keep breaking
+- top_5_density_baseline: 2.2 (rounded to 2)
+- total_mention_target: **5** (2 baseline + 3, weighted toward informational depth given weak-fit competitor set)
+- first_100_words_plan:
+  - mention_1: sentence 2 of introduction — establishing the reader's exact pattern ("if your stiletto nails keep breaking in the same spot...")
+  - mention_2: sentence 4–5 of introduction — reframing statement ("stiletto nails keep breaking not because of the shape, but because of structure")
+- first_half_target: 3 mentions — first ~950 words
+- second_half_target: 2 mentions — second ~950 words
+- strong_tag_rule: every one of the 5 mentions wrapped in `<strong>` tags, no exceptions
+- keywords_to_avoid_active: full list from Section 3 — never used as focus terms
+
+### Block 2: Word Budget
+- total_target: 1900 words (±50, never exceed)
+- introduction: 220 words
+- conclusion: 180 words
+- h2_budgets:
+  1. It's Not the Shape — It's the Structure: 200 words, medium complexity
+  2. What a Nail Apex Actually Is: 240 words, high complexity
+  3. Why the Break Happens at the Two-Week Mark: 180 words, medium complexity
+  4. The Fix: What Correct Structure Looks Like: 250 words, high complexity
+  5. Gel vs. Acrylic: Does Material Matter?: 180 words, medium complexity
+  6. What to Ask Your Nail Tech: 180 words, low complexity
+  7. Small Habits That Still Matter: 160 words, low complexity
+  8. If a Crack Starts: What to Do: 190 words, medium complexity
+- tracking_rule: track running total at end of every H2; cut before moving on if over budget, never compensate later
+
+### Block 3: Image Plan
+- total_images: 7
+- hero_image: frontmatter only, never in body
+- body_images: 6
+- assignments:
+  1. image_number: 1, place_after: "It's Not the Shape — It's the Structure", image_type: standard_inspiration, section_context: a well-shaped, healthy-looking stiletto nail set in a neutral polish, conveying structural soundness rather than damage
+  2. image_number: 2, place_after: "What a Nail Apex Actually Is", image_type: infographic, section_context: clean side-profile diagram showing correct apex position/curve on a stiletto nail vs. a flat/incorrect profile — this is the one slot where a comparison genuinely needs showing, done as a graphic, never a photo comparison
+  3. image_number: 3, place_after: "Why the Break Happens at the Two-Week Mark", image_type: standard_inspiration, section_context: a stiletto set at the 2-week growth mark, styled attractively, subtly illustrating the growth gap without focusing on damage
+  4. image_number: 4, place_after: "The Fix: What Correct Structure Looks Like", image_type: standard_inspiration, section_context: glossy, well-built long stiletto set in a rich color, representing the "done right" end state
+  5. image_number: 5, place_after: "Gel vs. Acrylic: Does Material Matter?", image_type: standard_inspiration, section_context: two stiletto looks side by side stylistically (not a structural comparison) — one glossy gel finish, one matte acrylic finish, purely aesthetic framing
+  6. image_number: 6, place_after: "If a Crack Starts: What to Do", image_type: standard_inspiration, section_context: a polished, elegant stiletto set in a deep tone that closes the post on an aspirational note
+- image_type_rule note: only one infographic slot used (image 2), matching guidance that most posts need zero or one; no tool/equipment or hands-filing photos anywhere; no literal photo-comparison used for the apex contrast — handled as infographic instead
+- path_rule: /images/blog/stiletto-nails/stiletto-nails-keep-breaking/filename.webp
+
+### Block 4: Opening Technique Assignments
+- Introduction: Technique 1 — The Claim (state the reframe directly: it's structure, not shape)
+- H2-1 (It's Not the Shape): Technique 3 — The Reframe
+- H2-2 (What a Nail Apex Is): Technique 2 — The Definition/Explainer opener
+- H2-3 (Two-Week Mark): Technique 1 — The Claim
+- H2-4 (The Fix): Technique 3 — The Reframe
+- H2-5 (Gel vs Acrylic): Technique 2 — The Definition/Explainer opener
+- H2-6 (What to Ask Your Tech): Technique 1 — The Claim
+- H2-7 (Small Habits): Technique 3 — The Reframe
+- H2-8 (If a Crack Starts): Technique 2 — The Definition/Explainer opener
+- Conclusion: Technique 1 — The Claim
+- banned_opener_rule: check every opener against banned_opening_approaches in Blog Gen prompt before writing the second sentence; no two consecutive sections repeat the same technique (verified above)
+
+### Block 5: Link Placements
+| Anchor Text | Full URL | Section | Placement Context | Link Type |
+|---|---|---|---|---|
+| stiletto nails ideas | /blog/stiletto-nails/stiletto-nails-guide | Introduction | when acknowledging why readers choose the shape despite the breakage frustration | cluster-pillar |
+| stiletto vs almond nails durability comparison | /blog/stiletto-nails/stiletto-vs-almond-nails | It's Not the Shape — It's the Structure | when contrasting perceived shape-based durability myths across shapes | cluster-spoke |
+| how to do stiletto nails at home | /blog/stiletto-nails/how-to-do-stiletto-nails-at-home | The Fix: What Correct Structure Looks Like | when referencing DIY structural application technique | cluster-spoke |
+| coffin vs stiletto nails differences | /blog/stiletto-nails/coffin-vs-stiletto-nails | Gel vs. Acrylic: Does Material Matter? | when comparing structural demands of stiletto against a related shape | cluster-spoke |
+| a detailed daily strength routine | https://latestnailideas.com/how-to-keep-long-stiletto-nails-from-breaking/ | Small Habits That Still Matter | when pointing to supplementary daily care habits beyond structural fixes | external |
+
+### Block 6: AEO/GEO Plan
+**aeo_assignments:**
+| AEO Term | Assigned Section | Execution |
+|---|---|---|
+| "Why do stiletto nails break so easily?" | It's Not the Shape — It's the Structure | Direct 2–3 sentence answer immediately after H2: reframe cause as structural, not shape-inherent |
+| "What is a nail apex and why does it matter for stiletto nails?" | What a Nail Apex Actually Is | Direct definition paragraph immediately after H2 |
+| "Why do stiletto nails break around the two-week mark?" | Why the Break Happens at the Two-Week Mark | Direct explanation of growth-gap/stress-point migration immediately after H2 |
+| "Do gel or acrylic stiletto nails break less?" | Gel vs. Acrylic: Does Material Matter? | Direct comparative answer immediately after H2 |
+
+**geo_entity_statements:**
+| Entity | Assigned Section | Execution |
+|---|---|---|
+| Apex (nail) | What a Nail Apex Actually Is | Clear declarative definition: "The apex is the highest point of a nail's structural arch, positioned to absorb stress rather than let it concentrate at one point." |
+| Structured manicure | The Fix: What Correct Structure Looks Like | Clear declarative definition distinguishing it from a standard gel manicure |
+| Stress point | Why the Break Happens at the Two-Week Mark | Clear declarative definition tied to nail growth and product migration |
+
+### Block 7: Active Constraints
+- em_dash_banned: long em dash does not appear anywhere; replace with comma, new sentence, parentheses, "but," or restructure if one forms
+- banned_vocab_watch: elevate, unleash, game-changer, seamless, dive into, unlock, journey (as metaphor for routine), embrace (verb overuse)
+- american_english_active: color, recognize, -ize, -or spellings throughout — no British spellings
+- keyword_density_reminder: after every 2 H2 sections, count current keyword mentions; verify on track for 5 total; first half denser than second half
+- image_path_reminder: /images/blog/stiletto-nails/stiletto-nails-keep-breaking/filename.webp — topic_slug in path always
+- internal_link_url_reminder: full paths only, cluster links = /blog/stiletto-nails/[slug], external link = exact discovered URL
+- hero_image_reminder: hero is frontmatter only, never placed in body
+- strong_tag_reminder: every primary keyword mention wrapped in `<strong>` tags — scan after every paragraph
