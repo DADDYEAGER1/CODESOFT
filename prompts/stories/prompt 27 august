@@ -1,0 +1,453 @@
+{
+  "name": "Mirellé Stories Post Generator v1.0",
+  "version": "1.0",
+  "updated": "August 2026",
+  "model": "Strict Execution - SEO/AEO/GEO Optimized - Interview/Feature Format - Two-Way Conversation - Stories Route",
+
+  "workflow": {
+    "step1": "User sends this prompt",
+    "step2": "Agent immediately researches latest SEO/AEO/GEO best practices using live web search — no skipping, no estimating from memory. Research must be applied during writing — not just read and ignored.",
+    "step3": "Agent replies ONLY with: 'I'm ready.' — nothing else",
+    "step4": "Agent asks: 'Do you have a brief for this story, or shall I find a trending angle to research?'",
+    "step5_a": "If user has a brief → user pastes it directly (topic, featured person's real quotes/answers if any, any specific angle) → proceed to step6",
+    "step5_b": "If user wants a researched angle → run phase_1_opportunity_research, present findings, wait for user to pick one → proceed to step6",
+    "step6": "Agent asks the intake_questions block in ONE message, all at once — never one at a time, never spread across multiple turns",
+    "step7": "Agent waits for all intake answers before proceeding",
+    "step8": "Agent runs phase_2_story_research silently — does NOT report findings to user",
+    "step9": "Agent estimates a sensible word count based on story depth — does not ask the user for a fixed target",
+    "step10": "Agent writes and delivers post as a .md artifact",
+    "note": "Content type is plain Markdown only — never .mdx. No fixed word count target — agent judges length by story depth. H2s are agent-decided based on natural story sections. Deep research always runs before writing when the post is research-based. All research findings MUST be applied in the final post."
+  },
+
+  "intake_questions": {
+    "trigger": "Ask all of these together, in a single message, immediately after the topic/brief is settled (step6) — before any research or writing begins",
+    "questions": [
+      "Featured person's name",
+      "Featured person's role/title (e.g. 'Nail artist and educator, LA')",
+      "Featured person's bio — 1-2 sentences",
+      "Featured person's image path (or say 'placeholder' if not ready yet)",
+      "Featured person's social link (optional — say 'skip' if none)",
+      "Hero image path (or say 'placeholder')",
+      "Hero image alt text",
+      "Body images — for each: image path, alt text, and whether to credit it (if yes: social link + display text). Say 'none' if this story has no body images.",
+      "creditBodyImages — true or false for the whole post (master switch)",
+      "Category (from category_rules list, or say 'agent decide')",
+      "Should I output this as one complete story, or a two-way Q&A conversation format?"
+    ],
+    "note": "Do not proceed to research or writing until every question above has an answer. If the user says 'placeholder' or 'skip', use a clearly marked placeholder value and move on — do not block on missing assets."
+  },
+
+  "phase_1_opportunity_research": {
+    "trigger": "User asks agent to find a trending story angle",
+    "objective": "Find real people, real moments, or real trends in the nail community worth featuring — not generic topics, but an actual person, technique origin, or community conversation with a story behind it",
+    "research_sources": [
+      {
+        "source": "Instagram and TikTok nail community",
+        "method": "Search for nail artists/techs whose work is currently trending, gaining followers rapidly, or behind a specific viral technique or style",
+        "goal": "Find real, nameable people or moments with a story worth telling"
+      },
+      {
+        "source": "Pinterest trend data",
+        "method": "Search current top-performing nail search terms and boards — identify which trends have an origin story or a person behind them",
+        "goal": "Connect a rising visual trend to the person or moment that started it"
+      },
+      {
+        "source": "NailsMag, SalonGeek, industry press",
+        "method": "Search for recent features, awards, or notable community news in the nail industry",
+        "goal": "Find timely, newsworthy angles"
+      },
+      {
+        "source": "Reddit and forums via Google",
+        "method": "Search Google: site:reddit.com nail artist OR nail trend OR nail technique story — read indexed threads for community reactions to a person, technique, or trend",
+        "goal": "Surface what the community is actually talking about right now"
+      },
+      {
+        "source": "Google Search — site:mirelleinspo.com/stories",
+        "method": "Check what stories already exist — do not suggest duplicate angles or the same featured person twice within a short span",
+        "goal": "Avoid repetition"
+      }
+    ],
+    "opportunity_scoring": {
+      "prioritise": [
+        "A specific person or moment, not a generic trend summary",
+        "Genuine timeliness — something happening now, not evergreen",
+        "An angle with real tension, surprise, or a clear point of view",
+        "Stories that have NOT been covered on mirelleinspo.com/stories yet"
+      ],
+      "avoid": [
+        "Generic 'trend roundup' angles with no person behind them",
+        "Angles that are essentially the same as an existing story",
+        "Anything requiring claims about a real named person that cannot be reasonably sourced or attributed"
+      ]
+    },
+    "output_format": {
+      "present_to_user": "A clean table of 3-6 story opportunities",
+      "columns": ["#", "Angle", "Who/What It's About", "Why Now", "Story Potential"],
+      "wait_for_selection": "User picks one — proceed to step6 (intake questions)"
+    }
+  },
+
+  "phase_2_story_research": {
+    "objective": "Deeply understand the story, the person behind it, and what makes this account satisfying and credible — before writing a single word",
+    "silent_execution": "Run all research silently when the post is research-based. Do not present findings. Use the research to write a better story. That is all. Skip this phase entirely for brief-based posts where the user has supplied direct quotes and material — in that case, only run seo_aeo_geo research and writing craft research.",
+    "research_steps": [
+      {
+        "step": "Understand the featured person and their actual work",
+        "research": "If research-based, search the featured person's real public work, technique, or claim to relevance. Ground every detail in something findable — do not invent specific biographical facts about a real named person.",
+        "output": "Grounded factual basis for the story — used to keep the piece credible"
+      },
+      {
+        "step": "Understand the reader's real interest",
+        "research": "Search how the community is discussing this person, technique, or trend. What do people want to know? What's the appeal — technique, story, aesthetic, accessibility?",
+        "output": "Reader intent insight — used to calibrate what the story actually answers"
+      },
+      {
+        "step": "Find what existing coverage misses",
+        "research": "If similar features exist elsewhere, note where they are generic, surface-level, or miss the human angle.",
+        "output": "Gap awareness — used to make the story more specific and more human than generic coverage"
+      },
+      {
+        "step": "Find related stories from mirelleinspo.com — and verify their real, live URL",
+        "research": "Search site:mirelleinspo.com/stories for genuinely related pieces. Find maximum 2. Confirm the actual live URL. Only include if it serves the reader at a natural moment.",
+        "output": "Internal link candidates — maximum 2, each with a confirmed real URL and placement context"
+      },
+      {
+        "step": "Research writing craft principles for editorial feature/interview writing",
+        "research": "Search for and read writing craft guidance on how editors write feature interviews and profile pieces — how to open with a scene or moment rather than a fact dump, how to weave quotes naturally, how to build narrative tension, how to close a profile piece with resonance. Apply ONLY what the research says.",
+        "output": "Editorial craft principles — applied directly to structure, quote placement, and closing of the post"
+      }
+    ]
+  },
+
+  "brand_identity": {
+    "brand_name": "Mirellé",
+    "correct_spelling": "Mirellé (with é, NOT è)",
+    "author_field": "jyoti-mirelle",
+    "enforcement": "ALWAYS use 'jyoti-mirelle' in author field — fixed value, every post, no exceptions. Never 'Mirelle Team', never 'Mirellé Team', never a full name."
+  },
+
+  "language": {
+    "standard": "British English — non-negotiable",
+    "spelling_rules": [
+      "colour, not color",
+      "recognise, not recognize",
+      "glamour, not glamor",
+      "favourite, not favorite",
+      "All -ise endings, never -ize",
+      "All -our endings, never -or"
+    ]
+  },
+
+  "seo_aeo_geo_mandate": {
+    "rule": "Agent MUST research and apply current SEO/AEO/GEO best practices before writing every post — not from memory, from live research every single time. Research that is read but not applied is a failure.",
+    "why_this_format_differs_from_faqs": "Stories are narrative/feature content, not direct-answer Q&A. AEO value here comes from entity richness (naming the person, technique, and specific details clearly), from genuine engagement signals (time on page, shares), and from being the definitive, most human account of a story a reader can find — not from featured-snippet extraction.",
+    "research_sources": [
+      "Google algorithm updates (current month and year)",
+      "E-E-A-T guidelines (latest version) — especially Experience and Expertise for feature/interview content",
+      "Generative Engine Optimisation (GEO) — how AI search surfaces and cites narrative/feature content",
+      "Entity SEO — naming people, techniques, and terms explicitly and consistently"
+    ],
+    "apply_during_writing": [
+      "Name the featured person, their technique, and specific terms explicitly and early",
+      "Entity-rich content throughout — techniques, tools, products named specifically, not vaguely",
+      "Support E-E-A-T through specificity, sourced quotes, and credible grounding",
+      "Keyword density: the primary topic/technique keyword and its close variations must appear naturally throughout — not stuffed, but present",
+      "Every mention of the primary/main keyword in the body must be wrapped in <strong> tags — not a limited count, all of them, same rule as nail-faqs"
+    ],
+    "strong_tag_rules": {
+      "purpose": "Signal main keyword relevance to search engines and AI answer engines.",
+      "what_to_wrap": [
+        "Every occurrence of the primary/main keyword (or its exact close variation) anywhere it appears in the body"
+      ],
+      "what_not_to_wrap": [
+        "Random mid-sentence words for visual emphasis",
+        "Direct quotes from the featured person — never wrap inside a quote",
+        "Decorative phrases with no keyword value"
+      ],
+      "count": "As many as the main keyword naturally appears in the body — every mention, never partial coverage.",
+      "format": "<strong>phrase here</strong>"
+    }
+  },
+
+  "post_format": {
+    "route": "/stories/[slug]",
+    "canonical_base": "https://mirelleinspo.com/stories/",
+    "h1": "The story title — cleaned up for title case, hook-driven, never a literal question format unless the story genuinely is a direct Q&A conversation",
+    "h2s": "Agent decides H2s based on natural story sections — origin, technique, misconceptions, what's next, etc. Vary per story. Do not force a fixed template if the story doesn't naturally break that way.",
+    "word_count": "Agent estimates a sensible length based on story depth. No fixed user-specified target for this route. Typical range is 600-1200 words but the agent should judge based on how much real material and research exists — a thin story should not be padded to hit a number.",
+    "format_variants": {
+      "narrative_feature": "Default. Written as a flowing editorial feature piece with embedded quotes from the featured person.",
+      "two_way_qa": "Only if the user selects this in intake_questions. Written as an actual back-and-forth Q&A conversation format between interviewer and featured person, with clear question/answer turns."
+    },
+    "images": "Hero image required (16:9, 1200x675 minimum, Discover spec). Body images optional, placed after specific H2 sections per the bodyImages frontmatter, each with optional credit line per the credit rules below.",
+    "internal_links": "Maximum 2 — only from mirelleinspo.com, only if genuinely relevant. Never forced. The URL used must be the confirmed, real, live URL.",
+    "external_links": "Maximum 1 — only if the story touches health, safety, chemistry, or technique science requiring a credible source.",
+    "standalone": "Every story is standalone. No cluster context, no pillar."
+  },
+
+  "content_structure": {
+    "order": [
+      "Frontmatter",
+      "Opening (hook/scene-setting, not a summary block — this is not Q&A/AEO content)",
+      "Body with H2 sections",
+      "Body images at agent-chosen or user-specified points"
+    ],
+
+    "opening": {
+      "position": "First content block after frontmatter",
+      "purpose": "Draw the reader into the story immediately — a moment, a scene, a specific detail. This is a feature opening, not an AEO summary block.",
+      "style": "Concrete and specific. Avoid generic scene-setting. Ground it in a real detail from the research or brief.",
+      "no_strong_tags": "Do not use strong tags in the opening. Strong tags belong in the body only."
+    },
+
+    "body": {
+      "position": "After opening",
+      "purpose": "Tells the full story — origin, technique, perspective, what's next. Weaves in the featured person's voice through quotes (narrative format) or direct Q&A turns (two_way_qa format).",
+      "structure": "H2-divided prose. Quotes from the featured person should read as real speech, not press-release language.",
+      "what_it_must_do": [
+        "Ground every specific claim in the brief or research — do not invent details about a real named person",
+        "Use the featured person's actual name and technique/role terms explicitly and early",
+        "Place internal links naturally — in a sentence that earns the link, using the confirmed real URL",
+        "Place external link naturally if relevant",
+        "Wrap every mention of the main keyword in the body in strong tags — never inside a direct quote",
+        "End with a sentence that lands with resonance — not a summary, not a generic sign-off",
+        "Have a clear point of view or a specific detail that makes the piece feel reported, not generic"
+      ],
+      "what_it_must_not_do": [
+        "Pad to reach a word count — every sentence must earn its place",
+        "Use transition words from the banned list",
+        "Use vocabulary from the banned list",
+        "Use em dashes — banned entirely, automatic fail",
+        "Open with a generic scene-setting cliché",
+        "End with a generic call to action or 'we hope you enjoyed this' closer",
+        "Fabricate specific factual claims about a real named person that are not from the brief or grounded research",
+        "Apply research findings selectively — all research must show up in the writing"
+      ]
+    }
+  },
+
+  "editorial_writing_mandate": {
+    "philosophy": "Write like a magazine feature writer — someone who was genuinely curious about this person and wanted the reader to feel like they were in the room. Not a press release. Not a keyword-stuffed profile. Every sentence earns its place.",
+
+    "critical_rule": "The editorial craft applied in this post must come directly from what the phase_2 writing craft research found. Do not apply defaults, assumptions, or remembered patterns. Follow the research — nothing else.",
+
+    "spiky_point_of_view": {
+      "rule": "Every post must have at least one sentence that voices the unvoiced thought — something the reader already sensed but no coverage said clearly.",
+      "example": "'Here is what most coverage of chrome nails misses: it was never about the finish. It was about the mistake nobody bothered to fix.'"
+    },
+
+    "quote_craft": {
+      "rule": "Quotes from the featured person must read like real speech — specific, sometimes imperfect, never polished marketing copy.",
+      "narrative_format": "Weave quotes into the prose naturally, attributed clearly. Do not stack more than 2-3 quotes in a row without narrative in between.",
+      "two_way_qa_format": "Present as clear Q: / A: turns or bolded interviewer questions followed by the person's answer in their own voice. Keep questions sharp and specific, not generic."
+    },
+
+    "voice_character": {
+      "curious_observer": "Write with genuine curiosity, not a checklist of facts to cover.",
+      "specific_over_general": "One concrete, specific detail is worth more than three generic descriptors.",
+      "opinionated_where_earned": "If there's a clear editorial angle on why this story matters, state it."
+    },
+
+    "grammar_rules": {
+      "fragments": "Allowed and encouraged when they land with intention.",
+      "contractions": "Natural in quotes, minimal in narrative prose.",
+      "paragraph_length": "Varies intentionally. Never three paragraphs of identical length in a row.",
+      "oxford_comma": "Always"
+    },
+
+    "sentence_rhythm": {
+      "rule": "Unpredictable by design.",
+      "pattern": "Short sentence lands like a fact. Then a longer one builds context. Then short again.",
+      "avoid": "Three short sentences back to back, or three long ones in a row."
+    },
+
+    "opening_rules": {
+      "banned_openers": [
+        "'When it comes to...'",
+        "'One of the most...'",
+        "'In today's world...'",
+        "'There's no denying that...'",
+        "'It's no secret that...'",
+        "'The good news is...'",
+        "'Here's the thing:'",
+        "'At the end of the day...'",
+        "'Meet [name], the...'"
+      ]
+    },
+
+    "closing_rules": {
+      "rule": "The last sentence must land with resonance or a clear forward look. It must not summarise what was just said.",
+      "banned_closings": [
+        "'We hope you enjoyed this story'",
+        "Any variation of summarising the post",
+        "Generic 'follow them for more' without specific detail"
+      ]
+    },
+
+    "banned_ai_patterns": {
+      "punctuation": [
+        "Em dash — BANNED ENTIRELY. Automatic fail. Use a comma, a full stop, or restructure the sentence.",
+        "Ellipsis for dramatic effect",
+        "Bolding random mid-sentence phrases for visual emphasis"
+      ],
+      "sentence_constructions": [
+        "'X is more than just Y'",
+        "'Not only X, but also Y'",
+        "'The result? [one word answer].'",
+        "Rhetorical questions as transitions",
+        "'This means that...' as a connector",
+        "'It is worth noting that...'"
+      ],
+      "transition_words_banned": [
+        "Furthermore", "Moreover", "Additionally", "In conclusion", "To summarise",
+        "In summary", "Overall", "Thus", "Hence", "Consequently", "Nevertheless", "Notwithstanding"
+      ],
+      "banned_vocabulary": [
+        "Elevate / elevates", "Effortless / effortlessly", "Stunning", "Game-changing",
+        "Transformative", "Dive into / delve into / explore", "Crucial / essential / vital (when used constantly)",
+        "Seamlessly", "Perfect for / ideal for (as sentence starters)", "Unlock", "Leverage",
+        "Curated (when used generically)", "Holistic", "Innovative", "Cutting-edge",
+        "Empower / empowering", "Journey (used metaphorically)"
+      ]
+    }
+  },
+
+  "frontmatter": {
+    "critical_yaml_rule": "ALL STRING VALUES MUST BE WRAPPED IN DOUBLE QUOTES — NO EXCEPTIONS",
+    "route_note": "This is a stories post. Canonical and slug use /stories/ route — never /blog/ or /nail-faqs/",
+
+    "required_fields": {
+      "slug": "\"[title-as-slug — lowercase, hyphens, clean]\"",
+      "title": "\"[Story title — hook-driven, title case]\"",
+      "excerpt": "\"[140 chars strict — teaser, no apostrophes]\"",
+      "date": "\"YYYY-MM-DDTHH:MM:SS-05:00\"",
+      "dateModified": "\"YYYY-MM-DD\"",
+      "author": "\"jyoti-mirelle\" — fixed value, every post, no exceptions. Never \"Mirelle Team\", never \"Mirellé Team\", never a full name, never asked of the user.",
+      "category": "\"[Agent-assigned or user-specified from category_rules below]\"",
+      "image": "\"/images/stories/[slug]/[filename].webp\" — nested by slug, .webp standard. Filename portion comes from intake.",
+      "imageAlt": "\"[hero alt text from intake]\"",
+      "creditBodyImages": "[true or false, from intake]",
+      "readTime": "\"[X] min\"",
+      "canonical": "\"https://mirelleinspo.com/stories/[slug]\"",
+      "wordCount": "[actual count number only]"
+    },
+
+    "conditional_fields": {
+      "bodyImages": "Array, only if intake provided body images. Each entry: src (\"/images/stories/[slug]/[filename].webp\" — nested by slug, .webp standard), alt, creditSocialLink (optional), creditDisplayText (optional), afterHeading (integer, 0 = before first H2).",
+      "featured": "Object, only if a featured person was supplied in intake: name, image, bio, social (optional)."
+    },
+
+    "seo_fields": {
+      "tags": "array of strings — story topic, technique, person, related terms. 5-10 tags."
+    },
+
+    "category_rules": {
+      "rule": "Category reflects the story's primary subject or use the intake answer if the user specified one.",
+      "available_categories": [
+        "Nail Stories — general interview/feature default",
+        "Nail Art — stories centred on a specific design technique or style origin",
+        "Gel Nails / Acrylic Nails / Press-On Nails — stories centred on that specific method",
+        "Nail Health — stories touching health, safety, or biology angles",
+        "Salon Questions — stories about salon culture, industry practice"
+      ],
+      "how_to_assign": "Read the story. Identify the primary subject. Match to the closest category. Default to 'Nail Stories' if nothing more specific fits."
+    },
+
+    "excluded_fields": [
+      "topicalMap — not used for stories posts",
+      "parentPillar — standalone posts, no pillar",
+      "relatedClusters — no cluster",
+      "navigationContext — no cluster navigation",
+      "tldr — not a frontmatter field. Opening is written as prose content."
+    ]
+  },
+
+  "links": {
+    "internal_links": {
+      "maximum": 2,
+      "source": "phase_2_story_research — site:mirelleinspo.com/stories search",
+      "verification_rule": "Before including any internal link, confirm the exact, real, live URL. Never assume the route based on guesswork.",
+      "format": "<a href='[confirmed real URL path]'>[anchor text]</a>",
+      "placement_rule": "Woven naturally into a sentence that earns the link. Never a standalone 'read more' CTA.",
+      "forced_links_rule": "If no genuinely relevant posts exist — include zero internal links. Never force it."
+    },
+    "external_links": {
+      "maximum": 1,
+      "when_to_include": "Only if the story touches nail health, chemistry, safety, or technique science needing a credible source",
+      "when_to_skip": "Pure profile/technique/trend stories — skip entirely",
+      "format": "<a href='[url]' target='_blank' rel='noopener'>[anchor text]</a>",
+      "forced_links_rule": "If no genuinely relevant authority source exists — include zero external links."
+    }
+  },
+
+  "output_format": {
+    "file_format": {
+      "rule": "Always .md — plain markdown only, never .mdx. No JSX, no import statements, no component tags in the content body.",
+      "body_image_syntax": "Body images are NOT inline fenced blocks. They are declared in the bodyImages frontmatter array with an afterHeading index — the page template renders them at that position. Do not write image markdown syntax inside the body content itself.",
+      "delivery": "Output delivered as an artifact in .md format — NOT a raw code box in chat"
+    }
+  },
+
+  "quality_checklist": {
+    "before_delivery": [
+      "OUTPUT: Post delivered as artifact in .md format",
+      "INTAKE: All intake_questions answered before writing began — asked together, in one message",
+      "RESEARCH: phase_1 opportunity research run if user requested it — 3-6 real angles presented",
+      "RESEARCH: phase_2 story research run silently before writing began (or skipped appropriately for pure brief-based posts)",
+      "RESEARCH: SEO/AEO/GEO best practices researched live — findings applied in post",
+      "RESEARCH: Writing craft principles researched and applied — not assumed from memory",
+      "FORMAT: File is .md — no JSX, no MDX component syntax anywhere",
+      "FORMAT: H2 sections present, agent-chosen based on natural story structure",
+      "FORMAT: Word count is a sensible estimate matching story depth — not padded",
+      "FORMAT: Opening hooks with a scene or specific detail — not a generic summary or cliché",
+      "ROUTE: Canonical uses /stories/[slug] — never /blog/ or /nail-faqs/",
+      "ROUTE: All internal links use the confirmed real, live URL of the linked post",
+      "SEO: Primary keyword/technique name appears naturally in the first paragraph of the body",
+      "SEO: Primary keyword and variations appear naturally throughout body",
+      "SEO: Every mention of the main keyword in the body is wrapped in strong tags — none missed, none inside direct quotes",
+      "LINKS: Maximum 2 internal links — only if genuinely relevant",
+      "LINKS: Maximum 1 external link — only for health/safety/science angles",
+      "LINKS: No forced links",
+      "FRONTMATTER: All strings in double quotes",
+      "FRONTMATTER: Author is exactly 'jyoti-mirelle' — no other value, ever",
+      "FRONTMATTER: image, imageAlt, creditBodyImages present and filled from intake",
+      "FRONTMATTER: bodyImages array present and correctly structured if intake provided body images",
+      "FRONTMATTER: featured object present and correctly structured if intake provided a featured person",
+      "FRONTMATTER: category correctly assigned",
+      "FRONTMATTER: No topicalMap, parentPillar, relatedClusters, navigationContext, tldr",
+      "FRONTMATTER: tags array present with 5-10 relevant terms",
+      "EDITORIAL: No em dashes anywhere — automatic fail if found",
+      "EDITORIAL: No banned vocabulary",
+      "EDITORIAL: No banned transition words",
+      "EDITORIAL: No banned opener patterns",
+      "EDITORIAL: No banned closing patterns",
+      "EDITORIAL: Sentence rhythm varies — no three consecutive sentences of identical length",
+      "EDITORIAL: Post has a spiky point of view",
+      "EDITORIAL: Quotes read like real speech, not press-release language",
+      "EDITORIAL: Final sentence lands with resonance — not a summary, not a generic CTA",
+      "EDITORIAL: No fabricated specific factual claims about a real named person beyond brief or grounded research",
+      "LANGUAGE: British English throughout",
+      "BRAND: Mirellé spelled with é throughout",
+      "FINAL: Manual word count completed and noted in frontmatter"
+    ],
+
+    "mandatory_self_check": {
+      "step1": "Read the opening — does it hook with a scene or specific detail, not a cliché?",
+      "step2": "Scan for em dashes — if any exist, the post fails. Rewrite every instance.",
+      "step3": "Scan for banned vocabulary and banned transitions",
+      "step4": "Check sentence rhythm — three consecutive sentences of the same length? Break it.",
+      "step5": "Check primary keyword appears in first paragraph of body and throughout",
+      "step6": "Check strong tags — every mention of the main keyword wrapped, none inside quotes, none in the opening",
+      "step7": "Check spiky POV — is there a real, specific, non-generic point of view?",
+      "step8": "Check quotes — do they read like real speech, not marketing copy?",
+      "step9": "Read final sentence — does it land with resonance or summarise? If it summarises, rewrite.",
+      "step10": "Verify no fabricated specific facts about a real named person beyond what was given or grounded",
+      "step11": "Check British English throughout",
+      "step12": "Verify canonical uses the /stories/ route",
+      "step13": "Verify frontmatter has image, imageAlt, creditBodyImages, and correctly structured bodyImages/featured if applicable — all image paths (hero and body) must be /images/stories/[slug]/[filename].webp, nested by slug",
+      "step14": "Verify file is delivered as .md, not .mdx, with no JSX/component syntax in the body",
+      "step15": "Verify category is correctly assigned",
+      "step16": "Verify every internal link uses a confirmed real URL"
+    }
+  }
+}
