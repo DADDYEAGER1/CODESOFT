@@ -1,0 +1,203 @@
+
+
+{
+  "section_1_file_authority": {
+    "statement": "THIS FILE IS THE SINGLE SOURCE OF TRUTH FOR THE NAIL FEED POST GEN AGENT. All values in POST_CONSTANTS are hardcoded. All entities, sentiment/trend rationale, emotion trigger, structure, and links defined here must be followed exactly."
+  },
+
+  "section_2_post_constants": {
+    "slug": "why-does-acrylic-keep-cracking-down-the-center-of-the-nail",
+    "canonical": "https://mirelleinspo.com/nail-feed/why-does-acrylic-keep-cracking-down-the-center-of-the-nail",
+    "word_count": 1500,
+    "image_count": 4,
+    "category": "DIY Product-Failure Problems",
+    "publish_date": "2026-08-29",
+    "author": "jyoti-mirelle"
+  },
+
+  "section_3_sentiment_and_entity_brief": {
+    "post_gen_instruction": "This is the primary creative context for the whole post — the real emotional territory this post is built on, and what it's specifically about. Named entities should appear clearly and early in the post.",
+    "sentiment_read": "negative",
+    "the_specific_frustration_or_desire": "People feel blindsided because the crack runs straight down the middle of the nail rather than chipping at the tip like they expect — Quora and forum threads show readers assuming they did something wrong physically (a knock, typing too hard) when the real, recurring cause is structural: the acrylic was built flat, with no arch over the nail's natural stress point. The frustration is compounded by DIY appliers who don't know the stress point exists at all, so the same center-crack keeps recurring set after set with no idea why.",
+    "named_entities": "apex, stress point, flat nail / no-apex acrylic, center crack (vertical crack), monomer-to-powder ratio, back third of the nail bed, C-curve, teabag repair method",
+    "trend_velocity": "sustained, seasonal-cyclical, low-to-moderate warmth right now — acrylic nails are an evergreen DIY/salon category (not currently spiking), but DIY at-home nail troubleshooting content performs consistently year-round, with a mild seasonal lift as more people are doing their own acrylics at home",
+    "why_now_rationale": "2026 nail trend coverage explicitly notes a rising DIY/at-home nail-doing trend as more people maintain their own manicures rather than booking salon visits, which means more first-time and self-taught appliers hitting structural mistakes (like skipping the apex) that a trained tech would avoid automatically.",
+    "saturation_check": "under-covered on this specific angle — general 'why do acrylics crack/break' content is common, but almost nothing addresses the center-specific vertical crack pattern and its precise structural cause (flat nail, missing or misplaced apex over the stress point). This specificity is the differentiation angle."
+  },
+
+  "section_4_engagement_widgets": {
+    "post_gen_instruction": "Reaction Bar: write the custom frontmatter reaction block if provided below, otherwise omit entirely (post falls back to the route's hardcoded default automatically — no frontmatter needed for the default case). Poll/Quiz: write frontmatter for whichever ONE was selected below, exactly as given, never both. If this section explicitly states neither was selected, omit both poll and quiz from frontmatter entirely — this is a correct, deliberate outcome, not a gap.",
+    "reaction_bar": "default",
+    "poll_or_quiz_selected": "poll",
+    "selection_rationale": "Research surfaced a real, specific either/or the audience is actually split on: whether a mid-crack acrylic set is salvageable with a home fix (teabag/glue method) or whether it needs to come off and be rebuilt with proper apex structure — forum threads show genuine disagreement and uncertainty on this exact point, so a poll fits; a quiz was not used because the topic is a single diagnostic cause-and-fix, not a set of distinct branching outcomes.",
+    "poll_content": {
+      "id": "acrylic-center-crack-poll",
+      "question": "Your acrylic just cracked down the center. What's your move?",
+      "options": [
+        {"id": "a", "label": "Glue and teabag it, ride it out"},
+        {"id": "b", "label": "Straight to the salon for a proper rebuild"},
+        {"id": "c", "label": "Take the whole set off myself"},
+        {"id": "d", "label": "Ignore it until it grows out"}
+      ]
+    }
+  },
+
+  "section_5_hook_and_ctr": {
+    "post_gen_instruction": "READ BEFORE WRITING TITLE, EXCERPT, INTRO, OR FIRST H2. Title and excerpt are hardcoded — use exactly. Title length range is 45-70 characters (Discover feed range, not a SERP-derived cap) — see phase_4.",
+    "selected_trigger": "Trigger 2 — Negative angle + solution",
+    "trigger_rationale": "Phase_1's sentiment_read is genuinely negative and specific: readers are frustrated by a recurring, confusing crack pattern they don't understand, which is exactly the confirmed high-CTR pattern for this trigger — state the problem sharply, then fix it.",
+    "title": "Why your acrylic keeps cracking down the center, explained",
+    "title_char_count": 60,
+    "excerpt": "That vertical crack isn't bad luck. It's almost always a flat nail with no apex over the stress point, and it's an easy fix once you know where to look.",
+    "excerpt_char_count": 154,
+    "intro_hook_brief": "Open by naming the exact, recognisable moment: you look down and there's a clean vertical split running straight through the middle of your acrylic, not a chip at the tip. Validate that this feels random and infuriating, then immediately promise the real structural reason (a missing or flat apex) so the reader knows this isn't just bad luck.",
+    "hero_image_emotional_beat": "A close-up of a hand with one nail showing a distinct vertical crack running down the center of an acrylic nail, high color contrast against skin/background so the crack itself is the unmistakable focal point — the exact visual the title names, not a generic manicure shot."
+  },
+
+  "section_6_hero_image_brief": {
+    "post_gen_instruction": "Use imageAlt exactly as given. image_filename_brief is a naming reference for the actual hero image file, which will be saved at /images/nail-feed/{slug}/{filename}.webp. This section does NOT include a visual concept/mood description — that lives in a separate downstream image-generation prompt the user runs independently.",
+    "imageAlt": "Close-up of a vertical crack running down the center of an acrylic nail, showing the exact stress-point split this common structural DIY mistake causes",
+    "image_filename_brief": "vertical-crack-center-acrylic-nail-close-up-studio-2026.webp",
+    "tag_for_downstream_prompt": "For a Google Discover hero image: high contrast, thumbnail-style, click-optimised, paired with the title 'Why your acrylic keeps cracking down the center, explained'."
+  },
+
+  "section_7_content_structure": {
+    "post_gen_instruction": "H2 structure followed exactly — no renaming, no reordering without user instruction.",
+    "h2_structure": [
+      "It's not bad luck: the real cause of a center crack",
+      "What an apex is and why a flat nail always splits here",
+      "The DIY mistakes that skip the apex without you realizing",
+      "Can you fix a cracked acrylic yourself, or does it need a rebuild",
+      "How to stop it happening on your next set"
+    ],
+    "word_budget": {
+      "intro": "140 words",
+      "h2_1": "260 words",
+      "h2_2": "300 words",
+      "h2_3": "260 words",
+      "h2_4": "280 words",
+      "h2_5": "180 words",
+      "conclusion": "100 words"
+    }
+  },
+
+  "section_8_links": {
+    "post_gen_instruction": "Every link below appears in the post, woven naturally, verbatim URLs and anchors exactly as given/discovered. 2-3 internal + 2-3 external maximum. Internal links are pre-resolved (from Bucket Explorer JSON, Mode A2) or absent (Mode A/B one-off) — this agent never live-searches for internal links. External links are freshly researched here every time.",
+    "all_links": [
+      {
+        "url": "https://mirelleinspo.com/nail-feed/why-do-gel-nails-crack-at-the-tips-but-not-the-middle",
+        "anchor_text": "why gel nails crack at the tips instead of the center",
+        "placement_section": "It's not bad luck: the real cause of a center crack — contrasting gel's tip-cracking pattern with acrylic's center-cracking pattern, per the Bucket Explorer's assigned comparison context",
+        "link_type": "nailfeed-sibling"
+      },
+      {
+        "url": "https://mirelleinspo.com/nail-feed/why-do-dip-powder-nails-crack-instead-of-chip",
+        "anchor_text": "how dip powder cracks instead of chipping",
+        "placement_section": "It's not bad luck: the real cause of a center crack — comparing dip's brittleness-driven cracking to acrylic's structural center-cracking, per the Bucket Explorer's assigned comparison context",
+        "link_type": "nailfeed-sibling"
+      },
+      {
+        "url": "https://www.deenterprises.com/blog/the-secret-to-a-slim-strong-apex-no-more-bulky-nails/",
+        "anchor_text": "a nail technician's step-by-step guide to building a proper apex",
+        "placement_section": "What an apex is and why a flat nail always splits here — confirmed accessible authority source with detailed apex-placement technique",
+        "link_type": "external"
+      },
+      {
+        "url": "https://belabeautycollege.com/blogs/blog/how-to-fix-a-broken-acrylic-nail-without-replacing-it",
+        "anchor_text": "a nail school's guide to fixing a broken acrylic nail at home",
+        "placement_section": "Can you fix a cracked acrylic yourself, or does it need a rebuild — confirmed accessible source covering the teabag/glue home-repair method and when it's not enough",
+        "link_type": "external"
+      }
+    ]
+  },
+
+  "section_9_topical_map": {
+    "post_gen_instruction": "Omit entirely from frontmatter if this section is empty/absent — never write topic as null or empty string.",
+    "topic": null,
+    "parentPillar": null,
+    "relatedClusters": [
+      "why-do-gel-nails-crack-at-the-tips-but-not-the-middle",
+      "why-do-dip-powder-nails-crack-instead-of-chip"
+    ],
+    "primaryKeyword": "acrylic nails cracking in the middle",
+    "secondaryKeywords": [
+      "acrylic nail apex",
+      "vertical crack acrylic nail",
+      "fix cracked acrylic nail at home"
+    ],
+    "topicalBoundary": null
+  },
+
+  "section_10_voice_tone": {
+    "post_gen_instruction": "Layer this on top of the fixed editorial voice mandate already in the Post Gen Agent prompt — never a departure from British English, banned vocabulary, or rhythm rules, just register within that frame.",
+    "recommended_voice": "Sharp and direct",
+    "tone_characteristics": [
+      "Validates the frustration immediately rather than easing into it, matching the negative sentiment_read",
+      "Confident and matter-of-fact when naming the structural cause, matching Trigger 2's 'state the problem sharply' framing",
+      "Avoids over-technical jargon dumps — explains apex/stress point in plain terms first, technical name second",
+      "No breathless excitement or trend-chasing tone, since this is a troubleshooting post, not a FOMO trend piece"
+    ],
+    "audience_match": "A reader who just noticed a fresh crack wants their frustration acknowledged fast and the real cause named plainly, not a warm, meandering build-up — this matches the sharp, direct register phase_1 supports."
+  },
+
+  "section_11_execution_plan": {
+    "purpose": "Post Gen Agent reads this FIRST, before writing a word. Every value pre-calculated. Locked and executed exactly, no recalculation.",
+    "calculated_by": "Input Gen Agent, calculated last after all other sections are complete.",
+    "block_1_entity_and_keyword_execution": {
+      "named_entities_to_surface_early": "apex, stress point, flat nail / no-apex acrylic, center crack (vertical crack)",
+      "primary_keyword_if_any": "acrylic nails cracking in the middle",
+      "strong_tag_note": "Only apply <strong> to 'apex' or 'stress point' on first natural mention in H2-2 if it reads naturally — never forced."
+    },
+    "block_2_word_and_image_plan": {
+      "total_word_target": "1500, ±50",
+      "introduction": "140 words",
+      "conclusion": "100 words",
+      "h2_budgets": [
+        {"heading": "It's not bad luck: the real cause of a center crack", "budget": "260 words"},
+        {"heading": "What an apex is and why a flat nail always splits here", "budget": "300 words"},
+        {"heading": "The DIY mistakes that skip the apex without you realizing", "budget": "260 words"},
+        {"heading": "Can you fix a cracked acrylic yourself, or does it need a rebuild", "budget": "280 words"},
+        {"heading": "How to stop it happening on your next set", "budget": "180 words"}
+      ],
+      "image_assignments": [
+        {"image_number": 1, "place_after": "hero (frontmatter only)", "section_context": "close-up of a vertical center crack in an acrylic nail — inspirational nail design shot only", "path": "/images/nail-feed/why-does-acrylic-keep-cracking-down-the-center-of-the-nail/why-does-acrylic-keep-cracking-down-the-center-of-the-nail-hero.webp"},
+        {"image_number": 2, "place_after": "What an apex is and why a flat nail always splits here", "section_context": "profile/side-angle shot of a well-built acrylic nail showing a visible apex curve — inspirational nail design shot only", "path": "/images/nail-feed/why-does-acrylic-keep-cracking-down-the-center-of-the-nail/why-does-acrylic-keep-cracking-down-the-center-of-the-nail-apex.webp"},
+        {"image_number": 3, "place_after": "The DIY mistakes that skip the apex without you realizing", "section_context": "flat, glossy acrylic nail set with no visible curve, styled as an aspirational manicure shot despite illustrating the flat-nail issue", "path": "/images/nail-feed/why-does-acrylic-keep-cracking-down-the-center-of-the-nail/why-does-acrylic-keep-cracking-down-the-center-of-the-nail-flat.webp"},
+        {"image_number": 4, "place_after": "How to stop it happening on your next set", "section_context": "finished, healthy-looking acrylic set with strong natural apex curve, glossy finish, styled as final inspirational payoff shot", "path": "/images/nail-feed/why-does-acrylic-keep-cracking-down-the-center-of-the-nail/why-does-acrylic-keep-cracking-down-the-center-of-the-nail-final.webp"}
+      ]
+    },
+    "block_3_opening_technique_assignments": {
+      "rule": "No two consecutive sections same technique. Conclusion = Technique 1 or 3 only.",
+      "assignments": [
+        {"section": "Introduction", "technique": "Technique 2 — direct scene-setting (name the exact crack moment)"},
+        {"section": "It's not bad luck: the real cause of a center crack", "technique": "Technique 1 — direct claim opener"},
+        {"section": "What an apex is and why a flat nail always splits here", "technique": "Technique 3 — definition-led opener"},
+        {"section": "The DIY mistakes that skip the apex without you realizing", "technique": "Technique 1 — direct claim opener"},
+        {"section": "Can you fix a cracked acrylic yourself, or does it need a rebuild", "technique": "Technique 3 — definition-led opener"},
+        {"section": "How to stop it happening on your next set", "technique": "Technique 1 — direct claim opener"},
+        {"section": "Conclusion", "technique": "Technique 3 — definition-led opener"}
+      ]
+    },
+    "block_4_link_placements": {
+      "links": [
+        {"anchor_text": "why gel nails crack at the tips instead of the center", "full_url": "https://mirelleinspo.com/nail-feed/why-do-gel-nails-crack-at-the-tips-but-not-the-middle", "place_in_section": "It's not bad luck: the real cause of a center crack", "link_type": "nailfeed-sibling"},
+        {"anchor_text": "how dip powder cracks instead of chipping", "full_url": "https://mirelleinspo.com/nail-feed/why-do-dip-powder-nails-crack-instead-of-chip", "place_in_section": "It's not bad luck: the real cause of a center crack", "link_type": "nailfeed-sibling"},
+        {"anchor_text": "a nail technician's step-by-step guide to building a proper apex", "full_url": "https://www.deenterprises.com/blog/the-secret-to-a-slim-strong-apex-no-more-bulky-nails/", "place_in_section": "What an apex is and why a flat nail always splits here", "link_type": "external"},
+        {"anchor_text": "a nail school's guide to fixing a broken acrylic nail at home", "full_url": "https://belabeautycollege.com/blogs/blog/how-to-fix-a-broken-acrylic-nail-without-replacing-it", "place_in_section": "Can you fix a cracked acrylic yourself, or does it need a rebuild", "link_type": "external"}
+      ]
+    },
+    "block_5_active_constraints": {
+      "em_dash_banned": "confirmed active",
+      "british_english_active": "confirmed active",
+      "min_h2_reminder": "at least 3 H2s — hard technical requirement, needed for full widget placement including social CTA slot (this post has 5)",
+      "word_count_reminder": "1500 target, depth not padding",
+      "image_count_reminder": "4 total: 1 hero + 3 body, fixed — locked value, Post Gen Agent must not scale this up or down",
+      "hero_image_reminder": "frontmatter only, never in body; alt text and filename only from this file, visual concept comes from a separate downstream prompt; image path is /images/nail-feed/{slug}/{filename}.webp"
+    },
+    "block_6_widget_execution": {
+      "reaction_bar": "omit frontmatter entirely — default applies automatically",
+      "poll_or_quiz": "write poll frontmatter using poll_content from section_4 exactly as given — never write quiz for this post",
+      "reminder": "Poll and quiz are mutually exclusive at the template level — if the input file somehow specifies both, that is an input file error, use poll only and flag it, do not attempt to render both."
+    }
+  }
+}
