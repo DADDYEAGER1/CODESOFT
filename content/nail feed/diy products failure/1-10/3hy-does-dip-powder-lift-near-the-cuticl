@@ -1,0 +1,137 @@
+# NAIL FEED INPUT FILE — MODE A2
+
+## SECTION 1: FILE AUTHORITY
+THIS FILE IS THE SINGLE SOURCE OF TRUTH FOR THE NAIL FEED POST GEN AGENT. All values in POST_CONSTANTS are hardcoded. All entities, sentiment/trend rationale, emotion trigger, structure, and links defined here must be followed exactly.
+
+## SECTION 2: POST_CONSTANTS
+- **slug:** why-does-dip-powder-lift-near-the-cuticle
+- **canonical:** https://mirelleinspo.com/nail-feed/why-does-dip-powder-lift-near-the-cuticle
+- **word_count:** 1500 (±50)
+- **image_count:** 4 (1 hero + 3 body) — locked
+- **category:** DIY Product-Failure Problems
+- **publish_date:** 2026-08-29
+- **author:** jyoti-mirelle
+
+## SECTION 3: SENTIMENT AND ENTITY BRIEF
+- **sentiment_read:** negative — a real, specific, recurring frustration. Quora and brand-blog sources are remarkably consistent, which itself confirms this is a widely shared, well-understood problem rather than a rare edge case.
+- **the_specific_frustration_or_desire:** People describe the same pattern almost identically: a small gap or "ledge" opens up right at the cuticle line within days, dirt and moisture get trapped under it, and the set that was supposed to last three to four weeks starts looking ruined at the one spot they can't hide. One Quora thread even shows a user's dip lift progress into visible <cite index="6-1">onycholysis, nail lifting caused by over-filing, chemical irritation, pressure from thick dip layers, or moisture trapped under the product</cite> — the frustration escalates from cosmetic annoyance to genuine "is something wrong with my nail" concern.
+- **named_entities:** dip powder (SNS) manicure, cuticle-line lifting, onycholysis, oily nail beds, base coat/bonder flooding, nail dehydration/buffing prep
+- **trend_velocity:** sustained, high year-round interest. Dip powder itself is a rising 2026 category — one source frames it as <cite index="26-1">favoring "elevated simplicity, wearable statement colour, and long-lasting finishes that look salon-fresh without salon visits"</cite> as more people shift to at-home manicures. The lifting-at-cuticle complaint specifically is evergreen-warm: it's the top DIY troubleshooting search across brand blogs, Quora, and Pinterest with no seasonal spike, which fits a "problem that happens whenever someone tries dip at home" pattern rather than a trending-moment pattern.
+- **why_now_rationale:** As more people move dip powder from salon to DIY kit at home (a confirmed 2026 shift), more people are hitting this exact failure for the first time with no technician to blame or fix it — the DIY-boom is directly expanding the audience hitting this specific frustration right now.
+- **saturation_check:** Saturated on the "how to prevent it" angle — brand blogs (DipWell, Kiara Sky, Nailboo, Revel Nail) and Pinterest all cover prep-and-prevention almost identically (push cuticles, buff, dehydrate, avoid flooding the cuticle with base coat). Under-covered on the "why is this happening to ME right now, and what do I actually do about the lift I already have" angle — nearly every existing piece is pre-emptive prevention advice, not a validating explainer for someone staring at an already-lifted set. That gap is the differentiation angle for this post.
+
+## SECTION 4: ENGAGEMENT WIDGETS
+- **reaction_bar:** default (omit frontmatter — hardcoded Obsessed / Meh / Hard pass fallback applies)
+- **poll_or_quiz_selected:** neither
+- **selection_rationale:** Research surfaced one dominant, consistent explanation (prep/oil/cuticle-flooding) rather than a genuine either/or split, and no distinct branching outcomes (this isn't a "which look are you" or "which product type" topic) — forcing a poll or quiz here would invent a debate or branch structure that the research doesn't actually support.
+
+## SECTION 5: HOOK AND CTR
+- **selected_trigger:** Trigger 2 — Negative angle + solution
+- **trigger_rationale:** phase_1's sentiment_read is genuinely negative and highly specific (a real, common, escalating frustration confirmed across Quora and multiple brand sources) — this is the confirmed high-CTR pattern for a real, not manufactured, problem.
+- **title:** Why does dip powder always lift right at the cuticle?
+- **title_char_count:** 47
+- **excerpt:** That small gap at your cuticle isn't bad luck. Here's the real reason dip keeps lifting there first, and how to actually stop it.
+- **excerpt_char_count:** 129
+- **intro_hook_brief:** Open by naming the exact moment: you check your dip mani a few days in and there's already a tiny gap at the cuticle line. Validate that this is not a one-off mistake but the single most common dip failure point, then pivot straight into why it happens.
+- **hero_image_emotional_beat:** A close-up shot showing the precise moment/detail of dip powder visibly separated from the nail at the cuticle line — the specific "gap" the title and frustration are both about, not a generic finished-manicure shot.
+
+## SECTION 6: HERO IMAGE BRIEF
+- **imageAlt:** Close-up of dip powder nail with visible lifting gap at the cuticle line, showing separation between pink product and natural nail bed
+- **image_filename_brief:** dip-powder-lifting-cuticle-gap-closeup-nail-2026.webp
+- **tag_for_downstream_prompt:** For Google Discover hero image — high contrast, thumbnail-style, click-optimised, paired with title "Why does dip powder always lift right at the cuticle?" — the shot must show the actual lifting gap, not a flawless finished set.
+- **spec_reminder:** 1200x675, 16:9 — hard Discover technical gate, non-negotiable.
+
+## SECTION 7: CONTENT STRUCTURE
+- **h1 (working reference):** Why Does Dip Powder Always Lift Right At The Cuticle?
+- **h2_structure:**
+  1. The real reason dip lifts at the cuticle first (not everywhere else)
+  2. Oily nail beds: the prep problem most people don't know they have
+  3. How base coat flooding creates the gap without you noticing
+  4. What to do if it's already lifting (not just how to prevent it)
+  5. The prep routine that actually stops cuticle-line lifting
+- **word_budget:**
+  - Intro: 150 words
+  - H2-1: 260 words
+  - H2-2: 260 words
+  - H2-3: 260 words
+  - H2-4: 280 words
+  - H2-5: 200 words
+  - Conclusion: 100 words
+  - (Total: 1500)
+
+## SECTION 8: LINKS
+| URL | Anchor Text | Placement | Link Type |
+|---|---|---|---|
+| [Bucket Explorer JSON title] "Why do acrylic nails lift at the edges after one week" | how acrylic's edge-lift pattern differs | Intro, comparison aside | nailfeed-sibling |
+| [Bucket Explorer JSON title] "Why does polygel keep lifting off the nail bed" | why polygel lifts across the full nail instead of just the cuticle | H2-1, comparison aside | nailfeed-sibling |
+| https://www.dipwell.co/blogs/the-down-low-on-lifting-and-how-to-stop-it-from-ruining-your-dip-mani | DipWell's own breakdown of oily nail bed prep | H2-2 | external |
+| https://www.health.harvard.edu/a_to_z/onycholysis-a-to-z | how nail lifting (onycholysis) is medically defined | H2-4 | external |
+
+*Note: internal_links consumed verbatim from Bucket Explorer JSON — links_to: "Why do acrylic nails lift at the edges after one week" (anchor_context: comparing dip's cuticle-lift pattern to acrylic's edge-lift pattern); linked_from: "Why does polygel keep lifting off the nail bed" (anchor_context: contrasting polygel's full-lift pattern with dip's localized cuticle lift). Both used above as natural comparison-anchor placements per anchor_context guidance.*
+
+## SECTION 9: TOPICAL MAP
+- **topic:** absent (no confirmed /blog pillar relationship supplied)
+- **parentPillar:** absent
+- **relatedClusters:** why-do-acrylic-nails-lift-at-the-edges-after-one-week, why-does-polygel-keep-lifting-off-the-nail-bed
+- **primaryKeyword:** dip powder lifting at cuticle
+- **secondaryKeywords:** dip powder lifting, dip nails lifting cuticle, why does dip powder lift, dip powder prep mistakes
+- **topicalBoundary:** absent (topic not set)
+
+## SECTION 10: VOICE AND TONE
+- **recommended_voice:** Sharp and direct, validating-first
+- **tone_characteristics:** Names the frustration plainly before explaining it (no burying the "why" under generic prep tips); confident and slightly blunt on the mechanism (oil, flooding, gaps) since the research shows real technical clarity exists; warmer and more reassuring in the "what to do now" section, since this reader may be worried something is wrong beyond cosmetic; avoids chirpy/breathless energy since this is a problem post, not a discovery post.
+- **audience_match:** This reader is mid-frustration, possibly a little worried, and tired of prevention-only advice that assumes they haven't already made the mistake — a direct, validating, solution-forward voice matches exactly where they are emotionally right now.
+
+## SECTION 11: EXECUTION PLAN
+
+### Block 1: Entity and Keyword Execution
+- **named_entities_to_surface_early:** dip powder, cuticle lifting, onycholysis, oily nail beds — surface dip powder + cuticle lifting in the first 2 sentences
+- **primary_keyword_if_any:** dip powder lifting at cuticle — light confirmation only, use naturally in H1/intro, never forced
+- **strong_tag_note:** Applies only where "dip powder lifting" or "cuticle" appears naturally in intro — do not force a `<strong>` tag if it disrupts sentence flow
+
+### Block 2: Word and Image Plan
+- **total_word_target:** 1500, ±50
+- **introduction:** 150 words
+- **conclusion:** 100 words
+- **h2_budgets:**
+  - The real reason dip lifts at the cuticle first (not everywhere else): 260 words
+  - Oily nail beds: the prep problem most people don't know they have: 260 words
+  - How base coat flooding creates the gap without you noticing: 260 words
+  - What to do if it's already lifting (not just how to prevent it): 280 words
+  - The prep routine that actually stops cuticle-line lifting: 200 words
+- **image_assignments:**
+  1. {image_number: 1, place_after: "hero/frontmatter", section_context: "Close-up inspirational shot of clean, well-applied dip manicure with a precise cuticle line — the contrast case to the lifting problem", path: "/images/nail-feed/why-does-dip-powder-lift-near-the-cuticle/hero.webp"}
+  2. {image_number: 2, place_after: "H2-1: The real reason dip lifts at the cuticle first", section_context: "Inspirational nail design shot showing a fresh dip set with visible clean cuticle definition", path: "/images/nail-feed/why-does-dip-powder-lift-near-the-cuticle/image-2.webp"}
+  3. {image_number: 3, place_after: "H2-3: How base coat flooding creates the gap", section_context: "Inspirational nail design shot, neutral/nude dip tone, clean application", path: "/images/nail-feed/why-does-dip-powder-lift-near-the-cuticle/image-3.webp"}
+  4. {image_number: 4, place_after: "H2-5: The prep routine that actually stops cuticle-line lifting", section_context: "Inspirational finished dip manicure shot, well-buffed and sealed edges", path: "/images/nail-feed/why-does-dip-powder-lift-near-the-cuticle/image-4.webp"}
+
+### Block 3: Opening Technique Assignments
+*(No two consecutive sections same technique; Conclusion = Technique 1 or 3 only)*
+- Introduction: Technique 2 — direct scenario/moment opener (naming the exact gap-at-cuticle moment)
+- H2-1: Technique 1 — direct claim/answer opener
+- H2-2: Technique 3 — question opener
+- H2-3: Technique 1 — direct claim/answer opener
+- H2-4: Technique 2 — direct scenario/moment opener
+- H2-5: Technique 3 — question opener
+- Conclusion: Technique 1 — direct claim/answer opener
+
+### Block 4: Link Placements
+| Anchor Text | Full URL | Place In Section | Link Type |
+|---|---|---|---|
+| how acrylic's edge-lift pattern differs | [nailfeed-sibling: Why do acrylic nails lift at the edges after one week] | Intro | nailfeed-sibling |
+| why polygel lifts across the full nail instead of just the cuticle | [nailfeed-sibling: Why does polygel keep lifting off the nail bed] | H2-1 | nailfeed-sibling |
+| DipWell's own breakdown of oily nail bed prep | https://www.dipwell.co/blogs/the-down-low-on-lifting-and-how-to-stop-it-from-ruining-your-dip-mani | H2-2 | external |
+| how nail lifting (onycholysis) is medically defined | https://www.health.harvard.edu/a_to_z/onycholysis-a-to-z | H2-4 | external |
+
+### Block 5: Active Constraints
+- em_dash_banned: confirmed active
+- british_english_active: confirmed active
+- min_h2_reminder: 5 H2s present — clears the 3-H2 hard minimum
+- word_count_reminder: 1500 target, depth not padding
+- image_count_reminder: 4 total (1 hero + 3 body), fixed — locked value
+- hero_image_reminder: frontmatter only, never in body; alt text and filename only from this file; image path is /images/nail-feed/why-does-dip-powder-lift-near-the-cuticle/{filename}.webp
+
+### Block 6: Widget Execution
+- **reaction_bar:** omit frontmatter entirely (default applies)
+- **poll_or_quiz:** neither — omit both poll and quiz frontmatter entirely
+- **reminder:** Poll and quiz mutually exclusive at template level — not applicable here since neither is used
