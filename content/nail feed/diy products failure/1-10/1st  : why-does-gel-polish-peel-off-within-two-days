@@ -1,0 +1,141 @@
+# NAIL FEED INPUT FILE — MODE A2
+
+## SECTION 1: FILE AUTHORITY
+THIS FILE IS THE SINGLE SOURCE OF TRUTH FOR THE NAIL FEED POST GEN AGENT. All values in POST_CONSTANTS are hardcoded. All entities, sentiment/trend rationale, emotion trigger, structure, and links defined here must be followed exactly.
+
+## SECTION 2: POST_CONSTANTS
+- slug: `why-does-gel-polish-peel-off-within-two-days`
+- canonical: `https://mirelleinspo.com/nail-feed/why-does-gel-polish-peel-off-within-two-days`
+- word_count: 1500 (±50)
+- image_count: 4 (1 hero + 3 body) — locked
+- category: DIY Nail Problems
+- publish_date: 2026-08-29
+- author: `jyoti-mirelle`
+
+## SECTION 3: SENTIMENT & ENTITY BRIEF
+- **sentiment_read:** Negative — a real, specific frustration, not manufactured. Gel is marketed and expected to last 2–3 weeks; failing at day two feels like a broken promise, and the failure mode itself (polish lifting and tearing away a layer of the natural nail with it) reads as damage, not just disappointment.
+- **the_specific_frustration_or_desire:** People expect gel to be the "no-chip" upgrade over regular polish — the entire pitch is durability. When it peels in 48 hours, the reaction isn't just annoyance at wasted product/money, it's confusion ("did I do something wrong?") plus a secondary fear once they notice peeling pulls up a thin layer of the nail plate with it, which reads as active harm rather than cosmetic failure.
+- **named_entities:** gel polish, soak-off gel, base coat, LED/UV lamp curing, cuticle oil, oil/moisture residue on the nail plate, humidity and temperature exposure, nail dehydration/prep
+- **trend_velocity:** Sustained, evergreen — this is a constant, recurring DIY pain point rather than a seasonal spike, though it gets a mild seasonal bump in high-humidity months (confirmed via search: heat and humidity are repeatedly cited as direct causes of premature peeling and softened adhesion).
+- **why_now_rationale:** DIY gel-at-home kits remain a steady, high-volume purchase category, and "why is my gel already peeling" is a recurring real-world complaint independent of season — it's a durable content bet rather than a trend-chase.
+- **saturation_check:** Saturated at the generic "how to make gel last longer" level (most existing coverage is brand/product-first, written to sell removal kits or gel starter sets rather than explain the failure). Under-covered on the specific "why in 48 hours specifically" angle and the nail-damage consequence of peeling — that's this post's differentiation angle.
+
+## SECTION 4: ENGAGEMENT WIDGETS
+- **reaction_bar:** default (omit frontmatter — generic Obsessed/Meh/Hard pass fits; nothing about this topic earns sharper custom wording)
+- **poll_or_quiz_selected:** neither
+- **selection_rationale:** Research surfaced consistent causes (oil residue, under-curing, humidity, thin/thick application) rather than a genuine either/or debate or a set of distinct branching outcomes — there's no real split in reader opinion or multiple-distinct-result situation to build a poll or quiz around. Forcing one here would be generic filler, not a research-backed angle.
+
+## SECTION 5: HOOK & CTR
+**Read before writing title, excerpt, intro, or first H2.**
+
+- **selected_trigger:** Trigger 2 — Negative angle + solution. phase_1's sentiment_read is genuinely negative/frustrated (a specific, common, recurring problem), so the post should state the failure sharply before offering the fix.
+- **trigger_rationale:** The frustration is real and specific (gel promised to last weeks, failing in two days, and pulling up the nail plate when it lifts) — this is exactly the confirmed high-CTR negative-angle pattern, not a manufactured problem.
+- **title:** `Gel polish keeps peeling after 2 days — here's the real reason`
+- **title_char_count:** 60
+- **excerpt:** `You did everything right and it still peeled in 48 hours. Here's the hidden prep step most DIY manicures skip, and how to fix it.`
+- **excerpt_char_count:** 130
+- **intro_hook_brief:** Open by naming the exact letdown — a gel manicure that's supposed to survive weeks failing before the weekend's over — then pivot immediately to "it's almost never the polish's fault," setting up the real-cause reveal.
+- **hero_image_emotional_beat:** The exact moment of a gel tip lifting/peeling away from the nail bed, catching the light so the peeled edge is visually obvious — the specific "it's already coming up" moment the title names.
+
+## SECTION 6: HERO IMAGE BRIEF
+- **imageAlt:** `Gel polish lifting and peeling at the tip of a manicured nail just two days after application, close-up`
+- **image_filename_brief:** `gel-polish-peeling-tip-closeup-two-days-black-background-studio-2026.webp`
+- **tag_for_downstream_prompt:** For Google Discover hero image — high contrast, thumbnail-style, click-optimised, must pair with the title's "peeling after 2 days" moment exactly as named above.
+- **spec_reminder:** 1200x675, 16:9 — hard Discover technical gate, non-negotiable.
+
+## SECTION 7: CONTENT STRUCTURE
+- **h1 (working reference):** Why does gel polish peel off within two days
+- **h2_structure:**
+  1. It's (almost) never the polish's fault
+  2. The nail prep mistake that ruins adhesion before you even start
+  3. Why humidity and heat make peeling worse
+  4. Curing mistakes that quietly cause early lifting
+  5. What peeling actually does to your natural nail
+  6. How to make your next gel manicure actually last
+- **word_budget_per_section:**
+  - Intro: 140 words
+  - H2-1: 200 words
+  - H2-2: 260 words
+  - H2-3: 220 words
+  - H2-4: 240 words
+  - H2-5: 220 words
+  - H2-6: 220 words
+  - Conclusion: 100 words
+  - (Total: ~1600 → trim H2-2 and H2-4 by ~25 words each in drafting to hit 1500 ±50)
+
+## SECTION 8: LINKS
+| URL | Anchor Text | Placement | Link Type |
+|---|---|---|---|
+| [Bucket Explorer title: "Why is my gel polish still sticky after curing"] | why your gel might still be under-cured | H2-4 (curing mistakes) | nailfeed-sibling |
+| https://www.aol.com/lifestyle/why-shouldnt-peel-off-gel-110000418.html | tearing off a layer of your natural nail | H2-5 (what peeling does to your nail) | external |
+| https://www.aol.com/way-remove-gel-manicure-home-161600222.html | weakened nails and lifted, jagged edges over time | H2-5 (what peeling does to your nail) | external |
+
+Note: the internal link target "Why is my gel polish still sticky after curing" has not yet been assigned a live URL by the Bucket Explorer JSON (only title + anchor context were provided) — Post Gen Agent should resolve to that post's actual published URL at build time; do not fabricate one.
+
+## SECTION 9: TOPICAL MAP
+- topic: (omitted — no confirmed /blog pillar relationship)
+- parentPillar: (omitted)
+- relatedClusters: `why-is-my-gel-polish-still-sticky-after-curing`, `how-to-fix-lifted-gel-nails-without-removing-the-whole-set` (from Bucket Explorer JSON internal links)
+- primaryKeyword: gel polish peeling
+- secondaryKeywords: gel manicure lifting, gel nails peeling early, why does gel peel off
+- topicalBoundary: (omitted — topic not set)
+
+## SECTION 10: VOICE & TONE
+- **recommended_voice:** Sharp and direct
+- **tone_characteristics:** Validates the frustration upfront (don't minimize the "I did everything right" feeling); direct and confident in naming the real cause; slightly protective/warning tone in the nail-damage section; practical and reassuring by the fix section.
+- **audience_match:** The reader is frustrated and slightly self-doubting ("did I mess this up?") — a sharp, confident voice that names the real cause quickly respects that frustration rather than burying it in soft hedging.
+
+## SECTION 11: EXECUTION PLAN
+
+### Block 1: Entity & Keyword Execution
+- named_entities_to_surface_early: gel polish, soak-off gel, base coat, cuticle oil/oil residue, curing lamp
+- primary_keyword_if_any: gel polish peeling (light confirmation only)
+- strong_tag_note: only if "gel polish peeling" appears naturally in the first H2 — never forced
+
+### Block 2: Word & Image Plan
+- total_word_target: 1500, ±50
+- introduction: 140 words
+- conclusion: 100 words
+- h2_budgets:
+  - It's (almost) never the polish's fault — 200 words
+  - The nail prep mistake that ruins adhesion before you even start — 235 words
+  - Why humidity and heat make peeling worse — 220 words
+  - Curing mistakes that quietly cause early lifting — 215 words
+  - What peeling actually does to your natural nail — 220 words
+  - How to make your next gel manicure actually last — 220 words
+- image_assignments:
+  1. {image_number: 1, place_after: "intro", section_context: "hero — gel polish visibly lifting/peeling at the nail tip, inspirational/dramatic close-up only", path: "/images/nail-feed/why-does-gel-polish-peel-off-within-two-days/gel-polish-peeling-tip-closeup-two-days-black-background-studio-2026.webp"}
+  2. {image_number: 2, place_after: "H2-2 (nail prep mistake)", section_context: "clean, freshly prepped bare nail bed ready for polish — inspirational prep shot only", path: "/images/nail-feed/why-does-gel-polish-peel-off-within-two-days/[filename].webp"}
+  3. {image_number: 3, place_after: "H2-4 (curing mistakes)", section_context: "hand under LED/UV curing lamp — inspirational application shot only", path: "/images/nail-feed/why-does-gel-polish-peel-off-within-two-days/[filename].webp"}
+  4. {image_number: 4, place_after: "H2-6 (how to make it last)", section_context: "finished, flawless long-wear gel manicure — inspirational result shot only", path: "/images/nail-feed/why-does-gel-polish-peel-off-within-two-days/[filename].webp"}
+
+### Block 3: Opening Technique Assignments
+Rule: no two consecutive sections use the same technique. Conclusion = Technique 1 or 3 only.
+- Introduction: Technique 2 — Negative angle statement (name the exact letdown directly)
+- H2-1: Technique 1 — Direct claim/reveal ("it's almost never the polish")
+- H2-2: Technique 3 — Question opener
+- H2-3: Technique 1 — Direct claim
+- H2-4: Technique 3 — Question opener
+- H2-5: Technique 2 — Negative angle statement (damage framing)
+- H2-6: Technique 1 — Direct claim
+- Conclusion: Technique 1 — Direct claim/reassurance
+
+### Block 4: Link Placements
+| anchor_text | full_url | place_in_section | link_type |
+|---|---|---|---|
+| why your gel might still be under-cured | [resolve at build time from Bucket Explorer sibling: "Why is my gel polish still sticky after curing"] | H2-4 | nailfeed-sibling |
+| tearing off a layer of your natural nail | https://www.aol.com/lifestyle/why-shouldnt-peel-off-gel-110000418.html | H2-5 | external |
+| weakened nails and lifted, jagged edges over time | https://www.aol.com/way-remove-gel-manicure-home-161600222.html | H2-5 | external |
+
+### Block 5: Active Constraints
+- em_dash_banned: confirmed active
+- british_english_active: confirmed active
+- min_h2_reminder: 6 H2s present — clears the 3-minimum requirement
+- word_count_reminder: 1500 target, depth not padding
+- image_count_reminder: 4 total (1 hero + 3 body), fixed — do not scale
+- hero_image_reminder: frontmatter only, never in body; alt text and filename only, visual concept comes from separate downstream prompt; path is /images/nail-feed/{slug}/{filename}.webp
+
+### Block 6: Widget Execution
+- reaction_bar: omit frontmatter entirely (default applies automatically)
+- poll_or_quiz: neither — omit both poll and quiz frontmatter entirely
+- reminder: mutually exclusive at template level — not applicable here since neither is used
