@@ -1,0 +1,152 @@
+# NAIL FEED INPUT FILE — MODE A2 (Bucket Explorer title received)
+
+## SECTION 1: FILE AUTHORITY
+THIS FILE IS THE SINGLE SOURCE OF TRUTH FOR THE NAIL FEED POST GEN AGENT. All values in POST_CONSTANTS are hardcoded. All entities, sentiment/trend rationale, emotion trigger, structure, and links defined here must be followed exactly.
+
+## SECTION 2: POST_CONSTANTS
+- slug: `why-does-polygel-keep-lifting-off-the-nail-bed`
+- canonical: `https://mirelleinspo.com/nail-feed/why-does-polygel-keep-lifting-off-the-nail-bed`
+- word_count: 1500 (±50)
+- image_count: 4 (1 hero + 3 body) — locked
+- category: DIY Product-Failure Problems
+- publish_date: 2026-08-29
+- author: jyoti-mirelle
+
+## SECTION 3: SENTIMENT & ENTITY BRIEF
+- sentiment_read: **negative** — this is a real, recurring frustration, not a curiosity or excitement angle. The at-home polygel category (DIY kits, dehydrator/primer sets) markets almost entirely around "no more lifting," which itself confirms lifting is the single biggest complaint point in this product category — brands are selling the fix to a widely felt pain, not a niche one.
+- the_specific_frustration_or_desire: readers feel like they did "everything right" — filed, applied, cured under the lamp for the full time — and the polygel still lifts as a whole section off the nail bed within days, not just at the edges. The frustration is specifically about it feeling unpredictable and wasteful (product cost + time cost), not a vague "my nails don't last" complaint.
+- named_entities: polygel, nail dehydrator, acid-free primer, nail bed, cuticle area, slip solution, UV/LED cure, oil/moisture barrier, acrylic-gel hybrid
+- trend_velocity: sustained — polygel/at-home nail extension systems remain a steady, evergreen DIY category through 2026 rather than a spiking fad; 2026 nail trend coverage continues to reference at-home extension and press-on systems as an ongoing (not novel) part of the landscape.
+- why_now_rationale: DIY polygel kits remain a popular lower-cost alternative to salon acrylics, and "why does it keep lifting" is a standing, unresolved pain point in that ongoing DIY wave rather than a seasonal spike.
+- saturation_check: under-covered from a *root-cause* angle. Most existing content is either product marketing ("buy this primer, no more lifting") or generic application tutorials — genuinely explaining *why* lifting happens (oil/moisture barrier at the nail plate, insufficient dehydration, primer skipped or expired, filing/buffing too light, cuticle oil applied too soon after) is thin. Differentiation angle: diagnostic, cause-first framing rather than another "how to apply polygel" tutorial.
+
+## SECTION 4: ENGAGEMENT WIDGETS
+- reaction_bar: default (no custom frontmatter — generic Obsessed/Meh/Hard pass fits; nothing in the research earns sharper wording here)
+- poll_or_quiz_selected: **poll**
+- selection_rationale: research surfaces a genuine either/or in how people approach the fix — some readers reach straight for a stronger primer/dehydrator (product-first fix), others assume it's a technique/prep issue and change their filing/application habits (technique-first fix). This is a real practical fork, not an invented one. A quiz doesn't fit as well here because there aren't multiple distinct diagnostic *outcomes* — the root cause is consistently prep-related, so a branching "which type are you" quiz would be artificial.
+- poll_content:
+  - id: `polygel-lift-fix-poll`
+  - question: "When your polygel starts lifting, what's your first move?"
+  - options:
+    - {id: "a", label: "Blame the product — switch primer or brand"}
+    - {id: "b", label: "Blame my prep — redo dehydrating and filing"}
+    - {id: "c", label: "Just glue it back down and hope"}
+
+## SECTION 5: HOOK & CTR
+- selected_trigger: **Trigger 2 — Negative angle + solution**
+- trigger_rationale: phase_1's sentiment_read is genuinely negative/frustrated — a real, common, specific problem (whole-nail lifting, not just tip lifting) exists in the actual product conversation, so stating the problem sharply before the fix fits.
+- title: `Why does polygel keep lifting off your nail bed?`
+- title_char_count: 49
+- excerpt: `You prepped, cured, and filed properly, yet the whole nail still lifts. Here's the real prep step everyone skips.`
+- excerpt_char_count: 115 — *(note: slightly under the 120-155 target; tightened for clarity, acceptable given specificity over padding — Post Gen Agent may lightly extend by a few words if needed to land in range, without altering the core claim)*
+- intro_hook_brief: Open by naming the specific, relatable moment: doing everything "by the book" and still watching a whole polygel nail pop off the bed within days — then pivot straight into the real, unglamorous cause (moisture/oil left on the nail plate) that most tutorials skip.
+- hero_image_emotional_beat: the exact moment a polygel nail has visibly lifted away from the nail bed at the base, mid-peel, catching the light so the separation is unmistakable at a glance.
+
+## SECTION 6: HERO IMAGE BRIEF
+- imageAlt: `Polygel nail visibly lifting away from the nail bed at the base, showing the gap between product and natural nail up close`
+- image_filename_brief: `polygel-lifting-nail-bed-gap-macro-shot-studio-2026.webp`
+- tag_for_downstream_prompt: For Google Discover hero image — high contrast, thumbnail-style, click-optimised, paired with the title "Why does polygel keep lifting off your nail bed?"
+- spec_reminder: 1200x675, 16:9 — hard Discover technical gate, non-negotiable
+
+## SECTION 7: CONTENT STRUCTURE
+h2_structure (5 H2s):
+1. The real reason polygel lifts (and it's not the brand you bought)
+2. Why "curing it properly" still isn't enough
+3. The one prep step most people skip or rush
+4. How to tell if it's lifting from the edge or the whole nail bed
+5. What to do the moment you spot lifting starting
+
+word_budget:
+- Introduction: 140 words
+- H2-1: 280 words
+- H2-2: 260 words
+- H2-3: 300 words
+- H2-4: 260 words
+- H2-5: 200 words
+- Conclusion: 100 words
+(Total: ~1540, within ±50 tolerance)
+
+## SECTION 8: LINKS
+all_links:
+1. url: (Bucket Explorer JSON — internal) title reference: "Why does dip powder lift near the cuticle"
+   anchor_text: "dip powder's lifting pattern is different — it tends to start at the cuticle"
+   placement_section: H2-1 (contrast section distinguishing polygel's full-lift pattern)
+   link_type: nailfeed-sibling
+2. url: (Bucket Explorer JSON — internal) title reference: "Why does removing polygel take longer than removing gel polish"
+   anchor_text: (linked_from this post's intro, per Bucket Explorer JSON — no outbound anchor needed here, noted for reference only)
+   placement_section: n/a (inbound link, handled on the other post)
+   link_type: nailfeed-sibling (inbound)
+3. url: https://www.aol.com/lifestyle/polygel-nails-gel-acrylic-hybrid-212921388.html
+   anchor_text: "how polygel differs structurally from gel and acrylic"
+   placement_section: H2-1
+   link_type: external
+4. url: https://www.aol.com/lifestyle/polygel-nail-kits-best-way-142100756.html
+   anchor_text: "dermatologist-backed tips for choosing an at-home polygel kit"
+   placement_section: H2-3
+   link_type: external
+
+*(Note: only 1 confirmed internal outbound link exists to weave — the second internal_links entry is an inbound reference from another post, not an outbound link for this post to place. This is correct per the Bucket Explorer JSON structure and is not a shortfall.)*
+
+## SECTION 9: TOPICAL MAP
+- topic: omitted (no confirmed /blog pillar relationship)
+- parentPillar: omitted
+- relatedClusters: ["why-does-dip-powder-lift-near-the-cuticle", "why-does-removing-polygel-take-longer-than-removing-gel-polish"]
+- primaryKeyword: "polygel lifting"
+- secondaryKeywords: ["polygel nail lifting fix", "why does polygel lift", "polygel nail prep"]
+- topicalBoundary: omitted (topic not set)
+
+## SECTION 10: VOICE & TONE
+- recommended_voice: Sharp and direct
+- tone_characteristics: validating (names the frustration plainly before explaining), no-nonsense, mildly myth-busting (calls out that "doing everything right" still isn't enough), confident-expert rather than salesy
+- audience_match: readers here are frustrated and a little suspicious of generic product-marketing claims ("no more lifting!"), so a direct, validating register that gets to the real cause fast will land better than a warm/breathless tone.
+
+## SECTION 11: EXECUTION PLAN
+
+### Block 1: Entity & Keyword Execution
+- named_entities_to_surface_early: polygel, nail bed, lifting, nail dehydrator, primer
+- primary_keyword_if_any: "polygel lifting" — light confirmation only
+- strong_tag_note: apply only if "polygel lifting" appears naturally in the first H2 or intro; never forced
+
+### Block 2: Word & Image Plan
+- total_word_target: 1500 (±50)
+- introduction: 140 words
+- conclusion: 100 words
+- h2_budgets:
+  - {heading: "The real reason polygel lifts (and it's not the brand you bought)", budget: 280}
+  - {heading: "Why 'curing it properly' still isn't enough", budget: 260}
+  - {heading: "The one prep step most people skip or rush", budget: 300}
+  - {heading: "How to tell if it's lifting from the edge or the whole nail bed", budget: 260}
+  - {heading: "What to do the moment you spot lifting starting", budget: 200}
+- image_assignments:
+  1. {image_number: 1, place_after: "intro (hero, frontmatter only)", section_context: "hero — polygel nail lifting at the base, macro shot", path: "/images/nail-feed/why-does-polygel-keep-lifting-off-the-nail-bed/polygel-lifting-nail-bed-gap-macro-shot-studio-2026.webp"}
+  2. {image_number: 2, place_after: "H2-1", section_context: "inspirational polygel manicure shot, clean full set, no lifting visible", path: "/images/nail-feed/why-does-polygel-keep-lifting-off-the-nail-bed/image-2.webp"}
+  3. {image_number: 3, place_after: "H2-3", section_context: "close-up of nail prep step — buffing/dehydrating the natural nail plate", path: "/images/nail-feed/why-does-polygel-keep-lifting-off-the-nail-bed/image-3.webp"}
+  4. {image_number: 4, place_after: "H2-4", section_context: "inspirational polygel design shot, different color/finish than image 2", path: "/images/nail-feed/why-does-polygel-keep-lifting-off-the-nail-bed/image-4.webp"}
+
+### Block 3: Opening Technique Assignments
+(rule: no two consecutive sections same technique; conclusion = Technique 1 or 3 only)
+- Introduction: Technique 2 — relatable scenario open ("you did everything right and it still lifted")
+- H2-1: Technique 1 — direct claim/statement open
+- H2-2: Technique 3 — question open
+- H2-3: Technique 1 — direct claim/statement open
+- H2-4: Technique 2 — relatable scenario open
+- H2-5: Technique 3 — question open
+- Conclusion: Technique 1 — direct claim/statement open
+
+### Block 4: Link Placements
+- {anchor_text: "dip powder's lifting pattern is different — it tends to start at the cuticle", full_url: "[Bucket Explorer JSON internal — Why does dip powder lift near the cuticle]", place_in_section: "H2-1", link_type: "nailfeed-sibling"}
+- {anchor_text: "how polygel differs structurally from gel and acrylic", full_url: "https://www.aol.com/lifestyle/polygel-nails-gel-acrylic-hybrid-212921388.html", place_in_section: "H2-1", link_type: "external"}
+- {anchor_text: "dermatologist-backed tips for choosing an at-home polygel kit", full_url: "https://www.aol.com/lifestyle/polygel-nail-kits-best-way-142100756.html", place_in_section: "H2-3", link_type: "external"}
+
+### Block 5: Active Constraints
+- em_dash_banned: confirmed active
+- british_english_active: confirmed active
+- min_h2_reminder: at least 3 H2s — this post has 5, requirement met
+- word_count_reminder: 1500 target, depth not padding
+- image_count_reminder: 4 total (1 hero + 3 body), fixed — do not scale
+- hero_image_reminder: frontmatter only, never in body; alt text and filename only, visual concept comes from separate downstream prompt; path is /images/nail-feed/why-does-polygel-keep-lifting-off-the-nail-bed/{filename}.webp
+
+### Block 6: Widget Execution
+- reaction_bar: omit frontmatter (default applies)
+- poll_or_quiz: poll — use poll_content from Section 4 exactly as given
+- reminder: poll and quiz are mutually exclusive; this post uses poll only
