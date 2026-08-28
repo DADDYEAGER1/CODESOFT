@@ -1,0 +1,261 @@
+SECTION 1 — FILE AUTHORITY
+THIS FILE IS THE SINGLE SOURCE OF TRUTH FOR THE NAIL FEED POST GEN AGENT.
+All values in POST_CONSTANTS are hardcoded. All entities, sentiment/trend rationale,
+emotion trigger, structure, and links defined here must be followed exactly.
+
+SECTION 2 — POST_CONSTANTS
+slug: why-do-acrylic-nails-lift-at-the-edges-after-one-week
+canonical: https://mirelleinspo.com/nail-feed/why-do-acrylic-nails-lift-at-the-edges-after-one-week
+word_count: 1500 (±50)
+image_count: 4 (1 hero + 3 body) — locked
+category: Nail Problems & Fixes
+publish_date: 2026-08-29
+author: jyoti-mirelle
+
+SECTION 3 — SENTIMENT AND ENTITY BRIEF
+sentiment_read: negative — a real, specific, recurring frustration, not manufactured.
+Beginners and DIYers describe this almost verbatim as "a frustrating issue" that
+happens repeatedly "especially after contact with water or doing house chores,"
+paired with genuine confusion ("what am I doing wrong").
+
+the_specific_frustration_or_desire: "I prep and prime my nails properly and it still
+happens" — the frustration isn't ignorance, it's doing what they believe is right and
+still watching edges pop up within days. A secondary, sharper thread: most people don't
+know that lifting in week one is categorically different from lifting at week three —
+they're treating a technique failure like normal wear and blaming themselves for
+"bad luck" instead of a fixable cause.
+
+named_entities: acrylic nails, free edge, sidewalls, cuticle area, liquid-to-powder
+ratio, capping, apex placement, nail dehydrator, primer, lifting (as distinct from
+normal growth-out)
+
+trend_velocity: seasonal-cyclical / evergreen — this is a sustained, recurring DIY
+pain point (confirmed via standing Pinterest content categories like "Acrylic Nails
+Lifting" and repeated Quora threads across multiple years), not a spiking news trend.
+Consistent with this being a Product-Failure/problem bucket rather than a style-trend
+bucket — warmth here means "always being searched," not "currently spiking."
+
+why_now_rationale: Acrylic nails are having a strong, sustained 2026 (broad search
+interest around acrylics and nail art is elevated per seasonal beauty trend reports),
+which means more people — including first-time DIYers — are attempting acrylics at
+home right now and hitting this exact wall within the first week.
+
+saturation_check: saturated. Several dedicated posts already rank for "why are my
+acrylic nails lifting" (Huesthetic, TheBeautyFoodie, NAGAIA, Kirsty Meakin all cover
+general causes/fixes). Differentiation angle: nearly all existing coverage treats
+lifting as one undifferentiated problem. The sharpest, most specific and consistently
+repeated distinction across expert sources — lifting inside the first week is a
+technique/prep failure, while lifting at 3-4 weeks is normal wear needing a fill —
+is stated but never used as the organizing structure. This post leads with that
+diagnostic split as its spine, rather than a generic causes-then-fixes list.
+
+SECTION 4 — ENGAGEMENT WIDGETS
+reaction_bar: default (omit reaction frontmatter)
+
+poll_or_quiz_selected: quiz
+selection_rationale: Research shows a genuine branching diagnostic need, not a
+binary debate — readers arrive not knowing whether their week-one lifting points to
+a prep issue, a product-ratio issue, or a structural (apex/capping) issue, and expert
+sources consistently sort causes into these same 3 distinct buckets. This is a
+recommendation/diagnostic quiz fit, not a poll fit — there's no real either/or split
+in the research, just genuine uncertainty about which of several causes applies.
+
+quiz_content:
+{
+  id: "acrylic-lifting-diagnostic",
+  title: "Why is your acrylic actually lifting?",
+  questions: [
+    {
+      id: "q1",
+      question: "Where is the lifting happening?",
+      options: [
+        {id: "a", label: "Right at the cuticle", weights: {prep: 2}},
+        {id: "b", label: "Along the sidewalls", weights: {ratio: 2}},
+        {id: "c", label: "At the very tip / free edge", weights: {structure: 2}}
+      ]
+    },
+    {
+      id: "q2",
+      question: "How soon after application did it start?",
+      options: [
+        {id: "a", label: "Within the first week", weights: {prep: 1, ratio: 1, structure: 1}},
+        {id: "b", label: "Around week 3-4", weights: {normal: 3}}
+      ]
+    },
+    {
+      id: "q3",
+      question: "What does your daily routine involve?",
+      options: [
+        {id: "a", label: "Hands in water a lot (dishes, cleaning, washing)", weights: {prep: 2}},
+        {id: "b", label: "I use my nails as tools (typing, opening things)", weights: {structure: 2}},
+        {id: "c", label: "Pretty low-impact day to day", weights: {ratio: 1}}
+      ]
+    }
+  ],
+  results: [
+    {id: "prep", title: "It's a prep issue", description: "Lifting at the cuticle plus water exposure points to skin contact or a dehydration step that got skipped or rushed."},
+    {id: "ratio", title: "It's a product ratio issue", description: "Sidewall lifting usually traces back to the liquid-to-powder ratio being slightly off during application."},
+    {id: "structure", title: "It's a structural issue", description: "Tip lifting combined with daily nail use points to apex placement or an uncapped free edge, not prep."},
+    {id: "normal", title: "It's just normal wear", description: "Lifting that shows up around week 3-4 isn't a mistake — it's your nail growing out and asking for a fill."}
+  ]
+}
+
+SECTION 5 — HOOK AND CTR
+selected_trigger: Trigger 2 — Negative-angle + solution
+trigger_rationale: phase_1 confirmed a genuine, specific, recurring frustration
+(doing prep "correctly" and still lifting within days) — this is a confirmed
+high-CTR pattern for Discover, and it fits the real conversation rather than
+being reflexively chosen.
+
+title: "Why acrylic nails lift at the edges after just one week"
+title_char_count: 55
+
+excerpt: "If your acrylics are already lifting and you followed every prep step, the real cause is one of three things — here's how to tell which."
+excerpt_char_count: 149
+
+intro_hook_brief: Open by naming the exact frustration — you did everything right
+and it's still lifting — then immediately promise the diagnostic split (week-one
+lifting vs. normal wear) as the thing nobody explains clearly.
+
+hero_image_emotional_beat: A close-up of an acrylic nail with a visible lifted
+edge/gap at the tip against a clean, high-contrast background — the specific
+"caught in the act" moment the title names, not a generic finished-manicure shot.
+
+SECTION 6 — HERO IMAGE BRIEF
+imageAlt: "Close-up of acrylic nail with visible lifted edge and gap at the free edge tip against a plain white studio background, one week wear"
+(123 characters)
+
+image_filename_brief: acrylic-nail-lifted-free-edge-closeup-studio-2026.webp
+(60 characters incl. extension)
+
+tag_for_downstream_prompt: For Google Discover hero image — high contrast,
+thumbnail-style, click-optimised, paired with title "Why acrylic nails lift at
+the edges after just one week."
+
+spec_reminder: 1200x675, 16:9 — hard Discover technical gate.
+
+SECTION 7 — CONTENT STRUCTURE
+h1 (working reference): Why do acrylic nails lift at the edges after one week
+
+h2_structure:
+1. The difference between "lifting" and just growing out
+2. Cuticle lifting: it's almost always a prep problem
+3. Sidewall lifting: your liquid-to-powder ratio is off
+4. Free edge lifting: this one is structural, not skin-related
+5. What to actually do once you spot it
+
+word_budget:
+- Intro: 150 words
+- H2-1: 220 words
+- H2-2: 260 words
+- H2-3: 260 words
+- H2-4: 260 words
+- H2-5: 240 words
+- Conclusion: 110 words
+(Total: 1500)
+
+SECTION 8 — LINKS
+all_links:
+[
+  {
+    url: "[Bucket Explorer JSON — internal, verbatim] /nail-feed/is-it-safe-to-glue-down-a-lifted-acrylic-nail-yourself",
+    anchor_text: "whether it's actually safe to glue a lifted nail back down yourself",
+    placement_section: "H2-5 (What to actually do once you spot it) — this is the natural next-step post once a reader has identified their lifting is happening",
+    link_type: "nailfeed-sibling"
+  },
+  {
+    url: "[Bucket Explorer JSON — internal, verbatim] /nail-feed/why-does-dip-powder-lift-near-the-cuticle",
+    anchor_text: "dip powder has its own, different cuticle-lifting pattern",
+    placement_section: "H2-2 (Cuticle lifting) — natural comparison point when discussing cuticle-area lifting specifically",
+    link_type: "nailfeed-sibling"
+  },
+  {
+    url: "https://www.nailsmag.com/598592/why-am-i-having-lifting-problems-with-my-acrylic-applications",
+    anchor_text: "a professional nail tech's breakdown of where lifting starts and why",
+    placement_section: "H2-1 (The difference between lifting and growing out) — supports the diagnostic framing with trade-authority backing",
+    link_type: "external"
+  },
+  {
+    url: "https://www.nailsmag.com/599220/what-causes-the-natural-nail-to-separate-from-the-acrylic-at-the-free-edge",
+    anchor_text: "why the natural nail separates from acrylic specifically at the free edge",
+    placement_section: "H2-4 (Free edge lifting) — directly supports the structural/free-edge section",
+    link_type: "external"
+  }
+]
+
+NOTE: internal_links above are consumed verbatim from the Bucket Explorer JSON
+(title + anchor_context only — no URL was present in the JSON, so the slug-based
+canonical pattern from section_2 was applied to construct the path; this is
+formatting, not re-derivation of the link decision itself).
+
+SECTION 9 — TOPICAL MAP
+topic: omitted (no /blog pillar relationship supplied)
+parentPillar: omitted
+relatedClusters: 
+  - is-it-safe-to-glue-down-a-lifted-acrylic-nail-yourself
+  - why-does-dip-powder-lift-near-the-cuticle
+primaryKeyword: acrylic nails lifting
+secondaryKeywords: acrylic nail lifting at edges, why do acrylic nails lift, acrylic nail free edge lifting
+topicalBoundary: omitted (topic not set)
+
+SECTION 10 — VOICE & TONE
+recommended_voice: Sharp and direct
+tone_characteristics:
+  - Validating, not condescending — acknowledges the reader likely did prep "correctly" per instructions, since that's the actual sentiment_read finding
+  - Diagnostic and confident — states causes plainly, mirrors the negative-angle trigger's "state the problem sharply before the fix" pattern
+  - No fluff or padding language — matches the sharpness of the frustration itself
+audience_match: A reader who followed the steps and is still lifting wants to be
+told clearly what's actually wrong, not soothed generically — this voice matches
+that specific emotional state (frustrated but wanting a real answer, per phase_1).
+
+SECTION 11 — EXECUTION PLAN
+
+Block 1 — Entity & Keyword Execution
+named_entities_to_surface_early: acrylic nails, lifting, free edge, cuticle, sidewalls
+primary_keyword_if_any: acrylic nails lifting
+strong_tag_note: only if it appears naturally in intro or H2-1, never forced
+
+Block 2 — Word & Image Plan
+total_word_target: 1500 ±50
+introduction: 150 words
+conclusion: 110 words
+h2_budgets:
+  - {heading: "The difference between lifting and just growing out", budget: "220 words"}
+  - {heading: "Cuticle lifting: it's almost always a prep problem", budget: "260 words"}
+  - {heading: "Sidewall lifting: your liquid-to-powder ratio is off", budget: "260 words"}
+  - {heading: "Free edge lifting: this one is structural, not skin-related", budget: "260 words"}
+  - {heading: "What to actually do once you spot it", budget: "240 words"}
+image_assignments:
+  - {image_number: 1 (hero), place_after: "N/A - frontmatter only", section_context: "lifted free edge close-up, high contrast", path: "/images/nail-feed/why-do-acrylic-nails-lift-at-the-edges-after-one-week/acrylic-nail-lifted-free-edge-closeup-studio-2026.webp"}
+  - {image_number: 2, place_after: "H2-2 (Cuticle lifting)", section_context: "inspirational nail design shot showing clean, well-sealed cuticle-area acrylic application", path: "/images/nail-feed/why-do-acrylic-nails-lift-at-the-edges-after-one-week/img-2.webp"}
+  - {image_number: 3, place_after: "H2-3 (Sidewall lifting)", section_context: "inspirational nail design shot showing properly sealed sidewalls", path: "/images/nail-feed/why-do-acrylic-nails-lift-at-the-edges-after-one-week/img-3.webp"}
+  - {image_number: 4, place_after: "H2-4 (Free edge lifting)", section_context: "inspirational nail design shot showing a clean, well-capped free edge", path: "/images/nail-feed/why-do-acrylic-nails-lift-at-the-edges-after-one-week/img-4.webp"}
+
+Block 3 — Opening Technique Assignments
+rule: no two consecutive sections same technique; conclusion = Technique 1 or 3 only
+assignments:
+  - {section: "Introduction", technique: "Technique 2 — direct problem statement"}
+  - {section: "H2-1 heading", technique: "Technique 1 — question reframe"}
+  - {section: "Conclusion", technique: "Technique 3 — reassurance/next-step"}
+
+Block 4 — Link Placements
+links:
+  - {anchor_text: "whether it's actually safe to glue a lifted nail back down yourself", full_url: "/nail-feed/is-it-safe-to-glue-down-a-lifted-acrylic-nail-yourself", place_in_section: "H2-5", link_type: "nailfeed-sibling"}
+  - {anchor_text: "dip powder has its own, different cuticle-lifting pattern", full_url: "/nail-feed/why-does-dip-powder-lift-near-the-cuticle", place_in_section: "H2-2", link_type: "nailfeed-sibling"}
+  - {anchor_text: "a professional nail tech's breakdown of where lifting starts and why", full_url: "https://www.nailsmag.com/598592/why-am-i-having-lifting-problems-with-my-acrylic-applications", place_in_section: "H2-1", link_type: "external"}
+  - {anchor_text: "why the natural nail separates from acrylic specifically at the free edge", full_url: "https://www.nailsmag.com/599220/what-causes-the-natural-nail-to-separate-from-the-acrylic-at-the-free-edge", place_in_section: "H2-4", link_type: "external"}
+
+Block 5 — Active Constraints
+em_dash_banned: confirmed active
+british_english_active: confirmed active
+min_h2_reminder: at least 3 H2s — this file has 5
+word_count_reminder: 1500 target, depth not padding
+image_count_reminder: 4 total (1 hero + 3 body), locked
+hero_image_reminder: frontmatter only, never in body; alt text and filename only,
+visual concept from separate downstream prompt; path is
+/images/nail-feed/why-do-acrylic-nails-lift-at-the-edges-after-one-week/{filename}.webp
+
+Block 6 — Widget Execution
+reaction_bar: omit frontmatter entirely (default applies)
+poll_or_quiz: quiz — use quiz_content from section_4 exactly as given
+reminder: poll and quiz mutually exclusive — quiz only, no poll present
