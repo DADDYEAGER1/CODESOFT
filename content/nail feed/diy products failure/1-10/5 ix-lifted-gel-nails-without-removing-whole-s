@@ -1,0 +1,193 @@
+{
+  "section_1_file_authority": {
+    "statement": "THIS FILE IS THE SINGLE SOURCE OF TRUTH FOR THE NAIL FEED POST GEN AGENT. All values in POST_CONSTANTS are hardcoded. All entities, sentiment/trend rationale, emotion trigger, structure, and links defined here must be followed exactly."
+  },
+
+  "section_2_post_constants": {
+    "slug": "fix-lifted-gel-nails-without-removing-whole-set",
+    "canonical": "https://mirelleinspo.com/nail-feed/fix-lifted-gel-nails-without-removing-whole-set",
+    "word_count": 1500,
+    "image_count": 4,
+    "category": "Nail Care & Troubleshooting",
+    "publish_date": "2026-09-05",
+    "author": "jyoti-mirelle"
+  },
+
+  "section_3_sentiment_and_entity_brief": {
+    "post_gen_instruction": "This is the primary creative context for the whole post — the real emotional territory this post is built on, and what it's specifically about. Named entities should appear clearly and early in the post.",
+    "sentiment_read": "mixed, leaning negative — genuine frustration at the idea of redoing an entire fresh set over one lifted nail, layered with real anxiety about doing the fix wrong and making it worse",
+    "the_specific_frustration_or_desire": "readers with an otherwise-perfect set who have exactly one nail lifting want a targeted fix, not a full soak-off — but existing coverage only offers full-manicure removal guides, which feels like overkill and wastes a good set. Underneath that is a real fear: multiple sources confirm that once a nail lifts, water and bacteria can get underneath it, and peeling it off yourself can strip a layer of the natural nail with it. So the desire is 'fix just this one nail, safely, without wrecking my whole manicure or my actual nail.'",
+    "named_entities": "gel polish lifting, spot-fix (single-nail) repair, soak-off removal, nail bed separation, onycholysis-adjacent lifting risk, cuticle oil aftercare",
+    "trend_velocity": "sustained, evergreen — no seasonal or viral spike found; this is a constant, recurring DIY-failure problem, not a trending topic",
+    "why_now_rationale": "gel manicures remain a default beauty routine with in-between-appointment lifting a near-universal complaint; readers actively search for a partial fix because full removal guides dominate existing content and don't answer their actual question",
+    "saturation_check": "saturated on 'how to remove a full gel manicure at home' (Healthline, Cosmopolitan, Toms Guide, AOL/Fox all cover this angle in depth), but genuinely under-covered on the specific 'just one nail is lifting, how do I fix only that one without touching the rest of the set' angle — this is the clear differentiation angle for this post"
+  },
+
+  "section_4_engagement_widgets": {
+    "post_gen_instruction": "Reaction Bar: write the custom frontmatter reaction block if provided below, otherwise omit entirely (post falls back to the route's hardcoded default automatically — no frontmatter needed for the default case). Poll/Quiz: write frontmatter for whichever ONE was selected below, exactly as given, never both. If this section explicitly states neither was selected, omit both poll and quiz from frontmatter entirely — this is a correct, deliberate outcome, not a gap.",
+    "reaction_bar": "default",
+    "poll_or_quiz_selected": "poll",
+    "selection_rationale": "Research surfaced a real, specific either/or in the actual conversation: people are torn between 'just glue/fix the one lifted nail myself' versus 'this means the whole set has to come off.' That's a genuine split worth surfacing as a poll rather than a quiz — there aren't several distinct branching outcomes here, just one real tension.",
+    "poll_content": {
+      "id": "lifted-gel-nail-fix-or-redo",
+      "question": "One nail is lifting on your gel set. What's your move?",
+      "options": [
+        {"id": "fix-just-that-nail", "label": "Fix just that one nail and keep the rest"},
+        {"id": "redo-whole-set", "label": "Soak off the whole set to be safe"}
+      ]
+    }
+  },
+
+  "section_5_hook_and_ctr": {
+    "post_gen_instruction": "READ BEFORE WRITING TITLE, EXCERPT, INTRO, OR FIRST H2. Title and excerpt are hardcoded — use exactly. Title length range is 45-70 characters (Discover feed range, not a SERP-derived cap) — see phase_4.",
+    "selected_trigger": "Trigger 2 — Negative-angle plus solution",
+    "trigger_rationale": "Phase_1's sentiment_read is mixed-leaning-negative with a real, specific frustration (redoing a whole set over one nail) and a real fear (infection/damage risk) — this is the confirmed high-CTR pattern for a genuine, common problem, not a manufactured one.",
+    "title": "One nail lifting? Here's how to fix it without redoing the set",
+    "title_char_count": 63,
+    "excerpt": "One lifted nail doesn't mean your whole gel set is ruined. Here's the safe, targeted fix nail techs actually use to save the rest.",
+    "excerpt_char_count": 132,
+    "intro_hook_brief": "Open on the exact moment: you catch a nail on something, or notice one corner tenting up, and your gut reaction is 'do I have to take the whole thing off now?' Validate that instinct is wrong, then promise the targeted fix.",
+    "hero_image_emotional_beat": "A single lifted nail mid-fix (tweezers or a thin tool gently lifting the loose edge) against an otherwise-flawless, glossy gel set — the visual contrast of 'one problem nail, rest untouched' is the exact promise the title makes."
+  },
+
+  "section_6_hero_image_brief": {
+    "post_gen_instruction": "Use imageAlt exactly as given. image_filename_brief is a naming reference for the actual hero image file, which will be saved at /images/nail-feed/{slug}/{filename}.webp. This section does NOT include a visual concept/mood description — that lives in a separate downstream image-generation prompt the user runs independently.",
+    "imageAlt": "One lifted gel nail being carefully repaired with a thin tool while the rest of the glossy manicure set stays fully intact and unaffected",
+    "image_filename_brief": "single-lifted-gel-nail-spot-fix-glossy-manicure-set-2026.webp",
+    "tag_for_downstream_prompt": "For Google Discover hero image — high contrast, thumbnail-style, click-optimised, paired with the title 'One nail lifting? Here's how to fix it without redoing the set.'"
+  },
+
+  "section_7_content_structure": {
+    "post_gen_instruction": "H2 structure followed exactly — no renaming, no reordering without user instruction.",
+    "h2_structure": [
+      "Why one nail lifts when the rest of your set is fine",
+      "Don't peel it: what happens to your nail if you do",
+      "The safe spot-fix, step by step",
+      "When a spot-fix isn't enough and the whole nail has to come off",
+      "How to stop it happening to the same nail again"
+    ],
+    "word_budget": {
+      "intro": "120-160 words",
+      "h2_1": "220 words",
+      "h2_2": "260 words",
+      "h2_3": "380 words",
+      "h2_4": "260 words",
+      "h2_5": "220 words",
+      "conclusion": "100 words"
+    }
+  },
+
+  "section_8_links": {
+    "post_gen_instruction": "Every link below appears in the post, woven naturally, verbatim URLs and anchors exactly as given/discovered. 2-3 internal + 2-3 external maximum. Internal links are pre-resolved (from Bucket Explorer JSON, Mode A2) or absent (Mode A/B one-off) — this agent never live-searches for internal links. External links are freshly researched here every time.",
+    "all_links": [
+      {
+        "url": "https://mirelleinspo.com/nail-feed/why-does-gel-polish-peel-off-within-two-days",
+        "anchor_text": "why gel polish peels off in the first place",
+        "placement_section": "intro",
+        "link_type": "nailfeed-sibling"
+      },
+      {
+        "url": "https://mirelleinspo.com/nail-feed/is-it-safe-to-glue-down-a-lifted-acrylic-nail-yourself",
+        "anchor_text": "the acrylic version of this same fix",
+        "placement_section": "The safe spot-fix, step by step",
+        "link_type": "nailfeed-sibling"
+      },
+      {
+        "url": "https://pubmed.ncbi.nlm.nih.gov/22360331/",
+        "anchor_text": "a clinical study on nail thinning from gel polish removal",
+        "placement_section": "Don't peel it: what happens to your nail if you do",
+        "link_type": "external"
+      },
+      {
+        "url": "https://www.webmd.com/beauty/features/gel-manicure-safety",
+        "anchor_text": "WebMD's overview of gel manicure nail damage risks",
+        "placement_section": "When a spot-fix isn't enough and the whole nail has to come off",
+        "link_type": "external"
+      }
+    ]
+  },
+
+  "section_9_topical_map": {
+    "post_gen_instruction": "Omit entirely from frontmatter if this section is empty/absent — never write topic as null or empty string.",
+    "relatedClusters": [
+      "why-does-gel-polish-peel-off-within-two-days",
+      "is-it-safe-to-glue-down-a-lifted-acrylic-nail-yourself"
+    ],
+    "primaryKeyword": "fix lifted gel nail",
+    "secondaryKeywords": [
+      "gel nail lifting one nail",
+      "gel manicure spot fix",
+      "lifted gel nail without removing"
+    ]
+  },
+
+  "section_10_voice_tone": {
+    "post_gen_instruction": "Layer this on top of the fixed editorial voice mandate already in the Post Gen Agent prompt — never a departure from British English, banned vocabulary, or rhythm rules, just register within that frame.",
+    "recommended_voice": "Sharp and direct, reassuring undertone",
+    "tone_characteristics": [
+      "Direct and validating of the frustration (redoing a whole set over one nail is genuinely annoying)",
+      "Calm authority around the safety/infection-risk point, not alarmist",
+      "Practical, step-driven where the fix itself is explained"
+    ],
+    "audience_match": "The reader is irritated, not panicked — they want a fast, safe answer that respects their otherwise-good set, so a sharper, no-nonsense register fits better than a soft or breathless one."
+  },
+
+  "section_11_execution_plan": {
+    "block_1_entity_and_keyword_execution": {
+      "named_entities_to_surface_early": "gel polish lifting, single-nail spot-fix, nail bed separation risk",
+      "primary_keyword_if_any": "fix lifted gel nail",
+      "strong_tag_note": "Only bold/strong-tag 'fix lifted gel nail' if it appears naturally in the intro or first H2 — never forced"
+    },
+    "block_2_word_and_image_plan": {
+      "total_word_target": "1500, ±50",
+      "introduction": "120-160 words",
+      "conclusion": "80-120 words",
+      "h2_budgets": [
+        {"heading": "Why one nail lifts when the rest of your set is fine", "budget": "220 words"},
+        {"heading": "Don't peel it: what happens to your nail if you do", "budget": "260 words"},
+        {"heading": "The safe spot-fix, step by step", "budget": "380 words"},
+        {"heading": "When a spot-fix isn't enough and the whole nail has to come off", "budget": "260 words"},
+        {"heading": "How to stop it happening to the same nail again", "budget": "220 words"}
+      ],
+      "image_assignments": [
+        {"image_number": 1, "place_after": "hero (frontmatter only)", "section_context": "single lifted nail mid-fix, rest of set glossy and intact — inspirational nail design shot only", "path": "/images/nail-feed/fix-lifted-gel-nails-without-removing-whole-set/single-lifted-gel-nail-spot-fix-glossy-manicure-set-2026.webp"},
+        {"image_number": 2, "place_after": "Why one nail lifts when the rest of your set is fine", "section_context": "close-up of a single tented/lifted gel edge on one nail against neutral background", "path": "/images/nail-feed/fix-lifted-gel-nails-without-removing-whole-set/lifted-gel-edge-closeup-2026.webp"},
+        {"image_number": 3, "place_after": "The safe spot-fix, step by step", "section_context": "hands demonstrating the spot-fix tool/technique on one nail", "path": "/images/nail-feed/fix-lifted-gel-nails-without-removing-whole-set/gel-nail-spot-fix-technique-2026.webp"},
+        {"image_number": 4, "place_after": "How to stop it happening to the same nail again", "section_context": "finished, fully intact glossy gel set, no visible damage — inspirational final result shot", "path": "/images/nail-feed/fix-lifted-gel-nails-without-removing-whole-set/finished-glossy-gel-manicure-set-2026.webp"}
+      ]
+    },
+    "block_3_opening_technique_assignments": {
+      "rule": "No two consecutive sections same technique. Conclusion = Technique 1 or 3 only.",
+      "assignments": [
+        {"section": "Introduction", "technique": "Technique 2 — negative-angle problem statement (redoing the whole set over one nail)"},
+        {"section": "Why one nail lifts when the rest of your set is fine", "technique": "Technique 1 — curiosity gap (the real cause)"},
+        {"section": "Don't peel it: what happens to your nail if you do", "technique": "Technique 2 — negative-angle (the risk of doing it wrong)"},
+        {"section": "The safe spot-fix, step by step", "technique": "Technique 3 — direct instructional"},
+        {"section": "When a spot-fix isn't enough and the whole nail has to come off", "technique": "Technique 1 — curiosity gap (knowing the line)"},
+        {"section": "How to stop it happening to the same nail again", "technique": "Technique 3 — direct instructional"},
+        {"section": "Conclusion", "technique": "Technique 1"}
+      ]
+    },
+    "block_4_link_placements": {
+      "links": [
+        {"anchor_text": "why gel polish peels off in the first place", "full_url": "https://mirelleinspo.com/nail-feed/why-does-gel-polish-peel-off-within-two-days", "place_in_section": "Introduction", "link_type": "nailfeed-sibling"},
+        {"anchor_text": "the acrylic version of this same fix", "full_url": "https://mirelleinspo.com/nail-feed/is-it-safe-to-glue-down-a-lifted-acrylic-nail-yourself", "place_in_section": "The safe spot-fix, step by step", "link_type": "nailfeed-sibling"},
+        {"anchor_text": "a clinical study on nail thinning from gel polish removal", "full_url": "https://pubmed.ncbi.nlm.nih.gov/22360331/", "place_in_section": "Don't peel it: what happens to your nail if you do", "link_type": "external"},
+        {"anchor_text": "WebMD's overview of gel manicure nail damage risks", "full_url": "https://www.webmd.com/beauty/features/gel-manicure-safety", "place_in_section": "When a spot-fix isn't enough and the whole nail has to come off", "link_type": "external"}
+      ]
+    },
+    "block_5_active_constraints": {
+      "em_dash_banned": "confirmed active",
+      "british_english_active": "confirmed active",
+      "min_h2_reminder": "5 H2s present — clears the hard 3-minimum, full widget placement including social CTA slot is enabled",
+      "word_count_reminder": "1500 target, depth not padding",
+      "image_count_reminder": "4 total: 1 hero + 3 body, fixed — locked value, Post Gen Agent must not scale this up or down",
+      "hero_image_reminder": "frontmatter only, never in body; alt text and filename only from this file, visual concept comes from a separate downstream prompt; image path is /images/nail-feed/fix-lifted-gel-nails-without-removing-whole-set/{filename}.webp"
+    },
+    "block_6_widget_execution": {
+      "reaction_bar": "default — omit reaction frontmatter entirely",
+      "poll_or_quiz": "poll — use poll_content from section_4 exactly as given",
+      "reminder": "Poll and quiz are mutually exclusive at the template level. Only the poll is used here; no quiz content exists in this file."
+    }
+  }
+}
