@@ -1,0 +1,164 @@
+{
+  "section_1_file_authority": {
+    "statement": "THIS FILE IS THE SINGLE SOURCE OF TRUTH FOR THE NAIL FEED POST GEN AGENT. All values in POST_CONSTANTS are hardcoded. All entities, sentiment/trend rationale, emotion trigger, structure, and links defined here must be followed exactly."
+  },
+  "section_2_post_constants": {
+    "slug": "cuticles-stained-after-gel-polish",
+    "canonical": "https://mirelleinspo.com/nail-feed/cuticles-stained-after-gel-polish",
+    "word_count": 1500,
+    "image_count": 4,
+    "category": "Nail Health & Damage",
+    "publish_date": "2026-08-29",
+    "author": "jyoti-mirelle"
+  },
+  "section_3_sentiment_and_entity_brief": {
+    "sentiment_read": "mixed",
+    "the_specific_frustration_or_desire": "Readers notice a yellow-brown or reddish tint left on the skin around the nail right after soaking off gel polish and worry something is wrong with them, when in fact it is surface pigment transfer, not a health problem — the desire is fast reassurance plus a way to actually get rid of the stain look.",
+    "named_entities": "gel polish, dark pigment staining, acetone soak-off, cuticle skin discoloration, nail stain remover, base coat",
+    "trend_velocity": "sustained",
+    "why_now_rationale": "Gel manicure removal is a constant, recurring at-home moment (every 2-3 weeks per wearer), and dark/red pigmented gel shades stay popular year-round, so the stained-cuticle-skin moment keeps recurring regardless of season.",
+    "saturation_check": "saturated — yellow/orange nail-plate discoloration is heavily covered by health and beauty sites; the differentiation angle here is narrowing specifically to cuticle SKIN staining (not the nail plate itself), confirming it is cosmetic pigment transfer rather than a nail-health issue, and giving a concrete removal fix."
+  },
+  "section_4_engagement_widgets": {
+    "reaction_bar": "default",
+    "poll_or_quiz_selected": "poll",
+    "selection_rationale": "Research shows a genuine, common either/or in reader behaviour: some people wait it out (stain fades on its own with skin turnover) versus others actively try to scrub/remove it immediately after a soak-off — a real split worth surfacing, not invented.",
+    "poll_content": {
+      "id": "cuticle-stain-poll",
+      "question": "When your cuticles look stained after removing gel polish, what do you do?",
+      "options": [
+        {"id": "a", "label": "Wait for it to fade naturally"},
+        {"id": "b", "label": "Scrub or exfoliate it off right away"},
+        {"id": "c", "label": "Didn't realise it was normal until now"}
+      ]
+    }
+  },
+  "section_5_hook_and_ctr": {
+    "selected_trigger": "Trigger 1 — Curiosity gap",
+    "trigger_rationale": "Phase_1 shows readers are confused rather than angry — they don't know if staining is a health warning sign or harmless, which is a knowledge-gap sentiment, not an acute frustration.",
+    "title": "Why do my cuticles look stained after taking off gel polish",
+    "title_char_count": 58,
+    "excerpt": "That yellow-brown tint around your nails after a soak-off isn't damage. Here's what's really staining your skin and how to fade it fast.",
+    "excerpt_char_count": 139,
+    "intro_hook_brief": "Open on the exact moment: peeling off the foil after a soak-off and seeing a tinted ring of skin around the nail, then immediately answer whether that's something to worry about.",
+    "hero_image_emotional_beat": "The reveal moment right after foil removal — bare nail with a visibly tinted cuticle ring against clean skin, the 'wait, is that normal' visual."
+  },
+  "section_6_hero_image_brief": {
+    "imageAlt": "Freshly soaked-off nails showing yellow-brown stained cuticle skin around the nail bed after dark gel polish removal, close-up hand shot",
+    "image_filename_brief": "stained-cuticles-after-gel-polish-removal-closeup-2026.webp",
+    "tag_for_downstream_prompt": "Google Discover hero image — high contrast, thumbnail-style, click-optimised, paired with the title 'Why do my cuticles look stained after taking off gel polish'."
+  },
+  "section_7_content_structure": {
+    "h2_structure": [
+      "What's actually causing the staining around your cuticles",
+      "Is stained cuticle skin a sign of nail damage",
+      "Which gel polish colours stain the most",
+      "How to fade stained cuticles fast",
+      "How to stop it happening at your next removal"
+    ],
+    "word_budget": {
+      "intro": 140,
+      "h2_1": 280,
+      "h2_2": 260,
+      "h2_3": 260,
+      "h2_4": 300,
+      "h2_5": 180,
+      "conclusion": 100
+    }
+  },
+  "section_8_links": {
+    "all_links": [
+      {
+        "url": "https://mirelleinspo.com/nail-feed/nails-yellow-after-gel-polish-weeks",
+        "anchor_text": "why nails themselves turn yellow after weeks in gel polish",
+        "placement_section": "H2-2, Is stained cuticle skin a sign of nail damage",
+        "link_type": "nailfeed-sibling"
+      },
+      {
+        "url": "https://mirelleinspo.com/nail-feed/yellow-nails-fade-timeline-gel-polish",
+        "anchor_text": "how long yellow nail staining actually takes to fade",
+        "placement_section": "H2-4, How to fade stained cuticles fast",
+        "link_type": "nailfeed-sibling"
+      },
+      {
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9309855/",
+        "anchor_text": "a large-scale study on side effects reported after gel polish removal",
+        "placement_section": "H2-2, Is stained cuticle skin a sign of nail damage",
+        "link_type": "external"
+      },
+      {
+        "url": "https://www.healthline.com/health/yellow-nails",
+        "anchor_text": "when nail discolouration can point to something beyond staining",
+        "placement_section": "conclusion",
+        "link_type": "external"
+      }
+    ]
+  },
+  "section_9_topical_map": {
+    "primaryKeyword": "stained cuticles after gel polish",
+    "secondaryKeywords": ["gel polish stain removal", "yellow cuticles gel manicure", "cuticle discoloration gel nails"]
+  },
+  "section_10_voice_tone": {
+    "recommended_voice": "Warm expert, reassuring",
+    "tone_characteristics": ["calm and clarifying", "quick to reassure", "specific rather than alarmist"],
+    "audience_match": "Phase_1's mixed/confused sentiment means the reader wants a confident, settling answer first, then the fix — not a dramatized problem framing."
+  },
+  "section_11_execution_plan": {
+    "block_1_entity_and_keyword_execution": {
+      "named_entities_to_surface_early": "gel polish, cuticle skin staining, acetone soak-off, dark pigment",
+      "primary_keyword_if_any": "stained cuticles after gel polish",
+      "strong_tag_note": "Apply only if it fits the intro's first two sentences naturally."
+    },
+    "block_2_word_and_image_plan": {
+      "total_word_target": "1500, ±50",
+      "introduction": "140 words",
+      "conclusion": "100 words",
+      "h2_budgets": [
+        {"heading": "What's actually causing the staining around your cuticles", "budget": "280 words"},
+        {"heading": "Is stained cuticle skin a sign of nail damage", "budget": "260 words"},
+        {"heading": "Which gel polish colours stain the most", "budget": "260 words"},
+        {"heading": "How to fade stained cuticles fast", "budget": "300 words"},
+        {"heading": "How to stop it happening at your next removal", "budget": "180 words"}
+      ],
+      "image_assignments": [
+        {"image_number": 1, "place_after": "intro", "section_context": "hero — inspirational nail design shot only", "path": "/images/nail-feed/cuticles-stained-after-gel-polish/stained-cuticles-after-gel-polish-removal-closeup-2026.webp"},
+        {"image_number": 2, "place_after": "What's actually causing the staining around your cuticles", "section_context": "inspirational nail design shot only", "path": "/images/nail-feed/cuticles-stained-after-gel-polish/image-2.webp"},
+        {"image_number": 3, "place_after": "Which gel polish colours stain the most", "section_context": "inspirational nail design shot only", "path": "/images/nail-feed/cuticles-stained-after-gel-polish/image-3.webp"},
+        {"image_number": 4, "place_after": "How to fade stained cuticles fast", "section_context": "inspirational nail design shot only", "path": "/images/nail-feed/cuticles-stained-after-gel-polish/image-4.webp"}
+      ]
+    },
+    "block_3_opening_technique_assignments": {
+      "rule": "No two consecutive sections same technique. Conclusion = Technique 1 or 3 only.",
+      "assignments": [
+        {"section": "Introduction", "technique": "Technique 1 — direct scenario open"},
+        {"section": "What's actually causing the staining around your cuticles", "technique": "Technique 2 — direct explanation"},
+        {"section": "Is stained cuticle skin a sign of nail damage", "technique": "Technique 1 — direct scenario open"},
+        {"section": "Which gel polish colours stain the most", "technique": "Technique 3 — comparison framing"},
+        {"section": "How to fade stained cuticles fast", "technique": "Technique 2 — direct explanation"},
+        {"section": "How to stop it happening at your next removal", "technique": "Technique 1 — direct scenario open"},
+        {"section": "Conclusion", "technique": "Technique 3 — comparison framing"}
+      ]
+    },
+    "block_4_link_placements": {
+      "links": [
+        {"anchor_text": "why nails themselves turn yellow after weeks in gel polish", "full_url": "https://mirelleinspo.com/nail-feed/nails-yellow-after-gel-polish-weeks", "place_in_section": "Is stained cuticle skin a sign of nail damage", "link_type": "nailfeed-sibling"},
+        {"anchor_text": "how long yellow nail staining actually takes to fade", "full_url": "https://mirelleinspo.com/nail-feed/yellow-nails-fade-timeline-gel-polish", "place_in_section": "How to fade stained cuticles fast", "link_type": "nailfeed-sibling"},
+        {"anchor_text": "a large-scale study on side effects reported after gel polish removal", "full_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9309855/", "place_in_section": "Is stained cuticle skin a sign of nail damage", "link_type": "external"},
+        {"anchor_text": "when nail discolouration can point to something beyond staining", "full_url": "https://www.healthline.com/health/yellow-nails", "place_in_section": "conclusion", "link_type": "external"}
+      ]
+    },
+    "block_5_active_constraints": {
+      "em_dash_banned": "confirmed active",
+      "british_english_active": "confirmed active",
+      "min_h2_reminder": "at least 3 H2s — hard technical requirement, needed for full widget placement including social CTA slot",
+      "word_count_reminder": "1500 target, depth not padding",
+      "image_count_reminder": "4 total: 1 hero + 3 body, fixed — locked value, Post Gen Agent must not scale this up or down",
+      "hero_image_reminder": "frontmatter only, never in body; alt text and filename only from this file, visual concept comes from a separate downstream prompt; image path is /images/nail-feed/cuticles-stained-after-gel-polish/{filename}.webp"
+    },
+    "block_6_widget_execution": {
+      "reaction_bar": "default applies automatically, omit frontmatter",
+      "poll_or_quiz": "poll — use poll_content from section_4 exactly as given",
+      "reminder": "Poll and quiz are mutually exclusive at the template level."
+    }
+  }
+}
