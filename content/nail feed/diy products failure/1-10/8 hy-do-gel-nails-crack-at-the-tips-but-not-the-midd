@@ -1,0 +1,172 @@
+
+{
+  "section_1_file_authority": {
+    "statement": "THIS FILE IS THE SINGLE SOURCE OF TRUTH FOR THE NAIL FEED POST GEN AGENT. All values in POST_CONSTANTS are hardcoded. All entities, sentiment/trend rationale, emotion trigger, structure, and links defined here must be followed exactly."
+  },
+  "section_2_post_constants": {
+    "slug": "why-do-gel-nails-crack-at-the-tips-but-not-the-middle",
+    "canonical": "https://mirelleinspo.com/nail-feed/why-do-gel-nails-crack-at-the-tips-but-not-the-middle",
+    "word_count": 1500,
+    "image_count": 4,
+    "category": "Nail Care Guide",
+    "publish_date": "2026-08-29",
+    "author": "jyoti-mirelle"
+  },
+  "section_3_sentiment_and_entity_brief": {
+    "sentiment_read": "negative",
+    "the_specific_frustration_or_desire": "The crack always shows up in the same spot: the free edge/tip, running back toward the cuticle, while the middle stays fine. Readers have ruled out 'bad product' since it repeats on the same finger, and want the structural reason for the tip specifically, not another generic 'cure it longer' answer.",
+    "named_entities": "apex placement, free-edge crack (Type 2 crack), stress point, builder gel / hard gel overlay, soak-off gel flexibility mismatch, LED lamp cure",
+    "trend_velocity": "sustained (evergreen troubleshooting query — not seasonal, not a design trend; steady year-round search behaviour tied to normal gel-manicure wear cycle)",
+    "why_now_rationale": "This is a persistent, recurring DIY pain point rather than a calendar-driven trend — it surfaces continuously as more people maintain their own gel sets between salon visits and experience the same site-specific failure.",
+    "saturation_check": "Under-covered for this exact angle. Existing coverage (including Mirellé's own 'why nails chip so easily' post) addresses general chipping and overall crack causes, but nothing on the site or in top search results isolates the specific tip-vs-middle location pattern as its own diagnostic question. Differentiation angle: frame this as a structural/location diagnostic (why the tip specifically, not the middle) rather than a generic 'why does gel crack' explainer."
+  },
+  "section_4_engagement_widgets": {
+    "reaction_bar": "default",
+    "poll_or_quiz_selected": "poll",
+    "selection_rationale": "Research surfaced a genuine, recurring either/or in the real conversation: is a tip crack a sign the reader is wearing their nails too long for their gel system, or is it an apex/technique problem that would happen at any length. This is an actual diagnostic split people argue over (length vs. build technique), not an invented poll.",
+    "poll_content": {
+      "id": "tip-crack-cause-poll",
+      "question": "When your gel cracks at the tip, what do you think is really going on?",
+      "options": [
+        {"id": "a", "label": "My nails are just too long for the gel"},
+        {"id": "b", "label": "It's a technique or apex problem, not length"},
+        {"id": "c", "label": "Honestly, I thought it was just bad luck"}
+      ]
+    }
+  },
+  "section_5_hook_and_ctr": {
+    "selected_trigger": "Trigger 1 — Curiosity Gap",
+    "trigger_rationale": "Phase_1 shows readers are not simply frustrated at random breakage — they've noticed a specific, confusing pattern (same spot, every time) and want the hidden structural reason, which is a textbook knowledge-gap trigger rather than a generic complaint.",
+    "title": "Why your gel nails always crack at the tip, never the middle",
+    "title_char_count": 61,
+    "excerpt": "It's not bad luck or a bad batch. The tip takes stress the middle never sees, and one build habit is almost always the reason.",
+    "excerpt_char_count": 128,
+    "intro_hook_brief": "Open by naming the exact pattern the reader has noticed themselves (same spot, same finger, never the centre) before they've had to describe it, then promise the structural reason in one line.",
+    "hero_image_emotional_beat": "A close-up of a visibly cracked gel tip, crack running from the free edge back toward the cuticle, held under sharp studio light against a plain dark background so the crack line reads instantly."
+  },
+  "section_6_hero_image_brief": {
+    "imageAlt": "Close-up of a cracked gel nail tip showing a vertical crack running from the free edge back across the nail plate",
+    "image_filename_brief": "cracked-gel-nail-tip-closeup-free-edge-crack-studio-2026.webp",
+    "tag_for_downstream_prompt": "Google Discover hero image — high contrast, thumbnail-style, click-optimised, paired with the title 'Why your gel nails always crack at the tip, never the middle'."
+  },
+  "section_7_content_structure": {
+    "h2_structure": [
+      "The tip takes stress the middle of your nail never sees",
+      "It's almost always about the apex, not the product",
+      "Length is the multiplier, not the root cause",
+      "How to tell if it's an apex problem or a length problem",
+      "Fixing a tip crack without redoing the whole set",
+      "Stopping it from coming back on the same nail"
+    ],
+    "word_budget": {
+      "intro": "140 words",
+      "h2_1": "230 words",
+      "h2_2": "260 words",
+      "h2_3": "220 words",
+      "h2_4": "220 words",
+      "h2_5": "240 words",
+      "h2_6": "190 words",
+      "conclusion": "100 words"
+    }
+  },
+  "section_8_links": {
+    "all_links": [
+      {
+        "url": "https://mirelleinspo.com/blog/nails-that-dont-chip-easily",
+        "anchor_text": "the real reason your nails chip so easily",
+        "placement_section": "Intro — acknowledges the reader may have already read the general chipping explainer, positioning this post as the deeper, location-specific follow-up",
+        "link_type": "nailfeed-sibling"
+      },
+      {
+        "url": "https://mirelleinspo.com/work-nails/gel-vs-acrylic-nails-for-work",
+        "anchor_text": "how gel and acrylic actually break differently",
+        "placement_section": "H2-3 (Length is the multiplier, not the root cause) — supports the point that gel cracks/lifts rather than snapping cleanly like acrylic",
+        "link_type": "nailfeed-sibling"
+      },
+      {
+        "url": "https://buildergelnails.com/problems/builder-gel-cracking-fixes",
+        "anchor_text": "a licensed nail technician's full crack-type diagnostic",
+        "placement_section": "H2-4 (How to tell if it's an apex problem or a length problem) — original, fetched, technician-authored source with the core apex/free-edge diagnostic this post is built on",
+        "link_type": "external"
+      },
+      {
+        "url": "https://www.aad.org/public/everyday-care/skin-care-secrets/nails/care-for-nails",
+        "anchor_text": "the American Academy of Dermatology's guidance on nail health",
+        "placement_section": "Conclusion — for readers whose cracking is persistent and may point to an underlying nail-health issue rather than a build fault",
+        "link_type": "external"
+      }
+    ]
+  },
+  "section_9_topical_map": {
+    "primaryKeyword": "gel nails crack at the tip",
+    "secondaryKeywords": ["gel nail apex placement", "gel nail free edge crack", "why does gel polish crack"]
+  },
+  "section_10_voice_tone": {
+    "recommended_voice": "Sharp and direct",
+    "tone_characteristics": [
+      "Validates the reader's own observation before explaining it, since phase_1 shows they've already correctly spotted a real pattern, not imagined one",
+      "Direct and specific rather than soothing — matches the negative-angle trigger by naming the structural fault plainly",
+      "No hedging language ('might be', 'could possibly') — phase_1's frustration is about wanting a definitive answer, not more maybes"
+    ],
+    "audience_match": "This reader has already ruled out coincidence and wants to be told the specific mechanical reason, so a confident, direct register respects that they've done some diagnostic thinking themselves."
+  },
+  "section_11_execution_plan": {
+    "block_1_entity_and_keyword_execution": {
+      "named_entities_to_surface_early": "apex placement, free-edge crack, stress point",
+      "primary_keyword_if_any": "gel nails crack at the tip",
+      "strong_tag_note": "Only bold/strong-tag 'apex' on its first genuine definition in H2-2 if it reads naturally there — never forced elsewhere."
+    },
+    "block_2_word_and_image_plan": {
+      "total_word_target": "1500, ±50",
+      "introduction": "140 words",
+      "conclusion": "100 words",
+      "h2_budgets": [
+        {"heading": "The tip takes stress the middle of your nail never sees", "budget": "230 words"},
+        {"heading": "It's almost always about the apex, not the product", "budget": "260 words"},
+        {"heading": "Length is the multiplier, not the root cause", "budget": "220 words"},
+        {"heading": "How to tell if it's an apex problem or a length problem", "budget": "220 words"},
+        {"heading": "Fixing a tip crack without redoing the whole set", "budget": "240 words"},
+        {"heading": "Stopping it from coming back on the same nail", "budget": "190 words"}
+      ],
+      "image_assignments": [
+        {"image_number": 1, "place_after": "intro", "section_context": "inspirational nail design shot only — clean, healthy gel manicure, no visible damage, contrasts with the hero's cracked-nail image", "path": "/images/nail-feed/why-do-gel-nails-crack-at-the-tips-but-not-the-middle/gel-manicure-clean-tips-inspiration-2026.webp"},
+        {"image_number": 2, "place_after": "It's almost always about the apex, not the product", "section_context": "inspirational nail design shot only — well-shaped almond or square set showing a clean, correctly-built free edge", "path": "/images/nail-feed/why-do-gel-nails-crack-at-the-tips-but-not-the-middle/gel-nails-clean-free-edge-shape-2026.webp"},
+        {"image_number": 3, "place_after": "Fixing a tip crack without redoing the whole set", "section_context": "inspirational nail design shot only — glossy finished gel set post-repair, high-shine top coat", "path": "/images/nail-feed/why-do-gel-nails-crack-at-the-tips-but-not-the-middle/glossy-gel-nails-finished-set-2026.webp"}
+      ]
+    },
+    "block_3_opening_technique_assignments": {
+      "rule": "No two consecutive sections same technique. Conclusion = Technique 1 or 3 only.",
+      "assignments": [
+        {"section": "Introduction", "technique": "Technique 1 — Direct pattern callout"},
+        {"section": "H2-1 heading", "technique": "Technique 2 — Mechanism explanation"},
+        {"section": "H2-2 heading", "technique": "Technique 1 — Direct pattern callout"},
+        {"section": "H2-3 heading", "technique": "Technique 3 — Comparative framing"},
+        {"section": "H2-4 heading", "technique": "Technique 2 — Mechanism explanation"},
+        {"section": "H2-5 heading", "technique": "Technique 1 — Direct pattern callout"},
+        {"section": "H2-6 heading", "technique": "Technique 3 — Comparative framing"},
+        {"section": "Conclusion", "technique": "Technique 1 — Direct pattern callout"}
+      ]
+    },
+    "block_4_link_placements": {
+      "links": [
+        {"anchor_text": "the real reason your nails chip so easily", "full_url": "https://mirelleinspo.com/blog/nails-that-dont-chip-easily", "place_in_section": "Introduction", "link_type": "nailfeed-sibling"},
+        {"anchor_text": "how gel and acrylic actually break differently", "full_url": "https://mirelleinspo.com/work-nails/gel-vs-acrylic-nails-for-work", "place_in_section": "Length is the multiplier, not the root cause", "link_type": "nailfeed-sibling"},
+        {"anchor_text": "a licensed nail technician's full crack-type diagnostic", "full_url": "https://buildergelnails.com/problems/builder-gel-cracking-fixes", "place_in_section": "How to tell if it's an apex problem or a length problem", "link_type": "external"},
+        {"anchor_text": "the American Academy of Dermatology's guidance on nail health", "full_url": "https://www.aad.org/public/everyday-care/skin-care-secrets/nails/care-for-nails", "place_in_section": "Conclusion", "link_type": "external"}
+      ]
+    },
+    "block_5_active_constraints": {
+      "em_dash_banned": "confirmed active",
+      "british_english_active": "confirmed active",
+      "min_h2_reminder": "at least 3 H2s — hard technical requirement, needed for full widget placement including social CTA slot (this post has 6)",
+      "word_count_reminder": "1500 target, depth not padding",
+      "image_count_reminder": "4 total: 1 hero + 3 body, fixed — locked value, Post Gen Agent must not scale this up or down",
+      "hero_image_reminder": "frontmatter only, never in body; alt text and filename only from this file, visual concept comes from a separate downstream prompt; image path is /images/nail-feed/why-do-gel-nails-crack-at-the-tips-but-not-the-middle/{filename}.webp"
+    },
+    "block_6_widget_execution": {
+      "reaction_bar": "default — omit reaction frontmatter entirely, hardcoded fallback applies",
+      "poll_or_quiz": "poll — use poll_content from section_4 exactly as given, do not write quiz frontmatter",
+      "reminder": "Poll and quiz are mutually exclusive at the template level. This file specifies poll only."
+    }
+  }
+}
