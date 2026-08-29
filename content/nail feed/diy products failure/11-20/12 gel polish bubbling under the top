@@ -1,0 +1,218 @@
+{
+  "section_1_file_authority": {
+    "statement": "THIS FILE IS THE SINGLE SOURCE OF TRUTH FOR THE NAIL FEED POST GEN AGENT. All values in POST_CONSTANTS are hardcoded. All entities, sentiment/trend rationale, emotion trigger, structure, and links defined here must be followed exactly."
+  },
+
+  "section_2_post_constants": {
+    "slug": "why-does-nail-polish-chip-within-hours-of-drying",
+    "canonical": "https://mirelleinspo.com/nail-feed/why-does-nail-polish-chip-within-hours-of-drying",
+    "word_count": 1500,
+    "image_count": 4,
+    "category": "Nail Care & Troubleshooting",
+    "publish_date": "2026-09-05",
+    "author": "jyoti-mirelle"
+  },
+
+  "section_3_sentiment_and_entity_brief": {
+    "post_gen_instruction": "This is the primary creative context for the whole post — the real emotional territory this post is built on, and what it's specifically about. Named entities should appear clearly and early in the post.",
+    "sentiment_read": "negative",
+    "the_specific_frustration_or_desire": "People feel genuinely cheated when polish they just applied is already chipped within hours, before they've even left the house or finished the day — it reads to them as a waste of money and time, not just a cosmetic annoyance. Real reviews describe it in exactly those terms: 'waste of money,' 'flaked off within hours despite two layers of top coat,' 'as soon as it's applied it chips the same day even when not using hands frequently.' The confusion is compounded because most people believe 'dry to the touch' means the polish is done curing, so the chip feels random and unexplainable rather than a predictable mistake.",
+    "named_entities": [
+      "surface-dry vs structural cure gap",
+      "base coat",
+      "thin coats vs thick coats",
+      "nail plate oils/moisture (adhesion barrier)",
+      "quick-dry top coat",
+      "solvent evaporation / polymer cross-linking"
+    ],
+    "trend_velocity": "sustained (evergreen problem topic, not a seasonal spike)",
+    "why_now_rationale": "This is a constant, recurring DIY pain point rather than a trend-driven one — Google Trends' 2025/2026 nail data shows aesthetic trends (furry nails, chrome, polka dot) spiking and fading, but 'why does my polish chip' behaves as steady year-round problem-search volume, which is exactly the kind of always-relevant entity Discover surfaces to users with a demonstrated interest in nail care content.",
+    "saturation_check": "under-covered on the specific angle: most existing coverage (Manucurist, Beyond Polish, NDTV, InnoVitale) lists generic causes (no base coat, thick layers, oily nails) but very few directly address the specific 'why does it chip within HOURS, when it already felt dry' confusion — the surface-dry-vs-structural-cure distinction is the differentiation angle for this post."
+  },
+
+  "section_4_engagement_widgets": {
+    "post_gen_instruction": "Reaction Bar: write the custom frontmatter reaction block if provided below, otherwise omit entirely (post falls back to the route's hardcoded default automatically — no frontmatter needed for the default case). Poll/Quiz: write frontmatter for whichever ONE was selected below, exactly as given, never both. If this section explicitly states neither was selected, omit both poll and quiz from frontmatter entirely — this is a correct, deliberate outcome, not a gap.",
+    "reaction_bar": "default",
+    "poll_or_quiz_selected": "poll",
+    "selection_rationale": "Research surfaced a real, specific either/or in how people try to fix this: some swear by cold-water dipping to speed drying, others (per multiple sources including Style Serum and Beauty Nexus Pro) call this a myth that traps moisture and worsens chipping. This is a genuine, actively-argued split in the real conversation, not an invented one — a poll fits; a quiz does not, since this topic has one clear underlying cause pattern rather than several distinct branching outcomes.",
+    "poll_content": {
+      "id": "chip-poll-cold-water",
+      "question": "Do you dip your nails in cold water to dry them faster?",
+      "options": [
+        {"id": "a", "label": "Yes, every time — it works for me"},
+        {"id": "b", "label": "I used to, but stopped after it backfired"},
+        {"id": "c", "label": "No, I've always heard it's a myth"}
+      ]
+    }
+  },
+
+  "section_5_hook_and_ctr": {
+    "post_gen_instruction": "READ BEFORE WRITING TITLE, EXCERPT, INTRO, OR FIRST H2. Title and excerpt are hardcoded — use exactly. Title length range is 45-70 characters (Discover feed range, not a SERP-derived cap) — see phase_4.",
+    "selected_trigger": "Trigger 2 — Negative angle + solution",
+    "trigger_rationale": "Phase_1's sentiment_read is clearly negative — a real, specific, common frustration (polish chipping within hours despite feeling dry) shows up consistently across reviews and forums, so the post should state the problem sharply before delivering the fix.",
+    "title": "Why your nail polish chips in hours, even when it felt dry",
+    "title_char_count": 60,
+    "excerpt": "Dry to the touch isn't the same as fully cured. Here's the real reason polish chips fast, and the simple fix most people skip.",
+    "excerpt_char_count": 128,
+    "intro_hook_brief": "Open on the exact moment of betrayal: nails felt dry, you moved on with your day, and now there's a chip already. Name the surface-dry vs structural-cure gap immediately as the real culprit, validating that this isn't user error in the way people assume.",
+    "hero_image_emotional_beat": "A close-up shot of a freshly chipped nail — glossy, clearly still 'fresh' looking polish with one sharp, obvious chip at the tip, framed to look almost unbelievable given how new the manicure looks."
+  },
+
+  "section_6_hero_image_brief": {
+    "post_gen_instruction": "Use imageAlt exactly as given. image_filename_brief is a naming reference for the actual hero image file, which will be saved at /images/nail-feed/{slug}/{filename}.webp. This section does NOT include a visual concept/mood description — that lives in a separate downstream image-generation prompt the user runs independently.",
+    "imageAlt": "Glossy fresh manicure with one nail showing an unexpected chip at the tip, close-up on bright red polish against skin",
+    "image_filename_brief": "glossy-red-manicure-single-chipped-tip-closeup-studio-2026.webp",
+    "tag_for_downstream_prompt": "For Google Discover hero image — high contrast, thumbnail-style, click-optimised, must visually pair with the title's 'chips in hours, even when it felt dry' hook.",
+    "spec_reminder": "1200x675, 16:9 — hard Discover technical gate, non-negotiable, for whoever generates the actual image."
+  },
+
+  "section_7_content_structure": {
+    "post_gen_instruction": "H2 structure followed exactly — no renaming, no reordering without user instruction.",
+    "h2_structure": [
+      "The real reason polish chips before it's even 'set'",
+      "Why dry to the touch doesn't mean fully cured",
+      "The application habits that make chipping worse",
+      "Does the cold water trick actually help?",
+      "How to protect your manicure in the first few hours"
+    ],
+    "word_budget": {
+      "intro": "120-160 words",
+      "h2_1_real_reason": "260 words",
+      "h2_2_dry_vs_cured": "280 words",
+      "h2_3_application_habits": "260 words",
+      "h2_4_cold_water_trick": "230 words",
+      "h2_5_protect_first_hours": "230 words",
+      "conclusion": "80-120 words"
+    }
+  },
+
+  "section_8_links": {
+    "post_gen_instruction": "Every link below appears in the post, woven naturally, verbatim URLs and anchors exactly as given/discovered. 2-3 internal + 2-3 external maximum. Internal links are pre-resolved (from Bucket Explorer JSON, Mode A2) or absent (Mode A/B one-off) — this agent never live-searches for internal links. External links are freshly researched here every time.",
+    "all_links": [
+      {
+        "url": "https://mirelleinspo.com/nail-feed/why-does-gel-polish-chip-faster-on-your-dominant-hand",
+        "anchor_text": "why chipping shows up faster on your dominant hand",
+        "placement_section": "H2-3 (The application habits that make chipping worse) — distinguishes immediate all-over chipping (this post) from gradual asymmetric wear (sibling post)",
+        "link_type": "nailfeed-sibling"
+      },
+      {
+        "url": "https://mirelleinspo.com/nail-feed/why-does-gel-polish-bubble-under-the-top-coat",
+        "anchor_text": "gel polish bubbling under the top coat",
+        "placement_section": "intro or H2-1 — both share the same application-error root cause per Bucket Explorer link mapping",
+        "link_type": "nailfeed-sibling"
+      },
+      {
+        "url": "https://thestyleserum.com/how-long-does-it-take-for-nail-polish-to-cure/",
+        "anchor_text": "the gentle tap test for checking if polish is truly cured",
+        "placement_section": "H2-2 (Why dry to the touch doesn't mean fully cured) — confirmed accessible, genuine editorial source with practical cure-check methods",
+        "link_type": "external"
+      },
+      {
+        "url": "https://www.ndtvshopping.com/beauty-and-grooming/why-does-my-nail-polish-chip-within-a-day-of-painting-11793936",
+        "anchor_text": "common culprits behind fast-chipping manicures",
+        "placement_section": "H2-3 (The application habits that make chipping worse) — confirmed accessible, covers oils, thick layers, and skipped base coat in detail",
+        "link_type": "external"
+      },
+      {
+        "url": "https://www.healthline.com/health/how-to-dry-nails-faster",
+        "anchor_text": "safe ways to help nail polish dry faster",
+        "placement_section": "H2-4 (Does the cold water trick actually help?) — confirmed accessible, original reporting on drying methods including the cold water technique",
+        "link_type": "external"
+      }
+    ]
+  },
+
+  "section_9_topical_map": {
+    "post_gen_instruction": "Omit entirely from frontmatter if this section is empty/absent — never write topic as null or empty string.",
+    "topic": "absent",
+    "parentPillar": "absent",
+    "relatedClusters": [
+      "why-does-gel-polish-chip-faster-on-your-dominant-hand",
+      "why-does-gel-polish-bubble-under-the-top-coat"
+    ],
+    "primaryKeyword": "why does nail polish chip so fast",
+    "secondaryKeywords": [
+      "nail polish chipping hours after drying",
+      "surface dry vs cured nail polish",
+      "how to stop nail polish from chipping"
+    ],
+    "topicalBoundary": "absent"
+  },
+
+  "section_10_voice_tone": {
+    "post_gen_instruction": "Layer this on top of the fixed editorial voice mandate already in the Post Gen Agent prompt — never a departure from British English, banned vocabulary, or rhythm rules, just register within that frame.",
+    "recommended_voice": "Sharp and direct",
+    "tone_characteristics": [
+      "Validating — names the frustration plainly rather than softening it, matching the negative sentiment_read",
+      "No-nonsense — leads with the real cause fast rather than building up to it, fitting a reader who is already annoyed",
+      "Slightly myth-busting — corrects the 'dry to the touch = done' assumption directly, matching Trigger 2's problem-before-fix structure"
+    ],
+    "audience_match": "Readers arriving at this topic are mid-frustration, not browsing casually — phase_1 research shows people describing this exact scenario as feeling cheated or wasteful, so a direct, validating register lands better than a breezy or overly cheerful one."
+  },
+
+  "section_11_execution_plan": {
+    "purpose": "Post Gen Agent reads this FIRST, before writing a word. Every value pre-calculated. Locked and executed exactly, no recalculation.",
+    "calculated_by": "Input Gen Agent, calculated last after all other sections are complete.",
+    "block_1_entity_and_keyword_execution": {
+      "named_entities_to_surface_early": [
+        "surface-dry vs structural cure gap",
+        "base coat",
+        "thin coats vs thick coats"
+      ],
+      "primary_keyword_if_any": "why does nail polish chip so fast",
+      "strong_tag_note": "Only applies if primary keyword appears naturally in the intro — never forced."
+    },
+    "block_2_word_and_image_plan": {
+      "total_word_target": "1500, ±50",
+      "introduction": "120-160 words",
+      "conclusion": "80-120 words",
+      "h2_budgets": [
+        {"heading": "The real reason polish chips before it's even 'set'", "budget": "260 words"},
+        {"heading": "Why dry to the touch doesn't mean fully cured", "budget": "280 words"},
+        {"heading": "The application habits that make chipping worse", "budget": "260 words"},
+        {"heading": "Does the cold water trick actually help?", "budget": "230 words"},
+        {"heading": "How to protect your manicure in the first few hours", "budget": "230 words"}
+      ],
+      "image_assignments": [
+        {"image_number": 1, "place_after": "hero (frontmatter only)", "section_context": "inspirational nail design shot only — glossy fresh manicure with visible single chip", "path": "/images/nail-feed/why-does-nail-polish-chip-within-hours-of-drying/glossy-red-manicure-single-chipped-tip-closeup-studio-2026.webp"},
+        {"image_number": 2, "place_after": "H2-1 (The real reason polish chips before it's even 'set')", "section_context": "inspirational nail design shot only — clean, fully-set glossy manicure, healthy nail plate", "path": "/images/nail-feed/why-does-nail-polish-chip-within-hours-of-drying/image-2.webp"},
+        {"image_number": 3, "place_after": "H2-3 (The application habits that make chipping worse)", "section_context": "inspirational nail design shot only — thin, even coat application close-up on well-prepped bare nails", "path": "/images/nail-feed/why-does-nail-polish-chip-within-hours-of-drying/image-3.webp"},
+        {"image_number": 4, "place_after": "H2-5 (How to protect your manicure in the first few hours)", "section_context": "inspirational nail design shot only — finished long-wear manicure looking pristine, several days old", "path": "/images/nail-feed/why-does-nail-polish-chip-within-hours-of-drying/image-4.webp"}
+      ]
+    },
+    "block_3_opening_technique_assignments": {
+      "rule": "No two consecutive sections same technique. Conclusion = Technique 1 or 3 only.",
+      "assignments": [
+        {"section": "Introduction", "technique": "Technique 2 — direct problem statement"},
+        {"section": "H2-1 heading", "technique": "Technique 1 — myth-correction opener"},
+        {"section": "H2-2 heading", "technique": "Technique 3 — question-led opener"},
+        {"section": "H2-3 heading", "technique": "Technique 1 — myth-correction opener"},
+        {"section": "H2-4 heading", "technique": "Technique 3 — question-led opener"},
+        {"section": "H2-5 heading", "technique": "Technique 2 — direct problem statement"},
+        {"section": "Conclusion", "technique": "Technique 1 — myth-correction opener"}
+      ]
+    },
+    "block_4_link_placements": {
+      "links": [
+        {"anchor_text": "gel polish bubbling under the top coat", "full_url": "https://mirelleinspo.com/nail-feed/why-does-gel-polish-bubble-under-the-top-coat", "place_in_section": "The real reason polish chips before it's even 'set'", "link_type": "nailfeed-sibling"},
+        {"anchor_text": "the gentle tap test for checking if polish is truly cured", "full_url": "https://thestyleserum.com/how-long-does-it-take-for-nail-polish-to-cure/", "place_in_section": "Why dry to the touch doesn't mean fully cured", "link_type": "external"},
+        {"anchor_text": "common culprits behind fast-chipping manicures", "full_url": "https://www.ndtvshopping.com/beauty-and-grooming/why-does-my-nail-polish-chip-within-a-day-of-painting-11793936", "place_in_section": "The application habits that make chipping worse", "link_type": "external"},
+        {"anchor_text": "why chipping shows up faster on your dominant hand", "full_url": "https://mirelleinspo.com/nail-feed/why-does-gel-polish-chip-faster-on-your-dominant-hand", "place_in_section": "The application habits that make chipping worse", "link_type": "nailfeed-sibling"},
+        {"anchor_text": "safe ways to help nail polish dry faster", "full_url": "https://www.healthline.com/health/how-to-dry-nails-faster", "place_in_section": "Does the cold water trick actually help?", "link_type": "external"}
+      ]
+    },
+    "block_5_active_constraints": {
+      "em_dash_banned": "confirmed active",
+      "british_english_active": "confirmed active",
+      "min_h2_reminder": "at least 3 H2s — hard technical requirement, needed for full widget placement including social CTA slot (this post has 5)",
+      "word_count_reminder": "1500 target, depth not padding",
+      "image_count_reminder": "4 total: 1 hero + 3 body, fixed — locked value, Post Gen Agent must not scale this up or down",
+      "hero_image_reminder": "frontmatter only, never in body; alt text and filename only from this file, visual concept comes from a separate downstream prompt; image path is /images/nail-feed/{slug}/{filename}.webp"
+    },
+    "block_6_widget_execution": {
+      "reaction_bar": "default — omit reaction frontmatter entirely, hardcoded fallback applies automatically",
+      "poll_or_quiz": "poll — write frontmatter using poll_content from section_4 exactly as given",
+      "reminder": "Poll and quiz are mutually exclusive at the template level. This post uses poll only; quiz is not included."
+    }
+  }
+}
