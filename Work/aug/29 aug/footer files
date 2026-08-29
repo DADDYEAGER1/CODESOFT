@@ -1,0 +1,440 @@
+// src/components/Footer.tsx
+// Server component - fetches "last 15 days" content at build time, zero runtime cost.
+
+import Link from 'next/link';
+import Image from 'next/image';
+import { getAllBlogPosts } from '@/lib/blog';
+import { getAllShopPosts } from '@/lib/shop';
+import { getAllBusinessPosts } from '@/lib/business';
+import { getAllFaqs } from '@/lib/faqs';
+import { getAllPinterestReports } from '@/lib/pinterest';
+import { getAllReports } from '@/lib/reports';
+import FooterClient from './FooterClient';
+
+// ─── Date window ────────────────────────────────────────────────────────────
+// "Latest from Mirellé" shows whatever was pushed with a frontmatter `date`
+// inside the trailing 15-day window from the moment the site builds.
+// This is a rolling window, not a calendar month - it always looks back
+// 15 days from "now", so it naturally refreshes on every rebuild/deploy.
+
+const RECENT_WINDOW_DAYS = 15;
+
+function isWithinLastNDays(dateString: string, days: number = RECENT_WINDOW_DAYS): boolean {
+  const postDate = new Date(dateString);
+  if (isNaN(postDate.getTime())) return false; // malformed/missing date → exclude, don't crash
+
+  const now = new Date();
+  const windowStart = new Date(now);
+  windowStart.setDate(windowStart.getDate() - days);
+
+  return postDate >= windowStart && postDate <= now;
+}
+
+// ─── Footer data ────────────────────────────────────────────────────────────
+
+async function getFooterData() {
+  const [allBlogs, allShop, allBusiness, allFaqs, allPinterest, allReports] = await Promise.all([
+    getAllBlogPosts(),
+    getAllShopPosts(),
+    getAllBusinessPosts(),
+    getAllFaqs(),
+    getAllPinterestReports(),
+    getAllReports(),
+  ]);
+
+  // Every getAllX() above already sorts newest-first, so after filtering by
+  // date we just map straight to {title, url} - no re-sorting or slicing needed.
+
+  const blogs = allBlogs
+    .filter((p) => isWithinLastNDays(p.date))
+    .map((p) => ({
+      title: p.title,
+      url: p.url.replace('https://mirelleinspo.com', ''),
+    }));
+
+  const shop = allShop
+    .filter((p) => isWithinLastNDays(p.date))
+    .map((p) => ({
+      title: p.title,
+      url: `/shop/${p.productType}/${p.slug}`,
+    }));
+
+  const business = allBusiness
+    .filter((p) => isWithinLastNDays(p.date))
+    .map((p) => ({
+      title: p.title,
+      url: `/business/${p.slug}`,
+    }));
+
+  const faqs = allFaqs
+    .filter((f) => isWithinLastNDays(f.date))
+    .map((f) => ({
+      title: f.title,
+      url: `/nail-faqs/${f.slug}`,
+    }));
+
+  const pinterest = allPinterest
+    .filter((r) => isWithinLastNDays(r.date))
+    .map((r) => ({
+      title: r.title,
+      url: `/pinterest/${r.slug}`,
+    }));
+
+  const reports = allReports
+    .filter((r) => isWithinLastNDays(r.date))
+    .map((r) => ({
+      title: r.title,
+      url: `/trend-reports/${r.slug}`,
+    }));
+
+  return { blogs, shop, business, faqs, pinterest, reports };
+}
+
+const EXPLORE_LINKS = [
+  { href: '/trend-reports',     label: 'Trend Reports'    },
+  { href: '/nail-encyclopedia', label: 'Nail Encyclopedia' },
+  { href: '/blog',              label: 'Edits'            },
+  { href: '/shop',              label: 'Shop'             },
+  { href: '/inspo',             label: 'Designs'          },
+  { href: '/spotlight',         label: 'Spotlight'        },
+  { href: '/work-nails',        label: 'Work Nails'       },
+  { href: '/nail-faqs',         label: 'Nail FAQs'        },
+];
+
+const COMPANY_LINKS = [
+  { href: '/business',          label: 'Business'           },
+  { href: '/about',             label: 'About Us'           },
+  { href: '/authors',           label: 'Our Authors'        },
+  { href: '/work-with-us',      label: 'Work With Us'       },
+  { href: '/press',             label: 'Press'              },
+  { href: '/editorial-policy',  label: 'Editorial Policy'   },
+  { href: '/disclosures',       label: 'Disclosures'        },
+  { href: '/privacy-policy',    label: 'Privacy Policy'     },
+  { href: '/terms',             label: 'Terms & Conditions' },
+  { href: '/user-agreement',    label: 'User Agreement'     },
+  { href: '/contact',           label: 'Contact'            },
+];
+
+function SocialIcons() {
+  return (
+    <ul className="space-y-4">
+      <li>
+        <a
+          href="https://in.pinterest.com/mirelle_inspo/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="flex items-center gap-3 text-[#252220]/60 hover:text-[#252220] transition-colors"
+          aria-label="Pinterest"
+        >
+          <svg className="w-4 h-4 flex-shrink-0" fill="currentColor" viewBox="0 0 24 24">
+            <path d="M12 0C5.373 0 0 5.372 0 12c0 5.084 3.163 9.426 7.627 11.174-.105-.949-.2-2.405.042-3.441.218-.937 1.407-5.965 1.407-5.965s-.359-.719-.359-1.782c0-1.668.967-2.914 2.171-2.914 1.023 0 1.518.769 1.518 1.69 0 1.029-.655 2.568-.994 3.995-.283 1.194.599 2.169 1.777 2.169 2.133 0 3.772-2.249 3.772-5.495 0-2.873-2.064-4.882-5.012-4.882-3.414 0-5.418 2.561-5.418 5.207 0 1.031.397 2.138.893 2.738.098.119.112.224.083.345l-.333 1.36c-.053.22-.174.267-.402.161-1.499-.698-2.436-2.889-2.436-4.649 0-3.785 2.75-7.262 7.929-7.262 4.163 0 7.398 2.967 7.398 6.931 0 4.136-2.607 7.464-6.227 7.464-1.216 0-2.359-.631-2.75-1.378l-.748 2.853c-.271 1.043-1.002 2.35-1.492 3.146C9.57 23.812 10.763 24 12 24c6.627 0 12-5.373 12-12 0-6.628-5.373-12-12-12z"/>
+          </svg>
+          <span className="font-ui text-xs uppercase tracking-wide">Pinterest</span>
+        </a>
+      </li>
+      <li>
+        <a
+          href="https://instagram.com/mirelle_inspo"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="flex items-center gap-3 text-[#252220]/60 hover:text-[#252220] transition-colors"
+          aria-label="Instagram"
+        >
+          <svg className="w-4 h-4 flex-shrink-0" fill="currentColor" viewBox="0 0 24 24">
+            <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+          </svg>
+          <span className="font-ui text-xs uppercase tracking-wide">Instagram</span>
+        </a>
+      </li>
+      <li>
+        <a
+          href="https://x.com/mirelleinspo"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="flex items-center gap-3 text-[#252220]/60 hover:text-[#252220] transition-colors"
+          aria-label="X"
+        >
+          <svg className="w-4 h-4 flex-shrink-0" fill="currentColor" viewBox="0 0 24 24">
+            <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+          </svg>
+          <span className="font-ui text-xs uppercase tracking-wide">X</span>
+        </a>
+      </li>
+    </ul>
+  );
+}
+
+export default async function Footer() {
+  const currentYear = 2026;
+  const { blogs, shop, business, faqs, pinterest, reports } = await getFooterData();
+
+  return (
+    <footer className="bg-[#f9fafb] text-[#252220]">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 lg:py-16">
+
+        {/* Logo and bio */}
+        <div className="mb-10 pb-10 border-b border-[#252220]/20">
+          <Link href="/" className="inline-flex items-center gap-4 mb-5 group">
+            <div className="relative w-9 h-9 lg:w-11 lg:h-11 flex-shrink-0">
+              <Image
+                src="/favicon.svg"
+                alt="Mirellé Inspo"
+                fill
+                className="object-contain"
+              />
+            </div>
+            <span
+              className="font-brand text-xl lg:text-2xl tracking-wide"
+              data-logo="true"
+            >
+              Mirellé Inspo
+            </span>
+          </Link>
+          <p className="font-body text-[#252220]/55 text-sm max-w-xs leading-relaxed">
+            Curating so you don&apos;t have to.
+          </p>
+        </div>
+
+        {/* MOBILE ONLY - Socials shown first, never collapsed */}
+        <div className="lg:hidden mb-10">
+          <h3 className="font-ui text-xs uppercase tracking-widest text-[#252220]/40 mb-5">
+            Follow Along
+          </h3>
+          <SocialIcons />
+        </div>
+
+        {/* Latest from Mirellé - collapsible on both, same on all screens */}
+        <FooterClient
+          blogs={blogs}
+          shop={shop}
+          business={business}
+          faqs={faqs}
+          pinterest={pinterest}
+          reports={reports}
+        />
+
+        {/* MOBILE - Explore + Company collapsible accordions */}
+        <div className="lg:hidden">
+          <details className="group border-b border-[#252220]/20">
+            <summary className="w-full py-4 flex items-center justify-between text-left cursor-pointer list-none">
+              <h3 className="font-ui text-xs uppercase tracking-widest text-[#252220]/40">
+                Explore
+              </h3>
+              <svg className="w-4 h-4 transition-transform duration-200 group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M19 9l-7 7-7-7" />
+              </svg>
+            </summary>
+            <ul className="space-y-3 pb-5">
+              {EXPLORE_LINKS.map(({ href, label }) => (
+                <li key={href}>
+                  <Link href={href} className="font-body text-[#252220]/60 hover:text-[#252220] transition-colors text-sm block">
+                    {label}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </details>
+
+          <details className="group border-b border-[#252220]/20">
+            <summary className="w-full py-4 flex items-center justify-between text-left cursor-pointer list-none">
+              <h3 className="font-ui text-xs uppercase tracking-widest text-[#252220]/40">
+                Company
+              </h3>
+              <svg className="w-4 h-4 transition-transform duration-200 group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M19 9l-7 7-7-7" />
+              </svg>
+            </summary>
+            <ul className="space-y-3 pb-5">
+              {COMPANY_LINKS.map(({ href, label }) => (
+                <li key={href}>
+                  <Link href={href} className="font-body text-[#252220]/60 hover:text-[#252220] transition-colors text-sm block">
+                    {label}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </details>
+        </div>
+
+        {/* DESKTOP ONLY - Follow Along + Explore + Company, 3 columns, never collapsed */}
+        <div className="hidden lg:grid lg:grid-cols-3 lg:gap-16 lg:mt-10">
+
+          <div>
+            <h3 className="font-ui text-xs uppercase tracking-widest text-[#252220]/40 mb-5">
+              Follow Along
+            </h3>
+            <SocialIcons />
+          </div>
+
+          <div>
+            <h3 className="font-ui text-xs uppercase tracking-widest text-[#252220]/40 mb-5">
+              Explore
+            </h3>
+            <ul className="space-y-3">
+              {EXPLORE_LINKS.map(({ href, label }) => (
+                <li key={href}>
+                  <Link href={href} className="font-body text-[#252220]/60 hover:text-[#252220] transition-colors text-sm block">
+                    {label}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          <div>
+            <h3 className="font-ui text-xs uppercase tracking-widest text-[#252220]/40 mb-5">
+              Company
+            </h3>
+            <ul className="space-y-3">
+              {COMPANY_LINKS.map(({ href, label }) => (
+                <li key={href}>
+                  <Link href={href} className="font-body text-[#252220]/60 hover:text-[#252220] transition-colors text-sm block">
+                    {label}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
+
+        </div>
+      </div>
+
+      {/* Bottom bar */}
+      <div className="border-t border-[#252220]/20">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-5">
+          <p className="font-body text-[#252220]/35 text-xs text-center lg:text-left">
+            © {currentYear} Mirellé Inspo. All rights reserved.
+          </p>
+        </div>
+      </div>
+    </footer>
+  );
+}
+
+
+
+
+///////////////////////////////////
+/////////////////////////////////
+
+
+
+
+
+
+
+'use client';
+
+// src/components/FooterClient.tsx
+// "Latest from Mirellé" - collapsed by default on all screens.
+// Uses native <details>/<summary> for guaranteed collapse behavior, no state bugs.
+//
+// Shows only content published in the last 15 days, across 6 categories:
+// Edits (blog), Shop, Business, FAQs, Pinterest, Trend Reports.
+// A category with zero posts in the last 15 days is hidden entirely.
+
+import Link from 'next/link';
+
+interface FooterLink {
+  title: string;
+  url: string;
+}
+
+interface Props {
+  blogs: FooterLink[];
+  shop: FooterLink[];
+  business: FooterLink[];
+  faqs: FooterLink[];
+  pinterest: FooterLink[];
+  reports: FooterLink[];
+}
+
+function LinkGrid({ links }: { links: FooterLink[] }) {
+  const safeLinks = links ?? []; // defensive: never crash on a missing/undefined prop
+
+  return (
+    <ul className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-2">
+      {safeLinks.map((link) => (
+        <li key={link.url}>
+          <Link
+            href={link.url}
+            prefetch={false} // ← collapsed links: no need to prefetch until clicked
+            className="font-body text-[#252220]/55 hover:text-[#252220] transition-colors text-xs leading-snug block py-1 line-clamp-1"
+          >
+            {link.title}
+          </Link>
+        </li>
+      ))}
+    </ul>
+  );
+}
+
+function SubSection({ title, links }: { title: string; links: FooterLink[] }) {
+  const safeLinks = links ?? []; // defensive: never crash on a missing/undefined prop
+
+  // Hide the whole accordion row if this category has no posts in the window.
+  if (safeLinks.length === 0) return null;
+
+  return (
+    <details className="group border-t border-[#252220]/10">
+      <summary className="w-full py-3 flex items-center justify-between text-left cursor-pointer list-none">
+        <span className="font-ui text-xs uppercase tracking-widest text-[#252220]/40">
+          {title}
+        </span>
+        <svg
+          className="w-4 h-4 transition-transform duration-200 group-open:rotate-180"
+          fill="none"
+          stroke="currentColor"
+          viewBox="0 0 24 24"
+        >
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M19 9l-7 7-7-7" />
+        </svg>
+      </summary>
+      <div className="pb-5">
+        <LinkGrid links={safeLinks} />
+      </div>
+    </details>
+  );
+}
+
+export default function FooterClient({ blogs, shop, business, faqs, pinterest, reports }: Props) {
+  // If every category is empty (e.g. a quiet 15-day window), don't render
+  // an empty "Latest from Mirellé" shell at all.
+  const hasAnyContent =
+    blogs.length > 0 ||
+    shop.length > 0 ||
+    business.length > 0 ||
+    faqs.length > 0 ||
+    pinterest.length > 0 ||
+    reports.length > 0;
+
+  if (!hasAnyContent) return null;
+
+  return (
+    <details className="group mb-10 border-b border-[#252220]/20 pb-10">
+      <summary className="w-full py-4 flex items-center justify-between text-left cursor-pointer list-none">
+        <h3 className="font-ui text-sm uppercase tracking-widest text-[#252220]">
+          Latest from Mirellé
+        </h3>
+        <svg
+          className="w-4 h-4 transition-transform duration-200 group-open:rotate-180"
+          fill="none"
+          stroke="currentColor"
+          viewBox="0 0 24 24"
+        >
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M19 9l-7 7-7-7" />
+        </svg>
+      </summary>
+
+      <div className="mt-1">
+        <SubSection title="Edits" links={blogs} />
+        <SubSection title="Shop" links={shop} />
+        <SubSection title="Business" links={business} />
+        <SubSection title="FAQs" links={faqs} />
+        <SubSection title="Pinterest" links={pinterest} />
+        <SubSection title="Trend Reports" links={reports} />
+      </div>
+    </details>
+  );
+}
+
