@@ -1,0 +1,172 @@
+{
+  "section_1_file_authority": {
+    "statement": "THIS FILE IS THE SINGLE SOURCE OF TRUTH FOR THE NAIL FEED POST GEN AGENT. All values in POST_CONSTANTS are hardcoded. All entities, sentiment/trend rationale, emotion trigger, structure, and links defined here must be followed exactly."
+  },
+  "section_2_post_constants": {
+    "slug": "lifted-gel-nail-infection-risk-after-trauma",
+    "canonical": "https://mirelleinspo.com/nail-feed/lifted-gel-nail-infection-risk-after-trauma",
+    "word_count": 1500,
+    "image_count": 4,
+    "category": "Nail Health & Safety",
+    "publish_date": "2026-08-29",
+    "author": "jyoti-mirelle"
+  },
+  "section_3_sentiment_and_entity_brief": {
+    "sentiment_read": "negative",
+    "the_specific_frustration_or_desire": "Readers describe a sudden, painful, often frightening moment: a gel or acrylic nail catches on a sweater, a door, a jar lid, and rips partway or fully off, sometimes taking part of the natural nail with it. The dominant emotion is fear and uncertainty, not just discomfort, they specifically want to know 'is this infected' and 'do I need a doctor', and are searching for concrete red flags (redness, heat, throbbing, pus) because they cannot tell if what they're feeling is normal healing pain or a worsening infection.",
+    "named_entities": "lifted gel nail, nail trauma, paronychia, Staphylococcus aureus, nail bed, onycholysis, red streaking (lymphangitis), pus/abscess",
+    "trend_velocity": "sustained (evergreen, non-seasonal): this is a recurring, always-present real-world accident scenario rather than a trending topic, but Quora shows a steady stream of fresh, urgent questions posted year-round, confirming persistent search and click demand rather than a fading interest",
+    "why_now_rationale": "Trauma-related nail detachment is a common, embarrassing-to-Google-at-2am scenario, people search for it the moment it happens to them rather than in advance, meaning demand is constant and click intent is high whenever the post surfaces in a feed for someone who has just experienced this.",
+    "saturation_check": "under-covered from the specific DIY/nail-enhancement angle: existing coverage splits between generic podiatry/dermatology trauma advice (not enhancement-specific) and one-off Quora answers with no structured post pulling the enhancement-specific infection-risk angle together. Differentiation angle: frame this specifically around gel/acrylic-covered nails catching on fabric or objects, not generic nail trauma."
+  },
+  "section_4_engagement_widgets": {
+    "reaction_bar": "default",
+    "poll_or_quiz_selected": "poll",
+    "selection_rationale": "Quora research shows a genuine, real split in how people react to a partially lifted nail after trauma: some rip/trim it off immediately for relief, others try to save it by taping or bandaging it back down out of fear or attachment to the set, this is a real behavioral fork the audience argues about (multiple threads debate 'should I just rip it off or leave it'), not an invented binary. A quiz was considered but rejected: the topic doesn't have genuine branching outcomes/types, it's a single risk-explainer post, not a sorting experience.",
+    "poll_content": {
+      "id": "lifted-nail-trauma-reaction-poll",
+      "question": "Your nail half-rips off after catching on something. What's your first move?",
+      "options": [
+        {"id": "a", "label": "Rip or trim off the loose part immediately"},
+        {"id": "b", "label": "Tape or bandage it back down and hope for the best"},
+        {"id": "c", "label": "Panic and Google it before touching anything"},
+        {"id": "d", "label": "Straight to urgent care, no messing around"}
+      ]
+    }
+  },
+  "section_5_hook_and_ctr": {
+    "selected_trigger": "Trigger 2 — Negative angle plus solution",
+    "trigger_rationale": "Phase_1's sentiment_read is clearly negative and fear-driven, real Quora questions show acute pain, panic, and genuine confusion over whether a symptom means infection, this is a textbook confirmed common frustration, not a manufactured one, so the sharp problem-first framing fits better than FOMO or identity framing.",
+    "title": "Your gel nail ripped off. Here's when that becomes an infection",
+    "title_char_count": 61,
+    "excerpt": "That sudden rip after catching your nail isn't just painful, it can open the door to infection fast. Here's exactly what to watch for and when to worry.",
+    "excerpt_char_count": 155,
+    "intro_hook_brief": "Open on the exact moment: a nail catching on a sweater, car door, or jar lid and tearing partway off. Validate the shock and pain first, then pivot immediately into the real stakes, that this specific kind of injury creates a direct entry point for bacteria, which is why it needs different handling than ordinary nail damage.",
+    "hero_image_emotional_beat": "The specific visual moment of a gel-polished nail visibly lifted/torn at the edge, catching the exact 'oh no' beat the title names, not a generic manicure shot."
+  },
+  "section_6_hero_image_brief": {
+    "imageAlt": "Gel-polished fingernail visibly lifted and torn at the edge after catching on fabric, red skin around the nail bed, studio lighting.",
+    "image_filename_brief": "lifted-gel-nail-torn-edge-infection-risk-studio-light-2026.webp",
+    "tag_for_downstream_prompt": "For Google Discover hero image: high contrast, thumbnail-style, click-optimised, paired with the title 'Your gel nail ripped off. Here's when that becomes an infection.'"
+  },
+  "section_7_content_structure": {
+    "h2_structure": [
+      "Why a lifted or torn gel nail is different from a normal chip",
+      "The early signs that mean it's healing, not infecting",
+      "The red flags that mean you need a doctor, not a bandage",
+      "What to do in the first hour after it happens",
+      "How to protect it while the natural nail grows back"
+    ],
+    "word_budget": {
+      "intro": "140 words",
+      "h2_1": "230 words",
+      "h2_2": "260 words",
+      "h2_3": "280 words",
+      "h2_4": "290 words",
+      "h2_5": "220 words",
+      "conclusion": "100 words"
+    }
+  },
+  "section_8_links": {
+    "all_links": [
+      {
+        "url": "https://www.quora.com/Should-I-go-to-urgent-care-of-both-thumb-nails-with-acrylic-completely-ripped-off-but-still-attached-at-the-very-bottom-Hurts-like-hell-is-puss-like",
+        "anchor_text": "real accounts of nail techs and readers dealing with a torn-off acrylic nail",
+        "placement_section": "Intro",
+        "link_type": "external"
+      },
+      {
+        "url": "https://my.clevelandclinic.org/health/diseases/15327-nail-infection-paronychia",
+        "anchor_text": "how paronychia develops after trauma to the nail fold",
+        "placement_section": "The red flags that mean you need a doctor, not a bandage",
+        "link_type": "external"
+      },
+      {
+        "url": "https://www.aad.org/public/everyday-care/nail-care-secrets/basics/injured-nail",
+        "anchor_text": "board-certified dermatologists' first-aid steps for an injured nail",
+        "placement_section": "What to do in the first hour after it happens",
+        "link_type": "external"
+      }
+    ]
+  },
+  "section_9_topical_map": {
+    "topic": "absent",
+    "parentPillar": "absent",
+    "relatedClusters": [
+      "why-did-my-gel-nail-come-off-completely-after-catching-on-my-sweater",
+      "is-it-dangerous-if-a-nail-enhancement-rips-off-with-the-natural-nail-attached"
+    ],
+    "primaryKeyword": "lifted gel nail infection risk",
+    "secondaryKeywords": ["nail trauma infection", "torn gel nail infection signs", "paronychia after nail injury"],
+    "topicalBoundary": "absent"
+  },
+  "section_10_voice_tone": {
+    "recommended_voice": "Sharp and direct, reassuring undertone",
+    "tone_characteristics": [
+      "Direct and unflinching about the real risk, matching the negative-angle trigger",
+      "Validates the reader's fear without amplifying panic",
+      "Concrete and instructional rather than vague, mirrors the sentiment_read finding that readers want specific red-flag criteria, not general reassurance",
+      "Fast-paced in the early paragraphs to match the urgency in the actual Quora questions researched"
+    ],
+    "audience_match": "This reader just experienced a painful, frightening accident and is searching for the article mid-panic, they need clear, validating, no-fluff direction fast, not a leisurely or breathless tone."
+  },
+  "section_11_execution_plan": {
+    "block_1_entity_and_keyword_execution": {
+      "named_entities_to_surface_early": "lifted gel nail, nail trauma, paronychia, nail bed",
+      "primary_keyword_if_any": "lifted gel nail infection risk",
+      "strong_tag_note": "Only apply <strong> to 'lifted gel nail infection risk' if it appears naturally within the first 100 words, never forced."
+    },
+    "block_2_word_and_image_plan": {
+      "total_word_target": "1500, ±50",
+      "introduction": "140 words",
+      "conclusion": "100 words",
+      "h2_budgets": [
+        {"heading": "Why a lifted or torn gel nail is different from a normal chip", "budget": "230 words"},
+        {"heading": "The early signs that mean it's healing, not infecting", "budget": "260 words"},
+        {"heading": "The red flags that mean you need a doctor, not a bandage", "budget": "280 words"},
+        {"heading": "What to do in the first hour after it happens", "budget": "290 words"},
+        {"heading": "How to protect it while the natural nail grows back", "budget": "220 words"}
+      ],
+      "image_assignments": [
+        {"image_number": 1, "place_after": "intro", "section_context": "inspirational nail design shot only, close-up of a healthy manicured hand for visual contrast with the injury topic", "path": "/images/nail-feed/lifted-gel-nail-infection-risk-after-trauma/lifted-gel-nail-torn-edge-infection-risk-studio-light-2026.webp"},
+        {"image_number": 2, "place_after": "Why a lifted or torn gel nail is different from a normal chip", "section_context": "inspirational nail design shot only, neat gel manicure close-up", "path": "/images/nail-feed/lifted-gel-nail-infection-risk-after-trauma/image-2.webp"},
+        {"image_number": 3, "place_after": "The red flags that mean you need a doctor, not a bandage", "section_context": "inspirational nail design shot only, hands with short, healthy natural nails", "path": "/images/nail-feed/lifted-gel-nail-infection-risk-after-trauma/image-3.webp"},
+        {"image_number": 4, "place_after": "How to protect it while the natural nail grows back", "section_context": "inspirational nail design shot only, hands with a simple protective/neutral polish look", "path": "/images/nail-feed/lifted-gel-nail-infection-risk-after-trauma/image-4.webp"}
+      ]
+    },
+    "block_3_opening_technique_assignments": {
+      "rule": "No two consecutive sections same technique. Conclusion = Technique 1 or 3 only.",
+      "assignments": [
+        {"section": "Introduction", "technique": "Technique 2 — direct scenario cold open"},
+        {"section": "Why a lifted or torn gel nail is different from a normal chip", "technique": "Technique 1 — direct explanatory statement"},
+        {"section": "The early signs that mean it's healing, not infecting", "technique": "Technique 3 — reader-address question"},
+        {"section": "The red flags that mean you need a doctor, not a bandage", "technique": "Technique 1 — direct explanatory statement"},
+        {"section": "What to do in the first hour after it happens", "technique": "Technique 3 — reader-address question"},
+        {"section": "How to protect it while the natural nail grows back", "technique": "Technique 1 — direct explanatory statement"},
+        {"section": "Conclusion", "technique": "Technique 3"}
+      ]
+    },
+    "block_4_link_placements": {
+      "links": [
+        {"anchor_text": "real accounts of nail techs and readers dealing with a torn-off acrylic nail", "full_url": "https://www.quora.com/Should-I-go-to-urgent-care-of-both-thumb-nails-with-acrylic-completely-ripped-off-but-still-attached-at-the-very-bottom-Hurts-like-hell-is-puss-like", "place_in_section": "Intro", "link_type": "external"},
+        {"anchor_text": "how paronychia develops after trauma to the nail fold", "full_url": "https://my.clevelandclinic.org/health/diseases/15327-nail-infection-paronychia", "place_in_section": "The red flags that mean you need a doctor, not a bandage", "link_type": "external"},
+        {"anchor_text": "board-certified dermatologists' first-aid steps for an injured nail", "full_url": "https://www.aad.org/public/everyday-care/nail-care-secrets/basics/injured-nail", "place_in_section": "What to do in the first hour after it happens", "link_type": "external"},
+        {"anchor_text": "why the gel nail came off completely in the first place", "full_url": "[from Bucket Explorer: title 'Why did my gel nail come off completely after catching on my sweater' — resolve actual URL upstream]", "place_in_section": "Why a lifted or torn gel nail is different from a normal chip", "link_type": "nailfeed-sibling"},
+        {"anchor_text": "what happens when the natural nail rips off too", "full_url": "[from Bucket Explorer: title 'Is it dangerous if a nail enhancement rips off with the natural nail attached' — resolve actual URL upstream]", "place_in_section": "The red flags that mean you need a doctor, not a bandage", "link_type": "nailfeed-sibling"}
+      ]
+    },
+    "block_5_active_constraints": {
+      "em_dash_banned": "confirmed active",
+      "british_english_active": "confirmed active",
+      "min_h2_reminder": "at least 3 H2s — hard technical requirement, needed for full widget placement including social CTA slot (5 H2s used here)",
+      "word_count_reminder": "1500 target, depth not padding",
+      "image_count_reminder": "4 total: 1 hero + 3 body, fixed — locked value, Post Gen Agent must not scale this up or down",
+      "hero_image_reminder": "frontmatter only, never in body; alt text and filename only from this file, visual concept comes from a separate downstream prompt; image path is /images/nail-feed/lifted-gel-nail-infection-risk-after-trauma/{filename}.webp"
+    },
+    "block_6_widget_execution": {
+      "reaction_bar": "omit frontmatter entirely, default applies automatically",
+      "poll_or_quiz": "write frontmatter for poll only, using section_4's poll_content exactly as given, never write quiz",
+      "reminder": "Poll and quiz are mutually exclusive at the template level, this file specifies poll only."
+    }
+  }
+}
