@@ -1,0 +1,170 @@
+{
+  "section_1_file_authority": {
+    "statement": "THIS FILE IS THE SINGLE SOURCE OF TRUTH FOR THE NAIL FEED POST GEN AGENT. All values in POST_CONSTANTS are hardcoded. All entities, sentiment/trend rationale, emotion trigger, structure, and links defined here must be followed exactly."
+  },
+  "section_2_post_constants": {
+    "slug": "why-do-my-eyelids-swell-after-getting-gel-nails",
+    "canonical": "https://mirelleinspo.com/nail-feed/why-do-my-eyelids-swell-after-getting-gel-nails",
+    "word_count": 1500,
+    "image_count": 4,
+    "category": "Nail Health & Safety",
+    "publish_date": "2026-09-05",
+    "author": "jyoti-mirelle"
+  },
+  "section_3_sentiment_and_entity_brief": {
+    "sentiment_read": "negative",
+    "the_specific_frustration_or_desire": "Readers are alarmed and confused because the connection is completely counterintuitive: their eyes are reacting, not their hands, so they blame eye cream, makeup, or laundry detergent for days before ever suspecting their manicure. Real accounts describe itchy, red, puffy eyelids appearing within an hour to 72 hours of a gel appointment, sometimes after years of getting gel nails with zero prior issues, which deepens the confusion ('why now, after years of the same thing').",
+    "named_entities": "eyelid dermatitis, gel manicure, acrylates / (meth)acrylates, HEMA (2-hydroxyethyl methacrylate), ectopic contact dermatitis, allergic contact dermatitis, sensitization",
+    "trend_velocity": "sustained, with a fresh resurging wave right now: originally spiked in search in 2023 (Refinery29 reported 'Gel-X allergy' and 'gel nail allergy' search spikes), and is actively resurging through 2026 dermatologist-led TikTok content (posted as recently as March 2026) and fresh dermatologist press coverage (Yahoo/Women's Health, Nov 2025; HeyAllergy clinical explainer, Feb-Mar 2026). This is a recurring media cycle, not a single spike, and it is warm right now.",
+    "why_now_rationale": "Multiple board-certified dermatologists went on record in late 2025/2026 describing this as an under-recognised pattern they are actively seeing more of in clinic, directly coinciding with the continued rise of at-home and salon gel/BIAB manicures; TikTok's dermatology community picked the topic back up in March 2026, keeping it in active circulation.",
+    "saturation_check": "under-covered from a Discover-friendly reader angle. Existing coverage is either dense clinical/allergist content (HeyAllergy, AAFA) or fragmented TikTok clips — nothing in the space frames it as a clean, empathetic 'why is THIS happening to me' explainer aimed at everyday gel-manicure wearers. Differentiation angle: lead with the confusing cause-and-effect mismatch, then deliver the same clinical substance in plain, reassuring language."
+  },
+  "section_4_engagement_widgets": {
+    "reaction_bar": "default",
+    "poll_or_quiz_selected": "poll",
+    "selection_rationale": "Research surfaced a genuine, recurring either/or in the actual conversation: readers consistently frame this as 'wait, is it really my NAILS?' versus assuming it's something else entirely (eye cream, makeup, allergies, laundry detergent) — a real split documented directly in the AAFA reader question and repeated across TikTok comments. This is a real audience debate, not an invented one, so a poll fits; a quiz does not, since there are no genuinely distinct branching outcomes here (the diagnosis and guidance path is the same for everyone).",
+    "poll_content": {
+      "id": "eyelid-swelling-suspect",
+      "question": "Before reading this, what did you think was causing your eyelid swelling?",
+      "options": [
+        {"id": "a", "label": "I assumed it was my eye cream or makeup"},
+        {"id": "b", "label": "I blamed allergies or something in the air"},
+        {"id": "c", "label": "I had no idea and it scared me"},
+        {"id": "d", "label": "I already suspected my gel nails"}
+      ]
+    }
+  },
+  "section_5_hook_and_ctr": {
+    "selected_trigger": "Trigger 1 — Curiosity Gap",
+    "trigger_rationale": "Phase_1's sentiment_read is negative but the dominant emotional charge is confusion and disbelief at a non-obvious cause-and-effect link, not straightforward frustration with a product failing — dermatologists themselves note patients are 'usually surprised by the connection,' which is the textbook curiosity-gap signal.",
+    "title": "Why your eyelids swell after gel nails (it's not your eye cream)",
+    "title_char_count": 61,
+    "excerpt": "Puffy, itchy eyelids after a gel manicure feel random, but dermatologists say the real cause is hiding in plain sight on your fingertips.",
+    "excerpt_char_count": 139,
+    "intro_hook_brief": "Open on the exact confusing moment: eyelids puffy and itchy within a day of a fresh gel set, while every instinct points to eye cream or allergies instead of the manicure. Name the disconnect immediately, then promise the real explanation.",
+    "hero_image_emotional_beat": "The specific visual moment of someone gently touching or noticing the delicate, slightly swollen skin at their eyelid, with freshly done glossy gel nails clearly in frame — the exact 'wait, is it my NAILS' juxtaposition the title names."
+  },
+  "section_6_hero_image_brief": {
+    "imageAlt": "Woman gently touching swollen red eyelid with glossy fresh gel manicure visible on fingertips, close-up studio lighting shot",
+    "image_filename_brief": "swollen-eyelid-gel-manicure-fingertips-closeup-studio-2026.webp",
+    "tag_for_downstream_prompt": "For Google Discover hero image: high-contrast, thumbnail-style, click-optimised, must pair with the title 'Why your eyelids swell after gel nails (it's not your eye cream)' — the gel nails and the eyelid need to be visible in the same frame to sell the surprising connection instantly."
+  },
+  "section_7_content_structure": {
+    "h2_structure": [
+      "The confusing symptom nobody links to their manicure",
+      "What's actually happening: acrylates and 'ectopic' reactions",
+      "Why this can happen even after years of gel nails with no issues",
+      "How to tell it's your gel nails and not something else",
+      "What to do the moment you notice swelling",
+      "How to keep wearing gel nails without the reaction coming back"
+    ],
+    "word_budget": {
+      "intro": "140 words",
+      "The confusing symptom nobody links to their manicure": "180 words",
+      "What's actually happening: acrylates and 'ectopic' reactions": "260 words",
+      "Why this can happen even after years of gel nails with no issues": "220 words",
+      "How to tell it's your gel nails and not something else": "220 words",
+      "What to do the moment you notice swelling": "220 words",
+      "How to keep wearing gel nails without the reaction coming back": "160 words",
+      "conclusion": "100 words"
+    }
+  },
+  "section_8_links": {
+    "all_links": [
+      {
+        "url": "[internal-link-placeholder: Why does a lifted gel nail increase infection risk after trauma]",
+        "anchor_text": "why a lifted gel nail can raise your infection risk",
+        "placement_section": "How to tell it's your gel nails and not something else",
+        "link_type": "nailfeed-sibling"
+      },
+      {
+        "url": "[internal-link-placeholder: Why is the skin around my nails itchy after a gel manicure]",
+        "anchor_text": "itchy skin around your nails after a gel manicure",
+        "placement_section": "The confusing symptom nobody links to their manicure",
+        "link_type": "nailfeed-sibling"
+      },
+      {
+        "url": "https://www.heyallergy.com/blog/acrylic-gel-nail-allergies-what-to-change",
+        "anchor_text": "a board-certified allergist's breakdown of acrylate allergy symptoms and product switches",
+        "placement_section": "What's actually happening: acrylates and 'ectopic' reactions",
+        "link_type": "external"
+      },
+      {
+        "url": "https://community.aafa.org/db/ask-the-allergist/record/am-i-allergic-to-gel-nails-nail-polish",
+        "anchor_text": "the Asthma and Allergy Foundation of America's guidance on gel nail allergies",
+        "placement_section": "What to do the moment you notice swelling",
+        "link_type": "external"
+      }
+    ]
+  },
+  "section_9_topical_map": {},
+  "section_10_voice_tone": {
+    "recommended_voice": "Warm expert, reassuring but direct",
+    "tone_characteristics": [
+      "Validates the reader's confusion and mild alarm without escalating it into panic, since sentiment_read is negative/worried rather than angry",
+      "Explains the acrylate/ectopic-dermatitis mechanism in plain, confident language befitting the curiosity-gap trigger, resolving the 'why' quickly rather than dragging out suspense",
+      "Steady and credible, leaning on the real dermatologist quotes uncovered in research rather than vague reassurance"
+    ],
+    "audience_match": "This reader is worried but not in crisis, and their overriding need per phase_1 is to understand a genuinely surprising cause-and-effect link, so a calm, explain-it-clearly voice matches their actual emotional state better than either alarm or breezy dismissal."
+  },
+  "section_11_execution_plan": {
+    "block_1_entity_and_keyword_execution": {
+      "named_entities_to_surface_early": "eyelid dermatitis, gel manicure, acrylates, HEMA",
+      "primary_keyword_if_any": "eyelids swell after gel nails",
+      "strong_tag_note": "Only apply <strong> to 'eyelid dermatitis' or 'acrylates' the first time each appears naturally in the intro/first H2 — never forced."
+    },
+    "block_2_word_and_image_plan": {
+      "total_word_target": "1500, ±50",
+      "introduction": "140 words",
+      "conclusion": "100 words",
+      "h2_budgets": [
+        {"heading": "The confusing symptom nobody links to their manicure", "budget": "180 words"},
+        {"heading": "What's actually happening: acrylates and 'ectopic' reactions", "budget": "260 words"},
+        {"heading": "Why this can happen even after years of gel nails with no issues", "budget": "220 words"},
+        {"heading": "How to tell it's your gel nails and not something else", "budget": "220 words"},
+        {"heading": "What to do the moment you notice swelling", "budget": "220 words"},
+        {"heading": "How to keep wearing gel nails without the reaction coming back", "budget": "160 words"}
+      ],
+      "image_assignments": [
+        {"image_number": 1, "place_after": "hero, frontmatter only", "section_context": "inspirational nail design shot only — glossy fresh gel manicure, hands framed elegantly", "path": "/images/nail-feed/why-do-my-eyelids-swell-after-getting-gel-nails/swollen-eyelid-gel-manicure-fingertips-closeup-studio-2026.webp"},
+        {"image_number": 2, "place_after": "The confusing symptom nobody links to their manicure", "section_context": "inspirational nail design shot only — clean glossy gel manicure in natural light", "path": "/images/nail-feed/why-do-my-eyelids-swell-after-getting-gel-nails/image-2.webp"},
+        {"image_number": 3, "place_after": "Why this can happen even after years of gel nails with no issues", "section_context": "inspirational nail design shot only — soft neutral gel manicure, hands relaxed", "path": "/images/nail-feed/why-do-my-eyelids-swell-after-getting-gel-nails/image-3.webp"},
+        {"image_number": 4, "place_after": "How to keep wearing gel nails without the reaction coming back", "section_context": "inspirational nail design shot only — polished, healthy-looking gel manicure as a positive closing visual", "path": "/images/nail-feed/why-do-my-eyelids-swell-after-getting-gel-nails/image-4.webp"}
+      ]
+    },
+    "block_3_opening_technique_assignments": {
+      "rule": "No two consecutive sections same technique. Conclusion = Technique 1 or 3 only.",
+      "assignments": [
+        {"section": "Introduction", "technique": "Technique 2 — direct scenario/relatable moment"},
+        {"section": "The confusing symptom nobody links to their manicure", "technique": "Technique 1 — direct question"},
+        {"section": "What's actually happening: acrylates and 'ectopic' reactions", "technique": "Technique 3 — plain statement of fact"},
+        {"section": "Why this can happen even after years of gel nails with no issues", "technique": "Technique 1 — direct question"},
+        {"section": "How to tell it's your gel nails and not something else", "technique": "Technique 2 — direct scenario/relatable moment"},
+        {"section": "What to do the moment you notice swelling", "technique": "Technique 3 — plain statement of fact"},
+        {"section": "How to keep wearing gel nails without the reaction coming back", "technique": "Technique 1 — direct question"},
+        {"section": "Conclusion", "technique": "Technique 3 — plain statement of fact"}
+      ]
+    },
+    "block_4_link_placements": {
+      "links": [
+        {"anchor_text": "itchy skin around your nails after a gel manicure", "full_url": "[internal-link-placeholder: Why is the skin around my nails itchy after a gel manicure]", "place_in_section": "The confusing symptom nobody links to their manicure", "link_type": "nailfeed-sibling"},
+        {"anchor_text": "a board-certified allergist's breakdown of acrylate allergy symptoms and product switches", "full_url": "https://www.heyallergy.com/blog/acrylic-gel-nail-allergies-what-to-change", "place_in_section": "What's actually happening: acrylates and 'ectopic' reactions", "link_type": "external"},
+        {"anchor_text": "why a lifted gel nail can raise your infection risk", "full_url": "[internal-link-placeholder: Why does a lifted gel nail increase infection risk after trauma]", "place_in_section": "How to tell it's your gel nails and not something else", "link_type": "nailfeed-sibling"},
+        {"anchor_text": "the Asthma and Allergy Foundation of America's guidance on gel nail allergies", "full_url": "https://community.aafa.org/db/ask-the-allergist/record/am-i-allergic-to-gel-nails-nail-polish", "place_in_section": "What to do the moment you notice swelling", "link_type": "external"}
+      ]
+    },
+    "block_5_active_constraints": {
+      "em_dash_banned": "confirmed active",
+      "british_english_active": "confirmed active",
+      "min_h2_reminder": "6 H2s used — well above the 3 minimum, full widget placement supported including social CTA slot",
+      "word_count_reminder": "1500 target, depth not padding",
+      "image_count_reminder": "4 total: 1 hero + 3 body, fixed — locked value, Post Gen Agent must not scale this up or down",
+      "hero_image_reminder": "frontmatter only, never in body; alt text and filename only from this file, visual concept comes from a separate downstream prompt; image path is /images/nail-feed/why-do-my-eyelids-swell-after-getting-gel-nails/{filename}.webp"
+    },
+    "block_6_widget_execution": {
+      "reaction_bar": "omit frontmatter entirely — default applies automatically",
+      "poll_or_quiz": "write poll frontmatter exactly as given in section_4 — do not write quiz frontmatter",
+      "reminder": "Poll and quiz are mutually exclusive at the template level."
+    }
+  }
+}
