@@ -1,0 +1,197 @@
+{
+  "section_1_file_authority": {
+    "statement": "THIS FILE IS THE SINGLE SOURCE OF TRUTH FOR THE NAIL FEED POST GEN AGENT. All values in POST_CONSTANTS are hardcoded. All entities, sentiment/trend rationale, emotion trigger, structure, and links defined here must be followed exactly."
+  },
+  "section_2_post_constants": {
+    "slug": "why-is-the-skin-around-my-nails-itchy-after-a-gel-manicure",
+    "canonical": "https://mirelleinspo.com/nail-feed/why-is-the-skin-around-my-nails-itchy-after-a-gel-manicure",
+    "word_count": 1500,
+    "image_count": 4,
+    "category": "Nail Health & Troubleshooting",
+    "publish_date": "2026-09-05",
+    "author": "jyoti-mirelle"
+  },
+  "section_3_sentiment_and_entity_brief": {
+    "post_gen_instruction": "This is the primary creative context for the whole post — the real emotional territory this post is built on, and what it's specifically about. Named entities should appear clearly and early in the post.",
+    "sentiment_read": "negative",
+    "the_specific_frustration_or_desire": "People notice a mild itch or tickle around the cuticle 12-48 hours after a gel manicure and dismiss it as dry skin, put lotion on it, and ignore it — then it comes back worse after the next fill, and worse again after the one after that, until they're waking up scratching their fingers and don't understand why something that never bothered them before suddenly feels unbearable. Several real accounts describe this exact arc: the itch starts small, gets brushed off, and only becomes alarming once blisters or spreading skin reactions show up.",
+    "named_entities": "HEMA (2-hydroxyethyl methacrylate), allergic contact dermatitis, methacrylate/acrylate sensitization, gel manicure, HEMA-free gel polish",
+    "trend_velocity": "rising, genuinely warm right now",
+    "why_now_rationale": "An EU restriction on TPO and tightened HEMA rules that took effect in September 2025 has pushed gel polish brands worldwide to reformulate through 2026, and nail-industry coverage this year describes the HEMA conversation as having genuinely intensified, with dermatology sources tracking rising case rates tied specifically to gel manicures and at-home gel kits.",
+    "saturation_check": "under-covered at the reader-facing level — most existing coverage is either dense clinical/dermatology literature (patch-test studies, journal case reports) or brand content selling HEMA-free product lines. There is a real gap for a plain-language post that walks a first-time itcher through what's actually happening and what to do next, without either the dermatology jargon or the sales pitch."
+  },
+  "section_4_engagement_widgets": {
+    "post_gen_instruction": "Reaction Bar: write the custom frontmatter reaction block if provided below, otherwise omit entirely (post falls back to the route's hardcoded default automatically — no frontmatter needed for the default case). Poll/Quiz: write frontmatter for whichever ONE was selected below, exactly as given, never both. If this section explicitly states neither was selected, omit both poll and quiz from frontmatter entirely — this is a correct, deliberate outcome, not a gap.",
+    "reaction_bar": "default",
+    "poll_or_quiz_selected": "poll",
+    "selection_rationale": "Research surfaced a real, recurring either/or readers face once they suspect this is an allergy: several accounts describe trying to push through with a different brand or a 'gentler' salon before finally giving up gel altogether, while others switch straight to HEMA-free and keep going — this is a genuine present-tense fork in the actual conversation, not an invented one, so Poll fits and Quiz does not (there's no genuine multi-outcome branching territory here, just one real decision point).",
+    "poll_content": {
+      "id": "gel-itch-next-step-poll",
+      "question": "Your cuticles are itchy after gel. What's your next move?",
+      "options": [
+        {"id": "hema-free", "label": "Switch to HEMA-free and keep wearing gel"},
+        {"id": "quit-gel", "label": "Give up gel manicures for good"},
+        {"id": "wait-see", "label": "Wait and see if it happens again"},
+        {"id": "see-derm", "label": "See a dermatologist before deciding"}
+      ]
+    }
+  },
+  "section_5_hook_and_ctr": {
+    "post_gen_instruction": "READ BEFORE WRITING TITLE, EXCERPT, INTRO, OR FIRST H2. Title and excerpt are hardcoded — use exactly. Title length range is 45-70 characters (Discover feed range, not a SERP-derived cap) — see phase_4.",
+    "selected_trigger": "Trigger 2 — Negative angle plus solution",
+    "trigger_rationale": "Phase_1 research confirms a genuinely negative, recurring frustration (an itch that's dismissed, then returns worse) rather than excitement or a knowledge gap alone, so the post should name the problem sharply before offering the fix.",
+    "title": "Itchy skin around your nails after gel? Here's what it means",
+    "title_char_count": 61,
+    "excerpt": "That itch after your gel manicure isn't dry skin. Here's how to tell if it's an allergy, and what actually stops it for good.",
+    "excerpt_char_count": 128,
+    "intro_hook_brief": "Open on the exact real-world arc from research: the itch that shows up a day after a gel fill, gets blamed on dry skin, and comes back stronger next time. Name that it's not what most people assume, then promise the read will explain what it actually is and what changes.",
+    "hero_image_emotional_beat": "The specific visual moment the title implies: a close, high-contrast shot of fingertips with visibly irritated, reddened skin right at the cuticle line around a fresh gel manicure — the exact 'is this normal' moment the title opens with."
+  },
+  "section_6_hero_image_brief": {
+    "post_gen_instruction": "Use imageAlt exactly as given. image_filename_brief is a naming reference for the actual hero image file, which will be saved at /images/nail-feed/{slug}/{filename}.webp. This section does NOT include a visual concept/mood description — that lives in a separate downstream image-generation prompt the user runs independently.",
+    "imageAlt": "Red, irritated skin around the cuticles on a manicured hand with fresh gel polish, close-up showing an allergic skin reaction near the nail",
+    "image_filename_brief": "itchy-red-cuticle-skin-gel-manicure-allergic-reaction-closeup-2026.webp",
+    "tag_for_downstream_prompt": "Google Discover hero image — high contrast, thumbnail-style, click-optimised, must pair with the title 'Itchy skin around your nails after gel? Here's what it means.'"
+  },
+  "section_7_content_structure": {
+    "post_gen_instruction": "H2 structure followed exactly — no renaming, no reordering without user instruction.",
+    "h2_structure": [
+      "It's probably not dry skin",
+      "How to tell an allergy apart from an infection or a heat spike",
+      "Why this itch keeps coming back worse",
+      "What to do the moment you notice it",
+      "Switching to HEMA-free without giving up gel"
+    ],
+    "word_budget": {
+      "intro": "140 words",
+      "It's probably not dry skin": "220 words",
+      "How to tell an allergy apart from an infection or a heat spike": "280 words",
+      "Why this itch keeps coming back worse": "260 words",
+      "What to do the moment you notice it": "300 words",
+      "Switching to HEMA-free without giving up gel": "200 words",
+      "conclusion": "100 words"
+    }
+  },
+  "section_8_links": {
+    "post_gen_instruction": "Every link below appears in the post, woven naturally, verbatim URLs and anchors exactly as given/discovered. 2-3 internal + 2-3 external maximum. Internal links are pre-resolved (from Bucket Explorer JSON, Mode A2) or absent (Mode A/B one-off) — this agent never live-searches for internal links. External links are freshly researched here every time.",
+    "all_links": [
+      {
+        "url": "https://mirelleinspo.com/nail-feed/why-do-my-eyelids-swell-after-getting-gel-nails",
+        "anchor_text": "why eyelid swelling can follow a gel manicure",
+        "placement_section": "How to tell an allergy apart from an infection or a heat spike",
+        "link_type": "nailfeed-sibling"
+      },
+      {
+        "url": "https://mirelleinspo.com/nail-feed/what-does-an-acrylate-allergy-from-acrylic-nails-look-like",
+        "anchor_text": "what a full acrylate allergy looks like beyond just the cuticle skin",
+        "placement_section": "Why this itch keeps coming back worse",
+        "link_type": "nailfeed-sibling"
+      },
+      {
+        "url": "https://www.jaad.org/article/S0190-9622(24)02655-0/fulltext",
+        "anchor_text": "a American Academy of Dermatology-published review of allergens in at-home acrylic manicure kits",
+        "placement_section": "Why this itch keeps coming back worse",
+        "link_type": "external"
+      },
+      {
+        "url": "https://pubmed.ncbi.nlm.nih.gov/38093676/",
+        "anchor_text": "an 8-year clinical study on acrylate contact allergy from nail cosmetics",
+        "placement_section": "How to tell an allergy apart from an infection or a heat spike",
+        "link_type": "external"
+      },
+      {
+        "url": "https://community.aafa.org/db/ask-the-allergist/record/am-i-allergic-to-gel-nails-nail-polish",
+        "anchor_text": "the Asthma and Allergy Foundation of America's explanation of allergic contact reactions to nail products",
+        "placement_section": "What to do the moment you notice it",
+        "link_type": "external"
+      }
+    ]
+  },
+  "section_9_topical_map": {
+    "post_gen_instruction": "Omit entirely from frontmatter if this section is empty/absent — never write topic as null or empty string.",
+    "topic": null,
+    "parentPillar": null,
+    "relatedClusters": [
+      "why-do-my-eyelids-swell-after-getting-gel-nails",
+      "what-does-an-acrylate-allergy-from-acrylic-nails-look-like"
+    ],
+    "primaryKeyword": "itchy skin after gel manicure",
+    "secondaryKeywords": [
+      "gel nail allergy symptoms",
+      "HEMA allergy nails",
+      "allergic reaction to gel polish"
+    ],
+    "topicalBoundary": null
+  },
+  "section_10_voice_tone": {
+    "post_gen_instruction": "Layer this on top of the fixed editorial voice mandate already in the Post Gen Agent prompt — never a departure from British English, banned vocabulary, or rhythm rules, just register within that frame.",
+    "recommended_voice": "Sharp and direct, with a reassuring undertone",
+    "tone_characteristics": [
+      "Validating rather than alarmist — names the frustration plainly (the dismissed itch, the confusion of a sudden reaction to something previously fine) without exaggerating risk",
+      "Direct and specific rather than hedgy, matching the negative-angle trigger's promise to state the problem sharply before the fix",
+      "Practical and calm in the solution sections, since the underlying reader emotion is worry mixed with a wish for a clear next step, not panic"
+    ],
+    "audience_match": "Phase_1 research shows readers in a specific emotional spot right now: mildly alarmed, self-doubting ('is this just dry skin?'), and a little blindsided that something they've done for years suddenly reacted — a sharp, validating, non-alarmist voice meets that state directly instead of either minimising it or catastrophising it."
+  },
+  "section_11_execution_plan": {
+    "purpose": "Post Gen Agent reads this FIRST, before writing a word. Every value pre-calculated. Locked and executed exactly, no recalculation.",
+    "calculated_by": "Input Gen Agent, calculated last after all other sections are complete.",
+    "block_1_entity_and_keyword_execution": {
+      "named_entities_to_surface_early": "HEMA (2-hydroxyethyl methacrylate), allergic contact dermatitis, methacrylate/acrylate sensitization",
+      "primary_keyword_if_any": "itchy skin after gel manicure",
+      "strong_tag_note": "Only apply <strong> to 'itchy skin after gel manicure' if it appears naturally within the first two paragraphs — do not force it."
+    },
+    "block_2_word_and_image_plan": {
+      "total_word_target": "1500, ±50",
+      "introduction": "140 words",
+      "conclusion": "100 words",
+      "h2_budgets": [
+        {"heading": "It's probably not dry skin", "budget": "220 words"},
+        {"heading": "How to tell an allergy apart from an infection or a heat spike", "budget": "280 words"},
+        {"heading": "Why this itch keeps coming back worse", "budget": "260 words"},
+        {"heading": "What to do the moment you notice it", "budget": "300 words"},
+        {"heading": "Switching to HEMA-free without giving up gel", "budget": "200 words"}
+      ],
+      "image_assignments": [
+        {"image_number": 1, "place_after": "hero (frontmatter only)", "section_context": "inspirational nail design shot only — close-up of healthy, well-manicured nails with clean cuticle skin for contrast with the hero", "path": "/images/nail-feed/why-is-the-skin-around-my-nails-itchy-after-a-gel-manicure/image-1.webp"},
+        {"image_number": 2, "place_after": "It's probably not dry skin", "section_context": "inspirational nail design shot only — a fresh, glossy gel manicure in a neutral tone, styled editorially", "path": "/images/nail-feed/why-is-the-skin-around-my-nails-itchy-after-a-gel-manicure/image-2.webp"},
+        {"image_number": 3, "place_after": "Why this itch keeps coming back worse", "section_context": "inspirational nail design shot only — hands in a relaxed, soft-lit lifestyle setting suggesting calm/recovery", "path": "/images/nail-feed/why-is-the-skin-around-my-nails-itchy-after-a-gel-manicure/image-3.webp"},
+        {"image_number": 4, "place_after": "Switching to HEMA-free without giving up gel", "section_context": "inspirational nail design shot only — a clean, minimal gel manicure styled to represent a 'safe switch' aesthetic", "path": "/images/nail-feed/why-is-the-skin-around-my-nails-itchy-after-a-gel-manicure/image-4.webp"}
+      ]
+    },
+    "block_3_opening_technique_assignments": {
+      "rule": "No two consecutive sections same technique. Conclusion = Technique 1 or 3 only.",
+      "assignments": [
+        {"section": "Introduction", "technique": "Technique 2 — Negative angle, name the frustration directly"},
+        {"section": "It's probably not dry skin", "technique": "Technique 1 — Direct claim opener"},
+        {"section": "How to tell an allergy apart from an infection or a heat spike", "technique": "Technique 3 — Comparison/contrast opener"},
+        {"section": "Why this itch keeps coming back worse", "technique": "Technique 1 — Direct claim opener"},
+        {"section": "What to do the moment you notice it", "technique": "Technique 2 — Negative angle, name the frustration directly"},
+        {"section": "Switching to HEMA-free without giving up gel", "technique": "Technique 3 — Comparison/contrast opener"},
+        {"section": "Conclusion", "technique": "Technique 1 — Direct claim opener"}
+      ]
+    },
+    "block_4_link_placements": {
+      "links": [
+        {"anchor_text": "why eyelid swelling can follow a gel manicure", "full_url": "https://mirelleinspo.com/nail-feed/why-do-my-eyelids-swell-after-getting-gel-nails", "place_in_section": "How to tell an allergy apart from an infection or a heat spike", "link_type": "nailfeed-sibling"},
+        {"anchor_text": "what a full acrylate allergy looks like beyond just the cuticle skin", "full_url": "https://mirelleinspo.com/nail-feed/what-does-an-acrylate-allergy-from-acrylic-nails-look-like", "place_in_section": "Why this itch keeps coming back worse", "link_type": "nailfeed-sibling"},
+        {"anchor_text": "a American Academy of Dermatology-published review of allergens in at-home acrylic manicure kits", "full_url": "https://www.jaad.org/article/S0190-9622(24)02655-0/fulltext", "place_in_section": "Why this itch keeps coming back worse", "link_type": "external"},
+        {"anchor_text": "an 8-year clinical study on acrylate contact allergy from nail cosmetics", "full_url": "https://pubmed.ncbi.nlm.nih.gov/38093676/", "place_in_section": "How to tell an allergy apart from an infection or a heat spike", "link_type": "external"},
+        {"anchor_text": "the Asthma and Allergy Foundation of America's explanation of allergic contact reactions to nail products", "full_url": "https://community.aafa.org/db/ask-the-allergist/record/am-i-allergic-to-gel-nails-nail-polish", "place_in_section": "What to do the moment you notice it", "link_type": "external"}
+      ]
+    },
+    "block_5_active_constraints": {
+      "em_dash_banned": "confirmed active",
+      "british_english_active": "confirmed active",
+      "min_h2_reminder": "5 H2s present — clears the hard minimum of 3, needed for full widget placement including social CTA slot",
+      "word_count_reminder": "1500 target, depth not padding",
+      "image_count_reminder": "4 total: 1 hero + 3 body, fixed — locked value, Post Gen Agent must not scale this up or down",
+      "hero_image_reminder": "frontmatter only, never in body; alt text and filename only from this file, visual concept comes from a separate downstream prompt; image path is /images/nail-feed/{slug}/{filename}.webp"
+    },
+    "block_6_widget_execution": {
+      "reaction_bar": "default — omit reaction frontmatter entirely, hardcoded fallback applies",
+      "poll_or_quiz": "poll — use poll_content from section_4 exactly as given",
+      "reminder": "Poll and quiz are mutually exclusive at the template level — if the input file somehow specifies both, that is an input file error, use poll only and flag it, do not attempt to render both."
+    }
+  }
+}
