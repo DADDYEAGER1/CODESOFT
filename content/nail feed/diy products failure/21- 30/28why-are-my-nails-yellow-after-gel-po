@@ -1,0 +1,168 @@
+{
+  "section_1_file_authority": {
+    "statement": "THIS FILE IS THE SINGLE SOURCE OF TRUTH FOR THE NAIL FEED POST GEN AGENT. All values in POST_CONSTANTS are hardcoded. All entities, sentiment/trend rationale, emotion trigger, structure, and links defined here must be followed exactly."
+  },
+  "section_2_post_constants": {
+    "slug": "why-are-my-nails-yellow-after-gel-polish",
+    "canonical": "https://mirelleinspo.com/nail-feed/why-are-my-nails-yellow-after-gel-polish",
+    "word_count": 1500,
+    "image_count": 4,
+    "category": "Nail Health & DIY Fixes",
+    "publish_date": "2026-09-05",
+    "author": "jyoti-mirelle"
+  },
+  "section_3_sentiment_and_entity_brief": {
+    "sentiment_read": "negative",
+    "the_specific_frustration_or_desire": "Readers pull off gel polish expecting their natural nail underneath and instead find it stained a dingy yellow, and the reaction is alarm and disgust ('is this permanent', 'is something wrong with me') before it settles into wanting a fast, at-home fix rather than waiting weeks for it to grow out.",
+    "named_entities": ["gel polish staining", "nail plate discoloration", "dark/pigmented polish shades", "acetone soak-off removal", "cuticle oil aftercare", "yellow nail syndrome (ruled-out worry, not the actual cause)"],
+    "trend_velocity": "sustained",
+    "why_now_rationale": "Gel manicure removal is a constant, non-seasonal DIY moment, and dark/jewel-toned autumn polish shades (which stain more) are entering rotation now, keeping the complaint currently active.",
+    "saturation_check": "saturated — Healthline, Byrdie and dermatology-adjacent sites already cover general yellow nail causes broadly. Differentiation angle: narrow specifically to gel-polish staining (not fungus, not health conditions) and pair the cause with a fast at-home whitening fix, which most competing coverage treats as two separate articles."
+  },
+  "section_4_engagement_widgets": {
+    "reaction_bar": "default",
+    "poll_or_quiz_selected": "poll",
+    "selection_rationale": "Research surfaced a genuine real-world split: some people wait it out for the stain to grow out naturally, others reach for a home whitening hack (toothpaste/lemon) immediately — a real either/or worth putting to readers, not a forced binary.",
+    "poll_content": {
+      "id": "yellow-nail-fix-poll",
+      "question": "Yellow nails after gel polish — what's your move?",
+      "options": [
+        {"id": "a", "label": "Wait it out and let it grow out"},
+        {"id": "b", "label": "Try a home whitening hack immediately"},
+        {"id": "c", "label": "Switch to lighter polish shades going forward"}
+      ]
+    }
+  },
+  "section_5_hook_and_ctr": {
+    "selected_trigger": "Trigger 2 — negative angle plus solution",
+    "trigger_rationale": "Phase_1 sentiment_read is genuinely negative: readers are alarmed by staining they didn't expect, so naming the problem sharply before the fix fits the real frustration.",
+    "title": "Why your nails turn yellow after gel polish (and how to fix it)",
+    "title_char_count": 64,
+    "excerpt": "That dingy yellow tint under your gel polish isn't permanent damage — here's the real cause and the fastest way to get your nails looking clear again.",
+    "excerpt_char_count": 153,
+    "intro_hook_brief": "Open on the exact moment of peeling off gel polish expecting bare nails and finding yellow staining instead — validate the alarm, then immediately reassure it's common and fixable, not a health problem.",
+    "hero_image_emotional_beat": "The visible contrast moment: a hand mid-reveal, gel polish just removed, nail plate showing the yellow stain against clean surrounding skin."
+  },
+  "section_6_hero_image_brief": {
+    "imageAlt": "Close-up of yellowed, stained fingernails immediately after gel polish removal, bare nail plate showing discoloration against skin",
+    "image_filename_brief": "yellow-stained-nails-after-gel-polish-removal-closeup-2026.webp",
+    "tag_for_downstream_prompt": "Hero image for Google Discover — high contrast, thumbnail-style, click-optimised, paired with title 'Why your nails turn yellow after gel polish (and how to fix it)'."
+  },
+  "section_7_content_structure": {
+    "h2_structure": [
+      "Why gel polish stains your nails yellow in the first place",
+      "Is it the polish colour or the gel formula itself",
+      "How long yellow stains actually take to fade",
+      "The fastest ways to whiten stained nails at home",
+      "How to stop it happening next time"
+    ],
+    "word_budget": {
+      "introduction": 140,
+      "h2_1": 320,
+      "h2_2": 260,
+      "h2_3": 240,
+      "h2_4": 340,
+      "h2_5": 200,
+      "conclusion": 100
+    }
+  },
+  "section_8_links": {
+    "all_links": [
+      {
+        "url": "https://mirelleinspo.com/nail-feed/how-long-does-it-take-for-yellow-nails-to-fade-after-gel-polish",
+        "anchor_text": "how long yellow nails actually take to fade",
+        "placement_section": "H2: How long yellow stains actually take to fade",
+        "link_type": "nailfeed-sibling"
+      },
+      {
+        "url": "https://mirelleinspo.com/nail-feed/why-did-my-nails-turn-orange-after-removing-dark-nail-polish",
+        "anchor_text": "orange staining from dark polish shades",
+        "placement_section": "H2: Why gel polish stains your nails yellow in the first place",
+        "link_type": "nailfeed-sibling"
+      },
+      {
+        "url": "https://goaskalice.columbia.edu/answered-questions/dark-nail-polish-and-discolored-nails-dilemma",
+        "anchor_text": "Columbia University's health service on nail polish staining",
+        "placement_section": "H2: Why gel polish stains your nails yellow in the first place",
+        "link_type": "external"
+      },
+      {
+        "url": "https://www.healthline.com/health/yellow-nails",
+        "anchor_text": "when yellow nails signal something beyond staining",
+        "placement_section": "H2: Is it the polish colour or the gel formula itself",
+        "link_type": "external"
+      }
+    ]
+  },
+  "section_9_topical_map": {
+    "relatedClusters": [
+      "how-long-does-it-take-for-yellow-nails-to-fade-after-gel-polish",
+      "why-did-my-nails-turn-orange-after-removing-dark-nail-polish"
+    ],
+    "primaryKeyword": "yellow nails after gel polish",
+    "secondaryKeywords": ["gel polish staining nails", "how to whiten stained nails", "nail discoloration after gel manicure"]
+  },
+  "section_10_voice_tone": {
+    "recommended_voice": "Sharp and direct",
+    "tone_characteristics": ["validates the alarm without being alarmist", "direct about the actual (harmless) cause", "brisk, practical delivery on the fix"],
+    "audience_match": "Readers are momentarily worried and want fast reassurance plus a real fix, not a clinical rundown of every possible cause — matching phase_1's negative-but-solvable sentiment_read and the negative-angle-plus-solution trigger."
+  },
+  "section_11_execution_plan": {
+    "block_1_entity_and_keyword_execution": {
+      "named_entities_to_surface_early": ["gel polish staining", "nail plate discoloration", "dark/pigmented polish shades"],
+      "primary_keyword_if_any": "yellow nails after gel polish",
+      "strong_tag_note": "Apply <strong> only where 'yellow nails after gel polish' appears naturally in the intro or first H2 — never forced."
+    },
+    "block_2_word_and_image_plan": {
+      "total_word_target": "1500 ±50",
+      "introduction": "120-160 words",
+      "conclusion": "80-120 words",
+      "h2_budgets": [
+        {"heading": "Why gel polish stains your nails yellow in the first place", "budget": "320 words"},
+        {"heading": "Is it the polish colour or the gel formula itself", "budget": "260 words"},
+        {"heading": "How long yellow stains actually take to fade", "budget": "240 words"},
+        {"heading": "The fastest ways to whiten stained nails at home", "budget": "340 words"},
+        {"heading": "How to stop it happening next time", "budget": "200 words"}
+      ],
+      "image_assignments": [
+        {"image_number": 1, "place_after": "hero/frontmatter", "section_context": "inspirational nail design shot only — clean, healthy manicure", "path": "/images/nail-feed/why-are-my-nails-yellow-after-gel-polish/hero.webp"},
+        {"image_number": 2, "place_after": "Why gel polish stains your nails yellow in the first place", "section_context": "inspirational nail design shot only", "path": "/images/nail-feed/why-are-my-nails-yellow-after-gel-polish/body-1.webp"},
+        {"image_number": 3, "place_after": "How long yellow stains actually take to fade", "section_context": "inspirational nail design shot only", "path": "/images/nail-feed/why-are-my-nails-yellow-after-gel-polish/body-2.webp"},
+        {"image_number": 4, "place_after": "The fastest ways to whiten stained nails at home", "section_context": "inspirational nail design shot only", "path": "/images/nail-feed/why-are-my-nails-yellow-after-gel-polish/body-3.webp"}
+      ]
+    },
+    "block_3_opening_technique_assignments": {
+      "rule": "No two consecutive sections same technique. Conclusion = Technique 1 or 3 only.",
+      "assignments": [
+        {"section": "Introduction", "technique": "Technique 2 — direct scenario cold open"},
+        {"section": "H2-1 heading", "technique": "Technique 1 — direct answer first"},
+        {"section": "H2-2 heading", "technique": "Technique 3 — comparison framing"},
+        {"section": "H2-3 heading", "technique": "Technique 1 — direct answer first"},
+        {"section": "H2-4 heading", "technique": "Technique 3 — comparison framing"},
+        {"section": "H2-5 heading", "technique": "Technique 1 — direct answer first"},
+        {"section": "Conclusion", "technique": "Technique 3"}
+      ]
+    },
+    "block_4_link_placements": {
+      "links": [
+        {"anchor_text": "orange staining from dark polish shades", "full_url": "https://mirelleinspo.com/nail-feed/why-did-my-nails-turn-orange-after-removing-dark-nail-polish", "place_in_section": "Why gel polish stains your nails yellow in the first place", "link_type": "nailfeed-sibling"},
+        {"anchor_text": "Columbia University's health service on nail polish staining", "full_url": "https://goaskalice.columbia.edu/answered-questions/dark-nail-polish-and-discolored-nails-dilemma", "place_in_section": "Why gel polish stains your nails yellow in the first place", "link_type": "external"},
+        {"anchor_text": "when yellow nails signal something beyond staining", "full_url": "https://www.healthline.com/health/yellow-nails", "place_in_section": "Is it the polish colour or the gel formula itself", "link_type": "external"},
+        {"anchor_text": "how long yellow nails actually take to fade", "full_url": "https://mirelleinspo.com/nail-feed/how-long-does-it-take-for-yellow-nails-to-fade-after-gel-polish", "place_in_section": "How long yellow stains actually take to fade", "link_type": "nailfeed-sibling"}
+      ]
+    },
+    "block_5_active_constraints": {
+      "em_dash_banned": "confirmed active",
+      "british_english_active": "confirmed active",
+      "min_h2_reminder": "5 H2s present — clears the 3-H2 minimum",
+      "word_count_reminder": "1500 target, depth not padding",
+      "image_count_reminder": "4 total: 1 hero + 3 body, fixed — locked value",
+      "hero_image_reminder": "frontmatter only, never in body; alt text and filename only from this file; image path is /images/nail-feed/why-are-my-nails-yellow-after-gel-polish/{filename}.webp"
+    },
+    "block_6_widget_execution": {
+      "reaction_bar": "omit frontmatter — default applies automatically",
+      "poll_or_quiz": "poll — use poll_content from section_4 exactly as given",
+      "reminder": "Poll and quiz are mutually exclusive at the template level — poll only, no quiz."
+    }
+  }
+}
