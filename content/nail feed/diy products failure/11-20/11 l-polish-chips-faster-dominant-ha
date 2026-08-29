@@ -1,0 +1,172 @@
+{
+  "section_1_file_authority": {
+    "statement": "THIS FILE IS THE SINGLE SOURCE OF TRUTH FOR THE NAIL FEED POST GEN AGENT. All values in POST_CONSTANTS are hardcoded. All entities, sentiment/trend rationale, emotion trigger, structure, and links defined here must be followed exactly."
+  },
+  "section_2_post_constants": {
+    "slug": "gel-polish-chips-faster-dominant-hand",
+    "canonical": "https://mirelleinspo.com/nail-feed/gel-polish-chips-faster-dominant-hand",
+    "word_count": 1500,
+    "image_count": 4,
+    "category": "Nail Care & Troubleshooting",
+    "publish_date": "2026-08-29",
+    "author": "jyoti-mirelle"
+  },
+  "section_3_sentiment_and_entity_brief": {
+    "sentiment_read": "negative (specific texture: puzzled, low-grade confusion at an asymmetric pattern, not anger)",
+    "the_specific_frustration_or_desire": "Same manicure, same day, but one hand, almost always the same one or two fingers, chips first every single time. It reads as random bad luck even though it happens with total consistency, and nobody has explained why.",
+    "named_entities": "gel polish, dominant hand, grip strength, manual dexterity, index finger, gel bond/adhesion, mechanical stress",
+    "trend_velocity": "sustained, evergreen troubleshooting question with no seasonal spike, consistently discussed across pro forums, Quora, and nail-education sites",
+    "why_now_rationale": "A year-round, always-relevant question that currently has almost no dedicated coverage anywhere, despite being backed by real peer-reviewed hand-dominance research most readers have never seen connected to their manicure.",
+    "saturation_check": "Under-covered as a dedicated topic. One existing Mirelle /blog post ('The Real Reason Your Nails Chip So Easily') mentions the dominant-hand pattern in a single aside; nothing treats the mechanism itself as the subject. Differentiation angle: lead with the actual measurable science (grip strength and dexterity are objectively higher in the dominant hand, per a peer-reviewed study) instead of repeating generic chip-prevention tips."
+  },
+  "section_4_engagement_widgets": {
+    "reaction_bar": {
+      "options": [
+        {"id": "mindblown", "label": "😮 Wait, that's why"},
+        {"id": "knew_it", "label": "🙄 Called it"},
+        {"id": "skeptical", "label": "🤨 Need proof"}
+      ]
+    },
+    "poll_or_quiz_selected": "neither",
+    "selection_rationale": "Research shows universal agreement rather than a genuine split (techs and users alike confirm the same pattern), so a poll has no real tension to poll. The topic explains one mechanism rather than sorting readers into distinct outcomes, so a quiz has no genuine branches to build from real findings."
+  },
+  "section_5_hook_and_ctr": {
+    "selected_trigger": "Trigger 1 - Curiosity Gap",
+    "trigger_rationale": "Research shows readers have clearly noticed this pattern (a recurring, specific question on Quora and pro forums) but frame it as confusing or unexplained rather than angry, which is a knowledge-gap sentiment, not a sharp-problem one.",
+    "title": "The real reason gel polish chips faster on one hand",
+    "title_char_count": 51,
+    "excerpt": "One hand always chips first, and it's not random. Grip strength, dexterity, and daily wear differ by hand, and the polish shows it first.",
+    "excerpt_char_count": 137,
+    "intro_hook_brief": "Name the exact pattern readers already recognise but have never had explained (the specific hand or finger that chips first, every time), then promise the real mechanical/scientific reason, not another 'reapply top coat' tip.",
+    "hero_image_emotional_beat": "The visible unfairness of identical treatment producing unequal results: one hand pristine, the other already chipped, from the same manicure applied the same day."
+  },
+  "section_6_hero_image_brief": {
+    "imageAlt": "Close-up split shot of a chipped glossy nude gel nail on the dominant hand beside a flawless matching nail on the other hand",
+    "image_filename_brief": "chipped-glossy-nude-gel-nail-dominant-hand-vs-flawless-nail-other-hand-2026.webp",
+    "tag_for_downstream_prompt": "For Google Discover hero image: high-contrast, thumbnail-style, click-optimised split-hand comparison shot, paired with the curiosity-gap title above."
+  },
+  "section_7_content_structure": {
+    "h2_structure": [
+      "Your dominant hand does more physical work than you think",
+      "What that extra wear actually does to a gel bond",
+      "Why it's almost always the same one or two fingers",
+      "How to protect your dominant hand's manicure without babying it"
+    ],
+    "word_budget": {
+      "introduction": 140,
+      "h2_1": 320,
+      "h2_2": 320,
+      "h2_3": 320,
+      "h2_4": 300,
+      "conclusion": 100
+    }
+  },
+  "section_8_links": {
+    "data_gap_note": "Bucket Explorer JSON gave only titles for internal links, no URLs. None guessed below, per never-reconstruct rule; fill from the sibling's published slug before use.",
+    "all_links": [
+      {
+        "url": "[RESOLVE FROM PUBLISHED SLUG] title: \"Why do gel nails crack at the tips but not the middle\"",
+        "anchor_text": "why gel nails crack at the tips instead of the middle",
+        "placement_section": "Why it's almost always the same one or two fingers - contrasts this post's hand-level wear pattern with that post's tip-specific crack pattern",
+        "link_type": "nailfeed-sibling"
+      },
+      {
+        "url": "https://nailknowledge.org/blog/dominant-hand-nail-growth",
+        "anchor_text": "the documented science behind dominant-hand nail growth",
+        "placement_section": "Your dominant hand does more physical work than you think - supports the circulation/mechanical-stimulation claim",
+        "link_type": "external"
+      },
+      {
+        "url": "https://core.ac.uk/works/3773082",
+        "anchor_text": "a peer-reviewed comparison of grip strength between hands",
+        "placement_section": "What that extra wear actually does to a gel bond - evidentiary anchor for the grip-strength/dexterity asymmetry claim",
+        "link_type": "external"
+      },
+      {
+        "url": "https://www.nailmasterdallas.com/blogs/news/structured-gel-manicure-retention-guide",
+        "anchor_text": "how nail pros diagnose dominant-hand wear patterns",
+        "placement_section": "Why it's almost always the same one or two fingers - professional confirmation of the same-hand diagnostic pattern",
+        "link_type": "external"
+      }
+    ],
+    "inbound_link_context": {
+      "note": "Not an outbound link this post places; supplied for the Post Gen Agent's awareness of the existing cross-link relationship.",
+      "source_title": "Why does nail polish chip within hours of drying",
+      "anchor_context": "That post links here from a section distinguishing immediate chipping from gradual dominant-hand wear."
+    }
+  },
+  "section_9_topical_map": {
+    "relatedClusters": [
+      "Why do gel nails crack at the tips but not the middle",
+      "Why does nail polish chip within hours of drying"
+    ],
+    "primaryKeyword": "gel polish chipping dominant hand",
+    "secondaryKeywords": ["gel manicure retention", "dominant hand nail wear", "asymmetric nail chipping", "nail grip strength"]
+  },
+  "section_10_voice_tone": {
+    "recommended_voice": "Confident, explanatory 'aha-moment' voice",
+    "tone_characteristics": [
+      "Validating - confirms the pattern is real, not imagined or bad luck",
+      "Confident and declarative - states the mechanism plainly rather than hedging",
+      "Efficient - delivers the explanation quickly rather than padding with generic chip-prevention tips",
+      "Slightly insider, 'nobody tells you this' register, matching the curiosity-gap trigger"
+    ],
+    "audience_match": "The reader has already noticed a specific, puzzling pattern and wants the real mechanism explained rather than another generic top-coat tip, so a voice that validates the observation first and then explains with genuine evidence matches their actual state."
+  },
+  "section_11_execution_plan": {
+    "block_1_entity_and_keyword_execution": {
+      "named_entities_to_surface_early": "gel polish, dominant hand, grip strength, gel bond/adhesion - surface within the intro and H2-1",
+      "primary_keyword_if_any": "gel polish chipping dominant hand",
+      "strong_tag_note": "Only apply <strong> if this phrase appears naturally in the intro or H2-1; never force it"
+    },
+    "block_2_word_and_image_plan": {
+      "total_word_target": "1500, +/-50",
+      "introduction": "140 words",
+      "conclusion": "100 words",
+      "h2_budgets": [
+        {"heading": "Your dominant hand does more physical work than you think", "budget": "320 words"},
+        {"heading": "What that extra wear actually does to a gel bond", "budget": "320 words"},
+        {"heading": "Why it's almost always the same one or two fingers", "budget": "320 words"},
+        {"heading": "How to protect your dominant hand's manicure without babying it", "budget": "300 words"}
+      ],
+      "image_assignments": [
+        {"image_number": 1, "place_after": "intro (hero)", "section_context": "split-hand comparison: chipped glossy nude gel nail on dominant hand vs flawless matching nail on the other", "path": "/images/nail-feed/gel-polish-chips-faster-dominant-hand/chipped-glossy-nude-gel-nail-dominant-hand-vs-flawless-nail-other-hand-2026.webp"},
+        {"image_number": 2, "place_after": "Your dominant hand does more physical work than you think", "section_context": "inspirational nail design shot only - glossy nude gel manicure on the dominant hand, clean intact finish", "path": "/images/nail-feed/gel-polish-chips-faster-dominant-hand/glossy-nude-gel-manicure-dominant-hand-closeup-2026.webp"},
+        {"image_number": 3, "place_after": "What that extra wear actually does to a gel bond", "section_context": "inspirational nail design shot only - capped free edge detail on glossy nude gel, macro shot", "path": "/images/nail-feed/gel-polish-chips-faster-dominant-hand/capped-free-edge-glossy-nude-gel-macro-2026.webp"},
+        {"image_number": 4, "place_after": "How to protect your dominant hand's manicure without babying it", "section_context": "inspirational nail design shot only - both hands matching glossy nude gel, flawless full set", "path": "/images/nail-feed/gel-polish-chips-faster-dominant-hand/matching-glossy-nude-gel-both-hands-flawless-2026.webp"}
+      ]
+    },
+    "block_3_opening_technique_assignments": {
+      "taxonomy_gap_note": "This agent was not supplied the Post Gen Agent's numbered opening-technique list, so no 'Technique X' label is guessed below. Descriptive guidance is given instead; map it onto the real taxonomy at generation time. Rule intent preserved: no two consecutive sections use the same opening approach, and the conclusion circles back to the intro's opening image rather than introducing a new one.",
+      "assignments": [
+        {"section": "Introduction", "approach": "Direct pattern-naming - state the specific, recognisable phenomenon (same hand/finger chips first) before any explanation"},
+        {"section": "Your dominant hand does more physical work than you think", "approach": "Evidence-led opening - lead with the peer-reviewed grip-strength finding rather than a rhetorical question"},
+        {"section": "What that extra wear actually does to a gel bond", "approach": "Mechanism-led opening - open on the physical process (flex/micro-stress on the bond), not a restated question"},
+        {"section": "Why it's almost always the same one or two fingers", "approach": "Specificity-led opening - name the actual finger(s) before explaining why"},
+        {"section": "How to protect your dominant hand's manicure without babying it", "approach": "Action-led opening - open with the fix, not another restatement of the problem"},
+        {"section": "Conclusion", "approach": "Circle back to the split-hand image from the introduction to close the loop"}
+      ]
+    },
+    "block_4_link_placements": {
+      "links": [
+        {"anchor_text": "why gel nails crack at the tips instead of the middle", "full_url": "[RESOLVE FROM PUBLISHED SLUG]", "place_in_section": "Why it's almost always the same one or two fingers", "link_type": "nailfeed-sibling"},
+        {"anchor_text": "the documented science behind dominant-hand nail growth", "full_url": "https://nailknowledge.org/blog/dominant-hand-nail-growth", "place_in_section": "Your dominant hand does more physical work than you think", "link_type": "external"},
+        {"anchor_text": "a peer-reviewed comparison of grip strength between hands", "full_url": "https://core.ac.uk/works/3773082", "place_in_section": "What that extra wear actually does to a gel bond", "link_type": "external"},
+        {"anchor_text": "how nail pros diagnose dominant-hand wear patterns", "full_url": "https://www.nailmasterdallas.com/blogs/news/structured-gel-manicure-retention-guide", "place_in_section": "Why it's almost always the same one or two fingers", "link_type": "external"}
+      ]
+    },
+    "block_5_active_constraints": {
+      "em_dash_banned": "confirmed active",
+      "british_english_active": "confirmed active",
+      "min_h2_reminder": "4 H2s present, above the 3-H2 minimum, full widget placement including social CTA slot is enabled",
+      "word_count_reminder": "1500 target, depth not padding",
+      "image_count_reminder": "4 total: 1 hero + 3 body, fixed - locked value, do not scale up or down",
+      "hero_image_reminder": "frontmatter only, never in body; alt text and filename only from this file, visual concept comes from a separate downstream prompt; image path is /images/nail-feed/gel-polish-chips-faster-dominant-hand/{filename}.webp"
+    },
+    "block_6_widget_execution": {
+      "reaction_bar": "custom - use the {options} array in section_4 exactly as given",
+      "poll_or_quiz": "neither - omit both poll and quiz frontmatter entirely",
+      "reminder": "Poll and quiz are mutually exclusive at the template level; this post uses neither"
+    }
+  }
+}
