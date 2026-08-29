@@ -1,0 +1,182 @@
+{
+  "section_1_file_authority": {
+    "statement": "THIS FILE IS THE SINGLE SOURCE OF TRUTH FOR THE NAIL FEED POST GEN AGENT. All values in POST_CONSTANTS are hardcoded. All entities, sentiment/trend rationale, emotion trigger, structure, and links defined here must be followed exactly."
+  },
+  "section_2_post_constants": {
+    "slug": "how-long-yellow-nails-fade-gel-polish",
+    "canonical": "https://mirelleinspo.com/nail-feed/how-long-yellow-nails-fade-gel-polish",
+    "word_count": 1500,
+    "image_count": 4,
+    "category": "Nail Health & Damage",
+    "publish_date": "2026-09-05",
+    "author": "jyoti-mirelle"
+  },
+  "section_3_sentiment_and_entity_brief": {
+    "sentiment_read": "negative",
+    "the_specific_frustration_or_desire": "Readers remove their gel polish expecting clean nails and instead find a yellow-stained nail bed, then panic because every source they check gives a wildly different timeline — some say 3-7 days, others say 2-4 weeks, others say it takes full regrowth (2-3 months). The real frustration isn't the yellowing itself, it's not knowing whether this is normal staining that fades on its own, a sign of real damage, or something worse (fungus), and nobody will just give a straight answer.",
+    "named_entities": "gel polish staining, nail plate discoloration, acetone soak-off, base coat barrier, nail whitening soak (hydrogen peroxide/baking soda), buffing, nail matrix regrowth, onycholysis (as a differential to rule out), fungal discoloration (as a differential to rule out)",
+    "trend_velocity": "seasonal-cyclical, sustained — this is an evergreen post-manicure complaint with no seasonal spike of its own, though it ticks up slightly whenever a bold/dark-color trend cycle (currently deep reds, browns, and the butter-yellow-adjacent creamy tones for SS26) pushes more people into frequent gel wear and removal.",
+    "why_now_rationale": "Gel manicure frequency stays high year-round, and current SS26 coverage is pushing both darker high-pigment shades and long-wear gel systems, both of which are the exact conditions that cause staining — so the removal-regret moment this post addresses keeps recurring at a steady, non-seasonal rate.",
+    "saturation_check": "saturated — Marie Claire, SheKnows, Kester Black, Healthline, and multiple nail brands all cover 'how to whiten yellow nails,' but nearly every source gives a vague or wildly inconsistent timeline (3-7 days vs 2-4 weeks vs full regrowth) without reconciling why. Differentiation angle: give one clear, honest, staged timeline (surface stain vs deep stain vs matrix-level) instead of another generic remedy list, and tell readers exactly when to stop waiting and see a doctor."
+  },
+  "section_4_engagement_widgets": {
+    "reaction_bar": "default",
+    "poll_or_quiz_selected": "poll",
+    "selection_rationale": "Research surfaced a genuine, recurring either/or in the actual conversation: people are split between waiting it out (letting nails grow/fade naturally) versus actively treating the stain (soaks, buffing, whitening pencils) right now. This is a real behavioral split found across Quora threads and brand blogs, not an invented question, so a poll fits; a quiz was not used because there's no genuine branching outcome here, just one shared problem with two competing responses to it.",
+    "poll_content": {
+      "id": "yellow-nail-fix-approach",
+      "question": "Yellow nails after gel polish — what's your move?",
+      "options": [
+        {"id": "wait", "label": "🕰️ Let it grow out naturally"},
+        {"id": "treat", "label": "🧽 Actively soak and buff it out"},
+        {"id": "cover", "label": "💅 Just repolish and ignore it"},
+        {"id": "worried", "label": "😬 Honestly not sure if it's normal"}
+      ]
+    }
+  },
+  "section_5_hook_and_ctr": {
+    "selected_trigger": "Trigger 2 — Negative angle plus solution",
+    "trigger_rationale": "Phase_1's sentiment_read is genuinely negative: readers are frustrated by conflicting timelines and quietly anxious about whether the yellowing is permanent or a sign of something worse, so stating the real timeline sharply before the fix fits the actual conversation rather than a manufactured problem.",
+    "title": "Yellow nails after gel polish? Here's how long it really lasts",
+    "title_char_count": 58,
+    "excerpt": "Still yellow weeks after your gel soak-off? Here's the real fade timeline by stain depth, plus when it's not staining at all.",
+    "excerpt_char_count": 127,
+    "intro_hook_brief": "Open by naming the exact moment: polish soaked off, nails expected clean, instead staring at yellow. Validate that the internet's answers contradict each other, then promise the one clear, staged timeline this post actually delivers.",
+    "hero_image_emotional_beat": "The specific visual moment of peeling/soaking off gel polish to reveal a yellow-stained nail bed underneath — the reveal moment itself, not a finished manicure."
+  },
+  "section_6_hero_image_brief": {
+    "imageAlt": "Bare fingernails showing yellow staining after gel polish removal, held under bright light against dark background",
+    "image_filename_brief": "yellow-stained-nails-after-gel-polish-removal-closeup-2026.webp",
+    "tag_for_downstream_prompt": "For Google Discover hero image — high contrast, thumbnail-style, click-optimised, paired with the title 'Yellow nails after gel polish? Here's how long it really lasts.'"
+  },
+  "section_7_content_structure": {
+    "h2_structure": [
+      "Why gel polish leaves your nails yellow in the first place",
+      "The real timeline: how long yellow stains actually take to fade",
+      "How to tell if it's surface staining or something deeper",
+      "How to speed up the fade safely",
+      "When yellow nails are not just staining"
+    ],
+    "word_budget": {
+      "intro": "140 words",
+      "why_gel_polish_stains": "230 words",
+      "real_timeline": "320 words",
+      "surface_vs_deeper": "260 words",
+      "speed_up_fade": "280 words",
+      "when_not_just_staining": "180 words",
+      "conclusion": "100 words"
+    }
+  },
+  "section_8_links": {
+    "all_links": [
+      {
+        "url": "https://mirelleinspo.com/nail-feed/why-are-my-nails-yellow-after-wearing-gel-polish-for-weeks",
+        "anchor_text": "why gel polish stains nails yellow in the first place",
+        "placement_section": "Intro / first H2 — anchor_context: link from the intro pointing readers who already have yellowing toward the fade-timeline post (reciprocal of the incoming link)",
+        "link_type": "nailfeed-sibling"
+      },
+      {
+        "url": "https://mirelleinspo.com/nail-feed/why-do-my-cuticles-look-stained-after-taking-off-gel-polish",
+        "anchor_text": "cuticle staining, which fades on a different timeline",
+        "placement_section": "How to tell if it's surface staining or something deeper — anchor_context: noting cuticle staining fades on a different timeline than nail-plate yellowing, worth checking separately",
+        "link_type": "nailfeed-sibling"
+      },
+      {
+        "url": "https://goaskalice.columbia.edu/answered-questions/why-do-nails-turn-yellow-after-long-term-nail-polish-use",
+        "anchor_text": "Columbia University's health service on nail polish staining",
+        "placement_section": "Why gel polish leaves your nails yellow in the first place — confirmed accessible, genuine health-education authority source on why polish pigments stain the porous nail plate",
+        "link_type": "external"
+      },
+      {
+        "url": "https://www.marieclaire.com/beauty/makeup/how-to/a41/nails-whiten-yellow/",
+        "anchor_text": "dermatologist-recommended whitening methods",
+        "placement_section": "How to speed up the fade safely — confirmed accessible, dermatologist-sourced whitening guidance from Marie Claire",
+        "link_type": "external"
+      },
+      {
+        "url": "https://www.healthline.com/health/yellow-nails",
+        "anchor_text": "when nail discoloration signals something beyond staining",
+        "placement_section": "When yellow nails are not just staining — confirmed accessible, medically-reviewed source on non-cosmetic causes of yellow nails",
+        "link_type": "external"
+      }
+    ]
+  },
+  "section_9_topical_map": {
+    "relatedClusters": [
+      "why-are-my-nails-yellow-after-wearing-gel-polish-for-weeks",
+      "why-do-my-cuticles-look-stained-after-taking-off-gel-polish",
+      "why-did-my-nails-turn-orange-after-removing-dark-nail-polish"
+    ],
+    "primaryKeyword": "how long does it take for yellow nails to fade",
+    "secondaryKeywords": [
+      "yellow nails after gel polish",
+      "gel polish stained nails",
+      "how to fix yellow nails from nail polish"
+    ]
+  },
+  "section_10_voice_tone": {
+    "recommended_voice": "Sharp and direct",
+    "tone_characteristics": [
+      "Straightforward and reassuring rather than alarmist — matches the negative/anxious sentiment_read without amplifying it",
+      "Cuts through vague advice with specific, staged answers, matching Trigger 2's 'state the problem sharply before the fix' pattern",
+      "Validates the reader's frustration with contradictory timelines before resolving it",
+      "Confident but not clinical — practical guidance a friend who actually knows nails would give"
+    ],
+    "audience_match": "Readers here are mildly anxious and impatient, tired of vague 'it varies' answers, so a direct, no-fluff voice that names a real timeline immediately builds trust and matches their actual emotional state right now."
+  },
+  "section_11_execution_plan": {
+    "block_1_entity_and_keyword_execution": {
+      "named_entities_to_surface_early": "gel polish staining, nail plate discoloration, acetone soak-off",
+      "primary_keyword_if_any": "how long does it take for yellow nails to fade",
+      "strong_tag_note": "Only bold/strong-tag the primary keyword phrase if it appears naturally within the first two H2 sections; do not force it."
+    },
+    "block_2_word_and_image_plan": {
+      "total_word_target": "1500, ±50",
+      "introduction": "140 words",
+      "conclusion": "100 words",
+      "h2_budgets": [
+        {"heading": "Why gel polish leaves your nails yellow in the first place", "budget": "230 words"},
+        {"heading": "The real timeline: how long yellow stains actually take to fade", "budget": "320 words"},
+        {"heading": "How to tell if it's surface staining or something deeper", "budget": "260 words"},
+        {"heading": "How to speed up the fade safely", "budget": "280 words"},
+        {"heading": "When yellow nails are not just staining", "budget": "180 words"}
+      ],
+      "image_assignments": [
+        {"image_number": 1, "place_after": "hero (frontmatter only)", "section_context": "inspirational nail design shot only — bare nails showing yellow staining post-removal, matching hero brief", "path": "/images/nail-feed/how-long-yellow-nails-fade-gel-polish/yellow-stained-nails-after-gel-polish-removal-closeup-2026.webp"},
+        {"image_number": 2, "place_after": "Why gel polish leaves your nails yellow in the first place", "section_context": "close-up of gel polish being peeled/soaked off showing the staining underneath", "path": "/images/nail-feed/how-long-yellow-nails-fade-gel-polish/gel-polish-removal-yellow-stain-reveal.webp"},
+        {"image_number": 3, "place_after": "How to tell if it's surface staining or something deeper", "section_context": "side-by-side comparison shot of light surface staining vs deeper yellow discoloration on nail beds", "path": "/images/nail-feed/how-long-yellow-nails-fade-gel-polish/surface-vs-deep-nail-staining-comparison.webp"},
+        {"image_number": 4, "place_after": "How to speed up the fade safely", "section_context": "hands soaking in a whitening solution (hydrogen peroxide/baking soda soak) as a home-remedy visual", "path": "/images/nail-feed/how-long-yellow-nails-fade-gel-polish/nail-whitening-soak-treatment.webp"}
+      ]
+    },
+    "block_3_opening_technique_assignments": {
+      "rule": "No two consecutive sections same technique. Conclusion = Technique 1 or 3 only.",
+      "assignments": [
+        {"section": "Introduction", "technique": "Technique 2 — Negative angle plus solution (name the exact frustrating moment)"},
+        {"section": "H2-1 heading (Why gel polish leaves your nails yellow)", "technique": "Technique 1 — Curiosity gap (the pigment/porosity mechanism most readers don't know)"},
+        {"section": "Conclusion", "technique": "Technique 1"}
+      ]
+    },
+    "block_4_link_placements": {
+      "links": [
+        {"anchor_text": "why gel polish stains nails yellow in the first place", "full_url": "https://mirelleinspo.com/nail-feed/why-are-my-nails-yellow-after-wearing-gel-polish-for-weeks", "place_in_section": "Intro / Why gel polish leaves your nails yellow in the first place", "link_type": "nailfeed-sibling"},
+        {"anchor_text": "cuticle staining, which fades on a different timeline", "full_url": "https://mirelleinspo.com/nail-feed/why-do-my-cuticles-look-stained-after-taking-off-gel-polish", "place_in_section": "How to tell if it's surface staining or something deeper", "link_type": "nailfeed-sibling"},
+        {"anchor_text": "Columbia University's health service on nail polish staining", "full_url": "https://goaskalice.columbia.edu/answered-questions/why-do-nails-turn-yellow-after-long-term-nail-polish-use", "place_in_section": "Why gel polish leaves your nails yellow in the first place", "link_type": "external"},
+        {"anchor_text": "dermatologist-recommended whitening methods", "full_url": "https://www.marieclaire.com/beauty/makeup/how-to/a41/nails-whiten-yellow/", "place_in_section": "How to speed up the fade safely", "link_type": "external"},
+        {"anchor_text": "when nail discoloration signals something beyond staining", "full_url": "https://www.healthline.com/health/yellow-nails", "place_in_section": "When yellow nails are not just staining", "link_type": "external"}
+      ]
+    },
+    "block_5_active_constraints": {
+      "em_dash_banned": "confirmed active",
+      "british_english_active": "confirmed active",
+      "min_h2_reminder": "at least 3 H2s — hard technical requirement, needed for full widget placement including social CTA slot (this post has 5)",
+      "word_count_reminder": "1500 target, depth not padding",
+      "image_count_reminder": "4 total: 1 hero + 3 body, fixed — locked value, Post Gen Agent must not scale this up or down",
+      "hero_image_reminder": "frontmatter only, never in body; alt text and filename only from this file, visual concept comes from a separate downstream prompt; image path is /images/nail-feed/how-long-yellow-nails-fade-gel-polish/{filename}.webp"
+    },
+    "block_6_widget_execution": {
+      "reaction_bar": "omit frontmatter entirely — default (Obsessed / Meh / Hard pass) applies automatically",
+      "poll_or_quiz": "write frontmatter for the poll exactly as given in section_4 (yellow-nail-fix-approach), never write quiz content for this post",
+      "reminder": "Poll and quiz are mutually exclusive at the template level. This post uses poll only."
+    }
+  }
+}
