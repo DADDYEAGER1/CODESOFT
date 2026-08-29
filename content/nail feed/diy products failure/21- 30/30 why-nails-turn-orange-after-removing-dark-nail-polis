@@ -1,0 +1,159 @@
+{
+  "section_1_file_authority": {
+    "statement": "THIS FILE IS THE SINGLE SOURCE OF TRUTH FOR THE NAIL FEED POST GEN AGENT. All values in POST_CONSTANTS are hardcoded. All entities, sentiment/trend rationale, emotion trigger, structure, and links defined here must be followed exactly."
+  },
+  "section_2_post_constants": {
+    "slug": "why-nails-turn-orange-after-removing-dark-nail-polish",
+    "canonical": "https://mirelleinspo.com/nail-feed/why-nails-turn-orange-after-removing-dark-nail-polish",
+    "word_count": 1500,
+    "image_count": 4,
+    "category": "Nail Health",
+    "publish_date": "2026-09-05",
+    "author": "jyoti-mirelle"
+  },
+  "section_3_sentiment_and_entity_brief": {
+    "sentiment_read": "mixed",
+    "the_specific_frustration_or_desire": "a jolt of alarm at seeing nails come out orange or rust-tinted after peeling off a dark polish, followed by wanting quick reassurance it's not damage or infection and a fast way to fix it before it's visible",
+    "named_entities": ["dye bleeding / pigment migration", "porous nail plate", "nitrocellulose staining", "red/dark/wine pigments", "base coat", "lemon juice and baking soda buff", "whitening toothpaste method", "hydrogen peroxide soak"],
+    "trend_velocity": "seasonal-cyclical, warming now into autumn/winter as darker polish shades (wine, burgundy, black, deep brown) come back into rotation",
+    "why_now_rationale": "Dark and jewel-tone polish is the dominant seasonal shade family from September through winter, so the orange/rust staining complaint spikes right alongside it every year at this time.",
+    "saturation_check": "under-covered for the orange-specific variant — most existing content defaults to generic 'yellow nails' advice; the differentiation angle is addressing orange/rust staining specifically, tied to darker reds and wine tones rather than the more commonly covered yellow-from-red-polish or age-related yellowing."
+  },
+  "section_4_engagement_widgets": {
+    "reaction_bar": "default",
+    "poll_or_quiz_selected": "poll",
+    "selection_rationale": "Research surfaces a real recurring split in how people handle it after the fact: some immediately reach for a DIY whitening fix (toothpaste/lemon/peroxide) while others just wait for it to grow out — a genuine either/or worth putting to readers rather than a quiz-style branching outcome.",
+    "poll_content": {
+      "id": "orange-nail-stain-poll",
+      "question": "Orange stain after taking off dark polish — what do you do?",
+      "options": [
+        {"id": "a", "label": "Try a DIY whitening fix right away"},
+        {"id": "b", "label": "Just wait it out until it grows off"}
+      ]
+    }
+  },
+  "section_5_hook_and_ctr": {
+    "selected_trigger": "Trigger 1 — Curiosity Gap",
+    "trigger_rationale": "Sentiment is mixed, not sharply negative — readers are confused/mildly alarmed rather than deeply frustrated, so a 'why is this happening' curiosity angle fits better than a negative-angle callout.",
+    "title": "Why your nails turn orange after removing dark polish",
+    "title_char_count": 53,
+    "excerpt": "That rusty orange tint isn't damage. Here's the real reason dark polish stains nails and the fastest way to get your natural color back.",
+    "excerpt_char_count": 139,
+    "intro_hook_brief": "Open on the exact moment of peeling off a wine or black manicure and finding orange underneath, then immediately name it as dye bleeding into the nail plate, not injury or infection.",
+    "hero_image_emotional_beat": "The exact moment of contrast: a freshly removed dark polish nail showing a distinct orange-rust stain against bare, pale nail plate."
+  },
+  "section_6_hero_image_brief": {
+    "imageAlt": "Bare nail plate with a distinct orange-rust stain left behind after removing dark wine and black nail polish, close-up hand shot",
+    "image_filename_brief": "orange-stained-nails-after-dark-polish-removal-closeup-2026.webp",
+    "tag_for_downstream_prompt": "Google Discover hero image — high contrast, thumbnail-style, click-optimised, paired with the title 'Why your nails turn orange after removing dark polish'."
+  },
+  "section_7_content_structure": {
+    "h2_structure": [
+      "Why dark nail polish leaves an orange stain behind",
+      "Is orange nail staining actually damage?",
+      "The fastest ways to fade an orange nail stain at home",
+      "How to stop it happening next time you wear dark polish"
+    ],
+    "word_budget": {
+      "intro": 140,
+      "h2_1": 380,
+      "h2_2": 300,
+      "h2_3": 400,
+      "h2_4": 180,
+      "conclusion": 100
+    }
+  },
+  "section_8_links": {
+    "all_links": [
+      {
+        "url": "https://mirelleinspo.com/nail-feed/why-are-my-nails-yellow-after-wearing-gel-polish-for-weeks",
+        "anchor_text": "why gel polish causes yellow staining over time",
+        "placement_section": "H2-1 (Why dark nail polish leaves an orange stain behind)",
+        "link_type": "nailfeed-sibling"
+      },
+      {
+        "url": "https://mirelleinspo.com/nail-feed/why-do-my-cuticles-look-stained-after-taking-off-gel-polish",
+        "anchor_text": "cuticle staining after gel polish removal",
+        "placement_section": "H2-2 (Is orange nail staining actually damage?)",
+        "link_type": "nailfeed-sibling"
+      },
+      {
+        "url": "https://goaskalice.columbia.edu/answered-questions/dark-nail-polish-and-discolored-nails-dilemma",
+        "anchor_text": "Columbia University's health guidance on nail polish staining",
+        "placement_section": "H2-2 (Is orange nail staining actually damage?)",
+        "link_type": "external"
+      },
+      {
+        "url": "https://www.healthline.com/health/how-to-remove-gel-nail-polish",
+        "anchor_text": "proper gel polish removal technique",
+        "placement_section": "H2-4 (How to stop it happening next time)",
+        "link_type": "external"
+      }
+    ]
+  },
+  "section_9_topical_map": {
+    "primaryKeyword": "nails turn orange after removing dark polish",
+    "secondaryKeywords": ["orange nail stain", "dark nail polish staining", "nail dye bleeding", "how to remove nail polish stains"]
+  },
+  "section_10_voice_tone": {
+    "recommended_voice": "Warm, reassuring expert",
+    "tone_characteristics": ["calm and de-alarming", "clear on the science without being clinical", "quick to reassure before explaining", "practical and solution-forward"],
+    "audience_match": "Readers arrive mildly alarmed but not deeply frustrated (mixed sentiment_read), so a curiosity-gap trigger pairs best with a voice that resolves the worry fast rather than dwelling on a problem-agitation angle."
+  },
+  "section_11_execution_plan": {
+    "block_1_entity_and_keyword_execution": {
+      "named_entities_to_surface_early": ["dye bleeding / pigment migration", "porous nail plate", "nitrocellulose staining", "red/dark/wine pigments"],
+      "primary_keyword_if_any": "nails turn orange after removing dark polish",
+      "strong_tag_note": "Apply only if the keyword phrase appears naturally in the intro or first H2 — do not force it."
+    },
+    "block_2_word_and_image_plan": {
+      "total_word_target": "1500, ±50",
+      "introduction": "120-160 words",
+      "conclusion": "80-120 words",
+      "h2_budgets": [
+        {"heading": "Why dark nail polish leaves an orange stain behind", "budget": "380 words"},
+        {"heading": "Is orange nail staining actually damage?", "budget": "300 words"},
+        {"heading": "The fastest ways to fade an orange nail stain at home", "budget": "400 words"},
+        {"heading": "How to stop it happening next time you wear dark polish", "budget": "180 words"}
+      ],
+      "image_assignments": [
+        {"image_number": 1, "place_after": "hero (frontmatter)", "section_context": "inspirational nail design shot only", "path": "/images/nail-feed/why-nails-turn-orange-after-removing-dark-nail-polish/orange-stained-nails-after-dark-polish-removal-closeup-2026.webp"},
+        {"image_number": 2, "place_after": "Why dark nail polish leaves an orange stain behind", "section_context": "inspirational nail design shot only", "path": "/images/nail-feed/why-nails-turn-orange-after-removing-dark-nail-polish/image-2.webp"},
+        {"image_number": 3, "place_after": "The fastest ways to fade an orange nail stain at home", "section_context": "inspirational nail design shot only", "path": "/images/nail-feed/why-nails-turn-orange-after-removing-dark-nail-polish/image-3.webp"},
+        {"image_number": 4, "place_after": "How to stop it happening next time you wear dark polish", "section_context": "inspirational nail design shot only", "path": "/images/nail-feed/why-nails-turn-orange-after-removing-dark-nail-polish/image-4.webp"}
+      ]
+    },
+    "block_3_opening_technique_assignments": {
+      "rule": "No two consecutive sections same technique. Conclusion = Technique 1 or 3 only.",
+      "assignments": [
+        {"section": "Introduction", "technique": "Technique 1 — scene/moment open"},
+        {"section": "H2-1 heading", "technique": "Technique 2 — direct explanation open"},
+        {"section": "H2-2 heading", "technique": "Technique 3 — reassurance/question open"},
+        {"section": "H2-3 heading", "technique": "Technique 1 — scene/moment open"},
+        {"section": "H2-4 heading", "technique": "Technique 2 — direct explanation open"},
+        {"section": "Conclusion", "technique": "Technique 3"}
+      ]
+    },
+    "block_4_link_placements": {
+      "links": [
+        {"anchor_text": "why gel polish causes yellow staining over time", "full_url": "https://mirelleinspo.com/nail-feed/why-are-my-nails-yellow-after-wearing-gel-polish-for-weeks", "place_in_section": "Why dark nail polish leaves an orange stain behind", "link_type": "nailfeed-sibling"},
+        {"anchor_text": "cuticle staining after gel polish removal", "full_url": "https://mirelleinspo.com/nail-feed/why-do-my-cuticles-look-stained-after-taking-off-gel-polish", "place_in_section": "Is orange nail staining actually damage?", "link_type": "nailfeed-sibling"},
+        {"anchor_text": "Columbia University's health guidance on nail polish staining", "full_url": "https://goaskalice.columbia.edu/answered-questions/dark-nail-polish-and-discolored-nails-dilemma", "place_in_section": "Is orange nail staining actually damage?", "link_type": "external"},
+        {"anchor_text": "proper gel polish removal technique", "full_url": "https://www.healthline.com/health/how-to-remove-gel-nail-polish", "place_in_section": "How to stop it happening next time you wear dark polish", "link_type": "external"}
+      ]
+    },
+    "block_5_active_constraints": {
+      "em_dash_banned": "confirmed active",
+      "british_english_active": "confirmed active",
+      "min_h2_reminder": "at least 3 H2s — hard technical requirement, needed for full widget placement including social CTA slot",
+      "word_count_reminder": "1500 target, depth not padding",
+      "image_count_reminder": "4 total: 1 hero + 3 body, fixed — locked value, Post Gen Agent must not scale this up or down",
+      "hero_image_reminder": "frontmatter only, never in body; alt text and filename only from this file, visual concept comes from a separate downstream prompt; image path is /images/nail-feed/{slug}/{filename}.webp"
+    },
+    "block_6_widget_execution": {
+      "reaction_bar": "omit frontmatter entirely — default applies automatically",
+      "poll_or_quiz": "poll — use poll_content from section_4 exactly as given",
+      "reminder": "Poll and quiz are mutually exclusive at the template level."
+    }
+  }
+}
