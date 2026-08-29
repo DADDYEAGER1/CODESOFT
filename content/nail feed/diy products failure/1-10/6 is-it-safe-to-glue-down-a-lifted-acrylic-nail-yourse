@@ -1,0 +1,190 @@
+
+{
+  "section_1_file_authority": {
+    "statement": "THIS FILE IS THE SINGLE SOURCE OF TRUTH FOR THE NAIL FEED POST GEN AGENT. All values in POST_CONSTANTS are hardcoded. All entities, sentiment/trend rationale, emotion trigger, structure, and links defined here must be followed exactly."
+  },
+  "section_2_post_constants": {
+    "slug": "is-it-safe-to-glue-down-a-lifted-acrylic-nail-yourself",
+    "canonical": "https://mirelleinspo.com/nail-feed/is-it-safe-to-glue-down-a-lifted-acrylic-nail-yourself",
+    "word_count": 1500,
+    "image_count": 4,
+    "category": "Nail Health & Repair",
+    "publish_date": "2026-08-29",
+    "author": "jyoti-mirelle"
+  },
+  "section_3_sentiment_and_entity_brief": {
+    "post_gen_instruction": "This is the primary creative context for the whole post — the real emotional territory this post is built on, and what it's specifically about. Named entities should appear clearly and early in the post.",
+    "sentiment_read": "mixed, tilting negative — near-universal DIY habit colliding with a genuine, under-discussed safety fear",
+    "the_specific_frustration_or_desire": "People reflexively squirt nail glue under a lifted acrylic and press it back down because it's the fast, free, salon-avoiding fix everyone recommends — but a real subset of them are unknowingly sealing trapped moisture, bacteria, or early discoloration underneath, and only find out something was wrong when green or black discoloration ('green nail syndrome' / Pseudomonas) shows up weeks later.",
+    "named_entities": "acrylic nails, nail glue (cyanoacrylate), lifted acrylic, green nail syndrome, Pseudomonas, nail bed infection",
+    "trend_velocity": "sustained — this is an evergreen DIY-repair question, not seasonal, with steady real-audience volume across Quora and TikTok nail-repair content",
+    "why_now_rationale": "DIY acrylic touch-ups stay in constant demand because refill appointments are expensive and slow to book, and TikTok nail-tech content keeps recirculating the glue-down trick as a quick fix without consistently flagging the infection risk — creating an information gap this post fills.",
+    "saturation_check": "under-covered on the safety angle specifically — most existing coverage is 'how to' repair tutorials (the technique itself is well covered); almost none lead with the infection/masking-damage risk as the primary hook. Differentiation angle: lead with the risk, then give the safe version of the fix."
+  },
+  "section_4_engagement_widgets": {
+    "post_gen_instruction": "Reaction Bar: write the custom frontmatter reaction block if provided below, otherwise omit entirely (post falls back to the route's hardcoded default automatically — no frontmatter needed for the default case). Poll/Quiz: write frontmatter for whichever ONE was selected below, exactly as given, never both. If this section explicitly states neither was selected, omit both poll and quiz from frontmatter entirely — this is a correct, deliberate outcome, not a gap.",
+    "reaction_bar": "default",
+    "poll_or_quiz_selected": "poll",
+    "selection_rationale": "Research surfaced a genuine, recurring either/or in real audience behavior: glue it down yourself right now vs. wait and get it looked at/soaked off properly — this split shows up directly across the Quora threads (glue-it instructions vs. warnings to go back to a tech first). No distinct branching outcomes appeared strongly enough to justify a quiz.",
+    "poll_content": {
+      "id": "glue-lifted-acrylic-poll",
+      "question": "Your acrylic nail just lifted. What's your instinct?",
+      "options": [
+        {"id": "a", "label": "Grab the nail glue and fix it myself right now"},
+        {"id": "b", "label": "Wait and get it looked at or soaked off properly"}
+      ]
+    }
+  },
+  "section_5_hook_and_ctr": {
+    "post_gen_instruction": "READ BEFORE WRITING TITLE, EXCERPT, INTRO, OR FIRST H2. Title and excerpt are hardcoded — use exactly. Title length range is 45-70 characters (Discover feed range, not a SERP-derived cap) — see phase_4.",
+    "selected_trigger": "Trigger 2 — negative angle plus solution",
+    "trigger_rationale": "Phase_1's sentiment_read is genuinely mixed-negative: a real, specific, recurring risk (trapped bacteria, green nail syndrome) sits underneath an extremely common DIY habit, so naming the problem sharply before the fix is the correct, research-backed trigger, not a reflexive choice.",
+    "title": "Is it safe to glue down a lifted acrylic nail yourself?",
+    "title_char_count": 57,
+    "excerpt": "Before you reach for the nail glue, know what's actually trapped under that lift and when gluing it down can make things worse, not better.",
+    "excerpt_char_count": 142,
+    "intro_hook_brief": "Open by naming the near-universal reflex (grab the glue, press it down, move on) then immediately pivot to the specific thing almost nobody checks first: what's actually in that gap before you seal it shut.",
+    "hero_image_emotional_beat": "The exact moment of pressing a glue-loaded lifted acrylic nail back down onto the natural nail — close-up, finger and applicator visible, the specific 'about to seal the gap' moment the title raises a question about."
+  },
+  "section_6_hero_image_brief": {
+    "post_gen_instruction": "Use imageAlt exactly as given. image_filename_brief is a naming reference for the actual hero image file, which will be saved at /images/nail-feed/{slug}/{filename}.webp. This section does NOT include a visual concept/mood description — that lives in a separate downstream image-generation prompt the user runs independently.",
+    "imageAlt": "Close-up of nail glue being applied under a lifted acrylic nail edge before pressing it back down onto the natural nail plate",
+    "image_filename_brief": "gluing-lifted-acrylic-nail-closeup-repair-2026.webp",
+    "tag_for_downstream_prompt": "For Google Discover hero image — high contrast, thumbnail-style, click-optimised, paired with the title 'Is it safe to glue down a lifted acrylic nail yourself?'",
+    "spec_reminder": "1200x675, 16:9 — hard Discover technical gate, non-negotiable, for whoever generates the actual image."
+  },
+  "section_7_content_structure": {
+    "post_gen_instruction": "H2 structure followed exactly — no renaming, no reordering without user instruction.",
+    "h2_structure": [
+      "What's actually trapped under a lifted acrylic nail",
+      "When gluing it down yourself is genuinely fine",
+      "The warning signs that mean don't glue it",
+      "How to glue it down safely if it checks out",
+      "When to stop and get it removed instead"
+    ],
+    "word_budget": {
+      "intro": "140 words",
+      "H2_1": "300 words",
+      "H2_2": "220 words",
+      "H2_3": "260 words",
+      "H2_4": "320 words",
+      "H2_5": "160 words",
+      "conclusion": "100 words"
+    }
+  },
+  "section_8_links": {
+    "post_gen_instruction": "Every link below appears in the post, woven naturally, verbatim URLs and anchors exactly as given/discovered. 2-3 internal + 2-3 external maximum. Internal links are pre-resolved (from Bucket Explorer JSON, Mode A2) or absent (Mode A/B one-off) — this agent never live-searches for internal links. External links are freshly researched here every time.",
+    "all_links": [
+      {
+        "url": "NOT SUPPLIED — Bucket Explorer JSON provided target post title only, no URL/slug",
+        "target_post_title": "How to fix lifted gel nails without removing the whole set",
+        "anchor_text": "the gel-specific version of this fix",
+        "placement_section": "intro/comparison note, per Bucket Explorer anchor_context",
+        "link_type": "nailfeed-sibling"
+      },
+      {
+        "url": "NOT SUPPLIED — Bucket Explorer JSON provided target post title only, no URL/slug",
+        "target_post_title": "Why do acrylic nails lift at the edges after one week",
+        "anchor_text": "why acrylic lifts at the edges in the first place",
+        "placement_section": "closing section, directing readers who are already lifting toward this post per Bucket Explorer anchor_context",
+        "link_type": "nailfeed-sibling"
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/Green_nail_syndrome",
+        "anchor_text": "green nail syndrome, caused by Pseudomonas bacteria",
+        "placement_section": "H2: What's actually trapped under a lifted acrylic nail",
+        "link_type": "external"
+      },
+      {
+        "url": "https://kittennail.com/fix-lifted-acrylic-nail-emergency-repair-guide/",
+        "anchor_text": "a step-by-step emergency repair guide for lifted acrylics",
+        "placement_section": "H2: How to glue it down safely if it checks out",
+        "link_type": "external"
+      }
+    ]
+  },
+  "section_9_topical_map": {
+    "post_gen_instruction": "Omit entirely from frontmatter if this section is empty/absent — never write topic as null or empty string.",
+    "topic": "absent",
+    "parentPillar": "absent",
+    "relatedClusters": [
+      "how-to-fix-lifted-gel-nails-without-removing-the-whole-set",
+      "why-do-acrylic-nails-lift-at-the-edges-after-one-week"
+    ],
+    "primaryKeyword": "glue down lifted acrylic nail",
+    "secondaryKeywords": [
+      "lifted acrylic nail repair",
+      "green nail syndrome",
+      "fix lifting acrylic at home"
+    ],
+    "topicalBoundary": "absent"
+  },
+  "section_10_voice_tone": {
+    "post_gen_instruction": "Layer this on top of the fixed editorial voice mandate already in the Post Gen Agent prompt — never a departure from British English, banned vocabulary, or rhythm rules, just register within that frame.",
+    "recommended_voice": "Sharp and direct",
+    "tone_characteristics": [
+      "Matter-of-fact about the risk, not alarmist — the sentiment_read is mixed, not panicked, so tone should inform sharply rather than scare",
+      "Validates the reflex (gluing it down is genuinely fine most of the time) before drawing the line clearly",
+      "Confident, practical, instructional in the how-to sections, consistent with Trigger 2's problem-then-solution shape"
+    ],
+    "audience_match": "Readers already have the glue in hand and want a fast yes/no plus the safe method — phase_1 shows they're not anxious, they're pragmatic, so direct and specific beats soft or hedging."
+  },
+  "section_11_execution_plan": {
+    "block_1_entity_and_keyword_execution": {
+      "named_entities_to_surface_early": "acrylic nails, nail glue (cyanoacrylate), lifted acrylic, green nail syndrome, Pseudomonas",
+      "primary_keyword_if_any": "glue down lifted acrylic nail",
+      "strong_tag_note": "Only bold/strong-tag 'glue down lifted acrylic nail' if it appears naturally in the intro or first H2 — never forced."
+    },
+    "block_2_word_and_image_plan": {
+      "total_word_target": "1500, ±50",
+      "introduction": "140 words",
+      "conclusion": "100 words",
+      "h2_budgets": [
+        {"heading": "What's actually trapped under a lifted acrylic nail", "budget": "300 words"},
+        {"heading": "When gluing it down yourself is genuinely fine", "budget": "220 words"},
+        {"heading": "The warning signs that mean don't glue it", "budget": "260 words"},
+        {"heading": "How to glue it down safely if it checks out", "budget": "320 words"},
+        {"heading": "When to stop and get it removed instead", "budget": "160 words"}
+      ],
+      "image_assignments": [
+        {"image_number": 1, "place_after": "hero — frontmatter only", "section_context": "close-up of glue applied under a lifted acrylic edge before pressing down, matching hero brief", "path": "/images/nail-feed/is-it-safe-to-glue-down-a-lifted-acrylic-nail-yourself/gluing-lifted-acrylic-nail-closeup-repair-2026.webp"},
+        {"image_number": 2, "place_after": "What's actually trapped under a lifted acrylic nail", "section_context": "inspirational nail design shot showing a healthy, well-maintained acrylic set — no visible lifting", "path": "/images/nail-feed/is-it-safe-to-glue-down-a-lifted-acrylic-nail-yourself/healthy-acrylic-set-no-lifting-2026.webp"},
+        {"image_number": 3, "place_after": "The warning signs that mean don't glue it", "section_context": "inspirational nail design shot, clean natural nail bed post-removal, healthy pink tone for contrast against the warning-sign content", "path": "/images/nail-feed/is-it-safe-to-glue-down-a-lifted-acrylic-nail-yourself/clean-healthy-nail-bed-2026.webp"},
+        {"image_number": 4, "place_after": "How to glue it down safely if it checks out", "section_context": "inspirational nail design shot of a finished, freshly-glued and polished acrylic set looking seamless", "path": "/images/nail-feed/is-it-safe-to-glue-down-a-lifted-acrylic-nail-yourself/finished-repaired-acrylic-set-2026.webp"}
+      ]
+    },
+    "block_3_opening_technique_assignments": {
+      "rule": "No two consecutive sections same technique. Conclusion = Technique 1 or 3 only.",
+      "assignments": [
+        {"section": "Introduction", "technique": "Technique 2 — direct problem statement (name the reflex, then the risk)"},
+        {"section": "What's actually trapped under a lifted acrylic nail", "technique": "Technique 1 — direct answer/fact opening"},
+        {"section": "When gluing it down yourself is genuinely fine", "technique": "Technique 3 — reassurance/permission opening"},
+        {"section": "The warning signs that mean don't glue it", "technique": "Technique 2 — direct problem statement"},
+        {"section": "How to glue it down safely if it checks out", "technique": "Technique 1 — direct instructional opening"},
+        {"section": "When to stop and get it removed instead", "technique": "Technique 3 — reassurance/permission opening"},
+        {"section": "Conclusion", "technique": "Technique 1"}
+      ]
+    },
+    "block_4_link_placements": {
+      "links": [
+        {"anchor_text": "the gel-specific version of this fix", "full_url": "NOT SUPPLIED — see target_post_title: How to fix lifted gel nails without removing the whole set", "place_in_section": "Introduction", "link_type": "nailfeed-sibling"},
+        {"anchor_text": "why acrylic lifts at the edges in the first place", "full_url": "NOT SUPPLIED — see target_post_title: Why do acrylic nails lift at the edges after one week", "place_in_section": "When to stop and get it removed instead", "link_type": "nailfeed-sibling"},
+        {"anchor_text": "green nail syndrome, caused by Pseudomonas bacteria", "full_url": "https://en.wikipedia.org/wiki/Green_nail_syndrome", "place_in_section": "What's actually trapped under a lifted acrylic nail", "link_type": "external"},
+        {"anchor_text": "a step-by-step emergency repair guide for lifted acrylics", "full_url": "https://kittennail.com/fix-lifted-acrylic-nail-emergency-repair-guide/", "place_in_section": "How to glue it down safely if it checks out", "link_type": "external"}
+      ]
+    },
+    "block_5_active_constraints": {
+      "em_dash_banned": "confirmed active",
+      "british_english_active": "confirmed active",
+      "min_h2_reminder": "at least 3 H2s — hard technical requirement, needed for full widget placement including social CTA slot (this post has 5, clears it)",
+      "word_count_reminder": "1500 target, depth not padding",
+      "image_count_reminder": "4 total: 1 hero + 3 body, fixed — locked value, Post Gen Agent must not scale this up or down",
+      "hero_image_reminder": "frontmatter only, never in body; alt text and filename only from this file, visual concept comes from a separate downstream prompt; image path is /images/nail-feed/{slug}/{filename}.webp"
+    },
+    "block_6_widget_execution": {
+      "reaction_bar": "omit frontmatter entirely — default applies automatically",
+      "poll_or_quiz": "poll — use poll_content from section_4 exactly as given",
+      "reminder": "Poll and quiz are mutually exclusive at the template level."
+    }
+  }
+}
