@@ -1,0 +1,188 @@
+{
+  "section_1_file_authority": {
+    "statement": "THIS FILE IS THE SINGLE SOURCE OF TRUTH FOR THE NAIL FEED POST GEN AGENT. All values in POST_CONSTANTS are hardcoded. All entities, sentiment/trend rationale, emotion trigger, structure, and links defined here must be followed exactly."
+  },
+  "section_2_post_constants": {
+    "slug": "why-does-polygel-stay-tacky-after-the-recommended-cure-time",
+    "canonical": "https://mirelleinspo.com/nail-feed/why-does-polygel-stay-tacky-after-the-recommended-cure-time",
+    "word_count": 1500,
+    "image_count": 4,
+    "category": "DIY Product-Failure Problems",
+    "publish_date": "2026-08-29",
+    "author": "jyoti-mirelle"
+  },
+  "section_3_sentiment_and_entity_brief": {
+    "post_gen_instruction": "This is the primary creative context for the whole post — the real emotional territory this post is built on, and what it's specifically about. Named entities should appear clearly and early in the post.",
+    "sentiment_read": "mixed",
+    "the_specific_frustration_or_desire": "People cannot tell whether the tacky feel after curing polygel is the normal 'inhibition layer' (safe, expected, meant to be wiped off) or a sign they under-cured and the nail is actually going to fail. Quora and TikTok answers openly contradict each other in the same breath — 'that's normal' and 'you didn't cure it right' — which leaves DIYers second-guessing a manicure they just spent an hour on.",
+    "named_entities": "polygel, inhibition layer (also called tacky layer, dispersion layer, sticky layer), isopropyl alcohol (IPA), oxygen inhibition, LED/UV cure lamp, gel cleanser",
+    "trend_velocity": "sustained",
+    "why_now_rationale": "Polygel remains a heavily-searched at-home nail enhancement in 2026, with continued high social video volume around 'why is my polygel sticky' questions; this is an evergreen-but-warm DIY troubleshooting query rather than a seasonal spike.",
+    "saturation_check": "under-covered from the angle that actually matters to a reader: most existing coverage flatly states 'it's normal, wipe it off' without giving a clear test for telling normal tack apart from genuine under-cure. The differentiation angle is a simple diagnostic reader can run themselves before they panic or before they make it worse."
+  },
+  "section_4_engagement_widgets": {
+    "post_gen_instruction": "Reaction Bar: write the custom frontmatter reaction block if provided below, otherwise omit entirely (post falls back to the route's hardcoded default automatically — no frontmatter needed for the default case). Poll/Quiz: write frontmatter for whichever ONE was selected below, exactly as given, never both. If this section explicitly states neither was selected, omit both poll and quiz from frontmatter entirely — this is a correct, deliberate outcome, not a gap.",
+    "reaction_bar": "default",
+    "poll_or_quiz_selected": "poll",
+    "selection_rationale": "Research surfaced a genuine, recurring either/or in real threads: people are split on whether to just wipe the tack off immediately with alcohol, or leave it alone because 'that's how it's supposed to adhere the next coat' — a real point of confusion/debate, not an invented binary. A quiz didn't fit because there's no set of distinct outcomes to sort a reader into here, just one diagnostic question.",
+    "poll_content": {
+      "id": "polygel-tacky-poll",
+      "question": "When your polygel feels tacky after curing, what do you usually do?",
+      "options": [
+        {"id": "a", "label": "Wipe it off right away with alcohol"},
+        {"id": "b", "label": "Leave it, thought it was supposed to be sticky"},
+        {"id": "c", "label": "Panic and re-cure it for longer"},
+        {"id": "d", "label": "Honestly never noticed it before"}
+      ]
+    }
+  },
+  "section_5_hook_and_ctr": {
+    "post_gen_instruction": "READ BEFORE WRITING TITLE, EXCERPT, INTRO, OR FIRST H2. Title and excerpt are hardcoded — use exactly. Title length range is 45-70 characters (Discover feed range, not a SERP-derived cap) — see phase_4.",
+    "selected_trigger": "Trigger 1 — Curiosity gap",
+    "trigger_rationale": "Sentiment_read is mixed/confused rather than angry — the real issue is readers not knowing which of two contradictory explanations to believe, which is a knowledge-gap problem, not a frustration-with-a-clear-villain problem.",
+    "title": "Why your polygel still feels tacky after curing (it's not always bad)",
+    "title_char_count": 68,
+    "excerpt": "That sticky layer after curing isn't always a mistake. Here's how to tell normal tack from a cure gone wrong, and what to actually do about it.",
+    "excerpt_char_count": 145,
+    "intro_hook_brief": "Open on the exact moment: hand out of the lamp, nail still tacky, and the reader unsure whether to be worried. Name both contradictory answers they've probably already heard before resolving which one is true and when.",
+    "hero_image_emotional_beat": "A close-up shot at the exact moment of wiping the tacky layer off a freshly cured polygel nail with a lint-free wipe, glossy finish just starting to show through — the 'reveal' moment the title promises."
+  },
+  "section_6_hero_image_brief": {
+    "post_gen_instruction": "Use imageAlt exactly as given. image_filename_brief is a naming reference for the actual hero image file, which will be saved at /images/nail-feed/{slug}/{filename}.webp. This section does NOT include a visual concept/mood description — that lives in a separate downstream image-generation prompt the user runs independently.",
+    "imageAlt": "Glossy polygel nail revealed as tacky inhibition layer is wiped away with a lint-free pad after LED lamp curing",
+    "image_filename_brief": "polygel-tacky-inhibition-layer-wipe-glossy-reveal-2026.webp",
+    "tag_for_downstream_prompt": "For Google Discover hero image — high contrast, thumbnail-style, click-optimised, paired with the title 'Why your polygel still feels tacky after curing (it's not always bad)'.",
+    "spec_reminder": "1200x675, 16:9 — hard Discover technical gate, non-negotiable, for whoever generates the actual image."
+  },
+  "section_7_content_structure": {
+    "post_gen_instruction": "H2 structure followed exactly — no renaming, no reordering without user instruction.",
+    "h2_structure": [
+      "The sticky layer has a name, and it's not always a mistake",
+      "How to tell normal tack from a cure that actually failed",
+      "Why oxygen is the real cause of that sticky feeling",
+      "The right way to remove the tacky layer without wrecking your set",
+      "When tackiness really does mean under-cured polygel"
+    ],
+    "word_budget": {
+      "intro": "140 words",
+      "The sticky layer has a name, and it's not always a mistake": "260 words",
+      "How to tell normal tack from a cure that actually failed": "300 words",
+      "Why oxygen is the real cause of that sticky feeling": "230 words",
+      "The right way to remove the tacky layer without wrecking your set": "270 words",
+      "When tackiness really does mean under-cured polygel": "200 words",
+      "conclusion": "100 words"
+    }
+  },
+  "section_8_links": {
+    "post_gen_instruction": "Every link below appears in the post, woven naturally, verbatim URLs and anchors exactly as given/discovered. 2-3 internal + 2-3 external maximum. Internal links are pre-resolved (from Bucket Explorer JSON, Mode A2) or absent (Mode A/B one-off) — this agent never live-searches for internal links. External links are freshly researched here every time.",
+    "all_links": [
+      {
+        "url": "https://mirelleinspo.com/nail-feed/why-does-gel-polish-streak-no-matter-how-thin-i-apply-it",
+        "anchor_text": "why gel polish streaks no matter how thin you apply it",
+        "placement_section": "Why oxygen is the real cause of that sticky feeling — noted as a related product-consistency issue that shares the same root cause family",
+        "link_type": "nailfeed-sibling"
+      },
+      {
+        "url": "https://mirelleinspo.com/nail-feed/why-does-polygel-keep-lifting-off-the-nail-bed",
+        "anchor_text": "why polygel keeps lifting off the nail bed",
+        "placement_section": "When tackiness really does mean under-cured polygel — flagged as the lifting risk that can follow genuine under-curing",
+        "link_type": "nailfeed-sibling"
+      },
+      {
+        "url": "https://nailorderpro.com/blogs/its-science/what-is-an-inhibition-layer",
+        "anchor_text": "what the inhibition layer actually is and why it forms",
+        "placement_section": "The sticky layer has a name, and it's not always a mistake",
+        "link_type": "external"
+      },
+      {
+        "url": "https://www.attaincosmetics.com/blogs/insidethelab/the-inhibition-layer-why-gels-stay-sticky-after-curing",
+        "anchor_text": "best practices for handling the inhibition layer safely",
+        "placement_section": "The right way to remove the tacky layer without wrecking your set",
+        "link_type": "external"
+      },
+      {
+        "url": "https://thenailwiki.com/nail-cleansers/",
+        "anchor_text": "the difference between prep liquid and post-cure cleanser",
+        "placement_section": "The right way to remove the tacky layer without wrecking your set",
+        "link_type": "external"
+      }
+    ]
+  },
+  "section_9_topical_map": {
+    "post_gen_instruction": "Omit entirely from frontmatter if this section is empty/absent — never write topic as null or empty string.",
+    "topic": "absent",
+    "parentPillar": "absent",
+    "relatedClusters": [
+      "why-does-gel-polish-streak-no-matter-how-thin-i-apply-it",
+      "why-does-polygel-keep-lifting-off-the-nail-bed"
+    ],
+    "primaryKeyword": "polygel sticky after curing",
+    "secondaryKeywords": ["polygel tacky layer", "inhibition layer gel nails", "polygel not curing properly"],
+    "topicalBoundary": "absent"
+  },
+  "section_10_voice_tone": {
+    "post_gen_instruction": "Layer this on top of the fixed editorial voice mandate already in the Post Gen Agent prompt — never a departure from British English, banned vocabulary, or rhythm rules, just register within that frame.",
+    "recommended_voice": "Warm expert",
+    "tone_characteristics": ["reassuring without dismissing the worry", "clear and diagnostic rather than vague", "plain-spoken, no jargon without an immediate translation"],
+    "audience_match": "The reader isn't angry, they're unsure and slightly anxious about a set they just made — phase_1's mixed/confused sentiment calls for a voice that resolves the confusion calmly rather than dramatizing a problem that mostly isn't one."
+  },
+  "section_11_execution_plan": {
+    "block_1_entity_and_keyword_execution": {
+      "named_entities_to_surface_early": "polygel, inhibition layer, isopropyl alcohol, oxygen inhibition",
+      "primary_keyword_if_any": "polygel sticky after curing",
+      "strong_tag_note": "Only bold/strong-tag 'inhibition layer' at its first natural definition point in H2-1 — never forced elsewhere."
+    },
+    "block_2_word_and_image_plan": {
+      "total_word_target": "1500, ±50",
+      "introduction": "140 words",
+      "conclusion": "100 words",
+      "h2_budgets": [
+        {"heading": "The sticky layer has a name, and it's not always a mistake", "budget": "260 words"},
+        {"heading": "How to tell normal tack from a cure that actually failed", "budget": "300 words"},
+        {"heading": "Why oxygen is the real cause of that sticky feeling", "budget": "230 words"},
+        {"heading": "The right way to remove the tacky layer without wrecking your set", "budget": "270 words"},
+        {"heading": "When tackiness really does mean under-cured polygel", "budget": "200 words"}
+      ],
+      "image_assignments": [
+        {"image_number": 1, "place_after": "hero (frontmatter only)", "section_context": "inspirational nail design shot only — glossy finished polygel set", "path": "/images/nail-feed/why-does-polygel-stay-tacky-after-the-recommended-cure-time/polygel-tacky-inhibition-layer-wipe-glossy-reveal-2026.webp"},
+        {"image_number": 2, "place_after": "How to tell normal tack from a cure that actually failed", "section_context": "close-up of a nail surface showing a thin even tacky sheen, inspirational styled shot", "path": "/images/nail-feed/why-does-polygel-stay-tacky-after-the-recommended-cure-time/polygel-thin-tacky-layer-closeup.webp"},
+        {"image_number": 3, "place_after": "Why oxygen is the real cause of that sticky feeling", "section_context": "styled shot of a hand under an LED lamp mid-cure, inspirational only", "path": "/images/nail-feed/why-does-polygel-stay-tacky-after-the-recommended-cure-time/polygel-led-lamp-curing-hand.webp"},
+        {"image_number": 4, "place_after": "The right way to remove the tacky layer without wrecking your set", "section_context": "finished glossy polygel manicure, styled flat-lay, inspirational close only", "path": "/images/nail-feed/why-does-polygel-stay-tacky-after-the-recommended-cure-time/polygel-finished-glossy-manicure-flatlay.webp"}
+      ]
+    },
+    "block_3_opening_technique_assignments": {
+      "rule": "No two consecutive sections same technique. Conclusion = Technique 1 or 3 only.",
+      "assignments": [
+        {"section": "Introduction", "technique": "Technique 1 — direct scene-drop into the exact moment (hand out of the lamp, still tacky)"},
+        {"section": "The sticky layer has a name, and it's not always a mistake", "technique": "Technique 2 — myth-vs-fact framing"},
+        {"section": "How to tell normal tack from a cure that actually failed", "technique": "Technique 3 — direct diagnostic question to reader"},
+        {"section": "Why oxygen is the real cause of that sticky feeling", "technique": "Technique 1 — plain explanatory statement"},
+        {"section": "The right way to remove the tacky layer without wrecking your set", "technique": "Technique 3 — direct instructional address"},
+        {"section": "When tackiness really does mean under-cured polygel", "technique": "Technique 2 — myth-vs-fact framing"},
+        {"section": "Conclusion", "technique": "Technique 1 — plain reassurance close"}
+      ]
+    },
+    "block_4_link_placements": {
+      "links": [
+        {"anchor_text": "why gel polish streaks no matter how thin you apply it", "full_url": "https://mirelleinspo.com/nail-feed/why-does-gel-polish-streak-no-matter-how-thin-i-apply-it", "place_in_section": "Why oxygen is the real cause of that sticky feeling", "link_type": "nailfeed-sibling"},
+        {"anchor_text": "why polygel keeps lifting off the nail bed", "full_url": "https://mirelleinspo.com/nail-feed/why-does-polygel-keep-lifting-off-the-nail-bed", "place_in_section": "When tackiness really does mean under-cured polygel", "link_type": "nailfeed-sibling"},
+        {"anchor_text": "what the inhibition layer actually is and why it forms", "full_url": "https://nailorderpro.com/blogs/its-science/what-is-an-inhibition-layer", "place_in_section": "The sticky layer has a name, and it's not always a mistake", "link_type": "external"},
+        {"anchor_text": "best practices for handling the inhibition layer safely", "full_url": "https://www.attaincosmetics.com/blogs/insidethelab/the-inhibition-layer-why-gels-stay-sticky-after-curing", "place_in_section": "The right way to remove the tacky layer without wrecking your set", "link_type": "external"},
+        {"anchor_text": "the difference between prep liquid and post-cure cleanser", "full_url": "https://thenailwiki.com/nail-cleansers/", "place_in_section": "The right way to remove the tacky layer without wrecking your set", "link_type": "external"}
+      ]
+    },
+    "block_5_active_constraints": {
+      "em_dash_banned": "confirmed active",
+      "british_english_active": "confirmed active",
+      "min_h2_reminder": "at least 3 H2s — hard technical requirement, needed for full widget placement including social CTA slot (this post has 5)",
+      "word_count_reminder": "1500 target, depth not padding",
+      "image_count_reminder": "4 total: 1 hero + 3 body, fixed — locked value, Post Gen Agent must not scale this up or down",
+      "hero_image_reminder": "frontmatter only, never in body; alt text and filename only from this file, visual concept comes from a separate downstream prompt; image path is /images/nail-feed/{slug}/{filename}.webp"
+    },
+    "block_6_widget_execution": {
+      "reaction_bar": "default — omit frontmatter entirely",
+      "poll_or_quiz": "poll — use poll_content from section_4 exactly as given",
+      "reminder": "Poll and quiz are mutually exclusive at the template level — this post uses poll only."
+    }
+  }
+}
