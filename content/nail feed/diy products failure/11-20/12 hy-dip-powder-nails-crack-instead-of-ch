@@ -1,0 +1,197 @@
+{
+  "section_1_file_authority": {
+    "statement": "THIS FILE IS THE SINGLE SOURCE OF TRUTH FOR THE NAIL FEED POST GEN AGENT. All values in POST_CONSTANTS are hardcoded. All entities, sentiment/trend rationale, emotion trigger, structure, and links defined here must be followed exactly."
+  },
+
+  "section_2_post_constants": {
+    "slug": "why-dip-powder-nails-crack-instead-of-chip",
+    "canonical": "https://mirelleinspo.com/nail-feed/why-dip-powder-nails-crack-instead-of-chip",
+    "word_count": 1500,
+    "image_count": 4,
+    "category": "Nail Health & Product Failures",
+    "publish_date": "2026-08-29",
+    "author": "jyoti-mirelle"
+  },
+
+  "section_3_sentiment_and_entity_brief": {
+    "post_gen_instruction": "This is the primary creative context for the whole post — the real emotional territory this post is built on, and what it's specifically about. Named entities should appear clearly and early in the post.",
+    "sentiment_read": "negative",
+    "the_specific_frustration_or_desire": "People expect dip powder to fail the way polish or gel does — a small chip at the tip they can live with or patch. Instead a hairline crack appears and, because the layer is one thick rigid shell, it runs clean across the whole nail or snaps a visible line through it, seemingly overnight. The real frustration is the mismatch between what they braced for (a slow chip) and what actually happens (a sudden structural fracture), plus not knowing if it's their technique, a cheap powder brand, or the system itself.",
+    "named_entities": "dip powder (SNS nails), activator, base/bond layer, acrylic-based powder system, apex method, dip liquid brands, acrylic nails (comparison entity)",
+    "trend_velocity": "sustained, currently warm — dip powder is having a confirmed 2026 resurgence as the go-to at-home, salon-skip manicure, with active seasonal color/shape content across the category; the failure-mode angle (why it specifically cracks rather than chips) is a genuinely under-covered companion angle to that colour-led coverage",
+    "why_now_rationale": "As more people move dip powder from occasional salon add-on to a regular at-home routine, first-time DIY crackers are hitting this exact confusing failure mode for the first time and searching for why, right as the format's overall search and content volume is rising.",
+    "saturation_check": "under-covered — most existing content either sells prevention tips (more activator, fewer coats) without ever naming why dip specifically cracks rather than chips, or is generic 'dip vs acrylic' comparison content not written from the failure-symptom angle. The site's own dip powder coverage (dip-powder-nail-ideas, dip-nail-colors) is entirely color/inspiration-led, so this problem-diagnosis angle has zero internal overlap and is a genuine gap to fill."
+  },
+
+  "section_4_engagement_widgets": {
+    "post_gen_instruction": "Reaction Bar: write the custom frontmatter reaction block if provided below, otherwise omit entirely (post falls back to the route's hardcoded default automatically — no frontmatter needed for the default case). Poll/Quiz: write frontmatter for whichever ONE was selected below, exactly as given, never both. If this section explicitly states neither was selected, omit both poll and quiz from frontmatter entirely — this is a correct, deliberate outcome, not a gap.",
+    "reaction_bar": "default",
+    "poll_or_quiz_selected": "poll",
+    "selection_rationale": "Research surfaced a real, live, unresolved split in the actual conversation — some sources and users say dip is the more flexible, crack-resistant system while others say dip is the more rigid one that cracks under pressure compared to acrylic. This is a genuine either/or the audience is actively divided on, not an invented one, so a poll fits; a quiz does not, since this topic is a single diagnostic problem (why does MY dip crack) rather than a set of distinct branching outcomes a reader could be sorted into.",
+    "poll_content": {
+      "id": "dip-vs-acrylic-crack-poll",
+      "question": "In your experience, which one actually cracks more?",
+      "options": [
+        {"id": "dip-cracks-more", "label": "Dip powder — mine snaps clean across"},
+        {"id": "acrylic-cracks-more", "label": "Acrylic — mine cracks down the middle"},
+        {"id": "both-equally", "label": "Honestly both, depends on the brand"},
+        {"id": "neither-lifts-instead", "label": "Neither — mine lifts before it ever cracks"}
+      ]
+    }
+  },
+
+  "section_5_hook_and_ctr": {
+    "post_gen_instruction": "READ BEFORE WRITING TITLE, EXCERPT, INTRO, OR FIRST H2. Title and excerpt are hardcoded — use exactly. Title length range is 45-70 characters (Discover feed range, not a SERP-derived cap) — see phase_4.",
+    "selected_trigger": "Trigger 2 — Negative angle + solution",
+    "trigger_rationale": "Phase_1's sentiment_read is genuinely negative: a real, specific, common problem exists in the conversation (a sudden structural crack, not the small chip people expect), so the title should state that mismatch sharply before offering the fix.",
+    "title": "Why dip powder nails crack instead of just chipping",
+    "title_char_count": 47,
+    "excerpt": "That sudden crack across your dip mani isn't bad luck. It's the rigid layer failing a specific way acrylic and gel don't.",
+    "excerpt_char_count": 124,
+    "intro_hook_brief": "Open on the exact moment of confusion: a small bump or knock that should have chipped a corner instead splits the whole nail. Name that mismatch immediately, then promise the mechanical reason why dip fails this way specifically.",
+    "hero_image_emotional_beat": "A close-up of a single dip powder nail with a visible clean crack running across it, in a bold, high-contrast colour, catching the exact 'it just snapped' moment the title names."
+  },
+
+  "section_6_hero_image_brief": {
+    "post_gen_instruction": "Use imageAlt exactly as given. image_filename_brief is a naming reference for the actual hero image file, which will be saved at /images/nail-feed/{slug}/{filename}.webp. This section does NOT include a visual concept/mood description — that lives in a separate downstream image-generation prompt the user runs independently.",
+    "imageAlt": "Cracked red dip powder nail with a clean hairline fracture across the nail plate, close-up shot showing the rigid layer split",
+    "image_filename_brief": "cracked-dip-powder-nail-hairline-fracture-red-closeup-2026.webp",
+    "tag_for_downstream_prompt": "Google Discover hero image — high contrast, thumbnail-style, click-optimised, paired with the exact title above."
+  },
+
+  "section_7_content_structure": {
+    "post_gen_instruction": "H2 structure followed exactly — no renaming, no reordering without user instruction.",
+    "h2_structure": [
+      "Why dip powder cracks instead of chipping like polish or gel",
+      "The real reasons your dip powder keeps cracking",
+      "Dip powder vs acrylic: which one actually cracks more",
+      "How to stop the next set from cracking",
+      "What to do when a dip nail has already cracked"
+    ],
+    "word_budget": {
+      "intro": "130 words",
+      "why_it_cracks_not_chips": "230 words",
+      "real_reasons": "300 words",
+      "dip_vs_acrylic": "230 words",
+      "how_to_prevent": "270 words",
+      "what_to_do_now": "200 words",
+      "conclusion": "90 words"
+    }
+  },
+
+  "section_8_links": {
+    "post_gen_instruction": "Every link below appears in the post, woven naturally, verbatim URLs and anchors exactly as given/discovered. 2-3 internal + 2-3 external maximum. Internal links are pre-resolved (from Bucket Explorer JSON, Mode A2) or absent (Mode A/B one-off) — this agent never live-searches for internal links. External links are freshly researched here every time.",
+    "all_links": [
+      {
+        "url": "https://mirelleinspo.com/nail-feed/why-does-acrylic-keep-cracking-down-the-center-of-the-nail",
+        "anchor_text": "why acrylic tends to crack down the center of the nail instead",
+        "placement_section": "Dip powder vs acrylic: which one actually cracks more — this is the comparison H2 this link naturally supports",
+        "link_type": "nailfeed-sibling"
+      },
+      {
+        "url": "https://mirelleinspo.com/nail-feed/why-does-acrylic-keep-cracking-down-the-center-of-the-nail",
+        "anchor_text": "acrylic's own center-crack pattern",
+        "placement_section": "Introduction, per the Bucket Explorer JSON's specified intro placement comparing dip's brittleness to acrylic's structural cracking",
+        "link_type": "nailfeed-sibling"
+      },
+      {
+        "url": "https://www.thenagaia.com/blogs/news/cracked-dip-nail-fixes-at-home-how-to-rescue-a-broken-dip-nail-the-right-way",
+        "anchor_text": "step-by-step fixes for a dip nail that has already cracked",
+        "placement_section": "What to do when a dip nail has already cracked",
+        "link_type": "external"
+      },
+      {
+        "url": "https://www.oreateai.com/blog/acrylic-vs-dip-powder-nails-which-endures-your-daily-grind-better/93bf2082774801db9300e6455bb843f8",
+        "anchor_text": "a closer look at how dip's flexibility compares to acrylic's rigidity",
+        "placement_section": "Dip powder vs acrylic: which one actually cracks more",
+        "link_type": "external"
+      }
+    ]
+  },
+
+  "section_9_topical_map": {
+    "post_gen_instruction": "Omit entirely from frontmatter if this section is empty/absent — never write topic as null or empty string.",
+    "topic": "absent",
+    "parentPillar": "absent",
+    "relatedClusters": [
+      "why-does-acrylic-keep-cracking-down-the-center-of-the-nail"
+    ],
+    "primaryKeyword": "why do dip powder nails crack",
+    "secondaryKeywords": [
+      "dip powder cracking instead of chipping",
+      "dip powder vs acrylic cracking",
+      "fix cracked dip powder nail"
+    ],
+    "topicalBoundary": "absent"
+  },
+
+  "section_10_voice_tone": {
+    "post_gen_instruction": "Layer this on top of the fixed editorial voice mandate already in the Post Gen Agent prompt — never a departure from British English, banned vocabulary, or rhythm rules, just register within that frame.",
+    "recommended_voice": "Sharp and direct",
+    "tone_characteristics": [
+      "Validates the specific confusion (this is not what I expected to happen) before explaining it",
+      "States the mechanical cause plainly and confidently, no hedging",
+      "Faster, shorter sentences in the diagnostic sections; slows down slightly in the fix/prevention sections to feel actionable rather than clinical"
+    ],
+    "audience_match": "The reader has just had a genuinely frustrating, confusing product failure and wants a straight answer fast, not a soft, generic reassurance — a sharper, more direct register matches phase_1's negative sentiment_read and Trigger 2's problem-first framing."
+  },
+
+  "section_11_execution_plan": {
+    "block_1_entity_and_keyword_execution": {
+      "named_entities_to_surface_early": "dip powder, cracking (as distinct from chipping), activator, rigid layer",
+      "primary_keyword_if_any": "why do dip powder nails crack",
+      "strong_tag_note": "Only applies if the primary keyword appears naturally within the first two sentences of the intro — do not force it if the natural phrasing reads awkwardly."
+    },
+    "block_2_word_and_image_plan": {
+      "total_word_target": 1500,
+      "introduction": "130 words",
+      "conclusion": "90 words",
+      "h2_budgets": [
+        {"heading": "Why dip powder cracks instead of chipping like polish or gel", "budget": "230 words"},
+        {"heading": "The real reasons your dip powder keeps cracking", "budget": "300 words"},
+        {"heading": "Dip powder vs acrylic: which one actually cracks more", "budget": "230 words"},
+        {"heading": "How to stop the next set from cracking", "budget": "270 words"},
+        {"heading": "What to do when a dip nail has already cracked", "budget": "200 words"}
+      ],
+      "image_assignments": [
+        {"image_number": 1, "place_after": "hero, before intro renders", "section_context": "inspirational nail design shot only — a clean, undamaged dip powder set in a bold colour, hero framing", "path": "/images/nail-feed/why-dip-powder-nails-crack-instead-of-chip/cracked-dip-powder-nail-hairline-fracture-red-closeup-2026.webp"},
+        {"image_number": 2, "place_after": "Why dip powder cracks instead of chipping like polish or gel", "section_context": "inspirational nail design shot only — a well-applied dip set showing an even, properly-capped edge", "path": "/images/nail-feed/why-dip-powder-nails-crack-instead-of-chip/dip-powder-nails-even-capped-edge-application.webp"},
+        {"image_number": 3, "place_after": "Dip powder vs acrylic: which one actually cracks more", "section_context": "inspirational nail design shot only — side-by-side style comparison shot, dip finish next to acrylic finish", "path": "/images/nail-feed/why-dip-powder-nails-crack-instead-of-chip/dip-powder-acrylic-side-by-side-finish-comparison.webp"},
+        {"image_number": 4, "place_after": "How to stop the next set from cracking", "section_context": "inspirational nail design shot only — a fresh, multi-layered dip application mid-process or finished, showing correct apex build", "path": "/images/nail-feed/why-dip-powder-nails-crack-instead-of-chip/dip-powder-apex-application-technique.webp"}
+      ]
+    },
+    "block_3_opening_technique_assignments": {
+      "rule": "No two consecutive sections same technique. Conclusion = Technique 1 or 3 only.",
+      "assignments": [
+        {"section": "Introduction", "technique": "Technique 2 — direct problem statement, naming the exact mismatch (expected chip, got a crack)"},
+        {"section": "Why dip powder cracks instead of chipping like polish or gel", "technique": "Technique 1 — mechanism explainer, opening on the rigid-layer physics"},
+        {"section": "The real reasons your dip powder keeps cracking", "technique": "Technique 3 — direct address, listing the specific causes readers can check against their own set"},
+        {"section": "Dip powder vs acrylic: which one actually cracks more", "technique": "Technique 1 — mechanism explainer, contrasting flexibility vs rigidity"},
+        {"section": "How to stop the next set from cracking", "technique": "Technique 3 — direct address, actionable prevention steps"},
+        {"section": "What to do when a dip nail has already cracked", "technique": "Technique 2 — direct problem-to-solution framing for the already-cracked reader"},
+        {"section": "Conclusion", "technique": "Technique 1 — closing mechanism recap tied back to confidence going into the next set"}
+      ]
+    },
+    "block_4_link_placements": {
+      "links": [
+        {"anchor_text": "acrylic's own center-crack pattern", "full_url": "https://mirelleinspo.com/nail-feed/why-does-acrylic-keep-cracking-down-the-center-of-the-nail", "place_in_section": "Introduction", "link_type": "nailfeed-sibling"},
+        {"anchor_text": "why acrylic tends to crack down the center of the nail instead", "full_url": "https://mirelleinspo.com/nail-feed/why-does-acrylic-keep-cracking-down-the-center-of-the-nail", "place_in_section": "Dip powder vs acrylic: which one actually cracks more", "link_type": "nailfeed-sibling"},
+        {"anchor_text": "a closer look at how dip's flexibility compares to acrylic's rigidity", "full_url": "https://www.oreateai.com/blog/acrylic-vs-dip-powder-nails-which-endures-your-daily-grind-better/93bf2082774801db9300e6455bb843f8", "place_in_section": "Dip powder vs acrylic: which one actually cracks more", "link_type": "external"},
+        {"anchor_text": "step-by-step fixes for a dip nail that has already cracked", "full_url": "https://www.thenagaia.com/blogs/news/cracked-dip-nail-fixes-at-home-how-to-rescue-a-broken-dip-nail-the-right-way", "place_in_section": "What to do when a dip nail has already cracked", "link_type": "external"}
+      ]
+    },
+    "block_5_active_constraints": {
+      "em_dash_banned": "confirmed active",
+      "british_english_active": "confirmed active",
+      "min_h2_reminder": "at least 3 H2s — hard technical requirement, needed for full widget placement including social CTA slot (this post has 5, clears comfortably)",
+      "word_count_reminder": "1500 target, depth not padding",
+      "image_count_reminder": "4 total: 1 hero + 3 body, fixed — locked value, Post Gen Agent must not scale this up or down",
+      "hero_image_reminder": "frontmatter only, never in body; alt text and filename only from this file, visual concept comes from a separate downstream prompt; image path is /images/nail-feed/why-dip-powder-nails-crack-instead-of-chip/{filename}.webp"
+    },
+    "block_6_widget_execution": {
+      "reaction_bar": "omit frontmatter entirely — default applies automatically",
+      "poll_or_quiz": "poll — use the exact poll_content object from section_4 verbatim",
+      "reminder": "Poll and quiz are mutually exclusive at the template level — this post uses poll only, quiz is not included."
+    }
+  }
+}
