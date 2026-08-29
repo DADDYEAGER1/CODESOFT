@@ -1,0 +1,201 @@
+{
+  "section_1_file_authority": {
+    "statement": "THIS FILE IS THE SINGLE SOURCE OF TRUTH FOR THE NAIL FEED POST GEN AGENT. All values in POST_CONSTANTS are hardcoded. All entities, sentiment/trend rationale, emotion trigger, structure, and links defined here must be followed exactly."
+  },
+
+  "section_2_post_constants": {
+    "slug": "nail-enhancement-rips-off-with-natural-nail-attached",
+    "canonical": "https://mirelleinspo.com/nail-feed/nail-enhancement-rips-off-with-natural-nail-attached",
+    "word_count": 1500,
+    "image_count": 4,
+    "category": "Nail Health & Safety",
+    "publish_date": "2026-09-05",
+    "author": "jyoti-mirelle"
+  },
+
+  "section_3_sentiment_and_entity_brief": {
+    "post_gen_instruction": "This is the primary creative context for the whole post — the real emotional territory this post is built on, and what it's specifically about. Named entities should appear clearly and early in the post.",
+    "sentiment_read": "negative — genuine acute distress, not mild annoyance",
+    "the_specific_frustration_or_desire": "People describe this as sudden, sharp, 'worse than childbirth'-level pain, arriving mid-day from an ordinary snag (a sweater, a car door, a stubborn jar lid), and their first reaction is panic mixed with total uncertainty about whether to rip the rest off, cut it, soak it, or run to urgent care. Quora and JustAnswer threads are dominated by people asking, in real time, 'is this dangerous' and 'will it grow back' while actively bleeding or in pain — this is an emergency-triage emotional state, not a curiosity-driven search.",
+    "named_entities": "nail enhancement (acrylic/gel/dip), natural nail plate, nail bed, nail bed avulsion, acetone soak-off, green nail syndrome (Pseudomonas infection), AAD (American Academy of Dermatology) injured-nail protocol",
+    "trend_velocity": "sustained, evergreen — this is a recurring acute-injury search (people search it the moment it happens to them, year-round), not seasonal. Confirmed via consistent JustAnswer/Quora question volume with no seasonal clustering and ongoing TikTok creator content (e.g. 'Dr. Dana' nail-injury explainer videos) still circulating within the last few weeks.",
+    "why_now_rationale": "Acrylic and gel-x enhancements remain a mainstream, heavily-worn category in 2026, and this specific injury (partial detachment with the natural nail still attached) is one of the most common DIY nail-wear accidents, with visible current search and short-form video demand around exactly this scenario.",
+    "saturation_check": "Under-covered on Mirellé Inspo specifically — a site search confirms no existing Nail Feed or blog post addresses this trauma/injury angle directly (existing acrylic content covers cost, application, and design, not injury). Externally, coverage exists but splits into either dry medical-avulsion language (AAD, orthopedic sites) or messy crowdsourced Q&A (JustAnswer, Quora) with no single page giving both the emotional 'is this actually dangerous' reassurance and clear, sequenced action steps. Differentiation angle: lead with the safety verdict the reader actually wants answered first, then structure the practical steps clearly, in plain language, without medical-journal distance."
+  },
+
+  "section_4_engagement_widgets": {
+    "post_gen_instruction": "Reaction Bar: write the custom frontmatter reaction block if provided below, otherwise omit entirely (post falls back to the route's hardcoded default automatically — no frontmatter needed for the default case). Poll/Quiz: write frontmatter for whichever ONE was selected below, exactly as given, never both. If this section explicitly states neither was selected, omit both poll and quiz from frontmatter entirely — this is a correct, deliberate outcome, not a gap.",
+    "reaction_bar": {
+      "options": [
+        {"id": "wince", "label": "😬 I felt that"},
+        {"id": "relieved", "label": "😮‍💨 Glad I know now"},
+        {"id": "been_there", "label": "🩹 Been there"}
+      ]
+    },
+    "poll_or_quiz_selected": "neither",
+    "selection_rationale": "Research showed no genuine either/or split (a poll needs a real audience divide, and every source agrees on the core guidance: don't rip it off, don't panic-remove it) and no distinct branching outcomes a reader could land in (this isn't a 'which type are you' topic — it's a single acute situation with one correct sequence of steps), so forcing either would be generic filler rather than a genuine research-backed inclusion."
+  },
+
+  "section_5_hook_and_ctr": {
+    "post_gen_instruction": "READ BEFORE WRITING TITLE, EXCERPT, INTRO, OR FIRST H2. Title and excerpt are hardcoded — use exactly. Title length range is 45-70 characters (Discover feed range, not a SERP-derived cap) — see phase_4.",
+    "selected_trigger": "Trigger 2 — Negative angle + solution",
+    "trigger_rationale": "Phase_1's sentiment_read is genuinely and acutely negative (real pain, real panic, real uncertainty in the source conversations), so the post should state the fear sharply before resolving it, rather than leaning on FOMO or identity framing that doesn't fit this emotional register.",
+    "title": "Nail ripped off with your acrylic still attached? Read this first",
+    "title_char_count": 62,
+    "excerpt": "It happens more than you'd think, and panicking can make it worse. Here's what's actually dangerous, what isn't, and exactly what to do right now.",
+    "excerpt_char_count": 148,
+    "intro_hook_brief": "Open by naming the exact moment: a snag on a sweater, a car door, a stubborn jar lid, and suddenly the nail is hanging by a thread or gone. Validate the panic immediately, then promise the specific reassurance the research shows people actually want first: a clear answer on whether this is dangerous, before anything else.",
+    "hero_image_emotional_beat": "The exact visual moment of a partially detached acrylic/gel nail still clinging to the natural nail — the specific injury state named in the title, not a generic manicure shot or a fully healthy nail image."
+  },
+
+  "section_6_hero_image_brief": {
+    "post_gen_instruction": "Use imageAlt exactly as given. image_filename_brief is a naming reference for the actual hero image file, which will be saved at /images/nail-feed/{slug}/{filename}.webp. This section does NOT include a visual concept/mood description — that lives in a separate downstream image-generation prompt the user runs independently.",
+    "imageAlt": "Acrylic nail enhancement partially lifted and hanging, still attached to the natural nail underneath, close-up studio shot",
+    "image_filename_brief": "acrylic-nail-lifted-attached-natural-nail-closeup-studio-2026.webp",
+    "tag_for_downstream_prompt": "This brief is for a Google Discover hero image: high contrast, thumbnail-style, click-optimised, paired with the title 'Nail ripped off with your acrylic still attached? Read this first.'",
+    "spec_reminder": "1200x675, 16:9 — hard Discover technical gate, non-negotiable, for whoever generates the actual image."
+  },
+
+  "section_7_content_structure": {
+    "post_gen_instruction": "H2 structure followed exactly — no renaming, no reordering without user instruction.",
+    "h2_structure": [
+      "Is it actually dangerous if your nail enhancement rips off with the natural nail attached?",
+      "What NOT to do in the first five minutes",
+      "The safe step-by-step: what to do right now",
+      "Signs it's more serious than a normal trauma injury",
+      "How long it takes to heal, and what regrowth actually looks like"
+    ],
+    "word_budget": {
+      "intro": "120-160 words",
+      "h2_1": "260 words",
+      "h2_2": "220 words",
+      "h2_3": "320 words",
+      "h2_4": "260 words",
+      "h2_5": "220 words",
+      "conclusion": "80-120 words"
+    }
+  },
+
+  "section_8_links": {
+    "post_gen_instruction": "Every link below appears in the post, woven naturally, verbatim URLs and anchors exactly as given/discovered. 2-3 internal + 2-3 external maximum. Internal links are pre-resolved (from Bucket Explorer JSON, Mode A2) or absent (Mode A/B one-off) — this agent never live-searches for internal links. External links are freshly researched here every time.",
+    "all_links": [
+      {
+        "url": "https://mirelleinspo.com/nail-feed/gel-nail-came-off-completely-after-catching-on-sweater",
+        "anchor_text": "a clean, complete detachment is actually the less severe scenario",
+        "placement_section": "Is it actually dangerous section — comparing this worse case to the simpler clean-detachment scenario",
+        "link_type": "nailfeed-sibling"
+      },
+      {
+        "url": "https://mirelleinspo.com/nail-feed/lifted-gel-nail-infection-risk-after-trauma",
+        "anchor_text": "how infection risk builds once trauma exposes the nail bed",
+        "placement_section": "Signs it's more serious section — deeper dive into the infection-risk mechanics",
+        "link_type": "nailfeed-sibling"
+      },
+      {
+        "url": "https://www.aad.org/public/everyday-care/nail-care-secrets/basics/injured-nail",
+        "anchor_text": "board-certified dermatologists' step-by-step guidance for treating an injured nail at home",
+        "placement_section": "The safe step-by-step section, backing the at-home care sequence",
+        "link_type": "external"
+      },
+      {
+        "url": "https://www.aad.org/news/how-to-care-for-an-injured-nail",
+        "anchor_text": "when a nail injury needs a doctor rather than home care",
+        "placement_section": "Signs it's more serious section, for the escalation criteria (can't bend the finger, blood covering more than half the nail, black or purple nail)",
+        "link_type": "external"
+      },
+      {
+        "url": "https://healthy.kaiserpermanente.org/health-wellness/health-encyclopedia/he.toenail-or-fingernail-avulsion-care-instructions.zp4213",
+        "anchor_text": "Kaiser Permanente's regrowth timeline for a fully detached nail",
+        "placement_section": "How long it takes to heal section, for the 6-month fingernail regrowth timeline",
+        "link_type": "external"
+      }
+    ]
+  },
+
+  "section_9_topical_map": {
+    "post_gen_instruction": "Omit entirely from frontmatter if this section is empty/absent — never write topic as null or empty string.",
+    "relatedClusters": [
+      "gel-nail-came-off-completely-after-catching-on-sweater",
+      "lifted-gel-nail-infection-risk-after-trauma"
+    ],
+    "primaryKeyword": "nail enhancement rips off with natural nail attached",
+    "secondaryKeywords": [
+      "acrylic nail ripped off real nail",
+      "is a nail bed avulsion dangerous",
+      "nail ripped off with acrylic infection risk",
+      "how long for a ripped off nail to grow back"
+    ]
+  },
+
+  "section_10_voice_tone": {
+    "post_gen_instruction": "Layer this on top of the fixed editorial voice mandate already in the Post Gen Agent prompt — never a departure from British English, banned vocabulary, or rhythm rules, just register within that frame.",
+    "recommended_voice": "Sharp and direct, with a calm-hand-on-the-shoulder undertone",
+    "tone_characteristics": [
+      "Direct and unhedging on the safety verdict, because the sentiment_read shows readers want the reassurance-or-warning fast, not buried under caveats",
+      "Validating of the panic without amplifying it — matches the negative-angle trigger by naming the fear plainly, then immediately moving to control and action",
+      "Plain, sequenced, low-jargon instruction in the action sections, since the specific_frustration_or_desire shows readers mid-crisis, not browsing casually",
+      "No false cheeriness — this sentiment_read is genuine distress, so a breezy or upbeat register would misread the room"
+    ],
+    "audience_match": "A reader who has just experienced this, or is anxiously anticipating it, needs steady authority and a fast answer far more than warmth-for-its-own-sake — this voice mirrors what actually calmed people down in the Quora and JustAnswer threads researched: someone confident, specific, and not alarmist."
+  },
+
+  "section_11_execution_plan": {
+    "block_1_entity_and_keyword_execution": {
+      "named_entities_to_surface_early": "nail enhancement, natural nail, nail bed, acrylic/gel — introduced within the first 1-2 sentences of the intro",
+      "primary_keyword_if_any": "nail enhancement rips off with natural nail attached",
+      "strong_tag_note": "Only bold/strong-tag the primary keyword phrase if it appears naturally in the intro or first H2 — do not force it."
+    },
+    "block_2_word_and_image_plan": {
+      "total_word_target": "1500, ±50",
+      "introduction": "120-160 words",
+      "conclusion": "80-120 words",
+      "h2_budgets": [
+        {"heading": "Is it actually dangerous if your nail enhancement rips off with the natural nail attached?", "budget": "260 words"},
+        {"heading": "What NOT to do in the first five minutes", "budget": "220 words"},
+        {"heading": "The safe step-by-step: what to do right now", "budget": "320 words"},
+        {"heading": "Signs it's more serious than a normal trauma injury", "budget": "260 words"},
+        {"heading": "How long it takes to heal, and what regrowth actually looks like", "budget": "220 words"}
+      ],
+      "image_assignments": [
+        {"image_number": 1, "place_after": "hero — frontmatter only", "section_context": "inspirational nail design shot only", "path": "/images/nail-feed/nail-enhancement-rips-off-with-natural-nail-attached/acrylic-nail-lifted-attached-natural-nail-closeup-studio-2026.webp"},
+        {"image_number": 2, "place_after": "Is it actually dangerous section", "section_context": "inspirational nail design shot only", "path": "/images/nail-feed/nail-enhancement-rips-off-with-natural-nail-attached/body-image-1.webp"},
+        {"image_number": 3, "place_after": "The safe step-by-step section", "section_context": "inspirational nail design shot only", "path": "/images/nail-feed/nail-enhancement-rips-off-with-natural-nail-attached/body-image-2.webp"},
+        {"image_number": 4, "place_after": "How long it takes to heal section", "section_context": "inspirational nail design shot only", "path": "/images/nail-feed/nail-enhancement-rips-off-with-natural-nail-attached/body-image-3.webp"}
+      ]
+    },
+    "block_3_opening_technique_assignments": {
+      "rule": "No two consecutive sections same technique. Conclusion = Technique 1 or 3 only.",
+      "assignments": [
+        {"section": "Introduction", "technique": "Technique 2 — direct scenario cold-open"},
+        {"section": "H2-1 heading", "technique": "Technique 1 — direct answer/verdict first"},
+        {"section": "H2-2 heading", "technique": "Technique 3 — contrarian/myth-correction"},
+        {"section": "H2-3 heading", "technique": "Technique 1 — direct answer/verdict first"},
+        {"section": "H2-4 heading", "technique": "Technique 3 — contrarian/myth-correction"},
+        {"section": "H2-5 heading", "technique": "Technique 1 — direct answer/verdict first"},
+        {"section": "Conclusion", "technique": "Technique 1"}
+      ]
+    },
+    "block_4_link_placements": {
+      "links": [
+        {"anchor_text": "a clean, complete detachment is actually the less severe scenario", "full_url": "https://mirelleinspo.com/nail-feed/gel-nail-came-off-completely-after-catching-on-sweater", "place_in_section": "Is it actually dangerous if your nail enhancement rips off with the natural nail attached?", "link_type": "nailfeed-sibling"},
+        {"anchor_text": "how infection risk builds once trauma exposes the nail bed", "full_url": "https://mirelleinspo.com/nail-feed/lifted-gel-nail-infection-risk-after-trauma", "place_in_section": "Signs it's more serious than a normal trauma injury", "link_type": "nailfeed-sibling"},
+        {"anchor_text": "board-certified dermatologists' step-by-step guidance for treating an injured nail at home", "full_url": "https://www.aad.org/public/everyday-care/nail-care-secrets/basics/injured-nail", "place_in_section": "The safe step-by-step: what to do right now", "link_type": "external"},
+        {"anchor_text": "when a nail injury needs a doctor rather than home care", "full_url": "https://www.aad.org/news/how-to-care-for-an-injured-nail", "place_in_section": "Signs it's more serious than a normal trauma injury", "link_type": "external"},
+        {"anchor_text": "Kaiser Permanente's regrowth timeline for a fully detached nail", "full_url": "https://healthy.kaiserpermanente.org/health-wellness/health-encyclopedia/he.toenail-or-fingernail-avulsion-care-instructions.zp4213", "place_in_section": "How long it takes to heal, and what regrowth actually looks like", "link_type": "external"}
+      ]
+    },
+    "block_5_active_constraints": {
+      "em_dash_banned": "confirmed active",
+      "british_english_active": "confirmed active",
+      "min_h2_reminder": "at least 3 H2s — hard technical requirement, needed for full widget placement including social CTA slot (this post has 5, clears it)",
+      "word_count_reminder": "1500 target, depth not padding",
+      "image_count_reminder": "4 total: 1 hero + 3 body, fixed — locked value, Post Gen Agent must not scale this up or down",
+      "hero_image_reminder": "frontmatter only, never in body; alt text and filename only from this file, visual concept comes from a separate downstream prompt; image path is /images/nail-feed/{slug}/{filename}.webp"
+    },
+    "block_6_widget_execution": {
+      "reaction_bar": "custom — use the {options} array exactly as given in section_4",
+      "poll_or_quiz": "neither — omit both poll and quiz frontmatter entirely, per section_4's deliberate rationale",
+      "reminder": "Poll and quiz are mutually exclusive at the template level — not applicable here since neither was selected."
+    }
+  }
+}
