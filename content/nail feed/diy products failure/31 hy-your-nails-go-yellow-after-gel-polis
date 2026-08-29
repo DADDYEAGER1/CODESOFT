@@ -1,0 +1,189 @@
+{
+  "section_1_file_authority": {
+    "statement": "THIS FILE IS THE SINGLE SOURCE OF TRUTH FOR THE NAIL FEED POST GEN AGENT. All values in POST_CONSTANTS are hardcoded. All entities, sentiment/trend rationale, emotion trigger, structure, and links defined here must be followed exactly."
+  },
+  "section_2_post_constants": {
+    "slug": "why-your-nails-go-yellow-after-gel-polish",
+    "canonical": "https://mirelleinspo.com/nail-feed/why-your-nails-go-yellow-after-gel-polish",
+    "word_count": 1500,
+    "image_count": 4,
+    "category": "Nail Health & Damage",
+    "publish_date": "2026-09-05",
+    "author": "jyoti-mirelle"
+  },
+  "section_3_sentiment_and_entity_brief": {
+    "post_gen_instruction": "This is the primary creative context for the whole post — the real emotional territory this post is built on, and what it's specifically about. Named entities should appear clearly and early in the post.",
+    "sentiment_read": "negative (frustrated, self-doubting) with a reassurance payoff — readers describe the moment of removal as a genuine letdown ('second-guess the whole process') but the actual finding across sources is that it is harmless and temporary, so the post's job is to validate the frustration first, then relieve it with the real cause.",
+    "the_specific_frustration_or_desire": "People remove a gel manicure they paid for and cared for properly, expect clean nails underneath, and instead find them stained yellow — several Quora askers phrase it as fearing 'something serious' or wondering if it is fungus, not just cosmetic staining, and want to know definitively which one it is.",
+    "named_entities": ["gel polish", "yellow nail staining", "pigment staining", "photoinitiators", "base coat", "nail porosity", "dark polish pigment (red/burgundy/black)"],
+    "trend_velocity": "seasonal-cyclical / sustained — this is an evergreen post-manicure complaint, not a viral spike. It recurs steadily year-round with no single trending moment, confirmed by consistently-dated coverage across multiple years rather than a recent breakout.",
+    "why_now_rationale": "Butter yellow and yellow-toned French manicures are a heavily searched nail trend through 2026, which increases exposure to gel polish removal moments generally and keeps this a live, relevant complaint even though it isn't itself a spiking trend.",
+    "saturation_check": "Saturated at the surface (many generic 'causes and fixes' roundups exist), but under-covered on validating the specific fear readers voice (is this fungus, is this serious) before explaining the pigment-staining mechanism. Differentiation angle: lead with the worry, then the mechanism, not a flat listicle of causes."
+  },
+  "section_4_engagement_widgets": {
+    "post_gen_instruction": "Reaction Bar: write the custom frontmatter reaction block if provided below, otherwise omit entirely (post falls back to the route's hardcoded default automatically — no frontmatter needed for the default case). Poll/Quiz: write frontmatter for whichever ONE was selected below, exactly as given, never both. If this section explicitly states neither was selected, omit both poll and quiz from frontmatter entirely — this is a correct, deliberate outcome, not a gap.",
+    "reaction_bar": "default",
+    "poll_or_quiz_selected": "neither",
+    "selection_rationale": "Research surfaced no genuine either/or split in audience opinion (everyone agrees yellowing is annoying and everyone repeats the same lemon/baking-soda remedies with no real camp division), and no branching-outcome structure (this is a single linear cause-then-timeline topic, not a 'which type are you' situation) — forcing either would be generic filler, so both are correctly skipped."
+  },
+  "section_5_hook_and_ctr": {
+    "post_gen_instruction": "READ BEFORE WRITING TITLE, EXCERPT, INTRO, OR FIRST H2. Title and excerpt are hardcoded — use exactly. Title length range is 45-70 characters (Discover feed range, not a SERP-derived cap) — see phase_4.",
+    "selected_trigger": "Trigger 2 — Negative angle + solution",
+    "trigger_rationale": "Phase_1's sentiment_read is genuinely negative/frustrated (a real letdown at removal, sometimes real worry it's something worse than staining), so the title states the problem sharply before the reassurance and fix.",
+    "title": "Why your nails go yellow after weeks of gel polish",
+    "title_char_count": 50,
+    "excerpt": "Yellow nails after gel are common and usually harmless, but the real cause decides how fast they fade and what actually helps.",
+    "excerpt_char_count": 126,
+    "intro_hook_brief": "Open on the exact moment of disappointment — soaking off a gel set you took care of, expecting clean nails, and finding yellow staining instead. Name the quiet worry (is this fungus, is this permanent) before reassuring and pivoting into the real cause.",
+    "hero_image_emotional_beat": "The specific visual moment of just-removed, bare nails showing yellow staining — the exact 'after removal' reveal the title names, not a polished or styled nail shot."
+  },
+  "section_6_hero_image_brief": {
+    "post_gen_instruction": "Use imageAlt exactly as given. image_filename_brief is a naming reference for the actual hero image file, which will be saved at /images/nail-feed/{slug}/{filename}.webp. This section does NOT include a visual concept/mood description — that lives in a separate downstream image-generation prompt the user runs independently.",
+    "imageAlt": "Yellow-stained bare fingernails showing faint leftover gel polish residue at the tips, in close-up under bright studio light",
+    "image_filename_brief": "yellow-stained-bare-nails-after-gel-polish-removal-closeup-studio-2026.webp",
+    "tag_for_downstream_prompt": "For Google Discover hero image — high contrast, thumbnail-style, click-optimised, must pair with the exact title 'Why your nails go yellow after weeks of gel polish' as one hook."
+  },
+  "section_7_content_structure": {
+    "post_gen_instruction": "H2 structure followed exactly — no renaming, no reordering without user instruction.",
+    "h2_structure": [
+      "Is yellow staining after gel polish actually normal",
+      "The real reason gel polish stains your nails yellow",
+      "Dark polish and pigment: why some colours stain worse than others",
+      "Other causes it might not be the polish at all",
+      "How to tell staining apart from a fungal infection",
+      "What actually helps fade the yellow faster"
+    ],
+    "word_budget": {
+      "intro": "140 words",
+      "h2_1_is_it_normal": "180 words",
+      "h2_2_real_reason": "260 words",
+      "h2_3_dark_polish_pigment": "220 words",
+      "h2_4_other_causes": "220 words",
+      "h2_5_fungal_vs_staining": "240 words",
+      "h2_6_what_helps": "150 words",
+      "conclusion": "90 words"
+    }
+  },
+  "section_8_links": {
+    "post_gen_instruction": "Every link below appears in the post, woven naturally, verbatim URLs and anchors exactly as given/discovered. 2-3 internal + 2-3 external maximum. Internal links are pre-resolved (from Bucket Explorer JSON, Mode A2) or absent (Mode A/B one-off) — this agent never live-searches for internal links. External links are freshly researched here every time.",
+    "all_links": [
+      {
+        "url": "https://mirelleinspo.com/nail-feed/how-long-does-it-take-for-yellow-nails-to-fade-after-gel-polish",
+        "anchor_text": "how long yellow nails actually take to fade back to normal",
+        "placement_section": "conclusion — natural next-step link once the reader understands why the staining happened",
+        "link_type": "nailfeed-sibling"
+      },
+      {
+        "url": "https://mirelleinspo.com/nail-feed/why-did-my-nails-turn-orange-after-removing-dark-nail-polish",
+        "anchor_text": "why some dark polishes leave an orange stain instead of yellow",
+        "placement_section": "H2-3 (Dark polish and pigment) — direct comparison point for pigment-driven staining",
+        "link_type": "nailfeed-sibling"
+      },
+      {
+        "url": "https://mirelleinspo.com/nail-feed/why-do-my-cuticles-look-stained-after-taking-off-gel-polish",
+        "anchor_text": "cuticle staining, which fades on its own separate timeline",
+        "placement_section": "H2-4 (Other causes) — related but distinct staining location worth distinguishing",
+        "link_type": "nailfeed-sibling"
+      },
+      {
+        "url": "https://www.goodrx.com/health-topic/dermatology/yellow-nails",
+        "anchor_text": "GoodRx's overview of the medical causes of yellow nails",
+        "placement_section": "H2-5 (How to tell staining apart from a fungal infection) — authority health source distinguishing cosmetic staining from fungal/medical causes",
+        "link_type": "external"
+      },
+      {
+        "url": "https://goaskalice.columbia.edu/answered-questions/why-do-nails-turn-yellow-after-long-term-nail-polish-use",
+        "anchor_text": "Columbia University's Go Ask Alice explanation of nail porosity and polish staining",
+        "placement_section": "H2-2 (The real reason gel polish stains your nails yellow) — confirmed accessible academic health-education source explaining the porous-nail mechanism",
+        "link_type": "external"
+      }
+    ]
+  },
+  "section_9_topical_map": {
+    "post_gen_instruction": "Omit entirely from frontmatter if this section is empty/absent — never write topic as null or empty string.",
+    "topic": "absent",
+    "parentPillar": "absent",
+    "relatedClusters": [
+      "how-long-does-it-take-for-yellow-nails-to-fade-after-gel-polish",
+      "why-did-my-nails-turn-orange-after-removing-dark-nail-polish",
+      "why-do-my-cuticles-look-stained-after-taking-off-gel-polish"
+    ],
+    "primaryKeyword": "yellow nails after gel polish",
+    "secondaryKeywords": ["gel polish stained nails", "nails yellow after removing gel", "why do gel nails turn yellow"],
+    "topicalBoundary": "absent"
+  },
+  "section_10_voice_tone": {
+    "post_gen_instruction": "Layer this on top of the fixed editorial voice mandate already in the Post Gen Agent prompt — never a departure from British English, banned vocabulary, or rhythm rules, just register within that frame.",
+    "recommended_voice": "Sharp and reassuring",
+    "tone_characteristics": [
+      "Validates the letdown directly rather than brushing past it, since sentiment_read is genuinely frustrated/worried, not neutral",
+      "Direct and specific when naming the mechanism, matching Trigger 2's 'state the problem sharply' pattern",
+      "Calm, controlled reassurance once the cause is explained — never breathless or FOMO-paced, since this isn't an exciting-trend post",
+      "Confident, not apologetic, about the fact that this is usually harmless"
+    ],
+    "audience_match": "A reader who just soaked off a gel set and is staring at stained nails wants their reaction taken seriously before being told to relax, which is exactly what the negative-angle-plus-solution trigger and this sharper-then-reassuring register deliver."
+  },
+  "section_11_execution_plan": {
+    "purpose": "Post Gen Agent reads this FIRST, before writing a word. Every value pre-calculated. Locked and executed exactly, no recalculation.",
+    "calculated_by": "Input Gen Agent, calculated last after all other sections are complete.",
+    "block_1_entity_and_keyword_execution": {
+      "named_entities_to_surface_early": ["gel polish", "yellow nail staining", "pigment staining", "nail porosity"],
+      "primary_keyword_if_any": "yellow nails after gel polish",
+      "strong_tag_note": "Only bold/strong-tag 'yellow nails after gel polish' where it appears naturally in the intro or first H2 — never forced into a sentence that doesn't already need it."
+    },
+    "block_2_word_and_image_plan": {
+      "total_word_target": "1500, ±50",
+      "introduction": "140 words",
+      "conclusion": "90 words",
+      "h2_budgets": [
+        {"heading": "Is yellow staining after gel polish actually normal", "budget": "180 words"},
+        {"heading": "The real reason gel polish stains your nails yellow", "budget": "260 words"},
+        {"heading": "Dark polish and pigment: why some colours stain worse than others", "budget": "220 words"},
+        {"heading": "Other causes it might not be the polish at all", "budget": "220 words"},
+        {"heading": "How to tell staining apart from a fungal infection", "budget": "240 words"},
+        {"heading": "What actually helps fade the yellow faster", "budget": "150 words"}
+      ],
+      "image_assignments": [
+        {"image_number": 1, "place_after": "hero — frontmatter only, not in body", "section_context": "Inspirational nail design shot only — not the yellowed-nail hero concept, per hero image scope rules; hero is frontmatter, this is body image 1", "path": "/images/nail-feed/why-your-nails-go-yellow-after-gel-polish/body-image-1.webp"},
+        {"image_number": 2, "place_after": "H2-2 (The real reason gel polish stains your nails yellow)", "section_context": "Inspirational nail design shot only — clean, well-applied gel manicure with visible base coat", "path": "/images/nail-feed/why-your-nails-go-yellow-after-gel-polish/body-image-2.webp"},
+        {"image_number": 3, "place_after": "H2-3 (Dark polish and pigment)", "section_context": "Inspirational nail design shot only — a dark red or burgundy gel manicure, illustrating the pigment-risk colours discussed", "path": "/images/nail-feed/why-your-nails-go-yellow-after-gel-polish/body-image-3.webp"},
+        {"image_number": 4, "place_after": "H2-6 (What actually helps fade the yellow faster)", "section_context": "Inspirational nail design shot only — a fresh, healthy-looking bare or lightly-polished manicure suggesting recovery/results", "path": "/images/nail-feed/why-your-nails-go-yellow-after-gel-polish/body-image-4.webp"}
+      ]
+    },
+    "block_3_opening_technique_assignments": {
+      "rule": "No two consecutive sections same technique. Conclusion = Technique 1 or 3 only.",
+      "assignments": [
+        {"section": "Introduction", "technique": "Technique 2 — direct scene/moment opener (the removal-reveal moment)"},
+        {"section": "H2-1 (Is yellow staining actually normal)", "technique": "Technique 1 — direct question answered immediately"},
+        {"section": "H2-2 (The real reason)", "technique": "Technique 3 — mechanism/explanation opener"},
+        {"section": "H2-3 (Dark polish and pigment)", "technique": "Technique 1 — direct question answered immediately"},
+        {"section": "H2-4 (Other causes)", "technique": "Technique 2 — direct scene/moment opener"},
+        {"section": "H2-5 (Fungal vs staining)", "technique": "Technique 3 — mechanism/explanation opener"},
+        {"section": "H2-6 (What actually helps)", "technique": "Technique 1 — direct question answered immediately"},
+        {"section": "Conclusion", "technique": "Technique 3 — mechanism/explanation opener"}
+      ]
+    },
+    "block_4_link_placements": {
+      "links": [
+        {"anchor_text": "the real reason gel polish stains your nails yellow explained by nail porosity", "full_url": "https://goaskalice.columbia.edu/answered-questions/why-do-nails-turn-yellow-after-long-term-nail-polish-use", "place_in_section": "H2-2 (The real reason gel polish stains your nails yellow)", "link_type": "external"},
+        {"anchor_text": "why some dark polishes leave an orange stain instead of yellow", "full_url": "https://mirelleinspo.com/nail-feed/why-did-my-nails-turn-orange-after-removing-dark-nail-polish", "place_in_section": "H2-3 (Dark polish and pigment)", "link_type": "nailfeed-sibling"},
+        {"anchor_text": "cuticle staining, which fades on its own separate timeline", "full_url": "https://mirelleinspo.com/nail-feed/why-do-my-cuticles-look-stained-after-taking-off-gel-polish", "place_in_section": "H2-4 (Other causes)", "link_type": "nailfeed-sibling"},
+        {"anchor_text": "GoodRx's overview of the medical causes of yellow nails", "full_url": "https://www.goodrx.com/health-topic/dermatology/yellow-nails", "place_in_section": "H2-5 (How to tell staining apart from a fungal infection)", "link_type": "external"},
+        {"anchor_text": "how long yellow nails actually take to fade back to normal", "full_url": "https://mirelleinspo.com/nail-feed/how-long-does-it-take-for-yellow-nails-to-fade-after-gel-polish", "place_in_section": "Conclusion", "link_type": "nailfeed-sibling"}
+      ]
+    },
+    "block_5_active_constraints": {
+      "em_dash_banned": "confirmed active",
+      "british_english_active": "confirmed active",
+      "min_h2_reminder": "6 H2s present — clears the 3-H2 hard minimum with room for full widget placement including social CTA slot",
+      "word_count_reminder": "1500 target, depth not padding",
+      "image_count_reminder": "4 total: 1 hero + 3 body, fixed — locked value, Post Gen Agent must not scale this up or down",
+      "hero_image_reminder": "frontmatter only, never in body; alt text and filename only from this file, visual concept comes from a separate downstream prompt; image path is /images/nail-feed/why-your-nails-go-yellow-after-gel-polish/{filename}.webp"
+    },
+    "block_6_widget_execution": {
+      "reaction_bar": "default — omit reaction frontmatter entirely, hardcoded fallback applies",
+      "poll_or_quiz": "neither — omit both poll and quiz frontmatter entirely, per section_4's deliberate rationale",
+      "reminder": "Poll and quiz are mutually exclusive at the template level — not applicable here since neither was selected."
+    }
+  }
+}
