@@ -1,0 +1,201 @@
+{
+  "section_1_file_authority": {
+    "statement": "THIS FILE IS THE SINGLE SOURCE OF TRUTH FOR THE NAIL FEED POST GEN AGENT. All values in POST_CONSTANTS are hardcoded. All entities, sentiment/trend rationale, emotion trigger, structure, and links defined here must be followed exactly."
+  },
+
+  "section_2_post_constants": {
+    "slug": "why-did-my-nails-suddenly-lift-after-months-of-the-same-gel-polish",
+    "canonical": "https://mirelleinspo.com/nail-feed/why-did-my-nails-suddenly-lift-after-months-of-the-same-gel-polish",
+    "word_count": 1500,
+    "image_count": 4,
+    "category": "Nail Health",
+    "publish_date": "2026-08-29",
+    "author": "jyoti-mirelle"
+  },
+
+  "section_3_sentiment_and_entity_brief": {
+    "post_gen_instruction": "This is the primary creative context for the whole post — the real emotional territory this post is built on, and what it's specifically about. Named entities should appear clearly and early in the post.",
+    "sentiment_read": "negative — genuine confusion tipping into alarm. The dominant real reaction is not simple frustration about product failure, it's a specific, disorienting fear: 'this has never happened before, so why now, and does this mean I can never do this again.'",
+    "the_specific_frustration_or_desire": "People describe using the exact same gel polish or brand for months or years with zero issues, then suddenly the nail lifts, itches, or won't hold — and their first assumption is a fluke or bad batch, not their own immune system. Research shows this exact framing repeated across dermatology and allergist sources: 'you can use gel for months or years with no problems, then suddenly develop reactions.' The desire is to understand whether this is a one-off or the start of something permanent, and what to do right now.",
+    "named_entities": "HEMA (2-hydroxyethyl methacrylate), acrylate sensitization, contact allergy / allergic contact dermatitis, onycholysis (nail lifting from the bed), patch testing, HEMA-free gel polish",
+    "trend_velocity": "rising — HEMA-free search demand and awareness content (dermatologist-fronted videos, brand reformulation news) has been building steadily through 2026, tied to increased DIY gel use and EU regulatory restriction on HEMA concentration. This is a sustained rise, not a single spike.",
+    "why_now_rationale": "HEMA-free reformulation has become mainstream industry news in 2026 (multiple major brands relaunching HEMA-free lines this year), and dermatologist-fronted social content explaining sudden gel allergies has been circulating widely, putting this specific 'it worked for years, then it didn't' scenario in front of more people right as they are personally experiencing it.",
+    "saturation_check": "under-covered for this specific angle. Most existing coverage (including this site's own /blog HEMA content) explains HEMA broadly or compares HEMA-free vs TPO-free formulas. Almost nothing is written from the specific, personal moment of 'it worked fine for months and then suddenly lifted' as the entry symptom — this post's differentiation is treating that exact moment as the hook, not the chemistry lecture."
+  },
+
+  "section_4_engagement_widgets": {
+    "post_gen_instruction": "Reaction Bar: write the custom frontmatter reaction block if provided below, otherwise omit entirely (post falls back to the route's hardcoded default automatically — no frontmatter needed for the default case). Poll/Quiz: write frontmatter for whichever ONE was selected below, exactly as given, never both. If this section explicitly states neither was selected, omit both poll and quiz from frontmatter entirely — this is a correct, deliberate outcome, not a gap.",
+    "reaction_bar": "default",
+    "poll_or_quiz_selected": "poll",
+    "selection_rationale": "Research surfaced a real, specific either/or readers are actually grappling with: is this a one-off bad reaction (bad batch, technique slip) or the start of a permanent allergy — a genuine split found directly in Quora/forum framing and dermatology-source FAQ patterns, not invented. A quiz doesn't fit because there's no genuine branching outcome here (no distinct 'types' of reader to sort into) — it's one real, binary uncertainty, which is exactly what a poll is for.",
+    "poll_content": {
+      "id": "sudden-lifting-poll",
+      "question": "Your gel suddenly lifted after months of no issues. What's your gut instinct?",
+      "options": [
+        {"id": "a", "label": "Bad batch or my own application slip-up"},
+        {"id": "b", "label": "My body is finally reacting to something in it"},
+        {"id": "c", "label": "Honestly not sure — that's why I'm here"}
+      ]
+    }
+  },
+
+  "section_5_hook_and_ctr": {
+    "post_gen_instruction": "READ BEFORE WRITING TITLE, EXCERPT, INTRO, OR FIRST H2. Title and excerpt are hardcoded — use exactly. Title length range is 45-70 characters (Discover feed range, not a SERP-derived cap) — see phase_4.",
+    "selected_trigger": "Trigger 1 — Curiosity gap (with negative-angle undertone)",
+    "trigger_rationale": "Phase_1's sentiment_read is negative but rooted in genuine confusion rather than an obvious, already-understood complaint — readers don't yet know why something that worked for months just stopped, which is a knowledge-gap pattern, not a flat frustration pattern.",
+    "title": "Why did my nails suddenly lift after months of the same gel?",
+    "title_char_count": 62,
+    "excerpt": "It worked fine for months, then it didn't. Here's the real reason gel polish can suddenly stop working, and what it might mean.",
+    "excerpt_char_count": 129,
+    "intro_hook_brief": "Open on the exact disorienting moment: same bottle, same routine, same hands that have done this a hundred times — and this time it lifted within days. Name the reader's first assumption (bad batch, fluke) before immediately reframing that assumption as the wrong one to make quietly and repeatedly.",
+    "hero_image_emotional_beat": "The specific visual moment of a gel nail lifted at the edge on a hand that otherwise looks like it's had gel for a long time (healthy, shaped, not a first-timer's hands) — the contrast between 'this person clearly knows what they're doing' and 'this still happened' is the visual tension that matches the title's confusion."
+  },
+
+  "section_6_hero_image_brief": {
+    "post_gen_instruction": "Use imageAlt exactly as given. image_filename_brief is a naming reference for the actual hero image file, which will be saved at /images/nail-feed/{slug}/{filename}.webp. This section does NOT include a visual concept/mood description — that lives in a separate downstream image-generation prompt the user runs independently.",
+    "imageAlt": "Gel polish nail lifting at the edge on an otherwise well-maintained manicure, close-up on the separated nail plate",
+    "image_filename_brief": "gel-polish-lifting-edge-close-up-manicured-hand-studio-2026.webp",
+    "tag_for_downstream_prompt": "Google Discover hero image — high contrast, thumbnail-style, click-optimised, paired with the title 'Why did my nails suddenly lift after months of the same gel?'"
+  },
+
+  "section_7_content_structure": {
+    "post_gen_instruction": "H2 structure followed exactly — no renaming, no reordering without user instruction.",
+    "h2_structure": [
+      "It's probably not a bad batch",
+      "What's actually happening: sensitization, explained simply",
+      "The exact signs it's an allergy and not just lifting",
+      "Is this permanent, or can it settle down?",
+      "What to do right now if this just happened to you",
+      "Switching products without making it worse"
+    ],
+    "word_budget": {
+      "intro": "140 words",
+      "It's probably not a bad batch": "180 words",
+      "What's actually happening: sensitization, explained simply": "260 words",
+      "The exact signs it's an allergy and not just lifting": "240 words",
+      "Is this permanent, or can it settle down?": "220 words",
+      "What to do right now if this just happened to you": "230 words",
+      "Switching products without making it worse": "150 words",
+      "conclusion": "100 words"
+    }
+  },
+
+  "section_8_links": {
+    "post_gen_instruction": "Every link below appears in the post, woven naturally, verbatim URLs and anchors exactly as given/discovered. 2-3 internal + 2-3 external maximum. Internal links are pre-resolved (from Bucket Explorer JSON, Mode A2) or absent (Mode A/B one-off) — this agent never live-searches for internal links. External links are freshly researched here every time.",
+    "all_links": [
+      {
+        "url": "[Bucket Explorer link_to] Can you become allergic to gel polish you've used for years",
+        "anchor_text": "why sensitization can develop after years of trouble-free gel polish",
+        "placement_section": "What's actually happening: sensitization, explained simply",
+        "link_type": "nailfeed-sibling"
+      },
+      {
+        "url": "[Bucket Explorer linked_from] Can a gel manicure trigger a lifelong acrylate allergy",
+        "anchor_text": "whether a gel allergy, once triggered, is something you're stuck with for good",
+        "placement_section": "Is this permanent, or can it settle down?",
+        "link_type": "nailfeed-sibling"
+      },
+      {
+        "url": "https://www.heyallergy.com/blog/acrylic-gel-nail-allergies-what-to-change",
+        "anchor_text": "a board-certified allergist's breakdown of acrylate allergy symptoms and what to switch to",
+        "placement_section": "The exact signs it's an allergy and not just lifting",
+        "link_type": "external"
+      },
+      {
+        "url": "https://mylee.co.uk/blogs/news/nail-allergies",
+        "anchor_text": "a consultant dermatologist's guide to gel nail allergy signs and patch testing",
+        "placement_section": "What to do right now if this just happened to you",
+        "link_type": "external"
+      },
+      {
+        "url": "https://www.jaci-inpractice.org/article/S2213-2198(25)00363-0/fulltext",
+        "anchor_text": "a documented clinical case of a sudden reaction after a year of trouble-free use",
+        "placement_section": "It's probably not a bad batch",
+        "link_type": "external"
+      }
+    ]
+  },
+
+  "section_9_topical_map": {
+    "post_gen_instruction": "Omit entirely from frontmatter if this section is empty/absent — never write topic as null or empty string.",
+    "relatedClusters": [
+      "Can you become allergic to gel polish you've used for years",
+      "Can a gel manicure trigger a lifelong acrylate allergy"
+    ],
+    "primaryKeyword": "gel polish suddenly lifting allergy",
+    "secondaryKeywords": ["HEMA allergy gel nails", "gel polish sensitization", "nail lifting suddenly after years"]
+  },
+
+  "section_10_voice_tone": {
+    "post_gen_instruction": "Layer this on top of the fixed editorial voice mandate already in the Post Gen Agent prompt — never a departure from British English, banned vocabulary, or rhythm rules, just register within that frame.",
+    "recommended_voice": "Calm, validating expert — not sharp/blunt, not breathless",
+    "tone_characteristics": [
+      "Reassuring but honest — validates the reader's confusion without minimising the possibility of a real allergy",
+      "Explains the biology plainly, avoiding jargon-heavy dermatology language beyond what's necessary",
+      "Direct about the permanence question rather than dodging it, because that's the exact uncertainty driving the click"
+    ],
+    "audience_match": "This reader isn't angry or venting about a cosmetic annoyance — they're genuinely unsettled and looking for a straight answer about their own body, so a warm-but-clear expert register fits their actual emotional state better than a sharp, high-energy tone would."
+  },
+
+  "section_11_execution_plan": {
+    "block_1_entity_and_keyword_execution": {
+      "named_entities_to_surface_early": "HEMA (2-hydroxyethyl methacrylate), sensitization, onycholysis/nail lifting, allergic contact dermatitis",
+      "primary_keyword_if_any": "gel polish suddenly lifting allergy",
+      "strong_tag_note": "Only apply <strong> to the primary keyword phrase where it appears naturally in the intro or first H2 — do not force it if it reads awkwardly."
+    },
+    "block_2_word_and_image_plan": {
+      "total_word_target": "1500, ±50",
+      "introduction": "140 words",
+      "conclusion": "100 words",
+      "h2_budgets": [
+        {"heading": "It's probably not a bad batch", "budget": "180 words"},
+        {"heading": "What's actually happening: sensitization, explained simply", "budget": "260 words"},
+        {"heading": "The exact signs it's an allergy and not just lifting", "budget": "240 words"},
+        {"heading": "Is this permanent, or can it settle down?", "budget": "220 words"},
+        {"heading": "What to do right now if this just happened to you", "budget": "230 words"},
+        {"heading": "Switching products without making it worse", "budget": "150 words"}
+      ],
+      "image_assignments": [
+        {"image_number": 1, "place_after": "hero (frontmatter only)", "section_context": "inspirational nail design shot only", "path": "/images/nail-feed/why-did-my-nails-suddenly-lift-after-months-of-the-same-gel-polish/gel-polish-lifting-edge-close-up-manicured-hand-studio-2026.webp"},
+        {"image_number": 2, "place_after": "It's probably not a bad batch", "section_context": "close-up of a healthy, well-shaped gel manicure looking otherwise flawless — inspirational nail design shot only", "path": "/images/nail-feed/why-did-my-nails-suddenly-lift-after-months-of-the-same-gel-polish/image-2.webp"},
+        {"image_number": 3, "place_after": "The exact signs it's an allergy and not just lifting", "section_context": "close-up nail art / gel finish shot, inspirational nail design shot only", "path": "/images/nail-feed/why-did-my-nails-suddenly-lift-after-months-of-the-same-gel-polish/image-3.webp"},
+        {"image_number": 4, "place_after": "Switching products without making it worse", "section_context": "clean, bare or freshly-switched-formula manicure shot — inspirational nail design shot only", "path": "/images/nail-feed/why-did-my-nails-suddenly-lift-after-months-of-the-same-gel-polish/image-4.webp"}
+      ]
+    },
+    "block_3_opening_technique_assignments": {
+      "rule": "No two consecutive sections same technique. Conclusion = Technique 1 or 3 only.",
+      "assignments": [
+        {"section": "Introduction", "technique": "Technique 1 — Relatable scene-setting"},
+        {"section": "It's probably not a bad batch", "technique": "Technique 2 — Direct myth correction"},
+        {"section": "What's actually happening: sensitization, explained simply", "technique": "Technique 3 — Plain-language explainer"},
+        {"section": "The exact signs it's an allergy and not just lifting", "technique": "Technique 1 — Relatable scene-setting"},
+        {"section": "Is this permanent, or can it settle down?", "technique": "Technique 2 — Direct myth correction"},
+        {"section": "What to do right now if this just happened to you", "technique": "Technique 3 — Plain-language explainer"},
+        {"section": "Switching products without making it worse", "technique": "Technique 1 — Relatable scene-setting"},
+        {"section": "Conclusion", "technique": "Technique 3 — Plain-language explainer"}
+      ]
+    },
+    "block_4_link_placements": {
+      "links": [
+        {"anchor_text": "a documented clinical case of a sudden reaction after a year of trouble-free use", "full_url": "https://www.jaci-inpractice.org/article/S2213-2198(25)00363-0/fulltext", "place_in_section": "It's probably not a bad batch", "link_type": "external"},
+        {"anchor_text": "why sensitization can develop after years of trouble-free gel polish", "full_url": "[Bucket Explorer link_to] Can you become allergic to gel polish you've used for years", "place_in_section": "What's actually happening: sensitization, explained simply", "link_type": "nailfeed-sibling"},
+        {"anchor_text": "a board-certified allergist's breakdown of acrylate allergy symptoms and what to switch to", "full_url": "https://www.heyallergy.com/blog/acrylic-gel-nail-allergies-what-to-change", "place_in_section": "The exact signs it's an allergy and not just lifting", "link_type": "external"},
+        {"anchor_text": "whether a gel allergy, once triggered, is something you're stuck with for good", "full_url": "[Bucket Explorer linked_from] Can a gel manicure trigger a lifelong acrylate allergy", "place_in_section": "Is this permanent, or can it settle down?", "link_type": "nailfeed-sibling"},
+        {"anchor_text": "a consultant dermatologist's guide to gel nail allergy signs and patch testing", "full_url": "https://mylee.co.uk/blogs/news/nail-allergies", "place_in_section": "What to do right now if this just happened to you", "link_type": "external"}
+      ]
+    },
+    "block_5_active_constraints": {
+      "em_dash_banned": "confirmed active",
+      "british_english_active": "confirmed active",
+      "min_h2_reminder": "at least 3 H2s — hard technical requirement, needed for full widget placement including social CTA slot (this post has 6, well clear)",
+      "word_count_reminder": "1500 target, depth not padding",
+      "image_count_reminder": "4 total: 1 hero + 3 body, fixed — locked value, Post Gen Agent must not scale this up or down",
+      "hero_image_reminder": "frontmatter only, never in body; alt text and filename only from this file, visual concept comes from a separate downstream prompt; image path is /images/nail-feed/{slug}/{filename}.webp"
+    },
+    "block_6_widget_execution": {
+      "reaction_bar": "omit frontmatter entirely — default applies automatically",
+      "poll_or_quiz": "poll — use poll_content from section_4 exactly as given",
+      "reminder": "Poll and quiz are mutually exclusive at the template level. This post uses poll only."
+    }
+  }
+}
