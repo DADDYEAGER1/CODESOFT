@@ -1,0 +1,196 @@
+{
+  "section_1_file_authority": {
+    "statement": "THIS FILE IS THE SINGLE SOURCE OF TRUTH FOR THE NAIL FEED POST GEN AGENT. All values in POST_CONSTANTS are hardcoded. All entities, sentiment/trend rationale, emotion trigger, structure, and links defined here must be followed exactly."
+  },
+  "section_2_post_constants": {
+    "slug": "why-did-my-gel-manicure-give-me-a-burning-heat-spike",
+    "canonical": "https://mirelleinspo.com/nail-feed/why-did-my-gel-manicure-give-me-a-burning-heat-spike",
+    "word_count": 1500,
+    "image_count": 4,
+    "category": "Curing & Application Failures",
+    "publish_date": "2026-09-01",
+    "author": "jyoti-mirelle"
+  },
+  "section_3_sentiment_and_entity_brief": {
+    "post_gen_instruction": "This is the primary creative context for the whole post — the real emotional territory this post is built on, and what it's specifically about. Named entities should appear clearly and early in the post.",
+    "sentiment_read": "negative",
+    "the_specific_frustration_or_desire": "A sudden, sharp burning or stinging sensation under the lamp mid-manicure, that genuinely alarms people in the moment — Quora threads describe it as nails hurting 'all day' afterward, people asking if they should panic, whether it's an allergic reaction, whether the tech used something dangerous, or whether their nail is actually damaged. The fear is acute (is something wrong right now) layered on top of a slower worry (did this damage my nail bed).",
+    "named_entities": "heat spike, gel polish curing, UV/LED lamp, exothermic reaction, polymerisation, photoinitiator, builder gel, thick gel application",
+    "trend_velocity": "sustained — this is an evergreen, recurring pain point tied to gel manicure usage generally rather than a seasonal spike, but it has fresh mainstream coverage from Cosmopolitan and Women's Health in the past year confirming it's an actively searched, actively worried-about experience, not a fading concern.",
+    "why_now_rationale": "Gel and builder gel (BIAB-style) services continue to dominate manicure demand, and heat spikes are a common enough in-salon and DIY experience that major outlets are still actively fielding reader questions about it via named dermatologists and nail techs, confirming ongoing real-world search and worry volume.",
+    "saturation_check": "under-covered on-site (no existing Mirellé Inspo post on this specific topic, confirmed via site search) but moderately covered externally by mainstream beauty press and B2B nail-industry sites. Differentiation angle: existing coverage splits between consumer reassurance pieces (Cosmopolitan, Women's Health) and technician-facing prevention guides (Beauty Launchpad, The Gel Bottle Academy, NailKnowledge) — neither speaks directly and specifically to the DIY-at-home or first-time-in-salon reader who just felt it happen and wants both the immediate 'am I okay' answer and the 'why' in one place, in Nail Feed's voice."
+  },
+  "section_4_engagement_widgets": {
+    "post_gen_instruction": "Reaction Bar: write the custom frontmatter reaction block if provided below, otherwise omit entirely (post falls back to the route's hardcoded default automatically — no frontmatter needed for the default case). Poll/Quiz: write frontmatter for whichever ONE was selected below, exactly as given, never both. If this section explicitly states neither was selected, omit both poll and quiz from frontmatter entirely — this is a correct, deliberate outcome, not a gap.",
+    "reaction_bar": "default",
+    "poll_or_quiz_selected": "poll",
+    "selection_rationale": "Research surfaced a real, recurring either/or in the actual conversation: is a heat spike genuinely 'normal and fine' or 'a sign something's wrong' — sources are split, with some framing it as harmless physics and others (dermatologists specifically) flagging real risk with repeated/severe spikes. This is a genuine audience-relevant split, not invented. A quiz doesn't fit: there's no genuine branching-outcome structure here (no distinct 'types' of reader to sort into) — it's a single shared experience with one real debate attached, which is exactly what a poll is for.",
+    "poll_content": {
+      "id": "heat-spike-poll",
+      "question": "Have you ever had a heat spike during a gel manicure?",
+      "options": [
+        {"id": "a", "label": "Yes, and it scared me"},
+        {"id": "b", "label": "Yes, but it was mild"},
+        {"id": "c", "label": "No, never experienced one"},
+        {"id": "d", "label": "Not sure what that is"}
+      ]
+    }
+  },
+  "section_5_hook_and_ctr": {
+    "post_gen_instruction": "READ BEFORE WRITING TITLE, EXCERPT, INTRO, OR FIRST H2. Title and excerpt are hardcoded — use exactly. Title length range is 45-70 characters (Discover feed range, not a SERP-derived cap) — see phase_4.",
+    "selected_trigger": "Trigger 2 — Negative angle plus solution",
+    "trigger_rationale": "Phase_1's sentiment_read is genuinely negative: the real conversation centers on sudden alarm and pain in the moment, a confirmed common frustration (not manufactured), so a negative-angle framing that names the problem sharply before resolving it fits the actual research.",
+    "title": "Why did my gel manicure suddenly burn my nails?",
+    "title_char_count": 49,
+    "excerpt": "That sudden burning under the lamp has a name and a real cause. Here's what's actually happening, and when it means something's wrong.",
+    "excerpt_char_count": 137,
+    "intro_hook_brief": "Open on the moment itself: the lamp, the sudden sting, the reflex to yank your hand back. Name it immediately as a 'heat spike' so the reader feels recognised in the first line, then promise the two things they actually want: why it happened, and whether they should be worried.",
+    "hero_image_emotional_beat": "The exact moment of a hand recoiling from a UV/LED lamp mid-cure, close enough to read the tension in the gesture — the visual equivalent of the title's 'suddenly burn' claim, not a calm finished-manicure shot."
+  },
+  "section_6_hero_image_brief": {
+    "post_gen_instruction": "Use imageAlt exactly as given. image_filename_brief is a naming reference for the actual hero image file, which will be saved at /images/nail-feed/{slug}/{filename}.webp. This section does NOT include a visual concept/mood description — that lives in a separate downstream image-generation prompt the user runs independently.",
+    "imageAlt": "Hand pulling back from a UV LED nail lamp mid-cure, gel polish visible, capturing the sudden heat spike burning sensation moment",
+    "image_filename_brief": "hand-pulling-away-uv-led-lamp-gel-heat-spike-moment-2026.webp",
+    "tag_for_downstream_prompt": "Google Discover hero image — high contrast, thumbnail-style, click-optimised, paired with the title 'Why did my gel manicure suddenly burn my nails?' — needs to read the alarm/reflex of the moment at a glance."
+  },
+  "section_7_content_structure": {
+    "post_gen_instruction": "H2 structure followed exactly — no renaming, no reordering without user instruction.",
+    "h2_structure": [
+      "What a heat spike actually is",
+      "Why it happens: the science behind the burn",
+      "Is a heat spike ever a sign of a bigger problem?",
+      "What to do the second you feel it",
+      "How to stop it happening next time"
+    ],
+    "word_budget": {
+      "introduction": "140 words",
+      "what_a_heat_spike_actually_is": "220 words",
+      "why_it_happens_the_science_behind_the_burn": "300 words",
+      "is_a_heat_spike_ever_a_sign_of_a_bigger_problem": "260 words",
+      "what_to_do_the_second_you_feel_it": "260 words",
+      "how_to_stop_it_happening_next_time": "220 words",
+      "conclusion": "100 words"
+    }
+  },
+  "section_8_links": {
+    "post_gen_instruction": "Every link below appears in the post, woven naturally, verbatim URLs and anchors exactly as given/discovered. 2-3 internal + 2-3 external maximum. Internal links are pre-resolved (from Bucket Explorer JSON, Mode A2) or absent (Mode A/B one-off) — this agent never live-searches for internal links. External links are freshly researched here every time.",
+    "all_links": [
+      {
+        "url": "https://mirelleinspo.com/nail-feed/why-wont-my-gel-polish-cure-all-the-way-through-in-an-led-lamp",
+        "anchor_text": "why gel sometimes won't cure all the way through in an LED lamp",
+        "placement_section": "Why it happens: the science behind the burn — the anchor context frames heat spikes as tied to thick layers curing too fast, so this link naturally extends into the related under-curing failure mode",
+        "link_type": "nailfeed-sibling"
+      },
+      {
+        "url": "https://mirelleinspo.com/nail-feed/what-does-an-acrylate-allergy-from-acrylic-nails-look-like",
+        "anchor_text": "what an actual acrylate allergy reaction looks like",
+        "placement_section": "Is a heat spike ever a sign of a bigger problem? — distinguishing a one-off heat spike from a genuine allergic reaction, per the given anchor_context",
+        "link_type": "nailfeed-sibling"
+      },
+      {
+        "url": "https://www.beautylaunchpad.com/nails/techniques/article/21158333/what-are-heat-spikes",
+        "anchor_text": "nail scientists and technicians explain the exothermic reaction behind heat spikes",
+        "placement_section": "Why it happens: the science behind the burn",
+        "link_type": "external"
+      },
+      {
+        "url": "https://academy.thegelbottle.com/blog/heat-spikes-guide-prevention-tips-for-nail-technicians",
+        "anchor_text": "professional guidance on preventing heat spikes during application",
+        "placement_section": "How to stop it happening next time",
+        "link_type": "external"
+      },
+      {
+        "url": "https://www.yahoo.com/lifestyle/fyi-nails-shouldn-t-burn-123500658.html",
+        "anchor_text": "a dermatologist and nail technician on when heat spikes signal a real problem",
+        "placement_section": "Is a heat spike ever a sign of a bigger problem?",
+        "link_type": "external"
+      }
+    ]
+  },
+  "section_9_topical_map": {
+    "post_gen_instruction": "Omit entirely from frontmatter if this section is empty/absent — never write topic as null or empty string.",
+    "relatedClusters": [
+      "why-wont-my-gel-polish-cure-all-the-way-through-in-an-led-lamp",
+      "what-does-an-acrylate-allergy-from-acrylic-nails-look-like"
+    ],
+    "primaryKeyword": "gel manicure heat spike",
+    "secondaryKeywords": [
+      "gel nails burning under lamp",
+      "why does gel polish burn",
+      "heat spike nail curing",
+      "UV lamp nail burn"
+    ]
+  },
+  "section_10_voice_tone": {
+    "post_gen_instruction": "Layer this on top of the fixed editorial voice mandate already in the Post Gen Agent prompt — never a departure from British English, banned vocabulary, or rhythm rules, just register within that frame.",
+    "recommended_voice": "Sharp and direct, reassuring once the facts land",
+    "tone_characteristics": [
+      "Validates the alarm immediately rather than minimising it, since sentiment_read shows genuine in-the-moment fear, not idle curiosity",
+      "Moves quickly from problem to explanation — no meandering intro, matching the negative-angle trigger's promise to state the problem sharply before the fix",
+      "Confident and specific about the science (exothermic reaction, polymerisation) without over-explaining, so the reader feels informed rather than lectured",
+      "Ends each risk-related section on a clear, calm verdict rather than trailing off, since unresolved worry is the exact frustration this post exists to close"
+    ],
+    "audience_match": "Readers arriving here are mid-worry or just-post-worry about something that physically hurt them minutes or hours ago — they need the sharp, validating register that says 'this has a name and here's exactly what's going on,' not a breezy trend-piece tone that would feel dismissive of a genuinely painful experience."
+  },
+  "section_11_execution_plan": {
+    "purpose": "Post Gen Agent reads this FIRST, before writing a word. Every value pre-calculated. Locked and executed exactly, no recalculation.",
+    "calculated_by": "Input Gen Agent, calculated last after all other sections are complete.",
+    "block_1_entity_and_keyword_execution": {
+      "named_entities_to_surface_early": "heat spike, gel polish curing, UV/LED lamp, exothermic reaction",
+      "primary_keyword_if_any": "gel manicure heat spike",
+      "strong_tag_note": "Only apply <strong> to 'heat spike' on its first natural mention in the intro if it fits without forcing — never bolded elsewhere."
+    },
+    "block_2_word_and_image_plan": {
+      "total_word_target": "1500, ±50",
+      "introduction": "140 words",
+      "conclusion": "100 words",
+      "h2_budgets": [
+        {"heading": "What a heat spike actually is", "budget": "220 words"},
+        {"heading": "Why it happens: the science behind the burn", "budget": "300 words"},
+        {"heading": "Is a heat spike ever a sign of a bigger problem?", "budget": "260 words"},
+        {"heading": "What to do the second you feel it", "budget": "260 words"},
+        {"heading": "How to stop it happening next time", "budget": "220 words"}
+      ],
+      "image_assignments": [
+        {"image_number": 1, "place_after": "hero — frontmatter only", "section_context": "hand recoiling from lamp mid-cure, the alarm moment — inspirational nail design shot only", "path": "/images/nail-feed/why-did-my-gel-manicure-give-me-a-burning-heat-spike/hand-pulling-away-uv-led-lamp-gel-heat-spike-moment-2026.webp"},
+        {"image_number": 2, "place_after": "What a heat spike actually is", "section_context": "close-up gel polish nail under LED lamp glow, clean well-lit studio shot — inspirational nail design shot only", "path": "/images/nail-feed/why-did-my-gel-manicure-give-me-a-burning-heat-spike/gel-nails-curing-led-lamp-glow-closeup-2026.webp"},
+        {"image_number": 3, "place_after": "Why it happens: the science behind the burn", "section_context": "thin, even gel polish application on natural nail bed, demonstrating correct thin-layer technique — inspirational nail design shot only", "path": "/images/nail-feed/why-did-my-gel-manicure-give-me-a-burning-heat-spike/thin-even-gel-polish-application-technique-2026.webp"},
+        {"image_number": 4, "place_after": "How to stop it happening next time", "section_context": "finished glossy gel manicure, calm and healthy-looking nails, resolution shot — inspirational nail design shot only", "path": "/images/nail-feed/why-did-my-gel-manicure-give-me-a-burning-heat-spike/finished-glossy-gel-manicure-healthy-nails-2026.webp"}
+      ]
+    },
+    "block_3_opening_technique_assignments": {
+      "rule": "No two consecutive sections same technique. Conclusion = Technique 1 or 3 only.",
+      "assignments": [
+        {"section": "Introduction", "technique": "Technique 2 — direct scene/moment cold open"},
+        {"section": "What a heat spike actually is", "technique": "Technique 1 — direct definitional statement"},
+        {"section": "Why it happens: the science behind the burn", "technique": "Technique 3 — question-led"},
+        {"section": "Is a heat spike ever a sign of a bigger problem?", "technique": "Technique 1 — direct definitional statement"},
+        {"section": "What to do the second you feel it", "technique": "Technique 3 — question-led"},
+        {"section": "How to stop it happening next time", "technique": "Technique 1 — direct definitional statement"},
+        {"section": "Conclusion", "technique": "Technique 3"}
+      ]
+    },
+    "block_4_link_placements": {
+      "links": [
+        {"anchor_text": "why gel sometimes won't cure all the way through in an LED lamp", "full_url": "https://mirelleinspo.com/nail-feed/why-wont-my-gel-polish-cure-all-the-way-through-in-an-led-lamp", "place_in_section": "Why it happens: the science behind the burn", "link_type": "nailfeed-sibling"},
+        {"anchor_text": "what an actual acrylate allergy reaction looks like", "full_url": "https://mirelleinspo.com/nail-feed/what-does-an-acrylate-allergy-from-acrylic-nails-look-like", "place_in_section": "Is a heat spike ever a sign of a bigger problem?", "link_type": "nailfeed-sibling"},
+        {"anchor_text": "nail scientists and technicians explain the exothermic reaction behind heat spikes", "full_url": "https://www.beautylaunchpad.com/nails/techniques/article/21158333/what-are-heat-spikes", "place_in_section": "Why it happens: the science behind the burn", "link_type": "external"},
+        {"anchor_text": "professional guidance on preventing heat spikes during application", "full_url": "https://academy.thegelbottle.com/blog/heat-spikes-guide-prevention-tips-for-nail-technicians", "place_in_section": "How to stop it happening next time", "link_type": "external"},
+        {"anchor_text": "a dermatologist and nail technician on when heat spikes signal a real problem", "full_url": "https://www.yahoo.com/lifestyle/fyi-nails-shouldn-t-burn-123500658.html", "place_in_section": "Is a heat spike ever a sign of a bigger problem?", "link_type": "external"}
+      ]
+    },
+    "block_5_active_constraints": {
+      "em_dash_banned": "confirmed active",
+      "british_english_active": "confirmed active",
+      "min_h2_reminder": "at least 3 H2s — hard technical requirement, needed for full widget placement including social CTA slot (this post has 5, clear)",
+      "word_count_reminder": "1500 target, depth not padding",
+      "image_count_reminder": "4 total: 1 hero + 3 body, fixed — locked value, Post Gen Agent must not scale this up or down",
+      "hero_image_reminder": "frontmatter only, never in body; alt text and filename only from this file, visual concept comes from a separate downstream prompt; image path is /images/nail-feed/{slug}/{filename}.webp"
+    },
+    "block_6_widget_execution": {
+      "reaction_bar": "default — omit reaction frontmatter entirely, hardcoded fallback applies",
+      "poll_or_quiz": "poll — use poll_content from section_4 exactly as given",
+      "reminder": "Poll and quiz are mutually exclusive at the template level — if the input file somehow specifies both, that is an input file error, use poll only and flag it, do not attempt to render both."
+    }
+  }
+}
