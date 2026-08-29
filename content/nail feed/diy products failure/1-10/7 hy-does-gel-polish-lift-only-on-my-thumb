@@ -1,0 +1,188 @@
+{
+  "section_1_file_authority": {
+    "statement": "THIS FILE IS THE SINGLE SOURCE OF TRUTH FOR THE NAIL FEED POST GEN AGENT. All values in POST_CONSTANTS are hardcoded. All entities, sentiment/trend rationale, emotion trigger, structure, and links defined here must be followed exactly."
+  },
+  "section_2_post_constants": {
+    "slug": "why-does-gel-polish-lift-only-on-my-thumbnails",
+    "canonical": "https://mirelleinspo.com/nail-feed/why-does-gel-polish-lift-only-on-my-thumbnails",
+    "word_count": 1500,
+    "image_count": 4,
+    "category": "DIY Product-Failure Problems",
+    "publish_date": "2026-09-05",
+    "author": "jyoti-mirelle"
+  },
+  "section_3_sentiment_and_entity_brief": {
+    "post_gen_instruction": "This is the primary creative context for the whole post — the real emotional territory this post is built on, and what it's specifically about. Named entities should appear clearly and early in the post.",
+    "sentiment_read": "negative",
+    "the_specific_frustration_or_desire": "Readers describe doing everything right — prep, thin coats, full cure time — and having every nail hold perfectly except the thumb, which lifts at the corner or base within a day or two. The frustration is specifically about the isolation of the problem to one nail (usually thumb, sometimes with index as runner-up), which reads as inexplicable and makes people suspect something is wrong with just that nail rather than their technique.",
+    "named_entities": "thumbnail lifting, gel polish, LED/UV curing lamp, hand positioning under the lamp, thumb angle/curvature, under-curing, cure time per nail",
+    "trend_velocity": "sustained — this is an evergreen DIY-troubleshooting search pattern, not a seasonal spike. Related gel-lifting content is consistently produced and referenced year-round (including cross-links from unrelated seasonal nail-trend posts back to lifting-cause explainers), confirming steady, non-cyclical search demand rather than a trending moment.",
+    "why_now_rationale": "At-home gel manicures via compact LED lamps remain a high-volume DIY category, and thumb-specific lifting is a widely reported but under-explained pain point — most existing coverage buries the thumb-specific cause inside generic 'why does gel lift' listicles rather than answering the exact question people are asking.",
+    "saturation_check": "under-covered as a standalone, specific answer. Generic 'why does gel polish lift' content is saturated, but almost none of it addresses the thumb-only pattern head-on as its own topic — most sources mention it only in passing (one line in a 10-cause listicle). The differentiation angle is treating the thumb-only pattern as the whole story: hand anatomy and lamp geometry causing an isolated curing gap, not a repeat of the generic prep-and-oil causes."
+  },
+  "section_4_engagement_widgets": {
+    "post_gen_instruction": "Reaction Bar: write the custom frontmatter reaction block if provided below, otherwise omit entirely (post falls back to the route's hardcoded default automatically — no frontmatter needed for the default case). Poll/Quiz: write frontmatter for whichever ONE was selected below, exactly as given, never both. If this section explicitly states neither was selected, omit both poll and quiz from frontmatter entirely — this is a correct, deliberate outcome, not a gap.",
+    "reaction_bar": "default",
+    "poll_or_quiz_selected": "poll",
+    "selection_rationale": "Research surfaced a genuine, specific either/or that recurs across sources: is thumb-only lifting a lamp/curing-angle issue or a prep/oil issue? Multiple sources explicitly split on this exact diagnostic fork (lamp positioning vs. oil/dehydration), making a real poll question, not a quiz — there's no set of distinct 'outcomes' to sort readers into, just a genuine split worth surfacing.",
+    "poll_content": {
+      "id": "thumbnail-lift-cause-poll",
+      "question": "When your thumb lifts first, what do you think is really going on?",
+      "options": [
+        {"id": "a", "label": "My lamp isn't reaching the thumb properly"},
+        {"id": "b", "label": "It's oil or prep specific to that nail"},
+        {"id": "c", "label": "Honestly, I have no idea"}
+      ]
+    }
+  },
+  "section_5_hook_and_ctr": {
+    "post_gen_instruction": "READ BEFORE WRITING TITLE, EXCERPT, INTRO, OR FIRST H2. Title and excerpt are hardcoded — use exactly. Title length range is 45-70 characters (Discover feed range, not a SERP-derived cap) — see phase_4.",
+    "selected_trigger": "Trigger 1 — Curiosity Gap",
+    "trigger_rationale": "Sentiment_read is negative but the dominant emotion is confusion, not general frustration — readers know they're doing prep right everywhere else, so the real hook is the unexplained specificity of 'why just the thumb', which is a knowledge-gap trigger, not a FOMO or identity angle.",
+    "title": "Why gel polish always lifts on your thumb first",
+    "title_char_count": 47,
+    "excerpt": "Every nail holds except your thumb? It's not bad luck or bad prep — it's a lamp and angle problem most guides never mention.",
+    "excerpt_char_count": 126,
+    "intro_hook_brief": "Open by naming the exact, specific experience: nails look perfect, thumb corner lifts within a day or two, no obvious reason why. Validate that this isn't a prep failure before revealing the real cause is anatomical and positional, not technique.",
+    "hero_image_emotional_beat": "A close-up of a hand under an LED lamp showing the thumb angled differently from the four fingers, with visible early lifting at the thumb's corner — the exact 'thumb is the odd one out' moment the title names."
+  },
+  "section_6_hero_image_brief": {
+    "post_gen_instruction": "Use imageAlt exactly as given. image_filename_brief is a naming reference for the actual hero image file, which will be saved at /images/nail-feed/{slug}/{filename}.webp. This section does NOT include a visual concept/mood description — that lives in a separate downstream image-generation prompt the user runs independently.",
+    "imageAlt": "Close-up of gel polish lifting at the thumbnail corner while four other fingernails remain perfectly intact and glossy",
+    "image_filename_brief": "gel-polish-lifting-thumbnail-corner-hand-under-led-lamp-2026.webp",
+    "tag_for_downstream_prompt": "For Google Discover hero image — high contrast, thumbnail-style, click-optimised, paired with title 'Why gel polish always lifts on your thumb first'."
+  },
+  "section_7_content_structure": {
+    "post_gen_instruction": "H2 structure followed exactly — no renaming, no reordering without user instruction.",
+    "h2_structure": [
+      "It's not your prep — here's how to know",
+      "Why your thumb never fully cures like the rest",
+      "The hand-positioning mistake almost everyone makes",
+      "How to cure your thumb properly, every time",
+      "What to do if it's already lifted"
+    ],
+    "word_budget": {
+      "intro": "140 words",
+      "It's not your prep — here's how to know": "230 words",
+      "Why your thumb never fully cures like the rest": "320 words",
+      "The hand-positioning mistake almost everyone makes": "270 words",
+      "How to cure your thumb properly, every time": "300 words",
+      "What to do if it's already lifted": "150 words",
+      "conclusion": "90 words"
+    }
+  },
+  "section_8_links": {
+    "post_gen_instruction": "Every link below appears in the post, woven naturally, verbatim URLs and anchors exactly as given/discovered. 2-3 internal + 2-3 external maximum. Internal links are pre-resolved (from Bucket Explorer JSON, Mode A2) or absent (Mode A/B one-off) — this agent never live-searches for internal links. External links are freshly researched here every time.",
+    "all_links": [
+      {
+        "url": "/nail-feed/why-does-gel-polish-peel-off-within-two-days",
+        "anchor_text": "the full breakdown of why gel polish peels off within two days",
+        "placement_section": "It's not your prep — here's how to know",
+        "link_type": "nailfeed-sibling"
+      },
+      {
+        "url": "/nail-feed/why-does-gel-polish-chip-faster-on-your-dominant-hand",
+        "anchor_text": "gel polish chipping faster on your dominant hand",
+        "placement_section": "conclusion",
+        "link_type": "nailfeed-sibling"
+      },
+      {
+        "url": "https://www.kirstymeakin.com/why-is-my-gel-polish-lifting/",
+        "anchor_text": "diagnosing the seven real causes of gel lifting",
+        "placement_section": "It's not your prep — here's how to know",
+        "link_type": "external"
+      },
+      {
+        "url": "https://pinkgellac.com/blogs/tips-tricks/why-is-my-gel-polish-peeling-off",
+        "anchor_text": "how incorrect hand positioning under the lamp causes this exact pattern",
+        "placement_section": "The hand-positioning mistake almost everyone makes",
+        "link_type": "external"
+      },
+      {
+        "url": "https://thenailwiki.com/top-10-causes-of-gel-nail-lifting-and-how-to-fix-each-one/",
+        "anchor_text": "why thumbs and index fingers are the first to lift",
+        "placement_section": "Why your thumb never fully cures like the rest",
+        "link_type": "external"
+      }
+    ]
+  },
+  "section_9_topical_map": {
+    "post_gen_instruction": "Omit entirely from frontmatter if this section is empty/absent — never write topic as null or empty string.",
+    "topic": "absent",
+    "parentPillar": "absent",
+    "relatedClusters": [
+      "why-does-gel-polish-peel-off-within-two-days",
+      "why-does-gel-polish-chip-faster-on-your-dominant-hand"
+    ],
+    "primaryKeyword": "gel polish lifting on thumb",
+    "secondaryKeywords": ["gel nails lifting thumbnail", "thumb gel polish peeling", "LED lamp curing thumb"],
+    "topicalBoundary": "absent"
+  },
+  "section_10_voice_tone": {
+    "post_gen_instruction": "Layer this on top of the fixed editorial voice mandate already in the Post Gen Agent prompt — never a departure from British English, banned vocabulary, or rhythm rules, just register within that frame.",
+    "recommended_voice": "Sharp and direct",
+    "tone_characteristics": ["Validating but not coddling — confirms the reader isn't doing anything wrong before explaining why", "Precise and mechanism-driven rather than vague reassurance", "Confident, diagnostic tone that resolves the confusion quickly"],
+    "audience_match": "The reader's frustration in phase_1 is confusion at an isolated, unexplained failure point despite doing everything right elsewhere, so a sharp, precise, answer-first register resolves that curiosity gap faster than a warm, meandering tone would."
+  },
+  "section_11_execution_plan": {
+    "purpose": "Post Gen Agent reads this FIRST, before writing a word. Every value pre-calculated. Locked and executed exactly, no recalculation.",
+    "calculated_by": "Input Gen Agent, calculated last after all other sections are complete.",
+    "block_1_entity_and_keyword_execution": {
+      "named_entities_to_surface_early": "thumbnail lifting, gel polish, LED/UV curing lamp, thumb angle/positioning",
+      "primary_keyword_if_any": "gel polish lifting on thumb",
+      "strong_tag_note": "Only apply <strong> to 'gel polish lifting on thumb' if it appears naturally in the intro or first H2 — do not force it."
+    },
+    "block_2_word_and_image_plan": {
+      "total_word_target": "1500, ±50",
+      "introduction": "140 words",
+      "conclusion": "90 words",
+      "h2_budgets": [
+        {"heading": "It's not your prep — here's how to know", "budget": "230 words"},
+        {"heading": "Why your thumb never fully cures like the rest", "budget": "320 words"},
+        {"heading": "The hand-positioning mistake almost everyone makes", "budget": "270 words"},
+        {"heading": "How to cure your thumb properly, every time", "budget": "300 words"},
+        {"heading": "What to do if it's already lifted", "budget": "150 words"}
+      ],
+      "image_assignments": [
+        {"image_number": 1, "place_after": "hero (frontmatter only)", "section_context": "inspirational nail design shot only", "path": "/images/nail-feed/why-does-gel-polish-lift-only-on-my-thumbnails/gel-polish-lifting-thumbnail-corner-hand-under-led-lamp-2026.webp"},
+        {"image_number": 2, "place_after": "Why your thumb never fully cures like the rest", "section_context": "inspirational nail design shot only", "path": "/images/nail-feed/why-does-gel-polish-lift-only-on-my-thumbnails/image-2.webp"},
+        {"image_number": 3, "place_after": "The hand-positioning mistake almost everyone makes", "section_context": "inspirational nail design shot only", "path": "/images/nail-feed/why-does-gel-polish-lift-only-on-my-thumbnails/image-3.webp"},
+        {"image_number": 4, "place_after": "How to cure your thumb properly, every time", "section_context": "inspirational nail design shot only", "path": "/images/nail-feed/why-does-gel-polish-lift-only-on-my-thumbnails/image-4.webp"}
+      ]
+    },
+    "block_3_opening_technique_assignments": {
+      "rule": "No two consecutive sections same technique. Conclusion = Technique 1 or 3 only.",
+      "assignments": [
+        {"section": "Introduction", "technique": "Technique 2 — direct validation opener (name the exact reader experience before explaining it)"},
+        {"section": "It's not your prep — here's how to know", "technique": "Technique 1 — direct statement opener"},
+        {"section": "Why your thumb never fully cures like the rest", "technique": "Technique 3 — mechanism/explanatory opener"},
+        {"section": "The hand-positioning mistake almost everyone makes", "technique": "Technique 1 — direct statement opener"},
+        {"section": "How to cure your thumb properly, every time", "technique": "Technique 3 — mechanism/explanatory opener"},
+        {"section": "What to do if it's already lifted", "technique": "Technique 1 — direct statement opener"},
+        {"section": "Conclusion", "technique": "Technique 3"}
+      ]
+    },
+    "block_4_link_placements": {
+      "links": [
+        {"anchor_text": "the full breakdown of why gel polish peels off within two days", "full_url": "/nail-feed/why-does-gel-polish-peel-off-within-two-days", "place_in_section": "It's not your prep — here's how to know", "link_type": "nailfeed-sibling"},
+        {"anchor_text": "gel polish chipping faster on your dominant hand", "full_url": "/nail-feed/why-does-gel-polish-chip-faster-on-your-dominant-hand", "place_in_section": "conclusion", "link_type": "nailfeed-sibling"},
+        {"anchor_text": "diagnosing the seven real causes of gel lifting", "full_url": "https://www.kirstymeakin.com/why-is-my-gel-polish-lifting/", "place_in_section": "It's not your prep — here's how to know", "link_type": "external"},
+        {"anchor_text": "how incorrect hand positioning under the lamp causes this exact pattern", "full_url": "https://pinkgellac.com/blogs/tips-tricks/why-is-my-gel-polish-peeling-off", "place_in_section": "The hand-positioning mistake almost everyone makes", "link_type": "external"},
+        {"anchor_text": "why thumbs and index fingers are the first to lift", "full_url": "https://thenailwiki.com/top-10-causes-of-gel-nail-lifting-and-how-to-fix-each-one/", "place_in_section": "Why your thumb never fully cures like the rest", "link_type": "external"}
+      ]
+    },
+    "block_5_active_constraints": {
+      "em_dash_banned": "confirmed active",
+      "british_english_active": "confirmed active",
+      "min_h2_reminder": "5 H2s used — clears the 3-H2 minimum for full widget placement including social CTA slot",
+      "word_count_reminder": "1500 target, depth not padding",
+      "image_count_reminder": "4 total: 1 hero + 3 body, fixed — locked value, Post Gen Agent must not scale this up or down",
+      "hero_image_reminder": "frontmatter only, never in body; alt text and filename only from this file, visual concept comes from a separate downstream prompt; image path is /images/nail-feed/{slug}/{filename}.webp"
+    },
+    "block_6_widget_execution": {
+      "reaction_bar": "default — omit reaction frontmatter entirely, route's hardcoded fallback applies",
+      "poll_or_quiz": "poll — use poll_content from section_4 exactly as given",
+      "reminder": "Poll and quiz are mutually exclusive at the template level — if the input file somehow specifies both, that is an input file error, use poll only and flag it, do not attempt to render both."
+    }
+  }
+}
