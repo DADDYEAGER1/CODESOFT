@@ -1,0 +1,198 @@
+{
+  "section_1_file_authority": {
+    "statement": "THIS FILE IS THE SINGLE SOURCE OF TRUTH FOR THE NAIL FEED POST GEN AGENT. All values in POST_CONSTANTS are hardcoded. All entities, sentiment/trend rationale, emotion trigger, structure, and links defined here must be followed exactly."
+  },
+
+  "section_2_post_constants": {
+    "slug": "gel-polish-streaks-no-matter-how-thin",
+    "canonical": "https://mirelleinspo.com/nail-feed/gel-polish-streaks-no-matter-how-thin",
+    "word_count": 1500,
+    "image_count": 4,
+    "category": "DIY Nail Troubleshooting",
+    "publish_date": "2026-08-29",
+    "author": "jyoti-mirelle"
+  },
+
+  "section_3_sentiment_and_entity_brief": {
+    "post_gen_instruction": "This is the primary creative context for the whole post — the real emotional territory this post is built on, and what it's specifically about. Named entities should appear clearly and early in the post.",
+    "sentiment_read": "negative",
+    "the_specific_frustration_or_desire": "Readers have already tried the 'obvious' fix — going thinner — and it made the streaking worse, not better. Real audience language (Facebook/TikTok/Quora) shows genuine exasperation: 'streaky gel polish got you beyond frustrated', people blaming the polish quality or their own hand when it's neither. The specific pain point is doing everything 'right' by conventional advice and still ending up with visible brush-drag lines, especially on light, sheer, or milky-white shades.",
+    "named_entities": "gel polish streaking, float technique, brush-loading, milky white base gel, syrup/pigment-heavy gel formulas, under-cure, LED lamp light-blocking",
+    "trend_velocity": "sustained — this is an evergreen DIY-failure complaint with a steady stream of fresh TikTok/social content (dated as recently as June-July 2026), not seasonal or spiking, but consistently searched and discussed",
+    "why_now_rationale": "Milky white and sheer gel bases are currently a dominant nail aesthetic (glazed donut, milky manicures), and these exact formulas are the ones most prone to streaking — so the frustration is being freshly triggered by a trend that's still popular right now.",
+    "saturation_check": "saturated on generic 'how to avoid streaky polish' advice, but under-covered on the specific counterintuitive angle: that thinning the coat further is often the cause, not the cure, because too little product on the brush drags and streaks just as badly as too much. This is the differentiation angle."
+  },
+
+  "section_4_engagement_widgets": {
+    "post_gen_instruction": "Reaction Bar: write the custom frontmatter reaction block if provided below, otherwise omit entirely (post falls back to the route's hardcoded default automatically — no frontmatter needed for the default case). Poll/Quiz: write frontmatter for whichever ONE was selected below, exactly as given, never both. If this section explicitly states neither was selected, omit both poll and quiz from frontmatter entirely — this is a correct, deliberate outcome, not a gap.",
+    "reaction_bar": "default",
+    "poll_or_quiz_selected": "poll",
+    "selection_rationale": "Research surfaced a genuine, real split in audience belief: some people are convinced streaking means bad-quality polish, others insist it's always technique/user error (seen directly in a Facebook thread titled 'Is streaky gel polish due to user error or cheap polish?'). This is a real, specific either/or the audience is actually divided on, not an invented one — a poll fits naturally. A quiz was considered but rejected: there's no genuine branching outcome here (no distinct 'types' of streaky-polish sufferer with different results), so forcing one would be generic filler.",
+    "poll_content": {
+      "id": "streak-blame-poll",
+      "question": "When your gel polish streaks, what do you blame first?",
+      "options": [
+        {"id": "a", "label": "The polish formula/quality"},
+        {"id": "b", "label": "My own application technique"},
+        {"id": "c", "label": "The lamp not curing it properly"},
+        {"id": "d", "label": "Honestly, no idea — it just happens"}
+      ]
+    }
+  },
+
+  "section_5_hook_and_ctr": {
+    "post_gen_instruction": "READ BEFORE WRITING TITLE, EXCERPT, INTRO, OR FIRST H2. Title and excerpt are hardcoded — use exactly. Title length range is 45-70 characters (Discover feed range, not a SERP-derived cap) — see phase_4.",
+    "selected_trigger": "Trigger 1 — Curiosity Gap",
+    "trigger_rationale": "Phase_1 shows readers are confused, not simply annoyed — they believe they're doing the fix correctly (applying thin coats) and are baffled it isn't working, which is a knowledge-gap signal, not a pure frustration-venting signal.",
+    "title": "Why your gel polish still streaks even with thin coats",
+    "title_char_count": 49,
+    "excerpt": "You went thinner like everyone says, but the streaks are still there. Here's the real reason — and it's not your technique.",
+    "excerpt_char_count": 126,
+    "intro_hook_brief": "Open by naming the exact frustration: you followed the advice, applied thin coats, and it still looks streaky. Flip the assumption immediately — thin isn't the same as 'not enough product', and that distinction is the whole post.",
+    "hero_image_emotional_beat": "A close-up of visibly streaky, patchy gel polish on a nail (light/milky shade, where streaks show most) against a stark studio background — the exact 'still streaky' moment the title names."
+  },
+
+  "section_6_hero_image_brief": {
+    "post_gen_instruction": "Use imageAlt exactly as given. image_filename_brief is a naming reference for the actual hero image file, which will be saved at /images/nail-feed/{slug}/{filename}.webp. This section does NOT include a visual concept/mood description — that lives in a separate downstream image-generation prompt the user runs independently.",
+    "imageAlt": "Streaky milky white gel polish with visible brush-drag lines on nails despite thin coat application, close-up",
+    "image_filename_brief": "streaky-milky-white-gel-polish-thin-coat-brush-lines-closeup-2026.webp",
+    "tag_for_downstream_prompt": "Google Discover hero image — high contrast, thumbnail-style, click-optimised, paired with the title 'Why your gel polish still streaks even with thin coats'."
+  },
+
+  "section_7_content_structure": {
+    "post_gen_instruction": "H2 structure followed exactly — no renaming, no reordering without user instruction.",
+    "h2_structure": [
+      "The thin-coat advice everyone gives (and why it's incomplete)",
+      "Too little product streaks just as badly as too much",
+      "The float technique: how to actually load your brush",
+      "Formulas that streak no matter what you do",
+      "How to fix a coat that's already streaky"
+    ],
+    "word_budget": {
+      "intro": "140 words",
+      "H2_1": "220 words",
+      "H2_2": "320 words",
+      "H2_3": "300 words",
+      "H2_4": "260 words",
+      "H2_5": "160 words",
+      "conclusion": "100 words"
+    }
+  },
+
+  "section_8_links": {
+    "post_gen_instruction": "Every link below appears in the post, woven naturally, verbatim URLs and anchors exactly as given/discovered. 2-3 internal + 2-3 external maximum. Internal links are pre-resolved (from Bucket Explorer JSON, Mode A2) or absent (Mode A/B one-off) — this agent never live-searches for internal links. External links are freshly researched here every time.",
+    "all_links": [
+      {
+        "url": "https://mirelleinspo.com/nail-feed/gel-polish-bubble-under-top-coat",
+        "anchor_text": "why gel polish bubbles under the top coat",
+        "placement_section": "intro — comparing streaking to bubbling as two different application-technique failures",
+        "link_type": "nailfeed-sibling"
+      },
+      {
+        "url": "https://mirelleinspo.com/nail-feed/polygel-stay-tacky-recommended-cure-time",
+        "anchor_text": "polygel that stays tacky past the recommended cure time",
+        "placement_section": "Formulas that streak no matter what you do — noting shared photoinitiator-related failures across gel and polygel formulas",
+        "link_type": "nailfeed-sibling"
+      },
+      {
+        "url": "https://www.shopbellebeauty.eu/blogs/gel-nail-polish/gel-polish-troubleshooting",
+        "anchor_text": "a full gel polish troubleshooting breakdown by symptom",
+        "placement_section": "The float technique: how to actually load your brush — supporting the load/place/float method",
+        "link_type": "external"
+      },
+      {
+        "url": "https://www.lotsoflacquer.com/blog/what-is-floating-on-nail-polish",
+        "anchor_text": "the floating-on application technique explained in detail",
+        "placement_section": "The float technique: how to actually load your brush",
+        "link_type": "external"
+      },
+      {
+        "url": "https://nailknowledge.org/blog/why-white-gel-polish-looks-patchy",
+        "anchor_text": "why white and light gel formulas are more prone to looking patchy",
+        "placement_section": "Formulas that streak no matter what you do",
+        "link_type": "external"
+      }
+    ]
+  },
+
+  "section_9_topical_map": {
+    "post_gen_instruction": "Omit entirely from frontmatter if this section is empty/absent — never write topic as null or empty string.",
+    "topic": "absent",
+    "parentPillar": "absent",
+    "relatedClusters": ["gel-polish-bubble-under-top-coat", "polygel-stay-tacky-recommended-cure-time"],
+    "primaryKeyword": "why does gel polish streak",
+    "secondaryKeywords": ["streaky gel polish fix", "gel polish brush technique", "float technique gel polish", "milky white gel streaking"],
+    "topicalBoundary": "absent"
+  },
+
+  "section_10_voice_tone": {
+    "post_gen_instruction": "Layer this on top of the fixed editorial voice mandate already in the Post Gen Agent prompt — never a departure from British English, banned vocabulary, or rhythm rules, just register within that frame.",
+    "recommended_voice": "Sharp and direct",
+    "tone_characteristics": [
+      "Validates the specific frustration of having followed the advice and still failing — not dismissive",
+      "Confident, correcting a misconception plainly rather than hedging",
+      "Fast-paced, practical, low on fluff — matches a reader who wants the fix, not a lecture"
+    ],
+    "audience_match": "Phase_1 shows a reader who is confused and mildly exasperated, not devastated — they need a direct, competent correction to a specific wrong assumption (thinner = fix), which the negative-angle curiosity-gap trigger and a sharp, direct register both serve."
+  },
+
+  "section_11_execution_plan": {
+    "block_1_entity_and_keyword_execution": {
+      "named_entities_to_surface_early": "gel polish streaking, float technique, brush-loading, milky white base gel",
+      "primary_keyword_if_any": "why does gel polish streak",
+      "strong_tag_note": "Apply <strong> to 'why does gel polish streak' only if it appears naturally in the intro or first H2 — never forced."
+    },
+    "block_2_word_and_image_plan": {
+      "total_word_target": "1500, ±50",
+      "introduction": "140 words",
+      "conclusion": "100 words",
+      "h2_budgets": [
+        {"heading": "The thin-coat advice everyone gives (and why it's incomplete)", "budget": "220 words"},
+        {"heading": "Too little product streaks just as badly as too much", "budget": "320 words"},
+        {"heading": "The float technique: how to actually load your brush", "budget": "300 words"},
+        {"heading": "Formulas that streak no matter what you do", "budget": "260 words"},
+        {"heading": "How to fix a coat that's already streaky", "budget": "160 words"}
+      ],
+      "image_assignments": [
+        {"image_number": 1, "place_after": "hero (frontmatter only)", "section_context": "inspirational nail design shot only — streaky milky white gel close-up, matching title/hero brief", "path": "/images/nail-feed/gel-polish-streaks-no-matter-how-thin/streaky-milky-white-gel-polish-thin-coat-brush-lines-closeup-2026.webp"},
+        {"image_number": 2, "place_after": "Too little product streaks just as badly as too much", "section_context": "inspirational nail design shot only — clean, evenly loaded brush applying a smooth bead of gel polish", "path": "/images/nail-feed/gel-polish-streaks-no-matter-how-thin/gel-brush-loaded-bead-even-application.webp"},
+        {"image_number": 3, "place_after": "The float technique: how to actually load your brush", "section_context": "inspirational nail design shot only — smooth, streak-free milky white or sheer gel manicure result", "path": "/images/nail-feed/gel-polish-streaks-no-matter-how-thin/smooth-streak-free-milky-gel-manicure-result.webp"},
+        {"image_number": 4, "place_after": "Formulas that streak no matter what you do", "section_context": "inspirational nail design shot only — variety of gel polish bottles/shades known for being harder to apply (whites, pastels, syrup formulas)", "path": "/images/nail-feed/gel-polish-streaks-no-matter-how-thin/gel-polish-bottles-white-pastel-shades.webp"}
+      ]
+    },
+    "block_3_opening_technique_assignments": {
+      "rule": "No two consecutive sections same technique. Conclusion = Technique 1 or 3 only.",
+      "assignments": [
+        {"section": "Introduction", "technique": "Technique 2 — direct statement of the misconception"},
+        {"section": "H2-1 (The thin-coat advice everyone gives)", "technique": "Technique 1 — question-led opening"},
+        {"section": "H2-2 (Too little product streaks just as badly)", "technique": "Technique 3 — scene/scenario opening"},
+        {"section": "H2-3 (The float technique)", "technique": "Technique 1 — question-led opening"},
+        {"section": "H2-4 (Formulas that streak no matter what)", "technique": "Technique 2 — direct statement"},
+        {"section": "H2-5 (How to fix a coat that's already streaky)", "technique": "Technique 3 — scene/scenario opening"},
+        {"section": "Conclusion", "technique": "Technique 1 — question-led opening"}
+      ]
+    },
+    "block_4_link_placements": {
+      "links": [
+        {"anchor_text": "why gel polish bubbles under the top coat", "full_url": "https://mirelleinspo.com/nail-feed/gel-polish-bubble-under-top-coat", "place_in_section": "Introduction", "link_type": "nailfeed-sibling"},
+        {"anchor_text": "polygel that stays tacky past the recommended cure time", "full_url": "https://mirelleinspo.com/nail-feed/polygel-stay-tacky-recommended-cure-time", "place_in_section": "Formulas that streak no matter what you do", "link_type": "nailfeed-sibling"},
+        {"anchor_text": "a full gel polish troubleshooting breakdown by symptom", "full_url": "https://www.shopbellebeauty.eu/blogs/gel-nail-polish/gel-polish-troubleshooting", "place_in_section": "The float technique: how to actually load your brush", "link_type": "external"},
+        {"anchor_text": "the floating-on application technique explained in detail", "full_url": "https://www.lotsoflacquer.com/blog/what-is-floating-on-nail-polish", "place_in_section": "The float technique: how to actually load your brush", "link_type": "external"},
+        {"anchor_text": "why white and light gel formulas are more prone to looking patchy", "full_url": "https://nailknowledge.org/blog/why-white-gel-polish-looks-patchy", "place_in_section": "Formulas that streak no matter what you do", "link_type": "external"}
+      ]
+    },
+    "block_5_active_constraints": {
+      "em_dash_banned": "confirmed active",
+      "british_english_active": "confirmed active",
+      "min_h2_reminder": "at least 3 H2s — hard technical requirement, needed for full widget placement including social CTA slot (this post has 5)",
+      "word_count_reminder": "1500 target, depth not padding",
+      "image_count_reminder": "4 total: 1 hero + 3 body, fixed — locked value, Post Gen Agent must not scale this up or down",
+      "hero_image_reminder": "frontmatter only, never in body; alt text and filename only from this file, visual concept comes from a separate downstream prompt; image path is /images/nail-feed/gel-polish-streaks-no-matter-how-thin/{filename}.webp"
+    },
+    "block_6_widget_execution": {
+      "reaction_bar": "omit frontmatter entirely — default applies automatically",
+      "poll_or_quiz": "poll selected — use poll_content from section_4 exactly as given",
+      "reminder": "Poll and quiz are mutually exclusive at the template level — only poll is used here, quiz is correctly absent."
+    }
+  }
+}
