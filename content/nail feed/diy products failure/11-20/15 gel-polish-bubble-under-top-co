@@ -1,0 +1,186 @@
+{
+  "section_1_file_authority": {
+    "statement": "THIS FILE IS THE SINGLE SOURCE OF TRUTH FOR THE NAIL FEED POST GEN AGENT. All values in POST_CONSTANTS are hardcoded. All entities, sentiment/trend rationale, emotion trigger, structure, and links defined here must be followed exactly."
+  },
+  "section_2_post_constants": {
+    "slug": "gel-polish-bubble-under-top-coat",
+    "canonical": "https://mirelleinspo.com/nail-feed/gel-polish-bubble-under-top-coat",
+    "word_count": 1500,
+    "image_count": 4,
+    "category": "DIY Nail Troubleshooting",
+    "publish_date": "2026-09-05",
+    "author": "jyoti-mirelle"
+  },
+  "section_3_sentiment_and_entity_brief": {
+    "post_gen_instruction": "This is the primary creative context for the whole post — the real emotional territory this post is built on, and what it's specifically about. Named entities should appear clearly and early in the post.",
+    "sentiment_read": "negative",
+    "the_specific_frustration_or_desire": "Reader just finished a manicure they were happy with, and bubbles show up under the top coat — either right after curing or once it hardens — ruining a finish that looked fine going on. The tone across Quora and blog comments is 'ruined a good manicure,' 'right out of nowhere,' confusion about whether it's their technique, the lamp, or a bad bottle, plus real annoyance that it happens even when they think they did everything right.",
+    "named_entities": "gel polish, top coat, LED/UV lamp curing, thin coats vs thick coats, no-wipe top coat, base coat, isopropyl alcohol prep, gel polish thinner",
+    "trend_velocity": "sustained — this is an evergreen, chronic DIY troubleshooting query with steady search and Quora activity year-round, not a seasonal or viral spike",
+    "why_now_rationale": "Bubbling under top coat is one of the most consistently asked at-home gel polish complaints; with home LED lamp kits and DIY gel sets continuing to be a dominant format in 2026, this remains a live, recurring pain point rather than a dated one.",
+    "saturation_check": "saturated — several brand blogs (Dashing Diva, LondonTown, Luxa, NashlyNails, BTArtbox) already cover general bubbling causes. Differentiation angle: focus specifically on bubbles appearing under the TOP COAT stage (not base or color), which most competitors treat as one generic bubbling article rather than isolating the top-coat-specific causes (over-thick final layer, curing an already-textured surface, no-wipe top coat trapping surface tack) and matching fixes without a full soak-off."
+  },
+  "section_4_engagement_widgets": {
+    "post_gen_instruction": "Reaction Bar: write the custom frontmatter reaction block if provided below, otherwise omit entirely (post falls back to the route's hardcoded default automatically — no frontmatter needed for the default case). Poll/Quiz: write frontmatter for whichever ONE was selected below, exactly as given, never both. If this section explicitly states neither was selected, omit both poll and quiz from frontmatter entirely — this is a correct, deliberate outcome, not a gap.",
+    "reaction_bar": "default",
+    "poll_or_quiz_selected": "poll",
+    "selection_rationale": "Research surfaced a genuine, recurring either/or in the actual conversation: readers are split on whether bubbling is a technique/application problem (thick layers, rushing, not curing between coats) or a product/formula problem (old polish, low-quality top coat, bad lamp) — several sources explicitly frame it as 'it's not you, it's the formula' vs. 'it's your technique,' making this a real audience debate rather than an invented split. A quiz doesn't fit: there's no genuine branching set of distinct outcomes here, just one problem with multiple possible causes, which is better served by the poll's binary framing.",
+    "poll_content": {
+      "id": "bubble-cause-poll",
+      "question": "When your top coat bubbles, what do you blame first?",
+      "options": [
+        {"id": "technique", "label": "My application — I probably went on too thick"},
+        {"id": "product", "label": "The polish or lamp — something's off with the product"}
+      ]
+    }
+  },
+  "section_5_hook_and_ctr": {
+    "post_gen_instruction": "READ BEFORE WRITING TITLE, EXCERPT, INTRO, OR FIRST H2. Title and excerpt are hardcoded — use exactly. Title length range is 45-70 characters (Discover feed range, not a SERP-derived cap) — see phase_4.",
+    "selected_trigger": "trigger_2_negative_angle_plus_solution",
+    "trigger_rationale": "Phase_1's sentiment_read is genuinely negative — a real, specific, common frustration (a manicure that looked fine getting ruined by bubbles under the top coat) exists across actual audience conversation, so the problem is stated sharply before the fix, matching this trigger exactly.",
+    "title": "Why gel polish bubbles under the top coat (and the fix)",
+    "title_char_count": 57,
+    "excerpt": "Your manicure looked perfect until the top coat bubbled. Here's the exact cause behind it and how to stop it happening on your next set.",
+    "excerpt_char_count": 139,
+    "intro_hook_brief": "Open on the moment of finishing a manicure that looked flawless, only for tiny bubbles to show up under the top coat once it's cured — name that specific letdown before explaining why it happens.",
+    "hero_image_emotional_beat": "A close-up on a glossy gel nail with visible bubble texture caught under raking light — the exact 'ruined the shine' moment the title names, not a generic smooth-manicure shot."
+  },
+  "section_6_hero_image_brief": {
+    "post_gen_instruction": "Use imageAlt exactly as given. image_filename_brief is a naming reference for the actual hero image file, which will be saved at /images/nail-feed/{slug}/{filename}.webp. This section does NOT include a visual concept/mood description — that lives in a separate downstream image-generation prompt the user runs independently.",
+    "imageAlt": "Bubbled gel polish top coat texture visible under raking light on a glossy nail, showing tiny trapped air bumps across the surface",
+    "image_filename_brief": "gel-polish-bubbles-top-coat-closeup-raking-light-2026.webp",
+    "tag_for_downstream_prompt": "For Google Discover hero image — high contrast, thumbnail-style, click-optimised, paired with the exact title above."
+  },
+  "section_7_content_structure": {
+    "post_gen_instruction": "H2 structure followed exactly — no renaming, no reordering without user instruction.",
+    "h2_structure": [
+      "The real reason bubbles form under your top coat",
+      "Thick layers are the #1 cause (and the easiest to miss)",
+      "How your lamp and curing time make it worse",
+      "Product and prep issues nobody warns you about",
+      "How to fix bubbling once it's already cured",
+      "How to stop it happening on your next manicure"
+    ],
+    "word_budget": {
+      "intro": "140 words",
+      "The real reason bubbles form under your top coat": "220 words",
+      "Thick layers are the #1 cause (and the easiest to miss)": "230 words",
+      "How your lamp and curing time make it worse": "220 words",
+      "Product and prep issues nobody warns you about": "220 words",
+      "How to fix bubbling once it's already cured": "230 words",
+      "How to stop it happening on your next manicure": "160 words",
+      "conclusion": "100 words"
+    }
+  },
+  "section_8_links": {
+    "post_gen_instruction": "Every link below appears in the post, woven naturally, verbatim URLs and anchors exactly as given/discovered. 2-3 internal + 2-3 external maximum. Internal links are pre-resolved (from Bucket Explorer JSON, Mode A2) or absent (Mode A/B one-off) — this agent never live-searches for internal links. External links are freshly researched here every time.",
+    "all_links": [
+      {
+        "url": "https://mirelleinspo.com/nail-feed/nail-polish-chip-within-hours-of-drying",
+        "anchor_text": "why nail polish can fail within hours of drying",
+        "placement_section": "Product and prep issues nobody warns you about — noting bubbling and early chipping often share the same application-error root cause",
+        "link_type": "nailfeed-sibling"
+      },
+      {
+        "url": "https://mirelleinspo.com/nail-feed/gel-polish-streak-no-matter-how-thin-i-apply-it",
+        "anchor_text": "streaking is a related application-technique issue",
+        "placement_section": "Thick layers are the #1 cause (and the easiest to miss) — comparing bubbling to streaking as two distinct application-technique failures",
+        "link_type": "nailfeed-sibling"
+      },
+      {
+        "url": "https://www.nashlynails.com/blogs/news/how-to-fix-bubbles-in-gel-polish-5-causes",
+        "anchor_text": "matching the bubble pattern to its specific cause",
+        "placement_section": "How to fix bubbling once it's already cured",
+        "link_type": "external"
+      },
+      {
+        "url": "https://www.londontownusa.com/blogs/londontown-blog/why-does-my-top-coat-bubble",
+        "anchor_text": "how top coat bubbling differs between gel and regular polish",
+        "placement_section": "The real reason bubbles form under your top coat",
+        "link_type": "external"
+      }
+    ]
+  },
+  "section_9_topical_map": {
+    "primaryKeyword": "gel polish bubbling under top coat",
+    "secondaryKeywords": [
+      "why does gel polish bubble",
+      "top coat air bubbles fix",
+      "gel manicure bubbling causes"
+    ],
+    "relatedClusters": [
+      "why-does-nail-polish-chip-within-hours-of-drying",
+      "why-does-gel-polish-streak-no-matter-how-thin-i-apply-it"
+    ]
+  },
+  "section_10_voice_tone": {
+    "post_gen_instruction": "Layer this on top of the fixed editorial voice mandate already in the Post Gen Agent prompt — never a departure from British English, banned vocabulary, or rhythm rules, just register within that frame.",
+    "recommended_voice": "Sharp and direct",
+    "tone_characteristics": [
+      "Validates the specific frustration up front rather than jumping straight to tips",
+      "Confident, diagnostic tone — names the exact cause before offering the fix, matching the negative-angle-plus-solution trigger",
+      "No padding or hedging language; direct cause-then-fix structure throughout"
+    ],
+    "audience_match": "Phase_1 found real annoyance and a 'ruined a good manicure' register, not confusion or excitement — a sharp, validating, no-fluff voice matches a reader who wants to know exactly what went wrong and how to stop it, not a warm or breathless tone that would undersell the frustration."
+  },
+  "section_11_execution_plan": {
+    "block_1_entity_and_keyword_execution": {
+      "named_entities_to_surface_early": "gel polish, top coat, LED/UV lamp curing, thin vs thick coats",
+      "primary_keyword_if_any": "gel polish bubbling under top coat",
+      "strong_tag_note": "Only apply <strong> to the primary keyword if it appears naturally in the intro or first H2 — do not force it."
+    },
+    "block_2_word_and_image_plan": {
+      "total_word_target": "1500, ±50",
+      "introduction": "140 words",
+      "conclusion": "100 words",
+      "h2_budgets": [
+        {"heading": "The real reason bubbles form under your top coat", "budget": "220 words"},
+        {"heading": "Thick layers are the #1 cause (and the easiest to miss)", "budget": "230 words"},
+        {"heading": "How your lamp and curing time make it worse", "budget": "220 words"},
+        {"heading": "Product and prep issues nobody warns you about", "budget": "220 words"},
+        {"heading": "How to fix bubbling once it's already cured", "budget": "230 words"},
+        {"heading": "How to stop it happening on your next manicure", "budget": "160 words"}
+      ],
+      "image_assignments": [
+        {"image_number": 1, "place_after": "hero/frontmatter", "section_context": "Close-up bubbled top coat texture under raking light — inspirational/diagnostic nail shot only", "path": "/images/nail-feed/gel-polish-bubble-under-top-coat/gel-polish-bubbles-top-coat-closeup-raking-light-2026.webp"},
+        {"image_number": 2, "place_after": "Thick layers are the #1 cause (and the easiest to miss)", "section_context": "Side-by-side of a thin, even top coat layer vs. a visibly thick, uneven one", "path": "/images/nail-feed/gel-polish-bubble-under-top-coat/thin-vs-thick-top-coat-layer-comparison-2026.webp"},
+        {"image_number": 3, "place_after": "How your lamp and curing time make it worse", "section_context": "Hand under an LED lamp mid-cure, clean glossy result", "path": "/images/nail-feed/gel-polish-bubble-under-top-coat/gel-nails-curing-led-lamp-glossy-finish-2026.webp"},
+        {"image_number": 4, "place_after": "How to stop it happening on your next manicure", "section_context": "Finished flawless glossy gel manicure, no bubbling, as the aspirational end-result shot", "path": "/images/nail-feed/gel-polish-bubble-under-top-coat/flawless-glossy-gel-manicure-result-2026.webp"}
+      ]
+    },
+    "block_3_opening_technique_assignments": {
+      "rule": "No two consecutive sections same technique. Conclusion = Technique 1 or 3 only.",
+      "assignments": [
+        {"section": "Introduction", "technique": "Technique 2 — direct problem statement"},
+        {"section": "The real reason bubbles form under your top coat", "technique": "Technique 1 — direct answer first"},
+        {"section": "Thick layers are the #1 cause (and the easiest to miss)", "technique": "Technique 3 — scenario/relatable moment"},
+        {"section": "How your lamp and curing time make it worse", "technique": "Technique 1 — direct answer first"},
+        {"section": "Product and prep issues nobody warns you about", "technique": "Technique 3 — scenario/relatable moment"},
+        {"section": "How to fix bubbling once it's already cured", "technique": "Technique 1 — direct answer first"},
+        {"section": "How to stop it happening on your next manicure", "technique": "Technique 3 — scenario/relatable moment"},
+        {"section": "Conclusion", "technique": "Technique 1 — direct answer first"}
+      ]
+    },
+    "block_4_link_placements": {
+      "links": [
+        {"anchor_text": "why nail polish can fail within hours of drying", "full_url": "https://mirelleinspo.com/nail-feed/nail-polish-chip-within-hours-of-drying", "place_in_section": "Product and prep issues nobody warns you about", "link_type": "nailfeed-sibling"},
+        {"anchor_text": "streaking is a related application-technique issue", "full_url": "https://mirelleinspo.com/nail-feed/gel-polish-streak-no-matter-how-thin-i-apply-it", "place_in_section": "Thick layers are the #1 cause (and the easiest to miss)", "link_type": "nailfeed-sibling"},
+        {"anchor_text": "matching the bubble pattern to its specific cause", "full_url": "https://www.nashlynails.com/blogs/news/how-to-fix-bubbles-in-gel-polish-5-causes", "place_in_section": "How to fix bubbling once it's already cured", "link_type": "external"},
+        {"anchor_text": "how top coat bubbling differs between gel and regular polish", "full_url": "https://www.londontownusa.com/blogs/londontown-blog/why-does-my-top-coat-bubble", "place_in_section": "The real reason bubbles form under your top coat", "link_type": "external"}
+      ]
+    },
+    "block_5_active_constraints": {
+      "em_dash_banned": "confirmed active",
+      "british_english_active": "confirmed active",
+      "min_h2_reminder": "6 H2s present — clears the hard minimum of 3, full widget placement including social CTA slot available",
+      "word_count_reminder": "1500 target, depth not padding",
+      "image_count_reminder": "4 total: 1 hero + 3 body, fixed — locked value, Post Gen Agent must not scale this up or down",
+      "hero_image_reminder": "frontmatter only, never in body; alt text and filename only from this file, visual concept comes from a separate downstream prompt; image path is /images/nail-feed/gel-polish-bubble-under-top-coat/{filename}.webp"
+    },
+    "block_6_widget_execution": {
+      "reaction_bar": "default applies automatically — no frontmatter needed",
+      "poll_or_quiz": "poll — use poll_content from section_4 exactly as given",
+      "reminder": "Poll and quiz are mutually exclusive at the template level — only poll is specified here, quiz frontmatter must not be written."
+    }
+  }
+}
