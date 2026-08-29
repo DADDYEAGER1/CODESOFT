@@ -1,0 +1,152 @@
+{
+  "section_1_file_authority": {
+    "statement": "THIS FILE IS THE SINGLE SOURCE OF TRUTH FOR THE NAIL FEED POST GEN AGENT. All values in POST_CONSTANTS are hardcoded. All entities, sentiment/trend rationale, emotion trigger, structure, and links defined here must be followed exactly."
+  },
+  "section_2_post_constants": {
+    "slug": "why-did-my-nails-turn-orange-after-removing-dark-nail-polish",
+    "canonical": "https://mirelleinspo.com/nail-feed/why-did-my-nails-turn-orange-after-removing-dark-nail-polish",
+    "word_count": 1500,
+    "image_count": 4,
+    "category": "DIY Nail Problems",
+    "publish_date": "2026-09-05",
+    "author": "jyoti-mirelle"
+  },
+  "section_3_sentiment_and_entity_brief": {
+    "sentiment_read": "negative",
+    "the_specific_frustration_or_desire": "Reader just took off a dark polish (red, orange-toned, or near-black) expecting bare clean nails underneath and instead finds an orange or rust-toned stain across the nail plate. The reaction is alarm and mild disgust ('why does my nail look dirty/sick'), plus a fear that it's damage rather than a harmless surface stain, and uncertainty over whether acetone made it worse.",
+    "named_entities": "nail plate staining, dark nail polish pigment transfer, pigmented lacquer dye-bleed, acetone-based remover, base coat, nail porosity, keratin staining",
+    "trend_velocity": "sustained (evergreen DIY-failure search pattern, not seasonal, consistently recurring whenever dark/vampy polish shades cycle back into style)",
+    "why_now_rationale": "Dark reds, oxblood, and burnt-orange polish shades are in heavy seasonal rotation for autumn 2026, so more people are removing dark polish right now and hitting this exact surprise stain for the first time.",
+    "saturation_check": "under-covered as a standalone orange-specific post — most existing coverage folds this into generic 'yellow nails' explainers without addressing the distinct orange/rust tint dark reds and oranges leave, which is the differentiation angle here."
+  },
+  "section_4_engagement_widgets": {
+    "reaction_bar": "default",
+    "poll_or_quiz_selected": "neither",
+    "selection_rationale": "Research surfaced a single shared frustration and cause (pigment staining), not a genuine split of opinion or multiple distinct outcome paths a reader could branch into — forcing a poll or quiz here would be filler, not signal.",
+    "poll_content": null,
+    "quiz_content": null
+  },
+  "section_5_hook_and_ctr": {
+    "selected_trigger": "Trigger 2 — negative angle plus solution",
+    "trigger_rationale": "Sentiment_read is genuinely negative: a real, common, alarming-feeling problem (post-removal staining) with a straightforward fix, which is exactly what this trigger is built for.",
+    "title": "Why did my nails turn orange after removing dark polish?",
+    "title_char_count": 58,
+    "excerpt": "Dark polish gone but nails stained orange? It's pigment, not damage — here's why it happens and how fast it actually fades.",
+    "excerpt_char_count": 126,
+    "intro_hook_brief": "Open on the exact moment of alarm: peeling or soaking off a dark manicure and finding nails stained rust-orange underneath, looking almost bruised or dirty. Reassure fast that this is pigment transfer, not injury, then pivot into why it happens.",
+    "hero_image_emotional_beat": "The specific moment of freshly removed dark polish revealing visibly orange-stained bare nails underneath — the stain itself is the visual hook, matching the title's exact claim."
+  },
+  "section_6_hero_image_brief": {
+    "imageAlt": "Bare fingernails stained orange after removing dark red nail polish, staining visible across nail plate surface",
+    "image_filename_brief": "orange-stained-nails-after-dark-polish-removal-closeup-2026.webp",
+    "tag_for_downstream_prompt": "For Google Discover hero image — high contrast, thumbnail-style, click-optimised, paired with title 'Why did my nails turn orange after removing dark polish?'"
+  },
+  "section_7_content_structure": {
+    "h2_structure": [
+      "Why dark nail polish stains your nails orange",
+      "Is it the polish or the acetone remover causing it",
+      "Is orange nail staining actually damage",
+      "How to get rid of orange stains on your nails",
+      "How to stop it happening next time"
+    ],
+    "word_budget": {
+      "intro": "140 words",
+      "Why dark nail polish stains your nails orange": "280 words",
+      "Is it the polish or the acetone remover causing it": "230 words",
+      "Is orange nail staining actually damage": "260 words",
+      "How to get rid of orange stains on your nails": "290 words",
+      "How to stop it happening next time": "200 words",
+      "conclusion": "100 words"
+    }
+  },
+  "section_8_links": {
+    "all_links": [
+      {
+        "url": "https://goaskalice.columbia.edu/answered-questions/dark-nail-polish-and-discolored-nails-dilemma",
+        "anchor_text": "why porous nails absorb pigment from dark polish",
+        "placement_section": "Why dark nail polish stains your nails orange — supports the porosity/pigment-absorption explanation with a citable health-education source",
+        "link_type": "external"
+      },
+      {
+        "url": "https://www.healthline.com/health/yellow-nails",
+        "anchor_text": "when nail discoloration signals something beyond staining",
+        "placement_section": "Is orange nail staining actually damage — supports the distinction between harmless cosmetic staining and signs that warrant seeing a doctor",
+        "link_type": "external"
+      }
+    ]
+  },
+  "section_9_topical_map": {
+    "topic": null,
+    "parentPillar": null,
+    "relatedClusters": [
+      "why-are-my-nails-yellow-after-wearing-gel-polish-for-weeks",
+      "why-do-my-cuticles-look-stained-after-taking-off-gel-polish",
+      "how-long-does-it-take-for-yellow-nails-to-fade-after-gel-polish"
+    ],
+    "primaryKeyword": "nails turned orange after removing nail polish",
+    "secondaryKeywords": ["orange nail stain", "dark nail polish staining nails", "how to remove nail polish stains from nails"],
+    "topicalBoundary": "Covers only cosmetic pigment-transfer staining from dark polish and its removal — does not cover fungal infection, yellow nail syndrome, or other medical causes of nail discoloration beyond a brief when-to-see-a-doctor distinction."
+  },
+  "section_10_voice_tone": {
+    "recommended_voice": "Sharp and reassuring",
+    "tone_characteristics": ["direct about naming the alarming symptom upfront", "quickly de-escalates the fear with fact", "validates the 'gross/alarming' reaction before explaining it", "confident, not clinical"],
+    "audience_match": "The reader is anxious in the moment (just saw a discoloured nail and doesn't know if it's harmless), so a voice that names the fear fast and resolves it fast fits better than a slow, exploratory tone."
+  },
+  "section_11_execution_plan": {
+    "block_1_entity_and_keyword_execution": {
+      "named_entities_to_surface_early": "nail plate staining, dark nail polish pigment transfer, acetone-based remover, nail porosity",
+      "primary_keyword_if_any": "nails turned orange after removing nail polish",
+      "strong_tag_note": "Only bold/strong-tag the primary keyword if it appears naturally in the intro or first H2 — do not force it."
+    },
+    "block_2_word_and_image_plan": {
+      "total_word_target": "1500, ±50",
+      "introduction": "140 words",
+      "conclusion": "100 words",
+      "h2_budgets": [
+        {"heading": "Why dark nail polish stains your nails orange", "budget": "280 words"},
+        {"heading": "Is it the polish or the acetone remover causing it", "budget": "230 words"},
+        {"heading": "Is orange nail staining actually damage", "budget": "260 words"},
+        {"heading": "How to get rid of orange stains on your nails", "budget": "290 words"},
+        {"heading": "How to stop it happening next time", "budget": "200 words"}
+      ],
+      "image_assignments": [
+        {"image_number": 1, "place_after": "intro", "section_context": "close-up of bare nails with visible orange staining, inspirational nail design shot only", "path": "/images/nail-feed/why-did-my-nails-turn-orange-after-removing-dark-nail-polish/orange-stained-nails-after-dark-polish-removal-closeup-2026.webp"},
+        {"image_number": 2, "place_after": "Why dark nail polish stains your nails orange", "section_context": "dark red/burnt-orange polish bottle beside stained nail, showing the pigment source", "path": "/images/nail-feed/why-did-my-nails-turn-orange-after-removing-dark-nail-polish/image-2.webp"},
+        {"image_number": 3, "place_after": "How to get rid of orange stains on your nails", "section_context": "nail buffer and whitening treatment beside hands, showing the fix in progress", "path": "/images/nail-feed/why-did-my-nails-turn-orange-after-removing-dark-nail-polish/image-3.webp"},
+        {"image_number": 4, "place_after": "How to stop it happening next time", "section_context": "sheer base coat being applied to bare nail, showing the prevention step", "path": "/images/nail-feed/why-did-my-nails-turn-orange-after-removing-dark-nail-polish/image-4.webp"}
+      ]
+    },
+    "block_3_opening_technique_assignments": {
+      "rule": "No two consecutive sections same technique. Conclusion = Technique 1 or 3 only.",
+      "assignments": [
+        {"section": "Introduction", "technique": "Technique 2 — direct scenario/symptom open"},
+        {"section": "Why dark nail polish stains your nails orange", "technique": "Technique 1 — direct explanation open"},
+        {"section": "Is it the polish or the acetone remover causing it", "technique": "Technique 3 — question open"},
+        {"section": "Is orange nail staining actually damage", "technique": "Technique 1 — direct explanation open"},
+        {"section": "How to get rid of orange stains on your nails", "technique": "Technique 3 — question open"},
+        {"section": "How to stop it happening next time", "technique": "Technique 1 — direct explanation open"},
+        {"section": "Conclusion", "technique": "Technique 3 — question open"}
+      ]
+    },
+    "block_4_link_placements": {
+      "links": [
+        {"anchor_text": "why porous nails absorb pigment from dark polish", "full_url": "https://goaskalice.columbia.edu/answered-questions/dark-nail-polish-and-discolored-nails-dilemma", "place_in_section": "Why dark nail polish stains your nails orange", "link_type": "external"},
+        {"anchor_text": "when nail discoloration signals something beyond staining", "full_url": "https://www.healthline.com/health/yellow-nails", "place_in_section": "Is orange nail staining actually damage", "link_type": "external"}
+      ]
+    },
+    "block_5_active_constraints": {
+      "em_dash_banned": "confirmed active",
+      "british_english_active": "confirmed active",
+      "min_h2_reminder": "at least 3 H2s — hard technical requirement, needed for full widget placement including social CTA slot (5 H2s used here)",
+      "word_count_reminder": "1500 target, depth not padding",
+      "image_count_reminder": "4 total: 1 hero + 3 body, fixed — locked value, Post Gen Agent must not scale this up or down",
+      "hero_image_reminder": "frontmatter only, never in body; alt text and filename only from this file, visual concept comes from a separate downstream prompt; image path is /images/nail-feed/{slug}/{filename}.webp"
+    },
+    "block_6_widget_execution": {
+      "reaction_bar": "omit frontmatter entirely — default applies automatically",
+      "poll_or_quiz": "neither — omit both poll and quiz from frontmatter entirely",
+      "reminder": "Poll and quiz are mutually exclusive at the template level — not applicable here since neither was selected."
+    }
+  },
+  "internal_links_note": "No pre-assigned internal links exist for this title in the Bucket Explorer JSON provided — relatedClusters above are inferred sibling-topic candidates from the same bucket for informational purposes only, NOT resolved internal_links objects with anchor_context, and must not be treated as verbatim internal link assignments. Per phase_7/critical_rules, this agent does not perform live internal-link discovery; true internal links should be sourced from the Bucket Explorer's internal_links field for this title if/when available."
+}
