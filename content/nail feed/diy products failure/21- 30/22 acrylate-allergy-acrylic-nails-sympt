@@ -1,0 +1,189 @@
+{
+  "section_1_file_authority": {
+    "statement": "THIS FILE IS THE SINGLE SOURCE OF TRUTH FOR THE NAIL FEED POST GEN AGENT. All values in POST_CONSTANTS are hardcoded. All entities, sentiment/trend rationale, emotion trigger, structure, and links defined here must be followed exactly."
+  },
+  "section_2_post_constants": {
+    "slug": "acrylate-allergy-acrylic-nails-symptoms",
+    "canonical": "https://mirelleinspo.com/nail-feed/acrylate-allergy-acrylic-nails-symptoms",
+    "word_count": 1500,
+    "image_count": 4,
+    "category": "Nail Health & Safety",
+    "publish_date": "2026-09-05",
+    "author": "jyoti-mirelle"
+  },
+  "section_3_sentiment_and_entity_brief": {
+    "post_gen_instruction": "This is the primary creative context for the whole post — the real emotional territory this post is built on, and what it's specifically about. Named entities should appear clearly and early in the post.",
+    "sentiment_read": "negative",
+    "the_specific_frustration_or_desire": "People are alarmed and disoriented because the reaction feels sudden and unrecognisable — burning around the nail bed within hours, skin that gets 'itchy, bumpy' or blistered, and confusion over whether it's a heat spike, an infection, or a real allergy. A recurring thread is fear of spreading: multiple Quora posters describe reactions moving beyond the hands to the eyelids or face, and describe feeling blindsided after wearing the same product for years with no issue before.",
+    "named_entities": "acrylate allergy, acrylic nails, methacrylates, HEMA (2-hydroxyethyl methacrylate), contact dermatitis, patch testing, gel polish, acrylic monomer",
+    "trend_velocity": "rising, sustained — not seasonal. Multiple 2025-2026 sources confirm year-on-year growth (Amsterdam UMC data cited as the allergy doubling in prevalence over the past decade, now affecting over 4% of patients, 97% women), driven by at-home gel kit popularity and increased UV-cure exposure.",
+    "why_now_rationale": "Acrylate allergy coverage has picked up through 2025-2026 as dermatology outlets and allergy clinics publish fresh explainer content, tracking a real rise tied to at-home gel manicure kits and more frequent salon visits — this is an active, worsening health story, not old news.",
+    "saturation_check": "Under-covered in the specific 'what does it actually look like' framing. Most existing coverage (Wyndly, DermNet, acrylateallergy.com) is written in a clinical, list-of-symptoms register; almost none uses the real, specific language people use when describing their own reaction (burning, spreading to eyelids, feeling 'blindsided' after years of no reaction). The differentiation angle is leading with that lived, sensory specificity rather than a generic bullet list."
+  },
+  "section_4_engagement_widgets": {
+    "post_gen_instruction": "Reaction Bar: write the custom frontmatter reaction block if provided below, otherwise omit entirely (post falls back to the route's hardcoded default automatically — no frontmatter needed for the default case). Poll/Quiz: write frontmatter for whichever ONE was selected below, exactly as given, never both. If this section explicitly states neither was selected, omit both poll and quiz from frontmatter entirely — this is a correct, deliberate outcome, not a gap.",
+    "reaction_bar": "default",
+    "poll_or_quiz_selected": "neither",
+    "selection_rationale": "This is a health-symptom-recognition topic, not a taste/preference or either-or debate. Research surfaced no genuine binary split (readers aren't divided on an opinion) and no set of genuinely distinct outcome paths a reader could be sorted into — everyone reading this wants the same thing: to recognise their own symptoms. Forcing a poll or quiz here would trivialise a genuine health concern, so both are correctly skipped."
+  },
+  "section_5_hook_and_ctr": {
+    "post_gen_instruction": "READ BEFORE WRITING TITLE, EXCERPT, INTRO, OR FIRST H2. Title and excerpt are hardcoded — use exactly. Title length range is 45-70 characters (Discover feed range, not a SERP-derived cap) — see phase_4.",
+    "selected_trigger": "Trigger 2 — Negative angle plus solution",
+    "trigger_rationale": "Phase_1's sentiment_read is clearly negative: real posters describe burning, blistering, and reactions spreading to the face after years of trouble-free wear, so the post leads with the sharp, specific problem before the reassurance/solution.",
+    "title": "This is what an acrylate allergy from acrylic nails looks like",
+    "title_char_count": 62,
+    "excerpt": "It can start as itchy, swollen skin and spread all the way to your eyelids. Here's how to actually recognise an acrylate allergy early.",
+    "excerpt_char_count": 138,
+    "intro_hook_brief": "Open on the disorienting, specific experience of a reaction appearing after years of trouble-free wear — the skin around the nail suddenly burning, swelling, or blistering — before naming what's actually happening and why it matters to catch early.",
+    "hero_image_emotional_beat": "The exact visual moment of red, swollen, blistered skin at the cuticle and nail fold — the specific first sign described repeatedly in research, not a generic manicure shot."
+  },
+  "section_6_hero_image_brief": {
+    "post_gen_instruction": "Use imageAlt exactly as given. image_filename_brief is a naming reference for the actual hero image file, which will be saved at /images/nail-feed/{slug}/{filename}.webp. This section does NOT include a visual concept/mood description — that lives in a separate downstream image-generation prompt the user runs independently.",
+    "imageAlt": "Red, swollen, blistered skin around the cuticle and nail fold, showing the classic early symptoms of an acrylate allergy",
+    "image_filename_brief": "red-swollen-blistered-cuticle-nail-fold-acrylate-allergy-symptoms-closeup-2026.webp",
+    "tag_for_downstream_prompt": "For Google Discover hero image — high contrast, thumbnail-style, click-optimised, paired with the title 'This is what an acrylate allergy from acrylic nails looks like'."
+  },
+  "section_7_content_structure": {
+    "post_gen_instruction": "H2 structure followed exactly — no renaming, no reordering without user instruction.",
+    "h2_structure": [
+      "The first signs: what an acrylate allergy actually feels like",
+      "Why it can appear suddenly, even after years of wearing acrylics",
+      "How an acrylate allergy is different from a heat spike or infection",
+      "When it spreads beyond your hands (and why the eyelids are especially at risk)",
+      "Getting a real diagnosis: what patch testing actually involves",
+      "What to do next if you think you're reacting"
+    ],
+    "word_budget": {
+      "intro": "140 words",
+      "The first signs: what an acrylate allergy actually feels like": "260 words",
+      "Why it can appear suddenly, even after years of wearing acrylics": "230 words",
+      "How an acrylate allergy is different from a heat spike or infection": "230 words",
+      "When it spreads beyond your hands (and why the eyelids are especially at risk)": "220 words",
+      "Getting a real diagnosis: what patch testing actually involves": "220 words",
+      "What to do next if you think you're reacting": "200 words",
+      "conclusion": "100 words"
+    }
+  },
+  "section_8_links": {
+    "post_gen_instruction": "Every link below appears in the post, woven naturally, verbatim URLs and anchors exactly as given/discovered. 2-3 internal + 2-3 external maximum. Internal links are pre-resolved (from Bucket Explorer JSON, Mode A2) or absent (Mode A/B one-off) — this agent never live-searches for internal links. External links are freshly researched here every time.",
+    "all_links": [
+      {
+        "url": "https://mirelleinspo.com/nail-feed/skin-around-nails-itchy-after-gel-manicure",
+        "anchor_text": "why the skin around your nails can get itchy after a gel manicure",
+        "placement_section": "The first signs: what an acrylate allergy actually feels like",
+        "link_type": "nailfeed-sibling"
+      },
+      {
+        "url": "https://mirelleinspo.com/nail-feed/gel-polish-allergy-years-of-use",
+        "anchor_text": "post explaining how you can suddenly become allergic to gel polish you've used for years",
+        "placement_section": "Why it can appear suddenly, even after years of wearing acrylics",
+        "link_type": "nailfeed-sibling"
+      },
+      {
+        "url": "https://dermnetnz.org/topics/allergy-to-acrylate",
+        "anchor_text": "DermNet's clinical overview of acrylate allergy and contact dermatitis",
+        "placement_section": "How an acrylate allergy is different from a heat spike or infection",
+        "link_type": "external"
+      },
+      {
+        "url": "https://www.acrylateallergy.com/acrylate-allergy-symptoms-photos/",
+        "anchor_text": "photo-based guide to recognising acrylate allergy symptoms on different skin tones",
+        "placement_section": "When it spreads beyond your hands (and why the eyelids are especially at risk)",
+        "link_type": "external"
+      },
+      {
+        "url": "https://www.amsterdamumc.org/en/research/institutes/amsterdam-institute-for-immunology-and-infectious-diseases/news/professor-rustemeyer-there-is-a-link-between-artificial-nails-and-allergy",
+        "anchor_text": "Amsterdam UMC's research on the rising rate of artificial nail allergies",
+        "placement_section": "Why it can appear suddenly, even after years of wearing acrylics",
+        "link_type": "external"
+      }
+    ]
+  },
+  "section_9_topical_map": {
+    "post_gen_instruction": "Omit entirely from frontmatter if this section is empty/absent — never write topic as null or empty string.",
+    "relatedClusters": [
+      "skin-around-nails-itchy-after-gel-manicure",
+      "gel-polish-allergy-years-of-use"
+    ],
+    "primaryKeyword": "acrylate allergy symptoms",
+    "secondaryKeywords": [
+      "acrylic nail allergy",
+      "gel nail allergic reaction",
+      "acrylate contact dermatitis",
+      "nail allergy patch test"
+    ]
+  },
+  "section_10_voice_tone": {
+    "post_gen_instruction": "Layer this on top of the fixed editorial voice mandate already in the Post Gen Agent prompt — never a departure from British English, banned vocabulary, or rhythm rules, just register within that frame.",
+    "recommended_voice": "Sharp and direct, but reassuring by the close",
+    "tone_characteristics": [
+      "Validates the alarm in the negative sentiment_read directly rather than downplaying it",
+      "Specific and sensory in the symptom description, mirroring how real posters described their own reactions",
+      "Grounded and calm in the diagnosis/next-steps sections, since Trigger 2 requires the solution to land with genuine reassurance, not just fear"
+    ],
+    "audience_match": "Readers arriving on this topic are likely mid-reaction or newly worried, per phase_1's Quora findings — they need their specific, alarming symptoms named accurately before anything else, which a sharp, validating register does better than a soft or breezy one."
+  },
+  "section_11_execution_plan": {
+    "purpose": "Post Gen Agent reads this FIRST, before writing a word. Every value pre-calculated. Locked and executed exactly, no recalculation.",
+    "calculated_by": "Input Gen Agent, calculated last after all other sections are complete.",
+    "block_1_entity_and_keyword_execution": {
+      "named_entities_to_surface_early": "acrylate allergy, acrylic nails, methacrylates/HEMA, contact dermatitis",
+      "primary_keyword_if_any": "acrylate allergy symptoms",
+      "strong_tag_note": "Apply <strong> to 'acrylate allergy' on its first natural mention in the intro only if it reads naturally there — never forced."
+    },
+    "block_2_word_and_image_plan": {
+      "total_word_target": "1500, ±50",
+      "introduction": "140 words",
+      "conclusion": "100 words",
+      "h2_budgets": [
+        {"heading": "The first signs: what an acrylate allergy actually feels like", "budget": "260 words"},
+        {"heading": "Why it can appear suddenly, even after years of wearing acrylics", "budget": "230 words"},
+        {"heading": "How an acrylate allergy is different from a heat spike or infection", "budget": "230 words"},
+        {"heading": "When it spreads beyond your hands (and why the eyelids are especially at risk)", "budget": "220 words"},
+        {"heading": "Getting a real diagnosis: what patch testing actually involves", "budget": "220 words"},
+        {"heading": "What to do next if you think you're reacting", "budget": "200 words"}
+      ],
+      "image_assignments": [
+        {"image_number": 1, "place_after": "hero — frontmatter only", "section_context": "inspirational nail design shot only, per hero_image_brief", "path": "/images/nail-feed/acrylate-allergy-acrylic-nails-symptoms/red-swollen-blistered-cuticle-nail-fold-acrylate-allergy-symptoms-closeup-2026.webp"},
+        {"image_number": 2, "place_after": "The first signs: what an acrylate allergy actually feels like", "section_context": "inspirational nail design shot only", "path": "/images/nail-feed/acrylate-allergy-acrylic-nails-symptoms/image-2.webp"},
+        {"image_number": 3, "place_after": "How an acrylate allergy is different from a heat spike or infection", "section_context": "inspirational nail design shot only", "path": "/images/nail-feed/acrylate-allergy-acrylic-nails-symptoms/image-3.webp"},
+        {"image_number": 4, "place_after": "Getting a real diagnosis: what patch testing actually involves", "section_context": "inspirational nail design shot only", "path": "/images/nail-feed/acrylate-allergy-acrylic-nails-symptoms/image-4.webp"}
+      ]
+    },
+    "block_3_opening_technique_assignments": {
+      "rule": "No two consecutive sections same technique. Conclusion = Technique 1 or 3 only.",
+      "assignments": [
+        {"section": "Introduction", "technique": "Technique 2 — direct address"},
+        {"section": "The first signs: what an acrylate allergy actually feels like", "technique": "Technique 1 — sensory/scene-setting"},
+        {"section": "Why it can appear suddenly, even after years of wearing acrylics", "technique": "Technique 3 — question hook"},
+        {"section": "How an acrylate allergy is different from a heat spike or infection", "technique": "Technique 1 — sensory/scene-setting"},
+        {"section": "When it spreads beyond your hands (and why the eyelids are especially at risk)", "technique": "Technique 2 — direct address"},
+        {"section": "Getting a real diagnosis: what patch testing actually involves", "technique": "Technique 3 — question hook"},
+        {"section": "What to do next if you think you're reacting", "technique": "Technique 1 — sensory/scene-setting"},
+        {"section": "Conclusion", "technique": "Technique 3 — question hook"}
+      ]
+    },
+    "block_4_link_placements": {
+      "links": [
+        {"anchor_text": "why the skin around your nails can get itchy after a gel manicure", "full_url": "https://mirelleinspo.com/nail-feed/skin-around-nails-itchy-after-gel-manicure", "place_in_section": "The first signs: what an acrylate allergy actually feels like", "link_type": "nailfeed-sibling"},
+        {"anchor_text": "post explaining how you can suddenly become allergic to gel polish you've used for years", "full_url": "https://mirelleinspo.com/nail-feed/gel-polish-allergy-years-of-use", "place_in_section": "Why it can appear suddenly, even after years of wearing acrylics", "link_type": "nailfeed-sibling"},
+        {"anchor_text": "Amsterdam UMC's research on the rising rate of artificial nail allergies", "full_url": "https://www.amsterdamumc.org/en/research/institutes/amsterdam-institute-for-immunology-and-infectious-diseases/news/professor-rustemeyer-there-is-a-link-between-artificial-nails-and-allergy", "place_in_section": "Why it can appear suddenly, even after years of wearing acrylics", "link_type": "external"},
+        {"anchor_text": "DermNet's clinical overview of acrylate allergy and contact dermatitis", "full_url": "https://dermnetnz.org/topics/allergy-to-acrylate", "place_in_section": "How an acrylate allergy is different from a heat spike or infection", "link_type": "external"},
+        {"anchor_text": "photo-based guide to recognising acrylate allergy symptoms on different skin tones", "full_url": "https://www.acrylateallergy.com/acrylate-allergy-symptoms-photos/", "place_in_section": "When it spreads beyond your hands (and why the eyelids are especially at risk)", "link_type": "external"}
+      ]
+    },
+    "block_5_active_constraints": {
+      "em_dash_banned": "confirmed active",
+      "british_english_active": "confirmed active",
+      "min_h2_reminder": "at least 3 H2s — hard technical requirement, needed for full widget placement including social CTA slot (this post has 6)",
+      "word_count_reminder": "1500 target, depth not padding",
+      "image_count_reminder": "4 total: 1 hero + 3 body, fixed — locked value, Post Gen Agent must not scale this up or down",
+      "hero_image_reminder": "frontmatter only, never in body; alt text and filename only from this file, visual concept comes from a separate downstream prompt; image path is /images/nail-feed/{slug}/{filename}.webp"
+    },
+    "block_6_widget_execution": {
+      "reaction_bar": "default — omit reaction frontmatter entirely",
+      "poll_or_quiz": "neither — omit both poll and quiz frontmatter entirely, per section_4's rationale",
+      "reminder": "Poll and quiz are mutually exclusive at the template level — not applicable here since neither was selected."
+    }
+  }
+}
