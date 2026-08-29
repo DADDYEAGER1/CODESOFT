@@ -1,0 +1,180 @@
+{
+  "section_1_file_authority": {
+    "statement": "THIS FILE IS THE SINGLE SOURCE OF TRUTH FOR THE NAIL FEED POST GEN AGENT. All values in POST_CONSTANTS are hardcoded. All entities, sentiment/trend rationale, emotion trigger, structure, and links defined here must be followed exactly."
+  },
+  "section_2_post_constants": {
+    "slug": "gel-polish-still-sticky-after-curing",
+    "canonical": "https://mirelleinspo.com/nail-feed/gel-polish-still-sticky-after-curing",
+    "word_count": 1500,
+    "image_count": 4,
+    "category": "Product Failures & Troubleshooting",
+    "publish_date": "2026-08-29",
+    "author": "jyoti-mirelle"
+  },
+  "section_3_sentiment_and_entity_brief": {
+    "post_gen_instruction": "This is the primary creative context for the whole post — the real emotional territory this post is built on, and what it's specifically about. Named entities should appear clearly and early in the post.",
+    "sentiment_read": "mixed, leaning curiosity/confusion-driven — not straightforwardly negative. Quora and blog sources consistently show readers alarmed and self-doubting ('did I mess up the curing? is the lamp broken?'), but the dominant resolution across nearly every source is reassurance: the stickiness is usually normal (the inhibition layer), not a failure. The emotional arc is anxiety followed by relief once the reader understands the mechanism, not an unresolved recurring frustration.",
+    "the_specific_frustration_or_desire": "Readers describe curing gel for extended periods (one Quora answer references curing for '15 minutes' and it still being tacky) and panicking that they've either ruined the manicure, broken their lamp, or done the technique wrong. The recurring exact worry is confusing NORMAL inhibition-layer tack with a genuine under-cure failure, and not knowing which one they're dealing with or what to do about the sticky residue itself.",
+    "named_entities": "inhibition layer (also called the dispersion layer or tacky layer), UV/LED nail lamp, oxygen inhibition, lint-free wipe, isopropyl alcohol, no-wipe top coat, photoinitiators/oligomers, gel polish, top coat",
+    "trend_velocity": "sustained with active current velocity — this is a long-running, evergreen troubleshooting query, but confirmed with fresh 2026 content still being produced and engaged with (TikTok posts dated as recently as July 2026 covering the exact same tacky-layer confusion, plus multiple brand blog posts published in 2026), indicating the search/interest demand is steady, not declining.",
+    "why_now_rationale": "This is one of the most consistently recurring DIY gel questions and continues generating fresh short-form video content month over month in 2026, showing the confusion is still actively hitting new at-home gel users as the DIY gel manicure trend keeps growing.",
+    "saturation_check": "saturated at the surface level (many brand blogs cover 'inhibition layer basics'), but under-covered on the specific anxiety-first angle — most existing coverage leads with the calm technical explanation rather than validating the panic first. Differentiation angle: open by naming the exact worry (broken lamp, ruined set, wasted time) before delivering the reassurance and the real diagnostic (normal tack vs genuine under-cure)."
+  },
+  "section_4_engagement_widgets": {
+    "post_gen_instruction": "Reaction Bar: write the custom frontmatter reaction block if provided below, otherwise omit entirely (post falls back to the route's hardcoded default automatically — no frontmatter needed for the default case). Poll/Quiz: write frontmatter for whichever ONE was selected below, exactly as given, never both. If this section explicitly states neither was selected, omit both poll and quiz from frontmatter entirely — this is a correct, deliberate outcome, not a gap.",
+    "reaction_bar": "default",
+    "poll_or_quiz_selected": "neither",
+    "selection_rationale": "Research shows one dominant, nearly universal confusion (is this normal or did I mess up?) resolved the same way across sources, not a genuine either/or split in reader opinion, nor multiple distinct branching outcomes a reader could be sorted into — forcing a poll or quiz here would invent a debate or a set of results that doesn't exist in the real research."
+  },
+  "section_5_hook_and_ctr": {
+    "post_gen_instruction": "READ BEFORE WRITING TITLE, EXCERPT, INTRO, OR FIRST H2. Title and excerpt are hardcoded — use exactly. Title length range is 45-70 characters (Discover feed range, not a SERP-derived cap) — see phase_4.",
+    "selected_trigger": "Trigger 1 — Curiosity Gap",
+    "trigger_rationale": "Phase_1's sentiment_read is mixed/confusion-driven, not a genuine ongoing frustration — readers suspect they're doing something wrong or missing a piece of knowledge, which is exactly what the curiosity-gap trigger is built for.",
+    "title": "Why your gel polish is still sticky after curing (it's usually fine)",
+    "title_char_count": 68,
+    "excerpt": "You cured it properly and it's still tacky. Here's the real reason gel does this, and how to tell normal tack from an actual under-cure.",
+    "excerpt_char_count": 139,
+    "intro_hook_brief": "Open by naming the exact panic moment: you followed the instructions, cured for the full time, and your nails are still tacky to the touch. Validate the 'did I break the lamp / ruin the set' spiral immediately, then pivot into the reveal that this is very likely by design, not a mistake.",
+    "hero_image_emotional_beat": "The exact visual moment of a fingertip pressed into a freshly cured, glossy gel nail with a faint tacky sheen still visible on the surface, the moment right before the reader wipes it away."
+  },
+  "section_6_hero_image_brief": {
+    "post_gen_instruction": "Use imageAlt exactly as given. image_filename_brief is a naming reference for the actual hero image file, which will be saved at /images/nail-feed/{slug}/{filename}.webp. This section does NOT include a visual concept/mood description — that lives in a separate downstream image-generation prompt the user runs independently.",
+    "imageAlt": "Glossy tacky inhibition layer visible on freshly cured gel polish nails, finger pressing lightly into the sticky surface sheen",
+    "image_filename_brief": "gel-polish-sticky-inhibition-layer-glossy-nails-close-up-2026.webp",
+    "tag_for_downstream_prompt": "For Google Discover hero image — high contrast, thumbnail-style, click-optimised, paired with the title 'Why your gel polish is still sticky after curing (it's usually fine)'."
+  },
+  "section_7_content_structure": {
+    "post_gen_instruction": "H2 structure followed exactly — no renaming, no reordering without user instruction.",
+    "h2_structure": [
+      "The sticky layer probably isn't a mistake — here's what's actually happening",
+      "Why oxygen is the real culprit behind the tacky feeling",
+      "Normal tack vs genuine under-cure: how to tell the difference",
+      "How to safely remove the sticky layer without ruining your manicure",
+      "What actually causes real under-curing (and how to fix it)"
+    ],
+    "word_budget": {
+      "intro": "140 words",
+      "The sticky layer probably isn't a mistake — here's what's actually happening": "260 words",
+      "Why oxygen is the real culprit behind the tacky feeling": "260 words",
+      "Normal tack vs genuine under-cure: how to tell the difference": "300 words",
+      "How to safely remove the sticky layer without ruining your manicure": "260 words",
+      "What actually causes real under-curing (and how to fix it)": "180 words",
+      "conclusion": "100 words"
+    }
+  },
+  "section_8_links": {
+    "post_gen_instruction": "Every link below appears in the post, woven naturally, verbatim URLs and anchors exactly as given/discovered. 2-3 internal + 2-3 external maximum. Internal links are pre-resolved (from Bucket Explorer JSON, Mode A2) or absent (Mode A/B one-off) — this agent never live-searches for internal links. External links are freshly researched here every time.",
+    "all_links": [
+      {
+        "url": "https://mirelleinspo.com/nail-feed/gel-polish-wont-cure-led-lamp",
+        "anchor_text": "why your gel polish won't fully cure in an LED lamp",
+        "placement_section": "H2: What actually causes real under-curing (and how to fix it) — the deeper lamp-specific troubleshooting this section gestures toward",
+        "link_type": "nailfeed-sibling"
+      },
+      {
+        "url": "https://mirelleinspo.com/nail-feed/gel-polish-peel-off-two-days",
+        "anchor_text": "why gel polish peels off within a couple of days",
+        "placement_section": "Intro — framing this post as the deeper explainer the peeling post's curing-cause section links out to",
+        "link_type": "nailfeed-sibling"
+      },
+      {
+        "url": "https://www.attaincosmetics.com/blogs/insidethelab/the-inhibition-layer-why-gels-stay-sticky-after-curing",
+        "anchor_text": "confirmed explanation of the inhibition layer's role in gel curing",
+        "placement_section": "H2: Why oxygen is the real culprit behind the tacky feeling",
+        "link_type": "external"
+      },
+      {
+        "url": "https://mylee.co.uk/blogs/news/why-are-my-gel-nails-sticky",
+        "anchor_text": "guidance on distinguishing normal tack from an actual under-cure",
+        "placement_section": "H2: Normal tack vs genuine under-cure: how to tell the difference",
+        "link_type": "external"
+      }
+    ]
+  },
+  "section_9_topical_map": {
+    "post_gen_instruction": "Omit entirely from frontmatter if this section is empty/absent — never write topic as null or empty string.",
+    "topic": "absent",
+    "parentPillar": "absent",
+    "relatedClusters": [
+      "gel-polish-wont-cure-led-lamp",
+      "gel-polish-peel-off-two-days"
+    ],
+    "primaryKeyword": "gel polish sticky after curing",
+    "secondaryKeywords": [
+      "inhibition layer gel nails",
+      "gel polish tacky after LED lamp",
+      "why is my gel polish not curing properly"
+    ],
+    "topicalBoundary": "absent"
+  },
+  "section_10_voice_tone": {
+    "post_gen_instruction": "Layer this on top of the fixed editorial voice mandate already in the Post Gen Agent prompt — never a departure from British English, banned vocabulary, or rhythm rules, just register within that frame.",
+    "recommended_voice": "Warm expert, reassuring",
+    "tone_characteristics": [
+      "Validating and calm rather than alarmed — mirrors the sentiment_read's anxiety-then-relief arc rather than dramatising the problem",
+      "Plainly explanatory, favouring clear cause-and-effect over jargon, matching the curiosity-gap trigger's promise to finally explain 'what nobody tells you'",
+      "Confident and definitive when giving the normal-vs-under-cured distinction, since readers specifically want a clear answer, not more uncertainty"
+    ],
+    "audience_match": "Phase_1 found readers actively spiralling into self-doubt (broken lamp, wasted time, ruined set) rather than settled frustration, so a warm, reassuring expert voice that resolves the anxiety quickly fits their actual emotional state better than a sharp or urgent register."
+  },
+  "section_11_execution_plan": {
+    "purpose": "Post Gen Agent reads this FIRST, before writing a word. Every value pre-calculated. Locked and executed exactly, no recalculation.",
+    "calculated_by": "Input Gen Agent, calculated last after all other sections are complete.",
+    "block_1_entity_and_keyword_execution": {
+      "named_entities_to_surface_early": "inhibition layer / dispersion layer / tacky layer, UV/LED nail lamp, oxygen inhibition, gel polish curing",
+      "primary_keyword_if_any": "gel polish sticky after curing",
+      "strong_tag_note": "Only bold/strong-tag the primary keyword phrase where it appears naturally in the intro or first H2 — never forced."
+    },
+    "block_2_word_and_image_plan": {
+      "total_word_target": "1500, ±50",
+      "introduction": "140 words",
+      "conclusion": "100 words",
+      "h2_budgets": [
+        {"heading": "The sticky layer probably isn't a mistake — here's what's actually happening", "budget": "260 words"},
+        {"heading": "Why oxygen is the real culprit behind the tacky feeling", "budget": "260 words"},
+        {"heading": "Normal tack vs genuine under-cure: how to tell the difference", "budget": "300 words"},
+        {"heading": "How to safely remove the sticky layer without ruining your manicure", "budget": "260 words"},
+        {"heading": "What actually causes real under-curing (and how to fix it)", "budget": "180 words"}
+      ],
+      "image_assignments": [
+        {"image_number": 1, "place_after": "hero (frontmatter only)", "section_context": "inspirational nail design shot only — glossy, freshly cured gel nails with visible tacky sheen, matching the title's emotional beat", "path": "/images/nail-feed/gel-polish-still-sticky-after-curing/gel-polish-sticky-inhibition-layer-glossy-nails-close-up-2026.webp"},
+        {"image_number": 2, "place_after": "The sticky layer probably isn't a mistake — here's what's actually happening", "section_context": "inspirational nail design shot only — clean finished gel manicure post-wipe, showing the smooth end result once the tacky layer is removed", "path": "/images/nail-feed/gel-polish-still-sticky-after-curing/image-2.webp"},
+        {"image_number": 3, "place_after": "Normal tack vs genuine under-cure: how to tell the difference", "section_context": "inspirational nail design shot only — hands under a UV/LED lamp mid-cure, glossy nails visible", "path": "/images/nail-feed/gel-polish-still-sticky-after-curing/image-3.webp"},
+        {"image_number": 4, "place_after": "How to safely remove the sticky layer without ruining your manicure", "section_context": "inspirational nail design shot only — lint-free wipe and alcohol prep being used on a finished gel manicure", "path": "/images/nail-feed/gel-polish-still-sticky-after-curing/image-4.webp"}
+      ]
+    },
+    "block_3_opening_technique_assignments": {
+      "rule": "No two consecutive sections same technique. Conclusion = Technique 1 or 3 only.",
+      "assignments": [
+        {"section": "Introduction", "technique": "Technique 2 — direct scenario/relatable moment opener"},
+        {"section": "The sticky layer probably isn't a mistake — here's what's actually happening", "technique": "Technique 1 — reassuring direct statement"},
+        {"section": "Why oxygen is the real culprit behind the tacky feeling", "technique": "Technique 3 — explanatory cause-and-effect opener"},
+        {"section": "Normal tack vs genuine under-cure: how to tell the difference", "technique": "Technique 1 — reassuring direct statement"},
+        {"section": "How to safely remove the sticky layer without ruining your manicure", "technique": "Technique 2 — direct scenario/relatable moment opener"},
+        {"section": "What actually causes real under-curing (and how to fix it)", "technique": "Technique 3 — explanatory cause-and-effect opener"},
+        {"section": "Conclusion", "technique": "Technique 1"}
+      ]
+    },
+    "block_4_link_placements": {
+      "links": [
+        {"anchor_text": "why gel polish peels off within a couple of days", "full_url": "https://mirelleinspo.com/nail-feed/gel-polish-peel-off-two-days", "place_in_section": "Introduction", "link_type": "nailfeed-sibling"},
+        {"anchor_text": "confirmed explanation of the inhibition layer's role in gel curing", "full_url": "https://www.attaincosmetics.com/blogs/insidethelab/the-inhibition-layer-why-gels-stay-sticky-after-curing", "place_in_section": "Why oxygen is the real culprit behind the tacky feeling", "link_type": "external"},
+        {"anchor_text": "guidance on distinguishing normal tack from an actual under-cure", "full_url": "https://mylee.co.uk/blogs/news/why-are-my-gel-nails-sticky", "place_in_section": "Normal tack vs genuine under-cure: how to tell the difference", "link_type": "external"},
+        {"anchor_text": "why your gel polish won't fully cure in an LED lamp", "full_url": "https://mirelleinspo.com/nail-feed/gel-polish-wont-cure-led-lamp", "place_in_section": "What actually causes real under-curing (and how to fix it)", "link_type": "nailfeed-sibling"}
+      ]
+    },
+    "block_5_active_constraints": {
+      "em_dash_banned": "confirmed active",
+      "british_english_active": "confirmed active",
+      "min_h2_reminder": "at least 3 H2s — hard technical requirement, needed for full widget placement including social CTA slot (this post has 5)",
+      "word_count_reminder": "1500 target, depth not padding",
+      "image_count_reminder": "4 total: 1 hero + 3 body, fixed — locked value, Post Gen Agent must not scale this up or down",
+      "hero_image_reminder": "frontmatter only, never in body; alt text and filename only from this file, visual concept comes from a separate downstream prompt; image path is /images/nail-feed/gel-polish-still-sticky-after-curing/{filename}.webp"
+    },
+    "block_6_widget_execution": {
+      "reaction_bar": "default — omit reaction frontmatter entirely, route's hardcoded default (Obsessed / Meh / Hard pass) applies automatically",
+      "poll_or_quiz": "neither — omit both poll and quiz frontmatter entirely, per section_4's deliberate rationale",
+      "reminder": "Poll and quiz are mutually exclusive at the template level — not applicable here since neither was selected."
+    }
+  }
+}
