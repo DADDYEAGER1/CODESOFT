@@ -1,0 +1,184 @@
+{
+  "section_1_file_authority": {
+    "statement": "THIS FILE IS THE SINGLE SOURCE OF TRUTH FOR THE NAIL FEED POST GEN AGENT. All values in POST_CONSTANTS are hardcoded. All entities, sentiment/trend rationale, emotion trigger, structure, and links defined here must be followed exactly."
+  },
+  "section_2_post_constants": {
+    "slug": "why-wont-my-gel-polish-cure-all-the-way-through-in-an-led-lamp",
+    "canonical": "https://mirelleinspo.com/nail-feed/why-wont-my-gel-polish-cure-all-the-way-through-in-an-led-lamp",
+    "word_count": 1500,
+    "image_count": 4,
+    "category": "DIY Product-Failure Problems",
+    "publish_date": "2026-08-29",
+    "author": "jyoti-mirelle"
+  },
+  "section_3_sentiment_and_entity_brief": {
+    "post_gen_instruction": "This is the primary creative context for the whole post — the real emotional territory this post is built on, and what it's specifically about. Named entities should appear clearly and early in the post.",
+    "sentiment_read": "negative",
+    "the_specific_frustration_or_desire": "Readers describe curing their nails for the full recommended time, sometimes far longer, and still ending up with soft, tacky, or 'chewy' gel that never hardens. The frustration is specifically that they followed instructions correctly and it still failed, which reads as confusing and wasteful rather than a simple user error.",
+    "named_entities": "LED lamp, UV lamp, photoinitiators, wavelength (365nm/395nm/405nm), gel polish, polymerisation, cure time, dual UV/LED lamp",
+    "trend_velocity": "sustained — this is an evergreen at-home gel manicure problem, not seasonal or spiking, with steady ongoing search and Quora activity",
+    "why_now_rationale": "At-home gel manicure adoption keeps growing and budget LED lamps are widely sold without clear compatibility labelling, so this specific confusion (lamp and gel 'speaking different languages') keeps generating fresh frustrated readers every week.",
+    "saturation_check": "saturated — several competitor posts already cover generic causes (thick coats, old bulbs, wrong lamp). Differentiation angle: most existing coverage buries the real cause (photoinitiator-to-wavelength mismatch) in dense technical language. This post's edge is making the wavelength-mismatch explanation simple and visual, with the reassurance that this is a product-pairing issue, not user failure."
+  },
+  "section_4_engagement_widgets": {
+    "post_gen_instruction": "Reaction Bar: write the custom frontmatter reaction block if provided below, otherwise omit entirely (post falls back to the route's hardcoded default automatically — no frontmatter needed for the default case). Poll/Quiz: write frontmatter for whichever ONE was selected below, exactly as given, never both. If this section explicitly states neither was selected, omit both poll and quiz from frontmatter entirely — this is a correct, deliberate outcome, not a gap.",
+    "reaction_bar": "default",
+    "poll_or_quiz_selected": "poll",
+    "selection_rationale": "Research surfaced a real, recurring either/or debate in the actual conversation: readers split between blaming their lamp (old bulb, wrong wattage) versus blaming the gel product itself (wrong brand, expired, thick coat) when curing fails — a genuine diagnostic split, not an invented one, so a poll fits and a quiz (which needs distinct branching outcomes/looks) does not apply here since this is a troubleshooting topic, not a style-sorting one.",
+    "poll_content": {
+      "id": "gel-cure-fail-blame-poll",
+      "question": "When your gel won't cure, what do you blame first?",
+      "options": [
+        {"id": "a", "label": "My lamp — it's probably old or weak"},
+        {"id": "b", "label": "The gel polish — wrong brand or expired"},
+        {"id": "c", "label": "Myself — I probably applied it too thick"}
+      ]
+    }
+  },
+  "section_5_hook_and_ctr": {
+    "post_gen_instruction": "READ BEFORE WRITING TITLE, EXCERPT, INTRO, OR FIRST H2. Title and excerpt are hardcoded — use exactly. Title length range is 45-70 characters (Discover feed range, not a SERP-derived cap) — see phase_4.",
+    "selected_trigger": "Trigger 2 — negative angle plus solution",
+    "trigger_rationale": "Phase_1 sentiment_read is clearly negative and specific: a genuine, recurring frustration (gel stays soft/sticky despite following instructions), so stating the problem sharply before the fix fits better than curiosity or FOMO framing.",
+    "title": "Why your gel polish won't cure, even after 60 seconds",
+    "title_char_count": 53,
+    "excerpt": "Your lamp and your gel might be speaking different languages. Here's the real reason it stays sticky, and how to actually fix it.",
+    "excerpt_char_count": 132,
+    "intro_hook_brief": "Open by naming the exact frustration: you followed the instructions, cured it for the full time, and it's still soft and tacky underneath. Then pivot straight to the reveal that this usually isn't user error at all.",
+    "hero_image_emotional_beat": "A close-up moment of a fingertip pressing into visibly soft, dented, still-wet-looking gel polish under lamp light, the exact 'still sticky after curing' visual the title implies."
+  },
+  "section_6_hero_image_brief": {
+    "post_gen_instruction": "Use imageAlt exactly as given. image_filename_brief is a naming reference for the actual hero image file, which will be saved at /images/nail-feed/{slug}/{filename}.webp. This section does NOT include a visual concept/mood description — that lives in a separate downstream image-generation prompt the user runs independently.",
+    "imageAlt": "Fingertip pressing into soft, dented gel polish that stayed sticky after curing under an LED lamp, showing an incomplete cure",
+    "image_filename_brief": "sticky-uncured-gel-polish-fingertip-dent-led-lamp-2026.webp",
+    "tag_for_downstream_prompt": "For Google Discover hero image — high contrast, thumbnail-style, click-optimised, paired with the title 'Why your gel polish won't cure, even after 60 seconds'."
+  },
+  "section_7_content_structure": {
+    "post_gen_instruction": "H2 structure followed exactly — no renaming, no reordering without user instruction.",
+    "h2_structure": [
+      "It's probably not something you did wrong",
+      "Your lamp and your gel might not speak the same wavelength",
+      "Thick coats trap the layer underneath, even in a good lamp",
+      "How to tell if it's your lamp or your gel polish",
+      "The fix: matching, timing, and coat thickness together"
+    ],
+    "word_budget": {
+      "intro": "140 words",
+      "It's probably not something you did wrong": "220 words",
+      "Your lamp and your gel might not speak the same wavelength": "340 words",
+      "Thick coats trap the layer underneath, even in a good lamp": "260 words",
+      "How to tell if it's your lamp or your gel polish": "260 words",
+      "The fix: matching, timing, and coat thickness together": "180 words",
+      "conclusion": "100 words"
+    }
+  },
+  "section_8_links": {
+    "post_gen_instruction": "Every link below appears in the post, woven naturally, verbatim URLs and anchors exactly as given/discovered. 2-3 internal + 2-3 external maximum. Internal links are pre-resolved (from Bucket Explorer JSON, Mode A2) or absent (Mode A/B one-off) — this agent never live-searches for internal links. External links are freshly researched here every time.",
+    "all_links": [
+      {
+        "url": "https://mirelleinspo.com/nail-feed/why-did-my-gel-manicure-give-me-a-burning-heat-spike",
+        "anchor_text": "why thick coats can cause a burning heat spike under the lamp",
+        "placement_section": "Thick coats trap the layer underneath, even in a good lamp — explains heat spikes are tied to the same overcompensation-for-undercuring problem",
+        "link_type": "nailfeed-sibling"
+      },
+      {
+        "url": "https://mirelleinspo.com/nail-feed/why-is-my-gel-polish-still-sticky-after-curing",
+        "anchor_text": "the full breakdown of why gel polish stays sticky after curing",
+        "placement_section": "conclusion — this post is the deeper lamp-specific dive linked back from the broader sticky-gel companion post",
+        "link_type": "nailfeed-sibling"
+      },
+      {
+        "url": "https://nailknowledge.org/blog/gel-polish-curing",
+        "anchor_text": "how photoinitiators match to specific lamp wavelengths",
+        "placement_section": "Your lamp and your gel might not speak the same wavelength — supports the core wavelength-mismatch explanation",
+        "link_type": "external"
+      },
+      {
+        "url": "https://www.gellifique.co.uk/en/content/matching-lamp-to-gel-system(8)",
+        "anchor_text": "a professional nail brand's own guide to matching lamp and gel systems",
+        "placement_section": "How to tell if it's your lamp or your gel polish — authority source on brand-specific compatibility testing",
+        "link_type": "external"
+      }
+    ]
+  },
+  "section_9_topical_map": {
+    "post_gen_instruction": "Omit entirely from frontmatter if this section is empty/absent — never write topic as null or empty string.",
+    "relatedClusters": [
+      "why-is-my-gel-polish-still-sticky-after-curing",
+      "why-did-my-gel-manicure-give-me-a-burning-heat-spike"
+    ],
+    "primaryKeyword": "gel polish not curing led lamp",
+    "secondaryKeywords": [
+      "gel polish sticky after curing",
+      "led lamp wavelength gel polish",
+      "gel polish won't harden"
+    ]
+  },
+  "section_10_voice_tone": {
+    "post_gen_instruction": "Layer this on top of the fixed editorial voice mandate already in the Post Gen Agent prompt — never a departure from British English, banned vocabulary, or rhythm rules, just register within that frame.",
+    "recommended_voice": "Sharp and direct, reassuring",
+    "tone_characteristics": [
+      "Validates the frustration immediately rather than lecturing about technique",
+      "Direct and confident when explaining the wavelength cause, no hedging",
+      "Reassuring register throughout — the point is 'this isn't your fault', which softens the negative-angle trigger without losing its edge"
+    ],
+    "audience_match": "Phase_1 found readers frustrated because they followed instructions correctly and still failed, so a voice that removes blame first and explains second matches their actual emotional state better than a purely clinical or purely upbeat register."
+  },
+  "section_11_execution_plan": {
+    "block_1_entity_and_keyword_execution": {
+      "named_entities_to_surface_early": "LED lamp, UV lamp, photoinitiators, wavelength, gel polish",
+      "primary_keyword_if_any": "gel polish not curing led lamp",
+      "strong_tag_note": "Only bold/strong-tag the primary keyword phrase if it appears naturally within the first two H2 sections — do not force it."
+    },
+    "block_2_word_and_image_plan": {
+      "total_word_target": "1500, ±50",
+      "introduction": "140 words",
+      "conclusion": "100 words",
+      "h2_budgets": [
+        {"heading": "It's probably not something you did wrong", "budget": "220 words"},
+        {"heading": "Your lamp and your gel might not speak the same wavelength", "budget": "340 words"},
+        {"heading": "Thick coats trap the layer underneath, even in a good lamp", "budget": "260 words"},
+        {"heading": "How to tell if it's your lamp or your gel polish", "budget": "260 words"},
+        {"heading": "The fix: matching, timing, and coat thickness together", "budget": "180 words"}
+      ],
+      "image_assignments": [
+        {"image_number": 1, "place_after": "hero (frontmatter only)", "section_context": "inspirational nail design shot only — glossy, fully cured gel manicure", "path": "/images/nail-feed/why-wont-my-gel-polish-cure-all-the-way-through-in-an-led-lamp/sticky-uncured-gel-polish-fingertip-dent-led-lamp-2026.webp"},
+        {"image_number": 2, "place_after": "It's probably not something you did wrong", "section_context": "inspirational nail design shot only — clean, well-cured glossy set", "path": "/images/nail-feed/why-wont-my-gel-polish-cure-all-the-way-through-in-an-led-lamp/image-2.webp"},
+        {"image_number": 3, "place_after": "Your lamp and your gel might not speak the same wavelength", "section_context": "inspirational nail design shot only — LED lamp with hand inside, aesthetic angle", "path": "/images/nail-feed/why-wont-my-gel-polish-cure-all-the-way-through-in-an-led-lamp/image-3.webp"},
+        {"image_number": 4, "place_after": "How to tell if it's your lamp or your gel polish", "section_context": "inspirational nail design shot only — finished glossy manicure close-up", "path": "/images/nail-feed/why-wont-my-gel-polish-cure-all-the-way-through-in-an-led-lamp/image-4.webp"}
+      ]
+    },
+    "block_3_opening_technique_assignments": {
+      "rule": "No two consecutive sections same technique. Conclusion = Technique 1 or 3 only.",
+      "assignments": [
+        {"section": "Introduction", "technique": "Technique 2 — direct problem statement"},
+        {"section": "It's probably not something you did wrong", "technique": "Technique 1 — reassurance opener"},
+        {"section": "Your lamp and your gel might not speak the same wavelength", "technique": "Technique 3 — explanatory opener"},
+        {"section": "Thick coats trap the layer underneath, even in a good lamp", "technique": "Technique 1 — reassurance opener"},
+        {"section": "How to tell if it's your lamp or your gel polish", "technique": "Technique 3 — explanatory opener"},
+        {"section": "The fix: matching, timing, and coat thickness together", "technique": "Technique 1 — reassurance opener"},
+        {"section": "Conclusion", "technique": "Technique 3"}
+      ]
+    },
+    "block_4_link_placements": {
+      "links": [
+        {"anchor_text": "why thick coats can cause a burning heat spike under the lamp", "full_url": "https://mirelleinspo.com/nail-feed/why-did-my-gel-manicure-give-me-a-burning-heat-spike", "place_in_section": "Thick coats trap the layer underneath, even in a good lamp", "link_type": "nailfeed-sibling"},
+        {"anchor_text": "the full breakdown of why gel polish stays sticky after curing", "full_url": "https://mirelleinspo.com/nail-feed/why-is-my-gel-polish-still-sticky-after-curing", "place_in_section": "Conclusion", "link_type": "nailfeed-sibling"},
+        {"anchor_text": "how photoinitiators match to specific lamp wavelengths", "full_url": "https://nailknowledge.org/blog/gel-polish-curing", "place_in_section": "Your lamp and your gel might not speak the same wavelength", "link_type": "external"},
+        {"anchor_text": "a professional nail brand's own guide to matching lamp and gel systems", "full_url": "https://www.gellifique.co.uk/en/content/matching-lamp-to-gel-system(8)", "place_in_section": "How to tell if it's your lamp or your gel polish", "link_type": "external"}
+      ]
+    },
+    "block_5_active_constraints": {
+      "em_dash_banned": "confirmed active",
+      "british_english_active": "confirmed active",
+      "min_h2_reminder": "at least 3 H2s — hard technical requirement, needed for full widget placement including social CTA slot (this post has 5)",
+      "word_count_reminder": "1500 target, depth not padding",
+      "image_count_reminder": "4 total: 1 hero + 3 body, fixed — locked value, Post Gen Agent must not scale this up or down",
+      "hero_image_reminder": "frontmatter only, never in body; alt text and filename only from this file, visual concept comes from a separate downstream prompt; image path is /images/nail-feed/{slug}/{filename}.webp"
+    },
+    "block_6_widget_execution": {
+      "reaction_bar": "default — omit reaction frontmatter entirely",
+      "poll_or_quiz": "poll — use poll_content exactly as given in section_4",
+      "reminder": "Poll and quiz are mutually exclusive at the template level — if the input file somehow specifies both, that is an input file error, use poll only and flag it, do not attempt to render both."
+    }
+  }
+}
