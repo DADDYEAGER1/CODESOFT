@@ -1,0 +1,325 @@
+# INPUT FILE — Fall Almond Nails
+## SINGLE SOURCE OF TRUTH FOR BLOG GEN AGENT — all POST_CONSTANTS are hardcoded, not adjustable.
+
+---
+
+## SECTION 1 — FILE AUTHORITY
+This file is the single source of truth for the Blog Gen Agent. All values in POST_CONSTANTS are hardcoded — do not ask, adjust, or override. All keywords, H2 structure, audience intelligence, internal links, and tone defined here must be followed exactly.
+
+---
+
+## SECTION 2 — POST_CONSTANTS
+- **slug:** /blog/fall-nails/fall-almond-nails
+- **topic_slug:** fall-nails
+- **canonical:** https://mirelleinspo.com/blog/fall-nails/fall-almond-nails
+- **post_type:** spoke
+- **intent:** inspirational
+- **word_count:** 2900 (±50 tolerance)
+- **image_count:** 7 (1 hero + 6 body — flat default rule)
+- **show_inspo_gallery_link:** false (cluster default, verbatim from cluster_metadata.show_inspo_gallery_link_cluster_default)
+- **template:** posts
+- **hero_dimensions:** 1200x675
+- **category:** Nail Inspiration
+- **publish_date:** 2026-09-15
+- **author:** jyoti-mirelle
+
+---
+
+## SECTION 3 — CLUSTER SNAPSHOT
+- **pillar_slug:** /blog/fall/fall-nail-ideas
+- **pillar_title:** Fall Nail Ideas
+- **pillar_primary_keyword:** fall nail ideas
+- **this_post_slug:** /blog/fall-nails/fall-almond-nails
+- **this_post_role:** spoke
+- **show_inspo_gallery_link_cluster_default:** false
+- **keywords_to_avoid:** opi fall 2026 nail colors, fall nail colors for work, fall cat eye nails, fall nail colors for skin tone, simple fall nails, fall gel nails, fall chrome nails, red and pink fall nails, fall pedicure colors 2026, fall nail ideas, fall nail trends 2026, fall nail colors 2026, short fall nails, fall french tip nails, fall ombre nails, brown fall nails, burgundy fall nails, tortoiseshell nails fall, fall nail designs, summer to fall transition nails, end of summer nails, august nail trends 2026, september nails
+
+---
+
+## SECTION 4 — SERP ANALYSIS
+**our_strategic_approach:** None of the five real fetched competitors pair a strong length/shape decision (short vs. medium vs. long almond for fall wearability) with the color roundup itself — they jump straight to numbered color ideas without helping the reader pick the right length or finish tier for their lifestyle first. This post opens with a short, decisive length/wearability section before the visual roundup, borrowing the specificity of pedicurenails.com's per-item spec format (shape/length/finish/best-for) but condensing it so it doesn't bloat word count. It also owns real estate none of the five claim clearly: a dedicated office/work-appropriate fall almond angle and a DIY-difficulty framing (which designs are beginner-friendly vs. salon-only), both confirmed as real demand via PAA-adjacent FAQ patterns on nailzinbloom.com and pedicurenails.com. Structural edge: color-led H2s matching the baseline pattern (all 5 competitors use this), but each H2 closes with a one-line "best for" wearability note the competitors omit entirely.
+
+**top_5_fetched_pages_summary:**
+1. thepinkissue.com/almond-shape-fall-nails/ — ~2,600 words, 30 H2s (numbered items, no higher grouping), primary keyword mentioned in title/intro only (~2x). Strength: strong Instagram-sourced variety and confident voice; Weakness: zero FAQ, zero length/wearability guidance.
+2. thecharmissue.com/almond-fall-nail/ — ~1,900 words, 30 H2s, keyword ~3 mentions. Strength: clean structure; Weakness: heavily templated/repetitive AI-pattern descriptions ("refined design creates a polished manicure featuring...") repeated almost verbatim per item — thin substance per idea.
+3. elsaclaire.com/fall-almond-nails-ideas-brown-and-green/ — ~1,750 words, 20 H2s, keyword ~2 mentions. Strength: genuine specificity (undertone matching, real color-pairing logic) and real external citations; Weakness: narrow scope (only brown+green, not full fall palette).
+4. pedicurenails.com/fall-almond-nail-ideas/ — ~3,400 words, 15 H2s + 6-question FAQ, keyword ~9 mentions (highest of the five, including in every FAQ answer). Strength: genuinely deep — each idea has shape/base/accent/finish/optional add-on specs plus "works well for" context; best structural model of the five.
+5. trendsoraa.com/30-fall-nails-almond-ideas/ — ~4,800 words, 30 H2s + safety-tips + budget-tips + final-thoughts sections, keyword ~6 mentions. Strength: real depth and unique budget/DIY angle; Weakness: bloated, repetitive sentence patterns, drifts into home-decor site with a generic voice.
+
+**top_5_word_count_average:** 2890 words → feeds word_count = 2900
+**top_5_keyword_density_average:** ~4.4 mentions → feeds section_14 baseline (rounded to 4)
+
+**competitor_gaps (2+ source validated):**
+- Length/shape guidance specific to fall wearability (confirmed: nailzinbloom.com FAQ "are short or long almond nails better for fall," pedicurenails.com per-item length specs)
+- Work/office-appropriate fall almond angle (confirmed: nailzinbloom.com FAQ "can fall almond nails be worn in professional settings," pedicurenails.com repeated "office settings" mentions)
+- DIY-difficulty tiering — which looks are beginner-safe vs. salon-only (confirmed: pedicurenails.com FAQ "can I do almond fall nails at home," trendsoraa.com budget/DIY tips section)
+
+**missing_semantic_territory:** "glazed" and "milky" finish terms (used elsewhere on mirelleinspo.com almond content but absent from these 5 fall-specific competitors), "modern almond" shape variant terminology, skin-tone-specific shade matching for fall palette on almond shape specifically.
+
+**recommended_image_count_validation:** 7 images (1 hero + 6 body) matches SERP visual density — competitors show one photo per idea, but at flat-7 our post groups multiple color families per body image slot rather than 1:1, consistent with mirelleinspo's existing fall-nails spoke pattern (fall-ombre-nails, burgundy-fall-nails).
+
+**best_external_sources_found:**
+1. pedicurenails.com/fall-almond-nail-ideas/ — genuinely deep editorial voice, real specs and FAQ, citation-worthy for "how long fall almond manicures last" context.
+2. elsaclaire.com/fall-almond-nails-ideas-brown-and-green/ — real sourced color-trend claims with its own citations, citation-worthy for 2026 brown/green trend context.
+
+---
+
+## SECTION 5 — AUDIENCE INTELLIGENCE
+**who_they_are:** Someone already committed to the almond shape (not deciding between shapes) who is refreshing their manicure for fall specifically — browsing for color/finish inspiration, not technique. Mix of DIY-curious and salon-goers; skews toward people who search by season every year (returning fall-nail searchers), Tier 1 English-speaking markets.
+
+**what_they_want_from_this_post:** A browsable, visual-forward set of fall-specific almond nail ideas they can screenshot or describe to a nail tech — organized enough to find "their" vibe quickly (colors, finishes) without reading a wall of undifferentiated listicle text.
+
+**what_frustrates_them:** Competitor roundups (per thecharmissue.com pattern) that repeat the same three-adjective description ("refined," "polished," "sophisticated") across 30 near-identical entries with no real differentiation; lack of guidance on which length or finish is actually low-maintenance vs. high-upkeep; no acknowledgment of office/work constraints.
+
+**top_5_pain_points:**
+1. Can't tell which fall almond looks are realistically low-maintenance vs. need biweekly salon upkeep
+2. Uncertain whether short or long almond is more "fall-appropriate" or practical for cooler-weather activities
+3. Wants office-safe options but most roundups assume unlimited creative freedom
+4. Overwhelmed by 30-item lists with no organizing logic beyond a number
+5. Wants confidence going into a salon appointment — specific enough language to describe the look, not just "something fall-ish"
+
+**exact_user_phrases:**
+- "almond nails for fall"
+- "fall almond nails short vs long"
+- "cozy fall manicure almond shape"
+- "fall almond nails for work"
+- "what colors for almond nails in fall"
+- "easy fall almond nails at home"
+- "almond nails fall 2026"
+- "tortoiseshell almond nails"
+- "chocolate brown almond nails fall"
+- "almond nails cozy season"
+
+**intent_content_signals:** Visual-first browsing (image per idea expected); short scannable blurbs per look, not long paragraphs; color-led organization; wants a confident recommendation/payoff, not just neutral options; appreciates a "best for" tag per idea (work, weekend, special occasion).
+
+---
+
+## SECTION 6 — SEMANTIC KEYWORD DATA
+**primary_keyword:** fall almond nails
+
+**keyword_variations:** almond nails for fall, fall almond nail ideas, fall almond manicure, almond shaped fall nails, fall nails almond shape, autumn almond nails
+
+**cluster_keywords:** cozy fall manicure, almond nail shape, tapered nail shape, autumn nail colors, fall nail inspiration, chocolate brown almond nails, tortoiseshell almond nails, chrome almond nails fall, velvet nail finish fall, fall nail trends, warm neutral nail colors, glossy vs matte fall nails
+
+**lsi_terms:** caramel almond nails, mocha almond nails, burnt orange almond nails, olive green almond nails, burgundy almond nails, plum almond nails, gold foil accents, negative space nail art, French tip fall nails, ombre fall nails, aura nail effect, cat-eye finish, sweater texture nails, leaf nail art, marble almond nails, skittle nails
+
+**aeo_terms:**
+- What colors work best for fall almond nails?
+- Are short or long almond nails better for fall?
+- Can fall almond nails be worn in professional settings?
+- Is tortoiseshell nail art hard to do at home?
+- What finish suits fall almond nails best, matte or glossy?
+- How long do fall almond nails typically last?
+- Can I do fall almond nail designs myself at home?
+- What is the easiest fall almond nail idea to maintain?
+
+**technical_terms:** almond nail shape, tapered sidewall, negative space, ombre gradient, chrome powder finish, magnetic cat-eye polish, gel-X tips, soak-off gel
+
+**user_language:** cozy season nails, sweater weather manicure, fall nail refresh, low-maintenance fall mani, office-safe fall nails, salon-worthy at home, fall nail glow-up, easy fall nail idea, nail tech reference photo, fall mani inspo
+
+---
+
+## SECTION 7 — VOICE AND AI QUERIES
+1. What colors work best for fall almond nails?
+2. Are short or long almond nails better for fall?
+3. Can fall almond nails be worn in a professional office setting?
+4. What almond nail finish is most popular for fall, matte or glossy?
+5. Is tortoiseshell nail art difficult to do at home?
+6. How long do fall almond nail manicures usually last?
+7. Can I create fall almond nail designs myself without a salon?
+8. What is the easiest fall almond nail idea to maintain?
+9. What fall colors flatter almond nails the most?
+10. Is chrome finish hard to maintain on almond nails in fall?
+11. What length works best for detailed fall nail art?
+12. How do I keep almond nails strong during colder weather?
+13. What's the most requested fall almond nail color this year?
+14. Are matte fall nails harder to keep looking fresh?
+15. What almond nail design is best for a fall wedding?
+
+---
+
+## SECTION 8 — HOOK AND CTR
+**real_serp_findings_summary:** All five fetched competitors use a numbered-list title pattern ("30 Stunning...", "15 Best...", "30+..."), front-load "Fall Almond Nail(s)" but none differentiate on a promise beyond volume/quantity. None signal editorial judgment or a length/wearability payoff in the title itself — the title is purely a count of ideas.
+
+**selected_option_rationale:** This option front-loads the primary keyword within the first 3 words, uses "Actually" as the single earned power word (justified by the real competitor gap: thin, repetitive AI-pattern descriptions the reader has likely already scrolled past elsewhere), and the meta's "plus which length wears best" promise directly answers the validated pain point around length/wearability guidance no competitor addresses.
+
+**title:** 30+ Fall Almond Nails You'll Actually Want to Copy
+**title_char_count:** 47 characters
+**meta_description:** From glossy cocoa to tortoiseshell chrome, these fall almond nail ideas go beyond the usual roundup — plus which length wears best.
+**meta_char_count:** 132 characters
+
+**intro_hook_brief:** Open by naming the fatigue of scrolling near-identical fall almond roundups (the real competitor weakness found), then promise this one is organized to actually help pick a look and a length — matching the "Actually" angle and the meta's length-wears-best promise.
+
+**first_h2_hook_direction:** The first H2 should be the length/wearability primer (not a color idea) — subtly delivering on the meta's "plus which length wears best" promise before diving into the visual roundup.
+
+---
+
+## SECTION 9 — SEARCH JOURNEY
+**reader_arrival_state:** Curious and mid-browse, already sold on the almond shape, looking for fresh fall-specific color and finish inspiration to save or bring to a nail tech.
+
+**journey_arc:**
+- Hook: acknowledge repetitive-roundup fatigue, promise a smarter one
+- Quick length/wearability primer — orient before the visual overwhelm hits
+- Color-led H2 sections building from safe/neutral (cocoa, caramel) toward bold/statement (chrome, tortoiseshell, aura)
+- Weave in "best for" context (work, weekend, event) throughout rather than saving it for one section
+- Close with an identity payoff — "this is your fall mani" confidence, not just a summary
+
+**promise_to_deliver:** A genuinely differentiated set of fall almond nail ideas plus real guidance on which length wears best — not just another undifferentiated 30-photo scroll.
+
+**exit_state:** Confident and ready to book or DIY — knows which 2-3 looks fit their lifestyle and has the language to describe them.
+
+---
+
+## SECTION 10 — CONTENT STRUCTURE
+**h1:** 30+ Fall Almond Nails You'll Actually Want to Copy
+
+**h2_structure:**
+1. Short, Medium, or Long: Which Almond Length Actually Wears Best This Fall
+2. Cozy Neutrals: Caramel, Mocha, and Chocolate Brown Almond Nails
+3. Rich and Moody: Burgundy, Plum, and Deep Red Almond Nails
+4. Earthy and Grounded: Olive Green and Forest Green Almond Nails
+5. Warm Statement Shades: Burnt Orange and Rust Almond Nails
+6. Tortoiseshell and Animal Print Almond Nails
+7. Chrome, Cat-Eye, and Velvet Finishes for Fall Almond Nails
+8. French Tips and Ombre Fall Almond Nails
+9. Fall Almond Nails for the Office and Everyday Wear
+10. Easy DIY Fall Almond Nail Ideas Anyone Can Try at Home
+
+**word_budget:**
+- introduction: 230 words
+- conclusion: 180 words
+- per_h2:
+  - H2-1 (length primer): 260 words
+  - H2-2 (neutrals): 300 words
+  - H2-3 (burgundy/plum): 280 words
+  - H2-4 (green): 250 words
+  - H2-5 (orange/rust): 250 words
+  - H2-6 (tortoiseshell): 270 words
+  - H2-7 (chrome/cat-eye/velvet): 280 words
+  - H2-8 (French tip/ombre): 260 words
+  - H2-9 (office wear): 220 words
+  - H2-10 (DIY): 220 words
+
+---
+
+## SECTION 11 — INTERNAL LINKS
+1. **url_or_slug:** /blog/fall-nails/fall-cat-eye-nails | **title:** Fall Cat Eye Nails | **anchor_text:** fall cat eye nail finishes | **placement_note:** H2-7 (Chrome, Cat-Eye, and Velvet Finishes) — natural fit discussing cat-eye technique | **link_type:** cluster-spoke
+2. **url_or_slug:** /blog/fall-nails/simple-fall-nails | **title:** Simple Fall Nails | **anchor_text:** simple fall nail ideas | **placement_note:** H2-10 (Easy DIY) — natural fit for low-effort fall nail angle | **link_type:** cluster-spoke
+3. **url_or_slug:** /blog/fall-nails/opi-fall-nail-colors-2026 | **title:** OPI Fall 2026 Nail Colors | **anchor_text:** OPI fall 2026 nail colors | **placement_note:** H2-2 (Cozy Neutrals) — natural fit when referencing specific polish shade options | **link_type:** cluster-spoke
+4. **url_or_slug:** /blog/fall/fall-nail-ideas | **title:** Fall Nail Ideas | **anchor_text:** fall nail ideas | **placement_note:** Introduction — pillar link establishing broader cluster context | **link_type:** cluster-pillar
+5. **url_or_slug:** https://mirelleinspo.com/blog/how-to-shape-almond-nails | **title:** How to Shape Almond Nails at Home, No Drill Needed | **anchor_text:** how to shape almond nails at home without a drill | **placement_note:** H2-1 (length/wearability primer) — reader deciding on length benefits from the shaping technique itself | **link_type:** cross-site
+6. **url_or_slug:** https://mirelleinspo.com/blog/almond-nail-colors-skin-tone | **title:** Almond Nail Colors by Skin Tone: The Shades That Pop | **anchor_text:** finding the almond nail colors that flatter your skin tone | **placement_note:** H2-2 (Cozy Neutrals) — natural fit when discussing which neutral shades suit different skin tones | **link_type:** cross-site
+
+---
+
+## SECTION 12 — VOICE AND TONE
+**recommended_voice:** Warm, discerning friend — confident editorial judgment without gatekeeping.
+
+**tone_characteristics:**
+- Direct opinions on what's worth trying, not neutral option-listing
+- Acknowledges real-life constraints (office rules, DIY skill level, maintenance time)
+- Sensory, specific color language over vague adjectives
+- Light dry humor when calling out overdone competitor patterns
+- Confident closing energy — reader should feel decided, not still deciding
+
+**language_style:** Second person ("you," "your nails"), short-to-medium sentences, concrete visual descriptions over abstract praise, occasional rhetorical question to mirror reader's actual browsing thought.
+
+**audience_match:** This voice matches a browsing, visually-driven inspirational reader who wants curation and confidence, not just volume — it differentiates from the flat, repetitive AI-pattern voice found across 3 of the 5 fetched competitors.
+
+---
+
+## SECTION 13 — EXTERNAL LINKS
+1. **url:** https://pedicurenails.com/fall-almond-nail-ideas/ | **context:** When discussing how long fall almond manicures typically last or maintenance cadence | **anchor_suggestion:** how long a fall almond manicure typically lasts
+2. **url:** https://elsaclaire.com/fall-almond-nails-ideas-brown-and-green/ | **context:** When referencing 2026's brown-and-green color pairing trend specifically | **anchor_suggestion:** 2026's brown and green color pairing trend
+
+---
+
+## SECTION 14 — EXECUTION PLAN
+
+### Block 1 — Keyword Execution
+- **primary_keyword:** fall almond nails
+- **top_5_density_baseline:** 4
+- **total_mention_target:** 4 + 3 = **7 total mentions**
+- **first_100_words_plan:**
+  - mention_1: sentence 2 of introduction — establishing the post topic directly after the hook line
+  - mention_2: sentence 4-5 of introduction — reinforcing before transitioning into the promise/payoff line
+- **first_half_target:** 4 mentions — first ~1450 words (denser: intro + H2-1 through H2-5)
+- **second_half_target:** 3 mentions — second ~1450 words (H2-6 through conclusion)
+- **strong_tag_rule:** Every one of the 7 mentions wrapped in `<strong>` tags. Scan after every paragraph.
+- **keywords_to_avoid_active:** full list from Section 3 — never used as focus terms anywhere in the post.
+
+### Block 2 — Word Budget
+- **total_target:** 2900 words (±50 tolerance, never exceed)
+- **introduction:** 230 words
+- **conclusion:** 180 words
+- **h2_budgets:**
+  1. Length/wearability primer — 260 words — complexity: medium
+  2. Cozy neutrals — 300 words — complexity: medium
+  3. Burgundy/plum — 280 words — complexity: medium
+  4. Green — 250 words — complexity: low
+  5. Orange/rust — 250 words — complexity: low
+  6. Tortoiseshell — 270 words — complexity: medium
+  7. Chrome/cat-eye/velvet — 280 words — complexity: high
+  8. French tip/ombre — 260 words — complexity: medium
+  9. Office wear — 220 words — complexity: low
+  10. DIY — 220 words — complexity: low
+- **tracking_rule:** Track running word total at the end of every H2. If over budget, cut before moving on — do not compensate later.
+
+### Block 3 — Image Plan
+- **total_images:** 7
+- **hero_image:** frontmatter only — never in body
+- **body_images:** 6
+- **assignments:**
+  1. place_after: H2-2 (Cozy Neutrals) — image_type: standard_inspiration — section_context: glossy chocolate brown or caramel almond manicure, medium length
+  2. place_after: H2-3 (Burgundy/Plum) — image_type: standard_inspiration — section_context: deep burgundy or plum almond nails, glossy finish
+  3. place_after: H2-4/H2-5 combined (Green + Orange) — image_type: standard_inspiration — section_context: olive green or burnt orange almond nails, medium-long length
+  4. place_after: H2-6 (Tortoiseshell) — image_type: standard_inspiration — section_context: tortoiseshell pattern almond nails, warm amber/brown/black layered
+  5. place_after: H2-7 (Chrome/Cat-Eye/Velvet) — image_type: standard_inspiration — section_context: chrome or cat-eye finish almond nails catching light
+  6. place_after: H2-9 (Office Wear) — image_type: standard_inspiration — section_context: neutral, understated almond manicure suited for professional settings
+- **image_type_rule:** All 6 slots use standard_inspiration — this post's intent (inspirational, color/finish roundup) does not require infographic treatment; no comparison or step-sequence need identified in the H2 structure.
+- **path_rule:** /images/blog/fall-nails/fall-almond-nails/filename.webp
+
+### Block 4 — Opening Technique Assignments
+- Introduction: Technique 1 — The Claim
+- H2-1 (length primer): Technique 4 — The Direct Address
+- H2-2 (neutrals): Technique 2 — The Scene
+- H2-3 (burgundy/plum): Technique 1 — The Claim
+- H2-4 (green): Technique 3 — The Reframe
+- H2-5 (orange/rust): Technique 2 — The Scene
+- H2-6 (tortoiseshell): Technique 4 — The Direct Address
+- H2-7 (chrome/cat-eye/velvet): Technique 1 — The Claim
+- H2-8 (French tip/ombre): Technique 3 — The Reframe
+- H2-9 (office wear): Technique 2 — The Scene
+- H2-10 (DIY): Technique 4 — The Direct Address
+- Conclusion: Technique 3 — The Reframe
+- **banned_opener_rule:** Check every opener against banned_opening_approaches in Blog Gen prompt before writing the second sentence.
+
+### Block 5 — Link Placements
+1. anchor_text: "fall cat eye nail finishes" | full_url: /blog/fall-nails/fall-cat-eye-nails | place_in_section: H2-7 | placement_context: when mentioning cat-eye technique as a fall finish option | link_type: cluster-spoke
+2. anchor_text: "simple fall nail ideas" | full_url: /blog/fall-nails/simple-fall-nails | place_in_section: H2-10 | placement_context: when framing low-effort/DIY-friendly options | link_type: cluster-spoke
+3. anchor_text: "OPI fall 2026 nail colors" | full_url: /blog/fall-nails/opi-fall-nail-colors-2026 | place_in_section: H2-2 | placement_context: when suggesting specific polish shades for neutrals | link_type: cluster-spoke
+4. anchor_text: "fall nail ideas" | full_url: /blog/fall/fall-nail-ideas | place_in_section: Introduction | placement_context: broader cluster context reference | link_type: cluster-pillar
+5. anchor_text: "how to shape almond nails at home without a drill" | full_url: https://mirelleinspo.com/blog/how-to-shape-almond-nails | place_in_section: H2-1 | placement_context: when discussing achieving the almond shape itself before choosing length | link_type: cross-site
+6. anchor_text: "finding the almond nail colors that flatter your skin tone" | full_url: https://mirelleinspo.com/blog/almond-nail-colors-skin-tone | place_in_section: H2-2 | placement_context: when discussing which neutral shades suit different skin tones | link_type: cross-site
+
+### Block 6 — AEO/GEO Plan
+**aeo_assignments:**
+1. aeo_term: "Are short or long almond nails better for fall?" — assigned_to: H2-1 — execution: direct 2-3 sentence answer immediately after H2 heading
+2. aeo_term: "What colors work best for fall almond nails?" — assigned_to: H2-2 — execution: direct 2-3 sentence answer immediately after H2 heading
+3. aeo_term: "Can fall almond nails be worn in a professional office setting?" — assigned_to: H2-9 — execution: direct 2-3 sentence answer immediately after H2 heading
+4. aeo_term: "Is tortoiseshell nail art difficult to do at home?" — assigned_to: H2-10 — execution: direct 2-3 sentence answer immediately after H2 heading
+
+**geo_entity_statements:**
+1. entity: almond nail shape — assigned_to: H2-1 — execution: clear declarative definition of the tapered, rounded-point shape
+2. entity: tortoiseshell nail art — assigned_to: H2-6 — execution: clear declarative definition of the layered translucent-brown pattern technique
+3. entity: chrome finish — assigned_to: H2-7 — execution: clear declarative definition of the reflective metallic powder/topcoat technique
+
+### Block 7 — Active Constraints
+- **em_dash_banned:** Long em dash never appears. Replace with comma / new sentence / parentheses / but / restructure if one forms.
+- **banned_vocab_watch:** elevate, effortless, elegant, stunning, must-try, game-changer, seamlessly (watch these — high likelihood of slipping into color-roundup copy).
+- **american_english_active:** color, recognize, -ize, -or — every instance.
+- **keyword_density_reminder:** After every 2 H2 sections, count current keyword mentions. First half must run denser (4 of 7) than second half (3 of 7).
+- **image_path_reminder:** /images/blog/fall-nails/fall-almond-nails/filename.webp — topic_slug in path always.
+- **internal_link_url_reminder:** Cluster links = /blog/fall-nails/[slug] or /blog/fall/fall-nail-ideas. Cross-site links = full mirelleinspo.com URL as discovered. Never bare /slug.
+- **hero_image_reminder:** Hero = frontmatter only. Never in body.
+- **strong_tag_reminder:** Every primary keyword mention wrapped in `<strong>` tags. Scan after every paragraph.
