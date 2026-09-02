@@ -1,0 +1,519 @@
+{
+  "section_1_file_authority": {
+    "statement": "THIS FILE IS THE SINGLE SOURCE OF TRUTH FOR THE BLOG GEN AGENT. All values in POST_CONSTANTS are hardcoded — Blog Gen Agent does not ask, adjust, or override them. All keywords, H2 structure, audience intelligence, internal links, and tone defined here must be followed exactly."
+  },
+
+  "section_2_post_constants": {
+    "slug": "static-nails-reviews",
+    "topic_slug": "nail-brand-reviews",
+    "canonical": "https://mirelleinspo.com/blog/nail-brand-reviews/static-nails-reviews",
+    "post_type": "spoke",
+    "intent": "informational",
+    "word_count": 1700,
+    "image_count": 7,
+    "show_inspo_gallery_link": false,
+    "template": "posts",
+    "hero_dimensions": "1200x675",
+    "category": "Nail Brand Reviews",
+    "publish_date": "2026-09-02",
+    "author": "jyoti-mirelle"
+  },
+
+  "section_3_cluster_snapshot": {
+    "pillar_slug": "opi-reviews",
+    "pillar_title": "OPI Reviews: Is It Still the Best Nail Polish Brand?",
+    "pillar_primary_keyword": "opi reviews",
+    "this_post_slug": "static-nails-reviews",
+    "this_post_role": "spoke",
+    "show_inspo_gallery_link_cluster_default": false,
+    "keywords_to_avoid": [
+      "opi reviews", "essie nail polish reviews", "sally hansen miracle gel reviews",
+      "opi nail envy reviews", "cnd shellac vs gelish", "kiara sky reviews",
+      "glamnetic reviews", "impress nails reviews", "olive and june reviews",
+      "dashing diva reviews", "color street reviews", "manime reviews",
+      "btartbox reviews", "melody susie reviews"
+    ]
+  },
+
+  "section_4_serp_analysis": {
+    "blog_gen_instruction": "our_strategic_approach is a specific, evidence-based outperform strategy, not a vague gap-fill statement. Use it as the concrete angle for the introduction and conclusion, and to guide depth/coverage decisions in relevant H2 sections.",
+    "competitor_gaps": [
+      "Real cost of ownership: only one of five fetched pages (Solarith, single-source, not in top 5 fetched set but corroborated by pattern across pricing mentions in 3+ sources) breaks down that a full manicure costs nail set + glue + remover (~$40 total), not just the $14-24 sticker price. All 5 fetched pages mention price but none add up the true cost.",
+      "Damage/nail-health risk: confirmed across 4+ independent sources (Trustpilot, BBB, LegalLee Blonde, Life with Mar) that a meaningful share of users report peeling, thinning, or damaged natural nails after glue removal — none of the 5 fetched editorial pages investigate this pattern in depth; most mention 'non-damaging' claims uncritically or only briefly caveat it.",
+      "Honest reusability reality check: Life with Mar and LegalLee Blonde explicitly call out that despite 'reusable' marketing, real-world reuse is inconsistent (nails crack/warp on removal); this skepticism is validated on Trustpilot and BBB too, but no fetched competitor page frames a section specifically answering 'are Static Nails actually reusable, or is that just marketing.'"
+    ],
+    "missing_semantic_territory": [
+      "\"static nails vs olive and june\" / \"static nails vs impress\" comparison angle — mentioned in passing on Life with Mar and LegalLee Blonde but never given a dedicated comparison section anywhere",
+      "\"static nails glue mess\" — a specific, repeated pain point (LegalLee Blonde, PaleOMG, Wake Up For Makeup, Jonquil) about glue application being messy for first-timers, not addressed as its own subtopic on any fetched page",
+      "\"are static nails worth the hype 2026\" — most fetched pages are dated 2022-2024; only Jonquil Beauty (Aug 2026) is current, leaving an opening for a genuinely up-to-date verdict"
+    ],
+    "our_strategic_approach": "None of the five fetched competitor pages combine a balanced verdict with the real total cost of ownership and the documented (not dismissed) damage/reusability skepticism found on Trustpilot and BBB. This post will open with the brand's core promise (18-day wear, reusable, non-damaging), then honestly weigh that promise against the two demand-validated gaps: true all-in cost and the recurring nail-damage/reusability complaints most fetched reviews soften or skip. Structurally, this post will out-depth the competitors by including a dedicated cost breakdown section and a dedicated 'is it actually damaging' section — sourced from Trustpilot/BBB patterns, something no single fetched page does — while still delivering the practical application/removal guidance readers expect from this keyword.",
+    "top_5_fetched_pages_summary": [
+      {
+        "url": "https://whatthefab.com/static-nails-review.html",
+        "word_count": 1450,
+        "h2_count": 7,
+        "keyword_mentions": 9,
+        "note": "Strong pros/cons structure and FAQ block; light on any negative/damage discussion, softly promotional tone throughout."
+      },
+      {
+        "url": "https://www.lifewithmar.com/beauty/nails/static-nails-review",
+        "word_count": 1750,
+        "h2_count": 11,
+        "keyword_mentions": 12,
+        "note": "Most thorough how-to and honest cons section (explicitly disputes 'reusable' marketing claim) — best competitor for depth, but still no dedicated cost or damage-risk section."
+      },
+      {
+        "url": "https://editorialist.com/beauty/static-nails-review/",
+        "word_count": 1550,
+        "h2_count": 6,
+        "keyword_mentions": 10,
+        "note": "Polished editorial voice with clear pros/cons list up top; strong on how-to steps, weak on addressing real-world complaint patterns."
+      },
+      {
+        "url": "https://www.legalleeblonde.com/2022/05/static-nails-unsponsored-honest-review-reusable-nails.html",
+        "word_count": 950,
+        "h2_count": 3,
+        "keyword_mentions": 6,
+        "note": "Shortest and most critical review (nails popped off repeatedly, messy glue); high reader engagement in comments revealing a real split between happy and unhappy users — a genuine gap signal."
+      },
+      {
+        "url": "https://www.jonquilbeauty.com/static-nails-review-reusable-pop-on-nails/",
+        "word_count": 2700,
+        "h2_count": 18,
+        "keyword_mentions": 14,
+        "note": "Longest, most current (Aug 2026) and most comprehensive — covers lacquers, ingredients, sustainability — but is clean-beauty-angle-first rather than a balanced worth-it verdict, and never engages with the Trustpilot/BBB damage complaints."
+      }
+    ],
+    "top_5_word_count_average": 1680,
+    "top_5_keyword_density_average": 10,
+    "recommended_image_count_validation": "7 images (1 hero + 6 body) matches the visual pattern across fetched pages, all of which are photo-heavy (product shots, application step photos, worn-nail results) without needing comparison-style visuals.",
+    "best_external_sources_found": [
+      {
+        "url": "https://www.lifewithmar.com/beauty/nails/static-nails-review",
+        "reason": "Genuinely balanced, personally-tested editorial voice with a rare explicit critique of the 'reusable' marketing claim — real editorial expertise, not thin content."
+      },
+      {
+        "url": "https://www.jonquilbeauty.com/static-nails-review-reusable-pop-on-nails/",
+        "reason": "Most current (2026) and most in-depth independent test of both the Pop-Ons and the lacquer line, with real ingredient-level analysis — citation-worthy for its currency and depth."
+      }
+    ]
+  },
+
+  "section_5_audience_intelligence": {
+    "blog_gen_instruction": "This is your primary creative brief. Every paragraph written for this specific person with this specific intent. Satisfy them completely.",
+    "who_they_are": "A press-on-curious shopper, likely already familiar with drugstore press-ons (Kiss, imPress) or salon gels, who has seen Static Nails advertised heavily on Instagram/TikTok and wants a real, non-sponsored verdict before spending $16-24+ on a set. Skews toward people who already tried at least one other press-on or salon option and are comparing.",
+    "what_they_want_from_this_post": "A balanced, honest answer to 'are these actually worth it' — specifically: does the 18-day wear claim hold up, is the reusability claim real, and will the glue damage their natural nails.",
+    "what_frustrates_them": "Reviews that read as thinly-veiled affiliate promotion (heavy shop-the-look styling, minimal critical engagement) and reviews that don't address the price honestly — the sticker price looks affordable until glue and remover are added in.",
+    "top_5_pain_points": [
+      "Glue application is messy and intimidating for first-time press-on users",
+      "Uncertainty whether the 'non-damaging' and 'reusable' claims are actually true or just marketing language",
+      "Confusion about real total cost once glue and remover are factored in",
+      "Fear of the nails popping off early (documented complaint pattern) at an inconvenient time",
+      "Difficulty judging sizing/fit before ordering, especially for smaller or narrower nail beds"
+    ],
+    "exact_user_phrases": [
+      "are static nails worth it",
+      "honest static nails review",
+      "static nails worth the hype",
+      "do static nails damage your nails",
+      "how long do static nails actually last",
+      "are static nails really reusable",
+      "static nails vs impress",
+      "static nails glue mess",
+      "static nails sizing",
+      "static nails price worth it"
+    ],
+    "intent_content_signals": [
+      "Readers respond to first-person, personally-tested language over generic marketing copy",
+      "A clear pros/cons breakdown near the top is expected based on competitor patterns",
+      "Real complaint acknowledgment (not just polish) builds more trust than an all-positive review",
+      "Step-by-step application guidance is expected as supporting content, not the main draw",
+      "A direct final verdict statement is expected to close the post"
+    ]
+  },
+
+  "section_6_semantic_keyword_data": {
+    "blog_gen_instruction": "Primary keyword in strong tags every mention. AEO terms trigger direct answer paragraphs. User language woven naturally. No term from keywords_to_avoid used as focus term.",
+    "primary_keyword": "static nails reviews",
+    "keyword_variations": [
+      "static nails review",
+      "static nails press-on reviews",
+      "static nails pop-on manicure reviews",
+      "is static nails a good brand",
+      "static nails honest review",
+      "static press-on nails review"
+    ],
+    "cluster_keywords": [
+      "reusable pop-on manicure",
+      "press-on nail brand review",
+      "static nails worth it",
+      "static nails durability",
+      "static nails glue",
+      "non-damaging press-on nails",
+      "static nails vs press-on nails",
+      "premium press-on nail brand",
+      "reusable press-on nail set",
+      "static nails wear time",
+      "static nails customer reviews",
+      "static nails cost"
+    ],
+    "lsi_terms": [
+      "pop-on manicure",
+      "liquid glass lacquer",
+      "non-damaging glue",
+      "reusable press-ons",
+      "nail glue remover",
+      "cyanoacrylate glue",
+      "press-on nail sizing",
+      "nail application prep",
+      "nail damage from press-ons",
+      "vegan cruelty-free nail brand",
+      "8-free nail polish",
+      "Static Nails founder Alexis Irene",
+      "Static Nails Trustpilot rating",
+      "Static Nails BBB complaints",
+      "18-day wear claim",
+      "salon-quality manicure at home",
+      "press-on nail glue tabs",
+      "nail file and buffer kit"
+    ],
+    "aeo_terms": [
+      "how long do static nails last",
+      "are static nails actually reusable",
+      "do static nails damage your natural nails",
+      "how much does a static nails manicure really cost",
+      "how do you remove static nails without damage",
+      "are static nails worth the price",
+      "how many times can you reuse static nails",
+      "is static nails glue safe for sensitive skin",
+      "how do you apply static nails without a mess",
+      "what is the difference between static nails and regular press-ons"
+    ],
+    "technical_terms": [
+      "cyanoacrylate",
+      "ethyl acetate",
+      "acetone-free remover",
+      "ABS resin nail tip",
+      "nail plate",
+      "ombre cure time"
+    ],
+    "user_language": [
+      "worth the hype",
+      "honest review, not sponsored",
+      "big mess and didn't stay on",
+      "paper thin nails",
+      "lasted way longer than I expected",
+      "pricey for what it is",
+      "not really reusable if you lose the nails",
+      "glue destroyed my nails",
+      "so many compliments"
+    ]
+  },
+
+  "section_7_voice_and_ai_queries": {
+    "blog_gen_instruction": "Answer every query directly in the relevant H2 section body. If a query cannot be addressed naturally in the body, route it to faqItems. No query left unanswered.",
+    "queries": [
+      "How long do Static Nails actually last?",
+      "Are Static Nails really reusable or is that just marketing?",
+      "Do Static Nails damage your natural nails?",
+      "How much does a full Static Nails manicure actually cost?",
+      "Are Static Nails worth the price compared to drugstore press-ons?",
+      "How do you apply Static Nails without making a mess?",
+      "What's the difference between Static Nails and regular press-ons?",
+      "How do you remove Static Nails safely?",
+      "Are Static Nails good for people with sensitive or weak nails?",
+      "Do Static Nails work for people with small or narrow nail beds?",
+      "How does Static Nails compare to Olive & June or imPress?",
+      "Is the Static Nails glue safe and non-toxic?",
+      "What do real Static Nails customer reviews say?",
+      "Can you paint over Static Nails or customize the shape?"
+    ]
+  },
+
+  "section_8_hook_and_ctr": {
+    "blog_gen_instruction": "READ THIS SECTION BEFORE WRITING THE TITLE, META DESCRIPTION, INTRO, OR FIRST H2. The title and description here are the option the USER SELECTED from 2-3 real, evidence-based choices during phase_6 — use them exactly. The intro hook brief and first H2 hook direction are your creative brief for those specific elements, matching the selected option's angle. Do not deviate.",
+    "real_serp_findings_summary": "Four of the five fetched competitor titles use an 'Honest/Worth It' review framing with the keyword front-loaded; none directly signal that the review will confront the brand's damage/reusability complaints head-on rather than softly caveat them.",
+    "selected_option_rationale": "This option promises a genuinely current (2026), fact-checked verdict that directly names the two evidence-based tensions readers are already searching for — durability and damage risk — differentiating it from the softer 'worth the hype' framing most competitors use.",
+    "title": "Static Nails Reviews 2026: The Honest Truth Before You Buy",
+    "title_char_count": 57,
+    "meta_description": "Everyone says Static Nails are worth the hype. We dug into real reviews on durability, damage risk, and true cost to see if that's actually true.",
+    "meta_char_count": 148,
+    "intro_hook_brief": "Open by naming the tension directly: Static Nails is everywhere on social media promising salon-quality nails for weeks, but real reviews are split — acknowledge both the loyal fans and the real complaints before promising a fact-checked verdict grounded in actual customer reviews, not just marketing copy.",
+    "first_h2_hook_direction": "Apply the 'honest truth' angle subtly to the first H2 by opening with what Static Nails actually claims (18-day wear, reusable, non-damaging) before the post starts testing each claim against real reviews — don't repeat the title's phrasing directly."
+  },
+
+  "section_9_search_journey": {
+    "blog_gen_instruction": "This is the emotional contract with the reader. Every section of the post must honour the promise made. Read this before writing any section. If a paragraph breaks the journey arc — rewrite it.",
+    "reader_arrival_state": "Curious but slightly skeptical — has seen Static Nails marketed heavily and wants a real answer before spending the money, not more polished marketing copy.",
+    "journey_arc": [
+      "Acknowledge the brand's core promise and why it has such strong social buzz",
+      "Walk through what real customer reviews actually say about wear time and application",
+      "Directly address the two confirmed gaps: true total cost and the damage/reusability complaint pattern",
+      "Give practical guidance (application, sizing, removal) so the reader feels equipped either way",
+      "Close with a direct, confident verdict on who Static Nails is and isn't worth it for"
+    ],
+    "promise_to_deliver": "A fact-checked, non-sponsored verdict on whether Static Nails lives up to its wear-time, reusability, and non-damaging claims — grounded in real customer reviews, not brand copy.",
+    "exit_state": "Confident and informed — the reader knows exactly what to expect, what it will really cost, and whether their specific situation (nail health, budget, patience for glue application) makes this a good fit."
+  },
+
+  "section_10_content_structure": {
+    "blog_gen_instruction": "This H2 structure is research-driven and must be followed exactly. Do not rename, reorder, or remove H2s without user instruction. Word budget per section is set — follow it. H3s may be added at editorial discretion.",
+    "h1": "Static Nails Reviews 2026: The Honest Truth Before You Buy",
+    "h2_structure": [
+      "What Are Static Nails, and What Does the Brand Actually Promise?",
+      "How Long Do Static Nails Really Last, According to Real Reviews?",
+      "Are Static Nails Actually Reusable, or Is That Just Marketing?",
+      "Do Static Nails Damage Your Natural Nails?",
+      "How Much Does a Static Nails Manicure Really Cost?",
+      "How to Apply Static Nails Without the Glue Mess",
+      "Static Nails vs. Olive & June vs. imPress: How It Compares",
+      "Are Static Nails Worth It? Our Final Verdict"
+    ],
+    "word_budget": {
+      "introduction": "220 words",
+      "conclusion": "180 words",
+      "per_h2": [
+        { "heading": "What Are Static Nails, and What Does the Brand Actually Promise?", "words": 150 },
+        { "heading": "How Long Do Static Nails Really Last, According to Real Reviews?", "words": 230 },
+        { "heading": "Are Static Nails Actually Reusable, or Is That Just Marketing?", "words": 200 },
+        { "heading": "Do Static Nails Damage Your Natural Nails?", "words": 230 },
+        { "heading": "How Much Does a Static Nails Manicure Really Cost?", "words": 180 },
+        { "heading": "How to Apply Static Nails Without the Glue Mess", "words": 180 },
+        { "heading": "Static Nails vs. Olive & June vs. imPress: How It Compares", "words": 150 },
+        { "heading": "Are Static Nails Worth It? Our Final Verdict", "words": 180 }
+      ]
+    }
+  },
+
+  "section_11_internal_links": {
+    "blog_gen_instruction": "Every link below must appear in the post. Cluster links use anchor texts verbatim — do not rewrite. Cross-site links use the provided descriptive anchor. Place each link where the placement note says — woven naturally into prose, never as a standalone CTA. Total internal links must not exceed 6.",
+    "all_internal_links": [
+      {
+        "url_or_slug": "/blog/nail-brand-reviews/opi-reviews",
+        "title": "OPI Reviews: Is It Still the Best Nail Polish Brand?",
+        "anchor_text": "OPI reviews",
+        "placement_note": "In 'What Are Static Nails' section, when contextualizing the press-on category against traditional lacquer brands",
+        "link_type": "cluster-pillar"
+      },
+      {
+        "url_or_slug": "/blog/nail-brand-reviews/glamnetic-reviews",
+        "title": "Glamnetic Reviews: Are These the Best Press-On Nails?",
+        "anchor_text": "Glamnetic press-on nail reviews",
+        "placement_note": "In the 'vs. Olive & June vs. imPress' comparison section, as an additional comparison point",
+        "link_type": "cluster-spoke"
+      },
+      {
+        "url_or_slug": "/blog/nail-brand-reviews/olive-and-june-reviews",
+        "title": "Olive & June Reviews: Is the Mani System Worth It?",
+        "anchor_text": "Olive & June mani system reviews",
+        "placement_note": "In the 'vs. Olive & June vs. imPress' comparison section",
+        "link_type": "cluster-spoke"
+      },
+      {
+        "url_or_slug": "/blog/nail-brand-reviews/btartbox-reviews",
+        "title": "BTArtbox Reviews: How Do These Press-Ons Compare to Glamnetic?",
+        "anchor_text": "BTArtbox press-on nail reviews",
+        "placement_note": "In the 'vs. Olive & June vs. imPress' comparison section, as a further reusable/soft-gel comparison point",
+        "link_type": "cluster-spoke"
+      },
+      {
+        "url_or_slug": "https://mirelleinspo.com/blog/nail-health/least-damaging-way-to-get-nails-done",
+        "title": "The Least Damaging Way to Get Nails Done, Ranked (2026)",
+        "anchor_text": "how press-on removal compares to gel and acrylics on nail damage",
+        "placement_note": "In 'Do Static Nails Damage Your Natural Nails?' section, when discussing removal technique and damage risk",
+        "link_type": "cross-site"
+      },
+      {
+        "url_or_slug": "https://mirelleinspo.com/blog/nail-application-techniques/nail-glue-alternatives-why-wont-it-dry",
+        "title": "Nail Glue Alternatives: Why It Won't Dry (and What Works)",
+        "anchor_text": "gentler nail glue alternatives if cyanoacrylate irritates your skin",
+        "placement_note": "In 'How to Apply Static Nails Without the Glue Mess' section, when discussing glue sensitivity and application options",
+        "link_type": "cross-site"
+      }
+    ]
+  },
+
+  "section_12_voice_tone": {
+    "blog_gen_instruction": "This is the voice for this specific post. Layer on top of Mirellé editorial framework. Do not default to generic AI tone.",
+    "recommended_voice": "Warm, fact-checking friend — confident and direct without being harsh",
+    "tone_characteristics": [
+      "Personally-tested feel even when synthesizing others' real reviews",
+      "Balanced: acknowledges genuine fans and genuine complaints without picking a side prematurely",
+      "Plain-spoken about cost and risk rather than softening it for affiliate-friendliness",
+      "Encouraging toward readers who decide to try it, honest with readers who shouldn't",
+      "Confident, declarative final verdict — no wishy-washy 'it depends on you' non-answer"
+    ],
+    "language_style": "Direct second person ('you'll notice', 'if your nails run thin'), short punchy sentences mixed with slightly longer explanatory ones, minimal jargon with quick technical-term definitions when needed",
+    "audience_match": "This reader wants a real answer fast — a voice that sounds like it actually read the Trustpilot complaints and the glowing TikTok reviews and formed an honest opinion, rather than a brand-safe puff piece."
+  },
+
+  "section_13_external_links": {
+    "blog_gen_instruction": "Include all external links where indicated. Supports E-E-A-T. Use anchor suggestion as guide — write naturally around it. Sourced from phase_3's best_external_sources_found (real fetched competitor pages), not from separate searches. May be empty (0-2 links) if none of the fetched pages qualified as genuinely citation-worthy — that is expected, not a gap to fill.",
+    "links": [
+      {
+        "url": "https://www.lifewithmar.com/beauty/nails/static-nails-review",
+        "context": "When discussing the gap between 'reusable' marketing language and real-world reuse experience",
+        "anchor_suggestion": "one long-term reviewer's honest take on the reusability claim"
+      },
+      {
+        "url": "https://www.jonquilbeauty.com/static-nails-review-reusable-pop-on-nails/",
+        "context": "When discussing ingredient transparency and the brand's clean-leaning positioning",
+        "anchor_suggestion": "a detailed 2026 breakdown of Static's ingredient list and ethos"
+      }
+    ]
+  },
+
+  "section_14_execution_plan": {
+    "purpose": "Blog Gen Agent reads this section FIRST — before frontmatter, before writing a single word. Every value here is pre-calculated from the input file data. Blog Gen Agent locks all values and executes them exactly. This section exists to eliminate rewrite loops — every constraint is pre-decided here so there are zero surprises mid-write.",
+    "blog_gen_instruction": "READ THIS SECTION FIRST. Lock every value. Execute exactly. Do not recalculate, do not adjust, do not deviate.",
+    "calculated_by": "Input Gen Agent — calculated last, after all other sections are complete",
+
+    "block_1_keyword_execution": {
+      "primary_keyword": "static nails reviews",
+      "top_5_density_baseline": 10,
+      "total_mention_target": "12-13 total mentions (baseline 10 + 2-3)",
+      "first_100_words_plan": {
+        "rule": "Primary keyword MUST appear TWICE in the first 100 words. Mandatory. No exceptions.",
+        "mention_1": "sentence 1-2 of introduction — naming the post topic directly as it names the brand's social-media buzz",
+        "mention_2": "sentence 4-5 of introduction — when framing the promise of a fact-checked verdict"
+      },
+      "first_half_target": "7 mentions — first ~850 words. Run denser in first half.",
+      "second_half_target": "5-6 mentions — second ~850 words",
+      "strong_tag_rule": "EVERY single mention of the primary keyword — all 12-13 of them — wrapped in <strong> tags. No exceptions. Catch each one as it is written. Scan after every paragraph.",
+      "keywords_to_avoid_active": [
+        "opi reviews", "essie nail polish reviews", "sally hansen miracle gel reviews",
+        "opi nail envy reviews", "cnd shellac vs gelish", "kiara sky reviews",
+        "glamnetic reviews", "impress nails reviews", "olive and june reviews",
+        "dashing diva reviews", "color street reviews", "manime reviews",
+        "btartbox reviews", "melody susie reviews"
+      ]
+    },
+
+    "block_2_word_budget": {
+      "total_target": "1700 words — +/-50 words tolerance, never exceed",
+      "introduction": "220 words",
+      "conclusion": "180 words",
+      "h2_budgets": [
+        { "heading": "What Are Static Nails, and What Does the Brand Actually Promise?", "budget": 150, "complexity": "low" },
+        { "heading": "How Long Do Static Nails Really Last, According to Real Reviews?", "budget": 230, "complexity": "medium" },
+        { "heading": "Are Static Nails Actually Reusable, or Is That Just Marketing?", "budget": 200, "complexity": "medium" },
+        { "heading": "Do Static Nails Damage Your Natural Nails?", "budget": 230, "complexity": "high" },
+        { "heading": "How Much Does a Static Nails Manicure Really Cost?", "budget": 180, "complexity": "medium" },
+        { "heading": "How to Apply Static Nails Without the Glue Mess", "budget": 180, "complexity": "medium" },
+        { "heading": "Static Nails vs. Olive & June vs. imPress: How It Compares", "budget": 150, "complexity": "medium" },
+        { "heading": "Are Static Nails Worth It? Our Final Verdict", "budget": 180, "complexity": "low" }
+      ],
+      "tracking_rule": "Track running word total at the end of every H2 section. If a section is running over budget — cut before moving to the next section. Do not compensate later."
+    },
+
+    "block_3_image_plan": {
+      "total_images": 7,
+      "hero_image": "frontmatter only — NEVER appears in post body",
+      "body_images": 6,
+      "assignments": [
+        { "image_number": 1, "place_after": "What Are Static Nails, and What Does the Brand Actually Promise?", "image_type": "standard_inspiration", "section_context": "A worn set of Static Nails pop-on manicure showing the finished look — natural, salon-style shape and color" },
+        { "image_number": 2, "place_after": "How Long Do Static Nails Really Last, According to Real Reviews?", "image_type": "standard_inspiration", "section_context": "Close-up of a well-worn set showing durability over time, no visible damage or lifting" },
+        { "image_number": 3, "place_after": "Are Static Nails Actually Reusable, or Is That Just Marketing?", "image_type": "standard_inspiration", "section_context": "A set of Static Nails displayed back in their storage case, implying the reuse concept" },
+        { "image_number": 4, "place_after": "Do Static Nails Damage Your Natural Nails?", "image_type": "standard_inspiration", "section_context": "Healthy bare natural nails post-removal, emphasizing the non-damaging angle" },
+        { "image_number": 5, "place_after": "How to Apply Static Nails Without the Glue Mess", "image_type": "standard_inspiration", "section_context": "A neatly finished manicure highlighting clean, precise application with no visible glue residue" },
+        { "image_number": 6, "place_after": "Static Nails vs. Olive & June vs. imPress: How It Compares", "image_type": "standard_inspiration", "section_context": "A stylish almond or round-shaped Static Nails set in a trending 2026 color/finish" }
+      ],
+      "image_type_rule": {
+        "default": "standard_inspiration — an actual nail look, styled and shot, related to the topic. This is the default for the large majority of image slots in nearly every post.",
+        "infographic_allowed_when": "Not applicable here — this post's intent is informational, not comparison or tutorial, so all 6 body slots use standard_inspiration.",
+        "banned_absolutely": "NEVER a tool/equipment image (hands holding a file, tools laid out, application/process shots showing hands or tools at work) in any slot. NEVER a photo-style side-by-side nail-to-nail comparison image.",
+        "note_for_blog_gen": "Blog Gen Agent follows the image_type flagged here exactly per slot — it does not decide standard vs infographic on its own mid-write."
+      },
+      "path_rule": "/images/blog/nail-brand-reviews/static-nails-reviews/filename.webp — topic_slug in path, slug folder, leading slash"
+    },
+
+    "block_4_opening_technique_assignments": {
+      "rule": "No two consecutive sections use the same technique. Conclusion = Technique 1 or 3 only.",
+      "assignments": [
+        { "section": "Introduction", "technique": "Technique 2 — The Tension (naming the split between hype and real complaints)" },
+        { "section": "What Are Static Nails, and What Does the Brand Actually Promise?", "technique": "Technique 4 — The Setup (plain factual framing)" },
+        { "section": "How Long Do Static Nails Really Last, According to Real Reviews?", "technique": "Technique 1 — The Claim (leading with the direct AEO answer)" },
+        { "section": "Are Static Nails Actually Reusable, or Is That Just Marketing?", "technique": "Technique 2 — The Tension" },
+        { "section": "Do Static Nails Damage Your Natural Nails?", "technique": "Technique 3 — The Reframe (challenging the marketing claim directly)" },
+        { "section": "How Much Does a Static Nails Manicure Really Cost?", "technique": "Technique 1 — The Claim" },
+        { "section": "How to Apply Static Nails Without the Glue Mess", "technique": "Technique 4 — The Setup" },
+        { "section": "Static Nails vs. Olive & June vs. imPress: How It Compares", "technique": "Technique 2 — The Tension" },
+        { "section": "Conclusion", "technique": "Technique 1 — The Claim" }
+      ],
+      "banned_opener_rule": "Check every opener against banned_opening_approaches in blog gen prompt before writing the second sentence"
+    },
+
+    "block_5_link_placements": {
+      "rule": "Every link placed exactly where specified. Anchor texts used verbatim — never rewritten. Links woven into prose naturally — never standalone CTAs.",
+      "links": [
+        {
+          "anchor_text": "OPI reviews",
+          "full_url": "/blog/nail-brand-reviews/opi-reviews",
+          "place_in_section": "What Are Static Nails, and What Does the Brand Actually Promise?",
+          "placement_context": "When briefly noting how Static differs from traditional lacquer brands like OPI",
+          "link_type": "cluster-pillar"
+        },
+        {
+          "anchor_text": "Glamnetic press-on nail reviews",
+          "full_url": "/blog/nail-brand-reviews/glamnetic-reviews",
+          "place_in_section": "Static Nails vs. Olive & June vs. imPress: How It Compares",
+          "placement_context": "When noting other viral press-on brands worth comparing",
+          "link_type": "cluster-spoke"
+        },
+        {
+          "anchor_text": "Olive & June mani system reviews",
+          "full_url": "/blog/nail-brand-reviews/olive-and-june-reviews",
+          "place_in_section": "Static Nails vs. Olive & June vs. imPress: How It Compares",
+          "placement_context": "Direct comparison point in the same section",
+          "link_type": "cluster-spoke"
+        },
+        {
+          "anchor_text": "BTArtbox press-on nail reviews",
+          "full_url": "/blog/nail-brand-reviews/btartbox-reviews",
+          "place_in_section": "Static Nails vs. Olive & June vs. imPress: How It Compares",
+          "placement_context": "Additional soft-gel reusable comparison point",
+          "link_type": "cluster-spoke"
+        },
+        {
+          "anchor_text": "how press-on removal compares to gel and acrylics on nail damage",
+          "full_url": "https://mirelleinspo.com/blog/nail-health/least-damaging-way-to-get-nails-done",
+          "place_in_section": "Do Static Nails Damage Your Natural Nails?",
+          "placement_context": "When contextualizing removal technique against other nail-enhancement damage risk",
+          "link_type": "cross-site"
+        },
+        {
+          "anchor_text": "gentler nail glue alternatives if cyanoacrylate irritates your skin",
+          "full_url": "https://mirelleinspo.com/blog/nail-application-techniques/nail-glue-alternatives-why-wont-it-dry",
+          "place_in_section": "How to Apply Static Nails Without the Glue Mess",
+          "placement_context": "When discussing options for sensitive-skin readers",
+          "link_type": "cross-site"
+        }
+      ]
+    },
+
+    "block_6_aeo_geo_plan": {
+      "aeo_assignments": [
+        { "aeo_term": "How long do Static Nails actually last?", "assigned_to_section": "How Long Do Static Nails Really Last, According to Real Reviews?", "execution": "Write a direct 2-3 sentence answer paragraph IMMEDIATELY after the H2 heading — before any elaboration. This is what gets picked up by AI answer engines." },
+        { "aeo_term": "Are Static Nails really reusable or is that just marketing?", "assigned_to_section": "Are Static Nails Actually Reusable, or Is That Just Marketing?", "execution": "Direct 2-3 sentence answer immediately after the heading, citing the real-world reuse gap found in reviews." },
+        { "aeo_term": "Do Static Nails damage your natural nails?", "assigned_to_section": "Do Static Nails Damage Your Natural Nails?", "execution": "Direct 2-3 sentence answer immediately after the heading, balancing brand claims against documented complaint patterns." },
+        { "aeo_term": "How much does a full Static Nails manicure actually cost?", "assigned_to_section": "How Much Does a Static Nails Manicure Really Cost?", "execution": "Direct 2-3 sentence answer with the real all-in cost figure immediately after the heading." }
+      ],
+      "geo_entity_statements": [
+        { "entity": "Reusable Pop-On Manicure", "assigned_to_section": "What Are Static Nails, and What Does the Brand Actually Promise?", "execution": "Write a clear declarative definition sentence for this product line — confident, no hedging." },
+        { "entity": "cyanoacrylate nail glue", "assigned_to_section": "Do Static Nails Damage Your Natural Nails?", "execution": "Write a clear declarative definition sentence explaining what this adhesive is and why it matters for nail health." }
+      ]
+    },
+
+    "block_7_active_constraints": {
+      "em_dash_banned": "Long em dash does not appear anywhere. If one forms while writing — stop, replace with: comma / new sentence / parentheses / but / restructure.",
+      "banned_vocab_watch": ["elevate", "unleash", "game-changer", "seamless", "dive into", "unlock", "journey", "realm"],
+      "american_english_active": "color, recognize, -ize, -or — every instance, no exceptions. This post uses American English, not British.",
+      "keyword_density_reminder": "After every 2 H2 sections — count current keyword mentions. Verify running total is on track to hit 12-13 total. First half must run denser than second half. Adjust if needed.",
+      "image_path_reminder": "/images/blog/nail-brand-reviews/static-nails-reviews/filename.webp — topic_slug in path always",
+      "internal_link_url_reminder": "Full correct paths only. Cluster links = /blog/nail-brand-reviews/[slug]. Cross-site links = exact URL as discovered. Never bare /slug.",
+      "hero_image_reminder": "Hero = frontmatter only. Never place hero image in body.",
+      "strong_tag_reminder": "Every primary keyword mention = <strong> tags. Scan after every paragraph."
+    }
+  }
+}
