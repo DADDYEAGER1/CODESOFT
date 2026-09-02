@@ -1,0 +1,419 @@
+# SECTION 1: FILE AUTHORITY
+THIS FILE IS THE SINGLE SOURCE OF TRUTH FOR THE BLOG GEN AGENT. All values in POST_CONSTANTS are hardcoded — Blog Gen Agent does not ask, adjust, or override them. All keywords, H2 structure, audience intelligence, internal links, and tone defined here must be followed exactly.
+
+# SECTION 2: POST_CONSTANTS
+- slug: /blog/fall-nails/opi-fall-nail-colors-2026
+- topic_slug: fall-nails
+- canonical: https://mirelleinspo.com/blog/fall-nails/opi-fall-nail-colors-2026
+- post_type: spoke
+- intent: informational
+- word_count: 1450 (±50 words)
+- image_count: 7 (1 hero + 6 body — flat default rule, no branching)
+- show_inspo_gallery_link: false (cluster default, read verbatim from cluster_context.json cluster_metadata.show_inspo_gallery_link_cluster_default)
+- template: posts
+- hero_dimensions: 1200x675
+- category: Fall Nails
+- publish_date: 2026-09-08
+- author: jyoti-mirelle
+
+# SECTION 3: CLUSTER_SNAPSHOT
+- pillar_slug: /blog/fall/fall-nail-ideas
+- pillar_title: Fall Nail Ideas
+- pillar_primary_keyword: fall nail ideas
+- this_post_slug: /blog/fall-nails/opi-fall-nail-colors-2026
+- this_post_role: spoke
+- show_inspo_gallery_link_cluster_default: false
+- keywords_to_avoid: fall pedicure colors 2026, fall nail ideas, fall nail trends 2026, fall nail colors 2026, short fall nails, fall french tip nails, fall ombre nails, brown fall nails, burgundy fall nails, tortoiseshell nails fall, fall nail designs, summer to fall transition nails, end of summer nails, august nail trends 2026, september nails, fall nail colors for work, fall almond nails, fall cat eye nails, fall nail colors for skin tone, simple fall nails, fall gel nails, fall chrome nails, red and pink fall nails
+
+# SECTION 4: SERP_ANALYSIS
+**Blog Gen instruction:** our_strategic_approach is a specific, evidence-based outperform strategy. Use it as the concrete angle for the introduction and conclusion, and to guide depth/coverage decisions in relevant H2 sections.
+
+**competitor_gaps** (demand-validated on 2+ sources):
+- No fetched competitor clearly explains WHICH format to buy (GelColor vs Nail Lacquer vs Infinite Shine vs Powder Perfection) for a reader's specific situation — confirmed gap across TheEverygirl (both pieces), 29Secrets, and OPI.com, none of which give buying guidance by use-case. Only a wholesale/pro supplier site (excluded as non-editorial) addresses this.
+- No editorial competitor explains what a "vault shade" is in consumer-friendly terms while also giving a decision framework for picking 1-2 bottles — only BeyondPolish defines "vault shade" but stays product-catalog framed, not reader-decision framed.
+- FAQ-style questions ("is this collection permanent or limited?", "how many shades are there?") are answered only by BeyondPolish; none of the lifestyle/editorial sites (TheEverygirl, 29Secrets) address permanence/availability, despite this recurring in adjacent trend content.
+
+**missing_semantic_territory:**
+- "hero shades" as a distinct explainable concept (which 2-4 shades to buy first) is present in BeyondPolish but never explained in accessible, non-catalog language.
+- Cross-format shade matching (same shade name across GelColor/Lacquer/Powder Perfection) as a practical "how to shop" angle is present but always framed for salons/pros, never for an everyday reader deciding between formats.
+- 45th-anniversary/vault-revival positioning is present across all sources but no one connects that story simply to "why these specific colors are back now."
+
+**our_strategic_approach:** Every fetched competitor either lists shades with no format guidance (TheEverygirl, 29Secrets, OPI.com) or buries format guidance in salon-facing catalog copy (BeyondPolish, CM Nails Supply — excluded as non-editorial). This post's edge is combining a genuine consumer-friendly explainer of what makes this collection different (vault revivals + 45th anniversary) with a clear, reader-facing "which format is right for you" section and a tight hero-shades pick list — something no single competitor currently does in one place. Structurally, this post will front-load the "why this collection matters" story in under 250 words (competitors bury it), then move to a scannable format-decision section before the color rundown, rather than opening straight into a shade list like every fetched competitor does.
+
+**top_5_fetched_pages_summary:**
+1. theeverygirl.com/opi-new-fall-collection/ — ~1,150 words, 13 H2s (12 shades + "Where to Shop"), primary keyword variant used ~4x. Strong shade-by-shade editorial voice; no format-buying guidance.
+2. theeverygirl.com/fall-opi-nail-polish-colors/ — ~1,900 words, 20 H2s (16 shades + occasion guide + trends + care tips + where to buy). Broader "OPI fall colors" scope, not vault-specific; most comprehensive but no permanence/FAQ info.
+3. beyondpolish.com (vault revival shade guide) — ~1,450 words editorial body, 7 numbered H2 sections + 7-question FAQ block. Best structural model (FAQ + hero-shade callouts) but written in salon/commerce voice throughout.
+4. 29secrets.com (vault opening story) — ~650 words, no subheadings, single narrative flow. Good brand-story framing (45th anniversary, nostalgia angle) but thin on individual shade detail and zero format guidance.
+5. opi.com/blog (Top Fall Nail Shades) — ~230 words editorial body (rest is nav/product chrome). Too thin to be a real structural competitor; used only for shade-name/skin-tone-pairing language, excluded from word count average.
+
+**top_5_word_count_average:** ~1,290 words (averaged across the 4 qualifying editorial pages; OPI.com excluded as too thin to count)
+
+**top_5_keyword_density_average:** ~4 mentions of "OPI fall [2026] nail colors" or close variant per qualifying page
+
+**best_external_sources_found:**
+1. https://theeverygirl.com/opi-new-fall-collection/ — genuinely authoritative editorial voice, real bylines (Andrea Navarro, Hailey Tagliarino), original shade-by-shade commentary.
+2. https://www.beyondpolish.com/blogs/news/opis-most-requested-every-shade-in-the-fall-2026-vault-revival-collection — retailer but with real original editorial structure, defines "vault shade" clearly, includes genuinely useful FAQ content.
+
+# SECTION 5: AUDIENCE_INTELLIGENCE
+**Blog Gen instruction:** This is your primary creative brief. Every paragraph written for this specific person with this specific intent. Satisfy them completely.
+
+**who_they_are:** A nail-polish-interested reader (DIY at-home or salon-going) searching specifically for "OPI fall 2026 nail colors" — she already knows and trusts the OPI brand and wants to see this season's specific lineup, not a generic "fall nail colors" roundup. Likely already ranking on Google for related query variants at mirelleinspo.com per GSC signal (position 3.66–5.66), meaning real, active demand currently being absorbed by a generic page.
+
+**what_they_want_from_this_post:** A clear, current rundown of exactly what's in OPI's fall 2026 lineup — shade names, what each looks like, and enough guidance to pick 1-2 bottles or know which format (gel vs lacquer vs dip) fits her routine.
+
+**what_frustrates_them:** Existing competitor content is either an undifferentiated shade list with no buying help (TheEverygirl, 29Secrets) or written in salon/wholesale language that assumes she already knows gel vs lacquer vs dip tradeoffs (BeyondPolish, CM Nails Supply).
+
+**top_5_pain_points:**
+1. Doesn't know what "vault shade" or "vault revival" means and whether it matters to her purchase.
+2. Uncertain which format (GelColor/Nail Lacquer/Infinite Shine/Powder Perfection) suits an at-home vs. salon routine.
+3. Wants to know if this is a limited drop she needs to buy fast, or a permanent addition she can revisit.
+4. Wants a short list of "if you only try one or two" picks, not all 24 shades explained equally.
+5. Wants shade descriptions specific enough to picture the color (undertone, finish, skin-tone fit) without needing to click through to swatches.
+
+**exact_user_phrases** (from real fetched competitor page wording and FAQ patterns):
+- "vault shades"
+- "most requested collection"
+- "45th anniversary"
+- "hero shades"
+- "which OPI fall colors to get"
+- "is it permanent or limited edition"
+- "matched across GelColor and Nail Lacquer"
+- "no lamp needed"
+- "up to 11 days of wear"
+- "cozy neutrals vs vampy drama"
+- "fall nail polish colors 2026"
+- "OPI vault revival"
+
+**intent_content_signals:**
+- Reader responds to shade-by-shade description with a clear visual anchor (undertone, finish, one-line personality) rather than long paragraphs per shade.
+- FAQ format (per BeyondPolish) is a proven content pattern for this exact topic — clear conversion signal for AEO/PAA coverage.
+- Reader wants a decision framework (format table or short "how to choose" block), not just a list.
+- Numbered/ranked structure ("hero shades," "#1 shade") performs well across every fetched competitor.
+- Reader trusts brand-story framing (45th anniversary, vault) as a hook, but wants it kept brief.
+
+# SECTION 6: SEMANTIC_KEYWORD_DATA
+**Blog Gen instruction:** Primary keyword in strong tags every mention. AEO terms trigger direct answer paragraphs. User language woven naturally. No term from keywords_to_avoid used as focus term.
+
+- primary_keyword: opi fall 2026 nail colors
+- total_mention_target: 6-7 (top_5_keyword_density_average of ~4 + 2-3 additional)
+- first_100_words_rule: Primary keyword must appear twice in the first 100 words — mandatory.
+
+**keyword_variations:**
+1. OPI fall 2026 collection
+2. OPI's Most Requested fall 2026
+3. OPI fall nail polish colors 2026
+4. OPI 2026 fall nail colors
+5. OPI Most Requested Collection fall 2026
+6. best OPI fall colors 2026
+7. OPI fall 2026 shades
+
+**cluster_keywords** (all cleared against keyword_do_not_use, none drift into other posts' territory):
+1. vault revival shades
+2. OPI 45th anniversary collection
+3. OPI hero shades fall
+4. OPI GelColor fall 2026
+5. OPI Nail Lacquer fall 2026
+6. OPI Infinite Shine fall 2026
+7. OPI Powder Perfection fall 2026
+8. burgundy nail polish OPI
+9. Every Month is Oktoberfest
+10. Vampire State Building OPI
+11. Vodka and Caviar OPI
+12. Mrs. O'Leary's BBQ OPI
+13. Lincoln Park at Midnight
+
+**lsi_terms** (sourced from both autocomplete-pattern research and real competitor page content):
+1. cozy neutral nail polish
+2. deep burgundy shimmer
+3. matched gel and lacquer shades
+4. permanent shade collection
+5. 24-shade collection
+6. shimmer creme finish
+7. moody purple nail polish
+8. warm taupe nail color
+9. discontinued shade comeback
+10. fall manicure 2026
+11. no-lamp nail polish
+12. dip powder matching shade
+13. nostalgic nail color drop
+14. classic red nail polish OPI
+15. sweater-weather nail color
+16. long-wear gel polish
+
+**aeo_terms** (full question phrases):
+1. What is OPI's fall 2026 collection called?
+2. What are the vault shades in OPI's fall 2026 collection?
+3. How many shades are in the OPI fall 2026 collection?
+4. What are the hero shades in OPI's Most Requested?
+5. Is the OPI fall 2026 collection permanent or limited edition?
+6. What formats is OPI's Most Requested available in?
+7. What's the difference between OPI GelColor and Infinite Shine?
+8. Which OPI fall 2026 shade should I buy first?
+9. Do OPI fall 2026 shades come in nail lacquer and gel?
+10. What does "vault shade" mean for OPI nail polish?
+
+**technical_terms:**
+1. GelColor (LED/UV cure gel)
+2. Nail Lacquer (air-dry)
+3. Infinite Shine (gel-effect lacquer, no lamp)
+4. Powder Perfection (dip powder)
+5. HEMA-free
+6. creme finish
+7. shimmer finish
+
+**user_language** (casual phrases from real conversations and competitor wording):
+1. "you asked, so they listened"
+2. "shades nail lovers never forgot"
+3. "greatest-hits" collection
+4. "the vault is open"
+5. "which one should I actually buy"
+6. "no lamp needed" version
+7. "reads almost black"
+8. "your nails but better"
+9. "goes with everything"
+10. "worth losing a little sleep over" (moody-shade description pattern)
+
+# SECTION 7: VOICE_AND_AI_QUERIES
+**Blog Gen instruction:** Answer every query directly in the relevant H2 section body. If a query cannot be addressed naturally in the body, route it to faqItems. No query left unanswered.
+
+1. What is OPI's fall 2026 nail color collection called?
+2. What are the OPI fall 2026 vault shades?
+3. How many shades are in OPI's Most Requested Fall 2026 Collection?
+4. What are the hero shades in OPI's fall 2026 lineup?
+5. Is OPI's fall 2026 collection a limited edition or permanent?
+6. Which OPI fall 2026 shade is the best burgundy?
+7. What's the difference between OPI GelColor and OPI Infinite Shine?
+8. Can I get OPI fall 2026 shades in dip powder?
+9. Which OPI fall 2026 color works for the office?
+10. What is a "vault shade" in OPI's collection?
+11. Which OPI fall 2026 shade is best for Halloween?
+12. Does OPI's fall 2026 collection need a UV lamp?
+13. What's the best neutral OPI shade for fall 2026?
+14. Which OPI fall 2026 colors match across gel and lacquer?
+15. What is Every Month is Oktoberfest (OPI shade)?
+16. How long does OPI Infinite Shine last without chipping?
+17. What OPI fall 2026 shade is closest to a classic red?
+18. Why is OPI reissuing old shades for fall 2026?
+
+# SECTION 8: HOOK_AND_CTR
+**Blog Gen instruction:** READ THIS SECTION BEFORE WRITING THE TITLE, META DESCRIPTION, INTRO, OR FIRST H2. The title and description here are the option the USER SELECTED from real, evidence-based choices during phase_6 — use them exactly. Do not deviate.
+
+- real_serp_findings_summary: Every fetched competitor title leads with "OPI" + "fall [2026]" but none front-load a genuine value proposition beyond "colors" or "shades" — most rely on shade-count numbers (16, 24) or vague superlatives ("best," "most-wanted"). None mention the vault/nostalgia angle in the title itself despite it being the single most differentiating story element across all 5 pages.
+- selected_option_rationale: This option leans into the exact phrase pattern ("OPI fall 2026 nail colors") competitors already validate as working, while "Everyone's Requesting" borrows the collection's own "Most Requested" positioning as an implicit trust/curiosity signal no competitor title currently uses.
+- title: OPI Fall 2026 Nail Colors Everyone's Requesting
+- title_char_count: 45 characters
+- meta_description: 24 shades, 4 formats, one 45th-anniversary vault reopening. Here's every OPI fall 2026 color worth knowing before you pick a bottle.
+- meta_char_count: 134 characters
+- intro_hook_brief: Open by naming the "everyone's requesting" framing directly — OPI didn't just launch a new collection, it reopened 45 years of discontinued shades because fans asked. Lead with the surprising scale (24 shades) before naming the primary keyword twice in the first 100 words.
+- first_h2_hook_direction: Apply the "requested" angle subtly to the first H2 by framing it around the "why this collection exists" story (vault + anniversary), not a shade list yet — deliver the payoff (actual shades) starting in H2 two.
+
+# SECTION 9: SEARCH_JOURNEY
+- reader_arrival_state: Curious and brand-loyal — she typed "OPI fall 2026 nail colors" because she already trusts OPI and wants to see this season's specific lineup before deciding what to buy or request at the salon.
+- journey_arc:
+  1. Confirm she's found the real, current OPI fall 2026 collection and understand why it's notable (vault revival + 45th anniversary).
+  2. Get oriented on format (gel vs lacquer vs dip vs Infinite Shine) before diving into colors, so shade picks are actionable.
+  3. See the hero/must-try shades called out clearly, not buried in a full 24-shade list.
+  4. Get enough per-shade detail (undertone, finish, vibe) to mentally picture and choose.
+  5. Leave with a clear next step — which shade or two to try first.
+- promise_to_deliver: A complete, current picture of every OPI fall 2026 shade and format, with enough guidance to confidently pick what to buy or ask for at the salon.
+- exit_state: Confident and ready to act — she knows which 1-2 shades to try first and which format fits her routine.
+
+# SECTION 10: CONTENT_STRUCTURE
+**Blog Gen instruction:** This H2 structure is research-driven and must be followed exactly. Do not rename, reorder, or remove H2s without user instruction. Word budget per section is set — follow it. H3s may be added at editorial discretion.
+
+- h1: OPI Fall 2026 Nail Colors: Every Vault Shade, Explained
+- h2_structure:
+  1. Why OPI Reopened the Vault for Fall 2026
+  2. GelColor, Nail Lacquer, Infinite Shine, or Dip: Which OPI Format Fits You
+  3. The 4 Hero Shades to Try First
+  4. The Full Matched Collection: GelColor, Lacquer & Powder Perfection
+  5. The Infinite Shine Exclusives
+  6. Is OPI's Fall 2026 Collection Limited or Permanent?
+  7. Frequently Asked Questions
+
+- word_budget:
+  - introduction: 220 words
+  - conclusion: 180 words
+  - per_h2:
+    - Why OPI Reopened the Vault for Fall 2026: 160 words
+    - GelColor, Nail Lacquer, Infinite Shine, or Dip: Which OPI Format Fits You: 220 words
+    - The 4 Hero Shades to Try First: 220 words
+    - The Full Matched Collection: GelColor, Lacquer & Powder Perfection: 240 words
+    - The Infinite Shine Exclusives: 130 words
+    - Is OPI's Fall 2026 Collection Limited or Permanent?: 80 words
+    - Frequently Asked Questions: not word-budgeted (structured Q&A pairs, ~5-6 questions from AEO list)
+
+# SECTION 11: INTERNAL_LINKS
+**Blog Gen instruction:** Every link below must appear in the post. Cluster links use anchor texts verbatim — do not rewrite. Cross-site links use the provided descriptive anchor. Place each link where the placement note says — woven naturally into prose, never as a standalone CTA. Total internal links must not exceed 6.
+
+**all_internal_links:**
+1. url_or_slug: /blog/fall-nails/fall-nail-colors-for-work
+   title: Fall Nail Colors for Work & the Office
+   anchor_text: fall nail colors for the office
+   placement_note: In the "Which OPI Format Fits You" or hero-shades section, when discussing office-appropriate neutral shades (e.g., Berlin There, Doin' That, France-y Seeing You Here).
+   link_type: cluster-spoke
+
+2. url_or_slug: /blog/fall-nails/red-pink-fall-nails
+   title: Red & Pink Fall Nails
+   anchor_text: red and pink fall nail color ideas
+   placement_note: When discussing Vodka & Caviar or It's All Greek to Me (red/pink shades) in the matched-collection section.
+   link_type: cluster-spoke
+
+3. url_or_slug: /blog/fall-nails/fall-almond-nails
+   title: Fall Almond Nails
+   anchor_text: fall almond nail ideas
+   placement_note: In the hero-shades or conclusion section, as a natural next-step link for readers wanting shape inspiration to pair with their new color pick.
+   link_type: cluster-spoke
+
+4. url_or_slug: /blog/fall/fall-nail-ideas
+   title: Fall Nail Ideas
+   anchor_text: fall nail ideas
+   placement_note: In the introduction or "Why OPI Reopened the Vault" section, linking up to the pillar for broader fall nail inspiration.
+   link_type: pillar
+
+5. url: https://theeverygirl.com/opi-new-fall-collection/
+   title: OPI's Fall 2026 Collection Is Here—These Are the Shades You'll Wear All Season
+   anchor_text: The Everygirl's full shade-by-shade breakdown of OPI's fall collection
+   placement_note: In "The 4 Hero Shades to Try First" or matched-collection section, as a citation for additional shade detail/styling context.
+   link_type: cross-site (external, not counted against internal cap — see section 13)
+
+# SECTION 12: VOICE_TONE
+- recommended_voice: Warm, knowledgeable friend who already knows the brand — confident guide, not a salesperson.
+- tone_characteristics:
+  1. Direct and specific (names shades, formats, and finishes precisely rather than vaguely)
+  2. Enthusiastic but not breathless — confident authority over hype
+  3. Practically helpful — always steering toward "which one should I pick"
+  4. Warm and inclusive across skin tones and routines (DIY and salon-going readers both addressed)
+  5. Light brand-story appreciation (nods to the nostalgia/vault angle) without becoming a press release
+- language_style: Second person ("you"), short-to-medium sentences, concrete sensory shade descriptions (undertone, finish, mood) over vague adjectives. Occasional light analogy (e.g., "greatest-hits" collection) but sparing.
+- audience_match: This voice matches a reader who trusts OPI as a brand and wants a knowledgeable, decisive guide through this season's specific lineup — not a generic "fall colors" listicle voice.
+
+# SECTION 13: EXTERNAL_LINKS
+**Blog Gen instruction:** Include all external links where indicated. Supports E-E-A-T. Use anchor suggestion as guide — write naturally around it. Sourced from phase_3's best_external_sources_found.
+
+1. url: https://theeverygirl.com/opi-new-fall-collection/
+   context: Use when citing additional editorial detail or styling context on individual shades beyond what's covered in this post.
+   anchor_suggestion: The Everygirl's shade-by-shade breakdown of the collection
+
+2. url: https://www.beyondpolish.com/blogs/news/opis-most-requested-every-shade-in-the-fall-2026-vault-revival-collection
+   context: Use when citing the full 24-shade list or format-availability detail (GelColor/Lacquer/Powder Perfection/Infinite Shine) beyond the hero shades covered in this post.
+   anchor_suggestion: Beyond Polish's complete shade guide for the collection
+
+# SECTION 14: EXECUTION_PLAN
+
+## block_1_keyword_execution
+- primary_keyword: opi fall 2026 nail colors
+- top_5_density_baseline: ~4 mentions (real average across qualifying fetched pages)
+- total_mention_target: 6-7 total mentions
+- first_100_words_plan:
+  - rule: Primary keyword MUST appear twice in the first 100 words. Mandatory, no exceptions.
+  - mention_1: Sentence 1-2 of introduction — establishing what the post covers (the "24 shades, one reopened vault" framing from the selected title).
+  - mention_2: Sentence 3-4 of introduction — reinforcing what the reader will get from the post (format + shade guidance).
+- first_half_target: 4 mentions — first ~725 words. Run denser in first half.
+- second_half_target: 2-3 mentions — second ~725 words.
+- strong_tag_rule: EVERY mention of the primary keyword — all 6-7 of them — wrapped in `<strong>` tags. No exceptions. Scan after every paragraph.
+- keywords_to_avoid_active: full list from Section 3 — never used as focus terms anywhere in the post.
+
+## block_2_word_budget
+- total_target: 1450 words (±50 words, never exceed)
+- introduction: 220 words
+- conclusion: 180 words
+- h2_budgets:
+  1. Why OPI Reopened the Vault for Fall 2026 — 160 words — complexity: low
+  2. GelColor, Nail Lacquer, Infinite Shine, or Dip: Which OPI Format Fits You — 220 words — complexity: medium
+  3. The 4 Hero Shades to Try First — 220 words — complexity: medium
+  4. The Full Matched Collection: GelColor, Lacquer & Powder Perfection — 240 words — complexity: high
+  5. The Infinite Shine Exclusives — 130 words — complexity: low
+  6. Is OPI's Fall 2026 Collection Limited or Permanent? — 80 words — complexity: low
+  7. Frequently Asked Questions — remaining budget (~0-20 words overhead beyond Q&A pairs) — complexity: low
+- tracking_rule: Track running word total at the end of every H2 section. If a section is running over budget — cut before moving to the next section. Do not compensate later.
+
+## block_3_image_plan
+- total_images: 7 (from POST_CONSTANTS image_count)
+- hero_image: frontmatter only — NEVER appears in post body.
+- body_images: 6 images to place in body.
+- assignments:
+  1. image_number: 1 — place_after: "Why OPI Reopened the Vault for Fall 2026" — image_type: standard_inspiration — section_context: A styled manicure in one of the hero burgundy/wine shades (e.g., Every Month is Oktoberfest or Vampire State Building), moody fall styling.
+  2. image_number: 2 — place_after: "GelColor, Nail Lacquer, Infinite Shine, or Dip: Which OPI Format Fits You" — image_type: infographic — section_context: Clean comparison graphic of the 4 formats (GelColor / Nail Lacquer / Infinite Shine / Powder Perfection) with wear-time and lamp-required at a glance — this is the one slot genuinely justified by the content, since the post exists to help readers decide between formats.
+  3. image_number: 3 — place_after: "The 4 Hero Shades to Try First" — image_type: standard_inspiration — section_context: Flat-lay or hand shot showing 2-3 of the hero shades side by side (e.g., Every Month is Oktoberfest, Vodka & Caviar, Mrs. O'Leary's BBQ) to show color range.
+  4. image_number: 4 — place_after: "The Full Matched Collection: GelColor, Lacquer & Powder Perfection" — image_type: standard_inspiration — section_context: A neutral/nude shade manicure (e.g., Berlin There, Doin' That or France-y Seeing You Here) to show the lighter end of the palette.
+  5. image_number: 5 — place_after: "The Infinite Shine Exclusives" — image_type: standard_inspiration — section_context: A manicure in one Infinite Shine exclusive shade (e.g., Mrs. O'Leary's BBQ or My Private Yacht) emphasizing glossy no-lamp finish.
+  6. image_number: 6 — place_after: "Is OPI's Fall 2026 Collection Limited or Permanent?" — image_type: standard_inspiration — section_context: A cozy, seasonal styled shot (sweater, warm tones) featuring one of the pastel/soft shades (e.g., Mod About You Pastel or Suzi Take a Vow) for visual variety and season-appropriate mood before the FAQ closes the post.
+- image_type_rule note: only slot 2 uses infographic — justified because the post's core differentiation (per section 4) is explaining format choice, something no competitor visualizes clearly. All other slots are standard_inspiration. No tool/equipment or literal side-by-side comparison photos in any slot.
+- path_rule: /images/blog/fall-nails/opi-fall-nail-colors-2026/filename.webp
+
+## block_4_opening_technique_assignments
+- rule: No two consecutive sections use the same technique. Conclusion = Technique 1 or 3 only.
+- assignments:
+  1. section: Introduction — technique: Technique 2 — The Surprising Fact (24 shades, 45-year vault reopening)
+  2. section: Why OPI Reopened the Vault for Fall 2026 — technique: Technique 4 — The Direct Question ("What made OPI go back 45 years for this collection?")
+  3. section: GelColor, Nail Lacquer, Infinite Shine, or Dip: Which OPI Format Fits You — technique: Technique 1 — The Claim ("The shade matters less than the format if you want it to actually last.")
+  4. section: The 4 Hero Shades to Try First — technique: Technique 3 — The Reframe ("Skip the 24-shade overwhelm — start here instead.")
+  5. section: The Full Matched Collection: GelColor, Lacquer & Powder Perfection — technique: Technique 2 — The Surprising Fact (same-shade cross-format matching detail)
+  6. section: The Infinite Shine Exclusives — technique: Technique 4 — The Direct Question
+  7. section: Is OPI's Fall 2026 Collection Limited or Permanent? — technique: Technique 1 — The Claim (clear, confident answer upfront)
+  8. section: Conclusion — technique: Technique 3 — The Reframe
+- banned_opener_rule: Check every opener against banned_opening_approaches in blog gen prompt before writing the second sentence.
+
+## block_5_link_placements
+1. anchor_text: fall nail colors for the office
+   full_url: /blog/fall-nails/fall-nail-colors-for-work
+   place_in_section: The 4 Hero Shades to Try First (or format section)
+   placement_context: When mentioning a neutral/taupe shade as an office-safe pick.
+   link_type: cluster-spoke
+
+2. anchor_text: red and pink fall nail color ideas
+   full_url: /blog/fall-nails/red-pink-fall-nails
+   place_in_section: The Full Matched Collection: GelColor, Lacquer & Powder Perfection
+   placement_context: When discussing Vodka & Caviar (red) or It's All Greek to Me (pink/fuchsia).
+   link_type: cluster-spoke
+
+3. anchor_text: fall almond nail ideas
+   full_url: /blog/fall-nails/fall-almond-nails
+   place_in_section: Conclusion
+   placement_context: As a natural "pair your new color with a shape" next step.
+   link_type: cluster-spoke
+
+4. anchor_text: fall nail ideas
+   full_url: /blog/fall/fall-nail-ideas
+   place_in_section: Introduction or Why OPI Reopened the Vault for Fall 2026
+   placement_context: Linking up to the pillar for broader fall inspiration.
+   link_type: pillar
+
+5. anchor_text: The Everygirl's shade-by-shade breakdown of the collection
+   full_url: https://theeverygirl.com/opi-new-fall-collection/
+   place_in_section: The 4 Hero Shades to Try First
+   placement_context: Citing additional styling/skin-tone detail beyond this post's scope.
+   link_type: cross-site (external)
+
+6. anchor_text: Beyond Polish's complete shade guide for the collection
+   full_url: https://www.beyondpolish.com/blogs/news/opis-most-requested-every-shade-in-the-fall-2026-vault-revival-collection
+   place_in_section: The Full Matched Collection: GelColor, Lacquer & Powder Perfection
+   placement_context: Citing the full 24-shade list for readers wanting the complete lineup beyond hero picks.
+   link_type: cross-site (external)
+
+## block_6_aeo_geo_plan
+- aeo_assignments:
+  1. aeo_term: What is OPI's fall 2026 nail color collection called? — assigned_to_section: Why OPI Reopened the Vault for Fall 2026 — execution: Direct 2-3 sentence answer immediately after the H2.
+  2. aeo_term: Is the OPI fall 2026 collection permanent or limited edition? — assigned_to_section: Is OPI's Fall 2026 Collection Limited or Permanent? — execution: Direct 2-3 sentence answer immediately after the H2.
+  3. aeo_term: What's the difference between OPI GelColor and OPI Infinite Shine? — assigned_to_section: GelColor, Nail Lacquer, Infinite Shine, or Dip: Which OPI Format Fits You — execution: Direct 2-3 sentence answer immediately after the H2, before elaborating on all four formats.
+  4. aeo_term: What are the hero shades in OPI's fall 2026 lineup? — assigned_to_section: The 4 Hero Shades to Try First — execution: Direct 2-3 sentence answer immediately after the H2 naming all four.
+  5. aeo_term: What does "vault shade" mean for OPI nail polish? — assigned_to_section: Why OPI Reopened the Vault for Fall 2026 — execution: Clear declarative definition sentence within the section body.
+  6. remaining AEO terms (How many shades, which shade for office, Halloween, red pick, etc.) — assigned_to_section: Frequently Asked Questions — execution: Each as its own direct Q&A pair, 2-3 sentence answers.
+
+- geo_entity_statements:
+  1. entity: Vault shade — assigned_to_section: Why OPI Reopened the Vault for Fall 2026 — execution: "A vault shade is an OPI color that was previously discontinued and is being reissued as a permanent catalog addition." Confident, extractable definition.
+  2. entity: GelColor — assigned_to_section: GelColor, Nail Lacquer, Infinite Shine, or Dip: Which OPI Format Fits You — execution: Clear declarative definition (LED/UV-cured gel polish, lasts up to 3 weeks).
+  3. entity: Infinite Shine — assigned_to_section: GelColor, Nail Lacquer, Infinite Shine, or Dip: Which OPI Format Fits You — execution: Clear declarative definition (gel-effect lacquer, no lamp required, up to 11 days wear).
+  4. entity: Hero shade — assigned_to_section: The 4 Hero Shades to Try First — execution: Clear declarative definition (the shades a brand flags as campaign-anchoring, best-first picks for a season).
+
+## block_7_active_constraints
+- em_dash_banned: Long em dash does not appear anywhere. If one forms while writing — stop, replace with: comma / new sentence / parentheses / but / restructure.
+- banned_vocab_watch: elevate, elevated, journey, unleash, unlock, game-changer, must-have (watch especially closely given competitor pages lean heavily on "must-have" and "elevated" language — do not mirror it).
+- american_english_active: color, recognize, -ize, -or — every instance, no exceptions. This post uses American English, not British.
+- keyword_density_reminder: After every 2 H2 sections — count current keyword mentions. Verify running total is on track to hit 6-7 total. First half must run denser than second half.
+- image_path_reminder: /images/blog/fall-nails/opi-fall-nail-colors-2026/filename.webp — topic_slug in path always.
+- internal_link_url_reminder: Full correct paths only. Cluster links = /blog/fall-nails/[slug]. Cross-site links = exact URL as discovered. Never bare /slug.
+- hero_image_reminder: Hero = frontmatter only. Never place hero image in body.
+- strong_tag_reminder: Every primary keyword mention = `<strong>` tags. Scan after every paragraph.
