@@ -1,0 +1,502 @@
+{
+  "section_1_file_authority": "THIS FILE IS THE SINGLE SOURCE OF TRUTH FOR THE BLOG GEN AGENT. All values in POST_CONSTANTS are hardcoded — Blog Gen Agent does not ask, adjust, or override them. All keywords, H2 structure, audience intelligence, internal links, and tone defined here must be followed exactly.",
+
+  "section_2_post_constants": {
+    "slug": "impress-nails-reviews",
+    "topic_slug": "nail-brand-reviews",
+    "canonical": "https://mirelleinspo.com/blog/nail-brand-reviews/impress-nails-reviews",
+    "post_type": "spoke",
+    "intent": "informational",
+    "word_count": 2450,
+    "image_count": 7,
+    "show_inspo_gallery_link": false,
+    "template": "posts",
+    "hero_dimensions": "1200x675",
+    "category": "Nail Brand Reviews",
+    "publish_date": "2026-09-02",
+    "author": "jyoti-mirelle"
+  },
+
+  "section_3_cluster_snapshot": {
+    "pillar_slug": "opi-reviews",
+    "pillar_title": "OPI Reviews: Is It Still the Best Nail Polish Brand?",
+    "pillar_primary_keyword": "opi reviews",
+    "this_post_slug": "impress-nails-reviews",
+    "this_post_role": "spoke",
+    "show_inspo_gallery_link_cluster_default": false,
+    "keywords_to_avoid": [
+      "opi reviews", "essie nail polish reviews", "sally hansen miracle gel reviews", "opi nail envy reviews",
+      "cnd shellac vs gelish", "kiara sky reviews", "glamnetic reviews", "olive and june reviews",
+      "dashing diva reviews", "color street reviews", "manime reviews", "static nails reviews",
+      "btartbox reviews", "melody susie reviews"
+    ]
+  },
+
+  "section_4_serp_analysis": {
+    "blog_gen_instruction": "our_strategic_approach is a specific, evidence-based outperform strategy, not a vague gap-fill statement. Use it as the concrete angle for the introduction and conclusion, and to guide depth/coverage decisions in relevant H2 sections.",
+    "competitor_gaps": [
+      "No fetched page addresses the KISS imPRESS glue-on line vs the no-glue adhesive-tab line as a buying decision — Style Meets Story mentions both exist but never contrasts them directly. Confirmed on 2+ sources (Style Meets Story, Parade both note the brand sells both types but neither builds a decision framework).",
+      "No fetched page cites the brand's own official wear-time claim (10 days per impressbeauty.com FAQ) against real reviewer experience ranges (5-21+ days) side by side — a credibility gap. Confirmed on 3+ sources (official FAQ, Style Meets Story real-world 7-10 days, Reviewed.com 5-day removal).",
+      "No fetched page explains the 'gap between real nail and press-on' issue (Parade specifically calls this out) as a preventable prep-technique issue — competitors mention it as an inherent flaw rather than something fixable with sizing/prep. Confirmed on 2 sources (Parade, Reviewed.com sizing complaint).",
+      "None of the 5 fetched pages directly compares imPRESS against its most common at-home swap-in, Static Nails or Dashing Diva, despite reader comment sections on 2 of the fetched pages (Money Saving Mom, WhatTheFab-adjacent) organically raising exactly this comparison unprompted."
+    ],
+    "missing_semantic_territory": [
+      "'kiss impress vs impress' — brand relationship confusion is a real, repeated point of reader confusion across fetched sources, never directly clarified with a dedicated section",
+      "'impress nails gap at cuticle' / 'impress nails hair getting stuck' — Parade and WhatTheFab both surface this exact friction point independently but no competitor gives a direct fix",
+      "'how many manicures per box' — every fetched source states 30 nails but explains the 2-3-manicures-per-box math inconsistently or only in passing"
+    ],
+    "our_strategic_approach": "Every fetched competitor treats imPRESS as either a nostalgia product (WhatTheFab, Southern Belle) or a budget afterthought in a multi-brand roundup (Reviewed.com), with no page giving it dedicated 2026-current, decision-focused treatment that cites the brand's own official claims against real wear data. This post will open by directly reconciling the official 10-day claim with the real-world 5-21 day range found across fetched sources, positioning itself as the most fact-checked account available. It will also be the first to directly address glue vs no-glue KISS product confusion and the cuticle-gap/hair-snag complaint with an actual prep-based fix, both gaps confirmed on 2+ independent sources. Structurally, this post uses tighter, question-driven H2s pulled from real PAA and Quora phrasing rather than the diary-style narrative structure every fetched competitor uses, making it easier to scan and more AEO-extractable.",
+    "top_5_fetched_pages_summary": [
+      {
+        "url": "https://stylemeetsstory.com/impress-nails-review/",
+        "word_count": 1750,
+        "h2_count": 9,
+        "keyword_mentions": 14,
+        "note": "Strongest 2026-dated page found; strong FAQ block and pricing detail, but narrative/diary structure buries actionable info."
+      },
+      {
+        "url": "https://parade.com/beauty/kiss-impress-nails-review",
+        "word_count": 2100,
+        "h2_count": 7,
+        "keyword_mentions": 11,
+        "note": "Most detailed single-use-case angle (special occasions) and only source to flag the cuticle-gap issue in depth, but skips general FAQ coverage entirely."
+      },
+      {
+        "url": "https://moneysavingmom.com/completely-honest-experience-with-impress-nails/",
+        "word_count": 1450,
+        "h2_count": 8,
+        "keyword_mentions": 9,
+        "note": "Huge real-reader comment volume (18+ comments) giving genuine wear-time range data, but body content itself is thin and dated (2021, unrevised)."
+      },
+      {
+        "url": "https://whatthefab.com/impress-nails-review.html",
+        "word_count": 1300,
+        "h2_count": 6,
+        "keyword_mentions": 10,
+        "note": "Tips-only format skips a real verdict/pros-cons section entirely — good for application tips, weak for a decision-stage reader."
+      },
+      {
+        "url": "https://www.reviewed.com/beauty/best-right-now/best-press-on-nails",
+        "word_count": 2600,
+        "h2_count": 3,
+        "keyword_mentions": 4,
+        "note": "Editorial-tested multi-brand roundup; imPRESS treated as mid-pack (ranked below Olive & June, Static Nails) with real critical testing notes on sizing/filing friction, but not a dedicated imPRESS page so keyword depth is shallow."
+      }
+    ],
+    "top_5_word_count_average": 1840,
+    "top_5_keyword_density_average": 10,
+    "best_external_sources_found": [
+      {
+        "url": "https://stylemeetsstory.com/impress-nails-review/",
+        "why": "Real named beauty editor (Wendy Sy, published in Allure/Forbes/Elle per bio), 2026-updated content, genuine multi-year usage history — citation-worthy for editorial voice."
+      },
+      {
+        "url": "https://www.reviewed.com/beauty/best-right-now/best-press-on-nails",
+        "why": "USA Today-owned outlet with disclosed, calibrated testing methodology and a named tester — citation-worthy for third-party comparative testing credibility."
+      }
+    ]
+  },
+
+  "section_5_audience_intelligence": {
+    "blog_gen_instruction": "This is your primary creative brief. Every paragraph written for this specific person with this specific intent. Satisfy them completely.",
+    "who_they_are": "A woman actively comparing at-home press-on options, usually mid-decision between imPRESS and 1-2 other drugstore/DTC brands, or a past imPRESS user checking if the product has changed since she last tried it (real recurring language: 'new and improved,' 'has it gotten better'). Budget-aware — actively price-comparing against $65-80 salon visits and against dip/gel/SNS routines she is trying to reduce or replace. Largely beginner-to-intermediate with press-ons; not a nail-art enthusiast seeking custom design work.",
+    "what_they_want_from_this_post": "A straight verdict: does the no-glue adhesive actually hold, how many real days of wear to expect (not just the brand's marketing claim), and whether it's worth it compared to a salon habit she's trying to cut back on.",
+    "what_frustrates_them": "Inconsistent wear-time claims across sources (brand says 10 days, some reviewers say 5, others say 3 weeks) with no source explaining why the range is so wide. Also frustrated by reviews that are outdated (2020-2021) and don't reflect the brand's real 2026 adhesive upgrade.",
+    "top_5_pain_points": [
+      "Not knowing if the 'no glue' claim is a gimmick or genuinely as strong as gluing nails on",
+      "Fear of nails popping off mid-event after paying for a set",
+      "Confusion about which imPRESS line to buy (glue vs no-glue vs Ultra-Fit vs colorFX)",
+      "Uncertainty about real damage to natural nails vs the marketing claim of 'damage-free'",
+      "Not knowing how many actual manicures one $7-13 box realistically yields"
+    ],
+    "exact_user_phrases": [
+      "is impress nails worth it",
+      "do impress nails really last 10 days",
+      "impress nails vs static nails",
+      "does impress nails damage your nails",
+      "how many manicures per box",
+      "why do my impress nails keep falling off",
+      "impress nails gap at cuticle",
+      "kiss impress vs regular kiss nails",
+      "how long do impress nails really last",
+      "impress nails honest review 2026"
+    ],
+    "intent_content_signals": [
+      "Wants a direct, fact-checked verdict early — not a slow-build personal story",
+      "Responds to specific day-count claims backed by more than one source",
+      "Wants pros/cons in scannable list form, confirmed by every fetched competitor using this exact format",
+      "Wants FAQ-style direct answers for logistics questions (sizing, reuse, removal)",
+      "Skeptical of brand marketing language ('SuperHold,' 'PureFit') unless paired with independent verification"
+    ]
+  },
+
+  "section_6_semantic_keyword_data": {
+    "blog_gen_instruction": "Primary keyword in strong tags every mention. AEO terms trigger direct answer paragraphs. User language woven naturally. No term from keywords_to_avoid used as focus term.",
+    "primary_keyword": "impress nails reviews",
+    "keyword_variations": [
+      "impress nails review",
+      "kiss impress nails review",
+      "impress press-on nails review",
+      "impress nails reviews 2026",
+      "kiss impress reviews",
+      "impress beauty reviews",
+      "impress manicure review"
+    ],
+    "cluster_keywords": [
+      "impress nails worth it",
+      "impress nails wear time",
+      "impress nails vs static nails",
+      "impress nails pros and cons",
+      "kiss impress no glue nails",
+      "impress nails how long do they last",
+      "impress nails damage nails",
+      "impress nails application tips",
+      "impress nails removal",
+      "impress nails sizing",
+      "best press-on nails imPRESS",
+      "impress ultra-fit review"
+    ],
+    "lsi_terms": [
+      "no glue press-on nails",
+      "SuperHold adhesive",
+      "PureFit technology",
+      "dual-layer adhesive",
+      "press-on manicure",
+      "drugstore press-on nails",
+      "self-adhesive nails",
+      "at-home manicure kit",
+      "nail sizing chart",
+      "acetone-free removal",
+      "press-on nail prep pad",
+      "gel finish press-on",
+      "colorFX by imPRESS",
+      "imPRESS Ultra-Fit",
+      "KISS Products nails",
+      "cuticle gap press-on",
+      "press-on nail file",
+      "salon-quality at home"
+    ],
+    "aeo_terms": [
+      "how long do imPRESS nails last",
+      "are imPRESS nails bad for your natural nails",
+      "how many manicures can you get from one imPRESS box",
+      "do you need glue for imPRESS nails",
+      "how do you remove imPRESS nails without damage",
+      "what is the difference between imPRESS and regular KISS nails",
+      "why do imPRESS nails fall off early",
+      "are imPRESS nails reusable",
+      "how much do imPRESS nails cost",
+      "are imPRESS nails waterproof"
+    ],
+    "technical_terms": [
+      "ABS plastic nail material",
+      "SuperHold dual-layer adhesive",
+      "PureFit Technology",
+      "acrylic acid adhesive compound",
+      "squoval nail shape",
+      "nail prep pad (isopropyl alcohol)"
+    ],
+    "user_language": [
+      "the addiction is real",
+      "spilling the tea on these",
+      "was I impressed (no pun intended)",
+      "shook by how well they held",
+      "honest kiss impress nails review",
+      "worth the hype or not",
+      "did they really stay on",
+      "my nails looked healthy after"
+    ]
+  },
+
+  "section_7_voice_and_ai_queries": {
+    "blog_gen_instruction": "Answer every query directly in the relevant H2 section body. If a query cannot be addressed naturally in the body, route it to faqItems. No query left unanswered.",
+    "queries": [
+      "How long do imPRESS nails actually last?",
+      "Are imPRESS nails bad for your natural nails?",
+      "Do you need glue with imPRESS nails?",
+      "How much do imPRESS nails cost per box?",
+      "How many manicures can you get from one box of imPRESS nails?",
+      "What's the difference between imPRESS and regular KISS press-on nails?",
+      "Why do my imPRESS nails keep falling off early?",
+      "Can imPRESS nails be reused after removal?",
+      "How do you remove imPRESS nails without damaging your natural nails?",
+      "Are imPRESS nails waterproof?",
+      "Is imPRESS Ultra-Fit different from the original imPRESS nails?",
+      "What sizes come in an imPRESS nail kit?",
+      "Do imPRESS nails leave a gap near the cuticle?",
+      "Can you use imPRESS nails on damaged or short natural nails?",
+      "How do imPRESS nails compare to a salon gel manicure in cost?",
+      "Where can you buy imPRESS nails?"
+    ]
+  },
+
+  "section_8_hook_and_ctr": {
+    "blog_gen_instruction": "READ THIS SECTION BEFORE WRITING THE TITLE, META DESCRIPTION, INTRO, OR FIRST H2. The title and description here are the option the USER SELECTED from 2-3 real, evidence-based choices during phase_6 — use them exactly. The intro hook brief and first H2 hook direction are your creative brief for those specific elements, matching the selected option's angle. Do not deviate.",
+    "real_serp_findings_summary": "All 5 fetched competitor titles use a personal-diary framing ('My Completely Honest Review', 'Are These Press-On Nails Worth It?') rather than a direct verdict framing. None front-load a fact-checked/data angle. The selected option breaks this pattern by leading with the exact keyword and a direct worth-it question, which none of the 5 fetched pages do in combination.",
+    "selected_option_rationale": "Front-loads the exact primary keyword in the first 3 words, uses the 'worth it' framing that Quora/user-language research confirms is the dominant real-world phrasing, and signals a direct verdict rather than a personal diary — differentiating from all 5 fetched competitor titles.",
+    "title": "imPRESS Nails Review 2026: Are They Worth It?",
+    "title_char_count": 47,
+    "meta_description": "Thinking of trying imPRESS press-on nails? Here's the real verdict on wear time, application, and whether they beat a salon manicure.",
+    "meta_char_count": 135,
+    "intro_hook_brief": "Open by directly naming the tension the reader feels: the brand claims 10 days of wear, but real reviews range from 5 to 21+ days — and this post exists to reconcile that gap with real, current data rather than another diary-style anecdote.",
+    "first_h2_hook_direction": "The first H2 should tackle the wear-time question head-on and immediately, quoting the official 10-day claim against the real range found in research, rather than easing in with brand backstory."
+  },
+
+  "section_9_search_journey": {
+    "blog_gen_instruction": "This is the emotional contract with the reader. Every section of the post must honour the promise made. Read this before writing any section. If a paragraph breaks the journey arc — rewrite it.",
+    "reader_arrival_state": "Mildly skeptical and price-conscious, comparing imPRESS against her current salon or dip-powder habit and wanting a fast, fact-checked answer before spending $7-13.",
+    "journey_arc": [
+      "Land with the wear-time tension named immediately — brand claim vs real range",
+      "Get a direct, evidence-based answer on how long imPRESS nails actually last",
+      "See real pros and cons stacked clearly, not buried in a personal narrative",
+      "Get practical answers to sizing, damage, and reuse questions that determine real value",
+      "Leave with a clear verdict: yes/no and who specifically it's right for"
+    ],
+    "promise_to_deliver": "A fact-checked, current 2026 verdict on whether imPRESS press-on nails are worth it — not another personal diary review.",
+    "exit_state": "Confident and decided — she knows exactly what to expect from wear time, cost, and application, and whether imPRESS fits her specific situation."
+  },
+
+  "section_10_content_structure": {
+    "blog_gen_instruction": "This H2 structure is research-driven and must be followed exactly. Do not rename, reorder, or remove H2s without user instruction. Word budget per section is set — follow it. H3s may be added at editorial discretion.",
+    "fields": {
+      "h1": "imPRESS Nails Review 2026: Are They Worth It?",
+      "h2_structure": [
+        "How Long Do imPRESS Nails Actually Last?",
+        "What Are imPRESS Nails, Exactly?",
+        "The Real Pros and Cons of imPRESS Nails",
+        "Do imPRESS Nails Damage Your Natural Nails?",
+        "How Much Do imPRESS Nails Cost (And How Many Manicures Per Box)?",
+        "How to Apply imPRESS Nails So They Actually Stay On",
+        "How to Remove imPRESS Nails Without Damage",
+        "imPRESS Nails FAQ"
+      ],
+      "word_budget": {
+        "introduction": "230 words",
+        "conclusion": "180 words",
+        "per_h2": [
+          { "heading": "How Long Do imPRESS Nails Actually Last?", "budget": 330 },
+          { "heading": "What Are imPRESS Nails, Exactly?", "budget": 220 },
+          { "heading": "The Real Pros and Cons of imPRESS Nails", "budget": 320 },
+          { "heading": "Do imPRESS Nails Damage Your Natural Nails?", "budget": 260 },
+          { "heading": "How Much Do imPRESS Nails Cost (And How Many Manicures Per Box)?", "budget": 240 },
+          { "heading": "How to Apply imPRESS Nails So They Actually Stay On", "budget": 300 },
+          { "heading": "How to Remove imPRESS Nails Without Damage", "budget": 180 },
+          { "heading": "imPRESS Nails FAQ", "budget": 210 }
+        ]
+      }
+    }
+  },
+
+  "section_11_internal_links": {
+    "blog_gen_instruction": "Every link below must appear in the post. Cluster links use anchor texts verbatim — do not rewrite. Cross-site links use the provided descriptive anchor. Place each link where the placement note says — woven naturally into prose, never as a standalone CTA. Total internal links must not exceed 6.",
+    "all_internal_links": [
+      {
+        "url_or_slug": "/blog/nail-brand-reviews/opi-reviews",
+        "title": "OPI Reviews: Is It Still the Best Nail Polish Brand?",
+        "anchor_text": "OPI reviews",
+        "placement_note": "Introduction or 'What Are imPRESS Nails, Exactly?' — natural mention when contrasting press-ons against traditional polish/gel brands",
+        "link_type": "cluster-pillar"
+      },
+      {
+        "url_or_slug": "/blog/nail-brand-reviews/glamnetic-reviews",
+        "title": "Glamnetic Reviews: Are These the Best Press-On Nails?",
+        "anchor_text": "Glamnetic press-on nail reviews",
+        "placement_note": "'The Real Pros and Cons of imPRESS Nails' — natural comparison point when discussing design variety or premium alternatives",
+        "link_type": "cluster-spoke"
+      },
+      {
+        "url_or_slug": "/blog/nail-brand-reviews/dashing-diva-reviews",
+        "title": "Dashing Diva Reviews: Are the Gel Strips Actually Salon Quality?",
+        "anchor_text": "Dashing Diva gel strip reviews",
+        "placement_note": "'The Real Pros and Cons of imPRESS Nails' — natural comparison point for another drugstore-accessible gel/strip alternative",
+        "link_type": "cluster-spoke"
+      },
+      {
+        "url_or_slug": "/blog/nail-brand-reviews/manime-reviews",
+        "title": "ManiMe Reviews: Are Custom-Fit Press-Ons Worth the Price?",
+        "anchor_text": "ManiMe custom press-on reviews",
+        "placement_note": "'How Much Do imPRESS Nails Cost' — natural contrast point when discussing budget vs custom-fit premium pricing",
+        "link_type": "cluster-spoke"
+      }
+    ]
+  },
+
+  "section_12_voice_tone": {
+    "blog_gen_instruction": "This is the voice for this specific post. Layer on top of Mirellé editorial framework. Do not default to generic AI tone.",
+    "recommended_voice": "Confident fact-checker — direct and evidence-led rather than diary-style",
+    "tone_characteristics": [
+      "States claims and immediately backs them with the specific evidence found",
+      "Comfortable naming the tension between brand marketing and real user experience",
+      "Practical and unsentimental — this reader wants a verdict, not a personal journey",
+      "Warm but efficient; respects the reader's time and budget-consciousness",
+      "Confident giving a direct yes/no-style verdict rather than hedging"
+    ],
+    "language_style": "Short, declarative sentences. Direct address ('you'll get about...'). Minimal analogy — this audience wants facts, not flourish. Numbers and specifics favored over vague qualifiers.",
+    "audience_match": "This reader has already read one or two diary-style reviews and wants the post that finally gives her a straight, sourced answer — the voice must earn trust by being specific rather than charming."
+  },
+
+  "section_13_external_links": {
+    "blog_gen_instruction": "Include all external links where indicated. Supports E-E-A-T. Use anchor suggestion as guide — write naturally around it. Sourced from phase_3's best_external_sources_found (real fetched competitor pages), not from separate searches.",
+    "links": [
+      {
+        "url": "https://stylemeetsstory.com/impress-nails-review/",
+        "context": "When citing real long-term wear-time experience from a named beauty editor",
+        "anchor_suggestion": "one beauty editor's multi-year imPRESS experience"
+      },
+      {
+        "url": "https://www.reviewed.com/beauty/best-right-now/best-press-on-nails",
+        "context": "When citing independently tested comparative sizing/application feedback against other brands",
+        "anchor_suggestion": "independent lab testing of press-on nail brands"
+      }
+    ]
+  },
+
+  "section_14_execution_plan": {
+    "purpose": "Blog Gen Agent reads this section FIRST — before frontmatter, before writing a single word. Every value here is pre-calculated from the input file data. Blog Gen Agent locks all values and executes them exactly.",
+    "blog_gen_instruction": "READ THIS SECTION FIRST. Lock every value. Execute exactly. Do not recalculate, do not adjust, do not deviate.",
+    "calculated_by": "Input Gen Agent — calculated last, after all other sections are complete",
+
+    "block_1_keyword_execution": {
+      "primary_keyword": "impress nails reviews",
+      "top_5_density_baseline": 10,
+      "total_mention_target": "13 total (baseline 10 + 3)",
+      "first_100_words_plan": {
+        "rule": "Primary keyword MUST appear TWICE in the first 100 words. Mandatory. No exceptions.",
+        "mention_1": "sentence 1 of introduction — naming the review directly in the opening tension-setting sentence",
+        "mention_2": "sentence 3-4 of introduction — reinforcing while framing the fact-checked promise of the post"
+      },
+      "first_half_target": "7 mentions — first ~1225 words. Run denser in first half.",
+      "second_half_target": "6 mentions — second ~1225 words",
+      "strong_tag_rule": "EVERY single mention of the primary keyword — all 13 of them — wrapped in <strong> tags. No exceptions. Catch each one as it is written. Scan after every paragraph.",
+      "keywords_to_avoid_active": "Full list from section_3 — never used as focus terms anywhere in the post"
+    },
+
+    "block_2_word_budget": {
+      "total_target": "2450 words — +/-50 words tolerance, never exceed",
+      "introduction": "230 words",
+      "conclusion": "180 words",
+      "h2_budgets": [
+        { "heading": "How Long Do imPRESS Nails Actually Last?", "budget": 330, "complexity": "high" },
+        { "heading": "What Are imPRESS Nails, Exactly?", "budget": 220, "complexity": "low" },
+        { "heading": "The Real Pros and Cons of imPRESS Nails", "budget": 320, "complexity": "medium" },
+        { "heading": "Do imPRESS Nails Damage Your Natural Nails?", "budget": 260, "complexity": "medium" },
+        { "heading": "How Much Do imPRESS Nails Cost (And How Many Manicures Per Box)?", "budget": 240, "complexity": "low" },
+        { "heading": "How to Apply imPRESS Nails So They Actually Stay On", "budget": 300, "complexity": "high" },
+        { "heading": "How to Remove imPRESS Nails Without Damage", "budget": 180, "complexity": "low" },
+        { "heading": "imPRESS Nails FAQ", "budget": 210, "complexity": "medium" }
+      ],
+      "tracking_rule": "Track running word total at the end of every H2 section. If a section is running over budget — cut before moving to the next section. Do not compensate later."
+    },
+
+    "block_3_image_plan": {
+      "total_images": 7,
+      "hero_image": "frontmatter only — NEVER appears in post body",
+      "body_images": 6,
+      "assignments": [
+        { "image_number": 1, "place_after": "Introduction", "image_type": "standard_inspiration", "section_context": "Close-up of a finished imPRESS-style press-on manicure in a neutral/glossy solid color, hands in a natural pose" },
+        { "image_number": 2, "place_after": "How Long Do imPRESS Nails Actually Last?", "image_type": "standard_inspiration", "section_context": "Manicured hand shown in an everyday activity context suggesting durability (e.g. holding a coffee cup, typing) — NOT a tools/application shot" },
+        { "image_number": 3, "place_after": "The Real Pros and Cons of imPRESS Nails", "image_type": "standard_inspiration", "section_context": "A press-on manicure with a fun pattern/design style, showcasing the variety of colorFX or design-line options" },
+        { "image_number": 4, "place_after": "Do imPRESS Nails Damage Your Natural Nails?", "image_type": "standard_inspiration", "section_context": "Clean, healthy-looking bare natural nails post-removal, conveying the non-damaging angle without showing a process/removal shot" },
+        { "image_number": 5, "place_after": "How Much Do imPRESS Nails Cost (And How Many Manicures Per Box)?", "image_type": "standard_inspiration", "section_context": "A simple French-tip or classic solid-color press-on look, evoking accessible drugstore value" },
+        { "image_number": 6, "place_after": "imPRESS Nails FAQ", "image_type": "standard_inspiration", "section_context": "Final glamour shot — a polished, special-occasion-worthy press-on manicure (e.g. glossy red or elegant almond shape) to close the post on an aspirational note" }
+      ],
+      "image_type_rule": {
+        "default": "standard_inspiration",
+        "banned_absolutely": "NEVER a tool/equipment image (hands holding a file, tools laid out, application shots showing hands or tools at work). NEVER a literal photo-style comparison image.",
+        "note_for_blog_gen": "This post is informational intent, not tutorial or comparison — all 6 body image slots are standard_inspiration. No infographic slot needed."
+      },
+      "path_rule": "/images/blog/nail-brand-reviews/impress-nails-reviews/filename.webp"
+    },
+
+    "block_4_opening_technique_assignments": {
+      "rule": "No two consecutive sections use the same technique. Conclusion = Technique 1 or 3 only.",
+      "assignments": [
+        { "section": "Introduction", "technique": "Technique 2 — The Tension (naming the gap between brand claim and real reviews)" },
+        { "section": "How Long Do imPRESS Nails Actually Last?", "technique": "Technique 1 — The Claim (state the real wear-time range directly)" },
+        { "section": "What Are imPRESS Nails, Exactly?", "technique": "Technique 4 — The Definition" },
+        { "section": "The Real Pros and Cons of imPRESS Nails", "technique": "Technique 3 — The Reframe" },
+        { "section": "Do imPRESS Nails Damage Your Natural Nails?", "technique": "Technique 1 — The Claim" },
+        { "section": "How Much Do imPRESS Nails Cost (And How Many Manicures Per Box)?", "technique": "Technique 2 — The Tension (price vs salon cost)" },
+        { "section": "How to Apply imPRESS Nails So They Actually Stay On", "technique": "Technique 4 — The Definition (step framing)" },
+        { "section": "How to Remove imPRESS Nails Without Damage", "technique": "Technique 3 — The Reframe" },
+        { "section": "imPRESS Nails FAQ", "technique": "Technique 1 — The Claim" },
+        { "section": "Conclusion", "technique": "Technique 3 — The Reframe" }
+      ],
+      "banned_opener_rule": "Check every opener against banned_opening_approaches in blog gen prompt before writing the second sentence"
+    },
+
+    "block_5_link_placements": {
+      "rule": "Every link placed exactly where specified. Anchor texts used verbatim — never rewritten. Links woven into prose naturally — never standalone CTAs.",
+      "links": [
+        {
+          "anchor_text": "OPI reviews",
+          "full_url": "/blog/nail-brand-reviews/opi-reviews",
+          "place_in_section": "What Are imPRESS Nails, Exactly?",
+          "placement_context": "When distinguishing press-on nails from traditional polish/gel brand routines",
+          "link_type": "cluster-pillar"
+        },
+        {
+          "anchor_text": "Glamnetic press-on nail reviews",
+          "full_url": "/blog/nail-brand-reviews/glamnetic-reviews",
+          "place_in_section": "The Real Pros and Cons of imPRESS Nails",
+          "placement_context": "When noting imPRESS's more limited design range compared to premium press-on competitors",
+          "link_type": "cluster-spoke"
+        },
+        {
+          "anchor_text": "Dashing Diva gel strip reviews",
+          "full_url": "/blog/nail-brand-reviews/dashing-diva-reviews",
+          "place_in_section": "The Real Pros and Cons of imPRESS Nails",
+          "placement_context": "When mentioning other drugstore-accessible gel-strip alternatives worth comparing",
+          "link_type": "cluster-spoke"
+        },
+        {
+          "anchor_text": "ManiMe custom press-on reviews",
+          "full_url": "/blog/nail-brand-reviews/manime-reviews",
+          "place_in_section": "How Much Do imPRESS Nails Cost (And How Many Manicures Per Box)?",
+          "placement_context": "When contrasting imPRESS's budget pricing against custom-fit premium options",
+          "link_type": "cluster-spoke"
+        },
+        {
+          "anchor_text": "one beauty editor's multi-year imPRESS experience",
+          "full_url": "https://stylemeetsstory.com/impress-nails-review/",
+          "place_in_section": "How Long Do imPRESS Nails Actually Last?",
+          "placement_context": "Citing real long-term wear data from a named, credentialed source",
+          "link_type": "external"
+        },
+        {
+          "anchor_text": "independent lab testing of press-on nail brands",
+          "full_url": "https://www.reviewed.com/beauty/best-right-now/best-press-on-nails",
+          "place_in_section": "The Real Pros and Cons of imPRESS Nails",
+          "placement_context": "Citing independently tested comparative sizing/filing feedback",
+          "link_type": "external"
+        }
+      ]
+    },
+
+    "block_6_aeo_geo_plan": {
+      "aeo_assignments": [
+        { "aeo_term": "How long do imPRESS nails actually last?", "assigned_to_section": "How Long Do imPRESS Nails Actually Last?", "execution": "Write a direct 2-3 sentence answer paragraph IMMEDIATELY after the H2 heading — before any elaboration." },
+        { "aeo_term": "Are imPRESS nails bad for your natural nails?", "assigned_to_section": "Do imPRESS Nails Damage Your Natural Nails?", "execution": "Write a direct 2-3 sentence answer paragraph IMMEDIATELY after the H2 heading." },
+        { "aeo_term": "Do you need glue with imPRESS nails?", "assigned_to_section": "What Are imPRESS Nails, Exactly?", "execution": "Write a direct 2-3 sentence answer clarifying the no-glue adhesive-tab system early in the section." },
+        { "aeo_term": "How many manicures can you get from one box of imPRESS nails?", "assigned_to_section": "How Much Do imPRESS Nails Cost (And How Many Manicures Per Box)?", "execution": "Write a direct 2-3 sentence answer with the specific 30-nails/2-3-manicures math." },
+        { "aeo_term": "Can imPRESS nails be reused after removal?", "assigned_to_section": "imPRESS Nails FAQ", "execution": "Direct 1-2 sentence FAQ-style answer." },
+        { "aeo_term": "How do you remove imPRESS nails without damaging your natural nails?", "assigned_to_section": "How to Remove imPRESS Nails Without Damage", "execution": "Write a direct 2-3 sentence answer paragraph IMMEDIATELY after the H2 heading." }
+      ],
+      "geo_entity_statements": [
+        { "entity": "SuperHold dual-layer adhesive", "assigned_to_section": "What Are imPRESS Nails, Exactly?", "execution": "Write a clear declarative definition sentence — confident, no hedging. Extractable by AI as a citation." },
+        { "entity": "imPRESS Ultra-Fit", "assigned_to_section": "How to Apply imPRESS Nails So They Actually Stay On", "execution": "Write a clear declarative definition sentence distinguishing Ultra-Fit from the original line." }
+      ]
+    },
+
+    "block_7_active_constraints": {
+      "em_dash_banned": "Long em dash does not appear anywhere. If one forms while writing — stop, replace with: comma / new sentence / parentheses / but / restructure.",
+      "banned_vocab_watch": ["elevate", "unleash", "game-changer", "seamless", "effortlessly", "dive into", "in today's world", "boasts"],
+      "american_english_active": "color, recognize, -ize, -or — every instance, no exceptions. This post uses American English, not British.",
+      "keyword_density_reminder": "After every 2 H2 sections — count current keyword mentions. Verify running total is on track to hit 13 total mentions. First half must run denser than second half. Adjust if needed.",
+      "image_path_reminder": "/images/blog/nail-brand-reviews/impress-nails-reviews/filename.webp — topic_slug in path always",
+      "internal_link_url_reminder": "Full correct paths only. Cluster links = /blog/nail-brand-reviews/[slug]. External links = exact URL as discovered. Never bare /slug.",
+      "hero_image_reminder": "Hero = frontmatter only. Never place hero image in body.",
+      "strong_tag_reminder": "Every primary keyword mention = <strong> tags. Scan after every paragraph."
+    }
+  }
+}
