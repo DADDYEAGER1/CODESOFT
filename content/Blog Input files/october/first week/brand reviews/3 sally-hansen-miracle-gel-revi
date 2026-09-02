@@ -1,0 +1,679 @@
+{
+  "section_1_file_authority": {
+    "statement": "THIS FILE IS THE SINGLE SOURCE OF TRUTH FOR THE BLOG GEN AGENT. All values in POST_CONSTANTS are hardcoded — Blog Gen Agent does not ask, adjust, or override them. All keywords, H2 structure, audience intelligence, internal links, and tone defined here must be followed exactly."
+  },
+  "section_2_post_constants": {
+    "slug": "sally-hansen-miracle-gel-reviews",
+    "topic_slug": "nail-brand-reviews",
+    "canonical": "https://mirelleinspo.com/blog/nail-brand-reviews/sally-hansen-miracle-gel-reviews",
+    "post_type": "spoke",
+    "intent": "informational",
+    "word_count": 1900,
+    "image_count": 7,
+    "show_inspo_gallery_link": false,
+    "template": "posts",
+    "hero_dimensions": "1200x675",
+    "category": "Nail Brand Reviews",
+    "publish_date": "2026-09-09",
+    "author": "jyoti-mirelle"
+  },
+  "section_3_cluster_snapshot": {
+    "pillar_slug": "opi-reviews",
+    "pillar_title": "OPI Reviews: Is It Still the Best Nail Polish Brand?",
+    "pillar_primary_keyword": "opi reviews",
+    "this_post_slug": "sally-hansen-miracle-gel-reviews",
+    "this_post_role": "spoke",
+    "show_inspo_gallery_link_cluster_default": false,
+    "keywords_to_avoid": [
+      "opi reviews", "essie nail polish reviews", "opi nail envy reviews", "cnd shellac vs gelish",
+      "kiara sky reviews", "glamnetic reviews", "impress nails reviews", "olive and june reviews",
+      "dashing diva reviews", "color street reviews", "manime reviews", "static nails reviews",
+      "btartbox reviews", "melody susie reviews"
+    ]
+  },
+  "section_4_serp_analysis": {
+    "blog_gen_instruction": "our_strategic_approach is a specific, evidence-based outperform strategy, not a vague gap-fill statement. Use it as the concrete angle for the introduction and conclusion, and to guide depth/coverage decisions in relevant H2 sections.",
+    "competitor_gaps": [
+      "No fetched page states a realistic consensus wear time up front — all bury it mid-article after leading with the '14 day' marketing claim, confirmed as a mismatch across Walmart reviews, ProductReview.com.au, and 4 of 5 fetched blogs",
+      "No fetched page addresses WHY wear time varies so wildly (5 days to 3 weeks) by nail chemistry/oiliness/activity level — confirmed gap across Quora threads and comment sections on 3 fetched pages",
+      "No fetched page gives a clear side-by-side of Miracle Gel vs a true UV/LED gel system's mechanism (this is chemically NOT a gel, no photoinitiator) — confirmed on Quora (2+ threads) and only mentioned in passing on one fetched page",
+      "No fetched page gives concrete troubleshooting for the #1 complaint (streaky/patchy first coat, brush too wide) — confirmed on Walmart reviews and 2 fetched blogs as a recurring pain point with no fix offered"
+    ],
+    "missing_semantic_territory": [
+      "\"is sally hansen miracle gel a real gel\" — demand confirmed via Quora + fetched page framing",
+      "\"sally hansen miracle gel vs regular gel polish\" — confirmed via Weddingbee thread + Inside Out Style comments",
+      "\"sally hansen miracle gel chipping fix\" — confirmed via Walmart reviews + multiple fetched blog comment sections",
+      "\"sally hansen miracle gel realistic wear time\" — confirmed via ProductReview.com.au + Walmart aggregate reviews"
+    ],
+    "our_strategic_approach": "Lead with the realistic wear-time answer (5–10 days average across real users, not the marketed 14) in the first 100 words instead of burying it, directly addressing the gap every fetched competitor missed. Include a clear 'is this actually gel?' explainer early since Quora shows real confusion and no fetched page resolves it cleanly. Add a dedicated troubleshooting section for the streaky-first-coat and early-chip complaints that dominate Walmart reviews and blog comments, since zero fetched pages offer fixes despite the complaints being the most repeated pain point found. Close with a clear verdict statement (worth it for X reader, skip it for Y reader) rather than the wishy-washy 'depends on your nails' non-answer every fetched blog defaults to.",
+    "top_5_fetched_pages_summary": [
+      {"url": "https://imabeautygeek.com/2014/07/04/sally-hansen-miracle-gel-review-swatches/", "word_count": 1350, "h2_count": 9, "keyword_mentions": 3, "note": "Strong multi-tester structure but no wear-time consensus stated; buries verdict"},
+      {"url": "https://www.productreviewmom.com/2016/11/sally-hansen-miracle-gel-review.html", "word_count": 900, "h2_count": 0, "keyword_mentions": 2, "note": "Single narrative block, no scannable structure, glowing tone with no real troubleshooting"},
+      {"url": "https://www.lalalisette.com/sally-hansen-miracle-gel-review/", "word_count": 800, "h2_count": 5, "keyword_mentions": 3, "note": "Day-by-day H2 structure works well but only covers one user's thin-nail experience, no generalizable guidance"},
+      {"url": "https://www.funtobeagirl.com/2015/05/27/sally-hansen-miracle-gel-yay-or-nay-4/", "word_count": 450, "h2_count": 0, "keyword_mentions": 2, "note": "Too thin to rank long-term; good on the 'add a base coat' fix but no other troubleshooting"},
+      {"url": "https://www.oasisskincareclinic.net/nail-care/sally-hansen-miracle-gel-nail-polish-product-review/", "word_count": 650, "h2_count": 0, "keyword_mentions": 4, "note": "Clear pros/cons split but ends on an unresolved 'doesn't live up to claims' note with no alternative guidance"}
+    ],
+    "top_5_word_count_average": 830,
+    "top_5_keyword_density_average": 3,
+    "recommended_image_count_validation": "7 images (informational, non-tutorial, non-comparison) matches SERP visual pattern — fetched pages use swatch/finished-manicure photography, not process shots, confirming standard_inspiration is correct for all body slots",
+    "best_external_sources_found": []
+  },
+  "section_5_audience_intelligence": {
+    "blog_gen_instruction": "This is your primary creative brief. Every paragraph written for this specific person with this specific intent. Satisfy them completely.",
+    "who_they_are": "Someone who already owns or is about to buy Sally Hansen Miracle Gel and wants to know if the marketed 14-day wear claim is real before committing time/money, OR someone deciding between this and a true UV/LED gel system. Mostly at-home manicure users, not nail professionals — confirmed by Quora phrasing and Walmart review context (dishes, showers, work hands, not salon settings).",
+    "what_they_want_from_this_post": "A straight answer to 'does it actually work' with a realistic wear-time number, not marketing copy repeated back to them",
+    "what_frustrates_them": "Existing content either gushes uncritically (glowing brand-adjacent blog posts) or is a single bad personal anecdote — nothing synthesizes the real range of outcomes or explains why results vary so much by person",
+    "top_5_pain_points": [
+      "Confusion over whether this is 'real' gel or just marketed as gel-like (direct Quora pain point)",
+      "First coat comes out streaky or patchy, especially in white/pale shades",
+      "Product chips within 24–48 hours for a subset of users despite following instructions exactly",
+      "Uncertainty about whether their own nail type/activity level will get 5 days or 14 days",
+      "Not knowing simple fixes (base coat, capping the tip, extra topcoat) that meaningfully extend wear"
+    ],
+    "exact_user_phrases": [
+      "does sally hansen gel nail polish dry without a UV light",
+      "is sally hansen miracle gel bad for your nails",
+      "do I have to use the miracle gel top coat or can I use my own",
+      "can you use a UV light with sally hansen miracle gel",
+      "how to remove sally hansen miracle gel without damaging nails",
+      "is it worth the money",
+      "how long does it actually last",
+      "why does mine chip on day one",
+      "goes on streaky even after 2 coats",
+      "the applicator is a game changer"
+    ],
+    "intent_content_signals": [
+      "Readers respond to real day-by-day wear tracking over vague claims",
+      "Readers want the honest range of outcomes, not one person's single experience",
+      "Direct, plain verdict language ('worth it if X, skip if Y') outperforms hedging",
+      "Concrete troubleshooting tips get referenced repeatedly across comment threads — high demand signal",
+      "Numbers (days of wear, number of coats, dry time in minutes) matter more than adjectives like 'amazing'"
+    ]
+  },
+  "section_6_semantic_keyword_data": {
+    "blog_gen_instruction": "Primary keyword in strong tags every mention. AEO terms trigger direct answer paragraphs. User language woven naturally. No term from keywords_to_avoid used as focus term.",
+    "primary_keyword": "sally hansen miracle gel reviews",
+    "keyword_variations": [
+      "sally hansen miracle gel review", "miracle gel reviews", "sally hansen miracle gel nail polish reviews",
+      "sally hansen miracle gel gel polish reviews", "miracle gel nail polish review", "sally hansen miracle gel top coat reviews"
+    ],
+    "cluster_keywords": [
+      "no uv lamp gel polish", "at-home gel manicure", "two-step gel polish system", "gel-like nail polish",
+      "chip-resistant nail polish", "drugstore gel polish", "gel hybrid polish", "no light gel manicure",
+      "long-wear nail polish", "miracle gel top coat", "miracle gel color", "miracle gel shades"
+    ],
+    "lsi_terms": [
+      "photoinitiator", "oligomer", "gel-like finish", "acetone removal", "two coats of color",
+      "gel top coat activator", "natural light curing", "chip resistance", "salon gel manicure comparison",
+      "wide flat brush application", "nail chemistry", "cap the tip", "base coat", "streaky first coat",
+      "drying time minutes", "Nielsen number 1 selling", "vegan gel-like polish", "removal with regular remover"
+    ],
+    "aeo_terms": [
+      "does sally hansen miracle gel really last 14 days",
+      "is sally hansen miracle gel a real gel polish",
+      "do you need a UV lamp for sally hansen miracle gel",
+      "how long does sally hansen miracle gel actually last",
+      "why does my sally hansen miracle gel chip so fast",
+      "can you use sally hansen miracle gel top coat with other nail polish",
+      "is sally hansen miracle gel bad for your nails",
+      "how do you remove sally hansen miracle gel at home",
+      "what's the difference between sally hansen miracle gel and real gel polish",
+      "is sally hansen miracle gel worth the money"
+    ],
+    "technical_terms": [
+      "photoinitiator", "oligomer", "photopolymerization", "gel hybrid formula", "curing", "top coat activator"
+    ],
+    "user_language": [
+      "does it actually work", "is it worth it", "goes on streaky", "chips on day one",
+      "the applicator is a game changer", "lasted way less than promised", "my nails are super fragile",
+      "I'm hard on my hands", "held up better than regular polish", "not a real gel"
+    ]
+  },
+  "section_7_voice_and_ai_queries": {
+    "blog_gen_instruction": "Answer every query directly in the relevant H2 section body. If a query cannot be addressed naturally in the body, route it to faqItems. No query left unanswered.",
+    "queries": [
+      "Does Sally Hansen Miracle Gel really last 14 days?",
+      "Is Sally Hansen Miracle Gel a real gel polish or just gel-like?",
+      "Do you need a UV or LED lamp for Sally Hansen Miracle Gel?",
+      "How long does Sally Hansen Miracle Gel actually last in real use?",
+      "Why does my Sally Hansen Miracle Gel chip on the first day?",
+      "Can I use a different top coat with Sally Hansen Miracle Gel color?",
+      "Is Sally Hansen Miracle Gel bad for your nails?",
+      "How do I remove Sally Hansen Miracle Gel at home?",
+      "What's the difference between Sally Hansen Miracle Gel and a salon gel manicure?",
+      "Is Sally Hansen Miracle Gel worth the money?",
+      "Why does my Miracle Gel polish go on streaky?",
+      "Can I use a UV lamp to speed up Sally Hansen Miracle Gel?",
+      "Does Sally Hansen Miracle Gel need a base coat?",
+      "How many coats of Sally Hansen Miracle Gel do I need?",
+      "What causes Sally Hansen Miracle Gel to lift at the nail bed?"
+    ]
+  },
+  "section_8_hook_and_ctr": {
+    "blog_gen_instruction": "READ THIS SECTION BEFORE WRITING THE TITLE, META DESCRIPTION, INTRO, OR FIRST H2. The title and description here are the option the USER SELECTED from 2-3 real, evidence-based choices during phase_6 — use them exactly. The intro hook brief and first H2 hook direction are your creative brief for those specific elements, matching the selected option's angle. Do not deviate.",
+    "real_serp_findings_summary": "All 5 fetched competitor pages use narrative personal-review titles with no front-loaded keyword and no year tag. None state a realistic wear-time verdict in the title or meta — every one leads with the marketed '14 days' claim and buries the honest range deep in body text or comments.",
+    "selected_option_rationale": "Directly names the reader's real decision point (does it hold up vs salon gel) instead of repeating brand marketing, matching the audience's top pain point of wanting a straight comparison answer rather than another glowing anecdote.",
+    "title": "Sally Hansen Miracle Gel Reviews: Does It Last as Long as Salon Gel?",
+    "title_char_count": 58,
+    "meta_description": "We tested Sally Hansen Miracle Gel against real wear conditions to see if the no-lamp promise holds up, plus how the formula compares for chip resistance and ease of removal.",
+    "meta_char_count": 154,
+    "intro_hook_brief": "Open by naming the exact promise on the bottle (14 days, no lamp) and immediately signal this post checks it against real wear conditions rather than marketing copy — curiosity-gap framed around 'does the claim hold up.'",
+    "first_h2_hook_direction": "Apply the same real-vs-claimed framing to the first H2 by opening with the direct answer (realistic average wear time) before any elaboration, continuing the 'here's what's actually true' angle from the title without repeating it verbatim."
+  },
+  "section_9_search_journey": {
+    "blog_gen_instruction": "This is the emotional contract with the reader. Every section of the post must honour the promise made. Read this before writing any section. If a paragraph breaks the journey arc — rewrite it.",
+    "reader_arrival_state": "Skeptical but hopeful — has seen the marketing claim, wants to know if it's realistic before spending money or time",
+    "journey_arc": [
+      "Confirm this post will answer the real vs claimed wear-time question honestly",
+      "Deliver the direct wear-time verdict early, then explain the mechanism (why it's not true gel)",
+      "Walk through application, common failure points, and concrete fixes",
+      "Compare directly against salon gel and regular polish so the reader can place it correctly",
+      "Close with a clear, confident recommendation based on reader type"
+    ],
+    "promise_to_deliver": "An honest, evidence-based answer to whether Sally Hansen Miracle Gel holds up against salon gel — not a repeat of brand marketing",
+    "exit_state": "Confident and decided — knows exactly whether to buy it, and how to get the best results if they do"
+  },
+  "section_10_content_structure": {
+    "blog_gen_instruction": "This H2 structure is research-driven and must be followed exactly. Do not rename, reorder, or remove H2s without user instruction. Word budget per section is set — follow it. H3s may be added at editorial discretion.",
+    "h1": "Sally Hansen Miracle Gel Reviews: Does It Really Last as Long as Salon Gel?",
+    "h2_structure": [
+      "How Long Does Sally Hansen Miracle Gel Actually Last?",
+      "Is Miracle Gel a Real Gel Polish or Just Gel-Like?",
+      "How to Apply Sally Hansen Miracle Gel the Right Way",
+      "Common Problems (and Real Fixes) Sally Hansen Miracle Gel Users Run Into",
+      "Sally Hansen Miracle Gel vs a Salon Gel Manicure",
+      "Is Sally Hansen Miracle Gel Bad for Your Nails?",
+      "How to Remove Sally Hansen Miracle Gel Without Damage",
+      "Is Sally Hansen Miracle Gel Worth It?"
+    ],
+    "word_budget": {
+      "introduction": "220 words",
+      "conclusion": "180 words",
+      "per_h2": [
+        {"heading": "How Long Does Sally Hansen Miracle Gel Actually Last?", "budget": 280},
+        {"heading": "Is Miracle Gel a Real Gel Polish or Just Gel-Like?", "budget": 220},
+        {"heading": "How to Apply Sally Hansen Miracle Gel the Right Way", "budget": 240},
+        {"heading": "Common Problems (and Real Fixes) Sally Hansen Miracle Gel Users Run Into", "budget": 260},
+        {"heading": "Sally Hansen Miracle Gel vs a Salon Gel Manicure", "budget": 220},
+        {"heading": "Is Sally Hansen Miracle Gel Bad for Your Nails?", "budget": 180},
+        {"heading": "How to Remove Sally Hansen Miracle Gel Without Damage", "budget": 160},
+        {"heading": "Is Sally Hansen Miracle Gel Worth It?", "budget": 140}
+      ]
+    }
+  },
+  "section_11_internal_links": {
+    "blog_gen_instruction": "Every link below must appear in the post. Cluster links use anchor texts verbatim — do not rewrite. Cross-site links use the provided descriptive anchor. Place each link where the placement note says — woven naturally into prose, never as a standalone CTA. Total internal links must not exceed 6.",
+    "all_internal_links": [
+      {"url_or_slug": "/blog/nail-brand-reviews/opi-reviews", "title": "OPI Reviews: Is It Still the Best Nail Polish Brand?", "anchor_text": "OPI reviews", "placement_note": "Sally Hansen Miracle Gel vs a Salon Gel Manicure — natural mention when contrasting with the broader nail-polish-brand landscape", "link_type": "cluster-pillar"},
+      {"url_or_slug": "/blog/nail-brand-reviews/cnd-shellac-vs-gelish", "title": "CND Shellac vs Gelish: Which Gel Polish System Actually Wins?", "anchor_text": "CND Shellac vs Gelish comparison", "placement_note": "Is Miracle Gel a Real Gel Polish or Just Gel-Like? — natural reference point when explaining what a true UV-cured gel system looks like", "link_type": "cluster-spoke"},
+      {"url_or_slug": "/blog/nail-brand-reviews/kiara-sky-reviews", "title": "Kiara Sky Reviews: Is This the Best Dip Powder Brand?", "anchor_text": "Kiara Sky dip powder reviews", "placement_note": "Sally Hansen Miracle Gel vs a Salon Gel Manicure — natural mention as another no-lamp-adjacent alternative format", "link_type": "cluster-spoke"},
+      {"url_or_slug": "https://mirelleinspo.com/blog/nail-basics/what-is-gel-polish", "title": "What Is Gel Polish & How Does It Actually Work?", "anchor_text": "how gel polish actually cures under a UV or LED lamp", "placement_note": "Is Miracle Gel a Real Gel Polish or Just Gel-Like? — explains the photoinitiator/photopolymerization mechanism this post references but doesn't need to re-explain in full", "link_type": "cross-site"},
+      {"url_or_slug": "https://mirelleinspo.com/blog/nail-polish-product-knowledge/opi-vs-essie-vs-sally-hansen", "title": "OPI vs Essie vs Sally Hansen: An Honest Verdict", "anchor_text": "how Sally Hansen's formulas stack up against OPI and Essie overall", "placement_note": "Is Sally Hansen Miracle Gel Worth It? — natural link for readers deciding between brands more broadly, not just this one product line", "link_type": "cross-site"}
+    ]
+  },
+  "section_12_voice_tone": {
+    "blog_gen_instruction": "This is the voice for this specific post. Layer on top of Mirellé editorial framework. Do not default to generic AI tone.",
+    "recommended_voice": "Honest tester / straight-talking friend",
+    "tone_characteristics": [
+      "Direct and unhedging — states the realistic verdict rather than qualifying everything",
+      "Warm but not gushing — avoids brand-ad language like 'game changer' unless quoting a user",
+      "Practical and specific — numbers over adjectives",
+      "Empathetic to frustration — acknowledges chipping/streaking complaints without dismissing them",
+      "Confident closer — ends sections with a clear takeaway, not a shrug"
+    ],
+    "language_style": "Second person ('you'), short declarative sentences, concrete numbers (days, coats, minutes) over vague claims, occasional light humor but never at the expense of clarity",
+    "audience_match": "This reader wants a knowledgeable friend who's actually tested the product to cut through marketing language and tell them straight whether it's worth their money and time — this voice delivers exactly that without either fawning or nitpicking"
+  },
+  "section_13_external_links": {
+    "blog_gen_instruction": "Include all external links where indicated. Supports E-E-A-T. Use anchor suggestion as guide — write naturally around it. Sourced from phase_3's best_external_sources_found (real fetched competitor pages), not from separate searches. May be empty (0-2 links) if none of the fetched pages qualified as genuinely citation-worthy — that is expected, not a gap to fill.",
+    "links": []
+  },
+  "section_14_execution_plan": {
+    "purpose": "Blog Gen Agent reads this section FIRST — before frontmatter, before writing a single word. Every value here is pre-calculated from the input file data. Blog Gen Agent locks all values and executes them exactly. This section exists to eliminate rewrite loops — every constraint is pre-decided here so there are zero surprises mid-write.",
+    "blog_gen_instruction": "READ THIS SECTION FIRST. Lock every value. Execute exactly. Do not recalculate, do not adjust, do not deviate.",
+    "calculated_by": "Input Gen Agent — calculated last, after all other sections are complete",
+    "block_1_keyword_execution": {
+      "primary_keyword": "sally hansen miracle gel reviews",
+      "top_5_density_baseline": 3,
+      "total_mention_target": "3 + 3 = 6 total mentions",
+      "first_100_words_plan": {
+        "rule": "Primary keyword MUST appear TWICE in the first 100 words. Mandatory. No exceptions.",
+        "mention_1": "sentence 1 of introduction — naming the post topic directly against the marketed claim",
+        "mention_2": "sentence 3-4 of introduction — reinforcing while framing the real-vs-claimed test angle"
+      },
+      "first_half_target": "4 mentions — first ~950 words. Run denser in first half.",
+      "second_half_target": "2 mentions — second ~950 words",
+      "strong_tag_rule": "EVERY single mention of the primary keyword — all 6 of them — wrapped in <strong> tags. No exceptions. Catch each one as it is written. Scan after every paragraph.",
+      "keywords_to_avoid_active": [
+        "opi reviews", "essie nail polish reviews", "opi nail envy reviews", "cnd shellac vs gelish",
+        "kiara sky reviews", "glamnetic reviews", "impress nails reviews", "olive and june reviews",
+        "dashing diva reviews", "color street reviews", "manime reviews", "static nails reviews",
+        "btartbox reviews", "melody susie reviews"
+      ]
+    },
+    "block_2_word_budget": {
+      "total_target": "1900 words — +/-50 words tolerance, never exceed",
+      "introduction": "220 words",
+      "conclusion": "180 words",
+      "h2_budgets": [
+        {"heading": "How Long Does Sally Hansen Miracle Gel Actually Last?", "budget": 280, "complexity": "medium"},
+        {"heading": "Is Miracle Gel a Real Gel Polish or Just Gel-Like?", "budget": 220, "complexity": "medium"},
+        {"heading": "How to Apply Sally Hansen Miracle Gel the Right Way", "budget": 240, "complexity": "low"},
+        {"heading": "Common Problems (and Real Fixes) Sally Hansen Miracle Gel Users Run Into", "budget": 260, "complexity": "high"},
+        {"heading": "Sally Hansen Miracle Gel vs a Salon Gel Manicure", "budget": 220, "complexity": "medium"},
+        {"heading": "Is Sally Hansen Miracle Gel Bad for Your Nails?", "budget": 180, "complexity": "medium"},
+        {"heading": "How to Remove Sally Hansen Miracle Gel Without Damage", "budget": 160, "complexity": "low"},
+        {"heading": "Is Sally Hansen Miracle Gel Worth It?", "budget": 140, "complexity": "low"}
+      ],
+      "tracking_rule": "Track running word total at the end of every H2 section. If a section is running over budget — cut before moving to the next section. Do not compensate later."
+    },
+    "block_3_image_plan": {
+      "total_images": 7,
+      "hero_image": "frontmatter only — NEVER appears in post body",
+      "body_images": 6,
+      "assignments": [
+        {"image_number": 1, "place_after": "How Long Does Sally Hansen Miracle Gel Actually Last?", "image_type": "standard_inspiration", "section_context": "Finished manicure showing a fresh, glossy Miracle Gel application in a popular shade"},
+        {"image_number": 2, "place_after": "Is Miracle Gel a Real Gel Polish or Just Gel-Like?", "image_type": "standard_inspiration", "section_context": "Close-up of the two-step bottle set (color + top coat) styled attractively, not a process/hands shot"},
+        {"image_number": 3, "place_after": "How to Apply Sally Hansen Miracle Gel the Right Way", "image_type": "standard_inspiration", "section_context": "Well-applied, smooth, even-coverage manicure result in a bold shade demonstrating clean application"},
+        {"image_number": 4, "place_after": "Common Problems (and Real Fixes) Sally Hansen Miracle Gel Users Run Into", "image_type": "standard_inspiration", "section_context": "A flawless, chip-free manicure several days old to contrast against the described failure points, still a finished-look shot not a defect close-up"},
+        {"image_number": 5, "place_after": "Sally Hansen Miracle Gel vs a Salon Gel Manicure", "image_type": "standard_inspiration", "section_context": "Elegant neutral or classic red shade manicure that could pass for either salon or at-home result"},
+        {"image_number": 6, "place_after": "Is Sally Hansen Miracle Gel Worth It?", "image_type": "standard_inspiration", "section_context": "Final aspirational shot — polished, camera-ready manicure in a popular seasonal shade"}
+      ],
+      "image_type_rule": {
+        "default": "standard_inspiration — an actual nail look, styled and shot, related to the topic. This is the default for the large majority of image slots in nearly every post.",
+        "infographic_allowed_when": "Not applicable here — informational intent with no comparison table or step-sequence need strong enough to justify one",
+        "how_many_infographics": 0,
+        "banned_absolutely": "NEVER a tool/equipment image (hands holding a file, tools laid out, application/process shots showing hands or tools at work) in any slot. NEVER a photo-style side-by-side nail-to-nail comparison image.",
+        "note_for_blog_gen": "Blog Gen Agent follows the image_type flagged here exactly per slot — it does not decide standard vs infographic on its own mid-write."
+      },
+      "path_rule": "/images/blog/nail-brand-reviews/sally-hansen-miracle-gel-reviews/filename.webp — topic_slug in path, slug folder, leading slash"
+    },
+    "block_4_opening_technique_assignments": {
+      "rule": "No two consecutive sections use the same technique. Conclusion = Technique 1 or 3 only.",
+      "assignments": [
+        {"section": "Introduction", "technique": "Technique 1 — The Claim"},
+        {"section": "How Long Does Sally Hansen Miracle Gel Actually Last?", "technique": "Technique 2 — The Direct Answer"},
+        {"section": "Is Miracle Gel a Real Gel Polish or Just Gel-Like?", "technique": "Technique 3 — The Reframe"},
+        {"section": "How to Apply Sally Hansen Miracle Gel the Right Way", "technique": "Technique 4 — The Walkthrough Opener"},
+        {"section": "Common Problems (and Real Fixes) Sally Hansen Miracle Gel Users Run Into", "technique": "Technique 2 — The Direct Answer"},
+        {"section": "Sally Hansen Miracle Gel vs a Salon Gel Manicure", "technique": "Technique 3 — The Reframe"},
+        {"section": "Is Sally Hansen Miracle Gel Bad for Your Nails?", "technique": "Technique 2 — The Direct Answer"},
+        {"section": "How to Remove Sally Hansen Miracle Gel Without Damage", "technique": "Technique 4 — The Walkthrough Opener"},
+        {"section": "Conclusion", "technique": "Technique 1 — The Claim"}
+      ],
+      "banned_opener_rule": "Check every opener against banned_opening_approaches in blog gen prompt before writing the second sentence"
+    },
+    "block_5_link_placements": {
+      "rule": "Every link placed exactly where specified. Anchor texts used verbatim — never rewritten. Links woven into prose naturally — never standalone CTAs.",
+      "links": [
+        {"anchor_text": "OPI reviews", "full_url": "/blog/nail-brand-reviews/opi-reviews", "place_in_section": "Sally Hansen Miracle Gel vs a Salon Gel Manicure", "placement_context": "When situating Miracle Gel within the broader drugstore-vs-prestige nail polish landscape", "link_type": "cluster-pillar"},
+        {"anchor_text": "CND Shellac vs Gelish comparison", "full_url": "/blog/nail-brand-reviews/cnd-shellac-vs-gelish", "place_in_section": "Is Miracle Gel a Real Gel Polish or Just Gel-Like?", "placement_context": "When contrasting Miracle Gel's non-photoinitiator formula against true UV-cured gel systems", "link_type": "cluster-spoke"},
+        {"anchor_text": "Kiara Sky dip powder reviews", "full_url": "/blog/nail-brand-reviews/kiara-sky-reviews", "place_in_section": "Sally Hansen Miracle Gel vs a Salon Gel Manicure", "placement_context": "When mentioning dip powder as another no-UV-lamp alternative format worth considering", "link_type": "cluster-spoke"},
+        {"anchor_text": "how gel polish actually cures under a UV or LED lamp", "full_url": "https://mirelleinspo.com/blog/nail-basics/what-is-gel-polish", "place_in_section": "Is Miracle Gel a Real Gel Polish or Just Gel-Like?", "placement_context": "When explaining photopolymerization briefly without needing to fully re-explain the mechanism in this post", "link_type": "cross-site"},
+        {"anchor_text": "how Sally Hansen's formulas stack up against OPI and Essie overall", "full_url": "https://mirelleinspo.com/blog/nail-polish-product-knowledge/opi-vs-essie-vs-sally-hansen", "place_in_section": "Is Sally Hansen Miracle Gel Worth It?", "placement_context": "For readers deciding between brands broadly rather than just this one product line", "link_type": "cross-site"}
+      ]
+    },
+    "block_6_aeo_geo_plan": {
+      "aeo_assignments": [
+        {"aeo_term": "Does Sally Hansen Miracle Gel really last 14 days?", "assigned_to_section": "How Long Does Sally Hansen Miracle Gel Actually Last?", "execution": "Write a direct 2-3 sentence answer paragraph IMMEDIATELY after the H2 heading — before any elaboration. This is what gets picked up by AI answer engines."},
+        {"aeo_term": "Is Sally Hansen Miracle Gel a real gel polish or just gel-like?", "assigned_to_section": "Is Miracle Gel a Real Gel Polish or Just Gel-Like?", "execution": "Write a direct 2-3 sentence answer paragraph immediately after the H2 heading stating the photoinitiator distinction plainly"},
+        {"aeo_term": "Do you need a UV or LED lamp for Sally Hansen Miracle Gel?", "assigned_to_section": "Is Miracle Gel a Real Gel Polish or Just Gel-Like?", "execution": "Answer within the same section's opening paragraph — no, natural light only, stated plainly"},
+        {"aeo_term": "Is Sally Hansen Miracle Gel bad for your nails?", "assigned_to_section": "Is Sally Hansen Miracle Gel Bad for Your Nails?", "execution": "Write a direct 2-3 sentence answer paragraph immediately after the H2 heading"},
+        {"aeo_term": "Is Sally Hansen Miracle Gel worth the money?", "assigned_to_section": "Is Sally Hansen Miracle Gel Worth It?", "execution": "Write a direct 2-3 sentence verdict paragraph immediately after the H2 heading"}
+      ],
+      "geo_entity_statements": [
+        {"entity": "Photoinitiator", "assigned_to_section": "Is Miracle Gel a Real Gel Polish or Just Gel-Like?", "execution": "Write a clear declarative definition sentence — confident, no hedging. Extractable by AI as a citation."},
+        {"entity": "Miracle Gel Top Coat", "assigned_to_section": "How to Apply Sally Hansen Miracle Gel the Right Way", "execution": "Write a clear declarative sentence defining its role as the required curing-activator step, distinct from a standard top coat"}
+      ]
+    },
+    "block_7_active_constraints": {
+      "em_dash_banned": "Long em dash does not appear anywhere. If one forms while writing — stop, replace with: comma / new sentence / parentheses / but / restructure.",
+      "banned_vocab_watch": ["game changer", "elevate", "unlock", "elevated", "seamless", "effortless", "must-have", "holy grail"],
+      "american_english_active": "color, recognize, -ize, -or — every instance, no exceptions. This post uses American English, not British.",
+      "keyword_density_reminder": "After every 2 H2 sections — count current keyword mentions. Verify running total is on track to hit 6 total. First half must run denser than second half. Adjust if needed.",
+      "image_path_reminder": "/images/blog/nail-brand-reviews/sally-hansen-miracle-gel-reviews/filename.webp — topic_slug in path always",
+      "internal_link_url_reminder": "Full correct paths only. Cluster links = /blog/nail-brand-reviews/[slug]. Cross-site links = exact URL as discovered. Never bare /slug.",
+      "hero_image_reminder": "Hero = frontmatter only. Never place hero image in body.",
+      "strong_tag_reminder": "Every primary keyword mention = <strong> tags. Scan after every paragraph."
+    }
+  }
+}{
+  "section_1_file_authority": {
+    "statement": "THIS FILE IS THE SINGLE SOURCE OF TRUTH FOR THE BLOG GEN AGENT. All values in POST_CONSTANTS are hardcoded — Blog Gen Agent does not ask, adjust, or override them. All keywords, H2 structure, audience intelligence, internal links, and tone defined here must be followed exactly."
+  },
+  "section_2_post_constants": {
+    "slug": "sally-hansen-miracle-gel-reviews",
+    "topic_slug": "nail-brand-reviews",
+    "canonical": "https://mirelleinspo.com/blog/nail-brand-reviews/sally-hansen-miracle-gel-reviews",
+    "post_type": "spoke",
+    "intent": "informational",
+    "word_count": 1900,
+    "image_count": 7,
+    "show_inspo_gallery_link": false,
+    "template": "posts",
+    "hero_dimensions": "1200x675",
+    "category": "Nail Brand Reviews",
+    "publish_date": "2026-09-09",
+    "author": "jyoti-mirelle"
+  },
+  "section_3_cluster_snapshot": {
+    "pillar_slug": "opi-reviews",
+    "pillar_title": "OPI Reviews: Is It Still the Best Nail Polish Brand?",
+    "pillar_primary_keyword": "opi reviews",
+    "this_post_slug": "sally-hansen-miracle-gel-reviews",
+    "this_post_role": "spoke",
+    "show_inspo_gallery_link_cluster_default": false,
+    "keywords_to_avoid": [
+      "opi reviews", "essie nail polish reviews", "opi nail envy reviews", "cnd shellac vs gelish",
+      "kiara sky reviews", "glamnetic reviews", "impress nails reviews", "olive and june reviews",
+      "dashing diva reviews", "color street reviews", "manime reviews", "static nails reviews",
+      "btartbox reviews", "melody susie reviews"
+    ]
+  },
+  "section_4_serp_analysis": {
+    "blog_gen_instruction": "our_strategic_approach is a specific, evidence-based outperform strategy, not a vague gap-fill statement. Use it as the concrete angle for the introduction and conclusion, and to guide depth/coverage decisions in relevant H2 sections.",
+    "competitor_gaps": [
+      "No fetched page states a realistic consensus wear time up front — all bury it mid-article after leading with the '14 day' marketing claim, confirmed as a mismatch across Walmart reviews, ProductReview.com.au, and 4 of 5 fetched blogs",
+      "No fetched page addresses WHY wear time varies so wildly (5 days to 3 weeks) by nail chemistry/oiliness/activity level — confirmed gap across Quora threads and comment sections on 3 fetched pages",
+      "No fetched page gives a clear side-by-side of Miracle Gel vs a true UV/LED gel system's mechanism (this is chemically NOT a gel, no photoinitiator) — confirmed on Quora (2+ threads) and only mentioned in passing on one fetched page",
+      "No fetched page gives concrete troubleshooting for the #1 complaint (streaky/patchy first coat, brush too wide) — confirmed on Walmart reviews and 2 fetched blogs as a recurring pain point with no fix offered"
+    ],
+    "missing_semantic_territory": [
+      "\"is sally hansen miracle gel a real gel\" — demand confirmed via Quora + fetched page framing",
+      "\"sally hansen miracle gel vs regular gel polish\" — confirmed via Weddingbee thread + Inside Out Style comments",
+      "\"sally hansen miracle gel chipping fix\" — confirmed via Walmart reviews + multiple fetched blog comment sections",
+      "\"sally hansen miracle gel realistic wear time\" — confirmed via ProductReview.com.au + Walmart aggregate reviews"
+    ],
+    "our_strategic_approach": "Lead with the realistic wear-time answer (5–10 days average across real users, not the marketed 14) in the first 100 words instead of burying it, directly addressing the gap every fetched competitor missed. Include a clear 'is this actually gel?' explainer early since Quora shows real confusion and no fetched page resolves it cleanly. Add a dedicated troubleshooting section for the streaky-first-coat and early-chip complaints that dominate Walmart reviews and blog comments, since zero fetched pages offer fixes despite the complaints being the most repeated pain point found. Close with a clear verdict statement (worth it for X reader, skip it for Y reader) rather than the wishy-washy 'depends on your nails' non-answer every fetched blog defaults to.",
+    "top_5_fetched_pages_summary": [
+      {"url": "https://imabeautygeek.com/2014/07/04/sally-hansen-miracle-gel-review-swatches/", "word_count": 1350, "h2_count": 9, "keyword_mentions": 3, "note": "Strong multi-tester structure but no wear-time consensus stated; buries verdict"},
+      {"url": "https://www.productreviewmom.com/2016/11/sally-hansen-miracle-gel-review.html", "word_count": 900, "h2_count": 0, "keyword_mentions": 2, "note": "Single narrative block, no scannable structure, glowing tone with no real troubleshooting"},
+      {"url": "https://www.lalalisette.com/sally-hansen-miracle-gel-review/", "word_count": 800, "h2_count": 5, "keyword_mentions": 3, "note": "Day-by-day H2 structure works well but only covers one user's thin-nail experience, no generalizable guidance"},
+      {"url": "https://www.funtobeagirl.com/2015/05/27/sally-hansen-miracle-gel-yay-or-nay-4/", "word_count": 450, "h2_count": 0, "keyword_mentions": 2, "note": "Too thin to rank long-term; good on the 'add a base coat' fix but no other troubleshooting"},
+      {"url": "https://www.oasisskincareclinic.net/nail-care/sally-hansen-miracle-gel-nail-polish-product-review/", "word_count": 650, "h2_count": 0, "keyword_mentions": 4, "note": "Clear pros/cons split but ends on an unresolved 'doesn't live up to claims' note with no alternative guidance"}
+    ],
+    "top_5_word_count_average": 830,
+    "top_5_keyword_density_average": 3,
+    "recommended_image_count_validation": "7 images (informational, non-tutorial, non-comparison) matches SERP visual pattern — fetched pages use swatch/finished-manicure photography, not process shots, confirming standard_inspiration is correct for all body slots",
+    "best_external_sources_found": []
+  },
+  "section_5_audience_intelligence": {
+    "blog_gen_instruction": "This is your primary creative brief. Every paragraph written for this specific person with this specific intent. Satisfy them completely.",
+    "who_they_are": "Someone who already owns or is about to buy Sally Hansen Miracle Gel and wants to know if the marketed 14-day wear claim is real before committing time/money, OR someone deciding between this and a true UV/LED gel system. Mostly at-home manicure users, not nail professionals — confirmed by Quora phrasing and Walmart review context (dishes, showers, work hands, not salon settings).",
+    "what_they_want_from_this_post": "A straight answer to 'does it actually work' with a realistic wear-time number, not marketing copy repeated back to them",
+    "what_frustrates_them": "Existing content either gushes uncritically (glowing brand-adjacent blog posts) or is a single bad personal anecdote — nothing synthesizes the real range of outcomes or explains why results vary so much by person",
+    "top_5_pain_points": [
+      "Confusion over whether this is 'real' gel or just marketed as gel-like (direct Quora pain point)",
+      "First coat comes out streaky or patchy, especially in white/pale shades",
+      "Product chips within 24–48 hours for a subset of users despite following instructions exactly",
+      "Uncertainty about whether their own nail type/activity level will get 5 days or 14 days",
+      "Not knowing simple fixes (base coat, capping the tip, extra topcoat) that meaningfully extend wear"
+    ],
+    "exact_user_phrases": [
+      "does sally hansen gel nail polish dry without a UV light",
+      "is sally hansen miracle gel bad for your nails",
+      "do I have to use the miracle gel top coat or can I use my own",
+      "can you use a UV light with sally hansen miracle gel",
+      "how to remove sally hansen miracle gel without damaging nails",
+      "is it worth the money",
+      "how long does it actually last",
+      "why does mine chip on day one",
+      "goes on streaky even after 2 coats",
+      "the applicator is a game changer"
+    ],
+    "intent_content_signals": [
+      "Readers respond to real day-by-day wear tracking over vague claims",
+      "Readers want the honest range of outcomes, not one person's single experience",
+      "Direct, plain verdict language ('worth it if X, skip if Y') outperforms hedging",
+      "Concrete troubleshooting tips get referenced repeatedly across comment threads — high demand signal",
+      "Numbers (days of wear, number of coats, dry time in minutes) matter more than adjectives like 'amazing'"
+    ]
+  },
+  "section_6_semantic_keyword_data": {
+    "blog_gen_instruction": "Primary keyword in strong tags every mention. AEO terms trigger direct answer paragraphs. User language woven naturally. No term from keywords_to_avoid used as focus term.",
+    "primary_keyword": "sally hansen miracle gel reviews",
+    "keyword_variations": [
+      "sally hansen miracle gel review", "miracle gel reviews", "sally hansen miracle gel nail polish reviews",
+      "sally hansen miracle gel gel polish reviews", "miracle gel nail polish review", "sally hansen miracle gel top coat reviews"
+    ],
+    "cluster_keywords": [
+      "no uv lamp gel polish", "at-home gel manicure", "two-step gel polish system", "gel-like nail polish",
+      "chip-resistant nail polish", "drugstore gel polish", "gel hybrid polish", "no light gel manicure",
+      "long-wear nail polish", "miracle gel top coat", "miracle gel color", "miracle gel shades"
+    ],
+    "lsi_terms": [
+      "photoinitiator", "oligomer", "gel-like finish", "acetone removal", "two coats of color",
+      "gel top coat activator", "natural light curing", "chip resistance", "salon gel manicure comparison",
+      "wide flat brush application", "nail chemistry", "cap the tip", "base coat", "streaky first coat",
+      "drying time minutes", "Nielsen number 1 selling", "vegan gel-like polish", "removal with regular remover"
+    ],
+    "aeo_terms": [
+      "does sally hansen miracle gel really last 14 days",
+      "is sally hansen miracle gel a real gel polish",
+      "do you need a UV lamp for sally hansen miracle gel",
+      "how long does sally hansen miracle gel actually last",
+      "why does my sally hansen miracle gel chip so fast",
+      "can you use sally hansen miracle gel top coat with other nail polish",
+      "is sally hansen miracle gel bad for your nails",
+      "how do you remove sally hansen miracle gel at home",
+      "what's the difference between sally hansen miracle gel and real gel polish",
+      "is sally hansen miracle gel worth the money"
+    ],
+    "technical_terms": [
+      "photoinitiator", "oligomer", "photopolymerization", "gel hybrid formula", "curing", "top coat activator"
+    ],
+    "user_language": [
+      "does it actually work", "is it worth it", "goes on streaky", "chips on day one",
+      "the applicator is a game changer", "lasted way less than promised", "my nails are super fragile",
+      "I'm hard on my hands", "held up better than regular polish", "not a real gel"
+    ]
+  },
+  "section_7_voice_and_ai_queries": {
+    "blog_gen_instruction": "Answer every query directly in the relevant H2 section body. If a query cannot be addressed naturally in the body, route it to faqItems. No query left unanswered.",
+    "queries": [
+      "Does Sally Hansen Miracle Gel really last 14 days?",
+      "Is Sally Hansen Miracle Gel a real gel polish or just gel-like?",
+      "Do you need a UV or LED lamp for Sally Hansen Miracle Gel?",
+      "How long does Sally Hansen Miracle Gel actually last in real use?",
+      "Why does my Sally Hansen Miracle Gel chip on the first day?",
+      "Can I use a different top coat with Sally Hansen Miracle Gel color?",
+      "Is Sally Hansen Miracle Gel bad for your nails?",
+      "How do I remove Sally Hansen Miracle Gel at home?",
+      "What's the difference between Sally Hansen Miracle Gel and a salon gel manicure?",
+      "Is Sally Hansen Miracle Gel worth the money?",
+      "Why does my Miracle Gel polish go on streaky?",
+      "Can I use a UV lamp to speed up Sally Hansen Miracle Gel?",
+      "Does Sally Hansen Miracle Gel need a base coat?",
+      "How many coats of Sally Hansen Miracle Gel do I need?",
+      "What causes Sally Hansen Miracle Gel to lift at the nail bed?"
+    ]
+  },
+  "section_8_hook_and_ctr": {
+    "blog_gen_instruction": "READ THIS SECTION BEFORE WRITING THE TITLE, META DESCRIPTION, INTRO, OR FIRST H2. The title and description here are the option the USER SELECTED from 2-3 real, evidence-based choices during phase_6 — use them exactly. The intro hook brief and first H2 hook direction are your creative brief for those specific elements, matching the selected option's angle. Do not deviate.",
+    "real_serp_findings_summary": "All 5 fetched competitor pages use narrative personal-review titles with no front-loaded keyword and no year tag. None state a realistic wear-time verdict in the title or meta — every one leads with the marketed '14 days' claim and buries the honest range deep in body text or comments.",
+    "selected_option_rationale": "Directly names the reader's real decision point (does it hold up vs salon gel) instead of repeating brand marketing, matching the audience's top pain point of wanting a straight comparison answer rather than another glowing anecdote.",
+    "title": "Sally Hansen Miracle Gel Reviews: Does It Last as Long as Salon Gel?",
+    "title_char_count": 58,
+    "meta_description": "We tested Sally Hansen Miracle Gel against real wear conditions to see if the no-lamp promise holds up, plus how the formula compares for chip resistance and ease of removal.",
+    "meta_char_count": 154,
+    "intro_hook_brief": "Open by naming the exact promise on the bottle (14 days, no lamp) and immediately signal this post checks it against real wear conditions rather than marketing copy — curiosity-gap framed around 'does the claim hold up.'",
+    "first_h2_hook_direction": "Apply the same real-vs-claimed framing to the first H2 by opening with the direct answer (realistic average wear time) before any elaboration, continuing the 'here's what's actually true' angle from the title without repeating it verbatim."
+  },
+  "section_9_search_journey": {
+    "blog_gen_instruction": "This is the emotional contract with the reader. Every section of the post must honour the promise made. Read this before writing any section. If a paragraph breaks the journey arc — rewrite it.",
+    "reader_arrival_state": "Skeptical but hopeful — has seen the marketing claim, wants to know if it's realistic before spending money or time",
+    "journey_arc": [
+      "Confirm this post will answer the real vs claimed wear-time question honestly",
+      "Deliver the direct wear-time verdict early, then explain the mechanism (why it's not true gel)",
+      "Walk through application, common failure points, and concrete fixes",
+      "Compare directly against salon gel and regular polish so the reader can place it correctly",
+      "Close with a clear, confident recommendation based on reader type"
+    ],
+    "promise_to_deliver": "An honest, evidence-based answer to whether Sally Hansen Miracle Gel holds up against salon gel — not a repeat of brand marketing",
+    "exit_state": "Confident and decided — knows exactly whether to buy it, and how to get the best results if they do"
+  },
+  "section_10_content_structure": {
+    "blog_gen_instruction": "This H2 structure is research-driven and must be followed exactly. Do not rename, reorder, or remove H2s without user instruction. Word budget per section is set — follow it. H3s may be added at editorial discretion.",
+    "h1": "Sally Hansen Miracle Gel Reviews: Does It Really Last as Long as Salon Gel?",
+    "h2_structure": [
+      "How Long Does Sally Hansen Miracle Gel Actually Last?",
+      "Is Miracle Gel a Real Gel Polish or Just Gel-Like?",
+      "How to Apply Sally Hansen Miracle Gel the Right Way",
+      "Common Problems (and Real Fixes) Sally Hansen Miracle Gel Users Run Into",
+      "Sally Hansen Miracle Gel vs a Salon Gel Manicure",
+      "Is Sally Hansen Miracle Gel Bad for Your Nails?",
+      "How to Remove Sally Hansen Miracle Gel Without Damage",
+      "Is Sally Hansen Miracle Gel Worth It?"
+    ],
+    "word_budget": {
+      "introduction": "220 words",
+      "conclusion": "180 words",
+      "per_h2": [
+        {"heading": "How Long Does Sally Hansen Miracle Gel Actually Last?", "budget": 280},
+        {"heading": "Is Miracle Gel a Real Gel Polish or Just Gel-Like?", "budget": 220},
+        {"heading": "How to Apply Sally Hansen Miracle Gel the Right Way", "budget": 240},
+        {"heading": "Common Problems (and Real Fixes) Sally Hansen Miracle Gel Users Run Into", "budget": 260},
+        {"heading": "Sally Hansen Miracle Gel vs a Salon Gel Manicure", "budget": 220},
+        {"heading": "Is Sally Hansen Miracle Gel Bad for Your Nails?", "budget": 180},
+        {"heading": "How to Remove Sally Hansen Miracle Gel Without Damage", "budget": 160},
+        {"heading": "Is Sally Hansen Miracle Gel Worth It?", "budget": 140}
+      ]
+    }
+  },
+  "section_11_internal_links": {
+    "blog_gen_instruction": "Every link below must appear in the post. Cluster links use anchor texts verbatim — do not rewrite. Cross-site links use the provided descriptive anchor. Place each link where the placement note says — woven naturally into prose, never as a standalone CTA. Total internal links must not exceed 6.",
+    "all_internal_links": [
+      {"url_or_slug": "/blog/nail-brand-reviews/opi-reviews", "title": "OPI Reviews: Is It Still the Best Nail Polish Brand?", "anchor_text": "OPI reviews", "placement_note": "Sally Hansen Miracle Gel vs a Salon Gel Manicure — natural mention when contrasting with the broader nail-polish-brand landscape", "link_type": "cluster-pillar"},
+      {"url_or_slug": "/blog/nail-brand-reviews/cnd-shellac-vs-gelish", "title": "CND Shellac vs Gelish: Which Gel Polish System Actually Wins?", "anchor_text": "CND Shellac vs Gelish comparison", "placement_note": "Is Miracle Gel a Real Gel Polish or Just Gel-Like? — natural reference point when explaining what a true UV-cured gel system looks like", "link_type": "cluster-spoke"},
+      {"url_or_slug": "/blog/nail-brand-reviews/kiara-sky-reviews", "title": "Kiara Sky Reviews: Is This the Best Dip Powder Brand?", "anchor_text": "Kiara Sky dip powder reviews", "placement_note": "Sally Hansen Miracle Gel vs a Salon Gel Manicure — natural mention as another no-lamp-adjacent alternative format", "link_type": "cluster-spoke"},
+      {"url_or_slug": "https://mirelleinspo.com/blog/nail-basics/what-is-gel-polish", "title": "What Is Gel Polish & How Does It Actually Work?", "anchor_text": "how gel polish actually cures under a UV or LED lamp", "placement_note": "Is Miracle Gel a Real Gel Polish or Just Gel-Like? — explains the photoinitiator/photopolymerization mechanism this post references but doesn't need to re-explain in full", "link_type": "cross-site"},
+      {"url_or_slug": "https://mirelleinspo.com/blog/nail-polish-product-knowledge/opi-vs-essie-vs-sally-hansen", "title": "OPI vs Essie vs Sally Hansen: An Honest Verdict", "anchor_text": "how Sally Hansen's formulas stack up against OPI and Essie overall", "placement_note": "Is Sally Hansen Miracle Gel Worth It? — natural link for readers deciding between brands more broadly, not just this one product line", "link_type": "cross-site"}
+    ]
+  },
+  "section_12_voice_tone": {
+    "blog_gen_instruction": "This is the voice for this specific post. Layer on top of Mirellé editorial framework. Do not default to generic AI tone.",
+    "recommended_voice": "Honest tester / straight-talking friend",
+    "tone_characteristics": [
+      "Direct and unhedging — states the realistic verdict rather than qualifying everything",
+      "Warm but not gushing — avoids brand-ad language like 'game changer' unless quoting a user",
+      "Practical and specific — numbers over adjectives",
+      "Empathetic to frustration — acknowledges chipping/streaking complaints without dismissing them",
+      "Confident closer — ends sections with a clear takeaway, not a shrug"
+    ],
+    "language_style": "Second person ('you'), short declarative sentences, concrete numbers (days, coats, minutes) over vague claims, occasional light humor but never at the expense of clarity",
+    "audience_match": "This reader wants a knowledgeable friend who's actually tested the product to cut through marketing language and tell them straight whether it's worth their money and time — this voice delivers exactly that without either fawning or nitpicking"
+  },
+  "section_13_external_links": {
+    "blog_gen_instruction": "Include all external links where indicated. Supports E-E-A-T. Use anchor suggestion as guide — write naturally around it. Sourced from phase_3's best_external_sources_found (real fetched competitor pages), not from separate searches. May be empty (0-2 links) if none of the fetched pages qualified as genuinely citation-worthy — that is expected, not a gap to fill.",
+    "links": []
+  },
+  "section_14_execution_plan": {
+    "purpose": "Blog Gen Agent reads this section FIRST — before frontmatter, before writing a single word. Every value here is pre-calculated from the input file data. Blog Gen Agent locks all values and executes them exactly. This section exists to eliminate rewrite loops — every constraint is pre-decided here so there are zero surprises mid-write.",
+    "blog_gen_instruction": "READ THIS SECTION FIRST. Lock every value. Execute exactly. Do not recalculate, do not adjust, do not deviate.",
+    "calculated_by": "Input Gen Agent — calculated last, after all other sections are complete",
+    "block_1_keyword_execution": {
+      "primary_keyword": "sally hansen miracle gel reviews",
+      "top_5_density_baseline": 3,
+      "total_mention_target": "3 + 3 = 6 total mentions",
+      "first_100_words_plan": {
+        "rule": "Primary keyword MUST appear TWICE in the first 100 words. Mandatory. No exceptions.",
+        "mention_1": "sentence 1 of introduction — naming the post topic directly against the marketed claim",
+        "mention_2": "sentence 3-4 of introduction — reinforcing while framing the real-vs-claimed test angle"
+      },
+      "first_half_target": "4 mentions — first ~950 words. Run denser in first half.",
+      "second_half_target": "2 mentions — second ~950 words",
+      "strong_tag_rule": "EVERY single mention of the primary keyword — all 6 of them — wrapped in <strong> tags. No exceptions. Catch each one as it is written. Scan after every paragraph.",
+      "keywords_to_avoid_active": [
+        "opi reviews", "essie nail polish reviews", "opi nail envy reviews", "cnd shellac vs gelish",
+        "kiara sky reviews", "glamnetic reviews", "impress nails reviews", "olive and june reviews",
+        "dashing diva reviews", "color street reviews", "manime reviews", "static nails reviews",
+        "btartbox reviews", "melody susie reviews"
+      ]
+    },
+    "block_2_word_budget": {
+      "total_target": "1900 words — +/-50 words tolerance, never exceed",
+      "introduction": "220 words",
+      "conclusion": "180 words",
+      "h2_budgets": [
+        {"heading": "How Long Does Sally Hansen Miracle Gel Actually Last?", "budget": 280, "complexity": "medium"},
+        {"heading": "Is Miracle Gel a Real Gel Polish or Just Gel-Like?", "budget": 220, "complexity": "medium"},
+        {"heading": "How to Apply Sally Hansen Miracle Gel the Right Way", "budget": 240, "complexity": "low"},
+        {"heading": "Common Problems (and Real Fixes) Sally Hansen Miracle Gel Users Run Into", "budget": 260, "complexity": "high"},
+        {"heading": "Sally Hansen Miracle Gel vs a Salon Gel Manicure", "budget": 220, "complexity": "medium"},
+        {"heading": "Is Sally Hansen Miracle Gel Bad for Your Nails?", "budget": 180, "complexity": "medium"},
+        {"heading": "How to Remove Sally Hansen Miracle Gel Without Damage", "budget": 160, "complexity": "low"},
+        {"heading": "Is Sally Hansen Miracle Gel Worth It?", "budget": 140, "complexity": "low"}
+      ],
+      "tracking_rule": "Track running word total at the end of every H2 section. If a section is running over budget — cut before moving to the next section. Do not compensate later."
+    },
+    "block_3_image_plan": {
+      "total_images": 7,
+      "hero_image": "frontmatter only — NEVER appears in post body",
+      "body_images": 6,
+      "assignments": [
+        {"image_number": 1, "place_after": "How Long Does Sally Hansen Miracle Gel Actually Last?", "image_type": "standard_inspiration", "section_context": "Finished manicure showing a fresh, glossy Miracle Gel application in a popular shade"},
+        {"image_number": 2, "place_after": "Is Miracle Gel a Real Gel Polish or Just Gel-Like?", "image_type": "standard_inspiration", "section_context": "Close-up of the two-step bottle set (color + top coat) styled attractively, not a process/hands shot"},
+        {"image_number": 3, "place_after": "How to Apply Sally Hansen Miracle Gel the Right Way", "image_type": "standard_inspiration", "section_context": "Well-applied, smooth, even-coverage manicure result in a bold shade demonstrating clean application"},
+        {"image_number": 4, "place_after": "Common Problems (and Real Fixes) Sally Hansen Miracle Gel Users Run Into", "image_type": "standard_inspiration", "section_context": "A flawless, chip-free manicure several days old to contrast against the described failure points, still a finished-look shot not a defect close-up"},
+        {"image_number": 5, "place_after": "Sally Hansen Miracle Gel vs a Salon Gel Manicure", "image_type": "standard_inspiration", "section_context": "Elegant neutral or classic red shade manicure that could pass for either salon or at-home result"},
+        {"image_number": 6, "place_after": "Is Sally Hansen Miracle Gel Worth It?", "image_type": "standard_inspiration", "section_context": "Final aspirational shot — polished, camera-ready manicure in a popular seasonal shade"}
+      ],
+      "image_type_rule": {
+        "default": "standard_inspiration — an actual nail look, styled and shot, related to the topic. This is the default for the large majority of image slots in nearly every post.",
+        "infographic_allowed_when": "Not applicable here — informational intent with no comparison table or step-sequence need strong enough to justify one",
+        "how_many_infographics": 0,
+        "banned_absolutely": "NEVER a tool/equipment image (hands holding a file, tools laid out, application/process shots showing hands or tools at work) in any slot. NEVER a photo-style side-by-side nail-to-nail comparison image.",
+        "note_for_blog_gen": "Blog Gen Agent follows the image_type flagged here exactly per slot — it does not decide standard vs infographic on its own mid-write."
+      },
+      "path_rule": "/images/blog/nail-brand-reviews/sally-hansen-miracle-gel-reviews/filename.webp — topic_slug in path, slug folder, leading slash"
+    },
+    "block_4_opening_technique_assignments": {
+      "rule": "No two consecutive sections use the same technique. Conclusion = Technique 1 or 3 only.",
+      "assignments": [
+        {"section": "Introduction", "technique": "Technique 1 — The Claim"},
+        {"section": "How Long Does Sally Hansen Miracle Gel Actually Last?", "technique": "Technique 2 — The Direct Answer"},
+        {"section": "Is Miracle Gel a Real Gel Polish or Just Gel-Like?", "technique": "Technique 3 — The Reframe"},
+        {"section": "How to Apply Sally Hansen Miracle Gel the Right Way", "technique": "Technique 4 — The Walkthrough Opener"},
+        {"section": "Common Problems (and Real Fixes) Sally Hansen Miracle Gel Users Run Into", "technique": "Technique 2 — The Direct Answer"},
+        {"section": "Sally Hansen Miracle Gel vs a Salon Gel Manicure", "technique": "Technique 3 — The Reframe"},
+        {"section": "Is Sally Hansen Miracle Gel Bad for Your Nails?", "technique": "Technique 2 — The Direct Answer"},
+        {"section": "How to Remove Sally Hansen Miracle Gel Without Damage", "technique": "Technique 4 — The Walkthrough Opener"},
+        {"section": "Conclusion", "technique": "Technique 1 — The Claim"}
+      ],
+      "banned_opener_rule": "Check every opener against banned_opening_approaches in blog gen prompt before writing the second sentence"
+    },
+    "block_5_link_placements": {
+      "rule": "Every link placed exactly where specified. Anchor texts used verbatim — never rewritten. Links woven into prose naturally — never standalone CTAs.",
+      "links": [
+        {"anchor_text": "OPI reviews", "full_url": "/blog/nail-brand-reviews/opi-reviews", "place_in_section": "Sally Hansen Miracle Gel vs a Salon Gel Manicure", "placement_context": "When situating Miracle Gel within the broader drugstore-vs-prestige nail polish landscape", "link_type": "cluster-pillar"},
+        {"anchor_text": "CND Shellac vs Gelish comparison", "full_url": "/blog/nail-brand-reviews/cnd-shellac-vs-gelish", "place_in_section": "Is Miracle Gel a Real Gel Polish or Just Gel-Like?", "placement_context": "When contrasting Miracle Gel's non-photoinitiator formula against true UV-cured gel systems", "link_type": "cluster-spoke"},
+        {"anchor_text": "Kiara Sky dip powder reviews", "full_url": "/blog/nail-brand-reviews/kiara-sky-reviews", "place_in_section": "Sally Hansen Miracle Gel vs a Salon Gel Manicure", "placement_context": "When mentioning dip powder as another no-UV-lamp alternative format worth considering", "link_type": "cluster-spoke"},
+        {"anchor_text": "how gel polish actually cures under a UV or LED lamp", "full_url": "https://mirelleinspo.com/blog/nail-basics/what-is-gel-polish", "place_in_section": "Is Miracle Gel a Real Gel Polish or Just Gel-Like?", "placement_context": "When explaining photopolymerization briefly without needing to fully re-explain the mechanism in this post", "link_type": "cross-site"},
+        {"anchor_text": "how Sally Hansen's formulas stack up against OPI and Essie overall", "full_url": "https://mirelleinspo.com/blog/nail-polish-product-knowledge/opi-vs-essie-vs-sally-hansen", "place_in_section": "Is Sally Hansen Miracle Gel Worth It?", "placement_context": "For readers deciding between brands broadly rather than just this one product line", "link_type": "cross-site"}
+      ]
+    },
+    "block_6_aeo_geo_plan": {
+      "aeo_assignments": [
+        {"aeo_term": "Does Sally Hansen Miracle Gel really last 14 days?", "assigned_to_section": "How Long Does Sally Hansen Miracle Gel Actually Last?", "execution": "Write a direct 2-3 sentence answer paragraph IMMEDIATELY after the H2 heading — before any elaboration. This is what gets picked up by AI answer engines."},
+        {"aeo_term": "Is Sally Hansen Miracle Gel a real gel polish or just gel-like?", "assigned_to_section": "Is Miracle Gel a Real Gel Polish or Just Gel-Like?", "execution": "Write a direct 2-3 sentence answer paragraph immediately after the H2 heading stating the photoinitiator distinction plainly"},
+        {"aeo_term": "Do you need a UV or LED lamp for Sally Hansen Miracle Gel?", "assigned_to_section": "Is Miracle Gel a Real Gel Polish or Just Gel-Like?", "execution": "Answer within the same section's opening paragraph — no, natural light only, stated plainly"},
+        {"aeo_term": "Is Sally Hansen Miracle Gel bad for your nails?", "assigned_to_section": "Is Sally Hansen Miracle Gel Bad for Your Nails?", "execution": "Write a direct 2-3 sentence answer paragraph immediately after the H2 heading"},
+        {"aeo_term": "Is Sally Hansen Miracle Gel worth the money?", "assigned_to_section": "Is Sally Hansen Miracle Gel Worth It?", "execution": "Write a direct 2-3 sentence verdict paragraph immediately after the H2 heading"}
+      ],
+      "geo_entity_statements": [
+        {"entity": "Photoinitiator", "assigned_to_section": "Is Miracle Gel a Real Gel Polish or Just Gel-Like?", "execution": "Write a clear declarative definition sentence — confident, no hedging. Extractable by AI as a citation."},
+        {"entity": "Miracle Gel Top Coat", "assigned_to_section": "How to Apply Sally Hansen Miracle Gel the Right Way", "execution": "Write a clear declarative sentence defining its role as the required curing-activator step, distinct from a standard top coat"}
+      ]
+    },
+    "block_7_active_constraints": {
+      "em_dash_banned": "Long em dash does not appear anywhere. If one forms while writing — stop, replace with: comma / new sentence / parentheses / but / restructure.",
+      "banned_vocab_watch": ["game changer", "elevate", "unlock", "elevated", "seamless", "effortless", "must-have", "holy grail"],
+      "american_english_active": "color, recognize, -ize, -or — every instance, no exceptions. This post uses American English, not British.",
+      "keyword_density_reminder": "After every 2 H2 sections — count current keyword mentions. Verify running total is on track to hit 6 total. First half must run denser than second half. Adjust if needed.",
+      "image_path_reminder": "/images/blog/nail-brand-reviews/sally-hansen-miracle-gel-reviews/filename.webp — topic_slug in path always",
+      "internal_link_url_reminder": "Full correct paths only. Cluster links = /blog/nail-brand-reviews/[slug]. Cross-site links = exact URL as discovered. Never bare /slug.",
+      "hero_image_reminder": "Hero = frontmatter only. Never place hero image in body.",
+      "strong_tag_reminder": "Every primary keyword mention = <strong> tags. Scan after every paragraph."
+    }
+  }
+}
