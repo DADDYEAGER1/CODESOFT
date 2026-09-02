@@ -1,0 +1,294 @@
+{
+  "section_1_file_authority": {
+    "statement": "THIS FILE IS THE SINGLE SOURCE OF TRUTH FOR THE BLOG GEN AGENT. All values in POST_CONSTANTS are hardcoded — Blog Gen Agent does not ask, adjust, or override them."
+  },
+  "section_2_post_constants": {
+    "slug": "miniluxe-reviews",
+    "topic_slug": "salon-reviews",
+    "canonical": "https://mirelleinspo.com/blog/salon-reviews/miniluxe-reviews",
+    "post_type": "spoke",
+    "intent": "informational",
+    "word_count": 2400,
+    "image_count": 7,
+    "show_inspo_gallery_link": false,
+    "template": "posts",
+    "hero_dimensions": "1200x675",
+    "category": "Salon Reviews",
+    "publish_date": "2026-09-03",
+    "author": "jyoti-mirelle"
+  },
+  "section_3_cluster_snapshot": {
+    "pillar_slug": "regal-nails-reviews",
+    "pillar_title": "Regal Nails Reviews: What to Know Before You Go",
+    "pillar_primary_keyword": "regal nails reviews",
+    "this_post_slug": "miniluxe-reviews",
+    "this_post_role": "spoke",
+    "show_inspo_gallery_link_cluster_default": false,
+    "keywords_to_avoid": [
+      "regal nails reviews", "davi nails reviews", "bellacures reviews", "chillhouse reviews",
+      "glosslab reviews", "tenoverten reviews", "paintbox nails reviews", "is my nail salon safe",
+      "nail bar vs nail salon"
+    ]
+  },
+  "section_4_serp_analysis": {
+    "blog_gen_instruction": "The SERP for this exact query is dominated by review-aggregator platforms, not editorial blog content. Use this as the outperform strategy: be the one genuinely written, synthesized guide where aggregators only offer raw star ratings.",
+    "competitor_gaps": [
+      "No page anywhere synthesizes MiniLuxe's ratings ACROSS platforms (Yelp per-location vs Glassdoor vs Trustpilot vs TripAdvisor) into one coherent picture — each platform is siloed",
+      "No consumer-facing page explains actual current pricing ($39 pedicure baseline, $25-42 manicure, $10-25 add-ons) alongside the reviews",
+      "No page addresses the recurring 'surprised by the poor reviews vs my good experience' pattern seen repeatedly across TripAdvisor/Yelp comments",
+      "No page connects MiniLuxe's ownership of Paintbox Nails (also in this cluster) for readers comparing sister brands",
+      "No page covers the clean-beauty/non-toxic 8-free polish angle as a reason people specifically seek out MiniLuxe over a standard salon"
+    ],
+    "missing_semantic_territory": [
+      "'8-free polish' and 'clean beauty nail salon' — brand-owned semantic territory found on MiniLuxe's own product pages, absent from any third-party review coverage",
+      "'hospital-grade sterilization' / 'clean lab' — MiniLuxe's specific brand vocabulary, unused by aggregators",
+      "'MiniLuxe Anywhere' (the at-home mobile service) — a distinct offering with its own Trustpilot page, never connected to the salon review question by any single source",
+      "location-specific rating spread (Brentwood 4.6★ vs Boston Newbury St. mixed) — no source explains why ratings vary so much location to location"
+    ],
+    "our_strategic_approach": "Because no editorial 'MiniLuxe reviews' article exists anywhere in the current SERP — only raw aggregator listings — this post's advantage is simply being the first real, synthesized answer to the query. Pull actual rating data from Yelp (79-368 reviews per location, 3.8-4.6★ range), Glassdoor (3.7★ employee rating, relevant for service-quality signal), Trustpilot (MiniLuxe Anywhere, 27+ reviews), and TripAdvisor (3.0★, 24 reviews, sharply mixed) into one clear picture. Pair that with real pricing ($39 pedicure, $25 base manicure, $10-25 gel/add-ons) and the clean-beauty differentiation (8-free vegan polish, hospital-grade autoclave sterilization) that drives people to seek MiniLuxe out over a generic salon in the first place. Structurally, lead with the rating synthesis competitors don't offer, then explain the price-to-experience trade-off directly, since that is the exact decision the searcher is trying to make.",
+    "top_5_fetched_pages_summary": [
+      { "url": "https://www.yelp.com/biz/miniluxe-brentwood-los-angeles", "word_count": "N/A — directory listing, not editorial", "h2_count": 0, "keyword_mentions": 0, "note": "160 reviews, high rating; raw star/review data only, no analysis" },
+      { "url": "https://www.tripadvisor.com/Attraction_Review-g60745-d4301654-Reviews-Mini_Luxe-Boston_Massachusetts.html", "word_count": "N/A — directory listing", "h2_count": 0, "keyword_mentions": 0, "note": "24 reviews, 3.0★, sharply polarized; 'surprised by poor reviews' pattern visible across multiple entries" },
+      { "url": "https://www.glassdoor.com/Reviews/Miniluxe-Reviews-E888811.htm", "word_count": "N/A — directory listing", "h2_count": 0, "keyword_mentions": 0, "note": "211 employee reviews, 3.7★; useful for service-consistency signal, not a customer review source" },
+      { "url": "https://www.trustpilot.com/review/anywhere.miniluxe.com", "word_count": "N/A — directory listing", "h2_count": 0, "keyword_mentions": 0, "note": "27+ reviews for MiniLuxe Anywhere mobile service specifically, distinct from studio reviews" },
+      { "url": "https://www.wbur.org/news/2015/05/18/miniluxe-nail-salons", "word_count": 820, "h2_count": 0, "keyword_mentions": 0, "note": "Real editorial journalism (NPR affiliate) on business model/pricing/ethics — dated 2015 but factually durable; no H2 structure, narrative long-form" }
+    ],
+    "top_5_word_count_average": "N/A — no editorial competitor pages exist for this exact query; word count set independently per phase_3b rationale below",
+    "top_5_keyword_density_average": "N/A — same reason; mention target set independently below",
+    "best_external_sources_found": [
+      { "url": "https://www.wbur.org/news/2015/05/18/miniluxe-nail-salons", "why": "Real NPR-affiliate journalism on MiniLuxe's founding, business model, and pricing philosophy — genuinely citation-worthy and adds E-E-A-T" }
+    ]
+  },
+  "section_5_audience_intelligence": {
+    "who_they_are": "Someone who has heard of MiniLuxe (via a friend, a 'clean beauty' recommendation, or its premium positioning) and is checking real reviews before booking, OR an existing customer who had a bad experience and is checking if their location is an outlier. Moderate beauty-consciousness; price-aware but willing to pay a premium for a genuinely better/safer experience.",
+    "what_they_want_from_this_post": "A clear, honest answer: is MiniLuxe actually better than a regular nail salon, worth the higher price, and consistent across locations — or is it hype that doesn't hold up.",
+    "what_frustrates_them": "Every existing source is either a single-location star rating with no context, or a wall of unfiltered reviews with no synthesis — nothing tells them what the reviews actually mean in aggregate or why quality seems to vary so much by location.",
+    "top_5_pain_points": [
+      "Can't tell if a bad review is about their specific location or the brand overall",
+      "Confused about actual pricing — base prices look reasonable but add-ons (gel, French tip, deluxe upgrades) push the total up unexpectedly",
+      "Uncertain if the 'clean beauty'/non-toxic claims are marketing or a real differentiator worth paying for",
+      "Worried about inconsistent technician quality after reading conflicting reviews from the same location",
+      "Don't know how MiniLuxe compares to Paintbox (its own sister brand) or other premium salons in the cluster"
+    ],
+    "exact_user_phrases": [
+      "is miniluxe worth it",
+      "was very surprised to read the poor reviews here",
+      "i wanted to like miniluxe",
+      "such a disappointment",
+      "nothing special for the price",
+      "worry-free manicure",
+      "expensive disappointment",
+      "hands down my favorite nail salon in the area"
+    ],
+    "intent_content_signals": [
+      "Wants concrete numbers (star ratings, review counts, prices), not vague praise",
+      "Responds to acknowledgment that experience varies by location rather than a blanket verdict",
+      "Wants the non-toxic/clean-beauty claims explained plainly, not just repeated as a slogan",
+      "Appreciates direct, decisive framing ('worth it if X, skip if Y') over hedging"
+    ]
+  },
+  "section_6_semantic_keyword_data": {
+    "primary_keyword": "miniluxe reviews",
+    "keyword_variations": ["miniluxe review", "miniluxe nail salon reviews", "miniluxe studio reviews", "reviews of miniluxe", "miniluxe customer reviews"],
+    "cluster_keywords": ["miniluxe pricing", "miniluxe pedicure cost", "miniluxe locations", "clean beauty nail salon", "non-toxic nail salon", "miniluxe vs regular nail salon", "miniluxe anywhere reviews", "is miniluxe worth it"],
+    "lsi_terms": ["8-free polish", "hospital-grade sterilization", "clean lab", "performance polish", "signature manicure", "signature pedicure", "vegan cruelty-free polish", "MiniLuxe Anywhere", "gel polish removal", "studio locations", "Boston-based nail salon", "franchise expansion", "sanitation standards", "deluxe pedicure", "Paintbox acquisition"],
+    "aeo_terms": [
+      "is miniluxe worth the price",
+      "how much does a miniluxe pedicure cost",
+      "is miniluxe non-toxic",
+      "what makes miniluxe different from a regular nail salon",
+      "does miniluxe use hospital-grade sterilization",
+      "how many miniluxe locations are there",
+      "what is miniluxe anywhere",
+      "is miniluxe owned by paintbox"
+    ],
+    "technical_terms": ["8-free formula", "autoclave sterilization", "gel polish system", "performance polish (Dazzle Dry)", "cuticle care", "callus treatment"],
+    "user_language": ["worth it or not", "nothing special for the price", "surprised by the reviews", "wanted to like it", "hit or miss depending on location", "pricey for what you get", "worry-free manicure", "clean freak about hygiene"]
+  },
+  "section_7_voice_and_ai_queries": {
+    "queries": [
+      "Is MiniLuxe actually worth the higher price?",
+      "How much does a manicure cost at MiniLuxe?",
+      "How much does a pedicure cost at MiniLuxe?",
+      "What makes MiniLuxe different from a regular nail salon?",
+      "Does MiniLuxe really use hospital-grade sterilization?",
+      "Is MiniLuxe polish actually non-toxic?",
+      "Why are MiniLuxe reviews so inconsistent?",
+      "What states does MiniLuxe operate in?",
+      "What is MiniLuxe Anywhere?",
+      "Does MiniLuxe own Paintbox Nails?",
+      "Is MiniLuxe good for gel manicures?",
+      "How many MiniLuxe locations are there in 2026?",
+      "Is MiniLuxe vegan and cruelty-free?",
+      "What do employees say about working at MiniLuxe?",
+      "Is MiniLuxe expanding to new cities?"
+    ]
+  },
+  "section_8_hook_and_ctr": {
+    "real_serp_findings_summary": "Every ranking result for 'miniluxe reviews' is a raw aggregator listing (Yelp, Glassdoor, TripAdvisor, Trustpilot) with star ratings but zero synthesis or analysis. No editorial competitor exists.",
+    "selected_option_rationale": "Leads with the concrete numeric range (4.6-star vs 2-star) that mirrors what the reader already suspects from skimming aggregator pages, then promises the pricing/verdict info those pages don't give — directly answering the decision-stage query.",
+    "title": "MiniLuxe Reviews: Ratings, Pricing & Honest Verdict 2026",
+    "title_char_count": 57,
+    "meta_description": "From 4.6-star locations to 2-star horror stories — see what real MiniLuxe customers say before you book, plus what it actually costs.",
+    "meta_char_count": 135,
+    "intro_hook_brief": "Open by naming the exact tension the reader has already noticed: ratings for MiniLuxe swing wildly by location, from glowing to disappointed, so the intro should validate that confusion in the first sentence, then promise a synthesized, decisive answer.",
+    "first_h2_hook_direction": "Apply the 'ratings swing wildly' angle to the first H2 by opening it with the aggregate numbers across platforms before breaking down what's really behind the variation."
+  },
+  "section_9_search_journey": {
+    "reader_arrival_state": "Uncertain and slightly skeptical — has seen mixed signals about MiniLuxe and wants a real, decisive answer before spending premium money.",
+    "journey_arc": [
+      "Confirm the rating spread is real and show the numbers across platforms",
+      "Explain what's actually behind the inconsistency (location, technician, service type)",
+      "Break down real pricing so cost expectations are set correctly",
+      "Explain the clean-beauty/non-toxic differentiation plainly so the reader can judge if it's worth paying for",
+      "Deliver a clear, confident verdict on who MiniLuxe is right for"
+    ],
+    "promise_to_deliver": "A synthesized, numbers-backed answer to whether MiniLuxe's reviews justify its premium price — something no single aggregator page currently offers.",
+    "exit_state": "Confident and decided — knows exactly what to expect, what it costs, and whether it fits their priorities."
+  },
+  "section_10_content_structure": {
+    "h1": "MiniLuxe Reviews: What Customers Really Say in 2026",
+    "h2_structure": [
+      "MiniLuxe Reviews at a Glance: Ratings Across Every Platform",
+      "Why MiniLuxe Reviews Vary So Much by Location",
+      "How Much Does MiniLuxe Actually Cost?",
+      "Is MiniLuxe's Non-Toxic, Clean Beauty Promise Real?",
+      "What MiniLuxe Anywhere Reviews Say About the At-Home Service",
+      "MiniLuxe vs a Regular Nail Salon: What You're Really Paying For",
+      "Where MiniLuxe Is Located in 2026",
+      "Final Verdict: Is MiniLuxe Worth It?"
+    ],
+    "word_budget": {
+      "introduction": "230",
+      "conclusion": "180",
+      "per_h2": [
+        { "heading": "MiniLuxe Reviews at a Glance: Ratings Across Every Platform", "budget": 340 },
+        { "heading": "Why MiniLuxe Reviews Vary So Much by Location", "budget": 300 },
+        { "heading": "How Much Does MiniLuxe Actually Cost?", "budget": 320 },
+        { "heading": "Is MiniLuxe's Non-Toxic, Clean Beauty Promise Real?", "budget": 300 },
+        { "heading": "What MiniLuxe Anywhere Reviews Say About the At-Home Service", "budget": 260 },
+        { "heading": "MiniLuxe vs a Regular Nail Salon: What You're Really Paying For", "budget": 280 },
+        { "heading": "Where MiniLuxe Is Located in 2026", "budget": 220 },
+        { "heading": "Final Verdict: Is MiniLuxe Worth It?", "budget": 200 }
+      ]
+    }
+  },
+  "section_11_internal_links": {
+    "blog_gen_instruction": "Every link below must appear in the post. Cluster links use anchor texts verbatim. Total internal links must not exceed 6.",
+    "all_internal_links": [
+      { "url_or_slug": "/blog/salon-reviews/regal-nails-reviews", "title": "Regal Nails Reviews: What to Know Before You Go", "anchor_text": "Regal Nails reviews", "placement_note": "MiniLuxe vs a Regular Nail Salon section — natural comparison point for premium vs budget chain", "link_type": "cluster-pillar" },
+      { "url_or_slug": "/blog/salon-reviews/davi-nails-reviews", "title": "DaVi Nails Reviews: Walmart's In-Store Nail Salon Explained", "anchor_text": "DaVi Nails reviews inside Walmart", "placement_note": "MiniLuxe vs a Regular Nail Salon section — budget-tier contrast", "link_type": "cluster-spoke" },
+      { "url_or_slug": "/blog/salon-reviews/bellacures-reviews", "title": "Bellacures Reviews: Inside LA's Hospital-Grade Nail Salon", "anchor_text": "Bellacures reviews from Los Angeles clients", "placement_note": "Is MiniLuxe's Non-Toxic, Clean Beauty Promise Real? section — direct comparison to another hospital-grade-sanitation brand", "link_type": "cluster-spoke" },
+      { "url_or_slug": "/blog/salon-reviews/how-to-tell-if-nail-salon-is-safe", "title": "How to Tell If a Nail Salon Is Actually Safe (Before You Book)", "anchor_text": "how to tell if a nail salon is safe", "placement_note": "Is MiniLuxe's Non-Toxic, Clean Beauty Promise Real? section — safety cross-reference", "link_type": "cluster-spoke" },
+      { "url_or_slug": "/blog/salon-reviews/paintbox-nails-reviews", "title": "Paintbox Nails Reviews: NYC's Celebrity Nail Art Studio", "anchor_text": "reviews of Paintbox, the celebrity nail art studio MiniLuxe now owns", "placement_note": "MiniLuxe Anywhere / brand-family section — MiniLuxe acquired Paintbox in 2022, real and relevant connection found in research", "link_type": "cross-site" }
+    ]
+  },
+  "section_12_voice_tone": {
+    "recommended_voice": "Confident, numbers-literate friend",
+    "tone_characteristics": ["Direct and decisive rather than hedging", "Comfortable citing specific numbers (ratings, prices) as authority", "Empathetic to the reader's confusion from conflicting reviews", "Skeptical-but-fair toward brand marketing claims", "Warm, not clinical, when delivering the final verdict"],
+    "language_style": "Second person, short declarative sentences for verdicts, slightly longer explanatory sentences when unpacking why ratings vary. Minimal hedging language ('might', 'could') in favor of direct statements grounded in the cited numbers.",
+    "audience_match": "This reader wants to be told something clearly, not walked through hedged possibilities — matches a voice that synthesizes conflicting data into a confident, specific verdict."
+  },
+  "section_13_external_links": {
+    "links": [
+      { "url": "https://www.wbur.org/news/2015/05/18/miniluxe-nail-salons", "context": "When explaining MiniLuxe's founding story, pricing philosophy, and ethical-labor positioning", "anchor_suggestion": "an in-depth look at MiniLuxe's founding and business model" }
+    ]
+  },
+  "section_14_execution_plan": {
+    "calculated_by": "Input Gen Agent",
+    "block_1_keyword_execution": {
+      "primary_keyword": "miniluxe reviews",
+      "top_5_density_baseline": "N/A — no editorial competitors exist; baseline set independently at 10 to align with post length and natural density for a 2400-word review post",
+      "total_mention_target": "10-12 total mentions",
+      "first_100_words_plan": {
+        "rule": "Primary keyword MUST appear twice in the first 100 words",
+        "mention_1": "sentence 1 of introduction — naming the rating-spread tension",
+        "mention_2": "sentence 3-4 of introduction — promising the synthesized answer"
+      },
+      "first_half_target": "6-7 mentions — first 1200 words",
+      "second_half_target": "4-5 mentions — second 1200 words",
+      "strong_tag_rule": "EVERY mention of 'MiniLuxe reviews' wrapped in <strong> tags. Scan after every paragraph.",
+      "keywords_to_avoid_active": ["regal nails reviews", "davi nails reviews", "bellacures reviews", "chillhouse reviews", "glosslab reviews", "tenoverten reviews", "paintbox nails reviews", "is my nail salon safe", "nail bar vs nail salon"]
+    },
+    "block_2_word_budget": {
+      "total_target": "2400 words, ±50 tolerance",
+      "introduction": "230",
+      "conclusion": "180",
+      "h2_budgets": [
+        { "heading": "MiniLuxe Reviews at a Glance: Ratings Across Every Platform", "budget": 340, "complexity": "medium" },
+        { "heading": "Why MiniLuxe Reviews Vary So Much by Location", "budget": 300, "complexity": "medium" },
+        { "heading": "How Much Does MiniLuxe Actually Cost?", "budget": 320, "complexity": "low" },
+        { "heading": "Is MiniLuxe's Non-Toxic, Clean Beauty Promise Real?", "budget": 300, "complexity": "medium" },
+        { "heading": "What MiniLuxe Anywhere Reviews Say About the At-Home Service", "budget": 260, "complexity": "low" },
+        { "heading": "MiniLuxe vs a Regular Nail Salon: What You're Really Paying For", "budget": 280, "complexity": "medium" },
+        { "heading": "Where MiniLuxe Is Located in 2026", "budget": 220, "complexity": "low" },
+        { "heading": "Final Verdict: Is MiniLuxe Worth It?", "budget": 200, "complexity": "high" }
+      ],
+      "tracking_rule": "Track running word total at the end of every H2. Cut before moving on if over budget."
+    },
+    "block_3_image_plan": {
+      "total_images": 7,
+      "hero_image": "frontmatter only — never in body",
+      "body_images": 6,
+      "assignments": [
+        { "image_number": 1, "place_after": "MiniLuxe Reviews at a Glance: Ratings Across Every Platform", "image_type": "standard_inspiration", "section_context": "Clean, styled shot of a finished MiniLuxe-style manicure — bright, minimalist salon aesthetic" },
+        { "image_number": 2, "place_after": "Why MiniLuxe Reviews Vary So Much by Location", "image_type": "standard_inspiration", "section_context": "Nail look showcasing a signature or performance polish finish" },
+        { "image_number": 3, "place_after": "How Much Does MiniLuxe Actually Cost?", "image_type": "standard_inspiration", "section_context": "Simple, elegant single-color manicure representing the base service tier" },
+        { "image_number": 4, "place_after": "Is MiniLuxe's Non-Toxic, Clean Beauty Promise Real?", "image_type": "standard_inspiration", "section_context": "Soft, natural-looking nail set evoking the 'clean beauty' positioning" },
+        { "image_number": 5, "place_after": "What MiniLuxe Anywhere Reviews Say About the At-Home Service", "image_type": "standard_inspiration", "section_context": "Cozy at-home styled nail look, evoking the mobile/at-home service" },
+        { "image_number": 6, "place_after": "MiniLuxe vs a Regular Nail Salon: What You're Really Paying For", "image_type": "standard_inspiration", "section_context": "Premium gel manicure look to represent the higher price tier" }
+      ],
+      "image_type_rule": {
+        "default": "standard_inspiration for all 6 body slots — no comparison or step-sequence content genuinely required for this informational post",
+        "banned_absolutely": "No tool/equipment images, no literal side-by-side comparison photos"
+      },
+      "path_rule": "/images/blog/salon-reviews/miniluxe-reviews/filename.webp"
+    },
+    "block_4_opening_technique_assignments": {
+      "rule": "No two consecutive sections use the same technique. Conclusion = Technique 1 or 3 only.",
+      "assignments": [
+        { "section": "Introduction", "technique": "Technique 1 — The Claim" },
+        { "section": "MiniLuxe Reviews at a Glance", "technique": "Technique 2 — The Number" },
+        { "section": "Why MiniLuxe Reviews Vary So Much by Location", "technique": "Technique 3 — The Reframe" },
+        { "section": "How Much Does MiniLuxe Actually Cost?", "technique": "Technique 2 — The Number" },
+        { "section": "Is MiniLuxe's Non-Toxic, Clean Beauty Promise Real?", "technique": "Technique 3 — The Reframe" },
+        { "section": "What MiniLuxe Anywhere Reviews Say", "technique": "Technique 1 — The Claim" },
+        { "section": "MiniLuxe vs a Regular Nail Salon", "technique": "Technique 3 — The Reframe" },
+        { "section": "Where MiniLuxe Is Located in 2026", "technique": "Technique 2 — The Number" },
+        { "section": "Conclusion", "technique": "Technique 1 — The Claim" }
+      ],
+      "banned_opener_rule": "Check every opener against banned_opening_approaches in blog gen prompt before writing the second sentence"
+    },
+    "block_5_link_placements": {
+      "links": [
+        { "anchor_text": "Regal Nails reviews", "full_url": "/blog/salon-reviews/regal-nails-reviews", "place_in_section": "MiniLuxe vs a Regular Nail Salon: What You're Really Paying For", "placement_context": "When contrasting premium vs budget-chain pricing", "link_type": "cluster-pillar" },
+        { "anchor_text": "DaVi Nails reviews inside Walmart", "full_url": "/blog/salon-reviews/davi-nails-reviews", "place_in_section": "MiniLuxe vs a Regular Nail Salon: What You're Really Paying For", "placement_context": "Naming the budget-tier alternative", "link_type": "cluster-spoke" },
+        { "anchor_text": "Bellacures reviews from Los Angeles clients", "full_url": "/blog/salon-reviews/bellacures-reviews", "place_in_section": "Is MiniLuxe's Non-Toxic, Clean Beauty Promise Real?", "placement_context": "Comparing to another hospital-grade-sanitation brand", "link_type": "cluster-spoke" },
+        { "anchor_text": "how to tell if a nail salon is safe", "full_url": "/blog/salon-reviews/how-to-tell-if-nail-salon-is-safe", "place_in_section": "Is MiniLuxe's Non-Toxic, Clean Beauty Promise Real?", "placement_context": "Cross-reference for broader safety guidance", "link_type": "cluster-spoke" },
+        { "anchor_text": "reviews of Paintbox, the celebrity nail art studio MiniLuxe now owns", "full_url": "/blog/salon-reviews/paintbox-nails-reviews", "place_in_section": "What MiniLuxe Anywhere Reviews Say About the At-Home Service", "placement_context": "Noting the 2022 MiniLuxe-Paintbox acquisition found in research", "link_type": "cross-site" }
+      ]
+    },
+    "block_6_aeo_geo_plan": {
+      "aeo_assignments": [
+        { "aeo_term": "how much does a manicure cost at miniluxe", "assigned_to_section": "How Much Does MiniLuxe Actually Cost?", "execution": "Direct 2-3 sentence answer immediately after the H2 with the $25-42 manicure range and $39 pedicure baseline" },
+        { "aeo_term": "does miniluxe really use hospital-grade sterilization", "assigned_to_section": "Is MiniLuxe's Non-Toxic, Clean Beauty Promise Real?", "execution": "Direct answer confirming the autoclave/clean-lab claim with brand-sourced specifics" },
+        { "aeo_term": "what is miniluxe anywhere", "assigned_to_section": "What MiniLuxe Anywhere Reviews Say About the At-Home Service", "execution": "Direct 2-3 sentence definition of the mobile/at-home service before elaborating" },
+        { "aeo_term": "how many miniluxe locations are there in 2026", "assigned_to_section": "Where MiniLuxe Is Located in 2026", "execution": "Direct answer citing 18 U.S. locations across MA, TX, CT, FL" }
+      ],
+      "geo_entity_statements": [
+        { "entity": "8-free polish", "assigned_to_section": "Is MiniLuxe's Non-Toxic, Clean Beauty Promise Real?", "execution": "Clear declarative definition: free of the eight most common toxic nail polish ingredients including formaldehyde, toluene, and DBP" },
+        { "entity": "MiniLuxe Anywhere", "assigned_to_section": "What MiniLuxe Anywhere Reviews Say About the At-Home Service", "execution": "Clear declarative definition as MiniLuxe's mobile, at-home nail service platform" }
+      ]
+    },
+    "block_7_active_constraints": {
+      "em_dash_banned": "Long em dash does not appear anywhere.",
+      "banned_vocab_watch": ["elevate", "unleash", "seamless", "game-changer", "in today's world", "look no further", "dive in"],
+      "american_english_active": "color, recognize, -ize, -or — every instance",
+      "keyword_density_reminder": "After every 2 H2 sections, count mentions; verify on track for 10-12 total, denser in first half",
+      "image_path_reminder": "/images/blog/salon-reviews/miniluxe-reviews/filename.webp",
+      "internal_link_url_reminder": "Full correct paths only, /blog/salon-reviews/[slug] for cluster links",
+      "hero_image_reminder": "Hero = frontmatter only, never in body",
+      "strong_tag_reminder": "Every primary keyword mention = <strong> tags"
+    }
+  }
+}
