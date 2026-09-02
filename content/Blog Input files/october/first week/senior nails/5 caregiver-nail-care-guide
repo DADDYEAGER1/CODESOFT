@@ -1,0 +1,302 @@
+# INPUT FILE — Blog Gen Agent Source of Truth
+## Post: A Caregiver's Guide to Helping a Parent With Nail Care
+
+---
+
+## SECTION 1 — FILE AUTHORITY
+THIS FILE IS THE SINGLE SOURCE OF TRUTH FOR THE BLOG GEN AGENT. All values in POST_CONSTANTS are hardcoded — Blog Gen Agent does not ask, adjust, or override them. All keywords, H2 structure, audience intelligence, internal links, and tone defined here must be followed exactly.
+
+---
+
+## SECTION 2 — POST_CONSTANTS
+- **slug:** caregiver-nail-care-guide
+- **topic_slug:** senior-nails
+- **canonical:** https://mirelleinspo.com/blog/senior-nails/caregiver-nail-care-guide
+- **post_type:** spoke
+- **intent:** informational
+- **word_count:** 2350 (top-5 fetched average ≈2050 words; set above baseline — topic genuinely supports more due to dementia/diabetes safety sub-topics)
+- **image_count:** 7 (hero + 6 body — flat default rule, not tutorial/comparison/pillar/40+-slug)
+- **show_inspo_gallery_link:** false (from cluster_metadata.show_inspo_gallery_link_cluster_default — verbatim)
+- **template:** posts
+- **hero_dimensions:** 1200x675
+- **category:** Senior Nail Care
+- **publish_date:** 2026-09-10
+- **author:** jyoti-mirelle
+
+---
+
+## SECTION 3 — CLUSTER SNAPSHOT
+- **pillar_slug:** senior-nail-care-guide
+- **pillar_title:** Senior Nail Care: The Complete Guide to Healthy Nails After 65
+- **pillar_primary_keyword:** senior nail care
+- **this_post_slug:** caregiver-nail-care-guide
+- **this_post_role:** spoke
+- **show_inspo_gallery_link_cluster_default:** false
+- **keywords_to_avoid:** senior nail care, arthritis nail care, nail clippers for seniors, thick toenails elderly causes, is gel manicure safe for seniors, low maintenance nails for seniors, how often should seniors get manicure, nails for older women, best nail shape for mature hands, brittle nails after 50, elegant nail art for mature hands, french manicure for women over 50, gel vs acrylic nails for mature hands, nail care routine for mature hands, nail color for skin tone over 50, nail colors for mature hands, nail colors for women over 40, nail colors for women over 60, nail colors that age your hands, nail polish to hide veins and age spots, nail ridges after 50, nail shapes that make fingers look longer, nail trends for women over 50 2026, nail colors that make hands look younger, least damaging way to get nails done
+
+---
+
+## SECTION 4 — SERP ANALYSIS
+**Blog Gen instruction:** our_strategic_approach is a specific, evidence-based outperform strategy — use it to guide the introduction, conclusion, and depth decisions in relevant H2 sections.
+
+**competitor_gaps** (demand-validated on 2+ sources):
+- Dementia/cognitive-decline-specific nail care guidance — resistance, timing around calm periods, letting go of "perfect" results (validated: thecaregiversjourney.org, NIA, YouTube "Assisting a Person with Dementia with Nail Care")
+- Clear stop-and-call-a-professional trigger list for diabetes/blood thinners/circulation issues, in one place, aimed at a family caregiver rather than a clinician (validated: Achilles Foot and Ankle, Rithik's Mobile Foot Care, HOPE Amputation Prevention Center, multiple Kaiser/PeaceHealth caregiving pages)
+- Real emotional reassurance for a first-time, untrained caregiver who is anxious about hurting their parent (validated: Quora "best way to cut an elderly person's nails", BelleVie's "be gentle to calm their nerves" framing)
+
+**missing_semantic_territory:**
+- "nail care checklist" as an actual literal checklist format (validated: Friendly Faces "Nail Care Checklist for Seniors" section + Pinterest "Elderly Care Caregiving Checklist" boards) — none of the 5 fetched pages present this as a true scannable checklist
+- "how do I know if I'm hurting them" / signs of pain during trimming (validated: Quora threads + Achilles Foot and Ankle's "stop if the person reports sharp pain" guidance)
+
+**our_strategic_approach:** None of the 5 fetched pages combine a literal step-by-step checklist with an explicit stop/call-a-doctor decision tree — they either give loose narrative tips (Correct Choice, Friendly Faces) or a clinical procedure script (Nursing Assistant skills checklist) with no emotional register for a family member. This post will open by directly naming the caregiver's fear of hurting their parent, then deliver the same clinical rigor as the nursing-assistant checklist but in checklist-native format a non-professional can follow on their first attempt. It will be the only one of the six sources to explicitly address dementia-related resistance as its own consideration, and the only one to give a single unified "stop and call a professional" list instead of scattering diabetes/blood-thinner warnings across multiple paragraphs.
+
+**top_5_fetched_pages_summary:**
+1. correctchoicehomecare.com/nail-care-for-the-elderly-tips — ~950 words, 5 H2s, "elderly" mentioned 9x (not "caregiver" as primary term). Warm tone, good cuticle-safety detail, no literal checklist, no dementia angle.
+2. friendlyfaces.com/nail-care-and-hygiene-for-seniors-gentle-practices — ~850 words, 11 H2/H3s, includes an actual "Nail Care Checklist for Seniors" bullet list (strongest structural precedent found). No dementia coverage, no diabetes stop-triggers beyond one line.
+3. caregiveraction.org/grooming-tips-caregivers — ~700 words total, only ~120 words on nails specifically (buried under general grooming). Good dementia-routine framing applied broadly but not nail-specific.
+4. belleviecare.co.uk/care-for-elderly-fingernails-your-complete-guide — ~750 words, 8 H2s, genuine numbered step-by-step (Preparations → Trimming → Scrubbing → Hangnails → Moisturising), strongest step sequence found. No dementia angle, no diabetes stop-list.
+5. accesshomecareinc.com/clean-and-care-for-seniors-fingernails — ~450 words, 7 H2s, short and thin, decent "stay alert for signs of trouble" section but no depth.
+
+**top_5_word_count_average:** ~740 words
+**top_5_keyword_density_average:** 2 (none of the 5 pages use "caregiver nail care" as an exact phrase repeatedly; most use "elderly"/"senior" as the anchor term instead)
+**best_external_sources_found:** 
+- BelleVie Care (belleviecare.co.uk) — genuine editorial voice, real step sequence, care-industry authority
+- Friendly Faces Senior Care (friendlyfaces.com) — only source with an actual checklist format, care-industry authority
+
+---
+
+## SECTION 5 — AUDIENCE INTELLIGENCE
+**who_they_are:** Adult children (predominantly daughters/daughters-in-law, per caregiving demographic patterns referenced across sources) or informal family caregivers, mostly untrained, doing this for the first time or early in a parent's care journey. Not nail technicians, not medical professionals — often nervous about physically hurting their parent.
+
+**what_they_want_from_this_post:** A literal, followable checklist — supplies, steps in order, what "done right" looks like — that removes guesswork on their first attempt.
+
+**what_frustrates_them:** Existing content is either too clinical (nursing-assistant procedure scripts full of jargon like "barrier" and "resident") or too vague/narrative (warm blog posts with no concrete step order). Nothing tells them clearly when to stop and call a doctor instead of continuing.
+
+**top_5_pain_points:**
+1. Fear of cutting too short and causing bleeding/pain, especially not knowing their parent's exact pain threshold (Quora-validated)
+2. Uncertainty about diabetes/blood thinners — not knowing if it's safe to trim at home at all (Achilles Foot and Ankle, Rithik's, HOPE Amputation Prevention validated)
+3. Parent resisting or becoming agitated during nail care, especially with dementia (thecaregiversjourney.org, NIA validated)
+4. Not knowing what tools are actually needed vs. nice-to-have (BelleVie, Access Home Care validated)
+5. Not recognizing early infection signs before they become serious (BelleVie "onycholysis"/discoloration, Achilles Foot and Ankle validated)
+
+**exact_user_phrases:**
+- "what is the best way to cut an elderly persons nails" (Quora)
+- "things we need to be concerned of when cutting nails for elderly people" (Quora)
+- "I got a call today, an older man wants his toenails cutting, what steps should I do" (SalonGeek)
+- "help, I have no idea what to do" (paraphrased anxiety pattern, SalonGeek)
+- "nail care checklist" (Friendly Faces, Pinterest)
+- "how often should you cut an elderly person's nails" (search pattern)
+- "signs of infection" / "red or puffy" (BelleVie)
+- "don't trim or cut the cuticles" (multiple Kaiser/PeaceHealth sources)
+- "afraid of hurting them" (pattern across Quora + BelleVie's "be gentle to calm their nerves")
+- "cutting toenails on the elderly, help" (SalonGeek)
+
+**intent_content_signals:**
+- Numbered, sequential steps outperform narrative tips (BelleVie's structure is the strongest precedent)
+- A literal checklist format is explicitly requested by audience behavior (Pinterest board naming, Friendly Faces' checklist section)
+- Reassurance language ("be gentle," "you can do this") needs to sit alongside clinical precision, not replace it
+- A distinct "when to stop" list is more valuable to this audience than more trimming detail
+
+---
+
+## SECTION 6 — SEMANTIC KEYWORD DATA
+- **primary_keyword:** caregiver nail care checklist
+- **keyword_variations:** caregiver nail care guide, nail care checklist for caregivers, how to care for a senior's nails, caregiver nail trimming guide, family caregiver nail care, senior nail care checklist for caregivers
+- **cluster_keywords:** helping a parent with nail care, cutting an elderly parent's nails, nail care for someone you care for, first-time caregiver nail care, caregiver grooming checklist, safe nail trimming for seniors, nail care routine for caregivers, supplies for senior nail care, caregiver hygiene tasks, family caregiver checklist
+- **lsi_terms:** soak nails before trimming, trim straight across, avoid cutting cuticles, nail clippers and emery board, signs of nail infection, hangnail care, moisturizing cuticles, diabetes nail care caution, blood thinners nail trimming risk, dementia nail care resistance, gentle cuticle pushing, warm water soak, onycholysis, ingrown nail prevention, ergonomic wide-handle clippers, ADL personal care task, ripped hangnail infection risk, ready-lit workspace for trimming, ADL grooming routine, sanitizing nail tools
+- **aeo_terms:** how do I safely cut my elderly parent's nails, what supplies do I need for caregiver nail care, is it safe to cut nails for someone with diabetes, how often should a caregiver trim a senior's nails, what are signs of nail infection in seniors, should caregivers cut cuticles, how do I help a parent with dementia who resists nail care, when should I stop and call a doctor about nail care, what nail clippers are best for caregivers, how do I know if I'm hurting my parent while trimming their nails
+- **technical_terms:** onycholysis, nail matrix, cuticle, hyponychium, peripheral neuropathy, ingrown nail, keratin
+- **user_language:** afraid of hurting them, help I have no idea what to do, what steps should I do, is this normal, be gentle to calm their nerves, don't rip the hangnail, check each week, straight across not rounded, soak first to soften
+
+---
+
+## SECTION 7 — VOICE AND AI QUERIES
+1. How do I safely cut my elderly parent's fingernails?
+2. What supplies do I need to do a senior's nail care at home?
+3. Is it safe for a caregiver to trim nails if the person has diabetes?
+4. How often should I trim my parent's nails as their caregiver?
+5. What are the signs of a nail infection in an older adult?
+6. Should I cut or push back my parent's cuticles?
+7. How do I help someone with dementia who resists nail care?
+8. What do I do if my parent's nail starts bleeding while I'm trimming it?
+9. Is it normal to be nervous about cutting an elderly person's nails?
+10. What's the safest way to trim thick toenails on a senior?
+11. When should I stop doing nail care myself and call a podiatrist?
+12. How do I soften my parent's nails before trimming them?
+13. What nail clippers are safest for a caregiver to use?
+14. How do I clean under an elderly person's nails safely?
+15. Can I use regular nail polish remover on a senior's nails?
+16. What should I do about a hangnail on an elderly parent?
+17. How do I check for infection before I start trimming?
+18. What's the difference between caring for fingernails vs. toenails on a senior?
+
+---
+
+## SECTION 8 — HOOK AND CTR
+**real_serp_findings_summary:** Titles among the 5 fetched pages default to "Nail Care for the Elderly" or "Fingernail Care for Elderly" phrasing — generic, no direct address to the caregiver as the reader, and none acknowledge the caregiver's anxiety directly in the title or meta. BelleVie's "Your Complete Guide" framing was the closest to a confident promise but still spoke about "elderly fingernails" rather than to the caregiver doing the task.
+
+**selected_option_rationale:** This option directly names the caregiver's most common emotional blocker (fear of cutting a parent's nails) in the title itself — something none of the 5 fetched competitors do — while the meta promises the exact concrete steps (soaking, trimming, cuticle care) plus the safety boundary (when to stop) that step_2 identified as the real content gap.
+
+**title:** Caregiver's Guide: How to Safely Care for a Senior's Nails
+**title_char_count:** 55
+**meta_description:** Nervous about cutting your parent's nails? This caregiver nail care checklist walks through soaking, trimming, and cuticle care — plus when to stop and call a doctor.
+**meta_char_count:** 154
+
+**intro_hook_brief:** Open by naming the exact moment of hesitation — clippers in hand, parent's hand in yours, afraid of getting it wrong — before reassuring the reader this is a learnable, followable process, not something only professionals can do safely.
+
+**first_h2_hook_direction:** Frame the first H2 (gathering supplies) as the calm, low-stakes starting point that defuses the anxiety named in the intro — "before you touch a single nail" — rather than jumping straight into technique.
+
+---
+
+## SECTION 9 — SEARCH JOURNEY
+**reader_arrival_state:** Anxious and slightly overwhelmed — motivated to help their parent but afraid of doing it wrong or causing pain.
+**journey_arc:**
+1. Acknowledge the fear directly and normalize it
+2. Walk through supplies and setup — first low-stakes win
+3. Deliver the trimming/cuticle/cleaning steps in strict order, building confidence step by step
+4. Address the two hardest real-world complications: dementia resistance and diabetes/blood-thinner risk
+5. Close with a clear "you've got this, and here's exactly when to hand it to a professional instead" resolution
+
+**promise_to_deliver:** A concrete, safe, step-by-step way to give a senior parent's nails proper care at home, including exactly when it's no longer safe to do it yourself.
+**exit_state:** Confident and equipped — no longer afraid of the task, and clear on the line between "I can do this" and "this needs a professional."
+
+---
+
+## SECTION 10 — CONTENT STRUCTURE
+**h1:** Caregiver's Guide: How to Safely Care for a Senior's Nails
+
+**h2_structure:**
+1. Before You Start: Supplies You'll Actually Need
+2. Setting Up: Soaking and Softening the Nails
+3. How to Trim Fingernails and Toenails Safely
+4. Cleaning and Moisturizing After Trimming
+5. Caring for Cuticles Without Causing Injury
+6. Handling Hangnails the Right Way
+7. Nail Care Checklist for Caregivers (Quick Reference)
+8. If Your Parent Has Dementia: Making Nail Care Easier
+9. When to Stop and Call a Doctor Instead
+10. How Often Should You Do This?
+
+**word_budget:**
+- introduction: 220 words
+- H2-1 (Supplies): 200 words
+- H2-2 (Soaking): 180 words
+- H2-3 (Trimming): 320 words
+- H2-4 (Cleaning/moisturizing): 180 words
+- H2-5 (Cuticles): 220 words
+- H2-6 (Hangnails): 160 words
+- H2-7 (Checklist quick reference): 220 words
+- H2-8 (Dementia): 280 words
+- H2-9 (When to stop/call a doctor): 250 words
+- H2-10 (Frequency): 150 words
+- conclusion: 170 words
+(Total: 2350 words)
+
+---
+
+## SECTION 11 — INTERNAL LINKS
+**all_internal_links:**
+1. url_or_slug: /blog/senior-nails/senior-nail-care-guide | title: Senior Nail Care: The Complete Guide to Healthy Nails After 65 | anchor_text: complete guide to senior nail care | placement_note: Introduction, when framing this post as one piece of the broader senior nail care picture | link_type: cluster-pillar
+2. url_or_slug: /blog/senior-nails/arthritis-nail-care-tips | title: Nail Care Tips for Seniors With Arthritis (No Pain, No Struggle) | anchor_text: arthritis nail care tips | placement_note: H2-3 (Trimming), when noting that arthritis can make gripping tools harder | link_type: cluster-spoke
+3. url_or_slug: /blog/senior-nails/nail-tools-for-seniors-dexterity | title: Best Nail Tools for Seniors With Limited Dexterity | anchor_text: best nail tools for limited dexterity | placement_note: H2-1 (Supplies), when discussing tool grip and dexterity challenges | link_type: cluster-spoke
+4. url_or_slug: /blog/senior-nails/how-often-seniors-manicure-pedicure | title: How Often Should Seniors Get Their Nails Done? | anchor_text: how often seniors should get a manicure | placement_note: H2-10 (Frequency), as a deeper resource on professional manicure/pedicure timing | link_type: cluster-spoke
+5. url_or_slug: https://mirelleinspo.com/nail-faqs/how-often-should-you-trim-your-nails-for-health | title: How Often Should You Trim Your Nails for Health? | anchor_text: general guidance on how often nails should be trimmed | placement_note: H2-10 (Frequency), as a baseline comparison point before explaining why senior frequency differs | link_type: cross-site
+6. url_or_slug: https://mirelleinspo.com/blog/nail-strengthening/diy-nail-strengthening-treatments-at-home | title: 7 DIY Nail Strengthening Treatments That Work | anchor_text: simple at-home treatments for weak or peeling nails | placement_note: H2-4 (Cleaning and Moisturizing), as an optional next step for strengthening brittle senior nails | link_type: cross-site
+
+---
+
+## SECTION 12 — VOICE AND TONE
+**recommended_voice:** Warm, steady expert — a knowledgeable friend walking beside the reader, not a clinical manual.
+**tone_characteristics:** Reassuring without being saccharine; direct and concrete on steps; honest about risk without inducing panic; respectful of the parent's dignity throughout; patient with the caregiver's inexperience.
+**language_style:** Second person ("you"), short and clear sentences especially in step-based sections, plain-language explanations of any clinical term used (e.g. explain "onycholysis" immediately in-line), no false cheeriness around genuinely risky situations (diabetes, bleeding).
+**audience_match:** This is a scared-but-willing first-time caregiver, not a nail enthusiast — every stylistic choice should reduce anxiety and increase followability, never entertain or aestheticize.
+
+---
+
+## SECTION 13 — EXTERNAL LINKS
+1. url: https://www.belleviecare.co.uk/support-advice/care-for-elderly-fingernails-your-complete-guide | context: When describing the trimming step sequence | anchor_suggestion: a structured step-by-step approach recommended by care professionals
+2. url: https://friendlyfaces.com/nail-care-and-hygiene-for-seniors-gentle-practices-for-health-and-confidence/ | context: When introducing the quick-reference checklist section | anchor_suggestion: a caregiver nail care checklist from a senior care provider
+
+---
+
+## SECTION 14 — EXECUTION PLAN
+
+### Block 1 — Keyword Execution
+- primary_keyword: caregiver nail care checklist
+- top_5_density_baseline: 2
+- total_mention_target: 5 (baseline 2 + 3)
+- first_100_words_plan:
+  - mention_1: sentence 2 of introduction — right after naming the reader's fear, introducing this as "a caregiver nail care checklist" that removes the guesswork
+  - mention_2: sentence 4-5 of introduction — reinforcing that this exact checklist covers tools, trimming, and safety boundaries
+- first_half_target: 3 mentions — first ~1175 words
+- second_half_target: 2 mentions — second ~1175 words
+- strong_tag_rule: Every one of the 5 mentions of "caregiver nail care checklist" wrapped in `<strong>` tags. Scan after every paragraph.
+- keywords_to_avoid_active: full list from Section 3 — never used as focus terms anywhere in the post
+
+### Block 2 — Word Budget
+- total_target: 2350 words (±50 tolerance)
+- introduction: 220 words
+- conclusion: 170 words
+- h2_budgets:
+  1. Before You Start: Supplies You'll Actually Need — 200 words — low complexity
+  2. Setting Up: Soaking and Softening the Nails — 180 words — low complexity
+  3. How to Trim Fingernails and Toenails Safely — 320 words — high complexity
+  4. Cleaning and Moisturizing After Trimming — 180 words — low complexity
+  5. Caring for Cuticles Without Causing Injury — 220 words — medium complexity
+  6. Handling Hangnails the Right Way — 160 words — low complexity
+  7. Nail Care Checklist for Caregivers (Quick Reference) — 220 words — medium complexity
+  8. If Your Parent Has Dementia: Making Nail Care Easier — 280 words — high complexity
+  9. When to Stop and Call a Doctor Instead — 250 words — high complexity
+  10. How Often Should You Do This? — 150 words — low complexity
+- tracking_rule: Track running word total at the end of every H2. Cut before moving on if over budget.
+
+### Block 3 — Image Plan
+- total_images: 7
+- hero_image: frontmatter only — never in body
+- body_images: 6
+- assignments:
+  1. place_after: H2-1 (Supplies) | image_type: standard_inspiration | section_context: neatly arranged nail care supplies (clippers, emery board, soft brush, towel, moisturizer) on a clean surface
+  2. place_after: H2-3 (Trimming) | image_type: infographic | section_context: step-sequence infographic showing soak → trim straight across → file edges, in simple numbered graphic form (tutorial-adjacent content genuinely benefits from a visual sequence here)
+  3. place_after: H2-4 (Cleaning/Moisturizing) | image_type: standard_inspiration | section_context: close-up of well-groomed, moisturized senior hands, clean and neat nails
+  4. place_after: H2-5 (Cuticles) | image_type: standard_inspiration | section_context: soft-focus image of hands being gently cared for, warm and dignified tone
+  5. place_after: H2-7 (Checklist) | image_type: standard_inspiration | section_context: a simple printable-style checklist visual mood — organized, calm aesthetic
+  6. place_after: H2-9 (When to Stop) | image_type: standard_inspiration | section_context: warm image suggesting reassurance/support, e.g. a caregiver's hand gently holding a senior's hand (no tools/process visible)
+- image_type_rule: Only slot 2 uses infographic (step-sequence genuinely aids this tutorial-adjacent H2); all others are standard_inspiration. No tool/equipment-in-hands photos, no literal photo-comparison images.
+- path_rule: /images/blog/senior-nails/caregiver-nail-care-guide/filename.webp
+
+### Block 4 — Opening Technique Assignments
+- Introduction: Technique 1 — The Claim (naming the caregiver's fear directly as an opening statement)
+- H2-1 (Supplies): Technique 2 — The Scene (picture yourself gathering everything before you begin)
+- H2-3 (Trimming): Technique 3 — The Reframe (reframing trimming as a calm, sequential process rather than a risky act)
+- H2-8 (Dementia): Technique 2 — The Scene (a specific, relatable caregiving moment of resistance)
+- Conclusion: Technique 1 — The Claim (closing affirmation that the reader is now equipped)
+- banned_opener_rule: Check every opener against banned_opening_approaches in the Blog Gen prompt before writing the second sentence.
+
+### Block 5 — Link Placements
+1. anchor_text: complete guide to senior nail care | full_url: /blog/senior-nails/senior-nail-care-guide | place_in_section: Introduction | placement_context: when positioning this checklist as part of the broader senior nail care picture | link_type: cluster-pillar
+2. anchor_text: arthritis nail care tips | full_url: /blog/senior-nails/arthritis-nail-care-tips | place_in_section: H2-3 (Trimming) | placement_context: when noting arthritis can make gripping tools harder | link_type: cluster-spoke
+3. anchor_text: best nail tools for limited dexterity | full_url: /blog/senior-nails/nail-tools-for-seniors-dexterity | place_in_section: H2-1 (Supplies) | placement_context: when discussing tool grip and dexterity challenges | link_type: cluster-spoke
+4. anchor_text: how often seniors should get a manicure | full_url: /blog/senior-nails/how-often-seniors-manicure-pedicure | place_in_section: H2-10 (Frequency) | placement_context: pointing to deeper guidance on professional manicure/pedicure timing | link_type: cluster-spoke
+5. anchor_text: general guidance on how often nails should be trimmed | full_url: https://mirelleinspo.com/nail-faqs/how-often-should-you-trim-your-nails-for-health | place_in_section: H2-10 (Frequency) | placement_context: baseline comparison before explaining senior-specific timing | link_type: cross-site
+6. anchor_text: simple at-home treatments for weak or peeling nails | full_url: https://mirelleinspo.com/blog/nail-strengthening/diy-nail-strengthening-treatments-at-home | place_in_section: H2-4 (Cleaning and Moisturizing) | placement_context: optional next step for strengthening brittle senior nails | link_type: cross-site
+
+### Block 6 — AEO/GEO Plan
+**aeo_assignments:**
+1. aeo_term: How do I safely cut my elderly parent's fingernails? | assigned_to_section: H2-3 (Trimming) | execution: Direct 2-3 sentence answer immediately after the H2 heading before elaboration
+2. aeo_term: Is it safe for a caregiver to trim nails if the person has diabetes? | assigned_to_section: H2-9 (When to Stop) | execution: Direct 2-3 sentence answer immediately after the H2 heading
+3. aeo_term: How do I help someone with dementia who resists nail care? | assigned_to_section: H2-8 (Dementia) | execution: Direct 2-3 sentence answer immediately after the H2 heading
+4. aeo_term: How often should I trim my parent's nails as their caregiver? | assigned_to_section: H2-10 (Frequency) | execution: Direct 2-3 sentence answer immediately after the H2 heading
+
+**geo_entity_statements:**
+1. entity: Onycholysis | assigned_to_section: H2-9 (When to Stop) | execution: Clear declarative definition sentence — "Onycholysis is when the nail separates from the nail bed, and it's a sign that needs a doctor's attention, not more trimming."
+2. entity: Nail matrix | assigned_to_section: H2-5 (Cuticles) | execution: Clear declarative definition sentence explaining why the matrix/cuticle should never be cut
+
+### Block 7 — Active Constraints
+- em_dash_banned: Long em dash does not appear anywhere. Replace with comma, new sentence, parentheses, "but," or restructure.
+- banned_vocab_watch: elevate, journey (non-caregiving-journey sense), unlock, seamless, embark, dive in, game-changer, elevate
+- american_english_active: color, recognize, -ize, -or — every instance
+- keyword_density_reminder: After every 2 H2 sections, count current mentions of "caregiver nail care checklist." Verify on track for 5 total, denser in first half.
+- image_path_reminder: /images/blog/senior-nails/caregiver-nail-care-guide/filename.webp
+- internal_link_url_reminder: Cluster links = /blog/senior-nails/[slug]. Cross-site links = exact URL as discovered.
+- hero_image_reminder: Hero = frontmatter only, never in body.
+- strong_tag_reminder: Every primary keyword mention wrapped in `<strong>` tags.
