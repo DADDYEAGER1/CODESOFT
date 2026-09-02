@@ -1,0 +1,430 @@
+{
+  "section_1_file_authority": {
+    "statement": "THIS FILE IS THE SINGLE SOURCE OF TRUTH FOR THE BLOG GEN AGENT. All values in POST_CONSTANTS are hardcoded — Blog Gen Agent does not ask, adjust, or override them. All keywords, H2 structure, audience intelligence, internal links, and tone defined here must be followed exactly."
+  },
+
+  "section_2_post_constants": {
+    "slug": "dashing-diva-reviews",
+    "topic_slug": "nail-brand-reviews",
+    "canonical": "https://mirelleinspo.com/blog/nail-brand-reviews/dashing-diva-reviews",
+    "post_type": "spoke",
+    "intent": "informational",
+    "word_count": 2350,
+    "image_count": 7,
+    "show_inspo_gallery_link": false,
+    "template": "posts",
+    "hero_dimensions": "1200x675",
+    "category": "Nail Brand Reviews",
+    "publish_date": "2026-09-02",
+    "author": "jyoti-mirelle"
+  },
+
+  "section_3_cluster_snapshot": {
+    "pillar_slug": "opi-reviews",
+    "pillar_title": "OPI Reviews: Is It Still the Best Nail Polish Brand?",
+    "pillar_primary_keyword": "opi reviews",
+    "this_post_slug": "dashing-diva-reviews",
+    "this_post_role": "spoke",
+    "show_inspo_gallery_link_cluster_default": false,
+    "keywords_to_avoid": [
+      "opi reviews", "essie nail polish reviews", "sally hansen miracle gel reviews", "opi nail envy reviews",
+      "cnd shellac vs gelish", "kiara sky reviews", "glamnetic reviews", "impress nails reviews",
+      "olive and june reviews", "color street reviews", "manime reviews", "static nails reviews",
+      "btartbox reviews", "melody susie reviews"
+    ]
+  },
+
+  "section_4_serp_analysis": {
+    "blog_gen_instruction": "our_strategic_approach is a specific, evidence-based outperform strategy, not a vague gap-fill statement. Use it as the concrete angle for the introduction and conclusion, and to guide depth/coverage decisions in relevant H2 sections.",
+    "competitor_gaps": [
+      "No fetched page gives a clear, structured Gloss vs. Glaze breakdown despite this being one of the single most repeated audience questions (2-part dedicated YouTube series, multiple TikToks, TikTok AI-summary card) — confirmed on 3+ sources (YouTube, TikTok, brand's own product-line confusion visible across all 5 fetched pages)",
+      "No fetched page directly and structurally compares Dashing Diva to Color Street, despite this being the single most repeated brand-comparison query found in this research (5+ dedicated blog posts, Pinterest pins, YouTube videos, TikTok) — confirmed on 3+ sources (Pinterest, YouTube, multiple independent blogs)",
+      "Real durability variance (some reviewers get 3 days, others get 3 weeks) is never explained as a pattern tied to application technique — confirmed on 2+ sources (A Relaxed Gal's before/after technique test, SalonGeek forum threads on lifting)",
+      "No fetched page addresses using Dashing Diva strips under gel/Shellac overlay for extended wear, a real professional-side technique — confirmed on 2+ sources (SalonGeek threads)"
+    ],
+    "missing_semantic_territory": [
+      "\"dashing diva gloss vs glaze\" — confirmed demand, absent as a direct structural comparison in any fetched page",
+      "\"dashing diva vs color street\" — confirmed demand, absent as a direct comparison in any fetched page",
+      "\"how long do dashing diva nails really last\" — real-world variance angle, addressed only anecdotally per-page, never synthesized",
+      "\"dashing diva magic press vs gloss vs glaze\" — three-line product confusion, only Whimsy Soul catalogs all product lines but doesn't rank them by use case"
+    ],
+    "our_strategic_approach": "None of the 5 fetched competitor pages structurally resolve the two biggest validated audience confusions: Gloss vs. Glaze, and Dashing Diva vs. Color Street — both are proven high-intent queries (cross-validated on YouTube, TikTok, and Pinterest) that current top content only touches anecdotally inside single-product reviews. This post will open with an honest overall verdict, then dedicate a clear comparison section to Gloss vs. Glaze (which line to buy for which use case) and a second comparison section to Dashing Diva vs. Color Street (the other major nail-strip brand searched alongside it). Structural edge: where competitors write single-product diaries, this post organizes around the reader's actual decision points — which product line, how it stacks against the other big strip brand, and why durability varies so much between reviewers (tying it to application technique, a gap no fetched page explains). This directly serves the searcher who has already read one single-product review and still doesn't know which Dashing Diva product to buy or how it compares to the other option they're considering.",
+    "top_5_fetched_pages_summary": [
+      {
+        "url": "https://www.today.com/shop/dashing-divas-nails-review-t288492",
+        "word_count": 950,
+        "h2_count": 5,
+        "keyword_mention_count": 3,
+        "note": "Strong editorial authority (NBC/Shop TODAY) but shallow — covers only Gloss + Glaze Starter Kit + one color line, no comparison to competitors, no Magic Press coverage."
+      },
+      {
+        "url": "https://www.wethreeshanes.com/dashing-diva-glaze-nails-an-unbiased-review/",
+        "word_count": 1450,
+        "h2_count": 5,
+        "keyword_mention_count": 9,
+        "note": "Deep single-product (Glaze) tutorial with real day-by-day wear tracking (16-day test) and pros/cons list, but no comparison to Gloss line or competitor brands."
+      },
+      {
+        "url": "https://whimsysoul.com/dashing-diva-gel-nails-review-does-it-pass-the-mani-test/",
+        "word_count": 2050,
+        "h2_count": 7,
+        "keyword_mention_count": 6,
+        "note": "Most comprehensive page found — catalogs all 5 product lines and includes a real Olive & June comparison section, but omits Color Street entirely and treats Gloss vs. Glaze as a product list, not a decision framework."
+      },
+      {
+        "url": "https://www.idodeclaire.com/2024/08/dashing-diva-semi-cured-gel-nail-strips-review/",
+        "word_count": 800,
+        "h2_count": 5,
+        "keyword_mention_count": 5,
+        "note": "Clear benefit-led structure (time/cost/removal/style) but single-product (Glaze only), no competitor context, no durability nuance beyond one week of wear."
+      },
+      {
+        "url": "https://www.arelaxedgal.com/2022/11/dashing-diva-gloss-nail-strips-review.html",
+        "word_count": 1550,
+        "h2_count": 6,
+        "keyword_mention_count": 7,
+        "note": "Most valuable durability data found — same product, same reviewer, 6-day failure vs. 12-day success purely from application technique, but never generalized into actionable advice; no competitor comparison."
+      }
+    ],
+    "top_5_word_count_average": 1360,
+    "top_5_keyword_density_average": 6,
+    "best_external_sources_found": [
+      "https://www.today.com/shop/dashing-divas-nails-review-t288492",
+      "https://whimsysoul.com/dashing-diva-gel-nails-review-does-it-pass-the-mani-test/"
+    ]
+  },
+
+  "section_5_audience_intelligence": {
+    "blog_gen_instruction": "This is your primary creative brief. Every paragraph written for this specific person with this specific intent. Satisfy them completely.",
+    "who_they_are": "A budget- and time-conscious at-home manicure enthusiast (often a busy mom, per idodeclaire and We Three Shanes reader patterns) who has cut salon visits for cost or convenience reasons and is comparing DIY nail-strip brands before buying. She has likely already tried or heard of Color Street, Olive & June, or press-on nails and wants to know specifically how Dashing Diva stacks up and which of its own product lines (Gloss, Glaze, Magic Press) to actually buy.",
+    "what_they_want_from_this_post": "A clear, honest verdict on whether Dashing Diva is worth buying, a plain-English breakdown of which product line (Gloss vs. Glaze vs. Magic Press) fits her needs, and a straight comparison against Color Street since that's the other brand she's most likely also considering.",
+    "what_frustrates_them": "Current reviews only test one product line in isolation, so she has to read 3-4 different blog posts to understand the difference between Gloss and Glaze, and almost none directly answer 'Dashing Diva or Color Street' — the exact comparison she's trying to make before spending money.",
+    "top_5_pain_points": [
+      "Confusion over which product line to buy — Gloss, Glaze, Magic Press, Glow No-Cure, or One Gel — with no clear breakdown of which suits her situation",
+      "Wildly inconsistent durability reports (3 days to 3+ weeks) with no explanation for why, making her unsure if a bad experience is the product's fault or hers",
+      "Uncertainty over Dashing Diva vs. Color Street specifically — repeatedly searched together, rarely compared directly",
+      "Fear of nail damage on removal, especially after negative Trustpilot/Sitejabber reports of adhesive residue or strips not curing properly",
+      "Sizing/fit complaints — strips too big or too small for some nail beds, unclear before purchase which pack has the best size range"
+    ],
+    "exact_user_phrases": [
+      "does it pass the mani test",
+      "is it worth the hype",
+      "gloss vs glaze what's the difference",
+      "how long do dashing diva nails really last",
+      "dashing diva vs color street",
+      "salon quality at home",
+      "no damage no chipping",
+      "stayed on for over 3 weeks",
+      "started lifting at the edges",
+      "worth the money"
+    ],
+    "intent_content_signals": [
+      "Reader responds to real wear-test data (day-by-day tracking) over vague marketing claims",
+      "Reader wants pros/cons lists she can scan quickly, not just narrative prose",
+      "Reader trusts reviewers who admit failure/human error (e.g. Whimsy Soul's 'didn't pass the first time') over uniformly positive reviews",
+      "Reader wants direct product-line comparison tables or clear decision guidance, not just five separate mini-reviews",
+      "Reader wants application tips woven in, since technique visibly affects durability across multiple sources"
+    ]
+  },
+
+  "section_6_semantic_keyword_data": {
+    "blog_gen_instruction": "Primary keyword in strong tags every mention. AEO terms trigger direct answer paragraphs. User language woven naturally. No term from keywords_to_avoid used as focus term.",
+    "primary_keyword": "dashing diva reviews",
+    "keyword_variations": [
+      "dashing diva review", "dashing diva nail strips reviews", "dashing diva gel nails review",
+      "dashing diva glaze reviews", "dashing diva gloss reviews", "is dashing diva good", "dashing diva honest review"
+    ],
+    "cluster_keywords": [
+      "dashing diva gel nail strips", "dashing diva glaze semi-cured gel", "dashing diva gloss nail strips",
+      "dashing diva magic press", "dashing diva vs color street", "gel nail strips at home",
+      "semi-cured gel nail strips", "press-on nail strips", "nail strip brands compared", "at-home gel manicure",
+      "dashing diva product lines", "salon-quality manicure at home", "DIY gel nails"
+    ],
+    "lsi_terms": [
+      "semi-cured gel", "LED lamp cure", "Dome Effect formula", "nail wraps", "cuticle oil removal",
+      "gel nail strips", "no dry time manicure", "chip-resistant strips", "Magic Press press-ons",
+      "Gloss vs Glaze", "gel-quality finish", "at-home manicure kit", "nail strip sizing",
+      "adhesive lift", "salon gel alternative", "affordable manicure", "peel-off gel nails", "instant manicure"
+    ],
+    "aeo_terms": [
+      "how long do dashing diva nails last",
+      "is dashing diva good for your nails",
+      "what is the difference between dashing diva gloss and glaze",
+      "is dashing diva better than color street",
+      "how do you apply dashing diva nail strips",
+      "does dashing diva damage your natural nails",
+      "how much do dashing diva nail strips cost",
+      "can you use dashing diva under gel or shellac",
+      "how do you remove dashing diva gel strips",
+      "which dashing diva product line lasts longest"
+    ],
+    "technical_terms": [
+      "semi-cured gel", "LED curing", "Dome Effect", "base seal", "prep pad", "cuticle oil removal", "HEMA-free"
+    ],
+    "user_language": [
+      "does it pass the mani test", "worth the hype", "salon quality at home", "no damage no chipping",
+      "started lifting at the edges", "stayed on for weeks", "worth the money", "easy to apply and remove",
+      "felt kind of plastic", "game-changer for busy moms"
+    ]
+  },
+
+  "section_7_voice_and_ai_queries": {
+    "blog_gen_instruction": "Answer every query directly in the relevant H2 section body. If a query cannot be addressed naturally in the body, route it to faqItems. No query left unanswered.",
+    "queries": [
+      "How long do Dashing Diva nail strips actually last?",
+      "What is the difference between Dashing Diva Gloss and Glaze?",
+      "Is Dashing Diva better than Color Street?",
+      "Does Dashing Diva damage your natural nails?",
+      "How do you apply Dashing Diva gel nail strips?",
+      "How much do Dashing Diva nail strips cost?",
+      "Can you use Dashing Diva strips under gel or Shellac?",
+      "How do you remove Dashing Diva gel strips without damage?",
+      "Is Dashing Diva good for beginners at home manicures?",
+      "What is Dashing Diva Magic Press and how is it different from Gloss?",
+      "Do Dashing Diva nail strips work on short nails?",
+      "Why do some Dashing Diva reviews say they lasted 3 days and others say 3 weeks?",
+      "Is Dashing Diva worth the money compared to a salon manicure?",
+      "What sizes come in a Dashing Diva nail strip pack?",
+      "Does Dashing Diva require a UV or LED lamp?",
+      "Are Dashing Diva nail strips vegan and cruelty-free?",
+      "What is the best Dashing Diva product line for beginners?",
+      "How do you make Dashing Diva nail strips last longer?"
+    ]
+  },
+
+  "section_8_hook_and_ctr": {
+    "blog_gen_instruction": "READ THIS SECTION BEFORE WRITING THE TITLE, META DESCRIPTION, INTRO, OR FIRST H2. The title and description here are the option the USER SELECTED from 2-3 real, evidence-based choices during phase_6 — use them exactly. The intro hook brief and first H2 hook direction are your creative brief for those specific elements, matching the selected option's angle. Do not deviate.",
+    "real_serp_findings_summary": "All 5 fetched competitor titles use a personal-diary framing (\"I used to spend so much money...\", \"An Unbiased Review\", \"Does It Pass The Mani Test?\") rather than addressing the reader's actual pre-purchase decision directly. None front-load a clear worth-it verdict or name Color Street as the comparison point, despite that being the most repeated cross-brand query found in research.",
+    "selected_option_rationale": "This option front-loads the primary keyword and the exact decision the reader is trying to make (worth it or not), then names Color Street directly in the meta — the single most searched comparison point that zero fetched competitor pages address head-on.",
+    "title": "Dashing Diva Reviews: Are the Gel Strips Worth It?",
+    "title_char_count": 51,
+    "meta_description": "Are Dashing Diva's gel strips actually salon quality, or just expensive stickers? Here's our honest breakdown of durability, application, and how it stacks up against Color Street.",
+    "meta_char_count": 184,
+    "intro_hook_brief": "Open by naming the exact tension the reader feels: gel-strip brands all claim salon quality and 14-day wear, but real experiences online range from 3-day failures to 3-week successes. Promise a straight answer on whether Dashing Diva earns its reputation, not just another single-product diary.",
+    "first_h2_hook_direction": "Apply the 'worth it or not' angle to the first H2 by opening with a direct verdict statement before any product-line detail — tell the reader upfront whether it's worth buying, then explain why, rather than building up to the verdict."
+  },
+
+  "section_9_search_journey": {
+    "blog_gen_instruction": "This is the emotional contract with the reader. Every section of the post must honour the promise made. Read this before writing any section. If a paragraph breaks the journey arc — rewrite it.",
+    "reader_arrival_state": "Skeptical but hopeful — she's cut salon visits for cost or time reasons and is trying to decide, in one sitting, whether Dashing Diva is the DIY nail-strip brand actually worth her money.",
+    "journey_arc": [
+      "Open with the direct worth-it verdict to immediately resolve the tension that brought her here",
+      "Break down the product lines (Gloss, Glaze, Magic Press) so she knows exactly what to buy for her situation",
+      "Deliver the Dashing Diva vs. Color Street comparison she couldn't find anywhere else",
+      "Explain the real durability variance and how application technique changes the outcome",
+      "Address damage, removal, and cost so she can weigh the full picture with confidence",
+      "Close with a clear final recommendation matched to different reader situations"
+    ],
+    "promise_to_deliver": "A straight, evidence-based answer on whether Dashing Diva's gel strips are worth buying, including exactly how they compare to Color Street — not another single-product diary.",
+    "exit_state": "Confident and decided — she knows exactly which Dashing Diva product to buy (or to skip it for Color Street instead) and how to apply it so it actually lasts."
+  },
+
+  "section_10_content_structure": {
+    "blog_gen_instruction": "This H2 structure is research-driven and must be followed exactly. Do not rename, reorder, or remove H2s without user instruction. Word budget per section is set — follow it. H3s may be added at editorial discretion.",
+    "fields": {
+      "h1": "Dashing Diva Reviews: Are the Gel Strips Worth It?",
+      "h2_structure": [
+        "Is Dashing Diva Actually Worth It? The Honest Verdict",
+        "Dashing Diva Gloss vs. Glaze: Which One Should You Buy?",
+        "Dashing Diva vs. Color Street: Which Nail Strips Win?",
+        "How Long Do Dashing Diva Nails Really Last?",
+        "Does Dashing Diva Damage Your Natural Nails?",
+        "How to Apply Dashing Diva Nail Strips for Maximum Wear",
+        "Is Dashing Diva Worth the Price?",
+        "Final Verdict: Who Should Buy Dashing Diva?"
+      ],
+      "word_budget": {
+        "introduction": "230 words",
+        "conclusion": "180 words",
+        "per_h2": [
+          { "heading": "Is Dashing Diva Actually Worth It? The Honest Verdict", "words": 230 },
+          { "heading": "Dashing Diva Gloss vs. Glaze: Which One Should You Buy?", "words": 340 },
+          { "heading": "Dashing Diva vs. Color Street: Which Nail Strips Win?", "words": 340 },
+          { "heading": "How Long Do Dashing Diva Nails Really Last?", "words": 280 },
+          { "heading": "Does Dashing Diva Damage Your Natural Nails?", "words": 220 },
+          { "heading": "How to Apply Dashing Diva Nail Strips for Maximum Wear", "words": 280 },
+          { "heading": "Is Dashing Diva Worth the Price?", "words": 250 },
+          { "heading": "Final Verdict: Who Should Buy Dashing Diva?", "words": 200 }
+        ]
+      }
+    }
+  },
+
+  "section_11_internal_links": {
+    "blog_gen_instruction": "Every link below must appear in the post. Cluster links use anchor texts verbatim — do not rewrite. Cross-site links use the provided descriptive anchor. Place each link where the placement note says — woven naturally into prose, never as a standalone CTA. Total internal links must not exceed 6.",
+    "all_internal_links": [
+      {
+        "url_or_slug": "/blog/nail-brand-reviews/opi-reviews",
+        "title": "OPI Reviews: Is It Still the Best Nail Polish Brand?",
+        "anchor_text": "OPI reviews",
+        "placement_note": "Is Dashing Diva Actually Worth It? The Honest Verdict — natural mention when contrasting nail-strip brands against traditional polish brands like OPI",
+        "link_type": "cluster-pillar"
+      },
+      {
+        "url_or_slug": "/blog/nail-brand-reviews/impress-nails-reviews",
+        "title": "imPRESS Nails Reviews: Are KISS Press-Ons Worth It?",
+        "anchor_text": "imPRESS press-on nail reviews",
+        "placement_note": "Dashing Diva Gloss vs. Glaze: Which One Should You Buy? — when discussing Magic Press-on line, natural comparison point to another drugstore press-on brand",
+        "link_type": "cluster-spoke"
+      },
+      {
+        "url_or_slug": "/blog/nail-brand-reviews/dashing-diva-reviews",
+        "title": "Olive & June Reviews: Is the Mani System Worth It?",
+        "anchor_text": "Olive & June mani system reviews",
+        "placement_note": "Dashing Diva vs. Color Street: Which Nail Strips Win? — natural mention as a third at-home mani system reader may also be weighing",
+        "link_type": "cluster-spoke"
+      },
+      {
+        "url_or_slug": "/blog/nail-brand-reviews/manime-reviews",
+        "title": "ManiMe Reviews: Are Custom-Fit Press-Ons Worth the Price?",
+        "anchor_text": "ManiMe custom press-on reviews",
+        "placement_note": "Is Dashing Diva Worth the Price? — natural comparison point when discussing cost against a premium custom-fit press-on alternative",
+        "link_type": "cluster-spoke"
+      }
+    ]
+  },
+
+  "section_12_voice_tone": {
+    "blog_gen_instruction": "This is the voice for this specific post. Layer on top of Mirellé editorial framework. Do not default to generic AI tone.",
+    "recommended_voice": "Honest friend who's actually tried it",
+    "tone_characteristics": [
+      "Direct and verdict-first, not building suspense toward an opinion",
+      "Comfortable naming both what works and what doesn't, mirroring the trusted 'admits failure' pattern found in top competitor content",
+      "Practical and money-conscious, speaking to a reader watching her budget",
+      "Confident giving a clear recommendation rather than hedging with 'it depends'",
+      "Warm but efficient — respects that this reader wants an answer, not a diary"
+    ],
+    "language_style": "Second person throughout ('you'll notice', 'if your nails run small'). Short, declarative sentences for verdicts; slightly longer sentences when explaining technique or reasoning. Minimal jargon — define semi-cured gel and LED curing in plain terms on first use.",
+    "audience_match": "This voice matches a budget-conscious, time-strapped reader who has already read vague marketing copy and wants someone to just tell her straight whether to buy it — informational intent means she wants clarity and confidence, not aspiration or hard-sell persuasion."
+  },
+
+  "section_13_external_links": {
+    "blog_gen_instruction": "Include all external links where indicated. Supports E-E-A-T. Use anchor suggestion as guide — write naturally around it. Sourced from phase_3's best_external_sources_found (real fetched competitor pages), not from separate searches. May be empty (0-2 links) if none of the fetched pages qualified as genuinely citation-worthy — that is expected, not a gap to fill.",
+    "links": [
+      {
+        "url": "https://www.today.com/shop/dashing-divas-nails-review-t288492",
+        "context": "When discussing overall brand credibility and mainstream editorial coverage",
+        "anchor_suggestion": "Shop TODAY's own testing"
+      },
+      {
+        "url": "https://whimsysoul.com/dashing-diva-gel-nails-review-does-it-pass-the-mani-test/",
+        "context": "When referencing the full product-line breakdown or the brand's own honest account of an application failure",
+        "anchor_suggestion": "one detailed product breakdown"
+      }
+    ]
+  },
+
+  "section_14_execution_plan": {
+    "purpose": "Blog Gen Agent reads this section FIRST — before frontmatter, before writing a single word. Every value here is pre-calculated from the input file data. Blog Gen Agent locks all values and executes them exactly.",
+    "blog_gen_instruction": "READ THIS SECTION FIRST. Lock every value. Execute exactly. Do not recalculate, do not adjust, do not deviate.",
+    "calculated_by": "Input Gen Agent",
+
+    "block_1_keyword_execution": {
+      "primary_keyword": "dashing diva reviews",
+      "top_5_density_baseline": 6,
+      "total_mention_target": "8-9 total mentions (baseline 6 + 2-3)",
+      "first_100_words_plan": {
+        "rule": "Primary keyword MUST appear TWICE in the first 100 words. Mandatory. No exceptions.",
+        "mention_1": "sentence 1-2 of introduction — naming the post topic directly as part of the opening tension statement",
+        "mention_2": "sentence 4-5 of introduction — reinforcing the keyword when stating the promise of a straight verdict"
+      },
+      "first_half_target": "5 mentions — first ~1175 words. Run denser in first half.",
+      "second_half_target": "3-4 mentions — second ~1175 words",
+      "strong_tag_rule": "EVERY single mention of the primary keyword — all 8-9 of them — wrapped in <strong> tags. No exceptions. Catch each one as it is written. Scan after every paragraph.",
+      "keywords_to_avoid_active": [
+        "opi reviews", "essie nail polish reviews", "sally hansen miracle gel reviews", "opi nail envy reviews",
+        "cnd shellac vs gelish", "kiara sky reviews", "glamnetic reviews", "impress nails reviews",
+        "olive and june reviews", "color street reviews", "manime reviews", "static nails reviews",
+        "btartbox reviews", "melody susie reviews"
+      ]
+    },
+
+    "block_2_word_budget": {
+      "total_target": "2350 words — +/-50 words tolerance, never exceed",
+      "introduction": "230 words",
+      "conclusion": "180 words",
+      "h2_budgets": [
+        { "heading": "Is Dashing Diva Actually Worth It? The Honest Verdict", "budget": 230, "complexity": "low" },
+        { "heading": "Dashing Diva Gloss vs. Glaze: Which One Should You Buy?", "budget": 340, "complexity": "high" },
+        { "heading": "Dashing Diva vs. Color Street: Which Nail Strips Win?", "budget": 340, "complexity": "high" },
+        { "heading": "How Long Do Dashing Diva Nails Really Last?", "budget": 280, "complexity": "medium" },
+        { "heading": "Does Dashing Diva Damage Your Natural Nails?", "budget": 220, "complexity": "low" },
+        { "heading": "How to Apply Dashing Diva Nail Strips for Maximum Wear", "budget": 280, "complexity": "medium" },
+        { "heading": "Is Dashing Diva Worth the Price?", "budget": 250, "complexity": "low" },
+        { "heading": "Final Verdict: Who Should Buy Dashing Diva?", "budget": 200, "complexity": "low" }
+      ],
+      "tracking_rule": "Track running word total at the end of every H2 section. If a section is running over budget — cut before moving to the next section. Do not compensate later."
+    },
+
+    "block_3_image_plan": {
+      "total_images": 7,
+      "hero_image": "frontmatter only — NEVER appears in post body",
+      "body_images": 6,
+      "assignments": [
+        { "image_number": 1, "place_after": "Is Dashing Diva Actually Worth It? The Honest Verdict", "image_type": "standard_inspiration", "section_context": "Dashing Diva Glaze or Gloss manicure, finished look, styled solo shot showing salon-quality shine" },
+        { "image_number": 2, "place_after": "Dashing Diva Gloss vs. Glaze: Which One Should You Buy?", "image_type": "infographic", "section_context": "Clean side-by-side infographic comparing Gloss vs. Glaze: cure method (no cure vs LED lamp), finish, wear time, price, best for. No hands, no tools, no literal photo comparison." },
+        { "image_number": 3, "place_after": "Dashing Diva vs. Color Street: Which Nail Strips Win?", "image_type": "infographic", "section_context": "Clean comparison graphic: Dashing Diva vs Color Street across price, material (gel sticker vs real polish strip), average wear time, removal method. No photo-style nail-to-nail comparison." },
+        { "image_number": 4, "place_after": "How Long Do Dashing Diva Nails Really Last?", "image_type": "standard_inspiration", "section_context": "Styled nail look in a rich seasonal or trend-forward color, emphasizing shine retention" },
+        { "image_number": 5, "place_after": "Does Dashing Diva Damage Your Natural Nails?", "image_type": "standard_inspiration", "section_context": "Close-up styled shot of healthy-looking natural nail bed with a fresh Dashing Diva manicure applied" },
+        { "image_number": 6, "place_after": "How to Apply Dashing Diva Nail Strips for Maximum Wear", "image_type": "standard_inspiration", "section_context": "Finished manicure in a versatile everyday shade, framed to suggest ease and polish rather than an application/process shot" }
+      ],
+      "image_type_rule": {
+        "banned_absolutely": "NEVER a tool/equipment image (hands holding a file, tools laid out, application shots showing hands or tools at work). NEVER a photo-style side-by-side nail-to-nail comparison image — comparisons must be image_type: infographic.",
+        "note_for_blog_gen": "Blog Gen Agent follows the image_type flagged here exactly per slot — it does not decide standard vs infographic on its own mid-write."
+      },
+      "path_rule": "/images/blog/nail-brand-reviews/dashing-diva-reviews/filename.webp"
+    },
+
+    "block_4_opening_technique_assignments": {
+      "rule": "No two consecutive sections use the same technique. Conclusion = Technique 1 or 3 only.",
+      "assignments": [
+        { "section": "Introduction", "technique": "Technique 2 — The Tension Statement (naming the gap between marketing claims and real reviewer experiences)" },
+        { "section": "Is Dashing Diva Actually Worth It? The Honest Verdict", "technique": "Technique 1 — The Claim (direct verdict stated upfront)" },
+        { "section": "Dashing Diva Gloss vs. Glaze: Which One Should You Buy?", "technique": "Technique 4 — The Question (posing the exact confusion the reader has)" },
+        { "section": "Dashing Diva vs. Color Street: Which Nail Strips Win?", "technique": "Technique 3 — The Reframe (repositioning the comparison the reader already has in mind)" },
+        { "section": "How Long Do Dashing Diva Nails Really Last?", "technique": "Technique 2 — The Tension Statement (naming the wide range of reviewer outcomes)" },
+        { "section": "Does Dashing Diva Damage Your Natural Nails?", "technique": "Technique 4 — The Question" },
+        { "section": "How to Apply Dashing Diva Nail Strips for Maximum Wear", "technique": "Technique 1 — The Claim" },
+        { "section": "Is Dashing Diva Worth the Price?", "technique": "Technique 3 — The Reframe" },
+        { "section": "Conclusion", "technique": "Technique 1 — The Claim" }
+      ],
+      "banned_opener_rule": "Check every opener against banned_opening_approaches in blog gen prompt before writing the second sentence"
+    },
+
+    "block_5_link_placements": {
+      "rule": "Every link placed exactly where specified. Anchor texts used verbatim — never rewritten. Links woven into prose naturally — never standalone CTAs.",
+      "links": [
+        { "anchor_text": "OPI reviews", "full_url": "/blog/nail-brand-reviews/opi-reviews", "place_in_section": "Is Dashing Diva Actually Worth It? The Honest Verdict", "placement_context": "when contrasting nail-strip convenience against traditional polish brand loyalty", "link_type": "cluster-pillar" },
+        { "anchor_text": "imPRESS press-on nail reviews", "full_url": "/blog/nail-brand-reviews/impress-nails-reviews", "place_in_section": "Dashing Diva Gloss vs. Glaze: Which One Should You Buy?", "placement_context": "when mentioning Magic Press as Dashing Diva's press-on line alongside other drugstore press-on options", "link_type": "cluster-spoke" },
+        { "anchor_text": "Olive & June mani system reviews", "full_url": "/blog/nail-brand-reviews/olive-and-june-reviews", "place_in_section": "Dashing Diva vs. Color Street: Which Nail Strips Win?", "placement_context": "when noting a third at-home system some readers weigh alongside these two", "link_type": "cluster-spoke" },
+        { "anchor_text": "ManiMe custom press-on reviews", "full_url": "/blog/nail-brand-reviews/manime-reviews", "place_in_section": "Is Dashing Diva Worth the Price?", "placement_context": "when comparing Dashing Diva's budget price point against a premium custom-fit alternative", "link_type": "cluster-spoke" }
+      ]
+    },
+
+    "block_6_aeo_geo_plan": {
+      "aeo_assignments": [
+        { "aeo_term": "How long do Dashing Diva nail strips actually last?", "assigned_to_section": "How Long Do Dashing Diva Nails Really Last?", "execution": "Write a direct 2-3 sentence answer paragraph IMMEDIATELY after the H2 heading — before any elaboration." },
+        { "aeo_term": "What is the difference between Dashing Diva Gloss and Glaze?", "assigned_to_section": "Dashing Diva Gloss vs. Glaze: Which One Should You Buy?", "execution": "Write a direct 2-3 sentence answer paragraph IMMEDIATELY after the H2 heading." },
+        { "aeo_term": "Is Dashing Diva better than Color Street?", "assigned_to_section": "Dashing Diva vs. Color Street: Which Nail Strips Win?", "execution": "Write a direct 2-3 sentence answer paragraph IMMEDIATELY after the H2 heading." },
+        { "aeo_term": "Does Dashing Diva damage your natural nails?", "assigned_to_section": "Does Dashing Diva Damage Your Natural Nails?", "execution": "Write a direct 2-3 sentence answer paragraph IMMEDIATELY after the H2 heading." },
+        { "aeo_term": "How much do Dashing Diva nail strips cost?", "assigned_to_section": "Is Dashing Diva Worth the Price?", "execution": "Write a direct 2-3 sentence answer paragraph IMMEDIATELY after the H2 heading." }
+      ],
+      "geo_entity_statements": [
+        { "entity": "Semi-cured gel (Glaze line)", "assigned_to_section": "Dashing Diva Gloss vs. Glaze: Which One Should You Buy?", "execution": "Write a clear declarative definition: semi-cured gel strips are pre-shaped, partially cured gel that finishes hardening under an LED lamp, delivering a harder finish than standard nail strips." },
+        { "entity": "Dome Effect formula", "assigned_to_section": "Dashing Diva Gloss vs. Glaze: Which One Should You Buy?", "execution": "Write a clear declarative definition: Dome Effect is Dashing Diva's proprietary strip shaping, thicker in the center and thinner at the cuticle edge for a sculpted, seamless fit." },
+        { "entity": "Magic Press", "assigned_to_section": "How to Apply Dashing Diva Nail Strips for Maximum Wear", "execution": "Write a clear declarative definition: Magic Press is Dashing Diva's ready-to-wear press-on line, pre-glued and requiring no separate adhesive or curing step." }
+      ]
+    },
+
+    "block_7_active_constraints": {
+      "em_dash_banned": "Long em dash does not appear anywhere. If one forms while writing — stop, replace with: comma / new sentence / parentheses / but / restructure.",
+      "banned_vocab_watch": ["elevate", "game-changer", "unleash", "seamless", "effortless", "must-have", "unlock", "transform"],
+      "american_english_active": "color, recognize, -ize, -or — every instance, no exceptions. This post uses American English, not British.",
+      "keyword_density_reminder": "After every 2 H2 sections — count current keyword mentions. Verify running total is on track to hit the hardcoded mention target (6 baseline + 2-3). First half must run denser than second half. Adjust if needed.",
+      "image_path_reminder": "/images/blog/nail-brand-reviews/dashing-diva-reviews/filename.webp — topic_slug in path always",
+      "internal_link_url_reminder": "Full correct paths only. Cluster links = /blog/nail-brand-reviews/[slug]. Never bare /slug.",
+      "hero_image_reminder": "Hero = frontmatter only. Never place hero image in body.",
+      "strong_tag_reminder": "Every primary keyword mention = <strong> tags. Scan after every paragraph."
+    }
+  }
+}
