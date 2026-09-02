@@ -1,0 +1,281 @@
+{
+  "cluster_metadata": {
+    "cluster_topic": "Oval Nails",
+    "topic_slug": "oval-nails",
+    "show_inspo_gallery_link_cluster_default": false,
+    "target_audience": "Global, Tier 1 countries",
+    "total_posts": 7,
+    "intent_breakdown": {
+      "informational": 2,
+      "inspirational": 2,
+      "tutorial": 2,
+      "comparison": 1,
+      "seasonal_trend": 1
+    },
+    "pillar_post_slug": "oval-nails-guide",
+    "created_date": "2026-09-02"
+  },
+  "existing_site_posts_excluded": [
+    {
+      "url": "https://mirelleinspo.com/blog/almond-vs-oval-nails",
+      "title": "Almond vs Oval Nails: Differences & How to Choose",
+      "inferred_primary_keyword": "almond vs oval nails",
+      "inferred_intent": "comparison",
+      "exclusion_reason": "Already exists on mirelleinspo.com — keyword reserved"
+    },
+    {
+      "url": "https://mirelleinspo.com/blog/nail-shapes/squoval-nails",
+      "title": "Squoval Nails",
+      "inferred_primary_keyword": "squoval nails",
+      "inferred_intent": "informational",
+      "exclusion_reason": "Already exists on mirelleinspo.com — adjacent shape, keyword reserved"
+    }
+  ],
+  "posts": [
+    {
+      "post_id": 1,
+      "role": "pillar",
+      "title": "Oval Nails: The Complete Shape Guide",
+      "slug": "oval-nails-guide",
+      "primary_keyword": "oval nails",
+      "intent": "informational",
+      "search_mode": "inspiration_mode",
+      "suggested_hook_trigger": "Trigger 3 — Specificity/Numbers",
+      "search_demand_signals": [
+        "Google: heavy SERP density across Marie Claire, InStyle, L'Oréal Paris, Kester Black, SHANGMENG, NailShapes dedicated shape guides",
+        "Pinterest: multiple boards with 200-900+ pins each (e.g. '220 Best Oval Nails ideas in 2026', '900+ Oval nails ideas in 2026')"
+      ],
+      "why_included": "Broadest keyword in the cluster with zero existing site coverage and consistently high cross-source demand. Serves as the natural hub covering shape definition, general design ideas, and links out to every specific angle.",
+      "internal_links": {
+        "links_to": [
+          { "slug": "how-to-shape-oval-nails-at-home", "anchor_text": "how to shape oval nails at home tutorial", "type": "spoke" },
+          { "slug": "oval-vs-round-nails", "anchor_text": "oval vs round nails comparison", "type": "spoke" },
+          { "slug": "oval-nails-for-short-wide-fingers", "anchor_text": "best nail shape for short wide fingers", "type": "spoke" },
+          { "slug": "oval-french-tip-nails", "anchor_text": "oval french tip nail trend", "type": "spoke" },
+          { "slug": "oval-nails-trend-2026", "anchor_text": "oval nails trend 2026", "type": "spoke" },
+          { "slug": "oval-press-on-nails-sizing-guide", "anchor_text": "oval press-on nails sizing guide", "type": "spoke" }
+        ],
+        "receives_links_from": [
+          { "slug": "how-to-shape-oval-nails-at-home", "anchor_text": "complete oval nails shape guide" },
+          { "slug": "oval-vs-round-nails", "anchor_text": "complete oval nails shape guide" },
+          { "slug": "oval-nails-for-short-wide-fingers", "anchor_text": "complete oval nails shape guide" },
+          { "slug": "oval-french-tip-nails", "anchor_text": "complete oval nails shape guide" },
+          { "slug": "oval-nails-trend-2026", "anchor_text": "complete oval nails shape guide" },
+          { "slug": "oval-press-on-nails-sizing-guide", "anchor_text": "complete oval nails shape guide" }
+        ]
+      },
+      "status": "approved"
+    },
+    {
+      "post_id": 2,
+      "role": "spoke",
+      "title": "How to Shape Oval Nails at Home",
+      "slug": "how-to-shape-oval-nails-at-home",
+      "primary_keyword": "how to shape oval nails at home",
+      "intent": "tutorial",
+      "search_mode": "how_to_execution_mode",
+      "suggested_hook_trigger": "Trigger 1 — Curiosity Gap",
+      "search_demand_signals": [
+        "Google: dedicated step-by-step guides from mindbodygreen, NAGAIA, NailShapes, Paola Ponce Nails",
+        "TikTok: dedicated filing tutorial videos (e.g. Zoé Manson, 46.7K likes) tagged #ovalnails #nailshaping #nailsathome"
+      ],
+      "why_included": "Real, recurring at-home filing tutorial demand distinct from the pillar's overview — multiple independent sources publish dedicated step-by-step guides specifically for this shape.",
+      "internal_links": {
+        "links_to": [
+          { "slug": "oval-nails-guide", "anchor_text": "oval nails", "type": "pillar" },
+          { "slug": "oval-vs-round-nails", "anchor_text": "oval vs round nails comparison", "type": "spoke" },
+          { "slug": "oval-nails-for-short-wide-fingers", "anchor_text": "best nail shape for short wide fingers", "type": "spoke" },
+          { "slug": "oval-press-on-nails-sizing-guide", "anchor_text": "oval press-on nails sizing guide", "type": "spoke" }
+        ],
+        "receives_links_from": [
+          { "slug": "oval-nails-guide", "anchor_text": "how to shape oval nails at home tutorial" },
+          { "slug": "oval-nails-for-short-wide-fingers", "anchor_text": "how to shape oval nails at home" },
+          { "slug": "oval-press-on-nails-sizing-guide", "anchor_text": "filing your natural nails into an oval shape" }
+        ]
+      },
+      "status": "approved"
+    },
+    {
+      "post_id": 3,
+      "role": "spoke",
+      "title": "Oval vs Round Nails: What's the Difference",
+      "slug": "oval-vs-round-nails",
+      "primary_keyword": "oval vs round nails",
+      "intent": "comparison",
+      "search_mode": "decision_mode",
+      "suggested_hook_trigger": "Trigger 1 — Curiosity Gap",
+      "search_demand_signals": [
+        "Google: dedicated comparison guides from SHANGMENG, L'Oréal Paris, Women's Alphabet",
+        "Pinterest: dedicated 'Oval Nails Vs Round Nails' board; TikTok dedicated comparison/demo videos"
+      ],
+      "why_included": "Distinct comparison pair with real cross-source confusion/demand signal, not covered by the site's existing almond-vs-oval post.",
+      "internal_links": {
+        "links_to": [
+          { "slug": "oval-nails-guide", "anchor_text": "oval nails", "type": "pillar" },
+          { "slug": "how-to-shape-oval-nails-at-home", "anchor_text": "how to shape oval nails at home tutorial", "type": "spoke" },
+          { "slug": "oval-nails-for-short-wide-fingers", "anchor_text": "best nail shape for short wide fingers", "type": "spoke" }
+        ],
+        "receives_links_from": [
+          { "slug": "oval-nails-guide", "anchor_text": "oval vs round nails comparison" },
+          { "slug": "how-to-shape-oval-nails-at-home", "anchor_text": "oval vs round nails comparison" },
+          { "slug": "oval-nails-for-short-wide-fingers", "anchor_text": "how oval differs from round nails" }
+        ]
+      },
+      "status": "approved"
+    },
+    {
+      "post_id": 4,
+      "role": "spoke",
+      "title": "Best Nail Shape for Short, Wide Fingers: Why Oval Wins",
+      "slug": "oval-nails-for-short-wide-fingers",
+      "primary_keyword": "nail shape for short fingers",
+      "intent": "informational",
+      "search_mode": "decision_mode",
+      "suggested_hook_trigger": "Trigger 1 — Curiosity Gap",
+      "search_demand_signals": [
+        "Google: SHANGMENG 'best nail shapes for short fat fingers', Kester Black hand-type guide, naildesignsmaker dedicated guide",
+        "OPI and Joyee Nails hand-shape guides independently recommending oval for this hand type"
+      ],
+      "why_included": "Strong, recurring 'which shape suits my hand' demand cluster across multiple independent nail brand and editorial sources, with oval consistently named as the top recommendation.",
+      "internal_links": {
+        "links_to": [
+          { "slug": "oval-nails-guide", "anchor_text": "oval nails", "type": "pillar" },
+          { "slug": "oval-vs-round-nails", "anchor_text": "oval vs round nails comparison", "type": "spoke" },
+          { "slug": "how-to-shape-oval-nails-at-home", "anchor_text": "how to shape oval nails at home tutorial", "type": "spoke" }
+        ],
+        "receives_links_from": [
+          { "slug": "oval-nails-guide", "anchor_text": "best nail shape for short wide fingers" },
+          { "slug": "how-to-shape-oval-nails-at-home", "anchor_text": "best nail shape for short wide fingers" },
+          { "slug": "oval-vs-round-nails", "anchor_text": "best nail shape for short wide fingers" }
+        ]
+      },
+      "status": "approved"
+    },
+    {
+      "post_id": 5,
+      "role": "spoke",
+      "title": "Oval French Tip Nails: The Trend Everyone's Trying",
+      "slug": "oval-french-tip-nails",
+      "primary_keyword": "oval french tip nails",
+      "intent": "inspirational",
+      "search_mode": "inspiration_mode",
+      "suggested_hook_trigger": "Trigger 2 — FOMO/Trend",
+      "search_demand_signals": [
+        "Google: Who What Wear dedicated trend piece citing rising Google Trends data; Etsy bestseller category for 'french tip oval nails'",
+        "Pinterest: multiple dedicated boards ('Oval French Manicure Designs', 'French Oval Nails with Glitter')"
+      ],
+      "why_included": "Editorial-confirmed rising trend with dedicated demand distinct from the site's general french-tip cluster — this is the shape-specific pairing, not generic french tips.",
+      "internal_links": {
+        "links_to": [
+          { "slug": "oval-nails-guide", "anchor_text": "oval nails", "type": "pillar" },
+          { "slug": "oval-nails-trend-2026", "anchor_text": "oval nails trend 2026", "type": "spoke" },
+          { "slug": "oval-press-on-nails-sizing-guide", "anchor_text": "oval press-on nails sizing guide", "type": "spoke" }
+        ],
+        "receives_links_from": [
+          { "slug": "oval-nails-guide", "anchor_text": "oval french tip nail trend" },
+          { "slug": "oval-nails-trend-2026", "anchor_text": "oval french tip nail designs" },
+          { "slug": "oval-press-on-nails-sizing-guide", "anchor_text": "oval french tip press-on styles" }
+        ]
+      },
+      "status": "approved"
+    },
+    {
+      "post_id": 6,
+      "role": "spoke",
+      "title": "Oval Nails Are Trending Again in 2026 — Here's Why",
+      "slug": "oval-nails-trend-2026",
+      "primary_keyword": "oval nails trend 2026",
+      "intent": "seasonal_trend",
+      "search_mode": "inspiration_mode",
+      "suggested_hook_trigger": "Trigger 2 — FOMO/Trend",
+      "search_demand_signals": [
+        "Google: Who What Wear '7 Biggest Nail Trends' naming oval as a 2026 focus shape; SHANGMENG 'major resurgence' trend piece citing Allure",
+        "TikTok: #ovalnails discovery pages and 'square to oval' transformation trend videos"
+      ],
+      "why_included": "Explicit trend-resurgence narrative confirmed by multiple independent beauty editorial outlets naming 2026 specifically as a comeback year for the shape.",
+      "internal_links": {
+        "links_to": [
+          { "slug": "oval-nails-guide", "anchor_text": "oval nails", "type": "pillar" },
+          { "slug": "oval-french-tip-nails", "anchor_text": "oval french tip nail trend", "type": "spoke" },
+          { "slug": "oval-vs-round-nails", "anchor_text": "oval vs round nails comparison", "type": "spoke" }
+        ],
+        "receives_links_from": [
+          { "slug": "oval-nails-guide", "anchor_text": "oval nails trend 2026" },
+          { "slug": "oval-french-tip-nails", "anchor_text": "why oval nails are trending in 2026" }
+        ]
+      },
+      "status": "approved"
+    },
+    {
+      "post_id": 7,
+      "role": "spoke",
+      "title": "Oval Press-On Nails: Sizing and Fit Guide",
+      "slug": "oval-press-on-nails-sizing-guide",
+      "primary_keyword": "oval press on nails sizing",
+      "intent": "tutorial",
+      "search_mode": "how_to_execution_mode",
+      "suggested_hook_trigger": "Trigger 1 — Curiosity Gap",
+      "search_demand_signals": [
+        "Google: dedicated sizing guides from Joyee Nails, Gelly Canvas, ELVA Nails, sodoesnail specifically addressing oval shape fit",
+        "Amazon/Etsy: oval treated as a distinct filterable shape SKU category across multiple press-on brands"
+      ],
+      "why_included": "Real, recurring practical execution demand — 'how do I size press-ons for this shape' — distinct from general press-on content already on the site.",
+      "internal_links": {
+        "links_to": [
+          { "slug": "oval-nails-guide", "anchor_text": "oval nails", "type": "pillar" },
+          { "slug": "how-to-shape-oval-nails-at-home", "anchor_text": "how to shape oval nails at home tutorial", "type": "spoke" },
+          { "slug": "oval-french-tip-nails", "anchor_text": "oval french tip nail trend", "type": "spoke" }
+        ],
+        "receives_links_from": [
+          { "slug": "oval-nails-guide", "anchor_text": "oval press-on nails sizing guide" },
+          { "slug": "how-to-shape-oval-nails-at-home", "anchor_text": "oval press-on nails sizing guide" },
+          { "slug": "oval-french-tip-nails", "anchor_text": "oval press-on nails sizing guide" }
+        ]
+      },
+      "status": "approved"
+    }
+  ],
+  "keyword_ownership_registry": {
+    "description": "Master list of all primary keywords — one per post, no overlaps, includes existing site posts",
+    "entries": [
+      { "primary_keyword": "almond vs oval nails", "owned_by_slug": "almond-vs-oval-nails", "owned_by_title": "Almond vs Oval Nails: Differences & How to Choose", "source": "existing site post" },
+      { "primary_keyword": "squoval nails", "owned_by_slug": "squoval-nails", "owned_by_title": "Squoval Nails", "source": "existing site post" },
+      { "primary_keyword": "oval nails", "owned_by_slug": "oval-nails-guide", "owned_by_title": "Oval Nails: The Complete Shape Guide", "source": "new post" },
+      { "primary_keyword": "how to shape oval nails at home", "owned_by_slug": "how-to-shape-oval-nails-at-home", "owned_by_title": "How to Shape Oval Nails at Home", "source": "new post" },
+      { "primary_keyword": "oval vs round nails", "owned_by_slug": "oval-vs-round-nails", "owned_by_title": "Oval vs Round Nails: What's the Difference", "source": "new post" },
+      { "primary_keyword": "nail shape for short fingers", "owned_by_slug": "oval-nails-for-short-wide-fingers", "owned_by_title": "Best Nail Shape for Short, Wide Fingers: Why Oval Wins", "source": "new post" },
+      { "primary_keyword": "oval french tip nails", "owned_by_slug": "oval-french-tip-nails", "owned_by_title": "Oval French Tip Nails: The Trend Everyone's Trying", "source": "new post" },
+      { "primary_keyword": "oval nails trend 2026", "owned_by_slug": "oval-nails-trend-2026", "owned_by_title": "Oval Nails Are Trending Again in 2026 — Here's Why", "source": "new post" },
+      { "primary_keyword": "oval press on nails sizing", "owned_by_slug": "oval-press-on-nails-sizing-guide", "owned_by_title": "Oval Press-On Nails: Sizing and Fit Guide", "source": "new post" }
+    ]
+  },
+  "merged_posts_log": [
+    {
+      "original_topics": ["oval nail art ideas", "minimalist oval nail designs", "oval nail colors 2026"],
+      "merged_into": "Oval Nails: The Complete Shape Guide (pillar)",
+      "reason": "All three showed real but heavily overlapping demand with each other and with the pillar's natural scope; consolidating avoided three thin, competing posts targeting near-identical queries."
+    }
+  ],
+  "killed_posts_log": [
+    {
+      "topic": "Oval nails for office/work",
+      "reason": "Existing post conflict — site already has an 18-post work-nails/ cluster covering shape-for-work guidance generically, including nail-shapes-for-work; oval-specific angle risked direct cannibalization."
+    },
+    {
+      "topic": "Why do oval nails keep breaking",
+      "reason": "No demand — all 'nails keep breaking' search results were shape-agnostic; failed the 2-source validation rule for an oval-specific breakage query."
+    },
+    {
+      "topic": "Growing out square nails into oval",
+      "reason": "No demand — only one source with a real signal; failed the 2-source validation rule."
+    },
+    {
+      "topic": "Quiet Luxury Oval Nails: The Old Money Manicure Shape",
+      "reason": "Removed by user request after initial table review."
+    },
+    {
+      "topic": "Oval Wedding Nails: Ideas for Your Big Day",
+      "reason": "Removed by user request after initial table review."
+    }
+  ]
+}
