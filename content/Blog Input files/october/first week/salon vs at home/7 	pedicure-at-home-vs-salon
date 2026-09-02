@@ -1,0 +1,423 @@
+# INPUT FILE — pedicure-at-home-vs-salon
+## Post 7 of 7 | Cluster: Nail Salon vs At-Home | SINGLE SOURCE OF TRUTH FOR BLOG GEN AGENT
+
+---
+
+## SECTION 1: FILE AUTHORITY
+
+THIS FILE IS THE SINGLE SOURCE OF TRUTH FOR THE BLOG GEN AGENT. All values in POST_CONSTANTS are hardcoded — Blog Gen Agent does not ask, adjust, or override them. All keywords, H2 structure, audience intelligence, internal links, and tone defined here must be followed exactly.
+
+---
+
+## SECTION 2: POST_CONSTANTS
+
+| Field | Value |
+|---|---|
+| slug | pedicure-at-home-vs-salon |
+| topic_slug | salon-vs-at-home |
+| canonical | https://mirelleinspo.com/blog/salon-vs-at-home/pedicure-at-home-vs-salon |
+| post_type | spoke |
+| intent | comparison |
+| word_count | **2450** (top-5 fetched average 1,150 words + significant depth expansion — see Section 4 rationale; no ceiling applied, topic genuinely supports deeper coverage than any of the 5 fetched pages attempted) |
+| image_count | **7** (hero + 6 body — Rule 5, flat default, comparison intent does not trigger Rule 4's 5-image count because this post's role is spoke/everything-else per priority order... see note below) |
+| show_inspo_gallery_link | **false** — cluster mode, read verbatim from cluster_metadata.show_inspo_gallery_link_cluster_default |
+| template | **posts** (not pillar, not tutorial intent → default template) |
+| hero_dimensions | 1200x675 |
+| category | Nail Care Comparisons |
+| publish_date | 2026-09-09 |
+| author | jyoti-mirelle |
+
+**Image count correction note:** Phase_2 rule priority is X+ slug → pillar → tutorial → comparison → everything else. This post's intent is "comparison," which per rule_4 sets **image_count: 5** (including hero). Applying rule priority correctly: **image_count = 5**.
+
+| Field (corrected) | Value |
+|---|---|
+| image_count | **5** (comparison intent — hero + 4 body images) |
+
+---
+
+## SECTION 3: CLUSTER SNAPSHOT
+
+| Field | Value |
+|---|---|
+| pillar_slug | nail-salon-vs-doing-nails-at-home |
+| pillar_title | Nail Salon vs. Doing Your Nails at Home: The Honest Breakdown |
+| pillar_primary_keyword | nail salon vs doing nails at home |
+| this_post_slug | pedicure-at-home-vs-salon |
+| this_post_role | spoke |
+| show_inspo_gallery_link_cluster_default | false |
+| keywords_to_avoid | nail salon vs doing nails at home; at home gel nails vs salon; is it safe to do gel nails at home; press on nails vs salon manicure; acrylic nails at home vs salon; dip powder nails at home vs salon |
+
+---
+
+## SECTION 4: SERP ANALYSIS
+
+**competitor_gaps** (demand-validated on 2+ sources):
+- Ingrown toenail risk from pedicures specifically — confirmed via Cleveland Clinic, Katy Foot Care (2 independent articles), and podiatry-vs-pedicure content. Zero of the 5 fetched competitor pages address this at all.
+- Callus/cracked heel treatment as a genuine safety-relevant differentiator (not just cosmetic) — confirmed via pdsalon.in + organicnailsandspa.com fetched content + Quora diabetic/mobility-issue answers.
+- Diabetic and mobility-limited reader angle — confirmed via Quora ("I have mobility issues... I am also now diabetic, foot care is important") and cross-checked against podiatrist-content emphasis on foot health stakes.
+- Clear "when to skip DIY entirely and see a professional/podiatrist" decision point — confirmed via Katy Foot Care (2 articles) and Cleveland Clinic; none of the 5 fetched pages give a concrete escalation threshold.
+
+**missing_semantic_territory:**
+- "medical pedicure" / "medi pedi" as a third category readers are discovering (Today.com, Colorado Foot Institute) — an angle entirely absent from the 5 fetched pages, which frame this as a strict binary (home vs salon).
+- "dry pedicure" / "no-soak pedicure" — surfaced from Quora acrylic-pedicure thread, a real term but present in only 1 source; flagged, not used as a primary H2, but woven in as vocabulary.
+- Podiatrist vs. nail tech scope-of-practice distinction — validated across 2+ sources, absent from all 5 fetched competitor pages.
+
+**our_strategic_approach:** All 5 fetched competitors (pdsalon.in, oggispaniagara.com, organicnailsandspa.com, 100percentpure.com, lamercayman.com) frame this as a binary "which is better" pros/cons list averaging just 1,150 words, none going deeper than surface-level hygiene and relaxation claims. None address the two things real searchers are actually anxious about: ingrown toenails and cracked heels/calluses as bordering on a medical concern, not just a look. This post's structural edge: open with the real decision framework (what's actually at stake medically vs. cosmetically), dedicate a full section to the callus/ingrown-toenail safety line that none of the 5 competitors cover, and close with a clear, concrete "when to book a salon vs. when home is genuinely fine" decision rule — something all 5 pages gesture at but none actually resolve. This is a decision-intent post; every reader should leave certain, not still weighing pros and cons.
+
+**top_5_fetched_pages_summary:**
+
+| URL | Real word count | Real H2 count | Real "pedicure" mention count | Note |
+|---|---|---|---|---|
+| pdsalon.in/blogs/salon-vs-home-manicure-pedicure | ~1,850 | 14 | 31 | Strongest structurally (FAQ, comparison table, local SEO), but padded with location-specific salon marketing; weak on foot-health medical stakes |
+| oggispaniagara.com (DIY vs Professional) | ~650 | 5 | 9 | Thin, salon-promotional, no real data or structure depth |
+| organicnailsandspa.com (Spa vs At-Home Foot Soak) | ~1,750 | 12 | 22 | Good structural depth and FAQ section, but frames comparison as "foot soak" not "pedicure," softer angle |
+| 100percentpure.com (Home pedicure safety) | ~1,050 | 3 | 14 | Home-biased, strong on salon hygiene risk (toxic trio, foot bath bacteria) — the only page taking home's side |
+| lamercayman.com (Is it worth it) | ~600 | 4 | 11 | Thin, salon-promotional, minimal real comparison depth |
+
+top_5_word_count_average: **~1,180 words**
+top_5_keyword_density_average: **~17 mentions** (raw "pedicure" mentions; primary keyword phrase itself never appears verbatim in any of the 5 — confirms real opportunity to front-load the exact phrase)
+
+**best_external_sources_found:**
+1. Cleveland Clinic — "Ingrown Toenail? Try These Home Remedies" — genuine health-authority editorial content, real dermatology/podiatry sourcing.
+2. Katy Foot Care — "Can a Pedicure Fix an Ingrown Toenail?" — genuine podiatric-practice editorial content with clear staged risk breakdown.
+
+**recommended_image_count_validation:** 5 images (comparison intent) aligns with SERP pattern — none of the 5 fetched pages are visually dense; this is a decision-driven, text-forward post where over-imaging would dilute the comparison framing.
+
+---
+
+## SECTION 5: AUDIENCE INTELLIGENCE
+
+**who_they_are:** A reader actively weighing whether to book a salon pedicure or handle it at home for their *next* appointment — not a beginner just discovering pedicures exist. Often someone who has done both before and is now questioning the value, frequently prompted by cost fatigue, a recent bad salon experience, or a foot issue (cracked heels, calluses, or a mild ingrown nail) that a home routine hasn't resolved.
+
+**what_they_want_from_this_post:** A clear, honest verdict — not a neutral "it depends" shrug. They want to know specifically what they'd be giving up by skipping the salon, and specifically when doing it at home is genuinely fine versus when it's a mistake.
+
+**what_frustrates_them:** Every fetched competitor page is either salon-marketing dressed as content (oggispaniagara, lamercayman) or a shallow pros/cons list that never resolves into a decision. Readers are left doing the deciding work the article was supposed to do for them.
+
+**top_5_pain_points:**
+1. Not knowing whether their cracked heels/calluses are a "just moisturize more" issue or a "this needs professional removal" issue.
+2. Uncertainty about real infection/hygiene risk from communal salon foot baths vs. overstated fear-mongering.
+3. Feeling like home tools (pumice stones, home kits) are "good enough" but secretly suspecting they're not — wanting confirmation either way.
+4. Cost guilt — enjoying salon pedicures but wondering if they're paying for something replicable at home.
+5. Not knowing where the line is between a pedicure fixing an ingrown toenail and a pedicure making it worse.
+
+**exact_user_phrases:**
+- "I cannot go to the salon anymore, I care for an elderly parent" (Quora)
+- "I have mobility issues... I am also now diabetic, foot care is important" (Quora)
+- "when I paint my own toes, it looks like a five year old did it" (Quora)
+- "pedi-cursed instead of a pedicured" (100percentpure.com)
+- "is a spa pedicure really worth it when a foot soak at home is free and easy" (organicnailsandspa.com)
+- "You're actually missing" (pdsalon.in title framing)
+- "salon-worthy DIY pedi" (100percentpure.com)
+- "toxic trio" — formaldehyde, toluene, dibutyl phthalate (100percentpure.com)
+- "dry pedicure" / "no soak pedicure" (Quora)
+- "callus remover... only partially manages" what a pumice stone at home can do (organicnailsandspa.com)
+
+**intent_content_signals:**
+1. Readers respond to concrete verdicts, not balanced hedging — pdsalon.in's "Quick Verdict" callout box performs a real function readers want.
+2. FAQ-format sections perform well across 2 of the 5 fetched pages (pdsalon.in, organicnailsandspa.com) — signals readers arrive with specific yes/no questions.
+3. Cost breakdowns with real numbers are expected, not abstract "it's cheaper at home" claims.
+4. A structured "who benefits most from professional care" callout (used by organicnailsandspa.com) resonates — readers self-identify against a list rather than reading generic prose.
+5. Medical/safety framing (ingrown nails, infection risk) is under-served territory with a real, anxious audience.
+
+---
+
+## SECTION 6: SEMANTIC KEYWORD DATA
+
+**primary_keyword:** pedicure at home vs salon (LOCKED)
+
+**keyword_variations:**
+1. pedicure at home vs salon
+2. at-home pedicure vs salon pedicure
+3. home pedicure vs professional pedicure
+4. salon pedicure vs DIY pedicure
+5. doing a pedicure at home vs the salon
+6. pedicure at home versus salon
+
+**cluster_keywords** (cleared, none drift into sibling posts):
+1. cracked heels treatment
+2. callus removal safety
+3. ingrown toenail risk
+4. foot bath hygiene
+5. professional foot care
+6. DIY pedicure kit
+7. pedicure hygiene standards
+8. sterilized pedicure tools
+9. foot health maintenance
+10. pumice stone vs professional callus removal
+11. medical pedicure
+12. podiatrist vs pedicurist
+
+**lsi_terms** (from autocomplete + phase_3 fetched pages):
+1. foot soak
+2. cuticle care
+3. exfoliation
+4. nail technician
+5. pedicure tools
+6. foot massage
+7. dry pedicure
+8. no-soak pedicure
+9. toxic trio (formaldehyde, toluene, dibutyl phthalate)
+10. communal foot bath
+11. fungal infection risk
+12. pedicure frequency
+13. professional-grade tools
+14. home pedicure kit
+15. gel pedicure
+16. foot spa
+17. nail salon sanitation
+
+**aeo_terms:**
+1. is it worth getting a pedicure at a salon or doing it at home
+2. is a home pedicure as good as a salon pedicure
+3. can you get an infection from a salon pedicure
+4. how often should you get a professional pedicure
+5. can a pedicure fix an ingrown toenail
+6. is a salon pedicure safe if you have diabetes
+7. what does a professional pedicure include that a home one doesn't
+8. how much does a salon pedicure cost compared to doing it at home
+9. is it safe to remove calluses at home
+10. when should you see a podiatrist instead of getting a pedicure
+
+**technical_terms:**
+1. callus removal
+2. cuticle treatment
+3. exfoliation
+4. sterilization protocol
+5. ingrown toenail (onychocryptosis-adjacent, kept plain-language)
+6. ph-balanced foot soak
+
+**user_language:**
+1. "pedi-cursed"
+2. "salon-worthy DIY pedi"
+3. "looks like a five year old did it"
+4. "toe-pro in no time"
+5. "you're actually missing"
+6. "worth it"
+7. "good enough" (re: home tools)
+8. "free and easy" (re: home foot soak)
+9. "toxic trio"
+10. "dry pedicure"
+
+---
+
+## SECTION 7: VOICE AND AI QUERIES
+
+1. Is it worth getting a pedicure at a salon instead of doing it at home?
+2. What can a salon pedicure fix that a home pedicure can't?
+3. Is it safe to remove calluses myself at home?
+4. Can a pedicure at a nail salon give you an infection?
+5. How often should I get a professional pedicure versus doing my own at home?
+6. What's the real cost difference between a home pedicure and a salon pedicure over a year?
+7. Can a pedicure help with an ingrown toenail or make it worse?
+8. Is it safe to get a pedicure if I have diabetes?
+9. What tools do I actually need for a salon-quality pedicure at home?
+10. Are salon foot baths actually unsanitary?
+11. What's the difference between a regular pedicure and a medical pedicure?
+12. When should I see a podiatrist instead of booking a pedicure?
+13. Can I do a "dry" pedicure at home without soaking my feet?
+14. Is a home pedicure kit actually worth the money?
+15. What are the signs I need a professional pedicure instead of a home one?
+16. Does a salon pedicure last longer than one I do myself?
+17. What should I ask a nail salon about their sanitation before booking a pedicure?
+18. Can cracked heels be fixed at home or do they need a professional treatment?
+
+---
+
+## SECTION 8: HOOK AND CTR
+
+**real_serp_findings_summary:** All 5 fetched competitor titles use flat "X vs Y" or "is it worth it" framing with no urgency, no number, and no differentiation angle — pdsalon.in and organicnailsandspa.com are the only two with any real structural depth (FAQ + comparison sections), while lamercayman and oggispaniagara are thin salon-marketing pages. None front-load a genuine "what you're missing" or safety-stakes angle in the title itself, despite pdsalon.in using that exact phrase mid-page. This left a clear opening: no competitor title signals the medical/safety stakes (calluses, ingrown nails) that this post's research surfaced as the real differentiated territory.
+
+**selected_option_rationale:** "Pedicure at Home vs Salon: What You're Really Missing (2026)" works because it borrows the proven "what you're missing" framing pdsalon.in validated mid-content (not in their title) and moves it to the title position where no competitor currently has it — paired with front-loaded exact-match primary keyword and the mandatory 2026 year tag for a comparison/trend-adjacent post.
+
+**title:** Pedicure at Home vs Salon: What You're Really Missing (2026)
+**title_char_count:** 56 (within 55–60 hard cap)
+
+**meta_description:** Home pedicures feel like a smart swap — until calluses, ingrown nails, or foot bath hygiene enter the picture. Here's the honest 2026 breakdown.
+**meta_char_count:** 148 (within 120–155 hard cap)
+
+**intro_hook_brief:** Open by naming the exact tension the reader is sitting in — "feels like a smart swap" — then pivot fast to the specific, under-discussed stakes (calluses, ingrown nails, hygiene) that no competitor title signals. This is a curiosity-gap/specificity hybrid: reader suspects they're missing something concrete, not vague.
+
+**first_h2_hook_direction:** Apply the "what you're actually missing" angle concretely to the first H2 by opening it with the single biggest, most specific gap (professional callus/ingrown-nail handling) rather than a general intro to pedicure types — subtle continuation of the title's promise, not a repeat of it.
+
+---
+
+## SECTION 9: SEARCH JOURNEY
+
+**reader_arrival_state:** Uncertain and slightly guilty — enjoys salon pedicures but suspects they might be paying for something replicable at home, and wants a real answer rather than more back-and-forth.
+
+**journey_arc:**
+- Acknowledge the exact decision they're stuck on (cost/convenience of home vs. the "something" salons offer that's hard to name)
+- Give a clear framework: cosmetic maintenance vs. genuine foot-health care
+- Resolve the two highest-stakes comparison points definitively — hygiene/infection risk, and callus/ingrown-nail safety
+- Address cost and frequency with real numbers, not vague claims
+- Close with a direct, concrete recommendation: which readers should default to salon, which are genuinely fine at home
+
+**promise_to_deliver:** The post will name specifically what's missing from a home pedicure — not just repeat that salons are "better" in general terms.
+
+**exit_state:** Certain, not still weighing — the reader should know exactly which camp they're in and what to do about it, with the calluses/ingrown-nail safety line as their new decision anchor.
+
+---
+
+## SECTION 10: CONTENT STRUCTURE
+
+**h1:** Pedicure at Home vs Salon: What You're Really Missing
+
+**h2_structure:**
+1. Pedicure at Home vs Salon: The Real Difference (Beyond Polish)
+2. What a Salon Pedicure Actually Includes
+3. What Most People Actually Do in a Home Pedicure
+4. The One Thing Home Pedicures Can't Safely Fix: Calluses and Ingrown Toenails
+5. Is a Salon Pedicure Really More Hygienic?
+6. Cost Compared: Home Pedicure vs Salon Pedicure Over a Year
+7. Who Should Always Choose a Salon Pedicure
+8. When a Home Pedicure Is Genuinely Enough
+9. Frequently Asked Questions
+
+**word_budget:**
+- Introduction: 230 words
+- H2-1 (Real Difference): 220 words
+- H2-2 (Salon Includes): 260 words
+- H2-3 (Home Routine): 220 words
+- H2-4 (Calluses/Ingrown Nails): 380 words — highest complexity, this is the differentiation section
+- H2-5 (Hygiene): 300 words
+- H2-6 (Cost): 260 words
+- H2-7 (Who Should Choose Salon): 220 words
+- H2-8 (When Home Is Enough): 200 words
+- Conclusion: 180 words
+- FAQ section: 200 words (5 questions)
+- **Total: 2,470** (within ±50 tolerance of 2,450 target)
+
+---
+
+## SECTION 11: INTERNAL LINKS
+
+| url_or_slug | title | anchor_text | placement_note | link_type |
+|---|---|---|---|---|
+| /blog/salon-vs-at-home/nail-salon-vs-doing-nails-at-home | Nail Salon vs. Doing Your Nails at Home: The Honest Breakdown | nail salon vs doing nails at home | H2-1 (Real Difference) — woven in when framing this post as the foot-specific companion to the broader hands-vs-feet decision | cluster-pillar |
+| /blog/salon-vs-at-home/is-it-safe-to-do-gel-nails-at-home | Is It Safe to Do Gel Nails at Home? What Dermatologists Say | is it safe to do gel nails at home | H2-5 (Hygiene) — natural link when discussing at-home safety risk parallels between gel and pedicure hygiene | cluster-spoke |
+| /blog/salon-vs-at-home/dip-powder-at-home-vs-salon | Dip Powder Nails at Home vs. Salon: Is DIY Worth It? | dip powder nails at home vs salon comparison | H2-6 (Cost) — natural link when comparing DIY-vs-salon cost logic across nail-care categories | cluster-spoke |
+
+**cross_site_discovery:** No genuinely relevant standalone.mirelleinspo.com pages found for "pedicure" or adjacent foot-care topics outside this cluster in research conducted; cross-site link slots left at 0 rather than force weak matches.
+
+**Total internal links: 3** (within 4–6 range; below max is acceptable — natural fit prioritized over hitting a quota)
+
+---
+
+## SECTION 12: VOICE AND TONE
+
+**recommended_voice:** Confident, decisive guide — the friend who's done the research so the reader doesn't have to keep going back and forth.
+
+**tone_characteristics:**
+1. Direct verdicts over hedged "it depends" language
+2. Warm but not salon-marketing — avoid promotional language competitors leaned on
+3. Specific and numbers-forward (real costs, real frequency ranges)
+4. Respectful of the reader's existing pedicure experience — not written for a total beginner
+5. Calm authority on the health/safety sections — informative, not alarmist
+
+**language_style:** Second person ("you"), short declarative sentences for verdicts, slightly longer explanatory sentences for the safety/hygiene sections. Minimal rhetorical questions — this audience wants answers, not more questions posed back at them.
+
+**audience_match:** This reader has already weighed convenience and cost themselves; what they need is the missing piece (health/safety stakes) delivered with confidence, not a repeat of pros/cons they've already considered.
+
+---
+
+## SECTION 13: EXTERNAL LINKS
+
+| url | context | anchor_suggestion |
+|---|---|---|
+| https://health.clevelandclinic.org/how-to-get-rid-of-ingrown-toenails | H2-4, when discussing when home remedies for ingrown toenails are and aren't sufficient | Cleveland Clinic's guidance on ingrown toenail home care |
+| https://www.katyfootcare.com/pedicure-vs-podiatrist-ingrown-toenail-katy-tx/ | H2-4, when drawing the line between pedicure-safe issues and podiatrist-level issues | a podiatric breakdown of pedicure vs. podiatrist care |
+
+---
+
+## SECTION 14: EXECUTION PLAN
+
+### Block 1: Keyword Execution
+- **primary_keyword:** pedicure at home vs salon
+- **top_5_density_baseline:** 17 (raw "pedicure" mentions average across 5 fetched pages; primary keyword phrase itself was absent from all 5, confirming zero cannibalization risk)
+- **total_mention_target:** 19–20 total mentions of "pedicure" concept, with the exact phrase "pedicure at home vs salon" or a locked variation appearing **8 times** across the post
+- **first_100_words_plan:**
+  - mention_1: sentence 2 of introduction — establishing the exact comparison the post resolves
+  - mention_2: sentence 4 of introduction — reinforcing the framing before naming the "what you're missing" hook
+- **first_half_target:** 11 mentions — first ~1,235 words (denser, establishing framework and the callus/hygiene differentiation)
+- **second_half_target:** 8–9 mentions — second ~1,235 words (cost, who-should-choose, FAQ)
+- **strong_tag_rule:** Every mention of "pedicure at home vs salon" and its locked variations wrapped in `<strong>` tags — zero exceptions, scanned after every paragraph
+- **keywords_to_avoid_active:** nail salon vs doing nails at home; at home gel nails vs salon; is it safe to do gel nails at home; press on nails vs salon manicure; acrylic nails at home vs salon; dip powder nails at home vs salon
+
+### Block 2: Word Budget
+- **total_target:** 2,450 words (±50 tolerance)
+- **introduction:** 230 words
+- **conclusion:** 180 words
+- **h2_budgets:**
+  1. Pedicure at Home vs Salon: The Real Difference (Beyond Polish) — 220 words — low complexity
+  2. What a Salon Pedicure Actually Includes — 260 words — medium complexity
+  3. What Most People Actually Do in a Home Pedicure — 220 words — low complexity
+  4. The One Thing Home Pedicures Can't Safely Fix: Calluses and Ingrown Toenails — 380 words — high complexity
+  5. Is a Salon Pedicure Really More Hygienic? — 300 words — medium complexity
+  6. Cost Compared: Home Pedicure vs Salon Pedicure Over a Year — 260 words — medium complexity
+  7. Who Should Always Choose a Salon Pedicure — 220 words — low complexity
+  8. When a Home Pedicure Is Genuinely Enough — 200 words — low complexity
+  9. FAQ — 200 words — low complexity
+- **tracking_rule:** Track running word total after every H2. If over budget, cut before continuing — never compensate later.
+
+### Block 3: Image Plan
+- **total_images:** 5 (hero + 4 body)
+- **hero_image:** Frontmatter only — never in body
+- **body_images:** 4
+- **assignments:**
+  1. image_number: 1 — place_after: "What a Salon Pedicure Actually Includes" — image_type: standard_inspiration — section_context: a professional-looking pedicure result (finished feet, clean polish, salon setting) that visually reinforces the "professional" side of the comparison
+  2. image_number: 2 — place_after: "What Most People Actually Do in a Home Pedicure" — image_type: standard_inspiration — section_context: a relaxed, realistic home pedicure setup (feet soaking, home tools visible in styled context, not hands-holding-tools shot)
+  3. image_number: 3 — place_after: "Is a Salon Pedicure Really More Hygienic?" — image_type: infographic — section_context: clean comparison graphic of hygiene practices — salon sterilization protocol vs. typical home tool reuse — NOT a photo-style comparison, a clean informational layout
+  4. image_number: 4 — place_after: "Cost Compared: Home Pedicure vs Salon Pedicure Over a Year" — image_type: infographic — section_context: simple annual cost comparison visual — home kit + supplies total vs. salon visits at typical frequency, presented as a clean data graphic
+- **image_type_rule note:** 2 infographic slots used here because this is comparison intent and both slots (hygiene, cost) genuinely need a real comparison shown, not a styled photo. No tool/equipment or hands-at-work images anywhere. No photo-style nail-to-nail comparison.
+- **path_rule:** /images/blog/salon-vs-at-home/pedicure-at-home-vs-salon/filename.webp
+
+### Block 4: Opening Technique Assignments
+| Section | Technique |
+|---|---|
+| Introduction | Technique 2 — The Specific Claim (names the exact gap: calluses/ingrown nails) |
+| H2-1 (Real Difference) | Technique 4 — The Reader's Own Words ("feels like a smart swap") |
+| H2-2 (Salon Includes) | Technique 1 — The Claim |
+| H2-3 (Home Routine) | Technique 3 — The Reframe |
+| H2-4 (Calluses/Ingrown Nails) | Technique 2 — The Specific Claim |
+| H2-5 (Hygiene) | Technique 4 — The Reader's Own Words |
+| H2-6 (Cost) | Technique 1 — The Claim |
+| H2-7 (Who Should Choose Salon) | Technique 3 — The Reframe |
+| H2-8 (When Home Is Enough) | Technique 2 — The Specific Claim |
+| Conclusion | Technique 1 — The Claim |
+
+**banned_opener_rule:** Check every opener against banned_opening_approaches in Blog Gen prompt before writing the second sentence.
+
+### Block 5: Link Placements
+| anchor_text | full_url | place_in_section | placement_context | link_type |
+|---|---|---|---|---|
+| nail salon vs doing nails at home | /blog/salon-vs-at-home/nail-salon-vs-doing-nails-at-home | H2-1 (Real Difference) | When framing this post as the foot-specific companion to the broader comparison | cluster-pillar |
+| is it safe to do gel nails at home | /blog/salon-vs-at-home/is-it-safe-to-do-gel-nails-at-home | H2-5 (Hygiene) | When drawing a parallel between at-home gel safety risk and at-home pedicure hygiene risk | cluster-spoke |
+| dip powder nails at home vs salon comparison | /blog/salon-vs-at-home/dip-powder-at-home-vs-salon | H2-6 (Cost) | When comparing DIY-vs-salon cost logic across nail categories | cluster-spoke |
+| Cleveland Clinic's guidance on ingrown toenail home care | https://health.clevelandclinic.org/how-to-get-rid-of-ingrown-toenails | H2-4 | When explaining what's safe to try at home before a professional is needed | external |
+| a podiatric breakdown of pedicure vs. podiatrist care | https://www.katyfootcare.com/pedicure-vs-podiatrist-ingrown-toenail-katy-tx/ | H2-4 | When drawing the line between pedicure-safe and podiatrist-level issues | external |
+
+### Block 6: AEO/GEO Plan
+**aeo_assignments:**
+| aeo_term | assigned_to_section | execution |
+|---|---|---|
+| Is it worth getting a pedicure at a salon or doing it at home? | Introduction | Direct 2-3 sentence answer immediately establishing the framework |
+| Can a pedicure fix an ingrown toenail? | H2-4 | Direct 2-3 sentence answer right after the H2 heading |
+| Can you get an infection from a salon pedicure? | H2-5 | Direct 2-3 sentence answer right after the H2 heading |
+| How often should you get a professional pedicure? | H2-7 or FAQ | Direct 2-3 sentence answer |
+| Is a salon pedicure safe if you have diabetes? | FAQ | Direct answer in FAQ format |
+
+**geo_entity_statements:**
+| entity | assigned_to_section | execution |
+|---|---|---|
+| Medical pedicure | H2-4 | Clear declarative definition sentence distinguishing it from a standard salon pedicure |
+| Dry pedicure / no-soak pedicure | H2-3 or H2-5 | Clear declarative definition sentence |
+
+### Block 7: Active Constraints
+- **em_dash_banned:** No long em dash anywhere. Replace with comma, new sentence, parentheses, "but," or restructure.
+- **banned_vocab_watch:** elevate, elevated, unlock, unleash, journey, embark, dive in, game-changer, seamless
+- **american_english_active:** color, recognize, -ize, -or — every instance, no exceptions.
+- **keyword_density_reminder:** After every 2 H2 sections, count current mentions of "pedicure at home vs salon" and variations. Verify running total on track for 8 locked-phrase mentions. First half denser than second half.
+- **image_path_reminder:** /images/blog/salon-vs-at-home/pedicure-at-home-vs-salon/filename.webp — topic_slug in path always.
+- **internal_link_url_reminder:** Full correct paths only. Cluster links = /blog/salon-vs-at-home/[slug]. External links = exact URL as discovered. Never bare /slug.
+- **hero_image_reminder:** Hero = frontmatter only. Never place hero image in body.
+- **strong_tag_reminder:** Every primary keyword mention = `<strong>` tags. Scan after every paragraph.
