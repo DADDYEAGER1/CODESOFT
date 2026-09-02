@@ -1,0 +1,433 @@
+{
+  "section_1_file_authority": {
+    "statement": "THIS FILE IS THE SINGLE SOURCE OF TRUTH FOR THE BLOG GEN AGENT. All values in POST_CONSTANTS are hardcoded — Blog Gen Agent does not ask, adjust, or override them. All keywords, H2 structure, audience intelligence, internal links, and tone defined here must be followed exactly."
+  },
+  "section_2_post_constants": {
+    "slug": "thick-toenails-aging-causes",
+    "topic_slug": "senior-nails",
+    "canonical": "https://mirelleinspo.com/blog/senior-nails/thick-toenails-aging-causes",
+    "post_type": "spoke",
+    "intent": "informational",
+    "word_count": 1900,
+    "image_count": 7,
+    "show_inspo_gallery_link": false,
+    "template": "posts",
+    "hero_dimensions": "1200x675",
+    "category": "Senior Nail Care",
+    "publish_date": "2026-09-10",
+    "author": "jyoti-mirelle"
+  },
+  "section_3_cluster_snapshot": {
+    "pillar_slug": "senior-nail-care-guide",
+    "pillar_title": "Senior Nail Care: The Complete Guide to Healthy Nails After 65",
+    "pillar_primary_keyword": "senior nail care",
+    "this_post_slug": "thick-toenails-aging-causes",
+    "this_post_role": "spoke",
+    "show_inspo_gallery_link_cluster_default": false,
+    "keywords_to_avoid": [
+      "senior nail care", "arthritis nail care", "nail clippers for seniors",
+      "caregiver nail care checklist", "is gel manicure safe for seniors",
+      "low maintenance nails for seniors", "how often should seniors get manicure",
+      "nails for older women", "best nail shape for mature hands", "brittle nails after 50",
+      "elegant nail art for mature hands", "french manicure for women over 50",
+      "gel vs acrylic nails for mature hands", "nail care routine for mature hands",
+      "nail color for skin tone over 50", "nail colors for mature hands",
+      "nail colors for women over 40", "nail colors for women over 60",
+      "nail colors that age your hands", "nail polish to hide veins and age spots",
+      "nail ridges after 50", "nail shapes that make fingers look longer",
+      "nail trends for women over 50 2026", "nail colors that make hands look younger",
+      "least damaging way to get nails done"
+    ]
+  },
+  "section_4_serp_analysis": {
+    "blog_gen_instruction": "our_strategic_approach is a specific, evidence-based outperform strategy, not a vague gap-fill statement. Use it as the concrete angle for the introduction and conclusion, and to guide depth/coverage decisions in relevant H2 sections.",
+    "competitor_gaps": [
+      "None of the 5 fetched pages clearly separate 'normal aging thickening' from 'thickening that needs medical attention' with a scannable checklist — only Restore Foot & Ankle attempts this, and only Achilles goes deep on it. Confirmed demand on 3+ sources (Restore, Achilles, Harvard Health) plus real Quora questions asking exactly this.",
+      "How to visually/practically tell age-related thickening apart from fungal thickening at home before seeing a doctor — confirmed on Harvard Health, Achilles, and real Quora threads where posters actively debate which cause applies to them.",
+      "Why men are more affected than women (gender difference) — confirmed on Masterton Foot Clinic and WebMD, but absent from all 5 fetched pages entirely.",
+      "The mechanics of trimming/managing thick nails specifically for someone with dexterity or bending limitations (not just 'see a podiatrist') — confirmed via real caregiver forum posts (Bogleheads) describing nail scissors slipping and difficulty bending, cross-validated against Quora threads on cutting nails when you cannot bend."
+    ],
+    "missing_semantic_territory": [
+      "onychauxis (the clinical term) — used by only 2 of 5 fetched pages, high AEO value",
+      "involution / claw-like curving of neglected thick nails — found only in real Quora audience research, absent from all 5 fetched competitor pages",
+      "onychocytes pile-up mechanism — present in 3 of 5 pages but never explained simply for a lay caregiver audience",
+      "reduced circulation as the age-specific mechanism (distinct from fungal cause) — present but under-explained in 4 of 5 pages"
+    ],
+    "our_strategic_approach": "The top 5 ranking pages split into two extremes: quick 450-550 word medical-adjacent pages (Mayo, Green Tree, Feet First) that state causes but never help the reader act, and one 3,200-word treatment-focused page (Achilles) that buries the aging-specific cause under exhaustive fungus/surgery/medication content most readers with a simple aging concern don't need. Restore Foot & Ankle is the closest structural match at 950 words but stops short of a clear age-vs-fungus self-check. This post's edge is owning the middle: deep enough to genuinely answer 'is this just aging or something else,' with a scannable normal-vs-not-normal framework (validated demand from Restore and Harvard Health), real caregiver-relevant trimming guidance (validated from Bogleheads and Quora, absent from every fetched competitor), and the involution/neglect risk that only surfaces in raw audience conversation, never in published competitor content. This differentiates cleanly from both the too-thin and too-bloated ends of the current SERP.",
+    "top_5_fetched_pages_summary": [
+      {
+        "url": "https://www.mayoclinic.org/healthy-lifestyle/adult-health/in-depth/nails/art-20546831",
+        "word_count": 530,
+        "h2_count": 5,
+        "keyword_mention_count": 1,
+        "note": "Authoritative but thin — causes covered in one short paragraph, rest of page is trimming mechanics, not the causal 'why' this keyword targets."
+      },
+      {
+        "url": "https://greentreehomecare.com/thick-toenails-elderly/",
+        "word_count": 460,
+        "h2_count": 8,
+        "keyword_mention_count": 5,
+        "note": "Good keyword front-loading and H2 structure but shallow per-cause explanation and dated (2020), no age-vs-fungus distinction."
+      },
+      {
+        "url": "https://www.restorefoot.com/post/toenail-thickening-with-age-normal-or-not",
+        "word_count": 950,
+        "h2_count": 12,
+        "keyword_mention_count": 3,
+        "note": "Strongest structural competitor — normal-vs-not-normal framing and diagnosis/treatment sections are genuinely useful, but reads as a clinic marketing page and lacks caregiver/practical trimming angle."
+      },
+      {
+        "url": "https://achillesfootandankle.com/toenail-thickening-treatment/",
+        "word_count": 3200,
+        "h2_count": 22,
+        "keyword_mention_count": 6,
+        "note": "Extremely deep but treatment/procedure-obsessed (lasers, surgery, drug tables) — overkill for the core 'why does this happen with age' search intent; buries the aging cause under mostly-irrelevant content."
+      },
+      {
+        "url": "https://feetfirstclinic.com/blog/toenail-thickening-causes-and-how-to-manage/",
+        "word_count": 550,
+        "h2_count": 6,
+        "keyword_mention_count": 4,
+        "note": "Clean short cause breakdown with named sources (NLM, NYT) but no depth on management or the normal-vs-concerning distinction."
+      }
+    ],
+    "top_5_word_count_average": 1738,
+    "top_5_keyword_density_average": 4,
+    "best_external_sources_found": [
+      {
+        "url": "https://www.mayoclinic.org/healthy-lifestyle/adult-health/in-depth/nails/art-20546831",
+        "note": "Genuinely authoritative medical source, real editorial voice, appropriate for E-E-A-T citation on trimming safety."
+      },
+      {
+        "url": "https://www.restorefoot.com/post/toenail-thickening-with-age-normal-or-not",
+        "note": "Real podiatry-authored content with a genuinely useful normal-vs-not framework worth referencing for the diagnosis angle."
+      }
+    ]
+  },
+  "section_5_audience_intelligence": {
+    "blog_gen_instruction": "This is your primary creative brief. Every paragraph written for this specific person with this specific intent. Satisfy them completely.",
+    "who_they_are": "Two overlapping readers: (1) an older adult, likely 60-80s, who has personally noticed their own toenails getting thicker, harder to cut, or discolored, and wants to know if this is 'just aging' or something to worry about; (2) an adult child or family caregiver who has noticed a parent's or older relative's toenails changing and is trying to understand whether it needs a doctor's attention. Both arrive with light-to-moderate health literacy and want a plain-English answer, not a clinical treatise.",
+    "what_they_want_from_this_post": "A clear, reassuring explanation of why this happens with age specifically (not a generic 'thick toenail causes' dump), a way to tell if it's normal aging versus fungus or something else, and practical next steps — what to do about it and when it actually needs a professional.",
+    "what_frustrates_them": "Current top-ranking content either treats every thick toenail as a fungal infection to be aggressively treated (Achilles' 3,200-word treatment catalog) or gives a bare-bones cause list with no guidance on what to actually do (Mayo, Green Tree, Feet First). Real Quora threads show people genuinely confused about which cause applies to them, and caregivers frustrated that basic trimming has become physically difficult with no acknowledgment of that reality in existing content.",
+    "top_5_pain_points": [
+      "Can't tell if thickening is 'just age' or a fungal infection that needs treatment",
+      "Trimming has become physically difficult — nails too hard for regular clippers, made worse by arthritis or limited flexibility",
+      "Worried about it being a sign of something serious (diabetes, circulation problems) but unsure when concern is warranted",
+      "Embarrassed or grossed out discussing it, per real forum language ('gross topic'), which makes them less likely to seek help promptly",
+      "Caregivers specifically don't know if this is something they should be helping manage at home or referring to a podiatrist"
+    ],
+    "exact_user_phrases": [
+      "why do the elderly get thick toenails",
+      "why do toenails thicken and die for seniors",
+      "how can seniors prevent and treat thick toenails",
+      "gross topic: caring for elderly toenails",
+      "nail scissors tend to slip off the nails",
+      "it doesn't help that I have arthritis",
+      "cutting toenails when you cannot bend",
+      "toenails become hard and hornlike as we age",
+      "is it just aging or something else",
+      "ugly toenails is just what happens to elderly folks"
+    ],
+    "intent_content_signals": [
+      "Wants a direct causal explanation up front, not buried under trimming instructions",
+      "Responds to a clear normal-vs-not-normal framework they can self-check against",
+      "Values plain-English translation of clinical terms (onychauxis, onychocytes) rather than jargon-only",
+      "Caregiver segment specifically wants practical guidance for helping someone else, not just self-care framing",
+      "Wants explicit permission to not worry when thickening is genuinely just aging — reassurance is part of the job"
+    ]
+  },
+  "section_6_semantic_keyword_data": {
+    "blog_gen_instruction": "Primary keyword in strong tags every mention. AEO terms trigger direct answer paragraphs. User language woven naturally. No term from keywords_to_avoid used as focus term.",
+    "primary_keyword": "thick toenails elderly causes",
+    "keyword_variations": [
+      "why toenails get thick with age",
+      "thick toenails in the elderly",
+      "toenail thickening with age",
+      "why do toenails thicken as we age",
+      "thick toenails in older adults",
+      "aging toenails thickening"
+    ],
+    "cluster_keywords": [
+      "onychauxis", "reduced circulation toenails", "nail turnover rate aging",
+      "toenail fungus vs age", "onychomycosis elderly", "slow nail growth seniors",
+      "thick toenail trimming seniors", "when to see a podiatrist thick toenails",
+      "normal toenail changes with age", "thickened nail plate causes",
+      "keratin buildup toenail aging", "toenail care for elderly at home"
+    ],
+    "lsi_terms": [
+      "nail plate", "nail matrix", "onychocytes", "keratin buildup", "nail turnover rate",
+      "peripheral circulation", "involution", "onychomycosis", "nail bed",
+      "reduced blood flow feet", "psoriasis nail changes", "dermatophyte infection",
+      "podiatrist evaluation", "ingrown toenail risk", "nail plate hypertrophy",
+      "chronic microtrauma", "diabetes nail changes", "peripheral artery disease nails"
+    ],
+    "aeo_terms": [
+      "why do toenails get thicker as you get older",
+      "is it normal for toenails to get thick with age",
+      "how can you tell if thick toenails are from age or fungus",
+      "what age do toenails start getting thick",
+      "can thick toenails from aging be reversed",
+      "when should I worry about thick toenails",
+      "why are men more likely to get thick toenails than women",
+      "what does onychauxis mean",
+      "how do I trim thick toenails safely at home",
+      "do thick toenails mean poor circulation"
+    ],
+    "technical_terms": [
+      "onychauxis", "onychocytes", "onychomycosis", "nail matrix", "keratin", "involution"
+    ],
+    "user_language": [
+      "gross topic", "hard and hornlike", "nails too thick for clippers",
+      "can't bend to reach my feet", "just what happens when you get older",
+      "worried it's something serious", "scissors slip right off",
+      "cutting toenails when you can't bend", "ugly toenails"
+    ]
+  },
+  "section_7_voice_and_ai_queries": {
+    "blog_gen_instruction": "Answer every query directly in the relevant H2 section body. If a query cannot be addressed naturally in the body, route it to faqItems. No query left unanswered.",
+    "queries": [
+      "Why do toenails get thick as you get older?",
+      "Is it normal for toenails to get thicker with age?",
+      "What causes thick toenails in elderly people?",
+      "How can I tell if my thick toenail is from aging or fungus?",
+      "At what age do toenails usually start getting thick?",
+      "Can thick toenails caused by aging be reversed?",
+      "Why are men more likely to get thick toenails than women?",
+      "Does poor circulation cause thick toenails?",
+      "What is onychauxis?",
+      "When should I see a doctor about thick toenails?",
+      "How do I safely trim thick toenails at home?",
+      "Can thick toenails be a sign of diabetes?",
+      "Why do my nails feel hard and difficult to cut?",
+      "What happens if you don't trim thick toenails?",
+      "Is thick toenails in seniors always fungus?",
+      "How do you soften thick toenails before cutting?",
+      "Can arthritis make it harder to care for thick toenails?",
+      "What tools work best for cutting very thick toenails?"
+    ]
+  },
+  "section_8_hook_and_ctr": {
+    "blog_gen_instruction": "READ THIS SECTION BEFORE WRITING THE TITLE, META DESCRIPTION, INTRO, OR FIRST H2. The title and description here are the option the USER SELECTED from 2-3 real, evidence-based choices during phase_6 — use them exactly. The intro hook brief and first H2 hook direction are your creative brief for those specific elements, matching the selected option's angle. Do not deviate.",
+    "real_serp_findings_summary": "Of the 5 fetched titles, 3 lead with a direct causal question format ('What causes...', 'Why do...') and none front-load a reassurance angle distinguishing aging from fungus in the title itself — Restore Foot & Ankle comes closest with 'Normal or Not?' but frames it as a clinic marketing hook rather than a direct answer promise. No title in the top 5 explicitly promises 'what actually helps,' leaving an opening for a title that pairs the causal explanation with a practical payoff.",
+    "selected_option_rationale": "This option keeps the reassurance-plus-action structure competitors are missing — it answers the causal question directly in the title while promising practical help in the parenthetical, which matches what both the older-adult and caregiver reader segments want (per audience research: causal clarity + what to actually do about it).",
+    "title": "Why Toenails Get Thick With Age (And What Actually Helps)",
+    "title_char_count": 60,
+    "meta_description": "Thick toenails aren't always fungus. Discover the real aging causes, what's normal vs. not, and simple care steps that actually help.",
+    "meta_char_count": 135,
+    "intro_hook_brief": "Open by naming the exact moment the reader recognizes: noticing a toenail has gotten harder to cut or oddly thick, and the quiet worry of not knowing if that's normal. Immediately reassure that this is common with age, then promise the piece will explain both why it happens and what genuinely helps — setting up the aging-vs-fungus distinction that carries through the rest of the post.",
+    "first_h2_hook_direction": "Lead the first H2 with the plain-English mechanism (nail growth slowing, keratin piling up) before naming it clinically — validate that what the reader is seeing is a real, explainable biological process, not something mysterious or alarming."
+  },
+  "section_9_search_journey": {
+    "blog_gen_instruction": "This is the emotional contract with the reader. Every section of the post must honour the promise made. Read this before writing any section. If a paragraph breaks the journey arc — rewrite it.",
+    "reader_arrival_state": "Mildly worried and slightly self-conscious, having noticed a real physical change (their own nails or a relative's) and unsure whether it's ordinary aging or a sign of a problem.",
+    "journey_arc": [
+      "Immediate reassurance that thick toenails with age are common and explainable, not alarming by default",
+      "Clear explanation of the actual aging mechanism, in plain language before clinical terms",
+      "Direct comparison of aging-related thickening versus fungal and other causes, so the reader can self-locate",
+      "Practical guidance on safe trimming and care, including for readers with dexterity or bending limitations",
+      "Clear, specific signs that mean it's time to see a podiatrist rather than manage it alone"
+    ],
+    "promise_to_deliver": "The reader will leave understanding exactly why their toenails are thickening, whether it's something to worry about, and what to actually do about it.",
+    "exit_state": "Reassured and equipped — no longer uncertain about the cause, confident in how to manage it day-to-day, and clear on the specific signs that would warrant a doctor's visit."
+  },
+  "section_10_content_structure": {
+    "blog_gen_instruction": "This H2 structure is research-driven and must be followed exactly. Do not rename, reorder, or remove H2s without user instruction. Word budget per section is set — follow it. H3s may be added at editorial discretion.",
+    "fields": {
+      "h1": "Why Toenails Get Thick With Age (And What Actually Helps)",
+      "h2_structure": [
+        "Why Toenails Naturally Get Thicker As We Age",
+        "Is It Aging or Something Else? How to Tell the Difference",
+        "Why Men Tend to Get Thicker Toenails Than Women",
+        "When Thick Toenails Are Normal (And When They're Not)",
+        "How to Safely Trim and Care for Thick Toenails at Home",
+        "Trimming Thick Toenails When Bending or Dexterity Is a Problem",
+        "When to See a Podiatrist"
+      ],
+      "word_budget": {
+        "introduction": "220 words",
+        "conclusion": "180 words",
+        "per_h2": [
+          { "heading": "Why Toenails Naturally Get Thicker As We Age", "budget": 300 },
+          { "heading": "Is It Aging or Something Else? How to Tell the Difference", "budget": 320 },
+          { "heading": "Why Men Tend to Get Thicker Toenails Than Women", "budget": 150 },
+          { "heading": "When Thick Toenails Are Normal (And When They're Not)", "budget": 260 },
+          { "heading": "How to Safely Trim and Care for Thick Toenails at Home", "budget": 240 },
+          { "heading": "Trimming Thick Toenails When Bending or Dexterity Is a Problem", "budget": 180 },
+          { "heading": "When to See a Podiatrist", "budget": 150 }
+        ]
+      }
+    }
+  },
+  "section_11_internal_links": {
+    "blog_gen_instruction": "Every link below must appear in the post. Cluster links use anchor texts verbatim — do not rewrite. Cross-site links use the provided descriptive anchor. Place each link where the placement note says — woven naturally into prose, never as a standalone CTA. Total internal links must not exceed 6.",
+    "all_internal_links": [
+      {
+        "url_or_slug": "/blog/senior-nails/senior-nail-care-guide",
+        "title": "Senior Nail Care: The Complete Guide to Healthy Nails After 65",
+        "anchor_text": "senior nail care guide",
+        "placement_note": "Introduction or conclusion — establish this post as part of the broader senior nail care resource",
+        "link_type": "cluster-pillar"
+      },
+      {
+        "url_or_slug": "/blog/senior-nails/nail-tools-for-seniors-dexterity",
+        "title": "Best Nail Tools for Seniors With Limited Dexterity",
+        "anchor_text": "why toenails get thick with age",
+        "placement_note": "N/A — this post RECEIVES this link, not sends it. See internal_linking_map receives_links_from for context only.",
+        "link_type": "context-only-do-not-place"
+      },
+      {
+        "url_or_slug": "/blog/senior-nails/nail-tools-for-seniors-dexterity",
+        "title": "Best Nail Tools for Seniors With Limited Dexterity",
+        "anchor_text": "best nail tools for limited dexterity",
+        "placement_note": "In 'Trimming Thick Toenails When Bending or Dexterity Is a Problem' — natural fit recommending adaptive tools",
+        "link_type": "cluster-spoke"
+      },
+      {
+        "url_or_slug": "/blog/senior-nails/how-often-seniors-manicure-pedicure",
+        "title": "How Often Should Seniors Get Their Nails Done?",
+        "anchor_text": "how often seniors should get a manicure",
+        "placement_note": "In 'How to Safely Trim and Care for Thick Toenails at Home' — natural fit for ongoing maintenance cadence",
+        "link_type": "cluster-spoke"
+      },
+      {
+        "url_or_slug": "/blog/senior-nails/low-maintenance-nails-for-seniors",
+        "title": "Low-Maintenance Nail Options for Seniors (Least Effort, Best Durability)",
+        "anchor_text": "low-maintenance nail options for seniors",
+        "placement_note": "In 'When Thick Toenails Are Normal (And When They're Not)' — natural fit for readers wanting easier ongoing care",
+        "link_type": "cluster-spoke"
+      }
+    ]
+  },
+  "section_12_voice_tone": {
+    "blog_gen_instruction": "This is the voice for this specific post. Layer on top of Mirellé editorial framework. Do not default to generic AI tone.",
+    "recommended_voice": "Warm, reassuring expert — a knowledgeable friend explaining something ordinary, not a clinical brochure",
+    "tone_characteristics": [
+      "Reassuring first, informative second — never leads with alarm",
+      "Plain-English before clinical terminology, always defining terms the moment they're introduced",
+      "Practical and specific — real trimming guidance, not vague 'see a professional' deflections",
+      "Acknowledges the caregiver reader directly, not just the person experiencing it themselves",
+      "Respectful of dignity — never treats the topic as embarrassing or trivial, even though real audience language shows self-consciousness about it"
+    ],
+    "language_style": "Direct sentences, frequent use of 'you' and 'your,' minimal hedging, short paragraphs. Analogies favored for explaining the biological mechanism (e.g., comparing nail cell buildup to something visually intuitive) over dense clinical description.",
+    "audience_match": "This voice matches both reader segments — the older adult wants respect and plain answers, not alarm; the caregiver wants confidence that they can help without needing to become a medical expert. Warmth defuses the self-consciousness clearly present in the real audience language collected."
+  },
+  "section_13_external_links": {
+    "blog_gen_instruction": "Include all external links where indicated. Supports E-E-A-T. Use anchor suggestion as guide — write naturally around it. Sourced from phase_3's best_external_sources_found (real fetched competitor pages), not from separate searches. May be empty (0-2 links) if none of the fetched pages qualified as genuinely citation-worthy — that is expected, not a gap to fill.",
+    "links": [
+      {
+        "url": "https://www.mayoclinic.org/healthy-lifestyle/adult-health/in-depth/nails/art-20546831",
+        "context": "Use when discussing safe trimming technique in the home-care H2 section",
+        "anchor_suggestion": "Mayo Clinic's guidance on trimming thickened nails"
+      },
+      {
+        "url": "https://www.restorefoot.com/post/toenail-thickening-with-age-normal-or-not",
+        "context": "Use when establishing the normal-vs-not-normal framework in that H2 section",
+        "anchor_suggestion": "podiatrists' criteria for when thickening needs evaluation"
+      }
+    ]
+  },
+  "section_14_execution_plan": {
+    "purpose": "Blog Gen Agent reads this section FIRST — before frontmatter, before writing a single word. Every value here is pre-calculated from the input file data. Blog Gen Agent locks all values and executes them exactly.",
+    "blog_gen_instruction": "READ THIS SECTION FIRST. Lock every value. Execute exactly. Do not recalculate, do not adjust, do not deviate.",
+    "calculated_by": "Input Gen Agent",
+    "block_1_keyword_execution": {
+      "primary_keyword": "thick toenails elderly causes",
+      "top_5_density_baseline": 4,
+      "total_mention_target": "6-7 total mentions (baseline 4 + 2-3)",
+      "first_100_words_plan": {
+        "rule": "Primary keyword MUST appear TWICE in the first 100 words. Mandatory. No exceptions.",
+        "mention_1": "sentence 2 of introduction — naming the exact concern the reader arrived with",
+        "mention_2": "sentence 4-5 of introduction — reinforcing as the post's subject before transitioning into the promise/hook"
+      },
+      "first_half_target": "4 mentions — first ~950 words. Run denser in first half.",
+      "second_half_target": "2-3 mentions — second ~950 words",
+      "strong_tag_rule": "EVERY single mention of the primary keyword wrapped in <strong> tags. No exceptions. Scan after every paragraph.",
+      "keywords_to_avoid_active": "Full list in section_3 — never used as focus terms anywhere in the post"
+    },
+    "block_2_word_budget": {
+      "total_target": "1900 words — +/-50 words tolerance, never exceed",
+      "introduction": "220 words",
+      "conclusion": "180 words",
+      "h2_budgets": [
+        { "heading": "Why Toenails Naturally Get Thicker As We Age", "budget": "300 words", "complexity": "medium" },
+        { "heading": "Is It Aging or Something Else? How to Tell the Difference", "budget": "320 words", "complexity": "high" },
+        { "heading": "Why Men Tend to Get Thicker Toenails Than Women", "budget": "150 words", "complexity": "low" },
+        { "heading": "When Thick Toenails Are Normal (And When They're Not)", "budget": "260 words", "complexity": "medium" },
+        { "heading": "How to Safely Trim and Care for Thick Toenails at Home", "budget": "240 words", "complexity": "medium" },
+        { "heading": "Trimming Thick Toenails When Bending or Dexterity Is a Problem", "budget": "180 words", "complexity": "medium" },
+        { "heading": "When to See a Podiatrist", "budget": "150 words", "complexity": "low" }
+      ],
+      "tracking_rule": "Track running word total at the end of every H2 section. If a section is running over budget — cut before moving to the next section. Do not compensate later."
+    },
+    "block_3_image_plan": {
+      "total_images": 7,
+      "hero_image": "frontmatter only — NEVER appears in post body",
+      "body_images": 6,
+      "assignments": [
+        { "image_number": 1, "place_after": "Why Toenails Naturally Get Thicker As We Age", "image_type": "infographic", "section_context": "Simple visual explaining the nail-thickening mechanism with age: slower nail growth → keratin cell buildup → thicker plate. Clean labeled diagram, not a photo." },
+        { "image_number": 2, "place_after": "Is It Aging or Something Else? How to Tell the Difference", "image_type": "infographic", "section_context": "Side-by-side comparison chart (not a photo) of signs pointing to age-related thickening vs. signs pointing to fungal infection — text/icon based comparison layout." },
+        { "image_number": 3, "place_after": "Why Men Tend to Get Thicker Toenails Than Women", "image_type": "standard_inspiration", "section_context": "Well-groomed, healthy senior feet/pedicure styling shot conveying general foot care and confidence." },
+        { "image_number": 4, "place_after": "When Thick Toenails Are Normal (And When They're Not)", "image_type": "standard_inspiration", "section_context": "Calm, reassuring lifestyle image of an older adult comfortable and relaxed, feet at ease — supports the reassurance tone of this section." },
+        { "image_number": 5, "place_after": "How to Safely Trim and Care for Thick Toenails at Home", "image_type": "standard_inspiration", "section_context": "Neat, well-maintained toenails post-care, styled editorial shot — NOT hands/tools mid-action." },
+        { "image_number": 6, "place_after": "Trimming Thick Toenails When Bending or Dexterity Is a Problem", "image_type": "standard_inspiration", "section_context": "Warm image conveying ease and comfort in senior self-care or caregiver support context, styled, no tools/hands-at-work shots." }
+      ],
+      "image_type_rule": {
+        "default": "standard_inspiration",
+        "infographic_allowed_when": "Slots 1 and 2 genuinely require a comparison/mechanism visual given this post's informational intent explaining a biological process and a diagnostic distinction.",
+        "banned_absolutely": "NEVER a tool/equipment image (hands holding a file, tools laid out, application/process shots showing hands or tools at work) in any slot. NEVER a literal photo-style nail-to-nail comparison — comparisons must be image_type: infographic.",
+        "note_for_blog_gen": "Blog Gen Agent follows the image_type flagged here exactly per slot."
+      },
+      "path_rule": "/images/blog/senior-nails/thick-toenails-aging-causes/filename.webp"
+    },
+    "block_4_opening_technique_assignments": {
+      "rule": "No two consecutive sections use the same technique. Conclusion = Technique 1 or 3 only.",
+      "assignments": [
+        { "section": "Introduction", "technique": "Technique 1 — The Claim (direct reassurance + causal promise)" },
+        { "section": "Why Toenails Naturally Get Thicker As We Age", "technique": "Technique 2 — The Scene (relatable moment of noticing the change)" },
+        { "section": "Is It Aging or Something Else? How to Tell the Difference", "technique": "Technique 4 — The Question (direct diagnostic question to the reader)" },
+        { "section": "Why Men Tend to Get Thicker Toenails Than Women", "technique": "Technique 3 — The Reframe (surprising fact framing)" },
+        { "section": "When Thick Toenails Are Normal (And When They're Not)", "technique": "Technique 1 — The Claim (direct reassurance statement)" },
+        { "section": "How to Safely Trim and Care for Thick Toenails at Home", "technique": "Technique 2 — The Scene (practical, action-oriented opening)" },
+        { "section": "Trimming Thick Toenails When Bending or Dexterity Is a Problem", "technique": "Technique 4 — The Question (acknowledging the reader's specific obstacle)" },
+        { "section": "When to See a Podiatrist", "technique": "Technique 1 — The Claim (clear direct statement of when to act)" },
+        { "section": "Conclusion", "technique": "Technique 3 — The Reframe (closing reassurance + empowerment)" }
+      ],
+      "banned_opener_rule": "Check every opener against banned_opening_approaches in blog gen prompt before writing the second sentence"
+    },
+    "block_5_link_placements": {
+      "rule": "Every link placed exactly where specified. Anchor texts used verbatim — never rewritten. Links woven into prose naturally — never standalone CTAs.",
+      "links": [
+        { "anchor_text": "senior nail care guide", "full_url": "/blog/senior-nails/senior-nail-care-guide", "place_in_section": "Introduction or Conclusion", "placement_context": "Framing this post as part of the broader senior nail care resource", "link_type": "cluster-pillar" },
+        { "anchor_text": "best nail tools for limited dexterity", "full_url": "/blog/senior-nails/nail-tools-for-seniors-dexterity", "place_in_section": "Trimming Thick Toenails When Bending or Dexterity Is a Problem", "placement_context": "Recommending adaptive tools as the practical next step", "link_type": "cluster-spoke" },
+        { "anchor_text": "how often seniors should get a manicure", "full_url": "/blog/senior-nails/how-often-seniors-manicure-pedicure", "place_in_section": "How to Safely Trim and Care for Thick Toenails at Home", "placement_context": "Connecting trimming cadence to broader senior nail maintenance schedule", "link_type": "cluster-spoke" },
+        { "anchor_text": "low-maintenance nail options for seniors", "full_url": "/blog/senior-nails/low-maintenance-nails-for-seniors", "place_in_section": "When Thick Toenails Are Normal (And When They're Not)", "placement_context": "Pointing readers wanting easier ongoing care toward a dedicated resource", "link_type": "cluster-spoke" }
+      ]
+    },
+    "block_6_aeo_geo_plan": {
+      "aeo_assignments": [
+        { "aeo_term": "why do toenails get thicker as you get older", "assigned_to_section": "Why Toenails Naturally Get Thicker As We Age", "execution": "Write a direct 2-3 sentence answer paragraph IMMEDIATELY after the H2 heading — before any elaboration." },
+        { "aeo_term": "how can you tell if thick toenails are from age or fungus", "assigned_to_section": "Is It Aging or Something Else? How to Tell the Difference", "execution": "Write a direct 2-3 sentence answer paragraph IMMEDIATELY after the H2 heading." },
+        { "aeo_term": "why are men more likely to get thick toenails than women", "assigned_to_section": "Why Men Tend to Get Thicker Toenails Than Women", "execution": "Write a direct 2-3 sentence answer paragraph IMMEDIATELY after the H2 heading." },
+        { "aeo_term": "when should I worry about thick toenails", "assigned_to_section": "When Thick Toenails Are Normal (And When They're Not)", "execution": "Write a direct 2-3 sentence answer paragraph IMMEDIATELY after the H2 heading." },
+        { "aeo_term": "when should I see a doctor about thick toenails", "assigned_to_section": "When to See a Podiatrist", "execution": "Write a direct 2-3 sentence answer paragraph IMMEDIATELY after the H2 heading, listing specific red-flag signs." }
+      ],
+      "geo_entity_statements": [
+        { "entity": "onychauxis", "assigned_to_section": "Why Toenails Naturally Get Thicker As We Age", "execution": "Write a clear declarative definition sentence: 'Onychauxis is the clinical term for abnormal nail thickening.' Confident, no hedging." },
+        { "entity": "onychocytes", "assigned_to_section": "Why Toenails Naturally Get Thicker As We Age", "execution": "Write a clear declarative definition sentence explaining these as the nail cells that build up as growth slows with age." },
+        { "entity": "onychomycosis", "assigned_to_section": "Is It Aging or Something Else? How to Tell the Difference", "execution": "Write a clear declarative definition sentence identifying this as the clinical term for toenail fungal infection, distinct from age-related thickening." }
+      ]
+    },
+    "block_7_active_constraints": {
+      "em_dash_banned": "Long em dash does not appear anywhere. If one forms while writing — stop, replace with: comma / new sentence / parentheses / but / restructure.",
+      "banned_vocab_watch": [
+        "elevate", "unlock", "delve", "seamless", "journey", "embrace", "elevate your routine", "game-changer"
+      ],
+      "american_english_active": "color, recognize, -ize, -or — every instance, no exceptions. This post uses American English, not British.",
+      "keyword_density_reminder": "After every 2 H2 sections — count current keyword mentions. Verify running total is on track to hit 6-7 total. First half must run denser than second half. Adjust if needed.",
+      "image_path_reminder": "/images/blog/senior-nails/thick-toenails-aging-causes/filename.webp — topic_slug in path always",
+      "internal_link_url_reminder": "Full correct paths only. Cluster links = /blog/senior-nails/[slug]. Never bare /slug.",
+      "hero_image_reminder": "Hero = frontmatter only. Never place hero image in body.",
+      "strong_tag_reminder": "Every primary keyword mention = <strong> tags. Scan after every paragraph."
+    }
+  }
+}
