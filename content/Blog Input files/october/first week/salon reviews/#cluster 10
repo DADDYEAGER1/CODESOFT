@@ -1,0 +1,359 @@
+{
+  "cluster_metadata": {
+    "cluster_topic": "Salon Reviews",
+    "topic_slug": "salon-reviews",
+    "show_inspo_gallery_link_cluster_default": false,
+    "target_audience": "Global, Tier 1 countries",
+    "total_posts": 10,
+    "intent_breakdown": {
+      "informational": 8,
+      "inspirational": 2,
+      "tutorial": 0,
+      "comparison": 1,
+      "seasonal_trend": 0
+    },
+    "pillar_post_slug": "regal-nails-reviews",
+    "created_date": "2026-09-02"
+  },
+  "existing_site_posts_excluded": [],
+  "posts": [
+    {
+      "post_id": 1,
+      "role": "pillar",
+      "title": "Regal Nails Reviews: What to Know Before You Go",
+      "slug": "regal-nails-reviews",
+      "primary_keyword": "regal nails reviews",
+      "intent": "informational",
+      "search_mode": "decision_mode",
+      "suggested_hook_trigger": "Trigger 1 — Curiosity Gap",
+      "search_demand_signals": [
+        "Yelp: 335+ Regal Nails locations tracked, aggregate 1,102 reviews at 2.7 stars",
+        "PissedConsumer: 293-301 reviews across multiple pages, 1.6-1.7 star aggregate rating",
+        "Glassdoor: 35 company reviews with distinct employee-side search interest"
+      ],
+      "why_included": "Largest US nail salon franchise (800+ locations, Walmart-adjacent and standalone), with the broadest branded search demand of any chain found in research — qualifies as pillar due to scale and query volume.",
+      "internal_links": {
+        "links_to": [
+          { "slug": "miniluxe-reviews", "anchor_text": "MiniLuxe reviews and pricing breakdown", "type": "spoke" },
+          { "slug": "davi-nails-reviews", "anchor_text": "DaVi Nails reviews inside Walmart", "type": "spoke" },
+          { "slug": "bellacures-reviews", "anchor_text": "Bellacures reviews from Los Angeles clients", "type": "spoke" },
+          { "slug": "chillhouse-reviews", "anchor_text": "Chillhouse reviews of the viral NYC nail studio", "type": "spoke" },
+          { "slug": "glosslab-reviews", "anchor_text": "GLOSSLAB membership nail salon reviews", "type": "spoke" },
+          { "slug": "tenoverten-reviews", "anchor_text": "Tenoverten non-toxic nail salon reviews", "type": "spoke" },
+          { "slug": "paintbox-nails-reviews", "anchor_text": "Paintbox Nails celebrity nail art studio reviews", "type": "spoke" },
+          { "slug": "how-to-tell-if-nail-salon-is-safe", "anchor_text": "how to tell if a nail salon is safe", "type": "spoke" },
+          { "slug": "nail-bar-vs-nail-salon", "anchor_text": "nail bar vs nail salon comparison", "type": "spoke" }
+        ],
+        "receives_links_from": [
+          { "slug": "miniluxe-reviews", "anchor_text": "Regal Nails reviews" },
+          { "slug": "davi-nails-reviews", "anchor_text": "Regal Nails reviews" },
+          { "slug": "bellacures-reviews", "anchor_text": "Regal Nails reviews" },
+          { "slug": "chillhouse-reviews", "anchor_text": "Regal Nails reviews" },
+          { "slug": "glosslab-reviews", "anchor_text": "Regal Nails reviews" },
+          { "slug": "tenoverten-reviews", "anchor_text": "Regal Nails reviews" },
+          { "slug": "paintbox-nails-reviews", "anchor_text": "Regal Nails reviews" },
+          { "slug": "how-to-tell-if-nail-salon-is-safe", "anchor_text": "Regal Nails reviews" },
+          { "slug": "nail-bar-vs-nail-salon", "anchor_text": "Regal Nails reviews" }
+        ]
+      },
+      "status": "approved"
+    },
+    {
+      "post_id": 2,
+      "role": "spoke",
+      "title": "MiniLuxe Reviews: Is It Worth the Price?",
+      "slug": "miniluxe-reviews",
+      "primary_keyword": "miniluxe reviews",
+      "intent": "informational",
+      "search_mode": "decision_mode",
+      "suggested_hook_trigger": "Trigger 1 — Curiosity Gap",
+      "search_demand_signals": [
+        "Yelp: multiple locations (Westwood, Brentwood, Seaport) each with 79-160+ reviews, 4.2-4.6 stars",
+        "Trustpilot: dedicated 'Anywhere Miniluxe' review page with 27+ customer ratings",
+        "TripAdvisor: dedicated attraction-review page with polarized long-form reviews"
+      ],
+      "why_included": "National premium nail brand with cross-platform review demand (Yelp, TripAdvisor, Trustpilot, Glassdoor) and visible 'surprised by the poor reviews' pattern indicating active pre-visit research behavior.",
+      "internal_links": {
+        "links_to": [
+          { "slug": "regal-nails-reviews", "anchor_text": "Regal Nails reviews", "type": "pillar" },
+          { "slug": "davi-nails-reviews", "anchor_text": "DaVi Nails reviews inside Walmart", "type": "spoke" },
+          { "slug": "bellacures-reviews", "anchor_text": "Bellacures reviews from Los Angeles clients", "type": "spoke" },
+          { "slug": "how-to-tell-if-nail-salon-is-safe", "anchor_text": "how to tell if a nail salon is safe", "type": "spoke" }
+        ],
+        "receives_links_from": [
+          { "slug": "regal-nails-reviews", "anchor_text": "MiniLuxe reviews and pricing breakdown" },
+          { "slug": "davi-nails-reviews", "anchor_text": "MiniLuxe reviews" },
+          { "slug": "bellacures-reviews", "anchor_text": "MiniLuxe reviews" }
+        ]
+      },
+      "status": "approved"
+    },
+    {
+      "post_id": 3,
+      "role": "spoke",
+      "title": "DaVi Nails Reviews: Walmart's In-Store Nail Salon Explained",
+      "slug": "davi-nails-reviews",
+      "primary_keyword": "davi nails reviews",
+      "intent": "informational",
+      "search_mode": "decision_mode",
+      "suggested_hook_trigger": "Trigger 1 — Curiosity Gap",
+      "search_demand_signals": [
+        "Yelp: consistent naming pattern across states (FL, DE, GA, NV, TX, CA) each with dedicated review pages",
+        "Birdeye: dedicated aggregator profiles per location with 47-206 reviews",
+        "Fresha: dedicated Walmart-location business listing with review aggregation"
+      ],
+      "why_included": "399+ franchised units inside Walmart nationwide with consistent branded naming, generating repeated 'is it worth it' review-seeking searches tied to the Walmart convenience/trust question.",
+      "internal_links": {
+        "links_to": [
+          { "slug": "regal-nails-reviews", "anchor_text": "Regal Nails reviews", "type": "pillar" },
+          { "slug": "miniluxe-reviews", "anchor_text": "MiniLuxe reviews and pricing breakdown", "type": "spoke" },
+          { "slug": "how-to-tell-if-nail-salon-is-safe", "anchor_text": "how to tell if a nail salon is safe", "type": "spoke" },
+          { "slug": "nail-bar-vs-nail-salon", "anchor_text": "nail bar vs nail salon comparison", "type": "spoke" }
+        ],
+        "receives_links_from": [
+          { "slug": "regal-nails-reviews", "anchor_text": "DaVi Nails reviews inside Walmart" },
+          { "slug": "miniluxe-reviews", "anchor_text": "DaVi Nails reviews inside Walmart" }
+        ]
+      },
+      "status": "approved"
+    },
+    {
+      "post_id": 4,
+      "role": "spoke",
+      "title": "Bellacures Reviews: Inside LA's Hospital-Grade Nail Salon",
+      "slug": "bellacures-reviews",
+      "primary_keyword": "bellacures reviews",
+      "intent": "informational",
+      "search_mode": "decision_mode",
+      "suggested_hook_trigger": "Trigger 1 — Curiosity Gap",
+      "search_demand_signals": [
+        "Yelp brand page: 1,835 aggregate reviews across 6 locations, 3.8 stars",
+        "Yelp individual locations: 112-368 reviews each (Beverly Hills, Larchmont, Santa Monica, Dallas)",
+        "Repeated 'I was shocked by the reviews' language across multiple independent reviewers signals active pre-visit research"
+      ],
+      "why_included": "Established 2006 hospital-grade sanitation brand with a dedicated Yelp brand aggregation page confirming real cross-location branded search demand.",
+      "internal_links": {
+        "links_to": [
+          { "slug": "regal-nails-reviews", "anchor_text": "Regal Nails reviews", "type": "pillar" },
+          { "slug": "miniluxe-reviews", "anchor_text": "MiniLuxe reviews and pricing breakdown", "type": "spoke" },
+          { "slug": "tenoverten-reviews", "anchor_text": "Tenoverten non-toxic nail salon reviews", "type": "spoke" },
+          { "slug": "how-to-tell-if-nail-salon-is-safe", "anchor_text": "how to tell if a nail salon is safe", "type": "spoke" }
+        ],
+        "receives_links_from": [
+          { "slug": "regal-nails-reviews", "anchor_text": "Bellacures reviews from Los Angeles clients" },
+          { "slug": "miniluxe-reviews", "anchor_text": "Bellacures reviews" },
+          { "slug": "tenoverten-reviews", "anchor_text": "Bellacures reviews" }
+        ]
+      },
+      "status": "approved"
+    },
+    {
+      "post_id": 5,
+      "role": "spoke",
+      "title": "Chillhouse Reviews: Is NYC's Viral Nail Studio Worth the Hype?",
+      "slug": "chillhouse-reviews",
+      "primary_keyword": "chillhouse reviews",
+      "intent": "inspirational",
+      "search_mode": "inspiration_mode",
+      "suggested_hook_trigger": "Trigger 2 — FOMO/Trend",
+      "search_demand_signals": [
+        "Thingtesting: dedicated 'Chillhouse Reviews 2026' aggregator page",
+        "Forbes: dedicated 'Is It Worth It' feature specifically reviewing the salon experience",
+        "Yelp: multiple NYC locations (LES, SoHo) each with 130-150+ reviews"
+      ],
+      "why_included": "Viral TikTok/Pinterest nail studio with a dedicated third-party review aggregator page and mainstream press coverage (Forbes, Vogue, Domino) confirming branded search demand beyond local NYC searchers.",
+      "internal_links": {
+        "links_to": [
+          { "slug": "regal-nails-reviews", "anchor_text": "Regal Nails reviews", "type": "pillar" },
+          { "slug": "glosslab-reviews", "anchor_text": "GLOSSLAB membership nail salon reviews", "type": "spoke" },
+          { "slug": "paintbox-nails-reviews", "anchor_text": "Paintbox Nails celebrity nail art studio reviews", "type": "spoke" },
+          { "slug": "nail-bar-vs-nail-salon", "anchor_text": "nail bar vs nail salon comparison", "type": "spoke" }
+        ],
+        "receives_links_from": [
+          { "slug": "regal-nails-reviews", "anchor_text": "Chillhouse reviews of the viral NYC nail studio" },
+          { "slug": "glosslab-reviews", "anchor_text": "Chillhouse reviews" },
+          { "slug": "paintbox-nails-reviews", "anchor_text": "Chillhouse reviews" }
+        ]
+      },
+      "status": "approved"
+    },
+    {
+      "post_id": 6,
+      "role": "spoke",
+      "title": "GLOSSLAB Reviews: The Membership Nail Salon Model Explained",
+      "slug": "glosslab-reviews",
+      "primary_keyword": "glosslab reviews",
+      "intent": "comparison",
+      "search_mode": "decision_mode",
+      "suggested_hook_trigger": "Trigger 1 — Curiosity Gap",
+      "search_demand_signals": [
+        "Yelp: multi-city presence (NYC, DC/Bethesda, Miami, Dallas) with independent review pages per location",
+        "Personal blog reviews (misschristiegirl.com) with dedicated 'GLOSSLAB Review' post",
+        "Glassdoor forum thread specifically asking how it differs from a traditional nail salon"
+      ],
+      "why_included": "Multi-city membership-based chain generating genuine comparison-stage searches ('how does it differ from a regular salon') found independently on Glassdoor forums and personal blogs.",
+      "internal_links": {
+        "links_to": [
+          { "slug": "regal-nails-reviews", "anchor_text": "Regal Nails reviews", "type": "pillar" },
+          { "slug": "chillhouse-reviews", "anchor_text": "Chillhouse reviews of the viral NYC nail studio", "type": "spoke" },
+          { "slug": "nail-bar-vs-nail-salon", "anchor_text": "nail bar vs nail salon comparison", "type": "spoke" },
+          { "slug": "how-to-tell-if-nail-salon-is-safe", "anchor_text": "how to tell if a nail salon is safe", "type": "spoke" }
+        ],
+        "receives_links_from": [
+          { "slug": "regal-nails-reviews", "anchor_text": "GLOSSLAB membership nail salon reviews" },
+          { "slug": "chillhouse-reviews", "anchor_text": "GLOSSLAB membership nail salon reviews" }
+        ]
+      },
+      "status": "approved"
+    },
+    {
+      "post_id": 7,
+      "role": "spoke",
+      "title": "Tenoverten Reviews: The Non-Toxic Nail Salon Loved by Vogue",
+      "slug": "tenoverten-reviews",
+      "primary_keyword": "tenoverten reviews",
+      "intent": "informational",
+      "search_mode": "aesthetic_identity_mode",
+      "suggested_hook_trigger": "Trigger 4 — Identity Mirroring",
+      "search_demand_signals": [
+        "Yelp: 5 locations across NYC, LA, and Austin, each with independent review pages",
+        "Marie Claire: dedicated salon profile and review feature",
+        "honestbrandreviews.com: standalone dedicated 'Tenoverten Review' page"
+      ],
+      "why_included": "Multi-city clean-beauty nail brand with editorial coverage (Vogue, Vanity Fair, Elle, Marie Claire) and a dedicated third-party review site confirming standalone branded search demand around the non-toxic identity angle.",
+      "internal_links": {
+        "links_to": [
+          { "slug": "regal-nails-reviews", "anchor_text": "Regal Nails reviews", "type": "pillar" },
+          { "slug": "bellacures-reviews", "anchor_text": "Bellacures reviews from Los Angeles clients", "type": "spoke" },
+          { "slug": "paintbox-nails-reviews", "anchor_text": "Paintbox Nails celebrity nail art studio reviews", "type": "spoke" },
+          { "slug": "how-to-tell-if-nail-salon-is-safe", "anchor_text": "how to tell if a nail salon is safe", "type": "spoke" }
+        ],
+        "receives_links_from": [
+          { "slug": "regal-nails-reviews", "anchor_text": "Tenoverten non-toxic nail salon reviews" },
+          { "slug": "bellacures-reviews", "anchor_text": "Tenoverten non-toxic nail salon reviews" }
+        ]
+      },
+      "status": "approved"
+    },
+    {
+      "post_id": 8,
+      "role": "spoke",
+      "title": "Paintbox Nails Reviews: NYC's Celebrity Nail Art Studio",
+      "slug": "paintbox-nails-reviews",
+      "primary_keyword": "paintbox nails reviews",
+      "intent": "inspirational",
+      "search_mode": "aesthetic_identity_mode",
+      "suggested_hook_trigger": "Trigger 4 — Identity Mirroring",
+      "search_demand_signals": [
+        "Thingtesting: dedicated 'Paintbox Reviews 2026' aggregator page",
+        "TikTok: multiple discovery/review videos specifically named 'Paintbox Nails NYC Review'",
+        "Haute Living: editorial feature naming celebrity clientele (Kelly Ripa, Hailee Steinfeld, Zosia Mamet)"
+      ],
+      "why_included": "Celebrity-associated nail art studio with a dedicated third-party review aggregator page and active TikTok discovery/review content confirming real named-brand search behavior.",
+      "internal_links": {
+        "links_to": [
+          { "slug": "regal-nails-reviews", "anchor_text": "Regal Nails reviews", "type": "pillar" },
+          { "slug": "chillhouse-reviews", "anchor_text": "Chillhouse reviews of the viral NYC nail studio", "type": "spoke" },
+          { "slug": "tenoverten-reviews", "anchor_text": "Tenoverten non-toxic nail salon reviews", "type": "spoke" },
+          { "slug": "glosslab-reviews", "anchor_text": "GLOSSLAB membership nail salon reviews", "type": "spoke" }
+        ],
+        "receives_links_from": [
+          { "slug": "regal-nails-reviews", "anchor_text": "Paintbox Nails celebrity nail art studio reviews" },
+          { "slug": "chillhouse-reviews", "anchor_text": "Paintbox Nails celebrity nail art studio reviews" },
+          { "slug": "tenoverten-reviews", "anchor_text": "Paintbox Nails celebrity nail art studio reviews" }
+        ]
+      },
+      "status": "approved"
+    },
+    {
+      "post_id": 9,
+      "role": "spoke",
+      "title": "How to Tell If a Nail Salon Is Actually Safe (Before You Book)",
+      "slug": "how-to-tell-if-nail-salon-is-safe",
+      "primary_keyword": "is my nail salon safe",
+      "intent": "informational",
+      "search_mode": "decision_mode",
+      "suggested_hook_trigger": "Trigger 1 — Curiosity Gap",
+      "search_demand_signals": [
+        "Multiple independent podiatry/dermatology sites addressing the identical query pattern (Pinnacle Dermatology, Family Foot Care, Patel Podiatry)",
+        "CBC investigative journalism piece on nail salon health-code violations",
+        "Consumer safety guides (jawspodiatry.com) directly instructing readers to 'look at consumer reviews' before booking"
+      ],
+      "why_included": "Cross-cutting safety/sterilization query validated on 5+ independent health and consumer-safety sources, representing real pre-visit research behavior that applies across every named-brand review post in the cluster.",
+      "internal_links": {
+        "links_to": [
+          { "slug": "regal-nails-reviews", "anchor_text": "Regal Nails reviews", "type": "pillar" },
+          { "slug": "miniluxe-reviews", "anchor_text": "MiniLuxe reviews and pricing breakdown", "type": "spoke" },
+          { "slug": "davi-nails-reviews", "anchor_text": "DaVi Nails reviews inside Walmart", "type": "spoke" },
+          { "slug": "bellacures-reviews", "anchor_text": "Bellacures reviews from Los Angeles clients", "type": "spoke" }
+        ],
+        "receives_links_from": [
+          { "slug": "regal-nails-reviews", "anchor_text": "how to tell if a nail salon is safe" },
+          { "slug": "miniluxe-reviews", "anchor_text": "how to tell if a nail salon is safe" },
+          { "slug": "davi-nails-reviews", "anchor_text": "how to tell if a nail salon is safe" },
+          { "slug": "bellacures-reviews", "anchor_text": "how to tell if a nail salon is safe" },
+          { "slug": "tenoverten-reviews", "anchor_text": "how to tell if a nail salon is safe" },
+          { "slug": "glosslab-reviews", "anchor_text": "how to tell if a nail salon is safe" }
+        ]
+      },
+      "status": "approved"
+    },
+    {
+      "post_id": 10,
+      "role": "spoke",
+      "title": "Nail Bar vs Nail Salon: What's Actually Different?",
+      "slug": "nail-bar-vs-nail-salon",
+      "primary_keyword": "nail bar vs nail salon",
+      "intent": "comparison",
+      "search_mode": "decision_mode",
+      "suggested_hook_trigger": "Trigger 1 — Curiosity Gap",
+      "search_demand_signals": [
+        "Multiple independent dedicated articles on the exact query (mynailbusiness.com, Raymond Hall's Blog, Nailicy, Yen Nail Inc)",
+        "Salon Geek professional forum thread with real practitioners asking the identical question",
+        "Consistent recurring definitional pattern (bar = fast/social vs salon = broader/relaxing) across 5+ independent sources"
+      ],
+      "why_included": "Distinct, repeatedly-validated comparison query separate from any single brand review — multiple independent sites and a professional forum thread confirm real, recurring search demand around this exact distinction.",
+      "internal_links": {
+        "links_to": [
+          { "slug": "regal-nails-reviews", "anchor_text": "Regal Nails reviews", "type": "pillar" },
+          { "slug": "davi-nails-reviews", "anchor_text": "DaVi Nails reviews inside Walmart", "type": "spoke" },
+          { "slug": "chillhouse-reviews", "anchor_text": "Chillhouse reviews of the viral NYC nail studio", "type": "spoke" },
+          { "slug": "glosslab-reviews", "anchor_text": "GLOSSLAB membership nail salon reviews", "type": "spoke" }
+        ],
+        "receives_links_from": [
+          { "slug": "regal-nails-reviews", "anchor_text": "nail bar vs nail salon comparison" },
+          { "slug": "davi-nails-reviews", "anchor_text": "nail bar vs nail salon comparison" },
+          { "slug": "chillhouse-reviews", "anchor_text": "nail bar vs nail salon comparison" },
+          { "slug": "glosslab-reviews", "anchor_text": "nail bar vs nail salon comparison" }
+        ]
+      },
+      "status": "approved"
+    }
+  ],
+  "keyword_ownership_registry": {
+    "description": "Master list of all primary keywords — one per post, no overlaps, includes existing site posts",
+    "entries": [
+      { "primary_keyword": "regal nails reviews", "owned_by_slug": "regal-nails-reviews", "owned_by_title": "Regal Nails Reviews: What to Know Before You Go", "source": "new post" },
+      { "primary_keyword": "miniluxe reviews", "owned_by_slug": "miniluxe-reviews", "owned_by_title": "MiniLuxe Reviews: Is It Worth the Price?", "source": "new post" },
+      { "primary_keyword": "davi nails reviews", "owned_by_slug": "davi-nails-reviews", "owned_by_title": "DaVi Nails Reviews: Walmart's In-Store Nail Salon Explained", "source": "new post" },
+      { "primary_keyword": "bellacures reviews", "owned_by_slug": "bellacures-reviews", "owned_by_title": "Bellacures Reviews: Inside LA's Hospital-Grade Nail Salon", "source": "new post" },
+      { "primary_keyword": "chillhouse reviews", "owned_by_slug": "chillhouse-reviews", "owned_by_title": "Chillhouse Reviews: Is NYC's Viral Nail Studio Worth the Hype?", "source": "new post" },
+      { "primary_keyword": "glosslab reviews", "owned_by_slug": "glosslab-reviews", "owned_by_title": "GLOSSLAB Reviews: The Membership Nail Salon Model Explained", "source": "new post" },
+      { "primary_keyword": "tenoverten reviews", "owned_by_slug": "tenoverten-reviews", "owned_by_title": "Tenoverten Reviews: The Non-Toxic Nail Salon Loved by Vogue", "source": "new post" },
+      { "primary_keyword": "paintbox nails reviews", "owned_by_slug": "paintbox-nails-reviews", "owned_by_title": "Paintbox Nails Reviews: NYC's Celebrity Nail Art Studio", "source": "new post" },
+      { "primary_keyword": "is my nail salon safe", "owned_by_slug": "how-to-tell-if-nail-salon-is-safe", "owned_by_title": "How to Tell If a Nail Salon Is Actually Safe (Before You Book)", "source": "new post" },
+      { "primary_keyword": "nail bar vs nail salon", "owned_by_slug": "nail-bar-vs-nail-salon", "owned_by_title": "Nail Bar vs Nail Salon: What's Actually Different?", "source": "new post" }
+    ]
+  },
+  "merged_posts_log": [],
+  "killed_posts_log": [
+    { "topic": "Generic 'Nail Bar' brand-name reviews (treating 'Nail Bar' as a single national chain)", "reason": "No single national chain — fragmented across hundreds of unrelated independent local businesses sharing the generic name; no branded demand signal. Replaced with the validated 'nail bar vs nail salon' comparison query instead." },
+    { "topic": "Dashing Diva reviews", "reason": "Product brand (press-on nails/gel strips), not a salon — wrong category for this cluster" },
+    { "topic": "Olive & June reviews", "reason": "Primarily an at-home product/DTC brand (mani systems); salon locations are incidental/closed — wrong category, would confuse readers searching for product vs. salon experience" },
+    { "topic": "A Perfect 10 Nail & Beauty Bar reviews", "reason": "Only 4 locations (South Dakota, regional), thin national search volume, insufficient demand signal beyond 1-2 sources" },
+    { "topic": "Base Coat Nail Salon reviews", "reason": "Regional only (LA/Denver), inconsistent branding, review volume too thin nationally for a dedicated post" },
+    { "topic": "Hammer & Nails reviews", "reason": "Primarily a men's barbershop/grooming chain — nail services are secondary; off-category for a nail-focused site" },
+    { "topic": "\"Best celebrity nail salons in [city]\" city round-ups", "reason": "City-specific listicle format overlaps with individual named-salon posts already covered (Paintbox, Chillhouse); no distinct query behind the round-up itself beyond city-search intent, out of scope for a national brand-review cluster" },
+    { "topic": "Sona Nails & Spa reviews", "reason": "Single independent location (Queens, NY) misidentified as chain during research — not a national brand, insufficient scale" }
+  ]
+}
