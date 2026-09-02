@@ -1,0 +1,343 @@
+# INPUT FILE — "Is My Nail Salon Safe" (Post 9 of 10, Salon Reviews Cluster)
+### SINGLE SOURCE OF TRUTH FOR BLOG GEN AGENT — all POST_CONSTANTS values are hardcoded, not adjustable.
+
+---
+
+## SECTION 1 — FILE AUTHORITY
+This file is the single source of truth for the Blog Gen Agent. All values in POST_CONSTANTS are hardcoded — do not ask, adjust, or override them. All keywords, H2 structure, audience intelligence, internal links, and tone defined here must be followed exactly.
+
+---
+
+## SECTION 2 — POST_CONSTANTS
+| Field | Value |
+|---|---|
+| slug | how-to-tell-if-nail-salon-is-safe |
+| topic_slug | salon-reviews |
+| canonical | https://mirelleinspo.com/blog/salon-reviews/how-to-tell-if-nail-salon-is-safe |
+| post_type | spoke |
+| intent | informational |
+| word_count | **2450** (top_5_fetched_average 1382 + substantial margin — see phase_3b rationale below; no ceiling applies) |
+| image_count | **7** (hero + 6 body — flat default rule; not tutorial/comparison/pillar/40+-slug) |
+| show_inspo_gallery_link | **false** (cluster default, read verbatim from cluster_context.json `show_inspo_gallery_link_cluster_default`) |
+| template | posts (not pillar, not tutorial intent) |
+| hero_dimensions | 1200x675 |
+| category | Salon Reviews |
+| publish_date | 2026-09-03 |
+| author | jyoti-mirelle |
+
+**word_count rationale (phase_3b):** Top 5 real fetched pages averaged 1382 words (Memorial Hermann ~950, VOESH ~460, Bradenton Nails ~1650, Right as Rain ~1400, LUXO Nail Spa ~480 — see section_4). The strongest ranking page (Bradenton Nails, 2026-published) runs ~1650 words with a table + FAQ block and is the clear structural leader. Setting target at 2450 words gives genuine room to cover the validated content gaps (sanitize/disinfect/sterilize distinction, license-lookup walkthrough, symptom/when-to-see-a-doctor section) that no single competitor covers in full, without padding — informational intent supports this depth for a decision-adjacent safety topic.
+
+---
+
+## SECTION 3 — CLUSTER SNAPSHOT
+| Field | Value |
+|---|---|
+| pillar_slug | regal-nails-reviews |
+| pillar_title | Regal Nails Reviews: What to Know Before You Go |
+| pillar_primary_keyword | regal nails reviews |
+| this_post_slug | how-to-tell-if-nail-salon-is-safe |
+| this_post_role | spoke |
+| show_inspo_gallery_link_cluster_default | false |
+
+**keywords_to_avoid (keyword_ownership_registry — never used as focus terms):**
+regal nails reviews, miniluxe reviews, davi nails reviews, bellacures reviews, chillhouse reviews, glosslab reviews, tenoverten reviews, paintbox nails reviews, nail bar vs nail salon
+
+---
+
+## SECTION 4 — SERP ANALYSIS
+
+**competitor_gaps** (demand-validated on 2+ sources):
+1. **The sanitize vs. disinfect vs. sterilize distinction, explained plainly** — validated on SalonGeek (2 separate threads), Boston.gov, ArtNailNYC, RevSci, Bradenton Nails. None of the 5 fetched pages break this into a clear 3-tier explanation a non-professional reader can use.
+2. **UV box ≠ sterilization, stated as a direct warning** — validated on Bradenton Nails, SalonGeek ("Autoclave or dry heat?" thread), Boston.gov (Boston bans UV boxes outright), RevSci. Only Bradenton Nails states this clearly; the other 4 fetched pages don't address it at all.
+3. **How to actually look up a salon's license/violation history** — validated on Nailicy, DPOR (Virginia), SNS Pedicure, and the FASMA source found in phase_3 research. Bradenton Nails gestures at "search your state's board" but gives no concrete steps; none of the other 4 fetched pages mention license lookup at all.
+4. **What specific symptoms mean "see a doctor now," not just "this salon is risky"** — validated on Memorial Hermann (partial) and Right as Rain by UW Medicine (strong, MD-sourced). Only 2 of 5 fetched pages address this with real clinical specificity.
+
+**missing_semantic_territory:** "sanitize vs disinfect vs sterilize," "UV sterilizer doesn't sterilize," "credo blade banned states," "cosmetology board license lookup," "pedicure bowl bacteria percentage," "five-free polish," "medical pedicure vs salon pedicure," "when to see a podiatrist after nail salon."
+
+**our_strategic_approach:** None of the 5 fetched competitors combine a practical in-salon checklist with a clear explainer of *why* the sanitize/disinfect/sterilize distinction matters and *how* to verify licensing after the fact — most stop at "look for cleanliness" without giving the reader a concrete verification action. This post's edge is closing that loop: pair every visual red flag (what Memorial Hermann and LUXO Nail Spa do well) with the one thing no competitor page fully explains — that a UV box is not sterilization — and add the license-lookup and symptom-severity sections that only exist in fragments elsewhere. Structurally, this post will front-load the highest-stakes red flags (tools, foot baths) exactly like the top-performing Bradenton Nails page does, but close with two sections none of the 5 fetched pages combine: a plain-language license-verification walkthrough and a clear "these symptoms mean call a doctor" section sourced from real MD commentary (Right as Rain, Memorial Hermann). This directly serves the informational intent: answer the core question directly, build depth progressively, connect to what the reader should do next.
+
+**top_5_fetched_pages_summary:**
+| URL | Real word count | Real H2 count | Keyword mention* | Note |
+|---|---|---|---|---|
+| memorialhermann.org/health-wellness/lifestyle/nail-salons | ~950 | 9 | 0 | MD-sourced, strong on symptoms/infection specificity; weak on licensing, no UV-box warning |
+| voeshpro.com/.../nail-salon-checklist | ~460 | 5 | 0 | Thin, product-brand page; solid tool/foot-bath basics only |
+| bradentonnails.com/post/nail-salon-red-flags... | ~1650 | 5 + FAQ (4 Q&As) | 0 | Strongest page: table, 2026-dated, licensing + ventilation depth; still no license-lookup walkthrough |
+| rightasrain.uwmedicine.org/.../nail-salon-hazards | ~1400 | 4 | 0 | MD-sourced (dermatologist), strong on infection types/UV/allergies; no licensing or tool-sterilization detail |
+| luxonailspa.com/.../nail-salon-safety-practices | ~480 | 3 | 0 | Salon-brand content marketing; solid "questions to ask" framing, thin overall |
+
+*None of the 5 fetched pages use the exact phrase "is my nail salon safe" verbatim in body copy — confirms this post can legitimately own the exact-match phrasing.
+
+**top_5_word_count_average:** 1382 words (feeds phase_3b — see above)
+**top_5_keyword_density_average:** 0 exact-phrase mentions (feeds phase_5 — see below; target set from related-phrase density instead, per note in section_6)
+
+**recommended_image_count_validation:** 7 (hero + 6 body) matches SERP visual pattern — competitors use 1-3 supporting photos/infographics (Bradenton Nails uses 2 infographic-style images); 7 gives room for a hygiene-checklist infographic plus salon-environment inspiration shots without overloading a safety-focused informational post.
+
+**best_external_sources_found (→ section_13):**
+1. Memorial Hermann (memorialhermann.org) — hospital-system health content, MD-quoted (Dr. Gabriel Maislos, DPM), genuinely citation-worthy.
+2. Right as Rain by UW Medicine (rightasrain.uwmedicine.org) — academic medical center content, MD-quoted (Dr. April Schachtel), genuinely citation-worthy.
+
+---
+
+## SECTION 5 — AUDIENCE INTELLIGENCE
+
+**who_they_are:** Someone with a nail appointment already booked or a regular salon they're starting to question — not a first-time researcher with no context. Often prompted by a specific trigger: a friend's infection story, a news piece, or something they noticed at their last visit (a reused file, a strong chemical smell). Mixed expertise — some are asking out of general caution, others already suspect a specific problem.
+
+**what_they_want_from_this_post:** A concrete, checkable list they can mentally run through in the salon chair — not a lecture on nail salon hygiene in the abstract. They want to know exactly what to look at, what to ask, and what to do if something's wrong (leave, report, see a doctor).
+
+**what_frustrates_them:** Generic "make sure it's clean" advice that doesn't tell them what clean actually looks like mechanically (autoclave vs. UV vs. disinfectant soak), and safety content that stops at listing red flags without saying what to do about them afterward (how to verify a license, when a symptom is serious enough to act on).
+
+**top_5_pain_points:**
+1. Not knowing whether a UV box, a blue-liquid jar, or an autoclave is actually adequate sterilization.
+2. Feeling awkward asking a technician direct questions about sanitation without seeming rude or paranoid.
+3. Already having a symptom (redness, swelling, discoloration) and not knowing whether it's minor or needs medical attention.
+4. Not knowing how to check whether a salon or technician is actually licensed.
+5. Wanting to bring their own tools but not knowing if that's normal or how to raise it.
+
+**exact_user_phrases** (from real Quora, Pinterest, LUXO Nail Spa research):
+"How do I know it's safe?" · "Is it safe to get care at nail salons?" · "What should I look for when entering a nail salon?" · "Are infections from nail salons common?" · "Can I get a fungus infection from a pedicure?" · "How do you sterilize your tools?" · "Do you use disposable files and buffers?" · "How do you clean your pedicure tubs?" · "Bring your own nail file and buffer" · "Run" (verbatim red-flag reaction, LUXO Nail Spa)
+
+**intent_content_signals:** Scannable checklist format outperforms narrative prose for this audience (VOESH and LUXO both use short numbered lists); direct quotes from medical professionals build trust fast (Memorial Hermann and Right as Rain both lean on named MDs); readers respond to permission-giving language ("it's okay to ask") since the top pain point is social awkwardness, not lack of knowledge; a table or infographic-style checklist increases scannability per the two strongest fetched pages.
+
+---
+
+## SECTION 6 — SEMANTIC KEYWORD DATA
+
+**primary_keyword:** is my nail salon safe (LOCKED)
+
+**total_mention_target:** 8 mentions. *(No exact-phrase competitor baseline exists — 0 of 5 fetched pages use this precise phrase — so target is set from related-phrase density observed across fetched pages, adjusted to the +2/+3 spirit of the rule applied to a realistic natural-language ceiling for a 2450-word post.)*
+
+**keyword_variations:** is my nail salon clean, how to tell if a nail salon is safe, is my nail salon safe to visit, is this nail salon safe, how do I know if a nail salon is safe, is it safe to get a manicure here, is my nail salon sanitary, is my nail salon hygienic
+
+**cluster_keywords:** nail salon safety checklist, nail salon red flags, nail salon warning signs, nail salon sanitation standards, nail salon hygiene practices, nail salon license lookup, pedicure infection risk, nail salon sterilization methods, salon tool sterilization, nail technician license verification, salon health code violations, foot bath bacteria
+
+**lsi_terms** (from autocomplete + real fetched competitor content):
+autoclave sterilization, UV sterilizer box, hospital-grade disinfectant, single-use nail files, sealed sterilization pouch, jacuzzi-style foot bath, pipeless foot bath, credo blade, nail fungus infection, bacterial nail infection, cosmetology board license, state board violations, sanitize vs disinfect vs sterilize, ingrown toenail infection, Mycobacterium fortuitum
+
+**aeo_terms:** "How do I know if a nail salon is safe?" · "What sterilization method should a nail salon use?" · "Is a UV light sterilizer enough to kill bacteria?" · "How do I check if a nail salon is licensed?" · "What should I do if I see dirty tools at a nail salon?" · "Is it normal to bring your own nail tools?" · "What are the signs of an infection after a manicure?" · "How common are infections from nail salons?" · "Should I ask my nail salon how they sterilize tools?" · "What is a credo blade and why is it banned?"
+
+**technical_terms:** autoclave, credo blade, cosmetology board, hospital-grade disinfectant, EPA-registered disinfectant, Mycobacterium fortuitum, onychomycosis (used plainly as "nail fungal infection")
+
+**user_language:** "run" (as in: leave immediately), "just say no," "bring your own tools," "does this look off," "trust your gut," "ask before you sit down," "it's your health on the line," "confident answer vs. vague answer"
+
+---
+
+## SECTION 7 — VOICE AND AI QUERIES
+
+1. How do I know if a nail salon is actually safe?
+2. What are the warning signs of an unsafe nail salon?
+3. Is it safe to get a manicure or pedicure at any nail salon?
+4. How can I tell if a nail salon sterilizes its tools properly?
+5. Is a UV light box the same as sterilization?
+6. What's the difference between sanitizing and sterilizing nail tools?
+7. Should nail salon tools come from a sealed pouch?
+8. Is it normal to bring your own nail file to a salon?
+9. How do I know if my nail technician is licensed?
+10. How can I check a nail salon's license or violation history?
+11. What does a dirty pedicure foot bath look like?
+12. Can you get an infection from a nail salon pedicure?
+13. What should I do if I notice dirty tools at my nail appointment?
+14. Is it rude to ask my nail tech how they sterilize their tools?
+15. What are the symptoms of a nail infection after a manicure?
+16. When should I see a doctor about a nail salon infection?
+17. Are jacuzzi-style pedicure tubs safe?
+18. What is a credo blade and why do some states ban it?
+
+---
+
+## SECTION 8 — HOOK AND CTR
+
+**real_serp_findings_summary:** All 5 fetched pages default to a "signs/tips/checklist" title pattern (Memorial Hermann: "9 Signs Your Nail Salon is Unsafe"; Bradenton Nails: "Red Flags to Avoid"; VOESH: "How to Tell if Your Salon is Clean & Safe"), front-loading either a number or "how to tell." None front-load the exact question phrasing a worried reader actually types ("is my nail salon safe"), and none pair the checklist promise with a sterilization-method payoff in the title itself.
+
+**selected_option_rationale:** This option front-loads the exact primary keyword as a direct question — matching real Quora phrasing ("How do I know it's safe?") and the FASMA podiatrist framing ("How can I be sure my salon is safe?") found in research — while "9 Signs to Check First" borrows the numbered-list pattern proven to work (Memorial Hermann) without repeating it verbatim, and promises actionability the competitor titles only imply.
+
+**title:** Is My Nail Salon Safe? 9 Signs to Check First
+**title_char_count:** 42 characters (within 55-60 cap; no year tag needed — not a trend/seasonal/ideas post)
+
+**meta_description:** Wondering if it's safe? Learn the exact tool sterilization, foot bath, and license checks pros recommend before your next manicure or pedicure.
+**meta_char_count:** 151 characters (within 120-155 cap; PAS: problem [wondering if it's safe] + what's inside [sterilization/foot bath/license checks] + differentiator [what pros recommend])
+
+**intro_hook_brief:** Open by naming the exact moment of doubt the reader is in — mid-appointment or right before booking, noticing something that doesn't sit right — then promise the concrete checklist that removes the guesswork, matching the direct-question title.
+
+**first_h2_hook_direction:** Lead the first H2 with the single highest-stakes, most visually checkable red flag (tool sterilization) rather than easing in with general cleanliness — mirrors the direct, no-hedging tone of the title.
+
+---
+
+## SECTION 9 — SEARCH JOURNEY
+
+**reader_arrival_state:** Mildly anxious and second-guessing — either about to book/already sitting in a salon chair, or replaying something they noticed at a past visit.
+
+**journey_arc:**
+- Confirm their instinct to check is reasonable, not paranoid — open by validating that this is a real, common question.
+- Walk through the visually checkable red flags first (tools, foot baths) — things they can verify in the room, right now.
+- Move to the harder-to-see risks (chemical/ventilation, licensing) that require asking a question or checking after the fact.
+- Address what to do if something's already wrong — both salon-side (leave, report) and body-side (symptoms, when to see a doctor).
+- Close with the confidence that a good salon will never be defensive about these questions.
+
+**promise_to_deliver:** The title and description promise the exact sterilization, foot bath, and license checks that answer "is my nail salon safe" — every section must deliver a concrete, checkable action, not general reassurance.
+
+**exit_state:** Confident and equipped — reader feels they now have a specific, usable checklist rather than a vague sense of what to look for.
+
+---
+
+## SECTION 10 — CONTENT STRUCTURE
+
+**h1:** Is My Nail Salon Safe? 9 Signs to Check First
+
+**h2_structure:**
+1. Are the Tools Actually Sterilized (Not Just "Sanitized")?
+2. Is the Foot Bath Clean — Or Just Rinsed?
+3. Does the Air Smell Like a Chemistry Lab?
+4. Are Blades or Credo Tools Being Used on Your Skin?
+5. Is Your Technician Actually Licensed?
+6. How Do You Check a Salon's License or Violation History?
+7. What Symptoms Mean You Should See a Doctor?
+8. Is It Okay to Ask Questions Before You Sit Down?
+
+**word_budget:**
+- Introduction: 230 words
+- H2-1 (Tools sterilized): 340 words
+- H2-2 (Foot bath): 300 words
+- H2-3 (Chemical/ventilation): 260 words
+- H2-4 (Blades/credo): 260 words
+- H2-5 (Technician licensed): 260 words
+- H2-6 (License lookup how-to): 300 words
+- H2-7 (Symptoms/doctor): 300 words
+- H2-8 (Asking questions): 240 words
+- Conclusion: 180 words
+- **Total: 2450 words**
+
+---
+
+## SECTION 11 — INTERNAL LINKS
+
+| URL/Slug | Title | Anchor Text | Placement | Type |
+|---|---|---|---|---|
+| /blog/salon-reviews/regal-nails-reviews | Regal Nails Reviews: What to Know Before You Go | Regal Nails reviews | Introduction or conclusion — natural mention of checking real salon reviews as one verification step | cluster-pillar |
+| /blog/salon-reviews/miniluxe-reviews | MiniLuxe Reviews: Is It Worth the Price? | MiniLuxe reviews and pricing breakdown | H2-6 (license lookup) or conclusion — as an example of checking a specific named salon | cluster-spoke |
+| /blog/salon-reviews/davi-nails-reviews | DaVi Nails Reviews: Walmart's In-Store Nail Salon Explained | DaVi Nails reviews inside Walmart | H2-6 or conclusion — second named-salon example | cluster-spoke |
+| /blog/salon-reviews/bellacures-reviews | Bellacures Reviews: Inside LA's Hospital-Grade Nail Salon | Bellacures reviews from Los Angeles clients | H2-1 (tool sterilization) — Bellacures' hospital-grade sanitation angle fits naturally as a positive example | cluster-spoke |
+| https://mirelleinspo.com/nail-faqs/how-to-choose-the-right-nail-salon-near-me | How to Choose the Right Nail Salon Near Me | how to choose a nail salon based on hygiene and sterilization habits | H2-8 (asking questions) — directly extends the "what to look for before booking" angle | cross-site |
+| https://mirelleinspo.com/blog/nail-health/least-damaging-way-to-get-nails-done | The Least Damaging Way to Get Nails Done, Ranked | why shared dip powder containers carry a real infection risk | H2-2 or H2-3 (contamination risk) — directly relevant "dip flu" sanitation content | cross-site |
+
+Total: 6 links (4 cluster + 2 cross-site) — within the 4-6 cap.
+
+---
+
+## SECTION 12 — VOICE AND TONE
+
+**recommended_voice:** Calm, knowledgeable friend — not a clinical warning label, not a listicle shouting red flags.
+
+**tone_characteristics:** Direct without being alarmist; permission-giving (explicitly says it's okay to ask questions); specific and concrete over vague; validates the reader's instinct rather than either dismissing or amplifying their anxiety; confident, declarative sentences for factual claims (sterilization methods, symptoms).
+
+**language_style:** Second person throughout ("you," "your salon"); short, checkable sentences for red-flag items; slightly longer explanatory sentences for the "why" behind each check; avoid fear-mongering superlatives — state real risk plainly (bacteria, infection types) without dramatizing.
+
+**audience_match:** This reader wants actionable specificity, not reassurance-only content or clinical distance — a warm-but-direct voice matches someone who is a little anxious but primarily wants a usable checklist, not a lecture.
+
+---
+
+## SECTION 13 — EXTERNAL LINKS
+
+| URL | Context | Anchor Suggestion |
+|---|---|---|
+| https://memorialhermann.org/health-wellness/lifestyle/nail-salons | H2-1 or H2-7 — citing MD commentary on tool sterilization or infection risk | a podiatrist's breakdown of nail salon warning signs |
+| https://rightasrain.uwmedicine.org/life/leisure/nail-salon-hazards | H2-7 (symptoms) — citing dermatologist commentary on infection types and when to seek care | a dermatologist's guide to nail salon health hazards |
+
+---
+
+## SECTION 14 — EXECUTION PLAN
+*(Calculated last. Blog Gen Agent reads this section FIRST.)*
+
+### Block 1 — Keyword Execution
+- **primary_keyword:** is my nail salon safe
+- **top_5_density_baseline:** 0 exact-phrase mentions (no competitor uses this precise phrase)
+- **total_mention_target:** 8 total mentions
+- **first_100_words_plan:**
+  - Mention 1: Sentence 1-2 of introduction — opening question framing ("Is my nail salon safe? If you're asking...")
+  - Mention 2: Sentence 4-5 of introduction — restating the question as the promise of the post
+- **first_half_target:** 5 mentions — first ~1225 words (intro through H2-4)
+- **second_half_target:** 3 mentions — second ~1225 words (H2-5 through conclusion)
+- **strong_tag_rule:** Every one of the 8 mentions wrapped in `<strong>` tags. Scan after every paragraph.
+- **keywords_to_avoid_active:** regal nails reviews, miniluxe reviews, davi nails reviews, bellacures reviews, chillhouse reviews, glosslab reviews, tenoverten reviews, paintbox nails reviews, nail bar vs nail salon — never used as focus terms.
+
+### Block 2 — Word Budget
+**total_target:** 2450 words (±50 tolerance, never exceed)
+- Introduction: 230 words
+- H2-1 (Tools sterilized): 340 words — complexity: high
+- H2-2 (Foot bath): 300 words — complexity: medium
+- H2-3 (Chemical/ventilation): 260 words — complexity: medium
+- H2-4 (Blades/credo): 260 words — complexity: medium
+- H2-5 (Technician licensed): 260 words — complexity: low
+- H2-6 (License lookup how-to): 300 words — complexity: high
+- H2-7 (Symptoms/doctor): 300 words — complexity: high
+- H2-8 (Asking questions): 240 words — complexity: low
+- Conclusion: 180 words
+**tracking_rule:** Track running total at the end of every H2. Cut before moving on if over budget — never compensate later.
+
+### Block 3 — Image Plan
+**total_images:** 7 | **hero_image:** frontmatter only, never in body | **body_images:** 6
+| # | Place after | Type | Context |
+|---|---|---|---|
+| 1 | Introduction | standard_inspiration | Clean, well-lit nail salon interior — welcoming, professional station setup |
+| 2 | H2-1 (Tools sterilized) | infographic | Sanitize vs. disinfect vs. sterilize — 3-tier visual comparison of the three methods and what each actually kills |
+| 3 | H2-2 (Foot bath) | standard_inspiration | Clean pipeless foot bath / pedicure station, single-use liner visible |
+| 4 | H2-4 (Blades/credo) | standard_inspiration | Sealed sterilization pouch with nail tools, unopened, on a clean tray |
+| 5 | H2-6 (License lookup) | infographic | Simple step visual: "search state board site → enter salon/tech name → check status" |
+| 6 | H2-7 (Symptoms/doctor) | standard_inspiration | Calm, healthy manicured hands — reassuring tone shift after the symptoms section |
+| 7 | Conclusion | standard_inspiration | Relaxed client in salon chair, confident/at-ease mood |
+
+**image_type_rule note:** 2 infographic slots used (tool-sterilization comparison, license-lookup steps) — both genuinely needed since this informational post explains a process distinction and a lookup procedure text alone handles less clearly. No tool/equipment-in-hand or photo-style comparison images. No hands-holding-tools or process shots.
+
+**path_rule:** /images/blog/salon-reviews/how-to-tell-if-nail-salon-is-safe/filename.webp
+
+### Block 4 — Opening Technique Assignments
+| Section | Technique |
+|---|---|
+| Introduction | Technique 1 — The Claim (validate the reader's instinct directly) |
+| H2-1 | Technique 2 — direct question restated as heading, answered immediately |
+| H2-2 | Technique 3 — The Reframe (foot baths look clean but aren't) |
+| H2-3 | Technique 2 |
+| H2-4 | Technique 3 |
+| H2-5 | Technique 1 |
+| H2-6 | Technique 2 |
+| H2-7 | Technique 3 |
+| H2-8 | Technique 1 |
+| Conclusion | Technique 1 — The Claim |
+
+No two consecutive sections repeat; conclusion uses Technique 1.
+
+### Block 5 — Link Placements
+| Anchor text | Full URL | Section | Context | Type |
+|---|---|---|---|---|
+| Regal Nails reviews | /blog/salon-reviews/regal-nails-reviews | Conclusion | Natural mention of checking real reviews for a specific chain as one verification step | cluster-pillar |
+| Bellacures reviews from Los Angeles clients | /blog/salon-reviews/bellacures-reviews | H2-1 | Positive example of a hospital-grade sanitation brand | cluster-spoke |
+| MiniLuxe reviews and pricing breakdown | /blog/salon-reviews/miniluxe-reviews | H2-6 | Named-salon example while discussing review/license checking | cluster-spoke |
+| DaVi Nails reviews inside Walmart | /blog/salon-reviews/davi-nails-reviews | H2-6 | Second named-salon example | cluster-spoke |
+| how to choose a nail salon based on hygiene and sterilization habits | https://mirelleinspo.com/nail-faqs/how-to-choose-the-right-nail-salon-near-me | H2-8 | Extends the "questions to ask before booking" angle | cross-site |
+| why shared dip powder containers carry a real infection risk | https://mirelleinspo.com/blog/nail-health/least-damaging-way-to-get-nails-done | H2-2 or H2-3 | Directly relevant contamination-risk content | cross-site |
+
+### Block 6 — AEO/GEO Plan
+| AEO term | Section | Execution |
+|---|---|---|
+| "How do I know if a nail salon is safe?" | Introduction/H2-1 | Direct 2-3 sentence answer immediately after H1 |
+| "Is a UV light sterilizer enough to kill bacteria?" | H2-1 | Direct answer paragraph immediately after heading |
+| "What's the difference between sanitizing and sterilizing nail tools?" | H2-1 | Direct answer paragraph, paired with infographic |
+| "How do I check if a nail salon is licensed?" | H2-6 | Direct answer paragraph immediately after heading |
+| "What are the symptoms of a nail infection after a manicure?" | H2-7 | Direct answer paragraph immediately after heading |
+| "Is it rude to ask my nail tech how they sterilize their tools?" | H2-8 | Direct answer paragraph immediately after heading |
+
+**geo_entity_statements:**
+| Entity | Section | Execution |
+|---|---|---|
+| Autoclave | H2-1 | Clear declarative definition — a steam-pressure sterilization device that kills all microorganisms including spores |
+| Credo blade | H2-4 | Clear declarative definition — a razor-edged callus tool banned in several states due to infection risk |
+| Cosmetology board | H2-6 | Clear declarative definition — the state regulatory body that licenses salons and technicians and investigates violations |
+
+### Block 7 — Active Constraints
+- **em_dash_banned:** No long em dash anywhere. Replace with comma, new sentence, parentheses, "but," or restructure.
+- **banned_vocab_watch:** elevate, journey, unlock, dive in, game-changer, seamless, in today's world, when it comes to
+- **american_english_active:** color, recognize, -ize, -or — every instance, no exceptions.
+- **keyword_density_reminder:** After every 2 H2 sections, count current mentions against the 8-mention target. First half (through H2-4) should run denser — 5 of 8 mentions land by then.
+- **image_path_reminder:** /images/blog/salon-reviews/how-to-tell-if-nail-salon-is-safe/filename.webp
+- **internal_link_url_reminder:** Cluster links = /blog/salon-reviews/[slug]. Cross-site links = exact URL as discovered above.
+- **hero_image_reminder:** Hero = frontmatter only. Never in body.
+- **strong_tag_reminder:** Every primary keyword mention = `<strong>` tags. Scan after every paragraph.
