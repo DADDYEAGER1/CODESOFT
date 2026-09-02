@@ -1,0 +1,399 @@
+{
+  "section_1_file_authority": {
+    "statement": "THIS FILE IS THE SINGLE SOURCE OF TRUTH FOR THE BLOG GEN AGENT. All values in POST_CONSTANTS are hardcoded — Blog Gen Agent does not ask, adjust, or override them. All keywords, H2 structure, audience intelligence, internal links, and tone defined here must be followed exactly."
+  },
+  "section_2_post_constants": {
+    "slug": "paintbox-nails-reviews",
+    "topic_slug": "salon-reviews",
+    "canonical": "https://mirelleinspo.com/blog/salon-reviews/paintbox-nails-reviews",
+    "post_type": "spoke",
+    "intent": "inspirational",
+    "word_count": 2100,
+    "image_count": 7,
+    "show_inspo_gallery_link": false,
+    "template": "posts",
+    "hero_dimensions": "1200x675",
+    "category": "Salon Reviews",
+    "publish_date": "2026-09-03",
+    "author": "jyoti-mirelle"
+  },
+  "section_3_cluster_snapshot": {
+    "pillar_slug": "regal-nails-reviews",
+    "pillar_title": "Regal Nails Reviews: What to Know Before You Go",
+    "pillar_primary_keyword": "regal nails reviews",
+    "this_post_slug": "paintbox-nails-reviews",
+    "this_post_role": "spoke",
+    "show_inspo_gallery_link_cluster_default": false,
+    "keywords_to_avoid": [
+      "regal nails reviews", "miniluxe reviews", "davi nails reviews", "bellacures reviews",
+      "chillhouse reviews", "glosslab reviews", "tenoverten reviews", "is my nail salon safe",
+      "nail bar vs nail salon"
+    ]
+  },
+  "section_4_serp_analysis": {
+    "blog_gen_instruction": "our_strategic_approach is a specific, evidence-based outperform strategy. Use it as the concrete angle for the introduction and conclusion, and to guide depth/coverage decisions in relevant H2 sections.",
+    "competitor_gaps": [
+      "No current 2026 article addresses the MiniLuxe acquisition (June 2022) and what it means for the brand today — one 1-star review explicitly cites 'service has declined due to investors,' and no ranking content addresses this directly, despite it being the single most consequential fact about the brand's trajectory",
+      "No current content covers Paintbox's custom press-on service (launched 2025-2026, covered only in one Harper's Bazaar feature) as part of a broader 'is it worth it' review",
+      "No content clarifies current locations — most ranking content still lists the original SoHo (17 Crosby St) and Upper East Side (69th/Madison) studios; the Flatiron location (184 5th Ave) now operating in residency at Spoke & Weal is absent from nearly all existing coverage",
+      "No content synthesizes the real spread of reviews (Yelp 4.4/75, Thingtesting 4.0/4, scattered 1-star complaints about inconsistency) into a single honest verdict — existing content is either pure brand puff (2014-era blog posts) or unstructured raw review aggregation"
+    ],
+    "missing_semantic_territory": [
+      "'paintbox nails flatiron' — location shift not covered anywhere",
+      "'paintbox custom press-ons worth it' — only one source (Harper's Bazaar) covers this, confirmed via 2+ signals (Bazaar feature + paint-box.com's own custom press-on product page)",
+      "'paintbox nails miniluxe' — acquisition confirmed via GlobeNewswire press release + CB Insights + MiniLuxe's own site, but no consumer-facing review content connects this to current service quality",
+      "'is paintbox nails still good' — direct 'service decline' sentiment confirmed on 2+ sources (Postcard.inc review + Yelp reviews referencing inconsistency)"
+    ],
+    "our_strategic_approach": "Every fetchable/searchable page on this keyword is either a 2014-era brand-friendly blog post with zero critical distance, or raw unstructured review aggregation (Yelp, Thingtesting) with no synthesis. None of them address the MiniLuxe acquisition, the Flatiron relocation, or the custom press-on launch — three material facts about the current state of the business. This post wins by being the only source that honestly synthesizes real reviews (the good: celebrity clientele, nail-art quality, cuticle oil/product line; the bad: price inconsistency, post-acquisition service complaints) into a single current verdict, while covering what's actually new (press-ons, Flatiron residency) that no other ranking page mentions. Structural edge: organize around the real reader question — 'is it still worth it in 2026' — rather than a brand history timeline, which is what every existing piece defaults to.",
+    "top_5_fetched_pages_summary": [
+      { "url": "https://thingtesting.com/brands/paint-box/reviews", "word_count": "~180 (UGC review page, not editorial)", "h2_count": 0, "keyword_mentions": 3, "note": "Only 4 reviews, 4.0 stars — thin but reveals real product-vs-salon distinction (bottle quality complaints vs salon praise)" },
+      { "url": "https://www.refinery29.com/en-us/2014/05/67409/paintbox-nail-salon", "word_count": 331, "h2_count": 0, "keyword_mentions": 2, "note": "2014 opening announcement, not a review — dated pricing, no critical distance, useless for 2026 intent" },
+      { "url": "https://www.postcard.inc/places/paintbox-new-york-z6Q0O1M7Kuq", "word_count": "unknown (bot-blocked, snippet only)", "h2_count": "unknown", "keyword_mentions": "unknown", "note": "Snippet reveals a real 1-star review citing post-acquisition service decline — high-value signal, page itself not fetchable" },
+      { "url": "https://topnailbrands.org/paintbox-nail-studio-rewrites-the-nyc-manicure/", "word_count": "unknown (robots-blocked, snippet only)", "h2_count": "unknown, appears sectioned by history/offerings/quality/customer feedback", "keyword_mentions": "unknown", "note": "Closest real competitor in structure and intent (Aug 2025, 'real customer feedback' angle) but not fetchable, so not used as external link" },
+      { "url": "https://www.yelp.com/search?find_desc=Paintbox&find_loc=New+York%2C+NY", "word_count": "N/A (aggregator, not editorial)", "h2_count": 0, "keyword_mentions": "N/A", "note": "Raw review aggregation only — confirms review volume and sentiment spread, not usable as a structural competitor" }
+    ],
+    "top_5_word_count_average": "Not meaningfully calculable — no genuine 800+ word editorial competitor page was fetchable for this exact keyword. This is itself the core finding: the SERP is thin. word_count target set independently in section_2 based on genuine topical depth required.",
+    "top_5_keyword_density_average": "Not meaningfully calculable for the same reason — mention target set independently below at a reasonable natural density for a 2100-word post.",
+    "best_external_sources_found": []
+  },
+  "section_5_audience_intelligence": {
+    "blog_gen_instruction": "This is your primary creative brief. Every paragraph written for this specific person with this specific intent. Satisfy them completely.",
+    "who_they_are": "A woman researching a specific, named, high-profile NYC nail studio before booking — likely visiting NYC or already local, aware of Paintbox's reputation (celebrity clientele, editorial coverage, Instagram presence with 226K followers) and wants to know if the reality matches the hype and the price tag before spending $65-165 on a single visit.",
+    "what_they_want_from_this_post": "An honest, current synthesis of what real clients experience now — not a 2014 brand puff piece. She wants to know: is the nail art actually that good, is it worth the price jump from a regular salon, has quality held up since the MiniLuxe acquisition, and what should she actually book (regular mani vs. custom press-ons vs. a seasonal lookbook design).",
+    "what_frustrates_them": "Every piece of existing content is either outdated (locations, prices, and services from 2014-2020) or an unfiltered review dump with no synthesis. Nobody addresses the elephant in the room — that Paintbox was acquired by MiniLuxe in 2022 and at least some recent reviews mention a service decline tied to that.",
+    "top_5_pain_points": [
+      "Can't find current pricing or current locations — most content still cites the original SoHo/UES studios and 2014-era prices",
+      "Can't tell if quality has stayed consistent since the 2022 MiniLuxe acquisition — real reviews are split",
+      "Unsure whether the price premium ($65-165) is justified versus a regular salon",
+      "Doesn't know about the newer custom press-on service and whether it's worth the 1-2 week wait and separate cost",
+      "Wants to know specifically what to book (Classic vs. Luxe vs. Deluxe menu tiers) without wading through the full site"
+    ],
+    "exact_user_phrases": [
+      "is paintbox nails worth it",
+      "paintbox nails price",
+      "paintbox nails reviews nyc",
+      "paintbox nails soho vs upper east side",
+      "paintbox custom press ons worth it",
+      "paintbox nails miniluxe",
+      "is paintbox still good",
+      "paintbox nails flatiron",
+      "how much is a manicure at paintbox",
+      "paintbox nails celebrity clients",
+      "worth every penny",
+      "all branding and no substance"
+    ],
+    "intent_content_signals": [
+      "Responds to specific named details (real prices, real artist names, real locations) over vague brand-speak",
+      "Wants both sides represented — genuine praise and genuine criticism, not a one-sided puff piece",
+      "Aspirational imagery (celebrity association, nail art photos) matters for this inspirational-intent reader, but must be paired with practical substance",
+      "Wants a clear bottom-line verdict, not just a list of pros/cons left unresolved",
+      "Values specificity: named artists, named designs, named prices over generic claims of 'luxury' or 'high-end'"
+    ]
+  },
+  "section_6_semantic_keyword_data": {
+    "blog_gen_instruction": "Primary keyword in strong tags every mention. AEO terms trigger direct answer paragraphs. User language woven naturally. No term from keywords_to_avoid used as focus term.",
+    "primary_keyword": "paintbox nails reviews",
+    "keyword_variations": [
+      "paintbox nails nyc reviews",
+      "paintbox reviews",
+      "paintbox nail studio reviews",
+      "paintbox nails nyc",
+      "is paintbox nails worth it",
+      "paintbox nails price"
+    ],
+    "cluster_keywords": [
+      "paintbox nail art",
+      "paintbox soho",
+      "paintbox flatiron",
+      "paintbox upper east side",
+      "paintbox custom press ons",
+      "paintbox miniluxe",
+      "eleanor langston paintbox",
+      "julie kandalec paintbox",
+      "celebrity nail salon nyc",
+      "paintbox lookbook",
+      "paintbox power couples polish"
+    ],
+    "lsi_terms": [
+      "high-design nail studio",
+      "seasonal lookbook",
+      "nail art salon nyc",
+      "manicures-only studio",
+      "gel manicure design",
+      "custom press-on manicure",
+      "celebrity manicurist",
+      "editorial nail trends",
+      "nail studio acquisition",
+      "cuticle oil",
+      "Power Couples polish line",
+      "mani cam",
+      "deluxe manicure session",
+      "seasonal nail collection",
+      "soft gel removal"
+    ],
+    "aeo_terms": [
+      "is paintbox nails worth the price",
+      "how much does a manicure cost at paintbox",
+      "where are paintbox nail studio locations in nyc",
+      "is paintbox nails still owned by its founder",
+      "are paintbox custom press-ons worth it",
+      "what celebrities go to paintbox nails",
+      "has paintbox nail quality changed since the miniluxe acquisition",
+      "does paintbox do pedicures",
+      "what is included in a paintbox manicure"
+    ],
+    "technical_terms": [
+      "soft gel",
+      "hard gel",
+      "dip powder",
+      "gel-x",
+      "soak-off",
+      "cuticle prep",
+      "nail lookbook"
+    ],
+    "user_language": [
+      "worth every penny",
+      "all branding and no substance",
+      "a little pricey but worth it",
+      "less than stellar reviews",
+      "the tech mentioned service has declined",
+      "my go-to for special occasions",
+      "cancelling my nail appointments because these are perfection",
+      "chic-as-can-be"
+    ]
+  },
+  "section_7_voice_and_ai_queries": {
+    "blog_gen_instruction": "Answer every query directly in the relevant H2 section body. If a query cannot be addressed naturally in the body, route it to faqItems. No query left unanswered.",
+    "queries": [
+      "Is Paintbox Nails actually worth the price?",
+      "How much does a manicure cost at Paintbox?",
+      "Where is Paintbox nail studio located in NYC now?",
+      "Is Paintbox still SoHo and Upper East Side, or has it moved?",
+      "What celebrities have gotten their nails done at Paintbox?",
+      "Who founded Paintbox nail studio?",
+      "Is Paintbox still owned by Eleanor Langston?",
+      "Did MiniLuxe buy Paintbox?",
+      "Has Paintbox's quality changed since it was acquired?",
+      "What is the custom press-on service at Paintbox and is it worth it?",
+      "Does Paintbox do pedicures?",
+      "What's included in a Paintbox manicure appointment?",
+      "How long does a Paintbox manicure take?",
+      "What's the difference between Paintbox's Classic and Luxe designs?",
+      "Can you bring your own nail art inspiration to Paintbox?",
+      "What polish brands does Paintbox use?",
+      "Is Paintbox good for nail art beginners?",
+      "How do real Paintbox reviews compare to its Instagram presence?"
+    ]
+  },
+  "section_8_hook_and_ctr": {
+    "blog_gen_instruction": "READ THIS SECTION BEFORE WRITING THE TITLE, META DESCRIPTION, INTRO, OR FIRST H2. The title and description here are the option the USER SELECTED from real, evidence-based choices during phase_6 — use them exactly. The intro hook brief and first H2 hook direction are your creative brief for those specific elements, matching the selected option's angle. Do not deviate.",
+    "real_serp_findings_summary": "Every fetchable/visible title for this keyword is either a dated 2014 brand-announcement headline ('Meet Paintbox, Our New Favorite Nail Joint') or a generic aggregator title (Yelp/Thingtesting business-listing format). None front-load the celebrity-clientele angle despite it being the single strongest, most current, most search-worthy differentiator (Rihanna, Gigi Hadid, Sophie Turner — all confirmed via Harper's Bazaar 2025-2026 coverage). None use a year tag, despite this being squarely inspirational/trend-adjacent content.",
+    "selected_option_rationale": "This option leads with the celebrity-identity hook (the strongest, most current, least-used angle in existing coverage) while front-loading the exact primary keyword and adding the 2026 year tag. It signals both aspiration (celebrity association) and utility (real reviews, before-you-book framing), matching the inspirational intent without overselling.",
+    "title": "Paintbox Nails Reviews: Inside NYC's Celebrity-Favorite Nail Art Studio (2026)",
+    "title_char_count": 78,
+    "meta_description": "Everyone from Rihanna to Gigi Hadid gets their nails done at this SoHo-born studio. Here's what real clients say before you book.",
+    "meta_char_count": 132,
+    "intro_hook_brief": "Open on the celebrity-identity draw immediately — name-drop the real, confirmed clientele (Rihanna, Gigi Hadid, Sophie Turner) as the reason this studio built its reputation, then pivot fast into the real question this reader has: does the actual client experience live up to that reputation, especially after real, mixed reviews and a 2022 ownership change most coverage ignores.",
+    "first_h2_hook_direction": "Apply the identity/aspiration angle subtly to the first H2 by opening it on what makes Paintbox distinct as a concept (high-design, manicures-only, seasonal lookbook) rather than restating the celebrity hook — let the celebrity mention breathe in the intro and don't repeat it here."
+  },
+  "section_9_search_journey": {
+    "blog_gen_instruction": "This is the emotional contract with the reader. Every section of the post must honour the promise made. Read this before writing any section. If a paragraph breaks the journey arc — rewrite it.",
+    "reader_arrival_state": "Curious and a little starstruck — she's heard Paintbox's name attached to celebrities and editorial coverage, and wants to know if it's the real deal or overhyped before she spends real money on it.",
+    "journey_arc": [
+      "Hook with the celebrity/reputation draw that brought her here in the first place",
+      "Ground that reputation in real specifics — who founded it, what makes the concept different from a normal salon",
+      "Deliver the honest, current picture: real prices, real current locations (including the Flatiron move most content misses), what's actually included",
+      "Address the tension directly — the MiniLuxe acquisition and what real reviews say about consistency since",
+      "Cover what's new and genuinely interesting — the custom press-on service",
+      "Close with a clear, confident verdict on who this is actually worth it for"
+    ],
+    "promise_to_deliver": "That this post will tell her, honestly and currently, whether the celebrity-favorite reputation holds up in real client experience — with specifics no other current source pulls together in one place.",
+    "exit_state": "Confident and informed — she knows exactly what to expect, what it costs, where to go, and whether it's the right fit for what she wants, without needing to cross-reference five outdated blog posts herself."
+  },
+  "section_10_content_structure": {
+    "blog_gen_instruction": "This H2 structure is research-driven and must be followed exactly. Do not rename, reorder, or remove H2s without user instruction. Word budget per section is set — follow it. H3s may be added at editorial discretion.",
+    "h1": "Paintbox Nails Reviews: Inside NYC's Celebrity-Favorite Nail Art Studio",
+    "h2_structure": [
+      "What Is Paintbox Nails, Exactly?",
+      "Where to Find Paintbox in NYC Right Now",
+      "How Much Does a Paintbox Manicure Cost?",
+      "What Real Clients Are Saying: The Honest Reviews",
+      "Does Paintbox Still Hold Up Since the MiniLuxe Acquisition?",
+      "Are Paintbox's Custom Press-Ons Worth It?",
+      "Who Paintbox Nails Is Actually Worth It For"
+    ],
+    "word_budget": {
+      "introduction": 230,
+      "conclusion": 180,
+      "per_h2": [
+        { "heading": "What Is Paintbox Nails, Exactly?", "budget": 260 },
+        { "heading": "Where to Find Paintbox in NYC Right Now", "budget": 220 },
+        { "heading": "How Much Does a Paintbox Manicure Cost?", "budget": 280 },
+        { "heading": "What Real Clients Are Saying: The Honest Reviews", "budget": 340 },
+        { "heading": "Does Paintbox Still Hold Up Since the MiniLuxe Acquisition?", "budget": 280 },
+        { "heading": "Are Paintbox's Custom Press-Ons Worth It?", "budget": 250 },
+        { "heading": "Who Paintbox Nails Is Actually Worth It For", "budget": 260 }
+      ]
+    }
+  },
+  "section_11_internal_links": {
+    "blog_gen_instruction": "Every link below must appear in the post. Cluster links use anchor texts verbatim — do not rewrite. Cross-site links use the provided descriptive anchor. Place each link where the placement note says — woven naturally into prose, never as a standalone CTA. Total internal links must not exceed 6.",
+    "all_internal_links": [
+      {
+        "url_or_slug": "/blog/salon-reviews/regal-nails-reviews",
+        "title": "Regal Nails Reviews: What to Know Before You Go",
+        "anchor_text": "Regal Nails reviews",
+        "placement_note": "In 'Who Paintbox Nails Is Actually Worth It For' — as a contrast point for readers comparing a splurge NYC studio against a budget national chain",
+        "link_type": "cluster-pillar"
+      },
+      {
+        "url_or_slug": "/blog/salon-reviews/chillhouse-reviews",
+        "title": "Chillhouse Reviews: Is NYC's Viral Nail Studio Worth the Hype?",
+        "anchor_text": "Chillhouse reviews of the viral NYC nail studio",
+        "placement_note": "In 'Where to Find Paintbox in NYC Right Now' or 'Who Paintbox Nails Is Actually Worth It For' — natural comparison point since both are NYC-based, design-forward studios frequently mentioned together in the same reviews",
+        "link_type": "cluster-spoke"
+      },
+      {
+        "url_or_slug": "/blog/salon-reviews/tenoverten-reviews",
+        "title": "Tenoverten Reviews: The Non-Toxic Nail Salon Loved by Vogue",
+        "anchor_text": "Tenoverten non-toxic nail salon reviews",
+        "placement_note": "In 'What Is Paintbox Nails, Exactly?' — as another NYC editorial-favorite nail brand for readers exploring the same tier of studio",
+        "link_type": "cluster-spoke"
+      },
+      {
+        "url_or_slug": "/blog/salon-reviews/how-to-tell-if-nail-salon-is-safe",
+        "title": "How to Tell If a Nail Salon Is Actually Safe (Before You Book)",
+        "anchor_text": "how to tell if a nail salon is safe",
+        "placement_note": "In 'Does Paintbox Still Hold Up Since the MiniLuxe Acquisition?' — directly relevant given the section addresses real service-consistency concerns from reviews",
+        "link_type": "cluster-spoke"
+      },
+      {
+        "url_or_slug": "https://mirelleinspo.com/nail-faqs/how-to-choose-the-right-nail-salon-near-me",
+        "title": "How to Choose the Right Nail Salon Near Me",
+        "anchor_text": "what to actually check before booking any nail salon, not just this one",
+        "placement_note": "In 'Who Paintbox Nails Is Actually Worth It For' — genuinely relevant existing site content for readers making a final decision, adds real value beyond the Paintbox-specific verdict",
+        "link_type": "cross-site"
+      }
+    ]
+  },
+  "section_12_voice_tone": {
+    "blog_gen_instruction": "This is the voice for this specific post. Layer on top of Mirellé editorial framework. Do not default to generic AI tone.",
+    "recommended_voice": "Confident insider friend — someone who has actually followed the celebrity-nail-salon beat and isn't afraid to say what's real",
+    "tone_characteristics": [
+      "Warm but unsentimental — genuine enthusiasm for the nail art without slipping into brand-copy gushing",
+      "Direct about the ownership-change tension rather than avoiding it",
+      "Specific over vague — names real prices, real artists, real locations rather than generic superlatives",
+      "Confident closer — delivers a real verdict rather than a wishy-washy 'it depends'",
+      "A little playful around the celebrity/aspirational material, grounded and practical everywhere else"
+    ],
+    "language_style": "Second person ('you'), short punchy sentences mixed with longer explanatory ones, no hedging qualifiers, occasional light humor when addressing the price tag or the brand's more precious touches (mani cams, champagne bar)",
+    "audience_match": "This reader wants a smart friend who's done the digging, not a brand ambassador — the voice needs to earn trust by being willing to say what's actually mediocre alongside what's genuinely good."
+  },
+  "section_13_external_links": {
+    "blog_gen_instruction": "Include all external links where indicated. Supports E-E-A-T. Use anchor suggestion as guide — write naturally around it. Sourced from phase_3's best_external_sources_found (real fetched competitor pages), not from separate searches. May be empty (0-2 links) if none of the fetched pages qualified as genuinely citation-worthy — that is expected, not a gap to fill.",
+    "links": []
+  },
+  "section_14_execution_plan": {
+    "calculated_by": "Input Gen Agent — calculated last, after all other sections are complete",
+    "blog_gen_instruction": "READ THIS SECTION FIRST. Lock every value. Execute exactly. Do not recalculate, do not adjust, do not deviate.",
+    "block_1_keyword_execution": {
+      "primary_keyword": "paintbox nails reviews",
+      "top_5_density_baseline": "Not calculable from fetched data (thin SERP, see section_4) — set independently at a natural target for a 2100-word post",
+      "total_mention_target": "9 total mentions",
+      "first_100_words_plan": {
+        "rule": "Primary keyword MUST appear TWICE in the first 100 words. Mandatory. No exceptions.",
+        "mention_1": "sentence 1-2 of introduction — naming the post's subject directly after the celebrity hook",
+        "mention_2": "sentence 3-4 of introduction — framing the promise of honest, current reviews"
+      },
+      "first_half_target": "5 mentions — first ~1050 words. Run denser in first half.",
+      "second_half_target": "4 mentions — second ~1050 words",
+      "strong_tag_rule": "EVERY single mention of the primary keyword — all 9 of them — wrapped in <strong> tags. No exceptions. Catch each one as it is written. Scan after every paragraph.",
+      "keywords_to_avoid_active": [
+        "regal nails reviews", "miniluxe reviews", "davi nails reviews", "bellacures reviews",
+        "chillhouse reviews", "glosslab reviews", "tenoverten reviews", "is my nail salon safe",
+        "nail bar vs nail salon"
+      ]
+    },
+    "block_2_word_budget": {
+      "total_target": "2100 words — +/-50 words tolerance, never exceed",
+      "introduction": 230,
+      "conclusion": 180,
+      "h2_budgets": [
+        { "heading": "What Is Paintbox Nails, Exactly?", "budget": 260, "complexity": "low" },
+        { "heading": "Where to Find Paintbox in NYC Right Now", "budget": 220, "complexity": "low" },
+        { "heading": "How Much Does a Paintbox Manicure Cost?", "budget": 280, "complexity": "medium" },
+        { "heading": "What Real Clients Are Saying: The Honest Reviews", "budget": 340, "complexity": "high" },
+        { "heading": "Does Paintbox Still Hold Up Since the MiniLuxe Acquisition?", "budget": 280, "complexity": "high" },
+        { "heading": "Are Paintbox's Custom Press-Ons Worth It?", "budget": 250, "complexity": "medium" },
+        { "heading": "Who Paintbox Nails Is Actually Worth It For", "budget": 260, "complexity": "medium" }
+      ],
+      "tracking_rule": "Track running word total at the end of every H2 section. If a section is running over budget — cut before moving to the next section. Do not compensate later."
+    },
+    "block_3_image_plan": {
+      "total_images": 7,
+      "hero_image": "frontmatter only — NEVER appears in post body",
+      "body_images": 6,
+      "assignments": [
+        { "image_number": 1, "place_after": "What Is Paintbox Nails, Exactly?", "image_type": "standard_inspiration", "section_context": "A styled nail art look reflecting Paintbox's seasonal lookbook aesthetic — sophisticated, editorial, color-theory-driven design, not novelty nail art" },
+        { "image_number": 2, "place_after": "Where to Find Paintbox in NYC Right Now", "image_type": "standard_inspiration", "section_context": "A polished gel manicure in a clean, high-design salon-adjacent setting evoking the studio's interior aesthetic" },
+        { "image_number": 3, "place_after": "How Much Does a Paintbox Manicure Cost?", "image_type": "standard_inspiration", "section_context": "A close-up of a finished luxe/design-tier manicure showing the kind of detail that justifies the higher price point" },
+        { "image_number": 4, "place_after": "What Real Clients Are Saying: The Honest Reviews", "image_type": "standard_inspiration", "section_context": "A simple, elegant single-color or two-tone manicure representing the 'classic' or dependable side of the brand's offering" },
+        { "image_number": 5, "place_after": "Does Paintbox Still Hold Up Since the MiniLuxe Acquisition?", "image_type": "standard_inspiration", "section_context": "A confident, glossy finished manicure — avoid anything that visually implies decline or dissatisfaction; keep this aspirational despite the section's honest content" },
+        { "image_number": 6, "place_after": "Are Paintbox's Custom Press-Ons Worth It?", "image_type": "standard_inspiration", "section_context": "A press-on nail set with a custom, hand-designed look — distinct in style from the gel manicure images used earlier" }
+      ],
+      "image_type_rule": {
+        "default": "standard_inspiration — an actual nail look, styled and shot, related to the topic. This is the default for the large majority of image slots.",
+        "note_for_blog_gen": "No infographic needed for this post — inspirational intent, no comparison/tutorial structure requiring one. All 6 body slots are standard_inspiration. Never a tool/equipment or hands-at-work image in any slot."
+      },
+      "path_rule": "/images/blog/salon-reviews/paintbox-nails-reviews/filename.webp — topic_slug in path, slug folder, leading slash"
+    },
+    "block_4_opening_technique_assignments": {
+      "rule": "No two consecutive sections use the same technique. Conclusion = Technique 1 or 3 only.",
+      "assignments": [
+        { "section": "Introduction", "technique": "Technique 2 — The Scene/Hook (open on the celebrity-clientele detail)" },
+        { "section": "What Is Paintbox Nails, Exactly?", "technique": "Technique 4 — The Definition" },
+        { "section": "Where to Find Paintbox in NYC Right Now", "technique": "Technique 1 — The Claim" },
+        { "section": "How Much Does a Paintbox Manicure Cost?", "technique": "Technique 3 — The Reframe" },
+        { "section": "What Real Clients Are Saying: The Honest Reviews", "technique": "Technique 2 — The Scene/Hook" },
+        { "section": "Does Paintbox Still Hold Up Since the MiniLuxe Acquisition?", "technique": "Technique 1 — The Claim" },
+        { "section": "Are Paintbox's Custom Press-Ons Worth It?", "technique": "Technique 4 — The Definition" },
+        { "section": "Who Paintbox Nails Is Actually Worth It For", "technique": "Technique 3 — The Reframe" },
+        { "section": "Conclusion", "technique": "Technique 1 — The Claim" }
+      ],
+      "banned_opener_rule": "Check every opener against banned_opening_approaches in blog gen prompt before writing the second sentence"
+    },
+    "block_5_link_placements": {
+      "rule": "Every link placed exactly where specified. Anchor texts used verbatim — never rewritten. Links woven into prose naturally — never standalone CTAs.",
+      "links": [
+        { "anchor_text": "Regal Nails reviews", "full_url": "/blog/salon-reviews/regal-nails-reviews", "place_in_section": "Who Paintbox Nails Is Actually Worth It For", "placement_context": "As a contrast for readers weighing a splurge NYC studio against a budget national chain", "link_type": "cluster-pillar" },
+        { "anchor_text": "Chillhouse reviews of the viral NYC nail studio", "full_url": "/blog/salon-reviews/chillhouse-reviews", "place_in_section": "Who Paintbox Nails Is Actually Worth It For", "placement_context": "As a comparable NYC design-forward studio for readers exploring similar options", "link_type": "cluster-spoke" },
+        { "anchor_text": "Tenoverten non-toxic nail salon reviews", "full_url": "/blog/salon-reviews/tenoverten-reviews", "place_in_section": "What Is Paintbox Nails, Exactly?", "placement_context": "Naming another NYC editorial-favorite nail brand in the same tier", "link_type": "cluster-spoke" },
+        { "anchor_text": "how to tell if a nail salon is safe", "full_url": "/blog/salon-reviews/how-to-tell-if-nail-salon-is-safe", "place_in_section": "Does Paintbox Still Hold Up Since the MiniLuxe Acquisition?", "placement_context": "Directly relevant given this section addresses real service-consistency concerns", "link_type": "cluster-spoke" },
+        { "anchor_text": "what to actually check before booking any nail salon, not just this one", "full_url": "https://mirelleinspo.com/nail-faqs/how-to-choose-the-right-nail-salon-near-me", "place_in_section": "Who Paintbox Nails Is Actually Worth It For", "placement_context": "Genuinely useful existing site content for a reader making a final decision", "link_type": "cross-site" }
+      ]
+    },
+    "block_6_aeo_geo_plan": {
+      "aeo_assignments": [
+        { "aeo_term": "Is Paintbox Nails actually worth the price?", "assigned_to_section": "How Much Does a Paintbox Manicure Cost?", "execution": "Write a direct 2-3 sentence answer paragraph IMMEDIATELY after the H2 heading — before any elaboration." },
+        { "aeo_term": "Did MiniLuxe buy Paintbox?", "assigned_to_section": "Does Paintbox Still Hold Up Since the MiniLuxe Acquisition?", "execution": "Write a direct 2-3 sentence answer paragraph IMMEDIATELY after the H2 heading — before any elaboration." },
+        { "aeo_term": "Are Paintbox's custom press-ons worth it?", "assigned_to_section": "Are Paintbox's Custom Press-Ons Worth It?", "execution": "Write a direct 2-3 sentence answer paragraph IMMEDIATELY after the H2 heading — before any elaboration." },
+        { "aeo_term": "What celebrities have gotten their nails done at Paintbox?", "assigned_to_section": "What Is Paintbox Nails, Exactly?", "execution": "Write a direct 2-3 sentence answer naming confirmed clients (Rihanna, Gigi Hadid, Sophie Turner) directly after establishing what the studio is." }
+      ],
+      "geo_entity_statements": [
+        { "entity": "Paintbox (nail studio)", "assigned_to_section": "What Is Paintbox Nails, Exactly?", "execution": "Write a clear declarative definition: founded 2014 by Eleanor Langston, a former beauty editor, as a high-design, manicures-only nail art studio in NYC." },
+        { "entity": "MiniLuxe acquisition of Paintbox", "assigned_to_section": "Does Paintbox Still Hold Up Since the MiniLuxe Acquisition?", "execution": "Write a clear declarative sentence: MiniLuxe acquired Paintbox in June 2022 and has maintained it as a distinct sister brand rather than absorbing it." },
+        { "entity": "Custom press-on service", "assigned_to_section": "Are Paintbox's Custom Press-Ons Worth It?", "execution": "Write a clear declarative definition of the service: a consultation-based, hand-designed press-on set built to the client's specifications, taking 1-2 weeks for completion." }
+      ]
+    },
+    "block_7_active_constraints": {
+      "em_dash_banned": "Long em dash does not appear anywhere. If one forms while writing — stop, replace with: comma / new sentence / parentheses / but / restructure.",
+      "banned_vocab_watch": "elevate, curated, seamless, unlock, journey, game-changer, transform",
+      "american_english_active": "color, recognize, -ize, -or — every instance, no exceptions. This post uses American English, not British.",
+      "keyword_density_reminder": "After every 2 H2 sections — count current keyword mentions. Verify running total is on track to hit 9 total mentions. First half must run denser than second half.",
+      "image_path_reminder": "/images/blog/salon-reviews/paintbox-nails-reviews/filename.webp — topic_slug in path always",
+      "internal_link_url_reminder": "Full correct paths only. Cluster links = /blog/salon-reviews/[slug]. Cross-site link = exact URL as discovered (https://mirelleinspo.com/nail-faqs/how-to-choose-the-right-nail-salon-near-me). Never bare /slug.",
+      "hero_image_reminder": "Hero = frontmatter only. Never place hero image in body.",
+      "strong_tag_reminder": "Every primary keyword mention = <strong> tags. Scan after every paragraph."
+    }
+  }
+}
