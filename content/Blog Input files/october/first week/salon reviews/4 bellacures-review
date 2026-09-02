@@ -1,0 +1,568 @@
+{
+  "section_1_file_authority": {
+    "statement": "THIS FILE IS THE SINGLE SOURCE OF TRUTH FOR THE BLOG GEN AGENT. All values in POST_CONSTANTS are hardcoded — Blog Gen Agent does not ask, adjust, or override them. All keywords, H2 structure, audience intelligence, internal links, and tone defined here must be followed exactly."
+  },
+
+  "section_2_post_constants": {
+    "slug": "bellacures-reviews",
+    "topic_slug": "salon-reviews",
+    "canonical": "https://mirelleinspo.com/blog/salon-reviews/bellacures-reviews",
+    "post_type": "spoke",
+    "intent": "informational",
+    "word_count": 2350,
+    "image_count": 7,
+    "show_inspo_gallery_link": false,
+    "template": "posts",
+    "hero_dimensions": "1200x675",
+    "category": "Salon Reviews",
+    "publish_date": "2026-09-03",
+    "author": "jyoti-mirelle"
+  },
+
+  "section_3_cluster_snapshot": {
+    "pillar_slug": "regal-nails-reviews",
+    "pillar_title": "Regal Nails Reviews: What to Know Before You Go",
+    "pillar_primary_keyword": "regal nails reviews",
+    "this_post_slug": "bellacures-reviews",
+    "this_post_role": "spoke",
+    "show_inspo_gallery_link_cluster_default": false,
+    "keywords_to_avoid": [
+      "regal nails reviews",
+      "miniluxe reviews",
+      "davi nails reviews",
+      "chillhouse reviews",
+      "glosslab reviews",
+      "tenoverten reviews",
+      "paintbox nails reviews",
+      "is my nail salon safe",
+      "nail bar vs nail salon"
+    ]
+  },
+
+  "section_4_serp_analysis": {
+    "blog_gen_instruction": "our_strategic_approach is a specific, evidence-based outperform strategy, not a vague gap-fill statement. Use it as the concrete angle for the introduction and conclusion, and to guide depth/coverage decisions in relevant H2 sections.",
+    "competitor_gaps": [
+      "No fetched page explains WHY the star rating looks inconsistent across locations (4.1-4.6 on Yelp/Google vs 3.8 brand aggregate) — confirmed gap: Yelp brand page + Wanderlog BH + Wanderlog SM all show different composite scores with no explanation of per-location variance.",
+      "No fetched page addresses the recurring 'I was shocked by these reviews' pattern seen repeatedly across the Yelp brand aggregator — real first-time visitors are actively surprised the reviews don't match their in-salon experience. None of the 5 competitor pages surfaces or explains this trust gap.",
+      "No fetched page covers the tiered/add-on pricing structure in detail (base mani $15-20 vs. Gel-X $90-110 vs. add-ons like Cannacure, chrome, nail art) — Groupon and price-list sources confirm real confusion ('so many add-ons I have no clue what I'm agreeing to'), but no editorial competitor addresses it head-on.",
+      "No fetched page explains what makes Bellacures structurally different from a standard salon (no whirlpool spa chairs, single-use autoclaved tool pouches, no shared pedicure basins) as a genuine safety differentiator vs. marketing language — confirmed on 2+ sources (Bellacures About page + Blushing Noir independent review)."
+    ],
+    "missing_semantic_territory": [
+      "\"bellacures dazzle dry vs gel\" — confirmed real search interest via Refinery29/Thingtesting/See Anna Jane content plus Bellacures' own promotion of Dazzle Dry as a signature offering; no fetched competitor page compares it head-to-head for a first-time Bellacures visitor.",
+      "\"bellacures franchise / how many locations\" — confirmed via Insights Success CEO interview (Gerard Quiroga) and LeadIQ; not addressed on any fetched competitor page.",
+      "\"bellacures price without groupon\" — confirmed via Groupon deal page showing $28-for-$58-value structure; no competitor page addresses full retail pricing transparency."
+    ],
+    "our_strategic_approach": "None of the five fetched pages resolves the central tension a first-time searcher actually has: Bellacures markets itself almost entirely on hygiene and hospital-grade sterilization, but the reviews people find are wildly split by location and by visit, and no existing page explains why. This post will open by naming that exact tension, then walk through the specific structural claims (autoclave tools, no whirlpool chairs, single-use pouches) and test them against real independent reviews rather than restating Bellacures' own marketing copy. It will cover the full add-on pricing structure in plain terms since Groupon and price-list data confirm real reader confusion here, which no competitor addresses. It will also be the first page to explain the brand's actual footprint and ownership (Gerard Quiroga, CEO; Southern California + Dallas locations) to build the E-E-A-T no fetched competitor offers. Structurally, this post pairs each hygiene claim with a real review data point rather than treating them as separate sections, which none of the five competitors do.",
+    "top_5_fetched_pages_summary": [
+      {
+        "url": "https://wanderlog.com/place/details/10487866/bellacures-beverly-hills",
+        "word_count": 480,
+        "h2_count": 0,
+        "keyword_mentions": 3,
+        "note": "Real editorial aggregator page (Why You Should Go / Know Before You Go / Reviews breakdown). Thin depth, no pricing or hygiene detail, purely review-summary format."
+      },
+      {
+        "url": "https://wanderlog.com/place/details/1776064/bellacures-santa-monica",
+        "word_count": 460,
+        "h2_count": 0,
+        "keyword_mentions": 3,
+        "note": "Same format as Beverly Hills page. Strong on staff-name-dropping (Marisol, Taylor) but no structural or pricing detail; good source of exact user phrasing."
+      },
+      {
+        "url": "https://spaandbeautytoday.com/articles/we-tried-the-virtual-reality-manicure-and-pedicure-at-bellacures",
+        "word_count": 820,
+        "h2_count": 0,
+        "keyword_mentions": 4,
+        "note": "Genuine bylined first-person editorial review (Kamala Kirk). Strong narrative hook and real pricing ($55/$60), but covers only the VR add-on service, not a general first-visit review."
+      },
+      {
+        "url": "https://www.timeout.com/los-angeles/health-and-beauty/best-nail-salons-in-los-angeles",
+        "word_count": 95,
+        "h2_count": 1,
+        "keyword_mentions": 1,
+        "note": "Real editorial roundup (2017, still live) listing Bellacures Brentwood at #8 of 11 LA salons. Extremely thin per-salon coverage; useful only for competitive-context framing, not depth."
+      },
+      {
+        "url": "https://www.yelp.com/brands/bellacures",
+        "word_count": 540,
+        "h2_count": 0,
+        "keyword_mentions": 5,
+        "note": "Aggregated brand review page, 1,835 reviews at 3.8 stars across 6 Yelp-tracked locations. Not a written editorial piece but the single richest source of real, quoted first-time-visitor language and the recurring 'shocked by the reviews' pattern."
+      }
+    ],
+    "top_5_word_count_average": 479,
+    "top_5_keyword_density_average": 3,
+    "best_external_sources_found": [
+      {
+        "url": "https://spaandbeautytoday.com/articles/we-tried-the-virtual-reality-manicure-and-pedicure-at-bellacures",
+        "reason": "Genuinely authoritative bylined editorial review with named author, real first-person visit, and specific pricing — citation-worthy."
+      },
+      {
+        "url": "https://insightssuccess.com/bellacures-a-salon-for-hands-and-feet/",
+        "reason": "Real business-press interview with Bellacures CEO Gerard Quiroga confirming footprint (7 SoCal locations + Dallas) and franchise model — citation-worthy for E-E-A-T brand-background context."
+      }
+    ]
+  },
+
+  "section_5_audience_intelligence": {
+    "blog_gen_instruction": "This is your primary creative brief. Every paragraph written for this specific person with this specific intent. Satisfy them completely.",
+    "who_they_are": "A woman researching Bellacures specifically before booking a first appointment — likely in LA, Beverly Hills, Santa Monica, Brentwood, Studio City, West Hollywood, El Segundo, or Dallas (the confirmed location markets). She has usually already seen the brand's own marketing (hospital-grade sterilization, hospital-grade autoclave, 'luxury redefined') and is now cross-checking it against real customer experience before spending $20-100+.",
+    "what_they_want_from_this_post": "A clear-eyed answer to 'is Bellacures actually as clean and premium as it claims, and is it worth the price' — not a restatement of the brand's own website copy. She wants real review patterns, not marketing language.",
+    "what_frustrates_them": "Every fetched competitor source either recycles Bellacures' own hygiene-marketing language verbatim (multiple location pages, About page, 7 Signs blog posts) or gives raw unfiltered star ratings with no synthesis. Nothing available explains the gap between the polished brand promise and the real spread of reviews, or breaks down what she'll actually pay once add-ons are included.",
+    "top_5_pain_points": [
+      "Confusion over real total cost once add-ons (Gel-X, chrome, nail art, Cannacure, massage-by-the-minute) are factored in beyond the advertised base manicure price",
+      "Uncertainty about whether the 'hospital-grade' and 'no whirlpool chairs' claims are a genuine safety edge or just marketing language, since competitors don't fact-check this",
+      "Confusion over why star ratings vary so much by location and platform (Yelp brand page 3.8 vs. individual Yelp listings 3.8-4.6 vs. Google via Wanderlog 4.1-4.2)",
+      "Not knowing which specific locations are considered the strongest (reviews repeatedly single out staff by name — Marisol, Taylor, Coco — suggesting technician-level rather than brand-level consistency)",
+      "Wanting to know if the polish itself (Dazzle Dry vs. gel) is worth the upcharge and how it compares for longevity"
+    ],
+    "exact_user_phrases": [
+      "is it worth it",
+      "I was really shocked by these reviews",
+      "so expensive for such poor quality",
+      "premium pricing and service",
+      "hospital-grade sterilized tools",
+      "they don't use whirlpool spa chairs",
+      "so many add-ons I have no clue what I'm agreeing to",
+      "worth the price tag",
+      "clean utensils, hydrating hand cream",
+      "the reviews don't match what I experienced",
+      "chipped within two days",
+      "felt sales-y"
+    ],
+    "intent_content_signals": [
+      "Responds well to specific named staff/technician callouts, since reviews consistently praise individuals by name rather than the brand generically",
+      "Wants concrete price ranges, not vague 'affordable luxury' language",
+      "Responds to a fact-check framing (claim vs. reality) rather than a pure listicle of positives",
+      "Wants location-specific nuance rather than one blanket brand verdict",
+      "Values direct answers to 'is the hygiene claim real' over aspirational spa-day language"
+    ]
+  },
+
+  "section_6_semantic_keyword_data": {
+    "blog_gen_instruction": "Primary keyword in strong tags every mention. AEO terms trigger direct answer paragraphs. User language woven naturally. No term from keywords_to_avoid used as focus term.",
+    "primary_keyword": "bellacures reviews",
+    "keyword_variations": [
+      "bellacures nail salon reviews",
+      "bellacures review",
+      "is bellacures worth it",
+      "bellacures beverly hills reviews",
+      "bellacures santa monica reviews",
+      "bellacures pricing reviews",
+      "bellacures salon review"
+    ],
+    "cluster_keywords": [
+      "hospital-grade nail salon",
+      "Bellacures pricing",
+      "Bellacures locations",
+      "Dazzle Dry manicure",
+      "Gel-X pricing",
+      "autoclave sterilization nail salon",
+      "nail salon hygiene standards",
+      "Bellacures Beverly Hills",
+      "Bellacures Santa Monica",
+      "luxury nail salon Los Angeles",
+      "Bellacures Dallas",
+      "no whirlpool spa chair salon"
+    ],
+    "lsi_terms": [
+      "hospital-grade autoclave",
+      "single-use pedicure liner",
+      "Dazzle Dry vs gel",
+      "Gel-X full set",
+      "power polish",
+      "Cannacure treatment",
+      "sea salt scrub pedicure",
+      "buttercream hand treatment",
+      "paraffin treatment",
+      "Bellacures franchise",
+      "Gerard Quiroga",
+      "nail salon add-on pricing",
+      "whirlpool spa chair bacteria",
+      "virtual reality manicure",
+      "gelicure",
+      "nail salon star rating variance",
+      "premium nail salon pricing"
+    ],
+    "aeo_terms": [
+      "is Bellacures worth the price",
+      "how much does Bellacures cost",
+      "are Bellacures reviews accurate",
+      "what makes Bellacures different from a regular nail salon",
+      "is Bellacures actually hospital-grade clean",
+      "why does Bellacures not use spa chairs",
+      "how many Bellacures locations are there",
+      "who owns Bellacures",
+      "is Dazzle Dry better than gel at Bellacures",
+      "how much is a Gel-X manicure at Bellacures"
+    ],
+    "technical_terms": [
+      "autoclave sterilization",
+      "Dazzle Dry system",
+      "Gel-X application",
+      "power polish",
+      "gel builder overlay",
+      "single-use liner"
+    ],
+    "user_language": [
+      "is it worth it",
+      "so expensive for such poor quality",
+      "hospital-grade sterilized tools",
+      "premium pricing and service",
+      "felt sales-y",
+      "chipped within two days",
+      "I was really shocked by these reviews",
+      "the reviews don't match what I experienced"
+    ]
+  },
+
+  "section_7_voice_and_ai_queries": {
+    "blog_gen_instruction": "Answer every query directly in the relevant H2 section body. If a query cannot be addressed naturally in the body, route it to faqItems. No query left unanswered.",
+    "queries": [
+      "Is Bellacures actually worth the price?",
+      "How much does a manicure at Bellacures cost?",
+      "Are Bellacures nail salons really hospital-grade clean?",
+      "Why doesn't Bellacures use whirlpool spa chairs?",
+      "How many Bellacures locations are there?",
+      "Who owns Bellacures?",
+      "Is Dazzle Dry better than a regular gel manicure at Bellacures?",
+      "How much is a Gel-X set at Bellacures?",
+      "Why do Bellacures reviews vary so much by location?",
+      "What should I expect at my first Bellacures appointment?",
+      "Does Bellacures upsell you on extra services?",
+      "Is Bellacures good for a pedicure or just manicures?",
+      "What is the Virtual Reality manicure at Bellacures?",
+      "Are the autoclave and sterilization claims at Bellacures real?",
+      "Which Bellacures location has the best reviews?",
+      "Is Bellacures more expensive than a regular nail salon?",
+      "Does Bellacures use safe products for pregnancy?",
+      "What is Cannacure at Bellacures?"
+    ]
+  },
+
+  "section_8_hook_and_ctr": {
+    "blog_gen_instruction": "READ THIS SECTION BEFORE WRITING THE TITLE, META DESCRIPTION, INTRO, OR FIRST H2. The title and description here are the option the USER SELECTED from 2-3 real, evidence-based choices during phase_6 — use them exactly. The intro hook brief and first H2 hook direction are your creative brief for those specific elements, matching the selected option's angle. Do not deviate.",
+    "real_serp_findings_summary": "All 5 fetched pages either restate Bellacures' own hygiene-marketing copy nearly verbatim (Wanderlog descriptions, TimeOut blurb) or present raw, unsynthesized review aggregation (Yelp brand page) with no fact-check angle. None frames the post as testing the brand's own claims against real experience, which is the clearest open angle for this keyword.",
+    "selected_option_rationale": "This option leads with the brand's own marketing language (hospital-grade tools, VR pedicures, Dazzle Dry) then immediately promises to test it against real reviews — directly answering the 'is the hygiene claim real' pain point that no fetched competitor page addresses, while signaling a fact-check angle none of the five pages currently owns.",
+    "title": "Bellacures Reviews 2026: Hype vs. Reality",
+    "title_char_count": 38,
+    "meta_description": "Hospital-grade tools, VR pedicures, Dazzle Dry — Bellacures markets big. Here's what actual reviews reveal about the experience.",
+    "meta_char_count": 130,
+    "intro_hook_brief": "Open by naming Bellacures' own headline claims (hospital-grade sterilization, no whirlpool chairs, VR mani-pedis) in one breath, then pivot immediately to the promise that this post checks those claims against what real clients across Beverly Hills, Santa Monica, Brentwood, and Dallas actually say. Curiosity-gap energy: the reader suspects there's a gap between the pitch and the experience, and this post confirms or resolves that suspicion.",
+    "first_h2_hook_direction": "Open the first H2 (the hygiene/sterilization section) by restating the specific claim in plain language, then immediately pair it with a real independent confirmation (Blushing Noir's explanation of why whirlpool chairs are a real bacterial risk) rather than just repeating Bellacures' own copy — subtle continuation of the hype-vs-reality angle without repeating the title's wording."
+  },
+
+  "section_9_search_journey": {
+    "blog_gen_instruction": "This is the emotional contract with the reader. Every section of the post must honour the promise made. Read this before writing any section. If a paragraph breaks the journey arc — rewrite it.",
+    "reader_arrival_state": "Slightly skeptical and fact-checking — she's seen Bellacures' polished marketing and wants to know if it holds up before she books and pays.",
+    "journey_arc": [
+      "Open by naming the brand's own headline claims and promising a real fact-check, not a repeat of the marketing",
+      "Walk through the hygiene/sterilization claims first, testing each against real independent confirmation",
+      "Break down actual pricing including the add-on structure that confuses first-time visitors",
+      "Cover the Dazzle Dry vs. gel decision and the newer VR mani-pedi offering as real differentiators",
+      "Address the location-by-location and review-platform variance directly, since this is the confirmed gap no competitor covers",
+      "Close with a clear, direct verdict on who Bellacures is genuinely worth it for"
+    ],
+    "promise_to_deliver": "That this post will test Bellacures' own hospital-grade and luxury marketing claims against real client reviews and give a direct answer, not a restatement of the brand's website copy.",
+    "exit_state": "Confident and equipped — she knows exactly what she's paying for, which claims are genuinely true, which locations tend to perform best, and whether Bellacures fits what she's looking for."
+  },
+
+  "section_10_content_structure": {
+    "blog_gen_instruction": "This H2 structure is research-driven and must be followed exactly. Do not rename, reorder, or remove H2s without user instruction. Word budget per section is set — follow it. H3s may be added at editorial discretion.",
+    "fields": {
+      "h1": "Bellacures Reviews: Hype vs. Reality",
+      "h2_structure": [
+        "Is Bellacures Really Hospital-Grade Clean?",
+        "How Much Does Bellacures Actually Cost?",
+        "Dazzle Dry vs. Gel: Which Is Worth It at Bellacures?",
+        "The Virtual Reality Mani-Pedi: Gimmick or Genuinely Relaxing?",
+        "Why Bellacures Reviews Vary So Much by Location",
+        "Who's Behind Bellacures?",
+        "So, Is Bellacures Worth It?"
+      ],
+      "word_budget": {
+        "introduction": "220 words",
+        "conclusion": "180 words",
+        "per_h2": [
+          { "heading": "Is Bellacures Really Hospital-Grade Clean?", "budget": "380 words" },
+          { "heading": "How Much Does Bellacures Actually Cost?", "budget": "400 words" },
+          { "heading": "Dazzle Dry vs. Gel: Which Is Worth It at Bellacures?", "budget": "320 words" },
+          { "heading": "The Virtual Reality Mani-Pedi: Gimmick or Genuinely Relaxing?", "budget": "280 words" },
+          { "heading": "Why Bellacures Reviews Vary So Much by Location", "budget": "300 words" },
+          { "heading": "Who's Behind Bellacures?", "budget": "270 words" }
+        ]
+      }
+    }
+  },
+
+  "section_11_internal_links": {
+    "blog_gen_instruction": "Every link below must appear in the post. Cluster links use anchor texts verbatim — do not rewrite. Cross-site links use the provided descriptive anchor. Place each link where the placement note says — woven naturally into prose, never as a standalone CTA. Total internal links must not exceed 6.",
+    "all_internal_links": [
+      {
+        "url_or_slug": "/blog/salon-reviews/regal-nails-reviews",
+        "title": "Regal Nails Reviews: What to Know Before You Go",
+        "anchor_text": "Regal Nails reviews",
+        "placement_note": "In the introduction or 'So, Is Bellacures Worth It?' section, as a natural comparison point to a budget/franchise nail chain at the opposite end of the price spectrum",
+        "link_type": "cluster-pillar"
+      },
+      {
+        "url_or_slug": "/blog/salon-reviews/miniluxe-reviews",
+        "title": "MiniLuxe Reviews: Is It Worth the Price?",
+        "anchor_text": "MiniLuxe reviews and pricing breakdown",
+        "placement_note": "In 'How Much Does Bellacures Actually Cost?', as a natural comparison to another premium-tier national nail brand facing the same worth-it question",
+        "link_type": "cluster-spoke"
+      },
+      {
+        "url_or_slug": "/blog/salon-reviews/tenoverten-reviews",
+        "title": "Tenoverten Reviews: The Non-Toxic Nail Salon Loved by Vogue",
+        "anchor_text": "Tenoverten non-toxic nail salon reviews",
+        "placement_note": "In 'Dazzle Dry vs. Gel: Which Is Worth It at Bellacures?', as a natural link for readers focused on non-toxic/clean-beauty polish options beyond Dazzle Dry",
+        "link_type": "cluster-spoke"
+      },
+      {
+        "url_or_slug": "/blog/salon-reviews/how-to-tell-if-nail-salon-is-safe",
+        "title": "How to Tell If a Nail Salon Is Actually Safe (Before You Book)",
+        "anchor_text": "how to tell if a nail salon is safe",
+        "placement_note": "In 'Is Bellacures Really Hospital-Grade Clean?', as a natural link for readers who want the general safety checklist beyond this one brand",
+        "link_type": "cluster-spoke"
+      }
+    ]
+  },
+
+  "section_12_voice_tone": {
+    "blog_gen_instruction": "This is the voice for this specific post. Layer on top of Mirellé editorial framework. Do not default to generic AI tone.",
+    "recommended_voice": "Confident fact-checker with a warm, knowing edge",
+    "tone_characteristics": [
+      "Direct and specific rather than aspirational or vague",
+      "Willing to name a real tension (marketing vs. actual reviews) without being cynical",
+      "Uses concrete numbers (prices, star ratings, locations) rather than generic superlatives",
+      "Empathetic to the reader's skepticism without validating unnecessary distrust",
+      "Closes with a clear, committed verdict rather than 'it depends'"
+    ],
+    "language_style": "Second-person, plain declarative sentences, moderate use of specific named details (technician names, exact prices, location names) to ground claims in reality rather than brand copy",
+    "audience_match": "This voice matches a reader who has already seen polished brand marketing and wants someone to cut through it plainly and tell her what's actually true before she spends money — confident and specific builds the trust that vague reassurance would not."
+  },
+
+  "section_13_external_links": {
+    "blog_gen_instruction": "Include all external links where indicated. Supports E-E-A-T. Use anchor suggestion as guide — write naturally around it. Sourced from phase_3's best_external_sources_found (real fetched competitor pages), not from separate searches.",
+    "links": [
+      {
+        "url": "https://spaandbeautytoday.com/articles/we-tried-the-virtual-reality-manicure-and-pedicure-at-bellacures",
+        "context": "In 'The Virtual Reality Mani-Pedi: Gimmick or Genuinely Relaxing?', to cite a genuine first-person account of the VR service",
+        "anchor_suggestion": "one writer's full account of the Virtual Reality Mani-Pedi"
+      },
+      {
+        "url": "https://insightssuccess.com/bellacures-a-salon-for-hands-and-feet/",
+        "context": "In 'Who's Behind Bellacures?', to cite the CEO interview confirming footprint and franchise model",
+        "anchor_suggestion": "an interview with Bellacures CEO Gerard Quiroga"
+      }
+    ]
+  },
+
+  "section_14_execution_plan": {
+    "purpose": "Blog Gen Agent reads this section FIRST — before frontmatter, before writing a single word. Every value here is pre-calculated from the input file data. Blog Gen Agent locks all values and executes them exactly.",
+    "blog_gen_instruction": "READ THIS SECTION FIRST. Lock every value. Execute exactly. Do not recalculate, do not adjust, do not deviate.",
+    "calculated_by": "Input Gen Agent — calculated last, after all other sections are complete",
+
+    "block_1_keyword_execution": {
+      "primary_keyword": "bellacures reviews",
+      "top_5_density_baseline": 3,
+      "total_mention_target": "3 + 3 = 6 total mentions. This is the hard target.",
+      "first_100_words_plan": {
+        "rule": "Primary keyword MUST appear TWICE in the first 100 words. Mandatory. No exceptions.",
+        "mention_1": "sentence 1 of introduction — naming the brand's headline claims alongside 'Bellacures reviews' as the framing device for the post",
+        "mention_2": "sentence 3-4 of introduction — restating 'Bellacures reviews' as what the post will actually test the claims against"
+      },
+      "first_half_target": "4 mentions — first 1175 words. Run denser in first half.",
+      "second_half_target": "2 mentions — second 1175 words",
+      "strong_tag_rule": "EVERY single mention of the primary keyword — all 6 of them — wrapped in <strong> tags. No exceptions. Catch each one as it is written. Scan after every paragraph.",
+      "keywords_to_avoid_active": [
+        "regal nails reviews",
+        "miniluxe reviews",
+        "davi nails reviews",
+        "chillhouse reviews",
+        "glosslab reviews",
+        "tenoverten reviews",
+        "paintbox nails reviews",
+        "is my nail salon safe",
+        "nail bar vs nail salon"
+      ]
+    },
+
+    "block_2_word_budget": {
+      "total_target": "2350 words — +/-50 words tolerance, never exceed",
+      "introduction": "220 words",
+      "conclusion": "180 words",
+      "h2_budgets": [
+        { "heading": "Is Bellacures Really Hospital-Grade Clean?", "budget": "380 words", "complexity": "medium" },
+        { "heading": "How Much Does Bellacures Actually Cost?", "budget": "400 words", "complexity": "high" },
+        { "heading": "Dazzle Dry vs. Gel: Which Is Worth It at Bellacures?", "budget": "320 words", "complexity": "medium" },
+        { "heading": "The Virtual Reality Mani-Pedi: Gimmick or Genuinely Relaxing?", "budget": "280 words", "complexity": "low" },
+        { "heading": "Why Bellacures Reviews Vary So Much by Location", "budget": "300 words", "complexity": "medium" },
+        { "heading": "Who's Behind Bellacures?", "budget": "270 words", "complexity": "low" }
+      ],
+      "tracking_rule": "Track running word total at the end of every H2 section. If a section is running over budget — cut before moving to the next section. Do not compensate later."
+    },
+
+    "block_3_image_plan": {
+      "total_images": 7,
+      "hero_image": "frontmatter only — NEVER appears in post body",
+      "body_images": 6,
+      "assignments": [
+        {
+          "image_number": 1,
+          "place_after": "Introduction",
+          "image_type": "standard_inspiration",
+          "section_context": "A polished, styled nail look (soft neutral or classic red manicure) evoking the 'luxury redefined' salon aesthetic — sets the visual tone before the fact-check angle begins."
+        },
+        {
+          "image_number": 2,
+          "place_after": "Is Bellacures Really Hospital-Grade Clean?",
+          "image_type": "standard_inspiration",
+          "section_context": "A clean, minimal manicure look photographed in a way that evokes a bright, sanitary salon environment — soft tones, no hands/tools/process visible."
+        },
+        {
+          "image_number": 3,
+          "place_after": "How Much Does Bellacures Actually Cost?",
+          "image_type": "infographic",
+          "section_context": "Simple price-tier infographic comparing base manicure, Dazzle Dry manicure, Gel-X full set, and common add-ons (chrome, nail art) at approximate price points — clean graphic layout, not a photo."
+        },
+        {
+          "image_number": 4,
+          "place_after": "Dazzle Dry vs. Gel: Which Is Worth It at Bellacures?",
+          "image_type": "standard_inspiration",
+          "section_context": "A glossy, high-shine finished manicure look representative of the Dazzle Dry/gel aesthetic — elegant single-color or subtle French finish."
+        },
+        {
+          "image_number": 5,
+          "place_after": "The Virtual Reality Mani-Pedi: Gimmick or Genuinely Relaxing?",
+          "image_type": "standard_inspiration",
+          "section_context": "A relaxed, spa-like styled nail look with a calm, escapist mood — soft pastel or beachy-toned polish to echo the VR 'mini vacation' framing without depicting tools or headsets."
+        },
+        {
+          "image_number": 6,
+          "place_after": "Why Bellacures Reviews Vary So Much by Location",
+          "image_type": "standard_inspiration",
+          "section_context": "A chic, old-Hollywood-glamour-inspired manicure look (classic red or deep berry) nodding to the Beverly Hills location's aesthetic identity."
+        }
+      ],
+      "image_type_rule": {
+        "default": "standard_inspiration — an actual nail look, styled and shot, related to the topic.",
+        "infographic_allowed_when": "This post's intent is informational but requires one genuine comparison (price tiers) — infographic used once for slot 3 only.",
+        "banned_absolutely": "NEVER a tool/equipment image. NEVER a photo-style side-by-side nail comparison — the pricing comparison uses a clean infographic instead."
+      },
+      "path_rule": "/images/blog/salon-reviews/bellacures-reviews/filename.webp — topic_slug in path, slug folder, leading slash"
+    },
+
+    "block_4_opening_technique_assignments": {
+      "rule": "No two consecutive sections use the same technique. Conclusion = Technique 1 or 3 only.",
+      "assignments": [
+        { "section": "Introduction", "technique": "Technique 1 — The Claim (naming Bellacures' own headline promises upfront)" },
+        { "section": "Is Bellacures Really Hospital-Grade Clean?", "technique": "Technique 2 — The Direct Question" },
+        { "section": "How Much Does Bellacures Actually Cost?", "technique": "Technique 3 — The Reframe" },
+        { "section": "Dazzle Dry vs. Gel: Which Is Worth It at Bellacures?", "technique": "Technique 2 — The Direct Question" },
+        { "section": "The Virtual Reality Mani-Pedi: Gimmick or Genuinely Relaxing?", "technique": "Technique 4 — The Scene-Set" },
+        { "section": "Why Bellacures Reviews Vary So Much by Location", "technique": "Technique 3 — The Reframe" },
+        { "section": "Who's Behind Bellacures?", "technique": "Technique 2 — The Direct Question" },
+        { "section": "Conclusion", "technique": "Technique 1 — The Claim" }
+      ],
+      "banned_opener_rule": "Check every opener against banned_opening_approaches in blog gen prompt before writing the second sentence"
+    },
+
+    "block_5_link_placements": {
+      "rule": "Every link placed exactly where specified. Anchor texts used verbatim — never rewritten. Links woven into prose naturally — never standalone CTAs.",
+      "links": [
+        {
+          "anchor_text": "Regal Nails reviews",
+          "full_url": "/blog/salon-reviews/regal-nails-reviews",
+          "place_in_section": "So, Is Bellacures Worth It?",
+          "placement_context": "As a natural comparison point when framing who Bellacures suits versus a budget-tier national chain",
+          "link_type": "cluster-pillar"
+        },
+        {
+          "anchor_text": "MiniLuxe reviews and pricing breakdown",
+          "full_url": "/blog/salon-reviews/miniluxe-reviews",
+          "place_in_section": "How Much Does Bellacures Actually Cost?",
+          "placement_context": "When noting that Bellacures isn't the only premium chain facing a worth-it price question",
+          "link_type": "cluster-spoke"
+        },
+        {
+          "anchor_text": "Tenoverten non-toxic nail salon reviews",
+          "full_url": "/blog/salon-reviews/tenoverten-reviews",
+          "place_in_section": "Dazzle Dry vs. Gel: Which Is Worth It at Bellacures?",
+          "placement_context": "When discussing non-toxic polish alternatives beyond Dazzle Dry",
+          "link_type": "cluster-spoke"
+        },
+        {
+          "anchor_text": "how to tell if a nail salon is safe",
+          "full_url": "/blog/salon-reviews/how-to-tell-if-nail-salon-is-safe",
+          "place_in_section": "Is Bellacures Really Hospital-Grade Clean?",
+          "placement_context": "When pointing readers to the general safety checklist that applies beyond this one brand",
+          "link_type": "cluster-spoke"
+        }
+      ]
+    },
+
+    "block_6_aeo_geo_plan": {
+      "aeo_assignments": [
+        {
+          "aeo_term": "Is Bellacures actually hospital-grade clean?",
+          "assigned_to_section": "Is Bellacures Really Hospital-Grade Clean?",
+          "execution": "Write a direct 2-3 sentence answer paragraph IMMEDIATELY after the H2 heading — before any elaboration."
+        },
+        {
+          "aeo_term": "How much does Bellacures cost?",
+          "assigned_to_section": "How Much Does Bellacures Actually Cost?",
+          "execution": "Write a direct 2-3 sentence answer paragraph with a concrete price range IMMEDIATELY after the H2 heading."
+        },
+        {
+          "aeo_term": "Is Dazzle Dry better than gel at Bellacures?",
+          "assigned_to_section": "Dazzle Dry vs. Gel: Which Is Worth It at Bellacures?",
+          "execution": "Write a direct 2-3 sentence comparison answer IMMEDIATELY after the H2 heading."
+        },
+        {
+          "aeo_term": "How many Bellacures locations are there?",
+          "assigned_to_section": "Who's Behind Bellacures?",
+          "execution": "Write a direct 2-3 sentence answer stating the confirmed footprint (Southern California + Dallas) IMMEDIATELY after the H2 heading."
+        }
+      ],
+      "geo_entity_statements": [
+        {
+          "entity": "Autoclave sterilization",
+          "assigned_to_section": "Is Bellacures Really Hospital-Grade Clean?",
+          "execution": "Write a clear declarative definition sentence for autoclave sterilization — confident, no hedging. Extractable by AI as a citation."
+        },
+        {
+          "entity": "Dazzle Dry",
+          "assigned_to_section": "Dazzle Dry vs. Gel: Which Is Worth It at Bellacures?",
+          "execution": "Write a clear declarative definition sentence explaining what Dazzle Dry is as a nail polish system, distinct from gel."
+        },
+        {
+          "entity": "Gerard Quiroga",
+          "assigned_to_section": "Who's Behind Bellacures?",
+          "execution": "Write a clear declarative sentence identifying Gerard Quiroga as President and CEO of Bellacures."
+        }
+      ]
+    },
+
+    "block_7_active_constraints": {
+      "em_dash_banned": "Long em dash does not appear anywhere. If one forms while writing — stop, replace with: comma / new sentence / parentheses / but / restructure.",
+      "banned_vocab_watch": [
+        "elevate",
+        "unleash",
+        "game-changer",
+        "must-have",
+        "in today's world",
+        "when it comes to",
+        "look no further",
+        "the ultimate"
+      ],
+      "american_english_active": "color, recognize, -ize, -or — every instance, no exceptions. This post uses American English, not British.",
+      "keyword_density_reminder": "After every 2 H2 sections — count current keyword mentions. Verify running total is on track to hit the hardcoded mention target (3 baseline + 3). First half must run denser than second half. Adjust if needed.",
+      "image_path_reminder": "/images/blog/salon-reviews/bellacures-reviews/filename.webp — topic_slug in path always",
+      "internal_link_url_reminder": "Full correct paths only. Cluster links = /blog/salon-reviews/[slug]. Never bare /slug.",
+      "hero_image_reminder": "Hero = frontmatter only. Never place hero image in body.",
+      "strong_tag_reminder": "Every primary keyword mention = <strong> tags. Scan after every paragraph."
+    }
+  }
+}
