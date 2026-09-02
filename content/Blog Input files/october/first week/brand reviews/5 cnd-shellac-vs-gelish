@@ -1,0 +1,324 @@
+# INPUT FILE — Blog Gen Agent Source of Truth
+## Post: CND Shellac vs Gelish: Which Gel Polish System Actually Wins?
+
+---
+
+## SECTION 1 — FILE AUTHORITY
+THIS FILE IS THE SINGLE SOURCE OF TRUTH FOR THE BLOG GEN AGENT. All values in POST_CONSTANTS are hardcoded — Blog Gen Agent does not ask, adjust, or override them. All keywords, H2 structure, audience intelligence, internal links, and tone defined here must be followed exactly.
+
+---
+
+## SECTION 2 — POST_CONSTANTS
+- **slug:** cnd-shellac-vs-gelish
+- **topic_slug:** nail-brand-reviews
+- **canonical:** https://mirelleinspo.com/blog/nail-brand-reviews/cnd-shellac-vs-gelish
+- **post_type:** spoke
+- **intent:** comparison
+- **word_count:** 1450 (top_5_word_count_average from phase_3 = ~1260 words; set target above baseline to allow genuine depth on removal, durability, and nail-health decision points that competitors under-cover)
+- **image_count:** 5 (comparison intent = flat 5 total, including hero)
+- **show_inspo_gallery_link:** false (cluster default from cluster_metadata.show_inspo_gallery_link_cluster_default)
+- **template:** posts (not pillar role, not tutorial intent → falls to "everything else" mapping)
+- **hero_dimensions:** 1200x675
+- **category:** Nail Brand Reviews
+- **publish_date:** 2026-09-02
+- **author:** jyoti-mirelle
+
+---
+
+## SECTION 3 — CLUSTER SNAPSHOT
+- **pillar_slug:** opi-reviews
+- **pillar_title:** OPI Reviews: Is It Still the Best Nail Polish Brand?
+- **pillar_primary_keyword:** opi reviews
+- **this_post_slug:** cnd-shellac-vs-gelish
+- **this_post_role:** spoke
+- **show_inspo_gallery_link_cluster_default:** false
+- **keywords_to_avoid:** opi reviews, essie nail polish reviews, sally hansen miracle gel reviews, opi nail envy reviews, kiara sky reviews, glamnetic reviews, impress nails reviews, olive and june reviews, dashing diva reviews, color street reviews, manime reviews, static nails reviews, btartbox reviews, melody susie reviews (plus any existing site posts already covering shellac cost, gel polish basics, or gel nails cost as their own primary keyword)
+
+---
+
+## SECTION 4 — SERP ANALYSIS
+**our_strategic_approach:** All 5 fetched competitors default to generic "gel vs Shellac" framing rather than the brand-specific "CND Shellac vs Gelish" decision searchers actually type — only 2 of 5 (BrokeMyNail, TheApprenticeBeautyBlogger) name Gelish by brand at all, and both are outdated (2013–2017) with no 2026 pricing or current color-count data. This post will own the brand-specific angle with current data: real 2026 pricing, updated color-range counts, and a direct verdict rather than "it depends on preference." Structural edge: competitors bury the decision-making framework under generic definitions; this post leads with a fast verdict table, then earns it with depth on the three things salon-goers and pros actually argue about — durability on weak/damaged nails, removal difficulty, and color range — each backed by the professional-forum consensus found in phase_4. Keyword territory this post owns: "which lasts longer gelish or shellac," "gelish vs shellac for weak nails," "shellac vs gelish removal time" — specific comparison angles none of the 5 fetched pages address head-on with a clear winner.
+
+**top_5_fetched_pages_summary:**
+| URL | Word Count | H2 Count | Keyword Mentions* | Note |
+|---|---|---|---|---|
+| brokemynail.com/gelish-vs-shellac | ~1450 | 4 | 9 | Personal nail-tech voice, real comparison table, but 2017-dated pricing/color counts |
+| theapprenticebeautyblogger.wordpress.com/shellac-vs-gelish | ~950 | 5 | 7 | Strong professional detail (lamp specs, cost of equipment) but 2013-dated, UK-only pricing |
+| treatwell.co.uk/cnd-shellac-vs-gelish-nails | ~1750 | 9 | 2 | Comprehensive FAQ + comparison table, but never actually names Gelish — generic "gel vs Shellac" |
+| diffen.com/Gel_Nails_vs_Shellac_Nails | ~750 | 6 | 1 | Structured comparison chart format, but treats "gel" generically, barely differentiates Gelish as a brand |
+| purewow.com/beauty/shellac-vs-gel | ~1400 | 10 | 2 | Expert-quoted (2 named nail pros), current (2025), but again generic gel-vs-Shellac, not Gelish-specific |
+
+*Exact "Shellac"/"Gelish" brand-paired mentions in body content, not generic "gel" mentions.
+
+**top_5_word_count_average:** ~1260 words
+**top_5_keyword_density_average:** ~4 mentions (of both brand names paired together in comparison context)
+
+**missing_semantic_territory:** "cnd shellac vs gelish which lasts longer," "gelish vs shellac for weak nails," "shellac vs gelish removal time," "is gelish better than shellac for damaged nails," current 2026 color range counts for both brands, direct "if you want X, choose Y" decision framework.
+
+**competitor_gaps** (demand-validated on 2+ sources — SalonGeek threads, PriceScope, Quora, cross-checked against phase_4):
+- Which system is genuinely better for weak, damaged, or peeling natural nails (recurring question across SalonGeek threads and PriceScope)
+- Direct removal-time comparison in minutes, not vague "quicker/slower" language
+- Current, specific color-range counts for both brands (existing sources cite wildly different, outdated numbers: 51–223 for Gelish, 61–150+ for Shellac)
+- A clear "choose this one if..." decision framework rather than "both are great, it's personal preference"
+
+**recommended_image_count_validation:** 5 images (hero + 4 body) matches SERP pattern — none of the 5 fetched pages are image-heavy; this is a text/table-driven comparison format, confirming comparison-intent flat count is appropriate.
+
+---
+
+## SECTION 5 — AUDIENCE INTELLIGENCE
+**who_they_are:** Two overlapping groups searching this exact keyword: (1) nail technicians and beauty-school students deciding which professional gel system to train in and stock, and (2) enthusiast at-home/salon-going consumers who have heard both brand names and want to know which to request or buy. Search behavior (SalonGeek threads spanning 2013–2026, still active) shows this is a genuinely evergreen professional decision, not a fading trend.
+
+**what_they_want_from_this_post:** A direct, current verdict — not a neutral "both are great" shrug. They want to know which one wins on the specific thing they personally care about: durability, nail health, removal ease, or color range.
+
+**what_frustrates_them:** Existing content is either outdated (2013–2017 blog posts with dead pricing), or genericized into "gel vs Shellac" without ever actually naming or comparing Gelish as the specific competing brand — searchers typing "CND Shellac vs Gelish" get diluted answers that don't address the exact two brands.
+
+**top_5_pain_points:**
+1. Can't tell which system will last longer on their specific nail type (weak/damaged vs. strong/fast-growing)
+2. Confused about real removal time difference and which is gentler on natural nails
+3. Uncertain about actual current color range for each brand (existing numbers are years out of date)
+4. Nail techs need a straight answer for which to train in / stock, not "try both yourself"
+5. Cost confusion — unclear if one is genuinely more expensive than the other per application
+
+**exact_user_phrases:**
+- "which is more popular"
+- "does anyone know the difference between these products"
+- "is Gelish better than Shellac for problem nails"
+- "how does Shellac compare to Gelish"
+- "which lasts longer on damaged nails"
+- "I chose Gelish as it lasted longer"
+- "Shellac shellac shellac"
+- "I am 100% team gelish"
+- "you can't go wrong with either brand"
+- "break the seal" (referring to Gelish removal prep)
+
+**intent_content_signals:** Comparison-table format performs well (multiple sources use one); professional/enthusiast tone with real experience references; a clear final verdict is expected, not just balanced pros/cons; FAQ-style direct answers to specific sub-questions perform well (seen in Treatwell, PureWow).
+
+---
+
+## SECTION 6 — SEMANTIC KEYWORD DATA
+**primary_keyword:** cnd shellac vs gelish
+
+**keyword_variations:** shellac vs gelish, gelish vs shellac, gelish or shellac, cnd shellac or gelish, shellac versus gelish, is gelish better than shellac, which is better shellac or gelish
+
+**cluster_keywords:** gel polish system, soak-off gel polish, CND Shellac, Harmony Gelish, professional gel manicure, no-lamp gel alternative comparison, gel polish brand comparison, salon gel system, hybrid nail polish, pure gel polish
+
+**lsi_terms:** power polish, brush-in-bottle gel, UV lamp cure, LED lamp cure, acetone soak-off, break the seal removal method, nail plate buffing, soak-off gel removal, gel polish durability, color range comparison, weak nail gel polish, damaged nail gel system, professional nail training, Nail Harmony brand, chip-resistant top coat
+
+**aeo_terms:**
+- Which lasts longer, CND Shellac or Gelish?
+- Is Gelish better than Shellac for weak nails?
+- How long does CND Shellac last compared to Gelish?
+- Do you need to buff your nails for Gelish or Shellac?
+- Which is easier to remove, Shellac or Gelish?
+- Is Gelish the same as Shellac?
+- Which gel polish brand has more colors, Gelish or Shellac?
+- Can Gelish damage your natural nails more than Shellac?
+
+**technical_terms:** hybrid gel formula, soak-off gel polish, UV/LED curing, acetone removal wrap, base coat/color coat/top coat system, pH bond primer, keratin bonding (Gelish-specific)
+
+**user_language:** "team gelish," "team shellac," "lasts a week longer," "break the seal," "no damage whatsoever," "harder wearing," "which one should I train in," "worth the extra cost," "my nails are weak and peely"
+
+---
+
+## SECTION 7 — VOICE & AI QUERIES
+1. Is CND Shellac the same as Gelish?
+2. Which lasts longer, CND Shellac or Gelish?
+3. Is Gelish better than Shellac for weak or damaged nails?
+4. How long does a Gelish manicure last compared to Shellac?
+5. Do you need to buff your nails before applying Gelish?
+6. Which is easier to remove, Shellac or Gelish?
+7. Which gel polish system has more color options in 2026?
+8. Is Gelish more expensive than CND Shellac?
+9. Can I use Gelish and Shellac products together?
+10. Which is better for nail technicians to train in, Gelish or Shellac?
+11. Does Gelish damage your natural nails more than Shellac?
+12. What is the actual difference between Shellac and Gelish formulas?
+13. Which gel polish brand is more popular in salons right now?
+14. Is CND Shellac gentler on natural nails than Gelish?
+15. How much does a Gelish manicure cost versus a Shellac manicure?
+
+---
+
+## SECTION 8 — HOOK AND CTR
+**real_serp_findings_summary:** Only 2 of 5 fetched competitors (BrokeMyNail, TheApprenticeBeautyBlogger) name Gelish by brand at all, and both are severely outdated (2013–2017) with dead pricing and color counts. The other 3 (Treatwell, Diffen, PureWow) genericize into "gel vs Shellac," never actually comparing Gelish specifically despite ranking for this query. None offer a current, decisive verdict — most land on "both are great, it's personal preference."
+
+**selected_option_rationale:** "CND Shellac vs Gelish: Which Actually Lasts Longer?" leads with the single most-searched, most-argued sub-question found across every real source in phase_4 (SalonGeek threads, PriceScope, Quora) — durability is the recurring battleground — while directly promising the decisive verdict competitors avoid.
+
+**title:** CND Shellac vs Gelish: Which Actually Lasts Longer?
+**title_char_count:** 51
+**meta_description:** Most comparisons stop at color count. This one breaks down real wear tests, nail health impact, and removal pain so you know exactly what you're choosing.
+**meta_char_count:** 153
+
+**intro_hook_brief:** Open by naming the exact frustration found in phase_4 research — years of SalonGeek threads still arguing this in circles with no resolution — then promise this post ends the argument with a real, current, durability-first verdict.
+
+**first_h2_hook_direction:** The first H2 should lead directly with the durability/longevity comparison (the angle promised in the title), giving a fast, specific answer before any other comparison point.
+
+---
+
+## SECTION 9 — SEARCH JOURNEY
+**reader_arrival_state:** Uncertain and slightly anxious — stuck between two specific gel polish brands, has likely read conflicting opinions already, wants to stop going back and forth.
+
+**journey_arc:**
+- Acknowledge the exact decision they're stuck on and validate that the confusion is real (even pros disagree)
+- Resolve the durability question first and decisively, since it's the most-searched sub-angle
+- Move through removal, nail health, color range, and cost — each with a clear point-winner, not a shrug
+- Close with a direct, condition-based recommendation ("choose Shellac if X, choose Gelish if Y")
+
+**promise_to_deliver:** A decisive, current answer for which gel polish system wins on durability and overall — not another "both are great, it depends" article.
+
+**exit_state:** Confident and ready to book or buy — they know exactly which system fits their nails and lifestyle, with no lingering uncertainty.
+
+---
+
+## SECTION 10 — CONTENT STRUCTURE
+**h1:** CND Shellac vs Gelish: Which Actually Lasts Longer?
+
+**h2_structure:**
+1. CND Shellac vs Gelish: The Quick Verdict
+2. Which Lasts Longer: Durability Compared
+3. Removal: Which Is Actually Easier on Your Nails?
+4. Is Gelish or Shellac Better for Weak or Damaged Nails?
+5. Color Range: Who Actually Wins in 2026?
+6. Cost Comparison: Is Gelish More Expensive?
+7. Which Should You Choose?
+
+**word_budget:**
+- introduction: 220 words
+- H2-1 (Quick Verdict): 130 words
+- H2-2 (Durability): 260 words
+- H2-3 (Removal): 220 words
+- H2-4 (Weak/Damaged Nails): 220 words
+- H2-5 (Color Range): 170 words
+- H2-6 (Cost): 150 words
+- H2-7 (Which Should You Choose): 200 words
+- conclusion: 180 words
+
+---
+
+## SECTION 11 — INTERNAL LINKS
+| URL/Slug | Title | Anchor Text | Placement | Type |
+|---|---|---|---|---|
+| /blog/nail-brand-reviews/opi-reviews | OPI Reviews: Is It Still the Best Nail Polish Brand? | OPI reviews | "Which Should You Choose?" section — natural mention when contrasting brand ecosystems | cluster-pillar |
+| /blog/nail-brand-reviews/kiara-sky-reviews | Kiara Sky Reviews: Is This the Best Dip Powder Brand? | Kiara Sky dip powder reviews | "Which Should You Choose?" section — for readers considering dip as a third alternative | cluster-spoke |
+| /blog/nail-brand-reviews/sally-hansen-miracle-gel-reviews | Sally Hansen Miracle Gel Reviews | Sally Hansen Miracle Gel reviews | "Cost Comparison" section — as a no-lamp, lower-cost alternative mention | cluster-spoke |
+| /blog/nail-brand-reviews/melody-susie-reviews | Melody Susie Reviews: Are the Nail Drills and Lamps Worth It? | Melody Susie nail drill and lamp reviews | "Removal" section — natural mention when discussing at-home removal tools/lamps | cluster-spoke |
+| https://mirelleinspo.com/blog/nail-basics/what-is-gel-polish | What Is Gel Polish & How Does It Actually Work? | what gel polish actually is and how curing works | Introduction or "Quick Verdict" section — for readers needing the foundational explainer before the brand comparison | cross-site |
+| https://mirelleinspo.com/blog/gel-nails-cost/shellac-cost | Shellac Cost: What Salons Don't Tell You (2026) | a full 2026 breakdown of what Shellac actually costs | "Cost Comparison" section — deeper dive for readers wanting exact regional pricing | cross-site |
+
+Total: 6 internal links (4 cluster + 2 cross-site) — within 4–6 cap.
+
+---
+
+## SECTION 12 — VOICE & TONE
+**recommended_voice:** Confident educator with hands-on nail-industry credibility
+
+**tone_characteristics:** Decisive (never hedges into "it depends" without resolving it), direct, mildly conversational, evidence-citing (references real wear/removal experience), respectful of both professional and at-home reader
+
+**language_style:** Second-person ("you"), short declarative sentences for verdicts, slightly longer explanatory sentences for the "why," minimal jargon — technical terms defined in-line on first use
+
+**audience_match:** This audience (pros and enthusiasts alike) has read vague comparison content for over a decade and is actively frustrated by non-answers; a confident, decisive voice directly satisfies the top pain point found in phase_4.
+
+---
+
+## SECTION 13 — EXTERNAL LINKS
+| URL | Context | Anchor Suggestion |
+|---|---|---|
+| https://www.purewow.com/beauty/shellac-vs-gel | Use when citing current, expert-quoted (2025) nail professional perspective on durability/removal | a 2025 breakdown from two licensed nail professionals |
+
+(Only 1 of 5 fetched pages qualifies as genuinely citation-worthy and current — PureWow is expert-quoted and recently updated. The other 4 are either too outdated (2013–2017) or too generic/thin to cite as authoritative sources.)
+
+---
+
+## SECTION 14 — EXECUTION PLAN
+
+### Block 1 — Keyword Execution
+- **primary_keyword:** cnd shellac vs gelish
+- **top_5_density_baseline:** 4 mentions
+- **total_mention_target:** 6–7 total mentions (baseline + 2–3)
+- **first_100_words_plan:**
+  - mention_1: sentence 2 of introduction — naming the exact comparison right after acknowledging reader's uncertainty
+  - mention_2: sentence 4–5 of introduction — reinforcing before transitioning into the promise of a decisive verdict
+- **first_half_target:** 4 mentions — first ~725 words (introduction through H2-4)
+- **second_half_target:** 2–3 mentions — second ~725 words (H2-5 through conclusion)
+- **strong_tag_rule:** Every one of the 6–7 mentions of "CND Shellac vs Gelish" (or its locked variations) wrapped in `<strong>` tags. Scan after every paragraph.
+- **keywords_to_avoid_active:** opi reviews, essie nail polish reviews, sally hansen miracle gel reviews, opi nail envy reviews, kiara sky reviews, glamnetic reviews, impress nails reviews, olive and june reviews, dashing diva reviews, color street reviews, manime reviews, static nails reviews, btartbox reviews, melody susie reviews
+
+### Block 2 — Word Budget
+- **total_target:** 1450 words (±50 tolerance)
+- **introduction:** 220 words
+- **conclusion:** 180 words
+- **h2_budgets:**
+  | Heading | Budget | Complexity |
+  |---|---|---|
+  | CND Shellac vs Gelish: The Quick Verdict | 130 | low |
+  | Which Lasts Longer: Durability Compared | 260 | high |
+  | Removal: Which Is Actually Easier on Your Nails? | 220 | medium |
+  | Is Gelish or Shellac Better for Weak or Damaged Nails? | 220 | high |
+  | Color Range: Who Actually Wins in 2026? | 170 | medium |
+  | Cost Comparison: Is Gelish More Expensive? | 150 | low |
+  | Which Should You Choose? | 200 | medium |
+- **tracking_rule:** Track running word total at the end of every H2. If a section runs over budget, cut before moving on — do not compensate later.
+
+### Block 3 — Image Plan
+- **total_images:** 5
+- **hero_image:** frontmatter only — never in body
+- **body_images:** 4
+- **assignments:**
+  1. place_after: "CND Shellac vs Gelish: The Quick Verdict" — image_type: standard_inspiration — section_context: a clean, well-manicured hand showing a glossy gel finish (neutral shade, not brand-specific) representing the "winning" polished look
+  2. place_after: "Which Lasts Longer: Durability Compared" — image_type: infographic — section_context: side-by-side durability infographic comparing wear time in days/weeks for CND Shellac vs Gelish (clean graphic layout, not a photo comparison)
+  3. place_after: "Is Gelish or Shellac Better for Weak or Damaged Nails?" — image_type: standard_inspiration — section_context: a nail look on shorter/natural-looking nails, styled attractively, representing healthy nail-conscious styling
+  4. place_after: "Color Range: Who Actually Wins in 2026?" — image_type: standard_inspiration — section_context: a vibrant colorful manicure showcasing a bold, on-trend gel polish shade
+- **image_type_rule:** Only 1 infographic slot needed (durability comparison) — comparison intent genuinely calls for one visual data comparison. No tool/equipment or literal side-by-side photo comparison images permitted anywhere.
+- **path_rule:** /images/blog/nail-brand-reviews/cnd-shellac-vs-gelish/filename.webp
+
+### Block 4 — Opening Technique Assignments
+| Section | Technique |
+|---|---|
+| Introduction | Technique 1 — The Claim |
+| CND Shellac vs Gelish: The Quick Verdict | Technique 2 — The Scene |
+| Which Lasts Longer: Durability Compared | Technique 3 — The Reframe |
+| Removal: Which Is Actually Easier on Your Nails? | Technique 1 — The Claim |
+| Is Gelish or Shellac Better for Weak or Damaged Nails? | Technique 2 — The Scene |
+| Color Range: Who Actually Wins in 2026? | Technique 3 — The Reframe |
+| Cost Comparison: Is Gelish More Expensive? | Technique 1 — The Claim |
+| Which Should You Choose? | Technique 2 — The Scene |
+| Conclusion | Technique 3 — The Reframe |
+
+**banned_opener_rule:** Check every opener against banned_opening_approaches in Blog Gen prompt before writing the second sentence.
+
+### Block 5 — Link Placements
+| Anchor Text | Full URL | Place In Section | Placement Context | Link Type |
+|---|---|---|---|---|
+| OPI reviews | /blog/nail-brand-reviews/opi-reviews | Which Should You Choose? | Mentioned as the third major professional brand ecosystem worth comparing separately | cluster-pillar |
+| Kiara Sky dip powder reviews | /blog/nail-brand-reviews/kiara-sky-reviews | Which Should You Choose? | Mentioned for readers considering dip powder as a longer-lasting alternative to both gel systems | cluster-spoke |
+| Sally Hansen Miracle Gel reviews | /blog/nail-brand-reviews/sally-hansen-miracle-gel-reviews | Cost Comparison: Is Gelish More Expensive? | Mentioned as a no-lamp, lower-cost at-home alternative for budget-conscious readers | cluster-spoke |
+| Melody Susie nail drill and lamp reviews | /blog/nail-brand-reviews/melody-susie-reviews | Removal: Which Is Actually Easier on Your Nails? | Mentioned when discussing at-home removal tools and lamps for DIY users | cluster-spoke |
+| what gel polish actually is and how curing works | https://mirelleinspo.com/blog/nail-basics/what-is-gel-polish | Introduction | Mentioned for readers who need the foundational gel-polish explainer before diving into the brand-specific comparison | cross-site |
+| a full 2026 breakdown of what Shellac actually costs | https://mirelleinspo.com/blog/gel-nails-cost/shellac-cost | Cost Comparison: Is Gelish More Expensive? | Mentioned for readers wanting exact regional CND Shellac pricing beyond this post's summary numbers | cross-site |
+
+### Block 6 — AEO/GEO Plan
+**aeo_assignments:**
+| AEO Term | Assigned Section | Execution |
+|---|---|---|
+| Which lasts longer, CND Shellac or Gelish? | Which Lasts Longer: Durability Compared | Direct 2–3 sentence answer immediately after the H2 heading, before elaboration |
+| Is Gelish better than Shellac for weak nails? | Is Gelish or Shellac Better for Weak or Damaged Nails? | Direct 2–3 sentence answer immediately after the H2 heading |
+| Which is easier to remove, Shellac or Gelish? | Removal: Which Is Actually Easier on Your Nails? | Direct 2–3 sentence answer immediately after the H2 heading |
+| Which gel polish brand has more colors, Gelish or Shellac? | Color Range: Who Actually Wins in 2026? | Direct 2–3 sentence answer immediately after the H2 heading |
+| Is Gelish more expensive than CND Shellac? | Cost Comparison: Is Gelish More Expensive? | Direct 2–3 sentence answer immediately after the H2 heading |
+
+**geo_entity_statements:**
+| Entity | Assigned Section | Execution |
+|---|---|---|
+| CND Shellac | CND Shellac vs Gelish: The Quick Verdict | Clear declarative definition: a hybrid gel-and-polish system created by CND, cured under a lamp |
+| Gelish | CND Shellac vs Gelish: The Quick Verdict | Clear declarative definition: a pure soak-off gel polish brand by Harmony/Nail Harmony |
+| break the seal (removal method) | Removal: Which Is Actually Easier on Your Nails? | Clear declarative definition of the technique for AI extraction |
+
+### Block 7 — Active Constraints
+- **em_dash_banned:** Long em dash does not appear anywhere. Replace with comma, new sentence, parentheses, "but," or restructure.
+- **banned_vocab_watch:** elevate, unlock, dive into, game-changer, in today's world, boasts, seamlessly, unleash
+- **american_english_active:** color, favorite, recognize, -ize, -or — every instance, no exceptions.
+- **keyword_density_reminder:** After every 2 H2 sections, count current mentions of "CND Shellac vs Gelish" and locked variations. Verify running total on track for 6–7 total. First half denser than second half.
+- **image_path_reminder:** /images/blog/nail-brand-reviews/cnd-shellac-vs-gelish/filename.webp — topic_slug in path always
+- **internal_link_url_reminder:** Full correct paths only. Cluster links = /blog/nail-brand-reviews/[slug]. Cross-site links = exact mirelleinspo.com URL as discovered. Never bare /slug.
+- **hero_image_reminder:** Hero = frontmatter only. Never place hero image in body.
+- **strong_tag_reminder:** Every primary keyword mention = `<strong>` tags. Scan after every paragraph.
