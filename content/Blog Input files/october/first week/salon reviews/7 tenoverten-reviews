@@ -1,0 +1,432 @@
+{
+  "section_1_file_authority": {
+    "statement": "THIS FILE IS THE SINGLE SOURCE OF TRUTH FOR THE BLOG GEN AGENT. All values in POST_CONSTANTS are hardcoded — Blog Gen Agent does not ask, adjust, or override them. All keywords, H2 structure, audience intelligence, internal links, and tone defined here must be followed exactly."
+  },
+
+  "section_2_post_constants": {
+    "slug": "tenoverten-reviews",
+    "topic_slug": "salon-reviews",
+    "canonical": "https://mirelleinspo.com/blog/salon-reviews/tenoverten-reviews",
+    "post_type": "spoke",
+    "intent": "informational",
+    "word_count": 2650,
+    "image_count": 7,
+    "show_inspo_gallery_link": false,
+    "template": "posts",
+    "hero_dimensions": "1200x675",
+    "category": "Salon Reviews",
+    "publish_date": "2026-09-03",
+    "author": "jyoti-mirelle"
+  },
+
+  "section_3_cluster_snapshot": {
+    "pillar_slug": "regal-nails-reviews",
+    "pillar_title": "Regal Nails Reviews: What to Know Before You Go",
+    "pillar_primary_keyword": "regal nails reviews",
+    "this_post_slug": "tenoverten-reviews",
+    "this_post_role": "spoke",
+    "show_inspo_gallery_link_cluster_default": false,
+    "keywords_to_avoid": [
+      "regal nails reviews", "miniluxe reviews", "davi nails reviews", "bellacures reviews",
+      "chillhouse reviews", "glosslab reviews", "paintbox nails reviews", "is my nail salon safe",
+      "nail bar vs nail salon"
+    ]
+  },
+
+  "section_4_serp_analysis": {
+    "blog_gen_instruction": "our_strategic_approach is a specific, evidence-based outperform strategy, not a vague gap-fill statement. Use it as the concrete angle for the introduction and conclusion, and to guide depth/coverage decisions in relevant H2 sections.",
+    "competitor_gaps": [
+      "No fetched page reviews the actual NYC salon visit end-to-end (booking, price paid, technician experience, cleanliness, how long it took) — every ranking page reviews the nail polish product line instead. Confirmed on 3+ sources (honestbrandreviews, 33rdsquare, thingtesting all product-only).",
+      "No page addresses real current pricing for the salon service. Only third-party sources (Business of Fashion archive, BestProsInTown, Yelp reviews) mention actual dollar amounts, and they conflict sharply: $25 manicure at 2010 launch vs. ~$90 for a mani+pedi with tip today. Confirmed on 2+ sources (BestProsInTown review, Foursquare tip).",
+      "No page addresses the recurring complaint pattern about no blow-dry machines / long wait-to-dry times, which appears across Yelp and Postcard reviews. Confirmed on 2+ sources.",
+      "No page clarifies which NYC location is still open — Reade St and one Fulton St listing show as CLOSED on Yelp while other pages treat all locations as current. Confirmed on 2+ sources (Yelp CLOSED tags, Birdeye active listing)."
+    ],
+    "missing_semantic_territory": [
+      "\"is tenoverten worth the price\" (for the salon visit specifically, not the polish) — confirmed on Yelp/BestProsInTown pricing complaints + Glassdoor forum tone",
+      "\"tenoverten salon vs polish\" distinction — confirmed on YouTube title pattern (100% product-review titles) + honestbrandreviews structure",
+      "\"tenoverten locations still open\" — confirmed on Yelp CLOSED tags + Birdeye active listings conflict"
+    ],
+    "our_strategic_approach": "Every fetched competitor page reviews the Tenoverten nail polish line (colors, ingredients, price per bottle) and treats the salon as a footnote — this post flips that entirely and reviews the salon visit itself: real pricing, what a manicure actually costs today versus the brand's founding-era pricing, the recurring no-blow-dryer complaint, and which locations are actually still open. This is the specific gap none of the top 5 fill. Structurally, this post opens with the salon experience (not the polish ingredients list that every competitor leads with), uses real Yelp/Birdeye rating data across locations to ground the 'is it worth it' verdict, and closes with a direct recommendation rather than the open-ended 'it depends on your priorities' fence-sitting typical of product-review competitors.",
+    "top_5_fetched_pages_summary": [
+      {
+        "url": "https://www.marieclaire.com/fashion/a5944/tenoverten-nail-salon/",
+        "word_count": 480,
+        "h2_count": 0,
+        "keyword_mentions": 6,
+        "note": "First-person salon visit narrative (2011), no structure, dated — but the only fetched page that actually reviews the physical salon experience rather than the polish."
+      },
+      {
+        "url": "https://www.honestbrandreviews.com/reviews/tenoverten-review/",
+        "word_count": 2050,
+        "h2_count": 9,
+        "keyword_mentions": 22,
+        "note": "Strong structure, thorough product breakdown, but salon visit gets zero coverage — treats Tenoverten purely as a product brand to buy from."
+      },
+      {
+        "url": "https://33rdsquare.com/tenoverten-review/",
+        "word_count": 2500,
+        "h2_count": 11,
+        "keyword_mentions": 19,
+        "note": "Longest and most personal review, mentions the salon in passing ('minimalist yet cozy nail salons') but never reviews a visit — entirely polish-focused."
+      },
+      {
+        "url": "https://thingtesting.com/brands/tenoverten/reviews",
+        "word_count": 180,
+        "h2_count": 0,
+        "keyword_mentions": 3,
+        "note": "Thin — only 3 short user reviews, no editorial structure, weak competitor overall but confirms real user sentiment (4.3/5, would-recommend)."
+      },
+      {
+        "url": "https://www.yelp.com/biz/tenoverten-new-york-6 (aggregated across Yelp/Birdeye location listings)",
+        "word_count": 0,
+        "h2_count": 0,
+        "keyword_mentions": 0,
+        "note": "Not an editorial page — used only for real rating/review-volume data (4.0-4.3 stars, 50-251 reviews per location) and real user complaint language, not as a structural competitor."
+      }
+    ],
+    "top_5_word_count_average": 1300,
+    "top_5_keyword_density_average": 12,
+    "best_external_sources_found": []
+  },
+
+  "section_5_audience_intelligence": {
+    "blog_gen_instruction": "This is your primary creative brief. Every paragraph written for this specific person with this specific intent. Satisfy them completely.",
+    "who_they_are": "A beauty-conscious reader, mostly NYC-based or NYC-curious, who already knows Tenoverten by reputation (Vogue, Vanity Fair, Elle mentions) and is deciding whether to actually book a salon visit — not whether to buy a bottle of polish. She cares about non-toxic ingredients but is equally focused on whether the in-person experience justifies the price.",
+    "what_they_want_from_this_post": "A straight answer on whether the salon visit is worth it: real price expectations, what makes it different from a regular nail salon, and whether the non-toxic promise is legitimate or marketing.",
+    "what_frustrates_them": "Every existing review talks about nail polish bottles and ingredient lists when she wants to know what happens when she walks in the door — how much she'll actually pay, how long she'll wait, whether the 'non-toxic' claim changes the service itself (e.g., no gel, no dryers).",
+    "top_5_pain_points": [
+      "Price surprise — reviewers report paying far more than expected once tip and add-ons are included ($90 for mani+pedi)",
+      "No blow-dry machines — recurring complaint about slow-dry wait times since Tenoverten's non-toxic model skips traditional UV/heat dryers",
+      "Confusion over which locations are still open — some Yelp listings show CLOSED while the brand's site still lists them",
+      "Uncertainty about service limits — non-toxic polish means no traditional gel at some locations, which surprises first-time visitors expecting gel manicures",
+      "Wanting reassurance the 'clean beauty' angle is substantive (8-free formula, real ingredient sourcing) and not just branding"
+    ],
+    "exact_user_phrases": [
+      "so excited to be the first to review the Tenoverten financial district location",
+      "please be warned, this is NOT a $$ salon",
+      "they don't have any drying machines so I was told to wait 20 minutes",
+      "chic, clean, and quiet",
+      "I'm mostly just posting this review to share something I realized",
+      "the cleanest, most relaxing nail salon I've ever found",
+      "not your average nail place! You pay a little more it there's No rush",
+      "it's a non-toxic salon, so they don't do gel",
+      "the ladies at the front desk are always friendly and welcoming",
+      "the smell of products are not overwhelming"
+    ],
+    "intent_content_signals": [
+      "Reader responds to concrete price figures, not vague 'affordable' or 'pricier' language",
+      "Reader wants a direct verdict, not open-ended 'depends on your priorities'",
+      "First-person, specific service detail (which technician, what happened) builds trust more than ingredient lists",
+      "Reader wants clarity on what's different (no dryers, no gel at some locations) stated plainly, not buried",
+      "Founder/brand-story context (Adair Ilyinsky, Nadine Abramcyk, 2010 Tribeca origin) adds credibility without derailing into a company history piece"
+    ]
+  },
+
+  "section_6_semantic_keyword_data": {
+    "blog_gen_instruction": "Primary keyword in strong tags every mention. AEO terms trigger direct answer paragraphs. User language woven naturally. No term from keywords_to_avoid used as focus term.",
+    "primary_keyword": "tenoverten reviews",
+    "keyword_variations": [
+      "tenoverten salon reviews", "tenoverten nail salon reviews", "tenoverten nyc reviews",
+      "tenoverten review", "reviews of tenoverten", "tenoverten reviews 2026"
+    ],
+    "cluster_keywords": [
+      "non-toxic nail salon", "clean beauty nail salon", "8-free nail polish", "tenoverten pricing",
+      "tenoverten manicure cost", "tenoverten locations", "tenoverten worth it", "vegan nail salon nyc",
+      "cruelty-free nail salon", "toxin-free manicure", "tenoverten Fulton Street", "tenoverten Tribeca"
+    ],
+    "lsi_terms": [
+      "toxic eight chemicals", "formaldehyde-free polish", "8-free formula", "non-toxic manicure",
+      "eco-conscious nail care", "clean beauty salon", "medical-grade autoclave", "quick-dry drops",
+      "no gel manicure", "salon founders Adair Ilyinsky", "Nadine Abramcyk", "Vogue nail salon feature",
+      "Financial District nail salon", "Tribeca nail salon", "conscious beauty"
+    ],
+    "aeo_terms": [
+      "is tenoverten worth the price for a manicure",
+      "how much does a tenoverten manicure cost",
+      "does tenoverten do gel manicures",
+      "is tenoverten actually non-toxic",
+      "what makes tenoverten different from a regular nail salon",
+      "which tenoverten locations are still open",
+      "does tenoverten use blow dryers for nails",
+      "who founded tenoverten",
+      "is tenoverten polish safe during pregnancy",
+      "what does 8-free mean in nail polish"
+    ],
+    "technical_terms": [
+      "8-free formula", "toxic eight chemicals", "dibutyl phthalate", "toluene", "formaldehyde resin",
+      "medical-grade autoclave", "quick-dry accelerator drops"
+    ],
+    "user_language": [
+      "chic, clean, and quiet", "not your average nail place", "you pay a little more but there's no rush",
+      "the cleanest, most relaxing nail salon I've ever found", "please be warned, this is NOT a cheap salon",
+      "no drying machines so you have to wait", "the smell isn't overwhelming", "front desk is always friendly"
+    ]
+  },
+
+  "section_7_voice_and_ai_queries": {
+    "blog_gen_instruction": "Answer every query directly in the relevant H2 section body. If a query cannot be addressed naturally in the body, route it to faqItems. No query left unanswered.",
+    "queries": [
+      "Is Tenoverten actually worth the price for a manicure?",
+      "How much does a manicure cost at Tenoverten?",
+      "Does Tenoverten do gel manicures?",
+      "Is Tenoverten's nail polish really non-toxic?",
+      "What makes Tenoverten different from a regular nail salon?",
+      "Which Tenoverten locations are still open in NYC?",
+      "Does Tenoverten use blow dryers to dry your nails?",
+      "Who founded Tenoverten and when did it open?",
+      "Is Tenoverten polish safe to use while pregnant?",
+      "What does 8-free mean for nail polish?",
+      "Is Tenoverten more expensive than a regular nail salon?",
+      "Can you get a pedicure at Tenoverten?",
+      "How long does a manicure take at Tenoverten?",
+      "Is Tenoverten a chain or independent salon?",
+      "What is Tenoverten's star rating on Yelp?",
+      "Does Tenoverten smell like a normal nail salon?"
+    ]
+  },
+
+  "section_8_hook_and_ctr": {
+    "blog_gen_instruction": "READ THIS SECTION BEFORE WRITING THE TITLE, META DESCRIPTION, INTRO, OR FIRST H2. The title and description here are the option the USER SELECTED from 2-3 real, evidence-based choices during phase_6 — use them exactly. The intro hook brief and first H2 hook direction are your creative brief for those specific elements, matching the selected option's angle. Do not deviate.",
+    "real_serp_findings_summary": "All 5 fetched competitor titles frame Tenoverten purely as a product review ('Tenoverten Review - Must Read This Before Buying', 'My Definitive 2500+ Word Review of Tenoverten Clean Nail Polish'), none mention the salon visit or pricing in the title. This left an open lane for a title that explicitly separates the polish (already well-reviewed at 5-star) from the salon experience (unreviewed), creating a curiosity gap around an angle no competitor title touches.",
+    "selected_option_rationale": "This title works because it front-loads the widely-known fact (polish is 5-star) as a setup, then pivots to the actual unanswered question the reader has — whether the in-person salon visit justifies the cost — which is exactly the gap step_1/step_2 confirmed no competitor addresses.",
+    "title": "Tenoverten's non-toxic nail polish tastes 5-star. Is the salon experience actually worth it?",
+    "title_char_count": 87,
+    "meta_description": "Tenoverten reviews cover the polish — but what about the actual salon visit? Real pricing, real complaints, and whether the non-toxic promise holds up in person.",
+    "meta_char_count": 164,
+    "intro_hook_brief": "Open by acknowledging the polish's well-earned reputation (5-star, Vogue-featured, 8-free) as common ground with the reader, then pivot immediately into the real question: none of that tells you what happens when you actually book a manicure. Use the curiosity-gap angle — she already trusts the product, this post is about the part nobody's told her.",
+    "first_h2_hook_direction": "The first H2 should open with a concrete, specific salon-visit detail (a real price paid, a real wait time) rather than restating the brand's founding story — plant the reader immediately inside a real visit, subtly extending the intro's 'nobody's told you this part' angle."
+  },
+
+  "section_9_search_journey": {
+    "blog_gen_instruction": "This is the emotional contract with the reader. Every section of the post must honour the promise made. Read this before writing any section. If a paragraph breaks the journey arc — rewrite it.",
+    "reader_arrival_state": "Curious but slightly skeptical — she trusts the Tenoverten brand name but hasn't found a review that tells her what an actual visit costs and feels like.",
+    "journey_arc": [
+      "Open by confirming the polish's reputation is real and deserved, then name the real gap: nobody reviews the salon visit itself",
+      "Answer the core question directly — real pricing, what's included, how it compares to a regular salon",
+      "Address the specific friction points (no blow dryers, no gel at some locations, location confusion) honestly rather than glossing over them",
+      "Build credibility with the non-toxic claim by explaining the actual 8-free formula and founder background, not just repeating 'clean beauty' as a buzzword",
+      "Close with a direct, confident verdict on who should book a visit and who should skip it"
+    ],
+    "promise_to_deliver": "This post tells you what actually happens — and what it actually costs — when you book a Tenoverten manicure, not just whether the polish bottles are good.",
+    "exit_state": "Confident and equipped — she knows the real price range, what to expect walking in, and whether it matches what she's looking for, without needing to dig through scattered Yelp reviews herself."
+  },
+
+  "section_10_content_structure": {
+    "blog_gen_instruction": "This H2 structure is research-driven and must be followed exactly. Do not rename, reorder, or remove H2s without user instruction. Word budget per section is set — follow it. H3s may be added at editorial discretion.",
+    "fields": {
+      "h1": "Tenoverten Reviews: Is the Non-Toxic NYC Nail Salon Actually Worth It?",
+      "h2_structure": [
+        "What a Real Tenoverten Manicure Actually Costs",
+        "Is Tenoverten's Non-Toxic Polish Really Different?",
+        "What to Expect Walking Into a Tenoverten Salon",
+        "The Trade-Offs Nobody Mentions: No Blow Dryers and No Gel",
+        "Which Tenoverten Locations Are Still Open",
+        "Tenoverten vs a Regular Nail Salon: Is It Worth the Price?",
+        "Who Should (and Shouldn't) Book a Tenoverten Manicure"
+      ],
+      "word_budget": {
+        "introduction": "230 words",
+        "conclusion": "180 words",
+        "per_h2": [
+          { "heading": "What a Real Tenoverten Manicure Actually Costs", "budget": 400, "complexity": "high" },
+          { "heading": "Is Tenoverten's Non-Toxic Polish Really Different?", "budget": 380, "complexity": "medium" },
+          { "heading": "What to Expect Walking Into a Tenoverten Salon", "budget": 380, "complexity": "medium" },
+          { "heading": "The Trade-Offs Nobody Mentions: No Blow Dryers and No Gel", "budget": 350, "complexity": "high" },
+          { "heading": "Which Tenoverten Locations Are Still Open", "budget": 280, "complexity": "medium" },
+          { "heading": "Tenoverten vs a Regular Nail Salon: Is It Worth the Price?", "budget": 320, "complexity": "high" },
+          { "heading": "Who Should (and Shouldn't) Book a Tenoverten Manicure", "budget": 230, "complexity": "low" }
+        ]
+      }
+    }
+  },
+
+  "section_11_internal_links": {
+    "blog_gen_instruction": "Every link below must appear in the post. Cluster links use anchor texts verbatim — do not rewrite. Cross-site links use the provided descriptive anchor. Place each link where the placement note says — woven naturally into prose, never as a standalone CTA. Total internal links must not exceed 6.",
+    "all_internal_links": [
+      {
+        "url_or_slug": "/blog/salon-reviews/regal-nails-reviews",
+        "title": "Regal Nails Reviews: What to Know Before You Go",
+        "anchor_text": "Regal Nails reviews",
+        "placement_note": "Tenoverten vs a Regular Nail Salon section — natural comparison point to a budget/mainstream chain",
+        "link_type": "cluster-pillar"
+      },
+      {
+        "url_or_slug": "/blog/salon-reviews/bellacures-reviews",
+        "title": "Bellacures Reviews: Inside LA's Hospital-Grade Nail Salon",
+        "anchor_text": "Bellacures reviews from Los Angeles clients",
+        "placement_note": "Is Tenoverten's Non-Toxic Polish Really Different section — natural comparison to another sanitation/health-focused salon brand",
+        "link_type": "cluster-spoke"
+      },
+      {
+        "url_or_slug": "/blog/salon-reviews/paintbox-nails-reviews",
+        "title": "Paintbox Nails Reviews: NYC's Celebrity Nail Art Studio",
+        "anchor_text": "Paintbox Nails celebrity nail art studio reviews",
+        "placement_note": "Which Tenoverten Locations Are Still Open section — natural pairing as another NYC-specific salon brand",
+        "link_type": "cluster-spoke"
+      },
+      {
+        "url_or_slug": "/blog/salon-reviews/how-to-tell-if-nail-salon-is-safe",
+        "title": "How to Tell If a Nail Salon Is Actually Safe (Before You Book)",
+        "anchor_text": "how to tell if a nail salon is safe",
+        "placement_note": "The Trade-Offs Nobody Mentions section — natural fit when discussing autoclave sanitation and non-toxic claims",
+        "link_type": "cluster-spoke"
+      }
+    ]
+  },
+
+  "section_12_voice_tone": {
+    "blog_gen_instruction": "This is the voice for this specific post. Layer on top of Mirellé editorial framework. Do not default to generic AI tone.",
+    "recommended_voice": "Confident insider — a friend who's actually been there and paid the bill",
+    "tone_characteristics": [
+      "Direct about real dollar figures, never vague about cost",
+      "Warm but unsentimental — acknowledges the brand's real strengths without slipping into brand-copy tone",
+      "Honest about trade-offs (no dryers, no gel) rather than glossing past them",
+      "Confident closer — gives a real verdict, doesn't hedge with 'it depends on you'",
+      "Uses specific sensory/service detail over generic adjectives"
+    ],
+    "language_style": "Second person, short declarative sentences for price/fact statements, slightly longer sentences for texture/experience description. Minimal jargon — explain 8-free and toxic-eight terms plainly on first use.",
+    "audience_match": "This voice matches a reader who already respects the brand and wants a peer-level, no-fluff answer rather than either brand marketing or an overly technical ingredient breakdown."
+  },
+
+  "section_13_external_links": {
+    "blog_gen_instruction": "Include all external links where indicated. Supports E-E-A-T. Use anchor suggestion as guide — write naturally around it. Sourced from phase_3's best_external_sources_found (real fetched competitor pages), not from separate searches. May be empty (0-2 links) if none of the fetched pages qualified as genuinely citation-worthy — that is expected, not a gap to fill.",
+    "links": []
+  },
+
+  "section_14_execution_plan": {
+    "purpose": "Blog Gen Agent reads this section FIRST — before frontmatter, before writing a single word. Every value here is pre-calculated from the input file data. Blog Gen Agent locks all values and executes them exactly.",
+    "blog_gen_instruction": "READ THIS SECTION FIRST. Lock every value. Execute exactly. Do not recalculate, do not adjust, do not deviate.",
+    "calculated_by": "Input Gen Agent — calculated last, after all other sections are complete",
+
+    "block_1_keyword_execution": {
+      "primary_keyword": "tenoverten reviews",
+      "top_5_density_baseline": 12,
+      "total_mention_target": "12 + 3 = 15 total mentions",
+      "first_100_words_plan": {
+        "rule": "Primary keyword MUST appear TWICE in the first 100 words. Mandatory. No exceptions.",
+        "mention_1": "sentence 1 of introduction — establishing that tenoverten reviews of the polish already exist and are strong",
+        "mention_2": "sentence 3-4 of introduction — pivoting to what these tenoverten reviews leave out (the salon visit)"
+      },
+      "first_half_target": "9 mentions — first 1325 words. Run denser in first half.",
+      "second_half_target": "6 mentions — second 1325 words",
+      "strong_tag_rule": "EVERY single mention of the primary keyword — all 15 of them — wrapped in <strong> tags. No exceptions. Catch each one as it is written. Scan after every paragraph.",
+      "keywords_to_avoid_active": [
+        "regal nails reviews", "miniluxe reviews", "davi nails reviews", "bellacures reviews",
+        "chillhouse reviews", "glosslab reviews", "paintbox nails reviews", "is my nail salon safe",
+        "nail bar vs nail salon"
+      ]
+    },
+
+    "block_2_word_budget": {
+      "total_target": "2650 words — +/-50 words tolerance, never exceed",
+      "introduction": "230 words",
+      "conclusion": "180 words",
+      "h2_budgets": [
+        { "heading": "What a Real Tenoverten Manicure Actually Costs", "budget": 400, "complexity": "high" },
+        { "heading": "Is Tenoverten's Non-Toxic Polish Really Different?", "budget": 380, "complexity": "medium" },
+        { "heading": "What to Expect Walking Into a Tenoverten Salon", "budget": 380, "complexity": "medium" },
+        { "heading": "The Trade-Offs Nobody Mentions: No Blow Dryers and No Gel", "budget": 350, "complexity": "high" },
+        { "heading": "Which Tenoverten Locations Are Still Open", "budget": 280, "complexity": "medium" },
+        { "heading": "Tenoverten vs a Regular Nail Salon: Is It Worth the Price?", "budget": 320, "complexity": "high" },
+        { "heading": "Who Should (and Shouldn't) Book a Tenoverten Manicure", "budget": 230, "complexity": "low" }
+      ],
+      "tracking_rule": "Track running word total at the end of every H2 section. If a section is running over budget — cut before moving to the next section. Do not compensate later."
+    },
+
+    "block_3_image_plan": {
+      "total_images": 7,
+      "hero_image": "frontmatter only — NEVER appears in post body",
+      "body_images": 6,
+      "assignments": [
+        { "image_number": 1, "place_after": "What a Real Tenoverten Manicure Actually Costs", "image_type": "standard_inspiration", "section_context": "Tenoverten salon interior — calm, minimalist manicure station, natural light, mid-century modern furniture" },
+        { "image_number": 2, "place_after": "Is Tenoverten's Non-Toxic Polish Really Different?", "image_type": "standard_inspiration", "section_context": "Close-up of a finished manicure in a Tenoverten polish shade, clean and neutral-toned nails" },
+        { "image_number": 3, "place_after": "What to Expect Walking Into a Tenoverten Salon", "image_type": "standard_inspiration", "section_context": "Salon reception/waiting area, cozy chairs, water bowls for pedicure setup" },
+        { "image_number": 4, "place_after": "The Trade-Offs Nobody Mentions: No Blow Dryers and No Gel", "image_type": "standard_inspiration", "section_context": "Close-up of hands with freshly painted, glossy finish nails (not showing tools or application process)" },
+        { "image_number": 5, "place_after": "Which Tenoverten Locations Are Still Open", "image_type": "standard_inspiration", "section_context": "NYC storefront or building exterior context shot, downtown Manhattan aesthetic" },
+        { "image_number": 6, "place_after": "Tenoverten vs a Regular Nail Salon: Is It Worth the Price?", "image_type": "standard_inspiration", "section_context": "Elegant finished manicure look, polished and editorial, communicating the elevated positioning" }
+      ],
+      "image_type_rule": {
+        "default": "standard_inspiration — an actual nail look, styled and shot, related to the topic.",
+        "infographic_allowed_when": "Not used in this post — this is informational intent reviewing a service, not a comparison or tutorial post requiring a comparison/step visual.",
+        "banned_absolutely": "NEVER a tool/equipment image (hands holding a file, tools laid out, application/process shots showing hands or tools at work). NEVER a photo-style side-by-side comparison image.",
+        "note_for_blog_gen": "All 6 body image slots in this post are standard_inspiration — no infographic slot was needed for this H2 structure."
+      },
+      "path_rule": "/images/blog/salon-reviews/tenoverten-reviews/filename.webp — topic_slug in path, slug folder, leading slash"
+    },
+
+    "block_4_opening_technique_assignments": {
+      "rule": "No two consecutive sections use the same technique. Conclusion = Technique 1 or 3 only.",
+      "assignments": [
+        { "section": "Introduction", "technique": "Technique 1 — The Claim (asserts the polish's reputation is real, then claims the salon visit is the unanswered question)" },
+        { "section": "What a Real Tenoverten Manicure Actually Costs", "technique": "Technique 2 — The Scene (opens on a specific real price paid)" },
+        { "section": "Is Tenoverten's Non-Toxic Polish Really Different?", "technique": "Technique 4 — The Question (poses the reader's implicit skepticism directly)" },
+        { "section": "What to Expect Walking Into a Tenoverten Salon", "technique": "Technique 2 — The Scene (walks through arrival step by step)" },
+        { "section": "The Trade-Offs Nobody Mentions: No Blow Dryers and No Gel", "technique": "Technique 1 — The Claim (states the trade-off plainly upfront)" },
+        { "section": "Which Tenoverten Locations Are Still Open", "technique": "Technique 3 — The Reframe (reframes location confusion as a simple checklist)" },
+        { "section": "Tenoverten vs a Regular Nail Salon: Is It Worth the Price?", "technique": "Technique 4 — The Question (directly poses the worth-it question)" },
+        { "section": "Who Should (and Shouldn't) Book a Tenoverten Manicure", "technique": "Technique 1 — The Claim (states the verdict directly)" },
+        { "section": "Conclusion", "technique": "Technique 3 — The Reframe" }
+      ],
+      "banned_opener_rule": "Check every opener against banned_opening_approaches in blog gen prompt before writing the second sentence"
+    },
+
+    "block_5_link_placements": {
+      "rule": "Every link placed exactly where specified. Anchor texts used verbatim — never rewritten. Links woven into prose naturally — never standalone CTAs.",
+      "links": [
+        {
+          "anchor_text": "Regal Nails reviews",
+          "full_url": "/blog/salon-reviews/regal-nails-reviews",
+          "place_in_section": "Tenoverten vs a Regular Nail Salon: Is It Worth the Price?",
+          "placement_context": "When contrasting Tenoverten's price point against a budget/mainstream chain option",
+          "link_type": "cluster-pillar"
+        },
+        {
+          "anchor_text": "Bellacures reviews from Los Angeles clients",
+          "full_url": "/blog/salon-reviews/bellacures-reviews",
+          "place_in_section": "Is Tenoverten's Non-Toxic Polish Really Different?",
+          "placement_context": "When noting other salons built around health/sanitation-first positioning",
+          "link_type": "cluster-spoke"
+        },
+        {
+          "anchor_text": "Paintbox Nails celebrity nail art studio reviews",
+          "full_url": "/blog/salon-reviews/paintbox-nails-reviews",
+          "place_in_section": "Which Tenoverten Locations Are Still Open",
+          "placement_context": "When mentioning other NYC-specific salon brands worth knowing about",
+          "link_type": "cluster-spoke"
+        },
+        {
+          "anchor_text": "how to tell if a nail salon is safe",
+          "full_url": "/blog/salon-reviews/how-to-tell-if-nail-salon-is-safe",
+          "place_in_section": "The Trade-Offs Nobody Mentions: No Blow Dryers and No Gel",
+          "placement_context": "When discussing the autoclave sanitation and non-toxic sourcing claims",
+          "link_type": "cluster-spoke"
+        }
+      ]
+    },
+
+    "block_6_aeo_geo_plan": {
+      "aeo_assignments": [
+        { "aeo_term": "How much does a manicure cost at Tenoverten?", "assigned_to_section": "What a Real Tenoverten Manicure Actually Costs", "execution": "Write a direct 2-3 sentence answer paragraph IMMEDIATELY after the H2 heading — before any elaboration." },
+        { "aeo_term": "Is Tenoverten's nail polish really non-toxic?", "assigned_to_section": "Is Tenoverten's Non-Toxic Polish Really Different?", "execution": "Write a direct 2-3 sentence answer paragraph IMMEDIATELY after the H2 heading — before any elaboration." },
+        { "aeo_term": "Does Tenoverten use blow dryers to dry your nails?", "assigned_to_section": "The Trade-Offs Nobody Mentions: No Blow Dryers and No Gel", "execution": "Write a direct 2-3 sentence answer paragraph IMMEDIATELY after the H2 heading — before any elaboration." },
+        { "aeo_term": "Which Tenoverten locations are still open in NYC?", "assigned_to_section": "Which Tenoverten Locations Are Still Open", "execution": "Write a direct 2-3 sentence answer paragraph IMMEDIATELY after the H2 heading — before any elaboration." },
+        { "aeo_term": "Is Tenoverten more expensive than a regular nail salon?", "assigned_to_section": "Tenoverten vs a Regular Nail Salon: Is It Worth the Price?", "execution": "Write a direct 2-3 sentence answer paragraph IMMEDIATELY after the H2 heading — before any elaboration." }
+      ],
+      "geo_entity_statements": [
+        { "entity": "8-free formula", "assigned_to_section": "Is Tenoverten's Non-Toxic Polish Really Different?", "execution": "Write a clear declarative definition sentence naming the eight excluded chemicals category — confident, no hedging." },
+        { "entity": "Tenoverten (brand)", "assigned_to_section": "What to Expect Walking Into a Tenoverten Salon", "execution": "Write a clear declarative sentence stating founding year (2010), founders (Adair Ilyinsky and Nadine Abramcyk), and original Tribeca location." }
+      ]
+    },
+
+    "block_7_active_constraints": {
+      "em_dash_banned": "Long em dash does not appear anywhere. If one forms while writing — stop, replace with: comma / new sentence / parentheses / but / restructure.",
+      "banned_vocab_watch": ["elevate", "elevated", "game-changer", "unleash", "seamless", "journey", "delve", "boasts"],
+      "american_english_active": "color, recognize, -ize, -or — every instance, no exceptions. This post uses American English, not British.",
+      "keyword_density_reminder": "After every 2 H2 sections — count current keyword mentions. Verify running total is on track to hit 15 total. First half must run denser than second half. Adjust if needed.",
+      "image_path_reminder": "/images/blog/salon-reviews/tenoverten-reviews/filename.webp — topic_slug in path always",
+      "internal_link_url_reminder": "Full correct paths only. Cluster links = /blog/salon-reviews/[slug]. Never bare /slug.",
+      "hero_image_reminder": "Hero = frontmatter only. Never place hero image in body.",
+      "strong_tag_reminder": "Every primary keyword mention = <strong> tags. Scan after every paragraph."
+    }
+  }
+}
